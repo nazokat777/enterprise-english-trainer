@@ -130,6 +130,80 @@
       ]
     }
   ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Bu sahifadagi kasb va millat nomlari tayyor so'zlar emas — ular boshqa so'zdan yasalgan. Qoidani bilsangiz, yuzlab yangi so'zni yodlamasdan tushunasiz.",
+    "groups": [
+      {
+        "ruleUz": "-er / -or → ishni bajaruvchi odam",
+        "explanationUz": "Fe'lga yoki otga -er qo'shilsa, o'sha ishni qiluvchi odam chiqadi. Agar so'z -e bilan tugasa, faqat -r qo'shiladi.",
+        "items": [
+          { "base": "farm", "baseUz": "ferma, dehqonchilik", "derived": "farmer", "derivedUz": "dehqon", "note": "farm + er" },
+          { "base": "dance", "baseUz": "raqs", "derived": "dancer", "derivedUz": "raqqos", "note": "dance + r (oxirgi -e tushadi)" },
+          { "base": "teach", "baseUz": "o'rgatmoq", "derived": "teacher", "derivedUz": "o'qituvchi", "note": "teach + er" },
+          { "base": "play", "baseUz": "o'ynamoq", "derived": "player", "derivedUz": "o'yinchi", "note": "play + er" }
+        ]
+      },
+      {
+        "ruleUz": "-ian / -cian → soha egasi",
+        "explanationUz": "Ko'pincha san'at va fan sohalarida ishlatiladi.",
+        "items": [
+          { "base": "music", "baseUz": "musiqa", "derived": "musician", "derivedUz": "musiqachi", "note": "music + ian" },
+          { "base": "magic", "baseUz": "sehr", "derived": "magician", "derivedUz": "sehrgar", "note": "magic + ian" }
+        ]
+      },
+      {
+        "ruleUz": "Mamlakat → millat",
+        "explanationUz": "Millat nomi mamlakat nomidan yasaladi, lekin qo'shimcha har xil bo'ladi — shuning uchun ularni juft holda yodlash kerak. Ikkalasi ham KATTA harf bilan yoziladi.",
+        "items": [
+          { "base": "Scotland", "baseUz": "Shotlandiya", "derived": "Scottish", "derivedUz": "shotlandiyalik", "note": "-ish" },
+          { "base": "Spain", "baseUz": "Ispaniya", "derived": "Spanish", "derivedUz": "ispan", "note": "-ish" },
+          { "base": "Turkey", "baseUz": "Turkiya", "derived": "Turkish", "derivedUz": "turk", "note": "-ish" },
+          { "base": "Brazil", "baseUz": "Braziliya", "derived": "Brazilian", "derivedUz": "braziliyalik", "note": "-ian" },
+          { "base": "India", "baseUz": "Hindiston", "derived": "Indian", "derivedUz": "hind", "note": "-n" },
+          { "base": "Canada", "baseUz": "Kanada", "derived": "Canadian", "derivedUz": "kanadalik", "note": "-ian" },
+          { "base": "Japan", "baseUz": "Yaponiya", "derived": "Japanese", "derivedUz": "yapon", "note": "-ese" },
+          { "base": "Greece", "baseUz": "Gretsiya", "derived": "Greek", "derivedUz": "grek", "note": "istisno" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Ingliz tilida so'z tartibi qat'iy: EGA + FE'L + qolgani. O'zbekchada fe'l oxirida keladi, inglizchada esa ikkinchi o'rinda — eng ko'p xato shu yerda bo'ladi.",
+    "patterns": [
+      {
+        "formula": "I'm a + KASB",
+        "exampleEn": "I'm a musician.",
+        "exampleUz": "Men musiqachiman.",
+        "explanationUz": "Kasb oldidan a/an ARTIKLI shart. 'I'm musician' — xato. Unli tovush bilan boshlansa an: an artist."
+      },
+      {
+        "formula": "They are + KASB(ko'plik)",
+        "exampleEn": "They are farmers.",
+        "exampleUz": "Ular dehqonlar.",
+        "explanationUz": "Ko'plikda a/an ISHLATILMAYDI, lekin so'zga -s qo'shiladi: farmer → farmers."
+      },
+      {
+        "formula": "EGA + be + from + JOY",
+        "exampleEn": "He's from Edinburgh, Scotland.",
+        "exampleUz": "U Edinburgdan.",
+        "explanationUz": "'from' — dan. Shahar avval, mamlakat keyin, vergul bilan ajratiladi."
+      },
+      {
+        "formula": "EGA + be + SON + years old",
+        "exampleEn": "I'm forty years old.",
+        "exampleUz": "Men qirq yoshdaman.",
+        "explanationUz": "'years old' qo'shilishi kerak. 'I'm forty' ham to'g'ri, lekin to'liq shakli — 'forty years old'."
+      },
+      {
+        "formula": "SO'ROQ: be + EGA + ...?",
+        "exampleEn": "Where is he from? / How old is he?",
+        "exampleUz": "U qayerdan? / U necha yoshda?",
+        "explanationUz": "So'roq gapda fe'l EGADAN OLDIN keladi: 'is he', 'he is' emas. So'roq so'zi (Where, How old, What) eng oldinda turadi."
+      }
+    ]
+  },
   "vocabularyOnPage": [
     { "en": "married", "uz": "uylangan / turmush qurgan" },
     { "en": "boarding-school", "uz": "internat maktab" },
