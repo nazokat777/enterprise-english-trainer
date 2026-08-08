@@ -1,0 +1,244 @@
+{
+  "book": "coursebook",
+  "pdfPage": 10,
+  "bookPage": 8,
+  "unit": 1,
+  "unitTitle": "Hi!",
+  "module": 1,
+  "sections": [
+    {
+      "kind": "vocabulary",
+      "title": "Vocabulary — capitals",
+      "titleUz": "Lug'at — poytaxtlar",
+      "exercises": [
+        {
+          "ref": "9",
+          "type": "picture_fill_and_ask",
+          "instructionEn": "Look at the pictures and fill in the capital of each country. Then, ask and answer questions, as in the example.",
+          "instructionUz": "Rasmlarga qarang va har mamlakatning poytaxtini yozing. So'ng namunadagidek savol-javob qiling.",
+          "explanationUz": "Poytaxt nomlari inglizchada o'zbekchadan farq qilishi mumkin — ularni alohida yodlash kerak:\n• Moscow — Moskva\n• Warsaw — Varshava\n• Rome — Rim\n• Beijing — Pekin\nJavobda 'the capital of' iborasi ishlatiladi va 'the' artikli SHART.",
+          "wordList": ["Moscow", "Cairo", "Warsaw", "Rome", "Budapest", "Beijing", "Paris"],
+          "example": [
+            { "speaker": "S1", "en": "Where is Cairo?", "uz": "Qohira qayerda?" },
+            { "speaker": "S2", "en": "In Egypt. It's the capital of Egypt.", "uz": "Misrda. U Misrning poytaxti." }
+          ],
+          "items": [
+            { "n": 1, "country": "Egypt", "countryUz": "Misr", "capital": "Cairo", "capitalUz": "Qohira", "given": true, "landmark": "Sfinks" },
+            { "n": 2, "country": "France", "countryUz": "Fransiya", "capital": "Paris", "capitalUz": "Parij", "given": false, "landmark": "Zafar arkasi" },
+            { "n": 3, "country": "Italy", "countryUz": "Italiya", "capital": "Rome", "capitalUz": "Rim", "given": false, "landmark": "Kolizey" },
+            { "n": 4, "country": "Poland", "countryUz": "Polsha", "capital": "Warsaw", "capitalUz": "Varshava", "given": false, "landmark": "Eski shahar" },
+            { "n": 5, "country": "Hungary", "countryUz": "Vengriya", "capital": "Budapest", "capitalUz": "Budapesht", "given": false, "landmark": "Parlament" },
+            { "n": 6, "country": "Russia", "countryUz": "Rossiya", "capital": "Moscow", "capitalUz": "Moskva", "given": false, "landmark": "Kreml" },
+            { "n": 7, "country": "China", "countryUz": "Xitoy", "capital": "Beijing", "capitalUz": "Pekin", "given": false, "landmark": "Taqiqlangan shahar" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": "Grammar: The verb \"to be\" (present simple)",
+      "titleUz": "Grammatika: \"to be\" fe'li (hozirgi zamon)",
+      "rule": {
+        "titleUz": "\"to be\" — bo'lmoq fe'li",
+        "explanationUz": "Ingliz tilida har gapda fe'l bo'lishi SHART. O'zbekchada 'Men talaba' deymiz — fe'lsiz. Inglizchada esa 'I am a student' — 'am' tushib qolmaydi.\n\n'to be' ning 3 ta shakli bor va u EGAGA qarab o'zgaradi:\n• I → am\n• he / she / it → is\n• you / we / they → are\n\nOg'zaki nutqda deyarli doim qisqartma ishlatiladi (I'm, he's, they're).",
+        "affirmative": [
+          { "subject": "I", "full": "I am", "short": "I'm", "uz": "men ...man" },
+          { "subject": "you", "full": "you are", "short": "you're", "uz": "sen ...san" },
+          { "subject": "he", "full": "he is", "short": "he's", "uz": "u (erkak) ..." },
+          { "subject": "she", "full": "she is", "short": "she's", "uz": "u (ayol) ..." },
+          { "subject": "it", "full": "it is", "short": "it's", "uz": "u (narsa) ..." },
+          { "subject": "we", "full": "we are", "short": "we're", "uz": "biz ...miz" },
+          { "subject": "you", "full": "you are", "short": "you're", "uz": "sizlar ...siz" },
+          { "subject": "they", "full": "they are", "short": "they're", "uz": "ular ..." }
+        ],
+        "negative": [
+          { "subject": "I", "full": "I am not", "short": "I'm not", "uz": "men ...emasman" },
+          { "subject": "you", "full": "you are not", "short": "you aren't", "uz": "sen ...emassan" },
+          { "subject": "he", "full": "he is not", "short": "he isn't", "uz": "u ...emas" },
+          { "subject": "she", "full": "she is not", "short": "she isn't", "uz": "u ...emas" },
+          { "subject": "it", "full": "it is not", "short": "it isn't", "uz": "u ...emas" },
+          { "subject": "we", "full": "we are not", "short": "we aren't", "uz": "biz ...emasmiz" },
+          { "subject": "you", "full": "you are not", "short": "you aren't", "uz": "sizlar ...emassiz" },
+          { "subject": "they", "full": "they are not", "short": "they aren't", "uz": "ular ...emas" }
+        ],
+        "negativeNoteUz": "Diqqat: 'I am not' ning qisqartmasi faqat I'm not. 'I amn't' degan shakl YO'Q.",
+        "interrogative": [
+          { "q": "Am I ...?", "yes": "Yes, I am.", "no": "No, I'm not." },
+          { "q": "Are you ...?", "yes": "Yes, you are.", "no": "No, you aren't." },
+          { "q": "Is he ...?", "yes": "Yes, he is.", "no": "No, he isn't." },
+          { "q": "Is she ...?", "yes": "Yes, she is.", "no": "No, she isn't." },
+          { "q": "Is it ...?", "yes": "Yes, it is.", "no": "No, it isn't." },
+          { "q": "Are we ...?", "yes": "Yes, we are.", "no": "No, we aren't." },
+          { "q": "Are you ...?", "yes": "Yes, you are.", "no": "No, you aren't." },
+          { "q": "Are they ...?", "yes": "Yes, they are.", "no": "No, they aren't." }
+        ],
+        "interrogativeNoteUz": "So'roq gapda fe'l EGADAN OLDIN keladi: 'Is he ...?' — 'He is ...?' emas.\nQisqa javobda 'Yes, he is.' to'liq yoziladi (Yes, he's — XATO), lekin 'No, he isn't.' qisqaradi.",
+        "exampleEn": "Are you from Spain? — No, I'm not.",
+        "exampleUz": "Siz Ispaniyadanmisiz? — Yo'q, emasman."
+      },
+      "exercises": [
+        {
+          "ref": "10",
+          "type": "fill_gap",
+          "instructionEn": "Fill in 'm, 's, 're, 'm not, isn't or aren't.",
+          "instructionUz": "'m, 's, 're, 'm not, isn't yoki aren't dan mosini qo'ying.",
+          "explanationUz": "Har band ikki gapdan iborat: birinchisi bo'lishli bo'lsa, ikkinchisi bo'lishsiz (yoki aksincha). Ma'noga qarab tanlang, so'ng egaga mos shaklni qo'ying.",
+          "items": [
+            { "n": 1, "textEn": "She isn't from Spain. She ___ from Mexico.", "answer": "'s", "given": true, "whyUz": "Birinchi gap inkor, demak ikkinchisi tasdiq. 'she' → is → 's" },
+            { "n": 2, "textEn": "You ___ Hungarian. You are Italian.", "answer": "aren't", "whyUz": "Ikkinchi gap 'italyan' deyapti, demak birinchisi inkor. 'you' → are not → aren't" },
+            { "n": 3, "textEn": "My favourite sport is tennis. It ___ football.", "answer": "isn't", "whyUz": "Sevimli sport tennis, demak futbol emas. 'it' → is not → isn't" },
+            { "n": 4, "textEn": "I am British. I ___ French.", "answer": "'m not", "whyUz": "Britaniyalik, demak fransuz emas. 'I' → am not → 'm not" },
+            { "n": 5, "textEn": "We aren't musicians. We ___ students.", "answer": "'re", "whyUz": "Musiqachi emas — talaba. 'we' → are → 're" },
+            { "n": 6, "textEn": "I ___ a musician. I'm not a teacher.", "answer": "'m", "whyUz": "O'qituvchi emas — musiqachi. 'I' → am → 'm" },
+            { "n": 7, "textEn": "Tony's sixteen years old. He ___ sixty years old.", "answer": "isn't", "whyUz": "16 yoshda, demak 60 emas. 'he' → is not → isn't" },
+            { "n": 8, "textEn": "They aren't from Egypt. They ___ from Brazil.", "answer": "'re", "whyUz": "Misrdan emas — Braziliyadan. 'they' → are → 're" }
+          ]
+        },
+        {
+          "ref": "11",
+          "type": "dialogue_fill",
+          "instructionEn": "Fill in: is, are, 's, 're, 'm, aren't or isn't.",
+          "instructionUz": "is, are, 's, 're, 'm, aren't yoki isn't dan mosini qo'ying.",
+          "explanationUz": "Bu safar dialoglar — savol va javob. Savolda to'liq shakl (is/are) ishlatiladi, javobda qisqartma ('s/'re/'m). Qisqa javobda esa 'No, he isn't' kabi.",
+          "items": [
+            {
+              "n": 1,
+              "lines": [
+                { "who": "A", "textEn": "___ he from Mexico?", "answer": "Is", "given": true },
+                { "who": "B", "textEn": "No, he ___ . He ___ from Japan.", "answers": ["isn't", "'s"] }
+              ],
+              "whyUz": "Savolda 'he' → Is. Javob inkor: isn't. Keyin tasdiq: he's."
+            },
+            {
+              "n": 2,
+              "lines": [
+                { "who": "A", "textEn": "___ they Spanish?", "answer": "Are" },
+                { "who": "B", "textEn": "No, they ___ . They ___ Canadian.", "answers": ["aren't", "'re"] }
+              ],
+              "whyUz": "'they' → Are. Inkor: aren't. Tasdiq: they're."
+            },
+            {
+              "n": 3,
+              "lines": [
+                { "who": "A", "textEn": "What ___ your favourite sport?", "answer": "is" },
+                { "who": "B", "textEn": "My favourite sport ___ tennis.", "answer": "is" }
+              ],
+              "whyUz": "'your favourite sport' — birlik narsa, 'it' o'rnida → is."
+            },
+            {
+              "n": 4,
+              "lines": [
+                { "who": "A", "textEn": "___ she twenty years old?", "answer": "Is" },
+                { "who": "B", "textEn": "No, she ___ . She ___ twenty-two.", "answers": ["isn't", "'s"] }
+              ],
+              "whyUz": "'she' → Is. 20 emas, 22 — shuning uchun avval isn't, keyin she's."
+            },
+            {
+              "n": 5,
+              "lines": [
+                { "who": "A", "textEn": "___ Stella from Hungary?", "answer": "Is" },
+                { "who": "B", "textEn": "Yes, she ___ . She ___ from Budapest.", "answers": ["is", "'s"] }
+              ],
+              "whyUz": "Stella — bitta ayol, 'she' → Is. Qisqa tasdiq javobida TO'LIQ shakl: 'Yes, she is' ('she's' XATO)."
+            },
+            {
+              "n": 6,
+              "lines": [
+                { "who": "A", "textEn": "How old ___ you?", "answer": "are" },
+                { "who": "B", "textEn": "I ___ twenty-three.", "answer": "'m" }
+              ],
+              "whyUz": "'you' → are. Javobda 'I' → am → 'm."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Bu sahifadagi mamlakat–poytaxt va mamlakat–millat juftlari.",
+    "groups": [
+      {
+        "ruleUz": "Mamlakat → millat (bu sahifadagilar)",
+        "explanationUz": "Ex. 10 va 11 da millat nomlari ishlatilgan. Ularni mamlakat nomi bilan juft holda yodlang.",
+        "items": [
+          { "base": "Hungary", "baseUz": "Vengriya", "derived": "Hungarian", "derivedUz": "venger", "note": "-ian" },
+          { "base": "Italy", "baseUz": "Italiya", "derived": "Italian", "derivedUz": "italyan", "note": "-ian" },
+          { "base": "Britain", "baseUz": "Britaniya", "derived": "British", "derivedUz": "britaniyalik", "note": "-ish" },
+          { "base": "France", "baseUz": "Fransiya", "derived": "French", "derivedUz": "fransuz", "note": "istisno" },
+          { "base": "Poland", "baseUz": "Polsha", "derived": "Polish", "derivedUz": "polyak", "note": "-ish" },
+          { "base": "China", "baseUz": "Xitoy", "derived": "Chinese", "derivedUz": "xitoy", "note": "-ese" },
+          { "base": "Russia", "baseUz": "Rossiya", "derived": "Russian", "derivedUz": "rus", "note": "-an" },
+          { "base": "Egypt", "baseUz": "Misr", "derived": "Egyptian", "derivedUz": "misrlik", "note": "-ian" }
+        ]
+      },
+      {
+        "ruleUz": "Qisqartma yasalishi (apostrof)",
+        "explanationUz": "Qisqartmada tushib qolgan harf o'rniga apostrof (') qo'yiladi. Bu so'z yasalishining bir turi:",
+        "items": [
+          { "base": "I am", "baseUz": "men ...man", "derived": "I'm", "derivedUz": "", "note": "a tushdi" },
+          { "base": "he is", "baseUz": "u ...", "derived": "he's", "derivedUz": "", "note": "i tushdi" },
+          { "base": "they are", "baseUz": "ular ...", "derived": "they're", "derivedUz": "", "note": "a tushdi" },
+          { "base": "is not", "baseUz": "...emas", "derived": "isn't", "derivedUz": "", "note": "o tushdi" },
+          { "base": "are not", "baseUz": "...emas", "derived": "aren't", "derivedUz": "", "note": "o tushdi" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "\"to be\" fe'lining 3 xil gapdagi tartibi.",
+    "patterns": [
+      {
+        "formula": "TASDIQ: EGA + be + qolgani",
+        "exampleEn": "She's from Mexico.",
+        "exampleUz": "U Meksikadan.",
+        "explanationUz": "Fe'l egadan KEYIN, ikkinchi o'rinda."
+      },
+      {
+        "formula": "INKOR: EGA + be + not + qolgani",
+        "exampleEn": "They aren't from Egypt.",
+        "exampleUz": "Ular Misrdan emas.",
+        "explanationUz": "'not' fe'ldan keyin qo'shiladi va odatda qisqaradi: are not → aren't."
+      },
+      {
+        "formula": "SO'ROQ: be + EGA + qolgani ?",
+        "exampleEn": "Is he from Mexico?",
+        "exampleUz": "U Meksikadanmi?",
+        "explanationUz": "Fe'l va ega O'RIN ALMASHADI — bu ingliz tilidagi asosiy so'roq qoidasi."
+      },
+      {
+        "formula": "SO'ROQ SO'Z + be + EGA ?",
+        "exampleEn": "How old are you? / What is your favourite sport?",
+        "exampleUz": "Necha yoshdasiz? / Sevimli sportingiz nima?",
+        "explanationUz": "So'roq so'zi (How old, What, Where) eng oldinda, keyin fe'l, keyin ega."
+      },
+      {
+        "formula": "QISQA JAVOB: Yes, EGA + be. / No, EGA + be + n't.",
+        "exampleEn": "Yes, she is. / No, she isn't.",
+        "exampleUz": "Ha, shunday. / Yo'q, unday emas.",
+        "explanationUz": "MUHIM: tasdiq javobda qisqartma ISHLATILMAYDI. 'Yes, she is' to'g'ri, 'Yes, she's' XATO."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "capital", "uz": "poytaxt" },
+    { "en": "Egypt", "uz": "Misr" },
+    { "en": "Cairo", "uz": "Qohira" },
+    { "en": "France", "uz": "Fransiya" },
+    { "en": "Paris", "uz": "Parij" },
+    { "en": "Italy", "uz": "Italiya" },
+    { "en": "Rome", "uz": "Rim" },
+    { "en": "Poland", "uz": "Polsha" },
+    { "en": "Warsaw", "uz": "Varshava" },
+    { "en": "Hungary", "uz": "Vengriya" },
+    { "en": "Budapest", "uz": "Budapesht" },
+    { "en": "Russia", "uz": "Rossiya" },
+    { "en": "Moscow", "uz": "Moskva" },
+    { "en": "China", "uz": "Xitoy" },
+    { "en": "Beijing", "uz": "Pekin" },
+    { "en": "teacher", "uz": "o'qituvchi" },
+    { "en": "British", "uz": "britaniyalik" },
+    { "en": "French", "uz": "fransuz" }
+  ]
+}

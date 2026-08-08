@@ -1,0 +1,181 @@
+{
+  "book": "coursebook",
+  "pdfPage": 11,
+  "bookPage": 9,
+  "unit": 1,
+  "unitTitle": "Hi!",
+  "module": 1,
+  "sections": [
+    {
+      "kind": "pronunciation",
+      "title": "Pronunciation",
+      "titleUz": "Talaffuz",
+      "exercises": [
+        {
+          "ref": "12",
+          "type": "listen_repeat",
+          "hasAudio": true,
+          "instructionEn": "Listen and repeat.",
+          "instructionUz": "Eshiting va takrorlang.",
+          "explanationUz": "Joy nomlari inglizchada o'zbekchadan boshqacha talaffuz qilinadi. Eng ko'p adashtiradiganlari:\n• Edinburgh — oxiri 'burg' emas, 'bruh' kabi o'qiladi\n• Egypt — 'ijipt' (e-gipt emas)\n• Hungary — 'hangari'\n• Moscow — 'moskou'\n• Beijing — 'beyjing'\n• Warsaw — 'vorso'\nJoy nomlari doim KATTA harf bilan yoziladi.",
+          "words": [
+            { "en": "Australia", "uz": "Avstraliya", "hintUz": "os-TREY-lia" },
+            { "en": "New Delhi", "uz": "Yangi Dehli", "hintUz": "nyu DE-li" },
+            { "en": "Edinburgh", "uz": "Edinburg", "hintUz": "E-din-bruh" },
+            { "en": "Egypt", "uz": "Misr", "hintUz": "I-jipt" },
+            { "en": "Hungary", "uz": "Vengriya", "hintUz": "HAN-ga-ri" },
+            { "en": "Moscow", "uz": "Moskva", "hintUz": "MOS-kou" },
+            { "en": "Beijing", "uz": "Pekin", "hintUz": "bey-JING" },
+            { "en": "Russia", "uz": "Rossiya", "hintUz": "RA-sha" },
+            { "en": "Turkey", "uz": "Turkiya", "hintUz": "TYOR-ki" },
+            { "en": "Warsaw", "uz": "Varshava", "hintUz": "VOR-so" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "game",
+      "title": "Game",
+      "titleUz": "O'yin",
+      "exercises": [
+        {
+          "ref": "13",
+          "type": "guessing_game",
+          "instructionEn": "You are the leader. Pretend you are from one of the countries in the list below. Write it on a piece of paper. The other students try to guess which country you are from by asking questions, as in the example. The student who guesses correctly goes next.",
+          "instructionUz": "Siz boshlovchisiz. Quyidagi ro'yxatdan bitta mamlakatni tanlab, qog'ozga yozing. Boshqalar savol berib topishga harakat qiladi. To'g'ri topgan o'quvchi keyingi boshlovchi bo'ladi.",
+          "explanationUz": "Bu o'yin 'Are you from ...?' savolini va qisqa javoblarni mashq qildiradi.\nQoida: 'Yes, I am.' — to'liq shakl, qisqartirilmaydi.\n'No, I'm not.' — inkor javob qisqaradi.\nIlovada siz o'quvchi bo'lasiz: ilova mamlakat tanlaydi, siz savol berib topasiz.",
+          "wordList": ["Britain", "India", "Russia", "France", "Germany", "Holland", "Turkey", "Brazil", "Italy", "Poland", "Egypt", "Australia"],
+          "wordListUz": ["Britaniya", "Hindiston", "Rossiya", "Fransiya", "Germaniya", "Gollandiya", "Turkiya", "Braziliya", "Italiya", "Polsha", "Misr", "Avstraliya"],
+          "example": [
+            { "speaker": "S1", "en": "Are you from Italy?", "uz": "Siz Italiyadanmisiz?" },
+            { "speaker": "L", "en": "No, I'm not.", "uz": "Yo'q, emasman." },
+            { "speaker": "S2", "en": "Are you from Egypt?", "uz": "Siz Misrdanmisiz?" },
+            { "speaker": "L", "en": "Yes, I am.", "uz": "Ha, shundayman." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "speaking",
+      "title": "Speaking",
+      "titleUz": "Gapirish",
+      "exercises": [
+        {
+          "ref": "14",
+          "type": "ask_answer_landmarks",
+          "instructionEn": "Look at the pictures. Ask and answer questions, as in the example.",
+          "instructionUz": "Rasmlarga qarang. Namunadagidek savol-javob qiling.",
+          "explanationUz": "MUHIM grammatik nuqta — birlik va ko'plik:\n• the Pyramids — KO'PLIK (bir nechta piramida) → 'Are the Pyramids...?' → 'They're in Egypt.'\n• the Taj Mahal — BIRLIK (bitta bino) → 'Is the Taj Mahal...?' → 'Yes, it is.'\nDiqqat qiling: mashhur joy nomlari oldidan ko'pincha 'the' qo'yiladi (the Pyramids, the Eiffel Tower), lekin shahar/mamlakat oldidan qo'yilmaydi (in Egypt, in Paris).",
+          "example": [
+            { "speaker": "S1", "en": "Are the Pyramids in Brazil?", "uz": "Piramidalar Braziliyadami?" },
+            { "speaker": "S2", "en": "No, they aren't. They're in Egypt. Is the Taj Mahal in India?", "uz": "Yo'q, emas. Ular Misrda. Toj Mahal Hindistondami?" },
+            { "speaker": "S3", "en": "Yes, it is. Is ...", "uz": "Ha, shunday. ...mi?" }
+          ],
+          "items": [
+            { "n": 1, "landmark": "the Pyramids", "landmarkUz": "Piramidalar", "asked": "Brazil", "correct": false, "realCountry": "Egypt", "realCity": "Cairo", "plural": true, "answerEn": "No, they aren't. They're in Egypt." },
+            { "n": 2, "landmark": "the Taj Mahal", "landmarkUz": "Toj Mahal", "asked": "India", "correct": true, "realCountry": "India", "realCity": "Agra", "plural": false, "answerEn": "Yes, it is." },
+            { "n": 3, "landmark": "Big Ben", "landmarkUz": "Big Ben", "asked": "England", "correct": true, "realCountry": "England", "realCity": "London", "plural": false, "answerEn": "Yes, it is." },
+            { "n": 4, "landmark": "the Eiffel Tower", "landmarkUz": "Eyfel minorasi", "asked": "Italy", "correct": false, "realCountry": "France", "realCity": "Paris", "plural": false, "answerEn": "No, it isn't. It's in France." },
+            { "n": 5, "landmark": "the Parthenon", "landmarkUz": "Parfenon", "asked": "Poland", "correct": false, "realCountry": "Greece", "realCity": "Athens", "plural": false, "answerEn": "No, it isn't. It's in Greece." },
+            { "n": 6, "landmark": "the White House", "landmarkUz": "Oq uy", "asked": "the USA", "correct": true, "realCountry": "the USA", "realCity": "Washington DC", "plural": false, "answerEn": "Yes, it is." },
+            { "n": 7, "landmark": "St Basil's Cathedral", "landmarkUz": "Avliyo Vasiliy sobori", "asked": "Hungary", "correct": false, "realCountry": "Russia", "realCity": "Moscow", "plural": false, "answerEn": "No, it isn't. It's in Russia." },
+            { "n": 8, "landmark": "the Sydney Opera House", "landmarkUz": "Sidney opera teatri", "asked": "Canada", "correct": false, "realCountry": "Australia", "realCity": "Sydney", "plural": false, "answerEn": "No, it isn't. It's in Australia." },
+            { "n": 9, "landmark": "the Statue of Liberty", "landmarkUz": "Ozodlik haykali", "asked": "the USA", "correct": true, "realCountry": "the USA", "realCity": "New York", "plural": false, "answerEn": "Yes, it is." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "Writing (Project)",
+      "titleUz": "Yozish (Loyiha)",
+      "exercises": [
+        {
+          "ref": "Project",
+          "type": "write_sentences",
+          "instructionEn": "Use the pictures from the Photo File section and write sentences, as in the example.",
+          "instructionUz": "Photo File bo'limidagi rasmlardan foydalanib, namunadagidek gaplar yozing.",
+          "explanationUz": "Qolip: MASHHUR JOY + be + in + SHAHAR, MAMLAKAT.\nKo'plik bo'lsa 'are', birlik bo'lsa 'is':\n• The Pyramids ARE in Cairo, Egypt.\n• The Eiffel Tower IS in Paris, France.\nShahar avval, mamlakat keyin — vergul bilan ajratiladi.",
+          "exampleEn": "The Pyramids are in Cairo, Egypt.",
+          "exampleUz": "Piramidalar Qohirada, Misrda.",
+          "modelAnswers": [
+            "The Taj Mahal is in Agra, India.",
+            "Big Ben is in London, England.",
+            "The Eiffel Tower is in Paris, France.",
+            "The Parthenon is in Athens, Greece.",
+            "The White House is in Washington DC, the USA.",
+            "St Basil's Cathedral is in Moscow, Russia.",
+            "The Sydney Opera House is in Sydney, Australia.",
+            "The Statue of Liberty is in New York, the USA."
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Bu sahifadagi mamlakat nomlaridan millat yasash.",
+    "groups": [
+      {
+        "ruleUz": "Mamlakat → millat (o'yindagi ro'yxat)",
+        "explanationUz": "Ex. 13 dagi 12 ta mamlakatning millat shakli:",
+        "items": [
+          { "base": "Britain", "baseUz": "Britaniya", "derived": "British", "derivedUz": "britaniyalik", "note": "-ish" },
+          { "base": "India", "baseUz": "Hindiston", "derived": "Indian", "derivedUz": "hind", "note": "-n" },
+          { "base": "Russia", "baseUz": "Rossiya", "derived": "Russian", "derivedUz": "rus", "note": "-n" },
+          { "base": "France", "baseUz": "Fransiya", "derived": "French", "derivedUz": "fransuz", "note": "istisno" },
+          { "base": "Germany", "baseUz": "Germaniya", "derived": "German", "derivedUz": "nemis", "note": "-y tushadi" },
+          { "base": "Holland", "baseUz": "Gollandiya", "derived": "Dutch", "derivedUz": "golland", "note": "butunlay boshqa so'z" },
+          { "base": "Turkey", "baseUz": "Turkiya", "derived": "Turkish", "derivedUz": "turk", "note": "-ish" },
+          { "base": "Brazil", "baseUz": "Braziliya", "derived": "Brazilian", "derivedUz": "braziliyalik", "note": "-ian" },
+          { "base": "Italy", "baseUz": "Italiya", "derived": "Italian", "derivedUz": "italyan", "note": "-y → -ian" },
+          { "base": "Poland", "baseUz": "Polsha", "derived": "Polish", "derivedUz": "polyak", "note": "-ish" },
+          { "base": "Egypt", "baseUz": "Misr", "derived": "Egyptian", "derivedUz": "misrlik", "note": "-ian" },
+          { "base": "Australia", "baseUz": "Avstraliya", "derived": "Australian", "derivedUz": "avstraliyalik", "note": "-n" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Joy haqida savol berish va javob berishning 2 ta qolipi.",
+    "patterns": [
+      {
+        "formula": "BIRLIK: Is + the JOY + in + MAMLAKAT? → Yes, it is. / No, it isn't. It's in ...",
+        "exampleEn": "Is the Eiffel Tower in Italy? — No, it isn't. It's in France.",
+        "exampleUz": "Eyfel minorasi Italiyadami? — Yo'q. U Fransiyada.",
+        "explanationUz": "Bitta narsa → 'it' olmoshi → is / isn't."
+      },
+      {
+        "formula": "KO'PLIK: Are + the JOY + in + MAMLAKAT? → Yes, they are. / No, they aren't. They're in ...",
+        "exampleEn": "Are the Pyramids in Brazil? — No, they aren't. They're in Egypt.",
+        "exampleUz": "Piramidalar Braziliyadami? — Yo'q. Ular Misrda.",
+        "explanationUz": "Bir nechta narsa → 'they' olmoshi → are / aren't. 'the Pyramids' -s bilan tugagani uchun ko'plik."
+      },
+      {
+        "formula": "Are you from + MAMLAKAT? → Yes, I am. / No, I'm not.",
+        "exampleEn": "Are you from Egypt? — Yes, I am.",
+        "exampleUz": "Siz Misrdanmisiz? — Ha, shundayman.",
+        "explanationUz": "Tasdiq javobda 'Yes, I am' — 'Yes, I'm' XATO. Inkor javobda esa qisqaradi: 'No, I'm not'."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "the Pyramids", "uz": "Piramidalar" },
+    { "en": "the Taj Mahal", "uz": "Toj Mahal" },
+    { "en": "Big Ben", "uz": "Big Ben (London soati)" },
+    { "en": "the Eiffel Tower", "uz": "Eyfel minorasi" },
+    { "en": "the Parthenon", "uz": "Parfenon" },
+    { "en": "the White House", "uz": "Oq uy" },
+    { "en": "cathedral", "uz": "sobor" },
+    { "en": "the Opera House", "uz": "opera teatri" },
+    { "en": "the Statue of Liberty", "uz": "Ozodlik haykali" },
+    { "en": "Australia", "uz": "Avstraliya" },
+    { "en": "Germany", "uz": "Germaniya" },
+    { "en": "Holland", "uz": "Gollandiya" },
+    { "en": "Greece", "uz": "Gretsiya" },
+    { "en": "England", "uz": "Angliya" },
+    { "en": "leader", "uz": "boshlovchi, yetakchi" },
+    { "en": "to guess", "uz": "topmoq, taxmin qilmoq" }
+  ]
+}
