@@ -1,0 +1,227 @@
+{
+  "book": "workbook",
+  "pdfPage": 8,
+  "bookPage": 7,
+  "unit": 1,
+  "unitTitle": "Hi!",
+  "module": 1,
+  "pairsWith": {
+    "coursebook": [6, 10, 11],
+    "grammar": [7],
+    "noteUz": "Communication qismi coursebook 10–11-betlarga, Reading coursebook 6-betga, so'z tartibi grammar 7-bet Ex.9 ga mos keladi."
+  },
+  "scanNote": {
+    "uz": "Skanerlangan nusxada qo'lyozma javoblar bor. Ex.16 (T/F) TO'LIQ TO'G'RI bajarilgan, lekin Ex.13 va Ex.15 da tizimli xato bor: SO'ROQ GAPDA SO'Z TARTIBI. O'quvchi 'How old you are?' deb yozgan — bu o'zbekcha tartib. Inglizchada fe'l EGADAN OLDIN keladi: 'How old ARE YOU?'"
+  },
+  "sections": [
+    {
+      "kind": "communication",
+      "title": "Communication — Introducing people",
+      "titleUz": "Muloqot — Tanishtirish",
+      "exercises": [
+        {
+          "ref": "13",
+          "type": "write_question",
+          "instructionEn": "Read the dialogue and fill in the missing questions, then in pairs read it out.",
+          "instructionUz": "Dialogni o'qing va yetishmayotgan savollarni yozing, so'ng juftlikda o'qib chiqing.",
+          "explanationUz": "JAVOBGA qarab SAVOLNI tiklaysiz.\n\nENG MUHIM QOIDA — so'roq gapda so'z tartibi:\nSO'ROQ SO'Z + FE'L + EGA ?\n• How old ARE YOU?  (You are emas!)\n• Where ARE YOU from?  (you are emas!)\n\nO'zbekchada 'Necha yoshdasiz?' — fe'l oxirida. Inglizchada esa fe'l egadan OLDIN keladi. Bu eng ko'p qilinadigan xato.",
+          "lines": [
+            { "who": "John", "en": "Hello. I'm John Taylor.", "uz": "Salom. Men John Taylor." },
+            { "who": "John", "gap": 1, "answer": "What's your name?", "answerUz": "Ismingiz nima?" },
+            { "who": "Beth", "en": "My name is Beth White.", "uz": "Mening ismim Beth White." },
+            { "who": "John", "gap": 2, "answer": "How old are you?", "answerUz": "Necha yoshdasiz?", "commonMistake": { "wrong": "How old you are", "whyUz": "So'z tartibi XATO. So'roqda fe'l egadan OLDIN: 'How old ARE YOU?'" } },
+            { "who": "Beth", "en": "I'm nineteen years old.", "uz": "Men o'n to'qqiz yoshdaman." },
+            { "who": "John", "gap": 3, "answer": "Where are you from?", "answerUz": "Qayerdansiz?", "commonMistake": { "wrong": "Where you from", "whyUz": "FE'L TUSHIB QOLGAN. To'g'risi: 'Where ARE you from?' Ingliz tilida fe'lsiz gap bo'lmaydi." } },
+            { "who": "Beth", "en": "I'm from Manchester, England. Are you from Manchester too?", "uz": "Men Manchesterdan, Angliyadan. Siz ham Manchesterdanmisiz?" },
+            { "who": "John", "en": "No, I'm not. I'm from Swansea.", "uz": "Yo'q. Men Suonsidanman." },
+            { "who": "Beth", "gap": 4, "answer": "What's your job?", "answerUz": "Kasbingiz nima?", "commonMistake": { "wrong": "What profession are you?", "whyUz": "Bu tabiiy ibora emas. To'g'ri variantlar: 'What's your job?' yoki 'What do you do?'" } },
+            { "who": "John", "en": "I'm a vet.", "uz": "Men veterinarman." },
+            { "who": "Beth", "gap": 5, "answer": "How old are you?", "answerUz": "Necha yoshdasiz?", "commonMistake": { "wrong": "How old you are", "whyUz": "Yana o'sha xato — o'quvchi qoidani tushunmagan, shuning uchun takrorlagan." } },
+            { "who": "John", "en": "I'm thirty years old.", "uz": "Men o'ttiz yoshdaman." }
+          ]
+        },
+        {
+          "ref": "14",
+          "type": "dialogue_fill",
+          "instructionEn": "Read the short dialogues and fill in the gaps.",
+          "instructionUz": "Qisqa dialoglarni o'qing va bo'shliqlarni to'ldiring.",
+          "explanationUz": "Tanishtirish uch kishilik: A tanishtiradi, B va C bir-biri bilan salomlashadi.\nQolip: birinchisi 'Pleased to meet you', ikkinchisi '..., too' qo'shadi.\nDiqqat: kim avval gapirsa — 'Pleased to meet you'; javob beruvchi — 'Pleased to meet you, TOO'.",
+          "dialogues": [
+            {
+              "n": 1,
+              "lines": [
+                { "who": "A", "en": "Hello, John. John, this is Cindy. She's my friend from Canada.", "uz": "Salom, John. John, bu Cindy. U mening Kanadadan kelgan do'stim." },
+                { "who": "B", "en": "Pleased to meet you.", "uz": "Tanishganimdan xursandman." },
+                { "who": "C", "gap": true, "answer": "Pleased to meet you, too.", "answerUz": "Men ham." }
+              ]
+            },
+            {
+              "n": 2,
+              "lines": [
+                { "who": "A", "en": "Hello, Tracy. Tracy, this is Steve. He's my friend from Spain.", "uz": "Salom, Tracy. Tracy, bu Steve. U mening Ispaniyadan kelgan do'stim." },
+                { "who": "B", "gap": true, "answer": "Pleased to meet you.", "answerUz": "Tanishganimdan xursandman." },
+                { "who": "C", "en": "Pleased to meet you, too.", "uz": "Men ham." }
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "15",
+          "type": "word_order",
+          "instructionEn": "Put the words in the correct order to form sentences.",
+          "instructionUz": "So'zlarni to'g'ri tartibda joylashtirib gap tuzing.",
+          "explanationUz": "Tartib qoidasi:\nEGA + be + (SON) + qolgani\n\nYosh qolipi: SON + years old — 'thirty years old' (old thirty years EMAS).\nGap boshida KATTA harf, oxirida NUQTA.",
+          "items": [
+            { "n": 1, "words": ["years", "I", "old", "thirty", "am"], "answer": "I am thirty years old.", "commonMistake": { "wrong": "I am old thirty years", "whyUz": "'years old' — buzilmas ibora, SONDAN KEYIN keladi: thirty years old." } },
+            { "n": 2, "words": ["favourite", "golf", "his", "sport", "is"], "answer": "His favourite sport is golf.", "commonMistake": { "wrong": "his favorite sport is golf", "whyUz": "Ikki xato: gap boshida katta harf (His), va Britan imlosi (favouRite)." } },
+            { "n": 3, "words": ["Egypt", "are", "Pyramids", "in", "the"], "answer": "The Pyramids are in Egypt.", "commonMistake": { "wrong": "are pyramids in the Egypt", "whyUz": "Uch xato: 1) 'the' Pyramids oldiga keladi, 2) mamlakat oldidan 'the' YO'Q (in Egypt), 3) bu so'roq emas — tasdiq gap, shuning uchun 'The Pyramids are' tartibida." } },
+            { "n": 4, "words": ["sixteen", "Tony", "old", "years", "is"], "answer": "Tony is sixteen years old.", "scanCorrect": true },
+            { "n": 5, "words": ["Budapest", "is", "from", "she"], "answer": "She is from Budapest.", "commonMistake": { "wrong": "she is from Budapest", "whyUz": "Faqat bitta xato: gap boshida KATTA harf — 'She'." } }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "Reading",
+      "titleUz": "O'qish",
+      "exercises": [
+        {
+          "ref": "16",
+          "type": "true_false",
+          "instructionEn": "Read the sentences 1 to 6, then read the texts and mark the sentences T (true) or F (false).",
+          "instructionUz": "1–6 gaplarni o'qing, so'ng matnlarni o'qib, gaplarni T (to'g'ri) yoki F (noto'g'ri) deb belgilang.",
+          "explanationUz": "T/F mashqida tuzoq bo'ladi: gap matndagi so'zlarni ishlatadi, lekin ma'nosi boshqacha.\nMasalan 5-gap: 'Mark is a basketball player' — matnda 'basketball' bor, lekin u Markning KASBI emas, SEVIMLI SPORTI. Shuning uchun F.\nHar doim: kasb (job) va sevimli sport (favourite sport) ni ajrating.",
+          "texts": [
+            {
+              "letter": "A",
+              "aboutUz": "Omar haqida",
+              "facts": { "name": "Omar", "from": "India", "age": 40, "job": "pilot", "favouriteSport": "football" }
+            },
+            {
+              "letter": "B",
+              "aboutUz": "Mark va Julie haqida",
+              "facts": [
+                { "name": "Mark", "from": "America", "age": 29, "job": "postman", "favouriteSport": "basketball", "married": true },
+                { "name": "Julie", "from": "America", "age": 26, "job": "artist", "favouriteSport": "volleyball", "married": true }
+              ]
+            }
+          ],
+          "items": [
+            { "n": 1, "sentence": "Omar is twenty-six years old.", "answer": "F", "whyUz": "Omar 40 yoshda. 26 — bu Julie'ning yoshi." },
+            { "n": 2, "sentence": "Omar is a pilot.", "answer": "T", "whyUz": "Matnda aynan shunday." },
+            { "n": 3, "sentence": "Mark is from India.", "answer": "F", "whyUz": "Mark Amerikadan. Hindiston — Omarniki." },
+            { "n": 4, "sentence": "Julie is an artist.", "answer": "T", "whyUz": "Matnda aynan shunday." },
+            { "n": 5, "sentence": "Mark is a basketball player.", "answer": "F", "whyUz": "TUZOQ: basketbol — uning SEVIMLI SPORTI, kasbi emas. Kasbi — pochtachi (postman)." },
+            { "n": 6, "sentence": "Julie's favourite sport is football.", "answer": "F", "whyUz": "Julie'ning sevimli sporti — voleybol. Futbol — Omarniki." }
+          ],
+          "scanNote": "Skanerdagi o'quvchi bu mashqni TO'LIQ TO'G'RI bajargan (F, T, F, T, F, F)."
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "Writing",
+      "titleUz": "Yozish",
+      "exercises": [
+        {
+          "ref": "17",
+          "type": "table_to_paragraph",
+          "instructionEn": "Use the information from the table below to write a short paragraph about Juliet. Use text A in Ex. 16 as a model.",
+          "instructionUz": "Quyidagi jadvaldagi ma'lumotdan foydalanib Juliet haqida qisqa matn yozing. Ex. 16 dagi A matnini namuna qilib oling.",
+          "explanationUz": "Namuna matn (A) tuzilishi — aynan shu tartibda yozasiz:\n1) This is + ISM.\n2) He's/She's from + SHAHAR, MAMLAKAT.\n3) ISM + is + YOSH + years old.\n4) He's/She's + a/an + KASB.\n5) His/Her favourite sport is + SPORT.\n\nJuliet — ayol, shuning uchun She's va Her ishlatiladi.\n'waitress' — 'w' undosh → A waitress.",
+          "table": {
+            "Name": "Juliet",
+            "Origin": "Paris, France",
+            "Age": 22,
+            "Job": "waitress",
+            "Favourite Sport": "tennis"
+          },
+          "tableUz": {
+            "Ism": "Juliet",
+            "Qayerdan": "Parij, Fransiya",
+            "Yosh": 22,
+            "Kasb": "ofitsiantka",
+            "Sevimli sport": "tennis"
+          },
+          "modelAnswer": "This is Juliet. She's from Paris, France. Juliet is twenty-two years old. She's a waitress. Her favourite sport is tennis.",
+          "modelAnswerUz": "Bu Juliet. U Parijdan, Fransiyadan. Juliet yigirma ikki yoshda. U ofitsiantka. Uning sevimli sporti — tennis."
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Bu sahifadagi kasb va egalik shakllari.",
+    "groups": [
+      {
+        "ruleUz": "Erkak → ayol kasb (-ess)",
+        "explanationUz": "Ba'zi kasblarning ayol shakli -ess bilan yasaladi. Hozirgi ingliz tilida ko'pchiligi eskirib bormoqda, lekin 'waitress' hali ham keng ishlatiladi.",
+        "items": [
+          { "base": "waiter", "baseUz": "ofitsiant", "derived": "waitress", "derivedUz": "ofitsiantka", "note": "a waitress" },
+          { "base": "actor", "baseUz": "aktyor", "derived": "actress", "derivedUz": "aktrisa", "note": "an actress" }
+        ]
+      },
+      {
+        "ruleUz": "Egalik shakli ('s va his/her)",
+        "explanationUz": "Kimningdir narsasini aytishning ikki yo'li:",
+        "items": [
+          { "base": "Julie", "baseUz": "Julie", "derived": "Julie's favourite sport", "derivedUz": "Julie'ning sevimli sporti", "note": "ism + 's" },
+          { "base": "he", "baseUz": "u (erkak)", "derived": "his", "derivedUz": "uning", "note": "olmosh shakli" },
+          { "base": "she", "baseUz": "u (ayol)", "derived": "her", "derivedUz": "uning", "note": "olmosh shakli" }
+        ]
+      },
+      {
+        "ruleUz": "Sport + player → sportchi",
+        "explanationUz": "Sport turiga 'player' qo'shilsa, o'sha sport bilan shug'ullanuvchi chiqadi. LEKIN bu KASB degani emas!",
+        "items": [
+          { "base": "basketball", "baseUz": "basketbol", "derived": "basketball player", "derivedUz": "basketbolchi", "note": "Ex.16 dagi tuzoq" },
+          { "base": "football", "baseUz": "futbol", "derived": "football player", "derivedUz": "futbolchi", "note": "" },
+          { "base": "tennis", "baseUz": "tennis", "derived": "tennis player", "derivedUz": "tennischi", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Unit 1 ning yakuniy qoliplari — yozma ish uchun kerak bo'ladi.",
+    "patterns": [
+      {
+        "formula": "SO'ROQ: SO'ROQ SO'Z + be + EGA ?",
+        "exampleEn": "How old are you? / Where are you from?",
+        "exampleUz": "Necha yoshdasiz? / Qayerdansiz?",
+        "explanationUz": "ENG MUHIM QOIDA. Fe'l egadan OLDIN keladi. 'How old you are' — XATO. Skanerdagi o'quvchi buni 3 marta xato qilgan."
+      },
+      {
+        "formula": "PROFIL MATNI (5 gap)",
+        "exampleEn": "This is Juliet. She's from Paris, France. Juliet is twenty-two years old. She's a waitress. Her favourite sport is tennis.",
+        "exampleUz": "Bu Juliet. U Parijdan, Fransiyadan. Juliet yigirma ikki yoshda. U ofitsiantka. Uning sevimli sporti — tennis.",
+        "explanationUz": "Unit 1 ning YAKUNIY ko'nikmasi: jadvaldagi ma'lumotni 5 ta gapga aylantirish. Tartib: ism → joy → yosh → kasb → sevimli sport."
+      },
+      {
+        "formula": "TANISHTIRISH: X, this is Y. He's/She's my friend from + MAMLAKAT.",
+        "exampleEn": "John, this is Cindy. She's my friend from Canada.",
+        "exampleUz": "John, bu Cindy. U mening Kanadadan kelgan do'stim.",
+        "explanationUz": "Uchinchi shaxsni tanishtirish. Javob: 'Pleased to meet you.' → 'Pleased to meet you, too.'"
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "profession", "uz": "kasb, hunar" },
+    { "en": "vet", "uz": "veterinar" },
+    { "en": "Manchester", "uz": "Manchester" },
+    { "en": "Swansea", "uz": "Suonsi" },
+    { "en": "married", "uz": "turmush qurgan" },
+    { "en": "postman", "uz": "pochtachi" },
+    { "en": "artist", "uz": "rassom" },
+    { "en": "waitress", "uz": "ofitsiantka" },
+    { "en": "basketball player", "uz": "basketbolchi" },
+    { "en": "true", "uz": "to'g'ri, rost" },
+    { "en": "false", "uz": "noto'g'ri, yolg'on" },
+    { "en": "origin", "uz": "kelib chiqish" },
+    { "en": "paragraph", "uz": "xatboshi, qisqa matn" },
+    { "en": "model", "uz": "namuna" },
+    { "en": "Paris", "uz": "Parij" },
+    { "en": "tennis", "uz": "tennis" }
+  ]
+}
