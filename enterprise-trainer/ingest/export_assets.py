@@ -31,7 +31,7 @@ MODULE_ORDER = [
     "Qo'shimcha (lug'at/madaniyat)",
 ]
 
-WORDS_PER_UNIT = 12
+WORDS_PER_UNIT = 30
 PACK_SIZE = 6
 
 _CAPS = re.compile(r"\b[A-Z]{3,}\b")
