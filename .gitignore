@@ -1,0 +1,45 @@
+# ─── Mualliflik huquqi: skanerlangan darsliklar YUKLANMAYDI ───
+# Express Publishing "Enterprise" kitoblari va ularning OCR matni.
+Enterprise PDF/
+enterprise-trainer/data/pdfs/
+enterprise-trainer/data/parsed/
+*.pdf
+
+# ─── Flutter / Dart ───
+enterprise-app/build/
+enterprise-app/.dart_tool/
+enterprise-app/.flutter-plugins
+enterprise-app/.flutter-plugins-dependencies
+enterprise-app/.pub-cache/
+enterprise-app/.pub/
+enterprise-app/coverage/
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# ─── Python ───
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ─── Ma'lumotlar bazasi / vaqtinchalik ───
+*.db
+*.sqlite
+*.sqlite3
+enterprise-trainer/data/chroma_db/
+
+# ─── Muhit ───
+.env
+.env.local
+
+# ─── OS / muharrir ───
+.DS_Store
+Thumbs.db
+*.swp
+*.log
+.vercel

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enterprise English Trainer</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>📘 Enterprise English Trainer</h1>
+    <div id="streak" class="streak"></div>
+  </header>
+
+  <main>
+    <!-- Umumiy jarayon -->
+    <section class="card progress-card">
+      <div class="progress-top">
+        <span id="overall-label">Umumiy jarayon</span>
+        <span id="overall-percent">0%</span>
+      </div>
+      <div class="bar"><div id="overall-bar" class="bar-fill"></div></div>
+    </section>
+
+    <!-- Mashq -->
+    <section id="exercise-card" class="card exercise-card">
+      <div class="meta">
+        <span id="ex-category" class="tag"></span>
+        <span id="ex-module" class="tag tag-soft"></span>
+        <span id="ex-mastery" class="mastery"></span>
+      </div>
+      <p id="ex-prompt" class="prompt"></p>
+      <p id="ex-question" class="question"></p>
+
+      <form id="answer-form" autocomplete="off">
+        <input id="answer-input" type="text" placeholder="Javobingizni yozing..."
+               autocomplete="off" />
+        <button id="submit-btn" type="submit">Tekshirish</button>
+      </form>
+
+      <button id="hint-btn" class="link-btn" type="button">💡 Maslahat</button>
+      <p id="hint-text" class="hint hidden"></p>
+
+      <div id="feedback" class="feedback hidden">
+        <p id="feedback-msg"></p>
+        <p id="feedback-mnemonic" class="mnemonic"></p>
+        <button id="next-btn" type="button">Keyingi →</button>
+      </div>
+    </section>
+
+    <!-- Zaif nuqtalar -->
+    <section class="card">
+      <h2>📊 Aniqlik (kategoriya bo'yicha)</h2>
+      <div id="accuracy" class="accuracy"></div>
+      <h2>⚠️ Zaif nuqtalar</h2>
+      <ul id="weak-list" class="weak-list"></ul>
+    </section>
+
+    <!-- Modullar -->
+    <section class="card">
+      <h2>📚 Modullar</h2>
+      <div id="modules"></div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+progress.db
+data/pdfs/*.pdf
+data/parsed/*.txt
+data/parsed/*.json
+data/chroma_db/
+.venv/
+venv/
