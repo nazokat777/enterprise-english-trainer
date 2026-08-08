@@ -1,0 +1,282 @@
+{
+  "book": "coursebook",
+  "pdfPage": 13,
+  "bookPage": 11,
+  "unit": 1,
+  "unitTitle": "Hi!",
+  "module": 1,
+  "pairsWith": {
+    "workbook": [7],
+    "grammar": [],
+    "noteUz": "Muloqot (tanishtirish) bo'limi workbook 7-betdagi Communication mashqlariga mos keladi. Grammatika kitobida bu mavzu yo'q — alohida qoladi."
+  },
+  "sections": [
+    {
+      "kind": "communication",
+      "title": "Communication: Introducing People",
+      "titleUz": "Muloqot: Tanishtirish",
+      "exercises": [
+        {
+          "ref": "18",
+          "type": "speech_bubbles",
+          "hasAudio": true,
+          "instructionEn": "Write the sentences in the correct speech bubbles, then listen and check. Finally, act out the dialogues.",
+          "instructionUz": "Gaplarni to'g'ri gap pufakchalariga yozing, so'ng eshitib tekshiring. Nihoyat, dialoglarni sahnalashtiring.",
+          "explanationUz": "Ikki xil vaziyat:\nA) RASMIY — uchinchi shaxsni tanishtirish. 'Mr Potter, this is Mr Jackson.' Familiya oldidan Mr/Mrs/Ms ishlatiladi.\nB) NORASMIY — o'zini tanishtirish. 'please call me Gill' — to'liq ismini aytib, keyin qisqasini so'raydi (Gillian → Gill).\nJavob har doim '..., too' bilan qaytariladi.",
+          "sentences": [
+            "Pleased to meet you.",
+            "Pleased to meet you, too.",
+            "Mr Potter, this is Mr Jackson.",
+            "I'm Gillian Jones, but please call me Gill.",
+            "Hello! I'm Frank Smith. What's your name?"
+          ],
+          "scenes": [
+            {
+              "picture": "A",
+              "descriptionUz": "Uch kishi: ayol o'rtada, ikki erkakni tanishtiryapti",
+              "bubbles": [
+                { "position": "yuqori (ayol)", "answer": "Mr Potter, this is Mr Jackson.", "uz": "Janob Potter, bu janob Jackson." },
+                { "position": "chap (Mr Potter)", "answer": "Pleased to meet you.", "uz": "Tanishganimdan xursandman.", "given": true },
+                { "position": "o'ng (Mr Jackson)", "answer": "Pleased to meet you, too.", "uz": "Men ham." }
+              ]
+            },
+            {
+              "picture": "B",
+              "descriptionUz": "Ayol va erkak tanishyapti",
+              "bubbles": [
+                { "position": "yuqori (erkak)", "answer": "Hello! I'm Frank Smith. What's your name?", "uz": "Salom! Men Frank Smith. Ismingiz nima?" },
+                { "position": "past (ayol)", "answer": "I'm Gillian Jones, but please call me Gill.", "uz": "Men Gillian Jones, lekin meni Gill deb chaqiravering." }
+              ]
+            }
+          ],
+          "usefulPhrases": [
+            { "en": "please call me ...", "uz": "meni ... deb chaqiravering" },
+            { "en": "Mr / Mrs / Ms", "uz": "janob / xonim (turmush qurgan) / xonim (betaraf)" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "game",
+      "title": "Vocabulary Revision Game",
+      "titleUz": "Lug'at takrorlash o'yini",
+      "exercises": [
+        {
+          "ref": "19",
+          "type": "make_sentences_game",
+          "instructionEn": "Work in two teams. Take it in turns to choose words from the list and make sentences. Each correct sentence gets one point. The team with the most points is the winner.",
+          "instructionUz": "Ikki jamoaga bo'linib ishlang. Navbat bilan ro'yxatdan so'z tanlab, gap tuzing. Har to'g'ri gap 1 ball. Ko'p ball to'plagan jamoa g'olib.",
+          "explanationUz": "Bu Unit 1 ning butun lug'atini takrorlash o'yini. Ilovada siz bir jamoa bo'lasiz — so'z beriladi, siz gap tuzasiz.\nHar so'zga mos qolip:\n• musician, job, capital → 'X is a musician' (a/an kerak)\n• years old → 'He's forty years old'\n• where → 'Where is he from?'\n• married, pleased → sifat, a/an olmaydi",
+          "wordList": ["musician", "years old", "name", "favourite", "pleased", "neighbour", "capital", "married", "farmers", "where", "job"],
+          "example": "Team A S1: Fergus is a musician.",
+          "modelSentences": [
+            { "word": "musician", "sentence": "Fergus is a musician.", "uz": "Fergus musiqachi." },
+            { "word": "years old", "sentence": "He's forty years old.", "uz": "U qirq yoshda." },
+            { "word": "name", "sentence": "What's your name?", "uz": "Ismingiz nima?" },
+            { "word": "favourite", "sentence": "My favourite sport is golf.", "uz": "Sevimli sportim — golf." },
+            { "word": "pleased", "sentence": "Pleased to meet you.", "uz": "Tanishganimdan xursandman." },
+            { "word": "neighbour", "sentence": "I'm your new neighbour.", "uz": "Men sizning yangi qo'shningizman." },
+            { "word": "capital", "sentence": "Cairo is the capital of Egypt.", "uz": "Qohira — Misrning poytaxti." },
+            { "word": "married", "sentence": "I'm not married.", "uz": "Men uylanmaganman." },
+            { "word": "farmers", "sentence": "They are farmers.", "uz": "Ular dehqonlar." },
+            { "word": "where", "sentence": "Where are you from?", "uz": "Qayerdansiz?" },
+            { "word": "job", "sentence": "What's his job?", "uz": "Uning kasbi nima?" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "Listening",
+      "titleUz": "Tinglash",
+      "exercises": [
+        {
+          "ref": "20",
+          "type": "listen_fill_profile",
+          "hasAudio": true,
+          "audioRequiredUz": "Yoshlar audio'dan eshitiladi — kitob bilan birga keladigan yozuv kerak.",
+          "instructionEn": "Listen and fill in the missing information, then talk about some of the teachers who work at Mortimer College, as in the example.",
+          "instructionUz": "Eshiting va yetishmayotgan ma'lumotni to'ldiring, so'ng Mortimer kollejida ishlaydigan o'qituvchilar haqida namunadagidek gapiring.",
+          "explanationUz": "Har profil 4 qismdan iborat: ism → shahar, mamlakat → yosh → kasb.\nGapirganda shu tartibda 3 ta gap tuziladi:\n1) This is + ISM.\n2) He's/She's from + SHAHAR, MAMLAKAT.\n3) He's/She's + YOSH + years old and he's/she's + a/an + KASB.\nDiqqat: 'an English teacher' (unli), 'a Maths teacher' (undosh).",
+          "example": "This is Mary Stuart. She's from Dublin, Ireland. She's thirty years old and she's an English teacher at Mortimer College.",
+          "exampleUz": "Bu Mary Stuart. U Dublindan, Irlandiyadan. U o'ttiz yoshda va Mortimer kollejida ingliz tili o'qituvchisi.",
+          "profiles": [
+            {
+              "n": 1,
+              "name": "Rashid Al Hibb",
+              "city": "Alexandria",
+              "country": "Egypt",
+              "age": 16,
+              "job": "student",
+              "given": true,
+              "selfIntroEn": "Hello! I'm Rashid Al Hibb. I'm from Alexandria, Egypt. I'm sixteen years old and I'm a student at Mortimer College.",
+              "selfIntroUz": "Salom! Men Rashid Al Hibb. Men Aleksandriyadan, Misrdan. Men o'n olti yoshdaman va Mortimer kollejida talabaman."
+            },
+            {
+              "n": 2,
+              "name": "Mary Stuart",
+              "city": "Dublin",
+              "country": "Ireland",
+              "age": 30,
+              "ageGiven": true,
+              "job": "English teacher",
+              "article": "an",
+              "modelSentence": "This is Mary Stuart. She's from Dublin, Ireland. She's thirty years old and she's an English teacher at Mortimer College."
+            },
+            {
+              "n": 3,
+              "name": "John Parry",
+              "city": "Glasgow",
+              "country": "Scotland",
+              "age": null,
+              "ageFromAudio": true,
+              "job": "Maths teacher",
+              "article": "a",
+              "modelSentence": "This is John Parry. He's from Glasgow, Scotland. He's ... years old and he's a Maths teacher at Mortimer College."
+            },
+            {
+              "n": 4,
+              "name": "Bob Davis",
+              "city": "Swansea",
+              "country": "Wales",
+              "age": null,
+              "ageFromAudio": true,
+              "job": "History teacher",
+              "article": "a",
+              "modelSentence": "This is Bob Davis. He's from Swansea, Wales. He's ... years old and he's a History teacher at Mortimer College."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "Writing",
+      "titleUz": "Yozish",
+      "exercises": [
+        {
+          "ref": "Writing",
+          "type": "guided_writing",
+          "instructionEn": "You are a foreign student at Mortimer College. You are responsible for the college magazine and this is the first page of the first issue. Introduce yourself to the readers. Start with: Hello! I'm ... . Then, introduce some of the teachers who work at the college. Start with: This is ... . He/She is ... . Use the information from Ex. 20 and the pictures from the Photo File section, as well as a picture of yourself.",
+          "instructionUz": "Siz Mortimer kollejida chet ellik talabasiz. Kollej jurnaliga mas'ulsiz va bu birinchi sonning birinchi sahifasi. O'zingizni tanishtiring: 'Hello! I'm ...'. So'ng kollejda ishlaydigan o'qituvchilarni tanishtiring: 'This is ... . He/She is ...'.",
+          "explanationUz": "Ikki qismli yozma ish:\n1) O'ZINGIZ haqingizda — birinchi shaxsda (I'm ...)\n2) BOSHQALAR haqida — uchinchi shaxsda (He's/She's ...)\nQolip bir xil: ism → qayerdan → yosh → kasb.\nEng ko'p xato: uchinchi shaxsda 's' ni unutish va a/an ni tushirib qoldirish.",
+          "structure": [
+            { "partUz": "1-qism: o'zingiz", "startEn": "Hello! I'm ...", "modelEn": "Hello! I'm Aziz. I'm from Tashkent, Uzbekistan. I'm sixteen years old and I'm a student at Mortimer College." },
+            { "partUz": "2-qism: o'qituvchilar", "startEn": "This is ... . He/She is ...", "modelEn": "This is Mary Stuart. She's from Dublin, Ireland. She's thirty years old and she's an English teacher." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words_of_wisdom",
+      "title": "Words of Wisdom",
+      "titleUz": "Hikmatli so'z",
+      "exercises": [
+        {
+          "ref": "Words of Wisdom",
+          "type": "discuss_meaning",
+          "instructionEn": "Read this sentence. What does it mean?",
+          "instructionUz": "Bu gapni o'qing. U nimani anglatadi?",
+          "sentenceEn": "A stranger is a friend you haven't met yet.",
+          "sentenceUz": "Notanish odam — bu siz hali uchrashmagan do'stingiz.",
+          "explanationUz": "Ma'nosi: har bir notanish odam kelajakdagi do'st bo'lishi mumkin — shuning uchun tanishishdan qo'rqmang. Unit 1 mavzusiga (tanishuv) mos hikmat.\nGrammatik jihatdan: 'you haven't met yet' — Present Perfect, keyingi darslarda o'rganiladi. Hozircha ma'nosini tushunish yetarli.",
+          "vocabularyHelp": [
+            { "en": "stranger", "uz": "notanish odam" },
+            { "en": "yet", "uz": "hali" },
+            { "en": "haven't met", "uz": "uchrashmagansiz" }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Bu sahifadagi ism qisqartmalari va fan nomlari.",
+    "groups": [
+      {
+        "ruleUz": "To'liq ism → qisqa ism",
+        "explanationUz": "Ingliz tilida ismlarning qisqa (erkalash) shakli keng tarqalgan. 'Please call me ...' iborasi bilan aytiladi.",
+        "items": [
+          { "base": "Gillian", "baseUz": "", "derived": "Gill", "derivedUz": "", "note": "please call me Gill" },
+          { "base": "Robert", "baseUz": "", "derived": "Bob", "derivedUz": "", "note": "Bob Davis" },
+          { "base": "John", "baseUz": "", "derived": "Johnny", "derivedUz": "", "note": "-y erkalash" },
+          { "base": "Steven", "baseUz": "", "derived": "Steve", "derivedUz": "", "note": "" },
+          { "base": "Mathematics", "baseUz": "matematika", "derived": "Maths", "derivedUz": "matematika", "note": "fan nomi qisqargan" }
+        ]
+      },
+      {
+        "ruleUz": "Fan nomi + teacher",
+        "explanationUz": "O'qituvchi kasbi 'FAN + teacher' shaklida aytiladi. Artikl FAN nomining tovushiga qarab tanlanadi:",
+        "items": [
+          { "base": "English", "baseUz": "ingliz tili", "derived": "an English teacher", "derivedUz": "ingliz tili o'qituvchisi", "note": "E — unli → an" },
+          { "base": "Maths", "baseUz": "matematika", "derived": "a Maths teacher", "derivedUz": "matematika o'qituvchisi", "note": "M — undosh → a" },
+          { "base": "History", "baseUz": "tarix", "derived": "a History teacher", "derivedUz": "tarix o'qituvchisi", "note": "H o'qiladi → a" },
+          { "base": "Art", "baseUz": "tasviriy san'at", "derived": "an Art teacher", "derivedUz": "rasm o'qituvchisi", "note": "A — unli → an" }
+        ]
+      },
+      {
+        "ruleUz": "Mamlakat → millat (Britaniya qismlari)",
+        "explanationUz": "Buyuk Britaniya 4 qismdan iborat — har birining o'z millat nomi bor.",
+        "items": [
+          { "base": "Scotland", "baseUz": "Shotlandiya", "derived": "Scottish", "derivedUz": "shotland", "note": "-ish" },
+          { "base": "Wales", "baseUz": "Uels", "derived": "Welsh", "derivedUz": "uels", "note": "istisno" },
+          { "base": "Ireland", "baseUz": "Irlandiya", "derived": "Irish", "derivedUz": "irland", "note": "-ish" },
+          { "base": "England", "baseUz": "Angliya", "derived": "English", "derivedUz": "ingliz", "note": "-ish" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Odam haqida gapirishning to'liq qolipi — Unit 1 ning yakuniy ko'nikmasi.",
+    "patterns": [
+      {
+        "formula": "TANISHTIRISH: X, this is Y.",
+        "exampleEn": "Mr Potter, this is Mr Jackson.",
+        "exampleUz": "Janob Potter, bu janob Jackson.",
+        "explanationUz": "Rasmiy vaziyatda familiya oldidan Mr/Mrs/Ms qo'shiladi. Avval kimga tanishtirayotganingizni aytasiz, keyin kimni."
+      },
+      {
+        "formula": "O'ZINI TANISHTIRISH: I'm + TO'LIQ ISM, but please call me + QISQA ISM.",
+        "exampleEn": "I'm Gillian Jones, but please call me Gill.",
+        "exampleUz": "Men Gillian Jones, lekin meni Gill deb chaqiravering.",
+        "explanationUz": "Norasmiy muloqotga o'tish usuli."
+      },
+      {
+        "formula": "PROFIL (3 gap): This is X. He's/She's from SHAHAR, MAMLAKAT. He's/She's YOSH years old and he's/she's a/an KASB.",
+        "exampleEn": "This is Mary Stuart. She's from Dublin, Ireland. She's thirty years old and she's an English teacher.",
+        "exampleUz": "Bu Mary Stuart. U Dublindan, Irlandiyadan. U o'ttiz yoshda va ingliz tili o'qituvchisi.",
+        "explanationUz": "Unit 1 ning yakuniy qolipi — barcha o'rganilgan narsa shu uchta gapda. Yozma ishda ham shu ishlatiladi."
+      },
+      {
+        "formula": "O'ZI HAQIDA: Hello! I'm X. I'm from ... . I'm ... years old and I'm a/an ... .",
+        "exampleEn": "Hello! I'm Rashid Al Hibb. I'm from Alexandria, Egypt. I'm sixteen years old and I'm a student.",
+        "exampleUz": "Salom! Men Rashid Al Hibb. Men Aleksandriyadan, Misrdan. Men o'n olti yoshdaman va talabaman.",
+        "explanationUz": "Yuqoridagi qolipning birinchi shaxsdagi varianti. Farqi: he's/she's o'rniga I'm."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "pleased", "uz": "xursand, mamnun" },
+    { "en": "to meet", "uz": "uchrashmoq, tanishmoq" },
+    { "en": "Mr", "uz": "janob" },
+    { "en": "Mrs", "uz": "xonim (turmush qurgan)" },
+    { "en": "to call", "uz": "chaqirmoq, atamoq" },
+    { "en": "team", "uz": "jamoa" },
+    { "en": "point", "uz": "ball, ochko" },
+    { "en": "winner", "uz": "g'olib" },
+    { "en": "college", "uz": "kollej" },
+    { "en": "English teacher", "uz": "ingliz tili o'qituvchisi" },
+    { "en": "Maths teacher", "uz": "matematika o'qituvchisi" },
+    { "en": "History teacher", "uz": "tarix o'qituvchisi" },
+    { "en": "Ireland", "uz": "Irlandiya" },
+    { "en": "Dublin", "uz": "Dublin" },
+    { "en": "Wales", "uz": "Uels" },
+    { "en": "Swansea", "uz": "Suonsi" },
+    { "en": "Alexandria", "uz": "Aleksandriya" },
+    { "en": "magazine", "uz": "jurnal" },
+    { "en": "foreign", "uz": "chet ellik" },
+    { "en": "stranger", "uz": "notanish odam" },
+    { "en": "yet", "uz": "hali" }
+  ]
+}
