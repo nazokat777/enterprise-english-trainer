@@ -1,0 +1,147 @@
+{
+  "book": "coursebook",
+  "pdfPage": 8,
+  "bookPage": 6,
+  "unit": 1,
+  "unitTitle": "Hi!",
+  "module": 1,
+  "sections": [
+    {
+      "kind": "lead_in",
+      "title": "Lead-in",
+      "titleUz": "Kirish",
+      "exercises": [
+        {
+          "ref": "1",
+          "type": "picture_choice",
+          "instructionEn": "Look at the pictures. Which people are from: Spain, India, Scotland or Brazil?",
+          "instructionUz": "Rasmlarga qarang. Bu odamlar qaysi mamlakatdan: Ispaniya, Hindiston, Shotlandiya yoki Braziliya?",
+          "explanationUz": "Rasmlardagi kiyim va buyumlar mamlakatni aytib beradi:\n• Shotlandiya — kilt (yubkasimon kiyim) va bagpipe (jiroq)\n• Hindiston — rangli ro'mol (dupatta)\n• Ispaniya — flamenko libosi\n• Braziliya — dehqonlar, ketmon bilan\nMamlakat nomlari doim KATTA harf bilan yoziladi.",
+          "bookRef": "Coursebook, 6-bet — rasmlar A, B, C, D",
+          "options": ["Spain", "India", "Scotland", "Brazil"],
+          "optionsUz": ["Ispaniya", "Hindiston", "Shotlandiya", "Braziliya"],
+          "answers": [
+            { "picture": "A", "country": "Brazil", "countryUz": "Braziliya" },
+            { "picture": "B", "country": "India", "countryUz": "Hindiston" },
+            { "picture": "C", "country": "Spain", "countryUz": "Ispaniya" },
+            { "picture": "D", "country": "Scotland", "countryUz": "Shotlandiya" }
+          ]
+        },
+        {
+          "ref": "2a",
+          "type": "listen_repeat",
+          "hasAudio": true,
+          "instructionEn": "Listen and repeat.",
+          "instructionUz": "Eshiting va takrorlang.",
+          "explanationUz": "Bu gaplar butun Unit 1 ning asosi. Ularda 'to be' fe'li ishlatilgan:\n• I am / I'm — men ...man\n• They are / They're — ular ...\n• Where is ...? — qayerda/qayerdan?\nQisqartma shakl (I'm, They're) og'zaki nutqda deyarli doim ishlatiladi.",
+          "sentences": [
+            { "en": "I am from Edinburgh, Scotland.", "uz": "Men Edinburgdanman, Shotlandiyadan." },
+            { "en": "I'm forty years old.", "uz": "Men qirq yoshdaman." },
+            { "en": "I'm not married.", "uz": "Men uylanmaganman." },
+            { "en": "They're friends and they're from Brazil.", "uz": "Ular do'stlar va ular Braziliyadan." },
+            { "en": "I'm a student at an English boarding-school.", "uz": "Men ingliz internat-maktabida o'quvchiman." },
+            { "en": "My favourite sport is golf.", "uz": "Mening sevimli sportim — golf." },
+            { "en": "Where is he from?", "uz": "U qayerdan?" },
+            { "en": "What's his job?", "uz": "Uning kasbi nima?" },
+            { "en": "How old is he?", "uz": "U necha yoshda?" }
+          ]
+        },
+        {
+          "ref": "2b",
+          "type": "explain",
+          "instructionEn": "Can you explain what the sentences above mean?",
+          "instructionUz": "Yuqoridagi gaplarning ma'nosini tushuntira olasizmi?",
+          "explanationUz": "Har bir gapning o'zbekcha tarjimasi 2a mashqida berilgan. E'tibor bering: o'zbekchada 'Men qirq yoshdaman' desak, inglizchada 'I am forty years old' — ya'ni 'am' (bo'lmoq fe'li) tushib qolmaydi. Ingliz tilida fe'lsiz gap bo'lmaydi."
+        },
+        {
+          "ref": "3",
+          "type": "listen_match",
+          "hasAudio": true,
+          "instructionEn": "Listen and match the letters to the numbers you hear.",
+          "instructionUz": "Eshiting va harflarni eshitgan raqamlaringizga moslang.",
+          "explanationUz": "Har rasm (A, B, C, D) 4 ta matndan biriga to'g'ri keladi. Audio'da matn raqami aytiladi.",
+          "answers": [
+            { "letter": "A", "number": 2, "why": "Diego va Marco — dehqonlar (Braziliya)" },
+            { "letter": "B", "number": 4, "why": "Veena — o'quvchi (Hindiston)" },
+            { "letter": "C", "number": 3, "why": "Carlos va Rosa — raqqoslar (Ispaniya)" },
+            { "letter": "D", "number": 1, "why": "Fergus — musiqachi (Shotlandiya)" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "Reading",
+      "titleUz": "O'qish",
+      "exercises": [
+        {
+          "ref": "4",
+          "type": "read_label_answer",
+          "instructionEn": "Read the texts and label the pictures with the correct word in bold. Then, answer the questions.",
+          "instructionUz": "Matnlarni o'qing va rasmlarni qalin yozilgan to'g'ri so'z bilan belgilang. So'ng savollarga javob bering.",
+          "explanationUz": "Bu mashq ikki qismli:\n1) Rasm tagidagi bo'shliqqa kasb nomini yozish (matnda qalin harf bilan berilgan).\n2) Matn bo'yicha savollarga javob berish.\nDiqqat: bitta odam bo'lsa 'I'm a musician', ko'p bo'lsa 'They are farmers' (ko'plik -s).",
+          "bookRef": "Coursebook, 6-bet — 1–4 matnlar",
+          "readingNote": "Matnlarni kitobingizdan o'qing (6-bet). Quyida ularning mazmuni va javoblari berilgan.",
+          "pictureLabels": [
+            { "picture": "A", "prompt": "They are ...", "answer": "farmers", "answerUz": "dehqonlar", "text": 2 },
+            { "picture": "B", "prompt": "I'm a ...", "answer": "student", "answerUz": "o'quvchi", "text": 4 },
+            { "picture": "C", "prompt": "They are ...", "answer": "dancers", "answerUz": "raqqoslar", "text": 3 },
+            { "picture": "D", "prompt": "I'm a ...", "answer": "musician", "answerUz": "musiqachi", "text": 1 }
+          ],
+          "people": [
+            { "text": 1, "name": "Fergus", "from": "Edinburgh, Scotland", "age": 40, "job": "musician", "favouriteSport": "golf", "married": false },
+            { "text": 2, "name": "Diego", "from": "Brazil", "age": 35, "job": "farmer", "favouriteSport": "football" },
+            { "text": 2, "name": "Marco", "from": "Brazil", "age": 27, "job": "farmer", "favouriteSport": "basketball" },
+            { "text": 3, "name": "Carlos", "from": "Spain", "age": 22, "job": "dancer", "favouriteSport": "football" },
+            { "text": 3, "name": "Rosa", "from": "Spain", "age": 20, "job": "dancer", "favouriteSport": "tennis" },
+            { "text": 4, "name": "Veena", "from": "New Delhi, India", "age": 12, "job": "student", "favouriteSport": "volleyball", "note": "boarding-school in Manchester" }
+          ],
+          "questions": [
+            {
+              "ref": "a",
+              "en": "Where is Fergus from? What's his job?",
+              "uz": "Fergus qayerdan? Kasbi nima?",
+              "answerEn": "He's from Edinburgh, Scotland. He's a musician.",
+              "answerUz": "U Edinburgdan, Shotlandiyadan. U musiqachi."
+            },
+            {
+              "ref": "b",
+              "en": "How old is Diego? What's his favourite sport?",
+              "uz": "Diego necha yoshda? Sevimli sporti nima?",
+              "answerEn": "He's thirty-five years old. His favourite sport is football.",
+              "answerUz": "U o'ttiz besh yoshda. Sevimli sporti — futbol."
+            },
+            {
+              "ref": "c",
+              "en": "Where are Carlos and Rosa from? How old is Carlos? How old is Rosa?",
+              "uz": "Carlos va Rosa qayerdan? Carlos necha yoshda? Rosa necha yoshda?",
+              "answerEn": "They're from Spain. Carlos is twenty-two years old and Rosa is twenty years old.",
+              "answerUz": "Ular Ispaniyadan. Carlos yigirma ikki yoshda, Rosa esa yigirma yoshda."
+            },
+            {
+              "ref": "d",
+              "en": "Where is Veena from? What's her favourite sport?",
+              "uz": "Veena qayerdan? Sevimli sporti nima?",
+              "answerEn": "She's from New Delhi, India. Her favourite sport is volleyball.",
+              "answerUz": "U Yangi Dehlidan, Hindistondan. Sevimli sporti — voleybol."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabularyOnPage": [
+    { "en": "married", "uz": "uylangan / turmush qurgan" },
+    { "en": "boarding-school", "uz": "internat maktab" },
+    { "en": "musician", "uz": "musiqachi" },
+    { "en": "farmer", "uz": "dehqon, fermer" },
+    { "en": "dancer", "uz": "raqqos" },
+    { "en": "student", "uz": "o'quvchi, talaba" },
+    { "en": "friend", "uz": "do'st" },
+    { "en": "golf", "uz": "golf" },
+    { "en": "football", "uz": "futbol" },
+    { "en": "basketball", "uz": "basketbol" },
+    { "en": "tennis", "uz": "tennis" },
+    { "en": "volleyball", "uz": "voleybol" }
+  ]
+}
