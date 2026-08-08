@@ -30,7 +30,7 @@ class HomeworkFlow extends StatefulWidget {
 }
 
 /// Oqim bosqichlari.
-enum _Phase { question, result }
+enum _Phase { question, match, correction, result }
 
 class _HomeworkFlowState extends State<HomeworkFlow> {
   late HwPlan _plan;
@@ -70,13 +70,44 @@ class _HomeworkFlowState extends State<HomeworkFlow> {
     });
   }
 
-  /// Keyingi savolga o'tish (yoki yakunlash).
+  /// Keyingi savolga o'tish (yoki match/tuzatish/natijaga).
   void _next() {
     if (_index + 1 < _plan.questions.length) {
       setState(() => _index += 1);
     } else {
+      _afterQuestions();
+    }
+  }
+
+  void _afterQuestions() {
+    if (_plan.matchRound.isNotEmpty) {
+      setState(() => _phase = _Phase.match);
+    } else {
+      _afterMatch();
+    }
+  }
+
+  /// Match tugadi: xato so'zlar bo'lsa tuzatish raundi, aks holda natija.
+  void _afterMatch() {
+    if (_wrong.isNotEmpty) {
+      setState(() => _phase = _Phase.correction);
+    } else {
       _finish();
     }
+  }
+
+  /// Match juftlari uchun ball (har juft 1) — SRS bilan birga.
+  Future<void> _matchPair(Word word, bool correct) async {
+    await progress.reviewWord(word.id, correct ? Quality.good : Quality.unknown);
+    if (!mounted) return;
+    setState(() {
+      if (correct) {
+        _earned += 1;
+        _sessionXp += xpForQuality(Quality.good);
+      } else if (!_wrong.any((x) => x.id == word.id)) {
+        _wrong.add(word);
+      }
+    });
   }
 
   Future<void> _finish() async {
@@ -150,6 +181,18 @@ class _HomeworkFlowState extends State<HomeworkFlow> {
               ),
             ),
           ],
+        );
+      case _Phase.match:
+        return _MatchRound(
+          words: _plan.matchRound,
+          onPair: _matchPair,
+          onDone: _afterMatch,
+        );
+      case _Phase.correction:
+        return _CorrectionRound(
+          words: List.of(_wrong),
+          levelWords: widget.levelWords,
+          onDone: _finish,
         );
       case _Phase.result:
         return _ResultView(
@@ -554,6 +597,322 @@ class _ConstructBodyState extends State<_ConstructBody> {
               ),
           ],
         ),
+      ],
+    );
+  }
+}
+
+/// Moslash raundi: chapda inglizcha, o'ngda o'zbekcha. Har juft 1 ball.
+/// Ball faqat BIRINCHI urinishda beriladi (xato bosilsa — juft "kuygan").
+class _MatchRound extends StatefulWidget {
+  final List<Word> words;
+  final Future<void> Function(Word, bool) onPair;
+  final VoidCallback onDone;
+
+  const _MatchRound({
+    required this.words,
+    required this.onPair,
+    required this.onDone,
+  });
+
+  @override
+  State<_MatchRound> createState() => _MatchRoundState();
+}
+
+class _MatchRoundState extends State<_MatchRound> {
+  final _rnd = Random();
+  late List<Word> _left;
+  late List<Word> _right;
+  String? _selected; // tanlangan chap so'z id
+  final Set<String> _matched = {};
+  final Set<String> _failed = {}; // xato urinish bo'lgan so'zlar
+  String? _wrongFlash;
+
+  @override
+  void initState() {
+    super.initState();
+    _left = List.of(widget.words)..shuffle(_rnd);
+    _right = List.of(widget.words)..shuffle(_rnd);
+  }
+
+  Future<void> _tapRight(Word r) async {
+    final sel = _selected;
+    if (sel == null || _matched.contains(r.id)) return;
+
+    if (sel == r.id) {
+      setState(() {
+        _matched.add(r.id);
+        _selected = null;
+      });
+      await widget.onPair(r, !_failed.contains(r.id));
+      Tts.instance.speak(r.en, id: r.id);
+      if (_matched.length == widget.words.length) {
+        Future.delayed(const Duration(milliseconds: 600), () {
+          if (mounted) widget.onDone();
+        });
+      }
+    } else {
+      setState(() {
+        _failed.add(sel); // tanlangan chap so'z uchun xato hisoblanadi
+        _wrongFlash = r.id;
+      });
+      Future.delayed(const Duration(milliseconds: 400), () {
+        if (mounted) setState(() => _wrongFlash = null);
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        const Padding(
+          padding: EdgeInsets.fromLTRB(20, 16, 20, 4),
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              '🔗 Moslash raundi',
+              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
+            ),
+          ),
+        ),
+        Expanded(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Column(
+                    children: [
+                      for (final x in _left)
+                        _tile(
+                          label: x.en,
+                          done: _matched.contains(x.id),
+                          selected: _selected == x.id,
+                          onTap: () {
+                            if (_matched.contains(x.id)) return;
+                            setState(() => _selected = x.id);
+                            Tts.instance.speak(x.en, id: x.id);
+                          },
+                        ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    children: [
+                      for (final x in _right)
+                        _tile(
+                          label: x.uz,
+                          done: _matched.contains(x.id),
+                          wrong: _wrongFlash == x.id,
+                          onTap: () => _tapRight(x),
+                        ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _tile({
+    required String label,
+    required VoidCallback onTap,
+    bool done = false,
+    bool selected = false,
+    bool wrong = false,
+  }) {
+    Color border = Colors.black12;
+    Color bg = Theme.of(context).colorScheme.surface;
+    if (done) {
+      border = AppColors.success;
+      bg = AppColors.success.withValues(alpha: 0.12);
+    } else if (wrong) {
+      border = AppColors.danger;
+      bg = AppColors.danger.withValues(alpha: 0.12);
+    } else if (selected) {
+      border = AppColors.brandPurple;
+      bg = AppColors.brandPurple.withValues(alpha: 0.10);
+    }
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Material(
+        color: bg,
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadius.md),
+          onTap: done ? null : onTap,
+          child: Container(
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadius.md),
+              border: Border.all(color: border, width: 1.8),
+            ),
+            child: Text(
+              label,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 15,
+                color: done ? AppColors.success : null,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Tuzatish raundi: xato qilingan so'zlar to'g'ri javob berilguncha so'raladi.
+/// BALLGA TA'SIR QILMAYDI — maqsadi o'rgatish (spec §5.1).
+class _CorrectionRound extends StatefulWidget {
+  final List<Word> words;
+  final List<Word> levelWords;
+  final VoidCallback onDone;
+
+  const _CorrectionRound({
+    required this.words,
+    required this.levelWords,
+    required this.onDone,
+  });
+
+  @override
+  State<_CorrectionRound> createState() => _CorrectionRoundState();
+}
+
+class _CorrectionRoundState extends State<_CorrectionRound> {
+  final _rnd = Random();
+  int _i = 0;
+  late List<String> _options;
+  String? _chosen;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  void _load() {
+    final target = widget.words[_i];
+    final pool = [...widget.words, ...widget.levelWords];
+    final d = pickDistractors(target, pool, 3, _rnd);
+    _options = [target.uz, ...d.map((x) => x.uz)]..shuffle(_rnd);
+    _chosen = null;
+    WidgetsBinding.instance.addPostFrameCallback(
+      (_) => Tts.instance.speak(target.en, id: 'fix'),
+    );
+  }
+
+  void _tap(String option) {
+    final target = widget.words[_i];
+    if (_chosen != null) return;
+    setState(() => _chosen = option);
+
+    if (option != target.uz) {
+      // Xato — to'g'risini ko'rsatib, shu so'zni qayta so'raymiz.
+      Future.delayed(const Duration(milliseconds: 1200), () {
+        if (!mounted) return;
+        setState(_load);
+      });
+      return;
+    }
+
+    showCorrectBurst(context);
+    Future.delayed(const Duration(milliseconds: 900), () {
+      if (!mounted) return;
+      if (_i + 1 < widget.words.length) {
+        setState(() {
+          _i += 1;
+          _load();
+        });
+      } else {
+        widget.onDone();
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final target = widget.words[_i];
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
+      children: [
+        Row(
+          children: [
+            const Text(
+              '🔁 Xatolar ustida ishlash',
+              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
+            ),
+            const Spacer(),
+            Text(
+              '${_i + 1} / ${widget.words.length}',
+              style: const TextStyle(
+                fontWeight: FontWeight.w800,
+                color: AppColors.homework,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 6),
+        const Text(
+          'Bu raund bahoga ta\'sir qilmaydi',
+          style: TextStyle(fontSize: 12, color: AppColors.lightMuted),
+        ),
+        const SizedBox(height: 16),
+        Center(
+          child: Text(
+            target.en,
+            style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w800),
+          ),
+        ),
+        const SizedBox(height: 10),
+        Center(child: RoundPlay(text: target.en)),
+        const SizedBox(height: 22),
+        for (final o in _options)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: Material(
+              color: Theme.of(context).colorScheme.surface,
+              borderRadius: BorderRadius.circular(AppRadius.md),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(AppRadius.md),
+                onTap: _chosen == null ? () => _tap(o) : null,
+                child: Container(
+                  width: double.infinity,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(AppRadius.md),
+                    border: Border.all(
+                      color: _chosen == null
+                          ? Colors.black12
+                          : o == target.uz
+                              ? AppColors.success
+                              : o == _chosen
+                                  ? AppColors.danger
+                                  : Colors.black12,
+                      width: 1.8,
+                    ),
+                  ),
+                  child: Text(
+                    o,
+                    style: const TextStyle(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
       ],
     );
   }
