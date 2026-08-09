@@ -32,6 +32,7 @@
         "Scotland",
         "Brazil"
        ],
+       "visual": "assets/images/unit1/u1-people-brazil.jpg",
        "speak": "Two farmers with hoes, working in a field"
       },
       {
@@ -44,6 +45,7 @@
         "Scotland",
         "Brazil"
        ],
+       "visual": "assets/images/unit1/u1-people-india.jpg",
        "speak": "A girl wearing a colourful headscarf"
       },
       {
@@ -56,6 +58,7 @@
         "Scotland",
         "Brazil"
        ],
+       "visual": "assets/images/unit1/u1-people-spain.jpg",
        "speak": "A couple in flamenco costume"
       },
       {
@@ -68,6 +71,7 @@
         "Scotland",
         "Brazil"
        ],
+       "visual": "assets/images/unit1/u1-people-scotland.jpg",
        "speak": "A man in a kilt playing the bagpipes"
       }
      ]
@@ -447,6 +451,7 @@
        "answer": "Paris",
        "promptUz": "Fransiya",
        "whyUz": "Zafar arkasi",
+       "visual": "assets/images/unit1/u1-cap-france.jpg",
        "speak": "France"
       },
       {
@@ -454,6 +459,7 @@
        "answer": "Rome",
        "promptUz": "Italiya",
        "whyUz": "Kolizey",
+       "visual": "assets/images/unit1/u1-cap-italy.jpg",
        "speak": "Italy"
       },
       {
@@ -461,6 +467,7 @@
        "answer": "Warsaw",
        "promptUz": "Polsha",
        "whyUz": "Eski shahar",
+       "visual": "assets/images/unit1/u1-cap-poland.jpg",
        "speak": "Poland"
       },
       {
@@ -468,6 +475,7 @@
        "answer": "Budapest",
        "promptUz": "Vengriya",
        "whyUz": "Parlament",
+       "visual": "assets/images/unit1/u1-cap-hungary.jpg",
        "speak": "Hungary"
       },
       {
@@ -475,6 +483,7 @@
        "answer": "Moscow",
        "promptUz": "Rossiya",
        "whyUz": "Kreml",
+       "visual": "assets/images/unit1/u1-cap-russia.jpg",
        "speak": "Russia"
       },
       {
@@ -482,6 +491,7 @@
        "answer": "Beijing",
        "promptUz": "Xitoy",
        "whyUz": "Taqiqlangan shahar",
+       "visual": "assets/images/unit1/u1-cap-china.jpg",
        "speak": "China"
       }
      ]
@@ -4108,52 +4118,115 @@
      "audio": false,
      "book": "coursebook",
      "bookPage": 9,
-     "kind": "study",
+     "kind": "choice",
      "tasks": [
       {
-       "en": "the Pyramids — Cairo, Egypt",
-       "uz": "Piramidalar",
-       "note": "No, they aren't. They're in Egypt."
+       "prompt": "Are the Pyramids in Brazil?",
+       "answer": "Yo'q",
+       "promptUz": "Piramidalar",
+       "options": [
+        "Ha",
+        "Yo'q"
+       ],
+       "whyUz": "No, they aren't. They're in Egypt. (Cairo, Egypt)",
+       "visual": "assets/images/unit1/u1-lm-pyramids.jpg",
+       "speak": "Are the Pyramids in Brazil?"
       },
       {
-       "en": "the Taj Mahal — Agra, India",
-       "uz": "Toj Mahal",
-       "note": "Yes, it is."
+       "prompt": "Is the Taj Mahal in India?",
+       "answer": "Ha",
+       "promptUz": "Toj Mahal",
+       "options": [
+        "Ha",
+        "Yo'q"
+       ],
+       "whyUz": "Yes, it is. (Agra, India)",
+       "visual": "assets/images/unit1/u1-lm-tajmahal.jpg",
+       "speak": "Is the Taj Mahal in India?"
       },
       {
-       "en": "Big Ben — London, England",
-       "uz": "Big Ben",
-       "note": "Yes, it is."
+       "prompt": "Is Big Ben in England?",
+       "answer": "Ha",
+       "promptUz": "Big Ben",
+       "options": [
+        "Ha",
+        "Yo'q"
+       ],
+       "whyUz": "Yes, it is. (London, England)",
+       "visual": "assets/images/unit1/u1-lm-bigben.jpg",
+       "speak": "Is Big Ben in England?"
       },
       {
-       "en": "the Eiffel Tower — Paris, France",
-       "uz": "Eyfel minorasi",
-       "note": "No, it isn't. It's in France."
+       "prompt": "Is the Eiffel Tower in Italy?",
+       "answer": "Yo'q",
+       "promptUz": "Eyfel minorasi",
+       "options": [
+        "Ha",
+        "Yo'q"
+       ],
+       "whyUz": "No, it isn't. It's in France. (Paris, France)",
+       "visual": "assets/images/unit1/u1-lm-eiffel.jpg",
+       "speak": "Is the Eiffel Tower in Italy?"
       },
       {
-       "en": "the Parthenon — Athens, Greece",
-       "uz": "Parfenon",
-       "note": "No, it isn't. It's in Greece."
+       "prompt": "Is the Parthenon in Poland?",
+       "answer": "Yo'q",
+       "promptUz": "Parfenon",
+       "options": [
+        "Ha",
+        "Yo'q"
+       ],
+       "whyUz": "No, it isn't. It's in Greece. (Athens, Greece)",
+       "visual": "assets/images/unit1/u1-lm-parthenon.jpg",
+       "speak": "Is the Parthenon in Poland?"
       },
       {
-       "en": "the White House — Washington DC, the USA",
-       "uz": "Oq uy",
-       "note": "Yes, it is."
+       "prompt": "Is the White House in the USA?",
+       "answer": "Ha",
+       "promptUz": "Oq uy",
+       "options": [
+        "Ha",
+        "Yo'q"
+       ],
+       "whyUz": "Yes, it is. (Washington DC, the USA)",
+       "visual": "assets/images/unit1/u1-lm-whitehouse.jpg",
+       "speak": "Is the White House in the USA?"
       },
       {
-       "en": "St Basil's Cathedral — Moscow, Russia",
-       "uz": "Avliyo Vasiliy sobori",
-       "note": "No, it isn't. It's in Russia."
+       "prompt": "Is St Basil's Cathedral in Hungary?",
+       "answer": "Yo'q",
+       "promptUz": "Avliyo Vasiliy sobori",
+       "options": [
+        "Ha",
+        "Yo'q"
+       ],
+       "whyUz": "No, it isn't. It's in Russia. (Moscow, Russia)",
+       "visual": "assets/images/unit1/u1-lm-stbasil.jpg",
+       "speak": "Is St Basil's Cathedral in Hungary?"
       },
       {
-       "en": "the Sydney Opera House — Sydney, Australia",
-       "uz": "Sidney opera teatri",
-       "note": "No, it isn't. It's in Australia."
+       "prompt": "Is the Sydney Opera House in Canada?",
+       "answer": "Yo'q",
+       "promptUz": "Sidney opera teatri",
+       "options": [
+        "Ha",
+        "Yo'q"
+       ],
+       "whyUz": "No, it isn't. It's in Australia. (Sydney, Australia)",
+       "visual": "assets/images/unit1/u1-lm-sydney.jpg",
+       "speak": "Is the Sydney Opera House in Canada?"
       },
       {
-       "en": "the Statue of Liberty — New York, the USA",
-       "uz": "Ozodlik haykali",
-       "note": "Yes, it is."
+       "prompt": "Is the Statue of Liberty in the USA?",
+       "answer": "Ha",
+       "promptUz": "Ozodlik haykali",
+       "options": [
+        "Ha",
+        "Yo'q"
+       ],
+       "whyUz": "Yes, it is. (New York, the USA)",
+       "visual": "assets/images/unit1/u1-lm-liberty.jpg",
+       "speak": "Is the Statue of Liberty in the USA?"
       }
      ]
     }

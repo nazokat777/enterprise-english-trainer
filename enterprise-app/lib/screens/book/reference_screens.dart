@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
 import '../../book_content.dart';
 import '../../main.dart';
@@ -870,6 +872,116 @@ class _VocabDrillState extends State<_VocabDrill> {
             ),
         ],
       ),
+    );
+  }
+}
+
+// ═══════════════════ Rasmlar manbasi ═══════════════════
+/// Wikimedia Commons'dan olingan rasmlar uchun mualliflik ma'lumoti.
+/// CC BY va CC BY-SA litsenziyalari muallifni ko'rsatishni TALAB qiladi.
+class ImageCreditsScreen extends StatefulWidget {
+  const ImageCreditsScreen({super.key});
+
+  @override
+  State<ImageCreditsScreen> createState() => _ImageCreditsScreenState();
+}
+
+class _ImageCreditsScreenState extends State<ImageCreditsScreen> {
+  List<MapEntry<String, Map<String, dynamic>>> _items = [];
+  bool _loading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    try {
+      final s = await rootBundle.loadString('assets/images/CREDITS.json');
+      final m = (json.decode(s) as Map).cast<String, dynamic>();
+      _items = m.entries
+          .map((e) => MapEntry(e.key, (e.value as Map).cast<String, dynamic>()))
+          .toList()
+        ..sort((a, b) => a.key.compareTo(b.key));
+    } catch (_) {
+      _items = [];
+    }
+    if (mounted) setState(() => _loading = false);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: const _Bar(title: 'Rasmlar manbasi'),
+      body: _loading
+          ? const Center(child: CircularProgressIndicator())
+          : ListView(
+              padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
+              children: [
+                const Text(
+                  'Kitobdagi rasmlar mualliflik huquqi bilan himoyalangan va '
+                  'ko\'chirilmagan. Ularning o\'rniga Wikimedia Commons\'dagi '
+                  'erkin litsenziyali rasmlar ishlatilgan.',
+                  style: TextStyle(fontSize: 13, height: 1.55),
+                ),
+                const SizedBox(height: 16),
+                for (final e in _items)
+                  Container(
+                    width: double.infinity,
+                    margin: const EdgeInsets.only(bottom: 9),
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.surface,
+                      borderRadius: BorderRadius.circular(AppRadius.md),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          (e.value['file'] ?? e.key)
+                              .toString()
+                              .replaceFirst('File:', ''),
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w700, fontSize: 13),
+                        ),
+                        const SizedBox(height: 4),
+                        Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8, vertical: 2),
+                              decoration: BoxDecoration(
+                                color: AppColors.success.withValues(alpha: 0.12),
+                                borderRadius:
+                                    BorderRadius.circular(AppRadius.sm),
+                              ),
+                              child: Text(
+                                (e.value['licence'] ?? '').toString(),
+                                style: const TextStyle(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w700,
+                                    color: AppColors.success),
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                (e.value['author'] ?? '').toString(),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                    fontSize: 12,
+                                    color: AppColors.lightMuted),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+              ],
+            ),
     );
   }
 }

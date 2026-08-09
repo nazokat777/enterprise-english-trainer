@@ -436,7 +436,8 @@ def _dispatch(t, ex, items):
     if t == "picture_fill_and_ask":
         return "text", [
             task(i["country"], i["capital"], prompt_uz=i.get("countryUz", ""),
-                 why=f"{i.get('landmark','')}")
+                 why=f"{i.get('landmark','')}", speak=i["country"],
+                 visual=i.get("image", ""))
             for i in items if not i.get("given")
         ]
 
@@ -524,11 +525,22 @@ def _dispatch(t, ex, items):
         ]
 
     if t == "ask_answer_landmarks":
-        return "study", [
-            study(f"{i['landmark']} — {i['realCity']}, {i['realCountry']}",
-                  i.get("landmarkUz", ""), i.get("answerEn", ""))
-            for i in items
-        ]
+        # Rasm + "shu mamlakatdami?" -> Ha/Yo'q. Kitobdagi og'zaki mashqning
+        # interaktiv varianti: birlik/ko'plik farqi ham shu yerda mashq bo'ladi.
+        out = []
+        for i in items:
+            q = "Are" if i.get("plural") else "Is"
+            out.append(task(
+                f"{q} {i['landmark']} in {i['asked']}?",
+                "Ha" if i.get("correct") else "Yo'q",
+                prompt_uz=i.get("landmarkUz", ""),
+                options=["Ha", "Yo'q"],
+                why=f"{i.get('answerEn','')} "
+                    f"({i.get('realCity','')}, {i.get('realCountry','')})",
+                speak=f"{q} {i['landmark']} in {i['asked']}?",
+                visual=i.get("image", ""),
+            ))
+        return "choice", out
 
     if t == "discuss_meaning":
         return "study", [study(ex.get("sentenceEn", ""), ex.get("sentenceUz", ""))]

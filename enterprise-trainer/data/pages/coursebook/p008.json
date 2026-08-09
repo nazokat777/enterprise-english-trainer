@@ -18,32 +18,54 @@
           "instructionUz": "Rasmlarga qarang. Bu odamlar qaysi mamlakatdan: Ispaniya, Hindiston, Shotlandiya yoki Braziliya?",
           "explanationUz": "Rasmlardagi kiyim va buyumlar mamlakatni aytib beradi:\n• Shotlandiya — kilt (yubkasimon kiyim) va bagpipe (jiroq)\n• Hindiston — rangli ro'mol (dupatta)\n• Ispaniya — flamenko libosi\n• Braziliya — dehqonlar, ketmon bilan\nMamlakat nomlari doim KATTA harf bilan yoziladi.",
           "bookRef": "Coursebook, 6-bet — rasmlar A, B, C, D",
-          "options": ["Spain", "India", "Scotland", "Brazil"],
-          "optionsUz": ["Ispaniya", "Hindiston", "Shotlandiya", "Braziliya"],
+          "options": [
+            "Spain",
+            "India",
+            "Scotland",
+            "Brazil"
+          ],
+          "optionsUz": [
+            "Ispaniya",
+            "Hindiston",
+            "Shotlandiya",
+            "Braziliya"
+          ],
           "answers": [
             {
-              "picture": "A", "country": "Brazil", "countryUz": "Braziliya",
+              "picture": "A",
+              "country": "Brazil",
+              "countryUz": "Braziliya",
               "descEn": "Two farmers with hoes, working in a field",
               "descUz": "Ketmon ushlagan ikki dehqon, dalada",
-              "imageQuery": "Brazilian farm workers field"
+              "imageQuery": "Brazilian farm workers field",
+              "image": "assets/images/unit1/u1-people-brazil.jpg"
             },
             {
-              "picture": "B", "country": "India", "countryUz": "Hindiston",
+              "picture": "B",
+              "country": "India",
+              "countryUz": "Hindiston",
               "descEn": "A girl wearing a colourful headscarf",
               "descUz": "Rangli ro'mol o'ragan qiz",
-              "imageQuery": "Indian girl traditional dupatta"
+              "imageQuery": "Indian girl traditional dupatta",
+              "image": "assets/images/unit1/u1-people-india.jpg"
             },
             {
-              "picture": "C", "country": "Spain", "countryUz": "Ispaniya",
+              "picture": "C",
+              "country": "Spain",
+              "countryUz": "Ispaniya",
               "descEn": "A couple in flamenco costume",
               "descUz": "Flamenko libosidagi juftlik",
-              "imageQuery": "flamenco dress Spain traditional"
+              "imageQuery": "flamenco dress Spain traditional",
+              "image": "assets/images/unit1/u1-people-spain.jpg"
             },
             {
-              "picture": "D", "country": "Scotland", "countryUz": "Shotlandiya",
+              "picture": "D",
+              "country": "Scotland",
+              "countryUz": "Shotlandiya",
               "descEn": "A man in a kilt playing the bagpipes",
               "descUz": "Kilt kiygan, jiroq chalayotgan erkak",
-              "imageQuery": "Scottish bagpiper kilt"
+              "imageQuery": "Scottish bagpiper kilt",
+              "image": "assets/images/unit1/u1-people-scotland.jpg"
             }
           ]
         },
@@ -55,15 +77,42 @@
           "instructionUz": "Eshiting va takrorlang.",
           "explanationUz": "Bu gaplar butun Unit 1 ning asosi. Ularda 'to be' fe'li ishlatilgan:\n• I am / I'm — men ...man\n• They are / They're — ular ...\n• Where is ...? — qayerda/qayerdan?\nQisqartma shakl (I'm, They're) og'zaki nutqda deyarli doim ishlatiladi.",
           "sentences": [
-            { "en": "I am from Edinburgh, Scotland.", "uz": "Men Edinburgdanman, Shotlandiyadan." },
-            { "en": "I'm forty years old.", "uz": "Men qirq yoshdaman." },
-            { "en": "I'm not married.", "uz": "Men uylanmaganman." },
-            { "en": "They're friends and they're from Brazil.", "uz": "Ular do'stlar va ular Braziliyadan." },
-            { "en": "I'm a student at an English boarding-school.", "uz": "Men ingliz internat-maktabida o'quvchiman." },
-            { "en": "My favourite sport is golf.", "uz": "Mening sevimli sportim — golf." },
-            { "en": "Where is he from?", "uz": "U qayerdan?" },
-            { "en": "What's his job?", "uz": "Uning kasbi nima?" },
-            { "en": "How old is he?", "uz": "U necha yoshda?" }
+            {
+              "en": "I am from Edinburgh, Scotland.",
+              "uz": "Men Edinburgdanman, Shotlandiyadan."
+            },
+            {
+              "en": "I'm forty years old.",
+              "uz": "Men qirq yoshdaman."
+            },
+            {
+              "en": "I'm not married.",
+              "uz": "Men uylanmaganman."
+            },
+            {
+              "en": "They're friends and they're from Brazil.",
+              "uz": "Ular do'stlar va ular Braziliyadan."
+            },
+            {
+              "en": "I'm a student at an English boarding-school.",
+              "uz": "Men ingliz internat-maktabida o'quvchiman."
+            },
+            {
+              "en": "My favourite sport is golf.",
+              "uz": "Mening sevimli sportim — golf."
+            },
+            {
+              "en": "Where is he from?",
+              "uz": "U qayerdan?"
+            },
+            {
+              "en": "What's his job?",
+              "uz": "Uning kasbi nima?"
+            },
+            {
+              "en": "How old is he?",
+              "uz": "U necha yoshda?"
+            }
           ]
         },
         {
@@ -81,10 +130,26 @@
           "instructionUz": "Eshiting va harflarni eshitgan raqamlaringizga moslang.",
           "explanationUz": "Har rasm (A, B, C, D) 4 ta matndan biriga to'g'ri keladi. Audio'da matn raqami aytiladi.",
           "answers": [
-            { "letter": "A", "number": 2, "why": "Diego va Marco — dehqonlar (Braziliya)" },
-            { "letter": "B", "number": 4, "why": "Veena — o'quvchi (Hindiston)" },
-            { "letter": "C", "number": 3, "why": "Carlos va Rosa — raqqoslar (Ispaniya)" },
-            { "letter": "D", "number": 1, "why": "Fergus — musiqachi (Shotlandiya)" }
+            {
+              "letter": "A",
+              "number": 2,
+              "why": "Diego va Marco — dehqonlar (Braziliya)"
+            },
+            {
+              "letter": "B",
+              "number": 4,
+              "why": "Veena — o'quvchi (Hindiston)"
+            },
+            {
+              "letter": "C",
+              "number": 3,
+              "why": "Carlos va Rosa — raqqoslar (Ispaniya)"
+            },
+            {
+              "letter": "D",
+              "number": 1,
+              "why": "Fergus — musiqachi (Shotlandiya)"
+            }
           ]
         }
       ]
@@ -103,18 +168,86 @@
           "bookRef": "Coursebook, 6-bet — 1–4 matnlar",
           "readingNote": "Matnlarni kitobingizdan o'qing (6-bet). Quyida ularning mazmuni va javoblari berilgan.",
           "pictureLabels": [
-            { "picture": "A", "prompt": "They are ...", "answer": "farmers", "answerUz": "dehqonlar", "text": 2 },
-            { "picture": "B", "prompt": "I'm a ...", "answer": "student", "answerUz": "o'quvchi", "text": 4 },
-            { "picture": "C", "prompt": "They are ...", "answer": "dancers", "answerUz": "raqqoslar", "text": 3 },
-            { "picture": "D", "prompt": "I'm a ...", "answer": "musician", "answerUz": "musiqachi", "text": 1 }
+            {
+              "picture": "A",
+              "prompt": "They are ...",
+              "answer": "farmers",
+              "answerUz": "dehqonlar",
+              "text": 2
+            },
+            {
+              "picture": "B",
+              "prompt": "I'm a ...",
+              "answer": "student",
+              "answerUz": "o'quvchi",
+              "text": 4
+            },
+            {
+              "picture": "C",
+              "prompt": "They are ...",
+              "answer": "dancers",
+              "answerUz": "raqqoslar",
+              "text": 3
+            },
+            {
+              "picture": "D",
+              "prompt": "I'm a ...",
+              "answer": "musician",
+              "answerUz": "musiqachi",
+              "text": 1
+            }
           ],
           "people": [
-            { "text": 1, "name": "Fergus", "from": "Edinburgh, Scotland", "age": 40, "job": "musician", "favouriteSport": "golf", "married": false },
-            { "text": 2, "name": "Diego", "from": "Brazil", "age": 35, "job": "farmer", "favouriteSport": "football" },
-            { "text": 2, "name": "Marco", "from": "Brazil", "age": 27, "job": "farmer", "favouriteSport": "basketball" },
-            { "text": 3, "name": "Carlos", "from": "Spain", "age": 22, "job": "dancer", "favouriteSport": "football" },
-            { "text": 3, "name": "Rosa", "from": "Spain", "age": 20, "job": "dancer", "favouriteSport": "tennis" },
-            { "text": 4, "name": "Veena", "from": "New Delhi, India", "age": 12, "job": "student", "favouriteSport": "volleyball", "note": "boarding-school in Manchester" }
+            {
+              "text": 1,
+              "name": "Fergus",
+              "from": "Edinburgh, Scotland",
+              "age": 40,
+              "job": "musician",
+              "favouriteSport": "golf",
+              "married": false
+            },
+            {
+              "text": 2,
+              "name": "Diego",
+              "from": "Brazil",
+              "age": 35,
+              "job": "farmer",
+              "favouriteSport": "football"
+            },
+            {
+              "text": 2,
+              "name": "Marco",
+              "from": "Brazil",
+              "age": 27,
+              "job": "farmer",
+              "favouriteSport": "basketball"
+            },
+            {
+              "text": 3,
+              "name": "Carlos",
+              "from": "Spain",
+              "age": 22,
+              "job": "dancer",
+              "favouriteSport": "football"
+            },
+            {
+              "text": 3,
+              "name": "Rosa",
+              "from": "Spain",
+              "age": 20,
+              "job": "dancer",
+              "favouriteSport": "tennis"
+            },
+            {
+              "text": 4,
+              "name": "Veena",
+              "from": "New Delhi, India",
+              "age": 12,
+              "job": "student",
+              "favouriteSport": "volleyball",
+              "note": "boarding-school in Manchester"
+            }
           ],
           "questions": [
             {
@@ -158,32 +291,116 @@
         "ruleUz": "-er / -or → ishni bajaruvchi odam",
         "explanationUz": "Fe'lga yoki otga -er qo'shilsa, o'sha ishni qiluvchi odam chiqadi. Agar so'z -e bilan tugasa, faqat -r qo'shiladi.",
         "items": [
-          { "base": "farm", "baseUz": "ferma, dehqonchilik", "derived": "farmer", "derivedUz": "dehqon", "note": "farm + er" },
-          { "base": "dance", "baseUz": "raqs", "derived": "dancer", "derivedUz": "raqqos", "note": "dance + r (oxirgi -e tushadi)" },
-          { "base": "teach", "baseUz": "o'rgatmoq", "derived": "teacher", "derivedUz": "o'qituvchi", "note": "teach + er" },
-          { "base": "play", "baseUz": "o'ynamoq", "derived": "player", "derivedUz": "o'yinchi", "note": "play + er" }
+          {
+            "base": "farm",
+            "baseUz": "ferma, dehqonchilik",
+            "derived": "farmer",
+            "derivedUz": "dehqon",
+            "note": "farm + er"
+          },
+          {
+            "base": "dance",
+            "baseUz": "raqs",
+            "derived": "dancer",
+            "derivedUz": "raqqos",
+            "note": "dance + r (oxirgi -e tushadi)"
+          },
+          {
+            "base": "teach",
+            "baseUz": "o'rgatmoq",
+            "derived": "teacher",
+            "derivedUz": "o'qituvchi",
+            "note": "teach + er"
+          },
+          {
+            "base": "play",
+            "baseUz": "o'ynamoq",
+            "derived": "player",
+            "derivedUz": "o'yinchi",
+            "note": "play + er"
+          }
         ]
       },
       {
         "ruleUz": "-ian / -cian → soha egasi",
         "explanationUz": "Ko'pincha san'at va fan sohalarida ishlatiladi.",
         "items": [
-          { "base": "music", "baseUz": "musiqa", "derived": "musician", "derivedUz": "musiqachi", "note": "music + ian" },
-          { "base": "magic", "baseUz": "sehr", "derived": "magician", "derivedUz": "sehrgar", "note": "magic + ian" }
+          {
+            "base": "music",
+            "baseUz": "musiqa",
+            "derived": "musician",
+            "derivedUz": "musiqachi",
+            "note": "music + ian"
+          },
+          {
+            "base": "magic",
+            "baseUz": "sehr",
+            "derived": "magician",
+            "derivedUz": "sehrgar",
+            "note": "magic + ian"
+          }
         ]
       },
       {
         "ruleUz": "Mamlakat → millat",
         "explanationUz": "Millat nomi mamlakat nomidan yasaladi, lekin qo'shimcha har xil bo'ladi — shuning uchun ularni juft holda yodlash kerak. Ikkalasi ham KATTA harf bilan yoziladi.",
         "items": [
-          { "base": "Scotland", "baseUz": "Shotlandiya", "derived": "Scottish", "derivedUz": "shotlandiyalik", "note": "-ish" },
-          { "base": "Spain", "baseUz": "Ispaniya", "derived": "Spanish", "derivedUz": "ispan", "note": "-ish" },
-          { "base": "Turkey", "baseUz": "Turkiya", "derived": "Turkish", "derivedUz": "turk", "note": "-ish" },
-          { "base": "Brazil", "baseUz": "Braziliya", "derived": "Brazilian", "derivedUz": "braziliyalik", "note": "-ian" },
-          { "base": "India", "baseUz": "Hindiston", "derived": "Indian", "derivedUz": "hind", "note": "-n" },
-          { "base": "Canada", "baseUz": "Kanada", "derived": "Canadian", "derivedUz": "kanadalik", "note": "-ian" },
-          { "base": "Japan", "baseUz": "Yaponiya", "derived": "Japanese", "derivedUz": "yapon", "note": "-ese" },
-          { "base": "Greece", "baseUz": "Gretsiya", "derived": "Greek", "derivedUz": "grek", "note": "istisno" }
+          {
+            "base": "Scotland",
+            "baseUz": "Shotlandiya",
+            "derived": "Scottish",
+            "derivedUz": "shotlandiyalik",
+            "note": "-ish"
+          },
+          {
+            "base": "Spain",
+            "baseUz": "Ispaniya",
+            "derived": "Spanish",
+            "derivedUz": "ispan",
+            "note": "-ish"
+          },
+          {
+            "base": "Turkey",
+            "baseUz": "Turkiya",
+            "derived": "Turkish",
+            "derivedUz": "turk",
+            "note": "-ish"
+          },
+          {
+            "base": "Brazil",
+            "baseUz": "Braziliya",
+            "derived": "Brazilian",
+            "derivedUz": "braziliyalik",
+            "note": "-ian"
+          },
+          {
+            "base": "India",
+            "baseUz": "Hindiston",
+            "derived": "Indian",
+            "derivedUz": "hind",
+            "note": "-n"
+          },
+          {
+            "base": "Canada",
+            "baseUz": "Kanada",
+            "derived": "Canadian",
+            "derivedUz": "kanadalik",
+            "note": "-ian"
+          },
+          {
+            "base": "Japan",
+            "baseUz": "Yaponiya",
+            "derived": "Japanese",
+            "derivedUz": "yapon",
+            "note": "-ese"
+          },
+          {
+            "base": "Greece",
+            "baseUz": "Gretsiya",
+            "derived": "Greek",
+            "derivedUz": "grek",
+            "note": "istisno"
+          }
         ]
       }
     ]
@@ -225,17 +442,53 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "married", "uz": "uylangan / turmush qurgan" },
-    { "en": "boarding-school", "uz": "internat maktab" },
-    { "en": "musician", "uz": "musiqachi" },
-    { "en": "farmer", "uz": "dehqon, fermer" },
-    { "en": "dancer", "uz": "raqqos" },
-    { "en": "student", "uz": "o'quvchi, talaba" },
-    { "en": "friend", "uz": "do'st" },
-    { "en": "golf", "uz": "golf" },
-    { "en": "football", "uz": "futbol" },
-    { "en": "basketball", "uz": "basketbol" },
-    { "en": "tennis", "uz": "tennis" },
-    { "en": "volleyball", "uz": "voleybol" }
+    {
+      "en": "married",
+      "uz": "uylangan / turmush qurgan"
+    },
+    {
+      "en": "boarding-school",
+      "uz": "internat maktab"
+    },
+    {
+      "en": "musician",
+      "uz": "musiqachi"
+    },
+    {
+      "en": "farmer",
+      "uz": "dehqon, fermer"
+    },
+    {
+      "en": "dancer",
+      "uz": "raqqos"
+    },
+    {
+      "en": "student",
+      "uz": "o'quvchi, talaba"
+    },
+    {
+      "en": "friend",
+      "uz": "do'st"
+    },
+    {
+      "en": "golf",
+      "uz": "golf"
+    },
+    {
+      "en": "football",
+      "uz": "futbol"
+    },
+    {
+      "en": "basketball",
+      "uz": "basketbol"
+    },
+    {
+      "en": "tennis",
+      "uz": "tennis"
+    },
+    {
+      "en": "volleyball",
+      "uz": "voleybol"
+    }
   ]
 }

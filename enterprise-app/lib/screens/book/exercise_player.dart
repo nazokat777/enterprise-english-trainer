@@ -18,10 +18,14 @@ class ExercisePlayer extends StatefulWidget {
   final BookExercise exercise;
   final String sectionTitle;
 
+  /// Unit raqami — sarlavhada to'liq manzil ko'rsatish uchun.
+  final int unit;
+
   const ExercisePlayer({
     super.key,
     required this.exercise,
     required this.sectionTitle,
+    this.unit = 0,
   });
 
   @override
@@ -83,7 +87,24 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('${widget.sectionTitle} · ${ex.title}'),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text('${widget.sectionTitle} · ${ex.title}',
+                style: const TextStyle(fontSize: 17)),
+            // Qaysi kitobning qaysi beti — o'quvchi adashmasin.
+            Text(
+              widget.unit > 0
+                  ? ex.locationLabel(widget.unit)
+                  : ex.sourceLabel,
+              style: const TextStyle(
+                  fontSize: 11.5,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.brandPurple),
+            ),
+          ],
+        ),
         actions: [
           Center(
             child: Container(

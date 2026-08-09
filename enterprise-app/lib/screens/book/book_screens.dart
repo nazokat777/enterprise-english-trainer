@@ -160,8 +160,37 @@ class BookUnitScreen extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(20, 8, 20, 40),
           children: [
             _summary(context),
-            const SizedBox(height: 20),
-            const _Label('Bo\'limlar'),
+            const SizedBox(height: 16),
+            // ASOSIY tugma — kitobni betma-bet ko'rish.
+            Pressable3D(
+              color: AppColors.actionBlue,
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => BookPagesScreen(unit: unit)),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.auto_stories_rounded,
+                      color: Colors.white, size: 22),
+                  const SizedBox(width: 10),
+                  Text('Betma-bet ko\'rish (${unit.pages().length} bet)',
+                      style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 16)),
+                ],
+              ),
+            ),
+            const SizedBox(height: 8),
+            const Text(
+              'Kitobingizni oching — ilova aynan shu betlarni ko\'rsatadi.',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 12, color: AppColors.lightMuted),
+            ),
+            const SizedBox(height: 22),
+            const _Label('Yoki mavzu bo\'yicha'),
             const SizedBox(height: 10),
             for (var i = 0; i < groups.length; i++)
               EntranceFade(
@@ -204,6 +233,17 @@ class BookUnitScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       builder: (_) => UnitVocabularyScreen(unit: unit))),
+            ),
+            _refTile(
+              context,
+              icon: Icons.photo_library_rounded,
+              color: AppColors.lightMuted,
+              title: 'Rasmlar manbasi',
+              subtitle: 'Wikimedia Commons — erkin litsenziya',
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => const ImageCreditsScreen())),
             ),
           ],
         ),
@@ -365,6 +405,247 @@ class _GroupCard extends StatelessWidget {
   }
 }
 
+// ═══════════════════ Betlar ro'yxati ═══════════════════
+/// Unitdagi barcha betlar — kitob bo'yicha guruhlangan.
+class BookPagesScreen extends StatelessWidget {
+  final BookUnit unit;
+  const BookPagesScreen({super.key, required this.unit});
+
+  @override
+  Widget build(BuildContext context) {
+    final pages = unit.pages();
+    final byBook = <String, List<BookPage>>{};
+    for (final p in pages) {
+      byBook.putIfAbsent(p.bookLabel, () => []).add(p);
+    }
+    return Scaffold(
+      appBar: AppBar(title: Text('Unit ${unit.unit} — betlar')),
+      body: AnimatedBuilder(
+        animation: progress,
+        builder: (context, _) => ListView(
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
+          children: [
+            Text(
+              'Kitobingizni oching va shu betlarni ilova bilan birga ishlang.',
+              style: const TextStyle(
+                  fontSize: 13, color: AppColors.lightMuted, height: 1.5),
+            ),
+            const SizedBox(height: 18),
+            for (final entry in byBook.entries) ...[
+              Padding(
+                padding: const EdgeInsets.only(bottom: 10, top: 4),
+                child: Row(
+                  children: [
+                    const Icon(Icons.menu_book_rounded,
+                        size: 18, color: AppColors.brandPurple),
+                    const SizedBox(width: 8),
+                    Text(entry.key,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 15,
+                            color: AppColors.brandPurple)),
+                    const SizedBox(width: 8),
+                    Text('${entry.value.length} bet',
+                        style: const TextStyle(
+                            fontSize: 12, color: AppColors.lightMuted)),
+                  ],
+                ),
+              ),
+              for (final p in entry.value) _pageTile(context, p),
+              const SizedBox(height: 12),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _pageTile(BuildContext context, BookPage p) {
+    final done = p.exercises.every((e) =>
+        progress.isDone('ex::${e.book}::${e.bookPage}::${e.ref}'));
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 9),
+      child: Material(
+        color: Theme.of(context).colorScheme.surface,
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadius.md),
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => BookPageScreen(page: p)),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(13),
+            child: Row(
+              children: [
+                Container(
+                  width: 44,
+                  height: 44,
+                  decoration: BoxDecoration(
+                    color: (done ? AppColors.success : AppColors.actionBlue)
+                        .withValues(alpha: 0.12),
+                    borderRadius: BorderRadius.circular(AppRadius.sm),
+                  ),
+                  child: Center(
+                    child: done
+                        ? const Icon(Icons.check_rounded,
+                            color: AppColors.success)
+                        : Text('${p.bookPage}',
+                            style: const TextStyle(
+                                fontSize: 17,
+                                fontWeight: FontWeight.w800,
+                                color: AppColors.actionBlue)),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('${p.bookPage}-bet',
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w800, fontSize: 15)),
+                      const SizedBox(height: 2),
+                      Text(
+                        [
+                          '${p.exerciseCount} mashq',
+                          if (p.hasRule) 'qoida',
+                          ...p.sections
+                              .map((s) => s.titleUz)
+                              .toSet()
+                              .take(2),
+                        ].join(' · '),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            fontSize: 12, color: AppColors.lightMuted),
+                      ),
+                    ],
+                  ),
+                ),
+                const Icon(Icons.chevron_right_rounded,
+                    color: AppColors.lightMuted),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ═══════════════════ Bitta bet — to'liq ═══════════════════
+/// Kitobning bitta betidagi HAMMA NARSA bir joyda: bo'limlar, qoida,
+/// barcha mashqlar. O'quvchi kitobdagi betni ochib, shu ekran bilan ishlaydi.
+class BookPageScreen extends StatelessWidget {
+  final BookPage page;
+  const BookPageScreen({super.key, required this.page});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('${page.bookLabel} · ${page.bookPage}-bet'),
+      ),
+      body: AnimatedBuilder(
+        animation: progress,
+        builder: (context, _) => ListView(
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
+          children: [
+            // Betning to'liq manzili — o'quvchi qayerdaligini bilib turadi.
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(14),
+              decoration: BoxDecoration(
+                color: AppColors.brandPurple.withValues(alpha: 0.09),
+                borderRadius: BorderRadius.circular(AppRadius.md),
+              ),
+              child: Row(
+                children: [
+                  const Icon(Icons.place_rounded,
+                      size: 19, color: AppColors.brandPurple),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(page.fullLabel,
+                            style: const TextStyle(
+                                fontWeight: FontWeight.w800,
+                                fontSize: 14.5,
+                                color: AppColors.brandPurple)),
+                        const SizedBox(height: 2),
+                        Text(
+                            '${page.exerciseCount} mashq · ${page.answerableCount} band',
+                            style: const TextStyle(
+                                fontSize: 12, color: AppColors.lightMuted)),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 18),
+            for (final s in page.sections) ..._section(context, s),
+          ],
+        ),
+      ),
+    );
+  }
+
+  List<Widget> _section(BuildContext context, BookSection s) {
+    final st = sectionStyle(s.kind);
+    return [
+      Padding(
+        padding: const EdgeInsets.only(bottom: 10, top: 6),
+        child: Row(
+          children: [
+            Icon(st.icon, size: 18, color: st.color),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(s.title.isEmpty ? s.titleUz : s.title,
+                  style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 15.5,
+                      color: st.color)),
+            ),
+            Text(s.titleUz,
+                style: const TextStyle(
+                    fontSize: 11.5, color: AppColors.lightMuted)),
+          ],
+        ),
+      ),
+      if (s.hasRule)
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10),
+          child: Pressable3D(
+            color: AppColors.actionBlue,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => RuleScreen(section: s)),
+            ),
+            child: const Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.rule_rounded, color: Colors.white, size: 20),
+                SizedBox(width: 9),
+                Text('Qoidani o\'qish',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                        fontSize: 14.5)),
+              ],
+            ),
+          ),
+        ),
+      for (final e in s.exercises)
+        _ExerciseTile(exercise: e, section: s, unit: page.unit),
+      const SizedBox(height: 12),
+    ];
+  }
+}
+
 // ═══════════════════ Bo'lim guruhi ═══════════════════
 class BookGroupScreen extends StatelessWidget {
   final SectionGroup group;
@@ -447,7 +728,15 @@ class BookGroupScreen extends StatelessWidget {
 class _ExerciseTile extends StatelessWidget {
   final BookExercise exercise;
   final BookSection section;
-  const _ExerciseTile({required this.exercise, required this.section});
+
+  /// Unit raqami — to'liq manzil belgisi uchun ("1-unit · Coursebook · 7-bet").
+  final int unit;
+
+  const _ExerciseTile({
+    required this.exercise,
+    required this.section,
+    this.unit = 0,
+  });
 
   ({IconData icon, Color color, String label}) get _kindInfo =>
       switch (exercise.kind) {
@@ -491,6 +780,7 @@ class _ExerciseTile extends StatelessWidget {
               builder: (_) => ExercisePlayer(
                 exercise: exercise,
                 sectionTitle: section.titleUz,
+                unit: unit,
               ),
             ),
           ),
@@ -552,6 +842,17 @@ class _ExerciseTile extends StatelessWidget {
                             fontSize: 12,
                             color: AppColors.lightMuted,
                             height: 1.35),
+                      ),
+                      const SizedBox(height: 4),
+                      // To'liq manzil — qaysi kitob, qaysi bet, qaysi mashq.
+                      Text(
+                        unit > 0
+                            ? exercise.locationLabel(unit)
+                            : exercise.sourceLabel,
+                        style: const TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.brandPurple),
                       ),
                     ],
                   ),

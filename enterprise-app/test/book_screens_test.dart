@@ -103,9 +103,57 @@ void main() {
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
       await t.pump();
 
+      // Ro'yxat uzun — ko'rinmagan elementlarni ko'rish uchun pastga suramiz.
+      await t.drag(find.byType(ListView), const Offset(0, -600));
+      await t.pump();
+
       expect(find.text('So\'z yasalishi'), findsOneWidget);
       expect(find.text('Gap qoliplari'), findsOneWidget);
       expect(find.text('Unit lug\'ati'), findsOneWidget);
+    });
+
+    testWidgets('betma-bet ko\'rish tugmasi bor', (t) async {
+      await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
+      await t.pump();
+
+      // 2 ta bet: coursebook 7 va grammar 4
+      expect(find.text('Betma-bet ko\'rish (2 bet)'), findsOneWidget);
+    });
+  });
+
+  group('Betma-bet ko\'rinish', () {
+    testWidgets('betlar kitob bo\'yicha guruhlanadi', (t) async {
+      await t.pumpWidget(_wrap(BookPagesScreen(unit: unit)));
+      await t.pump();
+
+      expect(find.text('Coursebook'), findsOneWidget);
+      expect(find.text('Grammar'), findsOneWidget);
+      expect(find.text('7-bet'), findsOneWidget);
+      expect(find.text('4-bet'), findsOneWidget);
+    });
+
+    testWidgets('bet ekrani to\'liq manzil va mashqlarni ko\'rsatadi',
+        (t) async {
+      final page = unit.pages().first;
+      await t.pumpWidget(_wrap(BookPageScreen(page: page)));
+      await t.pump();
+
+      // To'liq manzil: "1-unit · Coursebook · 7-bet"
+      expect(find.text('1-unit · Coursebook · 7-bet'), findsOneWidget);
+      // Betdagi barcha mashqlar
+      expect(find.text('Ex. 5'), findsOneWidget);
+      expect(find.text('Ex. 6'), findsOneWidget);
+      expect(find.text('Ex. 7'), findsOneWidget);
+      expect(find.text('Ex. 8'), findsOneWidget);
+    });
+
+    testWidgets('har mashqda qaysi kitob va bet yozilgan', (t) async {
+      final page = unit.pages().first;
+      await t.pumpWidget(_wrap(BookPageScreen(page: page)));
+      await t.pump();
+
+      expect(find.text('1-unit · Coursebook · 7-bet · Ex. 5'), findsOneWidget);
+      expect(find.text('1-unit · Coursebook · 7-bet · Ex. 6'), findsOneWidget);
     });
   });
 

@@ -198,6 +198,14 @@ class BookExercise {
   int get answerableCount => isAnswerable ? tasks.length : 0;
 
   String get title => ref.isEmpty ? 'Mashq' : 'Ex. $ref';
+
+  /// Qaysi kitobning qaysi beti: "Coursebook · 7-bet".
+  String get sourceLabel => '${_bookLabel[book] ?? book} · $bookPage-bet';
+
+  /// To'liq manzil: "1-unit · Coursebook · 7-bet · Ex. 5".
+  /// O'quvchi kitobning qayerini ochishini aniq biladi.
+  String locationLabel(int unit) =>
+      '$unit-unit · $sourceLabel · ${ref.isEmpty ? "mashq" : "Ex. $ref"}';
 }
 
 /// Grammatika qoidasi (erkin tuzilma — asset'dan qanday kelsa shunday).
@@ -256,6 +264,9 @@ class BookSection {
   String get sourceLabel =>
       '${_bookLabel[book] ?? book}, $bookPage-bet';
 
+  /// Kitob nomi (ko'rinadigan shakl).
+  String get bookLabel => _bookLabel[book] ?? book;
+
   int get answerableCount =>
       exercises.fold(0, (s, e) => s + e.answerableCount);
 }
@@ -277,6 +288,39 @@ class SectionGroup {
   int get answerableCount =>
       sections.fold(0, (s, x) => s + x.answerableCount);
   bool get hasRule => sections.any((s) => s.hasRule);
+}
+
+/// Kitobning BITTA beti — o'sha betdagi barcha bo'limlar bir joyda.
+/// O'quvchi kitobni ochib, ilovada aynan shu betni to'liq ko'radi.
+class BookPage {
+  final String book;
+  final int bookPage;
+  final int unit;
+  final List<BookSection> sections;
+
+  const BookPage({
+    required this.book,
+    required this.bookPage,
+    required this.unit,
+    required this.sections,
+  });
+
+  String get bookLabel => _bookLabel[book] ?? book;
+
+  /// "Coursebook · 7-bet"
+  String get label => '$bookLabel · $bookPage-bet';
+
+  /// "1-unit · Coursebook · 7-bet"
+  String get fullLabel => '$unit-unit · $label';
+
+  List<BookExercise> get exercises =>
+      [for (final s in sections) ...s.exercises];
+
+  int get exerciseCount => exercises.length;
+  bool get hasRule => sections.any((s) => s.hasRule);
+
+  int get answerableCount =>
+      sections.fold(0, (s, x) => s + x.answerableCount);
 }
 
 /// So'z yasalishi guruhi.
@@ -404,6 +448,30 @@ class BookUnit {
 
   int get answerableCount =>
       sections.fold(0, (s, x) => s + x.answerableCount);
+
+  /// Bo'limlarni KITOB va BET bo'yicha guruhlaydi — "betma-bet" ko'rinish.
+  /// Tartib: Coursebook -> Grammar -> Workbook, ichida bet raqami bo'yicha.
+  List<BookPage> pages() {
+    final map = <String, List<BookSection>>{};
+    for (final s in sections) {
+      map.putIfAbsent('${s.book}|${s.bookPage}', () => []).add(s);
+    }
+    final out = [
+      for (final e in map.entries)
+        BookPage(
+          book: e.value.first.book,
+          bookPage: e.value.first.bookPage,
+          unit: unit,
+          sections: e.value,
+        ),
+    ];
+    const order = {'coursebook': 0, 'grammar': 1, 'workbook': 2};
+    out.sort((a, b) {
+      final c = (order[a.book] ?? 9).compareTo(order[b.book] ?? 9);
+      return c != 0 ? c : a.bookPage.compareTo(b.bookPage);
+    });
+    return out;
+  }
 
   /// Bo'limlarni turi bo'yicha guruhlaydi (37 bo'lim -> ~13 karta).
   /// Tartib asset'dagi tartibda saqlanadi.
