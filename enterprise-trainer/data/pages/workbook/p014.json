@@ -1,0 +1,250 @@
+{
+  "book": "workbook",
+  "pdfPage": 14,
+  "bookPage": 13,
+  "unit": 3,
+  "unitTitle": "Home Sweet Home",
+  "module": 1,
+  "pairsWith": "Coursebook 21-bet, Grammar Book 14-bet",
+  "sections": [
+    {
+      "kind": "grammar_exercise",
+      "title": "Grammar — prepositions with the cat and the basket",
+      "titleUz": "Grammatika — mushuk va savat",
+      "exercises": [
+        {
+          "ref": "3",
+          "type": "picture_choice",
+          "instructionEn": "Match the pictures to the correct prepositions, then make sentences as in the example.",
+          "instructionUz": "Rasmlarni to'g'ri predloglarga moslang, so'ng namunadagidek gap tuzing.",
+          "explanationUz": "Oltita rasm — bitta mushuk va bitta savat, oltita xil holat.\nBu — predloglarni o'rganishning ENG YAXSHI usuli: narsalar\nbir xil, faqat JOY o'zgaradi.\n\nPredloglar: behind, in, on, under, in front of, near\n\nNamuna: 1  The cat is near the basket.\n\nQOLIP: The cat is + PREDLOG + the basket.",
+          "bookRef": "Workbook, 13-bet, 3-mashq",
+          "options": ["near", "in front of", "in", "on", "behind", "under"],
+          "answers": [
+            { "picture": "1", "country": "near", "descEn": "Picture 1 — the cat is standing beside the basket, not touching it", "descUz": "1-rasm: mushuk savat yonida turibdi, tegmaydi", "given": true },
+            { "picture": "2", "country": "in front of", "descEn": "Picture 2 — the cat is standing in front of the basket, the basket is behind it", "descUz": "2-rasm: mushuk savatning oldida turibdi, savat uning orqasida" },
+            { "picture": "3", "country": "in", "descEn": "Picture 3 — the cat is sitting inside the basket", "descUz": "3-rasm: mushuk savatning ichida o'tiribdi" },
+            { "picture": "4", "country": "on", "descEn": "Picture 4 — the cat is standing on top of the basket", "descUz": "4-rasm: mushuk savatning ustida turibdi" },
+            { "picture": "5", "country": "behind", "descEn": "Picture 5 — only the cat's tail and head are visible behind the basket", "descUz": "5-rasm: savat orqasidan mushukning faqat dumi va boshi ko'rinadi" },
+            { "picture": "6", "country": "under", "descEn": "Picture 6 — the basket is upside down and the cat is underneath it", "descUz": "6-rasm: savat ag'darilgan, mushuk uning ostida" }
+          ]
+        },
+        {
+          "ref": "3-gaplar",
+          "type": "make_sentences_game",
+          "instructionEn": "Then make sentences as in the example.",
+          "instructionUz": "So'ng namunadagidek to'liq gap tuzing.",
+          "explanationUz": "Namuna: The cat is near the basket.\n\nQOLIP: The cat IS + predlog + THE basket.\nHar bir gapda 'the' ikki marta keladi — 'the cat' va 'the basket'.",
+          "bookRef": "Workbook, 13-bet, 3-mashq (gaplar)",
+          "example": [
+            { "speaker": "1", "en": "The cat is near the basket.", "uz": "Mushuk savat yonida." }
+          ],
+          "modelSentences": [
+            { "word": "2-rasm — mushuk savat oldida", "sentence": "The cat is in front of the basket.", "uz": "Mushuk savatning oldida." },
+            { "word": "3-rasm — mushuk savat ichida", "sentence": "The cat is in the basket.", "uz": "Mushuk savatning ichida." },
+            { "word": "4-rasm — mushuk savat ustida", "sentence": "The cat is on the basket.", "uz": "Mushuk savatning ustida." },
+            { "word": "5-rasm — mushuk savat orqasida", "sentence": "The cat is behind the basket.", "uz": "Mushuk savatning orqasida." },
+            { "word": "6-rasm — mushuk savat ostida", "sentence": "The cat is under the basket.", "uz": "Mushuk savatning ostida." }
+          ]
+        },
+        {
+          "ref": "4",
+          "type": "fill_gap",
+          "instructionEn": "Fill in the correct prepositions.",
+          "instructionUz": "To'g'ri predloglarni qo'ying.",
+          "explanationUz": "YASHASH JOYI PREDLOGLARI — eng chalkash mavzu.\n\n  IN  — ichida bo'lgan joy:\n        in a flat, in a house, in a village, in London,\n        in Kent, in the attic, in the garden, in the area,\n        in Marble Street (ko'cha nomi, raqamsiz)\n\n  ON  — yuza yoki maydon:\n        on the fourth floor, on a farm, on a houseboat,\n        on the River Thames\n\n  AT  — aniq nuqta, uy raqami bilan:\n        at 25, Momon Street\n\nQO'SHIMCHA PREDLOGLAR:\n  FROM — masofa:  half a mile FROM the city centre\n  NEAR — yaqinlik: near the shops\n  FOR  — maqsad:   for sale (sotuvga qo'yilgan)\n  OF   — material: made OF wood\n\nESLAB QOLING — ko'cha bilan:\n  AT 25, Momon Street  (uy raqami bor)\n  IN Marble Street     (uy raqami yo'q)",
+          "bookRef": "Workbook, 13-bet, 4-mashq",
+          "items": [
+            { "textEn": "1  I live ____ a small flat ____ the fourth floor. (1-bo'shliq)", "answer": "in", "whyUz": "Kvartira ichida yashaydi → IN a flat." },
+            { "textEn": "1  I live in a small flat ____ the fourth floor. (2-bo'shliq)", "answer": "on", "whyUz": "Qavat uchun doim ON: on the fourth floor." },
+            { "textEn": "2  Tom lives ____ a farm ____ Kent. (1-bo'shliq)", "answer": "on", "whyUz": "Ferma — yer maydoni → ON a farm." },
+            { "textEn": "2  Tom lives on a farm ____ Kent. (2-bo'shliq)", "answer": "in", "whyUz": "Kent — Angliyaning bir grafligi (hudud) → IN Kent." },
+            { "textEn": "3  She lives ____ 25, Momon Street.", "answer": "at", "whyUz": "Uy RAQAMI bor — aniq nuqta → AT." },
+            { "textEn": "4  His flat is ____ Marble Street.", "answer": "in", "whyUz": "Uy raqami YO'Q, faqat ko'cha nomi → IN Marble Street." },
+            { "textEn": "5  They live ____ London.", "answer": "in", "whyUz": "Shahar → IN." },
+            { "textEn": "6  Jason lives half a mile ____ the city centre.", "answer": "from", "whyUz": "Masofa uchun FROM: 'yarim mil markazDAN'." },
+            { "textEn": "7  Her house is ____ the shops.", "answer": "near", "whyUz": "Yaqinlik uchun NEAR. 'near from' EMAS — faqat 'near'." },
+            { "textEn": "8  Is there a supermarket ____ the area?", "answer": "in", "whyUz": "Hudud → IN the area." },
+            { "textEn": "9  There is a swimming-pool ____ the garden.", "answer": "in", "whyUz": "Bog' — chegarasi bor joy → IN the garden." },
+            { "textEn": "10  She lives ____ a village.", "answer": "in", "whyUz": "Qishloq → IN a village." },
+            { "textEn": "11  We live ____ a houseboat.", "answer": "on", "whyUz": "Qayiq USTIDA → ON a houseboat. Barcha qayiq va kemalar uchun ON." },
+            { "textEn": "12  The houseboat is ____ the River Thames.", "answer": "on", "whyUz": "Daryo YUZASIDA → ON the river. Temza — Londondagi daryo." },
+            { "textEn": "13  That house is ____ sale.", "answer": "for", "whyUz": "'for sale' — sotiladi. Turg'un birikma, o'zgarmaydi." },
+            { "textEn": "14  There is a study ____ the attic.", "answer": "in", "whyUz": "Chordoq ichida → IN the attic." },
+            { "textEn": "15  Chalets are made ____ wood.", "answer": "of", "whyUz": "'made of' — ...dan yasalgan. Materialni bildiradi." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_exercise",
+      "title": "a / an / some / any",
+      "titleUz": "a / an / some / any",
+      "exercises": [
+        {
+          "ref": "5",
+          "type": "word_choice",
+          "instructionEn": "Fill in a, an, some or any.",
+          "instructionUz": "a, an, some yoki any so'zini qo'ying.",
+          "explanationUz": "IKKI SAVOL:\n  1) Ot BIRLIKMI yoki KO'PLIKMI?\n  2) Gap TASDIQMI yoki INKOR/SAVOLMI?\n\n  BIRLIK → a (undosh tovush) yoki an (unli tovush)\n  KO'PLIK + tasdiq → some\n  KO'PLIK + inkor/savol → any\n\nDIQQAT: birlik otda inkor va savol bo'lsa ham 'any' EMAS:\n  ✅ Is there A park near here?\n  ✅ There isn't A bathroom upstairs.",
+          "bookRef": "Workbook, 13-bet, 5-mashq",
+          "items": [
+            { "textEn": "1  There are ____ flowers in the vase.", "uz": "Ko'plik + tasdiq", "options": ["some", "any", "a", "an"], "answer": "some", "whyUz": "'flowers' ko'plik, tasdiq → some." },
+            { "textEn": "2  Are there ____ shops near your house?", "uz": "Ko'plik + savol", "options": ["any", "some", "a", "an"], "answer": "any", "whyUz": "'shops' ko'plik, savol → any." },
+            { "textEn": "3  Is there ____ park near here?", "uz": "Birlik + savol", "options": ["a", "an", "some", "any"], "answer": "a", "whyUz": "'park' BIRLIK — savol bo'lsa ham 'any' emas. /p/ undosh → a." },
+            { "textEn": "4  There isn't ____ bathroom upstairs.", "uz": "Birlik + inkor", "options": ["a", "an", "some", "any"], "answer": "a", "whyUz": "'bathroom' birlik — inkor bo'lsa ham 'a'. /b/ undosh." },
+            { "textEn": "5  There aren't ____ chairs in the kitchen.", "uz": "Ko'plik + inkor", "options": ["any", "some", "a", "an"], "answer": "any", "whyUz": "'chairs' ko'plik, inkor → any." },
+            { "textEn": "6  Are there ____ good restaurants near here?", "uz": "Ko'plik + savol", "options": ["any", "some", "a", "an"], "answer": "any", "whyUz": "'restaurants' ko'plik, savol → any. Sifat ('good') bo'lsa ham qoida o'zgarmaydi." },
+            { "textEn": "7  There's ____ armchair in the living-room.", "uz": "Birlik + unli tovush", "options": ["an", "a", "some", "any"], "answer": "an", "whyUz": "'armchair' /ɑː/ unli tovush bilan boshlanadi → an." },
+            { "textEn": "8  There are ____ cushions on the sofa.", "uz": "Ko'plik + tasdiq", "options": ["some", "any", "a", "an"], "answer": "some", "whyUz": "'cushions' ko'plik, tasdiq → some." },
+            { "textEn": "9  Are there ____ books on the desk?", "uz": "Ko'plik + savol", "options": ["any", "some", "a", "an"], "answer": "any", "whyUz": "'books' ko'plik, savol → any." },
+            { "textEn": "10  There aren't ____ towels in the bathroom.", "uz": "Ko'plik + inkor", "options": ["any", "some", "a", "an"], "answer": "any", "whyUz": "'towels' ko'plik, inkor → any." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_exercise",
+      "title": "Prepositions in the living-room",
+      "titleUz": "Mehmonxonadagi predloglar",
+      "exercises": [
+        {
+          "ref": "6",
+          "type": "word_choice",
+          "instructionEn": "Look at the picture and fill in the correct prepositions.",
+          "instructionUz": "Rasmga qarang va to'g'ri predloglarni qo'ying.",
+          "explanationUz": "Ishlatiladigan predloglar: on, in, under, behind, near, in front of\n\nRASMDA: mehmonxona. Chap tomonda katta yog'och shkaf,\nyonida kreslo va chiroqli stol, o'ng tomonda uzun divan,\ndivan orqasida katta deraza va pardalar,\ndivan oldida past jurnal stoli (ustida kitoblar va idish),\nstol ostida naqshli gilam.\n\nMASHQ SIRI: har bir gapda IKKI narsa taqqoslanadi.\nBirinchisi qayerda — ikkinchisiga NISBATAN aytiladi.",
+          "bookRef": "Workbook, 13-bet, 6-mashq",
+          "items": [
+            { "textEn": "1  There is a rug ____ the table.", "uz": "Gilam stolning qayerida?", "options": ["under", "on", "in", "behind", "near", "in front of"], "answer": "under", "whyUz": "Gilam past stolning OSTIDA, polda yotibdi." },
+            { "textEn": "2  There is an armchair ____ the sofa.", "uz": "Kreslo divanning qayerida?", "options": ["near", "on", "in", "under", "behind", "in front of"], "answer": "near", "whyUz": "Kreslo divanga YAQIN, chap tomonda. Ro'yxatda 'next to' yo'q — 'near' ishlatiladi." },
+            { "textEn": "3  There are some cushions ____ the sofa.", "uz": "Yostiqchalar divanning qayerida?", "options": ["on", "in", "under", "behind", "near", "in front of"], "answer": "on", "whyUz": "Yostiqchalar divan USTIDA." },
+            { "textEn": "4  There is a table ____ the sofa.", "uz": "Stol divanning qayerida?", "options": ["in front of", "on", "in", "under", "behind", "near"], "answer": "in front of", "whyUz": "Jurnal stoli divanning OLDIDA turibdi." },
+            { "textEn": "5  There are some books ____ the table.", "uz": "Kitoblar stolning qayerida?", "options": ["on", "in", "under", "behind", "near", "in front of"], "answer": "on", "whyUz": "Kitoblar stol USTIDA yotibdi." },
+            { "textEn": "6  There are some armchairs ____ the room.", "uz": "Kreslolar qayerda?", "options": ["in", "on", "under", "behind", "near", "in front of"], "answer": "in", "whyUz": "Xona uchun doim IN the room." },
+            { "textEn": "7  There is a big window ____ the sofa.", "uz": "Katta deraza divanning qayerida?", "options": ["behind", "on", "in", "under", "near", "in front of"], "answer": "behind", "whyUz": "Deraza divanning ORQASIDA — divan derazaga tirab qo'yilgan." },
+            { "textEn": "8  There is a lamp ____ the table next to the sofa.", "uz": "Chiroq stolning qayerida?", "options": ["on", "in", "under", "behind", "near", "in front of"], "answer": "on", "whyUz": "Chiroq stol USTIDA turibdi." }
+          ]
+        },
+        {
+          "ref": "7",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Write questions and answers as in the example. Use the prepositions in, on and at.",
+          "instructionUz": "Namunadagidek savol va javob yozing. in, on va at predloglaridan foydalaning.",
+          "explanationUz": "NAMUNA:\n  John?/school → Where's John? He's at school.\n\nUCH PREDLOG:\n  AT — muassasa yoki tadbir: at school, at work, at home,\n       at the cinema, at a party\n  IN — ichida: in my bag, in the garden, in the room\n  ON — yuzada: on the table, on the wall, on the floor\n\n'AT SCHOOL' — 'maktabDA' (o'qish uchun). Binoning ichida\nekanini ta'kidlash kerak bo'lsa 'in the school' deyiladi,\nlekin odatda 'at school'.\n\nJavob shakli:\n  erkak → He's,  ayol → She's\n  narsa → It's,  ko'plik → They're",
+          "bookRef": "Workbook, 13-bet, 7-mashq",
+          "items": [
+            { "n": 1, "prompt": "John? / school", "question": "Where's John?", "answer": "He's at school.", "given": true, "whyUz": "Kitobdagi namuna. John — erkak → He's. Maktab uchun AT." },
+            { "n": 2, "prompt": "my bag? / table", "question": "Where's my bag?", "answer": "It's on the table.", "whyUz": "Sumka — narsa → It's. Stol YUZASIDA → on the table." },
+            { "n": 3, "prompt": "your books? / my bag", "question": "Where are your books?", "answer": "They're in my bag.", "whyUz": "'books' ko'plik → Where ARE ... THEY'RE. Sumka ICHIDA → in my bag." },
+            { "n": 4, "prompt": "the boys? / garden", "question": "Where are the boys?", "answer": "They're in the garden.", "whyUz": "'boys' ko'plik → Where are ... They're. Bog' ichida → in the garden." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Workbook 13-bet — predlogli turg'un birikmalar.",
+    "groups": [
+      {
+        "ruleUz": "Turg'un birikmalar (o'zgarmaydi)",
+        "explanationUz": "Bu birikmalarda predlog HECH QACHON almashmaydi — butun holda yodlanadi.",
+        "items": [
+          { "base": "sale", "baseUz": "sotuv", "derived": "for sale", "derivedUz": "sotiladi", "note": "'on sale' — chegirmada (boshqa ma'no!)" },
+          { "base": "rent", "baseUz": "ijara", "derived": "for rent", "derivedUz": "ijaraga beriladi", "note": "" },
+          { "base": "make", "baseUz": "yasamoq", "derived": "made of", "derivedUz": "...dan yasalgan", "note": "made FROM ham bor — material o'zgargan bo'lsa" },
+          { "base": "school", "baseUz": "maktab", "derived": "at school", "derivedUz": "maktabda", "note": "'the' yo'q!" },
+          { "base": "home", "baseUz": "uy", "derived": "at home", "derivedUz": "uyda", "note": "'at the home' EMAS" },
+          { "base": "work", "baseUz": "ish", "derived": "at work", "derivedUz": "ishda", "note": "'the' yo'q" }
+        ]
+      },
+      {
+        "ruleUz": "Ko'cha manzili — AT yoki IN?",
+        "explanationUz": "Uy raqami borligiga qarab predlog o'zgaradi.",
+        "items": [
+          { "base": "25, Momon Street", "baseUz": "raqam BOR", "derived": "at 25, Momon Street", "derivedUz": "aniq uy", "note": "AT" },
+          { "base": "Marble Street", "baseUz": "raqam YO'Q", "derived": "in Marble Street", "derivedUz": "ko'chada", "note": "IN (AQShda 'on')" }
+        ]
+      },
+      {
+        "ruleUz": "Masofa va yaqinlik",
+        "explanationUz": "Ikkalasi ham 'qanchalik uzoq' haqida, lekin tuzilishi boshqa.",
+        "items": [
+          { "base": "half a mile", "baseUz": "yarim mil", "derived": "half a mile FROM the centre", "derivedUz": "markazdan yarim mil", "note": "aniq masofa + FROM" },
+          { "base": "near", "baseUz": "yaqin", "derived": "NEAR the shops", "derivedUz": "do'konlarga yaqin", "note": "'near from' EMAS — 'from' qo'shilmaydi" },
+          { "base": "far", "baseUz": "uzoq", "derived": "FAR FROM the centre", "derivedUz": "markazdan uzoq", "note": "'far' bilan FROM SHART" }
+        ]
+      },
+      {
+        "ruleUz": "Suv ustidagi joylar — ON",
+        "explanationUz": "Qayiq, kema va daryo bilan doim ON ishlatiladi.",
+        "items": [
+          { "base": "a houseboat", "baseUz": "uy-qayiq", "derived": "on a houseboat", "derivedUz": "uy-qayiqda", "note": "" },
+          { "base": "a boat / a ship", "baseUz": "qayiq / kema", "derived": "on a boat", "derivedUz": "qayiqda", "note": "" },
+          { "base": "the River Thames", "baseUz": "Temza daryosi", "derived": "on the River Thames", "derivedUz": "Temza daryosida", "note": "daryo nomi oldida 'the' shart" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Workbook 13-betdagi barcha qoliplar.",
+    "patterns": [
+      {
+        "formula": "The cat is + predlog + the basket.",
+        "exampleEn": "The cat is near the basket. The cat is in the basket.",
+        "exampleUz": "Mushuk savat yonida. Mushuk savat ichida.",
+        "explanationUz": "Eng sodda predlog qolipi. Narsalar bir xil, faqat predlog o'zgaradi —\nshuning uchun farqni yaxshi sezasiz."
+      },
+      {
+        "formula": "somebody lives IN/ON/AT + joy.",
+        "exampleEn": "I live in a small flat on the fourth floor. She lives at 25, Momon Street.",
+        "exampleUz": "Men to'rtinchi qavatdagi kichik kvartirada yashayman. U Momon ko'chasi, 25-uyda yashaydi.",
+        "explanationUz": "Bitta gapda ikki predlog ham bo'lishi mumkin: IN (kvartira) + ON (qavat)."
+      },
+      {
+        "formula": "There is/are + a/an/some/any + ot + predlog + joy.",
+        "exampleEn": "There is a rug under the table. There are some books on the table.",
+        "exampleUz": "Stol ostida gilamcha bor. Stol ustida kitoblar bor.",
+        "explanationUz": "To'liq qolip: fe'l + aniqlovchi + ot + predlog + joy."
+      },
+      {
+        "formula": "Where's/Where are ...? — He's/She's/It's/They're + predlog + joy.",
+        "exampleEn": "Where's John? — He's at school. Where are your books? — They're in my bag.",
+        "exampleUz": "Jon qayerda? — U maktabda. Kitoblaring qayerda? — Ular sumkamda.",
+        "explanationUz": "Egalik olmoshi bilan 'the' ishlatilmaydi: 'in MY bag' (in the my bag EMAS)."
+      },
+      {
+        "formula": "X is made of + material.",
+        "exampleEn": "Chalets are made of wood.",
+        "exampleUz": "Chaletlar yog'ochdan yasalgan.",
+        "explanationUz": "Ko'plik ega bilan 'are made of'. Birlik bilan 'is made of'."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "a basket", "uz": "savat" },
+    { "en": "a cat", "uz": "mushuk" },
+    { "en": "near", "uz": "yaqin" },
+    { "en": "far from", "uz": "...dan uzoq" },
+    { "en": "the fourth floor", "uz": "to'rtinchi qavat" },
+    { "en": "Kent", "uz": "Kent (Angliya grafligi)" },
+    { "en": "the River Thames", "uz": "Temza daryosi" },
+    { "en": "a supermarket", "uz": "supermarket" },
+    { "en": "a restaurant", "uz": "restoran" },
+    { "en": "a park", "uz": "bog', park" },
+    { "en": "a village", "uz": "qishloq" },
+    { "en": "a houseboat", "uz": "uy-qayiq" },
+    { "en": "for sale", "uz": "sotiladi" },
+    { "en": "made of wood", "uz": "yog'ochdan yasalgan" },
+    { "en": "a chalet", "uz": "tog' uyi" },
+    { "en": "an attic", "uz": "chordoq" },
+    { "en": "a rug", "uz": "gilamcha" },
+    { "en": "a window", "uz": "deraza" },
+    { "en": "a bag", "uz": "sumka" },
+    { "en": "at school", "uz": "maktabda" },
+    { "en": "half a mile", "uz": "yarim mil" },
+    { "en": "upstairs", "uz": "tepa qavatda" }
+  ]
+}
