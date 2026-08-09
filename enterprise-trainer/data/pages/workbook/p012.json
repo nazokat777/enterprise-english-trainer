@@ -1,0 +1,906 @@
+{
+  "book": "workbook",
+  "pdfPage": 12,
+  "bookPage": 11,
+  "unit": 2,
+  "unitTitle": "A Friend in Need ...",
+  "module": 1,
+  "pairsWith": {
+    "coursebook": [
+      12,
+      16,
+      17
+    ],
+    "grammar": [
+      11
+    ],
+    "noteUz": "Millat guruhlari coursebook 7-bet Ex.8 ning kengaytmasi; ism/manzil so'rash coursebook 16-bet Ex.15 ga; salomlashish coursebook 17-bet Ex.20a ga; e'lon yozish coursebook 17-bet Writing ga mos keladi."
+  },
+  "scanNote": {
+    "uz": "DIQQAT: Ex.10 da qo'lyozma javoblarning bir nechtasi noto'g'ri guruhga tushgan va uchta millat umuman yozilmagan. Ex.14 da ham xatolar bor. Barchasi quyida izohlangan."
+  },
+  "sections": [
+    {
+      "kind": "vocabulary",
+      "title": "Nationalities by ending",
+      "titleUz": "Millat nomlari — qo'shimchasiga ko'ra",
+      "exercises": [
+        {
+          "ref": "10",
+          "type": "fill_from_list",
+          "instructionEn": "Write the nationalities in the right group, according to their endings.",
+          "instructionUz": "Millat nomlarini qo'shimchasiga qarab to'g'ri guruhga yozing.",
+          "explanationUz": "22 ta mamlakat, 5 ta guruh. Bu mashqning MAQSADI — qo'shimchalarni\nguruh bo'yicha yodlash, chunki alohida yodlash qiyin.\n\nTO'RTTA ASOSIY QO'SHIMCHA:\n  -an   → Mexican, American, German            (3 ta)\n  -ian  → Canadian, Italian, Brazilian,\n          Egyptian, Hungarian, Australian      (6 ta)\n  -ish  → Swedish, Turkish, Polish,\n          Spanish, British, Scottish           (6 ta)\n  -ese  → Japanese, Chinese, Portuguese,\n          Lebanese                             (4 ta)\n  BOSHQA → French, Welsh, Greek                (3 ta)\n\nENG KO'P ADASHTIRILADIGANI: -an va -ian.\nQoida: mamlakat -a yoki -y bilan tugasa ko'pincha -ian\n  (Canada→Canadian, Italy→Italian, Hungary→Hungarian, Australia→Australian)\nMamlakat undosh bilan tugasa ko'pincha -an\n  (Mexico→Mexican, Germany→German)",
+          "wordList": [
+            "Sweden",
+            "Canada",
+            "France",
+            "Japan",
+            "Italy",
+            "Turkey",
+            "Brazil",
+            "China",
+            "Egypt",
+            "Mexico",
+            "Poland",
+            "the USA",
+            "Spain",
+            "Hungary",
+            "Britain",
+            "Portugal",
+            "Wales",
+            "Scotland",
+            "Germany",
+            "Greece",
+            "Australia",
+            "Lebanon"
+          ],
+          "items": [
+            {
+              "n": 1,
+              "sentence": "Mexico → ___ (-an guruhi)",
+              "answer": "Mexican",
+              "uz": "meksikalik",
+              "commonMistake": {
+                "wrong": "-ian guruhiga qo'yilgan",
+                "whyUz": "Mexican -AN bilan tugaydi, -ian emas. Diqqat bilan qarang: Mexic-AN."
+              }
+            },
+            {
+              "n": 2,
+              "sentence": "the USA → ___ (-an guruhi)",
+              "answer": "American",
+              "uz": "amerikalik",
+              "commonMistake": {
+                "wrong": "-ian guruhiga qo'yilgan",
+                "whyUz": "Americ-AN — -an bilan tugaydi."
+              }
+            },
+            {
+              "n": 3,
+              "sentence": "Germany → ___ (-an guruhi)",
+              "answer": "German",
+              "uz": "nemis",
+              "commonMistake": {
+                "wrong": "'boshqa' guruhiga qo'yilgan",
+                "whyUz": "Germ-AN — -an guruhiga kiradi, 'boshqa' emas."
+              }
+            },
+            {
+              "n": 4,
+              "sentence": "Canada → ___ (-ian guruhi)",
+              "answer": "Canadian",
+              "uz": "kanadalik",
+              "commonMistake": {
+                "wrong": "-an guruhiga qo'yilgan",
+                "whyUz": "Canad-IAN — -ian bilan tugaydi."
+              }
+            },
+            {
+              "n": 5,
+              "sentence": "Italy → ___ (-ian guruhi)",
+              "answer": "Italian",
+              "uz": "italyan",
+              "commonMistake": {
+                "wrong": "kichik harf bilan yozilgan ('italian')",
+                "whyUz": "Millat nomlari HAR DOIM katta harf bilan: Italian."
+              }
+            },
+            {
+              "n": 6,
+              "sentence": "Brazil → ___ (-ian guruhi)",
+              "answer": "Brazilian",
+              "uz": "braziliyalik",
+              "commonMistake": {
+                "wrong": "-an guruhiga qo'yilgan",
+                "whyUz": "Brazil-IAN — -ian bilan."
+              }
+            },
+            {
+              "n": 7,
+              "sentence": "Egypt → ___ (-ian guruhi)",
+              "answer": "Egyptian",
+              "uz": "misrlik"
+            },
+            {
+              "n": 8,
+              "sentence": "Hungary → ___ (-ian guruhi)",
+              "answer": "Hungarian",
+              "uz": "venger",
+              "commonMistake": {
+                "wrong": "-an guruhiga qo'yilgan",
+                "whyUz": "Hungar-IAN — -ian bilan."
+              }
+            },
+            {
+              "n": 9,
+              "sentence": "Australia → ___ (-ian guruhi)",
+              "answer": "Australian",
+              "uz": "avstraliyalik",
+              "commonMistake": {
+                "wrong": "umuman yozilmagan",
+                "whyUz": "Bu millat qo'lyozmada TUSHIB QOLGAN. Australia → Australian (-ian)."
+              }
+            },
+            {
+              "n": 10,
+              "sentence": "Sweden → ___ (-ish guruhi)",
+              "answer": "Swedish",
+              "uz": "shved"
+            },
+            {
+              "n": 11,
+              "sentence": "Turkey → ___ (-ish guruhi)",
+              "answer": "Turkish",
+              "uz": "turk"
+            },
+            {
+              "n": 12,
+              "sentence": "Poland → ___ (-ish guruhi)",
+              "answer": "Polish",
+              "uz": "polyak"
+            },
+            {
+              "n": 13,
+              "sentence": "Spain → ___ (-ish guruhi)",
+              "answer": "Spanish",
+              "uz": "ispan"
+            },
+            {
+              "n": 14,
+              "sentence": "Britain → ___ (-ish guruhi)",
+              "answer": "British",
+              "uz": "britaniyalik"
+            },
+            {
+              "n": 15,
+              "sentence": "Scotland → ___ (-ish guruhi)",
+              "answer": "Scottish",
+              "uz": "shotland"
+            },
+            {
+              "n": 16,
+              "sentence": "Japan → ___ (-ese guruhi)",
+              "answer": "Japanese",
+              "uz": "yapon"
+            },
+            {
+              "n": 17,
+              "sentence": "China → ___ (-ese guruhi)",
+              "answer": "Chinese",
+              "uz": "xitoy"
+            },
+            {
+              "n": 18,
+              "sentence": "Portugal → ___ (-ese guruhi)",
+              "answer": "Portuguese",
+              "uz": "portugal"
+            },
+            {
+              "n": 19,
+              "sentence": "Lebanon → ___ (-ese guruhi)",
+              "answer": "Lebanese",
+              "uz": "livanlik",
+              "commonMistake": {
+                "wrong": "umuman yozilmagan",
+                "whyUz": "Bu millat qo'lyozmada TUSHIB QOLGAN. Lebanon → Lebanese (-ese)."
+              }
+            },
+            {
+              "n": 20,
+              "sentence": "France → ___ (boshqa qo'shimcha)",
+              "answer": "French",
+              "uz": "fransuz"
+            },
+            {
+              "n": 21,
+              "sentence": "Wales → ___ (boshqa qo'shimcha)",
+              "answer": "Welsh",
+              "uz": "uels",
+              "commonMistake": {
+                "wrong": "'wales' deb -ese guruhiga qo'yilgan",
+                "whyUz": "Ikki xato: 1) 'wales' — bu MAMLAKAT nomi, millat emas. 2) Millat shakli WELSH va u 'boshqa' guruhiga kiradi."
+              }
+            },
+            {
+              "n": 22,
+              "sentence": "Greece → ___ (boshqa qo'shimcha)",
+              "answer": "Greek",
+              "uz": "grek",
+              "commonMistake": {
+                "wrong": "umuman yozilmagan",
+                "whyUz": "Bu millat qo'lyozmada TUSHIB QOLGAN. Greece → Greek (qoidasiz)."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "communication",
+      "title": "Asking names, telephone numbers and addresses",
+      "titleUz": "Ism, telefon va manzil so'rash",
+      "exercises": [
+        {
+          "ref": "11",
+          "type": "dialogue_gap_fill",
+          "instructionEn": "Complete the dialogue, then, in pairs, read it out.",
+          "instructionUz": "Dialogni to'ldiring, so'ng juftlikda o'qib chiqing.",
+          "explanationUz": "ISM QISMLARI — inglizchada uch xil nom bor:\n  • first name  — ism (Wendy)\n  • last name / family name / surname — familiya (Baker)\n  • full name   — to'liq ism (Wendy Baker)\n\nDIQQAT — o'zbekchadan farqi: inglizchada ISM OLDIN, familiya keyin.\n\nMANZIL tartibi ham teskari:\n  '27, Apple Street' — uy raqami OLDIN, ko'cha keyin.",
+          "speakers": [
+            "A",
+            "B (Wendy Baker)"
+          ],
+          "lines": [
+            {
+              "who": "A",
+              "en": "1) ___ ?",
+              "uz": "Ismingiz nima?",
+              "gap": 1,
+              "answer": "What's your first name"
+            },
+            {
+              "who": "B",
+              "en": "Wendy.",
+              "uz": "Wendy."
+            },
+            {
+              "who": "A",
+              "en": "2) ___ last name?",
+              "uz": "Familiyangiz nima?",
+              "gap": 2,
+              "answer": "What's your"
+            },
+            {
+              "who": "B",
+              "en": "Baker.",
+              "uz": "Baker."
+            },
+            {
+              "who": "A",
+              "en": "3) ___ spell that, please?",
+              "uz": "Buni qanday yozasiz?",
+              "gap": 3,
+              "answer": "How do you"
+            },
+            {
+              "who": "B",
+              "en": "Of course, B-A-K-E-R.",
+              "uz": "Albatta, B-A-K-E-R."
+            },
+            {
+              "who": "A",
+              "en": "4) ___ ?",
+              "uz": "Manzilingiz qanday?",
+              "gap": 4,
+              "answer": "What's your address"
+            },
+            {
+              "who": "B",
+              "en": "27, Apple Street.",
+              "uz": "Apple ko'chasi, 27-uy."
+            },
+            {
+              "who": "A",
+              "en": "5) ___ ?",
+              "uz": "Telefon raqamingiz nechchi?",
+              "gap": 5,
+              "answer": "What's your phone number"
+            },
+            {
+              "who": "B",
+              "en": "It's 888 3456.",
+              "uz": "888 3456."
+            }
+          ],
+          "usefulPhrases": [
+            {
+              "en": "first name",
+              "uz": "ism"
+            },
+            {
+              "en": "last name / family name / surname",
+              "uz": "familiya"
+            },
+            {
+              "en": "How do you spell that?",
+              "uz": "Buni qanday yozasiz?"
+            },
+            {
+              "en": "Of course",
+              "uz": "Albatta"
+            },
+            {
+              "en": "address",
+              "uz": "manzil"
+            },
+            {
+              "en": "phone number",
+              "uz": "telefon raqami"
+            }
+          ]
+        },
+        {
+          "ref": "12",
+          "type": "dialogue_gap_fill",
+          "instructionEn": "Complete the dialogues, then read them out.",
+          "instructionUz": "Dialoglarni to'ldiring, so'ng o'qib chiqing.",
+          "explanationUz": "IKKI XIL RASMIYLIK:\n\n  NORASMIY (do'stlar): Hello/Hi + ism\n     'Hi Bob, how are you?' → 'Fine, thanks and you?' → 'Not bad.'\n\n  RASMIY (notanish/kattalar): Good afternoon + Mr/Mrs + familiya\n     'Good afternoon, Mrs Brown. How are you?'\n     → 'I'm very well, thank you. And you?'\n     → 'I'm fine, thank you.'\n\nFarqi: rasmiyda 'thank you' (to'liq), norasmiyda 'thanks' (qisqa).",
+          "dialogues": [
+            {
+              "n": 1,
+              "descUz": "Norasmiy — do'stlar orasida",
+              "lines": [
+                {
+                  "who": "B",
+                  "en": "Hello, Jean?",
+                  "uz": "Salom, Jean?",
+                  "given": true
+                },
+                {
+                  "who": "J",
+                  "en": "Hi Bob, ___ ?",
+                  "answer": "how are you",
+                  "answerUz": "qalaysan?"
+                },
+                {
+                  "who": "B",
+                  "en": "___ , thanks and you?",
+                  "answer": "Fine",
+                  "answerUz": "yaxshi"
+                },
+                {
+                  "who": "J",
+                  "en": "___ bad.",
+                  "answer": "Not",
+                  "answerUz": "yomon emas"
+                }
+              ]
+            },
+            {
+              "n": 2,
+              "descUz": "Rasmiy — janob va xonim",
+              "lines": [
+                {
+                  "who": "D",
+                  "en": "Good afternoon, Mrs Brown. ___ ?",
+                  "answer": "How are you",
+                  "answerUz": "qalaysiz?"
+                },
+                {
+                  "who": "B",
+                  "en": "Good afternoon, Mr Dobbins. I'm very well, thank you. And you?",
+                  "uz": "Xayrli kun, janob Dobbins. Men juda yaxshiman, rahmat. Siz-chi?",
+                  "given": true
+                },
+                {
+                  "who": "D",
+                  "en": "I ___ , thank you.",
+                  "answer": "'m fine",
+                  "answerUz": "yaxshiman"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "Reading",
+      "titleUz": "O'qish",
+      "exercises": [
+        {
+          "ref": "13",
+          "type": "table_fill",
+          "instructionEn": "Read the text and fill in the table.",
+          "instructionUz": "Matnni o'qing va jadvalni to'ldiring.",
+          "explanationUz": "Matndan ma'lumot ajratib olish mashqi.\n\nDIQQAT — 'Appearance' (tashqi ko'rinish) qatoriga matndagi BARCHA\ntashqi belgilar yoziladi, faqat bittasi emas:\n  soch + ko'z + bo'y + gavda\n\nQo'lyozmada faqat 'short' yozilgan — bu YETARLI EMAS.",
+          "bookRef": "Workbook, 11-bet — Juan Lopez haqidagi matn",
+          "columns": [
+            "First name",
+            "Family name",
+            "City/Town",
+            "Country",
+            "Age",
+            "Appearance",
+            "Likes",
+            "Can do"
+          ],
+          "columnsUz": [
+            "Ism",
+            "Familiya",
+            "Shahar",
+            "Mamlakat",
+            "Yosh",
+            "Tashqi ko'rinish",
+            "Yoqtiradi",
+            "Qila oladi"
+          ],
+          "rows": [
+            {
+              "name": "Juan Lopez",
+              "given": false,
+              "cells": [
+                "Juan",
+                "Lopez",
+                "Barcelona",
+                "Spain",
+                "ten (10)",
+                "short straight brown hair, brown eyes, tall and quite slim",
+                "playing football",
+                "run very fast"
+              ],
+              "commonMistake": {
+                "wrong": "Appearance: faqat 'short'",
+                "whyUz": "Tashqi ko'rinish qatoriga matndagi HAMMA belgi yozilishi kerak:\n'short straight brown hair, brown eyes, tall and quite slim'.\nFaqat 'short' deb yozish ma'lumotning yarmini tashlab yuboradi."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "Writing",
+      "titleUz": "Yozish",
+      "exercises": [
+        {
+          "ref": "14",
+          "type": "word_order",
+          "instructionEn": "Write out the advertisement in full sentences.",
+          "instructionUz": "E'lonni to'liq gaplar bilan yozing.",
+          "explanationUz": "Berilgan so'zlardan to'liq gap tuzasiz. Har qismda kerakli so'zlarni\nQO'SHISHINGIZ kerak:\n\n  'My/name/be/Ingrid'  → 'My name IS Ingrid.'      (be → is)\n  'I/live/Stockholm'   → 'I live IN Stockholm.'    ('in' qo'shildi)\n  'I/have got/long fair hair/blue eyes'\n                       → 'I have got long fair hair AND blue eyes.'\n  'I/cook/very well'   → 'I CAN cook very well.'   ('can' qo'shildi)\n\nDIQQAT: 'be' — bu fe'lning asos shakli. Egaga qarab am/is/are ga aylanadi.",
+          "items": [
+            {
+              "n": 1,
+              "words": [
+                "Hi.",
+                "My",
+                "name",
+                "be",
+                "Ingrid Jönsson."
+              ],
+              "answer": "Hi. My name is Ingrid Jönsson.",
+              "whyUz": "'be' → IS (name — birlik)"
+            },
+            {
+              "n": 2,
+              "words": [
+                "I",
+                "be",
+                "sixteen years old."
+              ],
+              "answer": "I am sixteen years old.",
+              "alt": [
+                "I'm sixteen years old."
+              ],
+              "whyUz": "'be' → AM (I bilan)"
+            },
+            {
+              "n": 3,
+              "words": [
+                "I",
+                "live",
+                "Stockholm, Sweden."
+              ],
+              "answer": "I live in Stockholm, Sweden.",
+              "whyUz": "Shahar oldidan 'in' qo'shiladi",
+              "commonMistake": {
+                "wrong": "'Stockhom'",
+                "whyUz": "Imlo xatosi — 'l' tushib qolgan. To'g'risi: STOCKHOLM."
+              }
+            },
+            {
+              "n": 4,
+              "words": [
+                "I",
+                "have got",
+                "long fair hair",
+                "blue eyes."
+              ],
+              "answer": "I have got long fair hair and blue eyes.",
+              "whyUz": "Ikki narsa 'and' bilan bog'lanadi",
+              "commonMistake": {
+                "wrong": "'I has got long fair and blue eyes'",
+                "whyUz": "Ikki xato:\n1) 'I' bilan HAVE got ishlatiladi, 'has' emas.\n2) 'hair' so'zi TUSHIB QOLGAN: 'long fair HAIR and blue eyes'."
+              }
+            },
+            {
+              "n": 5,
+              "words": [
+                "I",
+                "be",
+                "tall",
+                "slim."
+              ],
+              "answer": "I am tall and slim.",
+              "alt": [
+                "I'm tall and slim."
+              ],
+              "whyUz": "Ikki sifat 'and' bilan"
+            },
+            {
+              "n": 6,
+              "words": [
+                "I",
+                "like",
+                "skiing",
+                "I",
+                "love",
+                "swimming."
+              ],
+              "answer": "I like skiing and I love swimming.",
+              "whyUz": "'like/love' dan keyin -ing shakli",
+              "commonMistake": {
+                "wrong": "'I like the skiing'",
+                "whyUz": "Mashg'ulot nomidan oldin 'the' QO'YILMAYDI: 'I like skiing' ('the skiing' emas)."
+              }
+            },
+            {
+              "n": 7,
+              "words": [
+                "I",
+                "cook",
+                "very well."
+              ],
+              "answer": "I can cook very well.",
+              "whyUz": "Qobiliyat aytilganda 'can' qo'shiladi",
+              "commonMistake": {
+                "wrong": "umuman yozilmagan",
+                "whyUz": "Bu gap qo'lyozmada TUSHIB QOLGAN."
+              }
+            },
+            {
+              "n": 8,
+              "words": [
+                "Be",
+                "my",
+                "pen-friend."
+              ],
+              "answer": "Be my pen-friend.",
+              "whyUz": "Buyruq gap — ega yo'q, fe'l asos shaklida",
+              "commonMistake": {
+                "wrong": "umuman yozilmagan",
+                "whyUz": "E'lonning YAKUNIY chaqirig'i tushib qolgan. E'lon har doim chaqiriq bilan tugaydi."
+              }
+            }
+          ],
+          "modelAnswer": "Hi. My name is Ingrid Jönsson. I am sixteen years old. I live in Stockholm, Sweden. I have got long fair hair and blue eyes. I am tall and slim. I like skiing and I love swimming. I can cook very well. Be my pen-friend."
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Millat qo'shimchalari — Unit 2 ning eng katta lug'at mavzusi.",
+    "groups": [
+      {
+        "ruleUz": "-an guruhi (3 ta)",
+        "explanationUz": "Mamlakat ko'pincha undosh yoki -o bilan tugaydi.",
+        "items": [
+          {
+            "base": "Mexico",
+            "baseUz": "Meksika",
+            "derived": "Mexican",
+            "derivedUz": "meksikalik",
+            "note": "-o → -an"
+          },
+          {
+            "base": "America / the USA",
+            "baseUz": "Amerika",
+            "derived": "American",
+            "derivedUz": "amerikalik",
+            "note": "-a → -an"
+          },
+          {
+            "base": "Germany",
+            "baseUz": "Germaniya",
+            "derived": "German",
+            "derivedUz": "nemis",
+            "note": "-y tushadi"
+          }
+        ]
+      },
+      {
+        "ruleUz": "-ian guruhi (6 ta)",
+        "explanationUz": "Mamlakat ko'pincha -a yoki -y bilan tugaydi. Bu eng katta guruh.",
+        "items": [
+          {
+            "base": "Canada",
+            "baseUz": "Kanada",
+            "derived": "Canadian",
+            "derivedUz": "kanadalik",
+            "note": "-a → -ian"
+          },
+          {
+            "base": "Italy",
+            "baseUz": "Italiya",
+            "derived": "Italian",
+            "derivedUz": "italyan",
+            "note": "-y → -ian"
+          },
+          {
+            "base": "Brazil",
+            "baseUz": "Braziliya",
+            "derived": "Brazilian",
+            "derivedUz": "braziliyalik",
+            "note": "-ian"
+          },
+          {
+            "base": "Egypt",
+            "baseUz": "Misr",
+            "derived": "Egyptian",
+            "derivedUz": "misrlik",
+            "note": "-ian"
+          },
+          {
+            "base": "Hungary",
+            "baseUz": "Vengriya",
+            "derived": "Hungarian",
+            "derivedUz": "venger",
+            "note": "-y → -ian"
+          },
+          {
+            "base": "Australia",
+            "baseUz": "Avstraliya",
+            "derived": "Australian",
+            "derivedUz": "avstraliyalik",
+            "note": "-a → -ian"
+          }
+        ]
+      },
+      {
+        "ruleUz": "-ish guruhi (6 ta)",
+        "explanationUz": "Ko'pincha Yevropa mamlakatlari.",
+        "items": [
+          {
+            "base": "Sweden",
+            "baseUz": "Shvetsiya",
+            "derived": "Swedish",
+            "derivedUz": "shved",
+            "note": "-en → -ish"
+          },
+          {
+            "base": "Turkey",
+            "baseUz": "Turkiya",
+            "derived": "Turkish",
+            "derivedUz": "turk",
+            "note": "-ey → -ish"
+          },
+          {
+            "base": "Poland",
+            "baseUz": "Polsha",
+            "derived": "Polish",
+            "derivedUz": "polyak",
+            "note": "-and → -ish"
+          },
+          {
+            "base": "Spain",
+            "baseUz": "Ispaniya",
+            "derived": "Spanish",
+            "derivedUz": "ispan",
+            "note": "-ish"
+          },
+          {
+            "base": "Britain",
+            "baseUz": "Britaniya",
+            "derived": "British",
+            "derivedUz": "britaniyalik",
+            "note": "-ain → -ish"
+          },
+          {
+            "base": "Scotland",
+            "baseUz": "Shotlandiya",
+            "derived": "Scottish",
+            "derivedUz": "shotland",
+            "note": "t ikkilanadi"
+          }
+        ]
+      },
+      {
+        "ruleUz": "-ese guruhi (4 ta)",
+        "explanationUz": "Ko'pincha Osiyo mamlakatlari va Portugaliya. Bu shakl BIRLIK va KO'PLIKDA bir xil: 'a Japanese', 'two Japanese'.",
+        "items": [
+          {
+            "base": "Japan",
+            "baseUz": "Yaponiya",
+            "derived": "Japanese",
+            "derivedUz": "yapon",
+            "note": "-ese"
+          },
+          {
+            "base": "China",
+            "baseUz": "Xitoy",
+            "derived": "Chinese",
+            "derivedUz": "xitoy",
+            "note": "-a → -ese"
+          },
+          {
+            "base": "Portugal",
+            "baseUz": "Portugaliya",
+            "derived": "Portuguese",
+            "derivedUz": "portugal",
+            "note": "-al → -uese"
+          },
+          {
+            "base": "Lebanon",
+            "baseUz": "Livan",
+            "derived": "Lebanese",
+            "derivedUz": "livanlik",
+            "note": "-on → -ese"
+          }
+        ]
+      },
+      {
+        "ruleUz": "QOIDASIZ (3 ta) — yodlash shart",
+        "explanationUz": "Bu uchtasi hech qanday qoidaga bo'ysunmaydi.",
+        "items": [
+          {
+            "base": "France",
+            "baseUz": "Fransiya",
+            "derived": "French",
+            "derivedUz": "fransuz",
+            "note": "qoidasiz"
+          },
+          {
+            "base": "Wales",
+            "baseUz": "Uels",
+            "derived": "Welsh",
+            "derivedUz": "uels",
+            "note": "qoidasiz"
+          },
+          {
+            "base": "Greece",
+            "baseUz": "Gretsiya",
+            "derived": "Greek",
+            "derivedUz": "grek",
+            "note": "qoidasiz"
+          }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Ism/manzil so'rash va e'lon yozishning yakuniy qoliplari.",
+    "patterns": [
+      {
+        "formula": "What's your FIRST NAME / LAST NAME / ADDRESS / PHONE NUMBER?",
+        "exampleEn": "What's your last name? — Baker.",
+        "exampleUz": "Familiyangiz nima? — Baker.",
+        "explanationUz": "Inglizchada ism OLDIN, familiya KEYIN — o'zbekchadan teskari.\nfirst name = ism · last name / surname = familiya"
+      },
+      {
+        "formula": "MANZIL: UY RAQAMI, KO'CHA NOMI",
+        "exampleEn": "27, Apple Street.",
+        "exampleUz": "Apple ko'chasi, 27-uy.",
+        "explanationUz": "Uy raqami BIRINCHI, ko'cha keyin — o'zbekchadan teskari tartib."
+      },
+      {
+        "formula": "RASMIY vs NORASMIY salomlashish",
+        "exampleEn": "Good afternoon, Mrs Brown. How are you? / Hi Bob, how are you?",
+        "exampleUz": "Xayrli kun, Brown xonim. Qalaysiz? / Salom Bob, qalaysan?",
+        "explanationUz": "Rasmiyda: Good morning/afternoon + Mr/Mrs + familiya, javobda 'thank you'.\nNorasmiyda: Hi/Hello + ism, javobda 'thanks'."
+      },
+      {
+        "formula": "E'LON: Hi. My name is X. I am ... I live in ... I have got ... I can ... Be my pen-friend.",
+        "exampleEn": "Hi. My name is Ingrid Jönsson. I am sixteen years old. I live in Stockholm, Sweden. I have got long fair hair and blue eyes. I am tall and slim. I like skiing and I love swimming. I can cook very well. Be my pen-friend.",
+        "exampleUz": "Salom. Mening ismim Ingrid Jönsson. Men o'n olti yoshdaman. Men Stokgolmda, Shvetsiyada yashayman. Mening uzun oq-sariq sochim va ko'k ko'zim bor. Men baland va nozikman. Chang'i uchishni yoqtiraman va suzishni yaxshi ko'raman. Juda yaxshi ovqat pishira olaman. Mening xat-do'stim bo'ling.",
+        "explanationUz": "Unit 2 ning YAKUNIY qolipi — 9 ta gap. Har biri o'rgangan bitta grammatikani ishlatadi:\nbe · live in · have got · like/love + -ing · can · buyruq gap."
+      },
+      {
+        "formula": "MASHG'ULOT nomidan oldin 'the' YO'Q",
+        "exampleEn": "I like skiing. / I love swimming.",
+        "exampleUz": "Chang'i uchishni yoqtiraman. / Suzishni yaxshi ko'raman.",
+        "explanationUz": "'I like THE skiing' — XATO. Mashg'ulot nomi (-ing shakli) artiklsiz keladi."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    {
+      "en": "nationality",
+      "uz": "millat"
+    },
+    {
+      "en": "ending",
+      "uz": "qo'shimcha, oxiri"
+    },
+    {
+      "en": "group",
+      "uz": "guruh"
+    },
+    {
+      "en": "first name",
+      "uz": "ism"
+    },
+    {
+      "en": "last name",
+      "uz": "familiya"
+    },
+    {
+      "en": "family name",
+      "uz": "familiya"
+    },
+    {
+      "en": "address",
+      "uz": "manzil"
+    },
+    {
+      "en": "Apple Street",
+      "uz": "Apple ko'chasi"
+    },
+    {
+      "en": "Good afternoon",
+      "uz": "Xayrli kun"
+    },
+    {
+      "en": "appearance",
+      "uz": "tashqi ko'rinish"
+    },
+    {
+      "en": "to get in touch",
+      "uz": "aloqaga chiqmoq"
+    },
+    {
+      "en": "Lebanon",
+      "uz": "Livan"
+    },
+    {
+      "en": "Wales",
+      "uz": "Uels"
+    },
+    {
+      "en": "Welsh",
+      "uz": "uels (millat)"
+    },
+    {
+      "en": "Greece",
+      "uz": "Gretsiya"
+    },
+    {
+      "en": "Greek",
+      "uz": "grek"
+    },
+    {
+      "en": "Australia",
+      "uz": "Avstraliya"
+    },
+    {
+      "en": "Stockholm",
+      "uz": "Stokgolm"
+    },
+    {
+      "en": "Barcelona",
+      "uz": "Barselona"
+    },
+    {
+      "en": "advertisement",
+      "uz": "e'lon"
+    },
+    {
+      "en": "pen-friend",
+      "uz": "xat orqali do'st"
+    }
+  ]
+}
