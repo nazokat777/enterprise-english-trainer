@@ -1,0 +1,237 @@
+{
+  "book": "grammar",
+  "pdfPage": 10,
+  "bookPage": 9,
+  "unit": 2,
+  "unitTitle": "Have got - Can",
+  "pageType": "exercises",
+  "pairsWith": {
+    "coursebook": [13],
+    "workbook": [9, 10],
+    "noteUz": "'have got' mashqlari. Coursebook 13-bet Ex.8 bilan bir xil turdagi, lekin ancha ko'proq mashq beradi."
+  },
+  "sections": [
+    {
+      "kind": "grammar_exercise",
+      "title": "The Verb \"have got\"",
+      "titleUz": "\"have got\" fe'li",
+      "exercises": [
+        {
+          "ref": "1",
+          "type": "fill_gap",
+          "instructionEn": "Fill in have, haven't, has, hasn't, as in the example.",
+          "instructionUz": "have, haven't, has yoki hasn't dan mosini qo'ying.",
+          "explanationUz": "Ikki qadam:\n1) EGA kim? — birlik (he/she/it) bo'lsa HAS, ko'plik bo'lsa HAVE.\n2) Ma'no tasdiqmi yoki inkormi?\n\nDIQQAT — millat nomlari KO'PLIK:\n  'Jamaicans' (yamaykaliklar), 'Asians' (osiyoliklar) → HAVE\n  Chunki bu 'they' ga teng.\n\n'All my sisters' — 'all' bilan boshlansa ham ko'plik → HAVE.",
+          "items": [
+            { "n": 1, "textEn": "My grandfather ___ got grey hair.", "answer": "has", "given": true, "whyUz": "grandfather — bitta odam (he) → has" },
+            { "n": 2, "textEn": "Jamaicans ___ got a dark complexion.", "answer": "have", "whyUz": "Jamaicans — ko'plik (they) → have" },
+            { "n": 3, "textEn": "A: Has Sue got blue eyes? B: Yes, she ___ .", "answer": "has", "whyUz": "Savolda 'Has' bo'lgani uchun javobda ham 'has'. Qisqa javobda 'got' YO'Q." },
+            { "n": 4, "textEn": "A: ___ your brothers got straight hair? B: No, they ___ .", "answer": "Have / haven't", "whyUz": "'brothers' — ko'plik → Have. Inkor javob → haven't." },
+            { "n": 5, "textEn": "A: ___ Lisa got a big nose? B: No, she ___ .", "answer": "Has / hasn't", "whyUz": "Lisa — bitta ayol → Has. Inkor → hasn't." },
+            { "n": 6, "textEn": "Erik is from Norway and he ___ got a fair complexion.", "answer": "has", "whyUz": "he → has" },
+            { "n": 7, "textEn": "My mother ___ got long fair hair and green eyes.", "answer": "has", "whyUz": "mother — bitta ayol (she) → has" },
+            { "n": 8, "textEn": "Asians ___ got fair hair. They ___ got dark hair.", "answer": "haven't / have", "whyUz": "Asians — ko'plik. Birinchi gap inkor (oq-sariq soch emas), ikkinchisi tasdiq (qora soch)." },
+            { "n": 9, "textEn": "My father ___ got short curly hair and blue eyes.", "answer": "has", "whyUz": "father — bitta erkak (he) → has" },
+            { "n": 10, "textEn": "All my sisters ___ got brown eyes.", "answer": "have", "whyUz": "sisters — ko'plik (they) → have" }
+          ]
+        },
+        {
+          "ref": "2",
+          "type": "fill_gap",
+          "instructionEn": "Look at the table and fill in has, hasn't, have or haven't.",
+          "instructionUz": "Jadvalga qarang va has, hasn't, have yoki haven't dan mosini qo'ying.",
+          "explanationUz": "Jadvalda ✓ (bor) va ✗ (yo'q) belgilari berilgan.\n\nIkki qadam:\n1) Jadvaldan tekshiring — ✓ bo'lsa tasdiq, ✗ bo'lsa inkor.\n2) Egaga qarab shakl tanlang: bitta odam → has/hasn't,\n   ikki odam ('Michael and Anna') → have/haven't.\n\nDIQQAT — 'but' bog'lovchisi: undan oldin va keyin QARAMA-QARSHI\nma'no bo'ladi. Ya'ni biri tasdiq, ikkinchisi inkor.",
+          "tableUz": {
+            "sarlavha": "video camera · car · stereo · cat",
+            "Anna": "✗ video camera · ✗ car · ✓ stereo · ✓ cat",
+            "Michael": "✓ video camera · ✗ car · ✓ stereo · ✗ cat",
+            "Rachel": "✗ video camera · ✓ car · ✓ stereo · ✗ cat"
+          },
+          "items": [
+            { "n": 1, "textEn": "Anna ___ got a cat. She ___ got a video camera.", "answer": "has / hasn't", "whyUz": "Anna: mushuk ✓, videokamera ✗" },
+            { "n": 2, "textEn": "Michael ___ got a car, but he ___ got a stereo.", "answer": "hasn't / has", "whyUz": "Michael: mashina ✗, stereo ✓. 'but' qarama-qarshilikni bildiradi." },
+            { "n": 3, "textEn": "Rachel ___ got a stereo. She ___ got a cat.", "answer": "has / hasn't", "whyUz": "Rachel: stereo ✓, mushuk ✗" },
+            { "n": 4, "textEn": "Michael and Anna ___ got a car. They ___ got a stereo.", "answer": "haven't / have", "whyUz": "Ikkalasida ham mashina ✗, stereo ✓. Ikki odam → have/haven't." },
+            { "n": 5, "textEn": "Rachel ___ got a video camera, but she ___ got a car.", "answer": "hasn't / has", "whyUz": "Rachel: videokamera ✗, mashina ✓" },
+            { "n": 6, "textEn": "Michael ___ got a video camera, but he ___ got a cat.", "answer": "has / hasn't", "whyUz": "Michael: videokamera ✓, mushuk ✗" },
+            { "n": 7, "textEn": "Rachel and Anna ___ got a stereo. They ___ got a video camera.", "answer": "have / haven't", "whyUz": "Ikkalasida stereo ✓, videokamera ✗" },
+            { "n": 8, "textEn": "Anna ___ got a car, but she ___ got a stereo.", "answer": "hasn't / has", "whyUz": "Anna: mashina ✗, stereo ✓" }
+          ]
+        },
+        {
+          "ref": "3",
+          "type": "picture_question_answer",
+          "instructionEn": "Write questions and answers, as in the example.",
+          "instructionUz": "Namunadagidek savol va javob yozing.",
+          "explanationUz": "Qolip uch qismli:\n  1) SAVOL:  Has/Have + EGA + got + NARSA?\n  2) JAVOB:  Yes, EGA has/have.  yoki  No, EGA hasn't/haven't.\n  3) TUZATISH (agar javob inkor bo'lsa): EGA + 's/'ve got + TO'G'RISI.\n\nDIQQAT — sanaladigan otlar oldidan 'a' qo'yiladi:\n  a basketball, a guitar, a beard, a hat, a newspaper, a computer\nLekin KO'PLIK bo'lsa artikl yo'q: 'Have they got books?'\n'hair' ham artiklsiz: 'Has she got dark hair?'",
+          "items": [
+            {
+              "n": 1,
+              "picture": "oq-sariq sochli ayol",
+              "pictureEn": "a woman with fair hair",
+              "question": "Has she got dark hair?",
+              "answer": "No, she hasn't. She's got fair hair.",
+              "given": true,
+              "whyUz": "Rasmda oq-sariq soch — savolda qora deyilgan, demak inkor + tuzatish."
+            },
+            {
+              "n": 2,
+              "picture": "basketbol to'pi bilan o'tirgan bola",
+              "pictureEn": "a boy sitting with a basketball",
+              "question": "Has he got a basketball?",
+              "answer": "Yes, he has.",
+              "whyUz": "Rasmda basketbol to'pi bor — tasdiq javob, tuzatish shart emas."
+            },
+            {
+              "n": 3,
+              "picture": "uzun oq-sariq sochli ayol",
+              "pictureEn": "a woman with long fair hair",
+              "question": "Has she got short hair?",
+              "answer": "No, she hasn't. She's got long hair.",
+              "whyUz": "Soch uzun — savolda kalta deyilgan, demak inkor + tuzatish."
+            },
+            {
+              "n": 4,
+              "picture": "kitob ushlagan ikki qiz",
+              "pictureEn": "two girls holding books",
+              "question": "Have they got books?",
+              "answer": "Yes, they have.",
+              "whyUz": "Ikki kishi → Have. 'books' ko'plik — artikl yo'q."
+            },
+            {
+              "n": 5,
+              "picture": "pianino chalayotgan odam",
+              "pictureEn": "a person playing the piano",
+              "question": "Has he got a guitar?",
+              "answer": "No, he hasn't. He's got a piano.",
+              "whyUz": "Rasmda pianino — savolda gitara deyilgan, demak inkor + tuzatish."
+            },
+            {
+              "n": 6,
+              "picture": "soqolli dengizchi",
+              "pictureEn": "a sailor with a beard",
+              "question": "Has he got a beard?",
+              "answer": "Yes, he has.",
+              "whyUz": "Soqoli bor — tasdiq."
+            },
+            {
+              "n": 7,
+              "picture": "shlyapa kiygan erkak",
+              "pictureEn": "a man wearing a hat",
+              "question": "Has he got a hat?",
+              "answer": "Yes, he has.",
+              "whyUz": "Shlyapasi bor — tasdiq."
+            },
+            {
+              "n": 8,
+              "picture": "gazeta o'qiyotgan ayol",
+              "pictureEn": "a woman reading a newspaper",
+              "question": "Has she got a newspaper?",
+              "answer": "Yes, she has.",
+              "whyUz": "Gazetasi bor — tasdiq."
+            },
+            {
+              "n": 9,
+              "picture": "kompyuterda ishlayotgan ayol",
+              "pictureEn": "a woman working at a computer",
+              "question": "Has she got a computer?",
+              "answer": "Yes, she has.",
+              "whyUz": "Kompyuteri bor — tasdiq."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Millat nomlari va qo'shma otlar.",
+    "groups": [
+      {
+        "ruleUz": "Millat nomi KO'PLIKDA — butun xalq haqida",
+        "explanationUz": "Millat nomiga -s qo'shilsa, o'sha xalqning vakillari tushuniladi va KO'PLIK fe'li kerak (have, are).",
+        "items": [
+          { "base": "Jamaica", "baseUz": "Yamayka", "derived": "Jamaicans", "derivedUz": "yamaykaliklar", "note": "have got" },
+          { "base": "Asia", "baseUz": "Osiyo", "derived": "Asians", "derivedUz": "osiyoliklar", "note": "have got" },
+          { "base": "Norway", "baseUz": "Norvegiya", "derived": "Norwegians", "derivedUz": "norvegiyaliklar", "note": "have got" },
+          { "base": "Africa", "baseUz": "Afrika", "derived": "Africans", "derivedUz": "afrikaliklar", "note": "have got" },
+          { "base": "Europe", "baseUz": "Yevropa", "derived": "Europeans", "derivedUz": "yevropaliklar", "note": "'a European' — undosh tovush!" }
+        ]
+      },
+      {
+        "ruleUz": "Qo'shma otlar (ikki so'z birga)",
+        "explanationUz": "Bu betdagi buyum nomlari ikki so'zdan iborat. Ular BITTA narsa hisoblanadi, shuning uchun 'a' bitta qo'yiladi.",
+        "items": [
+          { "base": "video + camera", "baseUz": "video + kamera", "derived": "a video camera", "derivedUz": "videokamera", "note": "bitta narsa" },
+          { "base": "news + paper", "baseUz": "yangilik + qog'oz", "derived": "a newspaper", "derivedUz": "gazeta", "note": "qo'shilib yoziladi" },
+          { "base": "basket + ball", "baseUz": "savat + to'p", "derived": "a basketball", "derivedUz": "basketbol to'pi", "note": "qo'shilib yoziladi" },
+          { "base": "grand + father", "baseUz": "katta + ota", "derived": "grandfather", "derivedUz": "bobo", "note": "grandmother — buvi" }
+        ]
+      },
+      {
+        "ruleUz": "Oila a'zolari",
+        "explanationUz": "Bu betda oila a'zolari ko'p uchraydi — ular Unit 4 da chuqurroq o'rganiladi.",
+        "items": [
+          { "base": "father", "baseUz": "ota", "derived": "grandfather", "derivedUz": "bobo", "note": "grand- = katta" },
+          { "base": "mother", "baseUz": "ona", "derived": "grandmother", "derivedUz": "buvi", "note": "grand- = katta" },
+          { "base": "brother", "baseUz": "aka-uka", "derived": "brothers", "derivedUz": "aka-ukalar", "note": "oddiy -s" },
+          { "base": "sister", "baseUz": "opa-singil", "derived": "sisters", "derivedUz": "opa-singillar", "note": "oddiy -s" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "'have got' ning uch xil gapdagi ko'rinishi.",
+    "patterns": [
+      {
+        "formula": "TASDIQ: EGA + has/have got + NARSA",
+        "exampleEn": "My grandfather has got grey hair.",
+        "exampleUz": "Bobomning sochi kulrang.",
+        "explanationUz": "Bitta odam → has, ko'plik → have. Millat nomlari (Asians, Jamaicans) — KO'PLIK."
+      },
+      {
+        "formula": "QARAMA-QARSHILIK: EGA + hasn't got X, BUT EGA + has got Y",
+        "exampleEn": "Michael hasn't got a car, but he has got a stereo.",
+        "exampleUz": "Michaelda mashina yo'q, lekin stereo bor.",
+        "explanationUz": "'but' ikki qarama-qarshi holatni bog'laydi: biri inkor, ikkinchisi tasdiq."
+      },
+      {
+        "formula": "SAVOL–JAVOB–TUZATISH (3 qism)",
+        "exampleEn": "Has she got dark hair? — No, she hasn't. She's got fair hair.",
+        "exampleUz": "Uning sochi qorami? — Yo'q. Uning sochi oq-sariq.",
+        "explanationUz": "Inkor javobdan keyin TO'G'RISINI aytish — tabiiy muloqot qoidasi.\nFaqat 'No, she hasn't' deyish kam, chunki suhbatdosh to'g'ri javobni bilmaydi."
+      },
+      {
+        "formula": "ARTIKL: a + BIRLIK ot · artiklsiz + KO'PLIK/soch",
+        "exampleEn": "Has he got a guitar? / Have they got books? / Has she got dark hair?",
+        "exampleUz": "Uning gitarasi bormi? / Ularda kitob bormi? / Uning sochi qorami?",
+        "explanationUz": "Sanaladigan birlik ot → a/an.\nKo'plik (books) va sanalmaydigan (hair) → artikl YO'Q."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "grandfather", "uz": "bobo" },
+    { "en": "grey hair", "uz": "kulrang soch" },
+    { "en": "Jamaicans", "uz": "yamaykaliklar" },
+    { "en": "Asians", "uz": "osiyoliklar" },
+    { "en": "dark complexion", "uz": "to'q yuz rangi" },
+    { "en": "fair complexion", "uz": "oqish yuz rangi" },
+    { "en": "brothers", "uz": "aka-ukalar" },
+    { "en": "sisters", "uz": "opa-singillar" },
+    { "en": "big nose", "uz": "katta burun" },
+    { "en": "video camera", "uz": "videokamera" },
+    { "en": "stereo", "uz": "musiqa markazi" },
+    { "en": "car", "uz": "mashina" },
+    { "en": "cat", "uz": "mushuk" },
+    { "en": "basketball", "uz": "basketbol to'pi" },
+    { "en": "guitar", "uz": "gitara" },
+    { "en": "piano", "uz": "pianino" },
+    { "en": "beard", "uz": "soqol" },
+    { "en": "hat", "uz": "shlyapa" },
+    { "en": "newspaper", "uz": "gazeta" },
+    { "en": "computer", "uz": "kompyuter" },
+    { "en": "book", "uz": "kitob" },
+    { "en": "Norway", "uz": "Norvegiya" }
+  ]
+}
