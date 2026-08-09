@@ -364,6 +364,338 @@
    ]
   },
   {
+   "id": "u7-coursebook-50-3",
+   "kind": "vocabulary",
+   "title": "Language Development — Vocabulary",
+   "titleUz": "Til rivoji — Lug'at",
+   "book": "coursebook",
+   "bookPage": 50,
+   "exercises": [
+    {
+     "ref": "8",
+     "instructionEn": "Choose words from the list to fill in the gaps, then use them to make sentences.",
+     "instructionUz": "Ro'yxatdan so'z tanlab bo'shliqlarni to'ldiring, so'ng ular bilan gap tuzing.",
+     "explanationUz": "RO'YXAT: miss, keep, make, season's, heavy, decorate, enjoy\n\nQANDAY TANLANADI:\n  'to' dan keyin → FE'L (decorate, enjoy, make, keep)\n  ot oldida      → SIFAT yoki EGALIK (heavy, season's)\n  ega + ...      → FE'L (miss)\n\nBarcha iboralar 49-betdagi uchta otkritkadan olingan.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 50,
+     "bookRef": "Coursebook, 50-bet, 8-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  to ............ the Christmas tree",
+       "answer": "decorate",
+       "promptUz": "Archani bayramga tayyorlash fe'li",
+       "whyUz": "'to decorate the Christmas tree' = archani bezamoq (B otkritka).\nGap: They are decorating the Christmas tree.",
+       "speak": "1  to ............ the Christmas tree"
+      },
+      {
+       "prompt": "2  We ............ you a lot.",
+       "answer": "miss",
+       "promptUz": "Sog'inish fe'li",
+       "whyUz": "'We miss you a lot' = sizni juda sog'indik (B otkritka).\nKo'plik ega ('we') → fe'lga -s QO'SHILMAYDI.",
+       "speak": "2  We ............ you a lot."
+      },
+      {
+       "prompt": "3  to ............ the good weather",
+       "answer": "enjoy",
+       "promptUz": "Zavqlanish fe'li",
+       "whyUz": "'to enjoy the good weather' = yaxshi ob-havodan zavqlanmoq (C otkritka).\nGap: Everyone is enjoying the good weather.",
+       "speak": "3  to ............ the good weather"
+      },
+      {
+       "prompt": "4  ............ greetings",
+       "answer": "season's",
+       "promptUz": "Bayram tabrigi iborasi (egalik apostrofi bilan)",
+       "whyUz": "'Season's greetings' = bayram tabriklari (C otkritka).\nEgalik apostrofi: season + 's.",
+       "speak": "4  ............ greetings"
+      },
+      {
+       "prompt": "5  ............ jackets",
+       "answer": "heavy",
+       "promptUz": "Qishki kurtkaning sifati",
+       "whyUz": "'heavy jackets' = qalin kurtkalar (A otkritka).\n'heavy' bu yerda = qalin, issiq (og'ir emas).",
+       "speak": "5  ............ jackets"
+      },
+      {
+       "prompt": "6  to ............ a snowman",
+       "answer": "make",
+       "promptUz": "Yasash fe'li",
+       "whyUz": "'to make a snowman' = qorbobo yasamoq (A otkritka).\nGap: They are making a snowman in the park.",
+       "speak": "6  to ............ a snowman"
+      },
+      {
+       "prompt": "7  to ............ them warm",
+       "answer": "keep",
+       "promptUz": "Issiq saqlash fe'li",
+       "whyUz": "'to keep them warm' = ularni issiq saqlamoq (A otkritka).\nBu ibora 40-betdagi pingvin matnida ham bor edi.",
+       "speak": "7  to ............ them warm"
+      }
+     ]
+    },
+    {
+     "ref": "9",
+     "instructionEn": "Fill in on, in, at, of or from.",
+     "instructionUz": "on, in, at, of yoki from predloglarini qo'ying.",
+     "explanationUz": "PREDLOGLAR — ASOSIY QOIDALAR:\n\n  IN — ichida: shahar, bog', xona, kiyim\n       in Warsaw, in the park, in their pyjamas\n  ON — yuzasida: plyaj, ko'cha, devor, muz\n       on the beach, on the wall\n  AT — aniq nuqta yoki vaqt:\n       at the moment, at 5 o'clock, at home\n  FROM — kelib chiqish nuqtasi:\n       Greetings from London\n  OF — egalik yoki tarkib:\n       Lots of love, a lot of people\n\nDIQQAT — SHAHAR va PLYAJ:\n  IN Warsaw (shahar ICHIDA)\n  ON the beach (plyaj YUZASIDA)",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 50,
+     "bookRef": "Coursebook, 50-bet, 9-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  ............ Warsaw",
+       "answer": "in",
+       "promptUz": "Shahar oldidagi predlog",
+       "whyUz": "Shahar, mamlakat, mahalla → IN.\n'It is cold IN Warsaw.'",
+       "speak": "1  ............ Warsaw"
+      },
+      {
+       "prompt": "2  ............ the park",
+       "answer": "in",
+       "promptUz": "Bog' ichida",
+       "whyUz": "Bog', o'rmon, xona → IN.\n'They are making a snowman IN the park.'",
+       "speak": "2  ............ the park"
+      },
+      {
+       "prompt": "3  ............ the moment",
+       "answer": "at",
+       "promptUz": "Aniq paytni bildiruvchi ibora",
+       "whyUz": "'AT the moment' = ayni paytda — o'zgarmas ibora.",
+       "speak": "3  ............ the moment"
+      },
+      {
+       "prompt": "4  Greetings ............ London",
+       "answer": "from",
+       "promptUz": "Qayerdan kelayotganini bildiradi",
+       "whyUz": "'Greetings FROM ...' = ...dan salom. Kelib chiqish nuqtasi → FROM.",
+       "speak": "4  Greetings ............ London"
+      },
+      {
+       "prompt": "5  ............ their pyjamas",
+       "answer": "in",
+       "promptUz": "Kiyim kiygan holat",
+       "whyUz": "'be IN + kiyim' = kiygan holda bo'lmoq.\n'The children are IN their pyjamas.'",
+       "speak": "5  ............ their pyjamas"
+      },
+      {
+       "prompt": "6  ............ the beach",
+       "answer": "on",
+       "promptUz": "Plyaj yuzasi",
+       "whyUz": "'ON the beach' — plyaj yuzasida turibdi → ON.\nDIQQAT: 'in the beach' XATO.",
+       "speak": "6  ............ the beach"
+      },
+      {
+       "prompt": "7  Lots ............ love",
+       "answer": "of",
+       "promptUz": "Miqdor iborasidagi predlog",
+       "whyUz": "'Lots OF love' = katta mehr bilan.\n'lots of', 'a lot of' — miqdor iboralari doim OF bilan.",
+       "speak": "7  Lots ............ love"
+      }
+     ]
+    },
+    {
+     "ref": "10-belgilar",
+     "instructionEn": "Look at today's international weather chart. Symbols and temperature scale.",
+     "instructionUz": "Bugungi xalqaro ob-havo jadvaliga qarang. Belgilar va harorat shkalasi.",
+     "explanationUz": "OB-HAVO BELGILARI (Symbols):\n  bulut           = cloudy  (bulutli)\n  puflab turgan bulut = windy (shamolli)\n  bulut va tomchilar  = rainy (yomg'irli)\n  quyosh          = sunny   (quyoshli)\n  bulut va qor    = snowy   (qorli)\n\nHARORAT SHKALASI (sovuqdan issiqqa):\n  freezing cold  −5°C / 23°F   — qattiq sovuq\n  cold            5°C / 41°F   — sovuq\n  chilly         10°C / 50°F   — salqin (sovuqroq)\n  cool           15°C / 59°F   — salqin (yoqimli)\n  warm           25°C / 77°F   — iliq\n  hot            30°C / 86°F   — issiq\n  boiling hot    35°C / 95°F   — juda issiq\n\nHARORAT BIRLIKLARI:\n  °C = degrees Celsius   (Selsiy darajasi)\n  °F = degrees Fahrenheit (Farengeyt darajasi)\n  Britaniya va Yevropa °C, AQSH esa °F ishlatadi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 50,
+     "bookRef": "Coursebook, 50-bet, 10-mashq (belgilar va shkala)",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "cloudy",
+       "uz": "bulutli",
+       "note": "belgi: bulut"
+      },
+      {
+       "en": "windy",
+       "uz": "shamolli",
+       "note": "belgi: puflab turgan bulut"
+      },
+      {
+       "en": "rainy",
+       "uz": "yomg'irli",
+       "note": "belgi: bulut va tomchilar"
+      },
+      {
+       "en": "sunny",
+       "uz": "quyoshli",
+       "note": "belgi: quyosh"
+      },
+      {
+       "en": "snowy",
+       "uz": "qorli",
+       "note": "belgi: bulut va qor"
+      },
+      {
+       "en": "freezing cold  (−5°C / 23°F)",
+       "uz": "qattiq sovuq",
+       "note": "eng past harorat"
+      },
+      {
+       "en": "cold  (5°C / 41°F)",
+       "uz": "sovuq"
+      },
+      {
+       "en": "chilly  (10°C / 50°F)",
+       "uz": "salqin, sovuqroq"
+      },
+      {
+       "en": "cool  (15°C / 59°F)",
+       "uz": "salqin (yoqimli)"
+      },
+      {
+       "en": "warm  (25°C / 77°F)",
+       "uz": "iliq"
+      },
+      {
+       "en": "hot  (30°C / 86°F)",
+       "uz": "issiq"
+      },
+      {
+       "en": "boiling hot  (35°C / 95°F)",
+       "uz": "juda issiq, qaynoq",
+       "note": "eng yuqori harorat"
+      },
+      {
+       "en": "degrees Celsius (°C)",
+       "uz": "Selsiy darajasi"
+      },
+      {
+       "en": "degrees Fahrenheit (°F)",
+       "uz": "Farengeyt darajasi"
+      }
+     ]
+    },
+    {
+     "ref": "10",
+     "instructionEn": "Look at today's international weather chart. Ask and answer questions, as in the example.",
+     "instructionUz": "Bugungi xalqaro ob-havo jadvaliga qarang. Namunadagidek savol-javob qiling.",
+     "explanationUz": "KITOBDAGI NAMUNA:\n  S1: What's the weather like in Cairo today?\n  S2: It's warm and sunny.\n  S1: What's the temperature in Cairo today?\n  S2: It's 25°C. / It's 77°F.\n\nIKKI SAVOL:\n  What's the weather LIKE ...?  → sifat bilan javob\n  What's the TEMPERATURE ...?   → daraja bilan javob\n\nJADVAL:\n  Cairo     quyosh  25 / 77\n  London    shamol  10 / 50\n  Madrid    bulut    5 / 41\n  Manila    quyosh  30 / 86\n  Paris     yomg'ir  5 / 41\n  Prague    qor     −5 / 23\n  Rome      bulut   15 / 59\n  Singapore quyosh  35 / 95",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 50,
+     "bookRef": "Coursebook, 50-bet, 10-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "London — ob-havo?",
+       "answer": "It's chilly and windy.",
+       "promptUz": "Belgi: puflab turgan bulut; 10°C",
+       "whyUz": "10°C shkalada 'chilly' ga to'g'ri keladi; belgi shamolni bildiradi."
+      },
+      {
+       "prompt": "London — harorat?",
+       "answer": "It's 10°C. / It's 50°F.",
+       "promptUz": "Jadvaldan",
+       "whyUz": "Jadvalda: London 10 C / 50 F."
+      },
+      {
+       "prompt": "Madrid — ob-havo?",
+       "answer": "It's cold and cloudy.",
+       "promptUz": "Belgi: bulut; 5°C",
+       "whyUz": "5°C shkalada 'cold'; belgi oddiy bulut → cloudy."
+      },
+      {
+       "prompt": "Madrid — harorat?",
+       "answer": "It's 5°C. / It's 41°F.",
+       "promptUz": "Jadvaldan",
+       "whyUz": "Jadvalda: Madrid 5 C / 41 F."
+      },
+      {
+       "prompt": "Manila — ob-havo?",
+       "answer": "It's hot and sunny.",
+       "promptUz": "Belgi: quyosh; 30°C",
+       "whyUz": "30°C shkalada 'hot'; belgi quyosh → sunny."
+      },
+      {
+       "prompt": "Manila — harorat?",
+       "answer": "It's 30°C. / It's 86°F.",
+       "promptUz": "Jadvaldan",
+       "whyUz": "Jadvalda: Manila 30 C / 86 F."
+      },
+      {
+       "prompt": "Paris — ob-havo?",
+       "answer": "It's cold and rainy.",
+       "promptUz": "Belgi: bulut va tomchilar; 5°C",
+       "whyUz": "5°C shkalada 'cold'; belgi yomg'ir tomchilari → rainy."
+      },
+      {
+       "prompt": "Paris — harorat?",
+       "answer": "It's 5°C. / It's 41°F.",
+       "promptUz": "Jadvaldan",
+       "whyUz": "Jadvalda: Paris 5 C / 41 F — Madrid bilan bir xil harorat, lekin ob-havo boshqa."
+      },
+      {
+       "prompt": "Prague — ob-havo?",
+       "answer": "It's freezing cold and snowy.",
+       "promptUz": "Belgi: qor; −5°C",
+       "whyUz": "−5°C shkalada 'freezing cold'; belgi qor → snowy.\nBu — jadvaldagi eng sovuq shahar."
+      },
+      {
+       "prompt": "Prague — harorat?",
+       "answer": "It's −5°C. / It's 23°F.",
+       "promptUz": "Jadvaldan (manfiy son)",
+       "whyUz": "Jadvalda: Prague −5 C / 23 F.\nManfiy harorat: 'minus five degrees' deb o'qiladi."
+      },
+      {
+       "prompt": "Rome — ob-havo?",
+       "answer": "It's cool and cloudy.",
+       "promptUz": "Belgi: bulut; 15°C",
+       "whyUz": "15°C shkalada 'cool'; belgi oddiy bulut → cloudy."
+      },
+      {
+       "prompt": "Rome — harorat?",
+       "answer": "It's 15°C. / It's 59°F.",
+       "promptUz": "Jadvaldan",
+       "whyUz": "Jadvalda: Rome 15 C / 59 F."
+      },
+      {
+       "prompt": "Singapore — ob-havo?",
+       "answer": "It's boiling hot and sunny.",
+       "promptUz": "Belgi: quyosh; 35°C",
+       "whyUz": "35°C shkalada 'boiling hot'; belgi quyosh → sunny.\nBu — jadvaldagi eng issiq shahar."
+      },
+      {
+       "prompt": "Singapore — harorat?",
+       "answer": "It's 35°C. / It's 95°F.",
+       "promptUz": "Jadvaldan",
+       "whyUz": "Jadvalda: Singapore 35 C / 95 F."
+      }
+     ]
+    },
+    {
+     "ref": "11",
+     "instructionEn": "Which of the activities in the list can you do when it is: snowy? hot and sunny? cold and rainy?",
+     "instructionUz": "Ro'yxatdagi mashg'ulotlardan qaysilarini qorli, issiq-quyoshli yoki sovuq-yomg'irli ob-havoda qilish mumkin?",
+     "explanationUz": "RO'YXAT: go to the beach, make a snowman, go on a picnic,\n         watch TV, go swimming, sunbathe, read a book, ski\n\nKITOBDAGI NAMUNA:\n  When it is snowy you can ski or make a snowman.\n\nQOLIP: When it is + ob-havo, you can + fe'l (+ or + fe'l).\n\nDIQQAT: 'when' — vaqt bog'lovchisi, ergash gapni boshlaydi.\n\nUYDA QILINADIGAN ISHLAR (watch TV, read a book) har qanday\nob-havoda mumkin — ayniqsa yomon ob-havoda.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 50,
+     "bookRef": "Coursebook, 50-bet, 11-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "HOT AND SUNNY (issiq va quyoshli) — nima qilish mumkin?",
+       "answer": "When it is hot and sunny you can go to the beach, go on a picnic, go swimming or sunbathe.",
+       "promptUz": "Tashqarida va suvda qilinadigan ishlar",
+       "whyUz": "Issiq havoda tashqariga chiqiladi.\n'to sunbathe' = quyoshda toblanmoq;\n'go on a picnic' = piknikka bormoq."
+      },
+      {
+       "prompt": "COLD AND RAINY (sovuq va yomg'irli) — nima qilish mumkin?",
+       "answer": "When it is cold and rainy you can watch TV or read a book.",
+       "promptUz": "Uy ichida qilinadigan ishlar",
+       "whyUz": "Yomg'irda tashqariga chiqib bo'lmaydi — uy ichidagi mashg'ulotlar qoladi."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u7-coursebook-49-1",
    "kind": "reading",
    "title": "Reading — three postcards",
@@ -614,6 +946,680 @@
    ]
   },
   {
+   "id": "u7-coursebook-51-6",
+   "kind": "reading",
+   "title": "Reading & Listening — seasons around the world",
+   "titleUz": "O'qish va tinglash — dunyo mamlakatlaridagi fasllar",
+   "book": "coursebook",
+   "bookPage": 51,
+   "exercises": [
+    {
+     "ref": "17-A",
+     "instructionEn": "Read text A (Karen, Britain).",
+     "instructionUz": "A matnini o'qing (Karen, Britaniya).",
+     "explanationUz": "A MATNI — BRITANIYA (Karen)\n\n2-RASM: somon tomli eski inglizcha uy, atrofida gullar va\nyashil o't — bahor manzarasi.\n\nBRITANIYA IQLIMI:\n  yil bo'yi — ko'p yomg'ir\n  qish      — juda sovuq va shamolli\n  kuz, bahor — ancha shamolli, lekin juda sovuq emas\n  yoz       — ancha iliq, lekin bulutli ham bo'lishi mumkin",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 51,
+     "bookRef": "Coursebook, 51-bet, 17-mashq (A matn)",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "In Britain the weather is often rainy, but in winter it's also very cold and windy.",
+       "uz": "Britaniyada ob-havo ko'pincha yomg'irli, lekin qishda juda sovuq va shamolli ham bo'ladi.",
+       "note": "'often' = ko'pincha (chastota ravishi).\n'also' = ham, shuningdek."
+      },
+      {
+       "en": "In autumn and spring it can be quite windy but it's not very cold.",
+       "uz": "Kuz va bahorda ancha shamolli bo'lishi mumkin, lekin juda sovuq emas.",
+       "note": "'can be' = bo'lishi mumkin (ehtimollik).\n'quite' = ancha (44-betdagi daraja so'zi)."
+      },
+      {
+       "en": "Summer can be quite warm but it can also be cloudy.",
+       "uz": "Yoz ancha iliq bo'lishi mumkin, lekin bulutli ham bo'lishi mumkin.",
+       "note": "'but' — ikki qarama-qarshi fikrni bog'laydi."
+      },
+      {
+       "en": "I like spring a lot because the trees are green and there are lots of flowers.",
+       "uz": "Menga bahor juda yoqadi, chunki daraxtlar yashil va gullar ko'p bo'ladi.",
+       "note": "SEVIMLI FASL VA SABABI.\n'a lot' = juda (fe'ldan keyin).\n'lots of' = ko'p."
+      },
+      {
+       "en": "I often go for walks in the park, then.",
+       "uz": "Shunda men ko'pincha bog'da sayr qilaman.",
+       "note": "'go for a walk' = sayrga chiqmoq (ko'plikda: go for walks).\n'then' bu yerda = o'sha paytda, o'shanda."
+      }
+     ]
+    },
+    {
+     "ref": "17-B",
+     "instructionEn": "Read text B (Miguel, Brazil).",
+     "instructionUz": "B matnini o'qing (Migel, Braziliya).",
+     "explanationUz": "B MATNI — BRAZILIYA (Migel)\n\n1-RASM: tog' va shahar fonidagi plyaj, ko'p odam —\nRio-de-Janeyro (Braziliya).\n\nBRAZILIYA IQLIMI:\n  umumiy   — iliq iqlim\n  qish     — juda sovuq emas\n  bahor, kuz — iliq, lekin yomg'irli\n  yoz      — deyarli doim issiq va quyoshli\n\nDIQQAT: Braziliya JANUBIY yarim sharda — fasllar\nBritaniyanikiga TESKARI.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 51,
+     "bookRef": "Coursebook, 51-bet, 17-mashq (B matn)",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "Brazil has a warm climate.",
+       "uz": "Braziliyaning iqlimi iliq.",
+       "note": "'a climate' = iqlim (uzoq muddatli ob-havo).\n'weather' esa — bugungi ob-havo. Farqiga e'tibor bering."
+      },
+      {
+       "en": "The winter isn't very cold.",
+       "uz": "Qishi juda sovuq emas.",
+       "note": "Fasl oldida THE ishlatilishi ham mumkin: 'the winter'."
+      },
+      {
+       "en": "In spring and autumn it is warm, but rainy.",
+       "uz": "Bahor va kuzda iliq, lekin yomg'irli bo'ladi.",
+       "note": "Fasllar oldida IN predlogi."
+      },
+      {
+       "en": "In summer it's nearly always hot and sunny.",
+       "uz": "Yozda deyarli doim issiq va quyoshli bo'ladi.",
+       "note": "'nearly always' = deyarli doim.\n'nearly' = deyarli."
+      },
+      {
+       "en": "Sometimes, it rains suddenly and then the sun comes out again!",
+       "uz": "Ba'zan to'satdan yomg'ir yog'adi, so'ng quyosh yana chiqadi!",
+       "note": "'suddenly' = to'satdan (sudden + -ly).\n'the sun comes out' = quyosh chiqadi (frazali fe'l)."
+      },
+      {
+       "en": "Summer is my favourite season.",
+       "uz": "Yoz — mening sevimli faslim.",
+       "note": "SEVIMLI FASL.\n'favourite' — britancha yozilishi (amerikacha: favorite)."
+      },
+      {
+       "en": "I love swimming and sunbathing at the beach.",
+       "uz": "Men plyajda suzish va quyoshda toblanishni juda yaxshi ko'raman.",
+       "note": "SABABI.\n'love/like + fe'l-ING' — yoqtirish fe'llaridan keyin -ing keladi."
+      },
+      {
+       "en": "We have lots of fun there.",
+       "uz": "Biz u yerda juda ko'p zavqlanamiz.",
+       "note": "'have fun' = zavqlanmoq, ko'ngil ochmoq.\n'fun' sanalmaydigan ot → 'lots of fun'."
+      }
+     ]
+    },
+    {
+     "ref": "17-C",
+     "instructionEn": "Read text C (Anita, Finland).",
+     "instructionUz": "C matnini o'qing (Anita, Finlandiya).",
+     "explanationUz": "C MATNI — FINLANDIYA (Anita)\n\n3-RASM: qorli o'rmon, yog'och uy va chang'i uchayotgan\nodamlar — qish manzarasi.\n\nFINLANDIYA IQLIMI:\n  qish  — juda sovuq va JUDA UZUN;\n          quyosh umuman chiqmaydigan kunlar bor\n  yoz   — juda iliq, lekin KALTA;\n          kunlar juda uzun, quyosh kechayu kunduz charaqlaydi\n\nQIZIQ FAKT: Finlandiya Shimoliy qutbga yaqin.\nYozda 'oq tunlar' bo'ladi — quyosh botmaydi.\nQishda esa 'qutb tuni' — quyosh chiqmaydi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 51,
+     "bookRef": "Coursebook, 51-bet, 17-mashq (C matn)",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "In Finland the weather is very cold in the winter and very warm in the summer.",
+       "uz": "Finlandiyada qishda ob-havo juda sovuq, yozda esa juda iliq bo'ladi.",
+       "note": "Fasl oldida 'in THE winter' — 'in winter' ham to'g'ri."
+      },
+      {
+       "en": "The winter is very long and there are days when the sun doesn't appear at all.",
+       "uz": "Qish juda uzun va quyosh umuman chiqmaydigan kunlar bo'ladi.",
+       "note": "'to appear' = ko'rinmoq, paydo bo'lmoq.\n'not ... at all' = umuman ...emas (kuchli inkor)."
+      },
+      {
+       "en": "The summer is short, but it's warm, because the days are so long.",
+       "uz": "Yoz kalta, lekin iliq, chunki kunlar juda uzun.",
+       "note": "'so' bu yerda = juda ('very' bilan bir xil).\n'because' — sabab bog'lovchisi."
+      },
+      {
+       "en": "The sun shines all day and night for most of the summer.",
+       "uz": "Yozning ko'p qismida quyosh kechayu kunduz charaqlaydi.",
+       "note": "'all day and night' = kechayu kunduz.\n'most of' = ko'p qismi."
+      },
+      {
+       "en": "I like winter the best because there is always snow and I often go skiing.",
+       "uz": "Menga qish eng ko'p yoqadi, chunki doim qor bo'ladi va men ko'pincha chang'i uchgani boraman.",
+       "note": "SEVIMLI FASL VA SABABI.\n'like ... the best' = eng ko'p yoqtirmoq.\n'go skiing' = chang'i uchgani bormoq ('ski' → 'skiing', ikkita i)."
+      }
+     ]
+    },
+    {
+     "ref": "17a",
+     "instructionEn": "Listen to the weather descriptions and match them to the pictures.",
+     "instructionUz": "Ob-havo tavsiflarini tinglang va ularni rasmlarga moslang.",
+     "explanationUz": "UCH RASM:\n  1 — tog' va shahar fonidagi katta plyaj, ko'p odam (issiq mamlakat)\n  2 — somon tomli eski uy, gullar va yashil o't (Angliya, bahor)\n  3 — qorli o'rmon, yog'och uy, chang'i uchayotgan odamlar (shimol, qish)\n\nHar bir matn qaysi rasmga mos kelishini mamlakat va\nfasl tavsifidan aniqlash mumkin — audio talab qilmaydi.",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 51,
+     "bookRef": "Coursebook, 51-bet, 17a-mashq",
+     "kind": "match",
+     "tasks": [
+      {
+       "left": "A — Karen (Britain)",
+       "right": "2-rasm — somon tomli uy, gullar, yashil o't"
+      },
+      {
+       "left": "B — Miguel (Brazil)",
+       "right": "1-rasm — tog' va shahar fonidagi plyaj"
+      },
+      {
+       "left": "C — Anita (Finland)",
+       "right": "3-rasm — qorli o'rmon va chang'i uchayotgan odamlar"
+      }
+     ]
+    },
+    {
+     "ref": "17b",
+     "instructionEn": "Read the texts and say which season each person likes most, and why. Finally, talk about the seasons in your country.",
+     "instructionUz": "Matnlarni o'qing va har bir odam qaysi faslni eng ko'p yoqtirishini hamda nima uchun ekanini ayting. Nihoyat, o'z mamlakatingizdagi fasllar haqida gapiring.",
+     "explanationUz": "SEVIMLI FASLNI IFODALASH USULLARI (uch matndan):\n  I like spring A LOT because ...\n  Summer is MY FAVOURITE SEASON. I love ...\n  I like winter THE BEST because ...\n\nUchalasi ham bir xil ma'noda.\n\nSABAB DOIM 'because' bilan beriladi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 51,
+     "bookRef": "Coursebook, 51-bet, 17b-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "Karen (Britain) — qaysi fasl?",
+       "answer": "She likes spring most.",
+       "promptUz": "A matnning 4-gapi",
+       "whyUz": "Karen: 'I like spring a lot ...'"
+      },
+      {
+       "prompt": "Karen — nima uchun?",
+       "answer": "Because the trees are green and there are lots of flowers. She often goes for walks in the park then.",
+       "promptUz": "'because' dan keyingi qism",
+       "whyUz": "Karen: 'because the trees are green and there are lots of flowers.\nI often go for walks in the park, then.'"
+      },
+      {
+       "prompt": "Miguel (Brazil) — qaysi fasl?",
+       "answer": "He likes summer most. Summer is his favourite season.",
+       "promptUz": "B matnda 'favourite' so'zi bor gap",
+       "whyUz": "Migel: 'Summer is my favourite season.'"
+      },
+      {
+       "prompt": "Miguel — nima uchun?",
+       "answer": "Because he loves swimming and sunbathing at the beach. They have lots of fun there.",
+       "promptUz": "Migel plyajda nima qiladi?",
+       "whyUz": "Migel: 'I love swimming and sunbathing at the beach.\nWe have lots of fun there.'\nYozda 'nearly always hot and sunny' bo'lishi ham sabab."
+      },
+      {
+       "prompt": "Anita (Finland) — qaysi fasl?",
+       "answer": "She likes winter the best.",
+       "promptUz": "C matnning oxirgi gapi",
+       "whyUz": "Anita: 'I like winter the best ...'"
+      },
+      {
+       "prompt": "Anita — nima uchun?",
+       "answer": "Because there is always snow and she often goes skiing.",
+       "promptUz": "'because' dan keyingi qism",
+       "whyUz": "Anita: 'because there is always snow and I often go skiing.'"
+      },
+      {
+       "prompt": "O'ZBEKISTON — qishda ob-havo qanday?",
+       "answer": "In winter it is cold and it sometimes snows.",
+       "promptUz": "O'z mamlakatingiz haqida",
+       "whyUz": "O'zbekistonda qish sovuq, ba'zan qor yog'adi.\nQolip: In winter it is + sifat."
+      },
+      {
+       "prompt": "O'ZBEKISTON — bahorda ob-havo qanday?",
+       "answer": "In spring it is warm and it often rains. The trees are green and there are lots of flowers.",
+       "promptUz": "O'z mamlakatingiz haqida",
+       "whyUz": "Bahor iliq va yomg'irli. Karenning matnidagi iboralardan foydalaning."
+      },
+      {
+       "prompt": "O'ZBEKISTON — yozda ob-havo qanday?",
+       "answer": "In summer it is very hot and sunny. It hardly ever rains.",
+       "promptUz": "O'z mamlakatingiz haqida",
+       "whyUz": "O'zbekistonda yoz juda issiq va quruq.\n'hardly ever' = deyarli hech qachon."
+      },
+      {
+       "prompt": "O'ZBEKISTON — kuzda ob-havo qanday?",
+       "answer": "In autumn it is cool and quite rainy.",
+       "promptUz": "O'z mamlakatingiz haqida",
+       "whyUz": "Kuz salqin va yomg'irli. 'cool' = salqin (50-betdagi shkala)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u7-coursebook-50-4",
+   "kind": "grammar",
+   "title": "Grammar — Present Continuous",
+   "titleUz": "Grammatika — Hozirgi davomli zamon",
+   "book": "coursebook",
+   "bookPage": 50,
+   "exercises": [
+    {
+     "ref": "12-nazariya",
+     "instructionEn": "Present Continuous — affirmative and negative.",
+     "instructionUz": "Present Continuous — tasdiq va inkor shakllari.",
+     "explanationUz": "PRESENT CONTINUOUS (hozirgi davomli zamon)\n\nTASDIQ (Affirmative):\n  I           AM     playing\n  you         ARE    playing\n  he/she/it   IS     playing\n  we/you/they ARE    playing\n\nINKOR (Negative):\n  I           'M NOT  playing\n  you         AREN'T  playing\n  he/she/it   ISN'T   playing\n  we/you/they AREN'T  playing\n\nQOLIP: ega + to be + fe'l + ING\n\nQACHON ISHLATILADI:\n  HOZIR, gapirayotgan paytda sodir bo'layotgan ish uchun.\n\nVAQT SO'ZLARI:\n  now (hozir), at present (hozirda), at the moment (ayni paytda)\n\nMISOLLAR:\n  She's playing football now.\n  She isn't eating an ice-cream at the moment.\n\nO'ZBEKCHADA: '-yapti' qo'shimchasi bilan beriladi.\n  She is playing → U o'ynayapti",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 50,
+     "bookRef": "Coursebook, 50-bet, 12-mashq (jadval)",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "Present Continuous — affirmative and negative.",
+       "uz": "Present Continuous — tasdiq va inkor shakllari."
+      },
+      {
+       "en": "I am playing. / I'm not playing.",
+       "uz": "Men o'ynayapman. / Men o'ynamayapman.",
+       "note": "'I' bilan faqat AM. Inkori: I'm not ('I amn't' YO'Q so'z)."
+      },
+      {
+       "en": "You are playing. / You aren't playing.",
+       "uz": "Sen o'ynayapsan. / Sen o'ynamayapsan.",
+       "note": "'you' — birlikda ham, ko'plikda ham ARE."
+      },
+      {
+       "en": "He is playing. / He isn't playing.",
+       "uz": "U o'ynayapti. / U o'ynamayapti.",
+       "note": "he/she/it → IS. Qisqartma: He's playing."
+      },
+      {
+       "en": "She is playing. / She isn't playing.",
+       "uz": "U (ayol) o'ynayapti. / U o'ynamayapti.",
+       "note": "'isn't' = is not."
+      },
+      {
+       "en": "It is playing. / It isn't playing.",
+       "uz": "U (narsa/hayvon) o'ynayapti."
+      },
+      {
+       "en": "We are playing. / We aren't playing.",
+       "uz": "Biz o'ynayapmiz. / Biz o'ynamayapmiz.",
+       "note": "we/you/they → ARE. 'aren't' = are not."
+      },
+      {
+       "en": "They are playing. / They aren't playing.",
+       "uz": "Ular o'ynashayapti."
+      },
+      {
+       "en": "She's playing football now.",
+       "uz": "U hozir futbol o'ynayapti.",
+       "note": "Kitobdagi namuna. 'now' — Present Continuous belgisi."
+      },
+      {
+       "en": "She isn't eating an ice-cream at the moment.",
+       "uz": "U ayni paytda muzqaymoq yemayapti.",
+       "note": "Kitobdagi namuna. 'at the moment' — Present Continuous belgisi."
+      }
+     ]
+    },
+    {
+     "ref": "12",
+     "instructionEn": "Study the table, then complete the rule.",
+     "instructionUz": "Jadvalni o'rganing, so'ng qoidani to'ldiring.",
+     "explanationUz": "QOIDA (bo'shliq bilan):\n  'To form the present continuous we use the verb \"to be\"\n   and add ............ to the base form of the main verb.'\n\n  = Present Continuous yasash uchun 'to be' fe'lini ishlatamiz\n    va asosiy fe'lning asos shakliga ............ qo'shamiz.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 50,
+     "bookRef": "Coursebook, 50-bet, 12-mashq (qoida)",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "To form the present continuous we use the verb \"to be\" and add ............ to the base form of the main verb.",
+       "answer": "-ing",
+       "promptUz": "Jadvaldagi 'play' so'ziga qanday qo'shimcha qo'shilgan?",
+       "whyUz": "Jadvalda 'playING' — demak asos fe'lga -ING qo'shiladi.\nTo'liq qolip: to be + fe'l + -ing.",
+       "speak": "To form the present continuous we use the verb \"to be\" and add ............ to the base form of the main verb."
+      }
+     ]
+    },
+    {
+     "ref": "13",
+     "instructionEn": "Read the texts in Ex. 7 again and fill in the -ing form of the verbs in the table below, then complete the rules.",
+     "instructionUz": "7-mashqdagi matnlarni qayta o'qing va quyidagi jadvalga fe'llarning -ing shaklini yozing, so'ng qoidalarni to'ldiring.",
+     "explanationUz": "-ING QO'SHISHNING UCH QOIDASI:\n\n  1) KO'PCHILIK FE'LLAR — shunchaki -ing qo'shiladi\n       snow → snowing,  wear → wearing,\n       rain → raining,  enjoy → enjoying\n\n  2) BITTA URG'ULI UNLI + BITTA UNDOSH bilan tugasa —\n     UNDOSH IKKILANADI\n       swim → swiMMing,  run → ruNNing,  sit → siTTing\n     Sabab: unli qisqa qolishi kerak.\n\n  3) -E bilan tugasa — E TUSHADI\n       make → makIng,  decorate → decoratIng,\n       shine → shinIng,  write → writIng\n\nDIQQAT: 'enjoy' -y bilan tugasa ham -ing oddiy qo'shiladi\n(y dan oldin UNLI bor: enjOY).",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 50,
+     "bookRef": "Coursebook, 50-bet, 13-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "snow → ............",
+       "answer": "snowing",
+       "promptUz": "Oddiy -ing",
+       "whyUz": "1-qoida: oddiy -ing qo'shiladi.\n49-betdagi A otkritkada: 'It is snowing heavily today.'",
+       "speak": "snow → ............"
+      },
+      {
+       "prompt": "wear → ............",
+       "answer": "wearing",
+       "promptUz": "Oddiy -ing",
+       "whyUz": "1-qoida: oddiy -ing.\nA otkritkada: 'the children are wearing their heavy jackets'.",
+       "speak": "wear → ............"
+      },
+      {
+       "prompt": "rain → ............",
+       "answer": "raining",
+       "promptUz": "Oddiy -ing",
+       "whyUz": "1-qoida: oddiy -ing.\nB otkritkada: 'it is raining'.",
+       "speak": "rain → ............"
+      },
+      {
+       "prompt": "enjoy → ............",
+       "answer": "enjoying",
+       "promptUz": "Oddiy -ing (y o'zgarmaydi)",
+       "whyUz": "1-qoida: oddiy -ing.\nDIQQAT: -ing oldidan 'y' HECH QACHON 'i' ga aylanmaydi.\nC otkritkada: 'enjoying the good weather'.",
+       "speak": "enjoy → ............"
+      },
+      {
+       "prompt": "swim → ............",
+       "answer": "swimming",
+       "promptUz": "Oxirgi undosh ikkilanadi",
+       "whyUz": "2-qoida: bitta urg'uli unli (i) + bitta undosh (m) → M IKKILANADI.\nC otkritkada: 'Everyone is swimming'.",
+       "speak": "swim → ............"
+      },
+      {
+       "prompt": "make → ............",
+       "answer": "making",
+       "promptUz": "-e tushadi",
+       "whyUz": "3-qoida: -E bilan tugaydi → E TUSHADI.\nA va C otkritkalarda: 'making a snowman', 'making a sandcastle'.",
+       "speak": "make → ............"
+      },
+      {
+       "prompt": "decorate → ............",
+       "answer": "decorating",
+       "promptUz": "-e tushadi",
+       "whyUz": "3-qoida: -E TUSHADI.\nB otkritkada: 'decorating the Christmas tree'.",
+       "speak": "decorate → ............"
+      },
+      {
+       "prompt": "shine → ............",
+       "answer": "shining",
+       "promptUz": "-e tushadi",
+       "whyUz": "3-qoida: -E TUSHADI.\nC otkritkada: 'the sun is shining'.",
+       "speak": "shine → ............"
+      },
+      {
+       "prompt": "QOIDA: Verbs ending in one stressed vowel and a consonant double the consonant and take ............ .",
+       "answer": "-ing",
+       "promptUz": "Ikkilangandan keyin nima qo'shiladi?",
+       "whyUz": "swim → swimm + ING = swimming.",
+       "speak": "QOIDA: Verbs ending in one stressed vowel and a consonant double the consonant and take ............ ."
+      },
+      {
+       "prompt": "QOIDA: Verbs ending in -e drop the e and take ............ .",
+       "answer": "-ing",
+       "promptUz": "E tushgandan keyin nima qo'shiladi?",
+       "whyUz": "make → mak + ING = making.",
+       "speak": "QOIDA: Verbs ending in -e drop the e and take ............ ."
+      }
+     ]
+    },
+    {
+     "ref": "14",
+     "instructionEn": "Complete the short answers in this table.",
+     "instructionUz": "Bu jadvaldagi qisqa javoblarni to'ldiring.",
+     "explanationUz": "SO'ROQ SHAKLI (Interrogative):\n  'be' fe'li EGADAN OLDIN chiqadi:\n     Am I playing?    Are you playing?\n     Is he playing?   Are they playing?\n\nQISQA JAVOB QOIDASI:\n  Yes, + ega + to'liq 'be' shakli.   (qisqartma YO'Q!)\n  No,  + ega + qisqargan inkor shakli.\n\n  TO'G'RI: Yes, I am.      XATO: Yes, I'm.\n  TO'G'RI: No, I'm not.\n\nJADVAL TO'LIQ HOLDA:\n  Am I playing?      → Yes, I am.      / No, I'm not.\n  Are you playing?   → Yes, you are.   / No, you aren't.\n  Is he playing?     → Yes, he is.     / No, he isn't.\n  Is she playing?    → Yes, she is.    / No, she isn't.\n  Is it playing?     → Yes, it is.     / No, it isn't.\n  Are we playing?    → Yes, we are.    / No, we aren't.\n  Are you playing?   → Yes, you are.   / No, you aren't.\n  Are they playing?  → Yes, they are.  / No, they aren't.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 50,
+     "bookRef": "Coursebook, 50-bet, 14-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "Are you playing? — Yes, you are. / No, ............",
+       "answer": "you aren't",
+       "promptUz": "'are not' ning qisqargan shakli",
+       "whyUz": "'aren't' = are not. To'liq shakli ham to'g'ri: 'you are not'."
+      },
+      {
+       "prompt": "Is he playing? — Yes, ............ / No, he isn't.",
+       "answer": "he is",
+       "promptUz": "Tasdiq javobda qisqartma ISHLATILMAYDI",
+       "whyUz": "'Yes, he is.' — 'Yes, he's' XATO.\nQisqa tasdiq javobda 'be' TO'LIQ yoziladi."
+      },
+      {
+       "prompt": "Is she playing? — Yes, she is. / No, ............",
+       "answer": "she isn't",
+       "promptUz": "'is not' ning qisqargan shakli",
+       "whyUz": "'isn't' = is not."
+      },
+      {
+       "prompt": "Is it playing? — Yes, it is. / No, ............",
+       "answer": "it isn't",
+       "promptUz": "'is not' ning qisqargan shakli",
+       "whyUz": "'it' uchun ham IS/ISN'T."
+      },
+      {
+       "prompt": "Are we playing? — Yes, ............ / No, we aren't.",
+       "answer": "we are",
+       "promptUz": "Tasdiq javobda 'be' to'liq",
+       "whyUz": "'Yes, we are.' — qisqartmasiz."
+      },
+      {
+       "prompt": "Are you playing? (ko'plik) — Yes, you are. / No, ............",
+       "answer": "you aren't",
+       "promptUz": "Birlikdagi bilan bir xil",
+       "whyUz": "'you' birlikda ham, ko'plikda ham bir xil: are / aren't."
+      },
+      {
+       "prompt": "Are they playing? — Yes, they are. / No, ............",
+       "answer": "they aren't",
+       "promptUz": "'are not' ning qisqargan shakli",
+       "whyUz": "'aren't' = are not."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u7-coursebook-51-5",
+   "kind": "grammar",
+   "title": "Present Continuous — correcting sentences",
+   "titleUz": "Present Continuous — gaplarni to'g'rilash",
+   "book": "coursebook",
+   "bookPage": 51,
+   "exercises": [
+    {
+     "ref": "15",
+     "instructionEn": "Look at the picture and correct the sentences, as in the example.",
+     "instructionUz": "Rasmga qarang va gaplarni to'g'rilang, namunadagidek.",
+     "explanationUz": "RASMDA PLYAJ MANZARASI:\n  Ann   — qizil soyabon ostida gitara chalayapti\n  Sue   — dengizda suzayapti\n  Molly — dengizda suzayapti\n  Jim   — qumdan qal'a yasayapti (chelak va belcha bor)\n  Ian   — Jim bilan birga qumdan qal'a yasayapti\n  Tony  — toshda o'tirib baliq tutayapti\n  Patty — sochiq ustida yotib quyoshda toblanayapti\n\nKITOBDAGI NAMUNA:\n  1  Patty is swimming.\n     Wrong! Patty isn't swimming. She's sunbathing.\n\nJAVOB TUZILISHI (uch qism):\n  1) Wrong!\n  2) Ism + isn't/aren't + noto'g'ri fe'l-ing.\n  3) He's/She's/They're + TO'G'RI fe'l-ing.\n\nDIQQAT: 3-qismda ISM o'rniga OLMOSH ishlatiladi:\n  Patty → She's;  Tony → He's;  Sue and Molly → They're",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 51,
+     "bookRef": "Coursebook, 51-bet, 15-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "2  Sue and Molly are playing tennis.",
+       "answer": "Wrong! Sue and Molly aren't playing tennis. They're swimming.",
+       "promptUz": "Ular dengizda",
+       "whyUz": "Ikki kishi → AREN'T va THEY'RE.\nSyu va Molli dengizda suzayapti.",
+       "speak": "2  Sue and Molly are playing tennis."
+      },
+      {
+       "prompt": "3  Ann is sleeping.",
+       "answer": "Wrong! Ann isn't sleeping. She's playing the guitar.",
+       "promptUz": "Ann qo'lida nima ushlab turibdi?",
+       "whyUz": "Ann soyabon ostida o'tirib gitara chalayapti.\nDIQQAT: cholg'u asbobi oldida THE shart — play THE guitar.",
+       "speak": "3  Ann is sleeping."
+      },
+      {
+       "prompt": "4  Tony is listening to music.",
+       "answer": "Wrong! Tony isn't listening to music. He's fishing.",
+       "promptUz": "Toni toshda o'tiribdi, qo'lida uzun tayoq",
+       "whyUz": "Toni qarmoq bilan baliq tutayapti.\n'to fish' = baliq tutmoq → 'fishing'.",
+       "speak": "4  Tony is listening to music."
+      },
+      {
+       "prompt": "5  Jim and Ian are reading a book.",
+       "answer": "Wrong! Jim and Ian aren't reading a book. They're making a sandcastle.",
+       "promptUz": "Ular qumda, yonlarida chelak va belcha bor",
+       "whyUz": "Jim va Ian qumdan qal'a yasashayapti.\nIkki kishi → AREN'T va THEY'RE.",
+       "speak": "5  Jim and Ian are reading a book."
+      }
+     ]
+    },
+    {
+     "ref": "16",
+     "instructionEn": "First, listen to the sounds and tick what you hear, then ask and answer questions, as in the example.",
+     "instructionUz": "Avval tovushlarni tinglang va eshitganingizni belgilang, so'ng namunadagidek savol-javob qiling.",
+     "explanationUz": "KITOBDAGI NAMUNA:\n  S1: Is Tony watching TV?\n  S2: No, he isn't. He's playing tennis.\n\nQOLIP:\n  SAVOL:  Is/Are + ega + fe'l-ING?\n  JAVOB:  No, he isn't/she isn't/they aren't. + He's/She's/They're + to'g'ri fe'l-ing.\n\nSavolda BELGILANMAGAN variant so'raladi,\njavobda esa BELGILANGAN variant aytiladi.\n\nOLMOSHLAR:\n  Tony → he;  Stella → she;  James → he\n  Bob & Keith → they;  They → they;  She → she",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 51,
+     "bookRef": "Coursebook, 51-bet, 16-mashq",
+     "audioNoteUz": "Qaysi variant belgilanishi faqat kassetadagi tovush bilan aniqlanadi. Kitobda faqat 1-band belgilangan (play tennis). Quyida har bir band uchun IKKALA variantning javobi berilgan.",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "2  Stella: drive a car / have a shower — agar 'have a shower' belgilansa",
+       "answer": "Is Stella driving a car?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'have a shower' = dush qabul qilmoq → 'having a shower'.\nDIQQAT: 'have' bu yerda 'ega bo'lmoq' emas — shuning uchun -ing shakli MUMKIN."
+      },
+      {
+       "prompt": "2  Stella: drive a car / have a shower — agar 'have a shower' belgilansa",
+       "answer": "No, she isn't. She's having a shower.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'have a shower' = dush qabul qilmoq → 'having a shower'.\nDIQQAT: 'have' bu yerda 'ega bo'lmoq' emas — shuning uchun -ing shakli MUMKIN."
+      },
+      {
+       "prompt": "2  Stella: drive a car / have a shower — agar 'drive a car' belgilansa",
+       "answer": "Is Stella having a shower?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'drive' -e bilan tugaydi → e tushadi: driving."
+      },
+      {
+       "prompt": "2  Stella: drive a car / have a shower — agar 'drive a car' belgilansa",
+       "answer": "No, she isn't. She's driving a car.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'drive' -e bilan tugaydi → e tushadi: driving."
+      },
+      {
+       "prompt": "3  Bob & Keith: swim / sleep — agar 'sleep' belgilansa",
+       "answer": "Are Bob and Keith swimming?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "Ikki kishi → ARE va THEY.\n'swim' → swimming (m ikkilanadi)."
+      },
+      {
+       "prompt": "3  Bob & Keith: swim / sleep — agar 'sleep' belgilansa",
+       "answer": "No, they aren't. They're sleeping.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "Ikki kishi → ARE va THEY.\n'swim' → swimming (m ikkilanadi)."
+      },
+      {
+       "prompt": "3  Bob & Keith: swim / sleep — agar 'swim' belgilansa",
+       "answer": "Are Bob and Keith sleeping?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'sleep' → sleeping (oddiy -ing)."
+      },
+      {
+       "prompt": "3  Bob & Keith: swim / sleep — agar 'swim' belgilansa",
+       "answer": "No, they aren't. They're swimming.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'sleep' → sleeping (oddiy -ing)."
+      },
+      {
+       "prompt": "4  They: listen to music / play computer games — agar 'play computer games' belgilansa",
+       "answer": "Are they listening to music?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'listen TO music' — 'to' predlogi shart."
+      },
+      {
+       "prompt": "4  They: listen to music / play computer games — agar 'play computer games' belgilansa",
+       "answer": "No, they aren't. They're playing computer games.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'listen TO music' — 'to' predlogi shart."
+      },
+      {
+       "prompt": "4  They: listen to music / play computer games — agar 'listen to music' belgilansa",
+       "answer": "Are they playing computer games?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'computer games' — kompyuter o'yinlari."
+      },
+      {
+       "prompt": "4  They: listen to music / play computer games — agar 'listen to music' belgilansa",
+       "answer": "No, they aren't. They're listening to music.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'computer games' — kompyuter o'yinlari."
+      },
+      {
+       "prompt": "5  James: ride a horse / ride a motorbike — agar 'ride a motorbike' belgilansa",
+       "answer": "Is James riding a horse?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'ride' -e bilan tugaydi → riding.\n'a motorbike' = mototsikl."
+      },
+      {
+       "prompt": "5  James: ride a horse / ride a motorbike — agar 'ride a motorbike' belgilansa",
+       "answer": "No, he isn't. He's riding a motorbike.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'ride' -e bilan tugaydi → riding.\n'a motorbike' = mototsikl."
+      },
+      {
+       "prompt": "5  James: ride a horse / ride a motorbike — agar 'ride a horse' belgilansa",
+       "answer": "Is James riding a motorbike?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'ride a horse' = otga minmoq."
+      },
+      {
+       "prompt": "5  James: ride a horse / ride a motorbike — agar 'ride a horse' belgilansa",
+       "answer": "No, he isn't. He's riding a horse.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'ride a horse' = otga minmoq."
+      },
+      {
+       "prompt": "6  She: play the guitar / play the piano — agar 'play the piano' belgilansa",
+       "answer": "Is she playing the guitar?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "Cholg'u asbobi oldida THE shart: play THE piano."
+      },
+      {
+       "prompt": "6  She: play the guitar / play the piano — agar 'play the piano' belgilansa",
+       "answer": "No, she isn't. She's playing the piano.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "Cholg'u asbobi oldida THE shart: play THE piano."
+      },
+      {
+       "prompt": "6  She: play the guitar / play the piano — agar 'play the guitar' belgilansa",
+       "answer": "Is she playing the piano?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "15-mashqdagi Ann ham gitara chalayapti."
+      },
+      {
+       "prompt": "6  She: play the guitar / play the piano — agar 'play the guitar' belgilansa",
+       "answer": "No, she isn't. She's playing the guitar.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "15-mashqdagi Ann ham gitara chalayapti."
+      },
+      {
+       "prompt": "7  They: walk / run — agar 'run' belgilansa",
+       "answer": "Are they walking?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'run' → running (n IKKILANADI)."
+      },
+      {
+       "prompt": "7  They: walk / run — agar 'run' belgilansa",
+       "answer": "No, they aren't. They're running.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'run' → running (n IKKILANADI)."
+      },
+      {
+       "prompt": "7  They: walk / run — agar 'walk' belgilansa",
+       "answer": "Are they running?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'walk' → walking (oddiy -ing). 'l' o'qilmaydi: /wɔːk/."
+      },
+      {
+       "prompt": "7  They: walk / run — agar 'walk' belgilansa",
+       "answer": "No, they aren't. They're walking.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'walk' → walking (oddiy -ing). 'l' o'qilmaydi: /wɔːk/."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u7-coursebook-49-2",
    "kind": "speaking",
    "title": "Speaking — notes and talk",
@@ -764,6 +1770,83 @@
       {
        "en": "Pamela haqida: Her family are making a sandcastle and everyone is swimming.",
        "uz": "Uning oilasi qum qal'a yasashayapti va hamma suzyapti."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u7-coursebook-51-7",
+   "kind": "writing",
+   "title": "Writing (Project) — the seasons in my country",
+   "titleUz": "Yozish (Loyiha) — mamlakatimdagi fasllar",
+   "book": "coursebook",
+   "bookPage": 51,
+   "exercises": [
+    {
+     "ref": "Writing",
+     "instructionEn": "Write a short paragraph about the different seasons in your country. Write which is your favourite season and what you like doing then. Use the texts in Ex. 17 as models.",
+     "instructionUz": "O'z mamlakatingizdagi turli fasllar haqida qisqa xatboshi yozing. Qaysi fasl sevimli ekanini va o'shanda nima qilishni yoqtirishingizni yozing. 17-mashqdagi matnlarni namuna qilib oling.",
+     "explanationUz": "17-MASHQ MATNLARI TUZILISHI (uchalasida ham bir xil):\n\n  1) Mamlakat iqlimi haqida umumiy gap\n  2) Har bir fasl haqida bir-ikki gap\n  3) Sevimli fasl\n  4) NIMA UCHUN (because ...)\n  5) O'shanda nima qilishni yoqtirishi\n\nFOYDALI IBORALAR:\n  ... has a warm/cold climate.\n  In winter it is ... / In summer it's ...\n  It can be quite ...\n  ... is my favourite season.\n  I like ... the best because ...\n  I love/like + fe'l-ING\n  I often go for walks / go skiing / go swimming",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 51,
+     "bookRef": "Coursebook, 51-bet, Writing (Project)",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1-gap: mamlakat iqlimi",
+       "answer": "Uzbekistan has a continental climate with four different seasons.",
+       "whyUz": "'a continental climate' = kontinental iqlim.\nMigelning matni ham shunday boshlanadi: 'Brazil has a warm climate.'",
+       "speak": "1-gap: mamlakat iqlimi"
+      },
+      {
+       "prompt": "2-gap: qish",
+       "answer": "In winter it is cold and windy, and it sometimes snows.",
+       "whyUz": "'it snows' — ob-havo fe'li, ega DOIM 'it'.",
+       "speak": "2-gap: qish"
+      },
+      {
+       "prompt": "3-gap: bahor",
+       "answer": "In spring it is warm and it often rains, so the trees are green and there are lots of flowers.",
+       "whyUz": "Karenning matnidagi iboralardan foydalanildi.",
+       "speak": "3-gap: bahor"
+      },
+      {
+       "prompt": "4-gap: yoz",
+       "answer": "In summer it is very hot and sunny, and it hardly ever rains.",
+       "whyUz": "'hardly ever' = deyarli hech qachon (chastota ravishi).",
+       "speak": "4-gap: yoz"
+      },
+      {
+       "prompt": "5-gap: kuz",
+       "answer": "In autumn it is cool and quite rainy, but it is not very cold.",
+       "whyUz": "'quite' = ancha (44-betdagi daraja so'zi).",
+       "speak": "5-gap: kuz"
+      },
+      {
+       "prompt": "6-gap: sevimli fasl",
+       "answer": "Spring is my favourite season.",
+       "whyUz": "Migelning matnidagi qolip.",
+       "speak": "6-gap: sevimli fasl"
+      },
+      {
+       "prompt": "7-gap: sabab",
+       "answer": "I like it the best because the weather is warm and everything is green.",
+       "whyUz": "Sabab DOIM 'because' bilan.",
+       "speak": "7-gap: sabab"
+      },
+      {
+       "prompt": "8-gap: o'shanda nima qilishni yoqtiradi",
+       "answer": "I love going for walks in the park and having picnics with my family.",
+       "whyUz": "'love/like + fe'l-ING' — yoqtirish fe'llaridan keyin -ing.",
+       "speak": "8-gap: o'shanda nima qilishni yoqtiradi"
+      },
+      {
+       "prompt": "TO'LIQ MATN (namuna)",
+       "answer": "Uzbekistan has a continental climate with four different seasons. In winter it is cold and windy, and it sometimes snows. In spring it is warm and it often rains, so the trees are green and there are lots of flowers. In summer it is very hot and sunny, and it hardly ever rains. In autumn it is cool and quite rainy, but it is not very cold. Spring is my favourite season. I like it the best because the weather is warm and everything is green. I love going for walks in the park and having picnics with my family.",
+       "whyUz": "Taxminan 80 so'z — 17-mashqdagi matnlar bilan bir xil hajm.",
+       "speak": "TO'LIQ MATN (namuna)"
       }
      ]
     }
@@ -1264,6 +2347,478 @@
    ],
    "book": "coursebook",
    "bookPage": 49
+  },
+  {
+   "ruleUz": "-ING qo'shish: 1-qoida (oddiy)",
+   "explanationUz": "Ko'pchilik fe'llarga shunchaki -ing qo'shiladi.",
+   "items": [
+    {
+     "base": "snow",
+     "baseUz": "qor yog'moq",
+     "derived": "snowing",
+     "derivedUz": "yog'ayotgan",
+     "note": ""
+    },
+    {
+     "base": "wear",
+     "baseUz": "kiymoq",
+     "derived": "wearing",
+     "derivedUz": "kiyayotgan",
+     "note": ""
+    },
+    {
+     "base": "rain",
+     "baseUz": "yomg'ir yog'moq",
+     "derived": "raining",
+     "derivedUz": "yog'ayotgan",
+     "note": ""
+    },
+    {
+     "base": "enjoy",
+     "baseUz": "zavqlanmoq",
+     "derived": "enjoying",
+     "derivedUz": "zavqlanayotgan",
+     "note": "-y O'ZGARMAYDI"
+    },
+    {
+     "base": "play",
+     "baseUz": "o'ynamoq",
+     "derived": "playing",
+     "derivedUz": "o'ynayotgan",
+     "note": "-y o'zgarmaydi"
+    },
+    {
+     "base": "read",
+     "baseUz": "o'qimoq",
+     "derived": "reading",
+     "derivedUz": "o'qiyotgan",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "ruleUz": "-ING qo'shish: 2-qoida (undosh ikkilanadi)",
+   "explanationUz": "Bitta URG'ULI unli + bitta undosh bilan tugasa, undosh ikkilanadi.",
+   "items": [
+    {
+     "base": "swim",
+     "baseUz": "suzmoq",
+     "derived": "swimming",
+     "derivedUz": "m ikkilandi",
+     "note": "swi-m → swimm"
+    },
+    {
+     "base": "run",
+     "baseUz": "yugurmoq",
+     "derived": "running",
+     "derivedUz": "n ikkilandi",
+     "note": ""
+    },
+    {
+     "base": "sit",
+     "baseUz": "o'tirmoq",
+     "derived": "sitting",
+     "derivedUz": "t ikkilandi",
+     "note": ""
+    },
+    {
+     "base": "get",
+     "baseUz": "olmoq",
+     "derived": "getting",
+     "derivedUz": "t ikkilandi",
+     "note": ""
+    },
+    {
+     "base": "stop",
+     "baseUz": "to'xtamoq",
+     "derived": "stopping",
+     "derivedUz": "p ikkilandi",
+     "note": ""
+    },
+    {
+     "base": "shop",
+     "baseUz": "xarid qilmoq",
+     "derived": "shopping",
+     "derivedUz": "p ikkilandi",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "ruleUz": "-ING qo'shish: 3-qoida (-e tushadi)",
+   "explanationUz": "Fe'l -e bilan tugasa, e tushib qoladi.",
+   "items": [
+    {
+     "base": "make",
+     "baseUz": "yasamoq",
+     "derived": "making",
+     "derivedUz": "e tushdi",
+     "note": "mak + ing"
+    },
+    {
+     "base": "decorate",
+     "baseUz": "bezamoq",
+     "derived": "decorating",
+     "derivedUz": "e tushdi",
+     "note": ""
+    },
+    {
+     "base": "shine",
+     "baseUz": "charaqlamoq",
+     "derived": "shining",
+     "derivedUz": "e tushdi",
+     "note": ""
+    },
+    {
+     "base": "write",
+     "baseUz": "yozmoq",
+     "derived": "writing",
+     "derivedUz": "e tushdi",
+     "note": ""
+    },
+    {
+     "base": "come",
+     "baseUz": "kelmoq",
+     "derived": "coming",
+     "derivedUz": "e tushdi",
+     "note": ""
+    },
+    {
+     "base": "have",
+     "baseUz": "ega bo'lmoq",
+     "derived": "having",
+     "derivedUz": "e tushdi",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "ruleUz": "Harorat so'zlari (past → yuqori)",
+   "explanationUz": "Kitobdagi shkala bo'yicha.",
+   "items": [
+    {
+     "base": "freezing cold",
+     "baseUz": "qattiq sovuq",
+     "derived": "−5°C / 23°F",
+     "derivedUz": "muzlaydi",
+     "note": "freeze + -ing"
+    },
+    {
+     "base": "cold",
+     "baseUz": "sovuq",
+     "derived": "5°C / 41°F",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "chilly",
+     "baseUz": "salqin, sovuqroq",
+     "derived": "10°C / 50°F",
+     "derivedUz": "",
+     "note": "chill + -y"
+    },
+    {
+     "base": "cool",
+     "baseUz": "salqin (yoqimli)",
+     "derived": "15°C / 59°F",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "warm",
+     "baseUz": "iliq",
+     "derived": "25°C / 77°F",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "hot",
+     "baseUz": "issiq",
+     "derived": "30°C / 86°F",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "boiling hot",
+     "baseUz": "juda issiq",
+     "derived": "35°C / 95°F",
+     "derivedUz": "qaynoq",
+     "note": "boil + -ing"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "ruleUz": "GO + -ing (mashg'ulot iboralari)",
+   "explanationUz": "Ko'p sport va mashg'ulotlar 'go' fe'li bilan aytiladi.",
+   "items": [
+    {
+     "base": "swim",
+     "baseUz": "suzmoq",
+     "derived": "go swimming",
+     "derivedUz": "suzgani bormoq",
+     "note": ""
+    },
+    {
+     "base": "ski",
+     "baseUz": "chang'i uchmoq",
+     "derived": "go skiing",
+     "derivedUz": "chang'i uchgani bormoq",
+     "note": "'ski' → 'skiing' (ii)"
+    },
+    {
+     "base": "shop",
+     "baseUz": "xarid qilmoq",
+     "derived": "go shopping",
+     "derivedUz": "xaridga bormoq",
+     "note": ""
+    },
+    {
+     "base": "a picnic",
+     "baseUz": "piknik",
+     "derived": "go on a picnic",
+     "derivedUz": "piknikka bormoq",
+     "note": "'go ON' — istisno"
+    },
+    {
+     "base": "the beach",
+     "baseUz": "plyaj",
+     "derived": "go to the beach",
+     "derivedUz": "plyajga bormoq",
+     "note": "'go TO'"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "ruleUz": "Mashg'ulot fe'llari (Present Continuous bilan)",
+   "explanationUz": "15 va 16-mashqlardagi fe'llar va ularning -ing shakli.",
+   "items": [
+    {
+     "base": "to sunbathe",
+     "baseUz": "quyoshda toblanmoq",
+     "derived": "sunbathing",
+     "derivedUz": "-e tushdi",
+     "note": "sun + bathe"
+    },
+    {
+     "base": "to fish",
+     "baseUz": "baliq tutmoq",
+     "derived": "fishing",
+     "derivedUz": "oddiy -ing",
+     "note": "'a fish' — ot"
+    },
+    {
+     "base": "to swim",
+     "baseUz": "suzmoq",
+     "derived": "swimming",
+     "derivedUz": "m ikkilandi",
+     "note": ""
+    },
+    {
+     "base": "to run",
+     "baseUz": "yugurmoq",
+     "derived": "running",
+     "derivedUz": "n ikkilandi",
+     "note": ""
+    },
+    {
+     "base": "to ride",
+     "baseUz": "minmoq",
+     "derived": "riding",
+     "derivedUz": "-e tushdi",
+     "note": "ride a horse/motorbike"
+    },
+    {
+     "base": "to drive",
+     "baseUz": "haydamoq",
+     "derived": "driving",
+     "derivedUz": "-e tushdi",
+     "note": ""
+    },
+    {
+     "base": "to sleep",
+     "baseUz": "uxlamoq",
+     "derived": "sleeping",
+     "derivedUz": "oddiy -ing",
+     "note": ""
+    },
+    {
+     "base": "to walk",
+     "baseUz": "yurmoq",
+     "derived": "walking",
+     "derivedUz": "oddiy -ing",
+     "note": "'l' o'qilmaydi"
+    },
+    {
+     "base": "to ski",
+     "baseUz": "chang'i uchmoq",
+     "derived": "skiing",
+     "derivedUz": "ikkita i",
+     "note": "ISTISNO"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "ruleUz": "Sevimli narsani ifodalash (uch usul)",
+   "explanationUz": "17-mashqdagi uch matnda uch xil qolip ishlatilgan.",
+   "items": [
+    {
+     "base": "like ... a lot",
+     "baseUz": "juda yoqtirmoq",
+     "derived": "I like spring a lot.",
+     "derivedUz": "Karen",
+     "note": "'a lot' fe'ldan keyin"
+    },
+    {
+     "base": "my favourite",
+     "baseUz": "mening sevimli",
+     "derived": "Summer is my favourite season.",
+     "derivedUz": "Migel",
+     "note": "britancha yozilish"
+    },
+    {
+     "base": "like ... the best",
+     "baseUz": "eng ko'p yoqtirmoq",
+     "derived": "I like winter the best.",
+     "derivedUz": "Anita",
+     "note": ""
+    },
+    {
+     "base": "love",
+     "baseUz": "juda yaxshi ko'rmoq",
+     "derived": "I love swimming.",
+     "derivedUz": "eng kuchli",
+     "note": "keyin -ing"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "ruleUz": "Yoqtirish fe'llaridan keyin -ING",
+   "explanationUz": "like, love, hate, enjoy, prefer fe'llaridan keyin ikkinchi fe'l -ing bilan keladi.",
+   "items": [
+    {
+     "base": "love",
+     "baseUz": "juda yaxshi ko'rmoq",
+     "derived": "I love swimming.",
+     "derivedUz": "suzishni yaxshi ko'raman",
+     "note": ""
+    },
+    {
+     "base": "like",
+     "baseUz": "yoqtirmoq",
+     "derived": "I like doing that.",
+     "derivedUz": "buni qilishni yoqtiraman",
+     "note": ""
+    },
+    {
+     "base": "enjoy",
+     "baseUz": "zavqlanmoq",
+     "derived": "I enjoy reading.",
+     "derivedUz": "o'qishdan zavqlanaman",
+     "note": "faqat -ing bilan"
+    },
+    {
+     "base": "hate",
+     "baseUz": "yomon ko'rmoq",
+     "derived": "I hate waiting.",
+     "derivedUz": "kutishni yomon ko'raman",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "ruleUz": "Sifat + -LY → ravish",
+   "explanationUz": "17-mashqdagi matnlardagi ravishlar.",
+   "items": [
+    {
+     "base": "sudden",
+     "baseUz": "to'satdan bo'lgan",
+     "derived": "suddenly",
+     "derivedUz": "to'satdan",
+     "note": ""
+    },
+    {
+     "base": "near",
+     "baseUz": "yaqin",
+     "derived": "nearly",
+     "derivedUz": "deyarli",
+     "note": "ma'nosi o'zgaradi"
+    },
+    {
+     "base": "heavy",
+     "baseUz": "qalin",
+     "derived": "heavily",
+     "derivedUz": "qattiq, qalin",
+     "note": "y → i + ly"
+    },
+    {
+     "base": "often",
+     "baseUz": "ko'pincha",
+     "derived": "-",
+     "derivedUz": "ravishning o'zi",
+     "note": "'oftenly' YO'Q"
+    },
+    {
+     "base": "always",
+     "baseUz": "doim",
+     "derived": "-",
+     "derivedUz": "ravishning o'zi",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "ruleUz": "'weather' va 'climate' farqi",
+   "explanationUz": "Ikkalasi ham ob-havo haqida, lekin muddati boshqa.",
+   "items": [
+    {
+     "base": "weather",
+     "baseUz": "ob-havo",
+     "derived": "the weather today",
+     "derivedUz": "BUGUNGI holat",
+     "note": "sanalmaydi"
+    },
+    {
+     "base": "climate",
+     "baseUz": "iqlim",
+     "derived": "a warm climate",
+     "derivedUz": "UMUMIY, uzoq muddat",
+     "note": "sanaladi: a climate"
+    },
+    {
+     "base": "a season",
+     "baseUz": "fasl",
+     "derived": "four seasons",
+     "derivedUz": "yilning to'rt qismi",
+     "note": ""
+    },
+    {
+     "base": "a temperature",
+     "baseUz": "harorat",
+     "derived": "the temperature",
+     "derivedUz": "daraja",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 51
   }
  ],
  "sentencePatterns": [
@@ -1362,6 +2917,110 @@
    "explanationUz": "'there' = u yerda — shahar nomini takrorlamaslik uchun.",
    "book": "coursebook",
    "bookPage": 49
+  },
+  {
+   "formula": "ega + am/is/are + fe'l-ING  (tasdiq)",
+   "exampleEn": "She's playing football now. They are making a snowman.",
+   "exampleUz": "U hozir futbol o'ynayapti. Ular qorbobo yasashayapti.",
+   "explanationUz": "'to be' egaga qarab o'zgaradi, fe'l esa doim -ING bilan.",
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "formula": "ega + 'm not / isn't / aren't + fe'l-ING  (inkor)",
+   "exampleEn": "She isn't eating an ice-cream at the moment.",
+   "exampleUz": "U ayni paytda muzqaymoq yemayapti.",
+   "explanationUz": "Inkor 'be' fe'liga qo'shiladi, asosiy fe'l o'zgarmaydi.",
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "formula": "Am/Is/Are + ega + fe'l-ING?  (savol)",
+   "exampleEn": "Is he playing? Are they playing?",
+   "exampleUz": "U o'ynayaptimi? Ular o'ynashayaptimi?",
+   "explanationUz": "'be' fe'li egadan OLDINGA chiqadi.",
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "formula": "Yes, + ega + be (TO'LIQ). / No, + ega + qisqargan inkor.",
+   "exampleEn": "Yes, he is. / No, he isn't.",
+   "exampleUz": "Ha, o'ynayapti. / Yo'q, o'ynamayapti.",
+   "explanationUz": "Tasdiq javobda qisqartma ISHLATILMAYDI: 'Yes, he's' XATO.",
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "formula": "What's the temperature in + shahar? — It's + son + °C/°F.",
+   "exampleEn": "What's the temperature in Cairo today? — It's 25°C. / It's 77°F.",
+   "exampleUz": "Bugun Qohirada harorat qancha? — 25 daraja.",
+   "explanationUz": "'temperature' /ˈtemprətʃə/ — 'tempricha' deb o'qiladi.",
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "formula": "When it is + ob-havo, you can + fe'l.",
+   "exampleEn": "When it is snowy you can ski or make a snowman.",
+   "exampleUz": "Qorli bo'lganda chang'i uchish yoki qorbobo yasash mumkin.",
+   "explanationUz": "'when' — vaqt bog'lovchisi.\n'can' dan keyin fe'l asos shaklida.",
+   "book": "coursebook",
+   "bookPage": 50
+  },
+  {
+   "formula": "Wrong! X isn't/aren't + fe'l-ING. He's/She's/They're + to'g'ri fe'l-ING.",
+   "exampleEn": "Wrong! Patty isn't swimming. She's sunbathing.",
+   "exampleUz": "Noto'g'ri! Patti suzmayapti. U quyoshda toblanayapti.",
+   "explanationUz": "Avval inkor (ismi bilan), keyin to'g'ri javob (olmosh bilan).",
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "formula": "Is/Are + ega + fe'l-ING? — No, ... isn't/aren't. + to'g'ri javob.",
+   "exampleEn": "Is Tony watching TV? — No, he isn't. He's playing tennis.",
+   "exampleUz": "Toni televizor ko'ryaptimi? — Yo'q. U tennis o'ynayapti.",
+   "explanationUz": "Qisqa inkor javobdan keyin to'g'ri ma'lumot beriladi.",
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "formula": "In + fasl + it is / it's + sifat.",
+   "exampleEn": "In summer it's nearly always hot and sunny.",
+   "exampleUz": "Yozda deyarli doim issiq va quyoshli bo'ladi.",
+   "explanationUz": "Fasl oldida IN. Ega DOIM 'it'.",
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "formula": "It can be + sifat (ehtimollik).",
+   "exampleEn": "In autumn and spring it can be quite windy.",
+   "exampleUz": "Kuz va bahorda ancha shamolli bo'lishi mumkin.",
+   "explanationUz": "'can be' — doim emas, ba'zan shunday bo'lishi mumkin.",
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "formula": "X is my favourite season. / I like X the best BECAUSE ...",
+   "exampleEn": "Summer is my favourite season. I like winter the best because there is always snow.",
+   "exampleUz": "Yoz — sevimli faslim. Menga qish eng ko'p yoqadi, chunki doim qor bo'ladi.",
+   "explanationUz": "Sabab DOIM 'because' bilan beriladi.",
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "formula": "I love/like + fe'l-ING.",
+   "exampleEn": "I love swimming and sunbathing at the beach.",
+   "exampleUz": "Men plyajda suzish va quyoshda toblanishni yaxshi ko'raman.",
+   "explanationUz": "love, like, enjoy, hate fe'llaridan keyin ikkinchi fe'l -ING bilan.",
+   "book": "coursebook",
+   "bookPage": 51
+  },
+  {
+   "formula": "I often GO FOR walks / GO skiing / GO swimming.",
+   "exampleEn": "I often go for walks in the park. I often go skiing.",
+   "exampleUz": "Men ko'pincha bog'da sayr qilaman. Ko'pincha chang'i uchgani boraman.",
+   "explanationUz": "'go for a walk' — 'for' bilan.\n'go skiing/swimming' — to'g'ridan-to'g'ri -ing bilan.",
+   "book": "coursebook",
+   "bookPage": 51
   }
  ],
  "vocabulary": [
@@ -1632,6 +3291,238 @@
   {
    "en": "Rome",
    "uz": "Rim"
+  },
+  {
+   "en": "to keep somebody warm",
+   "uz": "issiq saqlamoq"
+  },
+  {
+   "en": "a weather chart",
+   "uz": "ob-havo jadvali"
+  },
+  {
+   "en": "international",
+   "uz": "xalqaro"
+  },
+  {
+   "en": "a symbol",
+   "uz": "belgi"
+  },
+  {
+   "en": "the temperature",
+   "uz": "harorat"
+  },
+  {
+   "en": "degrees Celsius",
+   "uz": "Selsiy darajasi"
+  },
+  {
+   "en": "degrees Fahrenheit",
+   "uz": "Farengeyt darajasi"
+  },
+  {
+   "en": "chilly",
+   "uz": "salqin, sovuqroq"
+  },
+  {
+   "en": "cool",
+   "uz": "salqin"
+  },
+  {
+   "en": "boiling hot",
+   "uz": "juda issiq"
+  },
+  {
+   "en": "Cairo",
+   "uz": "Qohira"
+  },
+  {
+   "en": "Madrid",
+   "uz": "Madrid"
+  },
+  {
+   "en": "Manila",
+   "uz": "Manila"
+  },
+  {
+   "en": "Prague",
+   "uz": "Praga"
+  },
+  {
+   "en": "Singapore",
+   "uz": "Singapur"
+  },
+  {
+   "en": "to go on a picnic",
+   "uz": "piknikka bormoq"
+  },
+  {
+   "en": "to go swimming",
+   "uz": "suzgani bormoq"
+  },
+  {
+   "en": "to sunbathe",
+   "uz": "quyoshda toblanmoq"
+  },
+  {
+   "en": "to ski",
+   "uz": "chang'i uchmoq"
+  },
+  {
+   "en": "to watch TV",
+   "uz": "televizor ko'rmoq"
+  },
+  {
+   "en": "affirmative",
+   "uz": "tasdiq"
+  },
+  {
+   "en": "negative",
+   "uz": "inkor"
+  },
+  {
+   "en": "interrogative",
+   "uz": "so'roq"
+  },
+  {
+   "en": "a short answer",
+   "uz": "qisqa javob"
+  },
+  {
+   "en": "the base form",
+   "uz": "asos shakl"
+  },
+  {
+   "en": "a consonant",
+   "uz": "undosh"
+  },
+  {
+   "en": "a vowel",
+   "uz": "unli"
+  },
+  {
+   "en": "stressed",
+   "uz": "urg'uli"
+  },
+  {
+   "en": "spelling",
+   "uz": "imlo, yozilishi"
+  },
+  {
+   "en": "at present",
+   "uz": "hozirda"
+  },
+  {
+   "en": "to correct",
+   "uz": "to'g'rilamoq"
+  },
+  {
+   "en": "to fish",
+   "uz": "baliq tutmoq"
+  },
+  {
+   "en": "to play the guitar",
+   "uz": "gitara chalmoq"
+  },
+  {
+   "en": "to play the piano",
+   "uz": "pianino chalmoq"
+  },
+  {
+   "en": "to have a shower",
+   "uz": "dush qabul qilmoq"
+  },
+  {
+   "en": "to drive a car",
+   "uz": "mashina haydamoq"
+  },
+  {
+   "en": "to ride a horse",
+   "uz": "otga minmoq"
+  },
+  {
+   "en": "a motorbike",
+   "uz": "mototsikl"
+  },
+  {
+   "en": "computer games",
+   "uz": "kompyuter o'yinlari"
+  },
+  {
+   "en": "a sound",
+   "uz": "tovush"
+  },
+  {
+   "en": "a description",
+   "uz": "tavsif"
+  },
+  {
+   "en": "a climate",
+   "uz": "iqlim"
+  },
+  {
+   "en": "Britain",
+   "uz": "Britaniya"
+  },
+  {
+   "en": "Brazil",
+   "uz": "Braziliya"
+  },
+  {
+   "en": "Finland",
+   "uz": "Finlandiya"
+  },
+  {
+   "en": "often",
+   "uz": "ko'pincha"
+  },
+  {
+   "en": "nearly always",
+   "uz": "deyarli doim"
+  },
+  {
+   "en": "suddenly",
+   "uz": "to'satdan"
+  },
+  {
+   "en": "to come out (the sun)",
+   "uz": "chiqmoq (quyosh)"
+  },
+  {
+   "en": "favourite",
+   "uz": "sevimli"
+  },
+  {
+   "en": "to have fun",
+   "uz": "zavqlanmoq"
+  },
+  {
+   "en": "to appear",
+   "uz": "ko'rinmoq, paydo bo'lmoq"
+  },
+  {
+   "en": "not ... at all",
+   "uz": "umuman ...emas"
+  },
+  {
+   "en": "most of",
+   "uz": "ko'p qismi"
+  },
+  {
+   "en": "to go skiing",
+   "uz": "chang'i uchgani bormoq"
+  },
+  {
+   "en": "to go for a walk",
+   "uz": "sayrga chiqmoq"
+  },
+  {
+   "en": "a paragraph",
+   "uz": "xatboshi"
+  },
+  {
+   "en": "hardly ever",
+   "uz": "deyarli hech qachon"
   }
  ]
 }
