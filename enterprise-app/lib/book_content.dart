@@ -204,8 +204,9 @@ class BookExercise {
 
   /// To'liq manzil: "1-unit · Coursebook · 7-bet · Ex. 5".
   /// O'quvchi kitobning qayerini ochishini aniq biladi.
-  String locationLabel(int unit) =>
-      '$unit-unit · $sourceLabel · ${ref.isEmpty ? "mashq" : "Ex. $ref"}';
+  /// [unitLabel] — "1-unit" yoki hikoya betlari uchun "1-epizod".
+  String locationLabel(String unitLabel) =>
+      '$unitLabel · $sourceLabel · ${ref.isEmpty ? "mashq" : "Ex. $ref"}';
 }
 
 /// Grammatika qoidasi (erkin tuzilma — asset'dan qanday kelsa shunday).
@@ -317,6 +318,9 @@ class BookPage {
   final String book;
   final int bookPage;
   final int unit;
+
+  /// "1-unit" yoki hikoya betlari uchun "1-epizod".
+  final String unitLabel;
   final List<BookSection> sections;
 
   const BookPage({
@@ -324,6 +328,7 @@ class BookPage {
     required this.bookPage,
     required this.unit,
     required this.sections,
+    this.unitLabel = '',
   });
 
   String get bookLabel => _bookLabel[book] ?? book;
@@ -332,7 +337,8 @@ class BookPage {
   String get label => '$bookLabel · $bookPage-bet';
 
   /// "1-unit · Coursebook · 7-bet"
-  String get fullLabel => '$unit-unit · $label';
+  String get fullLabel =>
+      '${unitLabel.isNotEmpty ? unitLabel : "$unit-unit"} · $label';
 
   List<BookExercise> get exercises =>
       [for (final s in sections) ...s.exercises];
@@ -428,6 +434,11 @@ class VocabEntry {
 /// Kitobning bitta uniti — uchala kitobdan yig'ilgan.
 class BookUnit {
   final int unit;
+
+  /// Ko'rsatiladigan yorliq: "3-unit" yoki "1-epizod".
+  /// Hikoya (Episode) betlari unit raqamiga ega emas — ular unitlar
+  /// orasida turadi, shuning uchun raqam o'rniga yorliq ishlatiladi.
+  final String label;
   final String title;
   final int module;
   final List<BookSection> sections;
@@ -443,10 +454,15 @@ class BookUnit {
     required this.wordFormation,
     required this.sentencePatterns,
     required this.vocabulary,
+    this.label = '',
   });
+
+  /// Ko'rinadigan yorliq. Asset'da bo'lmasa — unit raqamidan tuziladi.
+  String get displayLabel => label.isNotEmpty ? label : '$unit-unit';
 
   factory BookUnit.fromJson(Map<String, dynamic> j) => BookUnit(
         unit: (j['unit'] as num?)?.toInt() ?? 0,
+        label: j['label'] as String? ?? '',
         title: j['title'] as String? ?? '',
         module: (j['module'] as num?)?.toInt() ?? 0,
         sections: (j['sections'] as List? ?? [])
@@ -483,6 +499,7 @@ class BookUnit {
           book: e.value.first.book,
           bookPage: e.value.first.bookPage,
           unit: unit,
+          unitLabel: displayLabel,
           sections: e.value,
         ),
     ];
@@ -524,6 +541,15 @@ class UnitBrief {
   final int unit, module, sections, exercises, tasks;
   final String title;
 
+  /// "3-unit" yoki "1-epizod". Bo'sh bo'lsa unit raqamidan tuziladi.
+  final String label;
+
+  /// Hikoya beti (Episode) — unit emas, unitlar orasida turadi.
+  final bool isEpisode;
+
+  /// Ro'yxatdagi dumaloq belgi ichidagi qisqa matn: "3" yoki "E1".
+  final String badge;
+
   const UnitBrief({
     required this.unit,
     required this.title,
@@ -531,11 +557,20 @@ class UnitBrief {
     required this.sections,
     required this.exercises,
     required this.tasks,
+    this.label = '',
+    this.badge = '',
+    this.isEpisode = false,
   });
+
+  String get displayLabel => label.isNotEmpty ? label : '$unit-unit';
+  String get displayBadge => badge.isNotEmpty ? badge : '$unit';
 
   factory UnitBrief.fromJson(Map<String, dynamic> j) => UnitBrief(
         unit: (j['unit'] as num?)?.toInt() ?? 0,
         title: j['title'] as String? ?? '',
+        label: j['label'] as String? ?? '',
+        badge: j['badge'] as String? ?? '',
+        isEpisode: j['isEpisode'] as bool? ?? false,
         module: (j['module'] as num?)?.toInt() ?? 0,
         sections: (j['sections'] as num?)?.toInt() ?? 0,
         exercises: (j['exercises'] as num?)?.toInt() ?? 0,

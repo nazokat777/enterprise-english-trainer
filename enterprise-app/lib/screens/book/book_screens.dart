@@ -107,15 +107,20 @@ class _UnitCard extends StatelessWidget {
                   width: 52,
                   height: 52,
                   decoration: BoxDecoration(
-                    color: AppColors.brandPurple.withValues(alpha: 0.12),
+                    color: (brief.isEpisode
+                            ? AppColors.actionBlue
+                            : AppColors.brandPurple)
+                        .withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(AppRadius.md),
                   ),
                   child: Center(
-                    child: Text('${brief.unit}',
-                        style: const TextStyle(
-                            fontSize: 22,
+                    child: Text(brief.displayBadge,
+                        style: TextStyle(
+                            fontSize: brief.isEpisode ? 17 : 22,
                             fontWeight: FontWeight.w800,
-                            color: AppColors.brandPurple)),
+                            color: brief.isEpisode
+                                ? AppColors.actionBlue
+                                : AppColors.brandPurple)),
                   ),
                 ),
                 const SizedBox(width: 14),
@@ -123,7 +128,7 @@ class _UnitCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Unit ${brief.unit} — ${brief.title}',
+                      Text('${brief.displayLabel} — ${brief.title}',
                           style: const TextStyle(
                               fontWeight: FontWeight.w800, fontSize: 16)),
                       const SizedBox(height: 3),
@@ -154,7 +159,7 @@ class BookUnitScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final groups = unit.groupedSections();
     return Scaffold(
-      appBar: AppBar(title: Text('Unit ${unit.unit} — ${unit.title}')),
+      appBar: AppBar(title: Text('${unit.displayLabel} — ${unit.title}')),
       body: AnimatedBuilder(
         animation: progress,
         builder: (context, _) => ListView(
@@ -429,7 +434,7 @@ class BookPagesScreen extends StatelessWidget {
       byBook.putIfAbsent(p.bookLabel, () => []).add(p);
     }
     return Scaffold(
-      appBar: AppBar(title: Text('Unit ${unit.unit} — betlar')),
+      appBar: AppBar(title: Text('${unit.displayLabel} — betlar')),
       body: AnimatedBuilder(
         animation: progress,
         builder: (context, _) => ListView(
@@ -657,7 +662,7 @@ class BookPageScreen extends StatelessWidget {
           ),
         ),
       for (final e in s.exercises)
-        _ExerciseTile(exercise: e, section: s, unit: page.unit),
+        _ExerciseTile(exercise: e, section: s, unitLabel: page.unitLabel),
       const SizedBox(height: 12),
     ];
   }
@@ -746,13 +751,14 @@ class _ExerciseTile extends StatelessWidget {
   final BookExercise exercise;
   final BookSection section;
 
-  /// Unit raqami — to'liq manzil belgisi uchun ("1-unit · Coursebook · 7-bet").
-  final int unit;
+  /// Unit yorlig'i — to'liq manzil uchun ("1-unit · Coursebook · 7-bet").
+  /// Hikoya betlarida "1-epizod" bo'ladi.
+  final String unitLabel;
 
   const _ExerciseTile({
     required this.exercise,
     required this.section,
-    this.unit = 0,
+    this.unitLabel = '',
   });
 
   ({IconData icon, Color color, String label}) get _kindInfo =>
@@ -797,7 +803,7 @@ class _ExerciseTile extends StatelessWidget {
               builder: (_) => ExercisePlayer(
                 exercise: exercise,
                 sectionTitle: section.titleUz,
-                unit: unit,
+                unitLabel: unitLabel,
               ),
             ),
           ),
@@ -863,8 +869,8 @@ class _ExerciseTile extends StatelessWidget {
                       const SizedBox(height: 4),
                       // To'liq manzil — qaysi kitob, qaysi bet, qaysi mashq.
                       Text(
-                        unit > 0
-                            ? exercise.locationLabel(unit)
+                        unitLabel.isNotEmpty
+                            ? exercise.locationLabel(unitLabel)
                             : exercise.sourceLabel,
                         style: const TextStyle(
                             fontSize: 11,

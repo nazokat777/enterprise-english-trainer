@@ -18,14 +18,16 @@ class ExercisePlayer extends StatefulWidget {
   final BookExercise exercise;
   final String sectionTitle;
 
-  /// Unit raqami — sarlavhada to'liq manzil ko'rsatish uchun.
-  final int unit;
+  /// Unit yorlig'i — sarlavhada to'liq manzil ko'rsatish uchun
+  /// ("3-unit" yoki hikoya betlarida "1-epizod"). Bo'sh bo'lsa
+  /// faqat kitob va bet ko'rsatiladi.
+  final String unitLabel;
 
   const ExercisePlayer({
     super.key,
     required this.exercise,
     required this.sectionTitle,
-    this.unit = 0,
+    this.unitLabel = '',
   });
 
   @override
@@ -95,8 +97,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                 style: const TextStyle(fontSize: 17)),
             // Qaysi kitobning qaysi beti — o'quvchi adashmasin.
             Text(
-              widget.unit > 0
-                  ? ex.locationLabel(widget.unit)
+              widget.unitLabel.isNotEmpty
+                  ? ex.locationLabel(widget.unitLabel)
                   : ex.sourceLabel,
               style: const TextStyle(
                   fontSize: 11.5,

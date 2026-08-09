@@ -628,21 +628,15 @@ def _dispatch(t, ex, items):
             study(x.get("en", ""), x.get("uz", ""), x.get("hintUz", "")) for x in src
         ]
 
-    if t == "dialogue_drill":
+    if t in ("dialogue_drill", "listen_act_out", "guessing_game"):
+        # Dialog qatorlari `example` yoki `lines` da, gapiruvchi esa
+        # `speaker` yoki `who` da bo'lishi mumkin — ikkalasini ham qabul
+        # qilamiz, aks holda mashq jimgina bo'sh chiqadi.
+        src = ex.get("example") or ex.get("lines") or []
         return "study", [
-            study(f"{l['speaker']}: {l['en']}", l.get("uz", ""))
-            for l in ex.get("example", [])
-        ]
-
-    if t == "listen_act_out":
-        return "study", [
-            study(f"{l['who']}: {l['en']}", l.get("uz", "")) for l in ex.get("lines", [])
-        ]
-
-    if t == "guessing_game":
-        return "study", [
-            study(f"{l['speaker']}: {l['en']}", l.get("uz", ""))
-            for l in ex.get("example", [])
+            study(f"{l.get('speaker') or l.get('who', '')}: {l['en']}",
+                  l.get("uz", ""))
+            for l in src if l.get("en")
         ]
 
     if t == "ask_answer_landmarks":
@@ -686,8 +680,36 @@ def _dispatch(t, ex, items):
 
 
 # ─────────────────────────── qurish ───────────────────────────
+def unit_label(page):
+    """Ekranda ko'rinadigan yorliq: "3-unit" yoki "1-epizod"."""
+    ep = page.get("episode")
+    return f"{ep}-epizod" if ep else f"{page['unit']}-unit"
+
+
+def unit_badge(page):
+    """Ro'yxatdagi dumaloq belgi: "3" yoki "E1"."""
+    ep = page.get("episode")
+    return f"E{ep}" if ep else str(page["unit"])
+
+
+def unit_order(page):
+    """Ro'yxatdagi tartib. Epizod o'zi tegishli unitdan KEYIN turadi."""
+    ep = page.get("episode")
+    if ep:
+        return page.get("afterUnit", 0) + 0.5
+    return float(page["unit"])
+
+
+
 def build_unit(pages):
-    """Bir unitning uchala kitobdagi sahifalarini bitta unitga yig'adi."""
+    """Bir unitning uchala kitobdagi sahifalarini bitta unitga yig'adi.
+
+    Kitobda unitlar orasida HIKOYA betlari ham bor ("Episode 1: The
+    Accident"). Ular unit emas — shuning uchun sahifa faylida `episode`
+    va `afterUnit` maydonlari beriladi. Ular `unit` sifatida 900+N
+    raqamini oladi (fayl nomi uchun), lekin ekranda "1-epizod" deb
+    ko'rsatiladi va ro'yxatda o'z joyida (afterUnit dan keyin) turadi.
+    """
     first = pages[0]
     sections, wf, sp, voc = [], [], [], []
     seen_voc = set()
@@ -735,6 +757,10 @@ def build_unit(pages):
 
     return {
         "unit": first["unit"],
+        "label": unit_label(first),
+        "badge": unit_badge(first),
+        "isEpisode": bool(first.get("episode")),
+        "order": unit_order(first),
         "title": first.get("unitTitle", ""),
         "module": first.get("module", 0),
         "sections": sections,
@@ -756,9 +782,14 @@ def main():
         return 1
 
     OUT.mkdir(parents=True, exist_ok=True)
+    built = []
+    for unit, pages in by_unit.items():
+        built.append((unit, build_unit(pages)))
+    # Ro'yxat tartibi: unit raqami bo'yicha, epizodlar o'z unitidan keyin.
+    built.sort(key=lambda x: x[1]["order"])
+
     index = []
-    for unit, pages in sorted(by_unit.items()):
-        u = build_unit(pages)
+    for unit, u in built:
         (OUT / f"unit_{unit}.json").write_text(
             json.dumps(u, ensure_ascii=False, indent=1), encoding="utf-8"
         )
@@ -770,13 +801,17 @@ def main():
                 tasks += len(e["tasks"])
         index.append({
             "unit": unit,
+            "label": u["label"],
+            "badge": u["badge"],
+            "isEpisode": u["isEpisode"],
+            "order": u["order"],
             "title": u["title"],
             "module": u["module"],
             "sections": len(u["sections"]),
             "exercises": sum(len(s["exercises"]) for s in u["sections"]),
             "tasks": tasks,
         })
-        print(f"Unit {unit} ({u['title']}): {len(u['sections'])} bo'lim, "
+        print(f"{u['label']} ({u['title']}): {len(u['sections'])} bo'lim, "
               f"{sum(len(s['exercises']) for s in u['sections'])} mashq, {tasks} band")
         print(f"    turlari: {dict(kinds)}")
 

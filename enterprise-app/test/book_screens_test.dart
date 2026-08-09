@@ -86,9 +86,27 @@ void main() {
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
       await t.pump();
 
-      expect(find.text('Unit 1 — Hi!'), findsOneWidget);
+      expect(find.text('1-unit — Hi!'), findsOneWidget);
       expect(find.text('bo\'lim'), findsOneWidget);
       expect(find.text('mashq'), findsOneWidget);
+    });
+
+    testWidgets('hikoya beti "epizod" deb belgilanadi', (t) async {
+      // Kitobda unitlar orasida "Episode" hikoya betlari bor. Ular unit
+      // raqamiga ega emas — yorliq asset'dan keladi.
+      final ep = BookUnit.fromJson({
+        ...json.decode(_unitJson) as Map<String, dynamic>,
+        'unit': 901,
+        'label': '1-epizod',
+        'title': 'The Loch Ness Monster',
+      });
+      expect(ep.displayLabel, '1-epizod');
+      expect(ep.pages().first.fullLabel, startsWith('1-epizod · '));
+
+      await t.pumpWidget(_wrap(BookUnitScreen(unit: ep)));
+      await t.pump();
+      expect(find.text('1-epizod — The Loch Ness Monster'), findsOneWidget);
+      expect(find.textContaining('901'), findsNothing);
     });
 
     testWidgets('bo\'limlar turi bo\'yicha guruhlanadi', (t) async {
