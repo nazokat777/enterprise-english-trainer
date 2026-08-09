@@ -1,0 +1,1186 @@
+{
+ "unit": 6,
+ "label": "6-unit",
+ "badge": "6",
+ "isExtra": false,
+ "order": 6.0,
+ "title": "Birds of a Feather!",
+ "module": 2,
+ "sections": [
+  {
+   "id": "u6-coursebook-40-0",
+   "kind": "lead_in",
+   "title": "Lead-in",
+   "titleUz": "Kirish",
+   "book": "coursebook",
+   "bookPage": 40,
+   "exercises": [
+    {
+     "ref": "1",
+     "instructionEn": "Look at the pictures and match them to the animals in the list.",
+     "instructionUz": "Rasmlarga qarang va ularni ro'yxatdagi hayvonlarga moslang.",
+     "explanationUz": "UNIT MAVZUSI — HAYVONLAR.\n\nSarlavha: 'Birds of a Feather!'\nBu maqolning qisqartmasi: 'Birds of a feather flock together'\n  so'zma-so'z: bir xil patli qushlar birga uchadi\n  ma'nosi: o'xshash odamlar birga bo'ladi\n  o'zbekchada: 'Qush qushi bilan, quloq quloq bilan'\n\nRO'YXAT: dolphin, lion, parrot, penguins\n\nRASMLAR:\n  A — suvdan sakrab chiqayotgan kulrang jonivor\n  B — qizil, sariq va ko'k patli qush\n  C — qora-oq rangli, tik turgan qushlar guruhi\n  D — sariq yeli bor katta mushuksimon hayvon",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 40,
+     "bookRef": "Coursebook, 40-bet, 1-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "Picture A — a grey sea animal jumping out of the waves",
+       "answer": "dolphin",
+       "promptUz": "A-rasm: to'lqindan sakrab chiqayotgan kulrang dengiz jonivori",
+       "options": [
+        "dolphin",
+        "parrot",
+        "penguins",
+        "lion"
+       ],
+       "speak": "Picture A — a grey sea animal jumping out of the waves"
+      },
+      {
+       "prompt": "Picture B — a bird with bright red, yellow and blue feathers and a long tail",
+       "answer": "parrot",
+       "promptUz": "B-rasm: yorqin qizil, sariq va ko'k patli, uzun dumli qush",
+       "options": [
+        "dolphin",
+        "parrot",
+        "penguins",
+        "lion"
+       ],
+       "speak": "Picture B — a bird with bright red, yellow and blue feathers and a long tail"
+      },
+      {
+       "prompt": "Picture C — a group of black and white birds standing upright on the ice",
+       "answer": "penguins",
+       "promptUz": "C-rasm: muz ustida tik turgan qora-oq qushlar guruhi",
+       "options": [
+        "dolphin",
+        "parrot",
+        "penguins",
+        "lion"
+       ],
+       "speak": "Picture C — a group of black and white birds standing upright on the ice"
+      },
+      {
+       "prompt": "Picture D — a large golden cat with a thick mane around its head",
+       "answer": "lion",
+       "promptUz": "D-rasm: boshi atrofida qalin yeli bor katta oltinrang mushuksimon hayvon",
+       "options": [
+        "dolphin",
+        "parrot",
+        "penguins",
+        "lion"
+       ],
+       "speak": "Picture D — a large golden cat with a thick mane around its head"
+      }
+     ]
+    },
+    {
+     "ref": "1b",
+     "instructionEn": "Which of them are birds? mammals? Which of them have fur, fins, a tail, skin, feathers, wings, a mane, legs? Which of them can fly, run, swim?",
+     "instructionUz": "Ulardan qaysilari qush? sutemizuvchi? Qaysilarida jun, suzgich, dum, teri, pat, qanot, yol, oyoq bor? Qaysilari ucha, yugura, suza oladi?",
+     "explanationUz": "HAYVON TANASI QISMLARI:\n  fur      — jun (sutemizuvchilarda)\n  fins     — suzgichlar (baliq va delfinda)\n  a tail   — dum\n  skin     — teri (junsiz)\n  feathers — patlar (qushlarda)\n  wings    — qanotlar\n  a mane   — yol (sherning bo'ynidagi soch)\n  legs     — oyoqlar\n\nIKKI GURUH HAYVON:\n  birds (qushlar)      — pat va qanoti bor, tuxum qo'yadi\n  mammals (sutemizuvchilar) — bola tug'adi va sut bilan boqadi\n\nQIZIQ FAKTLAR:\n  • Delfin — BALIQ EMAS, sutemizuvchi!\n  • Pingvin — QUSH, lekin UCHA OLMAYDI!\n  • Delfinning OYOG'I YO'Q va JUNI YO'Q — terisi bor.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 40,
+     "bookRef": "Coursebook, 40-bet, 1-mashq (savollar)",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "Which of them are birds?",
+       "answer": "parrot and penguins",
+       "promptUz": "Qaysilari qush?",
+       "options": [
+        "parrot and penguins",
+        "dolphin and lion",
+        "dolphin and parrot",
+        "lion and penguins"
+       ],
+       "whyUz": "Qushlarda pat va qanot bor, tuxum qo'yadi. To'tiqush va pingvin — qush."
+      },
+      {
+       "prompt": "Which of them are mammals?",
+       "answer": "dolphin and lion",
+       "promptUz": "Qaysilari sutemizuvchi?",
+       "options": [
+        "dolphin and lion",
+        "parrot and penguins",
+        "dolphin and parrot",
+        "lion and penguins"
+       ],
+       "whyUz": "Sutemizuvchilar bola tug'adi va sut bilan boqadi. Delfin BALIQ EMAS — sutemizuvchi!"
+      },
+      {
+       "prompt": "Which of them have fur?",
+       "answer": "the lion",
+       "promptUz": "Qaysilarida jun bor?",
+       "options": [
+        "the lion",
+        "the dolphin",
+        "the parrot",
+        "the penguins"
+       ],
+       "whyUz": "'fur' = jun. Faqat sherda. Delfinda teri (skin) bor, jun yo'q."
+      },
+      {
+       "prompt": "Which of them have fins?",
+       "answer": "the dolphin",
+       "promptUz": "Qaysilarida suzgich bor?",
+       "options": [
+        "the dolphin",
+        "the lion",
+        "the parrot",
+        "the penguins"
+       ],
+       "whyUz": "'fins' = suzgichlar. Suzishga yordam beradi."
+      },
+      {
+       "prompt": "Which of them have a tail?",
+       "answer": "all of them",
+       "promptUz": "Qaysilarida dum bor?",
+       "options": [
+        "all of them",
+        "only the lion",
+        "only the dolphin",
+        "only the birds"
+       ],
+       "whyUz": "To'rttasida ham dum bor: delfin, sher, to'tiqush, pingvin."
+      },
+      {
+       "prompt": "Which of them have skin (without fur)?",
+       "answer": "the dolphin",
+       "promptUz": "Qaysilarida (junsiz) teri bor?",
+       "options": [
+        "the dolphin",
+        "the lion",
+        "the parrot",
+        "the penguins"
+       ],
+       "whyUz": "Matnda: 'They've got grey skin'. Delfinda jun yo'q — silliq teri."
+      },
+      {
+       "prompt": "Which of them have feathers?",
+       "answer": "the parrot and the penguins",
+       "promptUz": "Qaysilarida pat bor?",
+       "options": [
+        "the parrot and the penguins",
+        "the dolphin",
+        "the lion",
+        "the dolphin and the lion"
+       ],
+       "whyUz": "'feathers' = patlar. Faqat qushlarda bo'ladi."
+      },
+      {
+       "prompt": "Which of them have wings?",
+       "answer": "the parrot and the penguins",
+       "promptUz": "Qaysilarida qanot bor?",
+       "options": [
+        "the parrot and the penguins",
+        "the dolphin",
+        "the lion",
+        "only the parrot"
+       ],
+       "whyUz": "Pingvinda ham qanot BOR, lekin u ucha olmaydi — qanotlari suzish uchun."
+      },
+      {
+       "prompt": "Which of them have a mane?",
+       "answer": "the lion",
+       "promptUz": "Qaysilarida yol bor?",
+       "options": [
+        "the lion",
+        "the dolphin",
+        "the parrot",
+        "the penguins"
+       ],
+       "whyUz": "'a mane' = yol (bo'yin sochi). Faqat ERKAK sherda bo'ladi."
+      },
+      {
+       "prompt": "Which of them have legs?",
+       "answer": "the lion, the parrot and the penguins",
+       "promptUz": "Qaysilarida oyoq bor?",
+       "options": [
+        "the lion, the parrot and the penguins",
+        "all of them",
+        "only the lion",
+        "the dolphin and the lion"
+       ],
+       "whyUz": "Delfinda oyoq YO'Q. Matnda: 'They haven't got legs'."
+      },
+      {
+       "prompt": "Which of them can fly?",
+       "answer": "the parrot",
+       "promptUz": "Qaysilari ucha oladi?",
+       "options": [
+        "the parrot",
+        "the parrot and the penguins",
+        "the penguins",
+        "none of them"
+       ],
+       "whyUz": "Pingvin qush, lekin UCHA OLMAYDI. Matnda: 'they can't fly!'"
+      },
+      {
+       "prompt": "Which of them can run?",
+       "answer": "the lion",
+       "promptUz": "Qaysilari yugura oladi?",
+       "options": [
+        "the lion",
+        "the dolphin",
+        "the parrot",
+        "the penguins"
+       ],
+       "whyUz": "Sher tez yuguradi. Pingvin yura oladi, lekin yugurmaydi."
+      },
+      {
+       "prompt": "Which of them can swim?",
+       "answer": "the dolphin and the penguins",
+       "promptUz": "Qaysilari suza oladi?",
+       "options": [
+        "the dolphin and the penguins",
+        "only the dolphin",
+        "the lion and the dolphin",
+        "all of them"
+       ],
+       "whyUz": "Ikkalasi ham juda yaxshi suzadi. Matnda: 'They can swim very well'."
+      }
+     ]
+    },
+    {
+     "ref": "2",
+     "instructionEn": "First, read these sentences, then listen and mark them as T (true) or F (false).",
+     "instructionUz": "Avval bu gaplarni o'qing, so'ng tinglab, T (to'g'ri) yoki F (noto'g'ri) deb belgilang.",
+     "explanationUz": "Har bir gapni matndagi aniq ma'lumot bilan solishtiring.\n\nCHALG'ITUVCHI JUFTLIKLAR:\n  fur ↔ skin        (delfinda TERI, jun emas)\n  wings — pingvinda BOR, lekin ucha olmaydi\n  ten ↔ twenty years",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 40,
+     "bookRef": "Coursebook, 40-bet, 2-mashq",
+     "audioNoteUz": "Kitobda audio bor. Barcha javoblarni 3-mashqdagi matnlardan ham topish mumkin.",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "1  Dolphins are mammals.",
+       "answer": "T",
+       "options": [
+        "T",
+        "F"
+       ],
+       "whyUz": "TO'G'RI. Matnning birinchi gapi: 'Dolphins are mammals.'",
+       "speak": "1  Dolphins are mammals."
+      },
+      {
+       "prompt": "2  Dolphins live in water.",
+       "answer": "T",
+       "options": [
+        "T",
+        "F"
+       ],
+       "whyUz": "TO'G'RI. Matnda: 'Dolphins are not fish, but they live in water.'",
+       "speak": "2  Dolphins live in water."
+      },
+      {
+       "prompt": "3  Dolphins have got grey fur.",
+       "answer": "F",
+       "options": [
+        "T",
+        "F"
+       ],
+       "whyUz": "NOTO'G'RI. Matnda 'grey SKIN' (teri), 'fur' (jun) EMAS. Delfinda jun yo'q.",
+       "speak": "3  Dolphins have got grey fur."
+      },
+      {
+       "prompt": "4  Dolphins eat fish.",
+       "answer": "T",
+       "options": [
+        "T",
+        "F"
+       ],
+       "whyUz": "TO'G'RI. Matnda: 'they eat fish'.",
+       "speak": "4  Dolphins eat fish."
+      },
+      {
+       "prompt": "5  Penguins haven't got wings.",
+       "answer": "F",
+       "options": [
+        "T",
+        "F"
+       ],
+       "whyUz": "NOTO'G'RI. Matnda: 'they've got wings'. Qanoti BOR, lekin ucha olmaydi.",
+       "speak": "5  Penguins haven't got wings."
+      },
+      {
+       "prompt": "6  Penguins can fly.",
+       "answer": "F",
+       "options": [
+        "T",
+        "F"
+       ],
+       "whyUz": "NOTO'G'RI. Matnda: 'they CAN'T fly!' Bu pingvinni g'ayrioddiy qush qiladi.",
+       "speak": "6  Penguins can fly."
+      },
+      {
+       "prompt": "7  Penguins live in Antarctica.",
+       "answer": "T",
+       "options": [
+        "T",
+        "F"
+       ],
+       "whyUz": "TO'G'RI. Matnda: 'Penguins live on the ice of Antarctica'.",
+       "speak": "7  Penguins live in Antarctica."
+      },
+      {
+       "prompt": "8  Penguins live for about ten years.",
+       "answer": "F",
+       "options": [
+        "T",
+        "F"
+       ],
+       "whyUz": "NOTO'G'RI. Matnda: 'about TWENTY years'. O'n emas, yigirma.",
+       "speak": "8  Penguins live for about ten years."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6-coursebook-40-1",
+   "kind": "reading",
+   "title": "Reading — dolphins and penguins",
+   "titleUz": "O'qish — delfinlar va pingvinlar",
+   "book": "coursebook",
+   "bookPage": 40,
+   "exercises": [
+    {
+     "ref": "3-delfin",
+     "instructionEn": "Read the text about dolphins.",
+     "instructionUz": "Delfinlar haqidagi matnni o'qing.",
+     "explanationUz": "MATN TUZILISHI (hayvon tavsifining standart tartibi):\n  1) turi (sutemizuvchi / qush)\n  2) tanasi (nima bor, nima yo'q)\n  3) og'irligi\n  4) xarakteri va qobiliyati\n  5) qayerda yashaydi\n  6) nima yeydi\n  7) qancha yashaydi\n\nBu tartib 6-unitda o'z hayvoningiz haqida yozganda ham kerak.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 40,
+     "bookRef": "Coursebook, 40-bet, 3-mashq (delfinlar matni)",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "Dolphins are mammals.",
+       "uz": "Delfinlar — sutemizuvchilar.",
+       "note": "'a mammal' = sutemizuvchi. Ko'plikda 'mammals'."
+      },
+      {
+       "en": "They have babies and feed them on milk.",
+       "uz": "Ular bola tug'adi va ularni sut bilan boqadi.",
+       "note": "Bu SUTEMIZUVCHINING ta'rifi. 'feed somebody ON something' — 'on' predlogi bilan."
+      },
+      {
+       "en": "Dolphins are not fish, but they live in water.",
+       "uz": "Delfinlar baliq emas, lekin suvda yashaydi.",
+       "note": "Eng ko'p chalkashadigan fakt! 'fish' — ko'plikda ham 'fish'."
+      },
+      {
+       "en": "They can swim very well.",
+       "uz": "Ular juda yaxshi suza oladi.",
+       "note": "'can' + fe'l (asos shakli). 'very well' — juda yaxshi."
+      },
+      {
+       "en": "They haven't got legs.",
+       "uz": "Ularning oyog'i yo'q.",
+       "note": "'have got' inkori. Ko'plik ega → HAVEN'T."
+      },
+      {
+       "en": "They've got grey skin and a big smile.",
+       "uz": "Ularning kulrang terisi va katta tabassumi bor.",
+       "note": "QALIN SO'Z: smile = tabassum. Delfinning og'zi tabassumga o'xshaydi."
+      },
+      {
+       "en": "They've also got fins and a tail to help them swim.",
+       "uz": "Yana suzishga yordam beradigan suzgichlari va dumi bor.",
+       "note": "'to help them swim' — maqsad. 'help somebody DO' — 'to' KERAK EMAS."
+      },
+      {
+       "en": "They weigh from seventy to five hundred kilos.",
+       "uz": "Ular yetmishdan besh yuz kilogrammgacha og'irlikda.",
+       "note": "QALIN SO'Z: weigh = og'irlikda bo'lmoq. O'qilishi /weɪ/ — 'gh' o'qilmaydi!"
+      },
+      {
+       "en": "Dolphins are very intelligent animals.",
+       "uz": "Delfinlar juda aqlli hayvonlar.",
+       "note": "QALIN SO'Z: intelligent = aqlli. 'clever' bilan bir xil, lekin kuchliroq."
+      },
+      {
+       "en": "They can easily learn how to play games and are friendly to people.",
+       "uz": "Ular o'yin o'ynashni oson o'rganadi va odamlarga do'stona munosabatda bo'ladi.",
+       "note": "QALIN SO'ZLAR: easily = oson; friendly = do'stona.\n'friendly TO somebody' — predlog shart."
+      },
+      {
+       "en": "Dolphins live in warm seas in many different parts of the world.",
+       "uz": "Delfinlar dunyoning ko'p turli qismlaridagi iliq dengizlarda yashaydi.",
+       "note": "QALIN SO'ZLAR: warm seas = iliq dengizlar; parts of the world = dunyo qismlari."
+      },
+      {
+       "en": "They live in small groups and they eat fish.",
+       "uz": "Ular kichik guruhlarda yashaydi va baliq yeydi.",
+       "note": "QALIN SO'Z: groups = guruhlar. 'live IN groups' — predlog shart."
+      },
+      {
+       "en": "They live for about fifty years.",
+       "uz": "Ular taxminan ellik yil yashaydi.",
+       "note": "'live FOR + davomiylik' — 'for' shart. 'about' = taxminan."
+      }
+     ]
+    },
+    {
+     "ref": "3-pingvin",
+     "instructionEn": "Read the text about penguins.",
+     "instructionUz": "Pingvinlar haqidagi matnni o'qing.",
+     "explanationUz": "PINGVIN — G'AYRIODDIY QUSH.\n\nU qushning barcha belgilariga ega:\n  tuxum qo'yadi (lay eggs)\n  qanoti bor (wings)\n  pati bor (feathers)\n\nLEKIN UCHA OLMAYDI! Buning o'rniga juda yaxshi suzadi.\nQanotlari suv ostida 'eshkak' vazifasini bajaradi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 40,
+     "bookRef": "Coursebook, 40-bet, 3-mashq (pingvinlar matni)",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "Penguins lay eggs and they've got wings, so they are like other birds, but they can't fly!",
+       "uz": "Pingvinlar tuxum qo'yadi va qanotlari bor, shuning uchun ular boshqa qushlarga o'xshaydi, lekin ucha olmaydi!",
+       "note": "QALIN SO'ZLAR: lay eggs = tuxum qo'ymoq.\n'so' = shuning uchun. 'like other birds' = boshqa qushlar kabi."
+      },
+      {
+       "en": "They can swim very well, though.",
+       "uz": "Lekin ular juda yaxshi suza oladi.",
+       "note": "'though' gap OXIRIDA — 'lekin, esa' ma'nosida."
+      },
+      {
+       "en": "They are black and white, and they've got small wings, very short legs and a short tail.",
+       "uz": "Ular qora va oq rangda, kichik qanotlari, juda kalta oyoqlari va kalta dumi bor.",
+       "note": "Rang: 'black and white' — tartib o'zgarmaydi."
+      },
+      {
+       "en": "They've also got thick feathers to keep them warm in cold water.",
+       "uz": "Yana sovuq suvda issiq saqlash uchun qalin patlari bor.",
+       "note": "QALIN SO'ZLAR: thick = qalin; warm = issiq; cold water = sovuq suv.\n'keep somebody warm' = issiq saqlamoq."
+      },
+      {
+       "en": "They weigh about twenty kilos.",
+       "uz": "Ular taxminan yigirma kilogramm keladi.",
+       "note": "Delfin 70–500 kg, pingvin esa atigi 20 kg."
+      },
+      {
+       "en": "Penguins look funny when they walk.",
+       "uz": "Pingvinlar yurganda kulgili ko'rinadi.",
+       "note": "QALIN SO'Z: funny = kulgili. 'look' + sifat = ...ko'rinadi."
+      },
+      {
+       "en": "However, when they are in the water, they swim like fish.",
+       "uz": "Ammo suvda bo'lganda ular baliqdek suzadi.",
+       "note": "'However' = ammo (gap boshida, vergul bilan).\n'like fish' = baliq kabi."
+      },
+      {
+       "en": "Penguins live on the ice of Antarctica and in the sea around it.",
+       "uz": "Pingvinlar Antarktida muzida va uning atrofidagi dengizda yashaydi.",
+       "note": "QALIN SO'Z: ice = muz. 'ON the ice' — yuza → ON. 'around' = atrofida."
+      },
+      {
+       "en": "They live in big groups and they eat fish.",
+       "uz": "Ular katta guruhlarda yashaydi va baliq yeydi.",
+       "note": "Delfin KICHIK guruhlarda, pingvin KATTA guruhlarda."
+      },
+      {
+       "en": "They live for about twenty years.",
+       "uz": "Ular taxminan yigirma yil yashaydi.",
+       "note": "Delfin 50 yil, pingvin 20 yil."
+      }
+     ]
+    },
+    {
+     "ref": "3a",
+     "instructionEn": "Find three ways that dolphins are like penguins.",
+     "instructionUz": "Delfinlar pingvinlarga qanday uch jihatdan o'xshashligini toping.",
+     "explanationUz": "IKKI MATNNI SOLISHTIRING va O'XSHASH faktlarni toping.\n\nO'XSHASHLIKNI IFODALASH:\n  Both dolphins and penguins + fe'l (ko'plik, -s YO'Q)\n  = Delfinlar ham, pingvinlar ham ...\n\n  'both' = ikkalasi ham. Ega oldida turadi.\n\nMATNLARDA BIR XIL AYTILGAN GAPLAR:\n  'They can swim very well.'  — ikkala matnda ham\n  'They live in ... groups.'  — ikkala matnda ham\n  'They eat fish.'            — ikkala matnda ham",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 40,
+     "bookRef": "Coursebook, 40-bet, 3a-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1-o'xshashlik (suzish):",
+       "answer": "Both dolphins and penguins can swim very well.",
+       "whyUz": "Ikkala matnda ham 'They can swim very well' deyilgan."
+      },
+      {
+       "prompt": "2-o'xshashlik (yashash tarzi):",
+       "answer": "Both dolphins and penguins live in groups.",
+       "whyUz": "Delfin — 'small groups', pingvin — 'big groups'. Ikkalasi ham guruhda."
+      },
+      {
+       "prompt": "3-o'xshashlik (ovqat):",
+       "answer": "Both dolphins and penguins eat fish.",
+       "whyUz": "Ikkala matnda ham 'they eat fish' deyilgan."
+      },
+      {
+       "prompt": "Qo'shimcha o'xshashlik (tana):",
+       "answer": "Both dolphins and penguins have got a tail.",
+       "whyUz": "Delfin — 'a tail', pingvin — 'a short tail'."
+      },
+      {
+       "prompt": "Qo'shimcha o'xshashlik (joy):",
+       "answer": "Both dolphins and penguins live in or near the sea.",
+       "whyUz": "Delfin dengizda, pingvin muzda va dengizda."
+      }
+     ]
+    },
+    {
+     "ref": "3b",
+     "instructionEn": "Explain the words in bold.",
+     "instructionUz": "Qalin yozilgan so'zlarni tushuntiring.",
+     "explanationUz": "Ikki matndagi 14 ta qalin so'z — Unit 6 ning asosiy lug'ati.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 40,
+     "bookRef": "Coursebook, 40-bet, 3b-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "tabassum",
+       "answer": "a smile",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "a smile",
+        "to weigh",
+        "intelligent",
+        "easily"
+       ],
+       "whyUz": "'a big smile' — delfinning og'zi tabassumga o'xshaydi."
+      },
+      {
+       "prompt": "og'irlikda bo'lmoq",
+       "answer": "to weigh",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "to weigh",
+        "a smile",
+        "intelligent",
+        "easily"
+       ],
+       "whyUz": "O'qilishi /weɪ/ — 'gh' o'qilmaydi! Ot shakli: weight (og'irlik)."
+      },
+      {
+       "prompt": "aqlli",
+       "answer": "intelligent",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "intelligent",
+        "a smile",
+        "to weigh",
+        "easily"
+       ],
+       "whyUz": "'clever' dan kuchliroq. Ot: intelligence (aql)."
+      },
+      {
+       "prompt": "oson, osonlik bilan",
+       "answer": "easily",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "easily",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'easy' (oson) + -ly = ravish. y → i."
+      },
+      {
+       "prompt": "do'stona",
+       "answer": "friendly",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "friendly",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'friendly TO somebody' — predlog shart. '-ly' bilan tugasa ham SIFAT."
+      },
+      {
+       "prompt": "iliq dengizlar",
+       "answer": "warm seas",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "warm seas",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'sea' → 'seas'. Delfin iliq suvda yashaydi."
+      },
+      {
+       "prompt": "dunyo qismlari",
+       "answer": "parts of the world",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "parts of the world",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'part OF' — predlog shart."
+      },
+      {
+       "prompt": "guruhlar",
+       "answer": "groups",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "groups",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'live IN groups' — guruhda yashamoq."
+      },
+      {
+       "prompt": "tuxum qo'ymoq",
+       "answer": "to lay eggs",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "to lay eggs",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'lay' — qo'ymoq (tuxum). 'lie' (yotmoq) bilan chalkashtirmang."
+      },
+      {
+       "prompt": "qalin",
+       "answer": "thick",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "thick",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'thick feathers' = qalin patlar. Aksi: thin (yupqa)."
+      },
+      {
+       "prompt": "issiq",
+       "answer": "warm",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "warm",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'keep them warm' = ularni issiq saqlaydi. 'hot' dan yumshoqroq."
+      },
+      {
+       "prompt": "sovuq suv",
+       "answer": "cold water",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "cold water",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'water' — sanalmaydigan ot."
+      },
+      {
+       "prompt": "kulgili",
+       "answer": "funny",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "funny",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'look funny' = kulgili ko'rinmoq. 'fun' (zavq) + -ny."
+      },
+      {
+       "prompt": "muz",
+       "answer": "ice",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "ice",
+        "a smile",
+        "to weigh",
+        "intelligent"
+       ],
+       "whyUz": "'ON the ice' — yuza → ON. Sanalmaydigan ot."
+      }
+     ]
+    },
+    {
+     "ref": "3c",
+     "instructionEn": "Read the texts again, and answer the questions.",
+     "instructionUz": "Matnlarni qayta o'qing va savollarga javob bering.",
+     "explanationUz": "SAVOL TURLARI:\n  What can ... do?  — qobiliyat (can bilan)\n  Where do ... live? — joy\n  How long do ... live? — davomiylik\n  Why ...?          — sabab (because bilan javob)\n  What have ... got? — egalik (have got bilan)\n  What do ... eat?  — ovqat\n\nJavobda 'They' bilan boshlang — hayvonlar ko'plikda.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 40,
+     "bookRef": "Coursebook, 40-bet, 3c-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  What can dolphins do very well?",
+       "answer": "They can swim very well.",
+       "whyUz": "Matnda: 'They can swim very well.' 'can' bilan savol → 'can' bilan javob.",
+       "speak": "1  What can dolphins do very well?"
+      },
+      {
+       "prompt": "2  Where do dolphins live?",
+       "answer": "They live in warm seas in many different parts of the world.",
+       "whyUz": "Joy savoli. Matndan to'liq javob.",
+       "speak": "2  Where do dolphins live?"
+      },
+      {
+       "prompt": "3  How long do dolphins live?",
+       "answer": "They live for about fifty years.",
+       "whyUz": "'How long' — davomiylik. 'live FOR' — 'for' shart.",
+       "speak": "3  How long do dolphins live?"
+      },
+      {
+       "prompt": "4  Why are penguins unusual birds?",
+       "answer": "Because they can't fly.",
+       "whyUz": "'Why' → 'Because'. Pingvin qush, lekin ucha olmaydi — bu g'ayrioddiy. 'unusual' = g'ayrioddiy.",
+       "speak": "4  Why are penguins unusual birds?"
+      },
+      {
+       "prompt": "5  What have penguins got to keep them warm?",
+       "answer": "They have got thick feathers.",
+       "whyUz": "'have got' bilan savol → 'have got' bilan javob. Matnda: 'thick feathers to keep them warm'.",
+       "speak": "5  What have penguins got to keep them warm?"
+      },
+      {
+       "prompt": "6  What do penguins eat?",
+       "answer": "They eat fish.",
+       "whyUz": "Matnda: 'they eat fish'. 'fish' — ko'plikda ham 'fish'.",
+       "speak": "6  What do penguins eat?"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "wordFormation": [
+  {
+   "ruleUz": "Hayvon tanasi — qaysi hayvonda nima bor",
+   "explanationUz": "Har bir so'z ma'lum hayvon guruhiga tegishli.",
+   "items": [
+    {
+     "base": "fur",
+     "baseUz": "jun",
+     "derived": "sutemizuvchilarda",
+     "derivedUz": "sher, mushuk, it",
+     "note": "sanalmaydigan ot"
+    },
+    {
+     "base": "feathers",
+     "baseUz": "patlar",
+     "derived": "qushlarda",
+     "derivedUz": "to'tiqush, pingvin",
+     "note": "doim ko'plikda"
+    },
+    {
+     "base": "skin",
+     "baseUz": "teri",
+     "derived": "junsiz hayvonlarda",
+     "derivedUz": "delfin, ilon",
+     "note": "odamda ham"
+    },
+    {
+     "base": "fins",
+     "baseUz": "suzgichlar",
+     "derived": "suvda yashovchilarda",
+     "derivedUz": "baliq, delfin",
+     "note": ""
+    },
+    {
+     "base": "wings",
+     "baseUz": "qanotlar",
+     "derived": "qushlar va hasharotlarda",
+     "derivedUz": "uchish uchun",
+     "note": "pingvinda suzish uchun"
+    },
+    {
+     "base": "a mane",
+     "baseUz": "yol",
+     "derived": "erkak sherda",
+     "derivedUz": "bo'yin sochi",
+     "note": "otda ham"
+    },
+    {
+     "base": "a tail",
+     "baseUz": "dum",
+     "derived": "ko'p hayvonda",
+     "derivedUz": "",
+     "note": "odamda yo'q"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "ruleUz": "Ot + -y → sifat",
+   "explanationUz": "Otga -y qo'shilsa, 'shu xususiyatga ega' ma'nosidagi sifat chiqadi.",
+   "items": [
+    {
+     "base": "fun",
+     "baseUz": "zavq",
+     "derived": "funny",
+     "derivedUz": "kulgili",
+     "note": "'n' ikkilanadi"
+    },
+    {
+     "base": "friend",
+     "baseUz": "do'st",
+     "derived": "friendly",
+     "derivedUz": "do'stona",
+     "note": "-ly (bu SIFAT, ravish emas!)"
+    },
+    {
+     "base": "ice",
+     "baseUz": "muz",
+     "derived": "icy",
+     "derivedUz": "muzli",
+     "note": "-e tushadi"
+    },
+    {
+     "base": "salt",
+     "baseUz": "tuz",
+     "derived": "salty",
+     "derivedUz": "sho'r",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "ruleUz": "Sifat + -ly → ravish",
+   "explanationUz": "Sifatga -ly qo'shilsa ravish chiqadi. LEKIN 'friendly' — istisno (u sifat).",
+   "items": [
+    {
+     "base": "easy",
+     "baseUz": "oson",
+     "derived": "easily",
+     "derivedUz": "osonlik bilan",
+     "note": "y → i + ly"
+    },
+    {
+     "base": "quick",
+     "baseUz": "tez",
+     "derived": "quickly",
+     "derivedUz": "tezda",
+     "note": ""
+    },
+    {
+     "base": "slow",
+     "baseUz": "sekin",
+     "derived": "slowly",
+     "derivedUz": "sekinlik bilan",
+     "note": ""
+    },
+    {
+     "base": "friend",
+     "baseUz": "do'st",
+     "derived": "friendly",
+     "derivedUz": "do'stona (SIFAT!)",
+     "note": "-ly bo'lsa ham ravish EMAS"
+    },
+    {
+     "base": "good",
+     "baseUz": "yaxshi",
+     "derived": "well",
+     "derivedUz": "yaxshi (ravish)",
+     "note": "NOTO'G'RI shakl"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "ruleUz": "Sanalmaydigan otlar (hayvon mavzusida)",
+   "explanationUz": "Bu otlarga -s qo'shilmaydi va fe'l birlikda bo'ladi.",
+   "items": [
+    {
+     "base": "milk",
+     "baseUz": "sut",
+     "derived": "feed them on milk",
+     "derivedUz": "sanalmaydi",
+     "note": "'milks' YO'Q"
+    },
+    {
+     "base": "water",
+     "baseUz": "suv",
+     "derived": "in cold water",
+     "derivedUz": "sanalmaydi",
+     "note": ""
+    },
+    {
+     "base": "ice",
+     "baseUz": "muz",
+     "derived": "on the ice",
+     "derivedUz": "sanalmaydi",
+     "note": ""
+    },
+    {
+     "base": "fur",
+     "baseUz": "jun",
+     "derived": "grey fur",
+     "derivedUz": "sanalmaydi",
+     "note": ""
+    },
+    {
+     "base": "fish",
+     "baseUz": "baliq",
+     "derived": "fish (ko'plikda ham)",
+     "derivedUz": "shakl o'zgarmaydi",
+     "note": "'fishes' — turli TURLARI uchun"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "ruleUz": "Talaffuz tuzoqlari",
+   "explanationUz": "Yozilishi va o'qilishi mos kelmaydigan so'zlar.",
+   "items": [
+    {
+     "base": "weigh",
+     "baseUz": "og'irlikda bo'lmoq",
+     "derived": "/weɪ/ — 'vey'",
+     "derivedUz": "'gh' O'QILMAYDI",
+     "note": "'way' bilan bir xil eshitiladi"
+    },
+    {
+     "base": "weight",
+     "baseUz": "og'irlik (ot)",
+     "derived": "/weɪt/ — 'veyt'",
+     "derivedUz": "'gh' o'qilmaydi",
+     "note": "'wait' bilan bir xil"
+    },
+    {
+     "base": "island",
+     "baseUz": "orol",
+     "derived": "/ˈaɪlənd/ — 'aylend'",
+     "derivedUz": "'s' o'qilmaydi",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 40
+  }
+ ],
+ "sentencePatterns": [
+  {
+   "formula": "X are mammals/birds. They + fe'l (ko'plik).",
+   "exampleEn": "Dolphins are mammals. They have babies and feed them on milk.",
+   "exampleUz": "Delfinlar — sutemizuvchilar. Ular bola tug'adi va sut bilan boqadi.",
+   "explanationUz": "Hayvonlar haqida umumiy gap KO'PLIKDA aytiladi —\nshuning uchun fe'l -s OLMAYDI.",
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "formula": "They've got + tana qismi. / They haven't got + tana qismi.",
+   "exampleEn": "They've got grey skin and a big smile. They haven't got legs.",
+   "exampleUz": "Ularning kulrang terisi va katta tabassumi bor. Oyog'i yo'q.",
+   "explanationUz": "'have got' — egalik. Ko'plik ega → HAVE/HAVEN'T got.",
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "formula": "They can / can't + fe'l (asos shakli).",
+   "exampleEn": "They can swim very well. They can't fly!",
+   "exampleUz": "Ular juda yaxshi suza oladi. Ucha olmaydi!",
+   "explanationUz": "'can' dan keyin fe'l ASOS shaklida — 'to' va '-s' YO'Q.",
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "formula": "They weigh + og'irlik. / They weigh FROM ... TO ...",
+   "exampleEn": "They weigh about twenty kilos. They weigh from seventy to five hundred kilos.",
+   "exampleUz": "Ular taxminan yigirma kilo keladi. Yetmishdan besh yuz kilogacha.",
+   "explanationUz": "'weigh' — og'irlikda bo'lmoq. Oraliq uchun 'from ... to ...'.",
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "formula": "They live IN + joy. They live FOR + davomiylik.",
+   "exampleEn": "They live in warm seas. They live for about fifty years.",
+   "exampleUz": "Ular iliq dengizlarda yashaydi. Taxminan ellik yil yashaydi.",
+   "explanationUz": "Joy uchun IN/ON, umr davomiyligi uchun FOR.",
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "formula": "They've got ... TO KEEP them warm.",
+   "exampleEn": "They've also got thick feathers to keep them warm in cold water.",
+   "exampleUz": "Yana sovuq suvda issiq saqlash uchun qalin patlari bor.",
+   "explanationUz": "'to + fe'l' — MAQSAD ('...ish uchun').\n'keep somebody warm' — issiq saqlamoq.",
+   "book": "coursebook",
+   "bookPage": 40
+  },
+  {
+   "formula": "BOTH X AND Y + fe'l (ko'plik).",
+   "exampleEn": "Both dolphins and penguins can swim very well.",
+   "exampleUz": "Delfinlar ham, pingvinlar ham juda yaxshi suza oladi.",
+   "explanationUz": "'both ... and ...' — ikkalasi ham. Fe'l KO'PLIKDA.",
+   "book": "coursebook",
+   "bookPage": 40
+  }
+ ],
+ "vocabulary": [
+  {
+   "en": "a dolphin",
+   "uz": "delfin"
+  },
+  {
+   "en": "a lion",
+   "uz": "sher"
+  },
+  {
+   "en": "a parrot",
+   "uz": "to'tiqush"
+  },
+  {
+   "en": "a penguin",
+   "uz": "pingvin"
+  },
+  {
+   "en": "a mammal",
+   "uz": "sutemizuvchi"
+  },
+  {
+   "en": "a bird",
+   "uz": "qush"
+  },
+  {
+   "en": "fur",
+   "uz": "jun"
+  },
+  {
+   "en": "fins",
+   "uz": "suzgichlar"
+  },
+  {
+   "en": "a tail",
+   "uz": "dum"
+  },
+  {
+   "en": "skin",
+   "uz": "teri"
+  },
+  {
+   "en": "feathers",
+   "uz": "patlar"
+  },
+  {
+   "en": "wings",
+   "uz": "qanotlar"
+  },
+  {
+   "en": "a mane",
+   "uz": "yol (sherning)"
+  },
+  {
+   "en": "legs",
+   "uz": "oyoqlar"
+  },
+  {
+   "en": "to fly",
+   "uz": "uchmoq"
+  },
+  {
+   "en": "to run",
+   "uz": "yugurmoq"
+  },
+  {
+   "en": "to swim",
+   "uz": "suzmoq"
+  },
+  {
+   "en": "to feed on milk",
+   "uz": "sut bilan boqmoq"
+  },
+  {
+   "en": "a baby",
+   "uz": "bola, chaqaloq"
+  },
+  {
+   "en": "a smile",
+   "uz": "tabassum"
+  },
+  {
+   "en": "to weigh",
+   "uz": "og'irlikda bo'lmoq"
+  },
+  {
+   "en": "intelligent",
+   "uz": "aqlli"
+  },
+  {
+   "en": "easily",
+   "uz": "osonlik bilan"
+  },
+  {
+   "en": "friendly",
+   "uz": "do'stona"
+  },
+  {
+   "en": "warm",
+   "uz": "iliq, issiq"
+  },
+  {
+   "en": "a sea",
+   "uz": "dengiz"
+  },
+  {
+   "en": "parts of the world",
+   "uz": "dunyo qismlari"
+  },
+  {
+   "en": "a group",
+   "uz": "guruh"
+  },
+  {
+   "en": "to lay eggs",
+   "uz": "tuxum qo'ymoq"
+  },
+  {
+   "en": "thick",
+   "uz": "qalin"
+  },
+  {
+   "en": "cold water",
+   "uz": "sovuq suv"
+  },
+  {
+   "en": "funny",
+   "uz": "kulgili"
+  },
+  {
+   "en": "ice",
+   "uz": "muz"
+  },
+  {
+   "en": "Antarctica",
+   "uz": "Antarktida"
+  },
+  {
+   "en": "however",
+   "uz": "ammo"
+  },
+  {
+   "en": "though",
+   "uz": "esa, lekin"
+  },
+  {
+   "en": "unusual",
+   "uz": "g'ayrioddiy"
+  },
+  {
+   "en": "to keep somebody warm",
+   "uz": "issiq saqlamoq"
+  }
+ ]
+}
