@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -680,12 +681,19 @@ class _VocabDrillState extends State<_VocabDrill> {
   int _xp = 0;
   String? _chosen;
   late List<String> _options;
+  Timer? _advance;
 
   @override
   void initState() {
     super.initState();
     _queue = List.of(widget.entries)..shuffle(_rnd);
     _load();
+  }
+
+  @override
+  void dispose() {
+    _advance?.cancel();
+    super.dispose();
   }
 
   void _load() {
@@ -712,7 +720,7 @@ class _VocabDrillState extends State<_VocabDrill> {
       showCorrectBurst(context);
       await progress.addXp(2, skill: Skill.vocab);
     }
-    Future.delayed(Duration(milliseconds: ok ? 850 : 1500), () {
+    _advance = Timer(Duration(milliseconds: ok ? 850 : 1500), () {
       if (!mounted) return;
       if (_i + 1 < _queue.length) {
         setState(() {

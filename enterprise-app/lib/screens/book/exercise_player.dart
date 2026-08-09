@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -343,6 +344,7 @@ class _ChoiceStageState extends State<_ChoiceStage> {
   final _rnd = Random();
   late List<String> _options;
   String? _chosen;
+  Timer? _advance;
 
   @override
   void initState() {
@@ -351,13 +353,19 @@ class _ChoiceStageState extends State<_ChoiceStage> {
     if (_options.isEmpty) _options = [widget.task.answer];
   }
 
+  @override
+  void dispose() {
+    _advance?.cancel();
+    super.dispose();
+  }
+
   void _tap(String o) {
     if (_chosen != null) return;
     final ok = widget.task.isCorrect(o);
     setState(() => _chosen = o);
     if (ok) showCorrectBurst(context);
     Tts.instance.speak(widget.task.answer, id: 'ex');
-    Future.delayed(Duration(milliseconds: ok ? 900 : 1900), () {
+    _advance = Timer(Duration(milliseconds: ok ? 900 : 1900), () {
       if (mounted) widget.onDone(ok);
     });
   }
@@ -495,6 +503,7 @@ class _BuildStageState extends State<_BuildStage> {
   late List<String> _pieces;
   final List<int> _picked = [];
   bool? _result;
+  Timer? _advance;
 
   @override
   void initState() {
@@ -503,6 +512,12 @@ class _BuildStageState extends State<_BuildStage> {
     final s = List.of(target)..shuffle(_rnd);
     if (s.join() == target.join() && target.length > 1) s.shuffle(_rnd);
     _pieces = s;
+  }
+
+  @override
+  void dispose() {
+    _advance?.cancel();
+    super.dispose();
   }
 
   void _tap(int i) {
@@ -522,7 +537,7 @@ class _BuildStageState extends State<_BuildStage> {
     setState(() => _result = ok);
     if (ok) showCorrectBurst(context);
     Tts.instance.speak(widget.task.answer, id: 'ex');
-    Future.delayed(Duration(milliseconds: ok ? 950 : 2100), () {
+    _advance = Timer(Duration(milliseconds: ok ? 950 : 2100), () {
       if (mounted) widget.onDone(ok);
     });
   }
@@ -664,12 +679,21 @@ class _MatchStageState extends State<_MatchStage> {
   final Set<String> _failed = {};
   String? _sel;
   String? _wrongFlash;
+  Timer? _advance;
+  Timer? _flash;
 
   @override
   void initState() {
     super.initState();
     _left = List.of(widget.tasks)..shuffle(_rnd);
     _right = List.of(widget.tasks)..shuffle(_rnd);
+  }
+
+  @override
+  void dispose() {
+    _advance?.cancel();
+    _flash?.cancel();
+    super.dispose();
   }
 
   void _tapRight(ExTask r) {
@@ -682,7 +706,7 @@ class _MatchStageState extends State<_MatchStage> {
       });
       Tts.instance.speak(r.right, id: r.left);
       if (_matched.length == widget.tasks.length) {
-        Future.delayed(const Duration(milliseconds: 650), () {
+        _advance = Timer(const Duration(milliseconds: 650), () {
           if (mounted) {
             widget.onDone(widget.tasks.length - _failed.length);
           }
@@ -693,7 +717,7 @@ class _MatchStageState extends State<_MatchStage> {
         _failed.add(sel);
         _wrongFlash = r.left;
       });
-      Future.delayed(const Duration(milliseconds: 420), () {
+      _flash = Timer(const Duration(milliseconds: 420), () {
         if (mounted) setState(() => _wrongFlash = null);
       });
     }
