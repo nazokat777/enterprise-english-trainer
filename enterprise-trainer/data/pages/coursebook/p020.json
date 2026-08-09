@@ -1,0 +1,273 @@
+{
+  "book": "coursebook",
+  "pdfPage": 20,
+  "bookPage": 18,
+  "unit": 3,
+  "unitTitle": "Home Sweet Home",
+  "module": 1,
+  "sections": [
+    {
+      "kind": "lead_in",
+      "title": "Lead-in",
+      "titleUz": "Kirish",
+      "exercises": [
+        {
+          "ref": "1",
+          "type": "picture_choice",
+          "instructionEn": "Look at the picture and fill in the gaps with the correct letters. Where is each room?",
+          "instructionUz": "Rasmga qarang va bo'shliqlarga to'g'ri harflarni qo'ying. Har bir xona qayerda joylashgan?",
+          "explanationUz": "UY QAVATLARI — ingliz tilida O'ZGACHA sanaladi!\n\n  ground floor — BIRINCHI qavat (yerdagi qavat)\n  first floor  — IKKINCHI qavat\n  second floor — UCHINCHI qavat\n  attic        — tom ostidagi xona (chordoq)\n\nYa'ni inglizcha 'first floor' — o'zbekcha IKKINCHI qavat!\nBu AQShda boshqacha: u yerda 'first floor' = birinchi qavat.\nDarslik BRITAN inglizchasida, shuning uchun ground/first tizimi.\n\nJoy predloglari:\n  ON the ground floor — qavatda\n  IN the attic        — chordoqda\n  OUTSIDE the house   — uydan tashqarida",
+          "bookRef": "Coursebook, 18-bet — A–H harflari",
+          "options": ["A", "B", "C", "D", "E", "F", "G", "H"],
+          "answers": [
+            { "picture": "the living-room (on the ground floor)", "country": "C", "descEn": "the living-room — on the ground floor", "descUz": "mehmonxona — birinchi qavatda", "given": true },
+            { "picture": "the dining-room (on the ground floor)", "country": "B", "descEn": "the dining-room — on the ground floor", "descUz": "ovqatlanish xonasi — birinchi qavatda" },
+            { "picture": "the kitchen (on the ground floor)", "country": "A", "descEn": "the kitchen — on the ground floor", "descUz": "oshxona — birinchi qavatda" },
+            { "picture": "the main bedroom (on the first floor)", "country": "D", "descEn": "the main bedroom — on the first floor", "descUz": "asosiy yotoqxona — ikkinchi qavatda" },
+            { "picture": "the bathroom (on the first floor)", "country": "E", "descEn": "the bathroom — on the first floor", "descUz": "hammom — ikkinchi qavatda" },
+            { "picture": "the child's bedroom (on the first floor)", "country": "F", "descEn": "the child's bedroom — on the first floor", "descUz": "bolalar xonasi — ikkinchi qavatda" },
+            { "picture": "the study (in the attic)", "country": "G", "descEn": "the study — in the attic", "descUz": "ish xonasi — chordoqda" },
+            { "picture": "the garage (outside the house)", "country": "H", "descEn": "the garage — outside the house", "descUz": "garaj — uydan tashqarida" }
+          ],
+          "modelAnswers": [
+            "The study is in the attic.",
+            "The kitchen is on the ground floor.",
+            "The bathroom is on the first floor.",
+            "The garage is outside the house."
+          ]
+        },
+        {
+          "ref": "2a",
+          "type": "picture_fill_and_ask",
+          "instructionEn": "Fill in the gaps with the correct numbers.",
+          "instructionUz": "Rasmdagi buyumni toping va uning raqamini yozing.",
+          "explanationUz": "Rasmda 22 ta buyum raqamlangan. Har bir buyum nomini o'qib,\nrasmdan topib, raqamini yozing.\n\nNamuna: living-room — sofa 9\n\nBu mashq lug'atni RASM bilan bog'laydi: so'zni tarjima orqali emas,\nnarsaning o'zi bilan eslab qolasiz. Shuning uchun tez esda qoladi.",
+          "bookRef": "Coursebook, 18-bet — 1–22 raqamlar",
+          "wordList": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"],
+          "items": [
+            { "n": 1, "country": "sofa (living-room)", "countryUz": "divan — mehmonxonada. Rasmdagi raqamini yozing", "capital": "9", "given": true, "landmark": "There is a sofa in the living-room." },
+            { "n": 2, "country": "table (living-room)", "countryUz": "stol — mehmonxonada. Rasmdagi raqamini yozing", "capital": "10", "landmark": "There is a table in the living-room." },
+            { "n": 3, "country": "fireplace (living-room)", "countryUz": "kamin — mehmonxonada. Rasmdagi raqamini yozing", "capital": "11", "landmark": "There is a fireplace in the living-room." },
+            { "n": 4, "country": "armchair (living-room)", "countryUz": "kreslo — mehmonxonada. Rasmdagi raqamini yozing", "capital": "12", "landmark": "There is an armchair in the living-room." },
+            { "n": 5, "country": "dining-table (dining-room)", "countryUz": "ovqat stoli — ovqatlanish xonasida. Rasmdagi raqamini yozing", "capital": "6", "landmark": "There is a dining-table in the dining-room." },
+            { "n": 6, "country": "chairs (dining-room)", "countryUz": "stullar — ovqatlanish xonasida. Rasmdagi raqamini yozing", "capital": "7", "landmark": "There are some chairs in the dining-room." },
+            { "n": 7, "country": "mirror (dining-room)", "countryUz": "oyna — ovqatlanish xonasida. Rasmdagi raqamini yozing", "capital": "8", "landmark": "There is a mirror in the dining-room." },
+            { "n": 8, "country": "dishwasher (kitchen)", "countryUz": "idish yuvish mashinasi — oshxonada. Rasmdagi raqamini yozing", "capital": "1", "landmark": "There is a dishwasher in the kitchen." },
+            { "n": 9, "country": "cooker (kitchen)", "countryUz": "plita — oshxonada. Rasmdagi raqamini yozing", "capital": "2", "landmark": "There is a cooker in the kitchen." },
+            { "n": 10, "country": "fridge (kitchen)", "countryUz": "muzlatgich — oshxonada. Rasmdagi raqamini yozing", "capital": "3", "landmark": "There is a fridge in the kitchen." },
+            { "n": 11, "country": "cupboards (kitchen)", "countryUz": "shkaflar — oshxonada. Rasmdagi raqamini yozing", "capital": "4", "landmark": "There are some cupboards in the kitchen." },
+            { "n": 12, "country": "sink (kitchen)", "countryUz": "yuvinish idishi — oshxonada. Rasmdagi raqamini yozing", "capital": "5", "landmark": "There is a sink in the kitchen." },
+            { "n": 13, "country": "wardrobe (main bedroom)", "countryUz": "kiyim shkafi — asosiy yotoqxonada. Rasmdagi raqamini yozing", "capital": "13", "landmark": "There is a wardrobe in the main bedroom." },
+            { "n": 14, "country": "double bed (main bedroom)", "countryUz": "ikki kishilik karavot — asosiy yotoqxonada. Rasmdagi raqamini yozing", "capital": "14", "landmark": "There is a double bed in the main bedroom." },
+            { "n": 15, "country": "bath (bathroom)", "countryUz": "vanna — hammomda. Rasmdagi raqamini yozing", "capital": "15", "landmark": "There is a bath in the bathroom." },
+            { "n": 16, "country": "washbasin (bathroom)", "countryUz": "qo'l yuvgich — hammomda. Rasmdagi raqamini yozing", "capital": "16", "landmark": "There is a washbasin in the bathroom." },
+            { "n": 17, "country": "toilet (bathroom)", "countryUz": "hojatxona — hammomda. Rasmdagi raqamini yozing", "capital": "17", "landmark": "There is a toilet in the bathroom." },
+            { "n": 18, "country": "bedside cabinet (child's bedroom)", "countryUz": "karavot yonidagi tumba — bolalar xonasida. Rasmdagi raqamini yozing", "capital": "18", "landmark": "There is a bedside cabinet in the child's bedroom." },
+            { "n": 19, "country": "single bed (child's bedroom)", "countryUz": "bir kishilik karavot — bolalar xonasida. Rasmdagi raqamini yozing", "capital": "19", "landmark": "There is a single bed in the child's bedroom." },
+            { "n": 20, "country": "desk (study)", "countryUz": "yozuv stoli — ish xonasida. Rasmdagi raqamini yozing", "capital": "20", "landmark": "There is a desk in the study." },
+            { "n": 21, "country": "chair (study)", "countryUz": "stul — ish xonasida. Rasmdagi raqamini yozing", "capital": "21", "landmark": "There is a chair in the study." },
+            { "n": 22, "country": "bookcase (study)", "countryUz": "kitob javoni — ish xonasida. Rasmdagi raqamini yozing", "capital": "22", "landmark": "There is a bookcase in the study." }
+          ]
+        },
+        {
+          "ref": "2b",
+          "type": "make_sentences_game",
+          "instructionEn": "What is there in each room?",
+          "instructionUz": "Har bir xonada nima bor? 'There is / There are' bilan gap tuzing.",
+          "explanationUz": "BU UNITNING ASOSIY GRAMMATIKASI — 'there is' va 'there are':\n\n  There IS a sofa in the living-room.       (BITTA narsa)\n  There ARE some chairs in the dining-room. (KO'P narsa)\n\nQoida:\n  • Birlik ot  → There is + A/AN + ot\n  • Ko'plik ot → There are + SOME + ot(-s)\n\n'some' — 'bir nechta' ma'nosida. Aniq soni muhim bo'lmaganda ishlatiladi.\n\nDIQQAT — a yoki an?\n  a sofa, a table, a fridge   (undosh tovush bilan boshlansa)\n  an armchair                 (unli tovush bilan boshlansa)\n\nO'zbekchada 'mehmonxonada divan bor' deymiz — gap XONA bilan boshlanadi.\nInglizchada esa gap 'There is...' bilan BOSHLANADI, xona OXIRIDA keladi.\nBu tuzilma o'zbek tilida yo'q, shuning uchun ko'p mashq qilish kerak.",
+          "bookRef": "Coursebook, 18-bet — 2b",
+          "example": [
+            { "speaker": "S1", "en": "There is a sofa in the living-room.", "uz": "Mehmonxonada divan bor." },
+            { "speaker": "S2", "en": "There are some chairs in the dining-room.", "uz": "Ovqatlanish xonasida stullar bor." }
+          ],
+          "modelSentences": [
+            { "word": "table — living-room", "sentence": "There is a table in the living-room.", "uz": "Mehmonxonada stol bor." },
+            { "word": "fireplace — living-room", "sentence": "There is a fireplace in the living-room.", "uz": "Mehmonxonada kamin bor." },
+            { "word": "armchair — living-room", "sentence": "There is an armchair in the living-room.", "uz": "Mehmonxonada kreslo bor." },
+            { "word": "dining-table — dining-room", "sentence": "There is a dining-table in the dining-room.", "uz": "Ovqatlanish xonasida ovqat stoli bor." },
+            { "word": "mirror — dining-room", "sentence": "There is a mirror in the dining-room.", "uz": "Ovqatlanish xonasida oyna bor." },
+            { "word": "fridge — kitchen", "sentence": "There is a fridge in the kitchen.", "uz": "Oshxonada muzlatgich bor." },
+            { "word": "dishwasher — kitchen", "sentence": "There is a dishwasher in the kitchen.", "uz": "Oshxonada idish yuvish mashinasi bor." },
+            { "word": "cupboards — kitchen", "sentence": "There are some cupboards in the kitchen.", "uz": "Oshxonada shkaflar bor." },
+            { "word": "sink — kitchen", "sentence": "There is a sink in the kitchen.", "uz": "Oshxonada yuvinish idishi bor." },
+            { "word": "cooker — kitchen", "sentence": "There is a cooker in the kitchen.", "uz": "Oshxonada plita bor." },
+            { "word": "double bed — main bedroom", "sentence": "There is a double bed in the main bedroom.", "uz": "Asosiy yotoqxonada ikki kishilik karavot bor." },
+            { "word": "wardrobe — main bedroom", "sentence": "There is a wardrobe in the main bedroom.", "uz": "Asosiy yotoqxonada kiyim shkafi bor." },
+            { "word": "bath — bathroom", "sentence": "There is a bath in the bathroom.", "uz": "Hammomda vanna bor." },
+            { "word": "washbasin — bathroom", "sentence": "There is a washbasin in the bathroom.", "uz": "Hammomda qo'l yuvgich bor." },
+            { "word": "toilet — bathroom", "sentence": "There is a toilet in the bathroom.", "uz": "Hammomda hojatxona bor." },
+            { "word": "single bed — child's bedroom", "sentence": "There is a single bed in the child's bedroom.", "uz": "Bolalar xonasida bir kishilik karavot bor." },
+            { "word": "bedside cabinet — child's bedroom", "sentence": "There is a bedside cabinet in the child's bedroom.", "uz": "Bolalar xonasida karavot yonidagi tumba bor." },
+            { "word": "desk — study", "sentence": "There is a desk in the study.", "uz": "Ish xonasida yozuv stoli bor." },
+            { "word": "bookcase — study", "sentence": "There is a bookcase in the study.", "uz": "Ish xonasida kitob javoni bor." },
+            { "word": "chair — study", "sentence": "There is a chair in the study.", "uz": "Ish xonasida stul bor." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Other things in the picture",
+      "titleUz": "Rasmda ko'rsatilgan boshqa narsalar",
+      "exercises": [
+        {
+          "ref": "labels",
+          "type": "uz_to_en",
+          "instructionEn": "Learn the other labelled parts of the house.",
+          "instructionUz": "Rasmda belgilangan boshqa qismlarni o'rganing.",
+          "explanationUz": "Rasmda raqamsiz, lekin nomi yozilgan narsalar ham bor.\nUlar mashqda so'ralmagan, lekin Unit 3 lug'atiga kiradi va\nkeyingi betlarda ishlatiladi.\n\nUY QISMLARI: roof, wall, floor, door, window, stairs, chimney, garden\nJIHOZLAR: lamp, curtains, carpet, rug, cushion, pillows, vase, picture,\n          mirror, towel, shower, dressing-table",
+          "wordList": ["roof", "wall", "floor", "door", "window", "stairs", "chimney", "garden", "lamp", "curtains", "carpet", "rug", "cushion", "pillows", "vase", "picture", "towel", "shower", "dressing-table"],
+          "items": [
+            { "n": 1, "promptUz": "tom", "answer": "roof" },
+            { "n": 2, "promptUz": "devor", "answer": "wall" },
+            { "n": 3, "promptUz": "pol", "answer": "floor" },
+            { "n": 4, "promptUz": "eshik", "answer": "door" },
+            { "n": 5, "promptUz": "deraza", "answer": "window" },
+            { "n": 6, "promptUz": "zinapoya", "answer": "stairs" },
+            { "n": 7, "promptUz": "mo'ri", "answer": "chimney" },
+            { "n": 8, "promptUz": "bog'", "answer": "garden" },
+            { "n": 9, "promptUz": "chiroq", "answer": "lamp" },
+            { "n": 10, "promptUz": "parda", "answer": "curtains" },
+            { "n": 11, "promptUz": "gilam (butun polni qoplaydigan)", "answer": "carpet" },
+            { "n": 12, "promptUz": "kichik gilamcha", "answer": "rug" },
+            { "n": 13, "promptUz": "divan yostiqchasi", "answer": "cushion" },
+            { "n": 14, "promptUz": "yostiqlar (karavotda)", "answer": "pillows" },
+            { "n": 15, "promptUz": "guldon", "answer": "vase" },
+            { "n": 16, "promptUz": "rasm (devorda)", "answer": "picture" },
+            { "n": 17, "promptUz": "sochiq", "answer": "towel" },
+            { "n": 18, "promptUz": "dush", "answer": "shower" },
+            { "n": 19, "promptUz": "oyna stoli", "answer": "dressing-table" }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Uy jihozlarining ko'pchiligi QO'SHMA so'z — ikki so'zdan yasalgan.",
+    "groups": [
+      {
+        "ruleUz": "XONA nomlari: vazifa + room",
+        "explanationUz": "Xona nomi ko'pincha 'nima uchun ishlatilishi' + room shaklida. Chiziqcha bilan yoziladi.",
+        "items": [
+          { "base": "live", "baseUz": "yashamoq", "derived": "living-room", "derivedUz": "mehmonxona", "note": "AQShda 'living room' (chiziqchasiz)" },
+          { "base": "dine", "baseUz": "ovqatlanmoq", "derived": "dining-room", "derivedUz": "ovqatlanish xonasi", "note": "-e tushadi" },
+          { "base": "bed", "baseUz": "karavot", "derived": "bedroom", "derivedUz": "yotoqxona", "note": "qo'shilib yoziladi" },
+          { "base": "bath", "baseUz": "vanna", "derived": "bathroom", "derivedUz": "hammom", "note": "qo'shilib yoziladi" },
+          { "base": "study", "baseUz": "o'qimoq", "derived": "a study", "derivedUz": "ish xonasi", "note": "fe'l → ot" }
+        ]
+      },
+      {
+        "ruleUz": "JIHOZ nomlari: joy/vazifa + narsa",
+        "explanationUz": "Jihoz nomlari ham qo'shma. Birinchi so'z QAYERDA yoki NIMA UCHUN ekanini aytadi.",
+        "items": [
+          { "base": "dish + wash", "baseUz": "idish + yuvmoq", "derived": "dishwasher", "derivedUz": "idish yuvish mashinasi", "note": "-er qo'shiladi" },
+          { "base": "wash + basin", "baseUz": "yuvmoq + tog'ora", "derived": "washbasin", "derivedUz": "qo'l yuvgich", "note": "" },
+          { "base": "bed + side", "baseUz": "karavot + yon", "derived": "bedside cabinet", "derivedUz": "karavot yonidagi tumba", "note": "" },
+          { "base": "book + case", "baseUz": "kitob + quti", "derived": "bookcase", "derivedUz": "kitob javoni", "note": "" },
+          { "base": "fire + place", "baseUz": "olov + joy", "derived": "fireplace", "derivedUz": "kamin", "note": "" },
+          { "base": "arm + chair", "baseUz": "qo'l + stul", "derived": "armchair", "derivedUz": "kreslo", "note": "an armchair" },
+          { "base": "cup + board", "baseUz": "piyola + taxta", "derived": "cupboard", "derivedUz": "shkaf", "note": "o'qilishi 'kabod' — 'p' o'qilmaydi!" },
+          { "base": "dress + table", "baseUz": "kiyinmoq + stol", "derived": "dressing-table", "derivedUz": "oyna stoli", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Qisqartirilgan so'zlar",
+        "explanationUz": "Kundalik nutqda uzun so'zlar qisqaradi. Qisqasi ko'proq ishlatiladi.",
+        "items": [
+          { "base": "refrigerator", "baseUz": "muzlatgich", "derived": "fridge", "derivedUz": "muzlatgich", "note": "qisqasi keng tarqalgan" },
+          { "base": "television", "baseUz": "televizor", "derived": "TV", "derivedUz": "televizor", "note": "" },
+          { "base": "telephone", "baseUz": "telefon", "derived": "phone", "derivedUz": "telefon", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "O'zbekchada BITTA — inglizchada IKKITA (jihozlar)",
+        "explanationUz": "Bu farqlar xato manbai bo'ladi.",
+        "items": [
+          { "base": "gilam", "baseUz": "butun polni qoplaydi", "derived": "carpet", "derivedUz": "gilam (devordan devorgacha)", "note": "" },
+          { "base": "gilam", "baseUz": "kichik, ko'chma", "derived": "rug", "derivedUz": "gilamcha", "note": "" },
+          { "base": "yostiq", "baseUz": "karavotda, uxlash uchun", "derived": "pillow", "derivedUz": "yostiq", "note": "" },
+          { "base": "yostiq", "baseUz": "divanda, bezak uchun", "derived": "cushion", "derivedUz": "divan yostiqchasi", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Unit 3 ning ASOSIY tuzilmasi — 'there is / there are'.",
+    "patterns": [
+      {
+        "formula": "There IS + a/an + BIRLIK ot + in the XONA.",
+        "exampleEn": "There is a sofa in the living-room.",
+        "exampleUz": "Mehmonxonada divan bor.",
+        "explanationUz": "BITTA narsa uchun. 'a/an' SHART.\nO'zbekchada gap joy bilan boshlanadi, inglizchada esa 'There is' bilan."
+      },
+      {
+        "formula": "There ARE + some + KO'PLIK ot + in the XONA.",
+        "exampleEn": "There are some chairs in the dining-room.",
+        "exampleUz": "Ovqatlanish xonasida stullar bor.",
+        "explanationUz": "KO'P narsa uchun. 'some' — aniq soni muhim bo'lmaganda.\nOt KO'PLIKDA: chairs, cupboards (chair emas)."
+      },
+      {
+        "formula": "The XONA is ON the ground/first floor.",
+        "exampleEn": "The kitchen is on the ground floor.",
+        "exampleUz": "Oshxona birinchi qavatda.",
+        "explanationUz": "Qavat uchun ON predlogi.\nDIQQAT: 'ground floor' = o'zbekcha 1-qavat, 'first floor' = 2-qavat!"
+      },
+      {
+        "formula": "The XONA is IN the attic. / OUTSIDE the house.",
+        "exampleEn": "The study is in the attic. The garage is outside the house.",
+        "exampleUz": "Ish xonasi chordoqda. Garaj uydan tashqarida.",
+        "explanationUz": "Chordoq uchun IN (ichkarida), garaj uchun OUTSIDE (tashqarida)."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "ground floor", "uz": "birinchi qavat (yerdagi)" },
+    { "en": "first floor", "uz": "ikkinchi qavat" },
+    { "en": "attic", "uz": "chordoq" },
+    { "en": "living-room", "uz": "mehmonxona" },
+    { "en": "dining-room", "uz": "ovqatlanish xonasi" },
+    { "en": "kitchen", "uz": "oshxona" },
+    { "en": "main bedroom", "uz": "asosiy yotoqxona" },
+    { "en": "child's bedroom", "uz": "bolalar xonasi" },
+    { "en": "bathroom", "uz": "hammom" },
+    { "en": "study", "uz": "ish xonasi" },
+    { "en": "garage", "uz": "garaj" },
+    { "en": "sofa", "uz": "divan" },
+    { "en": "armchair", "uz": "kreslo" },
+    { "en": "fireplace", "uz": "kamin" },
+    { "en": "dining-table", "uz": "ovqat stoli" },
+    { "en": "mirror", "uz": "oyna" },
+    { "en": "fridge", "uz": "muzlatgich" },
+    { "en": "dishwasher", "uz": "idish yuvish mashinasi" },
+    { "en": "cupboard", "uz": "shkaf" },
+    { "en": "sink", "uz": "yuvinish idishi" },
+    { "en": "cooker", "uz": "plita" },
+    { "en": "double bed", "uz": "ikki kishilik karavot" },
+    { "en": "single bed", "uz": "bir kishilik karavot" },
+    { "en": "wardrobe", "uz": "kiyim shkafi" },
+    { "en": "bath", "uz": "vanna" },
+    { "en": "washbasin", "uz": "qo'l yuvgich" },
+    { "en": "toilet", "uz": "hojatxona" },
+    { "en": "bedside cabinet", "uz": "karavot yonidagi tumba" },
+    { "en": "desk", "uz": "yozuv stoli" },
+    { "en": "bookcase", "uz": "kitob javoni" },
+    { "en": "roof", "uz": "tom" },
+    { "en": "wall", "uz": "devor" },
+    { "en": "floor", "uz": "pol" },
+    { "en": "stairs", "uz": "zinapoya" },
+    { "en": "chimney", "uz": "mo'ri" },
+    { "en": "garden", "uz": "bog'" },
+    { "en": "curtains", "uz": "parda" },
+    { "en": "carpet", "uz": "gilam" },
+    { "en": "rug", "uz": "gilamcha" },
+    { "en": "cushion", "uz": "divan yostiqchasi" },
+    { "en": "pillow", "uz": "yostiq" },
+    { "en": "vase", "uz": "guldon" },
+    { "en": "towel", "uz": "sochiq" },
+    { "en": "shower", "uz": "dush" },
+    { "en": "dressing-table", "uz": "oyna stoli" },
+    { "en": "lamp", "uz": "chiroq" }
+  ]
+}

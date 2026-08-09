@@ -268,6 +268,18 @@ def _dispatch(t, ex, items):
             for i in items
         ]
 
+    if t in ("word_choice", "underline_correct", "choose_correct"):
+        # "To'g'ri so'zni tanlang" — Enterprise'da eng ko'p uchraydigan tur.
+        # Savol matnida bo'shliq turadi, javob variantlar ichida.
+        # Ovoz yo'q: gap javobni o'z ichiga olsa, o'qish javobni oshkor qiladi.
+        return "choice", [
+            task(i["textEn"], i["answer"],
+                 prompt_uz=i.get("uz", "To'g'ri so'zni tanlang"),
+                 options=i.get("options", []),
+                 why=i.get("whyUz", ""), speak="")
+            for i in items if not i.get("given")
+        ]
+
     if t in ("picture_choice",):
         # DIQQAT: mamlakatning o'zbekcha nomi JAVOB hisoblanadi — uni
         # savolda ko'rsatib bo'lmaydi. O'rniga rasm tavsifi beriladi.
