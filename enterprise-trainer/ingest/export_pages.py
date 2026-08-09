@@ -650,7 +650,7 @@ def _dispatch(t, ex, items):
 
     # ---------- O'RGANISH (study) ----------
     if t == "listen_repeat":
-        src = ex.get("sentences") or ex.get("words") or []
+        src = ex.get("sentences") or ex.get("words") or ex.get("lines") or []
         return "study", [
             study(x.get("en", ""), x.get("uz", ""), x.get("hintUz", "")) for x in src
         ]
