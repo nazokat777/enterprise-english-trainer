@@ -1,0 +1,317 @@
+{
+  "book": "coursebook",
+  "pdfPage": 46,
+  "bookPage": 42,
+  "unit": 6,
+  "unitTitle": "Birds of a Feather!",
+  "module": 2,
+  "scanNote": "42-betning o'ng chekkasi skanerda bir oz kesilgan: 10-mashq so'zlar ro'yxatining oxirgi so'zi ('hen') va sarlavhaning 'sentences' so'zi to'liq ko'rinmaydi. Ikkalasi ham matn mantig'i va bo'shliqlar soni (8 ta so'z — 8 ta bo'shliq) bo'yicha aniq tiklandi.",
+  "sections": [
+    {
+      "kind": "vocabulary",
+      "title": "Language Development — prepositions and animals",
+      "titleUz": "Til rivoji — predloglar va hayvonlar",
+      "exercises": [
+        {
+          "ref": "7",
+          "type": "fill_gap",
+          "instructionEn": "Fill in the missing prepositions.",
+          "instructionUz": "Tushib qolgan predloglarni qo'ying.",
+          "explanationUz": "PREDLOGLAR — 40-betdagi matnlardan olingan.\n\nESLAB QOLING (bu birikmalar yodlanadi):\n  feed somebody ON something — biror narsa bilan boqmoq\n  weigh FROM ... TO ...       — ...dan ...gacha og'irlikda\n  friendly TO somebody       — kimgadir do'stona\n  live IN + joy (ichida)     — dengizda, guruhda, shaharda\n  live ON + yuza             — muzda, orolda, yer yuzida\n  live FOR + davomiylik      — ellik yil\n  the ice OF Antarctica      — Antarktidaning muzi (egalik)\n\nIN yoki ON?\n  IN — ichida, o'rab turgan joy: in water, in seas, in groups\n  ON — yuzasida: on the ice, on an island, on the grass",
+          "bookRef": "Coursebook, 42-bet, 7-mashq",
+          "items": [
+            { "textEn": "1  Dolphins feed their babies ............ milk.", "answer": "on", "hintUz": "boqmoq fe'lining predlogi", "whyUz": "'feed somebody ON something' — o'zgarmas birikma. 'with' XATO." },
+            { "textEn": "2  They weigh ............ 70 ............ 500 kilos.", "answers": ["from", "to"], "hintUz": "oraliq ko'rsatuvchi juft predlog", "whyUz": "'from ... to ...' — ...dan ...gacha. Ikkalasi birga ishlatiladi." },
+            { "textEn": "3  Dolphins are friendly ............ people.", "answer": "to", "hintUz": "'friendly' sifatining predlogi", "whyUz": "'friendly TO somebody' — kimgadir do'stona. 'friendly with' ham bor, lekin kitob 'to' beradi." },
+            { "textEn": "4  They live ............ warm seas.", "answer": "in", "hintUz": "suv ICHIDA", "whyUz": "Dengiz suvining ichida yashaydi → IN." },
+            { "textEn": "5  They live ............ about fifty years.", "answer": "for", "hintUz": "qancha VAQT davomida", "whyUz": "'live FOR + davomiylik'. 'during' yoki 'in' XATO." },
+            { "textEn": "6  Penguins live ............ the ice ............ Antarctica.", "answers": ["on", "of"], "hintUz": "birinchisi — yuza, ikkinchisi — egalik", "whyUz": "Muzning USTIDA → ON. 'the ice OF Antarctica' = Antarktidaning muzi." },
+            { "textEn": "7  They live ............ big groups.", "answer": "in", "hintUz": "guruh ICHIDA", "whyUz": "'live IN groups' — guruh bo'lib yashamoq." }
+          ]
+        },
+        {
+          "ref": "8",
+          "type": "word_choice",
+          "hasAudio": true,
+          "instructionEn": "Listen to the animal noises and tick the animals you can hear. Which of them are wild animals and which are farm animals? Finally, write sentences as in the example.",
+          "instructionUz": "Hayvon tovushlarini tinglang va eshitgan hayvonlaringizni belgilang. Ulardan qaysilari yovvoyi, qaysilari uy hayvoni? Nihoyat, namunadagidek gaplar yozing.",
+          "audioRequiredUz": "QAYSI hayvon eshitilishi faqat kassetada aniqlanadi. Kitobda faqat 'a hen' belgilangan. Quyida YOVVOYI/UY hayvoni bo'linishi berilgan — bu qism audio talab qilmaydi.",
+          "explanationUz": "IKKI GURUH:\n  farm animals (uy/xo'jalik hayvonlari) — odam boqadi, fermada yashaydi\n     a hen, a horse, a cow, a sheep\n  wild animals (yovvoyi hayvonlar) — tabiatda o'zi yashaydi\n     a crocodile, a monkey, a lion, a tiger,\n     a parrot, a kangaroo, a snake, a penguin\n\nKITOBDAGI NAMUNALAR:\n  I can hear a hen. Hens are farm animals.\n  I can't hear a crocodile. Crocodiles are wild animals.\n\nDIQQAT — GAP TUZILISHI:\n  1-gap BIRLIKDA:  I can hear A HEN.\n  2-gap KO'PLIKDA: HENS ARE farm animals.",
+          "bookRef": "Coursebook, 42-bet, 8-mashq",
+          "items": [
+            { "textEn": "Hens are ............ animals.", "uz": "Tovuqlar — ... hayvonlari.", "options": ["farm", "wild"], "answer": "farm", "given": true, "whyUz": "Kitobda BERILGAN namuna. Tovuqni odam fermada boqadi." },
+            { "textEn": "Crocodiles are ............ animals.", "uz": "Timsohlar — ... hayvonlar.", "options": ["wild", "farm"], "answer": "wild", "given": true, "whyUz": "Kitobda BERILGAN namuna. Timsoh daryolarda o'zi yashaydi." },
+            { "textEn": "Horses are ............ animals.", "uz": "Otlar — ... hayvonlari.", "options": ["farm", "wild"], "answer": "farm", "whyUz": "Otni odam boqadi va ishlatadi." },
+            { "textEn": "Monkeys are ............ animals.", "uz": "Maymunlar — ... hayvonlar.", "options": ["wild", "farm"], "answer": "wild", "whyUz": "Maymun o'rmonda yashaydi." },
+            { "textEn": "Lions are ............ animals.", "uz": "Sherlar — ... hayvonlar.", "options": ["wild", "farm"], "answer": "wild", "whyUz": "Sher — Afrika savannasining yirtqichi." },
+            { "textEn": "Tigers are ............ animals.", "uz": "Yo'lbarslar — ... hayvonlar.", "options": ["wild", "farm"], "answer": "wild", "whyUz": "Yo'lbars — o'rmon yirtqichi." },
+            { "textEn": "Parrots are ............ animals.", "uz": "To'tiqushlar — ... hayvonlar.", "options": ["wild", "farm"], "answer": "wild", "whyUz": "To'tiqushni uyda boqish mumkin, lekin tabiatda yovvoyi qush." },
+            { "textEn": "Kangaroos are ............ animals.", "uz": "Kengurular — ... hayvonlar.", "options": ["wild", "farm"], "answer": "wild", "whyUz": "Kenguru Avstraliya tabiatida yashaydi." },
+            { "textEn": "Cows are ............ animals.", "uz": "Sigirlar — ... hayvonlari.", "options": ["farm", "wild"], "answer": "farm", "whyUz": "Sigir sut beradi — asosiy xo'jalik hayvoni." },
+            { "textEn": "Snakes are ............ animals.", "uz": "Ilonlar — ... hayvonlar.", "options": ["wild", "farm"], "answer": "wild", "whyUz": "Ilon tabiatda o'zi yashaydi." },
+            { "textEn": "Sheep are ............ animals.", "uz": "Qo'ylar — ... hayvonlari.", "options": ["farm", "wild"], "answer": "farm", "whyUz": "Qo'y jun va go'sht beradi. DIQQAT: 'sheep' ko'plikda ham 'sheep'." },
+            { "textEn": "Penguins are ............ animals.", "uz": "Pingvinlar — ... hayvonlar.", "options": ["wild", "farm"], "answer": "wild", "whyUz": "Pingvin Antarktida muzida o'zi yashaydi." }
+          ]
+        },
+        {
+          "ref": "8b",
+          "type": "dialogue_drill",
+          "instructionEn": "Finally, write sentences as in the example.",
+          "instructionUz": "Nihoyat, namunadagidek gaplar yozing.",
+          "explanationUz": "Eshitgan hayvon uchun 'I can hear ...',\neshitmagani uchun 'I can't hear ...' deyiladi.\nSo'ng guruhi aytiladi.",
+          "bookRef": "Coursebook, 42-bet, 8-mashq (namunalar)",
+          "example": [
+            { "speaker": "Namuna 1", "en": "I can hear a hen. Hens are farm animals.", "uz": "Men tovuqni eshitayapman. Tovuqlar — uy hayvonlari." },
+            { "speaker": "Namuna 2", "en": "I can't hear a crocodile. Crocodiles are wild animals.", "uz": "Men timsohni eshitmayapman. Timsohlar — yovvoyi hayvonlar." },
+            { "speaker": "O'zingiz", "en": "I can hear a cow. Cows are farm animals.", "uz": "Men sigirni eshitayapman. Sigirlar — uy hayvonlari." },
+            { "speaker": "O'zingiz", "en": "I can't hear a kangaroo. Kangaroos are wild animals.", "uz": "Men kenguruni eshitmayapman. Kengurular — yovvoyi hayvonlar." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "Reading — koalas",
+      "titleUz": "O'qish — koalalar",
+      "exercises": [
+        {
+          "ref": "9",
+          "type": "underline_correct",
+          "instructionEn": "Read the text about koalas and underline the correct word.",
+          "instructionUz": "Koalalar haqidagi matnni o'qing va to'g'ri so'zning tagiga chizing.",
+          "explanationUz": "MATN (to'g'ri variantlar bilan):\n\n  Koalas are MAMMALS and, like dolphins, they have babies and\n  feed them on MILK. Mothers carry their young in a small pouch\n  for the first six months of their lives. Koalas can CLIMB very\n  well. They can swim very well, too. They have got thick, GREY\n  fur and a big, black nose. They've also got very sharp CLAWS.\n  Koalas live and sleep in the tops of eucalyptus trees in\n  eastern AUSTRALIA. They live alone and eat eucalyptus leaves.\n  Koalas live for about FIFTEEN years.\n\nO'ZBEKCHA TARJIMASI:\n  Koalalar — sutemizuvchilar va delfinlar kabi bola tug'adi hamda\n  ularni sut bilan boqadi. Onalari bolasini birinchi olti oy\n  davomida kichik xaltada olib yuradi. Koalalar juda yaxshi\n  daraxtga chiqa oladi. Ular juda yaxshi suza ham oladi. Ularning\n  qalin, kulrang juni va katta qora burni bor. Yana juda o'tkir\n  tirnoqlari bor. Koalalar sharqiy Avstraliyadagi evkalipt\n  daraxtlarining tepasida yashaydi va uxlaydi. Ular yolg'iz\n  yashaydi va evkalipt bargini yeydi. Koalalar taxminan o'n besh\n  yil yashaydi.",
+          "bookRef": "Coursebook, 42-bet, 9-mashq",
+          "items": [
+            { "textEn": "Koalas are 1) ............ and, like dolphins, they have babies.", "uz": "Bola tug'ib sut bilan boqadigan hayvon guruhi", "options": ["mammals", "fish"], "answer": "mammals", "whyUz": "Bola tug'adi va sut bilan boqadi → sutemizuvchi. Baliq tuxum qo'yadi." },
+            { "textEn": "... they have babies and feed them on 2) ............ .", "uz": "Sutemizuvchi bolasini nima bilan boqadi?", "options": ["milk", "water"], "answer": "milk", "whyUz": "'feed them on MILK' — sutemizuvchining asosiy belgisi." },
+            { "textEn": "Koalas can 3) ............ very well.", "uz": "Koala daraxt tepasida yashaydi — u nima qila oladi?", "options": ["climb", "fly"], "answer": "climb", "whyUz": "Koala — sutemizuvchi, qanoti yo'q, ucha olmaydi. Daraxtga CHIQADI (climb)." },
+            { "textEn": "They have got thick, 4) ............ fur and a big, black nose.", "uz": "Rasmda koalaning juni qanday rangda?", "options": ["grey", "black"], "answer": "grey", "whyUz": "Rasmda koalaning juni kulrang. Burni esa qora — matnda alohida aytilgan." },
+            { "textEn": "They've also got very sharp 5) ............ .", "uz": "Daraxtga chiqish uchun kerak bo'ladigan o'tkir narsa", "options": ["claws", "paws"], "answer": "claws", "whyUz": "'sharp CLAWS' = o'tkir tirnoqlar. 'paws' (panjalar) o'tkir bo'lmaydi — tirnoq o'tkir bo'ladi." },
+            { "textEn": "Koalas live in the tops of eucalyptus trees in eastern 6) ............ .", "uz": "Koala va kenguru qaysi qit'ada yashaydi?", "options": ["Australia", "America"], "answer": "Australia", "whyUz": "Koala faqat Avstraliyada yashaydi. Evkalipt ham Avstraliya daraxti." },
+            { "textEn": "Koalas live for about 7) ............ years.", "uz": "Kichik hayvon uzoq yashamaydi — 15 mi, 50 mi?", "options": ["fifteen", "fifty"], "answer": "fifteen", "whyUz": "Koala taxminan 15 yil yashaydi. 'fifty' (50) — delfinning umri.\nTALAFFUZ: fifteen /fɪfˈtiːn/ oxirgi bo'g'inga urg'u; fifty /ˈfɪfti/ birinchi bo'g'inga." }
+          ]
+        },
+        {
+          "ref": "9b",
+          "type": "fill_gap",
+          "instructionEn": "Then, answer the questions.",
+          "instructionUz": "So'ng savollarga javob bering.",
+          "explanationUz": "Javoblarni koalalar matnidan toping.\nJavobni 'They' bilan boshlang.",
+          "bookRef": "Coursebook, 42-bet, 9-mashq (savollar)",
+          "items": [
+            { "textEn": "1  What can koalas do?", "answer": "They can climb very well and they can swim very well, too.", "whyUz": "Matnda ikki qobiliyat: 'Koalas can climb very well. They can swim very well, too.'" },
+            { "textEn": "2  What do they look like?", "answer": "They have got thick, grey fur, a big, black nose and very sharp claws.", "whyUz": "'What do they look like?' = ular qanday ko'rinadi? Tashqi ko'rinish tasvirlanadi." },
+            { "textEn": "3  Where do they live?", "answer": "They live in the tops of eucalyptus trees in eastern Australia.", "whyUz": "Joy savoli. Matndan to'liq javob." },
+            { "textEn": "4  How long do they live?", "answer": "They live for about fifteen years.", "whyUz": "'How long' — davomiylik. 'live FOR' — 'for' shart." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "Animals and their young",
+      "titleUz": "Hayvonlar va ularning bolalari",
+      "exercises": [
+        {
+          "ref": "10",
+          "type": "fill_gap",
+          "instructionEn": "Write the names of these animals and their young under the pictures. Then, make sentences as in the example.",
+          "instructionUz": "Rasmlar tagiga bu hayvonlar va ularning bolalari nomini yozing. So'ng namunadagidek gaplar tuzing.",
+          "explanationUz": "SO'ZLAR RO'YXATI:\n  cat, chicks, dog, ducklings, duck, kittens, puppies, hen\n\nHAYVON VA BOLASI — ALOHIDA SO'ZLAR:\n  a cat  → kittens   (mushuk → mushukchalar)\n  a hen  → chicks    (tovuq → jo'jalar)\n  a dog  → puppies   (it → kuchukchalar)\n  a duck → ducklings (o'rdak → o'rdakchalar)\n\nDIQQAT: ingliz tilida bola hayvon uchun ALOHIDA so'z bor —\no'zbekchadagidek 'kichik mushuk' deyilmaydi.\n\nKITOBDA BERILGAN: 1 = cat, 2 = kittens.\nNAMUNA GAP: A cat has kittens.",
+          "bookRef": "Coursebook, 42-bet, 10-mashq",
+          "wordList": ["cat", "chicks", "dog", "ducklings", "duck", "kittens", "puppies", "hen"],
+          "items": [
+            { "textEn": "1  (katta qora-oq mushuk)", "answer": "cat", "given": true, "whyUz": "Kitobda BERILGAN: ...cat..." },
+            { "textEn": "2  (ikkita kichkina mushuk)", "answer": "kittens", "given": true, "whyUz": "Kitobda BERILGAN: ...kittens..." },
+            { "textEn": "3  (katta qizil-qora tovuq)", "answer": "hen", "hintUz": "Tuxum qo'yadigan urg'ochi uy qushi", "whyUz": "Rasmda katta urg'ochi uy qushi — 'a hen'. Erkagi 'a rooster' (41-betda ko'rgansiz)." },
+            { "textEn": "4  (uchta sariq mayda qush bolasi)", "answer": "chicks", "hintUz": "Tovuqning bolalari", "whyUz": "'chicks' = jo'jalar. Doim ko'plikda ishlatiladi, chunki bir nechta bo'ladi." },
+            { "textEn": "5  (katta sariq to'rt oyoqli uy hayvoni)", "answer": "dog", "hintUz": "Uyni qo'riqlaydigan hayvon", "whyUz": "Rasmda katta it — 'a dog'." },
+            { "textEn": "6  (ikkita kichkina oq bola hayvon)", "answer": "puppies", "hintUz": "Itning bolalari", "whyUz": "'puppies' = kuchukchalar. Birligi 'a puppy' (y → ies)." },
+            { "textEn": "7  (yashil boshli, keng tumshuqli suv qushi)", "answer": "duck", "hintUz": "Suvda suzadigan uy qushi", "whyUz": "Rasmda o'rdak — 'a duck'. Keng, yassi tumshug'i bor." },
+            { "textEn": "8  (uchta sariq mayda suv qushi bolasi)", "answer": "ducklings", "hintUz": "O'rdakning bolalari", "whyUz": "'ducklings' = o'rdakchalar. 'duck' + -ling (kichraytiruvchi qo'shimcha)." }
+          ]
+        },
+        {
+          "ref": "10b",
+          "type": "make_sentences_game",
+          "instructionEn": "Then, make sentences as in the example.",
+          "instructionUz": "So'ng namunadagidek gaplar tuzing.",
+          "explanationUz": "QOLIP: A + hayvon + HAS + bolalari (ko'plikda).\n\nDIQQAT: ega BIRLIKDA (a cat) → fe'l HAS.\n'A cat HAVE kittens' XATO.\n\nKITOBDAGI NAMUNA: A cat has kittens.",
+          "bookRef": "Coursebook, 42-bet, 10-mashq (namuna)",
+          "modelSentences": [
+            { "word": "a cat + kittens", "sentence": "A cat has kittens.", "uz": "Kitobdagi namuna gapni yozing" },
+            { "word": "a hen + chicks", "sentence": "A hen has chicks.", "uz": "Namuna bo'yicha gap tuzing (birlik ega → has)" },
+            { "word": "a dog + puppies", "sentence": "A dog has puppies.", "uz": "Namuna bo'yicha gap tuzing (birlik ega → has)" },
+            { "word": "a duck + ducklings", "sentence": "A duck has ducklings.", "uz": "Namuna bo'yicha gap tuzing (birlik ega → has)" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "quiz",
+      "title": "Quiz",
+      "titleUz": "Viktorina",
+      "exercises": [
+        {
+          "ref": "11",
+          "type": "true_false",
+          "hasAudio": true,
+          "instructionEn": "First, read the statements and mark them as T (true) or F (false). Then, listen and check your answers.",
+          "instructionUz": "Avval gaplarni o'qing va T (to'g'ri) yoki F (noto'g'ri) deb belgilang. So'ng tinglab, javoblaringizni tekshiring.",
+          "audioRequiredUz": "Kitobda ikki ustun bor: birinchisiga TAXMIN yoziladi, ikkinchisiga tinglagandan keyingi javob. Rasmiy javob kassetada. Quyidagi javoblar tabiiy faktlarga asoslangan va har biriga sabab keltirilgan.",
+          "explanationUz": "VIKTORINA — hayvonlar haqidagi qiziqarli faktlar.\nBu unit lug'ati (weigh, lay eggs, live for, groups) shu yerda takrorlanadi.\n\nBirinchi javob kitobda BERILGAN: 1 = T.",
+          "bookRef": "Coursebook, 42-bet, 11-mashq (Quiz)",
+          "items": [
+            { "sentence": "1  Snakes can't hear.", "answer": "T", "given": true, "whyUz": "Kitobda BERILGAN javob: T. Ilonda tashqi quloq yo'q — u tebranishni jag' suyagi orqali sezadi." },
+            { "sentence": "2  Dolphins are about 1-4 metres long.", "answer": "T", "whyUz": "TO'G'RI. Delfinlar taxminan 1–4 metr uzunlikda. 40-betdagi og'irligi (70–500 kg) ham shunga mos." },
+            { "sentence": "3  Snakes lay eggs.", "answer": "T", "whyUz": "TO'G'RI. Ilon — sudralib yuruvchi, ko'pchiligi tuxum qo'yadi ('lay eggs' — 40-betdagi ibora)." },
+            { "sentence": "4  Chimpanzees weigh 45-80 kilos.", "answer": "T", "whyUz": "TO'G'RI. Shimpanze taxminan 45–80 kilo keladi — odamga yaqin og'irlik." },
+            { "sentence": "5  Lions sleep for 5 hours a day.", "answer": "F", "whyUz": "NOTO'G'RI. Sher kuniga taxminan 20 SOAT uxlaydi — 5 emas. U juda kam harakat qiladi." },
+            { "sentence": "6  Sea lions live in small groups.", "answer": "F", "whyUz": "NOTO'G'RI. Dengiz sherlari KATTA guruhlarda (koloniyalarda) yashaydi — yuzlab hayvon birga." },
+            { "sentence": "7  Penguins' eggs are black.", "answer": "F", "whyUz": "NOTO'G'RI. Pingvin tuxumi OQ (yoki oqish yashil). Pingvinning O'ZI qora-oq, tuxumi emas.\nDIQQAT: Penguins' — ko'plikdan keyin faqat apostrof." },
+            { "sentence": "8  Eagles can't see well.", "answer": "F", "whyUz": "NOTO'G'RI. Burgut JUDA YAXSHI ko'radi — odamdan bir necha barobar o'tkir. Shuning uchun u yuqoridan o'ljasini topadi." },
+            { "sentence": "9  Elephants can live for about 60 years.", "answer": "T", "whyUz": "TO'G'RI. Fil taxminan 60–70 yil yashaydi — quruqlikdagi eng uzoq yashovchi sutemizuvchilardan." },
+            { "sentence": "10  Penguins can be under the water for 18 minutes.", "answer": "T", "whyUz": "TO'G'RI. Pingvin suv ostida 18 daqiqagacha tura oladi. Shuning uchun u baliqni yaxshi tutadi." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "42-bet — bola hayvon nomlari va predlogli birikmalar.",
+    "groups": [
+      {
+        "ruleUz": "Hayvon va uning bolasi — ALOHIDA so'zlar",
+        "explanationUz": "Ingliz tilida ko'p hayvonning bolasi uchun butunlay boshqa so'z bor.",
+        "items": [
+          { "base": "a cat", "baseUz": "mushuk", "derived": "a kitten / kittens", "derivedUz": "mushukcha", "note": "" },
+          { "base": "a dog", "baseUz": "it", "derived": "a puppy / puppies", "derivedUz": "kuchukcha", "note": "y → ies" },
+          { "base": "a hen", "baseUz": "tovuq", "derived": "a chick / chicks", "derivedUz": "jo'ja", "note": "" },
+          { "base": "a duck", "baseUz": "o'rdak", "derived": "a duckling / ducklings", "derivedUz": "o'rdakcha", "note": "-ling qo'shimchasi" },
+          { "base": "a cow", "baseUz": "sigir", "derived": "a calf / calves", "derivedUz": "buzoq", "note": "f → ves" },
+          { "base": "a sheep", "baseUz": "qo'y", "derived": "a lamb / lambs", "derivedUz": "qo'zi", "note": "'b' o'qilmaydi: /læm/" },
+          { "base": "a horse", "baseUz": "ot", "derived": "a foal / foals", "derivedUz": "toy", "note": "" },
+          { "base": "a lion", "baseUz": "sher", "derived": "a cub / cubs", "derivedUz": "sher bolasi", "note": "yo'lbars, ayiq bolasi ham 'cub'" }
+        ]
+      },
+      {
+        "ruleUz": "-ling qo'shimchasi — kichik jonzot",
+        "explanationUz": "Otga -ling qo'shilsa 'kichik, yosh' ma'nosi chiqadi.",
+        "items": [
+          { "base": "duck", "baseUz": "o'rdak", "derived": "duckling", "derivedUz": "o'rdakcha", "note": "" },
+          { "base": "goose", "baseUz": "g'oz", "derived": "gosling", "derivedUz": "g'ozcha", "note": "o'zak o'zgaradi" },
+          { "base": "young", "baseUz": "yosh", "derived": "youngling", "derivedUz": "yosh jonzot", "note": "kam ishlatiladi" }
+        ]
+      },
+      {
+        "ruleUz": "Predlogli o'zgarmas birikmalar (yodlanadi)",
+        "explanationUz": "Bu birikmalarda predlog o'zgarmaydi — mantiq bilan topilmaydi.",
+        "items": [
+          { "base": "feed", "baseUz": "boqmoq", "derived": "feed somebody ON something", "derivedUz": "... bilan boqmoq", "note": "'with' XATO" },
+          { "base": "friendly", "baseUz": "do'stona", "derived": "friendly TO somebody", "derivedUz": "kimgadir do'stona", "note": "" },
+          { "base": "weigh", "baseUz": "og'irlikda bo'lmoq", "derived": "weigh FROM ... TO ...", "derivedUz": "...dan ...gacha", "note": "juft predlog" },
+          { "base": "live", "baseUz": "yashamoq", "derived": "live FOR + davomiylik", "derivedUz": "... yil yashamoq", "note": "'during' XATO" },
+          { "base": "live", "baseUz": "yashamoq", "derived": "live IN + ichida", "derivedUz": "dengizda, guruhda", "note": "" },
+          { "base": "live", "baseUz": "yashamoq", "derived": "live ON + yuzasida", "derivedUz": "muzda, orolda", "note": "" },
+          { "base": "carry", "baseUz": "olib yurmoq", "derived": "carry ... IN a pouch", "derivedUz": "xaltada olib yurmoq", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "15 va 50 — talaffuz farqi",
+        "explanationUz": "Bu sonlar yozilishi ham, urg'usi ham boshqacha. Chalkashtirmang.",
+        "items": [
+          { "base": "fifteen", "baseUz": "o'n besh (15)", "derived": "/fɪfˈtiːn/", "derivedUz": "urg'u OXIRGI bo'g'inda", "note": "-teen bilan tugaydi" },
+          { "base": "fifty", "baseUz": "ellik (50)", "derived": "/ˈfɪfti/", "derivedUz": "urg'u BIRINCHI bo'g'inda", "note": "-ty bilan tugaydi" },
+          { "base": "thirteen", "baseUz": "o'n uch (13)", "derived": "/θɜːˈtiːn/", "derivedUz": "urg'u oxirda", "note": "" },
+          { "base": "thirty", "baseUz": "o'ttiz (30)", "derived": "/ˈθɜːti/", "derivedUz": "urg'u boshda", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Ko'plikdan keyin egalik — faqat apostrof",
+        "explanationUz": "-s bilan tugagan ko'plikka egalik uchun faqat ' qo'yiladi.",
+        "items": [
+          { "base": "penguins", "baseUz": "pingvinlar", "derived": "penguins' eggs", "derivedUz": "pingvinlarning tuxumi", "note": "s dan keyin faqat '" },
+          { "base": "dolphins", "baseUz": "delfinlar", "derived": "dolphins' babies", "derivedUz": "delfinlarning bolasi", "note": "" },
+          { "base": "children", "baseUz": "bolalar", "derived": "children's books", "derivedUz": "bolalarning kitobi", "note": "s YO'Q ko'plik → 's" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "42-betdagi asosiy qoliplar.",
+    "patterns": [
+      {
+        "formula": "I can hear + a + hayvon. / I can't hear + a + hayvon.",
+        "exampleEn": "I can hear a hen. I can't hear a crocodile.",
+        "exampleUz": "Men tovuqni eshitayapman. Men timsohni eshitmayapman.",
+        "explanationUz": "'can' dan keyin fe'l asos shaklida. Hayvon BIRLIKDA, artikl bilan."
+      },
+      {
+        "formula": "Hayvon (ko'plik) + are + wild/farm + animals.",
+        "exampleEn": "Hens are farm animals. Crocodiles are wild animals.",
+        "exampleUz": "Tovuqlar — uy hayvonlari. Timsohlar — yovvoyi hayvonlar.",
+        "explanationUz": "Turkumlashda ega KO'PLIKDA bo'ladi."
+      },
+      {
+        "formula": "A + hayvon + HAS + bolalari (ko'plik).",
+        "exampleEn": "A cat has kittens. A duck has ducklings.",
+        "exampleUz": "Mushukning mushukchalari bo'ladi. O'rdakning o'rdakchalari bo'ladi.",
+        "explanationUz": "Birlik ega → HAS. Bolalar nomi ko'plikda, artiklsiz."
+      },
+      {
+        "formula": "What do they look like? — They have got + tashqi ko'rinish.",
+        "exampleEn": "What do they look like? They have got thick, grey fur and a big, black nose.",
+        "exampleUz": "Ular qanday ko'rinadi? Ularning qalin, kulrang juni va katta qora burni bor.",
+        "explanationUz": "'look like' = ...ga o'xshamoq, ...day ko'rinmoq.\nDIQQAT: 'What do they like?' (nimani yoqtiradi?) — BUTUNLAY boshqa savol."
+      },
+      {
+        "formula": "Mothers carry their young IN a pouch FOR the first six months.",
+        "exampleEn": "Mothers carry their young in a small pouch for the first six months of their lives.",
+        "exampleUz": "Onalari bolasini birinchi olti oy davomida kichik xaltada olib yuradi.",
+        "explanationUz": "'young' bu yerda OT — 'bola, bolalari' (hayvonlar haqida).\n'for + davomiylik' — necha vaqt davomida."
+      },
+      {
+        "formula": "They live alone and eat + ovqat.",
+        "exampleEn": "They live alone and eat eucalyptus leaves.",
+        "exampleUz": "Ular yolg'iz yashaydi va evkalipt bargini yeydi.",
+        "explanationUz": "'alone' = yolg'iz. 'in groups' ning aksi.\n'leaf' → ko'plikda 'leaves' (f → ves)."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "to feed somebody on milk", "uz": "sut bilan boqmoq" },
+    { "en": "friendly to somebody", "uz": "kimgadir do'stona" },
+    { "en": "an animal noise", "uz": "hayvon tovushi" },
+    { "en": "to tick", "uz": "belgilamoq (✓)" },
+    { "en": "wild animals", "uz": "yovvoyi hayvonlar" },
+    { "en": "farm animals", "uz": "uy (xo'jalik) hayvonlari" },
+    { "en": "a sheep", "uz": "qo'y" },
+    { "en": "a koala", "uz": "koala" },
+    { "en": "to carry", "uz": "olib yurmoq" },
+    { "en": "young (ot)", "uz": "bola, bolalari (hayvonning)" },
+    { "en": "a pouch", "uz": "xalta (qorindagi)" },
+    { "en": "to climb", "uz": "tirmashib chiqmoq" },
+    { "en": "sharp claws", "uz": "o'tkir tirnoqlar" },
+    { "en": "a nose", "uz": "burun" },
+    { "en": "the top of a tree", "uz": "daraxtning tepasi" },
+    { "en": "a eucalyptus tree", "uz": "evkalipt daraxti" },
+    { "en": "leaves", "uz": "barglar" },
+    { "en": "alone", "uz": "yolg'iz" },
+    { "en": "eastern", "uz": "sharqiy" },
+    { "en": "Australia", "uz": "Avstraliya" },
+    { "en": "a kitten", "uz": "mushukcha" },
+    { "en": "a puppy", "uz": "kuchukcha" },
+    { "en": "a chick", "uz": "jo'ja" },
+    { "en": "a duckling", "uz": "o'rdakcha" },
+    { "en": "a hen", "uz": "tovuq" },
+    { "en": "a duck", "uz": "o'rdak" },
+    { "en": "a statement", "uz": "gap, bayonot" },
+    { "en": "a chimpanzee", "uz": "shimpanze" },
+    { "en": "a sea lion", "uz": "dengiz sheri" },
+    { "en": "an elephant", "uz": "fil" },
+    { "en": "under the water", "uz": "suv ostida" },
+    { "en": "to check your answers", "uz": "javoblaringizni tekshirmoq" }
+  ]
+}

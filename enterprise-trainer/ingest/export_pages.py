@@ -459,7 +459,16 @@ def _dispatch(t, ex, items):
                 out.append(task(i["textEn"], i["short"], prompt_uz="Qisqa shakl",
                                 why=i.get("whyUz", "")))
             else:
-                out.append(task(i["textEn"], i["answer"], why=i.get("whyUz", "")))
+                # Bitta qatorda bir NECHA bo'shliq bo'lishi mumkin ->
+                # `answers` ro'yxati. Aks holda bittasi yo'qolib ketardi.
+                answers = i.get("answers") or (
+                    [i["answer"]] if i.get("answer") else [])
+                hint = i.get("hintUz") or i.get("promptUz", "")
+                for k, a in enumerate(answers):
+                    prompt = i["textEn"] if len(answers) == 1 else \
+                        f"{i['textEn']}  [{k + 1}-bo'shliq]"
+                    out.append(task(prompt, a, prompt_uz=hint,
+                                    why=i.get("whyUz", "")))
         return "text", out
 
     if t in ("dialogue_fill", "dialogue_gap_fill", "text_gap_fill"):
