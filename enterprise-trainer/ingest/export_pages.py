@@ -40,6 +40,7 @@ KNOWN_TYPES = {
     "dialogue_fill", "dialogue_gap_fill", "text_gap_fill",
     "complete_table", "prompt_to_dialogue", "picture_question_answer",
     "photo_age_sentence", "picture_fill_and_ask", "read_label_answer",
+    "label_picture",
     "listen_fill_profile", "table_fill", "table_fill_from_list",
     "write_sentences", "guided_writing", "table_to_paragraph",
     "make_sentences_game", "speech_bubbles", "listen_repeat",
@@ -556,6 +557,20 @@ def _dispatch(t, ex, items):
             task(i["country"], i["capital"], prompt_uz=i.get("countryUz", ""),
                  why=f"{i.get('landmark','')}", speak=i["country"],
                  visual=i.get("image", ""))
+            for i in items if not i.get("given")
+        ]
+
+    if t == "label_picture":
+        # Rasmdagi strelkalarni so'zlar ro'yxatidan belgilash.
+        # Savol — strelka raqami va u ko'rsatgan joyning o'zbekcha izohi;
+        # javob — tana qismi (yoki boshqa) nomi. Variantlar ro'yxatdan olinadi.
+        pool = [str(w) for w in ex.get("wordList", [])] or \
+               [str(i["answer"]) for i in items]
+        return "choice", [
+            task(f"{i['number']}-strelka", i["answer"],
+                 prompt_uz=i.get("hintUz", "Rasmdagi qismni tanlang"),
+                 options=[str(i["answer"])] + distractors(i["answer"], pool),
+                 why=i.get("whyUz", ""), speak="")
             for i in items if not i.get("given")
         ]
 
