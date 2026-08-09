@@ -323,9 +323,16 @@ def _dispatch(t, ex, items):
         return "match", [{"left": p["cardinal"], "right": p["ordinal"]} for p in pairs]
 
     if t == "listen_match":
+        # Yorliqda NIMA borligi yozilishi shart — "Rasm A" o'zi hech nima
+        # anglatmaydi, o'quvchi kitobsiz mashqni tushunmaydi.
         return "match", [
-            {"left": f"Rasm {a['letter']}", "right": f"Matn {a['number']}",
-             "note": a.get("why", "")}
+            {
+                "left": f"Rasm {a['letter']}"
+                        + (f" — {a['pictureDescUz']}" if a.get("pictureDescUz") else ""),
+                "right": f"Matn {a['number']}"
+                         + (f" — {a['textDescUz']}" if a.get("textDescUz") else ""),
+                "note": a.get("why", ""),
+            }
             for a in ex.get("answers", [])
         ]
 

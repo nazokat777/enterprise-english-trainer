@@ -124,28 +124,36 @@
           "type": "listen_match",
           "hasAudio": true,
           "instructionEn": "Listen and match the letters to the numbers you hear.",
-          "instructionUz": "Eshiting va harflarni eshitgan raqamlaringizga moslang.",
+          "instructionUz": "Kitobingizning 6-betini oching. Rasmlarni mos matnlarga moslang.",
           "explanationUz": "Har rasm (A, B, C, D) 4 ta matndan biriga to'g'ri keladi. Audio'da matn raqami aytiladi.",
           "answers": [
             {
               "letter": "A",
               "number": 2,
-              "why": "Diego va Marco — dehqonlar (Braziliya)"
+              "why": "Diego va Marco — dehqonlar (Braziliya)",
+              "pictureDescUz": "dehqonlar, ketmon bilan",
+              "textDescUz": "Diego va Marco — dehqonlar"
             },
             {
               "letter": "B",
               "number": 4,
-              "why": "Veena — o'quvchi (Hindiston)"
+              "why": "Veena — o'quvchi (Hindiston)",
+              "pictureDescUz": "rangli ro'mol o'ragan qiz",
+              "textDescUz": "Veena — o'quvchi"
             },
             {
               "letter": "C",
               "number": 3,
-              "why": "Carlos va Rosa — raqqoslar (Ispaniya)"
+              "why": "Carlos va Rosa — raqqoslar (Ispaniya)",
+              "pictureDescUz": "flamenko libosidagi juftlik",
+              "textDescUz": "Carlos va Rosa — raqqoslar"
             },
             {
               "letter": "D",
               "number": 1,
-              "why": "Fergus — musiqachi (Shotlandiya)"
+              "why": "Fergus — musiqachi (Shotlandiya)",
+              "pictureDescUz": "kilt kiygan, jiroq chalayotgan erkak",
+              "textDescUz": "Fergus — musiqachi"
             }
           ]
         }

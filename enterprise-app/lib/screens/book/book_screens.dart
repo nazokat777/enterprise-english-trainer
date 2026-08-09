@@ -5,6 +5,7 @@ import '../../main.dart';
 import '../../theme.dart';
 import '../../widgets/entrance.dart';
 import '../../widgets/pressable3d.dart';
+import 'book_page_viewer.dart';
 import 'exercise_player.dart';
 import 'reference_screens.dart';
 
@@ -594,7 +595,14 @@ class BookPageScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 18),
+            const SizedBox(height: 14),
+            // Bet surati mavjud bo'lsagina ko'rinadi (assets/book_pages/).
+            BookPageButton(
+              book: page.book,
+              bookLabel: page.bookLabel,
+              page: page.bookPage,
+            ),
+            const SizedBox(height: 4),
             for (final s in page.sections) ..._section(context, s),
           ],
         ),
