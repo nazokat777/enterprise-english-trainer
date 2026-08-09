@@ -501,27 +501,42 @@
    {
     "pdf_page": 64,
     "image": "data/pages/coursebook/p064.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 60,
+    "unit": 952,
+    "json": "data/pages/coursebook/p064.json"
    },
    {
     "pdf_page": 65,
     "image": "data/pages/coursebook/p065.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 61,
+    "unit": 952,
+    "json": "data/pages/coursebook/p065.json"
    },
    {
     "pdf_page": 66,
     "image": "data/pages/coursebook/p066.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 0,
+    "unit": 904,
+    "json": "data/pages/coursebook/p066.json"
    },
    {
     "pdf_page": 67,
     "image": "data/pages/coursebook/p067.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 0,
+    "unit": 904,
+    "json": "data/pages/coursebook/p067.json"
    },
    {
     "pdf_page": 68,
     "image": "data/pages/coursebook/p068.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 62,
+    "unit": 9,
+    "json": "data/pages/coursebook/p068.json"
    },
    {
     "pdf_page": 69,
@@ -979,7 +994,7 @@
     "status": "pending"
    }
   ],
-  "done": 56
+  "done": 61
  },
  "workbook": {
   "pdf": "data/pdfs/enterprise-1-workbook.pdf",
@@ -1995,9 +2010,9 @@
   "done": 34
  },
  "summary": {
-  "done": 122,
+  "done": 127,
   "total": 316,
-  "percent": 38.6,
+  "percent": 40.2,
   "unitsDone": [
    1,
    2,
@@ -2007,10 +2022,13 @@
    6,
    7,
    8,
+   9,
    901,
    902,
    903,
-   951
+   904,
+   951,
+   952
   ]
  }
 }
