@@ -345,6 +345,131 @@
    ]
   },
   {
+   "id": "u5-coursebook-36-7",
+   "kind": "vocabulary",
+   "title": "Feelings about work",
+   "titleUz": "Ish haqidagi his-tuyg'ular",
+   "book": "coursebook",
+   "bookPage": 36,
+   "exercises": [
+    {
+     "ref": "8a",
+     "instructionEn": "Label the pictures with the adjectives in the list.",
+     "instructionUz": "Rasmlarni ro'yxatdagi sifatlar bilan belgilang.",
+     "explanationUz": "RO'YXAT: happy, tired, stressed, satisfied, bored\n\nBESHTA HIS-TUYG'U:\n  happy     — baxtli, xursand\n  tired     — charchagan\n  stressed  — asabiy, siqilgan\n  satisfied — mamnun, qoniqqan\n  bored     — zerikkan\n\nHAMMASI -ED bilan tugaydi (happy dan tashqari) —\nchunki ular ODAM his qilgan holatni bildiradi.\n\nESLATMA (Unit 5, 34-bet):\n  -ed → ODAM his qiladi:  I am bored. (zerikkanman)\n  -ing → NARSA shunday:   The film is boring. (film zerikarli)",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 36,
+     "bookRef": "Coursebook, 36-bet, 8a-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "Picture 1 — a young woman with a wide, warm smile",
+       "answer": "happy",
+       "promptUz": "1-rasm: keng va iliq tabassumli yosh ayol",
+       "options": [
+        "happy",
+        "bored",
+        "stressed",
+        "tired",
+        "satisfied"
+       ],
+       "speak": "Picture 1 — a young woman with a wide, warm smile"
+      },
+      {
+       "prompt": "Picture 2 — a man in a suit with a blank, uninterested expression, holding a bag",
+       "answer": "bored",
+       "promptUz": "2-rasm: kostyumdagi erkak, befarq va qiziqishsiz ifoda, qo'lida sumka",
+       "options": [
+        "happy",
+        "bored",
+        "stressed",
+        "tired",
+        "satisfied"
+       ],
+       "speak": "Picture 2 — a man in a suit with a blank, uninterested expression, holding a bag"
+      },
+      {
+       "prompt": "Picture 3 — a man pulling at his face, grimacing under pressure",
+       "answer": "stressed",
+       "promptUz": "3-rasm: yuzini tortayotgan, siqilgan erkak",
+       "options": [
+        "happy",
+        "bored",
+        "stressed",
+        "tired",
+        "satisfied"
+       ],
+       "speak": "Picture 3 — a man pulling at his face, grimacing under pressure"
+      },
+      {
+       "prompt": "Picture 4 — a man with his hand on his forehead, eyes closed, exhausted",
+       "answer": "tired",
+       "promptUz": "4-rasm: qo'lini peshonasiga qo'ygan, ko'zi yumuq, holdan toygan erkak",
+       "options": [
+        "happy",
+        "bored",
+        "stressed",
+        "tired",
+        "satisfied"
+       ],
+       "speak": "Picture 4 — a man with his hand on his forehead, eyes closed, exhausted"
+      },
+      {
+       "prompt": "Picture 5 — a well-dressed man standing calmly and confidently",
+       "answer": "satisfied",
+       "promptUz": "5-rasm: chiroyli kiyingan, xotirjam va ishonchli turgan erkak",
+       "options": [
+        "happy",
+        "bored",
+        "stressed",
+        "tired",
+        "satisfied"
+       ],
+       "speak": "Picture 5 — a well-dressed man standing calmly and confidently"
+      }
+     ]
+    },
+    {
+     "ref": "8b",
+     "instructionEn": "Match the adjectives to the reasons. Make sentences joining them with because, as in the example.",
+     "instructionUz": "Sifatlarni sabablarga moslang. 'because' bilan qo'shib gap tuzing.",
+     "explanationUz": "NAMUNA (kitobda strelka bilan ko'rsatilgan):\n  I feel happy because I enjoy my work.\n\nQOLIP:\n  I feel + SIFAT + because + SABAB.\n\nSABABLAR:\n  I enjoy my work.              — ishimdan zavqlanaman\n  I work long hours.            — ko'p soat ishlayman\n  I earn a lot of money.        — ko'p pul topaman\n  I talk to angry customers.    — jahldor mijozlar bilan gaplashaman\n  I do the same things every day. — har kuni bir xil ish qilaman\n\nMANTIQ BILAN MOSLANG:\n  ko'p ishlash    → charchash (tired)\n  jahldor mijoz   → asabiylashish (stressed)\n  bir xil ish     → zerikish (bored)\n  ko'p pul        → mamnunlik (satisfied)\n  zavq            → baxt (happy)\n\n'feel' dan keyin SIFAT keladi (ravish emas):\n  ✅ I feel happy.   ❌ I feel happily.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 36,
+     "bookRef": "Coursebook, 36-bet, 8b-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "tired ← I work long hours",
+       "answer": "I feel tired because I work long hours.",
+       "promptUz": "O'zimni charchagan his qilaman, chunki ko'p soat ishlayman.",
+       "speak": "tired ← I work long hours"
+      },
+      {
+       "prompt": "satisfied ← I earn a lot of money",
+       "answer": "I feel satisfied because I earn a lot of money.",
+       "promptUz": "O'zimni mamnun his qilaman, chunki ko'p pul topaman.",
+       "speak": "satisfied ← I earn a lot of money"
+      },
+      {
+       "prompt": "stressed ← I talk to angry customers",
+       "answer": "I feel stressed because I talk to angry customers.",
+       "promptUz": "O'zimni asabiy his qilaman, chunki jahldor mijozlar bilan gaplashaman.",
+       "speak": "stressed ← I talk to angry customers"
+      },
+      {
+       "prompt": "bored ← I do the same things every day",
+       "answer": "I feel bored because I do the same things every day.",
+       "promptUz": "O'zimni zerikkan his qilaman, chunki har kuni bir xil ish qilaman.",
+       "speak": "bored ← I do the same things every day"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u5-coursebook-34-1",
    "kind": "reading",
    "title": "Reading — Around the Clock with Bob Ellis",
@@ -657,6 +782,292 @@
    ]
   },
   {
+   "id": "u5-coursebook-36-5",
+   "kind": "reading",
+   "title": "Reading & Listening — Welcome to Holland",
+   "titleUz": "O'qish va tinglash — Gollandiyaga xush kelibsiz",
+   "book": "coursebook",
+   "bookPage": 36,
+   "exercises": [
+    {
+     "ref": "7-matn",
+     "instructionEn": "Read the text, then listen and fill in the missing times.",
+     "instructionUz": "Matnni o'qing, so'ng tinglab, tushib qolgan vaqtlarni yozing.",
+     "explanationUz": "MATN — Gollandiyadagi ish vaqtlari haqida sayyohlar uchun ma'lumot.\n\nTO'RT BO'LIM:\n  Shops              — do'konlar\n  Banks and Post Offices — banklar va pochta bo'limlari\n  Chemists           — dorixonalar\n  Restaurants        — restoranlar\n\nVAQT PREDLOGLARI (bu matndagi asosiy grammatika):\n  FROM ... UNTIL ... — ...dan ...gacha\n  ON Saturday        — shanba kuni\n  Monday TO Friday   — dushanbadan jumagacha\n\nAM va PM:\n  am — tushdan OLDIN (00:00–11:59)\n  pm — tushdan KEYIN (12:00–23:59)\n  noon — tush payti, soat 12:00",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 36,
+     "bookRef": "Coursebook, 36-bet, 7-mashq (matn)",
+     "audioNoteUz": "Kitobda audio bor. Audiosiz vaqtlarni mashqning savollaridan va matn mantiqidan topish mumkin.",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "Shops: Shops are open Monday to Friday from 9 am until a) ____ pm, ...",
+       "answer": "6",
+       "promptUz": "Do'konlar odatda kechqurun soat nechada yopiladi?",
+       "whyUz": "Yevropada do'konlar odatda 18:00 (6 pm) da yopiladi. 'Late-night shopping' payshanba va jumaga alohida aytilgan — demak boshqa kunlari oddiy vaqt.",
+       "speak": "Shops: Shops are open Monday to Friday from 9 am until a) ____ pm, ..."
+      },
+      {
+       "prompt": "Shops: ... and on Saturday from 9 am until 4 or b) ____ pm.",
+       "answer": "5",
+       "promptUz": "'4 or ...' — keyingi soat",
+       "whyUz": "Matnda '4 or ...' — demak keyingi soat, ya'ni 5. Shanbada do'konlar ertaroq yopiladi.",
+       "speak": "Shops: ... and on Saturday from 9 am until 4 or b) ____ pm."
+      },
+      {
+       "prompt": "Banks: Banks are open Monday to Friday from c) ____ am until 5 pm ...",
+       "answer": "9",
+       "promptUz": "Banklar odatda ertalab soat nechada ochiladi?",
+       "whyUz": "Banklar odatda 9:00 da ochiladi — do'konlar bilan bir xil.",
+       "speak": "Banks: Banks are open Monday to Friday from c) ____ am until 5 pm ..."
+      },
+      {
+       "prompt": "Post: Post offices are open Monday to Friday from 8:30 am until d) ____ pm, ...",
+       "answer": "5",
+       "promptUz": "Pochta bo'limlari kechqurun soat nechada yopiladi?",
+       "whyUz": "Pochta bo'limlari banklar bilan bir xil — 17:00 (5 pm) da yopiladi.",
+       "speak": "Post: Post offices are open Monday to Friday from 8:30 am until d) ____ pm, ..."
+      },
+      {
+       "prompt": "Chemists: Chemists are open Monday to Friday from 8 am until e) ____ pm.",
+       "answer": "6",
+       "promptUz": "Dorixonalar kechqurun soat nechada yopiladi?",
+       "whyUz": "Dorixonalar do'konlar bilan bir xil — 18:00 (6 pm). Ular ertaroq (8:00) ochiladi.",
+       "speak": "Chemists: Chemists are open Monday to Friday from 8 am until e) ____ pm."
+      },
+      {
+       "prompt": "Restaurants: Restaurants are generally open for lunch from f) ____ am until 3 pm ...",
+       "answer": "12",
+       "promptUz": "Tushlik soat nechada boshlanadi?",
+       "whyUz": "Tushlik tush paytida — 12:00 dan boshlanadi. Matnda 'am' yozilgan, demak 12 am (tush payti).",
+       "speak": "Restaurants: Restaurants are generally open for lunch from f) ____ am until 3 pm ..."
+      },
+      {
+       "prompt": "Restaurants: ... and for dinner from g) ____ until 10 pm.",
+       "answer": "6",
+       "promptUz": "Kechki ovqat soat nechada boshlanadi? (5-savolga qarang)",
+       "whyUz": "5-savol aynan shuni so'raydi. Yevropada kechki ovqat 18:00 (6 pm) dan boshlanadi.",
+       "speak": "Restaurants: ... and for dinner from g) ____ until 10 pm."
+      }
+     ]
+    },
+    {
+     "ref": "7",
+     "instructionEn": "Read the text again and answer the following questions.",
+     "instructionUz": "Matnni qayta o'qing va savollarga javob bering.",
+     "explanationUz": "SAVOLLARDA DIQQAT QILING:\n\n  'What time do shops CLOSE?' — YOPILISH vaqti (until ...)\n  'What time do chemists OPEN?' — OCHILISH vaqti (from ...)\n\n  'on Tuesday' — seshanba 'Monday to Friday' ichiga kiradi,\n  demak oddiy ish kuni vaqti.\n\n  'Which day ...?' — QAYSI KUN? Javob kun nomi bo'ladi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 36,
+     "bookRef": "Coursebook, 36-bet, 7-mashq (savollar)",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  What time do shops close on Saturday?",
+       "answer": "They close at 4 or 5 pm.",
+       "whyUz": "Matnda: 'on Saturday from 9 am until 4 or 5 pm'. 'close' = yopilish, ya'ni 'until' dan keyingi vaqt.",
+       "speak": "1  What time do shops close on Saturday?"
+      },
+      {
+       "prompt": "2  What time do banks close on Tuesday?",
+       "answer": "They close at 5 pm.",
+       "whyUz": "Seshanba 'Monday to Friday' ichida. Matnda: 'until 5 pm'. Kechroq faqat payshanba va jumada.",
+       "speak": "2  What time do banks close on Tuesday?"
+      },
+      {
+       "prompt": "3  Which day do post offices open from 8:30 until noon?",
+       "answer": "On Saturday.",
+       "whyUz": "Matnda: 'often on Saturday from 8:30 am until noon'. 'noon' = tush, soat 12.",
+       "speak": "3  Which day do post offices open from 8:30 until noon?"
+      },
+      {
+       "prompt": "4  What time do chemists open on Tuesday?",
+       "answer": "They open at 8 am.",
+       "whyUz": "Matnda: 'Monday to Friday from 8 am'. 'open' = ochilish, ya'ni 'from' dan keyingi vaqt.",
+       "speak": "4  What time do chemists open on Tuesday?"
+      },
+      {
+       "prompt": "5  What time do restaurants open for dinner?",
+       "answer": "They open at 6 pm.",
+       "whyUz": "Matnda: 'for dinner from 6 until 10 pm'.",
+       "speak": "5  What time do restaurants open for dinner?"
+      },
+      {
+       "prompt": "6  Are there any restaurants in Holland which stay open late?",
+       "answer": "Yes, there are. There are some restaurants which stay open late in the big cities.",
+       "whyUz": "Ha/yo'q savoli → qisqa javob + to'liq gap. 'stay open' = ochiq qolmoq.",
+       "speak": "6  Are there any restaurants in Holland which stay open late?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5-coursebook-37-8",
+   "kind": "reading",
+   "title": "Kim's daily routine",
+   "titleUz": "Kimning kundalik tartibi",
+   "book": "coursebook",
+   "bookPage": 37,
+   "exercises": [
+    {
+     "ref": "9",
+     "instructionEn": "Read the text about Kim's daily routine and fill in the gaps using phrases from the list. Some of the phrases do not match any of the pictures.",
+     "instructionUz": "Kimning kundalik tartibi haqidagi matnni o'qing va ro'yxatdagi iboralar bilan bo'shliqlarni to'ldiring. Ba'zi iboralar hech qaysi rasmga to'g'ri kelmaydi.",
+     "explanationUz": "RO'YXAT (13 ibora):\n  catch the bus, get up, have a shower,\n  have breakfast/lunch/dinner, watch TV, go to bed,\n  do her homework, get dressed, leave home,\n  finish work, read a book, go to work, go dancing\n\nDIQQAT — HAMMASI ISHLATILMAYDI!\nKim — O'QUVCHI, ishchi emas. Shuning uchun:\n  finish work, go to work — MOS EMAS\n  go dancing — rasmda yo'q\n\nBARCHA FE'LLAR 3-SHAXS BIRLIKDA:\n  get up   → gets up\n  have     → has\n  catch    → catches\n  do       → does\n  watch    → watches\n  read     → reads\n  go       → goes\n\nMATNDA VAQT BELGILARI:\n  7:30 turish → 8:15 uydan chiqish → 8:45 maktabda →\n  9:00 dars boshlanadi → 12:30 tushlik → 3:30 dars tugaydi →\n  4:00 uyda → 6:30 kechki ovqat → 8:30 kitob → 9:00 uyqu",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 37,
+     "bookRef": "Coursebook, 37-bet, 9-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "Kim 1) ____ at 7:30 in the morning every weekday.",
+       "answer": "gets up",
+       "promptUz": "Rasmda: kerishayotgan qiz. Kun boshlanishi",
+       "whyUz": "'get up' → 3-shaxs 'gets up'. 'every weekday' = har ish kuni.",
+       "speak": "Kim 1) ____ at 7:30 in the morning every weekday."
+      },
+      {
+       "prompt": "She gets dressed, then she 2) ____ .",
+       "answer": "has breakfast",
+       "promptUz": "Rasmda: ovqat yeyayotgan qiz, ertalab",
+       "whyUz": "Kiyinishdan keyin — nonushta. 'have breakfast' → 'has breakfast'. Artikl YO'Q.",
+       "speak": "She gets dressed, then she 2) ____ ."
+      },
+      {
+       "prompt": "She leaves home at about 8:15 and 3) ____ to school.",
+       "answer": "catches the bus",
+       "promptUz": "Rasmda: maktab avtobusi",
+       "whyUz": "'catch the bus' → 'catches the bus' (-ch → -es).",
+       "speak": "She leaves home at about 8:15 and 3) ____ to school."
+      },
+      {
+       "prompt": "She 4) ____ at school at 12:30, then has a few more lessons.",
+       "answer": "has lunch",
+       "promptUz": "Rasmda: sendvich yeyayotgan qiz, 12:30 da",
+       "whyUz": "12:30 — tushlik vaqti. 'have lunch' → 'has lunch'.",
+       "speak": "She 4) ____ at school at 12:30, then has a few more lessons."
+      },
+      {
+       "prompt": "She 5) ____ , then, at about 6:30 in the evening, she has dinner.",
+       "answer": "does her homework",
+       "promptUz": "Rasmda: stolda yozayotgan qiz",
+       "whyUz": "Maktabdan kelgach uy vazifasi. 'do her homework' → 'does her homework' (-o → -es).",
+       "speak": "She 5) ____ , then, at about 6:30 in the evening, she has dinner."
+      },
+      {
+       "prompt": "After that, she usually 6) ____ .",
+       "answer": "watches TV",
+       "promptUz": "Rasmda: televizor",
+       "whyUz": "'watch TV' → 'watches TV' (-ch → -es). 'usually' fe'ldan oldin.",
+       "speak": "After that, she usually 6) ____ ."
+      },
+      {
+       "prompt": "At about 8:30, Kim 7) ____ , ...",
+       "answer": "reads a book",
+       "promptUz": "Rasmda: chiroq yonida o'qish",
+       "whyUz": "'read a book' → 'reads a book'. Yotishdan oldingi mashg'ulot.",
+       "speak": "At about 8:30, Kim 7) ____ , ..."
+      },
+      {
+       "prompt": "... then she 8) ____ at about 9 o'clock.",
+       "answer": "goes to bed",
+       "promptUz": "Rasmda: karavot",
+       "whyUz": "'go to bed' → 'goes to bed'. 'the' YO'Q!",
+       "speak": "... then she 8) ____ at about 9 o'clock."
+      }
+     ]
+    },
+    {
+     "ref": "9b",
+     "instructionEn": "Some of the phrases do not match any of the pictures. Which ones?",
+     "instructionUz": "Qaysi iboralar hech qaysi rasmga to'g'ri kelmadi?",
+     "explanationUz": "UCHTA IBORA ORTIQCHA QOLDI.\n\nNEGA? Chunki Kim — MAKTAB O'QUVCHISI:\n  go to work   — u ishga bormaydi, maktabga boradi\n  finish work  — uning ishi yo'q, darsi bor (school finishes)\n  go dancing   — rasmda bunday mashg'ulot yo'q\n\nBu iboralar baribir Unit 5 lug'atiga kiradi va\n12b-mashqda kerak bo'ladi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 37,
+     "bookRef": "Coursebook, 37-bet, 9-mashq (ortiqcha iboralar)",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "ishga bormoq",
+       "answer": "go to work",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "go to work",
+        "finish work",
+        "go dancing",
+        "have a shower"
+       ],
+       "whyUz": "Kim o'quvchi — u 'go to school' qiladi. 'the' YO'Q: go to work."
+      },
+      {
+       "prompt": "ishni tugatmoq",
+       "answer": "finish work",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "finish work",
+        "go to work",
+        "go dancing",
+        "have a shower"
+       ],
+       "whyUz": "Kim uchun 'school finishes' — dars tugaydi."
+      },
+      {
+       "prompt": "raqsga bormoq",
+       "answer": "go dancing",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "go dancing",
+        "go to work",
+        "finish work",
+        "have a shower"
+       ],
+       "whyUz": "Rasmda yo'q. 'go + fe'l-ing' — mashg'ulotga borish qolipi."
+      },
+      {
+       "prompt": "dush qabul qilmoq",
+       "answer": "have a shower",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "have a shower",
+        "go to work",
+        "finish work",
+        "go dancing"
+       ],
+       "whyUz": "Ro'yxatda bor, lekin matnda ishlatilmagan (Kim ertalab dush qabul qilishi aytilmagan)."
+      },
+      {
+       "prompt": "kiyinmoq",
+       "answer": "get dressed",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "get dressed",
+        "go to work",
+        "finish work",
+        "go dancing"
+       ],
+       "whyUz": "Matnda BERILGAN: 'She gets dressed'."
+      },
+      {
+       "prompt": "uydan chiqmoq",
+       "answer": "leave home",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "leave home",
+        "go to work",
+        "finish work",
+        "go dancing"
+       ],
+       "whyUz": "Matnda BERILGAN: 'She leaves home at about 8:15'. 'leave' — 'to' kerak emas."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u5-coursebook-35-4",
    "kind": "grammar_theory",
    "title": "Language Development — Telling the Time",
@@ -943,6 +1354,241 @@
    }
   },
   {
+   "id": "u5-coursebook-37-10",
+   "kind": "grammar_theory",
+   "title": "Grammar: Adverbs of Frequency",
+   "titleUz": "Grammatika: takrorlanish ravishlari",
+   "book": "coursebook",
+   "bookPage": 37,
+   "exercises": [
+    {
+     "ref": "11",
+     "instructionEn": "Study the examples, then underline the correct words to complete the rule.",
+     "instructionUz": "Namunalarni o'rganing, so'ng qoidani to'ldirish uchun to'g'ri so'zlarni tanlang.",
+     "explanationUz": "KITOBDAGI NAMUNALAR:\n  I USUALLY get up at half past seven in the morning.\n  I am NEVER late for school.\n\nBirinchi gapda 'usually' fe'l 'get up' dan OLDIN.\nIkkinchi gapda 'never' fe'l 'am' dan KEYIN.\n\nQOIDA: 'Adverbs of frequency usually come ____ the main verb,\nbut ____ the verb to be.'",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 37,
+     "bookRef": "Coursebook, 37-bet, 11-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "Adverbs of frequency usually come ____ the main verb.",
+       "answer": "before",
+       "promptUz": "Asosiy fe'lga nisbatan qayerda turadi?",
+       "options": [
+        "before",
+        "after"
+       ],
+       "whyUz": "Namunada: 'I USUALLY GET UP' — ravish fe'ldan OLDIN."
+      },
+      {
+       "prompt": "... but ____ the verb \"to be\".",
+       "answer": "after",
+       "promptUz": "'to be' fe'liga nisbatan qayerda turadi?",
+       "options": [
+        "after",
+        "before"
+       ],
+       "whyUz": "Namunada: 'I AM NEVER late' — ravish 'am' dan KEYIN. 'to be' — istisno."
+      }
+     ]
+    },
+    {
+     "ref": "11-mashq",
+     "instructionEn": "Put the adverb in the correct place.",
+     "instructionUz": "Ravishni to'g'ri joyga qo'ying.",
+     "explanationUz": "Har bir gapda fe'l turini aniqlang:\n  'to be' (am/is/are) → ravish KEYIN\n  boshqa fe'l         → ravish OLDIN",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 37,
+     "bookRef": "Coursebook, 37-bet, 11-mashq qoidasi",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "I get up at seven. (usually)",
+       "answer": "I usually get up at seven.",
+       "whyUz": "'get up' — oddiy fe'l → ravish OLDIN.",
+       "speak": "I get up at seven. (usually)"
+      },
+      {
+       "prompt": "I am late for school. (never)",
+       "answer": "I am never late for school.",
+       "whyUz": "'am' — 'to be' fe'li → ravish KEYIN.",
+       "speak": "I am late for school. (never)"
+      },
+      {
+       "prompt": "She watches TV in the evening. (often)",
+       "answer": "She often watches TV in the evening.",
+       "whyUz": "'watches' — oddiy fe'l → ravish OLDIN.",
+       "speak": "She watches TV in the evening. (often)"
+      },
+      {
+       "prompt": "He is happy. (always)",
+       "answer": "He is always happy.",
+       "whyUz": "'is' — 'to be' → ravish KEYIN.",
+       "speak": "He is happy. (always)"
+      },
+      {
+       "prompt": "They go to the cinema. (sometimes)",
+       "answer": "They sometimes go to the cinema.",
+       "whyUz": "'go' — oddiy fe'l → ravish OLDIN.",
+       "speak": "They go to the cinema. (sometimes)"
+      },
+      {
+       "prompt": "We are tired after school. (usually)",
+       "answer": "We are usually tired after school.",
+       "whyUz": "'are' — 'to be' → ravish KEYIN.",
+       "speak": "We are tired after school. (usually)"
+      },
+      {
+       "prompt": "Bob swims in the sea. (never)",
+       "answer": "Bob never swims in the sea.",
+       "whyUz": "'swims' — oddiy fe'l → ravish OLDIN. 'doesn't' KERAK EMAS.",
+       "speak": "Bob swims in the sea. (never)"
+      },
+      {
+       "prompt": "My father reads the newspaper. (rarely)",
+       "answer": "My father rarely reads the newspaper.",
+       "whyUz": "'reads' — oddiy fe'l → ravish OLDIN.",
+       "speak": "My father reads the newspaper. (rarely)"
+      }
+     ]
+    },
+    {
+     "ref": "12a",
+     "instructionEn": "Listen and tick the boxes. Then, make sentences, as in the example.",
+     "instructionUz": "Tinglang va katakchalarni belgilang. So'ng namunadagidek gap tuzing.",
+     "explanationUz": "JADVAL: 6 ta mashg'ulot × 6 ta chastota\n\n  MASHG'ULOTLAR:\n    go climbing    — toqqa chiqish\n    wash the car   — mashina yuvish\n    go to the gym  — sport zaliga borish\n    cook           — ovqat pishirish\n    go on a picnic — piknikka borish\n    go dancing     — raqsga borish\n\n  CHASTOTA SHKALASI:\n    never 0% | rarely 10% | sometimes 25% |\n    often 50% | usually 75% | always 100%\n\nNAMUNA (kitobda berilgan):\n  Laura NEVER goes climbing on Sundays.\n\nQOLIP:\n  Laura + RAVISH + fe'l+S + on Sundays.\n\nDIQQAT: 'on Sundays' — KO'PLIKDA, 'har yakshanba' degani.",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 37,
+     "bookRef": "Coursebook, 37-bet, 12a-mashq",
+     "audioNoteUz": "Kassetada Laura yakshanba kunlari nima qilishini aytadi. Audio yo'q — kitob faqat BITTA javobni beradi (go climbing = never). Quyidagi qolgan gaplar AUDIO JAVOBI EMAS, balki qolipni mashq qilish uchun namunalar.",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "wash the car — namuna qolip",
+       "answer": "Laura sometimes washes the car on Sundays.",
+       "promptUz": "Laura yakshanba kunlari ba'zan mashina yuvadi."
+      },
+      {
+       "prompt": "go to the gym — namuna qolip",
+       "answer": "Laura often goes to the gym on Sundays.",
+       "promptUz": "Laura yakshanba kunlari tez-tez sport zaliga boradi."
+      },
+      {
+       "prompt": "cook — namuna qolip",
+       "answer": "Laura always cooks on Sundays.",
+       "promptUz": "Laura yakshanba kunlari doim ovqat pishiradi."
+      },
+      {
+       "prompt": "go on a picnic — namuna qolip",
+       "answer": "Laura rarely goes on a picnic on Sundays.",
+       "promptUz": "Laura yakshanba kunlari kamdan-kam piknikka boradi."
+      },
+      {
+       "prompt": "go dancing — namuna qolip",
+       "answer": "Laura usually goes dancing on Sundays.",
+       "promptUz": "Laura yakshanba kunlari odatda raqsga boradi."
+      }
+     ]
+    },
+    {
+     "ref": "12b",
+     "instructionEn": "Talk about yourself. What do you never/rarely/sometimes/often/usually/always do on Sundays? Choose phrases from the list below. You can add some of your own ideas.",
+     "instructionUz": "O'zingiz haqingizda gapiring. Yakshanba kunlari nimani hech qachon / kamdan-kam / ba'zan / tez-tez / odatda / doim qilasiz?",
+     "explanationUz": "RO'YXAT (11 ibora):\n  do the washing-up  — idish yuvish\n  go jogging         — yugurishga chiqish\n  go to the cinema   — kinoga borish\n  go shopping        — xaridga borish\n  eat out            — tashqarida ovqatlanish\n  watch TV           — televizor ko'rish\n  go fishing         — baliq ovlashga borish\n  visit museums      — muzeylarga borish\n  go climbing        — toqqa chiqish\n  go windsurfing     — vindserfing qilish\n  meet friends       — do'stlar bilan uchrashish\n\nQOLIP (o'zingiz haqingizda — fe'l -s OLMAYDI):\n  I + RAVISH + fe'l + on Sundays.\n  I always meet friends on Sundays.\n\nDIQQAT — 'go' bilan mashg'ulotlar:\n  go jogging, go shopping, go fishing, go climbing,\n  go windsurfing, go dancing — hammasi 'go + -ing'\n  LEKIN: go TO the cinema (joyga borish — 'to' bilan)",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 37,
+     "bookRef": "Coursebook, 37-bet, 12b-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "always (100%)",
+       "answer": "I always meet friends on Sundays.",
+       "speak": "always (100%)"
+      },
+      {
+       "prompt": "usually (75%)",
+       "answer": "I usually watch TV on Sundays.",
+       "speak": "usually (75%)"
+      },
+      {
+       "prompt": "often (50%)",
+       "answer": "I often go shopping on Sundays.",
+       "speak": "often (50%)"
+      },
+      {
+       "prompt": "sometimes (25%)",
+       "answer": "I sometimes go to the cinema on Sundays.",
+       "speak": "sometimes (25%)"
+      },
+      {
+       "prompt": "rarely (10%)",
+       "answer": "I rarely go jogging on Sundays.",
+       "speak": "rarely (10%)"
+      },
+      {
+       "prompt": "never (0%)",
+       "answer": "I never go windsurfing on Sundays.",
+       "whyUz": "'never' o'zi inkor — 'don't' kerak emas.",
+       "speak": "never (0%)"
+      },
+      {
+       "prompt": "Uy ishlari haqida",
+       "answer": "I usually do the washing-up after dinner.",
+       "speak": "Uy ishlari haqida"
+      },
+      {
+       "prompt": "Ovqat haqida",
+       "answer": "We sometimes eat out at a restaurant.",
+       "whyUz": "'eat out' = tashqarida ovqatlanmoq.",
+       "speak": "Ovqat haqida"
+      },
+      {
+       "prompt": "Madaniyat haqida",
+       "answer": "I rarely visit museums, but I like them.",
+       "speak": "Madaniyat haqida"
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "titleUz": "Takrorlanish ravishlari va ularning O'RNI",
+    "explanationUz": "Takrorlanish ravishlari ish QANCHALIK TEZ-TEZ sodir bo'lishini\naytadi. Ular FOIZ shkalasi bo'ylab joylashadi:\n\n  never      0%    — hech qachon\n  rarely     10%   — kamdan-kam\n  sometimes  25%   — ba'zan\n  often      50%   — tez-tez\n  usually    75%   — odatda\n  always     100%  — doim\n\nENG MUHIM QOIDA — RAVISH QAYERDA TURADI:\n\n  ODDIY fe'l bilan → fe'ldan OLDIN\n    I USUALLY get up at half past seven.\n    She NEVER goes climbing.\n\n  'to be' fe'li bilan → fe'ldan KEYIN\n    I am NEVER late for school.\n    He is ALWAYS happy.\n\nYa'ni 'to be' — ISTISNO. Boshqa hamma fe'lda ravish oldinda.",
+    "rules": [
+     {
+      "uzRule": "Takrorlanish ravishlari asosiy fe'ldan OLDIN keladi.",
+      "enRule": "Adverbs of frequency usually come before the main verb.",
+      "examples": [
+       "I usually get up at half past seven in the morning.",
+       "She never goes climbing on Sundays."
+      ]
+     },
+     {
+      "uzRule": "LEKIN 'to be' fe'lidan KEYIN keladi.",
+      "enRule": "But they come after the verb \"to be\".",
+      "examples": [
+       "I am never late for school.",
+       "He is always happy."
+      ]
+     },
+     {
+      "uzRule": "Ular ish QANCHALIK TEZ-TEZ sodir bo'lishini aytadi.",
+      "enRule": "They tell us how often something happens.",
+      "examples": [
+       "never 0%, rarely 10%, sometimes 25%, often 50%, usually 75%, always 100%"
+      ]
+     }
+    ],
+    "warningUz": "'NEVER' O'ZI INKOR — ikkinchi inkor QO'SHILMAYDI:\n  ✅ She NEVER goes climbing.\n  ❌ She never doesn't go climbing.\n  ❌ She doesn't never go climbing.\n\nO'zbek tilida 'hech qachon BORMAYDI' — ikki inkor.\nIngliz tilida esa BITTA inkor yetarli.\n\nShuningdek 'rarely' ham inkor ma'nosini beradi:\n  ✅ I rarely watch TV.  (kamdan-kam ko'raman)",
+    "noteUz": "SAVOL VA INKORDA ravish QAYERDA:\n\n  Savol: Do you USUALLY get up early?\n         (ega va asosiy fe'l orasida)\n\n  Inkor: I don't USUALLY get up early.\n         ('don't' dan keyin)\n\n'Sometimes' va 'usually' gap BOSHIDA ham kelishi mumkin:\n  Sometimes I go to the cinema.\n  Usually I get up at seven.\nLekin 'always' va 'never' gap boshida KELMAYDI.",
+    "extraUz": "TAKRORLANISHNI BOSHQA YO'L BILAN AYTISH:\n  once a week      — haftada bir marta\n  twice a week     — haftada ikki marta\n  three times a week — haftada uch marta\n  every day        — har kuni\n  on Sundays       — yakshanba kunlari\n\nBu iboralar gap OXIRIDA turadi:\n  I go to the gym twice a week.\n  She goes climbing on Sundays."
+   }
+  },
+  {
    "id": "u5-coursebook-35-3",
    "kind": "speaking",
    "title": "Speaking — Bob's daily routine",
@@ -1002,6 +1648,128 @@
       {
        "prompt": "Yakun — his-tuyg'usi",
        "answer": "Bob feels very satisfied with his life because he has got a great job and he enjoys his free time."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5-coursebook-37-9",
+   "kind": "speaking",
+   "title": "Speaking — your daily routine",
+   "titleUz": "Gapirish — sizning kundalik tartibingiz",
+   "book": "coursebook",
+   "bookPage": 37,
+   "exercises": [
+    {
+     "ref": "10",
+     "instructionEn": "Choose phrases from Ex. 9 and talk about your daily routine. What do you do in the morning/afternoon/evening?",
+     "instructionUz": "9-mashqdagi iboralardan tanlab, o'z kundalik tartibingiz haqida gapiring. Ertalab, kunduzi va kechqurun nima qilasiz?",
+     "explanationUz": "O'ZINGIZ HAQINGIZDA gapirganda fe'l -s OLMAYDI:\n  Kim GETS up at 7:30.   (u)\n  I GET up at 7:00.      (men)\n\nUCH QISMGA BO'LIB gapiring:\n  In the morning, I ...\n  In the afternoon, I ...\n  In the evening, I ...\n\nVAQTNI qo'shing — bu gapni aniq qiladi:\n  I get up AT seven o'clock.\n  I have lunch AT half past twelve.\n\nQuyidagi namunalar — o'z vaqtlaringizni qo'ying.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 37,
+     "bookRef": "Coursebook, 37-bet, 10-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "Ertalab — turish",
+       "answer": "In the morning, I get up at seven o'clock."
+      },
+      {
+       "prompt": "Ertalab — yuvinish va kiyinish",
+       "answer": "I have a shower and then I get dressed."
+      },
+      {
+       "prompt": "Ertalab — nonushta va yo'l",
+       "answer": "I have breakfast and I leave home at about half past seven."
+      },
+      {
+       "prompt": "Ertalab — maktabga borish",
+       "answer": "I catch the bus to school and I arrive at about eight o'clock."
+      },
+      {
+       "prompt": "Kunduzi — tushlik",
+       "answer": "In the afternoon, I have lunch at school at one o'clock."
+      },
+      {
+       "prompt": "Kunduzi — uyga qaytish",
+       "answer": "School finishes at two o'clock and I go back home."
+      },
+      {
+       "prompt": "Kechqurun — uy vazifasi",
+       "answer": "In the evening, I do my homework."
+      },
+      {
+       "prompt": "Kechqurun — dam olish",
+       "answer": "After that, I usually watch TV or read a book."
+      },
+      {
+       "prompt": "Kechqurun — ovqat va uyqu",
+       "answer": "I have dinner at seven o'clock and I go to bed at about ten."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5-coursebook-36-6",
+   "kind": "writing",
+   "title": "Writing (Project)",
+   "titleUz": "Yozish (loyiha)",
+   "book": "coursebook",
+   "bookPage": 36,
+   "exercises": [
+    {
+     "ref": "Writing",
+     "instructionEn": "Write a text similar to the one in Ex. 7 about the opening hours of shops and restaurants in your country.",
+     "instructionUz": "7-mashqdagiga o'xshash matn yozing — o'z mamlakatingizdagi do'kon va restoranlarning ish vaqti haqida.",
+     "explanationUz": "TUZILISHI (7-mashqdagi kabi):\n  Sarlavha: Welcome to ... (mamlakatingiz nomi)\n  Shops\n  Banks and Post Offices\n  Chemists\n  Restaurants\n\nKERAKLI QOLIPLAR:\n  ... are open + kun(lar) + FROM ... UNTIL ...\n  Some ... stay open ...\n  Many places have ...\n\nO'ZBEKISTON UCHUN namuna quyida berilgan.\nO'z shahringizdagi haqiqiy vaqtlarni yozing.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 36,
+     "bookRef": "Coursebook, 36-bet, Writing (Project)",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "Sarlavha",
+       "answer": "Welcome to Uzbekistan",
+       "speak": "Sarlavha"
+      },
+      {
+       "prompt": "Shops — ish kunlari",
+       "answer": "Shops are open Monday to Saturday from 9 am until 8 pm."
+      },
+      {
+       "prompt": "Shops — dam olish kuni",
+       "answer": "On Sunday many shops are open from 10 am until 6 pm."
+      },
+      {
+       "prompt": "Banks — ish vaqti",
+       "answer": "Banks are open Monday to Friday from 9 am until 5 pm."
+      },
+      {
+       "prompt": "Post Offices — ish vaqti",
+       "answer": "Post offices are open Monday to Saturday from 9 am until 6 pm."
+      },
+      {
+       "prompt": "Chemists — ish vaqti",
+       "answer": "Chemists are open every day from 8 am until 10 pm. Some chemists stay open all night.",
+       "whyUz": "'all night' = tun bo'yi."
+      },
+      {
+       "prompt": "Restaurants — tushlik",
+       "answer": "Restaurants are generally open for lunch from 12 am until 4 pm."
+      },
+      {
+       "prompt": "Restaurants — kechki ovqat",
+       "answer": "They are open for dinner from 6 pm until 11 pm."
+      },
+      {
+       "prompt": "Yakuniy izoh",
+       "answer": "There are also some restaurants which stay open late in the big cities.",
+       "whyUz": "7-mashqdagi matnning oxirgi gapi kabi.",
+       "speak": "Yakuniy izoh"
       }
      ]
     }
@@ -1381,6 +2149,421 @@
    ],
    "book": "coursebook",
    "bookPage": 35
+  },
+  {
+   "ruleUz": "Muassasa nomlari",
+   "explanationUz": "Bu so'zlarning ba'zilari Britan va Amerika inglizchasida farq qiladi.",
+   "items": [
+    {
+     "base": "a shop",
+     "baseUz": "do'kon",
+     "derived": "a store",
+     "derivedUz": "AQShda",
+     "note": "Britaniyada 'shop'"
+    },
+    {
+     "base": "a chemist",
+     "baseUz": "dorixona; kimyogar",
+     "derived": "a pharmacy / drugstore",
+     "derivedUz": "AQShda",
+     "note": "Britaniyada 'chemist's'"
+    },
+    {
+     "base": "a post office",
+     "baseUz": "pochta bo'limi",
+     "derived": "post + office",
+     "derivedUz": "qo'shma so'z",
+     "note": ""
+    },
+    {
+     "base": "a bank",
+     "baseUz": "bank",
+     "derived": "a banker",
+     "derivedUz": "bankir",
+     "note": "-er"
+    },
+    {
+     "base": "a restaurant",
+     "baseUz": "restoran",
+     "derived": "a diner",
+     "derivedUz": "ovqatlanuvchi; oshxona",
+     "note": "'dine' — ovqatlanmoq"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "ruleUz": "-ed va -ing sifatlari — ODAM va NARSA",
+   "explanationUz": "Bu farq ingliz tilida juda muhim va o'zbek tilida yo'q.",
+   "items": [
+    {
+     "base": "bore",
+     "baseUz": "zeriktirmoq",
+     "derived": "bored",
+     "derivedUz": "zerikkan (ODAM)",
+     "note": "I am bored."
+    },
+    {
+     "base": "bore",
+     "baseUz": "zeriktirmoq",
+     "derived": "boring",
+     "derivedUz": "zerikarli (NARSA)",
+     "note": "The job is boring."
+    },
+    {
+     "base": "tire",
+     "baseUz": "charchatmoq",
+     "derived": "tired",
+     "derivedUz": "charchagan (ODAM)",
+     "note": "I am tired."
+    },
+    {
+     "base": "tire",
+     "baseUz": "charchatmoq",
+     "derived": "tiring",
+     "derivedUz": "charchatadigan (NARSA)",
+     "note": "The work is tiring."
+    },
+    {
+     "base": "stress",
+     "baseUz": "siqmoq",
+     "derived": "stressed",
+     "derivedUz": "asabiy (ODAM)",
+     "note": "I feel stressed."
+    },
+    {
+     "base": "stress",
+     "baseUz": "siqmoq",
+     "derived": "stressful",
+     "derivedUz": "asabiy (ISH)",
+     "note": "-ful, '-ing' EMAS"
+    },
+    {
+     "base": "satisfy",
+     "baseUz": "qoniqtirmoq",
+     "derived": "satisfied",
+     "derivedUz": "mamnun (ODAM)",
+     "note": "I feel satisfied."
+    },
+    {
+     "base": "satisfy",
+     "baseUz": "qoniqtirmoq",
+     "derived": "satisfying",
+     "derivedUz": "qoniqarli (ISH)",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "ruleUz": "Vaqt oralig'i ifodalari",
+   "explanationUz": "Ish vaqtini aytishning standart usullari.",
+   "items": [
+    {
+     "base": "from ... until ...",
+     "baseUz": "...dan ...gacha",
+     "derived": "from 9 am until 6 pm",
+     "derivedUz": "eng ko'p ishlatiladi",
+     "note": "'till' ham bo'ladi"
+    },
+    {
+     "base": "Monday to Friday",
+     "baseUz": "dushanbadan jumagacha",
+     "derived": "kun oralig'i",
+     "derivedUz": "'to' bilan",
+     "note": "'until' EMAS"
+    },
+    {
+     "base": "noon",
+     "baseUz": "tush payti (12:00)",
+     "derived": "until noon",
+     "derivedUz": "tushgacha",
+     "note": "'midday' ham"
+    },
+    {
+     "base": "midnight",
+     "baseUz": "yarim tun (00:00)",
+     "derived": "until midnight",
+     "derivedUz": "yarim tungacha",
+     "note": ""
+    },
+    {
+     "base": "am / pm",
+     "baseUz": "tushdan oldin / keyin",
+     "derived": "9 am, 6 pm",
+     "derivedUz": "lotincha qisqartma",
+     "note": "ante/post meridiem"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "ruleUz": "Pul va mijoz bilan bog'liq fe'llar",
+   "explanationUz": "Ish haqida gapirganda kerak bo'ladi.",
+   "items": [
+    {
+     "base": "earn",
+     "baseUz": "ishlab topmoq",
+     "derived": "earn money",
+     "derivedUz": "pul topmoq",
+     "note": "mehnat bilan"
+    },
+    {
+     "base": "win",
+     "baseUz": "yutmoq",
+     "derived": "win money",
+     "derivedUz": "pul yutmoq",
+     "note": "o'yin/lotereyada"
+    },
+    {
+     "base": "a customer",
+     "baseUz": "mijoz",
+     "derived": "customers",
+     "derivedUz": "mijozlar",
+     "note": "do'konda"
+    },
+    {
+     "base": "a client",
+     "baseUz": "mijoz",
+     "derived": "clients",
+     "derivedUz": "mijozlar",
+     "note": "xizmat sohasida"
+    },
+    {
+     "base": "enjoy",
+     "baseUz": "zavqlanmoq",
+     "derived": "enjoy my work",
+     "derivedUz": "ishimdan zavqlanaman",
+     "note": "keyin -ING ham bo'ladi"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "ruleUz": "'go + fe'l-ING' — mashg'ulotga borish",
+   "explanationUz": "Sport va dam olish mashg'ulotlari uchun 'go' + -ing ishlatiladi. Bu qolipda 'to' YO'Q.",
+   "items": [
+    {
+     "base": "climb",
+     "baseUz": "toqqa chiqmoq",
+     "derived": "go climbing",
+     "derivedUz": "toqqa chiqishga bormoq",
+     "note": "'b' o'qilmaydi: 'klaym'"
+    },
+    {
+     "base": "dance",
+     "baseUz": "raqsga tushmoq",
+     "derived": "go dancing",
+     "derivedUz": "raqsga bormoq",
+     "note": "-e tushadi"
+    },
+    {
+     "base": "jog",
+     "baseUz": "sekin yugurmoq",
+     "derived": "go jogging",
+     "derivedUz": "yugurishga chiqmoq",
+     "note": "'g' ikkilanadi"
+    },
+    {
+     "base": "shop",
+     "baseUz": "xarid qilmoq",
+     "derived": "go shopping",
+     "derivedUz": "xaridga bormoq",
+     "note": "'p' ikkilanadi"
+    },
+    {
+     "base": "fish",
+     "baseUz": "baliq ovlamoq",
+     "derived": "go fishing",
+     "derivedUz": "baliq ovlashga bormoq",
+     "note": ""
+    },
+    {
+     "base": "windsurf",
+     "baseUz": "vindserfing qilmoq",
+     "derived": "go windsurfing",
+     "derivedUz": "vindserfingga bormoq",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 37
+  },
+  {
+   "ruleUz": "'go TO' — joyga borish",
+   "explanationUz": "JOY nomi bilan 'to' shart. Mashg'ulot bilan esa 'to' yo'q.",
+   "items": [
+    {
+     "base": "the cinema",
+     "baseUz": "kinoteatr",
+     "derived": "go TO the cinema",
+     "derivedUz": "kinoga bormoq",
+     "note": "'to' va 'the' bor"
+    },
+    {
+     "base": "the gym",
+     "baseUz": "sport zali",
+     "derived": "go TO the gym",
+     "derivedUz": "sport zaliga bormoq",
+     "note": "'to' va 'the' bor"
+    },
+    {
+     "base": "school",
+     "baseUz": "maktab",
+     "derived": "go TO school",
+     "derivedUz": "maktabga bormoq",
+     "note": "'to' bor, 'the' YO'Q"
+    },
+    {
+     "base": "bed",
+     "baseUz": "karavot",
+     "derived": "go TO bed",
+     "derivedUz": "yotmoq",
+     "note": "'to' bor, 'the' YO'Q"
+    },
+    {
+     "base": "home",
+     "baseUz": "uy",
+     "derived": "go home",
+     "derivedUz": "uyga bormoq",
+     "note": "'to' YO'Q!"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 37
+  },
+  {
+   "ruleUz": "Takrorlanish ravishlari — foiz shkalasi",
+   "explanationUz": "0% dan 100% gacha. Har birining o'z darajasi bor.",
+   "items": [
+    {
+     "base": "never",
+     "baseUz": "hech qachon",
+     "derived": "0%",
+     "derivedUz": "eng kam",
+     "note": "o'zi inkor"
+    },
+    {
+     "base": "rarely",
+     "baseUz": "kamdan-kam",
+     "derived": "10%",
+     "derivedUz": "juda kam",
+     "note": "'seldom' ham"
+    },
+    {
+     "base": "sometimes",
+     "baseUz": "ba'zan",
+     "derived": "25%",
+     "derivedUz": "gohida",
+     "note": "gap boshida ham bo'ladi"
+    },
+    {
+     "base": "often",
+     "baseUz": "tez-tez",
+     "derived": "50%",
+     "derivedUz": "ko'p marta",
+     "note": "'t' o'qilmasligi mumkin"
+    },
+    {
+     "base": "usually",
+     "baseUz": "odatda",
+     "derived": "75%",
+     "derivedUz": "deyarli doim",
+     "note": ""
+    },
+    {
+     "base": "always",
+     "baseUz": "doim",
+     "derived": "100%",
+     "derivedUz": "hamisha",
+     "note": "gap boshida KELMAYDI"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 37
+  },
+  {
+   "ruleUz": "'do' bilan uy ishlari",
+   "explanationUz": "Uy ishlari ko'pincha 'do the ...' shaklida.",
+   "items": [
+    {
+     "base": "washing-up",
+     "baseUz": "idish yuvish",
+     "derived": "do the washing-up",
+     "derivedUz": "idish yuvmoq",
+     "note": "AQShda 'do the dishes'"
+    },
+    {
+     "base": "homework",
+     "baseUz": "uy vazifasi",
+     "derived": "do homework",
+     "derivedUz": "uy vazifasini bajarmoq",
+     "note": "'the' YO'Q"
+    },
+    {
+     "base": "shopping",
+     "baseUz": "xarid",
+     "derived": "do the shopping",
+     "derivedUz": "xarid qilmoq",
+     "note": "'go shopping' — sayr uchun"
+    },
+    {
+     "base": "housework",
+     "baseUz": "uy ishi",
+     "derived": "do the housework",
+     "derivedUz": "uy ishini qilmoq",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 37
+  },
+  {
+   "ruleUz": "Takrorlanishning boshqa ifodalari",
+   "explanationUz": "Ravishdan tashqari, gap OXIRIDA turadigan iboralar ham bor.",
+   "items": [
+    {
+     "base": "once",
+     "baseUz": "bir marta",
+     "derived": "once a week",
+     "derivedUz": "haftada bir marta",
+     "note": "'one time' EMAS"
+    },
+    {
+     "base": "twice",
+     "baseUz": "ikki marta",
+     "derived": "twice a week",
+     "derivedUz": "haftada ikki marta",
+     "note": "'two times' EMAS"
+    },
+    {
+     "base": "three times",
+     "baseUz": "uch marta",
+     "derived": "three times a week",
+     "derivedUz": "haftada uch marta",
+     "note": "3 dan boshlab 'times'"
+    },
+    {
+     "base": "Sunday",
+     "baseUz": "yakshanba",
+     "derived": "on Sundays",
+     "derivedUz": "yakshanba kunlari",
+     "note": "KO'PLIK = har yakshanba"
+    },
+    {
+     "base": "weekday",
+     "baseUz": "ish kuni",
+     "derived": "every weekday",
+     "derivedUz": "har ish kuni",
+     "note": "dushanba–juma"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 37
   }
  ],
  "sentencePatterns": [
@@ -1487,6 +2670,102 @@
    "explanationUz": "Soat bilan doim AT. Fe'l 3-shaxs birlikda -s oladi.",
    "book": "coursebook",
    "bookPage": 35
+  },
+  {
+   "formula": "X are open + kun(lar) + FROM + vaqt + UNTIL + vaqt.",
+   "exampleEn": "Shops are open Monday to Friday from 9 am until 6 pm.",
+   "exampleUz": "Do'konlar dushanbadan jumagacha ertalab 9 dan kechqurun 6 gacha ochiq.",
+   "explanationUz": "Ish vaqtini aytishning standart qolipi.\nKun oralig'i uchun 'to', vaqt oralig'i uchun 'from ... until ...'.",
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "formula": "ON + kun + FROM + vaqt + UNTIL + vaqt.",
+   "exampleEn": "On Saturday from 9 am until 4 or 5 pm.",
+   "exampleUz": "Shanba kuni ertalab 9 dan kunduzi 4 yoki 5 gacha.",
+   "explanationUz": "Alohida kun uchun ON predlogi.",
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "formula": "What time do + ko'plik ega + open/close?",
+   "exampleEn": "What time do shops close on Saturday? — They close at 4 or 5 pm.",
+   "exampleUz": "Do'konlar shanba kuni soat nechada yopiladi? — Soat 4 yoki 5 da.",
+   "explanationUz": "Ko'plik ega bilan DO. Javobda soat oldida AT.",
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "formula": "Some X stay open + vaqt.",
+   "exampleEn": "Some chemists stay open to cover evenings, nights and weekends.",
+   "exampleUz": "Ba'zi dorixonalar kechqurun, tunda va dam olish kunlarida ochiq turadi.",
+   "explanationUz": "'stay open' = ochiq qolmoq. 'stay' dan keyin sifat keladi.",
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "formula": "There are some X WHICH + fe'l.",
+   "exampleEn": "There are some restaurants which stay open late in the big cities.",
+   "exampleUz": "Katta shaharlarda kech ochiq turadigan restoranlar bor.",
+   "explanationUz": "'which' — NARSA uchun bog'lovchi ('who' — odam uchun).\nO'zbekchada '-adigan' qo'shimchasi.",
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "formula": "I feel + SIFAT + BECAUSE + sabab.",
+   "exampleEn": "I feel happy because I enjoy my work.",
+   "exampleUz": "O'zimni baxtli his qilaman, chunki ishimdan zavqlanaman.",
+   "explanationUz": "'feel' dan keyin SIFAT (ravish emas).\n'because' bilan sabab — bu mashqning asosiy maqsadi.",
+   "book": "coursebook",
+   "bookPage": 36
+  },
+  {
+   "formula": "EGA + fe'l+S + AT + vaqt.",
+   "exampleEn": "Kim gets up at 7:30 in the morning every weekday.",
+   "exampleUz": "Kim har ish kuni ertalab 7:30 da turadi.",
+   "explanationUz": "Kundalik tartib — Present Simple. Soat bilan AT.",
+   "book": "coursebook",
+   "bookPage": 37
+  },
+  {
+   "formula": "EGA + RAVISH + fe'l (oddiy fe'l bilan).",
+   "exampleEn": "I usually get up at half past seven. She never goes climbing.",
+   "exampleUz": "Men odatda yetti yarimda turaman. U hech qachon toqqa chiqmaydi.",
+   "explanationUz": "Ravish fe'ldan OLDIN turadi.",
+   "book": "coursebook",
+   "bookPage": 37
+  },
+  {
+   "formula": "EGA + am/is/are + RAVISH + ... ('to be' bilan).",
+   "exampleEn": "I am never late for school. He is always happy.",
+   "exampleUz": "Men maktabga hech qachon kechikmayman. U doim xursand.",
+   "explanationUz": "'to be' bilan ravish KEYIN turadi — bu yagona istisno.",
+   "book": "coursebook",
+   "bookPage": 37
+  },
+  {
+   "formula": "EGA + RAVISH + fe'l+S + ON + kun (ko'plikda).",
+   "exampleEn": "Laura never goes climbing on Sundays.",
+   "exampleUz": "Laura yakshanba kunlari hech qachon toqqa chiqmaydi.",
+   "explanationUz": "'on Sundays' — ko'plikda, 'har yakshanba' degani.\n'never' bilan 'doesn't' KERAK EMAS.",
+   "book": "coursebook",
+   "bookPage": 37
+  },
+  {
+   "formula": "She leaves home at ... and catches the bus to school.",
+   "exampleEn": "She leaves home at about 8:15 and catches the bus to school.",
+   "exampleUz": "U taxminan 8:15 da uydan chiqadi va maktabga avtobusga chiqadi.",
+   "explanationUz": "'leave home' — 'from' kerak emas.\n'about' = taxminan (aniq vaqt emas).",
+   "book": "coursebook",
+   "bookPage": 37
+  },
+  {
+   "formula": "After that, she usually + fe'l+S.",
+   "exampleEn": "After that, she usually watches TV.",
+   "exampleUz": "Shundan keyin u odatda televizor ko'radi.",
+   "explanationUz": "'After that' — ketma-ketlikni ko'rsatadi, keyin vergul.\nRavish baribir fe'ldan oldin turadi.",
+   "book": "coursebook",
+   "bookPage": 37
   }
  ],
  "vocabulary": [
@@ -1737,6 +3016,234 @@
   {
    "en": "Paris",
    "uz": "Parij (Fransiya)"
+  },
+  {
+   "en": "Holland",
+   "uz": "Gollandiya"
+  },
+  {
+   "en": "the Dutch",
+   "uz": "gollandiyaliklar"
+  },
+  {
+   "en": "a shop",
+   "uz": "do'kon"
+  },
+  {
+   "en": "a bank",
+   "uz": "bank"
+  },
+  {
+   "en": "a post office",
+   "uz": "pochta bo'limi"
+  },
+  {
+   "en": "a chemist",
+   "uz": "dorixona"
+  },
+  {
+   "en": "a restaurant",
+   "uz": "restoran"
+  },
+  {
+   "en": "opening hours",
+   "uz": "ish vaqti"
+  },
+  {
+   "en": "to open",
+   "uz": "ochilmoq"
+  },
+  {
+   "en": "to close",
+   "uz": "yopilmoq"
+  },
+  {
+   "en": "to stay open",
+   "uz": "ochiq qolmoq"
+  },
+  {
+   "en": "late-night shopping",
+   "uz": "kechki xarid"
+  },
+  {
+   "en": "noon",
+   "uz": "tush payti (12:00)"
+  },
+  {
+   "en": "am / pm",
+   "uz": "tushdan oldin / tushdan keyin"
+  },
+  {
+   "en": "generally",
+   "uz": "odatda, umuman"
+  },
+  {
+   "en": "to cover",
+   "uz": "qamrab olmoq"
+  },
+  {
+   "en": "a weekend",
+   "uz": "dam olish kunlari"
+  },
+  {
+   "en": "a diner",
+   "uz": "ovqatlanuvchi"
+  },
+  {
+   "en": "happy",
+   "uz": "baxtli, xursand"
+  },
+  {
+   "en": "stressed",
+   "uz": "asabiy, siqilgan"
+  },
+  {
+   "en": "bored",
+   "uz": "zerikkan"
+  },
+  {
+   "en": "to enjoy",
+   "uz": "zavqlanmoq"
+  },
+  {
+   "en": "to earn",
+   "uz": "ishlab topmoq"
+  },
+  {
+   "en": "a customer",
+   "uz": "mijoz"
+  },
+  {
+   "en": "angry",
+   "uz": "jahldor, g'azablangan"
+  },
+  {
+   "en": "the same",
+   "uz": "bir xil"
+  },
+  {
+   "en": "because",
+   "uz": "chunki"
+  },
+  {
+   "en": "a reason",
+   "uz": "sabab"
+  },
+  {
+   "en": "a weekday",
+   "uz": "ish kuni (dushanba–juma)"
+  },
+  {
+   "en": "to have breakfast",
+   "uz": "nonushta qilmoq"
+  },
+  {
+   "en": "to have lunch",
+   "uz": "tushlik qilmoq"
+  },
+  {
+   "en": "to have dinner",
+   "uz": "kechki ovqat qilmoq"
+  },
+  {
+   "en": "to leave home",
+   "uz": "uydan chiqmoq"
+  },
+  {
+   "en": "to do homework",
+   "uz": "uy vazifasini bajarmoq"
+  },
+  {
+   "en": "to go to work",
+   "uz": "ishga bormoq"
+  },
+  {
+   "en": "to finish work",
+   "uz": "ishni tugatmoq"
+  },
+  {
+   "en": "to go dancing",
+   "uz": "raqsga bormoq"
+  },
+  {
+   "en": "a lesson",
+   "uz": "dars"
+  },
+  {
+   "en": "an adverb of frequency",
+   "uz": "takrorlanish ravishi"
+  },
+  {
+   "en": "never",
+   "uz": "hech qachon (0%)"
+  },
+  {
+   "en": "rarely",
+   "uz": "kamdan-kam (10%)"
+  },
+  {
+   "en": "sometimes",
+   "uz": "ba'zan (25%)"
+  },
+  {
+   "en": "often",
+   "uz": "tez-tez (50%)"
+  },
+  {
+   "en": "usually",
+   "uz": "odatda (75%)"
+  },
+  {
+   "en": "always",
+   "uz": "doim (100%)"
+  },
+  {
+   "en": "how often",
+   "uz": "qanchalik tez-tez"
+  },
+  {
+   "en": "to go climbing",
+   "uz": "toqqa chiqishga bormoq"
+  },
+  {
+   "en": "to wash the car",
+   "uz": "mashina yuvmoq"
+  },
+  {
+   "en": "a gym",
+   "uz": "sport zali"
+  },
+  {
+   "en": "to cook",
+   "uz": "ovqat pishirmoq"
+  },
+  {
+   "en": "to go on a picnic",
+   "uz": "piknikka bormoq"
+  },
+  {
+   "en": "to do the washing-up",
+   "uz": "idish yuvmoq"
+  },
+  {
+   "en": "to go jogging",
+   "uz": "yugurishga chiqmoq"
+  },
+  {
+   "en": "to eat out",
+   "uz": "tashqarida ovqatlanmoq"
+  },
+  {
+   "en": "to visit museums",
+   "uz": "muzeylarga bormoq"
+  },
+  {
+   "en": "to go windsurfing",
+   "uz": "vindserfing qilmoq"
+  },
+  {
+   "en": "to meet friends",
+   "uz": "do'stlar bilan uchrashmoq"
   }
  ]
 }
