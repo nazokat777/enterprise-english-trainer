@@ -1,0 +1,337 @@
+{
+  "book": "coursebook",
+  "pdfPage": 61,
+  "bookPage": 57,
+  "unit": 8,
+  "unitTitle": "Enjoy your Meal",
+  "module": 2,
+  "scanNote": "12-mashqda xarid ro'yxatidagi qaysi band belgilanishi (✓) va qaysisi chizib tashlanishi faqat kassetada aniqlanadi. Kitobda ikkitasi berilgan: 'meat' ✓ va 'eggs' chizib tashlangan. Quyida barcha bandlar uchun savol-javob qolipi berilgan — bu qism audio talab qilmaydi.",
+  "sections": [
+    {
+      "kind": "grammar",
+      "title": "How Much / How Many — A Few / A Little",
+      "titleUz": "How Much / How Many — A Few / A Little",
+      "exercises": [
+        {
+          "ref": "11",
+          "type": "fill_gap",
+          "instructionEn": "Study the examples and complete the rules, then use the prompts to act out similar dialogues.",
+          "instructionUz": "Misollarni o'rganing va qoidalarni to'ldiring, so'ng berilgan so'zlar bilan shunga o'xshash dialoglar tuzing.",
+          "explanationUz": "KITOBDAGI MISOLLAR:\n\n  SA: How MUCH milk do you need?\n  SB: Just a LITTLE.\n\n  SA: How MANY carrots do you need?\n  SB: Just a FEW.\n\nTO'LDIRILADIGAN QOIDALAR:\n  We use ...... and ...... with UNCOUNTABLE nouns.\n  We use ...... and ...... with COUNTABLE nouns.\n\nASOSIY JADVAL:\n\n  SANALMAYDIGAN (milk, bread, flour)\n     savol:  HOW MUCH ...?\n     javob:  A LITTLE  (bir oz)\n\n  SANALADIGAN (carrots, eggs, bananas)\n     savol:  HOW MANY ...?\n     javob:  A FEW  (bir nechta)\n\nESLATMA — ESLAB QOLISH USULI:\n  MANY va FEW — ikkalasida ham SANALADIGAN otlar\n  MUCH va LITTLE — ikkalasida ham SANALMAYDIGAN otlar\n\nDIQQAT: 'just' = shunchaki, atigi — javobni yumshatadi.",
+          "bookRef": "Coursebook, 57-bet, 11-mashq",
+          "items": [
+            { "textEn": "We use ............ and ............ with uncountable nouns.", "answers": ["how much", "a little"], "hintUz": "Misoldagi 'milk' bilan qaysi so'zlar ishlatilgan?", "whyUz": "SANALMAYDIGAN otlar bilan HOW MUCH va A LITTLE.\nMisol: How MUCH milk do you need? — Just a LITTLE.\nBoshqa misollar: how much bread, how much sugar, a little water." },
+            { "textEn": "We use ............ and ............ with countable nouns.", "answers": ["how many", "a few"], "hintUz": "Misoldagi 'carrots' bilan qaysi so'zlar ishlatilgan?", "whyUz": "SANALADIGAN otlar bilan HOW MANY va A FEW.\nMisol: How MANY carrots do you need? — Just a FEW.\nBoshqa misollar: how many eggs, how many bananas, a few onions." }
+          ]
+        },
+        {
+          "ref": "11b",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Then use the prompts to act out similar dialogues.",
+          "instructionUz": "So'ng berilgan so'zlar bilan shunga o'xshash dialoglar tuzing.",
+          "explanationUz": "BERILGAN SO'ZLAR (11 ta):\n  ham, onions, flour, peppers, tomatoes, olives,\n  bacon, cheese, bread, bananas, coconuts\n\nAVVAL HAR BIR SO'ZNI GURUHLANG:\n\n  SANALMAYDIGAN (5 ta) → HOW MUCH ... ? — Just a little.\n     ham, flour, bacon, cheese, bread\n\n  SANALADIGAN (6 ta) → HOW MANY ... ? — Just a few.\n     onions, peppers, tomatoes, olives, bananas, coconuts\n\nDIQQAT: sanaladigan otlar ro'yxatda ALLAQACHON KO'PLIKDA\nberilgan — bu ularning sanalishini ko'rsatadi.",
+          "bookRef": "Coursebook, 57-bet, 11-mashq (so'zlar)",
+          "items": [
+            { "prompt": "ham (sanalmaydigan)", "question": "How much ham do you need?", "answer": "Just a little.", "whyUz": "'ham' — SANALMAYDIGAN (massa) → HOW MUCH + A LITTLE.\nSanash uchun: 'a slice of ham'." },
+            { "prompt": "onions (sanaladigan)", "question": "How many onions do you need?", "answer": "Just a few.", "whyUz": "'onions' — SANALADIGAN → HOW MANY + A FEW." },
+            { "prompt": "flour (sanalmaydigan)", "question": "How much flour do you need?", "answer": "Just a little.", "whyUz": "'flour' (un) — kukun → SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'a packet of flour', 'a kilo of flour'." },
+            { "prompt": "peppers (sanaladigan)", "question": "How many peppers do you need?", "answer": "Just a few.", "whyUz": "'peppers' bu yerda — bulg'or qalampiri (sabzavot) → SANALADIGAN.\nDIQQAT: 'pepper' (qora qalampir, ziravor) SANALMAYDI." },
+            { "prompt": "tomatoes (sanaladigan)", "question": "How many tomatoes do you need?", "answer": "Just a few.", "whyUz": "'tomatoes' — SANALADIGAN → HOW MANY.\nKo'pligi: tomato → tomatoES." },
+            { "prompt": "olives (sanaladigan)", "question": "How many olives do you need?", "answer": "Just a few.", "whyUz": "'olives' (zaytun) — SANALADIGAN → HOW MANY.\nDIQQAT: 'olive oil' (zaytun moyi) esa SANALMAYDI." },
+            { "prompt": "bacon (sanalmaydigan)", "question": "How much bacon do you need?", "answer": "Just a little.", "whyUz": "'bacon' — SANALMAYDIGAN (massa) → HOW MUCH.\nSanash uchun: 'a slice of bacon'." },
+            { "prompt": "cheese (sanalmaydigan)", "question": "How much cheese do you need?", "answer": "Just a little.", "whyUz": "'cheese' — SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'a piece of cheese', 'a kilo of cheese'." },
+            { "prompt": "bread (sanalmaydigan)", "question": "How much bread do you need?", "answer": "Just a little.", "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'a loaf of bread', 'a slice of bread'." },
+            { "prompt": "bananas (sanaladigan)", "question": "How many bananas do you need?", "answer": "Just a few.", "whyUz": "'bananas' — SANALADIGAN → HOW MANY." },
+            { "prompt": "coconuts (sanaladigan)", "question": "How many coconuts do you need?", "answer": "Just a few.", "whyUz": "'coconuts' — SANALADIGAN → HOW MANY.\nDIQQAT: 'coconut milk' (kokos suti) esa SANALMAYDI." }
+          ]
+        },
+        {
+          "ref": "12",
+          "type": "prompt_to_dialogue",
+          "hasAudio": true,
+          "instructionEn": "Julie is making a shopping list for a dinner party. Look at the shopping list, then listen and tick the things she needs and cross out the things she doesn't need. Finally, ask and answer questions, as in the example.",
+          "instructionUz": "Juli ziyofat uchun xarid ro'yxatini tuzayapti. Xarid ro'yxatiga qarang, so'ng tinglang va unga kerak bo'lgan narsalarni belgilang, kerak bo'lmaganlarini chizib tashlang. Nihoyat, namunadagidek savol-javob qiling.",
+          "audioRequiredUz": "Qaysi band belgilanishi (✓) va qaysisi chizib tashlanishi faqat kassetada aniqlanadi. Kitobda ikkitasi BERILGAN: '2 kilos of meat' ✓ va '10 eggs' chizib tashlangan. Qolgan bandlar uchun quyida savol qolipi berilgan.",
+          "explanationUz": "XARID RO'YXATI (Shopping List):\n  2 kilos of meat  ✓ (kerak — kitobda belgilangan)\n  10 eggs          ✗ (kerak emas — kitobda chizib tashlangan)\n  1 kilo of cheese\n  20 slices of ham\n  2 loaves of bread\n  1 kilo of tomatoes\n  2 packets of flour\n  3 bottles of Coke\n  1 carton of orange juice\n  8 bananas\n\nKITOBDAGI NAMUNA:\n  S1: How MUCH meat does she need?\n  S2: She needs two kilos of meat. How MANY eggs does she need?\n  S3: She doesn't need any eggs. ...\n\nSAVOL QOLIPI:\n  SANALMAYDIGAN → How MUCH ... does she need?\n     meat, cheese, ham, bread, flour, Coke, orange juice\n  SANALADIGAN → How MANY ... does she need?\n     tomatoes, bananas, eggs\n\nJAVOB QOLIPI:\n  KERAK bo'lsa:     She needs + miqdor + of + ot.\n  KERAK EMAS bo'lsa: She doesn't need ANY + ot.\n\nDIQQAT — INKORDA 'ANY':\n  She doesn't need ANY eggs.\n  ('She doesn't need some eggs' XATO)\n\nDIQQAT — 'tomatoes' BILAN 'How MANY':\n  Ro'yxatda '1 kilo of tomatoes' deyilgan bo'lsa ham,\n  'tomatoes' o'zi SANALADIGAN ot → How MANY tomatoes?\n  Yoki miqdorga qarab: How MUCH is a kilo of tomatoes?",
+          "bookRef": "Coursebook, 57-bet, 12-mashq",
+          "items": [
+            { "prompt": "meat — 2 kilos ✓ (kitobda belgilangan)", "question": "How much meat does she need?", "answer": "She needs two kilos of meat.", "given": true, "whyUz": "Kitobda BERILGAN namuna.\n'meat' — SANALMAYDIGAN → HOW MUCH." },
+            { "prompt": "eggs — 10 ✗ (kitobda chizib tashlangan)", "question": "How many eggs does she need?", "answer": "She doesn't need any eggs.", "given": true, "whyUz": "Kitobda BERILGAN namuna.\n'eggs' — SANALADIGAN → HOW MANY.\nInkorda ANY: 'doesn't need ANY eggs'." },
+            { "prompt": "cheese — 1 kilo", "question": "How much cheese does she need?", "answer": "She needs one kilo of cheese.", "whyUz": "'cheese' — SANALMAYDIGAN → HOW MUCH.\nAgar audioda chizib tashlansa: 'She doesn't need any cheese.'" },
+            { "prompt": "ham — 20 slices", "question": "How much ham does she need?", "answer": "She needs twenty slices of ham.", "whyUz": "'ham' — SANALMAYDIGAN → HOW MUCH.\n'20 slices of ham' = yigirma bo'lak vetchina." },
+            { "prompt": "bread — 2 loaves", "question": "How much bread does she need?", "answer": "She needs two loaves of bread.", "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.\n'loaves' — 'loaf' ning ko'pligi (-f → -VES, 56-bet)." },
+            { "prompt": "tomatoes — 1 kilo", "question": "How many tomatoes does she need?", "answer": "She needs one kilo of tomatoes.", "whyUz": "'tomatoes' — SANALADIGAN → HOW MANY.\nMiqdori kilo bilan berilgan bo'lsa ham, ot sanaladi." },
+            { "prompt": "flour — 2 packets", "question": "How much flour does she need?", "answer": "She needs two packets of flour.", "whyUz": "'flour' — SANALMAYDIGAN → HOW MUCH.\n'2 packets of flour' = ikki paket un." },
+            { "prompt": "Coke — 3 bottles", "question": "How much Coke does she need?", "answer": "She needs three bottles of Coke.", "whyUz": "'Coke' — SANALMAYDIGAN (suyuqlik) → HOW MUCH.\n'3 bottles of Coke' = uch shisha kola." },
+            { "prompt": "orange juice — 1 carton", "question": "How much orange juice does she need?", "answer": "She needs one carton of orange juice.", "whyUz": "'orange juice' — SANALMAYDIGAN → HOW MUCH.\n'a carton' = qog'oz paket." },
+            { "prompt": "bananas — 8", "question": "How many bananas does she need?", "answer": "She needs eight bananas.", "whyUz": "'bananas' — SANALADIGAN → HOW MANY.\nMiqdor so'zi kerak emas — to'g'ridan-to'g'ri son." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": "Some — Any",
+      "titleUz": "Some — Any",
+      "exercises": [
+        {
+          "ref": "13",
+          "type": "fill_gap",
+          "instructionEn": "Study the dialogue below and complete the rules.",
+          "instructionUz": "Quyidagi dialogni o'rganing va qoidalarni to'ldiring.",
+          "explanationUz": "KITOBDAGI DIALOG:\n\n  SA: Is there ANY milk in the fridge?\n  SB: No, I'm afraid there isn't ANY milk.\n      Would you like SOME Coke instead?\n  SA: Yes, please. I'd love SOME.\n      Can I have SOME ice too?\n  SB: Yes, of course.\n\nO'ZBEKCHA TARJIMASI:\n  SA: Muzlatgichda sut bormi?\n  SB: Yo'q, afsuski sut yo'q. Uning o'rniga kola xohlaysizmi?\n  SA: Ha, iltimos. Juda xohlardim. Muz ham olsam bo'ladimi?\n  SB: Ha, albatta.\n\nTO'LDIRILADIGAN QOIDALAR:\n  We use SOME in the affirmative. We also use ......\n  in the interrogative form for OFFERS or REQUESTS.\n  We use ...... in the negative and interrogative form.\n\nASOSIY QOIDA:\n\n  SOME →  TASDIQ gapda\n            There is some milk.\n          + SAVOLDA, agar TAKLIF yoki ILTIMOS bo'lsa\n            Would you like SOME Coke?   (taklif)\n            Can I have SOME ice?        (iltimos)\n\n  ANY  →  INKOR gapda\n            There isn't ANY milk.\n          + oddiy SAVOLDA (ma'lumot so'raganda)\n            Is there ANY milk in the fridge?\n\nDIQQAT — 'I'm afraid' = afsuski (yomon xabarni yumshatadi).\nDIQQAT — 'instead' = o'rniga (gap oxirida turadi).",
+          "bookRef": "Coursebook, 57-bet, 13a-mashq",
+          "items": [
+            { "textEn": "We use some in the affirmative. We also use ............ in the interrogative form for offers or requests.", "answer": "some", "hintUz": "Dialogda 'Would you like ...?' va 'Can I have ...?' da qaysi so'z bor?", "whyUz": "TAKLIF va ILTIMOS savollarida ham SOME ishlatiladi:\n  Would you like SOME Coke?  (taklif — offer)\n  Can I have SOME ice?       (iltimos — request)\nSababi: bu savollarda javob 'ha' bo'lishi kutiladi." },
+            { "textEn": "We use ............ in the negative and interrogative form.", "answer": "any", "hintUz": "Dialogda 'Is there ...?' va 'there isn't ...' da qaysi so'z bor?", "whyUz": "INKOR va oddiy SAVOLDA ANY:\n  There ISN'T any milk.        (inkor)\n  IS there any milk?           (ma'lumot so'rash)\n'There isn't some milk' XATO." }
+          ]
+        },
+        {
+          "ref": "13b",
+          "type": "word_choice",
+          "instructionEn": "Say which question expresses an offer and which expresses a request.",
+          "instructionUz": "Qaysi savol taklif, qaysisi iltimos ifodalashini ayting.",
+          "explanationUz": "IKKI TUSHUNCHA:\n\n  AN OFFER (taklif) — SIZ boshqaga biror narsa taklif qilasiz\n     Would you like some Coke?\n     Would you like a cup of tea?\n     Shall I help you?\n\n  A REQUEST (iltimos) — SIZ boshqadan biror narsa so'raysiz\n     Can I have some ice?\n     Could I have some water, please?\n     May I use your phone?\n\nESLAB QOLISH:\n  'Would YOU like ...?'  → sizga TAKLIF qilinyapti\n  'Can I have ...?'      → siz SO'rayapsiz",
+          "bookRef": "Coursebook, 57-bet, 13b-mashq",
+          "items": [
+            { "textEn": "Would you like some Coke instead?", "uz": "Uning o'rniga kola xohlaysizmi?", "options": ["an offer (taklif)", "a request (iltimos)"], "answer": "an offer (taklif)", "whyUz": "'Would YOU like ...?' — gapiruvchi boshqaga narsa TAKLIF qilyapti.\nBu — OFFER (taklif)." },
+            { "textEn": "Can I have some ice too?", "uz": "Muz ham olsam bo'ladimi?", "options": ["a request (iltimos)", "an offer (taklif)"], "answer": "a request (iltimos)", "whyUz": "'Can I have ...?' — gapiruvchi o'ziga narsa SO'rayapti.\nBu — REQUEST (iltimos)." },
+            { "textEn": "Is there any milk in the fridge?", "uz": "Muzlatgichda sut bormi?", "options": ["ma'lumot so'rash (ANY bilan)", "an offer (taklif)", "a request (iltimos)"], "answer": "ma'lumot so'rash (ANY bilan)", "whyUz": "Bu — na taklif, na iltimos; shunchaki MA'LUMOT so'rash.\nShuning uchun ANY ishlatiladi ('some' emas)." }
+          ]
+        },
+        {
+          "ref": "13c",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Use the prompts to act out similar dialogues.",
+          "instructionUz": "Berilgan so'zlar bilan shunga o'xshash dialoglar tuzing.",
+          "explanationUz": "BERILGAN SO'ZLAR (uch guruh, har birida 3 ta so'z):\n  orange juice - coffee - biscuits\n  cheese - ham - bread\n  bananas - strawberries - sugar\n\nDIALOG QOLIPI (dialogdagi kabi):\n  SA: Is there any [1-so'z] in the fridge?\n  SB: No, I'm afraid there isn't any [1-so'z].\n      Would you like some [2-so'z] instead?\n  SA: Yes, please. I'd love some.\n      Can I have some [3-so'z] too?\n  SB: Yes, of course.\n\nDIQQAT — SANALADIGAN OTLAR:\n  'biscuits', 'bananas', 'strawberries' — KO'PLIK.\n  Savolda: 'Is there any ...?' → 'ARE there any ...?'\n  Ko'plik ot bilan 'are' ishlatiladi.",
+          "bookRef": "Coursebook, 57-bet, 13c-mashq",
+          "items": [
+            { "prompt": "orange juice — coffee — biscuits", "question": "Is there any orange juice in the fridge?", "answer": "No, I'm afraid there isn't any orange juice. Would you like some coffee instead? — Yes, please. I'd love some. Can I have some biscuits too? — Yes, of course.", "whyUz": "'orange juice' va 'coffee' — SANALMAYDIGAN → 'Is there any ...?'\n'biscuits' — KO'PLIK, lekin ILTIMOS savolida SOME." },
+            { "prompt": "cheese — ham — bread", "question": "Is there any cheese in the fridge?", "answer": "No, I'm afraid there isn't any cheese. Would you like some ham instead? — Yes, please. I'd love some. Can I have some bread too? — Yes, of course.", "whyUz": "Uchalasi ham SANALMAYDIGAN → 'Is there any ...?'\nInkorda ANY, taklif va iltimosda SOME." },
+            { "prompt": "bananas — strawberries — sugar", "question": "Are there any bananas in the fridge?", "answer": "No, I'm afraid there aren't any bananas. Would you like some strawberries instead? — Yes, please. I'd love some. Can I have some sugar too? — Yes, of course.", "whyUz": "'bananas' — KO'PLIK → 'ARE there any ...?' va 'there AREN'T any'.\n'sugar' — SANALMAYDIGAN → 'some sugar'." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "speaking",
+      "title": "Accepting and refusing offers",
+      "titleUz": "Taklifni qabul qilish va rad etish",
+      "exercises": [
+        {
+          "ref": "14",
+          "type": "dialogue_gap_fill",
+          "hasAudio": true,
+          "instructionEn": "Listen to the dialogue and fill in the missing words.",
+          "instructionUz": "Dialogni tinglang va tushib qolgan so'zlarni qo'ying.",
+          "explanationUz": "RASMDA: kamin oldida o'tirgan yigit va qiz.\nTo'rtta nutq pufakchasi bor.\n\nDIALOG (to'ldirilgan holda):\n  — Would you like some coffee?\n  — Yes, PLEASE. I'd love some.\n  — Would you like some cake?\n  — No, THANKS. I don't like cakes.\n\nO'ZBEKCHA TARJIMASI:\n  — Qahva xohlaysizmi?\n  — Ha, iltimos. Juda xohlardim.\n  — Tort xohlaysizmi?\n  — Yo'q, rahmat. Men tortni yoqtirmayman.\n\nIKKI JAVOB SHAKLI:\n  QABUL QILISH: Yes, please. I'd love some.\n  RAD ETISH:    No, thanks. I don't like ...\n\nDIQQAT: rad etishda SABAB aytiladi — bu muloyimlik belgisi.",
+          "bookRef": "Coursebook, 57-bet, 14a-mashq",
+          "lines": [
+            { "who": "Yigit", "textEn": "Would you like some coffee?", "given": true },
+            { "who": "Qiz", "textEn": "Yes, ............ . I'd love some.", "answer": "please", "hintUz": "Taklifni qabul qilish so'zi", "whyUz": "'Yes, PLEASE.' — taklifni QABUL QILISH.\n'Yes, thanks' — bu kontekstda g'alati eshitiladi." },
+            { "who": "Yigit", "textEn": "Would you like some cake?", "given": true },
+            { "who": "Qiz", "textEn": "No, ............ . I don't like cakes.", "answer": "thanks", "hintUz": "Taklifni muloyim rad etish so'zi", "whyUz": "'No, THANKS.' — taklifni muloyim RAD ETISH.\n'No, thank you' ham to'g'ri (rasmiyroq).\nDIQQAT: 'No, please' XATO." }
+          ]
+        },
+        {
+          "ref": "14b",
+          "type": "word_choice",
+          "instructionEn": "Say what the speaker says to accept the offer and what he says to refuse the offer.",
+          "instructionUz": "Gapiruvchi taklifni qabul qilish uchun nima deyishini va rad etish uchun nima deyishini ayting.",
+          "explanationUz": "TAKLIFGA IKKI XIL JAVOB:\n\n  QABUL QILISH (to accept):\n     Yes, please.\n     Yes, please. I'd love some.\n     Oh, yes, please!\n     That would be nice, thank you.\n\n  RAD ETISH (to refuse):\n     No, thanks.\n     No, thank you.\n     No, thanks. I don't like ...\n     No, thanks. I'm not hungry/thirsty.\n\nDIQQAT — ENG MUHIM FARQ:\n  QABUL → PLEASE\n  RAD   → THANKS / THANK YOU\n\nO'zbekchada 'rahmat' ikkalasida ham ishlatiladi,\ningliz tilida esa YO'Q — farqi aniq.",
+          "bookRef": "Coursebook, 57-bet, 14b-mashq",
+          "items": [
+            { "textEn": "Taklifni QABUL QILISH uchun nima deydi?", "uz": "Rasmdagi birinchi javob", "options": ["Yes, please. I'd love some.", "No, thanks. I don't like cakes."], "answer": "Yes, please. I'd love some.", "whyUz": "QABUL QILISH: 'Yes, PLEASE.'\n'I'd love some' = juda xohlardim (kuchli qabul).\n'I'd' = I would." },
+            { "textEn": "Taklifni RAD ETISH uchun nima deydi?", "uz": "Rasmdagi ikkinchi javob", "options": ["No, thanks. I don't like cakes.", "Yes, please. I'd love some."], "answer": "No, thanks. I don't like cakes.", "whyUz": "RAD ETISH: 'No, THANKS.'\nSo'ng SABAB aytiladi — bu muloyimlik belgisi." }
+          ]
+        },
+        {
+          "ref": "14c",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Use the prompts to act out similar dialogues.",
+          "instructionUz": "Berilgan so'zlar bilan shunga o'xshash dialoglar tuzing.",
+          "explanationUz": "BERILGAN SO'ZLAR (to'rt juftlik):\n  orange juice, chocolate\n  milk, biscuits\n  wine, chips\n  lemon juice, cherries\n\nQOLIP:\n  — Would you like some [1-so'z]?\n  — Yes, please. I'd love some.\n  — Would you like some [2-so'z]?\n  — No, thanks. I don't like [2-so'z].\n\nDIQQAT — RAD ETISHDA OT SHAKLI:\n  SANALMAYDIGAN → I don't like chocolate.\n  KO'PLIK        → I don't like biscuits.\n  Umumiy yoqtirmaslikni bildirganda KO'PLIK ishlatiladi.",
+          "bookRef": "Coursebook, 57-bet, 14c-mashq",
+          "items": [
+            { "prompt": "orange juice (qabul) / chocolate (rad)", "question": "Would you like some orange juice? — Would you like some chocolate?", "answer": "Yes, please. I'd love some. — No, thanks. I don't like chocolate.", "whyUz": "Ikkalasi ham SANALMAYDIGAN → SOME bilan.\n'chocolate' — sanalmaydigan (massa)." },
+            { "prompt": "milk (qabul) / biscuits (rad)", "question": "Would you like some milk? — Would you like some biscuits?", "answer": "Yes, please. I'd love some. — No, thanks. I don't like biscuits.", "whyUz": "'milk' — sanalmaydigan; 'biscuits' — ko'plik.\nIkkalasi ham taklif savolida SOME bilan." },
+            { "prompt": "wine (qabul) / chips (rad)", "question": "Would you like some wine? — Would you like some chips?", "answer": "Yes, please. I'd love some. — No, thanks. I don't like chips.", "whyUz": "'wine' — sanalmaydigan; 'chips' — ko'plik (kartoshka fri)." },
+            { "prompt": "lemon juice (qabul) / cherries (rad)", "question": "Would you like some lemon juice? — Would you like some cherries?", "answer": "Yes, please. I'd love some. — No, thanks. I don't like cherries.", "whyUz": "'lemon juice' — sanalmaydigan; 'cherries' — ko'plik.\n'cherry' → 'cherries' (undosh + y → -IES)." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "practice",
+      "title": "Correct the mistakes",
+      "titleUz": "Xatolarni to'g'rilash",
+      "exercises": [
+        {
+          "ref": "15",
+          "type": "fill_gap",
+          "instructionEn": "Correct the mistakes.",
+          "instructionUz": "Xatolarni to'g'rilang.",
+          "explanationUz": "BU MASHQ — BUTUN BETNING TAKRORI.\n\nXATO TURLARI:\n\n  1) SOME / A / AN noto'g'ri ishlatilgan\n       some banana → A banana (sanaladigan birlik)\n       a water → SOME water (sanalmaydigan)\n\n  2) SOME / ANY noto'g'ri\n       Can I have ANY bread? → SOME (iltimos savoli)\n\n  3) 'I like' o'rniga 'I'd like' kerak\n       'I like' = yoqtiraman (umuman)\n       'I'd like' = xohlayman (hozir)\n\n  4) HOW MUCH / HOW MANY noto'g'ri\n       How many honey? → How MUCH (sanalmaydigan)\n       How much oranges? → How MANY (sanaladigan)\n\n  5) A FEW / A LITTLE noto'g'ri\n       milk uchun 'a few' → A LITTLE\n\n  6) Sanalmaydigan otga -s qo'shilgan\n       some sugars → some SUGAR\n\nKITOBDA BERILGAN: 1-band ('some' chizib tashlangan, 'a' yozilgan).",
+          "bookRef": "Coursebook, 57-bet, 15-mashq",
+          "items": [
+            { "textEn": "1  I'd like some banana please. → ............", "answer": "a", "given": true, "hintUz": "Kitobda berilgan", "whyUz": "Kitobda BERILGAN javob: 'some' → 'a'.\n'a banana' — SANALADIGAN BIRLIK → 'a' kerak.\nTo'g'ri gap: I'd like A banana, please." },
+            { "textEn": "2  I'm thirsty. I'd like a water. → ............", "answer": "some", "hintUz": "'water' sanaladimi?", "whyUz": "'water' — SANALMAYDIGAN → 'a' ISHLATILMAYDI.\nTo'g'ri gap: I'd like SOME water.\n(Yoki: 'a glass of water'.)" },
+            { "textEn": "3  Can I have any bread, please? → ............", "answer": "some", "hintUz": "Bu savol ILTIMOS ifodalaydi", "whyUz": "ILTIMOS (request) savolida SOME ishlatiladi.\nTo'g'ri gap: Can I have SOME bread, please?\n13-mashqdagi qoida." },
+            { "textEn": "4  I'm hungry. I like a hamburger. → ............", "answer": "I'd like", "hintUz": "'yoqtiraman' emas, 'xohlayman'", "whyUz": "'I like' = umuman yoqtiraman.\n'I'd like' (= I WOULD like) = hozir xohlayman.\nQorni ochgan odam 'I'D LIKE a hamburger' deydi." },
+            { "textEn": "5  Would you like some tea? Yes, I love some. → ............", "answer": "I'd love", "hintUz": "Javobda ham 'would' kerak", "whyUz": "'I love some' — noto'g'ri.\nTo'g'ri: 'Yes, I'D LOVE some.' (= I WOULD love)\nTaklifga javobda DOIM 'I'd love' ishlatiladi." },
+            { "textEn": "6  Do you like a cup of tea? Yes, please. → ............", "answer": "Would you like", "hintUz": "Javob 'Yes, please' — bu TAKLIFGA javob", "whyUz": "'Yes, please' — TAKLIFGA javob, shuning uchun savol ham\ntaklif bo'lishi kerak: 'WOULD YOU LIKE a cup of tea?'\n'Do you like tea?' savoliga javob 'Yes, I do' bo'lardi." },
+            { "textEn": "7  I'd like some sugars in my tea. → ............", "answer": "sugar", "hintUz": "'sugar' sanaladimi?", "whyUz": "'sugar' — SANALMAYDIGAN → -S QO'SHILMAYDI.\nTo'g'ri gap: I'd like some SUGAR in my tea." },
+            { "textEn": "8  How many honey do you need? → ............", "answer": "How much", "hintUz": "'honey' sanaladimi?", "whyUz": "'honey' (asal) — SANALMAYDIGAN → HOW MUCH.\nTo'g'ri gap: HOW MUCH honey do you need?" },
+            { "textEn": "9  Could I have a butter please? → ............", "answer": "some", "hintUz": "'butter' sanaladimi?", "whyUz": "'butter' — SANALMAYDIGAN → 'a' ISHLATILMAYDI.\nTo'g'ri gap: Could I have SOME butter, please?\n('Could I have ...?' — 'Can I have ...?' dan muloyimroq.)" },
+            { "textEn": "10  \"Would you like some milk in your tea?\" \"Just a few, please.\" → ............", "answer": "a little", "hintUz": "'milk' sanaladimi?", "whyUz": "'milk' — SANALMAYDIGAN → A LITTLE ('a few' XATO).\nTo'g'ri javob: 'Just A LITTLE, please.'\n11-mashqdagi qoida." },
+            { "textEn": "11  I'd like eggs but I don't like bacon. → ............", "answer": "some eggs", "hintUz": "Tasdiq gapda qaysi so'z tushib qolgan?", "whyUz": "TASDIQ gapda ko'plik ot oldida SOME kerak.\nTo'g'ri gap: I'd like SOME EGGS but I don't like bacon.\nDIQQAT: inkorda ('I don't like bacon') 'some' KERAK EMAS." },
+            { "textEn": "12  How many wine is there in the fridge? → ............", "answer": "How much", "hintUz": "'wine' sanaladimi?", "whyUz": "'wine' — SANALMAYDIGAN → HOW MUCH.\nTo'g'ri gap: HOW MUCH wine is there in the fridge?\n(Fe'l 'is' ham sanalmaydigan otga ishora qiladi.)" },
+            { "textEn": "13  How much oranges do we need? → ............", "answer": "How many", "hintUz": "'oranges' sanaladimi?", "whyUz": "'oranges' — SANALADIGAN, KO'PLIKDA → HOW MANY.\nTo'g'ri gap: HOW MANY oranges do we need?\n12-band bilan solishtiring — teskari xato." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "57-bet — miqdor so'zlari va taklif iboralari.",
+    "groups": [
+      {
+        "ruleUz": "Miqdor so'zlari: sanaladigan va sanalmaydigan",
+        "explanationUz": "Har bir so'z faqat bir turdagi ot bilan ishlatiladi.",
+        "items": [
+          { "base": "how many", "baseUz": "nechta?", "derived": "SANALADIGAN", "derivedUz": "How many eggs?", "note": "javob: son" },
+          { "base": "how much", "baseUz": "qancha?", "derived": "SANALMAYDIGAN", "derivedUz": "How much milk?", "note": "javob: miqdor" },
+          { "base": "a few", "baseUz": "bir nechta", "derived": "SANALADIGAN", "derivedUz": "a few carrots", "note": "" },
+          { "base": "a little", "baseUz": "bir oz", "derived": "SANALMAYDIGAN", "derivedUz": "a little milk", "note": "" },
+          { "base": "many", "baseUz": "ko'p", "derived": "SANALADIGAN", "derivedUz": "many books", "note": "odatda inkor/savolda" },
+          { "base": "much", "baseUz": "ko'p", "derived": "SANALMAYDIGAN", "derivedUz": "much time", "note": "odatda inkor/savolda" },
+          { "base": "a lot of", "baseUz": "juda ko'p", "derived": "IKKALASI HAM", "derivedUz": "a lot of books / water", "note": "tasdiqda" }
+        ]
+      },
+      {
+        "ruleUz": "SOME va ANY qoidasi",
+        "explanationUz": "Gap turiga va maqsadiga qarab tanlanadi.",
+        "items": [
+          { "base": "some", "baseUz": "bir oz, bir nechta", "derived": "TASDIQ gapda", "derivedUz": "There is some milk.", "note": "" },
+          { "base": "some", "baseUz": "bir oz", "derived": "TAKLIF savolida", "derivedUz": "Would you like some tea?", "note": "offer" },
+          { "base": "some", "baseUz": "bir oz", "derived": "ILTIMOS savolida", "derivedUz": "Can I have some ice?", "note": "request" },
+          { "base": "any", "baseUz": "hech qanday", "derived": "INKOR gapda", "derivedUz": "There isn't any milk.", "note": "" },
+          { "base": "any", "baseUz": "biror", "derived": "MA'LUMOT savolida", "derivedUz": "Is there any milk?", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Taklif va iltimos iboralari",
+        "explanationUz": "Kim kimga narsa taklif qilyapti — shunga qarab shakl tanlanadi.",
+        "items": [
+          { "base": "Would you like ...?", "baseUz": "... xohlaysizmi?", "derived": "TAKLIF (offer)", "derivedUz": "siz taklif qilasiz", "note": "eng muloyim" },
+          { "base": "How about ...?", "baseUz": "...-chi?", "derived": "TAKLIF (offer)", "derivedUz": "ikkinchi variant", "note": "" },
+          { "base": "Can I have ...?", "baseUz": "... olsam bo'ladimi?", "derived": "ILTIMOS (request)", "derivedUz": "siz so'raysiz", "note": "" },
+          { "base": "Could I have ...?", "baseUz": "... olsam bo'ladimi?", "derived": "ILTIMOS (request)", "derivedUz": "'can' dan MULOYIMROQ", "note": "" },
+          { "base": "May I have ...?", "baseUz": "... olsam mumkinmi?", "derived": "ILTIMOS (request)", "derivedUz": "eng rasmiy", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Qabul qilish va rad etish",
+        "explanationUz": "PLEASE — qabul, THANKS — rad. Bu farqni yodda tuting.",
+        "items": [
+          { "base": "Yes, please.", "baseUz": "Ha, iltimos.", "derived": "QABUL", "derivedUz": "", "note": "'please' bilan" },
+          { "base": "I'd love some.", "baseUz": "Juda xohlardim.", "derived": "QABUL (kuchli)", "derivedUz": "= I WOULD love", "note": "" },
+          { "base": "That would be nice.", "baseUz": "Yaxshi bo'lardi.", "derived": "QABUL (muloyim)", "derivedUz": "", "note": "" },
+          { "base": "No, thanks.", "baseUz": "Yo'q, rahmat.", "derived": "RAD", "derivedUz": "", "note": "'thanks' bilan" },
+          { "base": "No, thank you.", "baseUz": "Yo'q, rahmat.", "derived": "RAD (rasmiyroq)", "derivedUz": "", "note": "" },
+          { "base": "I'm afraid ...", "baseUz": "Afsuski ...", "derived": "yomon xabarni yumshatadi", "derivedUz": "I'm afraid there isn't any.", "note": "'qo'rqaman' EMAS" }
+        ]
+      },
+      {
+        "ruleUz": "'I like' va 'I'd like' farqi",
+        "explanationUz": "Eng ko'p xato qilinadigan joy.",
+        "items": [
+          { "base": "I like tea.", "baseUz": "Men choyni yoqtiraman.", "derived": "UMUMIY yoqtirish", "derivedUz": "doim shunday", "note": "" },
+          { "base": "I'd like some tea.", "baseUz": "Men choy xohlayman.", "derived": "HOZIRGI xohish", "derivedUz": "= I WOULD like", "note": "do'kon, restoranda" },
+          { "base": "Do you like tea?", "baseUz": "Choyni yoqtirasizmi?", "derived": "did haqida savol", "derivedUz": "javob: Yes, I do.", "note": "" },
+          { "base": "Would you like some tea?", "baseUz": "Choy xohlaysizmi?", "derived": "TAKLIF", "derivedUz": "javob: Yes, please.", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "57-betdagi asosiy qoliplar.",
+    "patterns": [
+      {
+        "formula": "How MUCH + sanalmaydigan + do you need? — Just a LITTLE.",
+        "exampleEn": "How much milk do you need? — Just a little.",
+        "exampleUz": "Sizga qancha sut kerak? — Bir oz.",
+        "explanationUz": "MUCH va LITTLE — ikkalasi ham SANALMAYDIGAN otlar bilan."
+      },
+      {
+        "formula": "How MANY + sanaladigan (ko'plik) + do you need? — Just a FEW.",
+        "exampleEn": "How many carrots do you need? — Just a few.",
+        "exampleUz": "Sizga nechta sabzi kerak? — Bir nechta.",
+        "explanationUz": "MANY va FEW — ikkalasi ham SANALADIGAN otlar bilan."
+      },
+      {
+        "formula": "She needs + miqdor + OF + ot.  /  She doesn't need ANY + ot.",
+        "exampleEn": "She needs two kilos of meat. She doesn't need any eggs.",
+        "exampleUz": "Unga ikki kilo go'sht kerak. Unga tuxum kerak emas.",
+        "explanationUz": "INKORDA doim ANY: 'doesn't need ANY eggs'."
+      },
+      {
+        "formula": "Is/Are there ANY ...? — No, there isn't/aren't ANY ...",
+        "exampleEn": "Is there any milk in the fridge? — No, I'm afraid there isn't any milk.",
+        "exampleUz": "Muzlatgichda sut bormi? — Yo'q, afsuski sut yo'q.",
+        "explanationUz": "Ma'lumot so'rash savolida va inkorda ANY."
+      },
+      {
+        "formula": "Would you like SOME ...? (taklif)  /  Can I have SOME ...? (iltimos)",
+        "exampleEn": "Would you like some Coke? Can I have some ice too?",
+        "exampleUz": "Kola xohlaysizmi? Muz ham olsam bo'ladimi?",
+        "explanationUz": "TAKLIF va ILTIMOS savollarida SOME (any EMAS)."
+      },
+      {
+        "formula": "Yes, PLEASE. I'd love some.  /  No, THANKS. I don't like ...",
+        "exampleEn": "Yes, please. I'd love some. — No, thanks. I don't like cakes.",
+        "exampleUz": "Ha, iltimos. Juda xohlardim. — Yo'q, rahmat. Men tortni yoqtirmayman.",
+        "explanationUz": "QABUL → PLEASE.  RAD → THANKS.\nRad etganda SABAB aytish — muloyimlik belgisi."
+      },
+      {
+        "formula": "I'd like + some/a + ovqat, please.",
+        "exampleEn": "I'd like a banana, please. I'd like some water, please.",
+        "exampleUz": "Menga banan bering, iltimos. Menga suv bering, iltimos.",
+        "explanationUz": "SANALADIGAN BIRLIK → A.  SANALMAYDIGAN → SOME.\n'I like' EMAS, 'I'D like' (= I would like)."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "How much ...?", "uz": "Qancha? (sanalmaydigan)" },
+    { "en": "How many ...?", "uz": "Nechta? (sanaladigan)" },
+    { "en": "a little", "uz": "bir oz (sanalmaydigan)" },
+    { "en": "a few", "uz": "bir nechta (sanaladigan)" },
+    { "en": "just", "uz": "shunchaki, atigi" },
+    { "en": "to need", "uz": "kerak bo'lmoq" },
+    { "en": "olives", "uz": "zaytunlar" },
+    { "en": "a shopping list", "uz": "xarid ro'yxati" },
+    { "en": "a dinner party", "uz": "kechki ziyofat" },
+    { "en": "to tick", "uz": "belgilamoq (✓)" },
+    { "en": "to cross out", "uz": "chizib tashlamoq" },
+    { "en": "a fridge", "uz": "muzlatgich" },
+    { "en": "I'm afraid ...", "uz": "Afsuski ..." },
+    { "en": "instead", "uz": "o'rniga" },
+    { "en": "ice", "uz": "muz" },
+    { "en": "of course", "uz": "albatta" },
+    { "en": "affirmative", "uz": "tasdiq" },
+    { "en": "negative", "uz": "inkor" },
+    { "en": "interrogative", "uz": "so'roq" },
+    { "en": "an offer", "uz": "taklif" },
+    { "en": "a request", "uz": "iltimos" },
+    { "en": "to accept", "uz": "qabul qilmoq" },
+    { "en": "to refuse", "uz": "rad etmoq" },
+    { "en": "chocolate", "uz": "shokolad" },
+    { "en": "lemon juice", "uz": "limon sharbati" },
+    { "en": "Could I have ...?", "uz": "... olsam bo'ladimi? (muloyim)" },
+    { "en": "honey", "uz": "asal" },
+    { "en": "butter", "uz": "sariyog'" }
+  ]
+}
