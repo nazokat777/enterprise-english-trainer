@@ -1,0 +1,308 @@
+{
+  "book": "workbook",
+  "pdfPage": 11,
+  "bookPage": 10,
+  "unit": 2,
+  "unitTitle": "A Friend in Need ...",
+  "module": 1,
+  "pairsWith": {
+    "coursebook": [15, 16],
+    "grammar": [10, 11],
+    "noteUz": "'can' jadvali grammar 10-bet Ex.5 ga, 'have got' jadvali grammar 9-bet Ex.2 ga, alifbo coursebook 16-bet Ex.16 (imlo) ga mos keladi."
+  },
+  "scanNote": {
+    "uz": "Skanerlangan nusxada Ex.6, Ex.8 va Ex.9 TO'G'RI bajarilgan. Ex.5 ning davomida (4 va 5-band) xato bor — quyida izohlangan."
+  },
+  "sections": [
+    {
+      "kind": "grammar_exercise",
+      "title": "Grammar (continued)",
+      "titleUz": "Grammatika (davomi)",
+      "exercises": [
+        {
+          "ref": "5-davomi",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Write questions and answers as in the example.",
+          "instructionUz": "Namunadagidek savol va javob yozing (9-betdagi mashqning davomi).",
+          "explanationUz": "MUHIM FARQ — qaysi fe'l kerak?\n\n  BE ishlatiladi:  bo'y, gavda, yosh, millat, kasb, holat\n     'Are they tall?' · 'Is he Italian?'\n\n  HAVE GOT ishlatiladi: soch, ko'z, burun, egalik\n     'HAS HE GOT fair hair?' — 'Is he fair hair?' XATO!\n\nSoch — bu odamning O'ZI emas, unda BOR narsa.\nShuning uchun 'have got' kerak.",
+          "items": [
+            {
+              "n": 4,
+              "prompt": "they / tall? → No / quite short",
+              "question": "Are they tall?",
+              "answer": "No, they're quite short.",
+              "whyUz": "Bo'y — sifat, demak BE. Javobda ega ('they're') tushib qolmasin.",
+              "commonMistake": {
+                "wrong": "'no, are quite short'",
+                "whyUz": "EGA TUSHIB QOLGAN. Ingliz tilida ega majburiy: 'No, THEY'RE quite short.'\nVa gap boshida katta harf: 'No'."
+              }
+            },
+            {
+              "n": 5,
+              "prompt": "he / fair hair? → No / dark hair",
+              "question": "Has he got fair hair?",
+              "answer": "No, he's got dark hair.",
+              "whyUz": "Soch — egalik, demak HAVE GOT.",
+              "commonMistake": {
+                "wrong": "'is he fair hair?' / 'no, is'n dark hair'",
+                "whyUz": "Ikki jiddiy xato:\n1) Soch uchun BE ishlatilmaydi. 'IS he fair hair' — XATO.\n   To'g'risi: 'HAS HE GOT fair hair?'\n2) Javobda ham: 'No, HE'S GOT dark hair.'\n   'is'n' degan shakl umuman yo'q (isn't ham bu yerda mos emas)."
+              }
+            }
+          ]
+        },
+        {
+          "ref": "6a",
+          "type": "fill_gap",
+          "instructionEn": "Look at the table and fill in can or can't.",
+          "instructionUz": "Jadvalga qarang va can yoki can't ni qo'ying.",
+          "explanationUz": "Uch odam, olti qobiliyat. Jadvaldan ✓ yoki ✗ ni topib, mos shaklni qo'ying.\n\nDIQQAT — 2-bandda UCHTA bo'shliq bor va ular ketma-ket:\n  'Daniel CAN sing ... and he CAN use computers but he CAN'T play cricket.'\nBirinchi ikkitasi 'and' bilan bog'langan (ikkalasi ham tasdiq),\nuchinchisi 'but' dan keyin (inkor).",
+          "tableUz": {
+            "sarlavha": "Ben · Daniel · Kate",
+            "play cricket": "Ben ✓ · Daniel ✗ · Kate ✗",
+            "swim": "Ben ✓ · Daniel ✗ · Kate ✓",
+            "cook": "Ben ✗ · Daniel ✗ · Kate ✓",
+            "sing": "Ben ✗ · Daniel ✓ · Kate ✓",
+            "speak English": "Ben ✓ · Daniel ✓ · Kate ✓",
+            "use computers": "Ben ✓ · Daniel ✓ · Kate ✗"
+          },
+          "items": [
+            { "n": 1, "textEn": "Kate ___ play cricket, but she ___ swim.", "answer": "can't / can", "whyUz": "Kate: kriket ✗, suzish ✓" },
+            { "n": 2, "textEn": "Daniel ___ sing very well and he ___ use computers but he ___ play cricket.", "answer": "can / can / can't", "whyUz": "Daniel: kuylash ✓, kompyuter ✓, kriket ✗" },
+            { "n": 3, "textEn": "Ben ___ cook but he ___ play cricket.", "answer": "can't / can", "whyUz": "Ben: ovqat ✗, kriket ✓" },
+            { "n": 4, "textEn": "Ben, Daniel and Kate ___ speak English.", "answer": "can", "whyUz": "Uchalasi ham inglizcha biladi ✓" },
+            { "n": 5, "textEn": "Ben and Daniel ___ cook, but they ___ use computers.", "answer": "can't / can", "whyUz": "Ikkalasi: ovqat ✗, kompyuter ✓" }
+          ]
+        },
+        {
+          "ref": "6b",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Look at the table again. In pairs, ask and answer questions, as in the example.",
+          "instructionUz": "Jadvalga qayta qarang. Juftlikda namunadagidek savol-javob qiling.",
+          "explanationUz": "Qolip: 'Can + ISM + FE'L?' → 'Yes, he/she can.' / 'No, he/she can't.'\nJadvaldagi 18 katakning har biri uchun savol tuzsa bo'ladi.",
+          "example": {
+            "prompt": "Ben/play cricket",
+            "question": "Can Ben play cricket?",
+            "answer": "Yes, he can."
+          },
+          "items": [
+            { "n": 1, "prompt": "Ben/play cricket", "question": "Can Ben play cricket?", "answer": "Yes, he can.", "given": true },
+            { "n": 2, "prompt": "Daniel/play cricket", "question": "Can Daniel play cricket?", "answer": "No, he can't.", "given": true },
+            { "n": 3, "prompt": "Kate/cook", "question": "Can Kate cook?", "answer": "Yes, she can.", "whyUz": "Kate: ovqat ✓" },
+            { "n": 4, "prompt": "Ben/sing", "question": "Can Ben sing?", "answer": "No, he can't.", "whyUz": "Ben: kuylash ✗" },
+            { "n": 5, "prompt": "Daniel/swim", "question": "Can Daniel swim?", "answer": "No, he can't.", "whyUz": "Daniel: suzish ✗" },
+            { "n": 6, "prompt": "Kate/use computers", "question": "Can Kate use computers?", "answer": "No, she can't.", "whyUz": "Kate: kompyuter ✗" },
+            { "n": 7, "prompt": "Ben/speak English", "question": "Can Ben speak English?", "answer": "Yes, he can.", "whyUz": "Ben: inglizcha ✓" },
+            { "n": 8, "prompt": "Daniel/sing", "question": "Can Daniel sing?", "answer": "Yes, he can.", "whyUz": "Daniel: kuylash ✓" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "pronunciation",
+      "title": "The alphabet",
+      "titleUz": "Alifbo",
+      "exercises": [
+        {
+          "ref": "7",
+          "type": "listen_repeat",
+          "hasAudio": true,
+          "instructionEn": "Listen and repeat after your teacher.",
+          "instructionUz": "Eshiting va o'qituvchingizdan keyin takrorlang.",
+          "explanationUz": "Ingliz alifbosi — 26 harf. Harflarning NOMI va TOVUSHI boshqa-boshqa!\n\nO'zbek o'quvchilari uchun eng adashtiradigan harflar:\n  A [ey]  — 'a' emas\n  E [i:]  — 'e' emas\n  I [ay]  — 'i' emas\n  G [ji:] — 'g' emas\n  J [jey] — 'j' emas\n  H [eych]\n  W [dabl-yu] — eng uzun nomli harf\n  Y [way]\n\nBu bilim IMLO aytishda (coursebook 16-bet) kerak bo'ladi.",
+          "words": [
+            { "en": "A", "uz": "ey", "hintUz": "'a' emas!" },
+            { "en": "B", "uz": "bi:", "hintUz": "" },
+            { "en": "C", "uz": "si:", "hintUz": "'s' emas" },
+            { "en": "D", "uz": "di:", "hintUz": "" },
+            { "en": "E", "uz": "i:", "hintUz": "'e' emas!" },
+            { "en": "F", "uz": "ef", "hintUz": "" },
+            { "en": "G", "uz": "ji:", "hintUz": "'g' emas!" },
+            { "en": "H", "uz": "eych", "hintUz": "" },
+            { "en": "I", "uz": "ay", "hintUz": "'i' emas!" },
+            { "en": "J", "uz": "jey", "hintUz": "" },
+            { "en": "K", "uz": "key", "hintUz": "" },
+            { "en": "L", "uz": "el", "hintUz": "" },
+            { "en": "M", "uz": "em", "hintUz": "" },
+            { "en": "N", "uz": "en", "hintUz": "" },
+            { "en": "O", "uz": "ou", "hintUz": "" },
+            { "en": "P", "uz": "pi:", "hintUz": "" },
+            { "en": "Q", "uz": "kyu:", "hintUz": "" },
+            { "en": "R", "uz": "a:", "hintUz": "" },
+            { "en": "S", "uz": "es", "hintUz": "" },
+            { "en": "T", "uz": "ti:", "hintUz": "" },
+            { "en": "U", "uz": "yu:", "hintUz": "" },
+            { "en": "V", "uz": "vi:", "hintUz": "" },
+            { "en": "W", "uz": "dabl-yu", "hintUz": "eng uzun nom" },
+            { "en": "X", "uz": "eks", "hintUz": "" },
+            { "en": "Y", "uz": "way", "hintUz": "" },
+            { "en": "Z", "uz": "zed", "hintUz": "AQShda 'zi:'" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_exercise",
+      "title": "have got — table",
+      "titleUz": "have got — jadval",
+      "exercises": [
+        {
+          "ref": "8a",
+          "type": "fill_gap",
+          "instructionEn": "Look at the table and fill in has, hasn't, have or haven't.",
+          "instructionUz": "Jadvalga qarang va has, hasn't, have yoki haven't dan mosini qo'ying.",
+          "explanationUz": "DIQQAT — 'or' inkor gapda:\n  'They haven't got a camera OR a computer.'\n  Inkor gapda 'and' emas, 'OR' ishlatiladi!\n\n  Tasdiq: 'She has got a camera AND a TV.'\n  Inkor:  'She hasn't got a camera OR a TV.'\n\nBu o'zbek o'quvchilari kam biladigan, lekin muhim qoida.",
+          "tableUz": {
+            "sarlavha": "camera · computer · TV · mobile phone",
+            "Jennifer": "camera ✓ · computer ✗ · TV ✓ · mobile ✗",
+            "Richard": "camera ✗ · computer ✓ · TV ✓ · mobile ✗",
+            "Helen & Chris": "camera ✗ · computer ✗ · TV ✓ · mobile ✓"
+          },
+          "items": [
+            { "n": 1, "textEn": "Jennifer ___ got a camera and a TV. She ___ got a computer.", "answer": "has / hasn't", "whyUz": "Jennifer: kamera ✓, TV ✓, kompyuter ✗" },
+            { "n": 2, "textEn": "Richard and Jennifer ___ got a mobile phone.", "answer": "haven't", "whyUz": "Ikkalasida ham mobil telefon ✗ → ko'plik, inkor" },
+            { "n": 3, "textEn": "Helen and Chris ___ got a camera or a computer, but they ___ got a TV and a mobile phone.", "answer": "haven't / have", "whyUz": "Kamera ✗, kompyuter ✗ (inkorda 'or'), TV ✓, mobil ✓ (tasdiqda 'and')" },
+            { "n": 4, "textEn": "Richard ___ got a computer and a TV, but he ___ got a camera or a mobile phone.", "answer": "has / hasn't", "whyUz": "Richard: kompyuter ✓, TV ✓, kamera ✗, mobil ✗" }
+          ]
+        },
+        {
+          "ref": "8b",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Look at the table above. In pairs, ask and answer questions, as in the example.",
+          "instructionUz": "Yuqoridagi jadvalga qarang. Juftlikda namunadagidek savol-javob qiling.",
+          "explanationUz": "Qolip: 'Has/Have + EGA + got + a NARSA?' → 'Yes, EGA has/have.' / 'No, EGA hasn't/haven't.'\nQisqa javobda 'got' takrorlanmaydi.",
+          "example": {
+            "prompt": "Jennifer/camera",
+            "question": "Has Jennifer got a camera?",
+            "answer": "Yes, she has."
+          },
+          "items": [
+            { "n": 1, "prompt": "Jennifer/camera", "question": "Has Jennifer got a camera?", "answer": "Yes, she has.", "given": true },
+            { "n": 2, "prompt": "Jennifer/computer", "question": "Has Jennifer got a computer?", "answer": "No, she hasn't.", "given": true },
+            { "n": 3, "prompt": "Richard/camera", "question": "Has Richard got a camera?", "answer": "No, he hasn't.", "whyUz": "Richard: kamera ✗" },
+            { "n": 4, "prompt": "Richard/computer", "question": "Has Richard got a computer?", "answer": "Yes, he has.", "whyUz": "Richard: kompyuter ✓" },
+            { "n": 5, "prompt": "Helen and Chris/mobile phone", "question": "Have Helen and Chris got a mobile phone?", "answer": "Yes, they have.", "whyUz": "Ikki kishi → Have. Mobil ✓" },
+            { "n": 6, "prompt": "Helen and Chris/computer", "question": "Have Helen and Chris got a computer?", "answer": "No, they haven't.", "whyUz": "Kompyuter ✗" },
+            { "n": 7, "prompt": "Jennifer/TV", "question": "Has Jennifer got a TV?", "answer": "Yes, she has.", "whyUz": "TV ✓" },
+            { "n": 8, "prompt": "Richard/mobile phone", "question": "Has Richard got a mobile phone?", "answer": "No, he hasn't.", "whyUz": "Mobil ✗" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "communication",
+      "title": "Questions and answers",
+      "titleUz": "Savol va javoblar",
+      "exercises": [
+        {
+          "ref": "9",
+          "type": "match",
+          "instructionEn": "Match the questions to the answers, as in the example.",
+          "instructionUz": "Savollarni javoblarga moslang.",
+          "explanationUz": "Javob TURI savolni aytib beradi:\n\n  Joy nomi (Portugal, Spain) → Where ...?\n  Millat (Italian)           → What's your nationality?\n  Yosh (17)                  → How old ...?\n  Yes/No                     → Are you ...?\n  Rang (Red)                 → What's your favourite colour?\n  Raqam (660068)             → What's your telephone number?\n  Kasb (hairdresser)         → What's her job?\n\nDIQQAT: 'Where are YOU from?' → 'I'm ...' · 'Where are YOU AND YOUR FRIEND from?' → 'WE'RE ...'\nSavoldagi ega javobdagi egani belgilaydi.",
+          "pairs": [
+            { "left": "1. Where are your friends from?", "right": "c. They're from Portugal.", "note": "Ko'plik ega → they're" },
+            { "left": "2. What's your nationality?", "right": "i. I'm Italian.", "note": "Millat so'raldi" },
+            { "left": "3. How old is she?", "right": "f. She's 17.", "note": "Yosh so'raldi" },
+            { "left": "4. Are you a doctor?", "right": "k. Yes, I am.", "note": "Yes/No savol" },
+            { "left": "5. What's your favourite colour?", "right": "a. Red.", "note": "Rang so'raldi" },
+            { "left": "6. Are you in the school basketball team?", "right": "b. No, I'm in the school football team.", "note": "Inkor + tuzatish" },
+            { "left": "7. What's your home town?", "right": "j. Paris, France.", "note": "Tug'ilgan shahar" },
+            { "left": "8. What's your favourite band?", "right": "l. The Spice Girls.", "note": "Musiqa guruhi" },
+            { "left": "9. What's your telephone number?", "right": "e. 660068.", "note": "Raqam" },
+            { "left": "10. Where is Barcelona?", "right": "d. In Spain.", "note": "Joy so'raldi" },
+            { "left": "11. What's her job?", "right": "h. She's a hairdresser.", "note": "Kasb + artikl 'a'" },
+            { "left": "12. Where are you and your friend from?", "right": "g. We're from Germany.", "note": "'you and your friend' → we're" }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Kasb qo'shimchalari va qo'shma otlar.",
+    "groups": [
+      {
+        "ruleUz": "-dresser, -er → xizmat kasblari",
+        "explanationUz": "Ex.9 dagi 'hairdresser' shu qoida bilan yasalgan.",
+        "items": [
+          { "base": "hair + dress", "baseUz": "soch + tartibga solmoq", "derived": "hairdresser", "derivedUz": "sartarosh", "note": "a hairdresser" },
+          { "base": "wait", "baseUz": "xizmat qilmoq", "derived": "waiter", "derivedUz": "ofitsiant", "note": "-er" },
+          { "base": "clean", "baseUz": "tozalamoq", "derived": "cleaner", "derivedUz": "farrosh", "note": "-er" },
+          { "base": "photograph", "baseUz": "surat", "derived": "photographer", "derivedUz": "suratkash", "note": "urg'u o'zgaradi" }
+        ]
+      },
+      {
+        "ruleUz": "Qo'shma otlar — texnika va joy",
+        "explanationUz": "Bu betdagi buyum va joy nomlari.",
+        "items": [
+          { "base": "mobile + phone", "baseUz": "ko'chma + telefon", "derived": "a mobile phone", "derivedUz": "mobil telefon", "note": "AQShda 'cell phone'" },
+          { "base": "tele + vision", "baseUz": "uzoq + ko'rish", "derived": "a television (TV)", "derivedUz": "televizor", "note": "qisqasi TV" },
+          { "base": "home + town", "baseUz": "uy + shahar", "derived": "home town", "derivedUz": "tug'ilgan shahar" },
+          { "base": "foot + ball", "baseUz": "oyoq + to'p", "derived": "football", "derivedUz": "futbol" },
+          { "base": "basket + ball", "baseUz": "savat + to'p", "derived": "basketball", "derivedUz": "basketbol" }
+        ]
+      },
+      {
+        "ruleUz": "Harf NOMI va TOVUSHI farqi",
+        "explanationUz": "Harfning nomi bilan u beradigan tovush boshqa-boshqa. Imlo aytishda NOM ishlatiladi.",
+        "items": [
+          { "base": "A", "baseUz": "nomi: ey", "derived": "apple [æ]", "derivedUz": "tovushi: a", "note": "nom ≠ tovush" },
+          { "base": "E", "baseUz": "nomi: i:", "derived": "egg [e]", "derivedUz": "tovushi: e", "note": "nom ≠ tovush" },
+          { "base": "I", "baseUz": "nomi: ay", "derived": "in [ɪ]", "derivedUz": "tovushi: i", "note": "nom ≠ tovush" },
+          { "base": "G", "baseUz": "nomi: ji:", "derived": "go [g]", "derivedUz": "tovushi: g", "note": "nom ≠ tovush" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Bu betdagi eng muhim qoida — inkor gapda 'or'.",
+    "patterns": [
+      {
+        "formula": "INKORDA 'or': EGA + hasn't/haven't got + A + or + B",
+        "exampleEn": "They haven't got a camera or a computer.",
+        "exampleUz": "Ularda kamera ham, kompyuter ham yo'q.",
+        "explanationUz": "INKOR gapda 'and' emas, 'OR' ishlatiladi.\n  'haven't got a camera OR a computer' — TO'G'RI\n  'haven't got a camera AND a computer' — noto'g'ri\nTasdiq gapda esa 'and': 'has got a camera AND a TV'."
+      },
+      {
+        "formula": "BE yoki HAVE GOT — qaysi biri?",
+        "exampleEn": "Are they tall? (bo'y) / Has he got fair hair? (soch)",
+        "exampleUz": "Ular baland bo'ylimi? / Uning sochi oq-sariqmi?",
+        "explanationUz": "BE — odamning O'ZI qanaqa (bo'y, gavda, yosh, millat, kasb).\nHAVE GOT — odamda NIMA BOR (soch, ko'z, burun, narsalar)."
+      },
+      {
+        "formula": "EGA MAJBURIY: No, THEY'RE quite short.",
+        "exampleEn": "Are they tall? — No, they're quite short.",
+        "exampleUz": "Ular baland bo'ylimi? — Yo'q, ular ancha past.",
+        "explanationUz": "O'zbekchada 'Yo'q, past' desa bo'ladi. Inglizchada EGA tushib qolmaydi:\n'No, THEY'RE quite short.'"
+      },
+      {
+        "formula": "SAVOLDAGI EGA javobdagi egani belgilaydi",
+        "exampleEn": "Where are you from? → I'm ... · Where are you and your friend from? → We're ...",
+        "exampleUz": "Qayerdansiz? → Men... · Siz va do'stingiz qayerdansiz? → Biz...",
+        "explanationUz": "Savolda 'you' bitta odamga qaratilgan bo'lsa 'I', ikki kishiga bo'lsa 'we'."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "cricket", "uz": "kriket (sport turi)" },
+    { "en": "to use computers", "uz": "kompyuterdan foydalanmoq" },
+    { "en": "alphabet", "uz": "alifbo" },
+    { "en": "camera", "uz": "fotoapparat" },
+    { "en": "computer", "uz": "kompyuter" },
+    { "en": "TV / television", "uz": "televizor" },
+    { "en": "mobile phone", "uz": "mobil telefon" },
+    { "en": "nationality", "uz": "millat" },
+    { "en": "favourite colour", "uz": "sevimli rang" },
+    { "en": "team", "uz": "jamoa" },
+    { "en": "home town", "uz": "tug'ilgan shahar" },
+    { "en": "band", "uz": "musiqa guruhi" },
+    { "en": "telephone number", "uz": "telefon raqami" },
+    { "en": "hairdresser", "uz": "sartarosh" },
+    { "en": "Barcelona", "uz": "Barselona" },
+    { "en": "Germany", "uz": "Germaniya" },
+    { "en": "quite short", "uz": "ancha past bo'yli" },
+    { "en": "fair hair", "uz": "oq-sariq soch" },
+    { "en": "dark hair", "uz": "qora soch" }
+  ]
+}
