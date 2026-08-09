@@ -26,6 +26,27 @@ TRAINER = Path(__file__).resolve().parent.parent
 PAGES = TRAINER / "data" / "pages"
 OUT = TRAINER.parent / "enterprise-app" / "assets" / "content" / "enterprise1"
 
+# Eksportyor taniydigan mashq turlari. Bu ro'yxatda YO'Q tur uchrasa,
+# mashqning bandlari eksportga chiqmaydi — shuning uchun ogohlantirish
+# beriladi va check_content ham buni xato deb hisoblaydi.
+KNOWN_TYPES = {
+    "article_choice", "article_and_label", "true_false",
+    "word_choice", "underline_correct", "choose_correct",
+    "picture_choice", "picture_pronoun", "uz_to_en", "picture_guess_job",
+    "fill_from_list", "nationality_dialogue", "map_fill",
+    "match", "listen_match", "order_dialogue",
+    "number_to_words", "write_number", "words_to_number",
+    "word_order", "write_question", "fill_gap", "long_short_form",
+    "dialogue_fill", "dialogue_gap_fill", "text_gap_fill",
+    "complete_table", "prompt_to_dialogue", "picture_question_answer",
+    "photo_age_sentence", "picture_fill_and_ask", "read_label_answer",
+    "listen_fill_profile", "table_fill", "table_fill_from_list",
+    "write_sentences", "guided_writing", "table_to_paragraph",
+    "make_sentences_game", "speech_bubbles", "listen_repeat",
+    "dialogue_drill", "listen_act_out", "guessing_game",
+    "ask_answer_landmarks", "discuss_meaning", "explain_sentences", "explain",
+}
+
 # Bo'limlarni o'quv mantig'i bo'yicha tartiblash: o'rgan -> mashq qil -> qo'lla.
 SECTION_ORDER = [
     "lead_in",
@@ -442,12 +463,27 @@ def _dispatch(t, ex, items):
 
         # (a) Ba'zi mashqlarda qatorlar MASHQ darajasida turadi (items emas).
         #     Matn `textEn` yoki `en` maydonida bo'lishi mumkin.
+        #     Bir qatorda BIR NECHTA bo'shliq bo'lsa — `answers` ro'yxati.
         for ln in ex.get("lines", []):
-            if ln.get("given") or not ln.get("answer"):
+            if ln.get("given"):
+                continue
+            answers = ln.get("answers") or (
+                [ln["answer"]] if ln.get("answer") else []
+            )
+            if not answers:
                 continue
             body = ln.get("textEn") or ln.get("en") or ""
-            out.append(task(_line_prompt(ln.get("who"), body), ln["answer"],
-                            prompt_uz=ln.get("uz", "")))
+            base_prompt = _line_prompt(ln.get("who"), body)
+            # `hintUz` — javobni oshkor qilmaydigan yordam. Bo'lmasa `uz`.
+            # DIQQAT: `uz` — qatorning to'liq tarjimasi. Javob BUTUN gap bo'lsa
+            # (masalan tushib qolgan savol), tarjima javobni beradi —
+            # bunday holda sahifa faylida `hintUz` yozilishi shart.
+            hint = ln.get("hintUz") or ln.get("uz", "")
+            for k, a in enumerate(answers):
+                prompt = base_prompt if len(answers) == 1 else \
+                    f"{base_prompt}  [{k + 1}-bo'shliq]"
+                out.append(task(prompt, a, prompt_uz=hint,
+                                why=ln.get("whyUz", "")))
 
         # (b) Ba'zilarida bir nechta dialog bo'ladi.
         for dlg in ex.get("dialogues", []):
@@ -556,12 +592,18 @@ def _dispatch(t, ex, items):
         return "text", out
 
     if t in ("write_sentences", "guided_writing", "table_to_paragraph"):
+        out = []
+        # (a) Tuzilishi berilgan bo'lsa — har bir qadamning sarlavhasi savol bo'ladi.
+        for s in ex.get("structure", []):
+            if s.get("modelEn"):
+                out.append(task(s.get("headingUz") or "Namuna bo'yicha yozing",
+                                s["modelEn"], why=s.get("noteUz", "")))
+        # (b) Tayyor namuna gaplar.
         models = ex.get("modelAnswers") or (
             [ex["modelAnswer"]] if ex.get("modelAnswer") else []
         )
-        if not models:
-            models = [s.get("modelEn", "") for s in ex.get("structure", [])]
-        return "text", [task("Namuna bo'yicha yozing", m) for m in models if m]
+        out += [task("Namuna bo'yicha yozing", m) for m in models if m]
+        return "text", out
 
     if t == "make_sentences_game":
         return "text", [
@@ -634,6 +676,12 @@ def _dispatch(t, ex, items):
         return "study", [study(ex.get("instructionEn", ""), ex.get("instructionUz", ""))]
 
     # ---------- fallback: hech narsa yo'qolmaydi ----------
+    # DIQQAT: bu yerga tushish — odatda XATO. Mashq turi tanilmasa, uning
+    # bandlari eksportga chiqmaydi va o'quvchi kontentni ko'rmaydi.
+    # Shuning uchun ogohlantirish chiqaramiz (check_content ham tekshiradi).
+    if t not in KNOWN_TYPES:
+        print(f"  OGOHLANTIRISH: noma'lum mashq turi '{t}' — bandlar chiqmadi",
+              file=sys.stderr)
     return "study", [study(ex.get("instructionEn", ""), ex.get("instructionUz", ""))]
 
 

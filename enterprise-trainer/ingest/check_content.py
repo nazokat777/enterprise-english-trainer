@@ -17,6 +17,8 @@ import re
 import sys
 from pathlib import Path
 
+from ingest.export_pages import KNOWN_TYPES
+
 TRAINER = Path(__file__).resolve().parent.parent
 PAGES = TRAINER / "data" / "pages"
 ASSETS = TRAINER.parent / "enterprise-app" / "assets" / "content" / "enterprise1"
@@ -33,6 +35,63 @@ UZ_IN_SPEECH = re.compile(
     r"(qator|to'ldir|tanlang|yozing|tuzing|qarang|Rasm |Matn |bo'yicha"
     r"|Namuna|toping|shakl|-bet|-o'rin)"
 )
+
+
+def count_answers(node) -> int:
+    """Manba mashqidagi javobli bo'shliqlar soni.
+
+    `given: true` belgilangan tugun butunlay o'tkazib yuboriladi — u kitobda
+    tayyor namuna, o'quvchi uni bajarmaydi.
+    """
+    if isinstance(node, list):
+        return sum(count_answers(x) for x in node)
+    if not isinstance(node, dict):
+        return 0
+    if node.get("given"):
+        return 0
+    n = 0
+    if node.get("answers"):
+        n += len(node["answers"])
+    elif node.get("answer"):
+        n += 1
+    for k, v in node.items():
+        if k in ("answer", "answers"):
+            continue
+        n += count_answers(v)
+    return n
+
+
+def check_losses() -> list[tuple[str, str]]:
+    """Manbadagi javoblar eksportga TO'LIQ chiqqanini tekshiradi.
+
+    Bu tekshiruv 15c-mashqda 12 ta predlog bandi jimgina yo'qolganini
+    topgan: eksportyor bir qatordagi bir nechta bo'shliqni bilmagan edi.
+    """
+    out = []
+    exported: dict[tuple, int] = {}
+    for f in sorted(ASSETS.glob("unit_*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for s in d["sections"]:
+            for e in s["exercises"]:
+                key = (e["book"], e["bookPage"], str(e["ref"]))
+                exported[key] = exported.get(key, 0) + len(e["tasks"])
+
+    for f in sorted(PAGES.glob("*/p*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for s in d.get("sections", []):
+            for e in s.get("exercises", []):
+                want = count_answers(e)
+                if not want:
+                    continue
+                key = (d["book"], d["bookPage"], str(e.get("ref", "")))
+                got = exported.get(key, 0)
+                if got < want:
+                    out.append((
+                        f"{d['book']} {d['bookPage']}-bet Ex.{e.get('ref')}",
+                        f"manbada {want} javob, eksportda {got} — "
+                        f"{want - got} tasi YO'QOLDI",
+                    ))
+    return out
 
 
 def check_sources() -> list[tuple[str, str]]:
@@ -61,6 +120,10 @@ def check_sources() -> list[tuple[str, str]]:
                     out.append((tag, f"Ex.{ref}: o'zbekcha ko'rsatma yo'q"))
                 if not any(e.get(k) for k in ITEM_KEYS):
                     out.append((tag, f"Ex.{ref}: bandlar yo'q"))
+                # Eksportyor tanimaydigan tur = bandlar jimgina yo'qoladi.
+                if e.get("type") and e["type"] not in KNOWN_TYPES:
+                    out.append((tag, f"Ex.{ref}: eksportyor '{e['type']}' "
+                                     f"turini bilmaydi — bandlar yo'qoladi"))
 
         for k, label in (("vocabularyOnPage", "sahifa lug'ati"),
                          ("sentencePatterns", "gap qoliplari"),
@@ -110,18 +173,24 @@ def check_export() -> list[tuple[str, str]]:
 def main() -> int:
     src = check_sources()
     exp = check_export()
+    lost = check_losses()
 
     print("=== MANBA SAHIFALARI ===")
     for tag, msg in src:
         print(f"  {tag:24s} {msg}")
     print("  muammo yo'q" if not src else f"  jami: {len(src)}")
 
+    print("\n=== YO'QOLGAN KONTENT (manba -> eksport) ===")
+    for tag, msg in lost:
+        print(f"  {tag:30s} {msg}")
+    print("  muammo yo'q" if not lost else f"  jami: {len(lost)}")
+
     print("\n=== EKSPORT (o'quvchi ko'radigan) ===")
     for loc, msg in exp:
         print(f"  {loc:30s} {msg}")
     print("  muammo yo'q" if not exp else f"  jami: {len(exp)}")
 
-    total = len(src) + len(exp)
+    total = len(src) + len(exp) + len(lost)
     print(f"\n{'TOZA' if total == 0 else f'JAMI MUAMMO: {total}'}")
     return 0 if total == 0 else 1
 

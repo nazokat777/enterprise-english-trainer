@@ -1,0 +1,284 @@
+{
+  "book": "coursebook",
+  "pdfPage": 24,
+  "bookPage": 22,
+  "unit": 3,
+  "unitTitle": "Home Sweet Home",
+  "module": 1,
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "Reading & Listening — Homes around the world",
+      "titleUz": "O'qish va tinglash — dunyodagi uylar",
+      "exercises": [
+        {
+          "ref": "15a",
+          "type": "picture_choice",
+          "instructionEn": "Look at the pictures. Which shows: a mud hut? / a chalet? / a block of flats? / a farmhouse? / a houseboat?",
+          "instructionUz": "Rasmlarga qarang. Qaysi birida nima ko'rsatilgan?",
+          "explanationUz": "DUNYODAGI TURLI UYLAR:\n\n  mud hut       — loydan qurilgan kulba (Afrika)\n  chalet        — yog'och tog' uyi (Shveytsariya, Alp tog'lari)\n  block of flats — ko'p qavatli turar-joy binosi\n  farmhouse     — ferma uyi\n  houseboat     — uy-qayiq (kanal yoki daryoda yashaydigan qayiq)\n\nHar bir uy turi o'sha yerning IQLIMI va TURMUSHIga moslashgan:\n  Afrikada issiq — loy devor salqin saqlaydi\n  Alp tog'larida sovuq — yog'och issiqni ushlab turadi\n  Gollandiyada kanal ko'p — qayiqda yashash odatiy",
+          "bookRef": "Coursebook, 22-bet, 15a-mashq",
+          "options": ["a mud hut", "a chalet", "a block of flats", "a farmhouse", "a houseboat"],
+          "answers": [
+            { "picture": "1", "country": "a farmhouse", "descEn": "Picture 1 — red wooden farm buildings on green grass", "descUz": "1-rasm: yashil o't ustidagi qizil yog'och ferma binolari" },
+            { "picture": "2", "country": "a block of flats", "descEn": "Picture 2 — a tall city building with many identical windows", "descUz": "2-rasm: ko'p bir xil derazali baland shahar binosi" },
+            { "picture": "3", "country": "a mud hut", "descEn": "Picture 3 — round earth houses with grass roofs in a dry village", "descUz": "3-rasm: quruq qishloqdagi somon tomli loy uylar" },
+            { "picture": "4", "country": "a chalet", "descEn": "Picture 4 — a wooden mountain house with flowers on the balcony", "descUz": "4-rasm: balkonida gullari bor yog'och tog' uyi" },
+            { "picture": "5", "country": "a houseboat", "descEn": "Picture 5 — a long narrow red and green boat on a canal", "descUz": "5-rasm: kanaldagi uzun ingichka qizil-yashil qayiq" }
+          ]
+        },
+        {
+          "ref": "15b",
+          "type": "match",
+          "hasAudio": true,
+          "instructionEn": "Listen and match the people's names to their homes. Write S for Salif, M for Maria, G for Greg, P for Paul and H for Hendrick.",
+          "instructionUz": "Tinglang va odamlarning ismini uylariga moslang.",
+          "audioRequiredUz": "Kitobda audio bor. Javoblarni 15c matnlaridan ham topish mumkin.",
+          "explanationUz": "Beshta odam, beshta uy:\n  S = Salif      (Nigeriya)\n  M = Maria      (Shveytsariya)\n  G = Greg       (AQSh, Boston)\n  P = Paul       (Kanada)\n  H = Hendrick   (Gollandiya)\n\nMatnlarni o'qib, kim qayerda yashashini toping.",
+          "bookRef": "Coursebook, 22-bet, 15b-mashq",
+          "pairs": [
+            { "left": "1-rasm — ferma uyi (farmhouse)", "right": "P — Paul (Kanada)" },
+            { "left": "2-rasm — ko'p qavatli uy (block of flats)", "right": "G — Greg (Boston, AQSh)" },
+            { "left": "3-rasm — loy kulba (mud hut)", "right": "S — Salif (Nigeriya)" },
+            { "left": "4-rasm — tog' uyi (chalet)", "right": "M — Maria (Shveytsariya)" },
+            { "left": "5-rasm — uy-qayiq (houseboat)", "right": "H — Hendrick (Gollandiya)" }
+          ]
+        },
+        {
+          "ref": "15c",
+          "type": "text_gap_fill",
+          "instructionEn": "Read the texts and fill in the missing prepositions.",
+          "instructionUz": "Matnlarni o'qing va tushib qolgan predloglarni qo'ying.",
+          "explanationUz": "JOY PREDLOGLARI — eng chalkash qism.\n\nIN — ichida bo'lgan, o'ralgan joy:\n  in a village, in Nigeria, in a mud hut, in a flat,\n  in a farmhouse, in the centre, in the area\n\nON — yuzada, ustida:\n  on a mountain (tog' YUZASIDA)\n  on the fifteenth floor (qavat YUZASIDA)\n  on a farm (ferma YERIDA)\n  on a houseboat (qayiq USTIDA)\n  on a river (daryo YUZASIDA)\n\nAT — aniq NUQTA, ayniqsa to'liq manzil:\n  at 332, Newbury Street\n\nESLAB QOLING:\n  live IN a house / a flat  — uy ichida yashaydi\n  live ON a farm            — ferma bir hudud, uning ustida\n  live AT + uy raqami       — aniq nuqta\n\nMamlakat, shahar, qishloq — doim IN.",
+          "bookRef": "Coursebook, 22-bet, 15c-mashq",
+          "lines": [
+            { "who": "1", "textEn": "Salif lives ____ a village ____ Nigeria.", "answers": ["in", "in"], "uz": "Salif Nigeriyadagi bir qishloqda yashaydi.", "whyUz": "Qishloq va mamlakat — ikkalasi ham IN." },
+            { "who": "1", "textEn": "He lives ____ a mud hut.", "answer": "in", "uz": "U loy kulbada yashaydi.", "whyUz": "Uy ichida yashaydi → IN." },
+            { "who": "1", "textEn": "Mud huts have got grass roofs. They have usually got only one room.", "uz": "Loy kulbalarning tomi somondan. Odatda faqat bitta xonasi bo'ladi.", "given": true },
+            { "who": "2", "textEn": "Maria lives in a chalet ____ a mountain ____ Switzerland.", "answers": ["on", "in"], "uz": "Mariya Shveytsariyadagi tog'dagi chaletda yashaydi.", "whyUz": "Tog' — YUZA, shuning uchun ON a mountain. Mamlakat — IN Switzerland." },
+            { "who": "2", "textEn": "These houses are made of wood. They have usually got two floors and an attic.", "uz": "Bu uylar yog'ochdan qurilgan. Odatda ikki qavat va chordog'i bo'ladi.", "given": true },
+            { "who": "3", "textEn": "Greg lives ____ a huge block of flats ____ Boston.", "answers": ["in", "in"], "uz": "Greg Bostondagi ulkan ko'p qavatli uyda yashaydi.", "whyUz": "Bino ichida — IN. Shahar — IN." },
+            { "who": "3", "textEn": "His flat is ____ the fifteenth floor and it is in the centre of the city.", "answer": "on", "uz": "Uning kvartirasi o'n beshinchi qavatda, shahar markazida.", "whyUz": "Qavat uchun doim ON: on the first/fifteenth floor." },
+            { "who": "3", "textEn": "He lives ____ 332, Newbury Street.", "answer": "at", "uz": "U Nyuberi ko'chasi, 332-uyda yashaydi.", "whyUz": "To'liq manzil (uy raqami bilan) — AT. Faqat ko'cha nomi bo'lsa — IN Newbury Street." },
+            { "who": "3", "textEn": "There are a lot of expensive shops ____ the area.", "answer": "in", "uz": "Bu hududda ko'p qimmat do'konlar bor.", "whyUz": "Hudud — IN the area." },
+            { "who": "4", "textEn": "Paul lives ____ a farm ____ Canada.", "answers": ["on", "in"], "uz": "Pol Kanadadagi fermada yashaydi.", "whyUz": "Ferma — yer maydoni, ustida yashaydi → ON a farm. Mamlakat — IN." },
+            { "who": "4", "textEn": "He lives ____ a big farmhouse near a river.", "answer": "in", "uz": "U daryo yonidagi katta ferma uyida yashaydi.", "whyUz": "Uy ichida — IN. 'near' predlogi 'yonida' degani." },
+            { "who": "5", "textEn": "Hendrick lives ____ a houseboat ____ a river in Holland.", "answers": ["on", "on"], "uz": "Hendrik Gollandiyadagi daryoda turgan uy-qayiqda yashaydi.", "whyUz": "Qayiq USTIDA — ON a boat. Daryo YUZASIDA — ON a river." },
+            { "who": "5", "textEn": "It's got three cabins.", "uz": "Uning uchta kayutasi bor.", "given": true }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "At the estate agent's",
+      "titleUz": "Ko'chmas mulk agentligida",
+      "exercises": [
+        {
+          "ref": "16",
+          "type": "dialogue_fill",
+          "hasAudio": true,
+          "instructionEn": "Sandra Richway is talking to an estate agent. Read the dialogue and try to fill in the missing information. Listen to the cassette and check your answers. Finally, in pairs, read the dialogue aloud.",
+          "instructionUz": "Sandra Richway ko'chmas mulk agenti bilan gaplashmoqda. Dialogni o'qing va tushib qolgan savollarni to'ldiring.",
+          "audioRequiredUz": "Kitobda audio bor — javoblarni tekshirish uchun. Javoblar dialogning mantiqidan ham topiladi.",
+          "explanationUz": "ESTATE AGENT — ko'chmas mulk agenti (uy sotish/ijaraga berish bilan shug'ullanadi).\n\nBu dialogda 5 ta savol tushib qolgan. Har birida KEYINGI javobga qarang —\nu qanday savol berilganini ko'rsatadi:\n\n  javob 'Yes. I want to rent a flat' → savol taklif bo'lgan\n  javob 'It has got ... six rooms' → savol xonalar SONI haqida\n  javob 'It's 14, Oakfield View'  → savol MANZIL haqida\n  javob 'Yes, it's O-A-K-...'     → savol HARFLAB AYTISH haqida\n  javob 'Of course. I can take you there' → savol KO'RISH haqida\n\nA = estate agent (agent), S = Sandra",
+          "bookRef": "Coursebook, 22-bet, 16-mashq",
+          "lines": [
+            { "who": "A", "textEn": "Hello. 1) ____ ?", "answer": "Can I help you?", "uz": "Salom. Yordam bera olamanmi?", "hintUz": "Agent mijozni ko'rib, xizmat taklif qiladi", "whyUz": "Do'kon va xizmat joylarida standart salomlashish. 'May I help you?' ham bo'ladi." },
+            { "who": "S", "textEn": "Yes. I want to rent a flat in this area.", "uz": "Ha. Men shu hududda kvartira ijaraga olmoqchiman.", "given": true },
+            { "who": "A", "textEn": "Okay, let me see. There is a very nice flat for rent quite near the city centre.", "uz": "Xo'p, ko'ray-chi. Shahar markaziga ancha yaqin juda yaxshi ijaraga beriladigan kvartira bor.", "given": true },
+            { "who": "S", "textEn": "2) ____ rooms has it got?", "answer": "How many", "uz": "Nechta xonasi bor?", "hintUz": "Xonalar SONI so'ralyapti — ikki so'z", "whyUz": "Sanaladigan narsa soni uchun 'How many'. Sanalmaydigan uchun 'How much'." },
+            { "who": "A", "textEn": "It has got a living-room, dining-room, kitchen, bathroom and two bedrooms. So that's six rooms.", "uz": "Unda mehmonxona, ovqatlanish xonasi, oshxona, hammom va ikkita yotoqxona bor. Ya'ni oltita xona.", "given": true },
+            { "who": "S", "textEn": "And how much is it?", "uz": "Narxi qancha?", "given": true },
+            { "who": "A", "textEn": "It's quite a good price — £300 per month.", "uz": "Narxi ancha yaxshi — oyiga 300 funt.", "given": true },
+            { "who": "S", "textEn": "That sounds perfect. 3) ____ ?", "answer": "What's the address?", "uz": "Bu ajoyib eshitiladi. Manzili qanday?", "hintUz": "Keyingi javob — uy raqami va ko'cha nomi", "whyUz": "Javob '14, Oakfield View' — manzil, demak savol manzil haqida." },
+            { "who": "A", "textEn": "It's 14, Oakfield View.", "uz": "U — Oakfield View, 14-uy.", "given": true },
+            { "who": "S", "textEn": "4) ____ ?", "answer": "Can you spell it, please?", "uz": "Uni harflab ayta olasizmi?", "hintUz": "Keyingi javob — bitta-bitta HARFLAR", "whyUz": "Javob 'Yes, it's O-A-K-F-I-E-L-D...' — harflar, demak savol harflab aytish haqida." },
+            { "who": "A", "textEn": "Yes, it's O - A - K - F - I - E - L - D ... V - I - E - W.", "uz": "Ha, u: O-A-K-F-I-E-L-D ... V-I-E-W.", "given": true },
+            { "who": "S", "textEn": "5) ____ see it?", "answer": "Can I", "uz": "Uni ko'rsam bo'ladimi?", "hintUz": "Ruxsat so'ralyapti — ikki so'z, 'see' dan oldin", "whyUz": "Javob 'Of course. I can take you there right now' — ruxsat so'ralgan. 'Can I come and see it?' ham to'g'ri." },
+            { "who": "A", "textEn": "Of course. I can take you there right now. Have you got time?", "uz": "Albatta. Sizni hozir o'sha yerga olib bora olaman. Vaqtingiz bormi?", "given": true },
+            { "who": "S", "textEn": "Yes. That's great.", "uz": "Ha. Ajoyib.", "given": true },
+            { "who": "A", "textEn": "Okay. I've got the keys here, so let's go.", "uz": "Xo'p. Kalitlar shu yerda, ketdik.", "given": true }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "communication",
+      "title": "Communication: Addresses and Phone Numbers",
+      "titleUz": "Muloqot: manzil va telefon raqami",
+      "exercises": [
+        {
+          "ref": "17a",
+          "type": "dialogue_drill",
+          "hasAudio": true,
+          "instructionEn": "Listen and repeat.",
+          "instructionUz": "Tinglang va takrorlang.",
+          "explanationUz": "MANZIL SO'RASH — kundalik hayotda eng kerakli dialoglardan biri.\n\nTELEFON RAQAMI ingliz tilida RAQAMMA-RAQAM o'qiladi:\n  4204188 → 'four two oh four one double eight'\n\n  0 — 'oh' deb o'qiladi (zero emas!)\n  ikkita bir xil raqam ketma-ket → 'double': 88 = 'double eight'\n  uchta bir xil → 'triple': 888 = 'triple eight'\n\nMANZIL tartibi: uy raqami, ko'cha nomi, shahar\n  14, Milcote Road, Birmingham\n\nKO'CHA turlari:\n  Road (Rd)   — yo'l\n  Street (St) — ko'cha\n  Avenue (Ave) — keng ko'cha (daraxtli)\n  Lane        — tor ko'cha\n  View        — manzarali ko'cha",
+          "bookRef": "Coursebook, 22-bet, 17-mashq",
+          "example": [
+            { "speaker": "A", "en": "What's your address, please?", "uz": "Manzilingiz qanday, iltimos?" },
+            { "speaker": "B", "en": "14, Milcote Road, Birmingham.", "uz": "Milkot yo'li, 14-uy, Birmingem." },
+            { "speaker": "A", "en": "Can you spell the street name, please?", "uz": "Ko'cha nomini harflab ayta olasizmi?" },
+            { "speaker": "B", "en": "M - I - L - C - O - T - E.", "uz": "M-I-L-C-O-T-E." },
+            { "speaker": "A", "en": "Thank you. Have you got a telephone number?", "uz": "Rahmat. Telefon raqamingiz bormi?" },
+            { "speaker": "B", "en": "Yes. It's 4204188.", "uz": "Ha. U 4204188." }
+          ]
+        },
+        {
+          "ref": "17b",
+          "type": "fill_gap",
+          "instructionEn": "Then, in pairs, act out similar dialogues using the prompts below.",
+          "instructionUz": "So'ng juftlikda quyidagi ma'lumotlar bilan shunday dialoglar tuzing.",
+          "explanationUz": "Uchta manzil berilgan. Har biri uchun namunadagi dialogni takrorlang:\n\n  • 12, Longhurst Lane, Reading (Tel.: 535602)\n  • 17, Morrison Avenue, Bath (Tel.: 334598)\n  • 21, Primrose Street, Crewe (Tel.: 750559)\n\nHar bir manzilda 3 ta javob kerak:\n  1) manzilning o'zi\n  2) ko'cha nomining harflari\n  3) telefon raqami — raqamma-raqam\n\nTelefon o'qilishi:\n  535602 — five three five six oh two\n  334598 — double three four five nine eight\n  750559 — seven five oh double five nine",
+          "bookRef": "Coursebook, 22-bet, 17-mashq (ma'lumotlar)",
+          "items": [
+            { "textEn": "What's your address, please? (12 / Longhurst Lane / Reading)", "answer": "12, Longhurst Lane, Reading.", "whyUz": "Tartib: uy raqami, ko'cha, shahar. Vergul bilan ajratiladi." },
+            { "textEn": "Can you spell the street name, please? (Longhurst)", "answer": "L - O - N - G - H - U - R - S - T", "whyUz": "Faqat ko'cha NOMI harflanadi, 'Lane' emas." },
+            { "textEn": "Have you got a telephone number? (535602)", "answer": "Yes. It's 535602.", "whyUz": "O'qilishi: five three five six oh two." },
+            { "textEn": "What's your address, please? (17 / Morrison Avenue / Bath)", "answer": "17, Morrison Avenue, Bath.", "whyUz": "Avenue — daraxtli keng ko'cha." },
+            { "textEn": "Can you spell the street name, please? (Morrison)", "answer": "M - O - R - R - I - S - O - N", "whyUz": "Ikkita R ketma-ket — 'double R' deb ham aytish mumkin." },
+            { "textEn": "Have you got a telephone number? (334598)", "answer": "Yes. It's 334598.", "whyUz": "O'qilishi: double three four five nine eight." },
+            { "textEn": "What's your address, please? (21 / Primrose Street / Crewe)", "answer": "21, Primrose Street, Crewe.", "whyUz": "Crewe — Angliyaning shimoli-g'arbidagi shahar." },
+            { "textEn": "Can you spell the street name, please? (Primrose)", "answer": "P - R - I - M - R - O - S - E", "whyUz": "Primrose — bahorgi sariq gul nomi." },
+            { "textEn": "Have you got a telephone number? (750559)", "answer": "Yes. It's 750559.", "whyUz": "O'qilishi: seven five oh double five nine." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "22-bet — uy turlari va manzil so'zlari.",
+    "groups": [
+      {
+        "ruleUz": "Qo'shma so'z bilan yasalgan uy turlari",
+        "explanationUz": "Uy turi ko'pincha MATERIAL yoki JOY + uy so'zidan yasaladi.",
+        "items": [
+          { "base": "mud + hut", "baseUz": "loy + kulba", "derived": "a mud hut", "derivedUz": "loy kulba", "note": "ikki so'z alohida" },
+          { "base": "farm + house", "baseUz": "ferma + uy", "derived": "a farmhouse", "derivedUz": "ferma uyi", "note": "qo'shilib yoziladi" },
+          { "base": "house + boat", "baseUz": "uy + qayiq", "derived": "a houseboat", "derivedUz": "uy-qayiq", "note": "qo'shilib yoziladi" },
+          { "base": "block + of + flats", "baseUz": "blok + kvartiralar", "derived": "a block of flats", "derivedUz": "ko'p qavatli turar-joy", "note": "'of' shart" },
+          { "base": "chalet", "baseUz": "—", "derived": "a chalet", "derivedUz": "tog' uyi", "note": "fransuz tilidan; o'qilishi 'SHA-ley', oxirgi t o'qilmaydi" }
+        ]
+      },
+      {
+        "ruleUz": "made of + material",
+        "explanationUz": "Narsa nimadan yasalganini aytish uchun 'be made of' ishlatiladi.",
+        "items": [
+          { "base": "wood", "baseUz": "yog'och", "derived": "made of wood", "derivedUz": "yog'ochdan yasalgan", "note": "wooden — sifat shakli" },
+          { "base": "mud", "baseUz": "loy", "derived": "made of mud", "derivedUz": "loydan yasalgan", "note": "" },
+          { "base": "glass", "baseUz": "shisha", "derived": "made of glass", "derivedUz": "shishadan yasalgan", "note": "" },
+          { "base": "stone", "baseUz": "tosh", "derived": "made of stone", "derivedUz": "toshdan yasalgan", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Tartib son — qavatlar uchun",
+        "explanationUz": "Qavat raqami TARTIB SON bilan aytiladi va oldiga 'the' qo'yiladi.",
+        "items": [
+          { "base": "five", "baseUz": "besh", "derived": "the fifth floor", "derivedUz": "beshinchi qavat", "note": "five → fifth (ve → f)" },
+          { "base": "fifteen", "baseUz": "o'n besh", "derived": "the fifteenth floor", "derivedUz": "o'n beshinchi qavat", "note": "-th qo'shiladi" },
+          { "base": "one", "baseUz": "bir", "derived": "the first floor", "derivedUz": "ikkinchi qavat (Britaniyada!)", "note": "one → first — mutlaqo boshqa so'z" },
+          { "base": "two", "baseUz": "ikki", "derived": "the second floor", "derivedUz": "uchinchi qavat (Britaniyada!)", "note": "two → second" }
+        ]
+      },
+      {
+        "ruleUz": "Ko'cha turlarining qisqartmasi",
+        "explanationUz": "Manzil yozganda ko'cha turi qisqartiriladi va nuqta qo'yiladi.",
+        "items": [
+          { "base": "Road", "baseUz": "yo'l", "derived": "Rd", "derivedUz": "qisqartma", "note": "" },
+          { "base": "Street", "baseUz": "ko'cha", "derived": "St", "derivedUz": "qisqartma", "note": "'Saint' ham St — kontekstdan bilinadi" },
+          { "base": "Avenue", "baseUz": "keng ko'cha", "derived": "Ave", "derivedUz": "qisqartma", "note": "" },
+          { "base": "telephone", "baseUz": "telefon", "derived": "Tel.", "derivedUz": "qisqartma", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Qayerda yashashini aytish va manzil so'rash.",
+    "patterns": [
+      {
+        "formula": "somebody lives IN + qishloq/shahar/mamlakat/uy.",
+        "exampleEn": "Salif lives in a village in Nigeria. He lives in a mud hut.",
+        "exampleUz": "Salif Nigeriyadagi qishloqda yashaydi. U loy kulbada yashaydi.",
+        "explanationUz": "Ichida bo'lgan, chegarasi bor joy uchun IN.\nQishloq, shahar, mamlakat, uy, kvartira — hammasi IN."
+      },
+      {
+        "formula": "somebody lives ON + tog'/ferma/qayiq/qavat.",
+        "exampleEn": "Maria lives in a chalet on a mountain. Paul lives on a farm.",
+        "exampleUz": "Mariya tog'dagi chaletda yashaydi. Pol fermada yashaydi.",
+        "explanationUz": "Yuza yoki maydon uchun ON: on a mountain, on a farm,\non a houseboat, on a river, on the fifteenth floor."
+      },
+      {
+        "formula": "somebody lives AT + uy raqami, ko'cha.",
+        "exampleEn": "He lives at 332, Newbury Street.",
+        "exampleUz": "U Nyuberi ko'chasi, 332-uyda yashaydi.",
+        "explanationUz": "To'liq manzil (uy raqami bilan) — AT.\nFaqat ko'cha nomi bo'lsa — IN Newbury Street."
+      },
+      {
+        "formula": "What's your address, please? — uy raqami, ko'cha, shahar.",
+        "exampleEn": "What's your address, please? — 14, Milcote Road, Birmingham.",
+        "exampleUz": "Manzilingiz qanday? — Milkot yo'li, 14-uy, Birmingem.",
+        "explanationUz": "'please' so'zi savolni muloyim qiladi — inglizchada juda muhim."
+      },
+      {
+        "formula": "Can you spell ... , please? — harflab aytish.",
+        "exampleEn": "Can you spell the street name, please? — M-I-L-C-O-T-E.",
+        "exampleUz": "Ko'cha nomini harflab ayta olasizmi? — M-I-L-C-O-T-E.",
+        "explanationUz": "'spell' — so'zni harflab aytmoq. Telefonda va rasmiy joylarda\ndoim so'raladi, chunki ingliz tilida yozilishi va o'qilishi farq qiladi."
+      },
+      {
+        "formula": "Have you got a telephone number? — Yes. It's + raqamlar.",
+        "exampleEn": "Have you got a telephone number? — Yes. It's 4204188.",
+        "exampleUz": "Telefon raqamingiz bormi? — Ha. U 4204188.",
+        "explanationUz": "Raqamlar birma-bir o'qiladi. 0 — 'oh', ikkita bir xil — 'double'."
+      },
+      {
+        "formula": "How many + ko'plik ot + has it got?",
+        "exampleEn": "How many rooms has it got?",
+        "exampleUz": "Nechta xonasi bor?",
+        "explanationUz": "Sanaladigan narsalar uchun 'How many'.\nPul va sanalmaydigan narsalar uchun 'How much': How much is it?"
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "a mud hut", "uz": "loy kulba" },
+    { "en": "a chalet", "uz": "tog' uyi (yog'ochdan)" },
+    { "en": "a block of flats", "uz": "ko'p qavatli turar-joy binosi" },
+    { "en": "a farmhouse", "uz": "ferma uyi" },
+    { "en": "a houseboat", "uz": "uy-qayiq" },
+    { "en": "a village", "uz": "qishloq" },
+    { "en": "a farm", "uz": "ferma" },
+    { "en": "a river", "uz": "daryo" },
+    { "en": "a mountain", "uz": "tog'" },
+    { "en": "a cabin", "uz": "kayuta, kichik xona (qayiqda)" },
+    { "en": "a grass roof", "uz": "somon tom" },
+    { "en": "made of wood", "uz": "yog'ochdan yasalgan" },
+    { "en": "usually", "uz": "odatda" },
+    { "en": "a lot of", "uz": "ko'p" },
+    { "en": "Nigeria", "uz": "Nigeriya" },
+    { "en": "Switzerland", "uz": "Shveytsariya" },
+    { "en": "Boston", "uz": "Boston (AQSh)" },
+    { "en": "Canada", "uz": "Kanada" },
+    { "en": "Holland", "uz": "Gollandiya" },
+    { "en": "an estate agent", "uz": "ko'chmas mulk agenti" },
+    { "en": "to rent", "uz": "ijaraga olmoq/bermoq" },
+    { "en": "for rent", "uz": "ijaraga beriladi" },
+    { "en": "a price", "uz": "narx" },
+    { "en": "per month", "uz": "oyiga" },
+    { "en": "keys", "uz": "kalitlar" },
+    { "en": "How many ...?", "uz": "Nechta ...?" },
+    { "en": "How much ...?", "uz": "Qancha ...?" },
+    { "en": "Can I help you?", "uz": "Yordam bera olamanmi?" },
+    { "en": "That sounds perfect.", "uz": "Bu ajoyib eshitiladi." },
+    { "en": "Of course.", "uz": "Albatta." },
+    { "en": "right now", "uz": "hozir, shu zahoti" },
+    { "en": "to spell", "uz": "harflab aytmoq" },
+    { "en": "an address", "uz": "manzil" },
+    { "en": "a telephone number", "uz": "telefon raqami" },
+    { "en": "Road", "uz": "yo'l (ko'cha turi)" },
+    { "en": "Avenue", "uz": "keng ko'cha" },
+    { "en": "Lane", "uz": "tor ko'cha" }
+  ]
+}
