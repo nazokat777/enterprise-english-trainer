@@ -1,0 +1,616 @@
+{
+  "book": "workbook",
+  "pdfPage": 9,
+  "bookPage": 8,
+  "unit": 2,
+  "unitTitle": "A Friend in Need ...",
+  "module": 1,
+  "pairsWith": {
+    "coursebook": [
+      12,
+      13
+    ],
+    "grammar": [
+      9
+    ],
+    "noteUz": "Lug'at mashqlari: ranglar coursebook 13-bet Ex.7 ga, tana qismlari coursebook 13-bet Ex.5 (yuz qismlari) ning davomi, soch/ko'z tavsifi coursebook 12-bet Ex.1 ga mos keladi."
+  },
+  "scanNote": {
+    "uz": "DIQQAT: skanerlangan nusxada qo'lyozma javoblar bor va Ex.1 da IKKITA, Ex.2 da BITTA xato mavjud. To'g'ri javoblar quyida; xatolar 'commonMistake' sifatida saqlangan."
+  },
+  "sections": [
+    {
+      "kind": "vocabulary",
+      "title": "Vocabulary — colours",
+      "titleUz": "Lug'at — ranglar",
+      "exercises": [
+        {
+          "ref": "1",
+          "type": "fill_from_list",
+          "instructionEn": "Complete the sentences with the colours.",
+          "instructionUz": "Gaplarni ranglar bilan to'ldiring.",
+          "explanationUz": "Ro'yxatda 4 ta rang bor va har biri BIR MARTA ishlatiladi.\nShuning uchun bittasini noto'g'ri qo'ysangiz, boshqasi ham buziladi.\n\nUsul: avval ANIQ bilganingizni qo'ying (tuxum — oq, daraxt — yashil),\nkeyin qolgan ikkitasi o'z-o'zidan joyiga tushadi.\n\nDIQQAT: 'A lemon is yellow' — limon SARIQ. Yashil limon 'a lime' deyiladi,\nbu boshqa meva.",
+          "wordList": [
+            "green",
+            "white",
+            "yellow",
+            "black"
+          ],
+          "items": [
+            {
+              "n": 1,
+              "sentence": "A lemon is ___ .",
+              "answer": "yellow",
+              "uz": "Limon sariq.",
+              "commonMistake": {
+                "wrong": "green",
+                "whyUz": "Qo'lyozmada 'green' yozilgan — XATO. Limon SARIQ (yellow). Yashil rangdagi o'xshash meva — 'a lime', bu boshqa so'z."
+              }
+            },
+            {
+              "n": 2,
+              "sentence": "An egg is ___ .",
+              "answer": "white",
+              "uz": "Tuxum oq.",
+              "scanCorrect": true
+            },
+            {
+              "n": 3,
+              "sentence": "A tree is ___ .",
+              "answer": "green",
+              "uz": "Daraxt yashil.",
+              "scanCorrect": true
+            },
+            {
+              "n": 4,
+              "sentence": "A penguin is ___ and white.",
+              "answer": "black",
+              "uz": "Pingvin qora va oq.",
+              "commonMistake": {
+                "wrong": "yellow",
+                "whyUz": "Qo'lyozmada 'yellow' yozilgan — XATO. Pingvin QORA va oq (black and white). 'yellow' allaqachon limonga ketishi kerak edi."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Parts of the body",
+      "titleUz": "Tana qismlari",
+      "exercises": [
+        {
+          "ref": "2a",
+          "type": "uz_to_en",
+          "instructionEn": "Label the parts of the body with words from the list.",
+          "instructionUz": "Tana qismlarini ro'yxatdagi so'zlar bilan belgilang.",
+          "explanationUz": "8 ta so'z, 8 ta joy — har biri bir marta ishlatiladi.\n\nQOIDASIZ KO'PLIK — bu yerda ikkitasi bor:\n  foot → FEET  (oyoq → oyoqlar)\n  tooth → teeth (Unit 2 ning oldingi betida)\n\nQolganlari oddiy -s oladi:\n  head → heads · hand → hands · arm → arms · leg → legs\n  finger → fingers · toe → toes · chest → chests\n\nDIQQAT: 'finger' — QO'L barmog'i, 'toe' — OYOQ barmog'i.\nO'zbekchada ikkalasi ham 'barmoq', inglizchada esa BOSHQA so'z.",
+          "wordList": [
+            "chest",
+            "head",
+            "hand",
+            "arm",
+            "leg",
+            "foot",
+            "finger",
+            "toe"
+          ],
+          "items": [
+            {
+              "n": 1,
+              "promptUz": "bosh",
+              "answer": "head",
+              "scanCorrect": true
+            },
+            {
+              "n": 2,
+              "promptUz": "ko'krak",
+              "answer": "chest",
+              "scanCorrect": true
+            },
+            {
+              "n": 3,
+              "promptUz": "qo'l (panja)",
+              "answer": "hand",
+              "scanCorrect": true
+            },
+            {
+              "n": 4,
+              "promptUz": "qo'l barmog'i",
+              "answer": "finger",
+              "scanCorrect": true
+            },
+            {
+              "n": 5,
+              "promptUz": "oyoq barmog'i",
+              "answer": "toe",
+              "commonMistake": {
+                "wrong": "nail",
+                "whyUz": "Qo'lyozmada 'nail' (tirnoq) yozilgan — XATO. Birinchidan, 'nail' RO'YXATDA YO'Q. Ikkinchidan, strelka barmoqni ko'rsatyapti. To'g'risi: TOE (oyoq barmog'i)."
+              }
+            },
+            {
+              "n": 6,
+              "promptUz": "qo'l (yelkadan)",
+              "answer": "arm",
+              "scanCorrect": true
+            },
+            {
+              "n": 7,
+              "promptUz": "oyoq (son)",
+              "answer": "leg",
+              "scanCorrect": true
+            },
+            {
+              "n": 8,
+              "promptUz": "oyoq (panja)",
+              "answer": "foot",
+              "scanCorrect": true
+            }
+          ]
+        },
+        {
+          "ref": "2b",
+          "type": "explain_sentences",
+          "instructionEn": "Now close your books, point to the parts of your body and name them.",
+          "instructionUz": "Endi kitobni yoping, tanangizning qismlarini ko'rsatib nomlang.",
+          "explanationUz": "Bu — ESLAB QOLISH mashqi. Ko'rsatib aytish so'zni tezroq yodda saqlaydi,\nchunki harakat va so'z birga bog'lanadi.\n\nTartib bilan ayting (yuqoridan pastga):\n  head → chest → arm → hand → finger → leg → foot → toe",
+          "sentences": [
+            {
+              "en": "This is my head.",
+              "uz": "Bu mening boshim.",
+              "noteUz": "Yuqoridan boshlang."
+            },
+            {
+              "en": "This is my chest.",
+              "uz": "Bu mening ko'kragim.",
+              "noteUz": ""
+            },
+            {
+              "en": "This is my arm.",
+              "uz": "Bu mening qo'lim.",
+              "noteUz": "Yelkadan panjagacha."
+            },
+            {
+              "en": "This is my hand.",
+              "uz": "Bu mening panjam.",
+              "noteUz": "Bilakdan pastda."
+            },
+            {
+              "en": "This is my finger.",
+              "uz": "Bu mening barmog'im.",
+              "noteUz": "Qo'l barmog'i."
+            },
+            {
+              "en": "This is my leg.",
+              "uz": "Bu mening oyog'im.",
+              "noteUz": "Sondan to'piqqacha."
+            },
+            {
+              "en": "This is my foot.",
+              "uz": "Bu mening oyoq panjam.",
+              "noteUz": "Ko'pligi: feet."
+            },
+            {
+              "en": "This is my toe.",
+              "uz": "Bu mening oyoq barmog'im.",
+              "noteUz": "Oyoq barmog'i."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "Describing eyes and hair",
+      "titleUz": "Ko'z va soch tavsifi",
+      "exercises": [
+        {
+          "ref": "3a",
+          "type": "read_label_answer",
+          "instructionEn": "Read the following and colour the people's eyes and hair.",
+          "instructionUz": "Quyidagilarni o'qing va odamlarning ko'zi va sochini bo'yang.",
+          "explanationUz": "Har gapda IKKI ma'lumot bor: ko'z rangi va soch tavsifi.\n\nSOCH TAVSIFI TARTIBI (buzilmas):\n  UZUNLIK + SHAKL + RANG + hair\n  'short grey curly hair' — hmm, bu yerda: short (uzunlik) + grey (rang) + curly (shakl)\n\nAslida kitobda ikki xil tartib uchraydi. Eng keng tarqalgani:\n  uzunlik → shakl → rang\n  'long straight fair hair'\nLekin rang va shakl o'rni ba'zan almashadi — ikkalasi ham qabul qilinadi.",
+          "people": [
+            {
+              "text": 1,
+              "name": "Ann",
+              "eyes": "blue",
+              "hair": "short grey curly hair"
+            },
+            {
+              "text": 2,
+              "name": "Jean",
+              "eyes": "green",
+              "hair": "long red hair"
+            },
+            {
+              "text": 3,
+              "name": "George",
+              "eyes": "brown",
+              "hair": "short black hair"
+            },
+            {
+              "text": 4,
+              "name": "Eric",
+              "eyes": "dark brown",
+              "hair": "light brown straight hair"
+            }
+          ],
+          "questions": [
+            {
+              "ref": "1",
+              "en": "What colour eyes and hair has Ann got?",
+              "uz": "Annning ko'zi va sochi qanday rangda?",
+              "answerEn": "She's got blue eyes and short grey curly hair.",
+              "answerUz": "Uning ko'k ko'zi va kalta kulrang jingalak sochi bor."
+            },
+            {
+              "ref": "2",
+              "en": "What colour eyes and hair has Jean got?",
+              "uz": "Jeanning ko'zi va sochi qanday rangda?",
+              "answerEn": "She's got green eyes and long red hair.",
+              "answerUz": "Uning yashil ko'zi va uzun qizg'ish sochi bor."
+            },
+            {
+              "ref": "3",
+              "en": "What colour eyes and hair has George got?",
+              "uz": "Georgening ko'zi va sochi qanday rangda?",
+              "answerEn": "He's got brown eyes and short black hair.",
+              "answerUz": "Uning jigarrang ko'zi va kalta qora sochi bor."
+            },
+            {
+              "ref": "4",
+              "en": "What colour eyes and hair has Eric got?",
+              "uz": "Ericning ko'zi va sochi qanday rangda?",
+              "answerEn": "He's got dark brown eyes and light brown straight hair.",
+              "answerUz": "Uning to'q jigarrang ko'zi va och jigarrang tekis sochi bor."
+            }
+          ]
+        },
+        {
+          "ref": "3b",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Look at the pictures above. In pairs, ask and answer questions, as in the example.",
+          "instructionUz": "Yuqoridagi rasmlarga qarang. Juftlikda namunadagidek savol-javob qiling.",
+          "explanationUz": "IKKI XIL SAVOL — ikkalasini ham yodlang:\n\n  'What COLOUR eyes has X got?'  → RANG so'raladi\n     Javob: 'He's got dark brown eyes.'\n\n  'What SORT of hair has X got?' → TUR/TAVSIF so'raladi\n     Javob: 'He's got light brown straight hair.'\n\n'sort' o'rniga 'kind' ham bo'ladi: 'What kind of hair...?'\nDIQQAT: so'roqda 'has X got' tartibi — 'X has got' emas.",
+          "example": {
+            "prompt": "Eric/eyes",
+            "question": "What colour eyes has Eric got?",
+            "answer": "He's got dark brown eyes."
+          },
+          "items": [
+            {
+              "n": 1,
+              "prompt": "Eric/eyes",
+              "question": "What colour eyes has Eric got?",
+              "answer": "He's got dark brown eyes.",
+              "given": true
+            },
+            {
+              "n": 2,
+              "prompt": "Eric/hair",
+              "question": "What sort of hair has he got?",
+              "answer": "He's got light brown straight hair.",
+              "given": true
+            },
+            {
+              "n": 3,
+              "prompt": "Ann/eyes",
+              "question": "What colour eyes has Ann got?",
+              "answer": "She's got blue eyes.",
+              "whyUz": "Ann — ayol → she"
+            },
+            {
+              "n": 4,
+              "prompt": "Ann/hair",
+              "question": "What sort of hair has she got?",
+              "answer": "She's got short grey curly hair.",
+              "whyUz": "Uzunlik + rang + shakl"
+            },
+            {
+              "n": 5,
+              "prompt": "George/eyes",
+              "question": "What colour eyes has George got?",
+              "answer": "He's got brown eyes.",
+              "whyUz": "George — erkak → he"
+            },
+            {
+              "n": 6,
+              "prompt": "George/hair",
+              "question": "What sort of hair has he got?",
+              "answer": "He's got short black hair.",
+              "whyUz": "Kalta qora soch"
+            },
+            {
+              "n": 7,
+              "prompt": "Jean/eyes",
+              "question": "What colour eyes has Jean got?",
+              "answer": "She's got green eyes.",
+              "whyUz": "Jean — bu yerda ayol ismi → she"
+            },
+            {
+              "n": 8,
+              "prompt": "Jean/hair",
+              "question": "What sort of hair has she got?",
+              "answer": "She's got long red hair.",
+              "whyUz": "Uzun qizg'ish soch"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Tana qismlarining ko'pligi va rang so'zlari.",
+    "groups": [
+      {
+        "ruleUz": "QOIDASIZ ko'plik — tana qismlarida",
+        "explanationUz": "Tana qismlarining ba'zilari -s olmaydi. Ular eng ko'p ishlatiladigan so'zlar, shuning uchun yodlash shart.",
+        "items": [
+          {
+            "base": "foot",
+            "baseUz": "oyoq (panja)",
+            "derived": "feet",
+            "derivedUz": "oyoqlar",
+            "note": "oo → ee"
+          },
+          {
+            "base": "tooth",
+            "baseUz": "tish",
+            "derived": "teeth",
+            "derivedUz": "tishlar",
+            "note": "oo → ee"
+          },
+          {
+            "base": "hand",
+            "baseUz": "qo'l (panja)",
+            "derived": "hands",
+            "derivedUz": "qo'llar",
+            "note": "oddiy -s"
+          },
+          {
+            "base": "arm",
+            "baseUz": "qo'l (yelkadan)",
+            "derived": "arms",
+            "derivedUz": "qo'llar",
+            "note": "oddiy -s"
+          },
+          {
+            "base": "leg",
+            "baseUz": "oyoq (son)",
+            "derived": "legs",
+            "derivedUz": "oyoqlar",
+            "note": "oddiy -s"
+          },
+          {
+            "base": "finger",
+            "baseUz": "qo'l barmog'i",
+            "derived": "fingers",
+            "derivedUz": "barmoqlar",
+            "note": "oddiy -s"
+          },
+          {
+            "base": "toe",
+            "baseUz": "oyoq barmog'i",
+            "derived": "toes",
+            "derivedUz": "barmoqlar",
+            "note": "oddiy -s"
+          }
+        ]
+      },
+      {
+        "ruleUz": "O'zbekchada BITTA so'z — inglizchada IKKITA",
+        "explanationUz": "Bu farqlar o'zbek o'quvchilari uchun eng ko'p xato manbai.",
+        "items": [
+          {
+            "base": "barmoq",
+            "baseUz": "qo'lda",
+            "derived": "finger",
+            "derivedUz": "qo'l barmog'i",
+            "note": "qo'lda"
+          },
+          {
+            "base": "barmoq",
+            "baseUz": "oyoqda",
+            "derived": "toe",
+            "derivedUz": "oyoq barmog'i",
+            "note": "oyoqda"
+          },
+          {
+            "base": "qo'l",
+            "baseUz": "panja qismi",
+            "derived": "hand",
+            "derivedUz": "panja",
+            "note": "bilakdan pastda"
+          },
+          {
+            "base": "qo'l",
+            "baseUz": "butun qo'l",
+            "derived": "arm",
+            "derivedUz": "qo'l (yelkadan)",
+            "note": "yelkadan panjagacha"
+          },
+          {
+            "base": "oyoq",
+            "baseUz": "panja qismi",
+            "derived": "foot",
+            "derivedUz": "oyoq panjasi",
+            "note": "to'piqdan pastda"
+          },
+          {
+            "base": "oyoq",
+            "baseUz": "butun oyoq",
+            "derived": "leg",
+            "derivedUz": "oyoq (sondan)",
+            "note": "sondan to'piqqacha"
+          }
+        ]
+      },
+      {
+        "ruleUz": "Rang darajalari (light / dark)",
+        "explanationUz": "Rangning och yoki to'qligini bildirish uchun oldiga so'z qo'yiladi.",
+        "items": [
+          {
+            "base": "brown",
+            "baseUz": "jigarrang",
+            "derived": "light brown",
+            "derivedUz": "och jigarrang",
+            "note": "light = och"
+          },
+          {
+            "base": "brown",
+            "baseUz": "jigarrang",
+            "derived": "dark brown",
+            "derivedUz": "to'q jigarrang",
+            "note": "dark = to'q"
+          },
+          {
+            "base": "green",
+            "baseUz": "yashil",
+            "derived": "dark green",
+            "derivedUz": "to'q yashil",
+            "note": ""
+          },
+          {
+            "base": "blue",
+            "baseUz": "ko'k",
+            "derived": "light blue",
+            "derivedUz": "moviy",
+            "note": ""
+          }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Rang va tavsif so'rashning ikki qolipi.",
+    "patterns": [
+      {
+        "formula": "NARSA + is + RANG",
+        "exampleEn": "A lemon is yellow. / A penguin is black and white.",
+        "exampleUz": "Limon sariq. / Pingvin qora va oq.",
+        "explanationUz": "Rang aytishda 'be' ishlatiladi. Ikki rang bo'lsa 'and' bilan bog'lanadi."
+      },
+      {
+        "formula": "What COLOUR + NARSA + has + EGA + got?",
+        "exampleEn": "What colour eyes has Eric got? — He's got dark brown eyes.",
+        "exampleUz": "Ericning ko'zi qanday rangda? — Uning to'q jigarrang ko'zi bor.",
+        "explanationUz": "RANG so'ralganda 'What colour'. So'roqda 'has Eric got' tartibi."
+      },
+      {
+        "formula": "What SORT of + NARSA + has + EGA + got?",
+        "exampleEn": "What sort of hair has he got? — He's got light brown straight hair.",
+        "exampleUz": "Uning sochi qanday? — Uning och jigarrang tekis sochi bor.",
+        "explanationUz": "TUR yoki TAVSIF so'ralganda 'What sort of' (yoki 'What kind of').\nJavobda uzunlik, shakl va rang birga aytiladi."
+      },
+      {
+        "formula": "EGA + has got + KO'Z + and + SOCH",
+        "exampleEn": "Ann has got blue eyes and short grey curly hair.",
+        "exampleUz": "Annning ko'k ko'zi va kalta kulrang jingalak sochi bor.",
+        "explanationUz": "Ikki xususiyat bitta gapda 'and' bilan birlashtiriladi — bu tabiiyroq,\nikkita alohida gapdan ko'ra."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    {
+      "en": "lemon",
+      "uz": "limon"
+    },
+    {
+      "en": "egg",
+      "uz": "tuxum"
+    },
+    {
+      "en": "tree",
+      "uz": "daraxt"
+    },
+    {
+      "en": "penguin",
+      "uz": "pingvin"
+    },
+    {
+      "en": "green",
+      "uz": "yashil"
+    },
+    {
+      "en": "white",
+      "uz": "oq"
+    },
+    {
+      "en": "yellow",
+      "uz": "sariq"
+    },
+    {
+      "en": "black",
+      "uz": "qora"
+    },
+    {
+      "en": "head",
+      "uz": "bosh"
+    },
+    {
+      "en": "chest",
+      "uz": "ko'krak"
+    },
+    {
+      "en": "hand",
+      "uz": "qo'l (panja)"
+    },
+    {
+      "en": "arm",
+      "uz": "qo'l (yelkadan)"
+    },
+    {
+      "en": "leg",
+      "uz": "oyoq (son)"
+    },
+    {
+      "en": "foot",
+      "uz": "oyoq (panja)"
+    },
+    {
+      "en": "finger",
+      "uz": "qo'l barmog'i"
+    },
+    {
+      "en": "toe",
+      "uz": "oyoq barmog'i"
+    },
+    {
+      "en": "nail",
+      "uz": "tirnoq"
+    },
+    {
+      "en": "light brown",
+      "uz": "och jigarrang"
+    },
+    {
+      "en": "dark brown",
+      "uz": "to'q jigarrang"
+    },
+    {
+      "en": "grey",
+      "uz": "kulrang"
+    },
+    {
+      "en": "red hair",
+      "uz": "qizg'ish soch"
+    },
+    {
+      "en": "What sort of ...?",
+      "uz": "Qanday ...?"
+    },
+    {
+      "en": "What colour ...?",
+      "uz": "Qanday rangda ...?"
+    },
+    {
+      "en": "to colour",
+      "uz": "bo'yamoq"
+    }
+  ]
+}
