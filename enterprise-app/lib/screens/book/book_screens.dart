@@ -346,7 +346,6 @@ class _GroupCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final st = sectionStyle(group.kind);
-    final books = group.sections.map((s) => s.book).toSet().length;
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Material(
@@ -386,10 +385,20 @@ class _GroupCard extends StatelessWidget {
                           if (group.exerciseCount > 0)
                             '${group.exerciseCount} mashq',
                           if (group.hasRule) 'qoida',
-                          if (books > 1) '$books kitobdan',
                         ].join(' · '),
                         style: const TextStyle(
                             fontSize: 12, color: AppColors.lightMuted),
+                      ),
+                      const SizedBox(height: 3),
+                      // Qaysi kitobdan olingani — aniq nom bilan.
+                      Text(
+                        group.sourceSummary,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            fontSize: 11.5,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.brandPurple),
                       ),
                     ],
                   ),
@@ -502,7 +511,7 @@ class BookPagesScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('${p.bookPage}-bet',
+                      Text('${p.bookLabel} · ${p.bookPage}-bet',
                           style: const TextStyle(
                               fontWeight: FontWeight.w800, fontSize: 15)),
                       const SizedBox(height: 2),

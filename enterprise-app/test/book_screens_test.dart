@@ -112,6 +112,17 @@ void main() {
       expect(find.text('Unit lug\'ati'), findsOneWidget);
     });
 
+    testWidgets('kitob nomi aniq yoziladi ("3 kitobdan" emas)', (t) async {
+      await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
+      await t.pump();
+
+      // Bitta kitobdan bo'lsa — bet raqami bilan.
+      expect(find.text('Coursebook 7-bet'), findsOneWidget);
+      expect(find.text('Grammar 4-bet'), findsOneWidget);
+      // Noaniq yozuv qolmasin.
+      expect(find.textContaining('kitobdan'), findsNothing);
+    });
+
     testWidgets('betma-bet ko\'rish tugmasi bor', (t) async {
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
       await t.pump();
@@ -126,10 +137,12 @@ void main() {
       await t.pumpWidget(_wrap(BookPagesScreen(unit: unit)));
       await t.pump();
 
+      // Guruh sarlavhasi
       expect(find.text('Coursebook'), findsOneWidget);
       expect(find.text('Grammar'), findsOneWidget);
-      expect(find.text('7-bet'), findsOneWidget);
-      expect(find.text('4-bet'), findsOneWidget);
+      // Bet yozuvida ham kitob nomi bor — "7-bet" o'zi yetarli emas edi.
+      expect(find.text('Coursebook · 7-bet'), findsOneWidget);
+      expect(find.text('Grammar · 4-bet'), findsOneWidget);
     });
 
     testWidgets('bet ekrani to\'liq manzil va mashqlarni ko\'rsatadi',

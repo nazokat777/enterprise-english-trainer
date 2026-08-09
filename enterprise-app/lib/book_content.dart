@@ -288,6 +288,27 @@ class SectionGroup {
   int get answerableCount =>
       sections.fold(0, (s, x) => s + x.answerableCount);
   bool get hasRule => sections.any((s) => s.hasRule);
+
+  /// Qaysi kitoblardan olingani — takrorsiz, kitob tartibida.
+  /// "3 kitobdan" emas, aniq nomlar: Coursebook · Grammar · Workbook.
+  List<String> get bookLabels {
+    const order = {'coursebook': 0, 'grammar': 1, 'workbook': 2};
+    final books = sections.map((s) => s.book).toSet().toList()
+      ..sort((a, b) => (order[a] ?? 9).compareTo(order[b] ?? 9));
+    return [for (final b in books) _bookLabel[b] ?? b];
+  }
+
+  /// Manba yozuvi: bitta kitob bo'lsa bet raqami bilan
+  /// ("Coursebook 7-bet"), bir nechta bo'lsa nomlar ro'yxati.
+  String get sourceSummary {
+    final books = sections.map((s) => s.book).toSet();
+    if (books.length == 1) {
+      final pages = sections.map((s) => s.bookPage).toSet().toList()..sort();
+      final p = pages.map((x) => '$x').join(', ');
+      return '${bookLabels.first} $p-bet';
+    }
+    return bookLabels.join(' · ');
+  }
 }
 
 /// Kitobning BITTA beti — o'sha betdagi barcha bo'limlar bir joyda.
