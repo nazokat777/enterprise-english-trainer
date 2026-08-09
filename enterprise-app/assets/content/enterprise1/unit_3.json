@@ -1813,6 +1813,686 @@
    }
   },
   {
+   "id": "u3-grammar-12-22",
+   "kind": "grammar_theory",
+   "title": "Plurals",
+   "titleUz": "Otning ko'pligi",
+   "book": "grammar",
+   "bookPage": 12,
+   "exercises": [
+    {
+     "ref": "12-koplik",
+     "instructionEn": "Write the plural form.",
+     "instructionUz": "Ko'plik shaklini yozing.",
+     "explanationUz": "Grammar Book jadvalidagi barcha so'zlar.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 12,
+     "bookRef": "Grammar Book, 12-bet, Plurals",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "a table →",
+       "answer": "two tables",
+       "whyUz": "oddiy -s",
+       "speak": "a table →"
+      },
+      {
+       "prompt": "a dress →",
+       "answer": "two dresses",
+       "whyUz": "-ss bilan tugaydi → -es",
+       "speak": "a dress →"
+      },
+      {
+       "prompt": "a bus →",
+       "answer": "two buses",
+       "whyUz": "-s bilan tugaydi → -es",
+       "speak": "a bus →"
+      },
+      {
+       "prompt": "a brush →",
+       "answer": "two brushes",
+       "whyUz": "-sh bilan tugaydi → -es",
+       "speak": "a brush →"
+      },
+      {
+       "prompt": "a torch →",
+       "answer": "two torches",
+       "whyUz": "-ch bilan tugaydi → -es. torch = fonar",
+       "speak": "a torch →"
+      },
+      {
+       "prompt": "a box →",
+       "answer": "two boxes",
+       "whyUz": "-x bilan tugaydi → -es",
+       "speak": "a box →"
+      }
+     ]
+    },
+    {
+     "ref": "12-talaffuz",
+     "instructionEn": "How is the plural suffix pronounced?",
+     "instructionUz": "Ko'plik qo'shimchasi qanday o'qiladi?",
+     "explanationUz": "Uchta variant: /s/, /z/ yoki /ɪz/.\n\nOSON YO'L:\n  1) so'zning OXIRGI TOVUSHINI ayting (harfni emas!)\n  2) u s, sh, ch, ge, z bo'lsa → /ɪz/ (qo'shimcha alohida bo'g'in)\n  3) u p, t, k, f bo'lsa → /s/\n  4) qolgan hammasi → /z/",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 12,
+     "bookRef": "Grammar Book, 12-bet, Pronunciation",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "books",
+       "answer": "/s/",
+       "promptUz": "kitoblar — qo'shimcha qanday o'qiladi?",
+       "options": [
+        "/s/",
+        "/z/",
+        "/ɪz/"
+       ],
+       "whyUz": "'book' /k/ bilan tugaydi — jarangsiz, shuning uchun /s/."
+      },
+      {
+       "prompt": "clocks",
+       "answer": "/s/",
+       "promptUz": "soatlar — qo'shimcha qanday o'qiladi?",
+       "options": [
+        "/s/",
+        "/z/",
+        "/ɪz/"
+       ],
+       "whyUz": "'clock' /k/ bilan tugaydi → /s/."
+      },
+      {
+       "prompt": "cats",
+       "answer": "/s/",
+       "promptUz": "mushuklar — qo'shimcha qanday o'qiladi?",
+       "options": [
+        "/s/",
+        "/z/",
+        "/ɪz/"
+       ],
+       "whyUz": "'cat' /t/ bilan tugaydi → /s/."
+      },
+      {
+       "prompt": "torches",
+       "answer": "/ɪz/",
+       "promptUz": "fonarlar — qo'shimcha qanday o'qiladi?",
+       "options": [
+        "/ɪz/",
+        "/s/",
+        "/z/"
+       ],
+       "whyUz": "'torch' /tʃ/ bilan tugaydi → /ɪz/, alohida bo'g'in: TOR-chiz."
+      },
+      {
+       "prompt": "bridges",
+       "answer": "/ɪz/",
+       "promptUz": "ko'priklar — qo'shimcha qanday o'qiladi?",
+       "options": [
+        "/ɪz/",
+        "/s/",
+        "/z/"
+       ],
+       "whyUz": "'bridge' /dʒ/ bilan tugaydi → /ɪz/: BRI-jiz."
+      },
+      {
+       "prompt": "buses",
+       "answer": "/ɪz/",
+       "promptUz": "avtobuslar — qo'shimcha qanday o'qiladi?",
+       "options": [
+        "/ɪz/",
+        "/s/",
+        "/z/"
+       ],
+       "whyUz": "'bus' /s/ bilan tugaydi → /ɪz/: BA-siz."
+      },
+      {
+       "prompt": "tables",
+       "answer": "/z/",
+       "promptUz": "stollar — qo'shimcha qanday o'qiladi?",
+       "options": [
+        "/z/",
+        "/s/",
+        "/ɪz/"
+       ],
+       "whyUz": "'table' /l/ bilan tugaydi — jarangli, shuning uchun /z/."
+      },
+      {
+       "prompt": "sofas",
+       "answer": "/z/",
+       "promptUz": "divanlar — qo'shimcha qanday o'qiladi?",
+       "options": [
+        "/z/",
+        "/s/",
+        "/ɪz/"
+       ],
+       "whyUz": "'sofa' unli tovush bilan tugaydi → /z/."
+      },
+      {
+       "prompt": "mirrors",
+       "answer": "/z/",
+       "promptUz": "oynalar — qo'shimcha qanday o'qiladi?",
+       "options": [
+        "/z/",
+        "/s/",
+        "/ɪz/"
+       ],
+       "whyUz": "'mirror' /r/ bilan tugaydi — jarangli → /z/."
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "titleUz": "Ko'plik yasalishi va talaffuzi",
+    "explanationUz": "Grammar Book bu qoidani Coursebook 20-betdagidan BATAFSILROQ beradi:\nbu yerda ko'plik qo'shimchasining TALAFFUZI ham bor.\n\nDIQQAT — ikki kitob orasidagi kichik farq:\n  Coursebook: -ss, -s, -sh, -ch, -x, -o → -es\n  Grammar:    -ss, -s, -sh, -ch, -x     → -es\nGrammar Book '-o' ni sanamagan, lekin u ham -es oladi:\n  tomato → tomatoes, potato → potatoes",
+    "rules": [
+     {
+      "uzRule": "Ko'p otlar -s oladi.",
+      "enRule": "Most nouns take -s in the plural.",
+      "examples": [
+       "a table - two tables"
+      ]
+     },
+     {
+      "uzRule": "-ss, -s, -sh, -ch, -x bilan tugagan otlar -es oladi.",
+      "enRule": "Nouns ending in -ss, -s, -sh, -ch, -x take -es in the plural.",
+      "examples": [
+       "a dress - two dresses",
+       "a bus - two buses",
+       "a brush - two brushes",
+       "a torch - two torches",
+       "a box - two boxes"
+      ]
+     }
+    ],
+    "pluralNoteUz": "TALAFFUZ (kitobdagi Pronunciation qismi):\nKo'plik qo'shimchasi UCH XIL o'qiladi — bu yozuvda ko'rinmaydi,\nlekin gapirishda muhim.\n\n  /s/  — ot /f/, /k/, /θ/, /p/ yoki /t/ tovushi bilan tugasa\n         books, clocks, cats\n\n  /ɪz/ — ot /s/, /ks/, /ʃ/, /tʃ/, /dʒ/, /z/ yoki /ʒ/ tovushi bilan tugasa\n         torches, bridges, buses\n         (bu holda qo'shimcha ALOHIDA bo'g'in bo'ladi!)\n\n  /z/  — boshqa har qanday tovushdan keyin\n         tables, sofas, mirrors",
+    "extraUz": "NEGA shunday? Til o'zi qulaylikka moslashadi:\n  • jarangsiz tovushdan keyin jarangsiz /s/ oson\n  • jarangli tovushdan keyin jarangli /z/ oson\n  • 's' tovushidan keyin yana 's' aytib bo'lmaydi — orasiga /ɪ/ qo'shiladi\n\nO'zbek tilida ham shunga o'xshash hodisa bor: 'kitob' + 'lar',\nlekin 'gap' + 'lar' — talaffuzda tovushlar bir-biriga moslashadi."
+   }
+  },
+  {
+   "id": "u3-grammar-12-23",
+   "kind": "grammar_theory",
+   "title": "This/These - That/Those",
+   "titleUz": "This/These - That/Those",
+   "book": "grammar",
+   "bookPage": 12,
+   "exercises": [
+    {
+     "ref": "12-this",
+     "instructionEn": "Choose this, these, that or those.",
+     "instructionUz": "this, these, that yoki those — birini tanlang.",
+     "explanationUz": "Ikki savolga javob bering: YAQINMI-UZOQMI va BITTAMI-KO'PMI.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 12,
+     "bookRef": "Grammar Book, 12-bet, This/These - That/Those",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "____ is a clock. (yaqin, bitta)",
+       "answer": "This",
+       "promptUz": "Yaqindagi bitta narsa",
+       "options": [
+        "This",
+        "These",
+        "That",
+        "Those"
+       ],
+       "whyUz": "Yaqin + bitta → This. Fe'l 'is'."
+      },
+      {
+       "prompt": "____ are clocks. (yaqin, ko'p)",
+       "answer": "These",
+       "promptUz": "Yaqindagi ko'p narsa",
+       "options": [
+        "These",
+        "This",
+        "That",
+        "Those"
+       ],
+       "whyUz": "Yaqin + ko'p → These. Fe'l 'are', ot 'clocks'."
+      },
+      {
+       "prompt": "____ is a rabbit. (uzoq, bitta)",
+       "answer": "That",
+       "promptUz": "Uzoqdagi bitta hayvon",
+       "options": [
+        "That",
+        "This",
+        "These",
+        "Those"
+       ],
+       "whyUz": "Uzoq + bitta → That."
+      },
+      {
+       "prompt": "____ are rabbits. (uzoq, ko'p)",
+       "answer": "Those",
+       "promptUz": "Uzoqdagi ko'p hayvon",
+       "options": [
+        "Those",
+        "This",
+        "These",
+        "That"
+       ],
+       "whyUz": "Uzoq + ko'p → Those."
+      },
+      {
+       "prompt": "This ____ a clock.",
+       "answer": "is",
+       "promptUz": "Qaysi fe'l kerak?",
+       "options": [
+        "is",
+        "are"
+       ],
+       "whyUz": "'this' — birlik, shuning uchun 'is'."
+      },
+      {
+       "prompt": "Those ____ rabbits.",
+       "answer": "are",
+       "promptUz": "Qaysi fe'l kerak?",
+       "options": [
+        "are",
+        "is"
+       ],
+       "whyUz": "'those' — ko'plik, shuning uchun 'are'."
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "titleUz": "Ko'rsatish olmoshlari",
+    "explanationUz": "Grammar Book rasmlar bilan tushuntiradi:\n  bitta soat  → This is a clock.\n  ikkita soat → These are clocks.\n  bitta quyon (uzoqda)  → That is a rabbit.\n  ikkita quyon (uzoqda) → Those are rabbits.\n\n              BITTA    KO'P\n  YAQIN       this     these\n  UZOQ        that     those",
+    "rules": [
+     {
+      "uzRule": "YAQINdagi odam, hayvon yoki narsani ko'rsatish uchun this/these.",
+      "enRule": "We use this/these to point to people, animals or things near us.",
+      "examples": [
+       "This is a clock.",
+       "These are clocks."
+      ]
+     },
+     {
+      "uzRule": "UZOQdagi odam, hayvon yoki narsani ko'rsatish uchun that/those.",
+      "enRule": "We use that/those to point to people, animals or things far from us.",
+      "examples": [
+       "That is a rabbit.",
+       "Those are rabbits."
+      ]
+     }
+    ],
+    "warningUz": "Fe'l ham o'zgaradi — buni unutmang:\n  this / that   → IS   (birlik)\n  these / those → ARE  (ko'plik)\n\n  ❌ These is clocks.   ✅ These ARE clocks.\n  ❌ Those is rabbits.  ✅ Those ARE rabbits.\n\nVa ot ham ko'plikka o'tadi: clock → clockS, rabbit → rabbitS.",
+    "noteUz": "Kitob 'people, animals or things' deydi — ya'ni bu olmoshlar\nODAMLAR uchun ham ishlatiladi:\n  This is my brother.   — Bu mening akam.\n  These are my friends. — Bular mening do'stlarim.\n\nTanishtirishda ham shu ishlatiladi: 'This is Ann.'"
+   }
+  },
+  {
+   "id": "u3-grammar-12-24",
+   "kind": "grammar_theory",
+   "title": "There is / There are",
+   "titleUz": "There is / There are",
+   "book": "grammar",
+   "bookPage": 12,
+   "exercises": [
+    {
+     "ref": "12-thereis",
+     "instructionEn": "Complete with there is, there are, Is there or Are there.",
+     "instructionUz": "there is, there are, Is there yoki Are there — birini yozing.",
+     "explanationUz": "Otga qarang: bittami (a desk) yoki ko'pmi (five books)?",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 12,
+     "bookRef": "Grammar Book, 12-bet, There is/There are",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "____ a desk in my room.",
+       "answer": "There is",
+       "whyUz": "'a desk' — bitta, shuning uchun 'There is'.",
+       "speak": "____ a desk in my room."
+      },
+      {
+       "prompt": "____ five books on my desk.",
+       "answer": "There are",
+       "whyUz": "'five books' — ko'plik, shuning uchun 'There are'.",
+       "speak": "____ five books on my desk."
+      },
+      {
+       "prompt": "____ a sofa in the living-room? — Yes, there is.",
+       "answer": "Is there",
+       "whyUz": "Birlik savol: Is there ...?"
+      },
+      {
+       "prompt": "____ any chairs in the room? — Yes, there are.",
+       "answer": "Are there",
+       "whyUz": "Ko'plik savol: Are there any ...?"
+      },
+      {
+       "prompt": "Is there a sofa in the living-room? — No, ____ .",
+       "answer": "there isn't",
+       "whyUz": "Birlik inkor qisqa javob. 'it isn't' EMAS."
+      },
+      {
+       "prompt": "Are there any chairs in the room? — No, ____ .",
+       "answer": "there aren't",
+       "whyUz": "Ko'plik inkor qisqa javob."
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "titleUz": "'There is / There are' va qisqa javoblar",
+    "explanationUz": "Biror joyda nimadir borligini aytish uchun.\n  There IS  — bitta narsa\n  There ARE — ko'p narsa",
+    "keyRules": [
+     {
+      "uzRule": "Birlikda — there is.",
+      "enRule": "We use there is in the singular.",
+      "examples": [
+       "There is a desk in my room."
+      ]
+     },
+     {
+      "uzRule": "Ko'plikda — there are.",
+      "enRule": "We use there are in the plural.",
+      "examples": [
+       "There are five books on my desk."
+      ]
+     }
+    ],
+    "examples": [
+     {
+      "q": "Is there a sofa in the living-room?",
+      "qUz": "Mehmonxonada divan bormi?",
+      "yes": "Yes, there is.",
+      "no": "No, there isn't."
+     },
+     {
+      "q": "Are there any chairs in the room?",
+      "qUz": "Xonada stullar bormi?",
+      "yes": "Yes, there are.",
+      "no": "No, there aren't."
+     }
+    ],
+    "noteUz": "QISQA JAVOB — kitobdagi 'Short answers' jadvali.\n\nQisqa javobda ot TAKRORLANMAYDI:\n  ❌ Yes, there is a sofa.\n  ✅ Yes, there is.\n\nVa 'there' so'zi ham TUSHIB QOLMAYDI:\n  ❌ Yes, it is.\n  ✅ Yes, there is.\n\nSavolda 'Is/Are' oldinga chiqadi:\n  There is a sofa. → IS THERE a sofa?\n  There are chairs. → ARE THERE any chairs?"
+   }
+  },
+  {
+   "id": "u3-grammar-12-25",
+   "kind": "grammar_theory",
+   "title": "Some/Any - A/An",
+   "titleUz": "Some/Any - A/An",
+   "book": "grammar",
+   "bookPage": 12,
+   "exercises": [
+    {
+     "ref": "12-someany",
+     "instructionEn": "Choose some, any, a or an.",
+     "instructionUz": "some, any, a yoki an — birini tanlang.",
+     "explanationUz": "Avval otga qarang (birlikmi-ko'plikmi), keyin gapga (tasdiqmi-inkormi-savolmi).",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 12,
+     "bookRef": "Grammar Book, 12-bet, Some/Any - A/An",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "There are ____ chairs in the room.",
+       "answer": "some",
+       "promptUz": "Ko'plik + tasdiq",
+       "options": [
+        "some",
+        "any",
+        "a",
+        "an"
+       ],
+       "whyUz": "'chairs' ko'plik, gap tasdiq → some."
+      },
+      {
+       "prompt": "There aren't ____ pictures on the wall.",
+       "answer": "any",
+       "promptUz": "Ko'plik + inkor",
+       "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+       ],
+       "whyUz": "'pictures' ko'plik, gap inkor → any."
+      },
+      {
+       "prompt": "Are there ____ chairs in the room?",
+       "answer": "any",
+       "promptUz": "Ko'plik + savol",
+       "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+       ],
+       "whyUz": "'chairs' ko'plik, gap savol → any."
+      },
+      {
+       "prompt": "There is ____ book on my desk.",
+       "answer": "a",
+       "promptUz": "Birlik + tasdiq",
+       "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+       ],
+       "whyUz": "'book' birlik va undosh tovush bilan boshlanadi → a."
+      },
+      {
+       "prompt": "There isn't ____ elephant in the zoo.",
+       "answer": "an",
+       "promptUz": "Birlik + inkor",
+       "options": [
+        "an",
+        "a",
+        "some",
+        "any"
+       ],
+       "whyUz": "'elephant' birlik va UNLI tovush bilan boshlanadi → an. Inkor bo'lsa ham 'any' emas, chunki ot birlik."
+      },
+      {
+       "prompt": "Is there ____ vase on the table?",
+       "answer": "a",
+       "promptUz": "Birlik + savol",
+       "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+       ],
+       "whyUz": "'vase' birlik va undosh tovush bilan boshlanadi → a. Savol bo'lsa ham 'any' emas."
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "titleUz": "some, any, a/an — qachon qaysi biri",
+    "explanationUz": "Uchta so'z, uchta vazifa. Ikki savolga qarab tanlanadi:\n  1) ot BIRLIKMI yoki KO'PLIKMI?\n  2) gap TASDIQMI, INKORMI yoki SAVOLMI?\n\n  BIRLIK  → a / an  (har uchala gapda ham)\n  KO'PLIK + tasdiq → some\n  KO'PLIK + inkor yoki savol → any",
+    "keyRules": [
+     {
+      "uzRule": "TASDIQ gapda ko'plik ot bilan — some.",
+      "enRule": "We use some in the affirmative with plural nouns.",
+      "examples": [
+       "There are some chairs in the room."
+      ]
+     },
+     {
+      "uzRule": "INKOR yoki SAVOL gapda ko'plik ot bilan — any.",
+      "enRule": "We use any in the negative or interrogative with plural nouns.",
+      "examples": [
+       "There aren't any pictures on the wall.",
+       "Are there any chairs in the room?"
+      ]
+     },
+     {
+      "uzRule": "BIRLIK ot bilan — a/an (gap turidan qat'i nazar).",
+      "enRule": "We use a/an with singular nouns.",
+      "examples": [
+       "There is a book on my desk.",
+       "There isn't an elephant in the zoo.",
+       "Is there a vase on the table?"
+      ]
+     }
+    ],
+    "warningUz": "A yoki AN?\n  a  — undosh TOVUSH bilan boshlansa: a book, a desk, a vase\n  an — unli TOVUSH bilan boshlansa: an elephant, an armchair, an attic\n\nHARF emas, TOVUSH muhim:\n  an hour   (h o'qilmaydi, 'auer' deb boshlanadi)\n  a university ('yuniversiti' — 'y' tovushi, undosh)",
+    "extraUz": "Kitobdagi misolda diqqat qiling:\n  'There ISN'T AN elephant in the zoo.'\nInkor gap, lekin ot BIRLIK — shuning uchun 'any' emas, 'an'.\nYa'ni 'any' faqat KO'PLIK bilan ishlatiladi."
+   }
+  },
+  {
+   "id": "u3-grammar-12-26",
+   "kind": "grammar_theory",
+   "title": "Prepositions of Place",
+   "titleUz": "O'rin predloglari",
+   "book": "grammar",
+   "bookPage": 12,
+   "exercises": [
+    {
+     "ref": "12-prepositions",
+     "instructionEn": "Learn the prepositions of place.",
+     "instructionUz": "O'rin predloglarini yodlang.",
+     "explanationUz": "Grammar Book 12-betdagi oltita predlog.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 12,
+     "bookRef": "Grammar Book, 12-bet, Prepositions of Place",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "ustida",
+       "answer": "on",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "on",
+        "in",
+        "under",
+        "behind"
+       ],
+       "whyUz": "Rasm: mushuk devor ustida."
+      },
+      {
+       "prompt": "ichida",
+       "answer": "in",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "in",
+        "on",
+        "under",
+        "behind"
+       ],
+       "whyUz": "Rasm: it kataksining ichida."
+      },
+      {
+       "prompt": "ostida",
+       "answer": "under",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "under",
+        "on",
+        "in",
+        "behind"
+       ],
+       "whyUz": "Rasm: kuchuk stol ostida."
+      },
+      {
+       "prompt": "orqasida",
+       "answer": "behind",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "behind",
+        "on",
+        "in",
+        "under"
+       ],
+       "whyUz": "Rasm: sehrgar stol orqasida."
+      },
+      {
+       "prompt": "yonida",
+       "answer": "next to",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "next to",
+        "on",
+        "in",
+        "under"
+       ],
+       "whyUz": "Rasm: erkak kompyuter yonida."
+      },
+      {
+       "prompt": "oldida",
+       "answer": "in front of",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "in front of",
+        "on",
+        "in",
+        "under"
+       ],
+       "whyUz": "Rasm: erkak skameyka oldida."
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "titleUz": "on, in front of, under, behind, next to, in",
+    "explanationUz": "Grammar Book oltita predlogni rasm bilan ko'rsatadi.\nHar bir rasmni eslab qolsangiz, predlogni hech qachon adashtirmaysiz.",
+    "rules": [
+     {
+      "uzRule": "ON — ustida",
+      "enRule": "on",
+      "examples": [
+       "The cat is on the fence.",
+       "There is a carpet on the floor."
+      ]
+     },
+     {
+      "uzRule": "IN FRONT OF — oldida",
+      "enRule": "in front of",
+      "examples": [
+       "The man is in front of the bench.",
+       "There is a table in front of the sofa."
+      ]
+     },
+     {
+      "uzRule": "UNDER — ostida",
+      "enRule": "under",
+      "examples": [
+       "The dog is under the table.",
+       "There is a ball under the table."
+      ]
+     },
+     {
+      "uzRule": "BEHIND — orqasida",
+      "enRule": "behind",
+      "examples": [
+       "The magician is behind the table.",
+       "There is a garage behind the building."
+      ]
+     },
+     {
+      "uzRule": "NEXT TO — yonida",
+      "enRule": "next to",
+      "examples": [
+       "The man is next to the computer.",
+       "There is a lamp next to the bed."
+      ]
+     },
+     {
+      "uzRule": "IN — ichida",
+      "enRule": "in",
+      "examples": [
+       "The dog is in the kennel.",
+       "There are some flowers in the vase."
+      ]
+     }
+    ],
+    "noteUz": "Kitobdagi rasmlar:\n  on          — mushuk devor USTIDA uxlayapti\n  in front of — erkak skameyka OLDIDA turibdi\n  under       — kuchuk stol OSTIDA o'tiribdi\n  behind      — sehrgar stol ORQASIDA turibdi\n  next to     — erkak kompyuter YONIDA o'tiribdi\n  in          — it uy ICHIDA (kataksida)",
+    "warningUz": "IN FRONT OF — uch so'z, hammasi kerak:\n  ✅ in front of the bench\n  ❌ in front the bench\n\nNEXT TO — 'to' shart:\n  ✅ next to the computer\n  ❌ next the computer\n\nIN va ON:\n  in the box   — quti ICHIDA\n  on the box   — quti USTIDA"
+   }
+  },
+  {
    "id": "u3-coursebook-21-12",
    "kind": "grammar_exercise",
    "title": "Jenny's bedroom",
@@ -1997,6 +2677,1287 @@
        "promptUz": "Javob tuzing",
        "whyUz": "Stol plakat ostida.",
        "speak": "the bedside table"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3-grammar-13-27",
+   "kind": "grammar_exercise",
+   "title": "Plurals",
+   "titleUz": "Ko'plik",
+   "book": "grammar",
+   "bookPage": 13,
+   "exercises": [
+    {
+     "ref": "1",
+     "instructionEn": "Write the plural form of these nouns.",
+     "instructionUz": "Bu otlarning ko'plik shaklini yozing.",
+     "explanationUz": "Sakkizta ot. Har birida oxirgi harfga qarang:\n  -ss, -s, -sh, -ch, -x bilan tugasa → -es\n  qolganlarga            → -s\n\nDIQQAT: 'glass' -ss bilan tugaydi → glasses.\n'bench' -ch bilan tugaydi → benches.\n'brush' -sh bilan tugaydi → brushes.\n'bus' -s bilan tugaydi → buses.\n\nQolgan to'rttasi oddiy -s oladi.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 13,
+     "bookRef": "Grammar Book, 13-bet, 1-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  carpet →",
+       "answer": "carpets",
+       "whyUz": "oddiy -s. Talaffuzi /s/ — 't' dan keyin.",
+       "speak": "1  carpet →"
+      },
+      {
+       "prompt": "2  bedroom →",
+       "answer": "bedrooms",
+       "whyUz": "oddiy -s. Talaffuzi /z/ — 'm' dan keyin.",
+       "speak": "2  bedroom →"
+      },
+      {
+       "prompt": "3  brush →",
+       "answer": "brushes",
+       "whyUz": "-sh bilan tugaydi → -es. Talaffuzi /ɪz/: BRA-shiz.",
+       "speak": "3  brush →"
+      },
+      {
+       "prompt": "4  shop →",
+       "answer": "shops",
+       "whyUz": "oddiy -s. Talaffuzi /s/ — 'p' dan keyin.",
+       "speak": "4  shop →"
+      },
+      {
+       "prompt": "5  bus →",
+       "answer": "buses",
+       "whyUz": "-s bilan tugaydi → -es. Talaffuzi /ɪz/: BA-siz.",
+       "speak": "5  bus →"
+      },
+      {
+       "prompt": "6  glass →",
+       "answer": "glasses",
+       "whyUz": "-ss bilan tugaydi → -es. Talaffuzi /ɪz/: GLAA-siz. glass = stakan yoki shisha.",
+       "speak": "6  glass →"
+      },
+      {
+       "prompt": "7  bench →",
+       "answer": "benches",
+       "whyUz": "-ch bilan tugaydi → -es. Talaffuzi /ɪz/: BEN-chiz.",
+       "speak": "7  bench →"
+      },
+      {
+       "prompt": "8  plant →",
+       "answer": "plants",
+       "whyUz": "oddiy -s. Talaffuzi /s/ — 't' dan keyin.",
+       "speak": "8  plant →"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3-grammar-13-28",
+   "kind": "grammar_exercise",
+   "title": "This - These / That - Those",
+   "titleUz": "This - These / That - Those",
+   "book": "grammar",
+   "bookPage": 13,
+   "exercises": [
+    {
+     "ref": "2",
+     "instructionEn": "Complete the sentences, as in the examples.",
+     "instructionUz": "Namunalardagidek gaplarni to'ldiring.",
+     "explanationUz": "Kitobdagi ikkita namuna:\n  1  This is an apple and these are apples.   (yaqin)\n  2  That is a pencil and those are pencils.  (uzoq)\n\nHar bir bandda BITTA narsa va KO'P narsa rasmi bor.\nGap ikki qismdan iborat va ikkalasi ham bir xil masofada:\n\n  YAQIN: This is a ... and these are ...\n  UZOQ:  That is a ... and those are ...\n\nMASHQNING ASOSIY MAQSADI — uchta so'z birga o'zgarishi:\n  olmosh (this→these) + fe'l (is→are) + ot (+s)\nUchtasidan biri unutilsa, gap xato bo'ladi.\n\nDIQQAT: 'an apple' — unli tovush, shuning uchun 'an'.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 13,
+     "bookRef": "Grammar Book, 13-bet, 2-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "3. suitcase — bitta va ko'p",
+       "answer": "This is a suitcase and these are suitcases.",
+       "promptUz": "Bu chamadon, bular esa chamadonlar."
+      },
+      {
+       "prompt": "4. horse — bitta va ko'p",
+       "answer": "That is a horse and those are horses.",
+       "promptUz": "U ot, ular esa otlar."
+      },
+      {
+       "prompt": "5. guitar — bitta va ko'p",
+       "answer": "This is a guitar and these are guitars.",
+       "promptUz": "Bu gitara, bular esa gitaralar."
+      }
+     ]
+    },
+    {
+     "ref": "3",
+     "instructionEn": "Rewrite the sentences in the plural.",
+     "instructionUz": "Gaplarni ko'plikda qayta yozing.",
+     "explanationUz": "Gapni ko'plikka o'tkazishda UCH-TO'RT narsa o'zgaradi:\n\n  1) olmosh:  this → these,  that → those\n  2) fe'l:    is → are\n  3) ot:      + s yoki + es\n  4) artikl:  a/an → TUSHIB QOLADI\n\n  'There is A lamp' → 'There are SOME lamps'\nKo'plik tasdiq gapda 'a' o'rniga 'some' keladi.\n\nNAMUNA:\n  This is a bus.  →  These are buses.\n  (this→these, is→are, a tushdi, bus→buses)",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 13,
+     "bookRef": "Grammar Book, 13-bet, 3-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  This is a bus. →",
+       "answer": "These are buses.",
+       "whyUz": "this→these, is→are, 'a' tushdi, bus→buses (-s bilan tugaydi → -es).",
+       "speak": "1  This is a bus. →"
+      },
+      {
+       "prompt": "2  There is a lamp in the room. →",
+       "answer": "There are some lamps in the room.",
+       "whyUz": "There is→There are, 'a'→'some' (ko'plik tasdiq gapda), lamp→lamps.",
+       "speak": "2  There is a lamp in the room. →"
+      },
+      {
+       "prompt": "3  That is a watch. →",
+       "answer": "Those are watches.",
+       "whyUz": "that→those, is→are, watch→watches (-ch bilan tugaydi → -es).",
+       "speak": "3  That is a watch. →"
+      },
+      {
+       "prompt": "4  This is a sofa. →",
+       "answer": "These are sofas.",
+       "whyUz": "this→these, is→are, sofa→sofas (oddiy -s).",
+       "speak": "4  This is a sofa. →"
+      },
+      {
+       "prompt": "5  There is an orange on the table. →",
+       "answer": "There are some oranges on the table.",
+       "whyUz": "There is→There are, 'an'→'some', orange→oranges. 'on the table' o'zgarmaydi.",
+       "speak": "5  There is an orange on the table. →"
+      }
+     ]
+    },
+    {
+     "ref": "4",
+     "instructionEn": "Write sentences, as in the example.",
+     "instructionUz": "Namunadagidek gaplar yozing.",
+     "explanationUz": "Kitobdagi namuna:\n  1  This is a chair and these are flowers.\n\nBu yerda ikkala rasm ham YAQIN, shuning uchun this/these.\nIkkinchi narsa BITTA bo'lsa — 'this is a ...',\nKO'P bo'lsa — 'these are ...'.\n\nRASMLAR:\n  1  chair (bitta) + flowers (ko'p)      → namuna\n  2  table (bitta) + lamp (bitta)\n  3  bed (bitta) + fireplace (bitta)\n  4  bookcase (bitta) + cars (ikkita)\n  5  picture (bitta) + book (bitta)\n\nAgar ikkinchi narsa UZOQDA bo'lsa, 'that is a ...' yoki\n'those are ...' ishlatiladi — Coursebook 20-betdagi 8-mashqda\nayni shunday.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 13,
+     "bookRef": "Grammar Book, 13-bet, 4-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "2. table + lamp (ikkalasi ham bitta)",
+       "answer": "This is a table and this is a lamp.",
+       "promptUz": "Bu stol, bu esa chiroq.",
+       "speak": "2. table + lamp (ikkalasi ham bitta)"
+      },
+      {
+       "prompt": "3. bed + fireplace (ikkalasi ham bitta)",
+       "answer": "This is a bed and this is a fireplace.",
+       "promptUz": "Bu karavot, bu esa kamin.",
+       "speak": "3. bed + fireplace (ikkalasi ham bitta)"
+      },
+      {
+       "prompt": "4. bookcase (bitta) + cars (ikkita)",
+       "answer": "This is a bookcase and these are cars.",
+       "promptUz": "Bu kitob javoni, bular esa mashinalar.",
+       "speak": "4. bookcase (bitta) + cars (ikkita)"
+      },
+      {
+       "prompt": "5. picture + book (ikkalasi ham bitta)",
+       "answer": "This is a picture and this is a book.",
+       "promptUz": "Bu rasm, bu esa kitob.",
+       "speak": "5. picture + book (ikkalasi ham bitta)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3-grammar-14-29",
+   "kind": "grammar_exercise",
+   "title": "Prepositions of Place",
+   "titleUz": "O'rin predloglari",
+   "book": "grammar",
+   "bookPage": 14,
+   "exercises": [
+    {
+     "ref": "5",
+     "instructionEn": "Look at the picture and fill in the correct preposition. One of the prepositions is used more than once.",
+     "instructionUz": "Rasmga qarang va to'g'ri predlogni qo'ying. Predloglardan biri bir necha marta ishlatiladi.",
+     "explanationUz": "Ishlatiladigan predloglar: on, in, under, behind, next to, in front of\n\nRASMDA: yog'och shipli mehmonxona. Chap tomonda zinapoya,\no'rtada oq divan, uning oldida shishali dumaloq stol,\nstol ustida o'simlik, stol ostida gilamcha,\no'ng tomonda kamin va uning yonida chiroq bilan stol,\ndevorlarda ramkali rasmlar, divanda yostiqchalar.\n\nMASHQ SIRI: 'One of the prepositions is used more than once'\n— demak bittasi takrorlanadi. Bu 'on': stol USTIDA, devorlarDA,\ndivanDA — uchala holatda ham 'on'.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 14,
+     "bookRef": "Grammar Book, 14-bet, 5-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "1  There is a plant ____ the table.",
+       "answer": "on",
+       "promptUz": "O'simlik stolning qayerida?",
+       "options": [
+        "on",
+        "in",
+        "under",
+        "behind",
+        "next to",
+        "in front of"
+       ],
+       "whyUz": "O'simlik shishali stol USTIDA turibdi."
+      },
+      {
+       "prompt": "2  There is a fireplace ____ the room.",
+       "answer": "in",
+       "promptUz": "Kamin qayerda?",
+       "options": [
+        "in",
+        "on",
+        "under",
+        "behind",
+        "next to",
+        "in front of"
+       ],
+       "whyUz": "Kamin xona ICHIDA. Xona uchun doim IN."
+      },
+      {
+       "prompt": "3  There are stairs ____ the sofa.",
+       "answer": "behind",
+       "promptUz": "Zinapoya divanning qayerida?",
+       "options": [
+        "behind",
+        "on",
+        "in",
+        "under",
+        "next to",
+        "in front of"
+       ],
+       "whyUz": "Zinapoya divanning ORQASIDA, orqa devorda."
+      },
+      {
+       "prompt": "4  There is a rug ____ the table.",
+       "answer": "under",
+       "promptUz": "Gilamcha stolning qayerida?",
+       "options": [
+        "under",
+        "on",
+        "in",
+        "behind",
+        "next to",
+        "in front of"
+       ],
+       "whyUz": "Gilamcha stol OSTIDA, polda yotibdi."
+      },
+      {
+       "prompt": "5  There are pictures ____ the walls.",
+       "answer": "on",
+       "promptUz": "Rasmlar devorlarning qayerida?",
+       "options": [
+        "on",
+        "in",
+        "under",
+        "behind",
+        "next to",
+        "in front of"
+       ],
+       "whyUz": "Devorga osilgan narsa uchun doim ON. Bu — takrorlanadigan predlog."
+      },
+      {
+       "prompt": "6  There is a big table ____ the sofa.",
+       "answer": "in front of",
+       "promptUz": "Katta stol divanning qayerida?",
+       "options": [
+        "in front of",
+        "on",
+        "in",
+        "under",
+        "behind",
+        "next to"
+       ],
+       "whyUz": "Shishali stol divanning OLDIDA turibdi."
+      },
+      {
+       "prompt": "7  There is a lamp ____ the chair.",
+       "answer": "next to",
+       "promptUz": "Chiroq stulning qayerida?",
+       "options": [
+        "next to",
+        "on",
+        "in",
+        "under",
+        "behind",
+        "in front of"
+       ],
+       "whyUz": "Chiroq o'ng tomondagi stulning YONIDA turibdi."
+      },
+      {
+       "prompt": "8  There are some cushions ____ the sofa.",
+       "answer": "on",
+       "promptUz": "Yostiqchalar divanning qayerida?",
+       "options": [
+        "on",
+        "in",
+        "under",
+        "behind",
+        "next to",
+        "in front of"
+       ],
+       "whyUz": "Yostiqchalar divan USTIDA. 'on' uchinchi marta ishlatildi."
+      }
+     ]
+    },
+    {
+     "ref": "6",
+     "instructionEn": "Write questions and answers, as in the example. Use the prepositions in and on.",
+     "instructionUz": "Namunadagidek savol va javob yozing. Faqat 'in' va 'on' predloglaridan foydalaning.",
+     "explanationUz": "NAMUNA:\n  Mary?/study → Where's Mary? She's in the study.\n\nUCH QARORNI QABUL QILASIZ:\n\n  1) Where'S yoki Where ARE?\n     bitta narsa/odam → Where's ... ?\n     ko'p narsa/odam  → Where are ... ?\n\n  2) He's / She's / It's / They're?\n     erkak → He's,  ayol → She's\n     narsa → It's,  ko'plik → They're\n\n  3) IN yoki ON?\n     IN — xona, idish ichida: in the study, in the kitchen,\n          in the oven, in the vase, in the bathroom\n     ON — yuzada: on the table, on the wall, on the balcony,\n          on the floor, on the bed\n\nQisqartmalar: Where is → Where's, She is → She's,\nThey are → They're.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 14,
+     "bookRef": "Grammar Book, 14-bet, 6-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "my books? / table",
+       "answer": "Where are my books?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'books' ko'plik → Where ARE ... ? va THEY'RE. Stol yuzasida → on.",
+       "speak": "my books? / table"
+      },
+      {
+       "prompt": "my books? / table",
+       "answer": "They're on the table.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'books' ko'plik → Where ARE ... ? va THEY'RE. Stol yuzasida → on.",
+       "speak": "my books? / table"
+      },
+      {
+       "prompt": "the girls? / kitchen",
+       "answer": "Where are the girls?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'girls' ko'plik → Where are ... ? Odamlar ham 'they'. Xona ichida → in.",
+       "speak": "the girls? / kitchen"
+      },
+      {
+       "prompt": "the girls? / kitchen",
+       "answer": "They're in the kitchen.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'girls' ko'plik → Where are ... ? Odamlar ham 'they'. Xona ichida → in.",
+       "speak": "the girls? / kitchen"
+      },
+      {
+       "prompt": "my dinner? / oven",
+       "answer": "Where's my dinner?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'dinner' — narsa → It's. Pech ICHIDA → in the oven. oven = duxovka.",
+       "speak": "my dinner? / oven"
+      },
+      {
+       "prompt": "my dinner? / oven",
+       "answer": "It's in the oven.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'dinner' — narsa → It's. Pech ICHIDA → in the oven. oven = duxovka.",
+       "speak": "my dinner? / oven"
+      },
+      {
+       "prompt": "the posters? / wall",
+       "answer": "Where are the posters?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'posters' ko'plik. Devorga osilgan → on.",
+       "speak": "the posters? / wall"
+      },
+      {
+       "prompt": "the posters? / wall",
+       "answer": "They're on the wall.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'posters' ko'plik. Devorga osilgan → on.",
+       "speak": "the posters? / wall"
+      },
+      {
+       "prompt": "Jeff? / balcony",
+       "answer": "Where's Jeff?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "Jeff — erkak → He's. Balkon YUZASIDA turadi → on the balcony (in EMAS).",
+       "speak": "Jeff? / balcony"
+      },
+      {
+       "prompt": "Jeff? / balcony",
+       "answer": "He's on the balcony.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "Jeff — erkak → He's. Balkon YUZASIDA turadi → on the balcony (in EMAS).",
+       "speak": "Jeff? / balcony"
+      },
+      {
+       "prompt": "carpet? / floor",
+       "answer": "Where's the carpet?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "Gilam — narsa → It's. Pol yuzasida → on the floor.",
+       "speak": "carpet? / floor"
+      },
+      {
+       "prompt": "carpet? / floor",
+       "answer": "It's on the floor.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "Gilam — narsa → It's. Pol yuzasida → on the floor.",
+       "speak": "carpet? / floor"
+      },
+      {
+       "prompt": "the flowers? / vase",
+       "answer": "Where are the flowers?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'flowers' ko'plik. Guldon ICHIDA → in the vase.",
+       "speak": "the flowers? / vase"
+      },
+      {
+       "prompt": "the flowers? / vase",
+       "answer": "They're in the vase.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'flowers' ko'plik. Guldon ICHIDA → in the vase.",
+       "speak": "the flowers? / vase"
+      },
+      {
+       "prompt": "Sara? / bathroom",
+       "answer": "Where's Sara?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "Sara — ayol → She's. Xona ichida → in.",
+       "speak": "Sara? / bathroom"
+      },
+      {
+       "prompt": "Sara? / bathroom",
+       "answer": "She's in the bathroom.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "Sara — ayol → She's. Xona ichida → in.",
+       "speak": "Sara? / bathroom"
+      },
+      {
+       "prompt": "pillow? / bed",
+       "answer": "Where's the pillow?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "Yostiq — narsa → It's. Karavot USTIDA → on the bed.",
+       "speak": "pillow? / bed"
+      },
+      {
+       "prompt": "pillow? / bed",
+       "answer": "It's on the bed.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "Yostiq — narsa → It's. Karavot USTIDA → on the bed.",
+       "speak": "pillow? / bed"
+      }
+     ]
+    },
+    {
+     "ref": "7",
+     "instructionEn": "First, look at the picture. Then read the short text and underline the correct prepositions.",
+     "instructionUz": "Avval rasmga qarang. So'ng qisqa matnni o'qib, to'g'ri predlogni tanlang.",
+     "explanationUz": "RASMDA: yotoqxona. Chap tomonda ikkita deraza va pardalar,\nderaza oldida qora yozuv stoli, uning ustida gulli guldon,\nstol oldida yog'och stul, o'ngda katta chiroq,\nqizil ko'rpali karavot va ustida oq yostiqlar,\npolda gilamcha, o'ng yuqorida devorda rasm.\n\nMATN: 'There is a rug 1) in/on the floor. It is 2) behind/under\nthe bed. There is a lamp 3) next to/on the bed. There are some\npillows 4) in front of/on the bed. There is a vase 5) in/in front\nof the window. There is a chair 6) in/under the room. It is\n7) next to/in front of the desk. There is a picture 8) on/under\nthe wall.'",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 14,
+     "bookRef": "Grammar Book, 14-bet, 7-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "There is a rug 1) ____ the floor.",
+       "answer": "on",
+       "promptUz": "Gilamcha polning qayerida?",
+       "options": [
+        "on",
+        "in"
+       ],
+       "whyUz": "Pol YUZASIDA → on the floor. 'in the floor' — polning ichida degani bo'lardi."
+      },
+      {
+       "prompt": "It is 2) ____ the bed.",
+       "answer": "under",
+       "promptUz": "Gilamcha karavotning qayerida?",
+       "options": [
+        "under",
+        "behind"
+       ],
+       "whyUz": "Gilamcha karavot OSTIDAN chiqib turibdi. Gilam hech qachon 'behind' bo'lmaydi."
+      },
+      {
+       "prompt": "There is a lamp 3) ____ the bed.",
+       "answer": "next to",
+       "promptUz": "Chiroq karavotning qayerida?",
+       "options": [
+        "next to",
+        "on"
+       ],
+       "whyUz": "Katta chiroq karavot YONIDAGI tumbada turibdi, karavot ustida emas."
+      },
+      {
+       "prompt": "There are some pillows 4) ____ the bed.",
+       "answer": "on",
+       "promptUz": "Yostiqlar karavotning qayerida?",
+       "options": [
+        "on",
+        "in front of"
+       ],
+       "whyUz": "Oq yostiqlar karavot USTIDA."
+      },
+      {
+       "prompt": "There is a vase 5) ____ the window.",
+       "answer": "in front of",
+       "promptUz": "Guldon derazaning qayerida?",
+       "options": [
+        "in front of",
+        "in"
+       ],
+       "whyUz": "Guldon deraza OLDIDAGI stol ustida. 'in the window' — deraza tuynugida degani."
+      },
+      {
+       "prompt": "There is a chair 6) ____ the room.",
+       "answer": "in",
+       "promptUz": "Stul qayerda?",
+       "options": [
+        "in",
+        "under"
+       ],
+       "whyUz": "Xona uchun doim IN."
+      },
+      {
+       "prompt": "It is 7) ____ the desk.",
+       "answer": "in front of",
+       "promptUz": "Stul yozuv stolining qayerida?",
+       "options": [
+        "in front of",
+        "next to"
+       ],
+       "whyUz": "Yog'och stul stolning OLDIDA — unga qarab o'tiriladi."
+      },
+      {
+       "prompt": "There is a picture 8) ____ the wall.",
+       "answer": "on",
+       "promptUz": "Rasm devorning qayerida?",
+       "options": [
+        "on",
+        "under"
+       ],
+       "whyUz": "Devorga osilgan narsa uchun doim ON."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3-grammar-14-30",
+   "kind": "grammar_exercise",
+   "title": "Some/Any - A/An",
+   "titleUz": "Some/Any - A/An",
+   "book": "grammar",
+   "bookPage": 14,
+   "exercises": [
+    {
+     "ref": "8",
+     "instructionEn": "Look at the picture and fill in a, an, some, or any.",
+     "instructionUz": "Rasmga qarang va a, an, some yoki any so'zlarini qo'ying.",
+     "explanationUz": "IKKI SAVOL BILAN HAL QILINADI:\n\n  1) Ot BIRLIKMI yoki KO'PLIKMI?\n  2) Gap TASDIQMI yoki INKORMI?\n\n     BIRLIK  → a / an   (tasdiq ham, inkor ham)\n     KO'PLIK + tasdiq → some\n     KO'PLIK + inkor  → any\n\nMATNDAGI QOLIP: 'There are/is ... BUT there aren't/isn't ...'\nHar bir gapda bittasi bor, bittasi yo'q.\n\nRASMDA: yotoqxona — yog'och shipli, devorlarda rasmlar,\nkatta karavot va yostiqlar, qizil kreslo, chiroq, pardalar,\npolda gilam.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 14,
+     "bookRef": "Grammar Book, 14-bet, 8-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "There are 1) ____ pictures on the walls...",
+       "answer": "some",
+       "promptUz": "Ko'plik + tasdiq",
+       "options": [
+        "some",
+        "any",
+        "a",
+        "an"
+       ],
+       "whyUz": "'pictures' ko'plik, gap tasdiq → some."
+      },
+      {
+       "prompt": "...but there aren't 2) ____ posters.",
+       "answer": "any",
+       "promptUz": "Ko'plik + inkor",
+       "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+       ],
+       "whyUz": "'posters' ko'plik, gap inkor → any."
+      },
+      {
+       "prompt": "There is 3) ____ bed in the room...",
+       "answer": "a",
+       "promptUz": "Birlik + tasdiq",
+       "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+       ],
+       "whyUz": "'bed' birlik, undosh tovush bilan boshlanadi → a."
+      },
+      {
+       "prompt": "...but there isn't 4) ____ sofa.",
+       "answer": "a",
+       "promptUz": "Birlik + inkor",
+       "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+       ],
+       "whyUz": "'sofa' birlik → a. Inkor bo'lsa ham 'any' EMAS, chunki ot birlik."
+      },
+      {
+       "prompt": "There are 5) ____ pillows on the bed...",
+       "answer": "some",
+       "promptUz": "Ko'plik + tasdiq",
+       "options": [
+        "some",
+        "any",
+        "a",
+        "an"
+       ],
+       "whyUz": "'pillows' ko'plik, gap tasdiq → some."
+      },
+      {
+       "prompt": "...but there aren't 6) ____ flowers.",
+       "answer": "any",
+       "promptUz": "Ko'plik + inkor",
+       "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+       ],
+       "whyUz": "'flowers' ko'plik, gap inkor → any."
+      },
+      {
+       "prompt": "There is 7) ____ lamp...",
+       "answer": "a",
+       "promptUz": "Birlik + tasdiq",
+       "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+       ],
+       "whyUz": "'lamp' birlik, /l/ undosh tovush → a."
+      },
+      {
+       "prompt": "...but there isn't 8) ____ chair.",
+       "answer": "a",
+       "promptUz": "Birlik + inkor",
+       "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+       ],
+       "whyUz": "'chair' birlik, /tʃ/ undosh tovush → a."
+      },
+      {
+       "prompt": "There are 9) ____ curtains...",
+       "answer": "some",
+       "promptUz": "Ko'plik + tasdiq",
+       "options": [
+        "some",
+        "any",
+        "a",
+        "an"
+       ],
+       "whyUz": "'curtains' ko'plik, gap tasdiq → some."
+      },
+      {
+       "prompt": "...but there aren't 10) ____ mirrors.",
+       "answer": "any",
+       "promptUz": "Ko'plik + inkor",
+       "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+       ],
+       "whyUz": "'mirrors' ko'plik, gap inkor → any."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3-grammar-15-31",
+   "kind": "grammar_exercise",
+   "title": "Some/Any - A/An",
+   "titleUz": "Some/Any - A/An",
+   "book": "grammar",
+   "bookPage": 15,
+   "exercises": [
+    {
+     "ref": "9",
+     "instructionEn": "Fill in a, an, some or any.",
+     "instructionUz": "a, an, some yoki any so'zini qo'ying.",
+     "explanationUz": "QAROR DARAXTI:\n\n  Ot KO'PLIKMI?\n    ha  → gap tasdiqmi?  ha → SOME\n                          yo'q (inkor/savol) → ANY\n    yo'q (birlik) → keyingi so'z unli tovush bilanmi?\n                          ha → AN\n                          yo'q → A\n\nDIQQAT: birlik otda 'any' HECH QACHON ishlatilmaydi —\ninkor yoki savol bo'lsa ham:\n  ✅ There isn't A bedroom downstairs.\n  ❌ There isn't any bedroom downstairs.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 15,
+     "bookRef": "Grammar Book, 15-bet, 9-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "1  There are ____ flowers in the vase.",
+       "answer": "some",
+       "promptUz": "Ko'plik + tasdiq",
+       "options": [
+        "some",
+        "any",
+        "a",
+        "an"
+       ],
+       "whyUz": "'flowers' ko'plik, tasdiq gap → some."
+      },
+      {
+       "prompt": "2  Are there ____ towels in the bathroom?",
+       "answer": "any",
+       "promptUz": "Ko'plik + savol",
+       "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+       ],
+       "whyUz": "'towels' ko'plik, savol gap → any."
+      },
+      {
+       "prompt": "3  There are ____ books in the bookcase.",
+       "answer": "some",
+       "promptUz": "Ko'plik + tasdiq",
+       "options": [
+        "some",
+        "any",
+        "a",
+        "an"
+       ],
+       "whyUz": "'books' ko'plik, tasdiq gap → some."
+      },
+      {
+       "prompt": "4  There aren't ____ chairs in the kitchen.",
+       "answer": "any",
+       "promptUz": "Ko'plik + inkor",
+       "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+       ],
+       "whyUz": "'chairs' ko'plik, inkor gap → any."
+      },
+      {
+       "prompt": "5  There are ____ magazines on the table.",
+       "answer": "some",
+       "promptUz": "Ko'plik + tasdiq",
+       "options": [
+        "some",
+        "any",
+        "a",
+        "an"
+       ],
+       "whyUz": "'magazines' ko'plik, tasdiq gap → some."
+      },
+      {
+       "prompt": "6  There isn't ____ bedroom downstairs.",
+       "answer": "a",
+       "promptUz": "Birlik + inkor",
+       "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+       ],
+       "whyUz": "'bedroom' BIRLIK — inkor bo'lsa ham 'any' emas. /b/ undosh → a."
+      },
+      {
+       "prompt": "7  Are there ____ flats for rent in the area?",
+       "answer": "any",
+       "promptUz": "Ko'plik + savol",
+       "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+       ],
+       "whyUz": "'flats' ko'plik, savol gap → any."
+      },
+      {
+       "prompt": "8  There aren't ____ drawings on the wall.",
+       "answer": "any",
+       "promptUz": "Ko'plik + inkor",
+       "options": [
+        "any",
+        "some",
+        "a",
+        "an"
+       ],
+       "whyUz": "'drawings' ko'plik, inkor gap → any. drawing = chizma, surat."
+      },
+      {
+       "prompt": "9  There are ____ plants in the garden.",
+       "answer": "some",
+       "promptUz": "Ko'plik + tasdiq",
+       "options": [
+        "some",
+        "any",
+        "a",
+        "an"
+       ],
+       "whyUz": "'plants' ko'plik, tasdiq gap → some."
+      },
+      {
+       "prompt": "10  There isn't ____ armchair in the dining-room.",
+       "answer": "an",
+       "promptUz": "Birlik + inkor, unli tovush",
+       "options": [
+        "an",
+        "a",
+        "some",
+        "any"
+       ],
+       "whyUz": "'armchair' birlik va UNLI tovush /ɑː/ bilan boshlanadi → an."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3-grammar-15-32",
+   "kind": "grammar_exercise",
+   "title": "Correct the mistakes",
+   "titleUz": "Xatolarni tuzating",
+   "book": "grammar",
+   "bookPage": 15,
+   "exercises": [
+    {
+     "ref": "10",
+     "instructionEn": "Correct the mistakes, as in the example.",
+     "instructionUz": "Namunadagidek xatolarni tuzating.",
+     "explanationUz": "Bu mashq — Unit 3 ning ENG FOYDALI mashqi. Har bir gapda\nBITTA xato bor va u eng ko'p uchraydigan xatolardan biri.\n\nBESH XIL XATO TURI:\n\n  1) is/are mos emas\n     'There IS two cups' → There ARE two cups\n\n  2) some/any noto'g'ri\n     'There aren't SOME dresses' → There aren't ANY dresses\n\n  3) this/that ko'plik ot bilan\n     'THAT are my books' → THOSE are my books\n\n  4) ot birlikda qolgan\n     'These are his GLASS' → These are his GLASSES\n\n  5) qisqa javob mantiqan noto'g'ri\n     'Yes, there ISN'T' → Yes, there IS\n\nNAMUNA: There is two cups on the table. → are",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 15,
+     "bookRef": "Grammar Book, 15-bet, 10-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "2  There aren't some dresses in the wardrobe.",
+       "answer": "any",
+       "whyUz": "Inkor gapda ko'plik ot bilan 'some' emas, 'any' ishlatiladi.",
+       "speak": "2  There aren't some dresses in the wardrobe."
+      },
+      {
+       "prompt": "3  That are my books.",
+       "answer": "Those",
+       "whyUz": "'books' ko'plik va fe'l 'are' — demak olmosh ham ko'plik bo'lishi kerak: Those.",
+       "speak": "3  That are my books."
+      },
+      {
+       "prompt": "4  There are any keys on the desk.",
+       "answer": "some",
+       "whyUz": "Tasdiq gap — 'any' emas, 'some'.",
+       "speak": "4  There are any keys on the desk."
+      },
+      {
+       "prompt": "5  These are his glass.",
+       "answer": "glasses",
+       "whyUz": "'These are' ko'plik — demak ot ham ko'plik: glass → glasses (-ss → -es).",
+       "speak": "5  These are his glass."
+      },
+      {
+       "prompt": "6  There isn't some church on this street.",
+       "answer": "a",
+       "whyUz": "'church' BIRLIK ot — 'some' emas, 'a'. (Ko'pligi 'churches' bo'lardi.)",
+       "speak": "6  There isn't some church on this street."
+      },
+      {
+       "prompt": "7  Those is brushes.",
+       "answer": "are",
+       "whyUz": "'Those' ko'plik → fe'l ham ko'plik: ARE.",
+       "speak": "7  Those is brushes."
+      },
+      {
+       "prompt": "8  There are any beds in the bedroom.",
+       "answer": "some",
+       "whyUz": "Tasdiq gap → 'some'.",
+       "speak": "8  There are any beds in the bedroom."
+      },
+      {
+       "prompt": "9  This aren't my towels.",
+       "answer": "These",
+       "whyUz": "'aren't' ko'plik va 'towels' ko'plik → olmosh ham ko'plik: These.",
+       "speak": "9  This aren't my towels."
+      },
+      {
+       "prompt": "10  There aren't some flowers in the vase.",
+       "answer": "any",
+       "whyUz": "Inkor gap → 'any'.",
+       "speak": "10  There aren't some flowers in the vase."
+      },
+      {
+       "prompt": "11  This isn't my cars.",
+       "answer": "These aren't",
+       "whyUz": "'cars' ko'plik — olmosh ham, fe'l ham o'zgaradi: These aren't my cars.",
+       "speak": "11  This isn't my cars."
+      },
+      {
+       "prompt": "12  Is there a vase on the table? Yes, there isn't.",
+       "answer": "there is",
+       "whyUz": "'Yes' bilan boshlangan javob INKOR bo'lolmaydi. To'g'risi: Yes, there is.",
+       "speak": "12  Is there a vase on the table? Yes, there isn't."
+      },
+      {
+       "prompt": "13  These is our cats.",
+       "answer": "are",
+       "whyUz": "'These' ko'plik → ARE.",
+       "speak": "13  These is our cats."
+      },
+      {
+       "prompt": "14  Are there some oranges in the fridge?",
+       "answer": "any",
+       "whyUz": "Savol gap → 'any'.",
+       "speak": "14  Are there some oranges in the fridge?"
+      },
+      {
+       "prompt": "15  There are a lamp on my desk.",
+       "answer": "is",
+       "whyUz": "'a lamp' birlik → There IS.",
+       "speak": "15  There are a lamp on my desk."
+      }
+     ]
+    },
+    {
+     "ref": "11",
+     "instructionEn": "Underline the correct item.",
+     "instructionUz": "To'g'ri variantni tanlang.",
+     "explanationUz": "O'n ikkita gap — Unit 3 ning barcha mavzulari aralash:\npredlog, some/any, ko'plik, a/an, this/these, there is/are.\n\nHar bir gapda avval OTGA qarang (birlikmi-ko'plikmi),\nkeyin GAP TURIGA (tasdiqmi-inkormi-savolmi).",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 15,
+     "bookRef": "Grammar Book, 15-bet, 11-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "1  There is a carpet ____ the floor.",
+       "answer": "on",
+       "promptUz": "Gilam polning qayerida?",
+       "options": [
+        "on",
+        "under"
+       ],
+       "whyUz": "Pol YUZASIDA → on the floor."
+      },
+      {
+       "prompt": "2  There aren't ____ cushions on the armchair.",
+       "answer": "any",
+       "promptUz": "Ko'plik + inkor",
+       "options": [
+        "any",
+        "some"
+       ],
+       "whyUz": "Inkor gap, 'cushions' ko'plik → any."
+      },
+      {
+       "prompt": "3  I have got two ____ .",
+       "answer": "torches",
+       "promptUz": "'two' dan keyin qanday shakl?",
+       "options": [
+        "torches",
+        "torch"
+       ],
+       "whyUz": "'two' — ko'plik. torch + es (-ch bilan tugaydi)."
+      },
+      {
+       "prompt": "4  There is ____ owl in the tree.",
+       "answer": "an",
+       "promptUz": "Qaysi artikl?",
+       "options": [
+        "an",
+        "a"
+       ],
+       "whyUz": "'owl' /aʊ/ unli tovush bilan boshlanadi → an. owl = boyqush."
+      },
+      {
+       "prompt": "5  Are there ____ curtains in the room?",
+       "answer": "any",
+       "promptUz": "Ko'plik + savol",
+       "options": [
+        "any",
+        "some"
+       ],
+       "whyUz": "Savol gap, 'curtains' ko'plik → any."
+      },
+      {
+       "prompt": "6  There ____ any desks in the classroom.",
+       "answer": "aren't",
+       "promptUz": "'any' qaysi gap turi bilan keladi?",
+       "options": [
+        "aren't",
+        "are"
+       ],
+       "whyUz": "'any' tasdiq gapda ishlatilmaydi — demak gap INKOR: There aren't any desks."
+      },
+      {
+       "prompt": "7  ____ are pencils.",
+       "answer": "Those",
+       "promptUz": "'are' bilan qaysi olmosh?",
+       "options": [
+        "Those",
+        "That"
+       ],
+       "whyUz": "'are' va 'pencils' ko'plik → Those."
+      },
+      {
+       "prompt": "8  There is ____ egg in the fridge.",
+       "answer": "an",
+       "promptUz": "Qaysi artikl?",
+       "options": [
+        "an",
+        "a"
+       ],
+       "whyUz": "'egg' /e/ unli tovush bilan boshlanadi → an."
+      },
+      {
+       "prompt": "9  ____ is my bicycle.",
+       "answer": "This",
+       "promptUz": "'is' bilan qaysi olmosh?",
+       "options": [
+        "This",
+        "These"
+       ],
+       "whyUz": "'is' va 'bicycle' birlik → This."
+      },
+      {
+       "prompt": "10  Are there ____ books in the bookcase?",
+       "answer": "any",
+       "promptUz": "Ko'plik + savol",
+       "options": [
+        "any",
+        "some"
+       ],
+       "whyUz": "Savol gap → any."
+      },
+      {
+       "prompt": "11  There is a lamp ____ the dressing-table.",
+       "answer": "on",
+       "promptUz": "Chiroq stolning qayerida?",
+       "options": [
+        "on",
+        "in"
+       ],
+       "whyUz": "Stol YUZASIDA → on the dressing-table."
+      },
+      {
+       "prompt": "12  Are there any ____ in the garden?",
+       "answer": "benches",
+       "promptUz": "'any' dan keyin qanday shakl?",
+       "options": [
+        "benches",
+        "bench"
+       ],
+       "whyUz": "'any' ko'plik ot bilan → benches (-ch bilan tugaydi → -es)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3-grammar-15-33",
+   "kind": "grammar_exercise",
+   "title": "Revision: Units 1 - 3",
+   "titleUz": "Takrorlash: 1–3-unitlar",
+   "book": "grammar",
+   "bookPage": 15,
+   "exercises": [
+    {
+     "ref": "12",
+     "instructionEn": "Choose the correct item.",
+     "instructionUz": "To'g'ri variantni tanlang.",
+     "explanationUz": "TAKRORLASH — 1, 2 va 3-unitlarning barcha grammatikasi.\n\n  Unit 1: to be (am/is/are), a/an, so'roq so'zlar (Who/Where/What)\n  Unit 2: have got / has got\n  Unit 3: ko'plik, this/these/that/those, there is/are,\n          some/any, o'rin predloglari\n\nBu mashq — o'zingizni sinash uchun. Xato qilsangiz, o'sha\nmavzuni qaytadan ko'rib chiqing.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 15,
+     "bookRef": "Grammar Book, 15-bet, 12-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "1  There is ____ orange on the table.",
+       "answer": "an",
+       "promptUz": "Qaysi artikl?",
+       "options": [
+        "an",
+        "a",
+        "some"
+       ],
+       "whyUz": "'orange' /ɒ/ unli tovush bilan boshlanadi → an. 'some' faqat ko'plik bilan."
+      },
+      {
+       "prompt": "2  I ____ from China.",
+       "answer": "am",
+       "promptUz": "'I' bilan qaysi fe'l?",
+       "options": [
+        "am",
+        "are",
+        "is"
+       ],
+       "whyUz": "'I' bilan doim AM. Unit 1 mavzusi."
+      },
+      {
+       "prompt": "3  Are there ____ glasses in the cupboard?",
+       "answer": "any",
+       "promptUz": "Ko'plik + savol",
+       "options": [
+        "any",
+        "some",
+        "a"
+       ],
+       "whyUz": "Savol gap, 'glasses' ko'plik → any."
+      },
+      {
+       "prompt": "4  He ____ got three children.",
+       "answer": "has",
+       "promptUz": "'He' bilan qaysi shakl?",
+       "options": [
+        "has",
+        "haven't",
+        "have"
+       ],
+       "whyUz": "he/she/it bilan HAS GOT. Unit 2 mavzusi."
+      },
+      {
+       "prompt": "5  There is a vase ____ the table.",
+       "answer": "on",
+       "promptUz": "Guldon stolning qayerida?",
+       "options": [
+        "on",
+        "in",
+        "at"
+       ],
+       "whyUz": "Stol YUZASIDA → on the table."
+      },
+      {
+       "prompt": "6  ____ are rabbits.",
+       "answer": "These",
+       "promptUz": "'are' bilan qaysi olmosh?",
+       "options": [
+        "These",
+        "This",
+        "That"
+       ],
+       "whyUz": "'are' va 'rabbits' ko'plik → These (yoki Those). Variantlar ichida faqat 'These' ko'plik."
+      },
+      {
+       "prompt": "7  ____ is he from?",
+       "answer": "Where",
+       "promptUz": "Qaysi so'roq so'zi?",
+       "options": [
+        "Where",
+        "Who",
+        "What"
+       ],
+       "whyUz": "'from' — joy so'raladi → Where. 'Where is he from?' = U qayerdan?"
+      },
+      {
+       "prompt": "8  There is a swimming-pool ____ the garden.",
+       "answer": "in",
+       "promptUz": "Basseyn bog'ning qayerida?",
+       "options": [
+        "in",
+        "on",
+        "under"
+       ],
+       "whyUz": "Bog' — chegarasi bor hudud → IN the garden."
+      },
+      {
+       "prompt": "9  Have you got ____ apples?",
+       "answer": "any",
+       "promptUz": "Ko'plik + savol",
+       "options": [
+        "any",
+        "some",
+        "an"
+       ],
+       "whyUz": "Savol gap, 'apples' ko'plik → any."
+      },
+      {
+       "prompt": "10  Mary's ____ the balcony.",
+       "answer": "on",
+       "promptUz": "Meri balkonning qayerida?",
+       "options": [
+        "on",
+        "in",
+        "under"
+       ],
+       "whyUz": "Balkon — ochiq yuza → ON the balcony. 'Mary's' = Mary is."
+      },
+      {
+       "prompt": "11  We ____ got a dishwasher.",
+       "answer": "haven't",
+       "promptUz": "'We' bilan qaysi shakl?",
+       "options": [
+        "haven't",
+        "has",
+        "hasn't"
+       ],
+       "whyUz": "I/you/we/they bilan HAVE. Inkor: haven't got."
+      },
+      {
+       "prompt": "12  ____ is my bed.",
+       "answer": "This",
+       "promptUz": "'is' bilan qaysi olmosh? (Unit 3 mavzusi)",
+       "options": [
+        "This",
+        "There",
+        "These"
+       ],
+       "whyUz": "Karavotni ko'rsatib aytilyapti → This is my bed. 'These' ko'plik bo'lgani uchun mos emas."
+      },
+      {
+       "prompt": "13  He is ____ doctor.",
+       "answer": "a",
+       "promptUz": "Qaysi artikl?",
+       "options": [
+        "a",
+        "any",
+        "an"
+       ],
+       "whyUz": "'doctor' /d/ undosh tovush bilan boshlanadi → a. Kasb oldida artikl SHART."
+      },
+      {
+       "prompt": "14  You can see ____ lions at the zoo.",
+       "answer": "some",
+       "promptUz": "Ko'plik + tasdiq",
+       "options": [
+        "some",
+        "any",
+        "a"
+       ],
+       "whyUz": "Tasdiq gap, 'lions' ko'plik → some."
+      },
+      {
+       "prompt": "15  There's ____ armchair in the living-room.",
+       "answer": "an",
+       "promptUz": "Birlik + unli tovush",
+       "options": [
+        "an",
+        "any",
+        "some"
+       ],
+       "whyUz": "'armchair' birlik va unli tovush bilan boshlanadi → an. 'There's' = There is."
+      },
+      {
+       "prompt": "16  Are there ____ pictures in your room?",
+       "answer": "any",
+       "promptUz": "Ko'plik + savol",
+       "options": [
+        "any",
+        "some",
+        "a"
+       ],
+       "whyUz": "Savol gap, 'pictures' ko'plik → any."
       }
      ]
     }
@@ -4173,6 +6134,601 @@
    ],
    "book": "coursebook",
    "bookPage": 23
+  },
+  {
+   "ruleUz": "Ko'plik qo'shimchasining uch talaffuzi",
+   "explanationUz": "Yozuvda bir xil (-s / -es), lekin og'zaki nutqda uch xil o'qiladi.",
+   "items": [
+    {
+     "base": "book /bʊk/",
+     "baseUz": "kitob",
+     "derived": "books /bʊks/",
+     "derivedUz": "kitoblar",
+     "note": "/s/ — /k/ dan keyin"
+    },
+    {
+     "base": "cat /kæt/",
+     "baseUz": "mushuk",
+     "derived": "cats /kæts/",
+     "derivedUz": "mushuklar",
+     "note": "/s/ — /t/ dan keyin"
+    },
+    {
+     "base": "table /ˈteɪbl/",
+     "baseUz": "stol",
+     "derived": "tables /ˈteɪblz/",
+     "derivedUz": "stollar",
+     "note": "/z/ — /l/ dan keyin"
+    },
+    {
+     "base": "mirror /ˈmɪrə/",
+     "baseUz": "oyna",
+     "derived": "mirrors /ˈmɪrəz/",
+     "derivedUz": "oynalar",
+     "note": "/z/ — unlidan keyin"
+    },
+    {
+     "base": "bus /bʌs/",
+     "baseUz": "avtobus",
+     "derived": "buses /ˈbʌsɪz/",
+     "derivedUz": "avtobuslar",
+     "note": "/ɪz/ — yangi bo'g'in qo'shiladi"
+    },
+    {
+     "base": "bridge /brɪdʒ/",
+     "baseUz": "ko'prik",
+     "derived": "bridges /ˈbrɪdʒɪz/",
+     "derivedUz": "ko'priklar",
+     "note": "/ɪz/ — /dʒ/ dan keyin"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 12
+  },
+  {
+   "ruleUz": "a → an (tovushga qarab)",
+   "explanationUz": "Artikl keyingi so'zning birinchi TOVUSHIGA qarab tanlanadi, harfiga emas.",
+   "items": [
+    {
+     "base": "book",
+     "baseUz": "kitob",
+     "derived": "a book",
+     "derivedUz": "bir kitob",
+     "note": "/b/ — undosh"
+    },
+    {
+     "base": "vase",
+     "baseUz": "guldon",
+     "derived": "a vase",
+     "derivedUz": "bir guldon",
+     "note": "/v/ — undosh"
+    },
+    {
+     "base": "elephant",
+     "baseUz": "fil",
+     "derived": "an elephant",
+     "derivedUz": "bir fil",
+     "note": "/e/ — unli"
+    },
+    {
+     "base": "armchair",
+     "baseUz": "kreslo",
+     "derived": "an armchair",
+     "derivedUz": "bir kreslo",
+     "note": "/ɑː/ — unli"
+    },
+    {
+     "base": "attic",
+     "baseUz": "chordoq",
+     "derived": "an attic",
+     "derivedUz": "bir chordoq",
+     "note": "/æ/ — unli"
+    },
+    {
+     "base": "hour",
+     "baseUz": "soat (vaqt)",
+     "derived": "an hour",
+     "derivedUz": "bir soat",
+     "note": "'h' o'qilmaydi — unli bilan boshlanadi"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 12
+  },
+  {
+   "ruleUz": "some ↔ any — juftlik",
+   "explanationUz": "Bir xil ma'no ('bir nechta'), lekin gap turiga qarab almashadi.",
+   "items": [
+    {
+     "base": "some",
+     "baseUz": "bir nechta",
+     "derived": "tasdiq gapda",
+     "derivedUz": "There are some chairs.",
+     "note": ""
+    },
+    {
+     "base": "any",
+     "baseUz": "hech, biror",
+     "derived": "inkor gapda",
+     "derivedUz": "There aren't any chairs.",
+     "note": ""
+    },
+    {
+     "base": "any",
+     "baseUz": "biror",
+     "derived": "savol gapda",
+     "derivedUz": "Are there any chairs?",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 12
+  },
+  {
+   "ruleUz": "Oddiy -s oladigan otlar",
+   "explanationUz": "Ot shakli o'zgarmaydi, oxiriga -s qo'shiladi.",
+   "items": [
+    {
+     "base": "carpet",
+     "baseUz": "gilam",
+     "derived": "carpets",
+     "derivedUz": "gilamlar",
+     "note": "/s/ deb o'qiladi"
+    },
+    {
+     "base": "bedroom",
+     "baseUz": "yotoqxona",
+     "derived": "bedrooms",
+     "derivedUz": "yotoqxonalar",
+     "note": "/z/"
+    },
+    {
+     "base": "shop",
+     "baseUz": "do'kon",
+     "derived": "shops",
+     "derivedUz": "do'konlar",
+     "note": "/s/"
+    },
+    {
+     "base": "plant",
+     "baseUz": "o'simlik",
+     "derived": "plants",
+     "derivedUz": "o'simliklar",
+     "note": "/s/"
+    },
+    {
+     "base": "sofa",
+     "baseUz": "divan",
+     "derived": "sofas",
+     "derivedUz": "divanlar",
+     "note": "/z/"
+    },
+    {
+     "base": "lamp",
+     "baseUz": "chiroq",
+     "derived": "lamps",
+     "derivedUz": "chiroqlar",
+     "note": "/s/"
+    },
+    {
+     "base": "orange",
+     "baseUz": "apelsin",
+     "derived": "oranges",
+     "derivedUz": "apelsinlar",
+     "note": "-e bor, faqat -s. Talaffuzi /ɪz/"
+    },
+    {
+     "base": "car",
+     "baseUz": "mashina",
+     "derived": "cars",
+     "derivedUz": "mashinalar",
+     "note": "/z/"
+    },
+    {
+     "base": "guitar",
+     "baseUz": "gitara",
+     "derived": "guitars",
+     "derivedUz": "gitaralar",
+     "note": "/z/"
+    },
+    {
+     "base": "horse",
+     "baseUz": "ot",
+     "derived": "horses",
+     "derivedUz": "otlar",
+     "note": "-e bor. Talaffuzi /ɪz/: HOO-siz"
+    },
+    {
+     "base": "suitcase",
+     "baseUz": "chamadon",
+     "derived": "suitcases",
+     "derivedUz": "chamadonlar",
+     "note": "Talaffuzi /ɪz/"
+    },
+    {
+     "base": "apple",
+     "baseUz": "olma",
+     "derived": "apples",
+     "derivedUz": "olmalar",
+     "note": "/z/"
+    },
+    {
+     "base": "pencil",
+     "baseUz": "qalam",
+     "derived": "pencils",
+     "derivedUz": "qalamlar",
+     "note": "/z/"
+    },
+    {
+     "base": "flower",
+     "baseUz": "gul",
+     "derived": "flowers",
+     "derivedUz": "gullar",
+     "note": "/z/"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 13
+  },
+  {
+   "ruleUz": "-es oladigan otlar",
+   "explanationUz": "Oxirgi tovush 's' ga o'xshasa, -es qo'shiladi va yangi bo'g'in paydo bo'ladi.",
+   "items": [
+    {
+     "base": "brush",
+     "baseUz": "cho'tka",
+     "derived": "brushes",
+     "derivedUz": "cho'tkalar",
+     "note": "-sh"
+    },
+    {
+     "base": "bus",
+     "baseUz": "avtobus",
+     "derived": "buses",
+     "derivedUz": "avtobuslar",
+     "note": "-s"
+    },
+    {
+     "base": "glass",
+     "baseUz": "stakan, shisha",
+     "derived": "glasses",
+     "derivedUz": "stakanlar",
+     "note": "-ss. 'glasses' yana 'ko'zoynak' ham degani"
+    },
+    {
+     "base": "bench",
+     "baseUz": "skameyka",
+     "derived": "benches",
+     "derivedUz": "skameykalar",
+     "note": "-ch"
+    },
+    {
+     "base": "watch",
+     "baseUz": "qo'l soati",
+     "derived": "watches",
+     "derivedUz": "soatlar",
+     "note": "-ch"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 13
+  },
+  {
+   "ruleUz": "Ko'plikka o'tganda tushib qoladigan so'zlar",
+   "explanationUz": "Birlikdagi artikl ko'plikda ishlatilmaydi — o'rniga 'some' yoki hech narsa keladi.",
+   "items": [
+    {
+     "base": "a lamp",
+     "baseUz": "bitta chiroq",
+     "derived": "some lamps",
+     "derivedUz": "chiroqlar",
+     "note": "tasdiq gapda 'some'"
+    },
+    {
+     "base": "an orange",
+     "baseUz": "bitta apelsin",
+     "derived": "some oranges",
+     "derivedUz": "apelsinlar",
+     "note": "tasdiq gapda 'some'"
+    },
+    {
+     "base": "a bus",
+     "baseUz": "bitta avtobus",
+     "derived": "buses",
+     "derivedUz": "avtobuslar",
+     "note": "'These are buses' — some kerak emas"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 13
+  },
+  {
+   "ruleUz": "Where is / Where are qisqartmasi",
+   "explanationUz": "Og'zaki nutqda 'Where is' doim qisqaradi. 'Where are' esa qisqarmaydi.",
+   "items": [
+    {
+     "base": "Where is",
+     "baseUz": "qayerda (birlik)",
+     "derived": "Where's",
+     "derivedUz": "qisqa shakl",
+     "note": "apostrof 'i' o'rnida"
+    },
+    {
+     "base": "Where are",
+     "baseUz": "qayerda (ko'plik)",
+     "derived": "Where are",
+     "derivedUz": "qisqarmaydi",
+     "note": "'Where're' yozilmaydi"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 14
+  },
+  {
+   "ruleUz": "Olmosh + is/are qisqartmasi",
+   "explanationUz": "Javobda doim qisqa shakl ishlatiladi.",
+   "items": [
+    {
+     "base": "he is",
+     "baseUz": "u (erkak)",
+     "derived": "he's",
+     "derivedUz": "qisqa shakl",
+     "note": "He's on the balcony."
+    },
+    {
+     "base": "she is",
+     "baseUz": "u (ayol)",
+     "derived": "she's",
+     "derivedUz": "qisqa shakl",
+     "note": "She's in the study."
+    },
+    {
+     "base": "it is",
+     "baseUz": "u (narsa)",
+     "derived": "it's",
+     "derivedUz": "qisqa shakl",
+     "note": "It's on the floor."
+    },
+    {
+     "base": "they are",
+     "baseUz": "ular",
+     "derived": "they're",
+     "derivedUz": "qisqa shakl",
+     "note": "They're in the vase."
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 14
+  },
+  {
+   "ruleUz": "IN va ON — qaysi so'z bilan qaysi predlog",
+   "explanationUz": "Bu birikmalarni ALOHIDA emas, JUFTLIK holida yodlang.",
+   "items": [
+    {
+     "base": "study, kitchen, bathroom, room",
+     "baseUz": "xonalar",
+     "derived": "IN the study",
+     "derivedUz": "ish xonasida",
+     "note": "xona — ichida"
+    },
+    {
+     "base": "oven, vase, box",
+     "baseUz": "idish va bo'shliqlar",
+     "derived": "IN the oven",
+     "derivedUz": "pechda",
+     "note": "ichida"
+    },
+    {
+     "base": "table, wall, floor, bed",
+     "baseUz": "yuzalar",
+     "derived": "ON the table",
+     "derivedUz": "stolda",
+     "note": "yuzasida"
+    },
+    {
+     "base": "balcony",
+     "baseUz": "balkon",
+     "derived": "ON the balcony",
+     "derivedUz": "balkonda",
+     "note": "IN emas — balkon ochiq yuza"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 14
+  },
+  {
+   "ruleUz": "Qarama-qarshi predloglar",
+   "explanationUz": "Har biri o'z juftiga ega — juftlik bilan yodlash osonroq.",
+   "items": [
+    {
+     "base": "on",
+     "baseUz": "ustida",
+     "derived": "under",
+     "derivedUz": "ostida",
+     "note": "aksi"
+    },
+    {
+     "base": "in front of",
+     "baseUz": "oldida",
+     "derived": "behind",
+     "derivedUz": "orqasida",
+     "note": "aksi"
+    },
+    {
+     "base": "in",
+     "baseUz": "ichida",
+     "derived": "outside",
+     "derivedUz": "tashqarisida",
+     "note": "aksi"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 14
+  },
+  {
+   "ruleUz": "Mashqdagi yangi otlar — ko'pligi",
+   "explanationUz": "Bu betdagi mashqlarda uchraydigan otlar.",
+   "items": [
+    {
+     "base": "towel",
+     "baseUz": "sochiq",
+     "derived": "towels",
+     "derivedUz": "sochiqlar",
+     "note": "oddiy -s"
+    },
+    {
+     "base": "drawing",
+     "baseUz": "chizma, surat",
+     "derived": "drawings",
+     "derivedUz": "chizmalar",
+     "note": "oddiy -s"
+    },
+    {
+     "base": "cup",
+     "baseUz": "piyola, chashka",
+     "derived": "cups",
+     "derivedUz": "piyolalar",
+     "note": "oddiy -s"
+    },
+    {
+     "base": "dress",
+     "baseUz": "ko'ylak",
+     "derived": "dresses",
+     "derivedUz": "ko'ylaklar",
+     "note": "-ss → -es"
+    },
+    {
+     "base": "church",
+     "baseUz": "cherkov",
+     "derived": "churches",
+     "derivedUz": "cherkovlar",
+     "note": "-ch → -es"
+    },
+    {
+     "base": "glass",
+     "baseUz": "stakan",
+     "derived": "glasses",
+     "derivedUz": "stakanlar",
+     "note": "-ss → -es"
+    },
+    {
+     "base": "torch",
+     "baseUz": "fonar",
+     "derived": "torches",
+     "derivedUz": "fonarlar",
+     "note": "-ch → -es"
+    },
+    {
+     "base": "bench",
+     "baseUz": "skameyka",
+     "derived": "benches",
+     "derivedUz": "skameykalar",
+     "note": "-ch → -es"
+    },
+    {
+     "base": "key",
+     "baseUz": "kalit",
+     "derived": "keys",
+     "derivedUz": "kalitlar",
+     "note": "unlidan keyin -y → oddiy -s"
+    },
+    {
+     "base": "child",
+     "baseUz": "bola",
+     "derived": "children",
+     "derivedUz": "bolalar",
+     "note": "NOTO'G'RI ko'plik — -s olmaydi!"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 15
+  },
+  {
+   "ruleUz": "have got / has got — inkor shakli",
+   "explanationUz": "Unit 2 mavzusi, bu betda takrorlanadi.",
+   "items": [
+    {
+     "base": "I/you/we/they have got",
+     "baseUz": "bor",
+     "derived": "haven't got",
+     "derivedUz": "yo'q",
+     "note": "have + not"
+    },
+    {
+     "base": "he/she/it has got",
+     "baseUz": "bor",
+     "derived": "hasn't got",
+     "derivedUz": "yo'q",
+     "note": "has + not"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 15
+  },
+  {
+   "ruleUz": "'s — ikki xil ma'no",
+   "explanationUz": "Apostrof + s ikki butunlay boshqa narsani bildiradi. Kontekstdan farqlanadi.",
+   "items": [
+    {
+     "base": "Mary is",
+     "baseUz": "Meri ...dir",
+     "derived": "Mary's on the balcony",
+     "derivedUz": "Meri balkonda",
+     "note": "'s = is"
+    },
+    {
+     "base": "Mary + egalik",
+     "baseUz": "Merining",
+     "derived": "Mary's book",
+     "derivedUz": "Merining kitobi",
+     "note": "'s = egalik"
+    },
+    {
+     "base": "There is",
+     "baseUz": "bor",
+     "derived": "There's an armchair",
+     "derivedUz": "kreslo bor",
+     "note": "'s = is"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 15
+  },
+  {
+   "ruleUz": "Unli tovush bilan boshlanadigan otlar — 'an'",
+   "explanationUz": "Bu betda uchragan barcha 'an' talab qiladigan otlar.",
+   "items": [
+    {
+     "base": "armchair",
+     "baseUz": "kreslo",
+     "derived": "an armchair",
+     "derivedUz": "bir kreslo",
+     "note": "/ɑː/"
+    },
+    {
+     "base": "orange",
+     "baseUz": "apelsin",
+     "derived": "an orange",
+     "derivedUz": "bir apelsin",
+     "note": "/ɒ/"
+    },
+    {
+     "base": "owl",
+     "baseUz": "boyqush",
+     "derived": "an owl",
+     "derivedUz": "bir boyqush",
+     "note": "/aʊ/"
+    },
+    {
+     "base": "egg",
+     "baseUz": "tuxum",
+     "derived": "an egg",
+     "derivedUz": "bir tuxum",
+     "note": "/e/"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 15
   }
  ],
  "sentencePatterns": [
@@ -4447,6 +7003,158 @@
    "explanationUz": "'only' — 'atigi, faqat'. Narxni arzon ko'rsatish uchun ishlatiladi.\n'at' — narx oldidan keladi.",
    "book": "coursebook",
    "bookPage": 23
+  },
+  {
+   "formula": "This/That is a + birlik ot. — These/Those are + ko'plik ot.",
+   "exampleEn": "This is a clock. These are clocks. That is a rabbit. Those are rabbits.",
+   "exampleUz": "Bu soat. Bular soatlar. U quyon. Ular quyonlar.",
+   "explanationUz": "Olmosh, fe'l va ot — uchalasi ham birga o'zgaradi.\nBittasini o'zgartirib, boshqasini unutish — eng ko'p uchraydigan xato.",
+   "book": "grammar",
+   "bookPage": 12
+  },
+  {
+   "formula": "There is a + birlik ot + joy. / There are + son/some + ko'plik ot + joy.",
+   "exampleEn": "There is a desk in my room. There are five books on my desk.",
+   "exampleUz": "Xonamda yozuv stoli bor. Yozuv stolimda beshta kitob bor.",
+   "explanationUz": "Aniq son bo'lsa 'some' kerak emas: 'There are FIVE books' (some emas).",
+   "book": "grammar",
+   "bookPage": 12
+  },
+  {
+   "formula": "Is there a ...? — Yes, there is. / No, there isn't.",
+   "exampleEn": "Is there a sofa in the living-room? — Yes, there is.",
+   "exampleUz": "Mehmonxonada divan bormi? — Ha, bor.",
+   "explanationUz": "Qisqa javobda 'there' saqlanadi, ot takrorlanmaydi.",
+   "book": "grammar",
+   "bookPage": 12
+  },
+  {
+   "formula": "Are there any ...? — Yes, there are. / No, there aren't.",
+   "exampleEn": "Are there any chairs in the room? — No, there aren't.",
+   "exampleUz": "Xonada stullar bormi? — Yo'q, yo'q.",
+   "explanationUz": "Ko'plik savolda 'any' shart.",
+   "book": "grammar",
+   "bookPage": 12
+  },
+  {
+   "formula": "There isn't a/an + birlik ot.",
+   "exampleEn": "There isn't an elephant in the zoo.",
+   "exampleUz": "Hayvonot bog'ida fil yo'q.",
+   "explanationUz": "Inkor gap, lekin ot birlik — shuning uchun 'any' emas, 'an'.",
+   "book": "grammar",
+   "bookPage": 12
+  },
+  {
+   "formula": "ot + is/are + predlog + the + joy.",
+   "exampleEn": "The cat is on the fence. The dog is in the kennel.",
+   "exampleUz": "Mushuk devor ustida. It kataksida.",
+   "explanationUz": "Predlogdan keyin odatda 'the' keladi — chunki qaysi joy ekani ma'lum.",
+   "book": "grammar",
+   "bookPage": 12
+  },
+  {
+   "formula": "This is a/an X and these are Xs.",
+   "exampleEn": "This is an apple and these are apples.",
+   "exampleUz": "Bu olma, bular esa olmalar.",
+   "explanationUz": "Yaqindagi narsa. Uch narsa birga o'zgaradi: this→these, is→are, X→Xs.",
+   "book": "grammar",
+   "bookPage": 13
+  },
+  {
+   "formula": "That is a X and those are Xs.",
+   "exampleEn": "That is a pencil and those are pencils.",
+   "exampleUz": "U qalam, ular esa qalamlar.",
+   "explanationUz": "Uzoqdagi narsa. Xuddi shunday uchta o'zgarish.",
+   "book": "grammar",
+   "bookPage": 13
+  },
+  {
+   "formula": "This is a X and this is a Y.",
+   "exampleEn": "This is a table and this is a lamp.",
+   "exampleUz": "Bu stol, bu esa chiroq.",
+   "explanationUz": "Ikkala narsa ham BITTA va yaqin. 'and' bilan bog'lanadi.",
+   "book": "grammar",
+   "bookPage": 13
+  },
+  {
+   "formula": "There is a X → There are some Xs.",
+   "exampleEn": "There is a lamp in the room. → There are some lamps in the room.",
+   "exampleUz": "Xonada chiroq bor. → Xonada chiroqlar bor.",
+   "explanationUz": "Ko'plikka o'tganda: is→are, a→some, X→Xs.\nJoy qismi ('in the room') o'zgarmaydi.",
+   "book": "grammar",
+   "bookPage": 13
+  },
+  {
+   "formula": "Where's + birlik? — He's/She's/It's + predlog + joy.",
+   "exampleEn": "Where's Mary? — She's in the study.",
+   "exampleUz": "Meri qayerda? — U ish xonasida.",
+   "explanationUz": "Birlik uchun Where's. Javobda ot takrorlanmaydi, olmosh ishlatiladi:\nerkak → He's, ayol → She's, narsa → It's.",
+   "book": "grammar",
+   "bookPage": 14
+  },
+  {
+   "formula": "Where are + ko'plik? — They're + predlog + joy.",
+   "exampleEn": "Where are my books? — They're on the table.",
+   "exampleUz": "Kitoblarim qayerda? — Ular stolda.",
+   "explanationUz": "Ko'plik uchun Where are. Javob doim They're.",
+   "book": "grammar",
+   "bookPage": 14
+  },
+  {
+   "formula": "There is/are ... BUT there isn't/aren't ...",
+   "exampleEn": "There are some pictures on the walls but there aren't any posters.",
+   "exampleUz": "Devorlarda rasmlar bor, lekin plakatlar yo'q.",
+   "explanationUz": "'but' bilan bor va yo'q narsani bitta gapda taqqoslash.\nTasdiqda 'some', inkorda 'any'.",
+   "book": "grammar",
+   "bookPage": 14
+  },
+  {
+   "formula": "There is a X. It is + predlog + Y.",
+   "exampleEn": "There is a chair in the room. It is in front of the desk.",
+   "exampleUz": "Xonada stul bor. U yozuv stolining oldida.",
+   "explanationUz": "Avval NIMA borligi, keyin alohida gapda QAYERDA ekani.\nIkkinchi gapda ot o'rniga 'It' keladi.",
+   "book": "grammar",
+   "bookPage": 14
+  },
+  {
+   "formula": "There is/isn't + a/an + birlik ot.",
+   "exampleEn": "There isn't a bedroom downstairs. There's an armchair in the living-room.",
+   "exampleUz": "Past qavatda yotoqxona yo'q. Mehmonxonada kreslo bor.",
+   "explanationUz": "Birlik otda inkor bo'lsa ham 'any' EMAS, 'a/an' ishlatiladi.\nBu — eng ko'p uchraydigan xato.",
+   "book": "grammar",
+   "bookPage": 15
+  },
+  {
+   "formula": "There are + some + ko'plik ot. / There aren't + any + ko'plik ot.",
+   "exampleEn": "There are some plants in the garden. There aren't any drawings on the wall.",
+   "exampleUz": "Bog'da o'simliklar bor. Devorda chizmalar yo'q.",
+   "explanationUz": "some — tasdiq, any — inkor va savol. Faqat ko'plik bilan.",
+   "book": "grammar",
+   "bookPage": 15
+  },
+  {
+   "formula": "Are there any + ko'plik ot ...? / Have you got any ...?",
+   "exampleEn": "Are there any flats for rent in the area? Have you got any apples?",
+   "exampleUz": "Bu hududda ijaraga beriladigan kvartiralar bormi? Sizda olma bormi?",
+   "explanationUz": "'any' faqat 'there is/are' bilan emas, 'have got' bilan ham ishlatiladi.",
+   "book": "grammar",
+   "bookPage": 15
+  },
+  {
+   "formula": "This/That + IS + birlik. / These/Those + ARE + ko'plik.",
+   "exampleEn": "This is my bicycle. Those are pencils. These are rabbits.",
+   "exampleUz": "Bu mening velosipedim. Ular qalamlar. Bular quyonlar.",
+   "explanationUz": "Olmosh, fe'l va ot — uchalasi bir vaqtda o'zgaradi.\nXatolarni tuzatish mashqidagi eng ko'p uchraydigan muammo shu.",
+   "book": "grammar",
+   "bookPage": 15
+  },
+  {
+   "formula": "Where is he from? — He's from China.",
+   "exampleEn": "Where is he from? I am from China.",
+   "exampleUz": "U qayerdan? — Men Xitoydanman.",
+   "explanationUz": "Kelib chiqishni so'rash: 'Where ... from?' — 'from' gap OXIRIDA qoladi.\nUnit 1 mavzusi.",
+   "book": "grammar",
+   "bookPage": 15
   }
  ],
  "vocabulary": [
@@ -5181,6 +7889,286 @@
   {
    "en": "only",
    "uz": "atigi, faqat"
+  },
+  {
+   "en": "a dress",
+   "uz": "ko'ylak (ayollar)"
+  },
+  {
+   "en": "a torch",
+   "uz": "fonar"
+  },
+  {
+   "en": "a box",
+   "uz": "quti"
+  },
+  {
+   "en": "a bridge",
+   "uz": "ko'prik"
+  },
+  {
+   "en": "a rabbit",
+   "uz": "quyon"
+  },
+  {
+   "en": "a clock",
+   "uz": "devor soati"
+  },
+  {
+   "en": "an elephant",
+   "uz": "fil"
+  },
+  {
+   "en": "a zoo",
+   "uz": "hayvonot bog'i"
+  },
+  {
+   "en": "a desk",
+   "uz": "yozuv stoli"
+  },
+  {
+   "en": "a suffix",
+   "uz": "qo'shimcha"
+  },
+  {
+   "en": "a sound",
+   "uz": "tovush"
+  },
+  {
+   "en": "to point to",
+   "uz": "ko'rsatmoq"
+  },
+  {
+   "en": "a short answer",
+   "uz": "qisqa javob"
+  },
+  {
+   "en": "a fence",
+   "uz": "devor, panjara"
+  },
+  {
+   "en": "a bench",
+   "uz": "skameyka"
+  },
+  {
+   "en": "a kennel",
+   "uz": "it uyi"
+  },
+  {
+   "en": "a glass",
+   "uz": "stakan, shisha"
+  },
+  {
+   "en": "glasses",
+   "uz": "stakanlar; ko'zoynak"
+  },
+  {
+   "en": "a suitcase",
+   "uz": "chamadon"
+  },
+  {
+   "en": "a horse",
+   "uz": "ot"
+  },
+  {
+   "en": "a guitar",
+   "uz": "gitara"
+  },
+  {
+   "en": "a pencil",
+   "uz": "qalam"
+  },
+  {
+   "en": "an apple",
+   "uz": "olma"
+  },
+  {
+   "en": "an orange",
+   "uz": "apelsin"
+  },
+  {
+   "en": "a watch",
+   "uz": "qo'l soati"
+  },
+  {
+   "en": "a lamp",
+   "uz": "chiroq"
+  },
+  {
+   "en": "a car",
+   "uz": "mashina"
+  },
+  {
+   "en": "a flower",
+   "uz": "gul"
+  },
+  {
+   "en": "a picture",
+   "uz": "rasm"
+  },
+  {
+   "en": "a book",
+   "uz": "kitob"
+  },
+  {
+   "en": "a bookcase",
+   "uz": "kitob javoni"
+  },
+  {
+   "en": "a fireplace",
+   "uz": "kamin"
+  },
+  {
+   "en": "a bed",
+   "uz": "karavot"
+  },
+  {
+   "en": "to rewrite",
+   "uz": "qayta yozmoq"
+  },
+  {
+   "en": "a form",
+   "uz": "shakl"
+  },
+  {
+   "en": "a rug",
+   "uz": "gilamcha"
+  },
+  {
+   "en": "a carpet",
+   "uz": "gilam"
+  },
+  {
+   "en": "a cushion",
+   "uz": "divan yostiqchasi"
+  },
+  {
+   "en": "a pillow",
+   "uz": "yostiq"
+  },
+  {
+   "en": "an oven",
+   "uz": "duxovka, pech"
+  },
+  {
+   "en": "dinner",
+   "uz": "kechki ovqat"
+  },
+  {
+   "en": "a balcony",
+   "uz": "balkon"
+  },
+  {
+   "en": "a poster",
+   "uz": "plakat"
+  },
+  {
+   "en": "a mirror",
+   "uz": "oyna"
+  },
+  {
+   "en": "a vase",
+   "uz": "guldon"
+  },
+  {
+   "en": "a wall",
+   "uz": "devor"
+  },
+  {
+   "en": "a floor",
+   "uz": "pol"
+  },
+  {
+   "en": "a study",
+   "uz": "ish xonasi"
+  },
+  {
+   "en": "Where's ...?",
+   "uz": "... qayerda? (birlik)"
+  },
+  {
+   "en": "Where are ...?",
+   "uz": "... qayerda? (ko'plik)"
+  },
+  {
+   "en": "more than once",
+   "uz": "bir marotabadan ko'p"
+  },
+  {
+   "en": "a towel",
+   "uz": "sochiq"
+  },
+  {
+   "en": "a drawing",
+   "uz": "chizma, surat"
+  },
+  {
+   "en": "a cup",
+   "uz": "piyola, chashka"
+  },
+  {
+   "en": "a church",
+   "uz": "cherkov"
+  },
+  {
+   "en": "a key",
+   "uz": "kalit"
+  },
+  {
+   "en": "an owl",
+   "uz": "boyqush"
+  },
+  {
+   "en": "an egg",
+   "uz": "tuxum"
+  },
+  {
+   "en": "a tree",
+   "uz": "daraxt"
+  },
+  {
+   "en": "a classroom",
+   "uz": "sinf xonasi"
+  },
+  {
+   "en": "a bicycle",
+   "uz": "velosiped"
+  },
+  {
+   "en": "a lion",
+   "uz": "sher"
+  },
+  {
+   "en": "a cupboard",
+   "uz": "shkaf"
+  },
+  {
+   "en": "a dishwasher",
+   "uz": "idish yuvish mashinasi"
+  },
+  {
+   "en": "children",
+   "uz": "bolalar"
+  },
+  {
+   "en": "China",
+   "uz": "Xitoy"
+  },
+  {
+   "en": "a mistake",
+   "uz": "xato"
+  },
+  {
+   "en": "to correct",
+   "uz": "tuzatmoq"
+  },
+  {
+   "en": "revision",
+   "uz": "takrorlash"
+  },
+  {
+   "en": "an item",
+   "uz": "band, variant"
   }
  ]
 }
