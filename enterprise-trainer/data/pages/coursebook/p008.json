@@ -114,10 +114,57 @@
         },
         {
           "ref": "2b",
-          "type": "explain",
+          "type": "explain_sentences",
           "instructionEn": "Can you explain what the sentences above mean?",
           "instructionUz": "Yuqoridagi gaplarning ma'nosini tushuntira olasizmi?",
-          "explanationUz": "Har bir gapning o'zbekcha tarjimasi 2a mashqida berilgan. E'tibor bering: o'zbekchada 'Men qirq yoshdaman' desak, inglizchada 'I am forty years old' — ya'ni 'am' (bo'lmoq fe'li) tushib qolmaydi. Ingliz tilida fe'lsiz gap bo'lmaydi."
+          "explanationUz": "Har bir gapning o'zbekcha tarjimasi 2a mashqida berilgan. E'tibor bering: o'zbekchada 'Men qirq yoshdaman' desak, inglizchada 'I am forty years old' — ya'ni 'am' (bo'lmoq fe'li) tushib qolmaydi. Ingliz tilida fe'lsiz gap bo'lmaydi.",
+          "sentences": [
+            {
+              "en": "I am from Edinburgh, Scotland.",
+              "uz": "Men Edinburgdanman, Shotlandiyadan.",
+              "noteUz": "'am' — bo'lmoq fe'li. O'zbekchada tushib qoladi, inglizchada SHART."
+            },
+            {
+              "en": "I'm forty years old.",
+              "uz": "Men qirq yoshdaman.",
+              "noteUz": "'years old' — yosh aytishning buzilmas iborasi."
+            },
+            {
+              "en": "I'm not married.",
+              "uz": "Men uylanmaganman.",
+              "noteUz": "'not' fe'ldan keyin. I am not -> I'm not."
+            },
+            {
+              "en": "They're friends and they're from Brazil.",
+              "uz": "Ular do'stlar va ular Braziliyadan.",
+              "noteUz": "'they're' = they are. Ikki gap 'and' bilan bog'langan."
+            },
+            {
+              "en": "I'm a student at an English boarding-school.",
+              "uz": "Men ingliz internat-maktabida o'quvchiman.",
+              "noteUz": "'a student' — kasb/maqom oldidan artikl shart. 'an English' — unli tovush."
+            },
+            {
+              "en": "My favourite sport is golf.",
+              "uz": "Mening sevimli sportim — golf.",
+              "noteUz": "'My favourite sport' — egalik olmoshi otdan oldin."
+            },
+            {
+              "en": "Where is he from?",
+              "uz": "U qayerdan?",
+              "noteUz": "So'roqda fe'l egadan OLDIN: 'is he', 'he is' emas."
+            },
+            {
+              "en": "What's his job?",
+              "uz": "Uning kasbi nima?",
+              "noteUz": "'What's' = What is. Egalik: 'his job'."
+            },
+            {
+              "en": "How old is he?",
+              "uz": "U necha yoshda?",
+              "noteUz": "'How old' — ikki so'z birga so'roq so'zi."
+            }
+          ]
         },
         {
           "ref": "3",

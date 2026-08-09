@@ -266,112 +266,103 @@
      "kind": "choice",
      "tasks": [
       {
-       "prompt": "hair",
+       "prompt": "soch",
        "answer": "hair",
-       "promptUz": "soch",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "hair",
-        "eye",
         "cheek",
-        "teeth"
-       ],
-       "speak": "hair"
+        "chin",
+        "ear"
+       ]
       },
       {
-       "prompt": "eye",
+       "prompt": "ko'z",
        "answer": "eye",
-       "promptUz": "ko'z",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "eye",
-        "hair",
         "cheek",
-        "teeth"
-       ],
-       "speak": "eye"
+        "chin",
+        "ear"
+       ]
       },
       {
-       "prompt": "cheek",
+       "prompt": "yonoq",
        "answer": "cheek",
-       "promptUz": "yonoq",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "cheek",
-        "hair",
-        "eye",
-        "teeth"
-       ],
-       "speak": "cheek"
+        "chin",
+        "ear",
+        "eye"
+       ]
       },
       {
-       "prompt": "teeth",
+       "prompt": "tishlar",
        "answer": "teeth",
-       "promptUz": "tishlar",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "teeth",
-        "hair",
-        "eye",
-        "cheek"
-       ],
-       "speak": "teeth"
+        "cheek",
+        "chin",
+        "ear"
+       ]
       },
       {
-       "prompt": "lips",
+       "prompt": "lablar",
        "answer": "lips",
-       "promptUz": "lablar",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "lips",
-        "hair",
-        "eye",
-        "cheek"
-       ],
-       "speak": "lips"
+        "cheek",
+        "chin",
+        "ear"
+       ]
       },
       {
-       "prompt": "chin",
+       "prompt": "iyak",
        "answer": "chin",
-       "promptUz": "iyak",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "chin",
-        "hair",
-        "eye",
-        "cheek"
-       ],
-       "speak": "chin"
+        "cheek",
+        "ear",
+        "eye"
+       ]
       },
       {
-       "prompt": "mouth",
+       "prompt": "og'iz",
        "answer": "mouth",
-       "promptUz": "og'iz",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "mouth",
-        "hair",
-        "eye",
-        "cheek"
-       ],
-       "speak": "mouth"
+        "cheek",
+        "chin",
+        "ear"
+       ]
       },
       {
-       "prompt": "nose",
+       "prompt": "burun",
        "answer": "nose",
-       "promptUz": "burun",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "nose",
-        "hair",
-        "eye",
-        "cheek"
-       ],
-       "speak": "nose"
+        "cheek",
+        "chin",
+        "ear"
+       ]
       },
       {
-       "prompt": "ear",
+       "prompt": "quloq",
        "answer": "ear",
-       "promptUz": "quloq",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "ear",
-        "hair",
-        "eye",
-        "cheek"
-       ],
-       "speak": "ear"
+        "cheek",
+        "chin",
+        "eye"
+       ]
       }
      ]
     },
@@ -494,76 +485,70 @@
      "kind": "choice",
      "tasks": [
       {
-       "prompt": "red",
+       "prompt": "qizil",
        "answer": "red",
-       "promptUz": "qizil",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "red",
-        "black",
         "green",
-        "grey"
-       ],
-       "speak": "red"
+        "blue",
+        "black"
+       ]
       },
       {
-       "prompt": "black",
+       "prompt": "qora",
        "answer": "black",
-       "promptUz": "qora",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "black",
-        "red",
         "green",
-        "grey"
-       ],
-       "speak": "black"
+        "blue",
+        "red"
+       ]
       },
       {
-       "prompt": "green",
+       "prompt": "yashil",
        "answer": "green",
-       "promptUz": "yashil",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "green",
-        "red",
+        "blue",
         "black",
-        "grey"
-       ],
-       "speak": "green"
+        "red"
+       ]
       },
       {
-       "prompt": "grey",
+       "prompt": "kulrang",
        "answer": "grey",
-       "promptUz": "kulrang",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "grey",
-        "red",
-        "black",
-        "green"
-       ],
-       "speak": "grey"
+        "green",
+        "blue",
+        "black"
+       ]
       },
       {
-       "prompt": "blue",
+       "prompt": "ko'k",
        "answer": "blue",
-       "promptUz": "ko'k",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "blue",
-        "red",
+        "green",
         "black",
-        "green"
-       ],
-       "speak": "blue"
+        "red"
+       ]
       },
       {
-       "prompt": "brown",
+       "prompt": "jigarrang",
        "answer": "brown",
-       "promptUz": "jigarrang",
+       "promptUz": "Inglizchasini tanlang",
        "options": [
         "brown",
-        "red",
-        "black",
-        "green"
-       ],
-       "speak": "brown"
+        "green",
+        "blue",
+        "black"
+       ]
       }
      ]
     }
@@ -629,6 +614,180 @@
        "answer": "It is an invitation to reply: \"Please e-mail me today!\", \"Please be my e-mail pen pal.\", \"Hope to hear from you soon.\"",
        "promptUz": "Har e'lonning oxirgi gapi qanday?",
        "speak": "What is the last sentence in each advertisement?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2-coursebook-14-7",
+   "kind": "reading",
+   "title": "Reading & Listening",
+   "titleUz": "O'qish va tinglash",
+   "book": "coursebook",
+   "bookPage": 14,
+   "exercises": [
+    {
+     "ref": "11a",
+     "instructionEn": "Which of the pictures show someone with a pale complexion? light brown skin? very dark skin and a wide, flattish nose? dark slanting eyes and a yellowish complexion? dark brown eyes and dark skin?",
+     "instructionUz": "Qaysi rasmda: oqish yuz rangi? och jigarrang teri? juda to'q teri va keng, yassiroq burun? qiyshiq qora ko'z va sarg'ish yuz rangi? to'q jigarrang ko'z va to'q teri?",
+     "explanationUz": "TERI va YUZ RANGI so'zlari:\n• complexion — yuz rangi (teri emas, aynan yuzning ko'rinishi)\n• pale — oqish, oqarinqiragan\n• light brown skin — och jigarrang teri\n• dark skin — to'q teri\n• yellowish — sarg'ish (-ish qo'shimchasi 'ga moyil' degani)\n\nBURUN va KO'Z:\n• a wide, flattish nose — keng, yassiroq burun\n• slanting eyes — qiyshiq (cho'ziq) ko'z",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 14,
+     "bookRef": "Coursebook, 14-bet — A–E rasmlar",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "Which picture shows someone with a pale complexion?",
+       "answer": "D",
+       "promptUz": "Qaysi rasmda oqish yuz rangi?",
+       "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+       ],
+       "speak": "Which picture shows someone with a pale complexion?"
+      },
+      {
+       "prompt": "Which picture shows someone with light brown skin?",
+       "answer": "C",
+       "promptUz": "Qaysi rasmda och jigarrang teri?",
+       "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+       ],
+       "speak": "Which picture shows someone with light brown skin?"
+      },
+      {
+       "prompt": "Which picture shows someone with very dark skin and a wide, flattish nose?",
+       "answer": "E",
+       "promptUz": "Qaysi rasmda juda to'q teri va keng, yassiroq burun?",
+       "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+       ],
+       "speak": "Which picture shows someone with very dark skin and a wide, flattish nose?"
+      },
+      {
+       "prompt": "Which picture shows someone with dark slanting eyes and a yellowish complexion?",
+       "answer": "A",
+       "promptUz": "Qaysi rasmda qiyshiq qora ko'z va sarg'ish yuz rangi?",
+       "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+       ],
+       "speak": "Which picture shows someone with dark slanting eyes and a yellowish complexion?"
+      },
+      {
+       "prompt": "Which picture shows someone with dark brown eyes and dark skin?",
+       "answer": "B",
+       "promptUz": "Qaysi rasmda to'q jigarrang ko'z va to'q teri?",
+       "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+       ],
+       "speak": "Which picture shows someone with dark brown eyes and dark skin?"
+      }
+     ]
+    },
+    {
+     "ref": "11b",
+     "instructionEn": "Listen and match the numbers to the pictures.",
+     "instructionUz": "Eshiting va raqamlarni rasmlarga moslang.",
+     "explanationUz": "Har matn bitta mintaqani tasvirlaydi. Matndagi tafsilot rasmni aniqlab beradi:\n• 'fair hair, blue eyes, pale complexion' → D\n• 'light brown skin' → C\n• 'very dark skin, wide flattish nose' → E\n• 'dark skin, dark hair' (arab mamlakatlari) → B\n• 'slanting eyes, yellowish complexion' → A",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 14,
+     "kind": "match",
+     "tasks": [
+      {
+       "left": "Rasm 1 — 1-matn — Daniya, Norvegiya, Shvetsiya",
+       "right": "Matn 1 — D-rasm",
+       "note": "Baland bo'y, oq-sariq soch, ko'k ko'z, oqish yuz rangi"
+      },
+      {
+       "left": "Rasm 2 — 2-matn — O'rta yer dengizi mamlakatlari",
+       "right": "Matn 2 — C-rasm",
+       "note": "Past bo'y, qora soch, jigarrang ko'z, och jigarrang teri"
+      },
+      {
+       "left": "Rasm 3 — 3-matn — Markaziy va janubiy Afrika",
+       "right": "Matn 3 — E-rasm",
+       "note": "Qora jingalak soch, juda to'q teri, keng yassiroq burun"
+      },
+      {
+       "left": "Rasm 4 — 4-matn — Arab mamlakatlari",
+       "right": "Matn 4 — B-rasm",
+       "note": "Qora soch, to'q jigarrang ko'z, to'q teri"
+      },
+      {
+       "left": "Rasm 5 — 5-matn — Shimoliy Xitoy",
+       "right": "Matn 5 — A-rasm",
+       "note": "Qalin qora soch, qiyshiq ko'z, kichik burun, sarg'ish yuz rangi"
+      }
+     ]
+    },
+    {
+     "ref": "11c",
+     "instructionEn": "Read the texts and answer the questions.",
+     "instructionUz": "Matnlarni o'qing va savollarga javob bering.",
+     "explanationUz": "Javob qolipi: 'They are usually ... They have got ...'\n\nDIQQAT — 'usually' (odatda) so'zi muhim: matn UMUMIY tendensiyani aytadi,\nhar bir odam haqida emas. Shuning uchun 'usually', 'most people', 'rather'\nkabi yumshatuvchi so'zlar ishlatilgan.\n\nBu so'zlar tilda 'hedging' deyiladi — qat'iy da'vodan qochish.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 14,
+     "bookRef": "Coursebook, 14-bet — 1–5 matnlar",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "What do people from Denmark, Norway and Sweden look like?",
+       "answer": "They are usually tall with fair hair, blue eyes and a pale complexion.",
+       "promptUz": "Daniya, Norvegiya va Shvetsiyaliklar qanday ko'rinishda?",
+       "speak": "What do people from Denmark, Norway and Sweden look like?"
+      },
+      {
+       "prompt": "What do people from Mediterranean countries look like?",
+       "answer": "They are rather short. They have usually got black or dark brown hair, brown eyes and light brown skin.",
+       "promptUz": "O'rta yer dengizi mamlakatlari aholisi qanday ko'rinishda?",
+       "speak": "What do people from Mediterranean countries look like?"
+      },
+      {
+       "prompt": "What do people from central and southern parts of Africa look like?",
+       "answer": "They have got black curly hair and very dark skin. They have also got dark brown eyes, full lips and a wide, flattish nose.",
+       "promptUz": "Markaziy va janubiy Afrika aholisi qanday ko'rinishda?",
+       "speak": "What do people from central and southern parts of Africa look like?"
+      },
+      {
+       "prompt": "What do people from Arab countries look like?",
+       "answer": "They have usually got dark hair and dark brown eyes. They have also got dark skin.",
+       "promptUz": "Arab mamlakatlari aholisi qanday ko'rinishda?",
+       "speak": "What do people from Arab countries look like?"
+      },
+      {
+       "prompt": "What do people from northern China look like?",
+       "answer": "They are quite short, with thick black hair and dark, slanting eyes. They have got a small nose and a yellowish complexion.",
+       "promptUz": "Shimoliy Xitoy aholisi qanday ko'rinishda?",
+       "speak": "What do people from northern China look like?"
+      },
+      {
+       "prompt": "What do people from your country look like?",
+       "answer": "Most people in Uzbekistan have got dark hair and brown eyes. They usually have light brown skin.",
+       "promptUz": "Sizning mamlakatingiz aholisi qanday ko'rinishda?",
+       "speak": "What do people from your country look like?"
       }
      ]
     }
@@ -846,6 +1005,142 @@
       {
        "prompt": "Mario — Can",
        "answer": "speak French"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2-coursebook-14-5",
+   "kind": "speaking",
+   "title": "Describing people",
+   "titleUz": "Odamni tasvirlash",
+   "book": "coursebook",
+   "bookPage": 14,
+   "exercises": [
+    {
+     "ref": "9",
+     "instructionEn": "The pictures show people from the Wessex area who are missing. Look at their pictures and describe them. Listen and label them with their names from the list.",
+     "instructionUz": "Rasmlarda Wessex hududidan bedarak yo'qolgan odamlar. Rasmlarga qarab ularni tasvirlang. So'ng eshitib, ro'yxatdagi ismlarni qo'ying.",
+     "explanationUz": "Odamni tasvirlash tartibi (shu ketma-ketlikni saqlang):\n  1) YOSH   — young / middle-aged / old\n  2) BO'Y-GAVDA — tall, short, slim, well-built\n  3) SOCH   — uzunlik + shakl + rang\n  4) KO'Z   — rang\n  5) BOSHQA — beard, moustache, glasses\n\nNamuna: 'She's young. She's got long straight black hair and green eyes.'",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 14,
+     "bookRef": "Coursebook, 14-bet — 1–5 rasmlar",
+     "audioNoteUz": "Ismlar audio'dan eshitiladi. Audio bo'lmasa ham mashqning ASOSIY qismi — odamlarni tasvirlash — to'liq bajariladi (quyida har rasm tavsifi berilgan).",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "None",
+       "answer": "She's young. She's got long straight black hair and green eyes.",
+       "promptUz": "Profil bo'yicha gap tuzing",
+       "speak": "None"
+      },
+      {
+       "prompt": "None",
+       "answer": "He's old. He's got a white beard and a moustache. He wears glasses.",
+       "promptUz": "Profil bo'yicha gap tuzing",
+       "speak": "None"
+      },
+      {
+       "prompt": "None",
+       "answer": "He's young. He's got short fair hair and blue eyes.",
+       "promptUz": "Profil bo'yicha gap tuzing",
+       "speak": "None"
+      },
+      {
+       "prompt": "None",
+       "answer": "She's got long dark curly hair.",
+       "promptUz": "Profil bo'yicha gap tuzing",
+       "speak": "None"
+      },
+      {
+       "prompt": "None",
+       "answer": "He's middle-aged. He's got short grey hair and a moustache.",
+       "promptUz": "Profil bo'yicha gap tuzing",
+       "speak": "None"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2-coursebook-14-6",
+   "kind": "game",
+   "title": "Game",
+   "titleUz": "O'yin",
+   "book": "coursebook",
+   "bookPage": 14,
+   "exercises": [
+    {
+     "ref": "10",
+     "instructionEn": "Choose one of the people in Ex. 9 and describe him or her to your classmates. The student who guesses correctly chooses another person and the game continues.",
+     "instructionUz": "Ex. 9 dagi odamlardan birini tanlab, sinfdoshlaringizga tasvirlang. To'g'ri topgan o'quvchi keyingi odamni tanlaydi va o'yin davom etadi.",
+     "explanationUz": "Bu o'yin tasvirlash so'zlarini mustahkamlaydi. Ilovada siz topuvchi bo'lasiz: tavsif beriladi, siz qaysi odam ekanini aniqlaysiz.\n\nO'yin so'zlari — ularni gapga qo'shib ishlating:\n  young / middle-aged → 'He's middle-aged.'\n  curly / long / straight → 'She's got long curly hair.'\n  slim / well-built → 'He's well-built.'\n  beard / moustache / big nose → 'He's got a beard.'",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 14,
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "young",
+       "answer": "She's young.",
+       "promptUz": "U yosh.",
+       "speak": "young"
+      },
+      {
+       "prompt": "middle-aged",
+       "answer": "He's middle-aged.",
+       "promptUz": "U o'rta yoshli.",
+       "speak": "middle-aged"
+      },
+      {
+       "prompt": "curly",
+       "answer": "She's got long curly hair.",
+       "promptUz": "Uning uzun jingalak sochi bor.",
+       "speak": "curly"
+      },
+      {
+       "prompt": "long",
+       "answer": "She's got long hair.",
+       "promptUz": "Uning uzun sochi bor.",
+       "speak": "long"
+      },
+      {
+       "prompt": "straight",
+       "answer": "She's got straight hair.",
+       "promptUz": "Uning tekis sochi bor.",
+       "speak": "straight"
+      },
+      {
+       "prompt": "slim",
+       "answer": "He's slim.",
+       "promptUz": "U nozik.",
+       "speak": "slim"
+      },
+      {
+       "prompt": "well-built",
+       "answer": "He's well-built.",
+       "promptUz": "U baquvvat.",
+       "speak": "well-built"
+      },
+      {
+       "prompt": "beard",
+       "answer": "He's got a white beard.",
+       "promptUz": "Uning oq soqoli bor.",
+       "speak": "beard"
+      },
+      {
+       "prompt": "moustache",
+       "answer": "He's got a moustache.",
+       "promptUz": "Uning mo'ylovi bor.",
+       "speak": "moustache"
+      },
+      {
+       "prompt": "big nose",
+       "answer": "He's got a big nose.",
+       "promptUz": "Uning burni katta.",
+       "speak": "big nose"
       }
      ]
     }
@@ -1096,6 +1391,156 @@
    ],
    "book": "coursebook",
    "bookPage": 13
+  },
+  {
+   "ruleUz": "-ish → 'ga moyil', 'roq'",
+   "explanationUz": "Sifatga -ish qo'shilsa, ma'no YUMSHAYDI: to'liq emas, shunga o'xshash.\nBu juda foydali qo'shimcha — istalgan rangga qo'shsa bo'ladi.",
+   "items": [
+    {
+     "base": "yellow",
+     "baseUz": "sariq",
+     "derived": "yellowish",
+     "derivedUz": "sarg'ish",
+     "note": "sariqqa moyil"
+    },
+    {
+     "base": "flat",
+     "baseUz": "yassi",
+     "derived": "flattish",
+     "derivedUz": "yassiroq",
+     "note": "t ikkilanadi"
+    },
+    {
+     "base": "red",
+     "baseUz": "qizil",
+     "derived": "reddish",
+     "derivedUz": "qizg'ish",
+     "note": "d ikkilanadi"
+    },
+    {
+     "base": "green",
+     "baseUz": "yashil",
+     "derived": "greenish",
+     "derivedUz": "yashilroq",
+     "note": "-ish"
+    },
+    {
+     "base": "old",
+     "baseUz": "keksa",
+     "derived": "oldish",
+     "derivedUz": "keksaroq",
+     "note": "-ish"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 14
+  },
+  {
+   "ruleUz": "Tomon nomlari (-ern)",
+   "explanationUz": "Tomon nomiga -ern qo'shilib sifat yasaladi.",
+   "items": [
+    {
+     "base": "north",
+     "baseUz": "shimol",
+     "derived": "northern",
+     "derivedUz": "shimoliy",
+     "note": "-ern"
+    },
+    {
+     "base": "south",
+     "baseUz": "janub",
+     "derived": "southern",
+     "derivedUz": "janubiy",
+     "note": "o'qilishi 'sazern'"
+    },
+    {
+     "base": "east",
+     "baseUz": "sharq",
+     "derived": "eastern",
+     "derivedUz": "sharqiy",
+     "note": "-ern"
+    },
+    {
+     "base": "west",
+     "baseUz": "g'arb",
+     "derived": "western",
+     "derivedUz": "g'arbiy",
+     "note": "-ern"
+    },
+    {
+     "base": "centre",
+     "baseUz": "markaz",
+     "derived": "central",
+     "derivedUz": "markaziy",
+     "note": "-al (istisno)"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 14
+  },
+  {
+   "ruleUz": "Mamlakat → millat (bu betdagilar)",
+   "explanationUz": "Matnlarda uchragan mamlakatlar.",
+   "items": [
+    {
+     "base": "Denmark",
+     "baseUz": "Daniya",
+     "derived": "Danish",
+     "derivedUz": "daniyalik",
+     "note": "-ish"
+    },
+    {
+     "base": "Norway",
+     "baseUz": "Norvegiya",
+     "derived": "Norwegian",
+     "derivedUz": "norvegiyalik",
+     "note": "-ian"
+    },
+    {
+     "base": "Sweden",
+     "baseUz": "Shvetsiya",
+     "derived": "Swedish",
+     "derivedUz": "shved",
+     "note": "-ish"
+    },
+    {
+     "base": "Greece",
+     "baseUz": "Gretsiya",
+     "derived": "Greek",
+     "derivedUz": "grek",
+     "note": "qoidasiz"
+    },
+    {
+     "base": "Saudi Arabia",
+     "baseUz": "Saudiya Arabistoni",
+     "derived": "Saudi",
+     "derivedUz": "saudiyalik",
+     "note": "qisqargan"
+    },
+    {
+     "base": "Iraq",
+     "baseUz": "Iroq",
+     "derived": "Iraqi",
+     "derivedUz": "iroqlik",
+     "note": "-i"
+    },
+    {
+     "base": "Libya",
+     "baseUz": "Liviya",
+     "derived": "Libyan",
+     "derivedUz": "liviyalik",
+     "note": "-n"
+    },
+    {
+     "base": "China",
+     "baseUz": "Xitoy",
+     "derived": "Chinese",
+     "derivedUz": "xitoy",
+     "note": "-ese"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 14
   }
  ],
  "sentencePatterns": [
@@ -1170,6 +1615,38 @@
    "explanationUz": "he/she/it bilan fe'lga -S qo'shiladi. LEKIN 'can' dan keyin qo'shilmaydi: 'He can play' (plays emas).",
    "book": "coursebook",
    "bookPage": 13
+  },
+  {
+   "formula": "Most people in JOY + are/have got + ...",
+   "exampleEn": "Most people in Mediterranean countries are rather short.",
+   "exampleUz": "O'rta yer dengizi mamlakatlarida ko'pchilik ancha past bo'yli.",
+   "explanationUz": "'Most people' — ko'pchilik. Qat'iy 'all' o'rniga ishlatiladi, chunki hamma bir xil emas.",
+   "book": "coursebook",
+   "bookPage": 14
+  },
+  {
+   "formula": "EGA + are/have USUALLY got + ...",
+   "exampleEn": "They have usually got dark hair.",
+   "exampleUz": "Ularning odatda qora sochi bo'ladi.",
+   "explanationUz": "'usually' HAVE va GOT orasiga tushadi: 'have usually got'. Bu tez-tez uchraydigan holatni bildiradi.",
+   "book": "coursebook",
+   "bookPage": 14
+  },
+  {
+   "formula": "What do people from JOY look like?",
+   "exampleEn": "What do people from northern China look like?",
+   "exampleUz": "Shimoliy Xitoy aholisi qanday ko'rinishda?",
+   "explanationUz": "'look like' — tashqi ko'rinishni so'rash. 'How do they look?' ham mumkin, lekin 'What ... look like?' odatiyroq.\nDIQQAT: bu yerda 'do' ishlatiladi, chunki 'look' oddiy fe'l ('be' emas).",
+   "book": "coursebook",
+   "bookPage": 14
+  },
+  {
+   "formula": "They have ALSO got + ...",
+   "exampleEn": "They have also got dark brown eyes and full lips.",
+   "exampleUz": "Shuningdek to'q jigarrang ko'zi va to'la labi bor.",
+   "explanationUz": "'also' — shuningdek. U HAVE va GOT orasiga tushadi. Qo'shimcha ma'lumot berishda ishlatiladi.",
+   "book": "coursebook",
+   "bookPage": 14
   }
  ],
  "vocabulary": [
@@ -1344,6 +1821,106 @@
   {
    "en": "partner",
    "uz": "sherik, juftlik"
+  },
+  {
+   "en": "complexion",
+   "uz": "yuz rangi"
+  },
+  {
+   "en": "pale",
+   "uz": "oqish, oqarinqiragan"
+  },
+  {
+   "en": "skin",
+   "uz": "teri"
+  },
+  {
+   "en": "light brown",
+   "uz": "och jigarrang"
+  },
+  {
+   "en": "wide",
+   "uz": "keng"
+  },
+  {
+   "en": "flattish",
+   "uz": "yassiroq"
+  },
+  {
+   "en": "slanting",
+   "uz": "qiyshiq, cho'ziq"
+  },
+  {
+   "en": "yellowish",
+   "uz": "sarg'ish"
+  },
+  {
+   "en": "thick",
+   "uz": "qalin"
+  },
+  {
+   "en": "usually",
+   "uz": "odatda"
+  },
+  {
+   "en": "rather",
+   "uz": "ancha, birmuncha"
+  },
+  {
+   "en": "most people",
+   "uz": "ko'pchilik"
+  },
+  {
+   "en": "area",
+   "uz": "hudud"
+  },
+  {
+   "en": "missing",
+   "uz": "bedarak yo'qolgan"
+  },
+  {
+   "en": "northern",
+   "uz": "shimoliy"
+  },
+  {
+   "en": "southern",
+   "uz": "janubiy"
+  },
+  {
+   "en": "central",
+   "uz": "markaziy"
+  },
+  {
+   "en": "Mediterranean",
+   "uz": "O'rta yer dengizi"
+  },
+  {
+   "en": "Denmark",
+   "uz": "Daniya"
+  },
+  {
+   "en": "Norway",
+   "uz": "Norvegiya"
+  },
+  {
+   "en": "Sweden",
+   "uz": "Shvetsiya"
+  },
+  {
+   "en": "Saudi Arabia",
+   "uz": "Saudiya Arabistoni"
+  },
+  {
+   "en": "Iraq",
+   "uz": "Iroq"
+  },
+  {
+   "en": "Libya",
+   "uz": "Liviya"
+  },
+  {
+   "en": "to look like",
+   "uz": "o'xshamoq, ko'rinishda bo'lmoq"
   }
  ]
 }

@@ -93,7 +93,17 @@ def task(prompt, answer, *, prompt_uz="", options=None, why="", alt=None,
 
 # O'zbekcha yorliqlar — bularni inglizcha ovoz bilan o'qish ma'nosiz.
 _UZ_MARKERS = ("Rasm ", "Matn ", "-o'rin", "-bet", " — ", "tuzing", "shakl",
-               "Namuna", "bo'yicha", "yozing", "qarang")
+               "Namuna", "bo'yicha", "yozing", "qarang", "to'ldiring",
+               "qatorini", "tanlang", "Bo'shliq", "toping")
+
+
+def _line_prompt(who, body):
+    """Dialog qatorining savol matni. Matn bo'sh bo'lsa faqat 'A:' qolmasin."""
+    body = (body or "").strip()
+    who = (who or "").strip()
+    if not body:
+        return f"{who} qatorini to'ldiring" if who else "Bo'shliqni to'ldiring"
+    return f"{who}: {body}" if who else body
 
 
 def _auto_speak(prompt):
@@ -109,6 +119,9 @@ def _auto_speak(prompt):
     letters = [c for c in p if c.isalpha()]
     if not letters:
         return ""  # faqat raqam (masalan "13")
+    # "A:" kabi qisqa yorliqni o'qishning ma'nosi yo'q.
+    if len(letters) < 3 or p.rstrip().endswith(":"):
+        return ""
     return p
 
 
@@ -277,6 +290,19 @@ def _dispatch(t, ex, items):
             for i in items
         ]
 
+    if t == "uz_to_en":
+        # O'zbekcha so'z -> inglizcha javob. Savol JAVOBNI bermaydi,
+        # shuning uchun ovoz ham chiqarilmaydi (speak="").
+        wl = ex.get("wordList", [])
+        return "choice", [
+            task(i["promptUz"], i["answer"],
+                 prompt_uz="Inglizchasini tanlang",
+                 options=[i["answer"]] + distractors(i["answer"], wl),
+                 why=i.get("whyUz", ""), speak="",
+                 visual=emoji_for(i["answer"]))
+            for i in items
+        ]
+
     if t == "picture_guess_job":
         pool = [i["answer"] for i in items]
         return "choice", [
@@ -364,11 +390,26 @@ def _dispatch(t, ex, items):
         ]
 
     if t == "write_question":
-        return "text", [
+        out = [
             task(i["answer"], i["question"], prompt_uz="Shu javobga savol tuzing",
                  why=i.get("whyUz", ""))
             for i in items if not i.get("given")
         ]
+        # Dialog ko'rinishidagi variant: savol o'rni `gap` bilan belgilangan,
+        # javob esa keyingi qatorda turadi.
+        lines = ex.get("lines", [])
+        for idx, ln in enumerate(lines):
+            if not ln.get("gap") or not ln.get("answer"):
+                continue
+            reply = next((lines[k].get("en", "") for k in range(idx + 1, len(lines))
+                          if lines[k].get("en")), "")
+            out.append(task(
+                reply or "Shu javobga savol tuzing", ln["answer"],
+                prompt_uz=ln.get("answerUz", "Savolni tiklang"),
+                why=ln.get("commonMistake", {}).get("whyUz", ""),
+                speak=reply,
+            ))
+        return "text", out
 
     if t in ("fill_gap", "long_short_form"):
         out = []
@@ -386,6 +427,25 @@ def _dispatch(t, ex, items):
 
     if t in ("dialogue_fill", "dialogue_gap_fill", "text_gap_fill"):
         out = []
+
+        # (a) Ba'zi mashqlarda qatorlar MASHQ darajasida turadi (items emas).
+        #     Matn `textEn` yoki `en` maydonida bo'lishi mumkin.
+        for ln in ex.get("lines", []):
+            if ln.get("given") or not ln.get("answer"):
+                continue
+            body = ln.get("textEn") or ln.get("en") or ""
+            out.append(task(_line_prompt(ln.get("who"), body), ln["answer"],
+                            prompt_uz=ln.get("uz", "")))
+
+        # (b) Ba'zilarida bir nechta dialog bo'ladi.
+        for dlg in ex.get("dialogues", []):
+            for ln in dlg.get("lines", []):
+                if ln.get("given") or not ln.get("answer"):
+                    continue
+                body = ln.get("textEn") or ln.get("en") or ""
+                out.append(task(_line_prompt(ln.get("who"), body), ln["answer"],
+                                prompt_uz=ln.get("answerUz", "")))
+
         for i in items:
             if i.get("given") and "lines" not in i:
                 continue
@@ -551,6 +611,12 @@ def _dispatch(t, ex, items):
 
     if t == "discuss_meaning":
         return "study", [study(ex.get("sentenceEn", ""), ex.get("sentenceUz", ""))]
+
+    if t == "explain_sentences":
+        return "study", [
+            study(x.get("en", ""), x.get("uz", ""), x.get("noteUz", ""))
+            for x in ex.get("sentences", [])
+        ]
 
     if t == "explain":
         return "study", [study(ex.get("instructionEn", ""), ex.get("instructionUz", ""))]

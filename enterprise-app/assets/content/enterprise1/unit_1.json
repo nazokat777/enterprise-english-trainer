@@ -132,8 +132,49 @@
      "kind": "study",
      "tasks": [
       {
-       "en": "Can you explain what the sentences above mean?",
-       "uz": "Yuqoridagi gaplarning ma'nosini tushuntira olasizmi?"
+       "en": "I am from Edinburgh, Scotland.",
+       "uz": "Men Edinburgdanman, Shotlandiyadan.",
+       "note": "'am' — bo'lmoq fe'li. O'zbekchada tushib qoladi, inglizchada SHART."
+      },
+      {
+       "en": "I'm forty years old.",
+       "uz": "Men qirq yoshdaman.",
+       "note": "'years old' — yosh aytishning buzilmas iborasi."
+      },
+      {
+       "en": "I'm not married.",
+       "uz": "Men uylanmaganman.",
+       "note": "'not' fe'ldan keyin. I am not -> I'm not."
+      },
+      {
+       "en": "They're friends and they're from Brazil.",
+       "uz": "Ular do'stlar va ular Braziliyadan.",
+       "note": "'they're' = they are. Ikki gap 'and' bilan bog'langan."
+      },
+      {
+       "en": "I'm a student at an English boarding-school.",
+       "uz": "Men ingliz internat-maktabida o'quvchiman.",
+       "note": "'a student' — kasb/maqom oldidan artikl shart. 'an English' — unli tovush."
+      },
+      {
+       "en": "My favourite sport is golf.",
+       "uz": "Mening sevimli sportim — golf.",
+       "note": "'My favourite sport' — egalik olmoshi otdan oldin."
+      },
+      {
+       "en": "Where is he from?",
+       "uz": "U qayerdan?",
+       "note": "So'roqda fe'l egadan OLDIN: 'is he', 'he is' emas."
+      },
+      {
+       "en": "What's his job?",
+       "uz": "Uning kasbi nima?",
+       "note": "'What's' = What is. Egalik: 'his job'."
+      },
+      {
+       "en": "How old is he?",
+       "uz": "U necha yoshda?",
+       "note": "'How old' — ikki so'z birga so'roq so'zi."
       }
      ]
     },
@@ -3300,8 +3341,7 @@
        "prompt": "Ed.",
        "answer": "What's his name?",
        "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "Javob ism → What's his name",
-       "speak": "Ed."
+       "whyUz": "Javob ism → What's his name"
       },
       {
        "prompt": "He's 30.",
@@ -4246,7 +4286,32 @@
      "book": "coursebook",
      "bookPage": 10,
      "kind": "text",
-     "tasks": []
+     "tasks": [
+      {
+       "prompt": "A: I'm Alison, by the way. 1) ___ your name?",
+       "answer": "What's",
+       "promptUz": "Aytgancha, men Alison. Ismingiz nima?",
+       "speak": "A: I'm Alison, by the way. 1) ___ your name?"
+      },
+      {
+       "prompt": "A: Nice to meet you, too. 2) ___ are you from?",
+       "answer": "Where",
+       "promptUz": "Men ham. Qayerdansiz?",
+       "speak": "A: Nice to meet you, too. 2) ___ are you from?"
+      },
+      {
+       "prompt": "A: I'm from Birmingham. 3) ___ your job?",
+       "answer": "What's",
+       "promptUz": "Men Birmingemdanman. Kasbingiz nima?",
+       "speak": "A: I'm from Birmingham. 3) ___ your job?"
+      },
+      {
+       "prompt": "S: Really? 4) ___ old are you?",
+       "answer": "How",
+       "promptUz": "Rostdanmi? Necha yoshdasiz?",
+       "speak": "S: Really? 4) ___ old are you?"
+      }
+     ]
     },
     {
      "ref": "17a",
@@ -4373,7 +4438,42 @@
      "book": "workbook",
      "bookPage": 7,
      "kind": "text",
-     "tasks": []
+     "tasks": [
+      {
+       "prompt": "My name is Beth White.",
+       "answer": "What's your name?",
+       "promptUz": "Ismingiz nima?",
+       "speak": "My name is Beth White."
+      },
+      {
+       "prompt": "I'm nineteen years old.",
+       "answer": "How old are you?",
+       "promptUz": "Necha yoshdasiz?",
+       "whyUz": "So'z tartibi XATO. So'roqda fe'l egadan OLDIN: 'How old ARE YOU?'",
+       "speak": "I'm nineteen years old."
+      },
+      {
+       "prompt": "I'm from Manchester, England. Are you from Manchester too?",
+       "answer": "Where are you from?",
+       "promptUz": "Qayerdansiz?",
+       "whyUz": "FE'L TUSHIB QOLGAN. To'g'risi: 'Where ARE you from?' Ingliz tilida fe'lsiz gap bo'lmaydi.",
+       "speak": "I'm from Manchester, England. Are you from Manchester too?"
+      },
+      {
+       "prompt": "I'm a vet.",
+       "answer": "What's your job?",
+       "promptUz": "Kasbingiz nima?",
+       "whyUz": "Bu tabiiy ibora emas. To'g'ri variantlar: 'What's your job?' yoki 'What do you do?'",
+       "speak": "I'm a vet."
+      },
+      {
+       "prompt": "I'm thirty years old.",
+       "answer": "How old are you?",
+       "promptUz": "Necha yoshdasiz?",
+       "whyUz": "Yana o'sha xato — o'quvchi qoidani tushunmagan, shuning uchun takrorlagan.",
+       "speak": "I'm thirty years old."
+      }
+     ]
     },
     {
      "ref": "14",
@@ -4384,7 +4484,18 @@
      "book": "workbook",
      "bookPage": 7,
      "kind": "text",
-     "tasks": []
+     "tasks": [
+      {
+       "prompt": "C qatorini to'ldiring",
+       "answer": "Pleased to meet you, too.",
+       "promptUz": "Men ham."
+      },
+      {
+       "prompt": "B qatorini to'ldiring",
+       "answer": "Pleased to meet you.",
+       "promptUz": "Tanishganimdan xursandman."
+      }
+     ]
     },
     {
      "ref": "15",
