@@ -544,8 +544,9 @@ class UnitBrief {
   /// "3-unit" yoki "1-epizod". Bo'sh bo'lsa unit raqamidan tuziladi.
   final String label;
 
-  /// Hikoya beti (Episode) — unit emas, unitlar orasida turadi.
-  final bool isEpisode;
+  /// Unit EMAS — hikoya epizodi yoki modul testi.
+  /// Ro'yxatda unitlar orasida, boshqa rangda ko'rsatiladi.
+  final bool isExtra;
 
   /// Ro'yxatdagi dumaloq belgi ichidagi qisqa matn: "3" yoki "E1".
   final String badge;
@@ -559,7 +560,7 @@ class UnitBrief {
     required this.tasks,
     this.label = '',
     this.badge = '',
-    this.isEpisode = false,
+    this.isExtra = false,
   });
 
   String get displayLabel => label.isNotEmpty ? label : '$unit-unit';
@@ -570,7 +571,7 @@ class UnitBrief {
         title: j['title'] as String? ?? '',
         label: j['label'] as String? ?? '',
         badge: j['badge'] as String? ?? '',
-        isEpisode: j['isEpisode'] as bool? ?? false,
+        isExtra: j['isExtra'] as bool? ?? false,
         module: (j['module'] as num?)?.toInt() ?? 0,
         sections: (j['sections'] as num?)?.toInt() ?? 0,
         exercises: (j['exercises'] as num?)?.toInt() ?? 0,

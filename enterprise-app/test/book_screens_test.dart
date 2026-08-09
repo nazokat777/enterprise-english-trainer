@@ -109,6 +109,29 @@ void main() {
       expect(find.textContaining('901'), findsNothing);
     });
 
+    testWidgets('modul testi ham unit raqamisiz ko\'rsatiladi', (t) async {
+      // "Module Self-Assessment" ham unit emas — o'z yorlig'i bo'ladi.
+      final test = BookUnit.fromJson({
+        ...json.decode(_unitJson) as Map<String, dynamic>,
+        'unit': 951,
+        'label': '1-modul testi',
+        'title': 'Module Self-Assessment 1 (Units 1-4)',
+      });
+      expect(test.displayLabel, '1-modul testi');
+
+      await t.pumpWidget(_wrap(BookUnitScreen(unit: test)));
+      await t.pump();
+      expect(find.textContaining('1-modul testi'), findsOneWidget);
+      expect(find.textContaining('951'), findsNothing);
+    });
+
+    test('unit raqami bo\'lmasa yorliq raqamdan tuziladi', () {
+      final u = BookUnit.fromJson(
+          json.decode(_unitJson) as Map<String, dynamic>);
+      expect(u.displayLabel, '1-unit');
+      expect(u.pages().first.unitLabel, '1-unit');
+    });
+
     testWidgets('bo\'limlar turi bo\'yicha guruhlanadi', (t) async {
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
       await t.pump();

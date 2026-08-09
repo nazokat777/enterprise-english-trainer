@@ -680,23 +680,45 @@ def _dispatch(t, ex, items):
 
 
 # ─────────────────────────── qurish ───────────────────────────
+# Kitobda unitlardan tashqari QO'SHIMCHA bo'limlar bor:
+#   * hikoya epizodlari  ("Episode 1: The Accident")
+#   * modul testlari     ("Module Self-Assessment 1")
+# Ular unit raqamiga ega emas, lekin unitlar ORASIDA turadi.
+# Sahifa faylida shu maydonlar beriladi:
+#   unit         — fayl nomi uchun sun'iy raqam (901+, 951+)
+#   unitLabelUz  — ekranda ko'rinadigan yorliq ("1-modul testi")
+#   unitBadge    — ro'yxatdagi qisqa belgi ("M1")
+#   afterUnit    — qaysi unitdan keyin turishi
+#   episode      — epizodlar uchun raqam (yorliq avtomatik yasaladi)
 def unit_label(page):
-    """Ekranda ko'rinadigan yorliq: "3-unit" yoki "1-epizod"."""
+    """Ekranda ko'rinadigan yorliq: "3-unit", "1-epizod", "1-modul testi"."""
+    if page.get("unitLabelUz"):
+        return page["unitLabelUz"]
     ep = page.get("episode")
     return f"{ep}-epizod" if ep else f"{page['unit']}-unit"
 
 
 def unit_badge(page):
-    """Ro'yxatdagi dumaloq belgi: "3" yoki "E1"."""
+    """Ro'yxatdagi dumaloq belgi: "3", "E1", "M1"."""
+    if page.get("unitBadge"):
+        return page["unitBadge"]
     ep = page.get("episode")
     return f"E{ep}" if ep else str(page["unit"])
 
 
+def unit_extra(page):
+    """Unit emas (epizod yoki modul testi) — ro'yxatda boshqacha ko'rinadi."""
+    return bool(page.get("episode")) or bool(page.get("unitLabelUz"))
+
+
 def unit_order(page):
-    """Ro'yxatdagi tartib. Epizod o'zi tegishli unitdan KEYIN turadi."""
-    ep = page.get("episode")
-    if ep:
-        return page.get("afterUnit", 0) + 0.5
+    """Ro'yxatdagi tartib. Qo'shimcha bo'lim o'z unitidan KEYIN turadi.
+
+    Modul testi epizoddan ham keyin tursin — shuning uchun 0.5 emas 0.7.
+    """
+    if unit_extra(page):
+        step = 0.5 if page.get("episode") else 0.7
+        return page.get("afterUnit", 0) + step
     return float(page["unit"])
 
 
@@ -759,7 +781,7 @@ def build_unit(pages):
         "unit": first["unit"],
         "label": unit_label(first),
         "badge": unit_badge(first),
-        "isEpisode": bool(first.get("episode")),
+        "isExtra": unit_extra(first),
         "order": unit_order(first),
         "title": first.get("unitTitle", ""),
         "module": first.get("module", 0),
@@ -803,7 +825,7 @@ def main():
             "unit": unit,
             "label": u["label"],
             "badge": u["badge"],
-            "isEpisode": u["isEpisode"],
+            "isExtra": u["isExtra"],
             "order": u["order"],
             "title": u["title"],
             "module": u["module"],

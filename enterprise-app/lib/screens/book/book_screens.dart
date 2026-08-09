@@ -107,7 +107,7 @@ class _UnitCard extends StatelessWidget {
                   width: 52,
                   height: 52,
                   decoration: BoxDecoration(
-                    color: (brief.isEpisode
+                    color: (brief.isExtra
                             ? AppColors.actionBlue
                             : AppColors.brandPurple)
                         .withValues(alpha: 0.12),
@@ -116,9 +116,9 @@ class _UnitCard extends StatelessWidget {
                   child: Center(
                     child: Text(brief.displayBadge,
                         style: TextStyle(
-                            fontSize: brief.isEpisode ? 17 : 22,
+                            fontSize: brief.isExtra ? 17 : 22,
                             fontWeight: FontWeight.w800,
-                            color: brief.isEpisode
+                            color: brief.isExtra
                                 ? AppColors.actionBlue
                                 : AppColors.brandPurple)),
                   ),
