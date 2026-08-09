@@ -1,0 +1,327 @@
+{
+  "book": "coursebook",
+  "pdfPage": 33,
+  "bookPage": 31,
+  "unit": 4,
+  "unitTitle": "Like Father, like Son",
+  "module": 2,
+  "scanNote": "25 va 27-mashqlarda tushib qolgan sifatlar AUDIO orqali beriladi. Audio yo'q — javoblar rasmlar, 26-mashqdagi so'zlar ro'yxati va dialog mantiqidan chiqarilgan; har birining sababi whyUz da yozilgan. Grammatik qolip (What does he look like? / What is he like?) javob qanday bo'lishidan qat'i nazar bir xil o'rganiladi.",
+  "sections": [
+    {
+      "kind": "speaking",
+      "title": "Describing people",
+      "titleUz": "Odamlarni tasvirlash",
+      "exercises": [
+        {
+          "ref": "25",
+          "type": "prompt_to_dialogue",
+          "hasAudio": true,
+          "instructionEn": "Study the descriptions, then listen and fill in the missing words. In pairs, ask and answer questions, as in the example.",
+          "instructionUz": "Tavsiflarni o'rganing, so'ng tinglab tushib qolgan so'zlarni yozing. Juftlikda namunadagidek savol-javob qiling.",
+          "audioRequiredUz": "Kassetada uch odam tasvirlanadi. Audio yo'q — sifatlar rasmlar va 26-mashqdagi so'zlar ro'yxatidan mantiqan tanlangan.",
+          "explanationUz": "IKKI SAVOL — IKKI XIL JAVOB (bu mashqning MAG'ZI):\n\n  What does he LOOK LIKE?  → TASHQI KO'RINISH\n    He's good-looking with short fair hair and green eyes.\n\n  What IS he LIKE?         → XARAKTER\n    He's lazy.\n\nFarq faqat 'look' so'zida! Uni tushirib qoldirsangiz,\nsavol butunlay boshqa ma'no oladi.\n\nKARTOCHKALAR:\n  Philip     — Appearance: 1) ... , short fair hair, green eyes\n               Character: 2) ...\n  Miss Adams — Appearance: 3) ... , long blonde hair, blue eyes\n               Character: 4) ...\n  Jean       — Appearance: 5) ... , short brown hair, brown eyes\n               Character: 6) ...\n\nJAVOB QOLIPI:\n  He's/She's + KO'RINISH sifati + WITH + soch + and + ko'z.\n  He's/She's + XARAKTER sifati.",
+          "bookRef": "Coursebook, 31-bet, 25-mashq",
+          "items": [
+            { "n": 1, "prompt": "Philip — tashqi ko'rinishi", "question": "What does Philip look like?", "answer": "He's good-looking with short fair hair and green eyes.", "given": true, "whyUz": "Kitobdagi namuna. 1-bo'shliq = good-looking." },
+            { "n": 2, "prompt": "Philip — xarakteri", "question": "What is he like?", "answer": "He's lazy.", "given": true, "whyUz": "Kitobdagi namuna. 2-bo'shliq = lazy." },
+            { "n": 3, "prompt": "Miss Adams — tashqi ko'rinishi", "question": "What does Miss Adams look like?", "answer": "She's gorgeous with long blonde hair and blue eyes.", "whyUz": "Rasmda yosh, uzun sariq sochli, ko'zga tashlanadigan ayol. 26-mashq ro'yxatidagi ko'rinish sifatlaridan 'gorgeous' unga mos." },
+            { "n": 4, "prompt": "Miss Adams — xarakteri", "question": "What is she like?", "answer": "She's bossy.", "whyUz": "26-mashq ro'yxatidagi xarakter sifatlaridan biri. Rasmdagi qat'iy, mag'rur qarash shunga ishora qiladi." },
+            { "n": 5, "prompt": "Jean — tashqi ko'rinishi", "question": "What does Jean look like?", "answer": "She's lovely with short brown hair and brown eyes.", "whyUz": "Rasmda ko'zoynakli, iliq tabassumli ayol. 'lovely' — yoqimli ko'rinish uchun." },
+            { "n": 6, "prompt": "Jean — xarakteri", "question": "What is she like?", "answer": "She's kind.", "whyUz": "26-mashq ro'yxatidan. Rasmdagi ochiq tabassum mehribonlikni bildiradi." }
+          ]
+        },
+        {
+          "ref": "25-savollar",
+          "type": "fill_gap",
+          "instructionEn": "Practise the two question forms.",
+          "instructionUz": "Ikkita savol shaklini mashq qiling.",
+          "explanationUz": "Bu ikki savolni chalkashtirish — eng ko'p uchraydigan xato.\nFarqni mahkam o'rnashtirish uchun mashq.",
+          "bookRef": "Coursebook, 31-bet, 25-mashq (savol shakllari)",
+          "items": [
+            { "textEn": "Tashqi ko'rinish so'rash (u — erkak):", "answer": "What does he look like?", "whyUz": "'look like' — ko'rinish. Javob: tall, slim, fair hair..." },
+            { "textEn": "Xarakter so'rash (u — erkak):", "answer": "What is he like?", "whyUz": "'be like' — xarakter. Javob: kind, lazy, clever..." },
+            { "textEn": "Tashqi ko'rinish so'rash (u — ayol):", "answer": "What does she look like?", "whyUz": "'she' bilan ham DOES." },
+            { "textEn": "Xarakter so'rash (u — ayol):", "answer": "What is she like?", "whyUz": "'be' fe'li bilan — 'does' kerak emas." },
+            { "textEn": "Tashqi ko'rinish so'rash (ular):", "answer": "What do they look like?", "whyUz": "Ko'plik → DO." },
+            { "textEn": "Xarakter so'rash (ular):", "answer": "What are they like?", "whyUz": "Ko'plik → ARE." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "game",
+      "title": "Vocabulary Revision Game",
+      "titleUz": "Lug'atni takrorlash o'yini",
+      "exercises": [
+        {
+          "ref": "26",
+          "type": "make_sentences_game",
+          "instructionEn": "Work in two teams. Take it in turns to choose words from the list and make sentences. Each correct sentence gets one point. The team with the most points is the winner.",
+          "instructionUz": "Ikki jamoada ishlang. Navbat bilan ro'yxatdan so'z tanlab, gap tuzing. Har bir to'g'ri gap 1 ochko.",
+          "explanationUz": "Unit 4 ning 19 ta kalit so'zi. Har biri bilan ma'noli gap tuzing.\n\nRO'YXAT:\n  family, live, lazy, city centre, clever, parents, camping,\n  husband, rude, aunt, uncle, cousin, niece, bossy, lovely,\n  good-looking, patient, kind, gorgeous\n\nQOIDA: gap MA'NOLI va GRAMMATIK to'g'ri bo'lishi kerak.\nUnit 4 grammatikasini ishlatsangiz — yanada yaxshi:\n  Present Simple (-s 3-shaxsda)\n  egalik ('s va s')\n  egalik sifatlari (my, his, her, their)",
+          "bookRef": "Coursebook, 31-bet, 26-mashq",
+          "modelSentences": [
+            { "word": "family", "sentence": "There are five people in my family.", "uz": "Oilamda besh kishi bor." },
+            { "word": "live", "sentence": "My cousin lives in Montreal.", "uz": "Amakivachcham Monrealda yashaydi." },
+            { "word": "lazy", "sentence": "My brother is a bit lazy.", "uz": "Akam biroz dangasa." },
+            { "word": "city centre", "sentence": "We live twenty minutes from the city centre.", "uz": "Biz shahar markazidan yigirma daqiqa masofada yashaymiz." },
+            { "word": "clever", "sentence": "My sister is very clever.", "uz": "Singlim juda aqlli." },
+            { "word": "parents", "sentence": "My parents are teachers.", "uz": "Ota-onam o'qituvchi." },
+            { "word": "camping", "sentence": "I don't like camping.", "uz": "Chodirda dam olishni yoqtirmayman." },
+            { "word": "husband", "sentence": "Peter is Helen's husband.", "uz": "Piter — Helenning eri." },
+            { "word": "rude", "sentence": "He is sometimes rude to his sister.", "uz": "U ba'zan singlisiga qo'pol muomala qiladi." },
+            { "word": "aunt", "sentence": "My aunt works in a hospital.", "uz": "Ammam kasalxonada ishlaydi." },
+            { "word": "uncle", "sentence": "My uncle is my father's brother.", "uz": "Amakim — otamning akasi." },
+            { "word": "cousin", "sentence": "Dave is Lisa's cousin.", "uz": "Deyv — Lizaning amakivachchasi." },
+            { "word": "niece", "sentence": "Lisa is their niece.", "uz": "Liza — ularning jiyani." },
+            { "word": "bossy", "sentence": "She's clever but she's a bit bossy.", "uz": "U aqlli, lekin biroz buyruqboz." },
+            { "word": "lovely", "sentence": "She has got lovely green eyes.", "uz": "Uning go'zal yashil ko'zlari bor." },
+            { "word": "good-looking", "sentence": "My brother is very good-looking.", "uz": "Akam juda kelishgan." },
+            { "word": "patient", "sentence": "My mother is very patient.", "uz": "Onam juda sabrli." },
+            { "word": "kind", "sentence": "My father is a very kind person.", "uz": "Otam juda mehribon odam." },
+            { "word": "gorgeous", "sentence": "Miss Adams is gorgeous.", "uz": "Miss Adams juda maftunkor." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "communication",
+      "title": "Communication: Identifying People",
+      "titleUz": "Muloqot: odamni ko'rsatib tanishtirish",
+      "exercises": [
+        {
+          "ref": "27",
+          "type": "dialogue_fill",
+          "hasAudio": true,
+          "instructionEn": "Read the dialogue, then listen and fill in the missing adjectives. Which girl in the picture is Steve's sister? Listen again and follow the dialogue. Then, in pairs, act it out.",
+          "instructionUz": "Dialogni o'qing, so'ng tinglab, tushib qolgan sifatlarni qo'ying. Rasmdagi qaysi qiz Stivning singlisi?",
+          "audioRequiredUz": "Kassetada sifatlar aytiladi. Audio yo'q — sifatlar dialogning mantiqi va rasmdan chiqarilgan. Mashqning asosiy maqsadi — ODAMNI KO'RSATIB TANISHTIRISH iboralari.",
+          "explanationUz": "VAZIYAT: ikki o'g'il (B va S = Steve) bog'da o'tirishibdi.\nB bir qizni yoqtirib qoladi va uni Stivga ko'rsatmoqchi.\nOxirida ma'lum bo'ladi: u qiz — Stivning SINGLISI!\n\nODAMNI KO'RSATISH IBORALARI (bu mashqning asosiy maqsadi):\n  Which girl?              — Qaysi qiz?\n  That girl.               — Ana u qiz.\n  The one over there.      — Anavi yerdagisi.\n  ... with the ... hair    — ... sochli\n  She's on the bench.      — U skameykada.\n  Do you mean the girl in the dark T-shirt?\n                           — Qora futbolkadagi qizni aytyapsanmi?\n  Not her — the one next to her.\n                           — U emas — uning yonidagisi.\n\n'THE ONE' — takroriy otni almashtiradi:\n  the one over there = the girl over there\n  the one next to her = the girl next to her\n\n'Do you mean ...?' — 'Sen ...ni aytyapsanmi?' — aniqlashtirish.\n'Isn't she ...?' — 'U ... emasmi?' — rozilik kutib so'rash.\n'not bad' — 'yomon emas' — kamtarona maqtov.\n'actually' — 'aslida' — kutilmagan ma'lumot oldidan.",
+          "bookRef": "Coursebook, 31-bet, 27-mashq",
+          "lines": [
+            { "who": "B", "textEn": "Wow! Look at that girl, Steve!", "uz": "Voy! Ana u qizga qara, Stiv!", "given": true },
+            { "who": "S", "textEn": "Which girl?", "uz": "Qaysi qiz?", "given": true },
+            { "who": "B", "textEn": "That girl. She's really 1) ____ .", "answer": "pretty", "hintUz": "Qizning tashqi ko'rinishini maqtaydigan sifat", "whyUz": "B qizni yoqtirib qolgan — ko'rinish sifati kerak. 'pretty' (chiroyli) qizlar uchun eng ko'p ishlatiladigan so'z." },
+            { "who": "S", "textEn": "Which girl? Where?", "uz": "Qaysi qiz? Qayerda?", "given": true },
+            { "who": "B", "textEn": "The one over there, with the 2) ____ hair.", "answer": "long fair", "hintUz": "Sochning uzunligi va rangi", "whyUz": "Keyin S 'the girl in the dark T-shirt' ni so'raydi va B 'yo'q' deydi — demak bu qiz undan FARQ qiladi. Rasmda qora sochli qizning yonida uzun sariq sochli qiz turibdi." },
+            { "who": "S", "textEn": "I can't see her.", "uz": "Men uni ko'rmayapman.", "given": true },
+            { "who": "B", "textEn": "Yes you can! She's on the bench.", "uz": "Yo'q, ko'rasan! U skameykada.", "given": true },
+            { "who": "S", "textEn": "Do you mean the girl in the dark T-shirt?", "uz": "Qora futbolkadagi qizni aytyapsanmi?", "given": true },
+            { "who": "B", "textEn": "No! Not her — the one next to her.", "uz": "Yo'q! U emas — uning yonidagisi.", "given": true },
+            { "who": "S", "textEn": "Oh, I can see her now.", "uz": "Ha, endi ko'rdim.", "given": true },
+            { "who": "B", "textEn": "Isn't she 3) ____ ?", "answer": "beautiful", "hintUz": "Yana kuchliroq ko'rinish sifati — B rozilik kutyapti", "whyUz": "'Isn't she ...?' — rozilik kutib so'rash. B qizni yana bir bor maqtayapti, shuning uchun 'pretty' dan kuchliroq so'z." },
+            { "who": "S", "textEn": "Mmm, not bad. She's very 4) ____ , too.", "answer": "clever", "hintUz": "Bu safar KO'RINISH emas — XARAKTER sifati", "whyUz": "'too' (ham) — yangi xususiyat qo'shilyapti. Stiv qizni TANIYDI (u singlisi), shuning uchun uning XARAKTERINI biladi." },
+            { "who": "B", "textEn": "Do you know her?", "uz": "Uni tanaysanmi?", "given": true },
+            { "who": "S", "textEn": "Yes, I do actually. She's my sister.", "uz": "Ha, aslida taniyman. U mening singlim.", "given": true }
+          ]
+        },
+        {
+          "ref": "27-savol",
+          "type": "fill_gap",
+          "instructionEn": "Which girl in the picture is Steve's sister?",
+          "instructionUz": "Rasmdagi qaysi qiz Stivning singlisi?",
+          "explanationUz": "Dialogdan uchta belgini yig'ing:\n  1) u skameykada (on the bench)\n  2) uning sochi uzun va sariq\n  3) u qora futbolkadagi qizning YONIDA",
+          "bookRef": "Coursebook, 31-bet, 27-mashq (savol)",
+          "items": [
+            { "textEn": "Which girl is Steve's sister?", "answer": "The girl with long fair hair, next to the girl in the dark T-shirt.", "whyUz": "Dialogda: 'the one over there, with the long fair hair', 'She's on the bench', 'Not her — the one next to her'." }
+          ]
+        },
+        {
+          "ref": "27-iboralar",
+          "type": "uz_to_en",
+          "instructionEn": "Learn the phrases for identifying people.",
+          "instructionUz": "Odamni ko'rsatib tanishtirish iboralarini yodlang.",
+          "explanationUz": "Bu iboralar kundalik nutqda juda ko'p kerak bo'ladi —\nolomon ichida kimnidir ko'rsatish uchun.",
+          "bookRef": "Coursebook, 31-bet, 27-mashq (iboralar)",
+          "wordList": ["Which girl?", "That girl.", "the one over there", "the one next to her", "Do you mean ...?", "Isn't she ...?", "not bad", "actually"],
+          "items": [
+            { "promptUz": "Qaysi qiz?", "answer": "Which girl?", "whyUz": "'Which' — cheklangan tanlovdan biri. 'What girl?' emas." },
+            { "promptUz": "Ana u qiz.", "answer": "That girl.", "whyUz": "Uzoqdagi narsa uchun 'that' (Unit 3)." },
+            { "promptUz": "anavi yerdagisi", "answer": "the one over there", "whyUz": "'the one' = 'the girl' — otni takrorlamaslik uchun." },
+            { "promptUz": "uning yonidagisi", "answer": "the one next to her", "whyUz": "'next to' — yonida (Unit 3 predlogi)." },
+            { "promptUz": "Sen ...ni aytyapsanmi?", "answer": "Do you mean ...?", "whyUz": "Aniqlashtirish savoli. 'mean' = nazarda tutmoq." },
+            { "promptUz": "U ... emasmi?", "answer": "Isn't she ...?", "whyUz": "Inkor savol — rozilik kutib so'raladi." },
+            { "promptUz": "yomon emas", "answer": "not bad", "whyUz": "Kamtarona maqtov. Ba'zan 'ancha yaxshi' degani." },
+            { "promptUz": "aslida", "answer": "actually", "whyUz": "Kutilmagan ma'lumot oldidan. 'aktualnyy' EMAS — bu soxta do'st so'z!" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "Writing (a letter to a pen-friend)",
+      "titleUz": "Yozish — qalamkash do'stga xat",
+      "exercises": [
+        {
+          "ref": "Writing",
+          "type": "write_sentences",
+          "instructionEn": "Use the letter in Ex. 4 as a model and the plan below to write a letter to your pen-friend.",
+          "instructionUz": "4-mashqdagi xatni namuna, quyidagi rejani esa qo'llanma sifatida olib, qalamkash do'stingizga xat yozing.",
+          "explanationUz": "KITOBDAGI REJA (Plan):\n\n  Dear + (qalamkash do'stingizning ismi),\n\n  INTRODUCTION (kirish)\n  Para 1: kim ekaningiz, necha yoshda, kasbingiz,\n          qayerda yashaysiz va qanday ko'rinasiz\n\n  MAIN BODY (asosiy qism)\n  Para 2: oilangiz (a'zolari, yoshi, kasbi) va uyingiz\n  Para 3: nima qilishni yoqtirasiz / yoqtirmaysiz\n\n  CONCLUSION (yakun)\n  Para 4: do'stingizdan tez javob yozishni so'rang\n\n  Best wishes,\n  (ismingiz)\n\nBU REJA — 26-betdagi Tonining xati bilan AYNAN bir xil tuzilma.\nDemak Tonining xatini namuna qilib olsangiz bo'ladi.\n\nHAR BIR XATBOSHI YANGI QATORDAN va biroz ichkaridan boshlanadi.",
+          "bookRef": "Coursebook, 31-bet, Writing (Plan)",
+          "structure": [
+            { "headingUz": "Salomlashish", "modelEn": "Dear Pierre," },
+            { "headingUz": "Para 1 — kim ekaningiz va yoshingiz", "modelEn": "I'm Aziz Karimov and I'm fourteen years old." },
+            { "headingUz": "Para 1 — kasbingiz va qayerda yashashingiz", "modelEn": "I'm a student and I live in Tashkent, Uzbekistan." },
+            { "headingUz": "Para 1 — tashqi ko'rinishingiz", "modelEn": "I'm tall and slim with short dark hair and brown eyes." },
+            { "headingUz": "Para 2 — oila a'zolari", "modelEn": "There are five of us in our family; my parents, Rustam and Nilufar, my sister, Malika, aged twelve, my brother, Sardor, aged eight, and of course, me.", "noteUz": "Tonining xatidagi aynan shu qolip." },
+            { "headingUz": "Para 2 — ota-onaning kasbi", "modelEn": "My father is an engineer. He works at a local factory and my mother is a doctor in a hospital." },
+            { "headingUz": "Para 2 — uyingiz", "modelEn": "We live in a big house about fifteen minutes from the city centre." },
+            { "headingUz": "Para 3 — nimani yoqtirasiz", "modelEn": "In my free time, I love playing football and listening to music." },
+            { "headingUz": "Para 3 — yana nimani yoqtirasiz", "modelEn": "I also like reading and going to the cinema." },
+            { "headingUz": "Para 3 — nimani yoqtirmaysiz", "modelEn": "I don't like watching TV, though." },
+            { "headingUz": "Para 4 — yakun", "modelEn": "Well, that's all about me. Write back soon and tell me about yourself." },
+            { "headingUz": "Xayrlashish", "modelEn": "Best wishes, Aziz" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "words_of_wisdom",
+      "title": "Words of Wisdom",
+      "titleUz": "Hikmatli so'zlar",
+      "exercises": [
+        {
+          "ref": "WoW",
+          "type": "explain_sentences",
+          "instructionEn": "Read these sentences. What do they mean?",
+          "instructionUz": "Bu gaplarni o'qing. Ular nimani anglatadi?",
+          "explanationUz": "Ikkala maqol ham BITTA fikrni aytadi:\nbola ota-onasiga o'xshaydi.\n\nBirinchisi — Unit 4 ning SARLAVHASI.\nShuning uchun butun unit oila haqida.",
+          "bookRef": "Coursebook, 31-bet, Words of Wisdom",
+          "sentences": [
+            {
+              "en": "Like father, like son. / Like mother, like daughter.",
+              "uz": "Ota qanday bo'lsa, o'g'il ham shunday. / Ona qanday bo'lsa, qiz ham shunday.",
+              "noteUz": "MA'NOSI: bola ota-onasining xulqi va odatlarini takrorlaydi.\n\nTUZILISHI juda qisqa — fe'l YO'Q:\n  To'liq shakli: 'As the father is, so is the son.'\n  Maqolda esa faqat 'Like ... , like ...' qoldirilgan.\n\n'like' bu yerda 'yoqtirmoq' EMAS — 'kabi, o'xshash' degani.\n\nBu maqol ham ijobiy, ham salbiy ma'noda ishlatiladi:\n  otasi ham shifokor, o'g'li ham → maqtov\n  otasi ham kech qoladi, o'g'li ham → tanbeh"
+            },
+            {
+              "en": "The apple never falls far from the tree.",
+              "uz": "Olma daraxtidan uzoqqa tushmaydi.",
+              "noteUz": "MA'NOSI: bola oilasiga o'xshaydi — undan uzoqlashmaydi.\n\nBu maqol O'ZBEKCHADA HAM AYNAN BOR:\n  'Olma daraxtidan uzoqqa tushmaydi.'\nSo'zma-so'z bir xil — chunki tabiat kuzatuvi hamma xalqda bir xil.\n\nGRAMMATIKA: 'never' — inkor so'zi. U bilan ikkinchi inkor\nqo'shilmaydi:\n  ✅ The apple NEVER falls.\n  ❌ The apple never doesn't fall.\n\nVa 'falls' — 3-shaxs birlik -s (Unit 4 grammatikasi)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "31-bet — tanishtirish iboralari va xat tuzilishi.",
+    "groups": [
+      {
+        "ruleUz": "'the one' — otni almashtiradi",
+        "explanationUz": "Bir xil otni takrorlamaslik uchun 'the one' (birlik) yoki 'the ones' (ko'plik) ishlatiladi.",
+        "items": [
+          { "base": "the girl over there", "baseUz": "anavi yerdagi qiz", "derived": "the one over there", "derivedUz": "anavi yerdagisi", "note": "birlik" },
+          { "base": "the girl next to her", "baseUz": "uning yonidagi qiz", "derived": "the one next to her", "derivedUz": "uning yonidagisi", "note": "birlik" },
+          { "base": "the girls on the bench", "baseUz": "skameykadagi qizlar", "derived": "the ones on the bench", "derivedUz": "skameykadagilar", "note": "ko'plik: the ones" },
+          { "base": "Which one?", "baseUz": "Qaysi biri?", "derived": "This one / That one", "derivedUz": "Bu biri / U biri", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Ko'rinish sifatlarining kuchi",
+        "explanationUz": "Kuchsizdan kuchligacha tartib. Kuchli sifatlar oldiga 'very' qo'yilmaydi.",
+        "items": [
+          { "base": "not bad", "baseUz": "yomon emas", "derived": "eng kamtarona", "derivedUz": "kuchsiz maqtov", "note": "" },
+          { "base": "nice", "baseUz": "yaxshi", "derived": "oddiy maqtov", "derivedUz": "o'rtacha", "note": "" },
+          { "base": "pretty", "baseUz": "chiroyli", "derived": "yaxshi maqtov", "derivedUz": "qizlar uchun", "note": "" },
+          { "base": "beautiful", "baseUz": "go'zal", "derived": "kuchli maqtov", "derivedUz": "ayollar uchun", "note": "" },
+          { "base": "gorgeous", "baseUz": "maftunkor", "derived": "eng kuchli", "derivedUz": "juda kuchli", "note": "'very gorgeous' deyilmaydi" }
+        ]
+      },
+      {
+        "ruleUz": "Xat tuzilishi atamalari",
+        "explanationUz": "Har qanday xat va inshoda shu uchta qism bo'ladi.",
+        "items": [
+          { "base": "introduce", "baseUz": "tanishtirmoq", "derived": "Introduction", "derivedUz": "kirish", "note": "1-xatboshi" },
+          { "base": "main + body", "baseUz": "asosiy + tana", "derived": "Main Body", "derivedUz": "asosiy qism", "note": "2–3-xatboshilar" },
+          { "base": "conclude", "baseUz": "xulosa qilmoq", "derived": "Conclusion", "derivedUz": "yakun", "note": "oxirgi xatboshi" },
+          { "base": "paragraph", "baseUz": "xatboshi", "derived": "Para 1, Para 2", "derivedUz": "qisqartma", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "SOXTA DO'ST so'zlar (false friends)",
+        "explanationUz": "Rus/o'zbek tilidagi o'xshash so'zga tayanib xato qilinadigan so'zlar.",
+        "items": [
+          { "base": "actually", "baseUz": "aslida, haqiqatda", "derived": "'aktual' EMAS", "derivedUz": "in fact ma'nosida", "note": "'hozirgi, dolzarb' → current, topical" },
+          { "base": "sympathetic", "baseUz": "hamdard", "derived": "'simpatichniy' EMAS", "derivedUz": "chiroyli emas", "note": "chiroyli → attractive" },
+          { "base": "magazine", "baseUz": "jurnal", "derived": "'magazin' EMAS", "derivedUz": "do'kon emas", "note": "do'kon → shop" },
+          { "base": "family", "baseUz": "oila", "derived": "'familiya' EMAS", "derivedUz": "familiya → surname", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "31-betdagi qoliplar.",
+    "patterns": [
+      {
+        "formula": "What does + ega + look like? — He's/She's + sifat + WITH + soch va ko'z.",
+        "exampleEn": "What does Philip look like? — He's good-looking with short fair hair and green eyes.",
+        "exampleUz": "Filip qanday ko'rinadi? — U kelishgan, sochi kalta va sariq, ko'zlari yashil.",
+        "explanationUz": "TASHQI KO'RINISH savoli. 'look' so'zi SHART."
+      },
+      {
+        "formula": "What is + ega + like? — He's/She's + xarakter sifati.",
+        "exampleEn": "What is he like? — He's lazy.",
+        "exampleUz": "U qanday odam? — U dangasa.",
+        "explanationUz": "XARAKTER savoli. 'look' YO'Q. 'do/does' ham kerak emas — 'be' fe'li."
+      },
+      {
+        "formula": "The one + predlog + joy / with the + soch.",
+        "exampleEn": "The one over there, with the long fair hair. Not her — the one next to her.",
+        "exampleUz": "Anavi yerdagisi, uzun sariq sochlisi. U emas — uning yonidagisi.",
+        "explanationUz": "Olomon ichida odamni ko'rsatish. 'the one' otni almashtiradi."
+      },
+      {
+        "formula": "Do you mean + ot? — No! Not her/him — the one ...",
+        "exampleEn": "Do you mean the girl in the dark T-shirt? — No! Not her — the one next to her.",
+        "exampleUz": "Qora futbolkadagi qizni aytyapsanmi? — Yo'q! U emas — uning yonidagisi.",
+        "explanationUz": "Aniqlashtirish va tuzatish. 'Not her' — obyekt olmoshi (Unit 4)."
+      },
+      {
+        "formula": "Isn't she/he + sifat? — Mmm, not bad.",
+        "exampleEn": "Isn't she beautiful? — Mmm, not bad.",
+        "exampleUz": "U go'zal emasmi? — Hmm, yomon emas.",
+        "explanationUz": "Inkor savol rozilik kutib so'raladi.\n'not bad' — kamtarona javob, to'liq rozi bo'lmaslik."
+      },
+      {
+        "formula": "Yes, I do actually.",
+        "exampleEn": "Do you know her? — Yes, I do actually. She's my sister.",
+        "exampleUz": "Uni tanaysanmi? — Ha, aslida taniyman. U mening singlim.",
+        "explanationUz": "Qisqa javob (Yes, I do) + 'actually' kutilmagan ma'lumot oldidan."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "What does he look like?", "uz": "U qanday ko'rinadi?" },
+    { "en": "What is he like?", "uz": "U qanday odam?" },
+    { "en": "Which girl?", "uz": "Qaysi qiz?" },
+    { "en": "the one over there", "uz": "anavi yerdagisi" },
+    { "en": "next to her", "uz": "uning yonida" },
+    { "en": "Do you mean ...?", "uz": "Sen ...ni aytyapsanmi?" },
+    { "en": "Isn't she ...?", "uz": "U ... emasmi?" },
+    { "en": "not bad", "uz": "yomon emas" },
+    { "en": "actually", "uz": "aslida" },
+    { "en": "a bench", "uz": "skameyka" },
+    { "en": "a T-shirt", "uz": "futbolka" },
+    { "en": "dark", "uz": "to'q rangli, qora" },
+    { "en": "blonde hair", "uz": "sariq soch" },
+    { "en": "fair hair", "uz": "sariq soch" },
+    { "en": "to identify", "uz": "aniqlamoq, tanimoq" },
+    { "en": "a description", "uz": "tavsif" },
+    { "en": "an introduction", "uz": "kirish" },
+    { "en": "the main body", "uz": "asosiy qism" },
+    { "en": "a conclusion", "uz": "yakun, xulosa" },
+    { "en": "a paragraph", "uz": "xatboshi" },
+    { "en": "an occupation", "uz": "kasb" },
+    { "en": "a first name", "uz": "ism" },
+    { "en": "a surname", "uz": "familiya" },
+    { "en": "to write back soon", "uz": "tezroq javob yozmoq" },
+    { "en": "an apple", "uz": "olma" },
+    { "en": "a tree", "uz": "daraxt" },
+    { "en": "to fall", "uz": "tushmoq, yiqilmoq" },
+    { "en": "never", "uz": "hech qachon" },
+    { "en": "far from", "uz": "...dan uzoqqa" }
+  ]
+}
