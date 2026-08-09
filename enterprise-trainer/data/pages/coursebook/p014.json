@@ -1,0 +1,341 @@
+{
+  "book": "coursebook",
+  "pdfPage": 14,
+  "bookPage": 12,
+  "unit": 2,
+  "unitTitle": "A Friend in Need ...",
+  "module": 1,
+  "sections": [
+    {
+      "kind": "lead_in",
+      "title": "Lead-in",
+      "titleUz": "Kirish",
+      "exercises": [
+        {
+          "ref": "1",
+          "type": "picture_choice",
+          "instructionEn": "Look at the pictures. Who's got brown, curly hair? brown, wavy hair? short grey hair? long straight fair hair? dark hair? a moustache? a beard and a moustache?",
+          "instructionUz": "Rasmlarga qarang. Kimda jigarrang jingalak soch bor? Jigarrang to'lqinsimon? Kalta kulrang? Uzun tekis oq-sariq? Qora soch? Mo'ylov? Soqol va mo'ylov?",
+          "explanationUz": "SOCH TA'RIFI qat'iy tartibda beriladi:\n  UZUNLIK + SHAKL + RANG + hair\n  'long straight fair hair' — uzun, tekis, oq-sariq soch\n\nDIQQAT: 'Who's got' = 'Who has got' — qisqartma.\nSoch haqida 'have got' ishlatiladi: 'She HAS GOT long hair'.\n\nYuz tuklari 'a' bilan keladi: a moustache (mo'ylov), a beard (soqol).",
+          "bookRef": "Coursebook, 12-bet — rasmlar",
+          "options": ["Alice", "Mario", "Helen", "Anna", "Pierre", "John", "Jack"],
+          "answers": [
+            {
+              "picture": "brown, curly hair",
+              "country": "Alice",
+              "descEn": "Who's got brown, curly hair?",
+              "descUz": "Kimda jigarrang jingalak soch bor?"
+            },
+            {
+              "picture": "brown, wavy hair",
+              "country": "Mario",
+              "descEn": "Who's got brown, wavy hair?",
+              "descUz": "Kimda jigarrang to'lqinsimon soch bor?"
+            },
+            {
+              "picture": "short grey hair",
+              "country": "Helen",
+              "descEn": "Who's got short grey hair?",
+              "descUz": "Kimda kalta kulrang soch bor?"
+            },
+            {
+              "picture": "long straight fair hair",
+              "country": "Anna",
+              "descEn": "Who's got long straight fair hair?",
+              "descUz": "Kimda uzun tekis oq-sariq soch bor?"
+            },
+            {
+              "picture": "dark hair",
+              "country": "Pierre",
+              "descEn": "Who's got dark hair?",
+              "descUz": "Kimda qora soch bor?"
+            },
+            {
+              "picture": "a moustache",
+              "country": "John",
+              "descEn": "Who's got a moustache?",
+              "descUz": "Kimda mo'ylov bor?"
+            },
+            {
+              "picture": "a beard and a moustache",
+              "country": "Jack",
+              "descEn": "Who's got a beard and a moustache?",
+              "descUz": "Kimda soqol va mo'ylov bor?"
+            }
+          ]
+        },
+        {
+          "ref": "2",
+          "type": "fill_from_list",
+          "instructionEn": "Fill in the names of the people in the pictures.",
+          "instructionUz": "Rasmlardagi odamlarning ismini yozing.",
+          "explanationUz": "Tashqi ko'rinish sifatlari:\n• old — keksa · young — yosh · middle-aged — o'rta yoshli\n• tall — baland bo'yli · short — past bo'yli\n• slim — nozik · well-built — baquvvat · fat — semiz\n\nDIQQAT: 'fat' qo'pol eshitiladi. Odob bilan aytish uchun\n'a bit overweight' yoki 'large' ishlatiladi.\n\n'quite' — ancha, birmuncha: 'quite tall' = ancha baland.",
+          "wordList": ["Helen", "Pierre", "Anna", "Jack", "Mario", "John"],
+          "items": [
+            { "n": 1, "sentence": "___ is old.", "answer": "Helen", "uz": "Helen keksa." },
+            { "n": 2, "sentence": "___ is quite tall and slim.", "answer": "Pierre", "uz": "Pierre ancha baland va nozik." },
+            { "n": 3, "sentence": "___ is short and quite slim.", "answer": "Anna", "uz": "Anna past bo'yli va ancha nozik." },
+            { "n": 4, "sentence": "___ is middle-aged and Pierre is young.", "answer": "Jack", "uz": "Jack o'rta yoshli, Pierre esa yosh." },
+            { "n": 5, "sentence": "___ is well-built.", "answer": "Mario", "uz": "Mario baquvvat." },
+            { "n": 6, "sentence": "___ is fat.", "answer": "John", "uz": "John semiz." }
+          ]
+        },
+        {
+          "ref": "3",
+          "type": "listen_match",
+          "hasAudio": true,
+          "instructionEn": "Read the sentences, then listen and match the sentences to the speakers.",
+          "instructionUz": "Gaplarni o'qing, so'ng eshitib gaplarni gapiruvchilarga moslang.",
+          "explanationUz": "Har gap e'londagi ma'lumotdan kelib chiqadi:\n• kompyuter o'yinlari — Pierre (e'lon 1)\n• gitara — Mario (e'lon 3)\n• chang'i — Anna (e'lon 2)\n• 'Hope to hear from you soon' — Marioning e'loni shu bilan tugaydi",
+          "answers": [
+            {
+              "letter": "1",
+              "number": 1,
+              "pictureDescUz": "\"I love playing computer games.\"",
+              "textDescUz": "Pierre",
+              "why": "Pierre e'lonida kompyuter o'yinlari aytilgan"
+            },
+            {
+              "letter": "2",
+              "number": 2,
+              "pictureDescUz": "\"I like playing the guitar.\"",
+              "textDescUz": "Mario",
+              "why": "Mario gitara chalishni yoqtiradi"
+            },
+            {
+              "letter": "3",
+              "number": 3,
+              "pictureDescUz": "\"I like skiing.\"",
+              "textDescUz": "Anna",
+              "why": "Anna chang'i uchishni yoqtiradi"
+            },
+            {
+              "letter": "4",
+              "number": 4,
+              "pictureDescUz": "\"Hope to hear from you soon.\"",
+              "textDescUz": "Mario",
+              "why": "Marioning e'loni shu jumla bilan tugaydi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "reading",
+      "title": "Reading",
+      "titleUz": "O'qish",
+      "exercises": [
+        {
+          "ref": "4",
+          "type": "read_label_answer",
+          "instructionEn": "Read the Internet advertisements for pen-friends and answer the questions. Then, explain the words in bold.",
+          "instructionUz": "Pen-friend (xat orqali do'st) uchun internet e'lonlarini o'qing va savollarga javob bering. So'ng qalin yozilgan so'zlarni tushuntiring.",
+          "explanationUz": "E'lon qolipi — har uchalasi bir xil tartibda:\n1) Ism va yosh: My name's X and I'm ... years old.\n2) Joy: I live in SHAHAR, MAMLAKAT.\n3) Tashqi ko'rinish: I have got + SOCH + eyes. I'm + bo'y/gavda.\n4) Qiziqish: I like / I love + -ing.\n5) Qobiliyat: I can + FE'L.\n6) Chaqiriq: Please e-mail me / Hope to hear from you soon.\n\nShu qolip bo'yicha o'zingiz ham e'lon yoza olasiz.",
+          "bookRef": "Coursebook, 12-bet — 1, 2, 3-e'lonlar",
+          "readingNote": "E'lonlarni kitobingizdan o'qing (12-bet). Quyida ularning ma'lumoti va barcha javoblar berilgan.",
+          "people": [
+            {
+              "text": 1,
+              "name": "Pierre",
+              "age": 17,
+              "from": "Paris, France",
+              "hair": "short straight dark hair",
+              "eyes": "brown",
+              "build": "quite tall and slim",
+              "likes": "playing computer games, reading",
+              "can": "play tennis very well",
+              "ending": "Please e-mail me today!"
+            },
+            {
+              "text": 2,
+              "name": "Anna",
+              "age": 11,
+              "from": "Moscow, Russia",
+              "hair": "long straight fair hair",
+              "eyes": "green",
+              "build": "quite short",
+              "likes": "skiing",
+              "can": "play the piano quite well",
+              "ending": "Please be my e-mail pen pal."
+            },
+            {
+              "text": 3,
+              "name": "Mario",
+              "age": 26,
+              "from": "Florence, Italy",
+              "hair": "brown, wavy hair",
+              "eyes": "brown",
+              "build": "tall and well-built",
+              "likes": "playing the guitar, dancing",
+              "can": "speak French",
+              "ending": "Hope to hear from you soon."
+            }
+          ],
+          "questions": [
+            {
+              "ref": "1",
+              "en": "What can Pierre do?",
+              "uz": "Pierre nima qila oladi?",
+              "answerEn": "He can play tennis very well.",
+              "answerUz": "U tennisni juda yaxshi o'ynay oladi."
+            },
+            {
+              "ref": "2",
+              "en": "How old is Mario?",
+              "uz": "Mario necha yoshda?",
+              "answerEn": "He's twenty-six years old.",
+              "answerUz": "U yigirma olti yoshda."
+            },
+            {
+              "ref": "3",
+              "en": "Who has got brown eyes?",
+              "uz": "Kimning ko'zi jigarrang?",
+              "answerEn": "Pierre and Mario have got brown eyes.",
+              "answerUz": "Pierre va Marioning ko'zi jigarrang."
+            },
+            {
+              "ref": "4",
+              "en": "Who is tall and well-built?",
+              "uz": "Kim baland bo'yli va baquvvat?",
+              "answerEn": "Mario is tall and well-built.",
+              "answerUz": "Mario baland bo'yli va baquvvat."
+            },
+            {
+              "ref": "5",
+              "en": "Is Mario's hair curly?",
+              "uz": "Marioning sochi jingalakmi?",
+              "answerEn": "No, it isn't. It's wavy.",
+              "answerUz": "Yo'q. U to'lqinsimon."
+            },
+            {
+              "ref": "6",
+              "en": "What can Anna do?",
+              "uz": "Anna nima qila oladi?",
+              "answerEn": "She can play the piano quite well.",
+              "answerUz": "U pianinoni ancha yaxshi chala oladi."
+            },
+            {
+              "ref": "7",
+              "en": "What is the last sentence in each advertisement?",
+              "uz": "Har e'lonning oxirgi gapi qanday?",
+              "answerEn": "It is an invitation to reply: \"Please e-mail me today!\", \"Please be my e-mail pen pal.\", \"Hope to hear from you soon.\"",
+              "answerUz": "Bu — javob berishga chaqiriq. Har e'lon aloqaga chaqirish bilan tugaydi."
+            }
+          ],
+          "boldWords": [
+            { "en": "live", "uz": "yashamoq" },
+            { "en": "brown eyes", "uz": "jigarrang ko'z" },
+            { "en": "green eyes", "uz": "yashil ko'z" },
+            { "en": "quite tall", "uz": "ancha baland" },
+            { "en": "slim", "uz": "nozik" },
+            { "en": "short", "uz": "past bo'yli" },
+            { "en": "very well", "uz": "juda yaxshi" },
+            { "en": "e-mail me", "uz": "menga e-xat yozing" },
+            { "en": "pen pal", "uz": "xat orqali do'st" },
+            { "en": "guitar", "uz": "gitara" },
+            { "en": "dancing", "uz": "raqs" },
+            { "en": "Hope to hear from you", "uz": "Sizdan xabar kutaman" }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Tashqi ko'rinish va qiziqish bildiruvchi so'zlar.",
+    "groups": [
+      {
+        "ruleUz": "Qo'shma sifatlar (chiziqcha bilan)",
+        "explanationUz": "Ikki so'z birikib bitta sifat yasaydi. Chiziqcha SHART.",
+        "items": [
+          { "base": "middle + age", "baseUz": "o'rta + yosh", "derived": "middle-aged", "derivedUz": "o'rta yoshli", "note": "-ed qo'shiladi" },
+          { "base": "well + build", "baseUz": "yaxshi + qurilgan", "derived": "well-built", "derivedUz": "baquvvat", "note": "3-shakl" },
+          { "base": "good + look", "baseUz": "yaxshi + ko'rinish", "derived": "good-looking", "derivedUz": "kelishgan", "note": "-ing" },
+          { "base": "pen + friend", "baseUz": "ruchka + do'st", "derived": "pen-friend / pen pal", "derivedUz": "xat orqali do'st", "note": "ikki xil aytiladi" }
+        ]
+      },
+      {
+        "ruleUz": "Fe'l + -ing → mashg'ulot nomi",
+        "explanationUz": "'like' va 'love' dan keyin fe'l -ing bilan keladi. Bu shakl mashg'ulot nomi ham bo'ladi.",
+        "items": [
+          { "base": "play", "baseUz": "o'ynamoq", "derived": "playing", "derivedUz": "o'ynash", "note": "I like playing" },
+          { "base": "read", "baseUz": "o'qimoq", "derived": "reading", "derivedUz": "o'qish", "note": "I like reading" },
+          { "base": "dance", "baseUz": "raqsga tushmoq", "derived": "dancing", "derivedUz": "raqs", "note": "-e tushadi" },
+          { "base": "ski", "baseUz": "chang'i uchmoq", "derived": "skiing", "derivedUz": "chang'i sporti", "note": "ikkita i" },
+          { "base": "swim", "baseUz": "suzmoq", "derived": "swimming", "derivedUz": "suzish", "note": "m ikkilanadi" }
+        ]
+      },
+      {
+        "ruleUz": "Mamlakat → millat (bu betdagilar)",
+        "explanationUz": "E'lonlardagi shaharlar va mamlakatlar.",
+        "items": [
+          { "base": "France", "baseUz": "Fransiya", "derived": "French", "derivedUz": "fransuz", "note": "Paris" },
+          { "base": "Russia", "baseUz": "Rossiya", "derived": "Russian", "derivedUz": "rus", "note": "Moscow" },
+          { "base": "Italy", "baseUz": "Italiya", "derived": "Italian", "derivedUz": "italyan", "note": "Florence" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Unit 2 ning o'zagi — tashqi ko'rinish va qobiliyat.",
+    "patterns": [
+      {
+        "formula": "EGA + have/has got + SOCH TA'RIFI + hair",
+        "exampleEn": "I have got short straight dark hair.",
+        "exampleUz": "Mening kalta, tekis, qora sochim bor.",
+        "explanationUz": "Tartib QAT'IY: uzunlik → shakl → rang → hair.\n'long straight fair hair' to'g'ri; 'fair long straight hair' XATO.\nI/you/we/they → have got · he/she/it → HAS got."
+      },
+      {
+        "formula": "EGA + have/has got + RANG + eyes",
+        "exampleEn": "I have got brown eyes.",
+        "exampleUz": "Mening ko'zim jigarrang.",
+        "explanationUz": "'eyes' doim KO'PLIK (ikkita ko'z). 'I have got a brown eye' — noto'g'ri."
+      },
+      {
+        "formula": "EGA + be + BO'Y/GAVDA sifati",
+        "exampleEn": "I'm quite tall and slim. / Mario is tall and well-built.",
+        "exampleUz": "Men ancha baland va nozikman. / Mario baland va baquvvat.",
+        "explanationUz": "Bo'y va gavda uchun 'be' ishlatiladi, 'have got' emas."
+      },
+      {
+        "formula": "EGA + can + FE'L (asos shakli)",
+        "exampleEn": "I can play tennis very well. / She can play the piano.",
+        "exampleUz": "Men tennisni juda yaxshi o'ynay olaman.",
+        "explanationUz": "'can' dan keyin fe'l O'ZGARMAYDI: 'he can play' (plays emas), 'to' ham qo'yilmaydi."
+      },
+      {
+        "formula": "EGA + like/love + FE'L-ing",
+        "exampleEn": "I love playing computer games. / I like reading.",
+        "exampleUz": "Men kompyuter o'yinlarini o'ynashni yaxshi ko'raman.",
+        "explanationUz": "'like/love' dan keyin fe'l -ING oladi. 'I like read' — XATO."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "curly", "uz": "jingalak" },
+    { "en": "wavy", "uz": "to'lqinsimon" },
+    { "en": "straight", "uz": "tekis, to'g'ri" },
+    { "en": "fair", "uz": "oq-sariq (soch)" },
+    { "en": "dark", "uz": "qora, to'q" },
+    { "en": "grey", "uz": "kulrang" },
+    { "en": "moustache", "uz": "mo'ylov" },
+    { "en": "beard", "uz": "soqol" },
+    { "en": "old", "uz": "keksa" },
+    { "en": "young", "uz": "yosh" },
+    { "en": "middle-aged", "uz": "o'rta yoshli" },
+    { "en": "tall", "uz": "baland bo'yli" },
+    { "en": "short", "uz": "past bo'yli" },
+    { "en": "slim", "uz": "nozik" },
+    { "en": "well-built", "uz": "baquvvat" },
+    { "en": "fat", "uz": "semiz" },
+    { "en": "quite", "uz": "ancha, birmuncha" },
+    { "en": "advertisement", "uz": "e'lon" },
+    { "en": "pen-friend", "uz": "xat orqali do'st" },
+    { "en": "to live", "uz": "yashamoq" },
+    { "en": "computer game", "uz": "kompyuter o'yini" },
+    { "en": "to ski", "uz": "chang'i uchmoq" },
+    { "en": "piano", "uz": "pianino" },
+    { "en": "Florence", "uz": "Florensiya" }
+  ]
+}
