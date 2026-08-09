@@ -1,0 +1,234 @@
+{
+  "book": "coursebook",
+  "pdfPage": 12,
+  "bookPage": 10,
+  "unit": 1,
+  "unitTitle": "Hi!",
+  "module": 1,
+  "pairsWith": {
+    "grammar": [4, 7],
+    "workbook": [6, 7],
+    "noteUz": "a/an qoidasi grammar 4-betdagi nazariya bilan bir xil, mashqlari esa grammar 7-bet Ex.11 ga mos keladi."
+  },
+  "sections": [
+    {
+      "kind": "grammar",
+      "title": "Grammar: the indefinite article a/an",
+      "titleUz": "Grammatika: noaniq artikl a/an",
+      "rule": {
+        "titleUz": "a / an",
+        "explanationUz": "a/an — 'bitta, qandaydir' ma'nosini beradi. O'zbek tilida bunday so'z YO'Q, shuning uchun uni tushirib qoldirish eng ko'p uchraydigan xato: 'He is teacher' — XATO, 'He is A teacher' — to'g'ri.",
+        "rules": [
+          { "enRule": "We use a/an before singular nouns.", "uzRule": "Faqat BIRLIKDAGI ot oldidan.", "examples": ["a dancer", "an actor"] },
+          { "enRule": "We use a before consonant sounds (b, c, d, f, etc).", "uzRule": "UNDOSH tovush oldidan — a.", "examples": ["He's a teacher."] },
+          { "enRule": "We use an before vowel sounds (a, e, i, o, u).", "uzRule": "UNLI tovush oldidan — an.", "examples": ["She's an actress."] }
+        ],
+        "warningUz": "Qoida HARFGA emas, TOVUSHGA bog'liq:\n• an hour — 'h' o'qilmaydi → unli tovush → an\n• a university — 'yu' deb o'qiladi → undosh tovush → a\n• an engineer — 'e' unli → an",
+        "pluralNoteUz": "Ko'plikda a/an YO'Q: 'They are doctors' (a doctors emas)."
+      },
+      "exercises": [
+        {
+          "ref": "15",
+          "type": "article_and_label",
+          "instructionEn": "Add a or an to the words in the list, then label the pictures. Finally, in pairs, ask and answer questions, as in the example.",
+          "instructionUz": "Ro'yxatdagi so'zlarga a yoki an qo'shing, so'ng rasmlarni belgilang. Nihoyat, juftlikda namunadagidek savol-javob qiling.",
+          "explanationUz": "Ikki bosqichli mashq:\n1) Har kasbga a yoki an tanlang (birinchi TOVUSHGA qarang).\n2) Rasmdagi odamning ismi va yoshi berilgan — ular haqida savol-javob tuzing.\nDiqqat: artist, astronaut, engineer — unli tovush bilan boshlanadi → an.",
+          "wordList": ["artist", "astronaut", "doctor", "engineer", "pilot", "postman", "vet", "waiter"],
+          "articleAnswers": [
+            { "word": "artist", "article": "an", "uz": "rassom", "whyUz": "a — unli" },
+            { "word": "astronaut", "article": "an", "uz": "kosmonavt", "whyUz": "a — unli" },
+            { "word": "doctor", "article": "a", "uz": "shifokor", "whyUz": "d — undosh" },
+            { "word": "engineer", "article": "an", "uz": "muhandis", "whyUz": "e — unli" },
+            { "word": "pilot", "article": "a", "uz": "uchuvchi", "whyUz": "p — undosh" },
+            { "word": "postman", "article": "a", "uz": "pochtachi", "whyUz": "p — undosh" },
+            { "word": "vet", "article": "a", "uz": "veterinar", "whyUz": "v — undosh" },
+            { "word": "waiter", "article": "a", "uz": "ofitsiant", "whyUz": "w — undosh" }
+          ],
+          "example": [
+            { "speaker": "SA", "en": "What's his name?", "uz": "Uning ismi nima?" },
+            { "speaker": "SB", "en": "Steven.", "uz": "Steven." },
+            { "speaker": "SA", "en": "How old is he?", "uz": "U necha yoshda?" },
+            { "speaker": "SB", "en": "Twenty-seven.", "uz": "Yigirma yetti." },
+            { "speaker": "SA", "en": "What's his job?", "uz": "Uning kasbi nima?" },
+            { "speaker": "SB", "en": "He's a waiter.", "uz": "U ofitsiant." }
+          ],
+          "items": [
+            { "n": 1, "name": "Steven", "age": 27, "answer": "a waiter", "answerUz": "ofitsiant", "given": true },
+            { "n": 2, "name": "Bill", "age": 45, "answer": "an astronaut", "answerUz": "kosmonavt" },
+            { "n": 3, "name": "Mark", "age": 38, "answer": "a pilot", "answerUz": "uchuvchi" },
+            { "n": 4, "name": "Helen", "age": 42, "answer": "a doctor", "answerUz": "shifokor", "noteUz": "Helen — ayol, shuning uchun savolda 'her': What's HER job?" },
+            { "n": 5, "name": "Ted", "age": 39, "answer": "a vet", "answerUz": "veterinar" },
+            { "n": 6, "name": "Paul", "age": 60, "answer": "an artist", "answerUz": "rassom" },
+            { "n": 7, "name": "Tim", "age": 29, "answer": "an engineer", "answerUz": "muhandis" },
+            { "n": 8, "name": "John", "age": 30, "answer": "a postman", "answerUz": "pochtachi" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "communication",
+      "title": "Communication: Introducing People",
+      "titleUz": "Muloqot: Tanishtirish",
+      "exercises": [
+        {
+          "ref": "16",
+          "type": "dialogue_gap_fill",
+          "hasAudio": true,
+          "instructionEn": "Read the dialogue, then listen and fill in the missing words. In pairs, read out the dialogue.",
+          "instructionUz": "Dialogni o'qing, so'ng eshitib yetishmayotgan so'zlarni to'ldiring. Juftlikda o'qib chiqing.",
+          "explanationUz": "Bu — bazmda tanishuv suhbati. Barcha yetishmayotgan so'zlar SO'ROQ SO'ZLARI:\n• What's your name? — ism\n• Where are you from? — joy\n• What's your job? — kasb\n• How old are you? — yosh\nShu 4 ta savol tanishuvning asosi.",
+          "speakers": ["A (Alison)", "S (Steve)"],
+          "lines": [
+            { "who": "A", "en": "Nice party, isn't it?", "uz": "Bazm zo'r-a?" },
+            { "who": "S", "en": "Yes, it's great.", "uz": "Ha, ajoyib." },
+            { "who": "A", "en": "I'm Alison, by the way. 1) ___ your name?", "uz": "Aytgancha, men Alison. Ismingiz nima?", "gap": 1, "answer": "What's" },
+            { "who": "S", "en": "I'm Steve, Steve Blair. Nice to meet you.", "uz": "Men Steve, Steve Blair. Tanishganimdan xursandman." },
+            { "who": "A", "en": "Nice to meet you, too. 2) ___ are you from?", "uz": "Men ham. Qayerdansiz?", "gap": 2, "answer": "Where" },
+            { "who": "S", "en": "I'm from Scotland.", "uz": "Men Shotlandiyadanman." },
+            { "who": "A", "en": "Where exactly?", "uz": "Aniqrog'i qayerdan?" },
+            { "who": "S", "en": "Glasgow. What about you?", "uz": "Glazgo. Siz-chi?" },
+            { "who": "A", "en": "I'm from Birmingham. 3) ___ your job?", "uz": "Men Birmingemdanman. Kasbingiz nima?", "gap": 3, "answer": "What's" },
+            { "who": "S", "en": "I'm a doctor. And you?", "uz": "Men shifokorman. Siz-chi?" },
+            { "who": "A", "en": "I'm a student.", "uz": "Men talabaman." },
+            { "who": "S", "en": "Really? 4) ___ old are you?", "uz": "Rostdanmi? Necha yoshdasiz?", "gap": 4, "answer": "How" },
+            { "who": "A", "en": "I'm twenty-one. And you?", "uz": "Yigirma bir. Siz-chi?" },
+            { "who": "S", "en": "Well, I'm thirty-five.", "uz": "Men o'ttiz besh yoshdaman." },
+            { "who": "A", "en": "Thirty-five! Are you really?", "uz": "O'ttiz besh! Rostdanmi?" },
+            { "who": "S", "en": "Yeah!!!", "uz": "Ha!!!" }
+          ],
+          "usefulPhrases": [
+            { "en": "by the way", "uz": "aytgancha" },
+            { "en": "Nice to meet you.", "uz": "Tanishganimdan xursandman." },
+            { "en": "Nice to meet you, too.", "uz": "Men ham." },
+            { "en": "Where exactly?", "uz": "Aniqrog'i qayerdan?" },
+            { "en": "What about you?", "uz": "Siz-chi?" },
+            { "en": "And you?", "uz": "Siz-chi?" },
+            { "en": "Really?", "uz": "Rostdanmi?" }
+          ]
+        },
+        {
+          "ref": "17a",
+          "type": "listen_act_out",
+          "hasAudio": true,
+          "instructionEn": "Listen to the dialogue and repeat it. In pairs, use your names to act out similar dialogues.",
+          "instructionUz": "Dialogni eshiting va takrorlang. Juftlikda o'z ismingiz bilan shunga o'xshash dialog tuzing.",
+          "explanationUz": "Qo'shni bilan tanishish dialogi. Yangi iboralar:\n• Excuse me — kechirasiz (murojaat qilishda)\n• Are you ...? — siz ...misiz? (ismni aniqlash)\n• I'm your new neighbour — men sizning yangi qo'shningizman\nIsm ikki marta aytiladi: 'Tony, Tony Brown' — avval qisqa, keyin to'liq.",
+          "lines": [
+            { "who": "Tony", "en": "Excuse me. Are you Rita Brian?", "uz": "Kechirasiz. Siz Rita Brianmisiz?" },
+            { "who": "Rita", "en": "Yes, I am.", "uz": "Ha, menman." },
+            { "who": "Tony", "en": "Hi. I'm your new neighbour, Tony, Tony Brown.", "uz": "Salom. Men sizning yangi qo'shningizman, Tony, Tony Brown." },
+            { "who": "Rita", "en": "Oh, hello, Tony. Nice to meet you.", "uz": "Oh, salom, Tony. Tanishganimdan xursandman." },
+            { "who": "Tony", "en": "Nice to meet you, too.", "uz": "Men ham." }
+          ]
+        },
+        {
+          "ref": "17b",
+          "type": "order_dialogue",
+          "hasAudio": true,
+          "instructionEn": "Listen to this dialogue and put it into the correct order.",
+          "instructionUz": "Bu dialogni eshiting va to'g'ri tartibda joylashtiring.",
+          "explanationUz": "Uchinchi shaxsni tanishtirish qolipi:\n'X, this is Y.' — X ga Y ni tanishtiryapsiz.\nJavob: 'Pleased to meet you.' → 'Pleased to meet you, too.'\nMantiq: avval salomlashish, keyin tanishtirish, keyin ikki tomonlama javob.",
+          "items": [
+            { "shuffledPosition": 1, "who": "Jane", "en": "Hello, Patrick. Patrick, this is Lucy. She's my friend from America.", "uz": "Salom, Patrick. Patrick, bu Lucy. U mening Amerikadan kelgan do'stim.", "correctOrder": 1 },
+            { "shuffledPosition": 2, "who": "Lucy", "en": "Pleased to meet you, too.", "uz": "Men ham tanishganimdan xursandman.", "correctOrder": 4 },
+            { "shuffledPosition": 3, "who": "Patrick", "en": "Hi, Jane.", "uz": "Salom, Jane.", "correctOrder": 2 },
+            { "shuffledPosition": 4, "who": "Patrick", "en": "Pleased to meet you, Lucy.", "uz": "Tanishganimdan xursandman, Lucy.", "correctOrder": 3 }
+          ],
+          "correctSequenceUz": "1) Jane salomlashadi va Lucy'ni tanishtiradi → 2) Patrick Jane'ga javob beradi → 3) Patrick Lucy bilan tanishadi → 4) Lucy javob qaytaradi."
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Ex. 15 dagi 8 ta kasb — deyarli hammasi qo'shimcha bilan yasalgan. Artikl tanlashda birinchi tovushga qarang.",
+    "groups": [
+      {
+        "ruleUz": "-er / -or → kasb egasi",
+        "explanationUz": "Ish yoki joydan uni bajaruvchi yasaladi.",
+        "items": [
+          { "base": "wait", "baseUz": "kutmoq, xizmat qilmoq", "derived": "waiter", "derivedUz": "ofitsiant", "note": "a waiter (w — undosh)" },
+          { "base": "doct-", "baseUz": "davolamoq (lot.)", "derived": "doctor", "derivedUz": "shifokor", "note": "a doctor" },
+          { "base": "engine", "baseUz": "dvigatel, mexanizm", "derived": "engineer", "derivedUz": "muhandis", "note": "an engineer (e — unli)" }
+        ]
+      },
+      {
+        "ruleUz": "-ist / -naut → soha egasi",
+        "explanationUz": "San'at va fan sohalarida. Ikkalasi ham unli bilan boshlanadi → an.",
+        "items": [
+          { "base": "art", "baseUz": "san'at", "derived": "artist", "derivedUz": "rassom", "note": "an artist" },
+          { "base": "astro- (yulduz) + naut (dengizchi)", "baseUz": "yunoncha o'zaklar", "derived": "astronaut", "derivedUz": "kosmonavt", "note": "an astronaut" }
+        ]
+      },
+      {
+        "ruleUz": "-man → kasb",
+        "explanationUz": "Ko'pligi -men bo'ladi.",
+        "items": [
+          { "base": "post", "baseUz": "pochta", "derived": "postman", "derivedUz": "pochtachi", "note": "ko'pligi: postmen" }
+        ]
+      },
+      {
+        "ruleUz": "Qisqartirilgan so'zlar",
+        "explanationUz": "Ba'zi so'zlar uzun shaklidan qisqartirilgan.",
+        "items": [
+          { "base": "veterinary surgeon", "baseUz": "veterinar shifokor", "derived": "vet", "derivedUz": "veterinar", "note": "a vet" },
+          { "base": "neighbourhood", "baseUz": "mahalla", "derived": "neighbour", "derivedUz": "qo'shni", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Tanishuvning 5 ta asosiy qolipi — bularni yodlab olsangiz, har qanday tanishuvni olib chiqasiz.",
+    "patterns": [
+      {
+        "formula": "I'm + ISM . What's your name?",
+        "exampleEn": "I'm Alison, by the way. What's your name?",
+        "exampleUz": "Aytgancha, men Alison. Ismingiz nima?",
+        "explanationUz": "Ism oldidan a/an QO'YILMAYDI. 'by the way' — mavzuni o'zgartirganda ishlatiladi."
+      },
+      {
+        "formula": "Where are you from? → I'm from + JOY.",
+        "exampleEn": "Where are you from? — I'm from Scotland.",
+        "exampleUz": "Qayerdansiz? — Men Shotlandiyadanman.",
+        "explanationUz": "'from' savolda oxirida, javobda esa joydan oldin keladi."
+      },
+      {
+        "formula": "What's your job? → I'm + a/an + KASB.",
+        "exampleEn": "What's your job? — I'm a doctor.",
+        "exampleUz": "Kasbingiz nima? — Men shifokorman.",
+        "explanationUz": "Kasb oldidan a/an SHART."
+      },
+      {
+        "formula": "X, this is Y.",
+        "exampleEn": "Patrick, this is Lucy. She's my friend from America.",
+        "exampleUz": "Patrick, bu Lucy. U mening Amerikadan kelgan do'stim.",
+        "explanationUz": "Uchinchi shaxsni tanishtirish qolipi. 'This is' — odam uchun ham ishlatiladi (bu yerda 'bu kishi' ma'nosida)."
+      },
+      {
+        "formula": "Nice / Pleased to meet you. → ... , too.",
+        "exampleEn": "Pleased to meet you, Lucy. — Pleased to meet you, too.",
+        "exampleUz": "Tanishganimdan xursandman, Lucy. — Men ham.",
+        "explanationUz": "Javobda 'too' qo'shiladi — 'men ham' ma'nosida. 'Nice to meet you' va 'Pleased to meet you' bir xil ma'no."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "artist", "uz": "rassom" },
+    { "en": "astronaut", "uz": "kosmonavt" },
+    { "en": "engineer", "uz": "muhandis" },
+    { "en": "waiter", "uz": "ofitsiant" },
+    { "en": "actress", "uz": "aktrisa" },
+    { "en": "party", "uz": "bazm, ziyofat" },
+    { "en": "great", "uz": "zo'r, ajoyib" },
+    { "en": "by the way", "uz": "aytgancha" },
+    { "en": "exactly", "uz": "aniq, aniqrog'i" },
+    { "en": "Glasgow", "uz": "Glazgo" },
+    { "en": "Birmingham", "uz": "Birmingem" },
+    { "en": "Excuse me", "uz": "Kechirasiz" },
+    { "en": "neighbour", "uz": "qo'shni" },
+    { "en": "Nice to meet you", "uz": "Tanishganimdan xursandman" },
+    { "en": "Pleased to meet you", "uz": "Tanishganimdan xursandman" },
+    { "en": "Really?", "uz": "Rostdanmi?" }
+  ]
+}

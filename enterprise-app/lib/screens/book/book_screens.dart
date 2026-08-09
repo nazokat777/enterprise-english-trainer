@@ -1,0 +1,616 @@
+import 'package:flutter/material.dart';
+
+import '../../book_content.dart';
+import '../../main.dart';
+import '../../theme.dart';
+import '../../widgets/entrance.dart';
+import '../../widgets/pressable3d.dart';
+import 'exercise_player.dart';
+import 'reference_screens.dart';
+
+/// Bo'lim turiga mos rang va belgi.
+({IconData icon, Color color}) sectionStyle(String kind) => switch (kind) {
+      'lead_in' => (icon: Icons.flag_rounded, color: AppColors.brandPurple),
+      'vocabulary' => (icon: Icons.menu_book_rounded, color: AppColors.brandPurple),
+      'reading' => (icon: Icons.article_rounded, color: AppColors.actionBlue),
+      'grammar_theory' => (icon: Icons.rule_rounded, color: AppColors.actionBlue),
+      'grammar' => (icon: Icons.edit_note_rounded, color: AppColors.actionBlue),
+      'grammar_exercise' => (icon: Icons.fact_check_rounded, color: AppColors.actionBlue),
+      'pronunciation' => (icon: Icons.record_voice_over_rounded, color: AppColors.homework),
+      'listening' => (icon: Icons.headphones_rounded, color: AppColors.homework),
+      'speaking' => (icon: Icons.mic_rounded, color: AppColors.success),
+      'communication' => (icon: Icons.forum_rounded, color: AppColors.coin),
+      'game' => (icon: Icons.sports_esports_rounded, color: AppColors.success),
+      'writing' => (icon: Icons.draw_rounded, color: AppColors.brandPurple),
+      'words_of_wisdom' => (icon: Icons.auto_awesome_rounded, color: AppColors.coin),
+      _ => (icon: Icons.circle_outlined, color: AppColors.lightMuted),
+    };
+
+// ═══════════════════ Unit'lar ro'yxati ═══════════════════
+class BookUnitsScreen extends StatelessWidget {
+  const BookUnitsScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final units = book.units;
+    if (units.isEmpty) {
+      return const _Empty(
+        icon: Icons.menu_book_rounded,
+        title: 'Kitob kontenti hali yuklanmagan',
+        subtitle: 'Sahifalar qayta ishlangach shu yerda paydo bo\'ladi.',
+      );
+    }
+    return AnimatedBuilder(
+      animation: progress,
+      builder: (context, _) => ListView(
+        padding: const EdgeInsets.fromLTRB(20, 8, 20, 40),
+        children: [
+          EntranceFade(
+            child: Text('Enterprise 1 — Beginner',
+                style: AppTheme.heading(context)),
+          ),
+          const SizedBox(height: 4),
+          EntranceFade(
+            child: Text(
+                '${units.length} ta dars tayyor · har biri uchala kitobdan yig\'ilgan',
+                style: const TextStyle(
+                    fontSize: 13, color: AppColors.lightMuted)),
+          ),
+          const SizedBox(height: 20),
+          for (var i = 0; i < units.length; i++)
+            EntranceFade(
+              delay: Duration(milliseconds: 60 * i),
+              child: _UnitCard(brief: units[i]),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _UnitCard extends StatelessWidget {
+  final UnitBrief brief;
+  const _UnitCard({required this.brief});
+
+  @override
+  Widget build(BuildContext context) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Material(
+        color: Theme.of(context).colorScheme.surface,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadius.lg),
+          onTap: () async {
+            final u = await book.load(brief.unit);
+            if (u == null || !context.mounted) return;
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => BookUnitScreen(unit: u)),
+            );
+          },
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadius.lg),
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.black.withValues(alpha: dark ? 0.25 : 0.04),
+                    blurRadius: 10),
+              ],
+            ),
+            child: Row(
+              children: [
+                Container(
+                  width: 52,
+                  height: 52,
+                  decoration: BoxDecoration(
+                    color: AppColors.brandPurple.withValues(alpha: 0.12),
+                    borderRadius: BorderRadius.circular(AppRadius.md),
+                  ),
+                  child: Center(
+                    child: Text('${brief.unit}',
+                        style: const TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w800,
+                            color: AppColors.brandPurple)),
+                  ),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Unit ${brief.unit} — ${brief.title}',
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w800, fontSize: 16)),
+                      const SizedBox(height: 3),
+                      Text(
+                          '${brief.sections} bo\'lim · ${brief.exercises} mashq · ${brief.tasks} band',
+                          style: const TextStyle(
+                              fontSize: 12.5, color: AppColors.lightMuted)),
+                    ],
+                  ),
+                ),
+                const Icon(Icons.chevron_right_rounded,
+                    color: AppColors.brandPurple),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ═══════════════════ Bitta unit ═══════════════════
+class BookUnitScreen extends StatelessWidget {
+  final BookUnit unit;
+  const BookUnitScreen({super.key, required this.unit});
+
+  @override
+  Widget build(BuildContext context) {
+    final groups = unit.groupedSections();
+    return Scaffold(
+      appBar: AppBar(title: Text('Unit ${unit.unit} — ${unit.title}')),
+      body: AnimatedBuilder(
+        animation: progress,
+        builder: (context, _) => ListView(
+          padding: const EdgeInsets.fromLTRB(20, 8, 20, 40),
+          children: [
+            _summary(context),
+            const SizedBox(height: 20),
+            const _Label('Bo\'limlar'),
+            const SizedBox(height: 10),
+            for (var i = 0; i < groups.length; i++)
+              EntranceFade(
+                delay: Duration(milliseconds: 40 * i),
+                child: _GroupCard(group: groups[i]),
+              ),
+            const SizedBox(height: 24),
+            const _Label('Ma\'lumotnoma'),
+            const SizedBox(height: 10),
+            _refTile(
+              context,
+              icon: Icons.account_tree_rounded,
+              color: AppColors.success,
+              title: 'So\'z yasalishi',
+              subtitle:
+                  '${unit.wordFormation.fold(0, (s, g) => s + g.items.length)} ta qoida',
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => WordFormationScreen(unit: unit))),
+            ),
+            _refTile(
+              context,
+              icon: Icons.short_text_rounded,
+              color: AppColors.actionBlue,
+              title: 'Gap qoliplari',
+              subtitle: '${unit.sentencePatterns.length} ta qolip',
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => SentencePatternsScreen(unit: unit))),
+            ),
+            _refTile(
+              context,
+              icon: Icons.style_rounded,
+              color: AppColors.brandPurple,
+              title: 'Unit lug\'ati',
+              subtitle: '${unit.vocabulary.length} ta so\'z — yodlash mashqi',
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => UnitVocabularyScreen(unit: unit))),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _summary(BuildContext context) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.brandPurple.withValues(alpha: dark ? 0.18 : 0.08),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+      ),
+      child: Row(
+        children: [
+          _stat('${unit.sections.length}', 'bo\'lim'),
+          _stat('${unit.exerciseCount}', 'mashq'),
+          _stat('${unit.answerableCount}', 'band'),
+          _stat('${unit.vocabulary.length}', 'so\'z'),
+        ],
+      ),
+    );
+  }
+
+  Widget _stat(String v, String label) => Expanded(
+        child: Column(
+          children: [
+            Text(v,
+                style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.brandPurple)),
+            Text(label,
+                style: const TextStyle(
+                    fontSize: 11.5, color: AppColors.lightMuted)),
+          ],
+        ),
+      );
+
+  Widget _refTile(
+    BuildContext context, {
+    required IconData icon,
+    required Color color,
+    required String title,
+    required String subtitle,
+    required VoidCallback onTap,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Material(
+        color: Theme.of(context).colorScheme.surface,
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadius.md),
+          onTap: onTap,
+          child: Padding(
+            padding: const EdgeInsets.all(14),
+            child: Row(
+              children: [
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    color: color.withValues(alpha: 0.12),
+                    borderRadius: BorderRadius.circular(AppRadius.sm),
+                  ),
+                  child: Icon(icon, color: color, size: 21),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(title,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w800, fontSize: 14.5)),
+                      Text(subtitle,
+                          style: const TextStyle(
+                              fontSize: 12, color: AppColors.lightMuted)),
+                    ],
+                  ),
+                ),
+                const Icon(Icons.chevron_right_rounded,
+                    color: AppColors.lightMuted),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _GroupCard extends StatelessWidget {
+  final SectionGroup group;
+  const _GroupCard({required this.group});
+
+  @override
+  Widget build(BuildContext context) {
+    final st = sectionStyle(group.kind);
+    final books = group.sections.map((s) => s.book).toSet().length;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Material(
+        color: Theme.of(context).colorScheme.surface,
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadius.md),
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (_) => BookGroupScreen(group: group)),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(14),
+            child: Row(
+              children: [
+                Container(
+                  width: 42,
+                  height: 42,
+                  decoration: BoxDecoration(
+                    color: st.color.withValues(alpha: 0.12),
+                    borderRadius: BorderRadius.circular(AppRadius.sm),
+                  ),
+                  child: Icon(st.icon, color: st.color, size: 21),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(group.titleUz,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w800, fontSize: 15)),
+                      const SizedBox(height: 2),
+                      Text(
+                        [
+                          if (group.exerciseCount > 0)
+                            '${group.exerciseCount} mashq',
+                          if (group.hasRule) 'qoida',
+                          if (books > 1) '$books kitobdan',
+                        ].join(' · '),
+                        style: const TextStyle(
+                            fontSize: 12, color: AppColors.lightMuted),
+                      ),
+                    ],
+                  ),
+                ),
+                const Icon(Icons.chevron_right_rounded,
+                    color: AppColors.lightMuted),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ═══════════════════ Bo'lim guruhi ═══════════════════
+class BookGroupScreen extends StatelessWidget {
+  final SectionGroup group;
+  const BookGroupScreen({super.key, required this.group});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text(group.titleUz)),
+      body: AnimatedBuilder(
+        animation: progress,
+        builder: (context, _) => ListView(
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
+          children: [
+            for (final s in group.sections) ..._section(context, s),
+          ],
+        ),
+      ),
+    );
+  }
+
+  List<Widget> _section(BuildContext context, BookSection s) {
+    return [
+      Padding(
+        padding: const EdgeInsets.only(bottom: 8, top: 4),
+        child: Row(
+          children: [
+            Expanded(
+              child: Text(s.title.isEmpty ? s.titleUz : s.title,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.w800, fontSize: 15)),
+            ),
+            Container(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
+              decoration: BoxDecoration(
+                color: AppColors.brandPurple.withValues(alpha: 0.10),
+                borderRadius: BorderRadius.circular(AppRadius.pill),
+              ),
+              child: Text(s.sourceLabel,
+                  style: const TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.brandPurple)),
+            ),
+          ],
+        ),
+      ),
+      if (s.hasRule)
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10),
+          child: Pressable3D(
+            color: AppColors.actionBlue,
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => RuleScreen(section: s)),
+            ),
+            child: const Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.rule_rounded, color: Colors.white, size: 20),
+                SizedBox(width: 9),
+                Text('Qoidani o\'qish',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                        fontSize: 14.5)),
+              ],
+            ),
+          ),
+        ),
+      for (final e in s.exercises) _ExerciseTile(exercise: e, section: s),
+      const SizedBox(height: 14),
+    ];
+  }
+}
+
+class _ExerciseTile extends StatelessWidget {
+  final BookExercise exercise;
+  final BookSection section;
+  const _ExerciseTile({required this.exercise, required this.section});
+
+  ({IconData icon, Color color, String label}) get _kindInfo =>
+      switch (exercise.kind) {
+        ExKind.choice => (
+            icon: Icons.checklist_rounded,
+            color: AppColors.brandPurple,
+            label: 'Tanlash'
+          ),
+        ExKind.text => (
+            icon: Icons.extension_rounded,
+            color: AppColors.actionBlue,
+            label: 'Yig\'ish'
+          ),
+        ExKind.match => (
+            icon: Icons.compare_arrows_rounded,
+            color: AppColors.success,
+            label: 'Moslash'
+          ),
+        ExKind.study => (
+            icon: Icons.auto_stories_rounded,
+            color: AppColors.coin,
+            label: 'O\'qish'
+          ),
+      };
+
+  @override
+  Widget build(BuildContext context) {
+    final info = _kindInfo;
+    final done = progress
+        .isDone('ex::${exercise.book}::${exercise.bookPage}::${exercise.ref}');
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 9),
+      child: Material(
+        color: Theme.of(context).colorScheme.surface,
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadius.md),
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => ExercisePlayer(
+                exercise: exercise,
+                sectionTitle: section.titleUz,
+              ),
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(13),
+            child: Row(
+              children: [
+                Container(
+                  width: 38,
+                  height: 38,
+                  decoration: BoxDecoration(
+                    color: (done ? AppColors.success : info.color)
+                        .withValues(alpha: 0.12),
+                    borderRadius: BorderRadius.circular(AppRadius.sm),
+                  ),
+                  child: Icon(done ? Icons.check_rounded : info.icon,
+                      color: done ? AppColors.success : info.color, size: 20),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text(exercise.title,
+                              style: const TextStyle(
+                                  fontWeight: FontWeight.w800, fontSize: 14)),
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 7, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: info.color.withValues(alpha: 0.12),
+                              borderRadius:
+                                  BorderRadius.circular(AppRadius.pill),
+                            ),
+                            child: Text(info.label,
+                                style: TextStyle(
+                                    fontSize: 10.5,
+                                    fontWeight: FontWeight.w700,
+                                    color: info.color)),
+                          ),
+                          if (exercise.audio) ...[
+                            const SizedBox(width: 6),
+                            const Icon(Icons.headphones_rounded,
+                                size: 14, color: AppColors.homework),
+                          ],
+                        ],
+                      ),
+                      const SizedBox(height: 3),
+                      Text(
+                        exercise.instructionUz.isEmpty
+                            ? '${exercise.tasks.length} band'
+                            : exercise.instructionUz,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            fontSize: 12,
+                            color: AppColors.lightMuted,
+                            height: 1.35),
+                      ),
+                    ],
+                  ),
+                ),
+                const Icon(Icons.play_arrow_rounded,
+                    color: AppColors.lightMuted),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ═══════════════════ Umumiy ═══════════════════
+class _Label extends StatelessWidget {
+  final String text;
+  const _Label(this.text);
+
+  @override
+  Widget build(BuildContext context) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return Text(text,
+        style: TextStyle(
+            fontWeight: FontWeight.w800,
+            fontSize: 16,
+            color: dark ? AppColors.darkHeading : AppColors.lightHeading));
+  }
+}
+
+class _Empty extends StatelessWidget {
+  final IconData icon;
+  final String title, subtitle;
+  const _Empty(
+      {required this.icon, required this.title, required this.subtitle});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 56, color: AppColors.lightMuted),
+            const SizedBox(height: 14),
+            Text(title,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    fontWeight: FontWeight.w800, fontSize: 16)),
+            const SizedBox(height: 6),
+            Text(subtitle,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    fontSize: 13, color: AppColors.lightMuted)),
+          ],
+        ),
+      ),
+    );
+  }
+}

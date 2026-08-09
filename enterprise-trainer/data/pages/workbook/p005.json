@@ -1,0 +1,203 @@
+{
+  "book": "workbook",
+  "pdfPage": 5,
+  "bookPage": 4,
+  "unit": 1,
+  "unitTitle": "Hi!",
+  "module": 1,
+  "pairsWith": {
+    "coursebook": [7, 10],
+    "grammar": [7],
+    "noteUz": "Lug'at mashqlari: kasblar coursebook 10-bet Ex.15 ga, sonlar coursebook 7-bet Ex.5-7 va grammar 7-bet Ex.12-13 ga, millatlar coursebook 7-bet Ex.8 ga mos keladi."
+  },
+  "scanNote": {
+    "uz": "DIQQAT: skanerlangan nusxada oldingi o'quvchining qo'lyozma javoblari bor va ularning bir nechtasi XATO. Quyida TO'G'RI javoblar berilgan; uchragan xatolar 'commonMistake' sifatida belgilangan — ular aynan o'zbek o'quvchilari ko'p qiladigan xatolar."
+  },
+  "sections": [
+    {
+      "kind": "vocabulary",
+      "title": "Vocabulary",
+      "titleUz": "Lug'at",
+      "exercises": [
+        {
+          "ref": "1",
+          "type": "picture_guess_job",
+          "instructionEn": "Look at the objects and guess the people's jobs.",
+          "instructionUz": "Buyumlarga qarab odamlarning kasbini toping.",
+          "explanationUz": "Har buyum bitta kasbga ishora qiladi. Gap qolipi allaqachon berilgan — siz faqat kasbni qo'yasiz.\nDiqqat: 'He is an ...' deb boshlansa, kasb UNLI tovush bilan boshlanadi (artist, astronaut, engineer). 'He is a ...' bo'lsa — undosh.\nYa'ni artikl sizga javob haqida ishora beradi!",
+          "items": [
+            { "n": 1, "object": "ranglar palitrasi va mo'yqalamlar", "objectEn": "a palette and brushes", "sentence": "He is an ___ .", "answer": "artist", "answerUz": "rassom", "given": true },
+            { "n": 2, "object": "traktor", "objectEn": "a tractor", "sentence": "He is a ___ .", "answer": "farmer", "answerUz": "dehqon, fermer", "commonMistake": { "wrong": "driver", "whyUz": "Skanerdagi qo'lyozmada 'driver' deb yozilgan. Traktor — dehqonchilik texnikasi, shuning uchun 'farmer' kutiladi. 'driver' (haydovchi) mashina/avtobus uchun ishlatiladi." } },
+            { "n": 3, "object": "stetoskop", "objectEn": "a stethoscope", "sentence": "She is a ___ .", "answer": "doctor", "answerUz": "shifokor" },
+            { "n": 4, "object": "samolyot", "objectEn": "a plane", "sentence": "He is a ___ .", "answer": "pilot", "answerUz": "uchuvchi" },
+            { "n": 5, "object": "kosmik kema", "objectEn": "a space shuttle", "sentence": "She is an ___ .", "answer": "astronaut", "answerUz": "kosmonavt", "noteUz": "'an' berilgan — demak javob unli bilan boshlanadi" },
+            { "n": 6, "object": "misollar yozilgan doska", "objectEn": "a blackboard with sums", "sentence": "She is a ___ .", "answer": "teacher", "answerUz": "o'qituvchi" },
+            { "n": 7, "object": "gitara", "objectEn": "a guitar", "sentence": "He is a ___ .", "answer": "musician", "answerUz": "musiqachi" },
+            { "n": 8, "object": "xatlar va konvertlar", "objectEn": "letters and envelopes", "sentence": "He is a ___ .", "answer": "postman", "answerUz": "pochtachi" }
+          ]
+        },
+        {
+          "ref": "2",
+          "type": "fill_from_list",
+          "instructionEn": "Choose words from the list to complete the sentences.",
+          "instructionUz": "Ro'yxatdan so'z tanlab gaplarni to'ldiring.",
+          "explanationUz": "'old' va 'years old' ni adashtirmang:\n• How OLD is he? — savolda faqat 'old'\n• He is twenty-four YEARS OLD — javobda 'years old'\nBu ikkisi har xil o'rinda ishlatiladi.",
+          "wordList": ["years old", "student", "job", "capital", "favourite", "name", "old"],
+          "items": [
+            { "n": 1, "sentence": "How ___ is Richard?", "answer": "old", "uz": "Richard necha yoshda?" },
+            { "n": 2, "sentence": "Richard is twenty-four ___ .", "answer": "years old", "uz": "Richard yigirma to'rt yoshda.", "noteUz": "To'liq ibora: 'years old', faqat 'years' emas." },
+            { "n": 3, "sentence": "\"What's his ___ ?\" \"He's an engineer.\"", "answer": "job", "uz": "\"Uning kasbi nima?\" \"U muhandis.\"" },
+            { "n": 4, "sentence": "His friend is a(n) ___ at Mortimer College.", "answer": "student", "uz": "Uning do'sti Mortimer kollejida talaba.", "noteUz": "'a(n)' berilgan — 'student' undosh bilan boshlangani uchun 'a student'." },
+            { "n": 5, "sentence": "\"What's her ___ ?\" \"Helen.\"", "answer": "name", "uz": "\"Uning ismi nima?\" \"Helen.\"" },
+            { "n": 6, "sentence": "\"What's her ___ sport?\" \"Golf.\"", "answer": "favourite", "uz": "\"Uning sevimli sporti nima?\" \"Golf.\"", "commonMistake": { "wrong": "favorite", "whyUz": "Qo'lyozmada 'favorite' deb yozilgan — bu AMERIKA imlosi. Enterprise BRITAN inglizchasida yozilgan, shuning uchun 'favouRite' (u bilan). Xuddi shunday: colour, neighbour." } },
+            { "n": 7, "sentence": "The ___ of Australia is Canberra.", "answer": "capital", "uz": "Avstraliyaning poytaxti — Kanberra." }
+          ]
+        },
+        {
+          "ref": "3",
+          "type": "match",
+          "instructionEn": "Match the ordinal numbers to the cardinal numbers, as in the example.",
+          "instructionUz": "Tartib sonlarni sanoq sonlarga moslang.",
+          "explanationUz": "ENG KO'P XATO SHU YERDA: -teen (13–19) va -ty (o'nliklar) ni adashtirish.\n• thirTEEN (13) → thirteenTH (13-chi)\n• THIRty (30) → thirtiETH (30-chi)\nO'xshash, lekin butunlay boshqa son! O'nliklarning tartib shakli -IETH bilan tugaydi: fifty → fiftieth, thirty → thirtieth.",
+          "pairs": [
+            { "n": 1, "cardinal": "twenty-two", "ordinal": "twenty-second", "letter": "d", "given": true },
+            { "n": 2, "cardinal": "three", "ordinal": "third", "letter": "f" },
+            { "n": 3, "cardinal": "twelve", "ordinal": "twelfth", "letter": "a" },
+            { "n": 4, "cardinal": "one", "ordinal": "first", "letter": "c" },
+            { "n": 5, "cardinal": "ten", "ordinal": "tenth", "letter": "b" },
+            { "n": 6, "cardinal": "thirty", "ordinal": "thirtieth", "letter": "h", "commonMistake": { "wrong": "thirteenth (g)", "whyUz": "Qo'lyozmada 30 ga 'thirteenth' (13-chi) qo'yilgan — XATO. thirty (30) → thirtiETH." } },
+            { "n": 7, "cardinal": "fifty", "ordinal": "fiftieth", "letter": "e" },
+            { "n": 8, "cardinal": "thirteen", "ordinal": "thirteenth", "letter": "g", "commonMistake": { "wrong": "thirtieth (h)", "whyUz": "Qo'lyozmada 13 ga 'thirtieth' (30-chi) qo'yilgan — XATO. thirteen (13) → thirteenTH." } }
+          ]
+        },
+        {
+          "ref": "4",
+          "type": "number_to_words",
+          "instructionEn": "Write the words for these numbers.",
+          "instructionUz": "Bu sonlarni so'z bilan yozing.",
+          "explanationUz": "Imloda uchta tuzoq bor:\n1) forty — 'u' YO'Q (four da bor, forty da yo'q!)\n2) Aralash son CHIZIQCHA bilan: twenty-eight\n3) eight → eighth (t bitta qoladi)",
+          "items": [
+            { "letter": "a", "number": 4, "answer": "four" },
+            { "letter": "b", "number": 16, "answer": "sixteen" },
+            { "letter": "c", "number": 28, "answer": "twenty-eight", "commonMistake": { "wrong": "tewnty eigth", "whyUz": "Qo'lyozmada harflar o'rni almashgan va chiziqcha yo'q. To'g'risi: twenty-eight." } },
+            { "letter": "d", "number": 9, "answer": "nine" },
+            { "letter": "e", "number": 33, "answer": "thirty-three", "commonMistake": { "wrong": "thiry-three", "whyUz": "'t' tushib qolgan. To'g'risi: thirTy-three." } },
+            { "letter": "f", "number": 42, "answer": "forty-two", "commonMistake": { "wrong": "fourty two", "whyUz": "ENG KO'P XATO: forty da 'u' YO'Q. four (4) da bor, forty (40) da yo'q. Chiziqcha ham kerak: forty-two." } },
+            { "letter": "g", "number": 60, "answer": "sixty" },
+            { "letter": "h", "number": 77, "answer": "seventy-seven" },
+            { "letter": "i", "number": 11, "answer": "eleven" },
+            { "letter": "j", "number": 55, "answer": "fifty-five" }
+          ]
+        },
+        {
+          "ref": "5",
+          "type": "nationality_dialogue",
+          "instructionEn": "Choose words from the list to complete the sentences.",
+          "instructionUz": "Ro'yxatdan so'z tanlab gaplarni to'ldiring.",
+          "explanationUz": "Savol qolipi: 'What nationality are you / is he / is she / are they?'\nJavobda millat nomi keladi va u KATTA harf bilan yoziladi.\nQavs ichida mamlakat berilgan — undan millatni yasaysiz.\nDiqqat: 'What nationality' savolida a/an ISHLATILMAYDI: 'I'm Japanese' (a Japanese emas).",
+          "wordList": ["Swiss", "Egyptian", "American", "Russian", "French", "Spanish", "Chinese", "Polish", "Bulgarian", "Japanese"],
+          "items": [
+            { "n": 1, "question": "What nationality are you?", "answer": "I'm Japanese.", "word": "Japanese", "country": "Japan", "countryUz": "Yaponiya", "given": true },
+            { "n": 2, "question": "What nationality is she?", "answer": "She's American.", "word": "American", "country": "the USA", "countryUz": "AQSh" },
+            { "n": 3, "question": "What nationality are they?", "answer": "They're French.", "word": "French", "country": "France", "countryUz": "Fransiya" },
+            { "n": 4, "question": "What nationality is he?", "answer": "He's Swiss.", "word": "Swiss", "country": "Switzerland", "countryUz": "Shveytsariya", "noteUz": "Switzerland → Swiss — qoidasiz, yodlab olinadi." },
+            { "n": 5, "question": "What nationality are they?", "answer": "They're Spanish.", "word": "Spanish", "country": "Spain", "countryUz": "Ispaniya", "commonMistake": { "wrong": "Spanis", "whyUz": "Oxirgi 'h' tushib qolgan. To'g'risi: SpanisH." } },
+            { "n": 6, "question": "What nationality is he?", "answer": "He's Polish.", "word": "Polish", "country": "Poland", "countryUz": "Polsha" },
+            { "n": 7, "question": "What nationality is she?", "answer": "She's Egyptian.", "word": "Egyptian", "country": "Egypt", "countryUz": "Misr" },
+            { "n": 8, "question": "What nationality are you?", "answer": "I'm Bulgarian.", "word": "Bulgarian", "country": "Bulgaria", "countryUz": "Bolgariya" },
+            { "n": 9, "question": "What nationality is he?", "answer": "He's Russian.", "word": "Russian", "country": "Russia", "countryUz": "Rossiya" },
+            { "n": 10, "question": "What nationality is she?", "answer": "She's Chinese.", "word": "Chinese", "country": "China", "countryUz": "Xitoy" }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Bu sahifa butunlay so'z yasalishiga qurilgan: kasb, tartib son va millat.",
+    "groups": [
+      {
+        "ruleUz": "Sanoq son → tartib son (-th / -ieth)",
+        "explanationUz": "Oddiy sonlarga -th qo'shiladi. Lekin -y bilan tugaganlar (o'nliklar) -IETH oladi: y → ieth.",
+        "items": [
+          { "base": "ten", "baseUz": "o'n", "derived": "tenth", "derivedUz": "o'ninchi", "note": "-th" },
+          { "base": "thirteen", "baseUz": "o'n uch", "derived": "thirteenth", "derivedUz": "o'n uchinchi", "note": "-th" },
+          { "base": "thirty", "baseUz": "o'ttiz", "derived": "thirtieth", "derivedUz": "o'ttizinchi", "note": "y → ieth" },
+          { "base": "fifty", "baseUz": "ellik", "derived": "fiftieth", "derivedUz": "ellikinchi", "note": "y → ieth" },
+          { "base": "twelve", "baseUz": "o'n ikki", "derived": "twelfth", "derivedUz": "o'n ikkinchi", "note": "ve → f" },
+          { "base": "twenty-two", "baseUz": "yigirma ikki", "derived": "twenty-second", "derivedUz": "yigirma ikkinchi", "note": "faqat OXIRGI son o'zgaradi" }
+        ]
+      },
+      {
+        "ruleUz": "Mamlakat → millat (bu sahifadagi 10 tasi)",
+        "explanationUz": "Qo'shimchalar: -ish, -ian, -ese, -an. Ba'zilari qoidasiz.",
+        "items": [
+          { "base": "Japan", "baseUz": "Yaponiya", "derived": "Japanese", "derivedUz": "yapon", "note": "-ese" },
+          { "base": "China", "baseUz": "Xitoy", "derived": "Chinese", "derivedUz": "xitoy", "note": "-ese" },
+          { "base": "the USA / America", "baseUz": "AQSh", "derived": "American", "derivedUz": "amerikalik", "note": "-an" },
+          { "base": "Russia", "baseUz": "Rossiya", "derived": "Russian", "derivedUz": "rus", "note": "-n" },
+          { "base": "Bulgaria", "baseUz": "Bolgariya", "derived": "Bulgarian", "derivedUz": "bolgar", "note": "-n" },
+          { "base": "Egypt", "baseUz": "Misr", "derived": "Egyptian", "derivedUz": "misrlik", "note": "-ian" },
+          { "base": "Spain", "baseUz": "Ispaniya", "derived": "Spanish", "derivedUz": "ispan", "note": "-ish" },
+          { "base": "Poland", "baseUz": "Polsha", "derived": "Polish", "derivedUz": "polyak", "note": "-ish" },
+          { "base": "France", "baseUz": "Fransiya", "derived": "French", "derivedUz": "fransuz", "note": "qoidasiz" },
+          { "base": "Switzerland", "baseUz": "Shveytsariya", "derived": "Swiss", "derivedUz": "shveytsariyalik", "note": "qoidasiz" }
+        ]
+      },
+      {
+        "ruleUz": "Buyum → kasb",
+        "explanationUz": "Ex. 1 dagi mantiq: buyum kasbni bildiradi.",
+        "items": [
+          { "base": "farm", "baseUz": "ferma", "derived": "farmer", "derivedUz": "dehqon", "note": "traktor → farmer" },
+          { "base": "art", "baseUz": "san'at", "derived": "artist", "derivedUz": "rassom", "note": "palitra → an artist" },
+          { "base": "music", "baseUz": "musiqa", "derived": "musician", "derivedUz": "musiqachi", "note": "gitara → a musician" },
+          { "base": "post", "baseUz": "pochta", "derived": "postman", "derivedUz": "pochtachi", "note": "xatlar → a postman" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Bu sahifadagi ikki asosiy qolip.",
+    "patterns": [
+      {
+        "formula": "EGA + be + a/an + KASB.",
+        "exampleEn": "He is an artist. / She is a doctor.",
+        "exampleUz": "U rassom. / U shifokor.",
+        "explanationUz": "Artikl kasbning birinchi TOVUSHIGA qarab: an artist, an astronaut, a doctor, a pilot."
+      },
+      {
+        "formula": "What nationality + be + EGA? → EGA + be + MILLAT.",
+        "exampleEn": "What nationality is she? — She's American.",
+        "exampleUz": "U qaysi millat? — U amerikalik.",
+        "explanationUz": "MUHIM: millat oldidan a/an QO'YILMAYDI. 'She's American' (an American ham mumkin, lekin bu yerda sifat sifatida ishlatilyapti). Millat nomi katta harf bilan."
+      },
+      {
+        "formula": "How old + be + EGA? → EGA + be + SON + years old.",
+        "exampleEn": "How old is Richard? — Richard is twenty-four years old.",
+        "exampleUz": "Richard necha yoshda? — Richard yigirma to'rt yoshda.",
+        "explanationUz": "Savolda faqat 'old', javobda esa to'liq 'years old'."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "object", "uz": "buyum, narsa" },
+    { "en": "to guess", "uz": "topmoq, taxmin qilmoq" },
+    { "en": "palette", "uz": "palitra" },
+    { "en": "tractor", "uz": "traktor" },
+    { "en": "stethoscope", "uz": "stetoskop" },
+    { "en": "space shuttle", "uz": "kosmik kema" },
+    { "en": "blackboard", "uz": "doska" },
+    { "en": "farmer", "uz": "dehqon, fermer" },
+    { "en": "driver", "uz": "haydovchi" },
+    { "en": "cardinal number", "uz": "sanoq son" },
+    { "en": "ordinal number", "uz": "tartib son" },
+    { "en": "nationality", "uz": "millat" },
+    { "en": "Switzerland", "uz": "Shveytsariya" },
+    { "en": "Swiss", "uz": "shveytsariyalik" },
+    { "en": "Bulgaria", "uz": "Bolgariya" },
+    { "en": "Canberra", "uz": "Kanberra" },
+    { "en": "Australia", "uz": "Avstraliya" },
+    { "en": "engineer", "uz": "muhandis" }
+  ]
+}

@@ -35,22 +35,26 @@ class _BurstState extends State<_Burst> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return IgnorePointer(
-      child: AnimatedBuilder(
-        animation: _c,
-        builder: (context, _) {
-          final t = _c.value;
-          // 0→0.25 kirish (pastdan, elastik), 0.75→1 chiqish (yuqoriga, fade).
-          final enter = Curves.easeOutBack.transform((t / 0.25).clamp(0.0, 1.0));
-          final exit = t > 0.75 ? (t - 0.75) / 0.25 : 0.0;
-          final opacity = (1 - exit).clamp(0.0, 1.0);
-          final dy = (1 - enter) * 60 - exit * 40;
-          final scale = 0.7 + 0.3 * enter;
-          return Positioned(
-            left: 0,
-            right: 0,
-            bottom: MediaQuery.of(context).size.height * 0.32,
-            child: Opacity(
+    // MUHIM: Positioned Overlay'ning BEVOSITA bolasi bo'lishi shart.
+    // Uni IgnorePointer/AnimatedBuilder ichiga solib qo'yilsa,
+    // "Incorrect use of ParentDataWidget" xatosi chiqadi.
+    return Positioned(
+      left: 0,
+      right: 0,
+      bottom: MediaQuery.of(context).size.height * 0.32,
+      child: IgnorePointer(
+        child: AnimatedBuilder(
+          animation: _c,
+          builder: (context, _) {
+            final t = _c.value;
+            // 0→0.25 kirish (pastdan, elastik), 0.75→1 chiqish (yuqoriga, fade).
+            final enter =
+                Curves.easeOutBack.transform((t / 0.25).clamp(0.0, 1.0));
+            final exit = t > 0.75 ? (t - 0.75) / 0.25 : 0.0;
+            final opacity = (1 - exit).clamp(0.0, 1.0);
+            final dy = (1 - enter) * 60 - exit * 40;
+            final scale = 0.7 + 0.3 * enter;
+            return Opacity(
               opacity: opacity,
               child: Transform.translate(
                 offset: Offset(0, dy),
@@ -58,7 +62,8 @@ class _BurstState extends State<_Burst> with SingleTickerProviderStateMixin {
                   scale: scale,
                   child: Center(
                     child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 16),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 28, vertical: 16),
                       decoration: BoxDecoration(
                         color: AppColors.success,
                         borderRadius: BorderRadius.circular(AppRadius.pill),
@@ -80,9 +85,9 @@ class _BurstState extends State<_Burst> with SingleTickerProviderStateMixin {
                   ),
                 ),
               ),
-            ),
-          );
-        },
+            );
+          },
+        ),
       ),
     );
   }

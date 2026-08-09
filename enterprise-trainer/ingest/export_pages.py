@@ -1,0 +1,533 @@
+"""Sahifa JSON'larini Flutter asset'lariga aylantiradi.
+
+Sahifa fayllarida 43 xil mashq turi bor. Flutter tomonda ularning har biriga
+alohida ekran qurish mumkin emas, shuning uchun bu skript hammasini
+4 ta O'YIN TURIGA normalizatsiya qiladi:
+
+    choice — variantdan birini tanlash
+    text   — javobni harf/so'z plitkalaridan yig'ish
+    match  — ikki ustunni juftlash
+    study  — javobsiz: qoida, dialog, namuna (faqat o'qish/eshitish)
+
+Noma'lum tur uchraса `study` ga tushadi — ya'ni kontent HECH QACHON
+yo'qolmaydi, faqat interaktivligi kamayadi.
+
+Ishlatish:
+    python -m ingest.export_pages
+"""
+from __future__ import annotations
+
+import json
+import sys
+from collections import defaultdict
+from pathlib import Path
+
+TRAINER = Path(__file__).resolve().parent.parent
+PAGES = TRAINER / "data" / "pages"
+OUT = TRAINER.parent / "enterprise-app" / "assets" / "content" / "enterprise1"
+
+# Bo'limlarni o'quv mantig'i bo'yicha tartiblash: o'rgan -> mashq qil -> qo'lla.
+SECTION_ORDER = [
+    "lead_in",
+    "vocabulary",
+    "reading",
+    "grammar_theory",
+    "grammar",
+    "grammar_exercise",
+    "pronunciation",
+    "listening",
+    "speaking",
+    "communication",
+    "game",
+    "writing",
+    "words_of_wisdom",
+]
+BOOK_ORDER = {"coursebook": 0, "grammar": 1, "workbook": 2}
+
+SECTION_TITLE_UZ = {
+    "lead_in": "Kirish",
+    "vocabulary": "Lug'at",
+    "reading": "O'qish",
+    "grammar_theory": "Grammatika — qoida",
+    "grammar": "Grammatika",
+    "grammar_exercise": "Grammatika — mashq",
+    "pronunciation": "Talaffuz",
+    "listening": "Tinglash",
+    "speaking": "Gapirish",
+    "communication": "Muloqot",
+    "game": "O'yin",
+    "writing": "Yozish",
+    "words_of_wisdom": "Hikmatli so'z",
+}
+
+
+# ─────────────────────────── yordamchilar ───────────────────────────
+def task(prompt, answer, *, prompt_uz="", options=None, why="", alt=None):
+    """Bitta savol-javob birligi."""
+    t = {"prompt": str(prompt), "answer": str(answer)}
+    if prompt_uz:
+        t["promptUz"] = prompt_uz
+    if options:
+        t["options"] = [str(o) for o in options]
+    if why:
+        t["whyUz"] = why
+    if alt:
+        t["alt"] = alt if isinstance(alt, list) else [str(alt)]
+    return t
+
+
+def study(en, uz="", note=""):
+    s = {"en": str(en)}
+    if uz:
+        s["uz"] = str(uz)
+    if note:
+        s["note"] = str(note)
+    return s
+
+
+def distractors(correct, pool, n=3):
+    """Bir xil javobsiz, takrorsiz chalg'ituvchi variantlar."""
+    out = []
+    for x in pool:
+        if len(out) >= n:
+            break
+        if str(x) != str(correct) and str(x) not in out:
+            out.append(str(x))
+    return out
+
+
+# ─────────────────────────── normalizatorlar ───────────────────────────
+def norm_exercise(ex, page):
+    """Bitta mashqni normalizatsiya qiladi -> {kind, tasks, ...}."""
+    t = ex.get("type", "")
+    items = ex.get("items", [])
+    base = {
+        "ref": str(ex.get("ref", "")),
+        "instructionEn": ex.get("instructionEn", ""),
+        "instructionUz": ex.get("instructionUz", ""),
+        "explanationUz": ex.get("explanationUz", ""),
+        "audio": bool(ex.get("hasAudio")),
+        "book": page["book"],
+        "bookPage": page["bookPage"],
+    }
+    if ex.get("bookRef"):
+        base["bookRef"] = ex["bookRef"]
+    if ex.get("audioRequiredUz"):
+        base["audioNoteUz"] = ex["audioRequiredUz"]
+
+    kind, tasks = _dispatch(t, ex, items)
+    base["kind"] = kind
+    base["tasks"] = tasks
+    return base
+
+
+def _dispatch(t, ex, items):
+    # ---------- TANLASH ----------
+    if t == "article_choice":
+        return "choice", [
+            task(i["word"], i["answer"], prompt_uz=i.get("wordUz", ""),
+                 options=["a", "an"], why=i.get("whyUz", ""))
+            for i in items
+        ]
+
+    if t == "article_and_label":
+        out = [
+            task(a["word"], a["article"], prompt_uz=a.get("uz", ""),
+                 options=["a", "an"], why=a.get("whyUz", ""))
+            for a in ex.get("articleAnswers", [])
+        ]
+        names = [i["answer"] for i in items]
+        out += [
+            task(f"{i['name']} ({i['age']})", i["answer"],
+                 prompt_uz=i.get("answerUz", ""),
+                 options=[i["answer"]] + distractors(i["answer"], names),
+                 why=i.get("noteUz", ""))
+            for i in items if not i.get("given")
+        ]
+        return "choice", out
+
+    if t == "true_false":
+        return "choice", [
+            task(i["sentence"], i["answer"], options=["T", "F"], why=i.get("whyUz", ""))
+            for i in items
+        ]
+
+    if t in ("picture_choice",):
+        return "choice", [
+            task(f"Rasm {a['picture']}", a["country"], prompt_uz=a.get("countryUz", ""),
+                 options=ex.get("options", []))
+            for a in ex.get("answers", [])
+        ]
+
+    if t == "picture_pronoun":
+        return "choice", [
+            task(i.get("pictureEn", i.get("picture", "")), i["answer"],
+                 prompt_uz=i.get("picture", ""), options=["he", "she", "it", "they"],
+                 why=i.get("whyUz", ""))
+            for i in items
+        ]
+
+    if t == "picture_guess_job":
+        pool = [i["answer"] for i in items]
+        return "choice", [
+            task(i.get("objectEn", ""), i["answer"], prompt_uz=i.get("object", ""),
+                 options=[i["answer"]] + distractors(i["answer"], pool),
+                 why=i.get("commonMistake", {}).get("whyUz", ""))
+            for i in items
+        ]
+
+    if t in ("fill_from_list", "nationality_dialogue"):
+        wl = ex.get("wordList", [])
+        if t == "fill_from_list":
+            return "choice", [
+                task(i["sentence"], i["answer"], prompt_uz=i.get("uz", ""),
+                     options=[i["answer"]] + distractors(i["answer"], wl),
+                     why=i.get("commonMistake", {}).get("whyUz", ""))
+                for i in items
+            ]
+        return "choice", [
+            task(i["question"], i["word"], prompt_uz=f"({i.get('countryUz','')})",
+                 options=[i["word"]] + distractors(i["word"], wl),
+                 why=i.get("commonMistake", {}).get("whyUz", ""))
+            for i in items
+        ]
+
+    if t == "map_fill":
+        wl = ex.get("wordList", [])
+        return "choice", [
+            task(f"{i['capital']} is in ___", i["country"],
+                 prompt_uz=f"{i.get('capitalUz','')} — {i.get('countryUz','')}",
+                 options=[i["country"]] + distractors(i["country"], wl),
+                 why=i.get("noteUz", ""))
+            for i in items
+        ]
+
+    # ---------- MOSLASH ----------
+    if t == "match":
+        pairs = ex.get("pairs", [])
+        if pairs and "left" in pairs[0]:
+            return "match", [{"left": p["left"], "right": p["right"]} for p in pairs]
+        return "match", [{"left": p["cardinal"], "right": p["ordinal"]} for p in pairs]
+
+    if t == "listen_match":
+        return "match", [
+            {"left": f"Rasm {a['letter']}", "right": f"Matn {a['number']}",
+             "note": a.get("why", "")}
+            for a in ex.get("answers", [])
+        ]
+
+    if t == "order_dialogue":
+        return "match", [
+            {"left": f"{i['correctOrder']}-o'rin", "right": f"{i['who']}: {i['en']}",
+             "note": i.get("uz", "")}
+            for i in sorted(items, key=lambda x: x["correctOrder"])
+        ]
+
+    # ---------- YIG'ISH (text) ----------
+    if t in ("number_to_words", "write_number", "words_to_number"):
+        out = []
+        for i in items:
+            if "number" in i and isinstance(i.get("answer"), str):
+                out.append(task(str(i["number"]), i["answer"], why=i.get("whyUz", "")))
+            elif "word" in i and isinstance(i.get("answer"), int):
+                out.append(task(i["word"], str(i["answer"]), why=i.get("whyUz", "")))
+            elif "word" in i:
+                out.append(task(i["word"], str(i["answer"]), why=i.get("whyUz", "")))
+        return "text", out
+
+    if t == "word_order":
+        return "text", [
+            task(" / ".join(i["words"]), i["answer"],
+                 why=i.get("whyUz", "") or i.get("commonMistake", {}).get("whyUz", ""),
+                 alt=i.get("alt"))
+            for i in items
+        ]
+
+    if t == "write_question":
+        return "text", [
+            task(i["answer"], i["question"], prompt_uz="Shu javobga savol tuzing",
+                 why=i.get("whyUz", ""))
+            for i in items if not i.get("given")
+        ]
+
+    if t in ("fill_gap", "long_short_form"):
+        out = []
+        for i in items:
+            if i.get("given"):
+                continue
+            if t == "long_short_form":
+                out.append(task(i["textEn"], i["long"], prompt_uz="To'liq shakl",
+                                why=i.get("whyUz", "")))
+                out.append(task(i["textEn"], i["short"], prompt_uz="Qisqa shakl",
+                                why=i.get("whyUz", "")))
+            else:
+                out.append(task(i["textEn"], i["answer"], why=i.get("whyUz", "")))
+        return "text", out
+
+    if t in ("dialogue_fill", "dialogue_gap_fill", "text_gap_fill"):
+        out = []
+        for i in items:
+            if i.get("given") and "lines" not in i:
+                continue
+            for ln in i.get("lines", []):
+                if ln.get("given"):
+                    continue
+                ans = ln.get("answers") or ([ln["answer"]] if ln.get("answer") else [])
+                for a in ans:
+                    out.append(task(f"{ln.get('who','')}: {ln['textEn']}", a,
+                                    why=i.get("whyUz", "")))
+            if "lines" not in i and i.get("answer"):
+                out.append(task(f"{i.get('who','')}: {i['textEn']}", i["answer"],
+                                why=i.get("whyUz", "") or
+                                    i.get("commonMistake", {}).get("whyUz", "")))
+        return "text", out
+
+    if t == "complete_table":
+        out = []
+        for i in items:
+            if i.get("fullBlank"):
+                out.append(task(f"{i['subject']} — to'liq shakl", i["full"]))
+            if i.get("shortBlank"):
+                out.append(task(f"{i['subject']} — qisqa shakl", i["short"]))
+        return "text", out
+
+    if t == "prompt_to_dialogue":
+        out = []
+        for i in items:
+            if i.get("given"):
+                continue
+            out.append(task(i["prompt"], i["question"], prompt_uz="Savol tuzing",
+                            why=i.get("whyUz", "")))
+            out.append(task(i["prompt"], i["answer"], prompt_uz="Javob tuzing",
+                            why=i.get("whyUz", "")))
+        return "text", out
+
+    if t == "picture_question_answer":
+        out = []
+        for i in items:
+            if i.get("given"):
+                continue
+            out.append(task(i.get("pictureEn", i.get("picture", "")), i["question"],
+                            prompt_uz="Savol tuzing", why=i.get("whyUz", "")))
+            out.append(task(i.get("pictureEn", i.get("picture", "")), i["answer"],
+                            prompt_uz="Javob tuzing", why=i.get("whyUz", "")))
+        return "text", out
+
+    if t == "photo_age_sentence":
+        return "text", [
+            task(f"{i['gender']}, {i['age']}", i["answer"],
+                 why=i.get("commonMistake", {}).get("whyUz", "") or i.get("noteUz", ""))
+            for i in items if not i.get("given")
+        ]
+
+    if t == "picture_fill_and_ask":
+        return "text", [
+            task(i["country"], i["capital"], prompt_uz=i.get("countryUz", ""),
+                 why=f"{i.get('landmark','')}")
+            for i in items if not i.get("given")
+        ]
+
+    if t == "read_label_answer":
+        out = [
+            task(f"{p['prompt']} ({p['picture']})", p["answer"],
+                 prompt_uz=p.get("answerUz", ""))
+            for p in ex.get("pictureLabels", [])
+        ]
+        out += [
+            task(q["en"], q["answerEn"], prompt_uz=q.get("uz", ""))
+            for q in ex.get("questions", [])
+        ]
+        return "text", out
+
+    if t == "listen_fill_profile":
+        return "text", [
+            task(p["name"], p["modelSentence"], prompt_uz="Profil bo'yicha gap tuzing")
+            for p in ex.get("profiles", [])
+            if p.get("modelSentence") and not p.get("ageFromAudio")
+        ]
+
+    if t in ("table_fill", "table_fill_from_list"):
+        rows = ex.get("rows", [])
+        out = []
+        for r in rows:
+            if r.get("given"):
+                continue
+            blank = r.get("blank")
+            if blank and r.get(blank):
+                out.append(task(f"{r.get('name','')} — {blank}", r[blank]))
+            elif r.get("cells") and any(r["cells"]):
+                cols = ex.get("columns", [])
+                for c, v in zip(cols, r["cells"]):
+                    if v:
+                        out.append(task(f"{r['name']} — {c}", v))
+        return "text", out
+
+    if t in ("write_sentences", "guided_writing", "table_to_paragraph"):
+        models = ex.get("modelAnswers") or (
+            [ex["modelAnswer"]] if ex.get("modelAnswer") else []
+        )
+        if not models:
+            models = [s.get("modelEn", "") for s in ex.get("structure", [])]
+        return "text", [task("Namuna bo'yicha yozing", m) for m in models if m]
+
+    if t == "make_sentences_game":
+        return "text", [
+            task(m["word"], m["sentence"], prompt_uz=m.get("uz", ""))
+            for m in ex.get("modelSentences", [])
+        ]
+
+    if t == "speech_bubbles":
+        out = []
+        for sc in ex.get("scenes", []):
+            for b in sc.get("bubbles", []):
+                if b.get("given"):
+                    continue
+                out.append(task(f"{sc['picture']} — {b['position']}", b["answer"],
+                                prompt_uz=b.get("uz", "")))
+        return "text", out
+
+    # ---------- O'RGANISH (study) ----------
+    if t == "listen_repeat":
+        src = ex.get("sentences") or ex.get("words") or []
+        return "study", [
+            study(x.get("en", ""), x.get("uz", ""), x.get("hintUz", "")) for x in src
+        ]
+
+    if t == "dialogue_drill":
+        return "study", [
+            study(f"{l['speaker']}: {l['en']}", l.get("uz", ""))
+            for l in ex.get("example", [])
+        ]
+
+    if t == "listen_act_out":
+        return "study", [
+            study(f"{l['who']}: {l['en']}", l.get("uz", "")) for l in ex.get("lines", [])
+        ]
+
+    if t == "guessing_game":
+        return "study", [
+            study(f"{l['speaker']}: {l['en']}", l.get("uz", ""))
+            for l in ex.get("example", [])
+        ]
+
+    if t == "ask_answer_landmarks":
+        return "study", [
+            study(f"{i['landmark']} — {i['realCity']}, {i['realCountry']}",
+                  i.get("landmarkUz", ""), i.get("answerEn", ""))
+            for i in items
+        ]
+
+    if t == "discuss_meaning":
+        return "study", [study(ex.get("sentenceEn", ""), ex.get("sentenceUz", ""))]
+
+    if t == "explain":
+        return "study", [study(ex.get("instructionEn", ""), ex.get("instructionUz", ""))]
+
+    # ---------- fallback: hech narsa yo'qolmaydi ----------
+    return "study", [study(ex.get("instructionEn", ""), ex.get("instructionUz", ""))]
+
+
+# ─────────────────────────── qurish ───────────────────────────
+def build_unit(pages):
+    """Bir unitning uchala kitobdagi sahifalarini bitta unitga yig'adi."""
+    first = pages[0]
+    sections, wf, sp, voc = [], [], [], []
+    seen_voc = set()
+
+    ordered = sorted(
+        pages, key=lambda p: (BOOK_ORDER.get(p["book"], 9), p["bookPage"])
+    )
+    for p in ordered:
+        for s in p["sections"]:
+            exercises = [norm_exercise(e, p) for e in s.get("exercises", [])]
+            sec = {
+                "id": f"u{p['unit']}-{p['book']}-{p['bookPage']}-{len(sections)}",
+                "kind": s["kind"],
+                "title": s.get("title", ""),
+                "titleUz": s.get("titleUz") or SECTION_TITLE_UZ.get(s["kind"], ""),
+                "book": p["book"],
+                "bookPage": p["bookPage"],
+                "exercises": exercises,
+            }
+            if s.get("rule"):
+                sec["rule"] = s["rule"]
+            sections.append(sec)
+
+        for g in p.get("wordFormation", {}).get("groups", []):
+            wf.append({
+                "ruleUz": g["ruleUz"],
+                "explanationUz": g.get("explanationUz", ""),
+                "items": g["items"],
+                "book": p["book"],
+                "bookPage": p["bookPage"],
+            })
+        for pat in p.get("sentencePatterns", {}).get("patterns", []):
+            sp.append({**pat, "book": p["book"], "bookPage": p["bookPage"]})
+        for v in p.get("vocabularyOnPage", []):
+            key = v["en"].lower()
+            if key not in seen_voc:
+                seen_voc.add(key)
+                voc.append(v)
+
+    sections.sort(key=lambda s: (
+        SECTION_ORDER.index(s["kind"]) if s["kind"] in SECTION_ORDER else 99,
+        BOOK_ORDER.get(s["book"], 9),
+        s["bookPage"],
+    ))
+
+    return {
+        "unit": first["unit"],
+        "title": first.get("unitTitle", ""),
+        "module": first.get("module", 0),
+        "sections": sections,
+        "wordFormation": wf,
+        "sentencePatterns": sp,
+        "vocabulary": voc,
+    }
+
+
+def main():
+    by_unit = defaultdict(list)
+    for f in sorted(PAGES.glob("*/p*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        if d.get("unit"):
+            by_unit[d["unit"]].append(d)
+
+    if not by_unit:
+        print("Sahifa fayllari topilmadi.")
+        return 1
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    index = []
+    for unit, pages in sorted(by_unit.items()):
+        u = build_unit(pages)
+        (OUT / f"unit_{unit}.json").write_text(
+            json.dumps(u, ensure_ascii=False, indent=1), encoding="utf-8"
+        )
+        kinds = defaultdict(int)
+        tasks = 0
+        for s in u["sections"]:
+            for e in s["exercises"]:
+                kinds[e["kind"]] += 1
+                tasks += len(e["tasks"])
+        index.append({
+            "unit": unit,
+            "title": u["title"],
+            "module": u["module"],
+            "sections": len(u["sections"]),
+            "exercises": sum(len(s["exercises"]) for s in u["sections"]),
+            "tasks": tasks,
+        })
+        print(f"Unit {unit} ({u['title']}): {len(u['sections'])} bo'lim, "
+              f"{sum(len(s['exercises']) for s in u['sections'])} mashq, {tasks} band")
+        print(f"    turlari: {dict(kinds)}")
+
+    (OUT / "index.json").write_text(
+        json.dumps({"units": index}, ensure_ascii=False, indent=1), encoding="utf-8"
+    )
+    print(f"\nSaqlandi -> {OUT}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

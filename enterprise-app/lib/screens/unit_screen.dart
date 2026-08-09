@@ -5,6 +5,7 @@ import '../theme.dart';
 import '../widgets/entrance.dart';
 import '../widgets/pressable3d.dart';
 import 'pack/pack_flow.dart';
+import 'homework/homework_flow.dart';
 
 /// Unit sahifasi — Vocabulary (pack'lar) + Homework komponentlari.
 class UnitScreen extends StatelessWidget {
@@ -49,16 +50,46 @@ class UnitScreen extends StatelessWidget {
                   ),
                 ),
               const SizedBox(height: 24),
-              _sectionTitle(context, '📝 Homework', '4 interaktiv mashq turi'),
+              _sectionTitle(
+                context,
+                '📝 Homework',
+                'Unit bo\'yicha test — o\'tish uchun 80%',
+              ),
               const SizedBox(height: 12),
               EntranceFade(
-                child: _HomeworkCard(),
+                child: _HomeworkCard(
+                  unitWords: _unitWords(c),
+                  done: progress.isDone('hw::${unit.id}'),
+                  onStart: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => HomeworkFlow(
+                        unit: unit,
+                        unitWords: _unitWords(c),
+                        levelWords: c.wordsById.values.toList(),
+                      ),
+                    ),
+                  ),
+                ),
               ),
             ],
           );
         },
       ),
     );
+  }
+
+  /// Unitning barcha vocab so'zlari (takrorsiz) — Homework testi uchun.
+  List<Word> _unitWords(LevelContent c) {
+    final seen = <String, Word>{};
+    for (final cm in unit.vocabComponents) {
+      for (final p in cm.packs) {
+        for (final x in c.wordsOf(p)) {
+          seen[x.id] = x;
+        }
+      }
+    }
+    return seen.values.toList();
   }
 
   Widget _sectionTitle(BuildContext c, String title, String sub) {
@@ -156,28 +187,82 @@ class _PackCard extends StatelessWidget {
   }
 }
 
+/// Homework kartasi — 3 holat: so'z yo'q / bajarilmagan / bajarilgan.
 class _HomeworkCard extends StatelessWidget {
+  final List<Word> unitWords;
+  final bool done;
+  final VoidCallback onStart;
+
+  const _HomeworkCard({
+    required this.unitWords,
+    required this.done,
+    required this.onStart,
+  });
+
   @override
   Widget build(BuildContext context) {
+    final empty = unitWords.isEmpty;
+    final color = empty
+        ? AppColors.lightMuted
+        : done
+            ? AppColors.success
+            : AppColors.homework;
+    final shadow = empty
+        ? const Color(0xFF4B5563)
+        : done
+            ? const Color(0xFF0F7A37)
+            : const Color(0xFFB8410C);
+    final label = empty
+        ? 'So\'zlar yo\'q'
+        : done
+            ? 'Qayta topshirish'
+            : 'Testni boshlash';
+
     return Pressable3D(
-      color: AppColors.homework,
-      shadowColor: const Color(0xFFB8410C),
+      color: color,
+      shadowColor: shadow,
       padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
       radius: AppRadius.md,
-      onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-              '4 mashq turi (Choose/Construct/Match/Fill) — keyingi fazada qo\'shiladi'),
-        ),
-      ),
+      enabled: !empty,
+      onPressed: onStart,
       child: Row(
         mainAxisSize: MainAxisSize.min,
-        children: const [
-          Icon(Icons.quiz_rounded, color: Colors.white),
-          SizedBox(width: 10),
-          Text('Mashqlarni boshlash',
-              style: TextStyle(
-                  color: Colors.white, fontWeight: FontWeight.w800, fontSize: 16)),
+        children: [
+          Icon(
+            empty
+                ? Icons.block_rounded
+                : done
+                    ? Icons.check_circle_rounded
+                    : Icons.quiz_rounded,
+            color: Colors.white,
+          ),
+          const SizedBox(width: 10),
+          Text(
+            label,
+            style: const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w800,
+              fontSize: 16,
+            ),
+          ),
+          if (!empty) ...[
+            const SizedBox(width: 10),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+              decoration: BoxDecoration(
+                color: Colors.white.withValues(alpha: 0.22),
+                borderRadius: BorderRadius.circular(AppRadius.pill),
+              ),
+              child: Text(
+                '${unitWords.length} so\'z',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 12,
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );

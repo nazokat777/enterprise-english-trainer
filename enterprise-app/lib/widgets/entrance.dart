@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 /// Element ekranga chiqqanda silliq paydo bo'lish: shaffoflik 0→1 va
@@ -31,13 +33,17 @@ class _EntranceFadeState extends State<EntranceFade>
       Tween<double>(begin: widget.offsetY, end: 0)
           .animate(CurvedAnimation(parent: _c, curve: Curves.easeOutCubic));
 
+  /// Kechikish taymeri — dispose'da bekor qilinadi, aks holda widget
+  /// yo'q qilingandan keyin ham osilib qoladi.
+  Timer? _delayTimer;
+
   @override
   void initState() {
     super.initState();
     if (widget.delay == Duration.zero) {
       _c.forward();
     } else {
-      Future.delayed(widget.delay, () {
+      _delayTimer = Timer(widget.delay, () {
         if (mounted) _c.forward();
       });
     }
@@ -45,6 +51,7 @@ class _EntranceFadeState extends State<EntranceFade>
 
   @override
   void dispose() {
+    _delayTimer?.cancel();
     _c.dispose();
     super.dispose();
   }

@@ -5,6 +5,10 @@ enterprise-trainer/data/pdfs/
 enterprise-trainer/data/parsed/
 *.pdf
 
+# Sahifa rasmlari — kitobning aynan nusxasi, yuklanmaydi.
+# (Ular asosida yozilgan .json kontent esa yuklanadi — u original ish.)
+enterprise-trainer/data/pages/**/*.png
+
 # ─── Flutter / Dart ───
 enterprise-app/build/
 enterprise-app/.dart_tool/

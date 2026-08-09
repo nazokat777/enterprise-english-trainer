@@ -3,6 +3,7 @@ import '../main.dart';
 import '../theme.dart';
 import '../widgets/geo_bg.dart';
 import 'units_screen.dart';
+import 'book/book_screens.dart';
 
 /// Ilova qobig'i — chap sidebar + header (retention indikatorlari).
 /// Keng ekranda doimiy sidebar, tor ekranda drawer.
@@ -18,7 +19,7 @@ class _AppShellState extends State<AppShell> {
 
   static const List<(IconData, String)> _items = [
     (Icons.school_rounded, 'Darslar'),
-    (Icons.library_books_rounded, 'Resuslar'),
+    (Icons.style_rounded, 'Lug\'at'),
     (Icons.forum_rounded, 'Suhbatlar'),
     (Icons.settings_rounded, 'Sozlamalar'),
     (Icons.help_outline_rounded, 'Yordam'),
@@ -125,7 +126,9 @@ class _AppShellState extends State<AppShell> {
   Widget _body(BuildContext context) {
     switch (_sel) {
       case 0:
-        return const UnitsScreen();
+        return const BookUnitsScreen(); // Enterprise kitobi — asosiy kurs
+      case 1:
+        return const UnitsScreen(); // lug'at pack'lari (SRS)
       default:
         return _Placeholder(title: _items[_sel].$2);
     }
