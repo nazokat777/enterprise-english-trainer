@@ -9,6 +9,12 @@ enterprise-trainer/data/parsed/
 # (Ular asosida yozilgan .json kontent esa yuklanadi — u original ish.)
 enterprise-trainer/data/pages/**/*.png
 
+# ─── Kitob betlari: FAQAT LOKAL (oilaviy) build uchun ───
+# Bu papkadagi rasmlar egasining o'z nusxasidan olinadi va
+# GitHub'ga ham, Vercel'ga ham CHIQMAYDI. README.md qoladi.
+enterprise-app/assets/book_pages/*
+!enterprise-app/assets/book_pages/README.md
+
 # ─── Flutter / Dart ───
 enterprise-app/build/
 enterprise-app/.dart_tool/
