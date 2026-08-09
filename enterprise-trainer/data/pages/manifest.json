@@ -389,42 +389,66 @@
    {
     "pdf_page": 50,
     "image": "data/pages/coursebook/p050.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 46,
+    "unit": 903,
+    "json": "data/pages/coursebook/p050.json"
    },
    {
     "pdf_page": 51,
     "image": "data/pages/coursebook/p051.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 47,
+    "unit": 903,
+    "json": "data/pages/coursebook/p051.json"
    },
    {
     "pdf_page": 52,
     "image": "data/pages/coursebook/p052.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 48,
+    "unit": 7,
+    "json": "data/pages/coursebook/p052.json"
    },
    {
     "pdf_page": 53,
     "image": "data/pages/coursebook/p053.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 49,
+    "unit": 7,
+    "json": "data/pages/coursebook/p053.json"
    },
    {
     "pdf_page": 54,
     "image": "data/pages/coursebook/p054.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 50,
+    "unit": 7,
+    "json": "data/pages/coursebook/p054.json"
    },
    {
     "pdf_page": 55,
     "image": "data/pages/coursebook/p055.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 51,
+    "unit": 7,
+    "json": "data/pages/coursebook/p055.json"
    },
    {
     "pdf_page": 56,
     "image": "data/pages/coursebook/p056.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 52,
+    "unit": 7,
+    "json": "data/pages/coursebook/p056.json"
    },
    {
     "pdf_page": 57,
     "image": "data/pages/coursebook/p057.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 53,
+    "unit": 7,
+    "json": "data/pages/coursebook/p057.json"
    },
    {
     "pdf_page": 58,
@@ -937,7 +961,7 @@
     "status": "pending"
    }
   ],
-  "done": 42
+  "done": 50
  },
  "workbook": {
   "pdf": "data/pdfs/enterprise-1-workbook.pdf",
@@ -1166,22 +1190,34 @@
    {
     "pdf_page": 29,
     "image": "data/pages/workbook/p029.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 28,
+    "unit": 7,
+    "json": "data/pages/workbook/p029.json"
    },
    {
     "pdf_page": 30,
     "image": "data/pages/workbook/p030.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 29,
+    "unit": 7,
+    "json": "data/pages/workbook/p030.json"
    },
    {
     "pdf_page": 31,
     "image": "data/pages/workbook/p031.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 30,
+    "unit": 7,
+    "json": "data/pages/workbook/p031.json"
    },
    {
     "pdf_page": 32,
     "image": "data/pages/workbook/p032.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 31,
+    "unit": 7,
+    "json": "data/pages/workbook/p032.json"
    },
    {
     "pdf_page": 33,
@@ -1424,7 +1460,7 @@
     "status": "pending"
    }
   ],
-  "done": 24
+  "done": 28
  },
  "grammar": {
   "pdf": "data/pdfs/Enterprise_1_grammar.pdf",
@@ -1669,22 +1705,34 @@
    {
     "pdf_page": 31,
     "image": "data/pages/grammar/p031.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 30,
+    "unit": 7,
+    "json": "data/pages/grammar/p031.json"
    },
    {
     "pdf_page": 32,
     "image": "data/pages/grammar/p032.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 31,
+    "unit": 7,
+    "json": "data/pages/grammar/p032.json"
    },
    {
     "pdf_page": 33,
     "image": "data/pages/grammar/p033.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 32,
+    "unit": 7,
+    "json": "data/pages/grammar/p033.json"
    },
    {
     "pdf_page": 34,
     "image": "data/pages/grammar/p034.png",
-    "status": "pending"
+    "status": "done",
+    "bookPage": 33,
+    "unit": 7,
+    "json": "data/pages/grammar/p034.json"
    },
    {
     "pdf_page": 35,
@@ -1902,12 +1950,12 @@
     "status": "pending"
    }
   ],
-  "done": 26
+  "done": 30
  },
  "summary": {
-  "done": 92,
+  "done": 108,
   "total": 316,
-  "percent": 29.1,
+  "percent": 34.2,
   "unitsDone": [
    1,
    2,
@@ -1915,8 +1963,10 @@
    4,
    5,
    6,
+   7,
    901,
    902,
+   903,
    951
   ]
  }
