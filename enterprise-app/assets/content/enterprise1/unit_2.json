@@ -1518,6 +1518,88 @@
    ]
   },
   {
+   "id": "u2-coursebook-17-15",
+   "kind": "pronunciation",
+   "title": "Pronunciation",
+   "titleUz": "Talaffuz",
+   "book": "coursebook",
+   "bookPage": 17,
+   "exercises": [
+    {
+     "ref": "21",
+     "instructionEn": "Listen and tick. Listen again and repeat.",
+     "instructionUz": "Eshiting va belgilang. Qayta eshitib takrorlang.",
+     "explanationUz": "IKKI XIL «I» TOVUSHI — bu o'zbek o'quvchilari uchun eng qiyin farq,\nchunki o'zbek tilida bunday ajratish YO'Q.\n\n  /iː/ — UZUN, cho'ziq: read, three, teacher\n         Og'iz kengroq yoyiladi, tovush cho'ziladi.\n\n  /ɪ/  — QISQA, tez: six, slim, singer\n         Og'iz bo'shashgan, tovush kalta.\n\nNIMA UCHUN MUHIM — ma'no o'zgaradi:\n  ship /ɪ/ (kema)  ↔  sheep /iː/ (qo'y)\n  sit  /ɪ/ (o'tirmoq) ↔ seat /iː/ (o'rindiq)\n  live /ɪ/ (yashamoq) ↔ leave /iː/ (ketmoq)",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 17,
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "six",
+       "answer": "/ɪ/ (qisqa)",
+       "promptUz": "olti — qisqa tovush",
+       "options": [
+        "/iː/ (uzun)",
+        "/ɪ/ (qisqa)"
+       ],
+       "speak": "six"
+      },
+      {
+       "prompt": "read",
+       "answer": "/iː/ (uzun)",
+       "promptUz": "o'qimoq — uzun tovush",
+       "options": [
+        "/iː/ (uzun)",
+        "/ɪ/ (qisqa)"
+       ],
+       "speak": "read"
+      },
+      {
+       "prompt": "three",
+       "answer": "/iː/ (uzun)",
+       "promptUz": "uch — uzun tovush",
+       "options": [
+        "/iː/ (uzun)",
+        "/ɪ/ (qisqa)"
+       ],
+       "speak": "three"
+      },
+      {
+       "prompt": "slim",
+       "answer": "/ɪ/ (qisqa)",
+       "promptUz": "nozik — qisqa tovush",
+       "options": [
+        "/iː/ (uzun)",
+        "/ɪ/ (qisqa)"
+       ],
+       "speak": "slim"
+      },
+      {
+       "prompt": "teacher",
+       "answer": "/iː/ (uzun)",
+       "promptUz": "o'qituvchi — birinchi bo'g'inda uzun tovush",
+       "options": [
+        "/iː/ (uzun)",
+        "/ɪ/ (qisqa)"
+       ],
+       "speak": "teacher"
+      },
+      {
+       "prompt": "singer",
+       "answer": "/ɪ/ (qisqa)",
+       "promptUz": "qo'shiqchi — qisqa tovush",
+       "options": [
+        "/iː/ (uzun)",
+        "/ɪ/ (qisqa)"
+       ],
+       "speak": "singer"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u2-coursebook-13-2",
    "kind": "speaking",
    "title": "Speaking",
@@ -1738,6 +1820,74 @@
    ]
   },
   {
+   "id": "u2-coursebook-17-14",
+   "kind": "communication",
+   "title": "Communication — Greetings",
+   "titleUz": "Muloqot — Salomlashish",
+   "book": "coursebook",
+   "bookPage": 17,
+   "exercises": [
+    {
+     "ref": "20a",
+     "instructionEn": "Listen to the dialogues and fill in the missing words. Listen again and repeat. In pairs, act out the dialogues.",
+     "instructionUz": "Dialoglarni eshiting va yetishmayotgan so'zlarni to'ldiring. Qayta eshitib takrorlang. Juftlikda sahnalashtiring.",
+     "explanationUz": "SALOMLASHISH — rasmiylik darajasi bo'yicha uchta qatlam:\n\n  RASMIY:     Good morning. How are you? → Very well, thank you.\n  ODATIY:     Hello. How are things?     → Fine, thanks.\n  NORASMIY:   Hi! How are you?           → Not bad. / Okay.\n\nJavob berilgach, savolni QAYTARISH odat:\n  'And you?' yoki 'How are you?'\n\nJavob variantlari (yaxshidan yomonga):\n  Very well → Fine → All right → Okay → Not bad",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 17,
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "A: Good morning, Paul. 1) ___ are you?",
+       "answer": "How",
+       "promptUz": "Xayrli tong, Paul. Qalaysiz?",
+       "speak": "A: Good morning, Paul. 1) ___ are you?"
+      },
+      {
+       "prompt": "B: Very well, thanks. And 2) ___ ?",
+       "answer": "you",
+       "promptUz": "Juda yaxshi, rahmat. Siz-chi?",
+       "speak": "B: Very well, thanks. And 2) ___ ?"
+      },
+      {
+       "prompt": "B: 3) ___ , thanks. How are you?",
+       "answer": "Fine",
+       "promptUz": "Yaxshi, rahmat. Siz qalaysiz?",
+       "speak": "B: 3) ___ , thanks. How are you?"
+      },
+      {
+       "prompt": "B: 4) ___ bad. And you?",
+       "answer": "Not",
+       "promptUz": "Yomon emas. Siz-chi?",
+       "speak": "B: 4) ___ bad. And you?"
+      }
+     ]
+    },
+    {
+     "ref": "20b",
+     "instructionEn": "Read and fill in the speech bubbles with the sentences below. Now, listen and repeat. Finally, close your books and act out similar dialogues in pairs.",
+     "instructionUz": "O'qing va gap pufakchalarini quyidagi gaplar bilan to'ldiring. So'ng eshitib takrorlang. Nihoyat, kitobni yopib, juftlikda shunga o'xshash dialog tuzing.",
+     "explanationUz": "XAYRLASHISH iboralari:\n\n  Goodbye — rasmiy, to'liq shakl\n  Bye     — norasmiy, qisqa\n  See you (later) — Ko'rishguncha\n  Have a nice evening — Kechangiz xayrli o'tsin\n\nJAVOB QOIDASI: kimdir sizga yaxshi tilak bildirsa,\n'You too' (Sizga ham) deb javob beriladi.\n  'Have a nice evening.' → 'You too.'\nBu juda tez-tez ishlatiladi va yodlab olish kerak.",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 17,
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1 — farzandning pufakchasi",
+       "answer": "Bye, Mum. See you.",
+       "promptUz": "Xayr, oyi. Ko'rishguncha."
+      },
+      {
+       "prompt": "2 — ikkinchi odamning pufakchasi",
+       "answer": "You too. Goodbye.",
+       "promptUz": "Sizga ham. Xayr."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u2-coursebook-14-6",
    "kind": "game",
    "title": "Game",
@@ -1820,6 +1970,136 @@
    ]
   },
   {
+   "id": "u2-coursebook-17-13",
+   "kind": "game",
+   "title": "Vocabulary Revision Game",
+   "titleUz": "Lug'at takrorlash o'yini",
+   "book": "coursebook",
+   "bookPage": 17,
+   "exercises": [
+    {
+     "ref": "19",
+     "instructionEn": "Work in two teams. Take it in turns to choose words from the list and make sentences. Each correct answer gets one point. The team with the most points is the winner.",
+     "instructionUz": "Ikki jamoaga bo'linib ishlang. Navbat bilan ro'yxatdan so'z tanlab, gap tuzing. Har to'g'ri javob 1 ball. Ko'p ball to'plagan jamoa g'olib.",
+     "explanationUz": "Butun Unit 2 lug'ati bir joyda. Har so'z uchun mos QOLIPNI tanlang:\n\n• Tashqi ko'rinish sifati → 'He is slim.'\n• Soch/yuz qismi → 'She has got full lips.'\n• Qobiliyat → 'He can speak Italian.'\n• Ravish → 'She can run quite fast.'\n\nDIQQAT — 'with' qolipi: odamni bir gapda tasvirlash uchun ishlatiladi:\n  'a man WITH a beard' = soqolli erkak\n  'a girl WITH long hair' = uzun sochli qiz\nBu 'who has got' ning qisqa varianti.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 17,
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "slim",
+       "answer": "My sister is slim.",
+       "promptUz": "Singlim nozik.",
+       "speak": "slim"
+      },
+      {
+       "prompt": "full lips",
+       "answer": "She has got full lips.",
+       "promptUz": "Uning labi to'la.",
+       "speak": "full lips"
+      },
+      {
+       "prompt": "moustache",
+       "answer": "My uncle has got a moustache.",
+       "promptUz": "Tog'amning mo'ylovi bor.",
+       "speak": "moustache"
+      },
+      {
+       "prompt": "straight hair",
+       "answer": "Anna has got long straight hair.",
+       "promptUz": "Annaning uzun tekis sochi bor.",
+       "speak": "straight hair"
+      },
+      {
+       "prompt": "beard",
+       "answer": "The old man has got a white beard.",
+       "promptUz": "Keksa erkakning oq soqoli bor.",
+       "speak": "beard"
+      },
+      {
+       "prompt": "with",
+       "answer": "The man with a beard is my teacher.",
+       "promptUz": "Soqolli erkak — mening o'qituvchim.",
+       "speak": "with"
+      },
+      {
+       "prompt": "wavy",
+       "answer": "Mario has got brown wavy hair.",
+       "promptUz": "Marioning jigarrang to'lqinsimon sochi bor.",
+       "speak": "wavy"
+      },
+      {
+       "prompt": "well-built",
+       "answer": "He is tall and well-built.",
+       "promptUz": "U baland va baquvvat.",
+       "speak": "well-built"
+      },
+      {
+       "prompt": "speak Italian",
+       "answer": "She can speak Italian very well.",
+       "promptUz": "U italyanchani juda yaxshi gapiradi.",
+       "speak": "speak Italian"
+      },
+      {
+       "prompt": "yellowish complexion",
+       "answer": "They have got a yellowish complexion.",
+       "promptUz": "Ularning yuz rangi sarg'ish.",
+       "speak": "yellowish complexion"
+      },
+      {
+       "prompt": "skin",
+       "answer": "He has got dark skin.",
+       "promptUz": "Uning terisi to'q.",
+       "speak": "skin"
+      },
+      {
+       "prompt": "flattish nose",
+       "answer": "She has got a wide, flattish nose.",
+       "promptUz": "Uning keng, yassiroq burni bor.",
+       "speak": "flattish nose"
+      },
+      {
+       "prompt": "swim",
+       "answer": "I can swim quite fast.",
+       "promptUz": "Men ancha tez suza olaman.",
+       "speak": "swim"
+      },
+      {
+       "prompt": "slanting eyes",
+       "answer": "He has got dark slanting eyes.",
+       "promptUz": "Uning qiyshiq qora ko'zi bor.",
+       "speak": "slanting eyes"
+      },
+      {
+       "prompt": "quite fast",
+       "answer": "My brother can run quite fast.",
+       "promptUz": "Akam ancha tez yugura oladi.",
+       "speak": "quite fast"
+      },
+      {
+       "prompt": "sign",
+       "answer": "Can you sign here, please?",
+       "promptUz": "Shu yerga imzo cheka olasizmi?",
+       "speak": "sign"
+      },
+      {
+       "prompt": "very well",
+       "answer": "Ann can cook very well.",
+       "promptUz": "Ann juda yaxshi ovqat pishiradi.",
+       "speak": "very well"
+      },
+      {
+       "prompt": "very dark skin",
+       "answer": "They have got very dark skin.",
+       "promptUz": "Ularning terisi juda to'q.",
+       "speak": "very dark skin"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u2-coursebook-15-8",
    "kind": "writing",
    "title": "Writing (Project)",
@@ -1844,6 +2124,64 @@
       {
        "prompt": "Namuna bo'yicha yozing",
        "answer": "This is Sally. She is middle-aged. She has got long straight fair hair and blue eyes. She is quite short and slim."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2-coursebook-17-16",
+   "kind": "writing",
+   "title": "Writing",
+   "titleUz": "Yozish",
+   "book": "coursebook",
+   "bookPage": 17,
+   "exercises": [
+    {
+     "ref": "Writing",
+     "instructionEn": "Complete the table with information about yourself, then write an Internet advertisement for a pen-friend. Use the texts in Ex. 4 as a model. Start with: Hello!/Hi!... Finish with: Please e-mail me today./Please, be my e-mail pen pal/Hope to hear from you soon.",
+     "instructionUz": "Jadvalni o'zingiz haqingizdagi ma'lumot bilan to'ldiring, so'ng pen-friend uchun internet e'lonini yozing. Ex. 4 dagi matnlarni namuna qiling. Boshlanishi: Hello!/Hi!... Oxiri: Please e-mail me today. / Please, be my e-mail pen pal / Hope to hear from you soon.",
+     "explanationUz": "Unit 2 ning YAKUNIY ishi — jadvaldagi 9 qator 6 ta gapga aylanadi:\n\n  1) Hi! My name's X and I'm ... years old.   (Name + Age)\n  2) I live in SHAHAR, MAMLAKAT.              (Live in)\n  3) I have got SOCH hair and RANG eyes.      (Hair + Eyes)\n  4) I'm BO'Y and GAVDA.                      (Height + Build)\n  5) I like/love + FE'L-ing.                  (Like)\n  6) I can + FE'L + daraja.                   (Can)\n  7) CHAQIRIQ jumlasi.\n\nHar gap Unit 2 da o'rgangan bitta grammatikani ishlatadi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 17,
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "Namuna bo'yicha yozing",
+       "answer": "Hi! My name's Aziz and I'm fifteen years old. I live in Tashkent, Uzbekistan. I have got short straight dark hair and brown eyes. I'm quite tall and slim. I like playing football and reading. I can speak Russian quite well. Please e-mail me today!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2-coursebook-17-17",
+   "kind": "words_of_wisdom",
+   "title": "Words of Wisdom",
+   "titleUz": "Hikmatli so'zlar",
+   "book": "coursebook",
+   "bookPage": 17,
+   "exercises": [
+    {
+     "ref": "Words of Wisdom",
+     "instructionEn": "Read these sentences. What do they mean?",
+     "instructionUz": "Bu gaplarni o'qing. Ular nimani anglatadi?",
+     "explanationUz": "Ikkala maqol ham DO'STLIK haqida — Unit 2 nomiga ('A Friend in Need') mos.\nBirinchisi kitob unitining nomidan olingan.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 17,
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "A friend in need is a friend indeed.",
+       "uz": "Boshingga ish tushganda yordam bergan — haqiqiy do'st.",
+       "note": "Ma'nosi: haqiqiy do'st sizga QIYIN paytda yordam beradi.\n'in need' — muhtoj holatda · 'indeed' — haqiqatan.\nDIQQAT: 'need' va 'indeed' qofiyalanadi — shuning uchun esda qoladi.\nUnit nomi shu maqoldan olingan."
+      },
+      {
+       "en": "Lend your money and lose your friend.",
+       "uz": "Pulingni qarz ber — do'stingni yo'qot.",
+       "note": "Ma'nosi: do'stga pul qarz berish do'stlikni buzishi mumkin.\n'lend' — qarz BERMOQ · 'borrow' — qarz OLMOQ (ikkalasini adashtirmang!)\n'lend' va 'lose' bir xil tovush bilan boshlanadi — bu ham esda saqlashga yordam beradi."
       }
      ]
     }
@@ -2474,6 +2812,114 @@
    ],
    "book": "coursebook",
    "bookPage": 16
+  },
+  {
+   "ruleUz": "Rasmiy → norasmiy qisqartma",
+   "explanationUz": "Kundalik nutqda uzun shakllar qisqaradi.",
+   "items": [
+    {
+     "base": "Goodbye",
+     "baseUz": "xayr (rasmiy)",
+     "derived": "Bye",
+     "derivedUz": "xayr (norasmiy)",
+     "note": "qisqargan"
+    },
+    {
+     "base": "Mother",
+     "baseUz": "ona",
+     "derived": "Mum",
+     "derivedUz": "oyi",
+     "note": "AQShda 'Mom'"
+    },
+    {
+     "base": "Father",
+     "baseUz": "ota",
+     "derived": "Dad",
+     "derivedUz": "dada",
+     "note": ""
+    },
+    {
+     "base": "See you later",
+     "baseUz": "keyinroq ko'rishamiz",
+     "derived": "See you",
+     "derivedUz": "ko'rishguncha",
+     "note": "yanada qisqa: 'Cya'"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 17
+  },
+  {
+   "ruleUz": "MA'NO O'ZGARTIRUVCHI tovush juftlari (/ɪ/ ↔ /iː/)",
+   "explanationUz": "Faqat bitta tovush farq qiladi, lekin so'z butunlay boshqa ma'noni beradi.\nBu juftlarni ATAYLAB mashq qilish kerak.",
+   "items": [
+    {
+     "base": "ship /ɪ/",
+     "baseUz": "kema",
+     "derived": "sheep /iː/",
+     "derivedUz": "qo'y",
+     "note": "qisqa ↔ uzun"
+    },
+    {
+     "base": "sit /ɪ/",
+     "baseUz": "o'tirmoq",
+     "derived": "seat /iː/",
+     "derivedUz": "o'rindiq",
+     "note": "qisqa ↔ uzun"
+    },
+    {
+     "base": "live /ɪ/",
+     "baseUz": "yashamoq",
+     "derived": "leave /iː/",
+     "derivedUz": "ketmoq",
+     "note": "qisqa ↔ uzun"
+    },
+    {
+     "base": "fill /ɪ/",
+     "baseUz": "to'ldirmoq",
+     "derived": "feel /iː/",
+     "derivedUz": "his qilmoq",
+     "note": "qisqa ↔ uzun"
+    },
+    {
+     "base": "bin /ɪ/",
+     "baseUz": "chelak",
+     "derived": "bean /iː/",
+     "derivedUz": "loviya",
+     "note": "qisqa ↔ uzun"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 17
+  },
+  {
+   "ruleUz": "Fe'l → bajaruvchi (-er)",
+   "explanationUz": "Talaffuz mashqidagi so'zlar shu qoida bilan yasalgan.",
+   "items": [
+    {
+     "base": "teach",
+     "baseUz": "o'rgatmoq",
+     "derived": "teacher",
+     "derivedUz": "o'qituvchi",
+     "note": "/iː/ uzun"
+    },
+    {
+     "base": "sing",
+     "baseUz": "kuylamoq",
+     "derived": "singer",
+     "derivedUz": "qo'shiqchi",
+     "note": "/ɪ/ qisqa"
+    },
+    {
+     "base": "read",
+     "baseUz": "o'qimoq",
+     "derived": "reader",
+     "derivedUz": "o'quvchi (kitobxon)",
+     "note": "/iː/ uzun"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 17
   }
  ],
  "sentencePatterns": [
@@ -2668,6 +3114,38 @@
    "explanationUz": "Do'kon, klub, bankda eng ko'p eshitiladigan savol. Javobda 'I'd like to' — muloyim shakl.",
    "book": "coursebook",
    "bookPage": 16
+  },
+  {
+   "formula": "SALOM: SALOMLASHISH + How are you? → JAVOB + And you?",
+   "exampleEn": "Good morning, Paul. How are you? — Very well, thanks. And you?",
+   "exampleUz": "Xayrli tong, Paul. Qalaysiz? — Juda yaxshi, rahmat. Siz-chi?",
+   "explanationUz": "Javob bergach savolni QAYTARISH shart — aks holda qo'pol eshitiladi.\nQaytarish uchun: 'And you?' yoki 'How are you?'",
+   "book": "coursebook",
+   "bookPage": 17
+  },
+  {
+   "formula": "XAYR: Goodbye/Bye + tilak → You too.",
+   "exampleEn": "Goodbye. Have a nice evening. — You too. Goodbye.",
+   "exampleUz": "Xayr. Kechangiz xayrli o'tsin. — Sizga ham. Xayr.",
+   "explanationUz": "'You too' — tilakni qaytarish. Juda tez-tez ishlatiladi.\nUzun javob shart emas: 'You too' o'zi yetarli.",
+   "book": "coursebook",
+   "bookPage": 17
+  },
+  {
+   "formula": "E'LON: Hi! My name's X and I'm ... → ... → CHAQIRIQ",
+   "exampleEn": "Hi! My name's Aziz and I'm fifteen years old. ... Please e-mail me today!",
+   "exampleUz": "Salom! Mening ismim Aziz va men o'n besh yoshdaman. ... Bugunoq menga e-xat yozing!",
+   "explanationUz": "E'lon HAR DOIM chaqiriq bilan tugaydi — aks holda o'quvchi javob bermaydi.\nUchta tayyor variant bor (Please e-mail me / be my pen pal / Hope to hear).",
+   "book": "coursebook",
+   "bookPage": 17
+  },
+  {
+   "formula": "TASVIR: NARSA/ODAM + with + XUSUSIYAT",
+   "exampleEn": "The man with a beard is my teacher.",
+   "exampleUz": "Soqolli erkak — mening o'qituvchim.",
+   "explanationUz": "'with' — 'who has got' ning qisqa varianti. Gapni ixchamlashtiradi:\n  'the man who has got a beard' → 'the man with a beard'",
+   "book": "coursebook",
+   "bookPage": 17
   }
  ],
  "vocabulary": [
@@ -3110,6 +3588,86 @@
   {
    "en": "Mr / Mrs / Ms",
    "uz": "janob / xonim"
+  },
+  {
+   "en": "How are you?",
+   "uz": "Qalaysiz?"
+  },
+  {
+   "en": "How are things?",
+   "uz": "Ishlar qalay?"
+  },
+  {
+   "en": "Very well",
+   "uz": "Juda yaxshi"
+  },
+  {
+   "en": "Fine",
+   "uz": "Yaxshi"
+  },
+  {
+   "en": "All right",
+   "uz": "Yaxshi, mayli"
+  },
+  {
+   "en": "Not bad",
+   "uz": "Yomon emas"
+  },
+  {
+   "en": "Okay",
+   "uz": "Mayli, yaxshi"
+  },
+  {
+   "en": "Goodbye",
+   "uz": "Xayr (rasmiy)"
+  },
+  {
+   "en": "Bye",
+   "uz": "Xayr (norasmiy)"
+  },
+  {
+   "en": "See you later",
+   "uz": "Keyinroq ko'rishamiz"
+  },
+  {
+   "en": "Have a nice evening",
+   "uz": "Kechangiz xayrli o'tsin"
+  },
+  {
+   "en": "You too",
+   "uz": "Sizga ham"
+  },
+  {
+   "en": "Mum",
+   "uz": "oyi"
+  },
+  {
+   "en": "to lend",
+   "uz": "qarz bermoq"
+  },
+  {
+   "en": "to borrow",
+   "uz": "qarz olmoq"
+  },
+  {
+   "en": "to lose",
+   "uz": "yo'qotmoq"
+  },
+  {
+   "en": "in need",
+   "uz": "muhtoj holatda"
+  },
+  {
+   "en": "indeed",
+   "uz": "haqiqatan"
+  },
+  {
+   "en": "singer",
+   "uz": "qo'shiqchi"
+  },
+  {
+   "en": "pen pal",
+   "uz": "xat orqali do'st"
   }
  ]
 }
