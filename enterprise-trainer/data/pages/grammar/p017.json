@@ -1,0 +1,422 @@
+{
+  "book": "grammar",
+  "pdfPage": 17,
+  "bookPage": 16,
+  "unit": 4,
+  "unitTitle": "Like Father, like Son",
+  "module": 2,
+  "pairsWith": "Coursebook 28–29-betlar, 1-epizod (25-bet)",
+  "sections": [
+    {
+      "kind": "grammar_theory",
+      "title": "Personal Pronouns",
+      "titleUz": "Shaxs olmoshlari",
+      "rule": {
+        "titleUz": "Ega va obyekt shaxs olmoshlari",
+        "explanationUz": "EGA OLMOSHLARI (Subject Personal pronouns):\n  Birlik: I, you, he, she, it\n  Ko'plik: we, you, they\n\nOBYEKT OLMOSHLARI (Object Personal pronouns):\n  Birlik: me, you, him, her, it\n  Ko'plik: us, you, them\n\nQAYSI BIRI QACHON:\n  EGA olmoshi   — fe'ldan OLDIN\n  OBYEKT olmoshi — fe'l yoki PREDLOGDAN keyin\n\n  THEY are doctors.   (ega, fe'ldan oldin)\n  Look at ME.         (obyekt, predlogdan keyin)",
+        "rules": [
+          {
+            "uzRule": "Ega olmoshi FE'LDAN OLDIN, odam yoki ot nomi o'rniga ishlatiladi.",
+            "enRule": "We use subject personal pronouns before a verb instead of the name of a person or a noun.",
+            "examples": ["They are doctors."]
+          },
+          {
+            "uzRule": "'I' HAR DOIM katta harf bilan yoziladi.",
+            "enRule": "We always write I with a capital letter.",
+            "examples": ["He's Jack and I'm Steve."]
+          },
+          {
+            "uzRule": "'he' — erkak yoki o'g'il bola uchun.",
+            "enRule": "We use he for a man or boy.",
+            "examples": ["Tony → he"]
+          },
+          {
+            "uzRule": "'she' — ayol yoki qiz uchun.",
+            "enRule": "We use she for a woman or girl.",
+            "examples": ["Sheila → she"]
+          },
+          {
+            "uzRule": "'it' — narsa uchun. Jinsi noma'lum hayvon uchun ham 'it'.",
+            "enRule": "We use it for a thing. We also use it for an animal whose sex we do not know.",
+            "examples": ["a table → it", "a tiger → it"]
+          },
+          {
+            "uzRule": "Hayvon uy hayvonimiz bo'lsa yoki jinsini bilsak — he yoki she.",
+            "enRule": "If the animal is our pet or we know its sex we can use he or she.",
+            "examples": ["This is my dog Rex. He's one year old."]
+          },
+          {
+            "uzRule": "'they' — ko'plikda odam, hayvon va narsalar uchun.",
+            "enRule": "We use they in the plural for people, animals or things.",
+            "examples": ["Tom and Ann → they", "three cats → they", "two tables → they"]
+          },
+          {
+            "uzRule": "Obyekt olmoshi FE'L yoki PREDLOGDAN keyin, to'ldiruvchi sifatida.",
+            "enRule": "We use object personal pronouns after a verb or a preposition as objects.",
+            "examples": ["Look at me."]
+          }
+        ],
+        "warningUz": "'I' KATTA HARF QOIDASI — o'zbek tilida yo'q, shuning uchun\neng ko'p unutiladigan qoida:\n  ✅ He's Jack and I'm Steve.\n  ❌ He's Jack and i'm Steve.\n\n'I' gap o'rtasida bo'lsa ham katta harf bilan yoziladi.\nBoshqa hech qanday olmosh bunday emas: he, she, it, we, they —\nhammasi kichik harf bilan.",
+        "noteUz": "HAYVONLAR HAQIDA — kitobning nozik qoidasi:\n\n  a tiger → IT      (yovvoyi hayvon, jinsi noma'lum)\n  my dog Rex → HE   (uy hayvoni, jinsi ma'lum)\n\nBu farq muhim: 'it' hayvonni NARSA darajasiga tushiradi.\nUy hayvonini 'it' desangiz, egasi xafa bo'lishi mumkin —\ningliz madaniyatida uy hayvoni oila a'zosi hisoblanadi.",
+        "extraUz": "'YOU' — eng qulay olmosh:\n  • birlik ham, ko'plik ham (sen / sizlar)\n  • ega ham, obyekt ham (sen / senga)\nYa'ni to'rt vazifada bitta so'z. O'zbekchada esa\n'sen, siz, sizlar, senga, sizga' — bir necha shakl bor."
+      },
+      "exercises": [
+        {
+          "ref": "16-olmosh",
+          "type": "word_choice",
+          "instructionEn": "Choose the correct pronoun.",
+          "instructionUz": "To'g'ri olmoshni tanlang.",
+          "explanationUz": "Har bir bandda ikki savol bering:\n  1) Bu kim/nima — erkak, ayol, narsa, ko'pmi?\n  2) U fe'ldan OLDINmi (ega) yoki KEYINmi (obyekt)?",
+          "bookRef": "Grammar Book, 16-bet, Personal Pronouns",
+          "items": [
+            { "textEn": "Tony → ____", "uz": "Toni — qaysi olmosh?", "options": ["he", "she", "it", "they"], "answer": "he", "whyUz": "Erkak ismi → he." },
+            { "textEn": "Sheila → ____", "uz": "Sheila — qaysi olmosh?", "options": ["she", "he", "it", "they"], "answer": "she", "whyUz": "Ayol ismi → she." },
+            { "textEn": "a table → ____", "uz": "stol — qaysi olmosh?", "options": ["it", "he", "she", "they"], "answer": "it", "whyUz": "Narsa → it." },
+            { "textEn": "a tiger (jinsi noma'lum) → ____", "uz": "yo'lbars — qaysi olmosh?", "options": ["it", "he", "she", "they"], "answer": "it", "whyUz": "Jinsi noma'lum hayvon → it." },
+            { "textEn": "my dog Rex (uy hayvoni, erkak) → ____", "uz": "itim Reks — qaysi olmosh?", "options": ["he", "it", "she", "they"], "answer": "he", "whyUz": "Uy hayvoni va jinsi ma'lum → he." },
+            { "textEn": "Tom and Ann → ____", "uz": "Tom va Ann — qaysi olmosh?", "options": ["they", "he", "she", "it"], "answer": "they", "whyUz": "Ko'plik odam → they." },
+            { "textEn": "three cats → ____", "uz": "uchta mushuk — qaysi olmosh?", "options": ["they", "it", "he", "she"], "answer": "they", "whyUz": "Ko'plik hayvon → they." },
+            { "textEn": "two tables → ____", "uz": "ikkita stol — qaysi olmosh?", "options": ["they", "it", "he", "she"], "answer": "they", "whyUz": "Ko'plik narsa → they." },
+            { "textEn": "____ are doctors. (Tom va Ann)", "uz": "Fe'ldan oldin — ega shakli", "options": ["They", "Them"], "answer": "They", "whyUz": "Fe'l ('are') dan oldin → EGA shakli." },
+            { "textEn": "Look at ____ . (men)", "uz": "Predlogdan keyin — obyekt shakli", "options": ["me", "I"], "answer": "me", "whyUz": "'at' predlogidan keyin → OBYEKT shakli." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_theory",
+      "title": "Possessives",
+      "titleUz": "Egalik shakllari",
+      "rule": {
+        "titleUz": "Egalik sifati va egalik olmoshi",
+        "explanationUz": "EGALIK SIFATLARI (Possessive adjectives):\n  Birlik: my, your, his, her, its\n  Ko'plik: our, your, their\n\nEGALIK OLMOSHLARI (Possessive pronouns):\n  Birlik: mine, yours, his, hers, — (yo'q)\n  Ko'plik: ours, yours, theirs\n\nFARQI BITTA:\n  EGALIK SIFATI  → keyin OT keladi\n  EGALIK OLMOSHI → keyin ot KELMAYDI\n\n  This is MY car.  →  It's MINE.\n         ↑ + ot            ↑ otsiz",
+        "rules": [
+          {
+            "uzRule": "Egalik sifatlari ikki narsani ko'rsatadi: a) narsa kimga tegishli, b) odamlar orasidagi munosabat. OTDAN OLDIN turadi.",
+            "enRule": "Possessive adjectives show a) that something belongs to someone and b) the relationship between two or more people. We put them before nouns.",
+            "examples": ["This is my house. (narsa kimga tegishli)", "He is my brother. (munosabat)"]
+          },
+          {
+            "uzRule": "Egalik olmoshlari narsa kimga tegishli ekanini ko'rsatadi. Ulardan keyin OT QO'YILMAYDI.",
+            "enRule": "Possessive pronouns show that something belongs to someone. They do not take a noun after them.",
+            "examples": ["This is my car. It's mine."]
+          },
+          {
+            "uzRule": "'it' uchun egalik olmoshi YO'Q.",
+            "enRule": "Note that there is no possessive pronoun for it.",
+            "examples": ["its car (sifat) — lekin 'It's its' deyilmaydi"]
+          }
+        ],
+        "warningUz": "IKKITA XATO:\n\n  1) Egalik olmoshidan keyin ot qo'yish:\n     ❌ It's mine car.   ✅ It's my car. / It's mine.\n\n  2) Apostrof qo'yish:\n     ❌ your's, her's, our's, their's, it's (egalik ma'nosida)\n     ✅ yours, hers, ours, theirs, its\n\nEGALIK olmoshlarida apostrof HECH QACHON bo'lmaydi.",
+        "noteUz": "IKKI VAZIFA — kitob aytgan muhim nuqta:\n\n  a) NARSA kimga tegishli:\n     This is MY house.  — Bu mening uyim.\n\n  b) ODAMLAR orasidagi MUNOSABAT:\n     He is MY brother.  — U mening akam.\n\nIkkinchisida 'egalik' emas, QARINDOSHLIK bildiriladi.\nLekin grammatik shakli bir xil."
+      },
+      "exercises": [
+        {
+          "ref": "16-egalik",
+          "type": "word_choice",
+          "instructionEn": "Choose the possessive adjective or the possessive pronoun.",
+          "instructionUz": "Egalik sifati yoki egalik olmoshini tanlang.",
+          "explanationUz": "OSON QOIDA: keyin OT bormi?\n  Bor  → egalik SIFATI (my, your, his, her, its, our, their)\n  Yo'q → egalik OLMOSHI (mine, yours, his, hers, ours, theirs)",
+          "bookRef": "Grammar Book, 16-bet, Possessives",
+          "items": [
+            { "textEn": "This is ____ house.", "uz": "Keyin ot bor", "options": ["my", "mine"], "answer": "my", "whyUz": "'house' oti bor → egalik SIFATI." },
+            { "textEn": "This is my car. It's ____ .", "uz": "Keyin ot yo'q", "options": ["mine", "my"], "answer": "mine", "whyUz": "Ot yo'q → egalik OLMOSHI." },
+            { "textEn": "He is ____ brother.", "uz": "Keyin ot bor (munosabat)", "options": ["my", "mine"], "answer": "my", "whyUz": "'brother' oti bor → egalik sifati. Bu yerda munosabat bildirilyapti." },
+            { "textEn": "Is this bag ____ ?", "uz": "Keyin ot yo'q", "options": ["yours", "your"], "answer": "yours", "whyUz": "Gap oxirida, ot yo'q → egalik olmoshi." },
+            { "textEn": "____ room is very big.", "uz": "Keyin ot bor", "options": ["Their", "Theirs"], "answer": "Their", "whyUz": "'room' oti bor → egalik sifati." },
+            { "textEn": "The room is ____ .", "uz": "Keyin ot yo'q", "options": ["theirs", "their"], "answer": "theirs", "whyUz": "Ot yo'q → egalik olmoshi." },
+            { "textEn": "It's ____ hat. (ayolniki)", "uz": "Keyin ot bor", "options": ["her", "hers"], "answer": "her", "whyUz": "'hat' oti bor → egalik sifati." },
+            { "textEn": "The hat is ____ . (ayolniki)", "uz": "Keyin ot yo'q", "options": ["hers", "her"], "answer": "hers", "whyUz": "Ot yo'q → egalik olmoshi." },
+            { "textEn": "This is ____ car. (uning, erkak)", "uz": "Keyin ot bor", "options": ["his", "him"], "answer": "his", "whyUz": "'his' — sifat ham, olmosh ham. Bu yerda ot bilan." },
+            { "textEn": "The car is ____ . (uniki, erkak)", "uz": "Keyin ot yo'q", "options": ["his", "him"], "answer": "his", "whyUz": "'his' o'zgarmaydi — ikkala vazifada ham bir xil." }
+          ]
+        },
+        {
+          "ref": "16-jadval",
+          "type": "fill_gap",
+          "instructionEn": "Complete the possessives table.",
+          "instructionUz": "Egalik jadvalini to'ldiring.",
+          "explanationUz": "Butun jadvalni yozib chiqing — ikki ustunni birga yodlash osonroq.",
+          "bookRef": "Grammar Book, 16-bet, Possessives jadvali",
+          "items": [
+            { "textEn": "I → egalik sifati / egalik olmoshi", "answer": "my / mine", "whyUz": "my house → It's mine." },
+            { "textEn": "you → egalik sifati / egalik olmoshi", "answer": "your / yours", "whyUz": "your book → It's yours." },
+            { "textEn": "he → egalik sifati / egalik olmoshi", "answer": "his / his", "whyUz": "Ikkalasi ham 'his'." },
+            { "textEn": "she → egalik sifati / egalik olmoshi", "answer": "her / hers", "whyUz": "her hat → It's hers." },
+            { "textEn": "it → egalik sifati / egalik olmoshi", "answer": "its / — (yo'q)", "whyUz": "Kitob aytadi: 'it' uchun egalik olmoshi yo'q." },
+            { "textEn": "we → egalik sifati / egalik olmoshi", "answer": "our / ours", "whyUz": "our room → It's ours." },
+            { "textEn": "they → egalik sifati / egalik olmoshi", "answer": "their / theirs", "whyUz": "their car → It's theirs." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_theory",
+      "title": "The Possessive Case",
+      "titleUz": "Qaratqich kelishigi ('s va s')",
+      "rule": {
+        "titleUz": "'s va ' bilan egalik",
+        "explanationUz": "Otga qo'shiladigan apostrof egalikni bildiradi.\nApostrof QAYERGA qo'yilishi otning shakliga bog'liq.\n\n  BIRLIK ot            → 's\n  KO'PLIK ot (-s bilan) → '\n  Ikki egasi            → 's faqat OXIRGISIGA",
+        "rules": [
+          {
+            "uzRule": "Ot BIRLIK bo'lsa — 's qo'shiladi.",
+            "enRule": "We add 's when a noun is singular to show possession.",
+            "examples": ["It's the woman's hat.", "It's her hat. The hat belongs to her."]
+          },
+          {
+            "uzRule": "Ot KO'PLIK va -s bilan tugasa — faqat apostrof (') qo'shiladi.",
+            "enRule": "We add ' when a noun is plural and ends in -s to show possession.",
+            "examples": ["This is the boys' room.", "It's their room. The room belongs to them."]
+          },
+          {
+            "uzRule": "Bir necha egasi bo'lsa — 's faqat OXIRGI otga qo'shiladi.",
+            "enRule": "We add 's to the last noun of a phrase to show possession.",
+            "examples": ["This is Tony and Mary's car.", "It's their car. The car belongs to them."]
+          }
+        ],
+        "warningUz": "Kitob har bir qoidani UCH XIL aytish bilan tushuntiradi:\n\n  It's the WOMAN'S hat.       (egalik shakli)\n  It's HER hat.               (egalik sifati)\n  The hat BELONGS TO her.     (belong to fe'li)\n\nUchalasi bir xil ma'no. Bu — foydali tekshiruv usuli:\nagar 'belongs to' bilan aytib bo'lsa, egalik to'g'ri qo'yilgan.",
+        "noteUz": "'BELONG TO' fe'li:\n  The hat belongs TO her.  — Shlyapa unga tegishli.\n  'to' predlogi SHART va undan keyin OBYEKT olmoshi keladi:\n  belongs to me / him / her / us / them\n  ('belongs to she' XATO)"
+      },
+      "exercises": [
+        {
+          "ref": "16-qaratqich",
+          "type": "fill_gap",
+          "instructionEn": "Write the possessive form and say it in three ways.",
+          "instructionUz": "Egalik shaklini yozing va uni uch xil aytib ko'ring.",
+          "explanationUz": "Kitobdagi uch xil aytish usuli:\n  1) ot + 's (egalik shakli)\n  2) egalik sifati\n  3) belong to + obyekt olmoshi",
+          "bookRef": "Grammar Book, 16-bet, The Possessive Case",
+          "items": [
+            { "textEn": "the hat of the woman → (egalik shakli)", "answer": "the woman's hat", "whyUz": "Birlik ot → 's." },
+            { "textEn": "the woman's hat → (egalik sifati bilan)", "answer": "her hat", "whyUz": "woman = she → her." },
+            { "textEn": "the woman's hat → (belong to bilan)", "answer": "The hat belongs to her.", "whyUz": "'belongs' — 3-shaxs birlik -s. 'to' dan keyin obyekt olmoshi." },
+            { "textEn": "the room of the boys → (egalik shakli)", "answer": "the boys' room", "whyUz": "Ko'plik va -s bilan tugaydi → faqat apostrof." },
+            { "textEn": "the boys' room → (egalik sifati bilan)", "answer": "their room", "whyUz": "boys = they → their." },
+            { "textEn": "the boys' room → (belong to bilan)", "answer": "The room belongs to them.", "whyUz": "they → them (obyekt shakli)." },
+            { "textEn": "the car of Tony and Mary → (egalik shakli)", "answer": "Tony and Mary's car", "whyUz": "Ikki egasi, bitta mashina → 's oxirgisiga." },
+            { "textEn": "Tony and Mary's car → (egalik sifati bilan)", "answer": "their car", "whyUz": "Tony and Mary = they → their." },
+            { "textEn": "Tony and Mary's car → (belong to bilan)", "answer": "The car belongs to them.", "whyUz": "they → them." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_theory",
+      "title": "Who - Whose",
+      "titleUz": "Who - Whose",
+      "rule": {
+        "titleUz": "Ikki so'roq so'zi",
+        "explanationUz": "Ikkalasi ham so'roq so'zi, lekin BOSHQA narsani so'raydi.\n\n  WHO   — ODAM haqida so'raydi (kim?)\n  WHOSE — EGALIK haqida so'raydi (kimning? kimniki?)\n\nTalaffuzi bir xil: /huː/ va /huːz/.\n'Who's' (= who is) va 'whose' esa TO'LIQ bir xil: /huːz/.",
+        "rules": [
+          {
+            "uzRule": "'Who' — so'roq so'zi. Odam haqida so'rash uchun.",
+            "enRule": "Who is a question word. We use it to ask about people.",
+            "examples": ["\"Who's George?\" \"He's my brother.\""]
+          },
+          {
+            "uzRule": "'Whose' — so'roq so'zi. Egalik haqida so'rash uchun.",
+            "enRule": "Whose is a question word. We use it to ask about possession.",
+            "examples": ["\"Whose is this house?\" \"It's Sheila's.\""]
+          }
+        ],
+        "warningUz": "AJRATISH USULI:\n  • Javob ODAM (He's my brother) → WHO\n  • Javob EGALIK ('s bilan: It's Sheila's) → WHOSE\n\nYOZUVDA:\n  Who's = Who is  (apostrof BOR)\n  Whose = kimning (apostrof YO'Q)",
+        "noteUz": "'Whose' ikki xil ishlatiladi:\n  Whose IS this house?   — otsiz (Whose = kimniki)\n  Whose HOUSE is this?   — ot bilan (Whose = kimning)\n\nIkkalasi ham to'g'ri va bir xil ma'no beradi."
+      },
+      "exercises": [
+        {
+          "ref": "16-who",
+          "type": "word_choice",
+          "instructionEn": "Fill in Who's or Whose.",
+          "instructionUz": "Who's yoki Whose — birini qo'ying.",
+          "explanationUz": "Javobga qarang: odammi yoki egalikmi?",
+          "bookRef": "Grammar Book, 16-bet, Who - Whose",
+          "items": [
+            { "textEn": "\"____ George?\" \"He's my brother.\"", "uz": "Javob — odam", "options": ["Who's", "Whose"], "answer": "Who's", "whyUz": "Javob 'He's my brother' — odamning kimligi → Who is." },
+            { "textEn": "\"____ is this house?\" \"It's Sheila's.\"", "uz": "Javob — egalik", "options": ["Whose", "Who's"], "answer": "Whose", "whyUz": "Javob 'It's Sheila's' — egalik → Whose." },
+            { "textEn": "\"____ car is this?\" \"It's my father's.\"", "uz": "Keyin ot bor, javob egalik", "options": ["Whose", "Who's"], "answer": "Whose", "whyUz": "Keyin 'car' oti keladi va javob egalik → Whose." },
+            { "textEn": "\"____ that man?\" \"He's my uncle.\"", "uz": "Javob — odam", "options": ["Who's", "Whose"], "answer": "Who's", "whyUz": "Javob odamning kimligi → Who is." },
+            { "textEn": "\"____ bag is on the table?\" \"It's Sheila's.\"", "uz": "Keyin ot bor, javob egalik", "options": ["Whose", "Who's"], "answer": "Whose", "whyUz": "Egalik so'ralyapti → Whose." },
+            { "textEn": "\"____ your teacher?\" \"Mr Brown.\"", "uz": "Javob — odam ismi", "options": ["Who's", "Whose"], "answer": "Who's", "whyUz": "Javob ism → Who is." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_theory",
+      "title": "The Imperative",
+      "titleUz": "Buyruq mayli",
+      "rule": {
+        "titleUz": "Buyruq va ko'rsatma",
+        "explanationUz": "Buyruq mayli — eng sodda gap turi.\nEGA YO'Q, zamon yo'q, faqat FE'L.\n\n  TASDIQ: fe'lning ASOS shakli\n    Come here.  — Bu yerga kel.\n\n  INKOR: don't + fe'lning ASOS shakli\n    Don't look at it.  — Unga qarama.",
+        "rules": [
+          {
+            "uzRule": "TASDIQ buyruq — fe'lning asos shakli bilan yasaladi.",
+            "enRule": "We form affirmative orders or instructions with the base form of the verb.",
+            "examples": ["Come here."]
+          },
+          {
+            "uzRule": "INKOR buyruq — don't + fe'lning asos shakli.",
+            "enRule": "We form negative orders or instructions with don't + base form of the verb.",
+            "examples": ["Don't look at it."]
+          },
+          {
+            "uzRule": "Buyruq mayli BUYRUQ berish yoki KO'RSATMA berish uchun ishlatiladi.",
+            "enRule": "We use the imperative to give orders or instructions.",
+            "examples": ["Stand up! (order — buyruq)", "First add the milk then add the sugar. (instruction — ko'rsatma)"]
+          }
+        ],
+        "warningUz": "BUYRUQDA EGA QO'YILMAYDI:\n  ✅ Come here.        ❌ You come here.\n  ✅ Don't look at it. ❌ You don't look at it.\n\nVa fe'l HECH QANDAY qo'shimcha olmaydi:\n  ✅ Come    ❌ Comes  ❌ Coming  ❌ To come\n\n'to be' fe'li buyruqda 'BE' shaklida:\n  ✅ Be careful!   ❌ Are careful!",
+        "noteUz": "BUYRUQ ↔ KO'RSATMA — farqi ohangda va vaziyatda:\n\n  ORDER (buyruq)      — kimgadir nima qilishni AYTASIZ\n    Stand up!  Sit down!  Come here!\n    Ko'pincha undov belgisi bilan.\n\n  INSTRUCTION (ko'rsatma) — qanday qilishni TUSHUNTIRASIZ\n    First add the milk, then add the sugar.\n    Retsept, qo'llanma, yo'l ko'rsatishda.\n    Ko'pincha 'first, then, next, finally' bilan.\n\nGrammatik shakli BIR XIL — faqat maqsad boshqa."
+      },
+      "exercises": [
+        {
+          "ref": "16-buyruq",
+          "type": "fill_gap",
+          "instructionEn": "Write the imperative form.",
+          "instructionUz": "Buyruq shaklini yozing.",
+          "explanationUz": "Tasdiq — fe'lning asos shakli. Inkor — don't + asos shakl.",
+          "bookRef": "Grammar Book, 16-bet, The Imperative",
+          "items": [
+            { "textEn": "to come here → (tasdiq buyruq)", "answer": "Come here.", "whyUz": "'to' tushadi, fe'l asos shaklida." },
+            { "textEn": "to look at it → (inkor buyruq)", "answer": "Don't look at it.", "whyUz": "don't + asos shakl." },
+            { "textEn": "to stand up → (tasdiq buyruq)", "answer": "Stand up!", "whyUz": "Buyruq — undov belgisi bilan." },
+            { "textEn": "to sit down → (inkor buyruq)", "answer": "Don't sit down!", "whyUz": "don't + asos shakl." },
+            { "textEn": "to be careful → (tasdiq buyruq)", "answer": "Be careful!", "whyUz": "'to be' buyruqda 'be' bo'ladi — 'are' EMAS." },
+            { "textEn": "to be afraid → (inkor buyruq)", "answer": "Don't be afraid!", "whyUz": "don't + be." },
+            { "textEn": "to add the milk first → (ko'rsatma)", "answer": "First add the milk.", "whyUz": "Ko'rsatma. 'first' tartibni bildiradi." },
+            { "textEn": "to add the sugar then → (ko'rsatma)", "answer": "Then add the sugar.", "whyUz": "Ko'rsatma. 'then' keyingi qadam." },
+            { "textEn": "to open the door → (tasdiq buyruq, muloyim)", "answer": "Please open the door.", "whyUz": "'please' buyruqni muloyim qiladi." },
+            { "textEn": "to worry → (inkor buyruq)", "answer": "Don't worry.", "whyUz": "don't + asos shakl. Tinchlantirish iborasi." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Grammar Book 16-bet — olmoshlar tizimi to'liq ko'rinishda.",
+    "groups": [
+      {
+        "ruleUz": "To'rt qatorli olmosh tizimi",
+        "explanationUz": "Har bir shaxs uchun to'rt shakl bor. Ularni QATOR bo'yicha yodlang — birini bilsangiz, qolganini eslaysiz.",
+        "items": [
+          { "base": "I", "baseUz": "men", "derived": "me / my / mine", "derivedUz": "menga / mening / meniki", "note": "obyekt / sifat / olmosh" },
+          { "base": "you", "baseUz": "sen, siz", "derived": "you / your / yours", "derivedUz": "senga / sening / seniki", "note": "obyekt o'zgarmaydi" },
+          { "base": "he", "baseUz": "u (erkak)", "derived": "him / his / his", "derivedUz": "unga / uning / uniki", "note": "sifat va olmosh bir xil" },
+          { "base": "she", "baseUz": "u (ayol)", "derived": "her / her / hers", "derivedUz": "unga / uning / uniki", "note": "obyekt va sifat bir xil" },
+          { "base": "it", "baseUz": "u (narsa)", "derived": "it / its / —", "derivedUz": "unga / uning / (yo'q)", "note": "egalik olmoshi YO'Q" },
+          { "base": "we", "baseUz": "biz", "derived": "us / our / ours", "derivedUz": "bizga / bizning / bizniki", "note": "" },
+          { "base": "they", "baseUz": "ular", "derived": "them / their / theirs", "derivedUz": "ularga / ularning / ularniki", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Egalikni uch xil aytish",
+        "explanationUz": "Bitta fikrni uch xil ifodalash mumkin — bu til boyligini oshiradi.",
+        "items": [
+          { "base": "the woman's hat", "baseUz": "egalik shakli", "derived": "her hat", "derivedUz": "egalik sifati", "note": "uchinchisi: The hat belongs to her." },
+          { "base": "the boys' room", "baseUz": "egalik shakli", "derived": "their room", "derivedUz": "egalik sifati", "note": "The room belongs to them." },
+          { "base": "Tony and Mary's car", "baseUz": "egalik shakli", "derived": "their car", "derivedUz": "egalik sifati", "note": "The car belongs to them." }
+        ]
+      },
+      {
+        "ruleUz": "Buyruq: fe'lning asos shakli",
+        "explanationUz": "'to' tushadi, hech qanday qo'shimcha qo'shilmaydi.",
+        "items": [
+          { "base": "to come", "baseUz": "kelmoq", "derived": "Come!", "derivedUz": "Kel!", "note": "" },
+          { "base": "to stand up", "baseUz": "o'rnidan turmoq", "derived": "Stand up!", "derivedUz": "Tur!", "note": "" },
+          { "base": "to be", "baseUz": "bo'lmoq", "derived": "Be careful!", "derivedUz": "Ehtiyot bo'l!", "note": "'are' emas, 'be'" },
+          { "base": "to add", "baseUz": "qo'shmoq", "derived": "Add the milk.", "derivedUz": "Sut qo'shing.", "note": "retseptlarda" },
+          { "base": "to look", "baseUz": "qaramoq", "derived": "Don't look!", "derivedUz": "Qarama!", "note": "inkor" }
+        ]
+      },
+      {
+        "ruleUz": "Ko'rsatma tartibini bildiruvchi so'zlar",
+        "explanationUz": "Retsept va qo'llanmalarda qadamlarni tartiblash uchun.",
+        "items": [
+          { "base": "first", "baseUz": "avval", "derived": "First add the milk.", "derivedUz": "1-qadam", "note": "" },
+          { "base": "then", "baseUz": "keyin", "derived": "Then add the sugar.", "derivedUz": "2-qadam", "note": "" },
+          { "base": "next", "baseUz": "so'ng", "derived": "Next, mix them.", "derivedUz": "3-qadam", "note": "" },
+          { "base": "finally", "baseUz": "nihoyat", "derived": "Finally, drink it.", "derivedUz": "oxirgi qadam", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Grammar Book 16-betdagi barcha qoliplar.",
+    "patterns": [
+      {
+        "formula": "EGA olmoshi + fe'l.",
+        "exampleEn": "They are doctors. He's Jack and I'm Steve.",
+        "exampleUz": "Ular shifokor. U Jek, men esa Stivman.",
+        "explanationUz": "Ega olmoshi fe'ldan oldin. 'I' doim katta harf bilan."
+      },
+      {
+        "formula": "fe'l/predlog + OBYEKT olmoshi.",
+        "exampleEn": "Look at me.",
+        "exampleUz": "Menga qara.",
+        "explanationUz": "'at' predlogidan keyin obyekt shakli."
+      },
+      {
+        "formula": "This is + EGALIK SIFATI + ot. → It's + EGALIK OLMOSHI.",
+        "exampleEn": "This is my car. It's mine.",
+        "exampleUz": "Bu mening mashinam. U meniki.",
+        "explanationUz": "Sifatdan keyin ot bor, olmoshdan keyin ot yo'q."
+      },
+      {
+        "formula": "It's the + ot + 'S + narsa. = It's + egalik sifati + narsa. = The narsa belongs to + obyekt olmoshi.",
+        "exampleEn": "It's the woman's hat. It's her hat. The hat belongs to her.",
+        "exampleUz": "Bu ayolning shlyapasi. Bu uning shlyapasi. Shlyapa unga tegishli.",
+        "explanationUz": "Bitta fikrni uch xil aytish. 'belong to' dan keyin obyekt olmoshi."
+      },
+      {
+        "formula": "Who's + ISM? — He's/She's + ...",
+        "exampleEn": "Who's George? — He's my brother.",
+        "exampleUz": "Jorj kim? — U mening akam.",
+        "explanationUz": "Odam haqida savol."
+      },
+      {
+        "formula": "Whose is this + ot? — It's + ISM's.",
+        "exampleEn": "Whose is this house? — It's Sheila's.",
+        "exampleUz": "Bu uy kimniki? — Sheilaniki.",
+        "explanationUz": "Egalik haqida savol. Javobda ot takrorlanmaydi."
+      },
+      {
+        "formula": "Fe'l (asos shakli) + ... — buyruq.",
+        "exampleEn": "Come here. Stand up! First add the milk then add the sugar.",
+        "exampleUz": "Bu yerga kel. Tur! Avval sut qo'shing, keyin shakar qo'shing.",
+        "explanationUz": "Ega yo'q. Buyruq va ko'rsatma uchun bir xil shakl."
+      },
+      {
+        "formula": "Don't + fe'l (asos shakli) + ... — inkor buyruq.",
+        "exampleEn": "Don't look at it.",
+        "exampleUz": "Unga qarama.",
+        "explanationUz": "Har doim 'don't' — kimga aytilishidan qat'i nazar."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "a subject personal pronoun", "uz": "ega shaxs olmoshi" },
+    { "en": "an object personal pronoun", "uz": "obyekt shaxs olmoshi" },
+    { "en": "a possessive adjective", "uz": "egalik sifati" },
+    { "en": "a possessive pronoun", "uz": "egalik olmoshi" },
+    { "en": "the possessive case", "uz": "qaratqich kelishigi" },
+    { "en": "the imperative", "uz": "buyruq mayli" },
+    { "en": "a question word", "uz": "so'roq so'zi" },
+    { "en": "a capital letter", "uz": "katta harf" },
+    { "en": "a preposition", "uz": "predlog" },
+    { "en": "an object", "uz": "to'ldiruvchi" },
+    { "en": "a relationship", "uz": "munosabat" },
+    { "en": "to belong to", "uz": "...ga tegishli bo'lmoq" },
+    { "en": "possession", "uz": "egalik" },
+    { "en": "sex", "uz": "jinsi (erkak/urg'ochi)" },
+    { "en": "a pet", "uz": "uy hayvoni" },
+    { "en": "a tiger", "uz": "yo'lbars" },
+    { "en": "an order", "uz": "buyruq" },
+    { "en": "an instruction", "uz": "ko'rsatma" },
+    { "en": "to add", "uz": "qo'shmoq" },
+    { "en": "milk", "uz": "sut" },
+    { "en": "sugar", "uz": "shakar" },
+    { "en": "a hat", "uz": "shlyapa" },
+    { "en": "first ... then ...", "uz": "avval ... keyin ..." }
+  ]
+}
