@@ -1,0 +1,227 @@
+{
+  "book": "grammar",
+  "pdfPage": 11,
+  "bookPage": 10,
+  "unit": 2,
+  "unitTitle": "Have got - Can",
+  "pageType": "exercises",
+  "pairsWith": {
+    "coursebook": [15],
+    "workbook": [10, 11],
+    "noteUz": "'can' mashqlari. Coursebook 15-bet Ex.13 bilan bir xil mavzu, lekin bu yerda 12 ta harakat va jadval bilan chuqurroq mashq qilinadi."
+  },
+  "sections": [
+    {
+      "kind": "grammar_exercise",
+      "title": "The Verb \"can\"",
+      "titleUz": "\"can\" fe'li",
+      "exercises": [
+        {
+          "ref": "4",
+          "type": "picture_guess_job",
+          "instructionEn": "Look at the pictures. In pairs, ask and answer questions, as in the example.",
+          "instructionUz": "Rasmlarga qarang. Juftlikda namunadagidek savol-javob qiling.",
+          "explanationUz": "Qolip: 'What can he/she/it do?' → 'He/She/It can + FE'L.'\n\nDIQQAT — ba'zi harakatlar 'the' oladi, ba'zilari yo'q:\n  • CHOLG'U asboblari 'the' bilan: play THE guitar, play THE violin\n  • SPORT turlari 'the' siz: play football, play basketball\nBu qoidani yodlab qo'ying — imtihonlarda tez-tez so'raladi.\n\n'ride' — ustiga minib boshqarish: ride a bicycle, ride a horse\n'drive' — ichida o'tirib boshqarish: drive a car\n'fly'  — uchirmoq: fly a plane",
+          "bookRef": "Grammar, 10-bet — 1–12 rasmlar",
+          "items": [
+            { "n": 1, "objectEn": "a cyclist on a racing bicycle", "object": "velosipedchi", "answer": "ride a bicycle" },
+            { "n": 2, "objectEn": "a person painting at an easel", "object": "molbertda rasm chizayotgan odam", "answer": "paint" },
+            { "n": 3, "objectEn": "a man playing an electric guitar", "object": "gitara chalayotgan erkak", "answer": "play the guitar" },
+            { "n": 4, "objectEn": "a dancer in a black outfit", "object": "raqqosa", "answer": "dance" },
+            { "n": 5, "objectEn": "a roller-skater", "object": "rolik uchuvchi", "answer": "roller-skate" },
+            { "n": 6, "objectEn": "a rider on a brown horse", "object": "otda chopayotgan chavandoz", "answer": "ride a horse" },
+            { "n": 7, "objectEn": "a bird in flight", "object": "uchayotgan qush", "answer": "fly" },
+            { "n": 8, "objectEn": "a chef holding a cake", "object": "tort ushlagan oshpaz", "answer": "cook" },
+            { "n": 9, "objectEn": "a pilot in a cockpit", "object": "kabinadagi uchuvchi", "answer": "fly a plane" },
+            { "n": 10, "objectEn": "a cheetah running", "object": "yugurayotgan gepard", "answer": "run fast" },
+            { "n": 11, "objectEn": "a woman singing into a microphone", "object": "mikrofonda kuylayotgan ayol", "answer": "sing" },
+            { "n": 12, "objectEn": "basketball players with a ball", "object": "basketbolchilar", "answer": "play basketball" }
+          ],
+          "example": [
+            { "speaker": "SA", "en": "What can he do?", "uz": "U nima qila oladi?" },
+            { "speaker": "SB", "en": "He can ride a bicycle.", "uz": "U velosiped hayday oladi." }
+          ]
+        },
+        {
+          "ref": "5a",
+          "type": "fill_gap",
+          "instructionEn": "Look at the table and fill in can or can't.",
+          "instructionUz": "Jadvalga qarang va can yoki can't ni qo'ying.",
+          "explanationUz": "Jadvalda uch odam va besh harakat: ✓ (qila oladi) va ✗ (qila olmaydi).\n\nHar bandda 'but' bor — demak birinchi qism bilan ikkinchisi\nQARAMA-QARSHI: biri can, ikkinchisi can't.\n\nDIQQAT: 'can' barcha shaxsda bir xil, shuning uchun ega kim bo'lishidan\nqat'i nazar shakl o'zgarmaydi — faqat MA'NOGA qarang.",
+          "tableUz": {
+            "sarlavha": "Jack · Karen · Chris",
+            "dance": "Jack ✗ · Karen ✓ · Chris ✗",
+            "play football": "Jack ✓ · Karen ✗ · Chris ✓",
+            "speak French": "Jack ✗ · Karen ✗ · Chris ✓",
+            "drive": "Jack ✓ · Karen ✗ · Chris ✓",
+            "paint": "Jack ✓ · Karen ✓ · Chris ✗"
+          },
+          "items": [
+            { "n": 1, "textEn": "Karen ___ dance, but she ___ play football.", "answer": "can / can't", "whyUz": "Karen: raqs ✓, futbol ✗" },
+            { "n": 2, "textEn": "Chris ___ paint, but he ___ speak French.", "answer": "can't / can", "whyUz": "Chris: rasm ✗, fransuzcha ✓" },
+            { "n": 3, "textEn": "Jack ___ drive and paint, but he ___ dance.", "answer": "can / can't", "whyUz": "Jack: haydash ✓, rasm ✓, raqs ✗" },
+            { "n": 4, "textEn": "Karen ___ speak French, but she ___ paint.", "answer": "can't / can", "whyUz": "Karen: fransuzcha ✗, rasm ✓" },
+            { "n": 5, "textEn": "Jack and Chris ___ play football, but they ___ dance.", "answer": "can / can't", "whyUz": "Ikkalasi: futbol ✓, raqs ✗. 'can' ko'plikda ham o'zgarmaydi." }
+          ]
+        },
+        {
+          "ref": "5b",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Look at the table again. In pairs, ask and answer questions, as in the example.",
+          "instructionUz": "Jadvalga qayta qarang. Juftlikda namunadagidek savol-javob qiling.",
+          "explanationUz": "Qolip: 'Can + ISM + FE'L?' → 'Yes, he/she can.' yoki 'No, he/she can't.'\n\nQisqa javobda asosiy fe'l TAKRORLANMAYDI:\n  'Can Jack dance?' → 'No, he can't.' ('No, he can't dance' ortiqcha)",
+          "example": {
+            "prompt": "Jack/dance",
+            "question": "Can Jack dance?",
+            "answer": "No, he can't."
+          },
+          "items": [
+            { "n": 1, "prompt": "Jack/dance", "question": "Can Jack dance?", "answer": "No, he can't.", "given": true },
+            { "n": 2, "prompt": "Karen/dance", "question": "Can Karen dance?", "answer": "Yes, she can.", "whyUz": "Karen raqsga tusha oladi ✓" },
+            { "n": 3, "prompt": "Chris/dance", "question": "Can Chris dance?", "answer": "No, he can't.", "whyUz": "Chris raqsga tusha olmaydi ✗" },
+            { "n": 4, "prompt": "Jack/play football", "question": "Can Jack play football?", "answer": "Yes, he can.", "whyUz": "Jack futbol o'ynay oladi ✓" },
+            { "n": 5, "prompt": "Karen/play football", "question": "Can Karen play football?", "answer": "No, she can't.", "whyUz": "Karen futbol o'ynay olmaydi ✗" },
+            { "n": 6, "prompt": "Chris/speak French", "question": "Can Chris speak French?", "answer": "Yes, he can.", "whyUz": "Chris fransuzchani biladi ✓" },
+            { "n": 7, "prompt": "Jack/speak French", "question": "Can Jack speak French?", "answer": "No, he can't.", "whyUz": "Jack fransuzchani bilmaydi ✗" },
+            { "n": 8, "prompt": "Karen/drive", "question": "Can Karen drive?", "answer": "No, she can't.", "whyUz": "Karen haydashni bilmaydi ✗" },
+            { "n": 9, "prompt": "Chris/paint", "question": "Can Chris paint?", "answer": "No, he can't.", "whyUz": "Chris rasm chiza olmaydi ✗" },
+            { "n": 10, "prompt": "Jack/paint", "question": "Can Jack paint?", "answer": "Yes, he can.", "whyUz": "Jack rasm chiza oladi ✓" }
+          ]
+        },
+        {
+          "ref": "6a",
+          "type": "write_question",
+          "instructionEn": "Answer the questions about yourself.",
+          "instructionUz": "Savollarga o'zingiz haqingizda javob bering.",
+          "explanationUz": "Bu — OCHIQ savollar, ya'ni javob sizga bog'liq. Ikkala javob ham to'g'ri:\n  'Yes, I can.'  yoki  'No, I can't.'\n\nJavobni kengaytirish mumkin (tabiiyroq eshitiladi):\n  'Yes, I can. I can swim quite well.'\n  'No, I can't, but I want to learn.'\n\nQuyida namuna javoblar berilgan — o'zingiznikini tuzing.",
+          "items": [
+            { "n": 1, "answer": "Yes, I can. I can swim quite well.", "question": "Can you swim?", "whyUz": "Suza olasizmi?" },
+            { "n": 2, "answer": "No, I can't dance very well.", "question": "Can you dance?", "whyUz": "Raqsga tusha olasizmi?" },
+            { "n": 3, "answer": "No, I can't roller-skate.", "question": "Can you roller-skate?", "whyUz": "Rolik ucha olasizmi?" },
+            { "n": 4, "answer": "No, I can't fly a plane.", "question": "Can you fly a plane?", "whyUz": "Samolyot ucha olasizmi?" },
+            { "n": 5, "answer": "Yes, I can ride a bicycle.", "question": "Can you ride a bicycle?", "whyUz": "Velosiped hayday olasizmi?" },
+            { "n": 6, "answer": "No, I can't play the violin.", "question": "Can you play the violin?", "whyUz": "Skripka chala olasizmi? ('the' bilan — cholg'u asbobi)" },
+            { "n": 7, "answer": "Yes, I can speak English.", "question": "Can you speak English?", "whyUz": "Inglizcha gapira olasizmi?" },
+            { "n": 8, "answer": "No, I can't ride a horse.", "question": "Can you ride a horse?", "whyUz": "Otda yura olasizmi?" }
+          ]
+        },
+        {
+          "ref": "6b",
+          "type": "write_sentences",
+          "instructionEn": "Now write three things that your partner can do and three things your partner can't do.",
+          "instructionUz": "Endi sherigingiz qila oladigan uchta va qila olmaydigan uchta ishni yozing.",
+          "explanationUz": "Uchinchi shaxs haqida yozasiz, lekin 'can' baribir O'ZGARMAYDI:\n  'She can swim.' — 'She cans swim' XATO.\n\nUchta tasdiq va uchta inkor gap yozing. Ularni 'and' bilan\nbirlashtirsa ham bo'ladi: 'She can swim and dance.'",
+          "modelAnswers": [
+            "My partner can swim very well.",
+            "She can speak English quite well.",
+            "She can ride a bicycle.",
+            "She can't fly a plane.",
+            "She can't play the violin.",
+            "She can't ride a horse."
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Harakat fe'llari va ulardan yasalgan kasb nomlari.",
+    "groups": [
+      {
+        "ruleUz": "Harakat → uni bajaruvchi (-er / -ist)",
+        "explanationUz": "Bu betdagi 12 ta harakatning bajaruvchisi.",
+        "items": [
+          { "base": "cycle", "baseUz": "velosiped haydamoq", "derived": "cyclist", "derivedUz": "velosipedchi", "note": "-ist" },
+          { "base": "paint", "baseUz": "rasm chizmoq", "derived": "painter", "derivedUz": "rassom", "note": "-er (artist ham)" },
+          { "base": "dance", "baseUz": "raqsga tushmoq", "derived": "dancer", "derivedUz": "raqqos", "note": "-e tushadi" },
+          { "base": "ride", "baseUz": "minib yurmoq", "derived": "rider", "derivedUz": "chavandoz", "note": "-e tushadi" },
+          { "base": "sing", "baseUz": "kuylamoq", "derived": "singer", "derivedUz": "qo'shiqchi", "note": "-er" },
+          { "base": "drive", "baseUz": "haydamoq", "derived": "driver", "derivedUz": "haydovchi", "note": "-e tushadi" },
+          { "base": "fly", "baseUz": "uchmoq", "derived": "pilot", "derivedUz": "uchuvchi", "note": "boshqa so'z ('flyer' emas)" },
+          { "base": "cook", "baseUz": "pishirmoq", "derived": "cook / chef", "derivedUz": "oshpaz", "note": "o'zgarmaydi" }
+        ]
+      },
+      {
+        "ruleUz": "'the' bor yoki yo'q — cholg'u va sport",
+        "explanationUz": "ENG KO'P XATO QILINADIGAN QOIDA. Yodlab qo'ying:",
+        "items": [
+          { "base": "guitar", "baseUz": "gitara", "derived": "play THE guitar", "derivedUz": "gitara chalmoq", "note": "cholg'u → the" },
+          { "base": "violin", "baseUz": "skripka", "derived": "play THE violin", "derivedUz": "skripka chalmoq", "note": "cholg'u → the" },
+          { "base": "piano", "baseUz": "pianino", "derived": "play THE piano", "derivedUz": "pianino chalmoq", "note": "cholg'u → the" },
+          { "base": "football", "baseUz": "futbol", "derived": "play football", "derivedUz": "futbol o'ynamoq", "note": "sport → the YO'Q" },
+          { "base": "basketball", "baseUz": "basketbol", "derived": "play basketball", "derivedUz": "basketbol o'ynamoq", "note": "sport → the YO'Q" },
+          { "base": "tennis", "baseUz": "tennis", "derived": "play tennis", "derivedUz": "tennis o'ynamoq", "note": "sport → the YO'Q" }
+        ]
+      },
+      {
+        "ruleUz": "BOSHQARISH fe'llari — qaysi biri qachon",
+        "explanationUz": "O'zbekchada hammasi 'haydamoq' bo'ladi, inglizchada esa uch xil fe'l.",
+        "items": [
+          { "base": "ride", "baseUz": "ustiga minib", "derived": "ride a bicycle / a horse", "derivedUz": "velosiped / ot minmoq", "note": "ustida o'tirasiz" },
+          { "base": "drive", "baseUz": "ichida o'tirib", "derived": "drive a car / a bus", "derivedUz": "mashina haydamoq", "note": "ichida o'tirasiz" },
+          { "base": "fly", "baseUz": "havoda", "derived": "fly a plane", "derivedUz": "samolyot uchirmoq", "note": "havo transporti" },
+          { "base": "sail", "baseUz": "suvda", "derived": "sail a boat", "derivedUz": "qayiq boshqarmoq", "note": "suv transporti" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "'can' bilan savol berish va javob berishning barcha shakllari.",
+    "patterns": [
+      {
+        "formula": "What can + EGA + do? → EGA + can + FE'L",
+        "exampleEn": "What can he do? — He can ride a bicycle.",
+        "exampleUz": "U nima qila oladi? — U velosiped hayday oladi.",
+        "explanationUz": "Ochiq savol — 'nima qila oladi?' Javobda aniq harakat aytiladi."
+      },
+      {
+        "formula": "Can + EGA + FE'L? → Yes, EGA can. / No, EGA can't.",
+        "exampleEn": "Can Jack dance? — No, he can't.",
+        "exampleUz": "Jack raqsga tusha oladimi? — Yo'q.",
+        "explanationUz": "Yopiq savol — ha/yo'q javobi. Qisqa javobda fe'l takrorlanmaydi."
+      },
+      {
+        "formula": "EGA + can X, but EGA + can't Y",
+        "exampleEn": "Karen can dance, but she can't play football.",
+        "exampleUz": "Karen raqsga tusha oladi, lekin futbol o'ynay olmaydi.",
+        "explanationUz": "'but' ikki qarama-qarshi qobiliyatni bog'laydi. Vergul 'but' dan OLDIN."
+      },
+      {
+        "formula": "KO'PLIK: EGA(ko'plik) + can + FE'L",
+        "exampleEn": "Jack and Chris can play football, but they can't dance.",
+        "exampleUz": "Jack va Chris futbol o'ynay oladi, lekin raqsga tusha olmaydi.",
+        "explanationUz": "Ega ko'plik bo'lsa ham 'can' O'ZGARMAYDI — bu uning eng katta qulayligi."
+      },
+      {
+        "formula": "KENGAYTIRILGAN JAVOB: Yes, I can. + qo'shimcha ma'lumot",
+        "exampleEn": "Can you swim? — Yes, I can. I can swim quite well.",
+        "exampleUz": "Suza olasizmi? — Ha. Ancha yaxshi suzaman.",
+        "explanationUz": "Faqat 'Yes, I can' quruq eshitiladi. Qo'shimcha ma'lumot suhbatni davom ettiradi."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "to ride a bicycle", "uz": "velosiped haydamoq" },
+    { "en": "to ride a horse", "uz": "otda yurmoq" },
+    { "en": "to paint", "uz": "rasm chizmoq" },
+    { "en": "to play the guitar", "uz": "gitara chalmoq" },
+    { "en": "to play the violin", "uz": "skripka chalmoq" },
+    { "en": "to dance", "uz": "raqsga tushmoq" },
+    { "en": "to roller-skate", "uz": "rolik uchmoq" },
+    { "en": "to fly", "uz": "uchmoq" },
+    { "en": "to fly a plane", "uz": "samolyot uchirmoq" },
+    { "en": "to cook", "uz": "ovqat pishirmoq" },
+    { "en": "to drive", "uz": "haydamoq (mashina)" },
+    { "en": "to run fast", "uz": "tez yugurmoq" },
+    { "en": "to sing", "uz": "kuylamoq" },
+    { "en": "to play basketball", "uz": "basketbol o'ynamoq" },
+    { "en": "to play football", "uz": "futbol o'ynamoq" },
+    { "en": "to speak French", "uz": "fransuzcha gapirmoq" },
+    { "en": "to swim", "uz": "suzmoq" },
+    { "en": "cyclist", "uz": "velosipedchi" },
+    { "en": "horse", "uz": "ot" },
+    { "en": "cheetah", "uz": "gepard" },
+    { "en": "partner", "uz": "sherik" }
+  ]
+}
