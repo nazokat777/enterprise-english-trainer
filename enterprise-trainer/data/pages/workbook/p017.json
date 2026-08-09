@@ -1,0 +1,227 @@
+{
+  "book": "workbook",
+  "pdfPage": 17,
+  "bookPage": 16,
+  "unit": 4,
+  "unitTitle": "Like Father, like Son",
+  "module": 2,
+  "pairsWith": "Coursebook 26–28-betlar",
+  "scanNote": "Skanda oldingi o'quvchining qo'lyozma javoblari bor. 1-mashqda 12 tadan 11 tasi to'g'ri, lekin 2 va 3-mashqlarda TIZIMLI xato bor: u egalik apostrofini ('s) unutgan va ko'plik egasi bo'lgan joyda 'their' o'rniga 'his/her' yozgan. Bu xatolar 'Ko'p uchraydigan xato' bo'limida saqlangan — ular juda foydali dars beradi.",
+  "sections": [
+    {
+      "kind": "vocabulary",
+      "title": "Vocabulary — the family tree",
+      "titleUz": "Lug'at — oila daraxti",
+      "exercises": [
+        {
+          "ref": "1",
+          "type": "word_choice",
+          "instructionEn": "Look at the family tree. Choose words from the list to complete the sentences 1 to 12.",
+          "instructionUz": "Oila daraxtiga qarang. Ro'yxatdan so'z tanlab, 1–12 gaplarni to'ldiring.",
+          "explanationUz": "OILA DARAXTI:\n\n            Susan  ═  Paul        (bobo va buvi)\n                │\n        ┌───────┴────────┐\n     Liz ═ Tim       Sarah ═ Simon\n        │                │\n     George          Mary   John\n\n  Susan va Paul — Tim va Sarahning ota-onasi\n  Tim — Lizning eri, Georgening otasi\n  Sarah — Simonning xotini, Mary va Johnning onasi\n  Tim va Sarah — aka-singil\n  George, Mary, John — amakivachchalar\n\nRO'YXAT (19 so'z):\n  grandparents, parents, son, daughter, cousin, aunt, uncle,\n  brother, sister, nephew, niece, wife, husband, granddaughter,\n  grandson, children, grandfather, grandmother, grandchildren\n\nMUHIM: qarindoshlik KIM NUQTAI NAZARIDAN aytilganiga bog'liq.\nMasalan Sarah — Tim uchun 'sister', George uchun 'aunt',\nSusan uchun 'daughter'. Bitta odam, uch xil nom!",
+          "bookRef": "Workbook, 16-bet, 1-mashq",
+          "commonMistake": {
+            "whatUz": "Skandagi oldingi o'quvchi 3-bandda 'Mary is Liz and Tim's NEPHEW' deb yozgan.",
+            "whyUz": "XATO — Mary QIZ. Qiz jiyan 'niece', o'g'il jiyan esa 'nephew'. To'g'ri javob: NIECE. Bu farq o'zbek tilida yo'q ('jiyan' ikkalasiga ham) — shuning uchun ingliz tilida diqqat qilish kerak."
+          },
+          "options": ["grandparents", "parents", "son", "daughter", "cousin", "aunt", "uncle", "brother", "sister", "nephew", "niece", "wife", "husband", "granddaughter", "grandson", "children", "grandfather", "grandmother", "grandchildren"],
+          "items": [
+            { "textEn": "1  Simon is George's ____ .", "uz": "Simon Georgega kim?", "options": ["uncle", "aunt", "cousin", "father"], "answer": "uncle", "given": true, "whyUz": "Kitobdagi namuna. Simon — Georgening ammasi Sarahning eri → uncle." },
+            { "textEn": "2  Susan and Paul are George's ____ .", "uz": "Susan va Pol Georgega kim?", "options": ["grandparents", "parents", "children", "cousins"], "answer": "grandparents", "whyUz": "Ular Georgening otasi Timning ota-onasi → bobo va buvi." },
+            { "textEn": "3  Mary is Liz and Tim's ____ .", "uz": "Meri Liz va Timga kim?", "options": ["niece", "nephew", "daughter", "cousin"], "answer": "niece", "whyUz": "Meri — Timning singlisi Sarahning QIZI → niece (qiz jiyan). 'nephew' — o'g'il jiyan." },
+            { "textEn": "4  Sarah is Tim's ____ .", "uz": "Sara Timga kim?", "options": ["sister", "wife", "daughter", "aunt"], "answer": "sister", "whyUz": "Ikkalasi ham Susan va Polning farzandlari → aka-singil." },
+            { "textEn": "5  George is Mary and John's ____ .", "uz": "George Meri va Jonga kim?", "options": ["cousin", "brother", "nephew", "uncle"], "answer": "cousin", "whyUz": "Georgening otasi Tim — Meri va Jonning onasi Sarahning akasi → amakivachcha." },
+            { "textEn": "6  Susan and Paul are Tim and Sarah's ____ .", "uz": "Susan va Pol Tim va Saraga kim?", "options": ["parents", "grandparents", "children", "cousins"], "answer": "parents", "whyUz": "To'g'ridan-to'g'ri ota-ona." },
+            { "textEn": "7  Mary is Sarah and Simon's ____ .", "uz": "Meri Sara va Simonga kim?", "options": ["daughter", "son", "niece", "granddaughter"], "answer": "daughter", "whyUz": "Meri — ularning qizi." },
+            { "textEn": "8  George is Tim and Liz's ____ .", "uz": "George Tim va Lizga kim?", "options": ["son", "daughter", "nephew", "grandson"], "answer": "son", "whyUz": "George — ularning o'g'li." },
+            { "textEn": "9  Sarah is George's ____ .", "uz": "Sara Georgega kim?", "options": ["aunt", "mother", "sister", "cousin"], "answer": "aunt", "whyUz": "Sara — Georgening otasi Timning singlisi → amma." },
+            { "textEn": "10  John is Mary's ____ .", "uz": "Jon Meriga kim?", "options": ["brother", "cousin", "nephew", "son"], "answer": "brother", "whyUz": "Ikkalasi ham Sara va Simonning farzandlari → aka-singil." },
+            { "textEn": "11  Mary is Susan and Paul's ____ .", "uz": "Meri Susan va Polga kim?", "options": ["granddaughter", "grandson", "daughter", "niece"], "answer": "granddaughter", "whyUz": "Meri — ularning nabirasi (QIZ) → granddaughter. O'g'il bo'lsa 'grandson'." },
+            { "textEn": "12  Simon is Sarah's ____ .", "uz": "Simon Saraga kim?", "options": ["husband", "brother", "son", "father"], "answer": "husband", "whyUz": "Ular er-xotin → husband." }
+          ]
+        },
+        {
+          "ref": "2",
+          "type": "dialogue_fill",
+          "instructionEn": "Look at the family tree and fill in the missing words.",
+          "instructionUz": "Oila daraxtiga qarang va tushib qolgan so'zlarni qo'ying.",
+          "explanationUz": "HAR BIR BANDDA IKKI BO'SHLIQ:\n\n  1-bo'shliq — EGALIK SHAKLI (ism + 's)\n  2-bo'shliq — EGALIK SIFATI (his, her, their)\n\nNAMUNA:\n  Liz is TIM'S wife. She is HIS wife.\n\nEGALIK SIFATINI TANLASH — nechta egasi borligiga qarang:\n  bitta erkak → his\n  bitta ayol  → her\n  IKKI yoki undan ko'p → THEIR\n\nBU YERDA ENG KO'P XATO QILINADI:\n  'Susan and Paul are George, Mary and John's grandparents.'\n  → uchta nabira → THEIR grandparents (his EMAS!)",
+          "bookRef": "Workbook, 16-bet, 2-mashq",
+          "commonMistake": {
+            "whatUz": "Skandagi oldingi o'quvchi apostrofni ('s) unutgan ('John', 'Simon', 'Liz', 'Tim' deb yozgan) va ko'plik egasi bo'lgan joyda 'their' o'rniga 'his/her' yozgan.",
+            "whyUz": "IKKI TIZIMLI XATO:\n1) Egalikni ko'rsatish uchun 's SHART: 'John's grandparents' (Johnning bobo-buvisi), 'John grandparents' EMAS.\n2) Egasi BIR NECHTA bo'lsa — THEIR. 'George, Mary and John' — uch kishi, demak 'their grandparents'.\nBu xatolar o'zbek tilidan ta'sir: o'zbekchada 'ularning' bittagina so'z va qo'shimchani unutish oson."
+          },
+          "lines": [
+            { "who": "1", "textEn": "Liz is Tim's wife. She is his wife.", "uz": "Liz — Timning xotini. U uning xotini.", "given": true },
+            { "who": "2", "textEn": "Tim is ____ husband. He is ____ husband.", "answers": ["Liz's", "her"], "hintUz": "Liz bitta ayol", "whyUz": "Egalik shakli: Liz + 's. Egalik sifati: Liz — ayol → her." },
+            { "who": "3", "textEn": "Susan and Paul are George, Mary and ____ grandparents. They are ____ grandparents.", "answers": ["John's", "their"], "hintUz": "UCHTA nabira bor: George, Mary, John", "whyUz": "Uch egasi → 's faqat OXIRGISIGA (John's). Uch kishi → THEIR (his EMAS!)." },
+            { "who": "4", "textEn": "Mary and John are Sarah and ____ children. They are ____ children.", "answers": ["Simon's", "their"], "hintUz": "IKKI ota-ona: Sarah va Simon", "whyUz": "Ikki egasi → 's oxirgisiga (Simon's). Ikki kishi → THEIR." },
+            { "who": "5", "textEn": "Sarah is ____ aunt and Simon is his uncle.", "answer": "George's", "hintUz": "'his uncle' dagi 'his' kimga ishora qiladi?", "whyUz": "'Simon is HIS uncle' — 'his' = George. Demak Sarah ham George'ning ammasi → George's aunt." },
+            { "who": "6", "textEn": "Mary is Tim and ____ niece. She is ____ niece.", "answers": ["Liz's", "their"], "hintUz": "IKKI kishi: Tim va Liz", "whyUz": "Ikki egasi → Liz's. Ikki kishi → THEIR." },
+            { "who": "7", "textEn": "John is Liz and ____ nephew. He is ____ nephew.", "answers": ["Tim's", "their"], "hintUz": "IKKI kishi: Liz va Tim", "whyUz": "Ikki egasi → Tim's. Ikki kishi → THEIR." },
+            { "who": "8", "textEn": "George is Tim's son. He is ____ son.", "answer": "his", "hintUz": "Tim — bitta erkak", "whyUz": "Tim — erkak → his." },
+            { "who": "9", "textEn": "Susan is Mary's grandmother. She's ____ grandmother.", "answer": "her", "hintUz": "Mary — bitta ayol", "whyUz": "Mary — ayol → her." },
+            { "who": "10", "textEn": "John is ____ cousin. He is his cousin.", "answer": "George's", "hintUz": "'his cousin' dagi 'his' kimga ishora qiladi?", "whyUz": "'He is HIS cousin' — 'his' = George. Demak John George'ning amakivachchasi." },
+            { "who": "11", "textEn": "John is ____ brother and Mary is ____ sister.", "answers": ["Mary's", "John's"], "hintUz": "Ikkalasi ham bitta odamning ismi", "whyUz": "Jon — Merining akasi, Meri esa Jonning singlisi. Ikkalasi ham 's bilan." },
+            { "who": "12", "textEn": "Mary is Sarah and ____ daughter. She is ____ daughter.", "answers": ["Simon's", "their"], "hintUz": "IKKI ota-ona: Sarah va Simon", "whyUz": "Ikki egasi → Simon's. Ikki kishi → THEIR." }
+          ]
+        },
+        {
+          "ref": "3",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Look at the family tree and answer the questions.",
+          "instructionUz": "Oila daraxtiga qarang va savollarga javob bering.",
+          "explanationUz": "SAVOL QOLIPI:\n  Whose + qarindoshlik + is/are + ISM?\n\nJAVOB QOLIPI:\n  He's/She's/They're + EGALIK SHAKLI + qarindoshlik.\n\nNAMUNA:\n  Whose father is Simon? — He's Mary and John's father.\n\nDIQQAT — savolni TESKARI o'qish kerak:\n  'Whose father is Simon?' = 'Simon KIMNING otasi?'\n  Ya'ni Simon OTA, biz uning FARZANDLARINI topamiz.\n\nBu chalkash — shuning uchun oila daraxtida yo'nalishni\nyaxshi tekshiring.",
+          "bookRef": "Workbook, 16-bet, 3-mashq",
+          "commonMistake": {
+            "whatUz": "Skandagi oldingi o'quvchi 3-savolga 'She's Mary's daughter' deb javob bergan.",
+            "whyUz": "XATO — yo'nalish teskari olingan. 'Whose daughter is Sarah?' = 'Sara KIMNING qizi?'. Sara — Susan va Polning qizi. Meri esa SARANING qizi — bu boshqa munosabat. To'g'ri javob: 'She's Susan and Paul's daughter.'"
+          },
+          "items": [
+            { "n": 1, "prompt": "Simon", "question": "Whose father is Simon?", "answer": "He's Mary and John's father.", "given": true, "whyUz": "Kitobdagi namuna. Simon — Meri va Jonning otasi." },
+            { "n": 2, "prompt": "Liz", "question": "Whose mother is Liz?", "answer": "She's George's mother.", "whyUz": "Liz — Georgening onasi (Liz va Timning o'g'li)." },
+            { "n": 3, "prompt": "Sarah", "question": "Whose daughter is Sarah?", "answer": "She's Susan and Paul's daughter.", "whyUz": "Sara — Susan va Polning qizi. Oila daraxtida u ularning tagida turibdi." },
+            { "n": 4, "prompt": "Mary va John", "question": "Whose cousins are Mary and John?", "answer": "They're George's cousins.", "whyUz": "Ko'plik → 'Whose cousins ARE ...?' va 'They're'. Ular Georgening amakivachchalari." },
+            { "n": 5, "prompt": "Tim", "question": "Whose brother is Tim?", "answer": "He's Sarah's brother.", "whyUz": "Tim — Saraning akasi (ikkalasi Susan va Polning farzandlari)." }
+          ]
+        },
+        {
+          "ref": "4",
+          "type": "word_choice",
+          "instructionEn": "Choose the correct item.",
+          "instructionUz": "To'g'ri variantni tanlang.",
+          "explanationUz": "XARAKTER SIFATLARI — ta'rifdan sifatni toping.\n\nHar bir bandda odamning XULQI tasvirlangan.\nO'sha xulqqa mos sifatni tanlang.\n\nBU BETDAGI SIFATLAR:\n  aggressive — tajovuzkor, jahldor\n  bossy      — buyruqboz\n  rude       — qo'pol\n  clever     — aqlli\n  kind       — mehribon\n  friendly   — do'stona\n  polite     — muloyim\n  gorgeous   — maftunkor (KO'RINISH, xarakter emas!)\n  pretty     — chiroyli (KO'RINISH)\n  good-looking — kelishgan (KO'RINISH)\n\nDIQQAT: chalg'ituvchi variantlar ko'pincha KO'RINISH sifatlari —\nsavolda esa XARAKTER so'ralgan bo'ladi.",
+          "bookRef": "Workbook, 16-bet, 4-mashq",
+          "items": [
+            { "textEn": "1  He gets angry easily. He is ____ .", "uz": "Tez jahli chiqadi", "options": ["aggressive", "kind", "clever"], "answer": "aggressive", "whyUz": "'get angry' = jahli chiqmoq. Tez jahli chiqadigan odam — aggressive (tajovuzkor). 'kind' (mehribon) va 'clever' (aqlli) mos emas." },
+            { "textEn": "2  He always tells people what to do. He is ____ .", "uz": "Hammaga nima qilishni aytadi", "options": ["bossy", "rude", "gorgeous"], "answer": "bossy", "whyUz": "'tell people what to do' = buyruq bermoq → bossy. 'gorgeous' — ko'rinish sifati, mos emas." },
+            { "textEn": "3  He isn't polite. He is very ____ .", "uz": "Muloyim emas", "options": ["rude", "clever", "friendly"], "answer": "rude", "whyUz": "'polite' (muloyim) ning aksi — 'rude' (qo'pol)." },
+            { "textEn": "4  She learns easily because she's very ____ .", "uz": "Oson o'rganadi", "options": ["clever", "pretty", "good-looking"], "answer": "clever", "whyUz": "Oson o'rganish — AQL belgisi → clever. 'pretty' va 'good-looking' — ko'rinish sifatlari." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Workbook 16-bet — qarindoshlik va xarakter sifatlari.",
+    "groups": [
+      {
+        "ruleUz": "Erkak ↔ ayol qarindoshlik (o'zbekchada farq yo'q)",
+        "explanationUz": "Ingliz tilida bu juftliklar FARQ qiladi. O'zbekchada esa bitta so'z — shuning uchun eng ko'p xato shu yerda.",
+        "items": [
+          { "base": "nephew", "baseUz": "jiyan (O'G'IL)", "derived": "niece", "derivedUz": "jiyan (QIZ)", "note": "o'zbekchada ikkalasi 'jiyan'" },
+          { "base": "grandson", "baseUz": "nabira (O'G'IL)", "derived": "granddaughter", "derivedUz": "nabira (QIZ)", "note": "o'zbekchada ikkalasi 'nabira'" },
+          { "base": "son", "baseUz": "o'g'il", "derived": "daughter", "derivedUz": "qiz", "note": "farzand" },
+          { "base": "brother", "baseUz": "aka, uka", "derived": "sister", "derivedUz": "opa, singil", "note": "" },
+          { "base": "husband", "baseUz": "er", "derived": "wife", "derivedUz": "xotin", "note": "" },
+          { "base": "uncle", "baseUz": "amaki, tog'a, pochcha", "derived": "aunt", "derivedUz": "amma, xola", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Ko'plik qarindoshlik so'zlari",
+        "explanationUz": "Ba'zi qarindoshlik so'zlari faqat guruh uchun ishlatiladi.",
+        "items": [
+          { "base": "parent", "baseUz": "ota yoki ona", "derived": "parents", "derivedUz": "ota-ona", "note": "birligi kam ishlatiladi" },
+          { "base": "grandparent", "baseUz": "bobo yoki buvi", "derived": "grandparents", "derivedUz": "bobo va buvi", "note": "" },
+          { "base": "child", "baseUz": "bola", "derived": "children", "derivedUz": "bolalar", "note": "NOTO'G'RI ko'plik — -s olmaydi" },
+          { "base": "grandchild", "baseUz": "nabira", "derived": "grandchildren", "derivedUz": "nabiralar", "note": "noto'g'ri ko'plik" }
+        ]
+      },
+      {
+        "ruleUz": "Xarakter sifatlari va ularning aksi",
+        "explanationUz": "Juftlik bilan yodlash — eng samarali usul.",
+        "items": [
+          { "base": "polite", "baseUz": "muloyim", "derived": "rude", "derivedUz": "qo'pol", "note": "aksi" },
+          { "base": "calm", "baseUz": "bosiq", "derived": "aggressive", "derivedUz": "tajovuzkor", "note": "aksi" },
+          { "base": "clever", "baseUz": "aqlli", "derived": "stupid", "derivedUz": "ahmoq", "note": "aksi" },
+          { "base": "friendly", "baseUz": "do'stona", "derived": "unfriendly", "derivedUz": "sovuq", "note": "un- qo'shimchasi" },
+          { "base": "kind", "baseUz": "mehribon", "derived": "unkind", "derivedUz": "shafqatsiz", "note": "un- qo'shimchasi" },
+          { "base": "boss", "baseUz": "boshliq", "derived": "bossy", "derivedUz": "buyruqboz", "note": "-y qo'shimchasi" }
+        ]
+      },
+      {
+        "ruleUz": "XARAKTER ↔ KO'RINISH sifatlarini ajratish",
+        "explanationUz": "Testlarda chalg'ituvchi variant ko'pincha boshqa guruhdan olinadi.",
+        "items": [
+          { "base": "kind, clever, rude, bossy, aggressive, friendly, polite", "baseUz": "XARAKTER", "derived": "odamni tanish kerak", "derivedUz": "ko'z bilan ko'rinmaydi", "note": "What is he LIKE?" },
+          { "base": "pretty, gorgeous, good-looking, beautiful, handsome", "baseUz": "KO'RINISH", "derived": "rasmdan bilinadi", "derivedUz": "ko'z bilan ko'rinadi", "note": "What does he LOOK LIKE?" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Workbook 16-betdagi qoliplar.",
+    "patterns": [
+      {
+        "formula": "X is + ISM's + qarindoshlik.",
+        "exampleEn": "Simon is George's uncle. Sarah is Tim's sister.",
+        "exampleUz": "Simon — Georgening amakisi. Sara — Timning singlisi.",
+        "explanationUz": "Bitta egasi → ism + 's."
+      },
+      {
+        "formula": "X is + ISM and ISM's + qarindoshlik.",
+        "exampleEn": "Mary is Sarah and Simon's daughter.",
+        "exampleUz": "Meri — Sara va Simonning qizi.",
+        "explanationUz": "Ikki egasi → 's faqat OXIRGI ismga."
+      },
+      {
+        "formula": "X is + ISM's + qarindoshlik. He/She is + his/her/their + qarindoshlik.",
+        "exampleEn": "Liz is Tim's wife. She is his wife.",
+        "exampleUz": "Liz — Timning xotini. U uning xotini.",
+        "explanationUz": "Ikkinchi gapda ism o'rniga EGALIK SIFATI keladi.\nEgasi bir nechta bo'lsa — THEIR."
+      },
+      {
+        "formula": "Whose + qarindoshlik + is/are + ISM? — He's/She's/They're + ISM's + qarindoshlik.",
+        "exampleEn": "Whose father is Simon? — He's Mary and John's father.",
+        "exampleUz": "Simon kimning otasi? — U Meri va Jonning otasi.",
+        "explanationUz": "Savolda yo'nalishga diqqat: 'Whose father is Simon?' —\nSimon OTA, biz uning farzandlarini topamiz."
+      },
+      {
+        "formula": "He/She is + sifat. (xarakter tavsifi)",
+        "exampleEn": "He gets angry easily. He is aggressive.",
+        "exampleUz": "U tez jahli chiqadi. U tajovuzkor.",
+        "explanationUz": "Avval xulq tasvirlanadi, keyin unga mos sifat aytiladi."
+      },
+      {
+        "formula": "She + fe'l + BECAUSE she's very + sifat.",
+        "exampleEn": "She learns easily because she's very clever.",
+        "exampleUz": "U oson o'rganadi, chunki juda aqlli.",
+        "explanationUz": "'because' bilan sabab aytiladi — insho va gapirishda muhim."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "a family tree", "uz": "oila daraxti" },
+    { "en": "grandparents", "uz": "bobo va buvi" },
+    { "en": "a grandfather", "uz": "bobo" },
+    { "en": "a grandmother", "uz": "buvi" },
+    { "en": "a grandson", "uz": "nabira (o'g'il)" },
+    { "en": "a granddaughter", "uz": "nabira (qiz)" },
+    { "en": "grandchildren", "uz": "nabiralar" },
+    { "en": "parents", "uz": "ota-ona" },
+    { "en": "children", "uz": "bolalar, farzandlar" },
+    { "en": "a son", "uz": "o'g'il" },
+    { "en": "a daughter", "uz": "qiz (farzand)" },
+    { "en": "a cousin", "uz": "amakivachcha, xolavachcha" },
+    { "en": "an aunt", "uz": "amma, xola" },
+    { "en": "an uncle", "uz": "amaki, tog'a" },
+    { "en": "a nephew", "uz": "jiyan (o'g'il)" },
+    { "en": "a niece", "uz": "jiyan (qiz)" },
+    { "en": "a wife", "uz": "xotin" },
+    { "en": "a husband", "uz": "er" },
+    { "en": "aggressive", "uz": "tajovuzkor, jahldor" },
+    { "en": "bossy", "uz": "buyruqboz" },
+    { "en": "rude", "uz": "qo'pol" },
+    { "en": "polite", "uz": "muloyim" },
+    { "en": "clever", "uz": "aqlli" },
+    { "en": "kind", "uz": "mehribon" },
+    { "en": "friendly", "uz": "do'stona" },
+    { "en": "gorgeous", "uz": "maftunkor" },
+    { "en": "to get angry", "uz": "jahli chiqmoq" },
+    { "en": "easily", "uz": "oson, osonlik bilan" },
+    { "en": "to learn", "uz": "o'rganmoq" },
+    { "en": "to tell somebody what to do", "uz": "kimgadir nima qilishni aytmoq" }
+  ]
+}

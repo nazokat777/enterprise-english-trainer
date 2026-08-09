@@ -1,0 +1,211 @@
+{
+  "book": "workbook",
+  "pdfPage": 18,
+  "bookPage": 17,
+  "unit": 4,
+  "unitTitle": "Like Father, like Son",
+  "module": 2,
+  "pairsWith": "Coursebook 29–31-betlar",
+  "scanNote": "Skanda oldingi o'quvchining qo'lyozma javoblari bor. 4-mashqda hammasi to'g'ri, lekin 5-mashqda artikl xatolari ('a astronaut', 'an taxi driver') va birlik/ko'plik xatosi ('He's an surgeons') bor; 6-mashqda esa jins xatosi (Sara — ayol, lekin 'his' deb yozgan). Bu xatolar 'Ko'p uchraydigan xato' bo'limida saqlangan.",
+  "sections": [
+    {
+      "kind": "vocabulary",
+      "title": "Character adjectives (continued)",
+      "titleUz": "Xarakter sifatlari (davomi)",
+      "exercises": [
+        {
+          "ref": "4-davomi",
+          "type": "word_choice",
+          "instructionEn": "Choose the correct item.",
+          "instructionUz": "To'g'ri variantni tanlang (16-betdagi 4-mashqning davomi).",
+          "explanationUz": "Yana to'rtta xarakter sifati.\n\nYANGI SO'ZLAR:\n  patient — sabrli\n  lazy    — dangasa\n  noisy   — shovqinli\n  friendly — do'stona\n\nDIQQAT — 'patient' ikki ma'noda:\n  He is patient.   — U sabrli (SIFAT)\n  He is a patient. — U bemor (OT)\nFarqi artiklda: 'a' bo'lsa — ot.",
+          "bookRef": "Workbook, 17-bet, 4-mashq (5–8)",
+          "items": [
+            { "textEn": "5  She doesn't get angry easily. She's ____ .", "uz": "Tez jahli chiqmaydi", "options": ["patient", "bossy", "beautiful"], "answer": "patient", "whyUz": "Jahli chiqmaydigan odam — SABRLI (patient). 'beautiful' — ko'rinish sifati, mos emas." },
+            { "textEn": "6  She doesn't like working. She is ____ .", "uz": "Ishlashni yoqtirmaydi", "options": ["lazy", "rude", "friendly"], "answer": "lazy", "whyUz": "Ishlashni yoqtirmaydigan odam — dangasa (lazy). Aksi: hard-working (mehnatkash)." },
+            { "textEn": "7  The boy makes a lot of noise. He is ____ .", "uz": "Ko'p shovqin qiladi", "options": ["noisy", "kind", "aggressive"], "answer": "noisy", "whyUz": "'noise' (shovqin) + y → noisy (shovqinli). Aksi: quiet (tinch)." },
+            { "textEn": "8  What's she like? She's kind and ____ .", "uz": "Mehribon va ...", "options": ["friendly", "aggressive", "rude"], "answer": "friendly", "whyUz": "'kind' (mehribon) ijobiy sifat — unga mos ijobiy sifat kerak. 'aggressive' va 'rude' salbiy." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_exercise",
+      "title": "Grammar — jobs",
+      "titleUz": "Grammatika — kasblar",
+      "exercises": [
+        {
+          "ref": "5",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Label the people with their jobs, then ask and answer questions, as in the example.",
+          "instructionUz": "Odamlarni kasblari bilan belgilang, so'ng namunadagidek savol-javob qiling.",
+          "explanationUz": "KASBLAR RO'YXATI:\n  surgeons    — jarrohlar (KO'PLIK!)\n  actress     — aktrisa\n  astronaut   — kosmonavt\n  doctor      — shifokor\n  taxi driver — taksi haydovchisi\n  dentist     — tish shifokori\n\nRASMLAR:\n  1) stetoskopli ayol            → doctor (namuna)\n  2) skafandrdagi odam           → astronaut\n  3) tishni davolayotgan odam    → dentist\n  4) operatsiya xonasidagi odamlar → surgeons\n  5) taksi yonidagi erkak        → taxi driver\n  6) sahnadagi ayol              → actress\n\nUCHTA QOIDA:\n  1) BIRLIKDA kasb oldida A yoki AN SHART\n  2) A yoki AN — keyingi so'zning TOVUSHIGA qarab:\n     a doctor, a dentist, a taxi driver  (undosh)\n     an astronaut, an actress            (unli)\n  3) KO'PLIKDA artikl QO'YILMAYDI va savol ham o'zgaradi:\n     What are their jobs? — They're surgeons.",
+          "bookRef": "Workbook, 17-bet, 5-mashq",
+          "commonMistake": {
+            "whatUz": "Skandagi oldingi o'quvchi 'He's A astronaut', 'He's AN taxi driver' va 'He's AN surgeonS' deb yozgan.",
+            "whyUz": "UCH XATO:\n1) 'astronaut' UNLI tovush bilan boshlanadi → AN astronaut ('a' EMAS).\n2) 'taxi driver' UNDOSH tovush bilan boshlanadi → A taxi driver ('an' EMAS).\n3) 'surgeons' KO'PLIK — artikl umuman qo'yilmaydi va savol 'What ARE THEIR JOBS?' bo'ladi, javob esa 'THEY'RE surgeons'.\nA/AN tanlashda HARFGA emas, TOVUSHGA qarang."
+          },
+          "items": [
+            { "n": 1, "prompt": "1-rasm — stetoskopli ayol", "question": "What's her job?", "answer": "She's a doctor.", "given": true, "whyUz": "Kitobdagi namuna. Ayol → her / She's. 'doctor' /d/ undosh → a." },
+            { "n": 2, "prompt": "2-rasm — skafandrdagi odam", "question": "What's his job?", "answer": "He's an astronaut.", "whyUz": "'astronaut' /æ/ UNLI tovush bilan boshlanadi → AN astronaut." },
+            { "n": 3, "prompt": "3-rasm — tishni davolayotgan odam", "question": "What's his job?", "answer": "He's a dentist.", "whyUz": "'dentist' /d/ undosh → a. 'dent' — tish (lotincha)." },
+            { "n": 4, "prompt": "4-rasm — operatsiya xonasidagi bir necha kishi", "question": "What are their jobs?", "answer": "They're surgeons.", "whyUz": "KO'PLIK! Savol 'What ARE THEIR JOBS?', javob 'THEY'RE surgeons'. Artikl YO'Q." },
+            { "n": 5, "prompt": "5-rasm — taksi yonidagi erkak", "question": "What's his job?", "answer": "He's a taxi driver.", "whyUz": "'taxi' /t/ undosh → a. Qo'shma so'z: taxi + driver." },
+            { "n": 6, "prompt": "6-rasm — sahnadagi ayol", "question": "What's her job?", "answer": "She's an actress.", "whyUz": "'actress' /æ/ UNLI tovush → AN. 'actor' (erkak) → 'actress' (ayol)." }
+          ]
+        },
+        {
+          "ref": "6",
+          "type": "dialogue_fill",
+          "instructionEn": "Look at the pictures and fill in the possessive pronouns/adjectives or the people's names.",
+          "instructionUz": "Rasmlarga qarang va egalik olmoshi/sifati yoki odamlarning ismini qo'ying.",
+          "explanationUz": "RASMLAR JADVALI — kim nimaga egalik qiladi:\n\n  Lucy          — pencils (qalamlar)\n  Mark and John — CDs (disklar)\n  Bill          — dog (it)\n  Tom           — hat (shlyapa)\n  Greg          — bicycle (velosiped)\n  Joe           — boots (etiklar)\n  Rob and Jane  — car (mashina)\n  Tim           — basketball (basketbol to'pi)\n  Carol         — books (kitoblar)\n  Sarah         — cat (mushuk)\n\nNAMUNA:\n  A: Are these pencils Lucy's?\n  B: Yes, they're HERS. They're HER pencils.\n\nQOLIP:\n  Birinchi bo'shliq — OT YO'Q  → egalik OLMOSHI\n                                 (mine, yours, his, hers, ours, theirs)\n  Ikkinchi bo'shliq — OT BORmi?\n                     bor  → egalik SIFATI (his, her, their) yoki ism + 's\n                     yo'q → ism + 's\n\nDIQQAT — JINSGA qarang:\n  Lucy, Sarah, Carol, Jane — AYOL → hers / her\n  Mark, John, Bill, Tom, Greg, Joe, Tim, Rob, Jeff — ERKAK → his\n  ikki kishi — theirs / their",
+          "bookRef": "Workbook, 17-bet, 6-mashq",
+          "commonMistake": {
+            "whatUz": "Skandagi oldingi o'quvchi 3-bandda 'Is that Sarah's cat?' savoliga 'Yes, it's HIS. It's HIS cat.' deb javob bergan.",
+            "whyUz": "XATO — Sarah AYOL ismi. Ayol uchun 'hers' (olmosh) va 'her' (sifat) ishlatiladi. To'g'ri javob: 'Yes, it's HERS. It's HER cat.'\nIngliz tilida egalik olmoshi EGASINING jinsiga qarab tanlanadi, narsaga emas — o'zbek tilida bunday farq yo'q, shuning uchun bu xato ko'p uchraydi."
+          },
+          "lines": [
+            { "who": "1 A", "textEn": "Are these pencils Lucy's?", "uz": "Bu qalamlar Lyusinikimi?", "given": true },
+            { "who": "1 B", "textEn": "Yes, they're ____ . They're ____ pencils.", "answers": ["hers", "her"], "given": true, "whyUz": "Kitobdagi namuna. Lyusi — ayol. Otsiz → hers, ot bilan → her." },
+            { "who": "2 A", "textEn": "Are those CDs Rob and Jane's?", "uz": "Anavi disklar Rob va Jeynnikimi?", "given": true },
+            { "who": "2 B", "textEn": "No, they aren't ____ . They're ____ CDs.", "answers": ["theirs", "Mark and John's"], "hintUz": "Rob va Jeyn — ikki kishi; rasmda disklar boshqa ikki kishiniki", "whyUz": "Ularniki EMAS → 'theirs' (ikki kishi, otsiz). Rasmda disklar Mark va Jonniki → 's oxirgi ismga." },
+            { "who": "3 A", "textEn": "Is that Sarah's cat?", "uz": "Bu Saraning mushugimi?", "given": true },
+            { "who": "3 B", "textEn": "Yes, it's ____ . It's ____ cat.", "answers": ["hers", "her"], "hintUz": "Sara — AYOL ismi. Birinchisi otsiz, ikkinchisi ot bilan", "whyUz": "Sara — ayol → hers (olmosh) va her (sifat). 'his' XATO." },
+            { "who": "4 A", "textEn": "Is that Jeff's dog?", "uz": "Bu Jeffning itimi?", "given": true },
+            { "who": "4 B", "textEn": "No, it isn't ____ . It's ____ .", "answers": ["his", "Bill's"], "hintUz": "Jeff — erkak; rasmda it boshqa odamniki", "whyUz": "Jeffniki EMAS → 'his'. Rasmda it Billniki → Bill's." },
+            { "who": "5 A", "textEn": "Is that Mark and John's bicycle?", "uz": "Bu Mark va Jonning velosipedimi?", "given": true },
+            { "who": "5 B", "textEn": "No, it isn't ____ . It's ____ .", "answers": ["theirs", "Greg's"], "hintUz": "Ikki kishi; rasmda velosiped boshqa odamniki", "whyUz": "Ularniki EMAS → 'theirs'. Rasmda velosiped Gregniki → Greg's." },
+            { "who": "6 A", "textEn": "Is that Rob and Jane's car?", "uz": "Bu Rob va Jeynning mashinasimi?", "given": true },
+            { "who": "6 B", "textEn": "Yes, it's ____ . It's ____ car.", "answers": ["theirs", "their"], "hintUz": "Ikki kishi. Birinchisi otsiz, ikkinchisi ot bilan", "whyUz": "Rasmda mashina ularniki. Otsiz → theirs, ot bilan → their. Bu ikkisi FARQ qiladi!" },
+            { "who": "7 A", "textEn": "Are those Carol's books?", "uz": "Anavi kitoblar Kerolnikimi?", "given": true },
+            { "who": "7 B", "textEn": "Yes, they're ____ . They're ____ books.", "answers": ["hers", "her"], "hintUz": "Kerol — ayol ismi", "whyUz": "Rasmda kitoblar Kerolniki. Ayol → hers / her." },
+            { "who": "8 A", "textEn": "Are those my boots?", "uz": "Anavi etiklar meningmi?", "given": true },
+            { "who": "8 B", "textEn": "No, they're not ____ . They're ____ .", "answers": ["yours", "Joe's"], "hintUz": "Savolda 'my' — javobda 'sening'; rasmda etiklar boshqa odamniki", "whyUz": "Savolda 'my' → javobda 'yours'. Rasmda etiklar Jouniki → Joe's." },
+            { "who": "9 A", "textEn": "Is that your basketball?", "uz": "Bu sening basketbol to'pingmi?", "given": true },
+            { "who": "9 B", "textEn": "No, it isn't ____ . It's ____ basketball.", "answers": ["mine", "Tim's"], "hintUz": "Savolda 'your' — javobda o'zi haqida; rasmda to'p boshqa odamniki", "whyUz": "Savolda 'your' → javobda 'mine'. Rasmda to'p Timniki → Tim's basketball." },
+            { "who": "10 A", "textEn": "Is that Bill's hat?", "uz": "Bu Billning shlyapasimi?", "given": true },
+            { "who": "10 B", "textEn": "No, it isn't ____ . It's ____ .", "answers": ["his", "Tom's"], "hintUz": "Bill — erkak; rasmda shlyapa boshqa odamniki", "whyUz": "Billniki EMAS → 'his'. Rasmda shlyapa Tomniki → Tom's." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Workbook 17-bet — kasblar, artikl va -y sifatlari.",
+    "groups": [
+      {
+        "ruleUz": "A yoki AN — TOVUSHGA qarab",
+        "explanationUz": "Artikl keyingi so'zning birinchi TOVUSHIGA qarab tanlanadi, HARFIGA emas.",
+        "items": [
+          { "base": "doctor /d/", "baseUz": "shifokor", "derived": "a doctor", "derivedUz": "undosh tovush", "note": "" },
+          { "base": "dentist /d/", "baseUz": "tish shifokori", "derived": "a dentist", "derivedUz": "undosh tovush", "note": "" },
+          { "base": "taxi driver /t/", "baseUz": "taksi haydovchisi", "derived": "a taxi driver", "derivedUz": "undosh tovush", "note": "'an' XATO" },
+          { "base": "astronaut /æ/", "baseUz": "kosmonavt", "derived": "an astronaut", "derivedUz": "unli tovush", "note": "'a' XATO" },
+          { "base": "actress /æ/", "baseUz": "aktrisa", "derived": "an actress", "derivedUz": "unli tovush", "note": "" },
+          { "base": "surgeons", "baseUz": "jarrohlar", "derived": "surgeons", "derivedUz": "KO'PLIK — artikl yo'q", "note": "They're surgeons." }
+        ]
+      },
+      {
+        "ruleUz": "Ot + -y → xarakter sifati",
+        "explanationUz": "Otga -y qo'shilsa, 'shu xususiyatga ega' ma'nosidagi sifat chiqadi.",
+        "items": [
+          { "base": "noise", "baseUz": "shovqin", "derived": "noisy", "derivedUz": "shovqinli", "note": "-e tushadi" },
+          { "base": "boss", "baseUz": "boshliq", "derived": "bossy", "derivedUz": "buyruqboz", "note": "" },
+          { "base": "fun", "baseUz": "zavq", "derived": "funny", "derivedUz": "kulgili", "note": "'n' ikkilanadi" },
+          { "base": "luck", "baseUz": "omad", "derived": "lucky", "derivedUz": "omadli", "note": "" },
+          { "base": "anger", "baseUz": "jahl", "derived": "angry", "derivedUz": "jahldor", "note": "-e tushadi" }
+        ]
+      },
+      {
+        "ruleUz": "Bir so'z — ikki ma'no (sifat va ot)",
+        "explanationUz": "Artikl bor-yo'qligi ma'noni o'zgartiradi.",
+        "items": [
+          { "base": "patient (sifat)", "baseUz": "sabrli", "derived": "He is patient.", "derivedUz": "artikl YO'Q", "note": "xarakter" },
+          { "base": "a patient (ot)", "baseUz": "bemor", "derived": "He is a patient.", "derivedUz": "artikl BOR", "note": "kasalxonada" },
+          { "base": "kind (sifat)", "baseUz": "mehribon", "derived": "She is kind.", "derivedUz": "artikl yo'q", "note": "" },
+          { "base": "a kind (ot)", "baseUz": "tur, xil", "derived": "What kind of music?", "derivedUz": "artikl bilan", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Kasb nomlarining yasalishi",
+        "explanationUz": "Bu betdagi kasblar turli yo'llar bilan yasalgan.",
+        "items": [
+          { "base": "drive", "baseUz": "haydamoq", "derived": "a taxi driver", "derivedUz": "taksi haydovchisi", "note": "-er" },
+          { "base": "dent (lotincha 'tish')", "baseUz": "tish", "derived": "a dentist", "derivedUz": "tish shifokori", "note": "-ist" },
+          { "base": "astro (yulduz) + naut (dengizchi)", "baseUz": "yulduz sayohatchisi", "derived": "an astronaut", "derivedUz": "kosmonavt", "note": "yunoncha" },
+          { "base": "actor", "baseUz": "aktyor", "derived": "an actress", "derivedUz": "aktrisa", "note": "-ess (ayol shakli)" },
+          { "base": "surgery", "baseUz": "jarrohlik", "derived": "a surgeon", "derivedUz": "jarroh", "note": "o'qilishi 'SO-jen'" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Workbook 17-betdagi qoliplar.",
+    "patterns": [
+      {
+        "formula": "What's his/her job? — He's/She's + A/AN + kasb.",
+        "exampleEn": "What's her job? — She's a doctor. What's his job? — He's an astronaut.",
+        "exampleUz": "Uning kasbi nima? — U shifokor. Uning kasbi nima? — U kosmonavt.",
+        "explanationUz": "Birlikda artikl SHART. A yoki AN — tovushga qarab."
+      },
+      {
+        "formula": "What are their jobs? — They're + kasb (ko'plikda, artiklsiz).",
+        "exampleEn": "What are their jobs? — They're surgeons.",
+        "exampleUz": "Ularning kasbi nima? — Ular jarroh.",
+        "explanationUz": "Ko'plikda artikl YO'Q. 'job' ham ko'plikda: jobS."
+      },
+      {
+        "formula": "Are these + ot + ISM's? — Yes, they're + EGALIK OLMOSHI. They're + EGALIK SIFATI + ot.",
+        "exampleEn": "Are these pencils Lucy's? — Yes, they're hers. They're her pencils.",
+        "exampleUz": "Bu qalamlar Lyusinikimi? — Ha, uniki. Bular uning qalamlari.",
+        "explanationUz": "Birinchi javob otsiz (olmosh), ikkinchisi ot bilan (sifat)."
+      },
+      {
+        "formula": "No, it isn't + EGALIK OLMOSHI. It's + ISM's.",
+        "exampleEn": "Is that Jeff's dog? — No, it isn't his. It's Bill's.",
+        "exampleUz": "Bu Jeffning itimi? — Yo'q, uniki emas. Billniki.",
+        "explanationUz": "Rad etish va haqiqiy egasini aytish. Ikkalasida ham ot takrorlanmaydi."
+      },
+      {
+        "formula": "Are those my ...? — No, they're not yours. They're + ISM's.",
+        "exampleEn": "Are those my boots? — No, they're not yours. They're Joe's.",
+        "exampleUz": "Anavi etiklar meningmi? — Yo'q, seniki emas. Jounikilar.",
+        "explanationUz": "Savolda 'my' bo'lsa, javobda 'yours' bo'ladi —\nchunki gapiruvchi almashadi."
+      },
+      {
+        "formula": "She doesn't + fe'l + ... . She's + sifat.",
+        "exampleEn": "She doesn't get angry easily. She's patient.",
+        "exampleUz": "U tez jahli chiqmaydi. U sabrli.",
+        "explanationUz": "Avval xulq inkor orqali tasvirlanadi, keyin sifat aytiladi."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "patient", "uz": "sabrli" },
+    { "en": "lazy", "uz": "dangasa" },
+    { "en": "noisy", "uz": "shovqinli" },
+    { "en": "friendly", "uz": "do'stona" },
+    { "en": "noise", "uz": "shovqin" },
+    { "en": "a surgeon", "uz": "jarroh" },
+    { "en": "an actress", "uz": "aktrisa" },
+    { "en": "an astronaut", "uz": "kosmonavt" },
+    { "en": "a doctor", "uz": "shifokor" },
+    { "en": "a taxi driver", "uz": "taksi haydovchisi" },
+    { "en": "a dentist", "uz": "tish shifokori" },
+    { "en": "a pencil", "uz": "qalam" },
+    { "en": "a CD", "uz": "disk" },
+    { "en": "a dog", "uz": "it" },
+    { "en": "a hat", "uz": "shlyapa" },
+    { "en": "a bicycle", "uz": "velosiped" },
+    { "en": "boots", "uz": "etiklar" },
+    { "en": "a car", "uz": "mashina" },
+    { "en": "a basketball", "uz": "basketbol to'pi" },
+    { "en": "a book", "uz": "kitob" },
+    { "en": "a cat", "uz": "mushuk" },
+    { "en": "to work", "uz": "ishlamoq" },
+    { "en": "to make a lot of noise", "uz": "ko'p shovqin qilmoq" }
+  ]
+}
