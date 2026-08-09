@@ -694,7 +694,11 @@ def _dispatch(t, ex, items):
         ]
 
     if t == "explain":
-        return "study", [study(ex.get("instructionEn", ""), ex.get("instructionUz", ""))]
+        # Nazariya bloki: ko'rsatma + har bir qoida/misol alohida band bo'ladi.
+        out = [study(ex.get("instructionEn", ""), ex.get("instructionUz", ""))]
+        out += [study(p.get("en", ""), p.get("uz", ""), p.get("noteUz", ""))
+                for p in ex.get("points", []) if p.get("en") or p.get("uz")]
+        return "study", out
 
     # ---------- fallback: hech narsa yo'qolmaydi ----------
     # DIQQAT: bu yerga tushish — odatda XATO. Mashq turi tanilmasa, uning

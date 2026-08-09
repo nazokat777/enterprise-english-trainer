@@ -28,7 +28,7 @@ ITEM_KEYS = (
     "items", "answers", "pairs", "lines", "profiles", "rows", "sentences",
     "words", "questions", "pictureLabels", "scenes", "modelSentences",
     "modelAnswers", "dialogues", "texts", "structure", "example",
-    "sentenceEn", "table",
+    "sentenceEn", "table", "points",
 )
 
 UZ_IN_SPEECH = re.compile(
