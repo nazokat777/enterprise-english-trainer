@@ -62,8 +62,17 @@ SECTION_TITLE_UZ = {
 
 
 # ─────────────────────────── yordamchilar ───────────────────────────
-def task(prompt, answer, *, prompt_uz="", options=None, why="", alt=None):
-    """Bitta savol-javob birligi."""
+def task(prompt, answer, *, prompt_uz="", options=None, why="", alt=None,
+         speak=None, visual=""):
+    """Bitta savol-javob birligi.
+
+    MUHIM — JAVOBNI OSHKOR QILMASLIK:
+      * `prompt_uz` javobning o'zbekchasi BO'LMASLIGI kerak.
+      * `speak` — javob berilgunga qadar ovoz chiqariladigan matn.
+        Faqat SAVOL matni bo'lishi mumkin va u inglizcha bo'lsa.
+        Berilmasa — avtomatik aniqlanadi (o'zbekcha bo'lsa, ovoz yo'q).
+      * `visual` — emoji yoki asset yo'li (rasm o'rniga).
+    """
     t = {"prompt": str(prompt), "answer": str(answer)}
     if prompt_uz:
         t["promptUz"] = prompt_uz
@@ -73,7 +82,99 @@ def task(prompt, answer, *, prompt_uz="", options=None, why="", alt=None):
         t["whyUz"] = why
     if alt:
         t["alt"] = alt if isinstance(alt, list) else [str(alt)]
+    if visual:
+        t["visual"] = visual
+
+    s = speak if speak is not None else _auto_speak(prompt)
+    if s:
+        t["speak"] = str(s)
     return t
+
+
+# O'zbekcha yorliqlar — bularni inglizcha ovoz bilan o'qish ma'nosiz.
+_UZ_MARKERS = ("Rasm ", "Matn ", "-o'rin", "-bet", " — ", "tuzing", "shakl",
+               "Namuna", "bo'yicha", "yozing", "qarang")
+
+
+def _auto_speak(prompt):
+    """Savol matni inglizcha bo'lsa — o'qiladi, aks holda ovoz yo'q."""
+    p = str(prompt).strip()
+    if not p:
+        return ""
+    if any(m in p for m in _UZ_MARKERS):
+        return ""
+    # O'zbekcha o'ziga xos harflar yoki raqamdan iborat bo'lsa — o'qimaymiz.
+    if any(ch in p for ch in "'‘’") and " " not in p:
+        return ""
+    letters = [c for c in p if c.isalpha()]
+    if not letters:
+        return ""  # faqat raqam (masalan "13")
+    return p
+
+
+# ─────────────────── Vizual (emoji) lug'ati ───────────────────
+# Kitobdagi rasmlar mualliflik huquqi bilan himoyalangan, shuning uchun
+# ularni ko'chirmaymiz. Ko'p mashqlarda rasm shunchaki buyumni bildiradi —
+# emoji o'sha vazifani bajaradi: bepul, offline, tushunarli.
+EMOJI = {
+    # buyumlar
+    "book": "📕", "armchair": "🪑", "house": "🏠", "orange": "🍊",
+    "elephant": "🐘", "dog": "🐕", "tree": "🌳", "umbrella": "☂️",
+    "envelope": "✉️", "watch": "⌚", "clock": "🕐", "hamburger": "🍔",
+    "apple": "🍎", "pencil": "✏️", "bicycle": "🚲", "banana": "🍌",
+    "hat": "🎩", "guitar": "🎸", "butterfly": "🦋", "lemon": "🍋",
+    "television": "📺", "car": "🚗", "plane": "✈️", "tractor": "🚜",
+    "palette": "🎨", "stethoscope": "🩺", "space shuttle": "🚀",
+    "blackboard": "🧮", "letters": "📬", "kitten": "🐈", "cat": "🐈",
+    "drum": "🥁", "piano": "🎹", "violin": "🎻", "map": "🗺️",
+    # odamlar / kasblar
+    "boy": "👦", "girl": "👧", "man": "👨", "woman": "👩",
+    "doctor": "🧑‍⚕️", "pilot": "🧑‍✈️", "farmer": "🧑‍🌾", "teacher": "🧑‍🏫",
+    "artist": "🧑‍🎨", "astronaut": "🧑‍🚀", "engineer": "👷", "waiter": "🧑‍🍳",
+    "waitress": "🧑‍🍳", "musician": "🎼", "postman": "📮", "vet": "🐾",
+    "dancer": "💃", "singer": "🎤", "policeman": "👮", "lawyer": "⚖️",
+    "barman": "🍸", "actress": "🎭", "actor": "🎭", "student": "🎓",
+    "taxi driver": "🚕", "footballer": "⚽", "guitarist": "🎸",
+    "drummer": "🥁", "surgeons": "🧑‍⚕️", "two girls": "👧👧",
+    # sport
+    "golf": "⛳", "football": "⚽", "basketball": "🏀",
+    "tennis": "🎾", "volleyball": "🏐",
+    # mashhur joylar
+    "the pyramids": "🔺", "the taj mahal": "🕌", "big ben": "🕰️",
+    "the eiffel tower": "🗼", "the parthenon": "🏛️",
+    "the white house": "🏛️", "st basil's cathedral": "⛪",
+    "the sydney opera house": "🎭", "the statue of liberty": "🗽",
+}
+
+# Mamlakat → bayroq. Millat mashqlarida javobni oshkor qilmasligi uchun
+# faqat javob berilgandan keyin ko'rsatiladi (Dart tomonda hal qilinadi).
+FLAG = {
+    "brazil": "🇧🇷", "india": "🇮🇳", "spain": "🇪🇸", "scotland": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "egypt": "🇪🇬", "france": "🇫🇷", "italy": "🇮🇹", "poland": "🇵🇱",
+    "hungary": "🇭🇺", "russia": "🇷🇺", "china": "🇨🇳", "japan": "🇯🇵",
+    "germany": "🇩🇪", "turkey": "🇹🇷", "canada": "🇨🇦", "greece": "🇬🇷",
+    "finland": "🇫🇮", "mexico": "🇲🇽", "argentina": "🇦🇷", "portugal": "🇵🇹",
+    "switzerland": "🇨🇭", "the czech republic": "🇨🇿", "australia": "🇦🇺",
+    "the usa": "🇺🇸", "america": "🇺🇸", "england": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "britain": "🇬🇧",
+    "holland": "🇳🇱", "ireland": "🇮🇪", "wales": "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "sweden": "🇸🇪",
+    "denmark": "🇩🇰", "new zealand": "🇳🇿", "austria": "🇦🇹",
+    "bulgaria": "🇧🇬", "new delhi": "🇮🇳",
+}
+
+
+def emoji_for(*candidates):
+    """Berilgan so'zlardan biriga mos emoji topadi."""
+    for c in candidates:
+        if not c:
+            continue
+        k = str(c).strip().lower()
+        if k in EMOJI:
+            return EMOJI[k]
+        # "a waiter" / "an artist" kabi artiklni tashlab ko'ramiz
+        for art in ("a ", "an ", "the "):
+            if k.startswith(art) and k[len(art):] in EMOJI:
+                return EMOJI[k[len(art):]]
+    return ""
 
 
 def study(en, uz="", note=""):
@@ -126,7 +227,8 @@ def _dispatch(t, ex, items):
     if t == "article_choice":
         return "choice", [
             task(i["word"], i["answer"], prompt_uz=i.get("wordUz", ""),
-                 options=["a", "an"], why=i.get("whyUz", ""))
+                 options=["a", "an"], why=i.get("whyUz", ""),
+                 visual=emoji_for(i["word"]))
             for i in items
         ]
 
@@ -136,12 +238,13 @@ def _dispatch(t, ex, items):
                  options=["a", "an"], why=a.get("whyUz", ""))
             for a in ex.get("articleAnswers", [])
         ]
+        # DIQQAT: answerUz — javobning o'zbekchasi, ko'rsatib bo'lmaydi.
         names = [i["answer"] for i in items]
         out += [
             task(f"{i['name']} ({i['age']})", i["answer"],
-                 prompt_uz=i.get("answerUz", ""),
+                 prompt_uz="Rasmdagi kasbni tanlang",
                  options=[i["answer"]] + distractors(i["answer"], names),
-                 why=i.get("noteUz", ""))
+                 why=i.get("noteUz", ""), speak="")
             for i in items if not i.get("given")
         ]
         return "choice", out
@@ -153,9 +256,14 @@ def _dispatch(t, ex, items):
         ]
 
     if t in ("picture_choice",):
+        # DIQQAT: mamlakatning o'zbekcha nomi JAVOB hisoblanadi — uni
+        # savolda ko'rsatib bo'lmaydi. O'rniga rasm tavsifi beriladi.
         return "choice", [
-            task(f"Rasm {a['picture']}", a["country"], prompt_uz=a.get("countryUz", ""),
-                 options=ex.get("options", []))
+            task(a.get("descEn") or f"Rasm {a['picture']}", a["country"],
+                 prompt_uz=a.get("descUz", "Kiyim va buyumlarga qarab toping"),
+                 options=ex.get("options", []),
+                 speak=a.get("descEn", ""),
+                 visual=a.get("image", ""))
             for a in ex.get("answers", [])
         ]
 
@@ -163,7 +271,9 @@ def _dispatch(t, ex, items):
         return "choice", [
             task(i.get("pictureEn", i.get("picture", "")), i["answer"],
                  prompt_uz=i.get("picture", ""), options=["he", "she", "it", "they"],
-                 why=i.get("whyUz", ""))
+                 why=i.get("whyUz", ""),
+                 speak=i.get("pictureEn", ""),
+                 visual=emoji_for(i.get("pictureEn"), i.get("picture")))
             for i in items
         ]
 
@@ -172,7 +282,9 @@ def _dispatch(t, ex, items):
         return "choice", [
             task(i.get("objectEn", ""), i["answer"], prompt_uz=i.get("object", ""),
                  options=[i["answer"]] + distractors(i["answer"], pool),
-                 why=i.get("commonMistake", {}).get("whyUz", ""))
+                 why=i.get("commonMistake", {}).get("whyUz", ""),
+                 speak=i.get("objectEn", ""),
+                 visual=emoji_for(i.get("objectEn"), i.get("object")))
             for i in items
         ]
 
@@ -193,12 +305,13 @@ def _dispatch(t, ex, items):
         ]
 
     if t == "map_fill":
+        # DIQQAT: countryUz javob — savolda faqat poytaxt nomi beriladi.
         wl = ex.get("wordList", [])
         return "choice", [
             task(f"{i['capital']} is in ___", i["country"],
-                 prompt_uz=f"{i.get('capitalUz','')} — {i.get('countryUz','')}",
+                 prompt_uz=i.get("capitalUz", ""),
                  options=[i["country"]] + distractors(i["country"], wl),
-                 why=i.get("noteUz", ""))
+                 why=i.get("noteUz", ""), speak=i["capital"])
             for i in items
         ]
 

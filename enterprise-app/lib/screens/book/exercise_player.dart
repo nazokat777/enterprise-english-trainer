@@ -289,6 +289,36 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   }
 }
 
+/// Mashq bandining vizuali. Kitob rasmlari mualliflik huquqi bilan
+/// himoyalangan, shuning uchun ko'chirilmaydi. O'rniga:
+///   * emoji — buyum/kasb uchun (offline, bepul)
+///   * `assets/...` yo'li — erkin litsenziyali rasm bo'lsa
+class TaskVisual extends StatelessWidget {
+  final String visual;
+  final double size;
+  const TaskVisual({super.key, required this.visual, this.size = 72});
+
+  bool get _isAsset => visual.startsWith('assets/');
+
+  @override
+  Widget build(BuildContext context) {
+    if (visual.isEmpty) return const SizedBox.shrink();
+    if (_isAsset) {
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        child: Image.asset(
+          visual,
+          height: size * 2.1,
+          fit: BoxFit.cover,
+          // Rasm topilmasa ilova buzilmasin.
+          errorBuilder: (_, _, _) => const SizedBox.shrink(),
+        ),
+      );
+    }
+    return Text(visual, style: TextStyle(fontSize: size));
+  }
+}
+
 // ═══════════════ Izoh kartasi (barcha turlar uchun) ═══════════════
 class ExplanationCard extends StatelessWidget {
   final String text;
@@ -392,6 +422,10 @@ class _ChoiceStageState extends State<_ChoiceStage> {
           ),
           child: Column(
             children: [
+              if (t.visual.isNotEmpty) ...[
+                TaskVisual(visual: t.visual),
+                const SizedBox(height: 12),
+              ],
               Text(t.prompt,
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -407,8 +441,10 @@ class _ChoiceStageState extends State<_ChoiceStage> {
                     style: const TextStyle(
                         fontSize: 13.5, color: AppColors.lightMuted)),
               ],
-              const SizedBox(height: 12),
-              RoundPlay(text: t.speakText),
+              if (t.canSpeak) ...[
+                const SizedBox(height: 12),
+                RoundPlay(text: t.speakText),
+              ],
             ],
           ),
         ),
@@ -551,6 +587,10 @@ class _BuildStageState extends State<_BuildStage> {
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
         ExplanationCard(text: widget.explanation),
+        if (t.visual.isNotEmpty) ...[
+          Center(child: TaskVisual(visual: t.visual, size: 64)),
+          const SizedBox(height: 12),
+        ],
         Center(
           child: Text(t.prompt,
               textAlign: TextAlign.center,
@@ -568,8 +608,10 @@ class _BuildStageState extends State<_BuildStage> {
                     fontSize: 13, color: AppColors.lightMuted)),
           ),
         ],
-        const SizedBox(height: 14),
-        Center(child: RoundPlay(text: t.speakText, size: 48)),
+        if (t.canSpeak) ...[
+          const SizedBox(height: 14),
+          Center(child: RoundPlay(text: t.speakText, size: 48)),
+        ],
         const SizedBox(height: 18),
         Container(
           constraints: const BoxConstraints(minHeight: 64),

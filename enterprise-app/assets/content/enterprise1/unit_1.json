@@ -23,48 +23,52 @@
      "kind": "choice",
      "tasks": [
       {
-       "prompt": "Rasm A",
+       "prompt": "Two farmers with hoes, working in a field",
        "answer": "Brazil",
-       "promptUz": "Braziliya",
+       "promptUz": "Ketmon ushlagan ikki dehqon, dalada",
        "options": [
         "Spain",
         "India",
         "Scotland",
         "Brazil"
-       ]
+       ],
+       "speak": "Two farmers with hoes, working in a field"
       },
       {
-       "prompt": "Rasm B",
+       "prompt": "A girl wearing a colourful headscarf",
        "answer": "India",
-       "promptUz": "Hindiston",
+       "promptUz": "Rangli ro'mol o'ragan qiz",
        "options": [
         "Spain",
         "India",
         "Scotland",
         "Brazil"
-       ]
+       ],
+       "speak": "A girl wearing a colourful headscarf"
       },
       {
-       "prompt": "Rasm C",
+       "prompt": "A couple in flamenco costume",
        "answer": "Spain",
-       "promptUz": "Ispaniya",
+       "promptUz": "Flamenko libosidagi juftlik",
        "options": [
         "Spain",
         "India",
         "Scotland",
         "Brazil"
-       ]
+       ],
+       "speak": "A couple in flamenco costume"
       },
       {
-       "prompt": "Rasm D",
+       "prompt": "A man in a kilt playing the bagpipes",
        "answer": "Scotland",
-       "promptUz": "Shotlandiya",
+       "promptUz": "Kilt kiygan, jiroq chalayotgan erkak",
        "options": [
         "Spain",
         "India",
         "Scotland",
         "Brazil"
-       ]
+       ],
+       "speak": "A man in a kilt playing the bagpipes"
       }
      ]
     },
@@ -246,35 +250,43 @@
      "tasks": [
       {
        "prompt": "thirteen",
-       "answer": "13"
+       "answer": "13",
+       "speak": "thirteen"
       },
       {
        "prompt": "fourteen",
-       "answer": "14"
+       "answer": "14",
+       "speak": "fourteen"
       },
       {
        "prompt": "fifteen",
-       "answer": "15"
+       "answer": "15",
+       "speak": "fifteen"
       },
       {
        "prompt": "sixteen",
-       "answer": "16"
+       "answer": "16",
+       "speak": "sixteen"
       },
       {
        "prompt": "seventeen",
-       "answer": "17"
+       "answer": "17",
+       "speak": "seventeen"
       },
       {
        "prompt": "eighteen",
-       "answer": "18"
+       "answer": "18",
+       "speak": "eighteen"
       },
       {
        "prompt": "nineteen",
-       "answer": "19"
+       "answer": "19",
+       "speak": "nineteen"
       },
       {
        "prompt": "twenty",
-       "answer": "20"
+       "answer": "20",
+       "speak": "twenty"
       }
      ]
     },
@@ -434,37 +446,43 @@
        "prompt": "France",
        "answer": "Paris",
        "promptUz": "Fransiya",
-       "whyUz": "Zafar arkasi"
+       "whyUz": "Zafar arkasi",
+       "speak": "France"
       },
       {
        "prompt": "Italy",
        "answer": "Rome",
        "promptUz": "Italiya",
-       "whyUz": "Kolizey"
+       "whyUz": "Kolizey",
+       "speak": "Italy"
       },
       {
        "prompt": "Poland",
        "answer": "Warsaw",
        "promptUz": "Polsha",
-       "whyUz": "Eski shahar"
+       "whyUz": "Eski shahar",
+       "speak": "Poland"
       },
       {
        "prompt": "Hungary",
        "answer": "Budapest",
        "promptUz": "Vengriya",
-       "whyUz": "Parlament"
+       "whyUz": "Parlament",
+       "speak": "Hungary"
       },
       {
        "prompt": "Russia",
        "answer": "Moscow",
        "promptUz": "Rossiya",
-       "whyUz": "Kreml"
+       "whyUz": "Kreml",
+       "speak": "Russia"
       },
       {
        "prompt": "China",
        "answer": "Beijing",
        "promptUz": "Xitoy",
-       "whyUz": "Taqiqlangan shahar"
+       "whyUz": "Taqiqlangan shahar",
+       "speak": "China"
       }
      ]
     }
@@ -543,44 +561,54 @@
      "tasks": [
       {
        "prompt": "twenty-one",
-       "answer": "21"
+       "answer": "21",
+       "speak": "twenty-one"
       },
       {
        "prompt": "eighteen",
        "answer": "18",
-       "whyUz": "-teen → 18 (eighty = 80 emas)"
+       "whyUz": "-teen → 18 (eighty = 80 emas)",
+       "speak": "eighteen"
       },
       {
        "prompt": "fifty",
-       "answer": "50"
+       "answer": "50",
+       "speak": "fifty"
       },
       {
        "prompt": "one hundred",
-       "answer": "100"
+       "answer": "100",
+       "speak": "one hundred"
       },
       {
        "prompt": "seventy-five",
-       "answer": "75"
+       "answer": "75",
+       "speak": "seventy-five"
       },
       {
        "prompt": "ninety-seven",
-       "answer": "97"
+       "answer": "97",
+       "speak": "ninety-seven"
       },
       {
        "prompt": "forty-three",
-       "answer": "43"
+       "answer": "43",
+       "speak": "forty-three"
       },
       {
        "prompt": "sixty-eight",
-       "answer": "68"
+       "answer": "68",
+       "speak": "sixty-eight"
       },
       {
        "prompt": "thirty-two",
-       "answer": "32"
+       "answer": "32",
+       "speak": "thirty-two"
       },
       {
        "prompt": "eighty-nine",
-       "answer": "89"
+       "answer": "89",
+       "speak": "eighty-nine"
       }
      ]
     }
@@ -613,7 +641,8 @@
         "farmer",
         "doctor",
         "pilot"
-       ]
+       ],
+       "speak": "a palette and brushes"
       },
       {
        "prompt": "a tractor",
@@ -625,7 +654,9 @@
         "doctor",
         "pilot"
        ],
-       "whyUz": "Skanerdagi qo'lyozmada 'driver' deb yozilgan. Traktor — dehqonchilik texnikasi, shuning uchun 'farmer' kutiladi. 'driver' (haydovchi) mashina/avtobus uchun ishlatiladi."
+       "whyUz": "Skanerdagi qo'lyozmada 'driver' deb yozilgan. Traktor — dehqonchilik texnikasi, shuning uchun 'farmer' kutiladi. 'driver' (haydovchi) mashina/avtobus uchun ishlatiladi.",
+       "visual": "🚜",
+       "speak": "a tractor"
       },
       {
        "prompt": "a stethoscope",
@@ -636,7 +667,9 @@
         "artist",
         "farmer",
         "pilot"
-       ]
+       ],
+       "visual": "🩺",
+       "speak": "a stethoscope"
       },
       {
        "prompt": "a plane",
@@ -647,7 +680,9 @@
         "artist",
         "farmer",
         "doctor"
-       ]
+       ],
+       "visual": "✈️",
+       "speak": "a plane"
       },
       {
        "prompt": "a space shuttle",
@@ -658,7 +693,9 @@
         "artist",
         "farmer",
         "doctor"
-       ]
+       ],
+       "visual": "🚀",
+       "speak": "a space shuttle"
       },
       {
        "prompt": "a blackboard with sums",
@@ -669,7 +706,8 @@
         "artist",
         "farmer",
         "doctor"
-       ]
+       ],
+       "speak": "a blackboard with sums"
       },
       {
        "prompt": "a guitar",
@@ -680,7 +718,9 @@
         "artist",
         "farmer",
         "doctor"
-       ]
+       ],
+       "visual": "🎸",
+       "speak": "a guitar"
       },
       {
        "prompt": "letters and envelopes",
@@ -691,7 +731,8 @@
         "artist",
         "farmer",
         "doctor"
-       ]
+       ],
+       "speak": "letters and envelopes"
       }
      ]
     },
@@ -714,7 +755,8 @@
         "years old",
         "student",
         "job"
-       ]
+       ],
+       "speak": "How ___ is Richard?"
       },
       {
        "prompt": "Richard is twenty-four ___ .",
@@ -725,7 +767,8 @@
         "student",
         "job",
         "capital"
-       ]
+       ],
+       "speak": "Richard is twenty-four ___ ."
       },
       {
        "prompt": "\"What's his ___ ?\" \"He's an engineer.\"",
@@ -736,7 +779,8 @@
         "years old",
         "student",
         "capital"
-       ]
+       ],
+       "speak": "\"What's his ___ ?\" \"He's an engineer.\""
       },
       {
        "prompt": "His friend is a(n) ___ at Mortimer College.",
@@ -747,7 +791,8 @@
         "years old",
         "job",
         "capital"
-       ]
+       ],
+       "speak": "His friend is a(n) ___ at Mortimer College."
       },
       {
        "prompt": "\"What's her ___ ?\" \"Helen.\"",
@@ -758,7 +803,8 @@
         "years old",
         "student",
         "job"
-       ]
+       ],
+       "speak": "\"What's her ___ ?\" \"Helen.\""
       },
       {
        "prompt": "\"What's her ___ sport?\" \"Golf.\"",
@@ -770,7 +816,8 @@
         "student",
         "job"
        ],
-       "whyUz": "Qo'lyozmada 'favorite' deb yozilgan — bu AMERIKA imlosi. Enterprise BRITAN inglizchasida yozilgan, shuning uchun 'favouRite' (u bilan). Xuddi shunday: colour, neighbour."
+       "whyUz": "Qo'lyozmada 'favorite' deb yozilgan — bu AMERIKA imlosi. Enterprise BRITAN inglizchasida yozilgan, shuning uchun 'favouRite' (u bilan). Xuddi shunday: colour, neighbour.",
+       "speak": "\"What's her ___ sport?\" \"Golf.\""
       },
       {
        "prompt": "The ___ of Australia is Canberra.",
@@ -781,7 +828,8 @@
         "years old",
         "student",
         "job"
-       ]
+       ],
+       "speak": "The ___ of Australia is Canberra."
       }
      ]
     },
@@ -900,7 +948,8 @@
         "Swiss",
         "Egyptian",
         "American"
-       ]
+       ],
+       "speak": "What nationality are you?"
       },
       {
        "prompt": "What nationality is she?",
@@ -911,7 +960,8 @@
         "Swiss",
         "Egyptian",
         "Russian"
-       ]
+       ],
+       "speak": "What nationality is she?"
       },
       {
        "prompt": "What nationality are they?",
@@ -922,7 +972,8 @@
         "Swiss",
         "Egyptian",
         "American"
-       ]
+       ],
+       "speak": "What nationality are they?"
       },
       {
        "prompt": "What nationality is he?",
@@ -933,7 +984,8 @@
         "Egyptian",
         "American",
         "Russian"
-       ]
+       ],
+       "speak": "What nationality is he?"
       },
       {
        "prompt": "What nationality are they?",
@@ -945,7 +997,8 @@
         "Egyptian",
         "American"
        ],
-       "whyUz": "Oxirgi 'h' tushib qolgan. To'g'risi: SpanisH."
+       "whyUz": "Oxirgi 'h' tushib qolgan. To'g'risi: SpanisH.",
+       "speak": "What nationality are they?"
       },
       {
        "prompt": "What nationality is he?",
@@ -956,7 +1009,8 @@
         "Swiss",
         "Egyptian",
         "American"
-       ]
+       ],
+       "speak": "What nationality is he?"
       },
       {
        "prompt": "What nationality is she?",
@@ -967,7 +1021,8 @@
         "Swiss",
         "American",
         "Russian"
-       ]
+       ],
+       "speak": "What nationality is she?"
       },
       {
        "prompt": "What nationality are you?",
@@ -978,7 +1033,8 @@
         "Swiss",
         "Egyptian",
         "American"
-       ]
+       ],
+       "speak": "What nationality are you?"
       },
       {
        "prompt": "What nationality is he?",
@@ -989,7 +1045,8 @@
         "Swiss",
         "Egyptian",
         "American"
-       ]
+       ],
+       "speak": "What nationality is he?"
       },
       {
        "prompt": "What nationality is she?",
@@ -1000,7 +1057,8 @@
         "Swiss",
         "Egyptian",
         "American"
-       ]
+       ],
+       "speak": "What nationality is she?"
       }
      ]
     }
@@ -1027,37 +1085,45 @@
       {
        "prompt": "erkak, 40",
        "answer": "He's forty years old.",
-       "whyUz": "ENG KO'P XATO — bu bet-da ham takrorlangan. four (4) da 'u' bor, lekin forty (40) da YO'Q."
+       "whyUz": "ENG KO'P XATO — bu bet-da ham takrorlangan. four (4) da 'u' bor, lekin forty (40) da YO'Q.",
+       "speak": "erkak, 40"
       },
       {
        "prompt": "ayol, 80",
-       "answer": "She's eighty years old."
+       "answer": "She's eighty years old.",
+       "speak": "ayol, 80"
       },
       {
        "prompt": "erkak, 50",
-       "answer": "He's fifty years old."
+       "answer": "He's fifty years old.",
+       "speak": "erkak, 50"
       },
       {
        "prompt": "erkak, 26",
        "answer": "He's twenty-six years old.",
-       "whyUz": "Chiziqcha tushib qolgan. 21–99 oralig'idagi aralash sonlar CHIZIQCHA bilan yoziladi: twenty-six."
+       "whyUz": "Chiziqcha tushib qolgan. 21–99 oralig'idagi aralash sonlar CHIZIQCHA bilan yoziladi: twenty-six.",
+       "speak": "erkak, 26"
       },
       {
        "prompt": "ayol, 12",
        "answer": "She's twelve years old.",
-       "whyUz": "Qo'lyozmada 'She is twelve years old' — bu ham to'g'ri, lekin namunada qisqartma ishlatilgan (She's)."
+       "whyUz": "Qo'lyozmada 'She is twelve years old' — bu ham to'g'ri, lekin namunada qisqartma ishlatilgan (She's).",
+       "speak": "ayol, 12"
       },
       {
        "prompt": "erkak, 35",
-       "answer": "He's thirty-five years old."
+       "answer": "He's thirty-five years old.",
+       "speak": "erkak, 35"
       },
       {
        "prompt": "ayol, 15",
-       "answer": "She's fifteen years old."
+       "answer": "She's fifteen years old.",
+       "speak": "ayol, 15"
       },
       {
        "prompt": "ayol, 18",
-       "answer": "She's eighteen years old."
+       "answer": "She's eighteen years old.",
+       "speak": "ayol, 18"
       }
      ]
     }
@@ -1084,102 +1150,111 @@
       {
        "prompt": "Athens is in ___",
        "answer": "Greece",
-       "promptUz": "Afina — Gretsiya",
+       "promptUz": "Afina",
        "options": [
         "Greece",
         "Spain",
         "Poland",
         "Hungary"
-       ]
+       ],
+       "speak": "Athens"
       },
       {
        "prompt": "Rome is in ___",
        "answer": "Italy",
-       "promptUz": "Rim — Italiya",
+       "promptUz": "Rim",
        "options": [
         "Italy",
         "Spain",
         "Greece",
         "Poland"
-       ]
+       ],
+       "speak": "Rome"
       },
       {
        "prompt": "Berne is in ___",
        "answer": "Switzerland",
-       "promptUz": "Bern — Shveytsariya",
+       "promptUz": "Bern",
        "options": [
         "Switzerland",
         "Spain",
         "Greece",
         "Poland"
-       ]
+       ],
+       "speak": "Berne"
       },
       {
        "prompt": "Lisbon is in ___",
        "answer": "Portugal",
-       "promptUz": "Lissabon — Portugaliya",
+       "promptUz": "Lissabon",
        "options": [
         "Portugal",
         "Spain",
         "Greece",
         "Poland"
-       ]
+       ],
+       "speak": "Lisbon"
       },
       {
        "prompt": "Warsaw is in ___",
        "answer": "Poland",
-       "promptUz": "Varshava — Polsha",
+       "promptUz": "Varshava",
        "options": [
         "Poland",
         "Spain",
         "Greece",
         "Hungary"
-       ]
+       ],
+       "speak": "Warsaw"
       },
       {
        "prompt": "Prague is in ___",
        "answer": "the Czech Republic",
-       "promptUz": "Praga — Chexiya",
+       "promptUz": "Praga",
        "options": [
         "the Czech Republic",
         "Spain",
         "Greece",
         "Poland"
        ],
-       "whyUz": "'the' SHART — Republic so'zi bor."
+       "whyUz": "'the' SHART — Republic so'zi bor.",
+       "speak": "Prague"
       },
       {
        "prompt": "Madrid is in ___",
        "answer": "Spain",
-       "promptUz": "Madrid — Ispaniya",
+       "promptUz": "Madrid",
        "options": [
         "Spain",
         "Greece",
         "Poland",
         "Hungary"
-       ]
+       ],
+       "speak": "Madrid"
       },
       {
        "prompt": "Berlin is in ___",
        "answer": "Germany",
-       "promptUz": "Berlin — Germaniya",
+       "promptUz": "Berlin",
        "options": [
         "Germany",
         "Spain",
         "Greece",
         "Poland"
-       ]
+       ],
+       "speak": "Berlin"
       },
       {
        "prompt": "Budapest is in ___",
        "answer": "Hungary",
-       "promptUz": "Budapesht — Vengriya",
+       "promptUz": "Budapesht",
        "options": [
         "Hungary",
         "Spain",
         "Greece",
         "Poland"
-       ]
+       ],
+       "speak": "Budapest"
       }
      ]
     }
@@ -1207,42 +1282,50 @@
       {
        "prompt": "They are ... (A)",
        "answer": "farmers",
-       "promptUz": "dehqonlar"
+       "promptUz": "dehqonlar",
+       "speak": "They are ... (A)"
       },
       {
        "prompt": "I'm a ... (B)",
        "answer": "student",
-       "promptUz": "o'quvchi"
+       "promptUz": "o'quvchi",
+       "speak": "I'm a ... (B)"
       },
       {
        "prompt": "They are ... (C)",
        "answer": "dancers",
-       "promptUz": "raqqoslar"
+       "promptUz": "raqqoslar",
+       "speak": "They are ... (C)"
       },
       {
        "prompt": "I'm a ... (D)",
        "answer": "musician",
-       "promptUz": "musiqachi"
+       "promptUz": "musiqachi",
+       "speak": "I'm a ... (D)"
       },
       {
        "prompt": "Where is Fergus from? What's his job?",
        "answer": "He's from Edinburgh, Scotland. He's a musician.",
-       "promptUz": "Fergus qayerdan? Kasbi nima?"
+       "promptUz": "Fergus qayerdan? Kasbi nima?",
+       "speak": "Where is Fergus from? What's his job?"
       },
       {
        "prompt": "How old is Diego? What's his favourite sport?",
        "answer": "He's thirty-five years old. His favourite sport is football.",
-       "promptUz": "Diego necha yoshda? Sevimli sporti nima?"
+       "promptUz": "Diego necha yoshda? Sevimli sporti nima?",
+       "speak": "How old is Diego? What's his favourite sport?"
       },
       {
        "prompt": "Where are Carlos and Rosa from? How old is Carlos? How old is Rosa?",
        "answer": "They're from Spain. Carlos is twenty-two years old and Rosa is twenty years old.",
-       "promptUz": "Carlos va Rosa qayerdan? Carlos necha yoshda? Rosa necha yoshda?"
+       "promptUz": "Carlos va Rosa qayerdan? Carlos necha yoshda? Rosa necha yoshda?",
+       "speak": "Where are Carlos and Rosa from? How old is Carlos? How old is Rosa?"
       },
       {
        "prompt": "Where is Veena from? What's her favourite sport?",
        "answer": "She's from New Delhi, India. Her favourite sport is volleyball.",
-       "promptUz": "Veena qayerdan? Sevimli sporti nima?"
+       "promptUz": "Veena qayerdan? Sevimli sporti nima?",
+       "speak": "Where is Veena from? What's her favourite sport?"
       }
      ]
     }
@@ -1273,7 +1356,8 @@
         "T",
         "F"
        ],
-       "whyUz": "Omar 40 yoshda. 26 — bu Julie'ning yoshi."
+       "whyUz": "Omar 40 yoshda. 26 — bu Julie'ning yoshi.",
+       "speak": "Omar is twenty-six years old."
       },
       {
        "prompt": "Omar is a pilot.",
@@ -1282,7 +1366,8 @@
         "T",
         "F"
        ],
-       "whyUz": "Matnda aynan shunday."
+       "whyUz": "Matnda aynan shunday.",
+       "speak": "Omar is a pilot."
       },
       {
        "prompt": "Mark is from India.",
@@ -1291,7 +1376,8 @@
         "T",
         "F"
        ],
-       "whyUz": "Mark Amerikadan. Hindiston — Omarniki."
+       "whyUz": "Mark Amerikadan. Hindiston — Omarniki.",
+       "speak": "Mark is from India."
       },
       {
        "prompt": "Julie is an artist.",
@@ -1300,7 +1386,8 @@
         "T",
         "F"
        ],
-       "whyUz": "Matnda aynan shunday."
+       "whyUz": "Matnda aynan shunday.",
+       "speak": "Julie is an artist."
       },
       {
        "prompt": "Mark is a basketball player.",
@@ -1309,7 +1396,8 @@
         "T",
         "F"
        ],
-       "whyUz": "TUZOQ: basketbol — uning SEVIMLI SPORTI, kasbi emas. Kasbi — pochtachi (postman)."
+       "whyUz": "TUZOQ: basketbol — uning SEVIMLI SPORTI, kasbi emas. Kasbi — pochtachi (postman).",
+       "speak": "Mark is a basketball player."
       },
       {
        "prompt": "Julie's favourite sport is football.",
@@ -1318,7 +1406,8 @@
         "T",
         "F"
        ],
-       "whyUz": "Julie'ning sevimli sporti — voleybol. Futbol — Omarniki."
+       "whyUz": "Julie'ning sevimli sporti — voleybol. Futbol — Omarniki.",
+       "speak": "Julie's favourite sport is football."
       }
      ]
     }
@@ -1579,37 +1668,44 @@
       {
        "prompt": "You ___ Hungarian. You are Italian.",
        "answer": "aren't",
-       "whyUz": "Ikkinchi gap 'italyan' deyapti, demak birinchisi inkor. 'you' → are not → aren't"
+       "whyUz": "Ikkinchi gap 'italyan' deyapti, demak birinchisi inkor. 'you' → are not → aren't",
+       "speak": "You ___ Hungarian. You are Italian."
       },
       {
        "prompt": "My favourite sport is tennis. It ___ football.",
        "answer": "isn't",
-       "whyUz": "Sevimli sport tennis, demak futbol emas. 'it' → is not → isn't"
+       "whyUz": "Sevimli sport tennis, demak futbol emas. 'it' → is not → isn't",
+       "speak": "My favourite sport is tennis. It ___ football."
       },
       {
        "prompt": "I am British. I ___ French.",
        "answer": "'m not",
-       "whyUz": "Britaniyalik, demak fransuz emas. 'I' → am not → 'm not"
+       "whyUz": "Britaniyalik, demak fransuz emas. 'I' → am not → 'm not",
+       "speak": "I am British. I ___ French."
       },
       {
        "prompt": "We aren't musicians. We ___ students.",
        "answer": "'re",
-       "whyUz": "Musiqachi emas — talaba. 'we' → are → 're"
+       "whyUz": "Musiqachi emas — talaba. 'we' → are → 're",
+       "speak": "We aren't musicians. We ___ students."
       },
       {
        "prompt": "I ___ a musician. I'm not a teacher.",
        "answer": "'m",
-       "whyUz": "O'qituvchi emas — musiqachi. 'I' → am → 'm"
+       "whyUz": "O'qituvchi emas — musiqachi. 'I' → am → 'm",
+       "speak": "I ___ a musician. I'm not a teacher."
       },
       {
        "prompt": "Tony's sixteen years old. He ___ sixty years old.",
        "answer": "isn't",
-       "whyUz": "16 yoshda, demak 60 emas. 'he' → is not → isn't"
+       "whyUz": "16 yoshda, demak 60 emas. 'he' → is not → isn't",
+       "speak": "Tony's sixteen years old. He ___ sixty years old."
       },
       {
        "prompt": "They aren't from Egypt. They ___ from Brazil.",
        "answer": "'re",
-       "whyUz": "Misrdan emas — Braziliyadan. 'they' → are → 're"
+       "whyUz": "Misrdan emas — Braziliyadan. 'they' → are → 're",
+       "speak": "They aren't from Egypt. They ___ from Brazil."
       }
      ]
     },
@@ -1626,77 +1722,92 @@
       {
        "prompt": "B: No, he ___ . He ___ from Japan.",
        "answer": "isn't",
-       "whyUz": "Savolda 'he' → Is. Javob inkor: isn't. Keyin tasdiq: he's."
+       "whyUz": "Savolda 'he' → Is. Javob inkor: isn't. Keyin tasdiq: he's.",
+       "speak": "B: No, he ___ . He ___ from Japan."
       },
       {
        "prompt": "B: No, he ___ . He ___ from Japan.",
        "answer": "'s",
-       "whyUz": "Savolda 'he' → Is. Javob inkor: isn't. Keyin tasdiq: he's."
+       "whyUz": "Savolda 'he' → Is. Javob inkor: isn't. Keyin tasdiq: he's.",
+       "speak": "B: No, he ___ . He ___ from Japan."
       },
       {
        "prompt": "A: ___ they Spanish?",
        "answer": "Are",
-       "whyUz": "'they' → Are. Inkor: aren't. Tasdiq: they're."
+       "whyUz": "'they' → Are. Inkor: aren't. Tasdiq: they're.",
+       "speak": "A: ___ they Spanish?"
       },
       {
        "prompt": "B: No, they ___ . They ___ Canadian.",
        "answer": "aren't",
-       "whyUz": "'they' → Are. Inkor: aren't. Tasdiq: they're."
+       "whyUz": "'they' → Are. Inkor: aren't. Tasdiq: they're.",
+       "speak": "B: No, they ___ . They ___ Canadian."
       },
       {
        "prompt": "B: No, they ___ . They ___ Canadian.",
        "answer": "'re",
-       "whyUz": "'they' → Are. Inkor: aren't. Tasdiq: they're."
+       "whyUz": "'they' → Are. Inkor: aren't. Tasdiq: they're.",
+       "speak": "B: No, they ___ . They ___ Canadian."
       },
       {
        "prompt": "A: What ___ your favourite sport?",
        "answer": "is",
-       "whyUz": "'your favourite sport' — birlik narsa, 'it' o'rnida → is."
+       "whyUz": "'your favourite sport' — birlik narsa, 'it' o'rnida → is.",
+       "speak": "A: What ___ your favourite sport?"
       },
       {
        "prompt": "B: My favourite sport ___ tennis.",
        "answer": "is",
-       "whyUz": "'your favourite sport' — birlik narsa, 'it' o'rnida → is."
+       "whyUz": "'your favourite sport' — birlik narsa, 'it' o'rnida → is.",
+       "speak": "B: My favourite sport ___ tennis."
       },
       {
        "prompt": "A: ___ she twenty years old?",
        "answer": "Is",
-       "whyUz": "'she' → Is. 20 emas, 22 — shuning uchun avval isn't, keyin she's."
+       "whyUz": "'she' → Is. 20 emas, 22 — shuning uchun avval isn't, keyin she's.",
+       "speak": "A: ___ she twenty years old?"
       },
       {
        "prompt": "B: No, she ___ . She ___ twenty-two.",
        "answer": "isn't",
-       "whyUz": "'she' → Is. 20 emas, 22 — shuning uchun avval isn't, keyin she's."
+       "whyUz": "'she' → Is. 20 emas, 22 — shuning uchun avval isn't, keyin she's.",
+       "speak": "B: No, she ___ . She ___ twenty-two."
       },
       {
        "prompt": "B: No, she ___ . She ___ twenty-two.",
        "answer": "'s",
-       "whyUz": "'she' → Is. 20 emas, 22 — shuning uchun avval isn't, keyin she's."
+       "whyUz": "'she' → Is. 20 emas, 22 — shuning uchun avval isn't, keyin she's.",
+       "speak": "B: No, she ___ . She ___ twenty-two."
       },
       {
        "prompt": "A: ___ Stella from Hungary?",
        "answer": "Is",
-       "whyUz": "Stella — bitta ayol, 'she' → Is. Qisqa tasdiq javobida TO'LIQ shakl: 'Yes, she is' ('she's' XATO)."
+       "whyUz": "Stella — bitta ayol, 'she' → Is. Qisqa tasdiq javobida TO'LIQ shakl: 'Yes, she is' ('she's' XATO).",
+       "speak": "A: ___ Stella from Hungary?"
       },
       {
        "prompt": "B: Yes, she ___ . She ___ from Budapest.",
        "answer": "is",
-       "whyUz": "Stella — bitta ayol, 'she' → Is. Qisqa tasdiq javobida TO'LIQ shakl: 'Yes, she is' ('she's' XATO)."
+       "whyUz": "Stella — bitta ayol, 'she' → Is. Qisqa tasdiq javobida TO'LIQ shakl: 'Yes, she is' ('she's' XATO).",
+       "speak": "B: Yes, she ___ . She ___ from Budapest."
       },
       {
        "prompt": "B: Yes, she ___ . She ___ from Budapest.",
        "answer": "'s",
-       "whyUz": "Stella — bitta ayol, 'she' → Is. Qisqa tasdiq javobida TO'LIQ shakl: 'Yes, she is' ('she's' XATO)."
+       "whyUz": "Stella — bitta ayol, 'she' → Is. Qisqa tasdiq javobida TO'LIQ shakl: 'Yes, she is' ('she's' XATO).",
+       "speak": "B: Yes, she ___ . She ___ from Budapest."
       },
       {
        "prompt": "A: How old ___ you?",
        "answer": "are",
-       "whyUz": "'you' → are. Javobda 'I' → am → 'm."
+       "whyUz": "'you' → are. Javobda 'I' → am → 'm.",
+       "speak": "A: How old ___ you?"
       },
       {
        "prompt": "B: I ___ twenty-three.",
        "answer": "'m",
-       "whyUz": "'you' → are. Javobda 'I' → am → 'm."
+       "whyUz": "'you' → are. Javobda 'I' → am → 'm.",
+       "speak": "B: I ___ twenty-three."
       }
      ]
     }
@@ -1878,7 +1989,8 @@
         "a",
         "an"
        ],
-       "whyUz": "a — unli"
+       "whyUz": "a — unli",
+       "speak": "artist"
       },
       {
        "prompt": "astronaut",
@@ -1888,7 +2000,8 @@
         "a",
         "an"
        ],
-       "whyUz": "a — unli"
+       "whyUz": "a — unli",
+       "speak": "astronaut"
       },
       {
        "prompt": "doctor",
@@ -1898,7 +2011,8 @@
         "a",
         "an"
        ],
-       "whyUz": "d — undosh"
+       "whyUz": "d — undosh",
+       "speak": "doctor"
       },
       {
        "prompt": "engineer",
@@ -1908,7 +2022,8 @@
         "a",
         "an"
        ],
-       "whyUz": "e — unli"
+       "whyUz": "e — unli",
+       "speak": "engineer"
       },
       {
        "prompt": "pilot",
@@ -1918,7 +2033,8 @@
         "a",
         "an"
        ],
-       "whyUz": "p — undosh"
+       "whyUz": "p — undosh",
+       "speak": "pilot"
       },
       {
        "prompt": "postman",
@@ -1928,7 +2044,8 @@
         "a",
         "an"
        ],
-       "whyUz": "p — undosh"
+       "whyUz": "p — undosh",
+       "speak": "postman"
       },
       {
        "prompt": "vet",
@@ -1938,7 +2055,8 @@
         "a",
         "an"
        ],
-       "whyUz": "v — undosh"
+       "whyUz": "v — undosh",
+       "speak": "vet"
       },
       {
        "prompt": "waiter",
@@ -1948,12 +2066,13 @@
         "a",
         "an"
        ],
-       "whyUz": "w — undosh"
+       "whyUz": "w — undosh",
+       "speak": "waiter"
       },
       {
        "prompt": "Bill (45)",
        "answer": "an astronaut",
-       "promptUz": "kosmonavt",
+       "promptUz": "Rasmdagi kasbni tanlang",
        "options": [
         "an astronaut",
         "a waiter",
@@ -1964,7 +2083,7 @@
       {
        "prompt": "Mark (38)",
        "answer": "a pilot",
-       "promptUz": "uchuvchi",
+       "promptUz": "Rasmdagi kasbni tanlang",
        "options": [
         "a pilot",
         "a waiter",
@@ -1975,7 +2094,7 @@
       {
        "prompt": "Helen (42)",
        "answer": "a doctor",
-       "promptUz": "shifokor",
+       "promptUz": "Rasmdagi kasbni tanlang",
        "options": [
         "a doctor",
         "a waiter",
@@ -1987,7 +2106,7 @@
       {
        "prompt": "Ted (39)",
        "answer": "a vet",
-       "promptUz": "veterinar",
+       "promptUz": "Rasmdagi kasbni tanlang",
        "options": [
         "a vet",
         "a waiter",
@@ -1998,7 +2117,7 @@
       {
        "prompt": "Paul (60)",
        "answer": "an artist",
-       "promptUz": "rassom",
+       "promptUz": "Rasmdagi kasbni tanlang",
        "options": [
         "an artist",
         "a waiter",
@@ -2009,7 +2128,7 @@
       {
        "prompt": "Tim (29)",
        "answer": "an engineer",
-       "promptUz": "muhandis",
+       "promptUz": "Rasmdagi kasbni tanlang",
        "options": [
         "an engineer",
         "a waiter",
@@ -2020,7 +2139,7 @@
       {
        "prompt": "John (30)",
        "answer": "a postman",
-       "promptUz": "pochtachi",
+       "promptUz": "Rasmdagi kasbni tanlang",
        "options": [
         "a postman",
         "a waiter",
@@ -2090,7 +2209,9 @@
         "it",
         "they"
        ],
-       "whyUz": "Bitta narsa"
+       "whyUz": "Bitta narsa",
+       "visual": "🎸",
+       "speak": "a guitar"
       },
       {
        "prompt": "a man and a woman dancing",
@@ -2102,7 +2223,8 @@
         "it",
         "they"
        ],
-       "whyUz": "Ikki kishi"
+       "whyUz": "Ikki kishi",
+       "speak": "a man and a woman dancing"
       },
       {
        "prompt": "a waitress",
@@ -2114,7 +2236,9 @@
         "it",
         "they"
        ],
-       "whyUz": "Bitta ayol"
+       "whyUz": "Bitta ayol",
+       "visual": "🧑‍🍳",
+       "speak": "a waitress"
       },
       {
        "prompt": "a footballer",
@@ -2126,7 +2250,9 @@
         "it",
         "they"
        ],
-       "whyUz": "Bitta erkak"
+       "whyUz": "Bitta erkak",
+       "visual": "⚽",
+       "speak": "a footballer"
       },
       {
        "prompt": "a butterfly",
@@ -2138,7 +2264,9 @@
         "it",
         "they"
        ],
-       "whyUz": "Hayvon (hasharot) — bitta"
+       "whyUz": "Hayvon (hasharot) — bitta",
+       "visual": "🦋",
+       "speak": "a butterfly"
       },
       {
        "prompt": "a watch",
@@ -2150,7 +2278,9 @@
         "it",
         "they"
        ],
-       "whyUz": "Bitta narsa"
+       "whyUz": "Bitta narsa",
+       "visual": "⌚",
+       "speak": "a watch"
       },
       {
        "prompt": "a porter with suitcases",
@@ -2162,7 +2292,8 @@
         "it",
         "they"
        ],
-       "whyUz": "Bitta erkak"
+       "whyUz": "Bitta erkak",
+       "speak": "a porter with suitcases"
       },
       {
        "prompt": "a woman and a man",
@@ -2174,7 +2305,8 @@
         "it",
         "they"
        ],
-       "whyUz": "Ikki kishi"
+       "whyUz": "Ikki kishi",
+       "speak": "a woman and a man"
       },
       {
        "prompt": "two planes",
@@ -2186,7 +2318,8 @@
         "it",
         "they"
        ],
-       "whyUz": "Ko'plik narsa"
+       "whyUz": "Ko'plik narsa",
+       "speak": "two planes"
       },
       {
        "prompt": "books",
@@ -2198,7 +2331,8 @@
         "it",
         "they"
        ],
-       "whyUz": "Ko'plik narsa"
+       "whyUz": "Ko'plik narsa",
+       "speak": "books"
       },
       {
        "prompt": "two cars",
@@ -2210,7 +2344,8 @@
         "it",
         "they"
        ],
-       "whyUz": "Ko'plik narsa"
+       "whyUz": "Ko'plik narsa",
+       "speak": "two cars"
       },
       {
        "prompt": "two men",
@@ -2222,7 +2357,8 @@
         "it",
         "they"
        ],
-       "whyUz": "Ikki kishi"
+       "whyUz": "Ikki kishi",
+       "speak": "two men"
       }
      ]
     },
@@ -2239,62 +2375,74 @@
       {
        "prompt": "B: ___ 'm 19 years old.",
        "answer": "I",
-       "whyUz": "''m' faqat 'I' bilan ishlatiladi."
+       "whyUz": "''m' faqat 'I' bilan ishlatiladi.",
+       "speak": "B: ___ 'm 19 years old."
       },
       {
        "prompt": "A: Who is ___ ?",
        "answer": "she",
-       "whyUz": "Javobda 'Anna' — ayol ismi, demak she."
+       "whyUz": "Javobda 'Anna' — ayol ismi, demak she.",
+       "speak": "A: Who is ___ ?"
       },
       {
        "prompt": "B: ___ is my friend, Anna.",
        "answer": "She",
-       "whyUz": "Javobda 'Anna' — ayol ismi, demak she."
+       "whyUz": "Javobda 'Anna' — ayol ismi, demak she.",
+       "speak": "B: ___ is my friend, Anna."
       },
       {
        "prompt": "B: ___ 's at school.",
        "answer": "He",
-       "whyUz": "George — erkak ismi → He."
+       "whyUz": "George — erkak ismi → He.",
+       "speak": "B: ___ 's at school."
       },
       {
        "prompt": "B: Yes, ___ are.",
        "answer": "they",
-       "whyUz": "Ikki kishi → they. 'are' ham buni tasdiqlaydi."
+       "whyUz": "Ikki kishi → they. 'are' ham buni tasdiqlaydi.",
+       "speak": "B: Yes, ___ are."
       },
       {
        "prompt": "B: Yes, ___ is.",
        "answer": "it",
-       "whyUz": "Kitob — narsa → it."
+       "whyUz": "Kitob — narsa → it.",
+       "speak": "B: Yes, ___ is."
       },
       {
        "prompt": "A: Are ___ a policeman?",
        "answer": "you",
-       "whyUz": "Savolda 'are' + suhbatdosh → you. Javobda ''m' → I."
+       "whyUz": "Savolda 'are' + suhbatdosh → you. Javobda ''m' → I.",
+       "speak": "A: Are ___ a policeman?"
       },
       {
        "prompt": "B: No, ___ 'm not a policeman.",
        "answer": "I",
-       "whyUz": "Savolda 'are' + suhbatdosh → you. Javobda ''m' → I."
+       "whyUz": "Savolda 'are' + suhbatdosh → you. Javobda ''m' → I.",
+       "speak": "B: No, ___ 'm not a policeman."
       },
       {
        "prompt": "B: No, ___ aren't from France.",
        "answer": "they",
-       "whyUz": "Ikki kishi → they."
+       "whyUz": "Ikki kishi → they.",
+       "speak": "B: No, ___ aren't from France."
       },
       {
        "prompt": "B: Yes, ___ is.",
        "answer": "he",
-       "whyUz": "Ben — erkak ismi → he."
+       "whyUz": "Ben — erkak ismi → he.",
+       "speak": "B: Yes, ___ is."
       },
       {
        "prompt": "B: No, ___ isn't my friend.",
        "answer": "she",
-       "whyUz": "Lisa — ayol ismi → she."
+       "whyUz": "Lisa — ayol ismi → she.",
+       "speak": "B: No, ___ isn't my friend."
       },
       {
        "prompt": "B: ___ is in America.",
        "answer": "It",
-       "whyUz": "Haykal — narsa → It. Gap boshida katta harf."
+       "whyUz": "Haykal — narsa → It. Gap boshida katta harf.",
+       "speak": "B: ___ is in America."
       }
      ]
     }
@@ -2322,109 +2470,127 @@
        "prompt": "He ___ from Brazil.",
        "answer": "is",
        "promptUz": "To'liq shakl",
-       "whyUz": "he → is → he's"
+       "whyUz": "he → is → he's",
+       "speak": "He ___ from Brazil."
       },
       {
        "prompt": "He ___ from Brazil.",
        "answer": "'s",
        "promptUz": "Qisqa shakl",
-       "whyUz": "he → is → he's"
+       "whyUz": "he → is → he's",
+       "speak": "He ___ from Brazil."
       },
       {
        "prompt": "She ___ not a lawyer.",
        "answer": "is",
        "promptUz": "To'liq shakl",
-       "whyUz": "she + is not → she isn't"
+       "whyUz": "she + is not → she isn't",
+       "speak": "She ___ not a lawyer."
       },
       {
        "prompt": "She ___ not a lawyer.",
        "answer": "isn't",
        "promptUz": "Qisqa shakl",
-       "whyUz": "she + is not → she isn't"
+       "whyUz": "she + is not → she isn't",
+       "speak": "She ___ not a lawyer."
       },
       {
        "prompt": "It ___ a car.",
        "answer": "is",
        "promptUz": "To'liq shakl",
-       "whyUz": "it → is → it's"
+       "whyUz": "it → is → it's",
+       "speak": "It ___ a car."
       },
       {
        "prompt": "It ___ a car.",
        "answer": "'s",
        "promptUz": "Qisqa shakl",
-       "whyUz": "it → is → it's"
+       "whyUz": "it → is → it's",
+       "speak": "It ___ a car."
       },
       {
        "prompt": "They ___ not football players.",
        "answer": "are",
        "promptUz": "To'liq shakl",
-       "whyUz": "they + are not → they aren't"
+       "whyUz": "they + are not → they aren't",
+       "speak": "They ___ not football players."
       },
       {
        "prompt": "They ___ not football players.",
        "answer": "aren't",
        "promptUz": "Qisqa shakl",
-       "whyUz": "they + are not → they aren't"
+       "whyUz": "they + are not → they aren't",
+       "speak": "They ___ not football players."
       },
       {
        "prompt": "You ___ not Brian.",
        "answer": "are",
        "promptUz": "To'liq shakl",
-       "whyUz": "you + are not → you aren't"
+       "whyUz": "you + are not → you aren't",
+       "speak": "You ___ not Brian."
       },
       {
        "prompt": "You ___ not Brian.",
        "answer": "aren't",
        "promptUz": "Qisqa shakl",
-       "whyUz": "you + are not → you aren't"
+       "whyUz": "you + are not → you aren't",
+       "speak": "You ___ not Brian."
       },
       {
        "prompt": "It ___ an apple.",
        "answer": "is",
        "promptUz": "To'liq shakl",
-       "whyUz": "it → is → it's. 'an apple' — unli tovush"
+       "whyUz": "it → is → it's. 'an apple' — unli tovush",
+       "speak": "It ___ an apple."
       },
       {
        "prompt": "It ___ an apple.",
        "answer": "'s",
        "promptUz": "Qisqa shakl",
-       "whyUz": "it → is → it's. 'an apple' — unli tovush"
+       "whyUz": "it → is → it's. 'an apple' — unli tovush",
+       "speak": "It ___ an apple."
       },
       {
        "prompt": "We ___ British.",
        "answer": "are",
        "promptUz": "To'liq shakl",
-       "whyUz": "we → are → we're"
+       "whyUz": "we → are → we're",
+       "speak": "We ___ British."
       },
       {
        "prompt": "We ___ British.",
        "answer": "'re",
        "promptUz": "Qisqa shakl",
-       "whyUz": "we → are → we're"
+       "whyUz": "we → are → we're",
+       "speak": "We ___ British."
       },
       {
        "prompt": "I ___ not a dancer.",
        "answer": "am",
        "promptUz": "To'liq shakl",
-       "whyUz": "I + am not → I'm not (I amn't XATO)"
+       "whyUz": "I + am not → I'm not (I amn't XATO)",
+       "speak": "I ___ not a dancer."
       },
       {
        "prompt": "I ___ not a dancer.",
        "answer": "'m not",
        "promptUz": "Qisqa shakl",
-       "whyUz": "I + am not → I'm not (I amn't XATO)"
+       "whyUz": "I + am not → I'm not (I amn't XATO)",
+       "speak": "I ___ not a dancer."
       },
       {
        "prompt": "She ___ Canadian.",
        "answer": "is",
        "promptUz": "To'liq shakl",
-       "whyUz": "she → is → she's"
+       "whyUz": "she → is → she's",
+       "speak": "She ___ Canadian."
       },
       {
        "prompt": "She ___ Canadian.",
        "answer": "'s",
        "promptUz": "Qisqa shakl",
-       "whyUz": "she → is → she's"
+       "whyUz": "she → is → she's",
+       "speak": "She ___ Canadian."
       }
      ]
     },
@@ -2442,109 +2608,127 @@
        "prompt": "you/from Canada? No/from Australia",
        "answer": "Are you from Canada?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'you' so'ralsa, javob 'I' bilan beriladi."
+       "whyUz": "'you' so'ralsa, javob 'I' bilan beriladi.",
+       "speak": "you/from Canada? No/from Australia"
       },
       {
        "prompt": "you/from Canada? No/from Australia",
        "answer": "No, I'm not. I'm from Australia.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'you' so'ralsa, javob 'I' bilan beriladi."
+       "whyUz": "'you' so'ralsa, javob 'I' bilan beriladi.",
+       "speak": "you/from Canada? No/from Australia"
       },
       {
        "prompt": "he/a vet? No/a pilot",
        "answer": "Is he a vet?",
        "promptUz": "Savol tuzing",
-       "whyUz": "vet — veterinar. Kasb oldidan a shart."
+       "whyUz": "vet — veterinar. Kasb oldidan a shart.",
+       "speak": "he/a vet? No/a pilot"
       },
       {
        "prompt": "he/a vet? No/a pilot",
        "answer": "No, he isn't. He's a pilot.",
        "promptUz": "Javob tuzing",
-       "whyUz": "vet — veterinar. Kasb oldidan a shart."
+       "whyUz": "vet — veterinar. Kasb oldidan a shart.",
+       "speak": "he/a vet? No/a pilot"
       },
       {
        "prompt": "she/17? No/15",
        "answer": "Is she 17?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Yosh aytilganda a/an ishlatilmaydi."
+       "whyUz": "Yosh aytilganda a/an ishlatilmaydi.",
+       "speak": "she/17? No/15"
       },
       {
        "prompt": "she/17? No/15",
        "answer": "No, she isn't. She's 15.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Yosh aytilganda a/an ishlatilmaydi."
+       "whyUz": "Yosh aytilganda a/an ishlatilmaydi.",
+       "speak": "she/17? No/15"
       },
       {
        "prompt": "Bob/married? No/single",
        "answer": "Is Bob married?",
        "promptUz": "Savol tuzing",
-       "whyUz": "married/single — sifat, a/an olmaydi."
+       "whyUz": "married/single — sifat, a/an olmaydi.",
+       "speak": "Bob/married? No/single"
       },
       {
        "prompt": "Bob/married? No/single",
        "answer": "No, he isn't. He's single.",
        "promptUz": "Javob tuzing",
-       "whyUz": "married/single — sifat, a/an olmaydi."
+       "whyUz": "married/single — sifat, a/an olmaydi.",
+       "speak": "Bob/married? No/single"
       },
       {
        "prompt": "he/from Turkey? No/from Poland",
        "answer": "Is he from Turkey?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Mamlakat oldidan 'from', a/an yo'q."
+       "whyUz": "Mamlakat oldidan 'from', a/an yo'q.",
+       "speak": "he/from Turkey? No/from Poland"
       },
       {
        "prompt": "he/from Turkey? No/from Poland",
        "answer": "No, he isn't. He's from Poland.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Mamlakat oldidan 'from', a/an yo'q."
+       "whyUz": "Mamlakat oldidan 'from', a/an yo'q.",
+       "speak": "he/from Turkey? No/from Poland"
       },
       {
        "prompt": "Debbie/an artist? No/a doctor",
        "answer": "Is Debbie an artist?",
        "promptUz": "Savol tuzing",
-       "whyUz": "artist — unli tovush → an. doctor — undosh → a."
+       "whyUz": "artist — unli tovush → an. doctor — undosh → a.",
+       "speak": "Debbie/an artist? No/a doctor"
       },
       {
        "prompt": "Debbie/an artist? No/a doctor",
        "answer": "No, she isn't. She's a doctor.",
        "promptUz": "Javob tuzing",
-       "whyUz": "artist — unli tovush → an. doctor — undosh → a."
+       "whyUz": "artist — unli tovush → an. doctor — undosh → a.",
+       "speak": "Debbie/an artist? No/a doctor"
       },
       {
        "prompt": "you/a farmer? No/a postman",
        "answer": "Are you a farmer?",
        "promptUz": "Savol tuzing",
-       "whyUz": "postman — pochtachi."
+       "whyUz": "postman — pochtachi.",
+       "speak": "you/a farmer? No/a postman"
       },
       {
        "prompt": "you/a farmer? No/a postman",
        "answer": "No, I'm not. I'm a postman.",
        "promptUz": "Javob tuzing",
-       "whyUz": "postman — pochtachi."
+       "whyUz": "postman — pochtachi.",
+       "speak": "you/a farmer? No/a postman"
       },
       {
        "prompt": "Jimmy/35? No/27",
        "answer": "Is Jimmy 35?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Jimmy — erkak ismi → he."
+       "whyUz": "Jimmy — erkak ismi → he.",
+       "speak": "Jimmy/35? No/27"
       },
       {
        "prompt": "Jimmy/35? No/27",
        "answer": "No, he isn't. He's 27.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Jimmy — erkak ismi → he."
+       "whyUz": "Jimmy — erkak ismi → he.",
+       "speak": "Jimmy/35? No/27"
       },
       {
        "prompt": "they/from Italy? No/from Japan",
        "answer": "Are they from Italy?",
        "promptUz": "Savol tuzing",
-       "whyUz": "they → are / aren't / they're."
+       "whyUz": "they → are / aren't / they're.",
+       "speak": "they/from Italy? No/from Japan"
       },
       {
        "prompt": "they/from Italy? No/from Japan",
        "answer": "No, they aren't. They're from Japan.",
        "promptUz": "Javob tuzing",
-       "whyUz": "they → are / aren't / they're."
+       "whyUz": "they → are / aren't / they're.",
+       "speak": "they/from Italy? No/from Japan"
       }
      ]
     }
@@ -2571,47 +2755,56 @@
       {
        "prompt": "My favourite sport is tennis. It ___ golf.",
        "answer": "isn't",
-       "whyUz": "Tennis, demak golf EMAS. it → isn't"
+       "whyUz": "Tennis, demak golf EMAS. it → isn't",
+       "speak": "My favourite sport is tennis. It ___ golf."
       },
       {
        "prompt": "The Pyramids ___ in Paris. They're in Cairo.",
        "answer": "aren't",
-       "whyUz": "Qohirada — demak Parijda emas. Pyramids ko'plik → aren't"
+       "whyUz": "Qohirada — demak Parijda emas. Pyramids ko'plik → aren't",
+       "speak": "The Pyramids ___ in Paris. They're in Cairo."
       },
       {
        "prompt": "I ___ from Spain. I'm from Mexico.",
        "answer": "'m not",
-       "whyUz": "Meksikadan — demak Ispaniyadan emas. I → 'm not"
+       "whyUz": "Meksikadan — demak Ispaniyadan emas. I → 'm not",
+       "speak": "I ___ from Spain. I'm from Mexico."
       },
       {
        "prompt": "She isn't Stella. She ___ Molly.",
        "answer": "'s",
-       "whyUz": "Stella emas → Molly. she → 's"
+       "whyUz": "Stella emas → Molly. she → 's",
+       "speak": "She isn't Stella. She ___ Molly."
       },
       {
        "prompt": "I'm not Bill. I ___ Tom.",
        "answer": "'m",
-       "whyUz": "Bill emas → Tom. I → 'm"
+       "whyUz": "Bill emas → Tom. I → 'm",
+       "speak": "I'm not Bill. I ___ Tom."
       },
       {
        "prompt": "The Taj Mahal isn't in Ottawa. It ___ in Agra.",
        "answer": "'s",
-       "whyUz": "Ottavada emas → Agrada. it → 's"
+       "whyUz": "Ottavada emas → Agrada. it → 's",
+       "speak": "The Taj Mahal isn't in Ottawa. It ___ in Agra."
       },
       {
        "prompt": "They ___ from Poland. They're from Sweden.",
        "answer": "aren't",
-       "whyUz": "Shvetsiyadan — demak Polshadan emas. they → aren't"
+       "whyUz": "Shvetsiyadan — demak Polshadan emas. they → aren't",
+       "speak": "They ___ from Poland. They're from Sweden."
       },
       {
        "prompt": "Jill ___ my friend. She isn't my sister.",
        "answer": "'s",
-       "whyUz": "Singlim emas → do'stim. Jill = she → 's"
+       "whyUz": "Singlim emas → do'stim. Jill = she → 's",
+       "speak": "Jill ___ my friend. She isn't my sister."
       },
       {
        "prompt": "I ___ 24 years old. I'm 27.",
        "answer": "'m not",
-       "whyUz": "27 yoshda — demak 24 emas. I → 'm not"
+       "whyUz": "27 yoshda — demak 24 emas. I → 'm not",
+       "speak": "I ___ 24 years old. I'm 27."
       }
      ]
     },
@@ -2628,132 +2821,158 @@
       {
        "prompt": "B: No, he ___ . He ___ French.",
        "answer": "isn't",
-       "whyUz": "he → Is / isn't / he's"
+       "whyUz": "he → Is / isn't / he's",
+       "speak": "B: No, he ___ . He ___ French."
       },
       {
        "prompt": "B: No, he ___ . He ___ French.",
        "answer": "'s",
-       "whyUz": "he → Is / isn't / he's"
+       "whyUz": "he → Is / isn't / he's",
+       "speak": "B: No, he ___ . He ___ French."
       },
       {
        "prompt": "A: ___ you a taxi driver?",
        "answer": "Are",
-       "whyUz": "'I ___ not' → 'm (I'm not). Keyin 'I'm a pilot'."
+       "whyUz": "'I ___ not' → 'm (I'm not). Keyin 'I'm a pilot'.",
+       "speak": "A: ___ you a taxi driver?"
       },
       {
        "prompt": "B: No, I ___ not. I ___ a pilot.",
        "answer": "'m",
-       "whyUz": "'I ___ not' → 'm (I'm not). Keyin 'I'm a pilot'."
+       "whyUz": "'I ___ not' → 'm (I'm not). Keyin 'I'm a pilot'.",
+       "speak": "B: No, I ___ not. I ___ a pilot."
       },
       {
        "prompt": "B: No, I ___ not. I ___ a pilot.",
        "answer": "'m",
-       "whyUz": "'I ___ not' → 'm (I'm not). Keyin 'I'm a pilot'."
+       "whyUz": "'I ___ not' → 'm (I'm not). Keyin 'I'm a pilot'.",
+       "speak": "B: No, I ___ not. I ___ a pilot."
       },
       {
        "prompt": "A: What ___ your favourite sport?",
        "answer": "is",
-       "whyUz": "'sport' — birlik narsa (it) → is"
+       "whyUz": "'sport' — birlik narsa (it) → is",
+       "speak": "A: What ___ your favourite sport?"
       },
       {
        "prompt": "B: My favourite sport ___ volleyball.",
        "answer": "is",
-       "whyUz": "'sport' — birlik narsa (it) → is"
+       "whyUz": "'sport' — birlik narsa (it) → is",
+       "speak": "B: My favourite sport ___ volleyball."
       },
       {
        "prompt": "A: ___ they from Birmingham?",
        "answer": "Are",
-       "whyUz": "they → Are / aren't / they're"
+       "whyUz": "they → Are / aren't / they're",
+       "speak": "A: ___ they from Birmingham?"
       },
       {
        "prompt": "B: No, they ___ . They ___ from York.",
        "answer": "aren't",
-       "whyUz": "they → Are / aren't / they're"
+       "whyUz": "they → Are / aren't / they're",
+       "speak": "B: No, they ___ . They ___ from York."
       },
       {
        "prompt": "B: No, they ___ . They ___ from York.",
        "answer": "'re",
-       "whyUz": "they → Are / aren't / they're"
+       "whyUz": "they → Are / aren't / they're",
+       "speak": "B: No, they ___ . They ___ from York."
       },
       {
        "prompt": "A: ___ he a doctor?",
        "answer": "Is",
-       "whyUz": "TASDIQ qisqa javob — TO'LIQ shakl: 'Yes, he is' ('he's' XATO)."
+       "whyUz": "TASDIQ qisqa javob — TO'LIQ shakl: 'Yes, he is' ('he's' XATO).",
+       "speak": "A: ___ he a doctor?"
       },
       {
        "prompt": "B: Yes, he ___ .",
        "answer": "is",
-       "whyUz": "TASDIQ qisqa javob — TO'LIQ shakl: 'Yes, he is' ('he's' XATO)."
+       "whyUz": "TASDIQ qisqa javob — TO'LIQ shakl: 'Yes, he is' ('he's' XATO).",
+       "speak": "B: Yes, he ___ ."
       },
       {
        "prompt": "A: ___ you Jackie Wilson?",
        "answer": "Are",
-       "whyUz": "Ism aytilganda a/an ishlatilmaydi."
+       "whyUz": "Ism aytilganda a/an ishlatilmaydi.",
+       "speak": "A: ___ you Jackie Wilson?"
       },
       {
        "prompt": "B: No, I ___ not. I ___ Sandra Collins.",
        "answer": "'m",
-       "whyUz": "Ism aytilganda a/an ishlatilmaydi."
+       "whyUz": "Ism aytilganda a/an ishlatilmaydi.",
+       "speak": "B: No, I ___ not. I ___ Sandra Collins."
       },
       {
        "prompt": "B: No, I ___ not. I ___ Sandra Collins.",
        "answer": "'m",
-       "whyUz": "Ism aytilganda a/an ishlatilmaydi."
+       "whyUz": "Ism aytilganda a/an ishlatilmaydi.",
+       "speak": "B: No, I ___ not. I ___ Sandra Collins."
       },
       {
        "prompt": "A: ___ Big Ben in Tokyo?",
        "answer": "Is",
-       "whyUz": "Big Ben — bitta bino → it"
+       "whyUz": "Big Ben — bitta bino → it",
+       "speak": "A: ___ Big Ben in Tokyo?"
       },
       {
        "prompt": "B: No, it ___ . It ___ in London.",
        "answer": "isn't",
-       "whyUz": "Big Ben — bitta bino → it"
+       "whyUz": "Big Ben — bitta bino → it",
+       "speak": "B: No, it ___ . It ___ in London."
       },
       {
        "prompt": "B: No, it ___ . It ___ in London.",
        "answer": "'s",
-       "whyUz": "Big Ben — bitta bino → it"
+       "whyUz": "Big Ben — bitta bino → it",
+       "speak": "B: No, it ___ . It ___ in London."
       },
       {
        "prompt": "A: How old ___ the two of you?",
        "answer": "are",
-       "whyUz": "'the two of you' — ikki kishi → are. Javobda we → 're"
+       "whyUz": "'the two of you' — ikki kishi → are. Javobda we → 're",
+       "speak": "A: How old ___ the two of you?"
       },
       {
        "prompt": "B: We ___ 38 years old.",
        "answer": "'re",
-       "whyUz": "'the two of you' — ikki kishi → are. Javobda we → 're"
+       "whyUz": "'the two of you' — ikki kishi → are. Javobda we → 're",
+       "speak": "B: We ___ 38 years old."
       },
       {
        "prompt": "A: ___ Warsaw in Hungary?",
        "answer": "Is",
-       "whyUz": "Varshava — Polsha poytaxti, Vengriyaniki emas (u Budapesht)."
+       "whyUz": "Varshava — Polsha poytaxti, Vengriyaniki emas (u Budapesht).",
+       "speak": "A: ___ Warsaw in Hungary?"
       },
       {
        "prompt": "B: No, it ___ . It ___ in Poland.",
        "answer": "isn't",
-       "whyUz": "Varshava — Polsha poytaxti, Vengriyaniki emas (u Budapesht)."
+       "whyUz": "Varshava — Polsha poytaxti, Vengriyaniki emas (u Budapesht).",
+       "speak": "B: No, it ___ . It ___ in Poland."
       },
       {
        "prompt": "B: No, it ___ . It ___ in Poland.",
        "answer": "'s",
-       "whyUz": "Varshava — Polsha poytaxti, Vengriyaniki emas (u Budapesht)."
+       "whyUz": "Varshava — Polsha poytaxti, Vengriyaniki emas (u Budapesht).",
+       "speak": "B: No, it ___ . It ___ in Poland."
       },
       {
        "prompt": "A: What ___ the capital of Germany?",
        "answer": "is",
-       "whyUz": "Germaniya poytaxti — Berlin. Dublin esa Irlandiyaniki."
+       "whyUz": "Germaniya poytaxti — Berlin. Dublin esa Irlandiyaniki.",
+       "speak": "A: What ___ the capital of Germany?"
       },
       {
        "prompt": "B: It ___ Berlin. It ___ Dublin.",
        "answer": "'s",
-       "whyUz": "Germaniya poytaxti — Berlin. Dublin esa Irlandiyaniki."
+       "whyUz": "Germaniya poytaxti — Berlin. Dublin esa Irlandiyaniki.",
+       "speak": "B: It ___ Berlin. It ___ Dublin."
       },
       {
        "prompt": "B: It ___ Berlin. It ___ Dublin.",
        "answer": "isn't",
-       "whyUz": "Germaniya poytaxti — Berlin. Dublin esa Irlandiyaniki."
+       "whyUz": "Germaniya poytaxti — Berlin. Dublin esa Irlandiyaniki.",
+       "speak": "B: It ___ Berlin. It ___ Dublin."
       }
      ]
     },
@@ -2771,61 +2990,71 @@
        "prompt": "four kittens",
        "answer": "Are they kittens?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Rasmda haqiqatan mushukchalar — javob TASDIQ. Tasdiq qisqa javobda to'liq shakl: 'Yes, they are'."
+       "whyUz": "Rasmda haqiqatan mushukchalar — javob TASDIQ. Tasdiq qisqa javobda to'liq shakl: 'Yes, they are'.",
+       "speak": "four kittens"
       },
       {
        "prompt": "four kittens",
        "answer": "Yes, they are.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Rasmda haqiqatan mushukchalar — javob TASDIQ. Tasdiq qisqa javobda to'liq shakl: 'Yes, they are'."
+       "whyUz": "Rasmda haqiqatan mushukchalar — javob TASDIQ. Tasdiq qisqa javobda to'liq shakl: 'Yes, they are'.",
+       "speak": "four kittens"
       },
       {
        "prompt": "an apple",
        "answer": "Is it a lemon?",
        "promptUz": "Savol tuzing",
-       "whyUz": "lemon — 'l' undosh → a lemon. apple — 'a' unli → an apple."
+       "whyUz": "lemon — 'l' undosh → a lemon. apple — 'a' unli → an apple.",
+       "speak": "an apple"
       },
       {
        "prompt": "an apple",
        "answer": "No, it isn't. It's an apple.",
        "promptUz": "Javob tuzing",
-       "whyUz": "lemon — 'l' undosh → a lemon. apple — 'a' unli → an apple."
+       "whyUz": "lemon — 'l' undosh → a lemon. apple — 'a' unli → an apple.",
+       "speak": "an apple"
       },
       {
        "prompt": "a barman",
        "answer": "Is he a lawyer?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Bitta erkak → Is / he isn't / he's."
+       "whyUz": "Bitta erkak → Is / he isn't / he's.",
+       "speak": "a barman"
       },
       {
        "prompt": "a barman",
        "answer": "No, he isn't. He's a barman.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Bitta erkak → Is / he isn't / he's."
+       "whyUz": "Bitta erkak → Is / he isn't / he's.",
+       "speak": "a barman"
       },
       {
        "prompt": "two girls",
        "answer": "Are they girls?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Rasmda ikki qiz — javob tasdiq."
+       "whyUz": "Rasmda ikki qiz — javob tasdiq.",
+       "speak": "two girls"
       },
       {
        "prompt": "two girls",
        "answer": "Yes, they are.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Rasmda ikki qiz — javob tasdiq."
+       "whyUz": "Rasmda ikki qiz — javob tasdiq.",
+       "speak": "two girls"
       },
       {
        "prompt": "an umbrella",
        "answer": "Is it a television?",
        "promptUz": "Savol tuzing",
-       "whyUz": "television — 't' undosh → a. umbrella — 'u' bu yerda unli tovush (am-) → an."
+       "whyUz": "television — 't' undosh → a. umbrella — 'u' bu yerda unli tovush (am-) → an.",
+       "speak": "an umbrella"
       },
       {
        "prompt": "an umbrella",
        "answer": "No, it isn't. It's an umbrella.",
        "promptUz": "Javob tuzing",
-       "whyUz": "television — 't' undosh → a. umbrella — 'u' bu yerda unli tovush (am-) → an."
+       "whyUz": "television — 't' undosh → a. umbrella — 'u' bu yerda unli tovush (am-) → an.",
+       "speak": "an umbrella"
       }
      ]
     },
@@ -2841,71 +3070,87 @@
      "tasks": [
       {
        "prompt": "Jane: Hello, my name 1) ___ Jane Smith.",
-       "answer": "is"
+       "answer": "is",
+       "speak": "Jane: Hello, my name 1) ___ Jane Smith."
       },
       {
        "prompt": "Jane: What 2) ___ your name?",
-       "answer": "is"
+       "answer": "is",
+       "speak": "Jane: What 2) ___ your name?"
       },
       {
        "prompt": "Simone: My name 3) ___ Simone Starr.",
-       "answer": "is"
+       "answer": "is",
+       "speak": "Simone: My name 3) ___ Simone Starr."
       },
       {
        "prompt": "Simone: 4) ___ you an actress?",
        "answer": "Are",
-       "whyUz": "So'roq boshida to'liq shakl. actress — unli tovush → an."
+       "whyUz": "So'roq boshida to'liq shakl. actress — unli tovush → an.",
+       "speak": "Simone: 4) ___ you an actress?"
       },
       {
        "prompt": "Jane: No, I 5) ___ not.",
        "answer": "'m",
-       "whyUz": "I + am not → I'm not"
+       "whyUz": "I + am not → I'm not",
+       "speak": "Jane: No, I 5) ___ not."
       },
       {
        "prompt": "Jane: I 6) ___ a singer.",
-       "answer": "'m"
+       "answer": "'m",
+       "speak": "Jane: I 6) ___ a singer."
       },
       {
        "prompt": "Jane: 7) ___ you a guitarist?",
-       "answer": "Are"
+       "answer": "Are",
+       "speak": "Jane: 7) ___ you a guitarist?"
       },
       {
        "prompt": "Simone: Yes, I 8) ___ .",
        "answer": "am",
-       "whyUz": "TASDIQ qisqa javob — TO'LIQ shakl. ''m' bu yerda XATO."
+       "whyUz": "TASDIQ qisqa javob — TO'LIQ shakl. ''m' bu yerda XATO.",
+       "speak": "Simone: Yes, I 8) ___ ."
       },
       {
        "prompt": "Simone: My friend 9) ___ a drummer.",
-       "answer": "is"
+       "answer": "is",
+       "speak": "Simone: My friend 9) ___ a drummer."
       },
       {
        "prompt": "Simone: We 10) ___ in a band.",
-       "answer": "are"
+       "answer": "are",
+       "speak": "Simone: We 10) ___ in a band."
       },
       {
        "prompt": "Jane: Who 11) ___ your favourite singer?",
-       "answer": "is"
+       "answer": "is",
+       "speak": "Jane: Who 11) ___ your favourite singer?"
       },
       {
        "prompt": "Simone: My favourite singer 12) ___ Celine Dion.",
-       "answer": "is"
+       "answer": "is",
+       "speak": "Simone: My favourite singer 12) ___ Celine Dion."
       },
       {
        "prompt": "Simone: She 13) ___ a pop singer.",
-       "answer": "'s"
+       "answer": "'s",
+       "speak": "Simone: She 13) ___ a pop singer."
       },
       {
        "prompt": "Jane: 14) ___ she from Holland?",
-       "answer": "Is"
+       "answer": "Is",
+       "speak": "Jane: 14) ___ she from Holland?"
       },
       {
        "prompt": "Simone: No, she 15) ___ .",
        "answer": "isn't",
-       "whyUz": "INKOR qisqa javob — qisqa shakl."
+       "whyUz": "INKOR qisqa javob — qisqa shakl.",
+       "speak": "Simone: No, she 15) ___ ."
       },
       {
        "prompt": "Simone: She 16) ___ from Canada.",
-       "answer": "'s"
+       "answer": "'s",
+       "speak": "Simone: She 16) ___ from Canada."
       }
      ]
     }
@@ -2932,7 +3177,8 @@
       {
        "prompt": "ice-skater / an / is / she",
        "answer": "She is an ice-skater.",
-       "whyUz": "EGA(She) + be(is) + an + kasb"
+       "whyUz": "EGA(She) + be(is) + an + kasb",
+       "speak": "ice-skater / an / is / she"
       },
       {
        "prompt": "Portuguese / we / not / are",
@@ -2940,12 +3186,14 @@
        "whyUz": "not fe'ldan keyin. Millat oldidan a/an yo'q.",
        "alt": [
         "We aren't Portuguese."
-       ]
+       ],
+       "speak": "Portuguese / we / not / are"
       },
       {
        "prompt": "Black Forest / in / is / the / Germany",
        "answer": "The Black Forest is in Germany.",
-       "whyUz": "'the' joy nomidan oldin. Mamlakat oldidan 'in'."
+       "whyUz": "'the' joy nomidan oldin. Mamlakat oldidan 'in'.",
+       "speak": "Black Forest / in / is / the / Germany"
       },
       {
        "prompt": "not / am / I / Dutch",
@@ -2953,7 +3201,8 @@
        "whyUz": "I + am + not + millat",
        "alt": [
         "I'm not Dutch."
-       ]
+       ],
+       "speak": "not / am / I / Dutch"
       },
       {
        "prompt": "favourite / is / your / what / sport?",
@@ -2961,22 +3210,26 @@
        "whyUz": "So'roq so'zi(What) + be(is) + ega",
        "alt": [
         "What's your favourite sport?"
-       ]
+       ],
+       "speak": "favourite / is / your / what / sport?"
       },
       {
        "prompt": "twenty-two / old / we / years / are",
        "answer": "We are twenty-two years old.",
-       "whyUz": "Yosh qolipi: SON + years old"
+       "whyUz": "Yosh qolipi: SON + years old",
+       "speak": "twenty-two / old / we / years / are"
       },
       {
        "prompt": "what / capital / Denmark / of / is / the?",
        "answer": "What is the capital of Denmark?",
-       "whyUz": "'the capital of' — o'zgarmas ibora"
+       "whyUz": "'the capital of' — o'zgarmas ibora",
+       "speak": "what / capital / Denmark / of / is / the?"
       },
       {
        "prompt": "you / from / where / are?",
        "answer": "Where are you from?",
-       "whyUz": "'from' gap OXIRIDA qoladi — o'zbekchadan farqli"
+       "whyUz": "'from' gap OXIRIDA qoladi — o'zbekchadan farqli",
+       "speak": "you / from / where / are?"
       },
       {
        "prompt": "pasta / his / favourite / is / food",
@@ -2984,12 +3237,14 @@
        "whyUz": "Ikkala tartib ham to'g'ri",
        "alt": [
         "His favourite food is pasta."
-       ]
+       ],
+       "speak": "pasta / his / favourite / is / food"
       },
       {
        "prompt": "are / New Zealand / from / they?",
        "answer": "Are they from New Zealand?",
-       "whyUz": "So'roqda fe'l birinchi: Are + they"
+       "whyUz": "So'roqda fe'l birinchi: Are + they",
+       "speak": "are / New Zealand / from / they?"
       }
      ]
     }
@@ -3017,37 +3272,43 @@
        "prompt": "He's 32.",
        "answer": "How old is he?",
        "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "Javob yosh → How old"
+       "whyUz": "Javob yosh → How old",
+       "speak": "He's 32."
       },
       {
        "prompt": "He's from London, England.",
        "answer": "Where is he from?",
        "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "Javob joy → Where ... from"
+       "whyUz": "Javob joy → Where ... from",
+       "speak": "He's from London, England."
       },
       {
        "prompt": "He's a policeman.",
        "answer": "What's his job?",
        "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "Javob kasb → What's his job"
+       "whyUz": "Javob kasb → What's his job",
+       "speak": "He's a policeman."
       },
       {
        "prompt": "Ed.",
        "answer": "What's his name?",
        "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "Javob ism → What's his name"
+       "whyUz": "Javob ism → What's his name",
+       "speak": "Ed."
       },
       {
        "prompt": "He's 30.",
        "answer": "How old is he?",
        "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "Javob yosh → How old"
+       "whyUz": "Javob yosh → How old",
+       "speak": "He's 30."
       },
       {
        "prompt": "He's a vet.",
        "answer": "What's his job?",
        "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "Javob kasb → What's his job"
+       "whyUz": "Javob kasb → What's his job",
+       "speak": "He's a vet."
       }
      ]
     }
@@ -3079,7 +3340,9 @@
         "a",
         "an"
        ],
-       "whyUz": "b — undosh"
+       "whyUz": "b — undosh",
+       "visual": "📕",
+       "speak": "book"
       },
       {
        "prompt": "armchair",
@@ -3089,7 +3352,9 @@
         "a",
         "an"
        ],
-       "whyUz": "a — unli"
+       "whyUz": "a — unli",
+       "visual": "🪑",
+       "speak": "armchair"
       },
       {
        "prompt": "house",
@@ -3099,7 +3364,9 @@
         "a",
         "an"
        ],
-       "whyUz": "h o'qiladi → undosh"
+       "whyUz": "h o'qiladi → undosh",
+       "visual": "🏠",
+       "speak": "house"
       },
       {
        "prompt": "orange",
@@ -3109,7 +3376,9 @@
         "a",
         "an"
        ],
-       "whyUz": "o — unli"
+       "whyUz": "o — unli",
+       "visual": "🍊",
+       "speak": "orange"
       },
       {
        "prompt": "elephant",
@@ -3119,7 +3388,9 @@
         "a",
         "an"
        ],
-       "whyUz": "e — unli"
+       "whyUz": "e — unli",
+       "visual": "🐘",
+       "speak": "elephant"
       },
       {
        "prompt": "dog",
@@ -3129,7 +3400,9 @@
         "a",
         "an"
        ],
-       "whyUz": "d — undosh"
+       "whyUz": "d — undosh",
+       "visual": "🐕",
+       "speak": "dog"
       },
       {
        "prompt": "tree",
@@ -3139,7 +3412,9 @@
         "a",
         "an"
        ],
-       "whyUz": "t — undosh"
+       "whyUz": "t — undosh",
+       "visual": "🌳",
+       "speak": "tree"
       },
       {
        "prompt": "umbrella",
@@ -3149,7 +3424,9 @@
         "a",
         "an"
        ],
-       "whyUz": "u bu yerda 'am-' deb o'qiladi → unli"
+       "whyUz": "u bu yerda 'am-' deb o'qiladi → unli",
+       "visual": "☂️",
+       "speak": "umbrella"
       },
       {
        "prompt": "envelope",
@@ -3159,7 +3436,9 @@
         "a",
         "an"
        ],
-       "whyUz": "e — unli"
+       "whyUz": "e — unli",
+       "visual": "✉️",
+       "speak": "envelope"
       },
       {
        "prompt": "watch",
@@ -3169,7 +3448,9 @@
         "a",
         "an"
        ],
-       "whyUz": "w — undosh"
+       "whyUz": "w — undosh",
+       "visual": "⌚",
+       "speak": "watch"
       },
       {
        "prompt": "clock",
@@ -3179,7 +3460,9 @@
         "a",
         "an"
        ],
-       "whyUz": "k — undosh"
+       "whyUz": "k — undosh",
+       "visual": "🕐",
+       "speak": "clock"
       },
       {
        "prompt": "hamburger",
@@ -3189,7 +3472,9 @@
         "a",
         "an"
        ],
-       "whyUz": "h o'qiladi → undosh"
+       "whyUz": "h o'qiladi → undosh",
+       "visual": "🍔",
+       "speak": "hamburger"
       }
      ]
     }
@@ -3221,7 +3506,9 @@
         "a",
         "an"
        ],
-       "whyUz": "o — unli"
+       "whyUz": "o — unli",
+       "visual": "🍊",
+       "speak": "orange"
       },
       {
        "prompt": "umbrella",
@@ -3231,7 +3518,9 @@
         "a",
         "an"
        ],
-       "whyUz": "u bu yerda 'am-' deb o'qiladi → unli"
+       "whyUz": "u bu yerda 'am-' deb o'qiladi → unli",
+       "visual": "☂️",
+       "speak": "umbrella"
       },
       {
        "prompt": "girl",
@@ -3241,7 +3530,9 @@
         "a",
         "an"
        ],
-       "whyUz": "g — undosh"
+       "whyUz": "g — undosh",
+       "visual": "👧",
+       "speak": "girl"
       },
       {
        "prompt": "boy",
@@ -3251,7 +3542,9 @@
         "a",
         "an"
        ],
-       "whyUz": "b — undosh"
+       "whyUz": "b — undosh",
+       "visual": "👦",
+       "speak": "boy"
       },
       {
        "prompt": "man",
@@ -3261,7 +3554,9 @@
         "a",
         "an"
        ],
-       "whyUz": "m — undosh"
+       "whyUz": "m — undosh",
+       "visual": "👨",
+       "speak": "man"
       },
       {
        "prompt": "apple",
@@ -3271,7 +3566,9 @@
         "a",
         "an"
        ],
-       "whyUz": "a — unli"
+       "whyUz": "a — unli",
+       "visual": "🍎",
+       "speak": "apple"
       },
       {
        "prompt": "pencil",
@@ -3281,7 +3578,9 @@
         "a",
         "an"
        ],
-       "whyUz": "p — undosh"
+       "whyUz": "p — undosh",
+       "visual": "✏️",
+       "speak": "pencil"
       },
       {
        "prompt": "bicycle",
@@ -3291,7 +3590,9 @@
         "a",
         "an"
        ],
-       "whyUz": "b — undosh"
+       "whyUz": "b — undosh",
+       "visual": "🚲",
+       "speak": "bicycle"
       },
       {
        "prompt": "woman",
@@ -3301,7 +3602,9 @@
         "a",
         "an"
        ],
-       "whyUz": "w — undosh"
+       "whyUz": "w — undosh",
+       "visual": "👩",
+       "speak": "woman"
       },
       {
        "prompt": "banana",
@@ -3311,7 +3614,9 @@
         "a",
         "an"
        ],
-       "whyUz": "b — undosh"
+       "whyUz": "b — undosh",
+       "visual": "🍌",
+       "speak": "banana"
       },
       {
        "prompt": "hat",
@@ -3321,7 +3626,9 @@
         "a",
         "an"
        ],
-       "whyUz": "h o'qiladi → undosh"
+       "whyUz": "h o'qiladi → undosh",
+       "visual": "🎩",
+       "speak": "hat"
       },
       {
        "prompt": "elephant",
@@ -3331,7 +3638,9 @@
         "a",
         "an"
        ],
-       "whyUz": "e — unli"
+       "whyUz": "e — unli",
+       "visual": "🐘",
+       "speak": "elephant"
       }
      ]
     }
@@ -3398,32 +3707,39 @@
       {
        "prompt": ": I 2) ___ a pilot.",
        "answer": "am",
-       "whyUz": "Qo'lyozmada 'an' yozilgan — bu ARTIKL, fe'l emas! Savol 'to be' fe'lini so'rayapti. 'I AM a pilot' — 'a pilot' allaqachon matnda bor."
+       "whyUz": "Qo'lyozmada 'an' yozilgan — bu ARTIKL, fe'l emas! Savol 'to be' fe'lini so'rayapti. 'I AM a pilot' — 'a pilot' allaqachon matnda bor.",
+       "speak": ": I 2) ___ a pilot."
       },
       {
        "prompt": ": This 3) ___ my friend, Mary.",
-       "answer": "is"
+       "answer": "is",
+       "speak": ": This 3) ___ my friend, Mary."
       },
       {
        "prompt": ": Mary and I 4) ___ neighbours.",
        "answer": "are",
-       "whyUz": "Qo'lyozmada 'is' — XATO. 'Mary and I' = IKKI kishi = 'we' → ARE. Ega qo'shma bo'lsa, doim ko'plik."
+       "whyUz": "Qo'lyozmada 'is' — XATO. 'Mary and I' = IKKI kishi = 'we' → ARE. Ega qo'shma bo'lsa, doim ko'plik.",
+       "speak": ": Mary and I 4) ___ neighbours."
       },
       {
        "prompt": ": We 5) ___ also good friends.",
-       "answer": "are"
+       "answer": "are",
+       "speak": ": We 5) ___ also good friends."
       },
       {
        "prompt": ": I 6) ___ thirty-three years old",
-       "answer": "am"
+       "answer": "am",
+       "speak": ": I 6) ___ thirty-three years old"
       },
       {
        "prompt": ": and Mary 7) ___ twenty-seven.",
-       "answer": "is"
+       "answer": "is",
+       "speak": ": and Mary 7) ___ twenty-seven."
       },
       {
        "prompt": ": We 8) ___ from Edinburgh, Scotland.",
-       "answer": "are"
+       "answer": "are",
+       "speak": ": We 8) ___ from Edinburgh, Scotland."
       }
      ]
     }
@@ -3450,37 +3766,44 @@
       {
        "prompt": "B: ___ 'm from Italy.",
        "answer": "I",
-       "whyUz": "''m' faqat I bilan."
+       "whyUz": "''m' faqat I bilan.",
+       "speak": "B: ___ 'm from Italy."
       },
       {
        "prompt": "A: Who are ___ ?",
        "answer": "they",
-       "whyUz": "Javobda ikki kishi (Ann va David) → they."
+       "whyUz": "Javobda ikki kishi (Ann va David) → they.",
+       "speak": "A: Who are ___ ?"
       },
       {
        "prompt": "B: ___ are my neighbours, Ann and David.",
        "answer": "They",
-       "whyUz": "Javobda ikki kishi (Ann va David) → they."
+       "whyUz": "Javobda ikki kishi (Ann va David) → they.",
+       "speak": "B: ___ are my neighbours, Ann and David."
       },
       {
        "prompt": "B: ___ is eighteen.",
        "answer": "She",
-       "whyUz": "Margaret — ayol ismi → She."
+       "whyUz": "Margaret — ayol ismi → She.",
+       "speak": "B: ___ is eighteen."
       },
       {
        "prompt": "B: ___ is at the party.",
        "answer": "He",
-       "whyUz": "John — erkak ismi → He."
+       "whyUz": "John — erkak ismi → He.",
+       "speak": "B: ___ is at the party."
       },
       {
        "prompt": "B: Yes, ___ are.",
        "answer": "they",
-       "whyUz": "Ikki kishi → they."
+       "whyUz": "Ikki kishi → they.",
+       "speak": "B: Yes, ___ are."
       },
       {
        "prompt": "B: Yes, ___ is.",
        "answer": "it",
-       "whyUz": "Soyabon — narsa → it."
+       "whyUz": "Soyabon — narsa → it.",
+       "speak": "B: Yes, ___ is."
       }
      ]
     },
@@ -3497,67 +3820,80 @@
       {
        "prompt": "A: ___ Ann from Poland?",
        "answer": "Is",
-       "whyUz": "Ann — ayol → Is / isn't / She's."
+       "whyUz": "Ann — ayol → Is / isn't / She's.",
+       "speak": "A: ___ Ann from Poland?"
       },
       {
        "prompt": "B: No, she ___ . She ___ from Spain.",
        "answer": "isn't",
-       "whyUz": "Ann — ayol → Is / isn't / She's."
+       "whyUz": "Ann — ayol → Is / isn't / She's.",
+       "speak": "B: No, she ___ . She ___ from Spain."
       },
       {
        "prompt": "B: No, she ___ . She ___ from Spain.",
        "answer": "is",
-       "whyUz": "Ann — ayol → Is / isn't / She's."
+       "whyUz": "Ann — ayol → Is / isn't / She's.",
+       "speak": "B: No, she ___ . She ___ from Spain."
       },
       {
        "prompt": "A: What ___ your favourite sport?",
        "answer": "is",
-       "whyUz": "'sport' — birlik narsa → is."
+       "whyUz": "'sport' — birlik narsa → is.",
+       "speak": "A: What ___ your favourite sport?"
       },
       {
        "prompt": "B: My favourite sport ___ football.",
        "answer": "is",
-       "whyUz": "'sport' — birlik narsa → is."
+       "whyUz": "'sport' — birlik narsa → is.",
+       "speak": "B: My favourite sport ___ football."
       },
       {
        "prompt": "A: ___ they from Finland?",
        "answer": "Are",
-       "whyUz": "they → Are / aren't / They're."
+       "whyUz": "they → Are / aren't / They're.",
+       "speak": "A: ___ they from Finland?"
       },
       {
        "prompt": "B: No, they ___ . They ___ British.",
        "answer": "aren't",
-       "whyUz": "they → Are / aren't / They're."
+       "whyUz": "they → Are / aren't / They're.",
+       "speak": "B: No, they ___ . They ___ British."
       },
       {
        "prompt": "B: No, they ___ . They ___ British.",
        "answer": "are",
-       "whyUz": "they → Are / aren't / They're."
+       "whyUz": "they → Are / aren't / They're.",
+       "speak": "B: No, they ___ . They ___ British."
       },
       {
        "prompt": "A: ___ Bob ten years old?",
        "answer": "Is",
-       "whyUz": "Bob — erkak → Is / isn't / He's."
+       "whyUz": "Bob — erkak → Is / isn't / He's.",
+       "speak": "A: ___ Bob ten years old?"
       },
       {
        "prompt": "B: No, he ___ . He ___ thirteen.",
        "answer": "isn't",
-       "whyUz": "Bob — erkak → Is / isn't / He's."
+       "whyUz": "Bob — erkak → Is / isn't / He's.",
+       "speak": "B: No, he ___ . He ___ thirteen."
       },
       {
        "prompt": "B: No, he ___ . He ___ thirteen.",
        "answer": "is",
-       "whyUz": "Bob — erkak → Is / isn't / He's."
+       "whyUz": "Bob — erkak → Is / isn't / He's.",
+       "speak": "B: No, he ___ . He ___ thirteen."
       },
       {
        "prompt": "A: How old ___ you?",
        "answer": "are",
-       "whyUz": "you → are. Javobda I → am."
+       "whyUz": "you → are. Javobda I → am.",
+       "speak": "A: How old ___ you?"
       },
       {
        "prompt": "B: I ___ forty-four.",
        "answer": "am",
-       "whyUz": "you → are. Javobda I → am."
+       "whyUz": "you → are. Javobda I → am.",
+       "speak": "B: I ___ forty-four."
       }
      ]
     }
@@ -3657,7 +3993,8 @@
       {
        "prompt": "Mary Stuart",
        "answer": "This is Mary Stuart. She's from Dublin, Ireland. She's thirty years old and she's an English teacher at Mortimer College.",
-       "promptUz": "Profil bo'yicha gap tuzing"
+       "promptUz": "Profil bo'yicha gap tuzing",
+       "speak": "Mary Stuart"
       }
      ]
     }
@@ -3992,26 +4329,31 @@
       {
        "prompt": "years / I / old / thirty / am",
        "answer": "I am thirty years old.",
-       "whyUz": "'years old' — buzilmas ibora, SONDAN KEYIN keladi: thirty years old."
+       "whyUz": "'years old' — buzilmas ibora, SONDAN KEYIN keladi: thirty years old.",
+       "speak": "years / I / old / thirty / am"
       },
       {
        "prompt": "favourite / golf / his / sport / is",
        "answer": "His favourite sport is golf.",
-       "whyUz": "Ikki xato: gap boshida katta harf (His), va Britan imlosi (favouRite)."
+       "whyUz": "Ikki xato: gap boshida katta harf (His), va Britan imlosi (favouRite).",
+       "speak": "favourite / golf / his / sport / is"
       },
       {
        "prompt": "Egypt / are / Pyramids / in / the",
        "answer": "The Pyramids are in Egypt.",
-       "whyUz": "Uch xato: 1) 'the' Pyramids oldiga keladi, 2) mamlakat oldidan 'the' YO'Q (in Egypt), 3) bu so'roq emas — tasdiq gap, shuning uchun 'The Pyramids are' tartibida."
+       "whyUz": "Uch xato: 1) 'the' Pyramids oldiga keladi, 2) mamlakat oldidan 'the' YO'Q (in Egypt), 3) bu so'roq emas — tasdiq gap, shuning uchun 'The Pyramids are' tartibida.",
+       "speak": "Egypt / are / Pyramids / in / the"
       },
       {
        "prompt": "sixteen / Tony / old / years / is",
-       "answer": "Tony is sixteen years old."
+       "answer": "Tony is sixteen years old.",
+       "speak": "sixteen / Tony / old / years / is"
       },
       {
        "prompt": "Budapest / is / from / she",
        "answer": "She is from Budapest.",
-       "whyUz": "Faqat bitta xato: gap boshida KATTA harf — 'She'."
+       "whyUz": "Faqat bitta xato: gap boshida KATTA harf — 'She'.",
+       "speak": "Budapest / is / from / she"
       }
      ]
     }
@@ -4076,57 +4418,68 @@
       {
        "prompt": "musician",
        "answer": "Fergus is a musician.",
-       "promptUz": "Fergus musiqachi."
+       "promptUz": "Fergus musiqachi.",
+       "speak": "musician"
       },
       {
        "prompt": "years old",
        "answer": "He's forty years old.",
-       "promptUz": "U qirq yoshda."
+       "promptUz": "U qirq yoshda.",
+       "speak": "years old"
       },
       {
        "prompt": "name",
        "answer": "What's your name?",
-       "promptUz": "Ismingiz nima?"
+       "promptUz": "Ismingiz nima?",
+       "speak": "name"
       },
       {
        "prompt": "favourite",
        "answer": "My favourite sport is golf.",
-       "promptUz": "Sevimli sportim — golf."
+       "promptUz": "Sevimli sportim — golf.",
+       "speak": "favourite"
       },
       {
        "prompt": "pleased",
        "answer": "Pleased to meet you.",
-       "promptUz": "Tanishganimdan xursandman."
+       "promptUz": "Tanishganimdan xursandman.",
+       "speak": "pleased"
       },
       {
        "prompt": "neighbour",
        "answer": "I'm your new neighbour.",
-       "promptUz": "Men sizning yangi qo'shningizman."
+       "promptUz": "Men sizning yangi qo'shningizman.",
+       "speak": "neighbour"
       },
       {
        "prompt": "capital",
        "answer": "Cairo is the capital of Egypt.",
-       "promptUz": "Qohira — Misrning poytaxti."
+       "promptUz": "Qohira — Misrning poytaxti.",
+       "speak": "capital"
       },
       {
        "prompt": "married",
        "answer": "I'm not married.",
-       "promptUz": "Men uylanmaganman."
+       "promptUz": "Men uylanmaganman.",
+       "speak": "married"
       },
       {
        "prompt": "farmers",
        "answer": "They are farmers.",
-       "promptUz": "Ular dehqonlar."
+       "promptUz": "Ular dehqonlar.",
+       "speak": "farmers"
       },
       {
        "prompt": "where",
        "answer": "Where are you from?",
-       "promptUz": "Qayerdansiz?"
+       "promptUz": "Qayerdansiz?",
+       "speak": "where"
       },
       {
        "prompt": "job",
        "answer": "What's his job?",
-       "promptUz": "Uning kasbi nima?"
+       "promptUz": "Uning kasbi nima?",
+       "speak": "job"
       }
      ]
     }

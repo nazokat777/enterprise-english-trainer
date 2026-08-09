@@ -77,6 +77,14 @@ class ExTask {
   final String uz;
   final String note;
 
+  /// Javob berilgunga qadar ovoz chiqariladigan matn (faqat SAVOL).
+  /// Bo'sh bo'lsa — ovoz tugmasi ko'rsatilmaydi. Javobni hech qachon
+  /// oldindan o'qimaydi (eksport skripti buni ta'minlaydi).
+  final String speak;
+
+  /// Rasm o'rnidagi belgi (emoji yoki asset yo'li).
+  final String visual;
+
   const ExTask({
     this.prompt = '',
     this.promptUz = '',
@@ -89,6 +97,8 @@ class ExTask {
     this.en = '',
     this.uz = '',
     this.note = '',
+    this.speak = '',
+    this.visual = '',
   });
 
   factory ExTask.fromJson(Map<String, dynamic> j) => ExTask(
@@ -104,6 +114,8 @@ class ExTask {
         en: j['en'] as String? ?? '',
         uz: j['uz'] as String? ?? '',
         note: j['note'] as String? ?? '',
+        speak: j['speak'] as String? ?? '',
+        visual: j['visual'] as String? ?? '',
       );
 
   /// Foydalanuvchi javobi to'g'rimi (asosiy yoki muqobil javob bilan).
@@ -124,8 +136,15 @@ class ExTask {
       ? answer.trim().split(RegExp(r'\s+'))
       : answer.trim().split('');
 
-  /// Ovoz chiqarish uchun eng mos inglizcha matn.
-  String get speakText => en.isNotEmpty ? en : (answer.isNotEmpty ? answer : prompt);
+  /// Javobdan OLDIN ovoz chiqarish uchun matn.
+  /// study bandida `en` (u savol emas, o'qish uchun matn),
+  /// boshqalarida faqat aniq belgilangan `speak`.
+  /// MUHIM: bu yerda hech qachon `answer` qaytarilmaydi — aks holda
+  /// ovoz tugmasi javobni oshkor qilib qo'yadi.
+  String get speakText => en.isNotEmpty ? en : speak;
+
+  /// Ovoz tugmasi ko'rsatiladimi.
+  bool get canSpeak => speakText.trim().isNotEmpty;
 }
 
 /// Bitta mashq (kitobdagi Ex. 5 kabi).

@@ -220,6 +220,40 @@ void main() {
       expect(t.note, 'izoh');
     });
 
+    test('ovoz tugmasi JAVOBNI hech qachon o\'qimaydi', () {
+      // Ilgari speakText javobga tushib ketardi va tugmani bosgan zahoti
+      // javob eshitilardi. Endi faqat aniq belgilangan `speak` o'qiladi.
+      final t = ExTask.fromJson({
+        'prompt': 'Rasm A',
+        'answer': 'Brazil',
+        'options': ['Brazil', 'Spain'],
+      });
+      expect(t.speakText, isEmpty);
+      expect(t.canSpeak, isFalse, reason: 'ovoz tugmasi ko\'rsatilmaydi');
+      expect(t.speakText, isNot(contains('Brazil')));
+    });
+
+    test('speak berilgan bo\'lsa o\'sha o\'qiladi', () {
+      final t = ExTask.fromJson({
+        'prompt': 'orange',
+        'answer': 'an',
+        'speak': 'orange',
+      });
+      expect(t.speakText, 'orange');
+      expect(t.canSpeak, isTrue);
+    });
+
+    test('study bandida en o\'qiladi', () {
+      final t = ExTask.fromJson({'en': 'I am from Spain.', 'uz': 'Men...'});
+      expect(t.speakText, 'I am from Spain.');
+      expect(t.canSpeak, isTrue);
+    });
+
+    test('vizual (emoji yoki asset) o\'qiladi', () {
+      expect(ExTask.fromJson({'prompt': 'p', 'visual': '🚜'}).visual, '🚜');
+      expect(ExTask.fromJson({'prompt': 'p'}).visual, isEmpty);
+    });
+
     test('yig\'ish uchun bo\'laklar: ibora -> so\'zlar, so\'z -> harflar', () {
       final phrase = ExTask.fromJson({'prompt': 'p', 'answer': 'I am here'});
       expect(phrase.buildPieces, ['I', 'am', 'here']);
