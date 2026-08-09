@@ -1,0 +1,394 @@
+{
+  "book": "coursebook",
+  "pdfPage": 42,
+  "bookPage": 38,
+  "unit": 5,
+  "unitTitle": "An Early Bird or a Night Owl?",
+  "module": 2,
+  "scanNote": "16-mashqda jadvalning bir necha katagi AUDIO orqali to'ldiriladi (Meri va Royning tug'ilgan yili, vaqti va kun qismi). Audio yo'q — shu sababli bu mashqda TO'LIQ ma'lum bo'lgan Tom uchun gap tuziladi, Meri va Roy uchun esa faqat MA'LUM qismlar bilan qolip mashq qilinadi. Noma'lum katakchalar aniq belgilangan.",
+  "sections": [
+    {
+      "kind": "speaking",
+      "title": "Speaking — How often ...?",
+      "titleUz": "Gapirish — Qanchalik tez-tez ...?",
+      "exercises": [
+        {
+          "ref": "13",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "In pairs, ask and answer questions, as in the example. Then, write a short paragraph about your partner.",
+          "instructionUz": "Juftlikda namunadagidek savol-javob qiling. So'ng sherigingiz haqida qisqa xatboshi yozing.",
+          "explanationUz": "SAVOL QOLIPI:\n  How often do you + fe'l + ... ?\n\nJAVOB VARIANTLARI (kitobdagi ro'yxat):\n  never                          — hech qachon\n  every day / month / evening    — har kuni / oy / kechqurun\n  every two / three days         — ikki / uch kunda bir\n  every Sunday                   — har yakshanba\n  sometimes                      — ba'zan\n  once / twice a week / month    — haftada/oyda bir/ikki marta\n\nDIQQAT — SON IFODALARI:\n  once  = bir marta ('one time' EMAS)\n  twice = ikki marta ('two times' EMAS)\n  three times = uch marta (3 dan boshlab 'times')\n\nNAMUNA:\n  SA: How often do you go to the swimming-pool?\n  SB: Twice a week.\n  SA: How often do you go to the theatre?\n  SB: Never...\n\nSO'NG XATBOSHI yoziladi (3-shaxsda!):\n  'Tony GOES to the swimming-pool twice a week,\n   but he NEVER GOES to the theatre.'",
+          "bookRef": "Coursebook, 38-bet, 13-mashq",
+          "items": [
+            { "n": 1, "prompt": "swimming-pool", "question": "How often do you go to the swimming-pool?", "answer": "Twice a week.", "given": true, "whyUz": "Kitobdagi namuna. 'twice' = ikki marta." },
+            { "n": 2, "prompt": "theatre", "question": "How often do you go to the theatre?", "answer": "Never.", "given": true, "whyUz": "Kitobdagi namuna. 'never' — qisqa javob sifatida yolg'iz ishlatilishi mumkin." },
+            { "n": 3, "prompt": "clean your room", "question": "How often do you clean your room?", "answer": "Once a week.", "whyUz": "'once a week' = haftada bir marta." },
+            { "n": 4, "prompt": "go fishing", "question": "How often do you go fishing?", "answer": "Sometimes.", "whyUz": "'go fishing' — 'go + -ing' qolipi." },
+            { "n": 5, "prompt": "go out with your family", "question": "How often do you go out with your family?", "answer": "Every Sunday.", "whyUz": "'go out' = ko'chaga chiqmoq, dam olishga chiqmoq." },
+            { "n": 6, "prompt": "play computer games", "question": "How often do you play computer games?", "answer": "Every day.", "whyUz": "'every day' — predlogsiz." },
+            { "n": 7, "prompt": "watch TV", "question": "How often do you watch TV?", "answer": "Every evening.", "whyUz": "'watch TV' — artikl YO'Q." },
+            { "n": 8, "prompt": "meet your friends", "question": "How often do you meet your friends?", "answer": "Three times a week.", "whyUz": "3 dan boshlab 'times' ishlatiladi." },
+            { "n": 9, "prompt": "go shopping", "question": "How often do you go shopping?", "answer": "Every two or three days.", "whyUz": "'every two days' = ikki kunda bir marta." }
+          ]
+        },
+        {
+          "ref": "13b",
+          "type": "make_sentences_game",
+          "instructionEn": "Then, write a short paragraph about your partner.",
+          "instructionUz": "So'ng sherigingiz haqida qisqa xatboshi yozing.",
+          "explanationUz": "XATBOSHIDA 3-SHAXS ishlatiladi — demak fe'l -s OLADI:\n  I go → he GOES\n  I watch → he WATCHES\n  I play → he PLAYS\n\nQARAMA-QARSHI fikrlarni 'but' bilan bog'lang:\n  Tony goes to the swimming-pool twice a week,\n  BUT he never goes to the theatre.\n\nKitobdagi boshlanish:\n  'Tony goes to the swimming-pool twice a week, but he\n   never goes to the theatre. ...'",
+          "bookRef": "Coursebook, 38-bet, 13-mashq (xatboshi)",
+          "example": [
+            { "speaker": "namuna", "en": "Tony goes to the swimming-pool twice a week, but he never goes to the theatre.", "uz": "Toni haftada ikki marta basseynga boradi, lekin teatrga hech qachon bormaydi." }
+          ],
+          "modelSentences": [
+            { "word": "clean your room — once a week", "sentence": "He cleans his room once a week.", "uz": "U xonasini haftada bir marta tozalaydi." },
+            { "word": "go fishing — sometimes", "sentence": "He sometimes goes fishing.", "uz": "U ba'zan baliq ovlashga boradi." },
+            { "word": "go out with family — every Sunday", "sentence": "He goes out with his family every Sunday.", "uz": "U har yakshanba oilasi bilan sayrga chiqadi." },
+            { "word": "play computer games — every day", "sentence": "He plays computer games every day.", "uz": "U har kuni kompyuter o'yinlari o'ynaydi." },
+            { "word": "watch TV — every evening", "sentence": "He watches TV every evening.", "uz": "U har kechqurun televizor ko'radi." },
+            { "word": "meet friends — three times a week", "sentence": "He meets his friends three times a week.", "uz": "U do'stlari bilan haftada uch marta uchrashadi." },
+            { "word": "go shopping — every two or three days", "sentence": "He goes shopping every two or three days.", "uz": "U ikki-uch kunda bir marta xaridga boradi." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Months of the year",
+      "titleUz": "Yil oylari",
+      "exercises": [
+        {
+          "ref": "14",
+          "type": "fill_gap",
+          "hasAudio": true,
+          "instructionEn": "Number the months in the correct order. Now listen and repeat.",
+          "instructionUz": "Oylarni to'g'ri tartibda raqamlang. So'ng tinglab, takrorlang.",
+          "explanationUz": "O'N IKKI OY — hammasi KATTA HARF bilan yoziladi!\nBu o'zbek tilida yo'q qoida, shuning uchun eng ko'p unutiladi:\n  ✅ January   ❌ january\n\nQISQARTMALAR (uch harf):\n  Jan, Feb, Mar, Apr, May, Jun,\n  Jul, Aug, Sep, Oct, Nov, Dec\n  (May, Jun, Jul qisqarmasligi ham mumkin)\n\nTALAFFUZ TUZOQLARI:\n  February /ˈfebruəri/ — birinchi 'r' ko'pincha tushiriladi: 'FEB-yu-ri'\n  Wednesday emas, lekin shunga o'xshash — March /mɑːtʃ/\n  August /ˈɔːɡəst/ — 'OO-gest'\n\nOY BILAN PREDLOG — IN:\n  in January, in May, in December",
+          "bookRef": "Coursebook, 38-bet, 14-mashq",
+          "items": [
+            { "textEn": "1 — ?", "answer": "January", "given": true, "whyUz": "Kitobda berilgan. Yilning birinchi oyi. Rimliklarning Yanus xudosi nomidan." },
+            { "textEn": "2 — ?", "answer": "February", "whyUz": "Ikkinchi oy. Eng qisqa oy (28 yoki 29 kun)." },
+            { "textEn": "3 — ?", "answer": "March", "whyUz": "Uchinchi oy. Mars xudosi nomidan. Bahor boshlanishi." },
+            { "textEn": "4 — ?", "answer": "April", "whyUz": "To'rtinchi oy." },
+            { "textEn": "5 — ?", "answer": "May", "whyUz": "Beshinchi oy. Eng qisqa nom." },
+            { "textEn": "6 — ?", "answer": "June", "whyUz": "Oltinchi oy. Yuno ma'budasi nomidan." },
+            { "textEn": "7 — ?", "answer": "July", "whyUz": "Yettinchi oy. Yuliy Sezar nomidan." },
+            { "textEn": "8 — ?", "answer": "August", "whyUz": "Sakkizinchi oy. Imperator Avgust nomidan." },
+            { "textEn": "9 — ?", "answer": "September", "whyUz": "To'qqizinchi oy. Lotincha 'septem' = yetti (qadimgi kalendarda 7-oy edi)." },
+            { "textEn": "10 — ?", "answer": "October", "whyUz": "O'ninchi oy. 'octo' = sakkiz." },
+            { "textEn": "11 — ?", "answer": "November", "whyUz": "O'n birinchi oy. 'novem' = to'qqiz." },
+            { "textEn": "12 — ?", "answer": "December", "whyUz": "O'n ikkinchi oy. 'decem' = o'n." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_theory",
+      "title": "Grammar: Prepositions of Time",
+      "titleUz": "Grammatika: vaqt predloglari",
+      "rule": {
+        "titleUz": "AT / ON / IN — qaysi biri qachon",
+        "explanationUz": "UCHTA PREDLOG, UCHTA QOIDA.\nUlarni ANIQLIK darajasi bo'yicha eslash oson:\n\n  AT — eng ANIQ nuqta (soat)\n  ON — bir KUN\n  IN — uzun DAVR (oy, fasl, yil)\n\n  AT → ON → IN\n  aniq  →  kun  →  uzoq davr\n\nJADVAL (kitobdagi uchta ustun):\n\n  AT                ON                  IN\n  six o'clock       Friday(s)           May\n  the weekend       Sunday morning(s)   spring/summer\n  night             2 August            the morning/\n  noon              6 May, 1978         evening/afternoon\n                                        1998\n\nDIQQAT — ISTISNOLAR:\n  at NIGHT       (in the night EMAS)\n  at the WEEKEND (Britaniyada; AQShda 'on the weekend')\n  at NOON        (tush payti)\n  IN the morning/evening/afternoon — LEKIN\n  ON Sunday morning — aniq kun aytilsa ON!",
+        "table": [
+          { "subject": "AT", "full": "six o'clock, the weekend, night, noon", "short": "vaqt va istisnolar" },
+          { "subject": "ON", "full": "Friday(s), Sunday morning(s), 2 August, 6 May 1978", "short": "kun va sana" },
+          { "subject": "IN", "full": "May, spring/summer, the morning/evening/afternoon, 1998", "short": "oy, fasl, yil, kun qismi" }
+        ],
+        "keyRules": [
+          {
+            "uzRule": "AT — soat bilan va 'the weekend', 'night', 'noon' so'zlari bilan.",
+            "enRule": "We use at with the time and with the weekend, night and noon.",
+            "examples": ["at six o'clock", "at the weekend", "at night", "at noon"]
+          },
+          {
+            "uzRule": "ON — hafta kunlari, aniq kunning qismlari va sanalar bilan.",
+            "enRule": "We use on with days of the week, the parts of a particular day and dates.",
+            "examples": ["on Friday", "on Sunday morning", "on 2 August", "on 6 May, 1978"]
+          },
+          {
+            "uzRule": "IN — oylar, fasllar, yillar va 'the morning/evening/afternoon' bilan.",
+            "enRule": "We use in with months, seasons, years and with the morning/evening/afternoon.",
+            "examples": ["in May", "in spring", "in 1998", "in the morning"]
+          }
+        ],
+        "warningUz": "ENG CHALKASH JOY — 'morning' bilan IN va ON:\n\n  IN the morning        — umuman ertalab (har kuni)\n  ON Sunday morning     — ANIQ kunning ertalabi\n  ON Monday afternoons  — dushanba kunlari kunduzi\n\nQOIDA: kun NOMI aytilsa → ON, aytilmasa → IN.\n\nVa 'night' — ISTISNO:\n  ✅ at night          ❌ in the night\n  LEKIN: on Friday night (kun nomi bor → ON)",
+        "noteUz": "PREDLOGSIZ ishlatiladigan vaqt so'zlari:\n  every day / week / month / year\n  this morning / week / year\n  next Monday / week\n  last night / week\n  today, tomorrow, yesterday\n\n  ✅ I go there every day.\n  ❌ I go there in every day.",
+        "extraUz": "SANA O'QILISHI (og'zaki):\n  2 August    → the second of August\n              → August the second (AQShda)\n  6 May 1978  → the sixth of May, nineteen seventy-eight\n\nYIL O'QILISHI:\n  1978 → nineteen seventy-eight\n  1998 → nineteen ninety-eight\n  2005 → two thousand and five\n  2024 → twenty twenty-four"
+      },
+      "exercises": [
+        {
+          "ref": "15",
+          "type": "word_choice",
+          "instructionEn": "Study the rules, then fill in on, in and at.",
+          "instructionUz": "Qoidalarni o'rganing, so'ng on, in va at ni jadvalga qo'ying.",
+          "explanationUz": "Kitobdagi jadvalning UCHTA SARLAVHASI bo'sh.\nHar bir ustundagi so'zlarga qarab predlogni toping.",
+          "bookRef": "Coursebook, 38-bet, 15-mashq",
+          "items": [
+            {
+              "textEn": "1-ustun: six o'clock, the weekend, night, noon → ____",
+              "uz": "Soat va 'weekend/night/noon' bilan qaysi predlog?",
+              "options": ["at", "on", "in"],
+              "answer": "at",
+              "whyUz": "Qoida: 'We use AT with the time and with the weekend, night and noon.'"
+            },
+            {
+              "textEn": "2-ustun: Friday(s), Sunday morning(s), 2 August, 6 May 1978 → ____",
+              "uz": "Hafta kunlari va sanalar bilan qaysi predlog?",
+              "options": ["on", "at", "in"],
+              "answer": "on",
+              "whyUz": "Qoida: 'We use ON with days of the week, the parts of a particular day and dates.'"
+            },
+            {
+              "textEn": "3-ustun: May, spring/summer, the morning/evening/afternoon, 1998 → ____",
+              "uz": "Oy, fasl, yil bilan qaysi predlog?",
+              "options": ["in", "at", "on"],
+              "answer": "in",
+              "whyUz": "Qoida: 'We use IN with months, seasons, years and with the morning/evening/afternoon.'"
+            }
+          ]
+        },
+        {
+          "ref": "15-mashq",
+          "type": "word_choice",
+          "instructionEn": "More practice: at, on or in?",
+          "instructionUz": "Qo'shimcha mashq: at, on yoki in?",
+          "explanationUz": "Har bir iborada NIMA turganiga qarang:\n  soat / weekend / night / noon → AT\n  kun nomi / sana                → ON\n  oy / fasl / yil / kun qismi    → IN",
+          "bookRef": "Coursebook, 38-bet, 15-mashq qoidasi",
+          "items": [
+            { "textEn": "____ six o'clock", "uz": "soat", "options": ["at", "on", "in"], "answer": "at", "whyUz": "Soat → AT." },
+            { "textEn": "____ Friday", "uz": "hafta kuni", "options": ["on", "at", "in"], "answer": "on", "whyUz": "Hafta kuni → ON." },
+            { "textEn": "____ May", "uz": "oy", "options": ["in", "at", "on"], "answer": "in", "whyUz": "Oy → IN." },
+            { "textEn": "____ night", "uz": "tun", "options": ["at", "in", "on"], "answer": "at", "whyUz": "ISTISNO: at night ('in the night' EMAS)." },
+            { "textEn": "____ the morning", "uz": "ertalab (umuman)", "options": ["in", "at", "on"], "answer": "in", "whyUz": "Kun qismi (kun nomisiz) → IN." },
+            { "textEn": "____ Sunday morning", "uz": "yakshanba ertalabi", "options": ["on", "in", "at"], "answer": "on", "whyUz": "Kun NOMI bor → ON (in EMAS!)." },
+            { "textEn": "____ the weekend", "uz": "dam olish kunlari", "options": ["at", "on", "in"], "answer": "at", "whyUz": "Britaniyada AT the weekend. AQShda 'on the weekend'." },
+            { "textEn": "____ 2 August", "uz": "sana", "options": ["on", "at", "in"], "answer": "on", "whyUz": "Sana → ON." },
+            { "textEn": "____ 1998", "uz": "yil", "options": ["in", "at", "on"], "answer": "in", "whyUz": "Yil → IN." },
+            { "textEn": "____ summer", "uz": "fasl", "options": ["in", "at", "on"], "answer": "in", "whyUz": "Fasl → IN." },
+            { "textEn": "____ noon", "uz": "tush payti", "options": ["at", "in", "on"], "answer": "at", "whyUz": "ISTISNO: at noon." },
+            { "textEn": "____ 6 May, 1978", "uz": "to'liq sana", "options": ["on", "in", "at"], "answer": "on", "whyUz": "To'liq sana → ON (yil bo'lsa ham)." }
+          ]
+        },
+        {
+          "ref": "16",
+          "type": "make_sentences_game",
+          "hasAudio": true,
+          "instructionEn": "Study the table, then listen and fill in the missing information. Next, make sentences, as in the example. Finally, write about yourself.",
+          "instructionUz": "Jadvalni o'rganing, so'ng tinglab, tushib qolgan ma'lumotni yozing. Namunadagidek gap tuzing. Oxirida o'zingiz haqingizda yozing.",
+          "audioRequiredUz": "Kassetada Meri va Royning tug'ilgan yili, vaqti va kun qismi aytiladi. Audio yo'q — quyida FAQAT jadvalda BERILGAN ma'lumot bilan gap tuziladi, noma'lum qismlar '...' bilan ko'rsatilgan.",
+          "explanationUz": "JADVAL:\n         DATE          MONTH   YEAR   TIME    PART OF DAY\n  Tom    Friday 22nd   March   1957   10:30   night\n  Mary   Monday 6th    July    ?      2:00    ?\n  Roy    ? 3rd         August  1955   ?       afternoon\n  You    (o'zingiz)\n\nNAMUNA GAP (kitobda berilgan):\n  Tom was born ON Friday the 22nd of March, IN 1957,\n  AT half past ten AT night.\n\nQOLIP — TO'RTTA PREDLOG bir gapda:\n  was born ON + kun va sana\n           IN + yil\n           AT + soat\n           AT night / IN the morning / IN the afternoon\n\nSANA O'QILISHI:\n  Friday 22nd March → Friday the twenty-second of March\n  ('the' va 'of' qo'shiladi!)\n\nTARTIB SONLAR:\n  1st first, 2nd second, 3rd third, 4th fourth,\n  6th sixth, 22nd twenty-second, 3rd third",
+          "bookRef": "Coursebook, 38-bet, 16-mashq",
+          "example": [
+            { "speaker": "namuna", "en": "Tom was born on Friday the 22nd of March, in 1957, at half past ten at night.", "uz": "Tom 1957-yil 22-mart, juma kuni kechasi soat o'n yarimda tug'ilgan." }
+          ],
+          "modelSentences": [
+            { "word": "Mary — jadvalda berilgan qism", "sentence": "Mary was born on Monday the 6th of July, at two o'clock.", "uz": "Meri 6-iyul, dushanba kuni soat ikkida tug'ilgan.", "note": "Yil va kun qismi audio orqali beriladi." },
+            { "word": "Roy — jadvalda berilgan qism", "sentence": "Roy was born on the 3rd of August, in 1955, in the afternoon.", "uz": "Roy 1955-yil 3-avgust kuni kunduzi tug'ilgan.", "note": "Hafta kuni va aniq vaqt audio orqali beriladi." },
+            { "word": "You — o'zingiz haqingizda", "sentence": "I was born on Tuesday the 15th of April, in 2010, at six o'clock in the morning.", "uz": "Men 2010-yil 15-aprel, seshanba kuni ertalab soat oltida tug'ilganman.", "note": "O'z ma'lumotingizni qo'ying." }
+          ]
+        },
+        {
+          "ref": "16-sana",
+          "type": "fill_gap",
+          "instructionEn": "Practise saying dates.",
+          "instructionUz": "Sanalarni aytishni mashq qiling.",
+          "explanationUz": "SANA O'QILISHIDA 'the' va 'of' QO'SHILADI:\n\n  Yozilishi: 22 March\n  O'qilishi: the twenty-second OF March\n\n  Yozilishi: Friday 22nd March 1957\n  O'qilishi: Friday THE twenty-second OF March, nineteen fifty-seven\n\nTARTIB SONLAR QOIDASI:\n  1 → first (1st)      2 → second (2nd)    3 → third (3rd)\n  4 → fourth (4th)     5 → fifth (5th)     6 → sixth (6th)\n  ...\n  20 → twentieth (20th)\n  21 → twenty-first    22 → twenty-second  23 → twenty-third\n  30 → thirtieth (30th) 31 → thirty-first",
+          "bookRef": "Coursebook, 38-bet, 16-mashq (sanalar)",
+          "items": [
+            { "textEn": "22 March →", "answer": "the twenty-second of March", "whyUz": "22 → twenty-second. 'the' va 'of' shart." },
+            { "textEn": "6 July →", "answer": "the sixth of July", "whyUz": "6 → sixth." },
+            { "textEn": "3 August →", "answer": "the third of August", "whyUz": "3 → third (thirdd EMAS)." },
+            { "textEn": "1 January →", "answer": "the first of January", "whyUz": "1 → first." },
+            { "textEn": "2 February →", "answer": "the second of February", "whyUz": "2 → second." },
+            { "textEn": "1957 →", "answer": "nineteen fifty-seven", "whyUz": "Yil ikki qismga bo'lib o'qiladi: 19 + 57." },
+            { "textEn": "1955 →", "answer": "nineteen fifty-five", "whyUz": "19 + 55." },
+            { "textEn": "1998 →", "answer": "nineteen ninety-eight", "whyUz": "19 + 98." }
+          ]
+        },
+        {
+          "ref": "17",
+          "type": "text_gap_fill",
+          "instructionEn": "Fill in at, in or on then talk about Henry's daily routine and free-time activities.",
+          "instructionUz": "at, in yoki on ni qo'ying, so'ng Genrining kundalik tartibi va bo'sh vaqti haqida gapiring.",
+          "explanationUz": "GENRI JONS — 50 yoshli DEHQON (farmer).\nUning kuni Bob Ellisnikidan ham ertaroq boshlanadi!\n\nHar bir bo'shliqda vaqt ifodasi turibdi:\n  soat            → AT\n  kun qismi       → IN the ...\n  kun nomi        → ON\n  aniq kun qismi  → ON (kun nomi bilan)\n\nDIQQAT — 8 va 9-bo'shliqlar GAP BOSHIDA:\n  katta harf bilan yoziladi (On Saturday..., On Sundays...)",
+          "bookRef": "Coursebook, 38-bet, 17-mashq",
+          "lines": [
+            { "textEn": "Henry Jones, 50, is a farmer. \"It's a tiring job,\" he says, \"but I like it a lot.\"", "uz": "Genri Jons, 50 yoshda, dehqon. 'Bu charchatadigan ish', — deydi u, — 'lekin men uni juda yoqtiraman.'", "given": true },
+            { "textEn": "Every day, Henry wakes up 1) ____ half past four ...", "answer": "at", "hintUz": "'half past four' — bu SOAT", "whyUz": "Soat bilan AT. 'wake up' = uyg'onmoq." },
+            { "textEn": "... 2) ____ the morning and milks the cows.", "answer": "in", "hintUz": "'the morning' — kun qismi, kun nomi yo'q", "whyUz": "Kun qismi (kun nomisiz) → IN the morning. 'milk' fe'l sifatida — sut sog'moq." },
+            { "textEn": "He finishes 3) ____ about half past six.", "answer": "at", "hintUz": "'about half past six' — SOAT", "whyUz": "Soat bilan AT. 'about' = taxminan." },
+            { "textEn": "After that, he goes back to the farmhouse and has breakfast, then he feeds the animals.", "uz": "Shundan keyin u ferma uyiga qaytadi va nonushta qiladi, so'ng hayvonlarni boqadi.", "given": true },
+            { "textEn": "He has lunch 4) ____ noon.", "answer": "at", "hintUz": "'noon' — ISTISNO so'zlardan biri", "whyUz": "ISTISNO: at noon (tush payti). Qoidada aynan sanalgan." },
+            { "textEn": "5) ____ two o'clock, he goes to the fields and works there until five.", "answer": "At", "hintUz": "Soat, va gap BOSHIDA", "whyUz": "Soat → AT. Gap boshida katta harf. 'a field' = dala." },
+            { "textEn": "6) ____ the evening, he milks the cows again, then he goes back home and has a shower.", "answer": "In", "hintUz": "Kun qismi, gap boshida", "whyUz": "Kun qismi → IN the evening. Gap boshida katta harf." },
+            { "textEn": "He sometimes watches TV before he goes to bed 7) ____ about nine.", "answer": "at", "hintUz": "'about nine' — SOAT", "whyUz": "Soat bilan AT. 'sometimes' fe'ldan oldin." },
+            { "textEn": "8) ____ Saturday afternoons, he goes to the local playing-field to watch the village team play football.", "answer": "On", "hintUz": "Kun NOMI bor — 'Saturday afternoons'", "whyUz": "Kun nomi bo'lsa ON ('in the afternoon' EMAS!). Gap boshida katta harf." },
+            { "textEn": "Henry likes football a lot.", "uz": "Genri futbolni juda yoqtiradi.", "given": true },
+            { "textEn": "9) ____ Sundays, Henry relaxes.", "answer": "On", "hintUz": "Hafta kuni (ko'plikda)", "whyUz": "Hafta kuni → ON. 'On Sundays' = har yakshanba. Gap boshida katta harf." },
+            { "textEn": "\"I like the way I live,\" says Henry. \"Working in the open air makes me feel good.\"", "uz": "'Yashash tarzimni yoqtiraman', — deydi Genri. — 'Ochiq havoda ishlash o'zimni yaxshi his qildiradi.'", "given": true }
+          ]
+        },
+        {
+          "ref": "17b",
+          "type": "write_sentences",
+          "instructionEn": "Then talk about Henry's daily routine and free-time activities.",
+          "instructionUz": "So'ng Genrining kundalik tartibi va bo'sh vaqti haqida gapiring.",
+          "explanationUz": "Matnni qayta aytib bering. Vaqt predloglarini to'g'ri ishlating.\n\nUCH QISMGA BO'LING:\n  1) ertalab\n  2) kunduzi va kechqurun\n  3) bo'sh vaqti (shanba va yakshanba)",
+          "bookRef": "Coursebook, 38-bet, 17-mashq (gapirish)",
+          "structure": [
+            { "headingUz": "Kim va kasbi", "modelEn": "Henry Jones is fifty years old and he is a farmer." },
+            { "headingUz": "Ishiga munosabati", "modelEn": "He says it is a tiring job, but he likes it a lot." },
+            { "headingUz": "Ertalab — uyg'onish", "modelEn": "Every day, Henry wakes up at half past four in the morning and milks the cows." },
+            { "headingUz": "Ertalab — ish tugashi", "modelEn": "He finishes at about half past six, then he goes back to the farmhouse and has breakfast." },
+            { "headingUz": "Ertalab — hayvonlar", "modelEn": "After breakfast, he feeds the animals." },
+            { "headingUz": "Kunduzi — tushlik va dala", "modelEn": "He has lunch at noon. At two o'clock, he goes to the fields and works there until five." },
+            { "headingUz": "Kechqurun", "modelEn": "In the evening, he milks the cows again, then he goes back home and has a shower." },
+            { "headingUz": "Kechqurun — dam olish", "modelEn": "He sometimes watches TV before he goes to bed at about nine." },
+            { "headingUz": "Shanba — bo'sh vaqt", "modelEn": "On Saturday afternoons, he goes to the local playing-field to watch the village team play football." },
+            { "headingUz": "Yakshanba — dam olish", "modelEn": "On Sundays, Henry relaxes." },
+            { "headingUz": "Uning fikri", "modelEn": "He likes the way he lives because working in the open air makes him feel good.", "noteUz": "'I' → 'he' ga o'zgaradi: makes ME feel → makes HIM feel." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "38-bet — oylar, tartib sonlar va vaqt predloglari.",
+    "groups": [
+      {
+        "ruleUz": "Oy nomlari — hammasi KATTA harf bilan",
+        "explanationUz": "Ko'pchiligi rim xudolari va imperatorlari nomidan. Oxirgi to'rttasi lotincha sonlardan.",
+        "items": [
+          { "base": "Janus (xudo)", "baseUz": "—", "derived": "January", "derivedUz": "yanvar", "note": "Jan" },
+          { "base": "februa (tozalash marosimi)", "baseUz": "—", "derived": "February", "derivedUz": "fevral", "note": "Feb, o'qilishi 'FEB-ru-ri'" },
+          { "base": "Mars (xudo)", "baseUz": "—", "derived": "March", "derivedUz": "mart", "note": "Mar" },
+          { "base": "Juno (ma'buda)", "baseUz": "—", "derived": "June", "derivedUz": "iyun", "note": "Jun" },
+          { "base": "Julius Caesar", "baseUz": "Yuliy Sezar", "derived": "July", "derivedUz": "iyul", "note": "Jul" },
+          { "base": "Augustus", "baseUz": "Avgust", "derived": "August", "derivedUz": "avgust", "note": "Aug" },
+          { "base": "septem (7)", "baseUz": "yetti", "derived": "September", "derivedUz": "sentabr", "note": "Sep" },
+          { "base": "octo (8)", "baseUz": "sakkiz", "derived": "October", "derivedUz": "oktabr", "note": "Oct" },
+          { "base": "novem (9)", "baseUz": "to'qqiz", "derived": "November", "derivedUz": "noyabr", "note": "Nov" },
+          { "base": "decem (10)", "baseUz": "o'n", "derived": "December", "derivedUz": "dekabr", "note": "Dec" }
+        ]
+      },
+      {
+        "ruleUz": "Sanoq son → tartib son",
+        "explanationUz": "Sanalar TARTIB SON bilan aytiladi. Birinchi uchtasi noto'g'ri shakl.",
+        "items": [
+          { "base": "one", "baseUz": "bir", "derived": "first (1st)", "derivedUz": "birinchi", "note": "NOTO'G'RI shakl" },
+          { "base": "two", "baseUz": "ikki", "derived": "second (2nd)", "derivedUz": "ikkinchi", "note": "NOTO'G'RI shakl" },
+          { "base": "three", "baseUz": "uch", "derived": "third (3rd)", "derivedUz": "uchinchi", "note": "NOTO'G'RI shakl" },
+          { "base": "four", "baseUz": "to'rt", "derived": "fourth (4th)", "derivedUz": "to'rtinchi", "note": "-th" },
+          { "base": "five", "baseUz": "besh", "derived": "fifth (5th)", "derivedUz": "beshinchi", "note": "ve → f" },
+          { "base": "six", "baseUz": "olti", "derived": "sixth (6th)", "derivedUz": "oltinchi", "note": "-th" },
+          { "base": "twenty-two", "baseUz": "yigirma ikki", "derived": "twenty-second (22nd)", "derivedUz": "yigirma ikkinchi", "note": "faqat OXIRGI son o'zgaradi" },
+          { "base": "twenty", "baseUz": "yigirma", "derived": "twentieth (20th)", "derivedUz": "yigirmanchi", "note": "y → ie + th" }
+        ]
+      },
+      {
+        "ruleUz": "Takrorlanish ifodalari (once/twice)",
+        "explanationUz": "1 va 2 uchun maxsus so'zlar bor, 3 dan boshlab 'times'.",
+        "items": [
+          { "base": "one time", "baseUz": "—", "derived": "once", "derivedUz": "bir marta", "note": "'one time' DEYILMAYDI" },
+          { "base": "two times", "baseUz": "—", "derived": "twice", "derivedUz": "ikki marta", "note": "'two times' DEYILMAYDI" },
+          { "base": "three", "baseUz": "uch", "derived": "three times", "derivedUz": "uch marta", "note": "3 dan boshlab 'times'" },
+          { "base": "a week", "baseUz": "hafta", "derived": "twice a week", "derivedUz": "haftada ikki marta", "note": "'a' = 'har'" }
+        ]
+      },
+      {
+        "ruleUz": "Ferma va qishloq so'zlari",
+        "explanationUz": "Genri haqidagi matndagi so'zlar.",
+        "items": [
+          { "base": "farm", "baseUz": "ferma", "derived": "a farmer", "derivedUz": "dehqon", "note": "-er" },
+          { "base": "farm + house", "baseUz": "ferma + uy", "derived": "a farmhouse", "derivedUz": "ferma uyi", "note": "qo'shma so'z" },
+          { "base": "milk (ot)", "baseUz": "sut", "derived": "to milk", "derivedUz": "sut sog'moq", "note": "ot ham, fe'l ham" },
+          { "base": "a field", "baseUz": "dala", "derived": "the fields", "derivedUz": "dalalar", "note": "" },
+          { "base": "play + field", "baseUz": "o'yin + maydon", "derived": "a playing-field", "derivedUz": "sport maydoni", "note": "" },
+          { "base": "a village", "baseUz": "qishloq", "derived": "the village team", "derivedUz": "qishloq jamoasi", "note": "" },
+          { "base": "open + air", "baseUz": "ochiq + havo", "derived": "in the open air", "derivedUz": "ochiq havoda", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "38-betdagi qoliplar.",
+    "patterns": [
+      {
+        "formula": "How often do you + fe'l? — Once/Twice a week. / Never. / Every day.",
+        "exampleEn": "How often do you go to the swimming-pool? — Twice a week.",
+        "exampleUz": "Basseynga qanchalik tez-tez borasiz? — Haftada ikki marta.",
+        "explanationUz": "'How often' — takrorlanishni so'raydi. Javob to'liq gap bo'lishi shart emas."
+      },
+      {
+        "formula": "somebody + fe'l+S + takrorlanish, BUT he/she NEVER + fe'l+S + ...",
+        "exampleEn": "Tony goes to the swimming-pool twice a week, but he never goes to the theatre.",
+        "exampleUz": "Toni haftada ikki marta basseynga boradi, lekin teatrga hech qachon bormaydi.",
+        "explanationUz": "Ijobiy va salbiy odatni 'but' bilan qarama-qarshi qo'yish."
+      },
+      {
+        "formula": "somebody was born ON + kun/sana, IN + yil, AT + soat, AT night / IN the morning.",
+        "exampleEn": "Tom was born on Friday the 22nd of March, in 1957, at half past ten at night.",
+        "exampleUz": "Tom 1957-yil 22-mart, juma kuni kechasi o'n yarimda tug'ilgan.",
+        "explanationUz": "To'rtta predlog bir gapda — har biri o'z qoidasi bo'yicha.\nSana o'qilishida 'the' va 'of' qo'shiladi."
+      },
+      {
+        "formula": "AT + soat, IN + kun qismi, ON + kun nomi.",
+        "exampleEn": "He wakes up at half past four in the morning. On Sundays, Henry relaxes.",
+        "exampleUz": "U ertalab to'rt yarimda uyg'onadi. Yakshanba kunlari Genri dam oladi.",
+        "explanationUz": "Kun NOMI bo'lsa ON, bo'lmasa IN:\n  in the afternoon ↔ ON Saturday afternoons"
+      },
+      {
+        "formula": "somebody goes to + joy + TO + fe'l (maqsad).",
+        "exampleEn": "He goes to the local playing-field to watch the village team play football.",
+        "exampleUz": "U qishloq jamoasining futbolini tomosha qilish uchun mahalliy sport maydoniga boradi.",
+        "explanationUz": "Ikkinchi 'to' MAQSADNI bildiradi ('...ish uchun').\n'watch somebody DO something' — 'to' KERAK EMAS: watch the team PLAY."
+      },
+      {
+        "formula": "fe'l-ING + ... makes me feel + sifat.",
+        "exampleEn": "Working in the open air makes me feel good.",
+        "exampleUz": "Ochiq havoda ishlash o'zimni yaxshi his qildiradi.",
+        "explanationUz": "-ing shakli gap EGASI bo'la oladi.\n'make somebody FEEL' — 'to' KERAK EMAS."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "How often ...?", "uz": "Qanchalik tez-tez ...?" },
+    { "en": "once", "uz": "bir marta" },
+    { "en": "twice", "uz": "ikki marta" },
+    { "en": "three times", "uz": "uch marta" },
+    { "en": "a swimming-pool", "uz": "basseyn" },
+    { "en": "January", "uz": "yanvar" },
+    { "en": "February", "uz": "fevral" },
+    { "en": "March", "uz": "mart" },
+    { "en": "April", "uz": "aprel" },
+    { "en": "May", "uz": "may" },
+    { "en": "June", "uz": "iyun" },
+    { "en": "July", "uz": "iyul" },
+    { "en": "August", "uz": "avgust" },
+    { "en": "September", "uz": "sentabr" },
+    { "en": "October", "uz": "oktabr" },
+    { "en": "November", "uz": "noyabr" },
+    { "en": "December", "uz": "dekabr" },
+    { "en": "a season", "uz": "fasl" },
+    { "en": "spring", "uz": "bahor" },
+    { "en": "summer", "uz": "yoz" },
+    { "en": "the weekend", "uz": "dam olish kunlari" },
+    { "en": "noon", "uz": "tush payti" },
+    { "en": "a date", "uz": "sana" },
+    { "en": "to be born", "uz": "tug'ilmoq" },
+    { "en": "part of day", "uz": "kunning qismi" },
+    { "en": "a farmer", "uz": "dehqon" },
+    { "en": "a farmhouse", "uz": "ferma uyi" },
+    { "en": "to milk the cows", "uz": "sigirlarni sog'moq" },
+    { "en": "to feed the animals", "uz": "hayvonlarni boqmoq" },
+    { "en": "a field", "uz": "dala" },
+    { "en": "a playing-field", "uz": "sport maydoni" },
+    { "en": "a village team", "uz": "qishloq jamoasi" },
+    { "en": "to relax", "uz": "dam olmoq" },
+    { "en": "in the open air", "uz": "ochiq havoda" },
+    { "en": "the way I live", "uz": "yashash tarzim" }
+  ]
+}
