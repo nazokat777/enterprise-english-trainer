@@ -3677,6 +3677,255 @@
    ]
   },
   {
+   "id": "u8-workbook-34-30",
+   "kind": "grammar",
+   "title": "Quantifiers — practice",
+   "titleUz": "Miqdor so'zlari — mashqlar",
+   "book": "workbook",
+   "bookPage": 34,
+   "exercises": [
+    {
+     "ref": "8",
+     "instructionEn": "Fill in how much, how many, a few, a little, some or any.",
+     "instructionUz": "how much, how many, a few, a little, some yoki any qo'ying.",
+     "explanationUz": "ASOSIY JADVAL:\n\n  SANALADIGAN (ko'plik)      SANALMAYDIGAN\n     how many                  how much\n     a few                     a little\n\n  SOME → tasdiq gap, TAKLIF va ILTIMOS savoli\n  ANY  → inkor gap va MA'LUMOT savoli\n\nDIQQAT — 'HOW MUCH ARE ...?' NARX SAVOLI:\n  'How much ARE the sandwiches?' = ular qancha turadi?\n  Narx uchun DOIM 'how much', hatto ot ko'plikda bo'lsa ham.\n  Fe'l esa otga moslashadi: ARE the sandwiches.",
+     "audio": false,
+     "book": "workbook",
+     "bookPage": 34,
+     "bookRef": "Workbook, 34-bet, 8-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  A: ............ apples do you need, sir?",
+       "answer": "How many",
+       "promptUz": "'apples' — ko'plik",
+       "whyUz": "'apples' — SANALADIGAN, KO'PLIKDA → HOW MANY.",
+       "speak": "1  A: ............ apples do you need, sir?"
+      },
+      {
+       "prompt": "1  B: Just ............ , please.",
+       "answer": "a few",
+       "promptUz": "Sanaladigan uchun 'bir nechta'",
+       "whyUz": "SANALADIGAN → A FEW.",
+       "speak": "1  B: Just ............ , please."
+      },
+      {
+       "prompt": "2  A: Would you like ............ milk in your coffee, madam?",
+       "answer": "some",
+       "promptUz": "Bu savol TAKLIF ifodalaydi",
+       "whyUz": "'Would you like ...?' — TAKLIF (offer) → SOME.",
+       "speak": "2  A: Would you like ............ milk in your coffee, madam?"
+      },
+      {
+       "prompt": "2  B: Yes, but only ............ , please.",
+       "answer": "a little",
+       "promptUz": "'milk' sanaladimi?",
+       "whyUz": "'milk' — SANALMAYDIGAN → A LITTLE.\n'only a little' = atigi bir oz.",
+       "speak": "2  B: Yes, but only ............ , please."
+      },
+      {
+       "prompt": "3  A: ............ are the chicken sandwiches?",
+       "answer": "How much",
+       "promptUz": "NARX so'ralmoqda",
+       "whyUz": "NARX so'rash uchun DOIM 'HOW MUCH ...?'\nOt ko'plikda bo'lgani uchun fe'l ARE:\n  'How much ARE the sandwiches?'\nDIQQAT: 'How many are ...?' — narx uchun ISHLATILMAYDI.",
+       "speak": "3  A: ............ are the chicken sandwiches?"
+      },
+      {
+       "prompt": "3  B: I'm sorry. We haven't got ............ chicken sandwiches left.",
+       "answer": "any",
+       "promptUz": "Bu INKOR gap",
+       "whyUz": "INKOR gap ('haven't got') → ANY.\n'left' = qolgan.",
+       "speak": "3  B: I'm sorry. We haven't got ............ chicken sandwiches left."
+      },
+      {
+       "prompt": "4  A: Mum, can I have ............ orange juice?",
+       "answer": "some",
+       "promptUz": "Bu savol ILTIMOS ifodalaydi",
+       "whyUz": "'Can I have ...?' — ILTIMOS (request) → SOME.",
+       "speak": "4  A: Mum, can I have ............ orange juice?"
+      },
+      {
+       "prompt": "4  B: Sorry. There isn't ............ left.",
+       "answer": "any",
+       "promptUz": "Bu INKOR gap",
+       "whyUz": "INKOR gap ('There isn't') → ANY.\n'There isn't any left' = hech narsa qolmadi.",
+       "speak": "4  B: Sorry. There isn't ............ left."
+      },
+      {
+       "prompt": "5  A: John, have we got ............ bananas?",
+       "answer": "any",
+       "promptUz": "Bu MA'LUMOT so'rash savoli",
+       "whyUz": "'Have we got ...?' — MA'LUMOT savoli → ANY.\n2 va 4-band bilan solishtiring: ular taklif/iltimos edi → SOME.",
+       "speak": "5  A: John, have we got ............ bananas?"
+      },
+      {
+       "prompt": "5  B: Yes, but there are only ............ .",
+       "answer": "a few",
+       "promptUz": "'bananas' sanaladimi?",
+       "whyUz": "'bananas' — SANALADIGAN → A FEW.\n'only a few' = atigi bir nechta.",
+       "speak": "5  B: Yes, but there are only ............ ."
+      },
+      {
+       "prompt": "5  B: ............ do we need?",
+       "answer": "How many",
+       "promptUz": "'bananas' haqida savol",
+       "whyUz": "'bananas' — SANALADIGAN → HOW MANY.\nJavob: 'About five' — son bilan, demak sanaladigan.",
+       "speak": "5  B: ............ do we need?"
+      }
+     ]
+    },
+    {
+     "ref": "9",
+     "instructionEn": "Correct the mistakes.",
+     "instructionUz": "Xatolarni to'g'rilang.",
+     "explanationUz": "KITOBDAGI NAMUNA:\n  1  I'd like SOME glass of Coke, please.  →  A\n\nXATO TURLARI:\n\n  1) Miqdor so'zi oldida 'some' ortiqcha\n       some glass → A glass\n\n  2) 'a/an' sanalmaydigan ot bilan\n       an bread → SOME bread\n       a milk → SOME milk\n\n  3) HOW MUCH / HOW MANY noto'g'ri\n       How many does this cost? → How MUCH\n       How much cherries? → How MANY\n       How many sugar? → How MUCH\n\n  4) MUCH / MANY noto'g'ri\n       much tomatoes → MANY tomatoes\n\n  5) 'many' o'rniga 'some' kerak\n       many fish → SOME fish\n\n  6) Sanaladigan BIRLIK oldida 'some'\n       some orange → AN orange\n       some apple → AN apple",
+     "audio": false,
+     "book": "workbook",
+     "bookPage": 34,
+     "bookRef": "Workbook, 34-bet, 9-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "2  Would you like an bread? → ............",
+       "answer": "some",
+       "promptUz": "'bread' sanaladimi?",
+       "whyUz": "'bread' — SANALMAYDIGAN → 'an' ISHLATILMAYDI.\nTAKLIF savoli → SOME bread.",
+       "speak": "2  Would you like an bread? → ............"
+      },
+      {
+       "prompt": "3  How many does this cost? → ............",
+       "answer": "How much",
+       "promptUz": "NARX so'ralmoqda",
+       "whyUz": "NARX uchun DOIM 'How MUCH does it cost?'\n'How many' — son uchun.",
+       "speak": "3  How many does this cost? → ............"
+      },
+      {
+       "prompt": "4  We haven't got much tomatoes. → ............",
+       "answer": "many",
+       "promptUz": "'tomatoes' sanaladimi?",
+       "whyUz": "'tomatoes' — SANALADIGAN, KO'PLIKDA → MANY.\n'much' faqat sanalmaydigan otlar bilan.",
+       "speak": "4  We haven't got much tomatoes. → ............"
+      },
+      {
+       "prompt": "5  I'd like a milk in my tea, please. → ............",
+       "answer": "some",
+       "promptUz": "'milk' sanaladimi?",
+       "whyUz": "'milk' — SANALMAYDIGAN → 'a' ISHLATILMAYDI.\nTASDIQ gap → SOME milk.\n(Yoki: 'a little milk' — 8-mashqning 2-bandi kabi.)",
+       "speak": "5  I'd like a milk in my tea, please. → ............"
+      },
+      {
+       "prompt": "6  Could I have some orange, please? → ............",
+       "answer": "an",
+       "promptUz": "Bitta meva — sanaladigan birlik",
+       "whyUz": "'an orange' — SANALADIGAN BIRLIK (bitta apelsin).\nUnli tovush → AN.\nDIQQAT: 'some orange JUICE' bo'lsa to'g'ri bo'lardi —\nlekin bu yerda faqat 'orange' bor.",
+       "speak": "6  Could I have some orange, please? → ............"
+      },
+      {
+       "prompt": "7  How much cherries do you need? → ............",
+       "answer": "How many",
+       "promptUz": "'cherries' sanaladimi?",
+       "whyUz": "'cherries' — SANALADIGAN, KO'PLIKDA → HOW MANY.",
+       "speak": "7  How much cherries do you need? → ............"
+      },
+      {
+       "prompt": "8  I'd like many fish for lunch. → ............",
+       "answer": "some",
+       "promptUz": "TASDIQ gapda 'many' o'rniga nima?",
+       "whyUz": "TASDIQ gapda 'many' odatda ISHLATILMAYDI → SOME.\n'fish' — ovqat sifatida SANALMAYDIGAN.\nTo'g'ri gap: I'd like SOME fish for lunch.",
+       "speak": "8  I'd like many fish for lunch. → ............"
+      },
+      {
+       "prompt": "9  How many sugar have we got? → ............",
+       "answer": "How much",
+       "promptUz": "'sugar' sanaladimi?",
+       "whyUz": "'sugar' — SANALMAYDIGAN → HOW MUCH.",
+       "speak": "9  How many sugar have we got? → ............"
+      },
+      {
+       "prompt": "10  I'd like some apple, please. → ............",
+       "answer": "an",
+       "promptUz": "Bitta meva — sanaladigan birlik",
+       "whyUz": "'an apple' — SANALADIGAN BIRLIK.\nUnli tovush → AN.\n6-band bilan bir xil xato turi.",
+       "speak": "10  I'd like some apple, please. → ............"
+      }
+     ]
+    },
+    {
+     "ref": "10",
+     "instructionEn": "Tick the correct sentences.",
+     "instructionUz": "To'g'ri gaplarni belgilang.",
+     "explanationUz": "HAR JUFTLIKDA FAQAT BITTASI TO'G'RI.\n\nTEKSHIRILADIGAN QOIDALAR:\n  • TAKLIF savolida 'Would you like' (Do you like emas)\n  • Savolda 'anything' (something emas)\n  • Rad etishda 'I don't like ...'\n  • 'I like + sanalmaydigan/umumiy ot' (birlik)\n  • NARX uchun 'How much'\n  • Savolda DO/DOES yordamchi fe'li shart\n  • INKOR gapda ANY\n\nKITOBDA BERILGAN: 1a to'g'ri.",
+     "audio": false,
+     "book": "workbook",
+     "bookPage": 34,
+     "bookRef": "Workbook, 34-bet, 10-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "2  Qaysi biri to'g'ri?",
+       "answer": "b  Is there anything to drink?",
+       "promptUz": "Savolda qaysi olmosh?",
+       "options": [
+        "b  Is there anything to drink?",
+        "a  Is there something to drink?"
+       ],
+       "whyUz": "SAVOLDA 'anything' ishlatiladi ('something' emas).\nCoursebook 56-betda ham shu ibora bor edi.\n'something' — TASDIQ gapda: 'There is something to drink.'"
+      },
+      {
+       "prompt": "3  Qaysi biri to'g'ri?",
+       "answer": "a  No thanks. I don't like fish.",
+       "promptUz": "Taklifni rad etish",
+       "options": [
+        "a  No thanks. I don't like fish.",
+        "b  I wouldn't like fish."
+       ],
+       "whyUz": "Rad etishda SABAB 'I don't like ...' bilan aytiladi.\n'I wouldn't like fish' — tabiiy ingliz tilida ishlatilmaydi.\nCoursebook 56-betdagi dialoglarda ham 'I don't like ...' bor edi."
+      },
+      {
+       "prompt": "4  Qaysi biri to'g'ri?",
+       "answer": "b  I like pizza.",
+       "promptUz": "Umumiy yoqtirish",
+       "options": [
+        "b  I like pizza.",
+        "a  I'd like pizzas."
+       ],
+       "whyUz": "'I like pizza' = pitsani yoqtiraman (umuman) — TO'G'RI.\n'I'd like pizzas' — buyurtmada 'some pizzas' yoki 'a pizza' bo'lishi kerak,\nyalang'och ko'plik ishlatilmaydi."
+      },
+      {
+       "prompt": "5  Qaysi biri to'g'ri?",
+       "answer": "b  How much is that?",
+       "promptUz": "Narx so'rash",
+       "options": [
+        "b  How much is that?",
+        "a  How many is that?"
+       ],
+       "whyUz": "NARX uchun DOIM 'How much is that?'\nCoursebook 56-betdagi do'kon dialogida ham bor edi."
+      },
+      {
+       "prompt": "6  Qaysi biri to'g'ri?",
+       "answer": "b  How much does it cost?",
+       "promptUz": "Savol tuzilishi",
+       "options": [
+        "b  How much does it cost?",
+        "a  How much it costs?"
+       ],
+       "whyUz": "Present Simple savolida DOES yordamchi fe'li SHART.\n'does' bor bo'lsa asosiy fe'lga -S QO'ShILMAYDI: 'does it COST'."
+      },
+      {
+       "prompt": "7  Qaysi biri to'g'ri?",
+       "answer": "a  There isn't any Coke in the fridge.",
+       "promptUz": "Inkor gap",
+       "options": [
+        "a  There isn't any Coke in the fridge.",
+        "b  There isn't some Coke in the fridge."
+       ],
+       "whyUz": "INKOR gapda ANY ishlatiladi.\n'There isn't SOME' XATO."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u8-coursebook-59-15",
    "kind": "pronunciation",
    "title": "Pronunciation — /s/, /z/ and /ɪz/",
@@ -4725,6 +4974,194 @@
        "answer": "The steak is a bit tough, but the sauce is nice.",
        "promptUz": "'qattiq bifshteks' iborasi bilan gap tuzing",
        "speak": "tough steak"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u8-workbook-34-31",
+   "kind": "communication",
+   "title": "Communication — Ordering Food",
+   "titleUz": "Muloqot — Ovqat buyurtma qilish",
+   "book": "workbook",
+   "bookPage": 34,
+   "exercises": [
+    {
+     "ref": "11a",
+     "instructionEn": "Look at the restaurant menu and fill in drinks, starters, desserts and main courses.",
+     "instructionUz": "Restoran menyusiga qarang va drinks, starters, desserts hamda main courses so'zlarini qo'ying.",
+     "explanationUz": "MENYU TO'RT BO'LIMDAN IBORAT:\n\n  STARTERS (birinchi taomlar):\n     Tomato soup      £2.50\n     Onion soup       £2.50\n     Garden salad     £3.00\n\n  MAIN COURSES (asosiy taomlar):\n     Grilled fish with rice        £4.99\n     Pepper steak with potatoes    £7.00\n     Roast chicken with carrots    £5.75\n\n  DESSERTS (shirinliklar):\n     Ice-cream                 £2.75\n     Apple pie                 £2.75\n     Strawberries and cream    £3.00\n\n  DRINKS (ichimliklar):\n     Wine             £2.00\n     Beer             £2.00\n     Mineral water    £1.50\n     Coffee           £1.50\n\nOVQAT TARTIBI (Britaniya restoranida):\n  1) starter — yengil birinchi taom (sho'rva, salat)\n  2) main course — asosiy taom (go'sht, baliq)\n  3) dessert — shirinlik\n  4) drinks — ichimlik (ovqat davomida)",
+     "audio": false,
+     "book": "workbook",
+     "bookPage": 34,
+     "bookRef": "Workbook, 34-bet, 11a-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1-bo'lim: Tomato soup £2.50, Onion soup £2.50, Garden salad £3.00",
+       "answer": "Starters",
+       "promptUz": "Yengil birinchi taomlar — sho'rva va salat",
+       "whyUz": "'a starter' = birinchi taom (asosiy taomdan OLDIN).\nSho'rva va salat — tipik starterlar.\nCoursebook 59-betda ham bor edi: 'To start with I'd like the tomato soup.'",
+       "speak": "1-bo'lim: Tomato soup £2.50, Onion soup £2.50, Garden salad £3.00"
+      },
+      {
+       "prompt": "2-bo'lim: Grilled fish with rice £4.99, Pepper steak with potatoes £7.00, Roast chicken with carrots £5.75",
+       "answer": "Main courses",
+       "promptUz": "Eng to'yimli va qimmat taomlar",
+       "whyUz": "'a main course' = asosiy (ikkinchi) taom.\nGo'sht va baliq taomlari — eng qimmat bo'limi.\nCoursebook 59-betda: 'And for the main course?'",
+       "speak": "2-bo'lim: Grilled fish with rice £4.99, Pepper steak with potatoes £7.00, Roast chicken with carrots £5.75"
+      },
+      {
+       "prompt": "3-bo'lim: Ice-cream £2.75, Apple pie £2.75, Strawberries and cream £3.00",
+       "answer": "Desserts",
+       "promptUz": "Ovqatdan keyingi shirinliklar",
+       "whyUz": "'a dessert' /dɪˈzɜːt/ = shirinlik.\nMuzqaymoq, pirog, qulupnay — hammasi shirinlik.",
+       "speak": "3-bo'lim: Ice-cream £2.75, Apple pie £2.75, Strawberries and cream £3.00"
+      },
+      {
+       "prompt": "4-bo'lim: Wine £2.00, Beer £2.00, Mineral water £1.50, Coffee £1.50",
+       "answer": "Drinks",
+       "promptUz": "Ichimliklar",
+       "whyUz": "'drinks' = ichimliklar.\nHammasi SANALMAYDIGAN otlar, lekin menyuda porsiya sifatida sotiladi.",
+       "speak": "4-bo'lim: Wine £2.00, Beer £2.00, Mineral water £1.50, Coffee £1.50"
+      }
+     ]
+    },
+    {
+     "ref": "11b",
+     "instructionEn": "Fill in the questions, then, in pairs, act out similar dialogues.",
+     "instructionUz": "Savollarni qo'ying, so'ng juftlikda shunga o'xshash dialoglar tuzing.",
+     "explanationUz": "SAVOLLAR RO'YXATI:\n  And for the main course\n  What would you like to drink\n  Would you like some dessert\n  What would you like to start\n\nDIALOG (to'ldirilgan holda):\n  W: WHAT WOULD YOU LIKE TO START?\n  C: I'd like a garden salad, please.\n  W: Okay. AND FOR THE MAIN COURSE?\n  C: Can I have the roast chicken with carrots, please?\n  W: Excellent choice. WOULD YOU LIKE SOME DESSERT?\n  C: I'll have some apple pie, please.\n  W: WHAT WOULD YOU LIKE TO DRINK?\n  C: A cup of coffee, please.\n  W: Thank you, sir.\n\nO'ZBEKCHA TARJIMASI:\n  W: Birinchi taomga nima olasiz?\n  C: Bog' salatini olsam, iltimos.\n  W: Yaxshi. Asosiy taomga-chi?\n  C: Sabzili qovurilgan tovuq olsam bo'ladimi?\n  W: Ajoyib tanlov. Shirinlik xohlaysizmi?\n  C: Olmali pirogdan olaman, iltimos.\n  W: Nima ichasiz?\n  C: Bir piyola qahva, iltimos.\n  W: Rahmat, janob.\n\nW = the waiter (ofitsiant)\nC = the customer (mijoz)\n\nSAVOLLAR TARTIBI MENYU TARTIBI BILAN BIR XIL:\n  starter → main course → dessert → drink\n\nYANGI IBORA:\n  Excellent choice! = Ajoyib tanlov!\n  I'll have ... = Men ... olaman (buyurtma berish)",
+     "audio": false,
+     "book": "workbook",
+     "bookPage": 34,
+     "bookRef": "Workbook, 34-bet, 11b-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "W: 1) ............ ?",
+       "answer": "What would you like to start",
+       "promptUz": "Javob: 'I'd like a garden salad' — bu qaysi bo'lim?",
+       "whyUz": "Javob SALAT — bu STARTER (birinchi taom).\n'What would you like to start?' = birinchi taomga nima olasiz?"
+      },
+      {
+       "prompt": "W: Okay. 2) ............ ?",
+       "answer": "And for the main course",
+       "promptUz": "Javob: qovurilgan tovuq — bu qaysi bo'lim?",
+       "whyUz": "Javob QOVURILGAN TOVUQ — bu MAIN COURSE.\n'And for the main course?' — Coursebook 59-betda ham bor edi.",
+       "speak": "W: Okay. 2) ............ ?"
+      },
+      {
+       "prompt": "W: Excellent choice. 3) ............ ?",
+       "answer": "Would you like some dessert",
+       "promptUz": "Javob: olmali pirog — bu qaysi bo'lim?",
+       "whyUz": "Javob OLMALI PIROG — bu DESSERT.\nTAKLIF savoli → 'Would you like SOME dessert?'",
+       "speak": "W: Excellent choice. 3) ............ ?"
+      },
+      {
+       "prompt": "W: 4) ............ ?",
+       "answer": "What would you like to drink",
+       "promptUz": "Javob: bir piyola qahva",
+       "whyUz": "Javob QAHVA — bu DRINK.\n'What would you like to drink?' = nima ichasiz?"
+      }
+     ]
+    },
+    {
+     "ref": "11c",
+     "instructionEn": "Then, in pairs, act out similar dialogues.",
+     "instructionUz": "So'ng juftlikda shunga o'xshash dialoglar tuzing.",
+     "explanationUz": "MENYUDAGI BOSHQA TAOMLARDAN FOYDALANING:\n  Starters: tomato soup, onion soup, garden salad\n  Main courses: grilled fish with rice,\n                pepper steak with potatoes,\n                roast chicken with carrots\n  Desserts: ice-cream, apple pie, strawberries and cream\n  Drinks: wine, beer, mineral water, coffee\n\nBUYURTMA BERISH SHAKLLARI (hammasi to'g'ri):\n  I'd like ... , please.\n  Can I have ... , please?\n  I'll have ... , please.",
+     "audio": false,
+     "book": "workbook",
+     "bookPage": 34,
+     "bookRef": "Workbook, 34-bet, 11-mashq (davomi)",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "tomato soup → pepper steak → ice-cream → wine",
+       "answer": "What would you like to start? — And for the main course? — Would you like some dessert? — What would you like to drink?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "Jami: £2.50 + £7.00 + £2.75 + £2.00 = £14.25\n'a glass of wine' — miqdor iborasi.",
+       "speak": "tomato soup → pepper steak → ice-cream → wine"
+      },
+      {
+       "prompt": "tomato soup → pepper steak → ice-cream → wine",
+       "answer": "I'd like the tomato soup, please. — Can I have the pepper steak with potatoes, please? — I'll have some ice-cream, please. — A glass of wine, please.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "Jami: £2.50 + £7.00 + £2.75 + £2.00 = £14.25\n'a glass of wine' — miqdor iborasi.",
+       "speak": "tomato soup → pepper steak → ice-cream → wine"
+      },
+      {
+       "prompt": "onion soup → grilled fish → strawberries and cream → mineral water",
+       "answer": "What would you like to start? — And for the main course? — Would you like some dessert? — What would you like to drink?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "Jami: £2.50 + £4.99 + £3.00 + £1.50 = £11.99\n'strawberries and cream' — turg'un birikma (32-bet).",
+       "speak": "onion soup → grilled fish → strawberries and cream → mineral water"
+      },
+      {
+       "prompt": "onion soup → grilled fish → strawberries and cream → mineral water",
+       "answer": "I'd like the onion soup, please. — Can I have the grilled fish with rice, please? — I'll have some strawberries and cream, please. — A bottle of mineral water, please.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "Jami: £2.50 + £4.99 + £3.00 + £1.50 = £11.99\n'strawberries and cream' — turg'un birikma (32-bet).",
+       "speak": "onion soup → grilled fish → strawberries and cream → mineral water"
+      },
+      {
+       "prompt": "garden salad → roast chicken → apple pie → beer",
+       "answer": "What would you like to start? — And for the main course? — Would you like some dessert? — What would you like to drink?",
+       "promptUz": "Savol tuzing",
+       "whyUz": "Jami: £3.00 + £5.75 + £2.75 + £2.00 = £13.50\nEng arzon variant emas, lekin muvozanatli.",
+       "speak": "garden salad → roast chicken → apple pie → beer"
+      },
+      {
+       "prompt": "garden salad → roast chicken → apple pie → beer",
+       "answer": "I'd like a garden salad, please. — Can I have the roast chicken with carrots, please? — I'll have some apple pie, please. — A beer, please.",
+       "promptUz": "Javob tuzing",
+       "whyUz": "Jami: £3.00 + £5.75 + £2.75 + £2.00 = £13.50\nEng arzon variant emas, lekin muvozanatli.",
+       "speak": "garden salad → roast chicken → apple pie → beer"
+      }
+     ]
+    },
+    {
+     "ref": "12",
+     "instructionEn": "The following dialogue is in jumbled order. Put the sentences in the correct order, then act out the dialogue.",
+     "instructionUz": "Quyidagi dialog aralashtirib berilgan. Gaplarni to'g'ri tartibda joylashtiring, so'ng dialogni sahnalashtiring.",
+     "explanationUz": "ARALASHTIRILGAN GAPLAR:\n  B: Thank you.\n  B: Good evening. Have you got a table for four?\n  A: Would you like to see the menu?\n  A: Good evening, sir.\n  B: Yes, please.\n  A: Yes, sir. Over here, near the fireplace.\n\nQANDAY TARTIBLASH:\n  1) Kim BIRINCHI gapiradi? — ofitsiant salomlashadi\n  2) Har bir gap oldingisiga JAVOB bo'lishi kerak\n  3) A va B navbat bilan gapiradi\n\nTO'G'RI TARTIB:\n  1  A: Good evening, sir.\n  2  B: Good evening. Have you got a table for four?\n  3  A: Yes, sir. Over here, near the fireplace.\n  4  B: Thank you.\n  5  A: Would you like to see the menu?\n  6  B: Yes, please.\n\nMANTIQ:\n  salomlashish → stol so'rash → stol ko'rsatish →\n  rahmat → menyu taklif qilish → rozilik\n\nA = the waiter (ofitsiant)\nB = the customer (mijoz)\n\nYANGI SO'ZLAR:\n  Over here = mana bu yerda\n  a fireplace = kamin (Grammar Book 28-betda ham bor edi)",
+     "audio": false,
+     "book": "workbook",
+     "bookPage": 34,
+     "bookRef": "Workbook, 34-bet, 12-mashq",
+     "kind": "match",
+     "tasks": [
+      {
+       "left": "1-o'rin",
+       "right": "A: Good evening, sir.",
+       "note": "Xayrli kech, janob."
+      },
+      {
+       "left": "2-o'rin",
+       "right": "B: Good evening. Have you got a table for four?",
+       "note": "Xayrli kech. To'rt kishilik stolingiz bormi?"
+      },
+      {
+       "left": "3-o'rin",
+       "right": "A: Yes, sir. Over here, near the fireplace.",
+       "note": "Ha, janob. Mana bu yerda, kamin yonida."
+      },
+      {
+       "left": "4-o'rin",
+       "right": "B: Thank you.",
+       "note": "Rahmat."
+      },
+      {
+       "left": "5-o'rin",
+       "right": "A: Would you like to see the menu?",
+       "note": "Menyuni ko'rmoqchimisiz?"
+      },
+      {
+       "left": "6-o'rin",
+       "right": "B: Yes, please.",
+       "note": "Ha, iltimos."
       }
      ]
     }
@@ -9578,6 +10015,207 @@
    ],
    "book": "workbook",
    "bookPage": 33
+  },
+  {
+   "ruleUz": "Menyu bo'limlari (ovqat tartibi bo'yicha)",
+   "explanationUz": "Britaniya restoranida ovqat shu tartibda beriladi.",
+   "items": [
+    {
+     "base": "a starter",
+     "baseUz": "birinchi taom",
+     "derived": "soup, salad",
+     "derivedUz": "yengil, kichik porsiya",
+     "note": "amerikacha: appetizer"
+    },
+    {
+     "base": "a main course",
+     "baseUz": "asosiy taom",
+     "derived": "steak, fish, chicken",
+     "derivedUz": "eng to'yimli",
+     "note": ""
+    },
+    {
+     "base": "a dessert",
+     "baseUz": "shirinlik",
+     "derived": "ice-cream, apple pie",
+     "derivedUz": "oxirida",
+     "note": "/dɪˈzɜːt/"
+    },
+    {
+     "base": "drinks",
+     "baseUz": "ichimliklar",
+     "derived": "wine, beer, water, coffee",
+     "derivedUz": "ovqat davomida",
+     "note": ""
+    },
+    {
+     "base": "a side dish",
+     "baseUz": "garnir",
+     "derived": "chips, rice, salad",
+     "derivedUz": "asosiy taom bilan",
+     "note": "menyuda yo'q"
+    }
+   ],
+   "book": "workbook",
+   "bookPage": 34
+  },
+  {
+   "ruleUz": "Buyurtma berish shakllari",
+   "explanationUz": "Uchalasi ham to'g'ri va muloyim.",
+   "items": [
+    {
+     "base": "I'd like ...",
+     "baseUz": "Men ... olsam deb edim",
+     "derived": "= I would like",
+     "derivedUz": "eng keng tarqalgan",
+     "note": ""
+    },
+    {
+     "base": "Can I have ...?",
+     "baseUz": "... olsam bo'ladimi?",
+     "derived": "savol shaklida",
+     "derivedUz": "iltimos",
+     "note": ""
+    },
+    {
+     "base": "I'll have ...",
+     "baseUz": "Men ... olaman",
+     "derived": "= I will have",
+     "derivedUz": "qaror qilingandan keyin",
+     "note": "restoranda ko'p"
+    },
+    {
+     "base": "Could I have ...?",
+     "baseUz": "... olsam bo'ladimi?",
+     "derived": "muloyimroq",
+     "derivedUz": "",
+     "note": ""
+    }
+   ],
+   "book": "workbook",
+   "bookPage": 34
+  },
+  {
+   "ruleUz": "Restoranga kirishdagi iboralar",
+   "explanationUz": "12-mashqdagi dialog iboralar.",
+   "items": [
+    {
+     "base": "Good evening, sir/madam.",
+     "baseUz": "Xayrli kech, janob/xonim.",
+     "derived": "OFITSIANT",
+     "derivedUz": "salomlashish",
+     "note": ""
+    },
+    {
+     "base": "Have you got a table for four?",
+     "baseUz": "To'rt kishilik stolingiz bormi?",
+     "derived": "MIJOZ",
+     "derivedUz": "stol so'rash",
+     "note": ""
+    },
+    {
+     "base": "Over here, near the ...",
+     "baseUz": "Mana bu yerda, ... yonida",
+     "derived": "OFITSIANT",
+     "derivedUz": "joy ko'rsatish",
+     "note": ""
+    },
+    {
+     "base": "Would you like to see the menu?",
+     "baseUz": "Menyuni ko'rmoqchimisiz?",
+     "derived": "OFITSIANT",
+     "derivedUz": "menyu taklifi",
+     "note": ""
+    },
+    {
+     "base": "Excellent choice!",
+     "baseUz": "Ajoyib tanlov!",
+     "derived": "OFITSIANT",
+     "derivedUz": "maqtov",
+     "note": ""
+    },
+    {
+     "base": "a fireplace",
+     "baseUz": "kamin",
+     "derived": "near the fireplace",
+     "derivedUz": "joy belgisi",
+     "note": ""
+    }
+   ],
+   "book": "workbook",
+   "bookPage": 34
+  },
+  {
+   "ruleUz": "SOMETHING va ANYTHING",
+   "explanationUz": "SOME/ANY qoidasi bu olmoshlarga ham tegishli.",
+   "items": [
+    {
+     "base": "something",
+     "baseUz": "biror narsa",
+     "derived": "TASDIQ gapda",
+     "derivedUz": "There is something to eat.",
+     "note": ""
+    },
+    {
+     "base": "anything",
+     "baseUz": "biror narsa",
+     "derived": "SAVOL va INKORDA",
+     "derivedUz": "Is there anything to drink?",
+     "note": ""
+    },
+    {
+     "base": "somebody / someone",
+     "baseUz": "kimdir",
+     "derived": "TASDIQ gapda",
+     "derivedUz": "Somebody is here.",
+     "note": ""
+    },
+    {
+     "base": "anybody / anyone",
+     "baseUz": "kimdir",
+     "derived": "SAVOL va INKORDA",
+     "derivedUz": "Is anybody here?",
+     "note": ""
+    }
+   ],
+   "book": "workbook",
+   "bookPage": 34
+  },
+  {
+   "ruleUz": "Narx savollari",
+   "explanationUz": "Hammasida 'how much' ishlatiladi.",
+   "items": [
+    {
+     "base": "How much is it?",
+     "baseUz": "Qancha turadi?",
+     "derived": "bitta narsa",
+     "derivedUz": "'be' bilan",
+     "note": ""
+    },
+    {
+     "base": "How much are they?",
+     "baseUz": "Ular qancha turadi?",
+     "derived": "bir necha narsa",
+     "derivedUz": "'be' ko'plikda",
+     "note": ""
+    },
+    {
+     "base": "How much does it cost?",
+     "baseUz": "Qancha turadi?",
+     "derived": "'cost' fe'li bilan",
+     "derivedUz": "DOES shart",
+     "note": ""
+    },
+    {
+     "base": "How much is that?",
+     "baseUz": "Hammasi qancha bo'ladi?",
+     "derived": "jami hisob",
+     "derivedUz": "kassada",
+     "note": ""
+    }
+   ],
+   "book": "workbook",
+   "bookPage": 34
   }
  ],
  "sentencePatterns": [
@@ -10172,6 +10810,54 @@
    "explanationUz": "MA'LUMOT so'rash savolida ANY.\nFe'l otning turiga qarab tanlanadi.",
    "book": "workbook",
    "bookPage": 33
+  },
+  {
+   "formula": "How much ARE + ko'plik ot?  (narx savoli)",
+   "exampleEn": "How much are the chicken sandwiches?",
+   "exampleUz": "Tovuqli sendvichlar qancha turadi?",
+   "explanationUz": "NARX uchun DOIM 'how much', hatto ot ko'plikda bo'lsa ham.\nFe'l esa otga moslashadi: ARE.",
+   "book": "workbook",
+   "bookPage": 34
+  },
+  {
+   "formula": "There isn't ANY + ot + LEFT.",
+   "exampleEn": "Sorry. There isn't any left. We haven't got any chicken sandwiches left.",
+   "exampleUz": "Kechirasiz. Hech narsa qolmadi. Tovuqli sendvich qolmadi.",
+   "explanationUz": "'left' = qolgan (gap OXIRIDA).\nINKOR gapda ANY.",
+   "book": "workbook",
+   "bookPage": 34
+  },
+  {
+   "formula": "What would you like TO START / TO DRINK?",
+   "exampleEn": "What would you like to start? What would you like to drink?",
+   "exampleUz": "Birinchi taomga nima olasiz? Nima ichasiz?",
+   "explanationUz": "'would like TO + fe'l' — 'to' SHART.",
+   "book": "workbook",
+   "bookPage": 34
+  },
+  {
+   "formula": "And for the MAIN COURSE?  /  Would you like some DESSERT?",
+   "exampleEn": "And for the main course? Would you like some dessert?",
+   "exampleUz": "Asosiy taomga-chi? Shirinlik xohlaysizmi?",
+   "explanationUz": "Menyu bo'limlari bo'yicha ketma-ket so'raladi.",
+   "book": "workbook",
+   "bookPage": 34
+  },
+  {
+   "formula": "Have you got a table FOR + son?",
+   "exampleEn": "Have you got a table for four?",
+   "exampleUz": "To'rt kishilik stolingiz bormi?",
+   "explanationUz": "'FOR + son' — necha kishilik ekanini bildiradi.",
+   "book": "workbook",
+   "bookPage": 34
+  },
+  {
+   "formula": "Is there ANYTHING to eat/drink?  (savolda anything)",
+   "exampleEn": "Is there anything to drink?",
+   "exampleUz": "Ichgani bir narsa bormi?",
+   "explanationUz": "SAVOLDA 'anything', TASDIQDA 'something'.",
+   "book": "workbook",
+   "bookPage": 34
   }
  ],
  "vocabulary": [
@@ -11258,6 +11944,82 @@
   {
    "en": "cartons",
    "uz": "qog'oz paketlar"
+  },
+  {
+   "en": "left (qolgan)",
+   "uz": "qolgan"
+  },
+  {
+   "en": "a chicken sandwich",
+   "uz": "tovuqli sendvich"
+  },
+  {
+   "en": "a starter",
+   "uz": "birinchi taom"
+  },
+  {
+   "en": "a dessert",
+   "uz": "shirinlik"
+  },
+  {
+   "en": "drinks",
+   "uz": "ichimliklar"
+  },
+  {
+   "en": "onion soup",
+   "uz": "piyoz sho'rvasi"
+  },
+  {
+   "en": "garden salad",
+   "uz": "bog' salati"
+  },
+  {
+   "en": "grilled fish with rice",
+   "uz": "guruch bilan panjarada pishirilgan baliq"
+  },
+  {
+   "en": "pepper steak with potatoes",
+   "uz": "kartoshka bilan qalampirli bifshteks"
+  },
+  {
+   "en": "roast chicken with carrots",
+   "uz": "sabzi bilan qovurilgan tovuq"
+  },
+  {
+   "en": "strawberries and cream",
+   "uz": "qulupnay va qaymoq"
+  },
+  {
+   "en": "Excellent choice!",
+   "uz": "Ajoyib tanlov!"
+  },
+  {
+   "en": "I'll have ...",
+   "uz": "Men ... olaman"
+  },
+  {
+   "en": "jumbled order",
+   "uz": "aralashtirilgan tartib"
+  },
+  {
+   "en": "a table for four",
+   "uz": "to'rt kishilik stol"
+  },
+  {
+   "en": "Over here",
+   "uz": "Mana bu yerda"
+  },
+  {
+   "en": "a fireplace",
+   "uz": "kamin"
+  },
+  {
+   "en": "anything",
+   "uz": "biror narsa (savol/inkorda)"
+  },
+  {
+   "en": "something",
+   "uz": "biror narsa (tasdiqda)"
   }
  ]
 }
