@@ -1,0 +1,252 @@
+{
+  "book": "workbook",
+  "pdfPage": 10,
+  "bookPage": 9,
+  "unit": 2,
+  "unitTitle": "A Friend in Need ...",
+  "module": 1,
+  "pairsWith": {
+    "coursebook": [12, 13, 14],
+    "grammar": [9, 11],
+    "noteUz": "Tavsif jadvali coursebook 13-bet Speaking mashqiga, savol tuzish esa grammar 11-bet Ex.7 ga mos keladi."
+  },
+  "scanNote": {
+    "uz": "DIQQAT: skanerlangan nusxada qo'lyozma javoblar bor va ularda KO'P XATO mavjud — ayniqsa Ex.5 da so'z tartibi. Quyida to'g'ri javoblar; xatolar 'commonMistake' sifatida izohlangan."
+  },
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "Reading — describing people",
+      "titleUz": "O'qish — odamlarni tasvirlash",
+      "exercises": [
+        {
+          "ref": "4a",
+          "type": "picture_choice",
+          "instructionEn": "Read the following paragraphs and match them to the pictures.",
+          "instructionUz": "Quyidagi xatboshilarni o'qing va rasmlarga moslang.",
+          "explanationUz": "Har xatboshida 5 ta belgi bor: yosh, bo'y, gavda, soch, yuz.\nRasmga moslashda ENG ANIQ belgidan boshlang:\n\n  • Kim — 'slanting eyes' (qiyshiq ko'z)\n  • Ian — 'a beard and a moustache' (soqol va mo'ylov)\n  • Robert — 'seventy years old' (eng keksa)\n  • Peter — 'tall and well-built' (baland va baquvvat)\n\nBitta noyob belgi topilsa, qolganini tekshirish oson.",
+          "bookRef": "Workbook, 9-bet — 1–4 rasmlar",
+          "options": ["1", "2", "3", "4"],
+          "answers": [
+            {
+              "picture": "a",
+              "country": "2",
+              "descEn": "Peter — twenty, young, tall and well-built, short curly hair, full lips, a wide flattish nose",
+              "descUz": "Peter — 20 yosh, baland va baquvvat, kalta jingalak soch"
+            },
+            {
+              "picture": "b",
+              "country": "1",
+              "descEn": "Kim — twenty-two, young, short and slim, long straight hair, slanting eyes, a small nose",
+              "descUz": "Kim — 22 yosh, past va nozik, uzun tekis soch, qiyshiq ko'z"
+            },
+            {
+              "picture": "c",
+              "country": "4",
+              "descEn": "Robert — seventy, old, short and slim, short white hair, thin lips, a big nose",
+              "descUz": "Robert — 70 yosh, keksa, kalta oq soch, ingichka lab, katta burun"
+            },
+            {
+              "picture": "d",
+              "country": "3",
+              "descEn": "Ian — fifty-two, middle-aged, of medium height and fat, grey straight hair, a beard and a moustache, a large nose, full lips",
+              "descUz": "Ian — 52 yosh, o'rta yoshli, o'rta bo'yli va semiz, kulrang tekis soch, soqol va mo'ylov"
+            }
+          ]
+        },
+        {
+          "ref": "4b",
+          "type": "table_fill",
+          "instructionEn": "Read the paragraphs again and fill in the tables, as in the example.",
+          "instructionUz": "Xatboshilarni qayta o'qing va jadvallarni to'ldiring.",
+          "explanationUz": "Jadvalda 7 qator bor. Har qatorga matndan mos ma'lumot yoziladi.\n\n'Other Characteristics' (boshqa belgilar) — matnda alohida aytilgan,\nboshqa qatorlarga sig'maydigan narsa:\n  • Kim   — slanting eyes\n  • Ian   — a beard and a moustache\n  • Robert — (matnda qo'shimcha belgi yo'q)\n  • Peter — (matnda qo'shimcha belgi yo'q)",
+          "columns": ["Name", "Age", "Height", "Build", "Hair", "Nose", "Lips", "Other Characteristics"],
+          "columnsUz": ["Ism", "Yosh", "Bo'y", "Gavda", "Soch", "Burun", "Lab", "Boshqa belgilar"],
+          "rows": [
+            {
+              "name": "Kim",
+              "given": true,
+              "cells": ["Kim", "22", "short", "slim", "long, straight", "small", "full", "slanting eyes"]
+            },
+            {
+              "name": "Peter",
+              "given": false,
+              "cells": ["Peter", "20", "tall", "well-built", "short curly", "wide flattish", "full", "—"]
+            },
+            {
+              "name": "Ian",
+              "given": false,
+              "cells": ["Ian", "52", "medium height", "fat", "grey straight", "large", "full", "a beard and a moustache"],
+              "commonMistake": {
+                "wrong": "Hair: 'short white' · Nose: 'largue' · Height: 'medium heigth' · Other: 'used cap'",
+                "whyUz": "To'rt xato:\n1) Soch — matnda 'grey straight hair' (kulrang tekis), 'short white' emas. Bu Robertning sochi.\n2) 'largue' — imlo xatosi. To'g'risi: LARGE.\n3) 'heigth' — harflar o'rni almashgan. To'g'risi: HEIGHT.\n4) 'used cap' — matnda bunday narsa yo'q. To'g'risi: A BEARD AND A MOUSTACHE."
+              }
+            },
+            {
+              "name": "Robert",
+              "given": false,
+              "cells": ["Robert", "70", "short", "slim", "short white", "big", "thin", "—"],
+              "commonMistake": {
+                "wrong": "Age: '60'",
+                "whyUz": "Matnda 'Robert is SEVENTY years old' — ya'ni 70, 60 emas. Sonlarni diqqat bilan o'qing: seventy (70) va sixty (60) o'xshash eshitiladi."
+              }
+            }
+          ]
+        },
+        {
+          "ref": "4c",
+          "type": "write_sentences",
+          "instructionEn": "Cover the texts, look at the pictures and the tables and describe each person.",
+          "instructionUz": "Matnlarni yoping, rasmlar va jadvallarga qarab har bir odamni tasvirlang.",
+          "explanationUz": "Jadvaldagi 7 qator 5 ta gapga aylanadi:\n  1) ISM + is + YOSH + years old. He/She is + yosh guruhi.\n  2) He/She is + BO'Y + and + GAVDA.\n  3) He/She has got + SOCH + hair.\n  4) He/She has got + LAB + lips and a + BURUN + nose.\n  5) He/She has got + BOSHQA BELGI. (agar bo'lsa)\n\nDIQQAT: bo'y va gavda uchun BE, soch va yuz uchun HAVE GOT.",
+          "modelAnswers": [
+            "Peter is twenty years old. He is young. He is tall and well-built. He has got short curly hair. He has got full lips and a wide flattish nose.",
+            "Kim is twenty-two years old. She is young. She is short and slim. She has got long straight hair. She has got full lips, slanting eyes and a small nose.",
+            "Robert is seventy years old. He is old. He is short and slim. He has got short white hair. He has got thin lips and a big nose.",
+            "Ian is fifty-two years old. He is middle-aged. He is of medium height and he is fat. He has got grey straight hair, a beard and a moustache. He has got a large nose and full lips."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_exercise",
+      "title": "Grammar",
+      "titleUz": "Grammatika",
+      "exercises": [
+        {
+          "ref": "5",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Write questions and answers as in the example.",
+          "instructionUz": "Namunadagidek savol va javob yozing.",
+          "explanationUz": "SO'ROQDA FE'L EGADAN OLDIN KELADI — bu betdagi barcha xato shundan.\n\n  'Is your car new?'  — TO'G'RI (fe'l birinchi)\n  'Your car is new?'  — XATO (bu tasdiq gap tartibi)\n\nJAVOBDA to'g'ri OLMOSHNI tanlang:\n  • mashina haqida  → IT ('it's very old')\n  • erkak haqida    → HE ('he's from Turkey')\n  • o'zingiz haqida → I ('I'm from Brazil')\n\nMAMLAKAT oldidan 'from' SHART:\n  'He's from Turkey' — TO'G'RI\n  'It's Turkey'      — XATO (mamlakat — narsa emas, odam undan keladi)",
+          "example": {
+            "prompt": "you / from Argentina? → No / Brazil",
+            "question": "Are you from Argentina?",
+            "answer": "No, I'm from Brazil."
+          },
+          "items": [
+            {
+              "n": 1,
+              "prompt": "you / from Argentina? → No / Brazil",
+              "question": "Are you from Argentina?",
+              "answer": "No, I'm from Brazil.",
+              "given": true
+            },
+            {
+              "n": 2,
+              "prompt": "your car / new? → No / very old",
+              "question": "Is your car new?",
+              "answer": "No, it's very old.",
+              "whyUz": "'your car' — narsa (it) → Is. Javobda ham IT.",
+              "commonMistake": {
+                "wrong": "'is you car new' / 'No, I's very old'",
+                "whyUz": "Ikki xato:\n1) 'you car' — egalik olmoshi kerak: YOUR car. Va gap boshida katta harf: 'Is'.\n2) 'I's' degan shakl YO'Q. Mashina — narsa, demak IT'S."
+              }
+            },
+            {
+              "n": 3,
+              "prompt": "he / Portugal? → No / Turkey",
+              "question": "Is he from Portugal?",
+              "answer": "No, he's from Turkey.",
+              "whyUz": "'he' → Is. Mamlakat oldidan 'from' shart.",
+              "commonMistake": {
+                "wrong": "'He is portugal' / 'No, It's Turkey'",
+                "whyUz": "Uch xato:\n1) So'roq gap tartibi buzilgan: 'IS HE from...?' bo'lishi kerak, 'He is...' emas.\n2) 'from' tushib qolgan. Mamlakat oldidan 'from' SHART.\n3) Odam haqida gap ketyapti — IT emas, HE. Va katta harf: Portugal."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Bu betda imlo xatolari ko'p — shuning uchun yozilishiga alohida e'tibor.",
+    "groups": [
+      {
+        "ruleUz": "Sifat → ot (o'lcham va tavsif)",
+        "explanationUz": "Ba'zi sifatlardan ot yasaladi. Yozilishi o'zgaradi — bu betda aynan shu xato qilingan.",
+        "items": [
+          { "base": "high", "baseUz": "baland", "derived": "height", "derivedUz": "bo'y, balandlik", "note": "'heigth' XATO — h-e-i-g-h-t" },
+          { "base": "wide", "baseUz": "keng", "derived": "width", "derivedUz": "kenglik", "note": "-e tushadi" },
+          { "base": "long", "baseUz": "uzun", "derived": "length", "derivedUz": "uzunlik", "note": "o → e" },
+          { "base": "strong", "baseUz": "kuchli", "derived": "strength", "derivedUz": "kuch", "note": "o → e" }
+        ]
+      },
+      {
+        "ruleUz": "O'LCHAM sifatlari — sinonim va daraja",
+        "explanationUz": "Bir narsani turlicha ayta olish — nutqni boyitadi.",
+        "items": [
+          { "base": "big", "baseUz": "katta", "derived": "large", "derivedUz": "katta, yirik", "note": "'largue' XATO — l-a-r-g-e" },
+          { "base": "small", "baseUz": "kichik", "derived": "little", "derivedUz": "kichkina", "note": "" },
+          { "base": "tall", "baseUz": "baland (odam)", "derived": "medium height", "derivedUz": "o'rta bo'yli", "note": "o'rtacha daraja" },
+          { "base": "fat", "baseUz": "semiz", "derived": "overweight", "derivedUz": "vazni ortiqcha", "note": "muloyimroq shakl" }
+        ]
+      },
+      {
+        "ruleUz": "Egalik olmoshlari (bu betdagi xato)",
+        "explanationUz": "'you' va 'your' ni adashtirmang — biri EGA, ikkinchisi EGALIK.",
+        "items": [
+          { "base": "I", "baseUz": "men", "derived": "my", "derivedUz": "mening", "note": "my car" },
+          { "base": "you", "baseUz": "siz", "derived": "your", "derivedUz": "sizning", "note": "YOUR car ('you car' XATO)" },
+          { "base": "he", "baseUz": "u", "derived": "his", "derivedUz": "uning", "note": "his car" },
+          { "base": "she", "baseUz": "u", "derived": "her", "derivedUz": "uning", "note": "her car" },
+          { "base": "it", "baseUz": "u", "derived": "its", "derivedUz": "uning", "note": "its colour (apostrofsiz!)" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Tavsif qolipi va so'roq gap tartibi.",
+    "patterns": [
+      {
+        "formula": "TO'LIQ TAVSIF (5 gap): yosh → bo'y/gavda → soch → yuz → boshqa",
+        "exampleEn": "Ian is fifty-two years old. He is middle-aged. He is of medium height and he is fat. He has got grey straight hair, a beard and a moustache. He has got a large nose and full lips.",
+        "exampleUz": "Ian ellik ikki yoshda. U o'rta yoshli. U o'rta bo'yli va semiz. Uning kulrang tekis sochi, soqoli va mo'ylovi bor. Katta burni va to'la labi bor.",
+        "explanationUz": "Tartib buzilmasin. Bo'y-gavda uchun BE, soch-yuz uchun HAVE GOT."
+      },
+      {
+        "formula": "'of medium height' — o'rta bo'y",
+        "exampleEn": "He is of medium height.",
+        "exampleUz": "U o'rta bo'yli.",
+        "explanationUz": "Bu ibora 'of' bilan keladi — 'He is medium height' ham eshitiladi, lekin 'of' bilan to'g'riroq."
+      },
+      {
+        "formula": "SO'ROQ: Is/Are + EGA + ...? (fe'l BIRINCHI)",
+        "exampleEn": "Is your car new? / Is he from Portugal?",
+        "exampleUz": "Mashinangiz yangimi? / U Portugaliyadanmi?",
+        "explanationUz": "ENG KO'P XATO shu yerda. Tasdiq gapda 'Your car is new', so'roqda esa 'IS your car new?' — fe'l oldinga chiqadi."
+      },
+      {
+        "formula": "JAVOB: No, EGA + be + from + MAMLAKAT.",
+        "exampleEn": "No, he's from Turkey.",
+        "exampleUz": "Yo'q, u Turkiyadan.",
+        "explanationUz": "'from' TUSHIB QOLMASIN. Va odam haqida bo'lsa 'he/she', narsa haqida bo'lsa 'it'."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "paragraph", "uz": "xatboshi" },
+    { "en": "to match", "uz": "moslamoq" },
+    { "en": "to cover", "uz": "yopmoq, berkitmoq" },
+    { "en": "to describe", "uz": "tasvirlamoq" },
+    { "en": "height", "uz": "bo'y" },
+    { "en": "medium height", "uz": "o'rta bo'y" },
+    { "en": "build", "uz": "gavda tuzilishi" },
+    { "en": "well-built", "uz": "baquvvat" },
+    { "en": "large", "uz": "katta, yirik" },
+    { "en": "wide", "uz": "keng" },
+    { "en": "flattish", "uz": "yassiroq" },
+    { "en": "thin lips", "uz": "ingichka lab" },
+    { "en": "full lips", "uz": "to'la lab" },
+    { "en": "slanting eyes", "uz": "qiyshiq ko'z" },
+    { "en": "characteristics", "uz": "belgilar, xususiyatlar" },
+    { "en": "to wear glasses", "uz": "ko'zoynak taqmoq" },
+    { "en": "Argentina", "uz": "Argentina" },
+    { "en": "Portugal", "uz": "Portugaliya" },
+    { "en": "Turkey", "uz": "Turkiya" },
+    { "en": "new", "uz": "yangi" },
+    { "en": "old", "uz": "eski, keksa" }
+  ]
+}
