@@ -248,6 +248,328 @@
    ]
   },
   {
+   "id": "u2-coursebook-13-3",
+   "kind": "vocabulary",
+   "title": "Language Development — Vocabulary",
+   "titleUz": "Til rivojlanishi — Lug'at",
+   "book": "coursebook",
+   "bookPage": 13,
+   "exercises": [
+    {
+     "ref": "5",
+     "instructionEn": "Label the different parts of the face, then point to them on your face and name them.",
+     "instructionUz": "Yuzning qismlarini belgilang, so'ng o'z yuzingizda ko'rsatib nomlang.",
+     "explanationUz": "MUHIM — ko'plik shakllari:\n• eye → eyes (ikkita ko'z)\n• ear → ears · cheek → cheeks · lip → lips\n• tooth → TEETH (qoidasiz ko'plik!) — 'tooths' XATO\n\n'lips' va 'mouth' farqi: lips — lablar (ikkita), mouth — og'iz (bitta).\n'hair' odatda BIRLIKDA ishlatiladi: 'She has got long hair' ('hairs' emas).",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 13,
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "hair",
+       "answer": "hair",
+       "promptUz": "soch",
+       "options": [
+        "hair",
+        "eye",
+        "cheek",
+        "teeth"
+       ],
+       "speak": "hair"
+      },
+      {
+       "prompt": "eye",
+       "answer": "eye",
+       "promptUz": "ko'z",
+       "options": [
+        "eye",
+        "hair",
+        "cheek",
+        "teeth"
+       ],
+       "speak": "eye"
+      },
+      {
+       "prompt": "cheek",
+       "answer": "cheek",
+       "promptUz": "yonoq",
+       "options": [
+        "cheek",
+        "hair",
+        "eye",
+        "teeth"
+       ],
+       "speak": "cheek"
+      },
+      {
+       "prompt": "teeth",
+       "answer": "teeth",
+       "promptUz": "tishlar",
+       "options": [
+        "teeth",
+        "hair",
+        "eye",
+        "cheek"
+       ],
+       "speak": "teeth"
+      },
+      {
+       "prompt": "lips",
+       "answer": "lips",
+       "promptUz": "lablar",
+       "options": [
+        "lips",
+        "hair",
+        "eye",
+        "cheek"
+       ],
+       "speak": "lips"
+      },
+      {
+       "prompt": "chin",
+       "answer": "chin",
+       "promptUz": "iyak",
+       "options": [
+        "chin",
+        "hair",
+        "eye",
+        "cheek"
+       ],
+       "speak": "chin"
+      },
+      {
+       "prompt": "mouth",
+       "answer": "mouth",
+       "promptUz": "og'iz",
+       "options": [
+        "mouth",
+        "hair",
+        "eye",
+        "cheek"
+       ],
+       "speak": "mouth"
+      },
+      {
+       "prompt": "nose",
+       "answer": "nose",
+       "promptUz": "burun",
+       "options": [
+        "nose",
+        "hair",
+        "eye",
+        "cheek"
+       ],
+       "speak": "nose"
+      },
+      {
+       "prompt": "ear",
+       "answer": "ear",
+       "promptUz": "quloq",
+       "options": [
+        "ear",
+        "hair",
+        "eye",
+        "cheek"
+       ],
+       "speak": "ear"
+      }
+     ]
+    },
+    {
+     "ref": "6",
+     "instructionEn": "Use the words in the list to write the opposites of the phrases below. Now use some of these phrases to describe your partner.",
+     "instructionUz": "Ro'yxatdagi so'zlar bilan quyidagi iboralarning teskarisini yozing. So'ng shu iboralar bilan sherigingizni tasvirlang.",
+     "explanationUz": "Sifatlarning teskarisi (antonim) — juft holda yodlash eng oson:\n  tall ↔ short (bo'y)\n  slim ↔ fat (gavda)\n  long ↔ short (soch uzunligi)\n  straight ↔ curly (soch shakli)\n  dark ↔ fair (soch rangi)\n  full ↔ thin (lab)\n  big ↔ small (burun, ko'z)\n\nDIQQAT: 'short' IKKI ma'noda — past bo'yli VA kalta soch.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 13,
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "tall boy ≠ ___ boy",
+       "answer": "short",
+       "promptUz": "baland bo'yli ↔ past bo'yli",
+       "options": [
+        "short",
+        "small",
+        "fair",
+        "thin"
+       ],
+       "speak": "tall boy ≠ ___ boy"
+      },
+      {
+       "prompt": "slim girl ≠ ___ girl",
+       "answer": "fat",
+       "promptUz": "nozik ↔ semiz",
+       "options": [
+        "fat",
+        "small",
+        "short",
+        "fair"
+       ],
+       "speak": "slim girl ≠ ___ girl"
+      },
+      {
+       "prompt": "long hair ≠ ___ hair",
+       "answer": "short",
+       "promptUz": "uzun soch ↔ kalta soch",
+       "options": [
+        "short",
+        "small",
+        "fair",
+        "thin"
+       ],
+       "speak": "long hair ≠ ___ hair"
+      },
+      {
+       "prompt": "straight hair ≠ ___ hair",
+       "answer": "curly",
+       "promptUz": "tekis soch ↔ jingalak soch",
+       "options": [
+        "curly",
+        "small",
+        "short",
+        "fair"
+       ],
+       "speak": "straight hair ≠ ___ hair"
+      },
+      {
+       "prompt": "dark hair ≠ ___ hair",
+       "answer": "fair",
+       "promptUz": "qora soch ↔ oq-sariq soch",
+       "options": [
+        "fair",
+        "small",
+        "short",
+        "thin"
+       ],
+       "speak": "dark hair ≠ ___ hair"
+      },
+      {
+       "prompt": "full lips ≠ ___ lips",
+       "answer": "thin",
+       "promptUz": "to'la lab ↔ ingichka lab",
+       "options": [
+        "thin",
+        "small",
+        "short",
+        "fair"
+       ],
+       "speak": "full lips ≠ ___ lips"
+      },
+      {
+       "prompt": "big nose ≠ ___ nose",
+       "answer": "small",
+       "promptUz": "katta burun ↔ kichik burun",
+       "options": [
+        "small",
+        "short",
+        "fair",
+        "thin"
+       ],
+       "speak": "big nose ≠ ___ nose"
+      },
+      {
+       "prompt": "big eyes ≠ ___ eyes",
+       "answer": "small",
+       "promptUz": "katta ko'z ↔ kichik ko'z",
+       "options": [
+        "small",
+        "short",
+        "fair",
+        "thin"
+       ],
+       "speak": "big eyes ≠ ___ eyes"
+      }
+     ]
+    },
+    {
+     "ref": "7",
+     "instructionEn": "Label the colours. Which of these adjectives are often used to describe: a) hair? b) eyes? c) both?",
+     "instructionUz": "Ranglarni belgilang. Bu sifatlardan qaysilari a) soch, b) ko'z, c) ikkalasi uchun ishlatiladi?",
+     "explanationUz": "Soch va ko'z rangi — cheklangan ro'yxat:\n• FAQAT soch: fair (oq-sariq), red (qizg'ish-sariq)\n• FAQAT ko'z: blue (ko'k), green (yashil)\n• IKKALASI: brown, black, grey\n\nDIQQAT: soch uchun 'yellow' ISHLATILMAYDI — 'fair' yoki 'blonde' deyiladi.\nKo'z uchun 'black' kamdan-kam — odatda 'dark brown' deyiladi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 13,
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "red",
+       "answer": "red",
+       "promptUz": "qizil",
+       "options": [
+        "red",
+        "black",
+        "green",
+        "grey"
+       ],
+       "speak": "red"
+      },
+      {
+       "prompt": "black",
+       "answer": "black",
+       "promptUz": "qora",
+       "options": [
+        "black",
+        "red",
+        "green",
+        "grey"
+       ],
+       "speak": "black"
+      },
+      {
+       "prompt": "green",
+       "answer": "green",
+       "promptUz": "yashil",
+       "options": [
+        "green",
+        "red",
+        "black",
+        "grey"
+       ],
+       "speak": "green"
+      },
+      {
+       "prompt": "grey",
+       "answer": "grey",
+       "promptUz": "kulrang",
+       "options": [
+        "grey",
+        "red",
+        "black",
+        "green"
+       ],
+       "speak": "grey"
+      },
+      {
+       "prompt": "blue",
+       "answer": "blue",
+       "promptUz": "ko'k",
+       "options": [
+        "blue",
+        "red",
+        "black",
+        "green"
+       ],
+       "speak": "blue"
+      },
+      {
+       "prompt": "brown",
+       "answer": "brown",
+       "promptUz": "jigarrang",
+       "options": [
+        "brown",
+        "red",
+        "black",
+        "green"
+       ],
+       "speak": "brown"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u2-coursebook-12-1",
    "kind": "reading",
    "title": "Reading",
@@ -307,6 +629,223 @@
        "answer": "It is an invitation to reply: \"Please e-mail me today!\", \"Please be my e-mail pen pal.\", \"Hope to hear from you soon.\"",
        "promptUz": "Har e'lonning oxirgi gapi qanday?",
        "speak": "What is the last sentence in each advertisement?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2-coursebook-13-4",
+   "kind": "grammar",
+   "title": "Grammar: have got ('ve got) / has got ('s got)",
+   "titleUz": "Grammatika: have got / has got",
+   "book": "coursebook",
+   "bookPage": 13,
+   "exercises": [
+    {
+     "ref": "8",
+     "instructionEn": "Read the advertisements in Ex. 4 again and complete the sentences using: have, haven't, has or hasn't.",
+     "instructionUz": "Ex. 4 dagi e'lonlarni qayta o'qing va gaplarni have, haven't, has yoki hasn't bilan to'ldiring.",
+     "explanationUz": "Ikki qadam:\n1) EGAGA qarab have yoki has tanlang\n   (Mario and Pierre = ular → have; Anna = u → has)\n2) E'londagi ma'lumotga qarab tasdiq yoki inkor aniqlang.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 13,
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": ": No, he ___ .",
+       "answer": "hasn't",
+       "whyUz": "Pierre — bitta erkak → Has. E'londa soqol aytilmagan → hasn't.",
+       "speak": ": No, he ___ ."
+      },
+      {
+       "prompt": ": ___ Mario and Pierre got brown eyes?",
+       "answer": "Have",
+       "whyUz": "Ikki kishi → Have. Ikkalasining ko'zi ham jigarrang → have.",
+       "speak": ": ___ Mario and Pierre got brown eyes?"
+      },
+      {
+       "prompt": ": Yes, they ___ .",
+       "answer": "have",
+       "whyUz": "Ikki kishi → Have. Ikkalasining ko'zi ham jigarrang → have.",
+       "speak": ": Yes, they ___ ."
+      },
+      {
+       "prompt": ": ___ Anna got long hair?",
+       "answer": "Has",
+       "whyUz": "Anna — bitta ayol → Has. Uning sochi uzun → has.",
+       "speak": ": ___ Anna got long hair?"
+      },
+      {
+       "prompt": ": Yes, she ___ .",
+       "answer": "has",
+       "whyUz": "Anna — bitta ayol → Has. Uning sochi uzun → has.",
+       "speak": ": Yes, she ___ ."
+      },
+      {
+       "prompt": ": ___ Mario got a beard?",
+       "answer": "Has",
+       "whyUz": "Mario e'lonida soqol aytilmagan → hasn't.",
+       "speak": ": ___ Mario got a beard?"
+      },
+      {
+       "prompt": ": No, he ___ .",
+       "answer": "hasn't",
+       "whyUz": "Mario e'lonida soqol aytilmagan → hasn't.",
+       "speak": ": No, he ___ ."
+      },
+      {
+       "prompt": ": Anna ___ got brown hair.",
+       "answer": "hasn't",
+       "whyUz": "Annaning sochi oq-sariq (fair), jigarrang emas → hasn't.",
+       "speak": ": Anna ___ got brown hair."
+      },
+      {
+       "prompt": ": ___ Mario and Pierre got fair hair?",
+       "answer": "Have",
+       "whyUz": "Marioda jigarrang, Pierreda qora soch — ikkalasi ham oq-sariq emas → haven't.",
+       "speak": ": ___ Mario and Pierre got fair hair?"
+      },
+      {
+       "prompt": ": No, they ___ .",
+       "answer": "haven't",
+       "whyUz": "Marioda jigarrang, Pierreda qora soch — ikkalasi ham oq-sariq emas → haven't.",
+       "speak": ": No, they ___ ."
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "titleUz": "have got — egalik bildirish",
+    "explanationUz": "'have got' — 'bor' ma'nosini beradi (egalik).\nO'zbekchada 'Menda it bor' deymiz — inglizchada 'I have got a dog'.\n\nEGAGA qarab ikki shakl:\n• I / you / we / they → HAVE got\n• he / she / it → HAS got\n\nOg'zaki nutqda qisqaradi: I've got, he's got.\nDIQQAT: he's — bu 'he is' ham, 'he has' ham bo'lishi mumkin.\nFarqni 'got' aytib beradi: 'he's got' = he HAS got.",
+    "affirmative": [
+     {
+      "subject": "I/you/we/they",
+      "full": "I have got",
+      "short": "I've got",
+      "uz": "menda ... bor"
+     },
+     {
+      "subject": "he/she/it",
+      "full": "he has got",
+      "short": "he's got",
+      "uz": "unda ... bor"
+     }
+    ],
+    "negative": [
+     {
+      "subject": "I/you/we/they",
+      "full": "I have not got",
+      "short": "I haven't got",
+      "uz": "menda ... yo'q"
+     },
+     {
+      "subject": "he/she/it",
+      "full": "he has not got",
+      "short": "he hasn't got",
+      "uz": "unda ... yo'q"
+     }
+    ],
+    "interrogative": [
+     {
+      "q": "Have I/you/we/they got ...?",
+      "yes": "Yes, I/you/we/they have.",
+      "no": "No, I/you/we/they haven't."
+     },
+     {
+      "q": "Has he/she/it got ...?",
+      "yes": "Yes, he/she/it has.",
+      "no": "No, he/she/it hasn't."
+     }
+    ],
+    "interrogativeNoteUz": "Qisqa javobda 'got' TAKRORLANMAYDI: 'Yes, he has.' — 'Yes, he has got' emas.",
+    "exampleEn": "I've got a dog. My dog has got long ears.",
+    "exampleUz": "Menda it bor. Itimning quloqlari uzun.",
+    "warningUz": "So'roqda 'do/does' ISHLATILMAYDI:\n  'Has he got a car?' — TO'G'RI\n  'Does he have got a car?' — XATO"
+   }
+  },
+  {
+   "id": "u2-coursebook-13-2",
+   "kind": "speaking",
+   "title": "Speaking",
+   "titleUz": "Gapirish",
+   "book": "coursebook",
+   "bookPage": 13,
+   "exercises": [
+    {
+     "ref": "Speaking",
+     "instructionEn": "Read the advertisements again. Copy the table below and complete it. Then, look at your notes and talk about the people, as in the example.",
+     "instructionUz": "E'lonlarni qayta o'qing. Jadvalni to'ldiring. So'ng yozganlaringizga qarab, namunadagidek odamlar haqida gapiring.",
+     "explanationUz": "Jadvaldagi 8 qator — 8 ta gapga aylanadi. Namunadagi tartibni saqlang:\n1) yosh  2) qayerda yashaydi  3) soch va ko'z  4) bo'y va gavda\n5) nimani yoqtiradi  6) nima qila oladi\n\nDIQQAT — uchinchi shaxsda fe'l -S oladi:\n• He LIVES in Paris (live emas)\n• He LIKES playing (like emas)\nLekin 'can' dan keyin -s YO'Q: 'He can play'.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 13,
+     "bookRef": "Coursebook, 12-bet — Ex. 4 e'lonlari",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "Anna — Age",
+       "answer": "11"
+      },
+      {
+       "prompt": "Anna — Lives in",
+       "answer": "Moscow, Russia"
+      },
+      {
+       "prompt": "Anna — Hair",
+       "answer": "long straight fair"
+      },
+      {
+       "prompt": "Anna — Eyes",
+       "answer": "green"
+      },
+      {
+       "prompt": "Anna — Height",
+       "answer": "quite short"
+      },
+      {
+       "prompt": "Anna — Build",
+       "answer": "slim"
+      },
+      {
+       "prompt": "Anna — Likes/Loves",
+       "answer": "skiing"
+      },
+      {
+       "prompt": "Anna — Can",
+       "answer": "play the piano quite well"
+      },
+      {
+       "prompt": "Mario — Age",
+       "answer": "26"
+      },
+      {
+       "prompt": "Mario — Lives in",
+       "answer": "Florence, Italy"
+      },
+      {
+       "prompt": "Mario — Hair",
+       "answer": "brown wavy"
+      },
+      {
+       "prompt": "Mario — Eyes",
+       "answer": "brown"
+      },
+      {
+       "prompt": "Mario — Height",
+       "answer": "tall"
+      },
+      {
+       "prompt": "Mario — Build",
+       "answer": "well-built"
+      },
+      {
+       "prompt": "Mario — Likes/Loves",
+       "answer": "playing the guitar, dancing"
+      },
+      {
+       "prompt": "Mario — Can",
+       "answer": "speak French"
       }
      ]
     }
@@ -421,6 +960,142 @@
    ],
    "book": "coursebook",
    "bookPage": 12
+  },
+  {
+   "ruleUz": "Qoidasiz ko'plik",
+   "explanationUz": "Ba'zi so'zlar -s olmaydi, o'zagi o'zgaradi. Yodlab olish shart.",
+   "items": [
+    {
+     "base": "tooth",
+     "baseUz": "tish",
+     "derived": "teeth",
+     "derivedUz": "tishlar",
+     "note": "oo → ee"
+    },
+    {
+     "base": "foot",
+     "baseUz": "oyoq",
+     "derived": "feet",
+     "derivedUz": "oyoqlar",
+     "note": "oo → ee"
+    },
+    {
+     "base": "man",
+     "baseUz": "erkak",
+     "derived": "men",
+     "derivedUz": "erkaklar",
+     "note": "a → e"
+    },
+    {
+     "base": "woman",
+     "baseUz": "ayol",
+     "derived": "women",
+     "derivedUz": "ayollar",
+     "note": "a → e (o'qilishi ham o'zgaradi)"
+    },
+    {
+     "base": "child",
+     "baseUz": "bola",
+     "derived": "children",
+     "derivedUz": "bolalar",
+     "note": "-ren"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 13
+  },
+  {
+   "ruleUz": "Oddiy ko'plik (-s)",
+   "explanationUz": "Yuz qismlarining ko'pchiligi oddiy -s oladi.",
+   "items": [
+    {
+     "base": "eye",
+     "baseUz": "ko'z",
+     "derived": "eyes",
+     "derivedUz": "ko'zlar",
+     "note": "-s"
+    },
+    {
+     "base": "ear",
+     "baseUz": "quloq",
+     "derived": "ears",
+     "derivedUz": "quloqlar",
+     "note": "-s"
+    },
+    {
+     "base": "cheek",
+     "baseUz": "yonoq",
+     "derived": "cheeks",
+     "derivedUz": "yonoqlar",
+     "note": "-s"
+    },
+    {
+     "base": "lip",
+     "baseUz": "lab",
+     "derived": "lips",
+     "derivedUz": "lablar",
+     "note": "-s (odatda ko'plikda)"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 13
+  },
+  {
+   "ruleUz": "Antonim juftlar (teskari ma'no)",
+   "explanationUz": "Tashqi ko'rinish sifatlarini JUFT holda yodlang — ikki barobar tez esda qoladi.",
+   "items": [
+    {
+     "base": "tall",
+     "baseUz": "baland bo'yli",
+     "derived": "short",
+     "derivedUz": "past bo'yli",
+     "note": "bo'y"
+    },
+    {
+     "base": "slim",
+     "baseUz": "nozik",
+     "derived": "fat",
+     "derivedUz": "semiz",
+     "note": "gavda"
+    },
+    {
+     "base": "long",
+     "baseUz": "uzun",
+     "derived": "short",
+     "derivedUz": "kalta",
+     "note": "soch uzunligi"
+    },
+    {
+     "base": "straight",
+     "baseUz": "tekis",
+     "derived": "curly",
+     "derivedUz": "jingalak",
+     "note": "soch shakli"
+    },
+    {
+     "base": "dark",
+     "baseUz": "qora",
+     "derived": "fair",
+     "derivedUz": "oq-sariq",
+     "note": "soch rangi"
+    },
+    {
+     "base": "full",
+     "baseUz": "to'la",
+     "derived": "thin",
+     "derivedUz": "ingichka",
+     "note": "lab"
+    },
+    {
+     "base": "big",
+     "baseUz": "katta",
+     "derived": "small",
+     "derivedUz": "kichik",
+     "note": "burun, ko'z"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 13
   }
  ],
  "sentencePatterns": [
@@ -463,6 +1138,38 @@
    "explanationUz": "'like/love' dan keyin fe'l -ING oladi. 'I like read' — XATO.",
    "book": "coursebook",
    "bookPage": 12
+  },
+  {
+   "formula": "EGA + have/has got + NARSA",
+   "exampleEn": "I've got a dog. / My dog has got long ears.",
+   "exampleUz": "Menda it bor. / Itimning quloqlari uzun.",
+   "explanationUz": "I/you/we/they → have got · he/she/it → has got.\nO'zbekchadagi 'menda ... bor' shu qolipga to'g'ri keladi.",
+   "book": "coursebook",
+   "bookPage": 13
+  },
+  {
+   "formula": "SO'ROQ: Have/Has + EGA + got ...?",
+   "exampleEn": "Has Pierre got a beard? — No, he hasn't.",
+   "exampleUz": "Pierrening soqoli bormi? — Yo'q.",
+   "explanationUz": "Fe'l birinchi o'rinda. Qisqa javobda 'got' TAKRORLANMAYDI: 'No, he hasn't' ('hasn't got' emas).",
+   "book": "coursebook",
+   "bookPage": 13
+  },
+  {
+   "formula": "TA'RIF (3 gap): EGA + be + bo'y/gavda. EGA + have got + soch/ko'z. EGA + can + FE'L.",
+   "exampleEn": "He is quite tall and slim. He has got short dark hair and brown eyes. He can play tennis very well.",
+   "exampleUz": "U ancha baland va nozik. Uning kalta qora sochi va jigarrang ko'zi bor. U tennisni juda yaxshi o'ynay oladi.",
+   "explanationUz": "Odamni ta'riflashning to'liq qolipi. Bo'y/gavda uchun BE, soch/ko'z uchun HAVE GOT, qobiliyat uchun CAN.",
+   "book": "coursebook",
+   "bookPage": 13
+  },
+  {
+   "formula": "3-SHAXS: He/She + FE'L-s",
+   "exampleEn": "He lives in Paris. He likes reading.",
+   "exampleUz": "U Parijda yashaydi. U o'qishni yoqtiradi.",
+   "explanationUz": "he/she/it bilan fe'lga -S qo'shiladi. LEKIN 'can' dan keyin qo'shilmaydi: 'He can play' (plays emas).",
+   "book": "coursebook",
+   "bookPage": 13
   }
  ],
  "vocabulary": [
@@ -561,6 +1268,82 @@
   {
    "en": "Florence",
    "uz": "Florensiya"
+  },
+  {
+   "en": "cheek",
+   "uz": "yonoq"
+  },
+  {
+   "en": "chin",
+   "uz": "iyak"
+  },
+  {
+   "en": "ear",
+   "uz": "quloq"
+  },
+  {
+   "en": "eye",
+   "uz": "ko'z"
+  },
+  {
+   "en": "mouth",
+   "uz": "og'iz"
+  },
+  {
+   "en": "nose",
+   "uz": "burun"
+  },
+  {
+   "en": "teeth",
+   "uz": "tishlar"
+  },
+  {
+   "en": "lips",
+   "uz": "lablar"
+  },
+  {
+   "en": "opposite",
+   "uz": "teskari, qarama-qarshi"
+  },
+  {
+   "en": "thin",
+   "uz": "ingichka, oriq"
+  },
+  {
+   "en": "full lips",
+   "uz": "to'la lab"
+  },
+  {
+   "en": "colour",
+   "uz": "rang"
+  },
+  {
+   "en": "green",
+   "uz": "yashil"
+  },
+  {
+   "en": "blue",
+   "uz": "ko'k"
+  },
+  {
+   "en": "black",
+   "uz": "qora"
+  },
+  {
+   "en": "red",
+   "uz": "qizil"
+  },
+  {
+   "en": "height",
+   "uz": "bo'y"
+  },
+  {
+   "en": "build",
+   "uz": "gavda tuzilishi"
+  },
+  {
+   "en": "partner",
+   "uz": "sherik, juftlik"
   }
  ]
 }
