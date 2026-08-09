@@ -555,6 +555,149 @@
    ]
   },
   {
+   "id": "u2-coursebook-16-12",
+   "kind": "vocabulary",
+   "title": "Vocabulary revision",
+   "titleUz": "Lug'at takrorlash",
+   "book": "coursebook",
+   "bookPage": 16,
+   "exercises": [
+    {
+     "ref": "17",
+     "instructionEn": "Fill in the correct word(s).",
+     "instructionUz": "To'g'ri so'z(lar)ni qo'ying.",
+     "explanationUz": "Bu — butun Unit 2 ning takrori. Har band bitta mavzuni tekshiradi:\n  1–2, 5  → antonim sifatlar (short/fair/small)\n  3       → yosh qolipi (years old)\n  4       → antonim (tall)\n  6       → have got\n  7       → can (so'roq)\n  8       → e'lon oxiri (hear)\n  9       → yashash joyi (live)\n  10      → ravish (fast)",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 16,
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "He hasn't got long hair. He's got ___ hair.",
+       "answer": "short",
+       "whyUz": "long ↔ short (soch uzunligi)",
+       "speak": "He hasn't got long hair. He's got ___ hair."
+      },
+      {
+       "prompt": "She hasn't got dark hair. She's got ___ hair.",
+       "answer": "fair",
+       "whyUz": "dark ↔ fair (soch rangi)",
+       "speak": "She hasn't got dark hair. She's got ___ hair."
+      },
+      {
+       "prompt": "Sarah and Kate are twenty-four ___ old.",
+       "answer": "years",
+       "whyUz": "'years old' — buzilmas ibora",
+       "speak": "Sarah and Kate are twenty-four ___ old."
+      },
+      {
+       "prompt": "Gordon isn't ___ . He's short.",
+       "answer": "tall",
+       "whyUz": "short ↔ tall (bo'y)",
+       "speak": "Gordon isn't ___ . He's short."
+      },
+      {
+       "prompt": "He hasn't got big eyes. He's got ___ eyes.",
+       "answer": "small",
+       "whyUz": "big ↔ small",
+       "speak": "He hasn't got big eyes. He's got ___ eyes."
+      },
+      {
+       "prompt": "Tony is short and slim and he ___ a beard.",
+       "answer": "has got",
+       "whyUz": "'he' → HAS got (have emas)",
+       "speak": "Tony is short and slim and he ___ a beard."
+      },
+      {
+       "prompt": "___ you dance well?",
+       "answer": "Can",
+       "whyUz": "Qobiliyat so'ralyapti → Can. Gap boshida katta harf.",
+       "speak": "___ you dance well?"
+      },
+      {
+       "prompt": "Hope to ___ from you soon.",
+       "answer": "hear",
+       "whyUz": "'hear from you' — sizdan xabar olmoq. E'lon oxiridagi ibora.",
+       "speak": "Hope to ___ from you soon."
+      },
+      {
+       "prompt": "I ___ in Edinburgh, Scotland.",
+       "answer": "live",
+       "whyUz": "'I' bilan fe'l asos shaklida — 'live' (lives emas)",
+       "speak": "I ___ in Edinburgh, Scotland."
+      },
+      {
+       "prompt": "He can run quite ___ .",
+       "answer": "fast",
+       "whyUz": "Tezlik → fast. 'fastly' degan so'z YO'Q.",
+       "speak": "He can run quite ___ ."
+      }
+     ]
+    },
+    {
+     "ref": "18",
+     "instructionEn": "Match the sentences to the pictures. Which express ability? Which express a polite request?",
+     "instructionUz": "Gaplarni rasmlarga moslang. Qaysilari qobiliyatni, qaysilari muloyim iltimosni bildiradi?",
+     "explanationUz": "'can' ning IKKI ma'nosini ajratish — bu betning asosiy maqsadi.\n\nQOBILIYAT (ability): EGA + can + FE'L\n  'Ann can use the computer very well.' — Ann kompyuterdan yaxshi foydalana oladi.\n  Bu yerda gap odamning MAHORATI haqida.\n\nILTIMOS (polite request): Can YOU + FE'L ... , please?\n  'Can you sign here, please?' — Shu yerga imzo cheka olasizmi?\n  Bu yerda kimdandir NIMADIR SO'RALYAPTI.\n\nAjratish usuli: so'roq bo'lsa va 'please' bo'lsa — iltimos.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 16,
+     "bookRef": "Coursebook, 16-bet — 1–4 rasmlar",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "A woman with a headset working at a computer",
+       "answer": "Ann can use the computer very well.",
+       "promptUz": "Naushnikli ayol kompyuterda ishlamoqda",
+       "options": [
+        "Can you tell me how much it is, please?",
+        "Ann can use the computer very well.",
+        "Billy can play the trumpet.",
+        "Can you sign here, please?"
+       ],
+       "speak": "A woman with a headset working at a computer"
+      },
+      {
+       "prompt": "People signing a document together",
+       "answer": "Can you sign here, please?",
+       "promptUz": "Odamlar hujjatga imzo chekmoqda",
+       "options": [
+        "Can you tell me how much it is, please?",
+        "Ann can use the computer very well.",
+        "Billy can play the trumpet.",
+        "Can you sign here, please?"
+       ],
+       "speak": "People signing a document together"
+      },
+      {
+       "prompt": "A man playing the trumpet",
+       "answer": "Billy can play the trumpet.",
+       "promptUz": "Karnay chalayotgan erkak",
+       "options": [
+        "Can you tell me how much it is, please?",
+        "Ann can use the computer very well.",
+        "Billy can play the trumpet.",
+        "Can you sign here, please?"
+       ],
+       "speak": "A man playing the trumpet"
+      },
+      {
+       "prompt": "A woman asking about a price while shopping",
+       "answer": "Can you tell me how much it is, please?",
+       "promptUz": "Xarid qilayotgan ayol narxni so'ramoqda",
+       "options": [
+        "Can you tell me how much it is, please?",
+        "Ann can use the computer very well.",
+        "Billy can play the trumpet.",
+        "Can you sign here, please?"
+       ],
+       "speak": "A woman asking about a price while shopping"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u2-coursebook-12-1",
    "kind": "reading",
    "title": "Reading",
@@ -1259,6 +1402,122 @@
    }
   },
   {
+   "id": "u2-coursebook-16-11",
+   "kind": "pronunciation",
+   "title": "Spelling",
+   "titleUz": "Imlo (harflab aytish)",
+   "book": "coursebook",
+   "bookPage": 16,
+   "exercises": [
+    {
+     "ref": "16",
+     "instructionEn": "Listen to the dialogue and repeat it. Then, in pairs, use the prompts below to make similar dialogues, as in the example.",
+     "instructionUz": "Dialogni eshiting va takrorlang. So'ng juftlikda quyidagi ismlar bilan shunga o'xshash dialog tuzing.",
+     "explanationUz": "HARFLAB AYTISH — telefon va ro'yxatga yozilishda juda kerak.\n\nENG MUHIM QOIDA: bir xil harf IKKI marta kelsa, 'double' deyiladi:\n  Anna    → A - DOUBLE N - A\n  Steed   → S - T - DOUBLE E - D\n  Williams → W - I - DOUBLE L - I - A - M - S\n\nBu ingliz tilida majburiy emas, lekin tabiiy va tez.\nSavol: 'How do you spell it?' — Buni qanday yozasiz?",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 16,
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "A: What's your name, please?",
+       "uz": "Ismingiz nima?"
+      },
+      {
+       "en": "B: Anna Hughes.",
+       "uz": "Anna Hughes."
+      },
+      {
+       "en": "A: How do you spell it?",
+       "uz": "Buni qanday yozasiz?"
+      },
+      {
+       "en": "B: A - double N - A ... H - U - G - H - E - S.",
+       "uz": "A - ikkita N - A ... H - U - G - H - E - S."
+      }
+     ]
+    },
+    {
+     "ref": "16-prompts",
+     "instructionEn": "Spell these names.",
+     "instructionUz": "Bu ismlarni harflab ayting.",
+     "explanationUz": "Har ismda 'double' qayerda kelishini toping. Ba'zilarida bittadan ortiq bo'ladi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 16,
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "Anna Hughes",
+       "answer": "A - double N - A ... H - U - G - H - E - S",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "A - double N - A ... H - U - G - H - E - S",
+        "J - I - double M - Y ... S - T - U - A - R - T",
+        "W - E - N - D - Y ... C - L - A - R - K - E",
+        "V - I - V - I - E - double N - E ... B - R - O - W - N"
+       ]
+      },
+      {
+       "prompt": "Jimmy Stuart",
+       "answer": "J - I - double M - Y ... S - T - U - A - R - T",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "J - I - double M - Y ... S - T - U - A - R - T",
+        "A - double N - A ... H - U - G - H - E - S",
+        "W - E - N - D - Y ... C - L - A - R - K - E",
+        "V - I - V - I - E - double N - E ... B - R - O - W - N"
+       ]
+      },
+      {
+       "prompt": "Wendy Clarke",
+       "answer": "W - E - N - D - Y ... C - L - A - R - K - E",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "W - E - N - D - Y ... C - L - A - R - K - E",
+        "A - double N - A ... H - U - G - H - E - S",
+        "J - I - double M - Y ... S - T - U - A - R - T",
+        "V - I - V - I - E - double N - E ... B - R - O - W - N"
+       ]
+      },
+      {
+       "prompt": "Vivienne Brown",
+       "answer": "V - I - V - I - E - double N - E ... B - R - O - W - N",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "V - I - V - I - E - double N - E ... B - R - O - W - N",
+        "A - double N - A ... H - U - G - H - E - S",
+        "J - I - double M - Y ... S - T - U - A - R - T",
+        "W - E - N - D - Y ... C - L - A - R - K - E"
+       ]
+      },
+      {
+       "prompt": "Frank Williams",
+       "answer": "F - R - A - N - K ... W - I - double L - I - A - M - S",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "F - R - A - N - K ... W - I - double L - I - A - M - S",
+        "A - double N - A ... H - U - G - H - E - S",
+        "J - I - double M - Y ... S - T - U - A - R - T",
+        "W - E - N - D - Y ... C - L - A - R - K - E"
+       ]
+      },
+      {
+       "prompt": "Quentin Phillips",
+       "answer": "Q - U - E - N - T - I - N ... P - H - I - double L - I - P - S",
+       "promptUz": "Inglizchasini tanlang",
+       "options": [
+        "Q - U - E - N - T - I - N ... P - H - I - double L - I - P - S",
+        "A - double N - A ... H - U - G - H - E - S",
+        "J - I - double M - Y ... S - T - U - A - R - T",
+        "W - E - N - D - Y ... C - L - A - R - K - E"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u2-coursebook-13-2",
    "kind": "speaking",
    "title": "Speaking",
@@ -1394,6 +1653,85 @@
        "answer": "He's middle-aged. He's got short grey hair and a moustache.",
        "promptUz": "Profil bo'yicha gap tuzing",
        "speak": "None"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2-coursebook-16-10",
+   "kind": "communication",
+   "title": "Can (making requests)",
+   "titleUz": "Can (iltimos qilish)",
+   "book": "coursebook",
+   "bookPage": 16,
+   "exercises": [
+    {
+     "ref": "14",
+     "instructionEn": "Fill in the speech bubbles with sentences from the list.",
+     "instructionUz": "Gap pufakchalarini ro'yxatdagi gaplar bilan to'ldiring.",
+     "explanationUz": "ILTIMOS qolipi: Can you + FE'L + ... , please?\n\n'please' iltimosning muloyimligini oshiradi va odatda OXIRIDA,\nvergul bilan ajratilib keladi.\n\nDIQQAT — bu yerda 'can' QOBILIYAT emas:\n  'Can you swim?'      → qobiliyat (suza olasizmi?)\n  'Can you help me?'   → iltimos (yordam bera olasizmi?)\nFarqni VAZIYAT aytib beradi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 16,
+     "bookRef": "Coursebook, 16-bet — A, B, C, D rasmlar",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "A — ayolning pufakchasi",
+       "answer": "Can you give this to Mr Harris, please?",
+       "promptUz": "Buni janob Harrisga bera olasizmi?"
+      },
+      {
+       "prompt": "B — erkakning pufakchasi",
+       "answer": "Can you read this for me, please?",
+       "promptUz": "Buni menga o'qib bera olasizmi?"
+      },
+      {
+       "prompt": "C — bolaning pufakchasi",
+       "answer": "Can you help me up, please?",
+       "promptUz": "Meni turg'aza olasizmi?"
+      },
+      {
+       "prompt": "D — o'qituvchining pufakchasi",
+       "answer": "Can you open your books at page 7, please?",
+       "promptUz": "Kitobingizning 7-betini ocha olasizmi?"
+      }
+     ]
+    },
+    {
+     "ref": "15",
+     "instructionEn": "Read the dialogue and fill in the missing words. Then, listen and check. In pairs, act out similar dialogues using your name, address and phone number.",
+     "instructionUz": "Dialogni o'qing va yetishmayotgan so'zlarni to'ldiring. So'ng eshitib tekshiring. Juftlikda o'z ismingiz, manzilingiz va telefon raqamingiz bilan shunga o'xshash dialog tuzing.",
+     "explanationUz": "Ro'yxatdan o'tish (ro'yxatga yozilish) suhbati. To'rtta ma'lumot so'raladi:\n  1) ism    — What's your name?\n  2) yosh   — How old are you?\n  3) manzil — What's your home address?\n  4) telefon — What's your phone number?\n\nRASMIY muloqot belgilari:\n  • madam / sir — xonim / janob (mijozga murojaat)\n  • Certainly — Albatta (Yes dan muloyimroq)\n  • I'd like to ... — ...moqchiman (I want dan muloyimroq)\n  • Of course — Albatta",
+     "audio": true,
+     "book": "coursebook",
+     "bookPage": 16,
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "A: Certainly, madam. What's your 1) ___ ?",
+       "answer": "name",
+       "promptUz": "Albatta, xonim. Ismingiz nima?",
+       "speak": "A: Certainly, madam. What's your 1) ___ ?"
+      },
+      {
+       "prompt": "A: And 2) ___ are you?",
+       "answer": "how old",
+       "promptUz": "Necha yoshdasiz?",
+       "speak": "A: And 2) ___ are you?"
+      },
+      {
+       "prompt": "A: Right. 3) ___ your home address?",
+       "answer": "What's",
+       "promptUz": "Yaxshi. Uy manzilingiz qanday?",
+       "speak": "A: Right. 3) ___ your home address?"
+      },
+      {
+       "prompt": "A: 4) ___ , Ms Steed. Here's your card. Please, sign it here.",
+       "answer": "Thank you",
+       "promptUz": "Rahmat, Steed xonim. Mana kartangiz. Iltimos, shu yerga imzo cheking.",
+       "speak": "A: 4) ___ , Ms Steed. Here's your card. Please, sign it here."
       }
      ]
     }
@@ -2021,6 +2359,121 @@
    ],
    "book": "coursebook",
    "bookPage": 15
+  },
+  {
+   "ruleUz": "Murojaat shakllari (Mr / Mrs / Ms / Miss)",
+   "explanationUz": "Familiya oldidan qo'yiladi. NUQTA Britan inglizchasida qo'yilmaydi (Mr Harris).",
+   "items": [
+    {
+     "base": "mister",
+     "baseUz": "janob",
+     "derived": "Mr",
+     "derivedUz": "janob",
+     "note": "erkak — turmush holati muhim emas"
+    },
+    {
+     "base": "mistress",
+     "baseUz": "xonim",
+     "derived": "Mrs",
+     "derivedUz": "xonim (turmush qurgan)",
+     "note": "o'qilishi 'misiz'"
+    },
+    {
+     "base": "—",
+     "baseUz": "",
+     "derived": "Ms",
+     "derivedUz": "xonim (betaraf)",
+     "note": "turmush holati aytilmaydi — eng xavfsiz"
+    },
+    {
+     "base": "—",
+     "baseUz": "",
+     "derived": "Miss",
+     "derivedUz": "xonim (turmush qurmagan)",
+     "note": "hozir kamroq ishlatiladi"
+    },
+    {
+     "base": "madam",
+     "baseUz": "xonim",
+     "derived": "madam / sir",
+     "derivedUz": "xonim / janob",
+     "note": "ismsiz murojaat (xizmat ko'rsatishda)"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 16
+  },
+  {
+   "ruleUz": "'double' — ikkilangan harf",
+   "explanationUz": "Harflab aytishda bir xil harf ketma-ket kelsa 'double' deyiladi. Bu tezroq va tabiiyroq.",
+   "items": [
+    {
+     "base": "Anna",
+     "baseUz": "",
+     "derived": "A - double N - A",
+     "derivedUz": "",
+     "note": "nn"
+    },
+    {
+     "base": "Steed",
+     "baseUz": "",
+     "derived": "S - T - double E - D",
+     "derivedUz": "",
+     "note": "ee"
+    },
+    {
+     "base": "Williams",
+     "baseUz": "",
+     "derived": "W - I - double L - I - A - M - S",
+     "derivedUz": "",
+     "note": "ll"
+    },
+    {
+     "base": "Phillips",
+     "baseUz": "",
+     "derived": "P - H - I - double L - I - P - S",
+     "derivedUz": "",
+     "note": "ll"
+    },
+    {
+     "base": "Jimmy",
+     "baseUz": "",
+     "derived": "J - I - double M - Y",
+     "derivedUz": "",
+     "note": "mm"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 16
+  },
+  {
+   "ruleUz": "Muloyimlik darajalari",
+   "explanationUz": "Bir xil ma'no, har xil muloyimlik. Rasmiy vaziyatda o'ngdagisini ishlating.",
+   "items": [
+    {
+     "base": "I want to join",
+     "baseUz": "a'zo bo'lmoqchiman",
+     "derived": "I'd like to join",
+     "derivedUz": "a'zo bo'lmoqchi edim",
+     "note": "muloyimroq"
+    },
+    {
+     "base": "Yes",
+     "baseUz": "ha",
+     "derived": "Certainly / Of course",
+     "derivedUz": "albatta",
+     "note": "rasmiyroq"
+    },
+    {
+     "base": "Give me this",
+     "baseUz": "buni ber",
+     "derived": "Can you give me this, please?",
+     "derivedUz": "buni bera olasizmi?",
+     "note": "buyruq → iltimos"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 16
   }
  ],
  "sentencePatterns": [
@@ -2175,6 +2628,46 @@
    "explanationUz": "Bu yerda 'can' qobiliyat emas — muloyim ILTIMOS. 'please' oxirida, vergul bilan.",
    "book": "coursebook",
    "bookPage": 15
+  },
+  {
+   "formula": "ILTIMOS: Can you + FE'L + ... , please?",
+   "exampleEn": "Can you read this for me, please?",
+   "exampleUz": "Buni menga o'qib bera olasizmi?",
+   "explanationUz": "'please' oxirida, vergul bilan. Buyruq gapdan ('Read this') ancha muloyim.",
+   "book": "coursebook",
+   "bookPage": 16
+  },
+  {
+   "formula": "QOBILIYAT: EGA + can + FE'L + daraja",
+   "exampleEn": "Ann can use the computer very well.",
+   "exampleUz": "Ann kompyuterdan juda yaxshi foydalana oladi.",
+   "explanationUz": "So'roq emas, 'please' yo'q — demak bu qobiliyat, iltimos emas.",
+   "book": "coursebook",
+   "bookPage": 16
+  },
+  {
+   "formula": "IMLO: How do you spell it? → HARF - HARF - double HARF ...",
+   "exampleEn": "How do you spell it? — A - double N - A ... H - U - G - H - E - S.",
+   "exampleUz": "Buni qanday yozasiz? — A - ikkita N - A ...",
+   "explanationUz": "Ism va familiya orasida qisqa pauza. Ikkilangan harf uchun 'double'.",
+   "book": "coursebook",
+   "bookPage": 16
+  },
+  {
+   "formula": "RO'YXAT: What's your name/address? · How old are you? · What's your phone number?",
+   "exampleEn": "What's your home address? — 7, Green Street.",
+   "exampleUz": "Uy manzilingiz qanday? — Green ko'chasi, 7-uy.",
+   "explanationUz": "Manzil ingliz tilida TESKARI tartibda: uy raqami → ko'cha → shahar.\nO'zbekchada 'Green ko'chasi, 7-uy', inglizchada '7, Green Street'.",
+   "book": "coursebook",
+   "bookPage": 16
+  },
+  {
+   "formula": "XIZMAT: Can I help you? → Yes please. I'd like to ...",
+   "exampleEn": "Can I help you? — Yes please. I'd like to join the tennis club.",
+   "exampleUz": "Yordam bera olamanmi? — Ha, iltimos. Tennis klubiga a'zo bo'lmoqchiman.",
+   "explanationUz": "Do'kon, klub, bankda eng ko'p eshitiladigan savol. Javobda 'I'd like to' — muloyim shakl.",
+   "book": "coursebook",
+   "bookPage": 16
   }
  ],
  "vocabulary": [
@@ -2541,6 +3034,82 @@
   {
    "en": "but",
    "uz": "lekin"
+  },
+  {
+   "en": "request",
+   "uz": "iltimos"
+  },
+  {
+   "en": "to help someone up",
+   "uz": "turg'azmoq"
+  },
+  {
+   "en": "to sign",
+   "uz": "imzo chekmoq"
+  },
+  {
+   "en": "to spell",
+   "uz": "harflab aytmoq"
+  },
+  {
+   "en": "double",
+   "uz": "ikkita (bir xil harf)"
+  },
+  {
+   "en": "madam",
+   "uz": "xonim (murojaat)"
+  },
+  {
+   "en": "sir",
+   "uz": "janob (murojaat)"
+  },
+  {
+   "en": "Certainly",
+   "uz": "Albatta"
+  },
+  {
+   "en": "Of course",
+   "uz": "Albatta"
+  },
+  {
+   "en": "I'd like to ...",
+   "uz": "...moqchiman"
+  },
+  {
+   "en": "to join",
+   "uz": "a'zo bo'lmoq, qo'shilmoq"
+  },
+  {
+   "en": "tennis club",
+   "uz": "tennis klubi"
+  },
+  {
+   "en": "home address",
+   "uz": "uy manzili"
+  },
+  {
+   "en": "phone number",
+   "uz": "telefon raqami"
+  },
+  {
+   "en": "card",
+   "uz": "karta, guvohnoma"
+  },
+  {
+   "en": "trumpet",
+   "uz": "karnay"
+  },
+  {
+   "en": "to use",
+   "uz": "foydalanmoq"
+  },
+  {
+   "en": "How much is it?",
+   "uz": "Bu qancha turadi?"
+  },
+  {
+   "en": "Mr / Mrs / Ms",
+   "uz": "janob / xonim"
   }
  ]
 }
