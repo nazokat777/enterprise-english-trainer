@@ -157,7 +157,52 @@ def main() -> int:
     )
     print(f"\nYuklandi: {ok} | o'tkazildi: {skipped} | xato: {failed}")
     print(f"Mualliflik ma'lumoti -> {CREDITS}")
+
+    sheet = contact_sheet()
+    if sheet:
+        print(f"\n{'='*62}")
+        print("TEKSHIRUV JADVALI:", sheet)
+        print("HAR BIR RASMNI KO'ZDAN KECHIRING — qidiruv natijasi ko'pincha")
+        print("noto'g'ri chiqadi (masalan 'Brazil farmers' -> Senat majlisi,")
+        print("'Statue of Liberty' -> 11-sentabr surati).")
+        print("=" * 62)
     return 0 if failed == 0 else 1
+
+
+def contact_sheet(cols: int = 5, cw: int = 300, ch: int = 230):
+    """Yuklangan rasmlarni bitta jadvalga yig'adi — ko'z bilan tekshirish uchun.
+
+    MAJBURIY QADAM: avtomatik qidiruv ishonchsiz. Rasmlarni ko'rmasdan
+    ilovaga qo'yish mumkin emas.
+    """
+    try:
+        from PIL import Image, ImageDraw
+    except ImportError:
+        return None
+    files = sorted(OUT.glob("*.jpg"))
+    if not files:
+        return None
+    pad, lab = 8, 26
+    rows = (len(files) + cols - 1) // cols
+    sheet = Image.new(
+        "RGB", (cols * (cw + pad) + pad, rows * (ch + lab + pad) + pad), "white"
+    )
+    d = ImageDraw.Draw(sheet)
+    for i, f in enumerate(files):
+        r, c = divmod(i, cols)
+        x, y = pad + c * (cw + pad), pad + r * (ch + lab + pad)
+        try:
+            im = Image.open(f).convert("RGB")
+            im.thumbnail((cw, ch))
+            sheet.paste(im, (x + (cw - im.width) // 2, y + (ch - im.height) // 2))
+        except Exception:  # noqa: BLE001
+            d.text((x + 6, y + 6), "OCHILMADI", fill="red")
+        d.text((x + 4, y + ch + 4), f.stem.replace("u1-", ""), fill="black")
+    # Jadval assets ICHIDA saqlanmaydi — aks holda ilovaga qo'shilib ketadi.
+    out = TRAINER / "data" / "tekshiruv_jadvali.png"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    sheet.save(out)
+    return out
 
 
 if __name__ == "__main__":
