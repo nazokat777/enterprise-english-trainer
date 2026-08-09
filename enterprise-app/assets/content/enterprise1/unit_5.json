@@ -2149,6 +2149,944 @@
    }
   },
   {
+   "id": "u5-grammar-22-19",
+   "kind": "grammar_theory",
+   "title": "Adverbs of Frequency",
+   "titleUz": "Takrorlanish ravishlari",
+   "book": "grammar",
+   "bookPage": 22,
+   "exercises": [
+    {
+     "ref": "1",
+     "instructionEn": "Put the words into the correct order to form sentences, as in the example.",
+     "instructionUz": "So'zlarni to'g'ri tartibga qo'yib, gap tuzing.",
+     "explanationUz": "SO'Z TARTIBI QOIDASI:\n\n  EGA + (RAVISH) + FE'L + TO'LDIRUVCHI + JOY + VAQT\n\nNAMUNA:\n  at / the morning / he / seven o'clock / in / gets up\n  → He gets up at seven o'clock in the morning.\n     ↑    ↑        ↑                ↑\n    ega  fe'l    aniq vaqt      umumiy vaqt\n\nVAQT IFODALARI TARTIBI: ANIQDAN UMUMIYGA\n  at seven o'clock (aniq) → in the morning (umumiy)\n  ✅ at seven o'clock in the morning\n  ❌ in the morning at seven o'clock\n\nRAVISH QAYERDA:\n  oddiy fe'l bilan → fe'ldan OLDIN\n  'to be' bilan    → fe'ldan KEYIN",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 22,
+     "bookRef": "Grammar Book, 22-bet, 1-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "at / the morning / he / seven o'clock / in / gets up",
+       "answer": "He gets up at seven o'clock in the morning.",
+       "whyUz": "Kitobdagi namuna. Ega + fe'l + aniq vaqt + umumiy vaqt.",
+       "speak": "at / the morning / he / seven o'clock / in / gets up"
+      },
+      {
+       "prompt": "car / often / Bob / the / washes",
+       "answer": "Bob often washes the car.",
+       "whyUz": "'often' — oddiy fe'l 'washes' dan OLDIN. Ega + ravish + fe'l + to'ldiruvchi.",
+       "speak": "car / often / Bob / the / washes"
+      },
+      {
+       "prompt": "born / 1964 / was / in / Jane",
+       "answer": "Jane was born in 1964.",
+       "whyUz": "'was born' = tug'ilgan. Yil bilan IN predlogi.",
+       "speak": "born / 1964 / was / in / Jane"
+      },
+      {
+       "prompt": "breakfast / I / the morning / have / rarely / in",
+       "answer": "I rarely have breakfast in the morning.",
+       "whyUz": "'rarely' — fe'l 'have' dan OLDIN. 'in the morning' gap oxirida.",
+       "speak": "breakfast / I / the morning / have / rarely / in"
+      },
+      {
+       "prompt": "leave / what / you / work / time / do / for?",
+       "answer": "What time do you leave for work?",
+       "whyUz": "So'roq so'zi ('What time') eng oldinda, keyin yordamchi 'do', keyin ega. 'leave FOR work' — ishga ketmoq.",
+       "speak": "leave / what / you / work / time / do / for?"
+      },
+      {
+       "prompt": "never / bed / she / early / goes / to",
+       "answer": "She never goes to bed early.",
+       "whyUz": "'never' — fe'l 'goes' dan OLDIN. 'go to bed' — 'the' YO'Q. 'early' gap oxirida.",
+       "speak": "never / bed / she / early / goes / to"
+      }
+     ]
+    },
+    {
+     "ref": "2",
+     "instructionEn": "What do you usually/never/always/often/sometimes/rarely do on Mondays? Choose from the list, as in the example.",
+     "instructionUz": "Dushanba kunlari odatda / hech qachon / doim / tez-tez / ba'zan / kamdan-kam nima qilasiz? Ro'yxatdan tanlang.",
+     "explanationUz": "RO'YXAT (8 ta ibora):\n  get up early         — erta turmoq\n  clean my room        — xonamni tozalamoq\n  play football        — futbol o'ynamoq\n  go for a walk        — sayrga chiqmoq\n  go to school         — maktabga bormoq\n  watch TV             — televizor ko'rmoq\n  play computer games  — kompyuter o'yini o'ynamoq\n  go out with friends  — do'stlar bilan sayrga chiqmoq\n\nNAMUNA:\n  I USUALLY get up early on Mondays.\n\nQOLIP:\n  I + RAVISH + fe'l + ON MONDAYS.\n\nDIQQAT:\n  'on Mondays' — KO'PLIKDA, 'har dushanba' degani\n  'I' bilan fe'l -s OLMAYDI (get, play, watch — s siz)\n  ravish fe'ldan OLDIN turadi",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 22,
+     "bookRef": "Grammar Book, 22-bet, 2-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "clean my room",
+       "answer": "I rarely clean my room on Mondays.",
+       "promptUz": "Dushanba kunlari kamdan-kam xonamni tozalayman.",
+       "speak": "clean my room"
+      },
+      {
+       "prompt": "play football",
+       "answer": "I often play football on Mondays.",
+       "promptUz": "Dushanba kunlari tez-tez futbol o'ynayman.",
+       "speak": "play football"
+      },
+      {
+       "prompt": "go for a walk",
+       "answer": "I sometimes go for a walk on Mondays.",
+       "promptUz": "Dushanba kunlari ba'zan sayrga chiqaman.",
+       "speak": "go for a walk"
+      },
+      {
+       "prompt": "go to school",
+       "answer": "I always go to school on Mondays.",
+       "promptUz": "Dushanba kunlari doim maktabga boraman.",
+       "speak": "go to school"
+      },
+      {
+       "prompt": "watch TV",
+       "answer": "I usually watch TV on Mondays.",
+       "promptUz": "Dushanba kunlari odatda televizor ko'raman.",
+       "speak": "watch TV"
+      },
+      {
+       "prompt": "play computer games",
+       "answer": "I sometimes play computer games on Mondays.",
+       "promptUz": "Dushanba kunlari ba'zan kompyuter o'yini o'ynayman.",
+       "speak": "play computer games"
+      },
+      {
+       "prompt": "go out with friends",
+       "answer": "I never go out with friends on Mondays.",
+       "promptUz": "Dushanba kunlari hech qachon do'stlar bilan sayrga chiqmayman.",
+       "speak": "go out with friends"
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "titleUz": "Takrorlanish ravishlari va ularning aniq o'rni",
+    "explanationUz": "RAVISHLAR: always, usually, often, never, rarely, sometimes\n\nGrammar Book qoidani Coursebook'dagidan ANIQROQ beradi —\nUCHTA holat bor:\n\n  1) ASOSIY fe'ldan OLDIN\n     I NEVER get up early on Sundays.\n     He RARELY goes to the zoo.\n     She SOMETIMES has a sandwich for lunch.\n\n  2) YORDAMCHI fe'ldan (do, does) KEYIN\n     Do you OFTEN walk to work?\n\n  3) 'to be' fe'lidan KEYIN\n     Mum is USUALLY home by four.\n     He is ALWAYS late for work.\n\nOSON ESLAB QOLISH:\n  Ravish DOIM birinchi fe'ldan keyin turadi —\n  agar birinchi fe'l yordamchi yoki 'to be' bo'lsa.\n  Agar bitta fe'l bo'lsa va u 'to be' bo'lmasa — ravish OLDIN.",
+    "rules": [
+     {
+      "uzRule": "Takrorlanish ravishlari ASOSIY fe'ldan OLDIN keladi.",
+      "enRule": "Adverbs of frequency usually come before the main verb.",
+      "examples": [
+       "I never get up early on Sundays.",
+       "He rarely goes to the zoo. (= not often)",
+       "She sometimes has a sandwich for lunch."
+      ]
+     },
+     {
+      "uzRule": "LEKIN YORDAMCHI fe'ldan (do, does) KEYIN keladi.",
+      "enRule": "But they come after the auxiliary verb (do, does, etc).",
+      "examples": [
+       "Do you often walk to work?"
+      ]
+     },
+     {
+      "uzRule": "Va 'to be' fe'lidan ham KEYIN keladi.",
+      "enRule": "And after the verb to be.",
+      "examples": [
+       "Mum is usually home by four.",
+       "He is always late for work."
+      ]
+     },
+     {
+      "uzRule": "Ular ish QANCHALIK TEZ-TEZ sodir bo'lishini aytadi.",
+      "enRule": "They tell us how often something happens.",
+      "examples": [
+       "always 100% > usually 75% > often 50% > sometimes 25% > rarely 10% > never 0%"
+      ]
+     }
+    ],
+    "warningUz": "'RARELY' = 'NOT OFTEN' — kitob buni alohida ta'kidlaydi.\n  He rarely goes to the zoo. = He doesn't often go to the zoo.\n\n'rarely' va 'never' O'ZLARI INKOR ma'nosini beradi —\nqo'shimcha 'not' QO'SHILMAYDI:\n  ✅ He rarely goes.     ❌ He doesn't rarely go.\n  ✅ I never get up early. ❌ I don't never get up early.",
+    "noteUz": "SAVOLDA ravish qayerda turadi:\n  Do you OFTEN walk to work?\n   ↑    ↑     ↑\n  yordamchi ega ravish\n\nYa'ni: Do + EGA + RAVISH + asosiy fe'l?\n\nINKORDA:\n  I don't USUALLY get up early.\n  ('don't' — yordamchi, ravish undan keyin)",
+    "extraUz": "'BY' + vaqt — qiziq qo'llanish:\n  Mum is usually home BY four.\n  = Onam odatda soat to'rtgacha uyda bo'ladi.\n\n  'by four' = to'rtgacha (to'rtdan kech emas)\n  'at four' = aynan soat to'rtda\n  'until four' = to'rtgacha (davomiylik)\n\nFarqni ko'ring:\n  I'll be home BY six.    — oltigacha (balki beshda ham)\n  I'll be home AT six.    — aynan oltida"
+   }
+  },
+  {
+   "id": "u5-grammar-22-20",
+   "kind": "grammar_theory",
+   "title": "Prepositions of Time: at, in, on",
+   "titleUz": "Vaqt predloglari: at, in, on",
+   "book": "grammar",
+   "bookPage": 22,
+   "exercises": [
+    {
+     "ref": "22-predlog",
+     "instructionEn": "Choose at, in or on.",
+     "instructionUz": "at, in yoki on — birini tanlang.",
+     "explanationUz": "Kitobdagi barcha misollarni mashq qiling.\nHar birida NIMA turganiga qarang: soat, kun, oy, fasl, yil?",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 22,
+     "bookRef": "Grammar Book, 22-bet, Prepositions of Time",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "The match starts ____ three o'clock.",
+       "answer": "at",
+       "promptUz": "soat",
+       "options": [
+        "at",
+        "in",
+        "on"
+       ],
+       "whyUz": "Soat → AT. 'a match' = musobaqa, o'yin."
+      },
+      {
+       "prompt": "We often visit our grandparents ____ the weekend.",
+       "answer": "at",
+       "promptUz": "dam olish kunlari",
+       "options": [
+        "at",
+        "in",
+        "on"
+       ],
+       "whyUz": "'the weekend' — qoidada aynan sanalgan → AT."
+      },
+      {
+       "prompt": "They go on holiday ____ August.",
+       "answer": "in",
+       "promptUz": "oy",
+       "options": [
+        "in",
+        "at",
+        "on"
+       ],
+       "whyUz": "Oy → IN. 'go on holiday' = ta'tilga chiqmoq."
+      },
+      {
+       "prompt": "School starts ____ the autumn.",
+       "answer": "in",
+       "promptUz": "fasl",
+       "options": [
+        "in",
+        "at",
+        "on"
+       ],
+       "whyUz": "Fasl → IN. 'autumn' — kuz (AQShda 'fall')."
+      },
+      {
+       "prompt": "He was born ____ 1959.",
+       "answer": "in",
+       "promptUz": "yil",
+       "options": [
+        "in",
+        "at",
+        "on"
+       ],
+       "whyUz": "Yil → IN."
+      },
+      {
+       "prompt": "He always watches TV ____ the evening.",
+       "answer": "in",
+       "promptUz": "kun qismi, kun nomi yo'q",
+       "options": [
+        "in",
+        "at",
+        "on"
+       ],
+       "whyUz": "'the evening' (kun nomisiz) → IN."
+      },
+      {
+       "prompt": "Is the show ____ Saturday?",
+       "answer": "on",
+       "promptUz": "hafta kuni",
+       "options": [
+        "on",
+        "in",
+        "at"
+       ],
+       "whyUz": "Hafta kuni → ON."
+      },
+      {
+       "prompt": "Mum always makes us a special breakfast ____ Sunday mornings.",
+       "answer": "on",
+       "promptUz": "kun NOMI bilan ertalab",
+       "options": [
+        "on",
+        "in",
+        "at"
+       ],
+       "whyUz": "Kun NOMI bor ('Sunday') → ON. 'in the mornings' bo'lardi, lekin bu yerda kun aytilgan."
+      },
+      {
+       "prompt": "She was born ____ Friday the 2nd of August ...",
+       "answer": "on",
+       "promptUz": "kun va sana",
+       "options": [
+        "on",
+        "in",
+        "at"
+       ],
+       "whyUz": "Kun va sana → ON."
+      },
+      {
+       "prompt": "She was born on Friday the 2nd of August ____ 1991.",
+       "answer": "in",
+       "promptUz": "yil",
+       "options": [
+        "in",
+        "on",
+        "at"
+       ],
+       "whyUz": "Yil → IN. Bir gapda ikkala predlog: ON (sana) va IN (yil)."
+      },
+      {
+       "prompt": "I never work ____ night.",
+       "answer": "at",
+       "promptUz": "tun",
+       "options": [
+        "at",
+        "in",
+        "on"
+       ],
+       "whyUz": "ISTISNO: at night."
+      },
+      {
+       "prompt": "We have lunch ____ noon.",
+       "answer": "at",
+       "promptUz": "tush payti",
+       "options": [
+        "at",
+        "in",
+        "on"
+       ],
+       "whyUz": "ISTISNO: at noon."
+      }
+     ]
+    },
+    {
+     "ref": "22-katta-harf",
+     "instructionEn": "Note: We write months and days of the week with a capital letter.",
+     "instructionUz": "Eslatma: oylar va hafta kunlari KATTA harf bilan yoziladi.",
+     "explanationUz": "KATTA HARF QOIDASI (kitobdagi yulduzchali eslatma):\n\n  KATTA harf bilan:\n    oylar:       January, February, March, ...\n    hafta kunlari: Monday, Tuesday, Wednesday, ...\n    millat:      English, Uzbek, Spanish\n    mamlakat:    England, Uzbekistan\n    tillar:      English, Uzbek\n\n  KICHIK harf bilan:\n    fasllar:     spring, summer, autumn, winter\n    kun qismlari: morning, afternoon, evening, night\n\nBu farqni yodda tuting — fasllar KATTA harf bilan YOZILMAYDI!",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 22,
+     "bookRef": "Grammar Book, 22-bet, Note",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "Oyni to'g'ri yozing: august →",
+       "answer": "August",
+       "whyUz": "Oylar KATTA harf bilan."
+      },
+      {
+       "prompt": "Kunni to'g'ri yozing: saturday →",
+       "answer": "Saturday",
+       "whyUz": "Hafta kunlari KATTA harf bilan."
+      },
+      {
+       "prompt": "Kunni to'g'ri yozing: sunday mornings →",
+       "answer": "Sunday mornings",
+       "whyUz": "'Sunday' katta, 'mornings' kichik."
+      },
+      {
+       "prompt": "Faslni to'g'ri yozing: the Autumn →",
+       "answer": "the autumn",
+       "whyUz": "Fasllar KICHIK harf bilan — bu oylardan farqli!"
+      },
+      {
+       "prompt": "Faslni to'g'ri yozing: Summer →",
+       "answer": "summer",
+       "whyUz": "Fasl — kichik harf."
+      },
+      {
+       "prompt": "Kun qismini to'g'ri yozing: the Evening →",
+       "answer": "the evening",
+       "whyUz": "Kun qismi — kichik harf."
+      }
+     ]
+    }
+   ],
+   "rule": {
+    "titleUz": "AT / IN / ON — to'liq qoida va misollar",
+    "explanationUz": "UCHTA PREDLOG, har biri o'z guruhiga ega.\n\nOSON ESLAB QOLISH — ANIQLIKDAN UMUMIYLIKKA:\n\n  AT → eng ANIQ nuqta (soat)\n  ON → bir KUN\n  IN → uzun DAVR (oy, fasl, yil)\n\nKichikdan kattaga: AT < ON < IN\n  at three o'clock  <  on Saturday  <  in August  <  in 1959",
+    "table": [
+     {
+      "subject": "AT",
+      "full": "at three o'clock, at the weekend, at night, at noon",
+      "short": "soat va istisnolar"
+     },
+     {
+      "subject": "IN",
+      "full": "in August, in the autumn, in 1959, in the evening",
+      "short": "oy, fasl, yil, kun qismi"
+     },
+     {
+      "subject": "ON",
+      "full": "on Saturday, on Sunday mornings, on Friday the 2nd of August",
+      "short": "kun, kun qismi (nomi bilan), sana"
+     }
+    ],
+    "keyRules": [
+     {
+      "uzRule": "AT — soat bilan va 'the weekend', 'night', 'noon' bilan.",
+      "enRule": "We use at with time and with the weekend, night and noon.",
+      "examples": [
+       "The match starts at three o'clock.",
+       "We often visit our grandparents at the weekend."
+      ]
+     },
+     {
+      "uzRule": "IN — oy, fasl, yil bilan va 'the morning / the evening / the afternoon' iboralari bilan.",
+      "enRule": "We use in with months, seasons, years and with the expressions the morning/the evening/the afternoon.",
+      "examples": [
+       "They go on holiday in August.",
+       "School starts in the autumn.",
+       "He was born in 1959.",
+       "He always watches TV in the evening."
+      ]
+     },
+     {
+      "uzRule": "ON — hafta kunlari, ANIQ kunning qismlari va sanalar bilan.",
+      "enRule": "We use on with days of the week, parts of a particular day and dates.",
+      "examples": [
+       "Is the show on Saturday?",
+       "Mum always makes us a special breakfast on Sunday mornings.",
+       "She was born on Friday the 2nd of August in 1991."
+      ]
+     }
+    ],
+    "warningUz": "KITOBDAGI YULDUZCHALI ESLATMA:\n  'We write months and days of the week with a CAPITAL LETTER.'\n\n  ✅ August, Saturday, Sunday, March\n  ❌ august, saturday, sunday, march\n\nBu o'zbek tilida yo'q qoida — shuning uchun eng ko'p unutiladi.\n\nDIQQAT: FASLLAR kichik harf bilan yoziladi!\n  ✅ in the autumn, in summer, in spring\n  (oylar va kunlar — katta harf, fasllar — kichik)",
+    "noteUz": "ENG CHALKASH JOY — 'morning/evening/afternoon':\n\n  IN the morning        — umuman ertalab\n  ON Sunday mornings    — yakshanba ertalablari (kun NOMI bor!)\n  ON Friday evening     — juma kechqurun\n\nQOIDA: kun nomi bo'lsa → ON, bo'lmasa → IN.\n\nVa 'night' butunlay boshqacha:\n  at night   (in the night EMAS)\n  on Friday night (kun nomi bor → ON)",
+    "extraUz": "TO'LIQ SANADA IKKI PREDLOG:\n  She was born ON Friday the 2nd of August IN 1991.\n                ↑ kun va sana              ↑ yil\n\nYa'ni kun-sana uchun ON, yil uchun IN — bir gapda ikkalasi.\n\nSANA O'QILISHI:\n  Friday the 2nd of August\n  = 'Friday the second of August'\n  ('the' va 'of' SHART)"
+   }
+  },
+  {
+   "id": "u5-grammar-23-21",
+   "kind": "grammar_exercise",
+   "title": "Prepositions of Time",
+   "titleUz": "Vaqt predloglari",
+   "book": "grammar",
+   "bookPage": 23,
+   "exercises": [
+    {
+     "ref": "3",
+     "instructionEn": "Fill in at, in or on, then underline the adverbs of frequency.",
+     "instructionUz": "at, in yoki on ni qo'ying, so'ng takrorlanish ravishlarini toping.",
+     "explanationUz": "MATN — Anjela Devis, o'qituvchining kundalik tartibi.\n\nIKKI VAZIFA BIR VAQTDA:\n  1) 10 ta predlog bo'shlig'ini to'ldirish\n  2) matndagi BARCHA takrorlanish ravishlarini topish\n\nPREDLOG TANLASH:\n  soat (7 o'clock, 8:30, half past seven) → AT\n  kun qismi (the morning, the evenings)   → IN\n  kun nomi (weekdays, Saturdays, Sunday mornings) → ON\n\nDIQQAT: 7 va 9-bo'shliqlar GAP BOSHIDA — katta harf bilan.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 23,
+     "bookRef": "Grammar Book, 23-bet, 3-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "She always gets up 1) ____ 7 o'clock ...",
+       "answer": "at",
+       "promptUz": "'7 o'clock' — SOAT",
+       "whyUz": "Soat → AT. RAVISH: 'always' — 'gets up' dan oldin.",
+       "speak": "She always gets up 1) ____ 7 o'clock ..."
+      },
+      {
+       "prompt": "... 2) ____ the morning ...",
+       "answer": "in",
+       "promptUz": "'the morning' — kun qismi, kun nomi yo'q",
+       "whyUz": "Kun qismi → IN the morning.",
+       "speak": "... 2) ____ the morning ..."
+      },
+      {
+       "prompt": "... 3) ____ weekdays.",
+       "answer": "on",
+       "promptUz": "'weekdays' — kunlar",
+       "whyUz": "Kunlar → ON weekdays (= dushanbadan jumagacha).",
+       "speak": "... 3) ____ weekdays."
+      },
+      {
+       "prompt": "She always has a shower and she usually has breakfast 4) ____ about half past seven.",
+       "answer": "at",
+       "promptUz": "'half past seven' — SOAT",
+       "whyUz": "Soat → AT. RAVISHLAR: 'always' va 'usually' — ikkalasi ham fe'ldan oldin.",
+       "speak": "She always has a shower and she usually has breakfast 4) ____ about half past seven."
+      },
+      {
+       "prompt": "She gets to school 5) ____ 8:30 ...",
+       "answer": "at",
+       "promptUz": "'8:30' — SOAT",
+       "whyUz": "Soat → AT. 'get to' = yetib bormoq.",
+       "speak": "She gets to school 5) ____ 8:30 ..."
+      },
+      {
+       "prompt": "She leaves work 6) ____ 4 o'clock and rarely gets home after five.",
+       "answer": "at",
+       "promptUz": "'4 o'clock' — SOAT",
+       "whyUz": "Soat → AT. RAVISH: 'rarely' — 'gets' dan oldin. 'leave work' = ishdan chiqmoq.",
+       "speak": "She leaves work 6) ____ 4 o'clock and rarely gets home after five."
+      },
+      {
+       "prompt": "7) ____ the evenings Angela cooks or listens to music.",
+       "answer": "In",
+       "promptUz": "Kun qismi, gap BOSHIDA",
+       "whyUz": "Kun qismi → IN the evenings. Gap boshida katta harf.",
+       "speak": "7) ____ the evenings Angela cooks or listens to music."
+      },
+      {
+       "prompt": "She usually goes to bed 8) ____ about half past eleven.",
+       "answer": "at",
+       "promptUz": "'half past eleven' — SOAT",
+       "whyUz": "Soat → AT. RAVISH: 'usually' — 'goes' dan oldin.",
+       "speak": "She usually goes to bed 8) ____ about half past eleven."
+      },
+      {
+       "prompt": "9) ____ Saturdays, she often sees her friends.",
+       "answer": "On",
+       "promptUz": "Kun nomi, gap BOSHIDA",
+       "whyUz": "Kun nomi → ON Saturdays. Gap boshida katta harf. RAVISH: 'often'.",
+       "speak": "9) ____ Saturdays, she often sees her friends."
+      },
+      {
+       "prompt": "Angela never gets up early 10) ____ Sunday mornings.",
+       "answer": "on",
+       "promptUz": "Kun NOMI bor — 'Sunday mornings'",
+       "whyUz": "Kun nomi bo'lsa ON ('in the mornings' EMAS). RAVISH: 'never'.",
+       "speak": "Angela never gets up early 10) ____ Sunday mornings."
+      }
+     ]
+    },
+    {
+     "ref": "3b",
+     "instructionEn": "Then underline the adverbs of frequency.",
+     "instructionUz": "Matndagi takrorlanish ravishlarini toping.",
+     "explanationUz": "Matnda TO'QQIZ ta takrorlanish ravishi bor.\nHar birini toping va qaysi fe'lga tegishli ekanini ayting.\n\nESLATMA — ravish o'rni:\n  oddiy fe'l bilan → OLDIN\n  'to be' bilan    → KEYIN\n  'sometimes' esa gap BOSHIDA yoki EGADAN OLDIN ham kelishi mumkin",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 23,
+     "bookRef": "Grammar Book, 23-bet, 3-mashq (ravishlar)",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "She ____ gets up at 7 o'clock. (100%)",
+       "answer": "always",
+       "whyUz": "100% → always. Fe'l 'gets up' dan oldin.",
+       "speak": "She ____ gets up at 7 o'clock. (100%)"
+      },
+      {
+       "prompt": "She ____ has a shower. (100%)",
+       "answer": "always",
+       "whyUz": "Ikkinchi 'always' — 'has' dan oldin.",
+       "speak": "She ____ has a shower. (100%)"
+      },
+      {
+       "prompt": "She ____ has breakfast at about half past seven. (75%)",
+       "answer": "usually",
+       "whyUz": "75% → usually.",
+       "speak": "She ____ has breakfast at about half past seven. (75%)"
+      },
+      {
+       "prompt": "____ she corrects homework before the lessons. (25%)",
+       "answer": "sometimes",
+       "whyUz": "25% → sometimes. Bu yerda EGADAN OLDIN turibdi — 'sometimes' uchun bu ham to'g'ri.",
+       "speak": "____ she corrects homework before the lessons. (25%)"
+      },
+      {
+       "prompt": "She ____ gets home after five. (10%)",
+       "answer": "rarely",
+       "whyUz": "10% → rarely. 'not often' bilan bir xil ma'no.",
+       "speak": "She ____ gets home after five. (10%)"
+      },
+      {
+       "prompt": "She ____ goes to bed at about half past eleven. (75%)",
+       "answer": "usually",
+       "whyUz": "75% → usually.",
+       "speak": "She ____ goes to bed at about half past eleven. (75%)"
+      },
+      {
+       "prompt": "On Saturdays, she ____ sees her friends. (50%)",
+       "answer": "often",
+       "whyUz": "50% → often.",
+       "speak": "On Saturdays, she ____ sees her friends. (50%)"
+      },
+      {
+       "prompt": "They ____ go out for dinner. (75%)",
+       "answer": "usually",
+       "whyUz": "75% → usually. 'go out for dinner' = kechki ovqatga chiqmoq.",
+       "speak": "They ____ go out for dinner. (75%)"
+      },
+      {
+       "prompt": "Angela ____ gets up early on Sunday mornings. (0%)",
+       "answer": "never",
+       "whyUz": "0% → never. O'zi inkor — 'doesn't' kerak emas.",
+       "speak": "Angela ____ gets up early on Sunday mornings. (0%)"
+      }
+     ]
+    },
+    {
+     "ref": "4",
+     "instructionEn": "Fill in on, in or at.",
+     "instructionUz": "on, in yoki at ni qo'ying.",
+     "explanationUz": "O'nta gap, ba'zilarida IKKI bo'shliq.\n\nQOIDANI ESLANG:\n  AT — soat, the weekend, night, noon\n  ON — hafta kunlari, aniq kunning qismlari, sanalar\n  IN — oylar, fasllar, yillar, the morning/evening/afternoon",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 23,
+     "bookRef": "Grammar Book, 23-bet, 4-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "1  I usually wake up ____ 6 o'clock ... (1-bo'shliq)",
+       "answer": "at",
+       "promptUz": "soat",
+       "options": [
+        "at",
+        "in",
+        "on"
+       ],
+       "whyUz": "Soat → AT."
+      },
+      {
+       "prompt": "1  ... ____ the morning. (2-bo'shliq)",
+       "answer": "in",
+       "promptUz": "kun qismi",
+       "options": [
+        "in",
+        "at",
+        "on"
+       ],
+       "whyUz": "Kun qismi (kun nomisiz) → IN."
+      },
+      {
+       "prompt": "2  Joe never goes shopping ____ Saturdays.",
+       "answer": "on",
+       "promptUz": "hafta kuni",
+       "options": [
+        "on",
+        "in",
+        "at"
+       ],
+       "whyUz": "Hafta kuni → ON. 'on Saturdays' = har shanba."
+      },
+      {
+       "prompt": "3  Hurry! The film starts ____ 8 o'clock.",
+       "answer": "at",
+       "promptUz": "soat",
+       "options": [
+        "at",
+        "in",
+        "on"
+       ],
+       "whyUz": "Soat → AT. 'Hurry!' = shosh!"
+      },
+      {
+       "prompt": "4  I often get up late ____ Monday mornings.",
+       "answer": "on",
+       "promptUz": "kun NOMI bilan ertalab",
+       "options": [
+        "on",
+        "in",
+        "at"
+       ],
+       "whyUz": "Kun nomi bor → ON ('in the mornings' EMAS)."
+      },
+      {
+       "prompt": "5  What do you do ____ the evening?",
+       "answer": "in",
+       "promptUz": "kun qismi, kun nomi yo'q",
+       "options": [
+        "in",
+        "at",
+        "on"
+       ],
+       "whyUz": "Kun qismi → IN the evening."
+      },
+      {
+       "prompt": "6  Kelly often meets her friends ____ weekends.",
+       "answer": "at",
+       "promptUz": "dam olish kunlari",
+       "options": [
+        "at",
+        "on",
+        "in"
+       ],
+       "whyUz": "Britan inglizchasida 'at weekends' / 'at the weekend'. AQShda 'on weekends'."
+      },
+      {
+       "prompt": "7  Howard was born ____ 1st December, ... (1-bo'shliq)",
+       "answer": "on",
+       "promptUz": "sana",
+       "options": [
+        "on",
+        "in",
+        "at"
+       ],
+       "whyUz": "Sana → ON. '1st December' = the first of December."
+      },
+      {
+       "prompt": "7  ... ____ 1971. (2-bo'shliq)",
+       "answer": "in",
+       "promptUz": "yil",
+       "options": [
+        "in",
+        "on",
+        "at"
+       ],
+       "whyUz": "Yil → IN. Bir gapda ikkala predlog."
+      },
+      {
+       "prompt": "8  She loves going for walks ____ the spring.",
+       "answer": "in",
+       "promptUz": "fasl",
+       "options": [
+        "in",
+        "at",
+        "on"
+       ],
+       "whyUz": "Fasl → IN. 'spring' kichik harf bilan."
+      },
+      {
+       "prompt": "9  We usually go on holiday ____ July.",
+       "answer": "in",
+       "promptUz": "oy",
+       "options": [
+        "in",
+        "at",
+        "on"
+       ],
+       "whyUz": "Oy → IN. 'July' KATTA harf bilan."
+      },
+      {
+       "prompt": "10  I like working in the garden ____ Sunday afternoons.",
+       "answer": "on",
+       "promptUz": "kun NOMI bilan kunduzi",
+       "options": [
+        "on",
+        "in",
+        "at"
+       ],
+       "whyUz": "Kun nomi bor → ON ('in the afternoons' EMAS)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5-grammar-23-22",
+   "kind": "grammar_exercise",
+   "title": "Revision: Units 1 - 5",
+   "titleUz": "Takrorlash: 1–5-unitlar",
+   "book": "grammar",
+   "bookPage": 23,
+   "exercises": [
+    {
+     "ref": "5",
+     "instructionEn": "Fill in do(n't), does(n't), am(not), is(n't) or are(n't).",
+     "instructionUz": "do(n't), does(n't), am(not), is(n't) yoki are(n't) — birini qo'ying.",
+     "explanationUz": "IKKI GURUH FE'L — ularni ADASHTIRMANG:\n\n  'to be' fe'li: am / is / are\n    Sifat, ot yoki JOY bilan ishlatiladi:\n      Are you Mr Stewart?      (ot)\n      Are they from Argentina? (kelib chiqish)\n      Are the children in the garden?  (joy)\n      I am an Oasis fan.       (ot)\n\n  'do/does' yordamchi fe'li:\n    ODDIY FE'L bilan ishlatiladi:\n      Does Brian get up early?  ('get up' fe'li)\n      Do you watch TV?          ('watch' fe'li)\n      Does he make dinner?      ('make' fe'li)\n\nTEKSHIRUV: gapda oddiy fe'l bormi?\n  Bor  → do / does\n  Yo'q → am / is / are\n\nEGAGA QARAB:\n  I → am / do\n  he, she, it → is / does\n  you, we, they → are / do",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 23,
+     "bookRef": "Grammar Book, 23-bet, 5-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1 A: ____ Brian get up early?",
+       "answer": "Does",
+       "promptUz": "'get up' — oddiy fe'l; 'Brian' — 3-shaxs birlik",
+       "whyUz": "Oddiy fe'l bor → DOES (3-shaxs birlik). 'to be' EMAS.",
+       "speak": "1 A: ____ Brian get up early?"
+      },
+      {
+       "prompt": "1 B: Yes, he ____ .",
+       "answer": "does",
+       "promptUz": "Qisqa javob",
+       "whyUz": "Savolda 'Does' → javobda 'does'.",
+       "speak": "1 B: Yes, he ____ ."
+      },
+      {
+       "prompt": "2 A: ____ you Mr Stewart?",
+       "answer": "Are",
+       "promptUz": "Oddiy fe'l YO'Q — faqat ism",
+       "whyUz": "Fe'l yo'q, ism bor → 'to be'. 'you' bilan ARE.",
+       "speak": "2 A: ____ you Mr Stewart?"
+      },
+      {
+       "prompt": "2 B: Yes, I ____ . Nice to meet you.",
+       "answer": "am",
+       "promptUz": "'I' bilan qaysi shakl?",
+       "whyUz": "'I' bilan AM. 'Nice to meet you' = tanishganimdan xursandman.",
+       "speak": "2 B: Yes, I ____ . Nice to meet you."
+      },
+      {
+       "prompt": "3 A: ____ you usually watch TV?",
+       "answer": "Do",
+       "promptUz": "'watch' — oddiy fe'l",
+       "whyUz": "Oddiy fe'l → DO. Ravish 'usually' ega va fe'l orasida.",
+       "speak": "3 A: ____ you usually watch TV?"
+      },
+      {
+       "prompt": "3 B: No, I ____ , but my sisters ____ .  [1-bo'shliq]",
+       "answer": "don't",
+       "promptUz": "Birinchisi inkor, ikkinchisi tasdiq (ko'plik)",
+       "whyUz": "'I' bilan don't. 'my sisters' ko'plik → do.",
+       "speak": "3 B: No, I ____ , but my sisters ____ .  [1-bo'shliq]"
+      },
+      {
+       "prompt": "3 B: No, I ____ , but my sisters ____ .  [2-bo'shliq]",
+       "answer": "do",
+       "promptUz": "Birinchisi inkor, ikkinchisi tasdiq (ko'plik)",
+       "whyUz": "'I' bilan don't. 'my sisters' ko'plik → do.",
+       "speak": "3 B: No, I ____ , but my sisters ____ .  [2-bo'shliq]"
+      },
+      {
+       "prompt": "4 A: ____ you go to the gym on Saturdays?",
+       "answer": "Do",
+       "promptUz": "'go' — oddiy fe'l",
+       "whyUz": "Oddiy fe'l → DO.",
+       "speak": "4 A: ____ you go to the gym on Saturdays?"
+      },
+      {
+       "prompt": "4 B: No, I ____ . I usually go climbing.",
+       "answer": "don't",
+       "promptUz": "'I' bilan inkor",
+       "whyUz": "'I' bilan don't.",
+       "speak": "4 B: No, I ____ . I usually go climbing."
+      },
+      {
+       "prompt": "5 A: ____ he often make dinner?",
+       "answer": "Does",
+       "promptUz": "'make' — oddiy fe'l; 'he' — 3-shaxs birlik",
+       "whyUz": "3-shaxs birlik → DOES. Ravish 'often' ega va fe'l orasida.",
+       "speak": "5 A: ____ he often make dinner?"
+      },
+      {
+       "prompt": "5 B: No, he ____ . He ____ like cooking.  [1-bo'shliq]",
+       "answer": "doesn't",
+       "promptUz": "Ikkalasi ham 3-shaxs birlik inkor",
+       "whyUz": "'he' bilan doesn't. Ikkinchisida ham — 'like' oddiy fe'l.",
+       "speak": "5 B: No, he ____ . He ____ like cooking.  [1-bo'shliq]"
+      },
+      {
+       "prompt": "5 B: No, he ____ . He ____ like cooking.  [2-bo'shliq]",
+       "answer": "doesn't",
+       "promptUz": "Ikkalasi ham 3-shaxs birlik inkor",
+       "whyUz": "'he' bilan doesn't. Ikkinchisida ham — 'like' oddiy fe'l.",
+       "speak": "5 B: No, he ____ . He ____ like cooking.  [2-bo'shliq]"
+      },
+      {
+       "prompt": "6 A: ____ the children in the garden?",
+       "answer": "Are",
+       "promptUz": "Oddiy fe'l YO'Q — faqat JOY",
+       "whyUz": "Fe'l yo'q, joy bor → 'to be'. 'children' ko'plik → ARE.",
+       "speak": "6 A: ____ the children in the garden?"
+      },
+      {
+       "prompt": "6 B: Yes, they ____ .",
+       "answer": "are",
+       "promptUz": "Ko'plik qisqa javob",
+       "whyUz": "'they' bilan are.",
+       "speak": "6 B: Yes, they ____ ."
+      },
+      {
+       "prompt": "7 A: ____ they from Argentina?",
+       "answer": "Are",
+       "promptUz": "Kelib chiqish — 'to be' bilan",
+       "whyUz": "'be from' — kelib chiqish. 'they' → ARE.",
+       "speak": "7 A: ____ they from Argentina?"
+      },
+      {
+       "prompt": "7 B: No, they ____ .",
+       "answer": "aren't",
+       "promptUz": "Ko'plik inkor",
+       "whyUz": "'they' bilan aren't.",
+       "speak": "7 B: No, they ____ ."
+      },
+      {
+       "prompt": "8 A: Hello, ____ James at home?",
+       "answer": "is",
+       "promptUz": "Oddiy fe'l YO'Q — faqat JOY ('at home')",
+       "whyUz": "Joy bilan 'to be'. 'James' 3-shaxs birlik → IS. Telefonda so'rash.",
+       "speak": "8 A: Hello, ____ James at home?"
+      },
+      {
+       "prompt": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [1-bo'shliq]",
+       "answer": "isn't",
+       "promptUz": "Birinchisi 'to be', ikkinchisida oddiy fe'l 'get' bor",
+       "whyUz": "Birinchi gapda fe'l yo'q → isn't. Ikkinchisida 'get home' fe'li bor → doesn't.",
+       "speak": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [1-bo'shliq]"
+      },
+      {
+       "prompt": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [2-bo'shliq]",
+       "answer": "doesn't",
+       "promptUz": "Birinchisi 'to be', ikkinchisida oddiy fe'l 'get' bor",
+       "whyUz": "Birinchi gapda fe'l yo'q → isn't. Ikkinchisida 'get home' fe'li bor → doesn't.",
+       "speak": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [2-bo'shliq]"
+      },
+      {
+       "prompt": "9 A: ____ these your glasses?",
+       "answer": "Are",
+       "promptUz": "'these' — ko'plik, oddiy fe'l yo'q",
+       "whyUz": "'these' ko'plik + fe'l yo'q → ARE. 'glasses' doim ko'plikda.",
+       "speak": "9 A: ____ these your glasses?"
+      },
+      {
+       "prompt": "9 B: No, they ____ .",
+       "answer": "aren't",
+       "promptUz": "Ko'plik inkor",
+       "whyUz": "'they' bilan aren't.",
+       "speak": "9 B: No, they ____ ."
+      },
+      {
+       "prompt": "10 A: I ____ an Oasis fan.",
+       "answer": "am",
+       "promptUz": "'I' + ot ('a fan')",
+       "whyUz": "Fe'l yo'q, ot bor → 'to be'. 'I' → AM. Oasis — britaniyalik rok guruh.",
+       "speak": "10 A: I ____ an Oasis fan."
+      },
+      {
+       "prompt": "10 B: I ____ , too but I ____ a Spice Girls fan.  [1-bo'shliq]",
+       "answer": "am",
+       "promptUz": "Birinchisi tasdiq, ikkinchisi inkor",
+       "whyUz": "'I am, too' = men ham. Inkor: 'I'm not' ('I amn't' YO'Q — ingliz tilida bunday shakl yo'q).",
+       "speak": "10 B: I ____ , too but I ____ a Spice Girls fan.  [1-bo'shliq]"
+      },
+      {
+       "prompt": "10 B: I ____ , too but I ____ a Spice Girls fan.  [2-bo'shliq]",
+       "answer": "'m not",
+       "promptUz": "Birinchisi tasdiq, ikkinchisi inkor",
+       "whyUz": "'I am, too' = men ham. Inkor: 'I'm not' ('I amn't' YO'Q — ingliz tilida bunday shakl yo'q).",
+       "speak": "10 B: I ____ , too but I ____ a Spice Girls fan.  [2-bo'shliq]"
+      }
+     ]
+    },
+    {
+     "ref": "6",
+     "instructionEn": "Form questions using the prompts below, as in the example.",
+     "instructionUz": "Berilgan so'zlar bilan savol tuzing.",
+     "explanationUz": "NAMUNA:\n  Bill goes to the gym. (Claire)\n  → Does Claire go to the gym, too?\n\nQADAMLAR:\n  1) Qavsdagi ODAMNI ega qiling\n  2) Ega 3-shaxs birlikmi yoki ko'plikmi — aniqlang\n     birlik → Does ...?\n     ko'plik → Do ...?\n  3) Fe'lni ASOS shakliga qaytaring (-s tushadi)\n     goes → go,  loves → love,  plays → play,  hates → hate\n  4) Oxiriga ', too?' qo'shing\n\nEGALIK SIFATINI ham o'zgartiring:\n  David plays ... in HIS free time.\n  → Do Joe and Ian play ... in THEIR free time?",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 23,
+     "bookRef": "Grammar Book, 23-bet, 6-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "2. Elizabeth loves going dancing at weekends. (Karl)",
+       "answer": "Does Karl love going dancing at weekends, too?",
+       "promptUz": "Karl ham dam olish kunlari raqsga borishni yaxshi ko'radimi?",
+       "speak": "2. Elizabeth loves going dancing at weekends. (Karl)"
+      },
+      {
+       "prompt": "3. David plays computer games in his free time. (Joe and Ian)",
+       "answer": "Do Joe and Ian play computer games in their free time, too?",
+       "promptUz": "Jou va Ian ham bo'sh vaqtida kompyuter o'yini o'ynaydimi?",
+       "speak": "3. David plays computer games in his free time. (Joe and Ian)"
+      },
+      {
+       "prompt": "4. Diane hates camping. (Pam)",
+       "answer": "Does Pam hate camping, too?",
+       "promptUz": "Pam ham chodirda dam olishni yomon ko'radimi?",
+       "speak": "4. Diane hates camping. (Pam)"
+      },
+      {
+       "prompt": "5. Brandon wakes up early on Sundays. (your parents)",
+       "answer": "Do your parents wake up early on Sundays, too?",
+       "promptUz": "Sizning ota-onangiz ham yakshanba kunlari erta turadimi?",
+       "speak": "5. Brandon wakes up early on Sundays. (your parents)"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u5-coursebook-39-14",
    "kind": "pronunciation",
    "title": "Pronunciation",
@@ -4190,6 +5128,373 @@
    ],
    "book": "coursebook",
    "bookPage": 39
+  },
+  {
+   "ruleUz": "Ravish o'rni — uchta holat",
+   "explanationUz": "Ravish qaysi fe'ldan oldin yoki keyin turishini gapning tuzilishi belgilaydi.",
+   "items": [
+    {
+     "base": "oddiy fe'l",
+     "baseUz": "get up, go, have",
+     "derived": "I NEVER get up early.",
+     "derivedUz": "ravish OLDIN",
+     "note": "eng ko'p holat"
+    },
+    {
+     "base": "yordamchi fe'l",
+     "baseUz": "do, does",
+     "derived": "Do you OFTEN walk?",
+     "derivedUz": "ravish KEYIN",
+     "note": "savol va inkorda"
+    },
+    {
+     "base": "'to be'",
+     "baseUz": "am, is, are",
+     "derived": "He is ALWAYS late.",
+     "derivedUz": "ravish KEYIN",
+     "note": "istisno"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "ruleUz": "'rarely' = 'not often'",
+   "explanationUz": "Bir xil ma'noni ikki xil aytish. 'rarely' qisqaroq va rasmiyroq.",
+   "items": [
+    {
+     "base": "rarely",
+     "baseUz": "kamdan-kam",
+     "derived": "He rarely goes.",
+     "derivedUz": "= He doesn't often go.",
+     "note": "inkor 'not' KERAK EMAS"
+    },
+    {
+     "base": "seldom",
+     "baseUz": "kamdan-kam",
+     "derived": "'rarely' bilan bir xil",
+     "derivedUz": "rasmiyroq",
+     "note": "kam ishlatiladi"
+    },
+    {
+     "base": "hardly ever",
+     "baseUz": "deyarli hech qachon",
+     "derived": "'rarely' dan kuchliroq",
+     "derivedUz": "og'zaki nutqda",
+     "note": ""
+    },
+    {
+     "base": "never",
+     "baseUz": "hech qachon",
+     "derived": "eng kuchli inkor",
+     "derivedUz": "0%",
+     "note": "o'zi inkor"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "ruleUz": "KATTA harf ↔ kichik harf",
+   "explanationUz": "Ingliz tilida qaysi so'zlar katta harf bilan yozilishini bilish kerak.",
+   "items": [
+    {
+     "base": "oylar",
+     "baseUz": "January, August",
+     "derived": "KATTA harf",
+     "derivedUz": "doim",
+     "note": ""
+    },
+    {
+     "base": "hafta kunlari",
+     "baseUz": "Monday, Saturday",
+     "derived": "KATTA harf",
+     "derivedUz": "doim",
+     "note": ""
+    },
+    {
+     "base": "fasllar",
+     "baseUz": "spring, summer, autumn, winter",
+     "derived": "kichik harf",
+     "derivedUz": "doim",
+     "note": "oylardan FARQLI!"
+    },
+    {
+     "base": "kun qismlari",
+     "baseUz": "morning, evening, night",
+     "derived": "kichik harf",
+     "derivedUz": "doim",
+     "note": ""
+    },
+    {
+     "base": "millat va til",
+     "baseUz": "English, Uzbek",
+     "derived": "KATTA harf",
+     "derivedUz": "doim",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "ruleUz": "'by' va 'at' — vaqt farqi",
+   "explanationUz": "Ikkalasi ham vaqt bilan, lekin ma'nosi boshqa.",
+   "items": [
+    {
+     "base": "at four",
+     "baseUz": "soat to'rtda",
+     "derived": "aniq vaqt",
+     "derivedUz": "aynan o'shanda",
+     "note": ""
+    },
+    {
+     "base": "by four",
+     "baseUz": "to'rtgacha",
+     "derived": "to'rtdan kech emas",
+     "derivedUz": "oldinroq ham bo'ladi",
+     "note": "Mum is home by four."
+    },
+    {
+     "base": "until four",
+     "baseUz": "to'rtgacha",
+     "derived": "davomiylik",
+     "derivedUz": "to'rtga qadar davom etadi",
+     "note": ""
+    },
+    {
+     "base": "from ... to ...",
+     "baseUz": "...dan ...gacha",
+     "derived": "oraliq",
+     "derivedUz": "boshi va oxiri",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "ruleUz": "Vaqt ifodalari tartibi",
+   "explanationUz": "Bir gapda bir necha vaqt ifodasi bo'lsa, ANIQDAN UMUMIYGA tartiblanadi.",
+   "items": [
+    {
+     "base": "at seven o'clock",
+     "baseUz": "aniq soat",
+     "derived": "1-o'rin",
+     "derivedUz": "eng aniq",
+     "note": ""
+    },
+    {
+     "base": "in the morning",
+     "baseUz": "kun qismi",
+     "derived": "2-o'rin",
+     "derivedUz": "umumiyroq",
+     "note": ""
+    },
+    {
+     "base": "on Monday",
+     "baseUz": "kun",
+     "derived": "3-o'rin",
+     "derivedUz": "yanada umumiy",
+     "note": ""
+    },
+    {
+     "base": "in August",
+     "baseUz": "oy",
+     "derived": "4-o'rin",
+     "derivedUz": "eng umumiy",
+     "note": "at 7 in the morning on Monday in August"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "ruleUz": "'to be' ↔ 'do/does' — qaysi biri qachon",
+   "explanationUz": "Gapda ODDIY FE'L bormi? — hal qiluvchi savol.",
+   "items": [
+    {
+     "base": "Are you Mr Stewart?",
+     "baseUz": "ot bilan",
+     "derived": "'to be'",
+     "derivedUz": "fe'l YO'Q",
+     "note": ""
+    },
+    {
+     "base": "Are they from Argentina?",
+     "baseUz": "kelib chiqish",
+     "derived": "'to be'",
+     "derivedUz": "fe'l YO'Q",
+     "note": ""
+    },
+    {
+     "base": "Are the children in the garden?",
+     "baseUz": "joy bilan",
+     "derived": "'to be'",
+     "derivedUz": "fe'l YO'Q",
+     "note": ""
+    },
+    {
+     "base": "Does Brian get up early?",
+     "baseUz": "'get up' fe'li",
+     "derived": "does",
+     "derivedUz": "fe'l BOR",
+     "note": ""
+    },
+    {
+     "base": "Do you watch TV?",
+     "baseUz": "'watch' fe'li",
+     "derived": "do",
+     "derivedUz": "fe'l BOR",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 23
+  },
+  {
+   "ruleUz": "Qisqartmalar — 'am not' istisnosi",
+   "explanationUz": "'to be' ning inkor qisqartmalarida bitta istisno bor.",
+   "items": [
+    {
+     "base": "I am not",
+     "baseUz": "men emasman",
+     "derived": "I'm not",
+     "derivedUz": "yagona shakl",
+     "note": "'I amn't' YO'Q!"
+    },
+    {
+     "base": "he is not",
+     "baseUz": "u emas",
+     "derived": "he isn't / he's not",
+     "derivedUz": "ikki shakl",
+     "note": "ikkalasi ham to'g'ri"
+    },
+    {
+     "base": "they are not",
+     "baseUz": "ular emas",
+     "derived": "they aren't / they're not",
+     "derivedUz": "ikki shakl",
+     "note": ""
+    },
+    {
+     "base": "do not",
+     "baseUz": "inkor yordamchi",
+     "derived": "don't",
+     "derivedUz": "bitta shakl",
+     "note": ""
+    },
+    {
+     "base": "does not",
+     "baseUz": "inkor yordamchi",
+     "derived": "doesn't",
+     "derivedUz": "bitta shakl",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 23
+  },
+  {
+   "ruleUz": "'get' bilan turg'un birikmalar (matndan)",
+   "explanationUz": "'get' — ingliz tilining eng ko'p ishlatiladigan fe'llaridan biri.",
+   "items": [
+    {
+     "base": "get up",
+     "baseUz": "turmoq",
+     "derived": "She gets up at 7.",
+     "derivedUz": "uyqudan",
+     "note": ""
+    },
+    {
+     "base": "get to",
+     "baseUz": "yetib bormoq",
+     "derived": "She gets to school at 8:30.",
+     "derivedUz": "joyga",
+     "note": "'arrive at' bilan bir xil"
+    },
+    {
+     "base": "get home",
+     "baseUz": "uyga yetib bormoq",
+     "derived": "She gets home after five.",
+     "derivedUz": "'to' YO'Q",
+     "note": "'get to home' XATO"
+    },
+    {
+     "base": "get dressed",
+     "baseUz": "kiyinmoq",
+     "derived": "He gets dressed.",
+     "derivedUz": "",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 23
+  },
+  {
+   "ruleUz": "'go out' — ikki ma'no",
+   "explanationUz": "Kontekstga qarab ma'nosi o'zgaradi.",
+   "items": [
+    {
+     "base": "go out",
+     "baseUz": "ko'chaga chiqmoq",
+     "derived": "She doesn't go out during the week.",
+     "derivedUz": "dam olishga",
+     "note": ""
+    },
+    {
+     "base": "go out for dinner",
+     "baseUz": "kechki ovqatga chiqmoq",
+     "derived": "They go out for dinner.",
+     "derivedUz": "restoranda",
+     "note": "'eat out' ham"
+    },
+    {
+     "base": "go out with friends",
+     "baseUz": "do'stlar bilan chiqmoq",
+     "derived": "I go out with friends.",
+     "derivedUz": "birga dam olish",
+     "note": ""
+    },
+    {
+     "base": "go out with somebody",
+     "baseUz": "uchrashib yurmoq",
+     "derived": "She goes out with Tom.",
+     "derivedUz": "BOSHQA ma'no!",
+     "note": "sevgi munosabati"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 23
+  },
+  {
+   "ruleUz": "Musiqa guruhlari va 'a fan'",
+   "explanationUz": "Guruh nomi bilan gapirish.",
+   "items": [
+    {
+     "base": "a fan",
+     "baseUz": "muxlis",
+     "derived": "an Oasis fan",
+     "derivedUz": "Oasis muxlisi",
+     "note": "guruh nomi sifat kabi"
+    },
+    {
+     "base": "Oasis",
+     "baseUz": "—",
+     "derived": "britaniyalik rok guruh",
+     "derivedUz": "1990-yillar",
+     "note": "'an' — unli tovush"
+    },
+    {
+     "base": "Spice Girls",
+     "baseUz": "—",
+     "derived": "britaniyalik pop guruh",
+     "derivedUz": "1990-yillar",
+     "note": "ko'plik nom"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 23
   }
  ],
  "sentencePatterns": [
@@ -4488,6 +5793,102 @@
    "explanationUz": "'really' inkorni yumshatadi: 'don't really like' = unchalik yoqtirmayman.\n'though' gap oxirida — qarama-qarshi fikr.",
    "book": "coursebook",
    "bookPage": 39
+  },
+  {
+   "formula": "EGA + RAVISH + asosiy fe'l + ...",
+   "exampleEn": "I never get up early on Sundays. Bob often washes the car.",
+   "exampleUz": "Yakshanba kunlari hech qachon erta turmayman. Bob tez-tez mashina yuvadi.",
+   "explanationUz": "Oddiy fe'l bilan ravish OLDIN turadi.",
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "formula": "Do + EGA + RAVISH + asosiy fe'l ... ?",
+   "exampleEn": "Do you often walk to work?",
+   "exampleUz": "Siz tez-tez ishga piyoda borasizmi?",
+   "explanationUz": "Savolda ravish yordamchi fe'ldan KEYIN, asosiy fe'ldan OLDIN turadi.",
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "formula": "EGA + is/are + RAVISH + ...",
+   "exampleEn": "Mum is usually home by four. He is always late for work.",
+   "exampleUz": "Onam odatda to'rtgacha uyda bo'ladi. U ishga doim kechikadi.",
+   "explanationUz": "'to be' bilan ravish KEYIN turadi.",
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "formula": "EGA + fe'l + AT + aniq vaqt + IN + kun qismi.",
+   "exampleEn": "He gets up at seven o'clock in the morning.",
+   "exampleUz": "U ertalab soat yettida turadi.",
+   "explanationUz": "Vaqt ifodalari ANIQDAN UMUMIYGA tartiblanadi.",
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "formula": "EGA + was born + IN + yil / ON + sana.",
+   "exampleEn": "Jane was born in 1964. She was born on Friday the 2nd of August in 1991.",
+   "exampleUz": "Jeyn 1964-yilda tug'ilgan. U 1991-yil 2-avgust, juma kuni tug'ilgan.",
+   "explanationUz": "Yil bilan IN, kun-sana bilan ON. Bir gapda ikkalasi bo'lishi mumkin.",
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "formula": "What time do you + fe'l + ... ?",
+   "exampleEn": "What time do you leave for work?",
+   "exampleUz": "Siz soat nechada ishga chiqasiz?",
+   "explanationUz": "So'roq so'zi eng oldinda, keyin yordamchi 'do', keyin ega.\n'leave FOR work' — 'for' bilan yo'nalish.",
+   "book": "grammar",
+   "bookPage": 22
+  },
+  {
+   "formula": "EGA + RAVISH + fe'l + AT/IN/ON + vaqt.",
+   "exampleEn": "She always gets up at 7 o'clock in the morning on weekdays.",
+   "exampleUz": "U ish kunlari ertalab soat yettida doim turadi.",
+   "explanationUz": "Bir gapda UCHTA vaqt predlogi:\nAT (soat) → IN (kun qismi) → ON (kunlar).\nTartib: aniqdan umumiyga.",
+   "book": "grammar",
+   "bookPage": 23
+  },
+  {
+   "formula": "Does/Do + EGA + fe'l (asos) + ...? — Yes, ... does/do.",
+   "exampleEn": "Does Brian get up early? — Yes, he does.",
+   "exampleUz": "Brayan erta turadimi? — Ha, turadi.",
+   "explanationUz": "Oddiy fe'l bilan do/does. Fe'l -s OLMAYDI.",
+   "book": "grammar",
+   "bookPage": 23
+  },
+  {
+   "formula": "Are/Is + EGA + ot/sifat/joy? — Yes, ... am/is/are.",
+   "exampleEn": "Are you Mr Stewart? — Yes, I am. Are the children in the garden? — Yes, they are.",
+   "exampleUz": "Siz janob Styuartmisiz? — Ha. Bolalar bog'dami? — Ha.",
+   "explanationUz": "Oddiy fe'l bo'lmasa 'to be' ishlatiladi — do/does KERAK EMAS.",
+   "book": "grammar",
+   "bookPage": 23
+  },
+  {
+   "formula": "No, I don't, BUT my sisters do.",
+   "exampleEn": "Do you usually watch TV? — No, I don't, but my sisters do.",
+   "exampleUz": "Siz odatda televizor ko'rasizmi? — Yo'q, lekin opa-singillarim ko'radi.",
+   "explanationUz": "'but' dan keyin fe'l TAKRORLANMAYDI — faqat yordamchi qoladi ('do').",
+   "book": "grammar",
+   "bookPage": 23
+  },
+  {
+   "formula": "Does/Do + YANGI EGA + fe'l (asos) + ..., too?",
+   "exampleEn": "Bill goes to the gym. → Does Claire go to the gym, too?",
+   "exampleUz": "Bill sport zaliga boradi. → Kler ham boradimi?",
+   "explanationUz": "'too' = ham. Gap oxirida vergul bilan.\nFe'l ASOS shakliga qaytadi: goes → go.",
+   "book": "grammar",
+   "bookPage": 23
+  },
+  {
+   "formula": "I am, too but I'm not a ... fan.",
+   "exampleEn": "I am an Oasis fan. — I am, too but I'm not a Spice Girls fan.",
+   "exampleUz": "Men Oasis muxlisiman. — Men ham, lekin Spice Girls muxlisi emasman.",
+   "explanationUz": "'I am, too' — rozilik. 'I'm not' — inkor.\n'I amn't' shakli ingliz tilida YO'Q.",
+   "book": "grammar",
+   "bookPage": 23
   }
  ],
  "vocabulary": [
@@ -5198,6 +6599,130 @@
   {
    "en": "wisdom",
    "uz": "donolik"
+  },
+  {
+   "en": "an auxiliary verb",
+   "uz": "yordamchi fe'l"
+  },
+  {
+   "en": "a main verb",
+   "uz": "asosiy fe'l"
+  },
+  {
+   "en": "a zoo",
+   "uz": "hayvonot bog'i"
+  },
+  {
+   "en": "a sandwich",
+   "uz": "sendvich"
+  },
+  {
+   "en": "a match",
+   "uz": "musobaqa, o'yin"
+  },
+  {
+   "en": "to go on holiday",
+   "uz": "ta'tilga chiqmoq"
+  },
+  {
+   "en": "autumn",
+   "uz": "kuz"
+  },
+  {
+   "en": "winter",
+   "uz": "qish"
+  },
+  {
+   "en": "a capital letter",
+   "uz": "katta harf"
+  },
+  {
+   "en": "to leave for work",
+   "uz": "ishga chiqmoq"
+  },
+  {
+   "en": "to go for a walk",
+   "uz": "sayrga chiqmoq"
+  },
+  {
+   "en": "to go out with friends",
+   "uz": "do'stlar bilan sayrga chiqmoq"
+  },
+  {
+   "en": "by four",
+   "uz": "to'rtgacha"
+  },
+  {
+   "en": "a particular day",
+   "uz": "aniq bir kun"
+  },
+  {
+   "en": "a teacher",
+   "uz": "o'qituvchi"
+  },
+  {
+   "en": "weekdays",
+   "uz": "ish kunlari"
+  },
+  {
+   "en": "to get to",
+   "uz": "yetib bormoq"
+  },
+  {
+   "en": "to correct homework",
+   "uz": "uy vazifasini tekshirmoq"
+  },
+  {
+   "en": "to leave work",
+   "uz": "ishdan chiqmoq"
+  },
+  {
+   "en": "to get home",
+   "uz": "uyga yetib bormoq"
+  },
+  {
+   "en": "to go out for dinner",
+   "uz": "kechki ovqatga chiqmoq"
+  },
+  {
+   "en": "a day to relax",
+   "uz": "dam olish kuni"
+  },
+  {
+   "en": "to hurry",
+   "uz": "shoshmoq"
+  },
+  {
+   "en": "to make dinner",
+   "uz": "kechki ovqat tayyorlamoq"
+  },
+  {
+   "en": "cooking",
+   "uz": "ovqat pishirish"
+  },
+  {
+   "en": "glasses",
+   "uz": "ko'zoynak"
+  },
+  {
+   "en": "a fan",
+   "uz": "muxlis"
+  },
+  {
+   "en": "Argentina",
+   "uz": "Argentina"
+  },
+  {
+   "en": "Nice to meet you.",
+   "uz": "Tanishganimdan xursandman."
+  },
+  {
+   "en": "too",
+   "uz": "ham (gap oxirida)"
+  },
+  {
+   "en": "a prompt",
+   "uz": "yo'naltiruvchi so'z"
   }
  ]
 }
