@@ -44,18 +44,44 @@ def page_map():
         book = d.get("book")
         if not book:
             continue
+        # Raqamlanmagan betlar (modul muqovasi) siljishni buzadi —
+        # ular xaritaga kirmaydi.
+        if not d.get("bookPage"):
+            continue
         out[book][d["bookPage"]] = (d["pdfPage"], d.get("unit"))
+    return out
+
+
+def unnumbered_pdf_pages():
+    """Kitobda RAQAMLANMAGAN betlarning PDF raqamlari.
+
+    Modul muqovalarida bet raqami bosilmagan. Ularni chiqarib
+    tashlamasak, keyingi betning raqami ular tomonidan "band qilinadi"
+    va butun kitob 2 betga siljib ketadi.
+    """
+    out = defaultdict(set)
+    for f in sorted(PAGES.glob("*/p*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        if d.get("book") and not d.get("bookPage"):
+            out[d["book"]].add(d["pdfPage"])
     return out
 
 
 def extract_all(dpi: int) -> int:
     """Kitobning BARCHA betlarini chiqaradi.
 
-    Bet raqami = PDF beti - siljish. Siljish allaqachon qayta ishlangan
-    betlardan aniqlanadi (ularda pdfPage va bookPage juftligi bor),
-    shuning uchun taxmin qilinmaydi.
+    Bet raqami = PDF beti - siljish.
+
+    DIQQAT — SILJISH BIR XIL EMAS. Kitobda RAQAMLANMAGAN betlar bor
+    (modul muqovalari), shuning uchun ulardan keyin siljish o'zgaradi:
+      coursebook: 33-betgacha +2, 34-betdan boshlab +4
+
+    Shu sababli bitta siljish emas, SILJISH ZINAPOYASI quriladi:
+    har bir PDF beti uchun undan oldingi eng yaqin ma'lum juftlikning
+    siljishi ishlatiladi. Yangi bet qo'shilgan sari xarita aniqlashadi.
     """
     mapping = page_map()
+    skip_pdf = unnumbered_pdf_pages()
     OUT.mkdir(parents=True, exist_ok=True)
     total = 0
     for book, pdf_name in sorted(PDF_FILE.items()):
@@ -68,17 +94,25 @@ def extract_all(dpi: int) -> int:
         if not known:
             print(f"  [-] {book}: siljishni aniqlash uchun ma'lumot yo'q")
             continue
-        offsets = {pdf - bp for bp, (pdf, _) in known.items()}
-        if len(offsets) != 1:
-            print(f"  [!] {book}: siljish bir xil emas {sorted(offsets)} — "
-                  f"o'tkazib yuborildi")
-            continue
-        offset = offsets.pop()
+
+        # (pdfPage, offset) juftliklari, pdfPage bo'yicha tartiblangan.
+        steps = sorted((pdf, pdf - bp) for bp, (pdf, _) in known.items())
+        shown = sorted({o for _, o in steps})
 
         doc = fitz.open(pdf_path)
         made = 0
+        skip = skip_pdf.get(book, set())
         for i in range(len(doc)):
-            book_page = (i + 1) - offset
+            pdf_page = i + 1
+            if pdf_page in skip:
+                continue  # raqamlanmagan bet (modul muqovasi)
+            offset = steps[0][1]
+            for p, o in steps:
+                if p <= pdf_page:
+                    offset = o
+                else:
+                    break
+            book_page = pdf_page - offset
             if book_page < 1:
                 continue  # muqova va kirish betlari
             dest = OUT / f"{book}_{book_page}.jpg"
@@ -86,9 +120,17 @@ def extract_all(dpi: int) -> int:
                 continue
             doc[i].get_pixmap(dpi=dpi).save(dest)
             made += 1
+        n_pages = len(doc)
         doc.close()
         total += made
-        print(f"  [+] {book}: {made} bet (siljish {offset:+d})")
+        last_known = steps[-1][0]
+        print(f"  [+] {book}: {made} bet (siljishlar {shown})")
+        if last_known < n_pages:
+            print(f"      [!] {last_known}-PDF betidan keyingi {n_pages - last_known} "
+                  f"bet TAXMINIY joylashtirildi.")
+            print(f"          Agar oldinda yana raqamlanmagan bet chiqsa "
+                  f"(modul muqovasi), o'sha betlarni")
+            print(f"          o'chirib qayta chiqaring — siljish o'zgaradi.")
 
     size_mb = sum(f.stat().st_size for f in OUT.glob('*.jpg')) // (1024 * 1024)
     print(f"\nJami yangi: {total} bet | papka hajmi: {size_mb} MB")

@@ -94,6 +94,31 @@ def check_losses() -> list[tuple[str, str]]:
     return out
 
 
+def check_pages() -> list[tuple[str, str]]:
+    """Bet raqamlarini tekshiradi: takror va raqamsiz betlar.
+
+    Kitobda RAQAMLANMAGAN betlar bor (modul muqovasi). Ular
+    `bookPage: 0` va `bookPageLabel` bilan belgilanadi. Raqamli bet
+    ikki marta uchrasa — bu xato (bir bet ikki faylga yozilgan).
+    """
+    out = []
+    seen: dict[tuple, str] = {}
+    for f in sorted(PAGES.glob("*/p*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        book, bp = d.get("book"), d.get("bookPage")
+        if not bp:
+            if not d.get("bookPageLabel"):
+                out.append((f.name, "bet raqami yo'q, lekin bookPageLabel "
+                                    "ham berilmagan"))
+            continue
+        key = (book, bp)
+        if key in seen:
+            out.append((f.name, f"{book} {bp}-bet allaqachon "
+                                f"{seen[key]} da bor"))
+        seen[key] = f.name
+    return out
+
+
 def check_sources() -> list[tuple[str, str]]:
     """Manba sahifa fayllarini tekshiradi."""
     out = []
@@ -174,11 +199,17 @@ def main() -> int:
     src = check_sources()
     exp = check_export()
     lost = check_losses()
+    pages = check_pages()
 
     print("=== MANBA SAHIFALARI ===")
     for tag, msg in src:
         print(f"  {tag:24s} {msg}")
     print("  muammo yo'q" if not src else f"  jami: {len(src)}")
+
+    print("\n=== BET RAQAMLARI ===")
+    for tag, msg in pages:
+        print(f"  {tag:24s} {msg}")
+    print("  muammo yo'q" if not pages else f"  jami: {len(pages)}")
 
     print("\n=== YO'QOLGAN KONTENT (manba -> eksport) ===")
     for tag, msg in lost:
@@ -190,7 +221,7 @@ def main() -> int:
         print(f"  {loc:30s} {msg}")
     print("  muammo yo'q" if not exp else f"  jami: {len(exp)}")
 
-    total = len(src) + len(exp) + len(lost)
+    total = len(src) + len(exp) + len(lost) + len(pages)
     print(f"\n{'TOZA' if total == 0 else f'JAMI MUAMMO: {total}'}")
     return 0 if total == 0 else 1
 

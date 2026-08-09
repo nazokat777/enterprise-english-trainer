@@ -1,0 +1,99 @@
+{
+  "book": "coursebook",
+  "pdfPage": 36,
+  "bookPage": 0,
+  "bookPageLabel": "modul muqovasi (chap bet)",
+  "scanNote": "Modul muqovasi ikki betli yoyma bo'lib, kitobda RAQAMLANMAGAN. Shuning uchun bookPage = 0. Aynan shu ikki bet tufayli coursebook'da bet raqami siljishi 34-betdan boshlab +2 dan +4 ga o'zgaradi — extract_book_pages.py buni hisobga oladi.",
+  "unit": 902,
+  "unitLabelUz": "2-modul: Day after Day",
+  "unitBadge": "M2",
+  "afterUnit": 4,
+  "order": 4.8,
+  "unitTitle": "Module 2 (Units 5-8)",
+  "module": 2,
+  "sections": [
+    {
+      "kind": "lead_in",
+      "title": "Module 2 — Day after Day",
+      "titleUz": "2-modul — Kundan kunga",
+      "exercises": [
+        {
+          "ref": "muqova",
+          "type": "explain_sentences",
+          "instructionEn": "Read, listen, talk and write about...",
+          "instructionUz": "Bu modulda nimalarni o'qiysiz, tinglaysiz, gapirasiz va yozasiz.",
+          "explanationUz": "MODUL MUQOVASI — har to'rt-besh unitdan oldin keladi va\nyangi modulda nima o'rganilishini ko'rsatadi.\n\n2-MODUL: 'Day after Day' (Kundan kunga)\n\n  UNIT 5 — An Early Bird or a Night Owl?\n           (Erta turuvchi qushmi yoki tungi boyqushmi?)\n           • daily routines — kundalik tartib\n           • free-time activities — bo'sh vaqt mashg'ulotlari\n\n  UNIT 6 — Birds of a Feather!\n           (Bir tuxumdan chiqqan jo'jalar!)\n           • animals — hayvonlar\n\nRASMLARDA: delfin bilan ishlaydigan murabbiy, sigir boqayotgan\nqiz (kundalik ish), pingvinlar va koala (hayvonlar).\n\nBU MODULDA ASOSIY GRAMMATIKA BO'LADI:\n  Present Simple (kengaytirilgan)\n  takrorlanish ravishlari (always, usually, often, never)\n  vaqt aytish (What time is it?)\n  predloglar: at, on, in (vaqt bilan)",
+          "bookRef": "Coursebook, 34-bet, modul muqovasi",
+          "sentences": [
+            { "en": "Day after Day", "uz": "Kundan kunga", "noteUz": "Modul nomi. 'day after day' — har kuni bir xil takrorlanadigan ish haqida." },
+            { "en": "Read, listen, talk and write about...", "uz": "...haqida o'qing, tinglang, gapiring va yozing.", "noteUz": "To'rt ko'nikma: reading, listening, speaking, writing." },
+            { "en": "Unit 5 — An Early Bird or a Night Owl?", "uz": "5-unit — Erta turuvchi qushmi yoki tungi boyqushmi?", "noteUz": "IKKI IBORA:\n'an early bird' — erta turadigan odam (maqoldan: 'The early bird catches the worm')\n'a night owl' — kech yotadigan, kechasi faol odam\nBoyqush kechasi ov qiladi — shundan." },
+            { "en": "daily routines", "uz": "kundalik tartib", "noteUz": "Har kuni takrorlanadigan ishlar: turish, nonushta, maktab..." },
+            { "en": "free-time activities", "uz": "bo'sh vaqt mashg'ulotlari", "noteUz": "Unit 4 da boshlangan mavzu shu yerda kengaytiriladi." },
+            { "en": "Unit 6 — Birds of a Feather!", "uz": "6-unit — Bir xil qushlar!", "noteUz": "MAQOL: 'Birds of a feather flock together' —\nso'zma-so'z: 'bir xil patli qushlar birga uchadi'.\nMa'nosi: o'xshash odamlar birga bo'ladi.\nO'zbekchada: 'Qush qushi bilan, quloq quloq bilan'." },
+            { "en": "animals", "uz": "hayvonlar", "noteUz": "6-unit mavzusi: hayvonlar, ularning yashash joyi va odatlari." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "2-modul muqovasi — qush bilan bog'liq iboralar.",
+    "groups": [
+      {
+        "ruleUz": "Qush obrazidagi iboralar",
+        "explanationUz": "Ingliz tilida odam odatini qush orqali tasvirlash keng tarqalgan.",
+        "items": [
+          { "base": "early + bird", "baseUz": "erta + qush", "derived": "an early bird", "derivedUz": "erta turuvchi odam", "note": "maqoldan: The early bird catches the worm" },
+          { "base": "night + owl", "baseUz": "tun + boyqush", "derived": "a night owl", "derivedUz": "kech yotuvchi odam", "note": "boyqush kechasi faol" },
+          { "base": "birds of a feather", "baseUz": "bir xil patli qushlar", "derived": "o'xshash odamlar", "derivedUz": "maqol", "note": "...flock together" }
+        ]
+      },
+      {
+        "ruleUz": "Takrorlanishni bildiruvchi iboralar",
+        "explanationUz": "'day after day' kabi iboralar ish takrorlanishini ta'kidlaydi.",
+        "items": [
+          { "base": "day after day", "baseUz": "kundan kunga", "derived": "har kuni bir xil", "derivedUz": "takrorlanish", "note": "modul nomi" },
+          { "base": "day by day", "baseUz": "kunma-kun", "derived": "asta-sekin o'zgarish", "derivedUz": "boshqa ma'no", "note": "'after' — takror, 'by' — o'zgarish" },
+          { "base": "every day", "baseUz": "har kuni", "derived": "Present Simple bilan", "derivedUz": "vaqt iborasi", "note": "" },
+          { "base": "daily", "baseUz": "kundalik", "derived": "a daily routine", "derivedUz": "sifat shakli", "note": "day + ly" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "2-modulda o'rganiladigan asosiy qoliplar.",
+    "patterns": [
+      {
+        "formula": "Are you an early bird or a night owl?",
+        "exampleEn": "Are you an early bird or a night owl?",
+        "exampleUz": "Siz erta turuvchimisiz yoki kech yotuvchimi?",
+        "explanationUz": "'or' bilan tanlov savoli. Ikkala variant ham 'a/an' bilan."
+      },
+      {
+        "formula": "I read, listen, talk and write about ...",
+        "exampleEn": "Read, listen, talk and write about daily routines.",
+        "exampleUz": "Kundalik tartib haqida o'qing, tinglang, gapiring va yozing.",
+        "explanationUz": "To'rt fe'l 'and' bilan bog'lanadi — oxirgisidan oldin 'and'."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "day after day", "uz": "kundan kunga" },
+    { "en": "an early bird", "uz": "erta turuvchi odam" },
+    { "en": "a night owl", "uz": "kech yotuvchi odam" },
+    { "en": "an owl", "uz": "boyqush" },
+    { "en": "a feather", "uz": "pat" },
+    { "en": "birds of a feather", "uz": "o'xshash odamlar (maqol)" },
+    { "en": "a daily routine", "uz": "kundalik tartib" },
+    { "en": "a free-time activity", "uz": "bo'sh vaqt mashg'uloti" },
+    { "en": "an animal", "uz": "hayvon" },
+    { "en": "a penguin", "uz": "pingvin" },
+    { "en": "a koala", "uz": "koala" },
+    { "en": "a dolphin", "uz": "delfin" },
+    { "en": "a cow", "uz": "sigir" },
+    { "en": "a module", "uz": "modul, bo'lim" }
+  ]
+}

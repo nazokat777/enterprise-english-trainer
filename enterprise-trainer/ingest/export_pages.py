@@ -245,6 +245,9 @@ def norm_exercise(ex, page):
         "book": page["book"],
         "bookPage": page["bookPage"],
     }
+    # Raqamlanmagan bet (modul muqovasi) — raqam o'rniga yorliq.
+    if page.get("bookPageLabel"):
+        base["pageLabel"] = page["bookPageLabel"]
     if ex.get("bookRef"):
         base["bookRef"] = ex["bookRef"]
     if ex.get("audioRequiredUz"):
@@ -715,7 +718,11 @@ def unit_order(page):
     """Ro'yxatdagi tartib. Qo'shimcha bo'lim o'z unitidan KEYIN turadi.
 
     Modul testi epizoddan ham keyin tursin — shuning uchun 0.5 emas 0.7.
+    Aniq tartib kerak bo'lsa sahifa faylida `order` berilishi mumkin
+    (masalan modul muqovasi testdan ham keyin, keyingi unitdan oldin).
     """
+    if page.get("order") is not None:
+        return float(page["order"])
     if unit_extra(page):
         step = 0.5 if page.get("episode") else 0.7
         return page.get("afterUnit", 0) + step
@@ -751,6 +758,8 @@ def build_unit(pages):
                 "bookPage": p["bookPage"],
                 "exercises": exercises,
             }
+            if p.get("bookPageLabel"):
+                sec["pageLabel"] = p["bookPageLabel"]
             if s.get("rule"):
                 sec["rule"] = s["rule"]
             sections.append(sec)

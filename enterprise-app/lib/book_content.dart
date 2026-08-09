@@ -159,6 +159,10 @@ class BookExercise {
   final String bookRef;
   final String book;
   final int bookPage;
+
+  /// Raqamlanmagan betlar uchun yorliq ("modul muqovasi").
+  /// Kitobdagi ba'zi betlarda raqam bosilmagan — o'shalar uchun.
+  final String pageLabel;
   final List<ExTask> tasks;
 
   const BookExercise({
@@ -173,6 +177,7 @@ class BookExercise {
     this.bookRef = '',
     this.book = '',
     this.bookPage = 0,
+    this.pageLabel = '',
   });
 
   factory BookExercise.fromJson(Map<String, dynamic> j) => BookExercise(
@@ -186,6 +191,7 @@ class BookExercise {
         bookRef: j['bookRef'] as String? ?? '',
         book: j['book'] as String? ?? '',
         bookPage: (j['bookPage'] as num?)?.toInt() ?? 0,
+        pageLabel: j['pageLabel'] as String? ?? '',
         tasks: (j['tasks'] as List? ?? [])
             .map((e) => ExTask.fromJson((e as Map).cast<String, dynamic>()))
             .toList(),
@@ -200,7 +206,9 @@ class BookExercise {
   String get title => ref.isEmpty ? 'Mashq' : 'Ex. $ref';
 
   /// Qaysi kitobning qaysi beti: "Coursebook · 7-bet".
-  String get sourceLabel => '${_bookLabel[book] ?? book} · $bookPage-bet';
+  /// Bet raqamsiz bo'lsa (modul muqovasi) — yorliq ishlatiladi.
+  String get sourceLabel =>
+      '${_bookLabel[book] ?? book} · ${pageLabel.isNotEmpty ? pageLabel : "$bookPage-bet"}';
 
   /// To'liq manzil: "1-unit · Coursebook · 7-bet · Ex. 5".
   /// O'quvchi kitobning qayerini ochishini aniq biladi.
@@ -228,6 +236,9 @@ class BookSection {
   final String titleUz;
   final String book;
   final int bookPage;
+
+  /// Raqamlanmagan betlar uchun yorliq ("modul muqovasi").
+  final String pageLabel;
   final List<BookExercise> exercises;
   final BookRule? rule;
 
@@ -239,6 +250,7 @@ class BookSection {
     required this.book,
     required this.bookPage,
     required this.exercises,
+    this.pageLabel = '',
     this.rule,
   });
 
@@ -251,6 +263,7 @@ class BookSection {
             : _kindLabelUz[j['kind']] ?? '',
         book: j['book'] as String? ?? '',
         bookPage: (j['bookPage'] as num?)?.toInt() ?? 0,
+        pageLabel: j['pageLabel'] as String? ?? '',
         exercises: (j['exercises'] as List? ?? [])
             .map((e) => BookExercise.fromJson((e as Map).cast<String, dynamic>()))
             .toList(),
@@ -262,8 +275,9 @@ class BookSection {
   bool get hasRule => rule != null;
 
   /// "Coursebook, 6-bet" — o'quvchi kitobning qayerini ochishini biladi.
+  /// Bet raqamsiz bo'lsa (modul muqovasi) — yorliq ishlatiladi.
   String get sourceLabel =>
-      '${_bookLabel[book] ?? book}, $bookPage-bet';
+      '${_bookLabel[book] ?? book}, ${pageLabel.isNotEmpty ? pageLabel : "$bookPage-bet"}';
 
   /// Kitob nomi (ko'rinadigan shakl).
   String get bookLabel => _bookLabel[book] ?? book;
@@ -333,8 +347,13 @@ class BookPage {
 
   String get bookLabel => _bookLabel[book] ?? book;
 
-  /// "Coursebook · 7-bet"
-  String get label => '$bookLabel · $bookPage-bet';
+  /// Raqamlanmagan bet yorlig'i (birinchi bo'limdan olinadi).
+  String get pageLabel =>
+      sections.isNotEmpty ? sections.first.pageLabel : '';
+
+  /// "Coursebook · 7-bet" (raqamsiz betda — "Coursebook · modul muqovasi")
+  String get label =>
+      '$bookLabel · ${pageLabel.isNotEmpty ? pageLabel : "$bookPage-bet"}';
 
   /// "1-unit · Coursebook · 7-bet"
   String get fullLabel =>
