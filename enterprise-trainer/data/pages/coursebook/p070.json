@@ -18,18 +18,79 @@
           "instructionUz": "Ro'yxatdan so'z tanlab bo'shliqlarni to'ldiring, so'ng ular bilan gap tuzing.",
           "explanationUz": "RO'YXAT: same, water, fields, cottages, houses, little,\n         fifty years, shops, boats, like\n\nBarcha iboralar 62–63-betdagi Inishmore matnlaridan olingan.\n\nQANDAY TANLANADI:\n  bo'shliq OLDIDA sifat bo'lsa → OT kerak\n     fishing ...... → boats\n  bo'shliq KEYINIDA ot bo'lsa → SIFAT kerak\n     a ...... island → little",
           "bookRef": "Coursebook, 64-bet, 5-mashq",
-          "wordList": ["same", "water", "fields", "cottages", "houses", "little", "fifty years", "shops", "boats", "like"],
+          "wordList": [
+            "same",
+            "water",
+            "fields",
+            "cottages",
+            "houses",
+            "little",
+            "fifty years",
+            "shops",
+            "boats",
+            "like"
+          ],
           "items": [
-            { "textEn": "1  a ............ island", "answer": "little", "hintUz": "Orolning o'lchami haqida sifat", "whyUz": "'a little island' = kichik orol.\n63-betdagi maqolada: 'a beautiful little island'.\nGap: Inishmore is a little island." },
-            { "textEn": "2  ............ ago", "answer": "fifty years", "hintUz": "Qancha vaqt oldin?", "whyUz": "'fifty years ago' = ellik yil oldin.\n'ago' — o'tgan vaqtni bildiradi, DOIM gap oxirida.\nGap: Fifty years ago, life was difficult." },
-            { "textEn": "3  the ............ as", "answer": "same", "hintUz": "'as' bilan juft keladigan so'z", "whyUz": "'the same AS' = ...bilan bir xil.\nMaqolada: 'exactly the same as it was fifty years ago'.\nDIQQAT: 'the same LIKE' XATO — 'as' bo'lishi kerak." },
-            { "textEn": "4  fishing ............", "answer": "boats", "hintUz": "Baliq ovlanadigan suv transporti", "whyUz": "'fishing boats' = baliqchi qayiqlari.\nGap: There were only donkeys and fishing boats." },
-            { "textEn": "5  stone ............", "answer": "cottages", "hintUz": "Toshdan qurilgan kichik uylar", "whyUz": "'stone cottages' = tosh kulbalar.\nGap: They only had small stone cottages." },
-            { "textEn": "6  running ............", "answer": "water", "hintUz": "Jo'mrakdan oqadigan narsa", "whyUz": "'running water' = vodoprovod suvi.\nGap: They didn't have electricity or running water." },
-            { "textEn": "7  just ............ this", "answer": "like", "hintUz": "'shunday' ma'nosidagi so'z", "whyUz": "'just like this' = xuddi shundayligicha.\n'like' bu yerda PREDLOG — '...kabi' ('yoqtirmoq' EMAS).\nGap: We're working hard to keep it just like this." },
-            { "textEn": "8  modern ............", "answer": "houses", "hintUz": "Zamonaviy turar joy", "whyUz": "'modern houses' = zamonaviy uylar.\n5-band bilan solishtiring: ilgari 'stone cottages', hozir 'modern houses'.\nGap: They have got new, modern houses." },
-            { "textEn": "9  souvenir ............", "answer": "shops", "hintUz": "Sayyohlar esdalik oladigan joy", "whyUz": "'souvenir shops' = sovg'a do'konlari.\nGap: There are lots of souvenir shops now." },
-            { "textEn": "10  green ............", "answer": "fields", "hintUz": "Uy oldidagi yashil yer", "whyUz": "'green fields' = yashil dalalar.\nGap: Coneely looks across the green fields in front of his house." }
+            {
+              "textEn": "1  a ............ island",
+              "answer": "little",
+              "hintUz": "Orolning o'lchami haqida sifat",
+              "whyUz": "'a little island' = kichik orol.\n63-betdagi maqolada: 'a beautiful little island'.\nGap: Inishmore is a little island."
+            },
+            {
+              "textEn": "2  ............ ago",
+              "answer": "fifty years",
+              "hintUz": "Qancha vaqt oldin?",
+              "whyUz": "'fifty years ago' = ellik yil oldin.\n'ago' — o'tgan vaqtni bildiradi, DOIM gap oxirida.\nGap: Fifty years ago, life was difficult."
+            },
+            {
+              "textEn": "3  the ............ as",
+              "answer": "same",
+              "hintUz": "'as' bilan juft keladigan so'z",
+              "whyUz": "'the same AS' = ...bilan bir xil.\nMaqolada: 'exactly the same as it was fifty years ago'.\nDIQQAT: 'the same LIKE' XATO — 'as' bo'lishi kerak."
+            },
+            {
+              "textEn": "4  fishing ............",
+              "answer": "boats",
+              "hintUz": "Baliq ovlanadigan suv transporti",
+              "whyUz": "'fishing boats' = baliqchi qayiqlari.\nGap: There were only donkeys and fishing boats."
+            },
+            {
+              "textEn": "5  stone ............",
+              "answer": "cottages",
+              "hintUz": "Toshdan qurilgan kichik uylar",
+              "whyUz": "'stone cottages' = tosh kulbalar.\nGap: They only had small stone cottages."
+            },
+            {
+              "textEn": "6  running ............",
+              "answer": "water",
+              "hintUz": "Jo'mrakdan oqadigan narsa",
+              "whyUz": "'running water' = vodoprovod suvi.\nGap: They didn't have electricity or running water."
+            },
+            {
+              "textEn": "7  just ............ this",
+              "answer": "like",
+              "hintUz": "'shunday' ma'nosidagi so'z",
+              "whyUz": "'just like this' = xuddi shundayligicha.\n'like' bu yerda PREDLOG — '...kabi' ('yoqtirmoq' EMAS).\nGap: We're working hard to keep it just like this."
+            },
+            {
+              "textEn": "8  modern ............",
+              "answer": "houses",
+              "hintUz": "Zamonaviy turar joy",
+              "whyUz": "'modern houses' = zamonaviy uylar.\n5-band bilan solishtiring: ilgari 'stone cottages', hozir 'modern houses'.\nGap: They have got new, modern houses."
+            },
+            {
+              "textEn": "9  souvenir ............",
+              "answer": "shops",
+              "hintUz": "Sayyohlar esdalik oladigan joy",
+              "whyUz": "'souvenir shops' = sovg'a do'konlari.\nGap: There are lots of souvenir shops now."
+            },
+            {
+              "textEn": "10  green ............",
+              "answer": "fields",
+              "hintUz": "Uy oldidagi yashil yer",
+              "whyUz": "'green fields' = yashil dalalar.\nGap: Coneely looks across the green fields in front of his house."
+            }
           ]
         },
         {
@@ -39,11 +100,30 @@
           "instructionUz": "Quyidagi iboralarning qarama-qarshisini ro'yxatdagi so'zlar bilan yozing. So'ng iboralar bilan gap tuzing.",
           "explanationUz": "RO'YXAT: busy, big, a lot of\n\n'≠' belgisi QARAMA-QARSHI ma'noni bildiradi.\n\nKITOBDAGI NAMUNA GAP:\n  Inishmore is a little island.\n\nDIQQAT — 'FEW' va 'A LOT OF':\n  few tourists = kam sayyoh (deyarli yo'q)\n  a lot of tourists = ko'p sayyoh\n  'few' — SANALADIGAN otlar bilan.\n  Sanalmaydigan bo'lsa: little ↔ a lot of\n     little money ≠ a lot of money",
           "bookRef": "Coursebook, 64-bet, 6-mashq",
-          "wordList": ["busy", "big", "a lot of"],
+          "wordList": [
+            "busy",
+            "big",
+            "a lot of"
+          ],
           "items": [
-            { "textEn": "1  a little island  ≠  a ............ island", "answer": "big", "hintUz": "'little' ning aksi", "whyUz": "little ↔ BIG (o'lcham).\nGap: Inishmore is a little island, but Ireland is a big island." },
-            { "textEn": "2  few tourists  ≠  ............ tourists", "answer": "a lot of", "hintUz": "'few' ning aksi (sanaladigan ot bilan)", "whyUz": "few ↔ A LOT OF (miqdor).\nGap: Fifty years ago there were few tourists, but now there are\na lot of tourists." },
-            { "textEn": "3  a quiet place  ≠  a ............ place", "answer": "busy", "hintUz": "'quiet' ning aksi", "whyUz": "quiet ↔ BUSY (gavjumlik).\n62-betdagi mashqda ham bor edi.\nGap: Inishmore was a quiet place then, but it is a busy place now." }
+            {
+              "textEn": "1  a little island  ≠  a ............ island",
+              "answer": "big",
+              "hintUz": "'little' ning aksi",
+              "whyUz": "little ↔ BIG (o'lcham).\nGap: Inishmore is a little island, but Ireland is a big island."
+            },
+            {
+              "textEn": "2  few tourists  ≠  ............ tourists",
+              "answer": "a lot of",
+              "hintUz": "'few' ning aksi (sanaladigan ot bilan)",
+              "whyUz": "few ↔ A LOT OF (miqdor).\nGap: Fifty years ago there were few tourists, but now there are\na lot of tourists."
+            },
+            {
+              "textEn": "3  a quiet place  ≠  a ............ place",
+              "answer": "busy",
+              "hintUz": "'quiet' ning aksi",
+              "whyUz": "quiet ↔ BUSY (gavjumlik).\n62-betdagi mashqda ham bor edi.\nGap: Inishmore was a quiet place then, but it is a busy place now."
+            }
           ]
         },
         {
@@ -53,17 +133,70 @@
           "instructionUz": "Ro'yxatdan tushib qolgan predloglarni qo'ying.",
           "explanationUz": "RO'YXAT: in front of, on, off, back, in, across, at\n\nDIQQAT: 7 ta so'z, 9 ta bo'shliq —\ndemak ba'zilari IKKI MARTA ishlatiladi:\n  'at' → 2 marta (at first, looking at)\n  'in' → 2 marta (in fact, in those days)\n\nHamma iboralar 63-betdagi maqoladan olingan.\nBu — TURG'UN BIRIKMALAR, ular yodlanadi.",
           "bookRef": "Coursebook, 64-bet, 7-mashq",
-          "wordList": ["in front of", "on", "off", "back", "in", "across", "at"],
+          "wordList": [
+            "in front of",
+            "on",
+            "off",
+            "back",
+            "in",
+            "across",
+            "at"
+          ],
           "items": [
-            { "textEn": "1  ............ our Now & Then page", "answer": "on", "hintUz": "Sahifa oldidagi predlog", "whyUz": "'ON our page' = sahifamizda.\nGazeta va jurnal sahifasi uchun ON ishlatiladi." },
-            { "textEn": "2  we're looking ............ Inishmore", "answer": "at", "hintUz": "'look' fe'lining predlogi", "whyUz": "'look AT something' = biror narsaga qaramoq.\nDIQQAT: 'look' turli predloglar bilan turli ma'no beradi:\n  look AT = qaramoq;  look FOR = qidirmoq;\n  look AFTER = qaramoq (parvarish)." },
-            { "textEn": "3  ............ first", "answer": "at", "hintUz": "'dastlab' ma'nosidagi ibora", "whyUz": "'AT first' = dastlab, birinchi qarashda.\nDIQQAT: 'at first' ↔ 'at last' (nihoyat)." },
-            { "textEn": "4  ............ fact", "answer": "in", "hintUz": "'aslida' ma'nosidagi ibora", "whyUz": "'IN fact' = aslida, haqiqatda.\n'at first' bilan qarama-qarshi qo'yiladi." },
-            { "textEn": "5  ............ those days", "answer": "in", "hintUz": "'o'sha kunlarda' ma'nosidagi ibora", "whyUz": "'IN those days' = o'sha kunlarda.\nO'tgan zamon haqida gapirganda ishlatiladi." },
-            { "textEn": "6  ............ his house", "answer": "in front of", "hintUz": "Uyning old tomonida", "whyUz": "'IN FRONT OF his house' = uyi oldida.\nAksi: 'behind' (orqasida)." },
-            { "textEn": "7  ............ then", "answer": "back", "hintUz": "'o'sha paytda' ma'nosidagi ibora", "whyUz": "'BACK then' = o'sha paytda.\n'in those days' bilan bir xil ma'noda." },
-            { "textEn": "8  ............ the west coast", "answer": "off", "hintUz": "Qirg'oq yaqinidagi orol uchun", "whyUz": "'OFF the coast' = qirg'oq yaqinida (dengizda).\nDIQQAT: 'ON the coast' — qirg'oqning O'ZIDA (quruqlikda);\n'OFF the coast' — qirg'oqdan uzoqroqda, suvda." },
-            { "textEn": "9  look ............ the green fields", "answer": "across", "hintUz": "Dala bo'ylab qaramoq", "whyUz": "'look ACROSS' = ...bo'ylab qaramoq (bir chetdan ikkinchisiga).\n'across' = bo'ylab, kesib o'tib." }
+            {
+              "textEn": "1  ............ our Now & Then page",
+              "answer": "on",
+              "hintUz": "Sahifa oldidagi predlog",
+              "whyUz": "'ON our page' = sahifamizda.\nGazeta va jurnal sahifasi uchun ON ishlatiladi."
+            },
+            {
+              "textEn": "2  we're looking ............ Inishmore",
+              "answer": "at",
+              "hintUz": "'look' fe'lining predlogi",
+              "whyUz": "'look AT something' = biror narsaga qaramoq.\nDIQQAT: 'look' turli predloglar bilan turli ma'no beradi:\n  look AT = qaramoq;  look FOR = qidirmoq;\n  look AFTER = qaramoq (parvarish)."
+            },
+            {
+              "textEn": "3  ............ first",
+              "answer": "at",
+              "hintUz": "'dastlab' ma'nosidagi ibora",
+              "whyUz": "'AT first' = dastlab, birinchi qarashda.\nDIQQAT: 'at first' ↔ 'at last' (nihoyat)."
+            },
+            {
+              "textEn": "4  ............ fact",
+              "answer": "in",
+              "hintUz": "'aslida' ma'nosidagi ibora",
+              "whyUz": "'IN fact' = aslida, haqiqatda.\n'at first' bilan qarama-qarshi qo'yiladi."
+            },
+            {
+              "textEn": "5  ............ those days",
+              "answer": "in",
+              "hintUz": "'o'sha kunlarda' ma'nosidagi ibora",
+              "whyUz": "'IN those days' = o'sha kunlarda.\nO'tgan zamon haqida gapirganda ishlatiladi."
+            },
+            {
+              "textEn": "6  ............ his house",
+              "answer": "in front of",
+              "hintUz": "Uyning old tomonida",
+              "whyUz": "'IN FRONT OF his house' = uyi oldida.\nAksi: 'behind' (orqasida)."
+            },
+            {
+              "textEn": "7  ............ then",
+              "answer": "back",
+              "hintUz": "'o'sha paytda' ma'nosidagi ibora",
+              "whyUz": "'BACK then' = o'sha paytda.\n'in those days' bilan bir xil ma'noda."
+            },
+            {
+              "textEn": "8  ............ the west coast",
+              "answer": "off",
+              "hintUz": "Qirg'oq yaqinidagi orol uchun",
+              "whyUz": "'OFF the coast' = qirg'oq yaqinida (dengizda).\nDIQQAT: 'ON the coast' — qirg'oqning O'ZIDA (quruqlikda);\n'OFF the coast' — qirg'oqdan uzoqroqda, suvda."
+            },
+            {
+              "textEn": "9  look ............ the green fields",
+              "answer": "across",
+              "hintUz": "Dala bo'ylab qaramoq",
+              "whyUz": "'look ACROSS' = ...bo'ylab qaramoq (bir chetdan ikkinchisiga).\n'across' = bo'ylab, kesib o'tib."
+            }
           ]
         },
         {
@@ -74,10 +207,34 @@
           "explanationUz": "TO'RT BELGI:\n  a — CHAPGA egilgan strelka, ostida 'ONLY'\n  b — O'NGGA egilgan strelka, ostida 'ONLY'\n  c — qizil taxta: chapga qaragan strelka + 'FIRE ESCAPE'\n  d — qizil taxta: 'FIRE ESCAPE' + o'ngga qaragan strelka\n\nYANGI SO'Z:\n  a fire escape = yong'in chiqish yo'li (zinapoya)\n  ONLY = faqat (bu yo'nalishga faqat shu tomonga)\n\nQOIDA:\n  BURILISh belgisi (strelka + ONLY) → 'Turn left/right'\n  YO'NALISh taxtasi → 'The fire escape is on your left/right'\n\nSTRELKA YO'NALISHI:\n  chapga → left\n  o'ngga → right",
           "bookRef": "Coursebook, 64-bet, 8-mashq",
           "pairs": [
-            { "left": "1  The fire escape is on your left.", "right": "c  (qizil taxta: ◀ FIRE ESCAPE)", "leftUz": "Yong'in chiqish yo'li chap tomoningizda.", "rightUz": "c-belgi", "whyUz": "Taxtadagi strelka CHAPGA qaragan → 'on your LEFT'.\n'on your left' = chap tomoningizda." },
-            { "left": "2  Turn right.", "right": "b  (o'ngga egilgan strelka + ONLY)", "leftUz": "O'ngga buriling.", "rightUz": "b-belgi", "whyUz": "Strelka O'NGGA egilgan → 'Turn RIGHT'.\n'ONLY' = faqat shu tomonga burilish mumkin." },
-            { "left": "3  The fire escape is on your right.", "right": "d  (qizil taxta: FIRE ESCAPE ▶)", "leftUz": "Yong'in chiqish yo'li o'ng tomoningizda.", "rightUz": "d-belgi", "whyUz": "Taxtadagi strelka O'NGGA qaragan → 'on your RIGHT'." },
-            { "left": "4  Turn left.", "right": "a  (chapga egilgan strelka + ONLY)", "leftUz": "Chapga buriling.", "rightUz": "a-belgi", "whyUz": "Strelka CHAPGA egilgan → 'Turn LEFT'.\n'Turn left/right' — buyruq gap, yo'l ko'rsatishda ishlatiladi." }
+            {
+              "left": "1  The fire escape is on your left.",
+              "right": "c  (qizil taxta: ◀ FIRE ESCAPE)",
+              "leftUz": "Yong'in chiqish yo'li chap tomoningizda.",
+              "rightUz": "c-belgi",
+              "whyUz": "Taxtadagi strelka CHAPGA qaragan → 'on your LEFT'.\n'on your left' = chap tomoningizda."
+            },
+            {
+              "left": "2  Turn right.",
+              "right": "b  (o'ngga egilgan strelka + ONLY)",
+              "leftUz": "O'ngga buriling.",
+              "rightUz": "b-belgi",
+              "whyUz": "Strelka O'NGGA egilgan → 'Turn RIGHT'.\n'ONLY' = faqat shu tomonga burilish mumkin."
+            },
+            {
+              "left": "3  The fire escape is on your right.",
+              "right": "d  (qizil taxta: FIRE ESCAPE ▶)",
+              "leftUz": "Yong'in chiqish yo'li o'ng tomoningizda.",
+              "rightUz": "d-belgi",
+              "whyUz": "Taxtadagi strelka O'NGGA qaragan → 'on your RIGHT'."
+            },
+            {
+              "left": "4  Turn left.",
+              "right": "a  (chapga egilgan strelka + ONLY)",
+              "leftUz": "Chapga buriling.",
+              "rightUz": "a-belgi",
+              "whyUz": "Strelka CHAPGA egilgan → 'Turn LEFT'.\n'Turn left/right' — buyruq gap, yo'l ko'rsatishda ishlatiladi."
+            }
           ]
         }
       ]
@@ -95,13 +252,41 @@
           "explanationUz": "XARITA TUZILISHI (yuqoridan pastga, chapdan o'ngga):\n\n  ┌──────────┬─────────────┬──────────────┬──────────┐\n  │ TRAIN    │ SUPERMARKET │ GARAGE       │ HOSPITAL │\n  │ STATION  ├─────────────┼──────────────┼──────────┤\n  ├──────────┤ SPORTS      │ CINEMA       │ SCHOOL   │\n  │ HOTEL    │ CENTRE      ├──────────────┼──────────┤\n  ├──────────┼─────────────┤ POLICE       │ PARK     │\n  │ MUSEUM   │ DEPARTMENT  │ STATION      │          │\n  │          │ STORE       │              │          │\n  └──────────┴─────────────┴──────────────┴──────────┘\n         ↑ HILL STREET          ↑ APPLE STREET\n  ═══════════ KING STREET ═══════════════════════════\n           BUS STOP\n  ┌────────────┬──────┬──────┬──────┬──────────┐\n  │ RESTAURANT │ POST │ CAFÉ │ BANK │ FIRE     │\n  │            │OFFICE│      │      │ STATION  │\n  └────────────┴──────┴──────┴──────┴──────────┘\n\nUCH KO'CHA:\n  HILL STREET  — tik (vertikal), chap tomonda\n  APPLE STREET — tik (vertikal), o'ng tomonda\n  KING STREET  — yotiq (gorizontal), pastda\n\nJOY PREDLOGLARI:\n  next to ..... yonida (yonma-yon, bir tomonda)\n  opposite .... ro'parasida (ko'chaning narigi tomonida)\n  between ..... orasida (ikkitasining o'rtasida)\n  in front of . oldida\n  behind ...... orqasida\n  on the corner of ... burchagida",
           "bookRef": "Coursebook, 64-bet, 9-mashq (xarita)",
           "points": [
-            { "en": "next to", "uz": "yonida", "noteUz": "Yonma-yon, bir tomonda, ko'cha ajratmaydi.\nMisol: The police station is next to the cinema." },
-            { "en": "opposite", "uz": "ro'parasida", "noteUz": "Ko'chaning NARIGI tomonida, yuzma-yuz.\nMisol: The school is opposite the cinema." },
-            { "en": "between", "uz": "orasida", "noteUz": "Ikkita narsaning O'RTASIDA.\n'between A AND B' — 'and' shart.\nMisol: The café is between the bank and the post office." },
-            { "en": "in front of", "uz": "oldida", "noteUz": "Old tomonida (aksi: behind).\nMisol: The bus stop is in front of the post office." },
-            { "en": "on the corner of ... and ...", "uz": "... va ... burchagida", "noteUz": "Ikki ko'cha kesishgan joy.\nMisol: The park is on the corner of Apple Street and King Street." },
-            { "en": "behind", "uz": "orqasida", "noteUz": "Orqa tomonida (aksi: in front of)." },
-            { "en": "near", "uz": "yaqinida", "noteUz": "Uzoq emas (aniq joy ko'rsatmaydi)." }
+            {
+              "en": "next to",
+              "uz": "yonida",
+              "noteUz": "Yonma-yon, bir tomonda, ko'cha ajratmaydi.\nMisol: The police station is next to the cinema."
+            },
+            {
+              "en": "opposite",
+              "uz": "ro'parasida",
+              "noteUz": "Ko'chaning NARIGI tomonida, yuzma-yuz.\nMisol: The school is opposite the cinema."
+            },
+            {
+              "en": "between",
+              "uz": "orasida",
+              "noteUz": "Ikkita narsaning O'RTASIDA.\n'between A AND B' — 'and' shart.\nMisol: The café is between the bank and the post office."
+            },
+            {
+              "en": "in front of",
+              "uz": "oldida",
+              "noteUz": "Old tomonida (aksi: behind).\nMisol: The bus stop is in front of the post office."
+            },
+            {
+              "en": "on the corner of ... and ...",
+              "uz": "... va ... burchagida",
+              "noteUz": "Ikki ko'cha kesishgan joy.\nMisol: The park is on the corner of Apple Street and King Street."
+            },
+            {
+              "en": "behind",
+              "uz": "orqasida",
+              "noteUz": "Orqa tomonida (aksi: in front of)."
+            },
+            {
+              "en": "near",
+              "uz": "yaqinida",
+              "noteUz": "Uzoq emas (aniq joy ko'rsatmaydi)."
+            }
           ]
         },
         {
@@ -111,13 +296,44 @@
           "instructionUz": "Diagrammaga qarang, so'ng gaplarni ro'yxatdagi predloglar bilan to'ldiring.",
           "explanationUz": "RO'YXAT: in front of, opposite, next to, on, between\n\nHar bir gap uchun xaritada IKKI joyning O'ZARO holatini toping.",
           "bookRef": "Coursebook, 64-bet, 9a-mashq",
-          "wordList": ["in front of", "opposite", "next to", "on", "between"],
+          "wordList": [
+            "in front of",
+            "opposite",
+            "next to",
+            "on",
+            "between"
+          ],
           "items": [
-            { "textEn": "1  The school is ............ the cinema.", "answer": "opposite", "hintUz": "Ular orasida Apple Street bor", "whyUz": "Maktab va kinoteatr APPLE STREET ning IKKI TOMONIDA →\nOPPOSITE (ro'parasida).\nKo'cha ajratsa — 'opposite', ajratmasa — 'next to'." },
-            { "textEn": "2  The café is ............ the bank and the post office.", "answer": "between", "hintUz": "Ikkita bino orasida", "whyUz": "King Street ostidagi qator: RESTAURANT | POST OFFICE | CAFÉ |\nBANK | FIRE STATION.\nKafe pochta va bank O'RTASIDA → BETWEEN.\n'between A AND B' — 'and' shart." },
-            { "textEn": "3  The police station is ............ the cinema.", "answer": "next to", "hintUz": "Ular bir ustunda, yonma-yon", "whyUz": "Kinoteatr va militsiya bo'limi BIR blokda, yonma-yon —\nko'cha ajratmaydi → NEXT TO.\n1-band bilan solishtiring: u yerda ko'cha bor edi → opposite." },
-            { "textEn": "4  The bus stop is ............ the post office.", "answer": "in front of", "hintUz": "Bekat King Street ustida, pochta esa ostida", "whyUz": "Avtobus bekati King Street da, pochtaning OLD tomonida →\nIN FRONT OF." },
-            { "textEn": "5  The park is ............ the corner of Apple Street and King Street.", "answer": "on", "hintUz": "'the corner' bilan keladigan predlog", "whyUz": "'ON the corner of X and Y' = X va Y burchagida —\no'zgarmas ibora.\nBog' Apple Street va King Street kesishgan joyda." }
+            {
+              "textEn": "1  The school is ............ the cinema.",
+              "answer": "opposite",
+              "hintUz": "Ular orasida Apple Street bor",
+              "whyUz": "Maktab va kinoteatr APPLE STREET ning IKKI TOMONIDA →\nOPPOSITE (ro'parasida).\nKo'cha ajratsa — 'opposite', ajratmasa — 'next to'."
+            },
+            {
+              "textEn": "2  The café is ............ the bank and the post office.",
+              "answer": "between",
+              "hintUz": "Ikkita bino orasida",
+              "whyUz": "King Street ostidagi qator: RESTAURANT | POST OFFICE | CAFÉ |\nBANK | FIRE STATION.\nKafe pochta va bank O'RTASIDA → BETWEEN.\n'between A AND B' — 'and' shart."
+            },
+            {
+              "textEn": "3  The police station is ............ the cinema.",
+              "answer": "next to",
+              "hintUz": "Ular bir ustunda, yonma-yon",
+              "whyUz": "Kinoteatr va militsiya bo'limi BIR blokda, yonma-yon —\nko'cha ajratmaydi → NEXT TO.\n1-band bilan solishtiring: u yerda ko'cha bor edi → opposite."
+            },
+            {
+              "textEn": "4  The bus stop is ............ the post office.",
+              "answer": "in front of",
+              "hintUz": "Bekat King Street ustida, pochta esa ostida",
+              "whyUz": "Avtobus bekati King Street da, pochtaning OLD tomonida →\nIN FRONT OF."
+            },
+            {
+              "textEn": "5  The park is ............ the corner of Apple Street and King Street.",
+              "answer": "on",
+              "hintUz": "'the corner' bilan keladigan predlog",
+              "whyUz": "'ON the corner of X and Y' = X va Y burchagida —\no'zgarmas ibora.\nBog' Apple Street va King Street kesishgan joyda."
+            }
           ]
         },
         {
@@ -128,18 +344,78 @@
           "explanationUz": "JAVOB QOLIPI:\n  It's next to / opposite / between ... .\n\nKo'p joy uchun BIR NECHTA to'g'ri javob bor —\nqaysi qo'shni haqida gapirishingizga bog'liq.\nQuyida eng aniq javoblar berilgan.\n\nESLATMA:\n  BIR blokda, ko'chasiz → next to\n  Ko'cha ajratgan → opposite\n  Ikkitasining o'rtasida → between",
           "bookRef": "Coursebook, 64-bet, 9b-mashq",
           "items": [
-            { "textEn": "Where is the sports centre?", "answer": "It's between the supermarket and the department store. It's opposite the hotel.", "hintUz": "Supermarket ostida, univermag ustida", "whyUz": "Ustunda: SUPERMARKET → SPORTS CENTRE → DEPARTMENT STORE.\nHill Street narigi tomonida HOTEL → opposite." },
-            { "textEn": "Where is the hospital?", "answer": "It's next to the school. It's opposite the garage.", "hintUz": "Xaritaning yuqori o'ng burchagi", "whyUz": "Kasalxona ustunda maktab ustida → next to.\nApple Street narigi tomonida GARAGE → opposite." },
-            { "textEn": "Where is the bank?", "answer": "It's between the café and the fire station.", "hintUz": "King Street ostidagi qator", "whyUz": "Qator: RESTAURANT | POST OFFICE | CAFÉ | BANK | FIRE STATION.\nBank kafe va o't o'chirish bo'limi orasida." },
-            { "textEn": "Where is the supermarket?", "answer": "It's next to the garage. It's opposite the train station.", "hintUz": "Yuqori qator, Hill Street yonida", "whyUz": "Supermarket va garaj bir qatorda, yonma-yon → next to.\nHill Street narigi tomonida TRAIN STATION → opposite." },
-            { "textEn": "Where is the post office?", "answer": "It's between the restaurant and the café.", "hintUz": "King Street ostidagi qator", "whyUz": "Pochta restoran va kafe orasida.\nAvtobus bekati uning oldida (9a-mashqning 4-bandi)." },
-            { "textEn": "Where is the garage?", "answer": "It's next to the supermarket. It's opposite the hospital.", "hintUz": "Yuqori qator, Apple Street yonida", "whyUz": "Garaj supermarket yonida (ko'chasiz) → next to.\nApple Street narigi tomonida HOSPITAL → opposite." },
-            { "textEn": "Where is the police station?", "answer": "It's next to the cinema and the department store. It's opposite the park.", "hintUz": "Uchinchi qator, o'rtada", "whyUz": "Kinoteatr ostida va univermag yonida → next to.\nApple Street narigi tomonida PARK → opposite." },
-            { "textEn": "Where is the department store?", "answer": "It's next to the police station. It's opposite the museum.", "hintUz": "Uchinchi qator, Hill Street yonida", "whyUz": "Univermag militsiya bo'limi yonida → next to.\nHill Street narigi tomonida MUSEUM → opposite." },
-            { "textEn": "Where is the museum?", "answer": "It's next to the hotel. It's opposite the department store.", "hintUz": "Chap ustun, eng pastda", "whyUz": "Muzey mehmonxona ostida → next to.\nHill Street narigi tomonida DEPARTMENT STORE → opposite." },
-            { "textEn": "Where is the restaurant?", "answer": "It's next to the post office. It's opposite the museum.", "hintUz": "King Street ostida, eng chapda", "whyUz": "Restoran pochta yonida → next to.\nKing Street narigi tomonida MUSEUM → opposite." },
-            { "textEn": "Where is the fire station?", "answer": "It's next to the bank. It's opposite the park.", "hintUz": "King Street ostida, eng o'ngda", "whyUz": "O't o'chirish bo'limi bank yonida → next to.\nKing Street narigi tomonida PARK → opposite." },
-            { "textEn": "Where is the school?", "answer": "It's between the hospital and the park. It's opposite the cinema.", "hintUz": "O'ng ustun, o'rtada", "whyUz": "Maktab kasalxona va bog' orasida → between.\nApple Street narigi tomonida CINEMA → opposite (9a-mashqning 1-bandi)." }
+            {
+              "textEn": "Where is the sports centre?",
+              "answer": "It's between the supermarket and the department store. It's opposite the hotel.",
+              "hintUz": "Supermarket ostida, univermag ustida",
+              "whyUz": "Ustunda: SUPERMARKET → SPORTS CENTRE → DEPARTMENT STORE.\nHill Street narigi tomonida HOTEL → opposite."
+            },
+            {
+              "textEn": "Where is the hospital?",
+              "answer": "It's next to the school. It's opposite the garage.",
+              "hintUz": "Xaritaning yuqori o'ng burchagi",
+              "whyUz": "Kasalxona ustunda maktab ustida → next to.\nApple Street narigi tomonida GARAGE → opposite."
+            },
+            {
+              "textEn": "Where is the bank?",
+              "answer": "It's between the café and the fire station.",
+              "hintUz": "King Street ostidagi qator",
+              "whyUz": "Qator: RESTAURANT | POST OFFICE | CAFÉ | BANK | FIRE STATION.\nBank kafe va o't o'chirish bo'limi orasida."
+            },
+            {
+              "textEn": "Where is the supermarket?",
+              "answer": "It's next to the garage. It's opposite the train station.",
+              "hintUz": "Yuqori qator, Hill Street yonida",
+              "whyUz": "Supermarket va garaj bir qatorda, yonma-yon → next to.\nHill Street narigi tomonida TRAIN STATION → opposite."
+            },
+            {
+              "textEn": "Where is the post office?",
+              "answer": "It's between the restaurant and the café.",
+              "hintUz": "King Street ostidagi qator",
+              "whyUz": "Pochta restoran va kafe orasida.\nAvtobus bekati uning oldida (9a-mashqning 4-bandi)."
+            },
+            {
+              "textEn": "Where is the garage?",
+              "answer": "It's next to the supermarket. It's opposite the hospital.",
+              "hintUz": "Yuqori qator, Apple Street yonida",
+              "whyUz": "Garaj supermarket yonida (ko'chasiz) → next to.\nApple Street narigi tomonida HOSPITAL → opposite."
+            },
+            {
+              "textEn": "Where is the police station?",
+              "answer": "It's next to the cinema and the department store. It's opposite the park.",
+              "hintUz": "Uchinchi qator, o'rtada",
+              "whyUz": "Kinoteatr ostida va univermag yonida → next to.\nApple Street narigi tomonida PARK → opposite."
+            },
+            {
+              "textEn": "Where is the department store?",
+              "answer": "It's next to the police station. It's opposite the museum.",
+              "hintUz": "Uchinchi qator, Hill Street yonida",
+              "whyUz": "Univermag militsiya bo'limi yonida → next to.\nHill Street narigi tomonida MUSEUM → opposite."
+            },
+            {
+              "textEn": "Where is the museum?",
+              "answer": "It's next to the hotel. It's opposite the department store.",
+              "hintUz": "Chap ustun, eng pastda",
+              "whyUz": "Muzey mehmonxona ostida → next to.\nHill Street narigi tomonida DEPARTMENT STORE → opposite."
+            },
+            {
+              "textEn": "Where is the restaurant?",
+              "answer": "It's next to the post office. It's opposite the museum.",
+              "hintUz": "King Street ostida, eng chapda",
+              "whyUz": "Restoran pochta yonida → next to.\nKing Street narigi tomonida MUSEUM → opposite."
+            },
+            {
+              "textEn": "Where is the fire station?",
+              "answer": "It's next to the bank. It's opposite the park.",
+              "hintUz": "King Street ostida, eng o'ngda",
+              "whyUz": "O't o'chirish bo'limi bank yonida → next to.\nKing Street narigi tomonida PARK → opposite."
+            },
+            {
+              "textEn": "Where is the school?",
+              "answer": "It's between the hospital and the park. It's opposite the cinema.",
+              "hintUz": "O'ng ustun, o'rtada",
+              "whyUz": "Maktab kasalxona va bog' orasida → between.\nApple Street narigi tomonida CINEMA → opposite (9a-mashqning 1-bandi)."
+            }
           ]
         }
       ]
@@ -158,26 +434,32 @@
           "explanationUz": "DIALOG (to'ldirilgan holda):\n\n  A: Excuse me, CAN you tell me the way to the bank?\n  B: Yes, of course. Go straight down Hill Street, then take\n     the first turning ON YOUR LEFT. Go down King Street.\n     The bank is NEXT TO the café.\n  A: Thank you very much.\n\nO'ZBEKCHA TARJIMASI:\n  A: Kechirasiz, bankka qanday borishni aytib bera olasizmi?\n  B: Ha, albatta. Hill Street bo'ylab to'g'ri yuring, so'ng\n     birinchi burilishdan chapga buriling. King Street bo'ylab\n     yuring. Bank kafe yonida.\n  A: Katta rahmat.\n\nYO'L KO'RSATISH IBORALARI:\n  Can/Could you tell me the way to ...?\n     = ...ga qanday borishni aytib bera olasizmi?\n  Go straight down/along ... Street\n     = ... ko'cha bo'ylab to'g'ri yuring\n  Take the first/second turning on your left/right\n     = birinchi/ikkinchi burilishdan chapga/o'ngga buriling\n  Turn left / Turn right = chapga/o'ngga buriling\n  It's on your left/right = u chap/o'ng tomoningizda\n  It's next to / opposite / between ...\n\nMARShRUT MANTIG'I (bekatdan bankka):\n  Bekat xaritaning yuqori chap burchagida, Hill Street yonida.\n  Hill Street bo'ylab PASTGA (janubga) yurasiz.\n  Pastda King Street bilan kesishadi — bu BIRINCHI burilish.\n  Janubga yurganda SHARQ chap tomonda qoladi.\n  Bank sharqda → CHAPGA burilasiz.\n  King Street bo'ylab yurib, kafe yonidagi bankka yetasiz.",
           "bookRef": "Coursebook, 64-bet, 10-mashq",
           "lines": [
-            { "who": "A", "textEn": "Excuse me, 1) ............ you tell me the way to the bank?", "answer": "can", "hintUz": "Muloyim iltimos so'rash fe'li", "whyUz": "'CAN you tell me the way to ...?' — yo'l so'rashning asosiy qolipi.\n'COULD you ...?' ham to'g'ri va muloyimroq.\n'the way TO + joy' — 'to' shart." },
-            { "who": "B", "textEn": "Yes, of course. Go straight down Hill Street, then take the first turning 2) ............ .", "answer": "on your left", "hintUz": "Bank qaysi tomonda? Xaritaga qarang", "whyUz": "Bekatdan Hill Street bo'ylab PASTGA yurganda\nsharq CHAP tomonda qoladi. Bank esa sharqda.\n'take the first turning ON YOUR LEFT' = birinchi burilishdan chapga." },
-            { "who": "B", "textEn": "Go down King Street. The bank is 3) ............ the café.", "answer": "next to", "hintUz": "Bank va kafe yonma-yonmi yoki ro'paramimi?", "whyUz": "King Street ostidagi qatorda: CAFÉ | BANK — yonma-yon,\nko'cha ajratmaydi → NEXT TO.\n9a-mashqning 2-bandiga qarang: kafe pochta va bank orasida." },
-            { "who": "A", "textEn": "Thank you very much.", "given": true }
-          ]
-        },
-        {
-          "ref": "10b",
-          "type": "prompt_to_dialogue",
-          "instructionEn": "Then, in pairs, use the prompts to act out similar dialogues.",
-          "instructionUz": "So'ng juftlikda shunga o'xshash dialoglar tuzing.",
-          "explanationUz": "BOSHLANISh NUQTASI: temiryo'l bekati (train station).\n\nQOLIP:\n  A: Excuse me, can you tell me the way to the [joy]?\n  B: Yes, of course. Go straight down [ko'cha],\n     then take the first turning on your [chap/o'ng].\n     The [joy] is [predlog] the [qo'shni joy].\n  A: Thank you very much.\n\nDIQQAT — YO'NALISHNI ANIQLASH:\n  Bekatdan Hill Street bo'ylab PASTGA yurasiz.\n  Shu paytda:\n     chapda = sharq (supermarket, kinoteatr tomoni)\n     o'ngda = g'arb (xarita cheti)\n  King Street ga yetib, chapga burilsangiz sharqqa,\n  o'ngga burilsangiz g'arbga ketasiz.",
-          "bookRef": "Coursebook, 64-bet, 10-mashq (davomi)",
-          "items": [
-            { "prompt": "the post office", "question": "Excuse me, can you tell me the way to the post office?", "answer": "Yes, of course. Go straight down Hill Street, then take the first turning on your left. The post office is between the restaurant and the café. — Thank you very much.", "whyUz": "Pochta King Street ostida, restoran va kafe orasida.\nAvtobus bekati uning oldida." },
-            { "prompt": "the museum", "question": "Excuse me, can you tell me the way to the museum?", "answer": "Yes, of course. Go straight down Hill Street. The museum is on your right, next to the hotel. — Thank you very much.", "whyUz": "Muzey Hill Street ning O'NG tomonida (bekat bilan bir ustunda).\nBurilish kerak emas — to'g'ri yurish yetarli." },
-            { "prompt": "the cinema", "question": "Excuse me, can you tell me the way to the cinema?", "answer": "Yes, of course. Go straight down Hill Street, then turn left. The cinema is opposite the school, next to the sports centre. — Thank you very much.", "whyUz": "Kinoteatr o'rta blokda, maktab ro'parasida." },
-            { "prompt": "the fire station", "question": "Excuse me, can you tell me the way to the fire station?", "answer": "Yes, of course. Go straight down Hill Street, then take the first turning on your left. Go down King Street. The fire station is next to the bank, opposite the park. — Thank you very much.", "whyUz": "O't o'chirish bo'limi King Street ostida, eng o'ngda." },
-            { "prompt": "the hospital", "question": "Excuse me, can you tell me the way to the hospital?", "answer": "Yes, of course. Go straight down Hill Street, then turn left. Go along the street and turn left into Apple Street. The hospital is next to the school, opposite the garage. — Thank you very much.", "whyUz": "Kasalxona xaritaning yuqori o'ng burchagida, Apple Street narigi tomonida." },
-            { "prompt": "the park", "question": "Excuse me, can you tell me the way to the park?", "answer": "Yes, of course. Go straight down Hill Street, then take the first turning on your left. Go down King Street. The park is on the corner of Apple Street and King Street. — Thank you very much.", "whyUz": "Bog' ikki ko'cha burchagida → 'on the corner of ... and ...'." }
+            {
+              "who": "A",
+              "textEn": "Excuse me, 1) ............ you tell me the way to the bank?",
+              "answer": "can",
+              "hintUz": "Muloyim iltimos so'rash fe'li",
+              "whyUz": "'CAN you tell me the way to ...?' — yo'l so'rashning asosiy qolipi.\n'COULD you ...?' ham to'g'ri va muloyimroq.\n'the way TO + joy' — 'to' shart."
+            },
+            {
+              "who": "B",
+              "textEn": "Yes, of course. Go straight down Hill Street, then take the first turning 2) ............ .",
+              "answer": "on your left",
+              "hintUz": "Bank qaysi tomonda? Xaritaga qarang",
+              "whyUz": "Bekatdan Hill Street bo'ylab PASTGA yurganda\nsharq CHAP tomonda qoladi. Bank esa sharqda.\n'take the first turning ON YOUR LEFT' = birinchi burilishdan chapga."
+            },
+            {
+              "who": "B",
+              "textEn": "Go down King Street. The bank is 3) ............ the café.",
+              "answer": "next to",
+              "hintUz": "Bank va kafe yonma-yonmi yoki ro'paramimi?",
+              "whyUz": "King Street ostidagi qatorda: CAFÉ | BANK — yonma-yon,\nko'cha ajratmaydi → NEXT TO.\n9a-mashqning 2-bandiga qarang: kafe pochta va bank orasida."
+            },
+            {
+              "who": "A",
+              "textEn": "Thank you very much.",
+              "given": true
+            }
           ]
         }
       ]
@@ -191,61 +473,247 @@
         "ruleUz": "Shahardagi joylar (xaritadagi 17 ta)",
         "explanationUz": "Ko'pchiligi QO'ShMA ot yoki ot + ot birikmasi.",
         "items": [
-          { "base": "a train station", "baseUz": "temiryo'l bekati", "derived": "train + station", "derivedUz": "", "note": "" },
-          { "base": "a bus stop", "baseUz": "avtobus bekati", "derived": "bus + stop", "derivedUz": "", "note": "kichikroq" },
-          { "base": "a supermarket", "baseUz": "supermarket", "derived": "super + market", "derivedUz": "birga yoziladi", "note": "" },
-          { "base": "a garage", "baseUz": "garaj, avtoservis", "derived": "/ˈɡærɑːʒ/", "derivedUz": "fransuzchadan", "note": "" },
-          { "base": "a sports centre", "baseUz": "sport markazi", "derived": "britancha 'centre'", "derivedUz": "amerikacha: center", "note": "'sports' ko'plikda" },
-          { "base": "a department store", "baseUz": "univermag", "derived": "ko'p bo'limli do'kon", "derivedUz": "", "note": "" },
-          { "base": "a police station", "baseUz": "militsiya bo'limi", "derived": "police + station", "derivedUz": "", "note": "" },
-          { "base": "a fire station", "baseUz": "o't o'chirish bo'limi", "derived": "fire + station", "derivedUz": "", "note": "" },
-          { "base": "a post office", "baseUz": "pochta bo'limi", "derived": "post + office", "derivedUz": "", "note": "" },
-          { "base": "a fire escape", "baseUz": "yong'in chiqish yo'li", "derived": "fire + escape", "derivedUz": "", "note": "" }
+          {
+            "base": "a train station",
+            "baseUz": "temiryo'l bekati",
+            "derived": "train + station",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "a bus stop",
+            "baseUz": "avtobus bekati",
+            "derived": "bus + stop",
+            "derivedUz": "",
+            "note": "kichikroq"
+          },
+          {
+            "base": "a supermarket",
+            "baseUz": "supermarket",
+            "derived": "super + market",
+            "derivedUz": "birga yoziladi",
+            "note": ""
+          },
+          {
+            "base": "a garage",
+            "baseUz": "garaj, avtoservis",
+            "derived": "/ˈɡærɑːʒ/",
+            "derivedUz": "fransuzchadan",
+            "note": ""
+          },
+          {
+            "base": "a sports centre",
+            "baseUz": "sport markazi",
+            "derived": "britancha 'centre'",
+            "derivedUz": "amerikacha: center",
+            "note": "'sports' ko'plikda"
+          },
+          {
+            "base": "a department store",
+            "baseUz": "univermag",
+            "derived": "ko'p bo'limli do'kon",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "a police station",
+            "baseUz": "militsiya bo'limi",
+            "derived": "police + station",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "a fire station",
+            "baseUz": "o't o'chirish bo'limi",
+            "derived": "fire + station",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "a post office",
+            "baseUz": "pochta bo'limi",
+            "derived": "post + office",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "a fire escape",
+            "baseUz": "yong'in chiqish yo'li",
+            "derived": "fire + escape",
+            "derivedUz": "",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Joy predloglari — aniq farqi",
         "explanationUz": "Ko'cha ajratganmi yoki yo'qmi — asosiy savol.",
         "items": [
-          { "base": "next to", "baseUz": "yonida", "derived": "ko'cha YO'Q", "derivedUz": "bir blokda, yonma-yon", "note": "'beside' ham" },
-          { "base": "opposite", "baseUz": "ro'parasida", "derived": "ko'cha BOR", "derivedUz": "narigi tomonda", "note": "'across from' ham" },
-          { "base": "between A and B", "baseUz": "A va B orasida", "derived": "ikkitasining o'rtasida", "derivedUz": "'and' shart", "note": "" },
-          { "base": "in front of", "baseUz": "oldida", "derived": "old tomonida", "derivedUz": "aksi: behind", "note": "" },
-          { "base": "behind", "baseUz": "orqasida", "derived": "orqa tomonida", "derivedUz": "aksi: in front of", "note": "" },
-          { "base": "on the corner of", "baseUz": "burchagida", "derived": "ikki ko'cha kesishmasi", "derivedUz": "'of ... and ...'", "note": "" },
-          { "base": "near", "baseUz": "yaqinida", "derived": "aniq emas", "derivedUz": "uzoq emas", "note": "" }
+          {
+            "base": "next to",
+            "baseUz": "yonida",
+            "derived": "ko'cha YO'Q",
+            "derivedUz": "bir blokda, yonma-yon",
+            "note": "'beside' ham"
+          },
+          {
+            "base": "opposite",
+            "baseUz": "ro'parasida",
+            "derived": "ko'cha BOR",
+            "derivedUz": "narigi tomonda",
+            "note": "'across from' ham"
+          },
+          {
+            "base": "between A and B",
+            "baseUz": "A va B orasida",
+            "derived": "ikkitasining o'rtasida",
+            "derivedUz": "'and' shart",
+            "note": ""
+          },
+          {
+            "base": "in front of",
+            "baseUz": "oldida",
+            "derived": "old tomonida",
+            "derivedUz": "aksi: behind",
+            "note": ""
+          },
+          {
+            "base": "behind",
+            "baseUz": "orqasida",
+            "derived": "orqa tomonida",
+            "derivedUz": "aksi: in front of",
+            "note": ""
+          },
+          {
+            "base": "on the corner of",
+            "baseUz": "burchagida",
+            "derived": "ikki ko'cha kesishmasi",
+            "derivedUz": "'of ... and ...'",
+            "note": ""
+          },
+          {
+            "base": "near",
+            "baseUz": "yaqinida",
+            "derived": "aniq emas",
+            "derivedUz": "uzoq emas",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Yo'l ko'rsatish iboralari",
         "explanationUz": "Hammasi BUYRUQ gap shaklida.",
         "items": [
-          { "base": "Go straight down/along ...", "baseUz": "... bo'ylab to'g'ri yuring", "derived": "buyruq", "derivedUz": "", "note": "" },
-          { "base": "Turn left / right", "baseUz": "Chapga / o'ngga buriling", "derived": "buyruq", "derivedUz": "8-mashqdagi belgilar", "note": "" },
-          { "base": "Take the first turning on your left", "baseUz": "Birinchi burilishdan chapga buriling", "derived": "buyruq", "derivedUz": "'second' ham", "note": "" },
-          { "base": "It's on your left / right", "baseUz": "U chap / o'ng tomoningizda", "derived": "joy ko'rsatish", "derivedUz": "'on YOUR' shart", "note": "" },
-          { "base": "Can you tell me the way to ...?", "baseUz": "...ga qanday borishni aytib bera olasizmi?", "derived": "SAVOL", "derivedUz": "'the way TO'", "note": "" },
-          { "base": "Excuse me", "baseUz": "Kechirasiz", "derived": "murojaat", "derivedUz": "notanish odamga", "note": "" }
+          {
+            "base": "Go straight down/along ...",
+            "baseUz": "... bo'ylab to'g'ri yuring",
+            "derived": "buyruq",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "Turn left / right",
+            "baseUz": "Chapga / o'ngga buriling",
+            "derived": "buyruq",
+            "derivedUz": "8-mashqdagi belgilar",
+            "note": ""
+          },
+          {
+            "base": "Take the first turning on your left",
+            "baseUz": "Birinchi burilishdan chapga buriling",
+            "derived": "buyruq",
+            "derivedUz": "'second' ham",
+            "note": ""
+          },
+          {
+            "base": "It's on your left / right",
+            "baseUz": "U chap / o'ng tomoningizda",
+            "derived": "joy ko'rsatish",
+            "derivedUz": "'on YOUR' shart",
+            "note": ""
+          },
+          {
+            "base": "Can you tell me the way to ...?",
+            "baseUz": "...ga qanday borishni aytib bera olasizmi?",
+            "derived": "SAVOL",
+            "derivedUz": "'the way TO'",
+            "note": ""
+          },
+          {
+            "base": "Excuse me",
+            "baseUz": "Kechirasiz",
+            "derived": "murojaat",
+            "derivedUz": "notanish odamga",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "LOOK fe'lining predloglari",
         "explanationUz": "Predlog ma'noni butunlay o'zgartiradi.",
         "items": [
-          { "base": "look at", "baseUz": "qaramoq", "derived": "look at the picture", "derivedUz": "diqqat qaratmoq", "note": "7-mashqda bor" },
-          { "base": "look for", "baseUz": "qidirmoq", "derived": "look for a job", "derivedUz": "topishga urinmoq", "note": "" },
-          { "base": "look after", "baseUz": "qaramoq (parvarish)", "derived": "look after a baby", "derivedUz": "g'amxo'rlik qilmoq", "note": "" },
-          { "base": "look across", "baseUz": "bo'ylab qaramoq", "derived": "look across the fields", "derivedUz": "63-betda bor", "note": "" },
-          { "base": "look like", "baseUz": "o'xshamoq", "derived": "She looks like her mother.", "derivedUz": "tashqi ko'rinish", "note": "" }
+          {
+            "base": "look at",
+            "baseUz": "qaramoq",
+            "derived": "look at the picture",
+            "derivedUz": "diqqat qaratmoq",
+            "note": "7-mashqda bor"
+          },
+          {
+            "base": "look for",
+            "baseUz": "qidirmoq",
+            "derived": "look for a job",
+            "derivedUz": "topishga urinmoq",
+            "note": ""
+          },
+          {
+            "base": "look after",
+            "baseUz": "qaramoq (parvarish)",
+            "derived": "look after a baby",
+            "derivedUz": "g'amxo'rlik qilmoq",
+            "note": ""
+          },
+          {
+            "base": "look across",
+            "baseUz": "bo'ylab qaramoq",
+            "derived": "look across the fields",
+            "derivedUz": "63-betda bor",
+            "note": ""
+          },
+          {
+            "base": "look like",
+            "baseUz": "o'xshamoq",
+            "derived": "She looks like her mother.",
+            "derivedUz": "tashqi ko'rinish",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "ON va OFF farqi (qirg'oq haqida)",
         "explanationUz": "Bitta harf ma'noni butunlay o'zgartiradi.",
         "items": [
-          { "base": "ON the coast", "baseUz": "qirg'oqda", "derived": "QURUQLIKDA", "derivedUz": "shahar qirg'oqda", "note": "Brighton is on the coast." },
-          { "base": "OFF the coast", "baseUz": "qirg'oq yaqinida", "derived": "SUVDA", "derivedUz": "orol dengizda", "note": "63-betda bor" },
-          { "base": "AT the seaside", "baseUz": "dengiz bo'yida", "derived": "dam olish joyi", "derivedUz": "", "note": "" }
+          {
+            "base": "ON the coast",
+            "baseUz": "qirg'oqda",
+            "derived": "QURUQLIKDA",
+            "derivedUz": "shahar qirg'oqda",
+            "note": "Brighton is on the coast."
+          },
+          {
+            "base": "OFF the coast",
+            "baseUz": "qirg'oq yaqinida",
+            "derived": "SUVDA",
+            "derivedUz": "orol dengizda",
+            "note": "63-betda bor"
+          },
+          {
+            "base": "AT the seaside",
+            "baseUz": "dengiz bo'yida",
+            "derived": "dam olish joyi",
+            "derivedUz": "",
+            "note": ""
+          }
         ]
       }
     ]
@@ -293,42 +761,153 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "the same as", "uz": "...bilan bir xil" },
-    { "en": "fifty years ago", "uz": "ellik yil oldin" },
-    { "en": "just like this", "uz": "xuddi shundayligicha" },
-    { "en": "at first", "uz": "dastlab" },
-    { "en": "in fact", "uz": "aslida" },
-    { "en": "in those days", "uz": "o'sha kunlarda" },
-    { "en": "back then", "uz": "o'sha paytda" },
-    { "en": "off the coast", "uz": "qirg'oq yaqinida" },
-    { "en": "to look across", "uz": "bo'ylab qaramoq" },
-    { "en": "a fire escape", "uz": "yong'in chiqish yo'li" },
-    { "en": "Turn left / right", "uz": "Chapga / o'ngga buriling" },
-    { "en": "on your left / right", "uz": "chap / o'ng tomoningizda" },
-    { "en": "a train station", "uz": "temiryo'l bekati" },
-    { "en": "a bus stop", "uz": "avtobus bekati" },
-    { "en": "a supermarket", "uz": "supermarket" },
-    { "en": "a garage", "uz": "garaj, avtoservis" },
-    { "en": "a hospital", "uz": "kasalxona" },
-    { "en": "a sports centre", "uz": "sport markazi" },
-    { "en": "a cinema", "uz": "kinoteatr" },
-    { "en": "a school", "uz": "maktab" },
-    { "en": "a museum", "uz": "muzey" },
-    { "en": "a department store", "uz": "univermag" },
-    { "en": "a police station", "uz": "militsiya bo'limi" },
-    { "en": "a park", "uz": "bog'" },
-    { "en": "a restaurant", "uz": "restoran" },
-    { "en": "a post office", "uz": "pochta bo'limi" },
-    { "en": "a café", "uz": "kafe" },
-    { "en": "a bank", "uz": "bank" },
-    { "en": "a fire station", "uz": "o't o'chirish bo'limi" },
-    { "en": "next to", "uz": "yonida" },
-    { "en": "opposite", "uz": "ro'parasida" },
-    { "en": "between", "uz": "orasida" },
-    { "en": "in front of", "uz": "oldida" },
-    { "en": "on the corner of", "uz": "burchagida" },
-    { "en": "the way to", "uz": "...ga boradigan yo'l" },
-    { "en": "a turning", "uz": "burilish" },
-    { "en": "Go straight down", "uz": "To'g'ri yuring" }
+    {
+      "en": "the same as",
+      "uz": "...bilan bir xil"
+    },
+    {
+      "en": "fifty years ago",
+      "uz": "ellik yil oldin"
+    },
+    {
+      "en": "just like this",
+      "uz": "xuddi shundayligicha"
+    },
+    {
+      "en": "at first",
+      "uz": "dastlab"
+    },
+    {
+      "en": "in fact",
+      "uz": "aslida"
+    },
+    {
+      "en": "in those days",
+      "uz": "o'sha kunlarda"
+    },
+    {
+      "en": "back then",
+      "uz": "o'sha paytda"
+    },
+    {
+      "en": "off the coast",
+      "uz": "qirg'oq yaqinida"
+    },
+    {
+      "en": "to look across",
+      "uz": "bo'ylab qaramoq"
+    },
+    {
+      "en": "a fire escape",
+      "uz": "yong'in chiqish yo'li"
+    },
+    {
+      "en": "Turn left / right",
+      "uz": "Chapga / o'ngga buriling"
+    },
+    {
+      "en": "on your left / right",
+      "uz": "chap / o'ng tomoningizda"
+    },
+    {
+      "en": "a train station",
+      "uz": "temiryo'l bekati"
+    },
+    {
+      "en": "a bus stop",
+      "uz": "avtobus bekati"
+    },
+    {
+      "en": "a supermarket",
+      "uz": "supermarket"
+    },
+    {
+      "en": "a garage",
+      "uz": "garaj, avtoservis"
+    },
+    {
+      "en": "a hospital",
+      "uz": "kasalxona"
+    },
+    {
+      "en": "a sports centre",
+      "uz": "sport markazi"
+    },
+    {
+      "en": "a cinema",
+      "uz": "kinoteatr"
+    },
+    {
+      "en": "a school",
+      "uz": "maktab"
+    },
+    {
+      "en": "a museum",
+      "uz": "muzey"
+    },
+    {
+      "en": "a department store",
+      "uz": "univermag"
+    },
+    {
+      "en": "a police station",
+      "uz": "militsiya bo'limi"
+    },
+    {
+      "en": "a park",
+      "uz": "bog'"
+    },
+    {
+      "en": "a restaurant",
+      "uz": "restoran"
+    },
+    {
+      "en": "a post office",
+      "uz": "pochta bo'limi"
+    },
+    {
+      "en": "a café",
+      "uz": "kafe"
+    },
+    {
+      "en": "a bank",
+      "uz": "bank"
+    },
+    {
+      "en": "a fire station",
+      "uz": "o't o'chirish bo'limi"
+    },
+    {
+      "en": "next to",
+      "uz": "yonida"
+    },
+    {
+      "en": "opposite",
+      "uz": "ro'parasida"
+    },
+    {
+      "en": "between",
+      "uz": "orasida"
+    },
+    {
+      "en": "in front of",
+      "uz": "oldida"
+    },
+    {
+      "en": "on the corner of",
+      "uz": "burchagida"
+    },
+    {
+      "en": "the way to",
+      "uz": "...ga boradigan yo'l"
+    },
+    {
+      "en": "a turning",
+      "uz": "burilish"
+    },
+    {
+      "en": "Go straight down",
+      "uz": "To'g'ri yuring"
+    }
   ]
 }
