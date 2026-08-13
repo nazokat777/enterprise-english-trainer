@@ -69,9 +69,9 @@ Modelda `audio` va `audioNoteUz` maydonlari **allaqachon bor**
 
 ---
 
-## Hozircha ochiq qolgan 3 mashq
+## Hozircha ochiq qolgan 4 mashq
 
-Butun bazada (202 bet, ~4400 band) faqat **shu uchtasi** audioga muhtoj.
+Butun bazada (220 bet, ~4900 band) faqat **shu to'rttasi** audioga muhtoj.
 Qolgan hammasi kitob matnidan yopilgan.
 
 | Bet | Mashq | Nima kerak |
@@ -79,6 +79,7 @@ Qolgan hammasi kitob matnidan yopilgan.
 | Coursebook **81** | Ex.21 | c, d, g, h bandlaridagi ravishlar |
 | Coursebook **95** | Ex.10a | Tokyo va New York ob-havo belgisi |
 | Coursebook **97** | Ex.14 | 10 bashoratning W (ayol) / M (erkak) taqsimoti |
+| Coursebook **101** | Ex.11 | 4 qator: MUST / CAN'T / CAN |
 
 Batafsil ro'yxat — pastda.
 
@@ -137,6 +138,33 @@ Har birining yoniga **W** (ayol aytdi) yoki **M** (erkak aytdi) qo'yiladi.
 
 ---
 
-**Eng tez yo'l:** shu uchta mashqni tinglab, javoblarni menga aytsangiz —
+### 4. Coursebook 101-bet, Ex.11 — Mrs Battersby va ijarachi
+
+Uy egasi yangi ijarachiga qoidalarni aytadi. Jadvalda **10 qator**,
+har biriga MUST / CAN'T / CAN dan bittasi belgilanadi.
+
+**6 tasi kitobning o'zidan yopilgan:**
+
+| Qator | Javob | Qayerdan |
+|---|---|---|
+| keep pets | CAN'T | kitobda ✓ berilgan |
+| play loud music | CAN'T | Ex.12 namuna dialogi |
+| use the telephone | CAN | Ex.12 namuna dialogi |
+| make the bed | MUST | Ex.12 namuna dialogi |
+| keep the room clean | MUST | grammatika qutisi |
+| be home by 11 pm | MUST | Grammar Book 60-bet |
+
+**4 tasi ochiq:**
+
+| Qator | MUST / CAN'T / CAN? |
+|---|---|
+| have parties in the room | ? |
+| have a TV in the room | ? |
+| put posters on the walls | ? |
+| pay the rent on time | ? |
+
+---
+
+**Eng tez yo'l:** shu to'rtta mashqni tinglab, javoblarni menga aytsangiz —
 JSON'larga kiritaman va baza 100% yopiladi. Butun audio pleerni qurish
 shart emas.
