@@ -1,0 +1,393 @@
+{
+  "book": "coursebook",
+  "pdfPage": 75,
+  "bookPage": 69,
+  "unit": 905,
+  "episode": 1,
+  "afterUnit": 9,
+  "unitTitle": "The Expedition — Episode 1: The Waterfall",
+  "module": 3,
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "Episode 1 — mashqlar",
+      "titleUz": "1-epizod — mashqlar",
+      "exercises": [
+        {
+          "ref": "1",
+          "type": "fill_gap",
+          "instructionEn": "Look at the pictures on p. 68. Which picture(s) show(s):",
+          "instructionUz": "68-betdagi rasmlarga qarang. Qaysi rasm(lar)da ko'rsatilgan:",
+          "explanationUz": "68-BETDAGI 9 RASM:\n  1  Samolyotda — Sandra va Devid o'rindiqda\n  2  Mehmonxonada — Devid o'tirgan, jip haqida gap\n  3  O'rmonda — jip yonida, Sandra asabiy\n  4  O'rmonda — nog'ora ovozi, orqada hindular\n  5  O'rmonda — qochish, 'Sandra, run!'\n  6  Daryo bo'yida — qayiqni ko'rishdi\n  7  Qayiqda — eshkak eshish\n  8  Qayiqda — sharshara ko'rindi\n  9  Sharsharadan qulash — 'Help!'\n\nBa'zi savollarga BIR NECHA rasm javob bo'ladi —\nsavolda 'picture(S)' deb ko'plik qavs ichida berilgan.",
+          "bookRef": "Coursebook, 69-bet, 1-mashq",
+          "items": [
+            { "textEn": "a  a jeep?", "answer": "picture 3", "hintUz": "O'rmonga kelgan sahna", "whyUz": "3-rasmda oq jip ko'rinadi (o'rmonga yetib kelishgan).\n2-rasmda jip haqida GAPIRILADI, lekin ko'rinmaydi." },
+            { "textEn": "b  a waterfall?", "answer": "pictures 8 and 9", "hintUz": "Hikoyaning oxirgi ikki rasmi", "whyUz": "8-rasmda sharsharani KO'RISHADI ('Oh, no! A waterfall!'),\n9-rasmda esa undan QULASHADI ('Help!')." },
+            { "textEn": "c  a canoe?", "answer": "pictures 6, 7, 8 and 9", "hintUz": "Qayiq topilgandan keyingi hamma rasm", "whyUz": "6-rasmda qayiqni topishadi,\n7 va 8-rasmda qayiqda suzishadi,\n9-rasmda qayiq bilan qulashadi." },
+            { "textEn": "d  David and Sandra falling down the waterfall?", "answer": "picture 9", "hintUz": "Eng oxirgi rasm", "whyUz": "9-rasm — 'Help! Help! Help!' deb qulayotgan sahna.\n'to fall down' = qulamoq, tushib ketmoq." },
+            { "textEn": "e  David and Sandra on the plane?", "answer": "picture 1", "hintUz": "Birinchi rasm", "whyUz": "1-rasm — 'ON THE PLANE ...' sarlavhasi bilan.\nDeraza va o'rindiqlar ko'rinadi." },
+            { "textEn": "f  David and Sandra in a hotel room?", "answer": "picture 2", "hintUz": "Ikkinchi rasm", "whyUz": "2-rasm — 'AT THE HOTEL ...' sarlavhasi bilan.\nDIQQAT: bu rasmda faqat Devid ko'rinadi,\nSandra kadr tashqarisidan gapiradi." }
+          ]
+        },
+        {
+          "ref": "2",
+          "type": "choose_correct",
+          "hasAudio": true,
+          "instructionEn": "Who said the following? Listen to the story and write S (for Sandra) and D (for David).",
+          "instructionUz": "Quyidagilarni kim aytdi? Hikoyani tinglang va S (Sandra) yoki D (Devid) deb yozing.",
+          "explanationUz": "USUL — GAPGA QARAB ANIQLASH:\n\n  Agar gapda ISM chaqirilsa, uni BOSHQASI aytadi:\n     'David, ...' → SANDRA aytdi\n     'Sandra, ...' → DEVID aytdi\n\n  Xarakterlar farqi ham yordam beradi:\n     SANDRA — qo'rqoq, asabiy, xavotirli\n     DEVID  — xotirjam, tinchlantiruvchi\n\nJavoblarni 68-betdagi matndan ham tekshirsa bo'ladi.",
+          "bookRef": "Coursebook, 69-bet, 2-mashq",
+          "items": [
+            { "textEn": "1  It's boiling hot out there.", "answer": "D", "options": ["S", "D"], "hintUz": "Mehmonxonada shlyapa haqida ogohlantirgan kim?", "whyUz": "DEVID (2-rasm).\nTo'liq gap: 'Let's go, then. Don't forget to take your hat.\nIt's boiling hot out there.'" },
+            { "textEn": "2  I don't like the jungle.", "answer": "S", "options": ["S", "D"], "hintUz": "O'rmondan kim qo'rqadi?", "whyUz": "SANDRA (3-rasm).\nTo'liq gap: 'I don't like the jungle. It makes me nervous.'\nDevid esa aksincha — o'rmon unga yoqadi." },
+            { "textEn": "3  Someone is watching us.", "answer": "S", "options": ["S", "D"], "hintUz": "Kimdir kuzatayotganini kim his qildi?", "whyUz": "SANDRA (3-rasm).\nTo'liq gap: 'I feel like someone is watching us all the time.'\nBu — Sandraning xavotiri." },
+            { "textEn": "4  Let's go to the river.", "answer": "D", "options": ["S", "D"], "hintUz": "Kim qochishni taklif qildi?", "whyUz": "DEVID (5-rasm).\nTo'liq gap: 'Sandra, run! Let's go to the river.'\nDIQQAT: gapda 'Sandra' chaqirilgan → demak DEVID aytdi." },
+            { "textEn": "5  They can't catch us now.", "answer": "D", "options": ["S", "D"], "hintUz": "Kim tinchlantiryapti?", "whyUz": "DEVID (7-rasm).\nTo'liq gap: 'Calm down. They can't catch us now.'\nDevid — doim tinchlantiruvchi tomon." },
+            { "textEn": "6  Oh, no! A waterfall!", "answer": "S", "options": ["S", "D"], "hintUz": "Kim qo'rqib qichqirdi?", "whyUz": "SANDRA (8-rasm).\nDevid 'Sandra, watch your head!' degandan keyin\nSandra sharsharani ko'rib qichqiradi." }
+          ]
+        },
+        {
+          "ref": "3",
+          "type": "fill_gap",
+          "instructionEn": "Read the episode and answer the questions.",
+          "instructionUz": "Epizodni o'qing va savollarga javob bering.",
+          "explanationUz": "Har bir savolning javobi 68-betdagi matnda BOR.\nTo'liq gap bilan javob bering.",
+          "bookRef": "Coursebook, 69-bet, 3-mashq",
+          "items": [
+            { "textEn": "1  What's the weather like in the jungle?", "answer": "It's boiling hot.", "hintUz": "Devid mehmonxonada nima degan edi?", "whyUz": "Matnda: 'It's boiling hot out there.'\nDIQQAT — savol qolipi: 'What's the weather LIKE?'\n= Ob-havo qanday?  ('like' javobda takrorlanmaydi)." },
+            { "textEn": "2  Why is Sandra nervous in picture 3?", "answer": "Because she feels like someone is watching them all the time.", "hintUz": "Sandra o'zi buni tushuntirgan", "whyUz": "Matnda: 'I feel like someone is watching us all the time.'\nJavobda 'us' → 'them' ga o'zgaradi\n(Sandra o'zi haqida gapirgan, biz u haqida gapiryapmiz).\n'Why ...?' savoliga 'Because ...' bilan javob beriladi." },
+            { "textEn": "3  Does David like the jungle? Why/Why not?", "answer": "Yes, he does. He thinks it's nice and peaceful.", "hintUz": "Devid Sandraga qanday javob bergan?", "whyUz": "Matnda: 'Don't be silly. It's so nice and peaceful here.'\nSandraga QARAMA-QARSHI fikrda.\nQisqa javob: 'Yes, he does' ('Does ...?' savoliga)." },
+            { "textEn": "4  Who hears the Jivaro Indians first?", "answer": "Sandra does. She hears the drums.", "hintUz": "4-rasmda kim gapiryapti?", "whyUz": "4-rasmda SANDRA: 'Sh!!! Listen! Can you hear the drums?'\nDevid esa faqat 5-rasmda ko'radi.\n'first' = birinchi bo'lib.\nQisqa javob: 'Sandra does.'" },
+            { "textEn": "5  What does \"Watch your head!\" mean?", "answer": "Be careful — there is something above you and you may hit your head.", "hintUz": "Sharshara oldida aytilgan", "whyUz": "'Watch your head!' = boshingni ehtiyot qil!\n'watch' bu yerda KO'RMOQ emas, EHTIYOT BO'LMOQ.\nShunga o'xshash: 'Watch out!' = ehtiyot bo'l!\n'Watch your step!' = qadamingni ehtiyot qil!" },
+            { "textEn": "5  What does \"Come on!\" mean?", "answer": "Hurry up! / Let's go quickly!", "hintUz": "Qayiqda eshkak eshayotganda aytilgan", "whyUz": "'Come on!' = qani!, tezroq!, davom et!\nBu — shoshiltiruvchi yoki dalda beruvchi undov.\nSo'zma-so'z tarjima qilinmaydi." },
+            { "textEn": "5  What does \"Calm down.\" mean?", "answer": "Relax! / Don't panic!", "hintUz": "Devid Sandraga aytgan", "whyUz": "'Calm down' = tinchlan, xotirjam bo'l, hovuridan tush.\n'calm' = tinch, xotirjam (4-mashqda 'nervous' ning aksi)." }
+          ]
+        },
+        {
+          "ref": "4",
+          "type": "match",
+          "instructionEn": "Match the adjectives to their opposites.",
+          "instructionUz": "Sifatlarni ularning qarama-qarshisiga moslang.",
+          "explanationUz": "CHAP USTUN:  silly, nervous, dangerous, nice, peaceful,\n             boiling hot\nO'NG USTUN:  safe, freezing cold, noisy, calm, clever,\n             horrible\n\nKitobda BIR juftlik allaqachon chizilgan:\n  silly → clever\n\nHamma sifat 68-betdagi hikoyada uchraydi.\n\nDIQQAT — 'BOILING HOT' va 'FREEZING COLD':\n  Bular KUCHAYTIRILGAN sifatlar:\n     boiling hot   = qaynayotgandek issiq (juda issiq)\n     freezing cold = muzlaydigan darajada sovuq\n  'to boil' = qaynamoq;  'to freeze' = muzlamoq",
+          "bookRef": "Coursebook, 69-bet, 4-mashq",
+          "pairs": [
+            { "left": "silly", "right": "clever", "leftUz": "bema'ni, ahmoqona", "rightUz": "aqlli", "whyUz": "KITOBDA CHIZILGAN.\nDevid: 'Don't be silly.'" },
+            { "left": "nervous", "right": "calm", "leftUz": "asabiy, hayajonli", "rightUz": "xotirjam, tinch", "whyUz": "Sandra NERVOUS, Devid esa uni tinchlantiradi:\n'CALM down.'\nIkkala so'z ham hikoyada bor." },
+            { "left": "dangerous", "right": "safe", "leftUz": "xavfli", "rightUz": "xavfsiz", "whyUz": "Sandra: 'do you think the Jivaro Indians are DANGEROUS?'\n'safe' = xavfsiz (aksi)." },
+            { "left": "nice", "right": "horrible", "leftUz": "yoqimli, yaxshi", "rightUz": "dahshatli", "whyUz": "Devid: 'It's so NICE and peaceful here.'\n'horrible' — 65-betda ham uchragan." },
+            { "left": "peaceful", "right": "noisy", "leftUz": "tinch, osoyishta", "rightUz": "shovqinli", "whyUz": "Devid: 'It's so nice and PEACEFUL here.'\nLekin keyin NOG'ORA ovozi eshitiladi — tinchlik buziladi.\n'noise' = shovqin → 'noisy' = shovqinli." },
+            { "left": "boiling hot", "right": "freezing cold", "leftUz": "jazirama issiq", "rightUz": "qahraton sovuq", "whyUz": "Devid: 'It's BOILING HOT out there.'\nIkkalasi ham KUCHAYTIRILGAN sifat:\nto boil (qaynamoq) ↔ to freeze (muzlamoq)." }
+          ]
+        },
+        {
+          "ref": "4b",
+          "type": "fill_gap",
+          "instructionEn": "Then, use the adjectives in the left column to make sentences, as in the example.",
+          "instructionUz": "So'ng chap ustundagi sifatlar bilan namunadagidek gaplar tuzing.",
+          "explanationUz": "KITOBDAGI NAMUNA:\n  Don't be silly.\n\nGaplarni hikoyadan olsangiz eng yaxshi bo'ladi —\nhammasi 68-betda bor.\n\nSIFAT GAPDA QAYERDA TURADI:\n  'to be' dan KEYIN:  It is nice.  /  Don't be silly.\n  OTDAN OLDIN:        a dangerous animal, a peaceful place",
+          "bookRef": "Coursebook, 69-bet, 4-mashq (gaplar)",
+          "items": [
+            { "textEn": "silly", "answer": "Don't be silly.", "hintUz": "KITOBDAGI NAMUNA", "whyUz": "Devidning 68-betdagi gapi.\nBuyruq gap: 'Don't be' + sifat." },
+            { "textEn": "nervous", "answer": "The jungle makes me nervous.", "hintUz": "Sandraning his-tuyg'usi", "whyUz": "Hikoyadan: 'It makes me nervous.'\n'make somebody + sifat' — 'to' kerak emas." },
+            { "textEn": "dangerous", "answer": "Do you think the Jivaro Indians are dangerous?", "hintUz": "Sandraning samolyotdagi savoli", "whyUz": "Hikoyadan olingan.\n'to be' dan keyin sifat turadi." },
+            { "textEn": "nice", "answer": "It's so nice and peaceful here.", "hintUz": "Devidning o'rmon haqidagi fikri", "whyUz": "Hikoyadan olingan.\n'so' — sifatni kuchaytiradi." },
+            { "textEn": "peaceful", "answer": "The village is very peaceful.", "hintUz": "Tinch joy haqida", "whyUz": "'peaceful' — joy haqida ishlatiladi.\n'very' — kuchaytirgich." },
+            { "textEn": "boiling hot", "answer": "It's boiling hot out there.", "hintUz": "Devidning ob-havo haqidagi gapi", "whyUz": "Hikoyadan olingan.\nOb-havo haqida gapirganda ega — 'it'." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar_theory",
+      "title": "a/an - the",
+      "titleUz": "a/an - the (artikllar)",
+      "exercises": [
+        {
+          "ref": "Artikl-nazariya",
+          "type": "explain",
+          "instructionEn": "a/an - the",
+          "instructionUz": "a/an - the",
+          "explanationUz": "ASOSIY QOIDA:\n\n  A/AN — biror narsa haqida BIRINCHI MARTA gapirganda\n  THE  — ILGARI AYTILGAN narsa haqida gapirganda\n\n  MISOL:\n     There's A jeep outside.       (birinchi marta)\n     THE jeep belongs to Mr Jones. (o'sha jip haqida)\n\n  Hikoyadan misol:\n     Look ... A canoe!             (birinchi marta)\n     David starts paddling ... in THE canoe.  (o'sha qayiq)\n\nTHE QO'YILADI:\n\n  • daryo nomlari      → the Amazon River\n  • dengiz nomlari     → the Black Sea\n  • okean nomlari      → the Atlantic\n  • tog' tizmalari     → the Alps\n  • millat nomlari     → the English\n  • oila nomlari       → the Browns\n  • qabila nomlari     → the Jivaro Indians\n\nTHE QO'YILMAYDI:\n\n  • atoqli otlar       → Jane, Athens\n  • mamlakat nomlari   → Britain, Brazil\n  • ovqat nomlari      → breakfast, lunch, dinner\n  • sport/o'yin nomlari → tennis, football\n\nA yoki AN — QAY BIRI?\n  UNDOSH tovush oldidan → A   (a jeep, a canoe)\n  UNLI tovush oldidan   → AN  (an article, an aeroplane)\n  DIQQAT: yozilishiga emas, TOVUSHGA qaraladi.\n\nESLATMA — MAMLAKAT NOMLARIDA ISTISNO:\n  Ko'plik yoki 'union/kingdom/republic' so'zi bo'lsa THE:\n     the USA, the UK, the Netherlands, the Philippines\n  Oddiy mamlakat nomlarida THE yo'q:\n     Brazil, Britain, Uzbekistan",
+          "bookRef": "Coursebook, 69-bet, a/an - the qutisi",
+          "points": [
+            { "en": "We use a/an to talk about something for the first time.", "uz": "A/AN ni biror narsa haqida birinchi marta gapirganda ishlatamiz.", "noteUz": "KITOBDAGI 1-QOIDA.\nMisol: There's A jeep outside." },
+            { "en": "We use the to talk about something we have mentioned before.", "uz": "THE ni ilgari aytilgan narsa haqida gapirganda ishlatamiz.", "noteUz": "KITOBDAGI 2-QOIDA.\nMisol: THE jeep belongs to Mr Jones." },
+            { "en": "the names of rivers — the Amazon River", "uz": "daryo nomlari", "noteUz": "THE SHART.\nBoshqa misollar: the Nile, the Thames, the Volga." },
+            { "en": "the names of seas — the Black Sea", "uz": "dengiz nomlari", "noteUz": "THE SHART.\nthe Red Sea, the Aral Sea." },
+            { "en": "the names of oceans — the Atlantic", "uz": "okean nomlari", "noteUz": "THE SHART.\nthe Pacific, the Indian Ocean." },
+            { "en": "mountain ranges — the Alps", "uz": "tog' tizmalari", "noteUz": "THE SHART.\nDIQQAT: BITTA tog' nomida THE YO'Q — Mount Everest." },
+            { "en": "nationalities — the English", "uz": "millat nomlari", "noteUz": "THE SHART (butun xalq ma'nosida).\nthe French, the Uzbeks." },
+            { "en": "the names of families — the Browns", "uz": "oila nomlari", "noteUz": "THE SHART + KO'PLIK -s.\n'the Browns' = Braunlar oilasi." },
+            { "en": "the names of tribes — the Jivaro Indians", "uz": "qabila nomlari", "noteUz": "THE SHART.\nHikoyada shu shaklda ishlatilgan." },
+            { "en": "proper names — Jane, Athens", "uz": "atoqli otlar", "noteUz": "THE QO'YILMAYDI.\nOdam ismlari va shahar nomlari." },
+            { "en": "the names of countries — Britain", "uz": "mamlakat nomlari", "noteUz": "THE QO'YILMAYDI.\nISTISNO: the USA, the UK, the Netherlands." },
+            { "en": "the names of meals — breakfast", "uz": "ovqat nomlari", "noteUz": "THE QO'YILMAYDI.\nhave breakfast, have lunch, have dinner." },
+            { "en": "the names of sports/games — tennis", "uz": "sport va o'yin nomlari", "noteUz": "THE QO'YILMAYDI.\nplay tennis, play football.\nDIQQAT: cholg'u asboblarida esa THE SHART —\nplay THE piano." }
+          ]
+        },
+        {
+          "ref": "5",
+          "type": "fill_gap",
+          "instructionEn": "Read the summary and fill in a, an or the, where necessary.",
+          "instructionUz": "Xulosani o'qing va kerak bo'lgan joyga a, an yoki the ni qo'ying.",
+          "explanationUz": "TO'LIQ XULOSA (to'ldirilgan holda):\n\n  David and Sandra go to Brazil to write AN article about\n  THE Amazon rainforest. In the jungle, Sandra feels\n  nervous. Suddenly, she hears THE Jivaro Indians. They run\n  to THE Amazon River and get in A canoe. David starts\n  paddling down THE river in THE canoe. Suddenly, they see\n  A waterfall.\n\nO'ZBEKCHA TARJIMASI:\n  Devid va Sandra Amazon tropik o'rmoni haqida maqola\n  yozish uchun Braziliyaga boradilar. O'rmonda Sandra\n  asabiylashadi. To'satdan u Xivaro hindularini eshitadi.\n  Ular Amazon daryosiga yugurib borib qayiqqa tushadilar.\n  Devid qayiqda daryo bo'ylab eshkak esha boshlaydi.\n  To'satdan ular sharsharani ko'radilar.\n\nDIQQAT — 'WHERE NECESSARY':\n  Ba'zi bo'shliqlarga HECH NARSA qo'yilmaydi (—).\n  Bular: David, Sandra, Brazil (atoqli ot va mamlakat).\n\nENG MUHIM JUFTLIK — A → THE:\n  get in A canoe        (birinchi marta)\n  in THE canoe          (o'sha qayiq)\n  Xuddi shunday:\n  run to THE Amazon River  (daryo nomi → the)\n  paddling down THE river  (o'sha daryo → the)",
+          "bookRef": "Coursebook, 69-bet, 5-mashq",
+          "wordList": ["a", "an", "the", "— (hech narsa)"],
+          "items": [
+            { "textEn": "1  ............ David and ...", "answer": "— (hech narsa)", "hintUz": "Odam ismi", "whyUz": "'David' — ATOQLI OT → artikl QO'YILMAYDI." },
+            { "textEn": "2  ... and ............ Sandra go to ...", "answer": "— (hech narsa)", "hintUz": "Odam ismi", "whyUz": "'Sandra' — ATOQLI OT → artikl QO'YILMAYDI." },
+            { "textEn": "3  ... go to ............ Brazil ...", "answer": "— (hech narsa)", "hintUz": "Mamlakat nomi", "whyUz": "'Brazil' — MAMLAKAT nomi → artikl QO'YILMAYDI.\nISTISNO: the USA, the UK, the Netherlands." },
+            { "textEn": "4  ... to write ............ article ...", "answer": "an", "hintUz": "Birinchi marta aytilyapti; 'a' unli tovush", "whyUz": "Maqola BIRINCHI marta aytilyapti → A/AN.\n'article' /ˈɑːtɪkl/ — UNLI tovush bilan boshlanadi → AN." },
+            { "textEn": "5  ... about ............ Amazon rainforest.", "answer": "the", "hintUz": "Dunyoda yagona, aniq joy", "whyUz": "'the Amazon rainforest' — ANIQ, yagona joy → THE.\nAmazon daryosi bilan bir xil qoida." },
+            { "textEn": "6  In the jungle, ............ Sandra feels nervous.", "answer": "— (hech narsa)", "hintUz": "Yana odam ismi", "whyUz": "'Sandra' — ATOQLI OT → artikl QO'YILMAYDI.\nDIQQAT: 'the jungle' da esa THE bor (matnda berilgan)." },
+            { "textEn": "7  Suddenly, she hears ............ Jivaro Indians.", "answer": "the", "hintUz": "Qabila nomi", "whyUz": "'the Jivaro Indians' — QABILA nomi → THE SHART.\nQoidada aynan shu misol berilgan." },
+            { "textEn": "8  They run to ............ Amazon River ...", "answer": "the", "hintUz": "Daryo nomi", "whyUz": "'the Amazon River' — DARYO nomi → THE SHART.\nQoidada aynan shu misol berilgan." },
+            { "textEn": "9  ... and get in ............ canoe.", "answer": "a", "hintUz": "Qayiq BIRINCHI marta aytilyapti", "whyUz": "Qayiq BIRINCHI marta aytilyapti → A.\n'canoe' /kəˈnuː/ — 'k' undosh tovush → A ('an' EMAS).\n68-betda ham shunday: 'Look ... A canoe!'" },
+            { "textEn": "10  David starts paddling down ............ river ...", "answer": "the", "hintUz": "Daryo ALLAQACHON aytilgan (8-band)", "whyUz": "8-bandda 'the Amazon River' aytilgan → endi THE river.\nILGARI AYTILGAN narsa → THE." },
+            { "textEn": "11  ... in ............ canoe.", "answer": "the", "hintUz": "Qayiq ALLAQACHON aytilgan (9-band)", "whyUz": "9-bandda 'A canoe' aytilgan → endi THE canoe.\nBu — A → THE o'zgarishining eng aniq misoli." },
+            { "textEn": "12  Suddenly, they see ............ waterfall.", "answer": "a", "hintUz": "Sharshara BIRINCHI marta aytilyapti", "whyUz": "Sharshara BIRINCHI marta aytilyapti → A.\n'waterfall' — 'w' undosh tovush → A.\n68-betda ham: 'Oh, no! A waterfall!'" }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": "Grammar — will (predictions)",
+      "titleUz": "Grammatika — will (bashorat)",
+      "exercises": [
+        {
+          "ref": "6",
+          "type": "explain",
+          "hasAudio": true,
+          "instructionEn": "Listen to the episode and follow the dialogue. Then, take roles and read it aloud.",
+          "instructionUz": "Epizodni tinglang va dialogni kuzatib boring. So'ng rollarga bo'linib ovoz chiqarib o'qing.",
+          "explanationUz": "WILL — KELASI ZAMON\n\n  TASDIQ       I/you/he, etc  WILL go.\n  INKOR        I/you/he, etc  WON'T (will not) go.\n  SO'ROQ       WILL I/you/he, etc  go?\n  QISQA JAVOB  Yes, I/you/he, etc WILL.\n               No,  I/you/he, etc WON'T.\n\nKITOBDAGI QOIDA:\n  'will' ni BASHORAT qilish uchun ishlatamiz.\n     I think the Jivaro Indians WILL catch them.\n     Perhaps Sandra WILL hit her head.\n\nUCH MUHIM QOIDA:\n\n  1) HAMMA EGA UCHUN BIR XIL — WILL.\n     I will, he will, they will — -S YO'Q.\n     'he wills' XATO.\n\n  2) KEYINGI FE'L ASOSIY SHAKLDA, 'to' SIZ:\n        He will go.        ✓\n        He will to go.     ✗ XATO\n        He will goes.      ✗ XATO\n        He will went.      ✗ XATO\n\n  3) 'DO/DOES/DID' KERAK EMAS:\n        Will he go?        ✓\n        Does he will go?   ✗ XATO\n\nQISQARTMA:\n  will not → WON'T  (/wəʊnt/)\n  DIQQAT: 'willn't' shakli YO'Q.\n  Og'zaki nutqda: I'll, you'll, he'll, we'll, they'll\n\nBASHORAT SO'ZLARI ('will' bilan birga keladi):\n  I think ...    = menimcha ...\n  I hope ...     = umid qilaman ...\n  Perhaps ...    = ehtimol ...\n  Maybe ...      = balki ...\n  I'm sure ...   = ishonchim komil ...",
+          "bookRef": "Coursebook, 69-bet, will qutisi",
+          "points": [
+            { "en": "I/you/he, etc will go.", "uz": "Men / sen / u boradi.", "noteUz": "TASDIQ. 'will' hamma ega uchun bir xil.\nKeyingi fe'l asosiy shaklda, 'to' siz." },
+            { "en": "I/you/he, etc won't (will not) go.", "uz": "Bormaydi.", "noteUz": "INKOR: will + not = WON'T.\n'willn't' shakli YO'Q." },
+            { "en": "Will I/you/he, etc go?", "uz": "Boradimi?", "noteUz": "SO'ROQ: WILL gap boshiga chiqadi.\n'do/does' KERAK EMAS." },
+            { "en": "Yes, I/you/he, etc will. — No, I/you/he, etc won't.", "uz": "Ha, boradi. — Yo'q, bormaydi.", "noteUz": "Qisqa javobda 'will/won't' takrorlanadi,\nasosiy fe'l takrorlanmaydi." },
+            { "en": "We use will to make predictions.", "uz": "'will' ni bashorat qilish uchun ishlatamiz.", "noteUz": "KITOBDAGI QOIDA.\nBashorat = kelajakda nima bo'lishi haqidagi fikr." },
+            { "en": "I think the Jivaro Indians will catch them.", "uz": "Menimcha Xivaro hindulari ularni tutadi.", "noteUz": "KITOBDAGI 1-MISOL.\n'I think' — bashorat so'zi." },
+            { "en": "Perhaps Sandra will hit her head.", "uz": "Ehtimol Sandra boshini urib oladi.", "noteUz": "KITOBDAGI 2-MISOL.\n'Perhaps' = ehtimol.\n'to hit' = urmoq, urilmoq." }
+          ]
+        },
+        {
+          "ref": "7-moslash",
+          "type": "match",
+          "instructionEn": "Match the objects to the words in the list.",
+          "instructionUz": "Buyumlarni ro'yxatdagi so'zlarga moslang.",
+          "explanationUz": "RO'YXAT: boiling hot, rainy, freezing cold, snowy\n\nOLTI BUYUM:\n  umbrella (soyabon), hat (shlyapa),\n  swimming-costume (cho'milish kiyimi), sunglasses (ko'zoynak),\n  jacket (kurtka), gloves (qo'lqop)\n\nTo'rt ob-havo so'zi, olti buyum — demak ba'zi ob-havoga\nBIR NECHA buyum to'g'ri keladi.\n\nDIQQAT — 'SUNGLASSES' va 'GLOVES' KO'PLIKDA:\n  sunglasses — DOIM ko'plikda (ikkita shisha)\n  gloves     — juft (bitta bo'lsa 'a glove')\n  Shunga o'xshash: trousers, jeans, scissors",
+          "bookRef": "Coursebook, 69-bet, 7-mashq (moslash)",
+          "pairs": [
+            { "left": "hat", "right": "boiling hot", "leftUz": "shlyapa", "rightUz": "jazirama issiq", "whyUz": "KITOBDAGI NAMUNA.\nShlyapa quyoshdan himoya qiladi.\n68-betda ham: 'Don't forget to take your hat.\nIt's boiling hot out there.'" },
+            { "left": "sunglasses", "right": "boiling hot", "leftUz": "quyosh ko'zoynagi", "rightUz": "jazirama issiq", "whyUz": "Quyoshli, issiq kunda ko'zoynak kerak.\n'sunglasses' — sun + glasses, DOIM ko'plikda." },
+            { "left": "swimming-costume", "right": "boiling hot", "leftUz": "cho'milish kiyimi", "rightUz": "jazirama issiq", "whyUz": "Issiq kunda suvga tushiladi.\n'a costume' = kiyim, libos." },
+            { "left": "umbrella", "right": "rainy", "leftUz": "soyabon", "rightUz": "yomg'irli", "whyUz": "Soyabon yomg'irdan himoya qiladi.\n'rain' (yomg'ir) + -y → 'rainy' (yomg'irli)." },
+            { "left": "gloves", "right": "freezing cold", "leftUz": "qo'lqoplar", "rightUz": "qahraton sovuq", "whyUz": "Qo'lqop qo'lni sovuqdan saqlaydi.\n'gloves' — juft, ko'plikda." },
+            { "left": "jacket", "right": "snowy", "leftUz": "kurtka", "rightUz": "qorli", "whyUz": "Qorli kunda issiq kurtka kerak.\n'snow' (qor) + -y → 'snowy' (qorli).\nESLATMA: kurtka 'freezing cold' bilan ham to'g'ri keladi." }
+          ]
+        },
+        {
+          "ref": "7",
+          "type": "fill_gap",
+          "instructionEn": "Then make predictions, as in the example.",
+          "instructionUz": "So'ng namunadagidek bashoratlar qiling.",
+          "explanationUz": "KITOBDAGI NAMUNA:\n  It will be boiling hot tomorrow, so don't forget to take\n  your hat.\n\nQOLIP:\n  It WILL BE [ob-havo] tomorrow, SO don't forget to take\n  your [buyum].\n\nUCH DIQQAT:\n\n  1) 'It will BE' — 'will' dan keyin 'be' asosiy shaklda\n     ('It will is' XATO).\n\n  2) 'SO' — natijani bog'laydi (shuning uchun).\n     Oldidan VERGUL qo'yiladi.\n\n  3) 'take YOUR hat' — egalik olmoshi ishlatiladi\n     ('take the hat' emas).",
+          "bookRef": "Coursebook, 69-bet, 7-mashq",
+          "items": [
+            { "textEn": "boiling hot + hat", "answer": "It will be boiling hot tomorrow, so don't forget to take your hat.", "hintUz": "KITOBDAGI NAMUNA", "whyUz": "Qolip: It will be + ob-havo + tomorrow, so don't forget\nto take your + buyum." },
+            { "textEn": "rainy + umbrella", "answer": "It will be rainy tomorrow, so don't forget to take your umbrella.", "hintUz": "Yomg'ir + soyabon", "whyUz": "'rainy' = yomg'irli.\nSoyabon yomg'irdan himoya qiladi." },
+            { "textEn": "boiling hot + sunglasses", "answer": "It will be boiling hot tomorrow, so don't forget to take your sunglasses.", "hintUz": "Issiq + ko'zoynak", "whyUz": "'sunglasses' ko'plikda — 'your sunglasses'." },
+            { "textEn": "boiling hot + swimming-costume", "answer": "It will be boiling hot tomorrow, so don't forget to take your swimming-costume.", "hintUz": "Issiq + cho'milish kiyimi", "whyUz": "Issiq kunda suvga tushiladi." },
+            { "textEn": "freezing cold + gloves", "answer": "It will be freezing cold tomorrow, so don't forget to take your gloves.", "hintUz": "Sovuq + qo'lqop", "whyUz": "'freezing cold' = qahraton sovuq.\n'gloves' ko'plikda." },
+            { "textEn": "snowy + jacket", "answer": "It will be snowy tomorrow, so don't forget to take your jacket.", "hintUz": "Qor + kurtka", "whyUz": "'snowy' = qorli.\nKurtka 'freezing cold' bilan ham to'g'ri keladi." }
+          ]
+        },
+        {
+          "ref": "8",
+          "type": "fill_gap",
+          "instructionEn": "What do you think will/won't happen to David and Sandra? Use the prompts below to make one positive and one negative prediction.",
+          "instructionUz": "Sizningcha Devid va Sandraga nima bo'ladi / bo'lmaydi? Quyidagi ko'rsatmalardan foydalanib bitta ijobiy va bitta salbiy bashorat qiling.",
+          "explanationUz": "KO'RSATMALAR:\n  they/die\n  they/break their legs\n  a crocodile/eat them\n  they/drown\n  they/hurt themselves\n  David/save Sandra\n  the Jivaro Indians catch/kill them\n  the Jivaro Indians/help them\n\nKITOBDAGI NAMUNA:\n  The Jivaro Indians will catch and kill them.\n  They won't help them.\n\nQOLIP:\n  IJOBIY:  [ega] WILL [fe'l].\n  SALBIY:  [ega] WON'T [fe'l].\n\nKitob BITTA ijobiy va BITTA salbiy bashorat so'raydi,\nlekin quyida barcha ko'rsatmalar bo'yicha namunalar\nberilgan — mashq qilish uchun.\n\nYANGI SO'ZLAR:\n  to die           = o'lmoq\n  to break         = sindirmoq\n  a crocodile      = timsoh\n  to drown         = cho'kib ketmoq\n  to hurt oneself  = jarohat olmoq\n  to save          = qutqarmoq\n  to kill          = o'ldirmoq\n\nDIQQAT — 'THEMSELVES':\n  'hurt THEMSELVES' = o'zlarini jarohatlashmoq.\n  Harakat egaga qaytsa, o'zlik olmoshi ishlatiladi:\n     myself, yourself, himself, herself,\n     ourselves, yourselves, themselves",
+          "bookRef": "Coursebook, 69-bet, 8-mashq",
+          "items": [
+            { "textEn": "the Jivaro Indians catch/kill them  (IJOBIY)", "answer": "The Jivaro Indians will catch and kill them.", "hintUz": "KITOBDAGI NAMUNA (ijobiy)", "whyUz": "Ikki fe'l 'and' bilan bog'langan —\n'will' faqat BIR MARTA yoziladi:\n'will catch and kill' ('will catch and will kill' shart emas)." },
+            { "textEn": "the Jivaro Indians/help them  (SALBIY)", "answer": "They won't help them.", "hintUz": "KITOBDAGI NAMUNA (salbiy)", "whyUz": "'won't' = will not.\nEga takrorlanmasligi uchun 'They' ishlatilgan." },
+            { "textEn": "they/die", "answer": "They will die. / They won't die.", "hintUz": "O'lmoq", "whyUz": "'to die' = o'lmoq.\nIkkala variant ham grammatik jihatdan to'g'ri —\nbashorat sizning fikringiz." },
+            { "textEn": "they/break their legs", "answer": "They will break their legs. / They won't break their legs.", "hintUz": "Oyoqlarini sindirmoq", "whyUz": "'to break' = sindirmoq.\n'their legs' — egalik olmoshi ('the legs' emas)." },
+            { "textEn": "a crocodile/eat them", "answer": "A crocodile will eat them. / A crocodile won't eat them.", "hintUz": "Timsoh yeb qo'yishi mumkin", "whyUz": "'a crocodile' — birinchi marta aytilyapti → A.\nAmazon daryosida timsohlar bor." },
+            { "textEn": "they/drown", "answer": "They will drown. / They won't drown.", "hintUz": "Suvda cho'kib ketmoq", "whyUz": "'to drown' = cho'kib ketmoq (suvda halok bo'lmoq).\nSharsharadan qulaganda eng ehtimolli xavf." },
+            { "textEn": "they/hurt themselves", "answer": "They will hurt themselves. / They won't hurt themselves.", "hintUz": "Jarohat olmoq", "whyUz": "'to hurt oneself' = o'zini jarohatlamoq.\n'themselves' — o'zlik olmoshi (harakat egaga qaytadi)." },
+            { "textEn": "David/save Sandra", "answer": "David will save Sandra. / David won't save Sandra.", "hintUz": "Qutqarmoq", "whyUz": "'to save' = qutqarmoq.\nHikoyada Devid doim tinchlantiruvchi va tadbirkor tomon —\nshuning uchun bu bashorat ehtimolli." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "69-bet — artikllar, will, ob-havo sifatlari, xavf lug'ati.",
+    "groups": [
+      {
+        "ruleUz": "A / AN / THE / — : qachon qaysi biri",
+        "explanationUz": "5-mashqning butun mantig'i shu jadvalda.",
+        "items": [
+          { "base": "a canoe", "baseUz": "qayiq (birinchi marta)", "derived": "A — undosh tovush", "derivedUz": "birinchi eslatish", "note": "" },
+          { "base": "an article", "baseUz": "maqola (birinchi marta)", "derived": "AN — unli tovush", "derivedUz": "birinchi eslatish", "note": "" },
+          { "base": "the canoe", "baseUz": "o'sha qayiq", "derived": "THE", "derivedUz": "ilgari aytilgan", "note": "" },
+          { "base": "the Amazon River", "baseUz": "Amazon daryosi", "derived": "THE", "derivedUz": "daryo nomi", "note": "" },
+          { "base": "the Jivaro Indians", "baseUz": "Xivaro hindulari", "derived": "THE", "derivedUz": "qabila nomi", "note": "" },
+          { "base": "Brazil", "baseUz": "Braziliya", "derived": "— (hech narsa)", "derivedUz": "mamlakat nomi", "note": "" },
+          { "base": "David, Sandra", "baseUz": "ismlar", "derived": "— (hech narsa)", "derivedUz": "atoqli ot", "note": "" },
+          { "base": "breakfast, tennis", "baseUz": "ovqat, sport", "derived": "— (hech narsa)", "derivedUz": "ovqat va sport nomlari", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "WILL — kelasi zamon",
+        "explanationUz": "Modal fe'l — hamma shaxsda bir xil.",
+        "items": [
+          { "base": "will", "baseUz": "...adi (kelasi zamon)", "derived": "hamma shaxsda bir xil", "derivedUz": "-S YO'Q", "note": "" },
+          { "base": "will not", "baseUz": "...maydi", "derived": "won't", "derivedUz": "/wəʊnt/", "note": "'willn't' YO'Q" },
+          { "base": "I will", "baseUz": "men ...aman", "derived": "I'll", "derivedUz": "og'zaki qisqartma", "note": "" },
+          { "base": "he will", "baseUz": "u ...adi", "derived": "he'll", "derivedUz": "", "note": "" },
+          { "base": "they will", "baseUz": "ular ...adi", "derived": "they'll", "derivedUz": "", "note": "" },
+          { "base": "can → could", "baseUz": "hozir → o'tgan", "derived": "will — kelasi", "derivedUz": "uchala zamon", "note": "9-unitda 'could'" }
+        ]
+      },
+      {
+        "ruleUz": "Bashorat so'zlari (will bilan)",
+        "explanationUz": "Fikr yoki taxminni yumshatadi.",
+        "items": [
+          { "base": "I think ...", "baseUz": "menimcha ...", "derived": "I think they will drown.", "derivedUz": "", "note": "kitobdagi misol" },
+          { "base": "Perhaps ...", "baseUz": "ehtimol ...", "derived": "Perhaps Sandra will hit her head.", "derivedUz": "", "note": "kitobdagi misol" },
+          { "base": "Maybe ...", "baseUz": "balki ...", "derived": "= perhaps", "derivedUz": "og'zakiroq", "note": "" },
+          { "base": "I hope ...", "baseUz": "umid qilaman ...", "derived": "I hope they won't die.", "derivedUz": "", "note": "" },
+          { "base": "I'm sure ...", "baseUz": "ishonchim komil ...", "derived": "kuchli bashorat", "derivedUz": "", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Ob-havo sifatlari: OT + -Y",
+        "explanationUz": "Otga -y qo'shilib sifat hosil bo'ladi.",
+        "items": [
+          { "base": "rain", "baseUz": "yomg'ir", "derived": "rainy", "derivedUz": "yomg'irli", "note": "" },
+          { "base": "snow", "baseUz": "qor", "derived": "snowy", "derivedUz": "qorli", "note": "" },
+          { "base": "sun", "baseUz": "quyosh", "derived": "sunny", "derivedUz": "quyoshli", "note": "N IKKILANADI" },
+          { "base": "wind", "baseUz": "shamol", "derived": "windy", "derivedUz": "shamolli", "note": "" },
+          { "base": "cloud", "baseUz": "bulut", "derived": "cloudy", "derivedUz": "bulutli", "note": "" },
+          { "base": "fog", "baseUz": "tuman", "derived": "foggy", "derivedUz": "tumanli", "note": "G IKKILANADI" }
+        ]
+      },
+      {
+        "ruleUz": "Kuchaytirilgan sifatlar",
+        "explanationUz": "Ikki so'z birga — kuchli ma'no beradi.",
+        "items": [
+          { "base": "boiling hot", "baseUz": "jazirama issiq", "derived": "to boil = qaynamoq", "derivedUz": "'very hot' dan kuchli", "note": "" },
+          { "base": "freezing cold", "baseUz": "qahraton sovuq", "derived": "to freeze = muzlamoq", "derivedUz": "'very cold' dan kuchli", "note": "" },
+          { "base": "soaking wet", "baseUz": "shalabbo ho'l", "derived": "to soak = ho'llamoq", "derivedUz": "qo'shimcha misol", "note": "" },
+          { "base": "wide awake", "baseUz": "batamom uyg'oq", "derived": "", "derivedUz": "qo'shimcha misol", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "DOIM KO'PLIKDA turadigan otlar",
+        "explanationUz": "Ikki qismdan iborat buyumlar.",
+        "items": [
+          { "base": "sunglasses", "baseUz": "quyosh ko'zoynagi", "derived": "sun + glasses", "derivedUz": "'a sunglass' YO'Q", "note": "a pair of sunglasses" },
+          { "base": "gloves", "baseUz": "qo'lqoplar", "derived": "juft", "derivedUz": "bitta: a glove", "note": "a pair of gloves" },
+          { "base": "trousers", "baseUz": "shim", "derived": "", "derivedUz": "'a trouser' YO'Q", "note": "a pair of trousers" },
+          { "base": "jeans", "baseUz": "jinsi shim", "derived": "", "derivedUz": "", "note": "" },
+          { "base": "scissors", "baseUz": "qaychi", "derived": "", "derivedUz": "", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "Xavf va halokat fe'llari (8-mashq)",
+        "explanationUz": "Bashorat qilishda ishlatiladi.",
+        "items": [
+          { "base": "to die", "baseUz": "o'lmoq", "derived": "death (ot)", "derivedUz": "o'lim", "note": "" },
+          { "base": "to drown", "baseUz": "cho'kib ketmoq", "derived": "suvda halok bo'lmoq", "derivedUz": "", "note": "'w' o'qilmaydi" },
+          { "base": "to break", "baseUz": "sindirmoq", "derived": "break their legs", "derivedUz": "", "note": "" },
+          { "base": "to hurt", "baseUz": "og'ritmoq, jarohatlamoq", "derived": "hurt themselves", "derivedUz": "o'zlik olmoshi bilan", "note": "" },
+          { "base": "to save", "baseUz": "qutqarmoq", "derived": "a saviour", "derivedUz": "qutqaruvchi", "note": "" },
+          { "base": "to kill", "baseUz": "o'ldirmoq", "derived": "a killer", "derivedUz": "qotil", "note": "" },
+          { "base": "to catch", "baseUz": "tutmoq", "derived": "68-betda ham", "derivedUz": "", "note": "" },
+          { "base": "a crocodile", "baseUz": "timsoh", "derived": "/ˈkrɒkədaɪl/", "derivedUz": "", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "69-betdagi asosiy qoliplar.",
+    "patterns": [
+      {
+        "formula": "Ega + WILL + asosiy fe'l.   /   Ega + WON'T + asosiy fe'l.",
+        "exampleEn": "The Jivaro Indians will catch them. They won't help them.",
+        "exampleUz": "Xivaro hindulari ularni tutadi. Ular yordam bermaydi.",
+        "explanationUz": "'will' dan keyin fe'l ASOSIY shaklda, 'to' siz.\nHamma ega uchun bir xil — -s yo'q."
+      },
+      {
+        "formula": "It WILL BE + ob-havo + tomorrow, SO don't forget to take your + buyum.",
+        "exampleEn": "It will be boiling hot tomorrow, so don't forget to take your hat.",
+        "exampleUz": "Ertaga jazirama issiq bo'ladi, shuning uchun shlyapangni olishni unutma.",
+        "explanationUz": "'will BE' — 'be' asosiy shaklda.\n'so' natijani bog'laydi, oldidan vergul."
+      },
+      {
+        "formula": "I think / Perhaps + ega + WILL + fe'l.",
+        "exampleEn": "I think the Jivaro Indians will catch them. Perhaps Sandra will hit her head.",
+        "exampleUz": "Menimcha Xivaro hindulari ularni tutadi. Ehtimol Sandra boshini urib oladi.",
+        "explanationUz": "Bashorat so'zlari fikrni yumshatadi."
+      },
+      {
+        "formula": "A + ot (birinchi marta) ... THE + o'sha ot (keyingi safar).",
+        "exampleEn": "They get in a canoe. David starts paddling in the canoe.",
+        "exampleUz": "Ular qayiqqa tushadilar. Devid qayiqda eshkak esha boshlaydi.",
+        "explanationUz": "Artikl qoidasining eng muhim qismi: A → THE."
+      },
+      {
+        "formula": "What's the weather LIKE?  →  It's boiling hot.",
+        "exampleEn": "What's the weather like in the jungle? — It's boiling hot.",
+        "exampleUz": "O'rmonda ob-havo qanday? — Jazirama issiq.",
+        "explanationUz": "Javobda 'like' TAKRORLANMAYDI.\nOb-havo haqida ega — DOIM 'it'."
+      },
+      {
+        "formula": "Why ...?  →  Because ... .",
+        "exampleEn": "Why is Sandra nervous? — Because she feels like someone is watching them.",
+        "exampleUz": "Sandra nega asabiy? — Chunki kimdir ularni kuzatayotgandek tuyuladi.",
+        "explanationUz": "'Why' savoliga 'Because' bilan javob beriladi."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "will / won't", "uz": "...adi / ...maydi (kelasi zamon)" },
+    { "en": "a prediction", "uz": "bashorat" },
+    { "en": "Perhaps", "uz": "ehtimol" },
+    { "en": "an article (a/an/the)", "uz": "artikl" },
+    { "en": "a summary", "uz": "xulosa, qisqacha bayon" },
+    { "en": "a tribe", "uz": "qabila" },
+    { "en": "a nationality", "uz": "millat" },
+    { "en": "a mountain range", "uz": "tog' tizmasi" },
+    { "en": "a proper name", "uz": "atoqli ot" },
+    { "en": "an opposite", "uz": "qarama-qarshi so'z" },
+    { "en": "clever", "uz": "aqlli" },
+    { "en": "calm", "uz": "xotirjam, tinch" },
+    { "en": "safe", "uz": "xavfsiz" },
+    { "en": "horrible", "uz": "dahshatli" },
+    { "en": "noisy", "uz": "shovqinli" },
+    { "en": "freezing cold", "uz": "qahraton sovuq" },
+    { "en": "rainy", "uz": "yomg'irli" },
+    { "en": "snowy", "uz": "qorli" },
+    { "en": "an umbrella", "uz": "soyabon" },
+    { "en": "sunglasses", "uz": "quyosh ko'zoynagi" },
+    { "en": "a swimming-costume", "uz": "cho'milish kiyimi" },
+    { "en": "gloves", "uz": "qo'lqoplar" },
+    { "en": "a jacket", "uz": "kurtka" },
+    { "en": "to die", "uz": "o'lmoq" },
+    { "en": "to drown", "uz": "cho'kib ketmoq" },
+    { "en": "to hurt oneself", "uz": "jarohat olmoq" },
+    { "en": "to save", "uz": "qutqarmoq" },
+    { "en": "to kill", "uz": "o'ldirmoq" },
+    { "en": "a crocodile", "uz": "timsoh" },
+    { "en": "to fall down", "uz": "qulamoq" }
+  ]
+}
