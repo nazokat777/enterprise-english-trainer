@@ -56,3 +56,13 @@ Thumbs.db
 
 # Rasm tekshiruv jadvali (vaqtinchalik)
 enterprise-trainer/data/tekshiruv_jadvali.png
+
+# ─── Audio: FAQAT LOKAL (oilaviy) build uchun ───
+# Express Publishing "Enterprise" audio CD'lari — mualliflik huquqi bilan
+# himoyalangan. Egasining o'z nusxasidan olinadi va GitHub'ga ham,
+# Vercel'ga ham CHIQMAYDI. README.md qoladi.
+enterprise-app/assets/audio/**/*.mp3
+enterprise-app/assets/audio/**/*.m4a
+enterprise-app/assets/audio/**/*.ogg
+enterprise-app/assets/audio/**/*.wav
+!enterprise-app/assets/audio/README.md
