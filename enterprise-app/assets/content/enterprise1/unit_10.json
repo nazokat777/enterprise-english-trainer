@@ -4248,6 +4248,609 @@
    ]
   },
   {
+   "id": "u10-grammar-47-29",
+   "kind": "grammar_exercise",
+   "title": "A/An/The (davomi)",
+   "titleUz": "A/An/The (davomi)",
+   "book": "grammar",
+   "bookPage": 47,
+   "exercises": [
+    {
+     "ref": "15-davomi",
+     "instructionEn": "Fill in a, an or the where necessary. (continued from page 46)",
+     "instructionUz": "Kerak bo'lgan joyga a, an yoki the ni qo'ying. (46-betdan davomi)",
+     "explanationUz": "Bu — 46-betdagi 15-mashqning DAVOMI (11-23-bandlar).\n\nQOIDALARNI ESLANG:\n\n  ARTIKL QO'YILMAYDI:\n     ism, shahar, mamlakat  Tom, Ottawa, Brazil\n     'these/those' bo'lsa   these eggs\n     -ing shakli (mashg'ulot) swimming\n     son bo'lsa             two uncles\n\n  A / AN QO'YILADI:\n     kasb                   a pilot, a nurse\n     birinchi marta, birlik a computer, a film\n     unli tovush oldidan    an aeroplane, an aunt\n\n  THE QO'YILADI:\n     ma'lum narsa           the fridge\n     yagona narsa           the capital of France\n     daryo nomlari          the Danube, the Amazon\n     cholg'u asboblari      the guitar",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 47,
+     "bookRef": "Grammar Book, 47-bet, 15-mashq (davomi)",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "11  My name is ............ Tom.  [1-bo'shliq]",
+       "answer": "— (hech narsa)",
+       "promptUz": "Odam ismi",
+       "whyUz": "'Tom' — ATOQLI OT (ism) → artikl QO'YILMAYDI.",
+       "speak": "11  My name is ............ Tom.  [1-bo'shliq]"
+      },
+      {
+       "prompt": "11  I am from ............ Ottawa.  [2-bo'shliq]",
+       "answer": "— (hech narsa)",
+       "promptUz": "Shahar nomi",
+       "whyUz": "'Ottawa' — ShAHAR nomi (Kanada poytaxti) →\nartikl QO'YILMAYDI.",
+       "speak": "11  I am from ............ Ottawa.  [2-bo'shliq]"
+      },
+      {
+       "prompt": "12  Is there any milk in ............ fridge?",
+       "answer": "the",
+       "promptUz": "Uydagi MA'LUM muzlatgich",
+       "whyUz": "'THE fridge' — gaplashuvchilarga MA'LUM bo'lgan\nmuzlatgich (uydagi) → THE.\n'a fridge' = muzlatgich (umuman).",
+       "speak": "12  Is there any milk in ............ fridge?"
+      },
+      {
+       "prompt": "13  Her father is ............ pilot.  [1-bo'shliq]",
+       "answer": "a",
+       "promptUz": "Kasb aytilyapti",
+       "whyUz": "KASB → artikl SHART.\n'pilot' — 'p' undosh tovush → A.",
+       "speak": "13  Her father is ............ pilot.  [1-bo'shliq]"
+      },
+      {
+       "prompt": "13  He flies ............ aeroplane.  [2-bo'shliq]",
+       "answer": "an",
+       "promptUz": "'aeroplane' qaysi tovush bilan boshlanadi?",
+       "whyUz": "'aeroplane' — 'a' UNLI tovush → AN.\n'to fly' = uchmoq, uchirmoq.",
+       "speak": "13  He flies ............ aeroplane.  [2-bo'shliq]"
+      },
+      {
+       "prompt": "14  Jim has got ............ two uncles ...  [1-bo'shliq]",
+       "answer": "— (hech narsa)",
+       "promptUz": "Son allaqachon bor",
+       "whyUz": "'two' — SON allaqachon miqdorni ko'rsatgan →\nartikl QO'YILMAYDI.\n'a two uncles' XATO.",
+       "speak": "14  Jim has got ............ two uncles ...  [1-bo'shliq]"
+      },
+      {
+       "prompt": "14  ... and ............ aunt.  [2-bo'shliq]",
+       "answer": "an",
+       "promptUz": "'aunt' qaysi tovush bilan boshlanadi?",
+       "whyUz": "'aunt' — 'a' UNLI tovush → AN.\nBIRLIK, birinchi marta aytilyapti.\n'an aunt' = xola, amma.",
+       "speak": "14  ... and ............ aunt.  [2-bo'shliq]"
+      },
+      {
+       "prompt": "15  Dana went to ............ Brazil last summer.",
+       "answer": "— (hech narsa)",
+       "promptUz": "Mamlakat nomi",
+       "whyUz": "'Brazil' — MAMLAKAT nomi → artikl QO'YILMAYDI.\nCoursebook 68-69-betlardagi hikoya ham Braziliya haqida edi.",
+       "speak": "15  Dana went to ............ Brazil last summer."
+      },
+      {
+       "prompt": "16  I don't want ............ hamburger for lunch.",
+       "answer": "a",
+       "promptUz": "Bitta gamburger, sanaladigan",
+       "whyUz": "BIRLIK sanaladigan ot, birinchi marta → A.\n'hamburger' — 'h' undosh tovush (o'qiladi) → A.\n'for lunch' — ovqat nomi artiklsiz.",
+       "speak": "16  I don't want ............ hamburger for lunch."
+      },
+      {
+       "prompt": "17  Paris is ............ capital of France.",
+       "answer": "the",
+       "promptUz": "Poytaxt YAGONA",
+       "whyUz": "'THE capital' — har mamlakatning poytaxti YAGONA → THE.\n46-betdagi 15-mashqning 1-bandida ham shunday edi:\n'Athens is THE capital of Greece'.",
+       "speak": "17  Paris is ............ capital of France."
+      },
+      {
+       "prompt": "18  Bill hasn't got ............ computer, but Alex has.",
+       "answer": "a",
+       "promptUz": "Bitta kompyuter, sanaladigan",
+       "whyUz": "BIRLIK sanaladigan ot → A.\n'but Alex has' = lekin Aleksda bor\n('has got' qisqartirilgan).",
+       "speak": "18  Bill hasn't got ............ computer, but Alex has."
+      },
+      {
+       "prompt": "19  We saw ............ great film last night.",
+       "answer": "a",
+       "promptUz": "'great' qaysi tovush bilan boshlanadi?",
+       "whyUz": "'great' — 'g' undosh tovush → A.\nBirinchi marta aytilyapti.\nsee → SAW (noto'g'ri fe'l).",
+       "speak": "19  We saw ............ great film last night."
+      },
+      {
+       "prompt": "20  Brenda likes ............ swimming ...  [1-bo'shliq]",
+       "answer": "— (hech narsa)",
+       "promptUz": "Sport / mashg'ulot nomi",
+       "whyUz": "'swimming' — MAShG'ULOT nomi (-ing shakli) →\nartikl QO'YILMAYDI.\n42-betdagi qoida: sport nomlari oldidan 'the' yo'q.",
+       "speak": "20  Brenda likes ............ swimming ...  [1-bo'shliq]"
+      },
+      {
+       "prompt": "20  ... but she doesn't like playing ............ guitar.  [2-bo'shliq]",
+       "answer": "the",
+       "promptUz": "Cholg'u asbobi",
+       "whyUz": "'play THE guitar' — CHOLG'U ASBOBI oldidan THE SHART.\nDIQQAT — BIR GAPDA IKKI QOIDA:\n  swimming (sport)    → artikl YO'Q\n  the guitar (cholg'u) → THE SHART\nBu farq ataylab bir gapga joylashtirilgan.",
+       "speak": "20  ... but she doesn't like playing ............ guitar.  [2-bo'shliq]"
+      },
+      {
+       "prompt": "21  ............ Danube isn't longer than ............ Amazon.  [1-bo'shliq]",
+       "answer": "The",
+       "promptUz": "Daryo nomi",
+       "whyUz": "'THE Danube' — DARYO nomi → THE SHART.\nDunay — Yevropadagi daryo.\nCoursebook 73-betda 'The Blue Danube' valsi bor edi.",
+       "speak": "21  ............ Danube isn't longer than ............ Amazon.  [1-bo'shliq]"
+      },
+      {
+       "prompt": "21  ... longer than ............ Amazon.  [2-bo'shliq]",
+       "answer": "the",
+       "promptUz": "Yana daryo nomi",
+       "whyUz": "'THE Amazon' — DARYO nomi → THE SHART.\n42-betdagi qoidada shu misol bor edi.\n'longer THAN' — qiyosiy daraja + than.",
+       "speak": "21  ... longer than ............ Amazon.  [2-bo'shliq]"
+      },
+      {
+       "prompt": "22  How much are these ............ eggs?",
+       "answer": "— (hech narsa)",
+       "promptUz": "'these' allaqachon aniqlab turibdi",
+       "whyUz": "'these' — KO'RSATISh olmoshi, u allaqachon\naniqlovchi vazifasini bajaradi → artikl QO'YILMAYDI.\n'these the eggs' XATO.\n'How much are ...?' = qancha turadi?",
+       "speak": "22  How much are these ............ eggs?"
+      },
+      {
+       "prompt": "23  My mother is ............ nurse.",
+       "answer": "a",
+       "promptUz": "Kasb aytilyapti",
+       "whyUz": "KASB → artikl SHART.\n'nurse' — 'n' undosh tovush → A.\nCoursebook 70-betdagi 3-mashqda 'a nurse' bor edi.",
+       "speak": "23  My mother is ............ nurse."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u10-grammar-47-30",
+   "kind": "grammar_exercise",
+   "title": "Will",
+   "titleUz": "Will (kelasi zamon)",
+   "book": "grammar",
+   "bookPage": 47,
+   "exercises": [
+    {
+     "ref": "16",
+     "instructionEn": "Fill in the short forms, as in the example.",
+     "instructionUz": "Qisqa shakllarni yozing, namunadagidek.",
+     "explanationUz": "IKKI QISQARTMA:\n\n  will      → 'LL   (I'll, you'll, he'll, she'll,\n                     it'll, we'll, they'll)\n  will not  → WON'T (hamma ega uchun BIR XIL)\n\nDIQQAT — 'WON'T' YOZILISHI:\n  'will not' dan 'won't' hosil bo'ladi —\n  yozilishi butunlay o'zgaradi.\n  'willn't' shakli YO'Q.\n  O'qilishi /wəʊnt/ ('vount').\n\nDIQQAT — 'LL DAN KEYIN FE'L ASOSIY SHAKLDA:\n  She'll GO.       ✓\n  She'll GOES.     ✗ XATO\n  She won't GO.    ✓\n  She won't WENT.  ✗ XATO",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 47,
+     "bookRef": "Grammar Book, 47-bet, 16-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "2  I will not study.  →  I ............ study.",
+       "answer": "won't",
+       "promptUz": "INKOR qisqartmasi",
+       "whyUz": "will not → WON'T.\n'I won't study.'\nDIQQAT: 'willn't' shakli YO'Q.",
+       "speak": "2  I will not study.  →  I ............ study."
+      },
+      {
+       "prompt": "3  He will do the shopping.  →  He ............ do the shopping.",
+       "answer": "'ll",
+       "promptUz": "TASDIQ qisqartmasi",
+       "whyUz": "will → 'LL.\n'He'll do the shopping.'\n'do the shopping' = xarid qilmoq.",
+       "speak": "3  He will do the shopping.  →  He ............ do the shopping."
+      },
+      {
+       "prompt": "4  You will not cook dinner.  →  You ............ cook dinner.",
+       "answer": "won't",
+       "promptUz": "INKOR qisqartmasi",
+       "whyUz": "will not → WON'T.\n'You won't cook dinner.'",
+       "speak": "4  You will not cook dinner.  →  You ............ cook dinner."
+      },
+      {
+       "prompt": "5  I will play tennis.  →  I ............ play tennis.",
+       "answer": "'ll",
+       "promptUz": "TASDIQ qisqartmasi",
+       "whyUz": "will → 'LL.\n'I'll play tennis.'\n'play tennis' — sport oldidan artikl YO'Q.",
+       "speak": "5  I will play tennis.  →  I ............ play tennis."
+      },
+      {
+       "prompt": "6  She will not go to school.  →  She ............ go to school.",
+       "answer": "won't",
+       "promptUz": "INKOR qisqartmasi",
+       "whyUz": "will not → WON'T.\n'She won't go to school.'\n'go to school' — artikl YO'Q (o'qish ma'nosida).",
+       "speak": "6  She will not go to school.  →  She ............ go to school."
+      }
+     ]
+    },
+    {
+     "ref": "17",
+     "instructionEn": "In pairs, use the prompts to write sentences, as in the example.",
+     "instructionUz": "Juftlikda ko'rsatmalardan foydalanib gaplar yozing, namunadagidek.",
+     "explanationUz": "KITOBDAGI NAMUNA:\n  It/not be/sunny today.\n  SA: It WON'T BE sunny today.\n  SB: WILL it BE sunny tomorrow, then?\n\nIKKI GAP QOLIPI:\n  SA (INKOR):  [ega] WON'T [asosiy fe'l] ... TODAY/TONIGHT.\n  SB (SO'ROQ): WILL [ega] [asosiy fe'l] ... TOMORROW, THEN?\n\nUCH DIQQAT:\n\n  1) SA da BUGUN, SB da ERTAGA —\n     ko'rsatmadagi vaqt SB da 'tomorrow' ga o'zgaradi.\n\n  2) 'then' = unda, u holda —\n     gap OXIRIDA, oldidan VERGUL.\n\n  3) 'won't' va 'will' dan keyin fe'l ASOSIY shaklda.\n\nDIQQAT — SB DAGI EGA:\n  Agar SA da 'I' bo'lsa, SB da 'YOU' bo'ladi —\n  chunki boshqa odam gapiryapti.\n     SA: I won't tidy MY room.\n     SB: Will YOU tidy YOUR room tomorrow?",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 47,
+     "bookRef": "Grammar Book, 47-bet, 17-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  It/not be/sunny today.",
+       "answer": "It won't be sunny today.",
+       "promptUz": "Savol tuzing",
+       "whyUz": "KITOBDAGI NAMUNA.\n'won't BE' — 'be' asosiy shaklda.\nOb-havo haqida ega — DOIM 'it'.",
+       "speak": "1  It/not be/sunny today."
+      },
+      {
+       "prompt": "1  It/not be/sunny today.",
+       "answer": "Will it be sunny tomorrow, then?",
+       "promptUz": "Javob tuzing",
+       "whyUz": "KITOBDAGI NAMUNA.\n'won't BE' — 'be' asosiy shaklda.\nOb-havo haqida ega — DOIM 'it'.",
+       "speak": "1  It/not be/sunny today."
+      },
+      {
+       "prompt": "2  She/not do/the shopping today.",
+       "answer": "She won't do the shopping today.",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'won't DO' / 'Will she DO' — asosiy shakl.\n'do the shopping' = xarid qilmoq.",
+       "speak": "2  She/not do/the shopping today."
+      },
+      {
+       "prompt": "2  She/not do/the shopping today.",
+       "answer": "Will she do the shopping tomorrow, then?",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'won't DO' / 'Will she DO' — asosiy shakl.\n'do the shopping' = xarid qilmoq.",
+       "speak": "2  She/not do/the shopping today."
+      },
+      {
+       "prompt": "3  He/not cook/dinner tonight.",
+       "answer": "He won't cook dinner tonight.",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'dinner' oldidan artikl YO'Q.\n'tonight' = bugun kechqurun.",
+       "speak": "3  He/not cook/dinner tonight."
+      },
+      {
+       "prompt": "3  He/not cook/dinner tonight.",
+       "answer": "Will he cook dinner tomorrow, then?",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'dinner' oldidan artikl YO'Q.\n'tonight' = bugun kechqurun.",
+       "speak": "3  He/not cook/dinner tonight."
+      },
+      {
+       "prompt": "4  I/not go/to the cinema tonight.",
+       "answer": "I won't go to the cinema tonight.",
+       "promptUz": "Savol tuzing",
+       "whyUz": "DIQQAT: SA da 'I', SB da 'YOU' —\nboshqa odam savol beryapti.\n'go to THE cinema' — 'the' bilan.",
+       "speak": "4  I/not go/to the cinema tonight."
+      },
+      {
+       "prompt": "4  I/not go/to the cinema tonight.",
+       "answer": "Will you go to the cinema tomorrow, then?",
+       "promptUz": "Javob tuzing",
+       "whyUz": "DIQQAT: SA da 'I', SB da 'YOU' —\nboshqa odam savol beryapti.\n'go to THE cinema' — 'the' bilan.",
+       "speak": "4  I/not go/to the cinema tonight."
+      },
+      {
+       "prompt": "5  Bill/not play/football this afternoon.",
+       "answer": "Bill won't play football this afternoon.",
+       "promptUz": "Savol tuzing",
+       "whyUz": "SB da ism o'rniga 'he' olmoshi ishlatiladi.\n'this afternoon' = bugun tushdan keyin.\n'play football' — artikl YO'Q.",
+       "speak": "5  Bill/not play/football this afternoon."
+      },
+      {
+       "prompt": "5  Bill/not play/football this afternoon.",
+       "answer": "Will he play football tomorrow, then?",
+       "promptUz": "Javob tuzing",
+       "whyUz": "SB da ism o'rniga 'he' olmoshi ishlatiladi.\n'this afternoon' = bugun tushdan keyin.\n'play football' — artikl YO'Q.",
+       "speak": "5  Bill/not play/football this afternoon."
+      },
+      {
+       "prompt": "6  He/not visit/his sister today.",
+       "answer": "He won't visit his sister today.",
+       "promptUz": "Savol tuzing",
+       "whyUz": "'won't VISIT' — asosiy shakl ('visited' EMAS).",
+       "speak": "6  He/not visit/his sister today."
+      },
+      {
+       "prompt": "6  He/not visit/his sister today.",
+       "answer": "Will he visit his sister tomorrow, then?",
+       "promptUz": "Javob tuzing",
+       "whyUz": "'won't VISIT' — asosiy shakl ('visited' EMAS).",
+       "speak": "6  He/not visit/his sister today."
+      },
+      {
+       "prompt": "7  I/not tidy/my room today.",
+       "answer": "I won't tidy my room today.",
+       "promptUz": "Savol tuzing",
+       "whyUz": "DIQQAT: 'I' → 'you' va 'MY room' → 'YOUR room' —\negalik olmoshi ham o'zgaradi.",
+       "speak": "7  I/not tidy/my room today."
+      },
+      {
+       "prompt": "7  I/not tidy/my room today.",
+       "answer": "Will you tidy your room tomorrow, then?",
+       "promptUz": "Javob tuzing",
+       "whyUz": "DIQQAT: 'I' → 'you' va 'MY room' → 'YOUR room' —\negalik olmoshi ham o'zgaradi.",
+       "speak": "7  I/not tidy/my room today."
+      },
+      {
+       "prompt": "8  Carol/not go/for a walk tonight.",
+       "answer": "Carol won't go for a walk tonight.",
+       "promptUz": "Savol tuzing",
+       "whyUz": "SB da 'Carol' o'rniga 'she'.\n'go FOR a walk' = sayr qilmoq.",
+       "speak": "8  Carol/not go/for a walk tonight."
+      },
+      {
+       "prompt": "8  Carol/not go/for a walk tonight.",
+       "answer": "Will she go for a walk tomorrow, then?",
+       "promptUz": "Javob tuzing",
+       "whyUz": "SB da 'Carol' o'rniga 'she'.\n'go FOR a walk' = sayr qilmoq.",
+       "speak": "8  Carol/not go/for a walk tonight."
+      }
+     ]
+    },
+    {
+     "ref": "18",
+     "instructionEn": "Fill in will ('ll) or will not (won't).",
+     "instructionUz": "will ('ll) yoki will not (won't) ni qo'ying.",
+     "explanationUz": "MANTIQQA QARAB TANLANADI:\n\n  Gap IJOBIY bashoratmi yoki OGOHLANTIRIShmi?\n     → WILL\n  Gap SALBIY bashoratmi yoki 'bo'lmaydi' degan\n  ma'nodami?\n     → WON'T\n\nENG MUHIM QOLIP — 'OR' BILAN OGOHLANTIRISH:\n  [buyruq] OR you WILL/WON'T ... !\n  = ...qil, aks holda ...\n\n  Ikki xil natija bo'lishi mumkin:\n     Hurry OR you WON'T catch the bus.\n     (Shoshil, aks holda avtobusga YETIB OLMAYSAN.)\n     Watch out OR you'LL hit your head.\n     (Ehtiyot bo'l, aks holda boshingni URIB OLASAN.)\n\n  Farqi: birinchisida YAXShI narsa bo'lmaydi (won't),\n  ikkinchisida YOMON narsa bo'ladi (will).\n\nDIQQAT — 8-BAND ALDAMCHI:\n  'I DON'T THINK it ...... be sunny tomorrow.'\n  Inkor 'don't think' da — shuning uchun keyingi\n  qismda WILL (won't EMAS).\n  Ingliz tilida inkor BIRINCHI fe'lga ko'chiriladi.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 47,
+     "bookRef": "Grammar Book, 47-bet, 18-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  Don't forget to take your gloves. It ............ be cold tomorrow.",
+       "answer": "will ('ll)",
+       "promptUz": "Qo'lqop olish kerak — demak sovuq BO'LADI",
+       "whyUz": "MANTIQ: qo'lqop olish kerak → sovuq BO'LADI → WILL.\n'gloves' — qo'lqoplar (Coursebook 69-betda ham bor edi).\nOb-havo haqida ega — 'it'.",
+       "speak": "1  Don't forget to take your gloves. It ............ be cold tomorrow."
+      },
+      {
+       "prompt": "2  Hurry or you ............ catch the bus!",
+       "answer": "will not (won't)",
+       "promptUz": "Shoshilmasang, avtobusga yetib olmaysan",
+       "whyUz": "'Hurry OR ...' = shoshil, aks holda ...\nShoshilmasa avtobusga YETIB OLMAYDI → WON'T.\n'catch the bus' = avtobusga yetib olmoq.",
+       "speak": "2  Hurry or you ............ catch the bus!"
+      },
+      {
+       "prompt": "3  \"We haven't got any eggs.\"  \"I ............ buy some.\"",
+       "answer": "will ('ll)",
+       "promptUz": "Tuxum yo'q — men sotib olaman",
+       "whyUz": "Ayni damda qabul qilingan QAROR → WILL ('ll).\n'I'll buy some' = men sotib olaman.\n'some' = bir oz (tuxumlar o'rniga).",
+       "speak": "3  \"We haven't got any eggs.\"  \"I ............ buy some.\""
+      },
+      {
+       "prompt": "4  Watch out or you ............ hit your head.",
+       "answer": "will ('ll)",
+       "promptUz": "Ehtiyot bo'lmasang, boshingni urib olasan",
+       "whyUz": "'Watch out OR ...' = ehtiyot bo'l, aks holda ...\nEhtiyot bo'lmasa boshini URIB OLADI → WILL.\n2-band bilan SOLISHTIRING: u yerda yaxshi narsa\nbo'lmaydi (won't), bu yerda yomon narsa bo'ladi (will).\n'Watch out!' = ehtiyot bo'l! (Coursebook 69-betda ham).",
+       "speak": "4  Watch out or you ............ hit your head."
+      },
+      {
+       "prompt": "5  Put on your jacket or you ............ be cold.",
+       "answer": "will ('ll)",
+       "promptUz": "Kurtka kiymasang, sovqotasan",
+       "whyUz": "Kurtka kiymasa SOVQOTADI → WILL.\n'put on' = kiymoq.",
+       "speak": "5  Put on your jacket or you ............ be cold."
+      },
+      {
+       "prompt": "6  I don't like Paul so I ............ invite him to the party.",
+       "answer": "will not (won't)",
+       "promptUz": "Yoqtirmasa, taklif qiladimi?",
+       "whyUz": "MANTIQ: yoqtirmaydi → taklif QILMAYDI → WON'T.\n'so' = shuning uchun (natijani bog'laydi).",
+       "speak": "6  I don't like Paul so I ............ invite him to the party."
+      },
+      {
+       "prompt": "7  I'm tired. I think I ............ stay at home tonight.",
+       "answer": "will ('ll)",
+       "promptUz": "Charchagan — uyda qoladi",
+       "whyUz": "Charchagan → uyda QOLADI → WILL.\n'I think I'll ...' = menimcha ...qilaman —\nayni damda qabul qilingan qaror.\n'stay at home' = uyda qolmoq.",
+       "speak": "7  I'm tired. I think I ............ stay at home tonight."
+      },
+      {
+       "prompt": "8  I don't think it ............ be sunny tomorrow.",
+       "answer": "will",
+       "promptUz": "Inkor QAYERDA? 'don't think' ga qarang",
+       "whyUz": "DIQQAT — ENG ALDAMCHI BAND.\nInkor allaqachon 'I DON'T THINK' da bor →\nkeyingi qismda WILL (won't EMAS).\n'I don't think it will ...' = menimcha ...bo'lmaydi.\nIngliz tilida inkor BIRINCHI fe'lga ko'chiriladi:\n  I don't think it will rain.   ✓\n  I think it won't rain.        (grammatik to'g'ri,\n                                 lekin kam ishlatiladi)",
+       "speak": "8  I don't think it ............ be sunny tomorrow."
+      },
+      {
+       "prompt": "9  \"Let's go to a restaurant.\"  \"Great! I ............ cook dinner, then.\"",
+       "answer": "will not (won't)",
+       "promptUz": "Restoranga borsalar, uyda ovqat pishiradimi?",
+       "whyUz": "MANTIQ: restoranga borishadi → uyda ovqat PIShIRMAYDI →\nWON'T.\n'then' = unda, u holda (gap oxirida, oldidan vergul).\n'Great!' = zo'r!",
+       "speak": "9  \"Let's go to a restaurant.\"  \"Great! I ............ cook dinner, then.\""
+      },
+      {
+       "prompt": "10  It ............ be rainy tomorrow so don't forget to take your umbrella.",
+       "answer": "will ('ll)",
+       "promptUz": "Soyabon olish kerak — demak yomg'ir YOG'ADI",
+       "whyUz": "MANTIQ: soyabon kerak → yomg'ir BO'LADI → WILL.\n1-band bilan bir xil mantiq (qo'lqop → sovuq).\n'rainy' = yomg'irli;  'an umbrella' = soyabon\n(Coursebook 69-betda ham bor edi).",
+       "speak": "10  It ............ be rainy tomorrow so don't forget to take your umbrella."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u10-grammar-47-31",
+   "kind": "grammar_exercise",
+   "title": "Revision: Units 1 - 10",
+   "titleUz": "Takror: 1-10 unitlar",
+   "book": "grammar",
+   "bookPage": 47,
+   "exercises": [
+    {
+     "ref": "19",
+     "instructionEn": "Choose the correct item.",
+     "instructionUz": "To'g'ri variantni tanlang.",
+     "explanationUz": "BU MASHQ 1-10 UNITLARNI TEKSHIRADI:\n  present simple, present continuous, past simple,\n  savol so'zlari, some/any, egalik, muloyim taklif.\n\nZAMON TANLASH — VAQT SO'ZIGA QARANG:\n\n  PRESENT SIMPLE (fe'l, he/she/it → +S):\n     every day, sometimes, rarely, in his free time\n     va DOIMIY faktlar\n\n  PRESENT CONTINUOUS (am/is/are + -ing):\n     at the moment, now,\n     'What's he doing?' savoliga javob,\n     'Where are you going?' savoliga javob\n\n  PAST SIMPLE (o'tgan shakl):\n     yesterday, last week, 2 years ago,\n     tarixiy voqealar\n\nBASHORAT SIFATIDA TEKSHIRING:\n  Har bir bandda VAQT so'zini toping —\n  u zamonni aniqlab beradi.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 47,
+     "bookRef": "Grammar Book, 47-bet, 19-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "1  I ............ a letter to my mum yesterday.",
+       "answer": "C wrote",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A write",
+        "B am writing",
+        "C wrote"
+       ],
+       "whyUz": "'yesterday' → PAST SIMPLE.\nwrite → WROTE (noto'g'ri fe'l).\n'write TO somebody' — predlog TO."
+      },
+      {
+       "prompt": "2  A: What's your brother doing?  B: He ............ the car.",
+       "answer": "B is washing",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A washes",
+        "B is washing",
+        "C washed"
+       ],
+       "whyUz": "Savol 'What's he DOING?' — PRESENT CONTINUOUS →\njavob ham shu zamonda.\n'He' BIRLIK → IS + washing."
+      },
+      {
+       "prompt": "3  Kim ............ the bus to work every day.",
+       "answer": "C takes",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A taking",
+        "B take",
+        "C takes"
+       ],
+       "whyUz": "'every day' → PRESENT SIMPLE (odat).\n'Kim' 3-shaxs BIRLIK → take + S = TAKES.\n'A taking' — yordamchi fe'lsiz -ing ishlatilmaydi.\n'take the bus' = avtobusda bormoq."
+      },
+      {
+       "prompt": "4  Christopher Columbus ............ America.",
+       "answer": "A discovered",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A discovered",
+        "B is discovering",
+        "C discovers"
+       ],
+       "whyUz": "TARIXIY voqea (1492-yil) → PAST SIMPLE.\ndiscover → discovered (to'g'ri fe'l).\nKolumb allaqachon vafot etgan — hozirgi zamon mumkin emas."
+      },
+      {
+       "prompt": "5  A: Where are you going?  B: We ............ to the beach.",
+       "answer": "A are going",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A are going",
+        "B go",
+        "C went"
+       ],
+       "whyUz": "Savol 'Where ARE you GOING?' — PRESENT CONTINUOUS →\njavob ham shu zamonda.\n'We' KO'PLIK → ARE + going."
+      },
+      {
+       "prompt": "6  Jerry ............ to music in his free time.",
+       "answer": "B listens",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A is listening",
+        "B listens",
+        "C listen"
+       ],
+       "whyUz": "'in his free time' = bo'sh vaqtida — ODAT →\nPRESENT SIMPLE.\n'Jerry' 3-shaxs BIRLIK → listen + S = LISTENS.\n'listen TO music' — predlog TO shart."
+      },
+      {
+       "prompt": "7  I ............ History at university 2 years ago.",
+       "answer": "A studied",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A studied",
+        "B am studying",
+        "C studies"
+       ],
+       "whyUz": "'2 years ago' → PAST SIMPLE.\nstudy → STUDIED ('d' undosh + 'y' → -IED).\n'at university' — o'qish ma'nosida artikl YO'Q."
+      },
+      {
+       "prompt": "8  Sophie rarely ............ TV in the evening.",
+       "answer": "C watches",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A is watching",
+        "B watched",
+        "C watches"
+       ],
+       "whyUz": "'rarely' = kamdan-kam — CHASTOTA ravishi →\nPRESENT SIMPLE.\n'Sophie' 3-shaxs BIRLIK → watch + ES = WATCHES.\nDIQQAT: oxiri 'ch' bo'lsa -ES qo'shiladi."
+      },
+      {
+       "prompt": "9  A: Where's Peter?  B: He ............ the shopping at the moment.",
+       "answer": "B is doing",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A does",
+        "B is doing",
+        "C did"
+       ],
+       "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'He' BIRLIK → IS + doing.\n'do the shopping' = xarid qilmoq."
+      },
+      {
+       "prompt": "10  I ............ my grandparents last week.",
+       "answer": "A visited",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A visited",
+        "B am visiting",
+        "C visits"
+       ],
+       "whyUz": "'last week' → PAST SIMPLE.\nvisit → visited (to'g'ri fe'l)."
+      },
+      {
+       "prompt": "11  ............ do lions live?",
+       "answer": "B Where",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A How many",
+        "B Where",
+        "C What"
+       ],
+       "whyUz": "'live' fe'li JOYNI so'raydi → WHERE.\n'How many' son so'raydi;  'What' narsa so'raydi.\n'Where do lions live?' = Sherlar qayerda yashaydi?\nDIQQAT: 'lions' ko'plik → DO (does emas)."
+      },
+      {
+       "prompt": "12  Are there ............ cars in the street?",
+       "answer": "C any",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A a",
+        "B some",
+        "C any"
+       ],
+       "whyUz": "SO'ROQ gap → ANY.\n'some' tasdiq gapda ishlatiladi.\n'a' + ko'plik ot ('cars') mumkin emas."
+      },
+      {
+       "prompt": "13  A: ............ Alice?  B: She's my sister.",
+       "answer": "B Who's",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A Whose",
+        "B Who's",
+        "C What's"
+       ],
+       "whyUz": "Javob ODAM haqida ('my sister') → 'WHO'S Alice?'\n'Who's' = 'Who is' ning qisqartmasi.\nDIQQAT — ADAShTIRMANG:\n  Who's = Who IS (kim?)\n  Whose = kimning? (egalik)\nAgar 'Whose' bo'lsa, javob 'It's Tom's' bo'lardi."
+      },
+      {
+       "prompt": "14  ............ you like some ice cream?",
+       "answer": "B Would",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A Can",
+        "B Would",
+        "C Do"
+       ],
+       "whyUz": "'WOULD you like ...?' = ...xohlaysizmi? —\nmuloyim TAKLIF qilishning standart iborasi.\n'Do you like ice cream?' = muzqaymoq YOQADIMI?\n(umumiy fikr, taklif emas).\n'Can you like' — mantiqsiz.\nDIQQAT: taklifda 'some' ishlatiladi ('any' emas)."
+      },
+      {
+       "prompt": "15  Mark sometimes ............ long hours.",
+       "answer": "A works",
+       "promptUz": "To'g'ri so'zni tanlang",
+       "options": [
+        "A works",
+        "B is working",
+        "C work"
+       ],
+       "whyUz": "'sometimes' = ba'zan — CHASTOTA ravishi →\nPRESENT SIMPLE.\n'Mark' 3-shaxs BIRLIK → work + S = WORKS.\n'work long hours' = uzoq soatlar ishlamoq."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u10-coursebook-75-14",
    "kind": "pronunciation",
    "title": "Pronunciation — /t/, /d/, /ɪd/",
@@ -9083,6 +9686,343 @@
    ],
    "book": "grammar",
    "bookPage": 46
+  },
+  {
+   "ruleUz": "ARTIKL QO'YILMAYDIGAN holatlar (15-mashqdan)",
+   "explanationUz": "Bu ro'yxatni yodlab qo'ysangiz, xato kamayadi.",
+   "items": [
+    {
+     "base": "Tom, Jerry, Alice",
+     "baseUz": "odam ismlari",
+     "derived": "— (hech narsa)",
+     "derivedUz": "atoqli ot",
+     "note": ""
+    },
+    {
+     "base": "Ottawa, Paris, New York",
+     "baseUz": "shahar nomlari",
+     "derived": "— (hech narsa)",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "Brazil, France, Greece",
+     "baseUz": "mamlakat nomlari",
+     "derived": "— (hech narsa)",
+     "derivedUz": "",
+     "note": "the USA — ISTISNO"
+    },
+    {
+     "base": "two uncles",
+     "baseUz": "son bor",
+     "derived": "— (hech narsa)",
+     "derivedUz": "'two' aniqlab turibdi",
+     "note": ""
+    },
+    {
+     "base": "these eggs",
+     "baseUz": "ko'rsatish olmoshi",
+     "derived": "— (hech narsa)",
+     "derivedUz": "'these' aniqlab turibdi",
+     "note": ""
+    },
+    {
+     "base": "swimming, football",
+     "baseUz": "sport va mashg'ulotlar",
+     "derived": "— (hech narsa)",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "lunch, dinner",
+     "baseUz": "ovqat nomlari",
+     "derived": "— (hech narsa)",
+     "derivedUz": "",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "ruleUz": "SPORT ↔ CHOLG'U — ataylab bir gapda",
+   "explanationUz": "15-mashqning 20-bandi shu farqni tekshiradi.",
+   "items": [
+    {
+     "base": "like swimming",
+     "baseUz": "suzishni yoqtirmoq",
+     "derived": "SPORT",
+     "derivedUz": "artikl YO'Q",
+     "note": ""
+    },
+    {
+     "base": "play football / tennis",
+     "baseUz": "futbol / tennis o'ynamoq",
+     "derived": "SPORT",
+     "derivedUz": "artikl YO'Q",
+     "note": ""
+    },
+    {
+     "base": "play THE guitar",
+     "baseUz": "gitara chalmoq",
+     "derived": "CHOLG'U",
+     "derivedUz": "THE SHART",
+     "note": ""
+    },
+    {
+     "base": "play THE piano / violin",
+     "baseUz": "pianino / skripka chalmoq",
+     "derived": "CHOLG'U",
+     "derivedUz": "THE SHART",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "ruleUz": "WILL qisqartmalari (16-mashqdan)",
+   "explanationUz": "Ikkita shakl — 'll va won't.",
+   "items": [
+    {
+     "base": "I will",
+     "baseUz": "men ...aman",
+     "derived": "I'll",
+     "derivedUz": "/aɪl/",
+     "note": ""
+    },
+    {
+     "base": "she will",
+     "baseUz": "u ...adi",
+     "derived": "she'll",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "he will",
+     "baseUz": "u ...adi",
+     "derived": "he'll",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "will not",
+     "baseUz": "...maydi",
+     "derived": "won't",
+     "derivedUz": "/wəʊnt/",
+     "note": "hamma ega uchun BIR XIL"
+    },
+    {
+     "base": "willn't",
+     "baseUz": "—",
+     "derived": "SHAKL YO'Q",
+     "derivedUz": "",
+     "note": "hech qachon ishlatilmaydi"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "ruleUz": "'OR' bilan ogohlantirish (18-mashqdan)",
+   "explanationUz": "Buyruq + OR + natija.",
+   "items": [
+    {
+     "base": "Hurry or you WON'T catch the bus.",
+     "baseUz": "Shoshil, aks holda avtobusga yetib olmaysan.",
+     "derived": "YAXShI narsa BO'LMAYDI",
+     "derivedUz": "→ won't",
+     "note": ""
+    },
+    {
+     "base": "Watch out or you'LL hit your head.",
+     "baseUz": "Ehtiyot bo'l, aks holda boshingni urib olasan.",
+     "derived": "YOMON narsa BO'LADI",
+     "derivedUz": "→ will",
+     "note": ""
+    },
+    {
+     "base": "Put on your jacket or you'LL be cold.",
+     "baseUz": "Kurtkangni kiy, aks holda sovqotasan.",
+     "derived": "YOMON narsa BO'LADI",
+     "derivedUz": "→ will",
+     "note": ""
+    },
+    {
+     "base": "Hurry up!",
+     "baseUz": "Shoshil!",
+     "derived": "buyruq",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "Watch out!",
+     "baseUz": "Ehtiyot bo'l!",
+     "derived": "buyruq",
+     "derivedUz": "",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "ruleUz": "INKORNI KO'ChIRISH — 'I don't think ... will'",
+   "explanationUz": "18-mashqning 8-bandi.",
+   "items": [
+    {
+     "base": "I DON'T THINK it WILL rain.",
+     "baseUz": "Menimcha yomg'ir yog'maydi.",
+     "derived": "TABIIY shakl",
+     "derivedUz": "inkor BIRINCHI fe'lda",
+     "note": ""
+    },
+    {
+     "base": "I think it WON'T rain.",
+     "baseUz": "(bir xil ma'no)",
+     "derived": "grammatik to'g'ri",
+     "derivedUz": "lekin KAM ishlatiladi",
+     "note": ""
+    },
+    {
+     "base": "I don't think so.",
+     "baseUz": "Menimcha unday emas.",
+     "derived": "qisqa javob",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "I hope not.",
+     "baseUz": "Umid qilamanki, yo'q.",
+     "derived": "'hope' bilan boshqacha",
+     "derivedUz": "'I don't hope' XATO",
+     "note": "Coursebook 68-betda"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "ruleUz": "Chastota ravishlari (19-mashqdan)",
+   "explanationUz": "Bu so'zlar PRESENT SIMPLE ni talab qiladi.",
+   "items": [
+    {
+     "base": "always",
+     "baseUz": "doim",
+     "derived": "100%",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "usually",
+     "baseUz": "odatda",
+     "derived": "~80%",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "often",
+     "baseUz": "tez-tez",
+     "derived": "~60%",
+     "derivedUz": "",
+     "note": ""
+    },
+    {
+     "base": "sometimes",
+     "baseUz": "ba'zan",
+     "derived": "~40%",
+     "derivedUz": "",
+     "note": "19-mashqning 15-bandi"
+    },
+    {
+     "base": "rarely / seldom",
+     "baseUz": "kamdan-kam",
+     "derived": "~10%",
+     "derivedUz": "",
+     "note": "19-mashqning 8-bandi"
+    },
+    {
+     "base": "never",
+     "baseUz": "hech qachon",
+     "derived": "0%",
+     "derivedUz": "o'zi INKOR",
+     "note": ""
+    },
+    {
+     "base": "every day / in his free time",
+     "baseUz": "har kuni / bo'sh vaqtida",
+     "derived": "ODAT",
+     "derivedUz": "",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "ruleUz": "WHO'S va WHOSE — adashtirmang",
+   "explanationUz": "19-mashqning 13-bandi.",
+   "items": [
+    {
+     "base": "Who's Alice?",
+     "baseUz": "Alisa kim?",
+     "derived": "= Who IS",
+     "derivedUz": "shaxsni so'raydi",
+     "note": "javob: She's my sister."
+    },
+    {
+     "base": "Whose book is this?",
+     "baseUz": "Bu kimning kitobi?",
+     "derived": "EGALIK",
+     "derivedUz": "egasini so'raydi",
+     "note": "javob: It's Tom's."
+    },
+    {
+     "base": "What's this?",
+     "baseUz": "Bu nima?",
+     "derived": "= What IS",
+     "derivedUz": "narsani so'raydi",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "ruleUz": "Muloyim taklif — WOULD YOU LIKE",
+   "explanationUz": "19-mashqning 14-bandi.",
+   "items": [
+    {
+     "base": "Would you like some tea?",
+     "baseUz": "Choy xohlaysizmi?",
+     "derived": "TAKLIF",
+     "derivedUz": "'some' bilan",
+     "note": "muloyim"
+    },
+    {
+     "base": "Do you like tea?",
+     "baseUz": "Choy yoqadimi?",
+     "derived": "UMUMIY FIKR",
+     "derivedUz": "taklif EMAS",
+     "note": "ma'nosi boshqa"
+    },
+    {
+     "base": "Can I help you?",
+     "baseUz": "Yordam bera olamanmi?",
+     "derived": "YORDAM taklifi",
+     "derivedUz": "",
+     "note": "Grammar 41-betda"
+    },
+    {
+     "base": "Would you like to ...?",
+     "baseUz": "...qilishni xohlaysizmi?",
+     "derived": "TO + fe'l",
+     "derivedUz": "",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 47
   }
  ],
  "sentencePatterns": [
@@ -9645,6 +10585,54 @@
    "explanationUz": "Kasb oldidan artikl SHART.\nIkki kasb bo'lsa ham artikl BIR MARTA.",
    "book": "grammar",
    "bookPage": 46
+  },
+  {
+   "formula": "Ega + WON'T + ASOSIY fe'l ... TODAY.   →   WILL + ega + ASOSIY fe'l ... TOMORROW, THEN?",
+   "exampleEn": "It won't be sunny today. — Will it be sunny tomorrow, then?",
+   "exampleUz": "Bugun quyoshli bo'lmaydi. — Unda ertaga quyoshli bo'ladimi?",
+   "explanationUz": "'won't' va 'will' dan keyin fe'l ASOSIY shaklda.\n'then' gap oxirida, oldidan vergul.",
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "formula": "[buyruq] OR you WILL / WON'T + fe'l.",
+   "exampleEn": "Hurry or you won't catch the bus! Watch out or you'll hit your head.",
+   "exampleUz": "Shoshil, aks holda avtobusga yetib olmaysan! Ehtiyot bo'l, aks holda boshingni urib olasan.",
+   "explanationUz": "'or' = aks holda.\nNatija yaxshi bo'lmasa → won't;  yomon bo'lsa → will.",
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "formula": "I DON'T THINK + ega + WILL + fe'l.",
+   "exampleEn": "I don't think it will be sunny tomorrow.",
+   "exampleUz": "Menimcha ertaga quyoshli bo'lmaydi.",
+   "explanationUz": "Inkor BIRINCHI fe'lga ('don't think') ko'chiriladi —\nkeyingi qismda 'will' qoladi.",
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "formula": "Ega + likes + SWIMMING (sport)  BUT  doesn't like playing THE guitar (cholg'u).",
+   "exampleEn": "Brenda likes swimming but she doesn't like playing the guitar.",
+   "exampleUz": "Brenda suzishni yoqtiradi, lekin gitara chalishni yoqtirmaydi.",
+   "explanationUz": "Sport → artikl YO'Q;  cholg'u → THE SHART.",
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "formula": "THE + daryo nomi + isn't longer THAN + THE + daryo nomi.",
+   "exampleEn": "The Danube isn't longer than the Amazon.",
+   "exampleUz": "Dunay Amazondan uzunroq emas.",
+   "explanationUz": "Daryo nomlari oldidan THE SHART.\n'longer THAN' — qiyosiy daraja + than.",
+   "book": "grammar",
+   "bookPage": 47
+  },
+  {
+   "formula": "WOULD you like SOME + ot?",
+   "exampleEn": "Would you like some ice cream?",
+   "exampleUz": "Muzqaymoq xohlaysizmi?",
+   "explanationUz": "Muloyim TAKLIF.\nTaklifda 'some' ishlatiladi ('any' emas).",
+   "book": "grammar",
+   "bookPage": 47
   }
  ],
  "vocabulary": [
@@ -10675,6 +11663,90 @@
   {
    "en": "a statue",
    "uz": "haykal"
+  },
+  {
+   "en": "a fridge",
+   "uz": "muzlatgich"
+  },
+  {
+   "en": "a pilot",
+   "uz": "uchuvchi"
+  },
+  {
+   "en": "to fly",
+   "uz": "uchmoq, uchirmoq"
+  },
+  {
+   "en": "an aunt",
+   "uz": "xola, amma"
+  },
+  {
+   "en": "an uncle",
+   "uz": "amaki, tog'a"
+  },
+  {
+   "en": "a hamburger",
+   "uz": "gamburger"
+  },
+  {
+   "en": "the Danube",
+   "uz": "Dunay daryosi"
+  },
+  {
+   "en": "gloves",
+   "uz": "qo'lqoplar"
+  },
+  {
+   "en": "to hurry",
+   "uz": "shoshilmoq"
+  },
+  {
+   "en": "Watch out!",
+   "uz": "Ehtiyot bo'l!"
+  },
+  {
+   "en": "to hit",
+   "uz": "urmoq, urilmoq"
+  },
+  {
+   "en": "to put on",
+   "uz": "kiymoq"
+  },
+  {
+   "en": "a jacket",
+   "uz": "kurtka"
+  },
+  {
+   "en": "to stay at home",
+   "uz": "uyda qolmoq"
+  },
+  {
+   "en": "rainy",
+   "uz": "yomg'irli"
+  },
+  {
+   "en": "an umbrella",
+   "uz": "soyabon"
+  },
+  {
+   "en": "rarely",
+   "uz": "kamdan-kam"
+  },
+  {
+   "en": "sometimes",
+   "uz": "ba'zan"
+  },
+  {
+   "en": "a lion",
+   "uz": "sher"
+  },
+  {
+   "en": "ice cream",
+   "uz": "muzqaymoq"
+  },
+  {
+   "en": "to work long hours",
+   "uz": "uzoq soatlar ishlamoq"
   }
  ]
 }
