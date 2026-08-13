@@ -2216,6 +2216,476 @@
    ]
   },
   {
+   "id": "u12-grammar-53-15",
+   "kind": "grammar",
+   "title": "Comparisons — mashqlar",
+   "titleUz": "Qiyoslash — mashqlar",
+   "book": "grammar",
+   "bookPage": 53,
+   "exercises": [
+    {
+     "ref": "1",
+     "instructionEn": "Fill in the correct form of the adjectives.",
+     "instructionUz": "Sifatlarning to'g'ri shaklini to'ldiring.",
+     "explanationUz": "JADVALDA HAR QATORDA BITTA yoki IKKI shakl\nBERILGAN — qolganini topish kerak.\n\nTO'LDIRILGAN JADVAL:\n\n ┌─────────────┬──────────────────┬─────────────────────┐\n │  ADJECTIVE  │   COMPARATIVE    │    SUPERLATIVE      │\n ├─────────────┼──────────────────┼─────────────────────┤\n │  expensive  │  MORE EXPENSIVE  │ the most expensive  │\n │  bad        │  worse           │ THE WORST           │\n │  OLD        │  older           │ the oldest          │\n │  SMALL      │  smaller         │ the smallest        │\n │  much/many  │  MORE            │ the most            │\n │  tiny       │  tinier          │ THE TINIEST         │\n │  high       │  HIGHER          │ the highest         │\n │  HOT        │  hotter          │ the hottest         │\n └─────────────┴──────────────────┴─────────────────────┘\n\n(QALIN — kitob bergan shakl; qolganini siz\nto'ldirasiz.)\n\n\nHAR QATOR QANDAY ANIQLANADI:\n\n  1-qator: 'more expensive' berilgan.\n     'more' → uzun sifat → asosiy shakl\n     EXPENSIVE, orttirmasi THE MOST EXPENSIVE.\n\n  2-qator: 'the worst' berilgan.\n     Bu — NOTO'G'RI sifat. Jadvaldan:\n     bad → worse → the worst.\n\n  3-qator: 'old' berilgan.\n     Bir bo'g'inli → OLDER, THE OLDEST.\n\n  4-qator: 'small' berilgan.\n     Bir bo'g'inli → SMALLER, THE SMALLEST.\n\n  5-qator: 'more' (yolg'iz) berilgan.\n     'more' — NOTO'G'RI sifatning qiyosiy shakli:\n     much/many → more → the most.\n     DIQQAT: 1-qatorda ham 'more' bor, lekin u\n     yerda 'more EXPENSIVE' — sifat bilan birga.\n     Bu yerda 'more' YOLG'IZ turibdi → 'much/many'.\n\n  6-qator: 'the tiniest' berilgan.\n     '-iest' → '-y' bilan tugagan sifat:\n     TINY → TINIER → the tiniest.\n     'tiny' = juda kichkina.\n\n  7-qator: 'higher' berilgan.\n     '-er' → HIGH → THE HIGHEST.\n\n  8-qator: 'hot' berilgan.\n     Bir bo'g'inli, undosh+unli+undosh →\n     't' IKKILANADI: HOTTER, THE HOTTEST.\n\n\nDIQQAT — 5-QATORDAGI 'MORE' ALDAMChI:\n  Yolg'iz turgan 'more' — 'much' yoki 'many' ning\n  qiyosiy shakli.\n  Agar 'more + sifat' bo'lsa (1-qatordagidek),\n  u uzun sifatning qiyosiy shakli.\n\nDIQQAT — 6 va 8-QATORLAR MAXSUS QOIDALAR:\n  tiny → tinIER    ('-y' tushadi)\n  hot  → hotTER    (undosh ikkilanadi)",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 53,
+     "bookRef": "Grammar Book, 53-bet, 1-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "............  /  more expensive  /  ............",
+       "answer": "expensive / the most expensive",
+       "promptUz": "'more' bor — uzun sifat",
+       "whyUz": "'more expensive' berilgan →\nasosiy shakl EXPENSIVE,\norttirma shakl THE MOST EXPENSIVE.\nUzun sifat (3 bo'g'in) → MORE / THE MOST.",
+       "speak": "............  /  more expensive  /  ............"
+      },
+      {
+       "prompt": "............  /  ............  /  the worst",
+       "answer": "bad / worse",
+       "promptUz": "NOTO'G'RI sifat",
+       "whyUz": "'the worst' — NOTO'G'RI sifatning orttirma shakli.\nJadvaldan: BAD → WORSE → the worst.\n'badder' yoki 'baddest' XATO.",
+       "speak": "............  /  ............  /  the worst"
+      },
+      {
+       "prompt": "old  /  ............  /  ............",
+       "answer": "older / the oldest",
+       "promptUz": "Bir bo'g'inli",
+       "whyUz": "Bir bo'g'inli → -ER / THE -EST.\nold → OLDER → THE OLDEST.",
+       "speak": "old  /  ............  /  ............"
+      },
+      {
+       "prompt": "small  /  ............  /  ............",
+       "answer": "smaller / the smallest",
+       "promptUz": "Bir bo'g'inli",
+       "whyUz": "Bir bo'g'inli → -ER / THE -EST.\nsmall → SMALLER → THE SMALLEST.",
+       "speak": "small  /  ............  /  ............"
+      },
+      {
+       "prompt": "............  /  more  /  ............",
+       "answer": "much (many) / the most",
+       "promptUz": "DIQQAT — 'more' YOLG'IZ turibdi",
+       "whyUz": "'more' YOLG'IZ (sifatsiz) → bu NOTO'G'RI\nsifatning qiyosiy shakli.\nMUCH / MANY → more → THE MOST.\n'much' — sanalmaydigan ot bilan (much water),\n'many' — sanaladigan ot bilan (many books).\nDIQQAT: 1-qatorda 'more EXPENSIVE' edi —\nu yerda 'more' sifat bilan birga.",
+       "speak": "............  /  more  /  ............"
+      },
+      {
+       "prompt": "............  /  ............  /  the tiniest",
+       "answer": "tiny / tinier",
+       "promptUz": "'-iest' — qaysi qoida?",
+       "whyUz": "'-IEST' → '-y' bilan tugagan sifat.\nTINY → TINIER → the tiniest.\n'tiny' = juda kichkina ('small' dan ham kichik).",
+       "speak": "............  /  ............  /  the tiniest"
+      },
+      {
+       "prompt": "............  /  higher  /  ............",
+       "answer": "high / the highest",
+       "promptUz": "'-er' — qisqa sifat",
+       "whyUz": "'-ER' → qisqa sifat.\nHIGH → higher → THE HIGHEST.\n'high' = baland (tog', devor uchun;\nbino va odam uchun 'tall').",
+       "speak": "............  /  higher  /  ............"
+      },
+      {
+       "prompt": "hot  /  ............  /  ............",
+       "answer": "hotter / the hottest",
+       "promptUz": "DIQQAT — undosh ikkilanadi",
+       "whyUz": "hot = h (undosh) + o (unli) + t (undosh)\n→ 't' IKKILANADI.\nHOT → HOTTER → THE HOTTEST.\n'hoter' / 'hotest' XATO.",
+       "speak": "hot  /  ............  /  ............"
+      }
+     ]
+    },
+    {
+     "ref": "2",
+     "instructionEn": "Fill in the gaps with in, of, than, the or as ... as.",
+     "instructionUz": "Bo'shliqlarni in, of, than, the yoki as ... as bilan to'ldiring.",
+     "explanationUz": "BESh VARIANT: in, of, than, the, as ... as\n\nBARCHA JAVOBLAR:\n  1  longer THAN the Mississippi\n  2  THE smallest country IN the world\n  3  not AS clean AS Stratford\n  4  the most comfortable OF all\n  5  a famous club IN Los Angeles\n  6  cheaper THAN living in the city\n  7  the hottest place IN the world\n  8  not AS noisy AS Paris\n\n\nQANDAY ANIQLASh — UCh KALIT BELGI:\n\n  Sifat QIYOSIY shaklda ('-er' yoki 'more ...')\n     →  THAN\n     (1, 6-bandlar)\n\n  Sifat ORTTIRMA shaklda ('-est' yoki 'most ...')\n     →  'THE' oldidan + 'OF' yoki 'IN' keyin\n     OF + guruh ('of all', 'of the three')\n     IN + joy  ('in the world', 'in town')\n     (2, 4, 7-bandlar)\n\n  Sifat ODDIY shaklda va 'not' bor\n     →  AS ... AS\n     (3, 8-bandlar)\n\n  Oddiy joy ko'rsatish\n     →  IN\n     (5-band)\n\n\nO'ZBEKChA TARJIMASI:\n  1  Amazonka daryosi Missisipidan uzunroq.\n  2  Vatikan davlati dunyodagi eng kichik davlat.\n  3  Nyu-York Stratford chalik toza emas.\n  4  Mening shahrimda ko'p mehmonxona bor.\n     'Chelsea' hammasidan eng qulayi.\n  5  'The Whiskey' — Los-Anjelesdagi mashhur klub.\n  6  Qishloqda yashash shaharda yashashdan arzonroq.\n  7  O'lim vodiysi dunyodagi eng issiq joy.\n  8  Oksford Parij chalik shovqinli emas.\n\n\nDIQQAT — 2-BANDDA IKKI BO'ShLIQ:\n  'is ...... smallest country ...... the world'\n  Birinchisi — THE (orttirma daraja oldidan),\n  ikkinchisi — IN (joy bilan).\n\nDIQQAT — 4-BANDDA 'OF ALL':\n  'the most comfortable OF ALL'\n  'all' — GURUH → 'of'.\n  'in all' XATO.\n\nDIQQAT — 6-BANDDAGI 'LIVING':\n  'LIVING in the country is cheaper THAN LIVING\n   in the city.'\n  Ikki tomonda ham '-ing' shakli — chunki\n  bir xil narsalar solishtirilishi kerak.\n\n\nBU MAShQDAGI ATOQLI OTLAR — TANIShI:\n  the Amazon River, the Mississippi — daryolar\n  the State of the Vatican City — Coursebook 85-bet,\n     12-mashqning 5-bandidan\n  Stratford, Los Angeles — Coursebook 82-87-betlardan\n  The Whiskey — Coursebook 83-betdagi maqoladan\n  Death Valley — Coursebook 85-bet, 12-mashqdan\n  Oxford, Paris — shaharlar",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 53,
+     "bookRef": "Grammar Book, 53-bet, 2-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "1  The Amazon River is longer ........ the Mississippi.",
+       "answer": "than",
+       "options": [
+        "than",
+        "in",
+        "of",
+        "the"
+       ],
+       "whyUz": "'longER' — QIYOSIY daraja → THAN.\nAmazonka daryosi Missisipidan uzunroq.",
+       "speak": "1  The Amazon River is longer ........ the Mississippi."
+      },
+      {
+       "prompt": "2  The State of the Vatican City is ........ smallest country ........ the world.  [1-bo'shliq]",
+       "answer": "the",
+       "options": [
+        "the",
+        "in",
+        "of",
+        "than"
+       ],
+       "whyUz": "'smallEST' — ORTTIRMA daraja →\noldidan DOIM 'THE'.\nGrammar 52-betdagi Note qutisidan.",
+       "speak": "2  The State of the Vatican City is ........ smallest country ........ the world.  [1-bo'shliq]"
+      },
+      {
+       "prompt": "2  ... smallest country ........ the world.  [2-bo'shliq]",
+       "answer": "in",
+       "options": [
+        "in",
+        "of",
+        "than",
+        "the"
+       ],
+       "whyUz": "'the world' — JOY → IN.\nORTTIRMA daraja: OF + guruh, IN + joy.\nCoursebook 85-bet, 12-mashqning 5-bandi ham\nshu fakt haqida edi.",
+       "speak": "2  ... smallest country ........ the world.  [2-bo'shliq]"
+      },
+      {
+       "prompt": "3  New York is not ........ clean ........ Stratford.",
+       "answer": "as ... as",
+       "options": [
+        "as ... as",
+        "in",
+        "of",
+        "than"
+       ],
+       "whyUz": "'clean' — ODDIY shakl va 'not' bor →\nAS ... AS.\n'New York is NOT AS CLEAN AS Stratford'\n= Nyu-York Stratford chalik toza emas\n(ya'ni Stratford tozaroq).",
+       "speak": "3  New York is not ........ clean ........ Stratford."
+      },
+      {
+       "prompt": "4  There are many hotels in my town. The Chelsea is the most comfortable ........ all.",
+       "answer": "of",
+       "options": [
+        "of",
+        "in",
+        "than",
+        "the"
+       ],
+       "whyUz": "'the most comfortable' — ORTTIRMA daraja,\nva 'all' — GURUH → OF.\n'of all' = hammasidan.\n'in all' XATO.",
+       "speak": "4  There are many hotels in my town. The Chelsea is the most comfortable ........ all."
+      },
+      {
+       "prompt": "5  The Whiskey is a famous club ........ Los Angeles.",
+       "answer": "in",
+       "options": [
+        "in",
+        "of",
+        "than",
+        "the"
+       ],
+       "whyUz": "Oddiy JOY ko'rsatish → IN.\nBu bandda qiyoslash YO'Q.\n'The Whiskey' — Coursebook 83-betdagi\nmaqolada eslatilgan klub.",
+       "speak": "5  The Whiskey is a famous club ........ Los Angeles."
+      },
+      {
+       "prompt": "6  Living in the country is cheaper ........ living in the city.",
+       "answer": "than",
+       "options": [
+        "than",
+        "in",
+        "of",
+        "the"
+       ],
+       "whyUz": "'cheapER' — QIYOSIY daraja → THAN.\nDIQQAT: ikki tomonda ham 'LIVING' —\nbir xil narsalar solishtiriladi.\n'the country' = qishloq (shahardan tashqari).",
+       "speak": "6  Living in the country is cheaper ........ living in the city."
+      },
+      {
+       "prompt": "7  Death Valley is the hottest place ........ the world.",
+       "answer": "in",
+       "options": [
+        "in",
+        "of",
+        "than",
+        "the"
+       ],
+       "whyUz": "'the hottEST' — ORTTIRMA daraja,\n'the world' — JOY → IN.\nCoursebook 85-bet, 12-mashqning 6-bandi\nham aynan shu fakt.",
+       "speak": "7  Death Valley is the hottest place ........ the world."
+      },
+      {
+       "prompt": "8  Oxford is not ........ noisy ........ Paris.",
+       "answer": "as ... as",
+       "options": [
+        "as ... as",
+        "in",
+        "of",
+        "than"
+       ],
+       "whyUz": "'noisy' — ODDIY shakl va 'not' bor →\nAS ... AS.\n'Oxford is NOT AS NOISY AS Paris'\n= Oksford Parij chalik shovqinli emas.\n3-band bilan bir xil qoida.",
+       "speak": "8  Oxford is not ........ noisy ........ Paris."
+      }
+     ]
+    },
+    {
+     "ref": "3",
+     "instructionEn": "Put the adjectives in brackets into the correct form.",
+     "instructionUz": "Qavsdagi sifatlarni to'g'ri shaklga qo'ying.",
+     "explanationUz": "O'N BAND. Har birida gapdagi KALIT SO'ZGA\nqarab daraja tanlanadi.\n\nBARCHA JAVOBLAR:\n   1  MORE EXPENSIVE than    (than bor → qiyosiy)\n   2  MORE CROWDED than      (than bor → qiyosiy)\n   3  isn't as HIGH as       (as...as → oddiy shakl)\n   4  THE OLDEST city        (the ... in → orttirma)\n   5  THE LARGEST desert     (the ... in → orttirma)\n   6  CHEAPER than           (than bor → qiyosiy)\n   7  THE TALLEST building   (the ... in → orttirma)\n   8  MORE POLLUTED than     (than bor → qiyosiy)\n   9  THE BEST restaurant    (the ... in → orttirma)\n  10  SMALLER than           (than bor → qiyosiy)\n\n\nO'ZBEKChA TARJIMASI:\n   1  Bu do'konlar qishloqdagilardan qimmatroq.\n   2  Bu shahar besh yil oldingidan gavjumroq.\n   3  Makkinli tog'i Everest chalik baland emas.\n   4  Afina Yevropadagi eng eski shaharmi?\n   5  Sahroi Kabir dunyodagi eng katta cho'l.\n   6  Edinburg Parijdan arzonroq.\n   7  Dunyodagi eng baland bino qaysi?\n   8  Los-Anjeles Stratforddan ifloslanganroq.\n   9  'The Willow's' — mening mahallamdagi eng\n      yaxshi restoran.\n  10  Bizning yangi mashinamiz eskisidan kichikroq.\n\n\nENG MUHIM BANDLAR:\n\n  3-BAND ALDAMChI:\n     'isn't AS ...... AS Mount Everest'\n     'as ... as' orasiga ODDIY shakl:\n        AS HIGH AS  ✓\n        as higher as  ✗\n     Mashq 'to'g'ri shaklga qo'ying' desa ham,\n     bu yerda sifat O'ZGARMAYDI.\n\n  9-BAND NOTO'G'RI SIFAT:\n     'good' → 'the BEST' ('the goodest' XATO).\n\n  2-BANDDAGI TAQQOSLASh:\n     'more crowded THAN IT WAS five years ago'\n     Shahar O'ZINING beshinchi yil oldingi holati\n     bilan solishtirilmoqda.\n\n  7-BAND 'TALL' — 'HIGH' EMAS:\n     BINO uchun 'tall' ishlatiladi.\n     3-bandda esa TOG' uchun 'high'.\n     Kitob ikkalasini bir mashqda ataylab bergan.",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 53,
+     "bookRef": "Grammar Book, 53-bet, 3-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  These shops are ............ (expensive) than the ones in the country.",
+       "answer": "more expensive",
+       "promptUz": "'than' bor",
+       "whyUz": "'THAN' bor → QIYOSIY daraja.\n'expensive' — 3 bo'g'in → MORE EXPENSIVE.\n'the ones' = 'the shops' o'rniga.",
+       "speak": "1  These shops are ............ (expensive) than the ones in the country."
+      },
+      {
+       "prompt": "2  This city is ............ (crowded) than it was five years ago.",
+       "answer": "more crowded",
+       "promptUz": "'than' bor",
+       "whyUz": "'THAN' bor → QIYOSIY daraja.\n'crowded' — 2 bo'g'in, '-y' yo'q → MORE CROWDED.\nShahar O'ZINING besh yil oldingi holati bilan\nsolishtirilmoqda.",
+       "speak": "2  This city is ............ (crowded) than it was five years ago."
+      },
+      {
+       "prompt": "3  Mount McKinley isn't as ............ (high) as Mount Everest.",
+       "answer": "high",
+       "promptUz": "DIQQAT — 'as ... as' qolipi",
+       "whyUz": "ODDIY ShAKL — 'as ... as' orasiga sifat\nO'ZGARMASDAN qo'yiladi.\n'as HIGH as' ✓ / 'as higher as' ✗\nTOG' uchun 'high' (bino uchun 'tall').\nMakkinli (6190 m) Everestdan (8848 m) past —\nCoursebook 85-bet, 12-mashqdan.",
+       "speak": "3  Mount McKinley isn't as ............ (high) as Mount Everest."
+      },
+      {
+       "prompt": "4  Is Athens ............ (old) city in Europe?",
+       "answer": "the oldest",
+       "promptUz": "'... in Europe' — qaysi daraja?",
+       "whyUz": "'... IN Europe' → ORTTIRMA daraja.\n'old' — 1 bo'g'in → THE OLDEST.\n'THE' TUSHIB QOLMASIN.\nAfina — Yunoniston poytaxti.",
+       "speak": "4  Is Athens ............ (old) city in Europe?"
+      },
+      {
+       "prompt": "5  The Sahara is ............ (large) desert in the world.",
+       "answer": "the largest",
+       "promptUz": "'... in the world' — qaysi daraja?",
+       "whyUz": "'... IN the world' → ORTTIRMA daraja.\n'large' — '-e' bilan tugagan → THE LARGEST.\nCoursebook 85-bet, 12-mashqning 1-bandi\nham aynan shu fakt.",
+       "speak": "5  The Sahara is ............ (large) desert in the world."
+      },
+      {
+       "prompt": "6  Edinburgh is ............ (cheap) than Paris.",
+       "answer": "cheaper",
+       "promptUz": "'than' bor",
+       "whyUz": "'THAN' bor → QIYOSIY daraja.\n'cheap' — 1 bo'g'in → CHEAPER.\nCoursebook 85-bet, 11-mashqda Edinburg\nLondondan arzonroq edi.",
+       "speak": "6  Edinburgh is ............ (cheap) than Paris."
+      },
+      {
+       "prompt": "7  Which is ............ (tall) building in the world?",
+       "answer": "the tallest",
+       "promptUz": "'... in the world' — qaysi daraja?",
+       "whyUz": "'... IN the world' → ORTTIRMA daraja.\n'tall' — 1 bo'g'in → THE TALLEST.\nDIQQAT: BINO uchun 'tall'\n(3-bandda TOG' uchun 'high' edi).",
+       "speak": "7  Which is ............ (tall) building in the world?"
+      },
+      {
+       "prompt": "8  Los Angeles is ............ (polluted) than Stratford.",
+       "answer": "more polluted",
+       "promptUz": "'than' bor",
+       "whyUz": "'THAN' bor → QIYOSIY daraja.\n'polluted' — 3 bo'g'in → MORE POLLUTED.\nCoursebook 82-betdagi 2-mashqda ham\naynan shu gap bor edi.",
+       "speak": "8  Los Angeles is ............ (polluted) than Stratford."
+      },
+      {
+       "prompt": "9  The Willow's is ............ (good) restaurant in my neighbourhood.",
+       "answer": "the best",
+       "promptUz": "NOTO'G'RI sifat",
+       "whyUz": "'... IN my neighbourhood' → ORTTIRMA daraja.\n'good' — NOTO'G'RI sifat → THE BEST.\n'the goodest' XATO.\n'a neighbourhood' = mahalla.",
+       "speak": "9  The Willow's is ............ (good) restaurant in my neighbourhood."
+      },
+      {
+       "prompt": "10  Our new car is ............ (small) than our old one.",
+       "answer": "smaller",
+       "promptUz": "'than' bor",
+       "whyUz": "'THAN' bor → QIYOSIY daraja.\n'small' — 1 bo'g'in → SMALLER.\n'our old ONE' = 'our old car' o'rniga.",
+       "speak": "10  Our new car is ............ (small) than our old one."
+      }
+     ]
+    },
+    {
+     "ref": "4",
+     "instructionEn": "Put the adjectives in brackets into the correct form, as in the example.",
+     "instructionUz": "Qavsdagi sifatlarni namunadagidek to'g'ri shaklga qo'ying.",
+     "explanationUz": "RASMDA UCh HAYVON:\n  FIL (the elephant)      — eng katta, eng og'ir\n  SHER (the lion)         — eng xavfli, eng tez\n  ShIMPANZE (the chimpanzee) — eng kichik, eng do'stona\n\n\nKITOBDAGI NAMUNA:\n  1  The chimpanzee is NOT AS BIG AS (big) the\n     elephant.\n\n  Namuna MUHIM narsani ko'rsatadi: javobga\n  'as' va 'as' ning IKKALASI ham kiradi.\n\n\nBARCHA JAVOBLAR:\n  1  is not AS BIG AS the elephant        (NAMUNA)\n  2  The lion is SMALLER THAN the elephant.\n  3  The lion is not AS FRIENDLY AS the chimpanzee.\n  4  The elephant is THE HEAVIEST animal of all.\n  5  The lion is THE MOST DANGEROUS animal of all.\n  6  The chimpanzee is not AS FAST AS the lion.\n\n\nO'ZBEKChA TARJIMASI:\n  1  Shimpanze fil chalik katta emas.\n  2  Sher fildan kichikroq.\n  3  Sher shimpanze chalik do'stona emas.\n  4  Fil hamma hayvonlardan eng og'iri.\n  5  Sher hamma hayvonlardan eng xavflisi.\n  6  Shimpanze sher chalik tez emas.\n\n\nQANDAY ANIQLANADI — UCh XIL QOLIP:\n\n  'is NOT ...... [ot]' → AS ... AS\n     (1, 3, 6-bandlar)\n     Bo'shliqdan keyin BIRDAN ot kelsa va 'not'\n     bo'lsa — 'as ... as' kerak.\n\n  'is ...... [ot]' (not YO'Q) → QIYOSIY + THAN\n     (2-band)\n     'The lion is ...... the elephant' —\n     'than' ham bo'shliqqa kiradi:\n     'SMALLER THAN'.\n\n  'is ...... animal OF ALL' → ORTTIRMA\n     (4, 5-bandlar)\n     'of all' — ORTTIRMA darajaning belgisi.\n\n\nSIFATLARNING YASALIShI:\n  big       → as BIG as      (oddiy shakl)\n  small     → SMALLER than   (1 bo'g'in → -ER)\n  friendly  → as FRIENDLY as (oddiy shakl)\n  heavy     → THE HEAVIEST   ('-y' → -IEST)\n  dangerous → THE MOST DANGEROUS (3 bo'g'in)\n  fast      → as FAST as     (oddiy shakl)\n\n\nDIQQAT — 2-BANDDA 'THAN' HAM KERAK:\n  'The lion is ...... (small) the elephant.'\n  Gapda 'than' BOSILMAGAN — u ham bo'shliqqa\n  kiradi: 'SMALLER THAN'.\n  Bu — namunadagi 'as big as' bilan bir xil\n  mantiq (u yerda ham ikkala 'as' javobga kirgan).",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 53,
+     "bookRef": "Grammar Book, 53-bet, 4-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  The chimpanzee is not ............ (big) the elephant.",
+       "answer": "as big as",
+       "promptUz": "KITOBDAGI NAMUNA",
+       "whyUz": "NAMUNA. 'not' bor va bo'shliqdan keyin\nbirdan ot → AS ... AS.\n'big' ODDIY shaklda qoladi.\nJavobga IKKALA 'as' ham kiradi.",
+       "speak": "1  The chimpanzee is not ............ (big) the elephant."
+      },
+      {
+       "prompt": "2  The lion is ............ (small) the elephant.",
+       "answer": "smaller than",
+       "promptUz": "'not' YO'Q — qaysi qolip?",
+       "whyUz": "'not' YO'Q → QIYOSIY daraja + THAN.\n'small' — 1 bo'g'in → SMALLER.\nDIQQAT: 'than' ham bo'shliqqa kiradi\n(gapda bosilmagan).\nSher fildan kichikroq — rasmda ko'rinib turibdi.",
+       "speak": "2  The lion is ............ (small) the elephant."
+      },
+      {
+       "prompt": "3  The lion is not ............ (friendly) the chimpanzee.",
+       "answer": "as friendly as",
+       "promptUz": "'not' bor",
+       "whyUz": "'not' bor → AS ... AS.\n'friendly' ODDIY shaklda qoladi\n('friendlier' XATO).\nDIQQAT: 'friendly' '-ly' bilan tugasa ham\nSIFAT (ravish emas).",
+       "speak": "3  The lion is not ............ (friendly) the chimpanzee."
+      },
+      {
+       "prompt": "4  The elephant is ............ (heavy) animal of all.",
+       "answer": "the heaviest",
+       "promptUz": "'of all' — qaysi daraja?",
+       "whyUz": "'OF ALL' → ORTTIRMA daraja.\n'heavy' — '-y' bilan tugagan → THE HEAVIEST.\nFil — quruqlikdagi eng og'ir hayvon.",
+       "speak": "4  The elephant is ............ (heavy) animal of all."
+      },
+      {
+       "prompt": "5  The lion is ............ (dangerous) animal of all.",
+       "answer": "the most dangerous",
+       "promptUz": "'of all' — qaysi daraja?",
+       "whyUz": "'OF ALL' → ORTTIRMA daraja.\n'dangerous' — 3 bo'g'in → THE MOST DANGEROUS.\n'dangerousest' XATO.",
+       "speak": "5  The lion is ............ (dangerous) animal of all."
+      },
+      {
+       "prompt": "6  The chimpanzee is not ............ (fast) the lion.",
+       "answer": "as fast as",
+       "promptUz": "'not' bor",
+       "whyUz": "'not' bor → AS ... AS.\n'fast' ODDIY shaklda qoladi.\nSher shimpanzedan tezroq yuguradi.",
+       "speak": "6  The chimpanzee is not ............ (fast) the lion."
+      }
+     ]
+    },
+    {
+     "ref": "5",
+     "instructionEn": "Put the adjectives in brackets into the correct form. Fill in than, of, in or the where necessary, as in the example.",
+     "instructionUz": "Qavsdagi sifatlarni to'g'ri shaklga qo'ying. Zarur bo'lganda than, of, in yoki the ni ham qo'shing, namunadagidek.",
+     "explanationUz": "O'N YETTI BAND — mashqning eng katta qismi.\n\nKITOBDAGI NAMUNA:\n  1  My father is OLDER THAN my mother. (old)\n  Javobga sifat ham, 'than' ham kiradi.\n\n\nBARCHA JAVOBLAR:\n\n   1  older than           (NAMUNA)\n   2  noisy                ('very' dan keyin — ODDIY)\n   3  more ... than\n   4  the fastest ... of\n   5  expensive            ('very' dan keyin — ODDIY)\n   6  the best             (noto'g'ri sifat)\n   7  the driest ... in\n   8  bigger than\n   9  famous               ('very' dan keyin — ODDIY)\n  10  the tallest ... of\n  11  the largest ... in\n  12  prettier than\n  13  more dangerous than\n  14  safer ... than\n  15  more crowded than\n  16  tall                 ('quite' dan keyin — ODDIY)\n  17  the kindest\n\n\nO'ZBEKChA TARJIMASI:\n   1  Otam onamdan katta.\n   2  Bu shahar juda shovqinli.\n   3  Uning opasidan ko'proq o'yinchog'i bor.\n   4  Gepard hamma hayvonlardan eng tezi.\n   5  U ko'ylak juda qimmat.\n   6  Bu hammasidan eng yaxshi film edi.\n   7  Chili dunyodagi eng quruq joy.\n   8  Uning kvartirasi bizникidan kattaroq.\n   9  Tom Kruz juda mashhur.\n  10  Jirafa hamma hayvonlardan eng balandi.\n  11  AQShdagi eng katta shahar qaysi?\n  12  Mishel Jenniferdan chiroyliroq.\n  13  Mototsikllar samolyotlardan xavfliroq.\n  14  Sizning pulingiz bankda uydagidan xavfsizroq.\n  15  Plyaj o'tgan yilgidan gavjumroq.\n  16  Jo ancha baland bo'yli.\n  17  Opam men biladigan eng mehribon odam.\n\n\nENG MUHIM DARS — 'VERY' va 'QUITE' DAN KEYIN\nSIFAT O'ZGARMAYDI:\n\n  2-band:  'This city is VERY ...... .'   → NOISY\n  5-band:  'That dress is VERY ...... .'  → EXPENSIVE\n  9-band:  'Tom Cruise is VERY ...... .'  → FAMOUS\n  16-band: 'Joe is QUITE ...... .'        → TALL\n\n  Bu to'rt bandda QIYOSLASh YO'Q — shunchaki\n  daraja ko'rsatilyapti.\n  Grammar 52-betdagi 'Quite/Very/Too' qoidasi:\n  'quite/very/too' + ODDIY sifat.\n\n  Ular gapning OXIRIDA nuqta bilan tugaydi —\n  bu ham ip: solishtiriladigan narsa YO'Q.\n\n\nQANDAY ANIQLASh — TO'RT BELGI:\n\n  'very' / 'quite' bor      →  ODDIY shakl\n                               (2, 5, 9, 16)\n  gapdan keyin ikkinchi narsa →  QIYOSIY + THAN\n                               (1, 3, 8, 12, 13,\n                                14, 15)\n  'of all' bor              →  THE ... OF\n                               (4, 10)\n  'in the world/the USA' bor →  THE ... IN\n                               (7, 11)\n  'of all' yoki 'I know' bor →  THE ...\n                               (6, 17)\n\n\nALOHIDA IZOHLAR:\n\n  3-BAND: 'She has got ...... TOYS ...... her sister.'\n     'many' → 'MORE' (noto'g'ri sifat) + THAN.\n     'toys' — SANALADIGAN ot → 'many' to'g'ri edi.\n\n  6-BAND: 'That was ...... film OF ALL.'\n     'good' → 'THE BEST' (noto'g'ri sifat).\n     'of all' bor, lekin javobda faqat 'the best' —\n     'of all' gapda ALLAQAChON bor.\n\n  7-BAND: 'Chile is ...... place ...... the world.'\n     'dry' → '-y' tushadi → THE DRIEST + IN.\n     Coursebook 85-bet, 12-mashqning 4-bandi\n     ham aynan shu fakt (Atakama cho'li).\n\n  14-BAND: 'Your money is ...... IN THE BANK ......\n     it is AT HOME.'\n     'safe' → '-e' → SAFER + THAN.\n     Bankdagi pul uydagidan xavfsizroq.\n\n  17-BAND: 'My sister is ...... person I KNOW.'\n     'I know' — guruhni chegaralaydi\n     (men biladigan odamlar orasida) → ORTTIRMA.\n     'kind' → THE KINDEST.\n\n\nSIFATLARNING YASALIShI:\n  old       → oldER          (1 bo'g'in)\n  many      → MORE           (noto'g'ri)\n  fast      → the fastEST    (1 bo'g'in)\n  good      → the BEST       (noto'g'ri)\n  dry       → the drIEST     ('-y' → -IEST)\n  big       → bigGER         (undosh ikkilanadi)\n  tall      → the tallEST    (1 bo'g'in)\n  large     → the largEST    ('-e' → faqat -ST)\n  pretty    → prettIER       ('-y' → -IER)\n  dangerous → MORE dangerous (3 bo'g'in)\n  safe      → safER          ('-e' → faqat -R)\n  crowded   → MORE crowded   (2 bo'g'in, '-y' yo'q)\n  kind      → the kindEST    (1 bo'g'in)",
+     "audio": false,
+     "book": "grammar",
+     "bookPage": 53,
+     "bookRef": "Grammar Book, 53-bet, 5-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1  My father is ............ my mother.  (old)",
+       "answer": "older than",
+       "promptUz": "KITOBDAGI NAMUNA",
+       "whyUz": "NAMUNA. Ikki odam solishtirilmoqda →\nQIYOSIY daraja + THAN.\n'old' — 1 bo'g'in → OLDER.",
+       "speak": "1  My father is ............ my mother.  (old)"
+      },
+      {
+       "prompt": "2  This city is very ............ .  (noisy)",
+       "answer": "noisy",
+       "promptUz": "DIQQAT — 'very' dan keyin qaysi shakl?",
+       "whyUz": "ODDIY ShAKL.\n'very' + ODDIY sifat (Grammar 52-bet qoidasi).\nQIYOSLASH YO'Q — gap nuqta bilan tugaydi.\n'very noisier' XATO.",
+       "speak": "2  This city is very ............ .  (noisy)"
+      },
+      {
+       "prompt": "3  She has got ............ toys ............ her sister.  (many)",
+       "answer": "more ... than",
+       "promptUz": "NOTO'G'RI sifat",
+       "whyUz": "'many' — NOTO'G'RI sifat → MORE + THAN.\n'toys' — SANALADIGAN ot, shuning uchun 'many'\n('much' emas).\nQiyosiy shakli ikkalasi uchun ham 'more'.",
+       "speak": "3  She has got ............ toys ............ her sister.  (many)"
+      },
+      {
+       "prompt": "4  The cheetah is ............ animal ............ all.  (fast)",
+       "answer": "the fastest ... of",
+       "promptUz": "'all' — guruh",
+       "whyUz": "'all' — GURUH → ORTTIRMA daraja + OF.\n'fast' — 1 bo'g'in → THE FASTEST ... OF all.\n'a cheetah' = gepard — yer yuzidagi\neng tez hayvon (110 km/soat).",
+       "speak": "4  The cheetah is ............ animal ............ all.  (fast)"
+      },
+      {
+       "prompt": "5  That dress is very ............ .  (expensive)",
+       "answer": "expensive",
+       "promptUz": "DIQQAT — 'very' dan keyin",
+       "whyUz": "ODDIY ShAKL.\n'very' + ODDIY sifat.\n'very more expensive' XATO.\n2-band bilan bir xil qoida.",
+       "speak": "5  That dress is very ............ .  (expensive)"
+      },
+      {
+       "prompt": "6  That was ............ film of all.  (good)",
+       "answer": "the best",
+       "promptUz": "NOTO'G'RI sifat; 'of all' bor",
+       "whyUz": "'of all' → ORTTIRMA daraja.\n'good' — NOTO'G'RI sifat → THE BEST.\n'the goodest' / 'the most good' XATO.\nDIQQAT: 'of all' gapda ALLAQACHON bor —\njavobga faqat 'the best' kiradi.",
+       "speak": "6  That was ............ film of all.  (good)"
+      },
+      {
+       "prompt": "7  Chile is ............ place ............ the world.  (dry)",
+       "answer": "the driest ... in",
+       "promptUz": "'the world' — joy",
+       "whyUz": "'the world' — JOY → ORTTIRMA daraja + IN.\n'dry' — '-y' tushadi → THE DRIEST.\n'the dryest' XATO.\nCoursebook 85-bet, 12-mashqning 4-bandi\nham shu fakt (Atakama cho'li, Chili).",
+       "speak": "7  Chile is ............ place ............ the world.  (dry)"
+      },
+      {
+       "prompt": "8  Her flat is ............ ours.  (big)",
+       "answer": "bigger than",
+       "promptUz": "Undosh ikkilanadi",
+       "whyUz": "Ikki kvartira solishtirilmoqda →\nQIYOSIY daraja + THAN.\n'big' — undosh + unli + undosh → 'g' IKKILANADI\n→ BIGGER.\n'ours' = 'our flat' o'rniga (egalik olmoshi).",
+       "speak": "8  Her flat is ............ ours.  (big)"
+      },
+      {
+       "prompt": "9  Tom Cruise is very ............ .  (famous)",
+       "answer": "famous",
+       "promptUz": "DIQQAT — 'very' dan keyin",
+       "whyUz": "ODDIY ShAKL.\n'very' + ODDIY sifat.\n'very more famous' XATO.\nTom Kruz — amerikalik aktyor.",
+       "speak": "9  Tom Cruise is very ............ .  (famous)"
+      },
+      {
+       "prompt": "10  The giraffe is ............ animal ............ all.  (tall)",
+       "answer": "the tallest ... of",
+       "promptUz": "'all' — guruh",
+       "whyUz": "'all' — GURUH → ORTTIRMA daraja + OF.\n'tall' — 1 bo'g'in → THE TALLEST ... OF all.\nGrammar 52-betdagi 'Use' qutisidagi namuna\nning aynan o'zi.",
+       "speak": "10  The giraffe is ............ animal ............ all.  (tall)"
+      },
+      {
+       "prompt": "11  Which is ............ city ............ the USA?  (large)",
+       "answer": "the largest ... in",
+       "promptUz": "'the USA' — joy",
+       "whyUz": "'the USA' — JOY → ORTTIRMA daraja + IN.\n'large' — '-e' bilan tugagan → THE LARGEST.\nCoursebook 83-betdagi maqola: 'Los Angeles is\nthe second LARGEST city in America.'",
+       "speak": "11  Which is ............ city ............ the USA?  (large)"
+      },
+      {
+       "prompt": "12  Michelle is ............ Jennifer.  (pretty)",
+       "answer": "prettier than",
+       "promptUz": "'-y' bilan tugagan",
+       "whyUz": "Ikki odam solishtirilmoqda →\nQIYOSIY daraja + THAN.\n'pretty' — '-y' tushadi → PRETTIER.\n'more pretty' ham uchraydi, lekin kitob\nqoidasi bo'yicha PRETTIER.",
+       "speak": "12  Michelle is ............ Jennifer.  (pretty)"
+      },
+      {
+       "prompt": "13  Motorcycles are ............ aeroplanes.  (dangerous)",
+       "answer": "more dangerous than",
+       "promptUz": "3 bo'g'inli",
+       "whyUz": "QIYOSIY daraja + THAN.\n'dangerous' — 3 bo'g'in → MORE DANGEROUS.\n'a motorcycle' = mototsikl,\n'an aeroplane' = samolyot (Britaniya varianti;\nAmerikada 'airplane').",
+       "speak": "13  Motorcycles are ............ aeroplanes.  (dangerous)"
+      },
+      {
+       "prompt": "14  Your money is ............ in the bank ............ it is at home.  (safe)",
+       "answer": "safer ... than",
+       "promptUz": "'-e' bilan tugagan",
+       "whyUz": "IKKI joy solishtirilmoqda (bank ↔ uy) →\nQIYOSIY daraja + THAN.\n'safe' — '-e' bilan tugagan → SAFER.\n'safeer' XATO.\n'AT home' — predlog AT.",
+       "speak": "14  Your money is ............ in the bank ............ it is at home.  (safe)"
+      },
+      {
+       "prompt": "15  The beach is ............ it was last year.  (crowded)",
+       "answer": "more crowded than",
+       "promptUz": "2 bo'g'inli, '-y' yo'q",
+       "whyUz": "Plyaj O'ZINING o'tgan yilgi holati bilan\nsolishtirilmoqda → QIYOSIY daraja + THAN.\n'crowded' — 2 bo'g'in, '-y' yo'q → MORE CROWDED.\n3-mashqning 2-bandi bilan bir xil tuzilish.",
+       "speak": "15  The beach is ............ it was last year.  (crowded)"
+      },
+      {
+       "prompt": "16  Joe is quite ............ .  (tall)",
+       "answer": "tall",
+       "promptUz": "DIQQAT — 'quite' dan keyin qaysi shakl?",
+       "whyUz": "ODDIY ShAKL.\n'quite' + ODDIY sifat (Grammar 52-bet qoidasi).\n'quite taller' XATO.\n'quite tall' = ancha baland bo'yli.\n2, 5, 9-bandlar bilan bir xil qoida.",
+       "speak": "16  Joe is quite ............ .  (tall)"
+      },
+      {
+       "prompt": "17  My sister is ............ person I know.  (kind)",
+       "answer": "the kindest",
+       "promptUz": "'I know' guruhni chegaralaydi",
+       "whyUz": "'person I KNOW' — guruh chegaralangan\n(men biladigan odamlar orasida) →\nORTTIRMA daraja.\n'kind' — 1 bo'g'in → THE KINDEST.\n'kind' = mehribon.",
+       "speak": "17  My sister is ............ person I know.  (kind)"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "u12-coursebook-87-11",
    "kind": "pronunciation",
    "title": "Pronunciation — /tʃ/ va /dʒ/",
@@ -4973,6 +5443,371 @@
    ],
    "book": "grammar",
    "bookPage": 52
+  },
+  {
+   "ruleUz": "BU BETDAGI QISQA SIFATLAR (-ER / THE -EST)",
+   "explanationUz": "1-5 mashqlardan.",
+   "items": [
+    {
+     "base": "old",
+     "baseUz": "eski, katta (yosh)",
+     "derived": "older",
+     "derivedUz": "the oldest",
+     "note": "1, 3, 5-mashqlarda"
+    },
+    {
+     "base": "small",
+     "baseUz": "kichik",
+     "derived": "smaller",
+     "derivedUz": "the smallest",
+     "note": "1, 3, 4-mashqlarda"
+    },
+    {
+     "base": "high",
+     "baseUz": "baland (tog')",
+     "derived": "higher",
+     "derivedUz": "the highest",
+     "note": "1, 3-mashqlarda"
+    },
+    {
+     "base": "cheap",
+     "baseUz": "arzon",
+     "derived": "cheaper",
+     "derivedUz": "the cheapest",
+     "note": "3-mashqda"
+    },
+    {
+     "base": "tall",
+     "baseUz": "baland (bino, odam)",
+     "derived": "taller",
+     "derivedUz": "the tallest",
+     "note": "3, 5-mashqlarda"
+    },
+    {
+     "base": "fast",
+     "baseUz": "tez",
+     "derived": "faster",
+     "derivedUz": "the fastest",
+     "note": "4, 5-mashqlarda"
+    },
+    {
+     "base": "long",
+     "baseUz": "uzun",
+     "derived": "longer",
+     "derivedUz": "the longest",
+     "note": "2-mashqda"
+    },
+    {
+     "base": "clean",
+     "baseUz": "toza",
+     "derived": "cleaner",
+     "derivedUz": "the cleanest",
+     "note": "2-mashqda"
+    },
+    {
+     "base": "kind",
+     "baseUz": "mehribon",
+     "derived": "kinder",
+     "derivedUz": "the kindest",
+     "note": "5-mashqda"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "ruleUz": "'-E' BILAN TUGAGANLAR (faqat -R / -ST)",
+   "explanationUz": "'e' takrorlanmaydi.",
+   "items": [
+    {
+     "base": "large",
+     "baseUz": "katta",
+     "derived": "larger",
+     "derivedUz": "the largest",
+     "note": "3, 5-mashqlarda"
+    },
+    {
+     "base": "safe",
+     "baseUz": "xavfsiz",
+     "derived": "safer",
+     "derivedUz": "the safest",
+     "note": "5-mashq, 14-band"
+    },
+    {
+     "base": "close",
+     "baseUz": "yaqin",
+     "derived": "closer",
+     "derivedUz": "the closest",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "ruleUz": "UNDOSH IKKILANADIGANLAR",
+   "explanationUz": "undosh + urg'uli unli + undosh.",
+   "items": [
+    {
+     "base": "hot",
+     "baseUz": "issiq",
+     "derived": "hotter",
+     "derivedUz": "the hottest",
+     "note": "1, 2-mashqlarda"
+    },
+    {
+     "base": "big",
+     "baseUz": "katta",
+     "derived": "bigger",
+     "derivedUz": "the biggest",
+     "note": "4, 5-mashqlarda"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "ruleUz": "'-Y' BILAN TUGAGANLAR (-IER / THE -IEST)",
+   "explanationUz": "'-y' tushadi.",
+   "items": [
+    {
+     "base": "tiny",
+     "baseUz": "juda kichkina",
+     "derived": "tinier",
+     "derivedUz": "the tiniest",
+     "note": "1-mashqda"
+    },
+    {
+     "base": "heavy",
+     "baseUz": "og'ir",
+     "derived": "heavier",
+     "derivedUz": "the heaviest",
+     "note": "4-mashqda"
+    },
+    {
+     "base": "dry",
+     "baseUz": "quruq",
+     "derived": "drier",
+     "derivedUz": "the driest",
+     "note": "5-mashq, 7-band"
+    },
+    {
+     "base": "pretty",
+     "baseUz": "chiroyli",
+     "derived": "prettier",
+     "derivedUz": "the prettiest",
+     "note": "5-mashq, 12-band"
+    },
+    {
+     "base": "noisy",
+     "baseUz": "shovqinli",
+     "derived": "noisier",
+     "derivedUz": "the noisiest",
+     "note": ""
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "ruleUz": "UZUN SIFATLAR (MORE / THE MOST)",
+   "explanationUz": "2 va undan ko'p bo'g'in, '-y' yo'q.",
+   "items": [
+    {
+     "base": "expensive",
+     "baseUz": "qimmat",
+     "derived": "more expensive",
+     "derivedUz": "the most expensive",
+     "note": "1, 3, 5-mashqlarda"
+    },
+    {
+     "base": "crowded",
+     "baseUz": "gavjum",
+     "derived": "more crowded",
+     "derivedUz": "the most crowded",
+     "note": "3, 5-mashqlarda"
+    },
+    {
+     "base": "polluted",
+     "baseUz": "ifloslangan",
+     "derived": "more polluted",
+     "derivedUz": "the most polluted",
+     "note": "3-mashqda"
+    },
+    {
+     "base": "dangerous",
+     "baseUz": "xavfli",
+     "derived": "more dangerous",
+     "derivedUz": "the most dangerous",
+     "note": "4, 5-mashqlarda"
+    },
+    {
+     "base": "comfortable",
+     "baseUz": "qulay",
+     "derived": "more comfortable",
+     "derivedUz": "the most comfortable",
+     "note": "2-mashqda"
+    },
+    {
+     "base": "famous",
+     "baseUz": "mashhur",
+     "derived": "more famous",
+     "derivedUz": "the most famous",
+     "note": "5-mashqda"
+    },
+    {
+     "base": "friendly",
+     "baseUz": "do'stona",
+     "derived": "friendlier",
+     "derivedUz": "the friendliest",
+     "note": "4-mashqda; '-y' qoidasiga bo'ysunadi"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "ruleUz": "NOTO'G'RI SIFATLAR — bu betda uchraganlari",
+   "explanationUz": "Yodlash kerak.",
+   "items": [
+    {
+     "base": "good",
+     "baseUz": "yaxshi",
+     "derived": "better",
+     "derivedUz": "the best",
+     "note": "3-mashq 9-band, 5-mashq 6-band"
+    },
+    {
+     "base": "bad",
+     "baseUz": "yomon",
+     "derived": "worse",
+     "derivedUz": "the worst",
+     "note": "1-mashqda"
+    },
+    {
+     "base": "many",
+     "baseUz": "ko'p (sanaladigan)",
+     "derived": "more",
+     "derivedUz": "the most",
+     "note": "1-mashq, 5-mashq 3-band"
+    },
+    {
+     "base": "much",
+     "baseUz": "ko'p (sanalmaydigan)",
+     "derived": "more",
+     "derivedUz": "the most",
+     "note": "1-mashqda"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "ruleUz": "'VERY' / 'QUITE' DAN KEYIN — SIFAT O'ZGARMAYDI",
+   "explanationUz": "5-mashqning eng muhim darsi (2, 5, 9, 16-bandlar).",
+   "items": [
+    {
+     "base": "very noisy",
+     "baseUz": "juda shovqinli",
+     "derived": "ODDIY shakl",
+     "derivedUz": "'very noisier' XATO",
+     "note": "5-mashq, 2-band"
+    },
+    {
+     "base": "very expensive",
+     "baseUz": "juda qimmat",
+     "derived": "ODDIY shakl",
+     "derivedUz": "",
+     "note": "5-mashq, 5-band"
+    },
+    {
+     "base": "very famous",
+     "baseUz": "juda mashhur",
+     "derived": "ODDIY shakl",
+     "derivedUz": "",
+     "note": "5-mashq, 9-band"
+    },
+    {
+     "base": "quite tall",
+     "baseUz": "ancha baland bo'yli",
+     "derived": "ODDIY shakl",
+     "derivedUz": "'quite taller' XATO",
+     "note": "5-mashq, 16-band"
+    },
+    {
+     "base": "much taller",
+     "baseUz": "ancha balandroq",
+     "derived": "QIYOSIY daraja",
+     "derivedUz": "'much' FARQ QILADI",
+     "note": "faqat 'much' qiyosiy daraja bilan"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "ruleUz": "Bu betdagi yangi so'zlar",
+   "explanationUz": "Mashqlardan.",
+   "items": [
+    {
+     "base": "tiny",
+     "baseUz": "juda kichkina",
+     "derived": "= very small",
+     "derivedUz": "",
+     "note": "1-mashqda"
+    },
+    {
+     "base": "a chimpanzee",
+     "baseUz": "shimpanze",
+     "derived": "",
+     "derivedUz": "",
+     "note": "4-mashq rasmida"
+    },
+    {
+     "base": "a cheetah",
+     "baseUz": "gepard",
+     "derived": "eng tez hayvon",
+     "derivedUz": "110 km/soat",
+     "note": "5-mashqda"
+    },
+    {
+     "base": "a neighbourhood",
+     "baseUz": "mahalla",
+     "derived": "a neighbour",
+     "derivedUz": "qo'shni",
+     "note": "3-mashqda"
+    },
+    {
+     "base": "a motorcycle",
+     "baseUz": "mototsikl",
+     "derived": "= a motorbike",
+     "derivedUz": "",
+     "note": "5-mashqda"
+    },
+    {
+     "base": "an aeroplane",
+     "baseUz": "samolyot",
+     "derived": "Amerikada: airplane",
+     "derivedUz": "",
+     "note": "5-mashqda"
+    },
+    {
+     "base": "a flat",
+     "baseUz": "kvartira",
+     "derived": "Amerikada: apartment",
+     "derivedUz": "",
+     "note": "5-mashqda"
+    },
+    {
+     "base": "ours",
+     "baseUz": "bizniki",
+     "derived": "egalik olmoshi",
+     "derivedUz": "= our flat",
+     "note": "5-mashq, 8-band"
+    }
+   ],
+   "book": "grammar",
+   "bookPage": 53
   }
  ],
  "sentencePatterns": [
@@ -5263,6 +6098,46 @@
    "explanationUz": "quite (biroz) < very (juda).\n'too' esa MUAMMO borligini bildiradi:\n'so ... that I can't ...'.",
    "book": "grammar",
    "bookPage": 52
+  },
+  {
+   "formula": "A is [QIYOSIY] THAN B.",
+   "exampleEn": "The Amazon River is longer than the Mississippi. My father is older than my mother.",
+   "exampleUz": "Amazonka daryosi Missisipidan uzunroq. Otam onamdan katta.",
+   "explanationUz": "Gapda ikkinchi narsa bo'lsa va 'not as ... as'\nishlatilmagan bo'lsa — QIYOSIY daraja + THAN.",
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "formula": "A is THE [ORTTIRMA] [ot] OF all / IN [joy].",
+   "exampleEn": "The giraffe is the tallest animal of all. Chile is the driest place in the world.",
+   "exampleUz": "Jirafa hamma hayvonlardan eng balandi. Chili dunyodagi eng quruq joy.",
+   "explanationUz": "'of all' → OF (guruh)\n'in the world / in the USA' → IN (joy)\nDOIM 'THE' bilan.",
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "formula": "A is NOT AS [ODDIY sifat] AS B.",
+   "exampleEn": "New York is not as clean as Stratford. The chimpanzee is not as big as the elephant.",
+   "exampleUz": "Nyu-York Stratford chalik toza emas. Shimpanze fil chalik katta emas.",
+   "explanationUz": "'as' va 'as' orasiga sifatning ODDIY shakli.\nJavobga IKKALA 'as' ham kiradi.",
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "formula": "A is VERY / QUITE + [ODDIY sifat].",
+   "exampleEn": "This city is very noisy. Joe is quite tall.",
+   "exampleUz": "Bu shahar juda shovqinli. Jo ancha baland bo'yli.",
+   "explanationUz": "QIYOSLASH YO'Q — sifat O'ZGARMAYDI.\n'very noisier' / 'quite taller' XATO.\n5-mashqning 2, 5, 9, 16-bandlari.",
+   "book": "grammar",
+   "bookPage": 53
+  },
+  {
+   "formula": "A has got MORE [ot] THAN B.",
+   "exampleEn": "She has got more toys than her sister.",
+   "exampleUz": "Uning opasidan ko'proq o'yinchog'i bor.",
+   "explanationUz": "'many' / 'much' → MORE (noto'g'ri sifat).\nSanaladigan ot bilan 'many',\nsanalmaydigan ot bilan 'much'.",
+   "book": "grammar",
+   "bookPage": 53
   }
  ],
  "vocabulary": [
@@ -5957,6 +6832,70 @@
   {
    "en": "so ... that",
    "uz": "shunchalik ... ki"
+  },
+  {
+   "en": "tiny",
+   "uz": "juda kichkina"
+  },
+  {
+   "en": "a chimpanzee",
+   "uz": "shimpanze"
+  },
+  {
+   "en": "a lion",
+   "uz": "sher"
+  },
+  {
+   "en": "a cheetah",
+   "uz": "gepard"
+  },
+  {
+   "en": "kind",
+   "uz": "mehribon"
+  },
+  {
+   "en": "a neighbourhood",
+   "uz": "mahalla"
+  },
+  {
+   "en": "a motorcycle",
+   "uz": "mototsikl"
+  },
+  {
+   "en": "an aeroplane",
+   "uz": "samolyot"
+  },
+  {
+   "en": "a flat",
+   "uz": "kvartira"
+  },
+  {
+   "en": "ours",
+   "uz": "bizniki"
+  },
+  {
+   "en": "a dress",
+   "uz": "ko'ylak (ayollar)"
+  },
+  {
+   "en": "Athens",
+   "uz": "Afina (Yunoniston)"
+  },
+  {
+   "en": "the Amazon River",
+   "uz": "Amazonka daryosi"
+  },
+  {
+   "en": "the Mississippi",
+   "uz": "Missisipi daryosi"
+  },
+  {
+   "en": "Chile",
+   "uz": "Chili"
+  },
+  {
+   "en": "Mount McKinley",
+   "uz": "Makkinli tog'i"
   }
  ]
 }
