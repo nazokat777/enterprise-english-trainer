@@ -1,0 +1,75 @@
+{
+  "book": "grammar",
+  "pdfPage": 2,
+  "bookPage": 0,
+  "bookPageLabel": "sarlavha beti",
+  "unit": 800,
+  "unitLabelUz": "Kitob boshi",
+  "unitBadge": "i",
+  "order": 0.1,
+  "unitTitle": "Kitob boshi (muqova, mundarija)",
+  "module": 1,
+  "scanNote": "Bu — SARLAVHA BETI. Bet raqami yo'q, mashq ham yo'q.\n\nMuqovadan farqli o'laroq, bu yerda 'ENTERPRISE' va 'GRAMMAR 1' bitta blokda birlashtirilgan, ranglar esa oltinrang-jigarrang.",
+  "sections": [
+    {
+      "kind": "reference",
+      "title": "Title page",
+      "titleUz": "Sarlavha beti",
+      "exercises": [
+        {
+          "ref": "sarlavha-beti",
+          "type": "explain",
+          "instructionEn": "ENTERPRISE GRAMMAR 1 — Student's Book — Virginia Evans, Jenny Dooley — Express Publishing",
+          "instructionUz": "ENTERPRISE GRAMMATIKA 1 — O'quvchi kitobi",
+          "explanationUz": "BU BET — SARLAVHA BETI (title page).\n\n  Mashq yo'q, bet raqami ham yo'q.\n\n\nBETDAGI MATN:\n\n  ENTERPRISE\n  GRAMMAR 1\n  Student's Book\n\n  Virginia Evans\n  Jenny Dooley\n\n  Express Publishing\n\n\n⚠ MUQOVA BILAN FARQI:\n\n  MUQOVA (1-bet):\n     • ENTERPRISE — yashil, binafsha fonda\n     • GRAMMAR — PUShTI, alohida\n     • yulduz bezagi bor\n\n  SARLAVHA BETI (2-bet):\n     • ENTERPRISE va GRAMMAR 1 BITTA\n       blokda\n     • ranglar oltinrang-jigarrang\n     • bezak YO'Q\n\n  ⚠ Ma'lumot bir xil, faqat bezak\n  soddalashtirilgan.\n\n\n⚠ MUALLIFLAR YOZILIShI:\n\n  MUQOVADA:\n     'Virginia Evans-Jenny Dooley'\n     (bitta qatorda, chiziqcha bilan)\n\n  SARLAVHA BETIDA:\n     'Virginia Evans'\n     'Jenny Dooley'\n     (IKKI qatorda)\n\n  ⚠ Ikkalasi ham to'g'ri — bu shunchaki\n  bezak tanlovi.\n\n\nNEGA SARLAVHA BETI KERAK:\n\n  Muqova yirtilib ketsa yoki kitob qayta\n  muqovalansa, sarlavha beti kitob nomini\n  saqlab qoladi.\n\n  ⚠ Kutubxonalarda kitob aynan SARLAVHA\n  BETI bo'yicha ro'yxatga olinadi.\n\n\nDIQQAT — 'STUDENT'S BOOK' TAKRORLANADI:\n\n  Bu yozuv muqovada ham, sarlavha betida\n  ham bor — chunki bu MUHIM farq\n  (o'quvchi nashri ↔ o'qituvchi nashri).\n\n\nYANGI SO'ZLAR:\n  a title page = sarlavha beti\n  gold        = oltin, oltinrang\n  brown       = jigarrang\n  a decoration = bezak",
+          "bookRef": "Grammar Book, sarlavha beti",
+          "points": [
+            { "en": "ENTERPRISE GRAMMAR 1 — Student's Book", "uz": "ENTERPRISE GRAMMATIKA 1 — O'quvchi kitobi", "noteUz": "⚠ MUQOVADAN FARQI:\nMuqovada 'ENTERPRISE' va 'GRAMMAR' AJRALGAN\n(yashil va pushti);\nsarlavha betida BITTA blokda\n(oltinrang-jigarrang)." },
+            { "en": "Virginia Evans / Jenny Dooley — on two lines here, on one line on the cover", "uz": "Mualliflar bu yerda ikki qatorda, muqovada bir qatorda", "noteUz": "MUQOVADA: 'Virginia Evans-Jenny Dooley'\n(chiziqcha bilan).\nSARLAVHA BETIDA: ikki alohida qatorda.\n\n⚠ Ikkalasi ham to'g'ri — bezak tanlovi." },
+            { "en": "Why a title page? If the cover is torn off, it keeps the book's name.", "uz": "Nega sarlavha beti kerak? Muqova yirtilsa, kitob nomini saqlab qoladi.", "noteUz": "⚠ Kutubxonalarda kitob aynan SARLAVHA BETI\nbo'yicha ro'yxatga olinadi, muqova bo'yicha\nemas." }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Sarlavha betidagi so'zlar.",
+    "groups": [
+      {
+        "ruleUz": "RANGLAR",
+        "explanationUz": "",
+        "items": [
+          { "base": "gold", "baseUz": "oltin, oltinrang", "derived": "golden", "derivedUz": "oltindan (sifat)", "note": "" },
+          { "base": "brown", "baseUz": "jigarrang", "derived": "green / purple / pink", "derivedUz": "yashil / binafsha / pushti", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "KITOBNING QISMLARI",
+        "explanationUz": "",
+        "items": [
+          { "base": "a front cover", "baseUz": "old muqova", "derived": "a title page", "derivedUz": "sarlavha beti", "note": "" },
+          { "base": "a decoration", "baseUz": "bezak", "derived": "to decorate", "derivedUz": "bezamoq", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "",
+    "patterns": [
+      {
+        "formula": "The information is THE SAME, but the design is DIFFERENT.",
+        "exampleEn": "The information on the title page is the same as on the cover, but the design is different.",
+        "exampleUz": "Sarlavha betidagi ma'lumot muqovadagidek, lekin bezagi boshqacha.",
+        "explanationUz": "⚠ 'the same AS' (bilan bir xil) va\n'different FROM' (dan farq qiladi) —\npredloglarga e'tibor bering."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "a title page", "uz": "sarlavha beti" },
+    { "en": "gold", "uz": "oltin, oltinrang" },
+    { "en": "brown", "uz": "jigarrang" },
+    { "en": "a decoration", "uz": "bezak" }
+  ]
+}
