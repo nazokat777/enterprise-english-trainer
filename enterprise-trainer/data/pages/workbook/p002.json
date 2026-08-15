@@ -1,0 +1,79 @@
+{
+  "book": "workbook",
+  "pdfPage": 2,
+  "bookPage": 0,
+  "bookPageLabel": "sarlavha beti",
+  "unit": 800,
+  "unitLabelUz": "Kitob boshi",
+  "unitBadge": "i",
+  "order": 0.1,
+  "unitTitle": "Kitob boshi (muqova, mundarija)",
+  "module": 1,
+  "scanNote": "Bu — SARLAVHA BETI (title page). Bet raqami yo'q, mashq ham yo'q.\n\nOld muqovaning oq-qora, soddalashtirilgan takrori: rasm olib tashlangan, faqat matn qolgan. Har bir kitobda shunday bet bo'ladi.",
+  "sections": [
+    {
+      "kind": "reference",
+      "title": "Title page",
+      "titleUz": "Sarlavha beti",
+      "exercises": [
+        {
+          "ref": "sarlavha-beti",
+          "type": "explain",
+          "instructionEn": "workbook — ENTERPRISE 1 BEGINNER — Virginia Evans, Jenny Dooley — Express Publishing",
+          "instructionUz": "Mashqlar daftari — ENTERPRISE 1, boshlovchilar uchun",
+          "explanationUz": "BU BET — SARLAVHA BETI (title page).\n\n  Mashq yo'q, bet raqami ham yo'q.\n\n\n⚠ MUQOVA va SARLAVHA BETI FARQI:\n\n  OLD MUQOVA (1-bet):\n     • rangli\n     • shamol tegirmoni surati bor\n     • qattiq qog'ozdan\n\n  SARLAVHA BETI (2-bet):\n     • OQ-QORA\n     • rasm YO'Q\n     • oddiy qog'ozdan\n     • faqat matn\n\n  Ikkalasida ham BIR XIL ma'lumot bor:\n     kitob turi, nomi, daraja, mualliflar,\n     nashriyot.\n\n\nNEGA IKKI MARTA YOZILADI:\n\n  Muqova yirtilib ketsa yoki kitob qayta\n  muqovalansa, sarlavha beti kitob nomini\n  saqlab qoladi.\n\n  ⚠ Kutubxonalarda kitob aynan SARLAVHA\n  BETI bo'yicha ro'yxatga olinadi, muqova\n  bo'yicha emas.\n\n\nBETDAGI MATN:\n\n  workbook\n  ENTERPRISE 1\n  BEGINNER\n\n  Virginia Evans\n  Jenny Dooley\n\n  Express Publishing\n\n\nDIQQAT — HARF O'LChAMI MA'NO BERADI:\n\n  Kitobda eng KATTA yozilgan so'z — eng\n  MUHIMI:\n\n     ENTERPRISE 1 — eng katta (kitob nomi)\n     workbook — o'rtacha (kitob turi)\n     BEGINNER — kichikroq (daraja)\n     mualliflar — eng kichik\n\n\nYANGI SO'ZLAR:\n  a title page = sarlavha beti\n  a title     = sarlavha, nom\n  black and white = oq-qora\n  colour      = rangli\n  a library   = kutubxona",
+          "bookRef": "Workbook, sarlavha beti",
+          "points": [
+            { "en": "Title page — the same information as the cover, but in black and white.", "uz": "Sarlavha beti — muqovadagi bir xil ma'lumot, lekin oq-qora.", "noteUz": "⚠ FARQI:\nMUQOVA — rangli, rasmli, qattiq qog'ozdan.\nSARLAVHA BETI — oq-qora, rasmsiz, oddiy\nqog'ozdan." },
+            { "en": "Why twice? If the cover is torn off, the title page keeps the book's name.", "uz": "Nega ikki marta? Muqova yirtilsa, sarlavha beti kitob nomini saqlab qoladi.", "noteUz": "⚠ Kutubxonalarda kitob aynan SARLAVHA BETI\nbo'yicha ro'yxatga olinadi, muqova bo'yicha\nemas." },
+            { "en": "The biggest word is the most important one.", "uz": "Eng katta yozilgan so'z — eng muhimi.", "noteUz": "ENTERPRISE 1 — eng katta (kitob nomi)\nworkbook — o'rtacha (kitob turi)\nBEGINNER — kichikroq (daraja)\nmualliflar — eng kichik" }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Kitob qismlarining nomlari.",
+    "groups": [
+      {
+        "ruleUz": "KITOBNING QISMLARI",
+        "explanationUz": "",
+        "items": [
+          { "base": "a cover", "baseUz": "muqova", "derived": "a front cover / a back cover", "derivedUz": "old / orqa muqova", "note": "" },
+          { "base": "a title page", "baseUz": "sarlavha beti", "derived": "a title", "derivedUz": "sarlavha, nom", "note": "" },
+          { "base": "contents", "baseUz": "mundarija", "derived": "DOIM KO'PLIKDA", "derivedUz": "", "note": "4-bet" },
+          { "base": "a page", "baseUz": "bet", "derived": "a unit", "derivedUz": "bo'lim", "note": "" },
+          { "base": "an author", "baseUz": "muallif", "derived": "a publisher", "derivedUz": "nashriyot", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "RANG HAQIDA",
+        "explanationUz": "",
+        "items": [
+          { "base": "black and white", "baseUz": "oq-qora", "derived": "⚠ tartib TESKARI", "derivedUz": "o'zbekchada 'oq-qora', inglizchada 'black and white'", "note": "⚠" },
+          { "base": "colour (BrE)", "baseUz": "rang", "derived": "color (AmE)", "derivedUz": "", "note": "" }
+        ]
+      }
+    ]
+  },
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "",
+    "patterns": [
+      {
+        "formula": "This book is WRITTEN BY [muallif] and PUBLISHED BY [nashriyot].",
+        "exampleEn": "This book is written by Virginia Evans and Jenny Dooley, and published by Express Publishing.",
+        "exampleUz": "Bu kitobni Virjiniya Evans va Jenni Duli yozgan, Express Publishing nashr qilgan.",
+        "explanationUz": "⚠ MAJHUL nisbat: 'is written BY',\n'is published BY' — ish bajaruvchi 'by'\nbilan."
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "a title page", "uz": "sarlavha beti" },
+    { "en": "a title", "uz": "sarlavha, nom" },
+    { "en": "black and white", "uz": "oq-qora" },
+    { "en": "colour", "uz": "rang" },
+    { "en": "a library", "uz": "kutubxona" }
+  ]
+}
