@@ -5,6 +5,7 @@
   "unit": 2,
   "unitTitle": "A Friend in Need ...",
   "module": 1,
+  "scanNote": "12-BET. Unit 2 'A Friend in Need ...' boshlanishi.\n\nSkaner bilan solishtirildi. Barcha javoblar TO'G'RI:\n- 1-mashq: Alice (jingalak), Mario (to'lqinsimon), Helen (kalta kulrang), Anna (uzun tekis oq-sariq), Pierre (qora), John (mo'ylov), Jack (soqol va mo'ylov).\n- 2-mashq: Helen, Pierre, Anna, Jack, Mario, John.\n- 4-mashqdagi uch e'lonning hamma ma'lumoti (yosh, shahar, soch, ko'z, gavda, qiziqish, qobiliyat, oxirgi jumla) matn bilan aynan mos.\n\n⚠ AUDIO KERAK EMAS: 3-mashqda 'listen and match' deyilgan, lekin to'rttala javob ham shu betdagi bosilgan e'lonlardan chiqadi (kompyuter o'yinlari = Pierre, gitara = Mario, chang'i = Anna, 'Hope to hear from you soon' = Marioning oxirgi jumlasi).\n\n⚠⚠ KITOB XATOSI (terish): 2-e'londa (Anna) 'Please be my E--MAIL pen pal' deb bosilgan — 'e' bilan 'mail' orasida IKKITA tire bor. To'g'risi bitta tire: 'e-mail'. Kesib kattalashtirib tekshirdim.\n\n  ⚠ Xuddi shu jumlada 'I'm  quite short' — 'I'm' bilan 'quite' orasida IKKITA bo'sh joy qolgan.\n\n  ⚠ Solishtirish uchun: 1-e'londa (Pierre) xuddi shu so'z TO'G'RI — 'e-mail me today', bitta tire bilan. Ya'ni xato faqat 2-e'londa.\n\n⚠ BRITANChA/AMERIKAChA NOMUVOFIQLIK: mashq sarlavhasida 'PEN-FRIENDS' (Britaniya varianti), Annaning e'lonida esa 'PEN PAL' (Amerika varianti) ishlatilgan. Ikkalasi ham 'xat orqali do'st' degani, lekin bir betda ikki variant aralashgan. Kitob Britaniya kursi bo'lgani uchun izchillik 'pen-friend' bo'lishi kerak edi.\n\n⚠ FOYDALI TASDIQ: bu yerda ism 'PIERRE' — urg'usiz, TO'G'RI yozilgan. 72-73-betlarda esa xuddi shu ism 'Pièrre' deb noto'g'ri bosilgan. Demak kitobning o'zi izchil emas.",
   "sections": [
     {
       "kind": "lead_in",
@@ -18,7 +19,15 @@
           "instructionUz": "Rasmlarga qarang. Kimda jigarrang jingalak soch bor? Jigarrang to'lqinsimon? Kalta kulrang? Uzun tekis oq-sariq? Qora soch? Mo'ylov? Soqol va mo'ylov?",
           "explanationUz": "SOCH TA'RIFI qat'iy tartibda beriladi:\n  UZUNLIK + SHAKL + RANG + hair\n  'long straight fair hair' — uzun, tekis, oq-sariq soch\n\nDIQQAT: 'Who's got' = 'Who has got' — qisqartma.\nSoch haqida 'have got' ishlatiladi: 'She HAS GOT long hair'.\n\nYuz tuklari 'a' bilan keladi: a moustache (mo'ylov), a beard (soqol).",
           "bookRef": "Coursebook, 12-bet — rasmlar",
-          "options": ["Alice", "Mario", "Helen", "Anna", "Pierre", "John", "Jack"],
+          "options": [
+            "Alice",
+            "Mario",
+            "Helen",
+            "Anna",
+            "Pierre",
+            "John",
+            "Jack"
+          ],
           "answers": [
             {
               "picture": "brown, curly hair",
@@ -70,14 +79,51 @@
           "instructionEn": "Fill in the names of the people in the pictures.",
           "instructionUz": "Rasmlardagi odamlarning ismini yozing.",
           "explanationUz": "Tashqi ko'rinish sifatlari:\n• old — keksa · young — yosh · middle-aged — o'rta yoshli\n• tall — baland bo'yli · short — past bo'yli\n• slim — nozik · well-built — baquvvat · fat — semiz\n\nDIQQAT: 'fat' qo'pol eshitiladi. Odob bilan aytish uchun\n'a bit overweight' yoki 'large' ishlatiladi.\n\n'quite' — ancha, birmuncha: 'quite tall' = ancha baland.",
-          "wordList": ["Helen", "Pierre", "Anna", "Jack", "Mario", "John"],
+          "wordList": [
+            "Helen",
+            "Pierre",
+            "Anna",
+            "Jack",
+            "Mario",
+            "John"
+          ],
           "items": [
-            { "n": 1, "sentence": "___ is old.", "answer": "Helen", "uz": "Helen keksa." },
-            { "n": 2, "sentence": "___ is quite tall and slim.", "answer": "Pierre", "uz": "Pierre ancha baland va nozik." },
-            { "n": 3, "sentence": "___ is short and quite slim.", "answer": "Anna", "uz": "Anna past bo'yli va ancha nozik." },
-            { "n": 4, "sentence": "___ is middle-aged and Pierre is young.", "answer": "Jack", "uz": "Jack o'rta yoshli, Pierre esa yosh." },
-            { "n": 5, "sentence": "___ is well-built.", "answer": "Mario", "uz": "Mario baquvvat." },
-            { "n": 6, "sentence": "___ is fat.", "answer": "John", "uz": "John semiz." }
+            {
+              "n": 1,
+              "sentence": "___ is old.",
+              "answer": "Helen",
+              "uz": "Helen keksa."
+            },
+            {
+              "n": 2,
+              "sentence": "___ is quite tall and slim.",
+              "answer": "Pierre",
+              "uz": "Pierre ancha baland va nozik."
+            },
+            {
+              "n": 3,
+              "sentence": "___ is short and quite slim.",
+              "answer": "Anna",
+              "uz": "Anna past bo'yli va ancha nozik."
+            },
+            {
+              "n": 4,
+              "sentence": "___ is middle-aged and Pierre is young.",
+              "answer": "Jack",
+              "uz": "Jack o'rta yoshli, Pierre esa yosh."
+            },
+            {
+              "n": 5,
+              "sentence": "___ is well-built.",
+              "answer": "Mario",
+              "uz": "Mario baquvvat."
+            },
+            {
+              "n": 6,
+              "sentence": "___ is fat.",
+              "answer": "John",
+              "uz": "John semiz."
+            }
           ]
         },
         {
@@ -223,18 +269,54 @@
             }
           ],
           "boldWords": [
-            { "en": "live", "uz": "yashamoq" },
-            { "en": "brown eyes", "uz": "jigarrang ko'z" },
-            { "en": "green eyes", "uz": "yashil ko'z" },
-            { "en": "quite tall", "uz": "ancha baland" },
-            { "en": "slim", "uz": "nozik" },
-            { "en": "short", "uz": "past bo'yli" },
-            { "en": "very well", "uz": "juda yaxshi" },
-            { "en": "e-mail me", "uz": "menga e-xat yozing" },
-            { "en": "pen pal", "uz": "xat orqali do'st" },
-            { "en": "guitar", "uz": "gitara" },
-            { "en": "dancing", "uz": "raqs" },
-            { "en": "Hope to hear from you", "uz": "Sizdan xabar kutaman" }
+            {
+              "en": "live",
+              "uz": "yashamoq"
+            },
+            {
+              "en": "brown eyes",
+              "uz": "jigarrang ko'z"
+            },
+            {
+              "en": "green eyes",
+              "uz": "yashil ko'z"
+            },
+            {
+              "en": "quite tall",
+              "uz": "ancha baland"
+            },
+            {
+              "en": "slim",
+              "uz": "nozik"
+            },
+            {
+              "en": "short",
+              "uz": "past bo'yli"
+            },
+            {
+              "en": "very well",
+              "uz": "juda yaxshi"
+            },
+            {
+              "en": "e-mail me",
+              "uz": "menga e-xat yozing"
+            },
+            {
+              "en": "pen pal",
+              "uz": "xat orqali do'st"
+            },
+            {
+              "en": "guitar",
+              "uz": "gitara"
+            },
+            {
+              "en": "dancing",
+              "uz": "raqs"
+            },
+            {
+              "en": "Hope to hear from you",
+              "uz": "Sizdan xabar kutaman"
+            }
           ]
         }
       ]
@@ -248,30 +330,102 @@
         "ruleUz": "Qo'shma sifatlar (chiziqcha bilan)",
         "explanationUz": "Ikki so'z birikib bitta sifat yasaydi. Chiziqcha SHART.",
         "items": [
-          { "base": "middle + age", "baseUz": "o'rta + yosh", "derived": "middle-aged", "derivedUz": "o'rta yoshli", "note": "-ed qo'shiladi" },
-          { "base": "well + build", "baseUz": "yaxshi + qurilgan", "derived": "well-built", "derivedUz": "baquvvat", "note": "3-shakl" },
-          { "base": "good + look", "baseUz": "yaxshi + ko'rinish", "derived": "good-looking", "derivedUz": "kelishgan", "note": "-ing" },
-          { "base": "pen + friend", "baseUz": "ruchka + do'st", "derived": "pen-friend / pen pal", "derivedUz": "xat orqali do'st", "note": "ikki xil aytiladi" }
+          {
+            "base": "middle + age",
+            "baseUz": "o'rta + yosh",
+            "derived": "middle-aged",
+            "derivedUz": "o'rta yoshli",
+            "note": "-ed qo'shiladi"
+          },
+          {
+            "base": "well + build",
+            "baseUz": "yaxshi + qurilgan",
+            "derived": "well-built",
+            "derivedUz": "baquvvat",
+            "note": "3-shakl"
+          },
+          {
+            "base": "good + look",
+            "baseUz": "yaxshi + ko'rinish",
+            "derived": "good-looking",
+            "derivedUz": "kelishgan",
+            "note": "-ing"
+          },
+          {
+            "base": "pen + friend",
+            "baseUz": "ruchka + do'st",
+            "derived": "pen-friend / pen pal",
+            "derivedUz": "xat orqali do'st",
+            "note": "ikki xil aytiladi"
+          }
         ]
       },
       {
         "ruleUz": "Fe'l + -ing → mashg'ulot nomi",
         "explanationUz": "'like' va 'love' dan keyin fe'l -ing bilan keladi. Bu shakl mashg'ulot nomi ham bo'ladi.",
         "items": [
-          { "base": "play", "baseUz": "o'ynamoq", "derived": "playing", "derivedUz": "o'ynash", "note": "I like playing" },
-          { "base": "read", "baseUz": "o'qimoq", "derived": "reading", "derivedUz": "o'qish", "note": "I like reading" },
-          { "base": "dance", "baseUz": "raqsga tushmoq", "derived": "dancing", "derivedUz": "raqs", "note": "-e tushadi" },
-          { "base": "ski", "baseUz": "chang'i uchmoq", "derived": "skiing", "derivedUz": "chang'i sporti", "note": "ikkita i" },
-          { "base": "swim", "baseUz": "suzmoq", "derived": "swimming", "derivedUz": "suzish", "note": "m ikkilanadi" }
+          {
+            "base": "play",
+            "baseUz": "o'ynamoq",
+            "derived": "playing",
+            "derivedUz": "o'ynash",
+            "note": "I like playing"
+          },
+          {
+            "base": "read",
+            "baseUz": "o'qimoq",
+            "derived": "reading",
+            "derivedUz": "o'qish",
+            "note": "I like reading"
+          },
+          {
+            "base": "dance",
+            "baseUz": "raqsga tushmoq",
+            "derived": "dancing",
+            "derivedUz": "raqs",
+            "note": "-e tushadi"
+          },
+          {
+            "base": "ski",
+            "baseUz": "chang'i uchmoq",
+            "derived": "skiing",
+            "derivedUz": "chang'i sporti",
+            "note": "ikkita i"
+          },
+          {
+            "base": "swim",
+            "baseUz": "suzmoq",
+            "derived": "swimming",
+            "derivedUz": "suzish",
+            "note": "m ikkilanadi"
+          }
         ]
       },
       {
         "ruleUz": "Mamlakat → millat (bu betdagilar)",
         "explanationUz": "E'lonlardagi shaharlar va mamlakatlar.",
         "items": [
-          { "base": "France", "baseUz": "Fransiya", "derived": "French", "derivedUz": "fransuz", "note": "Paris" },
-          { "base": "Russia", "baseUz": "Rossiya", "derived": "Russian", "derivedUz": "rus", "note": "Moscow" },
-          { "base": "Italy", "baseUz": "Italiya", "derived": "Italian", "derivedUz": "italyan", "note": "Florence" }
+          {
+            "base": "France",
+            "baseUz": "Fransiya",
+            "derived": "French",
+            "derivedUz": "fransuz",
+            "note": "Paris"
+          },
+          {
+            "base": "Russia",
+            "baseUz": "Rossiya",
+            "derived": "Russian",
+            "derivedUz": "rus",
+            "note": "Moscow"
+          },
+          {
+            "base": "Italy",
+            "baseUz": "Italiya",
+            "derived": "Italian",
+            "derivedUz": "italyan",
+            "note": "Florence"
+          }
         ]
       }
     ]
@@ -313,29 +467,101 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "curly", "uz": "jingalak" },
-    { "en": "wavy", "uz": "to'lqinsimon" },
-    { "en": "straight", "uz": "tekis, to'g'ri" },
-    { "en": "fair", "uz": "oq-sariq (soch)" },
-    { "en": "dark", "uz": "qora, to'q" },
-    { "en": "grey", "uz": "kulrang" },
-    { "en": "moustache", "uz": "mo'ylov" },
-    { "en": "beard", "uz": "soqol" },
-    { "en": "old", "uz": "keksa" },
-    { "en": "young", "uz": "yosh" },
-    { "en": "middle-aged", "uz": "o'rta yoshli" },
-    { "en": "tall", "uz": "baland bo'yli" },
-    { "en": "short", "uz": "past bo'yli" },
-    { "en": "slim", "uz": "nozik" },
-    { "en": "well-built", "uz": "baquvvat" },
-    { "en": "fat", "uz": "semiz" },
-    { "en": "quite", "uz": "ancha, birmuncha" },
-    { "en": "advertisement", "uz": "e'lon" },
-    { "en": "pen-friend", "uz": "xat orqali do'st" },
-    { "en": "to live", "uz": "yashamoq" },
-    { "en": "computer game", "uz": "kompyuter o'yini" },
-    { "en": "to ski", "uz": "chang'i uchmoq" },
-    { "en": "piano", "uz": "pianino" },
-    { "en": "Florence", "uz": "Florensiya" }
+    {
+      "en": "curly",
+      "uz": "jingalak"
+    },
+    {
+      "en": "wavy",
+      "uz": "to'lqinsimon"
+    },
+    {
+      "en": "straight",
+      "uz": "tekis, to'g'ri"
+    },
+    {
+      "en": "fair",
+      "uz": "oq-sariq (soch)"
+    },
+    {
+      "en": "dark",
+      "uz": "qora, to'q"
+    },
+    {
+      "en": "grey",
+      "uz": "kulrang"
+    },
+    {
+      "en": "moustache",
+      "uz": "mo'ylov"
+    },
+    {
+      "en": "beard",
+      "uz": "soqol"
+    },
+    {
+      "en": "old",
+      "uz": "keksa"
+    },
+    {
+      "en": "young",
+      "uz": "yosh"
+    },
+    {
+      "en": "middle-aged",
+      "uz": "o'rta yoshli"
+    },
+    {
+      "en": "tall",
+      "uz": "baland bo'yli"
+    },
+    {
+      "en": "short",
+      "uz": "past bo'yli"
+    },
+    {
+      "en": "slim",
+      "uz": "nozik"
+    },
+    {
+      "en": "well-built",
+      "uz": "baquvvat"
+    },
+    {
+      "en": "fat",
+      "uz": "semiz"
+    },
+    {
+      "en": "quite",
+      "uz": "ancha, birmuncha"
+    },
+    {
+      "en": "advertisement",
+      "uz": "e'lon"
+    },
+    {
+      "en": "pen-friend",
+      "uz": "xat orqali do'st"
+    },
+    {
+      "en": "to live",
+      "uz": "yashamoq"
+    },
+    {
+      "en": "computer game",
+      "uz": "kompyuter o'yini"
+    },
+    {
+      "en": "to ski",
+      "uz": "chang'i uchmoq"
+    },
+    {
+      "en": "piano",
+      "uz": "pianino"
+    },
+    {
+      "en": "Florence",
+      "uz": "Florensiya"
+    }
   ]
 }
