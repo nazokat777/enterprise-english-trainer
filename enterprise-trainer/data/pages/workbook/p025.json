@@ -5,6 +5,7 @@
   "unit": 6,
   "unitTitle": "Birds of a Feather!",
   "module": 2,
+  "scanNote": "WORKBOOK 24-BET. Unit 6 'Birds of a Feather...' — lug'at.\n\n4b-mashqda 11 ta raqamlangan surat bor. Hammasi skaner bilan tekshirildi va TO'G'RI:\n  1 crocodile, 2 duck, 3 dolphin, 4 penguin, 5 ladybird, 6 parrot, 7 fly, 8 snake, 9 butterfly, 10 cow, 11 lion.\n\nQolgan mashqlar ham TO'G'RI:\n  1-mashq: fins, a mane, a long tail, skin, legs, claws, whiskers, a trunk.\n  2-mashq: eggs, warm, have, seas, black, play, feathers, claws, funny, smile.\n  3-mashq: live, strong, weigh, feed, easily, friendly, groups, world, kittens/puppies.\n  4a: 1=c insects, 2=d mammals, 3=a reptiles, 4=b birds.\n\n⚠ QIZIQ ZIDDIYAT: 4a-mashqning 1-ta'rifida hasharotlar 'usually TWO PAIRS of wings' (odatda ikki juft qanot) deyilgan. Lekin 4b-mashqning 7-rasmidagi PAShShA (a fly) — atigi BIR juft qanotli! Pashshalar turkumi lotincha 'Diptera' deb ataladi, ya'ni 'ikki qanotli'. Kitob 'usually' (odatda) so'zini shuning uchun qo'ygan.\n\n⚠ 'LADYBIRD' — BRITANChA so'z (5-rasm). Amerikachada 'a ladybug'. Kitob britancha variantni ishlatgan.\n\n⚠ 3-mashqning 9-bandida IKKITA bo'shliq bor: 'Cats have KITTENS and dogs have PUPPIES.' Bolalarning nomi alohida so'z bo'ladi: cat→kitten, dog→puppy, cow→calf, horse→foal.",
   "sections": [
     {
       "kind": "vocabulary",
@@ -19,14 +20,86 @@
           "explanationUz": "Har bir hayvonda QAYSI tana qismi borligini eslang.\n\n  fins ....... suzgichlar (baliq, delfin)\n  feet ....... oyoq kaftlari\n  feathers ... patlar (faqat qushlarda)\n  a mane ..... yol (sher, ot)\n  a beak ..... tumshuq (faqat qushlarda)\n  a tail ..... dum\n  skin ....... teri (junsiz)\n  fur ........ jun\n  legs ....... oyoqlar\n  ears ....... quloqlar\n  paws ....... panjalar (mushuksimon, it)\n  claws ...... tirnoqlar (yirtqich qush, mushuksimon)\n  wings ...... qanotlar\n  whiskers ... mo'ylovlar (mushuk, yo'lbars)\n  arms ....... qo'llar (odam, maymun)\n  a trunk .... xartum (faqat filda)",
           "bookRef": "Workbook, 24-bet, 1-mashq",
           "items": [
-            { "textEn": "1  Dolphins have got ............ .", "uz": "Delfinlarda ... bor.", "options": ["fins", "feet"], "answer": "fins", "whyUz": "Delfin suvda yashaydi → SUZGICHLARI bor. Oyog'i YO'Q (Coursebook 40-bet)." },
-            { "textEn": "2  Lions have got ............ .", "uz": "Sherlarda ... bor.", "options": ["a mane", "feathers"], "answer": "a mane", "whyUz": "Sher — sutemizuvchi, pati bo'lmaydi. Erkak sherda YOL (a mane) bor." },
-            { "textEn": "3  Mice have got ............ .", "uz": "Sichqonlarda ... bor.", "options": ["a long tail", "a beak"], "answer": "a long tail", "whyUz": "Sichqon — sutemizuvchi, tumshug'i (beak) yo'q. UZUN DUMI bor.\n'mice' — 'mouse' ning ko'pligi." },
-            { "textEn": "4  Sharks have got grey ............ .", "uz": "Akulalarda kulrang ... bor.", "options": ["skin", "fur"], "answer": "skin", "whyUz": "Akula — baliq, juni yo'q. Kulrang TERISI bor (delfin kabi).\n'a shark' = akula." },
-            { "textEn": "5  Camels have got long ............ .", "uz": "Tuyalarda uzun ... bor.", "options": ["legs", "ears"], "answer": "legs", "whyUz": "Tuyaning uzun OYOQLARI bor — cho'lda yurish uchun.\nQuloqlari esa kichkina. 'a camel' = tuya." },
-            { "textEn": "6  Eagles have got sharp ............ .", "uz": "Burgutlarda o'tkir ... bor.", "options": ["claws", "paws"], "answer": "claws", "whyUz": "Burgut — qush. Qushda 'paws' (panja) BO'LMAYDI, 'claws' (tirnoq) bo'ladi.\nCoursebook 41-betda 'sharp claws' berilgan edi." },
-            { "textEn": "7  Cats have got ............ .", "uz": "Mushuklarda ... bor.", "options": ["whiskers", "wings"], "answer": "whiskers", "whyUz": "Mushuk ucha olmaydi — qanoti yo'q. MO'YLOVLARI bor (yo'lbars kabi)." },
-            { "textEn": "8  Elephants have got ............ .", "uz": "Fillarda ... bor.", "options": ["a trunk", "arms"], "answer": "a trunk", "whyUz": "Filda qo'l yo'q — XARTUM (a trunk) bor. U qo'l vazifasini bajaradi.\nCoursebook 43-betda: 'How long is its trunk?'" }
+            {
+              "textEn": "1  Dolphins have got ............ .",
+              "uz": "Delfinlarda ... bor.",
+              "options": [
+                "fins",
+                "feet"
+              ],
+              "answer": "fins",
+              "whyUz": "Delfin suvda yashaydi → SUZGICHLARI bor. Oyog'i YO'Q (Coursebook 40-bet)."
+            },
+            {
+              "textEn": "2  Lions have got ............ .",
+              "uz": "Sherlarda ... bor.",
+              "options": [
+                "a mane",
+                "feathers"
+              ],
+              "answer": "a mane",
+              "whyUz": "Sher — sutemizuvchi, pati bo'lmaydi. Erkak sherda YOL (a mane) bor."
+            },
+            {
+              "textEn": "3  Mice have got ............ .",
+              "uz": "Sichqonlarda ... bor.",
+              "options": [
+                "a long tail",
+                "a beak"
+              ],
+              "answer": "a long tail",
+              "whyUz": "Sichqon — sutemizuvchi, tumshug'i (beak) yo'q. UZUN DUMI bor.\n'mice' — 'mouse' ning ko'pligi."
+            },
+            {
+              "textEn": "4  Sharks have got grey ............ .",
+              "uz": "Akulalarda kulrang ... bor.",
+              "options": [
+                "skin",
+                "fur"
+              ],
+              "answer": "skin",
+              "whyUz": "Akula — baliq, juni yo'q. Kulrang TERISI bor (delfin kabi).\n'a shark' = akula."
+            },
+            {
+              "textEn": "5  Camels have got long ............ .",
+              "uz": "Tuyalarda uzun ... bor.",
+              "options": [
+                "legs",
+                "ears"
+              ],
+              "answer": "legs",
+              "whyUz": "Tuyaning uzun OYOQLARI bor — cho'lda yurish uchun.\nQuloqlari esa kichkina. 'a camel' = tuya."
+            },
+            {
+              "textEn": "6  Eagles have got sharp ............ .",
+              "uz": "Burgutlarda o'tkir ... bor.",
+              "options": [
+                "claws",
+                "paws"
+              ],
+              "answer": "claws",
+              "whyUz": "Burgut — qush. Qushda 'paws' (panja) BO'LMAYDI, 'claws' (tirnoq) bo'ladi.\nCoursebook 41-betda 'sharp claws' berilgan edi."
+            },
+            {
+              "textEn": "7  Cats have got ............ .",
+              "uz": "Mushuklarda ... bor.",
+              "options": [
+                "whiskers",
+                "wings"
+              ],
+              "answer": "whiskers",
+              "whyUz": "Mushuk ucha olmaydi — qanoti yo'q. MO'YLOVLARI bor (yo'lbars kabi)."
+            },
+            {
+              "textEn": "8  Elephants have got ............ .",
+              "uz": "Fillarda ... bor.",
+              "options": [
+                "a trunk",
+                "arms"
+              ],
+              "answer": "a trunk",
+              "whyUz": "Filda qo'l yo'q — XARTUM (a trunk) bor. U qo'l vazifasini bajaradi.\nCoursebook 43-betda: 'How long is its trunk?'"
+            }
           ]
         },
         {
@@ -36,18 +109,79 @@
           "instructionUz": "Ro'yxatdan to'g'ri so'zni qo'ying.",
           "explanationUz": "RO'YXAT: warm, seas, play, claws, smile, eggs, have,\n         black, feathers, funny\n\nBarcha gaplar Coursebook 40–42-betlardagi matnlardan olingan.\n\nQAYSI SO'Z QAYERGA — MANTIQ:\n  'lay ......'         → tuxum (eggs)\n  'to keep them .....' → issiq (warm)\n  '..... babies'       → fe'l kerak (have)\n  'live in warm .....' → dengizlar (seas)\n  '..... and white'    → rang (black)\n  'learn how to .....' → fe'l (play)\n  'thick .....'        → patlar (feathers)\n  'very sharp .....'   → tirnoqlar (claws)\n  'look .....'         → sifat (funny)\n  'a big .....'        → tabassum (smile)",
           "bookRef": "Workbook, 24-bet, 2-mashq",
-          "wordList": ["warm", "seas", "play", "claws", "smile", "eggs", "have", "black", "feathers", "funny"],
+          "wordList": [
+            "warm",
+            "seas",
+            "play",
+            "claws",
+            "smile",
+            "eggs",
+            "have",
+            "black",
+            "feathers",
+            "funny"
+          ],
           "items": [
-            { "textEn": "1  Birds and reptiles both lay ............ .", "answer": "eggs", "hintUz": "'lay' fe'li bilan keladigan so'z", "whyUz": "'lay eggs' = tuxum qo'ymoq — o'zgarmas birikma (Coursebook 40-bet).\n'both' = ikkalasi ham." },
-            { "textEn": "2  Grey seals have got thick fur to keep them ............ .", "answer": "warm", "hintUz": "'keep them ...' — issiqlik haqida", "whyUz": "'keep somebody warm' = issiq saqlamoq (Coursebook 40-betdagi pingvin matni).\n'a seal' = tyulen." },
-            { "textEn": "3  Mammals ............ babies and feed their young on milk.", "answer": "have", "hintUz": "Fe'l kerak — bola tug'moq", "whyUz": "'have babies' = bola tug'moq. Ko'plik ega → HAVE ('has' XATO)." },
-            { "textEn": "4  Sharks live in warm ............ .", "answer": "seas", "hintUz": "Suv havzasi (ko'plikda)", "whyUz": "'in warm seas' = iliq dengizlarda (Coursebook 40-betdagi delfin matni).\n'sea' → ko'plikda 'seas'." },
-            { "textEn": "5  Zebras have got ............ and white stripes.", "answer": "black", "hintUz": "'white' bilan juft rang", "whyUz": "Zebra QORA va oq chiziqli (Coursebook 44-betdagi D rasm).\n'black and white' — tartib o'zgarmaydi." },
-            { "textEn": "6  Dolphins can easily learn how to ............ games.", "answer": "play", "hintUz": "'games' bilan keladigan fe'l", "whyUz": "'play games' = o'yin o'ynamoq (Coursebook 40-betdagi delfin matni).\n'how to' dan keyin fe'l ASOS shaklida." },
-            { "textEn": "7  Penguins have got thick ............ .", "answer": "feathers", "hintUz": "Qushni qoplab turadigan narsa", "whyUz": "'thick feathers' = qalin patlar (Coursebook 40-betdagi pingvin matni)." },
-            { "textEn": "8  Koalas have got very sharp ............ .", "answer": "claws", "hintUz": "Daraxtga chiqish uchun kerak", "whyUz": "'sharp claws' = o'tkir tirnoqlar (Coursebook 42-betdagi koala matni)." },
-            { "textEn": "9  Penguins look ............ when they walk.", "answer": "funny", "hintUz": "'look' dan keyin SIFAT keladi", "whyUz": "'look funny' = kulgili ko'rinmoq (Coursebook 40-betdagi pingvin matni)." },
-            { "textEn": "10  Dolphins have got a big ............ .", "answer": "smile", "hintUz": "'a big ...' — yuzdagi ifoda", "whyUz": "'a big smile' = katta tabassum (Coursebook 40-betdagi delfin matni)." }
+            {
+              "textEn": "1  Birds and reptiles both lay ............ .",
+              "answer": "eggs",
+              "hintUz": "'lay' fe'li bilan keladigan so'z",
+              "whyUz": "'lay eggs' = tuxum qo'ymoq — o'zgarmas birikma (Coursebook 40-bet).\n'both' = ikkalasi ham."
+            },
+            {
+              "textEn": "2  Grey seals have got thick fur to keep them ............ .",
+              "answer": "warm",
+              "hintUz": "'keep them ...' — issiqlik haqida",
+              "whyUz": "'keep somebody warm' = issiq saqlamoq (Coursebook 40-betdagi pingvin matni).\n'a seal' = tyulen."
+            },
+            {
+              "textEn": "3  Mammals ............ babies and feed their young on milk.",
+              "answer": "have",
+              "hintUz": "Fe'l kerak — bola tug'moq",
+              "whyUz": "'have babies' = bola tug'moq. Ko'plik ega → HAVE ('has' XATO)."
+            },
+            {
+              "textEn": "4  Sharks live in warm ............ .",
+              "answer": "seas",
+              "hintUz": "Suv havzasi (ko'plikda)",
+              "whyUz": "'in warm seas' = iliq dengizlarda (Coursebook 40-betdagi delfin matni).\n'sea' → ko'plikda 'seas'."
+            },
+            {
+              "textEn": "5  Zebras have got ............ and white stripes.",
+              "answer": "black",
+              "hintUz": "'white' bilan juft rang",
+              "whyUz": "Zebra QORA va oq chiziqli (Coursebook 44-betdagi D rasm).\n'black and white' — tartib o'zgarmaydi."
+            },
+            {
+              "textEn": "6  Dolphins can easily learn how to ............ games.",
+              "answer": "play",
+              "hintUz": "'games' bilan keladigan fe'l",
+              "whyUz": "'play games' = o'yin o'ynamoq (Coursebook 40-betdagi delfin matni).\n'how to' dan keyin fe'l ASOS shaklida."
+            },
+            {
+              "textEn": "7  Penguins have got thick ............ .",
+              "answer": "feathers",
+              "hintUz": "Qushni qoplab turadigan narsa",
+              "whyUz": "'thick feathers' = qalin patlar (Coursebook 40-betdagi pingvin matni)."
+            },
+            {
+              "textEn": "8  Koalas have got very sharp ............ .",
+              "answer": "claws",
+              "hintUz": "Daraxtga chiqish uchun kerak",
+              "whyUz": "'sharp claws' = o'tkir tirnoqlar (Coursebook 42-betdagi koala matni)."
+            },
+            {
+              "textEn": "9  Penguins look ............ when they walk.",
+              "answer": "funny",
+              "hintUz": "'look' dan keyin SIFAT keladi",
+              "whyUz": "'look funny' = kulgili ko'rinmoq (Coursebook 40-betdagi pingvin matni)."
+            },
+            {
+              "textEn": "10  Dolphins have got a big ............ .",
+              "answer": "smile",
+              "hintUz": "'a big ...' — yuzdagi ifoda",
+              "whyUz": "'a big smile' = katta tabassum (Coursebook 40-betdagi delfin matni)."
+            }
           ]
         },
         {
@@ -57,17 +191,76 @@
           "instructionUz": "Quyidagi ro'yxatdagi so'zlar bilan bo'shliqlarni to'ldiring.",
           "explanationUz": "RO'YXAT: kittens, feed, friendly, live, weigh, puppies,\n         groups, strong, easily, world\n\nDIQQAT — 9-band IKKI bo'shliqli:\n  'Cats have ...... and dogs have ...... .'\n  Mushukning bolasi va itning bolasi (Coursebook 42-bet).",
           "bookRef": "Workbook, 24-bet, 3-mashq",
-          "wordList": ["kittens", "feed", "friendly", "live", "weigh", "puppies", "groups", "strong", "easily", "world"],
+          "wordList": [
+            "kittens",
+            "feed",
+            "friendly",
+            "live",
+            "weigh",
+            "puppies",
+            "groups",
+            "strong",
+            "easily",
+            "world"
+          ],
           "items": [
-            { "textEn": "1  Fish ............ in water.", "answer": "live", "hintUz": "Yashash fe'li", "whyUz": "'live IN water'. 'fish' ko'plikda ham 'fish' → fe'lga -s QO'SHILMAYDI." },
-            { "textEn": "2  Kangaroos have got ............ back legs.", "answer": "strong", "hintUz": "Sakrash uchun kerak bo'lgan sifat", "whyUz": "'strong back legs' = kuchli orqa oyoqlar (Coursebook 43-betdagi kenguru matni)." },
-            { "textEn": "3  Penguins ............ about twenty kilos.", "answer": "weigh", "hintUz": "Kilogramm bilan keladigan fe'l", "whyUz": "'weigh about twenty kilos' (Coursebook 40-bet).\nDIQQAT: 'are weigh' XATO — 'be' ishlatilmaydi." },
-            { "textEn": "4  Mammals ............ their young on milk.", "answer": "feed", "hintUz": "'on milk' bilan keladigan fe'l", "whyUz": "'feed somebody ON milk' = sut bilan boqmoq.\n'young' bu yerda OT — hayvonning bolasi." },
-            { "textEn": "5  Parrots can learn how to talk ............ .", "answer": "easily", "hintUz": "Ravish — 'oson'", "whyUz": "'easily' = osonlik bilan (Coursebook 40-bet: 'can easily learn').\nBu RAVISH, chunki fe'lni ('talk') tavsiflaydi." },
-            { "textEn": "6  Dogs are ............ to people.", "answer": "friendly", "hintUz": "'to people' bilan keladigan sifat", "whyUz": "'friendly TO somebody' = kimgadir do'stona (Coursebook 40-bet).\n'are' dan keyin SIFAT keladi." },
-            { "textEn": "7  Dolphins live in small ............ .", "answer": "groups", "hintUz": "Birga yashash birligi", "whyUz": "'live in small groups' = kichik guruhlarda (Coursebook 40-bet)." },
-            { "textEn": "8  Snakes live in many different parts of the ............ .", "answer": "world", "hintUz": "'parts of the ...' iborasi", "whyUz": "'parts of the world' = dunyo qismlari (Coursebook 40-bet).\nDIQQAT: 'the' shart — the world." },
-            { "textEn": "9  Cats have ............ and dogs have ............ .", "answers": ["kittens", "puppies"], "hintUz": "Ikki hayvonning bolalari (Coursebook 42-bet)", "whyUz": "Mushukning bolasi — KITTENS, itning bolasi — PUPPIES.\nHar birining alohida so'zi bor (Coursebook 42-betdagi 10-mashq)." }
+            {
+              "textEn": "1  Fish ............ in water.",
+              "answer": "live",
+              "hintUz": "Yashash fe'li",
+              "whyUz": "'live IN water'. 'fish' ko'plikda ham 'fish' → fe'lga -s QO'SHILMAYDI."
+            },
+            {
+              "textEn": "2  Kangaroos have got ............ back legs.",
+              "answer": "strong",
+              "hintUz": "Sakrash uchun kerak bo'lgan sifat",
+              "whyUz": "'strong back legs' = kuchli orqa oyoqlar (Coursebook 43-betdagi kenguru matni)."
+            },
+            {
+              "textEn": "3  Penguins ............ about twenty kilos.",
+              "answer": "weigh",
+              "hintUz": "Kilogramm bilan keladigan fe'l",
+              "whyUz": "'weigh about twenty kilos' (Coursebook 40-bet).\nDIQQAT: 'are weigh' XATO — 'be' ishlatilmaydi."
+            },
+            {
+              "textEn": "4  Mammals ............ their young on milk.",
+              "answer": "feed",
+              "hintUz": "'on milk' bilan keladigan fe'l",
+              "whyUz": "'feed somebody ON milk' = sut bilan boqmoq.\n'young' bu yerda OT — hayvonning bolasi."
+            },
+            {
+              "textEn": "5  Parrots can learn how to talk ............ .",
+              "answer": "easily",
+              "hintUz": "Ravish — 'oson'",
+              "whyUz": "'easily' = osonlik bilan (Coursebook 40-bet: 'can easily learn').\nBu RAVISH, chunki fe'lni ('talk') tavsiflaydi."
+            },
+            {
+              "textEn": "6  Dogs are ............ to people.",
+              "answer": "friendly",
+              "hintUz": "'to people' bilan keladigan sifat",
+              "whyUz": "'friendly TO somebody' = kimgadir do'stona (Coursebook 40-bet).\n'are' dan keyin SIFAT keladi."
+            },
+            {
+              "textEn": "7  Dolphins live in small ............ .",
+              "answer": "groups",
+              "hintUz": "Birga yashash birligi",
+              "whyUz": "'live in small groups' = kichik guruhlarda (Coursebook 40-bet)."
+            },
+            {
+              "textEn": "8  Snakes live in many different parts of the ............ .",
+              "answer": "world",
+              "hintUz": "'parts of the ...' iborasi",
+              "whyUz": "'parts of the world' = dunyo qismlari (Coursebook 40-bet).\nDIQQAT: 'the' shart — the world."
+            },
+            {
+              "textEn": "9  Cats have ............ and dogs have ............ .",
+              "answers": [
+                "kittens",
+                "puppies"
+              ],
+              "hintUz": "Ikki hayvonning bolalari (Coursebook 42-bet)",
+              "whyUz": "Mushukning bolasi — KITTENS, itning bolasi — PUPPIES.\nHar birining alohida so'zi bor (Coursebook 42-betdagi 10-mashq)."
+            }
           ]
         }
       ]
@@ -82,13 +275,37 @@
           "type": "match",
           "instructionEn": "Match the definitions with the correct kind of animal.",
           "instructionUz": "Ta'riflarni to'g'ri hayvon turiga moslang.",
-          "explanationUz": "TO'RT GURUH VA ULARNING BELGILARI:\n\n  insects (hasharotlar)\n     kichik jonzot, OLTI oyoq, odatda ikki juft qanot\n     misol: kapalak, chivin, xonqizi\n\n  mammals (sutemizuvchilar)\n     bola tug'adi, sut bilan boqadi\n     misol: delfin, sher, sigir, koala\n\n  reptiles (sudralib yuruvchilar)\n     qanoti yo'q, tuxum qo'yadi, ba'zilari xavfli\n     misol: ilon, timsoh, kaltakesak\n\n  birds (qushlar)\n     pat, IKKI qanot, IKKI oyoq; tuxum qo'yadi, ucha oladi\n     misol: to'tiqush, o'rdak, burgut\n     (pingvin — istisno: ucha olmaydi)",
+          "explanationUz": "TO'RT GURUH VA ULARNING BELGILARI:\n\n  insects (hasharotlar)\n     kichik jonzot, OLTI oyoq, odatda ikki juft qanot\n     misol: kapalak, chivin, xonqizi\n\n  mammals (sutemizuvchilar)\n     bola tug'adi, sut bilan boqadi\n     misol: delfin, sher, sigir, koala\n\n  reptiles (sudralib yuruvchilar)\n     qanoti yo'q, tuxum qo'yadi, ba'zilari xavfli\n     misol: ilon, timsoh, kaltakesak\n\n  birds (qushlar)\n     pat, IKKI qanot, IKKI oyoq; tuxum qo'yadi, ucha oladi\n     misol: to'tiqush, o'rdak, burgut\n     (pingvin — istisno: ucha olmaydi)\n\n⚠ QIZIQ ZIDDIYAT — PAShShA:\n\n  1-ta'rifda hasharotlar 'usually TWO\n  PAIRS of wings' (odatda IKKI JUFT\n  qanot) deyilgan.\n\n  ⚠ Lekin 4b-mashqning 7-rasmidagi\n  PAShShA (a fly) — atigi BIR JUFT\n  qanotli!\n\n  ⚠ Pashshalar turkumi lotincha\n  'DIPTERA' deb ataladi — 'ikki\n  qanotli' degani.\n\n  ⚠ Kitob 'USUALLY' (odatda) so'zini\n  aynan shuning uchun qo'ygan: qoida\n  hamma hasharotga to'g'ri kelmaydi.",
           "bookRef": "Workbook, 24-bet, 4a-mashq",
           "pairs": [
-            { "left": "1  They are small creatures. They have got six legs and usually two pairs of wings.", "right": "c  insects", "leftUz": "Ular kichik jonzotlar. Oltita oyog'i va odatda ikki juft qanoti bor.", "rightUz": "hasharotlar", "whyUz": "OLTI OYOQ — hasharotning eng aniq belgisi.\n'a creature' = jonzot. 'a pair' = juft." },
-            { "left": "2  They have babies and they feed their young on milk.", "right": "d  mammals", "leftUz": "Ular bola tug'adi va bolalarini sut bilan boqadi.", "rightUz": "sutemizuvchilar", "whyUz": "SUT BILAN BOQISH — sutemizuvchining ta'rifi." },
-            { "left": "3  They haven't got wings. They lay eggs. Some of them are dangerous.", "right": "a  reptiles", "leftUz": "Ularning qanoti yo'q. Tuxum qo'yadi. Ba'zilari xavfli.", "rightUz": "sudralib yuruvchilar", "whyUz": "Qanot YO'Q + tuxum qo'yadi + ba'zilari xavfli (zaharli ilon, timsoh).\n'dangerous' = xavfli." },
-            { "left": "4  They have got feathers, two wings and two legs. They lay eggs and they can fly.", "right": "b  birds", "leftUz": "Ularning pati, ikkita qanoti va ikkita oyog'i bor. Tuxum qo'yadi va ucha oladi.", "rightUz": "qushlar", "whyUz": "PAT — faqat qushlarda. Hasharotda ham qanot bor, lekin pat yo'q va oyog'i olti." }
+            {
+              "left": "1  They are small creatures. They have got six legs and usually two pairs of wings.",
+              "right": "c  insects",
+              "leftUz": "Ular kichik jonzotlar. Oltita oyog'i va odatda ikki juft qanoti bor.",
+              "rightUz": "hasharotlar",
+              "whyUz": "OLTI OYOQ — hasharotning eng aniq belgisi.\n'a creature' = jonzot. 'a pair' = juft."
+            },
+            {
+              "left": "2  They have babies and they feed their young on milk.",
+              "right": "d  mammals",
+              "leftUz": "Ular bola tug'adi va bolalarini sut bilan boqadi.",
+              "rightUz": "sutemizuvchilar",
+              "whyUz": "SUT BILAN BOQISH — sutemizuvchining ta'rifi."
+            },
+            {
+              "left": "3  They haven't got wings. They lay eggs. Some of them are dangerous.",
+              "right": "a  reptiles",
+              "leftUz": "Ularning qanoti yo'q. Tuxum qo'yadi. Ba'zilari xavfli.",
+              "rightUz": "sudralib yuruvchilar",
+              "whyUz": "Qanot YO'Q + tuxum qo'yadi + ba'zilari xavfli (zaharli ilon, timsoh).\n'dangerous' = xavfli."
+            },
+            {
+              "left": "4  They have got feathers, two wings and two legs. They lay eggs and they can fly.",
+              "right": "b  birds",
+              "leftUz": "Ularning pati, ikkita qanoti va ikkita oyog'i bor. Tuxum qo'yadi va ucha oladi.",
+              "rightUz": "qushlar",
+              "whyUz": "PAT — faqat qushlarda. Hasharotda ham qanot bor, lekin pat yo'q va oyog'i olti."
+            }
           ]
         },
         {
@@ -98,19 +315,86 @@
           "instructionUz": "Quyidagi so'zlar bilan hayvonlarni belgilang.",
           "explanationUz": "SO'ZLAR: dolphin, snake, penguin, cow, butterfly, parrot,\n         lion, fly, duck, crocodile, ladybird\n\nYANGI SO'ZLAR:\n  a fly ....... chivin, pashsha (hasharot)\n  a ladybird .. xonqizi (qizil, qora nuqtali hasharot)\n  a duck ...... o'rdak\n\nDIQQAT: 'a fly' (pashsha — OT) va 'to fly' (uchmoq — FE'L)\nbir xil yoziladi, lekin turli so'z turkumi.",
           "bookRef": "Workbook, 24-bet, 4b-mashq",
-          "options": ["dolphin", "snake", "penguin", "cow", "butterfly", "parrot", "lion", "fly", "duck", "crocodile", "ladybird"],
+          "options": [
+            "dolphin",
+            "snake",
+            "penguin",
+            "cow",
+            "butterfly",
+            "parrot",
+            "lion",
+            "fly",
+            "duck",
+            "crocodile",
+            "ladybird"
+          ],
           "answers": [
-            { "picture": "1", "country": "crocodile", "descEn": "Picture 1 — a large reptile lying on the ground with a long body and short legs", "descUz": "1-rasm: yerda yotgan, uzun tanali va kalta oyoqli yirik sudralib yuruvchi" },
-            { "picture": "2", "country": "duck", "descEn": "Picture 2 — a water bird with a dark head swimming on the water", "descUz": "2-rasm: suvda suzayotgan, to'q rangli boshli suv qushi" },
-            { "picture": "3", "country": "dolphin", "descEn": "Picture 3 — a grey sea mammal with a long nose and a smiling mouth", "descUz": "3-rasm: uzun tumshuqli va tabassumli og'izli kulrang dengiz sutemizuvchisi" },
-            { "picture": "4", "country": "penguin", "descEn": "Picture 4 — a black and white bird standing upright on a rock", "descUz": "4-rasm: tosh ustida tik turgan qora-oq qush" },
-            { "picture": "5", "country": "ladybird", "descEn": "Picture 5 — a small round insect with spots on its back", "descUz": "5-rasm: orqasida nuqtalari bor kichik dumaloq hasharot" },
-            { "picture": "6", "country": "parrot", "descEn": "Picture 6 — a bird with a curved beak and a very long tail sitting on a branch", "descUz": "6-rasm: egri tumshuqli va juda uzun dumli, shoxda o'tirgan qush" },
-            { "picture": "7", "country": "fly", "descEn": "Picture 7 — a small insect with two transparent wings and big eyes", "descUz": "7-rasm: ikkita shaffof qanotli va katta ko'zli kichik hasharot" },
-            { "picture": "8", "country": "snake", "descEn": "Picture 8 — a long reptile with no legs, lying in a curve", "descUz": "8-rasm: oyog'i yo'q, egilib yotgan uzun sudralib yuruvchi" },
-            { "picture": "9", "country": "butterfly", "descEn": "Picture 9 — an insect with four large patterned wings", "descUz": "9-rasm: to'rtta katta naqshli qanotli hasharot" },
-            { "picture": "10", "country": "cow", "descEn": "Picture 10 — a large black and white farm animal that gives milk", "descUz": "10-rasm: sut beradigan katta qora-oq uy hayvoni" },
-            { "picture": "11", "country": "lion", "descEn": "Picture 11 — a large golden cat with a dark mane around its head", "descUz": "11-rasm: boshi atrofida to'q rangli yeli bor katta oltinrang mushuksimon hayvon" }
+            {
+              "picture": "1",
+              "country": "crocodile",
+              "descEn": "Picture 1 — a large reptile lying on the ground with a long body and short legs",
+              "descUz": "1-rasm: yerda yotgan, uzun tanali va kalta oyoqli yirik sudralib yuruvchi"
+            },
+            {
+              "picture": "2",
+              "country": "duck",
+              "descEn": "Picture 2 — a water bird with a dark head swimming on the water",
+              "descUz": "2-rasm: suvda suzayotgan, to'q rangli boshli suv qushi"
+            },
+            {
+              "picture": "3",
+              "country": "dolphin",
+              "descEn": "Picture 3 — a grey sea mammal with a long nose and a smiling mouth",
+              "descUz": "3-rasm: uzun tumshuqli va tabassumli og'izli kulrang dengiz sutemizuvchisi"
+            },
+            {
+              "picture": "4",
+              "country": "penguin",
+              "descEn": "Picture 4 — a black and white bird standing upright on a rock",
+              "descUz": "4-rasm: tosh ustida tik turgan qora-oq qush"
+            },
+            {
+              "picture": "5",
+              "country": "ladybird",
+              "descEn": "Picture 5 — a small round insect with spots on its back",
+              "descUz": "5-rasm: orqasida nuqtalari bor kichik dumaloq hasharot"
+            },
+            {
+              "picture": "6",
+              "country": "parrot",
+              "descEn": "Picture 6 — a bird with a curved beak and a very long tail sitting on a branch",
+              "descUz": "6-rasm: egri tumshuqli va juda uzun dumli, shoxda o'tirgan qush"
+            },
+            {
+              "picture": "7",
+              "country": "fly",
+              "descEn": "Picture 7 — a small insect with two transparent wings and big eyes",
+              "descUz": "7-rasm: ikkita shaffof qanotli va katta ko'zli kichik hasharot"
+            },
+            {
+              "picture": "8",
+              "country": "snake",
+              "descEn": "Picture 8 — a long reptile with no legs, lying in a curve",
+              "descUz": "8-rasm: oyog'i yo'q, egilib yotgan uzun sudralib yuruvchi"
+            },
+            {
+              "picture": "9",
+              "country": "butterfly",
+              "descEn": "Picture 9 — an insect with four large patterned wings",
+              "descUz": "9-rasm: to'rtta katta naqshli qanotli hasharot"
+            },
+            {
+              "picture": "10",
+              "country": "cow",
+              "descEn": "Picture 10 — a large black and white farm animal that gives milk",
+              "descUz": "10-rasm: sut beradigan katta qora-oq uy hayvoni"
+            },
+            {
+              "picture": "11",
+              "country": "lion",
+              "descEn": "Picture 11 — a large golden cat with a dark mane around its head",
+              "descUz": "11-rasm: boshi atrofida to'q rangli yeli bor katta oltinrang mushuksimon hayvon"
+            }
           ]
         }
       ]
@@ -124,42 +408,150 @@
         "ruleUz": "Bir xil yoziladi, turli so'z turkumi",
         "explanationUz": "Ingliz tilida bir so'z ham ot, ham fe'l bo'lishi mumkin.",
         "items": [
-          { "base": "a fly", "baseUz": "pashsha (OT)", "derived": "to fly", "derivedUz": "uchmoq (FE'L)", "note": "kontekstdan bilinadi" },
-          { "base": "a smile", "baseUz": "tabassum (OT)", "derived": "to smile", "derivedUz": "tabassum qilmoq (FE'L)", "note": "" },
-          { "base": "a walk", "baseUz": "sayr (OT)", "derived": "to walk", "derivedUz": "yurmoq (FE'L)", "note": "" },
-          { "base": "a play", "baseUz": "spektakl (OT)", "derived": "to play", "derivedUz": "o'ynamoq (FE'L)", "note": "" },
-          { "base": "water", "baseUz": "suv (OT)", "derived": "to water", "derivedUz": "sug'ormoq (FE'L)", "note": "" }
+          {
+            "base": "a fly",
+            "baseUz": "pashsha (OT)",
+            "derived": "to fly",
+            "derivedUz": "uchmoq (FE'L)",
+            "note": "kontekstdan bilinadi"
+          },
+          {
+            "base": "a smile",
+            "baseUz": "tabassum (OT)",
+            "derived": "to smile",
+            "derivedUz": "tabassum qilmoq (FE'L)",
+            "note": ""
+          },
+          {
+            "base": "a walk",
+            "baseUz": "sayr (OT)",
+            "derived": "to walk",
+            "derivedUz": "yurmoq (FE'L)",
+            "note": ""
+          },
+          {
+            "base": "a play",
+            "baseUz": "spektakl (OT)",
+            "derived": "to play",
+            "derivedUz": "o'ynamoq (FE'L)",
+            "note": ""
+          },
+          {
+            "base": "water",
+            "baseUz": "suv (OT)",
+            "derived": "to water",
+            "derivedUz": "sug'ormoq (FE'L)",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Qo'shma otlar (ikki so'z birga)",
         "explanationUz": "Ikki so'z qo'shilib yangi ot yasaydi.",
         "items": [
-          { "base": "lady + bird", "baseUz": "xonim + qush", "derived": "a ladybird", "derivedUz": "xonqizi", "note": "amerikacha: ladybug" },
-          { "base": "butter + fly", "baseUz": "sariyog' + uchmoq", "derived": "a butterfly", "derivedUz": "kapalak", "note": "" },
-          { "base": "sea + lion", "baseUz": "dengiz + sher", "derived": "a sea lion", "derivedUz": "dengiz sheri", "note": "alohida yoziladi" },
-          { "base": "gold + fish", "baseUz": "oltin + baliq", "derived": "a goldfish", "derivedUz": "tilla baliq", "note": "" },
-          { "base": "grand + parents", "baseUz": "buyuk + ota-ona", "derived": "grandparents", "derivedUz": "bobo-buvi", "note": "" }
+          {
+            "base": "lady + bird",
+            "baseUz": "xonim + qush",
+            "derived": "a ladybird",
+            "derivedUz": "xonqizi",
+            "note": "amerikacha: ladybug"
+          },
+          {
+            "base": "butter + fly",
+            "baseUz": "sariyog' + uchmoq",
+            "derived": "a butterfly",
+            "derivedUz": "kapalak",
+            "note": ""
+          },
+          {
+            "base": "sea + lion",
+            "baseUz": "dengiz + sher",
+            "derived": "a sea lion",
+            "derivedUz": "dengiz sheri",
+            "note": "alohida yoziladi"
+          },
+          {
+            "base": "gold + fish",
+            "baseUz": "oltin + baliq",
+            "derived": "a goldfish",
+            "derivedUz": "tilla baliq",
+            "note": ""
+          },
+          {
+            "base": "grand + parents",
+            "baseUz": "buyuk + ota-ona",
+            "derived": "grandparents",
+            "derivedUz": "bobo-buvi",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Hayvon guruhlari va a'zolari",
         "explanationUz": "Har bir guruhning aniq belgisi bor.",
         "items": [
-          { "base": "insects", "baseUz": "hasharotlar", "derived": "olti oyoq", "derivedUz": "kapalak, pashsha, xonqizi", "note": "'a creature'" },
-          { "base": "mammals", "baseUz": "sutemizuvchilar", "derived": "sut bilan boqadi", "derivedUz": "delfin, sher, sigir", "note": "" },
-          { "base": "reptiles", "baseUz": "sudralib yuruvchilar", "derived": "tuxum qo'yadi, qanoti yo'q", "derivedUz": "ilon, timsoh", "note": "" },
-          { "base": "birds", "baseUz": "qushlar", "derived": "pat, ikki qanot", "derivedUz": "to'tiqush, o'rdak, pingvin", "note": "" }
+          {
+            "base": "insects",
+            "baseUz": "hasharotlar",
+            "derived": "olti oyoq",
+            "derivedUz": "kapalak, pashsha, xonqizi",
+            "note": "'a creature'"
+          },
+          {
+            "base": "mammals",
+            "baseUz": "sutemizuvchilar",
+            "derived": "sut bilan boqadi",
+            "derivedUz": "delfin, sher, sigir",
+            "note": ""
+          },
+          {
+            "base": "reptiles",
+            "baseUz": "sudralib yuruvchilar",
+            "derived": "tuxum qo'yadi, qanoti yo'q",
+            "derivedUz": "ilon, timsoh",
+            "note": ""
+          },
+          {
+            "base": "birds",
+            "baseUz": "qushlar",
+            "derived": "pat, ikki qanot",
+            "derivedUz": "to'tiqush, o'rdak, pingvin",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Sifat va ravish farqi (24-betdagi)",
         "explanationUz": "'be' dan keyin SIFAT, fe'ldan keyin RAVISH.",
         "items": [
-          { "base": "easy", "baseUz": "oson (sifat)", "derived": "easily", "derivedUz": "osonlik bilan (ravish)", "note": "learn easily" },
-          { "base": "friendly", "baseUz": "do'stona (SIFAT)", "derived": "are friendly", "derivedUz": "'be' dan keyin", "note": "-ly bo'lsa ham SIFAT" },
-          { "base": "funny", "baseUz": "kulgili (sifat)", "derived": "look funny", "derivedUz": "'look' dan keyin sifat", "note": "'look funnily' XATO" },
-          { "base": "strong", "baseUz": "kuchli (sifat)", "derived": "strong legs", "derivedUz": "ot oldida", "note": "" }
+          {
+            "base": "easy",
+            "baseUz": "oson (sifat)",
+            "derived": "easily",
+            "derivedUz": "osonlik bilan (ravish)",
+            "note": "learn easily"
+          },
+          {
+            "base": "friendly",
+            "baseUz": "do'stona (SIFAT)",
+            "derived": "are friendly",
+            "derivedUz": "'be' dan keyin",
+            "note": "-ly bo'lsa ham SIFAT"
+          },
+          {
+            "base": "funny",
+            "baseUz": "kulgili (sifat)",
+            "derived": "look funny",
+            "derivedUz": "'look' dan keyin sifat",
+            "note": "'look funnily' XATO"
+          },
+          {
+            "base": "strong",
+            "baseUz": "kuchli (sifat)",
+            "derived": "strong legs",
+            "derivedUz": "ot oldida",
+            "note": ""
+          }
         ]
       }
     ]
@@ -201,30 +593,105 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "fins", "uz": "suzgichlar" },
-    { "en": "feet", "uz": "oyoq kaftlari" },
-    { "en": "a mane", "uz": "yol" },
-    { "en": "a beak", "uz": "tumshuq" },
-    { "en": "a shark", "uz": "akula" },
-    { "en": "a camel", "uz": "tuya" },
-    { "en": "an eagle", "uz": "burgut" },
-    { "en": "sharp claws", "uz": "o'tkir tirnoqlar" },
-    { "en": "paws", "uz": "panjalar" },
-    { "en": "whiskers", "uz": "mo'ylovlar" },
-    { "en": "a trunk", "uz": "xartum" },
-    { "en": "a seal", "uz": "tyulen" },
-    { "en": "stripes", "uz": "chiziqlar" },
-    { "en": "both", "uz": "ikkalasi ham" },
-    { "en": "a creature", "uz": "jonzot" },
-    { "en": "a pair of wings", "uz": "bir juft qanot" },
-    { "en": "dangerous", "uz": "xavfli" },
-    { "en": "a ladybird", "uz": "xonqizi" },
-    { "en": "a fly", "uz": "pashsha, chivin" },
-    { "en": "a duck", "uz": "o'rdak" },
-    { "en": "kittens", "uz": "mushukchalar" },
-    { "en": "puppies", "uz": "kuchukchalar" },
-    { "en": "to tick", "uz": "belgilamoq" },
-    { "en": "a definition", "uz": "ta'rif" },
-    { "en": "to label", "uz": "belgilamoq, nom yozmoq" }
+    {
+      "en": "fins",
+      "uz": "suzgichlar"
+    },
+    {
+      "en": "feet",
+      "uz": "oyoq kaftlari"
+    },
+    {
+      "en": "a mane",
+      "uz": "yol"
+    },
+    {
+      "en": "a beak",
+      "uz": "tumshuq"
+    },
+    {
+      "en": "a shark",
+      "uz": "akula"
+    },
+    {
+      "en": "a camel",
+      "uz": "tuya"
+    },
+    {
+      "en": "an eagle",
+      "uz": "burgut"
+    },
+    {
+      "en": "sharp claws",
+      "uz": "o'tkir tirnoqlar"
+    },
+    {
+      "en": "paws",
+      "uz": "panjalar"
+    },
+    {
+      "en": "whiskers",
+      "uz": "mo'ylovlar"
+    },
+    {
+      "en": "a trunk",
+      "uz": "xartum"
+    },
+    {
+      "en": "a seal",
+      "uz": "tyulen"
+    },
+    {
+      "en": "stripes",
+      "uz": "chiziqlar"
+    },
+    {
+      "en": "both",
+      "uz": "ikkalasi ham"
+    },
+    {
+      "en": "a creature",
+      "uz": "jonzot"
+    },
+    {
+      "en": "a pair of wings",
+      "uz": "bir juft qanot"
+    },
+    {
+      "en": "dangerous",
+      "uz": "xavfli"
+    },
+    {
+      "en": "a ladybird",
+      "uz": "xonqizi"
+    },
+    {
+      "en": "a fly",
+      "uz": "pashsha, chivin"
+    },
+    {
+      "en": "a duck",
+      "uz": "o'rdak"
+    },
+    {
+      "en": "kittens",
+      "uz": "mushukchalar"
+    },
+    {
+      "en": "puppies",
+      "uz": "kuchukchalar"
+    },
+    {
+      "en": "to tick",
+      "uz": "belgilamoq"
+    },
+    {
+      "en": "a definition",
+      "uz": "ta'rif"
+    },
+    {
+      "en": "to label",
+      "uz": "belgilamoq, nom yozmoq"
+    }
   ]
 }
