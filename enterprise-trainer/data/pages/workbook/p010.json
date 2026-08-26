@@ -6,13 +6,18 @@
   "unitTitle": "A Friend in Need ...",
   "module": 1,
   "pairsWith": {
-    "coursebook": [12, 13, 14],
-    "grammar": [9, 11],
+    "coursebook": [
+      12,
+      13,
+      14
+    ],
+    "grammar": [
+      9,
+      11
+    ],
     "noteUz": "Tavsif jadvali coursebook 13-bet Speaking mashqiga, savol tuzish esa grammar 11-bet Ex.7 ga mos keladi."
   },
-  "scanNote": {
-    "uz": "DIQQAT: skanerlangan nusxada qo'lyozma javoblar bor va ularda KO'P XATO mavjud — ayniqsa Ex.5 da so'z tartibi. Quyida to'g'ri javoblar; xatolar 'commonMistake' sifatida izohlangan."
-  },
+  "scanNote": "DIQQAT: skanerlangan nusxada qo'lyozma javoblar bor va ularda KO'P XATO mavjud — ayniqsa Ex.5 da so'z tartibi. Quyida to'g'ri javoblar; xatolar 'commonMistake' sifatida izohlangan.",
   "sections": [
     {
       "kind": "reading",
@@ -26,7 +31,12 @@
           "instructionUz": "Quyidagi xatboshilarni o'qing va rasmlarga moslang.",
           "explanationUz": "Har xatboshida 5 ta belgi bor: yosh, bo'y, gavda, soch, yuz.\nRasmga moslashda ENG ANIQ belgidan boshlang:\n\n  • Kim — 'slanting eyes' (qiyiq ko'z)\n  • Ian — 'a beard and a moustache' (soqol va mo'ylov)\n  • Robert — 'seventy years old' (eng keksa)\n  • Peter — 'tall and well-built' (baland va baquvvat)\n\nBitta noyob belgi topilsa, qolganini tekshirish oson.",
           "bookRef": "Workbook, 9-bet — 1–4 rasmlar",
-          "options": ["1", "2", "3", "4"],
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
           "answers": [
             {
               "picture": "a",
@@ -60,23 +70,68 @@
           "instructionEn": "Read the paragraphs again and fill in the tables, as in the example.",
           "instructionUz": "Xatboshilarni qayta o'qing va jadvallarni to'ldiring.",
           "explanationUz": "Jadvalda 7 qator bor. Har qatorga matndan mos ma'lumot yoziladi.\n\n'Other Characteristics' (boshqa belgilar) — matnda alohida aytilgan,\nboshqa qatorlarga sig'maydigan narsa:\n  • Kim   — slanting eyes\n  • Ian   — a beard and a moustache\n  • Robert — (matnda qo'shimcha belgi yo'q)\n  • Peter — (matnda qo'shimcha belgi yo'q)",
-          "columns": ["Name", "Age", "Height", "Build", "Hair", "Nose", "Lips", "Other Characteristics"],
-          "columnsUz": ["Ism", "Yosh", "Bo'y", "Gavda", "Soch", "Burun", "Lab", "Boshqa belgilar"],
+          "columns": [
+            "Name",
+            "Age",
+            "Height",
+            "Build",
+            "Hair",
+            "Nose",
+            "Lips",
+            "Other Characteristics"
+          ],
+          "columnsUz": [
+            "Ism",
+            "Yosh",
+            "Bo'y",
+            "Gavda",
+            "Soch",
+            "Burun",
+            "Lab",
+            "Boshqa belgilar"
+          ],
           "rows": [
             {
               "name": "Kim",
               "given": true,
-              "cells": ["Kim", "22", "short", "slim", "long, straight", "small", "full", "slanting eyes"]
+              "cells": [
+                "Kim",
+                "22",
+                "short",
+                "slim",
+                "long, straight",
+                "small",
+                "full",
+                "slanting eyes"
+              ]
             },
             {
               "name": "Peter",
               "given": false,
-              "cells": ["Peter", "20", "tall", "well-built", "short curly", "wide flattish", "full", "—"]
+              "cells": [
+                "Peter",
+                "20",
+                "tall",
+                "well-built",
+                "short curly",
+                "wide flattish",
+                "full",
+                "—"
+              ]
             },
             {
               "name": "Ian",
               "given": false,
-              "cells": ["Ian", "52", "medium height", "fat", "grey straight", "large", "full", "a beard and a moustache"],
+              "cells": [
+                "Ian",
+                "52",
+                "medium height",
+                "fat",
+                "grey straight",
+                "large",
+                "full",
+                "a beard and a moustache"
+              ],
               "commonMistake": {
                 "wrong": "Hair: 'short white' · Nose: 'largue' · Height: 'medium heigth' · Other: 'used cap'",
                 "whyUz": "To'rt xato:\n1) Soch — matnda 'grey straight hair' (kulrang tekis), 'short white' emas. Bu Robertning sochi.\n2) 'largue' — imlo xatosi. To'g'risi: LARGE.\n3) 'heigth' — harflar o'rni almashgan. To'g'risi: HEIGHT.\n4) 'used cap' — matnda bunday narsa yo'q. To'g'risi: A BEARD AND A MOUSTACHE."
@@ -85,7 +140,16 @@
             {
               "name": "Robert",
               "given": false,
-              "cells": ["Robert", "70", "short", "slim", "short white", "big", "thin", "—"],
+              "cells": [
+                "Robert",
+                "70",
+                "short",
+                "slim",
+                "short white",
+                "big",
+                "thin",
+                "—"
+              ],
               "commonMistake": {
                 "wrong": "Age: '60'",
                 "whyUz": "Matnda 'Robert is SEVENTY years old' — ya'ni 70, 60 emas. Sonlarni diqqat bilan o'qing: seventy (70) va sixty (60) o'xshash eshitiladi."
@@ -167,31 +231,109 @@
         "ruleUz": "Sifat → ot (o'lcham va tavsif)",
         "explanationUz": "Ba'zi sifatlardan ot yasaladi. Yozilishi o'zgaradi — bu betda aynan shu xato qilingan.",
         "items": [
-          { "base": "high", "baseUz": "baland", "derived": "height", "derivedUz": "bo'y, balandlik", "note": "'heigth' XATO — h-e-i-g-h-t" },
-          { "base": "wide", "baseUz": "keng", "derived": "width", "derivedUz": "kenglik", "note": "-e tushadi" },
-          { "base": "long", "baseUz": "uzun", "derived": "length", "derivedUz": "uzunlik", "note": "o → e" },
-          { "base": "strong", "baseUz": "kuchli", "derived": "strength", "derivedUz": "kuch", "note": "o → e" }
+          {
+            "base": "high",
+            "baseUz": "baland",
+            "derived": "height",
+            "derivedUz": "bo'y, balandlik",
+            "note": "'heigth' XATO — h-e-i-g-h-t"
+          },
+          {
+            "base": "wide",
+            "baseUz": "keng",
+            "derived": "width",
+            "derivedUz": "kenglik",
+            "note": "-e tushadi"
+          },
+          {
+            "base": "long",
+            "baseUz": "uzun",
+            "derived": "length",
+            "derivedUz": "uzunlik",
+            "note": "o → e"
+          },
+          {
+            "base": "strong",
+            "baseUz": "kuchli",
+            "derived": "strength",
+            "derivedUz": "kuch",
+            "note": "o → e"
+          }
         ]
       },
       {
         "ruleUz": "O'LCHAM sifatlari — sinonim va daraja",
         "explanationUz": "Bir narsani turlicha ayta olish — nutqni boyitadi.",
         "items": [
-          { "base": "big", "baseUz": "katta", "derived": "large", "derivedUz": "katta, yirik", "note": "'largue' XATO — l-a-r-g-e" },
-          { "base": "small", "baseUz": "kichik", "derived": "little", "derivedUz": "kichkina", "note": "" },
-          { "base": "tall", "baseUz": "baland (odam)", "derived": "medium height", "derivedUz": "o'rta bo'yli", "note": "o'rtacha daraja" },
-          { "base": "fat", "baseUz": "semiz", "derived": "overweight", "derivedUz": "vazni ortiqcha", "note": "muloyimroq shakl" }
+          {
+            "base": "big",
+            "baseUz": "katta",
+            "derived": "large",
+            "derivedUz": "katta, yirik",
+            "note": "'largue' XATO — l-a-r-g-e"
+          },
+          {
+            "base": "small",
+            "baseUz": "kichik",
+            "derived": "little",
+            "derivedUz": "kichkina",
+            "note": ""
+          },
+          {
+            "base": "tall",
+            "baseUz": "baland (odam)",
+            "derived": "medium height",
+            "derivedUz": "o'rta bo'yli",
+            "note": "o'rtacha daraja"
+          },
+          {
+            "base": "fat",
+            "baseUz": "semiz",
+            "derived": "overweight",
+            "derivedUz": "vazni ortiqcha",
+            "note": "muloyimroq shakl"
+          }
         ]
       },
       {
         "ruleUz": "Egalik olmoshlari (bu betdagi xato)",
         "explanationUz": "'you' va 'your' ni adashtirmang — biri EGA, ikkinchisi EGALIK.",
         "items": [
-          { "base": "I", "baseUz": "men", "derived": "my", "derivedUz": "mening", "note": "my car" },
-          { "base": "you", "baseUz": "siz", "derived": "your", "derivedUz": "sizning", "note": "YOUR car ('you car' XATO)" },
-          { "base": "he", "baseUz": "u", "derived": "his", "derivedUz": "uning", "note": "his car" },
-          { "base": "she", "baseUz": "u", "derived": "her", "derivedUz": "uning", "note": "her car" },
-          { "base": "it", "baseUz": "u", "derived": "its", "derivedUz": "uning", "note": "its colour (apostrofsiz!)" }
+          {
+            "base": "I",
+            "baseUz": "men",
+            "derived": "my",
+            "derivedUz": "mening",
+            "note": "my car"
+          },
+          {
+            "base": "you",
+            "baseUz": "siz",
+            "derived": "your",
+            "derivedUz": "sizning",
+            "note": "YOUR car ('you car' XATO)"
+          },
+          {
+            "base": "he",
+            "baseUz": "u",
+            "derived": "his",
+            "derivedUz": "uning",
+            "note": "his car"
+          },
+          {
+            "base": "she",
+            "baseUz": "u",
+            "derived": "her",
+            "derivedUz": "uning",
+            "note": "her car"
+          },
+          {
+            "base": "it",
+            "baseUz": "u",
+            "derived": "its",
+            "derivedUz": "uning",
+            "note": "its colour (apostrofsiz!)"
+          }
         ]
       }
     ]
@@ -227,26 +369,89 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "paragraph", "uz": "xatboshi" },
-    { "en": "to match", "uz": "moslamoq" },
-    { "en": "to cover", "uz": "yopmoq, berkitmoq" },
-    { "en": "to describe", "uz": "tasvirlamoq" },
-    { "en": "height", "uz": "bo'y" },
-    { "en": "medium height", "uz": "o'rta bo'y" },
-    { "en": "build", "uz": "gavda tuzilishi" },
-    { "en": "well-built", "uz": "baquvvat" },
-    { "en": "large", "uz": "katta, yirik" },
-    { "en": "wide", "uz": "keng" },
-    { "en": "flattish", "uz": "yassiroq" },
-    { "en": "thin lips", "uz": "ingichka lab" },
-    { "en": "full lips", "uz": "to'la lab" },
-    { "en": "slanting eyes", "uz": "qiyiq ko'z" },
-    { "en": "characteristics", "uz": "belgilar, xususiyatlar" },
-    { "en": "to wear glasses", "uz": "ko'zoynak taqmoq" },
-    { "en": "Argentina", "uz": "Argentina" },
-    { "en": "Portugal", "uz": "Portugaliya" },
-    { "en": "Turkey", "uz": "Turkiya" },
-    { "en": "new", "uz": "yangi" },
-    { "en": "old", "uz": "eski, keksa" }
+    {
+      "en": "paragraph",
+      "uz": "xatboshi"
+    },
+    {
+      "en": "to match",
+      "uz": "moslamoq"
+    },
+    {
+      "en": "to cover",
+      "uz": "yopmoq, berkitmoq"
+    },
+    {
+      "en": "to describe",
+      "uz": "tasvirlamoq"
+    },
+    {
+      "en": "height",
+      "uz": "bo'y"
+    },
+    {
+      "en": "medium height",
+      "uz": "o'rta bo'y"
+    },
+    {
+      "en": "build",
+      "uz": "gavda tuzilishi"
+    },
+    {
+      "en": "well-built",
+      "uz": "baquvvat"
+    },
+    {
+      "en": "large",
+      "uz": "katta, yirik"
+    },
+    {
+      "en": "wide",
+      "uz": "keng"
+    },
+    {
+      "en": "flattish",
+      "uz": "yassiroq"
+    },
+    {
+      "en": "thin lips",
+      "uz": "ingichka lab"
+    },
+    {
+      "en": "full lips",
+      "uz": "to'la lab"
+    },
+    {
+      "en": "slanting eyes",
+      "uz": "qiyiq ko'z"
+    },
+    {
+      "en": "characteristics",
+      "uz": "belgilar, xususiyatlar"
+    },
+    {
+      "en": "to wear glasses",
+      "uz": "ko'zoynak taqmoq"
+    },
+    {
+      "en": "Argentina",
+      "uz": "Argentina"
+    },
+    {
+      "en": "Portugal",
+      "uz": "Portugaliya"
+    },
+    {
+      "en": "Turkey",
+      "uz": "Turkiya"
+    },
+    {
+      "en": "new",
+      "uz": "yangi"
+    },
+    {
+      "en": "old",
+      "uz": "eski, keksa"
+    }
   ]
 }

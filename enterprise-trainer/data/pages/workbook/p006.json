@@ -6,13 +6,16 @@
   "unitTitle": "Hi!",
   "module": 1,
   "pairsWith": {
-    "coursebook": [7, 8],
-    "grammar": [7],
+    "coursebook": [
+      7,
+      8
+    ],
+    "grammar": [
+      7
+    ],
     "noteUz": "Yosh aytish coursebook 7-bet Ex.6-7 ga, poytaxt-mamlakat esa coursebook 8-bet Ex.9 ga mos keladi."
   },
-  "scanNote": {
-    "uz": "Skanerlangan nusxada qo'lyozma javoblar bor. Ex.7 to'g'ri to'ldirilgan, Ex.6 da imlo xatolari bor — ular 'commonMistake' da saqlangan."
-  },
+  "scanNote": "Skanerlangan nusxada qo'lyozma javoblar bor. Ex.7 to'g'ri to'ldirilgan, Ex.6 da imlo xatolari bor — ular 'commonMistake' da saqlangan.",
   "sections": [
     {
       "kind": "vocabulary",
@@ -26,16 +29,77 @@
           "instructionUz": "Gaplarni to'ldiring.",
           "explanationUz": "Qolip: EGA + 's + SON (so'z bilan) + years old.\nUch narsaga diqqat:\n1) Rasmda odam erkakmi (He's) yoki ayolmi (She's)\n2) Son SO'Z bilan yoziladi, raqam bilan emas\n3) 'years old' iborasi tushib qolmasin\nAralash sonlar chiziqcha bilan: twenty-six, thirty-five.",
           "items": [
-            { "n": 1, "gender": "erkak", "age": 10, "answer": "He's ten years old.", "given": true },
-            { "n": 2, "gender": "ayol", "age": 16, "answer": "She's sixteen years old.", "given": true },
-            { "n": 3, "gender": "erkak", "age": 40, "answer": "He's forty years old.", "commonMistake": { "wrong": "fourty", "whyUz": "ENG KO'P XATO — bu bet-da ham takrorlangan. four (4) da 'u' bor, lekin forty (40) da YO'Q." } },
-            { "n": 4, "gender": "ayol", "age": 80, "answer": "She's eighty years old." },
-            { "n": 5, "gender": "erkak", "age": 50, "answer": "He's fifty years old." },
-            { "n": 6, "gender": "erkak", "age": 26, "answer": "He's twenty-six years old.", "commonMistake": { "wrong": "twenty six", "whyUz": "Chiziqcha tushib qolgan. 21–99 oralig'idagi aralash sonlar CHIZIQCHA bilan yoziladi: twenty-six." } },
-            { "n": 7, "gender": "ayol", "age": 12, "answer": "She's twelve years old.", "noteUz": "Qo'lyozmada 'She is twelve years old' — bu ham to'g'ri, lekin namunada qisqartma ishlatilgan (She's)." },
-            { "n": 8, "gender": "erkak", "age": 35, "answer": "He's thirty-five years old." },
-            { "n": 9, "gender": "ayol", "age": 15, "answer": "She's fifteen years old." },
-            { "n": 10, "gender": "ayol", "age": 18, "answer": "She's eighteen years old." }
+            {
+              "n": 1,
+              "gender": "erkak",
+              "age": 10,
+              "answer": "He's ten years old.",
+              "given": true
+            },
+            {
+              "n": 2,
+              "gender": "ayol",
+              "age": 16,
+              "answer": "She's sixteen years old.",
+              "given": true
+            },
+            {
+              "n": 3,
+              "gender": "erkak",
+              "age": 40,
+              "answer": "He's forty years old.",
+              "commonMistake": {
+                "wrong": "fourty",
+                "whyUz": "ENG KO'P XATO — bu bet-da ham takrorlangan. four (4) da 'u' bor, lekin forty (40) da YO'Q."
+              }
+            },
+            {
+              "n": 4,
+              "gender": "ayol",
+              "age": 80,
+              "answer": "She's eighty years old."
+            },
+            {
+              "n": 5,
+              "gender": "erkak",
+              "age": 50,
+              "answer": "He's fifty years old."
+            },
+            {
+              "n": 6,
+              "gender": "erkak",
+              "age": 26,
+              "answer": "He's twenty-six years old.",
+              "commonMistake": {
+                "wrong": "twenty six",
+                "whyUz": "Chiziqcha tushib qolgan. 21–99 oralig'idagi aralash sonlar CHIZIQCHA bilan yoziladi: twenty-six."
+              }
+            },
+            {
+              "n": 7,
+              "gender": "ayol",
+              "age": 12,
+              "answer": "She's twelve years old.",
+              "noteUz": "Qo'lyozmada 'She is twelve years old' — bu ham to'g'ri, lekin namunada qisqartma ishlatilgan (She's)."
+            },
+            {
+              "n": 8,
+              "gender": "erkak",
+              "age": 35,
+              "answer": "He's thirty-five years old."
+            },
+            {
+              "n": 9,
+              "gender": "ayol",
+              "age": 15,
+              "answer": "She's fifteen years old."
+            },
+            {
+              "n": 10,
+              "gender": "ayol",
+              "age": 18,
+              "answer": "She's eighteen years old."
+            }
           ]
         }
       ]
@@ -51,17 +115,91 @@
           "instructionEn": "Look at the map and fill in the names of the countries.",
           "instructionUz": "Xaritaga qarang va mamlakat nomlarini yozing.",
           "explanationUz": "Qolip: POYTAXT + is in + MAMLAKAT.\nDiqqat: mamlakat nomlari oldidan odatda 'the' QO'YILMAYDI (in Italy, in Spain).\nLekin ba'zilari istisno — 'the' bilan keladi:\n• the Czech Republic (Chexiya)\n• the USA, the UK, the Netherlands\nBular tarkibida 'Republic', 'States', 'Kingdom' kabi so'z bo'lganlar.",
-          "wordList": ["Spain", "Greece", "Poland", "Hungary", "Italy", "the Czech Republic", "Portugal", "Germany", "Switzerland"],
+          "wordList": [
+            "Spain",
+            "Greece",
+            "Poland",
+            "Hungary",
+            "Italy",
+            "the Czech Republic",
+            "Portugal",
+            "Germany",
+            "Switzerland"
+          ],
           "items": [
-            { "n": 1, "capital": "Athens", "capitalUz": "Afina", "country": "Greece", "countryUz": "Gretsiya", "sentence": "Athens is in Greece." },
-            { "n": 2, "capital": "Rome", "capitalUz": "Rim", "country": "Italy", "countryUz": "Italiya", "sentence": "Rome is in Italy." },
-            { "n": 3, "capital": "Berne", "capitalUz": "Bern", "country": "Switzerland", "countryUz": "Shveytsariya", "sentence": "Berne is in Switzerland." },
-            { "n": 4, "capital": "Lisbon", "capitalUz": "Lissabon", "country": "Portugal", "countryUz": "Portugaliya", "sentence": "Lisbon is in Portugal." },
-            { "n": 5, "capital": "Warsaw", "capitalUz": "Varshava", "country": "Poland", "countryUz": "Polsha", "sentence": "Warsaw is in Poland." },
-            { "n": 6, "capital": "Prague", "capitalUz": "Praga", "country": "the Czech Republic", "countryUz": "Chexiya", "sentence": "Prague is in the Czech Republic.", "noteUz": "'the' SHART — Republic so'zi bor." },
-            { "n": 7, "capital": "Madrid", "capitalUz": "Madrid", "country": "Spain", "countryUz": "Ispaniya", "sentence": "Madrid is in Spain." },
-            { "n": 8, "capital": "Berlin", "capitalUz": "Berlin", "country": "Germany", "countryUz": "Germaniya", "sentence": "Berlin is in Germany." },
-            { "n": 9, "capital": "Budapest", "capitalUz": "Budapesht", "country": "Hungary", "countryUz": "Vengriya", "sentence": "Budapest is in Hungary." }
+            {
+              "n": 1,
+              "capital": "Athens",
+              "capitalUz": "Afina",
+              "country": "Greece",
+              "countryUz": "Gretsiya",
+              "sentence": "Athens is in Greece."
+            },
+            {
+              "n": 2,
+              "capital": "Rome",
+              "capitalUz": "Rim",
+              "country": "Italy",
+              "countryUz": "Italiya",
+              "sentence": "Rome is in Italy."
+            },
+            {
+              "n": 3,
+              "capital": "Berne",
+              "capitalUz": "Bern",
+              "country": "Switzerland",
+              "countryUz": "Shveytsariya",
+              "sentence": "Berne is in Switzerland."
+            },
+            {
+              "n": 4,
+              "capital": "Lisbon",
+              "capitalUz": "Lissabon",
+              "country": "Portugal",
+              "countryUz": "Portugaliya",
+              "sentence": "Lisbon is in Portugal."
+            },
+            {
+              "n": 5,
+              "capital": "Warsaw",
+              "capitalUz": "Varshava",
+              "country": "Poland",
+              "countryUz": "Polsha",
+              "sentence": "Warsaw is in Poland."
+            },
+            {
+              "n": 6,
+              "capital": "Prague",
+              "capitalUz": "Praga",
+              "country": "the Czech Republic",
+              "countryUz": "Chexiya",
+              "sentence": "Prague is in the Czech Republic.",
+              "noteUz": "'the' SHART — Republic so'zi bor."
+            },
+            {
+              "n": 7,
+              "capital": "Madrid",
+              "capitalUz": "Madrid",
+              "country": "Spain",
+              "countryUz": "Ispaniya",
+              "sentence": "Madrid is in Spain."
+            },
+            {
+              "n": 8,
+              "capital": "Berlin",
+              "capitalUz": "Berlin",
+              "country": "Germany",
+              "countryUz": "Germaniya",
+              "sentence": "Berlin is in Germany."
+            },
+            {
+              "n": 9,
+              "capital": "Budapest",
+              "capitalUz": "Budapesht",
+              "country": "Hungary",
+              "countryUz": "Vengriya",
+              "sentence": "Budapest is in Hungary."
+            }
           ]
         }
       ]
@@ -75,26 +213,110 @@
         "ruleUz": "-teen (13–19) va -ty (o'nliklar) — imlo tuzoqlari",
         "explanationUz": "Bu sahifada aynan shu sonlar uchraydi. Uchta so'zning o'zagi o'zgaradi:",
         "items": [
-          { "base": "four", "baseUz": "to'rt", "derived": "forty", "derivedUz": "qirq", "note": "'u' TUSHADI — fourty XATO" },
-          { "base": "five", "baseUz": "besh", "derived": "fifty / fifteen", "derivedUz": "ellik / o'n besh", "note": "five → fif-" },
-          { "base": "three", "baseUz": "uch", "derived": "thirty / thirteen", "derivedUz": "o'ttiz / o'n uch", "note": "three → thir-" },
-          { "base": "eight", "baseUz": "sakkiz", "derived": "eighty / eighteen", "derivedUz": "sakson / o'n sakkiz", "note": "'t' bitta qoladi" },
-          { "base": "two", "baseUz": "ikki", "derived": "twelve / twenty", "derivedUz": "o'n ikki / yigirma", "note": "tw- o'zagi" }
+          {
+            "base": "four",
+            "baseUz": "to'rt",
+            "derived": "forty",
+            "derivedUz": "qirq",
+            "note": "'u' TUSHADI — fourty XATO"
+          },
+          {
+            "base": "five",
+            "baseUz": "besh",
+            "derived": "fifty / fifteen",
+            "derivedUz": "ellik / o'n besh",
+            "note": "five → fif-"
+          },
+          {
+            "base": "three",
+            "baseUz": "uch",
+            "derived": "thirty / thirteen",
+            "derivedUz": "o'ttiz / o'n uch",
+            "note": "three → thir-"
+          },
+          {
+            "base": "eight",
+            "baseUz": "sakkiz",
+            "derived": "eighty / eighteen",
+            "derivedUz": "sakson / o'n sakkiz",
+            "note": "'t' bitta qoladi"
+          },
+          {
+            "base": "two",
+            "baseUz": "ikki",
+            "derived": "twelve / twenty",
+            "derivedUz": "o'n ikki / yigirma",
+            "note": "tw- o'zagi"
+          }
         ]
       },
       {
         "ruleUz": "Mamlakat → millat (xaritadagilar)",
         "explanationUz": "Ex. 7 dagi 9 ta mamlakatning millat shakli:",
         "items": [
-          { "base": "Greece", "baseUz": "Gretsiya", "derived": "Greek", "derivedUz": "grek", "note": "qoidasiz" },
-          { "base": "Italy", "baseUz": "Italiya", "derived": "Italian", "derivedUz": "italyan", "note": "y → ian" },
-          { "base": "Switzerland", "baseUz": "Shveytsariya", "derived": "Swiss", "derivedUz": "shveytsariyalik", "note": "qoidasiz" },
-          { "base": "Portugal", "baseUz": "Portugaliya", "derived": "Portuguese", "derivedUz": "portugal", "note": "-ese" },
-          { "base": "Poland", "baseUz": "Polsha", "derived": "Polish", "derivedUz": "polyak", "note": "-ish" },
-          { "base": "the Czech Republic", "baseUz": "Chexiya", "derived": "Czech", "derivedUz": "chex", "note": "o'zi millat nomi" },
-          { "base": "Spain", "baseUz": "Ispaniya", "derived": "Spanish", "derivedUz": "ispan", "note": "-ish" },
-          { "base": "Germany", "baseUz": "Germaniya", "derived": "German", "derivedUz": "nemis", "note": "-y tushadi" },
-          { "base": "Hungary", "baseUz": "Vengriya", "derived": "Hungarian", "derivedUz": "venger", "note": "-ian" }
+          {
+            "base": "Greece",
+            "baseUz": "Gretsiya",
+            "derived": "Greek",
+            "derivedUz": "grek",
+            "note": "qoidasiz"
+          },
+          {
+            "base": "Italy",
+            "baseUz": "Italiya",
+            "derived": "Italian",
+            "derivedUz": "italyan",
+            "note": "y → ian"
+          },
+          {
+            "base": "Switzerland",
+            "baseUz": "Shveytsariya",
+            "derived": "Swiss",
+            "derivedUz": "shveytsariyalik",
+            "note": "qoidasiz"
+          },
+          {
+            "base": "Portugal",
+            "baseUz": "Portugaliya",
+            "derived": "Portuguese",
+            "derivedUz": "portugal",
+            "note": "-ese"
+          },
+          {
+            "base": "Poland",
+            "baseUz": "Polsha",
+            "derived": "Polish",
+            "derivedUz": "polyak",
+            "note": "-ish"
+          },
+          {
+            "base": "the Czech Republic",
+            "baseUz": "Chexiya",
+            "derived": "Czech",
+            "derivedUz": "chex",
+            "note": "o'zi millat nomi"
+          },
+          {
+            "base": "Spain",
+            "baseUz": "Ispaniya",
+            "derived": "Spanish",
+            "derivedUz": "ispan",
+            "note": "-ish"
+          },
+          {
+            "base": "Germany",
+            "baseUz": "Germaniya",
+            "derived": "German",
+            "derivedUz": "nemis",
+            "note": "-y tushadi"
+          },
+          {
+            "base": "Hungary",
+            "baseUz": "Vengriya",
+            "derived": "Hungarian",
+            "derivedUz": "venger",
+            "note": "-ian"
+          }
         ]
       }
     ]
@@ -118,21 +340,69 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "map", "uz": "xarita" },
-    { "en": "country", "uz": "mamlakat" },
-    { "en": "Europe", "uz": "Yevropa" },
-    { "en": "Athens", "uz": "Afina" },
-    { "en": "Greece", "uz": "Gretsiya" },
-    { "en": "Rome", "uz": "Rim" },
-    { "en": "Berne", "uz": "Bern" },
-    { "en": "Switzerland", "uz": "Shveytsariya" },
-    { "en": "Lisbon", "uz": "Lissabon" },
-    { "en": "Portugal", "uz": "Portugaliya" },
-    { "en": "Prague", "uz": "Praga" },
-    { "en": "the Czech Republic", "uz": "Chexiya" },
-    { "en": "Madrid", "uz": "Madrid" },
-    { "en": "Berlin", "uz": "Berlin" },
-    { "en": "Budapest", "uz": "Budapesht" },
-    { "en": "Hungary", "uz": "Vengriya" }
+    {
+      "en": "map",
+      "uz": "xarita"
+    },
+    {
+      "en": "country",
+      "uz": "mamlakat"
+    },
+    {
+      "en": "Europe",
+      "uz": "Yevropa"
+    },
+    {
+      "en": "Athens",
+      "uz": "Afina"
+    },
+    {
+      "en": "Greece",
+      "uz": "Gretsiya"
+    },
+    {
+      "en": "Rome",
+      "uz": "Rim"
+    },
+    {
+      "en": "Berne",
+      "uz": "Bern"
+    },
+    {
+      "en": "Switzerland",
+      "uz": "Shveytsariya"
+    },
+    {
+      "en": "Lisbon",
+      "uz": "Lissabon"
+    },
+    {
+      "en": "Portugal",
+      "uz": "Portugaliya"
+    },
+    {
+      "en": "Prague",
+      "uz": "Praga"
+    },
+    {
+      "en": "the Czech Republic",
+      "uz": "Chexiya"
+    },
+    {
+      "en": "Madrid",
+      "uz": "Madrid"
+    },
+    {
+      "en": "Berlin",
+      "uz": "Berlin"
+    },
+    {
+      "en": "Budapest",
+      "uz": "Budapesht"
+    },
+    {
+      "en": "Hungary",
+      "uz": "Vengriya"
+    }
   ]
 }

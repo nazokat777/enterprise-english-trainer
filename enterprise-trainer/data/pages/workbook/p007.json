@@ -6,13 +6,19 @@
   "unitTitle": "Hi!",
   "module": 1,
   "pairsWith": {
-    "coursebook": [8, 10],
-    "grammar": [4, 5, 6, 7],
+    "coursebook": [
+      8,
+      10
+    ],
+    "grammar": [
+      4,
+      5,
+      6,
+      7
+    ],
     "noteUz": "Bu bet grammatika kitobining butun Unit 1 iga mos keladi: a/an (grammar 4, 7-bet), to be jadvali (grammar 4, 5-bet), olmoshlar (grammar 5-bet), dialoglar (grammar 6-bet)."
   },
-  "scanNote": {
-    "uz": "DIQQAT: skanerlangan nusxadagi qo'lyozma javoblarda KO'P XATO bor — ayniqsa Ex.8 (a/an) da 12 tadan 6 tasi noto'g'ri. Quyida TO'G'RI javoblar berilgan. Bu xatolar tasodifiy emas: a/an va olmosh tanlash — o'zbek tilida bunday kategoriyalar yo'qligi sababli eng qiyin mavzular."
-  },
+  "scanNote": "DIQQAT: skanerlangan nusxadagi qo'lyozma javoblarda KO'P XATO bor — ayniqsa Ex.8 (a/an) da 12 tadan 6 tasi noto'g'ri. Quyida TO'G'RI javoblar berilgan. Bu xatolar tasodifiy emas: a/an va olmosh tanlash — o'zbek tilida bunday kategoriyalar yo'qligi sababli eng qiyin mavzular.",
   "sections": [
     {
       "kind": "grammar_exercise",
@@ -26,18 +32,120 @@
           "instructionUz": "a yoki an ni qo'ying.",
           "explanationUz": "QOIDA: so'zning birinchi TOVUSHIGA qarang.\n• Unli tovush (a, e, i, o, u) → an\n• Undosh tovush → a\n\nSkanerdagi o'quvchi 12 tadan 6 tasini xato qilgan. Sabab — u so'zning MA'NOSIGA yoki tasodifga qarab tanlagan. Aslida faqat BIRINCHI TOVUSH muhim.\nOson tekshiruv: so'zni ovoz chiqarib ayting. Og'zingiz unli bilan ochilsa — an.",
           "items": [
-            { "n": 1, "word": "orange", "wordUz": "apelsin", "answer": "an", "whyUz": "o — unli", "scanCorrect": true },
-            { "n": 2, "word": "umbrella", "wordUz": "soyabon", "answer": "an", "whyUz": "u bu yerda 'am-' deb o'qiladi → unli", "commonMistake": { "wrong": "a", "whyUz": "Qo'lyozmada 'a umbrella' — XATO. 'u' harfi ba'zan undosh (a university), lekin umbrella da unli tovush beradi → an." } },
-            { "n": 3, "word": "girl", "wordUz": "qiz", "answer": "a", "whyUz": "g — undosh", "commonMistake": { "wrong": "an", "whyUz": "Qo'lyozmada 'an girl' — XATO. 'g' undosh tovush → a girl." } },
-            { "n": 4, "word": "boy", "wordUz": "o'g'il bola", "answer": "a", "whyUz": "b — undosh", "scanCorrect": true },
-            { "n": 5, "word": "man", "wordUz": "erkak", "answer": "a", "whyUz": "m — undosh", "scanCorrect": true },
-            { "n": 6, "word": "apple", "wordUz": "olma", "answer": "an", "whyUz": "a — unli", "scanCorrect": true },
-            { "n": 7, "word": "pencil", "wordUz": "qalam", "answer": "a", "whyUz": "p — undosh", "scanCorrect": true },
-            { "n": 8, "word": "bicycle", "wordUz": "velosiped", "answer": "a", "whyUz": "b — undosh", "commonMistake": { "wrong": "an", "whyUz": "Qo'lyozmada 'an bicycle' — XATO. 'b' undosh → a bicycle." } },
-            { "n": 9, "word": "woman", "wordUz": "ayol", "answer": "a", "whyUz": "w — undosh", "commonMistake": { "wrong": "an", "whyUz": "Qo'lyozmada 'an woman' — XATO. 'w' undosh tovush → a woman." } },
-            { "n": 10, "word": "banana", "wordUz": "banan", "answer": "a", "whyUz": "b — undosh", "commonMistake": { "wrong": "an", "whyUz": "Qo'lyozmada 'an banana' — XATO. So'z ICHIDA unli ko'p bo'lsa ham, faqat BIRINCHI tovush muhim → a banana." } },
-            { "n": 11, "word": "hat", "wordUz": "shlyapa", "answer": "a", "whyUz": "h o'qiladi → undosh", "scanCorrect": true },
-            { "n": 12, "word": "elephant", "wordUz": "fil", "answer": "an", "whyUz": "e — unli", "commonMistake": { "wrong": "a", "whyUz": "Qo'lyozmada 'a elephant' — XATO. 'e' unli → an elephant." } }
+            {
+              "n": 1,
+              "word": "orange",
+              "wordUz": "apelsin",
+              "answer": "an",
+              "whyUz": "o — unli",
+              "scanCorrect": true
+            },
+            {
+              "n": 2,
+              "word": "umbrella",
+              "wordUz": "soyabon",
+              "answer": "an",
+              "whyUz": "u bu yerda 'am-' deb o'qiladi → unli",
+              "commonMistake": {
+                "wrong": "a",
+                "whyUz": "Qo'lyozmada 'a umbrella' — XATO. 'u' harfi ba'zan undosh (a university), lekin umbrella da unli tovush beradi → an."
+              }
+            },
+            {
+              "n": 3,
+              "word": "girl",
+              "wordUz": "qiz",
+              "answer": "a",
+              "whyUz": "g — undosh",
+              "commonMistake": {
+                "wrong": "an",
+                "whyUz": "Qo'lyozmada 'an girl' — XATO. 'g' undosh tovush → a girl."
+              }
+            },
+            {
+              "n": 4,
+              "word": "boy",
+              "wordUz": "o'g'il bola",
+              "answer": "a",
+              "whyUz": "b — undosh",
+              "scanCorrect": true
+            },
+            {
+              "n": 5,
+              "word": "man",
+              "wordUz": "erkak",
+              "answer": "a",
+              "whyUz": "m — undosh",
+              "scanCorrect": true
+            },
+            {
+              "n": 6,
+              "word": "apple",
+              "wordUz": "olma",
+              "answer": "an",
+              "whyUz": "a — unli",
+              "scanCorrect": true
+            },
+            {
+              "n": 7,
+              "word": "pencil",
+              "wordUz": "qalam",
+              "answer": "a",
+              "whyUz": "p — undosh",
+              "scanCorrect": true
+            },
+            {
+              "n": 8,
+              "word": "bicycle",
+              "wordUz": "velosiped",
+              "answer": "a",
+              "whyUz": "b — undosh",
+              "commonMistake": {
+                "wrong": "an",
+                "whyUz": "Qo'lyozmada 'an bicycle' — XATO. 'b' undosh → a bicycle."
+              }
+            },
+            {
+              "n": 9,
+              "word": "woman",
+              "wordUz": "ayol",
+              "answer": "a",
+              "whyUz": "w — undosh",
+              "commonMistake": {
+                "wrong": "an",
+                "whyUz": "Qo'lyozmada 'an woman' — XATO. 'w' undosh tovush → a woman."
+              }
+            },
+            {
+              "n": 10,
+              "word": "banana",
+              "wordUz": "banan",
+              "answer": "a",
+              "whyUz": "b — undosh",
+              "commonMistake": {
+                "wrong": "an",
+                "whyUz": "Qo'lyozmada 'an banana' — XATO. So'z ICHIDA unli ko'p bo'lsa ham, faqat BIRINCHI tovush muhim → a banana."
+              }
+            },
+            {
+              "n": 11,
+              "word": "hat",
+              "wordUz": "shlyapa",
+              "answer": "a",
+              "whyUz": "h o'qiladi → undosh",
+              "scanCorrect": true
+            },
+            {
+              "n": 12,
+              "word": "elephant",
+              "wordUz": "fil",
+              "answer": "an",
+              "whyUz": "e — unli",
+              "commonMistake": {
+                "wrong": "a",
+                "whyUz": "Qo'lyozmada 'a elephant' — XATO. 'e' unli → an elephant."
+              }
+            }
           ]
         }
       ]
@@ -53,16 +161,59 @@
           "instructionEn": "Write the missing forms of the verb \"to be\".",
           "instructionUz": "\"to be\" fe'lining yetishmayotgan shakllarini yozing.",
           "explanationUz": "Jadvalni to'ldirish — barcha 8 ta shaklni yodda saqlash uchun.\nEsda tuting: I → am, he/she/it → is, you/we/they → are.",
-          "columns": ["FULL FORM", "SHORT FORM"],
+          "columns": [
+            "FULL FORM",
+            "SHORT FORM"
+          ],
           "items": [
-            { "subject": "I", "full": "I am", "short": "I'm", "given": true },
-            { "subject": "you", "full": "you are", "short": "you're", "shortBlank": true },
-            { "subject": "he", "full": "he is", "short": "he's", "fullBlank": true },
-            { "subject": "she", "full": "she is", "short": "she's", "shortBlank": true },
-            { "subject": "it", "full": "it is", "short": "it's", "shortBlank": true },
-            { "subject": "we", "full": "we are", "short": "we're", "shortBlank": true },
-            { "subject": "you", "full": "you are", "short": "you're", "fullBlank": true },
-            { "subject": "they", "full": "they are", "short": "they're", "shortBlank": true }
+            {
+              "subject": "I",
+              "full": "I am",
+              "short": "I'm",
+              "given": true
+            },
+            {
+              "subject": "you",
+              "full": "you are",
+              "short": "you're",
+              "shortBlank": true
+            },
+            {
+              "subject": "he",
+              "full": "he is",
+              "short": "he's",
+              "fullBlank": true
+            },
+            {
+              "subject": "she",
+              "full": "she is",
+              "short": "she's",
+              "shortBlank": true
+            },
+            {
+              "subject": "it",
+              "full": "it is",
+              "short": "it's",
+              "shortBlank": true
+            },
+            {
+              "subject": "we",
+              "full": "we are",
+              "short": "we're",
+              "shortBlank": true
+            },
+            {
+              "subject": "you",
+              "full": "you are",
+              "short": "you're",
+              "fullBlank": true
+            },
+            {
+              "subject": "they",
+              "full": "they are",
+              "short": "they're",
+              "shortBlank": true
+            }
           ]
         },
         {
@@ -73,14 +224,55 @@
           "explanationUz": "Bu — o'zini tanishtirish matni. Har bo'shliqda EGAga qarang:\n• I → am\n• This / Mary → is\n• Mary and I / We → are\nDIQQAT: 'Mary and I' — ikki kishi, ya'ni 'we' ga teng → ARE (is emas!).",
           "textTitle": "George haqida",
           "items": [
-            { "n": 1, "textEn": "Hi, I 1) ___ George.", "answer": "am", "given": true },
-            { "n": 2, "textEn": "I 2) ___ a pilot.", "answer": "am", "commonMistake": { "wrong": "an", "whyUz": "Qo'lyozmada 'an' yozilgan — bu ARTIKL, fe'l emas! Savol 'to be' fe'lini so'rayapti. 'I AM a pilot' — 'a pilot' allaqachon matnda bor." } },
-            { "n": 3, "textEn": "This 3) ___ my friend, Mary.", "answer": "is" },
-            { "n": 4, "textEn": "Mary and I 4) ___ neighbours.", "answer": "are", "commonMistake": { "wrong": "is", "whyUz": "Qo'lyozmada 'is' — XATO. 'Mary and I' = IKKI kishi = 'we' → ARE. Ega qo'shma bo'lsa, doim ko'plik." } },
-            { "n": 5, "textEn": "We 5) ___ also good friends.", "answer": "are" },
-            { "n": 6, "textEn": "I 6) ___ thirty-three years old", "answer": "am" },
-            { "n": 7, "textEn": "and Mary 7) ___ twenty-seven.", "answer": "is" },
-            { "n": 8, "textEn": "We 8) ___ from Edinburgh, Scotland.", "answer": "are" }
+            {
+              "n": 1,
+              "textEn": "Hi, I 1) ___ George.",
+              "answer": "am",
+              "given": true
+            },
+            {
+              "n": 2,
+              "textEn": "I 2) ___ a pilot.",
+              "answer": "am",
+              "commonMistake": {
+                "wrong": "an",
+                "whyUz": "Qo'lyozmada 'an' yozilgan — bu ARTIKL, fe'l emas! Savol 'to be' fe'lini so'rayapti. 'I AM a pilot' — 'a pilot' allaqachon matnda bor."
+              }
+            },
+            {
+              "n": 3,
+              "textEn": "This 3) ___ my friend, Mary.",
+              "answer": "is"
+            },
+            {
+              "n": 4,
+              "textEn": "Mary and I 4) ___ neighbours.",
+              "answer": "are",
+              "commonMistake": {
+                "wrong": "is",
+                "whyUz": "Qo'lyozmada 'is' — XATO. 'Mary and I' = IKKI kishi = 'we' → ARE. Ega qo'shma bo'lsa, doim ko'plik."
+              }
+            },
+            {
+              "n": 5,
+              "textEn": "We 5) ___ also good friends.",
+              "answer": "are"
+            },
+            {
+              "n": 6,
+              "textEn": "I 6) ___ thirty-three years old",
+              "answer": "am"
+            },
+            {
+              "n": 7,
+              "textEn": "and Mary 7) ___ twenty-seven.",
+              "answer": "is"
+            },
+            {
+              "n": 8,
+              "textEn": "We 8) ___ from Edinburgh, Scotland.",
+              "answer": "are"
+            }
           ]
         }
       ]
@@ -100,49 +292,101 @@
             {
               "n": 1,
               "lines": [
-                { "who": "A", "textEn": "Where are ___ from?", "answer": "you", "given": true },
-                { "who": "B", "textEn": "___ 'm from Italy.", "answer": "I" }
+                {
+                  "who": "A",
+                  "textEn": "Where are ___ from?",
+                  "answer": "you",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "___ 'm from Italy.",
+                  "answer": "I"
+                }
               ],
               "whyUz": "''m' faqat I bilan."
             },
             {
               "n": 2,
               "lines": [
-                { "who": "A", "textEn": "Who are ___ ?", "answer": "they" },
-                { "who": "B", "textEn": "___ are my neighbours, Ann and David.", "answer": "They" }
+                {
+                  "who": "A",
+                  "textEn": "Who are ___ ?",
+                  "answer": "they"
+                },
+                {
+                  "who": "B",
+                  "textEn": "___ are my neighbours, Ann and David.",
+                  "answer": "They"
+                }
               ],
               "whyUz": "Javobda ikki kishi (Ann va David) → they.",
-              "commonMistake": { "wrong": "you / We", "whyUz": "Qo'lyozmada 'you' va 'We' — XATO. Gap Ann va David haqida, ya'ni UCHINCHI shaxs ko'plik → they / They." }
+              "commonMistake": {
+                "wrong": "you / We",
+                "whyUz": "Qo'lyozmada 'you' va 'We' — XATO. Gap Ann va David haqida, ya'ni UCHINCHI shaxs ko'plik → they / They."
+              }
             },
             {
               "n": 3,
               "lines": [
-                { "who": "A", "textEn": "How old is Margaret?", "given": true },
-                { "who": "B", "textEn": "___ is eighteen.", "answer": "She" }
+                {
+                  "who": "A",
+                  "textEn": "How old is Margaret?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "___ is eighteen.",
+                  "answer": "She"
+                }
               ],
               "whyUz": "Margaret — ayol ismi → She."
             },
             {
               "n": 4,
               "lines": [
-                { "who": "A", "textEn": "Where is John?", "given": true },
-                { "who": "B", "textEn": "___ is at the party.", "answer": "He" }
+                {
+                  "who": "A",
+                  "textEn": "Where is John?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "___ is at the party.",
+                  "answer": "He"
+                }
               ],
               "whyUz": "John — erkak ismi → He."
             },
             {
               "n": 5,
               "lines": [
-                { "who": "A", "textEn": "Are Jane and Tony from London?", "given": true },
-                { "who": "B", "textEn": "Yes, ___ are.", "answer": "they" }
+                {
+                  "who": "A",
+                  "textEn": "Are Jane and Tony from London?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "Yes, ___ are.",
+                  "answer": "they"
+                }
               ],
               "whyUz": "Ikki kishi → they."
             },
             {
               "n": 6,
               "lines": [
-                { "who": "A", "textEn": "Is this your umbrella?", "given": true },
-                { "who": "B", "textEn": "Yes, ___ is.", "answer": "it" }
+                {
+                  "who": "A",
+                  "textEn": "Is this your umbrella?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "Yes, ___ is.",
+                  "answer": "it"
+                }
               ],
               "whyUz": "Soyabon — narsa → it."
             }
@@ -158,40 +402,102 @@
             {
               "n": 1,
               "lines": [
-                { "who": "A", "textEn": "___ Ann from Poland?", "answer": "Is" },
-                { "who": "B", "textEn": "No, she ___ . She ___ from Spain.", "answers": ["isn't", "is"], "alt": ["isn't", "'s"] }
+                {
+                  "who": "A",
+                  "textEn": "___ Ann from Poland?",
+                  "answer": "Is"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, she ___ . She ___ from Spain.",
+                  "answers": [
+                    "isn't",
+                    "is"
+                  ],
+                  "alt": [
+                    "isn't",
+                    "'s"
+                  ]
+                }
               ],
               "whyUz": "Ann — ayol → Is / isn't / She's."
             },
             {
               "n": 2,
               "lines": [
-                { "who": "A", "textEn": "What ___ your favourite sport?", "answer": "is" },
-                { "who": "B", "textEn": "My favourite sport ___ football.", "answer": "is" }
+                {
+                  "who": "A",
+                  "textEn": "What ___ your favourite sport?",
+                  "answer": "is"
+                },
+                {
+                  "who": "B",
+                  "textEn": "My favourite sport ___ football.",
+                  "answer": "is"
+                }
               ],
               "whyUz": "'sport' — birlik narsa → is."
             },
             {
               "n": 3,
               "lines": [
-                { "who": "A", "textEn": "___ they from Finland?", "answer": "Are" },
-                { "who": "B", "textEn": "No, they ___ . They ___ British.", "answers": ["aren't", "are"], "alt": ["aren't", "'re"] }
+                {
+                  "who": "A",
+                  "textEn": "___ they from Finland?",
+                  "answer": "Are"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, they ___ . They ___ British.",
+                  "answers": [
+                    "aren't",
+                    "are"
+                  ],
+                  "alt": [
+                    "aren't",
+                    "'re"
+                  ]
+                }
               ],
               "whyUz": "they → Are / aren't / They're."
             },
             {
               "n": 4,
               "lines": [
-                { "who": "A", "textEn": "___ Bob ten years old?", "answer": "Is" },
-                { "who": "B", "textEn": "No, he ___ . He ___ thirteen.", "answers": ["isn't", "is"], "alt": ["isn't", "'s"] }
+                {
+                  "who": "A",
+                  "textEn": "___ Bob ten years old?",
+                  "answer": "Is"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, he ___ . He ___ thirteen.",
+                  "answers": [
+                    "isn't",
+                    "is"
+                  ],
+                  "alt": [
+                    "isn't",
+                    "'s"
+                  ]
+                }
               ],
               "whyUz": "Bob — erkak → Is / isn't / He's."
             },
             {
               "n": 5,
               "lines": [
-                { "who": "A", "textEn": "How old ___ you?", "answer": "are" },
-                { "who": "B", "textEn": "I ___ forty-four.", "answer": "am", "alt": "'m" }
+                {
+                  "who": "A",
+                  "textEn": "How old ___ you?",
+                  "answer": "are"
+                },
+                {
+                  "who": "B",
+                  "textEn": "I ___ forty-four.",
+                  "answer": "am",
+                  "alt": "'m"
+                }
               ],
               "whyUz": "you → are. Javobda I → am."
             }
@@ -208,23 +514,89 @@
         "ruleUz": "Artikl tuzoqlari — harf ≠ tovush",
         "explanationUz": "Ba'zi so'zlarda yozilgan harf va o'qiladigan tovush mos kelmaydi. Aynan shular xatoga sabab bo'ladi:",
         "items": [
-          { "base": "umbrella", "baseUz": "soyabon", "derived": "an umbrella", "derivedUz": "", "note": "u → 'am' unli tovushi" },
-          { "base": "university", "baseUz": "universitet", "derived": "a university", "derivedUz": "", "note": "u → 'yu' undosh tovushi" },
-          { "base": "hat", "baseUz": "shlyapa", "derived": "a hat", "derivedUz": "", "note": "h o'qiladi → undosh" },
-          { "base": "hour", "baseUz": "soat (vaqt)", "derived": "an hour", "derivedUz": "", "note": "h o'qilmaydi → unli" },
-          { "base": "elephant", "baseUz": "fil", "derived": "an elephant", "derivedUz": "", "note": "e → unli" },
-          { "base": "European", "baseUz": "yevropalik", "derived": "a European", "derivedUz": "", "note": "E → 'yu' undosh!" }
+          {
+            "base": "umbrella",
+            "baseUz": "soyabon",
+            "derived": "an umbrella",
+            "derivedUz": "",
+            "note": "u → 'am' unli tovushi"
+          },
+          {
+            "base": "university",
+            "baseUz": "universitet",
+            "derived": "a university",
+            "derivedUz": "",
+            "note": "u → 'yu' undosh tovushi"
+          },
+          {
+            "base": "hat",
+            "baseUz": "shlyapa",
+            "derived": "a hat",
+            "derivedUz": "",
+            "note": "h o'qiladi → undosh"
+          },
+          {
+            "base": "hour",
+            "baseUz": "soat (vaqt)",
+            "derived": "an hour",
+            "derivedUz": "",
+            "note": "h o'qilmaydi → unli"
+          },
+          {
+            "base": "elephant",
+            "baseUz": "fil",
+            "derived": "an elephant",
+            "derivedUz": "",
+            "note": "e → unli"
+          },
+          {
+            "base": "European",
+            "baseUz": "yevropalik",
+            "derived": "a European",
+            "derivedUz": "",
+            "note": "E → 'yu' undosh!"
+          }
         ]
       },
       {
         "ruleUz": "Erkak / ayol / bola",
         "explanationUz": "Odam nomlari — ko'pligi qoidasiz bo'lganlari:",
         "items": [
-          { "base": "man", "baseUz": "erkak", "derived": "men", "derivedUz": "erkaklar", "note": "qoidasiz ko'plik" },
-          { "base": "woman", "baseUz": "ayol", "derived": "women", "derivedUz": "ayollar", "note": "qoidasiz (o'qilishi 'vimin')" },
-          { "base": "child", "baseUz": "bola", "derived": "children", "derivedUz": "bolalar", "note": "qoidasiz" },
-          { "base": "boy", "baseUz": "o'g'il bola", "derived": "boys", "derivedUz": "o'g'il bolalar", "note": "oddiy -s" },
-          { "base": "girl", "baseUz": "qiz", "derived": "girls", "derivedUz": "qizlar", "note": "oddiy -s" }
+          {
+            "base": "man",
+            "baseUz": "erkak",
+            "derived": "men",
+            "derivedUz": "erkaklar",
+            "note": "qoidasiz ko'plik"
+          },
+          {
+            "base": "woman",
+            "baseUz": "ayol",
+            "derived": "women",
+            "derivedUz": "ayollar",
+            "note": "qoidasiz (o'qilishi 'vimin')"
+          },
+          {
+            "base": "child",
+            "baseUz": "bola",
+            "derived": "children",
+            "derivedUz": "bolalar",
+            "note": "qoidasiz"
+          },
+          {
+            "base": "boy",
+            "baseUz": "o'g'il bola",
+            "derived": "boys",
+            "derivedUz": "o'g'il bolalar",
+            "note": "oddiy -s"
+          },
+          {
+            "base": "girl",
+            "baseUz": "qiz",
+            "derived": "girls",
+            "derivedUz": "qizlar",
+            "note": "oddiy -s"
+          }
         ]
       }
     ]
@@ -254,24 +626,81 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "orange", "uz": "apelsin" },
-    { "en": "umbrella", "uz": "soyabon" },
-    { "en": "girl", "uz": "qiz" },
-    { "en": "boy", "uz": "o'g'il bola" },
-    { "en": "man", "uz": "erkak" },
-    { "en": "woman", "uz": "ayol" },
-    { "en": "apple", "uz": "olma" },
-    { "en": "pencil", "uz": "qalam" },
-    { "en": "bicycle", "uz": "velosiped" },
-    { "en": "banana", "uz": "banan" },
-    { "en": "hat", "uz": "shlyapa" },
-    { "en": "elephant", "uz": "fil" },
-    { "en": "pilot", "uz": "uchuvchi" },
-    { "en": "neighbour", "uz": "qo'shni" },
-    { "en": "also", "uz": "ham, shuningdek" },
-    { "en": "good friend", "uz": "yaqin do'st" },
-    { "en": "party", "uz": "bazm" },
-    { "en": "Finland", "uz": "Finlandiya" },
-    { "en": "Poland", "uz": "Polsha" }
+    {
+      "en": "orange",
+      "uz": "apelsin"
+    },
+    {
+      "en": "umbrella",
+      "uz": "soyabon"
+    },
+    {
+      "en": "girl",
+      "uz": "qiz"
+    },
+    {
+      "en": "boy",
+      "uz": "o'g'il bola"
+    },
+    {
+      "en": "man",
+      "uz": "erkak"
+    },
+    {
+      "en": "woman",
+      "uz": "ayol"
+    },
+    {
+      "en": "apple",
+      "uz": "olma"
+    },
+    {
+      "en": "pencil",
+      "uz": "qalam"
+    },
+    {
+      "en": "bicycle",
+      "uz": "velosiped"
+    },
+    {
+      "en": "banana",
+      "uz": "banan"
+    },
+    {
+      "en": "hat",
+      "uz": "shlyapa"
+    },
+    {
+      "en": "elephant",
+      "uz": "fil"
+    },
+    {
+      "en": "pilot",
+      "uz": "uchuvchi"
+    },
+    {
+      "en": "neighbour",
+      "uz": "qo'shni"
+    },
+    {
+      "en": "also",
+      "uz": "ham, shuningdek"
+    },
+    {
+      "en": "good friend",
+      "uz": "yaqin do'st"
+    },
+    {
+      "en": "party",
+      "uz": "bazm"
+    },
+    {
+      "en": "Finland",
+      "uz": "Finlandiya"
+    },
+    {
+      "en": "Poland",
+      "uz": "Polsha"
+    }
   ]
 }
