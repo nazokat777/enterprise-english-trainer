@@ -197,7 +197,7 @@ kerak.
 
 ---
 
-## B. To'ldirilgan, lekin tasdiq kerak — 4 band
+## B. To'ldirilgan, lekin tasdiq kerak
 
 ### CB 81-bet, Ex.21 — "Listen to the story"
 
@@ -216,6 +216,36 @@ chiqarilgan — to'rttasi ishonchli, to'rttasi **tekshirilsin**:
 | g | He climbed ...... onto a ladder. | **quickly** ← tekshirilsin |
 | h | He climbed ...... down. | **carefully** ← tekshirilsin |
 
+### Mantiq bilan to'ldirilgan 17 mashq
+
+Bu mashqlarda **rasmiy javob kassetada**. Javob betdan to'g'ridan-to'g'ri
+o'qilmaydi, lekin rasm, jadval, narx, tabiat faktlari yoki dialog mantiqi
+bilan aniqlanadi. Har bir javobning **sababi** JSON'da yozilgan — ya'ni
+taxmin emas, asoslangan xulosa. Kassetani topgach shu 17 tasi tekshirilsin:
+
+| Bet | Mashq | Nima kassetada |
+|---|---|---|
+| CB 23 | Ex.18a, 18b | Karen va Tomning uy tanlashi — javob e'lon matni va narxdan chiqarilgan |
+| CB 30 | Ex.23b | Helen haftaning qaysi kunlari nima qilishi |
+| CB 31 | Ex.25, 27 | Uch odamning tashqi ko'rinish sifatlari — rasmdan chiqarilgan |
+| CB 37 | Ex.12a | Lauraning yakshanba ishlari (kitob faqat bittasini bergan) |
+| CB 38 | Ex.16 | Meri va Royning tug'ilgan yili/vaqti — jadvalda yo'q qismi ochiq |
+| CB 39 | Ex.19 | Oxirgi bo'shliq: 'to' ham, 'past' ham grammatik to'g'ri |
+| CB 42 | Ex.8 | Qaysi hayvon ovozi eshitiladi (kitob faqat 'a hen' bergan) |
+| CB 42 | Ex.11 | Hayvonlar haqidagi T/F — javoblar tabiat faktlaridan |
+| CB 45 | Ex.20 | Dialogdagi YOSH raqami |
+| CB 45 | Ex.21 | Olti bo'shliqning hammasi |
+| CB 48 | Ex.6 | Ob-havo↔shahar mosligi (Sidney/London/Varshava iqlimidan) |
+| CB 51 | Ex.16 | Qaysi tovush eshitiladi (kitob faqat 1-bandni bergan) |
+| CB 52 | Ex.18b | Rasmlarni raqamlash tartibi (kitob faqat Stivni '1' qilgan) |
+| CB 57 | Ex.12 | Xarid ro'yxatida nimasi ✓, nimasi chizib tashlanadi |
+| CB 59 | Ex.21 | Jadvaldagi qalin variantlardan qaysi biri to'g'ri |
+| CB 81 | Ex.21 | Yuqoridagi to'rt ravish |
+
+⚠ Bu ro'yxat kech tuzildi: `audioRequiredUz` maydoni faqat kitobning
+o'rtasidan boshlab qo'shilgan edi, shuning uchun avval faqat 95-betdan
+keyingi mashqlar sanab o'tilgan edi. Endi butun kitob bo'ylab tekshirildi.
+
 ---
 
 ## C. Audio KERAK EMAS — chalkashmaslik uchun
@@ -224,7 +254,7 @@ Kitobda **"listen and check"** deb yozilgan, lekin javob betning o'zida
 bosilgan bo'lgan mashqlar. Bular allaqachon **to'liq yopilgan**, audio
 faqat talaffuz uchun kerak:
 
-CB 82 (Ex.3) · CB 86 (Ex.16, 17) · CB 87 (Ex.19a) · CB 89 (Ex.2, 5) ·
+CB 70 (Ex.3) · CB 82 (Ex.3) · CB 86 (Ex.16, 17) · CB 87 (Ex.19a) · CB 89 (Ex.2, 5) ·
 CB 92 (Ex.1b, 2) · CB 96 (Ex.12a) · CB 98 (Ex.3) · CB 99 (Ex.6) ·
 CB 100 (Ex.7a) · CB 102 (Ex.14) · CB 104 (Ex.3) · CB 108 (Ex.17a, 18) ·
 CB 110 · CB 112 · CB 113 (Ex.2)
