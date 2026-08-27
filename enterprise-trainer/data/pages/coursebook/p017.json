@@ -5,6 +5,7 @@
   "unit": 2,
   "unitTitle": "A Friend in Need ...",
   "module": 1,
+  "scanNote": "15-BET. Unit 2 davomi — 'can' grammatikasi va qobiliyatlar.\n\nIkkala rasmli mashq ham skaner bilan tekshirildi, HAMMASI TO'G'RI:\n\n12a — rasmda 8 ta narsa bor: car, bus, dog, helicopter, train, motorbike, plane, cat.\n  Ro'yxatda esa 11 ta so'z: qo'shimcha guitar, piano, computer — bularning rasmi YO'Q.\n  ⚠ Bu — kitobning ataylab qo'ygan tuzog'i: uchtasiga 'No, I can't' deb javob beriladi. Izohda tushuntirilgan.\n\n13 — 8 ta surat:\n  1 swim fast (basseyndagi suzuvchi), 2 type fast (kompyuterda yozayotgan ayol), 3 walk fast (paltoda tez yurayotgan erkak), 4 speak English well ('HELLO!' pufakchasi), 5 dance well (baletchi qiz), 6 read fast (kitob o'qiyotgan bola), 7 cook well (likopchali oshpaz), 8 run fast (yugurayotgan ayol).\n\n  Ro'yxat harflari bilan: a=7, b=5, c=4, d=8, e=3, f=6, g=1, h=2.\n\n⚠ Foizli shkala kitobda bosilgan: very well/fast 95%, quite well/fast 70%, not very well/fast 40%, no 0%. Izohda saqlangan.",
   "sections": [
     {
       "kind": "writing",
@@ -40,14 +41,28 @@
         "titleUz": "can — qobiliyat va iltimos",
         "explanationUz": "'can' — modal fe'l. Uning ikkita katta afzalligi bor:\n\n1) BARCHA SHAXSLARDA BIR XIL. He/she/it bilan ham -S QO'SHILMAYDI:\n     I can · he can · they can   ('he cans' — XATO)\n\n2) O'zidan keyingi fe'l ASOS SHAKLIDA turadi:\n     'He can play' — 'to play' ham, 'plays' ham EMAS.\n\nIkki ma'noda ishlatiladi:\n  • QOBILIYAT — Tom can play football. (Tom futbol o'ynay oladi)\n  • ILTIMOS  — Can you help me, please? (Menga yordam bera olasizmi?)",
         "affirmative": [
-          { "subject": "I/you/he/she/it/we/they", "full": "I can run", "short": "can", "uz": "yugura olaman" }
+          {
+            "subject": "I/you/he/she/it/we/they",
+            "full": "I can run",
+            "short": "can",
+            "uz": "yugura olaman"
+          }
         ],
         "negative": [
-          { "subject": "I/you/he/she/it/we/they", "full": "I cannot run", "short": "I can't run", "uz": "yugura olmayman" }
+          {
+            "subject": "I/you/he/she/it/we/they",
+            "full": "I cannot run",
+            "short": "I can't run",
+            "uz": "yugura olmayman"
+          }
         ],
         "negativeNoteUz": "To'liq shakl BITTA so'z bo'lib yoziladi: 'cannot' ('can not' emas). Qisqasi — can't.",
         "interrogative": [
-          { "q": "Can I/you/he/she/it/we/they run?", "yes": "Yes, I/you/he/she/it/we/they can.", "no": "No, I/you/he/she/it/we/they can't." }
+          {
+            "q": "Can I/you/he/she/it/we/they run?",
+            "yes": "Yes, I/you/he/she/it/we/they can.",
+            "no": "No, I/you/he/she/it/we/they can't."
+          }
         ],
         "interrogativeNoteUz": "So'roqda 'do/does' ISHLATILMAYDI: 'Can you swim?' — 'Do you can swim?' XATO.\nQisqa javobda asosiy fe'l TAKRORLANMAYDI: 'Yes, I can.' ('Yes, I can swim' emas).",
         "exampleEn": "Tom can play football. (ability) / Can you help me, please? (polite request)",
@@ -62,19 +77,77 @@
           "instructionUz": "Rasmlarga va quyidagi so'zlar ro'yxatiga qarang. Namunadagidek savol-javob qiling.",
           "explanationUz": "Qolip: 'Can you see a ...?' → 'Yes, I can.' / 'No, I can't.'\n\nDIQQAT: 'see' — ko'rmoq. Bu yerda 'can' qobiliyat emas, IMKONIYAT\nma'nosida: rasmda bormi-yo'qmi.\n\nRo'yxatda 11 ta so'z bor, lekin rasmda faqat 8 tasi. Uchtasi YO'Q —\no'sha uchtasiga 'No, I can't' deb javob beriladi.",
           "bookRef": "Coursebook, 15-bet — Ex. 12 rasmlari",
-          "options": ["Yes, I can.", "No, I can't."],
+          "options": [
+            "Yes, I can.",
+            "No, I can't."
+          ],
           "answers": [
-            { "picture": "car", "country": "Yes, I can.", "descEn": "Can you see a car?", "descUz": "Mashinani ko'ryapsizmi?" },
-            { "picture": "bus", "country": "Yes, I can.", "descEn": "Can you see a bus?", "descUz": "Avtobusni ko'ryapsizmi?" },
-            { "picture": "dog", "country": "Yes, I can.", "descEn": "Can you see a dog?", "descUz": "Itni ko'ryapsizmi?" },
-            { "picture": "helicopter", "country": "Yes, I can.", "descEn": "Can you see a helicopter?", "descUz": "Vertolyotni ko'ryapsizmi?" },
-            { "picture": "train", "country": "Yes, I can.", "descEn": "Can you see a train?", "descUz": "Poyezdni ko'ryapsizmi?" },
-            { "picture": "motorbike", "country": "Yes, I can.", "descEn": "Can you see a motorbike?", "descUz": "Mototsiklni ko'ryapsizmi?" },
-            { "picture": "plane", "country": "Yes, I can.", "descEn": "Can you see a plane?", "descUz": "Samolyotni ko'ryapsizmi?" },
-            { "picture": "cat", "country": "Yes, I can.", "descEn": "Can you see a cat?", "descUz": "Mushukni ko'ryapsizmi?" },
-            { "picture": "guitar", "country": "No, I can't.", "descEn": "Can you see a guitar?", "descUz": "Gitarani ko'ryapsizmi?" },
-            { "picture": "piano", "country": "No, I can't.", "descEn": "Can you see a piano?", "descUz": "Pianinoni ko'ryapsizmi?" },
-            { "picture": "computer", "country": "No, I can't.", "descEn": "Can you see a computer?", "descUz": "Kompyuterni ko'ryapsizmi?" }
+            {
+              "picture": "car",
+              "country": "Yes, I can.",
+              "descEn": "Can you see a car?",
+              "descUz": "Mashinani ko'ryapsizmi?"
+            },
+            {
+              "picture": "bus",
+              "country": "Yes, I can.",
+              "descEn": "Can you see a bus?",
+              "descUz": "Avtobusni ko'ryapsizmi?"
+            },
+            {
+              "picture": "dog",
+              "country": "Yes, I can.",
+              "descEn": "Can you see a dog?",
+              "descUz": "Itni ko'ryapsizmi?"
+            },
+            {
+              "picture": "helicopter",
+              "country": "Yes, I can.",
+              "descEn": "Can you see a helicopter?",
+              "descUz": "Vertolyotni ko'ryapsizmi?"
+            },
+            {
+              "picture": "train",
+              "country": "Yes, I can.",
+              "descEn": "Can you see a train?",
+              "descUz": "Poyezdni ko'ryapsizmi?"
+            },
+            {
+              "picture": "motorbike",
+              "country": "Yes, I can.",
+              "descEn": "Can you see a motorbike?",
+              "descUz": "Mototsiklni ko'ryapsizmi?"
+            },
+            {
+              "picture": "plane",
+              "country": "Yes, I can.",
+              "descEn": "Can you see a plane?",
+              "descUz": "Samolyotni ko'ryapsizmi?"
+            },
+            {
+              "picture": "cat",
+              "country": "Yes, I can.",
+              "descEn": "Can you see a cat?",
+              "descUz": "Mushukni ko'ryapsizmi?"
+            },
+            {
+              "picture": "guitar",
+              "country": "No, I can't.",
+              "descEn": "Can you see a guitar?",
+              "descUz": "Gitarani ko'ryapsizmi?"
+            },
+            {
+              "picture": "piano",
+              "country": "No, I can't.",
+              "descEn": "Can you see a piano?",
+              "descUz": "Pianinoni ko'ryapsizmi?"
+            },
+            {
+              "picture": "computer",
+              "country": "No, I can't.",
+              "descEn": "Can you see a computer?",
+              "descUz": "Kompyuterni ko'ryapsizmi?"
+            }
           ]
         },
         {
@@ -86,10 +159,22 @@
           "instructionUz": "Ex. 12 rasmlariga qayta qarang va tovushlarni eshiting. Avval belgilang, so'ng nimani eshitib, nimani eshitmayotganingizni ayting.",
           "explanationUz": "Qolip: 'I can hear a ..., but I can't hear a ...'\n\n'but' — qarama-qarshilik bog'lovchisi. Ikki gapni bitta gapga birlashtiradi:\n  I can hear a cat. + I can't hear a motorbike.\n  → I can hear a cat, BUT I can't hear a motorbike.\n\n'but' oldidan VERGUL qo'yiladi.",
           "sentences": [
-            { "en": "I can hear a cat, but I can't hear a motorbike.", "uz": "Men mushukni eshityapman, lekin mototsiklni eshitmayapman." },
-            { "en": "I can hear a dog, but I can't hear a train.", "uz": "Men itni eshityapman, lekin poyezdni eshitmayapman." },
-            { "en": "I can hear a plane, but I can't hear a bus.", "uz": "Men samolyotni eshityapman, lekin avtobusni eshitmayapman." },
-            { "en": "I can hear a car, but I can't hear a helicopter.", "uz": "Men mashinani eshityapman, lekin vertolyotni eshitmayapman." }
+            {
+              "en": "I can hear a cat, but I can't hear a motorbike.",
+              "uz": "Men mushukni eshityapman, lekin mototsiklni eshitmayapman."
+            },
+            {
+              "en": "I can hear a dog, but I can't hear a train.",
+              "uz": "Men itni eshityapman, lekin poyezdni eshitmayapman."
+            },
+            {
+              "en": "I can hear a plane, but I can't hear a bus.",
+              "uz": "Men samolyotni eshityapman, lekin avtobusni eshitmayapman."
+            },
+            {
+              "en": "I can hear a car, but I can't hear a helicopter.",
+              "uz": "Men mashinani eshityapman, lekin vertolyotni eshitmayapman."
+            }
           ]
         },
         {
@@ -99,27 +184,104 @@
           "instructionUz": "Ro'yxatdagi iboralarni rasmlarga moslang. So'ng juftlikda sherigingiz nima qila olishi va qila olmasligini savol-javob bilan aniqlang.",
           "explanationUz": "QANCHALIK YAXSHI — daraja aytish shkalasi:\n  very well / very fast   — 95%  (juda yaxshi / juda tez)\n  quite well / quite fast — 70%  (ancha yaxshi / ancha tez)\n  not very well / not very fast — 40%  (unchalik emas)\n  no                      — 0%   (umuman yo'q)\n\nDIQQAT — 'well' va 'fast' farqi:\n  • well  — SIFAT darajasi: cook well, dance well, speak English well\n  • fast  — TEZLIK: run fast, walk fast, read fast, swim fast, type fast\n\n'well' — 'good' ning ravish shakli. 'I cook good' XATO, 'I cook well' to'g'ri.",
           "bookRef": "Coursebook, 15-bet — 1–8 rasmlar",
-          "options": ["cook well", "dance well", "speak English well", "run fast", "walk fast", "read fast", "swim fast", "type fast"],
+          "options": [
+            "cook well",
+            "dance well",
+            "speak English well",
+            "run fast",
+            "walk fast",
+            "read fast",
+            "swim fast",
+            "type fast"
+          ],
           "answers": [
-            { "picture": "1", "country": "swim fast", "descEn": "A swimmer in a pool", "descUz": "Basseynda suzuvchi" },
-            { "picture": "2", "country": "type fast", "descEn": "A woman typing at a computer", "descUz": "Kompyuterda matn teruvchi ayol" },
-            { "picture": "3", "country": "walk fast", "descEn": "A man in a coat walking quickly", "descUz": "Paltoli erkak tez yurmoqda" },
-            { "picture": "4", "country": "speak English well", "descEn": "A woman with a \"HELLO!\" speech bubble", "descUz": "\"HELLO!\" pufakchali ayol" },
-            { "picture": "5", "country": "dance well", "descEn": "A ballerina dancing", "descUz": "Raqsga tushayotgan balerina" },
-            { "picture": "6", "country": "read fast", "descEn": "A boy reading a book", "descUz": "Kitob o'qiyotgan bola" },
-            { "picture": "7", "country": "cook well", "descEn": "A chef with a plate of food", "descUz": "Taom tutgan oshpaz" },
-            { "picture": "8", "country": "run fast", "descEn": "A woman jogging on a road", "descUz": "Yo'lda yugurayotgan ayol" }
+            {
+              "picture": "1",
+              "country": "swim fast",
+              "descEn": "A swimmer in a pool",
+              "descUz": "Basseynda suzuvchi"
+            },
+            {
+              "picture": "2",
+              "country": "type fast",
+              "descEn": "A woman typing at a computer",
+              "descUz": "Kompyuterda matn teruvchi ayol"
+            },
+            {
+              "picture": "3",
+              "country": "walk fast",
+              "descEn": "A man in a coat walking quickly",
+              "descUz": "Paltoli erkak tez yurmoqda"
+            },
+            {
+              "picture": "4",
+              "country": "speak English well",
+              "descEn": "A woman with a \"HELLO!\" speech bubble",
+              "descUz": "\"HELLO!\" pufakchali ayol"
+            },
+            {
+              "picture": "5",
+              "country": "dance well",
+              "descEn": "A ballerina dancing",
+              "descUz": "Raqsga tushayotgan balerina"
+            },
+            {
+              "picture": "6",
+              "country": "read fast",
+              "descEn": "A boy reading a book",
+              "descUz": "Kitob o'qiyotgan bola"
+            },
+            {
+              "picture": "7",
+              "country": "cook well",
+              "descEn": "A chef with a plate of food",
+              "descUz": "Taom tutgan oshpaz"
+            },
+            {
+              "picture": "8",
+              "country": "run fast",
+              "descEn": "A woman jogging on a road",
+              "descUz": "Yo'lda yugurayotgan ayol"
+            }
           ],
           "example": [
-            { "speaker": "S1", "en": "Can you cook?", "uz": "Ovqat pishira olasizmi?" },
-            { "speaker": "S2", "en": "Yes. I can cook quite well. Can you dance?", "uz": "Ha. Ancha yaxshi pishiraman. Siz raqsga tusha olasizmi?" },
-            { "speaker": "S3", "en": "No, I can't. Can you dance?", "uz": "Yo'q, tusholmayman. Siz-chi?" }
+            {
+              "speaker": "S1",
+              "en": "Can you cook?",
+              "uz": "Ovqat pishira olasizmi?"
+            },
+            {
+              "speaker": "S2",
+              "en": "Yes. I can cook quite well. Can you dance?",
+              "uz": "Ha. Ancha yaxshi pishiraman. Siz raqsga tusha olasizmi?"
+            },
+            {
+              "speaker": "S3",
+              "en": "No, I can't. Can you dance?",
+              "uz": "Yo'q, tusholmayman. Siz-chi?"
+            }
           ],
           "scale": [
-            { "en": "very well / very fast", "percent": 95, "uz": "juda yaxshi / juda tez" },
-            { "en": "quite well / quite fast", "percent": 70, "uz": "ancha yaxshi / ancha tez" },
-            { "en": "not very well / not very fast", "percent": 40, "uz": "unchalik yaxshi emas / unchalik tez emas" },
-            { "en": "no", "percent": 0, "uz": "umuman yo'q" }
+            {
+              "en": "very well / very fast",
+              "percent": 95,
+              "uz": "juda yaxshi / juda tez"
+            },
+            {
+              "en": "quite well / quite fast",
+              "percent": 70,
+              "uz": "ancha yaxshi / ancha tez"
+            },
+            {
+              "en": "not very well / not very fast",
+              "percent": 40,
+              "uz": "unchalik yaxshi emas / unchalik tez emas"
+            },
+            {
+              "en": "no",
+              "percent": 0,
+              "uz": "umuman yo'q"
+            }
           ]
         }
       ]
@@ -133,31 +295,109 @@
         "ruleUz": "Sifat → ravish (-ly)",
         "explanationUz": "Sifat NARSANI ta'riflaydi, ravish esa HARAKATNI.\nKo'pchilik ravish -ly bilan yasaladi.",
         "items": [
-          { "base": "quick", "baseUz": "tez (sifat)", "derived": "quickly", "derivedUz": "tez (ravish)", "note": "-ly" },
-          { "base": "slow", "baseUz": "sekin", "derived": "slowly", "derivedUz": "sekin", "note": "-ly" },
-          { "base": "beautiful", "baseUz": "chiroyli", "derived": "beautifully", "derivedUz": "chiroyli qilib", "note": "-ly" },
-          { "base": "easy", "baseUz": "oson", "derived": "easily", "derivedUz": "osonlik bilan", "note": "y → ily" }
+          {
+            "base": "quick",
+            "baseUz": "tez (sifat)",
+            "derived": "quickly",
+            "derivedUz": "tez (ravish)",
+            "note": "-ly"
+          },
+          {
+            "base": "slow",
+            "baseUz": "sekin",
+            "derived": "slowly",
+            "derivedUz": "sekin",
+            "note": "-ly"
+          },
+          {
+            "base": "beautiful",
+            "baseUz": "chiroyli",
+            "derived": "beautifully",
+            "derivedUz": "chiroyli qilib",
+            "note": "-ly"
+          },
+          {
+            "base": "easy",
+            "baseUz": "oson",
+            "derived": "easily",
+            "derivedUz": "osonlik bilan",
+            "note": "y → ily"
+          }
         ]
       },
       {
         "ruleUz": "QOIDASIZ ravishlar — bu betda aynan shular",
         "explanationUz": "Ikkita eng muhim ravish -ly OLMAYDI. Ular shakli o'zgarmaydi yoki butunlay boshqa so'z bo'ladi.",
         "items": [
-          { "base": "good", "baseUz": "yaxshi (sifat)", "derived": "well", "derivedUz": "yaxshi (ravish)", "note": "butunlay boshqa so'z! 'I cook well'" },
-          { "base": "fast", "baseUz": "tez (sifat)", "derived": "fast", "derivedUz": "tez (ravish)", "note": "o'zgarmaydi. 'fastly' YO'Q" },
-          { "base": "hard", "baseUz": "qattiq", "derived": "hard", "derivedUz": "qattiq", "note": "o'zgarmaydi ('hardly' boshqa ma'no!)" },
-          { "base": "late", "baseUz": "kech", "derived": "late", "derivedUz": "kech", "note": "o'zgarmaydi" }
+          {
+            "base": "good",
+            "baseUz": "yaxshi (sifat)",
+            "derived": "well",
+            "derivedUz": "yaxshi (ravish)",
+            "note": "butunlay boshqa so'z! 'I cook well'"
+          },
+          {
+            "base": "fast",
+            "baseUz": "tez (sifat)",
+            "derived": "fast",
+            "derivedUz": "tez (ravish)",
+            "note": "o'zgarmaydi. 'fastly' YO'Q"
+          },
+          {
+            "base": "hard",
+            "baseUz": "qattiq",
+            "derived": "hard",
+            "derivedUz": "qattiq",
+            "note": "o'zgarmaydi ('hardly' boshqa ma'no!)"
+          },
+          {
+            "base": "late",
+            "baseUz": "kech",
+            "derived": "late",
+            "derivedUz": "kech",
+            "note": "o'zgarmaydi"
+          }
         ]
       },
       {
         "ruleUz": "Fe'l → bajaruvchi (bu betdagi rasmlar)",
         "explanationUz": "Ex. 13 dagi rasmlardagi odamlarning nomi.",
         "items": [
-          { "base": "swim", "baseUz": "suzmoq", "derived": "swimmer", "derivedUz": "suzuvchi", "note": "m ikkilanadi" },
-          { "base": "run", "baseUz": "yugurmoq", "derived": "runner", "derivedUz": "yuguruvchi", "note": "n ikkilanadi" },
-          { "base": "cook", "baseUz": "pishirmoq", "derived": "cook", "derivedUz": "oshpaz", "note": "o'zgarmaydi (chef ham)" },
-          { "base": "dance", "baseUz": "raqsga tushmoq", "derived": "dancer", "derivedUz": "raqqos", "note": "-e tushadi" },
-          { "base": "type", "baseUz": "matn termoq", "derived": "typist", "derivedUz": "mashinistka", "note": "-ist" }
+          {
+            "base": "swim",
+            "baseUz": "suzmoq",
+            "derived": "swimmer",
+            "derivedUz": "suzuvchi",
+            "note": "m ikkilanadi"
+          },
+          {
+            "base": "run",
+            "baseUz": "yugurmoq",
+            "derived": "runner",
+            "derivedUz": "yuguruvchi",
+            "note": "n ikkilanadi"
+          },
+          {
+            "base": "cook",
+            "baseUz": "pishirmoq",
+            "derived": "cook",
+            "derivedUz": "oshpaz",
+            "note": "o'zgarmaydi (chef ham)"
+          },
+          {
+            "base": "dance",
+            "baseUz": "raqsga tushmoq",
+            "derived": "dancer",
+            "derivedUz": "raqqos",
+            "note": "-e tushadi"
+          },
+          {
+            "base": "type",
+            "baseUz": "matn termoq",
+            "derived": "typist",
+            "derivedUz": "mashinistka",
+            "note": "-ist"
+          }
         ]
       }
     ]
@@ -205,31 +445,109 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "can", "uz": "...a olmoq" },
-    { "en": "can't / cannot", "uz": "...a olmaslik" },
-    { "en": "ability", "uz": "qobiliyat" },
-    { "en": "polite request", "uz": "muloyim iltimos" },
-    { "en": "base form", "uz": "asos shakli" },
-    { "en": "to hear", "uz": "eshitmoq" },
-    { "en": "to see", "uz": "ko'rmoq" },
-    { "en": "guitar", "uz": "gitara" },
-    { "en": "train", "uz": "poyezd" },
-    { "en": "bus", "uz": "avtobus" },
-    { "en": "helicopter", "uz": "vertolyot" },
-    { "en": "motorbike", "uz": "mototsikl" },
-    { "en": "plane", "uz": "samolyot" },
-    { "en": "to cook", "uz": "ovqat pishirmoq" },
-    { "en": "to dance", "uz": "raqsga tushmoq" },
-    { "en": "to type", "uz": "matn termoq" },
-    { "en": "to walk", "uz": "yurmoq" },
-    { "en": "to run", "uz": "yugurmoq" },
-    { "en": "to swim", "uz": "suzmoq" },
-    { "en": "well", "uz": "yaxshi (ravish)" },
-    { "en": "fast", "uz": "tez" },
-    { "en": "quite", "uz": "ancha" },
-    { "en": "very", "uz": "juda" },
-    { "en": "but", "uz": "lekin" },
-    { "en": "height", "uz": "bo'y" },
-    { "en": "build", "uz": "gavda" }
+    {
+      "en": "can",
+      "uz": "...a olmoq"
+    },
+    {
+      "en": "can't / cannot",
+      "uz": "...a olmaslik"
+    },
+    {
+      "en": "ability",
+      "uz": "qobiliyat"
+    },
+    {
+      "en": "polite request",
+      "uz": "muloyim iltimos"
+    },
+    {
+      "en": "base form",
+      "uz": "asos shakli"
+    },
+    {
+      "en": "to hear",
+      "uz": "eshitmoq"
+    },
+    {
+      "en": "to see",
+      "uz": "ko'rmoq"
+    },
+    {
+      "en": "guitar",
+      "uz": "gitara"
+    },
+    {
+      "en": "train",
+      "uz": "poyezd"
+    },
+    {
+      "en": "bus",
+      "uz": "avtobus"
+    },
+    {
+      "en": "helicopter",
+      "uz": "vertolyot"
+    },
+    {
+      "en": "motorbike",
+      "uz": "mototsikl"
+    },
+    {
+      "en": "plane",
+      "uz": "samolyot"
+    },
+    {
+      "en": "to cook",
+      "uz": "ovqat pishirmoq"
+    },
+    {
+      "en": "to dance",
+      "uz": "raqsga tushmoq"
+    },
+    {
+      "en": "to type",
+      "uz": "matn termoq"
+    },
+    {
+      "en": "to walk",
+      "uz": "yurmoq"
+    },
+    {
+      "en": "to run",
+      "uz": "yugurmoq"
+    },
+    {
+      "en": "to swim",
+      "uz": "suzmoq"
+    },
+    {
+      "en": "well",
+      "uz": "yaxshi (ravish)"
+    },
+    {
+      "en": "fast",
+      "uz": "tez"
+    },
+    {
+      "en": "quite",
+      "uz": "ancha"
+    },
+    {
+      "en": "very",
+      "uz": "juda"
+    },
+    {
+      "en": "but",
+      "uz": "lekin"
+    },
+    {
+      "en": "height",
+      "uz": "bo'y"
+    },
+    {
+      "en": "build",
+      "uz": "gavda"
+    }
   ]
 }
