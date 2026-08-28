@@ -222,10 +222,57 @@ def check_export() -> list[tuple[str, str]]:
     return out
 
 
+# Manbada kontent saqlanadigan ro'yxat maydonlari. Eksportyor bir mashqning
+# faqat BIR xil yozilishini bilsa, boshqa yozilishdagi kontent jimgina
+# yo'qoladi — "Words of Wisdom" mashqlarida shunday bo'lgan: uch betdagi
+# 10 ta maqol ilovaga umuman chiqmagan va hech qanday tekshiruv buni
+# ko'rmagan, chunki ular `answer` maydonida emas edi.
+CONTENT_LISTS = (
+    "items", "points", "pairs", "lines", "sentences", "profiles", "scenes",
+    "answers", "questions", "people", "modelSentences", "structure",
+    "groups", "patterns", "rows", "words",
+)
+
+
+def check_content_units() -> list[tuple[str, str]]:
+    """Manbada bir necha band bor, eksportda esa deyarli hech nima."""
+    out = []
+    exported: dict[tuple, int] = {}
+    for f in sorted(ASSETS.glob("unit_*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for s in d["sections"]:
+            for e in s["exercises"]:
+                key = (e["book"], e["bookPage"], str(e["ref"]))
+                exported[key] = exported.get(key, 0) + len(e["tasks"])
+
+    for f in sorted(PAGES.glob("*/p*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for s in d.get("sections", []):
+            for e in s.get("exercises", []):
+                n = 0
+                for k in CONTENT_LISTS:
+                    v = e.get(k)
+                    if isinstance(v, list):
+                        n += sum(
+                            1 for x in v
+                            if not (isinstance(x, dict) and x.get("given"))
+                        )
+                if n < 2:
+                    continue
+                key = (d["book"], d["bookPage"], str(e.get("ref", "")))
+                if exported.get(key, 0) <= 1:
+                    out.append((
+                        f"{d['book']} {d['bookPage']}-bet Ex.{e.get('ref')}",
+                        f"manbada {n} ta band, eksportda "
+                        f"{exported.get(key, 0)} — kontent yo'qolgan",
+                    ))
+    return out
+
+
 def main() -> int:
     src = check_sources()
     exp = check_export()
-    lost = check_losses()
+    lost = check_losses() + check_content_units()
     pages = check_pages()
 
     print("=== MANBA SAHIFALARI ===")
