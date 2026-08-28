@@ -921,7 +921,15 @@ def unit_order(page):
         return float(page["order"])
     if unit_extra(page):
         step = 0.5 if page.get("episode") else 0.7
-        return page.get("afterUnit", 0) + step
+        # Kitob oxiridagi bo'limlar (testlar, lug'at, videolar, orqa muqova)
+        # HAMMASI "15-unitdan keyin" turadi. Faqat `step` bilan ularning
+        # tartibi bir xil chiqadi va ro'yxat fayl nomlariga qarab
+        # ARALASHIB ketadi: 1 va 2-nazorat testi 8-testdan KEYIN,
+        # orqa muqova esa o'rtada turib qolgan edi.
+        # Shuning uchun unit raqami mayda qo'shimcha sifatida ishlatiladi —
+        # tartib har doim bir xil va mantiqiy bo'ladi.
+        tie = float(page["unit"]) / 100000.0
+        return page.get("afterUnit", 0) + step + tie
     return float(page["unit"])
 
 
