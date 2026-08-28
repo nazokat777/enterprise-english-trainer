@@ -5,6 +5,7 @@
   "unit": 4,
   "unitTitle": "Like Father, like Son",
   "module": 2,
+  "scanNote": "GRAMMAR 19-BET. Unit 4 — egalik sifatlari, egalik olmoshlari va egalik kelishigi.\n\n4-mashqda 6 ta kasb surati bor. Skaner bilan tekshirildi, TO'G'RI:\n  1 ballerina (kitobda berilgan — sahna libosidagi raqqosa)\n  2 firefighters (himoya kiyimidagi IKKI o't o'chiruvchi)\n  3 chef (baland oq qalpoqli oshpaz)\n  4 vet (mushukni ushlab turgan erkak)\n  5 farmer (traktor oldidagi erkak)\n  6 music teacher (pianino chalayotgan ayol)\n\n⚠ 2-RASM — YAGONA KO'PLIK: unda IKKI odam bor, shuning uchun javob 'They're FIREFIGHTERS' — artiklsiz va ko'plikda. Qolgan beshtasida bitta odam: 'She's A ballerina', 'He's A chef'. Ro'yxatdagi so'z ham allaqachon ko'plikda berilgan ('firefighters') — bu ip beradi.\n\n5-mashqning 15 ta javobi tekshirildi — to'g'ri (His, our, her, Their, my, his, Its, their, her, your, our, Its, your, My, Their).\n\n7-mashqning 15 ta javobi ham to'g'ri.\n\n⚠ ENG QIYIN JUFTLIK — 'WHO'S' va 'WHOSE':\n  WHO'S  = 'who is' qisqartmasi → 'WHO'S he?' = U kim?\n  WHOSE  = kimning → 'WHOSE football is this?' = Bu kimning koptogi?\n  ⚠ Talaffuzi BIR XIL, ma'nosi butunlay boshqa. 5 va 8-bandda 'Who's', 3 va 7-bandda 'Whose'.\n\n⚠ EGALIK SIFATI va EGALIK OLMOShI:\n  my/your/his/her/its/our/their — OT bilan keladi ('my friend')\n  mine/yours/his/hers/ours/theirs — OT SIZ turadi ('It's mine')\n  ⚠ 1-bandda ikkalasi yonma-yon: 'Is this bicycle YOURS?' (otsiz) — 'Yes, it's MINE.' (otsiz)\n  ⚠ 5-bandda esa 'He's MY friend' — ot bor, shuning uchun 'mine' EMAS.\n\n⚠ 2-bandda 'Alex and Rachel's cousin' — ikki ism birga bo'lsa apostrof faqat OXIRGISIGA qo'yiladi (Coursebook 27-betdagi qoida).",
   "pairsWith": "Grammar Book 18-bet (3-mashq davomi)",
   "sections": [
     {
@@ -20,12 +21,54 @@
           "explanationUz": "18-betdagi rasmlar jadvalining davomi:\n  Linda  — flowers (gullar)\n  John   — umbrella (soyabon)\n  Denise — pen (ruchka)\n\nQOLIP o'zgarmaydi:\n  Birinchi bo'shliq — OT YO'Q → egalik OLMOSHI (his, hers, theirs, mine, yours)\n  Ikkinchi bo'shliq — OT BOR  → egalik SIFATI (his, her, their) yoki ism + 's",
           "bookRef": "Grammar Book, 19-bet, 3-mashq (10–12)",
           "lines": [
-            { "who": "10 A", "textEn": "Are those Linda's flowers?", "uz": "Anavilar Lindaning gullarimi?", "given": true },
-            { "who": "10 B", "textEn": "Yes, they're ____ . They're ____ flowers.", "answers": ["hers", "her"], "hintUz": "Linda — ayol. Birinchisi otsiz, ikkinchisi ot bilan", "whyUz": "Rasmda gullar Lindaniki. Otsiz → hers (olmosh), ot bilan → her (sifat). Bu ikkisi FARQ qiladi." },
-            { "who": "11 A", "textEn": "Is that your umbrella?", "uz": "Bu sening soyaboningmi?", "given": true },
-            { "who": "11 B", "textEn": "No, it isn't ____ . It's ____ .", "answers": ["mine", "John's"], "hintUz": "Savolda 'your' — javobda o'zi haqida; rasmda soyabon boshqa odamniki", "whyUz": "Savolda 'your' → javobda 'mine' (meniki emas). Rasmda soyabon Jonniki → John's." },
-            { "who": "12 A", "textEn": "Is that Denise's pen?", "uz": "Bu Denizning ruchkasimi?", "given": true },
-            { "who": "12 B", "textEn": "Yes, it's ____ . It's ____ pen.", "answers": ["hers", "her"], "hintUz": "Deniz — ayol. Birinchisi otsiz, ikkinchisi ot bilan", "whyUz": "Rasmda ruchka Denizniki. Otsiz → hers, ot bilan → her." }
+            {
+              "who": "10 A",
+              "textEn": "Are those Linda's flowers?",
+              "uz": "Anavilar Lindaning gullarimi?",
+              "given": true
+            },
+            {
+              "who": "10 B",
+              "textEn": "Yes, they're ____ . They're ____ flowers.",
+              "answers": [
+                "hers",
+                "her"
+              ],
+              "hintUz": "Linda — ayol. Birinchisi otsiz, ikkinchisi ot bilan",
+              "whyUz": "Rasmda gullar Lindaniki. Otsiz → hers (olmosh), ot bilan → her (sifat). Bu ikkisi FARQ qiladi."
+            },
+            {
+              "who": "11 A",
+              "textEn": "Is that your umbrella?",
+              "uz": "Bu sening soyaboningmi?",
+              "given": true
+            },
+            {
+              "who": "11 B",
+              "textEn": "No, it isn't ____ . It's ____ .",
+              "answers": [
+                "mine",
+                "John's"
+              ],
+              "hintUz": "Savolda 'your' — javobda o'zi haqida; rasmda soyabon boshqa odamniki",
+              "whyUz": "Savolda 'your' → javobda 'mine' (meniki emas). Rasmda soyabon Jonniki → John's."
+            },
+            {
+              "who": "12 A",
+              "textEn": "Is that Denise's pen?",
+              "uz": "Bu Denizning ruchkasimi?",
+              "given": true
+            },
+            {
+              "who": "12 B",
+              "textEn": "Yes, it's ____ . It's ____ pen.",
+              "answers": [
+                "hers",
+                "her"
+              ],
+              "hintUz": "Deniz — ayol. Birinchisi otsiz, ikkinchisi ot bilan",
+              "whyUz": "Rasmda ruchka Denizniki. Otsiz → hers, ot bilan → her."
+            }
           ]
         },
         {
@@ -36,12 +79,49 @@
           "explanationUz": "KASBLAR RO'YXATI:\n  vet           — veterinar (hayvon shifokori)\n  farmer        — dehqon, fermer\n  firefighters  — o't o'chiruvchilar (KO'PLIK!)\n  music teacher — musiqa o'qituvchisi\n  ballerina     — balerina\n  chef          — oshpaz (restoranda bosh oshpaz)\n\nRASMLAR:\n  1) baletda raqsga tushayotgan ayol → ballerina (namuna)\n  2) sariq kiyimdagi ikki kishi      → firefighters\n  3) oq qalpoqdagi erkak             → chef\n  4) mushuk ushlagan erkak           → vet\n  5) traktordagi erkak               → farmer\n  6) pianino chalayotgan ayol        → music teacher\n\nSAVOL QOLIPI:\n  BIRLIK:  What's his/her job?  — He's/She's a ...\n  KO'PLIK: What are their jobs? — They're ...\n\nDIQQAT:\n  • birlikda kasb oldida A/AN SHART: She's A ballerina.\n  • ko'plikda artikl QO'YILMAYDI: They're firefighters.\n  • ko'plikda 'job' ham ko'plikda: their jobS",
           "bookRef": "Grammar Book, 19-bet, 4-mashq",
           "items": [
-            { "n": 1, "prompt": "1-rasm — baletda raqsga tushayotgan ayol", "question": "What's her job?", "answer": "She's a ballerina.", "given": true, "whyUz": "Kitobdagi namuna. Ayol → her / She's. Kasb oldida 'a'." },
-            { "n": 2, "prompt": "2-rasm — sariq himoya kiyimidagi ikki kishi", "question": "What are their jobs?", "answer": "They're firefighters.", "whyUz": "IKKI kishi → 'their jobS' (ko'plik) va 'They're'. Ko'plikda artikl YO'Q." },
-            { "n": 3, "prompt": "3-rasm — oq qalpoqdagi erkak", "question": "What's his job?", "answer": "He's a chef.", "whyUz": "Erkak → his / He's. 'chef' o'qilishi 'shef' — fransuz tilidan." },
-            { "n": 4, "prompt": "4-rasm — mushuk ushlab turgan erkak", "question": "What's his job?", "answer": "He's a vet.", "whyUz": "Hayvon bilan ishlaydi → vet. To'liq shakli 'veterinary surgeon'." },
-            { "n": 5, "prompt": "5-rasm — traktor yonidagi erkak", "question": "What's his job?", "answer": "He's a farmer.", "whyUz": "Traktor va ferma → farmer. 'farm' + er." },
-            { "n": 6, "prompt": "6-rasm — pianino chalayotgan ayol", "question": "What's her job?", "answer": "She's a music teacher.", "whyUz": "Ayol → her / She's. Qo'shma so'z: music + teacher." }
+            {
+              "n": 1,
+              "prompt": "1-rasm — baletda raqsga tushayotgan ayol",
+              "question": "What's her job?",
+              "answer": "She's a ballerina.",
+              "given": true,
+              "whyUz": "Kitobdagi namuna. Ayol → her / She's. Kasb oldida 'a'."
+            },
+            {
+              "n": 2,
+              "prompt": "2-rasm — sariq himoya kiyimidagi ikki kishi",
+              "question": "What are their jobs?",
+              "answer": "They're firefighters.",
+              "whyUz": "IKKI kishi → 'their jobS' (ko'plik) va 'They're'. Ko'plikda artikl YO'Q."
+            },
+            {
+              "n": 3,
+              "prompt": "3-rasm — oq qalpoqdagi erkak",
+              "question": "What's his job?",
+              "answer": "He's a chef.",
+              "whyUz": "Erkak → his / He's. 'chef' o'qilishi 'shef' — fransuz tilidan."
+            },
+            {
+              "n": 4,
+              "prompt": "4-rasm — mushuk ushlab turgan erkak",
+              "question": "What's his job?",
+              "answer": "He's a vet.",
+              "whyUz": "Hayvon bilan ishlaydi → vet. To'liq shakli 'veterinary surgeon'."
+            },
+            {
+              "n": 5,
+              "prompt": "5-rasm — traktor yonidagi erkak",
+              "question": "What's his job?",
+              "answer": "He's a farmer.",
+              "whyUz": "Traktor va ferma → farmer. 'farm' + er."
+            },
+            {
+              "n": 6,
+              "prompt": "6-rasm — pianino chalayotgan ayol",
+              "question": "What's her job?",
+              "answer": "She's a music teacher.",
+              "whyUz": "Ayol → her / She's. Qo'shma so'z: music + teacher."
+            }
           ]
         }
       ]
@@ -59,21 +139,186 @@
           "explanationUz": "HAMMASI EGALIK SIFATI — demak har birida keyin OT keladi.\n\nQADAMLAR:\n  1) Gapda KIM haqida gapirilyapti? (oldingi gapga qarang)\n  2) U erkakmi, ayolmi, narsami, ko'pmi?\n  3) Mos egalik sifatini tanlang:\n     I → my,  you → your,  he → his,  she → her,\n     it → its,  we → our,  they → their\n\nENG KO'P XATO — 'its' ga apostrof qo'yish:\n  ✅ Its name is Rex.   (uning ismi)\n  ❌ It's name is Rex.  (bu 'It is name' degani — ma'nosiz)",
           "bookRef": "Grammar Book, 19-bet, 5-mashq",
           "items": [
-            { "textEn": "1  This is my brother. ____ name is Jonathan.", "uz": "Aka haqida — erkak", "options": ["His", "Her", "Its", "Their"], "answer": "His", "whyUz": "'brother' — erkak → His. Gap boshida katta harf." },
-            { "textEn": "2  We have a computer in ____ classroom.", "uz": "'We' haqida", "options": ["our", "their", "your", "my"], "answer": "our", "whyUz": "'We' → our." },
-            { "textEn": "3  She lives in New York and ____ pen-friend lives in Paris.", "uz": "'She' haqida", "options": ["her", "his", "its", "their"], "answer": "her", "whyUz": "'She' → her." },
-            { "textEn": "4  I've got two sisters. ____ names are Julie and Laura.", "uz": "Ikki singil haqida — ko'plik", "options": ["Their", "Her", "His", "Our"], "answer": "Their", "whyUz": "'two sisters' ko'plik → Their. 'names' ham ko'plikda." },
-            { "textEn": "5  I love Oasis. They're ____ favourite group.", "uz": "Gapiruvchining o'zi haqida", "options": ["my", "our", "their", "his"], "answer": "my", "whyUz": "'I love' → my. Oasis — britaniyalik rok guruh." },
-            { "textEn": "6  Michael's mum is a teacher and ____ father is a pilot.", "uz": "Michael haqida — erkak", "options": ["his", "her", "its", "their"], "answer": "his", "whyUz": "Otasi Maykl'niki → his. 'Michael's mum' bilan bir xil egasi." },
-            { "textEn": "7  I've got a car. ____ colour is blue.", "uz": "Mashina haqida — narsa", "options": ["Its", "It's", "His", "Their"], "answer": "Its", "whyUz": "Mashina — narsa → Its. APOSTROF YO'Q!" },
-            { "textEn": "8  Ted and Danny live in Canada but ____ parents live in Brazil.", "uz": "Ikki kishi haqida — ko'plik", "options": ["their", "his", "our", "her"], "answer": "their", "whyUz": "'Ted and Danny' ko'plik → their." },
-            { "textEn": "9  She's very kind. Do you know ____ name?", "uz": "'She' haqida", "options": ["her", "his", "its", "your"], "answer": "her", "whyUz": "'She' → her." },
-            { "textEn": "10  Hi, I'm Bob. What's ____ name?", "uz": "Suhbatdoshdan so'ralyapti", "options": ["your", "my", "his", "her"], "answer": "your", "whyUz": "Tanishishda: o'zini aytib, suhbatdoshning ismini so'raydi → your." },
-            { "textEn": "11  There are five of us in ____ family.", "uz": "'us' — biz haqida", "options": ["our", "their", "your", "my"], "answer": "our", "whyUz": "'us' (biz) → our." },
-            { "textEn": "12  This is Albert's dog. ____ name is Rex.", "uz": "It haqida — hayvon", "options": ["Its", "His", "Her", "Their"], "answer": "Its", "whyUz": "It — hayvon, jinsi aytilmagan → Its. Apostrof YO'Q. (Agar jinsi ma'lum bo'lsa 'His' ham bo'lardi.)" },
-            { "textEn": "13  Hello, Chris. Is ____ father home?", "uz": "Chris'dan so'ralyapti", "options": ["your", "his", "her", "my"], "answer": "your", "whyUz": "To'g'ridan-to'g'ri Chris'ga murojaat → your." },
-            { "textEn": "14  ____ name is Alice and I'm 12 years old.", "uz": "Gapiruvchi o'zini tanishtiryapti", "options": ["My", "Her", "Your", "His"], "answer": "My", "whyUz": "'I'm 12' — o'zi haqida → My. Gap boshida katta harf." },
-            { "textEn": "15  Pam and Janet are very friendly. ____ parents are nice, too.", "uz": "Ikki kishi haqida — ko'plik", "options": ["Their", "Her", "His", "Our"], "answer": "Their", "whyUz": "'Pam and Janet' ko'plik → Their." }
+            {
+              "textEn": "1  This is my brother. ____ name is Jonathan.",
+              "uz": "Aka haqida — erkak",
+              "options": [
+                "His",
+                "Her",
+                "Its",
+                "Their"
+              ],
+              "answer": "His",
+              "whyUz": "'brother' — erkak → His. Gap boshida katta harf."
+            },
+            {
+              "textEn": "2  We have a computer in ____ classroom.",
+              "uz": "'We' haqida",
+              "options": [
+                "our",
+                "their",
+                "your",
+                "my"
+              ],
+              "answer": "our",
+              "whyUz": "'We' → our."
+            },
+            {
+              "textEn": "3  She lives in New York and ____ pen-friend lives in Paris.",
+              "uz": "'She' haqida",
+              "options": [
+                "her",
+                "his",
+                "its",
+                "their"
+              ],
+              "answer": "her",
+              "whyUz": "'She' → her."
+            },
+            {
+              "textEn": "4  I've got two sisters. ____ names are Julie and Laura.",
+              "uz": "Ikki singil haqida — ko'plik",
+              "options": [
+                "Their",
+                "Her",
+                "His",
+                "Our"
+              ],
+              "answer": "Their",
+              "whyUz": "'two sisters' ko'plik → Their. 'names' ham ko'plikda."
+            },
+            {
+              "textEn": "5  I love Oasis. They're ____ favourite group.",
+              "uz": "Gapiruvchining o'zi haqida",
+              "options": [
+                "my",
+                "our",
+                "their",
+                "his"
+              ],
+              "answer": "my",
+              "whyUz": "'I love' → my. Oasis — britaniyalik rok guruh."
+            },
+            {
+              "textEn": "6  Michael's mum is a teacher and ____ father is a pilot.",
+              "uz": "Michael haqida — erkak",
+              "options": [
+                "his",
+                "her",
+                "its",
+                "their"
+              ],
+              "answer": "his",
+              "whyUz": "Otasi Maykl'niki → his. 'Michael's mum' bilan bir xil egasi."
+            },
+            {
+              "textEn": "7  I've got a car. ____ colour is blue.",
+              "uz": "Mashina haqida — narsa",
+              "options": [
+                "Its",
+                "It's",
+                "His",
+                "Their"
+              ],
+              "answer": "Its",
+              "whyUz": "Mashina — narsa → Its. APOSTROF YO'Q!"
+            },
+            {
+              "textEn": "8  Ted and Danny live in Canada but ____ parents live in Brazil.",
+              "uz": "Ikki kishi haqida — ko'plik",
+              "options": [
+                "their",
+                "his",
+                "our",
+                "her"
+              ],
+              "answer": "their",
+              "whyUz": "'Ted and Danny' ko'plik → their."
+            },
+            {
+              "textEn": "9  She's very kind. Do you know ____ name?",
+              "uz": "'She' haqida",
+              "options": [
+                "her",
+                "his",
+                "its",
+                "your"
+              ],
+              "answer": "her",
+              "whyUz": "'She' → her."
+            },
+            {
+              "textEn": "10  Hi, I'm Bob. What's ____ name?",
+              "uz": "Suhbatdoshdan so'ralyapti",
+              "options": [
+                "your",
+                "my",
+                "his",
+                "her"
+              ],
+              "answer": "your",
+              "whyUz": "Tanishishda: o'zini aytib, suhbatdoshning ismini so'raydi → your."
+            },
+            {
+              "textEn": "11  There are five of us in ____ family.",
+              "uz": "'us' — biz haqida",
+              "options": [
+                "our",
+                "their",
+                "your",
+                "my"
+              ],
+              "answer": "our",
+              "whyUz": "'us' (biz) → our."
+            },
+            {
+              "textEn": "12  This is Albert's dog. ____ name is Rex.",
+              "uz": "It haqida — hayvon",
+              "options": [
+                "Its",
+                "His",
+                "Her",
+                "Their"
+              ],
+              "answer": "Its",
+              "whyUz": "It — hayvon, jinsi aytilmagan → Its. Apostrof YO'Q. (Agar jinsi ma'lum bo'lsa 'His' ham bo'lardi.)"
+            },
+            {
+              "textEn": "13  Hello, Chris. Is ____ father home?",
+              "uz": "Chris'dan so'ralyapti",
+              "options": [
+                "your",
+                "his",
+                "her",
+                "my"
+              ],
+              "answer": "your",
+              "whyUz": "To'g'ridan-to'g'ri Chris'ga murojaat → your."
+            },
+            {
+              "textEn": "14  ____ name is Alice and I'm 12 years old.",
+              "uz": "Gapiruvchi o'zini tanishtiryapti",
+              "options": [
+                "My",
+                "Her",
+                "Your",
+                "His"
+              ],
+              "answer": "My",
+              "whyUz": "'I'm 12' — o'zi haqida → My. Gap boshida katta harf."
+            },
+            {
+              "textEn": "15  Pam and Janet are very friendly. ____ parents are nice, too.",
+              "uz": "Ikki kishi haqida — ko'plik",
+              "options": [
+                "Their",
+                "Her",
+                "His",
+                "Our"
+              ],
+              "answer": "Their",
+              "whyUz": "'Pam and Janet' ko'plik → Their."
+            }
           ]
         },
         {
@@ -84,13 +329,33 @@
           "explanationUz": "NAMUNA:\n  cousin/Wendy → That's my cousin. Her name's Wendy.\n\nQOLIP:\n  1-gap: That's my + QARINDOSHLIK.\n  2-gap: EGALIK SIFATI + name's + ISM.\n\nEGALIK SIFATINI TANLASH:\n  erkak qarindosh (son, brother, husband) → His\n  ayol qarindosh (daughter, sister, wife) → Her\n  hayvon                                  → Its\n  'cousin' — ismga qarab: Wendy ayol → Her\n\nQISQARTMA: name's = name is",
           "bookRef": "Grammar Book, 19-bet, 6-mashq",
           "example": [
-            { "speaker": "1", "en": "That's my cousin. Her name's Wendy.", "uz": "Bu mening amakivachcham. Uning ismi Vendi." }
+            {
+              "speaker": "1",
+              "en": "That's my cousin. Her name's Wendy.",
+              "uz": "Bu mening amakivachcham. Uning ismi Vendi."
+            }
           ],
           "modelSentences": [
-            { "word": "2. son / Tom", "sentence": "That's my son. His name's Tom.", "uz": "Bu mening o'g'lim. Uning ismi Tom." },
-            { "word": "3. wife / Carol", "sentence": "That's my wife. Her name's Carol.", "uz": "Bu mening xotinim. Uning ismi Kerol." },
-            { "word": "4. brother / Jim", "sentence": "That's my brother. His name's Jim.", "uz": "Bu mening akam. Uning ismi Jim." },
-            { "word": "5. dog / Spike", "sentence": "That's my dog. Its name's Spike.", "uz": "Bu mening itim. Uning ismi Spayk." }
+            {
+              "word": "2. son / Tom",
+              "sentence": "That's my son. His name's Tom.",
+              "uz": "Bu mening o'g'lim. Uning ismi Tom."
+            },
+            {
+              "word": "3. wife / Carol",
+              "sentence": "That's my wife. Her name's Carol.",
+              "uz": "Bu mening xotinim. Uning ismi Kerol."
+            },
+            {
+              "word": "4. brother / Jim",
+              "sentence": "That's my brother. His name's Jim.",
+              "uz": "Bu mening akam. Uning ismi Jim."
+            },
+            {
+              "word": "5. dog / Spike",
+              "sentence": "That's my dog. Its name's Spike.",
+              "uz": "Bu mening itim. Uning ismi Spayk."
+            }
           ]
         }
       ]
@@ -108,21 +373,156 @@
           "explanationUz": "BU MASHQ HAMMASINI BIRGA TEKSHIRADI:\n  egalik sifati ↔ egalik olmoshi\n  Who's ↔ Whose\n  ism ↔ ism + 's\n\nUCHTA TEKSHIRUV SAVOLI:\n\n  1) Keyin OT bormi?\n     Bor  → egalik SIFATI (my, your, their) yoki ism + 's\n     Yo'q → egalik OLMOSHI (mine, yours, theirs)\n\n  2) Savol odam haqidami yoki egalik haqidami?\n     Odam  → Who's (= Who is)\n     Egalik → Whose\n\n  3) Ikki egasi bo'lsa, 's qayerga?\n     FAQAT oxirgi ismga: Alex and Rachel's cousin",
           "bookRef": "Grammar Book, 19-bet, 7-mashq",
           "items": [
-            { "textEn": "1  \"Is this bicycle ____ ?\"", "uz": "Keyin ot yo'q", "options": ["yours", "your"], "answer": "yours", "whyUz": "Gap oxirida, ot yo'q → egalik OLMOSHI." },
-            { "textEn": "1  \"Yes, it's ____ .\"", "uz": "Keyin ot yo'q", "options": ["mine", "my"], "answer": "mine", "whyUz": "Ot yo'q → egalik olmoshi 'mine'. 'my' dan keyin ot kerak bo'lardi." },
-            { "textEn": "2  \"Who's he?\" \"He's ____ cousin.\"", "uz": "Ikki egasi, bitta amakivachcha", "options": ["Alex and Rachel's", "Alex's and Rachel's"], "answer": "Alex and Rachel's", "whyUz": "Ikki egasi, BITTA amakivachcha → 's faqat OXIRGI ismga." },
-            { "textEn": "3  \"____ football is this?\"", "uz": "Keyin ot bor, egasi so'ralyapti", "options": ["Whose", "Who"], "answer": "Whose", "whyUz": "Keyin 'football' oti keladi va egasi so'ralyapti → Whose." },
-            { "textEn": "3  \"It's ____ .\"", "uz": "Keyin ot yo'q", "options": ["theirs", "their"], "answer": "theirs", "whyUz": "Ot yo'q → egalik olmoshi 'theirs'." },
-            { "textEn": "4  \"Are these ____ ?\"", "uz": "Keyin ot yo'q, egalik so'ralyapti", "options": ["Paul's", "Paul"], "answer": "Paul's", "whyUz": "Egalik ma'nosi kerak → Paul + 's. 'Paul' o'zi shunchaki ism." },
-            { "textEn": "4  \"No, they're ____ .\"", "uz": "Keyin ot yo'q", "options": ["yours", "your"], "answer": "yours", "whyUz": "Ot yo'q → egalik olmoshi." },
-            { "textEn": "5  \"____ is Jerry?\"", "uz": "Odamning kimligi so'ralyapti", "options": ["Who's", "Whose"], "answer": "Who's", "whyUz": "Javob 'He's my friend' — odamning kimligi → Who is." },
-            { "textEn": "5  \"He's ____ friend.\"", "uz": "Keyin ot bor", "options": ["my", "mine"], "answer": "my", "whyUz": "'friend' oti bor → egalik SIFATI 'my'." },
-            { "textEn": "6  \"Are those computer games ____ ?\"", "uz": "Keyin ot yo'q", "options": ["yours", "your"], "answer": "yours", "whyUz": "Gap oxirida, ot yo'q → egalik olmoshi." },
-            { "textEn": "6  \"Yes, they're ____ .\"", "uz": "Keyin ot yo'q", "options": ["ours", "our"], "answer": "ours", "whyUz": "Ot yo'q → egalik olmoshi 'ours'." },
-            { "textEn": "7  \"____ guitar is this?\"", "uz": "Keyin ot bor, egasi so'ralyapti", "options": ["Whose", "Who"], "answer": "Whose", "whyUz": "Keyin 'guitar' oti keladi → Whose." },
-            { "textEn": "7  \"It's ____ .\"", "uz": "Keyin ot yo'q", "options": ["theirs", "their"], "answer": "theirs", "whyUz": "Ot yo'q → egalik olmoshi." },
-            { "textEn": "8  \"____ she?\"", "uz": "Odamning kimligi so'ralyapti", "options": ["Who's", "Whose"], "answer": "Who's", "whyUz": "Javob 'She's Sally's sister' — odamning kimligi → Who is." },
-            { "textEn": "8  \"She's ____ sister.\"", "uz": "Keyin ot bor, egalik kerak", "options": ["Sally's", "Sally"], "answer": "Sally's", "whyUz": "'Sallining singlisi' → Sally + 's. Apostrofsiz 'Sally sister' ma'nosiz." }
+            {
+              "textEn": "1  \"Is this bicycle ____ ?\"",
+              "uz": "Keyin ot yo'q",
+              "options": [
+                "yours",
+                "your"
+              ],
+              "answer": "yours",
+              "whyUz": "Gap oxirida, ot yo'q → egalik OLMOSHI."
+            },
+            {
+              "textEn": "1  \"Yes, it's ____ .\"",
+              "uz": "Keyin ot yo'q",
+              "options": [
+                "mine",
+                "my"
+              ],
+              "answer": "mine",
+              "whyUz": "Ot yo'q → egalik olmoshi 'mine'. 'my' dan keyin ot kerak bo'lardi."
+            },
+            {
+              "textEn": "2  \"Who's he?\" \"He's ____ cousin.\"",
+              "uz": "Ikki egasi, bitta amakivachcha",
+              "options": [
+                "Alex and Rachel's",
+                "Alex's and Rachel's"
+              ],
+              "answer": "Alex and Rachel's",
+              "whyUz": "Ikki egasi, BITTA amakivachcha → 's faqat OXIRGI ismga."
+            },
+            {
+              "textEn": "3  \"____ football is this?\"",
+              "uz": "Keyin ot bor, egasi so'ralyapti",
+              "options": [
+                "Whose",
+                "Who"
+              ],
+              "answer": "Whose",
+              "whyUz": "Keyin 'football' oti keladi va egasi so'ralyapti → Whose."
+            },
+            {
+              "textEn": "3  \"It's ____ .\"",
+              "uz": "Keyin ot yo'q",
+              "options": [
+                "theirs",
+                "their"
+              ],
+              "answer": "theirs",
+              "whyUz": "Ot yo'q → egalik olmoshi 'theirs'."
+            },
+            {
+              "textEn": "4  \"Are these ____ ?\"",
+              "uz": "Keyin ot yo'q, egalik so'ralyapti",
+              "options": [
+                "Paul's",
+                "Paul"
+              ],
+              "answer": "Paul's",
+              "whyUz": "Egalik ma'nosi kerak → Paul + 's. 'Paul' o'zi shunchaki ism."
+            },
+            {
+              "textEn": "4  \"No, they're ____ .\"",
+              "uz": "Keyin ot yo'q",
+              "options": [
+                "yours",
+                "your"
+              ],
+              "answer": "yours",
+              "whyUz": "Ot yo'q → egalik olmoshi."
+            },
+            {
+              "textEn": "5  \"____ is Jerry?\"",
+              "uz": "Odamning kimligi so'ralyapti",
+              "options": [
+                "Who's",
+                "Whose"
+              ],
+              "answer": "Who's",
+              "whyUz": "Javob 'He's my friend' — odamning kimligi → Who is."
+            },
+            {
+              "textEn": "5  \"He's ____ friend.\"",
+              "uz": "Keyin ot bor",
+              "options": [
+                "my",
+                "mine"
+              ],
+              "answer": "my",
+              "whyUz": "'friend' oti bor → egalik SIFATI 'my'."
+            },
+            {
+              "textEn": "6  \"Are those computer games ____ ?\"",
+              "uz": "Keyin ot yo'q",
+              "options": [
+                "yours",
+                "your"
+              ],
+              "answer": "yours",
+              "whyUz": "Gap oxirida, ot yo'q → egalik olmoshi."
+            },
+            {
+              "textEn": "6  \"Yes, they're ____ .\"",
+              "uz": "Keyin ot yo'q",
+              "options": [
+                "ours",
+                "our"
+              ],
+              "answer": "ours",
+              "whyUz": "Ot yo'q → egalik olmoshi 'ours'."
+            },
+            {
+              "textEn": "7  \"____ guitar is this?\"",
+              "uz": "Keyin ot bor, egasi so'ralyapti",
+              "options": [
+                "Whose",
+                "Who"
+              ],
+              "answer": "Whose",
+              "whyUz": "Keyin 'guitar' oti keladi → Whose."
+            },
+            {
+              "textEn": "7  \"It's ____ .\"",
+              "uz": "Keyin ot yo'q",
+              "options": [
+                "theirs",
+                "their"
+              ],
+              "answer": "theirs",
+              "whyUz": "Ot yo'q → egalik olmoshi."
+            },
+            {
+              "textEn": "8  \"____ she?\"",
+              "uz": "Odamning kimligi so'ralyapti",
+              "options": [
+                "Who's",
+                "Whose"
+              ],
+              "answer": "Who's",
+              "whyUz": "Javob 'She's Sally's sister' — odamning kimligi → Who is."
+            },
+            {
+              "textEn": "8  \"She's ____ sister.\"",
+              "uz": "Keyin ot bor, egalik kerak",
+              "options": [
+                "Sally's",
+                "Sally"
+              ],
+              "answer": "Sally's",
+              "whyUz": "'Sallining singlisi' → Sally + 's. Apostrofsiz 'Sally sister' ma'nosiz."
+            }
           ]
         }
       ]
@@ -136,40 +536,136 @@
         "ruleUz": "Kasb nomlari — turli yasalish yo'llari",
         "explanationUz": "Ingliz tilida kasb nomlari bir necha xil yasaladi. Ba'zilari boshqa tildan olingan.",
         "items": [
-          { "base": "farm", "baseUz": "ferma", "derived": "a farmer", "derivedUz": "dehqon, fermer", "note": "-er qo'shimchasi" },
-          { "base": "teach", "baseUz": "o'qitmoq", "derived": "a teacher", "derivedUz": "o'qituvchi", "note": "-er qo'shimchasi" },
-          { "base": "fire + fight", "baseUz": "olov + kurashmoq", "derived": "a firefighter", "derivedUz": "o't o'chiruvchi", "note": "qo'shma so'z + er" },
-          { "base": "music + teacher", "baseUz": "musiqa + o'qituvchi", "derived": "a music teacher", "derivedUz": "musiqa o'qituvchisi", "note": "ikki so'z alohida" },
-          { "base": "veterinary", "baseUz": "veterinariya", "derived": "a vet", "derivedUz": "veterinar", "note": "qisqartma" },
-          { "base": "chef (fransuzcha)", "baseUz": "boshliq", "derived": "a chef", "derivedUz": "oshpaz", "note": "o'qilishi 'shef'" },
-          { "base": "ballet (fransuzcha)", "baseUz": "balet", "derived": "a ballerina", "derivedUz": "balerina", "note": "italyancha shakl, faqat ayol" }
+          {
+            "base": "farm",
+            "baseUz": "ferma",
+            "derived": "a farmer",
+            "derivedUz": "dehqon, fermer",
+            "note": "-er qo'shimchasi"
+          },
+          {
+            "base": "teach",
+            "baseUz": "o'qitmoq",
+            "derived": "a teacher",
+            "derivedUz": "o'qituvchi",
+            "note": "-er qo'shimchasi"
+          },
+          {
+            "base": "fire + fight",
+            "baseUz": "olov + kurashmoq",
+            "derived": "a firefighter",
+            "derivedUz": "o't o'chiruvchi",
+            "note": "qo'shma so'z + er"
+          },
+          {
+            "base": "music + teacher",
+            "baseUz": "musiqa + o'qituvchi",
+            "derived": "a music teacher",
+            "derivedUz": "musiqa o'qituvchisi",
+            "note": "ikki so'z alohida"
+          },
+          {
+            "base": "veterinary",
+            "baseUz": "veterinariya",
+            "derived": "a vet",
+            "derivedUz": "veterinar",
+            "note": "qisqartma"
+          },
+          {
+            "base": "chef (fransuzcha)",
+            "baseUz": "boshliq",
+            "derived": "a chef",
+            "derivedUz": "oshpaz",
+            "note": "o'qilishi 'shef'"
+          },
+          {
+            "base": "ballet (fransuzcha)",
+            "baseUz": "balet",
+            "derived": "a ballerina",
+            "derivedUz": "balerina",
+            "note": "italyancha shakl, faqat ayol"
+          }
         ]
       },
       {
         "ruleUz": "Kasb haqida savol — birlik va ko'plik",
         "explanationUz": "Ko'plikda uchta narsa birga o'zgaradi: olmosh, fe'l va 'job' so'zi.",
         "items": [
-          { "base": "birlik (erkak)", "baseUz": "bitta erkak", "derived": "What's his job? — He's a chef.", "derivedUz": "artikl SHART", "note": "" },
-          { "base": "birlik (ayol)", "baseUz": "bitta ayol", "derived": "What's her job? — She's a ballerina.", "derivedUz": "artikl SHART", "note": "" },
-          { "base": "ko'plik", "baseUz": "bir necha kishi", "derived": "What are their jobs? — They're firefighters.", "derivedUz": "artikl YO'Q", "note": "'jobs' ham ko'plikda" }
+          {
+            "base": "birlik (erkak)",
+            "baseUz": "bitta erkak",
+            "derived": "What's his job? — He's a chef.",
+            "derivedUz": "artikl SHART",
+            "note": ""
+          },
+          {
+            "base": "birlik (ayol)",
+            "baseUz": "bitta ayol",
+            "derived": "What's her job? — She's a ballerina.",
+            "derivedUz": "artikl SHART",
+            "note": ""
+          },
+          {
+            "base": "ko'plik",
+            "baseUz": "bir necha kishi",
+            "derived": "What are their jobs? — They're firefighters.",
+            "derivedUz": "artikl YO'Q",
+            "note": "'jobs' ham ko'plikda"
+          }
         ]
       },
       {
         "ruleUz": "its ↔ it's — eng ko'p chalkashadigan juftlik",
         "explanationUz": "Talaffuzi bir xil, ma'nosi butunlay boshqa. Apostrof hal qiluvchi.",
         "items": [
-          { "base": "its", "baseUz": "uning (egalik)", "derived": "Its name is Rex.", "derivedUz": "apostrof YO'Q", "note": "egalik sifati" },
-          { "base": "it's", "baseUz": "u ...dir", "derived": "It's a dog.", "derivedUz": "apostrof BOR", "note": "= it is" },
-          { "base": "whose", "baseUz": "kimning", "derived": "Whose guitar?", "derivedUz": "apostrof YO'Q", "note": "so'roq so'zi" },
-          { "base": "who's", "baseUz": "kim", "derived": "Who's she?", "derivedUz": "apostrof BOR", "note": "= who is" }
+          {
+            "base": "its",
+            "baseUz": "uning (egalik)",
+            "derived": "Its name is Rex.",
+            "derivedUz": "apostrof YO'Q",
+            "note": "egalik sifati"
+          },
+          {
+            "base": "it's",
+            "baseUz": "u ...dir",
+            "derived": "It's a dog.",
+            "derivedUz": "apostrof BOR",
+            "note": "= it is"
+          },
+          {
+            "base": "whose",
+            "baseUz": "kimning",
+            "derived": "Whose guitar?",
+            "derivedUz": "apostrof YO'Q",
+            "note": "so'roq so'zi"
+          },
+          {
+            "base": "who's",
+            "baseUz": "kim",
+            "derived": "Who's she?",
+            "derivedUz": "apostrof BOR",
+            "note": "= who is"
+          }
         ]
       },
       {
         "ruleUz": "name's — ikki xil qisqartma",
         "explanationUz": "Apostrof + s ikki xil bo'lishi mumkin — kontekstdan farqlanadi.",
         "items": [
-          { "base": "Her name is Wendy", "baseUz": "to'liq", "derived": "Her name's Wendy", "derivedUz": "'s = is", "note": "fe'l qisqargan" },
-          { "base": "the name of Wendy", "baseUz": "to'liq", "derived": "Wendy's name", "derivedUz": "'s = egalik", "note": "egalik shakli" }
+          {
+            "base": "Her name is Wendy",
+            "baseUz": "to'liq",
+            "derived": "Her name's Wendy",
+            "derivedUz": "'s = is",
+            "note": "fe'l qisqargan"
+          },
+          {
+            "base": "the name of Wendy",
+            "baseUz": "to'liq",
+            "derived": "Wendy's name",
+            "derivedUz": "'s = egalik",
+            "note": "egalik shakli"
+          }
         ]
       }
     ]
@@ -217,25 +713,85 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "a vet", "uz": "veterinar" },
-    { "en": "a farmer", "uz": "dehqon, fermer" },
-    { "en": "a firefighter", "uz": "o't o'chiruvchi" },
-    { "en": "a music teacher", "uz": "musiqa o'qituvchisi" },
-    { "en": "a ballerina", "uz": "balerina" },
-    { "en": "a chef", "uz": "oshpaz" },
-    { "en": "a pilot", "uz": "uchuvchi" },
-    { "en": "a job", "uz": "kasb, ish" },
-    { "en": "a classroom", "uz": "sinf xonasi" },
-    { "en": "a pen-friend", "uz": "qalamkash do'st" },
-    { "en": "a colour", "uz": "rang" },
-    { "en": "friendly", "uz": "do'stona" },
-    { "en": "nice", "uz": "yaxshi, yoqimli" },
-    { "en": "kind", "uz": "mehribon" },
-    { "en": "a computer game", "uz": "kompyuter o'yini" },
-    { "en": "a guitar", "uz": "gitara" },
-    { "en": "New York", "uz": "Nyu-York" },
-    { "en": "Paris", "uz": "Parij" },
-    { "en": "Brazil", "uz": "Braziliya" },
-    { "en": "to label", "uz": "belgilamoq, nomlash" }
+    {
+      "en": "a vet",
+      "uz": "veterinar"
+    },
+    {
+      "en": "a farmer",
+      "uz": "dehqon, fermer"
+    },
+    {
+      "en": "a firefighter",
+      "uz": "o't o'chiruvchi"
+    },
+    {
+      "en": "a music teacher",
+      "uz": "musiqa o'qituvchisi"
+    },
+    {
+      "en": "a ballerina",
+      "uz": "balerina"
+    },
+    {
+      "en": "a chef",
+      "uz": "oshpaz"
+    },
+    {
+      "en": "a pilot",
+      "uz": "uchuvchi"
+    },
+    {
+      "en": "a job",
+      "uz": "kasb, ish"
+    },
+    {
+      "en": "a classroom",
+      "uz": "sinf xonasi"
+    },
+    {
+      "en": "a pen-friend",
+      "uz": "qalamkash do'st"
+    },
+    {
+      "en": "a colour",
+      "uz": "rang"
+    },
+    {
+      "en": "friendly",
+      "uz": "do'stona"
+    },
+    {
+      "en": "nice",
+      "uz": "yaxshi, yoqimli"
+    },
+    {
+      "en": "kind",
+      "uz": "mehribon"
+    },
+    {
+      "en": "a computer game",
+      "uz": "kompyuter o'yini"
+    },
+    {
+      "en": "a guitar",
+      "uz": "gitara"
+    },
+    {
+      "en": "New York",
+      "uz": "Nyu-York"
+    },
+    {
+      "en": "Paris",
+      "uz": "Parij"
+    },
+    {
+      "en": "Brazil",
+      "uz": "Braziliya"
+    },
+    {
+      "en": "to label",
+      "uz": "belgilamoq, nomlash"
+    }
   ]
 }
