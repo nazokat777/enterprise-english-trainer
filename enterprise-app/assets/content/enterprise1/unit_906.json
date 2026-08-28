@@ -278,31 +278,67 @@
      "book": "coursebook",
      "bookPage": 89,
      "bookRef": "Coursebook, 89-bet, 2-mashq",
-     "kind": "match",
+     "kind": "choice",
      "tasks": [
       {
-       "left": "1  Here, hold on to this.",
-       "right": "S — Sandra"
+       "prompt": "1  Here, hold on to this.",
+       "answer": "S — Sandra",
+       "options": [
+        "S — Sandra",
+        "H — Doctor Hamperdin",
+        "D — David",
+        "M — Mike"
+       ]
       },
       {
-       "left": "2  Don't be afraid.",
-       "right": "H — Doctor Hamperdin"
+       "prompt": "2  Don't be afraid.",
+       "answer": "H — Doctor Hamperdin",
+       "options": [
+        "S — Sandra",
+        "H — Doctor Hamperdin",
+        "D — David",
+        "M — Mike"
+       ]
       },
       {
-       "left": "3  Everybody thinks that you're dead.",
-       "right": "D — David"
+       "prompt": "3  Everybody thinks that you're dead.",
+       "answer": "D — David",
+       "options": [
+        "S — Sandra",
+        "H — Doctor Hamperdin",
+        "D — David",
+        "M — Mike"
+       ]
       },
       {
-       "left": "4  He won't hurt you.",
-       "right": "H — Doctor Hamperdin"
+       "prompt": "4  He won't hurt you.",
+       "answer": "H — Doctor Hamperdin",
+       "options": [
+        "S — Sandra",
+        "H — Doctor Hamperdin",
+        "D — David",
+        "M — Mike"
+       ]
       },
       {
-       "left": "5  The Jivaro Indians love their land.",
-       "right": "H — Doctor Hamperdin"
+       "prompt": "5  The Jivaro Indians love their land.",
+       "answer": "H — Doctor Hamperdin",
+       "options": [
+        "S — Sandra",
+        "H — Doctor Hamperdin",
+        "D — David",
+        "M — Mike"
+       ]
       },
       {
-       "left": "6  Good work, you two.",
-       "right": "M — Mike"
+       "prompt": "6  Good work, you two.",
+       "answer": "M — Mike",
+       "options": [
+        "S — Sandra",
+        "H — Doctor Hamperdin",
+        "D — David",
+        "M — Mike"
+       ]
       }
      ]
     },

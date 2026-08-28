@@ -169,6 +169,18 @@ def check_export() -> list[tuple[str, str]]:
                 if not e["tasks"]:
                     out.append((loc, "BAND YO'Q — kontent yo'qolgan"))
                     continue
+
+                # Moslash o'yinida bir xil O'NG tomon ikki marta uchrasa,
+                # o'yin yechib bo'lmaydi: o'quvchi ikkita bir xil yozuvdan
+                # qaysinisini bosishni bilolmaydi. Eksportyor bunday mashqni
+                # "choice" ga aylantirishi kerak — bu yerga yetib kelsa, xato.
+                if e["kind"] == "match":
+                    rights = [t.get("right") for t in e["tasks"]]
+                    dup = {r for r in rights if r and rights.count(r) > 1}
+                    for r in sorted(dup):
+                        out.append(
+                            (loc, f"moslashda '{r}' ikki marta — o'yin yechilmaydi")
+                        )
                 for i, t in enumerate(e["tasks"]):
                     ans = (t.get("answer") or "").strip().lower()
                     prompt = (t.get("prompt") or "").strip()

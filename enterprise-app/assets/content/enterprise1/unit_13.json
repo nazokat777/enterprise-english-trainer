@@ -4004,39 +4004,87 @@
      "book": "coursebook",
      "bookPage": 95,
      "bookRef": "Coursebook, 95-bet, 10a-mashq",
-     "kind": "match",
+     "kind": "choice",
      "tasks": [
       {
-       "left": "Bangkok  (☀ sunny | ☁💨 windy)",
-       "right": "SUNNY  ✓"
+       "prompt": "Bangkok  (☀ sunny | ☁💨 windy)",
+       "answer": "SUNNY  ✓",
+       "options": [
+        "SUNNY  ✓",
+        "FOGGY  ✓",
+        "WINDY  ✓",
+        "RAINY  ✓"
+       ]
       },
       {
-       "left": "Dublin  (☁☁ foggy | ☁💧 rainy)",
-       "right": "FOGGY  ✓"
+       "prompt": "Dublin  (☁☁ foggy | ☁💧 rainy)",
+       "answer": "FOGGY  ✓",
+       "options": [
+        "FOGGY  ✓",
+        "SUNNY  ✓",
+        "WINDY  ✓",
+        "RAINY  ✓"
+       ]
       },
       {
-       "left": "Harare  (☁❄ snowy | ☁💨 windy)",
-       "right": "WINDY  ✓"
+       "prompt": "Harare  (☁❄ snowy | ☁💨 windy)",
+       "answer": "WINDY  ✓",
+       "options": [
+        "WINDY  ✓",
+        "SUNNY  ✓",
+        "FOGGY  ✓",
+        "RAINY  ✓"
+       ]
       },
       {
-       "left": "Seoul  (☁💧 rainy | ☁💨 windy)",
-       "right": "RAINY  ✓"
+       "prompt": "Seoul  (☁💧 rainy | ☁💨 windy)",
+       "answer": "RAINY  ✓",
+       "options": [
+        "RAINY  ✓",
+        "SUNNY  ✓",
+        "FOGGY  ✓",
+        "WINDY  ✓"
+       ]
       },
       {
-       "left": "Sydney  (☁💧 rainy | ☀ sunny)",
-       "right": "SUNNY  ✓"
+       "prompt": "Sydney  (☁💧 rainy | ☀ sunny)",
+       "answer": "SUNNY  ✓",
+       "options": [
+        "SUNNY  ✓",
+        "FOGGY  ✓",
+        "WINDY  ✓",
+        "RAINY  ✓"
+       ]
       },
       {
-       "left": "Warsaw  (☁💧 rainy | ☁❄ snowy)",
-       "right": "SNOWY  ✓"
+       "prompt": "Warsaw  (☁💧 rainy | ☁❄ snowy)",
+       "answer": "SNOWY  ✓",
+       "options": [
+        "SNOWY  ✓",
+        "SUNNY  ✓",
+        "FOGGY  ✓",
+        "WINDY  ✓"
+       ]
       },
       {
-       "left": "Tokyo  (☁☁ foggy | ☁💧 rainy)",
-       "right": "⚠ AUDIODAN ANIQLANADI"
+       "prompt": "Tokyo  (☁☁ foggy | ☁💧 rainy)",
+       "answer": "⚠ AUDIODAN ANIQLANADI",
+       "options": [
+        "⚠ AUDIODAN ANIQLANADI",
+        "SUNNY  ✓",
+        "FOGGY  ✓",
+        "WINDY  ✓"
+       ]
       },
       {
-       "left": "New York  (☁💨 windy | ☁☁ foggy)",
-       "right": "⚠ AUDIODAN ANIQLANADI"
+       "prompt": "New York  (☁💨 windy | ☁☁ foggy)",
+       "answer": "⚠ AUDIODAN ANIQLANADI",
+       "options": [
+        "⚠ AUDIODAN ANIQLANADI",
+        "SUNNY  ✓",
+        "FOGGY  ✓",
+        "WINDY  ✓"
+       ]
       }
      ]
     },

@@ -345,43 +345,79 @@
      "book": "coursebook",
      "bookPage": 111,
      "bookRef": "Coursebook, 111-bet, 4-mashq",
-     "kind": "match",
+     "kind": "choice",
      "tasks": [
       {
-       "left": "bright light",
-       "right": "✓ kosmik kemaga tegishli"
+       "prompt": "bright light",
+       "answer": "✓ kosmik kemaga tegishli",
+       "options": [
+        "✓ kosmik kemaga tegishli",
+        "✗ tegishli emas"
+       ]
       },
       {
-       "left": "huge",
-       "right": "✓ kosmik kemaga tegishli"
+       "prompt": "huge",
+       "answer": "✓ kosmik kemaga tegishli",
+       "options": [
+        "✓ kosmik kemaga tegishli",
+        "✗ tegishli emas"
+       ]
       },
       {
-       "left": "flashing lights",
-       "right": "✓ kosmik kemaga tegishli"
+       "prompt": "flashing lights",
+       "answer": "✓ kosmik kemaga tegishli",
+       "options": [
+        "✓ kosmik kemaga tegishli",
+        "✗ tegishli emas"
+       ]
       },
       {
-       "left": "noise",
-       "right": "✓ kosmik kemaga tegishli"
+       "prompt": "noise",
+       "answer": "✓ kosmik kemaga tegishli",
+       "options": [
+        "✓ kosmik kemaga tegishli",
+        "✗ tegishli emas"
+       ]
       },
       {
-       "left": "land",
-       "right": "✓ kosmik kemaga tegishli"
+       "prompt": "land",
+       "answer": "✓ kosmik kemaga tegishli",
+       "options": [
+        "✓ kosmik kemaga tegishli",
+        "✗ tegishli emas"
+       ]
       },
       {
-       "left": "small",
-       "right": "✗ tegishli emas"
+       "prompt": "small",
+       "answer": "✗ tegishli emas",
+       "options": [
+        "✓ kosmik kemaga tegishli",
+        "✗ tegishli emas"
+       ]
       },
       {
-       "left": "warm and dry",
-       "right": "✗ tegishli emas"
+       "prompt": "warm and dry",
+       "answer": "✗ tegishli emas",
+       "options": [
+        "✓ kosmik kemaga tegishli",
+        "✗ tegishli emas"
+       ]
       },
       {
-       "left": "good-looking",
-       "right": "✗ tegishli emas"
+       "prompt": "good-looking",
+       "answer": "✗ tegishli emas",
+       "options": [
+        "✓ kosmik kemaga tegishli",
+        "✗ tegishli emas"
+       ]
       },
       {
-       "left": "patient",
-       "right": "✗ tegishli emas"
+       "prompt": "patient",
+       "answer": "✗ tegishli emas",
+       "options": [
+        "✓ kosmik kemaga tegishli",
+        "✗ tegishli emas"
+       ]
       }
      ]
     },

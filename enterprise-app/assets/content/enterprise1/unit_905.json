@@ -691,31 +691,67 @@
      "book": "coursebook",
      "bookPage": 69,
      "bookRef": "Coursebook, 69-bet, 7-mashq (moslash)",
-     "kind": "match",
+     "kind": "choice",
      "tasks": [
       {
-       "left": "hat",
-       "right": "boiling hot"
+       "prompt": "hat",
+       "answer": "boiling hot",
+       "options": [
+        "boiling hot",
+        "rainy",
+        "freezing cold",
+        "snowy"
+       ]
       },
       {
-       "left": "sunglasses",
-       "right": "boiling hot"
+       "prompt": "sunglasses",
+       "answer": "boiling hot",
+       "options": [
+        "boiling hot",
+        "rainy",
+        "freezing cold",
+        "snowy"
+       ]
       },
       {
-       "left": "swimming-costume",
-       "right": "boiling hot"
+       "prompt": "swimming-costume",
+       "answer": "boiling hot",
+       "options": [
+        "boiling hot",
+        "rainy",
+        "freezing cold",
+        "snowy"
+       ]
       },
       {
-       "left": "umbrella",
-       "right": "rainy"
+       "prompt": "umbrella",
+       "answer": "rainy",
+       "options": [
+        "boiling hot",
+        "rainy",
+        "freezing cold",
+        "snowy"
+       ]
       },
       {
-       "left": "gloves",
-       "right": "freezing cold"
+       "prompt": "gloves",
+       "answer": "freezing cold",
+       "options": [
+        "boiling hot",
+        "rainy",
+        "freezing cold",
+        "snowy"
+       ]
       },
       {
-       "left": "jacket",
-       "right": "snowy"
+       "prompt": "jacket",
+       "answer": "snowy",
+       "options": [
+        "boiling hot",
+        "rainy",
+        "freezing cold",
+        "snowy"
+       ]
       }
      ]
     },

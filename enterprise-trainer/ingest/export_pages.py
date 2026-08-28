@@ -255,9 +255,40 @@ def norm_exercise(ex, page):
         base["audioNoteUz"] = ex["audioRequiredUz"]
 
     kind, tasks = _dispatch(t, ex, items)
+    kind, tasks = _fix_ambiguous_match(kind, tasks)
     base["kind"] = kind
     base["tasks"] = tasks
     return base
+
+
+def _fix_ambiguous_match(kind, tasks):
+    """Moslash o'yinida bir xil O'NG tomon ikki marta uchrasa — o'yin YECHIB
+    BO'LMAYDI: o'quvchi ikkita bir xil yozuvdan qaysinisini bosishni bilolmaydi,
+    dastur esa faqat bittasini to'g'ri deb hisoblaydi.
+
+    Bunday holat ODATDA guruhlash mashqlarida bo'ladi ("har bandni ✓ yoki ✗ ga
+    ajrating"). Ular moslash emas, TANLASH o'yini bo'lishi kerak.
+    """
+    if kind != "match" or not tasks:
+        return kind, tasks
+    rights = [t.get("right") for t in tasks]
+    if len(set(rights)) == len(rights):
+        return kind, tasks
+
+    uniq = []
+    for r in rights:
+        if r not in uniq:
+            uniq.append(str(r))
+    out = []
+    for t in tasks:
+        answer = str(t.get("right"))
+        if len(uniq) <= 4:
+            options = list(uniq)
+        else:
+            options = [answer] + distractors(answer, uniq, 3)
+        out.append(task(t.get("left"), answer, options=options,
+                        why=t.get("note", ""), speak=""))
+    return "choice", out
 
 
 def _dispatch(t, ex, items):

@@ -89,47 +89,107 @@
      "book": "coursebook",
      "bookPage": 98,
      "bookRef": "Coursebook, 98-bet, 2-mashq",
-     "kind": "match",
+     "kind": "choice",
      "tasks": [
       {
-       "left": "1  pre-packaged food",
-       "right": "C"
+       "prompt": "1  pre-packaged food",
+       "answer": "C",
+       "options": [
+        "C",
+        "F",
+        "G",
+        "D"
+       ]
       },
       {
-       "left": "2  washing-up liquid",
-       "right": "F"
+       "prompt": "2  washing-up liquid",
+       "answer": "F",
+       "options": [
+        "F",
+        "C",
+        "G",
+        "D"
+       ]
       },
       {
-       "left": "3  an aluminium can",
-       "right": "G"
+       "prompt": "3  an aluminium can",
+       "answer": "G",
+       "options": [
+        "G",
+        "C",
+        "F",
+        "D"
+       ]
       },
       {
-       "left": "4  a recycling bin",
-       "right": "D"
+       "prompt": "4  a recycling bin",
+       "answer": "D",
+       "options": [
+        "D",
+        "C",
+        "F",
+        "G"
+       ]
       },
       {
-       "left": "5  public transport",
-       "right": "E"
+       "prompt": "5  public transport",
+       "answer": "E",
+       "options": [
+        "E",
+        "C",
+        "F",
+        "G"
+       ]
       },
       {
-       "left": "6  rubbish",
-       "right": "B"
+       "prompt": "6  rubbish",
+       "answer": "B",
+       "options": [
+        "B",
+        "C",
+        "F",
+        "G"
+       ]
       },
       {
-       "left": "7  a forest",
-       "right": "A"
+       "prompt": "7  a forest",
+       "answer": "A",
+       "options": [
+        "A",
+        "C",
+        "F",
+        "G"
+       ]
       },
       {
-       "left": "8  plastic bottles",
-       "right": "B"
+       "prompt": "8  plastic bottles",
+       "answer": "B",
+       "options": [
+        "B",
+        "C",
+        "F",
+        "G"
+       ]
       },
       {
-       "left": "9  an aerosol can",
-       "right": "H"
+       "prompt": "9  an aerosol can",
+       "answer": "H",
+       "options": [
+        "H",
+        "C",
+        "F",
+        "G"
+       ]
       },
       {
-       "left": "10  a rubbish bin",
-       "right": "B"
+       "prompt": "10  a rubbish bin",
+       "answer": "B",
+       "options": [
+        "B",
+        "C",
+        "F",
+        "G"
+       ]
       }
      ]
     },
@@ -787,39 +847,87 @@
      "book": "coursebook",
      "bookPage": 99,
      "bookRef": "Coursebook, 99-bet, 4a-mashq",
-     "kind": "match",
+     "kind": "choice",
      "tasks": [
       {
-       "left": "1  Try not to buy pre-packaged food.",
-       "right": "C"
+       "prompt": "1  Try not to buy pre-packaged food.",
+       "answer": "C",
+       "options": [
+        "C",
+        "F",
+        "G va D",
+        "E"
+       ]
       },
       {
-       "left": "2  Use less washing-up liquid.",
-       "right": "F"
+       "prompt": "2  Use less washing-up liquid.",
+       "answer": "F",
+       "options": [
+        "F",
+        "C",
+        "G va D",
+        "E"
+       ]
       },
       {
-       "left": "3  Put aluminium cans into recycling bins.",
-       "right": "G va D"
+       "prompt": "3  Put aluminium cans into recycling bins.",
+       "answer": "G va D",
+       "options": [
+        "G va D",
+        "C",
+        "F",
+        "E"
+       ]
       },
       {
-       "left": "4  Use public transport.",
-       "right": "E"
+       "prompt": "4  Use public transport.",
+       "answer": "E",
+       "options": [
+        "E",
+        "C",
+        "F",
+        "G va D"
+       ]
       },
       {
-       "left": "5  Never light fires in forests.",
-       "right": "A"
+       "prompt": "5  Never light fires in forests.",
+       "answer": "A",
+       "options": [
+        "A",
+        "C",
+        "F",
+        "G va D"
+       ]
       },
       {
-       "left": "6  Do not drop rubbish in the street. Use rubbish bins.",
-       "right": "B"
+       "prompt": "6  Do not drop rubbish in the street. Use rubbish bins.",
+       "answer": "B",
+       "options": [
+        "B",
+        "C",
+        "F",
+        "G va D"
+       ]
       },
       {
-       "left": "7  Do not throw plastic bottles into the sea.",
-       "right": "B"
+       "prompt": "7  Do not throw plastic bottles into the sea.",
+       "answer": "B",
+       "options": [
+        "B",
+        "C",
+        "F",
+        "G va D"
+       ]
       },
       {
-       "left": "8  Do not use aerosols.",
-       "right": "H"
+       "prompt": "8  Do not use aerosols.",
+       "answer": "H",
+       "options": [
+        "H",
+        "C",
+        "F",
+        "G va D"
+       ]
       }
      ]
     },
@@ -1055,55 +1163,127 @@
      "book": "coursebook",
      "bookPage": 100,
      "bookRef": "Coursebook, 100-bet, 7b-mashq",
-     "kind": "match",
+     "kind": "choice",
      "tasks": [
       {
-       "left": "1  Ask before smoking in someone's house.",
-       "right": "E (England)"
+       "prompt": "1  Ask before smoking in someone's house.",
+       "answer": "E (England)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "2  When you visit someone, take a gift with you.",
-       "right": "J (Japan)"
+       "prompt": "2  When you visit someone, take a gift with you.",
+       "answer": "J (Japan)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "3  Take your shoes off as you enter the house.",
-       "right": "J (Japan)"
+       "prompt": "3  Take your shoes off as you enter the house.",
+       "answer": "J (Japan)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "4  Don't kiss anyone in public.",
-       "right": "C (China)"
+       "prompt": "4  Don't kiss anyone in public.",
+       "answer": "C (China)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "5  Always say 'please' and 'thank you'.",
-       "right": "E (England)"
+       "prompt": "5  Always say 'please' and 'thank you'.",
+       "answer": "E (England)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "6  Don't blow your nose in public.",
-       "right": "J (Japan)"
+       "prompt": "6  Don't blow your nose in public.",
+       "answer": "J (Japan)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "7  Never leave your chopsticks pointing upwards in your rice.",
-       "right": "C (China)"
+       "prompt": "7  Never leave your chopsticks pointing upwards in your rice.",
+       "answer": "C (China)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "8  Never push into a queue of people.",
-       "right": "E (England)"
+       "prompt": "8  Never push into a queue of people.",
+       "answer": "E (England)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "9  Make sure the toes of your shoes are pointing towards the door.",
-       "right": "J (Japan)"
+       "prompt": "9  Make sure the toes of your shoes are pointing towards the door.",
+       "answer": "J (Japan)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "10  Don't be late for appointments.",
-       "right": "E va C (England va China)"
+       "prompt": "10  Don't be late for appointments.",
+       "answer": "E va C (England va China)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "11  Don't tell jokes to people you don't know well.",
-       "right": "C (China)"
+       "prompt": "11  Don't tell jokes to people you don't know well.",
+       "answer": "C (China)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       },
       {
-       "left": "12  Don't talk with your mouth full.",
-       "right": "E (England)"
+       "prompt": "12  Don't talk with your mouth full.",
+       "answer": "E (England)",
+       "options": [
+        "E (England)",
+        "J (Japan)",
+        "C (China)",
+        "E va C (England va China)"
+       ]
       }
      ]
     }
