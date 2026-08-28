@@ -257,9 +257,44 @@ def norm_exercise(ex, page):
     kind, tasks = _dispatch(t, ex, items)
     kind, tasks = _fix_ambiguous_match(kind, tasks)
     kind, tasks = _fix_unbuildable_text(kind, tasks)
+    tasks, dropped = _drop_marker_answers(kind, tasks)
+    if dropped:
+        base["explanationUz"] = (base["explanationUz"] + "\n\n" + dropped).strip()
     base["kind"] = kind
     base["tasks"] = tasks
     return base
+
+
+MARKER = "⚠"
+
+
+def _drop_marker_answers(kind, tasks):
+    """Javob o'rnida OGOHLANTIRISH turgan bandlarni o'yindan chiqaradi.
+
+    Ba'zi bandlarning javobi kitobda YO'Q — u faqat audioda aytiladi yoki
+    matndan aniq chiqmaydi. Bunday joylarga biz ogohlantirish belgisi
+    qo'yganmiz. Bu belgi JAVOB emas — uni o'yin varianti qilib qo'ysak,
+    o'quvchi ma'nosiz so'zni tanlashga majbur bo'ladi.
+
+    Shunday bandlar o'yindan olib tashlanadi va mashq izohiga ro'yxat
+    sifatida qo'shiladi — ma'lumot yo'qolmaydi.
+    """
+    if not tasks:
+        return tasks, ""
+    key = "right" if kind == "match" else "answer"
+    keep, out = [], []
+    for t in tasks:
+        val = str(t.get(key) or "")
+        if val.strip().startswith(MARKER):
+            label = t.get("left") if kind == "match" else t.get("prompt")
+            out.append(f"  * {label} - {val.strip()}")
+        else:
+            keep.append(t)
+    if not out:
+        return tasks, ""
+    head = ("⚠ QUYIDAGI BANDLAR O'YINGA QO'ShILMADI - ularning javobi\n"
+            "kitobda YO'Q (audio yoki manba kerak):\n")
+    return keep, head + "\n".join(out)
 
 
 MAX_BUILD_PIECES = 14
@@ -655,8 +690,14 @@ def _dispatch(t, ex, items):
         return "text", out
 
     if t == "listen_fill_profile":
+        # DIQQAT: ba'zi profillarda `name` ATAYLAB null — ism faqat audioda
+        # aytiladi. Uni savol qilib qo'ysak, ekranda "None" so'zi chiqadi.
         return "text", [
-            task(p["name"], p["modelSentence"], prompt_uz="Profil bo'yicha gap tuzing")
+            task(p["name"] or f"{p.get('n', '?')}-rasm",
+                 p["modelSentence"],
+                 prompt_uz=(p.get("descUz") if not p.get("name")
+                            else "Profil bo'yicha gap tuzing"),
+                 speak="")
             for p in ex.get("profiles", [])
             if p.get("modelSentence") and not p.get("ageFromAudio")
         ]

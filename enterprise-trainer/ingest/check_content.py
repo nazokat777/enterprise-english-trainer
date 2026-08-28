@@ -74,7 +74,12 @@ def check_losses() -> list[tuple[str, str]]:
         for s in d["sections"]:
             for e in s["exercises"]:
                 key = (e["book"], e["bookPage"], str(e["ref"]))
-                exported[key] = exported.get(key, 0) + len(e["tasks"])
+                n = len(e["tasks"])
+                # Javobi kitobda YO'Q bandlar o'yindan chiqarilib, mashq
+                # izohiga ro'yxat qilib ko'chiriladi. Ular yo'qolgan emas —
+                # shuning uchun hisobga qo'shiladi.
+                n += (e.get("explanationUz") or "").count(chr(10) + "  * ")
+                exported[key] = exported.get(key, 0) + n
 
     for f in sorted(PAGES.glob("*/p*.json")):
         d = json.loads(f.read_text(encoding="utf-8"))
@@ -200,6 +205,12 @@ def check_export() -> list[tuple[str, str]]:
                         out.append((loc, f"b{i}: variant takrorlangan"))
                     if opts and len(opts) < 2:
                         out.append((loc, f"b{i}: bitta variant — tanlov yo'q"))
+                    # Manbada bo'sh (null) maydon savolga aylanib qolmasin:
+                    # ekranda "None" so'zi chiqadi va ovoz uni o'qib beradi.
+                    for name, val in (("savol", prompt), ("javob", t.get("answer") or ""),
+                                      ("ovoz", speak)):
+                        if val.strip() in ("None", "null"):
+                            out.append((loc, f"b{i}: {name} — bo'sh maydon ('{val}')"))
                     if speak and UZ_IN_SPEECH.search(speak):
                         out.append((loc, f"b{i}: o'zbekcha matn ovozga berilyapti"))
                     if e["kind"] in ("choice", "text") and not prompt:
