@@ -5,6 +5,7 @@
   "unit": 10,
   "unitTitle": "The Price of Fame",
   "module": 3,
+  "scanNote": "WORKBOOK 40-BET. Unit 10 'The Price of Fame' boshlanishi.\n\nSkaner bilan tekshirildi. Barcha javoblar TO'G'RI:\n  1-mashq (4 ta surat va kasb): Pikasso = rassom, Paster = olim, Verdi = bastakor, Fellini = kinorejissor.\n  2-mashq: poor, favourite, married, received, talented, popular, discovered, became.\n  3-mashq (11 bo'shliq): at, on/in, in, on, in, round/to, with/in, of.\n  4-mashq (Genri Mur): was, studied, became, taught, won, died.\n  6a (7 fe'l) va moslash: Spielberg, Bill Clinton, Ben Hur, Elton John, Fransiya, Dikkens, 'Titanik'.\n\nFAKTLAR TEKShIRILDI:\n\n⚠⚠ 2-mashq 7-band: 'Columbus DISCOVERED America in 1492'. Bu ibora bugun aniq emas deb hisoblanadi: u yerda allaqachon millionlab tub aholi yashardi; yevropaliklardan birinchi bo'lib taxminan 1000-yilda vikinglar yetib kelgan; Kolumbning o'zi Hindistonga yetib keldim deb o'ylagan. Aniqroq ifoda — 'REACHED the Americas'.\n\n⚠ 6a 2-band: Klinton 1992-yil noyabrda SAYLANGAN, prezidentlikni esa 1993-yil yanvarda egallagan.\n\n⚠ 4-mashq — Genri Mur faktlari to'g'ri: 1898-yil 30-iyul Yorkshir, Lidsda va Londondagi Qirollik san'at kollejida o'qigan, 1948-yilda Venetsiya biyennalesi mukofotini olgan, 1986-yil 31-avgust Hertfordshirda vafot etgan.\n  ⚠ Kichik noaniqlik: kitob 'taught ... for six years' deydi; manbalarda Mur Qirollik san'at kollejida 1924-1931-yillarda dars bergan (etti yil).\n\n⚠ Boshqa faktlar to'g'ri: Ona Tereza Nobel tinchlik mukofotini 1979-yilda olgan; Ben Hur 11 ta 'Oskar'; Fransiya 1998-yilgi jahon chempioni; 'Titanik' 1912-yilda cho'kkan.",
   "sections": [
     {
       "kind": "vocabulary",
@@ -19,10 +20,50 @@
           "explanationUz": "TO'RT MASHHUR SHAXS:\n  Picasso, Louis Pasteur, Giuseppe Verdi, Federico Fellini\n\nUSUL: har birining MILLATI berilgan —\nu ham yordam beradi.\n\nKASB NOMLARI:\n  a painter       = rassom\n  a ballet dancer = balet raqqosi\n  a composer      = bastakor\n  a director      = rejissor; direktor\n  an actor        = aktyor\n  a scientist     = olim\n  a film director = kinorejissor\n  a singer        = qo'shiqchi",
           "bookRef": "Workbook, 40-bet, 1-mashq",
           "items": [
-            { "textEn": "1  Picasso was a famous Spanish ............ .", "answer": "A painter", "options": ["A painter", "B ballet dancer", "C composer"], "hintUz": "Ispan san'atkori — nima yaratgan?", "whyUz": "PABLO PIKASSO — ispan RASSOMI (1881-1973).\nKubizm yo'nalishining asoschisi.\n'a painter' = rassom (bo'yoq bilan chizadi).\nCoursebook 73-betdagi 14-mashqda rassomlar bor edi." },
-            { "textEn": "2  Louis Pasteur was a French ............ .", "answer": "C scientist", "options": ["A director", "B actor", "C scientist"], "hintUz": "Pasterizatsiya usuli kimning nomi bilan atalgan?", "whyUz": "LUI PASTER — fransuz OLIMI (1822-1895).\nMikroblarni o'rgangan, emlash va pasterizatsiyani ixtiro qilgan.\n'a scientist' = olim.\nMari Kyuri ham olima edi (Coursebook 70-bet)." },
-            { "textEn": "3  Giuseppe Verdi was a famous ............ .", "answer": "B composer", "options": ["A actor", "B composer", "C painter"], "hintUz": "'Aida' va 'La Traviata' operalari muallifi", "whyUz": "JUZEPPE VERDI — italyan BASTAKORI (1813-1901).\nMashhur operalar yozgan: 'Aida', 'La Traviata', 'Rigoletto'.\n'a composer' = bastakor.\nCoursebook 73-betdagi 15-mashqda bastakorlar bor edi." },
-            { "textEn": "4  Federico Fellini was an Italian ............ .", "answer": "A film director", "options": ["A film director", "B scientist", "C singer"], "hintUz": "Film yaratadigan odam", "whyUz": "FEDERIKO FELLINI — italyan KINOREJISSORI (1920-1993).\n'La Dolce Vita' va '8½' filmlari bilan mashhur.\n'a film director' = kinorejissor.\nDIQQAT: 'AN Italian' — 'I' unli tovush → AN." }
+            {
+              "textEn": "1  Picasso was a famous Spanish ............ .",
+              "answer": "A painter",
+              "options": [
+                "A painter",
+                "B ballet dancer",
+                "C composer"
+              ],
+              "hintUz": "Ispan san'atkori — nima yaratgan?",
+              "whyUz": "PABLO PIKASSO — ispan RASSOMI (1881-1973).\nKubizm yo'nalishining asoschisi.\n'a painter' = rassom (bo'yoq bilan chizadi).\nCoursebook 73-betdagi 14-mashqda rassomlar bor edi."
+            },
+            {
+              "textEn": "2  Louis Pasteur was a French ............ .",
+              "answer": "C scientist",
+              "options": [
+                "A director",
+                "B actor",
+                "C scientist"
+              ],
+              "hintUz": "Pasterizatsiya usuli kimning nomi bilan atalgan?",
+              "whyUz": "LUI PASTER — fransuz OLIMI (1822-1895).\nMikroblarni o'rgangan, emlash va pasterizatsiyani ixtiro qilgan.\n'a scientist' = olim.\nMari Kyuri ham olima edi (Coursebook 70-bet)."
+            },
+            {
+              "textEn": "3  Giuseppe Verdi was a famous ............ .",
+              "answer": "B composer",
+              "options": [
+                "A actor",
+                "B composer",
+                "C painter"
+              ],
+              "hintUz": "'Aida' va 'La Traviata' operalari muallifi",
+              "whyUz": "JUZEPPE VERDI — italyan BASTAKORI (1813-1901).\nMashhur operalar yozgan: 'Aida', 'La Traviata', 'Rigoletto'.\n'a composer' = bastakor.\nCoursebook 73-betdagi 15-mashqda bastakorlar bor edi."
+            },
+            {
+              "textEn": "4  Federico Fellini was an Italian ............ .",
+              "answer": "A film director",
+              "options": [
+                "A film director",
+                "B scientist",
+                "C singer"
+              ],
+              "hintUz": "Film yaratadigan odam",
+              "whyUz": "FEDERIKO FELLINI — italyan KINOREJISSORI (1920-1993).\n'La Dolce Vita' va '8½' filmlari bilan mashhur.\n'a film director' = kinorejissor.\nDIQQAT: 'AN Italian' — 'I' unli tovush → AN."
+            }
           ]
         },
         {
@@ -30,18 +71,67 @@
           "type": "fill_gap",
           "instructionEn": "Fill in the gaps with words from the list.",
           "instructionUz": "Bo'shliqlarni ro'yxatdagi so'zlar bilan to'ldiring.",
-          "explanationUz": "RO'YXAT (8 ta so'z, 8 ta bo'shliq):\n  received, popular, discovered, poor, favourite,\n  became, married, talented\n\nHar biri AYNAN BIR MARTA ishlatiladi.\n\nIKKI GURUHGA BO'LINADI:\n\n  FE'LLAR (o'tgan zamonda):\n     received, discovered, became, married\n\n  SIFATLAR:\n     popular, poor, favourite, talented\n\nUSUL: bo'shliqdan keyin OT bo'lsa → SIFAT kerak,\nkeyin OT bo'lsa ham fe'l bo'lishi mumkin —\nkontekstga qarang.",
+          "explanationUz": "RO'YXAT (8 ta so'z, 8 ta bo'shliq):\n  received, popular, discovered, poor, favourite,\n  became, married, talented\n\nHar biri AYNAN BIR MARTA ishlatiladi.\n\nIKKI GURUHGA BO'LINADI:\n\n  FE'LLAR (o'tgan zamonda):\n     received, discovered, became, married\n\n  SIFATLAR:\n     popular, poor, favourite, talented\n\nUSUL: bo'shliqdan keyin OT bo'lsa → SIFAT kerak,\nkeyin OT bo'lsa ham fe'l bo'lishi mumkin —\nkontekstga qarang.\n\n⚠⚠ 7-BAND — 'COLUMBUS DISCOVERED AMERICA':\n\n  Bu — kitoblarda keng ishlatiladigan, lekin\n  bugun ANIQ EMAS deb hisoblanadigan ibora.\n\n  ⚠ 1492-yilda Kolumb Amerikaga YETIB KELDI —\n  bu to'g'ri.\n\n  ⚠ Lekin 'DISCOVERED' (kashf etdi) so'zi\n  noto'g'ri taassurot beradi:\n     • U yerda ALLAQAChON millionlab odam\n       yashardi (tub aholi);\n     • Yevropaliklardan ham birinchi u emas —\n       taxminan 1000-yilda VIKINGLAR\n       (Leyf Eriksson) Nyufaundlendga yetib\n       kelgan;\n     • Kolumbning o'zi umrining oxirigacha\n       HINDISTONGA yetib keldim deb o'ylagan.\n\n  ⚠ Bugungi aniqroq ifoda:\n     'Columbus REACHED the Americas in 1492'\n     (yetib keldi)\n     yoki 'Columbus's voyage BEGAN European\n     contact with the Americas'.\n\n  ⚠ Mashqning javobi 'discovered' bo'lib\n  qoladi (kitob shuni kutadi), lekin\n  haqiqatni bilib qo'ying.",
           "bookRef": "Workbook, 40-bet, 2-mashq",
-          "wordList": ["received", "popular", "discovered", "poor", "favourite", "became", "married", "talented"],
+          "wordList": [
+            "received",
+            "popular",
+            "discovered",
+            "poor",
+            "favourite",
+            "became",
+            "married",
+            "talented"
+          ],
           "items": [
-            { "textEn": "1  George is a kind person. He always helps ............ people.", "answer": "poor", "hintUz": "Mehribon odam kimlarga yordam beradi?", "whyUz": "'POOR people' = kambag'al odamlar.\nMehribon odam muhtojlarga yordam beradi.\nCoursebook 71-betda: 'sick and POOR people'.\n'poor' aksi: rich." },
-            { "textEn": "2  My ............ actor is Richard Gere.", "answer": "favourite", "hintUz": "'eng yoqadigan' ma'nosidagi sifat", "whyUz": "'my FAVOURITE actor' = sevimli aktyorim.\nAmerikacha yozilishi: favorite ('u' siz).\nRichard Gir — amerikalik aktyor." },
-            { "textEn": "3  My father ............ my mother in 1975.", "answer": "married", "hintUz": "Ota va ona — nikoh", "whyUz": "'MARRIED my mother' = onamga uylandi.\nmarry → married ('r' undosh + 'y' → -IED).\nDIQQAT: 'married WITH' XATO — 'with' KERAK EMAS." },
-            { "textEn": "4  Mother Teresa ............ the Nobel Prize for Peace in 1979.", "answer": "received", "hintUz": "Mukofot bilan nima qilinadi?", "whyUz": "'RECEIVED the Nobel Prize' = Nobel mukofotini oldi.\nreceive → received (oxiri 'e' → faqat + D).\nOna Tereza 1979-yilda tinchlik bo'yicha Nobel mukofotini olgan.\nCoursebook 72-73-betlarda ham 'received the Nobel Prize' bor edi." },
-            { "textEn": "5  Beethoven was a very ............ composer.", "answer": "talented", "hintUz": "Iqtidor haqidagi sifat", "whyUz": "'a very TALENTED composer' = juda iqtidorli bastakor.\n'talent' = iqtidor;  'talented' = iqtidorli.\nBethoven — nemis bastakori (1770-1827).\nCoursebook 73-betda 'the talented young man' (Motsart) bor edi." },
-            { "textEn": "6  The Beatles were very ............ in the 60s.", "answer": "popular", "hintUz": "Xalq orasida sevimli", "whyUz": "'very POPULAR' = juda mashhur, sevimli.\n'The Beatles' — ingliz musiqiy guruhi (60-yillar).\nDIQQAT: guruh nomi oldidan THE, fe'l KO'PLIKDA ('were').\n'in the 60s' = 60-yillarda." },
-            { "textEn": "7  Columbus ............ America in 1492.", "answer": "discovered", "hintUz": "Yangi qit'ani nima qildi?", "whyUz": "'DISCOVERED America' = Amerikani kashf etdi.\ndiscover → discovered (to'g'ri fe'l).\nGrammar 47-betdagi 19-mashqda ham shu gap bor edi." },
-            { "textEn": "8  I met Jane at a party and we ............ friends.", "answer": "became", "hintUz": "Tanishgach nima bo'lishdi?", "whyUz": "'BECAME friends' = do'stlashdik.\nbecome → BECAME (noto'g'ri fe'l).\nCoursebook 74-betda ham: 'They became friends'.\nmeet → MET (noto'g'ri fe'l)." }
+            {
+              "textEn": "1  George is a kind person. He always helps ............ people.",
+              "answer": "poor",
+              "hintUz": "Mehribon odam kimlarga yordam beradi?",
+              "whyUz": "'POOR people' = kambag'al odamlar.\nMehribon odam muhtojlarga yordam beradi.\nCoursebook 71-betda: 'sick and POOR people'.\n'poor' aksi: rich."
+            },
+            {
+              "textEn": "2  My ............ actor is Richard Gere.",
+              "answer": "favourite",
+              "hintUz": "'eng yoqadigan' ma'nosidagi sifat",
+              "whyUz": "'my FAVOURITE actor' = sevimli aktyorim.\nAmerikacha yozilishi: favorite ('u' siz).\nRichard Gir — amerikalik aktyor."
+            },
+            {
+              "textEn": "3  My father ............ my mother in 1975.",
+              "answer": "married",
+              "hintUz": "Ota va ona — nikoh",
+              "whyUz": "'MARRIED my mother' = onamga uylandi.\nmarry → married ('r' undosh + 'y' → -IED).\nDIQQAT: 'married WITH' XATO — 'with' KERAK EMAS."
+            },
+            {
+              "textEn": "4  Mother Teresa ............ the Nobel Prize for Peace in 1979.",
+              "answer": "received",
+              "hintUz": "Mukofot bilan nima qilinadi?",
+              "whyUz": "'RECEIVED the Nobel Prize' = Nobel mukofotini oldi.\nreceive → received (oxiri 'e' → faqat + D).\nOna Tereza 1979-yilda tinchlik bo'yicha Nobel mukofotini olgan.\nCoursebook 72-73-betlarda ham 'received the Nobel Prize' bor edi."
+            },
+            {
+              "textEn": "5  Beethoven was a very ............ composer.",
+              "answer": "talented",
+              "hintUz": "Iqtidor haqidagi sifat",
+              "whyUz": "'a very TALENTED composer' = juda iqtidorli bastakor.\n'talent' = iqtidor;  'talented' = iqtidorli.\nBethoven — nemis bastakori (1770-1827).\nCoursebook 73-betda 'the talented young man' (Motsart) bor edi."
+            },
+            {
+              "textEn": "6  The Beatles were very ............ in the 60s.",
+              "answer": "popular",
+              "hintUz": "Xalq orasida sevimli",
+              "whyUz": "'very POPULAR' = juda mashhur, sevimli.\n'The Beatles' — ingliz musiqiy guruhi (60-yillar).\nDIQQAT: guruh nomi oldidan THE, fe'l KO'PLIKDA ('were').\n'in the 60s' = 60-yillarda."
+            },
+            {
+              "textEn": "7  Columbus ............ America in 1492.",
+              "answer": "discovered",
+              "hintUz": "Yangi qit'ani nima qildi?",
+              "whyUz": "'DISCOVERED America' = Amerikani kashf etdi.\ndiscover → discovered (to'g'ri fe'l).\nGrammar 47-betdagi 19-mashqda ham shu gap bor edi."
+            },
+            {
+              "textEn": "8  I met Jane at a party and we ............ friends.",
+              "answer": "became",
+              "hintUz": "Tanishgach nima bo'lishdi?",
+              "whyUz": "'BECAME friends' = do'stlashdik.\nbecome → BECAME (noto'g'ri fe'l).\nCoursebook 74-betda ham: 'They became friends'.\nmeet → MET (noto'g'ri fe'l)."
+            }
           ]
         },
         {
@@ -51,19 +141,82 @@
           "instructionUz": "in, round, with, at, of, on, to predloglarini qo'ying.",
           "explanationUz": "RO'YXAT: in, round, with, at, of, on, to\n\n7 ta predlog, 11 ta bo'shliq — demak ba'zilari\nBIR NECHA MARTA ishlatiladi:\n  in  → 4 marta\n  on  → 2 marta\n  qolganlari → 1 martadan\n\nASOSIY QOIDALAR:\n\n  SANA va VAQT:\n     ON + aniq sana      on 2nd August, 1991\n     IN + oy yoki yil    in September, 1997\n\n  JOY:\n     IN + shahar         in Brighton\n     AT + muassasa       at a boarding school\n     ON + televizor      on TV\n\n  O'LIM SABABI (eng muhim juftlik):\n     die IN an accident  → HODISA\n     die OF an illness   → KASALLIK\n\n  BOShQA:\n     travel ROUND the world  = dunyo bo'ylab\n     return TO a place       = biror joyga qaytmoq\n     problems WITH something = ...da muammo\n     those IN need           = muhtojlar",
           "bookRef": "Workbook, 40-bet, 3-mashq",
-          "wordList": ["in", "round", "with", "at", "of", "on", "to"],
+          "wordList": [
+            "in",
+            "round",
+            "with",
+            "at",
+            "of",
+            "on",
+            "to"
+          ],
           "items": [
-            { "textEn": "1  Mark studied ............ a boarding school.", "answer": "at", "hintUz": "Maktab — muassasa", "whyUz": "'study AT a school' — maktab va universitet bilan AT.\n'a boarding school' = internat maktab\n(Coursebook 71-betda Diana o'qigan joy)." },
-            { "textEn": "2  She was born ............ 2nd August, 1991, ...  [1-bo'shliq]", "answer": "on", "hintUz": "Aniq SANA (kun bor)", "whyUz": "Aniq sana → ON.\n'on 2nd August, 1991'." },
-            { "textEn": "2  ... , ............ Brighton.  [2-bo'shliq]", "answer": "in", "hintUz": "Shahar nomi", "whyUz": "Shahar → IN.\nBraiton — Angliyaning janubidagi dengiz bo'yidagi shahar." },
-            { "textEn": "3  Susan always helps people ............ need.", "answer": "in", "hintUz": "'muhtojlar' iborasi", "whyUz": "'people IN need' = muhtoj odamlar.\nCoursebook 71-72-betlarda 'those IN need' bor edi." },
-            { "textEn": "4  There was a good film ............ TV last night.", "answer": "on", "hintUz": "Televizor uchun predlog", "whyUz": "'ON TV' = televizorda.\nShunga o'xshash: on the radio, on the Internet.\nCoursebook 71-betda 'watched her wedding ON television'." },
-            { "textEn": "5  James Dean died ............ a car accident.", "answer": "in", "hintUz": "HALOKAT bilan keladigan predlog", "whyUz": "'die IN an accident' = halokatda halok bo'lmoq.\nJeyms Din — amerikalik aktyor, 1955-yilda\navtohalokatda 24 yoshida halok bo'lgan.\n8-band bilan SOLISHTIRING." },
-            { "textEn": "6  Carlo travelled ............ the world for a year ...  [1-bo'shliq]", "answer": "round", "hintUz": "Dunyo BO'YLAB", "whyUz": "'travel ROUND the world' = dunyo bo'ylab sayohat qilmoq.\n'round' = 'around' bilan bir xil (britanchada 'round' ko'proq).\nCoursebook 71-72-betlarda ham bor edi." },
-            { "textEn": "6  ... and returned ............ Italy last month.  [2-bo'shliq]", "answer": "to", "hintUz": "Harakat yo'nalishi", "whyUz": "'return TO a place' = biror joyga qaytmoq.\nCoursebook 71-betda: 'When she RETURNED TO England'." },
-            { "textEn": "7  Mike and Sarah had problems ............ their marriage ...  [1-bo'shliq]", "answer": "with", "hintUz": "'muammo' so'zi bilan keladigan predlog", "whyUz": "'have problems WITH something' = ...da muammo bo'lmoq.\nCoursebook 71-betda: 'They had problems WITH their marriage'." },
-            { "textEn": "7  ... and divorced ............ September, 1997.  [2-bo'shliq]", "answer": "in", "hintUz": "Oy va yil (kun YO'Q)", "whyUz": "Kun ko'rsatilmagan, faqat oy va yil → IN.\n2-band bilan solishtiring: u yerda kun bor edi → ON." },
-            { "textEn": "8  Her grandfather died ............ pneumonia.", "answer": "of", "hintUz": "KASALLIK bilan keladigan predlog", "whyUz": "'die OF an illness' = kasallikdan vafot etmoq.\n'pneumonia' = pnevmoniya, o'pka yallig'lanishi.\n5-band bilan SOLISHTIRING — bu eng muhim juftlik:\n  die IN an accident  (halokat)\n  die OF an illness   (kasallik)\nCoursebook 72-betda ham: 'died OF leukaemia'." }
+            {
+              "textEn": "1  Mark studied ............ a boarding school.",
+              "answer": "at",
+              "hintUz": "Maktab — muassasa",
+              "whyUz": "'study AT a school' — maktab va universitet bilan AT.\n'a boarding school' = internat maktab\n(Coursebook 71-betda Diana o'qigan joy)."
+            },
+            {
+              "textEn": "2  She was born ............ 2nd August, 1991, ...  [1-bo'shliq]",
+              "answer": "on",
+              "hintUz": "Aniq SANA (kun bor)",
+              "whyUz": "Aniq sana → ON.\n'on 2nd August, 1991'."
+            },
+            {
+              "textEn": "2  ... , ............ Brighton.  [2-bo'shliq]",
+              "answer": "in",
+              "hintUz": "Shahar nomi",
+              "whyUz": "Shahar → IN.\nBraiton — Angliyaning janubidagi dengiz bo'yidagi shahar."
+            },
+            {
+              "textEn": "3  Susan always helps people ............ need.",
+              "answer": "in",
+              "hintUz": "'muhtojlar' iborasi",
+              "whyUz": "'people IN need' = muhtoj odamlar.\nCoursebook 71-72-betlarda 'those IN need' bor edi."
+            },
+            {
+              "textEn": "4  There was a good film ............ TV last night.",
+              "answer": "on",
+              "hintUz": "Televizor uchun predlog",
+              "whyUz": "'ON TV' = televizorda.\nShunga o'xshash: on the radio, on the Internet.\nCoursebook 71-betda 'watched her wedding ON television'."
+            },
+            {
+              "textEn": "5  James Dean died ............ a car accident.",
+              "answer": "in",
+              "hintUz": "HALOKAT bilan keladigan predlog",
+              "whyUz": "'die IN an accident' = halokatda halok bo'lmoq.\nJeyms Din — amerikalik aktyor, 1955-yilda\navtohalokatda 24 yoshida halok bo'lgan.\n8-band bilan SOLISHTIRING."
+            },
+            {
+              "textEn": "6  Carlo travelled ............ the world for a year ...  [1-bo'shliq]",
+              "answer": "round",
+              "hintUz": "Dunyo BO'YLAB",
+              "whyUz": "'travel ROUND the world' = dunyo bo'ylab sayohat qilmoq.\n'round' = 'around' bilan bir xil (britanchada 'round' ko'proq).\nCoursebook 71-72-betlarda ham bor edi."
+            },
+            {
+              "textEn": "6  ... and returned ............ Italy last month.  [2-bo'shliq]",
+              "answer": "to",
+              "hintUz": "Harakat yo'nalishi",
+              "whyUz": "'return TO a place' = biror joyga qaytmoq.\nCoursebook 71-betda: 'When she RETURNED TO England'."
+            },
+            {
+              "textEn": "7  Mike and Sarah had problems ............ their marriage ...  [1-bo'shliq]",
+              "answer": "with",
+              "hintUz": "'muammo' so'zi bilan keladigan predlog",
+              "whyUz": "'have problems WITH something' = ...da muammo bo'lmoq.\nCoursebook 71-betda: 'They had problems WITH their marriage'."
+            },
+            {
+              "textEn": "7  ... and divorced ............ September, 1997.  [2-bo'shliq]",
+              "answer": "in",
+              "hintUz": "Oy va yil (kun YO'Q)",
+              "whyUz": "Kun ko'rsatilmagan, faqat oy va yil → IN.\n2-band bilan solishtiring: u yerda kun bor edi → ON."
+            },
+            {
+              "textEn": "8  Her grandfather died ............ pneumonia.",
+              "answer": "of",
+              "hintUz": "KASALLIK bilan keladigan predlog",
+              "whyUz": "'die OF an illness' = kasallikdan vafot etmoq.\n'pneumonia' = pnevmoniya, o'pka yallig'lanishi.\n5-band bilan SOLISHTIRING — bu eng muhim juftlik:\n  die IN an accident  (halokat)\n  die OF an illness   (kasallik)\nCoursebook 72-betda ham: 'died OF leukaemia'."
+            }
           ]
         },
         {
@@ -73,14 +226,51 @@
           "instructionUz": "became, was, won, died, taught, studied so'zlarini qo'ying.",
           "explanationUz": "TO'LIQ MATN (to'ldirilgan holda):\n\n  Henry Moore WAS a famous British sculptor. He was born on\n  30th July, 1898 in Yorkshire.\n\n  Moore STUDIED art in Leeds and at the Royal College of\n  Art in London. In 1926, he BECAME an art teacher and he\n  TAUGHT at the Royal College of Art for six years. In 1948\n  he WON the Venice Biennale sculpture prize.\n\n  Henry Moore DIED on 31st August, 1986, in Hertfordshire.\n\n\nO'ZBEKCHA TARJIMASI:\n  Genri Mur mashhur britaniyalik haykaltarosh edi.\n  U 1898-yil 30-iyulda Yorkshirda tug'ilgan.\n  Mur Lidsda va Londondagi Qirollik san'at kollejida\n  san'at o'qidi. 1926-yilda san'at o'qituvchisi bo'ldi va\n  Qirollik san'at kollejida olti yil dars berdi.\n  1948-yilda Venetsiya biennalesining haykaltaroshlik\n  mukofotini yutdi.\n  Genri Mur 1986-yil 31-avgustda Xertfordshirda vafot etdi.\n\n\nOLTI FE'L, OLTI BO'SHLIQ — har biri BIR MARTA.\n\nHAMMASI NOTO'G'RI FE'L, faqat 'studied' TO'G'RI:\n  be    → WAS\n  study → STUDIED   (TO'G'RI fe'l: -IED)\n  become → BECAME\n  teach → TAUGHT\n  win   → WON\n  die   → DIED      (TO'G'RI fe'l: + D)\n\nUSUL: har bir bo'shliqning atrofidagi so'zlarga qarang.\n  ... art in Leeds     → o'qish → studied\n  ... an art teacher   → bo'lish → became\n  ... at the College   → dars berish → taught\n  ... the prize        → yutish → won\n\nYANGI SO'ZLAR:\n  a sculptor  = haykaltarosh\n  sculpture   = haykaltaroshlik\n  art         = san'at\n  a college   = kollej\n  a prize     = mukofot\n  a biennale  = biennale (ikki yilda bir o'tkaziladigan ko'rgazma)\n\nGENRI MUR HAQIDA:\n  Britaniyaning eng mashhur haykaltaroshi.\n  Yirik bronza haykallari butun dunyo shaharlarida bor.",
           "bookRef": "Workbook, 40-bet, 4-mashq",
-          "wordList": ["became", "was", "won", "died", "taught", "studied"],
+          "wordList": [
+            "became",
+            "was",
+            "won",
+            "died",
+            "taught",
+            "studied"
+          ],
           "items": [
-            { "textEn": "1  Henry Moore ............ a famous British sculptor.", "answer": "was", "hintUz": "Keyin kasb keladi", "whyUz": "Kasb aytilyapti → 'to be' fe'li.\n'Henry Moore' BIRLIK → WAS.\n'a sculptor' = haykaltarosh." },
-            { "textEn": "2  Moore ............ art in Leeds and at the Royal College of Art in London.", "answer": "studied", "hintUz": "Kollejda nima qilinadi?", "whyUz": "'STUDIED art' = san'at o'qidi.\nstudy → STUDIED ('d' undosh + 'y' → -IED).\nRo'yxatdagi yagona TO'G'RI fe'l (die dan tashqari)." },
-            { "textEn": "3  In 1926, he ............ an art teacher ...", "answer": "became", "hintUz": "Kasb egasi BO'LDI", "whyUz": "'BECAME an art teacher' = san'at o'qituvchisi bo'ldi.\nbecome → BECAME (noto'g'ri fe'l).\n'AN art teacher' — 'a' unli tovush → AN." },
-            { "textEn": "4  ... and he ............ at the Royal College of Art for six years.", "answer": "taught", "hintUz": "O'qituvchi nima qiladi?", "whyUz": "'TAUGHT at the College' = kollejda dars berdi.\nteach → TAUGHT (noto'g'ri fe'l), o'qilishi /tɔːt/.\n'teached' XATO.\n'teach AT' — predlog AT.\n'for six years' = olti yil davomida." },
-            { "textEn": "5  In 1948 he ............ the Venice Biennale sculpture prize.", "answer": "won", "hintUz": "Mukofot bilan nima qilinadi?", "whyUz": "'WON the prize' = mukofotni yutdi.\nwin → WON (noto'g'ri fe'l), o'qilishi /wʌn/.\nDIQQAT: 'one' /wʌn/ bilan bir xil o'qiladi.\n'Venice' = Venetsiya." },
-            { "textEn": "6  Henry Moore ............ on 31st August, 1986, in Hertfordshire.", "answer": "died", "hintUz": "Tarjimai holning oxirgi gapi", "whyUz": "die → died (to'g'ri fe'l, oxiri 'e' → faqat + D).\n'ON 31st August' — aniq sana → ON.\n'IN Hertfordshire' — joy → IN." }
+            {
+              "textEn": "1  Henry Moore ............ a famous British sculptor.",
+              "answer": "was",
+              "hintUz": "Keyin kasb keladi",
+              "whyUz": "Kasb aytilyapti → 'to be' fe'li.\n'Henry Moore' BIRLIK → WAS.\n'a sculptor' = haykaltarosh."
+            },
+            {
+              "textEn": "2  Moore ............ art in Leeds and at the Royal College of Art in London.",
+              "answer": "studied",
+              "hintUz": "Kollejda nima qilinadi?",
+              "whyUz": "'STUDIED art' = san'at o'qidi.\nstudy → STUDIED ('d' undosh + 'y' → -IED).\nRo'yxatdagi yagona TO'G'RI fe'l (die dan tashqari)."
+            },
+            {
+              "textEn": "3  In 1926, he ............ an art teacher ...",
+              "answer": "became",
+              "hintUz": "Kasb egasi BO'LDI",
+              "whyUz": "'BECAME an art teacher' = san'at o'qituvchisi bo'ldi.\nbecome → BECAME (noto'g'ri fe'l).\n'AN art teacher' — 'a' unli tovush → AN."
+            },
+            {
+              "textEn": "4  ... and he ............ at the Royal College of Art for six years.",
+              "answer": "taught",
+              "hintUz": "O'qituvchi nima qiladi?",
+              "whyUz": "'TAUGHT at the College' = kollejda dars berdi.\nteach → TAUGHT (noto'g'ri fe'l), o'qilishi /tɔːt/.\n'teached' XATO.\n'teach AT' — predlog AT.\n'for six years' = olti yil davomida."
+            },
+            {
+              "textEn": "5  In 1948 he ............ the Venice Biennale sculpture prize.",
+              "answer": "won",
+              "hintUz": "Mukofot bilan nima qilinadi?",
+              "whyUz": "'WON the prize' = mukofotni yutdi.\nwin → WON (noto'g'ri fe'l), o'qilishi /wʌn/.\nDIQQAT: 'one' /wʌn/ bilan bir xil o'qiladi.\n'Venice' = Venetsiya."
+            },
+            {
+              "textEn": "6  Henry Moore ............ on 31st August, 1986, in Hertfordshire.",
+              "answer": "died",
+              "hintUz": "Tarjimai holning oxirgi gapi",
+              "whyUz": "die → died (to'g'ri fe'l, oxiri 'e' → faqat + D).\n'ON 31st August' — aniq sana → ON.\n'IN Hertfordshire' — joy → IN."
+            }
           ]
         }
       ]
@@ -98,22 +288,102 @@
           "explanationUz": "O'N OLTI FE'L — TO'G'RI va NOTO'G'RI ARALASH.\n\nTO'G'RI FE'LLAR (7 ta):\n  appear → appeared    (oddiy + ED)\n  stop   → stopped     (undosh IKKILANADI)\n  star   → starred     (undosh IKKILANADI)\n  travel → travelled   (britancha: L ikkilanadi)\n  finish → finished    (oddiy + ED)\n  move   → moved       (oxiri -E → + D)\n  produce → produced   (oxiri -E → + D)\n  direct → directed    (oddiy + ED)\n\nNOTO'G'RI FE'LLAR (8 ta):\n  buy   → bought\n  write → wrote\n  sing  → sang\n  come  → came\n  win   → won\n  sink  → sank\n  eat   → ate\n  lose  → lost\n\nDIQQAT — UNDOSH IKKILANIShI:\n  stop → stoPPed;  star → staRRed\n  Sababi: bir bo'g'inli, oxiri UNDOSH+UNLI+UNDOSH,\n  urg'u shu bo'g'inda → oxirgi undosh ikkilanadi.\n  (Grammar 42-betdagi 3-qoida.)\n\nDIQQAT — 'SING' va 'SINK' JUFTLIGI:\n  sing → SANG  (qo'shiq aytmoq)\n  sink → SANK  (cho'kmoq)\n  Ikkalasi ham 'i' → 'a' ga aylanadi — bir xil naqsh.",
           "bookRef": "Workbook, 40-bet, 5-mashq",
           "items": [
-            { "textEn": "1  appear  →  ............", "answer": "appeared", "hintUz": "TO'G'RI fe'l: oddiy + ED", "whyUz": "appear → appeared.\n'to appear' = paydo bo'lmoq (Coursebook 70-71-betlarda)." },
-            { "textEn": "2  stop  →  ............", "answer": "stopped", "hintUz": "Oxirgi undosh IKKILANADI", "whyUz": "stop → stoPPed.\nBir bo'g'inli, oxiri UNDOSH+UNLI+UNDOSH (s-t-O-p),\nurg'u shu bo'g'inda → 'p' IKKILANADI.\nGrammar 42-betdagi 3-qoida." },
-            { "textEn": "3  buy  →  ............", "answer": "bought", "hintUz": "NOTO'G'RI fe'l", "whyUz": "buy → BOUGHT, o'qilishi /bɔːt/.\n'y' bor, lekin -IED qoidasi ISHLAMAYDI." },
-            { "textEn": "4  write  →  ............", "answer": "wrote", "hintUz": "NOTO'G'RI fe'l", "whyUz": "write → WROTE.\nOxiri 'e' bo'lsa ham 'writed' XATO." },
-            { "textEn": "5  star  →  ............", "answer": "starred", "hintUz": "Oxirgi undosh IKKILANADI", "whyUz": "star → staRRed.\n'to star' = bosh rolda o'ynamoq (film haqida).\n's-t-A-r' — urg'uli unli ikki undosh orasida →\n'r' IKKILANADI.\n2-band bilan bir xil qoida.\nOt sifatida 'a star' = yulduz." },
-            { "textEn": "6  sing  →  ............", "answer": "sang", "hintUz": "NOTO'G'RI fe'l: 'i' → 'a'", "whyUz": "sing → SANG.\n11-band bilan solishtiring: sink → SANK.\nIkkalasida ham 'i' → 'a'." },
-            { "textEn": "7  travel  →  ............", "answer": "travelled", "hintUz": "Britanchada 'L' IKKILANADI", "whyUz": "travel → TRAVELLED (britancha).\nAmerikachada: traveled (bitta L).\nDIQQAT: urg'u BIRINCHI bo'g'inda (TRA-vel) bo'lsa ham\nbritanchada 'L' doim ikkilanadi — bu ISTISNO." },
-            { "textEn": "8  come  →  ............", "answer": "came", "hintUz": "NOTO'G'RI fe'l", "whyUz": "come → CAME.\n'become → became' bilan bir xil naqsh." },
-            { "textEn": "9  win  →  ............", "answer": "won", "hintUz": "NOTO'G'RI fe'l", "whyUz": "win → WON, o'qilishi /wʌn/.\nDIQQAT: 'one' bilan bir xil o'qiladi.\n4-mashqning 5-bandida ham bor edi." },
-            { "textEn": "10  finish  →  ............", "answer": "finished", "hintUz": "TO'G'RI fe'l: oddiy + ED", "whyUz": "finish → finished.\nOxiri 'sh' → -ed /t/ deb o'qiladi." },
-            { "textEn": "11  sink  →  ............", "answer": "sank", "hintUz": "NOTO'G'RI fe'l: 'i' → 'a'", "whyUz": "sink → SANK.\n'to sink' = cho'kmoq.\n6-band bilan bir xil naqsh (sing → sang).\n6-mashqning 7-bandida Titanik haqida ishlatiladi." },
-            { "textEn": "12  move  →  ............", "answer": "moved", "hintUz": "Oxiri -E → faqat + D", "whyUz": "move → moved.\n'to move' = ko'chib o'tmoq (Grammar 44-betda ham)." },
-            { "textEn": "13  eat  →  ............", "answer": "ate", "hintUz": "NOTO'G'RI fe'l", "whyUz": "eat → ATE, o'qilishi /eɪt/ ('eyt').\n'eated' XATO." },
-            { "textEn": "14  produce  →  ............", "answer": "produced", "hintUz": "Oxiri -E → faqat + D", "whyUz": "produce → produced.\n'to produce' = ishlab chiqarmoq; (film) prodyuserlik qilmoq.\n'a producer' = prodyuser." },
-            { "textEn": "15  lose  →  ............", "answer": "lost", "hintUz": "NOTO'G'RI fe'l", "whyUz": "lose → LOST.\n'to lose' = yo'qotmoq; yutqazmoq.\n9-band bilan JUFT: win (yutmoq) ↔ lose (yutqazmoq).\nGrammar 43-betda: 'he lost it all'." },
-            { "textEn": "16  direct  →  ............", "answer": "directed", "hintUz": "TO'G'RI fe'l: oddiy + ED", "whyUz": "direct → directed.\n'to direct a film' = film rejissorligi qilmoq.\n'a director' = rejissor (1-mashqning 4-bandi).\n-ed /ɪd/ deb o'qiladi (oxiri 't')." }
+            {
+              "textEn": "1  appear  →  ............",
+              "answer": "appeared",
+              "hintUz": "TO'G'RI fe'l: oddiy + ED",
+              "whyUz": "appear → appeared.\n'to appear' = paydo bo'lmoq (Coursebook 70-71-betlarda)."
+            },
+            {
+              "textEn": "2  stop  →  ............",
+              "answer": "stopped",
+              "hintUz": "Oxirgi undosh IKKILANADI",
+              "whyUz": "stop → stoPPed.\nBir bo'g'inli, oxiri UNDOSH+UNLI+UNDOSH (s-t-O-p),\nurg'u shu bo'g'inda → 'p' IKKILANADI.\nGrammar 42-betdagi 3-qoida."
+            },
+            {
+              "textEn": "3  buy  →  ............",
+              "answer": "bought",
+              "hintUz": "NOTO'G'RI fe'l",
+              "whyUz": "buy → BOUGHT, o'qilishi /bɔːt/.\n'y' bor, lekin -IED qoidasi ISHLAMAYDI."
+            },
+            {
+              "textEn": "4  write  →  ............",
+              "answer": "wrote",
+              "hintUz": "NOTO'G'RI fe'l",
+              "whyUz": "write → WROTE.\nOxiri 'e' bo'lsa ham 'writed' XATO."
+            },
+            {
+              "textEn": "5  star  →  ............",
+              "answer": "starred",
+              "hintUz": "Oxirgi undosh IKKILANADI",
+              "whyUz": "star → staRRed.\n'to star' = bosh rolda o'ynamoq (film haqida).\n's-t-A-r' — urg'uli unli ikki undosh orasida →\n'r' IKKILANADI.\n2-band bilan bir xil qoida.\nOt sifatida 'a star' = yulduz."
+            },
+            {
+              "textEn": "6  sing  →  ............",
+              "answer": "sang",
+              "hintUz": "NOTO'G'RI fe'l: 'i' → 'a'",
+              "whyUz": "sing → SANG.\n11-band bilan solishtiring: sink → SANK.\nIkkalasida ham 'i' → 'a'."
+            },
+            {
+              "textEn": "7  travel  →  ............",
+              "answer": "travelled",
+              "hintUz": "Britanchada 'L' IKKILANADI",
+              "whyUz": "travel → TRAVELLED (britancha).\nAmerikachada: traveled (bitta L).\nDIQQAT: urg'u BIRINCHI bo'g'inda (TRA-vel) bo'lsa ham\nbritanchada 'L' doim ikkilanadi — bu ISTISNO."
+            },
+            {
+              "textEn": "8  come  →  ............",
+              "answer": "came",
+              "hintUz": "NOTO'G'RI fe'l",
+              "whyUz": "come → CAME.\n'become → became' bilan bir xil naqsh."
+            },
+            {
+              "textEn": "9  win  →  ............",
+              "answer": "won",
+              "hintUz": "NOTO'G'RI fe'l",
+              "whyUz": "win → WON, o'qilishi /wʌn/.\nDIQQAT: 'one' bilan bir xil o'qiladi.\n4-mashqning 5-bandida ham bor edi."
+            },
+            {
+              "textEn": "10  finish  →  ............",
+              "answer": "finished",
+              "hintUz": "TO'G'RI fe'l: oddiy + ED",
+              "whyUz": "finish → finished.\nOxiri 'sh' → -ed /t/ deb o'qiladi."
+            },
+            {
+              "textEn": "11  sink  →  ............",
+              "answer": "sank",
+              "hintUz": "NOTO'G'RI fe'l: 'i' → 'a'",
+              "whyUz": "sink → SANK.\n'to sink' = cho'kmoq.\n6-band bilan bir xil naqsh (sing → sang).\n6-mashqning 7-bandida Titanik haqida ishlatiladi."
+            },
+            {
+              "textEn": "12  move  →  ............",
+              "answer": "moved",
+              "hintUz": "Oxiri -E → faqat + D",
+              "whyUz": "move → moved.\n'to move' = ko'chib o'tmoq (Grammar 44-betda ham)."
+            },
+            {
+              "textEn": "13  eat  →  ............",
+              "answer": "ate",
+              "hintUz": "NOTO'G'RI fe'l",
+              "whyUz": "eat → ATE, o'qilishi /eɪt/ ('eyt').\n'eated' XATO."
+            },
+            {
+              "textEn": "14  produce  →  ............",
+              "answer": "produced",
+              "hintUz": "Oxiri -E → faqat + D",
+              "whyUz": "produce → produced.\n'to produce' = ishlab chiqarmoq; (film) prodyuserlik qilmoq.\n'a producer' = prodyuser."
+            },
+            {
+              "textEn": "15  lose  →  ............",
+              "answer": "lost",
+              "hintUz": "NOTO'G'RI fe'l",
+              "whyUz": "lose → LOST.\n'to lose' = yo'qotmoq; yutqazmoq.\n9-band bilan JUFT: win (yutmoq) ↔ lose (yutqazmoq).\nGrammar 43-betda: 'he lost it all'."
+            },
+            {
+              "textEn": "16  direct  →  ............",
+              "answer": "directed",
+              "hintUz": "TO'G'RI fe'l: oddiy + ED",
+              "whyUz": "direct → directed.\n'to direct a film' = film rejissorligi qilmoq.\n'a director' = rejissor (1-mashqning 4-bandi).\n-ed /ɪd/ deb o'qiladi (oxiri 't')."
+            }
           ]
         },
         {
@@ -121,16 +391,51 @@
           "type": "fill_gap",
           "instructionEn": "First, put the verbs into the past simple.",
           "instructionUz": "Avval fe'llarni oddiy o'tgan zamonga qo'ying.",
-          "explanationUz": "ENG MUHIM QOIDA — BU MASHQDA 'DID' YO'Q!\n\n  Savol so'zi ('Who', 'Which film', 'Which country',\n  'Which ship') EGA vazifasini bajaryapti.\n\n  EGA so'ralganda 'did' KERAK EMAS —\n  fe'l TO'G'RIDAN-TO'G'RI o'tgan shaklda turadi:\n\n     Who DIRECTED E.T.?        ✓\n     Who DID direct E.T.?      (odatda ishlatilmaydi)\n\nSOLISHTIRING — Grammar 44-betdagi 7-mashqning 5-bandi:\n  'WHO did you visit last week?'\n  U yerda 'who' TO'LDIRUVChI edi (kimni?) → 'did' KERAK.\n\n  Bu yerda esa:\n  'WHO directed E.T.?'\n  'who' EGA (kim?) → 'did' KERAK EMAS.\n\nFARQNI ANIQLASH USULI:\n  Javob EGA bo'lsa → 'did' yo'q\n     Who wrote it? — DICKENS wrote it.  (Dickens = ega)\n  Javob TO'LDIRUVChI bo'lsa → 'did' bor\n     Who did you visit? — I visited MY AUNT.",
+          "explanationUz": "ENG MUHIM QOIDA — BU MASHQDA 'DID' YO'Q!\n\n  Savol so'zi ('Who', 'Which film', 'Which country',\n  'Which ship') EGA vazifasini bajaryapti.\n\n  EGA so'ralganda 'did' KERAK EMAS —\n  fe'l TO'G'RIDAN-TO'G'RI o'tgan shaklda turadi:\n\n     Who DIRECTED E.T.?        ✓\n     Who DID direct E.T.?      (odatda ishlatilmaydi)\n\nSOLISHTIRING — Grammar 44-betdagi 7-mashqning 5-bandi:\n  'WHO did you visit last week?'\n  U yerda 'who' TO'LDIRUVChI edi (kimni?) → 'did' KERAK.\n\n  Bu yerda esa:\n  'WHO directed E.T.?'\n  'who' EGA (kim?) → 'did' KERAK EMAS.\n\nFARQNI ANIQLASH USULI:\n  Javob EGA bo'lsa → 'did' yo'q\n     Who wrote it? — DICKENS wrote it.  (Dickens = ega)\n  Javob TO'LDIRUVChI bo'lsa → 'did' bor\n     Who did you visit? — I visited MY AUNT.\n\n⚠ 2-BAND — ANIQLIK:\n\n  Savol: 'Who became President of the USA\n  in 1992?'  Javob: Bill Clinton.\n\n  ⚠ Aniqrog'i: Klinton 1992-yil noyabrda\n  SAYLANDI, lekin prezidentlik lavozimini\n  1993-yil YANVARDA egalladi.\n\n  ⚠ AQShda saylov noyabrda, qasamyod esa\n  keyingi yil yanvarda bo'ladi.\n\n  ⚠ Kitob 'saylandi' ma'nosida yozgan.\n\n\n⚠ QOLGAN OLTI BAND TO'G'RI:\n  Spielberg — E.T. (1982)\n  Ben Hur — 11 ta 'Oskar' (1960-yilgi marosim)\n  Elton John — 'Candle in the Wind' (1997,\n     malika Diana xotirasiga)\n  Fransiya — Jahon chempioni (1998)\n  Charlz Dikkens — 'Oliver Tvist'\n  'Titanik' — 1912-yilda cho'kkan",
           "bookRef": "Workbook, 40-bet, 6a-mashq (fe'llar)",
           "items": [
-            { "textEn": "1  Who ............ (direct) E.T. The Extra-Terrestrial?", "answer": "directed", "hintUz": "'Who' EGA — 'did' kerak emas", "whyUz": "'Who DIRECTED ...?' — 'who' EGA → 'did' KERAK EMAS.\ndirect → directed (to'g'ri fe'l).\n'E.T.' — 1982-yilgi mashhur film." },
-            { "textEn": "2  Who ............ (become) President of the USA in 1992?", "answer": "became", "hintUz": "'Who' EGA; noto'g'ri fe'l", "whyUz": "become → BECAME.\n'President of the USA' — unvon oldidan artikl YO'Q\n('become President' — turg'un ibora)." },
-            { "textEn": "3  Which film ............ (receive) 11 Oscars in 1960?", "answer": "received", "hintUz": "'Which film' EGA", "whyUz": "receive → received (oxiri 'e' → + D).\n'Which film' EGA → 'did' KERAK EMAS.\n'an Oscar' = Oskar mukofoti." },
-            { "textEn": "4  Who ............ (sing) Candle in the Wind for Princess Diana?", "answer": "sang", "hintUz": "'Who' EGA; noto'g'ri fe'l", "whyUz": "sing → SANG.\n'Candle in the Wind' — Diana dafn marosimida\naytilgan qo'shiq (1997).\nCoursebook 71-betdagi Diana bilan bog'liq." },
-            { "textEn": "5  Which country ............ (win) the World Cup in 1998?", "answer": "won", "hintUz": "'Which country' EGA; noto'g'ri fe'l", "whyUz": "win → WON.\n'the World Cup' = Jahon chempionati (futbol).\n5-mashqning 9-bandida ham bor edi." },
-            { "textEn": "6  Who ............ (write) Oliver Twist?", "answer": "wrote", "hintUz": "'Who' EGA; noto'g'ri fe'l", "whyUz": "write → WROTE.\n'Oliver Twist' — Charlz Dikkensning romani.\nDikkens Grammar 43-betdagi 3-mashqda bor edi." },
-            { "textEn": "7  Which ship ............ (sink) in 1912?", "answer": "sank", "hintUz": "'Which ship' EGA; noto'g'ri fe'l", "whyUz": "sink → SANK.\n5-mashqning 11-bandida ham bor edi.\nTitanik 1912-yil 15-aprelda cho'kkan." }
+            {
+              "textEn": "1  Who ............ (direct) E.T. The Extra-Terrestrial?",
+              "answer": "directed",
+              "hintUz": "'Who' EGA — 'did' kerak emas",
+              "whyUz": "'Who DIRECTED ...?' — 'who' EGA → 'did' KERAK EMAS.\ndirect → directed (to'g'ri fe'l).\n'E.T.' — 1982-yilgi mashhur film."
+            },
+            {
+              "textEn": "2  Who ............ (become) President of the USA in 1992?",
+              "answer": "became",
+              "hintUz": "'Who' EGA; noto'g'ri fe'l",
+              "whyUz": "become → BECAME.\n'President of the USA' — unvon oldidan artikl YO'Q\n('become President' — turg'un ibora)."
+            },
+            {
+              "textEn": "3  Which film ............ (receive) 11 Oscars in 1960?",
+              "answer": "received",
+              "hintUz": "'Which film' EGA",
+              "whyUz": "receive → received (oxiri 'e' → + D).\n'Which film' EGA → 'did' KERAK EMAS.\n'an Oscar' = Oskar mukofoti."
+            },
+            {
+              "textEn": "4  Who ............ (sing) Candle in the Wind for Princess Diana?",
+              "answer": "sang",
+              "hintUz": "'Who' EGA; noto'g'ri fe'l",
+              "whyUz": "sing → SANG.\n'Candle in the Wind' — Diana dafn marosimida\naytilgan qo'shiq (1997).\nCoursebook 71-betdagi Diana bilan bog'liq."
+            },
+            {
+              "textEn": "5  Which country ............ (win) the World Cup in 1998?",
+              "answer": "won",
+              "hintUz": "'Which country' EGA; noto'g'ri fe'l",
+              "whyUz": "win → WON.\n'the World Cup' = Jahon chempionati (futbol).\n5-mashqning 9-bandida ham bor edi."
+            },
+            {
+              "textEn": "6  Who ............ (write) Oliver Twist?",
+              "answer": "wrote",
+              "hintUz": "'Who' EGA; noto'g'ri fe'l",
+              "whyUz": "write → WROTE.\n'Oliver Twist' — Charlz Dikkensning romani.\nDikkens Grammar 43-betdagi 3-mashqda bor edi."
+            },
+            {
+              "textEn": "7  Which ship ............ (sink) in 1912?",
+              "answer": "sank",
+              "hintUz": "'Which ship' EGA; noto'g'ri fe'l",
+              "whyUz": "sink → SANK.\n5-mashqning 11-bandida ham bor edi.\nTitanik 1912-yil 15-aprelda cho'kkan."
+            }
           ]
         },
         {
@@ -141,13 +446,55 @@
           "explanationUz": "YETTI JAVOB:\n  A  France\n  B  The Titanic\n  C  Elton John\n  D  Steven Spielberg\n  E  Ben Hur\n  F  Charles Dickens\n  G  Bill Clinton\n\nHar bir javob — SAVOLNING EGASI.\nShuning uchun savolda 'did' yo'q edi.",
           "bookRef": "Workbook, 40-bet, 6a-mashq (moslash)",
           "pairs": [
-            { "left": "1  Who directed E.T. The Extra-Terrestrial?", "right": "D  Steven Spielberg", "leftUz": "'E.T.' filmini kim suratga olgan?", "rightUz": "Stiven Spilberg", "whyUz": "Stiven Spilberg — amerikalik kinorejissor.\n'E.T. The Extra-Terrestrial' (1982) — uning eng mashhur\nfilmlaridan biri.\n'extra-terrestrial' = koinotdan kelgan mavjudot." },
-            { "left": "2  Who became President of the USA in 1992?", "right": "G  Bill Clinton", "leftUz": "1992-yilda kim AQSh prezidenti bo'ldi?", "rightUz": "Bill Klinton", "whyUz": "Bill Klinton 1992-yilda saylangan (42-prezident)." },
-            { "left": "3  Which film received 11 Oscars in 1960?", "right": "E  Ben Hur", "leftUz": "1960-yilda qaysi film 11 ta Oskar oldi?", "rightUz": "'Ben-Gur'", "whyUz": "'Ben Hur' (1959-yilgi film) 1960-yilgi marosimda\n11 ta Oskar olgan — o'sha davr uchun rekord." },
-            { "left": "4  Who sang Candle in the Wind for Princess Diana?", "right": "C  Elton John", "leftUz": "Malika Diana uchun 'Candle in the Wind' ni kim kuyladi?", "rightUz": "Elton Jon", "whyUz": "Elton Jon — ingliz qo'shiqchisi va pianinochisi.\n1997-yilda Diananing dafn marosimida bu qo'shiqni aytgan." },
-            { "left": "5  Which country won the World Cup in 1998?", "right": "A  France", "leftUz": "1998-yilda qaysi mamlakat Jahon chempionatini yutdi?", "rightUz": "Fransiya", "whyUz": "1998-yilgi futbol bo'yicha jahon chempionati\nFransiyada bo'lgan va Fransiya g'olib chiqqan." },
-            { "left": "6  Who wrote Oliver Twist?", "right": "F  Charles Dickens", "leftUz": "'Oliver Tvist' ni kim yozgan?", "rightUz": "Charlz Dikkens", "whyUz": "Charlz Dikkens — ingliz yozuvchisi (1812-1870).\nGrammar 43-betdagi 3-mashqda uning tarjimai holi bor edi." },
-            { "left": "7  Which ship sank in 1912?", "right": "B  The Titanic", "leftUz": "1912-yilda qaysi kema cho'kdi?", "rightUz": "'Titanik'", "whyUz": "Titanik 1912-yil 15-aprelda aysbergga urilib cho'kkan.\n'The Titanic' — kema nomi oldidan THE." }
+            {
+              "left": "1  Who directed E.T. The Extra-Terrestrial?",
+              "right": "D  Steven Spielberg",
+              "leftUz": "'E.T.' filmini kim suratga olgan?",
+              "rightUz": "Stiven Spilberg",
+              "whyUz": "Stiven Spilberg — amerikalik kinorejissor.\n'E.T. The Extra-Terrestrial' (1982) — uning eng mashhur\nfilmlaridan biri.\n'extra-terrestrial' = koinotdan kelgan mavjudot."
+            },
+            {
+              "left": "2  Who became President of the USA in 1992?",
+              "right": "G  Bill Clinton",
+              "leftUz": "1992-yilda kim AQSh prezidenti bo'ldi?",
+              "rightUz": "Bill Klinton",
+              "whyUz": "Bill Klinton 1992-yilda saylangan (42-prezident)."
+            },
+            {
+              "left": "3  Which film received 11 Oscars in 1960?",
+              "right": "E  Ben Hur",
+              "leftUz": "1960-yilda qaysi film 11 ta Oskar oldi?",
+              "rightUz": "'Ben-Gur'",
+              "whyUz": "'Ben Hur' (1959-yilgi film) 1960-yilgi marosimda\n11 ta Oskar olgan — o'sha davr uchun rekord."
+            },
+            {
+              "left": "4  Who sang Candle in the Wind for Princess Diana?",
+              "right": "C  Elton John",
+              "leftUz": "Malika Diana uchun 'Candle in the Wind' ni kim kuyladi?",
+              "rightUz": "Elton Jon",
+              "whyUz": "Elton Jon — ingliz qo'shiqchisi va pianinochisi.\n1997-yilda Diananing dafn marosimida bu qo'shiqni aytgan."
+            },
+            {
+              "left": "5  Which country won the World Cup in 1998?",
+              "right": "A  France",
+              "leftUz": "1998-yilda qaysi mamlakat Jahon chempionatini yutdi?",
+              "rightUz": "Fransiya",
+              "whyUz": "1998-yilgi futbol bo'yicha jahon chempionati\nFransiyada bo'lgan va Fransiya g'olib chiqqan."
+            },
+            {
+              "left": "6  Who wrote Oliver Twist?",
+              "right": "F  Charles Dickens",
+              "leftUz": "'Oliver Tvist' ni kim yozgan?",
+              "rightUz": "Charlz Dikkens",
+              "whyUz": "Charlz Dikkens — ingliz yozuvchisi (1812-1870).\nGrammar 43-betdagi 3-mashqda uning tarjimai holi bor edi."
+            },
+            {
+              "left": "7  Which ship sank in 1912?",
+              "right": "B  The Titanic",
+              "leftUz": "1912-yilda qaysi kema cho'kdi?",
+              "rightUz": "'Titanik'",
+              "whyUz": "Titanik 1912-yil 15-aprelda aysbergga urilib cho'kkan.\n'The Titanic' — kema nomi oldidan THE."
+            }
           ]
         },
         {
@@ -158,13 +505,49 @@
           "explanationUz": "KITOBDAGI NAMUNA:\n  Spielberg directed E.T. The Extra-Terrestrial.\n\nQOLIP:\n  [javob = EGA] + [o'tgan zamon fe'li] + [qolgan qismi].\n\nSavolni GAPGA aylantirasiz:\n  savol:  WHO directed E.T.?\n  javob:  Steven Spielberg\n  gap:    SPIELBERG DIRECTED E.T.\n\nDIQQAT: savol so'zi ('Who', 'Which film') o'rniga\nJAVOB qo'yiladi, fe'l shakli O'ZGARMAYDI —\nchunki savolda ham 'did' yo'q edi.",
           "bookRef": "Workbook, 40-bet, 6b-mashq",
           "items": [
-            { "textEn": "1  Spielberg / direct / E.T. The Extra-Terrestrial", "answer": "Spielberg directed E.T. The Extra-Terrestrial.", "given": true, "hintUz": "KITOBDAGI NAMUNA", "whyUz": "'Who' o'rniga 'Spielberg' qo'yildi,\nfe'l 'directed' o'zgarmadi." },
-            { "textEn": "2  Bill Clinton / become / President of the USA in 1992", "answer": "Bill Clinton became President of the USA in 1992.", "hintUz": "become → became", "whyUz": "'become President' — unvon oldidan artikl YO'Q." },
-            { "textEn": "3  Ben Hur / receive / 11 Oscars in 1960", "answer": "Ben Hur received 11 Oscars in 1960.", "hintUz": "receive → received", "whyUz": "Film nomi EGA vazifasida.\n'11 Oscars' — son bor, artikl kerak emas." },
-            { "textEn": "4  Elton John / sing / Candle in the Wind for Princess Diana", "answer": "Elton John sang Candle in the Wind for Princess Diana.", "hintUz": "sing → sang", "whyUz": "'sing FOR somebody' = kimdir uchun kuylamoq.\n'Princess Diana' — unvon + ism, artikl YO'Q." },
-            { "textEn": "5  France / win / the World Cup in 1998", "answer": "France won the World Cup in 1998.", "hintUz": "win → won", "whyUz": "'France' — mamlakat nomi, artikl YO'Q.\n'THE World Cup' — yagona turnir → THE." },
-            { "textEn": "6  Charles Dickens / write / Oliver Twist", "answer": "Charles Dickens wrote Oliver Twist.", "hintUz": "write → wrote", "whyUz": "Kitob nomi oldidan artikl YO'Q." },
-            { "textEn": "7  The Titanic / sink / in 1912", "answer": "The Titanic sank in 1912.", "hintUz": "sink → sank", "whyUz": "'THE Titanic' — kema nomi oldidan THE.\n'sank' — noto'g'ri fe'lning o'tgan shakli." }
+            {
+              "textEn": "1  Spielberg / direct / E.T. The Extra-Terrestrial",
+              "answer": "Spielberg directed E.T. The Extra-Terrestrial.",
+              "given": true,
+              "hintUz": "KITOBDAGI NAMUNA",
+              "whyUz": "'Who' o'rniga 'Spielberg' qo'yildi,\nfe'l 'directed' o'zgarmadi."
+            },
+            {
+              "textEn": "2  Bill Clinton / become / President of the USA in 1992",
+              "answer": "Bill Clinton became President of the USA in 1992.",
+              "hintUz": "become → became",
+              "whyUz": "'become President' — unvon oldidan artikl YO'Q."
+            },
+            {
+              "textEn": "3  Ben Hur / receive / 11 Oscars in 1960",
+              "answer": "Ben Hur received 11 Oscars in 1960.",
+              "hintUz": "receive → received",
+              "whyUz": "Film nomi EGA vazifasida.\n'11 Oscars' — son bor, artikl kerak emas."
+            },
+            {
+              "textEn": "4  Elton John / sing / Candle in the Wind for Princess Diana",
+              "answer": "Elton John sang Candle in the Wind for Princess Diana.",
+              "hintUz": "sing → sang",
+              "whyUz": "'sing FOR somebody' = kimdir uchun kuylamoq.\n'Princess Diana' — unvon + ism, artikl YO'Q."
+            },
+            {
+              "textEn": "5  France / win / the World Cup in 1998",
+              "answer": "France won the World Cup in 1998.",
+              "hintUz": "win → won",
+              "whyUz": "'France' — mamlakat nomi, artikl YO'Q.\n'THE World Cup' — yagona turnir → THE."
+            },
+            {
+              "textEn": "6  Charles Dickens / write / Oliver Twist",
+              "answer": "Charles Dickens wrote Oliver Twist.",
+              "hintUz": "write → wrote",
+              "whyUz": "Kitob nomi oldidan artikl YO'Q."
+            },
+            {
+              "textEn": "7  The Titanic / sink / in 1912",
+              "answer": "The Titanic sank in 1912.",
+              "hintUz": "sink → sank",
+              "whyUz": "'THE Titanic' — kema nomi oldidan THE.\n'sank' — noto'g'ri fe'lning o'tgan shakli."
+            }
           ]
         }
       ]
@@ -178,79 +561,337 @@
         "ruleUz": "Kasb nomlari — qanday yasaladi",
         "explanationUz": "Ko'pchiligi fe'l yoki otdan -er / -or / -ist bilan.",
         "items": [
-          { "base": "to paint", "baseUz": "rasm chizmoq", "derived": "a painter", "derivedUz": "rassom", "note": "-ER" },
-          { "base": "to sing", "baseUz": "qo'shiq aytmoq", "derived": "a singer", "derivedUz": "qo'shiqchi", "note": "-ER" },
-          { "base": "to dance", "baseUz": "raqs tushmoq", "derived": "a dancer", "derivedUz": "raqqos", "note": "-ER" },
-          { "base": "to produce", "baseUz": "ishlab chiqarmoq", "derived": "a producer", "derivedUz": "prodyuser", "note": "-ER" },
-          { "base": "to direct", "baseUz": "boshqarmoq", "derived": "a director", "derivedUz": "rejissor", "note": "-OR" },
-          { "base": "to act", "baseUz": "rol o'ynamoq", "derived": "an actor", "derivedUz": "aktyor", "note": "-OR" },
-          { "base": "to invent", "baseUz": "ixtiro qilmoq", "derived": "an inventor", "derivedUz": "ixtirochi", "note": "-OR" },
-          { "base": "science", "baseUz": "fan", "derived": "a scientist", "derivedUz": "olim", "note": "-IST" },
-          { "base": "art", "baseUz": "san'at", "derived": "an artist", "derivedUz": "rassom, san'atkor", "note": "-IST" },
-          { "base": "to compose", "baseUz": "bastalamoq", "derived": "a composer", "derivedUz": "bastakor", "note": "-ER" },
-          { "base": "sculpture", "baseUz": "haykaltaroshlik", "derived": "a sculptor", "derivedUz": "haykaltarosh", "note": "-OR" }
+          {
+            "base": "to paint",
+            "baseUz": "rasm chizmoq",
+            "derived": "a painter",
+            "derivedUz": "rassom",
+            "note": "-ER"
+          },
+          {
+            "base": "to sing",
+            "baseUz": "qo'shiq aytmoq",
+            "derived": "a singer",
+            "derivedUz": "qo'shiqchi",
+            "note": "-ER"
+          },
+          {
+            "base": "to dance",
+            "baseUz": "raqs tushmoq",
+            "derived": "a dancer",
+            "derivedUz": "raqqos",
+            "note": "-ER"
+          },
+          {
+            "base": "to produce",
+            "baseUz": "ishlab chiqarmoq",
+            "derived": "a producer",
+            "derivedUz": "prodyuser",
+            "note": "-ER"
+          },
+          {
+            "base": "to direct",
+            "baseUz": "boshqarmoq",
+            "derived": "a director",
+            "derivedUz": "rejissor",
+            "note": "-OR"
+          },
+          {
+            "base": "to act",
+            "baseUz": "rol o'ynamoq",
+            "derived": "an actor",
+            "derivedUz": "aktyor",
+            "note": "-OR"
+          },
+          {
+            "base": "to invent",
+            "baseUz": "ixtiro qilmoq",
+            "derived": "an inventor",
+            "derivedUz": "ixtirochi",
+            "note": "-OR"
+          },
+          {
+            "base": "science",
+            "baseUz": "fan",
+            "derived": "a scientist",
+            "derivedUz": "olim",
+            "note": "-IST"
+          },
+          {
+            "base": "art",
+            "baseUz": "san'at",
+            "derived": "an artist",
+            "derivedUz": "rassom, san'atkor",
+            "note": "-IST"
+          },
+          {
+            "base": "to compose",
+            "baseUz": "bastalamoq",
+            "derived": "a composer",
+            "derivedUz": "bastakor",
+            "note": "-ER"
+          },
+          {
+            "base": "sculpture",
+            "baseUz": "haykaltaroshlik",
+            "derived": "a sculptor",
+            "derivedUz": "haykaltarosh",
+            "note": "-OR"
+          }
         ]
       },
       {
         "ruleUz": "NOTO'G'RI FE'LLAR (5 va 6-mashqlardan)",
         "explanationUz": "Naqshlar bo'yicha guruhlangan.",
         "items": [
-          { "base": "sing", "baseUz": "qo'shiq aytmoq", "derived": "sang", "derivedUz": "i → a", "note": "" },
-          { "base": "sink", "baseUz": "cho'kmoq", "derived": "sank", "derivedUz": "i → a", "note": "'sing' bilan bir naqsh" },
-          { "base": "come", "baseUz": "kelmoq", "derived": "came", "derivedUz": "o → a", "note": "" },
-          { "base": "become", "baseUz": "bo'lmoq", "derived": "became", "derivedUz": "o → a", "note": "'come' bilan bir naqsh" },
-          { "base": "eat", "baseUz": "yemoq", "derived": "ate", "derivedUz": "/eɪt/", "note": "" },
-          { "base": "win", "baseUz": "yutmoq", "derived": "won", "derivedUz": "/wʌn/", "note": "'one' kabi o'qiladi" },
-          { "base": "lose", "baseUz": "yutqazmoq, yo'qotmoq", "derived": "lost", "derivedUz": "'win' ning aksi", "note": "" },
-          { "base": "buy", "baseUz": "sotib olmoq", "derived": "bought", "derivedUz": "/bɔːt/", "note": "" },
-          { "base": "write", "baseUz": "yozmoq", "derived": "wrote", "derivedUz": "", "note": "" },
-          { "base": "teach", "baseUz": "dars bermoq", "derived": "taught", "derivedUz": "/tɔːt/", "note": "" },
-          { "base": "meet", "baseUz": "uchratmoq", "derived": "met", "derivedUz": "", "note": "2-mashqda" }
+          {
+            "base": "sing",
+            "baseUz": "qo'shiq aytmoq",
+            "derived": "sang",
+            "derivedUz": "i → a",
+            "note": ""
+          },
+          {
+            "base": "sink",
+            "baseUz": "cho'kmoq",
+            "derived": "sank",
+            "derivedUz": "i → a",
+            "note": "'sing' bilan bir naqsh"
+          },
+          {
+            "base": "come",
+            "baseUz": "kelmoq",
+            "derived": "came",
+            "derivedUz": "o → a",
+            "note": ""
+          },
+          {
+            "base": "become",
+            "baseUz": "bo'lmoq",
+            "derived": "became",
+            "derivedUz": "o → a",
+            "note": "'come' bilan bir naqsh"
+          },
+          {
+            "base": "eat",
+            "baseUz": "yemoq",
+            "derived": "ate",
+            "derivedUz": "/eɪt/",
+            "note": ""
+          },
+          {
+            "base": "win",
+            "baseUz": "yutmoq",
+            "derived": "won",
+            "derivedUz": "/wʌn/",
+            "note": "'one' kabi o'qiladi"
+          },
+          {
+            "base": "lose",
+            "baseUz": "yutqazmoq, yo'qotmoq",
+            "derived": "lost",
+            "derivedUz": "'win' ning aksi",
+            "note": ""
+          },
+          {
+            "base": "buy",
+            "baseUz": "sotib olmoq",
+            "derived": "bought",
+            "derivedUz": "/bɔːt/",
+            "note": ""
+          },
+          {
+            "base": "write",
+            "baseUz": "yozmoq",
+            "derived": "wrote",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "teach",
+            "baseUz": "dars bermoq",
+            "derived": "taught",
+            "derivedUz": "/tɔːt/",
+            "note": ""
+          },
+          {
+            "base": "meet",
+            "baseUz": "uchratmoq",
+            "derived": "met",
+            "derivedUz": "",
+            "note": "2-mashqda"
+          }
         ]
       },
       {
         "ruleUz": "UNDOSH IKKILANIShI (5-mashqdan)",
         "explanationUz": "Bir bo'g'inli, urg'uli unli ikki undosh orasida.",
         "items": [
-          { "base": "stop", "baseUz": "to'xtamoq", "derived": "stopped", "derivedUz": "P ikkilanadi", "note": "s-t-O-p" },
-          { "base": "star", "baseUz": "bosh rolda o'ynamoq", "derived": "starred", "derivedUz": "R ikkilanadi", "note": "s-t-A-r" },
-          { "base": "plan", "baseUz": "rejalashtirmoq", "derived": "planned", "derivedUz": "N ikkilanadi", "note": "" },
-          { "base": "travel", "baseUz": "sayohat qilmoq", "derived": "travelled", "derivedUz": "britancha ISTISNO", "note": "amerikacha: traveled" },
-          { "base": "visit", "baseUz": "tashrif buyurmoq", "derived": "visited", "derivedUz": "IKKILANMAYDI", "note": "urg'u 1-bo'g'inda" },
-          { "base": "appear", "baseUz": "paydo bo'lmoq", "derived": "appeared", "derivedUz": "IKKILANMAYDI", "note": "ikki unli: 'ea'" }
+          {
+            "base": "stop",
+            "baseUz": "to'xtamoq",
+            "derived": "stopped",
+            "derivedUz": "P ikkilanadi",
+            "note": "s-t-O-p"
+          },
+          {
+            "base": "star",
+            "baseUz": "bosh rolda o'ynamoq",
+            "derived": "starred",
+            "derivedUz": "R ikkilanadi",
+            "note": "s-t-A-r"
+          },
+          {
+            "base": "plan",
+            "baseUz": "rejalashtirmoq",
+            "derived": "planned",
+            "derivedUz": "N ikkilanadi",
+            "note": ""
+          },
+          {
+            "base": "travel",
+            "baseUz": "sayohat qilmoq",
+            "derived": "travelled",
+            "derivedUz": "britancha ISTISNO",
+            "note": "amerikacha: traveled"
+          },
+          {
+            "base": "visit",
+            "baseUz": "tashrif buyurmoq",
+            "derived": "visited",
+            "derivedUz": "IKKILANMAYDI",
+            "note": "urg'u 1-bo'g'inda"
+          },
+          {
+            "base": "appear",
+            "baseUz": "paydo bo'lmoq",
+            "derived": "appeared",
+            "derivedUz": "IKKILANMAYDI",
+            "note": "ikki unli: 'ea'"
+          }
         ]
       },
       {
         "ruleUz": "DIE bilan predloglar — eng muhim juftlik",
         "explanationUz": "3-mashqning 5 va 8-bandlari ataylab juftlashtirilgan.",
         "items": [
-          { "base": "die IN an accident", "baseUz": "halokatda halok bo'lmoq", "derived": "HODISA", "derivedUz": "car/road/plane accident", "note": "" },
-          { "base": "die OF an illness", "baseUz": "kasallikdan vafot etmoq", "derived": "KASALLIK", "derivedUz": "pneumonia, leukaemia", "note": "" },
-          { "base": "pneumonia", "baseUz": "pnevmoniya", "derived": "/njuːˈməʊniə/", "derivedUz": "'p' O'QILMAYDI", "note": "" },
-          { "base": "leukaemia", "baseUz": "leykemiya", "derived": "Coursebook 72-betda", "derivedUz": "", "note": "" }
+          {
+            "base": "die IN an accident",
+            "baseUz": "halokatda halok bo'lmoq",
+            "derived": "HODISA",
+            "derivedUz": "car/road/plane accident",
+            "note": ""
+          },
+          {
+            "base": "die OF an illness",
+            "baseUz": "kasallikdan vafot etmoq",
+            "derived": "KASALLIK",
+            "derivedUz": "pneumonia, leukaemia",
+            "note": ""
+          },
+          {
+            "base": "pneumonia",
+            "baseUz": "pnevmoniya",
+            "derived": "/njuːˈməʊniə/",
+            "derivedUz": "'p' O'QILMAYDI",
+            "note": ""
+          },
+          {
+            "base": "leukaemia",
+            "baseUz": "leykemiya",
+            "derived": "Coursebook 72-betda",
+            "derivedUz": "",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "'WHO' — EGAmi yoki TO'LDIRUVChImi?",
         "explanationUz": "6-mashqning eng muhim grammatik nuqtasi.",
         "items": [
-          { "base": "WHO wrote Oliver Twist?", "baseUz": "'Oliver Tvist' ni KIM yozgan?", "derived": "'who' = EGA", "derivedUz": "'did' KERAK EMAS", "note": "javob: Dickens (ega)" },
-          { "base": "WHO did you visit?", "baseUz": "Sen KIMNI ko'rgani bording?", "derived": "'who' = TO'LDIRUVChI", "derivedUz": "'did' KERAK", "note": "javob: my aunt (to'ldiruvchi)" },
-          { "base": "WHICH ship sank?", "baseUz": "QAYSI kema cho'kdi?", "derived": "EGA", "derivedUz": "'did' KERAK EMAS", "note": "" },
-          { "base": "WHICH film did you see?", "baseUz": "QAYSI filmni ko'rding?", "derived": "TO'LDIRUVChI", "derivedUz": "'did' KERAK", "note": "" }
+          {
+            "base": "WHO wrote Oliver Twist?",
+            "baseUz": "'Oliver Tvist' ni KIM yozgan?",
+            "derived": "'who' = EGA",
+            "derivedUz": "'did' KERAK EMAS",
+            "note": "javob: Dickens (ega)"
+          },
+          {
+            "base": "WHO did you visit?",
+            "baseUz": "Sen KIMNI ko'rgani bording?",
+            "derived": "'who' = TO'LDIRUVChI",
+            "derivedUz": "'did' KERAK",
+            "note": "javob: my aunt (to'ldiruvchi)"
+          },
+          {
+            "base": "WHICH ship sank?",
+            "baseUz": "QAYSI kema cho'kdi?",
+            "derived": "EGA",
+            "derivedUz": "'did' KERAK EMAS",
+            "note": ""
+          },
+          {
+            "base": "WHICH film did you see?",
+            "baseUz": "QAYSI filmni ko'rding?",
+            "derived": "TO'LDIRUVChI",
+            "derivedUz": "'did' KERAK",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Sanat va mukofot lug'ati",
         "explanationUz": "Unit 10 ning umumiy mavzusi.",
         "items": [
-          { "base": "a sculptor", "baseUz": "haykaltarosh", "derived": "sculpture", "derivedUz": "haykaltaroshlik", "note": "" },
-          { "base": "art", "baseUz": "san'at", "derived": "an art teacher", "derivedUz": "san'at o'qituvchisi", "note": "" },
-          { "base": "a prize", "baseUz": "mukofot", "derived": "to win a prize", "derivedUz": "mukofot yutmoq", "note": "" },
-          { "base": "an Oscar", "baseUz": "Oskar mukofoti", "derived": "to receive an Oscar", "derivedUz": "", "note": "" },
-          { "base": "the Nobel Prize", "baseUz": "Nobel mukofoti", "derived": "THE bilan", "derivedUz": "yagona", "note": "" },
-          { "base": "the World Cup", "baseUz": "Jahon chempionati", "derived": "THE bilan", "derivedUz": "yagona", "note": "" },
-          { "base": "a biennale", "baseUz": "biennale", "derived": "ikki yilda bir", "derivedUz": "ko'rgazma", "note": "" }
+          {
+            "base": "a sculptor",
+            "baseUz": "haykaltarosh",
+            "derived": "sculpture",
+            "derivedUz": "haykaltaroshlik",
+            "note": ""
+          },
+          {
+            "base": "art",
+            "baseUz": "san'at",
+            "derived": "an art teacher",
+            "derivedUz": "san'at o'qituvchisi",
+            "note": ""
+          },
+          {
+            "base": "a prize",
+            "baseUz": "mukofot",
+            "derived": "to win a prize",
+            "derivedUz": "mukofot yutmoq",
+            "note": ""
+          },
+          {
+            "base": "an Oscar",
+            "baseUz": "Oskar mukofoti",
+            "derived": "to receive an Oscar",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "the Nobel Prize",
+            "baseUz": "Nobel mukofoti",
+            "derived": "THE bilan",
+            "derivedUz": "yagona",
+            "note": ""
+          },
+          {
+            "base": "the World Cup",
+            "baseUz": "Jahon chempionati",
+            "derived": "THE bilan",
+            "derivedUz": "yagona",
+            "note": ""
+          },
+          {
+            "base": "a biennale",
+            "baseUz": "biennale",
+            "derived": "ikki yilda bir",
+            "derivedUz": "ko'rgazma",
+            "note": ""
+          }
         ]
       }
     ]
@@ -298,33 +939,117 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "a painter", "uz": "rassom" },
-    { "en": "a ballet dancer", "uz": "balet raqqosi" },
-    { "en": "a composer", "uz": "bastakor" },
-    { "en": "a scientist", "uz": "olim" },
-    { "en": "a film director", "uz": "kinorejissor" },
-    { "en": "a sculptor", "uz": "haykaltarosh" },
-    { "en": "sculpture", "uz": "haykaltaroshlik" },
-    { "en": "art", "uz": "san'at" },
-    { "en": "talented", "uz": "iqtidorli" },
-    { "en": "popular", "uz": "mashhur, sevimli" },
-    { "en": "favourite", "uz": "sevimli" },
-    { "en": "poor", "uz": "kambag'al" },
-    { "en": "kind", "uz": "mehribon" },
-    { "en": "to receive", "uz": "olmoq" },
-    { "en": "to discover", "uz": "kashf etmoq" },
-    { "en": "the Nobel Prize for Peace", "uz": "tinchlik bo'yicha Nobel mukofoti" },
-    { "en": "a boarding school", "uz": "internat maktab" },
-    { "en": "people in need", "uz": "muhtoj odamlar" },
-    { "en": "pneumonia", "uz": "pnevmoniya" },
-    { "en": "a prize", "uz": "mukofot" },
-    { "en": "to win (won)", "uz": "yutmoq (yutdi)" },
-    { "en": "to lose (lost)", "uz": "yutqazmoq (yutqazdi)" },
-    { "en": "to sink (sank)", "uz": "cho'kmoq (cho'kdi)" },
-    { "en": "to star", "uz": "bosh rolda o'ynamoq" },
-    { "en": "to produce", "uz": "ishlab chiqarmoq" },
-    { "en": "to direct", "uz": "rejissorlik qilmoq" },
-    { "en": "an Oscar", "uz": "Oskar mukofoti" },
-    { "en": "the World Cup", "uz": "Jahon chempionati" }
+    {
+      "en": "a painter",
+      "uz": "rassom"
+    },
+    {
+      "en": "a ballet dancer",
+      "uz": "balet raqqosi"
+    },
+    {
+      "en": "a composer",
+      "uz": "bastakor"
+    },
+    {
+      "en": "a scientist",
+      "uz": "olim"
+    },
+    {
+      "en": "a film director",
+      "uz": "kinorejissor"
+    },
+    {
+      "en": "a sculptor",
+      "uz": "haykaltarosh"
+    },
+    {
+      "en": "sculpture",
+      "uz": "haykaltaroshlik"
+    },
+    {
+      "en": "art",
+      "uz": "san'at"
+    },
+    {
+      "en": "talented",
+      "uz": "iqtidorli"
+    },
+    {
+      "en": "popular",
+      "uz": "mashhur, sevimli"
+    },
+    {
+      "en": "favourite",
+      "uz": "sevimli"
+    },
+    {
+      "en": "poor",
+      "uz": "kambag'al"
+    },
+    {
+      "en": "kind",
+      "uz": "mehribon"
+    },
+    {
+      "en": "to receive",
+      "uz": "olmoq"
+    },
+    {
+      "en": "to discover",
+      "uz": "kashf etmoq"
+    },
+    {
+      "en": "the Nobel Prize for Peace",
+      "uz": "tinchlik bo'yicha Nobel mukofoti"
+    },
+    {
+      "en": "a boarding school",
+      "uz": "internat maktab"
+    },
+    {
+      "en": "people in need",
+      "uz": "muhtoj odamlar"
+    },
+    {
+      "en": "pneumonia",
+      "uz": "pnevmoniya"
+    },
+    {
+      "en": "a prize",
+      "uz": "mukofot"
+    },
+    {
+      "en": "to win (won)",
+      "uz": "yutmoq (yutdi)"
+    },
+    {
+      "en": "to lose (lost)",
+      "uz": "yutqazmoq (yutqazdi)"
+    },
+    {
+      "en": "to sink (sank)",
+      "uz": "cho'kmoq (cho'kdi)"
+    },
+    {
+      "en": "to star",
+      "uz": "bosh rolda o'ynamoq"
+    },
+    {
+      "en": "to produce",
+      "uz": "ishlab chiqarmoq"
+    },
+    {
+      "en": "to direct",
+      "uz": "rejissorlik qilmoq"
+    },
+    {
+      "en": "an Oscar",
+      "uz": "Oskar mukofoti"
+    },
+    {
+      "en": "the World Cup",
+      "uz": "Jahon chempionati"
+    }
   ]
 }
