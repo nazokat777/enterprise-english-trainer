@@ -5,6 +5,7 @@
   "unit": 2,
   "unitTitle": "A Friend in Need ...",
   "module": 1,
+  "scanNote": "14-BET. Unit 2 — tashqi ko'rinish va millat tavsiflari.\n\n11a va 11b mashqlarida 5 ta surat (A-E) va 5 ta matn bor. Skaner bilan tekshirildi, TO'G'RI:\n  A = xitoy qizi (qizil libosda) → 5-matn: shimoliy xitoyliklar, qiyiq ko'z, sarg'ish yuz\n  B = cho'ldagi ikki arab erkak → 4-matn: arab mamlakatlari, to'q teri\n  C = O'rta yer dengizi ko'rinishidagi ayol → 2-matn: och jigarrang teri\n  D = oq-sariq sochli ayol → 1-matn: Skandinaviya, oqish yuz rangi\n  E = afrikalik ayol → 3-matn: to'q teri, keng yassiroq burun\n\n  11a savollari bilan: 1 pale complexion = D (kitobda berilgan), 2 light brown skin = C, 3 very dark skin = E, 4 slanting eyes = A, 5 dark brown eyes and dark skin = B.\n\n⚠⚠ AUDIO KERAK — 9-MAShQ: beshta chizilgan yuzga beshta ism (Chris, Sally, Jim, Peter, Mary) qo'yiladi. Kitobda qaysi ism qaysi yuzga tegishli ekani KO'RSATILMAGAN — faqat audioda. Bu audio hisobotiga kech qo'shildi.\n  ⚠ Lekin mashqning ASOSIY maqsadi — odamlarni tasvirlash — audiosiz ham to'liq bajariladi. Har rasmning tavsifi bizda saqlangan.\n\n⚠ ESKIRGAN IBORA: 3-matnda afrikaliklar 'a wide, FLATTISH nose' deb tasvirlangan. Bugungi kunda odamlarni irqiy tashqi ko'rinishi bo'yicha shunday umumlashtirib tasvirlash odob doirasidan chetda hisoblanadi. Kitob 2000-yillar boshida yozilgan.\n  ⚠ Xuddi shunday umumlashtirishlar 'slanting eyes' (5-matn) va 'yellowish complexion' da ham bor.\n  ⚠ Bu matnlarni o'qiyotganda shuni bilib qo'ying: HAR MAMLAKATDA har xil ko'rinishdagi odamlar yashaydi; matndagi tavsiflar faqat 'usually' (odatda) so'zi bilan berilgan.",
   "sections": [
     {
       "kind": "speaking",
@@ -20,7 +21,13 @@
           "instructionUz": "Rasmlarda Wessex hududidan bedarak yo'qolgan odamlar. Rasmlarga qarab ularni tasvirlang. So'ng eshitib, ro'yxatdagi ismlarni qo'ying.",
           "explanationUz": "Odamni tasvirlash tartibi (shu ketma-ketlikni saqlang):\n  1) YOSH   — young / middle-aged / old\n  2) BO'Y-GAVDA — tall, short, slim, well-built\n  3) SOCH   — uzunlik + shakl + rang\n  4) KO'Z   — rang\n  5) BOSHQA — beard, moustache, glasses\n\nNamuna: 'She's young. She's got long straight black hair and green eyes.'",
           "bookRef": "Coursebook, 14-bet — 1–5 rasmlar",
-          "wordList": ["Chris", "Sally", "Jim", "Peter", "Mary"],
+          "wordList": [
+            "Chris",
+            "Sally",
+            "Jim",
+            "Peter",
+            "Mary"
+          ],
           "profiles": [
             {
               "n": 1,
@@ -77,18 +84,69 @@
           "instructionEn": "Choose one of the people in Ex. 9 and describe him or her to your classmates. The student who guesses correctly chooses another person and the game continues.",
           "instructionUz": "Ex. 9 dagi odamlardan birini tanlab, sinfdoshlaringizga tasvirlang. To'g'ri topgan o'quvchi keyingi odamni tanlaydi va o'yin davom etadi.",
           "explanationUz": "Bu o'yin tasvirlash so'zlarini mustahkamlaydi. Ilovada siz topuvchi bo'lasiz: tavsif beriladi, siz qaysi odam ekanini aniqlaysiz.\n\nO'yin so'zlari — ularni gapga qo'shib ishlating:\n  young / middle-aged → 'He's middle-aged.'\n  curly / long / straight → 'She's got long curly hair.'\n  slim / well-built → 'He's well-built.'\n  beard / moustache / big nose → 'He's got a beard.'",
-          "wordList": ["young", "middle-aged", "curly", "long", "straight", "slim", "well-built", "beard", "moustache", "big nose"],
+          "wordList": [
+            "young",
+            "middle-aged",
+            "curly",
+            "long",
+            "straight",
+            "slim",
+            "well-built",
+            "beard",
+            "moustache",
+            "big nose"
+          ],
           "modelSentences": [
-            { "word": "young", "sentence": "She's young.", "uz": "U yosh." },
-            { "word": "middle-aged", "sentence": "He's middle-aged.", "uz": "U o'rta yoshli." },
-            { "word": "curly", "sentence": "She's got long curly hair.", "uz": "Uning uzun jingalak sochi bor." },
-            { "word": "long", "sentence": "She's got long hair.", "uz": "Uning uzun sochi bor." },
-            { "word": "straight", "sentence": "She's got straight hair.", "uz": "Uning tekis sochi bor." },
-            { "word": "slim", "sentence": "He's slim.", "uz": "U nozik." },
-            { "word": "well-built", "sentence": "He's well-built.", "uz": "U baquvvat." },
-            { "word": "beard", "sentence": "He's got a white beard.", "uz": "Uning oq soqoli bor." },
-            { "word": "moustache", "sentence": "He's got a moustache.", "uz": "Uning mo'ylovi bor." },
-            { "word": "big nose", "sentence": "He's got a big nose.", "uz": "Uning burni katta." }
+            {
+              "word": "young",
+              "sentence": "She's young.",
+              "uz": "U yosh."
+            },
+            {
+              "word": "middle-aged",
+              "sentence": "He's middle-aged.",
+              "uz": "U o'rta yoshli."
+            },
+            {
+              "word": "curly",
+              "sentence": "She's got long curly hair.",
+              "uz": "Uning uzun jingalak sochi bor."
+            },
+            {
+              "word": "long",
+              "sentence": "She's got long hair.",
+              "uz": "Uning uzun sochi bor."
+            },
+            {
+              "word": "straight",
+              "sentence": "She's got straight hair.",
+              "uz": "Uning tekis sochi bor."
+            },
+            {
+              "word": "slim",
+              "sentence": "He's slim.",
+              "uz": "U nozik."
+            },
+            {
+              "word": "well-built",
+              "sentence": "He's well-built.",
+              "uz": "U baquvvat."
+            },
+            {
+              "word": "beard",
+              "sentence": "He's got a white beard.",
+              "uz": "Uning oq soqoli bor."
+            },
+            {
+              "word": "moustache",
+              "sentence": "He's got a moustache.",
+              "uz": "Uning mo'ylovi bor."
+            },
+            {
+              "word": "big nose",
+              "sentence": "He's got a big nose.",
+              "uz": "Uning burni katta."
+            }
           ]
         }
       ]
@@ -105,7 +163,13 @@
           "instructionUz": "Qaysi rasmda: oqish yuz rangi? och jigarrang teri? juda to'q teri va keng, yassiroq burun? qiyshiq qora ko'z va sarg'ish yuz rangi? to'q jigarrang ko'z va to'q teri?",
           "explanationUz": "TERI va YUZ RANGI so'zlari:\n• complexion — yuz rangi (teri emas, aynan yuzning ko'rinishi)\n• pale — oqish, oqarinqiragan\n• light brown skin — och jigarrang teri\n• dark skin — to'q teri\n• yellowish — sarg'ish (-ish qo'shimchasi 'ga moyil' degani)\n\nBURUN va KO'Z:\n• a wide, flattish nose — keng, yassiroq burun\n• slanting eyes — qiyshiq (cho'ziq) ko'z",
           "bookRef": "Coursebook, 14-bet — A–E rasmlar",
-          "options": ["A", "B", "C", "D", "E"],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
           "answers": [
             {
               "picture": "1",
@@ -291,15 +355,42 @@
             }
           ],
           "boldWords": [
-            { "en": "pale complexion", "uz": "oqish yuz rangi" },
-            { "en": "Mediterranean countries", "uz": "O'rta yer dengizi mamlakatlari" },
-            { "en": "light brown skin", "uz": "och jigarrang teri" },
-            { "en": "central", "uz": "markaziy" },
-            { "en": "southern", "uz": "janubiy" },
-            { "en": "dark skin", "uz": "to'q teri" },
-            { "en": "wide", "uz": "keng" },
-            { "en": "flattish", "uz": "yassiroq" },
-            { "en": "slanting eyes", "uz": "qiyshiq (cho'ziq) ko'z" }
+            {
+              "en": "pale complexion",
+              "uz": "oqish yuz rangi"
+            },
+            {
+              "en": "Mediterranean countries",
+              "uz": "O'rta yer dengizi mamlakatlari"
+            },
+            {
+              "en": "light brown skin",
+              "uz": "och jigarrang teri"
+            },
+            {
+              "en": "central",
+              "uz": "markaziy"
+            },
+            {
+              "en": "southern",
+              "uz": "janubiy"
+            },
+            {
+              "en": "dark skin",
+              "uz": "to'q teri"
+            },
+            {
+              "en": "wide",
+              "uz": "keng"
+            },
+            {
+              "en": "flattish",
+              "uz": "yassiroq"
+            },
+            {
+              "en": "slanting eyes",
+              "uz": "qiyshiq (cho'ziq) ko'z"
+            }
           ]
         }
       ]
@@ -313,36 +404,144 @@
         "ruleUz": "-ish → 'ga moyil', 'roq'",
         "explanationUz": "Sifatga -ish qo'shilsa, ma'no YUMSHAYDI: to'liq emas, shunga o'xshash.\nBu juda foydali qo'shimcha — istalgan rangga qo'shsa bo'ladi.",
         "items": [
-          { "base": "yellow", "baseUz": "sariq", "derived": "yellowish", "derivedUz": "sarg'ish", "note": "sariqqa moyil" },
-          { "base": "flat", "baseUz": "yassi", "derived": "flattish", "derivedUz": "yassiroq", "note": "t ikkilanadi" },
-          { "base": "red", "baseUz": "qizil", "derived": "reddish", "derivedUz": "qizg'ish", "note": "d ikkilanadi" },
-          { "base": "green", "baseUz": "yashil", "derived": "greenish", "derivedUz": "yashilroq", "note": "-ish" },
-          { "base": "old", "baseUz": "keksa", "derived": "oldish", "derivedUz": "keksaroq", "note": "-ish" }
+          {
+            "base": "yellow",
+            "baseUz": "sariq",
+            "derived": "yellowish",
+            "derivedUz": "sarg'ish",
+            "note": "sariqqa moyil"
+          },
+          {
+            "base": "flat",
+            "baseUz": "yassi",
+            "derived": "flattish",
+            "derivedUz": "yassiroq",
+            "note": "t ikkilanadi"
+          },
+          {
+            "base": "red",
+            "baseUz": "qizil",
+            "derived": "reddish",
+            "derivedUz": "qizg'ish",
+            "note": "d ikkilanadi"
+          },
+          {
+            "base": "green",
+            "baseUz": "yashil",
+            "derived": "greenish",
+            "derivedUz": "yashilroq",
+            "note": "-ish"
+          },
+          {
+            "base": "old",
+            "baseUz": "keksa",
+            "derived": "oldish",
+            "derivedUz": "keksaroq",
+            "note": "-ish"
+          }
         ]
       },
       {
         "ruleUz": "Tomon nomlari (-ern)",
         "explanationUz": "Tomon nomiga -ern qo'shilib sifat yasaladi.",
         "items": [
-          { "base": "north", "baseUz": "shimol", "derived": "northern", "derivedUz": "shimoliy", "note": "-ern" },
-          { "base": "south", "baseUz": "janub", "derived": "southern", "derivedUz": "janubiy", "note": "o'qilishi 'sazern'" },
-          { "base": "east", "baseUz": "sharq", "derived": "eastern", "derivedUz": "sharqiy", "note": "-ern" },
-          { "base": "west", "baseUz": "g'arb", "derived": "western", "derivedUz": "g'arbiy", "note": "-ern" },
-          { "base": "centre", "baseUz": "markaz", "derived": "central", "derivedUz": "markaziy", "note": "-al (istisno)" }
+          {
+            "base": "north",
+            "baseUz": "shimol",
+            "derived": "northern",
+            "derivedUz": "shimoliy",
+            "note": "-ern"
+          },
+          {
+            "base": "south",
+            "baseUz": "janub",
+            "derived": "southern",
+            "derivedUz": "janubiy",
+            "note": "o'qilishi 'sazern'"
+          },
+          {
+            "base": "east",
+            "baseUz": "sharq",
+            "derived": "eastern",
+            "derivedUz": "sharqiy",
+            "note": "-ern"
+          },
+          {
+            "base": "west",
+            "baseUz": "g'arb",
+            "derived": "western",
+            "derivedUz": "g'arbiy",
+            "note": "-ern"
+          },
+          {
+            "base": "centre",
+            "baseUz": "markaz",
+            "derived": "central",
+            "derivedUz": "markaziy",
+            "note": "-al (istisno)"
+          }
         ]
       },
       {
         "ruleUz": "Mamlakat → millat (bu betdagilar)",
         "explanationUz": "Matnlarda uchragan mamlakatlar.",
         "items": [
-          { "base": "Denmark", "baseUz": "Daniya", "derived": "Danish", "derivedUz": "daniyalik", "note": "-ish" },
-          { "base": "Norway", "baseUz": "Norvegiya", "derived": "Norwegian", "derivedUz": "norvegiyalik", "note": "-ian" },
-          { "base": "Sweden", "baseUz": "Shvetsiya", "derived": "Swedish", "derivedUz": "shved", "note": "-ish" },
-          { "base": "Greece", "baseUz": "Gretsiya", "derived": "Greek", "derivedUz": "grek", "note": "qoidasiz" },
-          { "base": "Saudi Arabia", "baseUz": "Saudiya Arabistoni", "derived": "Saudi", "derivedUz": "saudiyalik", "note": "qisqargan" },
-          { "base": "Iraq", "baseUz": "Iroq", "derived": "Iraqi", "derivedUz": "iroqlik", "note": "-i" },
-          { "base": "Libya", "baseUz": "Liviya", "derived": "Libyan", "derivedUz": "liviyalik", "note": "-n" },
-          { "base": "China", "baseUz": "Xitoy", "derived": "Chinese", "derivedUz": "xitoy", "note": "-ese" }
+          {
+            "base": "Denmark",
+            "baseUz": "Daniya",
+            "derived": "Danish",
+            "derivedUz": "daniyalik",
+            "note": "-ish"
+          },
+          {
+            "base": "Norway",
+            "baseUz": "Norvegiya",
+            "derived": "Norwegian",
+            "derivedUz": "norvegiyalik",
+            "note": "-ian"
+          },
+          {
+            "base": "Sweden",
+            "baseUz": "Shvetsiya",
+            "derived": "Swedish",
+            "derivedUz": "shved",
+            "note": "-ish"
+          },
+          {
+            "base": "Greece",
+            "baseUz": "Gretsiya",
+            "derived": "Greek",
+            "derivedUz": "grek",
+            "note": "qoidasiz"
+          },
+          {
+            "base": "Saudi Arabia",
+            "baseUz": "Saudiya Arabistoni",
+            "derived": "Saudi",
+            "derivedUz": "saudiyalik",
+            "note": "qisqargan"
+          },
+          {
+            "base": "Iraq",
+            "baseUz": "Iroq",
+            "derived": "Iraqi",
+            "derivedUz": "iroqlik",
+            "note": "-i"
+          },
+          {
+            "base": "Libya",
+            "baseUz": "Liviya",
+            "derived": "Libyan",
+            "derivedUz": "liviyalik",
+            "note": "-n"
+          },
+          {
+            "base": "China",
+            "baseUz": "Xitoy",
+            "derived": "Chinese",
+            "derivedUz": "xitoy",
+            "note": "-ese"
+          }
         ]
       }
     ]
@@ -378,31 +577,109 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "complexion", "uz": "yuz rangi" },
-    { "en": "pale", "uz": "oqish, oqarinqiragan" },
-    { "en": "skin", "uz": "teri" },
-    { "en": "light brown", "uz": "och jigarrang" },
-    { "en": "dark", "uz": "to'q, qora" },
-    { "en": "wide", "uz": "keng" },
-    { "en": "flattish", "uz": "yassiroq" },
-    { "en": "slanting", "uz": "qiyshiq, cho'ziq" },
-    { "en": "yellowish", "uz": "sarg'ish" },
-    { "en": "thick", "uz": "qalin" },
-    { "en": "usually", "uz": "odatda" },
-    { "en": "rather", "uz": "ancha, birmuncha" },
-    { "en": "most people", "uz": "ko'pchilik" },
-    { "en": "area", "uz": "hudud" },
-    { "en": "missing", "uz": "bedarak yo'qolgan" },
-    { "en": "northern", "uz": "shimoliy" },
-    { "en": "southern", "uz": "janubiy" },
-    { "en": "central", "uz": "markaziy" },
-    { "en": "Mediterranean", "uz": "O'rta yer dengizi" },
-    { "en": "Denmark", "uz": "Daniya" },
-    { "en": "Norway", "uz": "Norvegiya" },
-    { "en": "Sweden", "uz": "Shvetsiya" },
-    { "en": "Saudi Arabia", "uz": "Saudiya Arabistoni" },
-    { "en": "Iraq", "uz": "Iroq" },
-    { "en": "Libya", "uz": "Liviya" },
-    { "en": "to look like", "uz": "o'xshamoq, ko'rinishda bo'lmoq" }
+    {
+      "en": "complexion",
+      "uz": "yuz rangi"
+    },
+    {
+      "en": "pale",
+      "uz": "oqish, oqarinqiragan"
+    },
+    {
+      "en": "skin",
+      "uz": "teri"
+    },
+    {
+      "en": "light brown",
+      "uz": "och jigarrang"
+    },
+    {
+      "en": "dark",
+      "uz": "to'q, qora"
+    },
+    {
+      "en": "wide",
+      "uz": "keng"
+    },
+    {
+      "en": "flattish",
+      "uz": "yassiroq"
+    },
+    {
+      "en": "slanting",
+      "uz": "qiyshiq, cho'ziq"
+    },
+    {
+      "en": "yellowish",
+      "uz": "sarg'ish"
+    },
+    {
+      "en": "thick",
+      "uz": "qalin"
+    },
+    {
+      "en": "usually",
+      "uz": "odatda"
+    },
+    {
+      "en": "rather",
+      "uz": "ancha, birmuncha"
+    },
+    {
+      "en": "most people",
+      "uz": "ko'pchilik"
+    },
+    {
+      "en": "area",
+      "uz": "hudud"
+    },
+    {
+      "en": "missing",
+      "uz": "bedarak yo'qolgan"
+    },
+    {
+      "en": "northern",
+      "uz": "shimoliy"
+    },
+    {
+      "en": "southern",
+      "uz": "janubiy"
+    },
+    {
+      "en": "central",
+      "uz": "markaziy"
+    },
+    {
+      "en": "Mediterranean",
+      "uz": "O'rta yer dengizi"
+    },
+    {
+      "en": "Denmark",
+      "uz": "Daniya"
+    },
+    {
+      "en": "Norway",
+      "uz": "Norvegiya"
+    },
+    {
+      "en": "Sweden",
+      "uz": "Shvetsiya"
+    },
+    {
+      "en": "Saudi Arabia",
+      "uz": "Saudiya Arabistoni"
+    },
+    {
+      "en": "Iraq",
+      "uz": "Iroq"
+    },
+    {
+      "en": "Libya",
+      "uz": "Liviya"
+    },
+    {
+      "en": "to look like",
+      "uz": "o'xshamoq, ko'rinishda bo'lmoq"
+    }
   ]
 }

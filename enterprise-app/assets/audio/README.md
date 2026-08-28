@@ -86,7 +86,7 @@ yaxshiroq.
 
 ---
 
-## A. Audio kerak — 33 band ochiq
+## A. Audio kerak — ochiq bandlar
 
 | Bet | Mashq | Ochiq | Nima kerak |
 |-----|-------|-------|------------|
@@ -96,6 +96,27 @@ yaxshiroq.
 | CB **107** | Ex.13 | 5 | ✓ yoki ✗ |
 | CB **109** | Ex.19 | 11 | qaysi javob qaysi savolga mos |
 | CB **111** | Ex.2 | 1 | 4-band: kim aytdi |
+| CB **11** | Ex.20 | 4 profil | o'qituvchilarning yoshi va tafsilotlari |
+| CB **14** | Ex.9 | 5 | besh ismni besh rasmga taqsimlash |
+| CB **15** | Ex.12b | 11 | qaysi tovush eshitiladi |
+
+⚠ Oxirgi uchtasi bu ro'yxatga **kech qo'shildi**: ular kitobning boshida
+joylashgan va dastlabki tekshiruvda e'tibordan chetda qolgan edi. Butun
+kitob bo'ylab qayta qidirib topildi.
+
+**CB 11, Ex.20** — Mortimer College o'qituvchilarining profillari. Ism va
+kasb kitobda bosilgan, YOSH esa faqat audioda aytiladi. Audio bo'lmasa ham
+mashqning gapirish qismi ('This is ... He's from ... He's a ...') to'liq
+bajariladi.
+
+**CB 14, Ex.9** — beshta chizilgan yuz va beshta ism (Chris, Sally, Jim,
+Peter, Mary). Kitobda qaysi ism qaysi yuzga tegishli ekani KO'RSATILMAGAN.
+Lekin mashqning asosiy maqsadi — odamlarni TASVIRLASH — audiosiz ham
+bajariladi; har rasmning tavsifi bizda saqlangan.
+
+**CB 15, Ex.12b** — 12-mashqdagi 11 ta rasmdan qaysilarining tovushi
+eshitilishi. Kitobda namuna sifatida faqat 'a cat' (eshitiladi) va
+'a motorbike' (eshitilmaydi) berilgan.
 
 ---
 
@@ -254,7 +275,7 @@ Kitobda **"listen and check"** deb yozilgan, lekin javob betning o'zida
 bosilgan bo'lgan mashqlar. Bular allaqachon **to'liq yopilgan**, audio
 faqat talaffuz uchun kerak:
 
-CB 6 (Ex.3) · CB 12 (Ex.3) · CB 40 (Ex.2) · CB 70 (Ex.3) · CB 82 (Ex.3) · CB 86 (Ex.16, 17) · CB 87 (Ex.19a) · CB 89 (Ex.2, 5) ·
+CB 6 (Ex.3) · CB 10 (Ex.17b) · CB 12 (Ex.3) · CB 40 (Ex.2) · CB 70 (Ex.3) · CB 82 (Ex.3) · CB 86 (Ex.16, 17) · CB 87 (Ex.19a) · CB 89 (Ex.2, 5) ·
 CB 92 (Ex.1b, 2) · CB 96 (Ex.12a) · CB 98 (Ex.3) · CB 99 (Ex.6) ·
 CB 100 (Ex.7a) · CB 102 (Ex.14) · CB 104 (Ex.3) · CB 108 (Ex.17a, 18) ·
 CB 110 · CB 112 · CB 113 (Ex.2)
