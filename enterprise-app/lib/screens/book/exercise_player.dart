@@ -737,7 +737,16 @@ class _MatchStage extends StatefulWidget {
 }
 
 class _MatchStageState extends State<_MatchStage> {
+  /// Bir bosqichda ko'rsatiladigan juftlar soni.
+  ///
+  /// Lug'at ro'yxatlarida 100 dan ortiq juft bo'ladi. Hammasini bir ekranga
+  /// chiqarish — cheksiz aylantirish va bir o'tirishda 116 ta moslash degani.
+  /// Shuning uchun mashq kichik bosqichlarga bo'linadi.
+  static const int _roundSize = 8;
+
   final _rnd = Random();
+  late List<ExTask> _all;
+  int _round = 0;
   late List<ExTask> _left;
   late List<ExTask> _right;
   final Set<String> _matched = {};
@@ -750,8 +759,19 @@ class _MatchStageState extends State<_MatchStage> {
   @override
   void initState() {
     super.initState();
-    _left = List.of(widget.tasks)..shuffle(_rnd);
-    _right = List.of(widget.tasks)..shuffle(_rnd);
+    _all = List.of(widget.tasks)..shuffle(_rnd);
+    _startRound();
+  }
+
+  int get _roundCount => (_all.length + _roundSize - 1) ~/ _roundSize;
+
+  void _startRound() {
+    final start = _round * _roundSize;
+    final end = min(start + _roundSize, _all.length);
+    final cur = _all.sublist(start, end);
+    _left = List.of(cur)..shuffle(_rnd);
+    _right = List.of(cur)..shuffle(_rnd);
+    _sel = null;
   }
 
   @override
@@ -770,10 +790,21 @@ class _MatchStageState extends State<_MatchStage> {
         _sel = null;
       });
       Tts.instance.speak(r.right, id: r.left);
-      if (_matched.length == widget.tasks.length) {
+      final roundDone = _left.every((t) => _matched.contains(t.left));
+      if (!roundDone) return;
+      if (_round + 1 >= _roundCount) {
         _advance = Timer(const Duration(milliseconds: 650), () {
           if (mounted) {
             widget.onDone(widget.tasks.length - _failed.length);
+          }
+        });
+      } else {
+        _advance = Timer(const Duration(milliseconds: 650), () {
+          if (mounted) {
+            setState(() {
+              _round++;
+              _startRound();
+            });
           }
         });
       }
@@ -794,6 +825,16 @@ class _MatchStageState extends State<_MatchStage> {
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 24),
       children: [
         ExplanationCard(text: widget.explanation),
+        if (_roundCount > 1) ...[
+          Center(
+            child: Text('${_round + 1} / $_roundCount',
+                style: const TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black54)),
+          ),
+          const SizedBox(height: 8),
+        ],
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
