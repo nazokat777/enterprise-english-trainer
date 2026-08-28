@@ -740,15 +740,27 @@ def _dispatch(t, ex, items):
     if t == "listen_fill_profile":
         # DIQQAT: ba'zi profillarda `name` ATAYLAB null — ism faqat audioda
         # aytiladi. Uni savol qilib qo'ysak, ekranda "None" so'zi chiqadi.
-        return "text", [
-            task(p["name"] or f"{p.get('n', '?')}-rasm",
-                 p["modelSentence"],
-                 prompt_uz=(p.get("descUz") if not p.get("name")
-                            else "Profil bo'yicha gap tuzing"),
-                 speak="")
-            for p in ex.get("profiles", [])
-            if p.get("modelSentence") and not p.get("ageFromAudio")
-        ]
+        out = []
+        for p in ex.get("profiles", []):
+            label = p["name"] or f"{p.get('n', '?')}-rasm"
+            model = p.get("modelSentence")
+            # To'liq bo'lmagan profillar JIMGINA yo'qolmasin: ular
+            # ogohlantirish belgisi bilan chiqadi va keyin mashq izohiga
+            # ro'yxat qilib ko'chiriladi.
+            if not model:
+                out.append(task(label,
+                                MARKER + f" {label} — namuna gap kitobda yo'q "
+                                "(bu odam haqidagi ma'lumot faqat audioda)",
+                                speak=""))
+            elif p.get("ageFromAudio"):
+                out.append(task(label, MARKER + " yoshi faqat audioda: " + model,
+                                speak=""))
+            else:
+                out.append(task(label, model,
+                                prompt_uz=(p.get("descUz") if not p.get("name")
+                                           else "Profil bo'yicha gap tuzing"),
+                                speak=""))
+        return "text", out
 
     if t in ("table_fill", "table_fill_from_list"):
         rows = ex.get("rows", [])
