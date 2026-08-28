@@ -215,6 +215,10 @@ def check_export() -> list[tuple[str, str]]:
                         out.append((loc, f"b{i}: o'zbekcha matn ovozga berilyapti"))
                     if e["kind"] in ("choice", "text") and not prompt:
                         out.append((loc, f"b{i}: savol matni bo'sh"))
+                    # O'qish bandi bo'sh bo'lsa — ekranda hech nima
+                    # ko'rinmaydi. Bu jimgina kontent yo'qotish demak.
+                    if e["kind"] == "study" and not (t.get("en") or "").strip():
+                        out.append((loc, f"b{i}: o'qish matni bo'sh"))
     return out
 
 

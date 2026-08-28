@@ -383,68 +383,113 @@
      "book": "coursebook",
      "bookPage": 77,
      "bookRef": "Coursebook, 77-bet, 6-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  closed the car windows ............",
        "answer": "tightly",
-       "promptUz": "Qanday yopishdi?",
+       "options": [
+        "tightly",
+        "beeped",
+        "burn",
+        "roared"
+       ],
        "whyUz": "'closed the windows TIGHTLY' = oynalarni mahkam yopdi.\n'tight' (mahkam) + -ly → RAVISH.\nGap: When they drove into the park, they closed the car\nwindows tightly.",
        "speak": "1  closed the car windows ............"
       },
       {
        "prompt": "2  ............ loudly",
        "answer": "roared",
-       "promptUz": "Sherlar nima qildi?",
+       "options": [
+        "roared",
+        "beeped",
+        "burn",
+        "tightly"
+       ],
        "whyUz": "'ROARED loudly' = baland ovozda bo'kirdi.\n'loudly' — ravish, fe'lga tegishli.\nGap: The lions roared loudly.",
        "speak": "2  ............ loudly"
       },
       {
        "prompt": "3  ............ the horn",
        "answer": "beeped",
-       "promptUz": "Signal bilan nima qilinadi?",
+       "options": [
+        "beeped",
+        "burn",
+        "roared",
+        "tightly"
+       ],
        "whyUz": "'BEEPED the horn' = signal chaldi.\nGap: She beeped the horn and shouted for help.",
        "speak": "3  ............ the horn"
       },
       {
        "prompt": "4  ............ desperately",
        "answer": "screamed",
-       "promptUz": "Kler jon holatda nima qildi?",
+       "options": [
+        "screamed",
+        "beeped",
+        "burn",
+        "roared"
+       ],
        "whyUz": "'SCREAMED desperately' = jon holatda qichqirdi.\n'to scream' = chinqirmoq (qo'rquvdan).\nGap: \"We'll burn alive!\" Claire screamed desperately.",
        "speak": "4  ............ desperately"
       },
       {
        "prompt": "5  ............ alive",
        "answer": "burn",
-       "promptUz": "Yong'inda nima bo'lishi mumkin?",
+       "options": [
+        "burn",
+        "beeped",
+        "roared",
+        "tightly"
+       ],
        "whyUz": "'BURN alive' = tiriklayin yonmoq.\nDIQQAT: bu yerda fe'l ASOSIY shaklda —\nchunki 'we'll' dan keyin keladi.\nGap: We'll burn alive!",
        "speak": "5  ............ alive"
       },
       {
        "prompt": "6  ............ ranger",
        "answer": "park",
-       "promptUz": "Qanday qo'riqchi?",
+       "options": [
+        "park",
+        "beeped",
+        "burn",
+        "roared"
+       ],
        "whyUz": "'PARK ranger' = park qo'riqchisi.\n'park' bu yerda OT sifatida boshqa otni aniqlaydi\n(qo'shma ot).\nGap: A park ranger came along the road in his jeep.",
        "speak": "6  ............ ranger"
       },
       {
        "prompt": "7  ............ animals",
        "answer": "scary",
-       "promptUz": "Sherlar qanday hayvonlar?",
+       "options": [
+        "scary",
+        "beeped",
+        "burn",
+        "roared"
+       ],
        "whyUz": "'SCARY animals' = qo'rqinchli hayvonlar.\nDIQQAT: 'scary' (narsa qo'rqinchli) ↔ 'scared' (odam qo'rqqan).\nGap: They're beautiful, but very scary animals.",
        "speak": "7  ............ animals"
       },
       {
        "prompt": "8  ............ away the lions",
        "answer": "chased",
-       "promptUz": "Ikkinchi jip nima qildi?",
+       "options": [
+        "chased",
+        "beeped",
+        "burn",
+        "roared"
+       ],
        "whyUz": "'CHASED AWAY the lions' = sherlarni quvib yubordi.\n'chase away' — frazali fe'l.\nGap: Another jeep arrived and chased away the lions.",
        "speak": "8  ............ away the lions"
       },
       {
        "prompt": "9  ............ to be alive",
        "answer": "lucky",
-       "promptUz": "Tirik qolganlari uchun qanday his qilishdi?",
+       "options": [
+        "lucky",
+        "beeped",
+        "burn",
+        "roared"
+       ],
        "whyUz": "'LUCKY to be alive' = tirik qolgani uchun omadli.\n'lucky' = omadli;  'luck' = omad.\nGap: They knew they were very lucky to be alive.",
        "speak": "9  ............ to be alive"
       }
@@ -459,68 +504,113 @@
      "book": "coursebook",
      "bookPage": 77,
      "bookRef": "Coursebook, 77-bet, 7-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  they drove ............ the park",
        "answer": "into",
-       "promptUz": "Tashqaridan ICHKARIGA harakat",
+       "options": [
+        "into",
+        "around",
+        "towards",
+        "on"
+       ],
        "whyUz": "'drove INTO the park' = parkka haydab kirdi.\nINTO — ichkariga HARAKAT.\nDIQQAT: 'in the park' bo'lsa — parkning ICHIDA bo'lish\n(harakat emas).",
        "speak": "1  they drove ............ the park"
       },
       {
        "prompt": "2  the car was ............ fire",
        "answer": "on",
-       "promptUz": "'yonayotgan' iborasi",
+       "options": [
+        "on",
+        "around",
+        "towards",
+        "in"
+       ],
        "whyUz": "'ON fire' = yonayotgan — o'zgarmas ibora.\n'in fire' XATO.",
        "speak": "2  the car was ............ fire"
       },
       {
        "prompt": "3  they jumped ............ ............ the car",
        "answer": "out of",
-       "promptUz": "Ichkaridan TASHQARIGA",
+       "options": [
+        "out of",
+        "around",
+        "towards",
+        "on"
+       ],
        "whyUz": "'jump OUT OF the car' = mashinadan sakrab chiqmoq.\nIKKI so'zdan iborat predlog.\n'INTO' ning aksi:\n  jump INTO the car   (ichkariga)\n  jump OUT OF the car (tashqariga)",
        "speak": "3  they jumped ............ ............ the car"
       },
       {
        "prompt": "4  the lions were ............ it",
        "answer": "around",
-       "promptUz": "Sherlar mashinaning ATROFIDA edi",
+       "options": [
+        "around",
+        "towards",
+        "on",
+        "in"
+       ],
        "whyUz": "'AROUND it' = uning atrofida.\nShuning uchun chiqib bo'lmasdi.",
        "speak": "4  the lions were ............ it"
       },
       {
        "prompt": "5  she shouted ............ help",
        "answer": "for",
-       "promptUz": "'yordam so'rab' iborasi",
+       "options": [
+        "for",
+        "around",
+        "towards",
+        "on"
+       ],
        "whyUz": "'shout FOR help' = yordam so'rab qichqirmoq.\n'for' — MAQSAD bildiradi.\n8-band bilan solishtiring — 'for' u yerda ham bor.",
        "speak": "5  she shouted ............ help"
       },
       {
        "prompt": "6  he came ............ the road ............ his jeep  [1-bo'shliq]",
        "answer": "along",
-       "promptUz": "Yo'l BO'YLAB",
+       "options": [
+        "along",
+        "around",
+        "towards",
+        "on"
+       ],
        "whyUz": "'come ALONG the road' = yo'l bo'ylab kelmoq.\n'along' = bo'ylab (uzunasiga).",
        "speak": "6  he came ............ the road ............ his jeep  [1-bo'shliq]"
       },
       {
        "prompt": "6  ... ............ his jeep  [2-bo'shliq]",
        "answer": "in",
-       "promptUz": "Jip ICHIDA edi",
+       "options": [
+        "in",
+        "around",
+        "towards",
+        "on"
+       ],
        "whyUz": "'IN his jeep' = jipida (ichida o'tirgan).\nDIQQAT — TRANSPORT PREDLOGLARI:\n  BY car/jeep  — umumiy usul ('by jeep')\n  IN a car/jeep — aniq mashina ichida\n  ON a bus/train — katta transportda",
        "speak": "6  ... ............ his jeep  [2-bo'shliq]"
       },
       {
        "prompt": "7  they ran ............ the jeep",
        "answer": "towards",
-       "promptUz": "Jip TOMON yugurishdi",
+       "options": [
+        "towards",
+        "around",
+        "on",
+        "in"
+       ],
        "whyUz": "'run TOWARDS the jeep' = jip tomon yugurmoq.\n'towards' = ...tomon (YO'NALISh).\nDIQQAT: 'to' ham to'g'ri, lekin 'towards' harakat\nyo'nalishini kuchliroq ta'kidlaydi.",
        "speak": "7  they ran ............ the jeep"
       },
       {
        "prompt": "8  they thanked him ............ his help",
        "answer": "for",
-       "promptUz": "'...uchun rahmat' iborasi",
+       "options": [
+        "for",
+        "around",
+        "towards",
+        "on"
+       ],
        "whyUz": "'thank somebody FOR something' = ...uchun rahmat aytmoq.\n'for' SHART.\n5-band bilan bir xil predlog — ro'yxatda 8 ta so'z,\n9 ta bo'shliq bo'lgani uchun 'for' ikki marta.",
        "speak": "8  they thanked him ............ his help"
       }
@@ -545,40 +635,65 @@
      "book": "coursebook",
      "bookPage": 79,
      "bookRef": "Coursebook, 79-bet, 10b-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Everything was ready for Sally's wedding that ............ day.",
        "answer": "sunny",
-       "promptUz": "Kun qanday edi? Ob-havo sifati",
+       "options": [
+        "sunny",
+        "beautiful",
+        "shocking",
+        "white"
+       ],
        "whyUz": "'that SUNNY day' = o'sha quyoshli kun.\n'sun' + -y → sifat.\nTo'y kuni — quyoshli, yaxshi ob-havo.",
        "speak": "1  Everything was ready for Sally's wedding that ............ day."
       },
       {
        "prompt": "2  She put on her ............ silk dress ...",
        "answer": "white",
-       "promptUz": "To'y ko'ylagi qanday rangda bo'ladi?",
+       "options": [
+        "white",
+        "beautiful",
+        "sunny",
+        "shocking"
+       ],
        "whyUz": "'her WHITE silk dress' = oq ipak ko'ylagi.\nAn'anaviy to'y ko'ylagi OQ rangda.\n'silk' = ipak (ot, lekin sifat vazifasida).\nSifatlar tartibi: rang (white) → material (silk).",
        "speak": "2  She put on her ............ silk dress ..."
       },
       {
        "prompt": "3  Just then, a ............ bouquet of flowers arrived for her.",
        "answer": "beautiful",
-       "promptUz": "Gul dastasi qanday?",
+       "options": [
+        "beautiful",
+        "sunny",
+        "shocking",
+        "white"
+       ],
        "whyUz": "'a BEAUTIFUL bouquet' = go'zal gul dastasi.\n'a bouquet OF flowers' — 'of' shart.\n'Just then' — 77-betdagi ketma-ketlik so'zi.",
        "speak": "3  Just then, a ............ bouquet of flowers arrived for her."
       },
       {
        "prompt": "4  Sally had a ............ smile on her face.",
        "answer": "happy",
-       "promptUz": "To'y kuni qanday tabassum?",
+       "options": [
+        "happy",
+        "beautiful",
+        "sunny",
+        "shocking"
+       ],
        "whyUz": "'a HAPPY smile' = baxtli tabassum.\nGul kelgani uchun xursand edi.\n'on her face' = yuzida.",
        "speak": "4  Sally had a ............ smile on her face."
       },
       {
        "prompt": "5  Suddenly, she screamed as she read the ............ message on the bouquet.",
        "answer": "shocking",
-       "promptUz": "Nega qichqirdi? Xabar qanday edi?",
+       "options": [
+        "shocking",
+        "beautiful",
+        "sunny",
+        "white"
+       ],
        "whyUz": "'the SHOCKING message' = hayratlanarli xabar.\n'shocking' — u qichqirishga sabab bo'lgan.\nDIQQAT: bu — hikoyadagi BURILISh nuqtasi.\nOldingi to'rt sifat IJOBIY, bu esa SALBIY.\n'as' bu yerda = ...ganda.",
        "speak": "5  Suddenly, she screamed as she read the ............ message on the bouquet."
       }
@@ -682,40 +797,65 @@
      "book": "workbook",
      "bookPage": 44,
      "bookRef": "Workbook, 44-bet, 2a-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "2  It was a WONDERFUL experience when my house caught fire.  →  ?",
        "answer": "horrible",
-       "promptUz": "Uy yonishi ajoyib tajribami?",
+       "options": [
+        "horrible",
+        "happy",
+        "quickly",
+        "carefully"
+       ],
        "whyUz": "Uy yong'ini 'wonderful' (ajoyib) BO'LOLMAYDI →\n'HORRIBLE' (dahshatli).\nCoursebook 78-betda: 'It was a HORRIBLE experience!'\n'catch fire' = yona boshlamoq;  catch → CAUGHT.",
        "speak": "2  It was a WONDERFUL experience when my house caught fire.  →  ?"
       },
       {
        "prompt": "3  He put the vase down CARELESSLY because he didn't want to break it.  →  ?",
        "answer": "carefully",
-       "promptUz": "Sindirmoqchi emas edi — qanday qo'yadi?",
+       "options": [
+        "carefully",
+        "happy",
+        "quickly",
+        "horrible"
+       ],
        "whyUz": "'didn't want to break it' → EHTIYOTKORLIK bilan qo'ygan →\n'CAREFULLY'.\n'carelessly' (ehtiyotsizlik bilan) — mantiqiy ZIDDIYAT.\nIkkalasi ham RAVISh.\n'a vase' = vaza.",
        "speak": "3  He put the vase down CARELESSLY because he didn't want to break it.  →  ?"
       },
       {
        "prompt": "4  They SLOWLY jumped out of the burning car and ran to safety.  →  ?",
        "answer": "quickly",
-       "promptUz": "Yonayotgan mashinadan qanday chiqiladi?",
+       "options": [
+        "quickly",
+        "happy",
+        "carefully",
+        "horrible"
+       ],
        "whyUz": "Yonayotgan mashinadan TEZ chiqiladi → 'QUICKLY'.\n'slowly' (sekin) — mantiqiy ZIDDIYAT.\nCoursebook 77-betda: 'jumped out of the car QUICKLY'.\n'run to safety' = xavfsiz joyga yugurmoq.",
        "speak": "4  They SLOWLY jumped out of the burning car and ran to safety.  →  ?"
       },
       {
        "prompt": "5  \"Please, someone help me!\" John shouted HAPPILY.  →  ?",
        "answer": "desperately",
-       "promptUz": "Yordam so'rayotgan odam xursandmi?",
+       "options": [
+        "desperately",
+        "happy",
+        "quickly",
+        "carefully"
+       ],
        "whyUz": "Yordam so'rab qichqirish 'happily' (xursand) BO'LMAYDI →\n'DESPERATELY' (jon holatda).\nCoursebook 77-betda: 'Claire screamed DESPERATELY'.\n80-betda ham: 'Please, someone help me!'\nIkkalasi ham RAVISh.",
        "speak": "5  \"Please, someone help me!\" John shouted HAPPILY.  →  ?"
       },
       {
        "prompt": "6  Elaine felt BRAVE because the lions were very scary.  →  ?",
        "answer": "nervous",
-       "promptUz": "Qo'rqinchli sherlar oldida qanday his qilinadi?",
+       "options": [
+        "nervous",
+        "happy",
+        "quickly",
+        "carefully"
+       ],
        "whyUz": "Sherlar qo'rqinchli bo'lsa, 'brave' (jasur) emas,\n'NERVOUS' (asabiy, xavotirli) his qilinadi.\n'because' — sabab: sherlar qo'rqinchli edi.\nIkkalasi ham SIFAT.\n'feel + SIFAT' — 49-betdagi qoida.",
        "speak": "6  Elaine felt BRAVE because the lions were very scary.  →  ?"
       }
@@ -778,40 +918,65 @@
      "book": "workbook",
      "bookPage": 44,
      "bookRef": "Workbook, 44-bet, 3-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "2  It was a LOVELY day so we went to the beach.  →  ?",
        "answer": "gorgeous",
-       "promptUz": "Kun qanday edi? Ijobiy sifat",
+       "options": [
+        "gorgeous",
+        "object",
+        "began",
+        "frightened"
+       ],
        "whyUz": "'lovely' = yoqimli → 'GORGEOUS' = ajoyib, go'zal.\nCoursebook 77-betda: 'One GORGEOUS, sunny day'.\nIkkalasi ham SIFAT.\n'so' — natija bog'lovchisi.",
        "speak": "2  It was a LOVELY day so we went to the beach.  →  ?"
       },
       {
        "prompt": "3  Suddenly the sky got dark and it STARTED to rain.  →  ?",
        "answer": "began",
-       "promptUz": "'started' ning ma'nodoshi",
+       "options": [
+        "began",
+        "object",
+        "frightened",
+        "gorgeous"
+       ],
        "whyUz": "'started' = boshladi → 'BEGAN' = boshladi.\nCoursebook 80-betda: 'heavy rain BEGAN to fall'.\nDIQQAT: FE'L ShAKLI ham saqlanadi —\nikkalasi ham O'TGAN zamonda.\nbegin → BEGAN (noto'g'ri fe'l).",
        "speak": "3  Suddenly the sky got dark and it STARTED to rain.  →  ?"
       },
       {
        "prompt": "4  After the earthquake there was a BIG hole in the ground.  →  ?",
        "answer": "huge",
-       "promptUz": "'big' dan ham kuchliroq sifat",
+       "options": [
+        "huge",
+        "object",
+        "began",
+        "frightened"
+       ],
        "whyUz": "'big' = katta → 'HUGE' = juda katta, ulkan.\n'huge' — 'big' dan KUChLIROQ.\nZilziladan keyingi teshik uchun mos.\n'an earthquake' = zilzila (earth + quake).",
        "speak": "4  After the earthquake there was a BIG hole in the ground.  →  ?"
       },
       {
        "prompt": "5  I was very SCARED when the dog barked at me.  →  ?",
        "answer": "frightened",
-       "promptUz": "'scared' ning ma'nodoshi",
+       "options": [
+        "frightened",
+        "object",
+        "began",
+        "gorgeous"
+       ],
        "whyUz": "'scared' = qo'rqqan → 'FRIGHTENED' = qo'rqib ketgan.\nCoursebook 80-betda: 'Hans felt FRIGHTENED'.\nIkkalasi ham -ED sifati — ODAM haqida.\n'to bark AT somebody' = kimgadir hurmoq.",
        "speak": "5  I was very SCARED when the dog barked at me.  →  ?"
       },
       {
        "prompt": "6  Kevin heard strange SOUNDS coming from the kitchen.  →  ?",
        "answer": "noises",
-       "promptUz": "'sounds' ning ma'nodoshi",
+       "options": [
+        "noises",
+        "object",
+        "began",
+        "frightened"
+       ],
        "whyUz": "'sounds' = ovozlar → 'NOISES' = shovqinlar.\nDIQQAT — nozik farq:\n  'a sound' — HAR QANDAY ovoz (yoqimli ham)\n  'a noise' — odatda YOQIMSIZ, bezovta qiluvchi ovoz\nBu yerda 'strange' (g'alati) bo'lgani uchun 'noises' mos.\nCoursebook 79 va 81-betlarda ham 'noises' bor edi.",
        "speak": "6  Kevin heard strange SOUNDS coming from the kitchen.  →  ?"
       }
@@ -1980,54 +2145,89 @@
      "book": "coursebook",
      "bookPage": 78,
      "bookRef": "Coursebook, 78-bet, 10a-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Suzy got into her ............ car ...",
        "answer": "new",
-       "promptUz": "Mashina qanday?",
+       "options": [
+        "new",
+        "quiet",
+        "old",
+        "strange"
+       ],
        "whyUz": "'her NEW car' = uning yangi mashinasi.\n'get INTO a car' = mashinaga o'tirmoq —\n8-mashqdagi 'into' predlogi.",
        "speak": "1  Suzy got into her ............ car ..."
       },
       {
        "prompt": "2  ... and started to drive home along a ............ country road.",
        "answer": "quiet",
-       "promptUz": "Qishloq yo'li qanday bo'ladi?",
+       "options": [
+        "quiet",
+        "new",
+        "old",
+        "strange"
+       ],
        "whyUz": "'a QUIET country road' = tinch qishloq yo'li.\n'quiet' = tinch, jimjit.\n'ALONG a road' — 8-mashqdagi predlog.",
        "speak": "2  ... and started to drive home along a ............ country road."
       },
       {
        "prompt": "3  Suddenly, she saw a ............ light in the sky above her.",
        "answer": "bright",
-       "promptUz": "Osmondagi nur qanday?",
+       "options": [
+        "bright",
+        "quiet",
+        "new",
+        "old"
+       ],
        "whyUz": "'a BRIGHT light' = yorqin nur.\n'bright' = yorqin, porloq.\n'above her' = uning tepasida.",
        "speak": "3  Suddenly, she saw a ............ light in the sky above her."
       },
       {
        "prompt": "4  Then, she heard ............ voices.",
        "answer": "strange",
-       "promptUz": "Qo'rqitadigan ovozlar qanday?",
+       "options": [
+        "strange",
+        "quiet",
+        "new",
+        "old"
+       ],
        "whyUz": "'STRANGE voices' = g'alati ovozlar.\n'strange' = g'alati, notanish.\nDIQQAT: 'voices' KO'PLIK → artikl KERAK EMAS.",
        "speak": "4  Then, she heard ............ voices."
       },
       {
        "prompt": "5  She saw an ............ man with ...",
        "answer": "old",
-       "promptUz": "'AN' bor — demak UNLI tovush kerak!",
+       "options": [
+        "old",
+        "quiet",
+        "new",
+        "strange"
+       ],
        "whyUz": "'AN OLD man' = keksa odam.\nENG MUHIM BELGI: 'AN' artikli berilgan →\nkeyingi so'z UNLI tovush bilan boshlanishi kerak.\nRo'yxatda faqat 'OLD' unli bilan boshlanadi.\n('a new man', 'a strange man' bo'lsa 'A' bo'lardi.)",
        "speak": "5  She saw an ............ man with ..."
       },
       {
        "prompt": "6  ... with ............ hair and blue eyes.",
        "answer": "white",
-       "promptUz": "Keksa odamning sochi qanday rangda?",
+       "options": [
+        "white",
+        "quiet",
+        "new",
+        "old"
+       ],
        "whyUz": "'WHITE hair' = oq soch.\nKeksa odam — oq sochli.\nDIQQAT: 'hair' SANALMAYDIGAN → artikl YO'Q.\n'blue eyes' bilan juft — ikkalasi ham rang.",
        "speak": "6  ... with ............ hair and blue eyes."
       },
       {
        "prompt": "7  He had a ............ object in his hand ...",
        "answer": "metal",
-       "promptUz": "Buyum nimadan yasalgan?",
+       "options": [
+        "metal",
+        "quiet",
+        "new",
+        "old"
+       ],
        "whyUz": "'a METAL object' = metall buyum.\nDIQQAT: 'metal' — OT, lekin bu yerda boshqa otni\naniqlab SIFAT vazifasini bajaryapti.\nShunga o'xshash: a stone cottage, a glass door,\na paper bag.\n'to point AT' = ...ga qaratmoq.",
        "speak": "7  He had a ............ object in his hand ..."
       }
@@ -2247,47 +2447,77 @@
      "book": "coursebook",
      "bookPage": 79,
      "bookRef": "Coursebook, 79-bet, 14-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  The door was not locked, ............ Mike opened it and went inside.",
        "answer": "so",
-       "promptUz": "Eshik qulflanmagan → NATIJASI nima?",
+       "options": [
+        "so",
+        "and",
+        "but",
+        "because"
+       ],
        "whyUz": "SABAB (eshik qulflanmagan) → NATIJA (Mayk ochdi) → SO.\nOldidan VERGUL bor — bu ham 'so' ni ko'rsatadi.\nDIQQAT: 'because' bo'lsa tartib teskari bo'lardi:\n'Mike opened the door BECAUSE it was not locked.'",
        "speak": "1  The door was not locked, ............ Mike opened it and went inside."
       },
       {
        "prompt": "2  First, the sky turned grey, ............ it began to rain.",
        "answer": "then",
-       "promptUz": "'First' bor — demak keyin nima?",
+       "options": [
+        "then",
+        "and",
+        "but",
+        "because"
+       ],
        "whyUz": "'First' so'zi bor → keyingi voqea 'THEN' bilan.\nKETMA-KETLIK: avval osmon kulrang bo'ldi, so'ng yomg'ir\nyog'a boshladi.\n'turn grey' = kulrang bo'lmoq.",
        "speak": "2  First, the sky turned grey, ............ it began to rain."
       },
       {
        "prompt": "3  We waited for Rob's answer, ............ he said nothing.",
        "answer": "but",
-       "promptUz": "Kutishdi, LEKIN...",
+       "options": [
+        "but",
+        "and",
+        "because",
+        "so"
+       ],
        "whyUz": "QARAMA-QARShILIK: javob kutishdi ↔ u hech narsa demadi →\nBUT.\nOldidan VERGUL bor.\n'wait FOR' = kutmoq;  'say nothing' = hech narsa demaslik.",
        "speak": "3  We waited for Rob's answer, ............ he said nothing."
       },
       {
        "prompt": "4  Liz was in the kitchen ............ the phone rang.",
        "answer": "when",
-       "promptUz": "Telefon QACHON jiringladi?",
+       "options": [
+        "when",
+        "and",
+        "but",
+        "because"
+       ],
        "whyUz": "VAQT: Liz oshxonada edi — O'ShANDA telefon jiringladi →\nWHEN.\nring → RANG (noto'g'ri fe'l).\nKitobdagi misolga o'xshash:\n'He was in bed WHEN he heard a strange noise.'",
        "speak": "4  Liz was in the kitchen ............ the phone rang."
       },
       {
        "prompt": "5  Mr Grant opened the letter ............ read the message inside.",
        "answer": "and",
-       "promptUz": "Bir odam ikki ish qildi",
+       "options": [
+        "and",
+        "but",
+        "because",
+        "so"
+       ],
        "whyUz": "AND — ketma-ketlik, ega BIR XIL.\nDIQQAT: ikkinchi qismda ega ('he') TUShIB QOLGAN —\n'Mr Grant opened ... and (he) read ...'\nBu 'and' ning belgisi.\nread → READ (yozilishi bir xil, /red/ deb o'qiladi).",
        "speak": "5  Mr Grant opened the letter ............ read the message inside."
       },
       {
        "prompt": "6  Mandy felt nervous ............ the dog looked very scary.",
        "answer": "because",
-       "promptUz": "Nega asabiylashdi?",
+       "options": [
+        "because",
+        "and",
+        "but",
+        "so"
+       ],
        "whyUz": "SABAB: it qo'rqinchli ko'rinardi → BECAUSE.\nTartib: NATIJA (asabiy edi) + BECAUSE + SABAB (it qo'rqinchli).\n1-band bilan SOLISHTIRING — u yerda tartib teskari edi ('so').\n'scary' — 76-betdagi so'z.",
        "speak": "6  Mandy felt nervous ............ the dog looked very scary."
       }
@@ -2612,68 +2842,113 @@
      "book": "coursebook",
      "bookPage": 78,
      "bookRef": "Coursebook, 78-bet, 8-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "2  ... ............ the tunnel ...  (rasm h)",
        "answer": "through",
-       "promptUz": "Tunnel ICHIDAN",
+       "options": [
+        "through",
+        "along",
+        "towards",
+        "up"
+       ],
        "whyUz": "'THROUGH the tunnel' = tunnel ichidan o'tib.\nTunnel — yopiq joy → THROUGH.\nRasm h.",
        "speak": "2  ... ............ the tunnel ...  (rasm h)"
       },
       {
        "prompt": "3  ... and ............ the forest.  (rasm b)",
        "answer": "towards",
-       "promptUz": "O'rmon TOMON",
+       "options": [
+        "towards",
+        "along",
+        "through",
+        "up"
+       ],
        "whyUz": "'TOWARDS the forest' = o'rmon tomon.\nDIQQAT: 'through the forest' bo'lsa o'rmon IChIDAN\no'tgan bo'lardi, lekin matnda o'rmonga YETIB BORMAGAN —\nfaqat o'sha tomonga ketgan.\nRasm b.",
        "speak": "3  ... and ............ the forest.  (rasm b)"
       },
       {
        "prompt": "4  Then, he went ............ the hill.  (rasm d)",
        "answer": "up",
-       "promptUz": "Tepalikka chiqdi",
+       "options": [
+        "up",
+        "along",
+        "through",
+        "towards"
+       ],
        "whyUz": "'UP the hill' = tepalikka chiqmoq.\nKeyingi gapda 'The view from THERE was beautiful' —\ndemak tepaga chiqqan.\nRasm d (birinchi qismi).",
        "speak": "4  Then, he went ............ the hill.  (rasm d)"
       },
       {
        "prompt": "5  After that, he went ............ the other side of the hill,  (rasm d)",
        "answer": "down",
-       "promptUz": "Tepalikning narigi tomonidan",
+       "options": [
+        "down",
+        "along",
+        "through",
+        "towards"
+       ],
        "whyUz": "'DOWN the other side' = narigi tomonidan tushmoq.\n4-band bilan JUFT: chiqdi (up) → tushdi (down).\nRasm d (ikkinchi qismi) — shuning uchun 'd' qutisida\nqiya chiziq bor.",
        "speak": "5  After that, he went ............ the other side of the hill,  (rasm d)"
       },
       {
        "prompt": "6  ... ............ a little old cottage ...  (rasm a)",
        "answer": "past",
-       "promptUz": "Kulba YONIDAN o'tdi",
+       "options": [
+        "past",
+        "along",
+        "through",
+        "towards"
+       ],
        "whyUz": "'PAST a cottage' = kulba yonidan o'tib.\nTo'xtamadi, faqat yonidan o'tdi.\nRasm a.\nDIQQAT: 'a little old cottage' — sifatlar tartibi:\no'lcham (little) → yosh (old).",
        "speak": "6  ... ............ a little old cottage ...  (rasm a)"
       },
       {
        "prompt": "7  ... and ............ the bridge.  (rasm f)",
        "answer": "under",
-       "promptUz": "Ko'prik OSTIDAN",
+       "options": [
+        "under",
+        "along",
+        "through",
+        "towards"
+       ],
        "whyUz": "'UNDER the bridge' = ko'prik ostidan.\nRasm f.\nDIQQAT: 'over the bridge' bo'lsa ko'prik USTIDAN\no'tgan bo'lardi — rasmda esa ostidan o'tyapti.",
        "speak": "7  ... and ............ the bridge.  (rasm f)"
       },
       {
        "prompt": "8  After that, he went ............ a field.  (rasm c)",
        "answer": "across",
-       "promptUz": "Dala BO'YLAB (ko'ndalang)",
+       "options": [
+        "across",
+        "along",
+        "through",
+        "towards"
+       ],
        "whyUz": "'ACROSS a field' = dala bo'ylab (bir chetdan ikkinchisiga).\nDala — ochiq maydon → ACROSS.\nRasm c — u yerda TRAKTOR ham ko'rinadi,\nbu keyingi gapga bog'liq.",
        "speak": "8  After that, he went ............ a field.  (rasm c)"
       },
       {
        "prompt": "9  A tractor scared the horse and it jumped ............ the fence.  (rasm i)",
        "answer": "over",
-       "promptUz": "Panjara USTIDAN sakradi",
+       "options": [
+        "over",
+        "along",
+        "through",
+        "towards"
+       ],
        "whyUz": "'jump OVER the fence' = panjara ustidan sakramoq.\nRasm i.\n'to scare' = qo'rqitmoq;  'a fence' = panjara.",
        "speak": "9  A tractor scared the horse and it jumped ............ the fence.  (rasm i)"
       },
       {
        "prompt": "10  Ralph fell off the horse and ............ the lake.  (rasm g)",
        "answer": "into",
-       "promptUz": "Ko'lning ICHIGA tushdi",
+       "options": [
+        "into",
+        "along",
+        "through",
+        "towards"
+       ],
        "whyUz": "'INTO the lake' = ko'lga (ichkariga) tushmoq.\nRasm g.\n'fall off' = ustidan yiqilmoq;  fall → FELL (noto'g'ri fe'l).\nDIQQAT: 'fell off the horse AND into the lake' —\nikki harakat: otdan yiqildi VA ko'lga tushdi.",
        "speak": "10  Ralph fell off the horse and ............ the lake.  (rasm g)"
       }
@@ -2774,54 +3049,89 @@
      "book": "workbook",
      "bookPage": 44,
      "bookRef": "Workbook, 44-bet, 4-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Tom's wife yawned ............ as she stood at the front door.",
        "answer": "sleepily",
-       "promptUz": "Esnayotgan odam qanday holatda?",
+       "options": [
+        "sleepily",
+        "carefully",
+        "quickly",
+        "tightly"
+       ],
        "whyUz": "'yawned SLEEPILY' = uyqusirab esnadi.\n'to yawn' = esnamoq — uyqu belgisi.\nCoursebook 81-betdagi 21-mashqda ham 'sleepily' bor edi.\n'sleepy' + -ILY (undosh + Y qoidasi).",
        "speak": "1  Tom's wife yawned ............ as she stood at the front door."
       },
       {
        "prompt": "2  \"Goodbye, Tom. Drive ............ ,\" she called.",
        "answer": "carefully",
-       "promptUz": "Haydovchiga aytiladigan standart maslahat",
+       "options": [
+        "carefully",
+        "quickly",
+        "tightly",
+        "sleepily"
+       ],
        "whyUz": "'Drive CAREFULLY' = ehtiyot bo'lib hayda —\nyo'lga chiqayotganga aytiladigan standart ibora.\nGrammar 48-betdagi asosiy namuna:\n'He drives CAREFULLY.'",
        "speak": "2  \"Goodbye, Tom. Drive ............ ,\" she called."
       },
       {
        "prompt": "3  It was a cold morning, so he closed the windows ............ .",
        "answer": "tightly",
-       "promptUz": "Sovuqda oyna qanday yopiladi?",
+       "options": [
+        "tightly",
+        "carefully",
+        "quickly",
+        "sleepily"
+       ],
        "whyUz": "'closed the windows TIGHTLY' = oynalarni mahkam yopdi.\nSovuq bo'lgani uchun mahkam yopgan.\nCoursebook 77-betda ham: 'closed the car windows TIGHTLY'.",
        "speak": "3  It was a cold morning, so he closed the windows ............ ."
       },
       {
        "prompt": "4  As he drove along he smiled ............ .",
        "answer": "happily",
-       "promptUz": "Yangi ishga ketayotgan odam qanday jilmayadi?",
+       "options": [
+        "happily",
+        "carefully",
+        "quickly",
+        "tightly"
+       ],
        "whyUz": "'smiled HAPPILY' = baxtli jilmaydi.\nKeyingi gap sababini aytadi: 'Today was his first day\nin his new job' — yangi ish, shuning uchun xursand.\n'happy' + -ILY (undosh + Y qoidasi).\n'drive ALONG' — harakat predlogi.",
        "speak": "4  As he drove along he smiled ............ ."
       },
       {
        "prompt": "5  Tom screamed ............ as his car crashed into a tree.",
        "answer": "loudly",
-       "promptUz": "Halokat paytida qanday qichqiriladi?",
+       "options": [
+        "loudly",
+        "carefully",
+        "quickly",
+        "tightly"
+       ],
        "whyUz": "'screamed LOUDLY' = baland ovozda qichqirdi.\n'crash INTO a tree' = daraxtga urilmoq — 'into' predlogi.\n'to skid' = sirg'anib ketmoq;  'icy' = muzli.",
        "speak": "5  Tom screamed ............ as his car crashed into a tree."
       },
       {
        "prompt": "6  The driver ran ............ towards Tom.",
        "answer": "quickly",
-       "promptUz": "Yordamga qanday yugiriladi?",
+       "options": [
+        "quickly",
+        "carefully",
+        "tightly",
+        "sleepily"
+       ],
        "whyUz": "'ran QUICKLY' = tez yugurdi.\nFavqulodda vaziyatda tez harakat qilinadi.\n'run TOWARDS' — yo'nalish predlogi (Coursebook 77-betda ham).\n'the driver' bu yerda — tez yordam haydovchisi.",
        "speak": "6  The driver ran ............ towards Tom."
       },
       {
        "prompt": "7  \"Are you alright, sir?\" he asked ............ .",
        "answer": "politely",
-       "promptUz": "'sir' so'zi ishlatilgan — qanday so'radi?",
+       "options": [
+        "politely",
+        "carefully",
+        "quickly",
+        "tightly"
+       ],
        "whyUz": "'asked POLITELY' = muloyimlik bilan so'radi.\nBELGI: gapda 'SIR' bor — bu MULOYIM murojaat.\n'polite' = muloyim → 'politely' = muloyimlik bilan.\n'alright' = yaxshi, joyida ('all right' ning qisqasi).",
        "speak": "7  \"Are you alright, sir?\" he asked ............ ."
       }
@@ -2959,61 +3269,101 @@
      "book": "workbook",
      "bookPage": 45,
      "bookRef": "Workbook, 45-bet, 6-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  The thief is climbing ............ the window.",
        "answer": "through",
-       "promptUz": "Deraza TESHIGI orqali",
+       "options": [
+        "through",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'climbing THROUGH the window' = derazadan tirmashib kiryapti.\nTHROUGH — ochiq joy (deraza) ORQALI o'tib.\nDIQQAT: 'into the window' XATO —\n'through the window INTO the house' bo'lardi.\n'a thief' = o'g'ri;  ko'pligi: thieves.",
        "speak": "1  The thief is climbing ............ the window."
       },
       {
        "prompt": "2  He is roller-skating ............ the street.",
        "answer": "along",
-       "promptUz": "Ko'cha BO'YLAB (uzunasiga)",
+       "options": [
+        "along",
+        "over",
+        "up",
+        "towards"
+       ],
        "whyUz": "'roller-skating ALONG the street' = ko'cha bo'ylab\nrolik uchyapti.\nALONG — UZUNASIGA harakat.\nDIQQAT: 'across the street' bo'lsa ko'chani KESIB\no'tgan bo'lardi.\n'to roller-skate' = rolikli konkida uchmoq.",
        "speak": "2  He is roller-skating ............ the street."
       },
       {
        "prompt": "3  The ball fell ............ the swimming-pool.",
        "answer": "into",
-       "promptUz": "Havzaning IChIGA",
+       "options": [
+        "into",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'fell INTO the pool' = havzaga tushib ketdi.\nINTO — IChKARIGA harakat.\nfall → FELL (noto'g'ri fe'l).\nGrammar 51-betda ham: 'threw the ball INTO the\nswimming-pool'.",
        "speak": "3  The ball fell ............ the swimming-pool."
       },
       {
        "prompt": "4  He is holding the ball ............ his head.",
        "answer": "over",
-       "promptUz": "Boshining USTIDA",
+       "options": [
+        "over",
+        "along",
+        "up",
+        "towards"
+       ],
        "whyUz": "'holding the ball OVER his head' = to'pni boshi ustida\nushlab turibdi.\nOVER — USTIDA (tegmasdan).\nDIQQAT: bu yerda 'over' HARAKAT emas, JOY bildiradi —\n'over' ikkalasida ham ishlatiladi.\nAksi: under.",
        "speak": "4  He is holding the ball ............ his head."
       },
       {
        "prompt": "5  The woman is climbing ............ the ladder.",
        "answer": "up",
-       "promptUz": "Narvondan YUQORIGA",
+       "options": [
+        "up",
+        "over",
+        "along",
+        "towards"
+       ],
        "whyUz": "'climbing UP the ladder' = narvondan yuqoriga chiqyapti.\nUP — YUQORIGA.\nGrammar 50-betda ham: 'The firefighter climbed UP the\nladder'.\nAksi: down (8-band).",
        "speak": "5  The woman is climbing ............ the ladder."
       },
       {
        "prompt": "6  The horse is racing ............ the finish line.",
        "answer": "towards",
-       "promptUz": "Marra chizig'i TOMON",
+       "options": [
+        "towards",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'racing TOWARDS the finish line' = marra tomon chopyapti.\nTOWARDS — YO'NALISh (hali yetib bormagan).\nGrammar 50-betda ham: 'running TOWARDS the finishing line'.\n'to race' = poyga qilmoq, chopmoq.",
        "speak": "6  The horse is racing ............ the finish line."
       },
       {
        "prompt": "7  They are standing ............ an umbrella.",
        "answer": "under",
-       "promptUz": "Soyabon OSTIDA",
+       "options": [
+        "under",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'standing UNDER an umbrella' = soyabon ostida turishibdi.\nUNDER — OSTIDA.\n4-band bilan JUFT: over ↔ under.\nDIQQAT: bu yerda ham JOY ma'nosida.",
        "speak": "7  They are standing ............ an umbrella."
       },
       {
        "prompt": "8  The girl is skiing ............ the mountain.",
        "answer": "down",
-       "promptUz": "Tog'dan PASTGA",
+       "options": [
+        "down",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'skiing DOWN the mountain' = tog'dan pastga chang'i uchyapti.\nDOWN — PASTGA.\n5-band bilan JUFT: up ↔ down.\n'to ski' = chang'i uchmoq (Workbook 37-betda ham bor edi).",
        "speak": "8  The girl is skiing ............ the mountain."
       }
@@ -3196,75 +3546,125 @@
      "book": "workbook",
      "bookPage": 45,
      "bookRef": "Workbook, 45-bet, 9-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Lucy was in her bedroom ............ the doorbell rang.",
        "answer": "when",
-       "promptUz": "Qo'ng'iroq QACHON jiringladi?",
+       "options": [
+        "when",
+        "and",
+        "but",
+        "so"
+       ],
        "whyUz": "WHEN — VAQT.\nDavom etayotgan holat (yotoqxonada edi) +\nto'satdan bo'lgan voqea (qo'ng'iroq jiringladi).\n8-mashqning 3-bandiga o'xshash.",
        "speak": "1  Lucy was in her bedroom ............ the doorbell rang."
       },
       {
        "prompt": "2  It was dark, ............ she switched on the lights ...",
        "answer": "so",
-       "promptUz": "Qorong'i → NATIJASI nima?",
+       "options": [
+        "so",
+        "and",
+        "but",
+        "because"
+       ],
        "whyUz": "SO — NATIJA.\nSABAB (qorong'i edi) → NATIJA (chiroq yoqdi).\nOldidan VERGUL bor.\n'switch on' = yoqmoq (= turn on).",
        "speak": "2  It was dark, ............ she switched on the lights ..."
       },
       {
        "prompt": "3  ... ............ went downstairs.",
        "answer": "and",
-       "promptUz": "Ikki harakat ketma-ket, ega BIR XIL",
+       "options": [
+        "and",
+        "but",
+        "so",
+        "because"
+       ],
        "whyUz": "AND — qo'shimcha.\nDIQQAT: ikkinchi qismda ega ('she') TUShIB QOLGAN —\n'she switched on the lights and (she) went downstairs'.\n'downstairs' = pastga (zinadan).",
        "speak": "3  ... ............ went downstairs."
       },
       {
        "prompt": "4  She opened the front door, ............ there was nobody there.",
        "answer": "but",
-       "promptUz": "Eshikni ochdi, LEKIN...",
+       "options": [
+        "but",
+        "and",
+        "so",
+        "because"
+       ],
        "whyUz": "BUT — QARAMA-QARShILIK.\nEshikni ochdi (kimdir bor deb o'yladi) ↔\nlekin hech kim yo'q edi.\nOldidan VERGUL bor.\n'nobody' = hech kim.",
        "speak": "4  She opened the front door, ............ there was nobody there."
       },
       {
        "prompt": "5  Nervously, she closed the door ............ went into the living-room.",
        "answer": "and",
-       "promptUz": "Yana ikki harakat ketma-ket",
+       "options": [
+        "and",
+        "but",
+        "so",
+        "because"
+       ],
        "whyUz": "AND — qo'shimcha.\nEga yana TUShIB QOLGAN.\n'Nervously' — RAVISh, gap boshida.\n'go INTO' — harakat predlogi.",
        "speak": "5  Nervously, she closed the door ............ went into the living-room."
       },
       {
        "prompt": "6  She was very scared ............ she was all alone.",
        "answer": "because",
-       "promptUz": "Nega qo'rqdi?",
+       "options": [
+        "because",
+        "and",
+        "but",
+        "so"
+       ],
        "whyUz": "BECAUSE — SABAB.\n'she was all alone' — qo'rqishning sababi.\nRo'yxatdagi 'because' YAGONA marta shu yerda.\n'all alone' = butunlay yolg'iz.\nGrammar 49-betdagi Salli hikoyasida ham xuddi shu edi.",
        "speak": "6  She was very scared ............ she was all alone."
       },
       {
        "prompt": "7  She closed the windows ............ doors tightly.",
        "answer": "and",
-       "promptUz": "Ikki OT birlashtiriladi",
+       "options": [
+        "and",
+        "but",
+        "so",
+        "because"
+       ],
        "whyUz": "AND — bu yerda ikki GAP emas, ikki OT birlashtiriladi:\n'the windows AND doors'.\n'tightly' — RAVISh (mahkam).\nCoursebook 77-betda ham 'closed the car windows TIGHTLY'.",
        "speak": "7  She closed the windows ............ doors tightly."
       },
       {
        "prompt": "8  ............ , she heard a strange noise in the garden.",
        "answer": "But",
-       "promptUz": "Yangi gap boshida — ro'yxatdagi qaysi so'z shu joyga to'g'ri keladi?",
+       "options": [
+        "But",
+        "and",
+        "so",
+        "because"
+       ],
        "whyUz": "BUT — QARAMA-QARShILIK.\nHamma joyni mahkam yopdi (xavfsiz deb o'yladi) ↔\nLEKIN shovqin eshitdi.\n\nDIQQAT — BU BAND ALOHIDA:\nBo'shliq YANGI GAP boshida va undan keyin VERGUL bor.\nRo'yxatdagi besh so'zdan ('and, but, so, because, when')\ngap boshida kela oladigan YAGONA so'z — 'BUT'.\n('When,' / 'Because,' / 'And,' / 'So,' bu joyda\nmantiqan mos kelmaydi.)\n\nESLATMA: rasmiy yozuvda 'But' dan keyin vergul qo'yilishi\ng'ayrioddiy, lekin kitobda shunday bosilgan.\n8-mashqda 'then' bor edi va u bu yerga juda mos kelardi —\nlekin 9-mashqning ro'yxatida 'then' YO'Q.",
        "speak": "8  ............ , she heard a strange noise in the garden."
       },
       {
        "prompt": "9  She went to the window ............ looked out nervously.",
        "answer": "and",
-       "promptUz": "Yana ikki harakat ketma-ket",
+       "options": [
+        "and",
+        "but",
+        "so",
+        "because"
+       ],
        "whyUz": "AND — qo'shimcha.\nEga TUShIB QOLGAN: 'she went ... and (she) looked out'.\n'look out' = tashqariga qaramoq.\n'nervously' — RAVISh.",
        "speak": "9  She went to the window ............ looked out nervously."
       },
       {
        "prompt": "10  She screamed ............ she saw what was outside!",
        "answer": "when",
-       "promptUz": "QACHON qichqirdi?",
+       "options": [
+        "when",
+        "and",
+        "but",
+        "so"
+       ],
        "whyUz": "WHEN — VAQT.\nQichqirish QAChON sodir bo'ldi — ko'rganida.\n1-band bilan bir xil naqsh.\nHikoya OChIQ tugaydi — tashqarida nima borligi aytilmaydi.\nBu — qo'rqinchli hikoya uslubi.",
        "speak": "10  She screamed ............ she saw what was outside!"
       }
@@ -3666,40 +4066,65 @@
      "book": "grammar",
      "bookPage": 49,
      "bookRef": "Grammar Book, 49-bet, 1-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  There was a(n) ............ film on television last night.",
        "answer": "interesting",
-       "promptUz": "'a(n)' — qaysi sifat UNLI tovush bilan boshlanadi?",
+       "options": [
+        "interesting",
+        "gorgeous",
+        "happy",
+        "strange"
+       ],
        "whyUz": "'AN INTERESTING film' = qiziqarli film.\nDIQQAT: 'interesting' — 'i' UNLI tovush → AN.\nRo'yxatdagi YAGONA 'an' oladigan so'z —\nbu javobni tekshirishning yaxshi usuli.",
        "speak": "1  There was a(n) ............ film on television last night."
       },
       {
        "prompt": "2  Carlos is a(n) ............ driver. He never has accidents.",
        "answer": "careful",
-       "promptUz": "Hech qachon halokatga uchramaydigan haydovchi qanday?",
+       "options": [
+        "careful",
+        "interesting",
+        "gorgeous",
+        "happy"
+       ],
        "whyUz": "'A CAREFUL driver' = ehtiyotkor haydovchi.\nKeyingi gap tushuntiradi: 'He never has accidents'.\n48-betdagi nazariyada ham shu misol bor edi.",
        "speak": "2  Carlos is a(n) ............ driver. He never has accidents."
       },
       {
        "prompt": "3  There was a(n) ............ man looking through my kitchen window.",
        "answer": "strange",
-       "promptUz": "Oshxona derazasidan qarab turgan notanish odam",
+       "options": [
+        "strange",
+        "interesting",
+        "gorgeous",
+        "happy"
+       ],
        "whyUz": "'A STRANGE man' = g'alati, notanish odam.\nCoursebook 78-betdagi 10a-mashqda ham 'strange voices' bor edi.\n'look THROUGH a window' — 78-betdagi predlog.",
        "speak": "3  There was a(n) ............ man looking through my kitchen window."
       },
       {
        "prompt": "4  It was a(n) ............ spring day so they went on a picnic.",
        "answer": "gorgeous",
-       "promptUz": "Piknikka chiqiladigan kun qanday bo'ladi?",
+       "options": [
+        "gorgeous",
+        "interesting",
+        "happy",
+        "strange"
+       ],
        "whyUz": "'A GORGEOUS spring day' = ajoyib bahor kuni.\n'gorgeous' = ajoyib, go'zal.\nCoursebook 77-betdagi hikoya ham shunday boshlangan:\n'One GORGEOUS, sunny day'.\n'so' — natija bog'lovchisi (48-bet).",
        "speak": "4  It was a(n) ............ spring day so they went on a picnic."
       },
       {
        "prompt": "5  Kate was very ............ when she won first prize in the art competition.",
        "answer": "happy",
-       "promptUz": "Birinchi o'rinni olgan odam nima his qiladi?",
+       "options": [
+        "happy",
+        "interesting",
+        "gorgeous",
+        "strange"
+       ],
        "whyUz": "'very HAPPY' = juda xursand.\n'win first prize' = birinchi o'rinni olmoq.\nDIQQAT: 'was' dan keyin SIFAT keladi (ravish emas) —\n48-betdagi qoida.\n'when' — vaqt bog'lovchisi.",
        "speak": "5  Kate was very ............ when she won first prize in the art competition."
       }
@@ -4016,75 +4441,125 @@
      "book": "grammar",
      "bookPage": 49,
      "bookRef": "Grammar Book, 49-bet, 6-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Sally was tired, ............ she decided to go to bed.",
        "answer": "so",
-       "promptUz": "Charchash → NATIJASI nima?",
+       "options": [
+        "so",
+        "and",
+        "but",
+        "because"
+       ],
        "whyUz": "SABAB (charchagan) → NATIJA (yotishga qaror qildi) → SO.\nOldidan VERGUL bor — bu ham 'so' ni ko'rsatadi.\n48-betdagi misolga o'xshash:\n'I was very tired, SO I decided to go to bed.'",
        "speak": "1  Sally was tired, ............ she decided to go to bed."
       },
       {
        "prompt": "2  She was asleep ............ the telephone rang.",
        "answer": "when",
-       "promptUz": "Telefon QACHON jiringladi?",
+       "options": [
+        "when",
+        "and",
+        "but",
+        "so"
+       ],
        "whyUz": "WHEN — VAQT.\nDavom etayotgan holat (uxlab yotgan) +\nto'satdan bo'lgan voqea (telefon jiringladi).\nring → RANG (noto'g'ri fe'l).",
        "speak": "2  She was asleep ............ the telephone rang."
       },
       {
        "prompt": "3  She got up ............ answered the phone ...",
        "answer": "and",
-       "promptUz": "Ikki harakat ketma-ket, ega BIR XIL",
+       "options": [
+        "and",
+        "but",
+        "so",
+        "because"
+       ],
        "whyUz": "AND — ketma-ketlik.\nDIQQAT: ikkinchi qismda ega ('she') TUShIB QOLGAN —\n'she got up and (she) answered' — bu 'and' belgisi.\n'get up' = o'rnidan turmoq.",
        "speak": "3  She got up ............ answered the phone ..."
       },
       {
        "prompt": "4  ... ............ no one spoke on the other end.",
        "answer": "but",
-       "promptUz": "Javob berdi, LEKIN...",
+       "options": [
+        "but",
+        "and",
+        "so",
+        "because"
+       ],
        "whyUz": "BUT — QARAMA-QARShILIK.\nTelefonga javob berdi ↔ lekin hech kim gapirmadi —\nkutilmagan natija.\nspeak → SPOKE (noto'g'ri fe'l).\n'on the other end' = narigi tomonda (telefonda).",
        "speak": "4  ... ............ no one spoke on the other end."
       },
       {
        "prompt": "5  Sally hung up the phone ............ went back to bed.",
        "answer": "and",
-       "promptUz": "Yana ikki harakat ketma-ket",
+       "options": [
+        "and",
+        "but",
+        "so",
+        "because"
+       ],
        "whyUz": "AND — ketma-ketlik.\nEga yana TUShIB QOLGAN: 'Sally hung up ... and (she) went'.\n'hang up' = go'shakni qo'ymoq;  hang → HUNG.\n'go back' = qaytmoq.",
        "speak": "5  Sally hung up the phone ............ went back to bed."
       },
       {
        "prompt": "6  She couldn't sleep, ............ she went into the kitchen ...",
        "answer": "so",
-       "promptUz": "Uxlay olmadi → NATIJASI nima?",
+       "options": [
+        "so",
+        "and",
+        "but",
+        "because"
+       ],
        "whyUz": "SABAB (uxlay olmadi) → NATIJA (oshxonaga bordi) → SO.\nOldidan VERGUL bor.\n1-band bilan bir xil mantiq.\n'go INTO' — harakat predlogi (48-bet).",
        "speak": "6  She couldn't sleep, ............ she went into the kitchen ..."
       },
       {
        "prompt": "7  ... ............ made some tea.",
        "answer": "and",
-       "promptUz": "Yana ikki harakat ketma-ket",
+       "options": [
+        "and",
+        "but",
+        "so",
+        "because"
+       ],
        "whyUz": "AND — ketma-ketlik.\nEga TUShIB QOLGAN: 'she went into the kitchen and (she)\nmade some tea'.\n'make tea' = choy damlamoq (do EMAS, MAKE).",
        "speak": "7  ... ............ made some tea."
       },
       {
        "prompt": "8  She was still in the kitchen ............ the phone rang again.",
        "answer": "when",
-       "promptUz": "Telefon QACHON yana jiringladi?",
+       "options": [
+        "when",
+        "and",
+        "but",
+        "so"
+       ],
        "whyUz": "WHEN — VAQT.\n2-band bilan bir xil naqsh: davom etayotgan holat\n(oshxonada edi) + to'satdan bo'lgan voqea.\n'still' = hali ham.",
        "speak": "8  She was still in the kitchen ............ the phone rang again."
       },
       {
        "prompt": "9  Sally didn't want to answer it, ............ she did.",
        "answer": "but",
-       "promptUz": "Xohlamadi, LEKIN...",
+       "options": [
+        "but",
+        "and",
+        "so",
+        "because"
+       ],
        "whyUz": "BUT — QARAMA-QARShILIK.\nXohlamadi ↔ lekin qildi.\n'she DID' = she did answer it —\n'did' takrorlanmaslik uchun asosiy fe'l o'rniga turibdi.\n4-band bilan bir xil mantiq.",
        "speak": "9  Sally didn't want to answer it, ............ she did."
       },
       {
        "prompt": "10  She felt nervous ............ she was alone in the house.",
        "answer": "because",
-       "promptUz": "Nega asabiylashdi?",
+       "options": [
+        "because",
+        "and",
+        "but",
+        "so"
+       ],
        "whyUz": "BECAUSE — SABAB.\n'she was alone' — asabiylashishning sababi.\nRo'yxatdagi 'because' YAGONA marta shu yerda ishlatiladi.\n'feel nervous' — 'feel' dan keyin SIFAT (4-mashqning qoidasi).\n'alone' = yolg'iz.",
        "speak": "10  She felt nervous ............ she was alone in the house."
       }
@@ -4099,47 +4574,77 @@
      "book": "grammar",
      "bookPage": 49,
      "bookRef": "Grammar Book, 49-bet, 7-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Mike got up early ............ he wanted to study for his test.",
        "answer": "because",
-       "promptUz": "Erta turishning sababi nima?",
+       "options": [
+        "because",
+        "and",
+        "but",
+        "so"
+       ],
        "whyUz": "BECAUSE — SABAB.\n'he wanted to study' — erta turishning sababi.\n'study FOR a test' = testga tayyorlanmoq.",
        "speak": "1  Mike got up early ............ he wanted to study for his test."
       },
       {
        "prompt": "2  First, I went to the supermarket, ............ I went to the post office.",
        "answer": "then",
-       "promptUz": "'First' bor — demak keyin nima?",
+       "options": [
+        "then",
+        "and",
+        "but",
+        "because"
+       ],
        "whyUz": "THEN — ketma-ketlik.\n'First' so'zi bor → uning juftligi 'THEN'.\nCoursebook 77-betdagi ketma-ketlik so'zlari:\nfirst, then, after that, finally.",
        "speak": "2  First, I went to the supermarket, ............ I went to the post office."
       },
       {
        "prompt": "3  Sophie was hungry, ............ she made a sandwich.",
        "answer": "so",
-       "promptUz": "Och edi → NATIJASI nima?",
+       "options": [
+        "so",
+        "and",
+        "but",
+        "because"
+       ],
        "whyUz": "SO — NATIJA.\nSABAB (och edi) → NATIJA (buterbrod tayyorladi).\nOldidan VERGUL bor.\n'make a sandwich' — 'do' EMAS, MAKE.",
        "speak": "3  Sophie was hungry, ............ she made a sandwich."
       },
       {
        "prompt": "4  He turned off the lights ............ went to bed.",
        "answer": "and",
-       "promptUz": "Ikki harakat ketma-ket, ega BIR XIL",
+       "options": [
+        "and",
+        "but",
+        "because",
+        "so"
+       ],
        "whyUz": "AND — ketma-ketlik.\nDIQQAT: ikkinchi qismda ega ('he') TUShIB QOLGAN —\nbu 'and' ning aniq belgisi.\n'turn off' = o'chirmoq (aksi: turn on = yoqmoq).",
        "speak": "4  He turned off the lights ............ went to bed."
       },
       {
        "prompt": "5  I was happy ............ I heard the great news.",
        "answer": "when",
-       "promptUz": "QACHON xursand bo'ldi?",
+       "options": [
+        "when",
+        "and",
+        "but",
+        "because"
+       ],
        "whyUz": "WHEN — VAQT.\n'I heard the great news' — xursand bo'lgan PAYT.\nhear → HEARD (noto'g'ri fe'l).\n'the news' — SANALMAYDIGAN, doim 'the' bilan.",
        "speak": "5  I was happy ............ I heard the great news."
       },
       {
        "prompt": "6  David likes rock music, ............ his sister doesn't.",
        "answer": "but",
-       "promptUz": "Devidga yoqadi, opasiga esa...",
+       "options": [
+        "but",
+        "and",
+        "because",
+        "so"
+       ],
        "whyUz": "BUT — QARAMA-QARShILIK.\n'David LIKES' ↔ 'his sister DOESN'T' — teskari.\nOldidan VERGUL bor.\n'doesn't' = doesn't like rock music (qisqartirilgan).\nCoursebook 79-betdagi 12-mashqning 10-bandiga o'xshash.",
        "speak": "6  David likes rock music, ............ his sister doesn't."
       }
@@ -4164,61 +4669,101 @@
      "book": "grammar",
      "bookPage": 50,
      "bookRef": "Grammar Book, 50-bet, 8-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  The firefighter climbed ............ the ladder.",
        "answer": "up",
-       "promptUz": "Narvondan qaysi tomonga?",
+       "options": [
+        "up",
+        "over",
+        "along",
+        "towards"
+       ],
        "whyUz": "'climbed UP the ladder' = narvondan yuqoriga chiqdi.\nRasmda o't o'chiruvchi daraxtdagi mushukni qutqarish uchun\nyuqoriga chiqyapti.\nAksi: down.\nCoursebook 81-betdagi 21-mashqda ham 'climbed onto a ladder'.",
        "speak": "1  The firefighter climbed ............ the ladder."
       },
       {
        "prompt": "2  She is looking ............ the camera lens.",
        "answer": "through",
-       "promptUz": "Ob'ektiv ICHIDAN qarayapti",
+       "options": [
+        "through",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'looking THROUGH the lens' = ob'ektiv ichidan qarab turibdi.\nTHROUGH — biror narsaning IChIDAN.\nShunga o'xshash: look through a window, look through binoculars.\n'a lens' = ob'ektiv, linza.",
        "speak": "2  She is looking ............ the camera lens."
       },
       {
        "prompt": "3  He's putting a CD ............ the CD player.",
        "answer": "into",
-       "promptUz": "Pleyerning IChIGA solyapti",
+       "options": [
+        "into",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'putting a CD INTO the player' = diskni pleyerga solyapti.\nINTO — IChKARIGA harakat.\nAksi: out of.\n'a CD player' = disk pleyeri (Workbook 38-betda ham bor edi).",
        "speak": "3  He's putting a CD ............ the CD player."
       },
       {
        "prompt": "4  He is jumping ............ the hurdle.",
        "answer": "over",
-       "promptUz": "To'siq USTIDAN sakrayapti",
+       "options": [
+        "over",
+        "along",
+        "up",
+        "towards"
+       ],
        "whyUz": "'jumping OVER the hurdle' = to'siq ustidan sakrayapti.\nOVER — USTIDAN, tegmasdan.\n'a hurdle' = to'siq (yengil atletikada).\nAksi: under.",
        "speak": "4  He is jumping ............ the hurdle."
       },
       {
        "prompt": "5  They are driving ............ the road.",
        "answer": "along",
-       "promptUz": "Yo'l BO'YLAB (uzunasiga)",
+       "options": [
+        "along",
+        "over",
+        "up",
+        "towards"
+       ],
        "whyUz": "'driving ALONG the road' = yo'l bo'ylab ketyapti.\nALONG — UZUNASIGA harakat.\nDIQQAT: 'across the road' bo'lsa yo'lni KESIB o'tgan\nbo'lardi — rasmda esa yo'l bo'ylab ketishyapti.\nCoursebook 78-betda ham: 'He went ALONG the road'.",
        "speak": "5  They are driving ............ the road."
       },
       {
        "prompt": "6  He is running ............ the finishing line.",
        "answer": "towards",
-       "promptUz": "Marra chizig'i TOMON",
+       "options": [
+        "towards",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'running TOWARDS the finishing line' = marra tomon yuguryapti.\nTOWARDS — YO'NALISh (hali yetib bormagan).\n'the finishing line' = marra chizig'i.\nCoursebook 77-betda ham: 'ran TOWARDS the jeep'.",
        "speak": "6  He is running ............ the finishing line."
       },
       {
        "prompt": "7  The child is going ............ the slide.",
        "answer": "down",
-       "promptUz": "Sirg'anchiqdan qaysi tomonga?",
+       "options": [
+        "down",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'going DOWN the slide' = sirg'anchiqdan pastga tushyapti.\nDOWN — PASTGA.\n1-band bilan JUFT: up ↔ down.\n'a slide' = sirg'anchiq.",
        "speak": "7  The child is going ............ the slide."
       },
       {
        "prompt": "8  The man is going ............ the ladder.",
        "answer": "under",
-       "promptUz": "Narvon OSTIDAN o'tyapti",
+       "options": [
+        "under",
+        "over",
+        "along",
+        "up"
+       ],
        "whyUz": "'going UNDER the ladder' = narvon ostidan o'tyapti.\nUNDER — OSTIDAN.\n4-band bilan JUFT: over ↔ under.\nMADANIY ESLATMA: Britaniyada narvon ostidan o'tish\nomadsizlik keltiradi deb hisoblanadi —\nrasmda odamning yuzi xavotirli.",
        "speak": "8  The man is going ............ the ladder."
       }
@@ -4836,47 +5381,77 @@
      "book": "coursebook",
      "bookPage": 81,
      "bookRef": "Coursebook, 81-bet, 21-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "c  He ran ............ downstairs.",
        "answer": "nervously",
-       "promptUz": "Shovqin eshitgan odam qanday his qiladi?",
+       "options": [
+        "nervously",
+        "desperately",
+        "immediately",
+        "suddenly"
+       ],
        "whyUz": "AUDIODAN ANIQLANADI — bu yerda eng mos variant.\nAsos: shovqin eshitib pastga yuguryapti —\nhali nima bo'lganini bilmaydi, xavotirda →\nNERVOUSLY (asabiy holda).\n'nervous' + -ly → ravish.",
        "speak": "c  He ran ............ downstairs."
       },
       {
        "prompt": "d  He ............ rushed upstairs.",
        "answer": "immediately",
-       "promptUz": "Xavfni ko'rgach nima qildi?",
+       "options": [
+        "immediately",
+        "desperately",
+        "suddenly",
+        "carefully"
+       ],
        "whyUz": "AUDIODAN ANIQLANADI — bu yerda eng mos variant.\nAsos: 'rush' (otilmoq) allaqachon tezlikni bildiradi,\nshuning uchun 'quickly' takror bo'lardi.\n'IMMEDIATELY rushed' = darhol otildi — tabiiy birikma.\nDIQQAT: ravish bu yerda fe'ldan OLDIN turibdi.",
        "speak": "d  He ............ rushed upstairs."
       },
       {
        "prompt": "e  He closed the door ............ .",
        "answer": "tightly",
-       "promptUz": "Eshikni qanday yopish mumkin?",
+       "options": [
+        "tightly",
+        "desperately",
+        "immediately",
+        "suddenly"
+       ],
        "whyUz": "MA'NO JIHATDAN MAJBUR — boshqa ravish eshikka mos\nkelmaydi.\n'closed the door TIGHTLY' = eshikni mahkam yopdi\n(tutun kirmasligi uchun).\n77-betdagi hikoyada ham: 'closed the car windows TIGHTLY'.",
        "speak": "e  He closed the door ............ ."
       },
       {
        "prompt": "f  \"Help!\" he shouted ............ .",
        "answer": "desperately",
-       "promptUz": "Yordam so'rab qichqirgan odam qanday qichqiradi?",
+       "options": [
+        "desperately",
+        "immediately",
+        "suddenly",
+        "carefully"
+       ],
        "whyUz": "MA'NO JIHATDAN MAJBUR.\n'shouted DESPERATELY' = jon holatda qichqirdi.\n77-betdagi hikoyada ham: 'Claire screamed DESPERATELY'.\n'desperate' + -ly → ravish.",
        "speak": "f  \"Help!\" he shouted ............ ."
       },
       {
        "prompt": "g  He climbed ............ onto a ladder.",
        "answer": "quickly",
-       "promptUz": "Yong'inda narvonga qanday chiqiladi?",
+       "options": [
+        "quickly",
+        "desperately",
+        "immediately",
+        "suddenly"
+       ],
        "whyUz": "AUDIODAN ANIQLANADI — bu yerda eng mos variant.\nAsos: uy yonyapti — narvonga TEZ chiqish kerak.\n'a ladder' = narvon.\n'climb ONTO' = ustiga chiqmoq.",
        "speak": "g  He climbed ............ onto a ladder."
       },
       {
        "prompt": "h  He climbed ............ down.",
        "answer": "carefully",
-       "promptUz": "Narvondan tushayotganda ehtiyot bo'lish kerak",
+       "options": [
+        "carefully",
+        "desperately",
+        "immediately",
+        "suddenly"
+       ],
        "whyUz": "AUDIODAN ANIQLANADI — bu yerda eng mos variant.\nAsos: narvondan tushish XAVFLI, shuning uchun\nEHTIYOTKORLIK bilan.\n'careful' + -ly → carefully (78-betdagi namuna).\ng-band bilan JUFT: tez chiqdi, ehtiyot bilan tushdi.",
        "speak": "h  He climbed ............ down."
       }

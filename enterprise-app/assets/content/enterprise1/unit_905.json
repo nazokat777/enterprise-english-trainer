@@ -532,89 +532,149 @@
      "book": "coursebook",
      "bookPage": 69,
      "bookRef": "Coursebook, 69-bet, 5-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  ............ David and ...",
        "answer": "— (hech narsa)",
-       "promptUz": "Odam ismi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'David' — ATOQLI OT → artikl QO'YILMAYDI.",
        "speak": "1  ............ David and ..."
       },
       {
        "prompt": "2  ... and ............ Sandra go to ...",
        "answer": "— (hech narsa)",
-       "promptUz": "Odam ismi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Sandra' — ATOQLI OT → artikl QO'YILMAYDI.",
        "speak": "2  ... and ............ Sandra go to ..."
       },
       {
        "prompt": "3  ... go to ............ Brazil ...",
        "answer": "— (hech narsa)",
-       "promptUz": "Mamlakat nomi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Brazil' — MAMLAKAT nomi → artikl QO'YILMAYDI.\nISTISNO: the USA, the UK, the Netherlands.",
        "speak": "3  ... go to ............ Brazil ..."
       },
       {
        "prompt": "4  ... to write ............ article ...",
        "answer": "an",
-       "promptUz": "Birinchi marta aytilyapti; 'a' unli tovush",
+       "options": [
+        "an",
+        "a",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "Maqola BIRINCHI marta aytilyapti → A/AN.\n'article' /ˈɑːtɪkl/ — UNLI tovush bilan boshlanadi → AN.",
        "speak": "4  ... to write ............ article ..."
       },
       {
        "prompt": "5  ... about ............ Amazon rainforest.",
        "answer": "the",
-       "promptUz": "Dunyoda yagona, aniq joy",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'the Amazon rainforest' — ANIQ, yagona joy → THE.\nAmazon daryosi bilan bir xil qoida.",
        "speak": "5  ... about ............ Amazon rainforest."
       },
       {
        "prompt": "6  In the jungle, ............ Sandra feels nervous.",
        "answer": "— (hech narsa)",
-       "promptUz": "Yana odam ismi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Sandra' — ATOQLI OT → artikl QO'YILMAYDI.\nDIQQAT: 'the jungle' da esa THE bor (matnda berilgan).",
        "speak": "6  In the jungle, ............ Sandra feels nervous."
       },
       {
        "prompt": "7  Suddenly, she hears ............ Jivaro Indians.",
        "answer": "the",
-       "promptUz": "Qabila nomi",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'the Jivaro Indians' — QABILA nomi → THE SHART.\nQoidada aynan shu misol berilgan.",
        "speak": "7  Suddenly, she hears ............ Jivaro Indians."
       },
       {
        "prompt": "8  They run to ............ Amazon River ...",
        "answer": "the",
-       "promptUz": "Daryo nomi",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'the Amazon River' — DARYO nomi → THE SHART.\nQoidada aynan shu misol berilgan.",
        "speak": "8  They run to ............ Amazon River ..."
       },
       {
        "prompt": "9  ... and get in ............ canoe.",
        "answer": "a",
-       "promptUz": "Qayiq BIRINCHI marta aytilyapti",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "Qayiq BIRINCHI marta aytilyapti → A.\n'canoe' /kəˈnuː/ — 'k' undosh tovush → A ('an' EMAS).\n68-betda ham shunday: 'Look ... A canoe!'",
        "speak": "9  ... and get in ............ canoe."
       },
       {
        "prompt": "10  David starts paddling down ............ river ...",
        "answer": "the",
-       "promptUz": "Daryo ALLAQACHON aytilgan (8-band)",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "8-bandda 'the Amazon River' aytilgan → endi THE river.\nILGARI AYTILGAN narsa → THE.",
        "speak": "10  David starts paddling down ............ river ..."
       },
       {
        "prompt": "11  ... in ............ canoe.",
        "answer": "the",
-       "promptUz": "Qayiq ALLAQACHON aytilgan (9-band)",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "9-bandda 'A canoe' aytilgan → endi THE canoe.\nBu — A → THE o'zgarishining eng aniq misoli.",
        "speak": "11  ... in ............ canoe."
       },
       {
        "prompt": "12  Suddenly, they see ............ waterfall.",
        "answer": "a",
-       "promptUz": "Sharshara BIRINCHI marta aytilyapti",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "Sharshara BIRINCHI marta aytilyapti → A.\n'waterfall' — 'w' undosh tovush → A.\n68-betda ham: 'Oh, no! A waterfall!'",
        "speak": "12  Suddenly, they see ............ waterfall."
       }

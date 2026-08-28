@@ -290,26 +290,38 @@
      "book": "coursebook",
      "bookPage": 47,
      "bookRef": "Coursebook, 47-bet, 3-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  cold ≠ ............",
        "answer": "warm",
-       "promptUz": "Suv harorati haqida",
+       "options": [
+        "warm",
+        "big",
+        "short"
+       ],
        "whyUz": "cold (sovuq) ↔ warm (iliq).\nDIQQAT: 'hot' (issiq) ham aksi, lekin ro'yxatda 'warm' bor.",
        "speak": "1  cold ≠ ............"
       },
       {
        "prompt": "2  long ≠ ............",
        "answer": "short",
-       "promptUz": "Uzunlik haqida",
+       "options": [
+        "short",
+        "big",
+        "warm"
+       ],
        "whyUz": "long (uzun) ↔ short (kalta).\nMaxluqning bo'yni UZUN, dumi esa kalta bo'lardi.",
        "speak": "2  long ≠ ............"
       },
       {
        "prompt": "3  small ≠ ............",
        "answer": "big",
-       "promptUz": "Kattalik haqida",
+       "options": [
+        "big",
+        "short",
+        "warm"
+       ],
        "whyUz": "small (kichik) ↔ big (katta).\nMaxluqning boshi KICHIK, o'zi esa juda katta (huge).",
        "speak": "3  small ≠ ............"
       }

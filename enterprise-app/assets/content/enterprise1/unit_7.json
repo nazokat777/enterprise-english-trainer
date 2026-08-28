@@ -380,54 +380,89 @@
      "book": "coursebook",
      "bookPage": 50,
      "bookRef": "Coursebook, 50-bet, 8-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  to ............ the Christmas tree",
        "answer": "decorate",
-       "promptUz": "Archani bayramga tayyorlash fe'li",
+       "options": [
+        "decorate",
+        "miss",
+        "keep",
+        "make"
+       ],
        "whyUz": "'to decorate the Christmas tree' = archani bezamoq (B otkritka).\nGap: They are decorating the Christmas tree.",
        "speak": "1  to ............ the Christmas tree"
       },
       {
        "prompt": "2  We ............ you a lot.",
        "answer": "miss",
-       "promptUz": "Sog'inish fe'li",
+       "options": [
+        "miss",
+        "keep",
+        "make",
+        "season's"
+       ],
        "whyUz": "'We miss you a lot' = sizni juda sog'indik (B otkritka).\nKo'plik ega ('we') → fe'lga -s QO'SHILMAYDI.",
        "speak": "2  We ............ you a lot."
       },
       {
        "prompt": "3  to ............ the good weather",
        "answer": "enjoy",
-       "promptUz": "Zavqlanish fe'li",
+       "options": [
+        "enjoy",
+        "miss",
+        "keep",
+        "make"
+       ],
        "whyUz": "'to enjoy the good weather' = yaxshi ob-havodan zavqlanmoq (C otkritka).\nGap: Everyone is enjoying the good weather.",
        "speak": "3  to ............ the good weather"
       },
       {
        "prompt": "4  ............ greetings",
        "answer": "season's",
-       "promptUz": "Bayram tabrigi iborasi (egalik apostrofi bilan)",
+       "options": [
+        "season's",
+        "miss",
+        "keep",
+        "make"
+       ],
        "whyUz": "'Season's greetings' = bayram tabriklari (C otkritka).\nEgalik apostrofi: season + 's.",
        "speak": "4  ............ greetings"
       },
       {
        "prompt": "5  ............ jackets",
        "answer": "heavy",
-       "promptUz": "Qishki kurtkaning sifati",
+       "options": [
+        "heavy",
+        "miss",
+        "keep",
+        "make"
+       ],
        "whyUz": "'heavy jackets' = qalin kurtkalar (A otkritka).\n'heavy' bu yerda = qalin, issiq (og'ir emas).",
        "speak": "5  ............ jackets"
       },
       {
        "prompt": "6  to ............ a snowman",
        "answer": "make",
-       "promptUz": "Yasash fe'li",
+       "options": [
+        "make",
+        "miss",
+        "keep",
+        "season's"
+       ],
        "whyUz": "'to make a snowman' = qorbobo yasamoq (A otkritka).\nGap: They are making a snowman in the park.",
        "speak": "6  to ............ a snowman"
       },
       {
        "prompt": "7  to ............ them warm",
        "answer": "keep",
-       "promptUz": "Issiq saqlash fe'li",
+       "options": [
+        "keep",
+        "miss",
+        "make",
+        "season's"
+       ],
        "whyUz": "'to keep them warm' = ularni issiq saqlamoq (A otkritka).\nBu ibora 40-betdagi pingvin matnida ham bor edi.",
        "speak": "7  to ............ them warm"
       }
@@ -442,54 +477,89 @@
      "book": "coursebook",
      "bookPage": 50,
      "bookRef": "Coursebook, 50-bet, 9-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  ............ Warsaw",
        "answer": "in",
-       "promptUz": "Shahar oldidagi predlog",
+       "options": [
+        "in",
+        "on",
+        "at",
+        "of"
+       ],
        "whyUz": "Shahar, mamlakat, mahalla → IN.\n'It is cold IN Warsaw.'",
        "speak": "1  ............ Warsaw"
       },
       {
        "prompt": "2  ............ the park",
        "answer": "in",
-       "promptUz": "Bog' ichida",
+       "options": [
+        "in",
+        "on",
+        "at",
+        "of"
+       ],
        "whyUz": "Bog', o'rmon, xona → IN.\n'They are making a snowman IN the park.'",
        "speak": "2  ............ the park"
       },
       {
        "prompt": "3  ............ the moment",
        "answer": "at",
-       "promptUz": "Aniq paytni bildiruvchi ibora",
+       "options": [
+        "at",
+        "on",
+        "in",
+        "of"
+       ],
        "whyUz": "'AT the moment' = ayni paytda — o'zgarmas ibora.",
        "speak": "3  ............ the moment"
       },
       {
        "prompt": "4  Greetings ............ London",
        "answer": "from",
-       "promptUz": "Qayerdan kelayotganini bildiradi",
+       "options": [
+        "from",
+        "on",
+        "in",
+        "at"
+       ],
        "whyUz": "'Greetings FROM ...' = ...dan salom. Kelib chiqish nuqtasi → FROM.",
        "speak": "4  Greetings ............ London"
       },
       {
        "prompt": "5  ............ their pyjamas",
        "answer": "in",
-       "promptUz": "Kiyim kiygan holat",
+       "options": [
+        "in",
+        "on",
+        "at",
+        "of"
+       ],
        "whyUz": "'be IN + kiyim' = kiygan holda bo'lmoq.\n'The children are IN their pyjamas.'",
        "speak": "5  ............ their pyjamas"
       },
       {
        "prompt": "6  ............ the beach",
        "answer": "on",
-       "promptUz": "Plyaj yuzasi",
+       "options": [
+        "on",
+        "in",
+        "at",
+        "of"
+       ],
        "whyUz": "'ON the beach' — plyaj yuzasida turibdi → ON.\nDIQQAT: 'in the beach' XATO.",
        "speak": "6  ............ the beach"
       },
       {
        "prompt": "7  Lots ............ love",
        "answer": "of",
-       "promptUz": "Miqdor iborasidagi predlog",
+       "options": [
+        "of",
+        "on",
+        "in",
+        "at"
+       ],
        "whyUz": "'Lots OF love' = katta mehr bilan.\n'lots of', 'a lot of' — miqdor iboralari doim OF bilan.",
        "speak": "7  Lots ............ love"
       }
@@ -710,42 +780,72 @@
      "book": "coursebook",
      "bookPage": 52,
      "bookRef": "Coursebook, 52-bet, 18a-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "a) ............ (Paul — bo'yin qismiga ishora)",
        "answer": "tie",
-       "promptUz": "Kostyum bilan bo'yinga taqiladigan narsa",
+       "options": [
+        "tie",
+        "hat",
+        "shorts",
+        "trousers"
+       ],
        "whyUz": "Pol kostyum va ko'ylak kiygan; bo'yniga GALSTUK taqqan.\n'a tie' /taɪ/ = galstuk. 'a suit and tie' — rasmiy kiyim."
       },
       {
        "prompt": "b) ............ (Steve — oyoqdan yuqoriroq qismiga ishora)",
        "answer": "shorts",
-       "promptUz": "Katakli, tizzagacha kiyim (doim ko'plikda)",
+       "options": [
+        "shorts",
+        "hat",
+        "tie",
+        "trousers"
+       ],
        "whyUz": "Stiv qora jemper va KATAKLI KALTA SHIM kiygan.\n'shorts' — DOIM ko'plikda."
       },
       {
        "prompt": "c) ............ (Lucy — bosh qismiga ishora)",
        "answer": "hat",
-       "promptUz": "Keng chetli bosh kiyim",
+       "options": [
+        "hat",
+        "shorts",
+        "tie",
+        "trousers"
+       ],
        "whyUz": "Lyusi keng chetli SHLYAPA kiygan.\n'a hat' — chetli; 'a cap' — kozirekli (Jenni kiygan)."
       },
       {
        "prompt": "d) ............ (John — pastki kiyimga ishora)",
        "answer": "trousers",
-       "promptUz": "Charm materialdan, uzun (doim ko'plikda)",
+       "options": [
+        "trousers",
+        "hat",
+        "shorts",
+        "tie"
+       ],
        "whyUz": "Jon charm kurtka va charm SHIM kiygan.\n'trousers' — DOIM ko'plikda (britancha; amerikacha 'pants')."
       },
       {
        "prompt": "e) ............ (Diana — ustki oq kiyimga ishora)",
        "answer": "blouse",
-       "promptUz": "Ayollar uchun yengil ustki kiyim",
+       "options": [
+        "blouse",
+        "hat",
+        "shorts",
+        "tie"
+       ],
        "whyUz": "Diana oq BLUZKA va uning ustidan kurtka kiygan.\n'a blouse' /blaʊz/ — faqat ayollar kiyimi."
       },
       {
        "prompt": "f) ............ (Diana — pushti pastki kiyimga ishora)",
        "answer": "skirt",
-       "promptUz": "Ayollar uchun pastki kiyim (pushti rangda)",
+       "options": [
+        "skirt",
+        "hat",
+        "shorts",
+        "tie"
+       ],
        "whyUz": "Diana pushti YUBKA kiygan, ostidan qora paypoq-shim (tights).\n'a skirt' — faqat pastki qism; 'a dress' — yaxlit ko'ylak."
       }
      ]
@@ -4148,7 +4248,16 @@
      "kind": "study",
      "tasks": [
       {
-       "en": ""
+       "en": "Come rain or shine.",
+       "uz": "So'zma-so'z: Yomg'ir kelsin yoki quyosh chiqsin.\n\nMA'NOSI: Ob-havo qanday bo'lishidan qat'i nazar;\nhar qanday sharoitda; nima bo'lsa ham.\n\nISHLATILISHI: va'da yoki qat'iyatni bildiradi.\n  'I'll be there, come rain or shine.'\n  = Nima bo'lsa ham, men u yerda bo'laman.\n\nO'ZBEKCHA MUQOBILI: 'Har qanday holatda ham',\n'Osmon uzilib tushsa ham'.\n\nDIQQAT: 7-UNIT SARLAVHASI aynan shu maqol —\n'Come Rain or Shine'."
+      },
+      {
+       "en": "March comes in like a lion and goes out like a lamb.",
+       "uz": "So'zma-so'z: Mart sherdek kirib keladi va qo'zichoqdek chiqib ketadi.\n\nMA'NOSI: Mart oyining BOSHIDA ob-havo qattiq va shamolli\nbo'ladi (sher kabi yovvoyi), OXIRIDA esa iliq va yumshoq\nbo'ladi (qo'zichoq kabi muloyim).\n\nBu — Britaniyaning bahor ob-havosi haqidagi eski maqol.\nMart — qish va bahor chegarasi.\n\nLUG'AT:\n  a lamb /læm/ = qo'zichoq ('b' O'QILMAYDI)\n  come in  = kirib kelmoq\n  go out   = chiqib ketmoq\n  like     = ...kabi, ...dek\n\nO'ZBEKCHA O'XSHASHI: 'Mart — ola-quroq'."
+      },
+      {
+       "en": "Clothes make the man.",
+       "uz": "So'zma-so'z: Kiyim odamni yasaydi.\n\nMA'NOSI: Odam qanday kiyinsa, shunday baholanadi;\nkiyim odamning taassurotini belgilaydi.\n\nO'ZBEKCHA MUQOBILI:\n  'Ot ko'rki — yol, odam ko'rki — kiyim'\n  'Kishini kiyimiga qarab kutib olishadi'\n\nDIQQAT — GRAMMATIKA:\n  'Clothes' — DOIM ko'plik → fe'l ham ko'plikda: MAKE.\n  'Clothes makes the man' XATO.\n  'a clothe' degan so'z YO'Q.\n\nQarama-qarshi fikr ham bor:\n  'Don't judge a book by its cover.'\n  = Kitobni muqovasiga qarab baholama."
       }
      ]
     }
@@ -4986,40 +5095,55 @@
      "book": "grammar",
      "bookPage": 33,
      "bookRef": "Grammar Book, 33-bet, 10-mashq (Prepositions of Time)",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Let's go to the cinema ............ Sunday.",
        "answer": "on",
-       "promptUz": "'Sunday' — hafta kuni",
+       "options": [
+        "on",
+        "in"
+       ],
        "whyUz": "Hafta kunlari oldida ON.\n'Let's ...' = ...aylik (taklif).",
        "speak": "1  Let's go to the cinema ............ Sunday."
       },
       {
        "prompt": "2  I start school ............ September.",
        "answer": "in",
-       "promptUz": "'September' — oy nomi",
+       "options": [
+        "in",
+        "on"
+       ],
        "whyUz": "Oy nomlari oldida IN.\n'to start school' = o'qishni boshlamoq.",
        "speak": "2  I start school ............ September."
       },
       {
        "prompt": "3  She was born ............ 19th May, 1974.",
        "answer": "on",
-       "promptUz": "To'liq sana berilgan",
+       "options": [
+        "on",
+        "in"
+       ],
        "whyUz": "ANIQ SANA oldida ON: on 19th May.\nDIQQAT: faqat yil bo'lsa IN bo'lardi: 'in 1974'.\nSana + oy bo'lsa — ON.\n'to be born' = tug'ilmoq.",
        "speak": "3  She was born ............ 19th May, 1974."
       },
       {
        "prompt": "4  Kevin goes to work ............ the morning.",
        "answer": "in",
-       "promptUz": "Kun qismi (aniq kunsiz)",
+       "options": [
+        "in",
+        "on"
+       ],
        "whyUz": "'IN the morning/afternoon/evening' — umumiy kun qismi.\nISTISNO: 'AT night' (the yo'q, at bilan).",
        "speak": "4  Kevin goes to work ............ the morning."
       },
       {
        "prompt": "5  They play tennis ............ Wednesday evenings.",
        "answer": "on",
-       "promptUz": "Hafta kuni aytilgan",
+       "options": [
+        "on",
+        "in"
+       ],
        "whyUz": "Hafta KUNI aytilgani uchun ON — 'in the evening' bo'lsa ham,\nkun qo'shilsa ON g'olib chiqadi: ON Wednesday evenings.\nKo'plik ('evenings') — har chorshanba takrorlanishini bildiradi.",
        "speak": "5  They play tennis ............ Wednesday evenings."
       }

@@ -746,65 +746,125 @@
      "book": "coursebook",
      "bookPage": 41,
      "bookRef": "Coursebook, 41-bet, 6-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  ............ animals",
        "answer": "intelligent",
+       "options": [
+        "intelligent",
+        "lay",
+        "short",
+        "keep"
+       ],
        "whyUz": "'intelligent animals' = aqlli hayvonlar.\nGap: Dolphins are very intelligent animals.",
        "speak": "1  ............ animals"
       },
       {
        "prompt": "2  ............ feathers",
        "answer": "thick",
+       "options": [
+        "thick",
+        "lay",
+        "short",
+        "intelligent"
+       ],
        "whyUz": "'thick feathers' = qalin patlar.\nGap: Penguins have got thick feathers.",
        "speak": "2  ............ feathers"
       },
       {
        "prompt": "3  a ............ tail",
        "answer": "short",
+       "options": [
+        "short",
+        "lay",
+        "intelligent",
+        "keep"
+       ],
        "whyUz": "'a short tail' = kalta dum.\nGap: Penguins have got a short tail.",
        "speak": "3  a ............ tail"
       },
       {
        "prompt": "4  a ............ smile",
        "answer": "big",
+       "options": [
+        "big",
+        "lay",
+        "short",
+        "intelligent"
+       ],
        "whyUz": "'a big smile' = katta tabassum.\nGap: Dolphins have got a big smile.",
        "speak": "4  a ............ smile"
       },
       {
        "prompt": "5  in ............ seas",
        "answer": "warm",
+       "options": [
+        "warm",
+        "lay",
+        "short",
+        "intelligent"
+       ],
        "whyUz": "'in warm seas' = iliq dengizlarda.\nGap: Dolphins live in warm seas.",
        "speak": "5  in ............ seas"
       },
       {
        "prompt": "6  ............ of the world",
        "answer": "parts",
+       "options": [
+        "parts",
+        "lay",
+        "short",
+        "intelligent"
+       ],
        "whyUz": "'parts of the world' = dunyo qismlari.\nGap: Dolphins live in many different parts of the world.",
        "speak": "6  ............ of the world"
       },
       {
        "prompt": "7  to ............ them warm",
        "answer": "keep",
+       "options": [
+        "keep",
+        "lay",
+        "short",
+        "intelligent"
+       ],
        "whyUz": "'to keep them warm' = ularni issiq saqlash uchun.\nGap: Penguins have got thick feathers to keep them warm.",
        "speak": "7  to ............ them warm"
       },
       {
        "prompt": "8  to ............ funny",
        "answer": "look",
+       "options": [
+        "look",
+        "lay",
+        "short",
+        "intelligent"
+       ],
        "whyUz": "'to look funny' = kulgili ko'rinmoq.\nGap: Penguins look funny when they walk.",
        "speak": "8  to ............ funny"
       },
       {
        "prompt": "9  to ............ eggs",
        "answer": "lay",
+       "options": [
+        "lay",
+        "short",
+        "intelligent",
+        "keep"
+       ],
        "whyUz": "'to lay eggs' = tuxum qo'ymoq.\nGap: Penguins lay eggs.",
        "speak": "9  to ............ eggs"
       },
       {
        "prompt": "10  to ............ babies",
        "answer": "have",
+       "options": [
+        "have",
+        "lay",
+        "short",
+        "intelligent"
+       ],
        "whyUz": "'to have babies' = bola tug'moq.\nGap: Dolphins have babies and feed them on milk.",
        "speak": "10  to ............ babies"
       }
@@ -1151,75 +1211,125 @@
      "book": "workbook",
      "bookPage": 24,
      "bookRef": "Workbook, 24-bet, 2-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Birds and reptiles both lay ............ .",
        "answer": "eggs",
-       "promptUz": "'lay' fe'li bilan keladigan so'z",
+       "options": [
+        "eggs",
+        "warm",
+        "seas",
+        "play"
+       ],
        "whyUz": "'lay eggs' = tuxum qo'ymoq — o'zgarmas birikma (Coursebook 40-bet).\n'both' = ikkalasi ham.",
        "speak": "1  Birds and reptiles both lay ............ ."
       },
       {
        "prompt": "2  Grey seals have got thick fur to keep them ............ .",
        "answer": "warm",
-       "promptUz": "'keep them ...' — issiqlik haqida",
+       "options": [
+        "warm",
+        "seas",
+        "play",
+        "claws"
+       ],
        "whyUz": "'keep somebody warm' = issiq saqlamoq (Coursebook 40-betdagi pingvin matni).\n'a seal' = tyulen.",
        "speak": "2  Grey seals have got thick fur to keep them ............ ."
       },
       {
        "prompt": "3  Mammals ............ babies and feed their young on milk.",
        "answer": "have",
-       "promptUz": "Fe'l kerak — bola tug'moq",
+       "options": [
+        "have",
+        "warm",
+        "seas",
+        "play"
+       ],
        "whyUz": "'have babies' = bola tug'moq. Ko'plik ega → HAVE ('has' XATO).",
        "speak": "3  Mammals ............ babies and feed their young on milk."
       },
       {
        "prompt": "4  Sharks live in warm ............ .",
        "answer": "seas",
-       "promptUz": "Suv havzasi (ko'plikda)",
+       "options": [
+        "seas",
+        "warm",
+        "play",
+        "claws"
+       ],
        "whyUz": "'in warm seas' = iliq dengizlarda (Coursebook 40-betdagi delfin matni).\n'sea' → ko'plikda 'seas'.",
        "speak": "4  Sharks live in warm ............ ."
       },
       {
        "prompt": "5  Zebras have got ............ and white stripes.",
        "answer": "black",
-       "promptUz": "'white' bilan juft rang",
+       "options": [
+        "black",
+        "warm",
+        "seas",
+        "play"
+       ],
        "whyUz": "Zebra QORA va oq chiziqli (Coursebook 44-betdagi D rasm).\n'black and white' — tartib o'zgarmaydi.",
        "speak": "5  Zebras have got ............ and white stripes."
       },
       {
        "prompt": "6  Dolphins can easily learn how to ............ games.",
        "answer": "play",
-       "promptUz": "'games' bilan keladigan fe'l",
+       "options": [
+        "play",
+        "warm",
+        "seas",
+        "claws"
+       ],
        "whyUz": "'play games' = o'yin o'ynamoq (Coursebook 40-betdagi delfin matni).\n'how to' dan keyin fe'l ASOS shaklida.",
        "speak": "6  Dolphins can easily learn how to ............ games."
       },
       {
        "prompt": "7  Penguins have got thick ............ .",
        "answer": "feathers",
-       "promptUz": "Qushni qoplab turadigan narsa",
+       "options": [
+        "feathers",
+        "warm",
+        "seas",
+        "play"
+       ],
        "whyUz": "'thick feathers' = qalin patlar (Coursebook 40-betdagi pingvin matni).",
        "speak": "7  Penguins have got thick ............ ."
       },
       {
        "prompt": "8  Koalas have got very sharp ............ .",
        "answer": "claws",
-       "promptUz": "Daraxtga chiqish uchun kerak",
+       "options": [
+        "claws",
+        "warm",
+        "seas",
+        "play"
+       ],
        "whyUz": "'sharp claws' = o'tkir tirnoqlar (Coursebook 42-betdagi koala matni).",
        "speak": "8  Koalas have got very sharp ............ ."
       },
       {
        "prompt": "9  Penguins look ............ when they walk.",
        "answer": "funny",
-       "promptUz": "'look' dan keyin SIFAT keladi",
+       "options": [
+        "funny",
+        "warm",
+        "seas",
+        "play"
+       ],
        "whyUz": "'look funny' = kulgili ko'rinmoq (Coursebook 40-betdagi pingvin matni).",
        "speak": "9  Penguins look ............ when they walk."
       },
       {
        "prompt": "10  Dolphins have got a big ............ .",
        "answer": "smile",
-       "promptUz": "'a big ...' — yuzdagi ifoda",
+       "options": [
+        "smile",
+        "warm",
+        "seas",
+        "play"
+       ],
        "whyUz": "'a big smile' = katta tabassum (Coursebook 40-betdagi delfin matni).",
        "speak": "10  Dolphins have got a big ............ ."
       }
@@ -1234,77 +1344,127 @@
      "book": "workbook",
      "bookPage": 24,
      "bookRef": "Workbook, 24-bet, 3-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Fish ............ in water.",
        "answer": "live",
-       "promptUz": "Yashash fe'li",
+       "options": [
+        "live",
+        "kittens",
+        "feed",
+        "friendly"
+       ],
        "whyUz": "'live IN water'. 'fish' ko'plikda ham 'fish' → fe'lga -s QO'SHILMAYDI.",
        "speak": "1  Fish ............ in water."
       },
       {
        "prompt": "2  Kangaroos have got ............ back legs.",
        "answer": "strong",
-       "promptUz": "Sakrash uchun kerak bo'lgan sifat",
+       "options": [
+        "strong",
+        "kittens",
+        "feed",
+        "friendly"
+       ],
        "whyUz": "'strong back legs' = kuchli orqa oyoqlar (Coursebook 43-betdagi kenguru matni).",
        "speak": "2  Kangaroos have got ............ back legs."
       },
       {
        "prompt": "3  Penguins ............ about twenty kilos.",
        "answer": "weigh",
-       "promptUz": "Kilogramm bilan keladigan fe'l",
+       "options": [
+        "weigh",
+        "kittens",
+        "feed",
+        "friendly"
+       ],
        "whyUz": "'weigh about twenty kilos' (Coursebook 40-bet).\nDIQQAT: 'are weigh' XATO — 'be' ishlatilmaydi.",
        "speak": "3  Penguins ............ about twenty kilos."
       },
       {
        "prompt": "4  Mammals ............ their young on milk.",
        "answer": "feed",
-       "promptUz": "'on milk' bilan keladigan fe'l",
+       "options": [
+        "feed",
+        "kittens",
+        "friendly",
+        "live"
+       ],
        "whyUz": "'feed somebody ON milk' = sut bilan boqmoq.\n'young' bu yerda OT — hayvonning bolasi.",
        "speak": "4  Mammals ............ their young on milk."
       },
       {
        "prompt": "5  Parrots can learn how to talk ............ .",
        "answer": "easily",
-       "promptUz": "Ravish — 'oson'",
+       "options": [
+        "easily",
+        "kittens",
+        "feed",
+        "friendly"
+       ],
        "whyUz": "'easily' = osonlik bilan (Coursebook 40-bet: 'can easily learn').\nBu RAVISH, chunki fe'lni ('talk') tavsiflaydi.",
        "speak": "5  Parrots can learn how to talk ............ ."
       },
       {
        "prompt": "6  Dogs are ............ to people.",
        "answer": "friendly",
-       "promptUz": "'to people' bilan keladigan sifat",
+       "options": [
+        "friendly",
+        "kittens",
+        "feed",
+        "live"
+       ],
        "whyUz": "'friendly TO somebody' = kimgadir do'stona (Coursebook 40-bet).\n'are' dan keyin SIFAT keladi.",
        "speak": "6  Dogs are ............ to people."
       },
       {
        "prompt": "7  Dolphins live in small ............ .",
        "answer": "groups",
-       "promptUz": "Birga yashash birligi",
+       "options": [
+        "groups",
+        "kittens",
+        "feed",
+        "friendly"
+       ],
        "whyUz": "'live in small groups' = kichik guruhlarda (Coursebook 40-bet).",
        "speak": "7  Dolphins live in small ............ ."
       },
       {
        "prompt": "8  Snakes live in many different parts of the ............ .",
        "answer": "world",
-       "promptUz": "'parts of the ...' iborasi",
+       "options": [
+        "world",
+        "kittens",
+        "feed",
+        "friendly"
+       ],
        "whyUz": "'parts of the world' = dunyo qismlari (Coursebook 40-bet).\nDIQQAT: 'the' shart — the world.",
        "speak": "8  Snakes live in many different parts of the ............ ."
       },
       {
-       "prompt": "9  Cats have ............ and dogs have ............ .  [1-bo'shliq]",
+       "prompt": "9  Cats have ............ and dogs have ............ .",
        "answer": "kittens",
-       "promptUz": "Ikki hayvonning bolalari (Coursebook 42-bet)",
+       "options": [
+        "kittens",
+        "feed",
+        "friendly",
+        "live"
+       ],
        "whyUz": "Mushukning bolasi — KITTENS, itning bolasi — PUPPIES.\nHar birining alohida so'zi bor (Coursebook 42-betdagi 10-mashq).",
-       "speak": "9  Cats have ............ and dogs have ............ .  [1-bo'shliq]"
+       "speak": "9  Cats have ............ and dogs have ............ ."
       },
       {
-       "prompt": "9  Cats have ............ and dogs have ............ .  [2-bo'shliq]",
+       "prompt": "9  Cats have ............ and dogs have ............ .",
        "answer": "puppies",
-       "promptUz": "Ikki hayvonning bolalari (Coursebook 42-bet)",
+       "options": [
+        "puppies",
+        "kittens",
+        "feed",
+        "friendly"
+       ],
        "whyUz": "Mushukning bolasi — KITTENS, itning bolasi — PUPPIES.\nHar birining alohida so'zi bor (Coursebook 42-betdagi 10-mashq).",
-       "speak": "9  Cats have ............ and dogs have ............ .  [2-bo'shliq]"
+       "speak": "9  Cats have ............ and dogs have ............ ."
       }
      ]
     }
@@ -2655,42 +2815,72 @@
      "book": "coursebook",
      "bookPage": 44,
      "bookRef": "Coursebook, 44-bet, 15-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "SINGULAR: ............  — PLURAL: geese",
        "answer": "goose",
-       "promptUz": "Suvda suzadigan katta oq uy qushi",
+       "options": [
+        "goose",
+        "deer",
+        "fish",
+        "mice"
+       ],
        "whyUz": "goose → geese. O'zakdagi 'oo' → 'ee' ga o'zgaradi.\nTalaffuz: goose /ɡuːs/, geese /ɡiːs/."
       },
       {
        "prompt": "SINGULAR: mouse — PLURAL: ............",
        "answer": "mice",
-       "promptUz": "Ro'yxatdan 'mouse' ning ko'pligi",
+       "options": [
+        "mice",
+        "deer",
+        "fish",
+        "goose"
+       ],
        "whyUz": "mouse → mice. 'mouses' XATO.\nTalaffuz: mouse /maʊs/, mice /maɪs/.\nDIQQAT: kompyuter sichqonchasi uchun 'mouses' ham ishlatiladi."
       },
       {
        "prompt": "SINGULAR: ox — PLURAL: ............",
        "answer": "oxen",
-       "promptUz": "Ro'yxatdan 'ox' ning ko'pligi",
+       "options": [
+        "oxen",
+        "deer",
+        "fish",
+        "goose"
+       ],
        "whyUz": "ox → oxen. -EN qo'shimchasi bilan ko'plik — juda kam uchraydi.\n'children' ham shu turdan."
       },
       {
        "prompt": "SINGULAR: ............  — PLURAL: sheep",
        "answer": "sheep",
-       "promptUz": "Jun beradigan uy hayvoni",
+       "options": [
+        "sheep",
+        "deer",
+        "fish",
+        "goose"
+       ],
        "whyUz": "sheep → sheep. Shakl O'ZGARMAYDI.\n'One sheep, ten sheep' — bir xil."
       },
       {
        "prompt": "SINGULAR: deer — PLURAL: ............",
        "answer": "deer",
-       "promptUz": "Shakli o'zgarmaydi",
+       "options": [
+        "deer",
+        "fish",
+        "goose",
+        "mice"
+       ],
        "whyUz": "deer → deer. 'deers' XATO. 43-betda yo'lbars 'deer' yeydi."
       },
       {
        "prompt": "SINGULAR: ............  — PLURAL: fish",
        "answer": "fish",
-       "promptUz": "Suvda yashaydigan, suzgichli jonzot",
+       "options": [
+        "fish",
+        "deer",
+        "goose",
+        "mice"
+       ],
        "whyUz": "fish → fish. Shakl o'zgarmaydi.\nDIQQAT: 'fishes' — turli TURLARI haqida gapirilganda ishlatiladi."
       }
      ]
@@ -3057,54 +3247,89 @@
      "book": "workbook",
      "bookPage": 26,
      "bookRef": "Workbook, 26-bet, 9-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  ............ is this animal?",
        "answer": "What",
-       "promptUz": "Javob — hayvon nomi (d)",
+       "options": [
+        "What",
+        "How much",
+        "Where",
+        "How long"
+       ],
        "whyUz": "Hayvon nomi so'ralmoqda → WHAT.\nJavob: d — A White Shark (oq akula).",
        "speak": "1  ............ is this animal?"
       },
       {
        "prompt": "2  ............ does it live?",
        "answer": "Where",
-       "promptUz": "Javob — joy (f)",
+       "options": [
+        "Where",
+        "How much",
+        "What",
+        "How long"
+       ],
        "whyUz": "Joy so'ralmoqda → WHERE.\nJavob: f — In tropical and warm seas (tropik va iliq dengizlarda).",
        "speak": "2  ............ does it live?"
       },
       {
        "prompt": "3  ............ does it eat?",
        "answer": "What",
-       "promptUz": "Javob — ovqat (a)",
+       "options": [
+        "What",
+        "How much",
+        "Where",
+        "How long"
+       ],
        "whyUz": "Ovqat so'ralmoqda → WHAT.\nJavob: a — All kinds of fish (har xil baliqlar).",
        "speak": "3  ............ does it eat?"
       },
       {
        "prompt": "4  ............ has it got?",
        "answer": "What",
-       "promptUz": "Javob — tana qismlari (b)",
+       "options": [
+        "What",
+        "How much",
+        "Where",
+        "How long"
+       ],
        "whyUz": "Tana qismlari so'ralmoqda → WHAT.\n'has it got' bilan 'does' KERAK EMAS.\nJavob: b — Sharp teeth and pointed fins (o'tkir tishlar va uchli suzgichlar).",
        "speak": "4  ............ has it got?"
       },
       {
        "prompt": "5  ............ does it weigh?",
        "answer": "How much",
-       "promptUz": "Javob — kilogramm (c)",
+       "options": [
+        "How much",
+        "Where",
+        "What",
+        "How long"
+       ],
        "whyUz": "Og'irlik so'ralmoqda → HOW MUCH.\nJavob: c — 1200 kilos.",
        "speak": "5  ............ does it weigh?"
       },
       {
        "prompt": "6  ............ long is it?",
        "answer": "How",
-       "promptUz": "'long' allaqachon yozilgan",
+       "options": [
+        "How",
+        "How much",
+        "Where",
+        "What"
+       ],
        "whyUz": "'long' allaqachon bor → faqat HOW qo'shiladi: How long IS it? (uzunlik).\nJavob: g — 3-6 metres.",
        "speak": "6  ............ long is it?"
       },
       {
        "prompt": "7  ............ does it live for?",
        "answer": "How long",
-       "promptUz": "Javob — yil (e)",
+       "options": [
+        "How long",
+        "How much",
+        "Where",
+        "What"
+       ],
        "whyUz": "Umr so'ralmoqda → HOW LONG.\n'live FOR' — 'for' davomiylikni bildiradi.\nJavob: e — 30-40 years.",
        "speak": "7  ............ does it live for?"
       }
@@ -4601,47 +4826,77 @@
      "book": "coursebook",
      "bookPage": 42,
      "bookRef": "Coursebook, 42-bet, 10-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "3  (katta qizil-qora tovuq)",
        "answer": "hen",
-       "promptUz": "Tuxum qo'yadigan urg'ochi uy qushi",
+       "options": [
+        "hen",
+        "cat",
+        "chicks",
+        "dog"
+       ],
        "whyUz": "Rasmda katta urg'ochi uy qushi — 'a hen'. Erkagi 'a rooster' (41-betda ko'rgansiz).",
        "speak": "3  (katta qizil-qora tovuq)"
       },
       {
        "prompt": "4  (uchta sariq mayda qush bolasi)",
        "answer": "chicks",
-       "promptUz": "Tovuqning bolalari",
+       "options": [
+        "chicks",
+        "cat",
+        "dog",
+        "ducklings"
+       ],
        "whyUz": "'chicks' = jo'jalar. Doim ko'plikda ishlatiladi, chunki bir nechta bo'ladi.",
        "speak": "4  (uchta sariq mayda qush bolasi)"
       },
       {
        "prompt": "5  (katta sariq to'rt oyoqli uy hayvoni)",
        "answer": "dog",
-       "promptUz": "Uyni qo'riqlaydigan hayvon",
+       "options": [
+        "dog",
+        "cat",
+        "chicks",
+        "ducklings"
+       ],
        "whyUz": "Rasmda katta it — 'a dog'.",
        "speak": "5  (katta sariq to'rt oyoqli uy hayvoni)"
       },
       {
        "prompt": "6  (ikkita kichkina oq bola hayvon)",
        "answer": "puppies",
-       "promptUz": "Itning bolalari",
+       "options": [
+        "puppies",
+        "cat",
+        "chicks",
+        "dog"
+       ],
        "whyUz": "'puppies' = kuchukchalar. Birligi 'a puppy' (y → ies).",
        "speak": "6  (ikkita kichkina oq bola hayvon)"
       },
       {
        "prompt": "7  (yashil boshli, keng tumshuqli suv qushi)",
        "answer": "duck",
-       "promptUz": "Suvda suzadigan uy qushi",
+       "options": [
+        "duck",
+        "cat",
+        "chicks",
+        "dog"
+       ],
        "whyUz": "Rasmda o'rdak — 'a duck'. Keng, yassi tumshug'i bor.",
        "speak": "7  (yashil boshli, keng tumshuqli suv qushi)"
       },
       {
        "prompt": "8  (uchta sariq mayda suv qushi bolasi)",
        "answer": "ducklings",
-       "promptUz": "O'rdakning bolalari",
+       "options": [
+        "ducklings",
+        "cat",
+        "chicks",
+        "dog"
+       ],
        "whyUz": "'ducklings' = o'rdakchalar. 'duck' + -ling (kichraytiruvchi qo'shimcha).",
        "speak": "8  (uchta sariq mayda suv qushi bolasi)"
       }
@@ -5187,7 +5442,20 @@
      "kind": "study",
      "tasks": [
       {
-       "en": ""
+       "en": "Birds of a feather flock together.",
+       "uz": "So'zma-so'z: Bir xil patli qushlar birga to'planadi.\n\nMA'NOSI: O'xshash odamlar bir-birini topadi va birga bo'ladi.\n\nO'ZBEKCHA MUQOBILI: 'Qush qushi bilan, quloq quloq bilan.'\n\nDIQQAT: 6-UNIT SARLAVHASI shu maqoldan olingan —\n'Birds of a Feather...'\n\nLUG'AT: to flock = to'planmoq, gala bo'lmoq"
+      },
+      {
+       "en": "While the cat's away, the mice will play.",
+       "uz": "So'zma-so'z: Mushuk yo'q ekan, sichqonlar o'ynaydi.\n\nMA'NOSI: Rahbar (yoki nazorat qiluvchi) yo'q bo'lganda,\nodamlar o'zlari xohlagan ishni qiladi.\n\nO'ZBEKCHA MUQOBILI: 'Mushuk yo'q uyda sichqon bayram qiladi.'\n\nDIQQAT: 'mice' — 44-betdagi noto'g'ri ko'plik!\n'while' = ...ekan, ...paytda"
+      },
+      {
+       "en": "Big fish eat little fish.",
+       "uz": "So'zma-so'z: Katta baliqlar kichik baliqlarni yeydi.\n\nMA'NOSI: Kuchlilar zaiflar hisobiga yashaydi;\nkatta kompaniyalar kichiklarini yutib yuboradi.\n\nDIQQAT: 'fish' — ko'plikda ham 'fish' (44-bet).\nShuning uchun fe'l ko'plikda: 'eat' ('eats' emas).\n\n'little' = kichkina ('small' bilan bir xil)"
+      },
+      {
+       "en": "Curiosity killed the cat.",
+       "uz": "So'zma-so'z: Qiziquvchanlik mushukni o'ldirdi.\n\nMA'NOSI: Haddan tashqari qiziquvchanlik zarar keltiradi —\nbegona ishga burun tiqmaslik kerak.\n\nO'ZBEKCHA MUQOBILI: 'Ko'p bilgan tez qariydi' yoki\n'Har ishga burun tiqma.'\n\nLUG'AT: curiosity /ˌkjʊəriˈɒsəti/ = qiziquvchanlik\n        curious = qiziquvchan"
       }
      ]
     }
@@ -5210,145 +5478,245 @@
      "book": "grammar",
      "bookPage": 26,
      "bookRef": "Grammar Book, 26-bet, 1-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  A: \"............ do dolphins eat?\"  B: \"They eat fish.\"",
        "answer": "What",
-       "promptUz": "Javob — ovqat nomi",
+       "options": [
+        "What",
+        "who",
+        "how many",
+        "how long"
+       ],
        "whyUz": "Javob 'fish' (narsa) → WHAT.",
        "speak": "1  A: \"............ do dolphins eat?\"  B: \"They eat fish.\""
       },
       {
        "prompt": "2  A: \"............ do penguins live?\"  B: \"In Antarctica.\"",
        "answer": "Where",
-       "promptUz": "Javob — joy predlogi bilan",
+       "options": [
+        "Where",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "Javob 'In Antarctica' (joy) → WHERE.",
        "speak": "2  A: \"............ do penguins live?\"  B: \"In Antarctica.\""
       },
       {
        "prompt": "3  A: \"............ do you play football?\"  B: \"In my free time.\"",
        "answer": "When",
-       "promptUz": "Javob — vaqt ifodasi",
+       "options": [
+        "When",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'In my free time' = bo'sh vaqtimda — bu VAQT → WHEN.",
        "speak": "3  A: \"............ do you play football?\"  B: \"In my free time.\""
       },
       {
        "prompt": "4  A: \"............ do you visit your grandparents?\"  B: \"Once a month.\"",
        "answer": "How often",
-       "promptUz": "Javob — necha marta",
+       "options": [
+        "How often",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'Once a month' = oyiga bir marta — bu CHASTOTA → HOW OFTEN.",
        "speak": "4  A: \"............ do you visit your grandparents?\"  B: \"Once a month.\""
       },
       {
        "prompt": "5  A: \"............ is that girl over there?\"  B: \"My sister.\"",
        "answer": "Who",
-       "promptUz": "Javob — odam",
+       "options": [
+        "Who",
+        "what",
+        "how many",
+        "how long"
+       ],
        "whyUz": "'My sister' (odam) → WHO. 'be' bilan 'does' kerak emas.",
        "speak": "5  A: \"............ is that girl over there?\"  B: \"My sister.\""
       },
       {
        "prompt": "6  A: \"............ do kangaroos have strong back legs?\"  B: \"Because they need to jump very high.\"",
        "answer": "Why",
-       "promptUz": "Javob 'Because' bilan boshlanadi",
+       "options": [
+        "Why",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "Javob 'Because ...' → WHY. Bu eng aniq belgi.",
        "speak": "6  A: \"............ do kangaroos have strong back legs?\"  B: \"Because they need to jump very high.\""
       },
       {
        "prompt": "7  A: \"............ do koalas sleep?\"  B: \"In the tops of eucalyptus trees.\"",
        "answer": "Where",
-       "promptUz": "Javob — joy",
+       "options": [
+        "Where",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'In the tops of eucalyptus trees' (joy) → WHERE.\nDIQQAT: 'When do koalas sleep?' savoliga 'during the day' javob bo'lardi.",
        "speak": "7  A: \"............ do koalas sleep?\"  B: \"In the tops of eucalyptus trees.\""
       },
       {
        "prompt": "8  A: \"............ money do you have?\"  B: \"Not much.\"",
        "answer": "How much",
-       "promptUz": "'money' sanaladimi yoki yo'qmi?",
+       "options": [
+        "How much",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'money' — SANALMAYDIGAN ot → HOW MUCH.\nJavob ham 'Not much' — bu ham sanalmaydigan miqdor.",
        "speak": "8  A: \"............ money do you have?\"  B: \"Not much.\""
       },
       {
        "prompt": "9  A: \"............ can a sea lion do?\"  B: \"It can swim very well.\"",
        "answer": "What",
-       "promptUz": "Javob — qanday ish qila oladi",
+       "options": [
+        "What",
+        "who",
+        "how many",
+        "how long"
+       ],
        "whyUz": "Javob ISH (swim) → WHAT. 'can' bilan 'does' kerak emas.",
        "speak": "9  A: \"............ can a sea lion do?\"  B: \"It can swim very well.\""
       },
       {
        "prompt": "10  A: \"............ are you smiling?\"  B: \"Because I'm happy.\"",
        "answer": "Why",
-       "promptUz": "Javob 'Because' bilan boshlanadi",
+       "options": [
+        "Why",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "Javob 'Because I'm happy' → WHY.\n'to smile' = tabassum qilmoq (40-betdagi 'a smile' — ot).",
        "speak": "10  A: \"............ are you smiling?\"  B: \"Because I'm happy.\""
       },
       {
        "prompt": "11  A: \"............ do you feed your goldfish?\"  B: \"Every morning.\"",
        "answer": "How often",
-       "promptUz": "Javob — takrorlanish",
+       "options": [
+        "How often",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'Every morning' = har ertalab — bu CHASTOTA → HOW OFTEN.\n'a goldfish' = tilla baliq.",
        "speak": "11  A: \"............ do you feed your goldfish?\"  B: \"Every morning.\""
       },
       {
        "prompt": "12  A: \"............ do tigers live?\"  B: \"For about fifteen years.\"",
        "answer": "How long",
-       "promptUz": "Javob 'For ... years'",
+       "options": [
+        "How long",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'For about fifteen years' — DAVOMIYLIK → HOW LONG.",
        "speak": "12  A: \"............ do tigers live?\"  B: \"For about fifteen years.\""
       },
       {
        "prompt": "13  A: \"............ is Mrs Jackson?\"  B: \"Our neighbour.\"",
        "answer": "Who",
-       "promptUz": "Javob — odam",
+       "options": [
+        "Who",
+        "what",
+        "how many",
+        "how long"
+       ],
        "whyUz": "'Our neighbour' (odam) → WHO.\n'a neighbour' = qo'shni (britancha yozilishi; amerikacha: neighbor).",
        "speak": "13  A: \"............ is Mrs Jackson?\"  B: \"Our neighbour.\""
       },
       {
        "prompt": "14  A: \"............ colour is your cat?\"  B: \"Black.\"",
        "answer": "What",
-       "promptUz": "'colour' oldida turadigan so'z",
+       "options": [
+        "What",
+        "who",
+        "how many",
+        "how long"
+       ],
        "whyUz": "'What colour ...?' = qanday rangda? — o'zgarmas ibora (44-bet).",
        "speak": "14  A: \"............ colour is your cat?\"  B: \"Black.\""
       },
       {
        "prompt": "15  A: \"............ pieces of pie do you want?\"  B: \"Only one, please.\"",
        "answer": "How many",
-       "promptUz": "'pieces' sanaladimi?",
+       "options": [
+        "How many",
+        "what",
+        "who",
+        "how long"
+       ],
        "whyUz": "'pieces' — SANALADIGAN ot → HOW MANY. Javob ham son: 'Only one'.\n'a piece of pie' = bir bo'lak pirog.",
        "speak": "15  A: \"............ pieces of pie do you want?\"  B: \"Only one, please.\""
       },
       {
        "prompt": "16  A: \"............ tall are you?\"  B: \"I'm 1.50 m.\"",
        "answer": "How",
-       "promptUz": "'tall' sifatidan oldin turadigan so'z",
+       "options": [
+        "How",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'How + sifat' — o'lchov savoli: How TALL are you? (44-betdagi 'How big is it?' kabi).",
        "speak": "16  A: \"............ tall are you?\"  B: \"I'm 1.50 m.\""
       },
       {
        "prompt": "17  A: \"............ do sea lions weigh?\"  B: \"About 250 kilos.\"",
        "answer": "How much",
-       "promptUz": "Javob — kilogramm",
+       "options": [
+        "How much",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "Og'irlik → HOW MUCH. 45-betdagi dengiz sheri ma'lumoti bilan bir xil.",
        "speak": "17  A: \"............ do sea lions weigh?\"  B: \"About 250 kilos.\""
       },
       {
        "prompt": "18  A: \"............ do you get to school?\"  B: \"By bus.\"",
        "answer": "How",
-       "promptUz": "Javob — transport vositasi",
+       "options": [
+        "How",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'By bus' — USUL → yolg'iz HOW.\n'get to' = yetib bormoq. Transport: BY bus/car/train (artiklsiz).",
        "speak": "18  A: \"............ do you get to school?\"  B: \"By bus.\""
       },
       {
        "prompt": "19  A: \"............ do you sleep at night?\"  B: \"Eight hours.\"",
        "answer": "How long",
-       "promptUz": "Javob — soat (davomiylik)",
+       "options": [
+        "How long",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'Eight hours' — DAVOMIYLIK → HOW LONG.\nDIQQAT: 'How often' bo'lsa javob 'every night' bo'lardi.",
        "speak": "19  A: \"............ do you sleep at night?\"  B: \"Eight hours.\""
       },
       {
        "prompt": "20  A: \"............ is Ankara?\"  B: \"In Turkey.\"",
        "answer": "Where",
-       "promptUz": "Javob — mamlakat nomi",
+       "options": [
+        "Where",
+        "what",
+        "who",
+        "how many"
+       ],
        "whyUz": "'In Turkey' (joy) → WHERE. Ankara — Turkiya poytaxti.",
        "speak": "20  A: \"............ is Ankara?\"  B: \"In Turkey.\""
       }
@@ -5373,40 +5741,65 @@
      "book": "grammar",
      "bookPage": 27,
      "bookRef": "Grammar Book, 27-bet, 2-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  \"............ does a wild red fox live?\"",
        "answer": "Where",
-       "promptUz": "Javobi: 'In North America, Asia, Europe and Africa'",
+       "options": [
+        "Where",
+        "what",
+        "how much",
+        "how long"
+       ],
        "whyUz": "Javob JOY → WHERE.\nDIQQAT: 5-savol ham 'live' bilan, lekin u DAVOMIYLIK so'raydi.",
        "speak": "1  \"............ does a wild red fox live?\""
       },
       {
        "prompt": "2  \"............ does it eat?\"",
        "answer": "What",
-       "promptUz": "Javobi: 'Mice, rabbits, eggs, fruit and birds'",
+       "options": [
+        "What",
+        "how much",
+        "where",
+        "how long"
+       ],
        "whyUz": "Javob OVQAT (narsa) → WHAT.",
        "speak": "2  \"............ does it eat?\""
       },
       {
        "prompt": "3  \"............ does it weigh?\"",
        "answer": "How much",
-       "promptUz": "Javobi: '6 kilos'",
+       "options": [
+        "How much",
+        "what",
+        "where",
+        "how long"
+       ],
        "whyUz": "Og'irlik → HOW MUCH ('weigh' fe'li bilan doim shu).",
        "speak": "3  \"............ does it weigh?\""
       },
       {
        "prompt": "4  \"............ legs has it got?\"",
        "answer": "How many",
-       "promptUz": "Javobi: 'Four'",
+       "options": [
+        "How many",
+        "what",
+        "how much",
+        "where"
+       ],
        "whyUz": "'legs' — SANALADIGAN ot → HOW MANY.\n'has it got' bilan 'does' kerak emas.",
        "speak": "4  \"............ legs has it got?\""
       },
       {
        "prompt": "5  \"............ does it live?\"",
        "answer": "How long",
-       "promptUz": "Javobi: '2 years'",
+       "options": [
+        "How long",
+        "what",
+        "how much",
+        "where"
+       ],
        "whyUz": "Javob YIL (davomiylik) → HOW LONG.\n1-savoldan farqi: bu yerda JOY emas, VAQT so'ralyapti.",
        "speak": "5  \"............ does it live?\""
       }
@@ -5454,96 +5847,161 @@
      "book": "grammar",
      "bookPage": 27,
      "bookRef": "Grammar Book, 27-bet, 3-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  A: \"............ are these glasses?\"  B: \"Paul's.\"",
        "answer": "Whose",
-       "promptUz": "Javob egalik shaklida: Paul'S",
+       "options": [
+        "Whose",
+        "who",
+        "what",
+        "which"
+       ],
        "whyUz": "Javob 'Paul's' (Polniki) — EGALIK → WHOSE.\n'glasses' = ko'zoynak (doim ko'plik) yoki stakanlar.",
        "speak": "1  A: \"............ are these glasses?\"  B: \"Paul's.\""
       },
       {
        "prompt": "2  A: \"............ do dolphins live?\"  B: \"About fifty years.\"",
        "answer": "How long",
-       "promptUz": "Javob — yil soni",
+       "options": [
+        "How long",
+        "who",
+        "what",
+        "which"
+       ],
        "whyUz": "'About fifty years' — DAVOMIYLIK → HOW LONG.\nCoursebook 40-betdagi delfin matni bilan bir xil fakt.",
        "speak": "2  A: \"............ do dolphins live?\"  B: \"About fifty years.\""
       },
       {
        "prompt": "3  A: \"............ do tigers eat?\"  B: \"Deer and monkeys.\"",
        "answer": "What",
-       "promptUz": "Javob — ovqat",
+       "options": [
+        "What",
+        "who",
+        "which",
+        "where"
+       ],
        "whyUz": "Ovqat (narsa) → WHAT. Coursebook 43-betdagi ma'lumot varaqasidan.",
        "speak": "3  A: \"............ do tigers eat?\"  B: \"Deer and monkeys.\""
       },
       {
        "prompt": "4  A: \"............ are you?\"  B: \"I'm Tom.\"",
        "answer": "Who",
-       "promptUz": "Javob — ism",
+       "options": [
+        "Who",
+        "what",
+        "which",
+        "where"
+       ],
        "whyUz": "Javob ODAM ismi → WHO.\nDIQQAT: 'How are you?' bo'lsa javob 'I'm fine' bo'lardi.",
        "speak": "4  A: \"............ are you?\"  B: \"I'm Tom.\""
       },
       {
        "prompt": "5  A: \"............ are the children?\"  B: \"They're fine.\"",
        "answer": "How",
-       "promptUz": "Javob — ahvol ('fine')",
+       "options": [
+        "How",
+        "who",
+        "what",
+        "which"
+       ],
        "whyUz": "Javob AHVOL ('fine') → HOW.\n4-savoldan farqini solishtiring: Who are you? / How are you?\n'children' — 'child' ning noto'g'ri ko'pligi.",
        "speak": "5  A: \"............ are the children?\"  B: \"They're fine.\""
       },
       {
        "prompt": "6  A: \"............ animals do you like?\"  B: \"Dogs and cats.\"",
        "answer": "What",
-       "promptUz": "Barcha hayvonlar ichidan so'raladi",
+       "options": [
+        "What",
+        "who",
+        "which",
+        "where"
+       ],
        "whyUz": "Tanlov CHEKSIZ (dunyodagi hamma hayvon) → WHAT animals.\nDIQQAT: 'Which animals ...?' ham grammatik jihatdan to'g'ri —\nlekin u CHEKLANGAN ro'yxatdan tanlashni bildiradi\n(masalan, rasmda 5 ta hayvon bo'lsa).",
        "speak": "6  A: \"............ animals do you like?\"  B: \"Dogs and cats.\""
       },
       {
        "prompt": "7  A: \"............ do kangaroos sleep?\"  B: \"During the day.\"",
        "answer": "When",
-       "promptUz": "Javob — vaqt",
+       "options": [
+        "When",
+        "who",
+        "what",
+        "which"
+       ],
        "whyUz": "'During the day' — VAQT → WHEN.\nCoursebook 43-betdagi kenguru matnidan.",
        "speak": "7  A: \"............ do kangaroos sleep?\"  B: \"During the day.\""
       },
       {
        "prompt": "8  A: \"............ do koalas live?\"  B: \"In eastern Australia.\"",
        "answer": "Where",
-       "promptUz": "Javob — joy",
+       "options": [
+        "Where",
+        "who",
+        "what",
+        "which"
+       ],
        "whyUz": "'In eastern Australia' — JOY → WHERE.\nCoursebook 42-betdagi koala matnidan.",
        "speak": "8  A: \"............ do koalas live?\"  B: \"In eastern Australia.\""
       },
       {
        "prompt": "9  A: \"............ colour is an elephant?\"  B: \"Grey.\"",
        "answer": "What",
-       "promptUz": "'colour' oldida turadi",
+       "options": [
+        "What",
+        "who",
+        "which",
+        "where"
+       ],
        "whyUz": "'What colour ...?' — o'zgarmas ibora.\nFil kulrang — Coursebook 43-betdagi rasmda ko'rgansiz.",
        "speak": "9  A: \"............ colour is an elephant?\"  B: \"Grey.\""
       },
       {
        "prompt": "10  A: \"............ do you wash your dog?\"  B: \"Once a week.\"",
        "answer": "How often",
-       "promptUz": "Javob — necha marta",
+       "options": [
+        "How often",
+        "who",
+        "what",
+        "which"
+       ],
        "whyUz": "'Once a week' — CHASTOTA → HOW OFTEN.\n'to wash' = yuvmoq.",
        "speak": "10  A: \"............ do you wash your dog?\"  B: \"Once a week.\""
       },
       {
        "prompt": "11  A: \"............ tall is your brother?\"  B: \"About 1.80 metres.\"",
        "answer": "How",
-       "promptUz": "'tall' sifatidan oldin turadi",
+       "options": [
+        "How",
+        "who",
+        "what",
+        "which"
+       ],
        "whyUz": "'How + sifat' = o'lchov savoli: How TALL ...?\nJavob metrda beriladi.",
        "speak": "11  A: \"............ tall is your brother?\"  B: \"About 1.80 metres.\""
       },
       {
        "prompt": "12  A: \"............ is that animal?\"  B: \"It's a sea lion.\"",
        "answer": "What",
-       "promptUz": "Javob — hayvon nomi",
+       "options": [
+        "What",
+        "who",
+        "which",
+        "where"
+       ],
        "whyUz": "Hayvon nomi (narsa) → WHAT.\nDIQQAT: odam bo'lsa WHO bo'lardi.",
        "speak": "12  A: \"............ is that animal?\"  B: \"It's a sea lion.\""
       },
       {
        "prompt": "13  A: \"............ cat is that?\"  B: \"It's mine.\"",
        "answer": "Whose",
-       "promptUz": "Javob — egalik olmoshi 'mine'",
+       "options": [
+        "Whose",
+        "who",
+        "what",
+        "which"
+       ],
        "whyUz": "Javob 'mine' (meniki) — EGALIK → WHOSE.\n'Whose + ot' tartibi: Whose CAT is that?",
        "speak": "13  A: \"............ cat is that?\"  B: \"It's mine.\""
       }
@@ -5842,47 +6300,77 @@
      "book": "grammar",
      "bookPage": 28,
      "bookRef": "Grammar Book, 28-bet, 6-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "Polar bears 1) ............ mammals and feed their babies on milk.",
        "answer": "are",
-       "promptUz": "Turkumlash — 'be' fe'li kerak",
+       "options": [
+        "are",
+        "have got",
+        "swim",
+        "live"
+       ],
        "whyUz": "'X are mammals' — turkumlash qolipi (Coursebook 40-bet).\nKo'plik ega → ARE.",
        "speak": "Polar bears 1) ............ mammals and feed their babies on milk."
       },
       {
        "prompt": "They 2) ............ in the Arctic.",
        "answer": "live",
-       "promptUz": "Joy predlogi 'in' bilan",
+       "options": [
+        "live",
+        "have got",
+        "swim",
+        "are"
+       ],
        "whyUz": "'live IN + joy'. Ko'plik ega → fe'lga -s QO'SHILMAYDI.\n'the Arctic' = Arktika (Shimoliy qutb). Artikl THE shart.",
        "speak": "They 2) ............ in the Arctic."
       },
       {
        "prompt": "They are about two metres tall and they 3) ............ about 400 kilos.",
        "answer": "weigh",
-       "promptUz": "Kilogramm — og'irlik fe'li",
+       "options": [
+        "weigh",
+        "have got",
+        "swim",
+        "are"
+       ],
        "whyUz": "'weigh + og'irlik'. Bo'y uchun 'are ... tall', og'irlik uchun 'weigh'.\nDIQQAT: 'they are weigh' XATO — 'weigh' bilan 'be' ishlatilmaydi.",
        "speak": "They are about two metres tall and they 3) ............ about 400 kilos."
       },
       {
        "prompt": "Polar bears 4) ............ cream-coloured fur which keeps them very warm.",
        "answer": "have got",
-       "promptUz": "Tana qismi — egalik",
+       "options": [
+        "have got",
+        "swim",
+        "are",
+        "live"
+       ],
        "whyUz": "Tana qismi (fur) → HAVE GOT. Ko'plik ega → HAVE ('has' XATO).\n'cream-coloured' = krem rangli. 'which' = ...ki, u.",
        "speak": "Polar bears 4) ............ cream-coloured fur which keeps them very warm."
       },
       {
        "prompt": "They can 5) ............ very well because their front legs are very strong.",
        "answer": "swim",
-       "promptUz": "'can' dan keyin asos shakli",
+       "options": [
+        "swim",
+        "have got",
+        "are",
+        "live"
+       ],
        "whyUz": "'can' dan keyin fe'l ASOS shaklida — 'to' va '-s' YO'Q.\nOq ayiq juda yaxshi suzadi.",
        "speak": "They can 5) ............ very well because their front legs are very strong."
       },
       {
        "prompt": "They 6) ............ seals and they usually live on their own.",
        "answer": "eat",
-       "promptUz": "'seals' — ovqat",
+       "options": [
+        "eat",
+        "have got",
+        "swim",
+        "are"
+       ],
        "whyUz": "'a seal' = tyulen (dengiz hayvoni). Oq ayiqning asosiy ovqati.\n'on their own' = yolg'iz o'zi ('alone' bilan bir xil).",
        "speak": "They 6) ............ seals and they usually live on their own."
       }

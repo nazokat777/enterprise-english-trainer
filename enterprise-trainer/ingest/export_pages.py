@@ -222,12 +222,20 @@ def study(en, uz="", note=""):
 
 
 def distractors(correct, pool, n=3):
-    """Bir xil javobsiz, takrorsiz chalg'ituvchi variantlar."""
-    out = []
+    """Bir xil javobsiz, takrorsiz chalg'ituvchi variantlar.
+
+    Solishtirish HARF KATTALIGIGA E'TIBOR BERMAYDI: ro'yxatda ko'pincha
+    "Are" (gap boshi) va "are" (gap o'rtasi) birga uchraydi. Ular bir xil
+    so'z — ikkalasini variant qilib qo'ysak, o'quvchi ikkita bir xil
+    tugmani ko'radi va qaysinisi to'g'ri ekanini bilolmaydi.
+    """
+    out, seen = [], {str(correct).strip().lower()}
     for x in pool:
         if len(out) >= n:
             break
-        if str(x) != str(correct) and str(x) not in out:
+        key = str(x).strip().lower()
+        if key and key not in seen:
+            seen.add(key)
             out.append(str(x))
     return out
 
@@ -263,6 +271,27 @@ def norm_exercise(ex, page):
     base["kind"] = kind
     base["tasks"] = tasks
     return base
+
+
+def _all_answers_in_list(ex):
+    """Mashqning HAR BIR javobi kitob bergan so'zlar ro'yxatida bormi."""
+    wl = ex.get("wordList") or []
+    if not wl:
+        return False
+    pool = {str(w).strip().lower() for w in wl}
+    seen = False
+    for i in ex.get("items", []):
+        if i.get("given"):
+            continue
+        answers = i.get("answers") or ([i["answer"]] if i.get("answer") else [])
+        for a in answers:
+            a = str(a).strip()
+            if not a:
+                continue
+            seen = True
+            if a.lower() not in pool:
+                return False
+    return seen
 
 
 MARKER = "⚠"
@@ -542,6 +571,25 @@ def _dispatch(t, ex, items):
             ))
         return "text", out
 
+    if t == "fill_gap" and _all_answers_in_list(ex):
+        # Kitob SO'ZLAR RO'YXATINI bergan bo'lsa, topshiriq "ro'yxatdan
+        # tanlang" degani — bu YIG'ISH emas, TANLASH mashqi.
+        # (Aks holda "— (hech narsa)" kabi javoblarni harflab yig'ishga
+        # to'g'ri kelardi.)
+        wl = ex.get("wordList", [])
+        out = []
+        for i in items:
+            if i.get("given"):
+                continue
+            answers = i.get("answers") or ([i["answer"]] if i.get("answer") else [])
+            for a in answers:
+                out.append(task(i.get("textEn") or i.get("sentence", ""), a,
+                                prompt_uz=i.get("uz", ""),
+                                options=[a] + distractors(a, wl),
+                                why=i.get("whyUz")
+                                    or i.get("commonMistake", {}).get("whyUz", "")))
+        return "choice", out
+
     if t in ("fill_gap", "long_short_form"):
         out = []
         for i in items:
@@ -785,6 +833,14 @@ def _dispatch(t, ex, items):
         return "choice", out
 
     if t == "discuss_meaning":
+        # Ikki xil yozilish bor: bitta gap (`sentenceEn`) yoki maqollar
+        # RO'YXATI (`items`). Faqat birinchisini bilgani uchun eksportyor
+        # uchta betdagi 10 ta maqolni JIMGINA yo'qotgan edi.
+        if ex.get("items"):
+            return "study", [
+                study(x.get("en", ""), x.get("uz", ""), x.get("noteUz", ""))
+                for x in ex["items"] if x.get("en")
+            ]
         return "study", [study(ex.get("sentenceEn", ""), ex.get("sentenceUz", ""))]
 
     if t == "explain_sentences":

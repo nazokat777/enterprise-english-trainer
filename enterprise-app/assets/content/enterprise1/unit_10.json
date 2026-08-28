@@ -24,54 +24,89 @@
      "book": "coursebook",
      "bookPage": 70,
      "bookRef": "Coursebook, 70-bet, 1-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "A  Queen of England (1533 - 1603)",
        "answer": "Elizabeth I",
-       "promptUz": "XVI asr Angliya qirolichasi",
+       "options": [
+        "Elizabeth I",
+        "Diana Spencer",
+        "Leonardo da Vinci",
+        "John F. Kennedy"
+       ],
        "whyUz": "ELIZABETH I (Elizabeth the First) — 1558-1603-yillarda\nAngliya qirolichasi bo'lgan.\nRasmda katta sariq ko'ylakdagi ayol.\n'Queen' = qirolicha.",
        "speak": "A  Queen of England (1533 - 1603)"
       },
       {
        "prompt": "B  Polish scientist (1867 - 1934)",
        "answer": "Marie Curie",
-       "promptUz": "Radioaktivlikni o'rgangan polshalik olima",
+       "options": [
+        "Marie Curie",
+        "Diana Spencer",
+        "Leonardo da Vinci",
+        "John F. Kennedy"
+       ],
        "whyUz": "MARIE CURIE — polshalik olima, radiy va poloniyni kashf etgan.\nIkki marta Nobel mukofotini olgan yagona ayol.\n'Polish' = polshalik;  'a scientist' = olim.",
        "speak": "B  Polish scientist (1867 - 1934)"
       },
       {
        "prompt": "C  Russian ballet dancer (1938 - 1993)",
        "answer": "Rudolf Nureyev",
-       "promptUz": "Mashhur rus balet raqqosi",
+       "options": [
+        "Rudolf Nureyev",
+        "Diana Spencer",
+        "Leonardo da Vinci",
+        "John F. Kennedy"
+       ],
        "whyUz": "RUDOLF NUREYEV — rus (Boshqirdistonda tug'ilgan) balet raqqosi.\nRasmda sahnada gullar orasida yotgan raqqos.\n'a ballet dancer' = balet raqqosi.",
        "speak": "C  Russian ballet dancer (1938 - 1993)"
       },
       {
        "prompt": "D  American president (1917 - 1963)",
        "answer": "John F. Kennedy",
-       "promptUz": "1963-yilda o'ldirilgan AQSh prezidenti",
+       "options": [
+        "John F. Kennedy",
+        "Diana Spencer",
+        "Leonardo da Vinci",
+        "Marie Curie"
+       ],
        "whyUz": "JOHN F. KENNEDY — AQShning 35-prezidenti.\n2-mashqdagi NAMUNA aynan shu odam haqida.\n'F.' = Fitzgerald (o'rta ism).",
        "speak": "D  American president (1917 - 1963)"
       },
       {
        "prompt": "E  American singer and actor (1935 - 1977)",
        "answer": "Elvis Presley",
-       "promptUz": "'Rok-n-rol qiroli'",
+       "options": [
+        "Elvis Presley",
+        "Diana Spencer",
+        "Leonardo da Vinci",
+        "John F. Kennedy"
+       ],
        "whyUz": "ELVIS PRESLEY — 'the king of rock'n'roll'.\nWorkbook 37-betdagi 5-mashqda ham uchragan.\n'a singer' = qo'shiqchi;  'an actor' = aktyor.",
        "speak": "E  American singer and actor (1935 - 1977)"
       },
       {
        "prompt": "F  Italian artist (1452 - 1519)",
        "answer": "Leonardo da Vinci",
-       "promptUz": "'Mona Liza' muallifi",
+       "options": [
+        "Leonardo da Vinci",
+        "Diana Spencer",
+        "John F. Kennedy",
+        "Marie Curie"
+       ],
        "whyUz": "LEONARDO DA VINCI — italyan rassomi, ixtirochisi, olimi.\nRasmda uzun oq soqolli qariya.\n'an artist' = rassom, san'atkor.",
        "speak": "F  Italian artist (1452 - 1519)"
       },
       {
        "prompt": "G  Princess of Wales (1961 - 1997)",
        "answer": "Diana Spencer",
-       "promptUz": "1997-yilda halok bo'lgan malika",
+       "options": [
+        "Diana Spencer",
+        "Leonardo da Vinci",
+        "John F. Kennedy",
+        "Marie Curie"
+       ],
        "whyUz": "DIANA SPENCER — Uels malikasi (Princess of Wales).\nUning tarjimai holi 71-betda o'qiladi.\n'a princess' = malika, shahzoda qizi.",
        "speak": "G  Princess of Wales (1961 - 1997)"
       }
@@ -232,61 +267,101 @@
      "book": "coursebook",
      "bookPage": 72,
      "bookRef": "Coursebook, 72-bet, 6-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  she ............ as a nanny",
        "answer": "worked",
-       "promptUz": "'as a nanny' — kasb; fe'l kerak",
+       "options": [
+        "worked",
+        "all over",
+        "Princess",
+        "sick"
+       ],
        "whyUz": "'she WORKED as a nanny' = enaga bo'lib ishladi.\n71-betdagi 1-xatboshidan.\n'work AS' — 'as' shart.",
        "speak": "1  she ............ as a nanny"
       },
       {
        "prompt": "2  ............ the world",
        "answer": "all over",
-       "promptUz": "'butun dunyo bo'ylab' iborasi",
+       "options": [
+        "all over",
+        "worked",
+        "Princess",
+        "sick"
+       ],
        "whyUz": "'ALL OVER the world' = butun dunyo bo'ylab.\n71-betda: 'sick and poor people ALL OVER the world'.",
        "speak": "2  ............ the world"
       },
       {
        "prompt": "3  ............ tale",
        "answer": "fairy",
-       "promptUz": "Maqola sarlavhasidagi so'z",
+       "options": [
+        "fairy",
+        "all over",
+        "worked",
+        "Princess"
+       ],
        "whyUz": "'a FAIRY tale' = ertak.\n71-betdagi maqola nomi: 'A Fairy-Tale Princess'.\n'a fairy' = pari.",
        "speak": "3  ............ tale"
       },
       {
        "prompt": "4  ............ round the world",
        "answer": "travel",
-       "promptUz": "Sayohat qilish fe'li",
+       "options": [
+        "travel",
+        "all over",
+        "worked",
+        "Princess"
+       ],
        "whyUz": "'TRAVEL round the world' = dunyo bo'ylab sayohat qilmoq.\n71-betda: 'continued to TRAVEL round the world'.\n'round' = 'around' bilan bir xil.",
        "speak": "4  ............ round the world"
       },
       {
        "prompt": "5  ............ people",
        "answer": "sick",
-       "promptUz": "Kasal odamlar",
+       "options": [
+        "sick",
+        "all over",
+        "worked",
+        "Princess"
+       ],
        "whyUz": "'SICK people' = kasal odamlar.\n71-betda: 'she cared about SICK and poor people'.\n'sick' = 'ill' bilan bir xil.",
        "speak": "5  ............ people"
       },
       {
        "prompt": "6  the ............ of Wales",
        "answer": "Princess",
-       "promptUz": "Diananing unvoni",
+       "options": [
+        "Princess",
+        "all over",
+        "worked",
+        "sick"
+       ],
        "whyUz": "'the PRINCESS of Wales' = Uels malikasi.\nBosh harf bilan — unvon.\n'the' SHART (yagona unvon).",
        "speak": "6  the ............ of Wales"
       },
       {
        "prompt": "7  those ............",
        "answer": "in need",
-       "promptUz": "'muhtojlar' iborasi",
+       "options": [
+        "in need",
+        "all over",
+        "worked",
+        "Princess"
+       ],
        "whyUz": "'those IN NEED' = muhtojlar.\n71-betda: 'help those IN NEED'.\n'need' = ehtiyoj.",
        "speak": "7  those ............"
       },
       {
        "prompt": "8  ............ accident",
        "answer": "car",
-       "promptUz": "Diana qanday halokatda halok bo'ldi?",
+       "options": [
+        "car",
+        "all over",
+        "worked",
+        "Princess"
+       ],
        "whyUz": "'a CAR accident' = avtohalokat.\n71-betda: 'she died in a CAR accident'.\n70-betdagi 3-mashqda 'train accident' XATO edi.",
        "speak": "8  ............ accident"
       }
@@ -437,61 +512,101 @@
      "book": "workbook",
      "bookPage": 40,
      "bookRef": "Workbook, 40-bet, 2-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  George is a kind person. He always helps ............ people.",
        "answer": "poor",
-       "promptUz": "Mehribon odam kimlarga yordam beradi?",
+       "options": [
+        "poor",
+        "received",
+        "popular",
+        "discovered"
+       ],
        "whyUz": "'POOR people' = kambag'al odamlar.\nMehribon odam muhtojlarga yordam beradi.\nCoursebook 71-betda: 'sick and POOR people'.\n'poor' aksi: rich.",
        "speak": "1  George is a kind person. He always helps ............ people."
       },
       {
        "prompt": "2  My ............ actor is Richard Gere.",
        "answer": "favourite",
-       "promptUz": "'eng yoqadigan' ma'nosidagi sifat",
+       "options": [
+        "favourite",
+        "received",
+        "popular",
+        "discovered"
+       ],
        "whyUz": "'my FAVOURITE actor' = sevimli aktyorim.\nAmerikacha yozilishi: favorite ('u' siz).\nRichard Gir — amerikalik aktyor.",
        "speak": "2  My ............ actor is Richard Gere."
       },
       {
        "prompt": "3  My father ............ my mother in 1975.",
        "answer": "married",
-       "promptUz": "Ota va ona — nikoh",
+       "options": [
+        "married",
+        "received",
+        "popular",
+        "discovered"
+       ],
        "whyUz": "'MARRIED my mother' = onamga uylandi.\nmarry → married ('r' undosh + 'y' → -IED).\nDIQQAT: 'married WITH' XATO — 'with' KERAK EMAS.",
        "speak": "3  My father ............ my mother in 1975."
       },
       {
        "prompt": "4  Mother Teresa ............ the Nobel Prize for Peace in 1979.",
        "answer": "received",
-       "promptUz": "Mukofot bilan nima qilinadi?",
+       "options": [
+        "received",
+        "popular",
+        "discovered",
+        "poor"
+       ],
        "whyUz": "'RECEIVED the Nobel Prize' = Nobel mukofotini oldi.\nreceive → received (oxiri 'e' → faqat + D).\nOna Tereza 1979-yilda tinchlik bo'yicha Nobel mukofotini olgan.\nCoursebook 72-73-betlarda ham 'received the Nobel Prize' bor edi.",
        "speak": "4  Mother Teresa ............ the Nobel Prize for Peace in 1979."
       },
       {
        "prompt": "5  Beethoven was a very ............ composer.",
        "answer": "talented",
-       "promptUz": "Iqtidor haqidagi sifat",
+       "options": [
+        "talented",
+        "received",
+        "popular",
+        "discovered"
+       ],
        "whyUz": "'a very TALENTED composer' = juda iqtidorli bastakor.\n'talent' = iqtidor;  'talented' = iqtidorli.\nBethoven — nemis bastakori (1770-1827).\nCoursebook 73-betda 'the talented young man' (Motsart) bor edi.",
        "speak": "5  Beethoven was a very ............ composer."
       },
       {
        "prompt": "6  The Beatles were very ............ in the 60s.",
        "answer": "popular",
-       "promptUz": "Xalq orasida sevimli",
+       "options": [
+        "popular",
+        "received",
+        "discovered",
+        "poor"
+       ],
        "whyUz": "'very POPULAR' = juda mashhur, sevimli.\n'The Beatles' — ingliz musiqiy guruhi (60-yillar).\nDIQQAT: guruh nomi oldidan THE, fe'l KO'PLIKDA ('were').\n'in the 60s' = 60-yillarda.",
        "speak": "6  The Beatles were very ............ in the 60s."
       },
       {
        "prompt": "7  Columbus ............ America in 1492.",
        "answer": "discovered",
-       "promptUz": "Yangi qit'ani nima qildi?",
+       "options": [
+        "discovered",
+        "received",
+        "popular",
+        "poor"
+       ],
        "whyUz": "'DISCOVERED America' = Amerikani kashf etdi.\ndiscover → discovered (to'g'ri fe'l).\nGrammar 47-betdagi 19-mashqda ham shu gap bor edi.",
        "speak": "7  Columbus ............ America in 1492."
       },
       {
        "prompt": "8  I met Jane at a party and we ............ friends.",
        "answer": "became",
-       "promptUz": "Tanishgach nima bo'lishdi?",
+       "options": [
+        "became",
+        "received",
+        "popular",
+        "discovered"
+       ],
        "whyUz": "'BECAME friends' = do'stlashdik.\nbecome → BECAME (noto'g'ri fe'l).\nCoursebook 74-betda ham: 'They became friends'.\nmeet → MET (noto'g'ri fe'l).",
        "speak": "8  I met Jane at a party and we ............ friends."
       }
@@ -506,82 +621,137 @@
      "book": "workbook",
      "bookPage": 40,
      "bookRef": "Workbook, 40-bet, 3-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Mark studied ............ a boarding school.",
        "answer": "at",
-       "promptUz": "Maktab — muassasa",
+       "options": [
+        "at",
+        "in",
+        "round",
+        "with"
+       ],
        "whyUz": "'study AT a school' — maktab va universitet bilan AT.\n'a boarding school' = internat maktab\n(Coursebook 71-betda Diana o'qigan joy).",
        "speak": "1  Mark studied ............ a boarding school."
       },
       {
        "prompt": "2  She was born ............ 2nd August, 1991, ...  [1-bo'shliq]",
        "answer": "on",
-       "promptUz": "Aniq SANA (kun bor)",
+       "options": [
+        "on",
+        "in",
+        "round",
+        "with"
+       ],
        "whyUz": "Aniq sana → ON.\n'on 2nd August, 1991'.",
        "speak": "2  She was born ............ 2nd August, 1991, ...  [1-bo'shliq]"
       },
       {
        "prompt": "2  ... , ............ Brighton.  [2-bo'shliq]",
        "answer": "in",
-       "promptUz": "Shahar nomi",
+       "options": [
+        "in",
+        "round",
+        "with",
+        "at"
+       ],
        "whyUz": "Shahar → IN.\nBraiton — Angliyaning janubidagi dengiz bo'yidagi shahar.",
        "speak": "2  ... , ............ Brighton.  [2-bo'shliq]"
       },
       {
        "prompt": "3  Susan always helps people ............ need.",
        "answer": "in",
-       "promptUz": "'muhtojlar' iborasi",
+       "options": [
+        "in",
+        "round",
+        "with",
+        "at"
+       ],
        "whyUz": "'people IN need' = muhtoj odamlar.\nCoursebook 71-72-betlarda 'those IN need' bor edi.",
        "speak": "3  Susan always helps people ............ need."
       },
       {
        "prompt": "4  There was a good film ............ TV last night.",
        "answer": "on",
-       "promptUz": "Televizor uchun predlog",
+       "options": [
+        "on",
+        "in",
+        "round",
+        "with"
+       ],
        "whyUz": "'ON TV' = televizorda.\nShunga o'xshash: on the radio, on the Internet.\nCoursebook 71-betda 'watched her wedding ON television'.",
        "speak": "4  There was a good film ............ TV last night."
       },
       {
        "prompt": "5  James Dean died ............ a car accident.",
        "answer": "in",
-       "promptUz": "HALOKAT bilan keladigan predlog",
+       "options": [
+        "in",
+        "round",
+        "with",
+        "at"
+       ],
        "whyUz": "'die IN an accident' = halokatda halok bo'lmoq.\nJeyms Din — amerikalik aktyor, 1955-yilda\navtohalokatda 24 yoshida halok bo'lgan.\n8-band bilan SOLISHTIRING.",
        "speak": "5  James Dean died ............ a car accident."
       },
       {
        "prompt": "6  Carlo travelled ............ the world for a year ...  [1-bo'shliq]",
        "answer": "round",
-       "promptUz": "Dunyo BO'YLAB",
+       "options": [
+        "round",
+        "in",
+        "with",
+        "at"
+       ],
        "whyUz": "'travel ROUND the world' = dunyo bo'ylab sayohat qilmoq.\n'round' = 'around' bilan bir xil (britanchada 'round' ko'proq).\nCoursebook 71-72-betlarda ham bor edi.",
        "speak": "6  Carlo travelled ............ the world for a year ...  [1-bo'shliq]"
       },
       {
        "prompt": "6  ... and returned ............ Italy last month.  [2-bo'shliq]",
        "answer": "to",
-       "promptUz": "Harakat yo'nalishi",
+       "options": [
+        "to",
+        "in",
+        "round",
+        "with"
+       ],
        "whyUz": "'return TO a place' = biror joyga qaytmoq.\nCoursebook 71-betda: 'When she RETURNED TO England'.",
        "speak": "6  ... and returned ............ Italy last month.  [2-bo'shliq]"
       },
       {
        "prompt": "7  Mike and Sarah had problems ............ their marriage ...  [1-bo'shliq]",
        "answer": "with",
-       "promptUz": "'muammo' so'zi bilan keladigan predlog",
+       "options": [
+        "with",
+        "in",
+        "round",
+        "at"
+       ],
        "whyUz": "'have problems WITH something' = ...da muammo bo'lmoq.\nCoursebook 71-betda: 'They had problems WITH their marriage'.",
        "speak": "7  Mike and Sarah had problems ............ their marriage ...  [1-bo'shliq]"
       },
       {
        "prompt": "7  ... and divorced ............ September, 1997.  [2-bo'shliq]",
        "answer": "in",
-       "promptUz": "Oy va yil (kun YO'Q)",
+       "options": [
+        "in",
+        "round",
+        "with",
+        "at"
+       ],
        "whyUz": "Kun ko'rsatilmagan, faqat oy va yil → IN.\n2-band bilan solishtiring: u yerda kun bor edi → ON.",
        "speak": "7  ... and divorced ............ September, 1997.  [2-bo'shliq]"
       },
       {
        "prompt": "8  Her grandfather died ............ pneumonia.",
        "answer": "of",
-       "promptUz": "KASALLIK bilan keladigan predlog",
+       "options": [
+        "of",
+        "in",
+        "round",
+        "with"
+       ],
        "whyUz": "'die OF an illness' = kasallikdan vafot etmoq.\n'pneumonia' = pnevmoniya, o'pka yallig'lanishi.\n5-band bilan SOLISHTIRING — bu eng muhim juftlik:\n  die IN an accident  (halokat)\n  die OF an illness   (kasallik)\nCoursebook 72-betda ham: 'died OF leukaemia'.",
        "speak": "8  Her grandfather died ............ pneumonia."
       }
@@ -596,47 +766,77 @@
      "book": "workbook",
      "bookPage": 40,
      "bookRef": "Workbook, 40-bet, 4-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Henry Moore ............ a famous British sculptor.",
        "answer": "was",
-       "promptUz": "Keyin kasb keladi",
+       "options": [
+        "was",
+        "became",
+        "won",
+        "died"
+       ],
        "whyUz": "Kasb aytilyapti → 'to be' fe'li.\n'Henry Moore' BIRLIK → WAS.\n'a sculptor' = haykaltarosh.",
        "speak": "1  Henry Moore ............ a famous British sculptor."
       },
       {
        "prompt": "2  Moore ............ art in Leeds and at the Royal College of Art in London.",
        "answer": "studied",
-       "promptUz": "Kollejda nima qilinadi?",
+       "options": [
+        "studied",
+        "became",
+        "was",
+        "won"
+       ],
        "whyUz": "'STUDIED art' = san'at o'qidi.\nstudy → STUDIED ('d' undosh + 'y' → -IED).\nRo'yxatdagi yagona TO'G'RI fe'l (die dan tashqari).",
        "speak": "2  Moore ............ art in Leeds and at the Royal College of Art in London."
       },
       {
        "prompt": "3  In 1926, he ............ an art teacher ...",
        "answer": "became",
-       "promptUz": "Kasb egasi BO'LDI",
+       "options": [
+        "became",
+        "was",
+        "won",
+        "died"
+       ],
        "whyUz": "'BECAME an art teacher' = san'at o'qituvchisi bo'ldi.\nbecome → BECAME (noto'g'ri fe'l).\n'AN art teacher' — 'a' unli tovush → AN.",
        "speak": "3  In 1926, he ............ an art teacher ..."
       },
       {
        "prompt": "4  ... and he ............ at the Royal College of Art for six years.",
        "answer": "taught",
-       "promptUz": "O'qituvchi nima qiladi?",
+       "options": [
+        "taught",
+        "became",
+        "was",
+        "won"
+       ],
        "whyUz": "'TAUGHT at the College' = kollejda dars berdi.\nteach → TAUGHT (noto'g'ri fe'l), o'qilishi /tɔːt/.\n'teached' XATO.\n'teach AT' — predlog AT.\n'for six years' = olti yil davomida.",
        "speak": "4  ... and he ............ at the Royal College of Art for six years."
       },
       {
        "prompt": "5  In 1948 he ............ the Venice Biennale sculpture prize.",
        "answer": "won",
-       "promptUz": "Mukofot bilan nima qilinadi?",
+       "options": [
+        "won",
+        "became",
+        "was",
+        "died"
+       ],
        "whyUz": "'WON the prize' = mukofotni yutdi.\nwin → WON (noto'g'ri fe'l), o'qilishi /wʌn/.\nDIQQAT: 'one' /wʌn/ bilan bir xil o'qiladi.\n'Venice' = Venetsiya.",
        "speak": "5  In 1948 he ............ the Venice Biennale sculpture prize."
       },
       {
        "prompt": "6  Henry Moore ............ on 31st August, 1986, in Hertfordshire.",
        "answer": "died",
-       "promptUz": "Tarjimai holning oxirgi gapi",
+       "options": [
+        "died",
+        "became",
+        "was",
+        "won"
+       ],
        "whyUz": "die → died (to'g'ri fe'l, oxiri 'e' → faqat + D).\n'ON 31st August' — aniq sana → ON.\n'IN Hertfordshire' — joy → IN.",
        "speak": "6  Henry Moore ............ on 31st August, 1986, in Hertfordshire."
       }
@@ -855,103 +1055,173 @@
      "book": "coursebook",
      "bookPage": 71,
      "bookRef": "Coursebook, 71-bet, 4-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Her parents ............ when she was a young girl.",
        "answer": "divorced",
-       "promptUz": "Ota-onasi bilan nima sodir bo'ldi?",
+       "options": [
+        "divorced",
+        "died",
+        "watched",
+        "studied"
+       ],
        "whyUz": "'Her parents DIVORCED' = ota-onasi ajrashdi.\nDIQQAT: 'divorce' bu yerda 'ajrashmoq' — to'ldiruvchi kerak emas.\n4-xatboshida yana chiqadi: 'They finally divorced in 1996'.",
        "speak": "1  Her parents ............ when she was a young girl."
       },
       {
        "prompt": "2  As a child, Diana ............ at a boarding school in Kent.",
        "answer": "studied",
-       "promptUz": "Maktabda nima qilinadi?",
+       "options": [
+        "studied",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'STUDIED at a school' = maktabda o'qidi.\nstudy → studied (undosh + Y → I + ED).\n'a boarding school' = internat maktab.",
        "speak": "2  As a child, Diana ............ at a boarding school in Kent."
       },
       {
        "prompt": "3  She ............ her education in Switzerland.",
        "answer": "completed",
-       "promptUz": "Ta'limni ... qildi",
+       "options": [
+        "completed",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'COMPLETED her education' = ta'limini tugatdi.\n'complete' = tugatmoq, yakunlamoq.\n-ed /ɪd/ deb o'qiladi (oxiri 't').",
        "speak": "3  She ............ her education in Switzerland."
       },
       {
        "prompt": "4  When she ............ to England ...",
        "answer": "returned",
-       "promptUz": "Chet eldan yurtiga ...",
+       "options": [
+        "returned",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'RETURNED to England' = Angliyaga qaytdi.\n'return TO a place' — 'to' shart.\nShveytsariyadan qaytgan.",
        "speak": "4  When she ............ to England ..."
       },
       {
        "prompt": "5  ... she ............ as a nanny in London.",
        "answer": "worked",
-       "promptUz": "'as a nanny' — kasb",
+       "options": [
+        "worked",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'WORKED as a nanny' = enaga bo'lib ishladi.\n'work AS' — 'as' shart.\n'a nanny' = enaga.\n70-betdagi 3-mashqning 2-bandi shu gapga asoslanadi.",
        "speak": "5  ... she ............ as a nanny in London."
       },
       {
        "prompt": "6  Diana ............ Prince Charles in July, 1981.",
        "answer": "married",
-       "promptUz": "To'y haqida",
+       "options": [
+        "married",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'MARRIED Prince Charles' = shahzoda Charlzga turmushga chiqdi.\nmarry → married (undosh + Y → I + ED).\nDIQQAT: 'married WITH Charles' XATO — 'with' KERAK EMAS.",
        "speak": "6  Diana ............ Prince Charles in July, 1981."
       },
       {
        "prompt": "7  People all around the world ............ her wedding on television.",
        "answer": "watched",
-       "promptUz": "Televizorda nima qilinadi?",
+       "options": [
+        "watched",
+        "died",
+        "divorced",
+        "studied"
+       ],
        "whyUz": "'WATCHED her wedding' = to'yini tomosha qilishdi.\n'watch' — televizor va tomoshalar uchun\n('see' emas, WATCH).\n-ed /t/ deb o'qiladi.",
        "speak": "7  People all around the world ............ her wedding on television."
       },
       {
        "prompt": "8  The British ............ her for her kindness and beauty.",
        "answer": "loved",
-       "promptUz": "Xalq unga qanday munosabatda edi?",
+       "options": [
+        "loved",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'LOVED her' = uni sevishardi.\n'love somebody FOR something' = biror fazilati uchun sevmoq.\n70-betdagi 3-mashqning 3-bandi (T) shu gapdan.",
        "speak": "8  The British ............ her for her kindness and beauty."
       },
       {
        "prompt": "9  They ............ her \"The People's Princess\".",
        "answer": "called",
-       "promptUz": "Unga qanday nom berishdi?",
+       "options": [
+        "called",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'CALLED her ...' = uni ... deb atashdi.\n'call somebody + nom' — orada predlog YO'Q:\n  They called her The People's Princess.  ✓\n  They called her AS ...                  ✗ XATO",
        "speak": "9  They ............ her \"The People's Princess\"."
       },
       {
        "prompt": "10  ... because she ............ so much about sick and poor people.",
        "answer": "cared",
-       "promptUz": "'about' bilan keladigan fe'l",
+       "options": [
+        "cared",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'CARED about ...' = ... haqida qayg'urardi.\n'care ABOUT' = befarq bo'lmaslik.\n'care FOR' = parvarish qilmoq (biroz boshqa ma'no).\n'so much' = juda ko'p.",
        "speak": "10  ... because she ............ so much about sick and poor people."
       },
       {
        "prompt": "11  She once ............ , \"I see myself as a princess for the world ...\"",
        "answer": "said",
-       "promptUz": "Keyin QO'ShTIRNOQ ochilyapti",
+       "options": [
+        "said",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'SAID' = dedi.\nQo'shtirnoq ochilsa — gapirish fe'li kerak.\nDIQQAT: 'say' — NOTO'G'RI fe'l:\n  say → SAID  (-ed QO'ShILMAYDI)\nRo'yxatdagi YAGONA noto'g'ri fe'l.\n'once' bu yerda = bir marta.",
        "speak": "11  She once ............ , \"I see myself as a princess for the world ...\""
       },
       {
        "prompt": "12  But Diana's life wasn't as happy as it ............ .",
        "answer": "appeared",
-       "promptUz": "Tashqaridan qanday KO'RINARDI?",
+       "options": [
+        "appeared",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'as happy as it APPEARED' = ko'ringanchalik baxtli.\n'to appear' = ko'rinmoq, tuyulmoq.\nMa'nosi: tashqaridan baxtli ko'rinardi, aslida emas —\nSHUHRATNING NARXI.",
        "speak": "12  But Diana's life wasn't as happy as it ............ ."
       },
       {
        "prompt": "13  Diana ............ to travel round the world and help those in need.",
        "answer": "continued",
-       "promptUz": "Keyin 'to travel' keladi",
+       "options": [
+        "continued",
+        "died",
+        "divorced",
+        "watched"
+       ],
        "whyUz": "'CONTINUED to travel' = sayohat qilishni davom ettirdi.\n'continue TO + fe'l' qolipi.\n'those in need' = muhtojlar.",
        "speak": "13  Diana ............ to travel round the world and help those in need."
       },
       {
        "prompt": "14  She ............ in a car accident on 31st August, 1997, in Paris.",
        "answer": "died",
-       "promptUz": "Halokat haqida",
+       "options": [
+        "died",
+        "divorced",
+        "watched",
+        "studied"
+       ],
        "whyUz": "'DIED in a car accident' = avtohalokatda halok bo'ldi.\ndie → died (-e ga faqat -D).\n70-betdagi 3-mashqning 4-bandi (F) shu gapga asoslanadi:\npoyezd emas, MAShINA halokati.",
        "speak": "14  She ............ in a car accident on 31st August, 1997, in Paris."
       }
@@ -2036,96 +2306,161 @@
      "book": "coursebook",
      "bookPage": 72,
      "bookRef": "Coursebook, 72-bet, 11-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  was born ............ 1st July, 1961  [1-bo'shliq]",
        "answer": "on",
-       "promptUz": "Aniq SANA (kun bor)",
+       "options": [
+        "on",
+        "with",
+        "in",
+        "to"
+       ],
        "whyUz": "Aniq sana (kun + oy + yil) → ON.\n'on 1st July, 1961'.",
        "speak": "1  was born ............ 1st July, 1961  [1-bo'shliq]"
       },
       {
        "prompt": "1  ... , ............ Norfolk  [2-bo'shliq]",
        "answer": "in",
-       "promptUz": "Shahar nomi",
+       "options": [
+        "in",
+        "with",
+        "on",
+        "to"
+       ],
        "whyUz": "Shahar va mamlakat → IN.\n'in Norfolk, England'.",
        "speak": "1  ... , ............ Norfolk  [2-bo'shliq]"
       },
       {
        "prompt": "2  ............ July, 1981",
        "answer": "in",
-       "promptUz": "Oy va yil (kun YO'Q)",
+       "options": [
+        "in",
+        "with",
+        "on",
+        "to"
+       ],
        "whyUz": "Kun ko'rsatilmagan, faqat oy va yil → IN.\n1-band bilan solishtiring: u yerda kun bor edi → ON.",
        "speak": "2  ............ July, 1981"
       },
       {
        "prompt": "3  studied ............ a boarding school",
        "answer": "at",
-       "promptUz": "Maktab — aniq muassasa",
+       "options": [
+        "at",
+        "with",
+        "in",
+        "on"
+       ],
        "whyUz": "'study AT a school' — maktab va universitet bilan AT.\n'at the Sorbonne' (9-mashqda) ham shunday.",
        "speak": "3  studied ............ a boarding school"
       },
       {
        "prompt": "4  returned ............ England",
        "answer": "to",
-       "promptUz": "Harakat yo'nalishi",
+       "options": [
+        "to",
+        "with",
+        "in",
+        "on"
+       ],
        "whyUz": "'return TO a place' = biror joyga qaytmoq.\nHarakat YO'NALISHI → TO.",
        "speak": "4  returned ............ England"
       },
       {
        "prompt": "5  ............ St Paul's Cathedral  [1-bo'shliq]",
        "answer": "at",
-       "promptUz": "Aniq bino",
+       "options": [
+        "at",
+        "with",
+        "in",
+        "on"
+       ],
        "whyUz": "Aniq bino → AT.\n'at St Paul's Cathedral'.",
        "speak": "5  ............ St Paul's Cathedral  [1-bo'shliq]"
       },
       {
        "prompt": "5  ... , ............ London  [2-bo'shliq]",
        "answer": "in",
-       "promptUz": "Shahar nomi",
+       "options": [
+        "in",
+        "with",
+        "on",
+        "to"
+       ],
        "whyUz": "Shahar → IN.\nBir gapda ikkalasi: AT bino, IN shahar.",
        "speak": "5  ... , ............ London  [2-bo'shliq]"
       },
       {
        "prompt": "6  watched her wedding ............ television",
        "answer": "on",
-       "promptUz": "Televizor uchun predlog",
+       "options": [
+        "on",
+        "with",
+        "in",
+        "to"
+       ],
        "whyUz": "'ON television' = televizorda.\nShunga o'xshash: on the radio, on the phone,\non the Internet.",
        "speak": "6  watched her wedding ............ television"
       },
       {
        "prompt": "7  had problems ............ their marriage",
        "answer": "with",
-       "promptUz": "'muammo' so'zi bilan keladigan predlog",
+       "options": [
+        "with",
+        "in",
+        "on",
+        "to"
+       ],
        "whyUz": "'have problems WITH something' = ...da muammo bo'lmoq.\n71-betda: 'They had problems WITH their marriage'.",
        "speak": "7  had problems ............ their marriage"
       },
       {
        "prompt": "8  travel ............ the world",
        "answer": "round",
-       "promptUz": "Dunyo BO'YLAB",
+       "options": [
+        "round",
+        "with",
+        "in",
+        "on"
+       ],
        "whyUz": "'travel ROUND the world' = dunyo bo'ylab sayohat qilmoq.\n'round' = 'around' bilan bir xil (britanchada 'round' ko'proq).",
        "speak": "8  travel ............ the world"
       },
       {
        "prompt": "9  those ............ need",
        "answer": "in",
-       "promptUz": "'muhtojlar' iborasi",
+       "options": [
+        "in",
+        "with",
+        "on",
+        "to"
+       ],
        "whyUz": "'those IN need' = muhtojlar — o'zgarmas ibora.\n6-mashqning 7-bandida ham bor.",
        "speak": "9  those ............ need"
       },
       {
        "prompt": "10  died ............ a car accident",
        "answer": "in",
-       "promptUz": "Halokat bilan keladigan predlog",
+       "options": [
+        "in",
+        "with",
+        "on",
+        "to"
+       ],
        "whyUz": "'die IN an accident' = halokatda halok bo'lmoq.",
        "speak": "10  died ............ a car accident"
       },
       {
        "prompt": "11  died ............ leukaemia",
        "answer": "of",
-       "promptUz": "KASALLIK bilan keladigan predlog",
+       "options": [
+        "of",
+        "with",
+        "in",
+        "on"
+       ],
        "whyUz": "'die OF an illness' = kasallikdan vafot etmoq.\n10-band bilan SOLISHTIRING — bu eng muhim juftlik:\n  die IN an accident  (halokat)\n  die OF an illness   (kasallik)\n9-mashqdagi Mari Kyuri 'died OF leukaemia' edi.",
        "speak": "11  died ............ leukaemia"
       }
@@ -3878,75 +4213,125 @@
      "book": "workbook",
      "bookPage": 42,
      "bookRef": "Workbook, 42-bet, 12-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Mother cleaned the house yesterday, ............ she didn't wash the clothes.",
        "answer": "but",
-       "promptUz": "Birinchisi TASDIQ, ikkinchisi INKOR",
+       "options": [
+        "but",
+        "and",
+        "when",
+        "because"
+       ],
        "whyUz": "'cleaned' (tasdiq) ↔ 'didn't wash' (inkor) →\nQARAMA-QARShILIK → BUT.\nOldidan VERGUL qo'yilgan — bu ham 'but' ni ko'rsatadi.",
        "speak": "1  Mother cleaned the house yesterday, ............ she didn't wash the clothes."
       },
       {
        "prompt": "2  I went to bed early last night ............ I was very tired.",
        "answer": "because",
-       "promptUz": "Erta yotishning sababi nima?",
+       "options": [
+        "because",
+        "and",
+        "when",
+        "until"
+       ],
        "whyUz": "'I was very tired' — erta yotishning SABABI → BECAUSE.",
        "speak": "2  I went to bed early last night ............ I was very tired."
       },
       {
        "prompt": "3  He went into the house ............ closed the door behind him.",
        "answer": "and",
-       "promptUz": "Ikki harakat KETMA-KET",
+       "options": [
+        "and",
+        "when",
+        "because",
+        "until"
+       ],
        "whyUz": "Uyga kirib, eshikni yopish — TABIIY ketma-ketlik → AND.\nDIQQAT: ikkinchi qismda ega ('he') takrorlanmagan —\nbir xil ega bo'lsa tushirsa bo'ladi.",
        "speak": "3  He went into the house ............ closed the door behind him."
       },
       {
        "prompt": "4  Julie lived with her parents ............ she married Peter.",
        "answer": "until",
-       "promptUz": "Turmushga chiqquniCHA yashadi",
+       "options": [
+        "until",
+        "and",
+        "when",
+        "because"
+       ],
        "whyUz": "'she married Peter' — yashashning OXIRINI ko'rsatadi →\nUNTIL.\nMa'nosi: turmushga chiqqunicha ota-onasi bilan yashadi.",
        "speak": "4  Julie lived with her parents ............ she married Peter."
       },
       {
        "prompt": "5  He first played tennis ............ he was 12 years old.",
        "answer": "when",
-       "promptUz": "'he was 12' — bu QACHON bo'lganini aytadi",
+       "options": [
+        "when",
+        "and",
+        "because",
+        "until"
+       ],
        "whyUz": "'he was 12 years old' — QAChON birinchi marta\no'ynaganini ko'rsatadi → WHEN.\n4-band bilan SOLISHTIRING: u yerda 'gacha' (until),\nbu yerda 'o'shanda' (when).",
        "speak": "5  He first played tennis ............ he was 12 years old."
       },
       {
        "prompt": "6  I didn't go to Jenny's birthday party ............ I was on holiday.",
        "answer": "because",
-       "promptUz": "Bormaslikning sababi nima?",
+       "options": [
+        "because",
+        "and",
+        "when",
+        "until"
+       ],
        "whyUz": "'I was on holiday' — bormaslikning SABABI → BECAUSE.\n'ON holiday' — predlog ON.",
        "speak": "6  I didn't go to Jenny's birthday party ............ I was on holiday."
       },
       {
        "prompt": "7  My son started walking ............ he was one year old.",
        "answer": "when",
-       "promptUz": "'he was one' — QACHON bo'lganini aytadi",
+       "options": [
+        "when",
+        "and",
+        "because",
+        "until"
+       ],
        "whyUz": "'he was one year old' — QAChON yura boshlaganini\nko'rsatadi → WHEN.\n5-band bilan bir xil mantiq.",
        "speak": "7  My son started walking ............ he was one year old."
       },
       {
        "prompt": "8  My brother's name is Tom ............ he is an engineer.",
        "answer": "and",
-       "promptUz": "Ikki mustaqil ma'lumot",
+       "options": [
+        "and",
+        "when",
+        "because",
+        "until"
+       ],
        "whyUz": "Ismi va kasbi — QO'ShIMCHA ma'lumot,\nqarama-qarshilik yoki sabab YO'Q → AND.\n'an engineer' — 'e' unli tovush → AN.",
        "speak": "8  My brother's name is Tom ............ he is an engineer."
       },
       {
        "prompt": "9  He lived in the same house ............ the day he died.",
        "answer": "until",
-       "promptUz": "Vafot etgan kuniGACHA yashadi",
+       "options": [
+        "until",
+        "and",
+        "when",
+        "because"
+       ],
        "whyUz": "'the day he died' — yashashning OXIRINI ko'rsatadi →\nUNTIL.\nCoursebook 71-72-betlarda ham shu qolip bor edi:\n'She continued travelling UNTIL the day she died.'",
        "speak": "9  He lived in the same house ............ the day he died."
       },
       {
        "prompt": "10  He enjoys playing baseball, ............ he doesn't like watching it on TV.",
        "answer": "but",
-       "promptUz": "Yoqadi ↔ yoqmaydi",
+       "options": [
+        "but",
+        "and",
+        "when",
+        "because"
+       ],
        "whyUz": "'enjoys' (yoqadi) ↔ 'doesn't like' (yoqmaydi) →\nQARAMA-QARShILIK → BUT.\nOldidan VERGUL bor.\n'enjoy + fe'l-ing' va 'like + fe'l-ing' — ikkalasida ham -ing.",
        "speak": "10  He enjoys playing baseball, ............ he doesn't like watching it on TV."
       }
@@ -4023,110 +4408,185 @@
      "book": "workbook",
      "bookPage": 42,
      "bookRef": "Workbook, 42-bet, 14-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  ............ Tiber is ............ river in ............ Rome.  [1-bo'shliq]",
        "answer": "The",
-       "promptUz": "Daryo nomi",
+       "options": [
+        "The",
+        "a",
+        "an",
+        "– (hech narsa)"
+       ],
        "whyUz": "'THE Tiber' — DARYO nomi → THE SHART.\nTibr — Rimdan oqib o'tadigan daryo.",
        "speak": "1  ............ Tiber is ............ river in ............ Rome.  [1-bo'shliq]"
       },
       {
        "prompt": "1  ... is ............ river in ...  [2-bo'shliq]",
        "answer": "a",
-       "promptUz": "'river' birinchi marta, sanaladigan",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "– (hech narsa)"
+       ],
        "whyUz": "'a river' — birinchi marta aytilyapti, BIRLIK → A.\n'r' undosh tovush → A.",
        "speak": "1  ... is ............ river in ...  [2-bo'shliq]"
       },
       {
        "prompt": "1  ... in ............ Rome.  [3-bo'shliq]",
        "answer": "– (hech narsa)",
-       "promptUz": "Shahar nomi",
+       "options": [
+        "– (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Rome' — ShAHAR nomi → artikl QO'YILMAYDI.",
        "speak": "1  ... in ............ Rome.  [3-bo'shliq]"
       },
       {
        "prompt": "2  We have ............ dinner at 7 every day.",
        "answer": "– (hech narsa)",
-       "promptUz": "Ovqat nomi",
+       "options": [
+        "– (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'dinner' — OVQAT nomi → artikl QO'YILMAYDI.\n'have dinner AT 7' — soat bilan AT.",
        "speak": "2  We have ............ dinner at 7 every day."
       },
       {
        "prompt": "3  ............ Smiths live in ............ Liverpool.  [1-bo'shliq]",
        "answer": "The",
-       "promptUz": "Oila nomi",
+       "options": [
+        "The",
+        "a",
+        "an",
+        "– (hech narsa)"
+       ],
        "whyUz": "'THE Smiths' — OILA nomi → THE SHART + ko'plik -S.\nMa'nosi: Smitlar oilasi.\nDIQQAT: fe'l KO'PLIKDA — 'live' ('lives' EMAS).",
        "speak": "3  ............ Smiths live in ............ Liverpool.  [1-bo'shliq]"
       },
       {
        "prompt": "3  ... live in ............ Liverpool.  [2-bo'shliq]",
        "answer": "– (hech narsa)",
-       "promptUz": "Shahar nomi",
+       "options": [
+        "– (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Liverpool' — ShAHAR nomi → artikl QO'YILMAYDI.",
        "speak": "3  ... live in ............ Liverpool.  [2-bo'shliq]"
       },
       {
        "prompt": "4  ............ red car outside belongs to ............ Jason.  [1-bo'shliq]",
        "answer": "The",
-       "promptUz": "Qaysi mashina ekani ANIQ ('outside')",
+       "options": [
+        "The",
+        "a",
+        "an",
+        "– (hech narsa)"
+       ],
        "whyUz": "'THE red car OUTSIDE' — qaysi mashina ekani ANIQ\nko'rsatilgan (tashqaridagi) → THE.\nAgar shunchaki 'a red car' bo'lsa, qaysi biri ekani\nnoma'lum bo'lardi.",
        "speak": "4  ............ red car outside belongs to ............ Jason.  [1-bo'shliq]"
       },
       {
        "prompt": "4  ... belongs to ............ Jason.  [2-bo'shliq]",
        "answer": "– (hech narsa)",
-       "promptUz": "Odam ismi",
+       "options": [
+        "– (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Jason' — ATOQLI OT (ism) → artikl QO'YILMAYDI.\n'belong TO somebody' = kimgadir tegishli bo'lmoq.",
        "speak": "4  ... belongs to ............ Jason.  [2-bo'shliq]"
       },
       {
        "prompt": "5  There was ............ excellent film on TV last night.  [1-bo'shliq]",
        "answer": "an",
-       "promptUz": "'excellent' qaysi tovush bilan boshlanadi?",
+       "options": [
+        "an",
+        "a",
+        "the",
+        "– (hech narsa)"
+       ],
        "whyUz": "'excellent' — 'e' UNLI tovush → AN.\nFilm BIRINCHI marta aytilyapti.",
        "speak": "5  There was ............ excellent film on TV last night.  [1-bo'shliq]"
       },
       {
        "prompt": "5  ............ film was about ...  [2-bo'shliq]",
        "answer": "The",
-       "promptUz": "O'sha film — ILGARI aytilgan",
+       "options": [
+        "The",
+        "a",
+        "an",
+        "– (hech narsa)"
+       ],
        "whyUz": "'THE film' — ILGARI aytilgan film → THE.\nDIQQAT — BU ENG MUHIM JUFTLIK:\n  AN excellent film  (birinchi marta)\n  THE film           (o'sha film)\nGrammar 42-betdagi asosiy qoida.",
        "speak": "5  ............ film was about ...  [2-bo'shliq]"
       },
       {
        "prompt": "5  ... was about ............ Zulu tribe.  [3-bo'shliq]",
        "answer": "the",
-       "promptUz": "Qabila nomi",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "– (hech narsa)"
+       ],
        "whyUz": "'THE Zulu tribe' — QABILA nomi → THE SHART.\nGrammar 42-betdagi qoida: 'names of tribes: the Navajo,\nthe Inuit'.\nZulular — Janubiy Afrikadagi xalq.",
        "speak": "5  ... was about ............ Zulu tribe.  [3-bo'shliq]"
       },
       {
        "prompt": "6  ............ Americans like ............ baseball a lot.  [1-bo'shliq]",
        "answer": "The",
-       "promptUz": "Millat nomi (butun xalq)",
+       "options": [
+        "The",
+        "a",
+        "an",
+        "– (hech narsa)"
+       ],
        "whyUz": "'THE Americans' — MILLAT nomi (butun xalq) → THE SHART.\nGrammar 42-betdagi qoida: 'nationalities: the Polish,\nthe Italians'.",
        "speak": "6  ............ Americans like ............ baseball a lot.  [1-bo'shliq]"
       },
       {
        "prompt": "6  ... like ............ baseball a lot.  [2-bo'shliq]",
        "answer": "– (hech narsa)",
-       "promptUz": "Sport nomi",
+       "options": [
+        "– (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'baseball' — SPORT nomi → artikl QO'YILMAYDI.\nGrammar 42-betdagi qoida: 'names of sports/games:\nbasketball, cards'.",
        "speak": "6  ... like ............ baseball a lot.  [2-bo'shliq]"
       },
       {
        "prompt": "7  ............ Himalayas are in ............ Asia.  [1-bo'shliq]",
        "answer": "The",
-       "promptUz": "Tog' tizmasi",
+       "options": [
+        "The",
+        "a",
+        "an",
+        "– (hech narsa)"
+       ],
        "whyUz": "'THE Himalayas' — TOG' TIZMASI → THE SHART + ko'plik.\nGrammar 42-betdagi qoidada shu misol bor edi.\nDIQQAT: fe'l KO'PLIKDA — 'ARE'.",
        "speak": "7  ............ Himalayas are in ............ Asia.  [1-bo'shliq]"
       },
       {
        "prompt": "7  ... are in ............ Asia.  [2-bo'shliq]",
        "answer": "– (hech narsa)",
-       "promptUz": "Qit'a nomi",
+       "options": [
+        "– (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Asia' — QIT'A nomi → artikl QO'YILMAYDI.\nShunga o'xshash: Europe, Africa, America.",
        "speak": "7  ... are in ............ Asia.  [2-bo'shliq]"
       }
@@ -4526,61 +4986,101 @@
      "book": "grammar",
      "bookPage": 44,
      "bookRef": "Grammar Book, 44-bet, 4-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Alexander Graham Bell ............ a famous inventor.",
        "answer": "was",
-       "promptUz": "Keyin 'a famous inventor' — kasb keladi",
+       "options": [
+        "was",
+        "lectured",
+        "moved",
+        "invented"
+       ],
        "whyUz": "Kasb aytilyapti → 'to be' fe'li kerak.\n'Alexander Graham Bell' BIRLIK → WAS.\n'an inventor' = ixtirochi.",
        "speak": "1  Alexander Graham Bell ............ a famous inventor."
       },
       {
        "prompt": "2  ... and ............ his first studies in sound in 1864.",
        "answer": "began",
-       "promptUz": "Tadqiqotni nima qildi?",
+       "options": [
+        "began",
+        "lectured",
+        "moved",
+        "was"
+       ],
        "whyUz": "'BEGAN his first studies' = ilk tadqiqotlarini boshladi.\nbegin → BEGAN (NOTO'G'RI fe'l).\n'sound' = tovush — bu keyinchalik telefonga olib kelgan.",
        "speak": "2  ... and ............ his first studies in sound in 1864."
       },
       {
        "prompt": "3  In 1870, together with his family, he ............ to Canada.",
        "answer": "moved",
-       "promptUz": "'to Canada' — yo'nalish, ko'chish",
+       "options": [
+        "moved",
+        "lectured",
+        "was",
+        "invented"
+       ],
        "whyUz": "'MOVED to Canada' = Kanadaga ko'chib o'tdi.\n'to move' = ko'chib o'tmoq (yashash joyini o'zgartirmoq).\nTO'G'RI fe'l: move → moved (oxiri 'e' → faqat + D).",
        "speak": "3  In 1870, together with his family, he ............ to Canada."
       },
       {
        "prompt": "4  In 1871 he ............ in Boston, USA, about how to teach speech to the deaf.",
        "answer": "lectured",
-       "promptUz": "Professor nima qiladi?",
+       "options": [
+        "lectured",
+        "moved",
+        "was",
+        "invented"
+       ],
        "whyUz": "'LECTURED in Boston about ...' = ...haqida ma'ruza qildi.\n'to lecture' = ma'ruza qilmoq.\nTO'G'RI fe'l: lecture → lectured.\n'the deaf' = karlar (sifat + 'the' → butun guruh).",
        "speak": "4  In 1871 he ............ in Boston, USA, about how to teach speech to the deaf."
       },
       {
        "prompt": "5  ... and in 1872 he ............ his own school for training teachers of the deaf.",
        "answer": "opened",
-       "promptUz": "Maktab bilan nima qilinadi?",
+       "options": [
+        "opened",
+        "lectured",
+        "moved",
+        "was"
+       ],
        "whyUz": "'OPENED his own school' = o'z maktabini ochdi.\nTO'G'RI fe'l: open → opened.\nDIQQAT: urg'u BIRINCHI bo'g'inda (O-pen) —\nshuning uchun 'n' IKKILANMAYDI.\n'his own' = o'zining.",
        "speak": "5  ... and in 1872 he ............ his own school for training teachers of the deaf."
       },
       {
        "prompt": "6  Bell ............ the telephone in 1876.",
        "answer": "invented",
-       "promptUz": "Bell nimasi bilan mashhur?",
+       "options": [
+        "invented",
+        "lectured",
+        "moved",
+        "was"
+       ],
        "whyUz": "'INVENTED the telephone' = telefonni ixtiro qildi.\nTO'G'RI fe'l: invent → invented.\nBu — Bellning eng mashhur ishi.\nMatnda keyinroq: 'he invented the gramophone' — takrorlangan.",
        "speak": "6  Bell ............ the telephone in 1876."
       },
       {
        "prompt": "7  He ............ Mabel Hubbard a year later.",
        "answer": "married",
-       "promptUz": "Ayol ismi keladi — nikoh",
+       "options": [
+        "married",
+        "lectured",
+        "moved",
+        "was"
+       ],
        "whyUz": "'MARRIED Mabel Hubbard' = Mabel Xabbardga uylandi.\nTO'G'RI fe'l: marry → married ('r' undosh + 'y' → -IED).\nDIQQAT: 'married WITH' XATO — 'with' KERAK EMAS.\n'a year later' = bir yildan keyin (ya'ni 1877).",
        "speak": "7  He ............ Mabel Hubbard a year later."
       },
       {
        "prompt": "8  Alexander Graham Bell ............ on 2nd August 1922.",
        "answer": "died",
-       "promptUz": "Tarjimai holning oxirgi gapi",
+       "options": [
+        "died",
+        "lectured",
+        "moved",
+        "was"
+       ],
        "whyUz": "'DIED on 2nd August 1922' = 1922-yil 2-avgustda vafot etdi.\nTO'G'RI fe'l: die → died (oxiri 'e' → faqat + D).\n'ON 2nd August' — aniq sana → ON.",
        "speak": "8  Alexander Graham Bell ............ on 2nd August 1922."
       }
@@ -5739,124 +6239,209 @@
      "book": "grammar",
      "bookPage": 46,
      "bookRef": "Grammar Book, 46-bet, 15-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  ............ Athens is the capital of ............ Greece.  [1-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Shahar nomi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Athens' — ShAHAR nomi (atoqli ot) → artikl QO'YILMAYDI.\nAfina — Gretsiya poytaxti.",
        "speak": "1  ............ Athens is the capital of ............ Greece.  [1-bo'shliq]"
       },
       {
        "prompt": "1  ... the capital of ............ Greece.  [2-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Mamlakat nomi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Greece' — MAMLAKAT nomi → artikl QO'YILMAYDI.\nDIQQAT: 'THE capital' da 'the' allaqachon yozilgan —\nchunki poytaxt YAGONA.",
        "speak": "1  ... the capital of ............ Greece.  [2-bo'shliq]"
       },
       {
        "prompt": "2  I have ............ brother and two sisters.",
        "answer": "a",
-       "promptUz": "Bitta aka/uka, birinchi marta aytilyapti",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "Birinchi marta aytilyapti, BIRLIK sanaladigan ot → A.\n'brother' — 'b' undosh tovush → A ('an' EMAS).\nDIQQAT: 'two sisters' oldidan artikl KERAK EMAS —\nson allaqachon bor.",
        "speak": "2  I have ............ brother and two sisters."
       },
       {
        "prompt": "3  Woody's is ............ excellent restaurant.",
        "answer": "an",
-       "promptUz": "'excellent' qaysi tovush bilan boshlanadi?",
+       "options": [
+        "an",
+        "a",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "'excellent' — 'e' UNLI tovush → AN.\nDIQQAT: artikl SIFATdan oldin turadi, otdan emas:\n  AN excellent restaurant  ✓\n  excellent A restaurant   ✗",
        "speak": "3  Woody's is ............ excellent restaurant."
       },
       {
        "prompt": "4  ............ Browns are from ............ America.  [1-bo'shliq]",
        "answer": "the",
-       "promptUz": "Oila nomi",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'the Browns' — OILA nomi → THE SHART + ko'plik -S.\n42-betdagi qoidada shu misol bor edi.\nMa'nosi: Braunlar oilasi.",
        "speak": "4  ............ Browns are from ............ America.  [1-bo'shliq]"
       },
       {
        "prompt": "4  ... are from ............ America.  [2-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Mamlakat nomi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'America' — MAMLAKAT nomi → artikl QO'YILMAYDI.\nDIQQAT: 'the USA' esa THE bilan (ko'plik shaklda).",
        "speak": "4  ... are from ............ America.  [2-bo'shliq]"
       },
       {
        "prompt": "5  We had ............ picnic in ............ park yesterday.  [1-bo'shliq]",
        "answer": "a",
-       "promptUz": "Birinchi marta aytilyapti",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "'picnic' birinchi marta aytilyapti → A.\n'p' undosh tovush → A.\n'have a picnic' = piknik qilmoq.",
        "speak": "5  We had ............ picnic in ............ park yesterday.  [1-bo'shliq]"
       },
       {
        "prompt": "5  ... in ............ park yesterday.  [2-bo'shliq]",
        "answer": "the",
-       "promptUz": "Gaplashuvchilar qaysi bog' ekanini bilishadi",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'THE park' — gaplashuvchilarga MA'LUM bo'lgan bog'\n(o'z shaharlaridagi bog') → THE.\nBu 'birinchi marta / ilgari ma'lum' qoidasining\nikkinchi turi: kontekstdan ma'lum bo'lgan narsa.",
        "speak": "5  ... in ............ park yesterday.  [2-bo'shliq]"
       },
       {
        "prompt": "6  Joey cooked ............ dinner yesterday ...  [1-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Ovqat nomi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'dinner' — OVQAT nomi → artikl QO'YILMAYDI.\n42-betdagi qoida: 'names of meals: dinner, breakfast'.",
        "speak": "6  Joey cooked ............ dinner yesterday ...  [1-bo'shliq]"
       },
       {
        "prompt": "6  ... and I made ............ cake.  [2-bo'shliq]",
        "answer": "a",
-       "promptUz": "Birinchi marta aytilyapti",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "'cake' birinchi marta aytilyapti, sanaladigan → A.\n'c' undosh tovush → A.\nDIQQAT: bir gapda ikki xil qoida —\n'dinner' (ovqat nomi, artiklsiz) va 'a cake' (sanaladigan ot).",
        "speak": "6  ... and I made ............ cake.  [2-bo'shliq]"
       },
       {
        "prompt": "7  I saw ............ awful film at ............ cinema last night.  [1-bo'shliq]",
        "answer": "an",
-       "promptUz": "'awful' qaysi tovush bilan boshlanadi?",
+       "options": [
+        "an",
+        "a",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "'awful' — 'a' UNLI tovush → AN.\n'awful' = dahshatli, juda yomon.",
        "speak": "7  I saw ............ awful film at ............ cinema last night.  [1-bo'shliq]"
       },
       {
        "prompt": "7  ... at ............ cinema last night.  [2-bo'shliq]",
        "answer": "the",
-       "promptUz": "Ma'lum kinoteatr",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'THE cinema' — ma'lum, mahalliy kinoteatr → THE.\nShunga o'xshash: go to the cinema, go to the theatre.",
        "speak": "7  ... at ............ cinema last night.  [2-bo'shliq]"
       },
       {
        "prompt": "8  ............ Statue of Liberty is in ............ New York.  [1-bo'shliq]",
        "answer": "the",
-       "promptUz": "Yagona mashhur yodgorlik",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'THE Statue of Liberty' — YAGONA, mashhur yodgorlik → THE.\nShunga o'xshash: the Eiffel Tower, the Great Wall.\n'a statue' = haykal;  'liberty' = ozodlik.",
        "speak": "8  ............ Statue of Liberty is in ............ New York.  [1-bo'shliq]"
       },
       {
        "prompt": "8  ... is in ............ New York.  [2-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Shahar nomi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'New York' — ShAHAR nomi → artikl QO'YILMAYDI.",
        "speak": "8  ... is in ............ New York.  [2-bo'shliq]"
       },
       {
        "prompt": "9  Did you get ............ apple for ............ Jerry?  [1-bo'shliq]",
        "answer": "an",
-       "promptUz": "'apple' qaysi tovush bilan boshlanadi?",
+       "options": [
+        "an",
+        "a",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "'apple' — 'a' UNLI tovush → AN.\n42-betdagi Pronunciation qutisida ham 'the apple' misoli bor.",
        "speak": "9  Did you get ............ apple for ............ Jerry?  [1-bo'shliq]"
       },
       {
        "prompt": "9  ... for ............ Jerry?  [2-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Odam ismi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Jerry' — ATOQLI OT (ism) → artikl QO'YILMAYDI.",
        "speak": "9  ... for ............ Jerry?  [2-bo'shliq]"
       },
       {
        "prompt": "10  Vivaldi was ............ famous composer and violinist.",
        "answer": "a",
-       "promptUz": "Kasb aytilyapti",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "KASB → artikl SHART.\n'famous' — 'f' undosh tovush → A.\nDIQQAT: ikki kasb ('composer and violinist') bo'lsa ham\nartikl BIR MARTA yoziladi.\nVivaldi — Coursebook 73 va 75-betlarda ham bor edi.",
        "speak": "10  Vivaldi was ............ famous composer and violinist."
       }
@@ -5881,131 +6466,221 @@
      "book": "grammar",
      "bookPage": 47,
      "bookRef": "Grammar Book, 47-bet, 15-mashq (davomi)",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "11  My name is ............ Tom.  [1-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Odam ismi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Tom' — ATOQLI OT (ism) → artikl QO'YILMAYDI.",
        "speak": "11  My name is ............ Tom.  [1-bo'shliq]"
       },
       {
        "prompt": "11  I am from ............ Ottawa.  [2-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Shahar nomi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Ottawa' — ShAHAR nomi (Kanada poytaxti) →\nartikl QO'YILMAYDI.",
        "speak": "11  I am from ............ Ottawa.  [2-bo'shliq]"
       },
       {
        "prompt": "12  Is there any milk in ............ fridge?",
        "answer": "the",
-       "promptUz": "Uydagi MA'LUM muzlatgich",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'THE fridge' — gaplashuvchilarga MA'LUM bo'lgan\nmuzlatgich (uydagi) → THE.\n'a fridge' = muzlatgich (umuman).",
        "speak": "12  Is there any milk in ............ fridge?"
       },
       {
        "prompt": "13  Her father is ............ pilot.  [1-bo'shliq]",
        "answer": "a",
-       "promptUz": "Kasb aytilyapti",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "KASB → artikl SHART.\n'pilot' — 'p' undosh tovush → A.",
        "speak": "13  Her father is ............ pilot.  [1-bo'shliq]"
       },
       {
        "prompt": "13  He flies ............ aeroplane.  [2-bo'shliq]",
        "answer": "an",
-       "promptUz": "'aeroplane' qaysi tovush bilan boshlanadi?",
+       "options": [
+        "an",
+        "a",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "'aeroplane' — 'a' UNLI tovush → AN.\n'to fly' = uchmoq, uchirmoq.",
        "speak": "13  He flies ............ aeroplane.  [2-bo'shliq]"
       },
       {
        "prompt": "14  Jim has got ............ two uncles ...  [1-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Son allaqachon bor",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'two' — SON allaqachon miqdorni ko'rsatgan →\nartikl QO'YILMAYDI.\n'a two uncles' XATO.",
        "speak": "14  Jim has got ............ two uncles ...  [1-bo'shliq]"
       },
       {
        "prompt": "14  ... and ............ aunt.  [2-bo'shliq]",
        "answer": "an",
-       "promptUz": "'aunt' qaysi tovush bilan boshlanadi?",
+       "options": [
+        "an",
+        "a",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "'aunt' — 'a' UNLI tovush → AN.\nBIRLIK, birinchi marta aytilyapti.\n'an aunt' = xola, amma.",
        "speak": "14  ... and ............ aunt.  [2-bo'shliq]"
       },
       {
        "prompt": "15  Dana went to ............ Brazil last summer.",
        "answer": "— (hech narsa)",
-       "promptUz": "Mamlakat nomi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'Brazil' — MAMLAKAT nomi → artikl QO'YILMAYDI.\nCoursebook 68-69-betlardagi hikoya ham Braziliya haqida edi.",
        "speak": "15  Dana went to ............ Brazil last summer."
       },
       {
        "prompt": "16  I don't want ............ hamburger for lunch.",
        "answer": "a",
-       "promptUz": "Bitta gamburger, sanaladigan",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "BIRLIK sanaladigan ot, birinchi marta → A.\n'hamburger' — 'h' undosh tovush (o'qiladi) → A.\n'for lunch' — ovqat nomi artiklsiz.",
        "speak": "16  I don't want ............ hamburger for lunch."
       },
       {
        "prompt": "17  Paris is ............ capital of France.",
        "answer": "the",
-       "promptUz": "Poytaxt YAGONA",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'THE capital' — har mamlakatning poytaxti YAGONA → THE.\n46-betdagi 15-mashqning 1-bandida ham shunday edi:\n'Athens is THE capital of Greece'.",
        "speak": "17  Paris is ............ capital of France."
       },
       {
        "prompt": "18  Bill hasn't got ............ computer, but Alex has.",
        "answer": "a",
-       "promptUz": "Bitta kompyuter, sanaladigan",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "BIRLIK sanaladigan ot → A.\n'but Alex has' = lekin Aleksda bor\n('has got' qisqartirilgan).",
        "speak": "18  Bill hasn't got ............ computer, but Alex has."
       },
       {
        "prompt": "19  We saw ............ great film last night.",
        "answer": "a",
-       "promptUz": "'great' qaysi tovush bilan boshlanadi?",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "'great' — 'g' undosh tovush → A.\nBirinchi marta aytilyapti.\nsee → SAW (noto'g'ri fe'l).",
        "speak": "19  We saw ............ great film last night."
       },
       {
        "prompt": "20  Brenda likes ............ swimming ...  [1-bo'shliq]",
        "answer": "— (hech narsa)",
-       "promptUz": "Sport / mashg'ulot nomi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'swimming' — MAShG'ULOT nomi (-ing shakli) →\nartikl QO'YILMAYDI.\n42-betdagi qoida: sport nomlari oldidan 'the' yo'q.",
        "speak": "20  Brenda likes ............ swimming ...  [1-bo'shliq]"
       },
       {
        "prompt": "20  ... but she doesn't like playing ............ guitar.  [2-bo'shliq]",
        "answer": "the",
-       "promptUz": "Cholg'u asbobi",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'play THE guitar' — CHOLG'U ASBOBI oldidan THE SHART.\nDIQQAT — BIR GAPDA IKKI QOIDA:\n  swimming (sport)    → artikl YO'Q\n  the guitar (cholg'u) → THE SHART\nBu farq ataylab bir gapga joylashtirilgan.",
        "speak": "20  ... but she doesn't like playing ............ guitar.  [2-bo'shliq]"
       },
       {
        "prompt": "21  ............ Danube isn't longer than ............ Amazon.  [1-bo'shliq]",
        "answer": "The",
-       "promptUz": "Daryo nomi",
+       "options": [
+        "The",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'THE Danube' — DARYO nomi → THE SHART.\nDunay — Yevropadagi daryo.\nCoursebook 73-betda 'The Blue Danube' valsi bor edi.",
        "speak": "21  ............ Danube isn't longer than ............ Amazon.  [1-bo'shliq]"
       },
       {
        "prompt": "21  ... longer than ............ Amazon.  [2-bo'shliq]",
        "answer": "the",
-       "promptUz": "Yana daryo nomi",
+       "options": [
+        "the",
+        "a",
+        "an",
+        "— (hech narsa)"
+       ],
        "whyUz": "'THE Amazon' — DARYO nomi → THE SHART.\n42-betdagi qoidada shu misol bor edi.\n'longer THAN' — qiyosiy daraja + than.",
        "speak": "21  ... longer than ............ Amazon.  [2-bo'shliq]"
       },
       {
        "prompt": "22  How much are these ............ eggs?",
        "answer": "— (hech narsa)",
-       "promptUz": "'these' allaqachon aniqlab turibdi",
+       "options": [
+        "— (hech narsa)",
+        "a",
+        "an",
+        "the"
+       ],
        "whyUz": "'these' — KO'RSATISh olmoshi, u allaqachon\naniqlovchi vazifasini bajaradi → artikl QO'YILMAYDI.\n'these the eggs' XATO.\n'How much are ...?' = qancha turadi?",
        "speak": "22  How much are these ............ eggs?"
       },
       {
        "prompt": "23  My mother is ............ nurse.",
        "answer": "a",
-       "promptUz": "Kasb aytilyapti",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "— (hech narsa)"
+       ],
        "whyUz": "KASB → artikl SHART.\n'nurse' — 'n' undosh tovush → A.\nCoursebook 70-betdagi 3-mashqda 'a nurse' bor edi.",
        "speak": "23  My mother is ............ nurse."
       }

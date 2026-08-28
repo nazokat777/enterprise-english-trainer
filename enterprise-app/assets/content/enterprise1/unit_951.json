@@ -120,65 +120,125 @@
      "book": "coursebook",
      "bookPage": 32,
      "bookRef": "Coursebook, 32-bet, 2-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Downstairs, there is a ____ living-room.",
        "answer": "spacious",
+       "options": [
+        "spacious",
+        "hear",
+        "near",
+        "going"
+       ],
        "whyUz": "Otdan oldin SIFAT kerak. spacious = keng (Unit 3).",
        "speak": "1  Downstairs, there is a ____ living-room."
       },
       {
        "prompt": "2  Tony loves ____ to the cinema.",
        "answer": "going",
+       "options": [
+        "going",
+        "hear",
+        "near",
+        "College"
+       ],
        "whyUz": "'love' dan keyin fe'l -ING oladi (Unit 4).",
        "speak": "2  Tony loves ____ to the cinema."
       },
       {
        "prompt": "3  Please be my ____ pal.",
        "answer": "e-mail",
+       "options": [
+        "e-mail",
+        "hear",
+        "near",
+        "going"
+       ],
        "whyUz": "'e-mail pal' — elektron pochta orqali yozishadigan do'st. 'pen pal' ning zamonaviy varianti.",
        "speak": "3  Please be my ____ pal."
       },
       {
        "prompt": "4  Hope to ____ from you soon.",
        "answer": "hear",
+       "options": [
+        "hear",
+        "near",
+        "going",
+        "College"
+       ],
        "whyUz": "'hear from somebody' = kimdandir xabar olmoq. Xat oxiridagi standart ibora.",
        "speak": "4  Hope to ____ from you soon."
       },
       {
        "prompt": "5  Rashid is a student at Mortimer ____ .",
        "answer": "College",
+       "options": [
+        "College",
+        "hear",
+        "near",
+        "going"
+       ],
        "whyUz": "O'quv yurti nomi — katta harf bilan. 'at ... College' — muassasada.",
        "speak": "5  Rashid is a student at Mortimer ____ ."
       },
       {
        "prompt": "6  Bob's house is ____ the city centre.",
        "answer": "near",
+       "options": [
+        "near",
+        "hear",
+        "going",
+        "College"
+       ],
        "whyUz": "'near' = yaqin. Predlogsiz ishlatiladi ('near from' XATO).",
        "speak": "6  Bob's house is ____ the city centre."
       },
       {
        "prompt": "7  We have got a wonderful ____ from our balcony.",
        "answer": "view",
+       "options": [
+        "view",
+        "hear",
+        "near",
+        "going"
+       ],
        "whyUz": "'a wonderful view' — ajoyib manzara (Unit 3).",
        "speak": "7  We have got a wonderful ____ from our balcony."
       },
       {
        "prompt": "8  This modern flat is a bargain. It's really very ____ .",
        "answer": "cheap",
+       "options": [
+        "cheap",
+        "hear",
+        "near",
+        "going"
+       ],
        "whyUz": "'bargain' = arzon taklif → demak narxi arzon (cheap).",
        "speak": "8  This modern flat is a bargain. It's really very ____ ."
       },
       {
        "prompt": "9  Mary is quite tall and slim. She is a ____ .",
        "answer": "dancer",
+       "options": [
+        "dancer",
+        "hear",
+        "near",
+        "going"
+       ],
        "whyUz": "Baland va nozik gavda → raqqosa. 'dance' + er.",
        "speak": "9  Mary is quite tall and slim. She is a ____ ."
       },
       {
        "prompt": "10  Chinese people have usually got a ____ complexion.",
        "answer": "yellowish",
+       "options": [
+        "yellowish",
+        "hear",
+        "near",
+        "going"
+       ],
        "whyUz": "'yellow' + -ish = sarg'ish. '-ish' rang nomiga qo'shilsa 'ozgina o'sha rangda' ma'nosini beradi.",
        "speak": "10  Chinese people have usually got a ____ complexion."
       }

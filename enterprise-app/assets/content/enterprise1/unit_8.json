@@ -403,75 +403,125 @@
      "book": "coursebook",
      "bookPage": 55,
      "bookRef": "Coursebook, 55-bet, 4-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  ............ steak",
        "answer": "pepper",
-       "promptUz": "Qora achchiq ziravor bilan pishirilgan go'sht",
+       "options": [
+        "pepper",
+        "roast",
+        "apple",
+        "don't miss"
+       ],
        "whyUz": "'pepper steak' = qalampirli bifshteks.\nGap: There is pepper steak on the menu.",
        "speak": "1  ............ steak"
       },
       {
        "prompt": "2  ............ sauce",
        "answer": "tomato",
-       "promptUz": "Qizil sabzavotdan tayyorlangan sous",
+       "options": [
+        "tomato",
+        "roast",
+        "apple",
+        "don't miss"
+       ],
        "whyUz": "'tomato sauce' = pomidor sousi.\nDIQQAT: birinchi ot BIRLIKDA — 'tomatoes sauce' XATO.\nGap: I like pasta with rich tomato sauce.",
        "speak": "2  ............ sauce"
       },
       {
        "prompt": "3  ............ pie",
        "answer": "apple",
-       "promptUz": "Shirinlik — meva bilan pirog",
+       "options": [
+        "apple",
+        "roast",
+        "don't miss",
+        "helpful"
+       ],
        "whyUz": "'apple pie' = olmali pirog.\nGap: For dessert, have a slice of apple pie.",
        "speak": "3  ............ pie"
       },
       {
        "prompt": "4  ............ ice-cream",
        "answer": "special",
-       "promptUz": "Faqat shu restoranda bor",
+       "options": [
+        "special",
+        "roast",
+        "apple",
+        "don't miss"
+       ],
        "whyUz": "'special ice-cream' = maxsus muzqaymoq.\nGap: Try Laura's special ice-cream.",
        "speak": "4  ............ ice-cream"
       },
       {
        "prompt": "5  ............ waiters",
        "answer": "helpful",
-       "promptUz": "Yordam berishga tayyor ofitsiantlar",
+       "options": [
+        "helpful",
+        "roast",
+        "apple",
+        "don't miss"
+       ],
        "whyUz": "'helpful waiters' = yordamchan ofitsiantlar.\nhelp + -ful = yordamchan.\nGap: The waiters are very helpful and friendly.",
        "speak": "5  ............ waiters"
       },
       {
        "prompt": "6  ............ chicken",
        "answer": "roast",
-       "promptUz": "Duxovkada pishirilgan tovuq",
+       "options": [
+        "roast",
+        "apple",
+        "don't miss",
+        "helpful"
+       ],
        "whyUz": "'roast chicken' = qovurilgan tovuq.\nGap: I often have roast chicken for dinner.",
        "speak": "6  ............ chicken"
       },
       {
        "prompt": "7  ............ bread",
        "answer": "home-made",
-       "promptUz": "Uyda pishirilgan non",
+       "options": [
+        "home-made",
+        "roast",
+        "apple",
+        "don't miss"
+       ],
        "whyUz": "'home-made bread' = uyda pishirilgan non.\nGap: Laura's home-made bread is delicious.",
        "speak": "7  ............ bread"
       },
       {
        "prompt": "8  ............ dishes",
        "answer": "tasty",
-       "promptUz": "Mazali taomlar",
+       "options": [
+        "tasty",
+        "roast",
+        "apple",
+        "don't miss"
+       ],
        "whyUz": "'tasty dishes' = mazali taomlar.\ntaste (ta'm) + -y = mazali.\nGap: There are a lot of tasty dishes to choose from.",
        "speak": "8  ............ dishes"
       },
       {
        "prompt": "9  to ............ a table",
        "answer": "book",
-       "promptUz": "Oldindan stol olib qo'yish fe'li",
+       "options": [
+        "book",
+        "roast",
+        "apple",
+        "don't miss"
+       ],
        "whyUz": "'to book a table' = stol band qilmoq.\nDIQQAT: 'a book' = kitob (OT), 'to book' = band qilmoq (FE'L).\nGap: Don't forget to book a table first.",
        "speak": "9  to ............ a table"
       },
       {
        "prompt": "10  ............ the chance",
        "answer": "don't miss",
-       "promptUz": "Imkoniyatni qo'ldan boy bermaslik haqidagi buyruq",
+       "options": [
+        "don't miss",
+        "roast",
+        "apple",
+        "helpful"
+       ],
        "whyUz": "'Don't miss the chance' = imkoniyatni qo'ldan boy bermang.\nGap: Don't miss the chance to try our home-made bread!",
        "speak": "10  ............ the chance"
       }
@@ -486,40 +536,65 @@
      "book": "coursebook",
      "bookPage": 55,
      "bookRef": "Coursebook, 55-bet, 5-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  We eat soup with a ............ .",
        "answer": "spoon",
-       "promptUz": "Suyuq ovqat uchun kerak",
+       "options": [
+        "spoon",
+        "knife",
+        "fork",
+        "plate"
+       ],
        "whyUz": "Sho'rva SUYUQ → qoshiq kerak.\n'eat WITH a spoon' — asbob uchun WITH.",
        "speak": "1  We eat soup with a ............ ."
       },
       {
        "prompt": "2  We serve food on a ............ .",
        "answer": "plate",
-       "promptUz": "Ovqat qo'yiladigan yassi idish",
+       "options": [
+        "plate",
+        "knife",
+        "fork",
+        "frying-pan"
+       ],
        "whyUz": "'to serve food' = ovqat tortmoq.\n'ON a plate' — tarelka YUZASIDA → ON.",
        "speak": "2  We serve food on a ............ ."
       },
       {
        "prompt": "3  We cut food with a ............ .",
        "answer": "knife",
-       "promptUz": "O'tkir tig'i bor asbob",
+       "options": [
+        "knife",
+        "fork",
+        "plate",
+        "frying-pan"
+       ],
        "whyUz": "'to cut' = kesmoq.\nTalaffuz: knife /naɪf/ — 'k' O'QILMAYDI.\nKo'pligi: KNIVES.",
        "speak": "3  We cut food with a ............ ."
       },
       {
        "prompt": "4  We pick up food with a ............ .",
        "answer": "fork",
-       "promptUz": "Uchli tishlari bor asbob",
+       "options": [
+        "fork",
+        "knife",
+        "plate",
+        "frying-pan"
+       ],
        "whyUz": "'to pick up' = olmoq, ko'tarmoq.\nVilka bilan go'sht va sabzavot olinadi.",
        "speak": "4  We pick up food with a ............ ."
       },
       {
        "prompt": "5  We fry eggs in a ............ .",
        "answer": "frying-pan",
-       "promptUz": "Qovurish uchun ishlatiladigan idish",
+       "options": [
+        "frying-pan",
+        "knife",
+        "fork",
+        "plate"
+       ],
        "whyUz": "'to fry' = yog'da qovurmoq.\n'IN a frying-pan' — tova ICHIDA → IN.\nfry + -ing + pan (chiziqcha bilan).",
        "speak": "5  We fry eggs in a ............ ."
       }
@@ -1763,54 +1838,89 @@
      "book": "workbook",
      "bookPage": 33,
      "bookRef": "Workbook, 33-bet, 5a-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "There are many 1) ............ pizzas and delicious pasta dishes to choose from.",
        "answer": "tasty",
-       "promptUz": "Ovqat ta'mi haqidagi sifat",
+       "options": [
+        "tasty",
+        "home-made",
+        "busy",
+        "reasonable"
+       ],
        "whyUz": "'tasty pizzas' = mazali pitsalar.\ntaste (ta'm) + -y = mazali.\nCoursebook 55-betda ham 'tasty dishes' bor edi.",
        "speak": "There are many 1) ............ pizzas and delicious pasta dishes to choose from."
       },
       {
        "prompt": "Try the Special Spaghetti with 2) ............ garlic sauce ...",
        "answer": "rich",
-       "promptUz": "Sous quyuqligini bildiruvchi sifat",
+       "options": [
+        "rich",
+        "home-made",
+        "busy",
+        "reasonable"
+       ],
        "whyUz": "'rich sauce' = quyuq, to'yimli sous.\nDIQQAT: 'rich' bu yerda 'boy' emas, 'quyuq' ma'nosida.\nCoursebook 55-betda ham 'pasta with rich tomato sauce' bor edi.",
        "speak": "Try the Special Spaghetti with 2) ............ garlic sauce ..."
       },
       {
        "prompt": "... and of course the 3) ............ garlic bread!",
        "answer": "home-made",
-       "promptUz": "Zavodda emas, o'zlari pishiradi",
+       "options": [
+        "home-made",
+        "busy",
+        "reasonable",
+        "tasty"
+       ],
        "whyUz": "'home-made garlic bread' = uyda pishirilgan sarimsoqli non.\nCoursebook 55-betda ham 'home-made bread' bor edi.",
        "speak": "... and of course the 3) ............ garlic bread!"
       },
       {
        "prompt": "The waiters here are always very 4) ............",
        "answer": "helpful",
-       "promptUz": "Ofitsiantlarning ijobiy sifati",
+       "options": [
+        "helpful",
+        "home-made",
+        "busy",
+        "reasonable"
+       ],
        "whyUz": "'helpful waiters' = yordamchan ofitsiantlar.\nhelp + -ful.\nCoursebook 55-betda ham bor edi.",
        "speak": "The waiters here are always very 4) ............"
       },
       {
        "prompt": "... and the prices are quite 5) ............ .",
        "answer": "reasonable",
-       "promptUz": "Narx haqidagi ijobiy sifat",
+       "options": [
+        "reasonable",
+        "home-made",
+        "busy",
+        "tasty"
+       ],
        "whyUz": "'reasonable prices' = o'rtacha (maqbul) narxlar — qimmat emas.\nKeyingi gap buni tasdiqlaydi: 'Two people can eat for only £10.'\nAksi: expensive (qimmat).",
        "speak": "... and the prices are quite 5) ............ ."
       },
       {
        "prompt": "Luigi's is the 6) ............ place to enjoy a meal with friends.",
        "answer": "perfect",
-       "promptUz": "Eng yuqori baho",
+       "options": [
+        "perfect",
+        "home-made",
+        "busy",
+        "reasonable"
+       ],
        "whyUz": "'the perfect place' = mukammal joy.\n'the' bilan keladi, chunki eng yuqori daraja.",
        "speak": "Luigi's is the 6) ............ place to enjoy a meal with friends."
       },
       {
        "prompt": "... because it is always very 7) ............ in the evenings.",
        "answer": "busy",
-       "promptUz": "Odam ko'pligini bildiruvchi sifat",
+       "options": [
+        "busy",
+        "home-made",
+        "reasonable",
+        "tasty"
+       ],
        "whyUz": "'very busy' = juda gavjum.\nShuning uchun oldindan stol band qilish kerak.\nCoursebook 55-betda ham 'it is very busy, so don't forget to book' bor edi.\nTalaffuz: /ˈbɪzi/ — 'bizi'.",
        "speak": "... because it is always very 7) ............ in the evenings."
       }
@@ -1825,52 +1935,87 @@
      "book": "workbook",
      "bookPage": 33,
      "bookRef": "Workbook, 33-bet, 5b-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  The food is h............ !",
        "answer": "horrible",
-       "promptUz": "'h' bilan boshlanadi — 'dahshatli'",
+       "options": [
+        "horrible",
+        "expensive",
+        "hard",
+        "empty"
+       ],
        "whyUz": "'The food is HORRIBLE!' = Ovqat dahshatli!\nREKLAMADA: 'tasty pizzas and delicious pasta dishes'.\nMijoz TESKARI aytyapti.",
        "speak": "1  The food is h............ !"
       },
       {
        "prompt": "2  The garlic bread is very h............ ! I think it's about three days old!",
        "answer": "hard",
-       "promptUz": "'h' bilan boshlanadi — 'qattiq'",
+       "options": [
+        "hard",
+        "expensive",
+        "empty",
+        "horrible"
+       ],
        "whyUz": "'very HARD' = juda qattiq (non eskirgan).\nKeyingi gap buni tushuntiradi: 'about three days old'.\nREKLAMADA: 'home-made garlic bread' (yangi pishirilgan).",
        "speak": "2  The garlic bread is very h............ ! I think it's about three days old!"
       },
       {
        "prompt": "3  I don't like this spaghetti — it's c............ .",
        "answer": "cold",
-       "promptUz": "'c' bilan boshlanadi — harorat haqida",
+       "options": [
+        "cold",
+        "expensive",
+        "hard",
+        "empty"
+       ],
        "whyUz": "'it's COLD' = u sovuq.\nIssiq taom sovuq bo'lsa — bu jiddiy kamchilik.\nREKLAMADA: 'Special Spaghetti with rich garlic sauce'."
       },
       {
        "prompt": "4  The waiters are very r............ !",
        "answer": "rude",
-       "promptUz": "'r' bilan boshlanadi — 'polite' ning aksi",
+       "options": [
+        "rude",
+        "expensive",
+        "hard",
+        "empty"
+       ],
        "whyUz": "'very RUDE' = juda qo'pol.\nREKLAMADA: 'The waiters are always very helpful'.\n'rude' — 'polite' (odobli) ning aksi.",
        "speak": "4  The waiters are very r............ !"
       },
       {
        "prompt": "5  It's a very e............ restaurant — this tiny pizza costs £5!",
        "answer": "expensive",
-       "promptUz": "'e' bilan boshlanadi — narx haqida",
+       "options": [
+        "expensive",
+        "hard",
+        "empty",
+        "horrible"
+       ],
        "whyUz": "'very EXPENSIVE' = juda qimmat.\nKeyingi gap buni tasdiqlaydi: 'this tiny pizza costs £5'.\nREKLAMADA: 'the prices are quite reasonable'.\n'tiny' = juda kichkina."
       },
       {
        "prompt": "6  It's a t............ place for a meal with friends! We're leaving now!",
        "answer": "terrible",
-       "promptUz": "'t' bilan boshlanadi — 'perfect' ning aksi",
+       "options": [
+        "terrible",
+        "expensive",
+        "hard",
+        "empty"
+       ],
        "whyUz": "'a TERRIBLE place' = dahshatli joy.\nREKLAMADA: 'the perfect place to enjoy a meal with friends'.\n'We're leaving now' = biz hozir ketyapmiz.",
        "speak": "6  It's a t............ place for a meal with friends! We're leaving now!"
       },
       {
        "prompt": "7  You don't need to book a table! Look — it's nearly e............ .",
        "answer": "empty",
-       "promptUz": "'e' bilan boshlanadi — 'busy' ning aksi",
+       "options": [
+        "empty",
+        "expensive",
+        "hard",
+        "horrible"
+       ],
        "whyUz": "'nearly EMPTY' = deyarli bo'sh.\nREKLAMADA: 'it is always very busy in the evenings'.\n'nearly' = deyarli."
       }
      ]
@@ -2345,61 +2490,101 @@
      "book": "coursebook",
      "bookPage": 56,
      "bookRef": "Coursebook, 56-bet, 9a-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "2  a ............ of bread",
        "answer": "loaf",
-       "promptUz": "Rasmda BUTUN dumaloq non",
+       "options": [
+        "loaf",
+        "slice",
+        "bottle",
+        "glass"
+       ],
        "whyUz": "'a loaf of bread' = bir butun non.\nKo'pligi: LOAVES (6-mashqdagi qoida).\n7-band bilan solishtiring: u yerda KESILGAN bo'lak.",
        "speak": "2  a ............ of bread"
       },
       {
        "prompt": "3  a ............ of cheese",
        "answer": "piece",
-       "promptUz": "Umumiy 'bo'lak' so'zi",
+       "options": [
+        "piece",
+        "slice",
+        "bottle",
+        "glass"
+       ],
        "whyUz": "'a piece of cheese' = bir bo'lak pishloq.\n'a piece' — eng umumiy so'z, deyarli hamma narsaga mos.",
        "speak": "3  a ............ of cheese"
       },
       {
        "prompt": "4  a ............ of wine",
        "answer": "glass",
-       "promptUz": "Rasmda oyoqli qadah",
+       "options": [
+        "glass",
+        "slice",
+        "bottle",
+        "packet"
+       ],
        "whyUz": "'a glass of wine' = bir qadah vino.\n1-band bilan solishtiring: 'a BOTTLE of wine' — butun shisha.",
        "speak": "4  a ............ of wine"
       },
       {
        "prompt": "5  a ............ of crisps",
        "answer": "packet",
-       "promptUz": "Rasmda yorqin paket",
+       "options": [
+        "packet",
+        "slice",
+        "bottle",
+        "glass"
+       ],
        "whyUz": "'a packet of crisps' = bir paket chips.\nBritancha; amerikacha 'a bag of chips'.",
        "speak": "5  a ............ of crisps"
       },
       {
        "prompt": "6  a ............ of milk",
        "answer": "carton",
-       "promptUz": "Rasmda qog'oz quti (MILK yozuvi bilan)",
+       "options": [
+        "carton",
+        "slice",
+        "bottle",
+        "glass"
+       ],
        "whyUz": "'a carton of milk' = bir paket sut.\n'a carton' — qog'ozdan yasalgan to'rtburchak idish.",
        "speak": "6  a ............ of milk"
       },
       {
        "prompt": "7  a ............ of bread",
        "answer": "slice",
-       "promptUz": "Rasmda kesilgan yupqa non bo'lagi",
+       "options": [
+        "slice",
+        "bottle",
+        "glass",
+        "packet"
+       ],
        "whyUz": "'a slice of bread' = bir bo'lak (kesilgan) non.\n2-band bilan solishtiring: 'a LOAF' — butun non.",
        "speak": "7  a ............ of bread"
       },
       {
        "prompt": "8  a ............ of coffee",
        "answer": "cup",
-       "promptUz": "Rasmda likopchali chashka",
+       "options": [
+        "cup",
+        "slice",
+        "bottle",
+        "glass"
+       ],
        "whyUz": "'a cup of coffee' = bir piyola qahva.\n'a cup' — issiq ichimlik uchun, dastasi bor.",
        "speak": "8  a ............ of coffee"
       },
       {
        "prompt": "9  a ............ of soup",
        "answer": "bowl",
-       "promptUz": "Rasmda chuqur yumaloq idish",
+       "options": [
+        "bowl",
+        "slice",
+        "bottle",
+        "glass"
+       ],
        "whyUz": "'a bowl of soup' = bir kosa sho'rva.\n55-betda ham bor edi: 'a bowl of ice-cream'.",
        "speak": "9  a ............ of soup"
       }
@@ -3243,105 +3428,175 @@
      "book": "workbook",
      "bookPage": 32,
      "bookRef": "Workbook, 32-bet, 3-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "2  The restaurant is open ............ 8 pm till midnight.",
        "answer": "from",
-       "promptUz": "'till' bilan juft keladigan predlog",
+       "options": [
+        "from",
+        "at",
+        "for",
+        "in"
+       ],
        "whyUz": "'FROM ... TILL ...' = ...dan ...gacha.\nCoursebook 55-betda ham bor edi:\n'open from eleven in the morning till eleven in the evening'.",
        "speak": "2  The restaurant is open ............ 8 pm till midnight."
       },
       {
        "prompt": "3  I'd like to book a table ............ two people, please.",
        "answer": "for",
-       "promptUz": "Necha kishi uchun",
+       "options": [
+        "for",
+        "at",
+        "from",
+        "in"
+       ],
        "whyUz": "'a table FOR two people' = ikki kishilik stol.\n'for' — kim uchun ekanini bildiradi.\nCoursebook 59-betda: 'Table for two?'",
        "speak": "3  I'd like to book a table ............ two people, please."
       },
       {
        "prompt": "4  My favourite food is pasta ............ tomato sauce.",
        "answer": "with",
-       "promptUz": "Nima bilan birga",
+       "options": [
+        "with",
+        "at",
+        "for",
+        "from"
+       ],
        "whyUz": "'pasta WITH tomato sauce' = pomidor sousli makaron.\nCoursebook 55-betdagi Laura's menyusida ham bor edi.",
        "speak": "4  My favourite food is pasta ............ tomato sauce."
       },
       {
        "prompt": "5  Is there any milk ............ the fridge?",
        "answer": "in",
-       "promptUz": "Muzlatgich ICHIDA",
+       "options": [
+        "in",
+        "at",
+        "for",
+        "from"
+       ],
        "whyUz": "'IN the fridge' = muzlatgich ichida.\nCoursebook 57-betda ham bor edi.",
        "speak": "5  Is there any milk ............ the fridge?"
       },
       {
        "prompt": "6  Shall I put the plates ............ the table?",
        "answer": "on",
-       "promptUz": "Stol YUZASIDA",
+       "options": [
+        "on",
+        "at",
+        "for",
+        "from"
+       ],
        "whyUz": "'ON the table' = stol ustida.\n'Shall I ...?' = ...ayinmi? (taklif qilish).",
        "speak": "6  Shall I put the plates ............ the table?"
       },
       {
-       "prompt": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?  [1-bo'shliq]",
+       "prompt": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?",
        "answer": "to",
-       "promptUz": "Birinchisi yo'nalish, ikkinchisi maqsad",
+       "options": [
+        "to",
+        "at",
+        "for",
+        "from"
+       ],
        "whyUz": "'go TO + joy' — yo'nalish.\n'FOR dinner' = kechki ovqatga (maqsad).\n'go to a restaurant FOR dinner' — o'zgarmas qolip.",
-       "speak": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?  [1-bo'shliq]"
+       "speak": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?"
       },
       {
-       "prompt": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?  [2-bo'shliq]",
+       "prompt": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?",
        "answer": "for",
-       "promptUz": "Birinchisi yo'nalish, ikkinchisi maqsad",
+       "options": [
+        "for",
+        "at",
+        "from",
+        "in"
+       ],
        "whyUz": "'go TO + joy' — yo'nalish.\n'FOR dinner' = kechki ovqatga (maqsad).\n'go to a restaurant FOR dinner' — o'zgarmas qolip.",
-       "speak": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?  [2-bo'shliq]"
+       "speak": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?"
       },
       {
-       "prompt": "8  Brazilians have dinner ............ about 10 o'clock ............ night.  [1-bo'shliq]",
+       "prompt": "8  Brazilians have dinner ............ about 10 o'clock ............ night.",
        "answer": "at",
-       "promptUz": "Ikkalasi ham bir xil predlog",
+       "options": [
+        "at",
+        "for",
+        "from",
+        "in"
+       ],
        "whyUz": "'AT about 10 o'clock' — aniq soat oldida AT.\n'AT night' — ISTISNO ibora ('in the night' emas).\nCoursebook 58-betdagi Braziliya matnidan.",
-       "speak": "8  Brazilians have dinner ............ about 10 o'clock ............ night.  [1-bo'shliq]"
+       "speak": "8  Brazilians have dinner ............ about 10 o'clock ............ night."
       },
       {
-       "prompt": "8  Brazilians have dinner ............ about 10 o'clock ............ night.  [2-bo'shliq]",
+       "prompt": "8  Brazilians have dinner ............ about 10 o'clock ............ night.",
        "answer": "at",
-       "promptUz": "Ikkalasi ham bir xil predlog",
+       "options": [
+        "at",
+        "for",
+        "from",
+        "in"
+       ],
        "whyUz": "'AT about 10 o'clock' — aniq soat oldida AT.\n'AT night' — ISTISNO ibora ('in the night' emas).\nCoursebook 58-betdagi Braziliya matnidan.",
-       "speak": "8  Brazilians have dinner ............ about 10 o'clock ............ night.  [2-bo'shliq]"
+       "speak": "8  Brazilians have dinner ............ about 10 o'clock ............ night."
       },
       {
-       "prompt": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.  [1-bo'shliq]",
+       "prompt": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.",
        "answer": "In",
-       "promptUz": "Mamlakat / tarelka yuzasi / vaqt nuqtasi",
+       "options": [
+        "In",
+        "at",
+        "for",
+        "from"
+       ],
        "whyUz": "'IN the Philippines' — mamlakat oldida IN.\n'ON your plate' — tarelka yuzasida ON.\n'AT the end of a meal' — 'at the end of' o'zgarmas ibora.\nCoursebook 58-betdagi Filippin matnidan.",
-       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.  [1-bo'shliq]"
+       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal."
       },
       {
-       "prompt": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.  [2-bo'shliq]",
+       "prompt": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.",
        "answer": "on",
-       "promptUz": "Mamlakat / tarelka yuzasi / vaqt nuqtasi",
+       "options": [
+        "on",
+        "at",
+        "for",
+        "from"
+       ],
        "whyUz": "'IN the Philippines' — mamlakat oldida IN.\n'ON your plate' — tarelka yuzasida ON.\n'AT the end of a meal' — 'at the end of' o'zgarmas ibora.\nCoursebook 58-betdagi Filippin matnidan.",
-       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.  [2-bo'shliq]"
+       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal."
       },
       {
-       "prompt": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.  [3-bo'shliq]",
+       "prompt": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.",
        "answer": "at",
-       "promptUz": "Mamlakat / tarelka yuzasi / vaqt nuqtasi",
+       "options": [
+        "at",
+        "for",
+        "from",
+        "in"
+       ],
        "whyUz": "'IN the Philippines' — mamlakat oldida IN.\n'ON your plate' — tarelka yuzasida ON.\n'AT the end of a meal' — 'at the end of' o'zgarmas ibora.\nCoursebook 58-betdagi Filippin matnidan.",
-       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.  [3-bo'shliq]"
+       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal."
       },
       {
-       "prompt": "10  Finnish people sometimes eat ............ their friends ............ the weekend.  [1-bo'shliq]",
+       "prompt": "10  Finnish people sometimes eat ............ their friends ............ the weekend.",
        "answer": "with",
-       "promptUz": "Kim bilan / qachon",
+       "options": [
+        "with",
+        "at",
+        "for",
+        "from"
+       ],
        "whyUz": "'eat WITH their friends' = do'stlari bilan ovqatlanmoq.\n'AT the weekend' — britancha (amerikacha 'on the weekend').\nCoursebook 58-betdagi Finlandiya matnidan.",
-       "speak": "10  Finnish people sometimes eat ............ their friends ............ the weekend.  [1-bo'shliq]"
+       "speak": "10  Finnish people sometimes eat ............ their friends ............ the weekend."
       },
       {
-       "prompt": "10  Finnish people sometimes eat ............ their friends ............ the weekend.  [2-bo'shliq]",
+       "prompt": "10  Finnish people sometimes eat ............ their friends ............ the weekend.",
        "answer": "at",
-       "promptUz": "Kim bilan / qachon",
+       "options": [
+        "at",
+        "for",
+        "from",
+        "in"
+       ],
        "whyUz": "'eat WITH their friends' = do'stlari bilan ovqatlanmoq.\n'AT the weekend' — britancha (amerikacha 'on the weekend').\nCoursebook 58-betdagi Finlandiya matnidan.",
-       "speak": "10  Finnish people sometimes eat ............ their friends ............ the weekend.  [2-bo'shliq]"
+       "speak": "10  Finnish people sometimes eat ............ their friends ............ the weekend."
       }
      ]
     },
@@ -3544,47 +3799,77 @@
      "book": "workbook",
      "bookPage": 33,
      "bookRef": "Workbook, 33-bet, 7a-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "2  ............ of wine",
        "answer": "bottles",
-       "promptUz": "Vino qanday idishda sotiladi?",
+       "options": [
+        "bottles",
+        "cartons",
+        "kilos",
+        "loaves"
+       ],
        "whyUz": "'2 bottles of wine' = ikki shisha vino.\nVino DOIM shishada sotiladi.",
        "speak": "2  ............ of wine"
       },
       {
        "prompt": "3  ............ of potatoes",
        "answer": "kilos",
-       "promptUz": "Kartoshka qanday o'lchanadi?",
+       "options": [
+        "kilos",
+        "bottles",
+        "cartons",
+        "loaves"
+       ],
        "whyUz": "'3 kilos of potatoes' = uch kilo kartoshka.\nKartoshka og'irlik bilan sotiladi.\nDIQQAT: 'potatoes' — KO'PLIKDA.",
        "speak": "3  ............ of potatoes"
       },
       {
        "prompt": "2  ............ of milk",
        "answer": "cartons",
-       "promptUz": "Sut qanday paketda sotiladi?",
+       "options": [
+        "cartons",
+        "bottles",
+        "kilos",
+        "loaves"
+       ],
        "whyUz": "'2 cartons of milk' = ikki paket sut.\n'a carton' — qog'ozdan yasalgan to'rtburchak idish.",
        "speak": "2  ............ of milk"
       },
       {
        "prompt": "12  ............ of salami",
        "answer": "slices",
-       "promptUz": "Kolbasa qanday kesiladi?",
+       "options": [
+        "slices",
+        "bottles",
+        "cartons",
+        "kilos"
+       ],
        "whyUz": "'12 slices of salami' = o'n ikki bo'lak salyami.\nSalyami YUPQA kesib beriladi.",
        "speak": "12  ............ of salami"
       },
       {
        "prompt": "2  ............ of bread",
        "answer": "loaves",
-       "promptUz": "Butun non uchun maxsus so'z",
+       "options": [
+        "loaves",
+        "bottles",
+        "cartons",
+        "kilos"
+       ],
        "whyUz": "'2 loaves of bread' = ikki (butun) non.\n'loaf' → 'LOAVES' (-f → -VES).\nDIQQAT: 'loaf' FAQAT non uchun ishlatiladi.",
        "speak": "2  ............ of bread"
       },
       {
        "prompt": "4  ............ of flour",
        "answer": "packets",
-       "promptUz": "Un qanday idishda sotiladi?",
+       "options": [
+        "packets",
+        "bottles",
+        "cartons",
+        "kilos"
+       ],
        "whyUz": "'4 packets of flour' = to'rt paket un.\nQuruq kukun mahsulotlar paketda sotiladi.",
        "speak": "4  ............ of flour"
       }
@@ -5012,33 +5297,53 @@
      "book": "workbook",
      "bookPage": 34,
      "bookRef": "Workbook, 34-bet, 11a-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1-bo'lim: Tomato soup £2.50, Onion soup £2.50, Garden salad £3.00",
        "answer": "Starters",
-       "promptUz": "Yengil birinchi taomlar — sho'rva va salat",
+       "options": [
+        "Starters",
+        "drinks",
+        "desserts",
+        "main courses"
+       ],
        "whyUz": "'a starter' = birinchi taom (asosiy taomdan OLDIN).\nSho'rva va salat — tipik starterlar.\nCoursebook 59-betda ham bor edi: 'To start with I'd like the tomato soup.'",
        "speak": "1-bo'lim: Tomato soup £2.50, Onion soup £2.50, Garden salad £3.00"
       },
       {
        "prompt": "2-bo'lim: Grilled fish with rice £4.99, Pepper steak with potatoes £7.00, Roast chicken with carrots £5.75",
        "answer": "Main courses",
-       "promptUz": "Eng to'yimli va qimmat taomlar",
+       "options": [
+        "Main courses",
+        "drinks",
+        "starters",
+        "desserts"
+       ],
        "whyUz": "'a main course' = asosiy (ikkinchi) taom.\nGo'sht va baliq taomlari — eng qimmat bo'limi.\nCoursebook 59-betda: 'And for the main course?'",
        "speak": "2-bo'lim: Grilled fish with rice £4.99, Pepper steak with potatoes £7.00, Roast chicken with carrots £5.75"
       },
       {
        "prompt": "3-bo'lim: Ice-cream £2.75, Apple pie £2.75, Strawberries and cream £3.00",
        "answer": "Desserts",
-       "promptUz": "Ovqatdan keyingi shirinliklar",
+       "options": [
+        "Desserts",
+        "drinks",
+        "starters",
+        "main courses"
+       ],
        "whyUz": "'a dessert' /dɪˈzɜːt/ = shirinlik.\nMuzqaymoq, pirog, qulupnay — hammasi shirinlik.",
        "speak": "3-bo'lim: Ice-cream £2.75, Apple pie £2.75, Strawberries and cream £3.00"
       },
       {
        "prompt": "4-bo'lim: Wine £2.00, Beer £2.00, Mineral water £1.50, Coffee £1.50",
        "answer": "Drinks",
-       "promptUz": "Ichimliklar",
+       "options": [
+        "Drinks",
+        "starters",
+        "desserts",
+        "main courses"
+       ],
        "whyUz": "'drinks' = ichimliklar.\nHammasi SANALMAYDIGAN otlar, lekin menyuda porsiya sifatida sotiladi.",
        "speak": "4-bo'lim: Wine £2.00, Beer £2.00, Mineral water £1.50, Coffee £1.50"
       }
@@ -5607,7 +5912,16 @@
      "kind": "study",
      "tasks": [
       {
-       "en": ""
+       "en": "Man cannot live by bread alone.",
+       "uz": "So'zma-so'z: Odam faqat non bilan yashay olmaydi.\n\nMA'NOSI: Insonga faqat moddiy narsalar (ovqat, pul) yetarli\nemas — unga ma'naviy oziq ham kerak: bilim, sevgi, do'stlik,\nsan'at, e'tiqod.\n\nKELIB CHIQISHI: Bibliyadan olingan ibora.\n\nO'ZBEKCHA MUQOBILI:\n  'Odam non bilangina tirik emas.'\n\nLUG'AT:\n  'man' bu yerda = INSON (umuman), erkak emas\n  'alone' = faqat, yolg'iz\n  'by' = bilan (vosita)"
+      },
+      {
+       "en": "Eat to live, not live to eat.",
+       "uz": "So'zma-so'z: Yashash uchun yeng, yeyish uchun yashamang.\n\nMA'NOSI: Ovqat — hayotning MAQSADI emas, VOSITASI.\nOvqatga haddan tashqari berilmaslik kerak.\n\nGRAMMATIK QURILISH:\n  'eat TO live'  = yashash uchun yemoq (maqsad)\n  'live TO eat'  = yeyish uchun yashamoq\n  Ikki fe'l O'RIN ALMASHTIRILGAN — shu bilan ma'no\n  butunlay teskari bo'ladi.\n\nO'ZBEKCHA MUQOBILI:\n  'Yashash uchun yegin, yeyish uchun yashama.'\n\nBu maqol qadimgi yunon faylasufi Sokratga nisbat beriladi."
+      },
+      {
+       "en": "You can't make an omelette without breaking eggs.",
+       "uz": "So'zma-so'z: Tuxumni sindirmasdan omlet tayyorlab bo'lmaydi.\n\nMA'NOSI: Biror natijaga erishish uchun qiyinchilikka va\nyo'qotishga tayyor bo'lish kerak. Har qanday ishda ozgina\nzarar yoki qurbonlik bo'ladi.\n\nO'ZBEKCHA MUQOBILI:\n  'Mehnatsiz rohat yo'q.'\n  'Bergansiz olgan yo'q.'\n\nLUG'AT:\n  an omelette /ˈɒmlət/ = omlet\n  without = ...siz, ...masdan\n  to break = sindirmoq\n\nGRAMMATIKA: 'without' dan keyin fe'l -ING bilan keladi:\n  without BREAKING, without EATING, without SAYING."
       }
      ]
     }
@@ -5959,61 +6273,101 @@
      "book": "grammar",
      "bookPage": 35,
      "bookRef": "Grammar Book, 35-bet, 4a-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  a ............ of meat",
        "answer": "kilo",
-       "promptUz": "Rasmda katta yaxlit go'sht — og'irlik bilan o'lchanadi",
+       "options": [
+        "kilo",
+        "glass",
+        "cup",
+        "packet"
+       ],
        "whyUz": "'a kilo of meat' = bir kilo go'sht.\nGo'sht og'irlik bilan sotiladi.",
        "speak": "1  a ............ of meat"
       },
       {
        "prompt": "2  a ............ of bread",
        "answer": "slice",
-       "promptUz": "Rasmda kesilgan yupqa non bo'lagi",
+       "options": [
+        "slice",
+        "glass",
+        "cup",
+        "packet"
+       ],
        "whyUz": "'a slice of bread' = bir bo'lak (kesilgan) non.\nDIQQAT: butun non bo'lsa 'a LOAF of bread' bo'lardi.",
        "speak": "2  a ............ of bread"
       },
       {
        "prompt": "3  a ............ of coke",
        "answer": "bottle",
-       "promptUz": "Rasmda shisha idish",
+       "options": [
+        "bottle",
+        "glass",
+        "cup",
+        "packet"
+       ],
        "whyUz": "'a bottle of coke' = bir shisha kola.",
        "speak": "3  a ............ of coke"
       },
       {
        "prompt": "4  a ............ of orange juice",
        "answer": "glass",
-       "promptUz": "Rasmda stakan",
+       "options": [
+        "glass",
+        "cup",
+        "packet",
+        "slice"
+       ],
        "whyUz": "'a glass of orange juice' = bir stakan apelsin sharbati.\n3-band bilan solishtiring: bottle — shisha, glass — stakan.",
        "speak": "4  a ............ of orange juice"
       },
       {
        "prompt": "5  a ............ of cake",
        "answer": "piece",
-       "promptUz": "Umumiy 'bo'lak' so'zi",
+       "options": [
+        "piece",
+        "glass",
+        "cup",
+        "packet"
+       ],
        "whyUz": "'a piece of cake' = bir bo'lak tort.\n'a slice of cake' ham to'g'ri, lekin 'slice' 2-bandda ishlatilgan —\nhar bir so'z faqat bir marta.\nIDIOMA: 'It's a piece of cake' = bu juda oson ish.",
        "speak": "5  a ............ of cake"
       },
       {
        "prompt": "6  a ............ of hot chocolate",
        "answer": "cup",
-       "promptUz": "Rasmda dastali chashka",
+       "options": [
+        "cup",
+        "glass",
+        "packet",
+        "slice"
+       ],
        "whyUz": "'a cup of hot chocolate' = bir chashka issiq shokolad.\n'a cup' — ISSIQ ichimlik uchun (choy, qahva, shokolad).",
        "speak": "6  a ............ of hot chocolate"
       },
       {
        "prompt": "7  a ............ of milk",
        "answer": "carton",
-       "promptUz": "Rasmda qog'oz quti (MILK yozuvi bilan)",
+       "options": [
+        "carton",
+        "glass",
+        "cup",
+        "packet"
+       ],
        "whyUz": "'a carton of milk' = bir paket sut.\n'a carton' — qog'ozdan yasalgan to'rtburchak idish.",
        "speak": "7  a ............ of milk"
       },
       {
        "prompt": "8  a ............ of sugar",
        "answer": "packet",
-       "promptUz": "Rasmda kichik qog'oz paket (SUGAR yozuvi bilan)",
+       "options": [
+        "packet",
+        "glass",
+        "cup",
+        "slice"
+       ],
        "whyUz": "'a packet of sugar' = bir paket shakar.\nBritancha; amerikacha 'a package'.",
        "speak": "8  a ............ of sugar"
       }

@@ -333,74 +333,124 @@
      "book": "coursebook",
      "bookPage": 60,
      "bookRef": "Coursebook, 60-bet, 2-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Doctors often work long ............ .",
        "answer": "hours",
-       "promptUz": "'work long ...' — vaqt birligi",
+       "options": [
+        "hours",
+        "carton",
+        "loaf",
+        "long"
+       ],
        "whyUz": "'work long hours' = uzoq soat ishlamoq.\n1-mashqning 3-bandida ham shu ibora bor edi.",
        "speak": "1  Doctors often work long ............ ."
       },
       {
        "prompt": "2  This restaurant serves ............ apple pie.",
        "answer": "home-made",
-       "promptUz": "Uyda tayyorlangan degan sifat",
+       "options": [
+        "home-made",
+        "carton",
+        "loaf",
+        "long"
+       ],
        "whyUz": "'home-made apple pie' = uyda pishirilgan olmali pirog.\n8-unitdagi Laura's reklamasida ham bor edi.",
        "speak": "2  This restaurant serves ............ apple pie."
       },
       {
        "prompt": "3  It's a great film. Don't miss the ............ to see it!",
        "answer": "chance",
-       "promptUz": "'Don't miss the ...' — imkoniyat",
+       "options": [
+        "chance",
+        "carton",
+        "loaf",
+        "long"
+       ],
        "whyUz": "'Don't miss the chance TO + fe'l' = imkoniyatni qo'ldan boy bermang.\n8-unitdagi reklama iborasi.",
        "speak": "3  It's a great film. Don't miss the ............ to see it!"
       },
       {
        "prompt": "4  I would like a ............ of milk, please.",
        "answer": "carton",
-       "promptUz": "Sut qanday paketda sotiladi?",
+       "options": [
+        "carton",
+        "loaf",
+        "long",
+        "chance"
+       ],
        "whyUz": "'a carton of milk' = bir paket sut.\n8-unitdagi miqdor iboralari.",
        "speak": "4  I would like a ............ of milk, please."
       },
       {
        "prompt": "5  We usually ............ the Christmas tree a week before Christmas.",
        "answer": "decorate",
-       "promptUz": "Archani bayramga tayyorlash fe'li",
+       "options": [
+        "decorate",
+        "carton",
+        "loaf",
+        "long"
+       ],
        "whyUz": "'decorate the Christmas tree' = archani bezamoq.\n7-unitdagi otkritkada bor edi.",
        "speak": "5  We usually ............ the Christmas tree a week before Christmas."
       },
       {
        "prompt": "6  I like penguins a lot. They look very ............ when they walk.",
        "answer": "funny",
-       "promptUz": "Pingvin yurganda qanday ko'rinadi?",
+       "options": [
+        "funny",
+        "carton",
+        "loaf",
+        "long"
+       ],
        "whyUz": "'look funny' = kulgili ko'rinmoq.\n6-unitdagi pingvin matnida: 'Penguins look funny when they walk.'",
        "speak": "6  I like penguins a lot. They look very ............ when they walk."
       },
       {
        "prompt": "7  Could I have a ............ of bread, please?",
        "answer": "loaf",
-       "promptUz": "Butun non uchun miqdor so'zi",
+       "options": [
+        "loaf",
+        "carton",
+        "long",
+        "chance"
+       ],
        "whyUz": "'a loaf of bread' = bir butun non.\nKo'pligi: LOAVES.",
        "speak": "7  Could I have a ............ of bread, please?"
       },
       {
        "prompt": "8  My father always ............ a table at the Italian restaurant on Sundays.",
        "answer": "books",
-       "promptUz": "Stolni oldindan olib qo'yish fe'li",
+       "options": [
+        "books",
+        "carton",
+        "loaf",
+        "long"
+       ],
        "whyUz": "'to book a table' = stol band qilmoq.\n'My father' — birlik 3-shaxs → bookS.\nDIQQAT: 'books' bu yerda OT emas, FE'L.",
        "speak": "8  My father always ............ a table at the Italian restaurant on Sundays."
       },
       {
        "prompt": "9  I can't wear these trousers — they're too ............ .",
        "answer": "long",
-       "promptUz": "Shim mos kelmasligining sababi",
+       "options": [
+        "long",
+        "carton",
+        "loaf",
+        "chance"
+       ],
        "whyUz": "'too long' = juda uzun (kiyib bo'lmaydi).\n7-unitdagi 'too + sifat' qolipi."
       },
       {
        "prompt": "10  The weather in Britain is often ............ .",
        "answer": "rainy",
-       "promptUz": "Britaniya ob-havosi nimasi bilan mashhur?",
+       "options": [
+        "rainy",
+        "carton",
+        "loaf",
+        "long"
+       ],
        "whyUz": "'rainy' = yomg'irli.\n7-unitdagi Karen matni: 'In Britain the weather is often rainy.'",
        "speak": "10  The weather in Britain is often ............ ."
       }
@@ -415,63 +465,103 @@
      "book": "coursebook",
      "bookPage": 60,
      "bookRef": "Coursebook, 60-bet, 3-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "1  Steven and Jo aren't satisfied ............ their new house.",
        "answer": "with",
-       "promptUz": "'satisfied' sifatining predlogi",
+       "options": [
+        "with",
+        "for",
+        "of",
+        "on"
+       ],
        "whyUz": "'satisfied WITH something' = biror narsadan mamnun.\nO'zgarmas birikma.",
        "speak": "1  Steven and Jo aren't satisfied ............ their new house."
       },
       {
        "prompt": "2  My father never goes ............ bed before 12 o'clock.",
        "answer": "to",
-       "promptUz": "Uxlashga yotish iborasi",
+       "options": [
+        "to",
+        "for",
+        "of",
+        "with"
+       ],
        "whyUz": "'go TO bed' = uxlashga yotmoq.\nDIQQAT: 'bed' oldida artikl YO'Q — o'zgarmas ibora.",
        "speak": "2  My father never goes ............ bed before 12 o'clock."
       },
       {
        "prompt": "3  I love going ............ long walks in spring.",
        "answer": "for",
-       "promptUz": "Sayrga chiqish iborasi",
+       "options": [
+        "for",
+        "of",
+        "with",
+        "on"
+       ],
        "whyUz": "'go FOR a walk' = sayrga chiqmoq.\nKo'plikda: 'go for walks'.\n7-unitdagi Karen matnida bor edi.",
        "speak": "3  I love going ............ long walks in spring."
       },
       {
        "prompt": "4  Cows feed their babies ............ milk.",
        "answer": "on",
-       "promptUz": "Boqish fe'lining predlogi",
+       "options": [
+        "on",
+        "for",
+        "of",
+        "with"
+       ],
        "whyUz": "'feed somebody ON something' = biror narsa bilan boqmoq.\n6-unitdagi sutemizuvchilar mavzusidan.\n'feed with milk' XATO.",
        "speak": "4  Cows feed their babies ............ milk."
       },
       {
        "prompt": "5  My mother is afraid ............ spiders.",
        "answer": "of",
-       "promptUz": "'afraid' sifatining predlogi",
+       "options": [
+        "of",
+        "for",
+        "with",
+        "on"
+       ],
        "whyUz": "'afraid OF something' = biror narsadan qo'rqmoq.\nO'zgarmas birikma.\n'a spider' = o'rgimchak.",
        "speak": "5  My mother is afraid ............ spiders."
       },
       {
        "prompt": "6  Chimpanzees weigh ............ 35 to 60 kilos.",
        "answer": "from",
-       "promptUz": "'to' bilan juft keladigan predlog",
+       "options": [
+        "from",
+        "for",
+        "of",
+        "with"
+       ],
        "whyUz": "'weigh FROM ... TO ...' = ...dan ...gacha og'irlikda.\n6-unitdagi delfin matnida ham bor edi:\n'They weigh from seventy to five hundred kilos.'",
        "speak": "6  Chimpanzees weigh ............ 35 to 60 kilos."
       },
       {
-       "prompt": "7  Grandma is ............ the kitchen ............ the moment.  [1-bo'shliq]",
+       "prompt": "7  Grandma is ............ the kitchen ............ the moment.",
        "answer": "in",
-       "promptUz": "Xona ichida / ayni paytda",
+       "options": [
+        "in",
+        "for",
+        "of",
+        "with"
+       ],
        "whyUz": "'IN the kitchen' — xona ICHIDA → IN.\n'AT the moment' = ayni paytda — o'zgarmas ibora.",
-       "speak": "7  Grandma is ............ the kitchen ............ the moment.  [1-bo'shliq]"
+       "speak": "7  Grandma is ............ the kitchen ............ the moment."
       },
       {
-       "prompt": "7  Grandma is ............ the kitchen ............ the moment.  [2-bo'shliq]",
+       "prompt": "7  Grandma is ............ the kitchen ............ the moment.",
        "answer": "at",
-       "promptUz": "Xona ichida / ayni paytda",
+       "options": [
+        "at",
+        "for",
+        "of",
+        "with"
+       ],
        "whyUz": "'IN the kitchen' — xona ICHIDA → IN.\n'AT the moment' = ayni paytda — o'zgarmas ibora.",
-       "speak": "7  Grandma is ............ the kitchen ............ the moment.  [2-bo'shliq]"
+       "speak": "7  Grandma is ............ the kitchen ............ the moment."
       }
      ]
     }
@@ -579,60 +669,100 @@
      "book": "coursebook",
      "bookPage": 60,
      "bookRef": "Coursebook, 60-bet, 5a-mashq",
-     "kind": "text",
+     "kind": "choice",
      "tasks": [
       {
        "prompt": "Blue whales (1) ............ huge mammals.",
        "answer": "are",
-       "promptUz": "Turkumlash — 'be' fe'li kerak",
+       "options": [
+        "are",
+        "eat",
+        "live",
+        "weigh"
+       ],
        "whyUz": "'X ARE mammals' — turkumlash qolipi (6-unit).\nKo'plik ega → ARE.",
        "speak": "Blue whales (1) ............ huge mammals."
       },
       {
        "prompt": "They (2) ............ babies and feed them on milk.",
        "answer": "have",
-       "promptUz": "Bola tug'moq iborasi",
+       "options": [
+        "have",
+        "eat",
+        "are",
+        "live"
+       ],
        "whyUz": "'have babies' = bola tug'moq.\nKo'plik ega → HAVE ('has' XATO).\nDIQQAT: 'have got' emas — bu boshqa ma'no.",
        "speak": "They (2) ............ babies and feed them on milk."
       },
       {
        "prompt": "They (3) ............ in oceans all around the world ...",
        "answer": "live",
-       "promptUz": "Joy predlogi 'in' bilan",
+       "options": [
+        "live",
+        "eat",
+        "are",
+        "weigh"
+       ],
        "whyUz": "'live IN + joy'.\nKo'plik ega → -S QO'ShILMAYDI.\n'all around the world' = dunyo bo'ylab.",
        "speak": "They (3) ............ in oceans all around the world ..."
       },
       {
        "prompt": "... and they (4) ............ plankton — tiny animals and plants that live in the sea.",
        "answer": "eat",
-       "promptUz": "Ovqat bilan keladigan fe'l",
+       "options": [
+        "eat",
+        "are",
+        "live",
+        "weigh"
+       ],
        "whyUz": "'eat plankton' = plankton yeydi.\n'plankton' — sanalmaydigan ot.\n'that' = ...ki, ...digan (planktonni tavsiflaydi)."
       },
       {
        "prompt": "Blue whales can (5) ............ very fast.",
        "answer": "swim",
-       "promptUz": "'can' dan keyin asos shakli",
+       "options": [
+        "swim",
+        "eat",
+        "are",
+        "live"
+       ],
        "whyUz": "'can' dan keyin fe'l ASOS shaklida — 'to' va '-s' YO'Q.\n'swim very fast' = juda tez suzmoq.",
        "speak": "Blue whales can (5) ............ very fast."
       },
       {
        "prompt": "They (6) ............ up to 150,000 kilos!",
        "answer": "weigh",
-       "promptUz": "Kilogramm bilan keladigan fe'l",
+       "options": [
+        "weigh",
+        "eat",
+        "are",
+        "live"
+       ],
        "whyUz": "'weigh + og'irlik'.\n'up to' = ...gacha.\nDIQQAT: 'are weigh' XATO — 'be' ishlatilmaydi.\n150,000 → 'a hundred and fifty thousand'.",
        "speak": "They (6) ............ up to 150,000 kilos!"
       },
       {
        "prompt": "They (7) ............ a very big tail and small fins.",
        "answer": "have got",
-       "promptUz": "Tana qismi — egalik",
+       "options": [
+        "have got",
+        "eat",
+        "are",
+        "live"
+       ],
        "whyUz": "Tana qismi → HAVE GOT.\nKo'plik ega → HAVE got ('has got' XATO).\n2-band bilan solishtiring: 'have babies' (tug'moq) va\n'have got a tail' (egalik) — boshqa ma'nolar.",
        "speak": "They (7) ............ a very big tail and small fins."
       },
       {
        "prompt": "Blue whales (8) ............ about 80 years.",
        "answer": "live for",
-       "promptUz": "Umr davomiyligi — predlog bilan",
+       "options": [
+        "live for",
+        "eat",
+        "are",
+        "live"
+       ],
        "whyUz": "'live FOR + davomiylik' — 'for' SHART.\n3-band bilan solishtiring: 'live IN + joy' va 'live FOR + vaqt'.",
        "speak": "Blue whales (8) ............ about 80 years."
       }
