@@ -262,126 +262,92 @@
      "book": "coursebook",
      "bookPage": 54,
      "bookRef": "Coursebook, 54-bet, 1-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "a  Which of the foods/drinks do you like?",
-       "answer": "I like pizza, ice-cream, grapes and orange juice.",
-       "promptUz": "O'z javobingiz — 'I like ...' bilan boshlang",
-       "whyUz": "NAMUNA javob. Sanashda oxirgi so'zdan oldin 'and'.\nO'zingiz yoqtirgan ovqatlarni ayting.",
-       "speak": "a  Which of the foods/drinks do you like?"
+       "en": "I like pizza, ice-cream, grapes and orange juice.",
+       "uz": "O'z javobingiz — 'I like ...' bilan boshlang",
+       "note": "NAMUNA javob. Sanashda oxirgi so'zdan oldin 'and'.\nO'zingiz yoqtirgan ovqatlarni ayting."
       },
       {
-       "prompt": "a  Which of the foods/drinks don't you like?",
-       "answer": "I don't like coconut, garlic or beer.",
-       "promptUz": "O'z javobingiz — 'I don't like ...' bilan",
-       "whyUz": "NAMUNA javob.\nDIQQAT: INKOR gapda sanashda 'and' emas, 'OR' ishlatiladi.",
-       "speak": "a  Which of the foods/drinks don't you like?"
+       "en": "I don't like coconut, garlic or beer.",
+       "uz": "O'z javobingiz — 'I don't like ...' bilan",
+       "note": "NAMUNA javob.\nDIQQAT: INKOR gapda sanashda 'and' emas, 'OR' ishlatiladi."
       },
       {
-       "prompt": "b  Which are vegetables?",
-       "answer": "Lettuce, pepper, tomatoes, carrots, potatoes, onion and garlic are vegetables.",
-       "promptUz": "Yerda o'sadigan, taom uchun ishlatiladigan o'simliklar",
-       "whyUz": "SABZAVOTLAR — rasmda o'ng tomonda joylashgan.\nDIQQAT: pomidor botanik jihatdan MEVA, lekin oshxonada\nSABZAVOT hisoblanadi.",
-       "speak": "b  Which are vegetables?"
+       "en": "Lettuce, pepper, tomatoes, carrots, potatoes, onion and garlic are vegetables.",
+       "uz": "Yerda o'sadigan, taom uchun ishlatiladigan o'simliklar",
+       "note": "SABZAVOTLAR — rasmda o'ng tomonda joylashgan.\nDIQQAT: pomidor botanik jihatdan MEVA, lekin oshxonada\nSABZAVOT hisoblanadi."
       },
       {
-       "prompt": "b  Which are meat?",
-       "answer": "Steak, sausage, hot-dog, bacon, roast chicken and hamburger are meat.",
-       "promptUz": "Hayvon mahsulotidan tayyorlangan taomlar",
-       "whyUz": "GO'SHT taomlari — rasmda pastki qatorda.\n'meat' — sanalmaydigan ot ('meats' odatda ishlatilmaydi).",
-       "speak": "b  Which are meat?"
+       "en": "Steak, sausage, hot-dog, bacon, roast chicken and hamburger are meat.",
+       "uz": "Hayvon mahsulotidan tayyorlangan taomlar",
+       "note": "GO'SHT taomlari — rasmda pastki qatorda.\n'meat' — sanalmaydigan ot ('meats' odatda ishlatilmaydi)."
       },
       {
-       "prompt": "b  Which are fruit?",
-       "answer": "Pear, strawberries, coconut, pineapple, cherries, bananas, orange, apple and grapes are fruit.",
-       "promptUz": "Daraxt va butalarda o'sadigan shirin mahsulotlar",
-       "whyUz": "MEVALAR — rasmda chap yuqori burchakda.\n'fruit' — odatda SANALMAYDIGAN ot: 'I eat a lot of fruit.'\n'fruits' faqat turli TURLARI haqida.",
-       "speak": "b  Which are fruit?"
+       "en": "Pear, strawberries, coconut, pineapple, cherries, bananas, orange, apple and grapes are fruit.",
+       "uz": "Daraxt va butalarda o'sadigan shirin mahsulotlar",
+       "note": "MEVALAR — rasmda chap yuqori burchakda.\n'fruit' — odatda SANALMAYDIGAN ot: 'I eat a lot of fruit.'\n'fruits' faqat turli TURLARI haqida."
       },
       {
-       "prompt": "b  Which are sweets?",
-       "answer": "Chocolate cake, ice-cream, apple pie and biscuits are sweets.",
-       "promptUz": "Shirin, shakarli taomlar",
-       "whyUz": "SHIRINLIKLAR — rasmda chap o'rta qismda.\n'sweets' = shirinliklar (britancha); amerikacha 'candy'.",
-       "speak": "b  Which are sweets?"
+       "en": "Chocolate cake, ice-cream, apple pie and biscuits are sweets.",
+       "uz": "Shirin, shakarli taomlar",
+       "note": "SHIRINLIKLAR — rasmda chap o'rta qismda.\n'sweets' = shirinliklar (britancha); amerikacha 'candy'."
       },
       {
-       "prompt": "c  When do you eat breakfast?",
-       "answer": "I eat breakfast at seven o'clock in the morning.",
-       "promptUz": "O'z javobingiz — soatni ayting",
-       "whyUz": "NAMUNA javob.\n'have breakfast' ham to'g'ri: 'I have breakfast at seven.'\nDIQQAT: 'breakfast' oldida artikl KERAK EMAS.",
-       "speak": "c  When do you eat breakfast?"
+       "en": "I eat breakfast at seven o'clock in the morning.",
+       "uz": "O'z javobingiz — soatni ayting",
+       "note": "NAMUNA javob.\n'have breakfast' ham to'g'ri: 'I have breakfast at seven.'\nDIQQAT: 'breakfast' oldida artikl KERAK EMAS."
       },
       {
-       "prompt": "c  When do you eat lunch?",
-       "answer": "I eat lunch at one o'clock in the afternoon.",
-       "promptUz": "O'z javobingiz",
-       "whyUz": "NAMUNA javob. 'lunch' — tushlik.",
-       "speak": "c  When do you eat lunch?"
+       "en": "I eat lunch at one o'clock in the afternoon.",
+       "uz": "O'z javobingiz",
+       "note": "NAMUNA javob. 'lunch' — tushlik."
       },
       {
-       "prompt": "c  When do you eat dinner?",
-       "answer": "I eat dinner at seven o'clock in the evening.",
-       "promptUz": "O'z javobingiz",
-       "whyUz": "NAMUNA javob. 'dinner' — kunning asosiy ovqati,\nodatda kechqurun.",
-       "speak": "c  When do you eat dinner?"
+       "en": "I eat dinner at seven o'clock in the evening.",
+       "uz": "O'z javobingiz",
+       "note": "NAMUNA javob. 'dinner' — kunning asosiy ovqati,\nodatda kechqurun."
       },
       {
-       "prompt": "d  How often do you eat fruit?",
-       "answer": "I eat fruit every day.",
-       "promptUz": "O'z javobingiz — chastota ayting",
-       "whyUz": "NAMUNA javob.\nChastota ifodalari: every day, twice a week, once a month,\nalways, usually, often, sometimes, never.",
-       "speak": "d  How often do you eat fruit?"
+       "en": "I eat fruit every day.",
+       "uz": "O'z javobingiz — chastota ayting",
+       "note": "NAMUNA javob.\nChastota ifodalari: every day, twice a week, once a month,\nalways, usually, often, sometimes, never."
       },
       {
-       "prompt": "d  How often do you eat sweets?",
-       "answer": "I eat sweets twice a week.",
-       "promptUz": "O'z javobingiz",
-       "whyUz": "NAMUNA javob. 'twice a week' = haftada ikki marta.",
-       "speak": "d  How often do you eat sweets?"
+       "en": "I eat sweets twice a week.",
+       "uz": "O'z javobingiz",
+       "note": "NAMUNA javob. 'twice a week' = haftada ikki marta."
       },
       {
-       "prompt": "d  How often do you eat vegetables?",
-       "answer": "I eat vegetables every day.",
-       "promptUz": "O'z javobingiz",
-       "whyUz": "NAMUNA javob.",
-       "speak": "d  How often do you eat vegetables?"
+       "en": "I eat vegetables every day.",
+       "uz": "O'z javobingiz",
+       "note": "NAMUNA javob."
       },
       {
-       "prompt": "d  How often do you eat meat?",
-       "answer": "I eat meat three or four times a week.",
-       "promptUz": "O'z javobingiz",
-       "whyUz": "NAMUNA javob. '... times a week' — haftasiga ... marta.",
-       "speak": "d  How often do you eat meat?"
+       "en": "I eat meat three or four times a week.",
+       "uz": "O'z javobingiz",
+       "note": "NAMUNA javob. '... times a week' — haftasiga ... marta."
       },
       {
-       "prompt": "e  Which of the foods/drinks can you have for breakfast?",
-       "answer": "You can have eggs, bacon, bread, cheese, coffee, tea, milk or orange juice for breakfast.",
-       "promptUz": "Ertalab yeyiladigan taomlar",
-       "whyUz": "'have ... FOR breakfast' — 'for' predlogi shart.\nNonushtaga yengil va tez tayyorlanadigan taomlar olinadi.",
-       "speak": "e  Which of the foods/drinks can you have for breakfast?"
+       "en": "You can have eggs, bacon, bread, cheese, coffee, tea, milk or orange juice for breakfast.",
+       "uz": "Ertalab yeyiladigan taomlar",
+       "note": "'have ... FOR breakfast' — 'for' predlogi shart.\nNonushtaga yengil va tez tayyorlanadigan taomlar olinadi."
       },
       {
-       "prompt": "e  Which of the foods can you have for dessert?",
-       "answer": "You can have ice-cream, chocolate cake, apple pie, biscuits or fruit for dessert.",
-       "promptUz": "Ovqatdan keyingi shirinlik",
-       "whyUz": "'dessert' /dɪˈzɜːt/ = shirinlik (ovqatdan keyin).\nDIQQAT: 'desert' /ˈdezət/ = cho'l — boshqa so'z!",
-       "speak": "e  Which of the foods can you have for dessert?"
+       "en": "You can have ice-cream, chocolate cake, apple pie, biscuits or fruit for dessert.",
+       "uz": "Ovqatdan keyingi shirinlik",
+       "note": "'dessert' /dɪˈzɜːt/ = shirinlik (ovqatdan keyin).\nDIQQAT: 'desert' /ˈdezət/ = cho'l — boshqa so'z!"
       },
       {
-       "prompt": "e  Which of the foods can you have for a light meal?",
-       "answer": "You can have salad, tomato soup, a sandwich or grilled fish for a light meal.",
-       "promptUz": "Yengil, og'ir bo'lmagan ovqat",
-       "whyUz": "'a light meal' = yengil ovqat (aksi: 'a heavy meal').\nSalat va sho'rva — eng yengil taomlar.",
-       "speak": "e  Which of the foods can you have for a light meal?"
+       "en": "You can have salad, tomato soup, a sandwich or grilled fish for a light meal.",
+       "uz": "Yengil, og'ir bo'lmagan ovqat",
+       "note": "'a light meal' = yengil ovqat (aksi: 'a heavy meal').\nSalat va sho'rva — eng yengil taomlar."
       },
       {
-       "prompt": "e  Which of the foods can you have for a traditional English breakfast?",
-       "answer": "You can have eggs, bacon, sausages, tomatoes, bread and tea for a traditional English breakfast.",
-       "promptUz": "An'anaviy ingliz nonushtasi — issiq va to'yimli",
-       "whyUz": "AN'ANAVIY INGLIZ NONUSHTASI (a full English breakfast):\n  qovurilgan tuxum, bekon, sosiska, pomidor, loviya,\n  qovurilgan non va choy.\nBu — dunyodagi eng to'yimli nonushtalardan biri.",
-       "speak": "e  Which of the foods can you have for a traditional English breakfast?"
+       "en": "You can have eggs, bacon, sausages, tomatoes, bread and tea for a traditional English breakfast.",
+       "uz": "An'anaviy ingliz nonushtasi — issiq va to'yimli",
+       "note": "AN'ANAVIY INGLIZ NONUSHTASI (a full English breakfast):\n  qovurilgan tuxum, bekon, sosiska, pomidor, loviya,\n  qovurilgan non va choy.\nBu — dunyodagi eng to'yimli nonushtalardan biri."
       }
      ]
     },
@@ -1103,13 +1069,12 @@
      "book": "coursebook",
      "bookPage": 55,
      "bookRef": "Coursebook, 55-bet, 3a-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "Matnda ham, 54-betdagi rasmda ham bor bo'lgan ovqatlar:",
-       "answer": "steak, pepper, chicken, fish, rice, tomato soup, pasta, tomato sauce, salad, bread, apple pie, ice-cream",
-       "promptUz": "12 ta ovqat nomi",
-       "whyUz": "MATNDAGI TAOMLAR:\n  pepper steak    → 54-betda 'steak' va 'pepper' bor\n  roast chicken   → 'roast chicken' bor\n  fish with rice  → 'grilled fish' va 'rice' bor\n  tomato soup     → 'tomato soup' bor\n  pasta           → 'pasta' bor\n  tomato sauce    → 'tomato sauce' bor\n  salads          → 'salad' bor\n  home-made bread → 'bread' bor\n  apple pie       → 'apple pie' bor\n  ice-cream       → 'ice-cream' bor"
+       "en": "steak, pepper, chicken, fish, rice, tomato soup, pasta, tomato sauce, salad, bread, apple pie, ice-cream",
+       "uz": "12 ta ovqat nomi",
+       "note": "MATNDAGI TAOMLAR:\n  pepper steak    → 54-betda 'steak' va 'pepper' bor\n  roast chicken   → 'roast chicken' bor\n  fish with rice  → 'grilled fish' va 'rice' bor\n  tomato soup     → 'tomato soup' bor\n  pasta           → 'pasta' bor\n  tomato sauce    → 'tomato sauce' bor\n  salads          → 'salad' bor\n  home-made bread → 'bread' bor\n  apple pie       → 'apple pie' bor\n  ice-cream       → 'ice-cream' bor"
       }
      ]
     },
@@ -1122,35 +1087,27 @@
      "book": "coursebook",
      "bookPage": 55,
      "bookRef": "Coursebook, 55-bet, 3b-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "1  What is the name of the new restaurant?",
-       "answer": "It's Laura's.",
-       "promptUz": "Matnning birinchi so'zi",
-       "whyUz": "Restoran nomi — 'Laura's' (egalik apostrofi bilan).\nTo'liq javob: 'The name of the new restaurant is Laura's.'",
-       "speak": "1  What is the name of the new restaurant?"
+       "en": "It's Laura's.",
+       "uz": "Matnning birinchi so'zi",
+       "note": "Restoran nomi — 'Laura's' (egalik apostrofi bilan).\nTo'liq javob: 'The name of the new restaurant is Laura's.'"
       },
       {
-       "prompt": "2  What dishes can you have there?",
-       "answer": "You can have pepper steak, roast chicken, fish with rice, tomato soup, pasta with rich tomato sauce and lots of different salads.",
-       "promptUz": "Ikkinchi xatboshidagi 'such as' dan keyingi ro'yxat",
-       "whyUz": "'such as' dan keyin taomlar ro'yxati keladi.\nHome-made bread ham bor, lekin u asosiy taom emas — qo'shimcha.",
-       "speak": "2  What dishes can you have there?"
+       "en": "You can have pepper steak, roast chicken, fish with rice, tomato soup, pasta with rich tomato sauce and lots of different salads.",
+       "uz": "Ikkinchi xatboshidagi 'such as' dan keyingi ro'yxat",
+       "note": "'such as' dan keyin taomlar ro'yxati keladi.\nHome-made bread ham bor, lekin u asosiy taom emas — qo'shimcha."
       },
       {
-       "prompt": "3  What can you have for dessert?",
-       "answer": "You can have a slice of apple pie or a bowl of special ice-cream.",
-       "promptUz": "'For dessert, ...' bilan boshlanadigan gap",
-       "whyUz": "Ikki variant: 'a slice of apple pie' YOKI 'a bowl of ice-cream'.\nTanlov bo'lgani uchun 'OR' ishlatiladi.",
-       "speak": "3  What can you have for dessert?"
+       "en": "You can have a slice of apple pie or a bowl of special ice-cream.",
+       "uz": "'For dessert, ...' bilan boshlanadigan gap",
+       "note": "Ikki variant: 'a slice of apple pie' YOKI 'a bowl of ice-cream'.\nTanlov bo'lgani uchun 'OR' ishlatiladi."
       },
       {
-       "prompt": "4  What time does the restaurant open and close?",
-       "answer": "It opens at eleven in the morning and closes at eleven in the evening.",
-       "promptUz": "'from ... till ...' bo'lgan gap",
-       "whyUz": "Matnda: 'open from eleven in the morning till eleven in the evening'.\nSavolda 'open' va 'close' fe'llari → javobda ham fe'l bilan:\n  'It OPENS at ...' va 'CLOSES at ...' (birlik ega → -S).",
-       "speak": "4  What time does the restaurant open and close?"
+       "en": "It opens at eleven in the morning and closes at eleven in the evening.",
+       "uz": "'from ... till ...' bo'lgan gap",
+       "note": "Matnda: 'open from eleven in the morning till eleven in the evening'.\nSavolda 'open' va 'close' fe'llari → javobda ham fe'l bilan:\n  'It OPENS at ...' va 'CLOSES at ...' (birlik ega → -S)."
       }
      ]
     },
@@ -1753,49 +1710,37 @@
      "book": "coursebook",
      "bookPage": 58,
      "bookRef": "Coursebook, 58-bet, 16-mashq (og'zaki qism)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "O'zbekistonda kuniga necha mahal ovqatlanadi?",
-       "answer": "In Uzbekistan, most people have three meals a day: breakfast, lunch and dinner.",
-       "promptUz": "O'z javobingiz",
-       "whyUz": "NAMUNA javob. B matndagi qolipdan foydalanildi:\n'have three meals a day'.",
-       "speak": "O'zbekistonda kuniga necha mahal ovqatlanadi?"
+       "en": "In Uzbekistan, most people have three meals a day: breakfast, lunch and dinner.",
+       "uz": "O'z javobingiz",
+       "note": "NAMUNA javob. B matndagi qolipdan foydalanildi:\n'have three meals a day'."
       },
       {
-       "prompt": "Qaysi taom milliy taom hisoblanadi?",
-       "answer": "Our favourite food is palov. We also like shurpa, manti and somsa.",
-       "promptUz": "Milliy taomlarni ayting",
-       "whyUz": "NAMUNA javob. C matndagi 'Finland's favourite food' qolipi kabi.",
-       "speak": "Qaysi taom milliy taom hisoblanadi?"
+       "en": "Our favourite food is palov. We also like shurpa, manti and somsa.",
+       "uz": "Milliy taomlarni ayting",
+       "note": "NAMUNA javob. C matndagi 'Finland's favourite food' qolipi kabi."
       },
       {
-       "prompt": "Odamlar nima bilan ovqatlanadi?",
-       "answer": "We usually eat with a spoon and a fork. We often eat palov with our hands.",
-       "promptUz": "Qoshiq, vilka yoki qo'l",
-       "whyUz": "NAMUNA javob. B matndagi qolip:\n'eat with a fork and a spoon, or with their hands'.",
-       "speak": "Odamlar nima bilan ovqatlanadi?"
+       "en": "We usually eat with a spoon and a fork. We often eat palov with our hands.",
+       "uz": "Qoshiq, vilka yoki qo'l",
+       "note": "NAMUNA javob. B matndagi qolip:\n'eat with a fork and a spoon, or with their hands'."
       },
       {
-       "prompt": "Oilalar birga ovqatlanadimi?",
-       "answer": "Families usually eat together, especially at the weekends. We like to invite guests to eat with us.",
-       "promptUz": "Oila va mehmon odatlari",
-       "whyUz": "NAMUNA javob. B matndagi qolip:\n'Families usually eat together and they like to invite people'.",
-       "speak": "Oilalar birga ovqatlanadimi?"
+       "en": "Families usually eat together, especially at the weekends. We like to invite guests to eat with us.",
+       "uz": "Oila va mehmon odatlari",
+       "note": "NAMUNA javob. B matndagi qolip:\n'Families usually eat together and they like to invite people'."
       },
       {
-       "prompt": "Qanday ichimliklar ichiladi?",
-       "answer": "People drink a lot of green tea. We drink tea at any time of the day.",
-       "promptUz": "Sevimli ichimlik",
-       "whyUz": "NAMUNA javob. A matndagi qolip:\n'at any time of the day'.",
-       "speak": "Qanday ichimliklar ichiladi?"
+       "en": "People drink a lot of green tea. We drink tea at any time of the day.",
+       "uz": "Sevimli ichimlik",
+       "note": "NAMUNA javob. A matndagi qolip:\n'at any time of the day'."
       },
       {
-       "prompt": "Qanday ovqat odobi bor?",
-       "answer": "It's polite to say 'Yoqimli ishtaha' before a meal. It isn't polite to leave the table before everyone finishes.",
-       "promptUz": "Nima odobli, nima odobsiz",
-       "whyUz": "NAMUNA javob. B matndagi qolip:\n'It's polite TO + fe'l'.",
-       "speak": "Qanday ovqat odobi bor?"
+       "en": "It's polite to say 'Yoqimli ishtaha' before a meal. It isn't polite to leave the table before everyone finishes.",
+       "uz": "Nima odobli, nima odobsiz",
+       "note": "NAMUNA javob. B matndagi qolip:\n'It's polite TO + fe'l'."
       }
      ]
     }
@@ -2947,43 +2892,37 @@
      "book": "coursebook",
      "bookPage": 57,
      "bookRef": "Coursebook, 57-bet, 13c-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "orange juice — coffee — biscuits",
-       "answer": "Is there any orange juice in the fridge?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'orange juice' va 'coffee' — SANALMAYDIGAN → 'Is there any ...?'\n'biscuits' — KO'PLIK, lekin ILTIMOS savolida SOME."
+       "en": "Is there any orange juice in the fridge?",
+       "uz": "Savol tuzing",
+       "note": "'orange juice' va 'coffee' — SANALMAYDIGAN → 'Is there any ...?'\n'biscuits' — KO'PLIK, lekin ILTIMOS savolida SOME."
       },
       {
-       "prompt": "orange juice — coffee — biscuits",
-       "answer": "No, I'm afraid there isn't any orange juice. Would you like some coffee instead? — Yes, please. I'd love some. Can I have some biscuits too? — Yes, of course.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'orange juice' va 'coffee' — SANALMAYDIGAN → 'Is there any ...?'\n'biscuits' — KO'PLIK, lekin ILTIMOS savolida SOME."
+       "en": "No, I'm afraid there isn't any orange juice. Would you like some coffee instead? — Yes, please. I'd love some. Can I have some biscuits too? — Yes, of course.",
+       "uz": "Javob tuzing",
+       "note": "'orange juice' va 'coffee' — SANALMAYDIGAN → 'Is there any ...?'\n'biscuits' — KO'PLIK, lekin ILTIMOS savolida SOME."
       },
       {
-       "prompt": "cheese — ham — bread",
-       "answer": "Is there any cheese in the fridge?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "Uchalasi ham SANALMAYDIGAN → 'Is there any ...?'\nInkorda ANY, taklif va iltimosda SOME."
+       "en": "Is there any cheese in the fridge?",
+       "uz": "Savol tuzing",
+       "note": "Uchalasi ham SANALMAYDIGAN → 'Is there any ...?'\nInkorda ANY, taklif va iltimosda SOME."
       },
       {
-       "prompt": "cheese — ham — bread",
-       "answer": "No, I'm afraid there isn't any cheese. Would you like some ham instead? — Yes, please. I'd love some. Can I have some bread too? — Yes, of course.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "Uchalasi ham SANALMAYDIGAN → 'Is there any ...?'\nInkorda ANY, taklif va iltimosda SOME."
+       "en": "No, I'm afraid there isn't any cheese. Would you like some ham instead? — Yes, please. I'd love some. Can I have some bread too? — Yes, of course.",
+       "uz": "Javob tuzing",
+       "note": "Uchalasi ham SANALMAYDIGAN → 'Is there any ...?'\nInkorda ANY, taklif va iltimosda SOME."
       },
       {
-       "prompt": "bananas — strawberries — sugar",
-       "answer": "Are there any bananas in the fridge?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'bananas' — KO'PLIK → 'ARE there any ...?' va 'there AREN'T any'.\n'sugar' — SANALMAYDIGAN → 'some sugar'."
+       "en": "Are there any bananas in the fridge?",
+       "uz": "Savol tuzing",
+       "note": "'bananas' — KO'PLIK → 'ARE there any ...?' va 'there AREN'T any'.\n'sugar' — SANALMAYDIGAN → 'some sugar'."
       },
       {
-       "prompt": "bananas — strawberries — sugar",
-       "answer": "No, I'm afraid there aren't any bananas. Would you like some strawberries instead? — Yes, please. I'd love some. Can I have some sugar too? — Yes, of course.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'bananas' — KO'PLIK → 'ARE there any ...?' va 'there AREN'T any'.\n'sugar' — SANALMAYDIGAN → 'some sugar'."
+       "en": "No, I'm afraid there aren't any bananas. Would you like some strawberries instead? — Yes, please. I'd love some. Can I have some sugar too? — Yes, of course.",
+       "uz": "Javob tuzing",
+       "note": "'bananas' — KO'PLIK → 'ARE there any ...?' va 'there AREN'T any'.\n'sugar' — SANALMAYDIGAN → 'some sugar'."
       }
      ]
     }
@@ -4278,49 +4217,42 @@
      "book": "coursebook",
      "bookPage": 55,
      "bookRef": "Coursebook, 55-bet, Speaking (jadval)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "Location:",
-       "answer": "on Bridge Street",
-       "promptUz": "Matnning birinchi gapi",
-       "whyUz": "Matnda: 'on Bridge Street'.\nKo'cha nomi oldida ON."
+       "en": "on Bridge Street",
+       "uz": "Matnning birinchi gapi",
+       "note": "Matnda: 'on Bridge Street'.\nKo'cha nomi oldida ON."
       },
       {
-       "prompt": "Main Course / Dishes:",
-       "answer": "pepper steak, roast chicken, fish with rice, tomato soup, pasta with rich tomato sauce, different salads, home-made bread",
-       "promptUz": "Ikkinchi xatboshi",
-       "whyUz": "'a main course' = asosiy taom (ikkinchi taom).\nMatndagi 'such as' dan keyingi ro'yxat."
+       "en": "pepper steak, roast chicken, fish with rice, tomato soup, pasta with rich tomato sauce, different salads, home-made bread",
+       "uz": "Ikkinchi xatboshi",
+       "note": "'a main course' = asosiy taom (ikkinchi taom).\nMatndagi 'such as' dan keyingi ro'yxat."
       },
       {
-       "prompt": "Desserts:",
-       "answer": "a slice of apple pie, a bowl of special ice-cream",
-       "promptUz": "'For dessert, ...' gapi",
-       "whyUz": "Ikki shirinlik varianti berilgan."
+       "en": "a slice of apple pie, a bowl of special ice-cream",
+       "uz": "'For dessert, ...' gapi",
+       "note": "Ikki shirinlik varianti berilgan."
       },
       {
-       "prompt": "Cost:",
-       "answer": "about £25 for two people",
-       "promptUz": "Uchinchi xatboshining birinchi gapi",
-       "whyUz": "Matnda: 'A meal for two people costs about £25.'"
+       "en": "about £25 for two people",
+       "uz": "Uchinchi xatboshining birinchi gapi",
+       "note": "Matnda: 'A meal for two people costs about £25.'"
       },
       {
-       "prompt": "Service:",
-       "answer": "excellent, with very helpful and friendly waiters",
-       "promptUz": "Uchinchi xatboshi",
-       "whyUz": "Matnda: 'The service is excellent, with very helpful and friendly waiters.'"
+       "en": "excellent, with very helpful and friendly waiters",
+       "uz": "Uchinchi xatboshi",
+       "note": "Matnda: 'The service is excellent, with very helpful and friendly waiters.'"
       },
       {
-       "prompt": "Opening hours:",
-       "answer": "from eleven in the morning till eleven in the evening",
-       "promptUz": "Uchinchi xatboshining oxirgi gapi",
-       "whyUz": "'opening hours' = ish vaqti (do'kon, restoran uchun)."
+       "en": "from eleven in the morning till eleven in the evening",
+       "uz": "Uchinchi xatboshining oxirgi gapi",
+       "note": "'opening hours' = ish vaqti (do'kon, restoran uchun)."
       },
       {
-       "prompt": "Recommendation:",
-       "answer": "Don't forget to book a table first. (Tel.: 6640306)",
-       "promptUz": "Oxirgi xatboshi — maslahat",
-       "whyUz": "'a recommendation' = tavsiya.\nRestoran gavjum bo'lgani uchun oldindan stol band qilish kerak."
+       "en": "Don't forget to book a table first. (Tel.: 6640306)",
+       "uz": "Oxirgi xatboshi — maslahat",
+       "note": "'a recommendation' = tavsiya.\nRestoran gavjum bo'lgani uchun oldindan stol band qilish kerak."
       }
      ]
     },
@@ -4441,63 +4373,47 @@
      "book": "coursebook",
      "bookPage": 56,
      "bookRef": "Coursebook, 56-bet, 10-mashq (so'zlar)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "coffee / tea (ichimlik)",
-       "answer": "I'm thirsty. Is there anything to drink? — Would you like some coffee?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'coffee' va 'tea' — SANALMAYDIGAN → SOME bilan.",
-       "speak": "coffee / tea (ichimlik)"
+       "en": "I'm thirsty. Is there anything to drink? — Would you like some coffee?",
+       "uz": "Savol tuzing",
+       "note": "'coffee' va 'tea' — SANALMAYDIGAN → SOME bilan."
       },
       {
-       "prompt": "coffee / tea (ichimlik)",
-       "answer": "No, thanks. I don't like coffee. — How about some tea? — Oh, yes, please! I'd love some tea!",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'coffee' va 'tea' — SANALMAYDIGAN → SOME bilan.",
-       "speak": "coffee / tea (ichimlik)"
+       "en": "No, thanks. I don't like coffee. — How about some tea? — Oh, yes, please! I'd love some tea!",
+       "uz": "Javob tuzing",
+       "note": "'coffee' va 'tea' — SANALMAYDIGAN → SOME bilan."
       },
       {
-       "prompt": "beer / mineral water (ichimlik)",
-       "answer": "I'm thirsty. Is there anything to drink? — Would you like some beer?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'beer' va 'mineral water' — SANALMAYDIGAN → SOME bilan.\n'mineral water' = mineral suv.",
-       "speak": "beer / mineral water (ichimlik)"
+       "en": "I'm thirsty. Is there anything to drink? — Would you like some beer?",
+       "uz": "Savol tuzing",
+       "note": "'beer' va 'mineral water' — SANALMAYDIGAN → SOME bilan.\n'mineral water' = mineral suv."
       },
       {
-       "prompt": "beer / mineral water (ichimlik)",
-       "answer": "No, thanks. I don't like beer. — How about some mineral water? — Oh, yes, please! I'd love some mineral water!",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'beer' va 'mineral water' — SANALMAYDIGAN → SOME bilan.\n'mineral water' = mineral suv.",
-       "speak": "beer / mineral water (ichimlik)"
+       "en": "No, thanks. I don't like beer. — How about some mineral water? — Oh, yes, please! I'd love some mineral water!",
+       "uz": "Javob tuzing",
+       "note": "'beer' va 'mineral water' — SANALMAYDIGAN → SOME bilan.\n'mineral water' = mineral suv."
       },
       {
-       "prompt": "spaghetti / soup (ovqat)",
-       "answer": "I'm hungry. Is there anything to eat? — Would you like some spaghetti?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'spaghetti' va 'soup' — SANALMAYDIGAN → SOME bilan.\nDIQQAT: 'spaghetti' italyanchada ko'plik, lekin inglizchada\nSANALMAYDIGAN ot: 'spaghetti IS delicious'.",
-       "speak": "spaghetti / soup (ovqat)"
+       "en": "I'm hungry. Is there anything to eat? — Would you like some spaghetti?",
+       "uz": "Savol tuzing",
+       "note": "'spaghetti' va 'soup' — SANALMAYDIGAN → SOME bilan.\nDIQQAT: 'spaghetti' italyanchada ko'plik, lekin inglizchada\nSANALMAYDIGAN ot: 'spaghetti IS delicious'."
       },
       {
-       "prompt": "spaghetti / soup (ovqat)",
-       "answer": "No, thanks. I don't like spaghetti. — How about some soup? — Oh, yes, please! I'd love some soup!",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'spaghetti' va 'soup' — SANALMAYDIGAN → SOME bilan.\nDIQQAT: 'spaghetti' italyanchada ko'plik, lekin inglizchada\nSANALMAYDIGAN ot: 'spaghetti IS delicious'.",
-       "speak": "spaghetti / soup (ovqat)"
+       "en": "No, thanks. I don't like spaghetti. — How about some soup? — Oh, yes, please! I'd love some soup!",
+       "uz": "Javob tuzing",
+       "note": "'spaghetti' va 'soup' — SANALMAYDIGAN → SOME bilan.\nDIQQAT: 'spaghetti' italyanchada ko'plik, lekin inglizchada\nSANALMAYDIGAN ot: 'spaghetti IS delicious'."
       },
       {
-       "prompt": "chips / hamburger (ovqat)",
-       "answer": "I'm hungry. Is there anything to eat? — Would you like some chips?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'chips' — KO'PLIK → SOME bilan.\n'a hamburger' — SANALADIGAN BIRLIK → 'A' bilan ('some' XATO).",
-       "speak": "chips / hamburger (ovqat)"
+       "en": "I'm hungry. Is there anything to eat? — Would you like some chips?",
+       "uz": "Savol tuzing",
+       "note": "'chips' — KO'PLIK → SOME bilan.\n'a hamburger' — SANALADIGAN BIRLIK → 'A' bilan ('some' XATO)."
       },
       {
-       "prompt": "chips / hamburger (ovqat)",
-       "answer": "No, thanks. I don't like chips. — How about a hamburger? — Oh, yes, please! I'd love a hamburger!",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'chips' — KO'PLIK → SOME bilan.\n'a hamburger' — SANALADIGAN BIRLIK → 'A' bilan ('some' XATO).",
-       "speak": "chips / hamburger (ovqat)"
+       "en": "No, thanks. I don't like chips. — How about a hamburger? — Oh, yes, please! I'd love a hamburger!",
+       "uz": "Javob tuzing",
+       "note": "'chips' — KO'PLIK → SOME bilan.\n'a hamburger' — SANALADIGAN BIRLIK → 'A' bilan ('some' XATO)."
       }
      ]
     }
@@ -4722,129 +4638,107 @@
      "book": "coursebook",
      "bookPage": 58,
      "bookRef": "Coursebook, 58-bet, 17-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "fish and chips — £2.75",
-       "answer": "Can I have fish and chips, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'fish and chips' — o'zgarmas ibora, artiklsiz.\n£2.75 → 'two poundS seventy-five' (1 dan katta → POUNDS)."
+       "en": "Can I have fish and chips, please?",
+       "uz": "Savol tuzing",
+       "note": "'fish and chips' — o'zgarmas ibora, artiklsiz.\n£2.75 → 'two poundS seventy-five' (1 dan katta → POUNDS)."
       },
       {
-       "prompt": "fish and chips — £2.75",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's two pounds seventy-five. Anything else? — No, thanks.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'fish and chips' — o'zgarmas ibora, artiklsiz.\n£2.75 → 'two poundS seventy-five' (1 dan katta → POUNDS)."
+       "en": "Yes, here you are. — Thanks. How much is it? — It's two pounds seventy-five. Anything else? — No, thanks.",
+       "uz": "Javob tuzing",
+       "note": "'fish and chips' — o'zgarmas ibora, artiklsiz.\n£2.75 → 'two poundS seventy-five' (1 dan katta → POUNDS)."
       },
       {
-       "prompt": "cheese sandwich — £1.20",
-       "answer": "Can I have a cheese sandwich, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'a sandwich' — SANALADIGAN → 'a' bilan.\n£1.20 → 'one pound twenty'."
+       "en": "Can I have a cheese sandwich, please?",
+       "uz": "Savol tuzing",
+       "note": "'a sandwich' — SANALADIGAN → 'a' bilan.\n£1.20 → 'one pound twenty'."
       },
       {
-       "prompt": "cheese sandwich — £1.20",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's one pound twenty. Anything else? — No, thanks.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'a sandwich' — SANALADIGAN → 'a' bilan.\n£1.20 → 'one pound twenty'."
+       "en": "Yes, here you are. — Thanks. How much is it? — It's one pound twenty. Anything else? — No, thanks.",
+       "uz": "Javob tuzing",
+       "note": "'a sandwich' — SANALADIGAN → 'a' bilan.\n£1.20 → 'one pound twenty'."
       },
       {
-       "prompt": "coffee — 85p",
-       "answer": "Can I have a coffee, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'a coffee' = bir piyola qahva (menyuda shunday ishlatiladi).\n85p → 'eighty-five pence'."
+       "en": "Can I have a coffee, please?",
+       "uz": "Savol tuzing",
+       "note": "'a coffee' = bir piyola qahva (menyuda shunday ishlatiladi).\n85p → 'eighty-five pence'."
       },
       {
-       "prompt": "coffee — 85p",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's eighty-five pence. Anything else? — No, thanks.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'a coffee' = bir piyola qahva (menyuda shunday ishlatiladi).\n85p → 'eighty-five pence'."
+       "en": "Yes, here you are. — Thanks. How much is it? — It's eighty-five pence. Anything else? — No, thanks.",
+       "uz": "Javob tuzing",
+       "note": "'a coffee' = bir piyola qahva (menyuda shunday ishlatiladi).\n85p → 'eighty-five pence'."
       },
       {
-       "prompt": "tea — 70p",
-       "answer": "Can I have a tea, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'a cup of tea' ham mumkin.\n70p → 'seventy pence'."
+       "en": "Can I have a tea, please?",
+       "uz": "Savol tuzing",
+       "note": "'a cup of tea' ham mumkin.\n70p → 'seventy pence'."
       },
       {
-       "prompt": "tea — 70p",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's seventy pence. Anything else? — No, thanks.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'a cup of tea' ham mumkin.\n70p → 'seventy pence'."
+       "en": "Yes, here you are. — Thanks. How much is it? — It's seventy pence. Anything else? — No, thanks.",
+       "uz": "Javob tuzing",
+       "note": "'a cup of tea' ham mumkin.\n70p → 'seventy pence'."
       },
       {
-       "prompt": "hot chocolate — 95p",
-       "answer": "Can I have a hot chocolate, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'hot chocolate' = issiq shokolad (ichimlik).\n95p → 'ninety-five pence'."
+       "en": "Can I have a hot chocolate, please?",
+       "uz": "Savol tuzing",
+       "note": "'hot chocolate' = issiq shokolad (ichimlik).\n95p → 'ninety-five pence'."
       },
       {
-       "prompt": "hot chocolate — 95p",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's ninety-five pence. Anything else? — No, thanks.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'hot chocolate' = issiq shokolad (ichimlik).\n95p → 'ninety-five pence'."
+       "en": "Yes, here you are. — Thanks. How much is it? — It's ninety-five pence. Anything else? — No, thanks.",
+       "uz": "Javob tuzing",
+       "note": "'hot chocolate' = issiq shokolad (ichimlik).\n95p → 'ninety-five pence'."
       },
       {
-       "prompt": "Coke (medium) — 80p",
-       "answer": "Can I have a medium Coke, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'medium' = o'rtacha o'lcham (small / medium / large).\n80p → 'eighty pence'."
+       "en": "Can I have a medium Coke, please?",
+       "uz": "Savol tuzing",
+       "note": "'medium' = o'rtacha o'lcham (small / medium / large).\n80p → 'eighty pence'."
       },
       {
-       "prompt": "Coke (medium) — 80p",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's eighty pence. Anything else? — No, thanks.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'medium' = o'rtacha o'lcham (small / medium / large).\n80p → 'eighty pence'."
+       "en": "Yes, here you are. — Thanks. How much is it? — It's eighty pence. Anything else? — No, thanks.",
+       "uz": "Javob tuzing",
+       "note": "'medium' = o'rtacha o'lcham (small / medium / large).\n80p → 'eighty pence'."
       },
       {
-       "prompt": "small packet of crisps — 35p",
-       "answer": "Can I have a small packet of crisps, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'a packet of crisps' — miqdor iborasi (56-bet).\n35p → 'thirty-five pence'."
+       "en": "Can I have a small packet of crisps, please?",
+       "uz": "Savol tuzing",
+       "note": "'a packet of crisps' — miqdor iborasi (56-bet).\n35p → 'thirty-five pence'."
       },
       {
-       "prompt": "small packet of crisps — 35p",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's thirty-five pence. Anything else? — No, thanks.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'a packet of crisps' — miqdor iborasi (56-bet).\n35p → 'thirty-five pence'."
+       "en": "Yes, here you are. — Thanks. How much is it? — It's thirty-five pence. Anything else? — No, thanks.",
+       "uz": "Javob tuzing",
+       "note": "'a packet of crisps' — miqdor iborasi (56-bet).\n35p → 'thirty-five pence'."
       },
       {
-       "prompt": "large packet of crisps — 70p",
-       "answer": "Can I have a large packet of crisps, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'large' = katta (aksi: small).\n70p → 'seventy pence'."
+       "en": "Can I have a large packet of crisps, please?",
+       "uz": "Savol tuzing",
+       "note": "'large' = katta (aksi: small).\n70p → 'seventy pence'."
       },
       {
-       "prompt": "large packet of crisps — 70p",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's seventy pence. Anything else? — No, thanks.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'large' = katta (aksi: small).\n70p → 'seventy pence'."
+       "en": "Yes, here you are. — Thanks. How much is it? — It's seventy pence. Anything else? — No, thanks.",
+       "uz": "Javob tuzing",
+       "note": "'large' = katta (aksi: small).\n70p → 'seventy pence'."
       },
       {
-       "prompt": "ice-cream — £1.80",
-       "answer": "Can I have an ice-cream, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'an ice-cream' — UNLI tovush bilan boshlanadi → AN.\n£1.80 → 'one pound eighty' (kitobda ham shu misol bor)."
+       "en": "Can I have an ice-cream, please?",
+       "uz": "Savol tuzing",
+       "note": "'an ice-cream' — UNLI tovush bilan boshlanadi → AN.\n£1.80 → 'one pound eighty' (kitobda ham shu misol bor)."
       },
       {
-       "prompt": "ice-cream — £1.80",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's one pound eighty. Anything else? — No, thanks.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'an ice-cream' — UNLI tovush bilan boshlanadi → AN.\n£1.80 → 'one pound eighty' (kitobda ham shu misol bor)."
+       "en": "Yes, here you are. — Thanks. How much is it? — It's one pound eighty. Anything else? — No, thanks.",
+       "uz": "Javob tuzing",
+       "note": "'an ice-cream' — UNLI tovush bilan boshlanadi → AN.\n£1.80 → 'one pound eighty' (kitobda ham shu misol bor)."
       },
       {
-       "prompt": "ikkita narsa: hamburger + Coke",
-       "answer": "Can I have a hamburger, please? — ... Anything else? — Yes, can I have a medium Coke, please?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'Anything else?' savoliga 'Yes' deb javob berish mumkin.\nHisob: £1.60 + 80p = £2.40 → 'two pounds forty'.",
-       "speak": "ikkita narsa: hamburger + Coke"
+       "en": "Can I have a hamburger, please? — ... Anything else? — Yes, can I have a medium Coke, please?",
+       "uz": "Savol tuzing",
+       "note": "'Anything else?' savoliga 'Yes' deb javob berish mumkin.\nHisob: £1.60 + 80p = £2.40 → 'two pounds forty'."
       },
       {
-       "prompt": "ikkita narsa: hamburger + Coke",
-       "answer": "Yes, here you are. — Thanks. How much is it? — It's two pounds forty.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'Anything else?' savoliga 'Yes' deb javob berish mumkin.\nHisob: £1.60 + 80p = £2.40 → 'two pounds forty'.",
-       "speak": "ikkita narsa: hamburger + Coke"
+       "en": "Yes, here you are. — Thanks. How much is it? — It's two pounds forty.",
+       "uz": "Javob tuzing",
+       "note": "'Anything else?' savoliga 'Yes' deb javob berish mumkin.\nHisob: £1.60 + 80p = £2.40 → 'two pounds forty'."
       }
      ]
     }
@@ -5198,49 +5092,37 @@
      "book": "workbook",
      "bookPage": 34,
      "bookRef": "Workbook, 34-bet, 11-mashq (davomi)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "tomato soup → pepper steak → ice-cream → wine",
-       "answer": "What would you like to start? — And for the main course? — Would you like some dessert? — What would you like to drink?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "Jami: £2.50 + £7.00 + £2.75 + £2.00 = £14.25\n'a glass of wine' — miqdor iborasi.",
-       "speak": "tomato soup → pepper steak → ice-cream → wine"
+       "en": "What would you like to start? — And for the main course? — Would you like some dessert? — What would you like to drink?",
+       "uz": "Savol tuzing",
+       "note": "Jami: £2.50 + £7.00 + £2.75 + £2.00 = £14.25\n'a glass of wine' — miqdor iborasi."
       },
       {
-       "prompt": "tomato soup → pepper steak → ice-cream → wine",
-       "answer": "I'd like the tomato soup, please. — Can I have the pepper steak with potatoes, please? — I'll have some ice-cream, please. — A glass of wine, please.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "Jami: £2.50 + £7.00 + £2.75 + £2.00 = £14.25\n'a glass of wine' — miqdor iborasi.",
-       "speak": "tomato soup → pepper steak → ice-cream → wine"
+       "en": "I'd like the tomato soup, please. — Can I have the pepper steak with potatoes, please? — I'll have some ice-cream, please. — A glass of wine, please.",
+       "uz": "Javob tuzing",
+       "note": "Jami: £2.50 + £7.00 + £2.75 + £2.00 = £14.25\n'a glass of wine' — miqdor iborasi."
       },
       {
-       "prompt": "onion soup → grilled fish → strawberries and cream → mineral water",
-       "answer": "What would you like to start? — And for the main course? — Would you like some dessert? — What would you like to drink?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "Jami: £2.50 + £4.99 + £3.00 + £1.50 = £11.99\n'strawberries and cream' — turg'un birikma (32-bet).",
-       "speak": "onion soup → grilled fish → strawberries and cream → mineral water"
+       "en": "What would you like to start? — And for the main course? — Would you like some dessert? — What would you like to drink?",
+       "uz": "Savol tuzing",
+       "note": "Jami: £2.50 + £4.99 + £3.00 + £1.50 = £11.99\n'strawberries and cream' — turg'un birikma (32-bet)."
       },
       {
-       "prompt": "onion soup → grilled fish → strawberries and cream → mineral water",
-       "answer": "I'd like the onion soup, please. — Can I have the grilled fish with rice, please? — I'll have some strawberries and cream, please. — A bottle of mineral water, please.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "Jami: £2.50 + £4.99 + £3.00 + £1.50 = £11.99\n'strawberries and cream' — turg'un birikma (32-bet).",
-       "speak": "onion soup → grilled fish → strawberries and cream → mineral water"
+       "en": "I'd like the onion soup, please. — Can I have the grilled fish with rice, please? — I'll have some strawberries and cream, please. — A bottle of mineral water, please.",
+       "uz": "Javob tuzing",
+       "note": "Jami: £2.50 + £4.99 + £3.00 + £1.50 = £11.99\n'strawberries and cream' — turg'un birikma (32-bet)."
       },
       {
-       "prompt": "garden salad → roast chicken → apple pie → beer",
-       "answer": "What would you like to start? — And for the main course? — Would you like some dessert? — What would you like to drink?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "Jami: £3.00 + £5.75 + £2.75 + £2.00 = £13.50\nEng arzon variant emas, lekin muvozanatli.",
-       "speak": "garden salad → roast chicken → apple pie → beer"
+       "en": "What would you like to start? — And for the main course? — Would you like some dessert? — What would you like to drink?",
+       "uz": "Savol tuzing",
+       "note": "Jami: £3.00 + £5.75 + £2.75 + £2.00 = £13.50\nEng arzon variant emas, lekin muvozanatli."
       },
       {
-       "prompt": "garden salad → roast chicken → apple pie → beer",
-       "answer": "I'd like a garden salad, please. — Can I have the roast chicken with carrots, please? — I'll have some apple pie, please. — A beer, please.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "Jami: £3.00 + £5.75 + £2.75 + £2.00 = £13.50\nEng arzon variant emas, lekin muvozanatli.",
-       "speak": "garden salad → roast chicken → apple pie → beer"
+       "en": "I'd like a garden salad, please. — Can I have the roast chicken with carrots, please? — I'll have some apple pie, please. — A beer, please.",
+       "uz": "Javob tuzing",
+       "note": "Jami: £3.00 + £5.75 + £2.75 + £2.00 = £13.50\nEng arzon variant emas, lekin muvozanatli."
       }
      ]
     },
@@ -5450,61 +5332,43 @@
      "book": "coursebook",
      "bookPage": 58,
      "bookRef": "Coursebook, 58-bet, Writing (Project)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "1-gap: kuniga necha mahal",
-       "answer": "In Britain, most people have three meals a day: breakfast, lunch and dinner.",
-       "whyUz": "B matndagi qolip: 'have three meals a day'.",
-       "speak": "1-gap: kuniga necha mahal"
+       "en": "In Britain, most people have three meals a day: breakfast, lunch and dinner.",
+       "note": "B matndagi qolip: 'have three meals a day'."
       },
       {
-       "prompt": "2-gap: nonushta",
-       "answer": "A traditional English breakfast is eggs, bacon, sausages, tomatoes, bread and tea, but many people only have cereal or toast.",
-       "whyUz": "54-betdagi 1e-mashqdan.\n'toast' = qovurilgan non.",
-       "speak": "2-gap: nonushta"
+       "en": "A traditional English breakfast is eggs, bacon, sausages, tomatoes, bread and tea, but many people only have cereal or toast.",
+       "note": "54-betdagi 1e-mashqdan.\n'toast' = qovurilgan non."
       },
       {
-       "prompt": "3-gap: tushlik",
-       "answer": "For lunch, people often have a sandwich or a light meal at the office.",
-       "whyUz": "DIQQAT: A matndagi braziliyaliklardan farqi —\nbritaniyaliklar ishxonada tushlik qiladi.",
-       "speak": "3-gap: tushlik"
+       "en": "For lunch, people often have a sandwich or a light meal at the office.",
+       "note": "DIQQAT: A matndagi braziliyaliklardan farqi —\nbritaniyaliklar ishxonada tushlik qiladi."
       },
       {
-       "prompt": "4-gap: kechki ovqat",
-       "answer": "They have dinner at about seven o'clock in the evening, much earlier than in Brazil.",
-       "whyUz": "A matnda braziliyaliklar kechasi soat 10 da ovqatlanadi —\nsolishtirish uchun.",
-       "speak": "4-gap: kechki ovqat"
+       "en": "They have dinner at about seven o'clock in the evening, much earlier than in Brazil.",
+       "note": "A matnda braziliyaliklar kechasi soat 10 da ovqatlanadi —\nsolishtirish uchun."
       },
       {
-       "prompt": "5-gap: milliy taom",
-       "answer": "Fish and chips is Britain's favourite food, and there are a lot of fast food shops which sell it.",
-       "whyUz": "C matndagi qolip: 'Finland's favourite food' va 'stalls which sell'.",
-       "speak": "5-gap: milliy taom"
+       "en": "Fish and chips is Britain's favourite food, and there are a lot of fast food shops which sell it.",
+       "note": "C matndagi qolip: 'Finland's favourite food' va 'stalls which sell'."
       },
       {
-       "prompt": "6-gap: ichimlik",
-       "answer": "British people drink a lot of tea, usually with milk, at any time of the day.",
-       "whyUz": "A matndagi qolip: 'at any time of the day'.\nBritaniyada choy SUT bilan ichiladi.",
-       "speak": "6-gap: ichimlik"
+       "en": "British people drink a lot of tea, usually with milk, at any time of the day.",
+       "note": "A matndagi qolip: 'at any time of the day'.\nBritaniyada choy SUT bilan ichiladi."
       },
       {
-       "prompt": "7-gap: kim bilan ovqatlanadi",
-       "answer": "During the week, families don't always eat together, but at the weekends they usually have dinner together.",
-       "whyUz": "C matndagi qolip: 'During the week ... at the weekends ...'.",
-       "speak": "7-gap: kim bilan ovqatlanadi"
+       "en": "During the week, families don't always eat together, but at the weekends they usually have dinner together.",
+       "note": "C matndagi qolip: 'During the week ... at the weekends ...'."
       },
       {
-       "prompt": "8-gap: nima bilan ovqatlanadi",
-       "answer": "They always eat with a knife and fork, and it isn't polite to eat with your hands.",
-       "whyUz": "A matndagi qolip: 'always use a knife and fork'.\n'It isn't polite TO + fe'l'.",
-       "speak": "8-gap: nima bilan ovqatlanadi"
+       "en": "They always eat with a knife and fork, and it isn't polite to eat with your hands.",
+       "note": "A matndagi qolip: 'always use a knife and fork'.\n'It isn't polite TO + fe'l'."
       },
       {
-       "prompt": "TO'LIQ MAQOLA (namuna)",
-       "answer": "In Britain, most people have three meals a day: breakfast, lunch and dinner. A traditional English breakfast is eggs, bacon, sausages, tomatoes, bread and tea, but many people only have cereal or toast. For lunch, people often have a sandwich or a light meal at the office. They have dinner at about seven o'clock in the evening, much earlier than in Brazil. Fish and chips is Britain's favourite food, and there are a lot of fast food shops which sell it. British people drink a lot of tea, usually with milk, at any time of the day. During the week, families don't always eat together, but at the weekends they usually have dinner together. They always eat with a knife and fork, and it isn't polite to eat with your hands.",
-       "whyUz": "Taxminan 110 so'z — 16-mashqdagi matnlar bilan bir xil hajm.",
-       "speak": "TO'LIQ MAQOLA (namuna)"
+       "en": "In Britain, most people have three meals a day: breakfast, lunch and dinner. A traditional English breakfast is eggs, bacon, sausages, tomatoes, bread and tea, but many people only have cereal or toast. For lunch, people often have a sandwich or a light meal at the office. They have dinner at about seven o'clock in the evening, much earlier than in Brazil. Fish and chips is Britain's favourite food, and there are a lot of fast food shops which sell it. British people drink a lot of tea, usually with milk, at any time of the day. During the week, families don't always eat together, but at the weekends they usually have dinner together. They always eat with a knife and fork, and it isn't polite to eat with your hands.",
+       "note": "Taxminan 110 so'z — 16-mashqdagi matnlar bilan bir xil hajm."
       }
      ]
     }
@@ -5527,55 +5391,39 @@
      "book": "coursebook",
      "bookPage": 59,
      "bookRef": "Coursebook, 59-bet, Writing (an advertisement)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "1-xatboshi: nomi, turi, joyi",
-       "answer": "The Blue Lagoon is a new Hawaiian restaurant on Long Street.",
-       "whyUz": "55-betdagi qolip: 'X is the new ... restaurant on ... Street.'",
-       "speak": "1-xatboshi: nomi, turi, joyi"
+       "en": "The Blue Lagoon is a new Hawaiian restaurant on Long Street.",
+       "note": "55-betdagi qolip: 'X is the new ... restaurant on ... Street.'"
       },
       {
-       "prompt": "2-xatboshi: taomlar",
-       "answer": "There are a lot of tasty dishes to choose from, such as fresh fish dishes and Hawaiian burgers with pineapple.",
-       "whyUz": "'such as' — misol keltirish (55 va 58-betlarda ham bor).",
-       "speak": "2-xatboshi: taomlar"
+       "en": "There are a lot of tasty dishes to choose from, such as fresh fish dishes and Hawaiian burgers with pineapple.",
+       "note": "'such as' — misol keltirish (55 va 58-betlarda ham bor)."
       },
       {
-       "prompt": "2-xatboshi: shirinliklar",
-       "answer": "For dessert, don't miss the chance to try our coconut ice-cream or fried bananas in honey.",
-       "whyUz": "'Don't miss the chance TO + fe'l' — reklama iborasi (55-bet).",
-       "speak": "2-xatboshi: shirinliklar"
+       "en": "For dessert, don't miss the chance to try our coconut ice-cream or fried bananas in honey.",
+       "note": "'Don't miss the chance TO + fe'l' — reklama iborasi (55-bet)."
       },
       {
-       "prompt": "3-xatboshi: narx",
-       "answer": "A meal for two people costs about £30.",
-       "whyUz": "'A meal' — birlik ega → COSTS.",
-       "speak": "3-xatboshi: narx"
+       "en": "A meal for two people costs about £30.",
+       "note": "'A meal' — birlik ega → COSTS."
       },
       {
-       "prompt": "3-xatboshi: xizmat",
-       "answer": "The service is excellent, with very helpful and friendly waiters.",
-       "whyUz": "55-betdagi qolip.",
-       "speak": "3-xatboshi: xizmat"
+       "en": "The service is excellent, with very helpful and friendly waiters.",
+       "note": "55-betdagi qolip."
       },
       {
-       "prompt": "3-xatboshi: ish vaqti",
-       "answer": "The restaurant is open from two in the afternoon till twelve at night.",
-       "whyUz": "'from ... till ...' — ish vaqti qolipi.",
-       "speak": "3-xatboshi: ish vaqti"
+       "en": "The restaurant is open from two in the afternoon till twelve at night.",
+       "note": "'from ... till ...' — ish vaqti qolipi."
       },
       {
-       "prompt": "4-xatboshi: tavsiya",
-       "answer": "The Blue Lagoon is a very nice restaurant for the whole family, but it is very busy, so don't forget to book a table first.",
-       "whyUz": "'the whole family' = butun oila.\n'don't forget TO + fe'l' — 55-betdagi qolip.",
-       "speak": "4-xatboshi: tavsiya"
+       "en": "The Blue Lagoon is a very nice restaurant for the whole family, but it is very busy, so don't forget to book a table first.",
+       "note": "'the whole family' = butun oila.\n'don't forget TO + fe'l' — 55-betdagi qolip."
       },
       {
-       "prompt": "TO'LIQ REKLAMA (namuna)",
-       "answer": "The Blue Lagoon is a new Hawaiian restaurant on Long Street. There are a lot of tasty dishes to choose from, such as fresh fish dishes and Hawaiian burgers with pineapple. For dessert, don't miss the chance to try our coconut ice-cream or fried bananas in honey. A meal for two people costs about £30. The service is excellent, with very helpful and friendly waiters. The restaurant is open from two in the afternoon till twelve at night. The Blue Lagoon is a very nice restaurant for the whole family, but it is very busy, so don't forget to book a table first.",
-       "whyUz": "To'rt xatboshi, taxminan 95 so'z —\n55-betdagi 'Laura's' taqrizi bilan bir xil tuzilish.",
-       "speak": "TO'LIQ REKLAMA (namuna)"
+       "en": "The Blue Lagoon is a new Hawaiian restaurant on Long Street. There are a lot of tasty dishes to choose from, such as fresh fish dishes and Hawaiian burgers with pineapple. For dessert, don't miss the chance to try our coconut ice-cream or fried bananas in honey. A meal for two people costs about £30. The service is excellent, with very helpful and friendly waiters. The restaurant is open from two in the afternoon till twelve at night. The Blue Lagoon is a very nice restaurant for the whole family, but it is very busy, so don't forget to book a table first.",
+       "note": "To'rt xatboshi, taxminan 95 so'z —\n55-betdagi 'Laura's' taqrizi bilan bir xil tuzilish."
       }
      ]
     }
@@ -5598,49 +5446,35 @@
      "book": "workbook",
      "bookPage": 35,
      "bookRef": "Workbook, 35-bet, 16-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "1-xatboshi: taklif, turi va joyi",
-       "answer": "Come to Spangles, the family restaurant on Merrydale Road!",
-       "whyUz": "15-mashqdagi qolip: 'Come to X, the ... restaurant on ... Street!'\nKitobda berilgan boshlanish: 'Come to Spangles .....'",
-       "speak": "1-xatboshi: taklif, turi va joyi"
+       "en": "Come to Spangles, the family restaurant on Merrydale Road!",
+       "note": "15-mashqdagi qolip: 'Come to X, the ... restaurant on ... Street!'\nKitobda berilgan boshlanish: 'Come to Spangles .....'"
       },
       {
-       "prompt": "2-xatboshi: umumiy baho",
-       "answer": "The food is delicious, with lots of interesting dishes to choose from.",
-       "whyUz": "Kitobda berilgan boshlanish: 'The food is ....'\nPlakatdagi shior: 'DELICIOUS FOOD - INTERESTING DISHES'.",
-       "speak": "2-xatboshi: umumiy baho"
+       "en": "The food is delicious, with lots of interesting dishes to choose from.",
+       "note": "Kitobda berilgan boshlanish: 'The food is ....'\nPlakatdagi shior: 'DELICIOUS FOOD - INTERESTING DISHES'."
       },
       {
-       "prompt": "2-xatboshi: taomlar",
-       "answer": "Try our roast beef, vegetarian meals and home-made soup — and don't miss our chocolate cake and fresh fruit salad!",
-       "whyUz": "15-mashqdagi qolip: 'Try our ... — and don't miss our ...!'\nAsosiy taomlar 'Try our' dan keyin, shirinliklar 'don't miss' dan keyin.",
-       "speak": "2-xatboshi: taomlar"
+       "en": "Try our roast beef, vegetarian meals and home-made soup — and don't miss our chocolate cake and fresh fruit salad!",
+       "note": "15-mashqdagi qolip: 'Try our ... — and don't miss our ...!'\nAsosiy taomlar 'Try our' dan keyin, shirinliklar 'don't miss' dan keyin."
       },
       {
-       "prompt": "3-xatboshi: kimni olib kelish va muhit",
-       "answer": "Bring your children, and enjoy our live piano music, helpful waiters and friendly atmosphere.",
-       "whyUz": "Kitobda berilgan boshlanish: 'Bring your children ....'\nDIQQAT: 'The Wild West' da 'Bring your FRIENDS' edi,\nchunki u yoshlar uchun; 'Spangles' esa OILAVIY restoran →\n'Bring your CHILDREN'.",
-       "speak": "3-xatboshi: kimni olib kelish va muhit"
+       "en": "Bring your children, and enjoy our live piano music, helpful waiters and friendly atmosphere.",
+       "note": "Kitobda berilgan boshlanish: 'Bring your children ....'\nDIQQAT: 'The Wild West' da 'Bring your FRIENDS' edi,\nchunki u yoshlar uchun; 'Spangles' esa OILAVIY restoran →\n'Bring your CHILDREN'."
       },
       {
-       "prompt": "4-xatboshi: ish vaqti",
-       "answer": "We're open from 11 am to 11 pm, Monday to Saturday.",
-       "whyUz": "Kitobda berilgan boshlanish: 'We're open ....'\nDIQQAT: 'every day' EMAS — plakatda 'Monday to Saturday'\n(yakshanba yopiq).",
-       "speak": "4-xatboshi: ish vaqti"
+       "en": "We're open from 11 am to 11 pm, Monday to Saturday.",
+       "note": "Kitobda berilgan boshlanish: 'We're open ....'\nDIQQAT: 'every day' EMAS — plakatda 'Monday to Saturday'\n(yakshanba yopiq)."
       },
       {
-       "prompt": "4-xatboshi: yakuniy chaqiriq",
-       "answer": "Come to Spangles — it's great!",
-       "whyUz": "15-mashqdagi qolip: boshlanish takrorlanadi.",
-       "speak": "4-xatboshi: yakuniy chaqiriq"
+       "en": "Come to Spangles — it's great!",
+       "note": "15-mashqdagi qolip: boshlanish takrorlanadi."
       },
       {
-       "prompt": "TO'LIQ RADIO REKLAMASI (namuna)",
-       "answer": "Come to Spangles, the family restaurant on Merrydale Road! The food is delicious, with lots of interesting dishes to choose from. Try our roast beef, vegetarian meals and home-made soup — and don't miss our chocolate cake and fresh fruit salad! Bring your children, and enjoy our live piano music, helpful waiters and friendly atmosphere. We're open from 11 am to 11 pm, Monday to Saturday. Come to Spangles — it's great!",
-       "whyUz": "To'rt xatboshi, taxminan 75 so'z —\n15-mashqdagi 'The Wild West' reklamasi bilan bir xil tuzilish.",
-       "speak": "TO'LIQ RADIO REKLAMASI (namuna)"
+       "en": "Come to Spangles, the family restaurant on Merrydale Road! The food is delicious, with lots of interesting dishes to choose from. Try our roast beef, vegetarian meals and home-made soup — and don't miss our chocolate cake and fresh fruit salad! Bring your children, and enjoy our live piano music, helpful waiters and friendly atmosphere. We're open from 11 am to 11 pm, Monday to Saturday. Come to Spangles — it's great!",
+       "note": "To'rt xatboshi, taxminan 75 so'z —\n15-mashqdagi 'The Wild West' reklamasi bilan bir xil tuzilish."
       }
      ]
     }

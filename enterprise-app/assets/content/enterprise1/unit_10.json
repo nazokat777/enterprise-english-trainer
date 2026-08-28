@@ -86,91 +86,77 @@
      "book": "coursebook",
      "bookPage": 70,
      "bookRef": "Coursebook, 70-bet, 2-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "D  John F. Kennedy — American president (1917 - 1963)",
-       "answer": "Who was John F. Kennedy?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "KITOBDAGI NAMUNA.\n'an American' — 'A' unli tovush → AN.\n'was born' — majhul nisbat, 'died' — oddiy o'tgan zamon."
+       "en": "Who was John F. Kennedy?",
+       "uz": "Savol tuzing",
+       "note": "KITOBDAGI NAMUNA.\n'an American' — 'A' unli tovush → AN.\n'was born' — majhul nisbat, 'died' — oddiy o'tgan zamon."
       },
       {
-       "prompt": "D  John F. Kennedy — American president (1917 - 1963)",
-       "answer": "He was an American president. — When was he born? — He was born in 1917. — When did he die? — He died in 1963.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "KITOBDAGI NAMUNA.\n'an American' — 'A' unli tovush → AN.\n'was born' — majhul nisbat, 'died' — oddiy o'tgan zamon."
+       "en": "He was an American president. — When was he born? — He was born in 1917. — When did he die? — He died in 1963.",
+       "uz": "Javob tuzing",
+       "note": "KITOBDAGI NAMUNA.\n'an American' — 'A' unli tovush → AN.\n'was born' — majhul nisbat, 'died' — oddiy o'tgan zamon."
       },
       {
-       "prompt": "A  Elizabeth I — Queen of England (1533 - 1603)",
-       "answer": "Who was Elizabeth I?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'Elizabeth I' → 'Elizabeth the First' deb o'qiladi.\n'THE Queen of England' — o'sha davrda YAGONA → THE.\nAyol → she."
+       "en": "Who was Elizabeth I?",
+       "uz": "Savol tuzing",
+       "note": "'Elizabeth I' → 'Elizabeth the First' deb o'qiladi.\n'THE Queen of England' — o'sha davrda YAGONA → THE.\nAyol → she."
       },
       {
-       "prompt": "A  Elizabeth I — Queen of England (1533 - 1603)",
-       "answer": "She was the Queen of England. — When was she born? — She was born in 1533. — When did she die? — She died in 1603.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'Elizabeth I' → 'Elizabeth the First' deb o'qiladi.\n'THE Queen of England' — o'sha davrda YAGONA → THE.\nAyol → she."
+       "en": "She was the Queen of England. — When was she born? — She was born in 1533. — When did she die? — She died in 1603.",
+       "uz": "Javob tuzing",
+       "note": "'Elizabeth I' → 'Elizabeth the First' deb o'qiladi.\n'THE Queen of England' — o'sha davrda YAGONA → THE.\nAyol → she."
       },
       {
-       "prompt": "B  Marie Curie — Polish scientist (1867 - 1934)",
-       "answer": "Who was Marie Curie?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'a Polish scientist' — 'P' undosh tovush → A.\nKo'p olim bor, u ulardan biri → A (THE emas)."
+       "en": "Who was Marie Curie?",
+       "uz": "Savol tuzing",
+       "note": "'a Polish scientist' — 'P' undosh tovush → A.\nKo'p olim bor, u ulardan biri → A (THE emas)."
       },
       {
-       "prompt": "B  Marie Curie — Polish scientist (1867 - 1934)",
-       "answer": "She was a Polish scientist. — When was she born? — She was born in 1867. — When did she die? — She died in 1934.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'a Polish scientist' — 'P' undosh tovush → A.\nKo'p olim bor, u ulardan biri → A (THE emas)."
+       "en": "She was a Polish scientist. — When was she born? — She was born in 1867. — When did she die? — She died in 1934.",
+       "uz": "Javob tuzing",
+       "note": "'a Polish scientist' — 'P' undosh tovush → A.\nKo'p olim bor, u ulardan biri → A (THE emas)."
       },
       {
-       "prompt": "C  Rudolf Nureyev — Russian ballet dancer (1938 - 1993)",
-       "answer": "Who was Rudolf Nureyev?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'a Russian ballet dancer' — 'R' undosh → A."
+       "en": "Who was Rudolf Nureyev?",
+       "uz": "Savol tuzing",
+       "note": "'a Russian ballet dancer' — 'R' undosh → A."
       },
       {
-       "prompt": "C  Rudolf Nureyev — Russian ballet dancer (1938 - 1993)",
-       "answer": "He was a Russian ballet dancer. — When was he born? — He was born in 1938. — When did he die? — He died in 1993.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'a Russian ballet dancer' — 'R' undosh → A."
+       "en": "He was a Russian ballet dancer. — When was he born? — He was born in 1938. — When did he die? — He died in 1993.",
+       "uz": "Javob tuzing",
+       "note": "'a Russian ballet dancer' — 'R' undosh → A."
       },
       {
-       "prompt": "E  Elvis Presley — American singer and actor (1935 - 1977)",
-       "answer": "Who was Elvis Presley?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'an American' → AN.\nIkki kasb 'and' bilan bog'lanadi, artikl BIR MARTA."
+       "en": "Who was Elvis Presley?",
+       "uz": "Savol tuzing",
+       "note": "'an American' → AN.\nIkki kasb 'and' bilan bog'lanadi, artikl BIR MARTA."
       },
       {
-       "prompt": "E  Elvis Presley — American singer and actor (1935 - 1977)",
-       "answer": "He was an American singer and actor. — When was he born? — He was born in 1935. — When did he die? — He died in 1977.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'an American' → AN.\nIkki kasb 'and' bilan bog'lanadi, artikl BIR MARTA."
+       "en": "He was an American singer and actor. — When was he born? — He was born in 1935. — When did he die? — He died in 1977.",
+       "uz": "Javob tuzing",
+       "note": "'an American' → AN.\nIkki kasb 'and' bilan bog'lanadi, artikl BIR MARTA."
       },
       {
-       "prompt": "F  Leonardo da Vinci — Italian artist (1452 - 1519)",
-       "answer": "Who was Leonardo da Vinci?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'an Italian' — 'I' UNLI tovush → AN."
+       "en": "Who was Leonardo da Vinci?",
+       "uz": "Savol tuzing",
+       "note": "'an Italian' — 'I' UNLI tovush → AN."
       },
       {
-       "prompt": "F  Leonardo da Vinci — Italian artist (1452 - 1519)",
-       "answer": "He was an Italian artist. — When was he born? — He was born in 1452. — When did he die? — He died in 1519.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'an Italian' — 'I' UNLI tovush → AN."
+       "en": "He was an Italian artist. — When was he born? — He was born in 1452. — When did he die? — He died in 1519.",
+       "uz": "Javob tuzing",
+       "note": "'an Italian' — 'I' UNLI tovush → AN."
       },
       {
-       "prompt": "G  Diana Spencer — Princess of Wales (1961 - 1997)",
-       "answer": "Who was Diana Spencer?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'THE Princess of Wales' — yagona unvon → THE.\nUning to'liq tarjimai holi 71-betda."
+       "en": "Who was Diana Spencer?",
+       "uz": "Savol tuzing",
+       "note": "'THE Princess of Wales' — yagona unvon → THE.\nUning to'liq tarjimai holi 71-betda."
       },
       {
-       "prompt": "G  Diana Spencer — Princess of Wales (1961 - 1997)",
-       "answer": "She was the Princess of Wales. — When was she born? — She was born in 1961. — When did she die? — She died in 1997.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'THE Princess of Wales' — yagona unvon → THE.\nUning to'liq tarjimai holi 71-betda."
+       "en": "She was the Princess of Wales. — When was she born? — She was born in 1961. — When did she die? — She died in 1997.",
+       "uz": "Javob tuzing",
+       "note": "'THE Princess of Wales' — yagona unvon → THE.\nUning to'liq tarjimai holi 71-betda."
       }
      ]
     },
@@ -1075,63 +1061,47 @@
      "book": "coursebook",
      "bookPage": 71,
      "bookRef": "Coursebook, 71-bet, 5-mashq (savollar)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "1  When and where was Diana born?",
-       "answer": "She was born on 1st July, 1961, in Norfolk, England.",
-       "promptUz": "1-xatboshining birinchi gapi",
-       "whyUz": "IKKI savol birga: WHEN (vaqt) + WHERE (joy).\n'was born ON + sana' — aniq sana bilan ON.\n'IN Norfolk, England' — joy bilan IN.",
-       "speak": "1  When and where was Diana born?"
+       "en": "She was born on 1st July, 1961, in Norfolk, England.",
+       "uz": "1-xatboshining birinchi gapi",
+       "note": "IKKI savol birga: WHEN (vaqt) + WHERE (joy).\n'was born ON + sana' — aniq sana bilan ON.\n'IN Norfolk, England' — joy bilan IN."
       },
       {
-       "prompt": "2  Where did she study?",
-       "answer": "She studied at a boarding school in Kent and completed her education in Switzerland.",
-       "promptUz": "IKKI joy aytilgan",
-       "whyUz": "Matnda IKKI joy bor:\n'a boarding school in Kent' va 'Switzerland'.\nIkkalasini ham aytish kerak — biri qoldirilsa javob to'liq emas.\n'study AT a school' — predlog AT.",
-       "speak": "2  Where did she study?"
+       "en": "She studied at a boarding school in Kent and completed her education in Switzerland.",
+       "uz": "IKKI joy aytilgan",
+       "note": "Matnda IKKI joy bor:\n'a boarding school in Kent' va 'Switzerland'.\nIkkalasini ham aytish kerak — biri qoldirilsa javob to'liq emas.\n'study AT a school' — predlog AT."
       },
       {
-       "prompt": "3  When and where did she marry Prince Charles?",
-       "answer": "She married him in July, 1981, at St Paul's Cathedral in London.",
-       "promptUz": "2-xatboshining birinchi gapi",
-       "whyUz": "'IN July, 1981' — oy va yil bilan IN.\n'AT St Paul's Cathedral' — aniq bino bilan AT.\nSavolda 'did ... marry' (asosiy shakl),\njavobda 'married' (o'tgan shakl).",
-       "speak": "3  When and where did she marry Prince Charles?"
+       "en": "She married him in July, 1981, at St Paul's Cathedral in London.",
+       "uz": "2-xatboshining birinchi gapi",
+       "note": "'IN July, 1981' — oy va yil bilan IN.\n'AT St Paul's Cathedral' — aniq bino bilan AT.\nSavolda 'did ... marry' (asosiy shakl),\njavobda 'married' (o'tgan shakl)."
       },
       {
-       "prompt": "4  How many children did they have?",
-       "answer": "They had two sons, William and Harry.",
-       "promptUz": "2-xatboshining oxirgi gapi",
-       "whyUz": "'How many ...?' — SANALADIGAN ot bilan.\nJavob: ikkita o'g'il — Uilyam va Garri.\nSavolda 'did ... have', javobda 'had'.",
-       "speak": "4  How many children did they have?"
+       "en": "They had two sons, William and Harry.",
+       "uz": "2-xatboshining oxirgi gapi",
+       "note": "'How many ...?' — SANALADIGAN ot bilan.\nJavob: ikkita o'g'il — Uilyam va Garri.\nSavolda 'did ... have', javobda 'had'."
       },
       {
-       "prompt": "5  Why was she popular?",
-       "answer": "Because the British loved her for her kindness and beauty, and because she cared so much about sick and poor people all over the world.",
-       "promptUz": "3-xatboshi butunlay shu haqda",
-       "whyUz": "'Why ...?' savoliga 'BECAUSE ...' bilan javob beriladi.\nIKKI sabab bor: mehribonligi/go'zalligi va\nkasal-kambag'allarga qayg'urishi.",
-       "speak": "5  Why was she popular?"
+       "en": "Because the British loved her for her kindness and beauty, and because she cared so much about sick and poor people all over the world.",
+       "uz": "3-xatboshi butunlay shu haqda",
+       "note": "'Why ...?' savoliga 'BECAUSE ...' bilan javob beriladi.\nIKKI sabab bor: mehribonligi/go'zalligi va\nkasal-kambag'allarga qayg'urishi."
       },
       {
-       "prompt": "6  Was her life as happy as it appeared?",
-       "answer": "No, it wasn't. She and Charles had problems with their marriage.",
-       "promptUz": "4-xatboshining birinchi gapi",
-       "whyUz": "'Was ...?' savoliga qisqa javob: 'No, it wasn't.'\nSo'ng sabab tushuntiriladi.\n'as happy as' — tenglik darajasi.\nBu — unitning asosiy g'oyasi: shuhrat baxt keltirmaydi.",
-       "speak": "6  Was her life as happy as it appeared?"
+       "en": "No, it wasn't. She and Charles had problems with their marriage.",
+       "uz": "4-xatboshining birinchi gapi",
+       "note": "'Was ...?' savoliga qisqa javob: 'No, it wasn't.'\nSo'ng sabab tushuntiriladi.\n'as happy as' — tenglik darajasi.\nBu — unitning asosiy g'oyasi: shuhrat baxt keltirmaydi."
       },
       {
-       "prompt": "7  When did they divorce?",
-       "answer": "They divorced in August, 1996.",
-       "promptUz": "4-xatboshining oxirgi gapi",
-       "whyUz": "'IN August, 1996' — oy va yil bilan IN.\nSavolda 'did ... divorce', javobda 'divorced'.",
-       "speak": "7  When did they divorce?"
+       "en": "They divorced in August, 1996.",
+       "uz": "4-xatboshining oxirgi gapi",
+       "note": "'IN August, 1996' — oy va yil bilan IN.\nSavolda 'did ... divorce', javobda 'divorced'."
       },
       {
-       "prompt": "8  When and where did she die?",
-       "answer": "She died on 31st August, 1997, in a car accident in Paris.",
-       "promptUz": "5-xatboshining oxirgi qismi",
-       "whyUz": "'ON 31st August, 1997' — aniq sana bilan ON.\n'IN Paris' — shahar bilan IN.\n'IN a car accident' — halokat bilan IN.",
-       "speak": "8  When and where did she die?"
+       "en": "She died on 31st August, 1997, in a car accident in Paris.",
+       "uz": "5-xatboshining oxirgi qismi",
+       "note": "'ON 31st August, 1997' — aniq sana bilan ON.\n'IN Paris' — shahar bilan IN.\n'IN a car accident' — halokat bilan IN."
       }
      ]
     }
@@ -1464,49 +1434,37 @@
      "book": "coursebook",
      "bookPage": 74,
      "bookRef": "Coursebook, 74-bet, 17c-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "1  AJ worked as a model when he was three.",
-       "answer": "Wrong! AJ didn't work as a model when he was three. He worked as a model when he was six.",
-       "promptUz": "KITOBDAGI NAMUNA",
-       "whyUz": "Matnda: 'AJ worked as a model when he was SIX'.\nInkorda 'didn't WORK' (asosiy shakl),\ntasdiqda 'WORKED' (o'tgan shakl).",
-       "speak": "1  AJ worked as a model when he was three."
+       "en": "Wrong! AJ didn't work as a model when he was three. He worked as a model when he was six.",
+       "uz": "KITOBDAGI NAMUNA",
+       "note": "Matnda: 'AJ worked as a model when he was SIX'.\nInkorda 'didn't WORK' (asosiy shakl),\ntasdiqda 'WORKED' (o'tgan shakl)."
       },
       {
-       "prompt": "2  AJ got to know Howie when he was thirteen.",
-       "answer": "Wrong! AJ didn't get to know Howie when he was thirteen. He got to know him when he was fourteen.",
-       "promptUz": "Matnda qaysi yosh aytilgan?",
-       "whyUz": "Matnda: 'When he was FOURTEEN, he got to know Howie'.\nDIQQAT: 'didn't GET' — asosiy shakl ('didn't got' XATO).\nTasdiqda 'GOT' (noto'g'ri fe'lning o'tgan shakli).",
-       "speak": "2  AJ got to know Howie when he was thirteen."
+       "en": "Wrong! AJ didn't get to know Howie when he was thirteen. He got to know him when he was fourteen.",
+       "uz": "Matnda qaysi yosh aytilgan?",
+       "note": "Matnda: 'When he was FOURTEEN, he got to know Howie'.\nDIQQAT: 'didn't GET' — asosiy shakl ('didn't got' XATO).\nTasdiqda 'GOT' (noto'g'ri fe'lning o'tgan shakli)."
       },
       {
-       "prompt": "3  Nick's parents had a theatre.",
-       "answer": "Wrong! Nick's parents didn't have a theatre. They had a disco.",
-       "promptUz": "Nik qayerda raqsga tushardi?",
-       "whyUz": "Matnda: 'Nick's parents had a DISCO'.\nDIQQAT: 'didn't HAVE' — asosiy shakl ('didn't had' XATO).\nTasdiqda 'HAD'.",
-       "speak": "3  Nick's parents had a theatre."
+       "en": "Wrong! Nick's parents didn't have a theatre. They had a disco.",
+       "uz": "Nik qayerda raqsga tushardi?",
+       "note": "Matnda: 'Nick's parents had a DISCO'.\nDIQQAT: 'didn't HAVE' — asosiy shakl ('didn't had' XATO).\nTasdiqda 'HAD'."
       },
       {
-       "prompt": "4  Kevin had a job at Disney World in France.",
-       "answer": "Wrong! Kevin didn't have a job at Disney World in France. He had a job at Disney World in Orlando.",
-       "promptUz": "Disney World qaysi shaharda?",
-       "whyUz": "Matnda: 'Kevin had a job at Disney World in ORLANDO'.\nOrlando — AQSh, Florida shtati.\n(Parijda ham Disneyland bor, lekin matnda Orlando aytilgan.)",
-       "speak": "4  Kevin had a job at Disney World in France."
+       "en": "Wrong! Kevin didn't have a job at Disney World in France. He had a job at Disney World in Orlando.",
+       "uz": "Disney World qaysi shaharda?",
+       "note": "Matnda: 'Kevin had a job at Disney World in ORLANDO'.\nOrlando — AQSh, Florida shtati.\n(Parijda ham Disneyland bor, lekin matnda Orlando aytilgan.)"
       },
       {
-       "prompt": "5  The fifth member was Kevin.",
-       "answer": "Wrong! The fifth member wasn't Kevin. It was Brian Littrell.",
-       "promptUz": "'be' fe'li — 'didn't' kerakmi?",
-       "whyUz": "Matnda: 'The fifth member was BRIAN LITTRELL'.\nDIQQAT — BU BAND BOSHQACHA:\n'was' — 'to be' fe'li, shuning uchun 'didn't' KERAK EMAS.\nFaqat 'WASN'T' yoziladi.\nKevin TO'RTINCHI a'zo edi.",
-       "speak": "5  The fifth member was Kevin."
+       "en": "Wrong! The fifth member wasn't Kevin. It was Brian Littrell.",
+       "uz": "'be' fe'li — 'didn't' kerakmi?",
+       "note": "Matnda: 'The fifth member was BRIAN LITTRELL'.\nDIQQAT — BU BAND BOSHQACHA:\n'was' — 'to be' fe'li, shuning uchun 'didn't' KERAK EMAS.\nFaqat 'WASN'T' yoziladi.\nKevin TO'RTINCHI a'zo edi."
       },
       {
-       "prompt": "6  They received their first gold record in Italy.",
-       "answer": "Wrong! They didn't receive their first gold record in Italy. They received it in Germany.",
-       "promptUz": "Qaysi mamlakatda?",
-       "whyUz": "Matnda: 'They received their first gold record in GERMANY'.\n'didn't RECEIVE' (asosiy shakl) →\n'RECEIVED' (o'tgan shakl).\nIkkinchi gapda 'it' = 'their first gold record'.",
-       "speak": "6  They received their first gold record in Italy."
+       "en": "Wrong! They didn't receive their first gold record in Italy. They received it in Germany.",
+       "uz": "Qaysi mamlakatda?",
+       "note": "Matnda: 'They received their first gold record in GERMANY'.\n'didn't RECEIVE' (asosiy shakl) →\n'RECEIVED' (o'tgan shakl).\nIkkinchi gapda 'it' = 'their first gold record'."
       }
      ]
     },
@@ -1742,49 +1700,37 @@
      "book": "workbook",
      "bookPage": 43,
      "bookRef": "Workbook, 43-bet, 17-mashq (tuzatish)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "2  She moved to Hollywood in 1915.",
-       "answer": "She didn't move to Hollywood in 1915. She went to Hollywood in 1939.",
-       "promptUz": "Qaysi yil? 1915 — bu nima yili edi?",
-       "whyUz": "Matnda: 'She WENT to Hollywood in 1939'.\n1915 — u TUG'ILGAN yil.\nInkorda 'didn't MOVE' (asosiy shakl),\ntasdiqda 'WENT' (o'tgan shakl).",
-       "speak": "2  She moved to Hollywood in 1915."
+       "en": "She didn't move to Hollywood in 1915. She went to Hollywood in 1939.",
+       "uz": "Qaysi yil? 1915 — bu nima yili edi?",
+       "note": "Matnda: 'She WENT to Hollywood in 1939'.\n1915 — u TUG'ILGAN yil.\nInkorda 'didn't MOVE' (asosiy shakl),\ntasdiqda 'WENT' (o'tgan shakl)."
       },
       {
-       "prompt": "3  She became famous for her starring role in the classic film Gone With the Wind.",
-       "answer": "She didn't become famous for her starring role in Gone With the Wind. She became famous for her starring role in Casablanca.",
-       "promptUz": "Qaysi film?",
-       "whyUz": "Matnda: 'the classic film CASABLANCA'.\n'Gone With the Wind' — boshqa mashhur film (Vivien Leigh).\nInkorda 'didn't BECOME', tasdiqda 'BECAME'.",
-       "speak": "3  She became famous for her starring role in the classic film Gone With the Wind."
+       "en": "She didn't become famous for her starring role in Gone With the Wind. She became famous for her starring role in Casablanca.",
+       "uz": "Qaysi film?",
+       "note": "Matnda: 'the classic film CASABLANCA'.\n'Gone With the Wind' — boshqa mashhur film (Vivien Leigh).\nInkorda 'didn't BECOME', tasdiqda 'BECAME'."
       },
       {
-       "prompt": "4  She married Roberto Rossellini in 1939.",
-       "answer": "She didn't marry Roberto Rossellini in 1939. She married him in 1950.",
-       "promptUz": "Qaysi yil? 1939 — bu nima yili edi?",
-       "whyUz": "Matnda: 'In 1950, she MARRIED Roberto Rossellini'.\n1939 — u Gollivudga KETGAN yil.\nInkorda 'didn't MARRY', tasdiqda 'MARRIED'.",
-       "speak": "4  She married Roberto Rossellini in 1939."
+       "en": "She didn't marry Roberto Rossellini in 1939. She married him in 1950.",
+       "uz": "Qaysi yil? 1939 — bu nima yili edi?",
+       "note": "Matnda: 'In 1950, she MARRIED Roberto Rossellini'.\n1939 — u Gollivudga KETGAN yil.\nInkorda 'didn't MARRY', tasdiqda 'MARRIED'."
       },
       {
-       "prompt": "5  She starred in German and Spanish films in Europe.",
-       "answer": "She didn't star in German and Spanish films. She starred in French and Italian films.",
-       "promptUz": "Qaysi mamlakat filmlari?",
-       "whyUz": "Matnda: 'STARRED in FRENCH and ITALIAN films'.\nInkorda 'didn't STAR' (asosiy shakl, 'starred' EMAS),\ntasdiqda 'STARRED'.",
-       "speak": "5  She starred in German and Spanish films in Europe."
+       "en": "She didn't star in German and Spanish films. She starred in French and Italian films.",
+       "uz": "Qaysi mamlakat filmlari?",
+       "note": "Matnda: 'STARRED in FRENCH and ITALIAN films'.\nInkorda 'didn't STAR' (asosiy shakl, 'starred' EMAS),\ntasdiqda 'STARRED'."
       },
       {
-       "prompt": "6  She divorced Rossellini in 1982.",
-       "answer": "She didn't divorce Rossellini in 1982. She divorced him in 1956.",
-       "promptUz": "Qaysi yil? 1982 — bu nima yili edi?",
-       "whyUz": "Matnda: 'In 1956, she DIVORCED Rossellini'.\n1982 — u VAFOT ETGAN yil.\nInkorda 'didn't DIVORCE', tasdiqda 'DIVORCED'.",
-       "speak": "6  She divorced Rossellini in 1982."
+       "en": "She didn't divorce Rossellini in 1982. She divorced him in 1956.",
+       "uz": "Qaysi yil? 1982 — bu nima yili edi?",
+       "note": "Matnda: 'In 1956, she DIVORCED Rossellini'.\n1982 — u VAFOT ETGAN yil.\nInkorda 'didn't DIVORCE', tasdiqda 'DIVORCED'."
       },
       {
-       "prompt": "7  She died on 29th August, 1992, in Paris.",
-       "answer": "She didn't die on 29th August, 1992, in Paris. She died on 29th August, 1982, in London.",
-       "promptUz": "IKKI xato: yil ham, shahar ham",
-       "whyUz": "Matnda: 'DIED on 29th August, 1982, in LONDON'.\nIKKI xato: 1992 emas 1982, Parij emas London.\nKUN va OY to'g'ri (29-avgust).\nInkorda 'didn't DIE', tasdiqda 'DIED'.",
-       "speak": "7  She died on 29th August, 1992, in Paris."
+       "en": "She didn't die on 29th August, 1992, in Paris. She died on 29th August, 1982, in London.",
+       "uz": "IKKI xato: yil ham, shahar ham",
+       "note": "Matnda: 'DIED on 29th August, 1982, in LONDON'.\nIKKI xato: 1992 emas 1982, Parij emas London.\nKUN va OY to'g'ri (29-avgust).\nInkorda 'didn't DIE', tasdiqda 'DIED'."
       }
      ]
     },
@@ -1892,43 +1838,37 @@
      "book": "coursebook",
      "bookPage": 72,
      "bookRef": "Coursebook, 72-bet, 7-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "Elvis Presley (8th January, 1935 - 16th August, 1977)  —  1-USUL",
-       "answer": "Elvis Presley was born on the eighth of January, nineteen thirty-five and died on the sixteenth of August, nineteen seventy-seven.",
-       "promptUz": "KITOBDAGI NAMUNA (1-usul)",
-       "whyUz": "1-USUL: the + tartib son + OF + oy.\n1935 → nineteen thirty-five;  1977 → nineteen seventy-seven."
+       "en": "Elvis Presley was born on the eighth of January, nineteen thirty-five and died on the sixteenth of August, nineteen seventy-seven.",
+       "uz": "KITOBDAGI NAMUNA (1-usul)",
+       "note": "1-USUL: the + tartib son + OF + oy.\n1935 → nineteen thirty-five;  1977 → nineteen seventy-seven."
       },
       {
-       "prompt": "Elvis Presley (8th January, 1935 - 16th August, 1977)  —  2-USUL",
-       "answer": "Elvis Presley was born on January the eighth, nineteen thirty-five and died on August the sixteenth, nineteen seventy-seven.",
-       "promptUz": "KITOBDAGI NAMUNA (2-usul)",
-       "whyUz": "2-USUL: oy + THE + tartib son.\n'of' YO'Q."
+       "en": "Elvis Presley was born on January the eighth, nineteen thirty-five and died on August the sixteenth, nineteen seventy-seven.",
+       "uz": "KITOBDAGI NAMUNA (2-usul)",
+       "note": "2-USUL: oy + THE + tartib son.\n'of' YO'Q."
       },
       {
-       "prompt": "Alfred Hitchcock (13th August, 1899 - 29th April, 1980)  —  1-USUL",
-       "answer": "Alfred Hitchcock was born on the thirteenth of August, eighteen ninety-nine and died on the twenty-ninth of April, nineteen eighty.",
-       "promptUz": "1899 va 1980 ni to'g'ri o'qing",
-       "whyUz": "1899 → eighteen ninety-nine.\n1980 → NINETEEN EIGHTY (oxiri '80' — 'eighty' deyiladi,\n'eight-oh' EMAS)."
+       "en": "Alfred Hitchcock was born on the thirteenth of August, eighteen ninety-nine and died on the twenty-ninth of April, nineteen eighty.",
+       "uz": "1899 va 1980 ni to'g'ri o'qing",
+       "note": "1899 → eighteen ninety-nine.\n1980 → NINETEEN EIGHTY (oxiri '80' — 'eighty' deyiladi,\n'eight-oh' EMAS)."
       },
       {
-       "prompt": "Alfred Hitchcock (13th August, 1899 - 29th April, 1980)  —  2-USUL",
-       "answer": "Alfred Hitchcock was born on August the thirteenth, eighteen ninety-nine and died on April the twenty-ninth, nineteen eighty.",
-       "promptUz": "Oy oldinga chiqadi",
-       "whyUz": "2-USUL: August the thirteenth / April the twenty-ninth."
+       "en": "Alfred Hitchcock was born on August the thirteenth, eighteen ninety-nine and died on April the twenty-ninth, nineteen eighty.",
+       "uz": "Oy oldinga chiqadi",
+       "note": "2-USUL: August the thirteenth / April the twenty-ninth."
       },
       {
-       "prompt": "Johann Strauss (25th October, 1825 - 3rd June, 1899)  —  1-USUL",
-       "answer": "Johann Strauss was born on the twenty-fifth of October, eighteen twenty-five and died on the third of June, eighteen ninety-nine.",
-       "promptUz": "'3rd' — qanday o'qiladi?",
-       "whyUz": "'3rd' = the THIRD (the 'threeth' EMAS).\n1825 → eighteen twenty-five;  1899 → eighteen ninety-nine."
+       "en": "Johann Strauss was born on the twenty-fifth of October, eighteen twenty-five and died on the third of June, eighteen ninety-nine.",
+       "uz": "'3rd' — qanday o'qiladi?",
+       "note": "'3rd' = the THIRD (the 'threeth' EMAS).\n1825 → eighteen twenty-five;  1899 → eighteen ninety-nine."
       },
       {
-       "prompt": "Johann Strauss (25th October, 1825 - 3rd June, 1899)  —  2-USUL",
-       "answer": "Johann Strauss was born on October the twenty-fifth, eighteen twenty-five and died on June the third, eighteen ninety-nine.",
-       "promptUz": "Oy oldinga chiqadi",
-       "whyUz": "2-USUL: October the twenty-fifth / June the third.\nDIQQAT: Hitchcock tug'ilgan yil (1899) Strauss vafot etgan\nyil bilan bir xil."
+       "en": "Johann Strauss was born on October the twenty-fifth, eighteen twenty-five and died on June the third, eighteen ninety-nine.",
+       "uz": "Oy oldinga chiqadi",
+       "note": "2-USUL: October the twenty-fifth / June the third.\nDIQQAT: Hitchcock tug'ilgan yil (1899) Strauss vafot etgan\nyil bilan bir xil."
       }
      ]
     }
@@ -3562,42 +3502,32 @@
      "book": "workbook",
      "bookPage": 41,
      "bookRef": "Workbook, 41-bet, 8b-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "When/Coco Chanel/be born?",
-       "answer": "When was Coco Chanel born? — She was born in 1883.",
-       "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "'be born' — 'did' KERAK EMAS.\nTartib: When + WAS + ega + BORN?\nJavob 8a-matnning 1-bandidan: 1883.",
-       "speak": "When/Coco Chanel/be born?"
+       "en": "When was Coco Chanel born? — She was born in 1883.",
+       "uz": "Shu javobga savol tuzing",
+       "note": "'be born' — 'did' KERAK EMAS.\nTartib: When + WAS + ega + BORN?\nJavob 8a-matnning 1-bandidan: 1883."
       },
       {
-       "prompt": "start/when/career/her?",
-       "answer": "When did her career start? — It started in 1913.",
-       "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "'start' — oddiy fe'l → DID + ASOSIY shakl.\nTartib: When + DID + her career + START?\nJavob 8a-matnning 2-bandidan: 1913.\nJavobda 'It' = 'her career'.",
-       "speak": "start/when/career/her?"
+       "en": "When did her career start? — It started in 1913.",
+       "uz": "Shu javobga savol tuzing",
+       "note": "'start' — oddiy fe'l → DID + ASOSIY shakl.\nTartib: When + DID + her career + START?\nJavob 8a-matnning 2-bandidan: 1913.\nJavobda 'It' = 'her career'."
       },
       {
-       "prompt": "add/her collection/quickly/she/what?",
-       "answer": "What did she quickly add to her collection? — She added sweaters, skirts and accessories.",
-       "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "Tartib: What + DID + she + quickly + ADD + to her collection?\n'quickly' — ravish, asosiy fe'ldan OLDIN turadi.\nDIQQAT: 'to' qo'shiladi — 'add TO her collection'.\nJavob 8a-matnning 4-bandidan.",
-       "speak": "add/her collection/quickly/she/what?"
+       "en": "What did she quickly add to her collection? — She added sweaters, skirts and accessories.",
+       "uz": "Shu javobga savol tuzing",
+       "note": "Tartib: What + DID + she + quickly + ADD + to her collection?\n'quickly' — ravish, asosiy fe'ldan OLDIN turadi.\nDIQQAT: 'to' qo'shiladi — 'add TO her collection'.\nJavob 8a-matnning 4-bandidan."
       },
       {
-       "prompt": "Coco Chanel/beautiful woman/be?",
-       "answer": "Was Coco Chanel a beautiful woman? — Yes, she was.",
-       "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "'be' fe'li → 'did' KERAK EMAS.\nTartib: WAS + Coco Chanel + a beautiful woman?\n'a beautiful woman' — artikl 'a' qo'shiladi.\nJavob 8a-matnning 9-bandidan: 'Although Chanel WAS a\nbeautiful woman' → Yes, she was.",
-       "speak": "Coco Chanel/beautiful woman/be?"
+       "en": "Was Coco Chanel a beautiful woman? — Yes, she was.",
+       "uz": "Shu javobga savol tuzing",
+       "note": "'be' fe'li → 'did' KERAK EMAS.\nTartib: WAS + Coco Chanel + a beautiful woman?\n'a beautiful woman' — artikl 'a' qo'shiladi.\nJavob 8a-matnning 9-bandidan: 'Although Chanel WAS a\nbeautiful woman' → Yes, she was."
       },
       {
-       "prompt": "die/Coco Chanel/when?",
-       "answer": "When did Coco Chanel die? — She died in Paris in 1971.",
-       "promptUz": "Shu javobga savol tuzing",
-       "whyUz": "'die' — oddiy fe'l → DID + ASOSIY shakl ('die').\nTartib: When + DID + Coco Chanel + DIE?\nJavobda 'DIED' (o'tgan shakl).\nJavob 8a-matnning 12-bandidan: 1971.",
-       "speak": "die/Coco Chanel/when?"
+       "en": "When did Coco Chanel die? — She died in Paris in 1971.",
+       "uz": "Shu javobga savol tuzing",
+       "note": "'die' — oddiy fe'l → DID + ASOSIY shakl ('die').\nTartib: When + DID + Coco Chanel + DIE?\nJavobda 'DIED' (o'tgan shakl).\nJavob 8a-matnning 12-bandidan: 1971."
       }
      ]
     },
@@ -5248,49 +5178,37 @@
      "book": "grammar",
      "bookPage": 45,
      "bookRef": "Grammar Book, 45-bet, 10-mashq (tuzatish)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "2  She graduated from Oxford University.",
-       "answer": "She didn't graduate from Oxford University. She graduated from the University of Rome.",
-       "promptUz": "Qaysi universitet?",
-       "whyUz": "Matnda: 'She graduated from the UNIVERSITY OF ROME'.\nInkorda 'didn't GRADUATE' (asosiy shakl),\ntasdiqda 'GRADUATED' (o'tgan shakl).",
-       "speak": "2  She graduated from Oxford University."
+       "en": "She didn't graduate from Oxford University. She graduated from the University of Rome.",
+       "uz": "Qaysi universitet?",
+       "note": "Matnda: 'She graduated from the UNIVERSITY OF ROME'.\nInkorda 'didn't GRADUATE' (asosiy shakl),\ntasdiqda 'GRADUATED' (o'tgan shakl)."
       },
       {
-       "prompt": "3  She continued her studies in Maths and History.",
-       "answer": "She didn't continue her studies in Maths and History. She continued her studies in Philosophy, Psychology and Education.",
-       "promptUz": "Qaysi fanlar?",
-       "whyUz": "Matnda: 'Philosophy, Psychology and Education'.\nInkorda 'didn't CONTINUE', tasdiqda 'CONTINUED'.",
-       "speak": "3  She continued her studies in Maths and History."
+       "en": "She didn't continue her studies in Maths and History. She continued her studies in Philosophy, Psychology and Education.",
+       "uz": "Qaysi fanlar?",
+       "note": "Matnda: 'Philosophy, Psychology and Education'.\nInkorda 'didn't CONTINUE', tasdiqda 'CONTINUED'."
       },
       {
-       "prompt": "4  She opened her first school in 1952.",
-       "answer": "She didn't open her first school in 1952. She opened it in 1907.",
-       "promptUz": "Qaysi yil?",
-       "whyUz": "Matnda: 'She opened her first school in 1907'.\n1952 — u VAFOT ETGAN yil, maktab ochgan yil emas.\nInkorda 'didn't OPEN', tasdiqda 'OPENED'.",
-       "speak": "4  She opened her first school in 1952."
+       "en": "She didn't open her first school in 1952. She opened it in 1907.",
+       "uz": "Qaysi yil?",
+       "note": "Matnda: 'She opened her first school in 1907'.\n1952 — u VAFOT ETGAN yil, maktab ochgan yil emas.\nInkorda 'didn't OPEN', tasdiqda 'OPENED'."
       },
       {
-       "prompt": "5  She left Canada in 1870.",
-       "answer": "She didn't leave Canada in 1870. She left Italy in 1934.",
-       "promptUz": "IKKI xato bor: mamlakat ham, yil ham",
-       "whyUz": "Matnda: 'In 1934, she LEFT ITALY'.\n1870 — u TUG'ILGAN yil.\nInkorda 'didn't LEAVE' (asosiy shakl),\ntasdiqda 'LEFT' (noto'g'ri fe'lning o'tgan shakli).",
-       "speak": "5  She left Canada in 1870."
+       "en": "She didn't leave Canada in 1870. She left Italy in 1934.",
+       "uz": "IKKI xato bor: mamlakat ham, yil ham",
+       "note": "Matnda: 'In 1934, she LEFT ITALY'.\n1870 — u TUG'ILGAN yil.\nInkorda 'didn't LEAVE' (asosiy shakl),\ntasdiqda 'LEFT' (noto'g'ri fe'lning o'tgan shakli)."
       },
       {
-       "prompt": "6  She went to England.",
-       "answer": "She didn't go to England. She went to The Netherlands.",
-       "promptUz": "Qaysi mamlakatga?",
-       "whyUz": "Matnda: 'went to THE NETHERLANDS'.\nInkorda 'didn't GO' ('went' EMAS),\ntasdiqda 'WENT'.\n'The Netherlands' — THE bilan yoziladi.",
-       "speak": "6  She went to England."
+       "en": "She didn't go to England. She went to The Netherlands.",
+       "uz": "Qaysi mamlakatga?",
+       "note": "Matnda: 'went to THE NETHERLANDS'.\nInkorda 'didn't GO' ('went' EMAS),\ntasdiqda 'WENT'.\n'The Netherlands' — THE bilan yoziladi."
       },
       {
-       "prompt": "7  She died in America in 1952.",
-       "answer": "She didn't die in America. She died in The Netherlands.",
-       "promptUz": "Yil to'g'ri, JOY noto'g'ri",
-       "whyUz": "Matnda: 'She died on 6th May, 1952 in THE NETHERLANDS'.\nYIL to'g'ri (1952), faqat JOY noto'g'ri.\nInkorda 'didn't DIE' ('died' EMAS), tasdiqda 'DIED'.",
-       "speak": "7  She died in America in 1952."
+       "en": "She didn't die in America. She died in The Netherlands.",
+       "uz": "Yil to'g'ri, JOY noto'g'ri",
+       "note": "Matnda: 'She died on 6th May, 1952 in THE NETHERLANDS'.\nYIL to'g'ri (1952), faqat JOY noto'g'ri.\nInkorda 'didn't DIE' ('died' EMAS), tasdiqda 'DIED'."
       }
      ]
     },
@@ -7038,42 +6956,28 @@
      "book": "coursebook",
      "bookPage": 71,
      "bookRef": "Coursebook, 71-bet, Speaking",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "Tug'ilgan sana va joy",
-       "answer": "Diana Frances Spencer was born on 1st July, 1961, in Norfolk, England.",
-       "speak": "Tug'ilgan sana va joy"
+       "en": "Diana Frances Spencer was born on 1st July, 1961, in Norfolk, England."
       },
       {
-       "prompt": "O'qigan joyi",
-       "answer": "She studied at a boarding school in Kent and completed her education in Switzerland.",
-       "speak": "O'qigan joyi"
+       "en": "She studied at a boarding school in Kent and completed her education in Switzerland."
       },
       {
-       "prompt": "Turmush qurgani",
-       "answer": "She married Prince Charles in July, 1981, at St Paul's Cathedral in London.",
-       "speak": "Turmush qurgani"
+       "en": "She married Prince Charles in July, 1981, at St Paul's Cathedral in London."
       },
       {
-       "prompt": "Farzandlari",
-       "answer": "They had two sons, William and Harry.",
-       "speak": "Farzandlari"
+       "en": "They had two sons, William and Harry."
       },
       {
-       "prompt": "Nima uchun mashhur",
-       "answer": "She was famous for her kindness and beauty, and because she cared about sick and poor people.",
-       "speak": "Nima uchun mashhur"
+       "en": "She was famous for her kindness and beauty, and because she cared about sick and poor people."
       },
       {
-       "prompt": "Ajrashgan vaqti",
-       "answer": "She and Charles divorced in August, 1996.",
-       "speak": "Ajrashgan vaqti"
+       "en": "She and Charles divorced in August, 1996."
       },
       {
-       "prompt": "Vafot etgan sana va joy",
-       "answer": "She died on 31st August, 1997, in a car accident in Paris.",
-       "speak": "Vafot etgan sana va joy"
+       "en": "She died on 31st August, 1997, in a car accident in Paris."
       }
      ]
     }
@@ -7096,119 +7000,87 @@
      "book": "coursebook",
      "bookPage": 74,
      "bookRef": "Coursebook, 74-bet, 18-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "write a letter?",
-       "answer": "When was the last time you wrote a letter?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "KITOBDAGI NAMUNA.\nwrite → WROTE (noto'g'ri fe'l).\nSavolda ham, javobda ham 'wrote' — o'tgan shakl.",
-       "speak": "write a letter?"
+       "en": "When was the last time you wrote a letter?",
+       "uz": "Savol tuzing",
+       "note": "KITOBDAGI NAMUNA.\nwrite → WROTE (noto'g'ri fe'l).\nSavolda ham, javobda ham 'wrote' — o'tgan shakl."
       },
       {
-       "prompt": "write a letter?",
-       "answer": "The last time I wrote a letter was two days ago. How about you? — The last time I wrote a letter was a month ago.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "KITOBDAGI NAMUNA.\nwrite → WROTE (noto'g'ri fe'l).\nSavolda ham, javobda ham 'wrote' — o'tgan shakl.",
-       "speak": "write a letter?"
+       "en": "The last time I wrote a letter was two days ago. How about you? — The last time I wrote a letter was a month ago.",
+       "uz": "Javob tuzing",
+       "note": "KITOBDAGI NAMUNA.\nwrite → WROTE (noto'g'ri fe'l).\nSavolda ham, javobda ham 'wrote' — o'tgan shakl."
       },
       {
-       "prompt": "visit your grandparents?",
-       "answer": "When was the last time you visited your grandparents?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "visit → visited (to'g'ri fe'l).\nDIQQAT: savolda 'YOUR grandparents',\njavobda 'MY grandparents' — egalik olmoshi o'zgaradi.",
-       "speak": "visit your grandparents?"
+       "en": "When was the last time you visited your grandparents?",
+       "uz": "Savol tuzing",
+       "note": "visit → visited (to'g'ri fe'l).\nDIQQAT: savolda 'YOUR grandparents',\njavobda 'MY grandparents' — egalik olmoshi o'zgaradi."
       },
       {
-       "prompt": "visit your grandparents?",
-       "answer": "The last time I visited my grandparents was last Sunday. How about you? — The last time I visited my grandparents was two weeks ago.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "visit → visited (to'g'ri fe'l).\nDIQQAT: savolda 'YOUR grandparents',\njavobda 'MY grandparents' — egalik olmoshi o'zgaradi.",
-       "speak": "visit your grandparents?"
+       "en": "The last time I visited my grandparents was last Sunday. How about you? — The last time I visited my grandparents was two weeks ago.",
+       "uz": "Javob tuzing",
+       "note": "visit → visited (to'g'ri fe'l).\nDIQQAT: savolda 'YOUR grandparents',\njavobda 'MY grandparents' — egalik olmoshi o'zgaradi."
       },
       {
-       "prompt": "buy new clothes?",
-       "answer": "When was the last time you bought new clothes?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "buy → BOUGHT (noto'g'ri fe'l), /bɔːt/.\n'clothes' — DOIM ko'plikda ('a clothe' YO'Q).",
-       "speak": "buy new clothes?"
+       "en": "When was the last time you bought new clothes?",
+       "uz": "Savol tuzing",
+       "note": "buy → BOUGHT (noto'g'ri fe'l), /bɔːt/.\n'clothes' — DOIM ko'plikda ('a clothe' YO'Q)."
       },
       {
-       "prompt": "buy new clothes?",
-       "answer": "The last time I bought new clothes was a month ago. How about you? — The last time I bought new clothes was yesterday.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "buy → BOUGHT (noto'g'ri fe'l), /bɔːt/.\n'clothes' — DOIM ko'plikda ('a clothe' YO'Q).",
-       "speak": "buy new clothes?"
+       "en": "The last time I bought new clothes was a month ago. How about you? — The last time I bought new clothes was yesterday.",
+       "uz": "Javob tuzing",
+       "note": "buy → BOUGHT (noto'g'ri fe'l), /bɔːt/.\n'clothes' — DOIM ko'plikda ('a clothe' YO'Q)."
       },
       {
-       "prompt": "tidy your room?",
-       "answer": "When was the last time you tidied your room?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "tidy → TIDIED (undosh 'd' + 'y' → -IED).\n73-betdagi 3-qoida.\n'to tidy' = yig'ishtirmoq, tartibga solmoq.",
-       "speak": "tidy your room?"
+       "en": "When was the last time you tidied your room?",
+       "uz": "Savol tuzing",
+       "note": "tidy → TIDIED (undosh 'd' + 'y' → -IED).\n73-betdagi 3-qoida.\n'to tidy' = yig'ishtirmoq, tartibga solmoq."
       },
       {
-       "prompt": "tidy your room?",
-       "answer": "The last time I tidied my room was yesterday morning. How about you? — The last time I tidied my room was last Monday.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "tidy → TIDIED (undosh 'd' + 'y' → -IED).\n73-betdagi 3-qoida.\n'to tidy' = yig'ishtirmoq, tartibga solmoq.",
-       "speak": "tidy your room?"
+       "en": "The last time I tidied my room was yesterday morning. How about you? — The last time I tidied my room was last Monday.",
+       "uz": "Javob tuzing",
+       "note": "tidy → TIDIED (undosh 'd' + 'y' → -IED).\n73-betdagi 3-qoida.\n'to tidy' = yig'ishtirmoq, tartibga solmoq."
       },
       {
-       "prompt": "wash the car?",
-       "answer": "When was the last time you washed the car?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "wash → washed (to'g'ri fe'l).\n-ed /t/ deb o'qiladi.",
-       "speak": "wash the car?"
+       "en": "When was the last time you washed the car?",
+       "uz": "Savol tuzing",
+       "note": "wash → washed (to'g'ri fe'l).\n-ed /t/ deb o'qiladi."
       },
       {
-       "prompt": "wash the car?",
-       "answer": "The last time I washed the car was two days ago. How about you? — The last time I washed the car was a week ago.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "wash → washed (to'g'ri fe'l).\n-ed /t/ deb o'qiladi.",
-       "speak": "wash the car?"
+       "en": "The last time I washed the car was two days ago. How about you? — The last time I washed the car was a week ago.",
+       "uz": "Javob tuzing",
+       "note": "wash → washed (to'g'ri fe'l).\n-ed /t/ deb o'qiladi."
       },
       {
-       "prompt": "have a haircut?",
-       "answer": "When was the last time you had a haircut?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "have → HAD (noto'g'ri fe'l).\n'a haircut' = soch olish;  'have a haircut' = soch oldirmoq.\nhair + cut — qo'shma ot.",
-       "speak": "have a haircut?"
+       "en": "When was the last time you had a haircut?",
+       "uz": "Savol tuzing",
+       "note": "have → HAD (noto'g'ri fe'l).\n'a haircut' = soch olish;  'have a haircut' = soch oldirmoq.\nhair + cut — qo'shma ot."
       },
       {
-       "prompt": "have a haircut?",
-       "answer": "The last time I had a haircut was three weeks ago. How about you? — The last time I had a haircut was last Tuesday.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "have → HAD (noto'g'ri fe'l).\n'a haircut' = soch olish;  'have a haircut' = soch oldirmoq.\nhair + cut — qo'shma ot.",
-       "speak": "have a haircut?"
+       "en": "The last time I had a haircut was three weeks ago. How about you? — The last time I had a haircut was last Tuesday.",
+       "uz": "Javob tuzing",
+       "note": "have → HAD (noto'g'ri fe'l).\n'a haircut' = soch olish;  'have a haircut' = soch oldirmoq.\nhair + cut — qo'shma ot."
       },
       {
-       "prompt": "get a present?",
-       "answer": "When was the last time you got a present?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "get → GOT (noto'g'ri fe'l).\n'a present' = sovg'a.\n'ON my birthday' — bayram kuni bilan ON.",
-       "speak": "get a present?"
+       "en": "When was the last time you got a present?",
+       "uz": "Savol tuzing",
+       "note": "get → GOT (noto'g'ri fe'l).\n'a present' = sovg'a.\n'ON my birthday' — bayram kuni bilan ON."
       },
       {
-       "prompt": "get a present?",
-       "answer": "The last time I got a present was on my birthday. How about you? — The last time I got a present was two months ago.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "get → GOT (noto'g'ri fe'l).\n'a present' = sovg'a.\n'ON my birthday' — bayram kuni bilan ON.",
-       "speak": "get a present?"
+       "en": "The last time I got a present was on my birthday. How about you? — The last time I got a present was two months ago.",
+       "uz": "Javob tuzing",
+       "note": "get → GOT (noto'g'ri fe'l).\n'a present' = sovg'a.\n'ON my birthday' — bayram kuni bilan ON."
       },
       {
-       "prompt": "have a party?",
-       "answer": "When was the last time you had a party?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "have → HAD.\n'have a party' = ziyofat qilmoq.\nDIQQAT: 'LAST month' da 'ago' YO'Q —\n'last' va 'ago' birga ishlatilmaydi:\n  last month  ✓   /   a month ago  ✓\n  last month ago  ✗ XATO",
-       "speak": "have a party?"
+       "en": "When was the last time you had a party?",
+       "uz": "Savol tuzing",
+       "note": "have → HAD.\n'have a party' = ziyofat qilmoq.\nDIQQAT: 'LAST month' da 'ago' YO'Q —\n'last' va 'ago' birga ishlatilmaydi:\n  last month  ✓   /   a month ago  ✓\n  last month ago  ✗ XATO"
       },
       {
-       "prompt": "have a party?",
-       "answer": "The last time I had a party was last month. How about you? — The last time I had a party was a year ago.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "have → HAD.\n'have a party' = ziyofat qilmoq.\nDIQQAT: 'LAST month' da 'ago' YO'Q —\n'last' va 'ago' birga ishlatilmaydi:\n  last month  ✓   /   a month ago  ✓\n  last month ago  ✗ XATO",
-       "speak": "have a party?"
+       "en": "The last time I had a party was last month. How about you? — The last time I had a party was a year ago.",
+       "uz": "Javob tuzing",
+       "note": "have → HAD.\n'have a party' = ziyofat qilmoq.\nDIQQAT: 'LAST month' da 'ago' YO'Q —\n'last' va 'ago' birga ishlatilmaydi:\n  last month  ✓   /   a month ago  ✓\n  last month ago  ✗ XATO"
       }
      ]
     }
@@ -7265,133 +7137,97 @@
      "book": "coursebook",
      "bookPage": 75,
      "bookRef": "Coursebook, 75-bet, 19-mashq (davomi)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "go shopping",
-       "answer": "When was the last time you went shopping? — Where did you go? — Who did you go with?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "KITOBDAGI NAMUNA.\n'go shopping' — predlogsiz, -ing shakli bilan.",
-       "speak": "go shopping"
+       "en": "When was the last time you went shopping? — Where did you go? — Who did you go with?",
+       "uz": "Savol tuzing",
+       "note": "KITOBDAGI NAMUNA.\n'go shopping' — predlogsiz, -ing shakli bilan."
       },
       {
-       "prompt": "go shopping",
-       "answer": "Last Monday. — I went to Sainsbury's. — I went with my mum.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "KITOBDAGI NAMUNA.\n'go shopping' — predlogsiz, -ing shakli bilan.",
-       "speak": "go shopping"
+       "en": "Last Monday. — I went to Sainsbury's. — I went with my mum.",
+       "uz": "Javob tuzing",
+       "note": "KITOBDAGI NAMUNA.\n'go shopping' — predlogsiz, -ing shakli bilan."
       },
       {
-       "prompt": "go to a park",
-       "answer": "When was the last time you went to a park? — Where did you go? — Who did you go with?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'go TO a park' — joy bilan TO.",
-       "speak": "go to a park"
+       "en": "When was the last time you went to a park? — Where did you go? — Who did you go with?",
+       "uz": "Savol tuzing",
+       "note": "'go TO a park' — joy bilan TO."
       },
       {
-       "prompt": "go to a park",
-       "answer": "Last Sunday. — I went to Central Park. — I went with my friends.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'go TO a park' — joy bilan TO.",
-       "speak": "go to a park"
+       "en": "Last Sunday. — I went to Central Park. — I went with my friends.",
+       "uz": "Javob tuzing",
+       "note": "'go TO a park' — joy bilan TO."
       },
       {
-       "prompt": "go on holiday",
-       "answer": "When was the last time you went on holiday? — Where did you go? — Who did you go with?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'go ON holiday' — DIQQAT: 'to holiday' XATO.\n'holiday' oldidan artikl YO'Q.",
-       "speak": "go on holiday"
+       "en": "When was the last time you went on holiday? — Where did you go? — Who did you go with?",
+       "uz": "Savol tuzing",
+       "note": "'go ON holiday' — DIQQAT: 'to holiday' XATO.\n'holiday' oldidan artikl YO'Q."
       },
       {
-       "prompt": "go on holiday",
-       "answer": "Two months ago. — I went to Samarkand. — I went with my family.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'go ON holiday' — DIQQAT: 'to holiday' XATO.\n'holiday' oldidan artikl YO'Q.",
-       "speak": "go on holiday"
+       "en": "Two months ago. — I went to Samarkand. — I went with my family.",
+       "uz": "Javob tuzing",
+       "note": "'go ON holiday' — DIQQAT: 'to holiday' XATO.\n'holiday' oldidan artikl YO'Q."
       },
       {
-       "prompt": "go to a party",
-       "answer": "When was the last time you went to a party? — Where did you go? — Who did you go with?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'go TO a party'.\n'my cousin's house' — egalik apostrofi.",
-       "speak": "go to a party"
+       "en": "When was the last time you went to a party? — Where did you go? — Who did you go with?",
+       "uz": "Savol tuzing",
+       "note": "'go TO a party'.\n'my cousin's house' — egalik apostrofi."
       },
       {
-       "prompt": "go to a party",
-       "answer": "Last Saturday. — I went to my cousin's house. — I went with my sister.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'go TO a party'.\n'my cousin's house' — egalik apostrofi.",
-       "speak": "go to a party"
+       "en": "Last Saturday. — I went to my cousin's house. — I went with my sister.",
+       "uz": "Javob tuzing",
+       "note": "'go TO a party'.\n'my cousin's house' — egalik apostrofi."
       },
       {
-       "prompt": "go on a picnic",
-       "answer": "When was the last time you went on a picnic? — Where did you go? — Who did you go with?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'go ON a picnic' — DIQQAT: 'to a picnic' XATO.",
-       "speak": "go on a picnic"
+       "en": "When was the last time you went on a picnic? — Where did you go? — Who did you go with?",
+       "uz": "Savol tuzing",
+       "note": "'go ON a picnic' — DIQQAT: 'to a picnic' XATO."
       },
       {
-       "prompt": "go on a picnic",
-       "answer": "A week ago. — I went to the mountains. — I went with my classmates.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'go ON a picnic' — DIQQAT: 'to a picnic' XATO.",
-       "speak": "go on a picnic"
+       "en": "A week ago. — I went to the mountains. — I went with my classmates.",
+       "uz": "Javob tuzing",
+       "note": "'go ON a picnic' — DIQQAT: 'to a picnic' XATO."
       },
       {
-       "prompt": "go to a concert",
-       "answer": "When was the last time you went to a concert? — Where did you go? — Who did you go with?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'go TO a concert'.",
-       "speak": "go to a concert"
+       "en": "When was the last time you went to a concert? — Where did you go? — Who did you go with?",
+       "uz": "Savol tuzing",
+       "note": "'go TO a concert'."
       },
       {
-       "prompt": "go to a concert",
-       "answer": "Last month. — I went to a concert hall in the city centre. — I went with my brother.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'go TO a concert'.",
-       "speak": "go to a concert"
+       "en": "Last month. — I went to a concert hall in the city centre. — I went with my brother.",
+       "uz": "Javob tuzing",
+       "note": "'go TO a concert'."
       },
       {
-       "prompt": "go to the theatre",
-       "answer": "When was the last time you went to the theatre? — Where did you go? — Who did you go with?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'go to THE theatre' — odatda 'the' bilan.",
-       "speak": "go to the theatre"
+       "en": "When was the last time you went to the theatre? — Where did you go? — Who did you go with?",
+       "uz": "Savol tuzing",
+       "note": "'go to THE theatre' — odatda 'the' bilan."
       },
       {
-       "prompt": "go to the theatre",
-       "answer": "Two weeks ago. — I went to the National Theatre. — I went with my parents.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'go to THE theatre' — odatda 'the' bilan.",
-       "speak": "go to the theatre"
+       "en": "Two weeks ago. — I went to the National Theatre. — I went with my parents.",
+       "uz": "Javob tuzing",
+       "note": "'go to THE theatre' — odatda 'the' bilan."
       },
       {
-       "prompt": "go out for dinner",
-       "answer": "When was the last time you went out for dinner? — Where did you go? — Who did you go with?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'go OUT for dinner' = tashqarida ovqatlanmoq.\n'out' = uydan tashqariga.",
-       "speak": "go out for dinner"
+       "en": "When was the last time you went out for dinner? — Where did you go? — Who did you go with?",
+       "uz": "Savol tuzing",
+       "note": "'go OUT for dinner' = tashqarida ovqatlanmoq.\n'out' = uydan tashqariga."
       },
       {
-       "prompt": "go out for dinner",
-       "answer": "Yesterday evening. — I went to a Turkish restaurant. — I went with my friends.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'go OUT for dinner' = tashqarida ovqatlanmoq.\n'out' = uydan tashqariga.",
-       "speak": "go out for dinner"
+       "en": "Yesterday evening. — I went to a Turkish restaurant. — I went with my friends.",
+       "uz": "Javob tuzing",
+       "note": "'go OUT for dinner' = tashqarida ovqatlanmoq.\n'out' = uydan tashqariga."
       },
       {
-       "prompt": "go to the beach",
-       "answer": "When was the last time you went to the beach? — Where did you go? — Who did you go with?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'go to THE beach' — odatda 'the' bilan.",
-       "speak": "go to the beach"
+       "en": "When was the last time you went to the beach? — Where did you go? — Who did you go with?",
+       "uz": "Savol tuzing",
+       "note": "'go to THE beach' — odatda 'the' bilan."
       },
       {
-       "prompt": "go to the beach",
-       "answer": "Last summer. — I went to the beach at Charvak. — I went with my cousins.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'go to THE beach' — odatda 'the' bilan.",
-       "speak": "go to the beach"
+       "en": "Last summer. — I went to the beach at Charvak. — I went with my cousins.",
+       "uz": "Javob tuzing",
+       "note": "'go to THE beach' — odatda 'the' bilan."
       }
      ]
     }
@@ -7443,63 +7279,47 @@
      "book": "workbook",
      "bookPage": 42,
      "bookRef": "Workbook, 42-bet, 15-mashq (davomi)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "grandmother (namuna)",
-       "answer": "When was your grandmother born? — Where was she born? — When did she marry your grandfather? — How many children did they have?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "KITOBDAGI NAMUNA javoblari.\n'be born' → was;  'marry' va 'have' → did.",
-       "speak": "grandmother (namuna)"
+       "en": "When was your grandmother born? — Where was she born? — When did she marry your grandfather? — How many children did they have?",
+       "uz": "Savol tuzing",
+       "note": "KITOBDAGI NAMUNA javoblari.\n'be born' → was;  'marry' va 'have' → did."
       },
       {
-       "prompt": "grandmother (namuna)",
-       "answer": "In August, 1930. — In Plymouth. — In 1955. — Four.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "KITOBDAGI NAMUNA javoblari.\n'be born' → was;  'marry' va 'have' → did.",
-       "speak": "grandmother (namuna)"
+       "en": "In August, 1930. — In Plymouth. — In 1955. — Four.",
+       "uz": "Javob tuzing",
+       "note": "KITOBDAGI NAMUNA javoblari.\n'be born' → was;  'marry' va 'have' → did."
       },
       {
-       "prompt": "grandfather",
-       "answer": "When was your grandfather born? — Where was he born? — When did he marry your grandmother? — How many children did they have?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "Bobo haqida — 'she' o'rniga 'he'.\nNikoh sanasi va farzandlar soni buvi bilan BIR XIL —\nchunki ular er-xotin.",
-       "speak": "grandfather"
+       "en": "When was your grandfather born? — Where was he born? — When did he marry your grandmother? — How many children did they have?",
+       "uz": "Savol tuzing",
+       "note": "Bobo haqida — 'she' o'rniga 'he'.\nNikoh sanasi va farzandlar soni buvi bilan BIR XIL —\nchunki ular er-xotin."
       },
       {
-       "prompt": "grandfather",
-       "answer": "In 1925. — In Bristol. — In 1955. — Four.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "Bobo haqida — 'she' o'rniga 'he'.\nNikoh sanasi va farzandlar soni buvi bilan BIR XIL —\nchunki ular er-xotin.",
-       "speak": "grandfather"
+       "en": "In 1925. — In Bristol. — In 1955. — Four.",
+       "uz": "Javob tuzing",
+       "note": "Bobo haqida — 'she' o'rniga 'he'.\nNikoh sanasi va farzandlar soni buvi bilan BIR XIL —\nchunki ular er-xotin."
       },
       {
-       "prompt": "mother",
-       "answer": "When was your mother born? — Where was she born? — When did she marry your father? — How many children did they have?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "Ona haqida.\nJavoblar SHAXSIY — o'z oilangiz haqida aytasiz.",
-       "speak": "mother"
+       "en": "When was your mother born? — Where was she born? — When did she marry your father? — How many children did they have?",
+       "uz": "Savol tuzing",
+       "note": "Ona haqida.\nJavoblar SHAXSIY — o'z oilangiz haqida aytasiz."
       },
       {
-       "prompt": "mother",
-       "answer": "In 1975. — In Tashkent. — In 1998. — Three.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "Ona haqida.\nJavoblar SHAXSIY — o'z oilangiz haqida aytasiz.",
-       "speak": "mother"
+       "en": "In 1975. — In Tashkent. — In 1998. — Three.",
+       "uz": "Javob tuzing",
+       "note": "Ona haqida.\nJavoblar SHAXSIY — o'z oilangiz haqida aytasiz."
       },
       {
-       "prompt": "aunt",
-       "answer": "When was your aunt born? — Where was she born? — When did she marry your uncle? — How many children did they have?",
-       "promptUz": "Savol tuzing",
-       "whyUz": "'an aunt' = xola, amma;  'an uncle' = amaki, tog'a.\nIngliz tilida bu ikkalasi uchun alohida so'z yo'q.",
-       "speak": "aunt"
+       "en": "When was your aunt born? — Where was she born? — When did she marry your uncle? — How many children did they have?",
+       "uz": "Savol tuzing",
+       "note": "'an aunt' = xola, amma;  'an uncle' = amaki, tog'a.\nIngliz tilida bu ikkalasi uchun alohida so'z yo'q."
       },
       {
-       "prompt": "aunt",
-       "answer": "In 1980. — In Samarkand. — In 2003. — Two.",
-       "promptUz": "Javob tuzing",
-       "whyUz": "'an aunt' = xola, amma;  'an uncle' = amaki, tog'a.\nIngliz tilida bu ikkalasi uchun alohida so'z yo'q.",
-       "speak": "aunt"
+       "en": "In 1980. — In Samarkand. — In 2003. — Two.",
+       "uz": "Javob tuzing",
+       "note": "'an aunt' = xola, amma;  'an uncle' = amaki, tog'a.\nIngliz tilida bu ikkalasi uchun alohida so'z yo'q."
       }
      ]
     }
@@ -7871,37 +7691,25 @@
      "book": "coursebook",
      "bookPage": 73,
      "bookRef": "Coursebook, 73-bet, 16-mashq (matn)",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "Tug'ilishi va musiqa",
-       "answer": "Wolfgang Amadeus Mozart was born in Salzburg, Austria, in 1756. He loved music and learnt to play the violin very well.",
-       "speak": "Tug'ilishi va musiqa"
+       "en": "Wolfgang Amadeus Mozart was born in Salzburg, Austria, in 1756. He loved music and learnt to play the violin very well."
       },
       {
-       "prompt": "Musiqa yozishni boshlashi",
-       "answer": "He started writing music when he was five.",
-       "speak": "Musiqa yozishni boshlashi"
+       "en": "He started writing music when he was five."
       },
       {
-       "prompt": "Yevropa bo'ylab safar",
-       "answer": "He toured around western Europe with his father, Leopold, and played music for kings and queens.",
-       "speak": "Yevropa bo'ylab safar"
+       "en": "He toured around western Europe with his father, Leopold, and played music for kings and queens."
       },
       {
-       "prompt": "Hamma unga qoyil qolardi",
-       "answer": "Everyone admired the talented young man and they often invited him to their balls.",
-       "speak": "Hamma unga qoyil qolardi"
+       "en": "Everyone admired the talented young man and they often invited him to their balls."
       },
       {
-       "prompt": "Uylanishi va muammolar",
-       "answer": "In 1781, he married Constanze Weber, but life was difficult because he had money problems.",
-       "speak": "Uylanishi va muammolar"
+       "en": "In 1781, he married Constanze Weber, but life was difficult because he had money problems."
       },
       {
-       "prompt": "Ijodi va vafoti",
-       "answer": "Mozart continued writing music and performing at the royal courts of Europe until he died in 1791. He was only 35 years old.",
-       "speak": "Ijodi va vafoti"
+       "en": "Mozart continued writing music and performing at the royal courts of Europe until he died in 1791. He was only 35 years old."
       }
      ]
     }
@@ -7961,32 +7769,22 @@
      "book": "coursebook",
      "bookPage": 75,
      "bookRef": "Coursebook, 75-bet, Writing",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "1-xatboshi: To'liq ism, nima bilan mashhur, tug'ilgan sana va joy",
-       "answer": "Antonio Vivaldi was a famous Italian composer and violinist. He was born on 4th March, 1678, in Venice, Italy.",
-       "speak": "1-xatboshi: To'liq ism, nima bilan mashhur, tug'ilgan sana va joy"
+       "en": "Antonio Vivaldi was a famous Italian composer and violinist. He was born on 4th March, 1678, in Venice, Italy."
       },
       {
-       "prompt": "2-xatboshi: Erta yillari",
-       "answer": "At the age of twenty-five, he became a priest. He taught music at a school for girls in Venice.",
-       "speak": "2-xatboshi: Erta yillari"
+       "en": "At the age of twenty-five, he became a priest. He taught music at a school for girls in Venice."
       },
       {
-       "prompt": "2-xatboshi: Sayohatlari va asarlari",
-       "answer": "He travelled to many countries and wrote a lot of music. He composed 40 operas, 39 concertos for bassoon and 30 concertos for flute.",
-       "speak": "2-xatboshi: Sayohatlari va asarlari"
+       "en": "He travelled to many countries and wrote a lot of music. He composed 40 operas, 39 concertos for bassoon and 30 concertos for flute."
       },
       {
-       "prompt": "2-xatboshi: Faoliyatining cho'qqisi",
-       "answer": "At the height of his career, he was a rich and famous man.",
-       "speak": "2-xatboshi: Faoliyatining cho'qqisi"
+       "en": "At the height of his career, he was a rich and famous man."
       },
       {
-       "prompt": "3-xatboshi: Vafoti haqida",
-       "answer": "Vivaldi never married. He was poor when he died on 28th July, 1741.",
-       "speak": "3-xatboshi: Vafoti haqida"
+       "en": "Vivaldi never married. He was poor when he died on 28th July, 1741."
       }
      ]
     }
@@ -8009,42 +7807,28 @@
      "book": "workbook",
      "bookPage": 43,
      "bookRef": "Workbook, 43-bet, 19-mashq",
-     "kind": "text",
+     "kind": "study",
      "tasks": [
       {
-       "prompt": "1-xatboshi: Ism, kasbi, tug'ilgan sana va joy",
-       "answer": "Dame Margot Fonteyn was a famous British ballet dancer. She was born on 18th May, 1919, in Surrey, England.",
-       "speak": "1-xatboshi: Ism, kasbi, tug'ilgan sana va joy"
+       "en": "Dame Margot Fonteyn was a famous British ballet dancer. She was born on 18th May, 1919, in Surrey, England."
       },
       {
-       "prompt": "2-xatboshi: O'qigan joyi",
-       "answer": "She studied at the Sadler's Wells Ballet school.",
-       "speak": "2-xatboshi: O'qigan joyi"
+       "en": "She studied at the Sadler's Wells Ballet school."
       },
       {
-       "prompt": "2-xatboshi: 1939-yil",
-       "answer": "In 1939, she danced the part of Aurora in The Sleeping Beauty.",
-       "speak": "2-xatboshi: 1939-yil"
+       "en": "In 1939, she danced the part of Aurora in The Sleeping Beauty."
       },
       {
-       "prompt": "2-xatboshi: 1954-yil",
-       "answer": "In 1954, she became president of the Royal Academy of Dancing.",
-       "speak": "2-xatboshi: 1954-yil"
+       "en": "In 1954, she became president of the Royal Academy of Dancing."
       },
       {
-       "prompt": "2-xatboshi: 1955-yil",
-       "answer": "She married Robert Emilio Arias in 1955.",
-       "speak": "2-xatboshi: 1955-yil"
+       "en": "She married Robert Emilio Arias in 1955."
       },
       {
-       "prompt": "2-xatboshi: 1979-yil",
-       "answer": "In 1979, she wrote A Dancer's World and The Magic of Dance.",
-       "speak": "2-xatboshi: 1979-yil"
+       "en": "In 1979, she wrote A Dancer's World and The Magic of Dance."
       },
       {
-       "prompt": "3-xatboshi: Vafoti haqida",
-       "answer": "Margot Fonteyn died on 21st February, 1991, in Panama City, Panama.",
-       "speak": "3-xatboshi: Vafoti haqida"
+       "en": "Margot Fonteyn died on 21st February, 1991, in Panama City, Panama."
       }
      ]
     }

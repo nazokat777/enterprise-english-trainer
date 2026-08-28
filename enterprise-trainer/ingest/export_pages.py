@@ -256,9 +256,37 @@ def norm_exercise(ex, page):
 
     kind, tasks = _dispatch(t, ex, items)
     kind, tasks = _fix_ambiguous_match(kind, tasks)
+    kind, tasks = _fix_unbuildable_text(kind, tasks)
     base["kind"] = kind
     base["tasks"] = tasks
     return base
+
+
+MAX_BUILD_PIECES = 14
+
+
+def _fix_unbuildable_text(kind, tasks):
+    """Yig'ish o'yinida javob juda uzun bo'lsa — mashq o'rgatmaydi, qiynaydi.
+
+    "text" o'yinida javob aralashtirilgan bo'laklardan yig'iladi. Javob bitta
+    so'z bo'lsa — harflardan, ibora bo'lsa — so'zlardan. 142 ta so'zdan iborat
+    xatni to'g'ri tartibda yig'ish boshlang'ich daraja uchun imkonsiz.
+
+    Bunday bandlar aslida NAMUNA matni ("shu xat kabi yozing") — ular
+    O'QISH uchun, yig'ish uchun emas. Shuning uchun mashq "study" ga o'tadi.
+    """
+    if kind != "text" or not tasks:
+        return kind, tasks
+    longest = 0
+    for t in tasks:
+        a = str(t.get("answer", "")).strip()
+        longest = max(longest, len(a.split()) if " " in a else len(a))
+    if longest <= MAX_BUILD_PIECES:
+        return kind, tasks
+    return "study", [
+        study(t.get("answer", ""), t.get("promptUz", ""), t.get("whyUz", ""))
+        for t in tasks
+    ]
 
 
 def _fix_ambiguous_match(kind, tasks):
