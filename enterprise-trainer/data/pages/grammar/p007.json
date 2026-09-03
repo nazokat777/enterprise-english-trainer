@@ -4,10 +4,15 @@
   "bookPage": 6,
   "unit": 1,
   "unitTitle": "Subject Pronouns - The Verb \"to be\" - Indefinite Article A/An",
+  "module": 1,
   "pageType": "exercises",
   "pairsWith": {
-    "coursebook": [8],
-    "workbook": [6],
+    "coursebook": [
+      8
+    ],
+    "workbook": [
+      6
+    ],
     "noteUz": "'to be' mashqlarining davomi. Coursebook 8-betdagi Ex.10 va Ex.11 bilan bir xil turdagi mashqlar."
   },
   "sections": [
@@ -23,16 +28,67 @@
           "instructionUz": "'m, 's, 're, 'm not, isn't yoki aren't dan mosini qo'ying.",
           "explanationUz": "Har bandda ikki gap bor va ular BIR-BIRIGA QARAMA-QARSHI. Ikkinchi gap tasdiq bo'lsa, birinchisi inkor bo'ladi (yoki aksincha).\nUsul: avval ma'noni aniqlang (tasdiqmi/inkormi), keyin egaga mos shaklni qo'ying.",
           "items": [
-            { "n": 1, "textEn": "We aren't old. We ___ young.", "answer": "'re", "given": true, "whyUz": "Qari emas → yosh. we → 're" },
-            { "n": 2, "textEn": "My favourite sport is tennis. It ___ golf.", "answer": "isn't", "whyUz": "Tennis, demak golf EMAS. it → isn't" },
-            { "n": 3, "textEn": "The Pyramids ___ in Paris. They're in Cairo.", "answer": "aren't", "whyUz": "Qohirada — demak Parijda emas. Pyramids ko'plik → aren't" },
-            { "n": 4, "textEn": "I ___ from Spain. I'm from Mexico.", "answer": "'m not", "whyUz": "Meksikadan — demak Ispaniyadan emas. I → 'm not" },
-            { "n": 5, "textEn": "She isn't Stella. She ___ Molly.", "answer": "'s", "whyUz": "Stella emas → Molly. she → 's" },
-            { "n": 6, "textEn": "I'm not Bill. I ___ Tom.", "answer": "'m", "whyUz": "Bill emas → Tom. I → 'm" },
-            { "n": 7, "textEn": "The Taj Mahal isn't in Ottawa. It ___ in Agra.", "answer": "'s", "whyUz": "Ottavada emas → Agrada. it → 's" },
-            { "n": 8, "textEn": "They ___ from Poland. They're from Sweden.", "answer": "aren't", "whyUz": "Shvetsiyadan — demak Polshadan emas. they → aren't" },
-            { "n": 9, "textEn": "Jill ___ my friend. She isn't my sister.", "answer": "'s", "whyUz": "Singlim emas → do'stim. Jill = she → 's" },
-            { "n": 10, "textEn": "I ___ 24 years old. I'm 27.", "answer": "'m not", "whyUz": "27 yoshda — demak 24 emas. I → 'm not" }
+            {
+              "n": 1,
+              "textEn": "We aren't old. We ___ young.",
+              "answer": "'re",
+              "given": true,
+              "whyUz": "Qari emas → yosh. we → 're"
+            },
+            {
+              "n": 2,
+              "textEn": "My favourite sport is tennis. It ___ golf.",
+              "answer": "isn't",
+              "whyUz": "Tennis, demak golf EMAS. it → isn't"
+            },
+            {
+              "n": 3,
+              "textEn": "The Pyramids ___ in Paris. They're in Cairo.",
+              "answer": "aren't",
+              "whyUz": "Qohirada — demak Parijda emas. Pyramids ko'plik → aren't"
+            },
+            {
+              "n": 4,
+              "textEn": "I ___ from Spain. I'm from Mexico.",
+              "answer": "'m not",
+              "whyUz": "Meksikadan — demak Ispaniyadan emas. I → 'm not"
+            },
+            {
+              "n": 5,
+              "textEn": "She isn't Stella. She ___ Molly.",
+              "answer": "'s",
+              "whyUz": "Stella emas → Molly. she → 's"
+            },
+            {
+              "n": 6,
+              "textEn": "I'm not Bill. I ___ Tom.",
+              "answer": "'m",
+              "whyUz": "Bill emas → Tom. I → 'm"
+            },
+            {
+              "n": 7,
+              "textEn": "The Taj Mahal isn't in Ottawa. It ___ in Agra.",
+              "answer": "'s",
+              "whyUz": "Ottavada emas → Agrada. it → 's"
+            },
+            {
+              "n": 8,
+              "textEn": "They ___ from Poland. They're from Sweden.",
+              "answer": "aren't",
+              "whyUz": "Shvetsiyadan — demak Polshadan emas. they → aren't"
+            },
+            {
+              "n": 9,
+              "textEn": "Jill ___ my friend. She isn't my sister.",
+              "answer": "'s",
+              "whyUz": "Singlim emas → do'stim. Jill = she → 's"
+            },
+            {
+              "n": 10,
+              "textEn": "I ___ 24 years old. I'm 27.",
+              "answer": "'m not",
+              "whyUz": "27 yoshda — demak 24 emas. I → 'm not"
+            }
           ]
         },
         {
@@ -45,80 +101,182 @@
             {
               "n": 1,
               "lines": [
-                { "who": "A", "textEn": "___ he Spanish?", "answer": "Is", "given": true },
-                { "who": "B", "textEn": "No, he ___ . He ___ French.", "answers": ["isn't", "'s"] }
+                {
+                  "who": "A",
+                  "textEn": "___ he Spanish?",
+                  "answer": "Is",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, he ___ . He ___ French.",
+                  "answers": [
+                    "isn't",
+                    "'s"
+                  ]
+                }
               ],
               "whyUz": "he → Is / isn't / he's"
             },
             {
               "n": 2,
               "lines": [
-                { "who": "A", "textEn": "___ you a taxi driver?", "answer": "Are" },
-                { "who": "B", "textEn": "No, I ___ not. I ___ a pilot.", "answers": ["'m", "'m"] }
+                {
+                  "who": "A",
+                  "textEn": "___ you a taxi driver?",
+                  "answer": "Are"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, I ___ not. I ___ a pilot.",
+                  "answers": [
+                    "'m",
+                    "'m"
+                  ]
+                }
               ],
               "whyUz": "'I ___ not' → 'm (I'm not). Keyin 'I'm a pilot'."
             },
             {
               "n": 3,
               "lines": [
-                { "who": "A", "textEn": "What ___ your favourite sport?", "answer": "is" },
-                { "who": "B", "textEn": "My favourite sport ___ volleyball.", "answer": "is" }
+                {
+                  "who": "A",
+                  "textEn": "What ___ your favourite sport?",
+                  "answer": "is"
+                },
+                {
+                  "who": "B",
+                  "textEn": "My favourite sport ___ volleyball.",
+                  "answer": "is"
+                }
               ],
               "whyUz": "'sport' — birlik narsa (it) → is"
             },
             {
               "n": 4,
               "lines": [
-                { "who": "A", "textEn": "___ they from Birmingham?", "answer": "Are" },
-                { "who": "B", "textEn": "No, they ___ . They ___ from York.", "answers": ["aren't", "'re"] }
+                {
+                  "who": "A",
+                  "textEn": "___ they from Birmingham?",
+                  "answer": "Are"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, they ___ . They ___ from York.",
+                  "answers": [
+                    "aren't",
+                    "'re"
+                  ]
+                }
               ],
               "whyUz": "they → Are / aren't / they're"
             },
             {
               "n": 5,
               "lines": [
-                { "who": "A", "textEn": "___ he a doctor?", "answer": "Is" },
-                { "who": "B", "textEn": "Yes, he ___ .", "answer": "is" }
+                {
+                  "who": "A",
+                  "textEn": "___ he a doctor?",
+                  "answer": "Is"
+                },
+                {
+                  "who": "B",
+                  "textEn": "Yes, he ___ .",
+                  "answer": "is"
+                }
               ],
               "whyUz": "TASDIQ qisqa javob — TO'LIQ shakl: 'Yes, he is' ('he's' XATO)."
             },
             {
               "n": 6,
               "lines": [
-                { "who": "A", "textEn": "___ you Jackie Wilson?", "answer": "Are" },
-                { "who": "B", "textEn": "No, I ___ not. I ___ Sandra Collins.", "answers": ["'m", "'m"] }
+                {
+                  "who": "A",
+                  "textEn": "___ you Jackie Wilson?",
+                  "answer": "Are"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, I ___ not. I ___ Sandra Collins.",
+                  "answers": [
+                    "'m",
+                    "'m"
+                  ]
+                }
               ],
               "whyUz": "Ism aytilganda a/an ishlatilmaydi."
             },
             {
               "n": 7,
               "lines": [
-                { "who": "A", "textEn": "___ Big Ben in Tokyo?", "answer": "Is" },
-                { "who": "B", "textEn": "No, it ___ . It ___ in London.", "answers": ["isn't", "'s"] }
+                {
+                  "who": "A",
+                  "textEn": "___ Big Ben in Tokyo?",
+                  "answer": "Is"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, it ___ . It ___ in London.",
+                  "answers": [
+                    "isn't",
+                    "'s"
+                  ]
+                }
               ],
               "whyUz": "Big Ben — bitta bino → it"
             },
             {
               "n": 8,
               "lines": [
-                { "who": "A", "textEn": "How old ___ the two of you?", "answer": "are" },
-                { "who": "B", "textEn": "We ___ 38 years old.", "answer": "'re" }
+                {
+                  "who": "A",
+                  "textEn": "How old ___ the two of you?",
+                  "answer": "are"
+                },
+                {
+                  "who": "B",
+                  "textEn": "We ___ 38 years old.",
+                  "answer": "'re"
+                }
               ],
               "whyUz": "'the two of you' — ikki kishi → are. Javobda we → 're"
             },
             {
               "n": 9,
               "lines": [
-                { "who": "A", "textEn": "___ Warsaw in Hungary?", "answer": "Is" },
-                { "who": "B", "textEn": "No, it ___ . It ___ in Poland.", "answers": ["isn't", "'s"] }
+                {
+                  "who": "A",
+                  "textEn": "___ Warsaw in Hungary?",
+                  "answer": "Is"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, it ___ . It ___ in Poland.",
+                  "answers": [
+                    "isn't",
+                    "'s"
+                  ]
+                }
               ],
               "whyUz": "Varshava — Polsha poytaxti, Vengriyaniki emas (u Budapesht)."
             },
             {
               "n": 10,
               "lines": [
-                { "who": "A", "textEn": "What ___ the capital of Germany?", "answer": "is" },
-                { "who": "B", "textEn": "It ___ Berlin. It ___ Dublin.", "answers": ["'s", "isn't"] }
+                {
+                  "who": "A",
+                  "textEn": "What ___ the capital of Germany?",
+                  "answer": "is"
+                },
+                {
+                  "who": "B",
+                  "textEn": "It ___ Berlin. It ___ Dublin.",
+                  "answers": [
+                    "'s",
+                    "isn't"
+                  ]
+                }
               ],
               "whyUz": "Germaniya poytaxti — Berlin. Dublin esa Irlandiyaniki."
             }
@@ -187,24 +345,121 @@
           "instructionEn": "Fill in the gaps with the correct form of the verb to be.",
           "instructionUz": "Bo'shliqlarni \"to be\" fe'lining to'g'ri shakli bilan to'ldiring.",
           "explanationUz": "Bu to'liq suhbat — tanishuv dialogi. Unit 1 ning barcha qoidalari bir joyda: tasdiq, inkor, so'roq va qisqa javob.\nKasb aytilganda a/an esdan chiqmasin: a singer, a guitarist, a drummer, a pop singer.",
-          "speakers": ["Jane", "Simone"],
+          "speakers": [
+            "Jane",
+            "Simone"
+          ],
           "items": [
-            { "n": 1, "who": "Jane", "textEn": "Hello, my name 1) ___ Jane Smith.", "answer": "is", "alt": "'s" },
-            { "n": 2, "who": "Jane", "textEn": "What 2) ___ your name?", "answer": "is", "alt": "'s" },
-            { "n": 3, "who": "Simone", "textEn": "My name 3) ___ Simone Starr.", "answer": "is", "alt": "'s" },
-            { "n": 4, "who": "Simone", "textEn": "4) ___ you an actress?", "answer": "Are", "whyUz": "So'roq boshida to'liq shakl. actress — unli tovush → an." },
-            { "n": 5, "who": "Jane", "textEn": "No, I 5) ___ not.", "answer": "'m", "whyUz": "I + am not → I'm not" },
-            { "n": 6, "who": "Jane", "textEn": "I 6) ___ a singer.", "answer": "'m", "alt": "am" },
-            { "n": 7, "who": "Jane", "textEn": "7) ___ you a guitarist?", "answer": "Are" },
-            { "n": 8, "who": "Simone", "textEn": "Yes, I 8) ___ .", "answer": "am", "whyUz": "TASDIQ qisqa javob — TO'LIQ shakl. ''m' bu yerda XATO." },
-            { "n": 9, "who": "Simone", "textEn": "My friend 9) ___ a drummer.", "answer": "is", "alt": "'s" },
-            { "n": 10, "who": "Simone", "textEn": "We 10) ___ in a band.", "answer": "are", "alt": "'re" },
-            { "n": 11, "who": "Jane", "textEn": "Who 11) ___ your favourite singer?", "answer": "is", "alt": "'s" },
-            { "n": 12, "who": "Simone", "textEn": "My favourite singer 12) ___ Celine Dion.", "answer": "is", "alt": "'s" },
-            { "n": 13, "who": "Simone", "textEn": "She 13) ___ a pop singer.", "answer": "'s", "alt": "is" },
-            { "n": 14, "who": "Jane", "textEn": "14) ___ she from Holland?", "answer": "Is" },
-            { "n": 15, "who": "Simone", "textEn": "No, she 15) ___ .", "answer": "isn't", "whyUz": "INKOR qisqa javob — qisqa shakl." },
-            { "n": 16, "who": "Simone", "textEn": "She 16) ___ from Canada.", "answer": "'s", "alt": "is" }
+            {
+              "n": 1,
+              "who": "Jane",
+              "textEn": "Hello, my name 1) ___ Jane Smith.",
+              "answer": "is",
+              "alt": "'s"
+            },
+            {
+              "n": 2,
+              "who": "Jane",
+              "textEn": "What 2) ___ your name?",
+              "answer": "is",
+              "alt": "'s"
+            },
+            {
+              "n": 3,
+              "who": "Simone",
+              "textEn": "My name 3) ___ Simone Starr.",
+              "answer": "is",
+              "alt": "'s"
+            },
+            {
+              "n": 4,
+              "who": "Simone",
+              "textEn": "4) ___ you an actress?",
+              "answer": "Are",
+              "whyUz": "So'roq boshida to'liq shakl. actress — unli tovush → an."
+            },
+            {
+              "n": 5,
+              "who": "Jane",
+              "textEn": "No, I 5) ___ not.",
+              "answer": "'m",
+              "whyUz": "I + am not → I'm not"
+            },
+            {
+              "n": 6,
+              "who": "Jane",
+              "textEn": "I 6) ___ a singer.",
+              "answer": "'m",
+              "alt": "am"
+            },
+            {
+              "n": 7,
+              "who": "Jane",
+              "textEn": "7) ___ you a guitarist?",
+              "answer": "Are"
+            },
+            {
+              "n": 8,
+              "who": "Simone",
+              "textEn": "Yes, I 8) ___ .",
+              "answer": "am",
+              "whyUz": "TASDIQ qisqa javob — TO'LIQ shakl. ''m' bu yerda XATO."
+            },
+            {
+              "n": 9,
+              "who": "Simone",
+              "textEn": "My friend 9) ___ a drummer.",
+              "answer": "is",
+              "alt": "'s"
+            },
+            {
+              "n": 10,
+              "who": "Simone",
+              "textEn": "We 10) ___ in a band.",
+              "answer": "are",
+              "alt": "'re"
+            },
+            {
+              "n": 11,
+              "who": "Jane",
+              "textEn": "Who 11) ___ your favourite singer?",
+              "answer": "is",
+              "alt": "'s"
+            },
+            {
+              "n": 12,
+              "who": "Simone",
+              "textEn": "My favourite singer 12) ___ Celine Dion.",
+              "answer": "is",
+              "alt": "'s"
+            },
+            {
+              "n": 13,
+              "who": "Simone",
+              "textEn": "She 13) ___ a pop singer.",
+              "answer": "'s",
+              "alt": "is"
+            },
+            {
+              "n": 14,
+              "who": "Jane",
+              "textEn": "14) ___ she from Holland?",
+              "answer": "Is"
+            },
+            {
+              "n": 15,
+              "who": "Simone",
+              "textEn": "No, she 15) ___ .",
+              "answer": "isn't",
+              "whyUz": "INKOR qisqa javob — qisqa shakl."
+            },
+            {
+              "n": 16,
+              "who": "Simone",
+              "textEn": "She 16) ___ from Canada.",
+              "answer": "'s",
+              "alt": "is"
+            }
           ]
         }
       ]
@@ -218,27 +473,81 @@
         "ruleUz": "CHOLG'U → CHOLG'UCHI (-ist / -er)",
         "explanationUz": "Musiqa asbobidan uni chaluvchi odam yasaladi. Ba'zilari -ist, ba'zilari -er oladi — yodlab qo'yish kerak.",
         "items": [
-          { "base": "guitar", "baseUz": "gitara", "derived": "guitarist", "derivedUz": "gitarachi", "note": "-ist" },
-          { "base": "piano", "baseUz": "pianino", "derived": "pianist", "derivedUz": "pianinochi", "note": "-ist (o tushadi)" },
-          { "base": "drum", "baseUz": "baraban", "derived": "drummer", "derivedUz": "barabanchi", "note": "-er (m ikkilanadi)" },
-          { "base": "sing", "baseUz": "kuylamoq", "derived": "singer", "derivedUz": "qo'shiqchi", "note": "-er" },
-          { "base": "violin", "baseUz": "skripka", "derived": "violinist", "derivedUz": "skripkachi", "note": "-ist" }
+          {
+            "base": "guitar",
+            "baseUz": "gitara",
+            "derived": "guitarist",
+            "derivedUz": "gitarachi",
+            "note": "-ist"
+          },
+          {
+            "base": "piano",
+            "baseUz": "pianino",
+            "derived": "pianist",
+            "derivedUz": "pianinochi",
+            "note": "-ist (o tushadi)"
+          },
+          {
+            "base": "drum",
+            "baseUz": "baraban",
+            "derived": "drummer",
+            "derivedUz": "barabanchi",
+            "note": "-er (m ikkilanadi)"
+          },
+          {
+            "base": "sing",
+            "baseUz": "kuylamoq",
+            "derived": "singer",
+            "derivedUz": "qo'shiqchi",
+            "note": "-er"
+          },
+          {
+            "base": "violin",
+            "baseUz": "skripka",
+            "derived": "violinist",
+            "derivedUz": "skripkachi",
+            "note": "-ist"
+          }
         ]
       },
       {
         "ruleUz": "Erkak → ayol kasb (-ess)",
         "explanationUz": "Ba'zi kasblarning ayol shakli -ess bilan yasaladi. Diqqat: bular unli tovush bilan boshlansa 'an' oladi.",
         "items": [
-          { "base": "actor", "baseUz": "aktyor", "derived": "actress", "derivedUz": "aktrisa", "note": "an actress (unli)" },
-          { "base": "waiter", "baseUz": "ofitsiant", "derived": "waitress", "derivedUz": "ofitsiantka", "note": "a waitress" }
+          {
+            "base": "actor",
+            "baseUz": "aktyor",
+            "derived": "actress",
+            "derivedUz": "aktrisa",
+            "note": "an actress (unli)"
+          },
+          {
+            "base": "waiter",
+            "baseUz": "ofitsiant",
+            "derived": "waitress",
+            "derivedUz": "ofitsiantka",
+            "note": "a waitress"
+          }
         ]
       },
       {
         "ruleUz": "Bola/kichik hayvon nomlari",
         "explanationUz": "Kattasi va bolasi butunlay boshqa so'z bo'lishi mumkin.",
         "items": [
-          { "base": "cat", "baseUz": "mushuk", "derived": "kitten", "derivedUz": "mushukcha", "note": "alohida so'z" },
-          { "base": "dog", "baseUz": "it", "derived": "puppy", "derivedUz": "kuchukcha", "note": "alohida so'z" }
+          {
+            "base": "cat",
+            "baseUz": "mushuk",
+            "derived": "kitten",
+            "derivedUz": "mushukcha",
+            "note": "alohida so'z"
+          },
+          {
+            "base": "dog",
+            "baseUz": "it",
+            "derived": "puppy",
+            "derivedUz": "kuchukcha",
+            "note": "alohida so'z"
+          }
         ]
       }
     ]
@@ -268,25 +577,85 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "young", "uz": "yosh" },
-    { "en": "old", "uz": "qari / eski" },
-    { "en": "taxi driver", "uz": "taksi haydovchisi" },
-    { "en": "barman", "uz": "barmen" },
-    { "en": "kitten", "uz": "mushukcha" },
-    { "en": "lemon", "uz": "limon" },
-    { "en": "umbrella", "uz": "soyabon" },
-    { "en": "television", "uz": "televizor" },
-    { "en": "actress", "uz": "aktrisa" },
-    { "en": "singer", "uz": "qo'shiqchi" },
-    { "en": "guitarist", "uz": "gitarachi" },
-    { "en": "drummer", "uz": "barabanchi" },
-    { "en": "band", "uz": "musiqa guruhi" },
-    { "en": "pop singer", "uz": "pop qo'shiqchi" },
-    { "en": "Sweden", "uz": "Shvetsiya" },
-    { "en": "Germany", "uz": "Germaniya" },
-    { "en": "Berlin", "uz": "Berlin" },
-    { "en": "Dublin", "uz": "Dublin" },
-    { "en": "York", "uz": "York (shahar)" },
-    { "en": "Birmingham", "uz": "Birmingem" }
+    {
+      "en": "young",
+      "uz": "yosh"
+    },
+    {
+      "en": "old",
+      "uz": "qari / eski"
+    },
+    {
+      "en": "taxi driver",
+      "uz": "taksi haydovchisi"
+    },
+    {
+      "en": "barman",
+      "uz": "barmen"
+    },
+    {
+      "en": "kitten",
+      "uz": "mushukcha"
+    },
+    {
+      "en": "lemon",
+      "uz": "limon"
+    },
+    {
+      "en": "umbrella",
+      "uz": "soyabon"
+    },
+    {
+      "en": "television",
+      "uz": "televizor"
+    },
+    {
+      "en": "actress",
+      "uz": "aktrisa"
+    },
+    {
+      "en": "singer",
+      "uz": "qo'shiqchi"
+    },
+    {
+      "en": "guitarist",
+      "uz": "gitarachi"
+    },
+    {
+      "en": "drummer",
+      "uz": "barabanchi"
+    },
+    {
+      "en": "band",
+      "uz": "musiqa guruhi"
+    },
+    {
+      "en": "pop singer",
+      "uz": "pop qo'shiqchi"
+    },
+    {
+      "en": "Sweden",
+      "uz": "Shvetsiya"
+    },
+    {
+      "en": "Germany",
+      "uz": "Germaniya"
+    },
+    {
+      "en": "Berlin",
+      "uz": "Berlin"
+    },
+    {
+      "en": "Dublin",
+      "uz": "Dublin"
+    },
+    {
+      "en": "York",
+      "uz": "York (shahar)"
+    },
+    {
+      "en": "Birmingham",
+      "uz": "Birmingem"
+    }
   ]
 }

@@ -4,10 +4,18 @@
   "bookPage": 4,
   "unit": 1,
   "unitTitle": "Subject Pronouns - The Verb \"to be\" - Indefinite Article A/An",
+  "module": 1,
+  "scanNote": "GRAMMAR 4-BET. Unit 1 nazariyasi — shaxs olmoshlari, 'to be' va a/an (mashqsiz bet).\n\nSkaner bilan solishtirildi. Barcha bloklar to'g'ri ko'chirilgan: sakkiz shaxs olmoshi va ularning ishlatilishi, 'to be' jadvali (uzun/qisqa shakl, savol, inkor), qisqa javoblar va a/an qoidasi.\n\n⚠ QISQA JAVOB QOIDASI — KITOB ATAYLAB O'ChIRIB KO'RSATGAN:\n  TASDIQ javobda TO'LIQ shakl: 'Yes, I AM.' — 'Yes, I'm' XATO.\n  INKOR javobda QISQA shakl: 'No, I'M NOT.' — 'No, I am not' g'aliz.\n  ⚠ Kitobda noto'g'ri variantlar ustidan chizib tashlangan.\n\n⚠ O'ZBEK O'QUVChISI UChUN ENG QIYIN IKKI JOY:\n  1) Ingliz gapida FE'L TUShIB QOLMAYDI. O'zbekcha 'Men talaba' — fe'lsiz; inglizcha 'I am a student' — 'am' shart.\n  2) 'a/an' o'zbek tilida YO'Q. Shuning uchun uni tushirib qoldirish eng ko'p uchraydigan xato.\n\n⚠ 'a' yoki 'an' — TOVUShGA qarab tanlanadi, harfga emas: 'a dancer' (undosh tovush), 'an apple' (unli tovush).\n\n--- ILOVADAGI XATO TUZATILDI ---\n⚠ Bu betni tekshirayotib ilovada yashirin xato topdim: qoida qutilaridagi uchta maydon EKRANGA UMUMAN ChIQMAS EDI (exampleEn/exampleUz, interrogativeNoteUz, negativeNoteUz). Jami 14 ta izoh yo'qolgan edi, jumladan: 'I amn't' degan shakl YO'Q · 'Do you can swim?' XATO · 'cannot' bitta so'z · qisqa javobda 'got' takrorlanmaydi. Ilovaga ularni ko'rsatadigan qism qo'shildi.\n\n--- SXEMA TUZATISHI ---\n⚠ Grammar kitobining 4-11-betlarida 'module' maydoni umuman yo'q edi. Eksportyor unitning modulini birinchi sahifadan oladi; agar shu betlardan biri birinchi bo'lib kelsa, modul '0' bo'lib qolardi. Sakkizta faylga modul raqami qo'shildi.",
   "pageType": "theory",
   "pairsWith": {
-    "coursebook": [8, 10],
-    "workbook": [4, 6],
+    "coursebook": [
+      8,
+      10
+    ],
+    "workbook": [
+      4,
+      6
+    ],
     "noteUz": "Bu nazariya sahifasi coursebook 8-bet ('to be' jadvallari) va 10-bet (a/an) ga to'liq mos keladi. Ilovada ular bitta grammatika bo'limida birlashtiriladi."
   },
   "sections": [
@@ -16,14 +24,43 @@
       "title": "Subject Pronouns",
       "titleUz": "Shaxs olmoshlari",
       "rule": {
-        "listEn": ["I", "you", "he", "she", "it", "we", "you", "they"],
+        "listEn": [
+          "I",
+          "you",
+          "he",
+          "she",
+          "it",
+          "we",
+          "you",
+          "they"
+        ],
         "explanationUz": "Shaxs olmoshi — gapning EGASI o'rnida keladigan so'z. Ingliz tilida ega hech qachon tushib qolmaydi: o'zbekchada 'Talabaman' desak bo'ladi, inglizchada esa 'I am a student' — 'I' shart.",
         "usage": [
-          { "pronoun": "he", "enRule": "We use he for a man or a boy.", "uzRule": "Erkak yoki o'g'il bola uchun — 'u'." },
-          { "pronoun": "she", "enRule": "We use she for a woman or a girl.", "uzRule": "Ayol yoki qiz uchun — 'u'." },
-          { "pronoun": "it", "enRule": "We use it for an animal or a thing.", "uzRule": "Hayvon yoki narsa uchun — 'u'." },
-          { "pronoun": "you", "enRule": "We use you in the singular and plural.", "uzRule": "'sen' va 'sizlar' — ikkalasi ham 'you'. Ingliz tilida farqi yo'q." },
-          { "pronoun": "they", "enRule": "We use they for people, animals or things.", "uzRule": "Ko'plik — odam, hayvon va narsa uchun bir xil 'they'." }
+          {
+            "pronoun": "he",
+            "enRule": "We use he for a man or a boy.",
+            "uzRule": "Erkak yoki o'g'il bola uchun — 'u'."
+          },
+          {
+            "pronoun": "she",
+            "enRule": "We use she for a woman or a girl.",
+            "uzRule": "Ayol yoki qiz uchun — 'u'."
+          },
+          {
+            "pronoun": "it",
+            "enRule": "We use it for an animal or a thing.",
+            "uzRule": "Hayvon yoki narsa uchun — 'u'."
+          },
+          {
+            "pronoun": "you",
+            "enRule": "We use you in the singular and plural.",
+            "uzRule": "'sen' va 'sizlar' — ikkalasi ham 'you'. Ingliz tilida farqi yo'q."
+          },
+          {
+            "pronoun": "they",
+            "enRule": "We use they for people, animals or things.",
+            "uzRule": "Ko'plik — odam, hayvon va narsa uchun bir xil 'they'."
+          }
         ],
         "noteEn": "We always write I with a capital letter.",
         "noteUz": "MUHIM: 'I' (men) HAR DOIM katta harf bilan yoziladi — gap o'rtasida bo'lsa ham. Bu o'zbek tilida yo'q qoida, shuning uchun eng ko'p unutiladi.",
@@ -37,14 +74,70 @@
       "rule": {
         "explanationUz": "'to be' — 'bo'lmoq' fe'li. Egaga qarab 3 xil shaklga kiradi: am / is / are.",
         "table": [
-          { "subject": "I", "affLong": "I am", "affShort": "I'm", "interrogative": "Am I?", "negLong": "I am not", "negShort": "I'm not" },
-          { "subject": "you", "affLong": "you are", "affShort": "you're", "interrogative": "Are you?", "negLong": "you are not", "negShort": "you aren't" },
-          { "subject": "he", "affLong": "he is", "affShort": "he's", "interrogative": "Is he?", "negLong": "he is not", "negShort": "he isn't" },
-          { "subject": "she", "affLong": "she is", "affShort": "she's", "interrogative": "Is she?", "negLong": "she is not", "negShort": "she isn't" },
-          { "subject": "it", "affLong": "it is", "affShort": "it's", "interrogative": "Is it?", "negLong": "it is not", "negShort": "it isn't" },
-          { "subject": "we", "affLong": "we are", "affShort": "we're", "interrogative": "Are we?", "negLong": "we are not", "negShort": "we aren't" },
-          { "subject": "you", "affLong": "you are", "affShort": "you're", "interrogative": "Are you?", "negLong": "you are not", "negShort": "you aren't" },
-          { "subject": "they", "affLong": "they are", "affShort": "they're", "interrogative": "Are they?", "negLong": "they are not", "negShort": "they aren't" }
+          {
+            "subject": "I",
+            "affLong": "I am",
+            "affShort": "I'm",
+            "interrogative": "Am I?",
+            "negLong": "I am not",
+            "negShort": "I'm not"
+          },
+          {
+            "subject": "you",
+            "affLong": "you are",
+            "affShort": "you're",
+            "interrogative": "Are you?",
+            "negLong": "you are not",
+            "negShort": "you aren't"
+          },
+          {
+            "subject": "he",
+            "affLong": "he is",
+            "affShort": "he's",
+            "interrogative": "Is he?",
+            "negLong": "he is not",
+            "negShort": "he isn't"
+          },
+          {
+            "subject": "she",
+            "affLong": "she is",
+            "affShort": "she's",
+            "interrogative": "Is she?",
+            "negLong": "she is not",
+            "negShort": "she isn't"
+          },
+          {
+            "subject": "it",
+            "affLong": "it is",
+            "affShort": "it's",
+            "interrogative": "Is it?",
+            "negLong": "it is not",
+            "negShort": "it isn't"
+          },
+          {
+            "subject": "we",
+            "affLong": "we are",
+            "affShort": "we're",
+            "interrogative": "Are we?",
+            "negLong": "we are not",
+            "negShort": "we aren't"
+          },
+          {
+            "subject": "you",
+            "affLong": "you are",
+            "affShort": "you're",
+            "interrogative": "Are you?",
+            "negLong": "you are not",
+            "negShort": "you aren't"
+          },
+          {
+            "subject": "they",
+            "affLong": "they are",
+            "affShort": "they're",
+            "interrogative": "Are they?",
+            "negLong": "they are not",
+            "negShort": "they aren't"
+          }
         ],
         "noteEn": "We use short forms in spoken English or in informal written English.",
         "noteUz": "Qisqa shakl (I'm, he's) og'zaki nutqda va norasmiy yozuvda ishlatiladi. Rasmiy hujjatda to'liq shakl yoziladi."
@@ -57,10 +150,30 @@
       "rule": {
         "explanationUz": "So'roqqa 'ha/yo'q' deb javob berganda butun gapni takrorlamaymiz — qisqa javob ishlatiladi.",
         "examples": [
-          { "q": "Are you a doctor?", "qUz": "Siz shifokormisiz?", "yes": "Yes, I am.", "no": "No, I'm not." },
-          { "q": "Are you from Austria?", "qUz": "Siz Avstriyadanmisiz?", "yes": "Yes, we are.", "no": "No, we aren't." },
-          { "q": "Is he/she/it from China?", "qUz": "U Xitoydanmi?", "yes": "Yes, he/she/it is.", "no": "No, he/she/it isn't." },
-          { "q": "Are they Polish?", "qUz": "Ular polyakmi?", "yes": "Yes, they are.", "no": "No, they aren't." }
+          {
+            "q": "Are you a doctor?",
+            "qUz": "Siz shifokormisiz?",
+            "yes": "Yes, I am.",
+            "no": "No, I'm not."
+          },
+          {
+            "q": "Are you from Austria?",
+            "qUz": "Siz Avstriyadanmisiz?",
+            "yes": "Yes, we are.",
+            "no": "No, we aren't."
+          },
+          {
+            "q": "Is he/she/it from China?",
+            "qUz": "U Xitoydanmi?",
+            "yes": "Yes, he/she/it is.",
+            "no": "No, he/she/it isn't."
+          },
+          {
+            "q": "Are they Polish?",
+            "qUz": "Ular polyakmi?",
+            "yes": "Yes, they are.",
+            "no": "No, they aren't."
+          }
         ],
         "keyRules": [
           {
@@ -90,20 +203,34 @@
           {
             "enRule": "We use a/an before singular nouns.",
             "uzRule": "a/an faqat BIRLIKDAGI ot oldidan qo'yiladi.",
-            "examples": ["a teacher", "an actor"],
-            "examplesUz": ["o'qituvchi", "aktyor"]
+            "examples": [
+              "a teacher",
+              "an actor"
+            ],
+            "examplesUz": [
+              "o'qituvchi",
+              "aktyor"
+            ]
           },
           {
             "enRule": "We use a before consonant sounds (/b/, /k/, /d/ etc).",
             "uzRule": "UNDOSH tovush oldidan — a.",
-            "examples": ["He's a dancer."],
-            "examplesUz": ["U raqqos."]
+            "examples": [
+              "He's a dancer."
+            ],
+            "examplesUz": [
+              "U raqqos."
+            ]
           },
           {
             "enRule": "We use an before vowel sounds (/a/, /e/, /o/ etc).",
             "uzRule": "UNLI tovush oldidan — an.",
-            "examples": ["It's an apple."],
-            "examplesUz": ["Bu olma."]
+            "examples": [
+              "It's an apple."
+            ],
+            "examplesUz": [
+              "Bu olma."
+            ]
           }
         ],
         "warningUz": "DIQQAT: qoida HARFGA emas, TOVUSHGA bog'liq.\n• an hour — 'h' yozilgan, lekin o'qilmaydi (aur) → unli tovush → an\n• a university — 'u' yozilgan, lekin 'yu' deb o'qiladi → undosh tovush → a\nShuning uchun so'zni ko'rib emas, ESHITIB tanlang.",
@@ -119,22 +246,82 @@
         "ruleUz": "Qisqartma (apostrof tushgan harf o'rnida)",
         "explanationUz": "To'liq shakldan qisqa shakl yasash — apostrof tushib qolgan harfni bildiradi.",
         "items": [
-          { "base": "I am", "baseUz": "men ...man", "derived": "I'm", "derivedUz": "", "note": "a tushdi" },
-          { "base": "you are", "baseUz": "sen ...san", "derived": "you're", "derivedUz": "", "note": "a tushdi" },
-          { "base": "she is", "baseUz": "u ...", "derived": "she's", "derivedUz": "", "note": "i tushdi" },
-          { "base": "is not", "baseUz": "...emas", "derived": "isn't", "derivedUz": "", "note": "o tushdi" },
-          { "base": "are not", "baseUz": "...emas", "derived": "aren't", "derivedUz": "", "note": "o tushdi" }
+          {
+            "base": "I am",
+            "baseUz": "men ...man",
+            "derived": "I'm",
+            "derivedUz": "",
+            "note": "a tushdi"
+          },
+          {
+            "base": "you are",
+            "baseUz": "sen ...san",
+            "derived": "you're",
+            "derivedUz": "",
+            "note": "a tushdi"
+          },
+          {
+            "base": "she is",
+            "baseUz": "u ...",
+            "derived": "she's",
+            "derivedUz": "",
+            "note": "i tushdi"
+          },
+          {
+            "base": "is not",
+            "baseUz": "...emas",
+            "derived": "isn't",
+            "derivedUz": "",
+            "note": "o tushdi"
+          },
+          {
+            "base": "are not",
+            "baseUz": "...emas",
+            "derived": "aren't",
+            "derivedUz": "",
+            "note": "o tushdi"
+          }
         ]
       },
       {
         "ruleUz": "-er / -or / -ist → kasb egasi",
         "explanationUz": "Bu sahifadagi kasb nomlari shu qo'shimchalar bilan yasalgan. Artikl tanlashda foydali: 'a' yoki 'an' — birinchi TOVUSHGA qarang.",
         "items": [
-          { "base": "teach", "baseUz": "o'rgatmoq", "derived": "a teacher", "derivedUz": "o'qituvchi", "note": "t — undosh → a" },
-          { "base": "act", "baseUz": "rol o'ynamoq", "derived": "an actor", "derivedUz": "aktyor", "note": "a — unli → an" },
-          { "base": "dance", "baseUz": "raqs", "derived": "a dancer", "derivedUz": "raqqos", "note": "d — undosh → a" },
-          { "base": "art", "baseUz": "san'at", "derived": "an artist", "derivedUz": "rassom", "note": "a — unli → an" },
-          { "base": "engine", "baseUz": "dvigatel", "derived": "an engineer", "derivedUz": "muhandis", "note": "e — unli → an" }
+          {
+            "base": "teach",
+            "baseUz": "o'rgatmoq",
+            "derived": "a teacher",
+            "derivedUz": "o'qituvchi",
+            "note": "t — undosh → a"
+          },
+          {
+            "base": "act",
+            "baseUz": "rol o'ynamoq",
+            "derived": "an actor",
+            "derivedUz": "aktyor",
+            "note": "a — unli → an"
+          },
+          {
+            "base": "dance",
+            "baseUz": "raqs",
+            "derived": "a dancer",
+            "derivedUz": "raqqos",
+            "note": "d — undosh → a"
+          },
+          {
+            "base": "art",
+            "baseUz": "san'at",
+            "derived": "an artist",
+            "derivedUz": "rassom",
+            "note": "a — unli → an"
+          },
+          {
+            "base": "engine",
+            "baseUz": "dvigatel",
+            "derived": "an engineer",
+            "derivedUz": "muhandis",
+            "note": "e — unli → an"
+          }
         ]
       }
     ]
@@ -158,22 +345,73 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "pronoun", "uz": "olmosh" },
-    { "en": "singular", "uz": "birlik" },
-    { "en": "plural", "uz": "ko'plik" },
-    { "en": "affirmative", "uz": "tasdiq (gap)" },
-    { "en": "negative", "uz": "inkor (gap)" },
-    { "en": "interrogative", "uz": "so'roq (gap)" },
-    { "en": "long form", "uz": "to'liq shakl" },
-    { "en": "short form", "uz": "qisqa shakl" },
-    { "en": "consonant", "uz": "undosh tovush" },
-    { "en": "vowel", "uz": "unli tovush" },
-    { "en": "doctor", "uz": "shifokor" },
-    { "en": "actor", "uz": "aktyor" },
-    { "en": "apple", "uz": "olma" },
-    { "en": "Austria", "uz": "Avstriya" },
-    { "en": "China", "uz": "Xitoy" },
-    { "en": "Polish", "uz": "polyak" },
-    { "en": "Sweden", "uz": "Shvetsiya" }
+    {
+      "en": "pronoun",
+      "uz": "olmosh"
+    },
+    {
+      "en": "singular",
+      "uz": "birlik"
+    },
+    {
+      "en": "plural",
+      "uz": "ko'plik"
+    },
+    {
+      "en": "affirmative",
+      "uz": "tasdiq (gap)"
+    },
+    {
+      "en": "negative",
+      "uz": "inkor (gap)"
+    },
+    {
+      "en": "interrogative",
+      "uz": "so'roq (gap)"
+    },
+    {
+      "en": "long form",
+      "uz": "to'liq shakl"
+    },
+    {
+      "en": "short form",
+      "uz": "qisqa shakl"
+    },
+    {
+      "en": "consonant",
+      "uz": "undosh tovush"
+    },
+    {
+      "en": "vowel",
+      "uz": "unli tovush"
+    },
+    {
+      "en": "doctor",
+      "uz": "shifokor"
+    },
+    {
+      "en": "actor",
+      "uz": "aktyor"
+    },
+    {
+      "en": "apple",
+      "uz": "olma"
+    },
+    {
+      "en": "Austria",
+      "uz": "Avstriya"
+    },
+    {
+      "en": "China",
+      "uz": "Xitoy"
+    },
+    {
+      "en": "Polish",
+      "uz": "polyak"
+    },
+    {
+      "en": "Sweden",
+      "uz": "Shvetsiya"
+    }
   ]
 }

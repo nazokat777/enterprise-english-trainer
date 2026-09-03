@@ -4,10 +4,19 @@
   "bookPage": 11,
   "unit": 2,
   "unitTitle": "Have got - Can",
+  "module": 1,
   "pageType": "revision",
   "pairsWith": {
-    "coursebook": [8, 10, 13, 15],
-    "workbook": [6, 10],
+    "coursebook": [
+      8,
+      10,
+      13,
+      15
+    ],
+    "workbook": [
+      6,
+      10
+    ],
     "noteUz": "TAKRORLASH sahifasi — Unit 1 va Unit 2 ning butun grammatikasi: to be, a/an, olmoshlar, have got, can."
   },
   "sections": [
@@ -23,26 +32,127 @@
           "instructionUz": "Xatolarni toping va to'g'rilang.",
           "explanationUz": "Bu mashq ENG FOYDALI turlardan biri: xatoni ko'rish — uni qilmaslikning\neng yaxshi yo'li.\n\nUnit 1–2 dagi 6 ta asosiy xato turi:\n  1) have/has aralashtirish  (he HAVE got → he HAS got)\n  2) be/have got aralashtirish (Where HAS he from → Where IS he from)\n  3) is/are mos kelmasligi   (The Pyramids IS → ARE)\n  4) a/an noto'g'ri          (a actor → AN actor)\n  5) can dan keyin -s        (can playS → can PLAY)\n  6) qisqa javob noto'g'ri   (No, I can → No, I CAN'T)",
           "items": [
-            { "n": 1, "textEn": "He have got a beard.", "answer": "has", "given": true, "whyUz": "he → HAS got" },
-            { "n": 2, "textEn": "They hasn't got a car.", "answer": "haven't", "whyUz": "they → HAVEN'T got" },
-            { "n": 3, "textEn": "Where has Fergus from?", "answer": "is", "whyUz": "Joy so'ralganda 'be' ishlatiladi: 'Where IS he from?'" },
-            { "n": 4, "textEn": "Can't you close the window, please?", "answer": "Can", "whyUz": "Muloyim iltimos INKOR shaklda bo'lmaydi: 'CAN you close...?'" },
-            { "n": 5, "textEn": "Are she from Spain?", "answer": "Is", "whyUz": "she → IS" },
-            { "n": 6, "textEn": "My mother have got brown eyes.", "answer": "has", "whyUz": "mother (she) → HAS got" },
-            { "n": 7, "textEn": "The Pyramids is in Cairo.", "answer": "are", "whyUz": "Pyramids — KO'PLIK → ARE" },
-            { "n": 8, "textEn": "Our neighbours hasn't got a car.", "answer": "haven't", "whyUz": "neighbours — ko'plik → HAVEN'T got" },
-            { "n": 9, "textEn": "My father is a actor.", "answer": "an", "whyUz": "actor — 'a' unli tovush → AN" },
-            { "n": 10, "textEn": "Have she got a sister?", "answer": "Has", "whyUz": "she → HAS" },
-            { "n": 11, "textEn": "How old is you?", "answer": "are", "whyUz": "you → ARE" },
-            { "n": 12, "textEn": "He have got two bicycles.", "answer": "has", "whyUz": "he → HAS got" },
-            { "n": 13, "textEn": "She can plays the guitar.", "answer": "play", "whyUz": "'can' dan keyin fe'l ASOS shaklida — -S QO'SHILMAYDI" },
-            { "n": 14, "textEn": "Has you got a pencil, please?", "answer": "Have", "whyUz": "you → HAVE" },
-            { "n": 15, "textEn": "His favourite sport are football.", "answer": "is", "whyUz": "'sport' — birlik → IS" },
-            { "n": 16, "textEn": "What can Tim does?", "answer": "do", "whyUz": "'can' dan keyin asos shakli — 'do' (does emas)" },
-            { "n": 17, "textEn": "Has Bob a musician?", "answer": "Is", "whyUz": "Kasb aytilganda 'be' ishlatiladi: 'IS Bob a musician?'" },
-            { "n": 18, "textEn": "Can you see a car? No, I can.", "answer": "can't", "whyUz": "Inkor javob → CAN'T. 'No, I can' ma'nosiz." },
-            { "n": 19, "textEn": "Has Mario and Peter got brown eyes?", "answer": "Have", "whyUz": "Ikki kishi → HAVE" },
-            { "n": 20, "textEn": "Mary can't speaks Italian.", "answer": "speak", "whyUz": "'can't' dan keyin ham asos shakli — SPEAK" }
+            {
+              "n": 1,
+              "textEn": "He have got a beard.",
+              "answer": "has",
+              "given": true,
+              "whyUz": "he → HAS got"
+            },
+            {
+              "n": 2,
+              "textEn": "They hasn't got a car.",
+              "answer": "haven't",
+              "whyUz": "they → HAVEN'T got"
+            },
+            {
+              "n": 3,
+              "textEn": "Where has Fergus from?",
+              "answer": "is",
+              "whyUz": "Joy so'ralganda 'be' ishlatiladi: 'Where IS he from?'"
+            },
+            {
+              "n": 4,
+              "textEn": "Can't you close the window, please?",
+              "answer": "Can",
+              "whyUz": "Muloyim iltimos INKOR shaklda bo'lmaydi: 'CAN you close...?'"
+            },
+            {
+              "n": 5,
+              "textEn": "Are she from Spain?",
+              "answer": "Is",
+              "whyUz": "she → IS"
+            },
+            {
+              "n": 6,
+              "textEn": "My mother have got brown eyes.",
+              "answer": "has",
+              "whyUz": "mother (she) → HAS got"
+            },
+            {
+              "n": 7,
+              "textEn": "The Pyramids is in Cairo.",
+              "answer": "are",
+              "whyUz": "Pyramids — KO'PLIK → ARE"
+            },
+            {
+              "n": 8,
+              "textEn": "Our neighbours hasn't got a car.",
+              "answer": "haven't",
+              "whyUz": "neighbours — ko'plik → HAVEN'T got"
+            },
+            {
+              "n": 9,
+              "textEn": "My father is a actor.",
+              "answer": "an",
+              "whyUz": "actor — 'a' unli tovush → AN"
+            },
+            {
+              "n": 10,
+              "textEn": "Have she got a sister?",
+              "answer": "Has",
+              "whyUz": "she → HAS"
+            },
+            {
+              "n": 11,
+              "textEn": "How old is you?",
+              "answer": "are",
+              "whyUz": "you → ARE"
+            },
+            {
+              "n": 12,
+              "textEn": "He have got two bicycles.",
+              "answer": "has",
+              "whyUz": "he → HAS got"
+            },
+            {
+              "n": 13,
+              "textEn": "She can plays the guitar.",
+              "answer": "play",
+              "whyUz": "'can' dan keyin fe'l ASOS shaklida — -S QO'SHILMAYDI"
+            },
+            {
+              "n": 14,
+              "textEn": "Has you got a pencil, please?",
+              "answer": "Have",
+              "whyUz": "you → HAVE"
+            },
+            {
+              "n": 15,
+              "textEn": "His favourite sport are football.",
+              "answer": "is",
+              "whyUz": "'sport' — birlik → IS"
+            },
+            {
+              "n": 16,
+              "textEn": "What can Tim does?",
+              "answer": "do",
+              "whyUz": "'can' dan keyin asos shakli — 'do' (does emas)"
+            },
+            {
+              "n": 17,
+              "textEn": "Has Bob a musician?",
+              "answer": "Is",
+              "whyUz": "Kasb aytilganda 'be' ishlatiladi: 'IS Bob a musician?'"
+            },
+            {
+              "n": 18,
+              "textEn": "Can you see a car? No, I can.",
+              "answer": "can't",
+              "whyUz": "Inkor javob → CAN'T. 'No, I can' ma'nosiz."
+            },
+            {
+              "n": 19,
+              "textEn": "Has Mario and Peter got brown eyes?",
+              "answer": "Have",
+              "whyUz": "Ikki kishi → HAVE"
+            },
+            {
+              "n": 20,
+              "textEn": "Mary can't speaks Italian.",
+              "answer": "speak",
+              "whyUz": "'can't' dan keyin ham asos shakli — SPEAK"
+            }
           ]
         },
         {
@@ -52,28 +162,161 @@
           "instructionUz": "a yoki an ni qo'ying.",
           "explanationUz": "Qoida: birinchi TOVUSH unli bo'lsa AN, undosh bo'lsa A.\n\nBu betdagi tuzoqlar:\n  • an umbrella — 'u' bu yerda unli tovush\n  • an hour     — 'h' o'qilmaydi (bu betda yo'q, lekin bilib qo'ying)\n  • an Italian school — 'I' unli\n  • a large house, a helicopter — undosh\n\nDIQQAT: 'ice cream' — 'ai' unli → AN ice cream.",
           "items": [
-            { "n": 1, "word": "doctor", "wordUz": "shifokor", "answer": "a", "whyUz": "d — undosh", "given": true },
-            { "n": 2, "word": "ice cream", "wordUz": "muzqaymoq", "answer": "an", "whyUz": "i — unli" },
-            { "n": 3, "word": "postman", "wordUz": "pochtachi", "answer": "a", "whyUz": "p — undosh" },
-            { "n": 4, "word": "teacher", "wordUz": "o'qituvchi", "answer": "a", "whyUz": "t — undosh" },
-            { "n": 5, "word": "dancer", "wordUz": "raqqos", "answer": "a", "whyUz": "d — undosh" },
-            { "n": 6, "word": "orange", "wordUz": "apelsin", "answer": "an", "whyUz": "o — unli" },
-            { "n": 7, "word": "apple", "wordUz": "olma", "answer": "an", "whyUz": "a — unli" },
-            { "n": 8, "word": "umbrella", "wordUz": "soyabon", "answer": "an", "whyUz": "u — bu yerda unli tovush" },
-            { "n": 9, "word": "large house", "wordUz": "katta uy", "answer": "a", "whyUz": "l — undosh (birinchi SO'ZGA qarang)" },
-            { "n": 10, "word": "taxi driver", "wordUz": "taksi haydovchisi", "answer": "a", "whyUz": "t — undosh" },
-            { "n": 11, "word": "hamburger", "wordUz": "gamburger", "answer": "a", "whyUz": "h o'qiladi → undosh" },
-            { "n": 12, "word": "artist", "wordUz": "rassom", "answer": "an", "whyUz": "a — unli" },
-            { "n": 13, "word": "engineer", "wordUz": "muhandis", "answer": "an", "whyUz": "e — unli" },
-            { "n": 14, "word": "astronaut", "wordUz": "kosmonavt", "answer": "an", "whyUz": "a — unli" },
-            { "n": 15, "word": "small nose", "wordUz": "kichik burun", "answer": "a", "whyUz": "s — undosh" },
-            { "n": 16, "word": "yellowish complexion", "wordUz": "sarg'ish yuz rangi", "answer": "a", "whyUz": "y — undosh tovush" },
-            { "n": 17, "word": "student", "wordUz": "talaba", "answer": "a", "whyUz": "s — undosh" },
-            { "n": 18, "word": "Italian school", "wordUz": "italyan maktabi", "answer": "an", "whyUz": "I — unli" },
-            { "n": 19, "word": "elephant", "wordUz": "fil", "answer": "an", "whyUz": "e — unli" },
-            { "n": 20, "word": "helicopter", "wordUz": "vertolyot", "answer": "a", "whyUz": "h o'qiladi → undosh" },
-            { "n": 21, "word": "beard", "wordUz": "soqol", "answer": "a", "whyUz": "b — undosh" },
-            { "n": 22, "word": "moustache", "wordUz": "mo'ylov", "answer": "a", "whyUz": "m — undosh" }
+            {
+              "n": 1,
+              "word": "doctor",
+              "wordUz": "shifokor",
+              "answer": "a",
+              "whyUz": "d — undosh",
+              "given": true
+            },
+            {
+              "n": 2,
+              "word": "ice cream",
+              "wordUz": "muzqaymoq",
+              "answer": "an",
+              "whyUz": "i — unli"
+            },
+            {
+              "n": 3,
+              "word": "postman",
+              "wordUz": "pochtachi",
+              "answer": "a",
+              "whyUz": "p — undosh"
+            },
+            {
+              "n": 4,
+              "word": "teacher",
+              "wordUz": "o'qituvchi",
+              "answer": "a",
+              "whyUz": "t — undosh"
+            },
+            {
+              "n": 5,
+              "word": "dancer",
+              "wordUz": "raqqos",
+              "answer": "a",
+              "whyUz": "d — undosh"
+            },
+            {
+              "n": 6,
+              "word": "orange",
+              "wordUz": "apelsin",
+              "answer": "an",
+              "whyUz": "o — unli"
+            },
+            {
+              "n": 7,
+              "word": "apple",
+              "wordUz": "olma",
+              "answer": "an",
+              "whyUz": "a — unli"
+            },
+            {
+              "n": 8,
+              "word": "umbrella",
+              "wordUz": "soyabon",
+              "answer": "an",
+              "whyUz": "u — bu yerda unli tovush"
+            },
+            {
+              "n": 9,
+              "word": "large house",
+              "wordUz": "katta uy",
+              "answer": "a",
+              "whyUz": "l — undosh (birinchi SO'ZGA qarang)"
+            },
+            {
+              "n": 10,
+              "word": "taxi driver",
+              "wordUz": "taksi haydovchisi",
+              "answer": "a",
+              "whyUz": "t — undosh"
+            },
+            {
+              "n": 11,
+              "word": "hamburger",
+              "wordUz": "gamburger",
+              "answer": "a",
+              "whyUz": "h o'qiladi → undosh"
+            },
+            {
+              "n": 12,
+              "word": "artist",
+              "wordUz": "rassom",
+              "answer": "an",
+              "whyUz": "a — unli"
+            },
+            {
+              "n": 13,
+              "word": "engineer",
+              "wordUz": "muhandis",
+              "answer": "an",
+              "whyUz": "e — unli"
+            },
+            {
+              "n": 14,
+              "word": "astronaut",
+              "wordUz": "kosmonavt",
+              "answer": "an",
+              "whyUz": "a — unli"
+            },
+            {
+              "n": 15,
+              "word": "small nose",
+              "wordUz": "kichik burun",
+              "answer": "a",
+              "whyUz": "s — undosh"
+            },
+            {
+              "n": 16,
+              "word": "yellowish complexion",
+              "wordUz": "sarg'ish yuz rangi",
+              "answer": "a",
+              "whyUz": "y — undosh tovush"
+            },
+            {
+              "n": 17,
+              "word": "student",
+              "wordUz": "talaba",
+              "answer": "a",
+              "whyUz": "s — undosh"
+            },
+            {
+              "n": 18,
+              "word": "Italian school",
+              "wordUz": "italyan maktabi",
+              "answer": "an",
+              "whyUz": "I — unli"
+            },
+            {
+              "n": 19,
+              "word": "elephant",
+              "wordUz": "fil",
+              "answer": "an",
+              "whyUz": "e — unli"
+            },
+            {
+              "n": 20,
+              "word": "helicopter",
+              "wordUz": "vertolyot",
+              "answer": "a",
+              "whyUz": "h o'qiladi → undosh"
+            },
+            {
+              "n": 21,
+              "word": "beard",
+              "wordUz": "soqol",
+              "answer": "a",
+              "whyUz": "b — undosh"
+            },
+            {
+              "n": 22,
+              "word": "moustache",
+              "wordUz": "mo'ylov",
+              "answer": "a",
+              "whyUz": "m — undosh"
+            }
           ]
         },
         {
@@ -86,48 +329,97 @@
             {
               "n": 1,
               "lines": [
-                { "who": "A", "textEn": "Who are ___ ?", "answer": "you", "given": true },
-                { "who": "B", "textEn": "I'm Tony.", "given": true }
+                {
+                  "who": "A",
+                  "textEn": "Who are ___ ?",
+                  "answer": "you",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "I'm Tony.",
+                  "given": true
+                }
               ],
               "whyUz": "Javob 'I'm' — demak savol 'you' haqida."
             },
             {
               "n": 2,
               "lines": [
-                { "who": "A", "textEn": "Who is ___ ?", "answer": "she" },
-                { "who": "B", "textEn": "My sister, Sarah.", "given": true }
+                {
+                  "who": "A",
+                  "textEn": "Who is ___ ?",
+                  "answer": "she"
+                },
+                {
+                  "who": "B",
+                  "textEn": "My sister, Sarah.",
+                  "given": true
+                }
               ],
               "whyUz": "Sarah — ayol → she."
             },
             {
               "n": 3,
               "lines": [
-                { "who": "A", "textEn": "Who is ___ ?", "answer": "he" },
-                { "who": "B", "textEn": "My uncle, Bob.", "given": true }
+                {
+                  "who": "A",
+                  "textEn": "Who is ___ ?",
+                  "answer": "he"
+                },
+                {
+                  "who": "B",
+                  "textEn": "My uncle, Bob.",
+                  "given": true
+                }
               ],
               "whyUz": "Bob — erkak → he."
             },
             {
               "n": 4,
               "lines": [
-                { "who": "A", "textEn": "Where are Steve and Mary?", "given": true },
-                { "who": "B", "textEn": "___ are in the kitchen.", "answer": "They" }
+                {
+                  "who": "A",
+                  "textEn": "Where are Steve and Mary?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "___ are in the kitchen.",
+                  "answer": "They"
+                }
               ],
               "whyUz": "Ikki kishi → They. Gap boshida katta harf."
             },
             {
               "n": 5,
               "lines": [
-                { "who": "A", "textEn": "What is ___ ?", "answer": "it" },
-                { "who": "B", "textEn": "A letter from my friend.", "given": true }
+                {
+                  "who": "A",
+                  "textEn": "What is ___ ?",
+                  "answer": "it"
+                },
+                {
+                  "who": "B",
+                  "textEn": "A letter from my friend.",
+                  "given": true
+                }
               ],
               "whyUz": "Xat — narsa → it. Narsa uchun 'What', odam uchun 'Who'."
             },
             {
               "n": 6,
               "lines": [
-                { "who": "A", "textEn": "Are ___ from Canada?", "answer": "you" },
-                { "who": "B", "textEn": "No, we're from England.", "given": true }
+                {
+                  "who": "A",
+                  "textEn": "Are ___ from Canada?",
+                  "answer": "you"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, we're from England.",
+                  "given": true
+                }
               ],
               "whyUz": "Javob 'we're' — demak savol 'you' (sizlar) haqida."
             }
@@ -161,16 +453,76 @@
             }
           ],
           "questions": [
-            { "ref": "1", "en": "Is he 35 years old?", "uz": "U 35 yoshdami?", "answerEn": "No, he isn't.", "answerUz": "Yo'q. (U 45 yoshda.)" },
-            { "ref": "2", "en": "Is he English?", "uz": "U inglizmi?", "answerEn": "No, he isn't. He's American.", "answerUz": "Yo'q. U amerikalik." },
-            { "ref": "3", "en": "Is he single?", "uz": "U bo'ydoqmi?", "answerEn": "No, he isn't. He's married.", "answerUz": "Yo'q. U uylangan." },
-            { "ref": "4", "en": "Has he got short hair?", "uz": "Uning sochi kaltami?", "answerEn": "Yes, he has.", "answerUz": "Ha." },
-            { "ref": "5", "en": "Has he got a moustache?", "uz": "Uning mo'ylovi bormi?", "answerEn": "No, he hasn't.", "answerUz": "Yo'q. (Matnda aytilmagan.)" },
-            { "ref": "6", "en": "Is he poor?", "uz": "U kambag'almi?", "answerEn": "No, he isn't. He's very rich.", "answerUz": "Yo'q. U juda boy." },
-            { "ref": "7", "en": "Has he got a house in the city?", "uz": "Uning shaharda uyi bormi?", "answerEn": "No, he hasn't. He's got a house in the country.", "answerUz": "Yo'q. Uning uyi qishloqda." },
-            { "ref": "8", "en": "Has he got a dog?", "uz": "Uning iti bormi?", "answerEn": "No, he hasn't.", "answerUz": "Yo'q. (Matnda it haqida aytilmagan.)" },
-            { "ref": "9", "en": "Can he drive?", "uz": "U hayday oladimi?", "answerEn": "Yes, he can. He's got a car.", "answerUz": "Ha. Uning mashinasi bor." },
-            { "ref": "10", "en": "Can he ski?", "uz": "U chang'i ucha oladimi?", "answerEn": "Yes, he can. He can ski very well.", "answerUz": "Ha. U juda yaxshi chang'i uchadi." }
+            {
+              "ref": "1",
+              "en": "Is he 35 years old?",
+              "uz": "U 35 yoshdami?",
+              "answerEn": "No, he isn't.",
+              "answerUz": "Yo'q. (U 45 yoshda.)"
+            },
+            {
+              "ref": "2",
+              "en": "Is he English?",
+              "uz": "U inglizmi?",
+              "answerEn": "No, he isn't. He's American.",
+              "answerUz": "Yo'q. U amerikalik."
+            },
+            {
+              "ref": "3",
+              "en": "Is he single?",
+              "uz": "U bo'ydoqmi?",
+              "answerEn": "No, he isn't. He's married.",
+              "answerUz": "Yo'q. U uylangan."
+            },
+            {
+              "ref": "4",
+              "en": "Has he got short hair?",
+              "uz": "Uning sochi kaltami?",
+              "answerEn": "Yes, he has.",
+              "answerUz": "Ha."
+            },
+            {
+              "ref": "5",
+              "en": "Has he got a moustache?",
+              "uz": "Uning mo'ylovi bormi?",
+              "answerEn": "No, he hasn't.",
+              "answerUz": "Yo'q. (Matnda aytilmagan.)"
+            },
+            {
+              "ref": "6",
+              "en": "Is he poor?",
+              "uz": "U kambag'almi?",
+              "answerEn": "No, he isn't. He's very rich.",
+              "answerUz": "Yo'q. U juda boy."
+            },
+            {
+              "ref": "7",
+              "en": "Has he got a house in the city?",
+              "uz": "Uning shaharda uyi bormi?",
+              "answerEn": "No, he hasn't. He's got a house in the country.",
+              "answerUz": "Yo'q. Uning uyi qishloqda."
+            },
+            {
+              "ref": "8",
+              "en": "Has he got a dog?",
+              "uz": "Uning iti bormi?",
+              "answerEn": "No, he hasn't.",
+              "answerUz": "Yo'q. (Matnda it haqida aytilmagan.)"
+            },
+            {
+              "ref": "9",
+              "en": "Can he drive?",
+              "uz": "U hayday oladimi?",
+              "answerEn": "Yes, he can. He's got a car.",
+              "answerUz": "Ha. Uning mashinasi bor."
+            },
+            {
+              "ref": "10",
+              "en": "Can he ski?",
+              "uz": "U chang'i ucha oladimi?",
+              "answerEn": "Yes, he can. He can ski very well.",
+              "answerUz": "Ha. U juda yaxshi chang'i uchadi."
+            }
           ]
         }
       ]
@@ -184,34 +536,130 @@
         "ruleUz": "Kasb qo'shimchalari — artikl bilan birga yodlang",
         "explanationUz": "Kasbni yodlaganda artiklini ham birga yodlang — shunda xato qilmaysiz.",
         "items": [
-          { "base": "doctor", "baseUz": "shifokor", "derived": "a doctor", "derivedUz": "", "note": "d — undosh" },
-          { "base": "postman", "baseUz": "pochtachi", "derived": "a postman", "derivedUz": "", "note": "p — undosh" },
-          { "base": "teacher", "baseUz": "o'qituvchi", "derived": "a teacher", "derivedUz": "", "note": "t — undosh" },
-          { "base": "artist", "baseUz": "rassom", "derived": "an artist", "derivedUz": "", "note": "a — unli" },
-          { "base": "engineer", "baseUz": "muhandis", "derived": "an engineer", "derivedUz": "", "note": "e — unli" },
-          { "base": "astronaut", "baseUz": "kosmonavt", "derived": "an astronaut", "derivedUz": "", "note": "a — unli" },
-          { "base": "actor", "baseUz": "aktyor", "derived": "an actor", "derivedUz": "", "note": "a — unli" },
-          { "base": "business", "baseUz": "biznes", "derived": "a businessman", "derivedUz": "tadbirkor", "note": "ko'pligi: businessmen" }
+          {
+            "base": "doctor",
+            "baseUz": "shifokor",
+            "derived": "a doctor",
+            "derivedUz": "",
+            "note": "d — undosh"
+          },
+          {
+            "base": "postman",
+            "baseUz": "pochtachi",
+            "derived": "a postman",
+            "derivedUz": "",
+            "note": "p — undosh"
+          },
+          {
+            "base": "teacher",
+            "baseUz": "o'qituvchi",
+            "derived": "a teacher",
+            "derivedUz": "",
+            "note": "t — undosh"
+          },
+          {
+            "base": "artist",
+            "baseUz": "rassom",
+            "derived": "an artist",
+            "derivedUz": "",
+            "note": "a — unli"
+          },
+          {
+            "base": "engineer",
+            "baseUz": "muhandis",
+            "derived": "an engineer",
+            "derivedUz": "",
+            "note": "e — unli"
+          },
+          {
+            "base": "astronaut",
+            "baseUz": "kosmonavt",
+            "derived": "an astronaut",
+            "derivedUz": "",
+            "note": "a — unli"
+          },
+          {
+            "base": "actor",
+            "baseUz": "aktyor",
+            "derived": "an actor",
+            "derivedUz": "",
+            "note": "a — unli"
+          },
+          {
+            "base": "business",
+            "baseUz": "biznes",
+            "derived": "a businessman",
+            "derivedUz": "tadbirkor",
+            "note": "ko'pligi: businessmen"
+          }
         ]
       },
       {
         "ruleUz": "Antonim juftlar (takrorlash matnidan)",
         "explanationUz": "Ex.10 dagi savollar antonimlar ustiga qurilgan — savol bir tomonni, matn boshqasini aytadi.",
         "items": [
-          { "base": "rich", "baseUz": "boy", "derived": "poor", "derivedUz": "kambag'al", "note": "Ex.10 №6" },
-          { "base": "married", "baseUz": "uylangan", "derived": "single", "derivedUz": "bo'ydoq", "note": "Ex.10 №3" },
-          { "base": "city", "baseUz": "shahar", "derived": "country(side)", "derivedUz": "qishloq", "note": "Ex.10 №7" },
-          { "base": "expensive", "baseUz": "qimmat", "derived": "cheap", "derivedUz": "arzon", "note": "" },
-          { "base": "fast", "baseUz": "tez", "derived": "slow", "derivedUz": "sekin", "note": "" }
+          {
+            "base": "rich",
+            "baseUz": "boy",
+            "derived": "poor",
+            "derivedUz": "kambag'al",
+            "note": "Ex.10 №6"
+          },
+          {
+            "base": "married",
+            "baseUz": "uylangan",
+            "derived": "single",
+            "derivedUz": "bo'ydoq",
+            "note": "Ex.10 №3"
+          },
+          {
+            "base": "city",
+            "baseUz": "shahar",
+            "derived": "country(side)",
+            "derivedUz": "qishloq",
+            "note": "Ex.10 №7"
+          },
+          {
+            "base": "expensive",
+            "baseUz": "qimmat",
+            "derived": "cheap",
+            "derivedUz": "arzon",
+            "note": ""
+          },
+          {
+            "base": "fast",
+            "baseUz": "tez",
+            "derived": "slow",
+            "derivedUz": "sekin",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "'country' — IKKI ma'noli so'z",
         "explanationUz": "Kontekstga qarab ma'nosi butunlay o'zgaradi. Matnda tez-tez chalkashtiriladi.",
         "items": [
-          { "base": "country", "baseUz": "", "derived": "a country", "derivedUz": "mamlakat", "note": "'Italy is a country'" },
-          { "base": "country", "baseUz": "", "derived": "the country", "derivedUz": "qishloq joy", "note": "'a house in the country'" },
-          { "base": "country", "baseUz": "", "derived": "countryside", "derivedUz": "qishloq manzarasi", "note": "aniqroq shakl" }
+          {
+            "base": "country",
+            "baseUz": "",
+            "derived": "a country",
+            "derivedUz": "mamlakat",
+            "note": "'Italy is a country'"
+          },
+          {
+            "base": "country",
+            "baseUz": "",
+            "derived": "the country",
+            "derivedUz": "qishloq joy",
+            "note": "'a house in the country'"
+          },
+          {
+            "base": "country",
+            "baseUz": "",
+            "derived": "countryside",
+            "derivedUz": "qishloq manzarasi",
+            "note": "aniqroq shakl"
+          }
         ]
       }
     ]
@@ -253,30 +701,105 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "to correct", "uz": "to'g'rilamoq" },
-    { "en": "mistake", "uz": "xato" },
-    { "en": "revision", "uz": "takrorlash" },
-    { "en": "neighbour", "uz": "qo'shni" },
-    { "en": "ice cream", "uz": "muzqaymoq" },
-    { "en": "umbrella", "uz": "soyabon" },
-    { "en": "hamburger", "uz": "gamburger" },
-    { "en": "elephant", "uz": "fil" },
-    { "en": "helicopter", "uz": "vertolyot" },
-    { "en": "kitchen", "uz": "oshxona" },
-    { "en": "letter", "uz": "xat" },
-    { "en": "uncle", "uz": "amaki, tog'a" },
-    { "en": "businessman", "uz": "tadbirkor" },
-    { "en": "rich", "uz": "boy" },
-    { "en": "poor", "uz": "kambag'al" },
-    { "en": "married", "uz": "uylangan" },
-    { "en": "single", "uz": "bo'ydoq" },
-    { "en": "children", "uz": "bolalar" },
-    { "en": "the country", "uz": "qishloq joy" },
-    { "en": "garden", "uz": "bog'" },
-    { "en": "swimming-pool", "uz": "basseyn" },
-    { "en": "expensive", "uz": "qimmat" },
-    { "en": "free time", "uz": "bo'sh vaqt" },
-    { "en": "to ski", "uz": "chang'i uchmoq" },
-    { "en": "to leave school", "uz": "maktabni tugatmoq" }
+    {
+      "en": "to correct",
+      "uz": "to'g'rilamoq"
+    },
+    {
+      "en": "mistake",
+      "uz": "xato"
+    },
+    {
+      "en": "revision",
+      "uz": "takrorlash"
+    },
+    {
+      "en": "neighbour",
+      "uz": "qo'shni"
+    },
+    {
+      "en": "ice cream",
+      "uz": "muzqaymoq"
+    },
+    {
+      "en": "umbrella",
+      "uz": "soyabon"
+    },
+    {
+      "en": "hamburger",
+      "uz": "gamburger"
+    },
+    {
+      "en": "elephant",
+      "uz": "fil"
+    },
+    {
+      "en": "helicopter",
+      "uz": "vertolyot"
+    },
+    {
+      "en": "kitchen",
+      "uz": "oshxona"
+    },
+    {
+      "en": "letter",
+      "uz": "xat"
+    },
+    {
+      "en": "uncle",
+      "uz": "amaki, tog'a"
+    },
+    {
+      "en": "businessman",
+      "uz": "tadbirkor"
+    },
+    {
+      "en": "rich",
+      "uz": "boy"
+    },
+    {
+      "en": "poor",
+      "uz": "kambag'al"
+    },
+    {
+      "en": "married",
+      "uz": "uylangan"
+    },
+    {
+      "en": "single",
+      "uz": "bo'ydoq"
+    },
+    {
+      "en": "children",
+      "uz": "bolalar"
+    },
+    {
+      "en": "the country",
+      "uz": "qishloq joy"
+    },
+    {
+      "en": "garden",
+      "uz": "bog'"
+    },
+    {
+      "en": "swimming-pool",
+      "uz": "basseyn"
+    },
+    {
+      "en": "expensive",
+      "uz": "qimmat"
+    },
+    {
+      "en": "free time",
+      "uz": "bo'sh vaqt"
+    },
+    {
+      "en": "to ski",
+      "uz": "chang'i uchmoq"
+    },
+    {
+      "en": "to leave school",
+      "uz": "maktabni tugatmoq"
+    }
   ]
 }

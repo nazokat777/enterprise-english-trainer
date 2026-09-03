@@ -4,10 +4,15 @@
   "bookPage": 5,
   "unit": 1,
   "unitTitle": "Subject Pronouns - The Verb \"to be\" - Indefinite Article A/An",
+  "module": 1,
   "pageType": "exercises",
   "pairsWith": {
-    "coursebook": [8],
-    "workbook": [6],
+    "coursebook": [
+      8
+    ],
+    "workbook": [
+      6
+    ],
     "noteUz": "Bu mashq sahifasi grammar 4-betdagi nazariyaga va coursebook 8-betdagi 'to be' jadvallariga tegishli."
   },
   "sections": [
@@ -23,18 +28,91 @@
           "instructionUz": "Rasmga qarab he, she, it yoki they yozing.",
           "explanationUz": "Olmoshni tanlash qoidasi:\n• Bitta erkak → he\n• Bitta ayol → she\n• Bitta narsa yoki hayvon → it\n• Bir nechta (odam, narsa, hayvon — farqi yo'q) → they\nRasmda nechta va nima borligiga qarang.",
           "items": [
-            { "n": 1, "picture": "gitara", "pictureEn": "a guitar", "answer": "it", "given": true, "whyUz": "Bitta narsa" },
-            { "n": 2, "picture": "raqs tushayotgan juftlik", "pictureEn": "a man and a woman dancing", "answer": "they", "whyUz": "Ikki kishi" },
-            { "n": 3, "picture": "ofitsiantka", "pictureEn": "a waitress", "answer": "she", "whyUz": "Bitta ayol" },
-            { "n": 4, "picture": "futbolchi", "pictureEn": "a footballer", "answer": "he", "whyUz": "Bitta erkak" },
-            { "n": 5, "picture": "kapalak", "pictureEn": "a butterfly", "answer": "it", "whyUz": "Hayvon (hasharot) — bitta" },
-            { "n": 6, "picture": "qo'l soati", "pictureEn": "a watch", "answer": "it", "whyUz": "Bitta narsa" },
-            { "n": 7, "picture": "chamadon ko'targan erkak", "pictureEn": "a porter with suitcases", "answer": "he", "whyUz": "Bitta erkak" },
-            { "n": 8, "picture": "ayol va erkak", "pictureEn": "a woman and a man", "answer": "they", "whyUz": "Ikki kishi" },
-            { "n": 9, "picture": "ikkita samolyot", "pictureEn": "two planes", "answer": "they", "whyUz": "Ko'plik narsa" },
-            { "n": 10, "picture": "kitoblar", "pictureEn": "books", "answer": "they", "whyUz": "Ko'plik narsa" },
-            { "n": 11, "picture": "ikkita mashina", "pictureEn": "two cars", "answer": "they", "whyUz": "Ko'plik narsa" },
-            { "n": 12, "picture": "ikkita erkak", "pictureEn": "two men", "answer": "they", "whyUz": "Ikki kishi" }
+            {
+              "n": 1,
+              "picture": "gitara",
+              "pictureEn": "a guitar",
+              "answer": "it",
+              "given": true,
+              "whyUz": "Bitta narsa"
+            },
+            {
+              "n": 2,
+              "picture": "raqs tushayotgan juftlik",
+              "pictureEn": "a man and a woman dancing",
+              "answer": "they",
+              "whyUz": "Ikki kishi"
+            },
+            {
+              "n": 3,
+              "picture": "ofitsiantka",
+              "pictureEn": "a waitress",
+              "answer": "she",
+              "whyUz": "Bitta ayol"
+            },
+            {
+              "n": 4,
+              "picture": "futbolchi",
+              "pictureEn": "a footballer",
+              "answer": "he",
+              "whyUz": "Bitta erkak"
+            },
+            {
+              "n": 5,
+              "picture": "kapalak",
+              "pictureEn": "a butterfly",
+              "answer": "it",
+              "whyUz": "Hayvon (hasharot) — bitta"
+            },
+            {
+              "n": 6,
+              "picture": "qo'l soati",
+              "pictureEn": "a watch",
+              "answer": "it",
+              "whyUz": "Bitta narsa"
+            },
+            {
+              "n": 7,
+              "picture": "chamadon ko'targan erkak",
+              "pictureEn": "a porter with suitcases",
+              "answer": "he",
+              "whyUz": "Bitta erkak"
+            },
+            {
+              "n": 8,
+              "picture": "ayol va erkak",
+              "pictureEn": "a woman and a man",
+              "answer": "they",
+              "whyUz": "Ikki kishi"
+            },
+            {
+              "n": 9,
+              "picture": "ikkita samolyot",
+              "pictureEn": "two planes",
+              "answer": "they",
+              "whyUz": "Ko'plik narsa"
+            },
+            {
+              "n": 10,
+              "picture": "kitoblar",
+              "pictureEn": "books",
+              "answer": "they",
+              "whyUz": "Ko'plik narsa"
+            },
+            {
+              "n": 11,
+              "picture": "ikkita mashina",
+              "pictureEn": "two cars",
+              "answer": "they",
+              "whyUz": "Ko'plik narsa"
+            },
+            {
+              "n": 12,
+              "picture": "ikkita erkak",
+              "pictureEn": "two men",
+              "answer": "they",
+              "whyUz": "Ikki kishi"
+            }
           ]
         },
         {
@@ -47,80 +125,160 @@
             {
               "n": 1,
               "lines": [
-                { "who": "A", "textEn": "How old are you?", "given": true },
-                { "who": "B", "textEn": "___ 'm 19 years old.", "answer": "I" }
+                {
+                  "who": "A",
+                  "textEn": "How old are you?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "___ 'm 19 years old.",
+                  "answer": "I"
+                }
               ],
               "whyUz": "''m' faqat 'I' bilan ishlatiladi."
             },
             {
               "n": 2,
               "lines": [
-                { "who": "A", "textEn": "Who is ___ ?", "answer": "she" },
-                { "who": "B", "textEn": "___ is my friend, Anna.", "answer": "She" }
+                {
+                  "who": "A",
+                  "textEn": "Who is ___ ?",
+                  "answer": "she"
+                },
+                {
+                  "who": "B",
+                  "textEn": "___ is my friend, Anna.",
+                  "answer": "She"
+                }
               ],
               "whyUz": "Javobda 'Anna' — ayol ismi, demak she."
             },
             {
               "n": 3,
               "lines": [
-                { "who": "A", "textEn": "Where is George?", "given": true },
-                { "who": "B", "textEn": "___ 's at school.", "answer": "He" }
+                {
+                  "who": "A",
+                  "textEn": "Where is George?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "___ 's at school.",
+                  "answer": "He"
+                }
               ],
               "whyUz": "George — erkak ismi → He."
             },
             {
               "n": 4,
               "lines": [
-                { "who": "A", "textEn": "Are Julie and Maria sisters?", "given": true },
-                { "who": "B", "textEn": "Yes, ___ are.", "answer": "they" }
+                {
+                  "who": "A",
+                  "textEn": "Are Julie and Maria sisters?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "Yes, ___ are.",
+                  "answer": "they"
+                }
               ],
               "whyUz": "Ikki kishi → they. 'are' ham buni tasdiqlaydi."
             },
             {
               "n": 5,
               "lines": [
-                { "who": "A", "textEn": "Is this your book?", "given": true },
-                { "who": "B", "textEn": "Yes, ___ is.", "answer": "it" }
+                {
+                  "who": "A",
+                  "textEn": "Is this your book?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "Yes, ___ is.",
+                  "answer": "it"
+                }
               ],
               "whyUz": "Kitob — narsa → it."
             },
             {
               "n": 6,
               "lines": [
-                { "who": "A", "textEn": "Are ___ a policeman?", "answer": "you" },
-                { "who": "B", "textEn": "No, ___ 'm not a policeman.", "answer": "I" }
+                {
+                  "who": "A",
+                  "textEn": "Are ___ a policeman?",
+                  "answer": "you"
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, ___ 'm not a policeman.",
+                  "answer": "I"
+                }
               ],
               "whyUz": "Savolda 'are' + suhbatdosh → you. Javobda ''m' → I."
             },
             {
               "n": 7,
               "lines": [
-                { "who": "A", "textEn": "Are Brian and Robert from France?", "given": true },
-                { "who": "B", "textEn": "No, ___ aren't from France.", "answer": "they" }
+                {
+                  "who": "A",
+                  "textEn": "Are Brian and Robert from France?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, ___ aren't from France.",
+                  "answer": "they"
+                }
               ],
               "whyUz": "Ikki kishi → they."
             },
             {
               "n": 8,
               "lines": [
-                { "who": "A", "textEn": "Is Ben a pilot?", "given": true },
-                { "who": "B", "textEn": "Yes, ___ is.", "answer": "he" }
+                {
+                  "who": "A",
+                  "textEn": "Is Ben a pilot?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "Yes, ___ is.",
+                  "answer": "he"
+                }
               ],
               "whyUz": "Ben — erkak ismi → he."
             },
             {
               "n": 9,
               "lines": [
-                { "who": "A", "textEn": "Is Lisa your friend?", "given": true },
-                { "who": "B", "textEn": "No, ___ isn't my friend.", "answer": "she" }
+                {
+                  "who": "A",
+                  "textEn": "Is Lisa your friend?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "No, ___ isn't my friend.",
+                  "answer": "she"
+                }
               ],
               "whyUz": "Lisa — ayol ismi → she."
             },
             {
               "n": 10,
               "lines": [
-                { "who": "A", "textEn": "Where is the Statue of Liberty?", "given": true },
-                { "who": "B", "textEn": "___ is in America.", "answer": "It" }
+                {
+                  "who": "A",
+                  "textEn": "Where is the Statue of Liberty?",
+                  "given": true
+                },
+                {
+                  "who": "B",
+                  "textEn": "___ is in America.",
+                  "answer": "It"
+                }
               ],
               "whyUz": "Haykal — narsa → It. Gap boshida katta harf."
             }
@@ -139,19 +297,85 @@
           "instructionEn": "Fill in the correct form of the verb to be.",
           "instructionUz": "\"to be\" fe'lining to'g'ri shaklini qo'ying (to'liq va qisqa ustunda).",
           "explanationUz": "Har qatorni IKKI marta to'ldirasiz: chapda to'liq shakl, o'ngda qisqa shakl. Bu ikkisi bir xil ma'noni beradi.\nDIQQAT: 'I am not' ning qisqa shakli faqat 'I'm not' — 'I amn't' YO'Q.",
-          "columns": ["Long Form", "Short Form"],
-          "columnsUz": ["To'liq shakl", "Qisqa shakl"],
+          "columns": [
+            "Long Form",
+            "Short Form"
+          ],
+          "columnsUz": [
+            "To'liq shakl",
+            "Qisqa shakl"
+          ],
           "items": [
-            { "n": 1, "textEn": "I ___ 16 years old.", "long": "am", "short": "I'm", "given": true },
-            { "n": 2, "textEn": "He ___ from Brazil.", "long": "is", "short": "'s", "whyUz": "he → is → he's" },
-            { "n": 3, "textEn": "She ___ not a lawyer.", "long": "is", "short": "isn't", "whyUz": "she + is not → she isn't" },
-            { "n": 4, "textEn": "It ___ a car.", "long": "is", "short": "'s", "whyUz": "it → is → it's" },
-            { "n": 5, "textEn": "They ___ not football players.", "long": "are", "short": "aren't", "whyUz": "they + are not → they aren't" },
-            { "n": 6, "textEn": "You ___ not Brian.", "long": "are", "short": "aren't", "whyUz": "you + are not → you aren't" },
-            { "n": 7, "textEn": "It ___ an apple.", "long": "is", "short": "'s", "whyUz": "it → is → it's. 'an apple' — unli tovush" },
-            { "n": 8, "textEn": "We ___ British.", "long": "are", "short": "'re", "whyUz": "we → are → we're" },
-            { "n": 9, "textEn": "I ___ not a dancer.", "long": "am", "short": "'m not", "whyUz": "I + am not → I'm not (I amn't XATO)" },
-            { "n": 10, "textEn": "She ___ Canadian.", "long": "is", "short": "'s", "whyUz": "she → is → she's" }
+            {
+              "n": 1,
+              "textEn": "I ___ 16 years old.",
+              "long": "am",
+              "short": "I'm",
+              "given": true
+            },
+            {
+              "n": 2,
+              "textEn": "He ___ from Brazil.",
+              "long": "is",
+              "short": "'s",
+              "whyUz": "he → is → he's"
+            },
+            {
+              "n": 3,
+              "textEn": "She ___ not a lawyer.",
+              "long": "is",
+              "short": "isn't",
+              "whyUz": "she + is not → she isn't"
+            },
+            {
+              "n": 4,
+              "textEn": "It ___ a car.",
+              "long": "is",
+              "short": "'s",
+              "whyUz": "it → is → it's"
+            },
+            {
+              "n": 5,
+              "textEn": "They ___ not football players.",
+              "long": "are",
+              "short": "aren't",
+              "whyUz": "they + are not → they aren't"
+            },
+            {
+              "n": 6,
+              "textEn": "You ___ not Brian.",
+              "long": "are",
+              "short": "aren't",
+              "whyUz": "you + are not → you aren't"
+            },
+            {
+              "n": 7,
+              "textEn": "It ___ an apple.",
+              "long": "is",
+              "short": "'s",
+              "whyUz": "it → is → it's. 'an apple' — unli tovush"
+            },
+            {
+              "n": 8,
+              "textEn": "We ___ British.",
+              "long": "are",
+              "short": "'re",
+              "whyUz": "we → are → we're"
+            },
+            {
+              "n": 9,
+              "textEn": "I ___ not a dancer.",
+              "long": "am",
+              "short": "'m not",
+              "whyUz": "I + am not → I'm not (I amn't XATO)"
+            },
+            {
+              "n": 10,
+              "textEn": "She ___ Canadian.",
+              "long": "is",
+              "short": "'s",
+              "whyUz": "she → is → she's"
+            }
           ]
         },
         {
@@ -166,16 +390,76 @@
             "answer": "No, she isn't. She's a teacher."
           },
           "items": [
-            { "n": 1, "prompt": "Julie/a dancer? No/a teacher", "question": "Is Julie a dancer?", "answer": "No, she isn't. She's a teacher.", "given": true },
-            { "n": 2, "prompt": "you/from Canada? No/from Australia", "question": "Are you from Canada?", "answer": "No, I'm not. I'm from Australia.", "whyUz": "'you' so'ralsa, javob 'I' bilan beriladi." },
-            { "n": 3, "prompt": "he/a vet? No/a pilot", "question": "Is he a vet?", "answer": "No, he isn't. He's a pilot.", "whyUz": "vet — veterinar. Kasb oldidan a shart." },
-            { "n": 4, "prompt": "she/17? No/15", "question": "Is she 17?", "answer": "No, she isn't. She's 15.", "whyUz": "Yosh aytilganda a/an ishlatilmaydi." },
-            { "n": 5, "prompt": "Bob/married? No/single", "question": "Is Bob married?", "answer": "No, he isn't. He's single.", "whyUz": "married/single — sifat, a/an olmaydi." },
-            { "n": 6, "prompt": "he/from Turkey? No/from Poland", "question": "Is he from Turkey?", "answer": "No, he isn't. He's from Poland.", "whyUz": "Mamlakat oldidan 'from', a/an yo'q." },
-            { "n": 7, "prompt": "Debbie/an artist? No/a doctor", "question": "Is Debbie an artist?", "answer": "No, she isn't. She's a doctor.", "whyUz": "artist — unli tovush → an. doctor — undosh → a." },
-            { "n": 8, "prompt": "you/a farmer? No/a postman", "question": "Are you a farmer?", "answer": "No, I'm not. I'm a postman.", "whyUz": "postman — pochtachi." },
-            { "n": 9, "prompt": "Jimmy/35? No/27", "question": "Is Jimmy 35?", "answer": "No, he isn't. He's 27.", "whyUz": "Jimmy — erkak ismi → he." },
-            { "n": 10, "prompt": "they/from Italy? No/from Japan", "question": "Are they from Italy?", "answer": "No, they aren't. They're from Japan.", "whyUz": "they → are / aren't / they're." }
+            {
+              "n": 1,
+              "prompt": "Julie/a dancer? No/a teacher",
+              "question": "Is Julie a dancer?",
+              "answer": "No, she isn't. She's a teacher.",
+              "given": true
+            },
+            {
+              "n": 2,
+              "prompt": "you/from Canada? No/from Australia",
+              "question": "Are you from Canada?",
+              "answer": "No, I'm not. I'm from Australia.",
+              "whyUz": "'you' so'ralsa, javob 'I' bilan beriladi."
+            },
+            {
+              "n": 3,
+              "prompt": "he/a vet? No/a pilot",
+              "question": "Is he a vet?",
+              "answer": "No, he isn't. He's a pilot.",
+              "whyUz": "vet — veterinar. Kasb oldidan a shart."
+            },
+            {
+              "n": 4,
+              "prompt": "she/17? No/15",
+              "question": "Is she 17?",
+              "answer": "No, she isn't. She's 15.",
+              "whyUz": "Yosh aytilganda a/an ishlatilmaydi."
+            },
+            {
+              "n": 5,
+              "prompt": "Bob/married? No/single",
+              "question": "Is Bob married?",
+              "answer": "No, he isn't. He's single.",
+              "whyUz": "married/single — sifat, a/an olmaydi."
+            },
+            {
+              "n": 6,
+              "prompt": "he/from Turkey? No/from Poland",
+              "question": "Is he from Turkey?",
+              "answer": "No, he isn't. He's from Poland.",
+              "whyUz": "Mamlakat oldidan 'from', a/an yo'q."
+            },
+            {
+              "n": 7,
+              "prompt": "Debbie/an artist? No/a doctor",
+              "question": "Is Debbie an artist?",
+              "answer": "No, she isn't. She's a doctor.",
+              "whyUz": "artist — unli tovush → an. doctor — undosh → a."
+            },
+            {
+              "n": 8,
+              "prompt": "you/a farmer? No/a postman",
+              "question": "Are you a farmer?",
+              "answer": "No, I'm not. I'm a postman.",
+              "whyUz": "postman — pochtachi."
+            },
+            {
+              "n": 9,
+              "prompt": "Jimmy/35? No/27",
+              "question": "Is Jimmy 35?",
+              "answer": "No, he isn't. He's 27.",
+              "whyUz": "Jimmy — erkak ismi → he."
+            },
+            {
+              "n": 10,
+              "prompt": "they/from Italy? No/from Japan",
+              "question": "Are they from Italy?",
+              "answer": "No, they aren't. They're from Japan.",
+              "whyUz": "they → are / aren't / they're."
+            }
           ]
         }
       ]
@@ -189,27 +473,81 @@
         "ruleUz": "-er / -or → kasb egasi",
         "explanationUz": "Ish yoki soha nomiga -er/-or qo'shiladi.",
         "items": [
-          { "base": "law", "baseUz": "qonun", "derived": "lawyer", "derivedUz": "advokat", "note": "law + yer" },
-          { "base": "farm", "baseUz": "ferma", "derived": "farmer", "derivedUz": "fermer", "note": "farm + er" },
-          { "base": "dance", "baseUz": "raqs", "derived": "dancer", "derivedUz": "raqqos", "note": "dance + r" },
-          { "base": "teach", "baseUz": "o'rgatmoq", "derived": "teacher", "derivedUz": "o'qituvchi", "note": "teach + er" },
-          { "base": "play", "baseUz": "o'ynamoq", "derived": "player", "derivedUz": "o'yinchi", "note": "football player — futbolchi" },
-          { "base": "doct-", "baseUz": "davolamoq (lot.)", "derived": "doctor", "derivedUz": "shifokor", "note": "-or" }
+          {
+            "base": "law",
+            "baseUz": "qonun",
+            "derived": "lawyer",
+            "derivedUz": "advokat",
+            "note": "law + yer"
+          },
+          {
+            "base": "farm",
+            "baseUz": "ferma",
+            "derived": "farmer",
+            "derivedUz": "fermer",
+            "note": "farm + er"
+          },
+          {
+            "base": "dance",
+            "baseUz": "raqs",
+            "derived": "dancer",
+            "derivedUz": "raqqos",
+            "note": "dance + r"
+          },
+          {
+            "base": "teach",
+            "baseUz": "o'rgatmoq",
+            "derived": "teacher",
+            "derivedUz": "o'qituvchi",
+            "note": "teach + er"
+          },
+          {
+            "base": "play",
+            "baseUz": "o'ynamoq",
+            "derived": "player",
+            "derivedUz": "o'yinchi",
+            "note": "football player — futbolchi"
+          },
+          {
+            "base": "doct-",
+            "baseUz": "davolamoq (lot.)",
+            "derived": "doctor",
+            "derivedUz": "shifokor",
+            "note": "-or"
+          }
         ]
       },
       {
         "ruleUz": "-man → kasb (erkak)",
         "explanationUz": "Ba'zi kasblar -man bilan tugaydi. Ko'pligi -men bo'ladi: postman → postmen.",
         "items": [
-          { "base": "post", "baseUz": "pochta", "derived": "postman", "derivedUz": "pochtachi", "note": "ko'pligi: postmen" },
-          { "base": "police", "baseUz": "politsiya", "derived": "policeman", "derivedUz": "politsiyachi", "note": "ko'pligi: policemen" }
+          {
+            "base": "post",
+            "baseUz": "pochta",
+            "derived": "postman",
+            "derivedUz": "pochtachi",
+            "note": "ko'pligi: postmen"
+          },
+          {
+            "base": "police",
+            "baseUz": "politsiya",
+            "derived": "policeman",
+            "derivedUz": "politsiyachi",
+            "note": "ko'pligi: policemen"
+          }
         ]
       },
       {
         "ruleUz": "-ist → soha egasi",
         "explanationUz": "Ko'pincha san'at va fanda.",
         "items": [
-          { "base": "art", "baseUz": "san'at", "derived": "artist", "derivedUz": "rassom", "note": "unli tovush → an artist" }
+          {
+            "base": "art",
+            "baseUz": "san'at",
+            "derived": "artist",
+            "derivedUz": "rassom",
+            "note": "unli tovush → an artist"
+          }
         ]
       }
     ]
@@ -239,23 +577,77 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "guitar", "uz": "gitara" },
-    { "en": "waitress", "uz": "ofitsiantka" },
-    { "en": "butterfly", "uz": "kapalak" },
-    { "en": "watch", "uz": "qo'l soati" },
-    { "en": "plane", "uz": "samolyot" },
-    { "en": "lawyer", "uz": "advokat" },
-    { "en": "football player", "uz": "futbolchi" },
-    { "en": "policeman", "uz": "politsiyachi" },
-    { "en": "postman", "uz": "pochtachi" },
-    { "en": "pilot", "uz": "uchuvchi" },
-    { "en": "vet", "uz": "veterinar" },
-    { "en": "artist", "uz": "rassom" },
-    { "en": "sister", "uz": "opa-singil" },
-    { "en": "married", "uz": "uylangan / turmush qurgan" },
-    { "en": "single", "uz": "bo'ydoq / turmush qurmagan" },
-    { "en": "at school", "uz": "maktabda" },
-    { "en": "America", "uz": "Amerika" },
-    { "en": "Australia", "uz": "Avstraliya" }
+    {
+      "en": "guitar",
+      "uz": "gitara"
+    },
+    {
+      "en": "waitress",
+      "uz": "ofitsiantka"
+    },
+    {
+      "en": "butterfly",
+      "uz": "kapalak"
+    },
+    {
+      "en": "watch",
+      "uz": "qo'l soati"
+    },
+    {
+      "en": "plane",
+      "uz": "samolyot"
+    },
+    {
+      "en": "lawyer",
+      "uz": "advokat"
+    },
+    {
+      "en": "football player",
+      "uz": "futbolchi"
+    },
+    {
+      "en": "policeman",
+      "uz": "politsiyachi"
+    },
+    {
+      "en": "postman",
+      "uz": "pochtachi"
+    },
+    {
+      "en": "pilot",
+      "uz": "uchuvchi"
+    },
+    {
+      "en": "vet",
+      "uz": "veterinar"
+    },
+    {
+      "en": "artist",
+      "uz": "rassom"
+    },
+    {
+      "en": "sister",
+      "uz": "opa-singil"
+    },
+    {
+      "en": "married",
+      "uz": "uylangan / turmush qurgan"
+    },
+    {
+      "en": "single",
+      "uz": "bo'ydoq / turmush qurmagan"
+    },
+    {
+      "en": "at school",
+      "uz": "maktabda"
+    },
+    {
+      "en": "America",
+      "uz": "Amerika"
+    },
+    {
+      "en": "Australia",
+      "uz": "Avstraliya"
+    }
   ]
 }
