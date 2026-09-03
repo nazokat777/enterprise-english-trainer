@@ -44,6 +44,17 @@ class RuleScreen extends StatelessWidget {
           ..._table(context),
           ..._rulesList(context),
           ..._shortAnswers(context),
+          // Bu uch maydon ilgari EKRANGA UMUMAN ChIQMAS EDI: "to be",
+          // "can" va "have got" qoidalaridagi eng muhim ogohlantirishlar
+          // ("I amn't" yo'q, "Do you can" xato, "cannot" bitta so'z)
+          // ma'lumotda bor edi, lekin o'quvchi ularni ko'rmasdi.
+          ..._example(context),
+          if ((r['interrogativeNoteUz'] as String?)?.isNotEmpty ?? false)
+            _warn(r['interrogativeNoteUz'] as String, AppColors.actionBlue,
+                Icons.help_outline_rounded),
+          if ((r['negativeNoteUz'] as String?)?.isNotEmpty ?? false)
+            _warn(r['negativeNoteUz'] as String, AppColors.danger,
+                Icons.do_not_disturb_alt_rounded),
           ..._keyRules(context),
           if (section.rule?.warningUz.isNotEmpty ?? false)
             _warn(section.rule!.warningUz, AppColors.danger,
@@ -248,6 +259,42 @@ class RuleScreen extends StatelessWidget {
             ],
           ),
         ),
+    ];
+  }
+
+  /// Qoida qutisidagi namuna gap (inglizcha + o'zbekcha).
+  List<Widget> _example(BuildContext context) {
+    final en = (r['exampleEn'] as String?) ?? '';
+    final uz = (r['exampleUz'] as String?) ?? '';
+    if (en.isEmpty && uz.isEmpty) return [];
+    return [
+      const _H('Namuna'),
+      Container(
+        width: double.infinity,
+        margin: const EdgeInsets.only(bottom: 14),
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(
+          color: AppColors.success.withValues(alpha: 0.08),
+          borderRadius: BorderRadius.circular(AppRadius.md),
+          border: Border(left: BorderSide(color: AppColors.success, width: 3)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (en.isNotEmpty)
+              Text(en,
+                  style: const TextStyle(
+                      fontSize: 14.5,
+                      height: 1.5,
+                      fontWeight: FontWeight.w700)),
+            if (en.isNotEmpty && uz.isNotEmpty) const SizedBox(height: 6),
+            if (uz.isNotEmpty)
+              Text(uz,
+                  style: const TextStyle(
+                      fontSize: 13.5, height: 1.5, color: Colors.black87)),
+          ],
+        ),
+      ),
     ];
   }
 
