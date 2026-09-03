@@ -5,6 +5,7 @@
   "unit": 4,
   "unitTitle": "Like Father, like Son",
   "module": 2,
+  "scanNote": "GRAMMAR 20-BET. Unit 4 — buyruq gap va Present Simple mashqlari.\n\nSkaner bilan tekshirildi. HAMMASI TO'G'RI: 7-mashq davomi (4), 8-mashq (6 moslash + 5 gap), 9-mashq (12 fe'l shakli), 10-mashq (dialoglar), 11-mashq (4 gap), 12-mashq (11 gap) — jami 40 dan ortiq javob.\n\n⚠ 8-MAShQ — GAP IKKIGA BO'LINGAN: chap ustunda fe'l ('Wake', 'Look'), o'ng ustunda davomi ('up. You're late!'). Javob: 1d, 2a, 3e, 4b, 5f, 6c.\n  ⚠ Kalit — FE'L bilan PREDLOG mosligi: wake UP, look AT, help ME, give TO, do (homework), go TO.\n\n⚠ 9-MAShQ — IMLO QOIDALARI AMALDA: watch → watchES ('-ch' bilan tugagan); qolganlariga oddiy '-s'. 'have' → HAS va 'be' → IS — noto'g'ri fe'llar.\n\n⚠ 12-MAShQ — TO'RT YUZ BELGISI:\n  ikki jilmayish = LOVE   · bitta jilmayish = LIKE\n  qoshi chimirilgan = NOT LIKE  · burishgan = HATE\n  ⚠ 'not like' inkor shaklda yoziladi ('doesn't like'), qolgan uchtasi tasdiqda.\n  ⚠ Uchinchi shaxs birlikda '-s' esdan chiqmasin: 'Terry HATES', 'George LIKES', 'Rebecca DOESN'T like'.\n\n⚠ 11 va 12-MAShQ — 'LIKE' DAN KEYIN -ING: like/love/hate dan keyin fe'l '-ing' shaklida keladi ('likes exercisING', 'hates wakING up'). O'zbekchada bu tuzilma yo'q.",
   "pairsWith": "Grammar Book 16–17-betlar (qoidalar)",
   "sections": [
     {
@@ -20,10 +21,46 @@
           "explanationUz": "Bir xil tekshiruv:\n  keyin OT bormi? → sifat yoki ism + 's\n  ot yo'qmi?      → egalik olmoshi\n  ikki egasi bo'lsa → 's faqat oxirgi ismga",
           "bookRef": "Grammar Book, 20-bet, 7-mashq (9–10)",
           "items": [
-            { "textEn": "9  \"Is this TV ____ ?\"", "uz": "Keyin ot yo'q", "options": ["ours", "our"], "answer": "ours", "whyUz": "Gap oxirida, ot yo'q → egalik OLMOSHI 'ours'." },
-            { "textEn": "9  \"No, it's ____ .\"", "uz": "Ikki egasi, bitta televizor", "options": ["Mark and Amanda's", "Mark's and Amanda's"], "answer": "Mark and Amanda's", "whyUz": "Bitta televizor, ikki egasi → 's faqat OXIRGI ismga." },
-            { "textEn": "10  \"Is that ____ father?\"", "uz": "Keyin ot bor", "options": ["your", "yours"], "answer": "your", "whyUz": "'father' oti bor → egalik SIFATI 'your'." },
-            { "textEn": "10  \"No, he's not ____ father.\"", "uz": "Keyin ot bor", "options": ["my", "mine"], "answer": "my", "whyUz": "'father' oti bor → egalik SIFATI 'my'. 'mine father' XATO." }
+            {
+              "textEn": "9  \"Is this TV ____ ?\"",
+              "uz": "Keyin ot yo'q",
+              "options": [
+                "ours",
+                "our"
+              ],
+              "answer": "ours",
+              "whyUz": "Gap oxirida, ot yo'q → egalik OLMOSHI 'ours'."
+            },
+            {
+              "textEn": "9  \"No, it's ____ .\"",
+              "uz": "Ikki egasi, bitta televizor",
+              "options": [
+                "Mark and Amanda's",
+                "Mark's and Amanda's"
+              ],
+              "answer": "Mark and Amanda's",
+              "whyUz": "Bitta televizor, ikki egasi → 's faqat OXIRGI ismga."
+            },
+            {
+              "textEn": "10  \"Is that ____ father?\"",
+              "uz": "Keyin ot bor",
+              "options": [
+                "your",
+                "yours"
+              ],
+              "answer": "your",
+              "whyUz": "'father' oti bor → egalik SIFATI 'your'."
+            },
+            {
+              "textEn": "10  \"No, he's not ____ father.\"",
+              "uz": "Keyin ot bor",
+              "options": [
+                "my",
+                "mine"
+              ],
+              "answer": "my",
+              "whyUz": "'father' oti bor → egalik SIFATI 'my'. 'mine father' XATO."
+            }
           ]
         }
       ]
@@ -41,12 +78,36 @@
           "explanationUz": "Har bir buyruq FE'L bilan boshlanadi va davomi bilan\nma'noli gap hosil qiladi.\n\nMANTIQNI QUYIDAGICHA TOPING:\n  Wake ... — 'wake up' turg'un birikma\n  Look ... — 'look at' predlogini talab qiladi\n  Help ... — kimga? → obyekt olmoshi\n  Give this ... — kimga? → 'to' + ism\n  Do ... — nimani? → ish/vazifa\n  Go ... — qayerga? → 'to' + joy\n\nDIQQAT: barcha gaplar BUYRUQ — ega yo'q, fe'l asos shaklida.",
           "bookRef": "Grammar Book, 20-bet, 8-mashq",
           "pairs": [
-            { "left": "1  Wake", "right": "d  up. You're late!", "note": "Kitobdagi namuna. 'wake up' — uyg'onmoq. 'You're late' — kechikding." },
-            { "left": "2  Look", "right": "a  at her! She's beautiful.", "note": "'look AT' — predlog shart. 'her' — obyekt olmoshi." },
-            { "left": "3  Help", "right": "e  me! I can't move!", "note": "'help' to'g'ridan-to'g'ri obyekt oladi — predlog kerak emas." },
-            { "left": "4  Give this", "right": "b  to Liz. It's hers.", "note": "'give something TO somebody'. 'hers' — egalik olmoshi." },
-            { "left": "5  Do", "right": "f  your homework, now!", "note": "'do homework' — turg'un birikma (uy vazifasini bajarmoq)." },
-            { "left": "6  Go", "right": "c  to your room!", "note": "'go TO a place' — predlog shart." }
+            {
+              "left": "1  Wake",
+              "right": "d  up. You're late!",
+              "note": "Kitobdagi namuna. 'wake up' — uyg'onmoq. 'You're late' — kechikding."
+            },
+            {
+              "left": "2  Look",
+              "right": "a  at her! She's beautiful.",
+              "note": "'look AT' — predlog shart. 'her' — obyekt olmoshi."
+            },
+            {
+              "left": "3  Help",
+              "right": "e  me! I can't move!",
+              "note": "'help' to'g'ridan-to'g'ri obyekt oladi — predlog kerak emas."
+            },
+            {
+              "left": "4  Give this",
+              "right": "b  to Liz. It's hers.",
+              "note": "'give something TO somebody'. 'hers' — egalik olmoshi."
+            },
+            {
+              "left": "5  Do",
+              "right": "f  your homework, now!",
+              "note": "'do homework' — turg'un birikma (uy vazifasini bajarmoq)."
+            },
+            {
+              "left": "6  Go",
+              "right": "c  to your room!",
+              "note": "'go TO a place' — predlog shart."
+            }
           ]
         },
         {
@@ -57,14 +118,38 @@
           "explanationUz": "Moslashdan keyin har bir gapni to'liq yozing.",
           "bookRef": "Grammar Book, 20-bet, 8-mashq",
           "example": [
-            { "speaker": "1", "en": "Wake up. You're late!", "uz": "Uyg'on. Kechikding!" }
+            {
+              "speaker": "1",
+              "en": "Wake up. You're late!",
+              "uz": "Uyg'on. Kechikding!"
+            }
           ],
           "modelSentences": [
-            { "word": "2. Look + a", "sentence": "Look at her! She's beautiful.", "uz": "Unga qara! U go'zal." },
-            { "word": "3. Help + e", "sentence": "Help me! I can't move!", "uz": "Menga yordam ber! Qimirlay olmayapman!" },
-            { "word": "4. Give this + b", "sentence": "Give this to Liz. It's hers.", "uz": "Buni Lizga ber. U uniki." },
-            { "word": "5. Do + f", "sentence": "Do your homework, now!", "uz": "Uy vazifangni hozir bajar!" },
-            { "word": "6. Go + c", "sentence": "Go to your room!", "uz": "Xonangga bor!" }
+            {
+              "word": "2. Look + a",
+              "sentence": "Look at her! She's beautiful.",
+              "uz": "Unga qara! U go'zal."
+            },
+            {
+              "word": "3. Help + e",
+              "sentence": "Help me! I can't move!",
+              "uz": "Menga yordam ber! Qimirlay olmayapman!"
+            },
+            {
+              "word": "4. Give this + b",
+              "sentence": "Give this to Liz. It's hers.",
+              "uz": "Buni Lizga ber. U uniki."
+            },
+            {
+              "word": "5. Do + f",
+              "sentence": "Do your homework, now!",
+              "uz": "Uy vazifangni hozir bajar!"
+            },
+            {
+              "word": "6. Go + c",
+              "sentence": "Go to your room!",
+              "uz": "Xonangga bor!"
+            }
           ]
         }
       ]
@@ -82,18 +167,66 @@
           "explanationUz": "Barchasi 3-shaxs birlik ('he') uchun.\n\nIMLO QOIDALARI:\n  oddiy -s  — ko'p fe'llar\n  -es       — -ss, -sh, -ch, -x, -o bilan tugasa\n  -ies      — undosh + y\n\nIKKI ISTISNO — bu fe'llar QOIDAGA BO'YSUNMAYDI:\n  I am  → he IS   ('ams' EMAS!)\n  I have → he HAS  ('haves' EMAS!)\n\nBu ikkalasi eng ko'p ishlatiladigan fe'llar, shuning uchun\nularning noto'g'ri shaklini yodlab olish shart.",
           "bookRef": "Grammar Book, 20-bet, 9-mashq",
           "items": [
-            { "textEn": "1  I am - he ____", "answer": "is", "whyUz": "ISTISNO! 'to be' fe'li: I am, you are, he IS." },
-            { "textEn": "2  I live - he ____", "answer": "lives", "whyUz": "Oddiy -s. Talaffuzi /z/." },
-            { "textEn": "3  I play - he ____", "answer": "plays", "whyUz": "Unli (a) + y → oddiy -s." },
-            { "textEn": "4  I have - he ____", "answer": "has", "whyUz": "ISTISNO! 'have' → 'has'. 'haves' YO'Q." },
-            { "textEn": "5  I listen - he ____", "answer": "listens", "whyUz": "Oddiy -s. 't' o'qilmaydi: 'LI-sen'." },
-            { "textEn": "6  I watch - he ____", "answer": "watches", "whyUz": "-ch bilan tugaydi → -es. Talaffuzi /ɪz/." },
-            { "textEn": "7  I read - he ____", "answer": "reads", "whyUz": "Oddiy -s. Talaffuzi /z/." },
-            { "textEn": "8  I use - he ____", "answer": "uses", "whyUz": "Oddiy -s, lekin talaffuzi /ɪz/ — 'use' /z/ tovushi bilan tugaydi." },
-            { "textEn": "9  I help - he ____", "answer": "helps", "whyUz": "Oddiy -s. Talaffuzi /s/ — 'p' dan keyin." },
-            { "textEn": "10  I walk - he ____", "answer": "walks", "whyUz": "Oddiy -s. Talaffuzi /s/. 'l' o'qilmaydi: 'WOOKS'." },
-            { "textEn": "11  I give - he ____", "answer": "gives", "whyUz": "Oddiy -s. Talaffuzi /z/." },
-            { "textEn": "12  I hate - he ____", "answer": "hates", "whyUz": "Oddiy -s. Talaffuzi /s/ — 't' dan keyin." }
+            {
+              "textEn": "1  I am - he ____",
+              "answer": "is",
+              "whyUz": "ISTISNO! 'to be' fe'li: I am, you are, he IS."
+            },
+            {
+              "textEn": "2  I live - he ____",
+              "answer": "lives",
+              "whyUz": "Oddiy -s. Talaffuzi /z/."
+            },
+            {
+              "textEn": "3  I play - he ____",
+              "answer": "plays",
+              "whyUz": "Unli (a) + y → oddiy -s."
+            },
+            {
+              "textEn": "4  I have - he ____",
+              "answer": "has",
+              "whyUz": "ISTISNO! 'have' → 'has'. 'haves' YO'Q."
+            },
+            {
+              "textEn": "5  I listen - he ____",
+              "answer": "listens",
+              "whyUz": "Oddiy -s. 't' o'qilmaydi: 'LI-sen'."
+            },
+            {
+              "textEn": "6  I watch - he ____",
+              "answer": "watches",
+              "whyUz": "-ch bilan tugaydi → -es. Talaffuzi /ɪz/."
+            },
+            {
+              "textEn": "7  I read - he ____",
+              "answer": "reads",
+              "whyUz": "Oddiy -s. Talaffuzi /z/."
+            },
+            {
+              "textEn": "8  I use - he ____",
+              "answer": "uses",
+              "whyUz": "Oddiy -s, lekin talaffuzi /ɪz/ — 'use' /z/ tovushi bilan tugaydi."
+            },
+            {
+              "textEn": "9  I help - he ____",
+              "answer": "helps",
+              "whyUz": "Oddiy -s. Talaffuzi /s/ — 'p' dan keyin."
+            },
+            {
+              "textEn": "10  I walk - he ____",
+              "answer": "walks",
+              "whyUz": "Oddiy -s. Talaffuzi /s/. 'l' o'qilmaydi: 'WOOKS'."
+            },
+            {
+              "textEn": "11  I give - he ____",
+              "answer": "gives",
+              "whyUz": "Oddiy -s. Talaffuzi /z/."
+            },
+            {
+              "textEn": "12  I hate - he ____",
+              "answer": "hates",
+              "whyUz": "Oddiy -s. Talaffuzi /s/ — 't' dan keyin."
+            }
           ]
         },
         {
@@ -104,24 +237,122 @@
           "explanationUz": "JAVOBGA QARAB SAVOLNI TIKLANG:\n\n  javob 'Yes, she does'   → savol 'Does she ...?'\n  javob 'No, he doesn't'  → savol 'Does he ...?'\n  javob 'Yes, they do'    → savol 'Do they ...?'\n  javob 'He's tall...'    → savol 'What does ... look like?'\n  javob 'kind and patient' → savol 'What's ... like?' → 'He's ...'\n\nDIQQAT: savolda fe'l -s OLMAYDI.",
           "bookRef": "Grammar Book, 20-bet, 10-mashq",
           "lines": [
-            { "who": "1 A", "textEn": "Does she like going to the cinema?", "uz": "U kinoga borishni yoqtiradimi?", "given": true },
-            { "who": "1 B", "textEn": "Yes, she does.", "uz": "Ha, yoqtiradi.", "given": true },
-            { "who": "2 A", "textEn": "____ work at the local school?", "answer": "Does he", "hintUz": "Javob 'No, he doesn't' — qaysi shaxs va qaysi yordamchi?", "whyUz": "Javobda 'he doesn't' → savolda 'Does he'. Fe'l 'work' asos shaklida." },
-            { "who": "2 B", "textEn": "No, he doesn't.", "uz": "Yo'q, ishlamaydi.", "given": true },
-            { "who": "3 A", "textEn": "What's your brother like?", "uz": "Akang qanday odam?", "given": true },
-            { "who": "3 B", "textEn": "____ kind and patient.", "answer": "He's", "hintUz": "Aka haqida, 'to be' fe'li bilan", "whyUz": "'What's ... like?' — XARAKTER savoli. Javob 'He's + sifat'." },
-            { "who": "4 A", "textEn": "____ like jazz music?", "answer": "Do they", "hintUz": "Javob 'Yes, they do'", "whyUz": "Javobda 'they do' → savolda 'Do they'." },
-            { "who": "4 B", "textEn": "Yes, they do.", "uz": "Ha, yoqtiradi.", "given": true },
-            { "who": "5 A", "textEn": "Does he like living in the city?", "uz": "U shaharda yashashni yoqtiradimi?", "given": true },
-            { "who": "5 B", "textEn": "No, he ____ .", "answer": "doesn't", "hintUz": "'he' bilan inkor qisqa javob", "whyUz": "3-shaxs birlik inkor → doesn't." },
-            { "who": "6 A", "textEn": "____ hate doing the ironing?", "answer": "Does she", "hintUz": "Javob 'Yes, she does'", "whyUz": "Javobda 'she does' → savolda 'Does she'. Fe'l 'hate' asos shaklida." },
-            { "who": "6 B", "textEn": "Yes, she does.", "uz": "Ha, yomon ko'radi.", "given": true },
-            { "who": "7 A", "textEn": "____ play tennis on Saturdays?", "answer": "Does he", "hintUz": "Javob 'Yes, he does'", "whyUz": "Javobda 'he does' → savolda 'Does he'. 'on Saturdays' — har shanba." },
-            { "who": "7 B", "textEn": "Yes, he does.", "uz": "Ha, o'ynaydi.", "given": true },
-            { "who": "8 A", "textEn": "What ____ Steve look like?", "answer": "does", "hintUz": "'Steve' — 3-shaxs birlik, 'look like' savoli", "whyUz": "TASHQI KO'RINISH savoli: What DOES ... look like? Javob 'He's tall and very handsome'." },
-            { "who": "8 B", "textEn": "He's tall and very handsome.", "uz": "U baland bo'yli va juda kelishgan.", "given": true },
-            { "who": "9 A", "textEn": "____ like playing the guitar?", "answer": "Does he", "hintUz": "Javob 'No, he doesn't'", "whyUz": "Javobda 'he doesn't' → savolda 'Does he'." },
-            { "who": "9 B", "textEn": "No, he doesn't.", "uz": "Yo'q, yoqtirmaydi.", "given": true }
+            {
+              "who": "1 A",
+              "textEn": "Does she like going to the cinema?",
+              "uz": "U kinoga borishni yoqtiradimi?",
+              "given": true
+            },
+            {
+              "who": "1 B",
+              "textEn": "Yes, she does.",
+              "uz": "Ha, yoqtiradi.",
+              "given": true
+            },
+            {
+              "who": "2 A",
+              "textEn": "____ work at the local school?",
+              "answer": "Does he",
+              "hintUz": "Javob 'No, he doesn't' — qaysi shaxs va qaysi yordamchi?",
+              "whyUz": "Javobda 'he doesn't' → savolda 'Does he'. Fe'l 'work' asos shaklida."
+            },
+            {
+              "who": "2 B",
+              "textEn": "No, he doesn't.",
+              "uz": "Yo'q, ishlamaydi.",
+              "given": true
+            },
+            {
+              "who": "3 A",
+              "textEn": "What's your brother like?",
+              "uz": "Akang qanday odam?",
+              "given": true
+            },
+            {
+              "who": "3 B",
+              "textEn": "____ kind and patient.",
+              "answer": "He's",
+              "hintUz": "Aka haqida, 'to be' fe'li bilan",
+              "whyUz": "'What's ... like?' — XARAKTER savoli. Javob 'He's + sifat'."
+            },
+            {
+              "who": "4 A",
+              "textEn": "____ like jazz music?",
+              "answer": "Do they",
+              "hintUz": "Javob 'Yes, they do'",
+              "whyUz": "Javobda 'they do' → savolda 'Do they'."
+            },
+            {
+              "who": "4 B",
+              "textEn": "Yes, they do.",
+              "uz": "Ha, yoqtiradi.",
+              "given": true
+            },
+            {
+              "who": "5 A",
+              "textEn": "Does he like living in the city?",
+              "uz": "U shaharda yashashni yoqtiradimi?",
+              "given": true
+            },
+            {
+              "who": "5 B",
+              "textEn": "No, he ____ .",
+              "answer": "doesn't",
+              "hintUz": "'he' bilan inkor qisqa javob",
+              "whyUz": "3-shaxs birlik inkor → doesn't."
+            },
+            {
+              "who": "6 A",
+              "textEn": "____ hate doing the ironing?",
+              "answer": "Does she",
+              "hintUz": "Javob 'Yes, she does'",
+              "whyUz": "Javobda 'she does' → savolda 'Does she'. Fe'l 'hate' asos shaklida."
+            },
+            {
+              "who": "6 B",
+              "textEn": "Yes, she does.",
+              "uz": "Ha, yomon ko'radi.",
+              "given": true
+            },
+            {
+              "who": "7 A",
+              "textEn": "____ play tennis on Saturdays?",
+              "answer": "Does he",
+              "hintUz": "Javob 'Yes, he does'",
+              "whyUz": "Javobda 'he does' → savolda 'Does he'. 'on Saturdays' — har shanba."
+            },
+            {
+              "who": "7 B",
+              "textEn": "Yes, he does.",
+              "uz": "Ha, o'ynaydi.",
+              "given": true
+            },
+            {
+              "who": "8 A",
+              "textEn": "What ____ Steve look like?",
+              "answer": "does",
+              "hintUz": "'Steve' — 3-shaxs birlik, 'look like' savoli",
+              "whyUz": "TASHQI KO'RINISH savoli: What DOES ... look like? Javob 'He's tall and very handsome'."
+            },
+            {
+              "who": "8 B",
+              "textEn": "He's tall and very handsome.",
+              "uz": "U baland bo'yli va juda kelishgan.",
+              "given": true
+            },
+            {
+              "who": "9 A",
+              "textEn": "____ like playing the guitar?",
+              "answer": "Does he",
+              "hintUz": "Javob 'No, he doesn't'",
+              "whyUz": "Javobda 'he doesn't' → savolda 'Does he'."
+            },
+            {
+              "who": "9 B",
+              "textEn": "No, he doesn't.",
+              "uz": "Yo'q, yoqtirmaydi.",
+              "given": true
+            }
           ]
         },
         {
@@ -132,13 +363,33 @@
           "explanationUz": "NAMUNA:\n  Theresa (✓) exercising (✗) reading\n  → Theresa likes exercising but she doesn't like reading.\n\nQOLIP:\n  EGA + likes/like + ✓ + BUT + olmosh + doesn't/don't like + ✗\n\nIKKI QAROR:\n  1) Ega 3-shaxs birlikmi?\n     Ha  → likes ... doesn't like\n     Yo'q → like ... don't like\n\n  2) Ikkinchi qismda ISM o'rniga OLMOSH ishlatiladi:\n     Theresa → she,  Nicole → she,  He → he,\n     They → they,    We → we\n\nDIQQAT: 'like' dan keyin fe'l -ING oladi (exercising, reading).\nLekin ot bo'lsa o'zgarmaydi (football, tennis, dogs, cats).",
           "bookRef": "Grammar Book, 20-bet, 11-mashq",
           "example": [
-            { "speaker": "1", "en": "Theresa likes exercising but she doesn't like reading.", "uz": "Teresa sport bilan shug'ullanishni yoqtiradi, lekin o'qishni yoqtirmaydi." }
+            {
+              "speaker": "1",
+              "en": "Theresa likes exercising but she doesn't like reading.",
+              "uz": "Teresa sport bilan shug'ullanishni yoqtiradi, lekin o'qishni yoqtirmaydi."
+            }
           ],
           "modelSentences": [
-            { "word": "2. He ✓ travelling ✗ fishing", "sentence": "He likes travelling but he doesn't like fishing.", "uz": "U sayohat qilishni yoqtiradi, lekin baliq ovlashni yoqtirmaydi." },
-            { "word": "3. They ✓ football ✗ tennis", "sentence": "They like football but they don't like tennis.", "uz": "Ular futbolni yoqtiradi, lekin tennisni yoqtirmaydi." },
-            { "word": "4. Nicole ✓ dogs ✗ cats", "sentence": "Nicole likes dogs but she doesn't like cats.", "uz": "Nikol itlarni yoqtiradi, lekin mushuklarni yoqtirmaydi." },
-            { "word": "5. We ✓ playing games ✗ watching TV", "sentence": "We like playing games but we don't like watching TV.", "uz": "Biz o'yin o'ynashni yoqtiramiz, lekin televizor ko'rishni yoqtirmaymiz." }
+            {
+              "word": "2. He ✓ travelling ✗ fishing",
+              "sentence": "He likes travelling but he doesn't like fishing.",
+              "uz": "U sayohat qilishni yoqtiradi, lekin baliq ovlashni yoqtirmaydi."
+            },
+            {
+              "word": "3. They ✓ football ✗ tennis",
+              "sentence": "They like football but they don't like tennis.",
+              "uz": "Ular futbolni yoqtiradi, lekin tennisni yoqtirmaydi."
+            },
+            {
+              "word": "4. Nicole ✓ dogs ✗ cats",
+              "sentence": "Nicole likes dogs but she doesn't like cats.",
+              "uz": "Nikol itlarni yoqtiradi, lekin mushuklarni yoqtirmaydi."
+            },
+            {
+              "word": "5. We ✓ playing games ✗ watching TV",
+              "sentence": "We like playing games but we don't like watching TV.",
+              "uz": "Biz o'yin o'ynashni yoqtiramiz, lekin televizor ko'rishni yoqtirmaymiz."
+            }
           ]
         },
         {
@@ -149,20 +400,68 @@
           "explanationUz": "KALIT (kitobdagi to'rt yuzcha):\n  ☺ katta tabassum — LOVE      (juda yaxshi ko'radi)\n  ☺ oddiy tabassum — LIKE      (yoqtiradi)\n  ☹ xafa yuz       — NOT LIKE  (yoqtirmaydi)\n  ☹ jahldor yuz    — HATE      (yomon ko'radi)\n\nTO'RT DARAJA — ikkitasi ijobiy, ikkitasi salbiy.\n\nINKOR SHAKLI ('not like' uchun):\n  he/she/it → DOESN'T like\n  I/you/we/they → DON'T like\n\nTASDIQ SHAKLI ('love', 'like', 'hate' uchun):\n  he/she/it → loveS / likeS / hateS\n  I/you/we/they → love / like / hate\n\nBarcha fe'llardan keyin ikkinchi fe'l -ING oladi.",
           "bookRef": "Grammar Book, 20-bet, 12-mashq",
           "example": [
-            { "speaker": "1", "en": "Perry likes going shopping.", "uz": "Perri xarid qilishga borishni yoqtiradi." }
+            {
+              "speaker": "1",
+              "en": "Perry likes going shopping.",
+              "uz": "Perri xarid qilishga borishni yoqtiradi."
+            }
           ],
           "modelSentences": [
-            { "word": "2. Terry — HATE / listening to classical music", "sentence": "Terry hates listening to classical music.", "uz": "Terri klassik musiqa tinglashni yomon ko'radi." },
-            { "word": "3. We — LOVE / going to the cinema", "sentence": "We love going to the cinema.", "uz": "Biz kinoga borishni juda yaxshi ko'ramiz." },
-            { "word": "4. Adam and Kelly — NOT LIKE / exercising", "sentence": "Adam and Kelly don't like exercising.", "uz": "Adam va Kelli sport bilan shug'ullanishni yoqtirmaydi." },
-            { "word": "5. She — LIKE / going on picnics", "sentence": "She likes going on picnics.", "uz": "U piknikka borishni yoqtiradi." },
-            { "word": "6. They — HATE / cleaning the house", "sentence": "They hate cleaning the house.", "uz": "Ular uyni tozalashni yomon ko'radi." },
-            { "word": "7. I — LOVE / travelling", "sentence": "I love travelling.", "uz": "Men sayohat qilishni juda yaxshi ko'raman." },
-            { "word": "8. George — LIKE / playing computer games", "sentence": "George likes playing computer games.", "uz": "Jorj kompyuter o'yinlari o'ynashni yoqtiradi." },
-            { "word": "9. I — HATE / doing the washing-up", "sentence": "I hate doing the washing-up.", "uz": "Men idish yuvishni yomon ko'raman." },
-            { "word": "10. Rebecca — NOT LIKE / fishing", "sentence": "Rebecca doesn't like fishing.", "uz": "Rebekka baliq ovlashni yoqtirmaydi." },
-            { "word": "11. He — LIKE / walking in the park", "sentence": "He likes walking in the park.", "uz": "U bog'da sayr qilishni yoqtiradi." },
-            { "word": "12. David and Anna — HATE / waking up early", "sentence": "David and Anna hate waking up early.", "uz": "Devid va Anna erta turishni yomon ko'radi." }
+            {
+              "word": "2. Terry — HATE / listening to classical music",
+              "sentence": "Terry hates listening to classical music.",
+              "uz": "Terri klassik musiqa tinglashni yomon ko'radi."
+            },
+            {
+              "word": "3. We — LOVE / going to the cinema",
+              "sentence": "We love going to the cinema.",
+              "uz": "Biz kinoga borishni juda yaxshi ko'ramiz."
+            },
+            {
+              "word": "4. Adam and Kelly — NOT LIKE / exercising",
+              "sentence": "Adam and Kelly don't like exercising.",
+              "uz": "Adam va Kelli sport bilan shug'ullanishni yoqtirmaydi."
+            },
+            {
+              "word": "5. She — LIKE / going on picnics",
+              "sentence": "She likes going on picnics.",
+              "uz": "U piknikka borishni yoqtiradi."
+            },
+            {
+              "word": "6. They — HATE / cleaning the house",
+              "sentence": "They hate cleaning the house.",
+              "uz": "Ular uyni tozalashni yomon ko'radi."
+            },
+            {
+              "word": "7. I — LOVE / travelling",
+              "sentence": "I love travelling.",
+              "uz": "Men sayohat qilishni juda yaxshi ko'raman."
+            },
+            {
+              "word": "8. George — LIKE / playing computer games",
+              "sentence": "George likes playing computer games.",
+              "uz": "Jorj kompyuter o'yinlari o'ynashni yoqtiradi."
+            },
+            {
+              "word": "9. I — HATE / doing the washing-up",
+              "sentence": "I hate doing the washing-up.",
+              "uz": "Men idish yuvishni yomon ko'raman."
+            },
+            {
+              "word": "10. Rebecca — NOT LIKE / fishing",
+              "sentence": "Rebecca doesn't like fishing.",
+              "uz": "Rebekka baliq ovlashni yoqtirmaydi."
+            },
+            {
+              "word": "11. He — LIKE / walking in the park",
+              "sentence": "He likes walking in the park.",
+              "uz": "U bog'da sayr qilishni yoqtiradi."
+            },
+            {
+              "word": "12. David and Anna — HATE / waking up early",
+              "sentence": "David and Anna hate waking up early.",
+              "uz": "Devid va Anna erta turishni yomon ko'radi."
+            }
           ]
         }
       ]
@@ -176,53 +475,191 @@
         "ruleUz": "NOTO'G'RI 3-shaxs shakllari",
         "explanationUz": "Bu ikkita fe'l qoidaga bo'ysunmaydi. Ular eng ko'p ishlatiladigan fe'llar, shuning uchun alohida yodlanadi.",
         "items": [
-          { "base": "I am / you are", "baseUz": "men ...man", "derived": "he IS", "derivedUz": "u ...dir", "note": "'ams' YO'Q" },
-          { "base": "I have", "baseUz": "menda bor", "derived": "he HAS", "derivedUz": "unda bor", "note": "'haves' YO'Q" },
-          { "base": "I do", "baseUz": "men qilaman", "derived": "he DOES", "derivedUz": "u qiladi", "note": "-o → -es, talaffuzi 'daz'" },
-          { "base": "I go", "baseUz": "men boraman", "derived": "he GOES", "derivedUz": "u boradi", "note": "-o → -es" }
+          {
+            "base": "I am / you are",
+            "baseUz": "men ...man",
+            "derived": "he IS",
+            "derivedUz": "u ...dir",
+            "note": "'ams' YO'Q"
+          },
+          {
+            "base": "I have",
+            "baseUz": "menda bor",
+            "derived": "he HAS",
+            "derivedUz": "unda bor",
+            "note": "'haves' YO'Q"
+          },
+          {
+            "base": "I do",
+            "baseUz": "men qilaman",
+            "derived": "he DOES",
+            "derivedUz": "u qiladi",
+            "note": "-o → -es, talaffuzi 'daz'"
+          },
+          {
+            "base": "I go",
+            "baseUz": "men boraman",
+            "derived": "he GOES",
+            "derivedUz": "u boradi",
+            "note": "-o → -es"
+          }
         ]
       },
       {
         "ruleUz": "'do' bilan uy ishlari",
         "explanationUz": "Ko'p uy ishlari 'do the ...' shaklida aytiladi. Bu turg'un birikmalar.",
         "items": [
-          { "base": "ironing", "baseUz": "dazmollash", "derived": "do the ironing", "derivedUz": "kir dazmollamoq", "note": "'iron' — dazmol" },
-          { "base": "washing-up", "baseUz": "idish yuvish", "derived": "do the washing-up", "derivedUz": "idish yuvmoq", "note": "AQShda 'do the dishes'" },
-          { "base": "shopping", "baseUz": "xarid", "derived": "do the shopping", "derivedUz": "xarid qilmoq", "note": "'go shopping' — sayr uchun" },
-          { "base": "homework", "baseUz": "uy vazifasi", "derived": "do your homework", "derivedUz": "uy vazifasini bajarmoq", "note": "'make homework' XATO" },
-          { "base": "cleaning", "baseUz": "tozalash", "derived": "clean the house", "derivedUz": "uyni tozalamoq", "note": "bu 'do' siz" }
+          {
+            "base": "ironing",
+            "baseUz": "dazmollash",
+            "derived": "do the ironing",
+            "derivedUz": "kir dazmollamoq",
+            "note": "'iron' — dazmol"
+          },
+          {
+            "base": "washing-up",
+            "baseUz": "idish yuvish",
+            "derived": "do the washing-up",
+            "derivedUz": "idish yuvmoq",
+            "note": "AQShda 'do the dishes'"
+          },
+          {
+            "base": "shopping",
+            "baseUz": "xarid",
+            "derived": "do the shopping",
+            "derivedUz": "xarid qilmoq",
+            "note": "'go shopping' — sayr uchun"
+          },
+          {
+            "base": "homework",
+            "baseUz": "uy vazifasi",
+            "derived": "do your homework",
+            "derivedUz": "uy vazifasini bajarmoq",
+            "note": "'make homework' XATO"
+          },
+          {
+            "base": "cleaning",
+            "baseUz": "tozalash",
+            "derived": "clean the house",
+            "derivedUz": "uyni tozalamoq",
+            "note": "bu 'do' siz"
+          }
         ]
       },
       {
         "ruleUz": "'go' bilan mashg'ulotlar",
         "explanationUz": "Ko'p mashg'ulotlar 'go + -ing' shaklida aytiladi.",
         "items": [
-          { "base": "shop", "baseUz": "do'kon", "derived": "go shopping", "derivedUz": "xaridga bormoq", "note": "" },
-          { "base": "fish", "baseUz": "baliq", "derived": "go fishing", "derivedUz": "baliq ovlashga bormoq", "note": "" },
-          { "base": "swim", "baseUz": "suzmoq", "derived": "go swimming", "derivedUz": "suzishga bormoq", "note": "" },
-          { "base": "camp", "baseUz": "chodir", "derived": "go camping", "derivedUz": "chodirga bormoq", "note": "" },
-          { "base": "picnic", "baseUz": "piknik", "derived": "go ON a picnic", "derivedUz": "piknikka bormoq", "note": "ISTISNO: 'on' bilan" }
+          {
+            "base": "shop",
+            "baseUz": "do'kon",
+            "derived": "go shopping",
+            "derivedUz": "xaridga bormoq",
+            "note": ""
+          },
+          {
+            "base": "fish",
+            "baseUz": "baliq",
+            "derived": "go fishing",
+            "derivedUz": "baliq ovlashga bormoq",
+            "note": ""
+          },
+          {
+            "base": "swim",
+            "baseUz": "suzmoq",
+            "derived": "go swimming",
+            "derivedUz": "suzishga bormoq",
+            "note": ""
+          },
+          {
+            "base": "camp",
+            "baseUz": "chodir",
+            "derived": "go camping",
+            "derivedUz": "chodirga bormoq",
+            "note": ""
+          },
+          {
+            "base": "picnic",
+            "baseUz": "piknik",
+            "derived": "go ON a picnic",
+            "derivedUz": "piknikka bormoq",
+            "note": "ISTISNO: 'on' bilan"
+          }
         ]
       },
       {
         "ruleUz": "Fe'l + predlog (buyruq mashqidan)",
         "explanationUz": "Ba'zi fe'llar predlog talab qiladi, ba'zilari yo'q. Buni yodlab olish kerak.",
         "items": [
-          { "base": "wake", "baseUz": "uyg'onmoq", "derived": "wake UP", "derivedUz": "uyg'onmoq", "note": "'up' shart" },
-          { "base": "look", "baseUz": "qaramoq", "derived": "look AT", "derivedUz": "...ga qaramoq", "note": "'at' shart" },
-          { "base": "help", "baseUz": "yordam bermoq", "derived": "help me", "derivedUz": "menga yordam ber", "note": "predlog KERAK EMAS" },
-          { "base": "give", "baseUz": "bermoq", "derived": "give this TO Liz", "derivedUz": "buni Lizga ber", "note": "'to' shart" },
-          { "base": "go", "baseUz": "bormoq", "derived": "go TO your room", "derivedUz": "xonangga bor", "note": "'to' shart" }
+          {
+            "base": "wake",
+            "baseUz": "uyg'onmoq",
+            "derived": "wake UP",
+            "derivedUz": "uyg'onmoq",
+            "note": "'up' shart"
+          },
+          {
+            "base": "look",
+            "baseUz": "qaramoq",
+            "derived": "look AT",
+            "derivedUz": "...ga qaramoq",
+            "note": "'at' shart"
+          },
+          {
+            "base": "help",
+            "baseUz": "yordam bermoq",
+            "derived": "help me",
+            "derivedUz": "menga yordam ber",
+            "note": "predlog KERAK EMAS"
+          },
+          {
+            "base": "give",
+            "baseUz": "bermoq",
+            "derived": "give this TO Liz",
+            "derivedUz": "buni Lizga ber",
+            "note": "'to' shart"
+          },
+          {
+            "base": "go",
+            "baseUz": "bormoq",
+            "derived": "go TO your room",
+            "derivedUz": "xonangga bor",
+            "note": "'to' shart"
+          }
         ]
       },
       {
         "ruleUz": "Yoqtirish darajalari va inkor shakllari",
         "explanationUz": "Faqat 'not like' uchun don't/doesn't kerak. Qolganlari to'g'ridan-to'g'ri ishlatiladi.",
         "items": [
-          { "base": "love ☺☺", "baseUz": "juda yaxshi ko'rmoq", "derived": "he loves / they love", "derivedUz": "eng ijobiy", "note": "" },
-          { "base": "like ☺", "baseUz": "yoqtirmoq", "derived": "he likes / they like", "derivedUz": "ijobiy", "note": "" },
-          { "base": "not like ☹", "baseUz": "yoqtirmaslik", "derived": "he doesn't like / they don't like", "derivedUz": "salbiy", "note": "yordamchi fe'l kerak" },
-          { "base": "hate ☹☹", "baseUz": "yomon ko'rmoq", "derived": "he hates / they hate", "derivedUz": "eng salbiy", "note": "yordamchi fe'l KERAK EMAS" }
+          {
+            "base": "love ☺☺",
+            "baseUz": "juda yaxshi ko'rmoq",
+            "derived": "he loves / they love",
+            "derivedUz": "eng ijobiy",
+            "note": ""
+          },
+          {
+            "base": "like ☺",
+            "baseUz": "yoqtirmoq",
+            "derived": "he likes / they like",
+            "derivedUz": "ijobiy",
+            "note": ""
+          },
+          {
+            "base": "not like ☹",
+            "baseUz": "yoqtirmaslik",
+            "derived": "he doesn't like / they don't like",
+            "derivedUz": "salbiy",
+            "note": "yordamchi fe'l kerak"
+          },
+          {
+            "base": "hate ☹☹",
+            "baseUz": "yomon ko'rmoq",
+            "derived": "he hates / they hate",
+            "derivedUz": "eng salbiy",
+            "note": "yordamchi fe'l KERAK EMAS"
+          }
         ]
       }
     ]
@@ -270,25 +707,85 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "to wake up", "uz": "uyg'onmoq" },
-    { "en": "late", "uz": "kech, kechikkan" },
-    { "en": "to move", "uz": "qimirlamoq" },
-    { "en": "homework", "uz": "uy vazifasi" },
-    { "en": "a room", "uz": "xona" },
-    { "en": "to listen", "uz": "tinglamoq" },
-    { "en": "to use", "uz": "ishlatmoq" },
-    { "en": "to walk", "uz": "yurmoq, sayr qilmoq" },
-    { "en": "to give", "uz": "bermoq" },
-    { "en": "to hate", "uz": "yomon ko'rmoq" },
-    { "en": "handsome", "uz": "kelishgan (erkak)" },
-    { "en": "to do the ironing", "uz": "kir dazmollamoq" },
-    { "en": "to do the washing-up", "uz": "idish yuvmoq" },
-    { "en": "to clean the house", "uz": "uyni tozalamoq" },
-    { "en": "to go shopping", "uz": "xaridga bormoq" },
-    { "en": "to go on a picnic", "uz": "piknikka bormoq" },
-    { "en": "classical music", "uz": "klassik musiqa" },
-    { "en": "to wake up early", "uz": "erta turmoq" },
-    { "en": "a key (in an exercise)", "uz": "kalit, izoh" },
-    { "en": "a prompt", "uz": "yo'naltiruvchi so'z" }
+    {
+      "en": "to wake up",
+      "uz": "uyg'onmoq"
+    },
+    {
+      "en": "late",
+      "uz": "kech, kechikkan"
+    },
+    {
+      "en": "to move",
+      "uz": "qimirlamoq"
+    },
+    {
+      "en": "homework",
+      "uz": "uy vazifasi"
+    },
+    {
+      "en": "a room",
+      "uz": "xona"
+    },
+    {
+      "en": "to listen",
+      "uz": "tinglamoq"
+    },
+    {
+      "en": "to use",
+      "uz": "ishlatmoq"
+    },
+    {
+      "en": "to walk",
+      "uz": "yurmoq, sayr qilmoq"
+    },
+    {
+      "en": "to give",
+      "uz": "bermoq"
+    },
+    {
+      "en": "to hate",
+      "uz": "yomon ko'rmoq"
+    },
+    {
+      "en": "handsome",
+      "uz": "kelishgan (erkak)"
+    },
+    {
+      "en": "to do the ironing",
+      "uz": "kir dazmollamoq"
+    },
+    {
+      "en": "to do the washing-up",
+      "uz": "idish yuvmoq"
+    },
+    {
+      "en": "to clean the house",
+      "uz": "uyni tozalamoq"
+    },
+    {
+      "en": "to go shopping",
+      "uz": "xaridga bormoq"
+    },
+    {
+      "en": "to go on a picnic",
+      "uz": "piknikka bormoq"
+    },
+    {
+      "en": "classical music",
+      "uz": "klassik musiqa"
+    },
+    {
+      "en": "to wake up early",
+      "uz": "erta turmoq"
+    },
+    {
+      "en": "a key (in an exercise)",
+      "uz": "kalit, izoh"
+    },
+    {
+      "en": "a prompt",
+      "uz": "yo'naltiruvchi so'z"
+    }
   ]
 }
