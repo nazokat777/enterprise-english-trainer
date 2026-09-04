@@ -5,6 +5,7 @@
   "unit": 3,
   "unitTitle": "Home Sweet Home",
   "module": 1,
+  "scanNote": "20-BET. Unit 3 — ko'plik, this/these-that/those, there is/there are.\n\nSkaner bilan tekshirildi. HAMMASI TO'G'RI: 7-mashq (14 ko'plik + 2 qoida), 8-mashq (5 gap), 9-mashq (10 bo'shliq + 3 qoida), 10-mashq (14 belgi + 5 gap) — jami 53 ta javob.\n\n⚠ 8-MAShQ — BIRLIK/KO'PLIK ALMAShADI: har gapda birinchi rasm BITTA (this), ikkinchisi esa ba'zan bitta, ba'zan ikkita:\n  2 stol + IKKI stul → 'This is a desk and THOSE ARE chairs.'\n  3 skameyka + IKKI chiroq → 'THOSE ARE lamps.'\n  4 oyna + IKKI sochiq → 'THOSE ARE towels.'\n  5 kitob javoni + BITTA kamin → 'THAT IS a fireplace.'\n  6 plita + BITTA muzlatgich → 'THAT IS a fridge.'\n  ⚠ Ya'ni rasmdagi SONGA qarab 'that is' yoki 'those are' tanlanadi.\n\n⚠ 10-MAShQ SURATIDAN TEKShIRILDI (7 ta bor, 7 ta yo'q):\n  BOR (✓): dining-table, pictures, rug, chairs, vase, curtains, flowers\n  YO'Q (✗): armchair, posters, sofa, cupboards, mirror, beds, pillows\n  ⚠ Suratda ovqat xonasi ko'rinadi — divan, karavot va yostiq bo'lishi mumkin emas.\n\n⚠ 10b — GAP QOLIPI SONGA BOG'LIQ:\n  birlik: 'There IS a rug but there ISN'T a sofa.'\n  ko'plik: 'There ARE SOME chairs but there AREN'T ANY cupboards.'\n  ⚠ 'some' faqat tasdiqda, 'any' faqat inkorda.\n\n⚠ 7-MAShQ QOIDASI: '-ss, -s, -sh, -ch, -x, -o' bilan tugagan otlar '-ES' oladi (addresses, buses, brushes, benches, dishes, boxes, watches). Qolganlariga oddiy '-S'.",
   "sections": [
     {
       "kind": "grammar_theory",
@@ -17,12 +18,24 @@
           {
             "uzRule": "Ko'p otlar oddiy -s oladi.",
             "enRule": "Most nouns take -s in the plural.",
-            "examples": ["chair → chairs", "room → rooms", "wall → walls", "table → tables"]
+            "examples": [
+              "chair → chairs",
+              "room → rooms",
+              "wall → walls",
+              "table → tables"
+            ]
           },
           {
             "uzRule": "-ss, -s, -sh, -ch, -x, -o bilan tugagan otlar -es oladi.",
             "enRule": "Nouns ending in -ss, -s, -sh, -ch, -x, -o take -es in the plural.",
-            "examples": ["address → addresses", "bus → buses", "brush → brushes", "bench → benches", "box → boxes", "tomato → tomatoes"]
+            "examples": [
+              "address → addresses",
+              "bus → buses",
+              "brush → brushes",
+              "bench → benches",
+              "box → boxes",
+              "tomato → tomatoes"
+            ]
           }
         ],
         "noteUz": "NEGA -es? Chunki 's' tovushidan keyin yana 's' aytib bo'lmaydi.\n  bus + s = 'bass' — eshitilmaydi\n  bus + es = 'BAS-iz' — eshitiladi\nYa'ni -es qo'shimchasi TALAFFUZ uchun kerak. Uni /iz/ deb o'qiladi.",
@@ -40,7 +53,11 @@
             {
               "textEn": "Nouns ending in ______ take -es in the plural.",
               "uz": "Qaysi harflar bilan tugagan otlar -es oladi?",
-              "options": ["-ss, -s, -sh, -ch, -x, -o", "-e, -y, -l, -r", "-t, -d, -n, -m"],
+              "options": [
+                "-ss, -s, -sh, -ch, -x, -o",
+                "-e, -y, -l, -r",
+                "-t, -d, -n, -m"
+              ],
               "answer": "-ss, -s, -sh, -ch, -x, -o",
               "whyUz": "Jadvaldan: address (-ss), bus (-s), brush (-sh), bench (-ch). Bularga -x (box) va -o (tomato) ham qo'shiladi."
             }
@@ -54,20 +71,76 @@
           "explanationUz": "Jadvaldagi 8 ta so'z + Unit 3 lug'atidan yana bir nechtasi.\nHar birida -s yoki -es tanlashingiz kerak.",
           "bookRef": "Coursebook, 20-bet, 7-mashq jadvali",
           "items": [
-            { "textEn": "chair →", "answer": "chairs", "whyUz": "oddiy -s" },
-            { "textEn": "room →", "answer": "rooms", "whyUz": "oddiy -s" },
-            { "textEn": "wall →", "answer": "walls", "whyUz": "oddiy -s" },
-            { "textEn": "table →", "answer": "tables", "whyUz": "oddiy -s" },
-            { "textEn": "address →", "answer": "addresses", "whyUz": "-ss bilan tugaydi → -es" },
-            { "textEn": "bus →", "answer": "buses", "whyUz": "-s bilan tugaydi → -es" },
-            { "textEn": "brush →", "answer": "brushes", "whyUz": "-sh bilan tugaydi → -es" },
-            { "textEn": "bench →", "answer": "benches", "whyUz": "-ch bilan tugaydi → -es" },
-            { "textEn": "sofa →", "answer": "sofas", "whyUz": "oddiy -s" },
-            { "textEn": "bookcase →", "answer": "bookcases", "whyUz": "-e bor, faqat -s qo'shiladi" },
-            { "textEn": "cupboard →", "answer": "cupboards", "whyUz": "oddiy -s" },
-            { "textEn": "dish →", "answer": "dishes", "whyUz": "-sh bilan tugaydi → -es" },
-            { "textEn": "box →", "answer": "boxes", "whyUz": "-x bilan tugaydi → -es" },
-            { "textEn": "watch →", "answer": "watches", "whyUz": "-ch bilan tugaydi → -es" }
+            {
+              "textEn": "chair →",
+              "answer": "chairs",
+              "whyUz": "oddiy -s"
+            },
+            {
+              "textEn": "room →",
+              "answer": "rooms",
+              "whyUz": "oddiy -s"
+            },
+            {
+              "textEn": "wall →",
+              "answer": "walls",
+              "whyUz": "oddiy -s"
+            },
+            {
+              "textEn": "table →",
+              "answer": "tables",
+              "whyUz": "oddiy -s"
+            },
+            {
+              "textEn": "address →",
+              "answer": "addresses",
+              "whyUz": "-ss bilan tugaydi → -es"
+            },
+            {
+              "textEn": "bus →",
+              "answer": "buses",
+              "whyUz": "-s bilan tugaydi → -es"
+            },
+            {
+              "textEn": "brush →",
+              "answer": "brushes",
+              "whyUz": "-sh bilan tugaydi → -es"
+            },
+            {
+              "textEn": "bench →",
+              "answer": "benches",
+              "whyUz": "-ch bilan tugaydi → -es"
+            },
+            {
+              "textEn": "sofa →",
+              "answer": "sofas",
+              "whyUz": "oddiy -s"
+            },
+            {
+              "textEn": "bookcase →",
+              "answer": "bookcases",
+              "whyUz": "-e bor, faqat -s qo'shiladi"
+            },
+            {
+              "textEn": "cupboard →",
+              "answer": "cupboards",
+              "whyUz": "oddiy -s"
+            },
+            {
+              "textEn": "dish →",
+              "answer": "dishes",
+              "whyUz": "-sh bilan tugaydi → -es"
+            },
+            {
+              "textEn": "box →",
+              "answer": "boxes",
+              "whyUz": "-x bilan tugaydi → -es"
+            },
+            {
+              "textEn": "watch →",
+              "answer": "watches",
+              "whyUz": "-ch bilan tugaydi → -es"
+            }
           ]
         }
       ]
@@ -83,12 +156,18 @@
           {
             "uzRule": "YAQINDAGI narsa uchun this (bitta) / these (ko'p).",
             "enRule": "We use this/these for things near us.",
-            "examples": ["This is a chair.", "These are chairs."]
+            "examples": [
+              "This is a chair.",
+              "These are chairs."
+            ]
           },
           {
             "uzRule": "UZOQDAGI narsa uchun that (bitta) / those (ko'p).",
             "enRule": "We use that/those for things far from us.",
-            "examples": ["That is a clock.", "Those are clocks."]
+            "examples": [
+              "That is a clock.",
+              "Those are clocks."
+            ]
           }
         ],
         "warningUz": "ENG KO'P XATO — fe'lni unutish:\n  ❌ This a chair.        ✅ This IS a chair.\n  ❌ These is chairs.     ✅ These ARE chairs.\n\nis/are ko'rsatish olmoshiga qarab tanlanadi:\n  this / that  → IS\n  these / those → ARE",
@@ -106,7 +185,11 @@
             {
               "textEn": "We use ______ for things far from us.",
               "uz": "Uzoqdagi narsalar uchun qaysi juftlik ishlatiladi?",
-              "options": ["that / those", "this / these", "here / there"],
+              "options": [
+                "that / those",
+                "this / these",
+                "here / there"
+              ],
               "answer": "that / those",
               "whyUz": "FAR qatoridagi namunalar: 'That is a clock.' va 'Those are clocks.'"
             }
@@ -120,14 +203,38 @@
           "explanationUz": "Har bir raqamda IKKITA rasm bor: birinchisi YAQIN (this/these),\nikkinchisi UZOQ (that/those).\n\nNamuna: This is a sofa and that is a table.\n\nQadam-qadam:\n  1) Birinchi narsa bittami? → This is a ...\n     Ko'pmi?              → These are ...\n  2) Ikkinchi narsa bittami? → that is a ...\n     Ko'pmi?               → those are ...\n\nDIQQAT: gap o'rtasidagi 'that/those' KICHIK harf bilan yoziladi.\nVa 'and' dan oldin vergul qo'yilmaydi.",
           "bookRef": "Coursebook, 20-bet, 8-mashq",
           "example": [
-            { "speaker": "1", "en": "This is a sofa and that is a table.", "uz": "Bu divan, u esa stol." }
+            {
+              "speaker": "1",
+              "en": "This is a sofa and that is a table.",
+              "uz": "Bu divan, u esa stol."
+            }
           ],
           "modelSentences": [
-            { "word": "2. desk (yaqin, bitta) + chairs (uzoq, ikkita)", "sentence": "This is a desk and those are chairs.", "uz": "Bu yozuv stoli, ular esa stullar." },
-            { "word": "3. bench (yaqin, bitta) + lamps (uzoq, ikkita)", "sentence": "This is a bench and those are lamps.", "uz": "Bu skameyka, ular esa chiroqlar." },
-            { "word": "4. mirror (yaqin, bitta) + towels (uzoq, ikkita)", "sentence": "This is a mirror and those are towels.", "uz": "Bu oyna, ular esa sochiqlar." },
-            { "word": "5. bookcase (yaqin, bitta) + fireplace (uzoq, bitta)", "sentence": "This is a bookcase and that is a fireplace.", "uz": "Bu kitob javoni, u esa kamin." },
-            { "word": "6. cooker (yaqin, bitta) + fridge (uzoq, bitta)", "sentence": "This is a cooker and that is a fridge.", "uz": "Bu plita, u esa muzlatgich." }
+            {
+              "word": "2. desk (yaqin, bitta) + chairs (uzoq, ikkita)",
+              "sentence": "This is a desk and those are chairs.",
+              "uz": "Bu yozuv stoli, ular esa stullar."
+            },
+            {
+              "word": "3. bench (yaqin, bitta) + lamps (uzoq, ikkita)",
+              "sentence": "This is a bench and those are lamps.",
+              "uz": "Bu skameyka, ular esa chiroqlar."
+            },
+            {
+              "word": "4. mirror (yaqin, bitta) + towels (uzoq, ikkita)",
+              "sentence": "This is a mirror and those are towels.",
+              "uz": "Bu oyna, ular esa sochiqlar."
+            },
+            {
+              "word": "5. bookcase (yaqin, bitta) + fireplace (uzoq, bitta)",
+              "sentence": "This is a bookcase and that is a fireplace.",
+              "uz": "Bu kitob javoni, u esa kamin."
+            },
+            {
+              "word": "6. cooker (yaqin, bitta) + fridge (uzoq, bitta)",
+              "sentence": "This is a cooker and that is a fridge.",
+              "uz": "Bu plita, u esa muzlatgich."
+            }
           ]
         }
       ]
@@ -140,18 +247,63 @@
         "titleUz": "'There is / There are' — bor / yo'q",
         "explanationUz": "Bu tuzilma 'BIROR JOYDA NIMADIR BOR' deyish uchun ishlatiladi.\n'There' bu yerda 'u yerda' degani EMAS — u shunchaki gapni boshlash uchun\nturadigan so'z. Tarjima qilinmaydi.\n\n  There is a bed in the bedroom.  — Yotoqxonada karavot bor.\n  (so'zma-so'z: 'bor bitta karavot yotoqxonada')",
         "table": [
-          { "subject": "birlik", "full": "There is a/an ...", "negShort": "There isn't a/an ...", "interrogative": "Is there a/an ...?" },
-          { "subject": "ko'plik", "full": "There are some ...", "negShort": "There aren't any ...", "interrogative": "Are there any ...?" }
+          {
+            "subject": "birlik",
+            "full": "There is a/an ...",
+            "negShort": "There isn't a/an ...",
+            "interrogative": "Is there a/an ...?"
+          },
+          {
+            "subject": "ko'plik",
+            "full": "There are some ...",
+            "negShort": "There aren't any ...",
+            "interrogative": "Are there any ...?"
+          }
         ],
         "examples": [
-          { "q": "Is there a bed in the bedroom?", "qUz": "Yotoqxonada karavot bormi?", "yes": "Yes, there is.", "no": "No, there isn't." },
-          { "q": "Are there any chairs in the kitchen?", "qUz": "Oshxonada stullar bormi?", "yes": "Yes, there are.", "no": "No, there aren't." }
+          {
+            "q": "Is there a bed in the bedroom?",
+            "qUz": "Yotoqxonada karavot bormi?",
+            "yes": "Yes, there is.",
+            "no": "No, there isn't."
+          },
+          {
+            "q": "Are there any chairs in the kitchen?",
+            "qUz": "Oshxonada stullar bormi?",
+            "yes": "Yes, there are.",
+            "no": "No, there aren't."
+          }
         ],
         "keyRules": [
-          { "uzRule": "Birlikda — there IS.", "enRule": "We use there is in the singular.", "examples": ["There is a bed in the bedroom."] },
-          { "uzRule": "Ko'plikda — there ARE.", "enRule": "We use there are in the plural.", "examples": ["There are two beds in the bedroom."] },
-          { "uzRule": "Ko'plik + TASDIQ gapda — SOME.", "enRule": "We use some in the plural in the affirmative.", "examples": ["There are some chairs in the kitchen."] },
-          { "uzRule": "Ko'plik + INKOR va SAVOL gapda — ANY.", "enRule": "We use any in the plural in the negative and interrogative.", "examples": ["There aren't any chairs in the kitchen.", "Are there any chairs in the kitchen?"] }
+          {
+            "uzRule": "Birlikda — there IS.",
+            "enRule": "We use there is in the singular.",
+            "examples": [
+              "There is a bed in the bedroom."
+            ]
+          },
+          {
+            "uzRule": "Ko'plikda — there ARE.",
+            "enRule": "We use there are in the plural.",
+            "examples": [
+              "There are two beds in the bedroom."
+            ]
+          },
+          {
+            "uzRule": "Ko'plik + TASDIQ gapda — SOME.",
+            "enRule": "We use some in the plural in the affirmative.",
+            "examples": [
+              "There are some chairs in the kitchen."
+            ]
+          },
+          {
+            "uzRule": "Ko'plik + INKOR va SAVOL gapda — ANY.",
+            "enRule": "We use any in the plural in the negative and interrogative.",
+            "examples": [
+              "There aren't any chairs in the kitchen.",
+              "Are there any chairs in the kitchen?"
+            ]
+          }
         ],
         "warningUz": "SOME yoki ANY?\n  ✅ There are SOME chairs.        (tasdiq)\n  ✅ There aren't ANY chairs.      (inkor)\n  ✅ Are there ANY chairs?         (savol)\n  ❌ There aren't some chairs.\n  ❌ Are there some chairs?\n\nOson eslash: 'some' — faqat TASDIQDA. Qolgan ikkisida 'any'.",
         "noteUz": "Qisqartmalar:\n  there is not  = there isn't\n  there are not = there aren't\nOg'zaki nutqda deyarli doim qisqa shakl ishlatiladi.\n\nSavolda so'z tartibi ALMASHADI:\n  There is a bed. → IS THERE a bed?\n  There are beds. → ARE THERE any beds?"
@@ -168,21 +320,31 @@
             {
               "textEn": "We use there ______ in the singular. (There ___ a bed in the bedroom.)",
               "uz": "Birlikda qaysi shakl ishlatiladi?",
-              "options": ["is", "are"],
+              "options": [
+                "is",
+                "are"
+              ],
               "answer": "is",
               "whyUz": "There IS a bed in the bedroom. — bitta karavot, shuning uchun 'is'."
             },
             {
               "textEn": "We use there ______ in the plural. (There ___ two beds in the bedroom.)",
               "uz": "Ko'plikda qaysi shakl ishlatiladi?",
-              "options": ["are", "is"],
+              "options": [
+                "are",
+                "is"
+              ],
               "answer": "are",
               "whyUz": "There ARE two beds in the bedroom. — ikkita karavot, shuning uchun 'are'."
             },
             {
               "textEn": "We use ______ in the plural in the negative and interrogative.",
               "uz": "Ko'plik inkor va savol gaplarda qaysi so'z ishlatiladi?",
-              "options": ["any", "some", "a"],
+              "options": [
+                "any",
+                "some",
+                "a"
+              ],
               "answer": "any",
               "whyUz": "There aren't ANY chairs. / Are there ANY chairs? — 'some' faqat tasdiq gapda."
             }
@@ -196,16 +358,56 @@
           "explanationUz": "Har bir gapda birlikmi-ko'plikmi, tasdiqmi-inkormi ekaniga qarang.",
           "bookRef": "Coursebook, 20-bet, 9-mashq qoidasi",
           "items": [
-            { "textEn": "____ a bed in the bedroom. (bor)", "answer": "There is", "whyUz": "birlik + tasdiq" },
-            { "textEn": "____ two beds in the bedroom. (bor)", "answer": "There are", "whyUz": "ko'plik + tasdiq" },
-            { "textEn": "There are ____ chairs in the kitchen. (tasdiq)", "answer": "some", "whyUz": "ko'plik + tasdiq → some" },
-            { "textEn": "There aren't ____ chairs in the kitchen. (inkor)", "answer": "any", "whyUz": "ko'plik + inkor → any" },
-            { "textEn": "____ there any chairs in the kitchen? (savol, ko'plik)", "answer": "Are", "whyUz": "ko'plik savol → Are there ...?" },
-            { "textEn": "____ there a bed in the bedroom? (savol, birlik)", "answer": "Is", "whyUz": "birlik savol → Is there ...?" },
-            { "textEn": "Is there a bed in the bedroom? — Yes, ____ .", "answer": "there is", "whyUz": "birlik qisqa javob" },
-            { "textEn": "Is there a bed in the bedroom? — No, ____ .", "answer": "there isn't", "whyUz": "birlik inkor qisqa javob" },
-            { "textEn": "Are there any chairs in the kitchen? — Yes, ____ .", "answer": "there are", "whyUz": "ko'plik qisqa javob" },
-            { "textEn": "Are there any chairs in the kitchen? — No, ____ .", "answer": "there aren't", "whyUz": "ko'plik inkor qisqa javob" }
+            {
+              "textEn": "____ a bed in the bedroom. (bor)",
+              "answer": "There is",
+              "whyUz": "birlik + tasdiq"
+            },
+            {
+              "textEn": "____ two beds in the bedroom. (bor)",
+              "answer": "There are",
+              "whyUz": "ko'plik + tasdiq"
+            },
+            {
+              "textEn": "There are ____ chairs in the kitchen. (tasdiq)",
+              "answer": "some",
+              "whyUz": "ko'plik + tasdiq → some"
+            },
+            {
+              "textEn": "There aren't ____ chairs in the kitchen. (inkor)",
+              "answer": "any",
+              "whyUz": "ko'plik + inkor → any"
+            },
+            {
+              "textEn": "____ there any chairs in the kitchen? (savol, ko'plik)",
+              "answer": "Are",
+              "whyUz": "ko'plik savol → Are there ...?"
+            },
+            {
+              "textEn": "____ there a bed in the bedroom? (savol, birlik)",
+              "answer": "Is",
+              "whyUz": "birlik savol → Is there ...?"
+            },
+            {
+              "textEn": "Is there a bed in the bedroom? — Yes, ____ .",
+              "answer": "there is",
+              "whyUz": "birlik qisqa javob"
+            },
+            {
+              "textEn": "Is there a bed in the bedroom? — No, ____ .",
+              "answer": "there isn't",
+              "whyUz": "birlik inkor qisqa javob"
+            },
+            {
+              "textEn": "Are there any chairs in the kitchen? — Yes, ____ .",
+              "answer": "there are",
+              "whyUz": "ko'plik qisqa javob"
+            },
+            {
+              "textEn": "Are there any chairs in the kitchen? — No, ____ .",
+              "answer": "there aren't",
+              "whyUz": "ko'plik inkor qisqa javob"
+            }
           ]
         }
       ]
@@ -223,20 +425,150 @@
           "explanationUz": "Rasmda ovqatlanish xonasi tasvirlangan.\nKitob betini ochib rasmga qarang, so'ng har bir buyum bormi-yo'qmi belgilang.\n\nBerilgan namunalar: dining-table ✓, armchair ✗, pictures ✓, posters ✗",
           "bookRef": "Coursebook, 20-bet, 10-mashq rasmi",
           "items": [
-            { "textEn": "dining-table", "uz": "ovqat stoli — rasmda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✓ bor", "given": true, "whyUz": "Namuna: rasm o'rtasida katta yumaloq ovqat stoli turibdi." },
-            { "textEn": "armchair", "uz": "kreslo — rasmda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✗ yo'q", "given": true, "whyUz": "Namuna: xonada faqat oddiy stullar bor, kreslo yo'q." },
-            { "textEn": "pictures", "uz": "rasmlar — devorda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✓ bor", "given": true, "whyUz": "Namuna: devorlarda ramkali rasmlar osilgan." },
-            { "textEn": "posters", "uz": "plakatlar — devorda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✗ yo'q", "given": true, "whyUz": "Namuna: rasmlar bor, lekin plakat yo'q." },
-            { "textEn": "rug", "uz": "gilamcha — polda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✓ bor", "whyUz": "Stol ostida naqshli gilamcha yotibdi." },
-            { "textEn": "sofa", "uz": "divan — rasmda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✗ yo'q", "whyUz": "Bu ovqatlanish xonasi, divan mehmonxonada bo'ladi." },
-            { "textEn": "chairs", "uz": "stullar — stol atrofida bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✓ bor", "whyUz": "Stol atrofida bir nechta yog'och stul turibdi." },
-            { "textEn": "cupboards", "uz": "shkaflar — rasmda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✗ yo'q", "whyUz": "Shkaf ko'rinmaydi — u odatda oshxonada bo'ladi." },
-            { "textEn": "vase", "uz": "guldon — stol ustida bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✓ bor", "whyUz": "Stol ustida gulli guldon turibdi." },
-            { "textEn": "mirror", "uz": "oyna — devorda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✗ yo'q", "whyUz": "Devorda faqat rasmlar bor, oyna yo'q." },
-            { "textEn": "curtains", "uz": "pardalar — derazada bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✓ bor", "whyUz": "O'ng tomondagi derazada oq pardalar osilgan." },
-            { "textEn": "beds", "uz": "karavotlar — rasmda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✗ yo'q", "whyUz": "Karavot yotoqxonada bo'ladi, ovqatlanish xonasida emas." },
-            { "textEn": "flowers", "uz": "gullar — rasmda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✓ bor", "whyUz": "Guldonda gullar bor." },
-            { "textEn": "pillows", "uz": "yostiqlar — rasmda bormi?", "options": ["✓ bor", "✗ yo'q"], "answer": "✗ yo'q", "whyUz": "Yostiq karavotda bo'ladi, bu yerda yo'q." }
+            {
+              "textEn": "dining-table",
+              "uz": "ovqat stoli — rasmda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✓ bor",
+              "given": true,
+              "whyUz": "Namuna: rasm o'rtasida katta yumaloq ovqat stoli turibdi."
+            },
+            {
+              "textEn": "armchair",
+              "uz": "kreslo — rasmda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✗ yo'q",
+              "given": true,
+              "whyUz": "Namuna: xonada faqat oddiy stullar bor, kreslo yo'q."
+            },
+            {
+              "textEn": "pictures",
+              "uz": "rasmlar — devorda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✓ bor",
+              "given": true,
+              "whyUz": "Namuna: devorlarda ramkali rasmlar osilgan."
+            },
+            {
+              "textEn": "posters",
+              "uz": "plakatlar — devorda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✗ yo'q",
+              "given": true,
+              "whyUz": "Namuna: rasmlar bor, lekin plakat yo'q."
+            },
+            {
+              "textEn": "rug",
+              "uz": "gilamcha — polda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✓ bor",
+              "whyUz": "Stol ostida naqshli gilamcha yotibdi."
+            },
+            {
+              "textEn": "sofa",
+              "uz": "divan — rasmda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✗ yo'q",
+              "whyUz": "Bu ovqatlanish xonasi, divan mehmonxonada bo'ladi."
+            },
+            {
+              "textEn": "chairs",
+              "uz": "stullar — stol atrofida bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✓ bor",
+              "whyUz": "Stol atrofida bir nechta yog'och stul turibdi."
+            },
+            {
+              "textEn": "cupboards",
+              "uz": "shkaflar — rasmda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✗ yo'q",
+              "whyUz": "Shkaf ko'rinmaydi — u odatda oshxonada bo'ladi."
+            },
+            {
+              "textEn": "vase",
+              "uz": "guldon — stol ustida bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✓ bor",
+              "whyUz": "Stol ustida gulli guldon turibdi."
+            },
+            {
+              "textEn": "mirror",
+              "uz": "oyna — devorda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✗ yo'q",
+              "whyUz": "Devorda faqat rasmlar bor, oyna yo'q."
+            },
+            {
+              "textEn": "curtains",
+              "uz": "pardalar — derazada bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✓ bor",
+              "whyUz": "O'ng tomondagi derazada oq pardalar osilgan."
+            },
+            {
+              "textEn": "beds",
+              "uz": "karavotlar — rasmda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✗ yo'q",
+              "whyUz": "Karavot yotoqxonada bo'ladi, ovqatlanish xonasida emas."
+            },
+            {
+              "textEn": "flowers",
+              "uz": "gullar — rasmda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✓ bor",
+              "whyUz": "Guldonda gullar bor."
+            },
+            {
+              "textEn": "pillows",
+              "uz": "yostiqlar — rasmda bormi?",
+              "options": [
+                "✓ bor",
+                "✗ yo'q"
+              ],
+              "answer": "✗ yo'q",
+              "whyUz": "Yostiq karavotda bo'ladi, bu yerda yo'q."
+            }
           ]
         },
         {
@@ -247,15 +579,43 @@
           "explanationUz": "Ikkita buyumni BITTA gapda qarama-qarshi qo'yamiz:\n  bor buyum + BUT + yo'q buyum\n\nNamunalar:\n  There is a dining-table but there isn't an armchair.\n  There are some pictures but there aren't any posters.\n\nDIQQAT — 4 ta shakl bir gapda:\n  bor,  bitta  → There is a/an ...\n  yo'q, bitta  → there isn't a/an ...\n  bor,  ko'p   → There are some ...\n  yo'q, ko'p   → there aren't any ...\n\nVa 'an armchair' — 'a' emas, chunki 'armchair' unli tovush bilan boshlanadi.",
           "bookRef": "Coursebook, 20-bet, 10-mashq",
           "example": [
-            { "speaker": "1", "en": "There is a dining-table but there isn't an armchair.", "uz": "Ovqat stoli bor, lekin kreslo yo'q." },
-            { "speaker": "2", "en": "There are some pictures but there aren't any posters.", "uz": "Rasmlar bor, lekin plakatlar yo'q." }
+            {
+              "speaker": "1",
+              "en": "There is a dining-table but there isn't an armchair.",
+              "uz": "Ovqat stoli bor, lekin kreslo yo'q."
+            },
+            {
+              "speaker": "2",
+              "en": "There are some pictures but there aren't any posters.",
+              "uz": "Rasmlar bor, lekin plakatlar yo'q."
+            }
           ],
           "modelSentences": [
-            { "word": "rug ✓ / sofa ✗", "sentence": "There is a rug but there isn't a sofa.", "uz": "Gilamcha bor, lekin divan yo'q." },
-            { "word": "chairs ✓ / cupboards ✗", "sentence": "There are some chairs but there aren't any cupboards.", "uz": "Stullar bor, lekin shkaflar yo'q." },
-            { "word": "vase ✓ / mirror ✗", "sentence": "There is a vase but there isn't a mirror.", "uz": "Guldon bor, lekin oyna yo'q." },
-            { "word": "curtains ✓ / beds ✗", "sentence": "There are some curtains but there aren't any beds.", "uz": "Pardalar bor, lekin karavotlar yo'q." },
-            { "word": "flowers ✓ / pillows ✗", "sentence": "There are some flowers but there aren't any pillows.", "uz": "Gullar bor, lekin yostiqlar yo'q." }
+            {
+              "word": "rug ✓ / sofa ✗",
+              "sentence": "There is a rug but there isn't a sofa.",
+              "uz": "Gilamcha bor, lekin divan yo'q."
+            },
+            {
+              "word": "chairs ✓ / cupboards ✗",
+              "sentence": "There are some chairs but there aren't any cupboards.",
+              "uz": "Stullar bor, lekin shkaflar yo'q."
+            },
+            {
+              "word": "vase ✓ / mirror ✗",
+              "sentence": "There is a vase but there isn't a mirror.",
+              "uz": "Guldon bor, lekin oyna yo'q."
+            },
+            {
+              "word": "curtains ✓ / beds ✗",
+              "sentence": "There are some curtains but there aren't any beds.",
+              "uz": "Pardalar bor, lekin karavotlar yo'q."
+            },
+            {
+              "word": "flowers ✓ / pillows ✗",
+              "sentence": "There are some flowers but there aren't any pillows.",
+              "uz": "Gullar bor, lekin yostiqlar yo'q."
+            }
           ]
         }
       ]
@@ -269,39 +629,129 @@
         "ruleUz": "Oddiy -s (ko'p otlar)",
         "explanationUz": "Otning shakli o'zgarmaydi, oxiriga -s qo'shiladi.",
         "items": [
-          { "base": "chair", "baseUz": "stul", "derived": "chairs", "derivedUz": "stullar", "note": "/z/ deb o'qiladi" },
-          { "base": "room", "baseUz": "xona", "derived": "rooms", "derivedUz": "xonalar", "note": "/z/" },
-          { "base": "wall", "baseUz": "devor", "derived": "walls", "derivedUz": "devorlar", "note": "/z/" },
-          { "base": "table", "baseUz": "stol", "derived": "tables", "derivedUz": "stollar", "note": "/z/" },
-          { "base": "book", "baseUz": "kitob", "derived": "books", "derivedUz": "kitoblar", "note": "/s/ — jarangsiz" }
+          {
+            "base": "chair",
+            "baseUz": "stul",
+            "derived": "chairs",
+            "derivedUz": "stullar",
+            "note": "/z/ deb o'qiladi"
+          },
+          {
+            "base": "room",
+            "baseUz": "xona",
+            "derived": "rooms",
+            "derivedUz": "xonalar",
+            "note": "/z/"
+          },
+          {
+            "base": "wall",
+            "baseUz": "devor",
+            "derived": "walls",
+            "derivedUz": "devorlar",
+            "note": "/z/"
+          },
+          {
+            "base": "table",
+            "baseUz": "stol",
+            "derived": "tables",
+            "derivedUz": "stollar",
+            "note": "/z/"
+          },
+          {
+            "base": "book",
+            "baseUz": "kitob",
+            "derived": "books",
+            "derivedUz": "kitoblar",
+            "note": "/s/ — jarangsiz"
+          }
         ]
       },
       {
         "ruleUz": "-es qo'shiladi (-ss, -s, -sh, -ch, -x, -o)",
         "explanationUz": "Bu tovushlardan keyin -s eshitilmaydi, shuning uchun -es qo'shiladi va /iz/ deb o'qiladi.",
         "items": [
-          { "base": "address", "baseUz": "manzil", "derived": "addresses", "derivedUz": "manzillar", "note": "-ss" },
-          { "base": "bus", "baseUz": "avtobus", "derived": "buses", "derivedUz": "avtobuslar", "note": "-s" },
-          { "base": "brush", "baseUz": "cho'tka", "derived": "brushes", "derivedUz": "cho'tkalar", "note": "-sh" },
-          { "base": "bench", "baseUz": "skameyka", "derived": "benches", "derivedUz": "skameykalar", "note": "-ch" },
-          { "base": "box", "baseUz": "quti", "derived": "boxes", "derivedUz": "qutilar", "note": "-x" },
-          { "base": "tomato", "baseUz": "pomidor", "derived": "tomatoes", "derivedUz": "pomidorlar", "note": "-o" }
+          {
+            "base": "address",
+            "baseUz": "manzil",
+            "derived": "addresses",
+            "derivedUz": "manzillar",
+            "note": "-ss"
+          },
+          {
+            "base": "bus",
+            "baseUz": "avtobus",
+            "derived": "buses",
+            "derivedUz": "avtobuslar",
+            "note": "-s"
+          },
+          {
+            "base": "brush",
+            "baseUz": "cho'tka",
+            "derived": "brushes",
+            "derivedUz": "cho'tkalar",
+            "note": "-sh"
+          },
+          {
+            "base": "bench",
+            "baseUz": "skameyka",
+            "derived": "benches",
+            "derivedUz": "skameykalar",
+            "note": "-ch"
+          },
+          {
+            "base": "box",
+            "baseUz": "quti",
+            "derived": "boxes",
+            "derivedUz": "qutilar",
+            "note": "-x"
+          },
+          {
+            "base": "tomato",
+            "baseUz": "pomidor",
+            "derived": "tomatoes",
+            "derivedUz": "pomidorlar",
+            "note": "-o"
+          }
         ]
       },
       {
         "ruleUz": "Ko'rsatish olmoshlarining ko'pligi",
         "explanationUz": "Bu so'zlar ham birlik/ko'plikka qarab o'zgaradi — ot kabi -s olmaydi, butunlay boshqa so'zga aylanadi.",
         "items": [
-          { "base": "this", "baseUz": "bu (yaqin, bitta)", "derived": "these", "derivedUz": "bular (yaqin, ko'p)", "note": "is → are ham o'zgaradi" },
-          { "base": "that", "baseUz": "u (uzoq, bitta)", "derived": "those", "derivedUz": "ular (uzoq, ko'p)", "note": "is → are ham o'zgaradi" }
+          {
+            "base": "this",
+            "baseUz": "bu (yaqin, bitta)",
+            "derived": "these",
+            "derivedUz": "bular (yaqin, ko'p)",
+            "note": "is → are ham o'zgaradi"
+          },
+          {
+            "base": "that",
+            "baseUz": "u (uzoq, bitta)",
+            "derived": "those",
+            "derivedUz": "ular (uzoq, ko'p)",
+            "note": "is → are ham o'zgaradi"
+          }
         ]
       },
       {
         "ruleUz": "Qisqartmalar (inkor shakli)",
         "explanationUz": "not so'zi fe'lga qo'shilib qisqaradi. Apostrof (') tushib qolgan 'o' o'rnida turadi.",
         "items": [
-          { "base": "there is not", "baseUz": "yo'q (birlik)", "derived": "there isn't", "derivedUz": "yo'q", "note": "is + not" },
-          { "base": "there are not", "baseUz": "yo'q (ko'plik)", "derived": "there aren't", "derivedUz": "yo'q", "note": "are + not" }
+          {
+            "base": "there is not",
+            "baseUz": "yo'q (birlik)",
+            "derived": "there isn't",
+            "derivedUz": "yo'q",
+            "note": "is + not"
+          },
+          {
+            "base": "there are not",
+            "baseUz": "yo'q (ko'plik)",
+            "derived": "there aren't",
+            "derivedUz": "yo'q",
+            "note": "are + not"
+          }
         ]
       }
     ]
@@ -361,29 +811,101 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "singular", "uz": "birlik" },
-    { "en": "plural", "uz": "ko'plik" },
-    { "en": "affirmative", "uz": "tasdiq gap" },
-    { "en": "negative", "uz": "inkor gap" },
-    { "en": "interrogative", "uz": "so'roq gap" },
-    { "en": "short answer", "uz": "qisqa javob" },
-    { "en": "near", "uz": "yaqin" },
-    { "en": "far", "uz": "uzoq" },
-    { "en": "this", "uz": "bu (yaqin, bitta)" },
-    { "en": "these", "uz": "bular (yaqin, ko'p)" },
-    { "en": "that", "uz": "u (uzoq, bitta)" },
-    { "en": "those", "uz": "ular (uzoq, ko'p)" },
-    { "en": "some", "uz": "bir nechta (tasdiqda)" },
-    { "en": "any", "uz": "hech, biror (inkor va savolda)" },
-    { "en": "address", "uz": "manzil" },
-    { "en": "bus", "uz": "avtobus" },
-    { "en": "brush", "uz": "cho'tka" },
-    { "en": "bench", "uz": "skameyka" },
-    { "en": "clock", "uz": "devor soati" },
-    { "en": "poster", "uz": "plakat" },
-    { "en": "flower", "uz": "gul" },
-    { "en": "tick (✓)", "uz": "to'g'ri belgisi" },
-    { "en": "cross (✗)", "uz": "xoch belgisi (noto'g'ri)" },
-    { "en": "but", "uz": "lekin" }
+    {
+      "en": "singular",
+      "uz": "birlik"
+    },
+    {
+      "en": "plural",
+      "uz": "ko'plik"
+    },
+    {
+      "en": "affirmative",
+      "uz": "tasdiq gap"
+    },
+    {
+      "en": "negative",
+      "uz": "inkor gap"
+    },
+    {
+      "en": "interrogative",
+      "uz": "so'roq gap"
+    },
+    {
+      "en": "short answer",
+      "uz": "qisqa javob"
+    },
+    {
+      "en": "near",
+      "uz": "yaqin"
+    },
+    {
+      "en": "far",
+      "uz": "uzoq"
+    },
+    {
+      "en": "this",
+      "uz": "bu (yaqin, bitta)"
+    },
+    {
+      "en": "these",
+      "uz": "bular (yaqin, ko'p)"
+    },
+    {
+      "en": "that",
+      "uz": "u (uzoq, bitta)"
+    },
+    {
+      "en": "those",
+      "uz": "ular (uzoq, ko'p)"
+    },
+    {
+      "en": "some",
+      "uz": "bir nechta (tasdiqda)"
+    },
+    {
+      "en": "any",
+      "uz": "hech, biror (inkor va savolda)"
+    },
+    {
+      "en": "address",
+      "uz": "manzil"
+    },
+    {
+      "en": "bus",
+      "uz": "avtobus"
+    },
+    {
+      "en": "brush",
+      "uz": "cho'tka"
+    },
+    {
+      "en": "bench",
+      "uz": "skameyka"
+    },
+    {
+      "en": "clock",
+      "uz": "devor soati"
+    },
+    {
+      "en": "poster",
+      "uz": "plakat"
+    },
+    {
+      "en": "flower",
+      "uz": "gul"
+    },
+    {
+      "en": "tick (✓)",
+      "uz": "to'g'ri belgisi"
+    },
+    {
+      "en": "cross (✗)",
+      "uz": "xoch belgisi (noto'g'ri)"
+    },
+    {
+      "en": "but",
+      "uz": "lekin"
+    }
   ]
 }
