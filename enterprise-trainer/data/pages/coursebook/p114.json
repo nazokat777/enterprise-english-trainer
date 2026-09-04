@@ -5,6 +5,7 @@
   "unit": 15,
   "unitTitle": "Take a Break",
   "module": 4,
+  "scanNote": "TEKSHIRILDI (skan 106-bet): Ex.8 jadval (have/has, haven't/hasn't + cleaned) va Ex.10 qisqa javoblar mos. Present Perfect - Past Simple, ever/never, yet/already qutilari to'liq. Ex.9 uchta qilingan / ikkita qilinmagan ish. Ex.11 10 mamlakat ro'yxati - hammasi qo'shildi. Ex.12 7 prompt va 9 sifat ro'yxati skan bilan mos. Xato topilmadi.",
   "sections": [
     {
       "kind": "grammar",
@@ -18,11 +19,37 @@
           "instructionUz": "Jadvalni to'ldiring, so'ngra qoidalarni o'rganing.",
           "explanationUz": "JADVAL IKKI USTUNLI:\n  AFFIRMATIVE (tasdiq) / NEGATIVE (inkor)\n\nKitob ba'zi kataklarni to'ldirib bergan\n(qizil rangda), qolganini o'zingiz\nto'ldirasiz.\n\n\nBARCHA JAVOBLAR:\n\n  TASDIQ (Affirmative):\n     I / you            HAVE  cleaned\n                        (kitob bergan)\n     he / she / it      HAS   cleaned\n                        (kitob bergan)\n     we / you / they    HAVE  cleaned  ←\n\n  INKOR (Negative):\n     I / you            HAVEN'T cleaned\n                        (kitob bergan)\n     he / she / it      HASN'T  cleaned  ←\n     we / you / they    HAVEN'T cleaned  ←\n\n\nTO'LIQ TUSLANISh:\n\n  TASDIQ:\n     I have cleaned          we have cleaned\n     you have cleaned        you have cleaned\n     he has cleaned          they have cleaned\n     she has cleaned\n     it has cleaned\n\n  INKOR:\n     I haven't cleaned       we haven't cleaned\n     you haven't cleaned     you haven't cleaned\n     he hasn't cleaned       they haven't cleaned\n     she hasn't cleaned\n     it hasn't cleaned\n\n\nOLTIN QOIDA — JUDA ODDIY:\n\n  HAS  →  faqat HE / SHE / IT bilan\n  HAVE →  qolgan HAMMASI bilan\n          (I, you, we, they)\n\n  Inkor:\n     hasn't  = has not\n     haven't = have not\n\n\nYASALIShI:\n  HAVE / HAS  +  fe'lning III shakli (V3)\n\n  'clean' — TO'G'RI fe'l, shuning uchun\n  V3 = V2 = 'cleaned'.\n\n\nQISQARTMALAR (og'zaki nutqda):\n     I have    →  I'VE\n     you have  →  YOU'VE\n     he has    →  HE'S\n     she has   →  SHE'S\n     it has    →  IT'S\n     we have   →  WE'VE\n     they have →  THEY'VE\n\n  DIQQAT — 'HE'S' IKKI MA'NOLI:\n     'He'S cleaned it.'  = he HAS cleaned\n     'He'S a doctor.'    = he IS a doctor\n\n  Qaysi ekanini KEYINGI SO'Z aytadi:\n     keyin V3 kelsa  →  HAS\n     keyin ot/sifat  →  IS\n\n\nDIQQAT — FE'LNING III ShAKLI (V3):\n\n  TO'G'RI fe'llar: V2 = V3 (ikkalasi ham -ed)\n     clean → cleaned → CLEANED\n     visit → visited → VISITED\n     stay  → stayed  → STAYED\n\n  NOTO'G'RI fe'llar: V3 boshqa bo'lishi\n  mumkin\n     see   → saw   → SEEN\n     be    → was   → BEEN\n     do    → did   → DONE\n     go    → went  → GONE\n     eat   → ate   → EATEN\n     ride  → rode  → RIDDEN\n     drive → drove → DRIVEN\n     fly   → flew  → FLOWN\n\n  Ba'zilarida V2 = V3:\n     buy   → bought → BOUGHT\n     meet  → met    → MET\n     have  → had    → HAD\n\n\nYANGI SO'ZLAR:\n  affirmative     = tasdiq shakli\n  negative        = inkor shakli\n  past participle = fe'lning III shakli\n  to clean        = tozalamoq",
           "bookRef": "Coursebook, 106-bet, 8-mashq",
-          "wordList": ["have", "has", "haven't", "hasn't"],
+          "wordList": [
+            "have",
+            "has",
+            "haven't",
+            "hasn't"
+          ],
           "items": [
-            { "sentence": "TASDIQ:  we / you / they ............ cleaned", "answer": "have", "uz": "biz / siz / ular tozalaganmiz", "commonMistake": { "whyUz": "'we, you, they' — 'HAS' EMAS, 'HAVE'.\n\nOLTIN QOIDA:\n  HAS  → faqat he / she / it\n  HAVE → qolgan hammasi (I, you, we, they)\n\nQisqartmasi: we'VE, you'VE, they'VE." } },
-            { "sentence": "INKOR:  he / she / it ............ cleaned", "answer": "hasn't", "uz": "u tozalamagan", "commonMistake": { "whyUz": "'he, she, it' → HAS, inkori HASN'T.\n\nhasn't = has not\n\n'he haven't' — XATO!" } },
-            { "sentence": "INKOR:  we / you / they ............ cleaned", "answer": "haven't", "uz": "biz / siz / ular tozalamaganmiz", "commonMistake": { "whyUz": "'we, you, they' → HAVE, inkori HAVEN'T.\n\nhaven't = have not\n\nDIQQAT: inkor shaklda ham xuddi shu qoida —\nfaqat he/she/it 'hasn't' oladi." } }
+            {
+              "sentence": "TASDIQ:  we / you / they ............ cleaned",
+              "answer": "have",
+              "uz": "biz / siz / ular tozalaganmiz",
+              "commonMistake": {
+                "whyUz": "'we, you, they' — 'HAS' EMAS, 'HAVE'.\n\nOLTIN QOIDA:\n  HAS  → faqat he / she / it\n  HAVE → qolgan hammasi (I, you, we, they)\n\nQisqartmasi: we'VE, you'VE, they'VE."
+              }
+            },
+            {
+              "sentence": "INKOR:  he / she / it ............ cleaned",
+              "answer": "hasn't",
+              "uz": "u tozalamagan",
+              "commonMistake": {
+                "whyUz": "'he, she, it' → HAS, inkori HASN'T.\n\nhasn't = has not\n\n'he haven't' — XATO!"
+              }
+            },
+            {
+              "sentence": "INKOR:  we / you / they ............ cleaned",
+              "answer": "haven't",
+              "uz": "biz / siz / ular tozalamaganmiz",
+              "commonMistake": {
+                "whyUz": "'we, you, they' → HAVE, inkori HAVEN'T.\n\nhaven't = have not\n\nDIQQAT: inkor shaklda ham xuddi shu qoida —\nfaqat he/she/it 'hasn't' oladi."
+              }
+            }
           ]
         },
         {
@@ -33,11 +60,31 @@
           "explanationUz": "GRAMMATIKA QUTISI — ENG MUHIM QOIDA\n\n\nKITOBDAGI QOIDA:\n\n • 'We form the PRESENT PERFECT with HAVE/HAS\n    and the PAST PARTICIPLE of the main verb.'\n\n • 'We use the PRESENT PERFECT to talk about an\n    action which happened in the past,\n    WITHOUT SAYING WHEN it happened.'\n      He's BEEN to Spain.\n      (We don't know WHEN he went to Spain.)\n\n • 'We use the PAST SIMPLE to talk about an\n    action which happened at a DEFINITE TIME\n    in the past.'\n      He WENT to Spain LAST MONTH.\n      (When did he go to Spain? Last month —\n       definite time.)\n\n • 'TIME ADVERBS used with the PRESENT PERFECT:\n    ever, just, yet, already, for, since, etc.'\n\n • 'TIME ADVERBS used with the PAST SIMPLE:\n    yesterday, two/three/etc days/months/etc\n    ago, last Monday/week/month, etc.'\n\n\nO'ZBEKChA — BUTUN UNITNING KALITI:\n\n  VAQT AYTILMAGAN  →  PRESENT PERFECT\n     'He's been to Spain.'\n     (Qachon borgani NOMA'LUM)\n\n  VAQT AYTILGAN    →  PAST SIMPLE\n     'He went to Spain last month.'\n     (Qachon? — o'tgan oyda)\n\n\nVAQT RAVIShLARI — IKKI RO'YXAT:\n\n  PRESENT PERFECT bilan:\n     ever      (hech qachon — savolda)\n     never     (hech qachon — inkorda)\n     just      (hozirgina)\n     yet       (hali)\n     already   (allaqachon)\n     for       (... davomida)\n     since     (... dan beri)\n\n  PAST SIMPLE bilan:\n     yesterday        (kecha)\n     two days ago     (ikki kun oldin)\n     three months ago (uch oy oldin)\n     last Monday      (o'tgan dushanba)\n     last week        (o'tgan hafta)\n     last month       (o'tgan oy)\n     in 2010          (2010-yilda)\n\n\n⚠ ENG KO'P XATO:\n  'I have seen him YESTERDAY.'      ✗\n  'I SAW him yesterday.'            ✓\n\n  'I have gone to Spain LAST MONTH.' ✗\n  'I WENT to Spain last month.'      ✓\n\n  ANIQ VAQT ravishi bo'lsa, Present Perfect\n  ISHLATILMAYDI!\n\n\nDIQQAT — 'AGO' va 'FOR' FARQI:\n  'two days AGO'  → Past Simple\n     'I saw him two days ago.'\n  'FOR two days'  → Present Perfect\n     'I have been here for two days.'\n\n  Ikkalasi ham 'ikki kun' haqida, lekin:\n     ago = O'TMISHDAGI nuqta\n     for = HOZIRGACHA davom etgan muddat\n\n\nNEGA BU FARQ MUHIM:\n\n  'He WENT to Spain.'\n     → borgan va (ehtimol) qaytgan; o'tmish\n       tugagan\n\n  'He HAS BEEN to Spain.'\n     → tajribasi bor; hozirga aloqador\n\n  'He HAS GONE to Spain.'\n     → hali u yerda!\n\n\nYANGI SO'ZLAR:\n  past participle = fe'lning III shakli\n  the main verb   = asosiy fe'l\n  an action       = harakat\n  definite time   = aniq vaqt\n  a time adverb   = vaqt ravishi",
           "bookRef": "Coursebook, 106-bet, 'Present Perfect - Past Simple' qutisi",
           "points": [
-            { "en": "We form the present perfect with have/has and the past participle of the main verb.", "uz": "Present Perfect ni have/has va asosiy fe'lning III shakli bilan yasaymiz.", "noteUz": "have/has + V3.\nTo'g'ri fe'llarda V3 = V2 (-ed)." },
-            { "en": "We use the present perfect to talk about an action which happened in the past, without saying when it happened.  —  He's been to Spain. (We don't know when he went to Spain.)", "uz": "Present Perfect ni o'tmishda sodir bo'lgan, lekin QACHON sodir bo'lgani AYTILMAGAN harakat uchun ishlatamiz. — U Ispaniyada bo'lgan. (Qachon borganini bilmaymiz.)", "noteUz": "⚠ ENG MUHIM QOIDA:\nVAQT AYTILMASA → Present Perfect." },
-            { "en": "We use the past simple to talk about an action which happened at a definite time in the past.  —  He went to Spain last month.", "uz": "Past Simple ni o'tmishdagi ANIQ VAQTDA sodir bo'lgan harakat uchun ishlatamiz. — U o'tgan oyda Ispaniyaga bordi.", "noteUz": "⚠ VAQT AYTILSA → Past Simple.\n'He has gone to Spain last month' — XATO!" },
-            { "en": "Time adverbs used with the present perfect: ever, just, yet, already, for, since, etc.", "uz": "Present Perfect bilan ishlatiladigan vaqt ravishlari: ever, just, yet, already, for, since va h.k.", "noteUz": "Bu so'zlar Present Perfect ni 'chaqiradi'." },
-            { "en": "Time adverbs used with the past simple: yesterday, two/three/etc days/months/etc ago, last Monday/week/month, etc.", "uz": "Past Simple bilan ishlatiladigan vaqt ravishlari: yesterday, two/three kun/oy oldin, last Monday/week/month va h.k.", "noteUz": "Bu so'zlar ANIQ VAQTNI ko'rsatadi.\nDIQQAT: 'ago' → Past Simple;\n'for' → Present Perfect." }
+            {
+              "en": "We form the present perfect with have/has and the past participle of the main verb.",
+              "uz": "Present Perfect ni have/has va asosiy fe'lning III shakli bilan yasaymiz.",
+              "noteUz": "have/has + V3.\nTo'g'ri fe'llarda V3 = V2 (-ed)."
+            },
+            {
+              "en": "We use the present perfect to talk about an action which happened in the past, without saying when it happened.  —  He's been to Spain. (We don't know when he went to Spain.)",
+              "uz": "Present Perfect ni o'tmishda sodir bo'lgan, lekin QACHON sodir bo'lgani AYTILMAGAN harakat uchun ishlatamiz. — U Ispaniyada bo'lgan. (Qachon borganini bilmaymiz.)",
+              "noteUz": "⚠ ENG MUHIM QOIDA:\nVAQT AYTILMASA → Present Perfect."
+            },
+            {
+              "en": "We use the past simple to talk about an action which happened at a definite time in the past.  —  He went to Spain last month.",
+              "uz": "Past Simple ni o'tmishdagi ANIQ VAQTDA sodir bo'lgan harakat uchun ishlatamiz. — U o'tgan oyda Ispaniyaga bordi.",
+              "noteUz": "⚠ VAQT AYTILSA → Past Simple.\n'He has gone to Spain last month' — XATO!"
+            },
+            {
+              "en": "Time adverbs used with the present perfect: ever, just, yet, already, for, since, etc.",
+              "uz": "Present Perfect bilan ishlatiladigan vaqt ravishlari: ever, just, yet, already, for, since va h.k.",
+              "noteUz": "Bu so'zlar Present Perfect ni 'chaqiradi'."
+            },
+            {
+              "en": "Time adverbs used with the past simple: yesterday, two/three/etc days/months/etc ago, last Monday/week/month, etc.",
+              "uz": "Past Simple bilan ishlatiladigan vaqt ravishlari: yesterday, two/three kun/oy oldin, last Monday/week/month va h.k.",
+              "noteUz": "Bu so'zlar ANIQ VAQTNI ko'rsatadi.\nDIQQAT: 'ago' → Past Simple;\n'for' → Present Perfect."
+            }
           ]
         },
         {
@@ -48,11 +95,31 @@
           "explanationUz": "105-BETDAGI XATDAN:\n\n\nJEK QILGAN UCh ISh (HAS DONE):\n\n 1  He HAS VISITED the Khan al-Khalili bazaar.\n    Xatdan: 'I've already VISITED the Khan\n    al-Khalili bazaar.'\n\n 2  He HAS SEEN the Pyramids and the Sphinx.\n    Xatdan: 'I have also SEEN the Pyramids and\n    the Sphinx at Giza.'\n\n 3  He HAS BEEN TO a traditional restaurant.\n    Xatdan: 'I've BEEN TO a traditional\n    restaurant.'\n\n\nJEK QILMAGAN IKKI ISh (HASN'T DONE):\n\n 1  He HASN'T BEEN on a boat trip down the\n    River Nile.\n    Xatdan: 'I HAVEN'T BEEN on a boat trip down\n    the River Nile yet.'\n\n 2  He HASN'T VISITED the Egyptian Museum.\n    Xatdan: 'and I HAVEN'T VISITED the Egyptian\n    Museum.'\n\n\n⚠ DIQQAT — OLMOSh VA FE'L O'ZGARADI:\n\n  Xatda BIRINChI shaxs:\n     'I HAVE visited ...'\n     'I HAVEN'T been ...'\n\n  Javobda UChINChI shaxs:\n     'HE HAS visited ...'\n     'HE HASN'T been ...'\n\n  Ya'ni 'have' → 'HAS' ga o'zgaradi\n  (chunki 'he' — III shaxs birlik).\n\n  Bu — mashqning eng ko'p unutiladigan qismi!\n\n\nQANDAY TOPILADI — XATDA IKKI GURUH:\n\n  Xatning 2-XATBOShISI — QILGAN ishlar\n  (hammasi TASDIQ Present Perfect)\n\n  Xatning 3-XATBOShISI — QILMAGAN ishlar\n  ('There are a lot of things I HAVEN'T\n    DONE YET' bilan boshlanadi)\n\n  Kitob ataylab shunday tuzgan.\n\n\nQO'ShIMChA — XATDAGI PAST SIMPLE GAPLAR\n(bular bu mashqqa KIRMAYDI):\n     'We visited it on Tuesday.'\n     'I bought some souvenirs.'\n     'I saw them yesterday.'\n     'I even rode a camel.'\n     'Abdullah took me there last night.'\n     'I tried couscous and falafel.'\n\n  Bular Past Simple da, chunki ANIQ VAQT\n  aytilgan yoki tafsilot berilgan.\n\n\nYANGI SO'ZLAR:\n  to find      = topmoq\n  three things = uchta narsa/ish",
           "bookRef": "Coursebook, 106-bet, 9-mashq",
           "points": [
-            { "en": "1  He HAS visited the Khan al-Khalili bazaar.", "uz": "U Khan al-Khalili bozoriga borgan.", "noteUz": "QILGAN (1/3).\nXatdan: 'I've already VISITED the bazaar.'\nDIQQAT: 'I have' → 'HE HAS'." },
-            { "en": "2  He HAS seen the Pyramids and the Sphinx at Giza.", "uz": "U Gizadagi ehromlar va Sfenksni ko'rgan.", "noteUz": "QILGAN (2/3).\nXatdan: 'I have also SEEN the Pyramids and\nthe Sphinx.'\nsee → saw → SEEN (V3)." },
-            { "en": "3  He HAS been to a traditional restaurant.", "uz": "U an'anaviy restoranda bo'lgan.", "noteUz": "QILGAN (3/3).\nXatdan: 'I've BEEN TO a traditional\nrestaurant.'\n'been TO' — predlog 'to'." },
-            { "en": "1  He HASN'T been on a boat trip down the River Nile.", "uz": "U Nil bo'ylab qayiqda sayohat qilmagan.", "noteUz": "QILMAGAN (1/2).\nXatdan: 'I HAVEN'T BEEN on a boat trip ...\nYET.'\nDIQQAT: 'I haven't' → 'HE HASN'T'." },
-            { "en": "2  He HASN'T visited the Egyptian Museum.", "uz": "U Misr muzeyiga bormagan.", "noteUz": "QILMAGAN (2/2).\nXatdan: 'and I HAVEN'T VISITED the Egyptian\nMuseum.'" }
+            {
+              "en": "1  He HAS visited the Khan al-Khalili bazaar.",
+              "uz": "U Khan al-Khalili bozoriga borgan.",
+              "noteUz": "QILGAN (1/3).\nXatdan: 'I've already VISITED the bazaar.'\nDIQQAT: 'I have' → 'HE HAS'."
+            },
+            {
+              "en": "2  He HAS seen the Pyramids and the Sphinx at Giza.",
+              "uz": "U Gizadagi ehromlar va Sfenksni ko'rgan.",
+              "noteUz": "QILGAN (2/3).\nXatdan: 'I have also SEEN the Pyramids and\nthe Sphinx.'\nsee → saw → SEEN (V3)."
+            },
+            {
+              "en": "3  He HAS been to a traditional restaurant.",
+              "uz": "U an'anaviy restoranda bo'lgan.",
+              "noteUz": "QILGAN (3/3).\nXatdan: 'I've BEEN TO a traditional\nrestaurant.'\n'been TO' — predlog 'to'."
+            },
+            {
+              "en": "1  He HASN'T been on a boat trip down the River Nile.",
+              "uz": "U Nil bo'ylab qayiqda sayohat qilmagan.",
+              "noteUz": "QILMAGAN (1/2).\nXatdan: 'I HAVEN'T BEEN on a boat trip ...\nYET.'\nDIQQAT: 'I haven't' → 'HE HASN'T'."
+            },
+            {
+              "en": "2  He HASN'T visited the Egyptian Museum.",
+              "uz": "U Misr muzeyiga bormagan.",
+              "noteUz": "QILMAGAN (2/2).\nXatdan: 'and I HAVEN'T VISITED the Egyptian\nMuseum.'"
+            }
           ]
         },
         {
@@ -62,12 +129,45 @@
           "instructionUz": "Jadvaldagi qisqa javoblarni to'ldiring.",
           "explanationUz": "JADVAL IKKI USTUNLI:\n  INTERROGATIVE (so'roq) / SHORT ANSWERS\n  (qisqa javoblar)\n\n\nBARCHA JAVOBLAR:\n\n  HAVE I/we/you/they BEEN to Turkey?\n     Yes, I/we/you/they  HAVE.\n     No,  I/we/you/they  HAVEN'T.\n\n  HAS he/she/it BEEN to Turkey?\n     Yes, he/she/it  HAS.\n     No,  he/she/it  HASN'T.\n\n\nOLTIN QOIDA — QISQA JAVOB SAVOLDAGI\nYORDAMChI FE'LNI TAKRORLAYDI:\n\n     'HAVE you been ...?'  →  'Yes, I HAVE.'\n     'HAS he been ...?'    →  'Yes, he HAS.'\n\n  Savol qaysi so'z bilan boshlansa, javobda\n  ham o'sha so'z qoladi.\n\n\nSO'ROQ ShAKLI QANDAY YASALADI:\n\n  HAVE / HAS  +  EGA  +  V3  + ... ?\n\n     Have you been to Turkey?\n     Has he been to Turkey?\n     Have they visited Spain?\n\n  DIQQAT: 'DO' KERAK EMAS!\n     'Have you been ...?'    ✓\n     'DO you have been ...?' ✗\n\n\nQISQA JAVOBDA ASOSIY FE'L TAKRORLANMAYDI:\n     'Yes, I have.'              ✓\n     'Yes, I have been.'         (ortiqcha)\n     'Yes, I have been to Turkey.' (juda\n                                    ortiqcha)\n\n  Faqat 'have/has' qoladi.\n\n\nDIQQAT — TO'LIQ ShAKL QISQA JAVOBDA:\n  IJOBIY javobda QISQARTMA IShLATILMAYDI:\n     'Yes, I HAVE.'   ✓\n     'Yes, I'VE.'     ✗\n\n  SALBIY javobda esa qisqartma odatiy:\n     'No, I HAVEN'T.' ✓\n     'No, I have not.' ✓ (rasmiyroq)\n\n  Bu — barcha qisqa javoblarga taalluqli\n  qoida ('Yes, I AM' ✓ / 'Yes, I'M' ✗).\n\n\nSAVOL SO'ZI BILAN — QISQA JAVOB BO'LMAYDI:\n  'WHERE have you been?'\n     → 'To Turkey.' (qisqa javob emas,\n        to'ldiruvchi)\n  'HOW LONG have you been here?'\n     → 'Since Monday.'\n\n  Faqat HA/YO'Q savollariga qisqa javob\n  beriladi.\n\n\nBOG'LIQLIK — 105-BETDAGI DIALOG:\n     SA: 'HAS Jack VISITED the bazaar?'\n     SB: 'Yes, he HAS.'\n\n  Aynan shu qoida ishlatilgan.\n\n\nYANGI SO'ZLAR:\n  interrogative = so'roq shakli\n  a short answer = qisqa javob\n  Turkey        = Turkiya",
           "bookRef": "Coursebook, 106-bet, 10-mashq",
-          "wordList": ["have", "has", "haven't", "hasn't"],
+          "wordList": [
+            "have",
+            "has",
+            "haven't",
+            "hasn't"
+          ],
           "items": [
-            { "sentence": "Have I/we/you/they been to Turkey?  —  Yes, I/we/you/they ......... .", "answer": "have", "uz": "Ha, bo'lganman/bo'lganmiz/bo'lgansiz/bo'lganlar.", "commonMistake": { "whyUz": "QISQA JAVOB savoldagi yordamchi fe'lni\nTAKRORLAYDI:\n  'HAVE you been?' → 'Yes, I HAVE.'\n\nDIQQAT: ijobiy qisqa javobda QISQARTMA\nISHLATILMAYDI:\n  'Yes, I HAVE.' ✓\n  'Yes, I'VE.'   ✗" } },
-            { "sentence": "Have I/we/you/they been to Turkey?  —  No, I/we/you/they .......... .", "answer": "haven't", "uz": "Yo'q, bo'lmaganman/bo'lmaganmiz.", "commonMistake": { "whyUz": "Salbiy qisqa javob: HAVEN'T.\n\nSalbiy javobda qisqartma ODATIY:\n  'No, I HAVEN'T.'  ✓\n  'No, I have not.' ✓ (rasmiyroq)" } },
-            { "sentence": "Has he/she/it been to Turkey?  —  Yes, he/she/it ............. .", "answer": "has", "uz": "Ha, u bo'lgan.", "commonMistake": { "whyUz": "Savol 'HAS' bilan boshlangan → javob ham\n'HAS'.\n\n'he/she/it' — DOIM 'has'.\n'Yes, he have' — XATO!" } },
-            { "sentence": "Has he/she/it been to Turkey?  —  No, he/she/it ............... .", "answer": "hasn't", "uz": "Yo'q, u bo'lmagan.", "commonMistake": { "whyUz": "Salbiy qisqa javob: HASN'T (= has not).\n\n'No, he haven't' — XATO!\n'he/she/it' faqat 'hasn't' oladi." } }
+            {
+              "sentence": "Have I/we/you/they been to Turkey?  —  Yes, I/we/you/they ......... .",
+              "answer": "have",
+              "uz": "Ha, bo'lganman/bo'lganmiz/bo'lgansiz/bo'lganlar.",
+              "commonMistake": {
+                "whyUz": "QISQA JAVOB savoldagi yordamchi fe'lni\nTAKRORLAYDI:\n  'HAVE you been?' → 'Yes, I HAVE.'\n\nDIQQAT: ijobiy qisqa javobda QISQARTMA\nISHLATILMAYDI:\n  'Yes, I HAVE.' ✓\n  'Yes, I'VE.'   ✗"
+              }
+            },
+            {
+              "sentence": "Have I/we/you/they been to Turkey?  —  No, I/we/you/they .......... .",
+              "answer": "haven't",
+              "uz": "Yo'q, bo'lmaganman/bo'lmaganmiz.",
+              "commonMistake": {
+                "whyUz": "Salbiy qisqa javob: HAVEN'T.\n\nSalbiy javobda qisqartma ODATIY:\n  'No, I HAVEN'T.'  ✓\n  'No, I have not.' ✓ (rasmiyroq)"
+              }
+            },
+            {
+              "sentence": "Has he/she/it been to Turkey?  —  Yes, he/she/it ............. .",
+              "answer": "has",
+              "uz": "Ha, u bo'lgan.",
+              "commonMistake": {
+                "whyUz": "Savol 'HAS' bilan boshlangan → javob ham\n'HAS'.\n\n'he/she/it' — DOIM 'has'.\n'Yes, he have' — XATO!"
+              }
+            },
+            {
+              "sentence": "Has he/she/it been to Turkey?  —  No, he/she/it ............... .",
+              "answer": "hasn't",
+              "uz": "Yo'q, u bo'lmagan.",
+              "commonMistake": {
+                "whyUz": "Salbiy qisqa javob: HASN'T (= has not).\n\n'No, he haven't' — XATO!\n'he/she/it' faqat 'hasn't' oladi."
+              }
+            }
           ]
         }
       ]
@@ -85,10 +185,26 @@
           "explanationUz": "GRAMMATIKA QUTISI\n\nKITOBDAGI QOIDA:\n\n • 'We use EVER in QUESTIONS and STATEMENTS.'\n      Have you EVER visited Brazil?\n      Brazil is the best place I've EVER\n      visited.\n\n • 'We use NEVER in STATEMENTS.'\n      I've NEVER visited Cyprus.\n      I haven't visited Cyprus.\n\n\n'EVER' NING IKKI IShLATILIShI:\n\n  1) SAVOLDA — 'hech qachon ...ganmisiz?'\n        'Have you EVER visited Brazil?'\n        'Have you EVER been to Egypt?'\n\n     Bu yerda 'ever' = umr davomida biror\n     marta.\n\n  2) USTUN DARAJA bilan — 'ko'rgan eng ...'\n        'Brazil is the BEST place I've EVER\n         visited.'\n        'It's the MOST beautiful city I've EVER\n         seen.'\n\n     Qolip: the + [ustun daraja] + ... +\n            I've EVER + V3\n\n     DIQQAT: bu qurilmada 'ever' TASDIQ\n     gapda keladi, lekin baribir Present\n     Perfect bilan.\n\n\n'NEVER' — FAQAT TASDIQ ShAKLDA:\n\n     'I've NEVER visited Cyprus.'  ✓\n     'I haven't NEVER visited.'    ✗ XATO!\n\n  'never' O'ZI INKOR ma'noni beradi,\n  shuning uchun 'haven't' bilan BIRGA\n  ishlatilmaydi.\n\n  Ikki xil aytish mumkin:\n     'I've NEVER visited Cyprus.'   (never)\n     'I HAVEN'T visited Cyprus.'    (haven't)\n\n  Ma'nosi bir xil, lekin 'never' KUCHLIROQ.\n\n\n'EVER' va 'NEVER' QAYERDA TURADI:\n\n  'have' va V3 ORASIDA:\n     Have you EVER visited ...?\n     I've NEVER visited ...\n     I've EVER visited ...\n\n  'Have you visited EVER?' — XATO.\n\n\nJAVOB BERISh:\n\n  'Have you ever been to Brazil?'\n     Yes, I have.\n     No, I haven't.  /  No, I've never been\n                        there.\n\n\nDIQQAT — 'EVER' TASDIQ ODDIY GAPDA\nIShLATILMAYDI:\n     'I have ever been to Spain.'  ✗\n     'I have been to Spain.'       ✓\n\n  'ever' faqat:\n     • savolda\n     • ustun daraja qurilmasida\n     • inkorda ('I haven't ever ...' — bu\n       'I've never ...' bilan bir xil)\n\n\nYANGI SO'ZLAR:\n  ever      = hech qachon (savolda)\n  never     = hech qachon (inkor ma'noda)\n  a statement = darak gap\n  Brazil    = Braziliya\n  Cyprus    = Kipr",
           "bookRef": "Coursebook, 106-bet, 'Present Perfect + Ever/Never' qutisi",
           "points": [
-            { "en": "We use ever in questions and statements.  —  Have you ever visited Brazil?", "uz": "EVER ni savol va darak gaplarda ishlatamiz. — Braziliyaga borganmisiz?", "noteUz": "'ever' — 'have' va V3 ORASIDA.\nSavolda: 'umr davomida biror marta?'" },
-            { "en": "Brazil is the best place I've ever visited.", "uz": "Braziliya — men borgan eng yaxshi joy.", "noteUz": "USTUN DARAJA qurilmasi:\nthe + [eng ...] + I've EVER + V3.\nBu yerda 'ever' TASDIQ gapda." },
-            { "en": "We use never in statements.  —  I've never visited Cyprus.", "uz": "NEVER ni darak gaplarda ishlatamiz. — Kiprga hech qachon bormaganman.", "noteUz": "⚠ 'never' O'ZI INKOR:\n'I've never visited' ✓\n'I haven't never visited' ✗ XATO!" },
-            { "en": "I haven't visited Cyprus.", "uz": "Kiprga bormaganman.", "noteUz": "'I've NEVER visited' bilan bir xil ma'no,\nlekin 'never' KUCHLIROQ." }
+            {
+              "en": "We use ever in questions and statements.  —  Have you ever visited Brazil?",
+              "uz": "EVER ni savol va darak gaplarda ishlatamiz. — Braziliyaga borganmisiz?",
+              "noteUz": "'ever' — 'have' va V3 ORASIDA.\nSavolda: 'umr davomida biror marta?'"
+            },
+            {
+              "en": "Brazil is the best place I've ever visited.",
+              "uz": "Braziliya — men borgan eng yaxshi joy.",
+              "noteUz": "USTUN DARAJA qurilmasi:\nthe + [eng ...] + I've EVER + V3.\nBu yerda 'ever' TASDIQ gapda."
+            },
+            {
+              "en": "We use never in statements.  —  I've never visited Cyprus.",
+              "uz": "NEVER ni darak gaplarda ishlatamiz. — Kiprga hech qachon bormaganman.",
+              "noteUz": "⚠ 'never' O'ZI INKOR:\n'I've never visited' ✓\n'I haven't never visited' ✗ XATO!"
+            },
+            {
+              "en": "I haven't visited Cyprus.",
+              "uz": "Kiprga bormaganman.",
+              "noteUz": "'I've NEVER visited' bilan bir xil ma'no,\nlekin 'never' KUCHLIROQ."
+            }
           ]
         },
         {
@@ -99,11 +215,36 @@
           "explanationUz": "O'N MAMLAKAT:\n  Australia, Turkey, Greece, Mexico, Italy,\n  Canada, Spain, Poland, Brazil, China\n\n\nKITOBDAGI IKKI NAMUNA:\n\n  'I've BEEN TO Spain. It's the best country\n   I've EVER visited.'\n\n  'I've NEVER been to China.'\n\n\nIKKI QOLIP:\n\n  BORGAN bo'lsangiz:\n     'I've been to [mamlakat].'\n     (+ ixtiyoriy baho: 'It's the best country\n        I've ever visited.')\n\n  BORMAGAN bo'lsangiz:\n     'I've never been to [mamlakat].'\n\n\nDIQQAT — BU ShAXSIY MAShQ:\n  Javob har kimda BOSHQA bo'ladi — o'z\n  tajribangizga qarab.\n\n  Quyida NAMUNA javoblar berilgan\n  (o'zbekistonlik o'quvchi uchun eng\n  ehtimolli variant).\n\n\nNAMUNA JAVOBLAR (10 mamlakat):\n\n 1  I've never been to Australia.\n 2  I've been to Turkey. It's the most\n    beautiful country I've ever visited.\n 3  I've never been to Greece.\n 4  I've never been to Mexico.\n 5  I've never been to Italy.\n 6  I've never been to Canada.\n 7  I've never been to Spain.\n 8  I've never been to Poland.\n 9  I've never been to Brazil.\n10  I've never been to China.\n\n  (Bu — faqat namuna. O'z javobingizni\n   yozing!)\n\n\nUSTUN DARAJA QOLIPI — BATAFSIL:\n\n  'It's the BEST country I've EVER visited.'\n\n  Boshqa variantlar:\n     'It's the MOST BEAUTIFUL country I've\n      ever visited.'\n     'It's the MOST INTERESTING place I've\n      ever seen.'\n     'It's the BIGGEST city I've ever been to.'\n\n  Qolip:\n     It's the + [USTUN DARAJA] + [ot] +\n     I've EVER + [V3].\n\n  DIQQAT: 'that' tushirib qoldirilgan —\n  to'liq shakli:\n     'the best country THAT I've ever visited'\n\n\nDIQQAT — 'BEEN TO' PREDLOG:\n  'I've been TO Spain.'  ✓\n  'I've been IN Spain.'  — boshqa ma'no\n                           (ichkarida bo'lish)\n  'I've been Spain.'     ✗\n\n\nDIQQAT — MAMLAKAT NOMLARIDA ARTIKL:\n  Ro'yxatdagi 10 mamlakatning HAMMASI\n  ARTIKLSIZ:\n     Australia, Turkey, Greece, Mexico, Italy,\n     Canada, Spain, Poland, Brazil, China\n\n  ISTISNOLAR (bu ro'yxatda yo'q):\n     the USA, the UK, the Netherlands,\n     the Philippines\n\n  (Grammar 63-bet, 10-mashq qoidasi.)\n\n\nDIQQAT — 'NEVER' O'RNI:\n  'I've NEVER been to China.'  ✓\n  'I never have been ...'      ✗\n  'I've been never ...'        ✗\n\n  'never' — 'have' va V3 ORASIDA.\n\n\nYANGI SO'ZLAR:\n  Australia = Avstraliya\n  Turkey    = Turkiya\n  Greece    = Gretsiya\n  Mexico    = Meksika\n  Italy     = Italiya\n  Canada    = Kanada\n  Spain     = Ispaniya\n  Poland    = Polsha\n  Brazil    = Braziliya\n  China     = Xitoy",
           "bookRef": "Coursebook, 106-bet, 11-mashq",
           "points": [
-            { "en": "I've been to Spain. It's the best country I've ever visited.", "uz": "Ispaniyada bo'lganman. Bu men borgan eng yaxshi mamlakat.", "noteUz": "KITOBDAGI 1-NAMUNA.\nUSTUN DARAJA qolipi:\nthe + [eng ...] + I've EVER + V3." },
-            { "en": "I've never been to China.", "uz": "Xitoyda hech qachon bo'lmaganman.", "noteUz": "KITOBDAGI 2-NAMUNA.\n'never' — 'have' va V3 ORASIDA." },
-            { "en": "I've never been to Australia. / I've never been to Greece. / I've never been to Mexico.", "uz": "Avstraliyada / Gretsiyada / Meksikada hech qachon bo'lmaganman.", "noteUz": "NAMUNA javoblar — o'z tajribangizga qarab\no'zgartiring.\nMamlakat nomlari ARTIKLSIZ." },
-            { "en": "I've been to Turkey. It's the most beautiful country I've ever visited.", "uz": "Turkiyada bo'lganman. Bu men borgan eng go'zal mamlakat.", "noteUz": "NAMUNA.\n'most beautiful' — uzun sifat, shuning uchun\n'the MOST' bilan." },
-            { "en": "It's the most interesting place I've ever seen. / It's the biggest city I've ever been to.", "uz": "Bu men ko'rgan eng qiziqarli joy. / Bu men borgan eng katta shahar.", "noteUz": "Ustun daraja qolipining boshqa variantlari.\n'that' tushirib qoldirilgan." }
+            {
+              "en": "I've been to Spain. It's the best country I've ever visited.",
+              "uz": "Ispaniyada bo'lganman. Bu men borgan eng yaxshi mamlakat.",
+              "noteUz": "KITOBDAGI 1-NAMUNA.\nUSTUN DARAJA qolipi:\nthe + [eng ...] + I've EVER + V3."
+            },
+            {
+              "en": "I've never been to China.",
+              "uz": "Xitoyda hech qachon bo'lmaganman.",
+              "noteUz": "KITOBDAGI 2-NAMUNA.\n'never' — 'have' va V3 ORASIDA."
+            },
+            {
+              "en": "I've never been to Australia. / I've never been to Greece. / I've never been to Mexico.",
+              "uz": "Avstraliyada / Gretsiyada / Meksikada hech qachon bo'lmaganman.",
+              "noteUz": "NAMUNA javoblar — o'z tajribangizga qarab\no'zgartiring.\nMamlakat nomlari ARTIKLSIZ."
+            },
+            {
+              "en": "I've been to Turkey. It's the most beautiful country I've ever visited.",
+              "uz": "Turkiyada bo'lganman. Bu men borgan eng go'zal mamlakat.",
+              "noteUz": "NAMUNA.\n'most beautiful' — uzun sifat, shuning uchun\n'the MOST' bilan."
+            },
+            {
+              "en": "It's the most interesting place I've ever seen. / It's the biggest city I've ever been to.",
+              "uz": "Bu men ko'rgan eng qiziqarli joy. / Bu men borgan eng katta shahar.",
+              "noteUz": "Ustun daraja qolipining boshqa variantlari.\n'that' tushirib qoldirilgan."
+            },
+            {
+              "en": "Kitobdagi 10 mamlakat: Australia, Turkey, Greece, Mexico, Italy, Canada, Spain, Poland, Brazil, China.",
+              "uz": "Avstraliya, Turkiya, Gretsiya, Meksika, Italiya, Kanada, Ispaniya, Polsha, Braziliya, Xitoy.",
+              "noteUz": "Har bir mamlakat uchun bitta gap tuzing:\n  borgan bo'lsangiz  — 'I've been to Italy.'\n  bormagan bo'lsangiz — 'I've never been to Canada.'\nQolgan namunalar: I've been to Italy. It's the best country I've ever visited.\nI've never been to Canada. / I've never been to Poland. / I've never been to Brazil."
+            }
           ]
         },
         {
@@ -114,13 +255,41 @@
           "explanationUz": "YETTI KO'RSATMA:\n  • visit Prague? - last summer\n  • ride a camel? - no\n  • stay in a big hotel? - last winter\n  • eat Chinese food? - last Sunday\n  • meet a famous person? - no\n  • drive a bus? - no\n  • fly in a plane? - a month ago\n\nSIFATLAR:\n  exciting, fantastic, amazing, delicious,\n  great, awful, horrible, terrible, disgusting\n\n\nKITOBDAGI IKKI NAMUNA:\n\n  SA: Have you EVER VISITED Prague?\n  SB: Yes, I HAVE.\n  SA: WHEN DID you VISIT Prague?\n  SB: Last summer. It was exciting.\n\n  SA: Have you EVER RIDDEN a camel?\n  SB: No, I HAVEN'T. I've NEVER RIDDEN a camel.\n\n\nIKKI QOLIP:\n\n  A) JAVOB 'HA' bo'lsa (vaqt berilgan):\n     SA: Have you ever [V3] ...?\n     SB: Yes, I have.\n     SA: When did you [V1] ...?\n     SB: [vaqt]. It was [sifat].\n\n  B) JAVOB 'YO'Q' bo'lsa:\n     SA: Have you ever [V3] ...?\n     SB: No, I haven't. I've never [V3] ...\n\n\nBARCHA YETTI DIALOG:\n\n 1  SA: Have you ever VISITED Prague?\n    SB: Yes, I have.\n    SA: When did you VISIT Prague?\n    SB: Last summer. It was EXCITING.\n        (KITOBDAGI NAMUNA)\n\n 2  SA: Have you ever RIDDEN a camel?\n    SB: No, I haven't. I've never RIDDEN a\n        camel.\n        (KITOBDAGI NAMUNA)\n\n 3  SA: Have you ever STAYED in a big hotel?\n    SB: Yes, I have.\n    SA: When did you STAY in a big hotel?\n    SB: Last winter. It was FANTASTIC.\n\n 4  SA: Have you ever EATEN Chinese food?\n    SB: Yes, I have.\n    SA: When did you EAT Chinese food?\n    SB: Last Sunday. It was DELICIOUS.\n\n 5  SA: Have you ever MET a famous person?\n    SB: No, I haven't. I've never MET a famous\n        person.\n\n 6  SA: Have you ever DRIVEN a bus?\n    SB: No, I haven't. I've never DRIVEN a bus.\n\n 7  SA: Have you ever FLOWN in a plane?\n    SB: Yes, I have.\n    SA: When did you FLY in a plane?\n    SB: A month ago. It was AMAZING.\n\n\n⚠ ENG MUHIM QISM — III ShAKL (V3):\n\n  Savolda V3, javobda V1 ishlatiladi!\n\n  SAVOL (Present Perfect)   JAVOB (Past Simple)\n  ─────────────────────     ──────────────────\n  Have you ever VISITED?    When did you VISIT?\n  Have you ever RIDDEN?     (—)\n  Have you ever STAYED?     When did you STAY?\n  Have you ever EATEN?      When did you EAT?\n  Have you ever MET?        (—)\n  Have you ever DRIVEN?     (—)\n  Have you ever FLOWN?      When did you FLY?\n\n  DIQQAT: 'did' dan keyin fe'l ASOSIY\n  shaklda!\n     'When did you EAT?'    ✓\n     'When did you ATE?'    ✗\n     'When did you EATEN?'  ✗\n\n\nUCh ASOSIY ShAKL (mashqdagi fe'llar):\n\n  visit  →  visited  →  VISITED   (to'g'ri)\n  ride   →  rode     →  RIDDEN\n  stay   →  stayed   →  STAYED    (to'g'ri)\n  eat    →  ate      →  EATEN\n  meet   →  met      →  MET\n  drive  →  drove    →  DRIVEN\n  fly    →  flew     →  FLOWN\n\n  DIQQAT: 'ridden', 'eaten', 'driven',\n  'flown' — bularni YODLASh kerak.\n\n\nSIFATLAR IKKI GURUHDA:\n\n  IJOBIY:\n     exciting  (hayajonli)\n     fantastic (ajoyib)\n     amazing   (hayratlanarli)\n     delicious (juda mazali — faqat OVQAT)\n     great     (zo'r)\n\n  SALBIY:\n     awful      (juda yomon)\n     horrible   (dahshatli)\n     terrible   (dahshatli)\n     disgusting (jirkanch — ko'pincha OVQAT)\n\n  DIQQAT: 'delicious' va 'disgusting'\n  asosan OVQAT haqida ishlatiladi, shuning\n  uchun 4-bandga (Chinese food) mos keladi.\n\n\nDIQQAT — 'FLY IN A PLANE':\n  'to fly IN a plane' = samolyotda uchmoq\n  ('to fly ON a plane' ham uchraydi,\n   lekin 'in' standart)\n\n\nDIQQAT — 'A MONTH AGO':\n  'a month AGO' — PAST SIMPLE ko'rsatkichi.\n  Shuning uchun javob: 'A month ago.'\n  va 'It WAS amazing.'\n\n  DIQQAT: 'ago' bilan Present Perfect\n  ISHLATILMAYDI!\n\n\nRASM:\n  Otliq bronza haykal — Pragadagi mashhur\n  Avliyo Vatslav haykali (Wenceslas Square).\n  1-bandga ('visit Prague') ishora.\n\n\nYANGI SO'ZLAR:\n  Prague       = Praga (Chexiya poytaxti)\n  a famous person = mashhur odam\n  to fly       = uchmoq (fly → flew → FLOWN)\n  exciting     = hayajonli\n  awful        = juda yomon\n  terrible     = dahshatli",
           "bookRef": "Coursebook, 106-bet, 12-mashq",
           "points": [
-            { "en": "SA: Have you ever visited Prague?  SB: Yes, I have.  SA: When did you visit Prague?  SB: Last summer. It was exciting.", "uz": "SA: Pragaga borganmisiz? SB: Ha. SA: Qachon borgansiz? SB: O'tgan yozda. Hayajonli edi.", "noteUz": "KITOBDAGI 1-NAMUNA.\n⚠ Savolda V3 ('visited'), 'did' dan keyin\nV1 ('visit')." },
-            { "en": "SA: Have you ever ridden a camel?  SB: No, I haven't. I've never ridden a camel.", "uz": "SA: Tuyaga minganmisiz? SB: Yo'q. Hech qachon tuyaga minmaganman.", "noteUz": "KITOBDAGI 2-NAMUNA.\nride → rode → RIDDEN (V3).\nJavob 'yo'q' bo'lsa vaqt so'ralmaydi." },
-            { "en": "SA: Have you ever stayed in a big hotel?  SB: Yes, I have.  SA: When did you stay in a big hotel?  SB: Last winter. It was fantastic.", "uz": "SA: Katta mehmonxonada turganmisiz? SB: Ha. SA: Qachon? SB: O'tgan qishda. Ajoyib edi.", "noteUz": "stay — TO'G'RI fe'l: stayed → STAYED.\n'stay IN a hotel' — predlog 'in'." },
-            { "en": "SA: Have you ever eaten Chinese food?  SB: Yes, I have.  SA: When did you eat Chinese food?  SB: Last Sunday. It was delicious.", "uz": "SA: Xitoy taomini yeb ko'rganmisiz? SB: Ha. SA: Qachon? SB: O'tgan yakshanba. Juda mazali edi.", "noteUz": "eat → ate → EATEN (V3).\n'DELICIOUS' — ovqat uchun eng mos sifat.\nDIQQAT: 'When did you EAT?' ('ate' EMAS)." },
-            { "en": "SA: Have you ever met a famous person?  SB: No, I haven't. I've never met a famous person.", "uz": "SA: Mashhur odam bilan uchrashganmisiz? SB: Yo'q. Hech qachon uchrashmaganman.", "noteUz": "meet → met → MET (V2 = V3)." },
-            { "en": "SA: Have you ever driven a bus?  SB: No, I haven't. I've never driven a bus.", "uz": "SA: Avtobus haydaganmisiz? SB: Yo'q. Hech qachon haydamaganman.", "noteUz": "drive → drove → DRIVEN (V3).\n'ridden', 'driven' — '-en' bilan tugaydi." },
-            { "en": "SA: Have you ever flown in a plane?  SB: Yes, I have.  SA: When did you fly in a plane?  SB: A month ago. It was amazing.", "uz": "SA: Samolyotda uchganmisiz? SB: Ha. SA: Qachon? SB: Bir oy oldin. Hayratlanarli edi.", "noteUz": "fly → flew → FLOWN (V3).\n'a month AGO' — PAST SIMPLE ko'rsatkichi.\nDIQQAT: 'ago' bilan Present Perfect\nISHLATILMAYDI!" }
+            {
+              "en": "SA: Have you ever visited Prague?  SB: Yes, I have.  SA: When did you visit Prague?  SB: Last summer. It was exciting.",
+              "uz": "SA: Pragaga borganmisiz? SB: Ha. SA: Qachon borgansiz? SB: O'tgan yozda. Hayajonli edi.",
+              "noteUz": "KITOBDAGI 1-NAMUNA.\n⚠ Savolda V3 ('visited'), 'did' dan keyin\nV1 ('visit')."
+            },
+            {
+              "en": "SA: Have you ever ridden a camel?  SB: No, I haven't. I've never ridden a camel.",
+              "uz": "SA: Tuyaga minganmisiz? SB: Yo'q. Hech qachon tuyaga minmaganman.",
+              "noteUz": "KITOBDAGI 2-NAMUNA.\nride → rode → RIDDEN (V3).\nJavob 'yo'q' bo'lsa vaqt so'ralmaydi."
+            },
+            {
+              "en": "SA: Have you ever stayed in a big hotel?  SB: Yes, I have.  SA: When did you stay in a big hotel?  SB: Last winter. It was fantastic.",
+              "uz": "SA: Katta mehmonxonada turganmisiz? SB: Ha. SA: Qachon? SB: O'tgan qishda. Ajoyib edi.",
+              "noteUz": "stay — TO'G'RI fe'l: stayed → STAYED.\n'stay IN a hotel' — predlog 'in'."
+            },
+            {
+              "en": "SA: Have you ever eaten Chinese food?  SB: Yes, I have.  SA: When did you eat Chinese food?  SB: Last Sunday. It was delicious.",
+              "uz": "SA: Xitoy taomini yeb ko'rganmisiz? SB: Ha. SA: Qachon? SB: O'tgan yakshanba. Juda mazali edi.",
+              "noteUz": "eat → ate → EATEN (V3).\n'DELICIOUS' — ovqat uchun eng mos sifat.\nDIQQAT: 'When did you EAT?' ('ate' EMAS)."
+            },
+            {
+              "en": "SA: Have you ever met a famous person?  SB: No, I haven't. I've never met a famous person.",
+              "uz": "SA: Mashhur odam bilan uchrashganmisiz? SB: Yo'q. Hech qachon uchrashmaganman.",
+              "noteUz": "meet → met → MET (V2 = V3)."
+            },
+            {
+              "en": "SA: Have you ever driven a bus?  SB: No, I haven't. I've never driven a bus.",
+              "uz": "SA: Avtobus haydaganmisiz? SB: Yo'q. Hech qachon haydamaganman.",
+              "noteUz": "drive → drove → DRIVEN (V3).\n'ridden', 'driven' — '-en' bilan tugaydi."
+            },
+            {
+              "en": "SA: Have you ever flown in a plane?  SB: Yes, I have.  SA: When did you fly in a plane?  SB: A month ago. It was amazing.",
+              "uz": "SA: Samolyotda uchganmisiz? SB: Ha. SA: Qachon? SB: Bir oy oldin. Hayratlanarli edi.",
+              "noteUz": "fly → flew → FLOWN (V3).\n'a month AGO' — PAST SIMPLE ko'rsatkichi.\nDIQQAT: 'ago' bilan Present Perfect\nISHLATILMAYDI!"
+            }
           ]
         }
       ]
@@ -138,11 +307,31 @@
           "explanationUz": "GRAMMATIKA QUTISI\n\nKITOBDAGI QOIDA:\n\n • 'We use ALREADY in POSITIVE STATEMENTS.'\n • 'We use YET in QUESTIONS and NEGATIVES.'\n\n MISOLLAR:\n    Have you packed your suitcase YET?\n    No, I haven't. I haven't packed it YET.\n    Yes, I have. I've ALREADY packed it.\n\n\nQISQA JADVAL:\n\n  ALREADY  →  TASDIQ gapda\n              'I've ALREADY packed it.'\n\n  YET      →  SAVOLDA\n              'Have you packed it YET?'\n           →  INKORDA\n              'I haven't packed it YET.'\n\n\nQAYERDA TURADI:\n\n  ALREADY — 'have' va V3 ORASIDA:\n     'I've ALREADY packed it.'\n     'She has ALREADY left.'\n\n     (Ba'zan gap oxirida ham keladi, lekin\n      o'rtada turgani standart.)\n\n  YET — GAP OXIRIDA:\n     'Have you packed it YET?'\n     'I haven't packed it YET.'\n\n     'Have you YET packed it?' — XATO.\n\n\nMA'NOLARI:\n\n  ALREADY = allaqachon\n     Kutilganidan ERTAROQ bo'lgan ish.\n     'I've already packed.' = kutmagan\n     edingiz, lekin men allaqachon\n     yig'ib bo'ldim.\n\n  YET = hali\n     Kutilayotgan, lekin HALI bo'lmagan ish.\n     'I haven't packed yet.' = hali\n     yig'madim (lekin yig'ishim kerak).\n\n  Ya'ni 'yet' KUTILAYOTGAN ishni bildiradi.\n\n\nDIQQAT — 'YET' va 'STILL':\n  'I haven't packed YET.'\n     = hali yig'madim (neytral)\n  'I STILL haven't packed.'\n     = hali ham yig'madim (sabrsizlik,\n       ajablanish)\n\n  'still' — 'haven't' dan OLDIN.\n\n\nDIQQAT — 'ALREADY' SAVOLDA:\n  Ba'zan savolda ham ishlatiladi, lekin\n  AJABLANISH ma'nosida:\n     'Have you ALREADY packed?'\n     = Allaqachon yig'ib bo'ldingizmi?\n       (Shunchalik tezmi?)\n\n  Oddiy savolda esa 'yet':\n     'Have you packed YET?'\n\n\nBOG'LIQLIK — 105-BETDAGI XAT:\n  'I've ALREADY visited the bazaar.'\n     (tasdiq)\n  'I haven't been on a boat trip YET.'\n     (inkor)\n  'There are a lot of things I haven't\n   done YET.'\n     (inkor)\n\n  Jekning xati bu qoidani aynan ishlatgan.\n\n\nYANGI SO'ZLAR:\n  already     = allaqachon\n  yet         = hali\n  to pack     = (yukni) yig'moq\n  a suitcase  = chamadon\n  a positive statement = tasdiq gap",
           "bookRef": "Coursebook, 106-bet, 'Present Perfect + Yet/Already' qutisi",
           "points": [
-            { "en": "We use already in positive statements.", "uz": "ALREADY ni tasdiq gaplarda ishlatamiz.", "noteUz": "'already' — 'have' va V3 ORASIDA." },
-            { "en": "We use yet in questions and negatives.", "uz": "YET ni savol va inkor gaplarda ishlatamiz.", "noteUz": "'yet' — GAP OXIRIDA." },
-            { "en": "Have you packed your suitcase yet?", "uz": "Chamadoningizni yig'ib bo'ldingizmi?", "noteUz": "SAVOL + YET (gap oxirida).\n'Have you yet packed it?' — XATO." },
-            { "en": "No, I haven't. I haven't packed it yet.", "uz": "Yo'q. Hali yig'madim.", "noteUz": "INKOR + YET (gap oxirida).\n'yet' = hali (kutilayotgan ish)." },
-            { "en": "Yes, I have. I've already packed it.", "uz": "Ha. Allaqachon yig'ib bo'ldim.", "noteUz": "TASDIQ + ALREADY ('have' va V3 orasida).\n'already' = kutilganidan ertaroq." }
+            {
+              "en": "We use already in positive statements.",
+              "uz": "ALREADY ni tasdiq gaplarda ishlatamiz.",
+              "noteUz": "'already' — 'have' va V3 ORASIDA."
+            },
+            {
+              "en": "We use yet in questions and negatives.",
+              "uz": "YET ni savol va inkor gaplarda ishlatamiz.",
+              "noteUz": "'yet' — GAP OXIRIDA."
+            },
+            {
+              "en": "Have you packed your suitcase yet?",
+              "uz": "Chamadoningizni yig'ib bo'ldingizmi?",
+              "noteUz": "SAVOL + YET (gap oxirida).\n'Have you yet packed it?' — XATO."
+            },
+            {
+              "en": "No, I haven't. I haven't packed it yet.",
+              "uz": "Yo'q. Hali yig'madim.",
+              "noteUz": "INKOR + YET (gap oxirida).\n'yet' = hali (kutilayotgan ish)."
+            },
+            {
+              "en": "Yes, I have. I've already packed it.",
+              "uz": "Ha. Allaqachon yig'ib bo'ldim.",
+              "noteUz": "TASDIQ + ALREADY ('have' va V3 orasida).\n'already' = kutilganidan ertaroq."
+            }
           ]
         }
       ]
@@ -156,77 +345,323 @@
         "ruleUz": "PRESENT PERFECT — YASALISHI",
         "explanationUz": "HAVE / HAS + V3.",
         "items": [
-          { "base": "I / you / we / they", "baseUz": "men / siz / biz / ular", "derived": "HAVE + V3", "derivedUz": "I have cleaned", "note": "" },
-          { "base": "he / she / it", "baseUz": "u", "derived": "HAS + V3", "derivedUz": "he has cleaned", "note": "" },
-          { "base": "inkor (I/you/we/they)", "baseUz": "", "derived": "HAVEN'T + V3", "derivedUz": "= have not", "note": "" },
-          { "base": "inkor (he/she/it)", "baseUz": "", "derived": "HASN'T + V3", "derivedUz": "= has not", "note": "" },
-          { "base": "savol", "baseUz": "", "derived": "HAVE/HAS + ega + V3?", "derivedUz": "'do' KERAK EMAS", "note": "" },
-          { "base": "qisqa javob", "baseUz": "", "derived": "Yes, I have. / No, I haven't.", "derivedUz": "'Yes, I've' XATO", "note": "" }
+          {
+            "base": "I / you / we / they",
+            "baseUz": "men / siz / biz / ular",
+            "derived": "HAVE + V3",
+            "derivedUz": "I have cleaned",
+            "note": ""
+          },
+          {
+            "base": "he / she / it",
+            "baseUz": "u",
+            "derived": "HAS + V3",
+            "derivedUz": "he has cleaned",
+            "note": ""
+          },
+          {
+            "base": "inkor (I/you/we/they)",
+            "baseUz": "",
+            "derived": "HAVEN'T + V3",
+            "derivedUz": "= have not",
+            "note": ""
+          },
+          {
+            "base": "inkor (he/she/it)",
+            "baseUz": "",
+            "derived": "HASN'T + V3",
+            "derivedUz": "= has not",
+            "note": ""
+          },
+          {
+            "base": "savol",
+            "baseUz": "",
+            "derived": "HAVE/HAS + ega + V3?",
+            "derivedUz": "'do' KERAK EMAS",
+            "note": ""
+          },
+          {
+            "base": "qisqa javob",
+            "baseUz": "",
+            "derived": "Yes, I have. / No, I haven't.",
+            "derivedUz": "'Yes, I've' XATO",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "⚠ PRESENT PERFECT va PAST SIMPLE — VAQT RAVISHLARI",
         "explanationUz": "Bu ikki ro'yxat javobni belgilaydi.",
         "items": [
-          { "base": "ever, never", "baseUz": "hech qachon", "derived": "PRESENT PERFECT", "derivedUz": "Have you ever been?", "note": "" },
-          { "base": "just", "baseUz": "hozirgina", "derived": "PRESENT PERFECT", "derivedUz": "I've just arrived.", "note": "" },
-          { "base": "yet", "baseUz": "hali", "derived": "PRESENT PERFECT", "derivedUz": "savol/inkor", "note": "" },
-          { "base": "already", "baseUz": "allaqachon", "derived": "PRESENT PERFECT", "derivedUz": "tasdiq", "note": "" },
-          { "base": "for, since", "baseUz": "davomida / dan beri", "derived": "PRESENT PERFECT", "derivedUz": "", "note": "" },
-          { "base": "yesterday", "baseUz": "kecha", "derived": "PAST SIMPLE", "derivedUz": "I saw him yesterday.", "note": "" },
-          { "base": "two days ago", "baseUz": "ikki kun oldin", "derived": "PAST SIMPLE", "derivedUz": "'ago' → Past Simple", "note": "" },
-          { "base": "last Monday / week / month", "baseUz": "o'tgan dushanba / hafta / oy", "derived": "PAST SIMPLE", "derivedUz": "", "note": "" }
+          {
+            "base": "ever, never",
+            "baseUz": "hech qachon",
+            "derived": "PRESENT PERFECT",
+            "derivedUz": "Have you ever been?",
+            "note": ""
+          },
+          {
+            "base": "just",
+            "baseUz": "hozirgina",
+            "derived": "PRESENT PERFECT",
+            "derivedUz": "I've just arrived.",
+            "note": ""
+          },
+          {
+            "base": "yet",
+            "baseUz": "hali",
+            "derived": "PRESENT PERFECT",
+            "derivedUz": "savol/inkor",
+            "note": ""
+          },
+          {
+            "base": "already",
+            "baseUz": "allaqachon",
+            "derived": "PRESENT PERFECT",
+            "derivedUz": "tasdiq",
+            "note": ""
+          },
+          {
+            "base": "for, since",
+            "baseUz": "davomida / dan beri",
+            "derived": "PRESENT PERFECT",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "yesterday",
+            "baseUz": "kecha",
+            "derived": "PAST SIMPLE",
+            "derivedUz": "I saw him yesterday.",
+            "note": ""
+          },
+          {
+            "base": "two days ago",
+            "baseUz": "ikki kun oldin",
+            "derived": "PAST SIMPLE",
+            "derivedUz": "'ago' → Past Simple",
+            "note": ""
+          },
+          {
+            "base": "last Monday / week / month",
+            "baseUz": "o'tgan dushanba / hafta / oy",
+            "derived": "PAST SIMPLE",
+            "derivedUz": "",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "EVER / NEVER / YET / ALREADY — QAYERDA TURADI",
         "explanationUz": "",
         "items": [
-          { "base": "EVER", "baseUz": "savolda; ustun daraja bilan", "derived": "have va V3 ORASIDA", "derivedUz": "Have you EVER been?", "note": "" },
-          { "base": "NEVER", "baseUz": "inkor ma'noda", "derived": "have va V3 ORASIDA", "derivedUz": "I've NEVER been.", "note": "'haven't never' XATO" },
-          { "base": "ALREADY", "baseUz": "tasdiqda", "derived": "have va V3 ORASIDA", "derivedUz": "I've ALREADY packed.", "note": "" },
-          { "base": "YET", "baseUz": "savol va inkorda", "derived": "GAP OXIRIDA", "derivedUz": "I haven't packed YET.", "note": "" }
+          {
+            "base": "EVER",
+            "baseUz": "savolda; ustun daraja bilan",
+            "derived": "have va V3 ORASIDA",
+            "derivedUz": "Have you EVER been?",
+            "note": ""
+          },
+          {
+            "base": "NEVER",
+            "baseUz": "inkor ma'noda",
+            "derived": "have va V3 ORASIDA",
+            "derivedUz": "I've NEVER been.",
+            "note": "'haven't never' XATO"
+          },
+          {
+            "base": "ALREADY",
+            "baseUz": "tasdiqda",
+            "derived": "have va V3 ORASIDA",
+            "derivedUz": "I've ALREADY packed.",
+            "note": ""
+          },
+          {
+            "base": "YET",
+            "baseUz": "savol va inkorda",
+            "derived": "GAP OXIRIDA",
+            "derivedUz": "I haven't packed YET.",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "UCH ASOSIY SHAKL — 12-MASHQDAGI FE'LLAR",
         "explanationUz": "Present Perfect uchun V3 kerak.",
         "items": [
-          { "base": "visit", "baseUz": "bormoq", "derived": "visited → VISITED", "derivedUz": "TO'G'RI fe'l", "note": "V2 = V3" },
-          { "base": "stay", "baseUz": "turmoq", "derived": "stayed → STAYED", "derivedUz": "TO'G'RI fe'l", "note": "V2 = V3" },
-          { "base": "ride", "baseUz": "minmoq", "derived": "rode → RIDDEN", "derivedUz": "", "note": "-EN" },
-          { "base": "eat", "baseUz": "yemoq", "derived": "ate → EATEN", "derivedUz": "", "note": "-EN" },
-          { "base": "drive", "baseUz": "haydamoq", "derived": "drove → DRIVEN", "derivedUz": "", "note": "-EN" },
-          { "base": "fly", "baseUz": "uchmoq", "derived": "flew → FLOWN", "derivedUz": "", "note": "-N" },
-          { "base": "meet", "baseUz": "uchrashmoq", "derived": "met → MET", "derivedUz": "", "note": "V2 = V3" },
-          { "base": "see", "baseUz": "ko'rmoq", "derived": "saw → SEEN", "derivedUz": "", "note": "-EN" },
-          { "base": "be", "baseUz": "bo'lmoq", "derived": "was/were → BEEN", "derivedUz": "", "note": "" },
-          { "base": "go", "baseUz": "bormoq", "derived": "went → GONE", "derivedUz": "been ↔ gone farqi", "note": "" }
+          {
+            "base": "visit",
+            "baseUz": "bormoq",
+            "derived": "visited → VISITED",
+            "derivedUz": "TO'G'RI fe'l",
+            "note": "V2 = V3"
+          },
+          {
+            "base": "stay",
+            "baseUz": "turmoq",
+            "derived": "stayed → STAYED",
+            "derivedUz": "TO'G'RI fe'l",
+            "note": "V2 = V3"
+          },
+          {
+            "base": "ride",
+            "baseUz": "minmoq",
+            "derived": "rode → RIDDEN",
+            "derivedUz": "",
+            "note": "-EN"
+          },
+          {
+            "base": "eat",
+            "baseUz": "yemoq",
+            "derived": "ate → EATEN",
+            "derivedUz": "",
+            "note": "-EN"
+          },
+          {
+            "base": "drive",
+            "baseUz": "haydamoq",
+            "derived": "drove → DRIVEN",
+            "derivedUz": "",
+            "note": "-EN"
+          },
+          {
+            "base": "fly",
+            "baseUz": "uchmoq",
+            "derived": "flew → FLOWN",
+            "derivedUz": "",
+            "note": "-N"
+          },
+          {
+            "base": "meet",
+            "baseUz": "uchrashmoq",
+            "derived": "met → MET",
+            "derivedUz": "",
+            "note": "V2 = V3"
+          },
+          {
+            "base": "see",
+            "baseUz": "ko'rmoq",
+            "derived": "saw → SEEN",
+            "derivedUz": "",
+            "note": "-EN"
+          },
+          {
+            "base": "be",
+            "baseUz": "bo'lmoq",
+            "derived": "was/were → BEEN",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "go",
+            "baseUz": "bormoq",
+            "derived": "went → GONE",
+            "derivedUz": "been ↔ gone farqi",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "BAHO SIFATLARI (12-mashq)",
         "explanationUz": "",
         "items": [
-          { "base": "exciting", "baseUz": "hayajonli", "derived": "excited", "derivedUz": "hayajonlangan (odam)", "note": "IJOBIY" },
-          { "base": "fantastic", "baseUz": "ajoyib", "derived": "great", "derivedUz": "zo'r", "note": "IJOBIY" },
-          { "base": "amazing", "baseUz": "hayratlanarli", "derived": "to amaze", "derivedUz": "hayratlantirmoq", "note": "IJOBIY" },
-          { "base": "delicious", "baseUz": "juda mazali", "derived": "faqat OVQAT haqida", "derivedUz": "", "note": "IJOBIY" },
-          { "base": "awful", "baseUz": "juda yomon", "derived": "terrible / horrible", "derivedUz": "dahshatli", "note": "SALBIY" },
-          { "base": "disgusting", "baseUz": "jirkanch", "derived": "ko'pincha OVQAT haqida", "derivedUz": "", "note": "SALBIY" }
+          {
+            "base": "exciting",
+            "baseUz": "hayajonli",
+            "derived": "excited",
+            "derivedUz": "hayajonlangan (odam)",
+            "note": "IJOBIY"
+          },
+          {
+            "base": "fantastic",
+            "baseUz": "ajoyib",
+            "derived": "great",
+            "derivedUz": "zo'r",
+            "note": "IJOBIY"
+          },
+          {
+            "base": "amazing",
+            "baseUz": "hayratlanarli",
+            "derived": "to amaze",
+            "derivedUz": "hayratlantirmoq",
+            "note": "IJOBIY"
+          },
+          {
+            "base": "delicious",
+            "baseUz": "juda mazali",
+            "derived": "faqat OVQAT haqida",
+            "derivedUz": "",
+            "note": "IJOBIY"
+          },
+          {
+            "base": "awful",
+            "baseUz": "juda yomon",
+            "derived": "terrible / horrible",
+            "derivedUz": "dahshatli",
+            "note": "SALBIY"
+          },
+          {
+            "base": "disgusting",
+            "baseUz": "jirkanch",
+            "derived": "ko'pincha OVQAT haqida",
+            "derivedUz": "",
+            "note": "SALBIY"
+          }
         ]
       },
       {
         "ruleUz": "MAMLAKAT NOMLARI (11-mashq)",
         "explanationUz": "Hammasi ARTIKLSIZ.",
         "items": [
-          { "base": "Australia", "baseUz": "Avstraliya", "derived": "Turkey", "derivedUz": "Turkiya", "note": "" },
-          { "base": "Greece", "baseUz": "Gretsiya", "derived": "Mexico", "derivedUz": "Meksika", "note": "" },
-          { "base": "Italy", "baseUz": "Italiya", "derived": "Canada", "derivedUz": "Kanada", "note": "" },
-          { "base": "Spain", "baseUz": "Ispaniya", "derived": "Poland", "derivedUz": "Polsha", "note": "" },
-          { "base": "Brazil", "baseUz": "Braziliya", "derived": "China", "derivedUz": "Xitoy", "note": "" },
-          { "base": "Cyprus", "baseUz": "Kipr", "derived": "Prague", "derivedUz": "Praga", "note": "grammatika qutisi" },
-          { "base": "ISTISNOLAR", "baseUz": "'the' oladi", "derived": "the USA, the UK", "derivedUz": "the Netherlands", "note": "" }
+          {
+            "base": "Australia",
+            "baseUz": "Avstraliya",
+            "derived": "Turkey",
+            "derivedUz": "Turkiya",
+            "note": ""
+          },
+          {
+            "base": "Greece",
+            "baseUz": "Gretsiya",
+            "derived": "Mexico",
+            "derivedUz": "Meksika",
+            "note": ""
+          },
+          {
+            "base": "Italy",
+            "baseUz": "Italiya",
+            "derived": "Canada",
+            "derivedUz": "Kanada",
+            "note": ""
+          },
+          {
+            "base": "Spain",
+            "baseUz": "Ispaniya",
+            "derived": "Poland",
+            "derivedUz": "Polsha",
+            "note": ""
+          },
+          {
+            "base": "Brazil",
+            "baseUz": "Braziliya",
+            "derived": "China",
+            "derivedUz": "Xitoy",
+            "note": ""
+          },
+          {
+            "base": "Cyprus",
+            "baseUz": "Kipr",
+            "derived": "Prague",
+            "derivedUz": "Praga",
+            "note": "grammatika qutisi"
+          },
+          {
+            "base": "ISTISNOLAR",
+            "baseUz": "'the' oladi",
+            "derived": "the USA, the UK",
+            "derivedUz": "the Netherlands",
+            "note": ""
+          }
         ]
       }
     ]
@@ -274,36 +709,129 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "affirmative", "uz": "tasdiq shakli" },
-    { "en": "negative", "uz": "inkor shakli" },
-    { "en": "interrogative", "uz": "so'roq shakli" },
-    { "en": "a short answer", "uz": "qisqa javob" },
-    { "en": "past participle", "uz": "fe'lning III shakli" },
-    { "en": "the main verb", "uz": "asosiy fe'l" },
-    { "en": "an action", "uz": "harakat" },
-    { "en": "definite time", "uz": "aniq vaqt" },
-    { "en": "a time adverb", "uz": "vaqt ravishi" },
-    { "en": "a statement", "uz": "darak gap" },
-    { "en": "ever", "uz": "hech qachon (savolda)" },
-    { "en": "never", "uz": "hech qachon (inkorda)" },
-    { "en": "yet", "uz": "hali" },
-    { "en": "already", "uz": "allaqachon" },
-    { "en": "just", "uz": "hozirgina" },
-    { "en": "for", "uz": "... davomida" },
-    { "en": "since", "uz": "... dan beri" },
-    { "en": "ago", "uz": "... oldin" },
-    { "en": "to pack", "uz": "(yukni) yig'moq" },
-    { "en": "a suitcase", "uz": "chamadon" },
-    { "en": "to clean", "uz": "tozalamoq" },
-    { "en": "Prague", "uz": "Praga" },
-    { "en": "a famous person", "uz": "mashhur odam" },
-    { "en": "to fly in a plane", "uz": "samolyotda uchmoq" },
-    { "en": "exciting", "uz": "hayajonli" },
-    { "en": "fantastic", "uz": "ajoyib" },
-    { "en": "amazing", "uz": "hayratlanarli" },
-    { "en": "great", "uz": "zo'r" },
-    { "en": "awful", "uz": "juda yomon" },
-    { "en": "terrible", "uz": "dahshatli" },
-    { "en": "disgusting", "uz": "jirkanch" }
+    {
+      "en": "affirmative",
+      "uz": "tasdiq shakli"
+    },
+    {
+      "en": "negative",
+      "uz": "inkor shakli"
+    },
+    {
+      "en": "interrogative",
+      "uz": "so'roq shakli"
+    },
+    {
+      "en": "a short answer",
+      "uz": "qisqa javob"
+    },
+    {
+      "en": "past participle",
+      "uz": "fe'lning III shakli"
+    },
+    {
+      "en": "the main verb",
+      "uz": "asosiy fe'l"
+    },
+    {
+      "en": "an action",
+      "uz": "harakat"
+    },
+    {
+      "en": "definite time",
+      "uz": "aniq vaqt"
+    },
+    {
+      "en": "a time adverb",
+      "uz": "vaqt ravishi"
+    },
+    {
+      "en": "a statement",
+      "uz": "darak gap"
+    },
+    {
+      "en": "ever",
+      "uz": "hech qachon (savolda)"
+    },
+    {
+      "en": "never",
+      "uz": "hech qachon (inkorda)"
+    },
+    {
+      "en": "yet",
+      "uz": "hali"
+    },
+    {
+      "en": "already",
+      "uz": "allaqachon"
+    },
+    {
+      "en": "just",
+      "uz": "hozirgina"
+    },
+    {
+      "en": "for",
+      "uz": "... davomida"
+    },
+    {
+      "en": "since",
+      "uz": "... dan beri"
+    },
+    {
+      "en": "ago",
+      "uz": "... oldin"
+    },
+    {
+      "en": "to pack",
+      "uz": "(yukni) yig'moq"
+    },
+    {
+      "en": "a suitcase",
+      "uz": "chamadon"
+    },
+    {
+      "en": "to clean",
+      "uz": "tozalamoq"
+    },
+    {
+      "en": "Prague",
+      "uz": "Praga"
+    },
+    {
+      "en": "a famous person",
+      "uz": "mashhur odam"
+    },
+    {
+      "en": "to fly in a plane",
+      "uz": "samolyotda uchmoq"
+    },
+    {
+      "en": "exciting",
+      "uz": "hayajonli"
+    },
+    {
+      "en": "fantastic",
+      "uz": "ajoyib"
+    },
+    {
+      "en": "amazing",
+      "uz": "hayratlanarli"
+    },
+    {
+      "en": "great",
+      "uz": "zo'r"
+    },
+    {
+      "en": "awful",
+      "uz": "juda yomon"
+    },
+    {
+      "en": "terrible",
+      "uz": "dahshatli"
+    },
+    {
+      "en": "disgusting",
+      "uz": "jirkanch"
+    }
   ]
 }
