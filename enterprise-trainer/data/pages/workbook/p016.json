@@ -5,6 +5,7 @@
   "unit": 3,
   "unitTitle": "Home Sweet Home",
   "module": 1,
+  "scanNote": "WORKBOOK 15-BET. Unit 3 — uy haqida so'rash, o'qish va yozish.\n\nSkaner bilan tekshirildi. HAMMASI TO'G'RI: 12-mashq (6 savol), 13-mashq (matndan 10 qayd), 14-mashq (xatning 4 bo'shlig'i).\n\n⚠ 12-MAShQ — JAVOB SAVOLNI AYTADI:\n  'on the other side of town' → WHERE IS IT?\n  'a big house, not very expensive' → WHAT'S IT LIKE?\n  '£500 per month' → HOW MUCH IS IT?\n  xonalar ro'yxati → HOW MANY ROOMS HAS IT GOT?\n  'Yes, there is a small garden' → IS THERE A GARDEN?\n  'How about Saturday afternoon?' → WHEN CAN I SEE IT?\n  ⚠ Oltita savolning hammasi ro'yxatda berilgan — faqat joyini topish kerak.\n\n⚠ 14-MAShQ — JADVALDAN XATGA: to'rt bo'shliqning hammasi jadvaldagi ma'lumotdan yoziladi. Jadval qanday tartibda bo'lsa, xat ham shunday boradi: TYPE+WHERE → SIZE+INSIDE → OUTSIDE → FEELINGS.\n  ⚠ Jadvaldagi 'home is where the heart is' — maqol, xatning oxirida ishlatiladi. Ma'nosi: 'uy — yurak qayerda bo'lsa, o'sha yer'.\n\n⚠ 13-MAShQ MATNIDAGI MAQOL: 'There is no place like home' = 'uydan yaxshi joy yo'q'. O'zbekcha muqobili: 'O'z uying — o'lan to'shaging'.",
   "pairsWith": "Coursebook 22–23-betlar",
   "sections": [
     {
@@ -20,22 +21,108 @@
           "explanationUz": "SAVOLLAR RO'YXATI (oltitasi ham ishlatiladi):\n  How many rooms has it got?  — Nechta xonasi bor?\n  Where is it?                — U qayerda?\n  When can I see it?          — Uni qachon ko'rsam bo'ladi?\n  What's it like?             — U qanaqa?\n  Is there a garden?          — Bog'i bormi?\n  How much is it?             — Narxi qancha?\n\nHAR BIR SAVOLNI JAVOBIDAN TOPING:\n  javob joy haqida bo'lsa   → Where is it?\n  javob tavsif bo'lsa       → What's it like?\n  javob narx bo'lsa         → How much is it?\n  javob xonalar ro'yxati    → How many rooms has it got?\n  javob 'Yes, there is...'  → Is there a garden?\n  javob kun/vaqt bo'lsa     → When can I see it?\n\nMUHIM IBORA — 'What's it like?'\nBu 'U nimani yoqtiradi?' EMAS! 'like' bu yerda 'kabi' ma'nosida:\n  What's it like? = U qanaqa? Uni tasvirlab bering.\nJavobi sifat bilan beriladi: 'It's a big house.'\n\nTELEFONDA:\n  Is that Ms Powers?  — Bu Powers xonimmi?\n  Who's speaking?     — Kim gapiryapti?\n  Ms — turmush qurgan yoki qurmaganini bildirmaydigan murojaat\n  (Mrs — turmush qurgan, Miss — qurmagan)",
           "bookRef": "Workbook, 15-bet, 12-mashq",
           "lines": [
-            { "who": "A", "textEn": "Hello. Is that Ms Powers?", "uz": "Salom. Bu Powers xonimmi?", "given": true },
-            { "who": "B", "textEn": "Yes. Who's speaking?", "uz": "Ha. Kim gapiryapti?", "given": true },
-            { "who": "A", "textEn": "I'm Tony Black. I want to rent your house.", "uz": "Men Toni Blekman. Uyingizni ijaraga olmoqchiman.", "given": true },
-            { "who": "A", "textEn": "1) ____ ?", "answer": "Where is it?", "hintUz": "Keyingi javob — shaharning qaysi tomonida ekani", "whyUz": "Javob 'It's on the other side of town, in Silverdale Drive' — joy. Demak savol joy haqida." },
-            { "who": "B", "textEn": "It's on the other side of town, in Silverdale Drive.", "uz": "U shaharning narigi tomonida, Silverdeyl yo'lida.", "given": true },
-            { "who": "A", "textEn": "2) ____ ?", "answer": "What's it like?", "hintUz": "Keyingi javob — uyning TAVSIFI (katta, qimmat emas)", "whyUz": "Javob 'It's a big house, actually and it's not very expensive' — tavsif. 'What's it like?' = U qanaqa?" },
-            { "who": "B", "textEn": "It's a big house, actually and it's not very expensive.", "uz": "Aslida u katta uy va unchalik qimmat emas.", "given": true },
-            { "who": "A", "textEn": "3) ____ ?", "answer": "How much is it?", "hintUz": "Keyingi javob — NARX (£500)", "whyUz": "Javob 'It's only £500 per month' — narx. Narx uchun 'How much'." },
-            { "who": "B", "textEn": "It's only £500 per month.", "uz": "Atigi oyiga 500 funt.", "given": true },
-            { "who": "A", "textEn": "That's a great price. 4) ____ ?", "answer": "How many rooms has it got?", "hintUz": "Keyingi javob — xonalar RO'YXATI", "whyUz": "Javob xonalar ro'yxati — demak savol xonalar SONI haqida. Sanaladigan narsa uchun 'How many'." },
-            { "who": "B", "textEn": "There are two bedrooms, a bathroom, a living-room, a dining-room, a kitchen and a garage.", "uz": "Ikkita yotoqxona, hammom, mehmonxona, ovqatlanish xonasi, oshxona va garaj bor.", "given": true },
-            { "who": "A", "textEn": "5) ____ ?", "answer": "Is there a garden?", "hintUz": "Keyingi javob 'Yes, there is...' bilan boshlanadi", "whyUz": "Javob 'Yes, there is a small garden...' — bu HA/YO'Q savoliga javob. Demak savol 'Is there ...?' shaklida." },
-            { "who": "B", "textEn": "Yes, there is a small garden at the front of the house and a larger garden at the back. It's lovely.", "uz": "Ha, uyning oldida kichik bog', orqasida esa kattaroq bog' bor. U go'zal.", "given": true },
-            { "who": "A", "textEn": "It sounds perfect. 6) ____ ?", "answer": "When can I see it?", "hintUz": "Keyingi javob — KUN (shanba tushdan keyin)", "whyUz": "Javob 'How about Saturday afternoon?' — kun. Vaqt uchun 'When'." },
-            { "who": "B", "textEn": "How about Saturday afternoon?", "uz": "Shanba kuni tushdan keyin bo'ladimi?", "given": true },
-            { "who": "A", "textEn": "Great. I'll see you then.", "uz": "Ajoyib. Unda ko'rishguncha.", "given": true }
+            {
+              "who": "A",
+              "textEn": "Hello. Is that Ms Powers?",
+              "uz": "Salom. Bu Powers xonimmi?",
+              "given": true
+            },
+            {
+              "who": "B",
+              "textEn": "Yes. Who's speaking?",
+              "uz": "Ha. Kim gapiryapti?",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "I'm Tony Black. I want to rent your house.",
+              "uz": "Men Toni Blekman. Uyingizni ijaraga olmoqchiman.",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "1) ____ ?",
+              "answer": "Where is it?",
+              "hintUz": "Keyingi javob — shaharning qaysi tomonida ekani",
+              "whyUz": "Javob 'It's on the other side of town, in Silverdale Drive' — joy. Demak savol joy haqida."
+            },
+            {
+              "who": "B",
+              "textEn": "It's on the other side of town, in Silverdale Drive.",
+              "uz": "U shaharning narigi tomonida, Silverdeyl yo'lida.",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "2) ____ ?",
+              "answer": "What's it like?",
+              "hintUz": "Keyingi javob — uyning TAVSIFI (katta, qimmat emas)",
+              "whyUz": "Javob 'It's a big house, actually and it's not very expensive' — tavsif. 'What's it like?' = U qanaqa?"
+            },
+            {
+              "who": "B",
+              "textEn": "It's a big house, actually and it's not very expensive.",
+              "uz": "Aslida u katta uy va unchalik qimmat emas.",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "3) ____ ?",
+              "answer": "How much is it?",
+              "hintUz": "Keyingi javob — NARX (£500)",
+              "whyUz": "Javob 'It's only £500 per month' — narx. Narx uchun 'How much'."
+            },
+            {
+              "who": "B",
+              "textEn": "It's only £500 per month.",
+              "uz": "Atigi oyiga 500 funt.",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "That's a great price. 4) ____ ?",
+              "answer": "How many rooms has it got?",
+              "hintUz": "Keyingi javob — xonalar RO'YXATI",
+              "whyUz": "Javob xonalar ro'yxati — demak savol xonalar SONI haqida. Sanaladigan narsa uchun 'How many'."
+            },
+            {
+              "who": "B",
+              "textEn": "There are two bedrooms, a bathroom, a living-room, a dining-room, a kitchen and a garage.",
+              "uz": "Ikkita yotoqxona, hammom, mehmonxona, ovqatlanish xonasi, oshxona va garaj bor.",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "5) ____ ?",
+              "answer": "Is there a garden?",
+              "hintUz": "Keyingi javob 'Yes, there is...' bilan boshlanadi",
+              "whyUz": "Javob 'Yes, there is a small garden...' — bu HA/YO'Q savoliga javob. Demak savol 'Is there ...?' shaklida."
+            },
+            {
+              "who": "B",
+              "textEn": "Yes, there is a small garden at the front of the house and a larger garden at the back. It's lovely.",
+              "uz": "Ha, uyning oldida kichik bog', orqasida esa kattaroq bog' bor. U go'zal.",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "It sounds perfect. 6) ____ ?",
+              "answer": "When can I see it?",
+              "hintUz": "Keyingi javob — KUN (shanba tushdan keyin)",
+              "whyUz": "Javob 'How about Saturday afternoon?' — kun. Vaqt uchun 'When'."
+            },
+            {
+              "who": "B",
+              "textEn": "How about Saturday afternoon?",
+              "uz": "Shanba kuni tushdan keyin bo'ladimi?",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "Great. I'll see you then.",
+              "uz": "Ajoyib. Unda ko'rishguncha.",
+              "given": true
+            }
           ]
         }
       ]
@@ -53,17 +140,61 @@
           "explanationUz": "Sarlavhalar: TYPE OF PLACE - WHERE - SIZE - INSIDE THE HOUSE -\nOUTSIDE THE HOUSE - FEELINGS\n\nBu — uy haqida gapirishning STANDART tartibi. Coursebook 19 va\n23-betlarda ham xuddi shu sarlavhalar ishlatilgan.\n\nAvval matnni to'liq o'qing, keyin qayd olish mashqiga o'ting.",
           "bookRef": "Workbook, 15-bet, 13-mashq (matn)",
           "sentences": [
-            { "en": "My family and I live in a pretty house near the centre of Brighton.", "uz": "Oilam va men Brayton markaziga yaqin chiroyli uyda yashaymiz.", "noteUz": "'My family and I' — inglizchada 'I' OXIRIDA turadi (I and my family EMAS). Bu muloyimlik qoidasi." },
-            { "en": "Brighton is a lovely city on the south coast of England.", "uz": "Brayton — Angliyaning janubiy qirg'og'idagi go'zal shahar.", "noteUz": "'coast' bilan doim ON — Workbook 14-betdagi qoida." },
-            { "en": "My house is quite big and it is in a very nice area.", "uz": "Uyim ancha katta va juda yaxshi hududda.", "noteUz": "'area' bilan IN. quite = ancha, very = juda." },
-            { "en": "There are seven rooms in it.", "uz": "Unda yettita xona bor.", "noteUz": "'in it' — 'uyda'. 'it' = the house." },
-            { "en": "Upstairs, there are two bedrooms and a bathroom.", "uz": "Tepa qavatda ikkita yotoqxona va hammom bor.", "noteUz": "'There ARE' — chunki birinchi ot ko'plik (two bedrooms)." },
-            { "en": "My bedroom is quite big and it has got a comfortable single bed and lots of posters on the walls.", "uz": "Yotoqxonam ancha katta, unda qulay bir kishilik karavot va devorlarda ko'p plakatlar bor.", "noteUz": "'lots of' = ko'p (a lot of bilan bir xil). Devor uchun ON." },
-            { "en": "Downstairs, there is a big kitchen, a spacious living-room, a study and a small bathroom.", "uz": "Past qavatda katta oshxona, keng mehmonxona, ish xonasi va kichik hammom bor.", "noteUz": "'There IS' — birinchi ot birlik (a big kitchen). Ingliz tilida fe'l BIRINCHI otga qarab tanlanadi." },
-            { "en": "My favourite room is the study because there is a big bookcase with lots of books there.", "uz": "Eng yoqtirgan xonam — ish xonasi, chunki u yerda ko'p kitobli katta javon bor.", "noteUz": "'because' — sabab. Fikrni asoslash uchun ishlatiladi — insho va gapirishda juda muhim." },
-            { "en": "Outside our house, there is a garage for my parents' car and a huge garden with lots of trees and flowers.", "uz": "Uyimiz tashqarisida ota-onamning mashinasi uchun garaj va ko'p daraxt-gulli ulkan bog' bor.", "noteUz": "'my parents' car' — apostrof 's' dan KEYIN, chunki 'parents' ko'plik." },
-            { "en": "I love my house because it makes me feel safe and relaxed.", "uz": "Uyimni yaxshi ko'raman, chunki u meni xavfsiz va tinch his qildiradi.", "noteUz": "'makes me feel' — 'meni ... his qildiradi'. safe = xavfsiz, relaxed = tinch, xotirjam." },
-            { "en": "After all, there is no place like home.", "uz": "Axir, uydek joy yo'q.", "noteUz": "Coursebook 23-betdagi maqol! 'After all' = axir, oxir-oqibat." }
+            {
+              "en": "My family and I live in a pretty house near the centre of Brighton.",
+              "uz": "Oilam va men Brayton markaziga yaqin chiroyli uyda yashaymiz.",
+              "noteUz": "'My family and I' — inglizchada 'I' OXIRIDA turadi (I and my family EMAS). Bu muloyimlik qoidasi."
+            },
+            {
+              "en": "Brighton is a lovely city on the south coast of England.",
+              "uz": "Brayton — Angliyaning janubiy qirg'og'idagi go'zal shahar.",
+              "noteUz": "'coast' bilan doim ON — Workbook 14-betdagi qoida."
+            },
+            {
+              "en": "My house is quite big and it is in a very nice area.",
+              "uz": "Uyim ancha katta va juda yaxshi hududda.",
+              "noteUz": "'area' bilan IN. quite = ancha, very = juda."
+            },
+            {
+              "en": "There are seven rooms in it.",
+              "uz": "Unda yettita xona bor.",
+              "noteUz": "'in it' — 'uyda'. 'it' = the house."
+            },
+            {
+              "en": "Upstairs, there are two bedrooms and a bathroom.",
+              "uz": "Tepa qavatda ikkita yotoqxona va hammom bor.",
+              "noteUz": "'There ARE' — chunki birinchi ot ko'plik (two bedrooms)."
+            },
+            {
+              "en": "My bedroom is quite big and it has got a comfortable single bed and lots of posters on the walls.",
+              "uz": "Yotoqxonam ancha katta, unda qulay bir kishilik karavot va devorlarda ko'p plakatlar bor.",
+              "noteUz": "'lots of' = ko'p (a lot of bilan bir xil). Devor uchun ON."
+            },
+            {
+              "en": "Downstairs, there is a big kitchen, a spacious living-room, a study and a small bathroom.",
+              "uz": "Past qavatda katta oshxona, keng mehmonxona, ish xonasi va kichik hammom bor.",
+              "noteUz": "'There IS' — birinchi ot birlik (a big kitchen). Ingliz tilida fe'l BIRINCHI otga qarab tanlanadi."
+            },
+            {
+              "en": "My favourite room is the study because there is a big bookcase with lots of books there.",
+              "uz": "Eng yoqtirgan xonam — ish xonasi, chunki u yerda ko'p kitobli katta javon bor.",
+              "noteUz": "'because' — sabab. Fikrni asoslash uchun ishlatiladi — insho va gapirishda juda muhim."
+            },
+            {
+              "en": "Outside our house, there is a garage for my parents' car and a huge garden with lots of trees and flowers.",
+              "uz": "Uyimiz tashqarisida ota-onamning mashinasi uchun garaj va ko'p daraxt-gulli ulkan bog' bor.",
+              "noteUz": "'my parents' car' — apostrof 's' dan KEYIN, chunki 'parents' ko'plik."
+            },
+            {
+              "en": "I love my house because it makes me feel safe and relaxed.",
+              "uz": "Uyimni yaxshi ko'raman, chunki u meni xavfsiz va tinch his qildiradi.",
+              "noteUz": "'makes me feel' — 'meni ... his qildiradi'. safe = xavfsiz, relaxed = tinch, xotirjam."
+            },
+            {
+              "en": "After all, there is no place like home.",
+              "uz": "Axir, uydek joy yo'q.",
+              "noteUz": "Coursebook 23-betdagi maqol! 'After all' = axir, oxir-oqibat."
+            }
           ]
         },
         {
@@ -74,16 +205,50 @@
           "explanationUz": "QAYD OLISH — matndan faqat KERAKLI ma'lumotni ajratib olish.\n\nHar bir sarlavha uchun matndan javob toping:\n  TYPE OF PLACE — qanday uy?\n  WHERE — qayerda?\n  SIZE — qanchalik katta?\n  INSIDE — ichkarida nima bor?\n  OUTSIDE — tashqarida nima bor?\n  FEELINGS — u qanday his qiladi?\n\nQuyida har bir sarlavha uchun to'liq javob berilgan.\nAvval o'zingiz yozib ko'ring, keyin solishtiring.",
           "bookRef": "Workbook, 15-bet, 13-mashq (qaydlar)",
           "structure": [
-            { "headingUz": "TYPE OF PLACE — uy turi", "modelEn": "It is a pretty house.", "noteUz": "Matnda: 'a pretty house'." },
-            { "headingUz": "WHERE — qayerda", "modelEn": "It is near the centre of Brighton, a lovely city on the south coast of England, in a very nice area.", "noteUz": "Uch bosqich: shahar qismi → shahar → mamlakat." },
-            { "headingUz": "SIZE — hajmi", "modelEn": "It is quite big — there are seven rooms in it.", "noteUz": "Sifat + aniq son." },
-            { "headingUz": "INSIDE — tepa qavat", "modelEn": "Upstairs, there are two bedrooms and a bathroom." },
-            { "headingUz": "INSIDE — uning yotoqxonasi", "modelEn": "His bedroom is quite big and it has got a comfortable single bed and lots of posters on the walls." },
-            { "headingUz": "INSIDE — past qavat", "modelEn": "Downstairs, there is a big kitchen, a spacious living-room, a study and a small bathroom." },
-            { "headingUz": "INSIDE — eng yoqtirgan xona", "modelEn": "His favourite room is the study because there is a big bookcase with lots of books there." },
-            { "headingUz": "OUTSIDE — tashqarisi", "modelEn": "Outside the house, there is a garage for his parents' car and a huge garden with lots of trees and flowers." },
-            { "headingUz": "FEELINGS — his-tuyg'ulari", "modelEn": "He loves his house because it makes him feel safe and relaxed.", "noteUz": "DIQQAT: matnda 'I love MY house... makes ME feel'. Boshqa odam haqida gapirganda 'HE loves HIS house... makes HIM feel' bo'ladi." },
-            { "headingUz": "FEELINGS — xulosa", "modelEn": "After all, there is no place like home." }
+            {
+              "headingUz": "TYPE OF PLACE — uy turi",
+              "modelEn": "It is a pretty house.",
+              "noteUz": "Matnda: 'a pretty house'."
+            },
+            {
+              "headingUz": "WHERE — qayerda",
+              "modelEn": "It is near the centre of Brighton, a lovely city on the south coast of England, in a very nice area.",
+              "noteUz": "Uch bosqich: shahar qismi → shahar → mamlakat."
+            },
+            {
+              "headingUz": "SIZE — hajmi",
+              "modelEn": "It is quite big — there are seven rooms in it.",
+              "noteUz": "Sifat + aniq son."
+            },
+            {
+              "headingUz": "INSIDE — tepa qavat",
+              "modelEn": "Upstairs, there are two bedrooms and a bathroom."
+            },
+            {
+              "headingUz": "INSIDE — uning yotoqxonasi",
+              "modelEn": "His bedroom is quite big and it has got a comfortable single bed and lots of posters on the walls."
+            },
+            {
+              "headingUz": "INSIDE — past qavat",
+              "modelEn": "Downstairs, there is a big kitchen, a spacious living-room, a study and a small bathroom."
+            },
+            {
+              "headingUz": "INSIDE — eng yoqtirgan xona",
+              "modelEn": "His favourite room is the study because there is a big bookcase with lots of books there."
+            },
+            {
+              "headingUz": "OUTSIDE — tashqarisi",
+              "modelEn": "Outside the house, there is a garage for his parents' car and a huge garden with lots of trees and flowers."
+            },
+            {
+              "headingUz": "FEELINGS — his-tuyg'ulari",
+              "modelEn": "He loves his house because it makes him feel safe and relaxed.",
+              "noteUz": "DIQQAT: matnda 'I love MY house... makes ME feel'. Boshqa odam haqida gapirganda 'HE loves HIS house... makes HIM feel' bo'ladi."
+            },
+            {
+              "headingUz": "FEELINGS — xulosa",
+              "modelEn": "After all, there is no place like home."
+            }
           ]
         }
       ]
@@ -101,14 +266,46 @@
           "explanationUz": "JADVAL — xat yozish uchun XOM MA'LUMOT. Unda to'liq gap yo'q,\nfaqat kalit so'zlar bor. Sizning ishingiz — ularni TO'LIQ GAPGA aylantirish.",
           "bookRef": "Workbook, 15-bet, 14-mashq (jadval)",
           "sentences": [
-            { "en": "TYPE OF PLACE: flat", "uz": "Uy turi: kvartira", "noteUz": "" },
-            { "en": "WHERE: in the centre of Banbury", "uz": "Qayerda: Banberi markazida", "noteUz": "Banbury — Angliyaning markazidagi kichik shahar." },
-            { "en": "SIZE: big", "uz": "Hajmi: katta", "noteUz": "Kvartira uchun katta (uy bilan solishtirganda kichik)." },
-            { "en": "INSIDE THE FLAT: five rooms — two small bedrooms (each with wardrobe & double bed)", "uz": "Ichkarisi: beshta xona — ikkita kichik yotoqxona (har birida shkaf va ikki kishilik karavot)", "noteUz": "'&' — 'and' belgisi, faqat qayd va jadvalda ishlatiladi." },
-            { "en": "one small bathroom (shower, washbasin, toilet)", "uz": "bitta kichik hammom (dush, qo'l yuvgich, hojatxona)", "noteUz": "" },
-            { "en": "one small kitchen; one spacious living-room (sofa, two armchairs, TV, big fireplace)", "uz": "bitta kichik oshxona; bitta keng mehmonxona (divan, ikkita kreslo, televizor, katta kamin)", "noteUz": "" },
-            { "en": "OUTSIDE THE FLAT: small balcony (lots of flowers), garage", "uz": "Tashqarisi: kichik balkon (ko'p gullar), garaj", "noteUz": "" },
-            { "en": "FEELINGS: a great flat — small but comfortable; home is where the heart is", "uz": "His-tuyg'ular: ajoyib kvartira — kichik, lekin qulay; uy — qalb qayerda bo'lsa, o'sha yer", "noteUz": "Coursebook 23-betdagi maqol!" }
+            {
+              "en": "TYPE OF PLACE: flat",
+              "uz": "Uy turi: kvartira",
+              "noteUz": ""
+            },
+            {
+              "en": "WHERE: in the centre of Banbury",
+              "uz": "Qayerda: Banberi markazida",
+              "noteUz": "Banbury — Angliyaning markazidagi kichik shahar."
+            },
+            {
+              "en": "SIZE: big",
+              "uz": "Hajmi: katta",
+              "noteUz": "Kvartira uchun katta (uy bilan solishtirganda kichik)."
+            },
+            {
+              "en": "INSIDE THE FLAT: five rooms — two small bedrooms (each with wardrobe & double bed)",
+              "uz": "Ichkarisi: beshta xona — ikkita kichik yotoqxona (har birida shkaf va ikki kishilik karavot)",
+              "noteUz": "'&' — 'and' belgisi, faqat qayd va jadvalda ishlatiladi."
+            },
+            {
+              "en": "one small bathroom (shower, washbasin, toilet)",
+              "uz": "bitta kichik hammom (dush, qo'l yuvgich, hojatxona)",
+              "noteUz": ""
+            },
+            {
+              "en": "one small kitchen; one spacious living-room (sofa, two armchairs, TV, big fireplace)",
+              "uz": "bitta kichik oshxona; bitta keng mehmonxona (divan, ikkita kreslo, televizor, katta kamin)",
+              "noteUz": ""
+            },
+            {
+              "en": "OUTSIDE THE FLAT: small balcony (lots of flowers), garage",
+              "uz": "Tashqarisi: kichik balkon (ko'p gullar), garaj",
+              "noteUz": ""
+            },
+            {
+              "en": "FEELINGS: a great flat — small but comfortable; home is where the heart is",
+              "uz": "His-tuyg'ular: ajoyib kvartira — kichik, lekin qulay; uy — qalb qayerda bo'lsa, o'sha yer",
+              "noteUz": "Coursebook 23-betdagi maqol!"
+            }
           ]
         },
         {
@@ -119,15 +316,46 @@
           "explanationUz": "XATNING BERILGAN QISMLARI:\n\n  Dear Brian,\n  At last, Rachel and I are in our new home and we're very happy with it.\n  It's a big ____________\n  There are five ____________\n  Our flat has also got ____________\n  It's a great ____________\n  Rachel and I are having a house-warming party next weekend.\n  Lots of people are coming, so please try and come too.\n  Hope to see you soon.\n  Best wishes,\n  Terry\n\nTO'RTTA BO'SHLIQ — har biri jadvalning bitta qatoriga to'g'ri keladi:\n  'It's a big ...'         → TYPE OF PLACE + WHERE\n  'There are five ...'     → INSIDE THE FLAT\n  'Our flat has also got ...' → OUTSIDE THE FLAT\n  'It's a great ...'       → FEELINGS\n\nYANGI SO'ZLAR:\n  At last          — nihoyat\n  house-warming party — yangi uyga ko'chganda beriladigan ziyofat\n  next weekend     — kelasi dam olish kunlari\n  try and come     — kelishga harakat qiling\n  Best wishes      — do'stona xat oxiri ('Love' dan rasmiyroq)",
           "bookRef": "Workbook, 15-bet, 14-mashq",
           "structure": [
-            { "headingUz": "Salomlashish (berilgan)", "modelEn": "Dear Brian," },
-            { "headingUz": "Kirish (berilgan)", "modelEn": "At last, Rachel and I are in our new home and we're very happy with it." },
-            { "headingUz": "1-bo'shliq: It's a big ...", "modelEn": "It's a big flat in the centre of Banbury.", "noteUz": "Jadvaldan: TYPE OF PLACE = flat, WHERE = in the centre of Banbury, SIZE = big." },
-            { "headingUz": "2-bo'shliq: There are five ... (xonalar)", "modelEn": "There are five rooms — two small bedrooms, each with a wardrobe and a double bed, one small bathroom with a shower, a washbasin and a toilet, one small kitchen and one spacious living-room with a sofa, two armchairs, a TV and a big fireplace.", "noteUz": "Jadvaldagi '&' o'rniga 'and' yoziladi. Qavslar o'rniga 'with' ishlatiladi." },
-            { "headingUz": "3-bo'shliq: Our flat has also got ...", "modelEn": "Our flat has also got a small balcony with lots of flowers and a garage.", "noteUz": "Jadvaldan: OUTSIDE THE FLAT." },
-            { "headingUz": "4-bo'shliq: It's a great ...", "modelEn": "It's a great flat — it's small but comfortable. After all, home is where the heart is.", "noteUz": "Jadvaldan: FEELINGS. Maqol bilan tugatish — chiroyli yakun." },
-            { "headingUz": "Yakun (berilgan)", "modelEn": "Rachel and I are having a house-warming party next weekend." },
-            { "headingUz": "Taklif (berilgan)", "modelEn": "Lots of people are coming, so please try and come too. Hope to see you soon." },
-            { "headingUz": "Xayrlashish (berilgan)", "modelEn": "Best wishes, Terry" }
+            {
+              "headingUz": "Salomlashish (berilgan)",
+              "modelEn": "Dear Brian,"
+            },
+            {
+              "headingUz": "Kirish (berilgan)",
+              "modelEn": "At last, Rachel and I are in our new home and we're very happy with it."
+            },
+            {
+              "headingUz": "1-bo'shliq: It's a big ...",
+              "modelEn": "It's a big flat in the centre of Banbury.",
+              "noteUz": "Jadvaldan: TYPE OF PLACE = flat, WHERE = in the centre of Banbury, SIZE = big."
+            },
+            {
+              "headingUz": "2-bo'shliq: There are five ... (xonalar)",
+              "modelEn": "There are five rooms — two small bedrooms, each with a wardrobe and a double bed, one small bathroom with a shower, a washbasin and a toilet, one small kitchen and one spacious living-room with a sofa, two armchairs, a TV and a big fireplace.",
+              "noteUz": "Jadvaldagi '&' o'rniga 'and' yoziladi. Qavslar o'rniga 'with' ishlatiladi."
+            },
+            {
+              "headingUz": "3-bo'shliq: Our flat has also got ...",
+              "modelEn": "Our flat has also got a small balcony with lots of flowers and a garage.",
+              "noteUz": "Jadvaldan: OUTSIDE THE FLAT."
+            },
+            {
+              "headingUz": "4-bo'shliq: It's a great ...",
+              "modelEn": "It's a great flat — it's small but comfortable. After all, home is where the heart is.",
+              "noteUz": "Jadvaldan: FEELINGS. Maqol bilan tugatish — chiroyli yakun."
+            },
+            {
+              "headingUz": "Yakun (berilgan)",
+              "modelEn": "Rachel and I are having a house-warming party next weekend."
+            },
+            {
+              "headingUz": "Taklif (berilgan)",
+              "modelEn": "Lots of people are coming, so please try and come too. Hope to see you soon."
+            },
+            {
+              "headingUz": "Xayrlashish (berilgan)",
+              "modelEn": "Best wishes, Terry"
+            }
           ]
         }
       ]
@@ -141,42 +369,150 @@
         "ruleUz": "So'roq so'zlari — nima so'raladi",
         "explanationUz": "Har bir so'roq so'zi o'z javob turiga ega. Javobni bilsangiz, savolni topasiz.",
         "items": [
-          { "base": "Where", "baseUz": "qayerda", "derived": "Where is it?", "derivedUz": "javob — JOY", "note": "" },
-          { "base": "When", "baseUz": "qachon", "derived": "When can I see it?", "derivedUz": "javob — VAQT", "note": "" },
-          { "base": "How much", "baseUz": "qancha (pul)", "derived": "How much is it?", "derivedUz": "javob — NARX", "note": "sanalmaydigan" },
-          { "base": "How many", "baseUz": "nechta", "derived": "How many rooms has it got?", "derivedUz": "javob — SON", "note": "sanaladigan" },
-          { "base": "What ... like", "baseUz": "qanaqa", "derived": "What's it like?", "derivedUz": "javob — TAVSIF", "note": "'like' bu yerda 'yoqtirmoq' EMAS" },
-          { "base": "Who", "baseUz": "kim", "derived": "Who's speaking?", "derivedUz": "javob — ODAM", "note": "telefonda" }
+          {
+            "base": "Where",
+            "baseUz": "qayerda",
+            "derived": "Where is it?",
+            "derivedUz": "javob — JOY",
+            "note": ""
+          },
+          {
+            "base": "When",
+            "baseUz": "qachon",
+            "derived": "When can I see it?",
+            "derivedUz": "javob — VAQT",
+            "note": ""
+          },
+          {
+            "base": "How much",
+            "baseUz": "qancha (pul)",
+            "derived": "How much is it?",
+            "derivedUz": "javob — NARX",
+            "note": "sanalmaydigan"
+          },
+          {
+            "base": "How many",
+            "baseUz": "nechta",
+            "derived": "How many rooms has it got?",
+            "derivedUz": "javob — SON",
+            "note": "sanaladigan"
+          },
+          {
+            "base": "What ... like",
+            "baseUz": "qanaqa",
+            "derived": "What's it like?",
+            "derivedUz": "javob — TAVSIF",
+            "note": "'like' bu yerda 'yoqtirmoq' EMAS"
+          },
+          {
+            "base": "Who",
+            "baseUz": "kim",
+            "derived": "Who's speaking?",
+            "derivedUz": "javob — ODAM",
+            "note": "telefonda"
+          }
         ]
       },
       {
         "ruleUz": "Egalik apostrofi — birlik va ko'plikda",
         "explanationUz": "Apostrof 's' dan oldinmi yoki keyinmi — ot birlikmi-ko'plikmi ekaniga bog'liq.",
         "items": [
-          { "base": "my parent (birlik)", "baseUz": "ota yoki ona", "derived": "my parent's car", "derivedUz": "ota-onamdan birining mashinasi", "note": "'s" },
-          { "base": "my parents (ko'plik)", "baseUz": "ota-onam", "derived": "my parents' car", "derivedUz": "ota-onamning mashinasi", "note": "s' — apostrof OXIRIDA" },
-          { "base": "Terry", "baseUz": "Terri", "derived": "Terry's letter", "derivedUz": "Terrining xati", "note": "'s" },
-          { "base": "children (noto'g'ri ko'plik)", "baseUz": "bolalar", "derived": "children's room", "derivedUz": "bolalar xonasi", "note": "-s bilan tugamagani uchun 's" }
+          {
+            "base": "my parent (birlik)",
+            "baseUz": "ota yoki ona",
+            "derived": "my parent's car",
+            "derivedUz": "ota-onamdan birining mashinasi",
+            "note": "'s"
+          },
+          {
+            "base": "my parents (ko'plik)",
+            "baseUz": "ota-onam",
+            "derived": "my parents' car",
+            "derivedUz": "ota-onamning mashinasi",
+            "note": "s' — apostrof OXIRIDA"
+          },
+          {
+            "base": "Terry",
+            "baseUz": "Terri",
+            "derived": "Terry's letter",
+            "derivedUz": "Terrining xati",
+            "note": "'s"
+          },
+          {
+            "base": "children (noto'g'ri ko'plik)",
+            "baseUz": "bolalar",
+            "derived": "children's room",
+            "derivedUz": "bolalar xonasi",
+            "note": "-s bilan tugamagani uchun 's"
+          }
         ]
       },
       {
         "ruleUz": "His-tuyg'u sifatlari (-ed)",
         "explanationUz": "Odam qanday his qilishini bildiruvchi sifatlar ko'pincha -ed bilan tugaydi.",
         "items": [
-          { "base": "relax", "baseUz": "dam olmoq", "derived": "relaxed", "derivedUz": "xotirjam, tinch", "note": "odam haqida" },
-          { "base": "relax", "baseUz": "dam olmoq", "derived": "relaxing", "derivedUz": "dam beruvchi", "note": "narsa haqida — a relaxing room" },
-          { "base": "safe", "baseUz": "xavfsiz", "derived": "safety", "derivedUz": "xavfsizlik", "note": "sifat → ot" },
-          { "base": "comfort", "baseUz": "qulaylik", "derived": "comfortable", "derivedUz": "qulay", "note": "ot → sifat" }
+          {
+            "base": "relax",
+            "baseUz": "dam olmoq",
+            "derived": "relaxed",
+            "derivedUz": "xotirjam, tinch",
+            "note": "odam haqida"
+          },
+          {
+            "base": "relax",
+            "baseUz": "dam olmoq",
+            "derived": "relaxing",
+            "derivedUz": "dam beruvchi",
+            "note": "narsa haqida — a relaxing room"
+          },
+          {
+            "base": "safe",
+            "baseUz": "xavfsiz",
+            "derived": "safety",
+            "derivedUz": "xavfsizlik",
+            "note": "sifat → ot"
+          },
+          {
+            "base": "comfort",
+            "baseUz": "qulaylik",
+            "derived": "comfortable",
+            "derivedUz": "qulay",
+            "note": "ot → sifat"
+          }
         ]
       },
       {
         "ruleUz": "Xat oxiridagi iboralar — qay biri qachon",
         "explanationUz": "Xat kimga yozilganiga qarab tanlanadi.",
         "items": [
-          { "base": "Love,", "baseUz": "Mehr bilan", "derived": "eng yaqin do'st va oila", "derivedUz": "juda samimiy", "note": "" },
-          { "base": "Best wishes,", "baseUz": "Ezgu tilaklar bilan", "derived": "do'st va tanish", "derivedUz": "samimiy, lekin muloyim", "note": "eng ko'p ishlatiladi" },
-          { "base": "Yours sincerely,", "baseUz": "Hurmat bilan", "derived": "ismini bilgan rasmiy shaxs", "derivedUz": "rasmiy", "note": "" },
-          { "base": "Yours faithfully,", "baseUz": "Hurmat bilan", "derived": "ismini bilmagan shaxs", "derivedUz": "eng rasmiy", "note": "'Dear Sir/Madam' bilan" }
+          {
+            "base": "Love,",
+            "baseUz": "Mehr bilan",
+            "derived": "eng yaqin do'st va oila",
+            "derivedUz": "juda samimiy",
+            "note": ""
+          },
+          {
+            "base": "Best wishes,",
+            "baseUz": "Ezgu tilaklar bilan",
+            "derived": "do'st va tanish",
+            "derivedUz": "samimiy, lekin muloyim",
+            "note": "eng ko'p ishlatiladi"
+          },
+          {
+            "base": "Yours sincerely,",
+            "baseUz": "Hurmat bilan",
+            "derived": "ismini bilgan rasmiy shaxs",
+            "derivedUz": "rasmiy",
+            "note": ""
+          },
+          {
+            "base": "Yours faithfully,",
+            "baseUz": "Hurmat bilan",
+            "derived": "ismini bilmagan shaxs",
+            "derivedUz": "eng rasmiy",
+            "note": "'Dear Sir/Madam' bilan"
+          }
         ]
       }
     ]
@@ -224,36 +560,129 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "Ms", "uz": "xonim (oilaviy holatini bildirmaydi)" },
-    { "en": "Who's speaking?", "uz": "Kim gapiryapti? (telefonda)" },
-    { "en": "What's it like?", "uz": "U qanaqa?" },
-    { "en": "the other side of town", "uz": "shaharning narigi tomoni" },
-    { "en": "actually", "uz": "aslida" },
-    { "en": "a price", "uz": "narx" },
-    { "en": "at the front", "uz": "old tomonida" },
-    { "en": "at the back", "uz": "orqa tomonida" },
-    { "en": "It sounds perfect.", "uz": "Bu ajoyib eshitiladi." },
-    { "en": "How about ...?", "uz": "... bo'ladimi? / ... qanday?" },
-    { "en": "Saturday afternoon", "uz": "shanba kuni tushdan keyin" },
-    { "en": "pretty", "uz": "chiroyli" },
-    { "en": "Brighton", "uz": "Brayton (Angliya, janubiy qirg'oq)" },
-    { "en": "an area", "uz": "hudud" },
-    { "en": "lots of", "uz": "ko'p" },
-    { "en": "a poster", "uz": "plakat" },
-    { "en": "favourite", "uz": "eng yoqtirgan" },
-    { "en": "because", "uz": "chunki" },
-    { "en": "parents", "uz": "ota-ona" },
-    { "en": "huge", "uz": "ulkan" },
-    { "en": "a tree", "uz": "daraxt" },
-    { "en": "safe", "uz": "xavfsiz" },
-    { "en": "relaxed", "uz": "xotirjam, tinch" },
-    { "en": "After all", "uz": "axir, oxir-oqibat" },
-    { "en": "At last", "uz": "nihoyat" },
-    { "en": "Banbury", "uz": "Banberi (Angliya)" },
-    { "en": "a house-warming party", "uz": "yangi uy ziyofati" },
-    { "en": "next weekend", "uz": "kelasi dam olish kunlari" },
-    { "en": "Best wishes,", "uz": "Ezgu tilaklar bilan (xat oxiri)" },
-    { "en": "Hope to see you soon.", "uz": "Tez orada ko'rishishga umid qilaman." },
-    { "en": "feelings", "uz": "his-tuyg'ular" }
+    {
+      "en": "Ms",
+      "uz": "xonim (oilaviy holatini bildirmaydi)"
+    },
+    {
+      "en": "Who's speaking?",
+      "uz": "Kim gapiryapti? (telefonda)"
+    },
+    {
+      "en": "What's it like?",
+      "uz": "U qanaqa?"
+    },
+    {
+      "en": "the other side of town",
+      "uz": "shaharning narigi tomoni"
+    },
+    {
+      "en": "actually",
+      "uz": "aslida"
+    },
+    {
+      "en": "a price",
+      "uz": "narx"
+    },
+    {
+      "en": "at the front",
+      "uz": "old tomonida"
+    },
+    {
+      "en": "at the back",
+      "uz": "orqa tomonida"
+    },
+    {
+      "en": "It sounds perfect.",
+      "uz": "Bu ajoyib eshitiladi."
+    },
+    {
+      "en": "How about ...?",
+      "uz": "... bo'ladimi? / ... qanday?"
+    },
+    {
+      "en": "Saturday afternoon",
+      "uz": "shanba kuni tushdan keyin"
+    },
+    {
+      "en": "pretty",
+      "uz": "chiroyli"
+    },
+    {
+      "en": "Brighton",
+      "uz": "Brayton (Angliya, janubiy qirg'oq)"
+    },
+    {
+      "en": "an area",
+      "uz": "hudud"
+    },
+    {
+      "en": "lots of",
+      "uz": "ko'p"
+    },
+    {
+      "en": "a poster",
+      "uz": "plakat"
+    },
+    {
+      "en": "favourite",
+      "uz": "eng yoqtirgan"
+    },
+    {
+      "en": "because",
+      "uz": "chunki"
+    },
+    {
+      "en": "parents",
+      "uz": "ota-ona"
+    },
+    {
+      "en": "huge",
+      "uz": "ulkan"
+    },
+    {
+      "en": "a tree",
+      "uz": "daraxt"
+    },
+    {
+      "en": "safe",
+      "uz": "xavfsiz"
+    },
+    {
+      "en": "relaxed",
+      "uz": "xotirjam, tinch"
+    },
+    {
+      "en": "After all",
+      "uz": "axir, oxir-oqibat"
+    },
+    {
+      "en": "At last",
+      "uz": "nihoyat"
+    },
+    {
+      "en": "Banbury",
+      "uz": "Banberi (Angliya)"
+    },
+    {
+      "en": "a house-warming party",
+      "uz": "yangi uy ziyofati"
+    },
+    {
+      "en": "next weekend",
+      "uz": "kelasi dam olish kunlari"
+    },
+    {
+      "en": "Best wishes,",
+      "uz": "Ezgu tilaklar bilan (xat oxiri)"
+    },
+    {
+      "en": "Hope to see you soon.",
+      "uz": "Tez orada ko'rishishga umid qilaman."
+    },
+    {
+      "en": "feelings",
+      "uz": "his-tuyg'ular"
+    }
   ]
 }
