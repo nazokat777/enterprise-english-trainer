@@ -275,7 +275,7 @@ Kitobda **"listen and check"** deb yozilgan, lekin javob betning o'zida
 bosilgan bo'lgan mashqlar. Bular allaqachon **to'liq yopilgan**, audio
 faqat talaffuz uchun kerak:
 
-CB 6 (Ex.3) · CB 10 (Ex.17b) · CB 12 (Ex.3) · CB 40 (Ex.2) · CB 70 (Ex.3) · CB 82 (Ex.3) · CB 86 (Ex.16, 17) · CB 87 (Ex.19a) · CB 89 (Ex.2, 5) ·
+CB 6 (Ex.3) · CB 10 (Ex.17b) · CB 19 (Ex.3) · CB 12 (Ex.3) · CB 40 (Ex.2) · CB 70 (Ex.3) · CB 82 (Ex.3) · CB 86 (Ex.16, 17) · CB 87 (Ex.19a) · CB 89 (Ex.2, 5) ·
 CB 92 (Ex.1b, 2) · CB 96 (Ex.12a) · CB 98 (Ex.3) · CB 99 (Ex.6) ·
 CB 100 (Ex.7a) · CB 102 (Ex.14) · CB 104 (Ex.3) · CB 108 (Ex.17a, 18) ·
 CB 110 · CB 112 · CB 113 (Ex.2)
