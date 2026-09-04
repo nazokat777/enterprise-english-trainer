@@ -5,6 +5,7 @@
   "unit": 6,
   "unitTitle": "Birds of a Feather!",
   "module": 2,
+  "scanNote": "TEKSHIRILDI (skan 44-bet): Ex.14 ranglar 10 ta (brown, white, grey, pink, green, yellow, black, blue, purple, red) va o'lchamlar 7 ta skan bilan mos; rasmlar A=sigir, B=to'tiqush, C=it, D=zebra. Ex.15 jadval tartibi (geese / mouse / ox / sheep / deer / fish) va ro'yxat 6 so'z mos; qo'shimcha savol man-woman-child-person. Ex.16 rasmlari: 1=sichqon, 2=baliq, 3=kiyik, 4=g'oz, 5=qo'y, 6=tovuq - JSON bilan mos. Ex.17 o'yin ro'yxati 19 so'z - skan bilan bir xil. Xato topilmadi.",
   "sections": [
     {
       "kind": "speaking",
@@ -19,23 +20,74 @@
           "explanationUz": "RANGLAR (kitobdagi 10 ta):\n  brown  — jigarrang      white  — oq\n  grey   — kulrang        pink   — pushti\n  green  — yashil         yellow — sariq\n  black  — qora           blue   — ko'k\n  purple — binafsha       red    — qizil\n\nO'LCHAMLAR (kitobdagi 7 ta):\n  KATTALIK:  very big (juda katta) > quite big (ancha katta) > small (kichik)\n  UZUNLIK:   very long (juda uzun) > quite long (ancha uzun)\n             > quite short (ancha kalta) > short (kalta)\n\nDIQQAT — 'very' va 'quite' farqi:\n  very  = juda   (kuchli daraja)\n  quite = ancha, ancha-muncha (o'rtacha daraja)\nIkkalasi ham sifat OLDIDA turadi: very big, quite long.",
           "bookRef": "Coursebook, 44-bet, 14-mashq (ranglar va o'lchamlar)",
           "lines": [
-            { "en": "brown", "uz": "jigarrang" },
-            { "en": "white", "uz": "oq" },
-            { "en": "grey", "uz": "kulrang" },
-            { "en": "pink", "uz": "pushti" },
-            { "en": "green", "uz": "yashil" },
-            { "en": "yellow", "uz": "sariq" },
-            { "en": "black", "uz": "qora" },
-            { "en": "blue", "uz": "ko'k" },
-            { "en": "purple", "uz": "binafsha" },
-            { "en": "red", "uz": "qizil" },
-            { "en": "very big", "uz": "juda katta" },
-            { "en": "quite big", "uz": "ancha katta" },
-            { "en": "small", "uz": "kichik" },
-            { "en": "very long", "uz": "juda uzun" },
-            { "en": "quite long", "uz": "ancha uzun" },
-            { "en": "quite short", "uz": "ancha kalta" },
-            { "en": "short", "uz": "kalta" }
+            {
+              "en": "brown",
+              "uz": "jigarrang"
+            },
+            {
+              "en": "white",
+              "uz": "oq"
+            },
+            {
+              "en": "grey",
+              "uz": "kulrang"
+            },
+            {
+              "en": "pink",
+              "uz": "pushti"
+            },
+            {
+              "en": "green",
+              "uz": "yashil"
+            },
+            {
+              "en": "yellow",
+              "uz": "sariq"
+            },
+            {
+              "en": "black",
+              "uz": "qora"
+            },
+            {
+              "en": "blue",
+              "uz": "ko'k"
+            },
+            {
+              "en": "purple",
+              "uz": "binafsha"
+            },
+            {
+              "en": "red",
+              "uz": "qizil"
+            },
+            {
+              "en": "very big",
+              "uz": "juda katta"
+            },
+            {
+              "en": "quite big",
+              "uz": "ancha katta"
+            },
+            {
+              "en": "small",
+              "uz": "kichik"
+            },
+            {
+              "en": "very long",
+              "uz": "juda uzun"
+            },
+            {
+              "en": "quite long",
+              "uz": "ancha uzun"
+            },
+            {
+              "en": "quite short",
+              "uz": "ancha kalta"
+            },
+            {
+              "en": "short",
+              "uz": "kalta"
+            }
           ]
         },
         {
@@ -46,16 +98,56 @@
           "explanationUz": "KITOBDAGI NAMUNA — A rasm (sigir):\n\nDIQQAT — 'is' yoki 'are'?\n  How long is its TAIL?  → bitta narsa → IS → It's ...\n  How long are its EARS? → ikkita narsa → ARE → They're ...\n\nRANG SAVOLI: 'What colour is it?' ('What color' — amerikacha yozilishi)",
           "bookRef": "Coursebook, 44-bet, 14-mashq (namuna)",
           "example": [
-            { "speaker": "SA", "en": "What is this animal?", "uz": "Bu qanday hayvon?" },
-            { "speaker": "SB", "en": "It's a cow.", "uz": "Bu sigir." },
-            { "speaker": "SA", "en": "What colour is it?", "uz": "U qanday rangda?" },
-            { "speaker": "SB", "en": "It's brown.", "uz": "U jigarrang." },
-            { "speaker": "SA", "en": "How big is it?", "uz": "U qanchalik katta?" },
-            { "speaker": "SB", "en": "It's very big.", "uz": "U juda katta." },
-            { "speaker": "SA", "en": "How long are its ears?", "uz": "Uning quloqlari qancha uzun?" },
-            { "speaker": "SB", "en": "They're quite short.", "uz": "Ular ancha kalta." },
-            { "speaker": "SA", "en": "How long is its tail?", "uz": "Uning dumi qancha uzun?" },
-            { "speaker": "SB", "en": "It's very long.", "uz": "U juda uzun." }
+            {
+              "speaker": "SA",
+              "en": "What is this animal?",
+              "uz": "Bu qanday hayvon?"
+            },
+            {
+              "speaker": "SB",
+              "en": "It's a cow.",
+              "uz": "Bu sigir."
+            },
+            {
+              "speaker": "SA",
+              "en": "What colour is it?",
+              "uz": "U qanday rangda?"
+            },
+            {
+              "speaker": "SB",
+              "en": "It's brown.",
+              "uz": "U jigarrang."
+            },
+            {
+              "speaker": "SA",
+              "en": "How big is it?",
+              "uz": "U qanchalik katta?"
+            },
+            {
+              "speaker": "SB",
+              "en": "It's very big.",
+              "uz": "U juda katta."
+            },
+            {
+              "speaker": "SA",
+              "en": "How long are its ears?",
+              "uz": "Uning quloqlari qancha uzun?"
+            },
+            {
+              "speaker": "SB",
+              "en": "They're quite short.",
+              "uz": "Ular ancha kalta."
+            },
+            {
+              "speaker": "SA",
+              "en": "How long is its tail?",
+              "uz": "Uning dumi qancha uzun?"
+            },
+            {
+              "speaker": "SB",
+              "en": "It's very long.",
+              "uz": "U juda uzun."
+            }
           ]
         },
         {
@@ -66,21 +158,97 @@
           "explanationUz": "RASMLAR:\n  A — jigarrang sigir (kitobdagi namuna)\n  B — qizil to'tiqush (qanotida sariq, ko'k va qora patlar bor)\n  C — jigarrang-oq it (o'tirgan)\n  D — qora-oq zebra\n\nHar bir hayvon uchun 4 savol: nomi, rangi, kattaligi, dumi.",
           "bookRef": "Coursebook, 44-bet, 14-mashq (B, C, D rasmlar)",
           "items": [
-            { "textEn": "A — What is this animal?", "answer": "It's a cow.", "given": true, "hintUz": "Kitobdagi namuna", "whyUz": "Kitobda BERILGAN namuna." },
-            { "textEn": "B — What is this animal?", "answer": "It's a parrot.", "hintUz": "Yorqin patli, egri tumshuqli qush", "whyUz": "B rasmda to'tiqush — 41-betda ham ko'rgansiz." },
-            { "textEn": "B — What colour is it?", "answer": "It's red.", "hintUz": "Tanasining asosiy rangi", "whyUz": "Tanasi qizil; qanotida sariq, ko'k va qora patlar ham bor.\nTo'liqroq javob: 'It's red, yellow, blue and black.'" },
-            { "textEn": "B — How big is it?", "answer": "It's small.", "hintUz": "Sigir bilan solishtiring", "whyUz": "To'tiqush sigirga nisbatan juda kichik." },
-            { "textEn": "B — How long is its tail?", "answer": "It's very long.", "hintUz": "Rasmda dumi shoxdan pastga osilib turibdi", "whyUz": "To'tiqushning dumi tanasidan ham uzun — 'very long'." },
-            { "textEn": "C — What is this animal?", "answer": "It's a dog.", "hintUz": "Uy hayvoni, o'tirib turibdi", "whyUz": "C rasmda it." },
-            { "textEn": "C — What colour is it?", "answer": "It's brown and white.", "hintUz": "Ikki rangni ayting", "whyUz": "Rasmda itning tanasi jigarrang-kulrang, bo'yni va oyoqlari oq." },
-            { "textEn": "C — How big is it?", "answer": "It's small.", "hintUz": "Sigir va zebra bilan solishtiring", "whyUz": "It sigirdan va zebradan ancha kichik." },
-            { "textEn": "C — How long is its tail?", "answer": "It's quite long.", "hintUz": "Ingichka va pastga osilgan", "whyUz": "Rasmda itning dumi ingichka va ancha uzun." },
-            { "textEn": "C — How long are its ears?", "answer": "They're quite short.", "hintUz": "Ikkita narsa — 'They're' bilan javob bering", "whyUz": "Quloqlari kalta va bukilgan. Ko'plik → THEY'RE." },
-            { "textEn": "D — What is this animal?", "answer": "It's a zebra.", "hintUz": "Qora-oq chiziqli ot", "whyUz": "D rasmda zebra." },
-            { "textEn": "D — What colour is it?", "answer": "It's black and white.", "hintUz": "Ikki rang — chiziqlar", "whyUz": "Zebra qora va oq chiziqli." },
-            { "textEn": "D — How big is it?", "answer": "It's quite big.", "hintUz": "Sigirdan kichikroq, itdan kattaroq", "whyUz": "Zebra katta hayvon, lekin sigirdek 'very big' emas." },
-            { "textEn": "D — How long is its tail?", "answer": "It's quite long.", "hintUz": "Uchida qora tuk bor", "whyUz": "Zebraning dumi ancha uzun, uchida qora tuki bor." },
-            { "textEn": "D — How long are its ears?", "answer": "They're quite long.", "hintUz": "Ikkita narsa — 'They're' bilan javob bering", "whyUz": "Zebraning quloqlari uzun va tik. Sigirning quloqlaridan uzunroq." }
+            {
+              "textEn": "A — What is this animal?",
+              "answer": "It's a cow.",
+              "given": true,
+              "hintUz": "Kitobdagi namuna",
+              "whyUz": "Kitobda BERILGAN namuna."
+            },
+            {
+              "textEn": "B — What is this animal?",
+              "answer": "It's a parrot.",
+              "hintUz": "Yorqin patli, egri tumshuqli qush",
+              "whyUz": "B rasmda to'tiqush — 41-betda ham ko'rgansiz."
+            },
+            {
+              "textEn": "B — What colour is it?",
+              "answer": "It's red.",
+              "hintUz": "Tanasining asosiy rangi",
+              "whyUz": "Tanasi qizil; qanotida sariq, ko'k va qora patlar ham bor.\nTo'liqroq javob: 'It's red, yellow, blue and black.'"
+            },
+            {
+              "textEn": "B — How big is it?",
+              "answer": "It's small.",
+              "hintUz": "Sigir bilan solishtiring",
+              "whyUz": "To'tiqush sigirga nisbatan juda kichik."
+            },
+            {
+              "textEn": "B — How long is its tail?",
+              "answer": "It's very long.",
+              "hintUz": "Rasmda dumi shoxdan pastga osilib turibdi",
+              "whyUz": "To'tiqushning dumi tanasidan ham uzun — 'very long'."
+            },
+            {
+              "textEn": "C — What is this animal?",
+              "answer": "It's a dog.",
+              "hintUz": "Uy hayvoni, o'tirib turibdi",
+              "whyUz": "C rasmda it."
+            },
+            {
+              "textEn": "C — What colour is it?",
+              "answer": "It's brown and white.",
+              "hintUz": "Ikki rangni ayting",
+              "whyUz": "Rasmda itning tanasi jigarrang-kulrang, bo'yni va oyoqlari oq."
+            },
+            {
+              "textEn": "C — How big is it?",
+              "answer": "It's small.",
+              "hintUz": "Sigir va zebra bilan solishtiring",
+              "whyUz": "It sigirdan va zebradan ancha kichik."
+            },
+            {
+              "textEn": "C — How long is its tail?",
+              "answer": "It's quite long.",
+              "hintUz": "Ingichka va pastga osilgan",
+              "whyUz": "Rasmda itning dumi ingichka va ancha uzun."
+            },
+            {
+              "textEn": "C — How long are its ears?",
+              "answer": "They're quite short.",
+              "hintUz": "Ikkita narsa — 'They're' bilan javob bering",
+              "whyUz": "Quloqlari kalta va bukilgan. Ko'plik → THEY'RE."
+            },
+            {
+              "textEn": "D — What is this animal?",
+              "answer": "It's a zebra.",
+              "hintUz": "Qora-oq chiziqli ot",
+              "whyUz": "D rasmda zebra."
+            },
+            {
+              "textEn": "D — What colour is it?",
+              "answer": "It's black and white.",
+              "hintUz": "Ikki rang — chiziqlar",
+              "whyUz": "Zebra qora va oq chiziqli."
+            },
+            {
+              "textEn": "D — How big is it?",
+              "answer": "It's quite big.",
+              "hintUz": "Sigirdan kichikroq, itdan kattaroq",
+              "whyUz": "Zebra katta hayvon, lekin sigirdek 'very big' emas."
+            },
+            {
+              "textEn": "D — How long is its tail?",
+              "answer": "It's quite long.",
+              "hintUz": "Uchida qora tuk bor",
+              "whyUz": "Zebraning dumi ancha uzun, uchida qora tuki bor."
+            },
+            {
+              "textEn": "D — How long are its ears?",
+              "answer": "They're quite long.",
+              "hintUz": "Ikkita narsa — 'They're' bilan javob bering",
+              "whyUz": "Zebraning quloqlari uzun va tik. Sigirning quloqlaridan uzunroq."
+            }
           ]
         }
       ]
@@ -97,14 +265,51 @@
           "instructionUz": "Jadvalni ro'yxatdagi so'zlar bilan to'ldiring.",
           "explanationUz": "RO'YXAT: deer, fish, goose, mice, oxen, sheep\n\nNOTO'G'RI OTLAR — ko'pligi -s bilan yasalmaydi.\n\nIKKI TURI BOR:\n  1) O'ZAK O'ZGARADI:\n       goose → geese   (g'oz → g'ozlar)\n       mouse → mice    (sichqon → sichqonlar)\n       ox    → oxen    (ho'kiz → ho'kizlar)\n  2) SHAKL O'ZGARMAYDI:\n       sheep → sheep   (qo'y → qo'ylar)\n       deer  → deer    (kiyik → kiyiklar)\n       fish  → fish    (baliq → baliqlar)\n\nJADVAL:\n  SINGULAR (birlik) | PLURAL (ko'plik)\n  .........         | geese\n  mouse             | .........\n  ox                | .........\n  .........         | sheep\n  deer              | .........\n  .........         | fish",
           "bookRef": "Coursebook, 44-bet, 15-mashq",
-          "wordList": ["deer", "fish", "goose", "mice", "oxen", "sheep"],
+          "wordList": [
+            "deer",
+            "fish",
+            "goose",
+            "mice",
+            "oxen",
+            "sheep"
+          ],
           "items": [
-            { "textEn": "SINGULAR: ............  — PLURAL: geese", "answer": "goose", "hintUz": "Suvda suzadigan katta oq uy qushi", "whyUz": "goose → geese. O'zakdagi 'oo' → 'ee' ga o'zgaradi.\nTalaffuz: goose /ɡuːs/, geese /ɡiːs/." },
-            { "textEn": "SINGULAR: mouse — PLURAL: ............", "answer": "mice", "hintUz": "Ro'yxatdan 'mouse' ning ko'pligi", "whyUz": "mouse → mice. 'mouses' XATO.\nTalaffuz: mouse /maʊs/, mice /maɪs/.\nDIQQAT: kompyuter sichqonchasi uchun 'mouses' ham ishlatiladi." },
-            { "textEn": "SINGULAR: ox — PLURAL: ............", "answer": "oxen", "hintUz": "Ro'yxatdan 'ox' ning ko'pligi", "whyUz": "ox → oxen. -EN qo'shimchasi bilan ko'plik — juda kam uchraydi.\n'children' ham shu turdan." },
-            { "textEn": "SINGULAR: ............  — PLURAL: sheep", "answer": "sheep", "hintUz": "Jun beradigan uy hayvoni", "whyUz": "sheep → sheep. Shakl O'ZGARMAYDI.\n'One sheep, ten sheep' — bir xil." },
-            { "textEn": "SINGULAR: deer — PLURAL: ............", "answer": "deer", "hintUz": "Shakli o'zgarmaydi", "whyUz": "deer → deer. 'deers' XATO. 43-betda yo'lbars 'deer' yeydi." },
-            { "textEn": "SINGULAR: ............  — PLURAL: fish", "answer": "fish", "hintUz": "Suvda yashaydigan, suzgichli jonzot", "whyUz": "fish → fish. Shakl o'zgarmaydi.\nDIQQAT: 'fishes' — turli TURLARI haqida gapirilganda ishlatiladi." }
+            {
+              "textEn": "SINGULAR: ............  — PLURAL: geese",
+              "answer": "goose",
+              "hintUz": "Suvda suzadigan katta oq uy qushi",
+              "whyUz": "goose → geese. O'zakdagi 'oo' → 'ee' ga o'zgaradi.\nTalaffuz: goose /ɡuːs/, geese /ɡiːs/."
+            },
+            {
+              "textEn": "SINGULAR: mouse — PLURAL: ............",
+              "answer": "mice",
+              "hintUz": "Ro'yxatdan 'mouse' ning ko'pligi",
+              "whyUz": "mouse → mice. 'mouses' XATO.\nTalaffuz: mouse /maʊs/, mice /maɪs/.\nDIQQAT: kompyuter sichqonchasi uchun 'mouses' ham ishlatiladi."
+            },
+            {
+              "textEn": "SINGULAR: ox — PLURAL: ............",
+              "answer": "oxen",
+              "hintUz": "Ro'yxatdan 'ox' ning ko'pligi",
+              "whyUz": "ox → oxen. -EN qo'shimchasi bilan ko'plik — juda kam uchraydi.\n'children' ham shu turdan."
+            },
+            {
+              "textEn": "SINGULAR: ............  — PLURAL: sheep",
+              "answer": "sheep",
+              "hintUz": "Jun beradigan uy hayvoni",
+              "whyUz": "sheep → sheep. Shakl O'ZGARMAYDI.\n'One sheep, ten sheep' — bir xil."
+            },
+            {
+              "textEn": "SINGULAR: deer — PLURAL: ............",
+              "answer": "deer",
+              "hintUz": "Shakli o'zgarmaydi",
+              "whyUz": "deer → deer. 'deers' XATO. 43-betda yo'lbars 'deer' yeydi."
+            },
+            {
+              "textEn": "SINGULAR: ............  — PLURAL: fish",
+              "answer": "fish",
+              "hintUz": "Suvda yashaydigan, suzgichli jonzot",
+              "whyUz": "fish → fish. Shakl o'zgarmaydi.\nDIQQAT: 'fishes' — turli TURLARI haqida gapirilganda ishlatiladi."
+            }
           ]
         },
         {
@@ -115,10 +320,30 @@
           "explanationUz": "Bu to'rttasi — eng ko'p ishlatiladigan noto'g'ri otlar.\nHar birini yod olish shart.",
           "bookRef": "Coursebook, 44-bet, 15-mashq (qo'shimcha savol)",
           "items": [
-            { "textEn": "man  → ............", "answer": "men", "hintUz": "Unli o'zgaradi: a → e", "whyUz": "man → men. Talaffuz: man /mæn/, men /men/.\n'mans' XATO." },
-            { "textEn": "woman  → ............", "answer": "women", "hintUz": "Yozilishi bitta harf o'zgaradi, talaffuzi ko'proq", "whyUz": "woman → women. YOZILISHI: a → e (ikkinchi bo'g'inda).\nLEKIN TALAFFUZI birinchi bo'g'inda o'zgaradi:\n  woman /ˈwʊmən/ — 'vumen'\n  women /ˈwɪmɪn/ — 'vimin'" },
-            { "textEn": "child  → ............", "answer": "children", "hintUz": "-ren qo'shimchasi", "whyUz": "child → children. 'childs' XATO.\n'oxen' kabi -EN bilan tugaydi." },
-            { "textEn": "person  → ............", "answer": "people", "hintUz": "Butunlay boshqa so'z", "whyUz": "person → people. O'zak BUTUNLAY o'zgaradi.\n'persons' ham bor, lekin faqat rasmiy hujjatlarda.\n'people' — DOIM ko'plik: 'people ARE' ('people is' XATO)." }
+            {
+              "textEn": "man  → ............",
+              "answer": "men",
+              "hintUz": "Unli o'zgaradi: a → e",
+              "whyUz": "man → men. Talaffuz: man /mæn/, men /men/.\n'mans' XATO."
+            },
+            {
+              "textEn": "woman  → ............",
+              "answer": "women",
+              "hintUz": "Yozilishi bitta harf o'zgaradi, talaffuzi ko'proq",
+              "whyUz": "woman → women. YOZILISHI: a → e (ikkinchi bo'g'inda).\nLEKIN TALAFFUZI birinchi bo'g'inda o'zgaradi:\n  woman /ˈwʊmən/ — 'vumen'\n  women /ˈwɪmɪn/ — 'vimin'"
+            },
+            {
+              "textEn": "child  → ............",
+              "answer": "children",
+              "hintUz": "-ren qo'shimchasi",
+              "whyUz": "child → children. 'childs' XATO.\n'oxen' kabi -EN bilan tugaydi."
+            },
+            {
+              "textEn": "person  → ............",
+              "answer": "people",
+              "hintUz": "Butunlay boshqa so'z",
+              "whyUz": "person → people. O'zak BUTUNLAY o'zgaradi.\n'persons' ham bor, lekin faqat rasmiy hujjatlarda.\n'people' — DOIM ko'plik: 'people ARE' ('people is' XATO)."
+            }
           ]
         }
       ]
@@ -136,12 +361,43 @@
           "explanationUz": "KITOBDAGI NAMUNA:\n  SA: What is this animal?\n  SB: It's a mouse. Have mice got wings?\n  SA: No, mice haven't got wings.\n\nDIQQAT — BIRLIKDAN KO'PLIKKA O'TISH:\n  Rasmda BITTA hayvon → 'It's a mouse.'\n  Savol esa umuman TURI haqida → 'Have MICE got wings?'\n\nSAVOL SHAKLLARI:\n  have/got  → HAVE + ko'plik ega + GOT ... ?\n              Javob: No, ... haven't got ...\n  can       → CAN + ko'plik ega + fe'l ... ?\n              Javob: No, ... can't ...\n\nBARCHA JAVOBLAR INKOR — chunki har bir savol\nnoto'g'ri xususiyat haqida so'raydi.",
           "bookRef": "Coursebook, 44-bet, 16-mashq",
           "items": [
-            { "prompt": "1  (sichqon) have/got wings?", "question": "Have mice got wings?", "answer": "No, mice haven't got wings.", "given": true, "whyUz": "Kitobda BERILGAN namuna. Sichqonda qanot yo'q — u sutemizuvchi.\nKo'pligi: mouse → MICE." },
-            { "prompt": "2  (baliq) can/run?", "question": "Can fish run?", "answer": "No, fish can't run.", "whyUz": "Baliqning oyog'i yo'q — suzadi, yugurmaydi.\nKo'pligi: fish → FISH (o'zgarmaydi)." },
-            { "prompt": "3  (kiyik) have/got short legs?", "question": "Have deer got short legs?", "answer": "No, deer haven't got short legs. They've got long legs.", "whyUz": "Kiyikning oyoqlari UZUN — shuning uchun tez yuguradi.\nKo'pligi: deer → DEER (o'zgarmaydi)." },
-            { "prompt": "4  (g'oz) have/got whiskers?", "question": "Have geese got whiskers?", "answer": "No, geese haven't got whiskers.", "whyUz": "'whiskers' (mo'ylov) faqat mushuksimonlar va ba'zi sutemizuvchilarda bo'ladi.\nG'oz — qush, unda pat bor.\nKo'pligi: goose → GEESE." },
-            { "prompt": "5  (qo'y) can/fly?", "question": "Can sheep fly?", "answer": "No, sheep can't fly.", "whyUz": "Qo'y — sutemizuvchi, qanoti yo'q.\nKo'pligi: sheep → SHEEP (o'zgarmaydi)." },
-            { "prompt": "6  (tovuq) have/got fur?", "question": "Have hens got fur?", "answer": "No, hens haven't got fur. They've got feathers.", "whyUz": "Tovuq — qush. Qushda JUN emas, PAT bo'ladi.\nDIQQAT: 'hen' — TO'G'RI ot, ko'pligi oddiy: hen → HENS." }
+            {
+              "prompt": "1  (sichqon) have/got wings?",
+              "question": "Have mice got wings?",
+              "answer": "No, mice haven't got wings.",
+              "given": true,
+              "whyUz": "Kitobda BERILGAN namuna. Sichqonda qanot yo'q — u sutemizuvchi.\nKo'pligi: mouse → MICE."
+            },
+            {
+              "prompt": "2  (baliq) can/run?",
+              "question": "Can fish run?",
+              "answer": "No, fish can't run.",
+              "whyUz": "Baliqning oyog'i yo'q — suzadi, yugurmaydi.\nKo'pligi: fish → FISH (o'zgarmaydi)."
+            },
+            {
+              "prompt": "3  (kiyik) have/got short legs?",
+              "question": "Have deer got short legs?",
+              "answer": "No, deer haven't got short legs. They've got long legs.",
+              "whyUz": "Kiyikning oyoqlari UZUN — shuning uchun tez yuguradi.\nKo'pligi: deer → DEER (o'zgarmaydi)."
+            },
+            {
+              "prompt": "4  (g'oz) have/got whiskers?",
+              "question": "Have geese got whiskers?",
+              "answer": "No, geese haven't got whiskers.",
+              "whyUz": "'whiskers' (mo'ylov) faqat mushuksimonlar va ba'zi sutemizuvchilarda bo'ladi.\nG'oz — qush, unda pat bor.\nKo'pligi: goose → GEESE."
+            },
+            {
+              "prompt": "5  (qo'y) can/fly?",
+              "question": "Can sheep fly?",
+              "answer": "No, sheep can't fly.",
+              "whyUz": "Qo'y — sutemizuvchi, qanoti yo'q.\nKo'pligi: sheep → SHEEP (o'zgarmaydi)."
+            },
+            {
+              "prompt": "6  (tovuq) have/got fur?",
+              "question": "Have hens got fur?",
+              "answer": "No, hens haven't got fur. They've got feathers.",
+              "whyUz": "Tovuq — qush. Qushda JUN emas, PAT bo'ladi.\nDIQQAT: 'hen' — TO'G'RI ot, ko'pligi oddiy: hen → HENS."
+            }
           ]
         }
       ]
@@ -158,27 +414,123 @@
           "instructionUz": "Ikki jamoa bo'lib ishlang. Navbatma-navbat ro'yxatdan so'z tanlab, gap tuzing. Har bir to'g'ri gap uchun bir ochko. Eng ko'p ochko to'plagan jamoa g'olib bo'ladi.",
           "explanationUz": "O'YIN SO'ZLARI (19 ta) — butun 6-unit lug'ati:\n  fur, skin, wings, weigh, intelligent, feathers, what,\n  pouch, reptiles, mammals, insects, paws, feed, where,\n  sharp claws, trunk, whiskers, how big, how long\n\nQOIDALAR:\n  • Ikki jamoaga bo'linasiz\n  • Navbat bilan ro'yxatdan so'z tanlaysiz\n  • O'sha so'z bilan TO'G'RI gap tuzasiz\n  • Har bir to'g'ri gap — 1 ochko\n  • Ko'p ochkoli jamoa g'olib\n\nQuyida har bir so'z uchun namuna gap berilgan.",
           "bookRef": "Coursebook, 44-bet, 17-mashq",
-          "wordList": ["fur", "skin", "wings", "weigh", "intelligent", "feathers", "what", "pouch", "reptiles", "mammals", "insects", "paws", "feed", "where", "sharp claws", "trunk", "whiskers", "how big", "how long"],
+          "wordList": [
+            "fur",
+            "skin",
+            "wings",
+            "weigh",
+            "intelligent",
+            "feathers",
+            "what",
+            "pouch",
+            "reptiles",
+            "mammals",
+            "insects",
+            "paws",
+            "feed",
+            "where",
+            "sharp claws",
+            "trunk",
+            "whiskers",
+            "how big",
+            "how long"
+          ],
           "modelSentences": [
-            { "word": "fur", "sentence": "Tigers have got orange fur with black stripes.", "uz": "'jun' so'zi bilan gap tuzing" },
-            { "word": "skin", "sentence": "Dolphins have got grey skin.", "uz": "'teri' so'zi bilan gap tuzing" },
-            { "word": "wings", "sentence": "Penguins have got small wings, but they can't fly.", "uz": "'qanotlar' so'zi bilan gap tuzing" },
-            { "word": "weigh", "sentence": "Elephants weigh about 4,000 kilos.", "uz": "'og'irlikda bo'lmoq' fe'li bilan gap tuzing" },
-            { "word": "intelligent", "sentence": "Dolphins are very intelligent animals.", "uz": "'aqlli' so'zi bilan gap tuzing" },
-            { "word": "feathers", "sentence": "Penguins have got thick feathers to keep them warm.", "uz": "'patlar' so'zi bilan gap tuzing" },
-            { "word": "what", "sentence": "What is this animal? — It's a kangaroo.", "uz": "'nima' so'roq so'zi bilan savol tuzing" },
-            { "word": "pouch", "sentence": "Kangaroos carry their babies in a pouch.", "uz": "'xalta' so'zi bilan gap tuzing" },
-            { "word": "reptiles", "sentence": "Crocodiles and snakes are reptiles.", "uz": "'sudralib yuruvchilar' so'zi bilan gap tuzing" },
-            { "word": "mammals", "sentence": "Dolphins, koalas and kangaroos are mammals.", "uz": "'sutemizuvchilar' so'zi bilan gap tuzing" },
-            { "word": "insects", "sentence": "Butterflies are insects.", "uz": "'hasharotlar' so'zi bilan gap tuzing" },
-            { "word": "paws", "sentence": "Tigers have got big paws.", "uz": "'panjalar' so'zi bilan gap tuzing" },
-            { "word": "feed", "sentence": "Mammals feed their babies on milk.", "uz": "'boqmoq' fe'li bilan gap tuzing" },
-            { "word": "where", "sentence": "Where do koalas live? — In eastern Australia.", "uz": "'qayerda' so'roq so'zi bilan savol tuzing" },
-            { "word": "sharp claws", "sentence": "Koalas have got very sharp claws.", "uz": "'o'tkir tirnoqlar' iborasi bilan gap tuzing" },
-            { "word": "trunk", "sentence": "An elephant's trunk is about 3.1 metres long.", "uz": "'xartum' so'zi bilan gap tuzing" },
-            { "word": "whiskers", "sentence": "Tigers and cats have got whiskers.", "uz": "'mo'ylovlar' so'zi bilan gap tuzing" },
-            { "word": "how big", "sentence": "How big is it? — It's very big.", "uz": "'qanchalik katta' iborasi bilan savol tuzing" },
-            { "word": "how long", "sentence": "How long is its tail? — It's very long.", "uz": "'qancha uzun' iborasi bilan savol tuzing" }
+            {
+              "word": "fur",
+              "sentence": "Tigers have got orange fur with black stripes.",
+              "uz": "'jun' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "skin",
+              "sentence": "Dolphins have got grey skin.",
+              "uz": "'teri' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "wings",
+              "sentence": "Penguins have got small wings, but they can't fly.",
+              "uz": "'qanotlar' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "weigh",
+              "sentence": "Elephants weigh about 4,000 kilos.",
+              "uz": "'og'irlikda bo'lmoq' fe'li bilan gap tuzing"
+            },
+            {
+              "word": "intelligent",
+              "sentence": "Dolphins are very intelligent animals.",
+              "uz": "'aqlli' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "feathers",
+              "sentence": "Penguins have got thick feathers to keep them warm.",
+              "uz": "'patlar' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "what",
+              "sentence": "What is this animal? — It's a kangaroo.",
+              "uz": "'nima' so'roq so'zi bilan savol tuzing"
+            },
+            {
+              "word": "pouch",
+              "sentence": "Kangaroos carry their babies in a pouch.",
+              "uz": "'xalta' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "reptiles",
+              "sentence": "Crocodiles and snakes are reptiles.",
+              "uz": "'sudralib yuruvchilar' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "mammals",
+              "sentence": "Dolphins, koalas and kangaroos are mammals.",
+              "uz": "'sutemizuvchilar' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "insects",
+              "sentence": "Butterflies are insects.",
+              "uz": "'hasharotlar' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "paws",
+              "sentence": "Tigers have got big paws.",
+              "uz": "'panjalar' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "feed",
+              "sentence": "Mammals feed their babies on milk.",
+              "uz": "'boqmoq' fe'li bilan gap tuzing"
+            },
+            {
+              "word": "where",
+              "sentence": "Where do koalas live? — In eastern Australia.",
+              "uz": "'qayerda' so'roq so'zi bilan savol tuzing"
+            },
+            {
+              "word": "sharp claws",
+              "sentence": "Koalas have got very sharp claws.",
+              "uz": "'o'tkir tirnoqlar' iborasi bilan gap tuzing"
+            },
+            {
+              "word": "trunk",
+              "sentence": "An elephant's trunk is about 3.1 metres long.",
+              "uz": "'xartum' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "whiskers",
+              "sentence": "Tigers and cats have got whiskers.",
+              "uz": "'mo'ylovlar' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "how big",
+              "sentence": "How big is it? — It's very big.",
+              "uz": "'qanchalik katta' iborasi bilan savol tuzing"
+            },
+            {
+              "word": "how long",
+              "sentence": "How long is its tail? — It's very long.",
+              "uz": "'qancha uzun' iborasi bilan savol tuzing"
+            }
           ]
         }
       ]
@@ -192,51 +544,177 @@
         "ruleUz": "Noto'g'ri ko'plik — o'zak o'zgaradi",
         "explanationUz": "Bu otlarning ko'pligida unli yoki butun so'z o'zgaradi.",
         "items": [
-          { "base": "a goose", "baseUz": "g'oz", "derived": "geese", "derivedUz": "g'ozlar", "note": "oo → ee" },
-          { "base": "a mouse", "baseUz": "sichqon", "derived": "mice", "derivedUz": "sichqonlar", "note": "ou → i" },
-          { "base": "a man", "baseUz": "erkak", "derived": "men", "derivedUz": "erkaklar", "note": "a → e" },
-          { "base": "a woman", "baseUz": "ayol", "derived": "women", "derivedUz": "ayollar", "note": "talaffuzi /ˈwɪmɪn/" },
-          { "base": "a foot", "baseUz": "oyoq kafti", "derived": "feet", "derivedUz": "oyoq kaftlari", "note": "oo → ee" },
-          { "base": "a tooth", "baseUz": "tish", "derived": "teeth", "derivedUz": "tishlar", "note": "oo → ee" },
-          { "base": "a person", "baseUz": "shaxs", "derived": "people", "derivedUz": "odamlar", "note": "butunlay boshqa so'z" }
+          {
+            "base": "a goose",
+            "baseUz": "g'oz",
+            "derived": "geese",
+            "derivedUz": "g'ozlar",
+            "note": "oo → ee"
+          },
+          {
+            "base": "a mouse",
+            "baseUz": "sichqon",
+            "derived": "mice",
+            "derivedUz": "sichqonlar",
+            "note": "ou → i"
+          },
+          {
+            "base": "a man",
+            "baseUz": "erkak",
+            "derived": "men",
+            "derivedUz": "erkaklar",
+            "note": "a → e"
+          },
+          {
+            "base": "a woman",
+            "baseUz": "ayol",
+            "derived": "women",
+            "derivedUz": "ayollar",
+            "note": "talaffuzi /ˈwɪmɪn/"
+          },
+          {
+            "base": "a foot",
+            "baseUz": "oyoq kafti",
+            "derived": "feet",
+            "derivedUz": "oyoq kaftlari",
+            "note": "oo → ee"
+          },
+          {
+            "base": "a tooth",
+            "baseUz": "tish",
+            "derived": "teeth",
+            "derivedUz": "tishlar",
+            "note": "oo → ee"
+          },
+          {
+            "base": "a person",
+            "baseUz": "shaxs",
+            "derived": "people",
+            "derivedUz": "odamlar",
+            "note": "butunlay boshqa so'z"
+          }
         ]
       },
       {
         "ruleUz": "Noto'g'ri ko'plik — -EN qo'shimchasi",
         "explanationUz": "Faqat ikkita so'zda uchraydi.",
         "items": [
-          { "base": "an ox", "baseUz": "ho'kiz", "derived": "oxen", "derivedUz": "ho'kizlar", "note": "'oxes' XATO" },
-          { "base": "a child", "baseUz": "bola", "derived": "children", "derivedUz": "bolalar", "note": "-ren" }
+          {
+            "base": "an ox",
+            "baseUz": "ho'kiz",
+            "derived": "oxen",
+            "derivedUz": "ho'kizlar",
+            "note": "'oxes' XATO"
+          },
+          {
+            "base": "a child",
+            "baseUz": "bola",
+            "derived": "children",
+            "derivedUz": "bolalar",
+            "note": "-ren"
+          }
         ]
       },
       {
         "ruleUz": "Noto'g'ri ko'plik — shakl o'zgarmaydi",
         "explanationUz": "Birlik va ko'plik bir xil yoziladi. Fe'ldan farqlanadi.",
         "items": [
-          { "base": "a sheep", "baseUz": "qo'y", "derived": "sheep", "derivedUz": "qo'ylar", "note": "The sheep ARE ..." },
-          { "base": "a deer", "baseUz": "kiyik", "derived": "deer", "derivedUz": "kiyiklar", "note": "" },
-          { "base": "a fish", "baseUz": "baliq", "derived": "fish", "derivedUz": "baliqlar", "note": "'fishes' — turlari" },
-          { "base": "an aircraft", "baseUz": "samolyot", "derived": "aircraft", "derivedUz": "samolyotlar", "note": "" }
+          {
+            "base": "a sheep",
+            "baseUz": "qo'y",
+            "derived": "sheep",
+            "derivedUz": "qo'ylar",
+            "note": "The sheep ARE ..."
+          },
+          {
+            "base": "a deer",
+            "baseUz": "kiyik",
+            "derived": "deer",
+            "derivedUz": "kiyiklar",
+            "note": ""
+          },
+          {
+            "base": "a fish",
+            "baseUz": "baliq",
+            "derived": "fish",
+            "derivedUz": "baliqlar",
+            "note": "'fishes' — turlari"
+          },
+          {
+            "base": "an aircraft",
+            "baseUz": "samolyot",
+            "derived": "aircraft",
+            "derivedUz": "samolyotlar",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Daraja so'zlari — very / quite",
         "explanationUz": "Sifatning kuchini oshiradi. Sifat OLDIDA turadi.",
         "items": [
-          { "base": "big", "baseUz": "katta", "derived": "very big / quite big", "derivedUz": "juda katta / ancha katta", "note": "very > quite" },
-          { "base": "long", "baseUz": "uzun", "derived": "very long / quite long", "derivedUz": "juda uzun / ancha uzun", "note": "" },
-          { "base": "short", "baseUz": "kalta", "derived": "quite short", "derivedUz": "ancha kalta", "note": "" },
-          { "base": "intelligent", "baseUz": "aqlli", "derived": "very intelligent", "derivedUz": "juda aqlli", "note": "40-betdagi delfin matnida" }
+          {
+            "base": "big",
+            "baseUz": "katta",
+            "derived": "very big / quite big",
+            "derivedUz": "juda katta / ancha katta",
+            "note": "very > quite"
+          },
+          {
+            "base": "long",
+            "baseUz": "uzun",
+            "derived": "very long / quite long",
+            "derivedUz": "juda uzun / ancha uzun",
+            "note": ""
+          },
+          {
+            "base": "short",
+            "baseUz": "kalta",
+            "derived": "quite short",
+            "derivedUz": "ancha kalta",
+            "note": ""
+          },
+          {
+            "base": "intelligent",
+            "baseUz": "aqlli",
+            "derived": "very intelligent",
+            "derivedUz": "juda aqlli",
+            "note": "40-betdagi delfin matnida"
+          }
         ]
       },
       {
         "ruleUz": "Ranglar — qo'shma ranglar",
         "explanationUz": "Ikki rang 'and' bilan bog'lanadi; tartib odatda o'zgarmaydi.",
         "items": [
-          { "base": "black + white", "baseUz": "qora + oq", "derived": "black and white", "derivedUz": "qora-oq", "note": "zebra, pingvin" },
-          { "base": "brown + white", "baseUz": "jigarrang + oq", "derived": "brown and white", "derivedUz": "jigarrang-oq", "note": "it" },
-          { "base": "dark + blue", "baseUz": "to'q + ko'k", "derived": "dark blue", "derivedUz": "to'q ko'k", "note": "'and' YO'Q" },
-          { "base": "light + green", "baseUz": "och + yashil", "derived": "light green", "derivedUz": "och yashil", "note": "'and' YO'Q" }
+          {
+            "base": "black + white",
+            "baseUz": "qora + oq",
+            "derived": "black and white",
+            "derivedUz": "qora-oq",
+            "note": "zebra, pingvin"
+          },
+          {
+            "base": "brown + white",
+            "baseUz": "jigarrang + oq",
+            "derived": "brown and white",
+            "derivedUz": "jigarrang-oq",
+            "note": "it"
+          },
+          {
+            "base": "dark + blue",
+            "baseUz": "to'q + ko'k",
+            "derived": "dark blue",
+            "derivedUz": "to'q ko'k",
+            "note": "'and' YO'Q"
+          },
+          {
+            "base": "light + green",
+            "baseUz": "och + yashil",
+            "derived": "light green",
+            "derivedUz": "och yashil",
+            "note": "'and' YO'Q"
+          }
         ]
       }
     ]
@@ -284,39 +762,141 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "a colour", "uz": "rang" },
-    { "en": "brown", "uz": "jigarrang" },
-    { "en": "white", "uz": "oq" },
-    { "en": "grey", "uz": "kulrang" },
-    { "en": "pink", "uz": "pushti" },
-    { "en": "green", "uz": "yashil" },
-    { "en": "yellow", "uz": "sariq" },
-    { "en": "black", "uz": "qora" },
-    { "en": "blue", "uz": "ko'k" },
-    { "en": "purple", "uz": "binafsha" },
-    { "en": "red", "uz": "qizil" },
-    { "en": "a size", "uz": "o'lcham" },
-    { "en": "very big", "uz": "juda katta" },
-    { "en": "quite big", "uz": "ancha katta" },
-    { "en": "small", "uz": "kichik" },
-    { "en": "very long", "uz": "juda uzun" },
-    { "en": "quite long", "uz": "ancha uzun" },
-    { "en": "quite short", "uz": "ancha kalta" },
-    { "en": "short", "uz": "kalta" },
-    { "en": "a zebra", "uz": "zebra" },
-    { "en": "an irregular noun", "uz": "noto'g'ri ot" },
-    { "en": "singular", "uz": "birlik" },
-    { "en": "plural", "uz": "ko'plik" },
-    { "en": "a goose — geese", "uz": "g'oz — g'ozlar" },
-    { "en": "a mouse — mice", "uz": "sichqon — sichqonlar" },
-    { "en": "an ox — oxen", "uz": "ho'kiz — ho'kizlar" },
-    { "en": "a man — men", "uz": "erkak — erkaklar" },
-    { "en": "a woman — women", "uz": "ayol — ayollar" },
-    { "en": "a child — children", "uz": "bola — bolalar" },
-    { "en": "a person — people", "uz": "shaxs — odamlar" },
-    { "en": "a team", "uz": "jamoa" },
-    { "en": "to take it in turns", "uz": "navbat bilan qilmoq" },
-    { "en": "a point", "uz": "ochko, ball" },
-    { "en": "a winner", "uz": "g'olib" }
+    {
+      "en": "a colour",
+      "uz": "rang"
+    },
+    {
+      "en": "brown",
+      "uz": "jigarrang"
+    },
+    {
+      "en": "white",
+      "uz": "oq"
+    },
+    {
+      "en": "grey",
+      "uz": "kulrang"
+    },
+    {
+      "en": "pink",
+      "uz": "pushti"
+    },
+    {
+      "en": "green",
+      "uz": "yashil"
+    },
+    {
+      "en": "yellow",
+      "uz": "sariq"
+    },
+    {
+      "en": "black",
+      "uz": "qora"
+    },
+    {
+      "en": "blue",
+      "uz": "ko'k"
+    },
+    {
+      "en": "purple",
+      "uz": "binafsha"
+    },
+    {
+      "en": "red",
+      "uz": "qizil"
+    },
+    {
+      "en": "a size",
+      "uz": "o'lcham"
+    },
+    {
+      "en": "very big",
+      "uz": "juda katta"
+    },
+    {
+      "en": "quite big",
+      "uz": "ancha katta"
+    },
+    {
+      "en": "small",
+      "uz": "kichik"
+    },
+    {
+      "en": "very long",
+      "uz": "juda uzun"
+    },
+    {
+      "en": "quite long",
+      "uz": "ancha uzun"
+    },
+    {
+      "en": "quite short",
+      "uz": "ancha kalta"
+    },
+    {
+      "en": "short",
+      "uz": "kalta"
+    },
+    {
+      "en": "a zebra",
+      "uz": "zebra"
+    },
+    {
+      "en": "an irregular noun",
+      "uz": "noto'g'ri ot"
+    },
+    {
+      "en": "singular",
+      "uz": "birlik"
+    },
+    {
+      "en": "plural",
+      "uz": "ko'plik"
+    },
+    {
+      "en": "a goose — geese",
+      "uz": "g'oz — g'ozlar"
+    },
+    {
+      "en": "a mouse — mice",
+      "uz": "sichqon — sichqonlar"
+    },
+    {
+      "en": "an ox — oxen",
+      "uz": "ho'kiz — ho'kizlar"
+    },
+    {
+      "en": "a man — men",
+      "uz": "erkak — erkaklar"
+    },
+    {
+      "en": "a woman — women",
+      "uz": "ayol — ayollar"
+    },
+    {
+      "en": "a child — children",
+      "uz": "bola — bolalar"
+    },
+    {
+      "en": "a person — people",
+      "uz": "shaxs — odamlar"
+    },
+    {
+      "en": "a team",
+      "uz": "jamoa"
+    },
+    {
+      "en": "to take it in turns",
+      "uz": "navbat bilan qilmoq"
+    },
+    {
+      "en": "a point",
+      "uz": "ochko, ball"
+    },
+    {
+      "en": "a winner",
+      "uz": "g'olib"
+    }
   ]
 }

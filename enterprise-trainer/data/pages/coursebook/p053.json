@@ -5,6 +5,7 @@
   "unit": 7,
   "unitTitle": "Come Rain or Shine",
   "module": 2,
+  "scanNote": "TEKSHIRILDI (skan 49-bet): uchala otkritka matni so'zma-so'z skan bilan solishtirildi - A (Tom, Warsaw, Sally Jones/12 Swan St/London SW1 4GB), B (Tracy, London, Mr & Mrs Johnson/2 Via Torino/Rome/Italy), C (Pamela, Sydney, Mrs Bessie Bates/27 Park Lane/London SW3 9RY) - hammasi mos. 4 ta savol va kiyim gaplari (wearing heavy jackets and gloves / in their pyjamas / in our swimming costumes) to'g'ri. Speaking sarlavhalari city-weather-clothes-activities va namuna gap mos. Xato topilmadi.",
   "sections": [
     {
       "kind": "reading",
@@ -19,13 +20,41 @@
           "explanationUz": "OTKRITKA (a postcard) TUZILISHI:\n\n  1) Murojaat:     Dear Sally,\n  2) Salomlashish: A Happy New Year to all of you.\n  3) Asosiy qism:  ob-havo, kiyim, mashg'ulot\n  4) Yakun:        Hope to see you soon.\n  5) Xayrlashuv:   Best wishes,\n  6) Imzo:         Tom\n\nMANZIL (o'ng tomonda):\n  Sally Jones          — ism\n  12 Swan St           — ko'cha va uy raqami\n  London SW1 4GB       — shahar va pochta indeksi\n  England              — mamlakat\n\nDIQQAT: inglizcha manzil KICHIKDAN KATTAGA yoziladi\n(ism → ko'cha → shahar → mamlakat).",
           "bookRef": "Coursebook, 49-bet, 7-mashq (A otkritka)",
           "sentences": [
-            { "en": "Dear Sally,", "uz": "Hurmatli Salli,", "noteUz": "'Dear + ism' — xat va otkritkaning odatiy boshlanishi.\nO'zbekchadagidek 'Assalomu alaykum' emas." },
-            { "en": "A Happy New Year to all of you.", "uz": "Hammangizni Yangi yil bilan tabriklayman.", "noteUz": "'A Happy New Year to you' — tabrik shakli.\n'all of you' = hammangiz." },
-            { "en": "You can't imagine how cold it is in Warsaw!", "uz": "Varshavada qanchalik sovuq ekanini tasavvur ham qila olmaysiz!", "noteUz": "'to imagine' = tasavvur qilmoq.\n'how cold it is' — bilvosita gapda tartib O'ZGARMAYDI:\n'how cold IS it' XATO." },
-            { "en": "It is snowing heavily today, so the children are wearing their heavy jackets and gloves to keep them warm.", "uz": "Bugun qor qalin yog'yapti, shuning uchun bolalar issiq turish uchun qalin kurtka va qo'lqop kiyib olishgan.", "noteUz": "KIYIM HAQIDAGI GAP — 7-mashqda tagiga chiziladi.\n'so' = shuning uchun (sabab-natija).\n'to keep them warm' — 40-betdagi pingvin matnidagi ibora." },
-            { "en": "They are making a snowman in the park at the moment.", "uz": "Ular hozir bog'da qorbobo yasashayapti.", "noteUz": "'a snowman' = qorbobo (snow + man).\n'at the moment' = ayni paytda — Present Continuous belgisi." },
-            { "en": "Hope to see you soon.", "uz": "Tez orada ko'rishishga umid qilaman.", "noteUz": "'(I) hope to see you soon' — ega tushirilgan, otkritkada odatiy." },
-            { "en": "Best wishes, Tom", "uz": "Eng yaxshi tilaklar bilan, Tom", "noteUz": "'Best wishes' — do'st va tanishlarga yoziladigan xayrlashuv." }
+            {
+              "en": "Dear Sally,",
+              "uz": "Hurmatli Salli,",
+              "noteUz": "'Dear + ism' — xat va otkritkaning odatiy boshlanishi.\nO'zbekchadagidek 'Assalomu alaykum' emas."
+            },
+            {
+              "en": "A Happy New Year to all of you.",
+              "uz": "Hammangizni Yangi yil bilan tabriklayman.",
+              "noteUz": "'A Happy New Year to you' — tabrik shakli.\n'all of you' = hammangiz."
+            },
+            {
+              "en": "You can't imagine how cold it is in Warsaw!",
+              "uz": "Varshavada qanchalik sovuq ekanini tasavvur ham qila olmaysiz!",
+              "noteUz": "'to imagine' = tasavvur qilmoq.\n'how cold it is' — bilvosita gapda tartib O'ZGARMAYDI:\n'how cold IS it' XATO."
+            },
+            {
+              "en": "It is snowing heavily today, so the children are wearing their heavy jackets and gloves to keep them warm.",
+              "uz": "Bugun qor qalin yog'yapti, shuning uchun bolalar issiq turish uchun qalin kurtka va qo'lqop kiyib olishgan.",
+              "noteUz": "KIYIM HAQIDAGI GAP — 7-mashqda tagiga chiziladi.\n'so' = shuning uchun (sabab-natija).\n'to keep them warm' — 40-betdagi pingvin matnidagi ibora."
+            },
+            {
+              "en": "They are making a snowman in the park at the moment.",
+              "uz": "Ular hozir bog'da qorbobo yasashayapti.",
+              "noteUz": "'a snowman' = qorbobo (snow + man).\n'at the moment' = ayni paytda — Present Continuous belgisi."
+            },
+            {
+              "en": "Hope to see you soon.",
+              "uz": "Tez orada ko'rishishga umid qilaman.",
+              "noteUz": "'(I) hope to see you soon' — ega tushirilgan, otkritkada odatiy."
+            },
+            {
+              "en": "Best wishes, Tom",
+              "uz": "Eng yaxshi tilaklar bilan, Tom",
+              "noteUz": "'Best wishes' — do'st va tanishlarga yoziladigan xayrlashuv."
+            }
           ]
         },
         {
@@ -36,13 +65,41 @@
           "explanationUz": "MANZIL:\n  Mr & Mrs Johnson   — janob va xonim Jonson\n  2 Via Torino       — ko'cha (italyancha nom)\n  Rome               — Rim\n  Italy              — Italiya\n\nDemak, Treysi Londondan Rimdagi ota-onasiga yozyapti.\n\nDIQQAT: 'Mr' (janob) va 'Mrs' (turmush qurgan xonim) —\ndan keyin nuqta qo'yilmaydi (britancha).",
           "bookRef": "Coursebook, 49-bet, 7-mashq (B otkritka)",
           "sentences": [
-            { "en": "Dear Mum and Dad,", "uz": "Hurmatli oyi va dada,", "noteUz": "Ota-onaga murojaat. Britanchada 'Mum', amerikachada 'Mom'." },
-            { "en": "Greetings from London.", "uz": "Londondan salom.", "noteUz": "'Greetings from ...' — otkritkaning odatiy boshlanishi.\n'a greeting' = salom, tabrik." },
-            { "en": "It's windy today and it is raining.", "uz": "Bugun shamolli va yomg'ir yog'yapti.", "noteUz": "Ikki usul birga: SIFAT ('windy') va FE'L ('is raining')." },
-            { "en": "The children are in their pyjamas in the living-room.", "uz": "Bolalar mehmonxonada pijamada.", "noteUz": "KIYIM HAQIDAGI GAP — 7-mashqda tagiga chiziladi.\n'pyjamas' DOIM ko'plikda (shim + ko'ylak).\n'be IN + kiyim' = kiygan holda bo'lmoq." },
-            { "en": "They are very happy as they are decorating the Christmas tree at the moment.", "uz": "Ular juda xursand, chunki hozir Rojdestvo archasini bezashayapti.", "noteUz": "'as' bu yerda = 'because' (chunki).\n'to decorate' = bezamoq.\n'the Christmas tree' = Rojdestvo archasi (yangi yil archasi)." },
-            { "en": "We miss you a lot.", "uz": "Sizlarni juda sog'indik.", "noteUz": "'to miss somebody' = sog'inmoq.\n'a lot' = juda ko'p (gap oxirida)." },
-            { "en": "Love, Tracy", "uz": "Mehr bilan, Treysi", "noteUz": "'Love' — YAQIN kishilarga (oila, do'st) yoziladigan xayrlashuv.\nRasmiy xatda ishlatilmaydi." }
+            {
+              "en": "Dear Mum and Dad,",
+              "uz": "Hurmatli oyi va dada,",
+              "noteUz": "Ota-onaga murojaat. Britanchada 'Mum', amerikachada 'Mom'."
+            },
+            {
+              "en": "Greetings from London.",
+              "uz": "Londondan salom.",
+              "noteUz": "'Greetings from ...' — otkritkaning odatiy boshlanishi.\n'a greeting' = salom, tabrik."
+            },
+            {
+              "en": "It's windy today and it is raining.",
+              "uz": "Bugun shamolli va yomg'ir yog'yapti.",
+              "noteUz": "Ikki usul birga: SIFAT ('windy') va FE'L ('is raining')."
+            },
+            {
+              "en": "The children are in their pyjamas in the living-room.",
+              "uz": "Bolalar mehmonxonada pijamada.",
+              "noteUz": "KIYIM HAQIDAGI GAP — 7-mashqda tagiga chiziladi.\n'pyjamas' DOIM ko'plikda (shim + ko'ylak).\n'be IN + kiyim' = kiygan holda bo'lmoq."
+            },
+            {
+              "en": "They are very happy as they are decorating the Christmas tree at the moment.",
+              "uz": "Ular juda xursand, chunki hozir Rojdestvo archasini bezashayapti.",
+              "noteUz": "'as' bu yerda = 'because' (chunki).\n'to decorate' = bezamoq.\n'the Christmas tree' = Rojdestvo archasi (yangi yil archasi)."
+            },
+            {
+              "en": "We miss you a lot.",
+              "uz": "Sizlarni juda sog'indik.",
+              "noteUz": "'to miss somebody' = sog'inmoq.\n'a lot' = juda ko'p (gap oxirida)."
+            },
+            {
+              "en": "Love, Tracy",
+              "uz": "Mehr bilan, Treysi",
+              "noteUz": "'Love' — YAQIN kishilarga (oila, do'st) yoziladigan xayrlashuv.\nRasmiy xatda ishlatilmaydi."
+            }
           ]
         },
         {
@@ -53,15 +110,51 @@
           "explanationUz": "MANZIL:\n  Mrs Bessie Bates   — Bessi Beyts xonim\n  27 Park Lane       — ko'cha\n  London SW3 9RY     — shahar va indeks\n  England            — mamlakat\n\nQIZIQ FAKT — UCHALA OTKRITKA HAM YANGI YIL PAYTIDA YOZILGAN:\n  Tom (Varshava)  — 'A Happy New Year'  → QOR\n  Tracy (London)  — 'Christmas tree'    → YOMG'IR\n  Pamela (Sidney) — 'Season's greetings' → PLYAJ, ISSIQ\n\nSABABI: Avstraliya JANUBIY yarim sharda joylashgan —\nu yerda dekabr YOZ oyi! Fasllar teskari bo'ladi.",
           "bookRef": "Coursebook, 49-bet, 7-mashq (C otkritka)",
           "sentences": [
-            { "en": "Dear Aunt Bessie,", "uz": "Hurmatli Bessi xola,", "noteUz": "'Aunt' = xola, amma, ammaki. Ism oldida BOSH harf bilan." },
-            { "en": "Season's greetings from Sydney.", "uz": "Sidneydan bayram tabriklari.", "noteUz": "'Season's greetings' — Rojdestvo va Yangi yil tabrigi.\nSo'zma-so'z: 'faslning salomlari'." },
-            { "en": "The weather is fantastic today and we are on the beach.", "uz": "Bugun ob-havo ajoyib va biz plyajdamiz.", "noteUz": "'fantastic' = ajoyib, zo'r.\n'ON the beach' — plyaj yuzasida → ON." },
-            { "en": "It's very hot and the sun is shining, so we are all in our swimming costumes.", "uz": "Juda issiq va quyosh charaqlayapti, shuning uchun hammamiz cho'milish kiyimidamiz.", "noteUz": "KIYIM HAQIDAGI GAP — 7-mashqda tagiga chiziladi.\n'so' = shuning uchun.\n'we are all' = hammamiz (all egadan KEYIN)." },
-            { "en": "Mum, Dad, Sheila and Frank are making a sandcastle.", "uz": "Oyim, dadam, Sheyla va Frenk qumdan qal'a yasashayapti.", "noteUz": "'a sandcastle' = qum qal'a (sand + castle).\nSanashda oxirgisidan oldin 'and'." },
-            { "en": "There are a lot of people on the beach today.", "uz": "Bugun plyajda juda ko'p odam bor.", "noteUz": "'people' — ko'plik ot → ARE.\n'a lot of' = juda ko'p." },
-            { "en": "Everyone is swimming and enjoying the good weather.", "uz": "Hamma suzyapti va yaxshi ob-havodan zavqlanayapti.", "noteUz": "'everyone' — shakli birlik → IS ('everyone are' XATO).\n'to enjoy' = zavqlanmoq, huzur qilmoq." },
-            { "en": "Come and see us soon!", "uz": "Tez orada bizni ko'rgani keling!", "noteUz": "Buyruq gap — taklif ma'nosida.\n'come and + fe'l' = kelib ...moq." },
-            { "en": "Lots of love, Pamela", "uz": "Katta mehr bilan, Pamela", "noteUz": "'Lots of love' — 'Love' ning kuchliroq shakli, oila a'zolariga." }
+            {
+              "en": "Dear Aunt Bessie,",
+              "uz": "Hurmatli Bessi xola,",
+              "noteUz": "'Aunt' = xola, amma, ammaki. Ism oldida BOSH harf bilan."
+            },
+            {
+              "en": "Season's greetings from Sydney.",
+              "uz": "Sidneydan bayram tabriklari.",
+              "noteUz": "'Season's greetings' — Rojdestvo va Yangi yil tabrigi.\nSo'zma-so'z: 'faslning salomlari'."
+            },
+            {
+              "en": "The weather is fantastic today and we are on the beach.",
+              "uz": "Bugun ob-havo ajoyib va biz plyajdamiz.",
+              "noteUz": "'fantastic' = ajoyib, zo'r.\n'ON the beach' — plyaj yuzasida → ON."
+            },
+            {
+              "en": "It's very hot and the sun is shining, so we are all in our swimming costumes.",
+              "uz": "Juda issiq va quyosh charaqlayapti, shuning uchun hammamiz cho'milish kiyimidamiz.",
+              "noteUz": "KIYIM HAQIDAGI GAP — 7-mashqda tagiga chiziladi.\n'so' = shuning uchun.\n'we are all' = hammamiz (all egadan KEYIN)."
+            },
+            {
+              "en": "Mum, Dad, Sheila and Frank are making a sandcastle.",
+              "uz": "Oyim, dadam, Sheyla va Frenk qumdan qal'a yasashayapti.",
+              "noteUz": "'a sandcastle' = qum qal'a (sand + castle).\nSanashda oxirgisidan oldin 'and'."
+            },
+            {
+              "en": "There are a lot of people on the beach today.",
+              "uz": "Bugun plyajda juda ko'p odam bor.",
+              "noteUz": "'people' — ko'plik ot → ARE.\n'a lot of' = juda ko'p."
+            },
+            {
+              "en": "Everyone is swimming and enjoying the good weather.",
+              "uz": "Hamma suzyapti va yaxshi ob-havodan zavqlanayapti.",
+              "noteUz": "'everyone' — shakli birlik → IS ('everyone are' XATO).\n'to enjoy' = zavqlanmoq, huzur qilmoq."
+            },
+            {
+              "en": "Come and see us soon!",
+              "uz": "Tez orada bizni ko'rgani keling!",
+              "noteUz": "Buyruq gap — taklif ma'nosida.\n'come and + fe'l' = kelib ...moq."
+            },
+            {
+              "en": "Lots of love, Pamela",
+              "uz": "Katta mehr bilan, Pamela",
+              "noteUz": "'Lots of love' — 'Love' ning kuchliroq shakli, oila a'zolariga."
+            }
           ]
         },
         {
@@ -72,9 +165,24 @@
           "explanationUz": "Har bir otkritkada KIYIM haqida BITTA gap bor.\nShu gaplarni topish kerak.\n\nKIYIM HAQIDA GAPIRISHNING IKKI USULI:\n  1) to WEAR + kiyim:  They are wearing heavy jackets.\n  2) to BE IN + kiyim: They are in their pyjamas.\n  Ikkalasi ham bir xil ma'noda.",
           "bookRef": "Coursebook, 49-bet, 7-mashq (kiyim gaplari)",
           "items": [
-            { "textEn": "A otkritka (Tom, Varshava) — kiyim gapi:", "answer": "The children are wearing their heavy jackets and gloves to keep them warm.", "hintUz": "'wearing' so'zi bor gapni toping", "whyUz": "Qorli va sovuq ob-havoga mos kiyim: qalin kurtka va qo'lqop." },
-            { "textEn": "B otkritka (Treysi, London) — kiyim gapi:", "answer": "The children are in their pyjamas in the living-room.", "hintUz": "'in their ...' iborasi bor gapni toping", "whyUz": "Uy ichida bo'lgani uchun pijamada.\n'be IN + kiyim' — 'wear' bilan bir xil ma'noda." },
-            { "textEn": "C otkritka (Pamela, Sidney) — kiyim gapi:", "answer": "We are all in our swimming costumes.", "hintUz": "Plyajdagi kiyim", "whyUz": "Issiq va plyajda bo'lgani uchun cho'milish kiyimida." }
+            {
+              "textEn": "A otkritka (Tom, Varshava) — kiyim gapi:",
+              "answer": "The children are wearing their heavy jackets and gloves to keep them warm.",
+              "hintUz": "'wearing' so'zi bor gapni toping",
+              "whyUz": "Qorli va sovuq ob-havoga mos kiyim: qalin kurtka va qo'lqop."
+            },
+            {
+              "textEn": "B otkritka (Treysi, London) — kiyim gapi:",
+              "answer": "The children are in their pyjamas in the living-room.",
+              "hintUz": "'in their ...' iborasi bor gapni toping",
+              "whyUz": "Uy ichida bo'lgani uchun pijamada.\n'be IN + kiyim' — 'wear' bilan bir xil ma'noda."
+            },
+            {
+              "textEn": "C otkritka (Pamela, Sidney) — kiyim gapi:",
+              "answer": "We are all in our swimming costumes.",
+              "hintUz": "Plyajdagi kiyim",
+              "whyUz": "Issiq va plyajda bo'lgani uchun cho'milish kiyimida."
+            }
           ]
         },
         {
@@ -85,12 +193,42 @@
           "explanationUz": "Javoblarni otkritkalardan toping.\n2, 3, 4-savollar 'What are ... doing?' shaklida —\ndemak javob ham Present Continuous bo'ladi.",
           "bookRef": "Coursebook, 49-bet, 7-mashq (savollar)",
           "items": [
-            { "textEn": "1  What is the weather like in Warsaw?", "answer": "It is very cold and it is snowing heavily.", "hintUz": "A otkritka", "whyUz": "Tom: 'You can't imagine how cold it is in Warsaw! It is snowing heavily today.'" },
-            { "textEn": "1  What is the weather like in London?", "answer": "It's windy and it is raining.", "hintUz": "B otkritka", "whyUz": "Treysi: 'It's windy today and it is raining.'" },
-            { "textEn": "1  What is the weather like in Sydney?", "answer": "It's very hot and the sun is shining.", "hintUz": "C otkritka", "whyUz": "Pamela: 'It's very hot and the sun is shining.'\nOb-havo 'fantastic' (ajoyib) deb ham baholangan." },
-            { "textEn": "2  What are Tom's children doing?", "answer": "They are making a snowman in the park.", "hintUz": "A otkritka, qor bilan nima qilinadi?", "whyUz": "Tom: 'They are making a snowman in the park at the moment.'" },
-            { "textEn": "3  What are Tracy's children doing?", "answer": "They are decorating the Christmas tree.", "hintUz": "B otkritka, mehmonxonada", "whyUz": "Treysi: 'they are decorating the Christmas tree at the moment'." },
-            { "textEn": "4  What are Pamela's family doing?", "answer": "They are making a sandcastle. Everyone is swimming and enjoying the good weather.", "hintUz": "C otkritka, plyajda", "whyUz": "Pamela: 'Mum, Dad, Sheila and Frank are making a sandcastle' va\n'Everyone is swimming and enjoying the good weather.'" }
+            {
+              "textEn": "1  What is the weather like in Warsaw?",
+              "answer": "It is very cold and it is snowing heavily.",
+              "hintUz": "A otkritka",
+              "whyUz": "Tom: 'You can't imagine how cold it is in Warsaw! It is snowing heavily today.'"
+            },
+            {
+              "textEn": "1  What is the weather like in London?",
+              "answer": "It's windy and it is raining.",
+              "hintUz": "B otkritka",
+              "whyUz": "Treysi: 'It's windy today and it is raining.'"
+            },
+            {
+              "textEn": "1  What is the weather like in Sydney?",
+              "answer": "It's very hot and the sun is shining.",
+              "hintUz": "C otkritka",
+              "whyUz": "Pamela: 'It's very hot and the sun is shining.'\nOb-havo 'fantastic' (ajoyib) deb ham baholangan."
+            },
+            {
+              "textEn": "2  What are Tom's children doing?",
+              "answer": "They are making a snowman in the park.",
+              "hintUz": "A otkritka, qor bilan nima qilinadi?",
+              "whyUz": "Tom: 'They are making a snowman in the park at the moment.'"
+            },
+            {
+              "textEn": "3  What are Tracy's children doing?",
+              "answer": "They are decorating the Christmas tree.",
+              "hintUz": "B otkritka, mehmonxonada",
+              "whyUz": "Treysi: 'they are decorating the Christmas tree at the moment'."
+            },
+            {
+              "textEn": "4  What are Pamela's family doing?",
+              "answer": "They are making a sandcastle. Everyone is swimming and enjoying the good weather.",
+              "hintUz": "C otkritka, plyajda",
+              "whyUz": "Pamela: 'Mum, Dad, Sheila and Frank are making a sandcastle' va\n'Everyone is swimming and enjoying the good weather.'"
+            }
           ]
         }
       ]
@@ -108,18 +246,78 @@
           "explanationUz": "KITOBDAGI NAMUNA:\n  'Tom is in Warsaw. It's very cold there and it is snowing ...'\n\nTO'RT SARLAVHA:\n  city ....... shahar\n  weather .... ob-havo\n  clothes .... kiyim\n  activities . mashg'ulotlar\n\nQAYD YOZISH USULI: to'liq gap emas, faqat KALIT so'zlar.\n  Tom — Warsaw — very cold, snowing heavily —\n        heavy jackets, gloves — making a snowman",
           "bookRef": "Coursebook, 49-bet, Speaking",
           "items": [
-            { "textEn": "TOM — city:", "answer": "Warsaw", "hintUz": "A otkritka qayerdan yozilgan?", "whyUz": "'Greetings from ...' o'rniga Tom 'how cold it is in Warsaw' deydi." },
-            { "textEn": "TOM — weather:", "answer": "very cold, snowing heavily", "hintUz": "Qanday ob-havo?", "whyUz": "'how cold it is' + 'It is snowing heavily today'." },
-            { "textEn": "TOM — clothes:", "answer": "heavy jackets and gloves", "hintUz": "Bolalar nima kiygan?", "whyUz": "'the children are wearing their heavy jackets and gloves'." },
-            { "textEn": "TOM — activities:", "answer": "making a snowman in the park", "hintUz": "Bolalar nima qilishayapti?", "whyUz": "'They are making a snowman in the park at the moment.'" },
-            { "textEn": "TRACY — city:", "answer": "London", "hintUz": "B otkritka qayerdan?", "whyUz": "'Greetings from London.'" },
-            { "textEn": "TRACY — weather:", "answer": "windy and raining", "hintUz": "Qanday ob-havo?", "whyUz": "'It's windy today and it is raining.'" },
-            { "textEn": "TRACY — clothes:", "answer": "pyjamas", "hintUz": "Bolalar nima kiygan?", "whyUz": "'The children are in their pyjamas.'" },
-            { "textEn": "TRACY — activities:", "answer": "decorating the Christmas tree", "hintUz": "Bolalar nima qilishayapti?", "whyUz": "'they are decorating the Christmas tree at the moment'." },
-            { "textEn": "PAMELA — city:", "answer": "Sydney", "hintUz": "C otkritka qayerdan?", "whyUz": "'Season's greetings from Sydney.'" },
-            { "textEn": "PAMELA — weather:", "answer": "fantastic, very hot and sunny", "hintUz": "Qanday ob-havo?", "whyUz": "'The weather is fantastic today' + 'It's very hot and the sun is shining'." },
-            { "textEn": "PAMELA — clothes:", "answer": "swimming costumes", "hintUz": "Ular nima kiygan?", "whyUz": "'we are all in our swimming costumes'." },
-            { "textEn": "PAMELA — activities:", "answer": "making a sandcastle, swimming", "hintUz": "Oila nima qilishayapti?", "whyUz": "'Mum, Dad, Sheila and Frank are making a sandcastle' +\n'Everyone is swimming and enjoying the good weather'." }
+            {
+              "textEn": "TOM — city:",
+              "answer": "Warsaw",
+              "hintUz": "A otkritka qayerdan yozilgan?",
+              "whyUz": "'Greetings from ...' o'rniga Tom 'how cold it is in Warsaw' deydi."
+            },
+            {
+              "textEn": "TOM — weather:",
+              "answer": "very cold, snowing heavily",
+              "hintUz": "Qanday ob-havo?",
+              "whyUz": "'how cold it is' + 'It is snowing heavily today'."
+            },
+            {
+              "textEn": "TOM — clothes:",
+              "answer": "heavy jackets and gloves",
+              "hintUz": "Bolalar nima kiygan?",
+              "whyUz": "'the children are wearing their heavy jackets and gloves'."
+            },
+            {
+              "textEn": "TOM — activities:",
+              "answer": "making a snowman in the park",
+              "hintUz": "Bolalar nima qilishayapti?",
+              "whyUz": "'They are making a snowman in the park at the moment.'"
+            },
+            {
+              "textEn": "TRACY — city:",
+              "answer": "London",
+              "hintUz": "B otkritka qayerdan?",
+              "whyUz": "'Greetings from London.'"
+            },
+            {
+              "textEn": "TRACY — weather:",
+              "answer": "windy and raining",
+              "hintUz": "Qanday ob-havo?",
+              "whyUz": "'It's windy today and it is raining.'"
+            },
+            {
+              "textEn": "TRACY — clothes:",
+              "answer": "pyjamas",
+              "hintUz": "Bolalar nima kiygan?",
+              "whyUz": "'The children are in their pyjamas.'"
+            },
+            {
+              "textEn": "TRACY — activities:",
+              "answer": "decorating the Christmas tree",
+              "hintUz": "Bolalar nima qilishayapti?",
+              "whyUz": "'they are decorating the Christmas tree at the moment'."
+            },
+            {
+              "textEn": "PAMELA — city:",
+              "answer": "Sydney",
+              "hintUz": "C otkritka qayerdan?",
+              "whyUz": "'Season's greetings from Sydney.'"
+            },
+            {
+              "textEn": "PAMELA — weather:",
+              "answer": "fantastic, very hot and sunny",
+              "hintUz": "Qanday ob-havo?",
+              "whyUz": "'The weather is fantastic today' + 'It's very hot and the sun is shining'."
+            },
+            {
+              "textEn": "PAMELA — clothes:",
+              "answer": "swimming costumes",
+              "hintUz": "Ular nima kiygan?",
+              "whyUz": "'we are all in our swimming costumes'."
+            },
+            {
+              "textEn": "PAMELA — activities:",
+              "answer": "making a sandcastle, swimming",
+              "hintUz": "Oila nima qilishayapti?",
+              "whyUz": "'Mum, Dad, Sheila and Frank are making a sandcastle' +\n'Everyone is swimming and enjoying the good weather'."
+            }
           ]
         },
         {
@@ -130,18 +328,66 @@
           "explanationUz": "KITOBDAGI NAMUNA:\n  'Tom is in Warsaw. It's very cold there and it is snowing ...'\n\nQOLIP:\n  Ism + IS IN + shahar.\n  It's + ob-havo + THERE.\n  He/She/They + ARE WEARING / ARE IN + kiyim.\n  They + ARE + mashg'ulot-ING.\n\n'there' = u yerda — shaharni qayta aytmaslik uchun.",
           "bookRef": "Coursebook, 49-bet, Speaking (namuna)",
           "example": [
-            { "speaker": "Tom haqida", "en": "Tom is in Warsaw.", "uz": "Tom Varshavada." },
-            { "speaker": "Tom haqida", "en": "It's very cold there and it is snowing heavily.", "uz": "U yerda juda sovuq va qor qalin yog'yapti." },
-            { "speaker": "Tom haqida", "en": "His children are wearing heavy jackets and gloves.", "uz": "Uning bolalari qalin kurtka va qo'lqop kiyib olishgan." },
-            { "speaker": "Tom haqida", "en": "They are making a snowman in the park.", "uz": "Ular bog'da qorbobo yasashayapti." },
-            { "speaker": "Treysi haqida", "en": "Tracy is in London.", "uz": "Treysi Londonda." },
-            { "speaker": "Treysi haqida", "en": "It's windy there and it is raining.", "uz": "U yerda shamolli va yomg'ir yog'yapti." },
-            { "speaker": "Treysi haqida", "en": "Her children are in their pyjamas.", "uz": "Uning bolalari pijamada." },
-            { "speaker": "Treysi haqida", "en": "They are decorating the Christmas tree.", "uz": "Ular Rojdestvo archasini bezashayapti." },
-            { "speaker": "Pamela haqida", "en": "Pamela is in Sydney.", "uz": "Pamela Sidneyda." },
-            { "speaker": "Pamela haqida", "en": "It's very hot there and the sun is shining.", "uz": "U yerda juda issiq va quyosh charaqlayapti." },
-            { "speaker": "Pamela haqida", "en": "They are all in their swimming costumes.", "uz": "Ularning hammasi cho'milish kiyimida." },
-            { "speaker": "Pamela haqida", "en": "Her family are making a sandcastle and everyone is swimming.", "uz": "Uning oilasi qum qal'a yasashayapti va hamma suzyapti." }
+            {
+              "speaker": "Tom haqida",
+              "en": "Tom is in Warsaw.",
+              "uz": "Tom Varshavada."
+            },
+            {
+              "speaker": "Tom haqida",
+              "en": "It's very cold there and it is snowing heavily.",
+              "uz": "U yerda juda sovuq va qor qalin yog'yapti."
+            },
+            {
+              "speaker": "Tom haqida",
+              "en": "His children are wearing heavy jackets and gloves.",
+              "uz": "Uning bolalari qalin kurtka va qo'lqop kiyib olishgan."
+            },
+            {
+              "speaker": "Tom haqida",
+              "en": "They are making a snowman in the park.",
+              "uz": "Ular bog'da qorbobo yasashayapti."
+            },
+            {
+              "speaker": "Treysi haqida",
+              "en": "Tracy is in London.",
+              "uz": "Treysi Londonda."
+            },
+            {
+              "speaker": "Treysi haqida",
+              "en": "It's windy there and it is raining.",
+              "uz": "U yerda shamolli va yomg'ir yog'yapti."
+            },
+            {
+              "speaker": "Treysi haqida",
+              "en": "Her children are in their pyjamas.",
+              "uz": "Uning bolalari pijamada."
+            },
+            {
+              "speaker": "Treysi haqida",
+              "en": "They are decorating the Christmas tree.",
+              "uz": "Ular Rojdestvo archasini bezashayapti."
+            },
+            {
+              "speaker": "Pamela haqida",
+              "en": "Pamela is in Sydney.",
+              "uz": "Pamela Sidneyda."
+            },
+            {
+              "speaker": "Pamela haqida",
+              "en": "It's very hot there and the sun is shining.",
+              "uz": "U yerda juda issiq va quyosh charaqlayapti."
+            },
+            {
+              "speaker": "Pamela haqida",
+              "en": "They are all in their swimming costumes.",
+              "uz": "Ularning hammasi cho'milish kiyimida."
+            },
+            {
+              "speaker": "Pamela haqida",
+              "en": "Her family are making a sandcastle and everyone is swimming.",
+              "uz": "Uning oilasi qum qal'a yasashayapti va hamma suzyapti."
+            }
           ]
         }
       ]
@@ -155,55 +401,205 @@
         "ruleUz": "Qo'shma otlar (ob-havo va o'yin)",
         "explanationUz": "Ikki so'z birikib yangi ot yasaydi.",
         "items": [
-          { "base": "snow + man", "baseUz": "qor + odam", "derived": "a snowman", "derivedUz": "qorbobo", "note": "ko'pligi: snowmen" },
-          { "base": "sand + castle", "baseUz": "qum + qal'a", "derived": "a sandcastle", "derivedUz": "qum qal'a", "note": "" },
-          { "base": "snow + ball", "baseUz": "qor + to'p", "derived": "a snowball", "derivedUz": "qor to'pi", "note": "" },
-          { "base": "living + room", "baseUz": "yashash + xona", "derived": "the living-room", "derivedUz": "mehmonxona", "note": "chiziqcha bilan" },
-          { "base": "Christmas + tree", "baseUz": "Rojdestvo + daraxt", "derived": "the Christmas tree", "derivedUz": "Rojdestvo archasi", "note": "alohida yoziladi" }
+          {
+            "base": "snow + man",
+            "baseUz": "qor + odam",
+            "derived": "a snowman",
+            "derivedUz": "qorbobo",
+            "note": "ko'pligi: snowmen"
+          },
+          {
+            "base": "sand + castle",
+            "baseUz": "qum + qal'a",
+            "derived": "a sandcastle",
+            "derivedUz": "qum qal'a",
+            "note": ""
+          },
+          {
+            "base": "snow + ball",
+            "baseUz": "qor + to'p",
+            "derived": "a snowball",
+            "derivedUz": "qor to'pi",
+            "note": ""
+          },
+          {
+            "base": "living + room",
+            "baseUz": "yashash + xona",
+            "derived": "the living-room",
+            "derivedUz": "mehmonxona",
+            "note": "chiziqcha bilan"
+          },
+          {
+            "base": "Christmas + tree",
+            "baseUz": "Rojdestvo + daraxt",
+            "derived": "the Christmas tree",
+            "derivedUz": "Rojdestvo archasi",
+            "note": "alohida yoziladi"
+          }
         ]
       },
       {
         "ruleUz": "Xat va otkritka iboralari",
         "explanationUz": "Boshlanish va yakun uchun tayyor shakllar.",
         "items": [
-          { "base": "Dear ...", "baseUz": "Hurmatli ...", "derived": "Dear Sally,", "derivedUz": "boshlanish", "note": "vergul bilan" },
-          { "base": "Greetings from ...", "baseUz": "...dan salom", "derived": "Greetings from London.", "derivedUz": "boshlanish", "note": "" },
-          { "base": "Season's greetings", "baseUz": "bayram tabriklari", "derived": "Rojdestvo/Yangi yil", "derivedUz": "boshlanish", "note": "" },
-          { "base": "Hope to see you soon.", "baseUz": "Tez ko'rishaylik.", "derived": "yakun", "derivedUz": "'I' tushirilgan", "note": "" },
-          { "base": "We miss you a lot.", "baseUz": "Sizni juda sog'indik.", "derived": "yakun", "derivedUz": "", "note": "" },
-          { "base": "Best wishes,", "baseUz": "Eng yaxshi tilaklar,", "derived": "xayrlashuv", "derivedUz": "do'stlarga", "note": "" },
-          { "base": "Love,", "baseUz": "Mehr bilan,", "derived": "xayrlashuv", "derivedUz": "yaqinlarga", "note": "" },
-          { "base": "Lots of love,", "baseUz": "Katta mehr bilan,", "derived": "xayrlashuv", "derivedUz": "oilaga", "note": "eng iliq" }
+          {
+            "base": "Dear ...",
+            "baseUz": "Hurmatli ...",
+            "derived": "Dear Sally,",
+            "derivedUz": "boshlanish",
+            "note": "vergul bilan"
+          },
+          {
+            "base": "Greetings from ...",
+            "baseUz": "...dan salom",
+            "derived": "Greetings from London.",
+            "derivedUz": "boshlanish",
+            "note": ""
+          },
+          {
+            "base": "Season's greetings",
+            "baseUz": "bayram tabriklari",
+            "derived": "Rojdestvo/Yangi yil",
+            "derivedUz": "boshlanish",
+            "note": ""
+          },
+          {
+            "base": "Hope to see you soon.",
+            "baseUz": "Tez ko'rishaylik.",
+            "derived": "yakun",
+            "derivedUz": "'I' tushirilgan",
+            "note": ""
+          },
+          {
+            "base": "We miss you a lot.",
+            "baseUz": "Sizni juda sog'indik.",
+            "derived": "yakun",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "Best wishes,",
+            "baseUz": "Eng yaxshi tilaklar,",
+            "derived": "xayrlashuv",
+            "derivedUz": "do'stlarga",
+            "note": ""
+          },
+          {
+            "base": "Love,",
+            "baseUz": "Mehr bilan,",
+            "derived": "xayrlashuv",
+            "derivedUz": "yaqinlarga",
+            "note": ""
+          },
+          {
+            "base": "Lots of love,",
+            "baseUz": "Katta mehr bilan,",
+            "derived": "xayrlashuv",
+            "derivedUz": "oilaga",
+            "note": "eng iliq"
+          }
         ]
       },
       {
         "ruleUz": "Doim ko'plikda kiyiladigan kiyimlar",
         "explanationUz": "Ikki oyoq yoki ikki qo'l uchun bo'lgani sababli -s bilan keladi.",
         "items": [
-          { "base": "pyjamas", "baseUz": "pijama", "derived": "in their pyjamas", "derivedUz": "doim ko'plikda", "note": "amerikacha: pajamas" },
-          { "base": "gloves", "baseUz": "qo'lqoplar", "derived": "wearing gloves", "derivedUz": "doim ko'plikda", "note": "" },
-          { "base": "trousers", "baseUz": "shim", "derived": "a pair of trousers", "derivedUz": "doim ko'plikda", "note": "" },
-          { "base": "shorts", "baseUz": "kalta shim", "derived": "in his shorts", "derivedUz": "doim ko'plikda", "note": "" }
+          {
+            "base": "pyjamas",
+            "baseUz": "pijama",
+            "derived": "in their pyjamas",
+            "derivedUz": "doim ko'plikda",
+            "note": "amerikacha: pajamas"
+          },
+          {
+            "base": "gloves",
+            "baseUz": "qo'lqoplar",
+            "derived": "wearing gloves",
+            "derivedUz": "doim ko'plikda",
+            "note": ""
+          },
+          {
+            "base": "trousers",
+            "baseUz": "shim",
+            "derived": "a pair of trousers",
+            "derivedUz": "doim ko'plikda",
+            "note": ""
+          },
+          {
+            "base": "shorts",
+            "baseUz": "kalta shim",
+            "derived": "in his shorts",
+            "derivedUz": "doim ko'plikda",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Vaqt ifodalari — Present Continuous belgilari",
         "explanationUz": "Bu so'zlar hozir sodir bo'layotgan ishni bildiradi.",
         "items": [
-          { "base": "now", "baseUz": "hozir", "derived": "They are playing now.", "derivedUz": "", "note": "" },
-          { "base": "at the moment", "baseUz": "ayni paytda", "derived": "at the moment", "derivedUz": "gap oxirida", "note": "kitobda ikki marta" },
-          { "base": "today", "baseUz": "bugun", "derived": "It is snowing today.", "derivedUz": "", "note": "" },
-          { "base": "right now", "baseUz": "aynan hozir", "derived": "right now", "derivedUz": "kuchaytirilgan", "note": "" }
+          {
+            "base": "now",
+            "baseUz": "hozir",
+            "derived": "They are playing now.",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "at the moment",
+            "baseUz": "ayni paytda",
+            "derived": "at the moment",
+            "derivedUz": "gap oxirida",
+            "note": "kitobda ikki marta"
+          },
+          {
+            "base": "today",
+            "baseUz": "bugun",
+            "derived": "It is snowing today.",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "right now",
+            "baseUz": "aynan hozir",
+            "derived": "right now",
+            "derivedUz": "kuchaytirilgan",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "'Everyone' va boshqa noaniq olmoshlar",
         "explanationUz": "Ma'nosi ko'plik bo'lsa ham, GRAMMATIK jihatdan BIRLIK.",
         "items": [
-          { "base": "everyone", "baseUz": "hamma", "derived": "Everyone IS swimming.", "derivedUz": "birlik fe'l", "note": "'everyone are' XATO" },
-          { "base": "everybody", "baseUz": "hamma", "derived": "Everybody IS happy.", "derivedUz": "birlik fe'l", "note": "" },
-          { "base": "everything", "baseUz": "hamma narsa", "derived": "Everything IS fine.", "derivedUz": "birlik fe'l", "note": "" },
-          { "base": "people", "baseUz": "odamlar", "derived": "People ARE swimming.", "derivedUz": "KO'PLIK fe'l", "note": "farqiga e'tibor bering" }
+          {
+            "base": "everyone",
+            "baseUz": "hamma",
+            "derived": "Everyone IS swimming.",
+            "derivedUz": "birlik fe'l",
+            "note": "'everyone are' XATO"
+          },
+          {
+            "base": "everybody",
+            "baseUz": "hamma",
+            "derived": "Everybody IS happy.",
+            "derivedUz": "birlik fe'l",
+            "note": ""
+          },
+          {
+            "base": "everything",
+            "baseUz": "hamma narsa",
+            "derived": "Everything IS fine.",
+            "derivedUz": "birlik fe'l",
+            "note": ""
+          },
+          {
+            "base": "people",
+            "baseUz": "odamlar",
+            "derived": "People ARE swimming.",
+            "derivedUz": "KO'PLIK fe'l",
+            "note": "farqiga e'tibor bering"
+          }
         ]
       }
     ]
@@ -251,34 +647,121 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "a postcard", "uz": "otkritka" },
-    { "en": "to describe", "uz": "tasvirlamoq" },
-    { "en": "clothes", "uz": "kiyim-kechak" },
-    { "en": "A Happy New Year", "uz": "Yangi yil muborak" },
-    { "en": "to imagine", "uz": "tasavvur qilmoq" },
-    { "en": "heavily", "uz": "qattiq, qalin" },
-    { "en": "a snowman", "uz": "qorbobo" },
-    { "en": "at the moment", "uz": "ayni paytda" },
-    { "en": "Best wishes", "uz": "Eng yaxshi tilaklar" },
-    { "en": "Greetings from ...", "uz": "...dan salom" },
-    { "en": "pyjamas", "uz": "pijama" },
-    { "en": "the living-room", "uz": "mehmonxona" },
-    { "en": "to decorate", "uz": "bezamoq" },
-    { "en": "the Christmas tree", "uz": "Rojdestvo archasi" },
-    { "en": "to miss somebody", "uz": "sog'inmoq" },
-    { "en": "Season's greetings", "uz": "bayram tabriklari" },
-    { "en": "fantastic", "uz": "ajoyib" },
-    { "en": "a beach", "uz": "plyaj" },
-    { "en": "a swimming costume", "uz": "cho'milish kiyimi" },
-    { "en": "a sandcastle", "uz": "qum qal'a" },
-    { "en": "everyone", "uz": "hamma" },
-    { "en": "to enjoy", "uz": "zavqlanmoq" },
-    { "en": "Lots of love", "uz": "Katta mehr bilan" },
-    { "en": "an aunt", "uz": "xola, amma" },
-    { "en": "notes", "uz": "qaydlar" },
-    { "en": "a heading", "uz": "sarlavha" },
-    { "en": "an activity", "uz": "mashg'ulot" },
-    { "en": "Italy", "uz": "Italiya" },
-    { "en": "Rome", "uz": "Rim" }
+    {
+      "en": "a postcard",
+      "uz": "otkritka"
+    },
+    {
+      "en": "to describe",
+      "uz": "tasvirlamoq"
+    },
+    {
+      "en": "clothes",
+      "uz": "kiyim-kechak"
+    },
+    {
+      "en": "A Happy New Year",
+      "uz": "Yangi yil muborak"
+    },
+    {
+      "en": "to imagine",
+      "uz": "tasavvur qilmoq"
+    },
+    {
+      "en": "heavily",
+      "uz": "qattiq, qalin"
+    },
+    {
+      "en": "a snowman",
+      "uz": "qorbobo"
+    },
+    {
+      "en": "at the moment",
+      "uz": "ayni paytda"
+    },
+    {
+      "en": "Best wishes",
+      "uz": "Eng yaxshi tilaklar"
+    },
+    {
+      "en": "Greetings from ...",
+      "uz": "...dan salom"
+    },
+    {
+      "en": "pyjamas",
+      "uz": "pijama"
+    },
+    {
+      "en": "the living-room",
+      "uz": "mehmonxona"
+    },
+    {
+      "en": "to decorate",
+      "uz": "bezamoq"
+    },
+    {
+      "en": "the Christmas tree",
+      "uz": "Rojdestvo archasi"
+    },
+    {
+      "en": "to miss somebody",
+      "uz": "sog'inmoq"
+    },
+    {
+      "en": "Season's greetings",
+      "uz": "bayram tabriklari"
+    },
+    {
+      "en": "fantastic",
+      "uz": "ajoyib"
+    },
+    {
+      "en": "a beach",
+      "uz": "plyaj"
+    },
+    {
+      "en": "a swimming costume",
+      "uz": "cho'milish kiyimi"
+    },
+    {
+      "en": "a sandcastle",
+      "uz": "qum qal'a"
+    },
+    {
+      "en": "everyone",
+      "uz": "hamma"
+    },
+    {
+      "en": "to enjoy",
+      "uz": "zavqlanmoq"
+    },
+    {
+      "en": "Lots of love",
+      "uz": "Katta mehr bilan"
+    },
+    {
+      "en": "an aunt",
+      "uz": "xola, amma"
+    },
+    {
+      "en": "notes",
+      "uz": "qaydlar"
+    },
+    {
+      "en": "a heading",
+      "uz": "sarlavha"
+    },
+    {
+      "en": "an activity",
+      "uz": "mashg'ulot"
+    },
+    {
+      "en": "Italy",
+      "uz": "Italiya"
+    },
+    {
+      "en": "Rome",
+      "uz": "Rim"
+    }
   ]
 }
