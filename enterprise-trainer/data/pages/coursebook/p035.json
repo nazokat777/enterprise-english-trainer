@@ -8,6 +8,7 @@
   "afterUnit": 4,
   "unitTitle": "Module Self-Assessment 1 (Units 1-4)",
   "module": 1,
+  "scanNote": "33-BET. 1-MODUL TESTINING DAVOMI (1-4-unitlar).\n\nSkaner bilan tekshirildi. HAMMASI TO'G'RI: 6-mashq (6 olmosh), 7-mashq (5 apostrof), 8-mashq (7 moslash), 9-mashq (10 savol javobi), 10-mashq (8 ortiqcha so'z) — jami 36 ta javob.\n\n⚠ BALLAR: 6-mashq 6 · 7-mashq 5 · 8-mashq 7 · 9-mashq 10 · 10-mashq 8 · 11-mashq 18. 32-bet bilan birga JAMI 100 BALL.\n\n⚠ 7-MAShQ — APOSTROF JOYI MA'NONI O'ZGARTIRADI:\n  'my SON'S car' — bitta o'g'il · 'the GIRLS' bags' — ko'p qiz\n  'their DAUGHTER'S name is Kate' — bitta qiz (ismi bitta, demak bitta qiz)\n  'our FATHER'S study' — bitta ota\n  'LUCY AND BILL'S aunt' — ikki ism birga, apostrof oxirgisiga\n  ⚠ 4-bandda kalit — 'name IS Kate' (birlik fe'l va bitta ism).\n\n⚠ 10-MAShQ — ORTIQCHA SO'ZNI TOPISh, HAR QATORDA BOShQA SABAB:\n  1 old — qolganlari BO'Y-GAVDA (tall, short, well-built)\n  2 dark — qolganlari YOSH (young, middle-aged, old)\n  3 wavy — qolganlari RANG (brown, grey, pale)\n  4 slanting — qolganlari SOCH ShAKLI (wavy, curly, straight); 'slanting' KO'ZGA tegishli\n  5 slim — qolganlari KO'Z (slanting, blue, brown); 'slim' GAVDAGA tegishli\n  6 wide — qolganlari YUZ RANGI (pale, dark, light)\n  7 patient — qolganlari GO'ZALLIK (beautiful, pretty, gorgeous); 'patient' XARAKTER\n  8 curly — qolganlari XARAKTER (lazy, kind, bossy, rude); 'curly' SOCH\n  ⚠ Ya'ni ortiqcha so'z boshqa TOIFAGA tegishli bo'ladi.\n\n⚠ 9-MAShQ — 'LOOK LIKE' va 'CHARACTER' FARQI: 7 va 9-band tashqi ko'rinish ('What does he LOOK LIKE?'), 8 va 10-band esa xarakter ('Can you describe his CHARACTER?').\n  ⚠ Xatdan: Martin — baland bo'yli, jigarrang soch, ko'k ko'z (ko'rinish) va DANGASA (xarakter). Karen — past bo'yli, yashil ko'z (ko'rinish) va BIROZ BUYRUQBOZ (xarakter).",
   "pairsWith": "Coursebook 32-bet (testning boshi)",
   "sections": [
     {
@@ -23,18 +24,84 @@
           "explanationUz": "SO'ZLAR RO'YXATI: hers, my, she, him, his, her\n\nHar biri FAQAT BIR MARTA ishlatiladi.\nRo'yxatda uch xil olmosh bor:\n\n  EGA olmoshi:      she\n  OBYEKT olmoshi:   him\n  EGALIK SIFATI:    my, his, her\n  EGALIK OLMOSHI:   hers\n\nQANDAY TANLASH:\n  • fe'ldan oldin      → she\n  • fe'l/predlogdan keyin → him\n  • otdan oldin        → my, his, her\n  • ot yo'q            → hers",
           "bookRef": "Coursebook, 33-bet, 6-mashq",
           "lines": [
-            { "who": "1 A", "textEn": "Does she like tennis?", "uz": "U tennisni yoqtiradimi?", "given": true },
-            { "who": "1 B", "textEn": "Yes, it's ____ favourite sport.", "answer": "her", "hintUz": "Keyin ot bor; savol AYOL haqida", "whyUz": "'favourite sport' oti bor → EGALIK SIFATI. Savolda 'she' → her." },
-            { "who": "2 A", "textEn": "Have you got a telephone number?", "uz": "Telefon raqamingiz bormi?", "given": true },
-            { "who": "2 B", "textEn": "Yes, ____ number is 4241889.", "answer": "my", "hintUz": "Javob beruvchi o'z raqami haqida; keyin ot bor", "whyUz": "'number' oti bor → egalik sifati. Javob beruvchi o'zi haqida → my." },
-            { "who": "3 A", "textEn": "Does he like football?", "uz": "U futbolni yoqtiradimi?", "given": true },
-            { "who": "3 B", "textEn": "Yes, it's ____ favourite sport.", "answer": "his", "hintUz": "Keyin ot bor; savol ERKAK haqida", "whyUz": "'favourite sport' oti bor → egalik sifati. Savolda 'he' → his." },
-            { "who": "4 A", "textEn": "Is Beth your sister?", "uz": "Bet sening singlingmi?", "given": true },
-            { "who": "4 B", "textEn": "No, ____ is my cousin.", "answer": "she", "hintUz": "Fe'ldan oldin; Bet — ayol", "whyUz": "Fe'l ('is') dan oldin → EGA shakli. Bet — ayol → she." },
-            { "who": "5 A", "textEn": "Is this Doug's book?", "uz": "Bu Dagning kitobimi?", "given": true },
-            { "who": "5 B", "textEn": "Yes, give it to ____ .", "answer": "him", "hintUz": "'to' predlogidan keyin; Dag — erkak", "whyUz": "'to' predlogidan keyin → OBYEKT shakli. Dag — erkak → him." },
-            { "who": "6 A", "textEn": "Is this Lisa's pencil?", "uz": "Bu Lizaning qalamimi?", "given": true },
-            { "who": "6 B", "textEn": "Yes, it's ____ .", "answer": "hers", "hintUz": "Keyin ot YO'Q; Liza — ayol", "whyUz": "Gap oxirida, ot yo'q → EGALIK OLMOSHI. Liza — ayol → hers." }
+            {
+              "who": "1 A",
+              "textEn": "Does she like tennis?",
+              "uz": "U tennisni yoqtiradimi?",
+              "given": true
+            },
+            {
+              "who": "1 B",
+              "textEn": "Yes, it's ____ favourite sport.",
+              "answer": "her",
+              "hintUz": "Keyin ot bor; savol AYOL haqida",
+              "whyUz": "'favourite sport' oti bor → EGALIK SIFATI. Savolda 'she' → her."
+            },
+            {
+              "who": "2 A",
+              "textEn": "Have you got a telephone number?",
+              "uz": "Telefon raqamingiz bormi?",
+              "given": true
+            },
+            {
+              "who": "2 B",
+              "textEn": "Yes, ____ number is 4241889.",
+              "answer": "my",
+              "hintUz": "Javob beruvchi o'z raqami haqida; keyin ot bor",
+              "whyUz": "'number' oti bor → egalik sifati. Javob beruvchi o'zi haqida → my."
+            },
+            {
+              "who": "3 A",
+              "textEn": "Does he like football?",
+              "uz": "U futbolni yoqtiradimi?",
+              "given": true
+            },
+            {
+              "who": "3 B",
+              "textEn": "Yes, it's ____ favourite sport.",
+              "answer": "his",
+              "hintUz": "Keyin ot bor; savol ERKAK haqida",
+              "whyUz": "'favourite sport' oti bor → egalik sifati. Savolda 'he' → his."
+            },
+            {
+              "who": "4 A",
+              "textEn": "Is Beth your sister?",
+              "uz": "Bet sening singlingmi?",
+              "given": true
+            },
+            {
+              "who": "4 B",
+              "textEn": "No, ____ is my cousin.",
+              "answer": "she",
+              "hintUz": "Fe'ldan oldin; Bet — ayol",
+              "whyUz": "Fe'l ('is') dan oldin → EGA shakli. Bet — ayol → she."
+            },
+            {
+              "who": "5 A",
+              "textEn": "Is this Doug's book?",
+              "uz": "Bu Dagning kitobimi?",
+              "given": true
+            },
+            {
+              "who": "5 B",
+              "textEn": "Yes, give it to ____ .",
+              "answer": "him",
+              "hintUz": "'to' predlogidan keyin; Dag — erkak",
+              "whyUz": "'to' predlogidan keyin → OBYEKT shakli. Dag — erkak → him."
+            },
+            {
+              "who": "6 A",
+              "textEn": "Is this Lisa's pencil?",
+              "uz": "Bu Lizaning qalamimi?",
+              "given": true
+            },
+            {
+              "who": "6 B",
+              "textEn": "Yes, it's ____ .",
+              "answer": "hers",
+              "hintUz": "Keyin ot YO'Q; Liza — ayol",
+              "whyUz": "Gap oxirida, ot yo'q → EGALIK OLMOSHI. Liza — ayol → hers."
+            }
           ]
         },
         {
@@ -45,11 +112,56 @@
           "explanationUz": "QARATQICH KELISHIGI — apostrof qayerga qo'yiladi?\n\n  BIRLIK ot           → 's   (my son's car)\n  KO'PLIK ot (-s bilan) → s'   (the girls' bags)\n  Ikki egasi          → 's faqat OXIRGISIGA\n\nQANDAY BILISH: gapdagi BOSHQA so'zlarga qarang —\nfe'l va son bir yoki ko'pligini ko'rsatadi:\n  'My son's car IS red'    — bitta mashina, bitta o'g'il\n  'These ARE the girls' bags' — ko'p qiz, ko'p sumka",
           "bookRef": "Coursebook, 33-bet, 7-mashq",
           "items": [
-            { "textEn": "1  My ____ car is red.", "uz": "Bitta o'g'ilning mashinasi", "options": ["son's", "sons'"], "answer": "son's", "whyUz": "'car IS red' — bitta mashina, bitta o'g'il → BIRLIK → 's." },
-            { "textEn": "2  Tina is ____ aunt.", "uz": "Lyusi va Billning ammasi", "options": ["Lucy and Bill's", "Lucy's and Bill's"], "answer": "Lucy and Bill's", "whyUz": "Bitta amma, ikki jiyan → 's faqat OXIRGI ismga." },
-            { "textEn": "3  These are the ____ bags.", "uz": "Bir nechta qizning sumkalari", "options": ["girls'", "girl's"], "answer": "girls'", "whyUz": "'These ARE ... bagS' — ko'p sumka, ko'p qiz → KO'PLIK → s'." },
-            { "textEn": "4  Their ____ name is Kate.", "uz": "Bitta qizning ismi", "options": ["daughter's", "daughters'"], "answer": "daughter's", "whyUz": "'name IS Kate' — BITTA ism, bitta qiz → 's." },
-            { "textEn": "5  Our ____ study is in the attic.", "uz": "Bitta otaning ish xonasi", "options": ["father's", "fathers'"], "answer": "father's", "whyUz": "Har kimning bitta otasi bor va 'study IS' — birlik → 's." }
+            {
+              "textEn": "1  My ____ car is red.",
+              "uz": "Bitta o'g'ilning mashinasi",
+              "options": [
+                "son's",
+                "sons'"
+              ],
+              "answer": "son's",
+              "whyUz": "'car IS red' — bitta mashina, bitta o'g'il → BIRLIK → 's."
+            },
+            {
+              "textEn": "2  Tina is ____ aunt.",
+              "uz": "Lyusi va Billning ammasi",
+              "options": [
+                "Lucy and Bill's",
+                "Lucy's and Bill's"
+              ],
+              "answer": "Lucy and Bill's",
+              "whyUz": "Bitta amma, ikki jiyan → 's faqat OXIRGI ismga."
+            },
+            {
+              "textEn": "3  These are the ____ bags.",
+              "uz": "Bir nechta qizning sumkalari",
+              "options": [
+                "girls'",
+                "girl's"
+              ],
+              "answer": "girls'",
+              "whyUz": "'These ARE ... bagS' — ko'p sumka, ko'p qiz → KO'PLIK → s'."
+            },
+            {
+              "textEn": "4  Their ____ name is Kate.",
+              "uz": "Bitta qizning ismi",
+              "options": [
+                "daughter's",
+                "daughters'"
+              ],
+              "answer": "daughter's",
+              "whyUz": "'name IS Kate' — BITTA ism, bitta qiz → 's."
+            },
+            {
+              "textEn": "5  Our ____ study is in the attic.",
+              "uz": "Bitta otaning ish xonasi",
+              "options": [
+                "father's",
+                "fathers'"
+              ],
+              "answer": "father's",
+              "whyUz": "Har kimning bitta otasi bor va 'study IS' — birlik → 's."
+            }
           ]
         }
       ]
@@ -67,13 +179,41 @@
           "explanationUz": "Yetti shaxsiy savol va ularning javoblari.\n\nJAVOB SHAKLIDAN SAVOLNI TOPING:\n  raqam (yosh)      → How old are you?\n  Yes/No            → Are you from London?\n  kasb              → What's your job?\n  ism va familiya   → What's your name?\n  harflar           → Can you spell it, please?\n  uy manzili        → What's your home address?\n  telefon raqami    → What's your phone number?\n\nDIQQAT — ikki xil raqam:\n  'I'm 28 years old'  — YOSH\n  '8695980'           — TELEFON (raqamma-raqam o'qiladi)",
           "bookRef": "Coursebook, 33-bet, 8-mashq",
           "pairs": [
-            { "left": "1  How old are you?", "right": "c  I'm 28 years old.", "note": "Kitobdagi namuna. Yosh 'be' bilan aytiladi." },
-            { "left": "2  Are you from London?", "right": "f  No, I'm not. I'm from Manchester.", "note": "Ha/yo'q savoli → qisqa javob + to'g'rilash." },
-            { "left": "3  What's your job?", "right": "g  I'm a waiter.", "note": "Kasb oldida 'a' shart." },
-            { "left": "4  What's your name?", "right": "a  Peter Jones.", "note": "To'liq ism: ism + familiya." },
-            { "left": "5  Can you spell it, please?", "right": "b  Yes, of course. P-E-T-E-R ... J-O-N-E-S", "note": "Harflab aytish. 'of course' = albatta." },
-            { "left": "6  What's your home address?", "right": "d  21, Green Street.", "note": "Manzil: uy raqami, ko'cha." },
-            { "left": "7  What's your phone number?", "right": "e  8695980.", "note": "Telefon raqamma-raqam o'qiladi: eight six nine five nine eight oh." }
+            {
+              "left": "1  How old are you?",
+              "right": "c  I'm 28 years old.",
+              "note": "Kitobdagi namuna. Yosh 'be' bilan aytiladi."
+            },
+            {
+              "left": "2  Are you from London?",
+              "right": "f  No, I'm not. I'm from Manchester.",
+              "note": "Ha/yo'q savoli → qisqa javob + to'g'rilash."
+            },
+            {
+              "left": "3  What's your job?",
+              "right": "g  I'm a waiter.",
+              "note": "Kasb oldida 'a' shart."
+            },
+            {
+              "left": "4  What's your name?",
+              "right": "a  Peter Jones.",
+              "note": "To'liq ism: ism + familiya."
+            },
+            {
+              "left": "5  Can you spell it, please?",
+              "right": "b  Yes, of course. P-E-T-E-R ... J-O-N-E-S",
+              "note": "Harflab aytish. 'of course' = albatta."
+            },
+            {
+              "left": "6  What's your home address?",
+              "right": "d  21, Green Street.",
+              "note": "Manzil: uy raqami, ko'cha."
+            },
+            {
+              "left": "7  What's your phone number?",
+              "right": "e  8695980.",
+              "note": "Telefon raqamma-raqam o'qiladi: eight six nine five nine eight oh."
+            }
           ]
         }
       ]
@@ -91,22 +231,86 @@
           "explanationUz": "TONI VILSONNING XATI — 26-betdagi Toni Filipsning xatiga\no'xshash, lekin oila a'zolari batafsilroq tasvirlangan.\n\nHar bir odam uchun ikki xil ma'lumot:\n  APPEARANCE — tashqi ko'rinishi\n  CHARACTER  — xarakteri\n\nBu — 9-mashqdagi 10 ta savolga javob berish uchun kerak.",
           "bookRef": "Coursebook, 33-bet, 9-mashq (xat)",
           "sentences": [
-            { "en": "Dear Jane,", "uz": "Hurmatli Jeyn,", "noteUz": "Do'stona xat boshi." },
-            { "en": "My name is Tony Wilson. I am thirteen years old and I live in Liverpool in England.", "uz": "Mening ismim Toni Vilson. Men o'n uch yoshdaman va Angliyadagi Liverpulda yashayman.", "noteUz": "Liverpul — Angliyaning shimoli-g'arbidagi shahar, Beatles guruhi vatani." },
-            { "en": "There are five of us in our family.", "uz": "Oilamizda besh kishimiz.", "noteUz": "Ota, ona, Toni, Martin, Karen = 5." },
-            { "en": "My father, John, is an artist.", "uz": "Otam Jon — rassom.", "noteUz": "'an artist' — unli tovush → an." },
-            { "en": "He's a very clever person and he's very kind.", "uz": "U juda aqlli odam va juda mehribon.", "noteUz": "XARAKTER: clever, kind." },
-            { "en": "My mother, Elaine, is very beautiful.", "uz": "Onam Eleyn juda go'zal.", "noteUz": "KO'RINISH: beautiful." },
-            { "en": "She is tall and slim with long straight fair hair and blue eyes.", "uz": "U baland bo'yli va nozik, sochi uzun, tekis va sariq, ko'zlari ko'k.", "noteUz": "KO'RINISH. Uch sifat soch uchun: long + straight + fair." },
-            { "en": "She's a very patient woman.", "uz": "U juda sabrli ayol.", "noteUz": "XARAKTER: patient." },
-            { "en": "My brother, Martin, is sixteen years old.", "uz": "Akam Martin o'n olti yoshda.", "noteUz": "" },
-            { "en": "He is tall with brown hair and blue eyes.", "uz": "U baland bo'yli, sochi jigarrang, ko'zlari ko'k.", "noteUz": "KO'RINISH." },
-            { "en": "He's quite lazy.", "uz": "U ancha dangasa.", "noteUz": "XARAKTER: lazy. 'quite' = ancha — salbiy sifatni yumshatadi." },
-            { "en": "My sister, Karen, is fifteen years old.", "uz": "Opam Karen o'n besh yoshda.", "noteUz": "" },
-            { "en": "She's short with green eyes.", "uz": "U past bo'yli, ko'zlari yashil.", "noteUz": "KO'RINISH." },
-            { "en": "She is a bit bossy.", "uz": "U biroz buyruqboz.", "noteUz": "XARAKTER: bossy. 'a bit' = biroz — muloyimlik uchun." },
-            { "en": "Well, that's all about me. Please write soon and tell me about your family.", "uz": "Xo'sh, men haqimda shuncha. Iltimos, tezroq yozing va oilangiz haqida gapirib bering.", "noteUz": "Standart yakun. Ikki buyruq: write, tell." },
-            { "en": "Best wishes, Tony", "uz": "Ezgu tilaklar bilan, Toni", "noteUz": "Do'stona xat oxiri." }
+            {
+              "en": "Dear Jane,",
+              "uz": "Hurmatli Jeyn,",
+              "noteUz": "Do'stona xat boshi."
+            },
+            {
+              "en": "My name is Tony Wilson. I am thirteen years old and I live in Liverpool in England.",
+              "uz": "Mening ismim Toni Vilson. Men o'n uch yoshdaman va Angliyadagi Liverpulda yashayman.",
+              "noteUz": "Liverpul — Angliyaning shimoli-g'arbidagi shahar, Beatles guruhi vatani."
+            },
+            {
+              "en": "There are five of us in our family.",
+              "uz": "Oilamizda besh kishimiz.",
+              "noteUz": "Ota, ona, Toni, Martin, Karen = 5."
+            },
+            {
+              "en": "My father, John, is an artist.",
+              "uz": "Otam Jon — rassom.",
+              "noteUz": "'an artist' — unli tovush → an."
+            },
+            {
+              "en": "He's a very clever person and he's very kind.",
+              "uz": "U juda aqlli odam va juda mehribon.",
+              "noteUz": "XARAKTER: clever, kind."
+            },
+            {
+              "en": "My mother, Elaine, is very beautiful.",
+              "uz": "Onam Eleyn juda go'zal.",
+              "noteUz": "KO'RINISH: beautiful."
+            },
+            {
+              "en": "She is tall and slim with long straight fair hair and blue eyes.",
+              "uz": "U baland bo'yli va nozik, sochi uzun, tekis va sariq, ko'zlari ko'k.",
+              "noteUz": "KO'RINISH. Uch sifat soch uchun: long + straight + fair."
+            },
+            {
+              "en": "She's a very patient woman.",
+              "uz": "U juda sabrli ayol.",
+              "noteUz": "XARAKTER: patient."
+            },
+            {
+              "en": "My brother, Martin, is sixteen years old.",
+              "uz": "Akam Martin o'n olti yoshda.",
+              "noteUz": ""
+            },
+            {
+              "en": "He is tall with brown hair and blue eyes.",
+              "uz": "U baland bo'yli, sochi jigarrang, ko'zlari ko'k.",
+              "noteUz": "KO'RINISH."
+            },
+            {
+              "en": "He's quite lazy.",
+              "uz": "U ancha dangasa.",
+              "noteUz": "XARAKTER: lazy. 'quite' = ancha — salbiy sifatni yumshatadi."
+            },
+            {
+              "en": "My sister, Karen, is fifteen years old.",
+              "uz": "Opam Karen o'n besh yoshda.",
+              "noteUz": ""
+            },
+            {
+              "en": "She's short with green eyes.",
+              "uz": "U past bo'yli, ko'zlari yashil.",
+              "noteUz": "KO'RINISH."
+            },
+            {
+              "en": "She is a bit bossy.",
+              "uz": "U biroz buyruqboz.",
+              "noteUz": "XARAKTER: bossy. 'a bit' = biroz — muloyimlik uchun."
+            },
+            {
+              "en": "Well, that's all about me. Please write soon and tell me about your family.",
+              "uz": "Xo'sh, men haqimda shuncha. Iltimos, tezroq yozing va oilangiz haqida gapirib bering.",
+              "noteUz": "Standart yakun. Ikki buyruq: write, tell."
+            },
+            {
+              "en": "Best wishes, Tony",
+              "uz": "Ezgu tilaklar bilan, Toni",
+              "noteUz": "Do'stona xat oxiri."
+            }
           ]
         },
         {
@@ -117,16 +321,56 @@
           "explanationUz": "O'N SAVOL — har biri 1 ball.\n\nIKKI XIL SAVOLNI ADASHTIRMANG:\n  'What does X look like?'      → TASHQI KO'RINISH\n  'Can you describe X's character?' → XARAKTER\n\nJavobni xatdan to'g'ridan-to'g'ri oling, lekin\nOLMOSHNI o'zgartiring: 'I' → 'he', 'my mother' → 'his mother'.",
           "bookRef": "Coursebook, 33-bet, 9-mashq",
           "items": [
-            { "textEn": "1  How old is Tony?", "answer": "He is thirteen years old.", "whyUz": "Xatda: 'I am thirteen years old' → 'He is ...'." },
-            { "textEn": "2  Where does he live?", "answer": "He lives in Liverpool, in England.", "whyUz": "Xatda: 'I live in Liverpool in England'. 'lives' — 3-shaxs -s." },
-            { "textEn": "3  What is his father's job?", "answer": "He is an artist.", "whyUz": "Xatda: 'My father, John, is an artist'." },
-            { "textEn": "4  Can you describe his father's character?", "answer": "He is very clever and very kind.", "whyUz": "XARAKTER sifatlari: clever, kind." },
-            { "textEn": "5  What does his mother look like?", "answer": "She is tall and slim with long straight fair hair and blue eyes. She is very beautiful.", "whyUz": "TASHQI KO'RINISH — 'look like' savoli." },
-            { "textEn": "6  Can you describe her character?", "answer": "She is a very patient woman.", "whyUz": "XARAKTER sifati: patient." },
-            { "textEn": "7  What does Martin look like?", "answer": "He is tall with brown hair and blue eyes.", "whyUz": "TASHQI KO'RINISH." },
-            { "textEn": "8  Can you describe Martin's character?", "answer": "He is quite lazy.", "whyUz": "XARAKTER: lazy. 'quite' saqlanadi." },
-            { "textEn": "9  What does Karen look like?", "answer": "She is short with green eyes.", "whyUz": "TASHQI KO'RINISH." },
-            { "textEn": "10  Can you describe Karen's character?", "answer": "She is a bit bossy.", "whyUz": "XARAKTER: bossy. 'a bit' saqlanadi." }
+            {
+              "textEn": "1  How old is Tony?",
+              "answer": "He is thirteen years old.",
+              "whyUz": "Xatda: 'I am thirteen years old' → 'He is ...'."
+            },
+            {
+              "textEn": "2  Where does he live?",
+              "answer": "He lives in Liverpool, in England.",
+              "whyUz": "Xatda: 'I live in Liverpool in England'. 'lives' — 3-shaxs -s."
+            },
+            {
+              "textEn": "3  What is his father's job?",
+              "answer": "He is an artist.",
+              "whyUz": "Xatda: 'My father, John, is an artist'."
+            },
+            {
+              "textEn": "4  Can you describe his father's character?",
+              "answer": "He is very clever and very kind.",
+              "whyUz": "XARAKTER sifatlari: clever, kind."
+            },
+            {
+              "textEn": "5  What does his mother look like?",
+              "answer": "She is tall and slim with long straight fair hair and blue eyes. She is very beautiful.",
+              "whyUz": "TASHQI KO'RINISH — 'look like' savoli."
+            },
+            {
+              "textEn": "6  Can you describe her character?",
+              "answer": "She is a very patient woman.",
+              "whyUz": "XARAKTER sifati: patient."
+            },
+            {
+              "textEn": "7  What does Martin look like?",
+              "answer": "He is tall with brown hair and blue eyes.",
+              "whyUz": "TASHQI KO'RINISH."
+            },
+            {
+              "textEn": "8  Can you describe Martin's character?",
+              "answer": "He is quite lazy.",
+              "whyUz": "XARAKTER: lazy. 'quite' saqlanadi."
+            },
+            {
+              "textEn": "9  What does Karen look like?",
+              "answer": "She is short with green eyes.",
+              "whyUz": "TASHQI KO'RINISH."
+            },
+            {
+              "textEn": "10  Can you describe Karen's character?",
+              "answer": "She is a bit bossy.",
+              "whyUz": "XARAKTER: bossy. 'a bit' saqlanadi."
+            }
           ]
         }
       ]
@@ -144,14 +388,103 @@
           "explanationUz": "Har bir qatorda TO'RT so'z bor. Uchtasi bir guruhga tegishli,\nBITTASI esa boshqa guruhdan — o'shani toping.\n\nO'ng tomonda o'sha guruh nomi yozilgan (man, hair, eyes...).\nSavol: qaysi so'z shu ot bilan ISHLATILMAYDI?\n\nNAMUNA (kitobda aylantirilgan):\n  1  tall, short, OLD, well-built — man\n  'tall, short, well-built' — GAVDA tavsifi.\n  'old' — YOSH tavsifi. Demak ortiqcha so'z: old.",
           "bookRef": "Coursebook, 33-bet, 10-mashq",
           "items": [
-            { "textEn": "1  tall, short, old, well-built — man", "uz": "Qaysi so'z gavdani tasvirlamaydi?", "options": ["old", "tall", "short", "well-built"], "answer": "old", "given": true, "whyUz": "Kitobda aylantirilgan namuna. tall/short/well-built — GAVDA, 'old' — YOSH." },
-            { "textEn": "2  young, dark, middle-aged, old — woman", "uz": "Qaysi so'z yoshni bildirmaydi?", "options": ["dark", "young", "middle-aged", "old"], "answer": "dark", "whyUz": "young/middle-aged/old — YOSH. 'dark' — soch yoki teri RANGI." },
-            { "textEn": "3  brown, grey, pale, wavy — hair", "uz": "Qaysi so'z soch rangi emas?", "options": ["wavy", "brown", "grey", "pale"], "answer": "wavy", "whyUz": "brown/grey/pale — RANG. 'wavy' — soch SHAKLI (to'lqinsimon)." },
-            { "textEn": "4  wavy, curly, slanting, straight — hair", "uz": "Qaysi so'z soch shakli emas?", "options": ["slanting", "wavy", "curly", "straight"], "answer": "slanting", "whyUz": "wavy/curly/straight — soch SHAKLI. 'slanting' — faqat KO'Z uchun (qiyiq ko'z)." },
-            { "textEn": "5  slanting, blue, brown, slim — eyes", "uz": "Qaysi so'z ko'zni tasvirlamaydi?", "options": ["slim", "slanting", "blue", "brown"], "answer": "slim", "whyUz": "slanting/blue/brown — KO'Z tavsifi. 'slim' — GAVDA (nozik)." },
-            { "textEn": "6  pale, dark, wide, light — complexion", "uz": "Qaysi so'z teri rangi emas?", "options": ["wide", "pale", "dark", "light"], "answer": "wide", "whyUz": "pale/dark/light — TERI rangi. 'wide' — kenglik (masalan 'wide eyes')." },
-            { "textEn": "7  patient, beautiful, pretty, gorgeous — girl", "uz": "Qaysi so'z tashqi ko'rinish emas?", "options": ["patient", "beautiful", "pretty", "gorgeous"], "answer": "patient", "whyUz": "beautiful/pretty/gorgeous — KO'RINISH. 'patient' — XARAKTER (sabrli)." },
-            { "textEn": "8  lazy, kind, bossy, rude, curly — woman", "uz": "Qaysi so'z xarakter emas?", "options": ["curly", "lazy", "kind", "bossy"], "answer": "curly", "whyUz": "lazy/kind/bossy/rude — XARAKTER. 'curly' — SOCH shakli." }
+            {
+              "textEn": "1  tall, short, old, well-built — man",
+              "uz": "Qaysi so'z gavdani tasvirlamaydi?",
+              "options": [
+                "old",
+                "tall",
+                "short",
+                "well-built"
+              ],
+              "answer": "old",
+              "given": true,
+              "whyUz": "Kitobda aylantirilgan namuna. tall/short/well-built — GAVDA, 'old' — YOSH."
+            },
+            {
+              "textEn": "2  young, dark, middle-aged, old — woman",
+              "uz": "Qaysi so'z yoshni bildirmaydi?",
+              "options": [
+                "dark",
+                "young",
+                "middle-aged",
+                "old"
+              ],
+              "answer": "dark",
+              "whyUz": "young/middle-aged/old — YOSH. 'dark' — soch yoki teri RANGI."
+            },
+            {
+              "textEn": "3  brown, grey, pale, wavy — hair",
+              "uz": "Qaysi so'z soch rangi emas?",
+              "options": [
+                "wavy",
+                "brown",
+                "grey",
+                "pale"
+              ],
+              "answer": "wavy",
+              "whyUz": "brown/grey/pale — RANG. 'wavy' — soch SHAKLI (to'lqinsimon)."
+            },
+            {
+              "textEn": "4  wavy, curly, slanting, straight — hair",
+              "uz": "Qaysi so'z soch shakli emas?",
+              "options": [
+                "slanting",
+                "wavy",
+                "curly",
+                "straight"
+              ],
+              "answer": "slanting",
+              "whyUz": "wavy/curly/straight — soch SHAKLI. 'slanting' — faqat KO'Z uchun (qiyiq ko'z)."
+            },
+            {
+              "textEn": "5  slanting, blue, brown, slim — eyes",
+              "uz": "Qaysi so'z ko'zni tasvirlamaydi?",
+              "options": [
+                "slim",
+                "slanting",
+                "blue",
+                "brown"
+              ],
+              "answer": "slim",
+              "whyUz": "slanting/blue/brown — KO'Z tavsifi. 'slim' — GAVDA (nozik)."
+            },
+            {
+              "textEn": "6  pale, dark, wide, light — complexion",
+              "uz": "Qaysi so'z teri rangi emas?",
+              "options": [
+                "wide",
+                "pale",
+                "dark",
+                "light"
+              ],
+              "answer": "wide",
+              "whyUz": "pale/dark/light — TERI rangi. 'wide' — kenglik (masalan 'wide eyes')."
+            },
+            {
+              "textEn": "7  patient, beautiful, pretty, gorgeous — girl",
+              "uz": "Qaysi so'z tashqi ko'rinish emas?",
+              "options": [
+                "patient",
+                "beautiful",
+                "pretty",
+                "gorgeous"
+              ],
+              "answer": "patient",
+              "whyUz": "beautiful/pretty/gorgeous — KO'RINISH. 'patient' — XARAKTER (sabrli)."
+            },
+            {
+              "textEn": "8  lazy, kind, bossy, rude, curly — woman",
+              "uz": "Qaysi so'z xarakter emas?",
+              "options": [
+                "curly",
+                "lazy",
+                "kind",
+                "bossy"
+              ],
+              "answer": "curly",
+              "whyUz": "lazy/kind/bossy/rude — XARAKTER. 'curly' — SOCH shakli."
+            }
           ]
         },
         {
@@ -162,15 +495,45 @@
           "explanationUz": "ENG KO'P BALL BERADIGAN MASHQ — 18 ball.\n\nTUZILISHI (9-mashqdagi xat kabi):\n  1) Kim ekanini ayting: This is my ... His/Her name is ...\n  2) Yoshi: He/She is ... years old.\n  3) TASHQI KO'RINISH: bo'y, gavda, soch, ko'z\n  4) XARAKTER: 2–3 ta sifat\n  5) Fikringiz: I like him/her because ...\n\nKERAKLI SO'ZLAR (9 va 10-mashqlardan):\n  GAVDA:   tall, short, slim, well-built\n  YOSH:    young, middle-aged, old\n  SOCH:    long/short, straight/wavy/curly, fair/dark/brown/grey\n  KO'Z:    blue, green, brown, slanting\n  TERI:    pale, dark, light complexion\n  KO'RINISH: beautiful, pretty, gorgeous, good-looking, handsome\n  XARAKTER: kind, patient, clever, friendly, generous,\n            lazy, bossy, rude, aggressive\n\nBALL OSHIRISH USULLARI:\n  • 'quite' va 'a bit' bilan yumshating\n  • 'because' bilan sabab ayting\n  • ijobiy va salbiy sifatni 'but' bilan bog'lang",
           "bookRef": "Coursebook, 33-bet, 11-mashq",
           "structure": [
-            { "headingUz": "1) Kim ekani va ismi", "modelEn": "This is my sister. Her name is Malika." },
-            { "headingUz": "2) Yoshi", "modelEn": "She is fifteen years old." },
-            { "headingUz": "3) Bo'y va gavda", "modelEn": "She is quite tall and slim." },
-            { "headingUz": "4) Soch", "modelEn": "She has got long straight dark hair.", "noteUz": "Tartib: uzunlik → shakl → rang." },
-            { "headingUz": "5) Ko'z va teri", "modelEn": "She has got brown eyes and a light complexion." },
-            { "headingUz": "6) Umumiy ko'rinish", "modelEn": "She is very pretty." },
-            { "headingUz": "7) Xarakter — ijobiy", "modelEn": "She is kind, clever and very friendly." },
-            { "headingUz": "8) Xarakter — salbiy (yumshatilgan)", "modelEn": "She is a bit bossy, though.", "noteUz": "'a bit' va 'though' muloyim qiladi." },
-            { "headingUz": "9) Fikringiz va sabab", "modelEn": "I like her a lot because she always helps me.", "noteUz": "'because' bilan sabab — ball oshiradi." }
+            {
+              "headingUz": "1) Kim ekani va ismi",
+              "modelEn": "This is my sister. Her name is Malika."
+            },
+            {
+              "headingUz": "2) Yoshi",
+              "modelEn": "She is fifteen years old."
+            },
+            {
+              "headingUz": "3) Bo'y va gavda",
+              "modelEn": "She is quite tall and slim."
+            },
+            {
+              "headingUz": "4) Soch",
+              "modelEn": "She has got long straight dark hair.",
+              "noteUz": "Tartib: uzunlik → shakl → rang."
+            },
+            {
+              "headingUz": "5) Ko'z va teri",
+              "modelEn": "She has got brown eyes and a light complexion."
+            },
+            {
+              "headingUz": "6) Umumiy ko'rinish",
+              "modelEn": "She is very pretty."
+            },
+            {
+              "headingUz": "7) Xarakter — ijobiy",
+              "modelEn": "She is kind, clever and very friendly."
+            },
+            {
+              "headingUz": "8) Xarakter — salbiy (yumshatilgan)",
+              "modelEn": "She is a bit bossy, though.",
+              "noteUz": "'a bit' va 'though' muloyim qiladi."
+            },
+            {
+              "headingUz": "9) Fikringiz va sabab",
+              "modelEn": "I like her a lot because she always helps me.",
+              "noteUz": "'because' bilan sabab — ball oshiradi."
+            }
           ],
           "modelAnswers": [
             "This is my sister. Her name is Malika and she is fifteen years old.",
@@ -190,45 +553,135 @@
         "ruleUz": "GAVDA sifatlari",
         "explanationUz": "Odamning bo'yi va tanasi haqida. 'man/woman' bilan ishlatiladi.",
         "items": [
-          { "base": "tall", "baseUz": "baland bo'yli", "derived": "short", "derivedUz": "past bo'yli", "note": "aksi" },
-          { "base": "slim", "baseUz": "nozik", "derived": "fat", "derivedUz": "to'la", "note": "aksi" },
-          { "base": "well-built", "baseUz": "baquvvat", "derived": "thin", "derivedUz": "ozg'in", "note": "" }
+          {
+            "base": "tall",
+            "baseUz": "baland bo'yli",
+            "derived": "short",
+            "derivedUz": "past bo'yli",
+            "note": "aksi"
+          },
+          {
+            "base": "slim",
+            "baseUz": "nozik",
+            "derived": "fat",
+            "derivedUz": "to'la",
+            "note": "aksi"
+          },
+          {
+            "base": "well-built",
+            "baseUz": "baquvvat",
+            "derived": "thin",
+            "derivedUz": "ozg'in",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "YOSH sifatlari",
         "explanationUz": "Odamning yoshi haqida umumiy tavsif.",
         "items": [
-          { "base": "young", "baseUz": "yosh", "derived": "old", "derivedUz": "keksa", "note": "aksi" },
-          { "base": "middle-aged", "baseUz": "o'rta yoshli", "derived": "40–60 yosh", "derivedUz": "oraliq", "note": "middle + age + ed" },
-          { "base": "elderly", "baseUz": "keksa (muloyim)", "derived": "'old' dan muloyimroq", "derivedUz": "hurmat bilan", "note": "" }
+          {
+            "base": "young",
+            "baseUz": "yosh",
+            "derived": "old",
+            "derivedUz": "keksa",
+            "note": "aksi"
+          },
+          {
+            "base": "middle-aged",
+            "baseUz": "o'rta yoshli",
+            "derived": "40–60 yosh",
+            "derivedUz": "oraliq",
+            "note": "middle + age + ed"
+          },
+          {
+            "base": "elderly",
+            "baseUz": "keksa (muloyim)",
+            "derived": "'old' dan muloyimroq",
+            "derivedUz": "hurmat bilan",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "SOCH — uzunlik, shakl, rang",
         "explanationUz": "Uch xil xususiyat. Gapda TARTIBI: uzunlik → shakl → rang.",
         "items": [
-          { "base": "long / short", "baseUz": "uzun / kalta", "derived": "UZUNLIK", "derivedUz": "birinchi", "note": "long straight fair hair" },
-          { "base": "straight / wavy / curly", "baseUz": "tekis / to'lqinsimon / jingalak", "derived": "SHAKL", "derivedUz": "ikkinchi", "note": "" },
-          { "base": "fair / dark / brown / grey", "baseUz": "sariq / to'q / jigarrang / kulrang", "derived": "RANG", "derivedUz": "uchinchi", "note": "'yellow hair' DEYILMAYDI" }
+          {
+            "base": "long / short",
+            "baseUz": "uzun / kalta",
+            "derived": "UZUNLIK",
+            "derivedUz": "birinchi",
+            "note": "long straight fair hair"
+          },
+          {
+            "base": "straight / wavy / curly",
+            "baseUz": "tekis / to'lqinsimon / jingalak",
+            "derived": "SHAKL",
+            "derivedUz": "ikkinchi",
+            "note": ""
+          },
+          {
+            "base": "fair / dark / brown / grey",
+            "baseUz": "sariq / to'q / jigarrang / kulrang",
+            "derived": "RANG",
+            "derivedUz": "uchinchi",
+            "note": "'yellow hair' DEYILMAYDI"
+          }
         ]
       },
       {
         "ruleUz": "KO'Z va TERI",
         "explanationUz": "Ko'z rangi va shakli, teri rangi.",
         "items": [
-          { "base": "blue / green / brown", "baseUz": "ko'k / yashil / jigarrang", "derived": "ko'z RANGI", "derivedUz": "eyes bilan", "note": "" },
-          { "base": "slanting", "baseUz": "qiyiq", "derived": "ko'z SHAKLI", "derivedUz": "faqat eyes bilan", "note": "sochga ishlatilmaydi" },
-          { "base": "pale / light / dark", "baseUz": "oq / och / to'q", "derived": "TERI rangi", "derivedUz": "complexion bilan", "note": "" }
+          {
+            "base": "blue / green / brown",
+            "baseUz": "ko'k / yashil / jigarrang",
+            "derived": "ko'z RANGI",
+            "derivedUz": "eyes bilan",
+            "note": ""
+          },
+          {
+            "base": "slanting",
+            "baseUz": "qiyiq",
+            "derived": "ko'z SHAKLI",
+            "derivedUz": "faqat eyes bilan",
+            "note": "sochga ishlatilmaydi"
+          },
+          {
+            "base": "pale / light / dark",
+            "baseUz": "oq / och / to'q",
+            "derived": "TERI rangi",
+            "derivedUz": "complexion bilan",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Yumshatuvchi so'zlar",
         "explanationUz": "Salbiy sifatni muloyimroq qiladi — bu ingliz madaniyatida muhim.",
         "items": [
-          { "base": "lazy", "baseUz": "dangasa", "derived": "quite lazy", "derivedUz": "ancha dangasa", "note": "yumshoqroq" },
-          { "base": "bossy", "baseUz": "buyruqboz", "derived": "a bit bossy", "derivedUz": "biroz buyruqboz", "note": "eng yumshoq" },
-          { "base": "..., though", "baseUz": "esa", "derived": "She's a bit bossy, though.", "derivedUz": "gap oxirida", "note": "qarama-qarshi fikr" }
+          {
+            "base": "lazy",
+            "baseUz": "dangasa",
+            "derived": "quite lazy",
+            "derivedUz": "ancha dangasa",
+            "note": "yumshoqroq"
+          },
+          {
+            "base": "bossy",
+            "baseUz": "buyruqboz",
+            "derived": "a bit bossy",
+            "derivedUz": "biroz buyruqboz",
+            "note": "eng yumshoq"
+          },
+          {
+            "base": "..., though",
+            "baseUz": "esa",
+            "derived": "She's a bit bossy, though.",
+            "derivedUz": "gap oxirida",
+            "note": "qarama-qarshi fikr"
+          }
         ]
       }
     ]
@@ -282,34 +735,121 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "a favourite sport", "uz": "sevimli sport" },
-    { "en": "a waiter", "uz": "ofitsiant" },
-    { "en": "a home address", "uz": "uy manzili" },
-    { "en": "a phone number", "uz": "telefon raqami" },
-    { "en": "Liverpool", "uz": "Liverpul (Angliya)" },
-    { "en": "Manchester", "uz": "Manchester (Angliya)" },
-    { "en": "an artist", "uz": "rassom" },
-    { "en": "clever", "uz": "aqlli" },
-    { "en": "kind", "uz": "mehribon" },
-    { "en": "patient", "uz": "sabrli" },
-    { "en": "generous", "uz": "saxiy" },
-    { "en": "lazy", "uz": "dangasa" },
-    { "en": "bossy", "uz": "buyruqboz" },
-    { "en": "quite", "uz": "ancha" },
-    { "en": "a bit", "uz": "biroz" },
-    { "en": "though", "uz": "esa (gap oxirida)" },
-    { "en": "straight hair", "uz": "tekis soch" },
-    { "en": "wavy hair", "uz": "to'lqinsimon soch" },
-    { "en": "curly hair", "uz": "jingalak soch" },
-    { "en": "slanting eyes", "uz": "qiyiq ko'z" },
-    { "en": "a pale complexion", "uz": "oq teri" },
-    { "en": "a light complexion", "uz": "och teri" },
-    { "en": "well-built", "uz": "baquvvat" },
-    { "en": "middle-aged", "uz": "o'rta yoshli" },
-    { "en": "physical appearance", "uz": "tashqi ko'rinish" },
-    { "en": "character", "uz": "xarakter" },
-    { "en": "to describe", "uz": "tasvirlab bermoq" },
-    { "en": "the odd word", "uz": "ortiqcha so'z" },
-    { "en": "to circle", "uz": "aylantirmoq" }
+    {
+      "en": "a favourite sport",
+      "uz": "sevimli sport"
+    },
+    {
+      "en": "a waiter",
+      "uz": "ofitsiant"
+    },
+    {
+      "en": "a home address",
+      "uz": "uy manzili"
+    },
+    {
+      "en": "a phone number",
+      "uz": "telefon raqami"
+    },
+    {
+      "en": "Liverpool",
+      "uz": "Liverpul (Angliya)"
+    },
+    {
+      "en": "Manchester",
+      "uz": "Manchester (Angliya)"
+    },
+    {
+      "en": "an artist",
+      "uz": "rassom"
+    },
+    {
+      "en": "clever",
+      "uz": "aqlli"
+    },
+    {
+      "en": "kind",
+      "uz": "mehribon"
+    },
+    {
+      "en": "patient",
+      "uz": "sabrli"
+    },
+    {
+      "en": "generous",
+      "uz": "saxiy"
+    },
+    {
+      "en": "lazy",
+      "uz": "dangasa"
+    },
+    {
+      "en": "bossy",
+      "uz": "buyruqboz"
+    },
+    {
+      "en": "quite",
+      "uz": "ancha"
+    },
+    {
+      "en": "a bit",
+      "uz": "biroz"
+    },
+    {
+      "en": "though",
+      "uz": "esa (gap oxirida)"
+    },
+    {
+      "en": "straight hair",
+      "uz": "tekis soch"
+    },
+    {
+      "en": "wavy hair",
+      "uz": "to'lqinsimon soch"
+    },
+    {
+      "en": "curly hair",
+      "uz": "jingalak soch"
+    },
+    {
+      "en": "slanting eyes",
+      "uz": "qiyiq ko'z"
+    },
+    {
+      "en": "a pale complexion",
+      "uz": "oq teri"
+    },
+    {
+      "en": "a light complexion",
+      "uz": "och teri"
+    },
+    {
+      "en": "well-built",
+      "uz": "baquvvat"
+    },
+    {
+      "en": "middle-aged",
+      "uz": "o'rta yoshli"
+    },
+    {
+      "en": "physical appearance",
+      "uz": "tashqi ko'rinish"
+    },
+    {
+      "en": "character",
+      "uz": "xarakter"
+    },
+    {
+      "en": "to describe",
+      "uz": "tasvirlab bermoq"
+    },
+    {
+      "en": "the odd word",
+      "uz": "ortiqcha so'z"
+    },
+    {
+      "en": "to circle",
+      "uz": "aylantirmoq"
+    }
   ]
 }
