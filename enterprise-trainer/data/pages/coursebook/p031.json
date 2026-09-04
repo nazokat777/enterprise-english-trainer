@@ -5,6 +5,7 @@
   "unit": 4,
   "unitTitle": "Like Father, like Son",
   "module": 2,
+  "scanNote": "29-BET. Unit 4 — egalik olmoshlari va Present Simple.\n\nSkaner bilan tekshirildi. HAMMASI TO'G'RI: 14-mashq (7 olmosh), 15-mashq (4 juftlik), 16-mashq (9 tanlov), 17-mashq (jadval 14 + 2 qoida), 18-mashq (6+10 fe'l), 19-mashq (13 fe'l) — jami 65 ta javob.\n\n⚠ 14-MAShQ — EGALIK SIFATIDAN OLMOShGA: my→mine · your→yours · his→HIS · her→hers · its→(YO'Q) · our→ours · their→theirs.\n  ⚠ Kitob jadvalida 'its' qatoriga chiziqcha qo'ygan — 'its' ning olmosh shakli MAVJUD EMAS.\n  ⚠ 'his' — yagona so'z, ikkala shakl bir xil.\n\n⚠ 15-MAShQ — TO'RT ODAM, TO'RT NARSA (suratdan): Peter (kostyumda, chamadon bilan) → passport; Lyn (shlyapa va ko'zoynakda) → bag; Sam (bolakay, plyaj kiyimida) → ball; Tom (velosiped kaskasida) → bicycle.\n\n⚠ 16-MAShQ 2 va 5-BAND — APOSTROF QAYERDA:\n  'It's SHEILA'S' — ism + 's (egalik)\n  'TOM AND JULIE'S father' — ikki ism birga, apostrof faqat OXIRGISIGA\n  ⚠ Ikkinchisida 'Tom's and Julie's' XATO bo'lardi, chunki ota IKKALASINIKI.\n\n⚠ 18-MAShQ IMLOSI — TO'RT QOIDA:\n  '-ss, -sh, -ch, -x, -o' → -ES: finishes, watches, does, fixes, teaches, goes, washes\n  undosh + Y → -IES: studies, flies, tries\n  unli + Y → oddiy -S: plays, buys, enjoys\n  qolganlari → -S: works, loves, lives\n  ⚠ 'flies' va 'plays' juftligini solishtiring: 'fl' undosh + y → -ies; 'pla' unli + y → -s.\n\n⚠ 19-MAShQ — 4-BETDAGI MATNDAN: 13 ta fe'l shakli topiladi, ular ichida 'to be' (am, are, is) ham, oddiy fe'llar (live, works, love, like, go) ham, savol va inkor (Do, don't) ham bor.",
   "sections": [
     {
       "kind": "grammar_theory",
@@ -17,12 +18,20 @@
           {
             "uzRule": "Egalik SIFATI otdan OLDIN keladi.",
             "enRule": "Possessive adjectives come before a noun.",
-            "examples": ["It's my dog.", "This is her house.", "Their son is Dave."]
+            "examples": [
+              "It's my dog.",
+              "This is her house.",
+              "Their son is Dave."
+            ]
           },
           {
             "uzRule": "Egalik OLMOSHIDAN keyin ot QO'YILMAYDI.",
             "enRule": "Possessive pronouns don't take a noun after them.",
-            "examples": ["It's mine.", "It's hers.", "They're ours."]
+            "examples": [
+              "It's mine.",
+              "It's hers.",
+              "They're ours."
+            ]
           }
         ],
         "warningUz": "KITOBDAGI OGOHLANTIRISH:\n  ✅ It's my dog.   (sifat + ot)\n  ✅ It's mine.     (olmosh, otsiz)\n  ❌ It's mine book.  ← BU XATO!\n\nIkkalasini birga ishlatib bo'lmaydi.\n\nVa APOSTROF hech qachon qo'yilmaydi:\n  ✅ yours, hers, ours, theirs, its\n  ❌ your's, her's, our's, their's, it's",
@@ -38,13 +47,43 @@
           "explanationUz": "KITOBDAGI SXEMA:\n  This is MY / YOUR / HIS / HER / ITS / OUR / YOUR / THEIR house.\n  It's   MINE / ___ / HIS / ___ / — / ___ / ___ / THEIRS.\n\nBerilganlari: mine, his, theirs.\nTo'ldirish kerak: yours, hers, ours, yours.\n('its' uchun egalik olmoshi yo'q — shuning uchun chiziqcha.)",
           "bookRef": "Coursebook, 29-bet, 14-mashq",
           "items": [
-            { "textEn": "This is my house. → It's ____ .", "answer": "mine", "given": true, "whyUz": "Kitobda berilgan namuna. my → mine." },
-            { "textEn": "This is your house. → It's ____ .", "answer": "yours", "whyUz": "your → yours. Apostrof YO'Q." },
-            { "textEn": "This is his house. → It's ____ .", "answer": "his", "given": true, "whyUz": "Kitobda berilgan. 'his' o'zgarmaydi." },
-            { "textEn": "This is her house. → It's ____ .", "answer": "hers", "whyUz": "her → hers. Apostrof YO'Q." },
-            { "textEn": "This is our house. → It's ____ .", "answer": "ours", "whyUz": "our → ours." },
-            { "textEn": "This is your house (ko'plik). → It's ____ .", "answer": "yours", "whyUz": "Birlik ham, ko'plik ham 'yours'." },
-            { "textEn": "This is their house. → It's ____ .", "answer": "theirs", "whyUz": "Kitobda berilgan. their → theirs." }
+            {
+              "textEn": "This is my house. → It's ____ .",
+              "answer": "mine",
+              "given": true,
+              "whyUz": "Kitobda berilgan namuna. my → mine."
+            },
+            {
+              "textEn": "This is your house. → It's ____ .",
+              "answer": "yours",
+              "whyUz": "your → yours. Apostrof YO'Q."
+            },
+            {
+              "textEn": "This is his house. → It's ____ .",
+              "answer": "his",
+              "given": true,
+              "whyUz": "Kitobda berilgan. 'his' o'zgarmaydi."
+            },
+            {
+              "textEn": "This is her house. → It's ____ .",
+              "answer": "hers",
+              "whyUz": "her → hers. Apostrof YO'Q."
+            },
+            {
+              "textEn": "This is our house. → It's ____ .",
+              "answer": "ours",
+              "whyUz": "our → ours."
+            },
+            {
+              "textEn": "This is your house (ko'plik). → It's ____ .",
+              "answer": "yours",
+              "whyUz": "Birlik ham, ko'plik ham 'yours'."
+            },
+            {
+              "textEn": "This is their house. → It's ____ .",
+              "answer": "theirs",
+              "whyUz": "Kitobda berilgan. their → theirs."
+            }
           ]
         },
         {
@@ -55,10 +94,35 @@
           "explanationUz": "ODAMLAR:\n  Peter — kostyumdagi ishbilarmon, chamadon va portfel bilan\n  Lyn   — shlyapa va ko'zoynakdagi ayol, plyaj kiyimida\n  Sam   — chelakli va suzish ko'zoynagidagi kichkina bola\n  Tom   — velosiped dubulg'asidagi erkak\n\nBUYUMLAR: bicycle, passport, ball, bag\n\nMOSLASH MANTIG'I:\n  ishbilarmon sayohat qiladi → pasport\n  plyajga ketayotgan ayol    → sumka\n  plyajdagi bola             → to'p\n  dubulg'adagi erkak         → velosiped\n\nNAMUNA:\n  SA: Whose bag is this?\n  SB: I think it's Lyn's. Yes, it's hers.\n\nJavobda IKKI shakl ketma-ket ishlatiladi:\n  Lyn'S  — egalik shakli (ism bilan)\n  HERS   — egalik olmoshi (ismsiz)\n\n'I think' — 'menimcha' — taxminni yumshatadi.",
           "bookRef": "Coursebook, 29-bet, 15-mashq",
           "items": [
-            { "n": 1, "prompt": "bag (sumka)", "question": "Whose bag is this?", "answer": "I think it's Lyn's. Yes, it's hers.", "given": true, "whyUz": "Kitobdagi namuna. Lyn — ayol → hers." },
-            { "n": 2, "prompt": "passport (pasport)", "question": "Whose passport is this?", "answer": "I think it's Peter's. Yes, it's his.", "whyUz": "Piter — chamadonli ishbilarmon, sayohat qiladi. Erkak → his." },
-            { "n": 3, "prompt": "ball (to'p)", "question": "Whose ball is this?", "answer": "I think it's Sam's. Yes, it's his.", "whyUz": "Sem — plyajdagi bola. Erkak → his." },
-            { "n": 4, "prompt": "bicycle (velosiped)", "question": "Whose bicycle is this?", "answer": "I think it's Tom's. Yes, it's his.", "whyUz": "Tom — velosiped dubulg'asida. Erkak → his." }
+            {
+              "n": 1,
+              "prompt": "bag (sumka)",
+              "question": "Whose bag is this?",
+              "answer": "I think it's Lyn's. Yes, it's hers.",
+              "given": true,
+              "whyUz": "Kitobdagi namuna. Lyn — ayol → hers."
+            },
+            {
+              "n": 2,
+              "prompt": "passport (pasport)",
+              "question": "Whose passport is this?",
+              "answer": "I think it's Peter's. Yes, it's his.",
+              "whyUz": "Piter — chamadonli ishbilarmon, sayohat qiladi. Erkak → his."
+            },
+            {
+              "n": 3,
+              "prompt": "ball (to'p)",
+              "question": "Whose ball is this?",
+              "answer": "I think it's Sam's. Yes, it's his.",
+              "whyUz": "Sem — plyajdagi bola. Erkak → his."
+            },
+            {
+              "n": 4,
+              "prompt": "bicycle (velosiped)",
+              "question": "Whose bicycle is this?",
+              "answer": "I think it's Tom's. Yes, it's his.",
+              "whyUz": "Tom — velosiped dubulg'asida. Erkak → his."
+            }
           ]
         },
         {
@@ -69,15 +133,97 @@
           "explanationUz": "Har bir gapda IKKI tanlov bor — ikkalasini ham to'g'ri qiling.\n\nQAROR QOIDASI:\n  • Keyin OT kelsami? → egalik SIFATI (my, your, his, her, our, their)\n  • Ot YO'QMI?        → egalik OLMOSHI (mine, yours, his, hers, ours, theirs)\n  • Savol odam haqidami? → Who's\n  • Savol egasi haqidami (keyin ot kelsa)? → Whose",
           "bookRef": "Coursebook, 29-bet, 16-mashq",
           "items": [
-            { "textEn": "1  \"____ is Ann?\"", "uz": "Ann kim?", "options": ["Who's", "Whose"], "answer": "Who's", "given": true, "whyUz": "Kitobda tagiga chizilgan namuna. Javob 'She's my sister' — odamning kimligi." },
-            { "textEn": "1  \"She's ____ sister.\"", "uz": "U mening singlim", "options": ["my", "mine"], "answer": "my", "whyUz": "Keyin OT ('sister') keladi → egalik SIFATI 'my'. 'mine sister' XATO." },
-            { "textEn": "2  \"Is this bag ____ ?\"", "uz": "Bu sumka seningmi?", "options": ["yours", "your"], "answer": "yours", "whyUz": "Gap oxirida ot YO'Q → egalik OLMOSHI 'yours'." },
-            { "textEn": "2  \"No, it's ____ .\"", "uz": "Yo'q, u Sheilaniki", "options": ["Sheila's", "Sheila"], "answer": "Sheila's", "whyUz": "Egalikni ko'rsatish uchun 's shart." },
-            { "textEn": "3  \"____ dog is this?\"", "uz": "Bu it kimning?", "options": ["Whose", "Who"], "answer": "Whose", "whyUz": "Keyin OT ('dog') keladi va egasi so'ralyapti → Whose." },
-            { "textEn": "3  \"It's ____ .\"", "uz": "U ularniki", "options": ["theirs", "their"], "answer": "theirs", "whyUz": "Ot yo'q → egalik olmoshi 'theirs'." },
-            { "textEn": "4  \"Are those balls ____ ?\"", "uz": "Anavi to'plar seningmi?", "options": ["yours", "your"], "answer": "yours", "whyUz": "Ot yo'q → 'yours'." },
-            { "textEn": "4  \"Yes, they're ____ .\"", "uz": "Ha, ular bizniki", "options": ["ours", "our"], "answer": "ours", "whyUz": "Ot yo'q → 'ours'." },
-            { "textEn": "5  \"Who's he?\" \"____ father.\"", "uz": "U kim? — Tom va Juliyaning otasi", "options": ["Tom and Julie's", "Tom's and Julie's"], "answer": "Tom and Julie's", "whyUz": "Bitta ota, ikki farzand → 's faqat OXIRGI ismga. Ikkalasiga qo'ysangiz, ikkita alohida ota degani bo'ladi." }
+            {
+              "textEn": "1  \"____ is Ann?\"",
+              "uz": "Ann kim?",
+              "options": [
+                "Who's",
+                "Whose"
+              ],
+              "answer": "Who's",
+              "given": true,
+              "whyUz": "Kitobda tagiga chizilgan namuna. Javob 'She's my sister' — odamning kimligi."
+            },
+            {
+              "textEn": "1  \"She's ____ sister.\"",
+              "uz": "U mening singlim",
+              "options": [
+                "my",
+                "mine"
+              ],
+              "answer": "my",
+              "whyUz": "Keyin OT ('sister') keladi → egalik SIFATI 'my'. 'mine sister' XATO."
+            },
+            {
+              "textEn": "2  \"Is this bag ____ ?\"",
+              "uz": "Bu sumka seningmi?",
+              "options": [
+                "yours",
+                "your"
+              ],
+              "answer": "yours",
+              "whyUz": "Gap oxirida ot YO'Q → egalik OLMOSHI 'yours'."
+            },
+            {
+              "textEn": "2  \"No, it's ____ .\"",
+              "uz": "Yo'q, u Sheilaniki",
+              "options": [
+                "Sheila's",
+                "Sheila"
+              ],
+              "answer": "Sheila's",
+              "whyUz": "Egalikni ko'rsatish uchun 's shart."
+            },
+            {
+              "textEn": "3  \"____ dog is this?\"",
+              "uz": "Bu it kimning?",
+              "options": [
+                "Whose",
+                "Who"
+              ],
+              "answer": "Whose",
+              "whyUz": "Keyin OT ('dog') keladi va egasi so'ralyapti → Whose."
+            },
+            {
+              "textEn": "3  \"It's ____ .\"",
+              "uz": "U ularniki",
+              "options": [
+                "theirs",
+                "their"
+              ],
+              "answer": "theirs",
+              "whyUz": "Ot yo'q → egalik olmoshi 'theirs'."
+            },
+            {
+              "textEn": "4  \"Are those balls ____ ?\"",
+              "uz": "Anavi to'plar seningmi?",
+              "options": [
+                "yours",
+                "your"
+              ],
+              "answer": "yours",
+              "whyUz": "Ot yo'q → 'yours'."
+            },
+            {
+              "textEn": "4  \"Yes, they're ____ .\"",
+              "uz": "Ha, ular bizniki",
+              "options": [
+                "ours",
+                "our"
+              ],
+              "answer": "ours",
+              "whyUz": "Ot yo'q → 'ours'."
+            },
+            {
+              "textEn": "5  \"Who's he?\" \"____ father.\"",
+              "uz": "U kim? — Tom va Juliyaning otasi",
+              "options": [
+                "Tom and Julie's",
+                "Tom's and Julie's"
+              ],
+              "answer": "Tom and Julie's",
+              "whyUz": "Bitta ota, ikki farzand → 's faqat OXIRGI ismga. Ikkalasiga qo'ysangiz, ikkita alohida ota degani bo'ladi."
+            }
           ]
         }
       ]
@@ -93,17 +239,26 @@
           {
             "uzRule": "Ko'p fe'llar 3-shaxs birlikda -s oladi.",
             "enRule": "Most verbs take -s in the affirmative third person singular.",
-            "examples": ["I live - he lives", "I work - he works", "I love - he loves"]
+            "examples": [
+              "I live - he lives",
+              "I work - he works",
+              "I love - he loves"
+            ]
           },
           {
             "uzRule": "3-shaxs birlik INKORDA doesn't + fe'lning asos shakli.",
             "enRule": "We use doesn't + the base form of the verb to form the negative third person singular.",
-            "examples": ["he doesn't live"]
+            "examples": [
+              "he doesn't live"
+            ]
           },
           {
             "uzRule": "Qolgan barcha shaxslarda don't ishlatiladi.",
             "enRule": "In all other persons we use don't.",
-            "examples": ["I don't live", "they don't live"]
+            "examples": [
+              "I don't live",
+              "they don't live"
+            ]
           }
         ],
         "warningUz": "IMLO QOIDALARI (kitobdagi Spelling):\n\n  1) -ss, -sh, -ch, -x, -o bilan tugagan fe'llar → -ES\n     I finish → he finishES\n     I wash   → he washES\n     I go     → he goES\n     I watch  → he watchES\n     I fix    → he fixES\n\n  2) UNDOSH + y bilan tugasa → -y tushadi, -IES qo'shiladi\n     I study → he studIES\n     I fly   → he flIES\n     I try   → he trIES\n\n  3) LEKIN unli + y bo'lsa → oddiy -s\n     I play  → he playS\n     I enjoy → he enjoyS\n     I buy   → he buyS\n\n  Farqni ko'ring: studY (d + y = undosh+y) → studies\n                  plaY  (a + y = unli+y)   → plays",
@@ -122,14 +277,22 @@
             {
               "textEn": "Most verbs take ____ in the affirmative third person singular. (I live - he lives)",
               "uz": "3-shaxs birlik tasdiq gapda fe'lga nima qo'shiladi?",
-              "options": ["-s", "-ing", "-ed"],
+              "options": [
+                "-s",
+                "-ing",
+                "-ed"
+              ],
               "answer": "-s",
               "whyUz": "he/she/it bilan fe'l -s oladi: he liveS, he workS."
             },
             {
               "textEn": "We use doesn't ... In all other persons we use ____ . (he doesn't live - I don't live)",
               "uz": "Qolgan shaxslarda inkor uchun nima ishlatiladi?",
-              "options": ["don't", "doesn't", "isn't"],
+              "options": [
+                "don't",
+                "doesn't",
+                "isn't"
+              ],
               "answer": "don't",
               "whyUz": "I/you/we/they bilan DON'T. Faqat he/she/it bilan DOESN'T."
             }
@@ -143,20 +306,76 @@
           "explanationUz": "Butun jadvalni yozib chiqish — shaklni mahkam o'rnashtiradi.",
           "bookRef": "Coursebook, 29-bet, 17-mashq jadvali",
           "items": [
-            { "textEn": "I (tasdiq)", "answer": "I live", "whyUz": "-s YO'Q." },
-            { "textEn": "you (tasdiq)", "answer": "you live", "whyUz": "-s YO'Q." },
-            { "textEn": "he (tasdiq)", "answer": "he lives", "whyUz": "3-shaxs birlik → -s." },
-            { "textEn": "she (tasdiq)", "answer": "she lives", "whyUz": "3-shaxs birlik → -s." },
-            { "textEn": "it (tasdiq)", "answer": "it lives", "whyUz": "3-shaxs birlik → -s." },
-            { "textEn": "we (tasdiq)", "answer": "we live", "whyUz": "-s YO'Q." },
-            { "textEn": "they (tasdiq)", "answer": "they live", "whyUz": "-s YO'Q." },
-            { "textEn": "I (inkor)", "answer": "I don't live", "whyUz": "don't + asos shakl." },
-            { "textEn": "you (inkor)", "answer": "you don't live", "whyUz": "don't + asos shakl." },
-            { "textEn": "he (inkor)", "answer": "he doesn't live", "whyUz": "doesn't + asos shakl. 'lives' EMAS!" },
-            { "textEn": "she (inkor)", "answer": "she doesn't live", "whyUz": "doesn't + asos shakl." },
-            { "textEn": "it (inkor)", "answer": "it doesn't live", "whyUz": "doesn't + asos shakl." },
-            { "textEn": "we (inkor)", "answer": "we don't live", "whyUz": "don't + asos shakl." },
-            { "textEn": "they (inkor)", "answer": "they don't live", "whyUz": "don't + asos shakl." }
+            {
+              "textEn": "I (tasdiq)",
+              "answer": "I live",
+              "whyUz": "-s YO'Q."
+            },
+            {
+              "textEn": "you (tasdiq)",
+              "answer": "you live",
+              "whyUz": "-s YO'Q."
+            },
+            {
+              "textEn": "he (tasdiq)",
+              "answer": "he lives",
+              "whyUz": "3-shaxs birlik → -s."
+            },
+            {
+              "textEn": "she (tasdiq)",
+              "answer": "she lives",
+              "whyUz": "3-shaxs birlik → -s."
+            },
+            {
+              "textEn": "it (tasdiq)",
+              "answer": "it lives",
+              "whyUz": "3-shaxs birlik → -s."
+            },
+            {
+              "textEn": "we (tasdiq)",
+              "answer": "we live",
+              "whyUz": "-s YO'Q."
+            },
+            {
+              "textEn": "they (tasdiq)",
+              "answer": "they live",
+              "whyUz": "-s YO'Q."
+            },
+            {
+              "textEn": "I (inkor)",
+              "answer": "I don't live",
+              "whyUz": "don't + asos shakl."
+            },
+            {
+              "textEn": "you (inkor)",
+              "answer": "you don't live",
+              "whyUz": "don't + asos shakl."
+            },
+            {
+              "textEn": "he (inkor)",
+              "answer": "he doesn't live",
+              "whyUz": "doesn't + asos shakl. 'lives' EMAS!"
+            },
+            {
+              "textEn": "she (inkor)",
+              "answer": "she doesn't live",
+              "whyUz": "doesn't + asos shakl."
+            },
+            {
+              "textEn": "it (inkor)",
+              "answer": "it doesn't live",
+              "whyUz": "doesn't + asos shakl."
+            },
+            {
+              "textEn": "we (inkor)",
+              "answer": "we don't live",
+              "whyUz": "don't + asos shakl."
+            },
+            {
+              "textEn": "they (inkor)",
+              "answer": "they don't live",
+              "whyUz": "don't + asos shakl."
+            }
           ]
         },
         {
@@ -167,12 +386,36 @@
           "explanationUz": "Har bir fe'l uchun IMLO qoidasini tanlang:\n\n  oddiy -s     — ko'pchilik fe'llar\n  -es          — -ss, -sh, -ch, -x, -o bilan tugasa\n  -ies         — UNDOSH + y bilan tugasa (y tushadi)\n  oddiy -s     — UNLI + y bilan tugasa (y qoladi)",
           "bookRef": "Coursebook, 29-bet, 18-mashq",
           "items": [
-            { "textEn": "1  I go - he ____", "answer": "goes", "whyUz": "-o bilan tugaydi → -es. Talaffuzi /gəʊz/." },
-            { "textEn": "2  I work - he ____", "answer": "works", "whyUz": "Oddiy -s. Talaffuzi /s/ — 'k' dan keyin." },
-            { "textEn": "3  I love - he ____", "answer": "loves", "whyUz": "Oddiy -s. Talaffuzi /z/." },
-            { "textEn": "4  I wash - he ____", "answer": "washes", "whyUz": "-sh bilan tugaydi → -es. Talaffuzi /ɪz/: WO-shiz." },
-            { "textEn": "5  I fly - he ____", "answer": "flies", "whyUz": "UNDOSH (l) + y → y tushadi, -ies qo'shiladi." },
-            { "textEn": "6  I enjoy - he ____", "answer": "enjoys", "whyUz": "UNLI (o) + y → y QOLADI, oddiy -s. 'enjoies' XATO." }
+            {
+              "textEn": "1  I go - he ____",
+              "answer": "goes",
+              "whyUz": "-o bilan tugaydi → -es. Talaffuzi /gəʊz/."
+            },
+            {
+              "textEn": "2  I work - he ____",
+              "answer": "works",
+              "whyUz": "Oddiy -s. Talaffuzi /s/ — 'k' dan keyin."
+            },
+            {
+              "textEn": "3  I love - he ____",
+              "answer": "loves",
+              "whyUz": "Oddiy -s. Talaffuzi /z/."
+            },
+            {
+              "textEn": "4  I wash - he ____",
+              "answer": "washes",
+              "whyUz": "-sh bilan tugaydi → -es. Talaffuzi /ɪz/: WO-shiz."
+            },
+            {
+              "textEn": "5  I fly - he ____",
+              "answer": "flies",
+              "whyUz": "UNDOSH (l) + y → y tushadi, -ies qo'shiladi."
+            },
+            {
+              "textEn": "6  I enjoy - he ____",
+              "answer": "enjoys",
+              "whyUz": "UNLI (o) + y → y QOLADI, oddiy -s. 'enjoies' XATO."
+            }
           ]
         },
         {
@@ -183,16 +426,56 @@
           "explanationUz": "Uchala qoidani ham aralash mashq qilamiz.",
           "bookRef": "Coursebook, 29-bet, Spelling qoidasi",
           "items": [
-            { "textEn": "I finish - he ____", "answer": "finishes", "whyUz": "-sh → -es. Kitobdagi namuna." },
-            { "textEn": "I study - he ____", "answer": "studies", "whyUz": "UNDOSH (d) + y → -ies. Kitobdagi namuna." },
-            { "textEn": "I play - he ____", "answer": "plays", "whyUz": "UNLI (a) + y → oddiy -s. Kitobdagi namuna." },
-            { "textEn": "I watch - he ____", "answer": "watches", "whyUz": "-ch → -es." },
-            { "textEn": "I do - he ____", "answer": "does", "whyUz": "-o → -es. Talaffuzi /dʌz/ — 'daz'." },
-            { "textEn": "I try - he ____", "answer": "tries", "whyUz": "UNDOSH (r) + y → -ies." },
-            { "textEn": "I buy - he ____", "answer": "buys", "whyUz": "UNLI (u) + y → oddiy -s." },
-            { "textEn": "I fix - he ____", "answer": "fixes", "whyUz": "-x → -es." },
-            { "textEn": "I live - he ____", "answer": "lives", "whyUz": "Oddiy -s." },
-            { "textEn": "I teach - he ____", "answer": "teaches", "whyUz": "-ch → -es." }
+            {
+              "textEn": "I finish - he ____",
+              "answer": "finishes",
+              "whyUz": "-sh → -es. Kitobdagi namuna."
+            },
+            {
+              "textEn": "I study - he ____",
+              "answer": "studies",
+              "whyUz": "UNDOSH (d) + y → -ies. Kitobdagi namuna."
+            },
+            {
+              "textEn": "I play - he ____",
+              "answer": "plays",
+              "whyUz": "UNLI (a) + y → oddiy -s. Kitobdagi namuna."
+            },
+            {
+              "textEn": "I watch - he ____",
+              "answer": "watches",
+              "whyUz": "-ch → -es."
+            },
+            {
+              "textEn": "I do - he ____",
+              "answer": "does",
+              "whyUz": "-o → -es. Talaffuzi /dʌz/ — 'daz'."
+            },
+            {
+              "textEn": "I try - he ____",
+              "answer": "tries",
+              "whyUz": "UNDOSH (r) + y → -ies."
+            },
+            {
+              "textEn": "I buy - he ____",
+              "answer": "buys",
+              "whyUz": "UNLI (u) + y → oddiy -s."
+            },
+            {
+              "textEn": "I fix - he ____",
+              "answer": "fixes",
+              "whyUz": "-x → -es."
+            },
+            {
+              "textEn": "I live - he ____",
+              "answer": "lives",
+              "whyUz": "Oddiy -s."
+            },
+            {
+              "textEn": "I teach - he ____",
+              "answer": "teaches",
+              "whyUz": "-ch → -es."
+            }
           ]
         },
         {
@@ -203,19 +486,71 @@
           "explanationUz": "Tonining xati BUTUNLAY Present Simple da yozilgan —\nchunki u DOIMIY holatlar va KUNDALIK tartib haqida.\n\nHar bir fe'lni topganda ikki narsaga qarang:\n  1) egasi kim? (I / he / she / we)\n  2) -s bormi yoki yo'qmi?\n\nQoidani tekshiring: -s faqat he/she/it bilan bo'lishi kerak.",
           "bookRef": "Coursebook, 29-bet, 19-mashq (26-betdagi xat)",
           "items": [
-            { "textEn": "I ____ Tony Philips. (be)", "answer": "am", "whyUz": "'I'm Tony Philips' — 'I am' ning qisqasi. 'to be' fe'li." },
-            { "textEn": "I ____ in Montreal, Canada. (live)", "answer": "live", "whyUz": "'I' bilan -s YO'Q." },
-            { "textEn": "There ____ seven of us in our family. (be)", "answer": "are", "whyUz": "'seven' ko'plik → are." },
-            { "textEn": "My father ____ a surgeon. (be)", "answer": "is", "whyUz": "'father' — 3-shaxs birlik → is." },
-            { "textEn": "He ____ at the local hospital. (work)", "answer": "works", "whyUz": "'He' — 3-shaxs birlik → -s QO'SHILADI." },
-            { "textEn": "My mother ____ a teacher. (be)", "answer": "is", "whyUz": "3-shaxs birlik → is." },
-            { "textEn": "We ____ in a big house. (live)", "answer": "live", "whyUz": "'We' bilan -s YO'Q." },
-            { "textEn": "I ____ playing computer games. (love)", "answer": "love", "whyUz": "'I' bilan -s yo'q. Keyin fe'l -ING oladi." },
-            { "textEn": "My favourite group ____ Guns'n'Roses. (be)", "answer": "is", "whyUz": "'group' birlik → is." },
-            { "textEn": "____ you like them? (do)", "answer": "Do", "whyUz": "'you' bilan savol → Do. 'Does' faqat he/she/it bilan." },
-            { "textEn": "I also ____ going to the cinema. (like)", "answer": "like", "whyUz": "'I' bilan -s yo'q." },
-            { "textEn": "I ____ to the cinema every Saturday. (go)", "answer": "go", "whyUz": "'I' bilan -s yo'q. Takrorlanuvchi harakat — Present Simple." },
-            { "textEn": "I ____ like going to the theatre. (not like)", "answer": "don't", "whyUz": "'I' bilan inkor → don't. To'liq: I don't like." }
+            {
+              "textEn": "I ____ Tony Philips. (be)",
+              "answer": "am",
+              "whyUz": "'I'm Tony Philips' — 'I am' ning qisqasi. 'to be' fe'li."
+            },
+            {
+              "textEn": "I ____ in Montreal, Canada. (live)",
+              "answer": "live",
+              "whyUz": "'I' bilan -s YO'Q."
+            },
+            {
+              "textEn": "There ____ seven of us in our family. (be)",
+              "answer": "are",
+              "whyUz": "'seven' ko'plik → are."
+            },
+            {
+              "textEn": "My father ____ a surgeon. (be)",
+              "answer": "is",
+              "whyUz": "'father' — 3-shaxs birlik → is."
+            },
+            {
+              "textEn": "He ____ at the local hospital. (work)",
+              "answer": "works",
+              "whyUz": "'He' — 3-shaxs birlik → -s QO'SHILADI."
+            },
+            {
+              "textEn": "My mother ____ a teacher. (be)",
+              "answer": "is",
+              "whyUz": "3-shaxs birlik → is."
+            },
+            {
+              "textEn": "We ____ in a big house. (live)",
+              "answer": "live",
+              "whyUz": "'We' bilan -s YO'Q."
+            },
+            {
+              "textEn": "I ____ playing computer games. (love)",
+              "answer": "love",
+              "whyUz": "'I' bilan -s yo'q. Keyin fe'l -ING oladi."
+            },
+            {
+              "textEn": "My favourite group ____ Guns'n'Roses. (be)",
+              "answer": "is",
+              "whyUz": "'group' birlik → is."
+            },
+            {
+              "textEn": "____ you like them? (do)",
+              "answer": "Do",
+              "whyUz": "'you' bilan savol → Do. 'Does' faqat he/she/it bilan."
+            },
+            {
+              "textEn": "I also ____ going to the cinema. (like)",
+              "answer": "like",
+              "whyUz": "'I' bilan -s yo'q."
+            },
+            {
+              "textEn": "I ____ to the cinema every Saturday. (go)",
+              "answer": "go",
+              "whyUz": "'I' bilan -s yo'q. Takrorlanuvchi harakat — Present Simple."
+            },
+            {
+              "textEn": "I ____ like going to the theatre. (not like)",
+              "answer": "don't",
+              "whyUz": "'I' bilan inkor → don't. To'liq: I don't like."
+            }
           ]
         }
       ]
@@ -229,60 +564,240 @@
         "ruleUz": "Egalik sifati → egalik olmoshi",
         "explanationUz": "Ko'pchiligiga -s qo'shiladi, lekin apostrof HECH QACHON qo'yilmaydi.",
         "items": [
-          { "base": "my", "baseUz": "mening", "derived": "mine", "derivedUz": "meniki", "note": "butunlay boshqa so'z" },
-          { "base": "your", "baseUz": "sening", "derived": "yours", "derivedUz": "seniki", "note": "your's XATO" },
-          { "base": "his", "baseUz": "uning (erkak)", "derived": "his", "derivedUz": "uniki", "note": "o'zgarmaydi" },
-          { "base": "her", "baseUz": "uning (ayol)", "derived": "hers", "derivedUz": "uniki", "note": "her's XATO" },
-          { "base": "its", "baseUz": "uning (narsa)", "derived": "— yo'q", "derivedUz": "ishlatilmaydi", "note": "" },
-          { "base": "our", "baseUz": "bizning", "derived": "ours", "derivedUz": "bizniki", "note": "our's XATO" },
-          { "base": "their", "baseUz": "ularning", "derived": "theirs", "derivedUz": "ularniki", "note": "their's XATO" }
+          {
+            "base": "my",
+            "baseUz": "mening",
+            "derived": "mine",
+            "derivedUz": "meniki",
+            "note": "butunlay boshqa so'z"
+          },
+          {
+            "base": "your",
+            "baseUz": "sening",
+            "derived": "yours",
+            "derivedUz": "seniki",
+            "note": "your's XATO"
+          },
+          {
+            "base": "his",
+            "baseUz": "uning (erkak)",
+            "derived": "his",
+            "derivedUz": "uniki",
+            "note": "o'zgarmaydi"
+          },
+          {
+            "base": "her",
+            "baseUz": "uning (ayol)",
+            "derived": "hers",
+            "derivedUz": "uniki",
+            "note": "her's XATO"
+          },
+          {
+            "base": "its",
+            "baseUz": "uning (narsa)",
+            "derived": "— yo'q",
+            "derivedUz": "ishlatilmaydi",
+            "note": ""
+          },
+          {
+            "base": "our",
+            "baseUz": "bizning",
+            "derived": "ours",
+            "derivedUz": "bizniki",
+            "note": "our's XATO"
+          },
+          {
+            "base": "their",
+            "baseUz": "ularning",
+            "derived": "theirs",
+            "derivedUz": "ularniki",
+            "note": "their's XATO"
+          }
         ]
       },
       {
         "ruleUz": "Present Simple 3-shaxs: oddiy -s",
         "explanationUz": "Ko'pchilik fe'llar shunchaki -s oladi.",
         "items": [
-          { "base": "work", "baseUz": "ishlamoq", "derived": "he works", "derivedUz": "u ishlaydi", "note": "/s/" },
-          { "base": "live", "baseUz": "yashamoq", "derived": "he lives", "derivedUz": "u yashaydi", "note": "/z/" },
-          { "base": "love", "baseUz": "yaxshi ko'rmoq", "derived": "he loves", "derivedUz": "u yaxshi ko'radi", "note": "/z/" },
-          { "base": "like", "baseUz": "yoqtirmoq", "derived": "he likes", "derivedUz": "u yoqtiradi", "note": "/s/" },
-          { "base": "read", "baseUz": "o'qimoq", "derived": "he reads", "derivedUz": "u o'qiydi", "note": "/z/" }
+          {
+            "base": "work",
+            "baseUz": "ishlamoq",
+            "derived": "he works",
+            "derivedUz": "u ishlaydi",
+            "note": "/s/"
+          },
+          {
+            "base": "live",
+            "baseUz": "yashamoq",
+            "derived": "he lives",
+            "derivedUz": "u yashaydi",
+            "note": "/z/"
+          },
+          {
+            "base": "love",
+            "baseUz": "yaxshi ko'rmoq",
+            "derived": "he loves",
+            "derivedUz": "u yaxshi ko'radi",
+            "note": "/z/"
+          },
+          {
+            "base": "like",
+            "baseUz": "yoqtirmoq",
+            "derived": "he likes",
+            "derivedUz": "u yoqtiradi",
+            "note": "/s/"
+          },
+          {
+            "base": "read",
+            "baseUz": "o'qimoq",
+            "derived": "he reads",
+            "derivedUz": "u o'qiydi",
+            "note": "/z/"
+          }
         ]
       },
       {
         "ruleUz": "3-shaxs: -es (-ss, -sh, -ch, -x, -o)",
         "explanationUz": "Bu tovushlardan keyin -s eshitilmaydi, shuning uchun -es qo'shiladi va yangi bo'g'in paydo bo'ladi.",
         "items": [
-          { "base": "go", "baseUz": "bormoq", "derived": "he goes", "derivedUz": "u boradi", "note": "-o" },
-          { "base": "do", "baseUz": "qilmoq", "derived": "he does", "derivedUz": "u qiladi", "note": "-o, o'qilishi 'daz'" },
-          { "base": "wash", "baseUz": "yuvmoq", "derived": "he washes", "derivedUz": "u yuvadi", "note": "-sh" },
-          { "base": "finish", "baseUz": "tugatmoq", "derived": "he finishes", "derivedUz": "u tugatadi", "note": "-sh" },
-          { "base": "watch", "baseUz": "tomosha qilmoq", "derived": "he watches", "derivedUz": "u tomosha qiladi", "note": "-ch" },
-          { "base": "teach", "baseUz": "o'qitmoq", "derived": "he teaches", "derivedUz": "u o'qitadi", "note": "-ch" },
-          { "base": "fix", "baseUz": "tuzatmoq", "derived": "he fixes", "derivedUz": "u tuzatadi", "note": "-x" },
-          { "base": "miss", "baseUz": "sog'inmoq", "derived": "he misses", "derivedUz": "u sog'inadi", "note": "-ss" }
+          {
+            "base": "go",
+            "baseUz": "bormoq",
+            "derived": "he goes",
+            "derivedUz": "u boradi",
+            "note": "-o"
+          },
+          {
+            "base": "do",
+            "baseUz": "qilmoq",
+            "derived": "he does",
+            "derivedUz": "u qiladi",
+            "note": "-o, o'qilishi 'daz'"
+          },
+          {
+            "base": "wash",
+            "baseUz": "yuvmoq",
+            "derived": "he washes",
+            "derivedUz": "u yuvadi",
+            "note": "-sh"
+          },
+          {
+            "base": "finish",
+            "baseUz": "tugatmoq",
+            "derived": "he finishes",
+            "derivedUz": "u tugatadi",
+            "note": "-sh"
+          },
+          {
+            "base": "watch",
+            "baseUz": "tomosha qilmoq",
+            "derived": "he watches",
+            "derivedUz": "u tomosha qiladi",
+            "note": "-ch"
+          },
+          {
+            "base": "teach",
+            "baseUz": "o'qitmoq",
+            "derived": "he teaches",
+            "derivedUz": "u o'qitadi",
+            "note": "-ch"
+          },
+          {
+            "base": "fix",
+            "baseUz": "tuzatmoq",
+            "derived": "he fixes",
+            "derivedUz": "u tuzatadi",
+            "note": "-x"
+          },
+          {
+            "base": "miss",
+            "baseUz": "sog'inmoq",
+            "derived": "he misses",
+            "derivedUz": "u sog'inadi",
+            "note": "-ss"
+          }
         ]
       },
       {
         "ruleUz": "3-shaxs: undosh + y → -ies",
         "explanationUz": "'y' dan OLDIN undosh bo'lsa, 'y' tushadi va -ies qo'shiladi. Unli bo'lsa — 'y' qoladi.",
         "items": [
-          { "base": "study", "baseUz": "o'qimoq", "derived": "he studies", "derivedUz": "u o'qiydi", "note": "d + y → -ies" },
-          { "base": "fly", "baseUz": "uchmoq", "derived": "he flies", "derivedUz": "u uchadi", "note": "l + y → -ies" },
-          { "base": "try", "baseUz": "urinmoq", "derived": "he tries", "derivedUz": "u urinadi", "note": "r + y → -ies" },
-          { "base": "cry", "baseUz": "yig'lamoq", "derived": "he cries", "derivedUz": "u yig'laydi", "note": "r + y → -ies" },
-          { "base": "play", "baseUz": "o'ynamoq", "derived": "he plays", "derivedUz": "u o'ynaydi", "note": "a + y → oddiy -s" },
-          { "base": "enjoy", "baseUz": "zavqlanmoq", "derived": "he enjoys", "derivedUz": "u zavqlanadi", "note": "o + y → oddiy -s" },
-          { "base": "buy", "baseUz": "sotib olmoq", "derived": "he buys", "derivedUz": "u sotib oladi", "note": "u + y → oddiy -s" },
-          { "base": "say", "baseUz": "aytmoq", "derived": "he says", "derivedUz": "u aytadi", "note": "a + y → oddiy -s. Talaffuzi 'sez'!" }
+          {
+            "base": "study",
+            "baseUz": "o'qimoq",
+            "derived": "he studies",
+            "derivedUz": "u o'qiydi",
+            "note": "d + y → -ies"
+          },
+          {
+            "base": "fly",
+            "baseUz": "uchmoq",
+            "derived": "he flies",
+            "derivedUz": "u uchadi",
+            "note": "l + y → -ies"
+          },
+          {
+            "base": "try",
+            "baseUz": "urinmoq",
+            "derived": "he tries",
+            "derivedUz": "u urinadi",
+            "note": "r + y → -ies"
+          },
+          {
+            "base": "cry",
+            "baseUz": "yig'lamoq",
+            "derived": "he cries",
+            "derivedUz": "u yig'laydi",
+            "note": "r + y → -ies"
+          },
+          {
+            "base": "play",
+            "baseUz": "o'ynamoq",
+            "derived": "he plays",
+            "derivedUz": "u o'ynaydi",
+            "note": "a + y → oddiy -s"
+          },
+          {
+            "base": "enjoy",
+            "baseUz": "zavqlanmoq",
+            "derived": "he enjoys",
+            "derivedUz": "u zavqlanadi",
+            "note": "o + y → oddiy -s"
+          },
+          {
+            "base": "buy",
+            "baseUz": "sotib olmoq",
+            "derived": "he buys",
+            "derivedUz": "u sotib oladi",
+            "note": "u + y → oddiy -s"
+          },
+          {
+            "base": "say",
+            "baseUz": "aytmoq",
+            "derived": "he says",
+            "derivedUz": "u aytadi",
+            "note": "a + y → oddiy -s. Talaffuzi 'sez'!"
+          }
         ]
       },
       {
         "ruleUz": "Inkor qisqartmalari",
         "explanationUz": "do/does + not qisqaradi. Inkorda fe'l ASOS shaklida qoladi.",
         "items": [
-          { "base": "do not", "baseUz": "inkor (I/you/we/they)", "derived": "don't", "derivedUz": "qisqa shakl", "note": "I don't live" },
-          { "base": "does not", "baseUz": "inkor (he/she/it)", "derived": "doesn't", "derivedUz": "qisqa shakl", "note": "He doesn't live — 'lives' EMAS" }
+          {
+            "base": "do not",
+            "baseUz": "inkor (I/you/we/they)",
+            "derived": "don't",
+            "derivedUz": "qisqa shakl",
+            "note": "I don't live"
+          },
+          {
+            "base": "does not",
+            "baseUz": "inkor (he/she/it)",
+            "derived": "doesn't",
+            "derivedUz": "qisqa shakl",
+            "note": "He doesn't live — 'lives' EMAS"
+          }
         ]
       }
     ]
@@ -330,37 +845,133 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "a possessive pronoun", "uz": "egalik olmoshi" },
-    { "en": "mine", "uz": "meniki" },
-    { "en": "yours", "uz": "seniki, sizniki" },
-    { "en": "his", "uz": "uniki (erkak)" },
-    { "en": "hers", "uz": "uniki (ayol)" },
-    { "en": "ours", "uz": "bizniki" },
-    { "en": "theirs", "uz": "ularniki" },
-    { "en": "a passport", "uz": "pasport" },
-    { "en": "a bag", "uz": "sumka" },
-    { "en": "a ball", "uz": "to'p" },
-    { "en": "a bicycle", "uz": "velosiped" },
-    { "en": "I think", "uz": "menimcha" },
-    { "en": "the present simple", "uz": "hozirgi oddiy zamon" },
-    { "en": "affirmative", "uz": "tasdiq" },
-    { "en": "negative", "uz": "inkor" },
-    { "en": "the third person singular", "uz": "uchinchi shaxs birlik (he/she/it)" },
-    { "en": "the base form", "uz": "fe'lning asos shakli" },
-    { "en": "spelling", "uz": "imlo, yozilishi" },
-    { "en": "a consonant", "uz": "undosh tovush" },
-    { "en": "a vowel", "uz": "unli tovush" },
-    { "en": "a permanent state", "uz": "doimiy holat" },
-    { "en": "a repeated action", "uz": "takrorlanuvchi harakat" },
-    { "en": "a daily routine", "uz": "kundalik tartib" },
-    { "en": "to finish", "uz": "tugatmoq" },
-    { "en": "to study", "uz": "o'qimoq, o'rganmoq" },
-    { "en": "to wash", "uz": "yuvmoq" },
-    { "en": "to fly", "uz": "uchmoq" },
-    { "en": "to enjoy", "uz": "zavqlanmoq" },
-    { "en": "to watch", "uz": "tomosha qilmoq" },
-    { "en": "to try", "uz": "urinmoq" },
-    { "en": "to fix", "uz": "tuzatmoq" },
-    { "en": "Madrid", "uz": "Madrid (Ispaniya)" }
+    {
+      "en": "a possessive pronoun",
+      "uz": "egalik olmoshi"
+    },
+    {
+      "en": "mine",
+      "uz": "meniki"
+    },
+    {
+      "en": "yours",
+      "uz": "seniki, sizniki"
+    },
+    {
+      "en": "his",
+      "uz": "uniki (erkak)"
+    },
+    {
+      "en": "hers",
+      "uz": "uniki (ayol)"
+    },
+    {
+      "en": "ours",
+      "uz": "bizniki"
+    },
+    {
+      "en": "theirs",
+      "uz": "ularniki"
+    },
+    {
+      "en": "a passport",
+      "uz": "pasport"
+    },
+    {
+      "en": "a bag",
+      "uz": "sumka"
+    },
+    {
+      "en": "a ball",
+      "uz": "to'p"
+    },
+    {
+      "en": "a bicycle",
+      "uz": "velosiped"
+    },
+    {
+      "en": "I think",
+      "uz": "menimcha"
+    },
+    {
+      "en": "the present simple",
+      "uz": "hozirgi oddiy zamon"
+    },
+    {
+      "en": "affirmative",
+      "uz": "tasdiq"
+    },
+    {
+      "en": "negative",
+      "uz": "inkor"
+    },
+    {
+      "en": "the third person singular",
+      "uz": "uchinchi shaxs birlik (he/she/it)"
+    },
+    {
+      "en": "the base form",
+      "uz": "fe'lning asos shakli"
+    },
+    {
+      "en": "spelling",
+      "uz": "imlo, yozilishi"
+    },
+    {
+      "en": "a consonant",
+      "uz": "undosh tovush"
+    },
+    {
+      "en": "a vowel",
+      "uz": "unli tovush"
+    },
+    {
+      "en": "a permanent state",
+      "uz": "doimiy holat"
+    },
+    {
+      "en": "a repeated action",
+      "uz": "takrorlanuvchi harakat"
+    },
+    {
+      "en": "a daily routine",
+      "uz": "kundalik tartib"
+    },
+    {
+      "en": "to finish",
+      "uz": "tugatmoq"
+    },
+    {
+      "en": "to study",
+      "uz": "o'qimoq, o'rganmoq"
+    },
+    {
+      "en": "to wash",
+      "uz": "yuvmoq"
+    },
+    {
+      "en": "to fly",
+      "uz": "uchmoq"
+    },
+    {
+      "en": "to enjoy",
+      "uz": "zavqlanmoq"
+    },
+    {
+      "en": "to watch",
+      "uz": "tomosha qilmoq"
+    },
+    {
+      "en": "to try",
+      "uz": "urinmoq"
+    },
+    {
+      "en": "to fix",
+      "uz": "tuzatmoq"
+    },
+    {
+      "en": "Madrid",
+      "uz": "Madrid (Ispaniya)"
+    }
   ]
 }
