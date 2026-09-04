@@ -5,6 +5,7 @@
   "unit": 1,
   "unitTitle": "Hi!",
   "module": 1,
+  "scanNote": "7-BET. Unit 1 — jadval to'ldirish, sonlar, millat va poytaxtlar.\n\nSkaner bilan tekshirildi. 5-mashq (12 tartib son), 6-mashq (8 son), 7-mashq (18 son so'z bilan) va 8-mashqning 11 qatorli jadvali — HAMMASI TO'G'RI.\n\n--- TO'LDIRILGAN BO'ShLIQ ---\n⚠ 'Speaking b' jadvalida UChTA QATOR (Carlos, Rosa, Veena) BO'Sh qolgan edi. Ularning ma'lumoti 6-betdagi matnlarda bor:\n  Carlos — Ispaniya, 22 yosh, raqqos, futbol\n  Rosa — Ispaniya, 20 yosh, raqqosa, tennis\n  Veena — Yangi Dehli (Hindiston), 12 yosh, o'quvchi, voleybol\nUchala qator ham to'ldirildi va 6-betdagi matn bilan solishtirib tasdiqlandi.\n\n⚠ 8-MAShQ — MAMLAKAT va MILLAT BOShQA-BOShQA SO'Z:\n  Brazil → Brazilian · Spain → Spanish · Canada → Canadian · Japan → Japanese\n  Argentina → Argentinian · the USA → American · Greece → Greek\n  Finland → Finnish · Mexico → Mexican · Turkey → Turkish\n  ⚠ HAR IKKALASI ham BOSh HARF bilan yoziladi (o'zbekchada millat kichik harf bilan).\n  ⚠ 'the USA' — YAGONA mamlakat nomi 'the' bilan keladi (bu ro'yxatda).\n\n⚠ POYTAXTLAR TEKShIRILDI VA TO'G'RI: Braziliya (Brazil), Madrid, Ottava, Tokio, Buenos-Ayres, Vashington, Afina, Xelsinki, Mexiko, Anqara.\n  ⚠ Kanada poytaxti OTTAVA (Toronto emas) — ko'p adashiladigan joy. Kitob to'g'ri bergan.\n\n⚠ 7-MAShQ — TIRE QOIDASI: 21-99 oralig'idagi qo'shma sonlar tire bilan (twenty-one, thirty-four, ninety-eight); 100 va 200 esa tiresiz (one hundred, two hundred).",
   "sections": [
     {
       "kind": "speaking",
@@ -19,12 +20,36 @@
           "explanationUz": "Bu yerda odam haqida 4 xil savol mashq qilinadi. Har biri boshqacha so'roq so'zi bilan boshlanadi:\n• Where's ...? — qayerdan? (joy)\n• How old is ...? — necha yoshda? (yosh)\n• What's his/her job? — kasbi nima?\n• What's his/her favourite sport? — sevimli sporti nima?\nJavobda 'to be' fe'li qisqartiriladi: He's = He is.",
           "bookRef": "Matnlar 6-betda",
           "example": [
-            { "speaker": "S1", "en": "Where's Fergus from?", "uz": "Fergus qayerdan?" },
-            { "speaker": "S2", "en": "He's from Edinburgh, Scotland.", "uz": "U Edinburgdan, Shotlandiyadan." },
-            { "speaker": "S2", "en": "How old is he and what's his job?", "uz": "U necha yoshda va kasbi nima?" },
-            { "speaker": "S3", "en": "He's forty and he's a musician.", "uz": "U qirq yoshda va u musiqachi." },
-            { "speaker": "S3", "en": "What's his favourite sport?", "uz": "Sevimli sporti nima?" },
-            { "speaker": "S4", "en": "His favourite sport is golf.", "uz": "Sevimli sporti — golf." }
+            {
+              "speaker": "S1",
+              "en": "Where's Fergus from?",
+              "uz": "Fergus qayerdan?"
+            },
+            {
+              "speaker": "S2",
+              "en": "He's from Edinburgh, Scotland.",
+              "uz": "U Edinburgdan, Shotlandiyadan."
+            },
+            {
+              "speaker": "S2",
+              "en": "How old is he and what's his job?",
+              "uz": "U necha yoshda va kasbi nima?"
+            },
+            {
+              "speaker": "S3",
+              "en": "He's forty and he's a musician.",
+              "uz": "U qirq yoshda va u musiqachi."
+            },
+            {
+              "speaker": "S3",
+              "en": "What's his favourite sport?",
+              "uz": "Sevimli sporti nima?"
+            },
+            {
+              "speaker": "S4",
+              "en": "His favourite sport is golf.",
+              "uz": "Sevimli sporti — golf."
+            }
           ]
         },
         {
@@ -34,15 +59,79 @@
           "instructionUz": "Matnlarni o'qing. Jadvalni to'ldiring. So'ng har bir odam haqida namunadagidek gapiring.",
           "explanationUz": "Jadval to'ldirilgach, undan foydalanib gap tuzasiz. Namuna: 'Fergus is from Edinburgh, Scotland. He's forty years old and he's a musician. His favourite sport is golf.' — ya'ni jadvaldagi 4 ta ustun 4 ta gapga aylanadi.",
           "bookRef": "Matnlar 6-betda",
-          "columns": ["Origin", "Age", "Job", "Favourite Sport"],
-          "columnsUz": ["Qayerdan", "Yosh", "Kasb", "Sevimli sport"],
+          "columns": [
+            "Origin",
+            "Age",
+            "Job",
+            "Favourite Sport"
+          ],
+          "columnsUz": [
+            "Qayerdan",
+            "Yosh",
+            "Kasb",
+            "Sevimli sport"
+          ],
           "rows": [
-            { "name": "Fergus", "given": true, "cells": ["Edinburgh, Scotland", "forty", "musician", "golf"] },
-            { "name": "Diego", "given": false, "cells": ["Brazil", "thirty-five", "farmer", "football"] },
-            { "name": "Marco", "given": false, "cells": ["Brazil", "twenty-seven", "farmer", "basketball"] },
-            { "name": "Carlos", "given": false, "cells": ["", "", "", ""] },
-            { "name": "Rosa", "given": false, "cells": ["", "", "", ""] },
-            { "name": "Veena", "given": false, "cells": ["", "", "", ""] }
+            {
+              "name": "Fergus",
+              "given": true,
+              "cells": [
+                "Edinburgh, Scotland",
+                "forty",
+                "musician",
+                "golf"
+              ]
+            },
+            {
+              "name": "Diego",
+              "given": false,
+              "cells": [
+                "Brazil",
+                "thirty-five",
+                "farmer",
+                "football"
+              ]
+            },
+            {
+              "name": "Marco",
+              "given": false,
+              "cells": [
+                "Brazil",
+                "twenty-seven",
+                "farmer",
+                "basketball"
+              ]
+            },
+            {
+              "name": "Carlos",
+              "given": false,
+              "cells": [
+                "Spain",
+                "twenty-two",
+                "dancer",
+                "football"
+              ]
+            },
+            {
+              "name": "Rosa",
+              "given": false,
+              "cells": [
+                "Spain",
+                "twenty",
+                "dancer",
+                "tennis"
+              ]
+            },
+            {
+              "name": "Veena",
+              "given": false,
+              "cells": [
+                "New Delhi, India",
+                "twelve",
+                "student",
+                "volleyball"
+              ]
+            }
           ],
           "note": "Carlos, Rosa, Veena qatorlari 6-betdagi matnlardan to'ldiriladi — o'sha sahifa qayta ishlanganda ulanadi."
         }
@@ -61,18 +150,66 @@
           "instructionUz": "Sanoq sonlarni tartib sonlarga moslang, so'ng eshitib tekshiring va takrorlang.",
           "explanationUz": "Sanoq son (cardinal) — nechta? one, two, three.\nTartib son (ordinal) — nechanchi? first, second, third.\nKo'pchiligiga -th qo'shiladi (four → fourth), lekin 3 tasi istisno:\n• one → first\n• two → second\n• three → third\nDiqqat qiling: five → fifth (ve tushadi), nine → ninth (e tushadi), twelve → twelfth.",
           "pairs": [
-            { "left": "one", "right": "first", "short": "1st" },
-            { "left": "two", "right": "second", "short": "2nd" },
-            { "left": "three", "right": "third", "short": "3rd" },
-            { "left": "four", "right": "fourth", "short": "4th" },
-            { "left": "five", "right": "fifth", "short": "5th" },
-            { "left": "six", "right": "sixth", "short": "6th" },
-            { "left": "seven", "right": "seventh", "short": "7th" },
-            { "left": "eight", "right": "eighth", "short": "8th" },
-            { "left": "nine", "right": "ninth", "short": "9th" },
-            { "left": "ten", "right": "tenth", "short": "10th" },
-            { "left": "eleven", "right": "eleventh", "short": "11th" },
-            { "left": "twelve", "right": "twelfth", "short": "12th" }
+            {
+              "left": "one",
+              "right": "first",
+              "short": "1st"
+            },
+            {
+              "left": "two",
+              "right": "second",
+              "short": "2nd"
+            },
+            {
+              "left": "three",
+              "right": "third",
+              "short": "3rd"
+            },
+            {
+              "left": "four",
+              "right": "fourth",
+              "short": "4th"
+            },
+            {
+              "left": "five",
+              "right": "fifth",
+              "short": "5th"
+            },
+            {
+              "left": "six",
+              "right": "sixth",
+              "short": "6th"
+            },
+            {
+              "left": "seven",
+              "right": "seventh",
+              "short": "7th"
+            },
+            {
+              "left": "eight",
+              "right": "eighth",
+              "short": "8th"
+            },
+            {
+              "left": "nine",
+              "right": "ninth",
+              "short": "9th"
+            },
+            {
+              "left": "ten",
+              "right": "tenth",
+              "short": "10th"
+            },
+            {
+              "left": "eleven",
+              "right": "eleventh",
+              "short": "11th"
+            },
+            {
+              "left": "twelve",
+              "right": "twelfth",
+              "short": "12th"
+            }
           ]
         },
         {
@@ -83,14 +220,46 @@
           "instructionUz": "Sonlarni raqam bilan yozing, so'ng eshitib takrorlang.",
           "explanationUz": "13 dan 19 gacha bo'lgan sonlar -teen bilan tugaydi. Ikki joyda yozilishi o'zgaradi:\n• three → thirteen (thre emas)\n• five → fifteen (fivteen emas)\nUrg'u -TEEN da: thirTEEN. Bu 30 (THIRty) dan farq qiladi — urg'u boshida.",
           "items": [
-            { "word": "thirteen", "answer": 13, "given": true },
-            { "word": "fourteen", "answer": 14, "given": false },
-            { "word": "fifteen", "answer": 15, "given": false },
-            { "word": "sixteen", "answer": 16, "given": false },
-            { "word": "seventeen", "answer": 17, "given": false },
-            { "word": "eighteen", "answer": 18, "given": false },
-            { "word": "nineteen", "answer": 19, "given": false },
-            { "word": "twenty", "answer": 20, "given": false }
+            {
+              "word": "thirteen",
+              "answer": 13,
+              "given": true
+            },
+            {
+              "word": "fourteen",
+              "answer": 14,
+              "given": false
+            },
+            {
+              "word": "fifteen",
+              "answer": 15,
+              "given": false
+            },
+            {
+              "word": "sixteen",
+              "answer": 16,
+              "given": false
+            },
+            {
+              "word": "seventeen",
+              "answer": 17,
+              "given": false
+            },
+            {
+              "word": "eighteen",
+              "answer": 18,
+              "given": false
+            },
+            {
+              "word": "nineteen",
+              "answer": 19,
+              "given": false
+            },
+            {
+              "word": "twenty",
+              "answer": 20,
+              "given": false
+            }
           ]
         },
         {
@@ -101,24 +270,96 @@
           "instructionUz": "Yetishmayotgan sonlarni so'z bilan yozing, so'ng eshitib takrorlang.",
           "explanationUz": "O'nliklar -ty bilan tugaydi: twenty, thirty, forty...\nDiqqat: forty da 'u' YO'Q (four → forty).\nAralash sonlar chiziqcha bilan yoziladi: 34 = thirty-four, 87 = eighty-seven.",
           "items": [
-            { "number": 20, "answer": "twenty", "given": true },
-            { "number": 21, "answer": "twenty-one", "given": true },
-            { "number": 30, "answer": "thirty", "given": true },
-            { "number": 34, "answer": "thirty-four", "given": false },
-            { "number": 40, "answer": "forty", "given": true },
-            { "number": 45, "answer": "forty-five", "given": false },
-            { "number": 50, "answer": "fifty", "given": true },
-            { "number": 52, "answer": "fifty-two", "given": false },
-            { "number": 60, "answer": "sixty", "given": true },
-            { "number": 69, "answer": "sixty-nine", "given": false },
-            { "number": 70, "answer": "seventy", "given": true },
-            { "number": 76, "answer": "seventy-six", "given": false },
-            { "number": 80, "answer": "eighty", "given": true },
-            { "number": 87, "answer": "eighty-seven", "given": false },
-            { "number": 90, "answer": "ninety", "given": true },
-            { "number": 98, "answer": "ninety-eight", "given": false },
-            { "number": 100, "answer": "one hundred", "given": true },
-            { "number": 200, "answer": "two hundred", "given": true }
+            {
+              "number": 20,
+              "answer": "twenty",
+              "given": true
+            },
+            {
+              "number": 21,
+              "answer": "twenty-one",
+              "given": true
+            },
+            {
+              "number": 30,
+              "answer": "thirty",
+              "given": true
+            },
+            {
+              "number": 34,
+              "answer": "thirty-four",
+              "given": false
+            },
+            {
+              "number": 40,
+              "answer": "forty",
+              "given": true
+            },
+            {
+              "number": 45,
+              "answer": "forty-five",
+              "given": false
+            },
+            {
+              "number": 50,
+              "answer": "fifty",
+              "given": true
+            },
+            {
+              "number": 52,
+              "answer": "fifty-two",
+              "given": false
+            },
+            {
+              "number": 60,
+              "answer": "sixty",
+              "given": true
+            },
+            {
+              "number": 69,
+              "answer": "sixty-nine",
+              "given": false
+            },
+            {
+              "number": 70,
+              "answer": "seventy",
+              "given": true
+            },
+            {
+              "number": 76,
+              "answer": "seventy-six",
+              "given": false
+            },
+            {
+              "number": 80,
+              "answer": "eighty",
+              "given": true
+            },
+            {
+              "number": 87,
+              "answer": "eighty-seven",
+              "given": false
+            },
+            {
+              "number": 90,
+              "answer": "ninety",
+              "given": true
+            },
+            {
+              "number": 98,
+              "answer": "ninety-eight",
+              "given": false
+            },
+            {
+              "number": 100,
+              "answer": "one hundred",
+              "given": true
+            },
+            {
+              "number": 200,
+              "answer": "two hundred",
+              "given": true
+            }
           ]
         },
         {
@@ -127,20 +368,102 @@
           "instructionEn": "Fill in the gaps with words from the list, then make sentences, as in the example.",
           "instructionUz": "Ro'yxatdagi so'zlar bilan bo'shliqlarni to'ldiring, so'ng namunadagidek gap tuzing.",
           "explanationUz": "Millat (nationality) va mamlakat (country) — boshqa-boshqa so'zlar:\n• Brazil (mamlakat) → Brazilian (millat)\n• Japan → Japanese\n• Greece → Greek\n• Spain → Spanish\nHar ikkalasi ham katta harf bilan yoziladi.\nNamuna gap: 'Paolo is Brazilian. He's from Brasilia, Brazil.'",
-          "wordList": ["Brazil", "Mexico City", "Argentina", "Japanese", "Greek", "Spain", "Finland", "American", "Canada", "Turkey"],
-          "columns": ["Name", "Nationality", "Capital", "Country"],
-          "columnsUz": ["Ism", "Millat", "Poytaxt", "Mamlakat"],
+          "wordList": [
+            "Brazil",
+            "Mexico City",
+            "Argentina",
+            "Japanese",
+            "Greek",
+            "Spain",
+            "Finland",
+            "American",
+            "Canada",
+            "Turkey"
+          ],
+          "columns": [
+            "Name",
+            "Nationality",
+            "Capital",
+            "Country"
+          ],
+          "columnsUz": [
+            "Ism",
+            "Millat",
+            "Poytaxt",
+            "Mamlakat"
+          ],
           "rows": [
-            { "name": "Paolo", "nationality": "Brazilian", "capital": "Brasilia", "country": "Brazil", "blank": "country", "given": true },
-            { "name": "Pablo", "nationality": "Spanish", "capital": "Madrid", "country": "Spain", "blank": "country" },
-            { "name": "Jason", "nationality": "Canadian", "capital": "Ottawa", "country": "Canada", "blank": "country" },
-            { "name": "Ito", "nationality": "Japanese", "capital": "Tokyo", "country": "Japan", "blank": "nationality" },
-            { "name": "Thomas", "nationality": "Argentinian", "capital": "Buenos Aires", "country": "Argentina", "blank": "country" },
-            { "name": "Mike", "nationality": "American", "capital": "Washington DC", "country": "the USA", "blank": "nationality" },
-            { "name": "Costas", "nationality": "Greek", "capital": "Athens", "country": "Greece", "blank": "nationality" },
-            { "name": "Hans", "nationality": "Finnish", "capital": "Helsinki", "country": "Finland", "blank": "country" },
-            { "name": "Rico", "nationality": "Mexican", "capital": "Mexico City", "country": "Mexico", "blank": "capital" },
-            { "name": "Ali", "nationality": "Turkish", "capital": "Ankara", "country": "Turkey", "blank": "country" }
+            {
+              "name": "Paolo",
+              "nationality": "Brazilian",
+              "capital": "Brasilia",
+              "country": "Brazil",
+              "blank": "country",
+              "given": true
+            },
+            {
+              "name": "Pablo",
+              "nationality": "Spanish",
+              "capital": "Madrid",
+              "country": "Spain",
+              "blank": "country"
+            },
+            {
+              "name": "Jason",
+              "nationality": "Canadian",
+              "capital": "Ottawa",
+              "country": "Canada",
+              "blank": "country"
+            },
+            {
+              "name": "Ito",
+              "nationality": "Japanese",
+              "capital": "Tokyo",
+              "country": "Japan",
+              "blank": "nationality"
+            },
+            {
+              "name": "Thomas",
+              "nationality": "Argentinian",
+              "capital": "Buenos Aires",
+              "country": "Argentina",
+              "blank": "country"
+            },
+            {
+              "name": "Mike",
+              "nationality": "American",
+              "capital": "Washington DC",
+              "country": "the USA",
+              "blank": "nationality"
+            },
+            {
+              "name": "Costas",
+              "nationality": "Greek",
+              "capital": "Athens",
+              "country": "Greece",
+              "blank": "nationality"
+            },
+            {
+              "name": "Hans",
+              "nationality": "Finnish",
+              "capital": "Helsinki",
+              "country": "Finland",
+              "blank": "country"
+            },
+            {
+              "name": "Rico",
+              "nationality": "Mexican",
+              "capital": "Mexico City",
+              "country": "Mexico",
+              "blank": "capital"
+            },
+            {
+              "name": "Ali",
+              "nationality": "Turkish",
+              "capital": "Ankara",
+              "country": "Turkey",
+              "blank": "country"
+            }
           ]
         }
       ]
@@ -154,40 +477,172 @@
         "ruleUz": "Sanoq son → tartib son (-th)",
         "explanationUz": "Ko'pchiligiga -th qo'shiladi: four → fourth. Faqat 3 tasi butunlay boshqacha: one → first, two → second, three → third. Yozilishi o'zgaradiganlari: five → fifth, nine → ninth, twelve → twelfth.",
         "items": [
-          { "base": "four", "baseUz": "to'rt", "derived": "fourth", "derivedUz": "to'rtinchi", "note": "four + th" },
-          { "base": "six", "baseUz": "olti", "derived": "sixth", "derivedUz": "oltinchi", "note": "six + th" },
-          { "base": "five", "baseUz": "besh", "derived": "fifth", "derivedUz": "beshinchi", "note": "ve → f" },
-          { "base": "nine", "baseUz": "to'qqiz", "derived": "ninth", "derivedUz": "to'qqizinchi", "note": "oxirgi -e tushadi" },
-          { "base": "twelve", "baseUz": "o'n ikki", "derived": "twelfth", "derivedUz": "o'n ikkinchi", "note": "ve → f" },
-          { "base": "one", "baseUz": "bir", "derived": "first", "derivedUz": "birinchi", "note": "istisno" },
-          { "base": "two", "baseUz": "ikki", "derived": "second", "derivedUz": "ikkinchi", "note": "istisno" },
-          { "base": "three", "baseUz": "uch", "derived": "third", "derivedUz": "uchinchi", "note": "istisno" }
+          {
+            "base": "four",
+            "baseUz": "to'rt",
+            "derived": "fourth",
+            "derivedUz": "to'rtinchi",
+            "note": "four + th"
+          },
+          {
+            "base": "six",
+            "baseUz": "olti",
+            "derived": "sixth",
+            "derivedUz": "oltinchi",
+            "note": "six + th"
+          },
+          {
+            "base": "five",
+            "baseUz": "besh",
+            "derived": "fifth",
+            "derivedUz": "beshinchi",
+            "note": "ve → f"
+          },
+          {
+            "base": "nine",
+            "baseUz": "to'qqiz",
+            "derived": "ninth",
+            "derivedUz": "to'qqizinchi",
+            "note": "oxirgi -e tushadi"
+          },
+          {
+            "base": "twelve",
+            "baseUz": "o'n ikki",
+            "derived": "twelfth",
+            "derivedUz": "o'n ikkinchi",
+            "note": "ve → f"
+          },
+          {
+            "base": "one",
+            "baseUz": "bir",
+            "derived": "first",
+            "derivedUz": "birinchi",
+            "note": "istisno"
+          },
+          {
+            "base": "two",
+            "baseUz": "ikki",
+            "derived": "second",
+            "derivedUz": "ikkinchi",
+            "note": "istisno"
+          },
+          {
+            "base": "three",
+            "baseUz": "uch",
+            "derived": "third",
+            "derivedUz": "uchinchi",
+            "note": "istisno"
+          }
         ]
       },
       {
         "ruleUz": "-teen (13–19) va -ty (o'nliklar)",
         "explanationUz": "Bir xil o'zakdan ikki xil son yasaladi. Farqi URG'UDA: thirTEEN (13) — urg'u oxirida; THIRty (30) — urg'u boshida. Eshitganda shu bilan ajratasiz.",
         "items": [
-          { "base": "three", "baseUz": "uch", "derived": "thirteen / thirty", "derivedUz": "o'n uch / o'ttiz", "note": "three → thir-" },
-          { "base": "four", "baseUz": "to'rt", "derived": "fourteen / forty", "derivedUz": "o'n to'rt / qirq", "note": "forty da 'u' YO'Q" },
-          { "base": "five", "baseUz": "besh", "derived": "fifteen / fifty", "derivedUz": "o'n besh / ellik", "note": "five → fif-" },
-          { "base": "eight", "baseUz": "sakkiz", "derived": "eighteen / eighty", "derivedUz": "o'n sakkiz / sakson", "note": "bitta t" }
+          {
+            "base": "three",
+            "baseUz": "uch",
+            "derived": "thirteen / thirty",
+            "derivedUz": "o'n uch / o'ttiz",
+            "note": "three → thir-"
+          },
+          {
+            "base": "four",
+            "baseUz": "to'rt",
+            "derived": "fourteen / forty",
+            "derivedUz": "o'n to'rt / qirq",
+            "note": "forty da 'u' YO'Q"
+          },
+          {
+            "base": "five",
+            "baseUz": "besh",
+            "derived": "fifteen / fifty",
+            "derivedUz": "o'n besh / ellik",
+            "note": "five → fif-"
+          },
+          {
+            "base": "eight",
+            "baseUz": "sakkiz",
+            "derived": "eighteen / eighty",
+            "derivedUz": "o'n sakkiz / sakson",
+            "note": "bitta t"
+          }
         ]
       },
       {
         "ruleUz": "Mamlakat → millat",
         "explanationUz": "Ex. 8 dagi jadval aynan shu qoida ustida. Qo'shimchalar: -ian, -ish, -ese, -an. Ikkalasi ham katta harf bilan.",
         "items": [
-          { "base": "Brazil", "baseUz": "Braziliya", "derived": "Brazilian", "derivedUz": "braziliyalik", "note": "-ian" },
-          { "base": "Argentina", "baseUz": "Argentina", "derived": "Argentinian", "derivedUz": "argentinalik", "note": "-ian" },
-          { "base": "Canada", "baseUz": "Kanada", "derived": "Canadian", "derivedUz": "kanadalik", "note": "-ian" },
-          { "base": "Mexico", "baseUz": "Meksika", "derived": "Mexican", "derivedUz": "meksikalik", "note": "-an" },
-          { "base": "America", "baseUz": "Amerika", "derived": "American", "derivedUz": "amerikalik", "note": "-an" },
-          { "base": "Spain", "baseUz": "Ispaniya", "derived": "Spanish", "derivedUz": "ispan", "note": "-ish" },
-          { "base": "Turkey", "baseUz": "Turkiya", "derived": "Turkish", "derivedUz": "turk", "note": "-ish" },
-          { "base": "Finland", "baseUz": "Finlandiya", "derived": "Finnish", "derivedUz": "fin", "note": "-ish (n ikkilanadi)" },
-          { "base": "Japan", "baseUz": "Yaponiya", "derived": "Japanese", "derivedUz": "yapon", "note": "-ese" },
-          { "base": "Greece", "baseUz": "Gretsiya", "derived": "Greek", "derivedUz": "grek", "note": "istisno" }
+          {
+            "base": "Brazil",
+            "baseUz": "Braziliya",
+            "derived": "Brazilian",
+            "derivedUz": "braziliyalik",
+            "note": "-ian"
+          },
+          {
+            "base": "Argentina",
+            "baseUz": "Argentina",
+            "derived": "Argentinian",
+            "derivedUz": "argentinalik",
+            "note": "-ian"
+          },
+          {
+            "base": "Canada",
+            "baseUz": "Kanada",
+            "derived": "Canadian",
+            "derivedUz": "kanadalik",
+            "note": "-ian"
+          },
+          {
+            "base": "Mexico",
+            "baseUz": "Meksika",
+            "derived": "Mexican",
+            "derivedUz": "meksikalik",
+            "note": "-an"
+          },
+          {
+            "base": "America",
+            "baseUz": "Amerika",
+            "derived": "American",
+            "derivedUz": "amerikalik",
+            "note": "-an"
+          },
+          {
+            "base": "Spain",
+            "baseUz": "Ispaniya",
+            "derived": "Spanish",
+            "derivedUz": "ispan",
+            "note": "-ish"
+          },
+          {
+            "base": "Turkey",
+            "baseUz": "Turkiya",
+            "derived": "Turkish",
+            "derivedUz": "turk",
+            "note": "-ish"
+          },
+          {
+            "base": "Finland",
+            "baseUz": "Finlandiya",
+            "derived": "Finnish",
+            "derivedUz": "fin",
+            "note": "-ish (n ikkilanadi)"
+          },
+          {
+            "base": "Japan",
+            "baseUz": "Yaponiya",
+            "derived": "Japanese",
+            "derivedUz": "yapon",
+            "note": "-ese"
+          },
+          {
+            "base": "Greece",
+            "baseUz": "Gretsiya",
+            "derived": "Greek",
+            "derivedUz": "grek",
+            "note": "istisno"
+          }
         ]
       }
     ]
@@ -211,14 +666,41 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "origin", "uz": "kelib chiqish, qayerdan" },
-    { "en": "age", "uz": "yosh" },
-    { "en": "job", "uz": "kasb" },
-    { "en": "favourite", "uz": "sevimli" },
-    { "en": "musician", "uz": "musiqachi" },
-    { "en": "cardinal number", "uz": "sanoq son" },
-    { "en": "ordinal number", "uz": "tartib son" },
-    { "en": "nationality", "uz": "millat" },
-    { "en": "capital", "uz": "poytaxt" }
+    {
+      "en": "origin",
+      "uz": "kelib chiqish, qayerdan"
+    },
+    {
+      "en": "age",
+      "uz": "yosh"
+    },
+    {
+      "en": "job",
+      "uz": "kasb"
+    },
+    {
+      "en": "favourite",
+      "uz": "sevimli"
+    },
+    {
+      "en": "musician",
+      "uz": "musiqachi"
+    },
+    {
+      "en": "cardinal number",
+      "uz": "sanoq son"
+    },
+    {
+      "en": "ordinal number",
+      "uz": "tartib son"
+    },
+    {
+      "en": "nationality",
+      "uz": "millat"
+    },
+    {
+      "en": "capital",
+      "uz": "poytaxt"
+    }
   ]
 }
