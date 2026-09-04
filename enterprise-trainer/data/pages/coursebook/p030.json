@@ -5,6 +5,7 @@
   "unit": 4,
   "unitTitle": "Like Father, like Son",
   "module": 2,
+  "scanNote": "28-BET. Unit 4 — olmoshlar, egalik, who's/whose, oila daraxti.\n\nSkaner bilan tekshirildi. HAMMASI TO'G'RI: 9-mashq (5+7), 11-mashq (14 bo'shliq), 12-mashq (10 tanlov), Speaking (9 javob) — jami 45 ta javob.\n\nOILA DARAXTI (tekshirildi): Bill va Carol — bobo va buvi. Ularning farzandlari: JOHN va HELEN. Johnning xotini ANN, Helenning eri PETER. John+Ann ning qizi LISA (7 yosh), Helen+Peter ning o'g'li DAVE (5 yosh).\n\n⚠ 11-MAShQ JAVOBLARI DARAXTDAN CHIQADI:\n  Dave — John va Annning JIYANI (Dave — Johnning singlisining o'g'li)\n  Lisa — Daveniki AMMAVAChChA (cousin)\n  Lisa — Helen va Peterning JIYANI\n  Helen — Peterning XOTINI · Peter — Lisaning POChChASI (uncle)\n  Ann — Daveniki AMMASI (aunt) · Bill — Carolning ERI\n  ⚠ Har bandda IKKI shakl: ism + 's (John and Ann'S) va egalik sifati (THEIR).\n\n⚠⚠ WHO'S va WHOSE — TALAFFUZI BIR XIL, MA'NOSI BOSHQA:\n  WHO'S = 'who is' → KIM? ('Who's Lisa?' — 'She's Dave's cousin')\n  WHOSE = KIMNING? ('Whose dog is it?' — 'Lyn's')\n  ⚠ 12-mashqda to'rttasi 'Whose', to'rttasi 'Who's' — javobga qarab ajratiladi: javob ODAM bo'lsa 'Who's', EGALIK bo'lsa 'Whose'.\n\n⚠ INGLIZ QARINDOSHLIK ATAMALARI O'ZBEKChADAN KAMROQ:\n  cousin — amakivachcha, ammavachcha, xolavachcha, tog'avachcha (hammasi BITTA so'z)\n  uncle — amaki, tog'a, pochcha · aunt — amma, xola, kelinoyi\n  nephew — jiyan (o'g'il) · niece — jiyan (qiz)\n  ⚠ Ingliz tilida jinsi farqlanadi (nephew/niece), lekin qaysi tomondan ekani farqlanmaydi.",
   "sections": [
     {
       "kind": "grammar_theory",
@@ -14,13 +15,41 @@
         "titleUz": "Uch qatorli olmosh jadvali",
         "explanationUz": "Ingliz tilida bitta shaxs uchun UCH XIL shakl bor.\nHar biri gapda boshqa vazifani bajaradi.\n\n  EGA        OBYEKT     EGALIK SIFATI\n  (fe'ldan   (fe'ldan   (otdan\n   oldin)     keyin)     oldin)\n  ─────────────────────────────────\n  I          me         my\n  you        you        your\n  he         him        his\n  she        her        her\n  it         it         its\n  we         us         our\n  you        you        your\n  they       them       their\n\nMISOLLAR — bitta shaxs, uch shakl:\n  SHE is my aunt.        (ega)\n  Look at HER.           (obyekt)\n  HER husband is Peter.  (egalik sifati)\n\nO'ZBEKCHA BILAN SOLISHTIRISH:\n  u        → he/she\n  uni/unga → him/her\n  uning    → his/her",
         "table": [
-          { "subject": "I", "full": "me", "negShort": "my" },
-          { "subject": "you", "full": "you", "negShort": "your" },
-          { "subject": "he", "full": "him", "negShort": "his" },
-          { "subject": "she", "full": "her", "negShort": "her" },
-          { "subject": "it", "full": "it", "negShort": "its" },
-          { "subject": "we", "full": "us", "negShort": "our" },
-          { "subject": "they", "full": "them", "negShort": "their" }
+          {
+            "subject": "I",
+            "full": "me",
+            "negShort": "my"
+          },
+          {
+            "subject": "you",
+            "full": "you",
+            "negShort": "your"
+          },
+          {
+            "subject": "he",
+            "full": "him",
+            "negShort": "his"
+          },
+          {
+            "subject": "she",
+            "full": "her",
+            "negShort": "her"
+          },
+          {
+            "subject": "it",
+            "full": "it",
+            "negShort": "its"
+          },
+          {
+            "subject": "we",
+            "full": "us",
+            "negShort": "our"
+          },
+          {
+            "subject": "they",
+            "full": "them",
+            "negShort": "their"
+          }
         ],
         "warningUz": "ENG CHALKASH JUFTLIKLAR:\n\n  HER ikki vazifada ishlatiladi:\n    Look at HER.       — obyekt (unga)\n    HER husband        — egalik sifati (uning eri)\n\n  HIS ham ikki vazifada:\n    HIS car            — egalik sifati (uning mashinasi)\n    The car is HIS.    — egalik olmoshi (uniki)\n\n  ITS va IT'S — MUTLAQO boshqa:\n    ITS name is Rex.   — uning ismi (egalik, apostrof YO'Q)\n    IT'S a dog.        — u it (it is ning qisqasi)\n\n  THEIR / THERE / THEY'RE — bir xil eshitiladi, boshqa ma'no:\n    THEIR son  — ularning o'g'li (egalik)\n    THERE is   — bor (Unit 3)\n    THEY'RE    — ular ...dir (they are)",
         "noteUz": "EGALIK SIFATIDAN KEYIN ARTIKL QO'YILMAYDI:\n  ✅ my book        ❌ my the book\n  ✅ their parents  ❌ the their parents\n\nVa egalik sifati OT bilan birga keladi — yolg'iz turmaydi:\n  ✅ This is my book.\n  ❌ This is my.   (to'g'risi: This is mine.)"
@@ -34,11 +63,31 @@
           "explanationUz": "Kitobdagi jadvalda beshta bo'sh joy bor:\n\n  Subject Pronouns:     I, you, he, she, it, we, you, they  (to'liq)\n  Object Pronouns:      __, you, __, her, it, us, you, them\n  Possessive Adjectives: __, your, his, __, its, our, your, __\n\nHar bir ustun BITTA shaxsga tegishli — yuqoridan pastga qarang.",
           "bookRef": "Coursebook, 28-bet, 9-mashq",
           "items": [
-            { "textEn": "I (ega) → obyekt shakli:", "answer": "me", "whyUz": "1-ustun. Help ME! — menga yordam ber." },
-            { "textEn": "I (ega) → egalik sifati:", "answer": "my", "whyUz": "1-ustun. MY parents — mening ota-onam." },
-            { "textEn": "he (ega) → obyekt shakli:", "answer": "him", "whyUz": "3-ustun. Ask HIM. — undan so'ra." },
-            { "textEn": "she (ega) → egalik sifati:", "answer": "her", "whyUz": "4-ustun. HER husband — uning eri. DIQQAT: obyekt shakli ham 'her'." },
-            { "textEn": "they (ega) → egalik sifati:", "answer": "their", "whyUz": "8-ustun. THEIR son — ularning o'g'li." }
+            {
+              "textEn": "I (ega) → obyekt shakli:",
+              "answer": "me",
+              "whyUz": "1-ustun. Help ME! — menga yordam ber."
+            },
+            {
+              "textEn": "I (ega) → egalik sifati:",
+              "answer": "my",
+              "whyUz": "1-ustun. MY parents — mening ota-onam."
+            },
+            {
+              "textEn": "he (ega) → obyekt shakli:",
+              "answer": "him",
+              "whyUz": "3-ustun. Ask HIM. — undan so'ra."
+            },
+            {
+              "textEn": "she (ega) → egalik sifati:",
+              "answer": "her",
+              "whyUz": "4-ustun. HER husband — uning eri. DIQQAT: obyekt shakli ham 'her'."
+            },
+            {
+              "textEn": "they (ega) → egalik sifati:",
+              "answer": "their",
+              "whyUz": "8-ustun. THEIR son — ularning o'g'li."
+            }
           ]
         },
         {
@@ -49,13 +98,41 @@
           "explanationUz": "Jadvalni to'liq yodlab olish shart. U butun kitob davomida kerak bo'ladi.",
           "bookRef": "Coursebook, 28-bet, 9-mashq (to'liq jadval)",
           "items": [
-            { "textEn": "I → obyekt / egalik", "answer": "me / my", "whyUz": "Help me. My parents." },
-            { "textEn": "you → obyekt / egalik", "answer": "you / your", "whyUz": "'you' o'zgarmaydi. Your book." },
-            { "textEn": "he → obyekt / egalik", "answer": "him / his", "whyUz": "Ask him. His car." },
-            { "textEn": "she → obyekt / egalik", "answer": "her / her", "whyUz": "Ikkalasi ham 'her' — yagona shunday shaxs." },
-            { "textEn": "it → obyekt / egalik", "answer": "it / its", "whyUz": "Look at it. Its name. DIQQAT: 'its' da apostrof YO'Q." },
-            { "textEn": "we → obyekt / egalik", "answer": "us / our", "whyUz": "Help us. Our grandparents." },
-            { "textEn": "they → obyekt / egalik", "answer": "them / their", "whyUz": "Look at them. Their son." }
+            {
+              "textEn": "I → obyekt / egalik",
+              "answer": "me / my",
+              "whyUz": "Help me. My parents."
+            },
+            {
+              "textEn": "you → obyekt / egalik",
+              "answer": "you / your",
+              "whyUz": "'you' o'zgarmaydi. Your book."
+            },
+            {
+              "textEn": "he → obyekt / egalik",
+              "answer": "him / his",
+              "whyUz": "Ask him. His car."
+            },
+            {
+              "textEn": "she → obyekt / egalik",
+              "answer": "her / her",
+              "whyUz": "Ikkalasi ham 'her' — yagona shunday shaxs."
+            },
+            {
+              "textEn": "it → obyekt / egalik",
+              "answer": "it / its",
+              "whyUz": "Look at it. Its name. DIQQAT: 'its' da apostrof YO'Q."
+            },
+            {
+              "textEn": "we → obyekt / egalik",
+              "answer": "us / our",
+              "whyUz": "Help us. Our grandparents."
+            },
+            {
+              "textEn": "they → obyekt / egalik",
+              "answer": "them / their",
+              "whyUz": "Look at them. Their son."
+            }
           ]
         },
         {
@@ -66,17 +143,61 @@
           "explanationUz": "LIZANING OILA DARAXTI (family tree):\n\n              Bill  &  Carol          (bobo va buvi)\n                 │        │\n        ┌────────┴───┬────┴────────┐\n      John + Ann   Helen + Peter\n        │             │\n      Lisa (7)      Dave (5)\n\n  Bill va Carol — John va Helenning ota-onasi\n  John — Lizaning otasi, Ann — onasi\n  Helen — Johnning singlisi, Lizaning ammasi\n  Peter — Helenning eri, Lizaning pochchasi (uncle)\n  Dave — Helen va Peterning o'g'li, Lizaning amakivachchasi\n\nMATNDA IKKI XIL EGALIK BOR — ularni ajratib oling:\n\n  EGALIK SHAKLI ('s bilan yasalgan):\n    my father'S sister, Their son'S name, John and Helen'S parents\n\n  EGALIK SIFATLARI (my, your, his, her, its, our, their):\n    MY parents, MY father's, MY aunt, HER husband,\n    MY uncle, THEIR son's, MY cousin, OUR grandparents",
           "bookRef": "Coursebook, 28-bet, 10-mashq",
           "sentences": [
-            { "en": "Hi! I'm Lisa and I'm seven.", "uz": "Salom! Men Lizaman va yetti yoshdaman.", "noteUz": "'I'm seven' — 'years old' tushirib qoldirilishi mumkin." },
-            { "en": "John and Ann are my parents.", "uz": "Jon va Ann — mening ota-onam.", "noteUz": "EGALIK SIFATI: my. Ko'plik ega → 'are'." },
-            { "en": "Helen is my father's sister.", "uz": "Helen — otamning singlisi.", "noteUz": "IKKALASI ham bor: MY (egalik sifati) + father'S (egalik shakli)." },
-            { "en": "She is my aunt.", "uz": "U mening ammam.", "noteUz": "EGALIK SIFATI: my. Otaning singlisi — 'aunt'." },
-            { "en": "Peter is her husband.", "uz": "Piter — uning eri.", "noteUz": "EGALIK SIFATI: her ('uning' — Helenning). 'her' bu yerda obyekt emas!" },
-            { "en": "He's my uncle.", "uz": "U mening pochcham.", "noteUz": "EGALIK SIFATI: my. Ammaning eri ham 'uncle'." },
-            { "en": "Their son's name is Dave.", "uz": "Ularning o'g'lining ismi Deyv.", "noteUz": "IKKALASI: THEIR (egalik sifati) + son'S (egalik shakli). Ikki bosqichli egalik!" },
-            { "en": "He's five years old.", "uz": "U besh yoshda.", "noteUz": "To'liq shakl: 'five years old'." },
-            { "en": "He's my cousin.", "uz": "U mening amakivachcham.", "noteUz": "EGALIK SIFATI: my. 'cousin' — amakivachcha, xolavachcha, jiyan — hammasi bitta so'z." },
-            { "en": "Bill and Carol are our grandparents.", "uz": "Bill va Kerol — bizning bobo va buvimiz.", "noteUz": "EGALIK SIFATI: our ('bizning' — Liza va Deyvning)." },
-            { "en": "They are John and Helen's parents.", "uz": "Ular Jon va Helenning ota-onasi.", "noteUz": "EGALIK SHAKLI: John and Helen'S — ikki egasi, 's faqat oxirgisiga." }
+            {
+              "en": "Hi! I'm Lisa and I'm seven.",
+              "uz": "Salom! Men Lizaman va yetti yoshdaman.",
+              "noteUz": "'I'm seven' — 'years old' tushirib qoldirilishi mumkin."
+            },
+            {
+              "en": "John and Ann are my parents.",
+              "uz": "Jon va Ann — mening ota-onam.",
+              "noteUz": "EGALIK SIFATI: my. Ko'plik ega → 'are'."
+            },
+            {
+              "en": "Helen is my father's sister.",
+              "uz": "Helen — otamning singlisi.",
+              "noteUz": "IKKALASI ham bor: MY (egalik sifati) + father'S (egalik shakli)."
+            },
+            {
+              "en": "She is my aunt.",
+              "uz": "U mening ammam.",
+              "noteUz": "EGALIK SIFATI: my. Otaning singlisi — 'aunt'."
+            },
+            {
+              "en": "Peter is her husband.",
+              "uz": "Piter — uning eri.",
+              "noteUz": "EGALIK SIFATI: her ('uning' — Helenning). 'her' bu yerda obyekt emas!"
+            },
+            {
+              "en": "He's my uncle.",
+              "uz": "U mening pochcham.",
+              "noteUz": "EGALIK SIFATI: my. Ammaning eri ham 'uncle'."
+            },
+            {
+              "en": "Their son's name is Dave.",
+              "uz": "Ularning o'g'lining ismi Deyv.",
+              "noteUz": "IKKALASI: THEIR (egalik sifati) + son'S (egalik shakli). Ikki bosqichli egalik!"
+            },
+            {
+              "en": "He's five years old.",
+              "uz": "U besh yoshda.",
+              "noteUz": "To'liq shakl: 'five years old'."
+            },
+            {
+              "en": "He's my cousin.",
+              "uz": "U mening amakivachcham.",
+              "noteUz": "EGALIK SIFATI: my. 'cousin' — amakivachcha, xolavachcha, jiyan — hammasi bitta so'z."
+            },
+            {
+              "en": "Bill and Carol are our grandparents.",
+              "uz": "Bill va Kerol — bizning bobo va buvimiz.",
+              "noteUz": "EGALIK SIFATI: our ('bizning' — Liza va Deyvning)."
+            },
+            {
+              "en": "They are John and Helen's parents.",
+              "uz": "Ular Jon va Helenning ota-onasi.",
+              "noteUz": "EGALIK SHAKLI: John and Helen'S — ikki egasi, 's faqat oxirgisiga."
+            }
           ]
         },
         {
@@ -87,20 +208,78 @@
           "explanationUz": "Har bir bandda IKKI xil javob kerak:\n  1-bo'shliq — EGALIK SHAKLI (ism + 's)\n  2-bo'shliq — EGALIK SIFATI (his, her, their...)\n\nNAMUNA:\n  Dave is JOHN AND ANN'S nephew. He is THEIR nephew.\n     ↑ egalik shakli              ↑ egalik sifati\n\nIkkinchi gap birinchisining QISQARTIRILGAN varianti —\nism o'rniga olmosh keladi.\n\nQARINDOSHLIK ESLATMASI:\n  nephew — jiyan (o'g'il)     niece  — jiyan (qiz)\n  cousin — amakivachcha       aunt   — amma, xola\n  uncle  — amaki, pochcha     wife   — xotin\n  husband — er",
           "bookRef": "Coursebook, 28-bet, 11-mashq",
           "items": [
-            { "textEn": "1  Dave is ____ nephew. (egalik shakli)", "answer": "John and Ann's", "given": true, "whyUz": "Kitobdagi namuna. Deyv — Jon va Annning jiyani." },
-            { "textEn": "1  He is ____ nephew. (egalik sifati)", "answer": "their", "given": true, "whyUz": "Kitobdagi namuna. John and Ann → they → their." },
-            { "textEn": "2  Lisa is ____ cousin. (egalik shakli)", "answer": "Dave's", "whyUz": "Liza — Deyvning amakivachchasi (Deyv Helen va Piterning o'g'li)." },
-            { "textEn": "2  She is ____ cousin. (egalik sifati)", "answer": "his", "whyUz": "Dave → he → his." },
-            { "textEn": "3  Lisa is ____ niece. (egalik shakli)", "answer": "Helen and Peter's", "whyUz": "Liza — Helen va Piterning jiyani (qiz), chunki Helen Lizaning otasining singlisi." },
-            { "textEn": "3  She is ____ niece. (egalik sifati)", "answer": "their", "whyUz": "Helen and Peter → they → their." },
-            { "textEn": "4  Helen is ____ wife. (egalik shakli)", "answer": "Peter's", "whyUz": "Matnda: 'Peter is her husband' — demak Helen Piterning xotini." },
-            { "textEn": "4  She is ____ wife. (egalik sifati)", "answer": "his", "whyUz": "Peter → he → his." },
-            { "textEn": "5  Peter is ____ uncle. (egalik shakli)", "answer": "Lisa's", "whyUz": "Matnda: Liza aytadi 'He's my uncle'." },
-            { "textEn": "5  He is ____ uncle. (egalik sifati)", "answer": "her", "whyUz": "Lisa → she → her." },
-            { "textEn": "6  Ann is ____ aunt. (egalik shakli)", "answer": "Dave's", "whyUz": "Ann — Jonning xotini, Jon esa Helenning akasi. Demak Ann Deyvning ammasi." },
-            { "textEn": "6  She is ____ aunt. (egalik sifati)", "answer": "his", "whyUz": "Dave → he → his." },
-            { "textEn": "7  Bill is ____ husband. (egalik shakli)", "answer": "Carol's", "whyUz": "Oila daraxtining tepasida: Bill & Carol — er-xotin." },
-            { "textEn": "7  He is ____ husband. (egalik sifati)", "answer": "her", "whyUz": "Carol → she → her." }
+            {
+              "textEn": "1  Dave is ____ nephew. (egalik shakli)",
+              "answer": "John and Ann's",
+              "given": true,
+              "whyUz": "Kitobdagi namuna. Deyv — Jon va Annning jiyani."
+            },
+            {
+              "textEn": "1  He is ____ nephew. (egalik sifati)",
+              "answer": "their",
+              "given": true,
+              "whyUz": "Kitobdagi namuna. John and Ann → they → their."
+            },
+            {
+              "textEn": "2  Lisa is ____ cousin. (egalik shakli)",
+              "answer": "Dave's",
+              "whyUz": "Liza — Deyvning amakivachchasi (Deyv Helen va Piterning o'g'li)."
+            },
+            {
+              "textEn": "2  She is ____ cousin. (egalik sifati)",
+              "answer": "his",
+              "whyUz": "Dave → he → his."
+            },
+            {
+              "textEn": "3  Lisa is ____ niece. (egalik shakli)",
+              "answer": "Helen and Peter's",
+              "whyUz": "Liza — Helen va Piterning jiyani (qiz), chunki Helen Lizaning otasining singlisi."
+            },
+            {
+              "textEn": "3  She is ____ niece. (egalik sifati)",
+              "answer": "their",
+              "whyUz": "Helen and Peter → they → their."
+            },
+            {
+              "textEn": "4  Helen is ____ wife. (egalik shakli)",
+              "answer": "Peter's",
+              "whyUz": "Matnda: 'Peter is her husband' — demak Helen Piterning xotini."
+            },
+            {
+              "textEn": "4  She is ____ wife. (egalik sifati)",
+              "answer": "his",
+              "whyUz": "Peter → he → his."
+            },
+            {
+              "textEn": "5  Peter is ____ uncle. (egalik shakli)",
+              "answer": "Lisa's",
+              "whyUz": "Matnda: Liza aytadi 'He's my uncle'."
+            },
+            {
+              "textEn": "5  He is ____ uncle. (egalik sifati)",
+              "answer": "her",
+              "whyUz": "Lisa → she → her."
+            },
+            {
+              "textEn": "6  Ann is ____ aunt. (egalik shakli)",
+              "answer": "Dave's",
+              "whyUz": "Ann — Jonning xotini, Jon esa Helenning akasi. Demak Ann Deyvning ammasi."
+            },
+            {
+              "textEn": "6  She is ____ aunt. (egalik sifati)",
+              "answer": "his",
+              "whyUz": "Dave → he → his."
+            },
+            {
+              "textEn": "7  Bill is ____ husband. (egalik shakli)",
+              "answer": "Carol's",
+              "whyUz": "Oila daraxtining tepasida: Bill & Carol — er-xotin."
+            },
+            {
+              "textEn": "7  He is ____ husband. (egalik sifati)",
+              "answer": "her",
+              "whyUz": "Carol → she → her."
+            }
           ]
         }
       ]
@@ -116,12 +295,19 @@
           {
             "uzRule": "Who's ...? = Who is ...? — odamning kimligini so'raydi.",
             "enRule": "Who's ...? = Who is ...?",
-            "examples": ["Who's Lisa? — She's Dave's cousin.", "Who's James? — He's my uncle."]
+            "examples": [
+              "Who's Lisa? — She's Dave's cousin.",
+              "Who's James? — He's my uncle."
+            ]
           },
           {
             "uzRule": "Whose ...? — narsaning EGASINI so'raydi.",
             "enRule": "Whose ...? is used to ask who the possessor is.",
-            "examples": ["Whose is this ball?", "Whose dog is it? — Lyn's.", "Whose house is it? — It's Steven's."]
+            "examples": [
+              "Whose is this ball?",
+              "Whose dog is it? — Lyn's.",
+              "Whose house is it? — It's Steven's."
+            ]
           }
         ],
         "warningUz": "APOSTROF hal qiluvchi:\n  WHO'S — apostrof BOR = who is\n  WHOSE — apostrof YO'Q = kimning\n\nBu 'it's / its' juftligiga o'xshaydi:\n  it's = it is (apostrof bor)\n  its  = uning (apostrof yo'q)\n\nQOIDA: apostrof HAR DOIM tushib qolgan harf o'rnida turadi.\nEgalik olmoshlarida (its, whose, hers, ours, theirs) apostrof YO'Q.",
@@ -136,16 +322,127 @@
           "explanationUz": "IKKI GURUH SO'Z:\n\n  SAVOL so'zlari: who's (kim?), whose (kimning?)\n  OBYEKT olmoshlari: him, them, her, me\n\nQANDAY TANLASH:\n  • gap savol bo'lsa va ODAM so'ralsa → who's\n  • gap savol bo'lsa va EGASI so'ralsa (keyin ot kelsa) → whose\n  • fe'l yoki predlogdan keyin bo'lsa → obyekt olmoshi\n\nJavobga ham qarang — u ko'p narsani aytadi.",
           "bookRef": "Coursebook, 28-bet, 12-mashq",
           "items": [
-            { "textEn": "1  \"____ dog is it?\" \"Lyn's.\"", "uz": "It kimning?", "options": ["Whose", "Who's", "Her", "Them"], "answer": "Whose", "given": true, "whyUz": "Kitobdagi namuna. Keyin ot ('dog') keladi va javob egalik ('Lyn's') — demak Whose." },
-            { "textEn": "2  \"____ Lisa?\" \"She's Dave's cousin.\"", "uz": "Liza kim?", "options": ["Who's", "Whose", "Her", "Me"], "answer": "Who's", "whyUz": "Javob 'She's ...' — odamning kimligi aytilyapti. Who is Lisa?" },
-            { "textEn": "3  \"____ niece is Pam?\" \"Ann and Bob's.\"", "uz": "Pam kimning jiyani?", "options": ["Whose", "Who's", "Him", "Them"], "answer": "Whose", "whyUz": "Keyin ot ('niece') keladi va javob egalik — Whose." },
-            { "textEn": "4  \"____ Sally's brother?\" \"John.\"", "uz": "Sallining akasi kim?", "options": ["Who's", "Whose", "Her", "Me"], "answer": "Who's", "whyUz": "Javob ISM ('John') — odam so'ralgan. Who is Sally's brother?" },
-            { "textEn": "5  \"Help ____ ! I can't open the door.\"", "uz": "Menga yordam ber!", "options": ["me", "him", "her", "them"], "answer": "me", "whyUz": "'Help' fe'lidan keyin obyekt olmoshi. Gapiruvchi o'ziga yordam so'rayapti → me." },
-            { "textEn": "6  \"Ask ____ . He can help you.\"", "uz": "Undan so'ra", "options": ["him", "her", "them", "me"], "answer": "him", "whyUz": "Keyingi gapda 'HE can help you' — demak erkak → him." },
-            { "textEn": "7  \"____ house is it?\" \"It's Steven's.\"", "uz": "Bu uy kimning?", "options": ["Whose", "Who's", "Her", "Them"], "answer": "Whose", "whyUz": "Keyin ot ('house'), javob egalik ('Steven's') — Whose." },
-            { "textEn": "8  \"Look at ____ . They're very tall.\"", "uz": "Ularga qara", "options": ["them", "him", "her", "me"], "answer": "them", "whyUz": "Keyingi gapda 'THEY'RE very tall' — ko'plik → them." },
-            { "textEn": "9  \"Give this to ____ . It's hers.\"", "uz": "Buni unga ber", "options": ["her", "him", "them", "me"], "answer": "her", "whyUz": "'It's HERS' — ayolniki, demak → her. 'to' predlogidan keyin obyekt shakli." },
-            { "textEn": "10  \"____ James?\" \"He's my uncle.\"", "uz": "Jeyms kim?", "options": ["Who's", "Whose", "Him", "Her"], "answer": "Who's", "whyUz": "Javob 'He's ...' — odamning kimligi. Who is James?" }
+            {
+              "textEn": "1  \"____ dog is it?\" \"Lyn's.\"",
+              "uz": "It kimning?",
+              "options": [
+                "Whose",
+                "Who's",
+                "Her",
+                "Them"
+              ],
+              "answer": "Whose",
+              "given": true,
+              "whyUz": "Kitobdagi namuna. Keyin ot ('dog') keladi va javob egalik ('Lyn's') — demak Whose."
+            },
+            {
+              "textEn": "2  \"____ Lisa?\" \"She's Dave's cousin.\"",
+              "uz": "Liza kim?",
+              "options": [
+                "Who's",
+                "Whose",
+                "Her",
+                "Me"
+              ],
+              "answer": "Who's",
+              "whyUz": "Javob 'She's ...' — odamning kimligi aytilyapti. Who is Lisa?"
+            },
+            {
+              "textEn": "3  \"____ niece is Pam?\" \"Ann and Bob's.\"",
+              "uz": "Pam kimning jiyani?",
+              "options": [
+                "Whose",
+                "Who's",
+                "Him",
+                "Them"
+              ],
+              "answer": "Whose",
+              "whyUz": "Keyin ot ('niece') keladi va javob egalik — Whose."
+            },
+            {
+              "textEn": "4  \"____ Sally's brother?\" \"John.\"",
+              "uz": "Sallining akasi kim?",
+              "options": [
+                "Who's",
+                "Whose",
+                "Her",
+                "Me"
+              ],
+              "answer": "Who's",
+              "whyUz": "Javob ISM ('John') — odam so'ralgan. Who is Sally's brother?"
+            },
+            {
+              "textEn": "5  \"Help ____ ! I can't open the door.\"",
+              "uz": "Menga yordam ber!",
+              "options": [
+                "me",
+                "him",
+                "her",
+                "them"
+              ],
+              "answer": "me",
+              "whyUz": "'Help' fe'lidan keyin obyekt olmoshi. Gapiruvchi o'ziga yordam so'rayapti → me."
+            },
+            {
+              "textEn": "6  \"Ask ____ . He can help you.\"",
+              "uz": "Undan so'ra",
+              "options": [
+                "him",
+                "her",
+                "them",
+                "me"
+              ],
+              "answer": "him",
+              "whyUz": "Keyingi gapda 'HE can help you' — demak erkak → him."
+            },
+            {
+              "textEn": "7  \"____ house is it?\" \"It's Steven's.\"",
+              "uz": "Bu uy kimning?",
+              "options": [
+                "Whose",
+                "Who's",
+                "Her",
+                "Them"
+              ],
+              "answer": "Whose",
+              "whyUz": "Keyin ot ('house'), javob egalik ('Steven's') — Whose."
+            },
+            {
+              "textEn": "8  \"Look at ____ . They're very tall.\"",
+              "uz": "Ularga qara",
+              "options": [
+                "them",
+                "him",
+                "her",
+                "me"
+              ],
+              "answer": "them",
+              "whyUz": "Keyingi gapda 'THEY'RE very tall' — ko'plik → them."
+            },
+            {
+              "textEn": "9  \"Give this to ____ . It's hers.\"",
+              "uz": "Buni unga ber",
+              "options": [
+                "her",
+                "him",
+                "them",
+                "me"
+              ],
+              "answer": "her",
+              "whyUz": "'It's HERS' — ayolniki, demak → her. 'to' predlogidan keyin obyekt shakli."
+            },
+            {
+              "textEn": "10  \"____ James?\" \"He's my uncle.\"",
+              "uz": "Jeyms kim?",
+              "options": [
+                "Who's",
+                "Whose",
+                "Him",
+                "Her"
+              ],
+              "answer": "Who's",
+              "whyUz": "Javob 'He's ...' — odamning kimligi. Who is James?"
+            }
           ]
         }
       ]
@@ -163,15 +460,71 @@
           "explanationUz": "NAMUNA — uch kishilik zanjir:\n  S1: Who's Dave?\n  S2: He's Lisa's cousin. Whose son is John?\n  S3: He's Carol and Bill's son.\n\nHar bir o'quvchi javob berib, KEYINGI savolni beradi.\nShunda suhbat uzluksiz davom etadi.\n\nOILA DARAXTI:\n  Bill & Carol → John va Helen (ularning farzandlari)\n  John + Ann → Lisa\n  Helen + Peter → Dave",
           "bookRef": "Coursebook, 28-bet, Speaking a)",
           "items": [
-            { "n": 1, "prompt": "Dave", "question": "Who's Dave?", "answer": "He's Lisa's cousin.", "given": true, "whyUz": "Kitobdagi namuna. Deyv — Lizaning amakivachchasi." },
-            { "n": 2, "prompt": "John — kimning o'g'li?", "question": "Whose son is John?", "answer": "He's Carol and Bill's son.", "given": true, "whyUz": "Kitobdagi namuna. Ikki egasi → 's oxirgisiga." },
-            { "n": 3, "prompt": "Helen", "question": "Who's Helen?", "answer": "She's Lisa's aunt and John's sister.", "whyUz": "Matnda: 'Helen is my father's sister. She is my aunt.'" },
-            { "n": 4, "prompt": "Peter", "question": "Who's Peter?", "answer": "He's Helen's husband and Lisa's uncle.", "whyUz": "Matnda: 'Peter is her husband. He's my uncle.'" },
-            { "n": 5, "prompt": "Ann", "question": "Who's Ann?", "answer": "She's Lisa's mother and John's wife.", "whyUz": "Matnda: 'John and Ann are my parents.'" },
-            { "n": 6, "prompt": "Lisa — kimning qizi?", "question": "Whose daughter is Lisa?", "answer": "She's John and Ann's daughter.", "whyUz": "Ikki egasi → 's oxirgisiga." },
-            { "n": 7, "prompt": "Dave — kimning o'g'li?", "question": "Whose son is Dave?", "answer": "He's Helen and Peter's son.", "whyUz": "Matnda: 'Their son's name is Dave.'" },
-            { "n": 8, "prompt": "Bill va Carol", "question": "Who are Bill and Carol?", "answer": "They're Lisa and Dave's grandparents.", "whyUz": "Ko'plik uchun 'Who ARE ...?'. Matnda: 'Bill and Carol are our grandparents.'" },
-            { "n": 9, "prompt": "Carol — kimning xotini?", "question": "Whose wife is Carol?", "answer": "She's Bill's wife.", "whyUz": "Oila daraxtining tepasida: Bill & Carol." }
+            {
+              "n": 1,
+              "prompt": "Dave",
+              "question": "Who's Dave?",
+              "answer": "He's Lisa's cousin.",
+              "given": true,
+              "whyUz": "Kitobdagi namuna. Deyv — Lizaning amakivachchasi."
+            },
+            {
+              "n": 2,
+              "prompt": "John — kimning o'g'li?",
+              "question": "Whose son is John?",
+              "answer": "He's Carol and Bill's son.",
+              "given": true,
+              "whyUz": "Kitobdagi namuna. Ikki egasi → 's oxirgisiga."
+            },
+            {
+              "n": 3,
+              "prompt": "Helen",
+              "question": "Who's Helen?",
+              "answer": "She's Lisa's aunt and John's sister.",
+              "whyUz": "Matnda: 'Helen is my father's sister. She is my aunt.'"
+            },
+            {
+              "n": 4,
+              "prompt": "Peter",
+              "question": "Who's Peter?",
+              "answer": "He's Helen's husband and Lisa's uncle.",
+              "whyUz": "Matnda: 'Peter is her husband. He's my uncle.'"
+            },
+            {
+              "n": 5,
+              "prompt": "Ann",
+              "question": "Who's Ann?",
+              "answer": "She's Lisa's mother and John's wife.",
+              "whyUz": "Matnda: 'John and Ann are my parents.'"
+            },
+            {
+              "n": 6,
+              "prompt": "Lisa — kimning qizi?",
+              "question": "Whose daughter is Lisa?",
+              "answer": "She's John and Ann's daughter.",
+              "whyUz": "Ikki egasi → 's oxirgisiga."
+            },
+            {
+              "n": 7,
+              "prompt": "Dave — kimning o'g'li?",
+              "question": "Whose son is Dave?",
+              "answer": "He's Helen and Peter's son.",
+              "whyUz": "Matnda: 'Their son's name is Dave.'"
+            },
+            {
+              "n": 8,
+              "prompt": "Bill va Carol",
+              "question": "Who are Bill and Carol?",
+              "answer": "They're Lisa and Dave's grandparents.",
+              "whyUz": "Ko'plik uchun 'Who ARE ...?'. Matnda: 'Bill and Carol are our grandparents.'"
+            },
+            {
+              "n": 9,
+              "prompt": "Carol — kimning xotini?",
+              "question": "Whose wife is Carol?",
+              "answer": "She's Bill's wife.",
+              "whyUz": "Oila daraxtining tepasida: Bill & Carol."
+            }
           ]
         },
         {
@@ -182,16 +535,48 @@
           "explanationUz": "NAMUNA:\n  S1: Look at them. They're desks.\n  S2: Look at her. She's Mary.\n\nQOLIP: Look at + OBYEKT olmoshi. + EGA olmoshi + is/are + kim/nima.\n\nOLMOSHNI TANLASH:\n  bitta erkak/o'g'il → him ... He's ...\n  bitta ayol/qiz     → her ... She's ...\n  bitta narsa        → it  ... It's ...\n  bir nechta         → them ... They're ...\n\nDIQQAT: birinchi gapda OBYEKT shakli (him/her/it/them),\nikkinchi gapda EGA shakli (he/she/it/they).",
           "bookRef": "Coursebook, 28-bet, Speaking b)",
           "example": [
-            { "speaker": "S1", "en": "Look at them. They're desks.", "uz": "Ularga qara. Ular partalar." },
-            { "speaker": "S2", "en": "Look at her. She's Mary.", "uz": "Unga qara. U Meri." }
+            {
+              "speaker": "S1",
+              "en": "Look at them. They're desks.",
+              "uz": "Ularga qara. Ular partalar."
+            },
+            {
+              "speaker": "S2",
+              "en": "Look at her. She's Mary.",
+              "uz": "Unga qara. U Meri."
+            }
           ],
           "modelSentences": [
-            { "word": "bitta o'g'il — Tom", "sentence": "Look at him. He's Tom.", "uz": "Unga qara. U Tom." },
-            { "word": "bitta qiz — Ann", "sentence": "Look at her. She's Ann.", "uz": "Unga qara. U Ann." },
-            { "word": "bitta narsa — doska", "sentence": "Look at it. It's a blackboard.", "uz": "Unga qara. U doska." },
-            { "word": "bir nechta narsa — stullar", "sentence": "Look at them. They're chairs.", "uz": "Ularga qara. Ular stullar." },
-            { "word": "bir nechta odam — o'quvchilar", "sentence": "Look at them. They're students.", "uz": "Ularga qara. Ular o'quvchilar." },
-            { "word": "bitta narsa — deraza", "sentence": "Look at it. It's a window.", "uz": "Unga qara. U deraza." }
+            {
+              "word": "bitta o'g'il — Tom",
+              "sentence": "Look at him. He's Tom.",
+              "uz": "Unga qara. U Tom."
+            },
+            {
+              "word": "bitta qiz — Ann",
+              "sentence": "Look at her. She's Ann.",
+              "uz": "Unga qara. U Ann."
+            },
+            {
+              "word": "bitta narsa — doska",
+              "sentence": "Look at it. It's a blackboard.",
+              "uz": "Unga qara. U doska."
+            },
+            {
+              "word": "bir nechta narsa — stullar",
+              "sentence": "Look at them. They're chairs.",
+              "uz": "Ularga qara. Ular stullar."
+            },
+            {
+              "word": "bir nechta odam — o'quvchilar",
+              "sentence": "Look at them. They're students.",
+              "uz": "Ularga qara. Ular o'quvchilar."
+            },
+            {
+              "word": "bitta narsa — deraza",
+              "sentence": "Look at it. It's a window.",
+              "uz": "Unga qara. U deraza."
+            }
           ]
         }
       ]
@@ -209,16 +594,56 @@
           "explanationUz": "O'YIN QOIDASI:\n  1) Siz doskaga 5 ta qarindoshingiz ismini yozasiz\n  2) Jamoalar navbat bilan HA/YO'Q savoli beradi\n  3) Siz faqat 'Yes, he is' yoki 'No, he isn't' deb javob berasiz\n  4) To'g'ri topsa — jamoaga 1 ochko\n\nNAMUNA:\n  Team A S1: Is Tony your father?    You: No, he isn't.\n  Team B S1: Is he your uncle?       You: Yes, he is.\n\nQOLIP:\n  Is + ISM + your + qarindoshlik?\n  Is he/she your + qarindoshlik?\n\nQISQA JAVOB:\n  Yes, he is.  /  No, he isn't.\n  Yes, she is. /  No, she isn't.\n\nDIQQAT: qisqa javobda ot takrorlanmaydi.\n  ✅ Yes, he is.\n  ❌ Yes, he is my uncle. (bu to'liq javob, o'yin uchun uzun)",
           "bookRef": "Coursebook, 28-bet, 13-mashq",
           "example": [
-            { "speaker": "Team A S1", "en": "Is Tony your father?", "uz": "Toni sizning otangizmi?" },
-            { "speaker": "You", "en": "No, he isn't.", "uz": "Yo'q, emas." },
-            { "speaker": "Team B S1", "en": "Is he your uncle?", "uz": "U sizning amakingizmi?" },
-            { "speaker": "You", "en": "Yes, he is.", "uz": "Ha, shunday." },
-            { "speaker": "Team A S2", "en": "Is Paula your mother?", "uz": "Paula sizning onangizmi?" },
-            { "speaker": "You", "en": "No, she isn't.", "uz": "Yo'q, emas." },
-            { "speaker": "Team B S2", "en": "Is she your aunt?", "uz": "U sizning ammangizmi?" },
-            { "speaker": "You", "en": "Yes, she is.", "uz": "Ha, shunday." },
-            { "speaker": "Team A S3", "en": "Is Kathy your sister?", "uz": "Keti sizning singlingizmi?" },
-            { "speaker": "You", "en": "Yes, she is.", "uz": "Ha, shunday." }
+            {
+              "speaker": "Team A S1",
+              "en": "Is Tony your father?",
+              "uz": "Toni sizning otangizmi?"
+            },
+            {
+              "speaker": "You",
+              "en": "No, he isn't.",
+              "uz": "Yo'q, emas."
+            },
+            {
+              "speaker": "Team B S1",
+              "en": "Is he your uncle?",
+              "uz": "U sizning amakingizmi?"
+            },
+            {
+              "speaker": "You",
+              "en": "Yes, he is.",
+              "uz": "Ha, shunday."
+            },
+            {
+              "speaker": "Team A S2",
+              "en": "Is Paula your mother?",
+              "uz": "Paula sizning onangizmi?"
+            },
+            {
+              "speaker": "You",
+              "en": "No, she isn't.",
+              "uz": "Yo'q, emas."
+            },
+            {
+              "speaker": "Team B S2",
+              "en": "Is she your aunt?",
+              "uz": "U sizning ammangizmi?"
+            },
+            {
+              "speaker": "You",
+              "en": "Yes, she is.",
+              "uz": "Ha, shunday."
+            },
+            {
+              "speaker": "Team A S3",
+              "en": "Is Kathy your sister?",
+              "uz": "Keti sizning singlingizmi?"
+            },
+            {
+              "speaker": "You",
+              "en": "Yes, she is.",
+              "uz": "Ha, shunday."
+            }
           ]
         }
       ]
@@ -236,13 +661,37 @@
           "explanationUz": "OILA DARAXTI CHIZISH:\n  • eng tepada — bobo va buvi\n  • o'rtada — ota-ona va ularning aka-uka, opa-singillari\n  • pastda — siz va amakivachchalaringiz\n\nMATN TARTIBI (10-mashqdagi kabi):\n  1) O'zingizni tanishtiring: Hi! I'm ... and I'm ...\n  2) Ota-onangiz: ... are my parents.\n  3) Amma/amaki: ... is my father's sister. She is my aunt.\n  4) Ularning turmush o'rtog'i: ... is her husband. He's my uncle.\n  5) Amakivachchangiz: Their son's/daughter's name is ...\n  6) Bobo-buvingiz: ... are our grandparents.\n\nHAR BIR GAPDA egalik shakli yoki egalik sifati ishlatilsin —\nmashqning maqsadi shu.",
           "bookRef": "Coursebook, 28-bet, Writing (Project)",
           "structure": [
-            { "headingUz": "1) O'zingizni tanishtiring", "modelEn": "Hi! I'm Aziz and I'm twelve." },
-            { "headingUz": "2) Ota-onangiz", "modelEn": "Rustam and Nilufar are my parents." },
-            { "headingUz": "3) Otangizning singlisi", "modelEn": "Dilnoza is my father's sister. She is my aunt.", "noteUz": "IKKI xil egalik: MY (sifat) + father'S (shakl)." },
-            { "headingUz": "4) Uning eri", "modelEn": "Bobur is her husband. He's my uncle." },
-            { "headingUz": "5) Ularning farzandi", "modelEn": "Their son's name is Jasur. He's ten years old. He's my cousin.", "noteUz": "THEIR (sifat) + son'S (shakl)." },
-            { "headingUz": "6) Bobo va buvingiz", "modelEn": "Karim and Zulfiya are our grandparents." },
-            { "headingUz": "7) Ular kimning ota-onasi", "modelEn": "They are Rustam and Dilnoza's parents.", "noteUz": "Ikki egasi → 's faqat oxirgisiga." }
+            {
+              "headingUz": "1) O'zingizni tanishtiring",
+              "modelEn": "Hi! I'm Aziz and I'm twelve."
+            },
+            {
+              "headingUz": "2) Ota-onangiz",
+              "modelEn": "Rustam and Nilufar are my parents."
+            },
+            {
+              "headingUz": "3) Otangizning singlisi",
+              "modelEn": "Dilnoza is my father's sister. She is my aunt.",
+              "noteUz": "IKKI xil egalik: MY (sifat) + father'S (shakl)."
+            },
+            {
+              "headingUz": "4) Uning eri",
+              "modelEn": "Bobur is her husband. He's my uncle."
+            },
+            {
+              "headingUz": "5) Ularning farzandi",
+              "modelEn": "Their son's name is Jasur. He's ten years old. He's my cousin.",
+              "noteUz": "THEIR (sifat) + son'S (shakl)."
+            },
+            {
+              "headingUz": "6) Bobo va buvingiz",
+              "modelEn": "Karim and Zulfiya are our grandparents."
+            },
+            {
+              "headingUz": "7) Ular kimning ota-onasi",
+              "modelEn": "They are Rustam and Dilnoza's parents.",
+              "noteUz": "Ikki egasi → 's faqat oxirgisiga."
+            }
           ]
         }
       ]
@@ -256,46 +705,178 @@
         "ruleUz": "Bir shaxs — uch shakl",
         "explanationUz": "Har bir shaxs uchun ega, obyekt va egalik shakllari bor. Uchalasini birga yodlang.",
         "items": [
-          { "base": "I", "baseUz": "men", "derived": "me / my", "derivedUz": "menga / mening", "note": "Help me. My book." },
-          { "base": "you", "baseUz": "sen, siz", "derived": "you / your", "derivedUz": "senga / sening", "note": "obyekt o'zgarmaydi" },
-          { "base": "he", "baseUz": "u (erkak)", "derived": "him / his", "derivedUz": "unga / uning", "note": "Ask him. His car." },
-          { "base": "she", "baseUz": "u (ayol)", "derived": "her / her", "derivedUz": "unga / uning", "note": "IKKALASI ham 'her'" },
-          { "base": "it", "baseUz": "u (narsa)", "derived": "it / its", "derivedUz": "unga / uning", "note": "'its' — apostrofsiz!" },
-          { "base": "we", "baseUz": "biz", "derived": "us / our", "derivedUz": "bizga / bizning", "note": "" },
-          { "base": "they", "baseUz": "ular", "derived": "them / their", "derivedUz": "ularga / ularning", "note": "" }
+          {
+            "base": "I",
+            "baseUz": "men",
+            "derived": "me / my",
+            "derivedUz": "menga / mening",
+            "note": "Help me. My book."
+          },
+          {
+            "base": "you",
+            "baseUz": "sen, siz",
+            "derived": "you / your",
+            "derivedUz": "senga / sening",
+            "note": "obyekt o'zgarmaydi"
+          },
+          {
+            "base": "he",
+            "baseUz": "u (erkak)",
+            "derived": "him / his",
+            "derivedUz": "unga / uning",
+            "note": "Ask him. His car."
+          },
+          {
+            "base": "she",
+            "baseUz": "u (ayol)",
+            "derived": "her / her",
+            "derivedUz": "unga / uning",
+            "note": "IKKALASI ham 'her'"
+          },
+          {
+            "base": "it",
+            "baseUz": "u (narsa)",
+            "derived": "it / its",
+            "derivedUz": "unga / uning",
+            "note": "'its' — apostrofsiz!"
+          },
+          {
+            "base": "we",
+            "baseUz": "biz",
+            "derived": "us / our",
+            "derivedUz": "bizga / bizning",
+            "note": ""
+          },
+          {
+            "base": "they",
+            "baseUz": "ular",
+            "derived": "them / their",
+            "derivedUz": "ularga / ularning",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Bir xil eshitiladi, boshqacha yoziladi",
         "explanationUz": "Bu juftliklar talaffuzda farq qilmaydi — faqat yozuvda. Ma'nolari esa butunlay boshqa.",
         "items": [
-          { "base": "who's", "baseUz": "kim? (who is)", "derived": "whose", "derivedUz": "kimning?", "note": "/huːz/ — bir xil o'qiladi" },
-          { "base": "it's", "baseUz": "u ...dir (it is)", "derived": "its", "derivedUz": "uning", "note": "/ɪts/ — bir xil" },
-          { "base": "they're", "baseUz": "ular ...dir", "derived": "their / there", "derivedUz": "ularning / u yerda", "note": "uchalasi /ðeə/" },
-          { "base": "you're", "baseUz": "sen ...san", "derived": "your", "derivedUz": "sening", "note": "/jɔː/ — bir xil" }
+          {
+            "base": "who's",
+            "baseUz": "kim? (who is)",
+            "derived": "whose",
+            "derivedUz": "kimning?",
+            "note": "/huːz/ — bir xil o'qiladi"
+          },
+          {
+            "base": "it's",
+            "baseUz": "u ...dir (it is)",
+            "derived": "its",
+            "derivedUz": "uning",
+            "note": "/ɪts/ — bir xil"
+          },
+          {
+            "base": "they're",
+            "baseUz": "ular ...dir",
+            "derived": "their / there",
+            "derivedUz": "ularning / u yerda",
+            "note": "uchalasi /ðeə/"
+          },
+          {
+            "base": "you're",
+            "baseUz": "sen ...san",
+            "derived": "your",
+            "derivedUz": "sening",
+            "note": "/jɔː/ — bir xil"
+          }
         ]
       },
       {
         "ruleUz": "Egalik sifati ↔ egalik olmoshi",
         "explanationUz": "Egalik sifati OT bilan keladi, egalik olmoshi YOLG'IZ turadi.",
         "items": [
-          { "base": "my book", "baseUz": "mening kitobim", "derived": "It's mine.", "derivedUz": "U meniki", "note": "my → mine" },
-          { "base": "your book", "baseUz": "sening kitobing", "derived": "It's yours.", "derivedUz": "U seniki", "note": "your → yours" },
-          { "base": "his book", "baseUz": "uning kitobi", "derived": "It's his.", "derivedUz": "U uniki", "note": "his → his (o'zgarmaydi)" },
-          { "base": "her book", "baseUz": "uning kitobi", "derived": "It's hers.", "derivedUz": "U uniki", "note": "her → hers" },
-          { "base": "our book", "baseUz": "bizning kitobimiz", "derived": "It's ours.", "derivedUz": "U bizniki", "note": "our → ours" },
-          { "base": "their book", "baseUz": "ularning kitobi", "derived": "It's theirs.", "derivedUz": "U ularniki", "note": "their → theirs" }
+          {
+            "base": "my book",
+            "baseUz": "mening kitobim",
+            "derived": "It's mine.",
+            "derivedUz": "U meniki",
+            "note": "my → mine"
+          },
+          {
+            "base": "your book",
+            "baseUz": "sening kitobing",
+            "derived": "It's yours.",
+            "derivedUz": "U seniki",
+            "note": "your → yours"
+          },
+          {
+            "base": "his book",
+            "baseUz": "uning kitobi",
+            "derived": "It's his.",
+            "derivedUz": "U uniki",
+            "note": "his → his (o'zgarmaydi)"
+          },
+          {
+            "base": "her book",
+            "baseUz": "uning kitobi",
+            "derived": "It's hers.",
+            "derivedUz": "U uniki",
+            "note": "her → hers"
+          },
+          {
+            "base": "our book",
+            "baseUz": "bizning kitobimiz",
+            "derived": "It's ours.",
+            "derivedUz": "U bizniki",
+            "note": "our → ours"
+          },
+          {
+            "base": "their book",
+            "baseUz": "ularning kitobi",
+            "derived": "It's theirs.",
+            "derivedUz": "U ularniki",
+            "note": "their → theirs"
+          }
         ]
       },
       {
         "ruleUz": "Qarindoshlik — o'zbekchada ko'p, inglizchada kam",
         "explanationUz": "Bitta inglizcha so'z bir necha o'zbekcha so'zni qoplaydi.",
         "items": [
-          { "base": "cousin", "baseUz": "amakivachcha, xolavachcha, tog'avachcha, ammavachcha", "derived": "my cousin", "derivedUz": "hammasi bitta so'z", "note": "erkak-ayol farqi ham yo'q" },
-          { "base": "uncle", "baseUz": "amaki, tog'a, pochcha", "derived": "my uncle", "derivedUz": "hammasi bitta so'z", "note": "" },
-          { "base": "aunt", "baseUz": "amma, xola, kelin (amakining xotini)", "derived": "my aunt", "derivedUz": "hammasi bitta so'z", "note": "" },
-          { "base": "nephew", "baseUz": "jiyan (o'g'il)", "derived": "my nephew", "derivedUz": "aka-uka yoki opa-singilning o'g'li", "note": "" },
-          { "base": "niece", "baseUz": "jiyan (qiz)", "derived": "my niece", "derivedUz": "aka-uka yoki opa-singilning qizi", "note": "" }
+          {
+            "base": "cousin",
+            "baseUz": "amakivachcha, xolavachcha, tog'avachcha, ammavachcha",
+            "derived": "my cousin",
+            "derivedUz": "hammasi bitta so'z",
+            "note": "erkak-ayol farqi ham yo'q"
+          },
+          {
+            "base": "uncle",
+            "baseUz": "amaki, tog'a, pochcha",
+            "derived": "my uncle",
+            "derivedUz": "hammasi bitta so'z",
+            "note": ""
+          },
+          {
+            "base": "aunt",
+            "baseUz": "amma, xola, kelin (amakining xotini)",
+            "derived": "my aunt",
+            "derivedUz": "hammasi bitta so'z",
+            "note": ""
+          },
+          {
+            "base": "nephew",
+            "baseUz": "jiyan (o'g'il)",
+            "derived": "my nephew",
+            "derivedUz": "aka-uka yoki opa-singilning o'g'li",
+            "note": ""
+          },
+          {
+            "base": "niece",
+            "baseUz": "jiyan (qiz)",
+            "derived": "my niece",
+            "derivedUz": "aka-uka yoki opa-singilning qizi",
+            "note": ""
+          }
         ]
       }
     ]
@@ -343,34 +924,121 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "a subject pronoun", "uz": "ega olmoshi" },
-    { "en": "an object pronoun", "uz": "obyekt olmoshi" },
-    { "en": "a possessive adjective", "uz": "egalik sifati" },
-    { "en": "the possessive case", "uz": "qaratqich kelishigi (egalik)" },
-    { "en": "my", "uz": "mening" },
-    { "en": "your", "uz": "sening, sizning" },
-    { "en": "his", "uz": "uning (erkak)" },
-    { "en": "her", "uz": "uning (ayol); unga" },
-    { "en": "its", "uz": "uning (narsa)" },
-    { "en": "our", "uz": "bizning" },
-    { "en": "their", "uz": "ularning" },
-    { "en": "Who's ...?", "uz": "... kim?" },
-    { "en": "Whose ...?", "uz": "... kimning?" },
-    { "en": "a possessor", "uz": "egasi" },
-    { "en": "a family tree", "uz": "oila daraxti" },
-    { "en": "a cousin", "uz": "amakivachcha, xolavachcha" },
-    { "en": "a relative", "uz": "qarindosh" },
-    { "en": "to guess", "uz": "topmoq, taxmin qilmoq" },
-    { "en": "a guess", "uz": "taxmin" },
-    { "en": "a board", "uz": "doska" },
-    { "en": "to point to", "uz": "ko'rsatmoq" },
-    { "en": "a desk", "uz": "parta, yozuv stoli" },
-    { "en": "to draw", "uz": "chizmoq" },
-    { "en": "to decorate", "uz": "bezamoq" },
-    { "en": "to open", "uz": "ochmoq" },
-    { "en": "a door", "uz": "eshik" },
-    { "en": "to ask", "uz": "so'ramoq" },
-    { "en": "to give", "uz": "bermoq" },
-    { "en": "hers", "uz": "uniki (ayol)" }
+    {
+      "en": "a subject pronoun",
+      "uz": "ega olmoshi"
+    },
+    {
+      "en": "an object pronoun",
+      "uz": "obyekt olmoshi"
+    },
+    {
+      "en": "a possessive adjective",
+      "uz": "egalik sifati"
+    },
+    {
+      "en": "the possessive case",
+      "uz": "qaratqich kelishigi (egalik)"
+    },
+    {
+      "en": "my",
+      "uz": "mening"
+    },
+    {
+      "en": "your",
+      "uz": "sening, sizning"
+    },
+    {
+      "en": "his",
+      "uz": "uning (erkak)"
+    },
+    {
+      "en": "her",
+      "uz": "uning (ayol); unga"
+    },
+    {
+      "en": "its",
+      "uz": "uning (narsa)"
+    },
+    {
+      "en": "our",
+      "uz": "bizning"
+    },
+    {
+      "en": "their",
+      "uz": "ularning"
+    },
+    {
+      "en": "Who's ...?",
+      "uz": "... kim?"
+    },
+    {
+      "en": "Whose ...?",
+      "uz": "... kimning?"
+    },
+    {
+      "en": "a possessor",
+      "uz": "egasi"
+    },
+    {
+      "en": "a family tree",
+      "uz": "oila daraxti"
+    },
+    {
+      "en": "a cousin",
+      "uz": "amakivachcha, xolavachcha"
+    },
+    {
+      "en": "a relative",
+      "uz": "qarindosh"
+    },
+    {
+      "en": "to guess",
+      "uz": "topmoq, taxmin qilmoq"
+    },
+    {
+      "en": "a guess",
+      "uz": "taxmin"
+    },
+    {
+      "en": "a board",
+      "uz": "doska"
+    },
+    {
+      "en": "to point to",
+      "uz": "ko'rsatmoq"
+    },
+    {
+      "en": "a desk",
+      "uz": "parta, yozuv stoli"
+    },
+    {
+      "en": "to draw",
+      "uz": "chizmoq"
+    },
+    {
+      "en": "to decorate",
+      "uz": "bezamoq"
+    },
+    {
+      "en": "to open",
+      "uz": "ochmoq"
+    },
+    {
+      "en": "a door",
+      "uz": "eshik"
+    },
+    {
+      "en": "to ask",
+      "uz": "so'ramoq"
+    },
+    {
+      "en": "to give",
+      "uz": "bermoq"
+    },
+    {
+      "en": "hers",
+      "uz": "uniki (ayol)"
+    }
   ]
 }
