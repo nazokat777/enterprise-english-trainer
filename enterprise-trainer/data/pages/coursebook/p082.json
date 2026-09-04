@@ -5,6 +5,7 @@
   "unit": 11,
   "unitTitle": "All's Well that Ends Well",
   "module": 3,
+  "scanNote": "TEKSHIRILDI (skan 76-bet): 6 rasm (A sherlar mashina atrofida, B tutun, C oldi yonayapti, D uzoqdan yong'in, E jipga qochish, F quchoqlashish) izohlangan. Ex.1 7 savol va har biri 2 tanlov skan bilan bir xil. Ex.2 7 voqea (1-si kitobda berilgan) va Ex.3 5 gap - javoblari 77-betdagi hikoya matnidan aniq olinadi, audio shart emas. Xato topilmadi.",
   "audioRequiredUz": "2-mashq — tovushlarni tinglab voqealarni tartiblash. 3-mashq — hikoyani tinglab kim nima aytganini aniqlash. HAR IKKALASINING javobi 77-betdagi hikoya matnida ANIQ yozilgan, shuning uchun to'liq berildi.",
   "sections": [
     {
@@ -20,12 +21,36 @@
           "explanationUz": "UNIT NOMI: 'All's Well that Ends Well'\n  = Oxiri yaxshi bo'lsa, hammasi yaxshi.\n  Bu — Shekspir pyesasining nomi, ingliz maqoliga aylangan.\n  Ma'nosi: qiyinchiliklar bo'lsa ham, natija yaxshi bo'lsa,\n  hammasi joyida.\n\nOLTI RASM — HIKOYA KETMA-KETLIGI:\n\n  A  Safari parkda mashina sherlar orasida qolgan.\n     Sherlar mashinani o'rab olgan, qo'rqinchli ko'rinadi.\n\n  B  Mashina ichida. Dvigateldan TUTUN chiqyapti.\n     Ikkalasi ham xavotirda.\n\n  C  Mashinaning oldi YONYAPTI. Ikkalasi dahshatda.\n\n  D  Mashina yonmoqda, yonida boshqa avtomobil,\n     sherlar hali ham atrofda.\n\n  E  Odamlar yonayotgan mashinadan 'Safari Park'\n     yozuvli jipga yugurib ketishyapti.\n\n  F  Er-xotin quchoqlashgan — qutulishdi, xursand.\n\nQAHRAMONLAR:\n  CLAIRE (Kler) — sariq sochli ayol\n  GREG (Greg)   — sariq sochli erkak\n  PARK RANGER   — parkni qo'riqlovchi xodim\n\nYANGI SO'ZLAR:\n  a safari park = safari park (hayvonlar erkin yuradigan bog')\n  a park ranger = park qo'riqchisi, bog' xodimi\n  an engine     = dvigatel\n  smoke         = tutun\n  on fire       = yonayotgan\n  scary         = qo'rqinchli\n  a jeep        = jip",
           "bookRef": "Coursebook, 76-bet, rasmlar",
           "points": [
-            { "en": "A — The car is in a safari park, surrounded by lions.", "uz": "A — Mashina safari parkda, sherlar o'rab olgan.", "noteUz": "'a safari park' = hayvonlar erkin yuradigan bog'.\nMashinadan chiqmaslik kerak." },
-            { "en": "B — Smoke is coming out of the engine.", "uz": "B — Dvigateldan tutun chiqyapti.", "noteUz": "'smoke' = tutun (sanalmaydigan).\n'an engine' = dvigatel." },
-            { "en": "C — The front of the car is on fire.", "uz": "C — Mashinaning old qismi yonyapti.", "noteUz": "'on fire' = yonayotgan.\n'the front of the car' = mashinaning old qismi." },
-            { "en": "D — The car is burning and the lions are still around.", "uz": "D — Mashina yonmoqda, sherlar hali ham atrofda.", "noteUz": "'to burn' = yonmoq.\n'around' = atrofida." },
-            { "en": "E — They are running from the car to the Safari Park jeep.", "uz": "E — Ular mashinadan Safari Park jipiga yugurishyapti.", "noteUz": "'to run TOWARDS' = ...tomon yugurmoq.\nJipda 'Safari Park' yozuvi bor." },
-            { "en": "F — They are safe. They are shocked but happy.", "uz": "F — Ular xavfsiz. Hayratda, lekin xursand.", "noteUz": "'safe' = xavfsiz.\n'shocked' = hayratda, sarosimada." }
+            {
+              "en": "A — The car is in a safari park, surrounded by lions.",
+              "uz": "A — Mashina safari parkda, sherlar o'rab olgan.",
+              "noteUz": "'a safari park' = hayvonlar erkin yuradigan bog'.\nMashinadan chiqmaslik kerak."
+            },
+            {
+              "en": "B — Smoke is coming out of the engine.",
+              "uz": "B — Dvigateldan tutun chiqyapti.",
+              "noteUz": "'smoke' = tutun (sanalmaydigan).\n'an engine' = dvigatel."
+            },
+            {
+              "en": "C — The front of the car is on fire.",
+              "uz": "C — Mashinaning old qismi yonyapti.",
+              "noteUz": "'on fire' = yonayotgan.\n'the front of the car' = mashinaning old qismi."
+            },
+            {
+              "en": "D — The car is burning and the lions are still around.",
+              "uz": "D — Mashina yonmoqda, sherlar hali ham atrofda.",
+              "noteUz": "'to burn' = yonmoq.\n'around' = atrofida."
+            },
+            {
+              "en": "E — They are running from the car to the Safari Park jeep.",
+              "uz": "E — Ular mashinadan Safari Park jipiga yugurishyapti.",
+              "noteUz": "'to run TOWARDS' = ...tomon yugurmoq.\nJipda 'Safari Park' yozuvi bor."
+            },
+            {
+              "en": "F — They are safe. They are shocked but happy.",
+              "uz": "F — Ular xavfsiz. Hayratda, lekin xursand.",
+              "noteUz": "'safe' = xavfsiz.\n'shocked' = hayratda, sarosimada."
+            }
           ]
         },
         {
@@ -36,13 +61,76 @@
           "explanationUz": "Javoblar RASMLARDAN topiladi — matnni o'qish shart emas.\n\nUSUL: har bir savolda qaysi RASM aytilganini toping,\nso'ng o'sha rasmga qarang.",
           "bookRef": "Coursebook, 76-bet, 1-mashq",
           "items": [
-            { "textEn": "1  Where are the two people in picture A?", "answer": "a In a safari park.", "options": ["a In a safari park.", "b In an aquarium."], "hintUz": "Rasmda qanday hayvonlar bor?", "whyUz": "A-rasmda SHERLAR erkin yuribdi → SAFARI PARK.\n'an aquarium' = akvarium (baliqlar uchun) — mos emas.\nHikoyada joy nomi ham bor: Longleat Safari Park." },
-            { "textEn": "2  How do the lions look in picture A?", "answer": "b Scary.", "options": ["a Friendly.", "b Scary."], "hintUz": "Sherlar mashinani o'rab olgan", "whyUz": "Sherlar mashinani o'rab olgan, tishlari ko'rinadi →\nQO'RQINChLI.\n'scary' = qo'rqinchli;  'friendly' = do'stona.\n77-betdagi matnda ham: 'very SCARY animals'." },
-            { "textEn": "3  What is coming out of the engine in picture B?", "answer": "b Smoke.", "options": ["a Fire.", "b Smoke."], "hintUz": "B-rasmda hali olov yo'q", "whyUz": "B-rasmda dvigateldan kulrang TUTUN chiqyapti — hali olov emas.\nOlov keyingi rasmda (C) paydo bo'ladi.\n77-betdagi matnda: 'SMOKE began to come out of the engine'." },
-            { "textEn": "4  What's wrong with the front of the car in picture C?", "answer": "a It's on fire.", "options": ["a It's on fire.", "b There's a lion on it."], "hintUz": "C-rasmda qizil-sariq ranglar", "whyUz": "C-rasmda mashinaning oldi YONYAPTI.\n77-betdagi matnda: 'the front of the car was ON FIRE'.\n'What's wrong with ...?' = ...da nima yomon?" },
-            { "textEn": "5  What does a park ranger do?", "answer": "a He looks after a park.", "options": ["a He looks after a park.", "b He puts out fires."], "hintUz": "'ranger' so'zining ma'nosi", "whyUz": "'a park ranger' = bog'ni QO'RIQLAYDIGAN va PARVARISH\nqiladigan xodim.\n'look after' = qaramoq, parvarish qilmoq.\n'put out fires' = o't o'chirmoq — bu o't o'chiruvchining ishi\n('a firefighter')." },
-            { "textEn": "6  How do the people feel in picture C?", "answer": "b Scared.", "options": ["a Happy.", "b Scared."], "hintUz": "Mashina yonyapti, sherlar atrofda", "whyUz": "Mashina yonyapti, chiqib bo'lmaydi → QO'RQQAN.\n'scared' = qo'rqqan.\n77-betdagi matnda: 'They were both really SCARED'." },
-            { "textEn": "7  How do they feel in picture F?", "answer": "a Shocked but happy.", "options": ["a Shocked but happy.", "b Tired and scared."], "hintUz": "Oxirgi rasmda quchoqlashgan", "whyUz": "F-rasmda quchoqlashgan va jilmayishyapti — qutulishdi.\nLekin hali sarosimadalar.\n77-betdagi matnda: 'They were still SHOCKED, but HAPPY'.\nUnit nomiga mos: 'All's Well that Ends Well'." }
+            {
+              "textEn": "1  Where are the two people in picture A?",
+              "answer": "a In a safari park.",
+              "options": [
+                "a In a safari park.",
+                "b In an aquarium."
+              ],
+              "hintUz": "Rasmda qanday hayvonlar bor?",
+              "whyUz": "A-rasmda SHERLAR erkin yuribdi → SAFARI PARK.\n'an aquarium' = akvarium (baliqlar uchun) — mos emas.\nHikoyada joy nomi ham bor: Longleat Safari Park."
+            },
+            {
+              "textEn": "2  How do the lions look in picture A?",
+              "answer": "b Scary.",
+              "options": [
+                "a Friendly.",
+                "b Scary."
+              ],
+              "hintUz": "Sherlar mashinani o'rab olgan",
+              "whyUz": "Sherlar mashinani o'rab olgan, tishlari ko'rinadi →\nQO'RQINChLI.\n'scary' = qo'rqinchli;  'friendly' = do'stona.\n77-betdagi matnda ham: 'very SCARY animals'."
+            },
+            {
+              "textEn": "3  What is coming out of the engine in picture B?",
+              "answer": "b Smoke.",
+              "options": [
+                "a Fire.",
+                "b Smoke."
+              ],
+              "hintUz": "B-rasmda hali olov yo'q",
+              "whyUz": "B-rasmda dvigateldan kulrang TUTUN chiqyapti — hali olov emas.\nOlov keyingi rasmda (C) paydo bo'ladi.\n77-betdagi matnda: 'SMOKE began to come out of the engine'."
+            },
+            {
+              "textEn": "4  What's wrong with the front of the car in picture C?",
+              "answer": "a It's on fire.",
+              "options": [
+                "a It's on fire.",
+                "b There's a lion on it."
+              ],
+              "hintUz": "C-rasmda qizil-sariq ranglar",
+              "whyUz": "C-rasmda mashinaning oldi YONYAPTI.\n77-betdagi matnda: 'the front of the car was ON FIRE'.\n'What's wrong with ...?' = ...da nima yomon?"
+            },
+            {
+              "textEn": "5  What does a park ranger do?",
+              "answer": "a He looks after a park.",
+              "options": [
+                "a He looks after a park.",
+                "b He puts out fires."
+              ],
+              "hintUz": "'ranger' so'zining ma'nosi",
+              "whyUz": "'a park ranger' = bog'ni QO'RIQLAYDIGAN va PARVARISH\nqiladigan xodim.\n'look after' = qaramoq, parvarish qilmoq.\n'put out fires' = o't o'chirmoq — bu o't o'chiruvchining ishi\n('a firefighter')."
+            },
+            {
+              "textEn": "6  How do the people feel in picture C?",
+              "answer": "b Scared.",
+              "options": [
+                "a Happy.",
+                "b Scared."
+              ],
+              "hintUz": "Mashina yonyapti, sherlar atrofda",
+              "whyUz": "Mashina yonyapti, chiqib bo'lmaydi → QO'RQQAN.\n'scared' = qo'rqqan.\n77-betdagi matnda: 'They were both really SCARED'."
+            },
+            {
+              "textEn": "7  How do they feel in picture F?",
+              "answer": "a Shocked but happy.",
+              "options": [
+                "a Shocked but happy.",
+                "b Tired and scared."
+              ],
+              "hintUz": "Oxirgi rasmda quchoqlashgan",
+              "whyUz": "F-rasmda quchoqlashgan va jilmayishyapti — qutulishdi.\nLekin hali sarosimadalar.\n77-betdagi matnda: 'They were still SHOCKED, but HAPPY'.\nUnit nomiga mos: 'All's Well that Ends Well'."
+            }
           ]
         },
         {
@@ -54,13 +142,49 @@
           "explanationUz": "Bu mashqda TOVUSHLAR tinglanadi:\n  kulgi, fotoapparat, sher bo'kirishi, dvigatel ovozi,\n  signal va qichqiriq, jip ovozi, yugurish qadamlari.\n\nTARTIB 77-BETDAGI HIKOYADA ANIQ YOZILGAN —\nshuning uchun bu yerda to'liq berildi.\n\nTO'G'RI TARTIB:\n\n  1  Claire laughed.                           (KITOBDA berilgan)\n  2  He stopped the car and started taking\n     pictures of the lions.\n  3  The lions roared loudly.\n  4  He tried to start the car several times.\n  5  She beeped the horn and shouted for help.\n  6  Just then, a park ranger came along the\n     road in his jeep.\n  7  They jumped out of the car quickly and\n     ran to the jeep.\n\nHIKOYADAGI KETMA-KETLIK (77-bet):\n  '... Claire LAUGHED. Soon, they saw some lions.\n   Greg STOPPED the car ... and started TAKING PICTURES.\n   The lions ROARED loudly. ...\n   He TRIED TO START the car several times ...\n   She BEEPED THE HORN and shouted for help.\n   Just then, a park ranger CAME ALONG the road in his jeep.\n   ... Claire and Greg JUMPED OUT of the car quickly and\n   RAN TOWARDS the jeep.'\n\nYANGI SO'ZLAR:\n  to roar      = bo'kirmoq (sher haqida)\n  to beep the horn = signal chalmoq\n  a horn       = signal (mashinada)\n  to jump out of = ...dan sakrab chiqmoq\n  along        = bo'ylab\n  just then    = shu payt",
           "bookRef": "Coursebook, 76-bet, 2-mashq",
           "items": [
-            { "textEn": "Claire laughed.", "answer": "1", "given": true, "hintUz": "KITOBDA berilgan", "whyUz": "BIRINCHI voqea.\nMatnda: \"'We don't want to be a lion's lunch,'\nClaire LAUGHED.\"\nBu — parkga kirganlarida, hali xavf yo'q edi." },
-            { "textEn": "He stopped the car and started taking pictures of the lions.", "answer": "2", "hintUz": "Sherlarni ko'rgach nima qildi?", "whyUz": "IKKINCHI voqea.\nMatnda: 'Greg STOPPED the car very close to the lions and\nSTARTED TAKING PICTURES of them.'\nA-rasmga mos keladi." },
-            { "textEn": "The lions roared loudly.", "answer": "3", "hintUz": "Sherlar yaqin kelgach", "whyUz": "UCHINCHI voqea.\nMatnda: 'The lions ROARED loudly.'\n'to roar' = bo'kirmoq." },
-            { "textEn": "He tried to start the car several times.", "answer": "4", "hintUz": "Ketmoqchi bo'lganda", "whyUz": "TO'RTINCHI voqea.\nMatnda: 'He TRIED TO START the car several times, but\nnothing happened.'\nMashina yurmadi — muammo shu yerdan boshlandi.\n'several times' = bir necha marta." },
-            { "textEn": "She beeped the horn and shouted for help.", "answer": "5", "hintUz": "Mashina yona boshlagach", "whyUz": "BESHINCHI voqea.\nMatnda: 'She BEEPED THE HORN and SHOUTED FOR HELP.'\nC-rasmga mos keladi.\n'shout FOR help' = yordam so'rab qichqirmoq." },
-            { "textEn": "Just then, a park ranger came along the road in his jeep.", "answer": "6", "hintUz": "Yordam keldi", "whyUz": "OLTINCHI voqea.\nMatnda: 'JUST THEN, a park ranger CAME ALONG the road in\nhis jeep.'\n'just then' = shu payt (kutilmaganda)." },
-            { "textEn": "They jumped out of the car quickly and ran to the jeep.", "answer": "7", "hintUz": "Eng oxirgi harakat", "whyUz": "YETTINChI voqea.\nMatnda: 'Claire and Greg JUMPED OUT of the car quickly and\nRAN TOWARDS the jeep.'\nE-rasmga mos keladi.\nDIQQAT: matnda 'ran TOWARDS', mashqda 'ran TO' —\nikkalasi ham to'g'ri." }
+            {
+              "textEn": "Claire laughed.",
+              "answer": "1",
+              "given": true,
+              "hintUz": "KITOBDA berilgan",
+              "whyUz": "BIRINCHI voqea.\nMatnda: \"'We don't want to be a lion's lunch,'\nClaire LAUGHED.\"\nBu — parkga kirganlarida, hali xavf yo'q edi."
+            },
+            {
+              "textEn": "He stopped the car and started taking pictures of the lions.",
+              "answer": "2",
+              "hintUz": "Sherlarni ko'rgach nima qildi?",
+              "whyUz": "IKKINCHI voqea.\nMatnda: 'Greg STOPPED the car very close to the lions and\nSTARTED TAKING PICTURES of them.'\nA-rasmga mos keladi."
+            },
+            {
+              "textEn": "The lions roared loudly.",
+              "answer": "3",
+              "hintUz": "Sherlar yaqin kelgach",
+              "whyUz": "UCHINCHI voqea.\nMatnda: 'The lions ROARED loudly.'\n'to roar' = bo'kirmoq."
+            },
+            {
+              "textEn": "He tried to start the car several times.",
+              "answer": "4",
+              "hintUz": "Ketmoqchi bo'lganda",
+              "whyUz": "TO'RTINCHI voqea.\nMatnda: 'He TRIED TO START the car several times, but\nnothing happened.'\nMashina yurmadi — muammo shu yerdan boshlandi.\n'several times' = bir necha marta."
+            },
+            {
+              "textEn": "She beeped the horn and shouted for help.",
+              "answer": "5",
+              "hintUz": "Mashina yona boshlagach",
+              "whyUz": "BESHINCHI voqea.\nMatnda: 'She BEEPED THE HORN and SHOUTED FOR HELP.'\nC-rasmga mos keladi.\n'shout FOR help' = yordam so'rab qichqirmoq."
+            },
+            {
+              "textEn": "Just then, a park ranger came along the road in his jeep.",
+              "answer": "6",
+              "hintUz": "Yordam keldi",
+              "whyUz": "OLTINCHI voqea.\nMatnda: 'JUST THEN, a park ranger CAME ALONG the road in\nhis jeep.'\n'just then' = shu payt (kutilmaganda)."
+            },
+            {
+              "textEn": "They jumped out of the car quickly and ran to the jeep.",
+              "answer": "7",
+              "hintUz": "Eng oxirgi harakat",
+              "whyUz": "YETTINChI voqea.\nMatnda: 'Claire and Greg JUMPED OUT of the car quickly and\nRAN TOWARDS the jeep.'\nE-rasmga mos keladi.\nDIQQAT: matnda 'ran TOWARDS', mashqda 'ran TO' —\nikkalasi ham to'g'ri."
+            }
           ]
         },
         {
@@ -72,11 +196,61 @@
           "explanationUz": "UCH QAHRAMON:\n  C = CLAIRE (Kler) — ayol\n  G = GREG (Greg) — erkak\n  P = PARK RANGER (park qo'riqchisi)\n\nJavoblar 77-betdagi hikoya matnida ANIQ yozilgan —\nhar bir gapdan keyin kim aytgani ko'rsatilgan.\n\nUSUL — ISM CHAQIRILSA, BOSHQASI AYTADI:\n  \"You're right, CLAIRE ...\" → GREG aytdi\n\nMANTIQ ham yordam beradi:\n  Qutqaruvchi gap ('we'll get you out') → RANGER\n  Qo'rquv gaplari → CLAIRE (u ko'proq qo'rqadi)",
           "bookRef": "Coursebook, 76-bet, 3-mashq",
           "items": [
-            { "textEn": "a  \"We don't want to be a lion's lunch.\"", "answer": "C", "options": ["C", "G", "P"], "hintUz": "Derazalarni yopishganda kim kulgan edi?", "whyUz": "CLAIRE.\nMatnda: \"'We don't want to be a lion's lunch,'\nCLAIRE LAUGHED.\"\n2-mashqning 1-bandi ham shu gapga asoslanadi.\n\"a lion's LUNCH\" = sherning tushligi — hazil.\n'lion'S' — egalik apostrofi." },
-            { "textEn": "b  \"They're beautiful, but very scary animals.\"", "answer": "C", "options": ["C", "G", "P"], "hintUz": "Sherlar bo'kirgach kim gapirdi?", "whyUz": "CLAIRE.\nMatnda: \"'They're beautiful, but very scary animals,'\nCLAIRE SAID.\"\nKeyingi gapda Greg 'You're right, CLAIRE' deydi —\nbu ham tasdiqlaydi." },
-            { "textEn": "c  \"Let's go and see the gorillas, now.\"", "answer": "G", "options": ["C", "G", "P"], "hintUz": "Kimdir 'You're right, Claire' deb boshlagan edi", "whyUz": "GREG.\nMatnda: \"'You're right, Claire. Let's go and see the\ngorillas, now,' GREG SAID.\"\nDIQQAT: gapda 'Claire' CHAQIRILGAN → demak BOShQASI\n(Greg) aytdi.\n'a gorilla' = gorilla." },
-            { "textEn": "d  \"We'll burn alive!\"", "answer": "C", "options": ["C", "G", "P"], "hintUz": "Mashina yonganda kim qichqirdi?", "whyUz": "CLAIRE.\nMatnda: \"'We'll burn alive!' CLAIRE SCREAMED desperately.\"\n'to burn alive' = tiriklayin yonmoq.\n'desperately' = umidsizlik bilan, jon holatda.\n'we'll' = we WILL — kelasi zamon bashorati (69-betdagi qoida)." },
-            { "textEn": "e  \"Hold on, we'll get you out!\"", "answer": "P", "options": ["C", "G", "P"], "hintUz": "Kim qutqarishga keldi?", "whyUz": "PARK RANGER.\nMatnda: \"'Hold on, we'll get you out!' HE SHOUTED\" —\n'he' = oldingi gapda aytilgan park ranger.\n'Hold on!' = chidang! kuting!\n'get somebody out' = kimnidir chiqarib olmoq." }
+            {
+              "textEn": "a  \"We don't want to be a lion's lunch.\"",
+              "answer": "C",
+              "options": [
+                "C",
+                "G",
+                "P"
+              ],
+              "hintUz": "Derazalarni yopishganda kim kulgan edi?",
+              "whyUz": "CLAIRE.\nMatnda: \"'We don't want to be a lion's lunch,'\nCLAIRE LAUGHED.\"\n2-mashqning 1-bandi ham shu gapga asoslanadi.\n\"a lion's LUNCH\" = sherning tushligi — hazil.\n'lion'S' — egalik apostrofi."
+            },
+            {
+              "textEn": "b  \"They're beautiful, but very scary animals.\"",
+              "answer": "C",
+              "options": [
+                "C",
+                "G",
+                "P"
+              ],
+              "hintUz": "Sherlar bo'kirgach kim gapirdi?",
+              "whyUz": "CLAIRE.\nMatnda: \"'They're beautiful, but very scary animals,'\nCLAIRE SAID.\"\nKeyingi gapda Greg 'You're right, CLAIRE' deydi —\nbu ham tasdiqlaydi."
+            },
+            {
+              "textEn": "c  \"Let's go and see the gorillas, now.\"",
+              "answer": "G",
+              "options": [
+                "C",
+                "G",
+                "P"
+              ],
+              "hintUz": "Kimdir 'You're right, Claire' deb boshlagan edi",
+              "whyUz": "GREG.\nMatnda: \"'You're right, Claire. Let's go and see the\ngorillas, now,' GREG SAID.\"\nDIQQAT: gapda 'Claire' CHAQIRILGAN → demak BOShQASI\n(Greg) aytdi.\n'a gorilla' = gorilla."
+            },
+            {
+              "textEn": "d  \"We'll burn alive!\"",
+              "answer": "C",
+              "options": [
+                "C",
+                "G",
+                "P"
+              ],
+              "hintUz": "Mashina yonganda kim qichqirdi?",
+              "whyUz": "CLAIRE.\nMatnda: \"'We'll burn alive!' CLAIRE SCREAMED desperately.\"\n'to burn alive' = tiriklayin yonmoq.\n'desperately' = umidsizlik bilan, jon holatda.\n'we'll' = we WILL — kelasi zamon bashorati (69-betdagi qoida)."
+            },
+            {
+              "textEn": "e  \"Hold on, we'll get you out!\"",
+              "answer": "P",
+              "options": [
+                "C",
+                "G",
+                "P"
+              ],
+              "hintUz": "Kim qutqarishga keldi?",
+              "whyUz": "PARK RANGER.\nMatnda: \"'Hold on, we'll get you out!' HE SHOUTED\" —\n'he' = oldingi gapda aytilgan park ranger.\n'Hold on!' = chidang! kuting!\n'get somebody out' = kimnidir chiqarib olmoq."
+            }
           ]
         }
       ]
@@ -90,64 +264,268 @@
         "ruleUz": "Safari park va hayvon lug'ati",
         "explanationUz": "Hikoyaning asosiy so'zlari.",
         "items": [
-          { "base": "a safari park", "baseUz": "safari park", "derived": "hayvonlar ERKIN yuradi", "derivedUz": "mashinada aylaniladi", "note": "" },
-          { "base": "a park ranger", "baseUz": "park qo'riqchisi", "derived": "to look after a park", "derivedUz": "bog'ni parvarish qiladi", "note": "" },
-          { "base": "a lion", "baseUz": "sher", "derived": "a lioness", "derivedUz": "urg'ochi sher", "note": "-ESS ayol jinsi" },
-          { "base": "a gorilla", "baseUz": "gorilla", "derived": "", "derivedUz": "", "note": "" },
-          { "base": "to roar", "baseUz": "bo'kirmoq", "derived": "sher, yo'lbars", "derivedUz": "roared loudly", "note": "" },
-          { "base": "to chase", "baseUz": "quvmoq", "derived": "chase away", "derivedUz": "quvib yubormoq", "note": "" },
-          { "base": "an aquarium", "baseUz": "akvarium", "derived": "baliqlar uchun", "derivedUz": "", "note": "1-mashqda variant" }
+          {
+            "base": "a safari park",
+            "baseUz": "safari park",
+            "derived": "hayvonlar ERKIN yuradi",
+            "derivedUz": "mashinada aylaniladi",
+            "note": ""
+          },
+          {
+            "base": "a park ranger",
+            "baseUz": "park qo'riqchisi",
+            "derived": "to look after a park",
+            "derivedUz": "bog'ni parvarish qiladi",
+            "note": ""
+          },
+          {
+            "base": "a lion",
+            "baseUz": "sher",
+            "derived": "a lioness",
+            "derivedUz": "urg'ochi sher",
+            "note": "-ESS ayol jinsi"
+          },
+          {
+            "base": "a gorilla",
+            "baseUz": "gorilla",
+            "derived": "",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "to roar",
+            "baseUz": "bo'kirmoq",
+            "derived": "sher, yo'lbars",
+            "derivedUz": "roared loudly",
+            "note": ""
+          },
+          {
+            "base": "to chase",
+            "baseUz": "quvmoq",
+            "derived": "chase away",
+            "derivedUz": "quvib yubormoq",
+            "note": ""
+          },
+          {
+            "base": "an aquarium",
+            "baseUz": "akvarium",
+            "derived": "baliqlar uchun",
+            "derivedUz": "",
+            "note": "1-mashqda variant"
+          }
         ]
       },
       {
         "ruleUz": "Yong'in va xavf lug'ati",
         "explanationUz": "Hikoyaning tugun qismidan.",
         "items": [
-          { "base": "an engine", "baseUz": "dvigatel", "derived": "", "derivedUz": "", "note": "" },
-          { "base": "smoke", "baseUz": "tutun", "derived": "SANALMAYDIGAN", "derivedUz": "'a smoke' XATO", "note": "" },
-          { "base": "fire", "baseUz": "olov, yong'in", "derived": "on fire", "derivedUz": "yonayotgan", "note": "" },
-          { "base": "to burn", "baseUz": "yonmoq", "derived": "burn alive", "derivedUz": "tiriklayin yonmoq", "note": "" },
-          { "base": "to put out a fire", "baseUz": "o't o'chirmoq", "derived": "a firefighter", "derivedUz": "o't o'chiruvchi", "note": "1-mashqda variant" },
-          { "base": "a horn", "baseUz": "signal (mashinada)", "derived": "to beep the horn", "derivedUz": "signal chalmoq", "note": "" },
-          { "base": "a jeep", "baseUz": "jip", "derived": "", "derivedUz": "", "note": "" }
+          {
+            "base": "an engine",
+            "baseUz": "dvigatel",
+            "derived": "",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "smoke",
+            "baseUz": "tutun",
+            "derived": "SANALMAYDIGAN",
+            "derivedUz": "'a smoke' XATO",
+            "note": ""
+          },
+          {
+            "base": "fire",
+            "baseUz": "olov, yong'in",
+            "derived": "on fire",
+            "derivedUz": "yonayotgan",
+            "note": ""
+          },
+          {
+            "base": "to burn",
+            "baseUz": "yonmoq",
+            "derived": "burn alive",
+            "derivedUz": "tiriklayin yonmoq",
+            "note": ""
+          },
+          {
+            "base": "to put out a fire",
+            "baseUz": "o't o'chirmoq",
+            "derived": "a firefighter",
+            "derivedUz": "o't o'chiruvchi",
+            "note": "1-mashqda variant"
+          },
+          {
+            "base": "a horn",
+            "baseUz": "signal (mashinada)",
+            "derived": "to beep the horn",
+            "derivedUz": "signal chalmoq",
+            "note": ""
+          },
+          {
+            "base": "a jeep",
+            "baseUz": "jip",
+            "derived": "",
+            "derivedUz": "",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "His-tuyg'u sifatlari",
         "explanationUz": "1-mashqning javoblaridan.",
         "items": [
-          { "base": "scary", "baseUz": "qo'rqinchli", "derived": "narsa/hayvon haqida", "derivedUz": "scary animals", "note": "" },
-          { "base": "scared", "baseUz": "qo'rqqan", "derived": "ODAM haqida", "derivedUz": "they were scared", "note": "farqiga e'tibor bering" },
-          { "base": "shocked", "baseUz": "hayratda, sarosimada", "derived": "a shock", "derivedUz": "zarba, hayrat", "note": "" },
-          { "base": "happy", "baseUz": "xursand", "derived": "happiness", "derivedUz": "baxt", "note": "" },
-          { "base": "friendly", "baseUz": "do'stona", "derived": "friend + -ly", "derivedUz": "SIFAT", "note": "" },
-          { "base": "lucky", "baseUz": "omadli", "derived": "luck", "derivedUz": "omad", "note": "77-betda" },
-          { "base": "safe", "baseUz": "xavfsiz", "derived": "safety", "derivedUz": "xavfsizlik", "note": "" }
+          {
+            "base": "scary",
+            "baseUz": "qo'rqinchli",
+            "derived": "narsa/hayvon haqida",
+            "derivedUz": "scary animals",
+            "note": ""
+          },
+          {
+            "base": "scared",
+            "baseUz": "qo'rqqan",
+            "derived": "ODAM haqida",
+            "derivedUz": "they were scared",
+            "note": "farqiga e'tibor bering"
+          },
+          {
+            "base": "shocked",
+            "baseUz": "hayratda, sarosimada",
+            "derived": "a shock",
+            "derivedUz": "zarba, hayrat",
+            "note": ""
+          },
+          {
+            "base": "happy",
+            "baseUz": "xursand",
+            "derived": "happiness",
+            "derivedUz": "baxt",
+            "note": ""
+          },
+          {
+            "base": "friendly",
+            "baseUz": "do'stona",
+            "derived": "friend + -ly",
+            "derivedUz": "SIFAT",
+            "note": ""
+          },
+          {
+            "base": "lucky",
+            "baseUz": "omadli",
+            "derived": "luck",
+            "derivedUz": "omad",
+            "note": "77-betda"
+          },
+          {
+            "base": "safe",
+            "baseUz": "xavfsiz",
+            "derived": "safety",
+            "derivedUz": "xavfsizlik",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "SCARY va SCARED — eng ko'p adashtiriladigan juftlik",
         "explanationUz": "-ING va -ED sifatlari kabi.",
         "items": [
-          { "base": "scary", "baseUz": "qo'rqinchli", "derived": "NARSA qanday", "derivedUz": "a scary film", "note": "qo'rquv BERADI" },
-          { "base": "scared", "baseUz": "qo'rqqan", "derived": "ODAM qanday his qiladi", "derivedUz": "I am scared", "note": "qo'rquvni SEZADI" },
-          { "base": "boring", "baseUz": "zerikarli", "derived": "NARSA", "derivedUz": "a boring book", "note": "shu naqsh" },
-          { "base": "bored", "baseUz": "zerikkan", "derived": "ODAM", "derivedUz": "I am bored", "note": "shu naqsh" },
-          { "base": "exciting", "baseUz": "hayajonli", "derived": "NARSA", "derivedUz": "", "note": "" },
-          { "base": "excited", "baseUz": "hayajonlangan", "derived": "ODAM", "derivedUz": "", "note": "" }
+          {
+            "base": "scary",
+            "baseUz": "qo'rqinchli",
+            "derived": "NARSA qanday",
+            "derivedUz": "a scary film",
+            "note": "qo'rquv BERADI"
+          },
+          {
+            "base": "scared",
+            "baseUz": "qo'rqqan",
+            "derived": "ODAM qanday his qiladi",
+            "derivedUz": "I am scared",
+            "note": "qo'rquvni SEZADI"
+          },
+          {
+            "base": "boring",
+            "baseUz": "zerikarli",
+            "derived": "NARSA",
+            "derivedUz": "a boring book",
+            "note": "shu naqsh"
+          },
+          {
+            "base": "bored",
+            "baseUz": "zerikkan",
+            "derived": "ODAM",
+            "derivedUz": "I am bored",
+            "note": "shu naqsh"
+          },
+          {
+            "base": "exciting",
+            "baseUz": "hayajonli",
+            "derived": "NARSA",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "excited",
+            "baseUz": "hayajonlangan",
+            "derived": "ODAM",
+            "derivedUz": "",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Harakat fe'llari (2-mashqdan)",
         "explanationUz": "Hikoyadagi voqealar.",
         "items": [
-          { "base": "to laugh", "baseUz": "kulmoq", "derived": "laughed", "derivedUz": "'gh' /f/ deb o'qiladi", "note": "/lɑːf/" },
-          { "base": "to stop", "baseUz": "to'xtatmoq", "derived": "stopped", "derivedUz": "P IKKILANADI", "note": "" },
-          { "base": "to try", "baseUz": "urinmoq", "derived": "tried", "derivedUz": "undosh + Y → IED", "note": "" },
-          { "base": "to beep", "baseUz": "signal chalmoq", "derived": "beeped", "derivedUz": "", "note": "" },
-          { "base": "to shout", "baseUz": "qichqirmoq", "derived": "shouted", "derivedUz": "shout FOR help", "note": "" },
-          { "base": "to jump", "baseUz": "sakramoq", "derived": "jumped", "derivedUz": "jump OUT OF", "note": "" },
-          { "base": "to run", "baseUz": "yugurmoq", "derived": "ran", "derivedUz": "NOTO'G'RI fe'l", "note": "run TOWARDS" }
+          {
+            "base": "to laugh",
+            "baseUz": "kulmoq",
+            "derived": "laughed",
+            "derivedUz": "'gh' /f/ deb o'qiladi",
+            "note": "/lɑːf/"
+          },
+          {
+            "base": "to stop",
+            "baseUz": "to'xtatmoq",
+            "derived": "stopped",
+            "derivedUz": "P IKKILANADI",
+            "note": ""
+          },
+          {
+            "base": "to try",
+            "baseUz": "urinmoq",
+            "derived": "tried",
+            "derivedUz": "undosh + Y → IED",
+            "note": ""
+          },
+          {
+            "base": "to beep",
+            "baseUz": "signal chalmoq",
+            "derived": "beeped",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "to shout",
+            "baseUz": "qichqirmoq",
+            "derived": "shouted",
+            "derivedUz": "shout FOR help",
+            "note": ""
+          },
+          {
+            "base": "to jump",
+            "baseUz": "sakramoq",
+            "derived": "jumped",
+            "derivedUz": "jump OUT OF",
+            "note": ""
+          },
+          {
+            "base": "to run",
+            "baseUz": "yugurmoq",
+            "derived": "ran",
+            "derivedUz": "NOTO'G'RI fe'l",
+            "note": "run TOWARDS"
+          }
         ]
       }
     ]
@@ -195,33 +573,117 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "All's Well that Ends Well", "uz": "Oxiri yaxshi bo'lsa, hammasi yaxshi" },
-    { "en": "a safari park", "uz": "safari park" },
-    { "en": "a park ranger", "uz": "park qo'riqchisi" },
-    { "en": "an aquarium", "uz": "akvarium" },
-    { "en": "a lion", "uz": "sher" },
-    { "en": "a gorilla", "uz": "gorilla" },
-    { "en": "to roar", "uz": "bo'kirmoq" },
-    { "en": "an engine", "uz": "dvigatel" },
-    { "en": "smoke", "uz": "tutun" },
-    { "en": "on fire", "uz": "yonayotgan" },
-    { "en": "to burn alive", "uz": "tiriklayin yonmoq" },
-    { "en": "to put out a fire", "uz": "o't o'chirmoq" },
-    { "en": "a horn", "uz": "signal (mashinada)" },
-    { "en": "to beep the horn", "uz": "signal chalmoq" },
-    { "en": "a jeep", "uz": "jip" },
-    { "en": "scary", "uz": "qo'rqinchli" },
-    { "en": "scared", "uz": "qo'rqqan" },
-    { "en": "shocked", "uz": "hayratda, sarosimada" },
-    { "en": "friendly", "uz": "do'stona" },
-    { "en": "to look after", "uz": "qaramoq, parvarish qilmoq" },
-    { "en": "to shout for help", "uz": "yordam so'rab qichqirmoq" },
-    { "en": "to jump out of", "uz": "...dan sakrab chiqmoq" },
-    { "en": "just then", "uz": "shu payt" },
-    { "en": "along", "uz": "bo'ylab" },
-    { "en": "Hold on!", "uz": "Chidang! Kuting!" },
-    { "en": "to get somebody out", "uz": "kimnidir chiqarib olmoq" },
-    { "en": "desperately", "uz": "umidsizlik bilan, jon holatda" },
-    { "en": "several times", "uz": "bir necha marta" }
+    {
+      "en": "All's Well that Ends Well",
+      "uz": "Oxiri yaxshi bo'lsa, hammasi yaxshi"
+    },
+    {
+      "en": "a safari park",
+      "uz": "safari park"
+    },
+    {
+      "en": "a park ranger",
+      "uz": "park qo'riqchisi"
+    },
+    {
+      "en": "an aquarium",
+      "uz": "akvarium"
+    },
+    {
+      "en": "a lion",
+      "uz": "sher"
+    },
+    {
+      "en": "a gorilla",
+      "uz": "gorilla"
+    },
+    {
+      "en": "to roar",
+      "uz": "bo'kirmoq"
+    },
+    {
+      "en": "an engine",
+      "uz": "dvigatel"
+    },
+    {
+      "en": "smoke",
+      "uz": "tutun"
+    },
+    {
+      "en": "on fire",
+      "uz": "yonayotgan"
+    },
+    {
+      "en": "to burn alive",
+      "uz": "tiriklayin yonmoq"
+    },
+    {
+      "en": "to put out a fire",
+      "uz": "o't o'chirmoq"
+    },
+    {
+      "en": "a horn",
+      "uz": "signal (mashinada)"
+    },
+    {
+      "en": "to beep the horn",
+      "uz": "signal chalmoq"
+    },
+    {
+      "en": "a jeep",
+      "uz": "jip"
+    },
+    {
+      "en": "scary",
+      "uz": "qo'rqinchli"
+    },
+    {
+      "en": "scared",
+      "uz": "qo'rqqan"
+    },
+    {
+      "en": "shocked",
+      "uz": "hayratda, sarosimada"
+    },
+    {
+      "en": "friendly",
+      "uz": "do'stona"
+    },
+    {
+      "en": "to look after",
+      "uz": "qaramoq, parvarish qilmoq"
+    },
+    {
+      "en": "to shout for help",
+      "uz": "yordam so'rab qichqirmoq"
+    },
+    {
+      "en": "to jump out of",
+      "uz": "...dan sakrab chiqmoq"
+    },
+    {
+      "en": "just then",
+      "uz": "shu payt"
+    },
+    {
+      "en": "along",
+      "uz": "bo'ylab"
+    },
+    {
+      "en": "Hold on!",
+      "uz": "Chidang! Kuting!"
+    },
+    {
+      "en": "to get somebody out",
+      "uz": "kimnidir chiqarib olmoq"
+    },
+    {
+      "en": "desperately",
+      "uz": "umidsizlik bilan, jon holatda"
+    },
+    {
+      "en": "several times",
+      "uz": "bir necha marta"
+    }
   ]
 }
