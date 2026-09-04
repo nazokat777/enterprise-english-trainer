@@ -5,6 +5,7 @@
   "unit": 7,
   "unitTitle": "Come Rain or Shine",
   "module": 2,
+  "scanNote": "TEKSHIRILDI (skan 53-bet): Ex.22 ikki qoida, Ex.23 namuna (Pam) va 4 ta prompt (John/shirt and tie/jumpers, Ellen/shorts/long skirts, Tim/jeans and trainers/a suit, Donna/trousers/dresses) mos. Ex.24 ro'yxati 14 so'z - skan bilan bir xil. Ex.25 dialogi 4 bo'shliq (Can / please / would / Here) va rasmdagi kiyimlar: yashil ko'ylak, qora pidjak, sariq jemper, qizil yubka - mos. Writing rejasi va Words of Wisdom 3 maqoli mos. Xato topilmadi.",
   "sections": [
     {
       "kind": "grammar",
@@ -19,8 +20,18 @@
           "explanationUz": "KITOBDAGI IKKI MISOL:\n\n  John usually WEARS jeans and T-shirts.\n     = Jon odatda jinsi shim va futbolka kiyadi.  (ODAT)\n\n  John's WEARING a suit and tie today.\n     = Jon bugun kostyum va galstuk kiygan.  (BUGUN, HOZIR)\n\nBIR ODAM, BIR FE'L — IKKI ZAMON:\n  'usually' bor  → PRESENT SIMPLE\n  'today' bor    → PRESENT CONTINUOUS\n\nTO'LDIRILADIGAN QOIDALAR:\n  We use ............ to talk about habits and daily routines.\n  We use ............ to talk about actions happening now,\n  at the moment of speaking.\n\n  = Odat va kundalik tartib haqida gapirish uchun ...... ishlatamiz.\n    Hozir, gapirayotgan paytda sodir bo'layotgan ish haqida\n    gapirish uchun ...... ishlatamiz.",
           "bookRef": "Coursebook, 53-bet, 22-mashq",
           "items": [
-            { "textEn": "We use ............ to talk about habits and daily routines.", "answer": "the present simple", "hintUz": "'John usually wears ...' — qaysi zamon?", "whyUz": "ODAT va KUNDALIK TARTIB → PRESENT SIMPLE.\nMisol: John usually WEARS jeans.\nBelgilari: usually, always, often, sometimes, never,\nevery day, in his free time." },
-            { "textEn": "We use ............ to talk about actions happening now, at the moment of speaking.", "answer": "the present continuous", "hintUz": "'John's wearing ... today' — qaysi zamon?", "whyUz": "HOZIR sodir bo'layotgan ish → PRESENT CONTINUOUS.\nMisol: John's WEARING a suit today.\nBelgilari: now, at the moment, at present, today." }
+            {
+              "textEn": "We use ............ to talk about habits and daily routines.",
+              "answer": "the present simple",
+              "hintUz": "'John usually wears ...' — qaysi zamon?",
+              "whyUz": "ODAT va KUNDALIK TARTIB → PRESENT SIMPLE.\nMisol: John usually WEARS jeans.\nBelgilari: usually, always, often, sometimes, never,\nevery day, in his free time."
+            },
+            {
+              "textEn": "We use ............ to talk about actions happening now, at the moment of speaking.",
+              "answer": "the present continuous",
+              "hintUz": "'John's wearing ... today' — qaysi zamon?",
+              "whyUz": "HOZIR sodir bo'layotgan ish → PRESENT CONTINUOUS.\nMisol: John's WEARING a suit today.\nBelgilari: now, at the moment, at present, today."
+            }
           ]
         },
         {
@@ -32,11 +43,37 @@
           "explanationUz": "KITOBDAGI DIALOG (rasmda kafeda o'tirgan ikki ayol):\n\n  A: Look at Pam! She's wearing a dress today!\n  B: Oh, yes! She usually wears jeans and T-shirts.\n     She looks nice in a dress!\n\nO'ZBEKCHA TARJIMASI:\n  A: Pamga qara! U bugun ko'ylak kiygan!\n  B: Ha, rostdan! U odatda jinsi shim va futbolka kiyadi.\n     Unga ko'ylak juda yarashadi!\n\nDIALOG UCH GAPDAN IBORAT:\n  1) BUGUN nima kiyganini aytish  → Present Continuous\n  2) ODATDA nima kiyishini aytish → Present Simple\n  3) Maqtash                       → 'looks nice in ...'\n\nBERILGAN SO'ZLAR (ism / bugungi kiyim / odatdagi kiyim):\n  John  / shirt and tie      / jumpers\n  Ellen / shorts             / long skirts\n  Tim   / jeans and trainers / a suit\n  Donna / trousers           / dresses\n\nDIQQAT — 'look nice IN + kiyim':\n  'She looks nice IN a dress' — 'in' predlogi SHART.\n  'look nice with a dress' XATO.",
           "bookRef": "Coursebook, 53-bet, 23-mashq",
           "items": [
-            { "prompt": "Pam / a dress / jeans and T-shirts (kitobdagi namuna)", "question": "Look at Pam! She's wearing a dress today!", "answer": "Oh, yes! She usually wears jeans and T-shirts. She looks nice in a dress!", "given": true, "whyUz": "Kitobda BERILGAN namuna.\n'She's wearing' = hozirgi holat; 'She usually wears' = odat." },
-            { "prompt": "John / shirt and tie / jumpers", "question": "Look at John! He's wearing a shirt and tie today!", "answer": "Oh, yes! He usually wears jumpers. He looks nice in a shirt and tie!", "whyUz": "Jon — erkak → HE.\n'wears' — birlik 3-shaxs → -S." },
-            { "prompt": "Ellen / shorts / long skirts", "question": "Look at Ellen! She's wearing shorts today!", "answer": "Oh, yes! She usually wears long skirts. She looks nice in shorts!", "whyUz": "'shorts' — KO'PLIK → 'a' YO'Q.\n'long skirts' ham ko'plikda." },
-            { "prompt": "Tim / jeans and trainers / a suit", "question": "Look at Tim! He's wearing jeans and trainers today!", "answer": "Oh, yes! He usually wears a suit. He looks nice in jeans and trainers!", "whyUz": "'jeans' va 'trainers' — ko'plik → 'a' yo'q.\n'a suit' — birlik → 'a' bilan." },
-            { "prompt": "Donna / trousers / dresses", "question": "Look at Donna! She's wearing trousers today!", "answer": "Oh, yes! She usually wears dresses. She looks nice in trousers!", "whyUz": "'trousers' — KO'PLIK → 'a' YO'Q.\n'dresses' — 'dress' ning ko'pligi (-ss → -ES)." }
+            {
+              "prompt": "Pam / a dress / jeans and T-shirts (kitobdagi namuna)",
+              "question": "Look at Pam! She's wearing a dress today!",
+              "answer": "Oh, yes! She usually wears jeans and T-shirts. She looks nice in a dress!",
+              "given": true,
+              "whyUz": "Kitobda BERILGAN namuna.\n'She's wearing' = hozirgi holat; 'She usually wears' = odat."
+            },
+            {
+              "prompt": "John / shirt and tie / jumpers",
+              "question": "Look at John! He's wearing a shirt and tie today!",
+              "answer": "Oh, yes! He usually wears jumpers. He looks nice in a shirt and tie!",
+              "whyUz": "Jon — erkak → HE.\n'wears' — birlik 3-shaxs → -S."
+            },
+            {
+              "prompt": "Ellen / shorts / long skirts",
+              "question": "Look at Ellen! She's wearing shorts today!",
+              "answer": "Oh, yes! She usually wears long skirts. She looks nice in shorts!",
+              "whyUz": "'shorts' — KO'PLIK → 'a' YO'Q.\n'long skirts' ham ko'plikda."
+            },
+            {
+              "prompt": "Tim / jeans and trainers / a suit",
+              "question": "Look at Tim! He's wearing jeans and trainers today!",
+              "answer": "Oh, yes! He usually wears a suit. He looks nice in jeans and trainers!",
+              "whyUz": "'jeans' va 'trainers' — ko'plik → 'a' yo'q.\n'a suit' — birlik → 'a' bilan."
+            },
+            {
+              "prompt": "Donna / trousers / dresses",
+              "question": "Look at Donna! She's wearing trousers today!",
+              "answer": "Oh, yes! She usually wears dresses. She looks nice in trousers!",
+              "whyUz": "'trousers' — KO'PLIK → 'a' YO'Q.\n'dresses' — 'dress' ning ko'pligi (-ss → -ES)."
+            }
           ]
         }
       ]
@@ -53,22 +90,93 @@
           "instructionUz": "Ikki jamoa bo'lib ishlang. Navbatma-navbat ro'yxatdan so'z tanlab, gap tuzing. Har bir to'g'ri gap uchun bir ochko. Eng ko'p ochkoli jamoa g'olib bo'ladi.",
           "explanationUz": "O'YIN SO'ZLARI (14 ta) — butun 7-unit lug'ati:\n  jacket, snowy, boiling hot, what about, hot, enjoy,\n  freezing cold, weather, cloudy, too tight, too long,\n  sunbathing, temperature, season\n\nQOIDALAR:\n  • Ikki jamoaga bo'linasiz\n  • Navbat bilan ro'yxatdan so'z tanlaysiz\n  • O'sha so'z bilan TO'G'RI gap tuzasiz\n  • Har bir to'g'ri gap — 1 ochko\n  • Ko'p ochkoli jamoa g'olib\n\nQuyida har bir so'z uchun namuna gap berilgan.",
           "bookRef": "Coursebook, 53-bet, 24-mashq",
-          "wordList": ["jacket", "snowy", "boiling hot", "what about", "hot", "enjoy", "freezing cold", "weather", "cloudy", "too tight", "too long", "sunbathing", "temperature", "season"],
+          "wordList": [
+            "jacket",
+            "snowy",
+            "boiling hot",
+            "what about",
+            "hot",
+            "enjoy",
+            "freezing cold",
+            "weather",
+            "cloudy",
+            "too tight",
+            "too long",
+            "sunbathing",
+            "temperature",
+            "season"
+          ],
           "modelSentences": [
-            { "word": "jacket", "sentence": "John is wearing a leather jacket today.", "uz": "'kurtka' so'zi bilan gap tuzing" },
-            { "word": "snowy", "sentence": "It's a snowy day in Prague.", "uz": "'qorli' so'zi bilan gap tuzing" },
-            { "word": "boiling hot", "sentence": "It's boiling hot in Singapore — 35°C!", "uz": "'juda issiq' iborasi bilan gap tuzing" },
-            { "word": "what about", "sentence": "What about these shoes? They're too expensive.", "uz": "'...-chi?' iborasi bilan savol tuzing" },
-            { "word": "hot", "sentence": "It's very hot and the sun is shining in Sydney.", "uz": "'issiq' so'zi bilan gap tuzing" },
-            { "word": "enjoy", "sentence": "Everyone is enjoying the good weather on the beach.", "uz": "'zavqlanmoq' fe'li bilan gap tuzing" },
-            { "word": "freezing cold", "sentence": "It's freezing cold and snowy in winter.", "uz": "'qattiq sovuq' iborasi bilan gap tuzing" },
-            { "word": "weather", "sentence": "What's the weather like today?", "uz": "'ob-havo' so'zi bilan savol tuzing" },
-            { "word": "cloudy", "sentence": "There are clouds in the sky. It's cloudy today.", "uz": "'bulutli' so'zi bilan gap tuzing" },
-            { "word": "too tight", "sentence": "I can't wear this shirt. It's too tight.", "uz": "'juda tor' iborasi bilan gap tuzing" },
-            { "word": "too long", "sentence": "What do you think of this dress? — It's too long.", "uz": "'juda uzun' iborasi bilan gap tuzing" },
-            { "word": "sunbathing", "sentence": "Sonia is sunbathing near the pool at the moment.", "uz": "'quyoshda toblanish' so'zi bilan gap tuzing" },
-            { "word": "temperature", "sentence": "What's the temperature in Cairo today? — It's 25°C.", "uz": "'harorat' so'zi bilan savol tuzing" },
-            { "word": "season", "sentence": "Spring is my favourite season.", "uz": "'fasl' so'zi bilan gap tuzing" }
+            {
+              "word": "jacket",
+              "sentence": "John is wearing a leather jacket today.",
+              "uz": "'kurtka' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "snowy",
+              "sentence": "It's a snowy day in Prague.",
+              "uz": "'qorli' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "boiling hot",
+              "sentence": "It's boiling hot in Singapore — 35°C!",
+              "uz": "'juda issiq' iborasi bilan gap tuzing"
+            },
+            {
+              "word": "what about",
+              "sentence": "What about these shoes? They're too expensive.",
+              "uz": "'...-chi?' iborasi bilan savol tuzing"
+            },
+            {
+              "word": "hot",
+              "sentence": "It's very hot and the sun is shining in Sydney.",
+              "uz": "'issiq' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "enjoy",
+              "sentence": "Everyone is enjoying the good weather on the beach.",
+              "uz": "'zavqlanmoq' fe'li bilan gap tuzing"
+            },
+            {
+              "word": "freezing cold",
+              "sentence": "It's freezing cold and snowy in winter.",
+              "uz": "'qattiq sovuq' iborasi bilan gap tuzing"
+            },
+            {
+              "word": "weather",
+              "sentence": "What's the weather like today?",
+              "uz": "'ob-havo' so'zi bilan savol tuzing"
+            },
+            {
+              "word": "cloudy",
+              "sentence": "There are clouds in the sky. It's cloudy today.",
+              "uz": "'bulutli' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "too tight",
+              "sentence": "I can't wear this shirt. It's too tight.",
+              "uz": "'juda tor' iborasi bilan gap tuzing"
+            },
+            {
+              "word": "too long",
+              "sentence": "What do you think of this dress? — It's too long.",
+              "uz": "'juda uzun' iborasi bilan gap tuzing"
+            },
+            {
+              "word": "sunbathing",
+              "sentence": "Sonia is sunbathing near the pool at the moment.",
+              "uz": "'quyoshda toblanish' so'zi bilan gap tuzing"
+            },
+            {
+              "word": "temperature",
+              "sentence": "What's the temperature in Cairo today? — It's 25°C.",
+              "uz": "'harorat' so'zi bilan savol tuzing"
+            },
+            {
+              "word": "season",
+              "sentence": "Spring is my favourite season.",
+              "uz": "'fasl' so'zi bilan gap tuzing"
+            }
           ]
         }
       ]
@@ -87,13 +195,49 @@
           "explanationUz": "RASMLARDA TO'RT KIYIM:\n  yashil ko'ylak (a green dress)\n  qora kurtka (a black jacket)\n  sariq jemper (a yellow jumper)\n  qizil yubka (a red skirt)\n\nDIALOG (to'ldirilgan holda):\n  A: CAN I help you?\n  B: Yes, PLEASE. I'm looking for a jumper.\n  A: What colour WOULD you like?\n  B: Yellow.\n  A: HERE you are.\n  B: Can I try it on, please?\n  A: Yes, of course.\n\nO'ZBEKCHA TARJIMASI:\n  A: Yordam bera olamanmi?\n  B: Ha, iltimos. Men jemper qidiryapman.\n  A: Qanday rangdagisini xohlaysiz?\n  B: Sariq.\n  A: Mana, oling.\n  B: Kiyib ko'rsam bo'ladimi?\n  A: Ha, albatta.\n\nYANGI IBORA:\n  Can I try it on? = Kiyib ko'rsam bo'ladimi?\n  'try on' — kiyib ko'rmoq (frazali fe'l).\n  Olmosh bilan faqat 'try IT on' (o'rtada).",
           "bookRef": "Coursebook, 53-bet, 25-mashq",
           "lines": [
-            { "who": "A", "textEn": "1) ............ I help you?", "answer": "Can", "hintUz": "Ruxsat/imkoniyat so'raydigan modal fe'l", "whyUz": "'Can I help you?' = Yordam bera olamanmi?\nDo'konda sotuvchining odatiy birinchi gapi." },
-            { "who": "B", "textEn": "Yes, 2) ............ . I'm looking for a jumper.", "answer": "please", "hintUz": "Muloyimlik so'zi", "whyUz": "'Yes, please.' = Ha, iltimos.\nTaklifni QABUL QILISH: Yes, please.\nRAD ETISH: No, thank you." },
-            { "who": "A", "textEn": "What colour 3) ............ you like?", "answer": "would", "hintUz": "'like' bilan muloyim savol shakli", "whyUz": "'What colour WOULD you like?' = Qanday rangdagisini xohlaysiz?\n'would like' = xohlamoq (muloyim shakl).\n'What colour DO you like?' — 'qanday rangni yoqtirasiz?' — boshqa ma'no." },
-            { "who": "B", "textEn": "Yellow.", "given": true },
-            { "who": "A", "textEn": "4) ............ you are.", "answer": "Here", "hintUz": "Narsani uzatganda aytiladigan so'z", "whyUz": "'Here you are.' = Mana, oling.\nNarsani birovga uzatganda aytiladi.\n'Here it is' ham mumkin, lekin kitob 'Here you are' beradi." },
-            { "who": "B", "textEn": "Can I try it on, please?", "given": true },
-            { "who": "A", "textEn": "Yes, of course.", "given": true }
+            {
+              "who": "A",
+              "textEn": "1) ............ I help you?",
+              "answer": "Can",
+              "hintUz": "Ruxsat/imkoniyat so'raydigan modal fe'l",
+              "whyUz": "'Can I help you?' = Yordam bera olamanmi?\nDo'konda sotuvchining odatiy birinchi gapi."
+            },
+            {
+              "who": "B",
+              "textEn": "Yes, 2) ............ . I'm looking for a jumper.",
+              "answer": "please",
+              "hintUz": "Muloyimlik so'zi",
+              "whyUz": "'Yes, please.' = Ha, iltimos.\nTaklifni QABUL QILISH: Yes, please.\nRAD ETISH: No, thank you."
+            },
+            {
+              "who": "A",
+              "textEn": "What colour 3) ............ you like?",
+              "answer": "would",
+              "hintUz": "'like' bilan muloyim savol shakli",
+              "whyUz": "'What colour WOULD you like?' = Qanday rangdagisini xohlaysiz?\n'would like' = xohlamoq (muloyim shakl).\n'What colour DO you like?' — 'qanday rangni yoqtirasiz?' — boshqa ma'no."
+            },
+            {
+              "who": "B",
+              "textEn": "Yellow.",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "4) ............ you are.",
+              "answer": "Here",
+              "hintUz": "Narsani uzatganda aytiladigan so'z",
+              "whyUz": "'Here you are.' = Mana, oling.\nNarsani birovga uzatganda aytiladi.\n'Here it is' ham mumkin, lekin kitob 'Here you are' beradi."
+            },
+            {
+              "who": "B",
+              "textEn": "Can I try it on, please?",
+              "given": true
+            },
+            {
+              "who": "A",
+              "textEn": "Yes, of course.",
+              "given": true
+            }
           ]
         },
         {
@@ -104,21 +248,81 @@
           "explanationUz": "RASMLARDAGI QOLGAN KIYIMLAR:\n  a dress  — yashil\n  a jacket — qora\n  a skirt  — qizil\n\nQOLIP O'ZGARMAYDI, faqat KIYIM va RANG almashadi.\n\nDIQQAT — 'try on' bilan olmosh:\n  Can I try IT on?    (birlik: dress, jacket, skirt, jumper)\n  Can I try THEM on?  (ko'plik: trousers, shoes, jeans)",
           "bookRef": "Coursebook, 53-bet, 25-mashq (davomi)",
           "example": [
-            { "speaker": "A (ko'ylak)", "en": "Can I help you?", "uz": "Yordam bera olamanmi?" },
-            { "speaker": "B", "en": "Yes, please. I'm looking for a dress.", "uz": "Ha, iltimos. Men ko'ylak qidiryapman." },
-            { "speaker": "A", "en": "What colour would you like?", "uz": "Qanday rangdagisini xohlaysiz?" },
-            { "speaker": "B", "en": "Green.", "uz": "Yashil." },
-            { "speaker": "A", "en": "Here you are.", "uz": "Mana, oling." },
-            { "speaker": "B", "en": "Can I try it on, please?", "uz": "Kiyib ko'rsam bo'ladimi?" },
-            { "speaker": "A", "en": "Yes, of course.", "uz": "Ha, albatta." },
-            { "speaker": "A (kurtka)", "en": "Can I help you?", "uz": "Yordam bera olamanmi?" },
-            { "speaker": "B", "en": "Yes, please. I'm looking for a jacket.", "uz": "Ha, iltimos. Men kurtka qidiryapman." },
-            { "speaker": "A", "en": "What colour would you like?", "uz": "Qanday rangdagisini xohlaysiz?" },
-            { "speaker": "B", "en": "Black.", "uz": "Qora." },
-            { "speaker": "A (yubka)", "en": "Can I help you?", "uz": "Yordam bera olamanmi?" },
-            { "speaker": "B", "en": "Yes, please. I'm looking for a skirt.", "uz": "Ha, iltimos. Men yubka qidiryapman." },
-            { "speaker": "A", "en": "What colour would you like?", "uz": "Qanday rangdagisini xohlaysiz?" },
-            { "speaker": "B", "en": "Red. Can I try it on, please?", "uz": "Qizil. Kiyib ko'rsam bo'ladimi?" }
+            {
+              "speaker": "A (ko'ylak)",
+              "en": "Can I help you?",
+              "uz": "Yordam bera olamanmi?"
+            },
+            {
+              "speaker": "B",
+              "en": "Yes, please. I'm looking for a dress.",
+              "uz": "Ha, iltimos. Men ko'ylak qidiryapman."
+            },
+            {
+              "speaker": "A",
+              "en": "What colour would you like?",
+              "uz": "Qanday rangdagisini xohlaysiz?"
+            },
+            {
+              "speaker": "B",
+              "en": "Green.",
+              "uz": "Yashil."
+            },
+            {
+              "speaker": "A",
+              "en": "Here you are.",
+              "uz": "Mana, oling."
+            },
+            {
+              "speaker": "B",
+              "en": "Can I try it on, please?",
+              "uz": "Kiyib ko'rsam bo'ladimi?"
+            },
+            {
+              "speaker": "A",
+              "en": "Yes, of course.",
+              "uz": "Ha, albatta."
+            },
+            {
+              "speaker": "A (kurtka)",
+              "en": "Can I help you?",
+              "uz": "Yordam bera olamanmi?"
+            },
+            {
+              "speaker": "B",
+              "en": "Yes, please. I'm looking for a jacket.",
+              "uz": "Ha, iltimos. Men kurtka qidiryapman."
+            },
+            {
+              "speaker": "A",
+              "en": "What colour would you like?",
+              "uz": "Qanday rangdagisini xohlaysiz?"
+            },
+            {
+              "speaker": "B",
+              "en": "Black.",
+              "uz": "Qora."
+            },
+            {
+              "speaker": "A (yubka)",
+              "en": "Can I help you?",
+              "uz": "Yordam bera olamanmi?"
+            },
+            {
+              "speaker": "B",
+              "en": "Yes, please. I'm looking for a skirt.",
+              "uz": "Ha, iltimos. Men yubka qidiryapman."
+            },
+            {
+              "speaker": "A",
+              "en": "What colour would you like?",
+              "uz": "Qanday rangdagisini xohlaysiz?"
+            },
+            {
+              "speaker": "B",
+              "en": "Red. Can I try it on, please?",
+              "uz": "Qizil. Kiyib ko'rsam bo'ladimi?"
+            }
           ]
         }
       ]
@@ -136,15 +340,51 @@
           "explanationUz": "KITOBDAGI REJA:\n\n  Dear + (do'stingizning ismi)\n     Greetings from ...\n     • Say where you are            — qayerda ekaningizni ayting\n     • Say what the weather is like — ob-havo qandayligini ayting\n     • Say what clothes you are wearing — nima kiyganingizni ayting\n     • Say what you are doing now   — hozir nima qilayotganingizni ayting\n     See you soon.\n           Lots of love,\n           (sizning ismingiz)\n\nTALAB: 40–60 so'z.\n\nNAMUNA: 49-betdagi uchta otkritka (Tom, Tracy, Pamela).\n\nDIQQAT — BARCHA GAPLAR PRESENT CONTINUOUS'DA:\nchunki HOZIRGI holat tasvirlanadi.\nFaqat ob-havo sifat bilan aytilishi mumkin: 'It's very hot.'",
           "bookRef": "Coursebook, 53-bet, Writing (a postcard)",
           "structure": [
-            { "headingUz": "Murojaat", "modelEn": "Dear Aziz,", "noteUz": "'Dear + do'stingizning ismi' + VERGUL." },
-            { "headingUz": "Salomlashish va joy", "modelEn": "Greetings from Samarkand!", "noteUz": "'Greetings from ...' — otkritkaning odatiy boshlanishi.\nBu 'Say where you are' bandini ham bajaradi." },
-            { "headingUz": "Qayerda ekaningiz (to'liqroq)", "modelEn": "I am on holiday here with my family.", "noteUz": "'be ON holiday' = ta'tilda bo'lmoq." },
-            { "headingUz": "Ob-havo", "modelEn": "The weather is fantastic. It's very hot and the sun is shining.", "noteUz": "'What's the weather like?' savoliga javob.\n50-betdagi harorat so'zlaridan foydalaning." },
-            { "headingUz": "Nima kiyganingiz", "modelEn": "I'm wearing a T-shirt, shorts and sandals.", "noteUz": "Present Continuous: 'I'm wearing ...'.\nKO'PLIK kiyimda 'a' YO'Q: shorts, sandals." },
-            { "headingUz": "Hozir nima qilayotganingiz", "modelEn": "At the moment I'm sitting in a café in Registan Square and I'm drinking green tea.", "noteUz": "'at the moment' — Present Continuous belgisi." },
-            { "headingUz": "Yakun", "modelEn": "See you soon.", "noteUz": "Rejada berilgan yakuniy gap." },
-            { "headingUz": "Xayrlashuv va imzo", "modelEn": "Lots of love, Nilufar", "noteUz": "'Lots of love' — yaqin do'st va oilaga.\nRejada aynan shu shakl berilgan." },
-            { "headingUz": "TO'LIQ OTKRITKA (namuna, 52 so'z)", "modelEn": "Dear Aziz, Greetings from Samarkand! I am on holiday here with my family. The weather is fantastic. It's very hot and the sun is shining. I'm wearing a T-shirt, shorts and sandals. At the moment I'm sitting in a café in Registan Square and I'm drinking green tea. See you soon. Lots of love, Nilufar", "noteUz": "52 so'z — talab qilingan 40–60 oralig'ida.\nBarcha gaplar hozirgi holatni tasvirlaydi." }
+            {
+              "headingUz": "Murojaat",
+              "modelEn": "Dear Aziz,",
+              "noteUz": "'Dear + do'stingizning ismi' + VERGUL."
+            },
+            {
+              "headingUz": "Salomlashish va joy",
+              "modelEn": "Greetings from Samarkand!",
+              "noteUz": "'Greetings from ...' — otkritkaning odatiy boshlanishi.\nBu 'Say where you are' bandini ham bajaradi."
+            },
+            {
+              "headingUz": "Qayerda ekaningiz (to'liqroq)",
+              "modelEn": "I am on holiday here with my family.",
+              "noteUz": "'be ON holiday' = ta'tilda bo'lmoq."
+            },
+            {
+              "headingUz": "Ob-havo",
+              "modelEn": "The weather is fantastic. It's very hot and the sun is shining.",
+              "noteUz": "'What's the weather like?' savoliga javob.\n50-betdagi harorat so'zlaridan foydalaning."
+            },
+            {
+              "headingUz": "Nima kiyganingiz",
+              "modelEn": "I'm wearing a T-shirt, shorts and sandals.",
+              "noteUz": "Present Continuous: 'I'm wearing ...'.\nKO'PLIK kiyimda 'a' YO'Q: shorts, sandals."
+            },
+            {
+              "headingUz": "Hozir nima qilayotganingiz",
+              "modelEn": "At the moment I'm sitting in a café in Registan Square and I'm drinking green tea.",
+              "noteUz": "'at the moment' — Present Continuous belgisi."
+            },
+            {
+              "headingUz": "Yakun",
+              "modelEn": "See you soon.",
+              "noteUz": "Rejada berilgan yakuniy gap."
+            },
+            {
+              "headingUz": "Xayrlashuv va imzo",
+              "modelEn": "Lots of love, Nilufar",
+              "noteUz": "'Lots of love' — yaqin do'st va oilaga.\nRejada aynan shu shakl berilgan."
+            },
+            {
+              "headingUz": "TO'LIQ OTKRITKA (namuna, 52 so'z)",
+              "modelEn": "Dear Aziz, Greetings from Samarkand! I am on holiday here with my family. The weather is fantastic. It's very hot and the sun is shining. I'm wearing a T-shirt, shorts and sandals. At the moment I'm sitting in a café in Registan Square and I'm drinking green tea. See you soon. Lots of love, Nilufar",
+              "noteUz": "52 so'z — talab qilingan 40–60 oralig'ida.\nBarcha gaplar hozirgi holatni tasvirlaydi."
+            }
           ]
         }
       ]
@@ -162,9 +402,18 @@
           "explanationUz": "Uchta ingliz maqoli — ikkitasi OB-HAVO, biri KIYIM haqida.\nUnit sarlavhasi ham birinchisidan olingan.",
           "bookRef": "Coursebook, 53-bet, Words of Wisdom",
           "items": [
-            { "en": "Come rain or shine.", "uz": "So'zma-so'z: Yomg'ir kelsin yoki quyosh chiqsin.\n\nMA'NOSI: Ob-havo qanday bo'lishidan qat'i nazar;\nhar qanday sharoitda; nima bo'lsa ham.\n\nISHLATILISHI: va'da yoki qat'iyatni bildiradi.\n  'I'll be there, come rain or shine.'\n  = Nima bo'lsa ham, men u yerda bo'laman.\n\nO'ZBEKCHA MUQOBILI: 'Har qanday holatda ham',\n'Osmon uzilib tushsa ham'.\n\nDIQQAT: 7-UNIT SARLAVHASI aynan shu maqol —\n'Come Rain or Shine'." },
-            { "en": "March comes in like a lion and goes out like a lamb.", "uz": "So'zma-so'z: Mart sherdek kirib keladi va qo'zichoqdek chiqib ketadi.\n\nMA'NOSI: Mart oyining BOSHIDA ob-havo qattiq va shamolli\nbo'ladi (sher kabi yovvoyi), OXIRIDA esa iliq va yumshoq\nbo'ladi (qo'zichoq kabi muloyim).\n\nBu — Britaniyaning bahor ob-havosi haqidagi eski maqol.\nMart — qish va bahor chegarasi.\n\nLUG'AT:\n  a lamb /læm/ = qo'zichoq ('b' O'QILMAYDI)\n  come in  = kirib kelmoq\n  go out   = chiqib ketmoq\n  like     = ...kabi, ...dek\n\nO'ZBEKCHA O'XSHASHI: 'Mart — ola-quroq'." },
-            { "en": "Clothes make the man.", "uz": "So'zma-so'z: Kiyim odamni yasaydi.\n\nMA'NOSI: Odam qanday kiyinsa, shunday baholanadi;\nkiyim odamning taassurotini belgilaydi.\n\nO'ZBEKCHA MUQOBILI:\n  'Ot ko'rki — yol, odam ko'rki — kiyim'\n  'Kishini kiyimiga qarab kutib olishadi'\n\nDIQQAT — GRAMMATIKA:\n  'Clothes' — DOIM ko'plik → fe'l ham ko'plikda: MAKE.\n  'Clothes makes the man' XATO.\n  'a clothe' degan so'z YO'Q.\n\nQarama-qarshi fikr ham bor:\n  'Don't judge a book by its cover.'\n  = Kitobni muqovasiga qarab baholama." }
+            {
+              "en": "Come rain or shine.",
+              "uz": "So'zma-so'z: Yomg'ir kelsin yoki quyosh chiqsin.\n\nMA'NOSI: Ob-havo qanday bo'lishidan qat'i nazar;\nhar qanday sharoitda; nima bo'lsa ham.\n\nISHLATILISHI: va'da yoki qat'iyatni bildiradi.\n  'I'll be there, come rain or shine.'\n  = Nima bo'lsa ham, men u yerda bo'laman.\n\nO'ZBEKCHA MUQOBILI: 'Har qanday holatda ham',\n'Osmon uzilib tushsa ham'.\n\nDIQQAT: 7-UNIT SARLAVHASI aynan shu maqol —\n'Come Rain or Shine'."
+            },
+            {
+              "en": "March comes in like a lion and goes out like a lamb.",
+              "uz": "So'zma-so'z: Mart sherdek kirib keladi va qo'zichoqdek chiqib ketadi.\n\nMA'NOSI: Mart oyining BOSHIDA ob-havo qattiq va shamolli\nbo'ladi (sher kabi yovvoyi), OXIRIDA esa iliq va yumshoq\nbo'ladi (qo'zichoq kabi muloyim).\n\nBu — Britaniyaning bahor ob-havosi haqidagi eski maqol.\nMart — qish va bahor chegarasi.\n\nLUG'AT:\n  a lamb /læm/ = qo'zichoq ('b' O'QILMAYDI)\n  come in  = kirib kelmoq\n  go out   = chiqib ketmoq\n  like     = ...kabi, ...dek\n\nO'ZBEKCHA O'XSHASHI: 'Mart — ola-quroq'."
+            },
+            {
+              "en": "Clothes make the man.",
+              "uz": "So'zma-so'z: Kiyim odamni yasaydi.\n\nMA'NOSI: Odam qanday kiyinsa, shunday baholanadi;\nkiyim odamning taassurotini belgilaydi.\n\nO'ZBEKCHA MUQOBILI:\n  'Ot ko'rki — yol, odam ko'rki — kiyim'\n  'Kishini kiyimiga qarab kutib olishadi'\n\nDIQQAT — GRAMMATIKA:\n  'Clothes' — DOIM ko'plik → fe'l ham ko'plikda: MAKE.\n  'Clothes makes the man' XATO.\n  'a clothe' degan so'z YO'Q.\n\nQarama-qarshi fikr ham bor:\n  'Don't judge a book by its cover.'\n  = Kitobni muqovasiga qarab baholama."
+            }
           ]
         }
       ]
@@ -178,66 +427,246 @@
         "ruleUz": "Kiyim do'konidagi iboralar",
         "explanationUz": "Sotuvchi va xaridor nutqi.",
         "items": [
-          { "base": "Can I help you?", "baseUz": "Yordam bera olamanmi?", "derived": "SOTUVCHI", "derivedUz": "birinchi gap", "note": "" },
-          { "base": "Yes, please.", "baseUz": "Ha, iltimos.", "derived": "QABUL QILISH", "derivedUz": "", "note": "aksi: No, thank you" },
-          { "base": "I'm looking for ...", "baseUz": "Men ... qidiryapman", "derived": "XARIDOR", "derivedUz": "'for' shart", "note": "" },
-          { "base": "What colour would you like?", "baseUz": "Qanday rangdagisini xohlaysiz?", "derived": "SOTUVCHI", "derivedUz": "'would like' — muloyim", "note": "" },
-          { "base": "Here you are.", "baseUz": "Mana, oling.", "derived": "SOTUVCHI", "derivedUz": "narsani uzatganda", "note": "" },
-          { "base": "Can I try it on?", "baseUz": "Kiyib ko'rsam bo'ladimi?", "derived": "XARIDOR", "derivedUz": "kiyinish xonasida", "note": "" },
-          { "base": "Yes, of course.", "baseUz": "Ha, albatta.", "derived": "SOTUVCHI", "derivedUz": "rozilik", "note": "" }
+          {
+            "base": "Can I help you?",
+            "baseUz": "Yordam bera olamanmi?",
+            "derived": "SOTUVCHI",
+            "derivedUz": "birinchi gap",
+            "note": ""
+          },
+          {
+            "base": "Yes, please.",
+            "baseUz": "Ha, iltimos.",
+            "derived": "QABUL QILISH",
+            "derivedUz": "",
+            "note": "aksi: No, thank you"
+          },
+          {
+            "base": "I'm looking for ...",
+            "baseUz": "Men ... qidiryapman",
+            "derived": "XARIDOR",
+            "derivedUz": "'for' shart",
+            "note": ""
+          },
+          {
+            "base": "What colour would you like?",
+            "baseUz": "Qanday rangdagisini xohlaysiz?",
+            "derived": "SOTUVCHI",
+            "derivedUz": "'would like' — muloyim",
+            "note": ""
+          },
+          {
+            "base": "Here you are.",
+            "baseUz": "Mana, oling.",
+            "derived": "SOTUVCHI",
+            "derivedUz": "narsani uzatganda",
+            "note": ""
+          },
+          {
+            "base": "Can I try it on?",
+            "baseUz": "Kiyib ko'rsam bo'ladimi?",
+            "derived": "XARIDOR",
+            "derivedUz": "kiyinish xonasida",
+            "note": ""
+          },
+          {
+            "base": "Yes, of course.",
+            "baseUz": "Ha, albatta.",
+            "derived": "SOTUVCHI",
+            "derivedUz": "rozilik",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Frazali fe'l: TRY ON",
         "explanationUz": "Olmosh bilan kelganda yuklama OXIRIGA o'tadi.",
         "items": [
-          { "base": "try on a jumper", "baseUz": "jemperni kiyib ko'rmoq", "derived": "try a jumper on", "derivedUz": "ikkalasi ham to'g'ri", "note": "OT bilan" },
-          { "base": "try IT on", "baseUz": "uni kiyib ko'rmoq", "derived": "'try on it' XATO", "derivedUz": "olmosh O'RTADA", "note": "birlik" },
-          { "base": "try THEM on", "baseUz": "ularni kiyib ko'rmoq", "derived": "'try on them' XATO", "derivedUz": "olmosh O'RTADA", "note": "ko'plik" },
-          { "base": "put on", "baseUz": "kiymoq", "derived": "put it on", "derivedUz": "shu qoida", "note": "" },
-          { "base": "take off", "baseUz": "yechmoq", "derived": "take it off", "derivedUz": "shu qoida", "note": "" }
+          {
+            "base": "try on a jumper",
+            "baseUz": "jemperni kiyib ko'rmoq",
+            "derived": "try a jumper on",
+            "derivedUz": "ikkalasi ham to'g'ri",
+            "note": "OT bilan"
+          },
+          {
+            "base": "try IT on",
+            "baseUz": "uni kiyib ko'rmoq",
+            "derived": "'try on it' XATO",
+            "derivedUz": "olmosh O'RTADA",
+            "note": "birlik"
+          },
+          {
+            "base": "try THEM on",
+            "baseUz": "ularni kiyib ko'rmoq",
+            "derived": "'try on them' XATO",
+            "derivedUz": "olmosh O'RTADA",
+            "note": "ko'plik"
+          },
+          {
+            "base": "put on",
+            "baseUz": "kiymoq",
+            "derived": "put it on",
+            "derivedUz": "shu qoida",
+            "note": ""
+          },
+          {
+            "base": "take off",
+            "baseUz": "yechmoq",
+            "derived": "take it off",
+            "derivedUz": "shu qoida",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "'would like' — muloyim xohish",
         "explanationUz": "'want' dan ko'ra muloyimroq.",
         "items": [
-          { "base": "I want ...", "baseUz": "Men ... xohlayman", "derived": "to'g'ridan-to'g'ri", "derivedUz": "biroz qo'pol", "note": "" },
-          { "base": "I would like ...", "baseUz": "Men ... olsam deb edim", "derived": "I'd like ...", "derivedUz": "MULOYIM", "note": "do'konda shu" },
-          { "base": "Would you like ...?", "baseUz": "... xohlaysizmi?", "derived": "taklif", "derivedUz": "muloyim savol", "note": "" },
-          { "base": "What would you like?", "baseUz": "Nima xohlaysiz?", "derived": "sotuvchi savoli", "derivedUz": "", "note": "" }
+          {
+            "base": "I want ...",
+            "baseUz": "Men ... xohlayman",
+            "derived": "to'g'ridan-to'g'ri",
+            "derivedUz": "biroz qo'pol",
+            "note": ""
+          },
+          {
+            "base": "I would like ...",
+            "baseUz": "Men ... olsam deb edim",
+            "derived": "I'd like ...",
+            "derivedUz": "MULOYIM",
+            "note": "do'konda shu"
+          },
+          {
+            "base": "Would you like ...?",
+            "baseUz": "... xohlaysizmi?",
+            "derived": "taklif",
+            "derivedUz": "muloyim savol",
+            "note": ""
+          },
+          {
+            "base": "What would you like?",
+            "baseUz": "Nima xohlaysiz?",
+            "derived": "sotuvchi savoli",
+            "derivedUz": "",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "'look nice IN + kiyim'",
         "explanationUz": "Kiyim kimgadir yarashishini bildiradi.",
         "items": [
-          { "base": "look nice in", "baseUz": "yarashmoq", "derived": "She looks nice in a dress.", "derivedUz": "'in' SHART", "note": "" },
-          { "base": "look good in", "baseUz": "yaxshi ko'rinmoq", "derived": "He looks good in jeans.", "derivedUz": "'in' shart", "note": "" },
-          { "base": "suit somebody", "baseUz": "yarashmoq", "derived": "That dress suits you.", "derivedUz": "predlogsiz", "note": "'a suit' — ot" },
-          { "base": "fit somebody", "baseUz": "o'lchami to'g'ri kelmoq", "derived": "These shoes don't fit me.", "derivedUz": "o'lcham haqida", "note": "'suit' bilan chalkashtirmang" }
+          {
+            "base": "look nice in",
+            "baseUz": "yarashmoq",
+            "derived": "She looks nice in a dress.",
+            "derivedUz": "'in' SHART",
+            "note": ""
+          },
+          {
+            "base": "look good in",
+            "baseUz": "yaxshi ko'rinmoq",
+            "derived": "He looks good in jeans.",
+            "derivedUz": "'in' shart",
+            "note": ""
+          },
+          {
+            "base": "suit somebody",
+            "baseUz": "yarashmoq",
+            "derived": "That dress suits you.",
+            "derivedUz": "predlogsiz",
+            "note": "'a suit' — ot"
+          },
+          {
+            "base": "fit somebody",
+            "baseUz": "o'lchami to'g'ri kelmoq",
+            "derived": "These shoes don't fit me.",
+            "derivedUz": "o'lcham haqida",
+            "note": "'suit' bilan chalkashtirmang"
+          }
         ]
       },
       {
         "ruleUz": "Doim ko'plikdagi otlar (fe'l ham ko'plikda)",
         "explanationUz": "Bu otlar bilan fe'l KO'PLIKDA bo'ladi.",
         "items": [
-          { "base": "clothes", "baseUz": "kiyim-kechak", "derived": "Clothes MAKE the man.", "derivedUz": "'makes' XATO", "note": "'a clothe' YO'Q" },
-          { "base": "trousers", "baseUz": "shim", "derived": "These trousers ARE nice.", "derivedUz": "'is' XATO", "note": "" },
-          { "base": "jeans", "baseUz": "jinsi shim", "derived": "My jeans ARE new.", "derivedUz": "", "note": "" },
-          { "base": "glasses", "baseUz": "ko'zoynak", "derived": "Where ARE my glasses?", "derivedUz": "", "note": "" },
-          { "base": "scissors", "baseUz": "qaychi", "derived": "The scissors ARE here.", "derivedUz": "", "note": "" }
+          {
+            "base": "clothes",
+            "baseUz": "kiyim-kechak",
+            "derived": "Clothes MAKE the man.",
+            "derivedUz": "'makes' XATO",
+            "note": "'a clothe' YO'Q"
+          },
+          {
+            "base": "trousers",
+            "baseUz": "shim",
+            "derived": "These trousers ARE nice.",
+            "derivedUz": "'is' XATO",
+            "note": ""
+          },
+          {
+            "base": "jeans",
+            "baseUz": "jinsi shim",
+            "derived": "My jeans ARE new.",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "glasses",
+            "baseUz": "ko'zoynak",
+            "derived": "Where ARE my glasses?",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "scissors",
+            "baseUz": "qaychi",
+            "derived": "The scissors ARE here.",
+            "derivedUz": "",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Maqollardagi yangi so'zlar",
         "explanationUz": "Donolik so'zlaridan lug'at.",
         "items": [
-          { "base": "a lamb", "baseUz": "qo'zichoq", "derived": "/læm/", "derivedUz": "'b' O'QILMAYDI", "note": "'climb' kabi" },
-          { "base": "a lion", "baseUz": "sher", "derived": "/ˈlaɪən/", "derivedUz": "yovvoyi, kuchli", "note": "" },
-          { "base": "come in", "baseUz": "kirib kelmoq", "derived": "March comes in ...", "derivedUz": "boshlanish", "note": "" },
-          { "base": "go out", "baseUz": "chiqib ketmoq", "derived": "... goes out like a lamb", "derivedUz": "tugash", "note": "" },
-          { "base": "like", "baseUz": "...kabi, ...dek", "derived": "like a lion", "derivedUz": "PREDLOG", "note": "'yoqtirmoq' EMAS" }
+          {
+            "base": "a lamb",
+            "baseUz": "qo'zichoq",
+            "derived": "/læm/",
+            "derivedUz": "'b' O'QILMAYDI",
+            "note": "'climb' kabi"
+          },
+          {
+            "base": "a lion",
+            "baseUz": "sher",
+            "derived": "/ˈlaɪən/",
+            "derivedUz": "yovvoyi, kuchli",
+            "note": ""
+          },
+          {
+            "base": "come in",
+            "baseUz": "kirib kelmoq",
+            "derived": "March comes in ...",
+            "derivedUz": "boshlanish",
+            "note": ""
+          },
+          {
+            "base": "go out",
+            "baseUz": "chiqib ketmoq",
+            "derived": "... goes out like a lamb",
+            "derivedUz": "tugash",
+            "note": ""
+          },
+          {
+            "base": "like",
+            "baseUz": "...kabi, ...dek",
+            "derived": "like a lion",
+            "derivedUz": "PREDLOG",
+            "note": "'yoqtirmoq' EMAS"
+          }
         ]
       }
     ]
@@ -291,31 +720,109 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "a habit", "uz": "odat" },
-    { "en": "a daily routine", "uz": "kundalik tartib" },
-    { "en": "at the moment of speaking", "uz": "gapirayotgan paytda" },
-    { "en": "to look nice in", "uz": "yarashmoq" },
-    { "en": "a jumper", "uz": "jemper" },
-    { "en": "a long skirt", "uz": "uzun yubka" },
-    { "en": "a team", "uz": "jamoa" },
-    { "en": "a point", "uz": "ochko" },
-    { "en": "a winner", "uz": "g'olib" },
-    { "en": "Can I help you?", "uz": "Yordam bera olamanmi?" },
-    { "en": "Yes, please.", "uz": "Ha, iltimos." },
-    { "en": "would like", "uz": "xohlamoq (muloyim)" },
-    { "en": "Here you are.", "uz": "Mana, oling." },
-    { "en": "to try on", "uz": "kiyib ko'rmoq" },
-    { "en": "Yes, of course.", "uz": "Ha, albatta." },
-    { "en": "a postcard", "uz": "otkritka" },
-    { "en": "a plan", "uz": "reja" },
-    { "en": "Greetings from ...", "uz": "...dan salom" },
-    { "en": "Lots of love", "uz": "Katta mehr bilan" },
-    { "en": "Come rain or shine.", "uz": "Har qanday holatda ham." },
-    { "en": "a lamb", "uz": "qo'zichoq" },
-    { "en": "a lion", "uz": "sher" },
-    { "en": "to come in", "uz": "kirib kelmoq" },
-    { "en": "to go out", "uz": "chiqib ketmoq" },
-    { "en": "Clothes make the man.", "uz": "Odam ko'rki — kiyim." },
-    { "en": "clothes", "uz": "kiyim-kechak (doim ko'plik)" }
+    {
+      "en": "a habit",
+      "uz": "odat"
+    },
+    {
+      "en": "a daily routine",
+      "uz": "kundalik tartib"
+    },
+    {
+      "en": "at the moment of speaking",
+      "uz": "gapirayotgan paytda"
+    },
+    {
+      "en": "to look nice in",
+      "uz": "yarashmoq"
+    },
+    {
+      "en": "a jumper",
+      "uz": "jemper"
+    },
+    {
+      "en": "a long skirt",
+      "uz": "uzun yubka"
+    },
+    {
+      "en": "a team",
+      "uz": "jamoa"
+    },
+    {
+      "en": "a point",
+      "uz": "ochko"
+    },
+    {
+      "en": "a winner",
+      "uz": "g'olib"
+    },
+    {
+      "en": "Can I help you?",
+      "uz": "Yordam bera olamanmi?"
+    },
+    {
+      "en": "Yes, please.",
+      "uz": "Ha, iltimos."
+    },
+    {
+      "en": "would like",
+      "uz": "xohlamoq (muloyim)"
+    },
+    {
+      "en": "Here you are.",
+      "uz": "Mana, oling."
+    },
+    {
+      "en": "to try on",
+      "uz": "kiyib ko'rmoq"
+    },
+    {
+      "en": "Yes, of course.",
+      "uz": "Ha, albatta."
+    },
+    {
+      "en": "a postcard",
+      "uz": "otkritka"
+    },
+    {
+      "en": "a plan",
+      "uz": "reja"
+    },
+    {
+      "en": "Greetings from ...",
+      "uz": "...dan salom"
+    },
+    {
+      "en": "Lots of love",
+      "uz": "Katta mehr bilan"
+    },
+    {
+      "en": "Come rain or shine.",
+      "uz": "Har qanday holatda ham."
+    },
+    {
+      "en": "a lamb",
+      "uz": "qo'zichoq"
+    },
+    {
+      "en": "a lion",
+      "uz": "sher"
+    },
+    {
+      "en": "to come in",
+      "uz": "kirib kelmoq"
+    },
+    {
+      "en": "to go out",
+      "uz": "chiqib ketmoq"
+    },
+    {
+      "en": "Clothes make the man.",
+      "uz": "Odam ko'rki — kiyim."
+    },
+    {
+      "en": "clothes",
+      "uz": "kiyim-kechak (doim ko'plik)"
+    }
   ]
 }

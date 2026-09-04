@@ -5,6 +5,7 @@
   "unit": 8,
   "unitTitle": "Enjoy your Meal",
   "module": 2,
+  "scanNote": "TEKSHIRILDI (skan 56-bet): Ex.6 jadval (loaf-loaves, cherry-cherries, boy-boys, tomato-tomatoes) va 4 qoida mos. Ex.7 5 so'z. Ex.8 15 rasm (honey, tomatoes, jam, rice, coffee, cherries, egg, ham, sugar, flour, sandwich, butter, water, salt, pepper) - faqat egg va sandwich sanaladigan (an/a), qolgani some. Ex.9a 9 rasm: bottle/loaf/piece/glass/packet/carton/slice/cup/bowl - ro'yxat 9 so'z, har biri bir marta. Ex.9b 8 ot, Ex.10 ikki dialog va 4 prompt mos. Xato topilmadi.",
   "sections": [
     {
       "kind": "grammar",
@@ -19,10 +20,31 @@
           "explanationUz": "JADVAL:\n  SINGULAR   PLURAL\n  loaf     - loaVES\n  cherry   - cherrIES\n  boy      - boyS\n  tomato   - tomatoES\n\nTO'LDIRILADIGAN QOIDALAR:\n\n  1) Some nouns ending in -f or -fe drop the -f and take\n     ............ to form their plural.\n     = -f yoki -fe bilan tugagan ba'zi otlar -f ni tashlab,\n       ko'plik yasash uchun ...... oladi.\n\n  2) Nouns ending in a consonant + y, drop the -y and take\n     ...... .\n     = UNDOSH + y bilan tugagan otlar -y ni tashlab ...... oladi.\n\n  3) Nouns ending in a vowel + y take -s.  (BERILGAN)\n     = UNLI + y bilan tugagan otlar -s oladi.\n\n  4) Some nouns ending in -o take ............ .\n     = -o bilan tugagan ba'zi otlar ...... oladi.\n\nDIQQAT — 2 va 3-QOIDANI SOLISHTIRING:\n  cherRY  — 'r' UNDOSH + y → cherrIES\n  boY     — 'o' UNLI + y  → boyS",
           "bookRef": "Coursebook, 56-bet, 6-mashq",
           "items": [
-            { "textEn": "Some nouns ending in -f or -fe drop the -f and take ............ to form their plural.", "answer": "-ves", "hintUz": "Jadvaldagi 'loaf - loaves' misoliga qarang", "whyUz": "loaf → loaVES.\nBoshqa misollar: knife → knives, leaf → leaves,\nwife → wives, life → lives, shelf → shelves.\nISTISNO: roof → roofs, chief → chiefs." },
-            { "textEn": "Nouns ending in a consonant + y, drop the -y and take ............ .", "answer": "-ies", "hintUz": "Jadvaldagi 'cherry - cherries' misoliga qarang", "whyUz": "cherry → cherrIES ('r' — undosh).\nBoshqa misollar: strawberry → strawberries,\nbaby → babies, city → cities, story → stories." },
-            { "textEn": "Nouns ending in a vowel + y take ............ .", "answer": "-s", "given": true, "hintUz": "Kitobda berilgan", "whyUz": "Kitobda BERILGAN qoida.\nboy → boyS ('o' — unli).\nBoshqa misollar: key → keys, day → days, toy → toys." },
-            { "textEn": "Some nouns ending in -o take ............ .", "answer": "-es", "hintUz": "Jadvaldagi 'tomato - tomatoes' misoliga qarang", "whyUz": "tomato → tomatoES.\nBoshqa misollar: potato → potatoes, hero → heroes.\nISTISNO: photo → photos, piano → pianos, radio → radios." }
+            {
+              "textEn": "Some nouns ending in -f or -fe drop the -f and take ............ to form their plural.",
+              "answer": "-ves",
+              "hintUz": "Jadvaldagi 'loaf - loaves' misoliga qarang",
+              "whyUz": "loaf → loaVES.\nBoshqa misollar: knife → knives, leaf → leaves,\nwife → wives, life → lives, shelf → shelves.\nISTISNO: roof → roofs, chief → chiefs."
+            },
+            {
+              "textEn": "Nouns ending in a consonant + y, drop the -y and take ............ .",
+              "answer": "-ies",
+              "hintUz": "Jadvaldagi 'cherry - cherries' misoliga qarang",
+              "whyUz": "cherry → cherrIES ('r' — undosh).\nBoshqa misollar: strawberry → strawberries,\nbaby → babies, city → cities, story → stories."
+            },
+            {
+              "textEn": "Nouns ending in a vowel + y take ............ .",
+              "answer": "-s",
+              "given": true,
+              "hintUz": "Kitobda berilgan",
+              "whyUz": "Kitobda BERILGAN qoida.\nboy → boyS ('o' — unli).\nBoshqa misollar: key → keys, day → days, toy → toys."
+            },
+            {
+              "textEn": "Some nouns ending in -o take ............ .",
+              "answer": "-es",
+              "hintUz": "Jadvaldagi 'tomato - tomatoes' misoliga qarang",
+              "whyUz": "tomato → tomatoES.\nBoshqa misollar: potato → potatoes, hero → heroes.\nISTISNO: photo → photos, piano → pianos, radio → radios."
+            }
           ]
         },
         {
@@ -33,11 +55,36 @@
           "explanationUz": "Har bir so'z uchun 6-mashqdagi QAYSI qoida ishlashini aniqlang:\n  -f / -fe → -VES\n  undosh + y → -IES\n  unli + y → -S\n  -o → -ES",
           "bookRef": "Coursebook, 56-bet, 7-mashq",
           "items": [
-            { "textEn": "1  potato → ............", "answer": "potatoes", "hintUz": "-o bilan tugaydi", "whyUz": "4-qoida: -o → -ES = potatoES.\n'potatos' XATO." },
-            { "textEn": "2  knife → ............", "answer": "knives", "hintUz": "-fe bilan tugaydi", "whyUz": "1-qoida: -fe → -VES = kniVES.\nTalaffuz: knife /naɪf/ → knives /naɪvz/ ('k' o'qilmaydi)." },
-            { "textEn": "3  strawberry → ............", "answer": "strawberries", "hintUz": "undosh + y bilan tugaydi", "whyUz": "2-qoida: undosh ('r') + y → -IES = strawberrIES." },
-            { "textEn": "4  leaf → ............", "answer": "leaves", "hintUz": "-f bilan tugaydi", "whyUz": "1-qoida: -f → -VES = leaVES.\n'a leaf' = barg (42-betdagi koala matnida bor edi)." },
-            { "textEn": "5  key → ............", "answer": "keys", "hintUz": "UNLI + y bilan tugaydi", "whyUz": "3-qoida: unli ('e') + y → -S = keyS.\nDIQQAT: 'keies' XATO — 'e' unli, shuning uchun y o'zgarmaydi." }
+            {
+              "textEn": "1  potato → ............",
+              "answer": "potatoes",
+              "hintUz": "-o bilan tugaydi",
+              "whyUz": "4-qoida: -o → -ES = potatoES.\n'potatos' XATO."
+            },
+            {
+              "textEn": "2  knife → ............",
+              "answer": "knives",
+              "hintUz": "-fe bilan tugaydi",
+              "whyUz": "1-qoida: -fe → -VES = kniVES.\nTalaffuz: knife /naɪf/ → knives /naɪvz/ ('k' o'qilmaydi)."
+            },
+            {
+              "textEn": "3  strawberry → ............",
+              "answer": "strawberries",
+              "hintUz": "undosh + y bilan tugaydi",
+              "whyUz": "2-qoida: undosh ('r') + y → -IES = strawberrIES."
+            },
+            {
+              "textEn": "4  leaf → ............",
+              "answer": "leaves",
+              "hintUz": "-f bilan tugaydi",
+              "whyUz": "1-qoida: -f → -VES = leaVES.\n'a leaf' = barg (42-betdagi koala matnida bor edi)."
+            },
+            {
+              "textEn": "5  key → ............",
+              "answer": "keys",
+              "hintUz": "UNLI + y bilan tugaydi",
+              "whyUz": "3-qoida: unli ('e') + y → -S = keyS.\nDIQQAT: 'keies' XATO — 'e' unli, shuning uchun y o'zgarmaydi."
+            }
           ]
         },
         {
@@ -48,10 +95,26 @@
           "explanationUz": "IKKI TURDAGI OT:\n\n  COUNTABLE (sanaladigan)\n     Sanash mumkin: 1/2/3/4 apples\n     BIRLIK va KO'PLIK shakli bor: an apple / apples\n     'a/an' bilan keladi\n\n  UNCOUNTABLE (sanalmaydigan)\n     Sanab bo'lmaydi: some meat, some sugar\n     Faqat BIRLIK shakli bor\n     'a/an' bilan KELMAYDI\n\nQOIDALAR:\n  • A/AN faqat SANALADIGAN otning BIRLIGI bilan:\n       a tomato, an egg\n       'A SUGAR' XATO!\n  • SOME ikkalasi bilan ham:\n       sanaladigan KO'PLIK: some biscuits\n       sanalmaydigan:       some bread\n\nQANDAY ANIQLASH:\n  Otning oldiga son qo'yib ko'ring:\n     'two apples' — mumkin → SANALADIGAN\n     'two sugars' — mumkin emas → SANALMAYDIGAN\n\nSANALMAYDIGAN OTLAR ODATDA:\n  suyuqlik (water, milk, juice, coffee, tea)\n  kukun/donador (sugar, salt, flour, rice)\n  massa (bread, cheese, meat, butter, jam, honey, ham)",
           "bookRef": "Coursebook, 56-bet, nazariya (Countable - Uncountable Nouns)",
           "points": [
-            { "en": "Countable nouns are those which we can count. They have singular and plural forms. — 1/2/3/4 apples", "uz": "Sanaladigan otlar — sanash mumkin bo'lganlari. Ularning birlik va ko'plik shakli bor. — 1/2/3/4 olma", "noteUz": "'to count' = sanamoq. 'countable' = sanaladigan." },
-            { "en": "Uncountable nouns are those which we cannot count. They have only singular forms. — some meat/sugar", "uz": "Sanalmaydigan otlar — sanab bo'lmaydiganlari. Ularning faqat birlik shakli bor. — bir oz go'sht/shakar", "noteUz": "'uncountable' = un- (inkor) + countable.\n'meats', 'sugars' — odatda ISHLATILMAYDI." },
-            { "en": "A/An is only used with countable nouns in the singular. — a tomato / an egg (NOT: a sugar)", "uz": "A/An faqat sanaladigan otning birligi bilan ishlatiladi. — bitta pomidor / bitta tuxum ('a sugar' EMAS)", "noteUz": "'an' — UNLI TOVUSH bilan boshlanadigan so'z oldida: an egg, an apple, an onion." },
-            { "en": "Some is used with either countable nouns in the plural or uncountable nouns. — some bread / some biscuits", "uz": "Some sanaladigan otning ko'pligi yoki sanalmaydigan ot bilan ishlatiladi. — bir oz non / bir nechta pechenye", "noteUz": "'either ... or ...' = yo ... yo ...\nDIQQAT: 'some' SANALADIGAN BIRLIK bilan ISHLATILMAYDI:\n'some apple' — noto'g'ri (agar bitta olma bo'lsa 'an apple')." }
+            {
+              "en": "Countable nouns are those which we can count. They have singular and plural forms. — 1/2/3/4 apples",
+              "uz": "Sanaladigan otlar — sanash mumkin bo'lganlari. Ularning birlik va ko'plik shakli bor. — 1/2/3/4 olma",
+              "noteUz": "'to count' = sanamoq. 'countable' = sanaladigan."
+            },
+            {
+              "en": "Uncountable nouns are those which we cannot count. They have only singular forms. — some meat/sugar",
+              "uz": "Sanalmaydigan otlar — sanab bo'lmaydiganlari. Ularning faqat birlik shakli bor. — bir oz go'sht/shakar",
+              "noteUz": "'uncountable' = un- (inkor) + countable.\n'meats', 'sugars' — odatda ISHLATILMAYDI."
+            },
+            {
+              "en": "A/An is only used with countable nouns in the singular. — a tomato / an egg (NOT: a sugar)",
+              "uz": "A/An faqat sanaladigan otning birligi bilan ishlatiladi. — bitta pomidor / bitta tuxum ('a sugar' EMAS)",
+              "noteUz": "'an' — UNLI TOVUSH bilan boshlanadigan so'z oldida: an egg, an apple, an onion."
+            },
+            {
+              "en": "Some is used with either countable nouns in the plural or uncountable nouns. — some bread / some biscuits",
+              "uz": "Some sanaladigan otning ko'pligi yoki sanalmaydigan ot bilan ishlatiladi. — bir oz non / bir nechta pechenye",
+              "noteUz": "'either ... or ...' = yo ... yo ...\nDIQQAT: 'some' SANALADIGAN BIRLIK bilan ISHLATILMAYDI:\n'some apple' — noto'g'ri (agar bitta olma bo'lsa 'an apple')."
+            }
           ]
         },
         {
@@ -62,21 +125,96 @@
           "explanationUz": "15 TA SO'Z RASMLAR BILAN BERILGAN:\n  honey, tomatoes, jam, rice, coffee, cherries,\n  egg, ham, sugar, flour, sandwich, butter,\n  water, salt, pepper\n\nQANDAY TANLANADI:\n  SANALADIGAN BIRLIK  → a / an\n     an egg, a sandwich\n  SANALADIGAN KO'PLIK → some\n     some tomatoes, some cherries\n  SANALMAYDIGAN       → some\n     some honey, some rice, some water\n\nDIQQAT — 'an' QACHON:\n  Unli TOVUSH bilan boshlansa: an egg, an apple, an onion.\n\nDIQQAT — 'pepper' IKKI MA'NODA:\n  a pepper (sanaladi) = bulg'or qalampiri (sabzavot)\n  pepper (sanalmaydi) = qora qalampir (ziravor)\n  Rasmda ZIRAVOR idishi bor → SANALMAYDIGAN → some pepper.",
           "bookRef": "Coursebook, 56-bet, 8-mashq",
           "items": [
-            { "textEn": "1  ............ honey", "answer": "some", "hintUz": "Quyuq shirin suyuqlik — sanaladimi?", "whyUz": "SANALMAYDIGAN (suyuq massa) → SOME honey.\n'a honey' XATO. 'two honeys' ham noto'g'ri." },
-            { "textEn": "2  ............ tomatoes", "answer": "some", "hintUz": "Rasmda bir nechta pomidor", "whyUz": "SANALADIGAN, lekin KO'PLIKDA → SOME tomatoes.\nBittasi bo'lsa: 'a tomato'." },
-            { "textEn": "3  ............ jam", "answer": "some", "hintUz": "Bankadagi shirin massa", "whyUz": "SANALMAYDIGAN → SOME jam.\n'jam' = murabbo, jem." },
-            { "textEn": "4  ............ rice", "answer": "some", "hintUz": "Mayda donador mahsulot", "whyUz": "SANALMAYDIGAN → SOME rice.\nDonalarini sanab bo'lmaydi." },
-            { "textEn": "5  ............ coffee", "answer": "some", "hintUz": "Suyuqlik", "whyUz": "SANALMAYDIGAN → SOME coffee.\nDIQQAT: restoranda 'two coffees' deyish mumkin —\nbu 'ikki piyola qahva' degani (qisqartma shakl)." },
-            { "textEn": "6  ............ cherries", "answer": "some", "hintUz": "Rasmda bir nechta gilos", "whyUz": "SANALADIGAN, KO'PLIKDA → SOME cherries.\nBittasi: 'a cherry'." },
-            { "textEn": "7  ............ egg", "answer": "an", "hintUz": "Bitta tuxum, unli tovush bilan boshlanadi", "whyUz": "SANALADIGAN, BIRLIKDA → 'an' (unli tovush → AN).\n'a egg' XATO." },
-            { "textEn": "8  ............ ham", "answer": "some", "hintUz": "Go'sht mahsuloti (bo'lak emas, massa)", "whyUz": "SANALMAYDIGAN → SOME ham.\n'ham' = dudlangan cho'chqa go'shti." },
-            { "textEn": "9  ............ sugar", "answer": "some", "hintUz": "Kukunsimon shirin mahsulot", "whyUz": "SANALMAYDIGAN → SOME sugar.\nNazariya qutisida ham misol sifatida berilgan: 'NOT: a sugar'." },
-            { "textEn": "10  ............ flour", "answer": "some", "hintUz": "Non pishirish uchun kukun", "whyUz": "SANALMAYDIGAN → SOME flour.\n'flour' /ˈflaʊə/ = un.\nDIQQAT: 'a flower' /ˈflaʊə/ = gul — bir xil o'qiladi!" },
-            { "textEn": "11  ............ sandwich", "answer": "a", "hintUz": "Bitta buterbrod", "whyUz": "SANALADIGAN, BIRLIKDA → 'a sandwich'.\nKo'pligi: sandwiches (-ch → -ES)." },
-            { "textEn": "12  ............ butter", "answer": "some", "hintUz": "Sut mahsuloti (massa)", "whyUz": "SANALMAYDIGAN → SOME butter.\n'butter' = sariyog'." },
-            { "textEn": "13  ............ water", "answer": "some", "hintUz": "Suyuqlik", "whyUz": "SANALMAYDIGAN → SOME water.\nSanash uchun: 'a glass of water'." },
-            { "textEn": "14  ............ salt", "answer": "some", "hintUz": "Ziravor (kukun)", "whyUz": "SANALMAYDIGAN → SOME salt." },
-            { "textEn": "15  ............ pepper", "answer": "some", "hintUz": "Rasmda ziravor idishi — qora qalampir", "whyUz": "Rasmda ZIRAVOR (qora qalampir) → SANALMAYDIGAN → SOME pepper.\nDIQQAT: 'a pepper' = bulg'or qalampiri (sabzavot, sanaladi)." }
+            {
+              "textEn": "1  ............ honey",
+              "answer": "some",
+              "hintUz": "Quyuq shirin suyuqlik — sanaladimi?",
+              "whyUz": "SANALMAYDIGAN (suyuq massa) → SOME honey.\n'a honey' XATO. 'two honeys' ham noto'g'ri."
+            },
+            {
+              "textEn": "2  ............ tomatoes",
+              "answer": "some",
+              "hintUz": "Rasmda bir nechta pomidor",
+              "whyUz": "SANALADIGAN, lekin KO'PLIKDA → SOME tomatoes.\nBittasi bo'lsa: 'a tomato'."
+            },
+            {
+              "textEn": "3  ............ jam",
+              "answer": "some",
+              "hintUz": "Bankadagi shirin massa",
+              "whyUz": "SANALMAYDIGAN → SOME jam.\n'jam' = murabbo, jem."
+            },
+            {
+              "textEn": "4  ............ rice",
+              "answer": "some",
+              "hintUz": "Mayda donador mahsulot",
+              "whyUz": "SANALMAYDIGAN → SOME rice.\nDonalarini sanab bo'lmaydi."
+            },
+            {
+              "textEn": "5  ............ coffee",
+              "answer": "some",
+              "hintUz": "Suyuqlik",
+              "whyUz": "SANALMAYDIGAN → SOME coffee.\nDIQQAT: restoranda 'two coffees' deyish mumkin —\nbu 'ikki piyola qahva' degani (qisqartma shakl)."
+            },
+            {
+              "textEn": "6  ............ cherries",
+              "answer": "some",
+              "hintUz": "Rasmda bir nechta gilos",
+              "whyUz": "SANALADIGAN, KO'PLIKDA → SOME cherries.\nBittasi: 'a cherry'."
+            },
+            {
+              "textEn": "7  ............ egg",
+              "answer": "an",
+              "hintUz": "Bitta tuxum, unli tovush bilan boshlanadi",
+              "whyUz": "SANALADIGAN, BIRLIKDA → 'an' (unli tovush → AN).\n'a egg' XATO."
+            },
+            {
+              "textEn": "8  ............ ham",
+              "answer": "some",
+              "hintUz": "Go'sht mahsuloti (bo'lak emas, massa)",
+              "whyUz": "SANALMAYDIGAN → SOME ham.\n'ham' = dudlangan cho'chqa go'shti."
+            },
+            {
+              "textEn": "9  ............ sugar",
+              "answer": "some",
+              "hintUz": "Kukunsimon shirin mahsulot",
+              "whyUz": "SANALMAYDIGAN → SOME sugar.\nNazariya qutisida ham misol sifatida berilgan: 'NOT: a sugar'."
+            },
+            {
+              "textEn": "10  ............ flour",
+              "answer": "some",
+              "hintUz": "Non pishirish uchun kukun",
+              "whyUz": "SANALMAYDIGAN → SOME flour.\n'flour' /ˈflaʊə/ = un.\nDIQQAT: 'a flower' /ˈflaʊə/ = gul — bir xil o'qiladi!"
+            },
+            {
+              "textEn": "11  ............ sandwich",
+              "answer": "a",
+              "hintUz": "Bitta buterbrod",
+              "whyUz": "SANALADIGAN, BIRLIKDA → 'a sandwich'.\nKo'pligi: sandwiches (-ch → -ES)."
+            },
+            {
+              "textEn": "12  ............ butter",
+              "answer": "some",
+              "hintUz": "Sut mahsuloti (massa)",
+              "whyUz": "SANALMAYDIGAN → SOME butter.\n'butter' = sariyog'."
+            },
+            {
+              "textEn": "13  ............ water",
+              "answer": "some",
+              "hintUz": "Suyuqlik",
+              "whyUz": "SANALMAYDIGAN → SOME water.\nSanash uchun: 'a glass of water'."
+            },
+            {
+              "textEn": "14  ............ salt",
+              "answer": "some",
+              "hintUz": "Ziravor (kukun)",
+              "whyUz": "SANALMAYDIGAN → SOME salt."
+            },
+            {
+              "textEn": "15  ............ pepper",
+              "answer": "some",
+              "hintUz": "Rasmda ziravor idishi — qora qalampir",
+              "whyUz": "Rasmda ZIRAVOR (qora qalampir) → SANALMAYDIGAN → SOME pepper.\nDIQQAT: 'a pepper' = bulg'or qalampiri (sabzavot, sanaladi)."
+            }
           ]
         }
       ]
@@ -94,15 +232,51 @@
           "explanationUz": "MIQDOR IBORALARI — SANALMAYDIGAN OTNI SANASH USULI.\n\nQOLIP: a/two/three + MIQDOR SO'ZI + OF + ot\n\n  a slice OF bread     — bir bo'lak non\n  a bottle OF wine     — bir shisha vino\n  a glass OF water     — bir stakan suv\n  a packet OF crisps   — bir paket chips\n  a kilo OF sugar      — bir kilo shakar\n  a loaf OF bread      — bir non (butun)\n  a cup OF tea         — bir piyola choy\n  a carton OF milk     — bir paket sut\n  a piece OF cheese    — bir bo'lak pishloq\n  a bowl OF soup       — bir kosa sho'rva\n\nDIQQAT: 'OF' HECH QACHON TUSHIB QOLMAYDI.\n  'a glass water' XATO → 'a glass OF water'\n\nKO'PLIK: miqdor so'zi ko'plikka o'tadi, ot esa o'zgarmaydi:\n  two glassES of water,  three cupS of tea",
           "bookRef": "Coursebook, 56-bet, nazariya (phrases of quantity)",
           "points": [
-            { "en": "a slice of bread / cake / pizza", "uz": "bir bo'lak non / tort / pitsa", "noteUz": "'a slice' — YUPQA, kesilgan bo'lak." },
-            { "en": "a bottle of wine / water / Coke", "uz": "bir shisha vino / suv / kola", "noteUz": "'a bottle' = shisha idish." },
-            { "en": "a glass of wine / water / juice", "uz": "bir stakan vino / suv / sharbat", "noteUz": "'a glass' = stakan, qadah." },
-            { "en": "a packet of crisps / cereal / sugar", "uz": "bir paket chips / xlopya / shakar", "noteUz": "'a packet' = paket (britancha); amerikacha 'a package'." },
-            { "en": "a kilo of sugar / flour / potatoes", "uz": "bir kilo shakar / un / kartoshka", "noteUz": "'a kilo' = kilogramm (qisqartma)." },
-            { "en": "a loaf of bread", "uz": "bir non (butun)", "noteUz": "'a loaf' — BUTUN non. Ko'pligi: LOAVES." },
-            { "en": "a cup of tea / coffee", "uz": "bir piyola choy / qahva", "noteUz": "'a cup' = piyola, chashka (issiq ichimlik uchun)." },
-            { "en": "a carton of milk / juice", "uz": "bir paket sut / sharbat", "noteUz": "'a carton' = qog'oz paket (sut, sharbat uchun)." },
-            { "en": "a piece of cheese / cake / paper", "uz": "bir bo'lak pishloq / tort / qog'oz", "noteUz": "'a piece' — eng UMUMIY so'z, deyarli hamma narsaga mos." }
+            {
+              "en": "a slice of bread / cake / pizza",
+              "uz": "bir bo'lak non / tort / pitsa",
+              "noteUz": "'a slice' — YUPQA, kesilgan bo'lak."
+            },
+            {
+              "en": "a bottle of wine / water / Coke",
+              "uz": "bir shisha vino / suv / kola",
+              "noteUz": "'a bottle' = shisha idish."
+            },
+            {
+              "en": "a glass of wine / water / juice",
+              "uz": "bir stakan vino / suv / sharbat",
+              "noteUz": "'a glass' = stakan, qadah."
+            },
+            {
+              "en": "a packet of crisps / cereal / sugar",
+              "uz": "bir paket chips / xlopya / shakar",
+              "noteUz": "'a packet' = paket (britancha); amerikacha 'a package'."
+            },
+            {
+              "en": "a kilo of sugar / flour / potatoes",
+              "uz": "bir kilo shakar / un / kartoshka",
+              "noteUz": "'a kilo' = kilogramm (qisqartma)."
+            },
+            {
+              "en": "a loaf of bread",
+              "uz": "bir non (butun)",
+              "noteUz": "'a loaf' — BUTUN non. Ko'pligi: LOAVES."
+            },
+            {
+              "en": "a cup of tea / coffee",
+              "uz": "bir piyola choy / qahva",
+              "noteUz": "'a cup' = piyola, chashka (issiq ichimlik uchun)."
+            },
+            {
+              "en": "a carton of milk / juice",
+              "uz": "bir paket sut / sharbat",
+              "noteUz": "'a carton' = qog'oz paket (sut, sharbat uchun)."
+            },
+            {
+              "en": "a piece of cheese / cake / paper",
+              "uz": "bir bo'lak pishloq / tort / qog'oz",
+              "noteUz": "'a piece' — eng UMUMIY so'z, deyarli hamma narsaga mos."
+            }
           ]
         },
         {
@@ -112,17 +286,73 @@
           "instructionUz": "Ro'yxatdan to'g'ri so'zlarni qo'ying.",
           "explanationUz": "RO'YXAT: slice, bottle, glass, packet, bowl, loaf, cup,\n         carton, piece\n\nRASMLARGA QARAB ANIQLANADI:\n  1 — shisha idish        → bottle (BERILGAN)\n  2 — butun dumaloq non   → loaf\n  3 — taxtadagi pishloq   → piece\n  4 — qadah (oyoqli)      → glass\n  5 — paket (chipsli)     → packet\n  6 — qog'oz quti (sutli) → carton\n  7 — kesilgan non bo'lagi → slice\n  8 — likopchali chashka  → cup\n  9 — chuqur idish        → bowl\n\nDIQQAT — 2 va 7-BANDNI SOLISHTIRING:\n  a LOAF of bread  = butun non\n  a SLICE of bread = bir bo'lak (kesilgan) non",
           "bookRef": "Coursebook, 56-bet, 9a-mashq",
-          "wordList": ["slice", "bottle", "glass", "packet", "bowl", "loaf", "cup", "carton", "piece"],
+          "wordList": [
+            "slice",
+            "bottle",
+            "glass",
+            "packet",
+            "bowl",
+            "loaf",
+            "cup",
+            "carton",
+            "piece"
+          ],
           "items": [
-            { "textEn": "1  a ............ of wine", "answer": "bottle", "given": true, "hintUz": "Kitobda berilgan", "whyUz": "Kitobda BERILGAN javob. Rasmda shisha idish." },
-            { "textEn": "2  a ............ of bread", "answer": "loaf", "hintUz": "Rasmda BUTUN dumaloq non", "whyUz": "'a loaf of bread' = bir butun non.\nKo'pligi: LOAVES (6-mashqdagi qoida).\n7-band bilan solishtiring: u yerda KESILGAN bo'lak." },
-            { "textEn": "3  a ............ of cheese", "answer": "piece", "hintUz": "Umumiy 'bo'lak' so'zi", "whyUz": "'a piece of cheese' = bir bo'lak pishloq.\n'a piece' — eng umumiy so'z, deyarli hamma narsaga mos." },
-            { "textEn": "4  a ............ of wine", "answer": "glass", "hintUz": "Rasmda oyoqli qadah", "whyUz": "'a glass of wine' = bir qadah vino.\n1-band bilan solishtiring: 'a BOTTLE of wine' — butun shisha." },
-            { "textEn": "5  a ............ of crisps", "answer": "packet", "hintUz": "Rasmda yorqin paket", "whyUz": "'a packet of crisps' = bir paket chips.\nBritancha; amerikacha 'a bag of chips'." },
-            { "textEn": "6  a ............ of milk", "answer": "carton", "hintUz": "Rasmda qog'oz quti (MILK yozuvi bilan)", "whyUz": "'a carton of milk' = bir paket sut.\n'a carton' — qog'ozdan yasalgan to'rtburchak idish." },
-            { "textEn": "7  a ............ of bread", "answer": "slice", "hintUz": "Rasmda kesilgan yupqa non bo'lagi", "whyUz": "'a slice of bread' = bir bo'lak (kesilgan) non.\n2-band bilan solishtiring: 'a LOAF' — butun non." },
-            { "textEn": "8  a ............ of coffee", "answer": "cup", "hintUz": "Rasmda likopchali chashka", "whyUz": "'a cup of coffee' = bir piyola qahva.\n'a cup' — issiq ichimlik uchun, dastasi bor." },
-            { "textEn": "9  a ............ of soup", "answer": "bowl", "hintUz": "Rasmda chuqur yumaloq idish", "whyUz": "'a bowl of soup' = bir kosa sho'rva.\n55-betda ham bor edi: 'a bowl of ice-cream'." }
+            {
+              "textEn": "1  a ............ of wine",
+              "answer": "bottle",
+              "given": true,
+              "hintUz": "Kitobda berilgan",
+              "whyUz": "Kitobda BERILGAN javob. Rasmda shisha idish."
+            },
+            {
+              "textEn": "2  a ............ of bread",
+              "answer": "loaf",
+              "hintUz": "Rasmda BUTUN dumaloq non",
+              "whyUz": "'a loaf of bread' = bir butun non.\nKo'pligi: LOAVES (6-mashqdagi qoida).\n7-band bilan solishtiring: u yerda KESILGAN bo'lak."
+            },
+            {
+              "textEn": "3  a ............ of cheese",
+              "answer": "piece",
+              "hintUz": "Umumiy 'bo'lak' so'zi",
+              "whyUz": "'a piece of cheese' = bir bo'lak pishloq.\n'a piece' — eng umumiy so'z, deyarli hamma narsaga mos."
+            },
+            {
+              "textEn": "4  a ............ of wine",
+              "answer": "glass",
+              "hintUz": "Rasmda oyoqli qadah",
+              "whyUz": "'a glass of wine' = bir qadah vino.\n1-band bilan solishtiring: 'a BOTTLE of wine' — butun shisha."
+            },
+            {
+              "textEn": "5  a ............ of crisps",
+              "answer": "packet",
+              "hintUz": "Rasmda yorqin paket",
+              "whyUz": "'a packet of crisps' = bir paket chips.\nBritancha; amerikacha 'a bag of chips'."
+            },
+            {
+              "textEn": "6  a ............ of milk",
+              "answer": "carton",
+              "hintUz": "Rasmda qog'oz quti (MILK yozuvi bilan)",
+              "whyUz": "'a carton of milk' = bir paket sut.\n'a carton' — qog'ozdan yasalgan to'rtburchak idish."
+            },
+            {
+              "textEn": "7  a ............ of bread",
+              "answer": "slice",
+              "hintUz": "Rasmda kesilgan yupqa non bo'lagi",
+              "whyUz": "'a slice of bread' = bir bo'lak (kesilgan) non.\n2-band bilan solishtiring: 'a LOAF' — butun non."
+            },
+            {
+              "textEn": "8  a ............ of coffee",
+              "answer": "cup",
+              "hintUz": "Rasmda likopchali chashka",
+              "whyUz": "'a cup of coffee' = bir piyola qahva.\n'a cup' — issiq ichimlik uchun, dastasi bor."
+            },
+            {
+              "textEn": "9  a ............ of soup",
+              "answer": "bowl",
+              "hintUz": "Rasmda chuqur yumaloq idish",
+              "whyUz": "'a bowl of soup' = bir kosa sho'rva.\n55-betda ham bor edi: 'a bowl of ice-cream'."
+            }
           ]
         },
         {
@@ -133,14 +363,54 @@
           "explanationUz": "OTLAR: Coke, flour, cake, juice, water, tea, cereal, sugar\n\n9a-RO'YXAT: slice, bottle, glass, packet, bowl, loaf,\n            cup, carton, piece\n\nBA'ZI OTLAR BIR NECHA MIQDOR SO'ZI BILAN KELADI —\nqanday IDISHDA ekaniga qarab.\n\nUMUMIY QOIDALAR:\n  suyuqlik → bottle, glass, carton, cup\n  kukun    → packet, kilo\n  qattiq   → slice, piece\n  yumshoq/donador → bowl, packet",
           "bookRef": "Coursebook, 56-bet, 9b-mashq",
           "items": [
-            { "textEn": "Coke", "answer": "a bottle of Coke / a glass of Coke", "hintUz": "Suyuqlik — shisha yoki stakan", "whyUz": "Kola shishada sotiladi (a bottle), stakanga quyiladi (a glass).\n'Coke' — bosh harf bilan (marka nomi)." },
-            { "textEn": "flour", "answer": "a packet of flour", "hintUz": "Kukun — paketda sotiladi", "whyUz": "Un paketda sotiladi → 'a packet of flour'.\n'a kilo of flour' ham to'g'ri (nazariya qutisida 'kilo' bor)." },
-            { "textEn": "cake", "answer": "a slice of cake / a piece of cake", "hintUz": "Kesib beriladigan shirinlik", "whyUz": "Tort kesib beriladi → 'a slice' yoki 'a piece'.\nDIQQAT: 'a piece of cake' — idioma sifatida ham ishlatiladi:\n'juda oson ish' degani." },
-            { "textEn": "juice", "answer": "a carton of juice / a glass of juice", "hintUz": "Suyuqlik — qog'oz paketda sotiladi", "whyUz": "Sharbat qog'oz paketda sotiladi (a carton), stakanga quyiladi (a glass).\n'a bottle of juice' ham mumkin." },
-            { "textEn": "water", "answer": "a bottle of water / a glass of water", "hintUz": "Suyuqlik", "whyUz": "Suv shishada sotiladi (a bottle), stakanga quyiladi (a glass)." },
-            { "textEn": "tea", "answer": "a cup of tea", "hintUz": "Issiq ichimlik", "whyUz": "'a cup of tea' — o'zgarmas ibora.\nDIQQAT: Britaniyada 'a cup of tea' — kundalik hayotning ramzi.\nIdioma: 'It's not my cup of tea' = bu menga yoqmaydi." },
-            { "textEn": "cereal", "answer": "a bowl of cereal / a packet of cereal", "hintUz": "Nonushta xlopyasi", "whyUz": "'cereal' = nonushta uchun donli xlopya.\nPaketda sotiladi (a packet), kosada yeyiladi (a bowl)." },
-            { "textEn": "sugar", "answer": "a packet of sugar / a kilo of sugar", "hintUz": "Kukun — paketda sotiladi", "whyUz": "Shakar paketda sotiladi.\nChoyga qo'shish uchun: 'a spoonful of sugar' (bir qoshiq)." }
+            {
+              "textEn": "Coke",
+              "answer": "a bottle of Coke / a glass of Coke",
+              "hintUz": "Suyuqlik — shisha yoki stakan",
+              "whyUz": "Kola shishada sotiladi (a bottle), stakanga quyiladi (a glass).\n'Coke' — bosh harf bilan (marka nomi)."
+            },
+            {
+              "textEn": "flour",
+              "answer": "a packet of flour",
+              "hintUz": "Kukun — paketda sotiladi",
+              "whyUz": "Un paketda sotiladi → 'a packet of flour'.\n'a kilo of flour' ham to'g'ri (nazariya qutisida 'kilo' bor)."
+            },
+            {
+              "textEn": "cake",
+              "answer": "a slice of cake / a piece of cake",
+              "hintUz": "Kesib beriladigan shirinlik",
+              "whyUz": "Tort kesib beriladi → 'a slice' yoki 'a piece'.\nDIQQAT: 'a piece of cake' — idioma sifatida ham ishlatiladi:\n'juda oson ish' degani."
+            },
+            {
+              "textEn": "juice",
+              "answer": "a carton of juice / a glass of juice",
+              "hintUz": "Suyuqlik — qog'oz paketda sotiladi",
+              "whyUz": "Sharbat qog'oz paketda sotiladi (a carton), stakanga quyiladi (a glass).\n'a bottle of juice' ham mumkin."
+            },
+            {
+              "textEn": "water",
+              "answer": "a bottle of water / a glass of water",
+              "hintUz": "Suyuqlik",
+              "whyUz": "Suv shishada sotiladi (a bottle), stakanga quyiladi (a glass)."
+            },
+            {
+              "textEn": "tea",
+              "answer": "a cup of tea",
+              "hintUz": "Issiq ichimlik",
+              "whyUz": "'a cup of tea' — o'zgarmas ibora.\nDIQQAT: Britaniyada 'a cup of tea' — kundalik hayotning ramzi.\nIdioma: 'It's not my cup of tea' = bu menga yoqmaydi."
+            },
+            {
+              "textEn": "cereal",
+              "answer": "a bowl of cereal / a packet of cereal",
+              "hintUz": "Nonushta xlopyasi",
+              "whyUz": "'cereal' = nonushta uchun donli xlopya.\nPaketda sotiladi (a packet), kosada yeyiladi (a bowl)."
+            },
+            {
+              "textEn": "sugar",
+              "answer": "a packet of sugar / a kilo of sugar",
+              "hintUz": "Kukun — paketda sotiladi",
+              "whyUz": "Shakar paketda sotiladi.\nChoyga qo'shish uchun: 'a spoonful of sugar' (bir qoshiq)."
+            }
           ]
         }
       ]
@@ -159,16 +429,56 @@
           "explanationUz": "IKKI NAMUNA DIALOG:\n\n  1) ICHIMLIK haqida (I'm thirsty)\n  2) OVQAT haqida (I'm hungry)\n\nASOSIY IBORALAR:\n  I'm thirsty. = Chanqadim.\n  I'm hungry.  = Qornim ochdi.\n  Is there anything to drink/eat? = Ichgani/yegani bir narsa bormi?\n  Would you like ...? = ... xohlaysizmi? (MULOYIM taklif)\n  No, thanks. = Yo'q, rahmat. (muloyim rad etish)\n  How about ...? = ...-chi? (boshqa taklif)\n  Oh, yes, please! = Ha, iltimos!\n  I'd love ... = Men ... juda xohlardim. (= I would love)\n\nDIQQAT — 'SOME' yoki 'A':\n  SANALMAYDIGAN → some orange juice, some Coke, some tea\n  SANALADIGAN BIRLIK → a ham sandwich, a cheese sandwich",
           "bookRef": "Coursebook, 56-bet, 10-mashq",
           "example": [
-            { "speaker": "A (1-dialog)", "en": "I'm thirsty. Is there anything to drink?", "uz": "Chanqadim. Ichgani bir narsa bormi?" },
-            { "speaker": "B", "en": "Would you like some orange juice?", "uz": "Apelsin sharbati xohlaysizmi?" },
-            { "speaker": "A", "en": "No, thanks. I don't like orange juice.", "uz": "Yo'q, rahmat. Men apelsin sharbatini yoqtirmayman." },
-            { "speaker": "B", "en": "How about some Coke?", "uz": "Kola-chi?" },
-            { "speaker": "A", "en": "Oh, yes, please! I'd love some Coke!", "uz": "Ha, iltimos! Men kolani juda xohlardim!" },
-            { "speaker": "A (2-dialog)", "en": "I'm hungry. Is there anything to eat?", "uz": "Qornim ochdi. Yegani bir narsa bormi?" },
-            { "speaker": "B", "en": "Would you like a ham sandwich?", "uz": "Vetchinali buterbrod xohlaysizmi?" },
-            { "speaker": "A", "en": "No, thanks. I don't like ham.", "uz": "Yo'q, rahmat. Men vetchinani yoqtirmayman." },
-            { "speaker": "B", "en": "How about a cheese sandwich?", "uz": "Pishloqli buterbrod-chi?" },
-            { "speaker": "A", "en": "Oh, yes, please! I'd love a cheese sandwich!", "uz": "Ha, iltimos! Men pishloqli buterbrodni juda xohlardim!" }
+            {
+              "speaker": "A (1-dialog)",
+              "en": "I'm thirsty. Is there anything to drink?",
+              "uz": "Chanqadim. Ichgani bir narsa bormi?"
+            },
+            {
+              "speaker": "B",
+              "en": "Would you like some orange juice?",
+              "uz": "Apelsin sharbati xohlaysizmi?"
+            },
+            {
+              "speaker": "A",
+              "en": "No, thanks. I don't like orange juice.",
+              "uz": "Yo'q, rahmat. Men apelsin sharbatini yoqtirmayman."
+            },
+            {
+              "speaker": "B",
+              "en": "How about some Coke?",
+              "uz": "Kola-chi?"
+            },
+            {
+              "speaker": "A",
+              "en": "Oh, yes, please! I'd love some Coke!",
+              "uz": "Ha, iltimos! Men kolani juda xohlardim!"
+            },
+            {
+              "speaker": "A (2-dialog)",
+              "en": "I'm hungry. Is there anything to eat?",
+              "uz": "Qornim ochdi. Yegani bir narsa bormi?"
+            },
+            {
+              "speaker": "B",
+              "en": "Would you like a ham sandwich?",
+              "uz": "Vetchinali buterbrod xohlaysizmi?"
+            },
+            {
+              "speaker": "A",
+              "en": "No, thanks. I don't like ham.",
+              "uz": "Yo'q, rahmat. Men vetchinani yoqtirmayman."
+            },
+            {
+              "speaker": "B",
+              "en": "How about a cheese sandwich?",
+              "uz": "Pishloqli buterbrod-chi?"
+            },
+            {
+              "speaker": "A",
+              "en": "Oh, yes, please! I'd love a cheese sandwich!",
+              "uz": "Ha, iltimos! Men pishloqli buterbrodni juda xohlardim!"
+            }
           ]
         },
         {
@@ -179,10 +489,30 @@
           "explanationUz": "BERILGAN SO'ZLAR (yoqtirilmagan / yoqtirilgan):\n  coffee / tea            — ichimlik\n  beer / mineral water    — ichimlik\n  spaghetti / soup        — ovqat\n  chips / hamburger       — ovqat\n\nICHIMLIK bo'lsa: 'I'm thirsty. Is there anything to DRINK?'\nOVQAT bo'lsa:    'I'm hungry. Is there anything to EAT?'\n\nBARCHA SO'ZLAR SANALMAYDIGAN yoki KO'PLIK —\nfaqat 'a hamburger' sanaladigan birlik.",
           "bookRef": "Coursebook, 56-bet, 10-mashq (so'zlar)",
           "items": [
-            { "prompt": "coffee / tea (ichimlik)", "question": "I'm thirsty. Is there anything to drink? — Would you like some coffee?", "answer": "No, thanks. I don't like coffee. — How about some tea? — Oh, yes, please! I'd love some tea!", "whyUz": "'coffee' va 'tea' — SANALMAYDIGAN → SOME bilan." },
-            { "prompt": "beer / mineral water (ichimlik)", "question": "I'm thirsty. Is there anything to drink? — Would you like some beer?", "answer": "No, thanks. I don't like beer. — How about some mineral water? — Oh, yes, please! I'd love some mineral water!", "whyUz": "'beer' va 'mineral water' — SANALMAYDIGAN → SOME bilan.\n'mineral water' = mineral suv." },
-            { "prompt": "spaghetti / soup (ovqat)", "question": "I'm hungry. Is there anything to eat? — Would you like some spaghetti?", "answer": "No, thanks. I don't like spaghetti. — How about some soup? — Oh, yes, please! I'd love some soup!", "whyUz": "'spaghetti' va 'soup' — SANALMAYDIGAN → SOME bilan.\nDIQQAT: 'spaghetti' italyanchada ko'plik, lekin inglizchada\nSANALMAYDIGAN ot: 'spaghetti IS delicious'." },
-            { "prompt": "chips / hamburger (ovqat)", "question": "I'm hungry. Is there anything to eat? — Would you like some chips?", "answer": "No, thanks. I don't like chips. — How about a hamburger? — Oh, yes, please! I'd love a hamburger!", "whyUz": "'chips' — KO'PLIK → SOME bilan.\n'a hamburger' — SANALADIGAN BIRLIK → 'A' bilan ('some' XATO)." }
+            {
+              "prompt": "coffee / tea (ichimlik)",
+              "question": "I'm thirsty. Is there anything to drink? — Would you like some coffee?",
+              "answer": "No, thanks. I don't like coffee. — How about some tea? — Oh, yes, please! I'd love some tea!",
+              "whyUz": "'coffee' va 'tea' — SANALMAYDIGAN → SOME bilan."
+            },
+            {
+              "prompt": "beer / mineral water (ichimlik)",
+              "question": "I'm thirsty. Is there anything to drink? — Would you like some beer?",
+              "answer": "No, thanks. I don't like beer. — How about some mineral water? — Oh, yes, please! I'd love some mineral water!",
+              "whyUz": "'beer' va 'mineral water' — SANALMAYDIGAN → SOME bilan.\n'mineral water' = mineral suv."
+            },
+            {
+              "prompt": "spaghetti / soup (ovqat)",
+              "question": "I'm hungry. Is there anything to eat? — Would you like some spaghetti?",
+              "answer": "No, thanks. I don't like spaghetti. — How about some soup? — Oh, yes, please! I'd love some soup!",
+              "whyUz": "'spaghetti' va 'soup' — SANALMAYDIGAN → SOME bilan.\nDIQQAT: 'spaghetti' italyanchada ko'plik, lekin inglizchada\nSANALMAYDIGAN ot: 'spaghetti IS delicious'."
+            },
+            {
+              "prompt": "chips / hamburger (ovqat)",
+              "question": "I'm hungry. Is there anything to eat? — Would you like some chips?",
+              "answer": "No, thanks. I don't like chips. — How about a hamburger? — Oh, yes, please! I'd love a hamburger!",
+              "whyUz": "'chips' — KO'PLIK → SOME bilan.\n'a hamburger' — SANALADIGAN BIRLIK → 'A' bilan ('some' XATO)."
+            }
           ]
         }
       ]
@@ -196,68 +526,296 @@
         "ruleUz": "Ko'plik: -F / -FE → -VES",
         "explanationUz": "-f yoki -fe tashlanib, o'rniga -ves qo'shiladi.",
         "items": [
-          { "base": "a loaf", "baseUz": "non (butun)", "derived": "loaves", "derivedUz": "nonlar", "note": "jadvalda bor" },
-          { "base": "a knife", "baseUz": "pichoq", "derived": "knives", "derivedUz": "pichoqlar", "note": "" },
-          { "base": "a leaf", "baseUz": "barg", "derived": "leaves", "derivedUz": "barglar", "note": "" },
-          { "base": "a wife", "baseUz": "xotin", "derived": "wives", "derivedUz": "xotinlar", "note": "" },
-          { "base": "a life", "baseUz": "hayot", "derived": "lives", "derivedUz": "hayotlar", "note": "/laɪvz/" },
-          { "base": "a shelf", "baseUz": "javon", "derived": "shelves", "derivedUz": "javonlar", "note": "" },
-          { "base": "a roof", "baseUz": "tom", "derived": "roofs", "derivedUz": "tomlar", "note": "ISTISNO: -S" },
-          { "base": "a chief", "baseUz": "boshliq", "derived": "chiefs", "derivedUz": "boshliqlar", "note": "ISTISNO: -S" }
+          {
+            "base": "a loaf",
+            "baseUz": "non (butun)",
+            "derived": "loaves",
+            "derivedUz": "nonlar",
+            "note": "jadvalda bor"
+          },
+          {
+            "base": "a knife",
+            "baseUz": "pichoq",
+            "derived": "knives",
+            "derivedUz": "pichoqlar",
+            "note": ""
+          },
+          {
+            "base": "a leaf",
+            "baseUz": "barg",
+            "derived": "leaves",
+            "derivedUz": "barglar",
+            "note": ""
+          },
+          {
+            "base": "a wife",
+            "baseUz": "xotin",
+            "derived": "wives",
+            "derivedUz": "xotinlar",
+            "note": ""
+          },
+          {
+            "base": "a life",
+            "baseUz": "hayot",
+            "derived": "lives",
+            "derivedUz": "hayotlar",
+            "note": "/laɪvz/"
+          },
+          {
+            "base": "a shelf",
+            "baseUz": "javon",
+            "derived": "shelves",
+            "derivedUz": "javonlar",
+            "note": ""
+          },
+          {
+            "base": "a roof",
+            "baseUz": "tom",
+            "derived": "roofs",
+            "derivedUz": "tomlar",
+            "note": "ISTISNO: -S"
+          },
+          {
+            "base": "a chief",
+            "baseUz": "boshliq",
+            "derived": "chiefs",
+            "derivedUz": "boshliqlar",
+            "note": "ISTISNO: -S"
+          }
         ]
       },
       {
         "ruleUz": "Ko'plik: UNDOSH + Y → -IES;  UNLI + Y → -S",
         "explanationUz": "'y' dan OLDINGI harfga qarang!",
         "items": [
-          { "base": "a cherry", "baseUz": "gilos", "derived": "cherries", "derivedUz": "undosh 'r' + y", "note": "-IES" },
-          { "base": "a strawberry", "baseUz": "qulupnay", "derived": "strawberries", "derivedUz": "undosh 'r' + y", "note": "-IES" },
-          { "base": "a baby", "baseUz": "chaqaloq", "derived": "babies", "derivedUz": "undosh 'b' + y", "note": "-IES" },
-          { "base": "a city", "baseUz": "shahar", "derived": "cities", "derivedUz": "undosh 't' + y", "note": "-IES" },
-          { "base": "a boy", "baseUz": "bola", "derived": "boys", "derivedUz": "UNLI 'o' + y", "note": "-S" },
-          { "base": "a key", "baseUz": "kalit", "derived": "keys", "derivedUz": "UNLI 'e' + y", "note": "-S" },
-          { "base": "a day", "baseUz": "kun", "derived": "days", "derivedUz": "UNLI 'a' + y", "note": "-S" },
-          { "base": "a toy", "baseUz": "o'yinchoq", "derived": "toys", "derivedUz": "UNLI 'o' + y", "note": "-S" }
+          {
+            "base": "a cherry",
+            "baseUz": "gilos",
+            "derived": "cherries",
+            "derivedUz": "undosh 'r' + y",
+            "note": "-IES"
+          },
+          {
+            "base": "a strawberry",
+            "baseUz": "qulupnay",
+            "derived": "strawberries",
+            "derivedUz": "undosh 'r' + y",
+            "note": "-IES"
+          },
+          {
+            "base": "a baby",
+            "baseUz": "chaqaloq",
+            "derived": "babies",
+            "derivedUz": "undosh 'b' + y",
+            "note": "-IES"
+          },
+          {
+            "base": "a city",
+            "baseUz": "shahar",
+            "derived": "cities",
+            "derivedUz": "undosh 't' + y",
+            "note": "-IES"
+          },
+          {
+            "base": "a boy",
+            "baseUz": "bola",
+            "derived": "boys",
+            "derivedUz": "UNLI 'o' + y",
+            "note": "-S"
+          },
+          {
+            "base": "a key",
+            "baseUz": "kalit",
+            "derived": "keys",
+            "derivedUz": "UNLI 'e' + y",
+            "note": "-S"
+          },
+          {
+            "base": "a day",
+            "baseUz": "kun",
+            "derived": "days",
+            "derivedUz": "UNLI 'a' + y",
+            "note": "-S"
+          },
+          {
+            "base": "a toy",
+            "baseUz": "o'yinchoq",
+            "derived": "toys",
+            "derivedUz": "UNLI 'o' + y",
+            "note": "-S"
+          }
         ]
       },
       {
         "ruleUz": "Ko'plik: -O → -ES (istisnolar bilan)",
         "explanationUz": "Ko'pchilik -o li otlar -es oladi, lekin istisnolar bor.",
         "items": [
-          { "base": "a tomato", "baseUz": "pomidor", "derived": "tomatoes", "derivedUz": "-ES", "note": "jadvalda bor" },
-          { "base": "a potato", "baseUz": "kartoshka", "derived": "potatoes", "derivedUz": "-ES", "note": "" },
-          { "base": "a hero", "baseUz": "qahramon", "derived": "heroes", "derivedUz": "-ES", "note": "" },
-          { "base": "a photo", "baseUz": "surat", "derived": "photos", "derivedUz": "-S", "note": "ISTISNO" },
-          { "base": "a piano", "baseUz": "pianino", "derived": "pianos", "derivedUz": "-S", "note": "ISTISNO" },
-          { "base": "a radio", "baseUz": "radio", "derived": "radios", "derivedUz": "-S", "note": "ISTISNO" }
+          {
+            "base": "a tomato",
+            "baseUz": "pomidor",
+            "derived": "tomatoes",
+            "derivedUz": "-ES",
+            "note": "jadvalda bor"
+          },
+          {
+            "base": "a potato",
+            "baseUz": "kartoshka",
+            "derived": "potatoes",
+            "derivedUz": "-ES",
+            "note": ""
+          },
+          {
+            "base": "a hero",
+            "baseUz": "qahramon",
+            "derived": "heroes",
+            "derivedUz": "-ES",
+            "note": ""
+          },
+          {
+            "base": "a photo",
+            "baseUz": "surat",
+            "derived": "photos",
+            "derivedUz": "-S",
+            "note": "ISTISNO"
+          },
+          {
+            "base": "a piano",
+            "baseUz": "pianino",
+            "derived": "pianos",
+            "derivedUz": "-S",
+            "note": "ISTISNO"
+          },
+          {
+            "base": "a radio",
+            "baseUz": "radio",
+            "derived": "radios",
+            "derivedUz": "-S",
+            "note": "ISTISNO"
+          }
         ]
       },
       {
         "ruleUz": "Miqdor iboralari (a ... OF ...)",
         "explanationUz": "Sanalmaydigan otni sanash uchun ishlatiladi. 'OF' shart.",
         "items": [
-          { "base": "a bottle of", "baseUz": "bir shisha", "derived": "wine, water, Coke, juice", "derivedUz": "suyuqlik", "note": "" },
-          { "base": "a glass of", "baseUz": "bir stakan", "derived": "water, wine, juice, milk", "derivedUz": "suyuqlik", "note": "oyoqli qadah ham" },
-          { "base": "a cup of", "baseUz": "bir piyola", "derived": "tea, coffee", "derivedUz": "issiq ichimlik", "note": "dastasi bor" },
-          { "base": "a carton of", "baseUz": "bir qog'oz paket", "derived": "milk, juice", "derivedUz": "suyuqlik", "note": "" },
-          { "base": "a packet of", "baseUz": "bir paket", "derived": "crisps, cereal, sugar, flour", "derivedUz": "quruq mahsulot", "note": "amerikacha: package" },
-          { "base": "a loaf of", "baseUz": "bir butun non", "derived": "bread", "derivedUz": "faqat non", "note": "ko'pligi: loaves" },
-          { "base": "a slice of", "baseUz": "bir bo'lak (yupqa)", "derived": "bread, cake, cheese, pizza", "derivedUz": "kesilgan", "note": "" },
-          { "base": "a piece of", "baseUz": "bir bo'lak (umumiy)", "derived": "cheese, cake, paper", "derivedUz": "eng universal", "note": "" },
-          { "base": "a bowl of", "baseUz": "bir kosa", "derived": "soup, cereal, rice, ice-cream", "derivedUz": "chuqur idishda", "note": "" },
-          { "base": "a kilo of", "baseUz": "bir kilo", "derived": "sugar, flour, potatoes, meat", "derivedUz": "og'irlik", "note": "" }
+          {
+            "base": "a bottle of",
+            "baseUz": "bir shisha",
+            "derived": "wine, water, Coke, juice",
+            "derivedUz": "suyuqlik",
+            "note": ""
+          },
+          {
+            "base": "a glass of",
+            "baseUz": "bir stakan",
+            "derived": "water, wine, juice, milk",
+            "derivedUz": "suyuqlik",
+            "note": "oyoqli qadah ham"
+          },
+          {
+            "base": "a cup of",
+            "baseUz": "bir piyola",
+            "derived": "tea, coffee",
+            "derivedUz": "issiq ichimlik",
+            "note": "dastasi bor"
+          },
+          {
+            "base": "a carton of",
+            "baseUz": "bir qog'oz paket",
+            "derived": "milk, juice",
+            "derivedUz": "suyuqlik",
+            "note": ""
+          },
+          {
+            "base": "a packet of",
+            "baseUz": "bir paket",
+            "derived": "crisps, cereal, sugar, flour",
+            "derivedUz": "quruq mahsulot",
+            "note": "amerikacha: package"
+          },
+          {
+            "base": "a loaf of",
+            "baseUz": "bir butun non",
+            "derived": "bread",
+            "derivedUz": "faqat non",
+            "note": "ko'pligi: loaves"
+          },
+          {
+            "base": "a slice of",
+            "baseUz": "bir bo'lak (yupqa)",
+            "derived": "bread, cake, cheese, pizza",
+            "derivedUz": "kesilgan",
+            "note": ""
+          },
+          {
+            "base": "a piece of",
+            "baseUz": "bir bo'lak (umumiy)",
+            "derived": "cheese, cake, paper",
+            "derivedUz": "eng universal",
+            "note": ""
+          },
+          {
+            "base": "a bowl of",
+            "baseUz": "bir kosa",
+            "derived": "soup, cereal, rice, ice-cream",
+            "derivedUz": "chuqur idishda",
+            "note": ""
+          },
+          {
+            "base": "a kilo of",
+            "baseUz": "bir kilo",
+            "derived": "sugar, flour, potatoes, meat",
+            "derivedUz": "og'irlik",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Taklif qilish va rad etish iboralari",
         "explanationUz": "Muloyim taklif va javob shakllari.",
         "items": [
-          { "base": "Would you like ...?", "baseUz": "... xohlaysizmi?", "derived": "MULOYIM taklif", "derivedUz": "'Do you want' dan yaxshiroq", "note": "" },
-          { "base": "How about ...?", "baseUz": "...-chi?", "derived": "BOSHQA taklif", "derivedUz": "birinchisi rad etilgach", "note": "'What about' ham" },
-          { "base": "Yes, please.", "baseUz": "Ha, iltimos.", "derived": "QABUL QILISH", "derivedUz": "", "note": "" },
-          { "base": "No, thanks.", "baseUz": "Yo'q, rahmat.", "derived": "RAD ETISH", "derivedUz": "muloyim", "note": "'No, thank you' ham" },
-          { "base": "I'd love ...", "baseUz": "Men ... juda xohlardim.", "derived": "= I would love", "derivedUz": "kuchli qabul", "note": "" },
-          { "base": "I'm thirsty / hungry.", "baseUz": "Chanqadim / Qornim ochdi.", "derived": "'be' + sifat", "derivedUz": "'I have thirst' XATO", "note": "" }
+          {
+            "base": "Would you like ...?",
+            "baseUz": "... xohlaysizmi?",
+            "derived": "MULOYIM taklif",
+            "derivedUz": "'Do you want' dan yaxshiroq",
+            "note": ""
+          },
+          {
+            "base": "How about ...?",
+            "baseUz": "...-chi?",
+            "derived": "BOSHQA taklif",
+            "derivedUz": "birinchisi rad etilgach",
+            "note": "'What about' ham"
+          },
+          {
+            "base": "Yes, please.",
+            "baseUz": "Ha, iltimos.",
+            "derived": "QABUL QILISH",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "No, thanks.",
+            "baseUz": "Yo'q, rahmat.",
+            "derived": "RAD ETISH",
+            "derivedUz": "muloyim",
+            "note": "'No, thank you' ham"
+          },
+          {
+            "base": "I'd love ...",
+            "baseUz": "Men ... juda xohlardim.",
+            "derived": "= I would love",
+            "derivedUz": "kuchli qabul",
+            "note": ""
+          },
+          {
+            "base": "I'm thirsty / hungry.",
+            "baseUz": "Chanqadim / Qornim ochdi.",
+            "derived": "'be' + sifat",
+            "derivedUz": "'I have thirst' XATO",
+            "note": ""
+          }
         ]
       }
     ]
@@ -305,39 +863,141 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "singular", "uz": "birlik" },
-    { "en": "plural", "uz": "ko'plik" },
-    { "en": "a consonant", "uz": "undosh" },
-    { "en": "a vowel", "uz": "unli" },
-    { "en": "countable nouns", "uz": "sanaladigan otlar" },
-    { "en": "uncountable nouns", "uz": "sanalmaydigan otlar" },
-    { "en": "to count", "uz": "sanamoq" },
-    { "en": "a phrase of quantity", "uz": "miqdor iborasi" },
-    { "en": "a loaf — loaves", "uz": "non (butun) — nonlar" },
-    { "en": "a leaf — leaves", "uz": "barg — barglar" },
-    { "en": "a key", "uz": "kalit" },
-    { "en": "honey", "uz": "asal" },
-    { "en": "jam", "uz": "murabbo, jem" },
-    { "en": "ham", "uz": "vetchina" },
-    { "en": "sugar", "uz": "shakar" },
-    { "en": "flour", "uz": "un" },
-    { "en": "butter", "uz": "sariyog'" },
-    { "en": "salt", "uz": "tuz" },
-    { "en": "a sandwich", "uz": "buterbrod" },
-    { "en": "a bottle", "uz": "shisha" },
-    { "en": "a glass", "uz": "stakan, qadah" },
-    { "en": "a packet", "uz": "paket" },
-    { "en": "a carton", "uz": "qog'oz paket" },
-    { "en": "a cup", "uz": "piyola, chashka" },
-    { "en": "a kilo", "uz": "kilogramm" },
-    { "en": "cereal", "uz": "nonushta xlopyasi" },
-    { "en": "I'm thirsty.", "uz": "Chanqadim." },
-    { "en": "I'm hungry.", "uz": "Qornim ochdi." },
-    { "en": "Would you like ...?", "uz": "... xohlaysizmi?" },
-    { "en": "How about ...?", "uz": "...-chi?" },
-    { "en": "No, thanks.", "uz": "Yo'q, rahmat." },
-    { "en": "I'd love ...", "uz": "Men ... juda xohlardim." },
-    { "en": "mineral water", "uz": "mineral suv" },
-    { "en": "spaghetti", "uz": "spagetti" }
+    {
+      "en": "singular",
+      "uz": "birlik"
+    },
+    {
+      "en": "plural",
+      "uz": "ko'plik"
+    },
+    {
+      "en": "a consonant",
+      "uz": "undosh"
+    },
+    {
+      "en": "a vowel",
+      "uz": "unli"
+    },
+    {
+      "en": "countable nouns",
+      "uz": "sanaladigan otlar"
+    },
+    {
+      "en": "uncountable nouns",
+      "uz": "sanalmaydigan otlar"
+    },
+    {
+      "en": "to count",
+      "uz": "sanamoq"
+    },
+    {
+      "en": "a phrase of quantity",
+      "uz": "miqdor iborasi"
+    },
+    {
+      "en": "a loaf — loaves",
+      "uz": "non (butun) — nonlar"
+    },
+    {
+      "en": "a leaf — leaves",
+      "uz": "barg — barglar"
+    },
+    {
+      "en": "a key",
+      "uz": "kalit"
+    },
+    {
+      "en": "honey",
+      "uz": "asal"
+    },
+    {
+      "en": "jam",
+      "uz": "murabbo, jem"
+    },
+    {
+      "en": "ham",
+      "uz": "vetchina"
+    },
+    {
+      "en": "sugar",
+      "uz": "shakar"
+    },
+    {
+      "en": "flour",
+      "uz": "un"
+    },
+    {
+      "en": "butter",
+      "uz": "sariyog'"
+    },
+    {
+      "en": "salt",
+      "uz": "tuz"
+    },
+    {
+      "en": "a sandwich",
+      "uz": "buterbrod"
+    },
+    {
+      "en": "a bottle",
+      "uz": "shisha"
+    },
+    {
+      "en": "a glass",
+      "uz": "stakan, qadah"
+    },
+    {
+      "en": "a packet",
+      "uz": "paket"
+    },
+    {
+      "en": "a carton",
+      "uz": "qog'oz paket"
+    },
+    {
+      "en": "a cup",
+      "uz": "piyola, chashka"
+    },
+    {
+      "en": "a kilo",
+      "uz": "kilogramm"
+    },
+    {
+      "en": "cereal",
+      "uz": "nonushta xlopyasi"
+    },
+    {
+      "en": "I'm thirsty.",
+      "uz": "Chanqadim."
+    },
+    {
+      "en": "I'm hungry.",
+      "uz": "Qornim ochdi."
+    },
+    {
+      "en": "Would you like ...?",
+      "uz": "... xohlaysizmi?"
+    },
+    {
+      "en": "How about ...?",
+      "uz": "...-chi?"
+    },
+    {
+      "en": "No, thanks.",
+      "uz": "Yo'q, rahmat."
+    },
+    {
+      "en": "I'd love ...",
+      "uz": "Men ... juda xohlardim."
+    },
+    {
+      "en": "mineral water",
+      "uz": "mineral suv"
+    },
+    {
+      "en": "spaghetti",
+      "uz": "spagetti"
+    }
   ]
 }

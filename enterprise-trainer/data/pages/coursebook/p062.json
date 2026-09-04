@@ -5,6 +5,7 @@
   "unit": 8,
   "unitTitle": "Enjoy your Meal",
   "module": 2,
+  "scanNote": "TEKSHIRILDI (skan 58-bet): A/B/C matnlari (Brazil, The Philippines, Finland) so'zma-so'z tekshirildi, qalin so'zlar 15 ta mos. 16b 8 savol - 5 va 6-savolda skanda IKKI katak bor, JSON'da ham ikkitadan javob (5: Brazil+Finland, 6: Brazil+Philippines). Menyu narxlari skan bilan mos: Hamburger 1.60, Fish and chips 2.75, Cheese sandwich 1.20, Coffee 85p, Tea 70p, Hot chocolate 95p, Coke (medium) 80p, Crisps small 35p / large 70p, Ice-cream 1.80. Xato topilmadi.",
   "sections": [
     {
       "kind": "reading",
@@ -21,9 +22,21 @@
           "explanationUz": "UCH MAMLAKAT HAQIDA UCHTA MATN:\n  A — BRAZIL (Braziliya)\n  B — THE PHILIPPINES (Filippin)\n  C — FINLAND (Finlandiya)\n\nHar bir gapni tegishli matn bilan solishtiring.",
           "bookRef": "Coursebook, 58-bet, 16a-mashq",
           "items": [
-            { "sentence": "1  Brazilians don't like eating with their friends.", "answer": "F", "whyUz": "NOTO'G'RI. A matnda: 'Brazilians LIKE eating with their friends and family.'\nGap teskari aytilgan." },
-            { "sentence": "2  Filipinos eat with a fork and a spoon.", "answer": "T", "whyUz": "TO'G'RI. B matnda: 'Filipinos eat with a fork and a spoon, or with their hands.'\nDIQQAT: pichoq emas, VILKA va QOSHIQ bilan." },
-            { "sentence": "3  Finns like drinking wine.", "answer": "F", "whyUz": "NOTO'G'RI. C matnda: 'Finns like drinking BEER.' — pivo, vino emas.\nVINO esa FILIPPINDA tayyorlanadi (B matn):\n'In some parts of the country, they make wine.'" }
+            {
+              "sentence": "1  Brazilians don't like eating with their friends.",
+              "answer": "F",
+              "whyUz": "NOTO'G'RI. A matnda: 'Brazilians LIKE eating with their friends and family.'\nGap teskari aytilgan."
+            },
+            {
+              "sentence": "2  Filipinos eat with a fork and a spoon.",
+              "answer": "T",
+              "whyUz": "TO'G'RI. B matnda: 'Filipinos eat with a fork and a spoon, or with their hands.'\nDIQQAT: pichoq emas, VILKA va QOSHIQ bilan."
+            },
+            {
+              "sentence": "3  Finns like drinking wine.",
+              "answer": "F",
+              "whyUz": "NOTO'G'RI. C matnda: 'Finns like drinking BEER.' — pivo, vino emas.\nVINO esa FILIPPINDA tayyorlanadi (B matn):\n'In some parts of the country, they make wine.'"
+            }
           ]
         },
         {
@@ -34,12 +47,36 @@
           "explanationUz": "A MATNI — BRAZILIYA\n\nQALIN SO'ZLAR: Whether ... or, office, strong coffee, As well as\n\nBRAZILIYALIKLARNING ODATLARI:\n  • do'st va oila bilan ovqatlanishni yaxshi ko'radi\n  • tushlikni ishxonada YEMAYDI\n  • kechki ovqatni juda kech — kechasi soat 10 larda qiladi\n  • kuchli qahvani kichik piyolalarda ichadi\n  • ko'chada va avtobusda ovqatlanmaydi\n  • qo'l bilan ovqatlanmaydi — DOIM pichoq va vilka bilan",
           "bookRef": "Coursebook, 58-bet, A matn (Brazil)",
           "sentences": [
-            { "en": "Whether at home or in a restaurant, Brazilians like eating with their friends and family.", "uz": "Uydami yoki restorandami, braziliyaliklar do'stlari va oilasi bilan ovqatlanishni yaxshi ko'radi.", "noteUz": "QALIN SO'Z: 'whether ... or ...' = ...mi yoki ...mi (farqi yo'q).\n'like + fe'l-ING' — yoqtirish fe'lidan keyin -ing." },
-            { "en": "They never eat lunch at the office and they have dinner very late — at about ten o'clock at night.", "uz": "Ular hech qachon ishxonada tushlik qilmaydi va kechki ovqatni juda kech — kechasi taxminan soat 10 da qiladi.", "noteUz": "QALIN SO'Z: 'an office' = ishxona, ofis.\n'never' — chastota ravishi, fe'ldan OLDIN.\n'have dinner' = kechki ovqat qilmoq." },
-            { "en": "Brazilians like small cups of strong coffee, at any time of the day.", "uz": "Braziliyaliklar kunning istalgan vaqtida kichik piyolalarda kuchli qahva ichishni yaxshi ko'radi.", "noteUz": "QALIN SO'ZLAR: 'strong coffee' = quyuq (kuchli) qahva.\n'a cup of coffee' — miqdor iborasi (56-bet).\n'at any time' = istalgan vaqtda." },
-            { "en": "As well as many different fruit drinks, Brazilians also make very good beer.", "uz": "Turli mevali ichimliklardan tashqari, braziliyaliklar juda yaxshi pivo ham tayyorlaydi.", "noteUz": "QALIN SO'Z: 'as well as' = ...dan tashqari, shuningdek.\n'also' = ham (gapda takrorlaydi)." },
-            { "en": "They don't eat in the street or on the bus, and they never eat with their hands.", "uz": "Ular ko'chada yoki avtobusda ovqatlanmaydi va hech qachon qo'l bilan ovqatlanmaydi.", "noteUz": "INKOR gapda sanashda 'and' emas, 'OR' ishlatiladi.\n'IN the street' — britancha ('on the street' — amerikacha).\n'ON the bus' — transportda ON." },
-            { "en": "They always use a knife and fork to eat, even for pizza or sandwiches.", "uz": "Ular ovqatlanish uchun doim pichoq va vilkadan foydalanadi — hatto pitsa yoki buterbrod uchun ham.", "noteUz": "'a knife and fork' — juftlik sifatida BITTA artikl bilan.\n'even' = hatto.\n'to eat' — maqsad ('ovqatlanish uchun')." }
+            {
+              "en": "Whether at home or in a restaurant, Brazilians like eating with their friends and family.",
+              "uz": "Uydami yoki restorandami, braziliyaliklar do'stlari va oilasi bilan ovqatlanishni yaxshi ko'radi.",
+              "noteUz": "QALIN SO'Z: 'whether ... or ...' = ...mi yoki ...mi (farqi yo'q).\n'like + fe'l-ING' — yoqtirish fe'lidan keyin -ing."
+            },
+            {
+              "en": "They never eat lunch at the office and they have dinner very late — at about ten o'clock at night.",
+              "uz": "Ular hech qachon ishxonada tushlik qilmaydi va kechki ovqatni juda kech — kechasi taxminan soat 10 da qiladi.",
+              "noteUz": "QALIN SO'Z: 'an office' = ishxona, ofis.\n'never' — chastota ravishi, fe'ldan OLDIN.\n'have dinner' = kechki ovqat qilmoq."
+            },
+            {
+              "en": "Brazilians like small cups of strong coffee, at any time of the day.",
+              "uz": "Braziliyaliklar kunning istalgan vaqtida kichik piyolalarda kuchli qahva ichishni yaxshi ko'radi.",
+              "noteUz": "QALIN SO'ZLAR: 'strong coffee' = quyuq (kuchli) qahva.\n'a cup of coffee' — miqdor iborasi (56-bet).\n'at any time' = istalgan vaqtda."
+            },
+            {
+              "en": "As well as many different fruit drinks, Brazilians also make very good beer.",
+              "uz": "Turli mevali ichimliklardan tashqari, braziliyaliklar juda yaxshi pivo ham tayyorlaydi.",
+              "noteUz": "QALIN SO'Z: 'as well as' = ...dan tashqari, shuningdek.\n'also' = ham (gapda takrorlaydi)."
+            },
+            {
+              "en": "They don't eat in the street or on the bus, and they never eat with their hands.",
+              "uz": "Ular ko'chada yoki avtobusda ovqatlanmaydi va hech qachon qo'l bilan ovqatlanmaydi.",
+              "noteUz": "INKOR gapda sanashda 'and' emas, 'OR' ishlatiladi.\n'IN the street' — britancha ('on the street' — amerikacha).\n'ON the bus' — transportda ON."
+            },
+            {
+              "en": "They always use a knife and fork to eat, even for pizza or sandwiches.",
+              "uz": "Ular ovqatlanish uchun doim pichoq va vilkadan foydalanadi — hatto pitsa yoki buterbrod uchun ham.",
+              "noteUz": "'a knife and fork' — juftlik sifatida BITTA artikl bilan.\n'even' = hatto.\n'to eat' — maqsad ('ovqatlanish uchun')."
+            }
           ]
         },
         {
@@ -50,13 +87,41 @@
           "explanationUz": "B MATNI — FILIPPIN\n\nQALIN SO'ZLAR: snacks, invite, polite, leave\n\nFILIPPINLIKLARNING ODATLARI:\n  • kuniga uch mahal ovqat + orasida ikkita yengil gazak\n  • GURUCH har bir ovqatning bir qismi\n  • hatto shirinlikni ham guruch va kokos sutidan tayyorlaydi\n  • sho'rva, go'sht, sabzavot va turli souslarni yaxshi ko'radi\n  • mamlakatning ba'zi qismlarida vino tayyorlanadi\n  • oilalar odatda birga ovqatlanadi\n  • mehmon chaqirishni yaxshi ko'radi\n  • VILKA va QOSHIQ bilan yoki QO'L bilan ovqatlanadi\n  • ovqat oxirida tarelkada bir oz taom qoldirish — ODOB",
           "bookRef": "Coursebook, 58-bet, B matn (The Philippines)",
           "sentences": [
-            { "en": "Many Filipinos have three meals a day with two snacks in between.", "uz": "Ko'p filippinliklar kuniga uch mahal ovqatlanadi va orasida ikki marta yengil gazak qiladi.", "noteUz": "QALIN SO'Z: 'a snack' = yengil gazak (asosiy ovqat emas).\n'three meals A DAY' — 'a' bu yerda 'har' degani.\n'in between' = orasida." },
-            { "en": "Rice is a part of every meal — they even make desserts with rice and coconut milk.", "uz": "Guruch har bir ovqatning bir qismi — ular hatto guruch va kokos sutidan shirinlik ham tayyorlaydi.", "noteUz": "'rice' — SANALMAYDIGAN ot → fe'l BIRLIKDA: 'Rice IS'.\n'even' = hatto. 'coconut milk' = kokos suti." },
-            { "en": "Filipinos like eating soup, meat, vegetables and a lot of different sauces.", "uz": "Filippinliklar sho'rva, go'sht, sabzavot va turli souslarni yeyishni yaxshi ko'radi.", "noteUz": "'like + fe'l-ING' → 'like EATING'." },
-            { "en": "In some parts of the country, they make wine.", "uz": "Mamlakatning ba'zi qismlarida vino tayyorlanadi.", "noteUz": "'parts of the country' — 40-betdagi 'parts of the world' kabi.\nDIQQAT: 16a-mashqdagi 3-gap uchun muhim — vino Finlandiyada emas,\nFILIPPINDA tayyorlanadi." },
-            { "en": "Families usually eat together and they like to invite people to eat with them.", "uz": "Oilalar odatda birga ovqatlanadi va odamlarni o'zlari bilan ovqatlanishga taklif qilishni yaxshi ko'radi.", "noteUz": "QALIN SO'Z: 'to invite' = taklif qilmoq, chaqirmoq.\n'like TO invite' — 'like' dan keyin 'to + fe'l' ham mumkin\n(ma'nosi 'like + -ing' bilan deyarli bir xil)." },
-            { "en": "Filipinos eat with a fork and a spoon, or with their hands.", "uz": "Filippinliklar vilka va qoshiq bilan yoki qo'l bilan ovqatlanadi.", "noteUz": "DIQQAT: PICHOQ emas! Vilka va QOSHIQ.\nA matndagi braziliyaliklardan farqi — ular pichoq va vilka ishlatadi." },
-            { "en": "It's polite to leave a little food on the plate at the end of a meal.", "uz": "Ovqat oxirida tarelkada bir oz taom qoldirish — odob belgisi.", "noteUz": "QALIN SO'ZLAR:\n  polite = odobli, muloyim\n  to leave = qoldirmoq\n'a little food' — 'food' sanalmaydi → A LITTLE (57-bet).\n'It's polite TO + fe'l' — o'zgarmas qolip." }
+            {
+              "en": "Many Filipinos have three meals a day with two snacks in between.",
+              "uz": "Ko'p filippinliklar kuniga uch mahal ovqatlanadi va orasida ikki marta yengil gazak qiladi.",
+              "noteUz": "QALIN SO'Z: 'a snack' = yengil gazak (asosiy ovqat emas).\n'three meals A DAY' — 'a' bu yerda 'har' degani.\n'in between' = orasida."
+            },
+            {
+              "en": "Rice is a part of every meal — they even make desserts with rice and coconut milk.",
+              "uz": "Guruch har bir ovqatning bir qismi — ular hatto guruch va kokos sutidan shirinlik ham tayyorlaydi.",
+              "noteUz": "'rice' — SANALMAYDIGAN ot → fe'l BIRLIKDA: 'Rice IS'.\n'even' = hatto. 'coconut milk' = kokos suti."
+            },
+            {
+              "en": "Filipinos like eating soup, meat, vegetables and a lot of different sauces.",
+              "uz": "Filippinliklar sho'rva, go'sht, sabzavot va turli souslarni yeyishni yaxshi ko'radi.",
+              "noteUz": "'like + fe'l-ING' → 'like EATING'."
+            },
+            {
+              "en": "In some parts of the country, they make wine.",
+              "uz": "Mamlakatning ba'zi qismlarida vino tayyorlanadi.",
+              "noteUz": "'parts of the country' — 40-betdagi 'parts of the world' kabi.\nDIQQAT: 16a-mashqdagi 3-gap uchun muhim — vino Finlandiyada emas,\nFILIPPINDA tayyorlanadi."
+            },
+            {
+              "en": "Families usually eat together and they like to invite people to eat with them.",
+              "uz": "Oilalar odatda birga ovqatlanadi va odamlarni o'zlari bilan ovqatlanishga taklif qilishni yaxshi ko'radi.",
+              "noteUz": "QALIN SO'Z: 'to invite' = taklif qilmoq, chaqirmoq.\n'like TO invite' — 'like' dan keyin 'to + fe'l' ham mumkin\n(ma'nosi 'like + -ing' bilan deyarli bir xil)."
+            },
+            {
+              "en": "Filipinos eat with a fork and a spoon, or with their hands.",
+              "uz": "Filippinliklar vilka va qoshiq bilan yoki qo'l bilan ovqatlanadi.",
+              "noteUz": "DIQQAT: PICHOQ emas! Vilka va QOSHIQ.\nA matndagi braziliyaliklardan farqi — ular pichoq va vilka ishlatadi."
+            },
+            {
+              "en": "It's polite to leave a little food on the plate at the end of a meal.",
+              "uz": "Ovqat oxirida tarelkada bir oz taom qoldirish — odob belgisi.",
+              "noteUz": "QALIN SO'ZLAR:\n  polite = odobli, muloyim\n  to leave = qoldirmoq\n'a little food' — 'food' sanalmaydi → A LITTLE (57-bet).\n'It's polite TO + fe'l' — o'zgarmas qolip."
+            }
           ]
         },
         {
@@ -67,12 +132,36 @@
           "explanationUz": "C MATNI — FINLANDIYA\n\nQALIN SO'ZLAR: such as, smoked fish, popular, stalls,\n               sell, each person, brings\n\nFINLARNING ODATLARI:\n  • milliy taomlar: dudlangan baliq va issiq sho'rvalar\n  • tez ovqat (pitsa, sosiska) ham juda mashhur\n  • ko'chalarda sosiska sotadigan rastalar bor\n  • SOSISKA — Finlandiyaning sevimli taomi\n  • pivo ichishni yaxshi ko'radi, a'lo pivo tayyorlaydi\n  • ISH KUNLARI oilalar odatda birga kechki ovqat qilmaydi\n  • DAM OLISH KUNLARI ba'zan do'stlari bilan ovqatlanadi\n  • birga ovqat pishiradi yoki har kim bir qism taom olib keladi",
           "bookRef": "Coursebook, 58-bet, C matn (Finland)",
           "sentences": [
-            { "en": "There are a lot of different Finnish dishes, such as smoked fish and hot soups, but fast food such as pizza and sausages are also very popular.", "uz": "Turli fin taomlari bor — masalan, dudlangan baliq va issiq sho'rvalar, lekin pitsa va sosiska kabi tez ovqatlar ham juda mashhur.", "noteUz": "QALIN SO'ZLAR:\n  such as = masalan, ...kabi\n  smoked fish = dudlangan baliq\n  popular = mashhur, ommabop\n'Finnish' = fin (sifat); 'a Finn' = fin (odam)." },
-            { "en": "In the streets there are stalls which sell sausages, Finland's favourite food.", "uz": "Ko'chalarda sosiska sotadigan rastalar bor — bu Finlandiyaning sevimli taomi.", "noteUz": "QALIN SO'ZLAR:\n  a stall = rasta, kichik do'kon (ko'chada)\n  to sell = sotmoq\n'which' = ...ki, ...digan (rastalarni tavsiflaydi).\n'Finland's favourite food' — egalik apostrofi." },
-            { "en": "Finns like drinking beer. They make excellent beer.", "uz": "Finlar pivo ichishni yaxshi ko'radi. Ular a'lo pivo tayyorlaydi.", "noteUz": "DIQQAT: 16a-mashqdagi 3-gap uchun muhim —\nPIVO, vino emas!\n'excellent' = a'lo (55-betda ham bor edi)." },
-            { "en": "During the week, most families don't usually have dinner together.", "uz": "Hafta davomida ko'pchilik oilalar odatda birga kechki ovqat qilmaydi.", "noteUz": "'during the week' = ish kunlari (dushanbadan jumagacha).\n'most families' = ko'pchilik oilalar (artiklsiz)." },
-            { "en": "Sometimes at the weekends they eat with their friends.", "uz": "Ba'zan dam olish kunlari ular do'stlari bilan ovqatlanadi.", "noteUz": "'AT the weekends' — britancha (amerikacha 'on the weekends').\nGrammar Book 29-betda bu qoida bor edi." },
-            { "en": "They cook meals together, or each person makes and brings a part of the meal.", "uz": "Ular birga ovqat pishiradi yoki har bir odam taomning bir qismini tayyorlab olib keladi.", "noteUz": "QALIN SO'ZLAR:\n  each person = har bir odam\n  to bring = olib kelmoq\n'each person' — BIRLIK → fe'llar -S bilan: makeS, bringS." }
+            {
+              "en": "There are a lot of different Finnish dishes, such as smoked fish and hot soups, but fast food such as pizza and sausages are also very popular.",
+              "uz": "Turli fin taomlari bor — masalan, dudlangan baliq va issiq sho'rvalar, lekin pitsa va sosiska kabi tez ovqatlar ham juda mashhur.",
+              "noteUz": "QALIN SO'ZLAR:\n  such as = masalan, ...kabi\n  smoked fish = dudlangan baliq\n  popular = mashhur, ommabop\n'Finnish' = fin (sifat); 'a Finn' = fin (odam)."
+            },
+            {
+              "en": "In the streets there are stalls which sell sausages, Finland's favourite food.",
+              "uz": "Ko'chalarda sosiska sotadigan rastalar bor — bu Finlandiyaning sevimli taomi.",
+              "noteUz": "QALIN SO'ZLAR:\n  a stall = rasta, kichik do'kon (ko'chada)\n  to sell = sotmoq\n'which' = ...ki, ...digan (rastalarni tavsiflaydi).\n'Finland's favourite food' — egalik apostrofi."
+            },
+            {
+              "en": "Finns like drinking beer. They make excellent beer.",
+              "uz": "Finlar pivo ichishni yaxshi ko'radi. Ular a'lo pivo tayyorlaydi.",
+              "noteUz": "DIQQAT: 16a-mashqdagi 3-gap uchun muhim —\nPIVO, vino emas!\n'excellent' = a'lo (55-betda ham bor edi)."
+            },
+            {
+              "en": "During the week, most families don't usually have dinner together.",
+              "uz": "Hafta davomida ko'pchilik oilalar odatda birga kechki ovqat qilmaydi.",
+              "noteUz": "'during the week' = ish kunlari (dushanbadan jumagacha).\n'most families' = ko'pchilik oilalar (artiklsiz)."
+            },
+            {
+              "en": "Sometimes at the weekends they eat with their friends.",
+              "uz": "Ba'zan dam olish kunlari ular do'stlari bilan ovqatlanadi.",
+              "noteUz": "'AT the weekends' — britancha (amerikacha 'on the weekends').\nGrammar Book 29-betda bu qoida bor edi."
+            },
+            {
+              "en": "They cook meals together, or each person makes and brings a part of the meal.",
+              "uz": "Ular birga ovqat pishiradi yoki har bir odam taomning bir qismini tayyorlab olib keladi.",
+              "noteUz": "QALIN SO'ZLAR:\n  each person = har bir odam\n  to bring = olib kelmoq\n'each person' — BIRLIK → fe'llar -S bilan: makeS, bringS."
+            }
           ]
         },
         {
@@ -82,23 +171,99 @@
           "instructionUz": "Qalin yozilgan so'zlarni tushuntiring.",
           "explanationUz": "Uch matndagi 15 ta qalin so'z.",
           "bookRef": "Coursebook, 58-bet, 16b-mashq (qalin so'zlar)",
-          "wordList": ["whether ... or", "an office", "strong coffee", "as well as", "a snack", "to invite", "polite", "to leave", "such as", "smoked fish", "popular", "a stall", "to sell", "each person", "to bring"],
+          "wordList": [
+            "whether ... or",
+            "an office",
+            "strong coffee",
+            "as well as",
+            "a snack",
+            "to invite",
+            "polite",
+            "to leave",
+            "such as",
+            "smoked fish",
+            "popular",
+            "a stall",
+            "to sell",
+            "each person",
+            "to bring"
+          ],
           "items": [
-            { "promptUz": "...mi yoki ...mi (farqi yo'q)", "answer": "whether ... or", "whyUz": "'Whether at home or in a restaurant' = uydami yoki restorandami.\nDIQQAT: 'weather' (ob-havo) bilan bir xil o'qiladi: /ˈweðə/." },
-            { "promptUz": "ishxona, ofis", "answer": "an office", "whyUz": "'at the office' = ishxonada. Unli tovush → AN." },
-            { "promptUz": "quyuq (kuchli) qahva", "answer": "strong coffee", "whyUz": "'strong' = kuchli, quyuq. Aksi: 'weak coffee' (suyuq qahva)." },
-            { "promptUz": "...dan tashqari, shuningdek", "answer": "as well as", "whyUz": "'As well as fruit drinks, they also make beer.'\n'and' dan kuchliroq — qo'shimcha ma'lumot qo'shadi." },
-            { "promptUz": "yengil gazak (asosiy ovqat emas)", "answer": "a snack", "whyUz": "'two snacks in between' = orasida ikki marta gazak.\nMasalan: pechenye, meva, buterbrod." },
-            { "promptUz": "taklif qilmoq, chaqirmoq", "answer": "to invite", "whyUz": "'invite people to eat with them' = odamlarni birga ovqatlanishga chaqirmoq.\nOt shakli: an invitation (taklifnoma)." },
-            { "promptUz": "odobli, muloyim", "answer": "polite", "whyUz": "'It's polite to leave a little food' = bir oz taom qoldirish odobli.\nAksi: rude (qo'pol)." },
-            { "promptUz": "qoldirmoq", "answer": "to leave", "whyUz": "'leave a little food on the plate' = tarelkada bir oz taom qoldirmoq.\nDIQQAT: 'to leave' ning boshqa ma'nosi — 'jo'namoq, tark etmoq'." },
-            { "promptUz": "masalan, ...kabi", "answer": "such as", "whyUz": "'Finnish dishes, such as smoked fish' = fin taomlari, masalan dudlangan baliq.\n55-betda ham bor edi." },
-            { "promptUz": "dudlangan baliq", "answer": "smoked fish", "whyUz": "'to smoke' = dudlamoq (tutunda pishirmoq).\n'smoked' — sifatdosh.\nDIQQAT: 'to smoke' ning boshqa ma'nosi — 'chekmoq'." },
-            { "promptUz": "mashhur, ommabop", "answer": "popular", "whyUz": "'very popular' = juda mashhur.\nOt shakli: popularity (mashhurlik)." },
-            { "promptUz": "rasta, ko'chadagi kichik do'kon", "answer": "a stall", "whyUz": "'stalls which sell sausages' = sosiska sotadigan rastalar.\nBozorda va ko'chada bo'ladi." },
-            { "promptUz": "sotmoq", "answer": "to sell", "whyUz": "Aksi: 'to buy' (sotib olmoq).\nDIQQAT: sell — sotmoq; buy — sotib olmoq. Chalkashtirmang." },
-            { "promptUz": "har bir odam", "answer": "each person", "whyUz": "'each person makes and brings' — 'each' dan keyin BIRLIK ot va fe'l -S bilan.\n'each' = har bir (alohida-alohida)." },
-            { "promptUz": "olib kelmoq", "answer": "to bring", "whyUz": "'brings a part of the meal' = taomning bir qismini olib keladi.\nAksi: 'to take' (olib ketmoq)." }
+            {
+              "promptUz": "...mi yoki ...mi (farqi yo'q)",
+              "answer": "whether ... or",
+              "whyUz": "'Whether at home or in a restaurant' = uydami yoki restorandami.\nDIQQAT: 'weather' (ob-havo) bilan bir xil o'qiladi: /ˈweðə/."
+            },
+            {
+              "promptUz": "ishxona, ofis",
+              "answer": "an office",
+              "whyUz": "'at the office' = ishxonada. Unli tovush → AN."
+            },
+            {
+              "promptUz": "quyuq (kuchli) qahva",
+              "answer": "strong coffee",
+              "whyUz": "'strong' = kuchli, quyuq. Aksi: 'weak coffee' (suyuq qahva)."
+            },
+            {
+              "promptUz": "...dan tashqari, shuningdek",
+              "answer": "as well as",
+              "whyUz": "'As well as fruit drinks, they also make beer.'\n'and' dan kuchliroq — qo'shimcha ma'lumot qo'shadi."
+            },
+            {
+              "promptUz": "yengil gazak (asosiy ovqat emas)",
+              "answer": "a snack",
+              "whyUz": "'two snacks in between' = orasida ikki marta gazak.\nMasalan: pechenye, meva, buterbrod."
+            },
+            {
+              "promptUz": "taklif qilmoq, chaqirmoq",
+              "answer": "to invite",
+              "whyUz": "'invite people to eat with them' = odamlarni birga ovqatlanishga chaqirmoq.\nOt shakli: an invitation (taklifnoma)."
+            },
+            {
+              "promptUz": "odobli, muloyim",
+              "answer": "polite",
+              "whyUz": "'It's polite to leave a little food' = bir oz taom qoldirish odobli.\nAksi: rude (qo'pol)."
+            },
+            {
+              "promptUz": "qoldirmoq",
+              "answer": "to leave",
+              "whyUz": "'leave a little food on the plate' = tarelkada bir oz taom qoldirmoq.\nDIQQAT: 'to leave' ning boshqa ma'nosi — 'jo'namoq, tark etmoq'."
+            },
+            {
+              "promptUz": "masalan, ...kabi",
+              "answer": "such as",
+              "whyUz": "'Finnish dishes, such as smoked fish' = fin taomlari, masalan dudlangan baliq.\n55-betda ham bor edi."
+            },
+            {
+              "promptUz": "dudlangan baliq",
+              "answer": "smoked fish",
+              "whyUz": "'to smoke' = dudlamoq (tutunda pishirmoq).\n'smoked' — sifatdosh.\nDIQQAT: 'to smoke' ning boshqa ma'nosi — 'chekmoq'."
+            },
+            {
+              "promptUz": "mashhur, ommabop",
+              "answer": "popular",
+              "whyUz": "'very popular' = juda mashhur.\nOt shakli: popularity (mashhurlik)."
+            },
+            {
+              "promptUz": "rasta, ko'chadagi kichik do'kon",
+              "answer": "a stall",
+              "whyUz": "'stalls which sell sausages' = sosiska sotadigan rastalar.\nBozorda va ko'chada bo'ladi."
+            },
+            {
+              "promptUz": "sotmoq",
+              "answer": "to sell",
+              "whyUz": "Aksi: 'to buy' (sotib olmoq).\nDIQQAT: sell — sotmoq; buy — sotib olmoq. Chalkashtirmang."
+            },
+            {
+              "promptUz": "har bir odam",
+              "answer": "each person",
+              "whyUz": "'each person makes and brings' — 'each' dan keyin BIRLIK ot va fe'l -S bilan.\n'each' = har bir (alohida-alohida)."
+            },
+            {
+              "promptUz": "olib kelmoq",
+              "answer": "to bring",
+              "whyUz": "'brings a part of the meal' = taomning bir qismini olib keladi.\nAksi: 'to take' (olib ketmoq)."
+            }
           ]
         },
         {
@@ -109,14 +274,61 @@
           "explanationUz": "SAVOL: In which country/countries do they ... ?\n  = Qaysi mamlakat(lar)da ular ... ?\n\nMATNLAR:\n  A — Brazil\n  B — The Philippines\n  C — Finland\n\nDIQQAT — KATAKLAR SONI JAVOB SONINI KO'RSATADI:\n  5 va 6-savolda IKKITA katak bor → IKKI mamlakat.\n  Qolganlarida bitta katak → bitta mamlakat.\n\nKITOBDA BERILGAN: 1 → A.",
           "bookRef": "Coursebook, 58-bet, 16b-mashq (savollar)",
           "items": [
-            { "textEn": "1  In which country do they drink lots of coffee?", "answer": "A (Brazil)", "given": true, "hintUz": "Kitobda berilgan", "whyUz": "Kitobda BERILGAN javob: A.\nA matnda: 'Brazilians like small cups of strong coffee, at any time of the day.'" },
-            { "textEn": "2  In which country do they like sausages?", "answer": "C (Finland)", "hintUz": "Sosiska sotadigan rastalar qayerda?", "whyUz": "C matnda: 'stalls which sell sausages, Finland's FAVOURITE FOOD'.\nSosiska — Finlandiyaning sevimli taomi." },
-            { "textEn": "3  In which country do they eat rice with every meal?", "answer": "B (The Philippines)", "hintUz": "Guruch qaysi mamlakatda har ovqatda bor?", "whyUz": "B matnda: 'Rice is a part of every meal.'\nHatto shirinlik ham guruchdan tayyorlanadi." },
-            { "textEn": "4  In which country do they not eat in the street?", "answer": "A (Brazil)", "hintUz": "Ko'chada ovqatlanmaydigan mamlakat", "whyUz": "A matnda: 'They don't eat in the street or on the bus.'\nDIQQAT: Finlandiyada esa ko'chada sosiska sotiladi — teskari." },
-            { "textEn": "5  In which countries do they make very good beer?", "answers": ["A (Brazil)", "C (Finland)"], "hintUz": "IKKI mamlakat — kataklar soni shuni ko'rsatadi", "whyUz": "IKKI mamlakat:\n  A matn: 'Brazilians also make very good beer.'\n  C matn: 'They make excellent beer.' (Finlandiya)" },
-            { "textEn": "6  In which countries do they usually eat dinner with their families?", "answers": ["A (Brazil)", "B (The Philippines)"], "hintUz": "IKKI mamlakat — kataklar soni shuni ko'rsatadi", "whyUz": "IKKI mamlakat:\n  A matn: 'Brazilians like eating with their friends and FAMILY.'\n  B matn: 'FAMILIES usually eat together.'\nDIQQAT: Finlandiyada TESKARI — 'most families don't usually have dinner together'." },
-            { "textEn": "7  In which country do they sometimes eat with their hands?", "answer": "B (The Philippines)", "hintUz": "Vilka-qoshiq yoki qo'l bilan", "whyUz": "B matnda: 'Filipinos eat with a fork and a spoon, OR WITH THEIR HANDS.'" },
-            { "textEn": "8  In which country do they never eat with their hands?", "answer": "A (Brazil)", "hintUz": "Doim pichoq va vilka ishlatadigan mamlakat", "whyUz": "A matnda: 'they NEVER eat with their hands. They always use a knife and fork.'\n7-band bilan solishtiring — teskari odat." }
+            {
+              "textEn": "1  In which country do they drink lots of coffee?",
+              "answer": "A (Brazil)",
+              "given": true,
+              "hintUz": "Kitobda berilgan",
+              "whyUz": "Kitobda BERILGAN javob: A.\nA matnda: 'Brazilians like small cups of strong coffee, at any time of the day.'"
+            },
+            {
+              "textEn": "2  In which country do they like sausages?",
+              "answer": "C (Finland)",
+              "hintUz": "Sosiska sotadigan rastalar qayerda?",
+              "whyUz": "C matnda: 'stalls which sell sausages, Finland's FAVOURITE FOOD'.\nSosiska — Finlandiyaning sevimli taomi."
+            },
+            {
+              "textEn": "3  In which country do they eat rice with every meal?",
+              "answer": "B (The Philippines)",
+              "hintUz": "Guruch qaysi mamlakatda har ovqatda bor?",
+              "whyUz": "B matnda: 'Rice is a part of every meal.'\nHatto shirinlik ham guruchdan tayyorlanadi."
+            },
+            {
+              "textEn": "4  In which country do they not eat in the street?",
+              "answer": "A (Brazil)",
+              "hintUz": "Ko'chada ovqatlanmaydigan mamlakat",
+              "whyUz": "A matnda: 'They don't eat in the street or on the bus.'\nDIQQAT: Finlandiyada esa ko'chada sosiska sotiladi — teskari."
+            },
+            {
+              "textEn": "5  In which countries do they make very good beer?",
+              "answers": [
+                "A (Brazil)",
+                "C (Finland)"
+              ],
+              "hintUz": "IKKI mamlakat — kataklar soni shuni ko'rsatadi",
+              "whyUz": "IKKI mamlakat:\n  A matn: 'Brazilians also make very good beer.'\n  C matn: 'They make excellent beer.' (Finlandiya)"
+            },
+            {
+              "textEn": "6  In which countries do they usually eat dinner with their families?",
+              "answers": [
+                "A (Brazil)",
+                "B (The Philippines)"
+              ],
+              "hintUz": "IKKI mamlakat — kataklar soni shuni ko'rsatadi",
+              "whyUz": "IKKI mamlakat:\n  A matn: 'Brazilians like eating with their friends and FAMILY.'\n  B matn: 'FAMILIES usually eat together.'\nDIQQAT: Finlandiyada TESKARI — 'most families don't usually have dinner together'."
+            },
+            {
+              "textEn": "7  In which country do they sometimes eat with their hands?",
+              "answer": "B (The Philippines)",
+              "hintUz": "Vilka-qoshiq yoki qo'l bilan",
+              "whyUz": "B matnda: 'Filipinos eat with a fork and a spoon, OR WITH THEIR HANDS.'"
+            },
+            {
+              "textEn": "8  In which country do they never eat with their hands?",
+              "answer": "A (Brazil)",
+              "hintUz": "Doim pichoq va vilka ishlatadigan mamlakat",
+              "whyUz": "A matnda: 'they NEVER eat with their hands. They always use a knife and fork.'\n7-band bilan solishtiring — teskari odat."
+            }
           ]
         },
         {
@@ -127,12 +339,42 @@
           "explanationUz": "MATNLARDAGI MAVZULAR BO'YICHA GAPIRING:\n  • kuniga necha mahal ovqatlanasiz\n  • qachon ovqatlanasiz\n  • kim bilan ovqatlanasiz\n  • nima bilan ovqatlanasiz (qoshiq/vilka/qo'l)\n  • milliy taomlar\n  • sevimli ichimliklar\n  • ovqat odobi\n\nFOYDALI QOLIPLAR:\n  In Uzbekistan, people ...\n  We usually ...\n  Our favourite food is ...\n  It's polite to ...\n  It isn't polite to ...",
           "bookRef": "Coursebook, 58-bet, 16-mashq (og'zaki qism)",
           "items": [
-            { "textEn": "O'zbekistonda kuniga necha mahal ovqatlanadi?", "answer": "In Uzbekistan, most people have three meals a day: breakfast, lunch and dinner.", "hintUz": "O'z javobingiz", "whyUz": "NAMUNA javob. B matndagi qolipdan foydalanildi:\n'have three meals a day'." },
-            { "textEn": "Qaysi taom milliy taom hisoblanadi?", "answer": "Our favourite food is palov. We also like shurpa, manti and somsa.", "hintUz": "Milliy taomlarni ayting", "whyUz": "NAMUNA javob. C matndagi 'Finland's favourite food' qolipi kabi." },
-            { "textEn": "Odamlar nima bilan ovqatlanadi?", "answer": "We usually eat with a spoon and a fork. We often eat palov with our hands.", "hintUz": "Qoshiq, vilka yoki qo'l", "whyUz": "NAMUNA javob. B matndagi qolip:\n'eat with a fork and a spoon, or with their hands'." },
-            { "textEn": "Oilalar birga ovqatlanadimi?", "answer": "Families usually eat together, especially at the weekends. We like to invite guests to eat with us.", "hintUz": "Oila va mehmon odatlari", "whyUz": "NAMUNA javob. B matndagi qolip:\n'Families usually eat together and they like to invite people'." },
-            { "textEn": "Qanday ichimliklar ichiladi?", "answer": "People drink a lot of green tea. We drink tea at any time of the day.", "hintUz": "Sevimli ichimlik", "whyUz": "NAMUNA javob. A matndagi qolip:\n'at any time of the day'." },
-            { "textEn": "Qanday ovqat odobi bor?", "answer": "It's polite to say 'Yoqimli ishtaha' before a meal. It isn't polite to leave the table before everyone finishes.", "hintUz": "Nima odobli, nima odobsiz", "whyUz": "NAMUNA javob. B matndagi qolip:\n'It's polite TO + fe'l'." }
+            {
+              "textEn": "O'zbekistonda kuniga necha mahal ovqatlanadi?",
+              "answer": "In Uzbekistan, most people have three meals a day: breakfast, lunch and dinner.",
+              "hintUz": "O'z javobingiz",
+              "whyUz": "NAMUNA javob. B matndagi qolipdan foydalanildi:\n'have three meals a day'."
+            },
+            {
+              "textEn": "Qaysi taom milliy taom hisoblanadi?",
+              "answer": "Our favourite food is palov. We also like shurpa, manti and somsa.",
+              "hintUz": "Milliy taomlarni ayting",
+              "whyUz": "NAMUNA javob. C matndagi 'Finland's favourite food' qolipi kabi."
+            },
+            {
+              "textEn": "Odamlar nima bilan ovqatlanadi?",
+              "answer": "We usually eat with a spoon and a fork. We often eat palov with our hands.",
+              "hintUz": "Qoshiq, vilka yoki qo'l",
+              "whyUz": "NAMUNA javob. B matndagi qolip:\n'eat with a fork and a spoon, or with their hands'."
+            },
+            {
+              "textEn": "Oilalar birga ovqatlanadimi?",
+              "answer": "Families usually eat together, especially at the weekends. We like to invite guests to eat with us.",
+              "hintUz": "Oila va mehmon odatlari",
+              "whyUz": "NAMUNA javob. B matndagi qolip:\n'Families usually eat together and they like to invite people'."
+            },
+            {
+              "textEn": "Qanday ichimliklar ichiladi?",
+              "answer": "People drink a lot of green tea. We drink tea at any time of the day.",
+              "hintUz": "Sevimli ichimlik",
+              "whyUz": "NAMUNA javob. A matndagi qolip:\n'at any time of the day'."
+            },
+            {
+              "textEn": "Qanday ovqat odobi bor?",
+              "answer": "It's polite to say 'Yoqimli ishtaha' before a meal. It isn't polite to leave the table before everyone finishes.",
+              "hintUz": "Nima odobli, nima odobsiz",
+              "whyUz": "NAMUNA javob. B matndagi qolip:\n'It's polite TO + fe'l'."
+            }
           ]
         }
       ]
@@ -150,15 +392,51 @@
           "explanationUz": "16-MASHQDAGI MATNLAR TUZILISHI (namuna):\n\n  1) Kuniga necha mahal ovqatlanadi va qachon\n  2) Asosiy taomlar va milliy taomlar\n  3) Sevimli ichimliklar\n  4) Kim bilan va nima bilan ovqatlanadi\n  5) Ovqat odobi\n\nBRITANIYA HAQIDA MA'LUM FAKTLAR (unit davomida uchragan):\n  • an'anaviy ingliz nonushtasi: tuxum, bekon, sosiska,\n    pomidor, non va choy (54-bet)\n  • 'fish and chips' — milliy taom (58-betdagi menyu)\n  • choy ichish madaniyati: 'a cup of tea' (56-bet)\n  • restoranlar tushlik va kechki ovqat uchun ochiq (55-bet)",
           "bookRef": "Coursebook, 58-bet, Writing (Project)",
           "structure": [
-            { "headingUz": "1-gap: kuniga necha mahal", "modelEn": "In Britain, most people have three meals a day: breakfast, lunch and dinner.", "noteUz": "B matndagi qolip: 'have three meals a day'." },
-            { "headingUz": "2-gap: nonushta", "modelEn": "A traditional English breakfast is eggs, bacon, sausages, tomatoes, bread and tea, but many people only have cereal or toast.", "noteUz": "54-betdagi 1e-mashqdan.\n'toast' = qovurilgan non." },
-            { "headingUz": "3-gap: tushlik", "modelEn": "For lunch, people often have a sandwich or a light meal at the office.", "noteUz": "DIQQAT: A matndagi braziliyaliklardan farqi —\nbritaniyaliklar ishxonada tushlik qiladi." },
-            { "headingUz": "4-gap: kechki ovqat", "modelEn": "They have dinner at about seven o'clock in the evening, much earlier than in Brazil.", "noteUz": "A matnda braziliyaliklar kechasi soat 10 da ovqatlanadi —\nsolishtirish uchun." },
-            { "headingUz": "5-gap: milliy taom", "modelEn": "Fish and chips is Britain's favourite food, and there are a lot of fast food shops which sell it.", "noteUz": "C matndagi qolip: 'Finland's favourite food' va 'stalls which sell'." },
-            { "headingUz": "6-gap: ichimlik", "modelEn": "British people drink a lot of tea, usually with milk, at any time of the day.", "noteUz": "A matndagi qolip: 'at any time of the day'.\nBritaniyada choy SUT bilan ichiladi." },
-            { "headingUz": "7-gap: kim bilan ovqatlanadi", "modelEn": "During the week, families don't always eat together, but at the weekends they usually have dinner together.", "noteUz": "C matndagi qolip: 'During the week ... at the weekends ...'." },
-            { "headingUz": "8-gap: nima bilan ovqatlanadi", "modelEn": "They always eat with a knife and fork, and it isn't polite to eat with your hands.", "noteUz": "A matndagi qolip: 'always use a knife and fork'.\n'It isn't polite TO + fe'l'." },
-            { "headingUz": "TO'LIQ MAQOLA (namuna)", "modelEn": "In Britain, most people have three meals a day: breakfast, lunch and dinner. A traditional English breakfast is eggs, bacon, sausages, tomatoes, bread and tea, but many people only have cereal or toast. For lunch, people often have a sandwich or a light meal at the office. They have dinner at about seven o'clock in the evening, much earlier than in Brazil. Fish and chips is Britain's favourite food, and there are a lot of fast food shops which sell it. British people drink a lot of tea, usually with milk, at any time of the day. During the week, families don't always eat together, but at the weekends they usually have dinner together. They always eat with a knife and fork, and it isn't polite to eat with your hands.", "noteUz": "Taxminan 110 so'z — 16-mashqdagi matnlar bilan bir xil hajm." }
+            {
+              "headingUz": "1-gap: kuniga necha mahal",
+              "modelEn": "In Britain, most people have three meals a day: breakfast, lunch and dinner.",
+              "noteUz": "B matndagi qolip: 'have three meals a day'."
+            },
+            {
+              "headingUz": "2-gap: nonushta",
+              "modelEn": "A traditional English breakfast is eggs, bacon, sausages, tomatoes, bread and tea, but many people only have cereal or toast.",
+              "noteUz": "54-betdagi 1e-mashqdan.\n'toast' = qovurilgan non."
+            },
+            {
+              "headingUz": "3-gap: tushlik",
+              "modelEn": "For lunch, people often have a sandwich or a light meal at the office.",
+              "noteUz": "DIQQAT: A matndagi braziliyaliklardan farqi —\nbritaniyaliklar ishxonada tushlik qiladi."
+            },
+            {
+              "headingUz": "4-gap: kechki ovqat",
+              "modelEn": "They have dinner at about seven o'clock in the evening, much earlier than in Brazil.",
+              "noteUz": "A matnda braziliyaliklar kechasi soat 10 da ovqatlanadi —\nsolishtirish uchun."
+            },
+            {
+              "headingUz": "5-gap: milliy taom",
+              "modelEn": "Fish and chips is Britain's favourite food, and there are a lot of fast food shops which sell it.",
+              "noteUz": "C matndagi qolip: 'Finland's favourite food' va 'stalls which sell'."
+            },
+            {
+              "headingUz": "6-gap: ichimlik",
+              "modelEn": "British people drink a lot of tea, usually with milk, at any time of the day.",
+              "noteUz": "A matndagi qolip: 'at any time of the day'.\nBritaniyada choy SUT bilan ichiladi."
+            },
+            {
+              "headingUz": "7-gap: kim bilan ovqatlanadi",
+              "modelEn": "During the week, families don't always eat together, but at the weekends they usually have dinner together.",
+              "noteUz": "C matndagi qolip: 'During the week ... at the weekends ...'."
+            },
+            {
+              "headingUz": "8-gap: nima bilan ovqatlanadi",
+              "modelEn": "They always eat with a knife and fork, and it isn't polite to eat with your hands.",
+              "noteUz": "A matndagi qolip: 'always use a knife and fork'.\n'It isn't polite TO + fe'l'."
+            },
+            {
+              "headingUz": "TO'LIQ MAQOLA (namuna)",
+              "modelEn": "In Britain, most people have three meals a day: breakfast, lunch and dinner. A traditional English breakfast is eggs, bacon, sausages, tomatoes, bread and tea, but many people only have cereal or toast. For lunch, people often have a sandwich or a light meal at the office. They have dinner at about seven o'clock in the evening, much earlier than in Brazil. Fish and chips is Britain's favourite food, and there are a lot of fast food shops which sell it. British people drink a lot of tea, usually with milk, at any time of the day. During the week, families don't always eat together, but at the weekends they usually have dinner together. They always eat with a knife and fork, and it isn't polite to eat with your hands.",
+              "noteUz": "Taxminan 110 so'z — 16-mashqdagi matnlar bilan bir xil hajm."
+            }
           ]
         }
       ]
@@ -176,16 +454,56 @@
           "explanationUz": "MENYU (Menu):\n\n  OVQATLAR:\n    Hamburger .......... £1.60\n    Fish and chips ..... £2.75\n    Cheese sandwich .... £1.20\n\n  ICHIMLIKLAR (Drinks):\n    Coffee ............. 85p\n    Tea ................ 70p\n    Hot chocolate ...... 95p\n    Coke (medium) ...... 80p\n\n  CHIPS (Crisps):\n    Small packet ....... 35p\n    Large packet ....... 70p\n\n  Ice-cream ............ £1.80\n\nBRITANIYA PULI:\n  £1 = one pound (bir funt)\n  £1.80 = one pound eighty (bir funt sakson pens)\n  75p = seventy-five pence (yetmish besh pens)\n  1 funt = 100 pens\n\nQANDAY O'QILADI:\n  £1.60 → 'one pound sixty'\n  £2.75 → 'two pounds seventy-five'\n  85p   → 'eighty-five pence' (yoki 'eighty-five pee')\n\nDIQQAT: '£' belgisi SONDAN OLDIN yoziladi: £1.60.",
           "bookRef": "Coursebook, 58-bet, 17-mashq (menyu)",
           "words": [
-            { "en": "Hamburger — £1.60 (one pound sixty)", "uz": "Gamburger — 1 funt 60 pens", "hintUz": "ovqat" },
-            { "en": "Fish and chips — £2.75 (two pounds seventy-five)", "uz": "Baliq va kartoshka fri — 2 funt 75 pens", "hintUz": "Britaniyaning milliy taomi" },
-            { "en": "Cheese sandwich — £1.20 (one pound twenty)", "uz": "Pishloqli buterbrod — 1 funt 20 pens", "hintUz": "ovqat" },
-            { "en": "Coffee — 85p (eighty-five pence)", "uz": "Qahva — 85 pens", "hintUz": "ichimlik" },
-            { "en": "Tea — 70p (seventy pence)", "uz": "Choy — 70 pens", "hintUz": "ichimlik" },
-            { "en": "Hot chocolate — 95p (ninety-five pence)", "uz": "Issiq shokolad — 95 pens", "hintUz": "ichimlik" },
-            { "en": "Coke (medium) — 80p (eighty pence)", "uz": "Kola (o'rtacha) — 80 pens", "hintUz": "'medium' = o'rtacha o'lcham" },
-            { "en": "Crisps, small packet — 35p (thirty-five pence)", "uz": "Chips, kichik paket — 35 pens", "hintUz": "gazak" },
-            { "en": "Crisps, large packet — 70p (seventy pence)", "uz": "Chips, katta paket — 70 pens", "hintUz": "gazak" },
-            { "en": "Ice-cream — £1.80 (one pound eighty)", "uz": "Muzqaymoq — 1 funt 80 pens", "hintUz": "shirinlik" }
+            {
+              "en": "Hamburger — £1.60 (one pound sixty)",
+              "uz": "Gamburger — 1 funt 60 pens",
+              "hintUz": "ovqat"
+            },
+            {
+              "en": "Fish and chips — £2.75 (two pounds seventy-five)",
+              "uz": "Baliq va kartoshka fri — 2 funt 75 pens",
+              "hintUz": "Britaniyaning milliy taomi"
+            },
+            {
+              "en": "Cheese sandwich — £1.20 (one pound twenty)",
+              "uz": "Pishloqli buterbrod — 1 funt 20 pens",
+              "hintUz": "ovqat"
+            },
+            {
+              "en": "Coffee — 85p (eighty-five pence)",
+              "uz": "Qahva — 85 pens",
+              "hintUz": "ichimlik"
+            },
+            {
+              "en": "Tea — 70p (seventy pence)",
+              "uz": "Choy — 70 pens",
+              "hintUz": "ichimlik"
+            },
+            {
+              "en": "Hot chocolate — 95p (ninety-five pence)",
+              "uz": "Issiq shokolad — 95 pens",
+              "hintUz": "ichimlik"
+            },
+            {
+              "en": "Coke (medium) — 80p (eighty pence)",
+              "uz": "Kola (o'rtacha) — 80 pens",
+              "hintUz": "'medium' = o'rtacha o'lcham"
+            },
+            {
+              "en": "Crisps, small packet — 35p (thirty-five pence)",
+              "uz": "Chips, kichik paket — 35 pens",
+              "hintUz": "gazak"
+            },
+            {
+              "en": "Crisps, large packet — 70p (seventy pence)",
+              "uz": "Chips, katta paket — 70 pens",
+              "hintUz": "gazak"
+            },
+            {
+              "en": "Ice-cream — £1.80 (one pound eighty)",
+              "uz": "Muzqaymoq — 1 funt 80 pens",
+              "hintUz": "shirinlik"
+            }
           ]
         },
         {
@@ -197,17 +515,73 @@
           "explanationUz": "KITOBDAGI DIALOG:\n\n  SA: Can I have a hamburger, please?\n  SB: Yes, here you are.\n  SA: Thanks. How much is it?\n  SB: It's one pound sixty. Anything else?\n  SA: No, thanks.\n\nO'ZBEKCHA TARJIMASI:\n  SA: Gamburger olsam bo'ladimi?\n  SB: Ha, mana, oling.\n  SA: Rahmat. Qancha turadi?\n  SB: Bir funt oltmish. Yana biror narsa kerakmi?\n  SA: Yo'q, rahmat.\n\nDIALOG QOLIPI (besh qator):\n  1) Can I have + ovqat, please?     (ILTIMOS)\n  2) Yes, here you are.\n  3) Thanks. How much is it?\n  4) It's + narx. Anything else?\n  5) No, thanks.\n\nYANGI IBORA:\n  Anything else? = Yana biror narsa kerakmi?\n\nDIQQAT — ARTIKL:\n  SANALADIGAN → 'Can I have A hamburger?'\n  SANALMAYDIGAN → 'Can I have SOME coffee?'\n  Menyuda 'a coffee' ham to'g'ri — 'bir piyola qahva' degani.",
           "bookRef": "Coursebook, 58-bet, 17-mashq",
           "items": [
-            { "prompt": "hamburger — £1.60 (kitobdagi namuna)", "question": "Can I have a hamburger, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's one pound sixty. Anything else? — No, thanks.", "given": true, "whyUz": "Kitobda BERILGAN namuna.\n£1.60 → 'one pound sixty'." },
-            { "prompt": "fish and chips — £2.75", "question": "Can I have fish and chips, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's two pounds seventy-five. Anything else? — No, thanks.", "whyUz": "'fish and chips' — o'zgarmas ibora, artiklsiz.\n£2.75 → 'two poundS seventy-five' (1 dan katta → POUNDS)." },
-            { "prompt": "cheese sandwich — £1.20", "question": "Can I have a cheese sandwich, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's one pound twenty. Anything else? — No, thanks.", "whyUz": "'a sandwich' — SANALADIGAN → 'a' bilan.\n£1.20 → 'one pound twenty'." },
-            { "prompt": "coffee — 85p", "question": "Can I have a coffee, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's eighty-five pence. Anything else? — No, thanks.", "whyUz": "'a coffee' = bir piyola qahva (menyuda shunday ishlatiladi).\n85p → 'eighty-five pence'." },
-            { "prompt": "tea — 70p", "question": "Can I have a tea, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's seventy pence. Anything else? — No, thanks.", "whyUz": "'a cup of tea' ham mumkin.\n70p → 'seventy pence'." },
-            { "prompt": "hot chocolate — 95p", "question": "Can I have a hot chocolate, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's ninety-five pence. Anything else? — No, thanks.", "whyUz": "'hot chocolate' = issiq shokolad (ichimlik).\n95p → 'ninety-five pence'." },
-            { "prompt": "Coke (medium) — 80p", "question": "Can I have a medium Coke, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's eighty pence. Anything else? — No, thanks.", "whyUz": "'medium' = o'rtacha o'lcham (small / medium / large).\n80p → 'eighty pence'." },
-            { "prompt": "small packet of crisps — 35p", "question": "Can I have a small packet of crisps, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's thirty-five pence. Anything else? — No, thanks.", "whyUz": "'a packet of crisps' — miqdor iborasi (56-bet).\n35p → 'thirty-five pence'." },
-            { "prompt": "large packet of crisps — 70p", "question": "Can I have a large packet of crisps, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's seventy pence. Anything else? — No, thanks.", "whyUz": "'large' = katta (aksi: small).\n70p → 'seventy pence'." },
-            { "prompt": "ice-cream — £1.80", "question": "Can I have an ice-cream, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's one pound eighty. Anything else? — No, thanks.", "whyUz": "'an ice-cream' — UNLI tovush bilan boshlanadi → AN.\n£1.80 → 'one pound eighty' (kitobda ham shu misol bor)." },
-            { "prompt": "ikkita narsa: hamburger + Coke", "question": "Can I have a hamburger, please? — ... Anything else? — Yes, can I have a medium Coke, please?", "answer": "Yes, here you are. — Thanks. How much is it? — It's two pounds forty.", "whyUz": "'Anything else?' savoliga 'Yes' deb javob berish mumkin.\nHisob: £1.60 + 80p = £2.40 → 'two pounds forty'." }
+            {
+              "prompt": "hamburger — £1.60 (kitobdagi namuna)",
+              "question": "Can I have a hamburger, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's one pound sixty. Anything else? — No, thanks.",
+              "given": true,
+              "whyUz": "Kitobda BERILGAN namuna.\n£1.60 → 'one pound sixty'."
+            },
+            {
+              "prompt": "fish and chips — £2.75",
+              "question": "Can I have fish and chips, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's two pounds seventy-five. Anything else? — No, thanks.",
+              "whyUz": "'fish and chips' — o'zgarmas ibora, artiklsiz.\n£2.75 → 'two poundS seventy-five' (1 dan katta → POUNDS)."
+            },
+            {
+              "prompt": "cheese sandwich — £1.20",
+              "question": "Can I have a cheese sandwich, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's one pound twenty. Anything else? — No, thanks.",
+              "whyUz": "'a sandwich' — SANALADIGAN → 'a' bilan.\n£1.20 → 'one pound twenty'."
+            },
+            {
+              "prompt": "coffee — 85p",
+              "question": "Can I have a coffee, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's eighty-five pence. Anything else? — No, thanks.",
+              "whyUz": "'a coffee' = bir piyola qahva (menyuda shunday ishlatiladi).\n85p → 'eighty-five pence'."
+            },
+            {
+              "prompt": "tea — 70p",
+              "question": "Can I have a tea, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's seventy pence. Anything else? — No, thanks.",
+              "whyUz": "'a cup of tea' ham mumkin.\n70p → 'seventy pence'."
+            },
+            {
+              "prompt": "hot chocolate — 95p",
+              "question": "Can I have a hot chocolate, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's ninety-five pence. Anything else? — No, thanks.",
+              "whyUz": "'hot chocolate' = issiq shokolad (ichimlik).\n95p → 'ninety-five pence'."
+            },
+            {
+              "prompt": "Coke (medium) — 80p",
+              "question": "Can I have a medium Coke, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's eighty pence. Anything else? — No, thanks.",
+              "whyUz": "'medium' = o'rtacha o'lcham (small / medium / large).\n80p → 'eighty pence'."
+            },
+            {
+              "prompt": "small packet of crisps — 35p",
+              "question": "Can I have a small packet of crisps, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's thirty-five pence. Anything else? — No, thanks.",
+              "whyUz": "'a packet of crisps' — miqdor iborasi (56-bet).\n35p → 'thirty-five pence'."
+            },
+            {
+              "prompt": "large packet of crisps — 70p",
+              "question": "Can I have a large packet of crisps, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's seventy pence. Anything else? — No, thanks.",
+              "whyUz": "'large' = katta (aksi: small).\n70p → 'seventy pence'."
+            },
+            {
+              "prompt": "ice-cream — £1.80",
+              "question": "Can I have an ice-cream, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's one pound eighty. Anything else? — No, thanks.",
+              "whyUz": "'an ice-cream' — UNLI tovush bilan boshlanadi → AN.\n£1.80 → 'one pound eighty' (kitobda ham shu misol bor)."
+            },
+            {
+              "prompt": "ikkita narsa: hamburger + Coke",
+              "question": "Can I have a hamburger, please? — ... Anything else? — Yes, can I have a medium Coke, please?",
+              "answer": "Yes, here you are. — Thanks. How much is it? — It's two pounds forty.",
+              "whyUz": "'Anything else?' savoliga 'Yes' deb javob berish mumkin.\nHisob: £1.60 + 80p = £2.40 → 'two pounds forty'."
+            }
           ]
         }
       ]
@@ -221,67 +595,253 @@
         "ruleUz": "Millat nomlari: mamlakat → odam → sifat",
         "explanationUz": "Uch shakl bir-biridan yasaladi. Hammasi BOSH HARF bilan.",
         "items": [
-          { "base": "Brazil", "baseUz": "Braziliya", "derived": "a Brazilian / Brazilians", "derivedUz": "braziliyalik(lar)", "note": "-ian" },
-          { "base": "the Philippines", "baseUz": "Filippin", "derived": "a Filipino / Filipinos", "derivedUz": "filippinlik(lar)", "note": "THE bilan" },
-          { "base": "Finland", "baseUz": "Finlandiya", "derived": "a Finn / Finns", "derivedUz": "fin(lar)", "note": "sifat: Finnish" },
-          { "base": "Britain", "baseUz": "Britaniya", "derived": "a Briton / the British", "derivedUz": "britaniyalik(lar)", "note": "sifat: British" },
-          { "base": "Uzbekistan", "baseUz": "O'zbekiston", "derived": "an Uzbek / Uzbeks", "derivedUz": "o'zbek(lar)", "note": "" }
+          {
+            "base": "Brazil",
+            "baseUz": "Braziliya",
+            "derived": "a Brazilian / Brazilians",
+            "derivedUz": "braziliyalik(lar)",
+            "note": "-ian"
+          },
+          {
+            "base": "the Philippines",
+            "baseUz": "Filippin",
+            "derived": "a Filipino / Filipinos",
+            "derivedUz": "filippinlik(lar)",
+            "note": "THE bilan"
+          },
+          {
+            "base": "Finland",
+            "baseUz": "Finlandiya",
+            "derived": "a Finn / Finns",
+            "derivedUz": "fin(lar)",
+            "note": "sifat: Finnish"
+          },
+          {
+            "base": "Britain",
+            "baseUz": "Britaniya",
+            "derived": "a Briton / the British",
+            "derivedUz": "britaniyalik(lar)",
+            "note": "sifat: British"
+          },
+          {
+            "base": "Uzbekistan",
+            "baseUz": "O'zbekiston",
+            "derived": "an Uzbek / Uzbeks",
+            "derivedUz": "o'zbek(lar)",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Ovqatlanish iboralari",
         "explanationUz": "'have' fe'li ovqat nomlari bilan ishlatiladi.",
         "items": [
-          { "base": "have breakfast", "baseUz": "nonushta qilmoq", "derived": "artiklsiz", "derivedUz": "'have A breakfast' XATO", "note": "" },
-          { "base": "have lunch", "baseUz": "tushlik qilmoq", "derived": "artiklsiz", "derivedUz": "", "note": "" },
-          { "base": "have dinner", "baseUz": "kechki ovqat qilmoq", "derived": "artiklsiz", "derivedUz": "", "note": "" },
-          { "base": "have a snack", "baseUz": "gazak qilmoq", "derived": "'a' BILAN", "derivedUz": "sanaladigan", "note": "" },
-          { "base": "have a meal", "baseUz": "ovqatlanmoq", "derived": "'a' BILAN", "derivedUz": "sanaladigan", "note": "" },
-          { "base": "three meals a day", "baseUz": "kuniga uch mahal", "derived": "'a' = har", "derivedUz": "", "note": "" }
+          {
+            "base": "have breakfast",
+            "baseUz": "nonushta qilmoq",
+            "derived": "artiklsiz",
+            "derivedUz": "'have A breakfast' XATO",
+            "note": ""
+          },
+          {
+            "base": "have lunch",
+            "baseUz": "tushlik qilmoq",
+            "derived": "artiklsiz",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "have dinner",
+            "baseUz": "kechki ovqat qilmoq",
+            "derived": "artiklsiz",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "have a snack",
+            "baseUz": "gazak qilmoq",
+            "derived": "'a' BILAN",
+            "derivedUz": "sanaladigan",
+            "note": ""
+          },
+          {
+            "base": "have a meal",
+            "baseUz": "ovqatlanmoq",
+            "derived": "'a' BILAN",
+            "derivedUz": "sanaladigan",
+            "note": ""
+          },
+          {
+            "base": "three meals a day",
+            "baseUz": "kuniga uch mahal",
+            "derived": "'a' = har",
+            "derivedUz": "",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Pishirish usullari (sifatdosh)",
         "explanationUz": "Fe'l + -ed → sifat. Ot oldida turadi.",
         "items": [
-          { "base": "to smoke", "baseUz": "dudlamoq", "derived": "smoked fish", "derivedUz": "dudlangan baliq", "note": "'chekmoq' ma'nosi ham" },
-          { "base": "to grill", "baseUz": "panjarada pishirmoq", "derived": "grilled fish", "derivedUz": "panjarada pishirilgan", "note": "54-betda bor" },
-          { "base": "to roast", "baseUz": "qovurmoq", "derived": "roast chicken", "derivedUz": "qovurilgan tovuq", "note": "" },
-          { "base": "to fry", "baseUz": "yog'da qovurmoq", "derived": "fried eggs", "derivedUz": "qovurilgan tuxum", "note": "" },
-          { "base": "to boil", "baseUz": "qaynatmoq", "derived": "boiled rice", "derivedUz": "qaynatilgan guruch", "note": "" }
+          {
+            "base": "to smoke",
+            "baseUz": "dudlamoq",
+            "derived": "smoked fish",
+            "derivedUz": "dudlangan baliq",
+            "note": "'chekmoq' ma'nosi ham"
+          },
+          {
+            "base": "to grill",
+            "baseUz": "panjarada pishirmoq",
+            "derived": "grilled fish",
+            "derivedUz": "panjarada pishirilgan",
+            "note": "54-betda bor"
+          },
+          {
+            "base": "to roast",
+            "baseUz": "qovurmoq",
+            "derived": "roast chicken",
+            "derivedUz": "qovurilgan tovuq",
+            "note": ""
+          },
+          {
+            "base": "to fry",
+            "baseUz": "yog'da qovurmoq",
+            "derived": "fried eggs",
+            "derivedUz": "qovurilgan tuxum",
+            "note": ""
+          },
+          {
+            "base": "to boil",
+            "baseUz": "qaynatmoq",
+            "derived": "boiled rice",
+            "derivedUz": "qaynatilgan guruch",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "Britaniya puli",
         "explanationUz": "Funt va pens. 1 funt = 100 pens.",
         "items": [
-          { "base": "£1", "baseUz": "bir funt", "derived": "one pound", "derivedUz": "BIRLIK", "note": "£ sondan OLDIN" },
-          { "base": "£2", "baseUz": "ikki funt", "derived": "two pounds", "derivedUz": "KO'PLIK", "note": "1 dan katta → -S" },
-          { "base": "£1.60", "baseUz": "bir funt oltmish", "derived": "one pound sixty", "derivedUz": "'pence' aytilmasa ham bo'ladi", "note": "" },
-          { "base": "£2.75", "baseUz": "ikki funt yetmish besh", "derived": "two pounds seventy-five", "derivedUz": "", "note": "" },
-          { "base": "75p", "baseUz": "yetmish besh pens", "derived": "seventy-five pence", "derivedUz": "'pee' deb ham", "note": "p sondan KEYIN" },
-          { "base": "a penny", "baseUz": "bir pens", "derived": "pence (ko'plik)", "derivedUz": "'pennies' — tangalar", "note": "" }
+          {
+            "base": "£1",
+            "baseUz": "bir funt",
+            "derived": "one pound",
+            "derivedUz": "BIRLIK",
+            "note": "£ sondan OLDIN"
+          },
+          {
+            "base": "£2",
+            "baseUz": "ikki funt",
+            "derived": "two pounds",
+            "derivedUz": "KO'PLIK",
+            "note": "1 dan katta → -S"
+          },
+          {
+            "base": "£1.60",
+            "baseUz": "bir funt oltmish",
+            "derived": "one pound sixty",
+            "derivedUz": "'pence' aytilmasa ham bo'ladi",
+            "note": ""
+          },
+          {
+            "base": "£2.75",
+            "baseUz": "ikki funt yetmish besh",
+            "derived": "two pounds seventy-five",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "75p",
+            "baseUz": "yetmish besh pens",
+            "derived": "seventy-five pence",
+            "derivedUz": "'pee' deb ham",
+            "note": "p sondan KEYIN"
+          },
+          {
+            "base": "a penny",
+            "baseUz": "bir pens",
+            "derived": "pence (ko'plik)",
+            "derivedUz": "'pennies' — tangalar",
+            "note": ""
+          }
         ]
       },
       {
         "ruleUz": "O'lcham sifatlari (menyuda)",
         "explanationUz": "Ichimlik va porsiya o'lchamini bildiradi.",
         "items": [
-          { "base": "small", "baseUz": "kichik", "derived": "a small packet", "derivedUz": "eng kichik", "note": "" },
-          { "base": "medium", "baseUz": "o'rtacha", "derived": "a medium Coke", "derivedUz": "o'rtacha", "note": "/ˈmiːdiəm/" },
-          { "base": "large", "baseUz": "katta", "derived": "a large packet", "derivedUz": "eng katta", "note": "'big' ham" }
+          {
+            "base": "small",
+            "baseUz": "kichik",
+            "derived": "a small packet",
+            "derivedUz": "eng kichik",
+            "note": ""
+          },
+          {
+            "base": "medium",
+            "baseUz": "o'rtacha",
+            "derived": "a medium Coke",
+            "derivedUz": "o'rtacha",
+            "note": "/ˈmiːdiəm/"
+          },
+          {
+            "base": "large",
+            "baseUz": "katta",
+            "derived": "a large packet",
+            "derivedUz": "eng katta",
+            "note": "'big' ham"
+          }
         ]
       },
       {
         "ruleUz": "Bog'lovchi iboralar",
         "explanationUz": "Matnlarni bog'lash uchun ishlatiladi.",
         "items": [
-          { "base": "whether ... or ...", "baseUz": "...mi yoki ...mi", "derived": "Whether at home or in a restaurant", "derivedUz": "farqi yo'q", "note": "" },
-          { "base": "as well as", "baseUz": "...dan tashqari", "derived": "As well as fruit drinks, ...", "derivedUz": "qo'shimcha", "note": "" },
-          { "base": "such as", "baseUz": "masalan", "derived": "dishes such as smoked fish", "derivedUz": "misol", "note": "" },
-          { "base": "in between", "baseUz": "orasida", "derived": "two snacks in between", "derivedUz": "", "note": "" },
-          { "base": "during the week", "baseUz": "ish kunlari", "derived": "During the week, ...", "derivedUz": "du–ju", "note": "" },
-          { "base": "at the weekends", "baseUz": "dam olish kunlari", "derived": "at the weekends", "derivedUz": "britancha", "note": "amerikacha: on" }
+          {
+            "base": "whether ... or ...",
+            "baseUz": "...mi yoki ...mi",
+            "derived": "Whether at home or in a restaurant",
+            "derivedUz": "farqi yo'q",
+            "note": ""
+          },
+          {
+            "base": "as well as",
+            "baseUz": "...dan tashqari",
+            "derived": "As well as fruit drinks, ...",
+            "derivedUz": "qo'shimcha",
+            "note": ""
+          },
+          {
+            "base": "such as",
+            "baseUz": "masalan",
+            "derived": "dishes such as smoked fish",
+            "derivedUz": "misol",
+            "note": ""
+          },
+          {
+            "base": "in between",
+            "baseUz": "orasida",
+            "derived": "two snacks in between",
+            "derivedUz": "",
+            "note": ""
+          },
+          {
+            "base": "during the week",
+            "baseUz": "ish kunlari",
+            "derived": "During the week, ...",
+            "derivedUz": "du–ju",
+            "note": ""
+          },
+          {
+            "base": "at the weekends",
+            "baseUz": "dam olish kunlari",
+            "derived": "at the weekends",
+            "derivedUz": "britancha",
+            "note": "amerikacha: on"
+          }
         ]
       }
     ]
@@ -335,40 +895,145 @@
     ]
   },
   "vocabularyOnPage": [
-    { "en": "eating habits", "uz": "ovqatlanish odatlari" },
-    { "en": "Brazil — Brazilians", "uz": "Braziliya — braziliyaliklar" },
-    { "en": "the Philippines — Filipinos", "uz": "Filippin — filippinliklar" },
-    { "en": "Finland — Finns", "uz": "Finlandiya — finlar" },
-    { "en": "whether ... or ...", "uz": "...mi yoki ...mi" },
-    { "en": "an office", "uz": "ishxona, ofis" },
-    { "en": "strong coffee", "uz": "quyuq qahva" },
-    { "en": "as well as", "uz": "...dan tashqari" },
-    { "en": "even", "uz": "hatto" },
-    { "en": "a snack", "uz": "yengil gazak" },
-    { "en": "in between", "uz": "orasida" },
-    { "en": "coconut milk", "uz": "kokos suti" },
-    { "en": "a sauce", "uz": "sous" },
-    { "en": "to invite", "uz": "taklif qilmoq" },
-    { "en": "polite", "uz": "odobli, muloyim" },
-    { "en": "to leave", "uz": "qoldirmoq" },
-    { "en": "such as", "uz": "masalan, ...kabi" },
-    { "en": "smoked fish", "uz": "dudlangan baliq" },
-    { "en": "fast food", "uz": "tez ovqat" },
-    { "en": "popular", "uz": "mashhur" },
-    { "en": "a stall", "uz": "rasta" },
-    { "en": "to sell", "uz": "sotmoq" },
-    { "en": "excellent", "uz": "a'lo" },
-    { "en": "during the week", "uz": "ish kunlari" },
-    { "en": "at the weekends", "uz": "dam olish kunlari" },
-    { "en": "each person", "uz": "har bir odam" },
-    { "en": "to bring", "uz": "olib kelmoq" },
-    { "en": "a menu", "uz": "menyu" },
-    { "en": "fish and chips", "uz": "baliq va kartoshka fri" },
-    { "en": "hot chocolate", "uz": "issiq shokolad" },
-    { "en": "medium", "uz": "o'rtacha" },
-    { "en": "a pound (£)", "uz": "funt" },
-    { "en": "pence (p)", "uz": "pens" },
-    { "en": "Anything else?", "uz": "Yana biror narsa kerakmi?" },
-    { "en": "Here you are.", "uz": "Mana, oling." }
+    {
+      "en": "eating habits",
+      "uz": "ovqatlanish odatlari"
+    },
+    {
+      "en": "Brazil — Brazilians",
+      "uz": "Braziliya — braziliyaliklar"
+    },
+    {
+      "en": "the Philippines — Filipinos",
+      "uz": "Filippin — filippinliklar"
+    },
+    {
+      "en": "Finland — Finns",
+      "uz": "Finlandiya — finlar"
+    },
+    {
+      "en": "whether ... or ...",
+      "uz": "...mi yoki ...mi"
+    },
+    {
+      "en": "an office",
+      "uz": "ishxona, ofis"
+    },
+    {
+      "en": "strong coffee",
+      "uz": "quyuq qahva"
+    },
+    {
+      "en": "as well as",
+      "uz": "...dan tashqari"
+    },
+    {
+      "en": "even",
+      "uz": "hatto"
+    },
+    {
+      "en": "a snack",
+      "uz": "yengil gazak"
+    },
+    {
+      "en": "in between",
+      "uz": "orasida"
+    },
+    {
+      "en": "coconut milk",
+      "uz": "kokos suti"
+    },
+    {
+      "en": "a sauce",
+      "uz": "sous"
+    },
+    {
+      "en": "to invite",
+      "uz": "taklif qilmoq"
+    },
+    {
+      "en": "polite",
+      "uz": "odobli, muloyim"
+    },
+    {
+      "en": "to leave",
+      "uz": "qoldirmoq"
+    },
+    {
+      "en": "such as",
+      "uz": "masalan, ...kabi"
+    },
+    {
+      "en": "smoked fish",
+      "uz": "dudlangan baliq"
+    },
+    {
+      "en": "fast food",
+      "uz": "tez ovqat"
+    },
+    {
+      "en": "popular",
+      "uz": "mashhur"
+    },
+    {
+      "en": "a stall",
+      "uz": "rasta"
+    },
+    {
+      "en": "to sell",
+      "uz": "sotmoq"
+    },
+    {
+      "en": "excellent",
+      "uz": "a'lo"
+    },
+    {
+      "en": "during the week",
+      "uz": "ish kunlari"
+    },
+    {
+      "en": "at the weekends",
+      "uz": "dam olish kunlari"
+    },
+    {
+      "en": "each person",
+      "uz": "har bir odam"
+    },
+    {
+      "en": "to bring",
+      "uz": "olib kelmoq"
+    },
+    {
+      "en": "a menu",
+      "uz": "menyu"
+    },
+    {
+      "en": "fish and chips",
+      "uz": "baliq va kartoshka fri"
+    },
+    {
+      "en": "hot chocolate",
+      "uz": "issiq shokolad"
+    },
+    {
+      "en": "medium",
+      "uz": "o'rtacha"
+    },
+    {
+      "en": "a pound (£)",
+      "uz": "funt"
+    },
+    {
+      "en": "pence (p)",
+      "uz": "pens"
+    },
+    {
+      "en": "Anything else?",
+      "uz": "Yana biror narsa kerakmi?"
+    },
+    {
+      "en": "Here you are.",
+      "uz": "Mana, oling."
+    }
   ]
 }
