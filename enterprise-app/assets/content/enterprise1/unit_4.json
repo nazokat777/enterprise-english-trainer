@@ -1676,36 +1676,44 @@
      "tasks": [
       {
        "prompt": "Ota — tashqi ko'rinishi",
-       "answer": "My father is tall and slim with short dark hair and brown eyes."
+       "answer": "My father is tall and slim with short dark hair and brown eyes.",
+       "promptUz": "Ota — tashqi ko'rinishi"
       },
       {
        "prompt": "Ota — xarakteri",
-       "answer": "He is very kind and patient."
+       "answer": "He is very kind and patient.",
+       "promptUz": "Ota — xarakteri"
       },
       {
        "prompt": "Ona — tashqi ko'rinishi",
-       "answer": "My mother is beautiful with long fair hair and lovely green eyes."
+       "answer": "My mother is beautiful with long fair hair and lovely green eyes.",
+       "promptUz": "Ona — tashqi ko'rinishi"
       },
       {
        "prompt": "Ona — xarakteri",
-       "answer": "She is friendly and clever."
+       "answer": "She is friendly and clever.",
+       "promptUz": "Ona — xarakteri"
       },
       {
        "prompt": "Aka/uka — tashqi ko'rinishi",
-       "answer": "My brother is good-looking with brown hair and blue eyes."
+       "answer": "My brother is good-looking with brown hair and blue eyes.",
+       "promptUz": "Aka/uka — tashqi ko'rinishi"
       },
       {
        "prompt": "Aka/uka — xarakteri",
        "answer": "He is funny, but he's a bit lazy.",
+       "promptUz": "Aka/uka — xarakteri",
        "whyUz": "'a bit' salbiy sifatni yumshatadi."
       },
       {
        "prompt": "Opa/singil — tashqi ko'rinishi",
-       "answer": "My sister is pretty with fair hair and green eyes."
+       "answer": "My sister is pretty with fair hair and green eyes.",
+       "promptUz": "Opa/singil — tashqi ko'rinishi"
       },
       {
        "prompt": "Opa/singil — xarakteri",
-       "answer": "She is clever and polite, but she's a bit bossy."
+       "answer": "She is clever and polite, but she's a bit bossy.",
+       "promptUz": "Opa/singil — xarakteri"
       }
      ]
     }
@@ -1799,43 +1807,53 @@
      "tasks": [
       {
        "prompt": "NAME — ism",
-       "answer": "Stewart Jones"
+       "answer": "Stewart Jones",
+       "promptUz": "NAME — ism"
       },
       {
        "prompt": "AGE — yoshi",
-       "answer": "29 years old"
+       "answer": "29 years old",
+       "promptUz": "AGE — yoshi"
       },
       {
        "prompt": "OCCUPATION — kasbi",
-       "answer": "a policeman"
+       "answer": "a policeman",
+       "promptUz": "OCCUPATION — kasbi"
       },
       {
        "prompt": "LIVES — qayerda yashaydi",
-       "answer": "in Dover, in the south-east of England"
+       "answer": "in Dover, in the south-east of England",
+       "promptUz": "LIVES — qayerda yashaydi"
       },
       {
        "prompt": "HOUSE — uyi",
-       "answer": "a small, comfortable flat"
+       "answer": "a small, comfortable flat",
+       "promptUz": "HOUSE — uyi"
       },
       {
        "prompt": "FAMILY MEMBERS — oila a'zolari",
-       "answer": "wife — Jessica, 28, a vet; son — Jason, 7"
+       "answer": "wife — Jessica, 28, a vet; son — Jason, 7",
+       "promptUz": "FAMILY MEMBERS — oila a'zolari"
       },
       {
        "prompt": "APPEARANCE — tashqi ko'rinishi",
-       "answer": "good-looking, tall and well-built with short brown hair and brown eyes"
+       "answer": "good-looking, tall and well-built with short brown hair and brown eyes",
+       "promptUz": "APPEARANCE — tashqi ko'rinishi"
       },
       {
        "prompt": "CHARACTER — xarakteri",
-       "answer": "kind and a very loving father"
+       "answer": "kind and a very loving father",
+       "promptUz": "CHARACTER — xarakteri"
       },
       {
        "prompt": "LIKES — yoqtiradi",
-       "answer": "playing basketball"
+       "answer": "playing basketball",
+       "promptUz": "LIKES — yoqtiradi"
       },
       {
        "prompt": "DOESN'T LIKE (why) — yoqtirmaydi (nega)",
-       "answer": "watching TV — he thinks it is boring"
+       "answer": "watching TV — he thinks it is boring",
+       "promptUz": "DOESN'T LIKE (why) — yoqtirmaydi (nega)"
       }
      ]
     },
@@ -7726,38 +7744,49 @@
      "kind": "study",
      "tasks": [
       {
-       "en": "His full name is Tony Philips."
+       "en": "His full name is Tony Philips.",
+       "uz": "FULL NAME — to'liq ism (kitobda berilgan)"
       },
       {
        "en": "Tony Philips is seventeen years old and he is a student.",
+       "uz": "AGE/OCCUPATION — yosh va kasb",
        "note": "Kitob shu gap bilan boshlashni taklif qiladi."
       },
       {
-       "en": "He lives in Montreal, Canada."
+       "en": "He lives in Montreal, Canada.",
+       "uz": "CITY/COUNTRY — shahar va mamlakat"
       },
       {
-       "en": "He is tall and slim with short dark hair and brown eyes."
+       "en": "He is tall and slim with short dark hair and brown eyes.",
+       "uz": "APPEARANCE — tashqi ko'rinishi"
       },
       {
-       "en": "There are seven people in his family. His grandparents are Steve and Sally."
+       "en": "There are seven people in his family. His grandparents are Steve and Sally.",
+       "uz": "FAMILY — bobo va buvi (kitobda berilgan)"
       },
       {
-       "en": "His parents are Joe, a surgeon, and Kate, a teacher."
+       "en": "His parents are Joe, a surgeon, and Kate, a teacher.",
+       "uz": "FAMILY — ota-ona (kitobda berilgan)"
       },
       {
-       "en": "He has got a sister, Liz, aged nine, and a brother, Leo, aged six."
+       "en": "He has got a sister, Liz, aged nine, and a brother, Leo, aged six.",
+       "uz": "FAMILY — aka-uka va opa-singil (kitobda berilgan)"
       },
       {
-       "en": "He lives at 43, St Catherine Street, in a big house about twenty minutes from the city centre."
+       "en": "He lives at 43, St Catherine Street, in a big house about twenty minutes from the city centre.",
+       "uz": "HOME — uyi"
       },
       {
-       "en": "He loves playing computer games and listening to rock music."
+       "en": "He loves playing computer games and listening to rock music.",
+       "uz": "LIKES/LOVES — yoqtirgani (kitobda boshlangan)"
       },
       {
-       "en": "He also likes going to the cinema and he goes there every Saturday."
+       "en": "He also likes going to the cinema and he goes there every Saturday.",
+       "uz": "LIKES — yana yoqtirgani"
       },
       {
-       "en": "He doesn't like going to the theatre, though."
+       "en": "He doesn't like going to the theatre, though.",
+       "uz": "DOESN'T LIKE — yoqtirmagani"
       }
      ]
     }
@@ -8539,38 +8568,45 @@
       {
        "prompt": "1) O'zingizni tanishtiring",
        "answer": "Hi! I'm Aziz and I'm twelve.",
+       "promptUz": "1) O'zingizni tanishtiring",
        "speak": "1) O'zingizni tanishtiring"
       },
       {
        "prompt": "2) Ota-onangiz",
        "answer": "Rustam and Nilufar are my parents.",
+       "promptUz": "2) Ota-onangiz",
        "speak": "2) Ota-onangiz"
       },
       {
        "prompt": "3) Otangizning singlisi",
        "answer": "Dilnoza is my father's sister. She is my aunt.",
+       "promptUz": "3) Otangizning singlisi",
        "whyUz": "IKKI xil egalik: MY (sifat) + father'S (shakl).",
        "speak": "3) Otangizning singlisi"
       },
       {
        "prompt": "4) Uning eri",
        "answer": "Bobur is her husband. He's my uncle.",
+       "promptUz": "4) Uning eri",
        "speak": "4) Uning eri"
       },
       {
        "prompt": "5) Ularning farzandi",
        "answer": "Their son's name is Jasur. He's ten years old. He's my cousin.",
+       "promptUz": "5) Ularning farzandi",
        "whyUz": "THEIR (sifat) + son'S (shakl).",
        "speak": "5) Ularning farzandi"
       },
       {
        "prompt": "6) Bobo va buvingiz",
        "answer": "Karim and Zulfiya are our grandparents.",
+       "promptUz": "6) Bobo va buvingiz",
        "speak": "6) Bobo va buvingiz"
       },
       {
        "prompt": "7) Ular kimning ota-onasi",
        "answer": "They are Rustam and Dilnoza's parents.",
+       "promptUz": "7) Ular kimning ota-onasi",
        "whyUz": "Ikki egasi → 's faqat oxirgisiga.",
        "speak": "7) Ular kimning ota-onasi"
       }
@@ -8598,41 +8634,53 @@
      "kind": "study",
      "tasks": [
       {
-       "en": "Dear Pierre,"
+       "en": "Dear Pierre,",
+       "uz": "Salomlashish"
       },
       {
-       "en": "I'm Aziz Karimov and I'm fourteen years old."
+       "en": "I'm Aziz Karimov and I'm fourteen years old.",
+       "uz": "Para 1 — kim ekaningiz va yoshingiz"
       },
       {
-       "en": "I'm a student and I live in Tashkent, Uzbekistan."
+       "en": "I'm a student and I live in Tashkent, Uzbekistan.",
+       "uz": "Para 1 — kasbingiz va qayerda yashashingiz"
       },
       {
-       "en": "I'm tall and slim with short dark hair and brown eyes."
+       "en": "I'm tall and slim with short dark hair and brown eyes.",
+       "uz": "Para 1 — tashqi ko'rinishingiz"
       },
       {
        "en": "There are five of us in our family; my parents, Rustam and Nilufar, my sister, Malika, aged twelve, my brother, Sardor, aged eight, and of course, me.",
+       "uz": "Para 2 — oila a'zolari",
        "note": "Tonining xatidagi aynan shu qolip."
       },
       {
-       "en": "My father is an engineer. He works at a local factory and my mother is a doctor in a hospital."
+       "en": "My father is an engineer. He works at a local factory and my mother is a doctor in a hospital.",
+       "uz": "Para 2 — ota-onaning kasbi"
       },
       {
-       "en": "We live in a big house about fifteen minutes from the city centre."
+       "en": "We live in a big house about fifteen minutes from the city centre.",
+       "uz": "Para 2 — uyingiz"
       },
       {
-       "en": "In my free time, I love playing football and listening to music."
+       "en": "In my free time, I love playing football and listening to music.",
+       "uz": "Para 3 — nimani yoqtirasiz"
       },
       {
-       "en": "I also like reading and going to the cinema."
+       "en": "I also like reading and going to the cinema.",
+       "uz": "Para 3 — yana nimani yoqtirasiz"
       },
       {
-       "en": "I don't like watching TV, though."
+       "en": "I don't like watching TV, though.",
+       "uz": "Para 3 — nimani yoqtirmaysiz"
       },
       {
-       "en": "Well, that's all about me. Write back soon and tell me about yourself."
+       "en": "Well, that's all about me. Write back soon and tell me about yourself.",
+       "uz": "Para 4 — yakun"
       },
       {
-       "en": "Best wishes, Aziz"
+       "en": "Best wishes, Aziz",
+       "uz": "Xayrlashish"
       }
      ]
     }
@@ -8658,50 +8706,64 @@
      "kind": "study",
      "tasks": [
       {
-       "en": "Bill Brown is forty years old."
+       "en": "Bill Brown is forty years old.",
+       "uz": "Bill Braun qirq yoshda."
       },
       {
-       "en": "He is a pilot."
+       "en": "He is a pilot.",
+       "uz": "U uchuvchi."
       },
       {
        "en": "He lives in Bristol, on the west coast of England.",
+       "uz": "U Angliyaning g'arbiy sohilidagi Bristolda yashaydi.",
        "note": "'coast' bilan ON."
       },
       {
-       "en": "Bill lives in a large house with his wife, Polly, and their daughter, Lisa."
+       "en": "Bill lives in a large house with his wife, Polly, and their daughter, Lisa.",
+       "uz": "Bill katta uyda xotini Polli va qizlari Liza bilan yashaydi."
       },
       {
-       "en": "Polly is a nurse."
+       "en": "Polly is a nurse.",
+       "uz": "Polli hamshira."
       },
       {
-       "en": "Lisa is a student at the University of Bristol."
+       "en": "Lisa is a student at the University of Bristol.",
+       "uz": "Liza Bristol universitetining talabasi."
       },
       {
        "en": "Bill is tall and slim with curly fair hair and blue eyes.",
+       "uz": "Bill baland bo'yli va nozik, jingalak malla sochli va ko'k ko'zli.",
        "note": "Qolip: is + bo'y/gavda + WITH + soch + and + ko'z."
       },
       {
-       "en": "He is a very pleasant and patient man."
+       "en": "He is a very pleasant and patient man.",
+       "uz": "U juda yoqimli va sabrli odam."
       },
       {
        "en": "In his free time Bill likes reading and travelling.",
+       "uz": "Bo'sh vaqtida Bill kitob o'qish va sayohat qilishni yaxshi ko'radi.",
        "note": "'like' dan keyin -ING."
       },
       {
        "en": "He doesn't like going fishing. He thinks it is too boring.",
+       "uz": "U baliq ovlashni yoqtirmaydi. Uningcha bu juda zerikarli.",
        "note": "Sababni aytish — yaxshi yozuv belgisi. 'too' = haddan tashqari."
       },
       {
-       "en": "Bill Brown is forty years old. He is a pilot and he lives in Bristol, on the west coast of England."
+       "en": "Bill Brown is forty years old. He is a pilot and he lives in Bristol, on the west coast of England.",
+       "uz": "Bill Braun qirq yoshda. U uchuvchi va Angliyaning g'arbiy sohilidagi Bristolda yashaydi."
       },
       {
-       "en": "Bill lives in a large house with his wife, Polly, and their daughter, Lisa. Polly is a nurse and Lisa is a student at the University of Bristol."
+       "en": "Bill lives in a large house with his wife, Polly, and their daughter, Lisa. Polly is a nurse and Lisa is a student at the University of Bristol.",
+       "uz": "Bill katta uyda xotini Polli va qizlari Liza bilan yashaydi. Polli hamshira, Liza esa Bristol universitetining talabasi."
       },
       {
-       "en": "Bill is tall and slim with curly fair hair and blue eyes. He is a very pleasant and patient man."
+       "en": "Bill is tall and slim with curly fair hair and blue eyes. He is a very pleasant and patient man.",
+       "uz": "Bill baland bo'yli va nozik, jingalak malla sochli va ko'k ko'zli. U juda yoqimli va sabrli odam."
       },
       {
-       "en": "In his free time Bill likes reading and travelling. He doesn't like going fishing, though. He thinks it is too boring."
+       "en": "In his free time Bill likes reading and travelling. He doesn't like going fishing, though. He thinks it is too boring.",
+       "uz": "Bo'sh vaqtida Bill kitob o'qish va sayohat qilishni yaxshi ko'radi. Shunga qaramay, baliq ovlashni yoqtirmaydi. Uningcha bu juda zerikarli."
       }
      ]
     }

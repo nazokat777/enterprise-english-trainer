@@ -85,11 +85,14 @@ SECTION_TITLE_UZ = {
 
 # ─────────────────────────── yordamchilar ───────────────────────────
 def task(prompt, answer, *, prompt_uz="", options=None, why="", alt=None,
-         speak=None, visual=""):
+         speak=None, visual="", answer_uz=""):
     """Bitta savol-javob birligi.
 
     MUHIM — JAVOBNI OSHKOR QILMASLIK:
       * `prompt_uz` javobning o'zbekchasi BO'LMASLIGI kerak.
+      * `answer_uz` — javobning o'zbekchasi. O'YINDA HECH QAChON
+        KO'RSATILMAYDI: u faqat mashq "study" ga aylanganda ishlatiladi
+        (`_fix_unbuildable_text`), so'ngra `_strip_answer_uz` uni o'chiradi.
       * `speak` — javob berilgunga qadar ovoz chiqariladigan matn.
         Faqat SAVOL matni bo'lishi mumkin va u inglizcha bo'lsa.
         Berilmasa — avtomatik aniqlanadi (o'zbekcha bo'lsa, ovoz yo'q).
@@ -98,6 +101,8 @@ def task(prompt, answer, *, prompt_uz="", options=None, why="", alt=None,
     t = {"prompt": str(prompt), "answer": str(answer)}
     if prompt_uz:
         t["promptUz"] = prompt_uz
+    if answer_uz:
+        t["answerUz"] = str(answer_uz)
     if options:
         t["options"] = [str(o) for o in options]
     if why:
@@ -265,6 +270,7 @@ def norm_exercise(ex, page):
     kind, tasks = _dispatch(t, ex, items)
     kind, tasks = _fix_ambiguous_match(kind, tasks)
     kind, tasks = _fix_unbuildable_text(kind, tasks)
+    tasks = _strip_answer_uz(kind, tasks)
     tasks, dropped = _drop_marker_answers(kind, tasks)
     if dropped:
         base["explanationUz"] = (base["explanationUz"] + "\n\n" + dropped).strip()
@@ -348,9 +354,24 @@ def _fix_unbuildable_text(kind, tasks):
     if longest <= MAX_BUILD_PIECES:
         return kind, tasks
     return "study", [
-        study(t.get("answer", ""), t.get("promptUz", ""), t.get("whyUz", ""))
+        study(t.get("answer", ""),
+              t.get("answerUz") or t.get("promptUz", ""),
+              t.get("whyUz", ""))
         for t in tasks
     ]
+
+
+def _strip_answer_uz(kind, tasks):
+    """`answerUz` — javobning o'zbekchasi. U FAQAT "study" ga aylantirishda
+    kerak bo'ladi; o'yin rejimida ko'rsatilsa, javobni oshkor qilib qo'yadi.
+
+    Shu sababli "study" dan boshqa har qanday turda uni o'chiramiz.
+    ("study" bandlarida u allaqachon `uz` ga ko'chirilgan.)
+    """
+    for t in tasks:
+        if isinstance(t, dict):
+            t.pop("answerUz", None)
+    return tasks
 
 
 def _fix_ambiguous_match(kind, tasks):
@@ -609,7 +630,12 @@ def _dispatch(t, ex, items):
                 for k, a in enumerate(answers):
                     prompt = i["textEn"] if len(answers) == 1 else \
                         f"{i['textEn']}  [{k + 1}-bo'shliq]"
+                    a_uz = i.get("answersUz")[k] if (
+                        i.get("answersUz") and k < len(i["answersUz"])
+                    ) else i.get("answerUz", "")
                     out.append(task(prompt, a, prompt_uz=hint,
+                                    answer_uz=a_uz if len(answers) == 1
+                                    or i.get("answersUz") else "",
                                     why=i.get("whyUz", "")))
         return "text", out
 
@@ -759,6 +785,7 @@ def _dispatch(t, ex, items):
                 out.append(task(label, model,
                                 prompt_uz=(p.get("descUz") if not p.get("name")
                                            else "Profil bo'yicha gap tuzing"),
+                                answer_uz=p.get("modelSentenceUz", ""),
                                 speak=""))
         return "text", out
 
@@ -783,13 +810,26 @@ def _dispatch(t, ex, items):
         # (a) Tuzilishi berilgan bo'lsa — har bir qadamning sarlavhasi savol bo'ladi.
         for s in ex.get("structure", []):
             if s.get("modelEn"):
-                out.append(task(s.get("headingUz") or "Namuna bo'yicha yozing",
-                                s["modelEn"], why=s.get("noteUz", "")))
+                # `prompt_uz` — o'zbekcha sarlavha. U javobni oshkor qilmaydi
+                # (faqat qaysi gap ekanini aytadi), lekin mashq "study" ga
+                # o'tganda o'quvchiga qoladigan YAGONA o'zbekcha matn shu.
+                heading = s.get("headingUz") or "Namuna bo'yicha yozing"
+                out.append(task(heading, s["modelEn"],
+                                prompt_uz=s.get("headingUz", ""),
+                                answer_uz=s.get("modelUz", ""),
+                                why=s.get("noteUz", "")))
         # (b) Tayyor namuna gaplar.
         models = ex.get("modelAnswers") or (
             [ex["modelAnswer"]] if ex.get("modelAnswer") else []
         )
-        out += [task("Namuna bo'yicha yozing", m) for m in models if m]
+        models_uz = ex.get("modelAnswersUz") or (
+            [ex["modelAnswerUz"]] if ex.get("modelAnswerUz") else []
+        )
+        for n, m in enumerate(models):
+            if not m:
+                continue
+            out.append(task("Namuna bo'yicha yozing", m,
+                            answer_uz=models_uz[n] if n < len(models_uz) else ""))
         return "text", out
 
     if t == "make_sentences_game":
