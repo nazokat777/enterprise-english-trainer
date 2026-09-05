@@ -219,6 +219,22 @@ def check_export() -> list[tuple[str, str]]:
                     # ko'rinmaydi. Bu jimgina kontent yo'qotish demak.
                     if e["kind"] == "study" and not (t.get("en") or "").strip():
                         out.append((loc, f"b{i}: o'qish matni bo'sh"))
+                    # O'qish kartochkasi boshlang'ich darajadagi o'zbek
+                    # o'quvchisiga MO'LJALLANGAN. Faqat inglizcha gap
+                    # ko'rsatilsa, u tushunarsiz qoladi — bu jimgina
+                    # kontent yo'qotish (441 band shunday bo'lgan edi).
+                    # Istisno: matnning O'ZI o'zbekcha — ⚠ bilan
+                    # boshlanadigan ogohlantirishlar (javob faqat audioda).
+                    en_txt = (t.get("en") or "").strip()
+                    if (e["kind"] == "study" and en_txt
+                            and not en_txt.startswith("⚠")
+                            and not (t.get("uz") or "").strip()
+                            and not UZ_IN_SPEECH.search(en_txt)):
+                        out.append((loc, f"b{i}: o'qish matni o'zbekcha tarjimasiz"))
+                    # `answerUz` javobning o'zbekchasi — o'yin rejimida
+                    # ko'rinsa, javobni oshkor qiladi.
+                    if t.get("answerUz"):
+                        out.append((loc, f"b{i}: answerUz o'yinga sizib chiqqan"))
     return out
 
 
