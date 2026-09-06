@@ -281,8 +281,14 @@ class _IntroStageState extends State<_IntroStage> {
                       blurRadius: 14),
                 ],
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+              // Tor ekranda (320x640) yoki katta shrift rejimida kartochka
+              // ichidagi matn sig'masdi va pastdan chiqib ketardi.
+              // `Center` + `SingleChildScrollView`: joy yetsa markazda
+              // turadi, yetmasa aylanadi.
+              child: Center(
+                child: SingleChildScrollView(
+                  child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -330,6 +336,8 @@ class _IntroStageState extends State<_IntroStage> {
                         TextStyle(fontSize: 15, height: 1.4, color: dark ? AppColors.darkInk : AppColors.lightInk)),
                   ],
                 ],
+              ),
+                ),
               ),
             ),
           ),
