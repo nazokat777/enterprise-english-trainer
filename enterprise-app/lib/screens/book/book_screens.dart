@@ -476,11 +476,16 @@ class BookPagesScreen extends StatelessWidget {
                     const Icon(Icons.menu_book_rounded,
                         size: 18, color: AppColors.brandPurple),
                     const SizedBox(width: 8),
-                    Text(entry.key,
-                        style: const TextStyle(
-                            fontWeight: FontWeight.w800,
-                            fontSize: 15,
-                            color: AppColors.brandPurple)),
+                    // Katta shrift rejimida (1.5x) bu qator ekrandan
+                    // chiqib ketardi — `Flexible` sarlavhaga qisqarishga
+                    // ruxsat beradi.
+                    Flexible(
+                      child: Text(entry.key,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w800,
+                              fontSize: 15,
+                              color: AppColors.brandPurple)),
+                    ),
                     const SizedBox(width: 8),
                     Text('${entry.value.length} bet',
                         style: TextStyle(
@@ -653,9 +658,12 @@ class BookPageScreen extends StatelessWidget {
                       fontSize: 15.5,
                       color: st.color)),
             ),
-            Text(s.titleUz,
-                style: TextStyle(
-                    fontSize: 11.5, color: AppColors.muted(context))),
+            Flexible(
+              child: Text(s.titleUz,
+                  textAlign: TextAlign.end,
+                  style: TextStyle(
+                      fontSize: 11.5, color: AppColors.muted(context))),
+            ),
           ],
         ),
       ),
@@ -674,11 +682,15 @@ class BookPageScreen extends StatelessWidget {
               children: [
                 Icon(Icons.rule_rounded, color: Colors.white, size: 20),
                 SizedBox(width: 9),
-                Text('Qoidani o\'qish',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 14.5)),
+                // Katta shrift rejimida matn tugmadan chiqib ketardi.
+                Flexible(
+                  child: Text('Qoidani o\'qish',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 14.5)),
+                ),
               ],
             ),
           ),
@@ -754,11 +766,15 @@ class BookGroupScreen extends StatelessWidget {
               children: [
                 Icon(Icons.rule_rounded, color: Colors.white, size: 20),
                 SizedBox(width: 9),
-                Text('Qoidani o\'qish',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 14.5)),
+                // Katta shrift rejimida matn tugmadan chiqib ketardi.
+                Flexible(
+                  child: Text('Qoidani o\'qish',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 14.5)),
+                ),
               ],
             ),
           ),
@@ -849,12 +865,18 @@ class _ExerciseTile extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
+                      // Katta shrift rejimida (1.5x) bu qator ekrandan
+                      // chiqib ketardi. `Wrap` sig'magan qismini pastga
+                      // tushiradi, ellipsis esa sarlavhani qisqartiradi.
+                      Wrap(
+                        spacing: 8,
+                        runSpacing: 4,
+                        crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
                           Text(exercise.title,
+                              overflow: TextOverflow.ellipsis,
                               style: const TextStyle(
                                   fontWeight: FontWeight.w800, fontSize: 14)),
-                          const SizedBox(width: 8),
                           Container(
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 7, vertical: 2),
@@ -869,11 +891,9 @@ class _ExerciseTile extends StatelessWidget {
                                     fontWeight: FontWeight.w700,
                                     color: info.color)),
                           ),
-                          if (exercise.audio) ...[
-                            const SizedBox(width: 6),
+                          if (exercise.audio)
                             const Icon(Icons.headphones_rounded,
                                 size: 14, color: AppColors.homework),
-                          ],
                         ],
                       ),
                       const SizedBox(height: 3),

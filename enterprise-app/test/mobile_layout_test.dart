@@ -92,11 +92,21 @@ void main() {
   });
 
   /// Ekranni berilgan o'lchamda chizadi va overflow bo'lmaganini tekshiradi.
-  Future<void> expectFits(WidgetTester t, Widget screen, Size size) async {
+  ///
+  /// `scale` — tizim shrift kattaligi. Telefon sozlamalarida shriftni
+  /// kattalashtirgan foydalanuvchi (oiladagi kattalar) ham ilovani
+  /// buzilmagan holda ko'rishi kerak.
+  Future<void> expectFits(WidgetTester t, Widget screen, Size size,
+      {double scale = 1.0}) async {
     t.view.physicalSize = size;
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
-    await t.pumpWidget(MaterialApp(home: screen));
+    await t.pumpWidget(MaterialApp(
+      home: MediaQuery(
+        data: MediaQueryData(textScaler: TextScaler.linear(scale)),
+        child: screen,
+      ),
+    ));
     await t.pump();
     expect(t.takeException(), isNull);
   }
@@ -121,6 +131,9 @@ void main() {
     testWidgets('${entry.key} — 320px', (t) async {
       await expectFits(t, entry.value(), narrow);
     });
+    testWidgets('${entry.key} — 375px, shrift 1.5x', (t) async {
+      await expectFits(t, entry.value(), phone, scale: 1.5);
+    });
   }
 
   for (final ex in unit.sections.first.exercises) {
@@ -131,6 +144,11 @@ void main() {
     testWidgets('mashq (${ex.kind}) — 320px', (t) async {
       await expectFits(
           t, ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at'), narrow);
+    });
+    testWidgets('mashq (${ex.kind}) — 375px, shrift 1.5x', (t) async {
+      await expectFits(
+          t, ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at'), phone,
+          scale: 1.5);
     });
   }
 
