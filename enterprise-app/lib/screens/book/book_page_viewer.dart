@@ -97,11 +97,15 @@ class _BookPageButtonState extends State<BookPageButton> {
               children: [
                 const Icon(Icons.image_rounded, color: Colors.white, size: 20),
                 const SizedBox(width: 9),
-                Text('Kitob betini ko\'rish (${widget.page}-bet)',
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 14.5)),
+                Flexible(
+                  child: Text(
+                      'Kitob betini ko\'rish (${widget.page}-bet)',
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 14.5)),
+                ),
               ],
             ),
           ),

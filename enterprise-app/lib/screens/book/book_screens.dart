@@ -181,11 +181,18 @@ class BookUnitScreen extends StatelessWidget {
                   const Icon(Icons.auto_stories_rounded,
                       color: Colors.white, size: 22),
                   const SizedBox(width: 10),
-                  Text('Betma-bet ko\'rish (${unit.pages().length} bet)',
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 16)),
+                  // TELEFONDA: matn 375px ekranga sig'masdi va tugma
+                  // sariq-qora "overflow" chizig'i bilan chizilardi.
+                  // `Flexible` matnga keyingi qatorga o'tishga ruxsat beradi.
+                  Flexible(
+                    child: Text(
+                        'Betma-bet ko\'rish (${unit.pages().length} bet)',
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 16)),
+                  ),
                 ],
               ),
             ),
