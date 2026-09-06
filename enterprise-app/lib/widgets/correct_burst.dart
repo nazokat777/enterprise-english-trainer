@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import '../theme.dart';
 
-/// To'g'ri javobda pastdan katta yashil "To'g'ri ✓" chiqadi (dizayn spec).
+/// To'g'ri javobda pastdan katta yashil "To'g'ri" chiqadi (dizayn spec).
 /// Overlay orqali ko'rsatiladi va o'zini avtomatik olib tashlaydi.
-void showCorrectBurst(BuildContext context, {String text = "To'g'ri ✓"}) {
+///
+/// Belgi MATN emas, IKONKA. Ilgari matnda "✓" (U+2713) turardi, lekin
+/// sarlavha shrifti Geist da bu belgi YO'Q — shrift tarmoqdan yuklanib
+/// bo'lgach "To'g'ri ✓" o'rniga "To'g'ri ▯" (bo'sh quti) chiqardi.
+void showCorrectBurst(BuildContext context, {String text = "To'g'ri"}) {
   final overlay = Overlay.maybeOf(context);
   if (overlay == null) return;
   late OverlayEntry entry;
@@ -74,12 +78,20 @@ class _BurstState extends State<_Burst> with SingleTickerProviderStateMixin {
                               offset: const Offset(0, 6)),
                         ],
                       ),
-                      child: Text(
-                        widget.text,
-                        style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 26,
-                            fontWeight: FontWeight.w800),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            widget.text,
+                            style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 26,
+                                fontWeight: FontWeight.w800),
+                          ),
+                          const SizedBox(width: 8),
+                          const Icon(Icons.check_rounded,
+                              color: Colors.white, size: 26),
+                        ],
                       ),
                     ),
                   ),
