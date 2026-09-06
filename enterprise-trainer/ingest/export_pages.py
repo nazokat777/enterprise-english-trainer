@@ -828,6 +828,21 @@ def _dispatch(t, ex, items):
         for i in items:
             if i.get("given") and "lines" not in i:
                 continue
+            # Kitob birinchi qatorni NAMUNA qilib beradi (`given`).
+            # Ilgari u butunlay tashlanardi va o'quvchi savolsiz
+            # "No, he ___ ." bandini ko'rardi — nima haqida ekanini
+            # bilib bo'lmasdi. Endi u KONTEKST sifatida qo'shiladi.
+            context = ""
+            for ln in i.get("lines", []):
+                if not ln.get("given"):
+                    continue
+                body = (ln.get("textEn") or "").strip()
+                if ln.get("answer"):
+                    body = body.replace("___", ln["answer"], 1)
+                if body:
+                    context = _line_prompt(ln.get("who"), body)
+
+            first = True
             for ln in i.get("lines", []):
                 if ln.get("given"):
                     continue
@@ -837,8 +852,11 @@ def _dispatch(t, ex, items):
                     # nuqtani qo'ymaydi. Ilgari bu yerda qo'lda
                     # yozilgani uchun savol ": No, he ___ ." ko'rinishida
                     # chiqardi.
-                    out.append(task(_line_prompt(ln.get("who"), ln["textEn"]), a,
-                                    why=i.get("whyUz", "")))
+                    p = _line_prompt(ln.get("who"), ln["textEn"])
+                    if context and first:
+                        p = context + chr(10) + p
+                        first = False
+                    out.append(task(p, a, why=i.get("whyUz", "")))
             if "lines" not in i and i.get("answer"):
                 out.append(task(_line_prompt(i.get("who"), i["textEn"]), i["answer"],
                                 why=i.get("whyUz", "") or

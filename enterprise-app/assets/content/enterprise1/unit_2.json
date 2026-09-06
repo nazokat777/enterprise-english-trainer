@@ -2245,10 +2245,10 @@
      "kind": "text",
      "tasks": [
       {
-       "prompt": "No, he ___ .   (birinchi bo'sh joy)",
+       "prompt": "Has Pierre got a beard?\nNo, he ___ .",
        "answer": "hasn't",
        "whyUz": "Pierre — bitta erkak → Has. E'londa soqol aytilmagan → hasn't.",
-       "speak": "No, he ___ .",
+       "speak": "Has Pierre got a beard?\nNo, he ___ .",
        "speakAnswer": "hasn't"
       },
       {
@@ -2287,7 +2287,7 @@
        "speakAnswer": "Has"
       },
       {
-       "prompt": "No, he ___ .   (ikkinchi bo'sh joy)",
+       "prompt": "No, he ___ .",
        "answer": "hasn't",
        "whyUz": "Mario e'lonida soqol aytilmagan → hasn't.",
        "speak": "No, he ___ .",
@@ -3954,38 +3954,38 @@
      "kind": "text",
      "tasks": [
       {
-       "prompt": "A: Who is ___ ?",
+       "prompt": "B: My sister, Sarah.\nA: Who is ___ ?",
        "answer": "she",
        "whyUz": "Sarah — ayol → she.",
-       "speak": "A: Who is ___ ?",
+       "speak": "B: My sister, Sarah.\nA: Who is ___ ?",
        "speakAnswer": "she"
       },
       {
-       "prompt": "A: Who is ___ ?",
+       "prompt": "B: My uncle, Bob.\nA: Who is ___ ?",
        "answer": "he",
        "whyUz": "Bob — erkak → he.",
-       "speak": "A: Who is ___ ?",
+       "speak": "B: My uncle, Bob.\nA: Who is ___ ?",
        "speakAnswer": "he"
       },
       {
-       "prompt": "B: ___ are in the kitchen.",
+       "prompt": "A: Where are Steve and Mary?\nB: ___ are in the kitchen.",
        "answer": "They",
        "whyUz": "Ikki kishi → They. Gap boshida katta harf.",
-       "speak": "B: ___ are in the kitchen.",
+       "speak": "A: Where are Steve and Mary?\nB: ___ are in the kitchen.",
        "speakAnswer": "They"
       },
       {
-       "prompt": "A: What is ___ ?",
+       "prompt": "B: A letter from my friend.\nA: What is ___ ?",
        "answer": "it",
        "whyUz": "Xat — narsa → it. Narsa uchun 'What', odam uchun 'Who'.",
-       "speak": "A: What is ___ ?",
+       "speak": "B: A letter from my friend.\nA: What is ___ ?",
        "speakAnswer": "it"
       },
       {
-       "prompt": "A: Are ___ from Canada?",
+       "prompt": "B: No, we're from England.\nA: Are ___ from Canada?",
        "answer": "you",
        "whyUz": "Javob 'we're' — demak savol 'you' (sizlar) haqida.",
-       "speak": "A: Are ___ from Canada?",
+       "speak": "B: No, we're from England.\nA: Are ___ from Canada?",
        "speakAnswer": "you"
       }
      ]

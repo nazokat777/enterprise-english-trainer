@@ -1906,10 +1906,10 @@
      "kind": "text",
      "tasks": [
       {
-       "prompt": "B: No, he ___ . He ___ from Japan.",
+       "prompt": "A: Is he from Mexico?\nB: No, he ___ . He ___ from Japan.",
        "answer": "isn't",
        "whyUz": "Savolda 'he' → Is. Javob inkor: isn't. Keyin tasdiq: he's.",
-       "speak": "B: No, he ___ . He ___ from Japan.",
+       "speak": "A: Is he from Mexico?\nB: No, he ___ . He ___ from Japan.",
        "speakAnswer": "isn't"
       },
       {
@@ -2596,10 +2596,10 @@
      "kind": "text",
      "tasks": [
       {
-       "prompt": "B: ___ 'm 19 years old.",
+       "prompt": "A: How old are you?\nB: ___ 'm 19 years old.",
        "answer": "I",
        "whyUz": "''m' faqat 'I' bilan ishlatiladi.",
-       "speak": "B: ___ 'm 19 years old."
+       "speak": "A: How old are you?\nB: ___ 'm 19 years old."
       },
       {
        "prompt": "A: Who is ___ ?",
@@ -2616,24 +2616,24 @@
        "speakAnswer": "She"
       },
       {
-       "prompt": "B: ___ 's at school.",
+       "prompt": "A: Where is George?\nB: ___ 's at school.",
        "answer": "He",
        "whyUz": "George — erkak ismi → He.",
-       "speak": "B: ___ 's at school.",
+       "speak": "A: Where is George?\nB: ___ 's at school.",
        "speakAnswer": "He"
       },
       {
-       "prompt": "B: Yes, ___ are.",
+       "prompt": "A: Are Julie and Maria sisters?\nB: Yes, ___ are.",
        "answer": "they",
        "whyUz": "Ikki kishi → they. 'are' ham buni tasdiqlaydi.",
-       "speak": "B: Yes, ___ are.",
+       "speak": "A: Are Julie and Maria sisters?\nB: Yes, ___ are.",
        "speakAnswer": "they"
       },
       {
-       "prompt": "B: Yes, ___ is.",
+       "prompt": "A: Is this your book?\nB: Yes, ___ is.",
        "answer": "it",
        "whyUz": "Kitob — narsa → it.",
-       "speak": "B: Yes, ___ is.",
+       "speak": "A: Is this your book?\nB: Yes, ___ is.",
        "speakAnswer": "it"
       },
       {
@@ -2650,31 +2650,31 @@
        "speak": "B: No, ___ 'm not a policeman."
       },
       {
-       "prompt": "B: No, ___ aren't from France.",
+       "prompt": "A: Are Brian and Robert from France?\nB: No, ___ aren't from France.",
        "answer": "they",
        "whyUz": "Ikki kishi → they.",
-       "speak": "B: No, ___ aren't from France.",
+       "speak": "A: Are Brian and Robert from France?\nB: No, ___ aren't from France.",
        "speakAnswer": "they"
       },
       {
-       "prompt": "B: Yes, ___ is.",
+       "prompt": "A: Is Ben a pilot?\nB: Yes, ___ is.",
        "answer": "he",
        "whyUz": "Ben — erkak ismi → he.",
-       "speak": "B: Yes, ___ is.",
+       "speak": "A: Is Ben a pilot?\nB: Yes, ___ is.",
        "speakAnswer": "he"
       },
       {
-       "prompt": "B: No, ___ isn't my friend.",
+       "prompt": "A: Is Lisa your friend?\nB: No, ___ isn't my friend.",
        "answer": "she",
        "whyUz": "Lisa — ayol ismi → she.",
-       "speak": "B: No, ___ isn't my friend.",
+       "speak": "A: Is Lisa your friend?\nB: No, ___ isn't my friend.",
        "speakAnswer": "she"
       },
       {
-       "prompt": "B: ___ is in America.",
+       "prompt": "A: Where is the Statue of Liberty?\nB: ___ is in America.",
        "answer": "It",
        "whyUz": "Haykal — narsa → It. Gap boshida katta harf.",
-       "speak": "B: ___ is in America.",
+       "speak": "A: Where is the Statue of Liberty?\nB: ___ is in America.",
        "speakAnswer": "It"
       }
      ]
@@ -3097,10 +3097,10 @@
      "kind": "text",
      "tasks": [
       {
-       "prompt": "B: No, he ___ . He ___ French.",
+       "prompt": "A: Is he Spanish?\nB: No, he ___ . He ___ French.",
        "answer": "isn't",
        "whyUz": "he → Is / isn't / he's",
-       "speak": "B: No, he ___ . He ___ French.",
+       "speak": "A: Is he Spanish?\nB: No, he ___ . He ___ French.",
        "speakAnswer": "isn't"
       },
       {
@@ -4132,10 +4132,10 @@
      "kind": "text",
      "tasks": [
       {
-       "prompt": "B: ___ 'm from Italy.",
+       "prompt": "A: Where are you from?\nB: ___ 'm from Italy.",
        "answer": "I",
        "whyUz": "''m' faqat I bilan.",
-       "speak": "B: ___ 'm from Italy."
+       "speak": "A: Where are you from?\nB: ___ 'm from Italy."
       },
       {
        "prompt": "A: Who are ___ ?",
@@ -4152,31 +4152,31 @@
        "speakAnswer": "They"
       },
       {
-       "prompt": "B: ___ is eighteen.",
+       "prompt": "A: How old is Margaret?\nB: ___ is eighteen.",
        "answer": "She",
        "whyUz": "Margaret — ayol ismi → She.",
-       "speak": "B: ___ is eighteen.",
+       "speak": "A: How old is Margaret?\nB: ___ is eighteen.",
        "speakAnswer": "She"
       },
       {
-       "prompt": "B: ___ is at the party.",
+       "prompt": "A: Where is John?\nB: ___ is at the party.",
        "answer": "He",
        "whyUz": "John — erkak ismi → He.",
-       "speak": "B: ___ is at the party.",
+       "speak": "A: Where is John?\nB: ___ is at the party.",
        "speakAnswer": "He"
       },
       {
-       "prompt": "B: Yes, ___ are.",
+       "prompt": "A: Are Jane and Tony from London?\nB: Yes, ___ are.",
        "answer": "they",
        "whyUz": "Ikki kishi → they.",
-       "speak": "B: Yes, ___ are.",
+       "speak": "A: Are Jane and Tony from London?\nB: Yes, ___ are.",
        "speakAnswer": "they"
       },
       {
-       "prompt": "B: Yes, ___ is.",
+       "prompt": "A: Is this your umbrella?\nB: Yes, ___ is.",
        "answer": "it",
        "whyUz": "Soyabon — narsa → it.",
-       "speak": "B: Yes, ___ is.",
+       "speak": "A: Is this your umbrella?\nB: Yes, ___ is.",
        "speakAnswer": "it"
       }
      ]
