@@ -18,7 +18,10 @@ String? fillBlank(String example, String word) {
   if (e.isEmpty || t.isEmpty) return null;
   final re = RegExp(r'\b' + RegExp.escape(t) + r'\b', caseSensitive: false);
   if (!re.hasMatch(e)) return null;
-  return e.replaceFirst(re, '_____');
+  // MUHIM: so'z gapda bir necha marta uchrasa, HAMMASI berkitiladi.
+  // Ilgari faqat birinchisi almashtirilardi va javob gapning o'zida
+  // ko'rinib turardi: "I'm _____, Steve Blair."
+  return e.replaceAll(re, '_____');
 }
 
 /// Ko'p tanlovli savol uchun `count` ta noto'g'ri variant tanlaydi.
