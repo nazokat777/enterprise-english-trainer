@@ -316,6 +316,7 @@ def norm_exercise(ex, page):
     kind, tasks = _fix_unbuildable_text(kind, tasks)
     tasks = _strip_answer_uz(kind, tasks)
     tasks = _add_answer_speech(kind, tasks)
+    tasks = _number_repeated_prompts(tasks)
     tasks, dropped = _drop_marker_answers(kind, tasks)
     if dropped:
         base["explanationUz"] = (base["explanationUz"] + "\n\n" + dropped).strip()
@@ -477,6 +478,37 @@ _GLOSS = re.compile(r"\s*\([^)]*\)\s*$")
 def _strip_gloss(s):
     out = _GLOSS.sub("", str(s)).strip()
     return out or str(s)
+
+
+def _number_repeated_prompts(tasks):
+    """Bir gapda BIR NECHTA bo'sh joy bo'lib, javobi ham bir xil bo'lsa,
+    qaysinisi so'ralayotganini ko'rsatadi.
+
+    Kitobda "B: No, I ___ not. I ___ a pilot." kabi gaplar bor: har bir
+    bo'shliq alohida band bo'ladi, savol matni ham, javob ham AYNAN BIR
+    XIL ko'rinadi. O'quvchi ikkinchi marta chiqqanda buni ilovaning
+    xatosi deb o'ylaydi.
+
+    DIQQAT: faqat savol VA javob bir xil bo'lganda. Savoli bir xil,
+    javobi boshqa bandlar (kitobdagi rasmlarga tayanadigan "What
+    nationality are they?" kabi) — bu alohida savollar, ularni
+    raqamlash noto'g'ri bo'lardi.
+    """
+    seen: dict[tuple[str, str], list[int]] = {}
+    for i, t in enumerate(tasks):
+        p = (t.get("prompt") or "").strip()
+        if p:
+            seen.setdefault((p, (t.get("answer") or "").strip()), []).append(i)
+
+    for idxs in seen.values():
+        if len(idxs) < 2:
+            continue
+        # Manbada qo'lda yozilgan yorliqlar bilan bir xil so'z bilan.
+        words = ("birinchi", "ikkinchi", "uchinchi", "to'rtinchi", "beshinchi")
+        for n, i in enumerate(idxs):
+            label = words[n] if n < len(words) else f"{n + 1}-"
+            tasks[i]["prompt"] = f"{tasks[i]['prompt']}   ({label} bo'sh joy)"
+    return tasks
 
 
 def _strip_answer_uz(kind, tasks):
@@ -801,10 +833,14 @@ def _dispatch(t, ex, items):
                     continue
                 ans = ln.get("answers") or ([ln["answer"]] if ln.get("answer") else [])
                 for a in ans:
-                    out.append(task(f"{ln.get('who','')}: {ln['textEn']}", a,
+                    # `_line_prompt` gapiruvchi BO'SH bo'lsa ikki
+                    # nuqtani qo'ymaydi. Ilgari bu yerda qo'lda
+                    # yozilgani uchun savol ": No, he ___ ." ko'rinishida
+                    # chiqardi.
+                    out.append(task(_line_prompt(ln.get("who"), ln["textEn"]), a,
                                     why=i.get("whyUz", "")))
             if "lines" not in i and i.get("answer"):
-                out.append(task(f"{i.get('who','')}: {i['textEn']}", i["answer"],
+                out.append(task(_line_prompt(i.get("who"), i["textEn"]), i["answer"],
                                 why=i.get("whyUz", "") or
                                     i.get("commonMistake", {}).get("whyUz", "")))
         return "text", out
@@ -979,7 +1015,7 @@ def _dispatch(t, ex, items):
         # qilamiz, aks holda mashq jimgina bo'sh chiqadi.
         src = ex.get("example") or ex.get("lines") or []
         return "study", [
-            study(f"{l.get('speaker') or l.get('who', '')}: {l['en']}",
+            study(_line_prompt(l.get("speaker") or l.get("who"), l["en"]),
                   l.get("uz", ""))
             for l in src if l.get("en")
         ]

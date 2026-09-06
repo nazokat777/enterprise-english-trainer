@@ -187,6 +187,12 @@ def check_export() -> list[tuple[str, str]]:
                         out.append(
                             (loc, f"moslashda '{r}' ikki marta — o'yin yechilmaydi")
                         )
+                # Moslashda chap va o'ng bir xil bo'lsa, o'quvchi
+                # o'ylamasdan bosadi — mashq hech nima o'rgatmaydi.
+                if e["kind"] == "match" and len(e["tasks"]) < 2:
+                    out.append((loc, "moslashda bitta juft — tanlov yo'q"))
+
+                seen_tasks: dict[tuple[str, str], int] = {}
                 for i, t in enumerate(e["tasks"]):
                     ans = (t.get("answer") or "").strip().lower()
                     prompt = (t.get("prompt") or "").strip()
@@ -216,6 +222,10 @@ def check_export() -> list[tuple[str, str]]:
                         out.append((loc, f"b{i}: o'zbekcha matn ovozga berilyapti"))
                     if e["kind"] in ("choice", "text") and not prompt:
                         out.append((loc, f"b{i}: savol matni bo'sh"))
+                    # Dialog qatorida gapiruvchi bo'sh bo'lsa, savol
+                    # ": No, he ___ ." ko'rinishida chiqib qolardi.
+                    if prompt.startswith(":") or prompt.startswith(" :"):
+                        out.append((loc, f"b{i}: savol ':' bilan boshlanyapti"))
                     # O'qish bandi bo'sh bo'lsa — ekranda hech nima
                     # ko'rinmaydi. Bu jimgina kontent yo'qotish demak.
                     if e["kind"] == "study" and not (t.get("en") or "").strip():
@@ -236,6 +246,36 @@ def check_export() -> list[tuple[str, str]]:
                     # ko'rinsa, javobni oshkor qiladi.
                     if t.get("answerUz"):
                         out.append((loc, f"b{i}: answerUz o'yinga sizib chiqqan"))
+
+                    # Javob savol matnining ICHIDA turgan bo'lsa, mashq
+                    # soxta: o'quvchi javobni o'ylamasdan ko'chiradi.
+                    if ans and len(ans) > 2 and e["kind"] in ("choice", "text"):
+                        if re.search(rf"{re.escape(ans)}", prompt, re.I):
+                            out.append((loc, f"b{i}: javob savolda ko'rinib turibdi"))
+
+                    # Moslashda chap = o'ng: juftlik o'z-o'zidan ravshan.
+                    #
+                    # Kitob oxiridagi LUG'AT ro'yxatlari (unit >= 900)
+                    # bundan mustasno: u yerda "park", "bank", "opera"
+                    # kabi o'zlashma so'zlar bor va ularning o'zbekchasi
+                    # ROSTDAN ham inglizchasi bilan bir xil. Buni
+                    # o'zgartirish kitobni buzish bo'lardi.
+                    if e["kind"] == "match" and d["unit"] < 900:
+                        lf = (t.get("left") or "").strip().lower()
+                        rt = (t.get("right") or "").strip().lower()
+                        if lf and lf == rt:
+                            out.append((loc, f"b{i}: moslashda chap = o'ng"))
+
+                    # Bir xil savol+javob ikki marta — vaqtni oladi,
+                    # yangi narsa o'rgatmaydi.
+                    if prompt:
+                        key = (prompt.lower(), ans)
+                        if key in seen_tasks:
+                            out.append(
+                                (loc, f"b{i}: b{seen_tasks[key]} bilan bir xil")
+                            )
+                        else:
+                            seen_tasks[key] = i
     return out
 
 
