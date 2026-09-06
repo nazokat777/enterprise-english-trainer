@@ -8,6 +8,8 @@ import 'package:enterprise_english/main.dart' as app;
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/shell.dart';
 import 'package:enterprise_english/screens/book/conversations_screen.dart';
+import 'package:enterprise_english/screens/help_screen.dart';
+import 'package:enterprise_english/screens/settings_screen.dart';
 
 /// TELEFONDA yuqori panel ilgari ekrandan CHIQIB KETARDI: 375px kenglikda
 /// Flutter "RIGHT OVERFLOWED BY 47 PIXELS" sariq-qora chizig'ini chizardi.
@@ -69,6 +71,18 @@ void main() {
     await t.tap(find.text('Suhbatlar').first);
     await t.pump();
     expect(find.byType(ConversationsScreen), findsOneWidget);
+
+    // Menyuda bo'sh ("keyingi fazalarda") band QOLMASIN.
+    await t.tap(find.text('Sozlamalar').first);
+    await t.pump();
+    expect(find.byType(SettingsScreen), findsOneWidget);
+
+    await t.tap(find.text('Yordam').first);
+    await t.pump();
+    expect(find.byType(HelpScreen), findsOneWidget);
+
+    // "Chiqish" olib tashlangan: ilovada hisob yo'q edi.
+    expect(find.text('Chiqish'), findsNothing);
   });
 
   testWidgets('kontenti yo\'q daraja tanlanmaydi', (t) async {

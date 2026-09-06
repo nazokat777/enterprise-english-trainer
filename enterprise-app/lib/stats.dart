@@ -174,6 +174,28 @@ class Progress extends ChangeNotifier {
     return true;
   }
 
+  /// Butun jarayonni boshidan boshlash.
+  ///
+  /// Sozlamalarda kerak: oiladagi boshqa odam ilovani noldan
+  /// boshlamoqchi bo'lsa, brauzer xotirasini qo'lda tozalashdan
+  /// boshqa yo'l yo'q edi.
+  Future<void> resetAll() async {
+    final p = await SharedPreferences.getInstance();
+    await p.clear();
+    xp = 0;
+    coins = 0;
+    todayXp = 0;
+    currentStreak = 0;
+    longestStreak = 0;
+    streakFreezeCount = 0;
+    // null = hali hech qachon ishlatilmagan; load() shunga qaraydi.
+    lastActiveDate = null;
+    completed.clear();
+    needsReview.clear();
+    srsMap.clear();
+    notifyListeners();
+  }
+
   // --- SM-2 so'z takrorlash ---
   WordSrs srsFor(String wordId) =>
       srsMap.putIfAbsent('$currentLevel::$wordId', () => WordSrs());

@@ -7,6 +7,8 @@ import 'level_reference_screens.dart';
 import 'units_screen.dart';
 import 'book/book_screens.dart';
 import 'book/conversations_screen.dart';
+import 'help_screen.dart';
+import 'settings_screen.dart';
 
 /// Ilova qobig'i — chap sidebar + header (retention indikatorlari).
 /// Keng ekranda doimiy sidebar, tor ekranda drawer.
@@ -29,7 +31,9 @@ class _AppShellState extends State<AppShell> {
     (Icons.forum_rounded, 'Suhbatlar'),
     (Icons.settings_rounded, 'Sozlamalar'),
     (Icons.help_outline_rounded, 'Yordam'),
-    (Icons.logout_rounded, 'Chiqish'),
+    // "Chiqish" olib tashlandi: ilovada hisob (login) yo'q, hamma
+    // narsa shu brauzerda saqlanadi — tugma hech nima qilmasdi.
+    // Ma'lumotni o'chirish endi Sozlamalarda.
   ];
 
   @override
@@ -162,6 +166,10 @@ class _AppShellState extends State<AppShell> {
         return const LevelWordFormationScreen(); // so'z oilalari
       case 5:
         return const ConversationsScreen(); // kitobdagi barcha dialoglar
+      case 6:
+        return const SettingsScreen();
+      case 7:
+        return const HelpScreen();
       default:
         return _Placeholder(title: _items[_sel].$2);
     }
