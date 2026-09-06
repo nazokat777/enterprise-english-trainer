@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:enterprise_english/book_content.dart';
 import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
+import 'package:enterprise_english/mastery.dart';
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/book/book_screens.dart';
 import 'package:enterprise_english/screens/book/exercise_player.dart';
@@ -18,10 +19,10 @@ void main() {
   setUp(() async {
     SharedPreferences.setMockInitialValues({});
     app.progress = Progress();
+    app.mastery = MasteryStore();
     app.repo = ContentRepository();
     app.book = BookRepository();
-    await Future.wait(
-        [app.progress.load(), app.repo.load(), app.book.loadIndex()]);
+    await Future.wait([app.mastery.load(), app.progress.load(), app.repo.load(), app.book.loadIndex()]);
   });
 
   Future<void> pump(WidgetTester t) async {

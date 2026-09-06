@@ -328,6 +328,7 @@ class _LevelSwitcher extends StatelessWidget {
       onSelected: (lvl) async {
         await progress.setLevel(lvl);
         await book.setLevel(lvl);
+        mastery.setLevel(lvl);
         if (context.mounted) (context as Element).markNeedsBuild();
       },
       itemBuilder: (_) => [

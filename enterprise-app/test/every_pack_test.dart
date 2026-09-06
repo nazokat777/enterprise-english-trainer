@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
+import 'package:enterprise_english/mastery.dart';
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/pack/pack_flow.dart';
 import 'package:enterprise_english/srs.dart';
@@ -23,8 +24,9 @@ void main() {
   setUpAll(() async {
     SharedPreferences.setMockInitialValues({});
     app.progress = Progress();
+    app.mastery = MasteryStore();
     app.repo = ContentRepository();
-    await Future.wait([app.progress.load(), app.repo.load()]);
+    await Future.wait([app.mastery.load(), app.progress.load(), app.repo.load()]);
   });
 
   Future<List<String>> sweep(WidgetTester t, Size size,

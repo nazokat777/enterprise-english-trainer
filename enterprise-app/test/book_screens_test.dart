@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:enterprise_english/book_content.dart';
 import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
+import 'package:enterprise_english/mastery.dart';
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/book/book_screens.dart';
 import 'package:enterprise_english/screens/book/exercise_player.dart';
@@ -78,11 +79,12 @@ void main() {
   setUpAll(() async {
     SharedPreferences.setMockInitialValues({});
     app.progress = Progress();
+    app.mastery = MasteryStore();
     // Mashq ekrani xato qilingan so'zni lug'at bilan solishtiradi,
     // shuning uchun repozitoriy ham kerak (haqiqiy ilovada u main()
     // da doim tayyorlanadi).
     app.repo = ContentRepository();
-    await Future.wait([app.progress.load(), app.repo.load()]);
+    await Future.wait([app.mastery.load(), app.progress.load(), app.repo.load()]);
     unit = BookUnit.fromJson(json.decode(_unitJson) as Map<String, dynamic>);
   });
 

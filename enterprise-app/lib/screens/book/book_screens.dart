@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../book_content.dart';
+import '../../drill/drill_item.dart';
+import '../../drill/drill_screen.dart';
 import '../../main.dart';
 import '../../theme.dart';
 import '../../widgets/entrance.dart';
@@ -166,6 +168,77 @@ class _ContinueBanner extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// "Darsni o'zlashtirish" tugmasi — Dars ustasi seansini boshlaydi.
+class _MasterButton extends StatelessWidget {
+  final BookUnit unit;
+  const _MasterButton({required this.unit});
+
+  Future<void> _start(BuildContext context) async {
+    final lessonSrc = sourcesFromUnit(unit);
+    if (lessonSrc.isEmpty) return;
+
+    // ARALASh bosqich uchun shu darsGAChA bo'lgan darslar.
+    final earlier = <DrillSource>[];
+    for (final b in book.units) {
+      if (b.unit >= unit.unit) continue;
+      final u = await book.load(b.unit);
+      if (u != null) earlier.addAll(sourcesFromUnit(u));
+    }
+    if (!context.mounted) return;
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => DrillScreen(
+          title: '${unit.displayLabel} — o\'zlashtirish',
+          lessonSources: lessonSrc,
+          earlierSources: earlier,
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final ids = sourcesFromUnit(unit).map((e) => e.itemId).toList();
+    final pct = (mastery.ratio(ids) * 100).round();
+    return Column(
+      children: [
+        Pressable3D(
+          color: AppColors.success,
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+          onPressed: () => _start(context),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.psychology_rounded,
+                  color: Colors.white, size: 22),
+              const SizedBox(width: 10),
+              Flexible(
+                child: Text(
+                    pct >= 100
+                        ? 'Darsni takrorlash (100%)'
+                        : 'Darsni o\'zlashtirish ($pct%)',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                        fontSize: 16)),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          '100% to\'g\'ri javob bergunicha savollar qayta-qayta keladi, '
+          'so\'ng oldingi darslar bilan aralash takror.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+        ),
+      ],
     );
   }
 }
@@ -347,7 +420,14 @@ class BookUnitScreen extends StatelessWidget {
           children: [
             _summary(context),
             const SizedBox(height: 16),
-            // ASOSIY tugma — kitobni betma-bet ko'rish.
+            // ENG ASOSIY tugma — darsni o'zlashtirish seansi.
+            //
+            // Betma-bet ko'rish "o'qish", bu esa "o'rganish": dars
+            // 100% o'zlashtirilgunicha savollar takrorlanadi, so'ng
+            // oldingi darslar bilan aralash takror.
+            _MasterButton(unit: unit),
+            const SizedBox(height: 10),
+            // Kitobni betma-bet ko'rish.
             Pressable3D(
               color: AppColors.actionBlue,
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),

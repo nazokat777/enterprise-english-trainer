@@ -6,6 +6,7 @@ import 'package:enterprise_english/book_content.dart';
 import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/levels.dart';
 import 'package:enterprise_english/main.dart' as app;
+import 'package:enterprise_english/mastery.dart';
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/shell.dart';
 
@@ -21,9 +22,11 @@ void main() {
   setUp(() async {
     SharedPreferences.setMockInitialValues({});
     app.progress = Progress();
+    app.mastery = MasteryStore();
     app.repo = ContentRepository();
     app.book = BookRepository();
     await Future.wait([
+      app.mastery.load(),
       app.progress.load(),
       app.repo.load(),
       app.book.loadIndex(),
