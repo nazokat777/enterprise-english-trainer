@@ -11,6 +11,8 @@ import 'package:enterprise_english/screens/book/book_screens.dart';
 import 'package:enterprise_english/screens/book/exercise_player.dart';
 import 'package:enterprise_english/screens/book/reference_screens.dart';
 import 'package:enterprise_english/screens/book/review_screen.dart';
+import 'package:enterprise_english/screens/book/conversations_screen.dart';
+import 'package:enterprise_english/screens/help_screen.dart';
 
 /// Ilova asosan TELEFONDA ishlatiladi. Bu yerda har bir asosiy ekran
 /// 375x812 (iPhone) va 320x640 (eng tor android) o'lchamida chiziladi va
@@ -127,6 +129,11 @@ void main() {
     'gap qoliplari': () => SentencePatternsScreen(unit: unit),
     'lug\'at ekrani': () => UnitVocabularyScreen(unit: unit),
     'takrorlash ro\'yxati': () => const ReviewScreen(),
+    // Yangi ekranlar ham tor telefonda tekshirilsin — sidebar
+    // bandini uzaytirish bir marta 44px overflow keltirgan edi.
+    'suhbatlar': () => const ConversationsScreen(),
+    'yordam': () => const HelpScreen(),
+    'darslar ro\'yxati': () => const BookUnitsScreen(),
   };
 
   for (final entry in screens.entries) {

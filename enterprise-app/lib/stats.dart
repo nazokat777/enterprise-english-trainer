@@ -68,6 +68,14 @@ class Progress extends ChangeNotifier {
     lastUnitNo = p.getInt('lastUnitNo') ?? 0;
     lastExerciseId = p.getString('lastExerciseId') ?? '';
     lastLabel = p.getString('lastLabel') ?? '';
+    unitDone.clear();
+    final ud = p.getString('unitDone');
+    if (ud != null && ud.isNotEmpty) {
+      (json.decode(ud) as Map).forEach((k, v) {
+        final n = int.tryParse(k as String);
+        if (n != null) unitDone[n] = (v as num).toInt();
+      });
+    }
     lastActiveDate = p.getString('lastActive');
     dailyGoal = p.getInt('dailyGoal') ?? 20;
     todayXp = p.getInt('todayXp') ?? 0;
@@ -213,6 +221,7 @@ class Progress extends ChangeNotifier {
     lastUnitNo = 0;
     lastExerciseId = '';
     lastLabel = '';
+    unitDone.clear();
     // null = hali hech qachon ishlatilmagan; load() shunga qaraydi.
     lastActiveDate = null;
     completed.clear();
@@ -300,8 +309,22 @@ class Progress extends ChangeNotifier {
 
   /// Mashq yakuni: xatosiz o'tilgan bo'lsa ro'yxatdan chiqadi, aks
   /// holda "takrorlash kerak" bo'lib qoladi.
-  Future<void> markExerciseResult(String id, {required bool clean}) async {
+  /// Har bir unitda nechta mashq tugatilgani.
+  ///
+  /// Unit kartochkasida "12 / 57 mashq" ko'rsatish uchun. Buni
+  /// hisoblashning boshqa yo'li — HAMMA unitni yuklab, har bir
+  /// mashqni tekshirish; ro'yxat ekranida bu sekin bo'lardi.
+  final Map<int, int> unitDone = {};
+
+  int doneInUnit(int unit) => unitDone[unit] ?? 0;
+
+  Future<void> markExerciseResult(String id,
+      {required bool clean, int unit = 0}) async {
     final key = '$currentLevel::$id';
+    // Faqat BIRINCHI marta tugatilganda sanaymiz.
+    if (unit > 0 && !completed.contains(key)) {
+      unitDone[unit] = (unitDone[unit] ?? 0) + 1;
+    }
     completed.add(key);
     if (clean) {
       needsReview.remove(key);
@@ -323,6 +346,8 @@ class Progress extends ChangeNotifier {
     await p.setInt('lastUnitNo', lastUnitNo);
     await p.setString('lastExerciseId', lastExerciseId);
     await p.setString('lastLabel', lastLabel);
+    await p.setString('unitDone',
+        json.encode(unitDone.map((k, v) => MapEntry('$k', v))));
     if (lastActiveDate != null) await p.setString('lastActive', lastActiveDate!);
     await p.setInt('dailyGoal', dailyGoal);
     await p.setInt('todayXp', todayXp);

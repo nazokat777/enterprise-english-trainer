@@ -159,7 +159,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     // Xatosiz o'tilganda mashq O'ZLAShTIRILGAN hisoblanadi. Aks holda
     // u "takrorlash kerak" bo'lib qoladi va ro'yxatda shunday
     // ko'rsatiladi — bir marta ochib chiqish yetarli emas.
-    progress.markExerciseResult(id, clean: _misses.isEmpty);
+    progress.markExerciseResult(id,
+        clean: _misses.isEmpty, unit: ex.unitNo);
     if (first) {
       progress.addXp(3); // mashqni tugatgani uchun bonus
       _xp += 3;

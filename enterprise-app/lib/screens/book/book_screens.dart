@@ -231,6 +231,9 @@ class _UnitCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
+    final done = progress.doneInUnit(brief.unit);
+    final ratio =
+        brief.exercises == 0 ? 0.0 : (done / brief.exercises).clamp(0.0, 1.0);
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: Material(
@@ -291,6 +294,28 @@ class _UnitCard extends StatelessWidget {
                           '${brief.sections} bo\'lim · ${brief.exercises} mashq · ${brief.tasks} band',
                           style: TextStyle(
                               fontSize: 12.5, color: AppColors.muted(context))),
+                      // Nechta mashq tugatilgani — ilgari o\'quvchi
+                      // unitni ochmasdan buni bilolmasdi.
+                      if (done > 0) ...[
+                        const SizedBox(height: 7),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(4),
+                          child: LinearProgressIndicator(
+                            value: ratio,
+                            minHeight: 5,
+                            backgroundColor: AppColors.brandPurple
+                                .withValues(alpha: 0.15),
+                            valueColor: const AlwaysStoppedAnimation(
+                                AppColors.brandPurple),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text('$done / ${brief.exercises} mashq tugatildi',
+                            style: const TextStyle(
+                                fontSize: 11.5,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.brandPurple)),
+                      ],
                     ],
                   ),
                 ),
