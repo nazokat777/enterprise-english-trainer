@@ -238,6 +238,10 @@ class Progress extends ChangeNotifier {
 
   bool isDone(String id) => completed.contains('$currentLevel::$id');
 
+  /// Takrorlash kerak bo'lgan mashqlar soni (joriy daraja).
+  int needsReviewCount() =>
+      needsReview.where((k) => k.startsWith('$currentLevel::')).length;
+
   /// Mashq TAKRORLAShNI talab qiladimi (xato bilan tugatilgan).
   bool needsRepeat(String id) => needsReview.contains('$currentLevel::$id');
 

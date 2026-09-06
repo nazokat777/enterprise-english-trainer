@@ -214,4 +214,33 @@ void main() {
       expect(p.hardWordIds(), ['w1']);
     });
   });
+
+  group('Progress — takrorlash ro\'yxati soni', () {
+    test('faqat joriy darajaning mashqlari sanaladi', () async {
+      final p = Progress();
+      await p.load();
+
+      await p.markExerciseResult('ex::cb::7::5', clean: false);
+      await p.markExerciseResult('ex::cb::7::6', clean: false);
+      await p.markExerciseResult('ex::cb::7::7', clean: true);
+      expect(p.needsReviewCount(), 2);
+
+      await p.setLevel('elementary');
+      expect(p.needsReviewCount(), 0);
+
+      await p.setLevel('beginner');
+      expect(p.needsReviewCount(), 2);
+    });
+
+    test('xatosiz qayta o\'tilsa son kamayadi', () async {
+      final p = Progress();
+      await p.load();
+
+      await p.markExerciseResult('ex::cb::7::5', clean: false);
+      expect(p.needsReviewCount(), 1);
+
+      await p.markExerciseResult('ex::cb::7::5', clean: true);
+      expect(p.needsReviewCount(), 0);
+    });
+  });
 }

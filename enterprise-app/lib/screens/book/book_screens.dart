@@ -8,6 +8,7 @@ import '../../widgets/pressable3d.dart';
 import 'book_page_viewer.dart';
 import 'exercise_player.dart';
 import 'reference_screens.dart';
+import 'review_screen.dart';
 
 /// Bo'lim turiga mos rang va belgi.
 ///
@@ -73,12 +74,73 @@ class BookUnitsScreen extends StatelessWidget {
                     fontSize: 13, color: AppColors.muted(context))),
           ),
           const SizedBox(height: 20),
+          // Xato bilan tugatilgan mashqlar bir joyda — aks holda
+          // "takrorlash kerak" belgisini 1545 mashq orasidan qidirish
+          // kerak bo'lardi va u amalda hech kimga ko'rinmasdi.
+          if (progress.needsReviewCount() > 0) ...[
+            EntranceFade(child: _ReviewBanner(count: progress.needsReviewCount())),
+            const SizedBox(height: 16),
+          ],
           for (var i = 0; i < units.length; i++)
             EntranceFade(
               delay: Duration(milliseconds: 60 * i),
               child: _UnitCard(brief: units[i]),
             ),
         ],
+      ),
+    );
+  }
+}
+
+/// Takrorlash kerak bo'lgan mashqlarga tez o'tish.
+class _ReviewBanner extends StatelessWidget {
+  final int count;
+  const _ReviewBanner({required this.count});
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppColors.homework.withValues(alpha: 0.12),
+      borderRadius: BorderRadius.circular(AppRadius.lg),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => Scaffold(
+              appBar: AppBar(title: const Text('Takrorlash kerak')),
+              body: const ReviewScreen(),
+            ),
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Row(
+            children: [
+              const Icon(Icons.replay_rounded,
+                  color: AppColors.homework, size: 24),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Takrorlash kerak',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 15,
+                            color: AppColors.homework)),
+                    const SizedBox(height: 2),
+                    Text('$count ta mashq xato bilan tugatilgan',
+                        style: TextStyle(
+                            fontSize: 12.5, color: AppColors.muted(context))),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded,
+                  color: AppColors.homework),
+            ],
+          ),
+        ),
       ),
     );
   }

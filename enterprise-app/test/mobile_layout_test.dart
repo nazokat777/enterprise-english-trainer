@@ -10,6 +10,7 @@ import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/book/book_screens.dart';
 import 'package:enterprise_english/screens/book/exercise_player.dart';
 import 'package:enterprise_english/screens/book/reference_screens.dart';
+import 'package:enterprise_english/screens/book/review_screen.dart';
 
 /// Ilova asosan TELEFONDA ishlatiladi. Bu yerda har bir asosiy ekran
 /// 375x812 (iPhone) va 320x640 (eng tor android) o'lchamida chiziladi va
@@ -88,7 +89,10 @@ void main() {
   setUpAll(() async {
     SharedPreferences.setMockInitialValues({});
     app.progress = Progress();
-    await app.progress.load();
+    // Takrorlash ro'yxati barcha unitlarni kitob repozitoriysidan
+    // o'qiydi (haqiqiy ilovada u main() da tayyorlanadi).
+    app.book = BookRepository();
+    await Future.wait([app.progress.load(), app.book.loadIndex()]);
   });
 
   /// Ekranni berilgan o'lchamda chizadi va overflow bo'lmaganini tekshiradi.
@@ -122,6 +126,7 @@ void main() {
     'so\'z yasalishi': () => WordFormationScreen(unit: unit),
     'gap qoliplari': () => SentencePatternsScreen(unit: unit),
     'lug\'at ekrani': () => UnitVocabularyScreen(unit: unit),
+    'takrorlash ro\'yxati': () => const ReviewScreen(),
   };
 
   for (final entry in screens.entries) {
