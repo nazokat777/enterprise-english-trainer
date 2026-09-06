@@ -10,6 +10,7 @@ import 'package:enterprise_english/screens/level_reference_screens.dart';
 import 'package:enterprise_english/screens/units_screen.dart';
 import 'package:enterprise_english/screens/unit_screen.dart';
 import 'package:enterprise_english/screens/pack/pack_flow.dart';
+import 'package:enterprise_english/srs.dart';
 import 'package:enterprise_english/screens/homework/homework_flow.dart';
 
 /// Lug'at (SRS) va uy vazifasi oqimlari — telefon o'lchamida.
@@ -134,4 +135,57 @@ void main() {
       await expectFits(t, e.value(), phone, scale: 1.5);
     });
   }
+
+  // XATO: moslash raundida xato urinish HECH QAYERDA hisoblanmasdi.
+  // So'zni bir necha marta xato moslab, oxirida topsangiz ham u
+  // "yaxshi bilinadi" deb yozilardi va "Qiyin so'zlar" ro'yxatiga
+  // hech qachon tushmasdi.
+  testWidgets('moslashdagi xato so\'zni qiyin deb belgilaydi', (t) async {
+    final reviewed = <String, Quality>{};
+    await expectFits(
+        t,
+        MatchStage(
+          words: _words,
+          onReview: (w, q) async => reviewed[w.id] = q,
+          onDone: () {},
+        ),
+        const Size(800, 900));
+
+    // "grandmother" tanlanadi, lekin NOTO'G'RI ma'no bosiladi.
+    await t.tap(find.text('grandmother').first);
+    await t.pump();
+    await t.tap(find.text('muzlatkich').first);
+    await t.pump(const Duration(milliseconds: 600));
+
+    expect(app.progress.srsFor('w1').lapses, 1,
+        reason: 'xato urinish so\'zning unutishlar tarixiga yozilsin');
+
+    // Endi to'g'ri moslansa ham, so'z "oson" emas — QIYIN deb yoziladi.
+    await t.tap(find.text('grandmother').first);
+    await t.pump();
+    await t.tap(find.text('buvi').first);
+    await t.pump(const Duration(milliseconds: 600));
+
+    expect(reviewed['w1'], Quality.hard);
+  });
+
+  testWidgets('xatosiz moslash so\'zni qiyin qilmaydi', (t) async {
+    final reviewed = <String, Quality>{};
+    await expectFits(
+        t,
+        MatchStage(
+          words: _words,
+          onReview: (w, q) async => reviewed[w.id] = q,
+          onDone: () {},
+        ),
+        const Size(800, 900));
+
+    await t.tap(find.text('grandmother').first);
+    await t.pump();
+    await t.tap(find.text('buvi').first);
+    await t.pump(const Duration(milliseconds: 600));
+
+    expect(reviewed['w1'], Quality.good);
+    expect(app.progress.srsFor('w1').lapses, 0);
+  });
 }

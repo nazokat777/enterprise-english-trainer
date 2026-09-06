@@ -393,6 +393,14 @@ class _MatchStageState extends State<MatchStage> {
   final Set<String> _matched = {};
   String? _wrongId;
 
+  /// Qaysi so'zda xato moslash bo'lgan.
+  ///
+  /// XATO: ilgari xato urinish HECH QAYERDA hisobga olinmasdi — so'zni
+  /// besh marta xato moslab, oltinchisida topsangiz ham u "yaxshi
+  /// bilinadi" deb yozilardi. Shu sababli "Qiyin so'zlar" ro'yxatiga
+  /// aynan yodlanmayotgan so'zlar tushmasdi.
+  final Set<String> _missed = {};
+
   @override
   void initState() {
     super.initState();
@@ -403,12 +411,13 @@ class _MatchStageState extends State<MatchStage> {
   Future<void> _tapRight(Word r) async {
     if (_selLeft == null || _matched.contains(r.id)) return;
     if (_selLeft == r.id) {
+      final missed = _missed.contains(r.id);
       setState(() {
         _matched.add(r.id);
         _selLeft = null;
       });
       final w = widget.words.firstWhere((e) => e.id == r.id);
-      await widget.onReview(w, Quality.good);
+      await widget.onReview(w, missed ? Quality.hard : Quality.good);
       Tts.instance.speak(w.en, id: w.id);
       if (_matched.length == widget.words.length) {
         Future.delayed(const Duration(milliseconds: 500), () {
@@ -416,7 +425,14 @@ class _MatchStageState extends State<MatchStage> {
         });
       }
     } else {
-      setState(() => _wrongId = r.id);
+      // Xato TANLANGAN so'zga yoziladi (bosilganiga emas) — o'quvchi
+      // aynan o'sha so'zning ma'nosini bilmayapti.
+      final missedId = _selLeft!;
+      progress.recordMiss(missedId);
+      setState(() {
+        _missed.add(missedId);
+        _wrongId = r.id;
+      });
       Future.delayed(const Duration(milliseconds: 400), () {
         if (mounted) setState(() => _wrongId = null);
       });

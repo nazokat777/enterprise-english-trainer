@@ -31,9 +31,25 @@ class UnitsScreen extends StatelessWidget {
       itemCount: c.units.length + 1,
       itemBuilder: (context, i) {
         if (i == 0) {
+          // Sarlavha "Darslar" edi — menyudagi KITOB bo'limi ham
+          // shunday nomlanadi, shuning uchun o'quvchi qayerdaligini
+          // bilmasdi. Bu ekran lug'at (so'z yodlash) bo'limi.
           return Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: Text('Darslar', style: AppTheme.heading(context)),
+            padding: const EdgeInsets.only(bottom: 4),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Lug\'at', style: AppTheme.heading(context)),
+                const SizedBox(height: 2),
+                Text(
+                  'So\'zlarni takrorlash bilan yodlash — har bir unit '
+                  'uchun alohida paketlar',
+                  style: TextStyle(
+                      fontSize: 12.5, color: AppColors.muted(context)),
+                ),
+                const SizedBox(height: 10),
+              ],
+            ),
           );
         }
         final unit = c.units[i - 1];
