@@ -15,6 +15,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from ingest.export_assets import (  # noqa: E402
     _is_verb_form,
     _norm_en,
+    is_good_example,
+    pick_example,
     pick_gloss,
 )
 
@@ -58,6 +60,32 @@ def test_artikl_hisobga_olinmaydi():
 
 def test_kitobda_yoq_soz_tegilmaydi():
     assert pick_gloss("kompyuter", [], "computer") == "kompyuter"
+
+
+def test_misol_gap_sifati():
+    """Misol gap toza, tugallangan va grammatika izohi bo'lmasligi kerak."""
+    assert is_good_example("Can you spell the street name, please?")
+    assert is_good_example("Big fish eat little fish.")
+    # OCR chiqindisi
+    assert not is_good_example("9 IN ccssiccevccsve my friend.")
+    assert not is_good_example("Mary?/study Where's Mary?")
+    # tugallanmagan
+    assert not is_good_example("We form the present simple with the subject")
+    # grammatika izohi — o'quvchiga misol emas
+    assert not is_good_example("We use a/an before singular nouns.")
+    assert not is_good_example("Adverbs usually describe verbs.")
+    # juda qisqa / juda uzun
+    assert not is_good_example("He runs.")
+
+
+def test_misol_kitobdan_tanlanadi():
+    pool = ["He is going to visit his friends.",
+            "You must also visit Canada Place and the old town today."]
+    # eng qisqasi olinadi
+    assert pick_example("visit", pool, "") == "He is going to visit his friends."
+    # so'z topilmasa — eskisi faqat toza bo'lsa qoladi
+    assert pick_example("zebra", pool, "A zebra is black and white.") ==         "A zebra is black and white."
+    assert pick_example("zebra", pool, "9 IN ccss my friend.") == ""
 
 
 if __name__ == "__main__":

@@ -172,14 +172,79 @@ def pick_gloss(machine_uz: str, book_options: list[str],
     return max(same_form, key=lambda o: (_stem_overlap(machine_uz, o), -len(o)))
 
 
+# ─────────────── Misol gaplar — kitobning tekshirilgan matni ───────────────
+#
+# Misollar OCR chiqindisidan olinardi va 291 tadan atigi 63 tasi toza edi:
+#   study  -> "Mary?/study Where's Mary? She's in the study."
+#   sister -> "9 IN ccssiccevccsve my friend. She isn't my sister."
+#   park   -> "Liberty House, New Greenham Park, Newbury, Berkshire RG19 6HW"
+#
+# Endi misol kitobning DARS betlaridagi tekshirilgan gaplardan olinadi.
+_EX_ALLOWED = set("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                  "0123456789 .,?!:;()-" + chr(39) + chr(34))
+_EX_JUNK = re.compile(r"\d\)|\.\.\.|_{2,}|\|")
+_EX_CONS = re.compile(r"\b[bcdfghjklmnpqrstvwxz]{4,}\b", re.I)
+# Grammatika izohi — o'quvchiga misol emas, qoida matni.
+_EX_META = re.compile(r"^(We use|We form|We can use|Adverbs|Adjectives|Nouns|Verbs)\b")
+
+
+def is_good_example(s: str, lo: int = 4, hi: int = 16) -> bool:
+    s = (s or "").strip()
+    if not s or not (lo <= len(s.split()) <= hi):
+        return False
+    if not s[:1].isupper() or s[-1:] not in ".!?":
+        return False
+    if any(ch not in _EX_ALLOWED for ch in s):
+        return False
+    return not (_EX_JUNK.search(s) or _EX_CONS.search(s) or _EX_META.search(s))
+
+
+def load_book_examples() -> list:
+    """Dars betlaridagi toza inglizcha gaplar.
+
+    Kirish qismi, mundarija va o'qituvchiga mo'ljallangan bo'limlar
+    (unit >= 800) chiqarib tashlanadi.
+    """
+    out = set()
+
+    def walk(o):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                if k == "en" and isinstance(v, str):
+                    out.add(v.strip())
+                else:
+                    walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+
+    for f in sorted((TRAINER / "data" / "pages").glob("*/p*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        if (d.get("unit") or 0) >= 800:
+            continue
+        walk(d)
+    return [s for s in out if is_good_example(s)]
+
+
+def pick_example(word: str, pool: list, current: str) -> str:
+    """So'zga mos, kitobdan olingan eng qisqa toza gap."""
+    pat = re.compile(r"\b" + re.escape(word.strip().lower()) + r"\b", re.I)
+    cand = [s for s in pool if pat.search(s)]
+    if cand:
+        return min(cand, key=lambda s: (len(s.split()), len(s)))
+    return current if is_good_example(current) else ""
+
+
 def module_key(module: str) -> int:
     return MODULE_ORDER.index(module) if module in MODULE_ORDER else 99
 
 
-def build_level(structured: dict, book: dict | None = None) -> dict:
+def build_level(structured: dict, book: dict | None = None,
+                examples: list | None = None) -> dict:
     """structured.json dan 4 ta asset strukturasini yasaydi."""
     vocab = structured.get("vocabulary", [])
     book = book or {}
+    examples = examples or []
     # words.json
     words = []
     for v in vocab:
@@ -191,7 +256,8 @@ def build_level(structured: dict, book: dict | None = None) -> dict:
             "id": v["id"],
             "en": v["en"],
             "uz": uz,
-            "example": clean_example(v.get("example", "")),
+            "example": pick_example(v["en"], examples,
+                                    clean_example(v.get("example", ""))),
             "module": v.get("module", ""),
             "freq": v.get("freq", 0.0),
             "pos": (v.get("pos") or "").replace("—", "").strip(),
@@ -284,8 +350,10 @@ def main() -> None:
     if structured_path.exists():
         structured = json.loads(structured_path.read_text(encoding="utf-8"))
         book = load_book_glosses()
-        data = build_level(structured, book)
-        print(f"[beginner] kitob lug'ati: {len(book)} so'z")
+        examples = load_book_examples()
+        data = build_level(structured, book, examples)
+        print(f"[beginner] kitob lug'ati: {len(book)} so'z, "
+              f"{len(examples)} namuna gap")
         write_level("beginner", data)
         print(f"[beginner] words={len(data['words']['words'])} "
               f"units={len(data['units']['units'])} "
