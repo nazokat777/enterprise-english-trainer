@@ -178,6 +178,30 @@ class Progress extends ChangeNotifier {
         .length;
   }
 
+  /// QIYIN so'zlar — o'quvchi qayta-qayta unutayotganlari.
+  ///
+  /// Eng qiyinidan boshlab tartiblanadi. Ro'yxat "qaysi so'z ustida
+  /// qo'shimcha ishlash kerak" degan savolga javob beradi.
+  List<String> hardWordIds({int limit = 50}) {
+    final prefix = '$currentLevel::';
+    final hard = srsMap.entries
+        .where((e) => e.key.startsWith(prefix) && e.value.isHard)
+        .toList()
+      ..sort((a, b) => b.value.difficulty.compareTo(a.value.difficulty));
+    return hard
+        .take(limit)
+        .map((e) => e.key.substring(prefix.length))
+        .toList();
+  }
+
+  /// Qiyin so'zlar soni — ekranda ko'rsatish uchun.
+  int hardCount() {
+    final prefix = '$currentLevel::';
+    return srsMap.entries
+        .where((e) => e.key.startsWith(prefix) && e.value.isHard)
+        .length;
+  }
+
   /// So'zga javob berildi: SM-2 yangilanadi + baho bo'yicha XP.
   Future<void> reviewWord(String wordId, Quality q,
       {Skill skill = Skill.vocab}) async {

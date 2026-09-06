@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
 import 'package:enterprise_english/stats.dart';
+import 'package:enterprise_english/screens/hard_words_screen.dart';
 import 'package:enterprise_english/screens/level_reference_screens.dart';
 import 'package:enterprise_english/screens/units_screen.dart';
 import 'package:enterprise_english/screens/unit_screen.dart';
@@ -92,6 +93,7 @@ void main() {
         PackFlow(unit: _unit, pack: _pack, words: _words),
     'uy vazifasi': () => HomeworkFlow(
         unit: _unit, unitWords: _words, levelWords: _words),
+    'qiyin so\'zlar': () => const HardWordsScreen(),
     'daraja grammatikasi': () => const LevelGrammarScreen(),
     'so\'z oilalari': () => const LevelWordFormationScreen(),
   };

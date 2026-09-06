@@ -58,8 +58,8 @@ void main() {
     // "Suhbatlar" bosilganda grammatika ekrani ochilib qolgan edi.
     await pumpAt(t, const Size(1280, 800));
 
-    for (final label in ['Darslar', 'Lug\'at', 'Grammatika',
-                         'So\'z yasalishi']) {
+    for (final label in ['Darslar', 'Lug\'at', 'Qiyin so\'zlar',
+                         'Grammatika', 'So\'z yasalishi']) {
       await t.tap(find.text(label).first);
       await t.pump();
       expect(t.takeException(), isNull, reason: label);

@@ -1,0 +1,296 @@
+import 'package:flutter/material.dart';
+
+import '../content.dart';
+import '../main.dart';
+import '../srs.dart';
+import '../theme.dart';
+import '../services/tts.dart';
+import '../widgets/pressable3d.dart';
+import 'pack/pack_flow.dart';
+
+/// QIYIN SO'ZLAR — o'quvchi qayta-qayta unutayotgan so'zlar.
+///
+/// Ilgari ilova "qaysi so'z yodlanmayapti" degan savolga javob
+/// bermasdi: SM-2 holati saqlanardi, lekin uni ko'rish yoki aynan shu
+/// so'zlar ustida ishlash imkoni yo'q edi. Endi:
+///   * har bir so'z necha marta unutilgani ko'rinadi
+///   * FAQAT shu so'zlar bilan mashq qilish mumkin
+class HardWordsScreen extends StatelessWidget {
+  const HardWordsScreen({super.key});
+
+  /// Mashq uchun bir vaqtda olinadigan so'zlar soni.
+  /// Kichik to'da — takrorlash tez-tez bo'lsin va charchatmasin.
+  static const int _drillSize = 6;
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: progress,
+      builder: (context, _) {
+        final c = repo.forLevel(progress.currentLevel);
+        final ids = progress.hardWordIds();
+        final words = [
+          for (final id in ids)
+            if (c.wordsById[id] != null) c.wordsById[id]!,
+        ];
+
+        if (words.isEmpty) return const _Empty();
+
+        return ListView.builder(
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
+          itemCount: words.length + 1,
+          itemBuilder: (context, i) {
+            if (i == 0) return _Header(count: words.length, words: words);
+            final w = words[i - 1];
+            return _HardWordCard(word: w, srs: progress.srsFor(w.id));
+          },
+        );
+      },
+    );
+  }
+
+  /// Faqat qiyin so'zlar bilan mashq — mavjud pack oqimi ishlatiladi.
+  static void drill(BuildContext context, List<Word> words) {
+    final chunk = words.take(_drillSize).toList();
+    final pack = VocabPack(
+      id: 'hard',
+      name: 'Qiyin so\'zlar',
+      wordIds: chunk.map((w) => w.id).toList(),
+    );
+    final unit = Unit(
+      id: 'hard',
+      code: 'Qiyin so\'zlar',
+      title: 'Qayta ishlash',
+      module: '',
+      order: 0,
+      isRevision: true,
+      components: [
+        Component(id: 'hard-v', type: 'VOCABULARY', order: 0, packs: [pack]),
+      ],
+    );
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => PackFlow(unit: unit, pack: pack, words: chunk),
+      ),
+    );
+  }
+}
+
+class _Empty extends StatelessWidget {
+  const _Empty();
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(28),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.emoji_events_rounded,
+                size: 52, color: AppColors.success),
+            const SizedBox(height: 14),
+            Text('Hozircha qiyin so\'z yo\'q',
+                textAlign: TextAlign.center,
+                style: AppTheme.body(context)
+                    .copyWith(fontWeight: FontWeight.w800, fontSize: 17)),
+            const SizedBox(height: 8),
+            Text(
+              'Lug\'at mashqlarini bajaring — ikki marta unutilgan so\'z '
+              'shu yerda paydo bo\'ladi va uni alohida mashq qilish '
+              'mumkin bo\'ladi.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 13.5, height: 1.5, color: AppColors.muted(context)),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _Header extends StatelessWidget {
+  final int count;
+  final List<Word> words;
+  const _Header({required this.count, required this.words});
+
+  @override
+  Widget build(BuildContext context) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 42,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: AppColors.homework.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(AppRadius.md),
+                ),
+                child: const Icon(Icons.priority_high_rounded,
+                    color: AppColors.homework, size: 22),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Qiyin so\'zlar',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 20,
+                            color: dark
+                                ? AppColors.darkHeading
+                                : AppColors.lightHeading)),
+                    const SizedBox(height: 2),
+                    Text('$count ta so\'z qayta-qayta unutilyapti',
+                        style: TextStyle(
+                            fontSize: 12.5, color: AppColors.muted(context))),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          SizedBox(
+            width: double.infinity,
+            child: Pressable3D(
+              color: AppColors.homework,
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 18, vertical: 15),
+              onPressed: () => HardWordsScreen.drill(context, words),
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.replay_rounded, color: Colors.white, size: 21),
+                  SizedBox(width: 10),
+                  Flexible(
+                    child: Text('Shu so\'zlar ustida ishlash',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 15.5)),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _HardWordCard extends StatelessWidget {
+  final Word word;
+  final WordSrs srs;
+  const _HardWordCard({required this.word, required this.srs});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.surface,
+        borderRadius: BorderRadius.circular(AppRadius.md),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Wrap(
+            spacing: 8,
+            runSpacing: 4,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              InkWell(
+                borderRadius: BorderRadius.circular(AppRadius.sm),
+                onTap: () => Tts.instance.speak(word.en, id: word.id),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(word.en,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 16,
+                            color: AppColors.homework)),
+                    const SizedBox(width: 5),
+                    const Icon(Icons.volume_up_rounded,
+                        size: 14, color: AppColors.homework),
+                  ],
+                ),
+              ),
+              Text(word.uz,
+                  style: TextStyle(
+                      fontSize: 13.5, color: AppColors.muted(context))),
+            ],
+          ),
+          if (word.hasExample) ...[
+            const SizedBox(height: 6),
+            boldExample(
+                word.example,
+                word.en,
+                TextStyle(
+                    fontSize: 12.5,
+                    height: 1.4,
+                    color: AppColors.muted(context))),
+          ],
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              _Chip(
+                icon: Icons.close_rounded,
+                text: '${srs.lapses} marta unutilgan',
+                color: AppColors.danger,
+              ),
+              const SizedBox(width: 8),
+              if (srs.isKnown)
+                const _Chip(
+                  icon: Icons.check_rounded,
+                  text: 'endi yodda',
+                  color: AppColors.success,
+                ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _Chip extends StatelessWidget {
+  final IconData icon;
+  final String text;
+  final Color color;
+  const _Chip({required this.icon, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(AppRadius.pill),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, size: 13, color: color),
+          const SizedBox(width: 5),
+          Text(text,
+              style: TextStyle(
+                  fontSize: 11.5, fontWeight: FontWeight.w700, color: color)),
+        ],
+      ),
+    );
+  }
+}

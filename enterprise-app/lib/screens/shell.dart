@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../main.dart';
 import '../theme.dart';
 import '../widgets/geo_bg.dart';
+import 'hard_words_screen.dart';
 import 'level_reference_screens.dart';
 import 'units_screen.dart';
 import 'book/book_screens.dart';
@@ -21,6 +22,7 @@ class _AppShellState extends State<AppShell> {
   static const List<(IconData, String)> _items = [
     (Icons.school_rounded, 'Darslar'),
     (Icons.style_rounded, 'Lug\'at'),
+    (Icons.priority_high_rounded, 'Qiyin so\'zlar'),
     (Icons.rule_rounded, 'Grammatika'),
     (Icons.account_tree_rounded, 'So\'z yasalishi'),
     (Icons.forum_rounded, 'Suhbatlar'),
@@ -141,8 +143,10 @@ class _AppShellState extends State<AppShell> {
       case 1:
         return const UnitsScreen(); // lug'at pack'lari (SRS)
       case 2:
-        return const LevelGrammarScreen(); // daraja grammatikasi
+        return const HardWordsScreen(); // qayta-qayta unutilgan so\'zlar
       case 3:
+        return const LevelGrammarScreen(); // daraja grammatikasi
+      case 4:
         return const LevelWordFormationScreen(); // so'z oilalari
       default:
         return _Placeholder(title: _items[_sel].$2);

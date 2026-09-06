@@ -28,10 +28,20 @@ class WordSrs {
   DateTime? lastReviewedAt;
   DateTime? nextReviewAt;
 
+  /// NEChA MARTA unutilgan (SM-2 da "lapse").
+  ///
+  /// `easeFactor` qiyinlikni ko'rsatadi, lekin u 1.3 da to'xtaydi va
+  /// to'g'ri javoblar bilan yana ko'tariladi — ya'ni "bu so'zni doim
+  /// unutaman" degan tarixni yo'qotadi. Shuning uchun xatolar ALOHIDA
+  /// sanaladi: qaysi so'z ustida qo'shimcha ishlash kerakligi shundan
+  /// aniqlanadi.
+  int lapses;
+
   WordSrs({
     this.easeFactor = 2.5,
     this.interval = 0,
     this.repetitions = 0,
+    this.lapses = 0,
     this.lastReviewedAt,
     this.nextReviewAt,
   });
@@ -55,6 +65,7 @@ class WordSrs {
       // Xato — boshidan.
       repetitions = 0;
       interval = 1;
+      lapses += 1;
     } else {
       if (repetitions == 0) {
         interval = 1;
@@ -85,10 +96,25 @@ class WordSrs {
     return exp(-k * elapsedDays / interval).clamp(0.0, 1.0);
   }
 
+  /// Bu so'z qiyinmi — qo'shimcha mashq kerakmi.
+  ///
+  /// Mezon: kamida IKKI marta unutilgan. Bir marta xato qilish oddiy
+  /// hol — yangi so'z bilan tanishishning bir qismi. Takror unutish esa
+  /// "bu so'z yodda qolmayapti" degani.
+  ///
+  /// `easeFactor` mezon sifatida ishlatilmaydi: bitta "Bilmadim" ni ham
+  /// u 2.5 dan 1.96 ga tushiradi, ya'ni har qanday chegara bir martalik
+  /// xatoni ham qiyin deb belgilab qo'yardi.
+  bool get isHard => lapses >= 2;
+
+  /// Qiyinlik darajasi — ro'yxatni tartiblash uchun (katta = qiyinroq).
+  double get difficulty => lapses * 10 + (2.5 - easeFactor) * 4;
+
   Map<String, dynamic> toJson() => {
         'ef': easeFactor,
         'iv': interval,
         'rp': repetitions,
+        'lp': lapses,
         'lr': lastReviewedAt?.toIso8601String(),
         'nr': nextReviewAt?.toIso8601String(),
       };
@@ -97,6 +123,7 @@ class WordSrs {
         easeFactor: (j['ef'] as num?)?.toDouble() ?? 2.5,
         interval: (j['iv'] as num?)?.toInt() ?? 0,
         repetitions: (j['rp'] as num?)?.toInt() ?? 0,
+        lapses: (j['lp'] as num?)?.toInt() ?? 0,
         lastReviewedAt: j['lr'] != null ? DateTime.parse(j['lr'] as String) : null,
         nextReviewAt: j['nr'] != null ? DateTime.parse(j['nr'] as String) : null,
       );
