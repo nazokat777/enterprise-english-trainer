@@ -27,6 +27,14 @@ class Progress extends ChangeNotifier {
   final Map<String, WordSrs> srsMap = {};
   final Set<String> completed = {};
 
+  /// TAKRORLASh kerak bo'lgan mashqlar.
+  ///
+  /// Mashq tugatilgani — uni O'ZLAShTIRILGANI degani emas. Xato qilib,
+  /// keyin to'g'ri topilgan band ham "tugatildi" ga kirardi va yashil
+  /// belgi qo'yilardi. Endi xatosiz o'tilmagan mashq shu ro'yxatda
+  /// qoladi va ro'yxatda "takrorlash" deb belgilanadi.
+  final Set<String> needsReview = {};
+
   SharedPreferences? _prefs;
 
   static const int freezeCost = 200; // coin
@@ -74,6 +82,7 @@ class Progress extends ChangeNotifier {
           srsMap[k as String] = WordSrs.fromJson((v as Map).cast<String, dynamic>()));
     }
     completed.addAll(p.getStringList('completed') ?? []);
+    needsReview.addAll(p.getStringList('needsReview') ?? []);
     _rolloverDay();
     await _refreshStreak();
     notifyListeners();
@@ -216,8 +225,26 @@ class Progress extends ChangeNotifier {
   }
 
   bool isDone(String id) => completed.contains('$currentLevel::$id');
+
+  /// Mashq TAKRORLAShNI talab qiladimi (xato bilan tugatilgan).
+  bool needsRepeat(String id) => needsReview.contains('$currentLevel::$id');
+
   Future<void> markDone(String id) async {
     completed.add('$currentLevel::$id');
+    await _save();
+    notifyListeners();
+  }
+
+  /// Mashq yakuni: xatosiz o'tilgan bo'lsa ro'yxatdan chiqadi, aks
+  /// holda "takrorlash kerak" bo'lib qoladi.
+  Future<void> markExerciseResult(String id, {required bool clean}) async {
+    final key = '$currentLevel::$id';
+    completed.add(key);
+    if (clean) {
+      needsReview.remove(key);
+    } else {
+      needsReview.add(key);
+    }
     await _save();
     notifyListeners();
   }
@@ -240,5 +267,6 @@ class Progress extends ChangeNotifier {
     await p.setString('srs',
         json.encode(srsMap.map((k, v) => MapEntry(k, v.toJson()))));
     await p.setStringList('completed', completed.toList());
+    await p.setStringList('needsReview', needsReview.toList());
   }
 }

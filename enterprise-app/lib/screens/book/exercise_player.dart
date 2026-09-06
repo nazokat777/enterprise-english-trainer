@@ -126,9 +126,13 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
 
   void _finish() {
     final id = 'ex::${ex.book}::${ex.bookPage}::${ex.ref}';
-    if (!progress.isDone(id)) {
+    final first = !progress.isDone(id);
+    // Xatosiz o'tilganda mashq O'ZLAShTIRILGAN hisoblanadi. Aks holda
+    // u "takrorlash kerak" bo'lib qoladi va ro'yxatda shunday
+    // ko'rsatiladi — bir marta ochib chiqish yetarli emas.
+    progress.markExerciseResult(id, clean: _misses.isEmpty);
+    if (first) {
       progress.addXp(3); // mashqni tugatgani uchun bonus
-      progress.markDone(id);
       _xp += 3;
     }
   }

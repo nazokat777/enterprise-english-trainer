@@ -503,8 +503,12 @@ class BookPagesScreen extends StatelessWidget {
   }
 
   Widget _pageTile(BuildContext context, BookPage p) {
-    final done = p.exercises.every((e) =>
-        progress.isDone('ex::${e.book}::${e.bookPage}::${e.ref}'));
+    // Bet faqat hamma mashq XATOSIZ o'zlashtirilganda tugagan
+    // hisoblanadi — aks holda takrorlash kerakligi ko'rinmay qolardi.
+    final done = p.exercises.every((e) {
+      final id = 'ex::${e.book}::${e.bookPage}::${e.ref}';
+      return progress.isDone(id) && !progress.needsRepeat(id);
+    });
     return Padding(
       padding: const EdgeInsets.only(bottom: 9),
       child: Material(
@@ -826,8 +830,11 @@ class _ExerciseTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final info = _kindInfo;
-    final done = progress
-        .isDone('ex::${exercise.book}::${exercise.bookPage}::${exercise.ref}');
+    final id = 'ex::${exercise.book}::${exercise.bookPage}::${exercise.ref}';
+    final done = progress.isDone(id);
+    // Tugatilgan, lekin XATO bilan — o'zlashtirilmagan. Yashil belgi
+    // qo'yish o'quvchini adashtiradi.
+    final repeat = done && progress.needsRepeat(id);
     return Padding(
       padding: const EdgeInsets.only(bottom: 9),
       child: Material(
@@ -853,12 +860,20 @@ class _ExerciseTile extends StatelessWidget {
                   width: 38,
                   height: 38,
                   decoration: BoxDecoration(
-                    color: (done ? AppColors.success : info.color)
+                    color: (repeat
+                            ? AppColors.homework
+                            : (done ? AppColors.success : info.color))
                         .withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(AppRadius.sm),
                   ),
-                  child: Icon(done ? Icons.check_rounded : info.icon,
-                      color: done ? AppColors.success : info.color, size: 20),
+                  child: Icon(
+                      repeat
+                          ? Icons.replay_rounded
+                          : (done ? Icons.check_rounded : info.icon),
+                      color: repeat
+                          ? AppColors.homework
+                          : (done ? AppColors.success : info.color),
+                      size: 20),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
@@ -894,6 +909,24 @@ class _ExerciseTile extends StatelessWidget {
                           if (exercise.audio)
                             const Icon(Icons.headphones_rounded,
                                 size: 14, color: AppColors.homework),
+                          // Xato bilan tugatilgan mashq — qayta ishlash
+                          // kerakligi ochiq aytiladi.
+                          if (repeat)
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 7, vertical: 2),
+                              decoration: BoxDecoration(
+                                color: AppColors.homework
+                                    .withValues(alpha: 0.14),
+                                borderRadius:
+                                    BorderRadius.circular(AppRadius.pill),
+                              ),
+                              child: const Text('takrorlash kerak',
+                                  style: TextStyle(
+                                      fontSize: 10.5,
+                                      fontWeight: FontWeight.w700,
+                                      color: AppColors.homework)),
+                            ),
                         ],
                       ),
                       const SizedBox(height: 3),

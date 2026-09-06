@@ -131,4 +131,46 @@ void main() {
       expect(p.hardCount(), 60);
     });
   });
+
+  group('Progress — mashq takrorlashni talab qiladimi', () {
+    test('xatosiz tugatilgan mashq o\'zlashtirilgan hisoblanadi', () async {
+      final p = Progress();
+      await p.load();
+
+      await p.markExerciseResult('ex::cb::7::5', clean: true);
+      expect(p.isDone('ex::cb::7::5'), isTrue);
+      expect(p.needsRepeat('ex::cb::7::5'), isFalse);
+    });
+
+    test('xato bilan tugatilgan mashq TAKRORLAShDA qoladi', () async {
+      // Mashqni bir marta ochib chiqish yetarli emas: xato qilingan
+      // bo\'lsa, ro\'yxatda yashil belgi emas, "takrorlash" turadi.
+      final p = Progress();
+      await p.load();
+
+      await p.markExerciseResult('ex::cb::7::5', clean: false);
+      expect(p.isDone('ex::cb::7::5'), isTrue);
+      expect(p.needsRepeat('ex::cb::7::5'), isTrue);
+    });
+
+    test('keyin xatosiz o\'tilsa — ro\'yxatdan chiqadi', () async {
+      final p = Progress();
+      await p.load();
+
+      await p.markExerciseResult('ex::cb::7::5', clean: false);
+      await p.markExerciseResult('ex::cb::7::5', clean: true);
+      expect(p.needsRepeat('ex::cb::7::5'), isFalse);
+    });
+
+    test('holat DISKKA yoziladi', () async {
+      final p = Progress();
+      await p.load();
+      await p.markExerciseResult('ex::cb::7::5', clean: false);
+
+      final p2 = Progress();
+      await p2.load();
+      expect(p2.needsRepeat('ex::cb::7::5'), isTrue,
+          reason: 'ilova qayta ochilganda ham eslab qolsin');
+    });
+  });
 }
