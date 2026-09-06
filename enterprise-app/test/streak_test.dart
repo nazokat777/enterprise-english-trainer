@@ -73,4 +73,57 @@ void main() {
     expect(p2.streakFreezeCount, 1, reason: 'ikkinchi muzlatgich yechilmasin');
     expect(p2.currentStreak, 5);
   });
+
+  // Kunlik maqsad halqasi — asosiy kundalik turtki. Agar bugungi XP
+  // yangi kunda nolga tushmasa, maqsad abadiy "bajarilgan" bo\'lib
+  // ko\'rinardi va halqa ma\'nosini yo\'qotardi.
+  group('kunlik XP', () {
+    test('yangi kunda bugungi XP nolga tushadi', () async {
+      SharedPreferences.setMockInitialValues({
+        'todayXp': 50,
+        'todayKey': _daysAgo(1),
+        'xp': 300,
+      });
+      final p = Progress();
+      await p.load();
+
+      expect(p.todayXp, 0);
+      expect(p.xp, 300, reason: 'umumiy XP saqlanadi');
+    });
+
+    test('o\'sha kunda bugungi XP saqlanadi', () async {
+      SharedPreferences.setMockInitialValues({
+        'todayXp': 50,
+        'todayKey': _daysAgo(0),
+      });
+      final p = Progress();
+      await p.load();
+
+      expect(p.todayXp, 50);
+    });
+
+    test('kun almashsa XP qo\'shishda ham tushadi', () async {
+      SharedPreferences.setMockInitialValues({
+        'todayXp': 50,
+        'todayKey': _daysAgo(3),
+      });
+      final p = Progress();
+      await p.load();
+      await p.addXp(7);
+
+      expect(p.todayXp, 7);
+    });
+
+    test('kunlik maqsad bajarilgani to\'g\'ri hisoblanadi', () async {
+      SharedPreferences.setMockInitialValues({});
+      final p = Progress();
+      await p.load();
+      expect(p.dailyGoalMet, isFalse);
+
+      await p.addXp(p.dailyGoal);
+
+      expect(p.dailyGoalMet, isTrue);
+      expect(p.dailyProgress, 1.0);
+    });
+  });
 }
