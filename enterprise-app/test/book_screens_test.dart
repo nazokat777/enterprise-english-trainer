@@ -239,7 +239,9 @@ void main() {
       expect(find.text('Izoh matni'), findsOneWidget);
       expect(find.text('a'), findsOneWidget);
       expect(find.text('an'), findsOneWidget);
-      expect(find.text('1 / 2'), findsOneWidget);
+      // Hisoblagich O'ZLAShTIRILGAN bandlarni ko'rsatadi (o'rinni emas):
+      // boshida hali hech narsa o'zlashtirilmagan.
+      expect(find.text('0 / 2'), findsOneWidget);
     });
 
     testWidgets('to\'g\'ri javob keyingi savolga o\'tkazadi', (t) async {
@@ -256,7 +258,8 @@ void main() {
       await t.pump(const Duration(milliseconds: 1000));
       await t.pump();
       expect(find.text('book'), findsOneWidget, reason: '2-savolga o\'tdi');
-      expect(find.text('2 / 2'), findsOneWidget);
+      expect(find.text('1 / 2'), findsOneWidget,
+          reason: 'bitta band o\'zlashtirildi');
     });
 
     testWidgets('barcha savol tugagach natija ekrani chiqadi', (t) async {
@@ -272,10 +275,67 @@ void main() {
       await t.pump(const Duration(milliseconds: 1000));
       await t.pump();
 
-      expect(find.text('2 / 2'), findsOneWidget);
+      // Hamma band to\'g\'ri javob berilgach mashq
+      // O\'ZLAShTIRILGAN hisoblanadi.
+      expect(find.text('O\'zlashtirildi'), findsOneWidget);
       expect(find.text('Bo\'limga qaytish'), findsOneWidget);
     });
   });
+
+  group('ExercisePlayer — o\'zlashtirgunicha takrorlash', () {
+    testWidgets('xato qilingan band navbatga QAYTADI', (t) async {
+      // Ilgari bandlar bir marta so'ralardi: xato javob shunchaki o'tib
+      // ketardi va o'quvchi o'sha bandni boshqa ko'rmasdi.
+      final ex = unit.sections.first.exercises[0]; // 2 bandli tanlash
+      await t.pumpWidget(_wrap(
+          ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at')));
+      await t.pump();
+
+      // 1-band: ATAYLAB xato.
+      expect(find.text('orange'), findsOneWidget);
+      await t.tap(find.text('a'));
+      await t.pump(const Duration(milliseconds: 2000));
+      await t.pump();
+
+      // Xato band o'zlashtirilmagan.
+      expect(find.text('0 / 2'), findsOneWidget);
+
+      // 2-band: to'g'ri.
+      expect(find.text('book'), findsOneWidget);
+      await t.tap(find.text('a'));
+      await t.pump(const Duration(milliseconds: 2000));
+      await t.pump();
+
+      // Mashq TUGAMAYDI — xato band qaytadi.
+      expect(find.text('orange'), findsOneWidget,
+          reason: 'xato qilingan band qayta so\'ralishi kerak');
+      expect(find.text('takror'), findsOneWidget);
+
+      // Endi to'g'ri javob — mashq tugaydi.
+      await t.tap(find.text('an'));
+      await t.pump(const Duration(milliseconds: 2000));
+      await t.pump();
+      expect(find.text('O\'zlashtirildi'), findsOneWidget);
+    });
+
+    testWidgets('hammasi to\'g\'ri bo\'lsa takror bo\'lmaydi', (t) async {
+      final ex = unit.sections.first.exercises[0];
+      await t.pumpWidget(_wrap(
+          ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at')));
+      await t.pump();
+
+      await t.tap(find.text('an'));
+      await t.pump(const Duration(milliseconds: 2000));
+      await t.pump();
+      await t.tap(find.text('a'));
+      await t.pump(const Duration(milliseconds: 2000));
+      await t.pump();
+
+      expect(find.text('O\'zlashtirildi'), findsOneWidget);
+      expect(find.textContaining('takrorlandi'), findsNothing);
+    });
+  });
+
 
   group('ExercisePlayer — yig\'ish', () {
     testWidgets('harf plitkalari chiqadi va javob yig\'iladi', (t) async {

@@ -36,12 +36,49 @@ class ExercisePlayer extends StatefulWidget {
 }
 
 class _ExercisePlayerState extends State<ExercisePlayer> {
-  int _index = 0;
+  /// So'raladigan bandlar NAVBATI (band indekslari).
+  ///
+  /// Ilgari bandlar 0 dan oxirigacha BIR MARTA so'ralardi: xato javob
+  /// shunchaki o'tib ketardi va o'quvchi o'sha bandni boshqa ko'rmasdi.
+  /// Endi xato qilingan band navbatga QAYTADI va mashq faqat HAMMA band
+  /// to'g'ri javob berilgandan keyin tugaydi — ya'ni o'quvchi mavzuni
+  /// o'zlashtirmaguncha mashq tugamaydi.
+  final List<int> _queue = <int>[];
+
+  /// Navbatdagi o'rin.
+  int _pos = 0;
+
+  /// To'g'ri javob berilgan bandlar.
+  final Set<int> _mastered = <int>{};
+
+  /// Har bir band bo'yicha xato soni — natijada ko'rsatiladi.
+  final Map<int, int> _misses = <int, int>{};
+
   int _correct = 0;
   int _xp = 0;
   bool _done = false;
 
   BookExercise get ex => widget.exercise;
+
+  @override
+  void initState() {
+    super.initState();
+    _queue.addAll(List<int>.generate(ex.tasks.length, (i) => i));
+  }
+
+  /// Hozir so'ralayotgan bandning indeksi.
+  int get _index => _queue.isEmpty ? 0 : _queue[_pos.clamp(0, _queue.length - 1)];
+
+  /// Xato qilingan band navbatga QAYTADI.
+  ///
+  /// Darhol emas — orasiga bir necha boshqa band qo'yiladi, aks holda
+  /// o'quvchi javobni eslab qoladi, tushunib emas. Navbat oxiriga ham
+  /// tashlanmaydi: uzoq mashqda band juda kech qaytardi.
+  void _requeue(int taskIndex) {
+    const gap = 3;
+    final at = (_pos + gap).clamp(0, _queue.length);
+    _queue.insert(at, taskIndex);
+  }
 
   @override
   void dispose() {
@@ -51,17 +88,27 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
 
   /// Band yakunlandi: XP va SRS (lug'at ko'nikmasi).
   Future<void> _answered(bool ok) async {
-    if (ok) _correct++;
-    final gain = ok ? 2 : 0;
-    if (gain > 0) {
-      _xp += gain;
-      await progress.addXp(gain, skill: _skillOf(ex));
+    final taskIndex = _index;
+    final firstTime = !_mastered.contains(taskIndex);
+
+    if (ok) {
+      _mastered.add(taskIndex);
+      if (firstTime) _correct++;
+      // XP faqat BIRINCHI to'g'ri javob uchun — xato qilib, keyin
+      // qayta topgan band uchun ikki marta ball berilmasin.
+      if (firstTime && _misses[taskIndex] == null) {
+        _xp += 2;
+        await progress.addXp(2, skill: _skillOf(ex));
+      }
+    } else {
+      _misses[taskIndex] = (_misses[taskIndex] ?? 0) + 1;
     }
+
     if (!mounted) return;
     setState(() {
-      if (_index + 1 < ex.tasks.length) {
-        _index++;
-      } else {
+      if (!ok) _requeue(taskIndex);
+      _pos++;
+      if (_mastered.length >= ex.tasks.length || _pos >= _queue.length) {
         _done = true;
         _finish();
       }
@@ -145,12 +192,13 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   }
 
   Widget _header() {
-    final total = ex.kind == ExKind.study || ex.kind == ExKind.match
-        ? 1
-        : ex.tasks.length;
-    final value = ex.kind == ExKind.study || ex.kind == ExKind.match
-        ? 1.0
-        : (_index + 1) / total;
+    final simple = ex.kind == ExKind.study || ex.kind == ExKind.match;
+    final total = simple ? 1 : ex.tasks.length;
+    // Chiziq NAVBATDAGI o'rinni emas, O'ZLAShTIRILGAN bandlarni
+    // ko'rsatadi: xato qilinsa u orqaga qaytadi va bu halol.
+    final value = simple ? 1.0 : _mastered.length / total;
+    // Bu band ilgari xato qilinganmi — o'quvchi qaytganini bilsin.
+    final repeat = !simple && (_misses[_index] ?? 0) > 0;
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
       child: Column(
@@ -176,8 +224,33 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                       fontWeight: FontWeight.w800, fontSize: 14),
                 ),
               ),
-              if (ex.kind != ExKind.study && ex.kind != ExKind.match)
-                Text('${_index + 1} / ${ex.tasks.length}',
+              if (repeat)
+                Padding(
+                  padding: const EdgeInsets.only(right: 8),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 8, vertical: 3),
+                    decoration: BoxDecoration(
+                      color: AppColors.homework.withValues(alpha: 0.14),
+                      borderRadius: BorderRadius.circular(AppRadius.pill),
+                    ),
+                    child: const Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icons.replay_rounded,
+                            size: 13, color: AppColors.homework),
+                        SizedBox(width: 4),
+                        Text('takror',
+                            style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.homework)),
+                      ],
+                    ),
+                  ),
+                ),
+              if (!simple)
+                Text('${_mastered.length} / ${ex.tasks.length}',
                     style: TextStyle(
                         fontSize: 12, color: AppColors.muted(context))),
             ],
@@ -234,9 +307,12 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   }
 
   Widget _result() {
-    final total = ex.kind == ExKind.study ? ex.tasks.length : ex.tasks.length;
-    final pct = total == 0 ? 100 : (_correct * 100 / total).round();
-    final good = ex.kind == ExKind.study || pct >= 70;
+    final total = ex.tasks.length;
+    // Mashq faqat HAMMA band o'zlashtirilganda tugaydi, shuning uchun
+    // natija "nechtasini BIRINCHI urinishda topdi" degani.
+    final clean = total - _misses.length;
+    final retried = _misses.length;
+    final good = ex.kind == ExKind.study || _mastered.length >= total;
     return ListView(
       padding: const EdgeInsets.all(28),
       children: [
@@ -255,13 +331,26 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
         const SizedBox(height: 18),
         Center(
           child: Text(
-            ex.kind == ExKind.study ? 'O\'qib chiqdingiz' : '$_correct / $total',
+            ex.kind == ExKind.study
+                ? 'O\'qib chiqdingiz'
+                : (good ? 'O\'zlashtirildi' : '$_correct / $total'),
             style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w800,
                 color: good ? AppColors.success : AppColors.homework),
           ),
         ),
+        if (ex.kind != ExKind.study && retried > 0) ...[
+          const SizedBox(height: 8),
+          Center(
+            child: Text(
+                '$clean / $total birinchi urinishda · '
+                '$retried ta band takrorlandi',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 13, color: AppColors.muted(context))),
+          ),
+        ],
         const SizedBox(height: 6),
         Center(
           child: Container(
@@ -295,7 +384,14 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           Pressable3D(
             color: AppColors.actionBlue,
             onPressed: () => setState(() {
-              _index = 0;
+              // Boshidan: navbat qayta tuziladi, o'zlashtirilganlar
+              // tozalanadi.
+              _queue
+                ..clear()
+                ..addAll(List<int>.generate(ex.tasks.length, (i) => i));
+              _pos = 0;
+              _mastered.clear();
+              _misses.clear();
               _correct = 0;
               _done = false;
             }),
