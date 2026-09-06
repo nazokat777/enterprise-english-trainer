@@ -249,6 +249,32 @@ class Progress extends ChangeNotifier {
         .length;
   }
 
+  /// Muddati kelgan so'zlar — eng KECHIKKANIDAN boshlab.
+  ///
+  /// `dueCount()` allaqachon bor edi ("sidebar Due badge" uchun deb
+  /// yozilgan), lekin uni HECH BIR ekran ko'rsatmasdi va muddati
+  /// kelgan so'zlarni mashq qilishning yo'li ham yo'q edi — ya'ni
+  /// butun takrorlash jadvali ko'rinmas bo'lib qolgandi.
+  List<String> dueWordIds({int limit = 20}) {
+    final now = DateTime.now();
+    final prefix = '$currentLevel::';
+    final due = srsMap.entries
+        .where((e) => e.key.startsWith(prefix) && e.value.isDue(now))
+        .toList()
+      ..sort((a, b) {
+        final x = a.value.nextReviewAt;
+        final y = b.value.nextReviewAt;
+        if (x == null && y == null) return 0;
+        if (x == null) return -1;
+        if (y == null) return 1;
+        return x.compareTo(y);
+      });
+    return due
+        .take(limit)
+        .map((e) => e.key.substring(prefix.length))
+        .toList();
+  }
+
   /// Kitob mashqida XATO qilingan so'zni belgilaydi.
   ///
   /// Bu yerda to'liq SM-2 takrorlash O'TKAZILMAYDI: lug'at mashqlarining

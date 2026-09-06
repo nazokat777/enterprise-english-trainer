@@ -3,6 +3,7 @@ import '../main.dart';
 import '../content.dart';
 import '../theme.dart';
 import '../widgets/entrance.dart';
+import 'hard_words_screen.dart';
 import 'unit_screen.dart';
 
 /// Darslar — joriy darajaning unit'lari (game-map uslubidagi ro'yxat).
@@ -11,6 +12,15 @@ class UnitsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // `progress` o'zgarganda (so'z takrorlangach) ro'yxat ham
+    // yangilansin — "takrorlash vaqti keldi" soni shundan olinadi.
+    return AnimatedBuilder(
+      animation: progress,
+      builder: (context, _) => _list(context),
+    );
+  }
+
+  Widget _list(BuildContext context) {
     final LevelContent c = repo.forLevel(progress.currentLevel);
     if (c.units.isEmpty) {
       return Center(
@@ -48,6 +58,14 @@ class UnitsScreen extends StatelessWidget {
                       fontSize: 12.5, color: AppColors.muted(context)),
                 ),
                 const SizedBox(height: 10),
+                // TAKRORLASh VAQTI — SM-2 jadvali bo'yicha muddati
+                // kelgan so'zlar. `dueCount()` ilgari ham hisoblanardi,
+                // lekin hech qayerda ko'rsatilmasdi: butun takrorlash
+                // jadvali o'quvchi uchun ko'rinmas edi.
+                if (progress.dueCount() > 0) ...[
+                  _DueBanner(count: progress.dueCount()),
+                  const SizedBox(height: 12),
+                ],
               ],
             ),
           );
@@ -58,6 +76,66 @@ class UnitsScreen extends StatelessWidget {
           child: _UnitNode(unit: unit, isFirst: i == 1),
         );
       },
+    );
+  }
+}
+
+/// "Takrorlash vaqti keldi" — muddati kelgan so'zlarni bir bosishda
+/// mashq qilish.
+class _DueBanner extends StatelessWidget {
+  final int count;
+  const _DueBanner({required this.count});
+
+  void _start(BuildContext context) {
+    final c = repo.forLevel(progress.currentLevel);
+    final words = [
+      for (final id in progress.dueWordIds())
+        if (c.wordsById[id] != null) c.wordsById[id]!,
+    ];
+    if (words.isEmpty) return;
+    HardWordsScreen.drill(context, words);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppColors.success.withValues(alpha: 0.12),
+      borderRadius: BorderRadius.circular(AppRadius.lg),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: () => _start(context),
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Row(
+            children: [
+              const Icon(Icons.history_rounded,
+                  color: AppColors.success, size: 24),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Takrorlash vaqti keldi',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 15,
+                            color: AppColors.success)),
+                    const SizedBox(height: 2),
+                    Text(
+                      '$count ta so\'z — ularni unutib qo\'ymaslik uchun '
+                      'hozir takrorlang',
+                      style: TextStyle(
+                          fontSize: 12.5, color: AppColors.muted(context)),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded,
+                  color: AppColors.success),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
