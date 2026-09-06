@@ -141,4 +141,49 @@ void main() {
       expect(names.contains(en), isFalse, reason: 'shaxs ismi: $en');
     }
   });
+
+  // Lug\'atdagi tarjima kitobning O\'Z izohiga mos bo\'lishi kerak.
+  //
+  // XATO edi: `study = o\'rganmoq`, lekin misol "There is also a study
+  // with a big bookcase" — bu XONA. Shunga o\'xshab `dress = kiyinmoq`
+  // (misolda ko\'ylak), `cook = oshpaz` (misolda "I can cook"),
+  // `rock = tosh` (misolda rok musiqa). O\'quvchi noto\'g\'ri ma\'noni
+  // yodlardi.
+  test('tarjima o\'z misoliga zid emas', () {
+    const expected = {
+      'study': 'ish xonasi',
+      'dress': 'ko\'ylak',
+      'cook': 'pishirmoq; oshpaz',
+      'rock': 'rok (musiqa)',
+    };
+    final raw = json.decode(
+            File('assets/content/beginner/words.json').readAsStringSync())
+        as Map<String, dynamic>;
+    final byEn = <String, String>{};
+    for (final e in raw['words'] as List) {
+      final w = (e as Map).cast<String, dynamic>();
+      byEn[(w['en'] as String).toLowerCase()] = w['uz'] as String;
+    }
+    expected.forEach((en, uz) {
+      expect(byEn[en], uz, reason: '$en tarjimasi misolga mos kelsin');
+    });
+  });
+
+  test('grammatika atamalari lug\'atda qolmagan', () {
+    const terms = [
+      'prepositions', 'pronouns', 'nouns', 'adjectives', 'plural',
+      'singular', 'consonant', 'possessive', 'tense', 'statements',
+      'continuous', 'expressions',
+    ];
+    final raw = json.decode(
+            File('assets/content/beginner/words.json').readAsStringSync())
+        as Map<String, dynamic>;
+    final ens = {
+      for (final e in raw['words'] as List)
+        ((e as Map)['en'] as String).toLowerCase()
+    };
+    for (final t in terms) {
+      expect(ens.contains(t), isFalse, reason: '$t — bu so\'z emas, atama');
+    }
+  });
 }
