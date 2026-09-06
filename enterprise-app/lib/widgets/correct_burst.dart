@@ -6,7 +6,7 @@ import '../theme.dart';
 ///
 /// Belgi MATN emas, IKONKA. Ilgari matnda "✓" (U+2713) turardi, lekin
 /// sarlavha shrifti Geist da bu belgi YO'Q — shrift tarmoqdan yuklanib
-/// bo'lgach "To'g'ri ✓" o'rniga "To'g'ri ▯" (bo'sh quti) chiqardi.
+/// bo'lgach belgi o'rniga bo'sh quti chiqardi.
 void showCorrectBurst(BuildContext context, {String text = "To'g'ri"}) {
   final overlay = Overlay.maybeOf(context);
   if (overlay == null) return;

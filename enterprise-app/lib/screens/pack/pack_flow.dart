@@ -293,7 +293,23 @@ class _IntroStageState extends State<_IntroStage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text('🇬🇧', style: TextStyle(fontSize: 20)),
+                      // Bayroq emojisi (🇬🇧) EMAS: u ikkita "hududiy
+                      // indikator" belgisidan yasaladi va Flutter web
+                      // (CanvasKit) uni chizolmaydi — o'quvchi ikkita
+                      // bo'sh quti ko'rardi.
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 7, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: AppColors.brandPurple.withValues(alpha: 0.12),
+                          borderRadius: BorderRadius.circular(AppRadius.sm),
+                        ),
+                        child: const Text('EN',
+                            style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w800,
+                                color: AppColors.brandPurple)),
+                      ),
                       if (w.pos.isNotEmpty) ...[
                         const SizedBox(width: 8),
                         Container(
