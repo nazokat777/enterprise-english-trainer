@@ -122,4 +122,29 @@ void main() {
 
     expect(find.textContaining('inglizcha ovoz topilmadi'), findsOneWidget);
   });
+
+  // `Progress.skills` har XP olinganda yozilardi va diskka ham
+  // saqlanardi, lekin `skillPercent` ni HECH BIR ekran o\'qimasdi —
+  // o\'quvchi qaysi ko\'nikmasi orqada qolayotganini bilolmasdi.
+  testWidgets('ko\'nikmalar darajasi ko\'rsatiladi', (t) async {
+    await app.progress.addXp(10, skill: Skill.grammar);
+    await app.progress.addXp(10, skill: Skill.grammar);
+
+    await pump(t);
+    final card = find.text('Ko\'nikmalar');
+    await t.scrollUntilVisible(card, 200, scrollable: find.byType(Scrollable));
+    await t.pumpAndSettle();
+
+    expect(card, findsOneWidget);
+    expect(find.text('Grammatika'), findsOneWidget);
+    expect(find.text('4%'), findsOneWidget, reason: 'ikki marta +2');
+    expect(find.text('Tinglash'), findsOneWidget);
+  });
+
+  testWidgets('kunlik maqsad variantlari modeldan olinadi', (t) async {
+    await pump(t);
+    for (final g in Progress.goalOptions) {
+      expect(find.text('$g XP'), findsOneWidget);
+    }
+  });
 }

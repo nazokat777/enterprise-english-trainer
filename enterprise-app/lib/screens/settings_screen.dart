@@ -39,6 +39,8 @@ class SettingsScreen extends StatelessWidget {
           const SizedBox(height: 10),
           _StatsCard(),
           const SizedBox(height: 10),
+          const _SkillsCard(),
+          const SizedBox(height: 10),
           _ResetCard(),
         ],
       ),
@@ -73,7 +75,9 @@ class _GoalCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const goals = [10, 20, 30, 50];
+    // Variantlar MODELDAN olinadi — ikki joyda ikki xil ro'yxat
+    // bo'lib qolmasin.
+    const goals = Progress.goalOptions;
     return _Card(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -288,6 +292,83 @@ class _StatsCard extends StatelessWidget {
                   Text(r.$2,
                       style: const TextStyle(
                           fontSize: 13, fontWeight: FontWeight.w800)),
+                ],
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+/// KO'NIKMALAR — qaysi ko'nikma zaif ekani.
+///
+/// `Progress.skills` har XP olinganda yozilardi va diskka ham
+/// saqlanardi, lekin `skillPercent` ni HECH BIR ekran o'qimasdi —
+/// ya'ni o'quvchi qaysi ko'nikmasi orqada qolayotganini bilolmasdi.
+class _SkillsCard extends StatelessWidget {
+  const _SkillsCard();
+
+  static const Map<Skill, String> _uz = {
+    Skill.listening: 'Tinglash',
+    Skill.grammar: 'Grammatika',
+    Skill.vocab: 'Lug\'at',
+    Skill.reading: 'O\'qish',
+    Skill.speaking: 'Gapirish',
+  };
+
+  @override
+  Widget build(BuildContext context) {
+    final any = Skill.values.any((s) => progress.skillPercent(s) > 0);
+    return _Card(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text('Ko\'nikmalar',
+              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+          const SizedBox(height: 2),
+          Text(
+            any
+                ? 'Mashq qilgan sari o\'sadi — orqada qolgani ustida '
+                    'ko\'proq ishlang.'
+                : 'Hali mashq qilinmagan. Dars boshlasangiz shu yerda '
+                    'ko\'rinadi.',
+            style: TextStyle(
+                fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
+          ),
+          const SizedBox(height: 10),
+          for (final s in Skill.values)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(_uz[s]!,
+                            style: const TextStyle(
+                                fontSize: 13, fontWeight: FontWeight.w700)),
+                      ),
+                      Text('${progress.skillPercent(s)}%',
+                          style: TextStyle(
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.w800,
+                              color: AppColors.muted(context))),
+                    ],
+                  ),
+                  const SizedBox(height: 4),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: LinearProgressIndicator(
+                      value: progress.skillPercent(s) / 100,
+                      minHeight: 5,
+                      backgroundColor:
+                          AppColors.brandPurple.withValues(alpha: 0.15),
+                      valueColor: const AlwaysStoppedAnimation(
+                          AppColors.brandPurple),
+                    ),
+                  ),
                 ],
               ),
             ),
