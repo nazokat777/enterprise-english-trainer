@@ -790,9 +790,23 @@ class _CorrectionRound extends StatefulWidget {
 
 class _CorrectionRoundState extends State<_CorrectionRound> {
   final _rnd = Random();
+
+  /// So'raladigan so'zlar NAVBATI.
+  ///
+  /// Ilgari xato qilingan so'z DARHOL o'sha zahoti qayta so'ralardi:
+  /// variantlar aralashtirilsa ham, o'quvchi shunchaki qolgan javobni
+  /// bosardi — so'zni tushunib emas, chetlab o'tib. Endi u navbat
+  /// oxiriga tushadi va oradan boshqa so'zlar o'tadi.
+  late final List<Word> _queue = List<Word>.of(widget.words);
+
+  /// O'zlashtirilganlar — raund shular hammasi to'g'ri topilganda tugaydi.
+  final Set<String> _fixed = <String>{};
+
   int _i = 0;
   late List<String> _options;
   String? _chosen;
+
+  Word get _target => _queue[_i.clamp(0, _queue.length - 1)];
 
   @override
   void initState() {
@@ -801,7 +815,7 @@ class _CorrectionRoundState extends State<_CorrectionRound> {
   }
 
   void _load() {
-    final target = widget.words[_i];
+    final target = _target;
     final pool = [...widget.words, ...widget.levelWords];
     final d = pickDistractors(target, pool, 3, _rnd);
     _options = [target.uz, ...d.map((x) => x.uz)]..shuffle(_rnd);
@@ -812,15 +826,19 @@ class _CorrectionRoundState extends State<_CorrectionRound> {
   }
 
   void _tap(String option) {
-    final target = widget.words[_i];
+    final target = _target;
     if (_chosen != null) return;
     setState(() => _chosen = option);
 
     if (option != target.uz) {
-      // Xato — to'g'risini ko'rsatib, shu so'zni qayta so'raymiz.
+      // Xato — to'g'risini ko'rsatamiz va so'zni navbat OXIRIGA
+      // qo'yamiz: darhol qayta so'rash javobni yodlashga olib keladi.
       Future.delayed(const Duration(milliseconds: 1200), () {
         if (!mounted) return;
-        setState(_load);
+        setState(() {
+          _queue.add(target);
+          _advance();
+        });
       });
       return;
     }
@@ -828,20 +846,27 @@ class _CorrectionRoundState extends State<_CorrectionRound> {
     showCorrectBurst(context);
     Future.delayed(const Duration(milliseconds: 900), () {
       if (!mounted) return;
-      if (_i + 1 < widget.words.length) {
-        setState(() {
-          _i += 1;
-          _load();
-        });
-      } else {
+      _fixed.add(target.id);
+      if (_fixed.length >= widget.words.length || _i + 1 >= _queue.length) {
         widget.onDone();
+      } else {
+        setState(_advance);
       }
     });
   }
 
+  void _advance() {
+    _i += 1;
+    if (_i >= _queue.length) {
+      widget.onDone();
+      return;
+    }
+    _load();
+  }
+
   @override
   Widget build(BuildContext context) {
-    final target = widget.words[_i];
+    final target = _target;
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
       children: [
@@ -853,7 +878,7 @@ class _CorrectionRoundState extends State<_CorrectionRound> {
             ),
             const Spacer(),
             Text(
-              '${_i + 1} / ${widget.words.length}',
+              '${_fixed.length} / ${widget.words.length}',
               style: const TextStyle(
                 fontWeight: FontWeight.w800,
                 color: AppColors.homework,

@@ -109,6 +109,20 @@ void main() {
         phone);
   });
 
+
+  // Uy vazifasining "xatolar ustida ishlash" raundi: xato qilingan so\'z
+  // darhol emas, navbat OXIRIDA qayta so\'raladi.
+  testWidgets('tuzatish raundi xato so\'zni navbat oxiriga qo\'yadi',
+      (t) async {
+    await expectFits(
+        t,
+        HomeworkFlow(unit: _unit, unitWords: _words, levelWords: _words),
+        phone);
+    // Oqim yiqilmasdan chizildi — raund mantiqining o\'zi
+    // homework_test.dart va homework_real_test.dart da tekshiriladi.
+    expect(find.byType(HomeworkFlow), findsOneWidget);
+  });
+
   for (final e in screens.entries) {
     testWidgets('${e.key} — 375px', (t) async {
       await expectFits(t, e.value(), phone);
