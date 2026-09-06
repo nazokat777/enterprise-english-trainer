@@ -13,6 +13,8 @@ enterprise-trainer/data/pages/**/*.png
 # Bu papkadagi rasmlar egasining o'z nusxasidan olinadi va
 # GitHub'ga ham, Vercel'ga ham CHIQMAYDI. README.md qoladi.
 enterprise-app/assets/book_pages/*
+# Siqishdan OLDINGI asl skanlar — git'ga ham, build'ga ham chiqmaydi.
+enterprise-app/assets/book_pages_original/
 !enterprise-app/assets/book_pages/README.md
 
 # ─── Flutter / Dart ───
