@@ -24,8 +24,31 @@ from collections import defaultdict
 from pathlib import Path
 
 TRAINER = Path(__file__).resolve().parent.parent
-PAGES = TRAINER / "data" / "pages"
-OUT = TRAINER.parent / "enterprise-app" / "assets" / "content" / "enterprise1"
+ASSETS = TRAINER.parent / "enterprise-app" / "assets" / "content"
+
+# Har bir daraja o'z manba papkasi va o'z chiqish papkasiga ega.
+# Ilova tomonidagi ro'yxat: `enterprise-app/lib/levels.dart`.
+LEVELS = {
+    "beginner": ("pages", "enterprise1"),
+    "elementary": ("pages-elementary", "enterprise2"),
+}
+DEFAULT_LEVEL = "beginner"
+
+# Modul darajasidagi yo'llar — `set_level()` ularni almashtiradi.
+PAGES = TRAINER / "data" / LEVELS[DEFAULT_LEVEL][0]
+OUT = ASSETS / LEVELS[DEFAULT_LEVEL][1]
+
+
+def set_level(level: str) -> None:
+    """Qaysi kitob ustida ishlashni belgilaydi."""
+    global PAGES, OUT
+    if level not in LEVELS:
+        raise SystemExit(
+            f"Noma'lum daraja: {level}. Mavjud: {', '.join(LEVELS)}"
+        )
+    src, out = LEVELS[level]
+    PAGES = TRAINER / "data" / src
+    OUT = ASSETS / out
 
 # Eksportyor taniydigan mashq turlari. Bu ro'yxatda YO'Q tur uchrasa,
 # mashqning bandlari eksportga chiqmaydi — shuning uchun ogohlantirish
@@ -1217,7 +1240,21 @@ def build_unit(pages):
     }
 
 
-def main():
+def main(argv=None):
+    argv = list(sys.argv[1:] if argv is None else argv)
+    level = DEFAULT_LEVEL
+    if "--level" in argv:
+        i = argv.index("--level")
+        if i + 1 >= len(argv):
+            raise SystemExit("--level dan keyin daraja nomi kerak")
+        level = argv[i + 1]
+    set_level(level)
+    if not PAGES.exists():
+        print(f"[{level}] manba papkasi yo'q: {PAGES}")
+        print("Hali bu kitob uchun betlar tayyorlanmagan.")
+        return 0
+    print(f"[{level}] {PAGES.name} -> {OUT.name}")
+
     by_unit = defaultdict(list)
     for f in sorted(PAGES.glob("*/p*.json")):
         d = json.loads(f.read_text(encoding="utf-8"))

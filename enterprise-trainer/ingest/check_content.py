@@ -17,12 +17,27 @@ import re
 import sys
 from pathlib import Path
 
-from ingest.export_pages import KNOWN_TYPES
+from ingest.export_pages import KNOWN_TYPES, LEVELS, DEFAULT_LEVEL
 
 TRAINER = Path(__file__).resolve().parent.parent
-PAGES = TRAINER / "data" / "pages"
-ASSETS = TRAINER.parent / "enterprise-app" / "assets" / "content" / "enterprise1"
 APP_LIB = TRAINER.parent / "enterprise-app" / "lib"
+
+# `export_pages` bilan BIR XIL darajalar ro'yxati.
+PAGES = TRAINER / "data" / LEVELS[DEFAULT_LEVEL][0]
+ASSETS = (TRAINER.parent / "enterprise-app" / "assets" / "content"
+          / LEVELS[DEFAULT_LEVEL][1])
+
+
+def set_level(level: str) -> None:
+    """Qaysi kitobni tekshirishni belgilaydi."""
+    global PAGES, ASSETS
+    if level not in LEVELS:
+        raise SystemExit(
+            f"Noma'lum daraja: {level}. Mavjud: {', '.join(LEVELS)}"
+        )
+    src, out = LEVELS[level]
+    PAGES = TRAINER / "data" / src
+    ASSETS = TRAINER.parent / "enterprise-app" / "assets" / "content" / out
 
 # Bandlar shu maydonlarning birida bo'lishi mumkin.
 ITEM_KEYS = (
@@ -392,7 +407,22 @@ def audio_open_items() -> list[tuple[str, int]]:
     return out
 
 
-def main() -> int:
+def main(argv=None) -> int:
+    argv = list(sys.argv[1:] if argv is None else argv)
+    level = DEFAULT_LEVEL
+    if "--level" in argv:
+        i = argv.index("--level")
+        if i + 1 >= len(argv):
+            raise SystemExit("--level dan keyin daraja nomi kerak")
+        level = argv[i + 1]
+    set_level(level)
+    if not PAGES.exists():
+        print(f"[{level}] manba papkasi yo'q: {PAGES} — tekshirish yo'q")
+        return 0
+    if level != DEFAULT_LEVEL:
+        print(f"[{level}] tekshirilmoqda")
+        print()
+
     src = check_sources()
     exp = check_export()
     lost = check_losses() + check_content_units()

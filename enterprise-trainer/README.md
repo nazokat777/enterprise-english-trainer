@@ -24,6 +24,28 @@ python -m ingest.export_pages     # kitob mashqlari
 python -m ingest.check_content    # TOZA bo'lishi shart
 ```
 
+## Bir nechta daraja
+
+Har bir daraja o'z manba va chiqish papkasiga ega
+(`ingest/export_pages.py` dagi `LEVELS`):
+
+| Daraja      | Manba                     | Chiqish                          |
+|-------------|---------------------------|----------------------------------|
+| beginner    | `data/pages/`             | `assets/content/enterprise1/`    |
+| elementary  | `data/pages-elementary/`  | `assets/content/enterprise2/`    |
+
+```bash
+python -m ingest.export_pages  --level elementary
+python -m ingest.check_content --level elementary
+```
+
+Manba papkasi hali yo'q bo'lsa, ikkala buyruq ham shuni aytib
+to'xtaydi — xato bermaydi.
+
+Ilova tomonidagi darajalar ro'yxati: `enterprise-app/lib/levels.dart`.
+Ikkala ro'yxat MOS bo'lishi kerak. Kitobi yo'q daraja tanlagichda
+"tayyor emas" bo'lib turadi (`BookRepository.probeLevels`).
+
 ## Eski (ishlatilmaydigan) qism
 
 `app/` va `core/` — loyihaning BIRINCHI arxitekturasi: FastAPI backend
