@@ -285,6 +285,34 @@ def check_content_units() -> list[tuple[str, str]]:
     return out
 
 
+def audio_open_items() -> list[tuple[str, int]]:
+    """Audio bo'lmagani uchun OChIQ qolgan bandlarni sanaydi.
+
+    Bu son `enterprise-app/assets/audio/README.md` dagi jadval bilan mos
+    bo'lishi kerak. Ilgari README eskirib qolgan edi: unda 33 band deb
+    yozilgan, aslida 15 ta edi. Endi son har eksportda qayta sanaladi.
+    """
+    marker = "⚠"
+    out: list[tuple[str, int]] = []
+    for f in sorted(ASSETS.glob("unit_*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for s in d["sections"]:
+            for e in s["exercises"]:
+                n = 0
+                for line in (e.get("explanationUz") or "").splitlines():
+                    if line.startswith("  * ") and marker in line:
+                        n += 1
+                for t in e["tasks"]:
+                    for fld in ("answer", "en", "right"):
+                        v = t.get(fld)
+                        if (isinstance(v, str) and v.strip().startswith(marker)
+                                and "AUDIO" in v.upper()):
+                            n += 1
+                if n:
+                    out.append((f"{e['book']} {e['bookPage']}b Ex.{e['ref']}", n))
+    return out
+
+
 def main() -> int:
     src = check_sources()
     exp = check_export()
@@ -310,6 +338,12 @@ def main() -> int:
     for loc, msg in exp:
         print(f"  {loc:30s} {msg}")
     print("  muammo yo'q" if not exp else f"  jami: {len(exp)}")
+
+    audio = audio_open_items()
+    print("\n=== AUDIO KUTAYOTGAN OCHIQ BANDLAR (xato emas) ===")
+    for loc, n in audio:
+        print(f"  {loc:30s} {n} band")
+    print(f"  jami: {sum(n for _, n in audio)} band, {len(audio)} mashqda")
 
     total = len(src) + len(exp) + len(lost) + len(pages)
     print(f"\n{'TOZA' if total == 0 else f'JAMI MUAMMO: {total}'}")
