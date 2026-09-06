@@ -622,6 +622,11 @@ class _SpellStageState extends State<SpellStage> {
       if (mounted) showCorrectBurst(context);
       Future.delayed(const Duration(milliseconds: 900), _advance);
     } else {
+      // Xato imlo — so'z "unutilgan" deb belgilanadi. Quality.hard
+      // buni QILMAYDI: SM-2 da hard (q=3) xato hisoblanmaydi, shuning
+      // uchun imloda qiynalgan so'z "Qiyin so'zlar" ro'yxatiga
+      // hech qachon tushmasdi.
+      progress.recordMiss(widget.words[_i].id);
       _wrongTries++;
       Future.delayed(const Duration(milliseconds: 800), () {
         if (!mounted) return;

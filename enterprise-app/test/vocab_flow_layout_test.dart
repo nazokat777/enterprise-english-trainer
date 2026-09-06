@@ -254,4 +254,43 @@ void main() {
         reason: 'moslashda kamida 4 ta variant kerak: $shown');
     expect(t.takeException(), isNull);
   });
+
+  // XATO: imlo bosqichida xato qilingan so'z faqat Quality.hard
+  // olardi. SM-2 da hard (q=3) XATO hisoblanmaydi, ya'ni unutishlar
+  // tarixi o'smasdi va so'z "Qiyin so'zlar" ga tushmasdi.
+  testWidgets('imlodagi xato so\'zning unutishlar tarixiga yoziladi',
+      (t) async {
+    await expectFits(
+        t,
+        SpellStage(
+          words: [_words.first],
+          onReview: (w, q) async {},
+          onDone: () {},
+        ),
+        const Size(800, 900));
+
+    // Noto\'g\'ri harflar ketma-ketligi: birinchi harflarni teskari
+    // tartibda bosamiz.
+    // Harf plitkalari ARALASHTIRILGAN tartibda chiziladi (kod buni
+    // maxsus kafolatlaydi), shuning uchun ularni ekrandagi tartibda
+    // bosish NOTO'G'RI so'z beradi.
+    const target = 'grandmother';
+    for (var i = 0; i < target.length; i++) {
+      final letters = find.byWidgetPredicate((w) =>
+          w is Text && (w.data ?? '').length == 1 && w.data != '_');
+      // Yig'ilayotgan so'z ham bitta harf bo'lib qolishi mumkin —
+      // shuning uchun OXIRIDAN sanaymiz: plitkalar doim oxirda.
+      final n = letters.evaluate().length;
+      if (n <= i) break;
+      await t.tap(letters.at(n - 1 - i), warnIfMissed: false);
+      await t.pump();
+    }
+    await t.pump(const Duration(milliseconds: 300));
+
+    expect(app.progress.srsFor('w1').lapses, greaterThan(0));
+
+    // Xato javobdan keyin plitkalar qaytariladigan taymer qoladi —
+    // test tugashidan oldin uni o'tkazib yuboramiz.
+    await t.pump(const Duration(seconds: 2));
+  });
 }
