@@ -77,46 +77,41 @@ Baza **to'liq**: uchala kitob ham oxirigacha yozilgan.
 | Coursebook | 159 / 159 |
 | Workbook | 80 / 80 |
 | Grammar Book | 77 / 77 |
-| **Jami** | **316 bet**, 10 455 band, 8978 lug'at yozuvi |
+| **Jami** | **316 bet**, 13 912 band, 8002 lug'at yozuvi |
 
-Butun bazada **atigi 33 band** audiosiz yopilmadi. Ular taxmin bilan
+Har bir bet skan bilan **so'zma-so'z solishtirildi** (`scanNote` — 316/316).
+
+Butun bazada **atigi 15 band** audiosiz yopilmadi. Ular taxmin bilan
 **to'ldirilmagan** — mashq ichida `⚠ AUDIODAN ANIQLANADI` deb ochiq
 qoldirilgan, chunki noto'g'ri javob yozgandan ko'ra ochiq qoldirgan
-yaxshiroq.
+yaxshiroq. Bu 15 ta band `check_content` bilan avtomatik sanaladi.
 
 ---
 
 ## A. Audio kerak — ochiq bandlar
 
+Bazada `⚠ AUDIODAN ANIQLANADI` deb ochiq qolgan **15 band**:
+
 | Bet | Mashq | Ochiq | Nima kerak |
 |-----|-------|-------|------------|
+| CB **11** | Ex.20 | 3 | o'qituvchilarning yoshi (Rashid, John Parry, Bob Davis) |
 | CB **95** | Ex.10a | 2 | Tokyo va New York ob-havo belgisi |
-| CB **97** | Ex.14 | 10 | o'n bashoratning W (ayol) / M (erkak) taqsimoti |
-| CB **101** | Ex.11 | 4 | MUST / CAN'T / CAN |
-| CB **107** | Ex.13 | 5 | ✓ yoki ✗ |
-| CB **109** | Ex.19 | 11 | qaysi javob qaysi savolga mos |
-| CB **111** | Ex.2 | 1 | 4-band: kim aytdi |
-| CB **11** | Ex.20 | 4 profil | o'qituvchilarning yoshi va tafsilotlari |
-| CB **14** | Ex.9 | 5 | besh ismni besh rasmga taqsimlash |
-| CB **15** | Ex.12b | 11 | qaysi tovush eshitiladi |
+| CB **101** | Ex.11 | 4 | MUST / CAN'T / CAN — jadvalning 4 qatori |
+| CB **107** | Ex.13 | 5 | ✓ yoki ✗ — jadvalning 5 qatori |
+| WB **88** | Ex.3 | 1 | munozarali band |
 
-⚠ Oxirgi uchtasi bu ro'yxatga **kech qo'shildi**: ular kitobning boshida
-joylashgan va dastlabki tekshiruvda e'tibordan chetda qolgan edi. Butun
-kitob bo'ylab qayta qidirib topildi.
+### Audio kerak, lekin band sifatida ochiq emas
 
-**CB 11, Ex.20** — Mortimer College o'qituvchilarining profillari. Ism va
-kasb kitobda bosilgan, YOSH esa faqat audioda aytiladi. Audio bo'lmasa ham
-mashqning gapirish qismi ('This is ... He's from ... He's a ...') to'liq
-bajariladi.
+Bu mashqlarda **mashqning o'zi to'liq**, faqat audio bergan QO'ShIMChA
+belgilash yo'q. O'quvchi mashqni audiosiz ham bajaradi:
 
-**CB 14, Ex.9** — beshta chizilgan yuz va beshta ism (Chris, Sally, Jim,
-Peter, Mary). Kitobda qaysi ism qaysi yuzga tegishli ekani KO'RSATILMAGAN.
-Lekin mashqning asosiy maqsadi — odamlarni TASVIRLASH — audiosiz ham
-bajariladi; har rasmning tavsifi bizda saqlangan.
-
-**CB 15, Ex.12b** — 12-mashqdagi 11 ta rasmdan qaysilarining tovushi
-eshitilishi. Kitobda namuna sifatida faqat 'a cat' (eshitiladi) va
-'a motorbike' (eshitilmaydi) berilgan.
+| Bet | Mashq | Audio nima beradi |
+|-----|-------|-------------------|
+| CB **14** | Ex.9 | besh yuzning ismi (tavsiflar to'liq saqlangan) |
+| CB **15** | Ex.12b | qaysi tovush eshitiladi (namuna gaplar berilgan) |
+| CB **97** | Ex.14 | o'n bashoratning W (ayol) / M (erkak) taqsimoti |
+| CB **109** | Ex.19 | savollar bosilmagan — 11 band tahlil bilan berilgan |
+| CB **111** | Ex.2 | 4-band: kim aytgani (1-3 komiksdan aniq) |
 
 ---
 
@@ -163,7 +158,7 @@ Uy egasi yangi ijarachiga qoidalarni aytadi. Jadvalda **10 qator**.
 keep pets = CAN'T · play loud music = CAN'T · use the telephone = CAN ·
 make the bed = MUST · keep the room clean = MUST · be home by 11 pm = MUST
 
-**4 tasi ochiq:**
+**4 tasi ochiq** — bazada `⚠ AUDIODAN ANIQLANADI` deb turibdi:
 
 | Qator | MUST / CAN'T / CAN? |
 |---|---|
@@ -172,27 +167,22 @@ make the bed = MUST · keep the room clean = MUST · be home by 11 pm = MUST
 | put posters on the walls | ? |
 | pay the rent on time | ? |
 
----
-
 ### 4. CB 107-bet, Ex.13 — Parij sayohati
 
-Etti qatordan **2 tasi kitobda berilgan**:
-Eiffel Tower = ✓ · Versailles = ✗
+Jadvalda **7 qator**. **2 tasi kitobda berilgan**:
+visit the Eiffel Tower = ✓ · go to Versailles = ✗
 
-**5 tasi ochiq** — betning hech yerida yozilmagan:
+**5 tasi ochiq** — bazada `⚠ AUDIODAN ANIQLANADI` deb turibdi:
 
 | Qator | ✓ / ✗ |
 |---|---|
-| the Louvre | ? |
-| Notre Dame | ? |
-| a boat trip on the Seine | ? |
-| Montmartre | ? |
-| the Champs-Elysees | ? |
+| go shopping at the Galleries Lafayette | ? |
+| see the Arc de Triomphe | ? |
+| go on a boat trip on the Seine | ? |
+| visit the Louvre | ? |
+| see Notre Dame | ? |
 
-⚠ Aniq nomlarni audio bilan solishtiring — betdagi ro'yxat tartibi
-saqlangan.
-
----
+⚠ Jadval tartibi kitobdagidek saqlangan.
 
 ### 5. CB 109-bet, Ex.19 — savol-javob mosligi
 
@@ -286,7 +276,7 @@ Har birida sabab JSON'ning `audioRequiredUz` maydonida yozilgan.
 
 ## Eng tez yo'l
 
-Yuqoridagi **A** bo'limidagi 6 ta mashqni tinglab javoblarni aytsangiz —
+Yuqoridagi **A** bo'limidagi 5 ta mashqni (jami 15 band) tinglab aytsangiz —
 JSON'larga kiritaman va baza **100 % yopiladi**. Butun audio pleerni
 qurish shart emas.
 
@@ -297,10 +287,13 @@ qurish shart emas.
 ## Qayta skanerlash kerak bo'lgan betlar
 
 Audioga aloqasi yo'q, lekin shu yerda qayd etilsin — bu betlar
-skanerga tushmagan:
+skanerga tushmagan. **PDF manbaning o'zida ham yo'q** (Coursebook PDF =
+159 sahifa, Grammar PDF = 77 sahifa — rendered PNG bilan bir xil),
+shuning uchun ularni faqat yangi skan to'ldiradi.
 
 | Kitob | Bet | Nima yo'q |
 |---|---|---|
-| Grammar | 71, 73 | Progress Tests 1 va 2 |
+| Grammar | 71, 73 | Progress Tests 1 va 2 (1-2 va 3-4-unitlar) |
 | Coursebook | 123 | Word List: 10-unit oxiri, 2-hikoya 2-epizodi, 11-12-unitlar, 13-unit boshi |
 | Coursebook | 4 | kirish qismidagi bet (mundarija bilan Introduction orasida) |
+| Workbook | 52 | Ex.3 — 'receive an invitation' ko'rsatmasiga mos rasm skanda topilmadi |
