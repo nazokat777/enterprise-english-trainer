@@ -257,9 +257,14 @@ class _IntroStageState extends State<_IntroStage> {
           padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
           child: Row(
             children: [
-              const Text('👋 Tanishuv',
-                  style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
-              const Spacer(),
+              // Sarlavha `Expanded` ichida: uzun matn yoki katta
+              // tizim shrifti bilan ham qatordan chiqib ketmaydi.
+              Expanded(
+                child: Text('👋 Tanishuv',
+                    overflow: TextOverflow.ellipsis,
+                    style: const
+                        TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+              ),
               Text('${_i + 1} / ${widget.words.length}',
                   style: const TextStyle(
                       fontWeight: FontWeight.w800, color: AppColors.brandPurple)),
@@ -468,7 +473,10 @@ class _MatchStageState extends State<MatchStage> {
           ),
         ),
         Expanded(
-          child: Padding(
+          // Paketda 8 so'z bo'lsa, ikkala ustun ham past telefon
+          // ekraniga sig'masdi va chiqib ketardi — o'quvchi oxirgi
+          // juftlarni ko'rmasdi va aylantirib ham bo'lmasdi.
+          child: SingleChildScrollView(
             padding: const EdgeInsets.all(16),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -668,9 +676,14 @@ class _SpellStageState extends State<SpellStage> {
         children: [
           Row(
             children: [
-              const Text('🎧 Eshiting va yozing',
-                  style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
-              const Spacer(),
+              // Sarlavha `Expanded` ichida: uzun matn yoki katta
+              // tizim shrifti bilan ham qatordan chiqib ketmaydi.
+              Expanded(
+                child: Text('🎧 Eshiting va yozing',
+                    overflow: TextOverflow.ellipsis,
+                    style: const
+                        TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+              ),
               Text('${_i + 1} / ${widget.words.length}',
                   style: const TextStyle(
                       fontWeight: FontWeight.w800, color: AppColors.brandPurple)),
@@ -840,9 +853,12 @@ class _BuildStageState extends State<BuildStage> {
         children: [
           Row(
             children: [
-              const Text('🧩 Iborani yig\'ing',
-                  style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
-              const Spacer(),
+              const Expanded(
+                child: Text('🧩 Iborani yig\'ing',
+                    overflow: TextOverflow.ellipsis,
+                    style:
+                        TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+              ),
               Text('${_i + 1} / ${widget.words.length}',
                   style: const TextStyle(
                       fontWeight: FontWeight.w800, color: AppColors.brandPurple)),
