@@ -75,7 +75,7 @@ class Progress extends ChangeNotifier {
     }
     completed.addAll(p.getStringList('completed') ?? []);
     _rolloverDay();
-    _refreshStreak();
+    await _refreshStreak();
     notifyListeners();
   }
 
@@ -88,7 +88,12 @@ class Progress extends ChangeNotifier {
   }
 
   /// Ilova ochilganda: streak uzilganini tekshirish (freeze bilan himoya).
-  void _refreshStreak() {
+  ///
+  /// MUHIM: natija DARHOL saqlanadi. Ilgari o'zgarish faqat xotirada
+  /// qolardi va ilova qayta ochilganda hisob eski holiga qaytardi —
+  /// ya'ni 200 coinga sotib olingan bitta muzlatgich cheksiz marta
+  /// ishlatilardi.
+  Future<void> _refreshStreak() async {
     if (lastActiveDate == null ||
         lastActiveDate == _today ||
         lastActiveDate == _yesterday) {
@@ -97,9 +102,13 @@ class Progress extends ChangeNotifier {
     // Bir kundan ko'p o'tkazib yuborilgan.
     if (streakFreezeCount > 0) {
       streakFreezeCount -= 1; // muzlatgich streak'ni saqlaydi
+      // O'tkazib yuborilgan kunlar YOPILDI. Bu qator bo'lmasa, ilova
+      // shu kuni yana ochilganda ikkinchi muzlatgich ham yechilardi.
+      lastActiveDate = _yesterday;
     } else {
       currentStreak = 0; // seriya uzildi
     }
+    await _save();
   }
 
   /// Bugungi faollik uchun streak'ni yangilaydi.
