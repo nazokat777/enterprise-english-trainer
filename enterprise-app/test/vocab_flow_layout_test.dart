@@ -91,6 +91,17 @@ void main() {
         unit: _unit, unitWords: _words, levelWords: _words),
   };
 
+  // Junk so'zlar olib tashlangach ikkita pack 3 so'zga qisqardi.
+  // Oqim shunday kichik pack bilan ham ishlashi kerak.
+  testWidgets('3 so\'zli pack oqimi ishlaydi', (t) async {
+    final small = VocabPack(
+        id: 'p2', name: 'Kichik pack', wordIds: ['w1', 'w2', 'w3']);
+    await expectFits(
+        t,
+        PackFlow(unit: _unit, pack: small, words: _words.take(3).toList()),
+        phone);
+  });
+
   for (final e in screens.entries) {
     testWidgets('${e.key} — 375px', (t) async {
       await expectFits(t, e.value(), phone);
