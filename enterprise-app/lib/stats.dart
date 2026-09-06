@@ -65,6 +65,9 @@ class Progress extends ChangeNotifier {
     currentStreak = p.getInt('streak') ?? 0;
     longestStreak = p.getInt('longestStreak') ?? 0;
     streakFreezeCount = p.getInt('freezes') ?? 0;
+    lastUnitNo = p.getInt('lastUnitNo') ?? 0;
+    lastExerciseId = p.getString('lastExerciseId') ?? '';
+    lastLabel = p.getString('lastLabel') ?? '';
     lastActiveDate = p.getString('lastActive');
     dailyGoal = p.getInt('dailyGoal') ?? 20;
     todayXp = p.getInt('todayXp') ?? 0;
@@ -174,6 +177,25 @@ class Progress extends ChangeNotifier {
     return true;
   }
 
+  // --- "Davom etish": oxirgi ochilgan mashq ---
+  //
+  // 51 unit va 1545 mashq ichida o'quvchi qayerda qolganini O'ZI
+  // eslab qolishi kerak edi. Xotirasi yomon odam uchun bu ilovadan
+  // foydalanishning eng katta to'sig'i.
+  int lastUnitNo = 0;
+  String lastExerciseId = '';
+  String lastLabel = '';
+
+  Future<void> rememberExercise(
+      {required int unit, required String id, required String label}) async {
+    if (lastExerciseId == id) return; // o'zgarmagan — yozishning hojati yo'q
+    lastUnitNo = unit;
+    lastExerciseId = id;
+    lastLabel = label;
+    await _save();
+    notifyListeners();
+  }
+
   /// Butun jarayonni boshidan boshlash.
   ///
   /// Sozlamalarda kerak: oiladagi boshqa odam ilovani noldan
@@ -188,6 +210,9 @@ class Progress extends ChangeNotifier {
     currentStreak = 0;
     longestStreak = 0;
     streakFreezeCount = 0;
+    lastUnitNo = 0;
+    lastExerciseId = '';
+    lastLabel = '';
     // null = hali hech qachon ishlatilmagan; load() shunga qaraydi.
     lastActiveDate = null;
     completed.clear();
@@ -295,6 +320,9 @@ class Progress extends ChangeNotifier {
     await p.setInt('streak', currentStreak);
     await p.setInt('longestStreak', longestStreak);
     await p.setInt('freezes', streakFreezeCount);
+    await p.setInt('lastUnitNo', lastUnitNo);
+    await p.setString('lastExerciseId', lastExerciseId);
+    await p.setString('lastLabel', lastLabel);
     if (lastActiveDate != null) await p.setString('lastActive', lastActiveDate!);
     await p.setInt('dailyGoal', dailyGoal);
     await p.setInt('todayXp', todayXp);

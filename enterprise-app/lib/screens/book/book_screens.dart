@@ -77,6 +77,10 @@ class BookUnitsScreen extends StatelessWidget {
           // Xato bilan tugatilgan mashqlar bir joyda — aks holda
           // "takrorlash kerak" belgisini 1545 mashq orasidan qidirish
           // kerak bo'lardi va u amalda hech kimga ko'rinmasdi.
+          if (progress.lastExerciseId.isNotEmpty) ...[
+            const EntranceFade(child: _ContinueBanner()),
+            const SizedBox(height: 10),
+          ],
           if (progress.needsReviewCount() > 0) ...[
             EntranceFade(child: _ReviewBanner(count: progress.needsReviewCount())),
             const SizedBox(height: 16),
@@ -87,6 +91,80 @@ class BookUnitsScreen extends StatelessWidget {
               child: _UnitCard(brief: units[i]),
             ),
         ],
+      ),
+    );
+  }
+}
+
+/// DAVOM ETISH — oxirgi ochilgan mashqqa bir bosishda qaytish.
+///
+/// 51 unit va 1545 mashq ichida o'quvchi qayerda qolganini O'ZI
+/// eslab qolishi kerak edi: qaysi unit, qaysi bo'lim, nechanchi
+/// mashq. Xotirasi yomon odam uchun bu eng katta to'siq edi.
+class _ContinueBanner extends StatelessWidget {
+  const _ContinueBanner();
+
+  /// Mashqni topib ochadi. Faqat BITTA unit yuklanadi — tez.
+  Future<void> _open(BuildContext context) async {
+    final u = await book.load(progress.lastUnitNo);
+    if (u == null) return;
+    for (final s in u.sections) {
+      for (final e in s.exercises) {
+        if (e.progressId != progress.lastExerciseId) continue;
+        if (!context.mounted) return;
+        await Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => ExercisePlayer(
+              exercise: e,
+              sectionTitle: s.titleUz,
+              unitLabel: u.displayLabel,
+            ),
+          ),
+        );
+        return;
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppColors.brandPurple.withValues(alpha: 0.12),
+      borderRadius: BorderRadius.circular(AppRadius.lg),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: () => _open(context),
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Row(
+            children: [
+              const Icon(Icons.play_circle_fill_rounded,
+                  color: AppColors.brandPurple, size: 26),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Davom etish',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 15,
+                            color: AppColors.brandPurple)),
+                    const SizedBox(height: 2),
+                    Text(progress.lastLabel,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            fontSize: 12.5, color: AppColors.muted(context))),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded,
+                  color: AppColors.brandPurple),
+            ],
+          ),
+        ),
       ),
     );
   }

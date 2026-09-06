@@ -65,6 +65,13 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   void initState() {
     super.initState();
     _queue.addAll(List<int>.generate(ex.tasks.length, (i) => i));
+    // "Davom etish" uchun joyni eslab qolamiz: o'quvchi 1545 mashq
+    // ichida qayerda qolganini o'zi eslashi shart emas.
+    progress.rememberExercise(
+      unit: ex.unitNo,
+      id: ex.progressId,
+      label: '${widget.sectionTitle} · ${ex.title}',
+    );
   }
 
   /// Hozir so'ralayotgan bandning indeksi.
