@@ -100,8 +100,15 @@ class _AppShellState extends State<AppShell> {
         children: [
           ?menu,
           const _LevelSwitcher(),
-          const Spacer(),
-          Wrap(
+          // TELEFONDA: ilgari bu yerda `Spacer()` turardi va o'ng tomondagi
+          // ko'rsatkichlar guruhi CHEKSIZ kenglik olardi — 375px ekranda
+          // panel 47 piksel oshib ketib, sariq-qora "overflow" chizig'i
+          // chiqardi. `Expanded` guruhga aniq kenglik beradi, `Wrap` esa
+          // sig'masa ikkinchi qatorga o'tadi.
+          Expanded(
+            child: Wrap(
+            alignment: WrapAlignment.end,
+            runAlignment: WrapAlignment.center,
             spacing: 12,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
@@ -117,6 +124,7 @@ class _AppShellState extends State<AppShell> {
                     : Icons.dark_mode_rounded),
               ),
             ],
+          ),
           ),
         ],
       ),

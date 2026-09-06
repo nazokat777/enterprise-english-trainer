@@ -59,10 +59,10 @@ void main() {
     // Jadval o'z ichida gorizontal aylanadi, shuning uchun uzun qator
     // ekranga sig'masa ham "overflow" xatosi chiqmaydi.
     expect(find.byType(SingleChildScrollView), findsNWidgets(2));
-    expect(tester_hasOverflow(t), isFalse);
+    expect(hasOverflow(t), isFalse);
   });
 }
 
 /// Flutter overflow xatosini bayroq sifatida qaytaradi.
-bool tester_hasOverflow(WidgetTester t) =>
+bool hasOverflow(WidgetTester t) =>
     t.takeException().toString().contains('overflowed');
