@@ -162,15 +162,22 @@ class _VoiceCardState extends State<_VoiceCard> {
       valueListenable: Tts.instance.englishVoiceFound,
       builder: (context, found, _) {
         final voice = Tts.instance.selectedVoice;
+        // Ba'zi brauzerlarda ovoz xizmati umuman yo'q — bunda har bir
+        // ovoz tugmasi JIMGINA ishlamasdi va sababi noma'lum qolardi.
+        final off = !Tts.instance.available;
         return _Card(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
-                  Icon(found ? Icons.record_voice_over_rounded
-                             : Icons.warning_amber_rounded,
-                      color: found ? AppColors.success : AppColors.homework),
+                  Icon(
+                      found && !off
+                          ? Icons.record_voice_over_rounded
+                          : Icons.warning_amber_rounded,
+                      color: found && !off
+                          ? AppColors.success
+                          : AppColors.homework),
                   const SizedBox(width: 10),
                   const Expanded(
                     child: Text('Talaffuz ovozi',
@@ -181,7 +188,11 @@ class _VoiceCardState extends State<_VoiceCard> {
               ),
               const SizedBox(height: 4),
               Text(
-                found
+                off
+                    ? 'Bu brauzerda ovoz xizmati ishlamaydi — talaffuz '
+                        'tugmalari jim qoladi. Boshqa brauzer yoki '
+                        'telefon ilovasida urinib ko\'ring.'
+                    : found
                     ? (voice ?? 'Qurilmaning inglizcha ovozi ishlatiladi.')
                     : 'Qurilmada inglizcha ovoz topilmadi. So\'zlar '
                         'noto\'g\'ri talaffuz qilinishi mumkin — telefon '
