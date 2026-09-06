@@ -9,6 +9,7 @@ import '../../stats.dart';
 import '../../theme.dart';
 import '../../services/tts.dart';
 import '../../widgets/correct_burst.dart';
+import '../../widgets/explain_text.dart';
 import '../../widgets/pressable3d.dart';
 import '../pack/pack_flow.dart' show RoundPlay;
 
@@ -367,7 +368,7 @@ class ExplanationCard extends StatelessWidget {
               size: 18, color: AppColors.brandPurple),
           const SizedBox(width: 10),
           Expanded(
-            child: Text(text,
+            child: ExplainText(text,
                 style: const TextStyle(fontSize: 13.5, height: 1.55)),
           ),
         ],

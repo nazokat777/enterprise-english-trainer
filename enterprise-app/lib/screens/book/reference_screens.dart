@@ -11,6 +11,7 @@ import '../../stats.dart';
 import '../../theme.dart';
 import '../../services/tts.dart';
 import '../../widgets/correct_burst.dart';
+import '../../widgets/explain_text.dart';
 import '../../widgets/pressable3d.dart';
 import '../pack/pack_flow.dart' show RoundPlay;
 
@@ -116,7 +117,8 @@ class RuleScreen extends StatelessWidget {
           color: Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.circular(AppRadius.md),
         ),
-        child: Text(text, style: const TextStyle(fontSize: 14, height: 1.6)),
+        child:
+            ExplainText(text, style: const TextStyle(fontSize: 14, height: 1.6)),
       );
 
   Widget _warn(String text, Color c, IconData icon) => Container(
