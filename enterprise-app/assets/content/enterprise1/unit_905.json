@@ -165,42 +165,48 @@
        "answer": "picture 3",
        "promptUz": "O'rmonga kelgan sahna",
        "whyUz": "3-rasmda oq jip ko'rinadi (o'rmonga yetib kelishgan).\n2-rasmda jip haqida GAPIRILADI, lekin ko'rinmaydi.",
-       "speak": "a  a jeep?"
+       "speak": "a  a jeep?",
+       "speakAnswer": "picture 3"
       },
       {
        "prompt": "b  a waterfall?",
        "answer": "pictures 8 and 9",
        "promptUz": "Hikoyaning oxirgi ikki rasmi",
        "whyUz": "8-rasmda sharsharani KO'RISHADI ('Oh, no! A waterfall!'),\n9-rasmda esa undan QULASHADI ('Help!').",
-       "speak": "b  a waterfall?"
+       "speak": "b  a waterfall?",
+       "speakAnswer": "pictures 8 and 9"
       },
       {
        "prompt": "c  a canoe?",
        "answer": "pictures 6, 7, 8 and 9",
        "promptUz": "Qayiq topilgandan keyingi hamma rasm",
        "whyUz": "6-rasmda qayiqni topishadi,\n7 va 8-rasmda qayiqda suzishadi,\n9-rasmda qayiq bilan qulashadi.",
-       "speak": "c  a canoe?"
+       "speak": "c  a canoe?",
+       "speakAnswer": "pictures 6, 7, 8 and 9"
       },
       {
        "prompt": "d  David and Sandra falling down the waterfall?",
        "answer": "picture 9",
        "promptUz": "Eng oxirgi rasm",
        "whyUz": "9-rasm — 'Help! Help! Help!' deb qulayotgan sahna.\n'to fall down' = qulamoq, tushib ketmoq.",
-       "speak": "d  David and Sandra falling down the waterfall?"
+       "speak": "d  David and Sandra falling down the waterfall?",
+       "speakAnswer": "picture 9"
       },
       {
        "prompt": "e  David and Sandra on the plane?",
        "answer": "picture 1",
        "promptUz": "Birinchi rasm",
        "whyUz": "1-rasm — 'ON THE PLANE ...' sarlavhasi bilan.\nDeraza va o'rindiqlar ko'rinadi.",
-       "speak": "e  David and Sandra on the plane?"
+       "speak": "e  David and Sandra on the plane?",
+       "speakAnswer": "picture 1"
       },
       {
        "prompt": "f  David and Sandra in a hotel room?",
        "answer": "picture 2",
        "promptUz": "Ikkinchi rasm",
        "whyUz": "2-rasm — 'AT THE HOTEL ...' sarlavhasi bilan.\nDIQQAT: bu rasmda faqat Devid ko'rinadi,\nSandra kadr tashqarisidan gapiradi.",
-       "speak": "f  David and Sandra in a hotel room?"
+       "speak": "f  David and Sandra in a hotel room?",
+       "speakAnswer": "picture 2"
       }
      ]
     },
@@ -293,28 +299,32 @@
        "answer": "It's boiling hot.",
        "promptUz": "Devid mehmonxonada nima degan edi?",
        "whyUz": "Matnda: 'It's boiling hot out there.'\nDIQQAT — savol qolipi: 'What's the weather LIKE?'\n= Ob-havo qanday?  ('like' javobda takrorlanmaydi).",
-       "speak": "1  What's the weather like in the jungle?"
+       "speak": "1  What's the weather like in the jungle?",
+       "speakAnswer": "It's boiling hot."
       },
       {
        "prompt": "2  Why is Sandra nervous in picture 3?",
        "answer": "Because she feels like someone is watching them all the time.",
        "promptUz": "Sandra o'zi buni tushuntirgan",
        "whyUz": "Matnda: 'I feel like someone is watching us all the time.'\nJavobda 'us' → 'them' ga o'zgaradi\n(Sandra o'zi haqida gapirgan, biz u haqida gapiryapmiz).\n'Why ...?' savoliga 'Because ...' bilan javob beriladi.",
-       "speak": "2  Why is Sandra nervous in picture 3?"
+       "speak": "2  Why is Sandra nervous in picture 3?",
+       "speakAnswer": "Because she feels like someone is watching them all the time."
       },
       {
        "prompt": "3  Does David like the jungle? Why/Why not?",
        "answer": "Yes, he does. He thinks it's nice and peaceful.",
        "promptUz": "Devid Sandraga qanday javob bergan?",
        "whyUz": "Matnda: 'Don't be silly. It's so nice and peaceful here.'\nSandraga QARAMA-QARSHI fikrda.\nQisqa javob: 'Yes, he does' ('Does ...?' savoliga).",
-       "speak": "3  Does David like the jungle? Why/Why not?"
+       "speak": "3  Does David like the jungle? Why/Why not?",
+       "speakAnswer": "Yes, he does. He thinks it's nice and peaceful."
       },
       {
        "prompt": "4  Who hears the Jivaro Indians first?",
        "answer": "Sandra does. She hears the drums.",
        "promptUz": "4-rasmda kim gapiryapti?",
        "whyUz": "4-rasmda SANDRA: 'Sh!!! Listen! Can you hear the drums?'\nDevid esa faqat 5-rasmda ko'radi.\n'first' = birinchi bo'lib.\nQisqa javob: 'Sandra does.'",
-       "speak": "4  Who hears the Jivaro Indians first?"
+       "speak": "4  Who hears the Jivaro Indians first?",
+       "speakAnswer": "Sandra does. She hears the drums."
       },
       {
        "prompt": "5  What does \"Watch your head!\" mean?",
@@ -328,14 +338,16 @@
        "answer": "Hurry up! / Let's go quickly!",
        "promptUz": "Qayiqda eshkak eshayotganda aytilgan",
        "whyUz": "'Come on!' = qani!, tezroq!, davom et!\nBu — shoshiltiruvchi yoki dalda beruvchi undov.\nSo'zma-so'z tarjima qilinmaydi.",
-       "speak": "5  What does \"Come on!\" mean?"
+       "speak": "5  What does \"Come on!\" mean?",
+       "speakAnswer": "Hurry up! / Let's go quickly!"
       },
       {
        "prompt": "5  What does \"Calm down.\" mean?",
        "answer": "Relax! / Don't panic!",
        "promptUz": "Devid Sandraga aytgan",
        "whyUz": "'Calm down' = tinchlan, xotirjam bo'l, hovuridan tush.\n'calm' = tinch, xotirjam (4-mashqda 'nervous' ning aksi).",
-       "speak": "5  What does \"Calm down.\" mean?"
+       "speak": "5  What does \"Calm down.\" mean?",
+       "speakAnswer": "Relax! / Don't panic!"
       }
      ]
     },
@@ -352,27 +364,33 @@
      "tasks": [
       {
        "left": "silly",
-       "right": "clever"
+       "right": "clever",
+       "speakAnswer": "clever"
       },
       {
        "left": "nervous",
-       "right": "calm"
+       "right": "calm",
+       "speakAnswer": "calm"
       },
       {
        "left": "dangerous",
-       "right": "safe"
+       "right": "safe",
+       "speakAnswer": "safe"
       },
       {
        "left": "nice",
-       "right": "horrible"
+       "right": "horrible",
+       "speakAnswer": "horrible"
       },
       {
        "left": "peaceful",
-       "right": "noisy"
+       "right": "noisy",
+       "speakAnswer": "noisy"
       },
       {
        "left": "boiling hot",
-       "right": "freezing cold"
+       "right": "freezing cold",
+       "speakAnswer": "freezing cold"
       }
      ]
     },
@@ -392,42 +410,48 @@
        "answer": "Don't be silly.",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "Devidning 68-betdagi gapi.\nBuyruq gap: 'Don't be' + sifat.",
-       "speak": "silly"
+       "speak": "silly",
+       "speakAnswer": "Don't be silly."
       },
       {
        "prompt": "nervous",
        "answer": "The jungle makes me nervous.",
        "promptUz": "Sandraning his-tuyg'usi",
        "whyUz": "Hikoyadan: 'It makes me nervous.'\n'make somebody + sifat' — 'to' kerak emas.",
-       "speak": "nervous"
+       "speak": "nervous",
+       "speakAnswer": "The jungle makes me nervous."
       },
       {
        "prompt": "dangerous",
        "answer": "Do you think the Jivaro Indians are dangerous?",
        "promptUz": "Sandraning samolyotdagi savoli",
        "whyUz": "Hikoyadan olingan.\n'to be' dan keyin sifat turadi.",
-       "speak": "dangerous"
+       "speak": "dangerous",
+       "speakAnswer": "Do you think the Jivaro Indians are dangerous?"
       },
       {
        "prompt": "nice",
        "answer": "It's so nice and peaceful here.",
        "promptUz": "Devidning o'rmon haqidagi fikri",
        "whyUz": "Hikoyadan olingan.\n'so' — sifatni kuchaytiradi.",
-       "speak": "nice"
+       "speak": "nice",
+       "speakAnswer": "It's so nice and peaceful here."
       },
       {
        "prompt": "peaceful",
        "answer": "The village is very peaceful.",
        "promptUz": "Tinch joy haqida",
        "whyUz": "'peaceful' — joy haqida ishlatiladi.\n'very' — kuchaytirgich.",
-       "speak": "peaceful"
+       "speak": "peaceful",
+       "speakAnswer": "The village is very peaceful."
       },
       {
        "prompt": "boiling hot",
        "answer": "It's boiling hot out there.",
        "promptUz": "Devidning ob-havo haqidagi gapi",
        "whyUz": "Hikoyadan olingan.\nOb-havo haqida gapirganda ega — 'it'.",
-       "speak": "boiling hot"
+       "speak": "boiling hot",
+       "speakAnswer": "It's boiling hot out there."
       }
      ]
     }
@@ -580,7 +604,8 @@
         "— (hech narsa)"
        ],
        "whyUz": "Maqola BIRINCHI marta aytilyapti → A/AN.\n'article' /ˈɑːtɪkl/ — UNLI tovush bilan boshlanadi → AN.",
-       "speak": "4  ... to write ............ article ..."
+       "speak": "4  ... to write ............ article ...",
+       "speakAnswer": "an"
       },
       {
        "prompt": "5  ... about ............ Amazon rainforest.",
@@ -592,7 +617,8 @@
         "— (hech narsa)"
        ],
        "whyUz": "'the Amazon rainforest' — ANIQ, yagona joy → THE.\nAmazon daryosi bilan bir xil qoida.",
-       "speak": "5  ... about ............ Amazon rainforest."
+       "speak": "5  ... about ............ Amazon rainforest.",
+       "speakAnswer": "the"
       },
       {
        "prompt": "6  In the jungle, ............ Sandra feels nervous.",
@@ -616,7 +642,8 @@
         "— (hech narsa)"
        ],
        "whyUz": "'the Jivaro Indians' — QABILA nomi → THE SHART.\nQoidada aynan shu misol berilgan.",
-       "speak": "7  Suddenly, she hears ............ Jivaro Indians."
+       "speak": "7  Suddenly, she hears ............ Jivaro Indians.",
+       "speakAnswer": "the"
       },
       {
        "prompt": "8  They run to ............ Amazon River ...",
@@ -628,7 +655,8 @@
         "— (hech narsa)"
        ],
        "whyUz": "'the Amazon River' — DARYO nomi → THE SHART.\nQoidada aynan shu misol berilgan.",
-       "speak": "8  They run to ............ Amazon River ..."
+       "speak": "8  They run to ............ Amazon River ...",
+       "speakAnswer": "the"
       },
       {
        "prompt": "9  ... and get in ............ canoe.",
@@ -652,7 +680,8 @@
         "— (hech narsa)"
        ],
        "whyUz": "8-bandda 'the Amazon River' aytilgan → endi THE river.\nILGARI AYTILGAN narsa → THE.",
-       "speak": "10  David starts paddling down ............ river ..."
+       "speak": "10  David starts paddling down ............ river ...",
+       "speakAnswer": "the"
       },
       {
        "prompt": "11  ... in ............ canoe.",
@@ -664,7 +693,8 @@
         "— (hech narsa)"
        ],
        "whyUz": "9-bandda 'A canoe' aytilgan → endi THE canoe.\nBu — A → THE o'zgarishining eng aniq misoli.",
-       "speak": "11  ... in ............ canoe."
+       "speak": "11  ... in ............ canoe.",
+       "speakAnswer": "the"
       },
       {
        "prompt": "12  Suddenly, they see ............ waterfall.",
@@ -761,7 +791,8 @@
         "rainy",
         "freezing cold",
         "snowy"
-       ]
+       ],
+       "speakAnswer": "boiling hot"
       },
       {
        "prompt": "sunglasses",
@@ -771,7 +802,8 @@
         "rainy",
         "freezing cold",
         "snowy"
-       ]
+       ],
+       "speakAnswer": "boiling hot"
       },
       {
        "prompt": "swimming-costume",
@@ -781,7 +813,8 @@
         "rainy",
         "freezing cold",
         "snowy"
-       ]
+       ],
+       "speakAnswer": "boiling hot"
       },
       {
        "prompt": "umbrella",
@@ -791,7 +824,8 @@
         "rainy",
         "freezing cold",
         "snowy"
-       ]
+       ],
+       "speakAnswer": "rainy"
       },
       {
        "prompt": "gloves",
@@ -801,7 +835,8 @@
         "rainy",
         "freezing cold",
         "snowy"
-       ]
+       ],
+       "speakAnswer": "freezing cold"
       },
       {
        "prompt": "jacket",
@@ -811,7 +846,8 @@
         "rainy",
         "freezing cold",
         "snowy"
-       ]
+       ],
+       "speakAnswer": "snowy"
       }
      ]
     },
@@ -831,42 +867,48 @@
        "answer": "It will be boiling hot tomorrow, so don't forget to take your hat.",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "Qolip: It will be + ob-havo + tomorrow, so don't forget\nto take your + buyum.",
-       "speak": "boiling hot + hat"
+       "speak": "boiling hot + hat",
+       "speakAnswer": "It will be boiling hot tomorrow, so don't forget to take your hat."
       },
       {
        "prompt": "rainy + umbrella",
        "answer": "It will be rainy tomorrow, so don't forget to take your umbrella.",
        "promptUz": "Yomg'ir + soyabon",
        "whyUz": "'rainy' = yomg'irli.\nSoyabon yomg'irdan himoya qiladi.",
-       "speak": "rainy + umbrella"
+       "speak": "rainy + umbrella",
+       "speakAnswer": "It will be rainy tomorrow, so don't forget to take your umbrella."
       },
       {
        "prompt": "boiling hot + sunglasses",
        "answer": "It will be boiling hot tomorrow, so don't forget to take your sunglasses.",
        "promptUz": "Issiq + ko'zoynak",
        "whyUz": "'sunglasses' ko'plikda — 'your sunglasses'.",
-       "speak": "boiling hot + sunglasses"
+       "speak": "boiling hot + sunglasses",
+       "speakAnswer": "It will be boiling hot tomorrow, so don't forget to take your sunglasses."
       },
       {
        "prompt": "boiling hot + swimming-costume",
        "answer": "It will be boiling hot tomorrow, so don't forget to take your swimming-costume.",
        "promptUz": "Issiq + cho'milish kiyimi",
        "whyUz": "Issiq kunda suvga tushiladi.",
-       "speak": "boiling hot + swimming-costume"
+       "speak": "boiling hot + swimming-costume",
+       "speakAnswer": "It will be boiling hot tomorrow, so don't forget to take your swimming-costume."
       },
       {
        "prompt": "freezing cold + gloves",
        "answer": "It will be freezing cold tomorrow, so don't forget to take your gloves.",
        "promptUz": "Sovuq + qo'lqop",
        "whyUz": "'freezing cold' = qahraton sovuq.\n'gloves' ko'plikda.",
-       "speak": "freezing cold + gloves"
+       "speak": "freezing cold + gloves",
+       "speakAnswer": "It will be freezing cold tomorrow, so don't forget to take your gloves."
       },
       {
        "prompt": "snowy + jacket",
        "answer": "It will be snowy tomorrow, so don't forget to take your jacket.",
        "promptUz": "Qor + kurtka",
        "whyUz": "'snowy' = qorli.\nKurtka 'freezing cold' bilan ham to'g'ri keladi.",
-       "speak": "snowy + jacket"
+       "speak": "snowy + jacket",
+       "speakAnswer": "It will be snowy tomorrow, so don't forget to take your jacket."
       }
      ]
     },
@@ -886,56 +928,64 @@
        "answer": "The Jivaro Indians will catch and kill them.",
        "promptUz": "KITOBDAGI NAMUNA (ijobiy)",
        "whyUz": "Ikki fe'l 'and' bilan bog'langan —\n'will' faqat BIR MARTA yoziladi:\n'will catch and kill' ('will catch and will kill' shart emas).",
-       "speak": "the Jivaro Indians catch/kill them  (IJOBIY)"
+       "speak": "the Jivaro Indians catch/kill them  (IJOBIY)",
+       "speakAnswer": "The Jivaro Indians will catch and kill them."
       },
       {
        "prompt": "the Jivaro Indians/help them  (SALBIY)",
        "answer": "They won't help them.",
        "promptUz": "KITOBDAGI NAMUNA (salbiy)",
        "whyUz": "'won't' = will not.\nEga takrorlanmasligi uchun 'They' ishlatilgan.",
-       "speak": "the Jivaro Indians/help them  (SALBIY)"
+       "speak": "the Jivaro Indians/help them  (SALBIY)",
+       "speakAnswer": "They won't help them."
       },
       {
        "prompt": "they/die",
        "answer": "They will die. / They won't die.",
        "promptUz": "O'lmoq",
        "whyUz": "'to die' = o'lmoq.\nIkkala variant ham grammatik jihatdan to'g'ri —\nbashorat sizning fikringiz.",
-       "speak": "they/die"
+       "speak": "they/die",
+       "speakAnswer": "They will die. / They won't die."
       },
       {
        "prompt": "they/break their legs",
        "answer": "They will break their legs. / They won't break their legs.",
        "promptUz": "Oyoqlarini sindirmoq",
        "whyUz": "'to break' = sindirmoq.\n'their legs' — egalik olmoshi ('the legs' emas).",
-       "speak": "they/break their legs"
+       "speak": "they/break their legs",
+       "speakAnswer": "They will break their legs. / They won't break their legs."
       },
       {
        "prompt": "a crocodile/eat them",
        "answer": "A crocodile will eat them. / A crocodile won't eat them.",
        "promptUz": "Timsoh yeb qo'yishi mumkin",
        "whyUz": "'a crocodile' — birinchi marta aytilyapti → A.\nAmazon daryosida timsohlar bor.",
-       "speak": "a crocodile/eat them"
+       "speak": "a crocodile/eat them",
+       "speakAnswer": "A crocodile will eat them. / A crocodile won't eat them."
       },
       {
        "prompt": "they/drown",
        "answer": "They will drown. / They won't drown.",
        "promptUz": "Suvda cho'kib ketmoq",
        "whyUz": "'to drown' = cho'kib ketmoq (suvda halok bo'lmoq).\nSharsharadan qulaganda eng ehtimolli xavf.",
-       "speak": "they/drown"
+       "speak": "they/drown",
+       "speakAnswer": "They will drown. / They won't drown."
       },
       {
        "prompt": "they/hurt themselves",
        "answer": "They will hurt themselves. / They won't hurt themselves.",
        "promptUz": "Jarohat olmoq",
        "whyUz": "'to hurt oneself' = o'zini jarohatlamoq.\n'themselves' — o'zlik olmoshi (harakat egaga qaytadi).",
-       "speak": "they/hurt themselves"
+       "speak": "they/hurt themselves",
+       "speakAnswer": "They will hurt themselves. / They won't hurt themselves."
       },
       {
        "prompt": "David/save Sandra",
        "answer": "David will save Sandra. / David won't save Sandra.",
        "promptUz": "Qutqarmoq",
        "whyUz": "'to save' = qutqarmoq.\nHikoyada Devid doim tinchlantiruvchi va tadbirkor tomon —\nshuning uchun bu bashorat ehtimolli.",
-       "speak": "David/save Sandra"
+       "speak": "David/save Sandra",
+       "speakAnswer": "David will save Sandra. / David won't save Sandra."
       }
      ]
     }

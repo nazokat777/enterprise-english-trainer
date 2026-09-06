@@ -97,7 +97,8 @@
         "buy clothes",
         "order food"
        ],
-       "whyUz": "'tell THE time' — 'the' shart. 'say the time' EMAS."
+       "whyUz": "'tell THE time' — 'the' shart. 'say the time' EMAS.",
+       "speakAnswer": "tell the time"
       },
       {
        "prompt": "uy hayvonlari haqida so'rash",
@@ -109,7 +110,8 @@
         "buy clothes",
         "order food"
        ],
-       "whyUz": "'ask ABOUT' — biror mavzu haqida so'ramoq. 'a pet' — uy hayvoni."
+       "whyUz": "'ask ABOUT' — biror mavzu haqida so'ramoq. 'a pet' — uy hayvoni.",
+       "speakAnswer": "ask about pets"
       },
       {
        "prompt": "kiyim sotib olish",
@@ -121,7 +123,8 @@
         "ask about pets",
         "order food"
        ],
-       "whyUz": "'clothes' — doim KO'PLIKDA. 'a clothe' yo'q."
+       "whyUz": "'clothes' — doim KO'PLIKDA. 'a clothe' yo'q.",
+       "speakAnswer": "buy clothes"
       },
       {
        "prompt": "ovqat buyurtma qilish",
@@ -133,7 +136,8 @@
         "ask about pets",
         "buy clothes"
        ],
-       "whyUz": "'order' — buyurtma qilmoq (restoranda). 'food' sanalmaydigan ot."
+       "whyUz": "'order' — buyurtma qilmoq (restoranda). 'food' sanalmaydigan ot.",
+       "speakAnswer": "order food"
       },
       {
        "prompt": "taklifni qabul qilish",
@@ -145,7 +149,8 @@
         "ask about pets",
         "buy clothes"
        ],
-       "whyUz": "'accept' = qabul qilmoq. 'an offer' = taklif."
+       "whyUz": "'accept' = qabul qilmoq. 'an offer' = taklif.",
+       "speakAnswer": "accept offers"
       },
       {
        "prompt": "taklifni rad etish",
@@ -157,7 +162,8 @@
         "ask about pets",
         "buy clothes"
        ],
-       "whyUz": "'refuse' = rad etmoq. 'accept' ning aksi."
+       "whyUz": "'refuse' = rad etmoq. 'accept' ning aksi.",
+       "speakAnswer": "refuse offers"
       }
      ]
     },
@@ -183,7 +189,8 @@
         "question words",
         "present continuous"
        ],
-       "whyUz": "always, usually, often, sometimes, never. Fe'ldan OLDIN turadi."
+       "whyUz": "always, usually, often, sometimes, never. Fe'ldan OLDIN turadi.",
+       "speakAnswer": "adverbs of frequency"
       },
       {
        "prompt": "vaqt predloglari",
@@ -195,7 +202,8 @@
         "question words",
         "present continuous"
        ],
-       "whyUz": "at (soat), on (kun), in (oy, yil, davr)."
+       "whyUz": "at (soat), on (kun), in (oy, yil, davr).",
+       "speakAnswer": "prepositions of time"
       },
       {
        "prompt": "so'roq so'zlari",
@@ -207,7 +215,8 @@
         "prepositions of time",
         "present continuous"
        ],
-       "whyUz": "what, where, when, who, why, how, which, whose."
+       "whyUz": "what, where, when, who, why, how, which, whose.",
+       "speakAnswer": "question words"
       },
       {
        "prompt": "hozirgi davomli zamon",
@@ -219,7 +228,8 @@
         "prepositions of time",
         "question words"
        ],
-       "whyUz": "am/is/are + fe'l-ing. HOZIR sodir bo'layotgan ish."
+       "whyUz": "am/is/are + fe'l-ing. HOZIR sodir bo'layotgan ish.",
+       "speakAnswer": "present continuous"
       },
       {
        "prompt": "ko'plik",
@@ -231,7 +241,8 @@
         "prepositions of time",
         "question words"
        ],
-       "whyUz": "Unit 3 da boshlangan: -s, -es, -ies."
+       "whyUz": "Unit 3 da boshlangan: -s, -es, -ies.",
+       "speakAnswer": "plurals"
       },
       {
        "prompt": "sanaladigan otlar",
@@ -243,7 +254,8 @@
         "prepositions of time",
         "question words"
        ],
-       "whyUz": "Bir, ikki, uch deb sanaladigan: a book, two books."
+       "whyUz": "Bir, ikki, uch deb sanaladigan: a book, two books.",
+       "speakAnswer": "countable nouns"
       },
       {
        "prompt": "sanalmaydigan otlar",
@@ -255,7 +267,8 @@
         "prepositions of time",
         "question words"
        ],
-       "whyUz": "Sanalmaydi: water, milk, rice. Ko'plik shakli yo'q."
+       "whyUz": "Sanalmaydi: water, milk, rice. Ko'plik shakli yo'q.",
+       "speakAnswer": "uncountable nouns"
       },
       {
        "prompt": "qancha? (sanalmaydigan)",
@@ -267,7 +280,8 @@
         "prepositions of time",
         "question words"
        ],
-       "whyUz": "How much water? How much money?"
+       "whyUz": "How much water? How much money?",
+       "speakAnswer": "how much"
       },
       {
        "prompt": "nechta? (sanaladigan)",
@@ -279,7 +293,8 @@
         "prepositions of time",
         "question words"
        ],
-       "whyUz": "How many books? How many people?"
+       "whyUz": "How many books? How many people?",
+       "speakAnswer": "how many"
       }
      ]
     },

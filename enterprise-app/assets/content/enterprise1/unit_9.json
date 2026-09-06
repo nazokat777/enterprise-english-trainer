@@ -42,7 +42,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture A — small white boats tied up at a quiet harbour with hills behind"
+       "speak": "Picture A — small white boats tied up at a quiet harbour with hills behind",
+       "speakAnswer": "fishing boats"
       },
       {
        "prompt": "Picture B — an old low house with a thatched roof and a wheelbarrow outside",
@@ -60,7 +61,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture B — an old low house with a thatched roof and a wheelbarrow outside"
+       "speak": "Picture B — an old low house with a thatched roof and a wheelbarrow outside",
+       "speakAnswer": "a stone cottage"
       },
       {
        "prompt": "Picture C — a room with tables, chairs and people eating a meal",
@@ -78,7 +80,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture C — a room with tables, chairs and people eating a meal"
+       "speak": "Picture C — a room with tables, chairs and people eating a meal",
+       "speakAnswer": "a restaurant"
       },
       {
        "prompt": "Picture D — a two-wheeled vehicle with a basket, leaning under a tree",
@@ -96,7 +99,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture D — a two-wheeled vehicle with a basket, leaning under a tree"
+       "speak": "Picture D — a two-wheeled vehicle with a basket, leaning under a tree",
+       "speakAnswer": "a bicycle"
       },
       {
        "prompt": "Picture E — a stone building with a sign and a basket of walking sticks outside",
@@ -114,7 +118,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture E — a stone building with a sign and a basket of walking sticks outside"
+       "speak": "Picture E — a stone building with a sign and a basket of walking sticks outside",
+       "speakAnswer": "a souvenir shop"
       },
       {
        "prompt": "Picture F — a large plane on wet ground with luggage carts beside it",
@@ -132,7 +137,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture F — a large plane on wet ground with luggage carts beside it"
+       "speak": "Picture F — a large plane on wet ground with luggage carts beside it",
+       "speakAnswer": "an airport"
       },
       {
        "prompt": "Picture G — flat green land divided by low stone walls",
@@ -150,7 +156,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture G — flat green land divided by low stone walls"
+       "speak": "Picture G — flat green land divided by low stone walls",
+       "speakAnswer": "green fields"
       },
       {
        "prompt": "Picture H — a grey farm animal with long ears standing in a field",
@@ -168,7 +175,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture H — a grey farm animal with long ears standing in a field"
+       "speak": "Picture H — a grey farm animal with long ears standing in a field",
+       "speakAnswer": "a donkey"
       },
       {
        "prompt": "Picture I — a big white and red ship carrying people across the sea",
@@ -186,7 +194,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture I — a big white and red ship carrying people across the sea"
+       "speak": "Picture I — a big white and red ship carrying people across the sea",
+       "speakAnswer": "a ferry boat"
       },
       {
        "prompt": "Picture J — a house with flowers and a sign saying FIONA'S GUEST HOUSE",
@@ -204,7 +213,8 @@
         "a guest house",
         "green fields"
        ],
-       "speak": "Picture J — a house with flowers and a sign saying FIONA'S GUEST HOUSE"
+       "speak": "Picture J — a house with flowers and a sign saying FIONA'S GUEST HOUSE",
+       "speakAnswer": "a guest house"
       }
      ]
     },
@@ -224,63 +234,72 @@
        "answer": "There were donkeys.",
        "promptUz": "Ko'plik ot — qaysi 'be' shakli?",
        "whyUz": "KO'PLIK ot → THERE WERE.\nEshak — eski transport vositasi, o'shanda bo'lgan.",
-       "speak": "Fifty years ago there ............ (donkeys)."
+       "speak": "Fifty years ago there ............ (donkeys).",
+       "speakAnswer": "There were donkeys."
       },
       {
        "prompt": "Fifty years ago there ............ (fishing boats).",
        "answer": "There were fishing boats.",
        "promptUz": "Ko'plik ot",
        "whyUz": "KO'PLIK → THERE WERE.\nBaliq ovi — orolning an'anaviy kasbi.",
-       "speak": "Fifty years ago there ............ (fishing boats)."
+       "speak": "Fifty years ago there ............ (fishing boats).",
+       "speakAnswer": "There were fishing boats."
       },
       {
        "prompt": "Fifty years ago there ............ (stone cottages).",
        "answer": "There were stone cottages.",
        "promptUz": "Ko'plik ot",
        "whyUz": "KO'PLIK → THERE WERE.\nTosh kulbalar — orolning eski uylari.",
-       "speak": "Fifty years ago there ............ (stone cottages)."
+       "speak": "Fifty years ago there ............ (stone cottages).",
+       "speakAnswer": "There were stone cottages."
       },
       {
        "prompt": "Fifty years ago there ............ (green fields).",
        "answer": "There were green fields.",
        "promptUz": "Ko'plik ot",
        "whyUz": "KO'PLIK → THERE WERE.\nDalalar hozir ham bor — ular o'zgarmagan.",
-       "speak": "Fifty years ago there ............ (green fields)."
+       "speak": "Fifty years ago there ............ (green fields).",
+       "speakAnswer": "There were green fields."
       },
       {
        "prompt": "Fifty years ago there ............ (an airport).",
        "answer": "There wasn't an airport.",
        "promptUz": "Aeroport eski orolda bo'lganmi?",
        "whyUz": "BIRLIK va INKOR → THERE WASN'T.\nAeroport — zamonaviy qurilma, ellik yil oldin bo'lmagan.",
-       "speak": "Fifty years ago there ............ (an airport)."
+       "speak": "Fifty years ago there ............ (an airport).",
+       "speakAnswer": "There wasn't an airport."
       },
       {
        "prompt": "Fifty years ago there ............ (ferry boats).",
        "answer": "There weren't any ferry boats.",
        "promptUz": "Ko'plik va inkor",
        "whyUz": "KO'PLIK va INKOR → THERE WEREN'T ANY.\nINKOR gapda ANY ishlatiladi.",
-       "speak": "Fifty years ago there ............ (ferry boats)."
+       "speak": "Fifty years ago there ............ (ferry boats).",
+       "speakAnswer": "There weren't any ferry boats."
       },
       {
        "prompt": "Fifty years ago there ............ (restaurants).",
        "answer": "There weren't any restaurants.",
        "promptUz": "Ko'plik va inkor",
        "whyUz": "KO'PLIK va INKOR → THERE WEREN'T ANY.\nRestoran — sayyohlar uchun, o'shanda sayyoh kam edi.",
-       "speak": "Fifty years ago there ............ (restaurants)."
+       "speak": "Fifty years ago there ............ (restaurants).",
+       "speakAnswer": "There weren't any restaurants."
       },
       {
        "prompt": "Fifty years ago there ............ (souvenir shops).",
        "answer": "There weren't any souvenir shops.",
        "promptUz": "Ko'plik va inkor",
        "whyUz": "KO'PLIK va INKOR → THERE WEREN'T ANY.\nSovg'a do'koni ham sayyohlar uchun.",
-       "speak": "Fifty years ago there ............ (souvenir shops)."
+       "speak": "Fifty years ago there ............ (souvenir shops).",
+       "speakAnswer": "There weren't any souvenir shops."
       },
       {
        "prompt": "Fifty years ago there ............ (guest houses).",
        "answer": "There weren't any guest houses.",
        "promptUz": "Ko'plik va inkor",
        "whyUz": "KO'PLIK va INKOR → THERE WEREN'T ANY.\nMehmon uyi — sayyohlar uchun turar joy.",
-       "speak": "Fifty years ago there ............ (guest houses)."
+       "speak": "Fifty years ago there ............ (guest houses).",
+       "speakAnswer": "There weren't any guest houses."
       }
      ]
     },
@@ -304,7 +323,8 @@
         "airport",
         "port"
        ],
-       "whyUz": "AEROPORT yo'q edi.\n63-betdagi maqolada: 'There wasn't an airport or any ferry boats in those days.'\nBandargoh (port) esa bor edi — qayiqlar to'xtagan."
+       "whyUz": "AEROPORT yo'q edi.\n63-betdagi maqolada: 'There wasn't an airport or any ferry boats in those days.'\nBandargoh (port) esa bor edi — qayiqlar to'xtagan.",
+       "speakAnswer": "airport"
       },
       {
        "prompt": "2  Life was ............ .",
@@ -314,7 +334,8 @@
         "difficult",
         "easy"
        ],
-       "whyUz": "Hayot QIYIN edi.\nMaqolada: 'Life was difficult. We didn't have much money.'\nBugun esa: 'Life is very easy now.'"
+       "whyUz": "Hayot QIYIN edi.\nMaqolada: 'Life was difficult. We didn't have much money.'\nBugun esa: 'Life is very easy now.'",
+       "speakAnswer": "difficult"
       },
       {
        "prompt": "3  Inishmore was a ............ place back then.",
@@ -324,7 +345,8 @@
         "quiet",
         "noisy"
        ],
-       "whyUz": "TINCH joy edi.\nMaqolada: 'Inishmore was a quiet place.'\nBugun esa: 'Inishmore is very busy now.'\n'back then' = o'sha paytda."
+       "whyUz": "TINCH joy edi.\nMaqolada: 'Inishmore was a quiet place.'\nBugun esa: 'Inishmore is very busy now.'\n'back then' = o'sha paytda.",
+       "speakAnswer": "quiet"
       },
       {
        "prompt": "4  The people have got new, modern ............ .",
@@ -334,7 +356,8 @@
         "houses",
         "cottages"
        ],
-       "whyUz": "Bugun ular yangi, zamonaviy UYLARGA ega.\nMaqolada: 'We have got new, modern houses.'\nEllik yil oldin esa: 'we only had small stone COTTAGES'."
+       "whyUz": "Bugun ular yangi, zamonaviy UYLARGA ega.\nMaqolada: 'We have got new, modern houses.'\nEllik yil oldin esa: 'we only had small stone COTTAGES'.",
+       "speakAnswer": "houses"
       },
       {
        "prompt": "5  Inishmore is very ............ now.",
@@ -344,7 +367,8 @@
         "busy",
         "boring"
        ],
-       "whyUz": "Hozir juda GAVJUM.\nMaqolada: 'Inishmore is very busy now.'\n3-band bilan solishtiring: ilgari 'quiet', hozir 'busy'."
+       "whyUz": "Hozir juda GAVJUM.\nMaqolada: 'Inishmore is very busy now.'\n3-band bilan solishtiring: ilgari 'quiet', hozir 'busy'.",
+       "speakAnswer": "busy"
       },
       {
        "prompt": "6  ... and lots of ............ shops.",
@@ -354,7 +378,8 @@
         "souvenir",
         "clothes"
        ],
-       "whyUz": "SOVG'A do'konlari (sayyohlar uchun).\nMaqolada: 'lots of souvenir shops'.\nE-rasmda ham 'The Souvenir Shop' yozuvi bor."
+       "whyUz": "SOVG'A do'konlari (sayyohlar uchun).\nMaqolada: 'lots of souvenir shops'.\nE-rasmda ham 'The Souvenir Shop' yozuvi bor.",
+       "speakAnswer": "souvenir"
       }
      ]
     }
@@ -389,7 +414,8 @@
         "fields"
        ],
        "whyUz": "'a little island' = kichik orol.\n63-betdagi maqolada: 'a beautiful little island'.\nGap: Inishmore is a little island.",
-       "speak": "1  a ............ island"
+       "speak": "1  a ............ island",
+       "speakAnswer": "little"
       },
       {
        "prompt": "2  ............ ago",
@@ -401,7 +427,8 @@
         "fields"
        ],
        "whyUz": "'fifty years ago' = ellik yil oldin.\n'ago' — o'tgan vaqtni bildiradi, DOIM gap oxirida.\nGap: Fifty years ago, life was difficult.",
-       "speak": "2  ............ ago"
+       "speak": "2  ............ ago",
+       "speakAnswer": "fifty years"
       },
       {
        "prompt": "3  the ............ as",
@@ -413,7 +440,8 @@
         "cottages"
        ],
        "whyUz": "'the same AS' = ...bilan bir xil.\nMaqolada: 'exactly the same as it was fifty years ago'.\nDIQQAT: 'the same LIKE' XATO — 'as' bo'lishi kerak.",
-       "speak": "3  the ............ as"
+       "speak": "3  the ............ as",
+       "speakAnswer": "same"
       },
       {
        "prompt": "4  fishing ............",
@@ -425,7 +453,8 @@
         "fields"
        ],
        "whyUz": "'fishing boats' = baliqchi qayiqlari.\nGap: There were only donkeys and fishing boats.",
-       "speak": "4  fishing ............"
+       "speak": "4  fishing ............",
+       "speakAnswer": "boats"
       },
       {
        "prompt": "5  stone ............",
@@ -437,7 +466,8 @@
         "fields"
        ],
        "whyUz": "'stone cottages' = tosh kulbalar.\nGap: They only had small stone cottages.",
-       "speak": "5  stone ............"
+       "speak": "5  stone ............",
+       "speakAnswer": "cottages"
       },
       {
        "prompt": "6  running ............",
@@ -449,7 +479,8 @@
         "cottages"
        ],
        "whyUz": "'running water' = vodoprovod suvi.\nGap: They didn't have electricity or running water.",
-       "speak": "6  running ............"
+       "speak": "6  running ............",
+       "speakAnswer": "water"
       },
       {
        "prompt": "7  just ............ this",
@@ -461,7 +492,8 @@
         "fields"
        ],
        "whyUz": "'just like this' = xuddi shundayligicha.\n'like' bu yerda PREDLOG — '...kabi' ('yoqtirmoq' EMAS).\nGap: We're working hard to keep it just like this.",
-       "speak": "7  just ............ this"
+       "speak": "7  just ............ this",
+       "speakAnswer": "like"
       },
       {
        "prompt": "8  modern ............",
@@ -473,7 +505,8 @@
         "fields"
        ],
        "whyUz": "'modern houses' = zamonaviy uylar.\n5-band bilan solishtiring: ilgari 'stone cottages', hozir 'modern houses'.\nGap: They have got new, modern houses.",
-       "speak": "8  modern ............"
+       "speak": "8  modern ............",
+       "speakAnswer": "houses"
       },
       {
        "prompt": "9  souvenir ............",
@@ -485,7 +518,8 @@
         "fields"
        ],
        "whyUz": "'souvenir shops' = sovg'a do'konlari.\nGap: There are lots of souvenir shops now.",
-       "speak": "9  souvenir ............"
+       "speak": "9  souvenir ............",
+       "speakAnswer": "shops"
       },
       {
        "prompt": "10  green ............",
@@ -497,7 +531,8 @@
         "cottages"
        ],
        "whyUz": "'green fields' = yashil dalalar.\nGap: Coneely looks across the green fields in front of his house.",
-       "speak": "10  green ............"
+       "speak": "10  green ............",
+       "speakAnswer": "fields"
       }
      ]
     },
@@ -521,7 +556,8 @@
         "a lot of"
        ],
        "whyUz": "little ↔ BIG (o'lcham).\nGap: Inishmore is a little island, but Ireland is a big island.",
-       "speak": "1  a little island  ≠  a ............ island"
+       "speak": "1  a little island  ≠  a ............ island",
+       "speakAnswer": "big"
       },
       {
        "prompt": "2  few tourists  ≠  ............ tourists",
@@ -532,7 +568,8 @@
         "big"
        ],
        "whyUz": "few ↔ A LOT OF (miqdor).\nGap: Fifty years ago there were few tourists, but now there are\na lot of tourists.",
-       "speak": "2  few tourists  ≠  ............ tourists"
+       "speak": "2  few tourists  ≠  ............ tourists",
+       "speakAnswer": "a lot of"
       },
       {
        "prompt": "3  a quiet place  ≠  a ............ place",
@@ -543,7 +580,8 @@
         "a lot of"
        ],
        "whyUz": "quiet ↔ BUSY (gavjumlik).\n62-betdagi mashqda ham bor edi.\nGap: Inishmore was a quiet place then, but it is a busy place now.",
-       "speak": "3  a quiet place  ≠  a ............ place"
+       "speak": "3  a quiet place  ≠  a ............ place",
+       "speakAnswer": "busy"
       }
      ]
     },
@@ -568,7 +606,8 @@
         "back"
        ],
        "whyUz": "'ON our page' = sahifamizda.\nGazeta va jurnal sahifasi uchun ON ishlatiladi.",
-       "speak": "1  ............ our Now & Then page"
+       "speak": "1  ............ our Now & Then page",
+       "speakAnswer": "on"
       },
       {
        "prompt": "2  we're looking ............ Inishmore",
@@ -580,7 +619,8 @@
         "off"
        ],
        "whyUz": "'look AT something' = biror narsaga qaramoq.\nDIQQAT: 'look' turli predloglar bilan turli ma'no beradi:\n  look AT = qaramoq;  look FOR = qidirmoq;\n  look AFTER = qaramoq (parvarish).",
-       "speak": "2  we're looking ............ Inishmore"
+       "speak": "2  we're looking ............ Inishmore",
+       "speakAnswer": "at"
       },
       {
        "prompt": "3  ............ first",
@@ -592,7 +632,8 @@
         "off"
        ],
        "whyUz": "'AT first' = dastlab, birinchi qarashda.\nDIQQAT: 'at first' ↔ 'at last' (nihoyat).",
-       "speak": "3  ............ first"
+       "speak": "3  ............ first",
+       "speakAnswer": "at"
       },
       {
        "prompt": "4  ............ fact",
@@ -604,7 +645,8 @@
         "off"
        ],
        "whyUz": "'IN fact' = aslida, haqiqatda.\n'at first' bilan qarama-qarshi qo'yiladi.",
-       "speak": "4  ............ fact"
+       "speak": "4  ............ fact",
+       "speakAnswer": "in"
       },
       {
        "prompt": "5  ............ those days",
@@ -616,7 +658,8 @@
         "off"
        ],
        "whyUz": "'IN those days' = o'sha kunlarda.\nO'tgan zamon haqida gapirganda ishlatiladi.",
-       "speak": "5  ............ those days"
+       "speak": "5  ............ those days",
+       "speakAnswer": "in"
       },
       {
        "prompt": "6  ............ his house",
@@ -628,7 +671,8 @@
         "back"
        ],
        "whyUz": "'IN FRONT OF his house' = uyi oldida.\nAksi: 'behind' (orqasida).",
-       "speak": "6  ............ his house"
+       "speak": "6  ............ his house",
+       "speakAnswer": "in front of"
       },
       {
        "prompt": "7  ............ then",
@@ -640,7 +684,8 @@
         "off"
        ],
        "whyUz": "'BACK then' = o'sha paytda.\n'in those days' bilan bir xil ma'noda.",
-       "speak": "7  ............ then"
+       "speak": "7  ............ then",
+       "speakAnswer": "back"
       },
       {
        "prompt": "8  ............ the west coast",
@@ -652,7 +697,8 @@
         "back"
        ],
        "whyUz": "'OFF the coast' = qirg'oq yaqinida (dengizda).\nDIQQAT: 'ON the coast' — qirg'oqning O'ZIDA (quruqlikda);\n'OFF the coast' — qirg'oqdan uzoqroqda, suvda.",
-       "speak": "8  ............ the west coast"
+       "speak": "8  ............ the west coast",
+       "speakAnswer": "off"
       },
       {
        "prompt": "9  look ............ the green fields",
@@ -664,7 +710,8 @@
         "off"
        ],
        "whyUz": "'look ACROSS' = ...bo'ylab qaramoq (bir chetdan ikkinchisiga).\n'across' = bo'ylab, kesib o'tib.",
-       "speak": "9  look ............ the green fields"
+       "speak": "9  look ............ the green fields",
+       "speakAnswer": "across"
       }
      ]
     },
@@ -728,7 +775,8 @@
         "library"
        ],
        "whyUz": "Pichoq-vilka rasmi → RESTAURANT (restoran).\nApostrof YO'Q.",
-       "speak": "1  (rasm: likopchada pichoq, vilka va qoshiq)"
+       "speak": "1  (rasm: likopchada pichoq, vilka va qoshiq)",
+       "speakAnswer": "restaurant"
       },
       {
        "prompt": "2  (rasm: gazeta)",
@@ -740,7 +788,8 @@
         "baker's"
        ],
        "whyUz": "Gazeta rasmi → NEWSAGENT'S (gazeta do'koni).\n'news' + 'agent' + 's.\nGazeta, jurnal, sigaret, konfet sotiladi.",
-       "speak": "2  (rasm: gazeta)"
+       "speak": "2  (rasm: gazeta)",
+       "speakAnswer": "newsagent's"
       },
       {
        "prompt": "3  (rasm: olma va banan)",
@@ -752,7 +801,8 @@
         "library"
        ],
        "whyUz": "Meva rasmi → GREENGROCER'S (meva-sabzavot do'koni).\n'green' (yashil) + 'grocer' (oziq-ovqat sotuvchisi).",
-       "speak": "3  (rasm: olma va banan)"
+       "speak": "3  (rasm: olma va banan)",
+       "speakAnswer": "greengrocer's"
       },
       {
        "prompt": "4  (rasm: go'sht bo'lagi)",
@@ -764,7 +814,8 @@
         "baker's"
        ],
        "whyUz": "Go'sht rasmi → BUTCHER'S (qassobxona).\n'a butcher' = qassob (odam).",
-       "speak": "4  (rasm: go'sht bo'lagi)"
+       "speak": "4  (rasm: go'sht bo'lagi)",
+       "speakAnswer": "butcher's"
       },
       {
        "prompt": "5  (rasm: dori shishasi va tabletkalar)",
@@ -776,7 +827,8 @@
         "library"
        ],
        "whyUz": "Dori rasmi → CHEMIST'S (dorixona).\n'a chemist' = dorixonachi.\nAmerikacha: drugstore / pharmacy.",
-       "speak": "5  (rasm: dori shishasi va tabletkalar)"
+       "speak": "5  (rasm: dori shishasi va tabletkalar)",
+       "speakAnswer": "chemist's"
       },
       {
        "prompt": "6  (rasm: kinoapparat va o'rindiqlar)",
@@ -788,7 +840,8 @@
         "library"
        ],
        "whyUz": "Kinoapparat rasmi → CINEMA (kinoteatr).\nApostrof YO'Q.\nAmerikacha: movie theater.",
-       "speak": "6  (rasm: kinoapparat va o'rindiqlar)"
+       "speak": "6  (rasm: kinoapparat va o'rindiqlar)",
+       "speakAnswer": "cinema"
       },
       {
        "prompt": "7  (rasm: non)",
@@ -800,7 +853,8 @@
         "library"
        ],
        "whyUz": "Non rasmi → BAKER'S (nonvoyxona).\n'a baker' = nonvoy; 'to bake' = pishirmoq.",
-       "speak": "7  (rasm: non)"
+       "speak": "7  (rasm: non)",
+       "speakAnswer": "baker's"
       },
       {
        "prompt": "8  (rasm: xarid aravachasi)",
@@ -812,7 +866,8 @@
         "library"
        ],
        "whyUz": "Aravacha rasmi → SUPERMARKET.\nApostrof YO'Q.\nHamma narsa bir joyda sotiladi.",
-       "speak": "8  (rasm: xarid aravachasi)"
+       "speak": "8  (rasm: xarid aravachasi)",
+       "speakAnswer": "supermarket"
       },
       {
        "prompt": "9  (rasm: kitoblar)",
@@ -824,7 +879,8 @@
         "baker's"
        ],
        "whyUz": "Kitoblar rasmi → LIBRARY (kutubxona).\nDIQQAT: 'library' = kutubxona (kitob QARZGA olinadi),\n'a bookshop' = kitob do'koni (kitob SOTIB olinadi).\nBu — juda ko'p adashtiriladigan so'z.",
-       "speak": "9  (rasm: kitoblar)"
+       "speak": "9  (rasm: kitoblar)",
+       "speakAnswer": "library"
       },
       {
        "prompt": "10  (rasm: pochta qutisidagi xatlar)",
@@ -836,7 +892,8 @@
         "library"
        ],
        "whyUz": "Xat rasmi → POST OFFICE (pochta bo'limi).\nApostrof YO'Q.\nYonida BUS STOP (avtobus bekati) bor.",
-       "speak": "10  (rasm: pochta qutisidagi xatlar)"
+       "speak": "10  (rasm: pochta qutisidagi xatlar)",
+       "speakAnswer": "post office"
       }
      ]
     },
@@ -853,43 +910,53 @@
      "tasks": [
       {
        "left": "1  buy food",
-       "right": "g  supermarket"
+       "right": "g  supermarket",
+       "speakAnswer": "g  supermarket"
       },
       {
        "left": "2  watch a film",
-       "right": "j  cinema"
+       "right": "j  cinema",
+       "speakAnswer": "j  cinema"
       },
       {
        "left": "3  buy meat",
-       "right": "e  butcher's"
+       "right": "e  butcher's",
+       "speakAnswer": "e  butcher's"
       },
       {
        "left": "4  send a letter",
-       "right": "a  post office"
+       "right": "a  post office",
+       "speakAnswer": "a  post office"
       },
       {
        "left": "5  borrow books",
-       "right": "f  library"
+       "right": "f  library",
+       "speakAnswer": "f  library"
       },
       {
        "left": "6  buy bread",
-       "right": "b  baker's"
+       "right": "b  baker's",
+       "speakAnswer": "b  baker's"
       },
       {
        "left": "7  buy some aspirin",
-       "right": "d  chemist's"
+       "right": "d  chemist's",
+       "speakAnswer": "d  chemist's"
       },
       {
        "left": "8  have dinner",
-       "right": "c  restaurant"
+       "right": "c  restaurant",
+       "speakAnswer": "c  restaurant"
       },
       {
        "left": "9  buy fruit and vegetables",
-       "right": "h  greengrocer's"
+       "right": "h  greengrocer's",
+       "speakAnswer": "h  greengrocer's"
       },
       {
        "left": "10  buy newspapers and magazines",
-       "right": "i  newsagent's"
+       "right": "i  newsagent's",
+       "speakAnswer": "i  newsagent's"
       }
      ]
     },
@@ -909,70 +976,80 @@
        "answer": "You can buy food at the supermarket.",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "Qolip: You can + fe'l + at the + joy.",
-       "speak": "1  buy food + supermarket"
+       "speak": "1  buy food + supermarket",
+       "speakAnswer": "You can buy food at the supermarket."
       },
       {
        "prompt": "2  watch a film + cinema",
        "answer": "You can watch a film at the cinema.",
        "promptUz": "Kinoteatr",
        "whyUz": "'at the cinema' — kinoteatrda.",
-       "speak": "2  watch a film + cinema"
+       "speak": "2  watch a film + cinema",
+       "speakAnswer": "You can watch a film at the cinema."
       },
       {
        "prompt": "3  buy meat + butcher's",
        "answer": "You can buy meat at the butcher's.",
        "promptUz": "Qassobxona",
        "whyUz": "'at THE butcher'S' — 'the' ham, apostrof ham qoladi.",
-       "speak": "3  buy meat + butcher's"
+       "speak": "3  buy meat + butcher's",
+       "speakAnswer": "You can buy meat at the butcher's."
       },
       {
        "prompt": "4  send a letter + post office",
        "answer": "You can send a letter at the post office.",
        "promptUz": "Pochta",
        "whyUz": "'send a letter' = xat jo'natmoq.",
-       "speak": "4  send a letter + post office"
+       "speak": "4  send a letter + post office",
+       "speakAnswer": "You can send a letter at the post office."
       },
       {
        "prompt": "5  borrow books + library",
        "answer": "You can borrow books at the library.",
        "promptUz": "Kutubxona",
        "whyUz": "'borrow' = qarzga olmoq.\n'books' ko'plikda — artikl kerak emas.",
-       "speak": "5  borrow books + library"
+       "speak": "5  borrow books + library",
+       "speakAnswer": "You can borrow books at the library."
       },
       {
        "prompt": "6  buy bread + baker's",
        "answer": "You can buy bread at the baker's.",
        "promptUz": "Nonvoyxona",
        "whyUz": "'bread' sanalmaydigan → artiklsiz.",
-       "speak": "6  buy bread + baker's"
+       "speak": "6  buy bread + baker's",
+       "speakAnswer": "You can buy bread at the baker's."
       },
       {
        "prompt": "7  buy some aspirin + chemist's",
        "answer": "You can buy some aspirin at the chemist's.",
        "promptUz": "Dorixona",
        "whyUz": "'some aspirin' — sanalmaydigan ot bilan 'some'.",
-       "speak": "7  buy some aspirin + chemist's"
+       "speak": "7  buy some aspirin + chemist's",
+       "speakAnswer": "You can buy some aspirin at the chemist's."
       },
       {
        "prompt": "8  have dinner + restaurant",
        "answer": "You can have dinner at the restaurant.",
        "promptUz": "Restoran",
        "whyUz": "'have dinner' — 'dinner' oldidan artikl YO'Q.",
-       "speak": "8  have dinner + restaurant"
+       "speak": "8  have dinner + restaurant",
+       "speakAnswer": "You can have dinner at the restaurant."
       },
       {
        "prompt": "9  buy fruit and vegetables + greengrocer's",
        "answer": "You can buy fruit and vegetables at the greengrocer's.",
        "promptUz": "Meva-sabzavot do'koni",
        "whyUz": "Ikkala ot ham artiklsiz.",
-       "speak": "9  buy fruit and vegetables + greengrocer's"
+       "speak": "9  buy fruit and vegetables + greengrocer's",
+       "speakAnswer": "You can buy fruit and vegetables at the greengrocer's."
       },
       {
        "prompt": "10  buy newspapers and magazines + newsagent's",
        "answer": "You can buy newspapers and magazines at the newsagent's.",
        "promptUz": "Gazeta do'koni",
        "whyUz": "Ikkalasi ham ko'plikda — artikl kerak emas.",
-       "speak": "10  buy newspapers and magazines + newsagent's"
+       "speak": "10  buy newspapers and magazines + newsagent's",
+       "speakAnswer": "You can buy newspapers and magazines at the newsagent's."
       }
      ]
     }
@@ -1133,7 +1210,8 @@
         "in fact",
         "an islander"
        ],
-       "whyUz": "'the west coast of Ireland' = Irlandiyaning g'arbiy qirg'og'i.\nBoshqa tomonlar: the east/north/south coast."
+       "whyUz": "'the west coast of Ireland' = Irlandiyaning g'arbiy qirg'og'i.\nBoshqa tomonlar: the east/north/south coast.",
+       "speakAnswer": "the west coast"
       },
       {
        "prompt": "ko'rinmoq (aslida boshqacha bo'lishi mumkin)",
@@ -1145,7 +1223,8 @@
         "in fact",
         "an islander"
        ],
-       "whyUz": "'Inishmore SEEMS exactly the same' = xuddi o'shanday KO'RINADI.\n'seem' — tashqi ko'rinish, haqiqat emas."
+       "whyUz": "'Inishmore SEEMS exactly the same' = xuddi o'shanday KO'RINADI.\n'seem' — tashqi ko'rinish, haqiqat emas.",
+       "speakAnswer": "to seem"
       },
       {
        "prompt": "aslida, haqiqatda",
@@ -1157,7 +1236,8 @@
         "to seem",
         "an islander"
        ],
-       "whyUz": "'but IN FACT it is a very different place' = lekin aslida u boshqa joy.\n'seems' bilan qarama-qarshi qo'yiladi."
+       "whyUz": "'but IN FACT it is a very different place' = lekin aslida u boshqa joy.\n'seems' bilan qarama-qarshi qo'yiladi.",
+       "speakAnswer": "in fact"
       },
       {
        "prompt": "orol aholisi",
@@ -1169,7 +1249,8 @@
         "to seem",
         "in fact"
        ],
-       "whyUz": "island + -er = orolda yashovchi odam.\nShu qoida: New York → a New Yorker;  village → a villager."
+       "whyUz": "island + -er = orolda yashovchi odam.\nShu qoida: New York → a New Yorker;  village → a villager.",
+       "speakAnswer": "an islander"
       },
       {
        "prompt": "yetib bormoq",
@@ -1181,7 +1262,8 @@
         "to seem",
         "in fact"
        ],
-       "whyUz": "'few tourists could REACH Inishmore' = kam sayyoh yetib bora olardi.\nDIQQAT: 'reach' dan keyin 'to' KERAK EMAS:\n'reach TO Inishmore' XATO."
+       "whyUz": "'few tourists could REACH Inishmore' = kam sayyoh yetib bora olardi.\nDIQQAT: 'reach' dan keyin 'to' KERAK EMAS:\n'reach TO Inishmore' XATO.",
+       "speakAnswer": "to reach"
       },
       {
        "prompt": "yurib turmoq, joydan joyga o'tmoq",
@@ -1193,7 +1275,8 @@
         "to seem",
         "in fact"
        ],
-       "whyUz": "'for GETTING AROUND' = yurib turish uchun.\n'get around' — frazali fe'l (transport haqida).\n'for' dan keyin fe'l -ING bilan."
+       "whyUz": "'for GETTING AROUND' = yurib turish uchun.\n'get around' — frazali fe'l (transport haqida).\n'for' dan keyin fe'l -ING bilan.",
+       "speakAnswer": "getting around"
       },
       {
        "prompt": "vodoprovod suvi (jo'mrakdan oqadigan)",
@@ -1205,7 +1288,8 @@
         "to seem",
         "in fact"
        ],
-       "whyUz": "'electricity or RUNNING WATER' = elektr yoki vodoprovod.\nSo'zma-so'z 'oqar suv' — quvur orqali uyga keladigan suv."
+       "whyUz": "'electricity or RUNNING WATER' = elektr yoki vodoprovod.\nSo'zma-so'z 'oqar suv' — quvur orqali uyga keladigan suv.",
+       "speakAnswer": "running water"
       },
       {
        "prompt": "oldida",
@@ -1217,7 +1301,8 @@
         "to seem",
         "in fact"
        ],
-       "whyUz": "'the green fields IN FRONT OF his house' = uyi oldidagi dalalar.\nAksi: 'behind' (orqasida)."
+       "whyUz": "'the green fields IN FRONT OF his house' = uyi oldidagi dalalar.\nAksi: 'behind' (orqasida).",
+       "speakAnswer": "in front of"
       }
      ]
     }
@@ -1307,7 +1392,8 @@
         "brick",
         "stone"
        ],
-       "whyUz": "Matnda: 'they had beautiful BRICK houses'.\nBoy rimliklar g'ishtdan uy qurgan.\n'stone' — 64-betdagi Inishmore kulbalari uchun edi."
+       "whyUz": "Matnda: 'they had beautiful BRICK houses'.\nBoy rimliklar g'ishtdan uy qurgan.\n'stone' — 64-betdagi Inishmore kulbalari uchun edi.",
+       "speakAnswer": "brick"
       },
       {
        "prompt": "2  Ancient Rome had wide / narrow streets.",
@@ -1317,7 +1403,8 @@
         "wide",
         "narrow"
        ],
-       "whyUz": "Matnda: 'Ancient Rome had NARROW streets, but there were\nlots of theatres'.\n'narrow' = tor (aksi: wide = keng)."
+       "whyUz": "Matnda: 'Ancient Rome had NARROW streets, but there were\nlots of theatres'.\n'narrow' = tor (aksi: wide = keng).",
+       "speakAnswer": "narrow"
       },
       {
        "prompt": "3  The public baths / showers were very popular.",
@@ -1327,7 +1414,8 @@
         "baths",
         "showers"
        ],
-       "whyUz": "Matnda: 'The public BATHS were very popular'.\nQadimgi Rimda dush yo'q edi — umumiy hammomlar bor edi."
+       "whyUz": "Matnda: 'The public BATHS were very popular'.\nQadimgi Rimda dush yo'q edi — umumiy hammomlar bor edi.",
+       "speakAnswer": "baths"
       },
       {
        "prompt": "4  Girls had balls / dolls to play with.",
@@ -1337,7 +1425,8 @@
         "balls",
         "dolls"
        ],
-       "whyUz": "Matnda: 'The boys' favourite games were ball games and\nthe girls had DOLLS to play with'.\nO'g'illar — to'p, qizlar — qo'g'irchoq."
+       "whyUz": "Matnda: 'The boys' favourite games were ball games and\nthe girls had DOLLS to play with'.\nO'g'illar — to'p, qizlar — qo'g'irchoq.",
+       "speakAnswer": "dolls"
       }
      ]
     },
@@ -1362,7 +1451,8 @@
         "had"
        ],
        "whyUz": "'rich' — SIFAT → 'to be' kerak.\n'Romans' ko'plik → WERE.\n'ancient' = qadimgi.",
-       "speak": "Some ancient Romans 1) ............ very rich ..."
+       "speak": "Some ancient Romans 1) ............ very rich ...",
+       "speakAnswer": "were"
       },
       {
        "prompt": "... and they 2) ............ beautiful brick houses.",
@@ -1374,7 +1464,8 @@
         "was"
        ],
        "whyUz": "'houses' — narsa, mulk → HAD.\n'had' hamma ega uchun bir xil.",
-       "speak": "... and they 2) ............ beautiful brick houses."
+       "speak": "... and they 2) ............ beautiful brick houses.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "There 3) ............ any windows on the outside walls ...",
@@ -1386,7 +1477,8 @@
         "had"
        ],
        "whyUz": "'ANY' inkor gapda ishlatiladi → WEREN'T.\n'windows' ko'plik → weren't (wasn't emas).\n'the outside walls' = tashqi devorlar.",
-       "speak": "There 3) ............ any windows on the outside walls ..."
+       "speak": "There 3) ............ any windows on the outside walls ...",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "... and there 4) ............ any carpets on the floors.",
@@ -1398,7 +1490,8 @@
         "had"
        ],
        "whyUz": "'ANY carpets' → WEREN'T.\nBu 16c-mashqning 1-savoliga javob:\nrimliklarda GILAM yo'q edi.\n'a carpet' = gilam; 'the floor' = pol.",
-       "speak": "... and there 4) ............ any carpets on the floors."
+       "speak": "... and there 4) ............ any carpets on the floors.",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "Other people 5) ............ smaller houses or flats.",
@@ -1410,7 +1503,8 @@
         "was"
        ],
        "whyUz": "'houses or flats' — mulk → HAD.\n'a flat' = kvartira (amerikacha: apartment).\nKambag'alroq odamlar haqida.",
-       "speak": "Other people 5) ............ smaller houses or flats."
+       "speak": "Other people 5) ............ smaller houses or flats.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "Ancient Rome 6) ............ narrow streets, ...",
@@ -1422,7 +1516,8 @@
         "was"
        ],
        "whyUz": "'Rome HAD narrow streets' — shahar tuzilishi haqida → HAD.\n16a-mashqning 2-bandini tasdiqlaydi.",
-       "speak": "Ancient Rome 6) ............ narrow streets, ..."
+       "speak": "Ancient Rome 6) ............ narrow streets, ...",
+       "speakAnswer": "had"
       },
       {
        "prompt": "... but there 7) ............ lots of theatres.",
@@ -1434,7 +1529,8 @@
         "had"
        ],
        "whyUz": "'There WERE lots of theatres'.\n'theatres' ko'plik → WERE.\n16c-mashqning 2-savoliga javob.\n'lots of' = ko'p.",
-       "speak": "... but there 7) ............ lots of theatres."
+       "speak": "... but there 7) ............ lots of theatres.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "The public baths 8) ............ very popular.",
@@ -1446,7 +1542,8 @@
         "had"
        ],
        "whyUz": "'popular' SIFAT → 'to be'.\n'baths' KO'PLIK → WERE.\n'public' = umumiy, hammaga ochiq.",
-       "speak": "The public baths 8) ............ very popular."
+       "speak": "The public baths 8) ............ very popular.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "Men and women 9) ............ go there at different times, ...",
@@ -1458,7 +1555,8 @@
         "was"
        ],
        "whyUz": "Keyingi so'z FE'L ('go') → 'could' kerak.\n'was/were/had' dan keyin asosiy fe'l kelmaydi.\nMa'nosi: RUXSAT bor edi.\n'at different times' = turli vaqtlarda.",
-       "speak": "Men and women 9) ............ go there at different times, ..."
+       "speak": "Men and women 9) ............ go there at different times, ...",
+       "speakAnswer": "could"
       },
       {
        "prompt": "... but children 10) ............ use the baths.",
@@ -1470,7 +1568,8 @@
         "was"
        ],
        "whyUz": "'but' oldingi tasdiqqa QARAMA-QARSHI → inkor.\nKeyin fe'l ('use') → COULDN'T.\n16c-mashqning 3-savoliga javob: BOLALAR foydalana olmasdi.",
-       "speak": "... but children 10) ............ use the baths."
+       "speak": "... but children 10) ............ use the baths.",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "Hunting, riding, fishing and having dinner parties with friends 11) ............ also popular free-time activities.",
@@ -1482,7 +1581,8 @@
         "had"
        ],
        "whyUz": "Ega KO'PLIK (4 ta mashg'ulot) → WERE.\n'activities' ham ko'plik.\n'hunting' = ov qilish; 'riding' = ot minish;\n'a dinner party' = kechki ziyofat;\n'free-time activities' = bo'sh vaqt mashg'ulotlari.\n16c-mashqning 5-savoliga javob: HUNTING.",
-       "speak": "Hunting, riding, fishing and having dinner parties with friends 11) ............ also popular free-time activities."
+       "speak": "Hunting, riding, fishing and having dinner parties with friends 11) ............ also popular free-time activities.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "There 12) ............ lots of games and toys for children.",
@@ -1494,7 +1594,8 @@
         "had"
        ],
        "whyUz": "'games and toys' ko'plik → THERE WERE.\n16c-mashqning 4-savoliga javob: GAMES.",
-       "speak": "There 12) ............ lots of games and toys for children."
+       "speak": "There 12) ............ lots of games and toys for children.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "The boys' favourite games 13) ............ ball games ...",
@@ -1506,7 +1607,8 @@
         "had"
        ],
        "whyUz": "'games' KO'PLIK → WERE.\nDIQQAT — 'the BOYS'' apostrofi 's' dan KEYIN:\nko'plik otda egalik apostrof oxirga qo'yiladi.",
-       "speak": "The boys' favourite games 13) ............ ball games ..."
+       "speak": "The boys' favourite games 13) ............ ball games ...",
+       "speakAnswer": "were"
       },
       {
        "prompt": "... and the girls 14) ............ dolls to play with.",
@@ -1518,7 +1620,8 @@
         "was"
        ],
        "whyUz": "'dolls' — narsa, mulk → HAD.\n16a-mashqning 4-bandini tasdiqlaydi.\n'to play with' = o'ynash uchun ('with' oxirda qoladi).",
-       "speak": "... and the girls 14) ............ dolls to play with."
+       "speak": "... and the girls 14) ............ dolls to play with.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "Children also 15) ............ dogs, cats, ducks and geese as pets.",
@@ -1530,7 +1633,8 @@
         "was"
        ],
        "whyUz": "Hayvonlar — 'mulk' → HAD.\n'a duck' = o'rdak; 'a goose' → 'GEESE' (noto'g'ri ko'plik!).\n'as pets' = uy hayvoni sifatida.",
-       "speak": "Children also 15) ............ dogs, cats, ducks and geese as pets."
+       "speak": "Children also 15) ............ dogs, cats, ducks and geese as pets.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "The ancient Romans 16) ............ lots of delicious food to eat, ...",
@@ -1542,7 +1646,8 @@
         "was"
        ],
        "whyUz": "'food' — narsa → HAD.\n'delicious' = mazali.\n'such as' = ...kabi, masalan.",
-       "speak": "The ancient Romans 16) ............ lots of delicious food to eat, ..."
+       "speak": "The ancient Romans 16) ............ lots of delicious food to eat, ...",
+       "speakAnswer": "had"
       },
       {
        "prompt": "... and their favourite drink 17) ............ wine.",
@@ -1554,7 +1659,8 @@
         "had"
        ],
        "whyUz": "'their favourite drink' — BIRLIK → WAS (were emas!).\n16c-mashqning 6-savoliga javob: WINE.\n'wine' = vino.",
-       "speak": "... and their favourite drink 17) ............ wine."
+       "speak": "... and their favourite drink 17) ............ wine.",
+       "speakAnswer": "was"
       }
      ]
     },
@@ -1578,7 +1684,8 @@
         "B carpets",
         "C sofas"
        ],
-       "whyUz": "Matnda: 'there weren't any CARPETS on the floors'.\nStol va divan haqida matnda umuman aytilmagan."
+       "whyUz": "Matnda: 'there weren't any CARPETS on the floors'.\nStol va divan haqida matnda umuman aytilmagan.",
+       "speakAnswer": "B carpets"
       },
       {
        "prompt": "2  They had lots of ............ .",
@@ -1589,7 +1696,8 @@
         "B cinemas",
         "C theatres"
        ],
-       "whyUz": "Matnda: 'but there were lots of THEATRES'.\nDiskoteka va kinoteatr qadimgi Rimda bo'lishi MUMKIN EMAS —\nular ancha keyin paydo bo'lgan."
+       "whyUz": "Matnda: 'but there were lots of THEATRES'.\nDiskoteka va kinoteatr qadimgi Rimda bo'lishi MUMKIN EMAS —\nular ancha keyin paydo bo'lgan.",
+       "speakAnswer": "C theatres"
       },
       {
        "prompt": "3  ............ couldn't use the public baths.",
@@ -1600,7 +1708,8 @@
         "B Women",
         "C Men"
        ],
-       "whyUz": "Matnda: 'Men and women COULD go there ..., but children\nCOULDN'T use the baths'.\nErkaklar va ayollar bora olardi — faqat BOLALAR yo'q."
+       "whyUz": "Matnda: 'Men and women COULD go there ..., but children\nCOULDN'T use the baths'.\nErkaklar va ayollar bora olardi — faqat BOLALAR yo'q.",
+       "speakAnswer": "A Children"
       },
       {
        "prompt": "4  There were lots of ............ and toys for children.",
@@ -1611,7 +1720,8 @@
         "B games",
         "C schools"
        ],
-       "whyUz": "Matnda: 'There were lots of GAMES and toys for children'."
+       "whyUz": "Matnda: 'There were lots of GAMES and toys for children'.",
+       "speakAnswer": "B games"
       },
       {
        "prompt": "5  ............ was one of their favourite free-time activities.",
@@ -1622,7 +1732,8 @@
         "B Playing football",
         "C Hunting"
        ],
-       "whyUz": "Matnda: 'HUNTING, riding, fishing and having dinner parties\n... were also popular free-time activities'.\nRaqs va futbol matnda yo'q."
+       "whyUz": "Matnda: 'HUNTING, riding, fishing and having dinner parties\n... were also popular free-time activities'.\nRaqs va futbol matnda yo'q.",
+       "speakAnswer": "C Hunting"
       },
       {
        "prompt": "6  Their favourite drink was ............ .",
@@ -1633,7 +1744,8 @@
         "B wine",
         "C milk"
        ],
-       "whyUz": "Matnda: 'their favourite drink was WINE'."
+       "whyUz": "Matnda: 'their favourite drink was WINE'.",
+       "speakAnswer": "B wine"
       }
      ]
     },
@@ -1697,7 +1809,8 @@
         "arts and crafts"
        ],
        "whyUz": "Chana rasmi → A SLEDGE.\nIlgari inuitlar chanani XASKI itlariga tortdirgan.\nHozir skidoo ishlatiladi.",
-       "speak": "1  (rasm: odam qor ustida chana tortib turibdi)"
+       "speak": "1  (rasm: odam qor ustida chana tortib turibdi)",
+       "speakAnswer": "a sledge"
       },
       {
        "prompt": "2  (rasm: odam kichkina qayiqda suvda)",
@@ -1709,7 +1822,8 @@
         "arts and crafts"
        ],
        "whyUz": "Qayiq rasmi → A KAYAK.\nMatnda: 'kayaks — small canoes' (kichkina qayiqlar).\nDengizda ov qilish uchun ishlatilgan.\n'kayak' so'zi INUIT tilidan ingliz tiliga o'tgan.",
-       "speak": "2  (rasm: odam kichkina qayiqda suvda)"
+       "speak": "2  (rasm: odam kichkina qayiqda suvda)",
+       "speakAnswer": "a kayak"
       },
       {
        "prompt": "3  (rasm: odam qor mototsiklida)",
@@ -1721,7 +1835,8 @@
         "arts and crafts"
        ],
        "whyUz": "Qor mototsikli rasmi → A SKIDOO.\nMatnda: 'a kind of motorbike on ice'.\nHozirgi zamon transporti — chananing o'rnini bosgan.",
-       "speak": "3  (rasm: odam qor mototsiklida)"
+       "speak": "3  (rasm: odam qor mototsiklida)",
+       "speakAnswer": "a skidoo"
       },
       {
        "prompt": "4  (rasm: oq-qora yuzli it)",
@@ -1733,7 +1848,8 @@
         "a sledge"
        ],
        "whyUz": "It rasmi → A HUSKY DOG.\nMatnda: 'Husky dogs to help them pull their sledges'.\nBosh harf bilan — zot nomi.",
-       "speak": "4  (rasm: oq-qora yuzli it)"
+       "speak": "4  (rasm: oq-qora yuzli it)",
+       "speakAnswer": "a Husky dog"
       },
       {
        "prompt": "5  (rasm: qordan qurilgan gumbaz shaklidagi uy)",
@@ -1744,7 +1860,8 @@
         "arts and crafts",
         "a sledge"
        ],
-       "whyUz": "Qor uy rasmi → AN IGLOO.\nMatnda: 'igloos — houses made of ice'.\nDIQQAT: 'AN igloo' — 'i' unli tovush."
+       "whyUz": "Qor uy rasmi → AN IGLOO.\nMatnda: 'igloos — houses made of ice'.\nDIQQAT: 'AN igloo' — 'i' unli tovush.",
+       "speakAnswer": "an igloo"
       },
       {
        "prompt": "6  (rasm: oq tosh/suyakdan yasalgan tyulen haykalchasi)",
@@ -1756,7 +1873,8 @@
         "a sledge"
        ],
        "whyUz": "O'yma haykalcha rasmi → ARTS AND CRAFTS.\nMatnda bo'sh vaqt mashg'uloti sifatida keladi.\n'crafts' = hunarmandchilik; 'arts' = san'at.\nDOIM juft holda ishlatiladi.",
-       "speak": "6  (rasm: oq tosh/suyakdan yasalgan tyulen haykalchasi)"
+       "speak": "6  (rasm: oq tosh/suyakdan yasalgan tyulen haykalchasi)",
+       "speakAnswer": "arts and crafts"
       }
      ]
     },
@@ -1781,7 +1899,8 @@
         "can"
        ],
        "whyUz": "'A hundred years ago' → O'TGAN zamon.\n'life' BIRLIK → WAS.\n'different' — sifat, shuning uchun 'to be' kerak.",
-       "speak": "1  A hundred years ago, life ............ very different for the Inuit in Canada."
+       "speak": "1  A hundred years ago, life ............ very different for the Inuit in Canada.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "2  In those days, they ............ houses to live in;",
@@ -1793,7 +1912,8 @@
         "can"
        ],
        "whyUz": "MANTIQ: keyin 'they HAD igloos' deyilgan —\ndemak oddiy UY yo'q edi → INKOR.\nO'tgan zamon + mulk inkori → DIDN'T HAVE.\n'to live in' = yashash uchun ('in' oxirida qoladi).",
-       "speak": "2  In those days, they ............ houses to live in;"
+       "speak": "2  In those days, they ............ houses to live in;",
+       "speakAnswer": "didn't have"
       },
       {
        "prompt": "3  ... they ............ igloos — houses made of ice.",
@@ -1804,7 +1924,8 @@
         "have got",
         "can"
        ],
-       "whyUz": "O'tgan zamon + mulk → HAD.\n'houses made of ice' = muzdan qurilgan uylar.\n'made of' = ...dan yasalgan."
+       "whyUz": "O'tgan zamon + mulk → HAD.\n'houses made of ice' = muzdan qurilgan uylar.\n'made of' = ...dan yasalgan.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "4  The Inuit ............ hunters of whales and seals.",
@@ -1816,7 +1937,8 @@
         "can"
        ],
        "whyUz": "'hunters' — kasb (ot) → 'to be' kerak.\n'The Inuit' — xalq nomi, KO'PLIK → WERE.\n'a whale' = kit;  'a seal' = tyulen.\n12-mashqning 1-savoli shu bandga asoslanadi.",
-       "speak": "4  The Inuit ............ hunters of whales and seals."
+       "speak": "4  The Inuit ............ hunters of whales and seals.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "5  They only ............ meat and fish to eat.",
@@ -1828,7 +1950,8 @@
         "can"
        ],
        "whyUz": "O'tgan zamon + mulk → HAD.\n'only' = faqat — boshqa ovqat yo'q edi.",
-       "speak": "5  They only ............ meat and fish to eat."
+       "speak": "5  They only ............ meat and fish to eat.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "6  They ............ eat any fruit or vegetables ...",
@@ -1840,7 +1963,8 @@
         "can"
        ],
        "whyUz": "Keyingi so'z FE'L ('eat') → 'could/couldn't'.\n'ANY' → INKOR → COULDN'T.\n12-mashqning 3-savoli shu bandga asoslanadi.",
-       "speak": "6  They ............ eat any fruit or vegetables ..."
+       "speak": "6  They ............ eat any fruit or vegetables ...",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "7  ... because there ............ any trees or plants.",
@@ -1852,7 +1976,8 @@
         "can"
        ],
        "whyUz": "'ANY' → INKOR.\n'trees or plants' KO'PLIK → WEREN'T.\n'because' sababni tushuntiradi: daraxt yo'q → meva yo'q.",
-       "speak": "7  ... because there ............ any trees or plants."
+       "speak": "7  ... because there ............ any trees or plants.",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "8  The Inuit ............ Husky dogs to help them pull their sledges.",
@@ -1864,7 +1989,8 @@
         "can"
        ],
        "whyUz": "O'tgan zamon + mulk → HAD.\n'to pull' = tortmoq.\n12-mashqning 4-savoli shu bandga asoslanadi.",
-       "speak": "8  The Inuit ............ Husky dogs to help them pull their sledges."
+       "speak": "8  The Inuit ............ Husky dogs to help them pull their sledges.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "9  They also ............ kayaks — small canoes — to help them hunt in the sea.",
@@ -1875,7 +2001,8 @@
         "have got",
         "can"
        ],
-       "whyUz": "O'tgan zamon + mulk → HAD.\n'a canoe' = qayiq.\n'to hunt' = ov qilmoq."
+       "whyUz": "O'tgan zamon + mulk → HAD.\n'a canoe' = qayiq.\n'to hunt' = ov qilmoq.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "10  Their favourite free-time activities ............ dancing and arts and crafts.",
@@ -1887,7 +2014,8 @@
         "can"
        ],
        "whyUz": "'activities' KO'PLIK → WERE.\n'free-time activities' = bo'sh vaqt mashg'ulotlari.",
-       "speak": "10  Their favourite free-time activities ............ dancing and arts and crafts."
+       "speak": "10  Their favourite free-time activities ............ dancing and arts and crafts.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "11  Today, life for the Inuit ............ the same as ...",
@@ -1899,7 +2027,8 @@
         "can"
        ],
        "whyUz": "'Today' → HOZIRGI zamonga o'tildi.\n'life' BIRLIK → is/isn't.\nMANTIQ: hayot O'ZGARGAN → 'the same as' oldidan INKOR →\nISN'T.\n'the same AS' = ...bilan bir xil ('the same like' XATO).",
-       "speak": "11  Today, life for the Inuit ............ the same as ..."
+       "speak": "11  Today, life for the Inuit ............ the same as ...",
+       "speakAnswer": "isn't"
       },
       {
        "prompt": "12  ... as it ............ a hundred years ago.",
@@ -1911,7 +2040,8 @@
         "can"
        ],
        "whyUz": "'a hundred years ago' → O'TGAN zamon.\n'it' BIRLIK → WAS.\nBitta gapda ikki zamon: ISN'T (hozir) ... WAS (o'shanda).",
-       "speak": "12  ... as it ............ a hundred years ago."
+       "speak": "12  ... as it ............ a hundred years ago.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "13  They ............ igloos now.",
@@ -1923,7 +2053,8 @@
         "can"
        ],
        "whyUz": "'now' → HOZIRGI zamon.\nMANTIQ: keyin 'they HAVE GOT modern houses' deyilgan —\ndemak iglu YO'Q → INKOR → HAVEN'T GOT.\n'They' KO'PLIK → haven't ('hasn't' EMAS).",
-       "speak": "13  They ............ igloos now."
+       "speak": "13  They ............ igloos now.",
+       "speakAnswer": "haven't got"
       },
       {
        "prompt": "14  They ............ modern houses and they live in small towns.",
@@ -1935,7 +2066,8 @@
         "was"
        ],
        "whyUz": "'They' → HAVE GOT.\n2-band bilan solishtiring: ilgari uy yo'q edi, hozir bor.",
-       "speak": "14  They ............ modern houses and they live in small towns."
+       "speak": "14  They ............ modern houses and they live in small towns.",
+       "speakAnswer": "have got"
       },
       {
        "prompt": "15  There ............ schools, hospitals, shops and many other modern buildings in the towns.",
@@ -1947,7 +2079,8 @@
         "was"
        ],
        "whyUz": "Hozirgi zamon + KO'PLIK otlar → THERE ARE.",
-       "speak": "15  There ............ schools, hospitals, shops and many other modern buildings in the towns."
+       "speak": "15  There ............ schools, hospitals, shops and many other modern buildings in the towns.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "16  These days, the Inuit ............ eat anything they like.",
@@ -1959,7 +2092,8 @@
         "was"
        ],
        "whyUz": "Keyingi so'z FE'L → 'can/could'.\n'These days' = hozirgi kunda → HOZIRGI → CAN.\n6-band bilan solishtiring: ilgari COULDN'T edi.\n'anything they like' = xohlagan narsasi.",
-       "speak": "16  These days, the Inuit ............ eat anything they like."
+       "speak": "16  These days, the Inuit ............ eat anything they like.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "17  They ............ sledges anymore.",
@@ -1971,7 +2105,8 @@
         "can"
        ],
        "whyUz": "'ANYMORE' = endi (DOIM inkor bilan) → HAVEN'T GOT.\n'They' KO'PLIK → haven't.\nKeyingi gap tushuntiradi: 'They travel by skidoo'.",
-       "speak": "17  They ............ sledges anymore."
+       "speak": "17  They ............ sledges anymore.",
+       "speakAnswer": "haven't got"
       }
      ]
     },
@@ -1996,31 +2131,36 @@
        "prompt": "Food — NOW",
        "answer": "anything they like",
        "promptUz": "Matnning 16-bo'shlig'iga qarang",
-       "whyUz": "Matnda: 'the Inuit can eat ANYTHING THEY LIKE'.\nIlgari faqat go'sht va baliq — hozir hamma narsa."
+       "whyUz": "Matnda: 'the Inuit can eat ANYTHING THEY LIKE'.\nIlgari faqat go'sht va baliq — hozir hamma narsa.",
+       "speakAnswer": "anything they like"
       },
       {
        "prompt": "Travel — THEN  (sledges, ............)",
        "answer": "kayaks",
        "promptUz": "Dengizda ov qilish uchun ishlatilgan",
-       "whyUz": "Matnda: 'They also had KAYAKS — small canoes'.\nJadvalda 'sledges,' allaqachon yozilgan → ikkinchisi KAYAKS."
+       "whyUz": "Matnda: 'They also had KAYAKS — small canoes'.\nJadvalda 'sledges,' allaqachon yozilgan → ikkinchisi KAYAKS.",
+       "speakAnswer": "kayaks"
       },
       {
        "prompt": "Travel — NOW",
        "answer": "skidoos",
        "promptUz": "Matnning oxiriga qarang",
-       "whyUz": "Matnda: 'They travel by SKIDOO — a kind of motorbike on ice'.\nJadvalda ko'plikda yoziladi: SKIDOOS."
+       "whyUz": "Matnda: 'They travel by SKIDOO — a kind of motorbike on ice'.\nJadvalda ko'plikda yoziladi: SKIDOOS.",
+       "speakAnswer": "skidoos"
       },
       {
        "prompt": "Entertainment — THEN  (............ , arts and crafts)",
        "answer": "dancing",
        "promptUz": "Matnning 10-bandiga qarang",
-       "whyUz": "Matnda: 'their favourite free-time activities were DANCING\nand arts and crafts'.\n'arts and crafts' kitobda berilgan → birinchisi DANCING."
+       "whyUz": "Matnda: 'their favourite free-time activities were DANCING\nand arts and crafts'.\n'arts and crafts' kitobda berilgan → birinchisi DANCING.",
+       "speakAnswer": "dancing"
       },
       {
        "prompt": "Entertainment — NOW",
        "answer": "listening to pop music, going to the cinema",
        "promptUz": "Matnning eng oxirgi gapiga qarang",
-       "whyUz": "Matnda: 'their favourite free-time activities are\nLISTENING TO POP MUSIC and GOING TO THE CINEMA'.\nIkkalasi ham -ing shaklida (mashg'ulot nomi)."
+       "whyUz": "Matnda: 'their favourite free-time activities are\nLISTENING TO POP MUSIC and GOING TO THE CINEMA'.\nIkkalasi ham -ing shaklida (mashg'ulot nomi).",
+       "speakAnswer": "listening to pop music, going to the cinema"
       }
      ]
     },
@@ -2466,7 +2606,8 @@
         "on"
        ],
        "whyUz": "Maktab va kinoteatr APPLE STREET ning IKKI TOMONIDA →\nOPPOSITE (ro'parasida).\nKo'cha ajratsa — 'opposite', ajratmasa — 'next to'.",
-       "speak": "1  The school is ............ the cinema."
+       "speak": "1  The school is ............ the cinema.",
+       "speakAnswer": "opposite"
       },
       {
        "prompt": "2  The café is ............ the bank and the post office.",
@@ -2478,7 +2619,8 @@
         "next to"
        ],
        "whyUz": "King Street ostidagi qator: RESTAURANT | POST OFFICE | CAFÉ |\nBANK | FIRE STATION.\nKafe pochta va bank O'RTASIDA → BETWEEN.\n'between A AND B' — 'and' shart.",
-       "speak": "2  The café is ............ the bank and the post office."
+       "speak": "2  The café is ............ the bank and the post office.",
+       "speakAnswer": "between"
       },
       {
        "prompt": "3  The police station is ............ the cinema.",
@@ -2490,7 +2632,8 @@
         "on"
        ],
        "whyUz": "Kinoteatr va militsiya bo'limi BIR blokda, yonma-yon —\nko'cha ajratmaydi → NEXT TO.\n1-band bilan solishtiring: u yerda ko'cha bor edi → opposite.",
-       "speak": "3  The police station is ............ the cinema."
+       "speak": "3  The police station is ............ the cinema.",
+       "speakAnswer": "next to"
       },
       {
        "prompt": "4  The bus stop is ............ the post office.",
@@ -2502,7 +2645,8 @@
         "on"
        ],
        "whyUz": "Avtobus bekati King Street da, pochtaning OLD tomonida →\nIN FRONT OF.",
-       "speak": "4  The bus stop is ............ the post office."
+       "speak": "4  The bus stop is ............ the post office.",
+       "speakAnswer": "in front of"
       },
       {
        "prompt": "5  The park is ............ the corner of Apple Street and King Street.",
@@ -2514,7 +2658,8 @@
         "next to"
        ],
        "whyUz": "'ON the corner of X and Y' = X va Y burchagida —\no'zgarmas ibora.\nBog' Apple Street va King Street kesishgan joyda.",
-       "speak": "5  The park is ............ the corner of Apple Street and King Street."
+       "speak": "5  The park is ............ the corner of Apple Street and King Street.",
+       "speakAnswer": "on"
       }
      ]
     },
@@ -2534,84 +2679,96 @@
        "answer": "It's between the supermarket and the department store. It's opposite the hotel.",
        "promptUz": "Supermarket ostida, univermag ustida",
        "whyUz": "Ustunda: SUPERMARKET → SPORTS CENTRE → DEPARTMENT STORE.\nHill Street narigi tomonida HOTEL → opposite.",
-       "speak": "Where is the sports centre?"
+       "speak": "Where is the sports centre?",
+       "speakAnswer": "It's between the supermarket and the department store. It's opposite the hotel."
       },
       {
        "prompt": "Where is the hospital?",
        "answer": "It's next to the school. It's opposite the garage.",
        "promptUz": "Xaritaning yuqori o'ng burchagi",
        "whyUz": "Kasalxona ustunda maktab ustida → next to.\nApple Street narigi tomonida GARAGE → opposite.",
-       "speak": "Where is the hospital?"
+       "speak": "Where is the hospital?",
+       "speakAnswer": "It's next to the school. It's opposite the garage."
       },
       {
        "prompt": "Where is the bank?",
        "answer": "It's between the café and the fire station.",
        "promptUz": "King Street ostidagi qator",
        "whyUz": "Qator: RESTAURANT | POST OFFICE | CAFÉ | BANK | FIRE STATION.\nBank kafe va o't o'chirish bo'limi orasida.",
-       "speak": "Where is the bank?"
+       "speak": "Where is the bank?",
+       "speakAnswer": "It's between the café and the fire station."
       },
       {
        "prompt": "Where is the supermarket?",
        "answer": "It's next to the garage. It's opposite the train station.",
        "promptUz": "Yuqori qator, Hill Street yonida",
        "whyUz": "Supermarket va garaj bir qatorda, yonma-yon → next to.\nHill Street narigi tomonida TRAIN STATION → opposite.",
-       "speak": "Where is the supermarket?"
+       "speak": "Where is the supermarket?",
+       "speakAnswer": "It's next to the garage. It's opposite the train station."
       },
       {
        "prompt": "Where is the post office?",
        "answer": "It's between the restaurant and the café.",
        "promptUz": "King Street ostidagi qator",
        "whyUz": "Pochta restoran va kafe orasida.\nAvtobus bekati uning oldida (9a-mashqning 4-bandi).",
-       "speak": "Where is the post office?"
+       "speak": "Where is the post office?",
+       "speakAnswer": "It's between the restaurant and the café."
       },
       {
        "prompt": "Where is the garage?",
        "answer": "It's next to the supermarket. It's opposite the hospital.",
        "promptUz": "Yuqori qator, Apple Street yonida",
        "whyUz": "Garaj supermarket yonida (ko'chasiz) → next to.\nApple Street narigi tomonida HOSPITAL → opposite.",
-       "speak": "Where is the garage?"
+       "speak": "Where is the garage?",
+       "speakAnswer": "It's next to the supermarket. It's opposite the hospital."
       },
       {
        "prompt": "Where is the police station?",
        "answer": "It's next to the cinema and the department store. It's opposite the park.",
        "promptUz": "Uchinchi qator, o'rtada",
        "whyUz": "Kinoteatr ostida va univermag yonida → next to.\nApple Street narigi tomonida PARK → opposite.",
-       "speak": "Where is the police station?"
+       "speak": "Where is the police station?",
+       "speakAnswer": "It's next to the cinema and the department store. It's opposite the park."
       },
       {
        "prompt": "Where is the department store?",
        "answer": "It's next to the police station. It's opposite the museum.",
        "promptUz": "Uchinchi qator, Hill Street yonida",
        "whyUz": "Univermag militsiya bo'limi yonida → next to.\nHill Street narigi tomonida MUSEUM → opposite.",
-       "speak": "Where is the department store?"
+       "speak": "Where is the department store?",
+       "speakAnswer": "It's next to the police station. It's opposite the museum."
       },
       {
        "prompt": "Where is the museum?",
        "answer": "It's next to the hotel. It's opposite the department store.",
        "promptUz": "Chap ustun, eng pastda",
        "whyUz": "Muzey mehmonxona ostida → next to.\nHill Street narigi tomonida DEPARTMENT STORE → opposite.",
-       "speak": "Where is the museum?"
+       "speak": "Where is the museum?",
+       "speakAnswer": "It's next to the hotel. It's opposite the department store."
       },
       {
        "prompt": "Where is the restaurant?",
        "answer": "It's next to the post office. It's opposite the museum.",
        "promptUz": "King Street ostida, eng chapda",
        "whyUz": "Restoran pochta yonida → next to.\nKing Street narigi tomonida MUSEUM → opposite.",
-       "speak": "Where is the restaurant?"
+       "speak": "Where is the restaurant?",
+       "speakAnswer": "It's next to the post office. It's opposite the museum."
       },
       {
        "prompt": "Where is the fire station?",
        "answer": "It's next to the bank. It's opposite the park.",
        "promptUz": "King Street ostida, eng o'ngda",
        "whyUz": "O't o'chirish bo'limi bank yonida → next to.\nKing Street narigi tomonida PARK → opposite.",
-       "speak": "Where is the fire station?"
+       "speak": "Where is the fire station?",
+       "speakAnswer": "It's next to the bank. It's opposite the park."
       },
       {
        "prompt": "Where is the school?",
        "answer": "It's between the hospital and the park. It's opposite the cinema.",
        "promptUz": "O'ng ustun, o'rtada",
        "whyUz": "Maktab kasalxona va bog' orasida → between.\nApple Street narigi tomonida CINEMA → opposite (9a-mashqning 1-bandi).",
-       "speak": "Where is the school?"
+       "speak": "Where is the school?",
+       "speakAnswer": "It's between the hospital and the park. It's opposite the cinema."
       }
      ]
     }
@@ -2698,14 +2855,16 @@
        "answer": "was",
        "promptUz": "Birlik egalar uchun shakl",
        "whyUz": "I, he, she, it — BIRLIK → WAS.\nJadvalning birinchi qatoridan olinadi.",
-       "speak": "We use ............ with I, he, she and it."
+       "speak": "We use ............ with I, he, she and it.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "We use ............ with we, you and they.",
        "answer": "were",
        "promptUz": "Ko'plik egalar uchun shakl",
        "whyUz": "we, you, they — KO'PLIK → WERE.\n'you' birlik ma'noda bo'lsa ham WERE oladi.",
-       "speak": "We use ............ with we, you and they."
+       "speak": "We use ............ with we, you and they.",
+       "speakAnswer": "were"
       }
      ]
     },
@@ -2725,126 +2884,144 @@
        "answer": "Were there any bicycles on Inishmore 50 years ago?",
        "promptUz": "Savol tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\n50 yil oldin faqat eshaklar bor edi — velosiped yo'q edi.\n'bicycles' ko'plik → WERE there ANY.",
-       "speak": "bicycles"
+       "speak": "bicycles",
+       "speakAnswer": "Were there any bicycles on Inishmore 50 years ago?"
       },
       {
        "prompt": "bicycles",
        "answer": "No, there weren't.",
        "promptUz": "Javob tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\n50 yil oldin faqat eshaklar bor edi — velosiped yo'q edi.\n'bicycles' ko'plik → WERE there ANY.",
-       "speak": "bicycles"
+       "speak": "bicycles",
+       "speakAnswer": "No, there weren't."
       },
       {
        "prompt": "fishing boats",
        "answer": "Were there any fishing boats on Inishmore 50 years ago?",
        "promptUz": "Savol tuzing",
        "whyUz": "Maqolada: 'only donkeys and fishing boats'.\nBaliqchilik — orolning asosiy kasbi edi.",
-       "speak": "fishing boats"
+       "speak": "fishing boats",
+       "speakAnswer": "Were there any fishing boats on Inishmore 50 years ago?"
       },
       {
        "prompt": "fishing boats",
        "answer": "Yes, there were.",
        "promptUz": "Javob tuzing",
        "whyUz": "Maqolada: 'only donkeys and fishing boats'.\nBaliqchilik — orolning asosiy kasbi edi.",
-       "speak": "fishing boats"
+       "speak": "fishing boats",
+       "speakAnswer": "Yes, there were."
       },
       {
        "prompt": "restaurants",
        "answer": "Were there any restaurants on Inishmore 50 years ago?",
        "promptUz": "Savol tuzing",
        "whyUz": "Restoranlar sayyohlar bilan birga KEYIN paydo bo'lgan.",
-       "speak": "restaurants"
+       "speak": "restaurants",
+       "speakAnswer": "Were there any restaurants on Inishmore 50 years ago?"
       },
       {
        "prompt": "restaurants",
        "answer": "No, there weren't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Restoranlar sayyohlar bilan birga KEYIN paydo bo'lgan.",
-       "speak": "restaurants"
+       "speak": "restaurants",
+       "speakAnswer": "No, there weren't."
       },
       {
        "prompt": "stone cottages",
        "answer": "Were there any stone cottages on Inishmore 50 years ago?",
        "promptUz": "Savol tuzing",
        "whyUz": "Maqolada: 'They only had small stone cottages'.\nHozir esa 'modern houses'.",
-       "speak": "stone cottages"
+       "speak": "stone cottages",
+       "speakAnswer": "Were there any stone cottages on Inishmore 50 years ago?"
       },
       {
        "prompt": "stone cottages",
        "answer": "Yes, there were.",
        "promptUz": "Javob tuzing",
        "whyUz": "Maqolada: 'They only had small stone cottages'.\nHozir esa 'modern houses'.",
-       "speak": "stone cottages"
+       "speak": "stone cottages",
+       "speakAnswer": "Yes, there were."
       },
       {
        "prompt": "an airport",
        "answer": "Was there an airport on Inishmore 50 years ago?",
        "promptUz": "Savol tuzing",
        "whyUz": "DIQQAT: 'an airport' — BIRLIK →\n'WAS there AN airport?' ('Were there any' XATO).\nAeroport hozir bor, 50 yil oldin yo'q edi.",
-       "speak": "an airport"
+       "speak": "an airport",
+       "speakAnswer": "Was there an airport on Inishmore 50 years ago?"
       },
       {
        "prompt": "an airport",
        "answer": "No, there wasn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "DIQQAT: 'an airport' — BIRLIK →\n'WAS there AN airport?' ('Were there any' XATO).\nAeroport hozir bor, 50 yil oldin yo'q edi.",
-       "speak": "an airport"
+       "speak": "an airport",
+       "speakAnswer": "No, there wasn't."
       },
       {
        "prompt": "donkeys",
        "answer": "Were there any donkeys on Inishmore 50 years ago?",
        "promptUz": "Savol tuzing",
        "whyUz": "Maqolada: mashina yo'q edi, faqat eshaklar.\n'a donkey' = eshak.",
-       "speak": "donkeys"
+       "speak": "donkeys",
+       "speakAnswer": "Were there any donkeys on Inishmore 50 years ago?"
       },
       {
        "prompt": "donkeys",
        "answer": "Yes, there were.",
        "promptUz": "Javob tuzing",
        "whyUz": "Maqolada: mashina yo'q edi, faqat eshaklar.\n'a donkey' = eshak.",
-       "speak": "donkeys"
+       "speak": "donkeys",
+       "speakAnswer": "Yes, there were."
       },
       {
        "prompt": "souvenir shops",
        "answer": "Were there any souvenir shops on Inishmore 50 years ago?",
        "promptUz": "Savol tuzing",
        "whyUz": "Sovg'a do'konlari sayyohlik rivojlangach ochilgan.",
-       "speak": "souvenir shops"
+       "speak": "souvenir shops",
+       "speakAnswer": "Were there any souvenir shops on Inishmore 50 years ago?"
       },
       {
        "prompt": "souvenir shops",
        "answer": "No, there weren't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Sovg'a do'konlari sayyohlik rivojlangach ochilgan.",
-       "speak": "souvenir shops"
+       "speak": "souvenir shops",
+       "speakAnswer": "No, there weren't."
       },
       {
        "prompt": "guest houses",
        "answer": "Were there any guest houses on Inishmore 50 years ago?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a guest house' = mehmon uyi (kichik mehmonxona).\nBu ham sayyohlik bilan paydo bo'lgan.",
-       "speak": "guest houses"
+       "speak": "guest houses",
+       "speakAnswer": "Were there any guest houses on Inishmore 50 years ago?"
       },
       {
        "prompt": "guest houses",
        "answer": "No, there weren't.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a guest house' = mehmon uyi (kichik mehmonxona).\nBu ham sayyohlik bilan paydo bo'lgan.",
-       "speak": "guest houses"
+       "speak": "guest houses",
+       "speakAnswer": "No, there weren't."
       },
       {
        "prompt": "green fields",
        "answer": "Were there any green fields on Inishmore 50 years ago?",
        "promptUz": "Savol tuzing",
        "whyUz": "Yashil dalalar HAM O'SHANDA, HAM HOZIR bor —\n63-betda Coneely dalalarga qarab turibdi.\nOrolda o'zgarmagan narsalardan biri.",
-       "speak": "green fields"
+       "speak": "green fields",
+       "speakAnswer": "Were there any green fields on Inishmore 50 years ago?"
       },
       {
        "prompt": "green fields",
        "answer": "Yes, there were.",
        "promptUz": "Javob tuzing",
        "whyUz": "Yashil dalalar HAM O'SHANDA, HAM HOZIR bor —\n63-betda Coneely dalalarga qarab turibdi.\nOrolda o'zgarmagan narsalardan biri.",
-       "speak": "green fields"
+       "speak": "green fields",
+       "speakAnswer": "Yes, there were."
       }
      ]
     }
@@ -2985,28 +3162,32 @@
        "answer": "They had hot-air balloons 100 years ago, but they didn't have helicopters.",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "1783 (✓) va 1939 (✗).\nQolip: HAD ... , but they DIDN'T HAVE ... .",
-       "speak": "hot-air balloons (✓)  +  helicopters (✗)"
+       "speak": "hot-air balloons (✓)  +  helicopters (✗)",
+       "speakAnswer": "They had hot-air balloons 100 years ago, but they didn't have helicopters."
       },
       {
        "prompt": "typewriters (✓)  +  computers (✗)",
        "answer": "They had typewriters 100 years ago, but they didn't have computers.",
        "promptUz": "Ikkalasi ham yozish uchun",
        "whyUz": "1867 (✓) va 1939 (✗).\nYozuv mashinkasi bor edi, kompyuter yo'q edi.",
-       "speak": "typewriters (✓)  +  computers (✗)"
+       "speak": "typewriters (✓)  +  computers (✗)",
+       "speakAnswer": "They had typewriters 100 years ago, but they didn't have computers."
       },
       {
        "prompt": "telephones (✓)  +  TVs (✗)",
        "answer": "They had telephones 100 years ago, but they didn't have TVs.",
        "promptUz": "Ikkalasi ham uy texnikasi",
        "whyUz": "1876 (✓) va 1926 (✗).\nTelefon televizordan 50 yil oldin ixtiro qilingan.",
-       "speak": "telephones (✓)  +  TVs (✗)"
+       "speak": "telephones (✓)  +  TVs (✗)",
+       "speakAnswer": "They had telephones 100 years ago, but they didn't have TVs."
       },
       {
        "prompt": "cars (✓)  +  compact discs (✗)",
        "answer": "They had cars 100 years ago, but they didn't have compact discs.",
        "promptUz": "Qolgan juft",
        "whyUz": "1886 (✓) va 1979 (✗).\nRo'yxatdagi eng erta va eng kech ixtirolardan.",
-       "speak": "cars (✓)  +  compact discs (✗)"
+       "speak": "cars (✓)  +  compact discs (✗)",
+       "speakAnswer": "They had cars 100 years ago, but they didn't have compact discs."
       }
      ]
     }
@@ -3198,7 +3379,8 @@
         "couldn't"
        ],
        "whyUz": "'Can you swim?' — HOZIRGI zamon savoli →\nqisqa javob ham hozirgi: CAN'T.\nQisqa javobda asosiy fe'l takrorlanmaydi.",
-       "speak": "1  B: No, I ............ ."
+       "speak": "1  B: No, I ............ .",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "1  B: ............ you swim when you ............ five?  [1-bo'shliq]",
@@ -3210,7 +3392,8 @@
         "couldn't"
        ],
        "whyUz": "'when you were five' o'tgan zamonni ko'rsatadi →\ncan ning o'tgan shakli COULD.\nSo'roq gapda 'Could' boshda.",
-       "speak": "1  B: ............ you swim when you ............ five?  [1-bo'shliq]"
+       "speak": "1  B: ............ you swim when you ............ five?  [1-bo'shliq]",
+       "speakAnswer": "Could"
       },
       {
        "prompt": "1  B: ............ you swim when you ............ five?  [2-bo'shliq]",
@@ -3222,7 +3405,8 @@
         "could"
        ],
        "whyUz": "'you' → WERE (birlik ma'noda ham WERE).\n'when you were five' = besh yoshingda.",
-       "speak": "1  B: ............ you swim when you ............ five?  [2-bo'shliq]"
+       "speak": "1  B: ............ you swim when you ............ five?  [2-bo'shliq]",
+       "speakAnswer": "were"
       },
       {
        "prompt": "1  A: No, I ............ .",
@@ -3234,7 +3418,8 @@
         "could"
        ],
        "whyUz": "'Could you ...?' savoliga → COULDN'T.\n2-bo'shliq ('can't') bilan solishtiring: u hozirgi, bu o'tgan.",
-       "speak": "1  A: No, I ............ ."
+       "speak": "1  A: No, I ............ .",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "2  I ............ a car now, ...",
@@ -3246,7 +3431,8 @@
         "could"
        ],
        "whyUz": "'now' → HOZIRGI zamon.\nMashina — mulk → HAVE GOT.\n'I' → have got (has got EMAS).",
-       "speak": "2  I ............ a car now, ..."
+       "speak": "2  I ............ a car now, ...",
+       "speakAnswer": "have got"
       },
       {
        "prompt": "2  ... but I ............ a bicycle.",
@@ -3258,7 +3444,8 @@
         "could"
        ],
        "whyUz": "'but' oldingi tasdiqqa qarshi → INKOR.\nHozirgi zamon + 'I' → HAVEN'T GOT.",
-       "speak": "2  ... but I ............ a bicycle."
+       "speak": "2  ... but I ............ a bicycle.",
+       "speakAnswer": "haven't got"
       },
       {
        "prompt": "2  I ............ a bicycle when I ............ six.  [1-bo'shliq]",
@@ -3270,7 +3457,8 @@
         "could"
        ],
        "whyUz": "O'tgan zamon + mulk → HAD.\n'have got' ning o'tgan shakli HAD.",
-       "speak": "2  I ............ a bicycle when I ............ six.  [1-bo'shliq]"
+       "speak": "2  I ............ a bicycle when I ............ six.  [1-bo'shliq]",
+       "speakAnswer": "had"
       },
       {
        "prompt": "2  I ............ a bicycle when I ............ six.  [2-bo'shliq]",
@@ -3282,7 +3470,8 @@
         "could"
        ],
        "whyUz": "'I' → WAS.\n'when I was six' = olti yoshimda.",
-       "speak": "2  I ............ a bicycle when I ............ six.  [2-bo'shliq]"
+       "speak": "2  I ............ a bicycle when I ............ six.  [2-bo'shliq]",
+       "speakAnswer": "was"
       },
       {
        "prompt": "3  There ............ a bank opposite the cinema, ...",
@@ -3294,7 +3483,8 @@
         "could"
        ],
        "whyUz": "Hozirgi zamon (bugungi shahar haqida) + BIRLIK ot →\nTHERE IS.\n'opposite' = ro'parasida (64-betdan).",
-       "speak": "3  There ............ a bank opposite the cinema, ..."
+       "speak": "3  There ............ a bank opposite the cinema, ...",
+       "speakAnswer": "is"
       },
       {
        "prompt": "3  ... but fifty years ago there ............ a bank ...",
@@ -3306,7 +3496,8 @@
         "could"
        ],
        "whyUz": "'fifty years ago' → O'TGAN zamon.\n'but' qarama-qarshilik → INKOR.\n'a bank' BIRLIK → WASN'T.",
-       "speak": "3  ... but fifty years ago there ............ a bank ..."
+       "speak": "3  ... but fifty years ago there ............ a bank ...",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "3  ... — there ............ a hotel, ...",
@@ -3317,7 +3508,8 @@
         "can't",
         "could"
        ],
-       "whyUz": "Tire (—) tushuntirish beryapti: bank emas, MEHMONXONA edi.\nO'tgan + tasdiq + birlik → WAS."
+       "whyUz": "Tire (—) tushuntirish beryapti: bank emas, MEHMONXONA edi.\nO'tgan + tasdiq + birlik → WAS.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "3  ... but it ............ there now.",
@@ -3329,7 +3521,8 @@
         "could"
        ],
        "whyUz": "'now' → HOZIRGI.\n'but' → INKOR.\n'it' birlik → ISN'T.\nMa'nosi: mehmonxona hozir yo'q.",
-       "speak": "3  ... but it ............ there now."
+       "speak": "3  ... but it ............ there now.",
+       "speakAnswer": "isn't"
       },
       {
        "prompt": "3  There ............ any shops then, ...",
@@ -3341,7 +3534,8 @@
         "could"
        ],
        "whyUz": "'ANY' → INKOR.\n'then' = o'shanda → O'TGAN zamon.\n'shops' KO'PLIK → WEREN'T.",
-       "speak": "3  There ............ any shops then, ..."
+       "speak": "3  There ............ any shops then, ...",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "3  ... but there ............ a lot of green fields.",
@@ -3353,7 +3547,8 @@
         "could"
        ],
        "whyUz": "'but' — oldingi inkorga qarshi → TASDIQ.\n'green fields' KO'PLIK → WERE.",
-       "speak": "3  ... but there ............ a lot of green fields."
+       "speak": "3  ... but there ............ a lot of green fields.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "3  Now there ............ any green fields, ...",
@@ -3365,7 +3560,8 @@
         "could"
        ],
        "whyUz": "'Now' → HOZIRGI.\n'ANY' → INKOR.\nKo'plik → AREN'T.\nMa'nosi: hozir yashil dala qolmagan.",
-       "speak": "3  Now there ............ any green fields, ..."
+       "speak": "3  Now there ............ any green fields, ...",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "3  ... but there ............ a lot of shops.",
@@ -3377,7 +3573,8 @@
         "could"
        ],
        "whyUz": "'but' → TASDIQ.\nHozirgi + ko'plik → ARE.\nButun 3-band 'oldin ↔ hozir' qarama-qarshiligi ustiga qurilgan.",
-       "speak": "3  ... but there ............ a lot of shops."
+       "speak": "3  ... but there ............ a lot of shops.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "4  When he ............ five, ...",
@@ -3389,7 +3586,8 @@
         "could"
        ],
        "whyUz": "'he' — birlik → WAS.\n'When he was five' = besh yoshida.",
-       "speak": "4  When he ............ five, ..."
+       "speak": "4  When he ............ five, ...",
+       "speakAnswer": "was"
       },
       {
        "prompt": "4  ... he ............ a cat as a pet.",
@@ -3401,7 +3599,8 @@
         "could"
        ],
        "whyUz": "Uy hayvoni — 'egalik' → o'tgan zamonda HAD.\n'as a pet' = uy hayvoni sifatida.",
-       "speak": "4  ... he ............ a cat as a pet."
+       "speak": "4  ... he ............ a cat as a pet.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "4  He ............ any dogs.",
@@ -3413,7 +3612,8 @@
         "could"
        ],
        "whyUz": "'ANY' → INKOR.\nO'tgan zamon + mulk inkori → DIDN'T HAVE.\nDIQQAT: 'didn't HAD' XATO.",
-       "speak": "4  He ............ any dogs."
+       "speak": "4  He ............ any dogs.",
+       "speakAnswer": "didn't have"
       },
       {
        "prompt": "4  Now he ............ three dogs, ...",
@@ -3425,7 +3625,8 @@
         "could"
        ],
        "whyUz": "'Now' → HOZIRGI zamon.\n'he' — 3-shaxs birlik → HAS GOT ('have got' EMAS).",
-       "speak": "4  Now he ............ three dogs, ..."
+       "speak": "4  Now he ............ three dogs, ...",
+       "speakAnswer": "has got"
       },
       {
        "prompt": "4  ... but he ............ any cats.",
@@ -3437,7 +3638,8 @@
         "could"
        ],
        "whyUz": "'ANY' va 'but' → INKOR.\n'he' → HASN'T GOT.\nMa'nosi: ilgari mushuk bor edi, hozir yo'q — teskarisi it bilan.",
-       "speak": "4  ... but he ............ any cats."
+       "speak": "4  ... but he ............ any cats.",
+       "speakAnswer": "hasn't got"
       },
       {
        "prompt": "5  When I was five, I ............ ride a bicycle, ...",
@@ -3449,7 +3651,8 @@
         "couldn't"
        ],
        "whyUz": "Keyingi so'z FE'L → 'can/could' kerak.\n'When I was five' → O'TGAN → COULD.\n'could' dan keyin fe'l asosiy shaklda, 'to' siz.",
-       "speak": "5  When I was five, I ............ ride a bicycle, ..."
+       "speak": "5  When I was five, I ............ ride a bicycle, ...",
+       "speakAnswer": "could"
       },
       {
        "prompt": "5  ... but I ............ ride a motor bike.",
@@ -3461,7 +3664,8 @@
         "could"
        ],
        "whyUz": "'but' → INKOR → COULDN'T.\n'a motor bike' = mototsikl.",
-       "speak": "5  ... but I ............ ride a motor bike."
+       "speak": "5  ... but I ............ ride a motor bike.",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "5  Now I ............ a motor bike ...",
@@ -3473,7 +3677,8 @@
         "could"
        ],
        "whyUz": "'Now' → HOZIRGI.\nMototsikl — mulk → HAVE GOT.\nDIQQAT: keyin fe'l YO'Q, ot bor → 'can' emas.",
-       "speak": "5  Now I ............ a motor bike ..."
+       "speak": "5  Now I ............ a motor bike ...",
+       "speakAnswer": "have got"
       },
       {
        "prompt": "5  ... and I ............ ride it very well.",
@@ -3485,7 +3690,8 @@
         "couldn't"
        ],
        "whyUz": "Keyingi so'z FE'L → 'can/could'.\n'Now' → HOZIRGI → CAN.\nBir gapda ikki xil: 'have got' (mulk) + 'can' (qobiliyat).",
-       "speak": "5  ... and I ............ ride it very well."
+       "speak": "5  ... and I ............ ride it very well.",
+       "speakAnswer": "can"
       }
      ]
     }
@@ -3520,7 +3726,8 @@
         "next to"
        ],
        "whyUz": "Gazeta do'koni High Street ning G'ARBIDA,\nmeva do'koni SHARQIDA → ko'cha ajratadi → OPPOSITE.\nIkkalasi ham yuqori qatorda.",
-       "speak": "1  The newsagent's is ............ the greengrocer's."
+       "speak": "1  The newsagent's is ............ the greengrocer's.",
+       "speakAnswer": "opposite"
       },
       {
        "prompt": "2  The chemist's is ............ the supermarket.",
@@ -3532,7 +3739,8 @@
         "opposite"
        ],
        "whyUz": "Dorixona (5) va supermarket (8) BIR ustunda,\nyonma-yon — ko'cha ajratmaydi → NEXT TO.",
-       "speak": "2  The chemist's is ............ the supermarket."
+       "speak": "2  The chemist's is ............ the supermarket.",
+       "speakAnswer": "next to"
       },
       {
        "prompt": "3  The butcher's is ............ the restaurant and the baker's.",
@@ -3544,7 +3752,8 @@
         "next to"
        ],
        "whyUz": "Chap ustun: RESTAURANT (1) → BUTCHER'S (4) → BAKER'S (7).\nQassobxona ikkisining O'RTASIDA → BETWEEN.\n'between A AND B' — 'and' shart.",
-       "speak": "3  The butcher's is ............ the restaurant and the baker's."
+       "speak": "3  The butcher's is ............ the restaurant and the baker's.",
+       "speakAnswer": "between"
       },
       {
        "prompt": "4  The bus stop is ............ the post office.",
@@ -3556,7 +3765,8 @@
         "next to"
        ],
        "whyUz": "Xaritada avtobus bekati pochta binosining OLDIDA turibdi →\nIN FRONT OF.\nAksi: behind.",
-       "speak": "4  The bus stop is ............ the post office."
+       "speak": "4  The bus stop is ............ the post office.",
+       "speakAnswer": "in front of"
       },
       {
        "prompt": "5  The supermarket is ............ the corner of High Street and Park Street.",
@@ -3568,7 +3778,8 @@
         "opposite"
        ],
        "whyUz": "'ON the corner of X and Y' — o'zgarmas ibora.\nSupermarket High Street va Park Street kesishgan joyda.",
-       "speak": "5  The supermarket is ............ the corner of High Street and Park Street."
+       "speak": "5  The supermarket is ............ the corner of High Street and Park Street.",
+       "speakAnswer": "on"
       }
      ]
     }
@@ -3603,7 +3814,8 @@
         "weren't"
        ],
        "whyUz": "'your brother' BIRLIK → WAS.\n'yesterday' = kecha → o'tgan zamon.",
-       "speak": "1  Where ............ your brother yesterday?"
+       "speak": "1  Where ............ your brother yesterday?",
+       "speakAnswer": "was"
       },
       {
        "prompt": "2  There ............ any cinemas here a hundred years ago.",
@@ -3615,7 +3827,8 @@
         "were"
        ],
        "whyUz": "'ANY' → INKOR.\n'cinemas' KO'PLIK → WEREN'T.\n'a hundred years ago' = yuz yil oldin.",
-       "speak": "2  There ............ any cinemas here a hundred years ago."
+       "speak": "2  There ............ any cinemas here a hundred years ago.",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "3  My friends and I ............ at a party last night.",
@@ -3627,7 +3840,8 @@
         "weren't"
        ],
        "whyUz": "'My friends and I' — KO'PLIK ('we' bilan bir xil) → WERE.\nDIQQAT: 'I' oxirida turadi — odob qoidasi.",
-       "speak": "3  My friends and I ............ at a party last night."
+       "speak": "3  My friends and I ............ at a party last night.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "4  ............ there a supermarket on this street ten years ago?",
@@ -3639,7 +3853,8 @@
         "weren't"
        ],
        "whyUz": "'a supermarket' BIRLIK → WAS.\nSo'roq gapda 'Was there ...?' — boshda.\n'on this street' = bu ko'chada.",
-       "speak": "4  ............ there a supermarket on this street ten years ago?"
+       "speak": "4  ............ there a supermarket on this street ten years ago?",
+       "speakAnswer": "Was"
       },
       {
        "prompt": "5  \"............ you at work yesterday?\"  [1-bo'shliq]",
@@ -3651,7 +3866,8 @@
         "weren't"
        ],
        "whyUz": "'you' → DOIM WERE (birlik ma'noda ham).\n'at work' = ishda.",
-       "speak": "5  \"............ you at work yesterday?\"  [1-bo'shliq]"
+       "speak": "5  \"............ you at work yesterday?\"  [1-bo'shliq]",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "5  \"No, I ............ .\"  [2-bo'shliq]",
@@ -3663,7 +3879,8 @@
         "weren't"
        ],
        "whyUz": "'I' → WASN'T.\nDIQQAT: savolda WERE, javobda WASN'T — ega o'zgardi.",
-       "speak": "5  \"No, I ............ .\"  [2-bo'shliq]"
+       "speak": "5  \"No, I ............ .\"  [2-bo'shliq]",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "6  \"............ there any hotels on the island in those days?\"  [1-bo'shliq]",
@@ -3675,7 +3892,8 @@
         "weren't"
        ],
        "whyUz": "'hotels' KO'PLIK → WERE.\n'in those days' = o'sha kunlarda (Coursebook 64-betdan).",
-       "speak": "6  \"............ there any hotels on the island in those days?\"  [1-bo'shliq]"
+       "speak": "6  \"............ there any hotels on the island in those days?\"  [1-bo'shliq]",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "6  \"No, there ............ .\"  [2-bo'shliq]",
@@ -3687,7 +3905,8 @@
         "were"
        ],
        "whyUz": "Savol 'Were there ...?' → javob 'No, there WEREN'T.'\nSavoldagi shakl javobda takrorlanadi.",
-       "speak": "6  \"No, there ............ .\"  [2-bo'shliq]"
+       "speak": "6  \"No, there ............ .\"  [2-bo'shliq]",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "7  James ............ at home last night.  [1-bo'shliq]",
@@ -3699,7 +3918,8 @@
         "weren't"
        ],
        "whyUz": "MANTIQ: keyingi gapda 'He ... at the theatre' deyilgan —\ndemak UYDA EMAS edi → INKOR.\n'James' BIRLIK → WASN'T.",
-       "speak": "7  James ............ at home last night.  [1-bo'shliq]"
+       "speak": "7  James ............ at home last night.  [1-bo'shliq]",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "7  He ............ at the theatre.  [2-bo'shliq]",
@@ -3711,7 +3931,8 @@
         "weren't"
        ],
        "whyUz": "'He' BIRLIK → WAS.\n'at the theatre' = teatrda.\nIkki gap birga: uyda emasdi, teatrda edi.",
-       "speak": "7  He ............ at the theatre.  [2-bo'shliq]"
+       "speak": "7  He ............ at the theatre.  [2-bo'shliq]",
+       "speakAnswer": "was"
       }
      ]
     },
@@ -3736,7 +3957,8 @@
         "is"
        ],
        "whyUz": "'last night' → O'TGAN zamon.\n'you' → WERE.",
-       "speak": "1  A: Where ............ you last night?"
+       "speak": "1  A: Where ............ you last night?",
+       "speakAnswer": "were"
       },
       {
        "prompt": "1  B: I ............ at the new restaurant.",
@@ -3748,7 +3970,8 @@
         "is"
        ],
        "whyUz": "'I' → WAS.\nSuhbat kecha haqida davom etyapti.",
-       "speak": "1  B: I ............ at the new restaurant."
+       "speak": "1  B: I ............ at the new restaurant.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "1  A: ............ the food nice?",
@@ -3760,7 +3983,8 @@
         "is"
        ],
        "whyUz": "'the food' — SANALMAYDIGAN ot, birlik kabi → WAS.\nSuhbat hali ham kechagi restoran haqida.",
-       "speak": "1  A: ............ the food nice?"
+       "speak": "1  A: ............ the food nice?",
+       "speakAnswer": "Was"
       },
       {
        "prompt": "1  B: No, it ............ .",
@@ -3772,7 +3996,8 @@
         "is"
        ],
        "whyUz": "'Was ...?' savoliga → 'No, it WASN'T.'",
-       "speak": "1  B: No, it ............ ."
+       "speak": "1  B: No, it ............ .",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "1  B: It ............ awful.",
@@ -3784,7 +4009,8 @@
         "is"
        ],
        "whyUz": "'It' → WAS.\n'awful' = dahshatli, juda yomon.\nOldingi band bilan mos: yaxshi emasdi — dahshatli edi.",
-       "speak": "1  B: It ............ awful."
+       "speak": "1  B: It ............ awful.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "1  A: ............ your parents at home now?",
@@ -3796,7 +4022,8 @@
         "is"
        ],
        "whyUz": "'now' → HOZIRGI zamonga o'tildi.\n'your parents' KO'PLIK → ARE.",
-       "speak": "1  A: ............ your parents at home now?"
+       "speak": "1  A: ............ your parents at home now?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "1  B: No, they ............ .",
@@ -3808,7 +4035,8 @@
         "is"
        ],
        "whyUz": "'Are ...?' savoliga → 'No, they AREN'T.'",
-       "speak": "1  B: No, they ............ ."
+       "speak": "1  B: No, they ............ .",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "1  B: They ............ on holiday.",
@@ -3820,7 +4048,8 @@
         "is"
        ],
        "whyUz": "'They' → ARE.\n'on holiday' = ta'tilda (predlog ON).",
-       "speak": "1  B: They ............ on holiday."
+       "speak": "1  B: They ............ on holiday.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "1  B: My little brother ............ with them.",
@@ -3832,7 +4061,8 @@
         "isn't"
        ],
        "whyUz": "'My little brother' BIRLIK → IS.\n'little' bu yerda = kichik (yosh).\n'with them' = ular bilan.",
-       "speak": "1  B: My little brother ............ with them."
+       "speak": "1  B: My little brother ............ with them.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "2  A: ............ there any department stores in your town twenty years ago?",
@@ -3844,7 +4074,8 @@
         "is"
        ],
        "whyUz": "'department stores' KO'PLIK → WERE.\n'twenty years ago' → O'TGAN zamon.",
-       "speak": "2  A: ............ there any department stores in your town twenty years ago?"
+       "speak": "2  A: ............ there any department stores in your town twenty years ago?",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "2  B: No, there ............ ...",
@@ -3856,7 +4087,8 @@
         "is"
        ],
        "whyUz": "'Were there ...?' → 'No, there WEREN'T.'",
-       "speak": "2  B: No, there ............ ..."
+       "speak": "2  B: No, there ............ ...",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "2  ... but there ............ some great ones today.",
@@ -3868,7 +4100,8 @@
         "is"
        ],
        "whyUz": "'today' → HOZIRGI zamon.\n'some great ones' KO'PLIK → ARE.\n'ones' = 'department stores' o'rniga turibdi.\n'some' — tasdiq gapda ('any' emas).",
-       "speak": "2  ... but there ............ some great ones today."
+       "speak": "2  ... but there ............ some great ones today.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "2  The one I like ............ in Park Street.",
@@ -3880,7 +4113,8 @@
         "isn't"
        ],
        "whyUz": "'The one' BIRLIK → IS.\nOldingi band bilan solishtiring: 'ones' ko'plik edi → are.\n'Park Street' — 36-betdagi xaritadagi ko'cha.",
-       "speak": "2  The one I like ............ in Park Street."
+       "speak": "2  The one I like ............ in Park Street.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "3  A: ............ you from Italy?",
@@ -3892,7 +4126,8 @@
         "is"
        ],
        "whyUz": "Odamning qayerdanligi — DOIMIY fakt → HOZIRGI zamon.\n'you' → ARE.",
-       "speak": "3  A: ............ you from Italy?"
+       "speak": "3  A: ............ you from Italy?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "3  B: No, I ............ .",
@@ -3904,7 +4139,8 @@
         "isn't"
        ],
        "whyUz": "'Are you ...?' savoliga 'I' bilan javob → 'No, I'M NOT.'\nDIQQAT: 'I amn't' shakli YO'Q.",
-       "speak": "3  B: No, I ............ ."
+       "speak": "3  B: No, I ............ .",
+       "speakAnswer": "'m not"
       },
       {
        "prompt": "3  B: I ............ from Spain.",
@@ -3916,7 +4152,8 @@
         "isn't"
        ],
        "whyUz": "'I' → AM ('I'm from Spain' ham to'g'ri).\n'Spain' = Ispaniya.",
-       "speak": "3  B: I ............ from Spain."
+       "speak": "3  B: I ............ from Spain.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "3  A: ............ your wife from Italy?",
@@ -3928,7 +4165,8 @@
         "isn't"
        ],
        "whyUz": "'your wife' BIRLIK → IS.\n'a wife' = xotin.",
-       "speak": "3  A: ............ your wife from Italy?"
+       "speak": "3  A: ............ your wife from Italy?",
+       "speakAnswer": "Is"
       },
       {
        "prompt": "3  B: No, she ............ .",
@@ -3940,7 +4178,8 @@
         "is"
        ],
        "whyUz": "'Is ...?' savoliga → 'No, she ISN'T.'",
-       "speak": "3  B: No, she ............ ."
+       "speak": "3  B: No, she ............ .",
+       "speakAnswer": "isn't"
       },
       {
        "prompt": "3  B: She ............ from Spain, too.",
@@ -3952,7 +4191,8 @@
         "isn't"
        ],
        "whyUz": "'She' → IS.\n'too' = ham (gap oxirida, oldidan vergul).",
-       "speak": "3  B: She ............ from Spain, too."
+       "speak": "3  B: She ............ from Spain, too.",
+       "speakAnswer": "is"
       }
      ]
     },
@@ -3972,84 +4212,96 @@
        "answer": "Was Marilyn Monroe a musician?",
        "promptUz": "Savol tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\nMerilin Monro — mashhur amerikalik aktrisa.\n'an actress' — 'a' unli tovush oldidan 'an' bo'ladi.\n'a musician' = musiqachi.",
-       "speak": "1  Marilyn Monroe / musician / actress"
+       "speak": "1  Marilyn Monroe / musician / actress",
+       "speakAnswer": "Was Marilyn Monroe a musician?"
       },
       {
        "prompt": "1  Marilyn Monroe / musician / actress",
        "answer": "No, she wasn't. She was an actress.",
        "promptUz": "Javob tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\nMerilin Monro — mashhur amerikalik aktrisa.\n'an actress' — 'a' unli tovush oldidan 'an' bo'ladi.\n'a musician' = musiqachi.",
-       "speak": "1  Marilyn Monroe / musician / actress"
+       "speak": "1  Marilyn Monroe / musician / actress",
+       "speakAnswer": "No, she wasn't. She was an actress."
       },
       {
        "prompt": "2  Napoleon / Italian / French",
        "answer": "Was Napoleon Italian?",
        "promptUz": "Savol tuzing",
        "whyUz": "Napoleon Bonapart — fransuz imperatori.\nBitta erkak → Was ... ? / No, he wasn't.\nDIQQAT: millat oldidan ARTIKL YO'Q —\n'He was French' ('a French' XATO).",
-       "speak": "2  Napoleon / Italian / French"
+       "speak": "2  Napoleon / Italian / French",
+       "speakAnswer": "Was Napoleon Italian?"
       },
       {
        "prompt": "2  Napoleon / Italian / French",
        "answer": "No, he wasn't. He was French.",
        "promptUz": "Javob tuzing",
        "whyUz": "Napoleon Bonapart — fransuz imperatori.\nBitta erkak → Was ... ? / No, he wasn't.\nDIQQAT: millat oldidan ARTIKL YO'Q —\n'He was French' ('a French' XATO).",
-       "speak": "2  Napoleon / Italian / French"
+       "speak": "2  Napoleon / Italian / French",
+       "speakAnswer": "No, he wasn't. He was French."
       },
       {
        "prompt": "3  The Wright brothers / doctors / inventors",
        "answer": "Were the Wright brothers doctors?",
        "promptUz": "Savol tuzing",
        "whyUz": "Rayt aka-ukalari — birinchi samolyotni ixtiro qilgan.\n'brothers' KO'PLIK → WERE / they weren't.\n'an inventor' = ixtirochi;  KO'PLIKDA artikl yo'q.",
-       "speak": "3  The Wright brothers / doctors / inventors"
+       "speak": "3  The Wright brothers / doctors / inventors",
+       "speakAnswer": "Were the Wright brothers doctors?"
       },
       {
        "prompt": "3  The Wright brothers / doctors / inventors",
        "answer": "No, they weren't. They were inventors.",
        "promptUz": "Javob tuzing",
        "whyUz": "Rayt aka-ukalari — birinchi samolyotni ixtiro qilgan.\n'brothers' KO'PLIK → WERE / they weren't.\n'an inventor' = ixtirochi;  KO'PLIKDA artikl yo'q.",
-       "speak": "3  The Wright brothers / doctors / inventors"
+       "speak": "3  The Wright brothers / doctors / inventors",
+       "speakAnswer": "No, they weren't. They were inventors."
       },
       {
        "prompt": "4  Cleopatra / the Queen of India / the Queen of Egypt",
        "answer": "Was Cleopatra the Queen of India?",
        "promptUz": "Savol tuzing",
        "whyUz": "Kleopatra — Misr malikasi.\nBitta ayol → Was ...? / No, she wasn't.\n'the Queen of ...' — 'the' SHART (yagona shaxs).",
-       "speak": "4  Cleopatra / the Queen of India / the Queen of Egypt"
+       "speak": "4  Cleopatra / the Queen of India / the Queen of Egypt",
+       "speakAnswer": "Was Cleopatra the Queen of India?"
       },
       {
        "prompt": "4  Cleopatra / the Queen of India / the Queen of Egypt",
        "answer": "No, she wasn't. She was the Queen of Egypt.",
        "promptUz": "Javob tuzing",
        "whyUz": "Kleopatra — Misr malikasi.\nBitta ayol → Was ...? / No, she wasn't.\n'the Queen of ...' — 'the' SHART (yagona shaxs).",
-       "speak": "4  Cleopatra / the Queen of India / the Queen of Egypt"
+       "speak": "4  Cleopatra / the Queen of India / the Queen of Egypt",
+       "speakAnswer": "No, she wasn't. She was the Queen of Egypt."
       },
       {
        "prompt": "5  Van Gogh and Rembrandt / from Austria / Holland",
        "answer": "Were Van Gogh and Rembrandt from Austria?",
        "promptUz": "Savol tuzing",
        "whyUz": "Van Gog va Rembrandt — golland rassomlari.\nIkki odam → WERE / they weren't.\nDIQQAT: 'FROM' savolda ham, javobda ham qoladi:\n'from Austria' → 'from Holland'.\nHolland = Gollandiya (Niderlandiya).",
-       "speak": "5  Van Gogh and Rembrandt / from Austria / Holland"
+       "speak": "5  Van Gogh and Rembrandt / from Austria / Holland",
+       "speakAnswer": "Were Van Gogh and Rembrandt from Austria?"
       },
       {
        "prompt": "5  Van Gogh and Rembrandt / from Austria / Holland",
        "answer": "No, they weren't. They were from Holland.",
        "promptUz": "Javob tuzing",
        "whyUz": "Van Gog va Rembrandt — golland rassomlari.\nIkki odam → WERE / they weren't.\nDIQQAT: 'FROM' savolda ham, javobda ham qoladi:\n'from Austria' → 'from Holland'.\nHolland = Gollandiya (Niderlandiya).",
-       "speak": "5  Van Gogh and Rembrandt / from Austria / Holland"
+       "speak": "5  Van Gogh and Rembrandt / from Austria / Holland",
+       "speakAnswer": "No, they weren't. They were from Holland."
       },
       {
        "prompt": "6  Elvis Presley / the king of jazz / the king of rock'n'roll",
        "answer": "Was Elvis Presley the king of jazz?",
        "promptUz": "Savol tuzing",
        "whyUz": "Elvis Presli — 'rok-n-rol qiroli' laqabini olgan.\nBitta erkak → Was ...? / No, he wasn't.\n'the king of ...' — 'the' shart.",
-       "speak": "6  Elvis Presley / the king of jazz / the king of rock'n'roll"
+       "speak": "6  Elvis Presley / the king of jazz / the king of rock'n'roll",
+       "speakAnswer": "Was Elvis Presley the king of jazz?"
       },
       {
        "prompt": "6  Elvis Presley / the king of jazz / the king of rock'n'roll",
        "answer": "No, he wasn't. He was the king of rock'n'roll.",
        "promptUz": "Javob tuzing",
        "whyUz": "Elvis Presli — 'rok-n-rol qiroli' laqabini olgan.\nBitta erkak → Was ...? / No, he wasn't.\n'the king of ...' — 'the' shart.",
-       "speak": "6  Elvis Presley / the king of jazz / the king of rock'n'roll"
+       "speak": "6  Elvis Presley / the king of jazz / the king of rock'n'roll",
+       "speakAnswer": "No, he wasn't. He was the king of rock'n'roll."
       }
      ]
     },
@@ -4194,35 +4446,40 @@
        "answer": "Amy didn't have short hair fifteen years ago. She had long hair.",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "Avval bugungi narsa INKOR qilinadi ('didn't have short hair'),\nso'ng o'shandagisi TASDIQLANADI ('had long hair').\n'didn't HAVE' — 'had' EMAS.",
-       "speak": "short hair (bugun)  /  long hair (15 yil oldin)"
+       "speak": "short hair (bugun)  /  long hair (15 yil oldin)",
+       "speakAnswer": "Amy didn't have short hair fifteen years ago. She had long hair."
       },
       {
        "prompt": "a pet dog (bugun)  /  a pet cat (15 yil oldin)",
        "answer": "Amy didn't have a pet dog fifteen years ago. She had a pet cat.",
        "promptUz": "Bugun it, o'shanda mushuk",
        "whyUz": "'a pet dog' — bugungi, shuning uchun INKOR.\n'a pet cat' — o'shandagi, shuning uchun TASDIQ.\n'a pet' = uy hayvoni.",
-       "speak": "a pet dog (bugun)  /  a pet cat (15 yil oldin)"
+       "speak": "a pet dog (bugun)  /  a pet cat (15 yil oldin)",
+       "speakAnswer": "Amy didn't have a pet dog fifteen years ago. She had a pet cat."
       },
       {
        "prompt": "a car (bugun)  /  a bicycle (15 yil oldin)",
        "answer": "Amy didn't have a car fifteen years ago. She had a bicycle.",
        "promptUz": "Bugun mashina, o'shanda velosiped",
        "whyUz": "10 yoshli bolada mashina bo'lmaydi — velosiped bo'ladi.\n'a bicycle' = velosiped.",
-       "speak": "a car (bugun)  /  a bicycle (15 yil oldin)"
+       "speak": "a car (bugun)  /  a bicycle (15 yil oldin)",
+       "speakAnswer": "Amy didn't have a car fifteen years ago. She had a bicycle."
       },
       {
        "prompt": "a computer (bugun)  /  a lot of toys (15 yil oldin)",
        "answer": "Amy didn't have a computer fifteen years ago. She had a lot of toys.",
        "promptUz": "Bugun kompyuter, o'shanda o'yinchoqlar",
        "whyUz": "'a lot of toys' — ko'plik, artikl kerak emas.\n'a computer' — birlik, 'a' bilan.",
-       "speak": "a computer (bugun)  /  a lot of toys (15 yil oldin)"
+       "speak": "a computer (bugun)  /  a lot of toys (15 yil oldin)",
+       "speakAnswer": "Amy didn't have a computer fifteen years ago. She had a lot of toys."
       },
       {
        "prompt": "a CD player (bugun)  /  a record player (15 yil oldin)",
        "answer": "Amy didn't have a CD player fifteen years ago. She had a record player.",
        "promptUz": "Bugun disk pleyer, o'shanda plastinka pleyeri",
        "whyUz": "'a record player' = plastinka pleyeri — eski texnika.\n'a CD player' = kompakt disk pleyeri — yangiroq.\nTexnika o'zgarishi — butun 9-unitning mavzusi.",
-       "speak": "a CD player (bugun)  /  a record player (15 yil oldin)"
+       "speak": "a CD player (bugun)  /  a record player (15 yil oldin)",
+       "speakAnswer": "Amy didn't have a CD player fifteen years ago. She had a record player."
       }
      ]
     },
@@ -4242,70 +4499,80 @@
        "answer": "Did Amy have short hair when she was ten years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\nSo'roqda HAVE, qisqa javobda DIDN'T, tasdiqda HAD.",
-       "speak": "short hair / long hair"
+       "speak": "short hair / long hair",
+       "speakAnswer": "Did Amy have short hair when she was ten years old?"
       },
       {
        "prompt": "short hair / long hair",
        "answer": "No, she didn't. She had long hair.",
        "promptUz": "Javob tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\nSo'roqda HAVE, qisqa javobda DIDN'T, tasdiqda HAD.",
-       "speak": "short hair / long hair"
+       "speak": "short hair / long hair",
+       "speakAnswer": "No, she didn't. She had long hair."
       },
       {
        "prompt": "a pet dog / a pet cat",
        "answer": "Did Amy have a pet dog when she was ten years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "Bugungi narsa haqida so'raladi, o'shandagi bilan javob beriladi.",
-       "speak": "a pet dog / a pet cat"
+       "speak": "a pet dog / a pet cat",
+       "speakAnswer": "Did Amy have a pet dog when she was ten years old?"
       },
       {
        "prompt": "a pet dog / a pet cat",
        "answer": "No, she didn't. She had a pet cat.",
        "promptUz": "Javob tuzing",
        "whyUz": "Bugungi narsa haqida so'raladi, o'shandagi bilan javob beriladi.",
-       "speak": "a pet dog / a pet cat"
+       "speak": "a pet dog / a pet cat",
+       "speakAnswer": "No, she didn't. She had a pet cat."
       },
       {
        "prompt": "a car / a bicycle",
        "answer": "Did Amy have a car when she was ten years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "10 yoshda mashina emas, velosiped bor edi.",
-       "speak": "a car / a bicycle"
+       "speak": "a car / a bicycle",
+       "speakAnswer": "Did Amy have a car when she was ten years old?"
       },
       {
        "prompt": "a car / a bicycle",
        "answer": "No, she didn't. She had a bicycle.",
        "promptUz": "Javob tuzing",
        "whyUz": "10 yoshda mashina emas, velosiped bor edi.",
-       "speak": "a car / a bicycle"
+       "speak": "a car / a bicycle",
+       "speakAnswer": "No, she didn't. She had a bicycle."
       },
       {
        "prompt": "a computer / a lot of toys",
        "answer": "Did Amy have a computer when she was ten years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a lot of toys' — ko'plik, artiklsiz.",
-       "speak": "a computer / a lot of toys"
+       "speak": "a computer / a lot of toys",
+       "speakAnswer": "Did Amy have a computer when she was ten years old?"
       },
       {
        "prompt": "a computer / a lot of toys",
        "answer": "No, she didn't. She had a lot of toys.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a lot of toys' — ko'plik, artiklsiz.",
-       "speak": "a computer / a lot of toys"
+       "speak": "a computer / a lot of toys",
+       "speakAnswer": "No, she didn't. She had a lot of toys."
       },
       {
        "prompt": "a CD player / a record player",
        "answer": "Did Amy have a CD player when she was ten years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "Eski texnika ↔ yangi texnika.",
-       "speak": "a CD player / a record player"
+       "speak": "a CD player / a record player",
+       "speakAnswer": "Did Amy have a CD player when she was ten years old?"
       },
       {
        "prompt": "a CD player / a record player",
        "answer": "No, she didn't. She had a record player.",
        "promptUz": "Javob tuzing",
        "whyUz": "Eski texnika ↔ yangi texnika.",
-       "speak": "a CD player / a record player"
+       "speak": "a CD player / a record player",
+       "speakAnswer": "No, she didn't. She had a record player."
       }
      ]
     },
@@ -4328,7 +4595,8 @@
         "are",
         "were"
        ],
-       "whyUz": "'last night' = kecha kechqurun → O'TGAN zamon.\n'twenty people' KO'PLIK → WERE."
+       "whyUz": "'last night' = kecha kechqurun → O'TGAN zamon.\n'twenty people' KO'PLIK → WERE.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "2  Can / Could you speak French?",
@@ -4338,7 +4606,8 @@
         "Can",
         "Could"
        ],
-       "whyUz": "Gapda O'TGAN zamon belgisi YO'Q →\nHOZIRGI qobiliyat so'ralmoqda → CAN.\n'speak French' = fransuzcha gapirmoq (til oldidan artikl yo'q)."
+       "whyUz": "Gapda O'TGAN zamon belgisi YO'Q →\nHOZIRGI qobiliyat so'ralmoqda → CAN.\n'speak French' = fransuzcha gapirmoq (til oldidan artikl yo'q).",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "3  Sam has got / got blue eyes and thin lips.",
@@ -4348,7 +4617,8 @@
         "has got",
         "got"
        ],
-       "whyUz": "Ko'z rangi — DOIMIY belgi → HOZIRGI zamon.\n'Sam' 3-shaxs birlik → HAS GOT.\nDIQQAT: 'got' yolg'iz ishlatilmaydi.\n'thin lips' = ingichka lablar."
+       "whyUz": "Ko'z rangi — DOIMIY belgi → HOZIRGI zamon.\n'Sam' 3-shaxs birlik → HAS GOT.\nDIQQAT: 'got' yolg'iz ishlatilmaydi.\n'thin lips' = ingichka lablar.",
+       "speakAnswer": "has got"
       },
       {
        "prompt": "4  I can't / couldn't walk when I was one year old.",
@@ -4358,7 +4628,8 @@
         "can't",
         "couldn't"
        ],
-       "whyUz": "'when I was one year old' → O'TGAN zamon → COULDN'T.\nBir yoshli bola hali yura olmaydi — mantiq ham to'g'ri keladi."
+       "whyUz": "'when I was one year old' → O'TGAN zamon → COULDN'T.\nBir yoshli bola hali yura olmaydi — mantiq ham to'g'ri keladi.",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "5  My father is / was a doctor. He works in a hospital.",
@@ -4368,7 +4639,8 @@
         "is",
         "was"
        ],
-       "whyUz": "Keyingi gap 'He WORKS in a hospital' — HOZIRGI zamon.\nDemak otasi HOZIR ham shifokor → IS.\nAgar 'was' bo'lsa, keyingi gap 'He worked' bo'lardi."
+       "whyUz": "Keyingi gap 'He WORKS in a hospital' — HOZIRGI zamon.\nDemak otasi HOZIR ham shifokor → IS.\nAgar 'was' bo'lsa, keyingi gap 'He worked' bo'lardi.",
+       "speakAnswer": "is"
       }
      ]
     },
@@ -4388,63 +4660,72 @@
        "answer": "have",
        "promptUz": "'didn't' dan keyin qaysi shakl?",
        "whyUz": "'didn't' allaqachon o'tgan zamonni ko'rsatgan →\nkeyingi fe'l ASOSIY shaklda → HAVE.\nTo'g'ri gap: They didn't HAVE computers a hundred years ago.",
-       "speak": "2  They didn't had computers a hundred years ago.  →  ?"
+       "speak": "2  They didn't had computers a hundred years ago.  →  ?",
+       "speakAnswer": "have"
       },
       {
        "prompt": "3  We are at the park yesterday.  →  ?",
        "answer": "were",
        "promptUz": "'yesterday' — qaysi zamon? Ega — 'We'",
        "whyUz": "'yesterday' → O'TGAN zamon.\n'We' KO'PLIK → WERE.\nTo'g'ri gap: We WERE at the park yesterday.",
-       "speak": "3  We are at the park yesterday.  →  ?"
+       "speak": "3  We are at the park yesterday.  →  ?",
+       "speakAnswer": "were"
       },
       {
        "prompt": "4  I have a lot of toys when I was ten.  →  ?",
        "answer": "had",
        "promptUz": "'when I was ten' — o'tgan zamon",
        "whyUz": "'when I was ten' → O'TGAN zamon.\n'did' YO'Q → fe'lning o'zi o'tgan shaklda: HAD.\nTo'g'ri gap: I HAD a lot of toys when I was ten.",
-       "speak": "4  I have a lot of toys when I was ten.  →  ?"
+       "speak": "4  I have a lot of toys when I was ten.  →  ?",
+       "speakAnswer": "had"
       },
       {
        "prompt": "5  He can paint when he was four.  →  ?",
        "answer": "could",
        "promptUz": "'when he was four' — o'tgan zamon",
        "whyUz": "'when he was four' → O'TGAN zamon → COULD.\nTo'g'ri gap: He COULD paint when he was four.",
-       "speak": "5  He can paint when he was four.  →  ?"
+       "speak": "5  He can paint when he was four.  →  ?",
+       "speakAnswer": "could"
       },
       {
        "prompt": "6  Anne was at school at the moment.  →  ?",
        "answer": "is",
        "promptUz": "'at the moment' — qaysi zamon?",
        "whyUz": "'at the moment' = ayni damda → HOZIRGI zamon.\n'Anne' BIRLIK → IS.\nTo'g'ri gap: Anne IS at school at the moment.",
-       "speak": "6  Anne was at school at the moment.  →  ?"
+       "speak": "6  Anne was at school at the moment.  →  ?",
+       "speakAnswer": "is"
       },
       {
        "prompt": "7  There isn't an airport here then.  →  ?",
        "answer": "wasn't",
        "promptUz": "'then' — qaysi zamon? 'an airport' — birlik",
        "whyUz": "'then' = o'shanda → O'TGAN zamon.\n'an airport' BIRLIK → WASN'T.\nTo'g'ri gap: There WASN'T an airport here then.",
-       "speak": "7  There isn't an airport here then.  →  ?"
+       "speak": "7  There isn't an airport here then.  →  ?",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "8  Rosie could swim very well now.  →  ?",
        "answer": "can",
        "promptUz": "'now' — qaysi zamon?",
        "whyUz": "'now' → HOZIRGI zamon → CAN.\nTo'g'ri gap: Rosie CAN swim very well now.",
-       "speak": "8  Rosie could swim very well now.  →  ?"
+       "speak": "8  Rosie could swim very well now.  →  ?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "9  Washington and Lincoln was Presidents of the USA.  →  ?",
        "answer": "were",
        "promptUz": "Ega — IKKI odam",
        "whyUz": "'Washington AND Lincoln' — IKKI odam, KO'PLIK → WERE.\n'Presidents' ham ko'plikda — bu ham ko'plikni tasdiqlaydi.\nTo'g'ri gap: Washington and Lincoln WERE Presidents of the USA.",
-       "speak": "9  Washington and Lincoln was Presidents of the USA.  →  ?"
+       "speak": "9  Washington and Lincoln was Presidents of the USA.  →  ?",
+       "speakAnswer": "were"
       },
       {
        "prompt": "10  Did he has a computer then?  →  ?",
        "answer": "have",
        "promptUz": "'Did' dan keyin qaysi shakl?",
        "whyUz": "'Did' dan keyin fe'l ASOSIY shaklda → HAVE.\n'has' — 3-shaxs birlik shakli, 'did' bilan ishlatilmaydi.\nTo'g'ri gap: Did he HAVE a computer then?",
-       "speak": "10  Did he has a computer then?  →  ?"
+       "speak": "10  Did he has a computer then?  →  ?",
+       "speakAnswer": "have"
       }
      ]
     }
@@ -4526,7 +4807,8 @@
         "on"
        ],
        "whyUz": "Restoran Queen Street dan SHIMOLDA,\npochta esa JANUBDA → ko'cha ajratadi → OPPOSITE.",
-       "speak": "1  The restaurant is ............ the post office."
+       "speak": "1  The restaurant is ............ the post office.",
+       "speakAnswer": "opposite"
       },
       {
        "prompt": "2  The cinema is ............ the supermarket.",
@@ -4538,7 +4820,8 @@
         "on"
        ],
        "whyUz": "Ikkalasi BIR qatorda, yonma-yon — ko'cha ajratmaydi →\nNEXT TO.\n1-band bilan solishtiring: u yerda ko'cha bor edi.",
-       "speak": "2  The cinema is ............ the supermarket."
+       "speak": "2  The cinema is ............ the supermarket.",
+       "speakAnswer": "next to"
       },
       {
        "prompt": "3  The garage is ............ the corner of Queen St and Victoria St.",
@@ -4550,7 +4833,8 @@
         "next to"
        ],
        "whyUz": "'ON the corner of X and Y' — o'zgarmas ibora.\nGaraj ikki ko'cha kesishgan joyda.",
-       "speak": "3  The garage is ............ the corner of Queen St and Victoria St."
+       "speak": "3  The garage is ............ the corner of Queen St and Victoria St.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "4  The café is ............ the park.",
@@ -4562,7 +4846,8 @@
         "on"
        ],
        "whyUz": "Kafe Victoria Street ning G'ARBIDA,\nbog' esa SHARQIDA → OPPOSITE.\nIkkalasi ham yuqori qatorda.",
-       "speak": "4  The café is ............ the park."
+       "speak": "4  The café is ............ the park.",
+       "speakAnswer": "opposite"
       },
       {
        "prompt": "5  The bus stop is ............ the police station.",
@@ -4574,7 +4859,8 @@
         "on"
        ],
        "whyUz": "Xaritada avtobus bekati militsiya bo'limi binosining\nOLDIDA turibdi → IN FRONT OF.\nAksi: behind.",
-       "speak": "5  The bus stop is ............ the police station."
+       "speak": "5  The bus stop is ............ the police station.",
+       "speakAnswer": "in front of"
       },
       {
        "prompt": "6  The hotel is ............ the park and the garage.",
@@ -4586,7 +4872,8 @@
         "next to"
        ],
        "whyUz": "O'ng ustun: PARK → HOTEL → GARAGE.\nMehmonxona ikkisining O'RTASIDA → BETWEEN.\n'between A AND B' — 'and' shart.",
-       "speak": "6  The hotel is ............ the park and the garage."
+       "speak": "6  The hotel is ............ the park and the garage.",
+       "speakAnswer": "between"
       },
       {
        "prompt": "7  The museum is ............ the hospital.",
@@ -4598,7 +4885,8 @@
         "on"
        ],
        "whyUz": "Chap ustun: HOSPITAL → MUSEUM → RESTAURANT.\nBir blokda, ko'cha ajratmaydi → NEXT TO.",
-       "speak": "7  The museum is ............ the hospital."
+       "speak": "7  The museum is ............ the hospital.",
+       "speakAnswer": "next to"
       },
       {
        "prompt": "8  The school is ............ the bank and the police station.",
@@ -4610,7 +4898,8 @@
         "next to"
        ],
        "whyUz": "Ikkinchi ustun: BANK → SCHOOL → POLICE STATION.\nMaktab o'rtada → BETWEEN.",
-       "speak": "8  The school is ............ the bank and the police station."
+       "speak": "8  The school is ............ the bank and the police station.",
+       "speakAnswer": "between"
       }
      ]
     },
@@ -4630,70 +4919,80 @@
        "answer": "It's next to the museum. It's opposite the bank.",
        "promptUz": "Chap ustunning eng yuqorisi",
        "whyUz": "Muzey bilan bir blokda, yonma-yon → next to.\nMain Street narigi tomonida BANK → opposite.",
-       "speak": "Where is the hospital?"
+       "speak": "Where is the hospital?",
+       "speakAnswer": "It's next to the museum. It's opposite the bank."
       },
       {
        "prompt": "Where is the museum?",
        "answer": "It's between the hospital and the restaurant. It's opposite the school.",
        "promptUz": "Chap ustunning o'rtasi",
        "whyUz": "Kasalxona va restoran O'RTASIDA → between.\nMain Street narigi tomonida SCHOOL → opposite.",
-       "speak": "Where is the museum?"
+       "speak": "Where is the museum?",
+       "speakAnswer": "It's between the hospital and the restaurant. It's opposite the school."
       },
       {
        "prompt": "Where is the post office?",
        "answer": "It's next to the supermarket. It's opposite the restaurant.",
        "promptUz": "Queen Street ostida, eng chapda",
        "whyUz": "Supermarket yonida → next to.\nQueen Street narigi tomonida RESTAURANT → opposite.",
-       "speak": "Where is the post office?"
+       "speak": "Where is the post office?",
+       "speakAnswer": "It's next to the supermarket. It's opposite the restaurant."
       },
       {
        "prompt": "Where is the bank?",
        "answer": "It's next to the café. It's opposite the hospital.",
        "promptUz": "Yuqori qatorda, Main Street yonida",
        "whyUz": "Kafe bilan yonma-yon (bir blokda) → next to.\nMain Street narigi tomonida HOSPITAL → opposite.",
-       "speak": "Where is the bank?"
+       "speak": "Where is the bank?",
+       "speakAnswer": "It's next to the café. It's opposite the hospital."
       },
       {
        "prompt": "Where is the school?",
        "answer": "It's between the bank and the police station. It's opposite the museum.",
        "promptUz": "Ikkinchi ustunning o'rtasi",
        "whyUz": "1a-mashqning 8-bandi bilan bir xil javob.\nMain Street narigi tomonida MUSEUM → opposite.",
-       "speak": "Where is the school?"
+       "speak": "Where is the school?",
+       "speakAnswer": "It's between the bank and the police station. It's opposite the museum."
       },
       {
        "prompt": "Where is the supermarket?",
        "answer": "It's between the post office and the cinema.",
        "promptUz": "Queen Street ostidagi qator",
        "whyUz": "Qator: POST OFFICE | SUPERMARKET | CINEMA | FIRE STATION |\nRAILWAY STATION.\nSupermarket pochta va kinoteatr orasida → between.",
-       "speak": "Where is the supermarket?"
+       "speak": "Where is the supermarket?",
+       "speakAnswer": "It's between the post office and the cinema."
       },
       {
        "prompt": "Where is the department store?",
        "answer": "It's between the café and the sports centre. It's next to the school.",
        "promptUz": "Uchinchi ustunning o'rtasi",
        "whyUz": "Uchinchi ustun: CAFÉ → DEPARTMENT STORE → SPORTS CENTRE.\nO'rtada → between. Maktab bilan yonma-yon → next to.",
-       "speak": "Where is the department store?"
+       "speak": "Where is the department store?",
+       "speakAnswer": "It's between the café and the sports centre. It's next to the school."
       },
       {
        "prompt": "Where is the fire station?",
        "answer": "It's between the cinema and the railway station.",
        "promptUz": "Queen Street ostidagi qator",
        "whyUz": "Kinoteatr va temiryo'l bekati orasida → between.",
-       "speak": "Where is the fire station?"
+       "speak": "Where is the fire station?",
+       "speakAnswer": "It's between the cinema and the railway station."
       },
       {
        "prompt": "Where is the park?",
        "answer": "It's next to the hotel. It's opposite the café.",
        "promptUz": "O'ng ustunning eng yuqorisi",
        "whyUz": "Mehmonxona bilan bir blokda → next to.\nVictoria Street narigi tomonida CAFÉ → opposite\n(1a-mashqning 4-bandi).",
-       "speak": "Where is the park?"
+       "speak": "Where is the park?",
+       "speakAnswer": "It's next to the hotel. It's opposite the café."
       },
       {
        "prompt": "Where is the railway station?",
        "answer": "It's next to the fire station. It's opposite the garage.",
        "promptUz": "Queen Street ostida, eng o'ngda",
        "whyUz": "O't o'chirish bo'limi yonida → next to.\nQueen Street narigi tomonida GARAGE → opposite.",
-       "speak": "Where is the railway station?"
+       "speak": "Where is the railway station?",
+       "speakAnswer": "It's next to the fire station. It's opposite the garage."
       }
      ]
     }
@@ -4723,84 +5022,96 @@
        "answer": "Were",
        "promptUz": "Ega — 'you'",
        "whyUz": "'you' → WERE (birlik ma'noda ham).\nSo'roq gapda fe'l boshda.",
-       "speak": "A: 1) ............ you at the cinema last night?"
+       "speak": "A: 1) ............ you at the cinema last night?",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "B: No, I 2) ............ .",
        "answer": "wasn't",
        "promptUz": "Qisqa INKOR javob, ega — 'I'",
        "whyUz": "'I' → was; inkor → WASN'T.",
-       "speak": "B: No, I 2) ............ ."
+       "speak": "B: No, I 2) ............ .",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "B: I 3) ............ at the football match.",
        "answer": "was",
        "promptUz": "Tasdiq, ega — 'I'",
        "whyUz": "'I' → WAS.\n'a football match' = futbol o'yini.",
-       "speak": "B: I 3) ............ at the football match."
+       "speak": "B: I 3) ............ at the football match.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "A: Who 4) ............ you with?",
        "answer": "were",
        "promptUz": "Ega — 'you'",
        "whyUz": "'you' → WERE.\n'Who were you with?' — 'with' gap OXIRIDA qoladi.",
-       "speak": "A: Who 4) ............ you with?"
+       "speak": "A: Who 4) ............ you with?",
+       "speakAnswer": "were"
       },
       {
        "prompt": "B: I 5) ............ with John.",
        "answer": "was",
        "promptUz": "Ega — 'I'",
        "whyUz": "'I' → WAS.",
-       "speak": "B: I 5) ............ with John."
+       "speak": "B: I 5) ............ with John.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "A: How 6) ............ the match?",
        "answer": "was",
        "promptUz": "Ega — 'the match' (BIRLIK)",
        "whyUz": "'the match' BIRLIK → WAS.\n'How was ...?' = ... qanday edi?",
-       "speak": "A: How 6) ............ the match?"
+       "speak": "A: How 6) ............ the match?",
+       "speakAnswer": "was"
       },
       {
        "prompt": "B: It 7) ............ very exciting!",
        "answer": "was",
        "promptUz": "Ega — 'it'",
        "whyUz": "'it' → WAS.\n'exciting' = qiziqarli, hayajonli.\nUndov belgisi ijobiy bahoni kuchaytiradi.",
-       "speak": "B: It 7) ............ very exciting!"
+       "speak": "B: It 7) ............ very exciting!",
+       "speakAnswer": "was"
       },
       {
        "prompt": "B: Where 8) ............ you?",
        "answer": "were",
        "promptUz": "Ega — 'you'",
        "whyUz": "'you' → WERE.\n'Where were you?' = Qayerda eding?",
-       "speak": "B: Where 8) ............ you?"
+       "speak": "B: Where 8) ............ you?",
+       "speakAnswer": "were"
       },
       {
        "prompt": "A: I 9) ............ at my parents' house.",
        "answer": "was",
        "promptUz": "Ega — 'I'",
        "whyUz": "'I' → WAS.\nDIQQAT: 'parents'' — ko'plik otda egalik apostrofi\n's' dan KEYIN qo'yiladi.",
-       "speak": "A: I 9) ............ at my parents' house."
+       "speak": "A: I 9) ............ at my parents' house.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "B: 10) ............ you with your sister?",
        "answer": "Were",
        "promptUz": "So'roq, ega — 'you'",
        "whyUz": "'you' → WERE, gap boshida.",
-       "speak": "B: 10) ............ you with your sister?"
+       "speak": "B: 10) ............ you with your sister?",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "A: No, I 11) ............ .",
        "answer": "wasn't",
        "promptUz": "Qisqa INKOR javob",
        "whyUz": "'I' → WASN'T.",
-       "speak": "A: No, I 11) ............ ."
+       "speak": "A: No, I 11) ............ .",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "A: She 12) ............ at work.",
        "answer": "was",
        "promptUz": "Ega — 'she'",
        "whyUz": "'she' BIRLIK → WAS.\n'at work' = ishda (predlog AT).",
-       "speak": "A: She 12) ............ at work."
+       "speak": "A: She 12) ............ at work.",
+       "speakAnswer": "was"
       }
      ]
     },
@@ -4825,7 +5136,8 @@
         "were"
        ],
        "whyUz": "'ANY' → INKOR.\n'department stores' KO'PLIK → WEREN'T.\n'twenty years ago' → o'tgan zamon.",
-       "speak": "1  There ............ any department stores here twenty years ago."
+       "speak": "1  There ............ any department stores here twenty years ago.",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "2  \"............ there a park here then?\"",
@@ -4837,7 +5149,8 @@
         "weren't"
        ],
        "whyUz": "'a park' BIRLIK → WAS.\nSo'roq gapda 'Was' boshda: 'Was there ...?'\n'then' = o'shanda.",
-       "speak": "2  \"............ there a park here then?\""
+       "speak": "2  \"............ there a park here then?\"",
+       "speakAnswer": "Was"
       },
       {
        "prompt": "2  \"No, there ............ .\"",
@@ -4849,7 +5162,8 @@
         "weren't"
        ],
        "whyUz": "Savol 'Was there ...?' → javob 'No, there WASN'T.'\nSavoldagi shakl javobda takrorlanadi.",
-       "speak": "2  \"No, there ............ .\""
+       "speak": "2  \"No, there ............ .\"",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "3  What ............ your favourite toys ...",
@@ -4861,7 +5175,8 @@
         "weren't"
        ],
        "whyUz": "'your favourite toys' KO'PLIK → WERE.\n'a toy' = o'yinchoq.",
-       "speak": "3  What ............ your favourite toys ..."
+       "speak": "3  What ............ your favourite toys ...",
+       "speakAnswer": "were"
       },
       {
        "prompt": "3  ... when you ............ a child?",
@@ -4873,7 +5188,8 @@
         "weren't"
        ],
        "whyUz": "'you' → DOIM WERE (birlik ma'noda ham).\n'when you were a child' = bola bo'lganingda.\nDIQQAT: 'a child' birlik bo'lsa ham, EGA 'you' —\nshuning uchun WERE.",
-       "speak": "3  ... when you ............ a child?"
+       "speak": "3  ... when you ............ a child?",
+       "speakAnswer": "were"
       },
       {
        "prompt": "4  There ............ any cars here forty years ago.",
@@ -4885,7 +5201,8 @@
         "were"
        ],
        "whyUz": "'ANY' → INKOR.\n'cars' KO'PLIK → WEREN'T.\n1-band bilan bir xil tuzilish.",
-       "speak": "4  There ............ any cars here forty years ago."
+       "speak": "4  There ............ any cars here forty years ago.",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "5  Is Julia ill? She ............ at school today.",
@@ -4897,7 +5214,8 @@
         "weren't"
        ],
        "whyUz": "'ill' = kasal → maktabda BO'LMAGAN → INKOR.\n'She' BIRLIK → WASN'T.\nMantiq: kasal bo'lgani uchun maktabga kelmagan.",
-       "speak": "5  Is Julia ill? She ............ at school today."
+       "speak": "5  Is Julia ill? She ............ at school today.",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "6  There ............ a lot of people at the party last night.",
@@ -4909,7 +5227,8 @@
         "weren't"
        ],
        "whyUz": "'people' — KO'PLIK ot ('person' ning ko'pligi) → WERE.\n'any' yo'q → TASDIQ.\n'a lot of people' = ko'p odam.",
-       "speak": "6  There ............ a lot of people at the party last night."
+       "speak": "6  There ............ a lot of people at the party last night.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "7  Where ............ you yesterday?",
@@ -4921,7 +5240,8 @@
         "weren't"
        ],
        "whyUz": "'you' → WERE.\n'yesterday' = kecha → o'tgan zamon.",
-       "speak": "7  Where ............ you yesterday?"
+       "speak": "7  Where ............ you yesterday?",
+       "speakAnswer": "were"
       }
      ]
     }
@@ -4956,7 +5276,8 @@
         "weren't"
        ],
        "whyUz": "'your brother' BIRLIK → WAS.\n'What was ... like?' = ... qanday odam edi?",
-       "speak": "8  What ............ your brother like when he ............ young?  [1-bo'shliq]"
+       "speak": "8  What ............ your brother like when he ............ young?  [1-bo'shliq]",
+       "speakAnswer": "was"
       },
       {
        "prompt": "8  What ............ your brother like when he ............ young?  [2-bo'shliq]",
@@ -4968,7 +5289,8 @@
         "weren't"
        ],
        "whyUz": "'he' BIRLIK → WAS.\n'when he was young' = yosh bo'lganida.",
-       "speak": "8  What ............ your brother like when he ............ young?  [2-bo'shliq]"
+       "speak": "8  What ............ your brother like when he ............ young?  [2-bo'shliq]",
+       "speakAnswer": "was"
       },
       {
        "prompt": "9  I called David, but he ............ at home.",
@@ -4980,7 +5302,8 @@
         "weren't"
        ],
        "whyUz": "MANTIQ: qo'ng'iroq qildim, LEKIN u uyda EMAS edi.\n'he' BIRLIK → WASN'T.\n'to call' = qo'ng'iroq qilmoq.",
-       "speak": "9  I called David, but he ............ at home."
+       "speak": "9  I called David, but he ............ at home.",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "10  ............ there a theatre here ten years ago?",
@@ -4992,7 +5315,8 @@
         "weren't"
        ],
        "whyUz": "'a theatre' BIRLIK → WAS.\nSo'roq gapda 'Was there ...?' — 'Was' boshda.\n'ten years ago' → o'tgan zamon.",
-       "speak": "10  ............ there a theatre here ten years ago?"
+       "speak": "10  ............ there a theatre here ten years ago?",
+       "speakAnswer": "Was"
       }
      ]
     },
@@ -5017,7 +5341,8 @@
         "are"
        ],
        "whyUz": "'last night' → O'TGAN zamon.\n'you' → WERE.\nSo'roq gapda boshda.",
-       "speak": "1  ............ you at the sports centre last night?"
+       "speak": "1  ............ you at the sports centre last night?",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "2  In 1980 I ............ ten years old.",
@@ -5029,7 +5354,8 @@
         "are"
        ],
        "whyUz": "'In 1980' → O'TGAN zamon.\n'I' → WAS.\nDIQQAT: yosh aytishda 'to be' fe'li ishlatiladi.",
-       "speak": "2  In 1980 I ............ ten years old."
+       "speak": "2  In 1980 I ............ ten years old.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "3  There ............ a supermarket in my area now.",
@@ -5041,7 +5367,8 @@
         "was"
        ],
        "whyUz": "'now' → HOZIRGI zamon.\n'a supermarket' BIRLIK → THERE IS.\n'an area' = hudud (39-betda ham bor).",
-       "speak": "3  There ............ a supermarket in my area now."
+       "speak": "3  There ............ a supermarket in my area now.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "4  Now, I ............ a student at the local school.",
@@ -5053,7 +5380,8 @@
         "was"
        ],
        "whyUz": "'Now' → HOZIRGI zamon.\n'I' → AM (bu YAGONA shakl).\n'local' = mahalliy.",
-       "speak": "4  Now, I ............ a student at the local school."
+       "speak": "4  Now, I ............ a student at the local school.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "5  My parents ............ at work at the moment.",
@@ -5065,7 +5393,8 @@
         "was"
        ],
        "whyUz": "'at the moment' = ayni damda → HOZIRGI zamon.\n'My parents' KO'PLIK → ARE.",
-       "speak": "5  My parents ............ at work at the moment."
+       "speak": "5  My parents ............ at work at the moment.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "6  There ............ green fields here once.",
@@ -5077,7 +5406,8 @@
         "are"
        ],
        "whyUz": "'once' bu yerda = bir vaqtlar, ilgari → O'TGAN zamon.\n'green fields' KO'PLIK → THERE WERE.\nDIQQAT: 'once' 'bir marta' ma'nosini ham beradi.",
-       "speak": "6  There ............ green fields here once."
+       "speak": "6  There ............ green fields here once.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "7  It's my birthday! I ............ twelve years old today.",
@@ -5089,7 +5419,8 @@
         "was"
        ],
        "whyUz": "'today' va 'It's my birthday!' → HOZIRGI zamon.\n'I' → AM.\n2-band bilan solishtiring: u yerda 'In 1980' → was.",
-       "speak": "7  It's my birthday! I ............ twelve years old today."
+       "speak": "7  It's my birthday! I ............ twelve years old today.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "8  I ............ with Andrea yesterday.",
@@ -5101,7 +5432,8 @@
         "are"
        ],
        "whyUz": "'yesterday' = kecha → O'TGAN zamon.\n'I' → WAS.",
-       "speak": "8  I ............ with Andrea yesterday."
+       "speak": "8  I ............ with Andrea yesterday.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "9  There ............ many hotels in the city centre now.",
@@ -5113,7 +5445,8 @@
         "was"
        ],
        "whyUz": "'now' → HOZIRGI.\n'many hotels' KO'PLIK → THERE ARE.\n'the city centre' = shahar markazi.",
-       "speak": "9  There ............ many hotels in the city centre now."
+       "speak": "9  There ............ many hotels in the city centre now.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "10  There ............ an airport in my town now.",
@@ -5125,7 +5458,8 @@
         "was"
        ],
        "whyUz": "'now' → HOZIRGI.\n'an airport' BIRLIK → THERE IS.\n9-band bilan solishtiring: u yerda ko'plik edi → are.",
-       "speak": "10  There ............ an airport in my town now."
+       "speak": "10  There ............ an airport in my town now.",
+       "speakAnswer": "is"
       }
      ]
     }
@@ -5155,126 +5489,144 @@
        "answer": "Did you have a dog when you were four years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\n'a dog' — undosh tovush → A.\nSo'roqda 'have', qisqa javobda 'did'.",
-       "speak": "dog"
+       "speak": "dog",
+       "speakAnswer": "Did you have a dog when you were four years old?"
       },
       {
        "prompt": "dog",
        "answer": "Yes, I did. / No, I didn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\n'a dog' — undosh tovush → A.\nSo'roqda 'have', qisqa javobda 'did'.",
-       "speak": "dog"
+       "speak": "dog",
+       "speakAnswer": "Yes, I did. / No, I didn't."
       },
       {
        "prompt": "car",
        "answer": "Did you have a car when you were four years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a car' — undosh tovush → A.",
-       "speak": "car"
+       "speak": "car",
+       "speakAnswer": "Did you have a car when you were four years old?"
       },
       {
        "prompt": "car",
        "answer": "Yes, I did. / No, I didn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a car' — undosh tovush → A.",
-       "speak": "car"
+       "speak": "car",
+       "speakAnswer": "Yes, I did. / No, I didn't."
       },
       {
        "prompt": "watch",
        "answer": "Did you have a watch when you were four years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a watch' = qo'l soati.\nDIQQAT: 'a clock' — devor/stol soati, 'a watch' — qo'l soati.",
-       "speak": "watch"
+       "speak": "watch",
+       "speakAnswer": "Did you have a watch when you were four years old?"
       },
       {
        "prompt": "watch",
        "answer": "Yes, I did. / No, I didn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a watch' = qo'l soati.\nDIQQAT: 'a clock' — devor/stol soati, 'a watch' — qo'l soati.",
-       "speak": "watch"
+       "speak": "watch",
+       "speakAnswer": "Yes, I did. / No, I didn't."
       },
       {
        "prompt": "ball",
        "answer": "Did you have a ball when you were four years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a ball' = to'p.",
-       "speak": "ball"
+       "speak": "ball",
+       "speakAnswer": "Did you have a ball when you were four years old?"
       },
       {
        "prompt": "ball",
        "answer": "Yes, I did. / No, I didn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a ball' = to'p.",
-       "speak": "ball"
+       "speak": "ball",
+       "speakAnswer": "Yes, I did. / No, I didn't."
       },
       {
        "prompt": "doll",
        "answer": "Did you have a doll when you were four years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a doll' = qo'g'irchoq (Coursebook 66-betda ham bor).",
-       "speak": "doll"
+       "speak": "doll",
+       "speakAnswer": "Did you have a doll when you were four years old?"
       },
       {
        "prompt": "doll",
        "answer": "Yes, I did. / No, I didn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a doll' = qo'g'irchoq (Coursebook 66-betda ham bor).",
-       "speak": "doll"
+       "speak": "doll",
+       "speakAnswer": "Yes, I did. / No, I didn't."
       },
       {
        "prompt": "bike",
        "answer": "Did you have a bike when you were four years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a bike' = velosiped ('a bicycle' ning qisqa shakli).",
-       "speak": "bike"
+       "speak": "bike",
+       "speakAnswer": "Did you have a bike when you were four years old?"
       },
       {
        "prompt": "bike",
        "answer": "Yes, I did. / No, I didn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a bike' = velosiped ('a bicycle' ning qisqa shakli).",
-       "speak": "bike"
+       "speak": "bike",
+       "speakAnswer": "Yes, I did. / No, I didn't."
       },
       {
        "prompt": "radio",
        "answer": "Did you have a radio when you were four years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a radio' — 'r' undosh tovush → A ('an radio' XATO).",
-       "speak": "radio"
+       "speak": "radio",
+       "speakAnswer": "Did you have a radio when you were four years old?"
       },
       {
        "prompt": "radio",
        "answer": "Yes, I did. / No, I didn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a radio' — 'r' undosh tovush → A ('an radio' XATO).",
-       "speak": "radio"
+       "speak": "radio",
+       "speakAnswer": "Yes, I did. / No, I didn't."
       },
       {
        "prompt": "guitar",
        "answer": "Did you have a guitar when you were four years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a guitar' = gitara, /ɡɪˈtɑː/ — urg'u 2-bo'g'inda.",
-       "speak": "guitar"
+       "speak": "guitar",
+       "speakAnswer": "Did you have a guitar when you were four years old?"
       },
       {
        "prompt": "guitar",
        "answer": "Yes, I did. / No, I didn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a guitar' = gitara, /ɡɪˈtɑː/ — urg'u 2-bo'g'inda.",
-       "speak": "guitar"
+       "speak": "guitar",
+       "speakAnswer": "Yes, I did. / No, I didn't."
       },
       {
        "prompt": "umbrella",
        "answer": "Did you have an umbrella when you were four years old?",
        "promptUz": "Savol tuzing",
        "whyUz": "DIQQAT: 'AN umbrella' — 'u' UNLI tovush bilan boshlanadi.\nRo'yxatdagi YAGONA 'an' oladigan so'z.",
-       "speak": "umbrella"
+       "speak": "umbrella",
+       "speakAnswer": "Did you have an umbrella when you were four years old?"
       },
       {
        "prompt": "umbrella",
        "answer": "Yes, I did. / No, I didn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "DIQQAT: 'AN umbrella' — 'u' UNLI tovush bilan boshlanadi.\nRo'yxatdagi YAGONA 'an' oladigan so'z.",
-       "speak": "umbrella"
+       "speak": "umbrella",
+       "speakAnswer": "Yes, I did. / No, I didn't."
       }
      ]
     }
@@ -5422,7 +5774,8 @@
         "Can",
         "Could"
        ],
-       "whyUz": "Gapda O'TGAN zamon belgisi YO'Q ('when I was ...' yo'q) →\nHOZIRGI qobiliyat so'ralmoqda → CAN.\n'a motorbike' = mototsikl."
+       "whyUz": "Gapda O'TGAN zamon belgisi YO'Q ('when I was ...' yo'q) →\nHOZIRGI qobiliyat so'ralmoqda → CAN.\n'a motorbike' = mototsikl.",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "2  We didn't had / have a TV when I was little.",
@@ -5432,7 +5785,8 @@
         "had",
         "have"
        ],
-       "whyUz": "'didn't' allaqachon o'tgan zamonni ko'rsatgan →\nkeyingi fe'l ASOSIY shaklda: HAVE.\n'didn't had' — eng ko'p uchraydigan XATO.\n'little' bu yerda = kichkina, yosh."
+       "whyUz": "'didn't' allaqachon o'tgan zamonni ko'rsatgan →\nkeyingi fe'l ASOSIY shaklda: HAVE.\n'didn't had' — eng ko'p uchraydigan XATO.\n'little' bu yerda = kichkina, yosh.",
+       "speakAnswer": "have"
       },
       {
        "prompt": "3  \"Was / Were your brother a quiet child?\"  [1-tanlov]",
@@ -5442,7 +5796,8 @@
         "Was",
         "Were"
        ],
-       "whyUz": "'your brother' BIRLIK → WAS.\n'quiet' = kamgap, tinch."
+       "whyUz": "'your brother' BIRLIK → WAS.\n'quiet' = kamgap, tinch.",
+       "speakAnswer": "Was"
       },
       {
        "prompt": "3  \"No, he weren't / wasn't.\"  [2-tanlov]",
@@ -5452,7 +5807,8 @@
         "weren't",
         "wasn't"
        ],
-       "whyUz": "'he' BIRLIK → WASN'T.\n'he weren't' — XATO."
+       "whyUz": "'he' BIRLIK → WASN'T.\n'he weren't' — XATO.",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "4  There are / were telephones 100 years ago.",
@@ -5462,7 +5818,8 @@
         "are",
         "were"
        ],
-       "whyUz": "'100 years ago' → O'TGAN zamon.\n'telephones' KO'PLIK → WERE.\nCoursebook 65-betda ham: telefon 1876-yilda ixtiro qilingan."
+       "whyUz": "'100 years ago' → O'TGAN zamon.\n'telephones' KO'PLIK → WERE.\nCoursebook 65-betda ham: telefon 1876-yilda ixtiro qilingan.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "5  I had / have a bike when I was five, ...  [1-tanlov]",
@@ -5472,7 +5829,8 @@
         "had",
         "have"
        ],
-       "whyUz": "'when I was five' → O'TGAN zamon → HAD.\nDIQQAT: bu yerda 'did' yo'q, shuning uchun HAD to'g'ri\n(2-band bilan solishtiring: u yerda 'didn't' bor edi)."
+       "whyUz": "'when I was five' → O'TGAN zamon → HAD.\nDIQQAT: bu yerda 'did' yo'q, shuning uchun HAD to'g'ri\n(2-band bilan solishtiring: u yerda 'didn't' bor edi).",
+       "speakAnswer": "had"
       },
       {
        "prompt": "5  ... but I can't / couldn't ride it.  [2-tanlov]",
@@ -5482,7 +5840,8 @@
         "can't",
         "couldn't"
        ],
-       "whyUz": "Gapning boshi O'TGAN zamonda ('when I was five') →\ndavomi ham o'tgan → COULDN'T.\nMa'nosi: velosipedim bor edi, lekin hayday olmasdim."
+       "whyUz": "Gapning boshi O'TGAN zamonda ('when I was five') →\ndavomi ham o'tgan → COULDN'T.\nMa'nosi: velosipedim bor edi, lekin hayday olmasdim.",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "6  Were / Was you at home last night?",
@@ -5492,7 +5851,8 @@
         "Were",
         "Was"
        ],
-       "whyUz": "'you' → DOIM WERE (birlik ma'noda ham).\n'Was you' — XATO."
+       "whyUz": "'you' → DOIM WERE (birlik ma'noda ham).\n'Was you' — XATO.",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "7  Jill couldn't / can't drive when she was ten years old.",
@@ -5502,7 +5862,8 @@
         "couldn't",
         "can't"
        ],
-       "whyUz": "'when she was ten years old' → O'TGAN zamon → COULDN'T.\n'to drive' = mashina haydamoq."
+       "whyUz": "'when she was ten years old' → O'TGAN zamon → COULDN'T.\n'to drive' = mashina haydamoq.",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "8  There wasn't / weren't many shops here thirty years ago.",
@@ -5512,7 +5873,8 @@
         "wasn't",
         "weren't"
        ],
-       "whyUz": "'many shops' KO'PLIK → WEREN'T.\n'thirty years ago' → o'tgan zamon."
+       "whyUz": "'many shops' KO'PLIK → WEREN'T.\n'thirty years ago' → o'tgan zamon.",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "9  I didn't had / have a computer last year.  [1-tanlov]",
@@ -5522,7 +5884,8 @@
         "had",
         "have"
        ],
-       "whyUz": "'didn't' + ASOSIY shakl → HAVE.\n2-band bilan bir xil qoida."
+       "whyUz": "'didn't' + ASOSIY shakl → HAVE.\n2-band bilan bir xil qoida.",
+       "speakAnswer": "have"
       },
       {
        "prompt": "9  I had / have a typewriter.  [2-tanlov]",
@@ -5532,7 +5895,8 @@
         "had",
         "have"
        ],
-       "whyUz": "'last year' → O'TGAN zamon, va 'did' YO'Q →\nfe'lning o'zi o'tgan shaklda: HAD.\n9-bandning ikki qismini solishtiring:\n  didn't HAVE (did bor) ↔ HAD (did yo'q).\n'a typewriter' = yozuv mashinkasi."
+       "whyUz": "'last year' → O'TGAN zamon, va 'did' YO'Q →\nfe'lning o'zi o'tgan shaklda: HAD.\n9-bandning ikki qismini solishtiring:\n  didn't HAVE (did bor) ↔ HAD (did yo'q).\n'a typewriter' = yozuv mashinkasi.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "10  Could / Couldn't you read when you were four years old?",
@@ -5542,7 +5906,8 @@
         "Could",
         "Couldn't"
        ],
-       "whyUz": "Oddiy so'roq gap → COULD.\n'Couldn't you ...?' — hayron bo'lish yoki tanbeh ma'nosini beradi\n('Nahotki o'qiy olmasang?')."
+       "whyUz": "Oddiy so'roq gap → COULD.\n'Couldn't you ...?' — hayron bo'lish yoki tanbeh ma'nosini beradi\n('Nahotki o'qiy olmasang?').",
+       "speakAnswer": "Could"
       },
       {
        "prompt": "11  They wasn't / weren't at the party last night.",
@@ -5552,7 +5917,8 @@
         "wasn't",
         "weren't"
        ],
-       "whyUz": "'They' KO'PLIK → WEREN'T."
+       "whyUz": "'They' KO'PLIK → WEREN'T.",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "12  Was / Were there a hotel here twenty years ago?",
@@ -5562,7 +5928,8 @@
         "Was",
         "Were"
        ],
-       "whyUz": "'a hotel' BIRLIK → WAS.\nDIQQAT: 'there' ga emas, KEYINGI OTGA qaraladi."
+       "whyUz": "'a hotel' BIRLIK → WAS.\nDIQQAT: 'there' ga emas, KEYINGI OTGA qaraladi.",
+       "speakAnswer": "Was"
       },
       {
        "prompt": "13  There weren't / wasn't a cinema here when I was a child.",
@@ -5572,7 +5939,8 @@
         "weren't",
         "wasn't"
        ],
-       "whyUz": "'a cinema' BIRLIK → WASN'T.\n8-band bilan solishtiring: u yerda 'many shops' ko'plik edi."
+       "whyUz": "'a cinema' BIRLIK → WASN'T.\n8-band bilan solishtiring: u yerda 'many shops' ko'plik edi.",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "14  We had / have a dog last year.",
@@ -5582,7 +5950,8 @@
         "had",
         "have"
        ],
-       "whyUz": "'last year' → O'TGAN zamon.\n'did' YO'Q → fe'lning o'zi o'tgan shaklda: HAD."
+       "whyUz": "'last year' → O'TGAN zamon.\n'did' YO'Q → fe'lning o'zi o'tgan shaklda: HAD.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "15  \"Can't / Can you play the violin?\"  [1-tanlov]",
@@ -5592,7 +5961,8 @@
         "Can't",
         "Can"
        ],
-       "whyUz": "Oddiy so'roq gap → CAN.\n'the violin' — cholg'u asbobi oldidan THE."
+       "whyUz": "Oddiy so'roq gap → CAN.\n'the violin' — cholg'u asbobi oldidan THE.",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "15  \"No, I can't / can.\"  [2-tanlov]",
@@ -5602,7 +5972,8 @@
         "can't",
         "can"
        ],
-       "whyUz": "'No, ...' → INKOR javob → CAN'T.\n'No, I can' — mantiqan XATO."
+       "whyUz": "'No, ...' → INKOR javob → CAN'T.\n'No, I can' — mantiqan XATO.",
+       "speakAnswer": "can't"
       }
      ]
     }
@@ -5637,7 +6008,8 @@
         "is"
        ],
        "whyUz": "Yosh so'ralmoqda, vaqt belgisi yo'q → HOZIRGI zamon.\n'you' → ARE.\nSo'roq gapda boshda.",
-       "speak": "1  A: ............ you ten years old?"
+       "speak": "1  A: ............ you ten years old?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "1  B: No, I ............ .",
@@ -5649,7 +6021,8 @@
         "are"
        ],
        "whyUz": "'Are you ...?' savoliga → 'No, I'M NOT.'\n'I am not' ning qisqa shakli.\nDIQQAT: 'I amn't' shakli YO'Q.",
-       "speak": "1  B: No, I ............ ."
+       "speak": "1  B: No, I ............ .",
+       "speakAnswer": "'m not"
       },
       {
        "prompt": "1  B: I ............ twelve.",
@@ -5661,7 +6034,8 @@
         "are"
        ],
        "whyUz": "'I' → AM ('I'm twelve' ham to'g'ri).\nYosh aytishda 'to be' ishlatiladi.",
-       "speak": "1  B: I ............ twelve."
+       "speak": "1  B: I ............ twelve.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "2  A: ............ you swim when you were five?",
@@ -5673,7 +6047,8 @@
         "is"
        ],
        "whyUz": "Keyingi so'z FE'L → 'can/could'.\n'when you were five' → O'TGAN → COULD.",
-       "speak": "2  A: ............ you swim when you were five?"
+       "speak": "2  A: ............ you swim when you were five?",
+       "speakAnswer": "Could"
       },
       {
        "prompt": "2  B: No, but I ............ swim now.",
@@ -5685,7 +6060,8 @@
         "is"
        ],
        "whyUz": "'now' → HOZIRGI zamon → CAN.\nMa'nosi: o'shanda suza olmasdim, hozir olaman.",
-       "speak": "2  B: No, but I ............ swim now."
+       "speak": "2  B: No, but I ............ swim now.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "3  A: ............ there an airport here twenty years ago?",
@@ -5697,7 +6073,8 @@
         "is"
        ],
        "whyUz": "'twenty years ago' → O'TGAN zamon.\n'an airport' BIRLIK → WAS.\n'Was there ...?' — 'Was' boshda.",
-       "speak": "3  A: ............ there an airport here twenty years ago?"
+       "speak": "3  A: ............ there an airport here twenty years ago?",
+       "speakAnswer": "Was"
       },
       {
        "prompt": "3  B: No, there ............ , ...",
@@ -5709,7 +6086,8 @@
         "is"
        ],
        "whyUz": "Savol 'Was there ...?' → javob 'No, there WASN'T.'",
-       "speak": "3  B: No, there ............ , ..."
+       "speak": "3  B: No, there ............ , ...",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "3  ... but there ............ one now.",
@@ -5721,7 +6099,8 @@
         "are"
        ],
        "whyUz": "'now' → HOZIRGI zamon.\n'one' bu yerda 'an airport' o'rniga turibdi — BIRLIK → IS.\n'There is one now' = hozir bittasi bor.",
-       "speak": "3  ... but there ............ one now."
+       "speak": "3  ... but there ............ one now.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "4  There ............ green fields here when I was little, ...",
@@ -5733,7 +6112,8 @@
         "is"
        ],
        "whyUz": "'when I was little' → O'TGAN zamon.\n'green fields' KO'PLIK → WERE.",
-       "speak": "4  There ............ green fields here when I was little, ..."
+       "speak": "4  There ............ green fields here when I was little, ...",
+       "speakAnswer": "were"
       },
       {
        "prompt": "4  ... but there ............ many now.",
@@ -5745,7 +6125,8 @@
         "is"
        ],
        "whyUz": "'now' → HOZIRGI.\n'but' → INKOR (ilgari bor edi, hozir yo'q).\nKo'plik → AREN'T.",
-       "speak": "4  ... but there ............ many now."
+       "speak": "4  ... but there ............ many now.",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "4  There ............ any hotels or shops then.",
@@ -5757,7 +6138,8 @@
         "is"
        ],
        "whyUz": "'ANY' → INKOR.\n'then' = o'shanda → O'TGAN.\n'hotels or shops' KO'PLIK → WEREN'T.",
-       "speak": "4  There ............ any hotels or shops then."
+       "speak": "4  There ............ any hotels or shops then.",
+       "speakAnswer": "weren't"
       },
       {
        "prompt": "5  We ............ a supermarket then, ...",
@@ -5769,7 +6151,8 @@
         "is"
        ],
        "whyUz": "'then' → O'TGAN zamon.\nSupermarket bor edi — mulk/mavjudlik → HAD.\nDIQQAT: 'did' yo'q → HAD (have EMAS).",
-       "speak": "5  We ............ a supermarket then, ..."
+       "speak": "5  We ............ a supermarket then, ...",
+       "speakAnswer": "had"
       },
       {
        "prompt": "5  ... but we ............ any department stores.",
@@ -5781,7 +6164,8 @@
         "is"
        ],
        "whyUz": "'ANY' va 'but' → INKOR.\nO'tgan zamon + mulk inkori → DIDN'T HAVE.\nDIQQAT: 'didn't had' XATO.",
-       "speak": "5  ... but we ............ any department stores."
+       "speak": "5  ... but we ............ any department stores.",
+       "speakAnswer": "didn't have"
       }
      ]
     },
@@ -5801,203 +6185,232 @@
        "answer": "couldn't",
        "promptUz": "Olti yoshli bola mashina hayday oladimi?",
        "whyUz": "MANTIQ: 6 yoshli bola mashina hayday OLMAYDI → INKOR.\n'When I was six' → O'TGAN → COULDN'T.",
-       "speak": "1  (could, have got, couldn't, can)  When I was six, I ............ drive a car, ..."
+       "speak": "1  (could, have got, couldn't, can)  When I was six, I ............ drive a car, ...",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "1  ... but I ............ ride a bicycle.",
        "answer": "could",
        "promptUz": "'but' — qarama-qarshilik",
        "whyUz": "'but' → TASDIQ.\nO'tgan zamon → COULD.\n6 yoshda velosiped haydash — tabiiy.",
-       "speak": "1  ... but I ............ ride a bicycle."
+       "speak": "1  ... but I ............ ride a bicycle.",
+       "speakAnswer": "could"
       },
       {
        "prompt": "1  Now I ............ a car ...",
        "answer": "have got",
        "promptUz": "'Now' + mashina MULK",
        "whyUz": "'Now' → HOZIRGI zamon.\nKeyin OT ('a car') keladi, fe'l emas → HAVE GOT.",
-       "speak": "1  Now I ............ a car ..."
+       "speak": "1  Now I ............ a car ...",
+       "speakAnswer": "have got"
       },
       {
        "prompt": "1  ... and I ............ drive it very well.",
        "answer": "can",
        "promptUz": "Keyin FE'L ('drive') keladi",
        "whyUz": "Keyingi so'z FE'L → 'can/could'.\n'Now' → HOZIRGI → CAN.\nBir gapda ikkisi: 'have got' (mulk) + 'can' (qobiliyat).",
-       "speak": "1  ... and I ............ drive it very well."
+       "speak": "1  ... and I ............ drive it very well.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "2  (is, hasn't got, was, had)  When Cathy ............ four, ...",
        "answer": "was",
        "promptUz": "Ega — 'Cathy' (BIRLIK)",
        "whyUz": "'Cathy' BIRLIK → WAS.\n'When Cathy was four' = Keti to'rt yoshda bo'lganida.",
-       "speak": "2  (is, hasn't got, was, had)  When Cathy ............ four, ..."
+       "speak": "2  (is, hasn't got, was, had)  When Cathy ............ four, ...",
+       "speakAnswer": "was"
       },
       {
        "prompt": "2  ... she ............ many dolls to play with.",
        "answer": "had",
        "promptUz": "O'tgan zamon; qo'g'irchoq — MULK",
        "whyUz": "O'tgan zamon + mulk → HAD.\n'to play with' = o'ynash uchun ('with' oxirda).",
-       "speak": "2  ... she ............ many dolls to play with."
+       "speak": "2  ... she ............ many dolls to play with.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "2  Now she ............ sixteen ...",
        "answer": "is",
        "promptUz": "'Now' + ega 'she'",
        "whyUz": "'Now' → HOZIRGI.\n'she' BIRLIK → IS.\nYosh aytishda 'to be'.",
-       "speak": "2  Now she ............ sixteen ..."
+       "speak": "2  Now she ............ sixteen ...",
+       "speakAnswer": "is"
       },
       {
        "prompt": "2  ... and she ............ any dolls.",
        "answer": "hasn't got",
        "promptUz": "'any' — inkor; ega 'she'",
        "whyUz": "'ANY' → INKOR.\nHozirgi zamon + 'she' → HASN'T GOT ('haven't got' EMAS).\nMa'nosi: 16 yoshda qo'g'irchoq o'ynamaydi.",
-       "speak": "2  ... and she ............ any dolls."
+       "speak": "2  ... and she ............ any dolls.",
+       "speakAnswer": "hasn't got"
       },
       {
        "prompt": "3  (could, can, can't, couldn't, were)  A: ............ your sister cook?",
        "answer": "Can",
        "promptUz": "Keyin FE'L; o'tgan zamon belgisi bormi?",
        "whyUz": "Keyingi so'z FE'L ('cook') → 'can/could'.\nO'tgan zamon belgisi YO'Q → HOZIRGI → CAN.",
-       "speak": "3  (could, can, can't, couldn't, were)  A: ............ your sister cook?"
+       "speak": "3  (could, can, can't, couldn't, were)  A: ............ your sister cook?",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "3  B: No, she ............ .",
        "answer": "can't",
        "promptUz": "Qisqa INKOR javob, hozirgi zamon",
        "whyUz": "'Can ...?' savoliga → 'No, she CAN'T.'",
-       "speak": "3  B: No, she ............ ."
+       "speak": "3  B: No, she ............ .",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "3  B: ............ you cook when you ............ nine?  [1-bo'shliq]",
        "answer": "Could",
        "promptUz": "'when you ... nine' — o'tgan zamon",
        "whyUz": "'when you were nine' → O'TGAN → COULD.",
-       "speak": "3  B: ............ you cook when you ............ nine?  [1-bo'shliq]"
+       "speak": "3  B: ............ you cook when you ............ nine?  [1-bo'shliq]",
+       "speakAnswer": "Could"
       },
       {
        "prompt": "3  B: ............ you cook when you ............ nine?  [2-bo'shliq]",
        "answer": "were",
        "promptUz": "Ega — 'you'",
        "whyUz": "'you' → DOIM WERE.",
-       "speak": "3  B: ............ you cook when you ............ nine?  [2-bo'shliq]"
+       "speak": "3  B: ............ you cook when you ............ nine?  [2-bo'shliq]",
+       "speakAnswer": "were"
       },
       {
        "prompt": "3  A: No, I ............ .",
        "answer": "couldn't",
        "promptUz": "Qisqa INKOR javob, o'tgan zamon",
        "whyUz": "'Could ...?' savoliga → 'No, I COULDN'T.'\n2-band bilan solishtiring: u yerda hozirgi (can't) edi.",
-       "speak": "3  A: No, I ............ ."
+       "speak": "3  A: No, I ............ .",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "4  (had, have got, haven't got)  I ............ a computer now, ...",
        "answer": "have got",
        "promptUz": "'now' + ega 'I'",
        "whyUz": "'now' → HOZIRGI.\n'I' → HAVE GOT.",
-       "speak": "4  (had, have got, haven't got)  I ............ a computer now, ..."
+       "speak": "4  (had, have got, haven't got)  I ............ a computer now, ...",
+       "speakAnswer": "have got"
       },
       {
        "prompt": "4  ... but I ............ a typewriter.",
        "answer": "haven't got",
        "promptUz": "'but' — inkor, hozirgi zamon",
        "whyUz": "'but' → INKOR.\nHozirgi + 'I' → HAVEN'T GOT.",
-       "speak": "4  ... but I ............ a typewriter."
+       "speak": "4  ... but I ............ a typewriter.",
+       "speakAnswer": "haven't got"
       },
       {
        "prompt": "4  I ............ a typewriter when I was fourteen.",
        "answer": "had",
        "promptUz": "'when I was fourteen' — o'tgan zamon",
        "whyUz": "O'tgan zamon + mulk → HAD.\nMa'nosi: 14 yoshda mashinka bor edi, hozir yo'q.\n'a typewriter' = yozuv mashinkasi.",
-       "speak": "4  I ............ a typewriter when I was fourteen."
+       "speak": "4  I ............ a typewriter when I was fourteen.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "5  (aren't, didn't have, has got, had)  My town ............ a theatre now, ...",
        "answer": "has got",
        "promptUz": "'now'; ega — 'My town' (BIRLIK)",
        "whyUz": "'now' → HOZIRGI.\n'My town' BIRLIK (3-shaxs) → HAS GOT.",
-       "speak": "5  (aren't, didn't have, has got, had)  My town ............ a theatre now, ..."
+       "speak": "5  (aren't, didn't have, has got, had)  My town ............ a theatre now, ...",
+       "speakAnswer": "has got"
       },
       {
        "prompt": "5  ... but it ............ a theatre twenty years ago.",
        "answer": "didn't have",
        "promptUz": "'but' + 'twenty years ago' — inkor, o'tgan",
        "whyUz": "'but' → INKOR.\n'twenty years ago' → O'TGAN → DIDN'T HAVE.",
-       "speak": "5  ... but it ............ a theatre twenty years ago."
+       "speak": "5  ... but it ............ a theatre twenty years ago.",
+       "speakAnswer": "didn't have"
       },
       {
        "prompt": "5  It ............ many parks.",
        "answer": "had",
        "promptUz": "O'tgan zamon, TASDIQ",
        "whyUz": "O'tgan zamon davom etmoqda (20 yil oldin haqida).\nTasdiq → HAD.",
-       "speak": "5  It ............ many parks."
+       "speak": "5  It ............ many parks.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "5  There ............ any parks now.",
        "answer": "aren't",
        "promptUz": "'any' + 'now' — inkor, hozirgi, ko'plik",
        "whyUz": "'ANY' → INKOR.\n'now' → HOZIRGI.\n'parks' KO'PLIK → AREN'T.\nMa'nosi: ilgari bog' ko'p edi, hozir yo'q.",
-       "speak": "5  There ............ any parks now."
+       "speak": "5  There ............ any parks now.",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "6  (haven't got, aren't, are)  A: ............ those your cats?",
        "answer": "Are",
        "promptUz": "'those' — KO'PLIK",
        "whyUz": "'those' KO'PLIK ko'rsatish olmoshi → ARE.\n'Are those your cats?' = Anavilar sizning mushuklaringizmi?",
-       "speak": "6  (haven't got, aren't, are)  A: ............ those your cats?"
+       "speak": "6  (haven't got, aren't, are)  A: ............ those your cats?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "6  B: No, they ............ .",
        "answer": "aren't",
        "promptUz": "Qisqa INKOR javob, ko'plik",
        "whyUz": "'Are ...?' savoliga ko'plik javob → 'No, they AREN'T.'",
-       "speak": "6  B: No, they ............ ."
+       "speak": "6  B: No, they ............ .",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "6  B: I ............ any cats.",
        "answer": "haven't got",
        "promptUz": "'any' — inkor; ega — 'I'",
        "whyUz": "'ANY' → INKOR.\n'I' → HAVEN'T GOT.",
-       "speak": "6  B: I ............ any cats."
+       "speak": "6  B: I ............ any cats.",
+       "speakAnswer": "haven't got"
       },
       {
        "prompt": "7  (wasn't, was, were)  A: ............ you at home last night?",
        "answer": "Were",
        "promptUz": "'last night' — o'tgan; ega — 'you'",
        "whyUz": "'last night' → O'TGAN.\n'you' → WERE.",
-       "speak": "7  (wasn't, was, were)  A: ............ you at home last night?"
+       "speak": "7  (wasn't, was, were)  A: ............ you at home last night?",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "7  B: No, I ............ .",
        "answer": "wasn't",
        "promptUz": "Qisqa INKOR javob",
        "whyUz": "'I' → WASN'T.\nDIQQAT: savolda WERE, javobda WASN'T — ega o'zgardi.",
-       "speak": "7  B: No, I ............ ."
+       "speak": "7  B: No, I ............ .",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "7  B: I ............ at a party.",
        "answer": "was",
        "promptUz": "Tasdiq, ega — 'I'",
        "whyUz": "'I' → WAS.\n'at a party' = ziyofatda.",
-       "speak": "7  B: I ............ at a party."
+       "speak": "7  B: I ............ at a party.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "8  (haven't got, is, isn't)  A: ............ he your brother?",
        "answer": "Is",
        "promptUz": "Ega — 'he'",
        "whyUz": "'he' BIRLIK → IS.\nHozirgi zamon (qarindoshlik doimiy).",
-       "speak": "8  (haven't got, is, isn't)  A: ............ he your brother?"
+       "speak": "8  (haven't got, is, isn't)  A: ............ he your brother?",
+       "speakAnswer": "Is"
       },
       {
        "prompt": "8  B: No, he ............ .",
        "answer": "isn't",
        "promptUz": "Qisqa INKOR javob",
        "whyUz": "'Is ...?' savoliga → 'No, he ISN'T.'",
-       "speak": "8  B: No, he ............ ."
+       "speak": "8  B: No, he ............ .",
+       "speakAnswer": "isn't"
       },
       {
        "prompt": "8  B: I ............ any brothers.",
        "answer": "haven't got",
        "promptUz": "'any' — inkor; ega — 'I'",
        "whyUz": "'ANY' → INKOR.\n'I' → HAVEN'T GOT.\nMa'nosi: umuman akam-ukam yo'q.",
-       "speak": "8  B: I ............ any brothers."
+       "speak": "8  B: I ............ any brothers.",
+       "speakAnswer": "haven't got"
       }
      ]
     },
@@ -6017,63 +6430,72 @@
        "answer": "was",
        "promptUz": "'couldn't' o'tgan zamonda — 'is' unga mos kelmaydi",
        "whyUz": "Gapning boshi O'TGAN zamonda ('couldn't') →\n'is' ham o'tgan bo'lishi kerak → WAS.\nTo'g'ri gap: Steve couldn't drive a car when he WAS five.",
-       "speak": "2  Steve couldn't drive a car when he is five.  →  ?"
+       "speak": "2  Steve couldn't drive a car when he is five.  →  ?",
+       "speakAnswer": "was"
       },
       {
        "prompt": "3  Did you had a TV then?  →  ?",
        "answer": "have",
        "promptUz": "'Did' dan keyin qaysi shakl?",
        "whyUz": "'Did' allaqachon o'tgan zamonni ko'rsatgan →\nkeyingi fe'l ASOSIY shaklda → HAVE.\nTo'g'ri gap: Did you HAVE a TV then?",
-       "speak": "3  Did you had a TV then?  →  ?"
+       "speak": "3  Did you had a TV then?  →  ?",
+       "speakAnswer": "have"
       },
       {
        "prompt": "4  My dad was at work at the moment.  →  ?",
        "answer": "is",
        "promptUz": "'at the moment' — qaysi zamon?",
        "whyUz": "'at the moment' = ayni damda → HOZIRGI zamon.\n'was' emas, IS bo'lishi kerak.\nTo'g'ri gap: My dad IS at work at the moment.",
-       "speak": "4  My dad was at work at the moment.  →  ?"
+       "speak": "4  My dad was at work at the moment.  →  ?",
+       "speakAnswer": "is"
       },
       {
        "prompt": "5  Bobby could play basketball now.  →  ?",
        "answer": "can",
        "promptUz": "'now' — qaysi zamon?",
        "whyUz": "'now' → HOZIRGI zamon.\n'could' emas, CAN.\nTo'g'ri gap: Bobby CAN play basketball now.",
-       "speak": "5  Bobby could play basketball now.  →  ?"
+       "speak": "5  Bobby could play basketball now.  →  ?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "6  They didn't had CDs fifty years ago.  →  ?",
        "answer": "have",
        "promptUz": "'didn't' dan keyin qaysi shakl?",
        "whyUz": "'didn't' + ASOSIY shakl → HAVE.\n3-band bilan bir xil qoida.\nTo'g'ri gap: They didn't HAVE CDs fifty years ago.",
-       "speak": "6  They didn't had CDs fifty years ago.  →  ?"
+       "speak": "6  They didn't had CDs fifty years ago.  →  ?",
+       "speakAnswer": "have"
       },
       {
        "prompt": "7  I are good friends with Joe when I was ten.  →  ?",
        "answer": "was",
        "promptUz": "Ega — 'I'; zamon — o'tgan",
        "whyUz": "IKKI xato birga: 'I' hech qachon 'are' olmaydi,\nva 'when I was ten' o'tgan zamon → WAS.\nTo'g'ri gap: I WAS good friends with Joe when I was ten.",
-       "speak": "7  I are good friends with Joe when I was ten.  →  ?"
+       "speak": "7  I are good friends with Joe when I was ten.  →  ?",
+       "speakAnswer": "was"
       },
       {
        "prompt": "8  I have a lot of books when I was little.  →  ?",
        "answer": "had",
        "promptUz": "'when I was little' — qaysi zamon?",
        "whyUz": "'when I was little' → O'TGAN zamon.\n'have' emas, HAD.\nDIQQAT: bu yerda 'did' yo'q → HAD (have EMAS).\nTo'g'ri gap: I HAD a lot of books when I was little.",
-       "speak": "8  I have a lot of books when I was little.  →  ?"
+       "speak": "8  I have a lot of books when I was little.  →  ?",
+       "speakAnswer": "had"
       },
       {
        "prompt": "9  They are at the party last night.  →  ?",
        "answer": "were",
        "promptUz": "'last night' — o'tgan; ega — 'They' (ko'plik)",
        "whyUz": "'last night' → O'TGAN zamon.\n'They' KO'PLIK → WERE (was EMAS).\nTo'g'ri gap: They WERE at the party last night.",
-       "speak": "9  They are at the party last night.  →  ?"
+       "speak": "9  They are at the party last night.  →  ?",
+       "speakAnswer": "were"
       },
       {
        "prompt": "10  There isn't a post office here then.  →  ?",
        "answer": "wasn't",
        "promptUz": "'then' — o'tgan; 'a post office' — birlik",
        "whyUz": "'then' = o'shanda → O'TGAN zamon.\n'a post office' BIRLIK → WASN'T.\nTo'g'ri gap: There WASN'T a post office here then.",
-       "speak": "10  There isn't a post office here then.  →  ?"
+       "speak": "10  There isn't a post office here then.  →  ?",
+       "speakAnswer": "wasn't"
       }
      ]
     },
@@ -6097,7 +6519,8 @@
         "B between",
         "C above"
        ],
-       "whyUz": "MANTIQ: yo'qolgan tufli odatda divan OSTIDA bo'ladi → UNDER.\n'between' ikkita narsa kerak (bitta divan bor).\n'above' = tepasida, havoda — mantiqsiz."
+       "whyUz": "MANTIQ: yo'qolgan tufli odatda divan OSTIDA bo'ladi → UNDER.\n'between' ikkita narsa kerak (bitta divan bor).\n'above' = tepasida, havoda — mantiqsiz.",
+       "speakAnswer": "A under"
       },
       {
        "prompt": "2  When I ............ five, I could read.",
@@ -6108,7 +6531,8 @@
         "B was",
         "C am"
        ],
-       "whyUz": "'I' → WAS ('were' EMAS).\n'could read' o'tgan zamonni tasdiqlaydi → 'am' ham noto'g'ri."
+       "whyUz": "'I' → WAS ('were' EMAS).\n'could read' o'tgan zamonni tasdiqlaydi → 'am' ham noto'g'ri.",
+       "speakAnswer": "B was"
       },
       {
        "prompt": "3  My mother is ............ Maths teacher.",
@@ -6119,7 +6543,8 @@
         "B an",
         "C a"
        ],
-       "whyUz": "Kasb aytishda artikl SHART: 'She is A teacher'.\n'Maths' /mæθs/ — 'm' UNDOSH tovush → A ('an' EMAS).\n'a Maths teacher' = matematika o'qituvchisi."
+       "whyUz": "Kasb aytishda artikl SHART: 'She is A teacher'.\n'Maths' /mæθs/ — 'm' UNDOSH tovush → A ('an' EMAS).\n'a Maths teacher' = matematika o'qituvchisi.",
+       "speakAnswer": "C a"
       },
       {
        "prompt": "4  There aren't ............ chairs in the kitchen.",
@@ -6130,7 +6555,8 @@
         "B some",
         "C a"
        ],
-       "whyUz": "'aren't' — INKOR gap → ANY.\n'some' tasdiq gapda ishlatiladi.\n'a' + ko'plik ot ('chairs') mumkin emas."
+       "whyUz": "'aren't' — INKOR gap → ANY.\n'some' tasdiq gapda ishlatiladi.\n'a' + ko'plik ot ('chairs') mumkin emas.",
+       "speakAnswer": "A any"
       },
       {
        "prompt": "5  A: Is this John's coat?  B: Yes, it's ............ .",
@@ -6141,7 +6567,8 @@
         "B his",
         "C yours"
        ],
-       "whyUz": "Savolda 'JOHN'S coat' — Jon ERKAK → HIS.\n'mine' = meniki;  'yours' = seniki.\n'his' — egalik olmoshi, ot kerak emas."
+       "whyUz": "Savolda 'JOHN'S coat' — Jon ERKAK → HIS.\n'mine' = meniki;  'yours' = seniki.\n'his' — egalik olmoshi, ot kerak emas.",
+       "speakAnswer": "B his"
       },
       {
        "prompt": "6  We always go ............ bed before 12 o'clock.",
@@ -6152,7 +6579,8 @@
         "B in",
         "C to"
        ],
-       "whyUz": "'go TO bed' = yotmoq — o'zgarmas ibora.\nDIQQAT: 'bed' oldidan artikl YO'Q ('go to THE bed' XATO).\nShunga o'xshash: go to school, go to work."
+       "whyUz": "'go TO bed' = yotmoq — o'zgarmas ibora.\nDIQQAT: 'bed' oldidan artikl YO'Q ('go to THE bed' XATO).\nShunga o'xshash: go to school, go to work.",
+       "speakAnswer": "C to"
       },
       {
        "prompt": "7  ............ sugar do you want in your coffee?",
@@ -6163,7 +6591,8 @@
         "B How much",
         "C How long"
        ],
-       "whyUz": "'sugar' — SANALMAYDIGAN ot → HOW MUCH.\n'How many' sanaladigan otlar bilan (How many cups?).\n'How long' — davomiylik yoki uzunlik uchun."
+       "whyUz": "'sugar' — SANALMAYDIGAN ot → HOW MUCH.\n'How many' sanaladigan otlar bilan (How many cups?).\n'How long' — davomiylik yoki uzunlik uchun.",
+       "speakAnswer": "B How much"
       },
       {
        "prompt": "8  A: Are they watching television?  B: No, they ............ . They're having dinner.",
@@ -6174,7 +6603,8 @@
         "B haven't",
         "C don't"
        ],
-       "whyUz": "Savol 'ARE they ...?' bilan boshlangan →\nqisqa javobda ham 'are' → 'No, they AREN'T.'\nQisqa javobda SAVOLDAGI yordamchi fe'l takrorlanadi."
+       "whyUz": "Savol 'ARE they ...?' bilan boshlangan →\nqisqa javobda ham 'are' → 'No, they AREN'T.'\nQisqa javobda SAVOLDAGI yordamchi fe'l takrorlanadi.",
+       "speakAnswer": "A aren't"
       },
       {
        "prompt": "9  I'm not very hungry. I just want a ............ of soup for lunch.",
@@ -6185,7 +6615,8 @@
         "B bowl",
         "C plate"
        ],
-       "whyUz": "'a BOWL of soup' = bir kosa sho'rva — o'zgarmas birikma.\n'a cup of' — choy/kofe uchun.\n'a plate of' — quyuq taom uchun (plov, makaron)."
+       "whyUz": "'a BOWL of soup' = bir kosa sho'rva — o'zgarmas birikma.\n'a cup of' — choy/kofe uchun.\n'a plate of' — quyuq taom uchun (plov, makaron).",
+       "speakAnswer": "B bowl"
       },
       {
        "prompt": "10  ............ I help you, sir?",
@@ -6196,7 +6627,8 @@
         "B Would",
         "C Can"
        ],
-       "whyUz": "'CAN I help you?' = Yordam bera olamanmi? —\ndo'kon, mehmonxona, idorada xodimning standart iborasi.\n'Do I help you?' — mantiqsiz.\n'Would I help you?' — noto'g'ri qolip\n('WOULD YOU like ...?' bo'lardi)."
+       "whyUz": "'CAN I help you?' = Yordam bera olamanmi? —\ndo'kon, mehmonxona, idorada xodimning standart iborasi.\n'Do I help you?' — mantiqsiz.\n'Would I help you?' — noto'g'ri qolip\n('WOULD YOU like ...?' bo'lardi).",
+       "speakAnswer": "C Can"
       }
      ]
     }
@@ -6309,63 +6741,72 @@
        "answer": "dirty",
        "promptUz": "'d' bilan; NOW ustunidagi 'clean' ning aksi",
        "whyUz": "NOW ustunida 'a CLEAN area' → uning aksi DIRTY.\n'dirty' = iflos, kir.\nButun jadval qarama-qarshilik ustiga qurilgan.",
-       "speak": "THEN:  Canary Wharf was a d............ area twenty years ago."
+       "speak": "THEN:  Canary Wharf was a d............ area twenty years ago.",
+       "speakAnswer": "dirty"
       },
       {
        "prompt": "THEN:  There were e............ warehouses.",
        "answer": "empty",
        "promptUz": "'e' bilan; omborda hech narsa yo'q edi",
        "whyUz": "'EMPTY warehouses' = bo'sh omborlar.\n'a warehouse' = ombor (yuk saqlanadigan katta bino).\nCanary Wharf ilgari port hududi edi.",
-       "speak": "THEN:  There were e............ warehouses."
+       "speak": "THEN:  There were e............ warehouses.",
+       "speakAnswer": "empty"
       },
       {
        "prompt": "THEN:  There weren't m............ shops or people.",
        "answer": "many",
        "promptUz": "'m' bilan; 'shops' SANALADIGAN ko'plik",
        "whyUz": "'shops' va 'people' — SANALADIGAN → MANY.\n(sanalmaydigan bo'lsa 'much' bo'lardi).\n'There weren't many ...' = ko'p ... yo'q edi.",
-       "speak": "THEN:  There weren't m............ shops or people."
+       "speak": "THEN:  There weren't m............ shops or people.",
+       "speakAnswer": "many"
       },
       {
        "prompt": "THEN:  People didn't have m............ money ...",
        "answer": "much",
        "promptUz": "'m' bilan; 'money' SANALMAYDI",
        "whyUz": "'money' — SANALMAYDIGAN ot → MUCH.\nOldingi band bilan solishtiring: 'many shops' (sanaladigan),\n'much money' (sanalmaydigan).",
-       "speak": "THEN:  People didn't have m............ money ..."
+       "speak": "THEN:  People didn't have m............ money ...",
+       "speakAnswer": "much"
       },
       {
        "prompt": "THEN:  ... or n............ houses or cars.",
        "answer": "nice",
        "promptUz": "'n' bilan; uy va mashina haqida sifat",
        "whyUz": "'NICE houses or cars' = chiroyli uy yoki mashina.\nNOW ustunida bu 'lovely houses and new cars' ga aylangan.",
-       "speak": "THEN:  ... or n............ houses or cars."
+       "speak": "THEN:  ... or n............ houses or cars.",
+       "speakAnswer": "nice"
       },
       {
        "prompt": "NOW:  Canary Wharf is a c............ area nowadays.",
        "answer": "clean",
        "promptUz": "'c' bilan; 'dirty' ning aksi",
        "whyUz": "THEN ustunidagi 'DIRTY' ning aksi → CLEAN.\n'nowadays' = hozirgi kunda.",
-       "speak": "NOW:  Canary Wharf is a c............ area nowadays."
+       "speak": "NOW:  Canary Wharf is a c............ area nowadays.",
+       "speakAnswer": "clean"
       },
       {
        "prompt": "NOW:  There are b............ flats, lots of shops, offices, restaurants and cafés.",
        "answer": "beautiful",
        "promptUz": "'b' bilan; uzun so'z",
        "whyUz": "'BEAUTIFUL flats' = go'zal kvartiralar.\nBo'shliq eng uzuni — uzun sifat kerak.\n'a flat' = kvartira; 'an office' = ofis.",
-       "speak": "NOW:  There are b............ flats, lots of shops, offices, restaurants and cafés."
+       "speak": "NOW:  There are b............ flats, lots of shops, offices, restaurants and cafés.",
+       "speakAnswer": "beautiful"
       },
       {
        "prompt": "NOW:  People have got a lot of money, l............ houses ...",
        "answer": "lovely",
        "promptUz": "'l' bilan; uy haqida ijobiy sifat",
        "whyUz": "'LOVELY houses' = chiroyli, yoqimli uylar.\nTHEN dagi 'nice houses' yo'q edi — endi bor.",
-       "speak": "NOW:  People have got a lot of money, l............ houses ..."
+       "speak": "NOW:  People have got a lot of money, l............ houses ...",
+       "speakAnswer": "lovely"
       },
       {
        "prompt": "NOW:  ... and n............ cars.",
        "answer": "new",
        "promptUz": "'n' bilan; qisqa so'z",
        "whyUz": "'NEW cars' = yangi mashinalar.\nBo'shliq qisqa — qisqa sifat.\nTHEN da mashina umuman yo'q edi.",
-       "speak": "NOW:  ... and n............ cars."
+       "speak": "NOW:  ... and n............ cars.",
+       "speakAnswer": "new"
       }
      ]
     }
@@ -6497,21 +6938,24 @@
        "answer": "can",
        "promptUz": "Muloyim iltimos so'rash fe'li",
        "whyUz": "'CAN you tell me the way to ...?' — yo'l so'rashning asosiy qolipi.\n'COULD you ...?' ham to'g'ri va muloyimroq.\n'the way TO + joy' — 'to' shart.",
-       "speak": "A: Excuse me, 1) ............ you tell me the way to the bank?"
+       "speak": "A: Excuse me, 1) ............ you tell me the way to the bank?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "B: Yes, of course. Go straight down Hill Street, then take the first turning 2) ............ .",
        "answer": "on your left",
        "promptUz": "Bank qaysi tomonda? Xaritaga qarang",
        "whyUz": "Bekatdan Hill Street bo'ylab PASTGA yurganda\nsharq CHAP tomonda qoladi. Bank esa sharqda.\n'take the first turning ON YOUR LEFT' = birinchi burilishdan chapga.",
-       "speak": "B: Yes, of course. Go straight down Hill Street, then take the first turning 2) ............ ."
+       "speak": "B: Yes, of course. Go straight down Hill Street, then take the first turning 2) ............ .",
+       "speakAnswer": "on your left"
       },
       {
        "prompt": "B: Go down King Street. The bank is 3) ............ the café.",
        "answer": "next to",
        "promptUz": "Bank va kafe yonma-yonmi yoki ro'paramimi?",
        "whyUz": "King Street ostidagi qatorda: CAFÉ | BANK — yonma-yon,\nko'cha ajratmaydi → NEXT TO.\n9a-mashqning 2-bandiga qarang: kafe pochta va bank orasida.",
-       "speak": "B: Go down King Street. The bank is 3) ............ the café."
+       "speak": "B: Go down King Street. The bank is 3) ............ the café.",
+       "speakAnswer": "next to"
       }
      ]
     }
@@ -6604,91 +7048,104 @@
        "answer": "Were",
        "promptUz": "Ega — 'you'",
        "whyUz": "'you' → WERE.\nSo'roq gap: WERE gap boshida.\n'last night' = kecha kechqurun.",
-       "speak": "A: 1) ............ you at home last night?"
+       "speak": "A: 1) ............ you at home last night?",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "B: No, I 2) ............ .",
        "answer": "wasn't",
        "promptUz": "Qisqa INKOR javob, ega — 'I'",
        "whyUz": "'I' → was; inkor → WASN'T.\nQisqa javobda faqat 'No, I wasn't.' deyiladi.",
-       "speak": "B: No, I 2) ............ ."
+       "speak": "B: No, I 2) ............ .",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "B: I 3) ............ at the cinema.",
        "answer": "was",
        "promptUz": "Tasdiq, ega — 'I'",
        "whyUz": "'I' → WAS.\n'at the cinema' = kinoteatrda.",
-       "speak": "B: I 3) ............ at the cinema."
+       "speak": "B: I 3) ............ at the cinema.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "A: Who 4) ............ you with?",
        "answer": "were",
        "promptUz": "Ega — 'you'",
        "whyUz": "'you' → WERE.\n'Who were you with?' = Kim bilan eding?\nDIQQAT: 'with' gap OXIRIDA qoladi.",
-       "speak": "A: Who 4) ............ you with?"
+       "speak": "A: Who 4) ............ you with?",
+       "speakAnswer": "were"
       },
       {
        "prompt": "B: I 5) ............ with Claire.",
        "answer": "was",
        "promptUz": "Ega — 'I'",
        "whyUz": "'I' → WAS.",
-       "speak": "B: I 5) ............ with Claire."
+       "speak": "B: I 5) ............ with Claire.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "A: How 6) ............ the film?",
        "answer": "was",
        "promptUz": "Ega — 'the film' (birlik)",
        "whyUz": "'the film' — BIRLIK ot → WAS.\n'How was ...?' = ... qanday edi?",
-       "speak": "A: How 6) ............ the film?"
+       "speak": "A: How 6) ............ the film?",
+       "speakAnswer": "was"
       },
       {
        "prompt": "B: Well, it 7) ............ very good.",
        "answer": "wasn't",
        "promptUz": "Ma'no INKOR — keyin 'It was boring' deyiladi",
        "whyUz": "'it' → was; ma'no inkor → WASN'T.\n'It wasn't very good' = unchalik yaxshi emasdi.\nKeyingi gap ('It was boring') buni tasdiqlaydi.",
-       "speak": "B: Well, it 7) ............ very good."
+       "speak": "B: Well, it 7) ............ very good.",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "B: It 8) ............ boring.",
        "answer": "was",
        "promptUz": "Tasdiq, ega — 'it'",
        "whyUz": "'it' → WAS.\n'boring' = zerikarli (7-band bilan mos keladi).",
-       "speak": "B: It 8) ............ boring."
+       "speak": "B: It 8) ............ boring.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "B: Where 9) ............ you?",
        "answer": "were",
        "promptUz": "Ega — 'you'",
        "whyUz": "'you' → WERE.\n'Where were you?' = Qayerda eding?",
-       "speak": "B: Where 9) ............ you?"
+       "speak": "B: Where 9) ............ you?",
+       "speakAnswer": "were"
       },
       {
        "prompt": "A: I 10) ............ at home.",
        "answer": "was",
        "promptUz": "Ega — 'I'",
        "whyUz": "'I' → WAS.",
-       "speak": "A: I 10) ............ at home."
+       "speak": "A: I 10) ............ at home.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "B: 11) ............ you with Sally?",
        "answer": "Were",
        "promptUz": "So'roq, ega — 'you'",
        "whyUz": "'you' → WERE. So'roq gap boshida.",
-       "speak": "B: 11) ............ you with Sally?"
+       "speak": "B: 11) ............ you with Sally?",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "A: No, I 12) ............ .",
        "answer": "wasn't",
        "promptUz": "Qisqa INKOR javob",
        "whyUz": "'I' → WASN'T.",
-       "speak": "A: No, I 12) ............ ."
+       "speak": "A: No, I 12) ............ .",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "A: She 13) ............ at work.",
        "answer": "was",
        "promptUz": "Ega — 'she'",
        "whyUz": "'she' — BIRLIK → WAS.\n'at work' = ishda (predlog AT).",
-       "speak": "A: She 13) ............ at work."
+       "speak": "A: She 13) ............ at work.",
+       "speakAnswer": "was"
       }
      ]
     },
@@ -6788,35 +7245,40 @@
        "answer": "down",
        "promptUz": "Tik ko'cha bo'ylab pastga yurish",
        "whyUz": "'go straight DOWN ... Street' = ... ko'cha bo'ylab pastga yurish.\nDorixona yuqorida, pochta pastda — demak PASTGA yuriladi.",
-       "speak": "B: Yes, go straight 1) ............ Elizabeth Street."
+       "speak": "B: Yes, go straight 1) ............ Elizabeth Street.",
+       "speakAnswer": "down"
       },
       {
        "prompt": "B: The post office is 2) ............ .",
        "answer": "on your left",
        "promptUz": "Elizabeth Street bo'ylab pastga yurganda binolar qaysi tomonda?",
        "whyUz": "Binolar (dorixona, kafe, pochta, gazeta do'koni)\nElizabeth Street ning SHARQIDA.\nJanubga yurganda sharq CHAP tomonda qoladi → ON YOUR LEFT.",
-       "speak": "B: The post office is 2) ............ ."
+       "speak": "B: The post office is 2) ............ .",
+       "speakAnswer": "on your left"
       },
       {
        "prompt": "B: Yes, go straight 3) ............ King Street ...",
        "answer": "down",
        "promptUz": "Yana tik ko'cha bo'ylab pastga",
        "whyUz": "Bog' King Street ning yuqori qismida.\nBridge Street pastda — demak DOWN King Street.",
-       "speak": "B: Yes, go straight 3) ............ King Street ..."
+       "speak": "B: Yes, go straight 3) ............ King Street ...",
+       "speakAnswer": "down"
       },
       {
        "prompt": "B: ... and take the 4) ............ into Bridge Street.",
        "answer": "first turning",
        "promptUz": "Birinchi burilish",
        "whyUz": "'take the FIRST TURNING into ... Street' =\nbirinchi burilishdan ... ko'chaga kiring.\nKing Street dan pastga yurganda Bridge Street —\nbirinchi kesishma.",
-       "speak": "B: ... and take the 4) ............ into Bridge Street."
+       "speak": "B: ... and take the 4) ............ into Bridge Street.",
+       "speakAnswer": "first turning"
       },
       {
        "prompt": "B: The newsagent's is 5) ............ .",
        "answer": "on your right",
        "promptUz": "Bridge Street bo'ylab g'arbga yurganda gazeta do'koni qaysi tomonda?",
        "whyUz": "Bridge Street ga burilib G'ARBGA yurasiz.\nGazeta do'koni Bridge Street ning SHIMOLIDA.\nG'arbga yurganda shimol O'NG tomonda qoladi → ON YOUR RIGHT.",
-       "speak": "B: The newsagent's is 5) ............ ."
+       "speak": "B: The newsagent's is 5) ............ .",
+       "speakAnswer": "on your right"
       }
      ]
     },
@@ -6888,67 +7350,78 @@
        "prompt": "fishing boats",
        "answer": "There were only donkeys and fishing boats on Inishmore fifty years ago.",
        "promptUz": "Ellik yil oldin Inishmore da faqat eshaklar va baliqchi qayiqlari bor edi.",
-       "speak": "fishing boats"
+       "speak": "fishing boats",
+       "speakAnswer": "There were only donkeys and fishing boats on Inishmore fifty years ago."
       },
       {
        "prompt": "I didn't have",
        "answer": "I didn't have a bicycle when I was five.",
        "promptUz": "Besh yoshimda velosipedim yo'q edi.",
-       "speak": "I didn't have"
+       "speak": "I didn't have",
+       "speakAnswer": "I didn't have a bicycle when I was five."
       },
       {
        "prompt": "count",
        "answer": "I could count to ten when I was three.",
        "promptUz": "Uch yoshimda o'ngacha sanay olardim.",
-       "speak": "count"
+       "speak": "count",
+       "speakAnswer": "I could count to ten when I was three."
       },
       {
        "prompt": "we could",
        "answer": "We could only get around by bus or on foot.",
        "promptUz": "Biz faqat avtobusda yoki piyoda yura olardik.",
-       "speak": "we could"
+       "speak": "we could",
+       "speakAnswer": "We could only get around by bus or on foot."
       },
       {
        "prompt": "reach",
        "answer": "You can only reach the island by boat.",
        "promptUz": "Orolga faqat qayiqda yetib borish mumkin.",
-       "speak": "reach"
+       "speak": "reach",
+       "speakAnswer": "You can only reach the island by boat."
       },
       {
        "prompt": "there weren't",
        "answer": "There weren't any shops on the island back then.",
        "promptUz": "O'sha paytda orolda hech qanday do'kon yo'q edi.",
-       "speak": "there weren't"
+       "speak": "there weren't",
+       "speakAnswer": "There weren't any shops on the island back then."
       },
       {
        "prompt": "green fields",
        "answer": "Coneely looks across the green fields in front of his house.",
        "promptUz": "Koneli uyi oldidagi yashil dalalarga qarab turadi.",
-       "speak": "green fields"
+       "speak": "green fields",
+       "speakAnswer": "Coneely looks across the green fields in front of his house."
       },
       {
        "prompt": "pet",
        "answer": "I had a small cat as a pet when I was seven.",
        "promptUz": "Yetti yoshimda kichkina mushugim bor edi.",
-       "speak": "pet"
+       "speak": "pet",
+       "speakAnswer": "I had a small cat as a pet when I was seven."
       },
       {
        "prompt": "toy",
        "answer": "My favourite toy was a red car.",
        "promptUz": "Sevimli o'yinchog'im qizil mashina edi.",
-       "speak": "toy"
+       "speak": "toy",
+       "speakAnswer": "My favourite toy was a red car."
       },
       {
        "prompt": "there was",
        "answer": "There was a hotel opposite the cinema fifty years ago.",
        "promptUz": "Ellik yil oldin kinoteatr ro'parasida mehmonxona bor edi.",
-       "speak": "there was"
+       "speak": "there was",
+       "speakAnswer": "There was a hotel opposite the cinema fifty years ago."
       },
       {
        "prompt": "back then",
        "answer": "Back then, people didn't have much money.",
        "promptUz": "O'sha paytda odamlarda ko'p pul yo'q edi.",
-       "speak": "back then"
+       "speak": "back then",
+       "speakAnswer": "Back then, people didn't have much money."
       }
      ]
     }
@@ -6977,19 +7450,22 @@
        "prompt": "Eng yaqin do'st",
        "answer": "My best friend was Aziz. He was funny and very kind.",
        "promptUz": "Eng yaqin do'st",
-       "speak": "Eng yaqin do'st"
+       "speak": "Eng yaqin do'st",
+       "speakAnswer": "My best friend was Aziz. He was funny and very kind."
       },
       {
        "prompt": "Sevimli o'qituvchi",
        "answer": "My favourite teacher was Mrs Karimova. She was patient and she was never angry.",
        "promptUz": "Sevimli o'qituvchi",
-       "speak": "Sevimli o'qituvchi"
+       "speak": "Sevimli o'qituvchi",
+       "speakAnswer": "My favourite teacher was Mrs Karimova. She was patient and she was never angry."
       },
       {
        "prompt": "Sevimli o'yinchoq",
        "answer": "My favourite toy was a red car.",
        "promptUz": "Sevimli o'yinchoq",
-       "speak": "Sevimli o'yinchoq"
+       "speak": "Sevimli o'yinchoq",
+       "speakAnswer": "My favourite toy was a red car."
       },
       {
        "prompt": "Uy hayvoni",
@@ -7001,7 +7477,8 @@
        "prompt": "Sevimli taom va ichimlik",
        "answer": "My favourite food was plov and my favourite drink was apple juice.",
        "promptUz": "Sevimli taom va ichimlik",
-       "speak": "Sevimli taom va ichimlik"
+       "speak": "Sevimli taom va ichimlik",
+       "speakAnswer": "My favourite food was plov and my favourite drink was apple juice."
       }
      ]
     }

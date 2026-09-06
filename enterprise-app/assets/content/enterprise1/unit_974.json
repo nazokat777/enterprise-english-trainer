@@ -115,7 +115,8 @@
         "Right (to'g'ri)",
         "Doesn't Say (aytilmagan)"
        ],
-       "whyUz": "⚠ NOTO'G'RI (Wrong).\n\nMatnda:\n'A traditional FERRY takes 90 MINUTES\nfrom Dover to Calais, but a CATAMARAN\n... in 35 MINUTES.'\n\n⚠ TUZOQ: 35 daqiqa raqami matnda BOR,\nlekin u KATAMARAN uchun, parom uchun emas!\n\n⚠ Bunday tuzoqqa e'tibor bering: raqam\nto'g'ri, lekin BOSHQA narsaga tegishli."
+       "whyUz": "⚠ NOTO'G'RI (Wrong).\n\nMatnda:\n'A traditional FERRY takes 90 MINUTES\nfrom Dover to Calais, but a CATAMARAN\n... in 35 MINUTES.'\n\n⚠ TUZOQ: 35 daqiqa raqami matnda BOR,\nlekin u KATAMARAN uchun, parom uchun emas!\n\n⚠ Bunday tuzoqqa e'tibor bering: raqam\nto'g'ri, lekin BOSHQA narsaga tegishli.",
+       "speakAnswer": "Wrong"
       },
       {
        "prompt": "2  A Seacat is a high-speed catamaran.",
@@ -126,7 +127,8 @@
         "Wrong (noto'g'ri)",
         "Doesn't Say (aytilmagan)"
        ],
-       "whyUz": "⚠ TO'G'RI (Right).\n\nMatnda:\n'high-speed catamarans CALLED \"Seacats\"'\n= 'Seacat' deb ataladigan tezyurar\nkatamaranlar.\n\n⚠ 'called' = deb ataladigan — nom berish\nuchun ishlatiladi."
+       "whyUz": "⚠ TO'G'RI (Right).\n\nMatnda:\n'high-speed catamarans CALLED \"Seacats\"'\n= 'Seacat' deb ataladigan tezyurar\nkatamaranlar.\n\n⚠ 'called' = deb ataladigan — nom berish\nuchun ishlatiladi.",
+       "speakAnswer": "Right"
       },
       {
        "prompt": "3  The Channel Tunnel is 50km below the seabed.",
@@ -137,7 +139,8 @@
         "Right (to'g'ri)",
         "Doesn't Say (aytilmagan)"
        ],
-       "whyUz": "⚠ NOTO'G'RI (Wrong). Javob 155-betdagi\nmatnda:\n\n'The Channel Tunnel is 50 KM LONG and\n40 METRES BELOW the seabed.'\n\n⚠ TUZOQ: 50 km — UZUNLIGI, chuqurligi\nemas! Chuqurligi — 40 METR.\n\n⚠ Ikki o'lchov ATAYLAB almashtirilgan."
+       "whyUz": "⚠ NOTO'G'RI (Wrong). Javob 155-betdagi\nmatnda:\n\n'The Channel Tunnel is 50 KM LONG and\n40 METRES BELOW the seabed.'\n\n⚠ TUZOQ: 50 km — UZUNLIGI, chuqurligi\nemas! Chuqurligi — 40 METR.\n\n⚠ Ikki o'lchov ATAYLAB almashtirilgan.",
+       "speakAnswer": "Wrong"
       },
       {
        "prompt": "4  The most popular way to cross the Channel is by Seacat.",
@@ -148,7 +151,8 @@
         "Right (to'g'ri)",
         "Wrong (noto'g'ri)"
        ],
-       "whyUz": "⚠⚠ AYTILMAGAN (Doesn't Say) — bu betdagi\nENG QIYIN band!\n\nIkkala matnda ham Seacat, parom va tunnel\nTASVIRLANGAN, lekin QAYSI BIRI ENG OMMABOP\nekani HECH QAYERDA aytilmagan.\n\n⚠ 'Wrong' deb belgilash — XATO. 'Wrong'\nfaqat matn gapga QARSHI chiqqanda\nqo'yiladi.\n\n⚠ QOIDA: matnda dalil yo'q → 'Doesn't Say'."
+       "whyUz": "⚠⚠ AYTILMAGAN (Doesn't Say) — bu betdagi\nENG QIYIN band!\n\nIkkala matnda ham Seacat, parom va tunnel\nTASVIRLANGAN, lekin QAYSI BIRI ENG OMMABOP\nekani HECH QAYERDA aytilmagan.\n\n⚠ 'Wrong' deb belgilash — XATO. 'Wrong'\nfaqat matn gapga QARSHI chiqqanda\nqo'yiladi.\n\n⚠ QOIDA: matnda dalil yo'q → 'Doesn't Say'.",
+       "speakAnswer": "Doesn't Say"
       },
       {
        "prompt": "5  The Channel Tunnel opened in 1995.",
@@ -159,7 +163,8 @@
         "Right (to'g'ri)",
         "Doesn't Say (aytilmagan)"
        ],
-       "whyUz": "⚠ NOTO'G'RI (Wrong). Javob 155-betdagi\nFAKTLAR QUTISIDA:\n\n'Since it opened in 1994, 57 million\npeople ... have travelled through the\nChannel Tunnel.'\n\n⚠ 1994-yil, 1995 emas.\n\n⚠ E'TIBOR: javob asosiy matnda emas,\nKICHIK QUTIDA yashiringan. Bunday\nqutilarni ham o'qish kerak!"
+       "whyUz": "⚠ NOTO'G'RI (Wrong). Javob 155-betdagi\nFAKTLAR QUTISIDA:\n\n'Since it opened in 1994, 57 million\npeople ... have travelled through the\nChannel Tunnel.'\n\n⚠ 1994-yil, 1995 emas.\n\n⚠ E'TIBOR: javob asosiy matnda emas,\nKICHIK QUTIDA yashiringan. Bunday\nqutilarni ham o'qish kerak!",
+       "speakAnswer": "Wrong"
       },
       {
        "prompt": "6  Ostend is in Belgium.",
@@ -170,7 +175,8 @@
         "Wrong (noto'g'ri)",
         "Doesn't Say (aytilmagan)"
        ],
-       "whyUz": "⚠ TO'G'RI (Right).\n\nMatnda:\n'... or to OSTEND and Zeebrugge in\nBELGIUM.'\n\n⚠ 155-betdagi xaritada ham Ostend\nBelgiya hududida ko'rsatilgan —\nikki manbadan tasdiqlanadi."
+       "whyUz": "⚠ TO'G'RI (Right).\n\nMatnda:\n'... or to OSTEND and Zeebrugge in\nBELGIUM.'\n\n⚠ 155-betdagi xaritada ham Ostend\nBelgiya hududida ko'rsatilgan —\nikki manbadan tasdiqlanadi.",
+       "speakAnswer": "Right"
       }
      ]
     },
@@ -187,23 +193,28 @@
      "tasks": [
       {
        "left": "short  (154-bet)",
-       "right": "long"
+       "right": "long",
+       "speakAnswer": "long"
       },
       {
        "left": "traditional  (154-bet)",
-       "right": "modern"
+       "right": "modern",
+       "speakAnswer": "modern"
       },
       {
        "left": "same  (154-bet)",
-       "right": "different"
+       "right": "different",
+       "speakAnswer": "different"
       },
       {
        "left": "quicker  (155-bet)",
-       "right": "slower"
+       "right": "slower",
+       "speakAnswer": "slower"
       },
       {
        "left": "exciting  (155-bet)",
-       "right": "boring"
+       "right": "boring",
+       "speakAnswer": "boring"
       }
      ]
     }
@@ -282,35 +293,43 @@
      "tasks": [
       {
        "left": "London",
-       "right": "England - the capital"
+       "right": "England - the capital",
+       "speakAnswer": "England - the capital"
       },
       {
        "left": "Folkestone",
-       "right": "England - the Channel Tunnel starts here"
+       "right": "England - the Channel Tunnel starts here",
+       "speakAnswer": "England - the Channel Tunnel starts here"
       },
       {
        "left": "Dover",
-       "right": "England - the busy ferry port"
+       "right": "England - the busy ferry port",
+       "speakAnswer": "England - the busy ferry port"
       },
       {
        "left": "Coquelles",
-       "right": "France - the Channel Tunnel ends here"
+       "right": "France - the Channel Tunnel ends here",
+       "speakAnswer": "France - the Channel Tunnel ends here"
       },
       {
        "left": "Calais",
-       "right": "France - ferries from Dover arrive here"
+       "right": "France - ferries from Dover arrive here",
+       "speakAnswer": "France - ferries from Dover arrive here"
       },
       {
        "left": "Dunkirk",
-       "right": "France - another ferry port"
+       "right": "France - another ferry port",
+       "speakAnswer": "France - another ferry port"
       },
       {
        "left": "Ostend",
-       "right": "Belgium - a ferry port"
+       "right": "Belgium - a ferry port",
+       "speakAnswer": "Belgium - a ferry port"
       },
       {
        "left": "Zeebrugge",
-       "right": "Belgium - the farthest ferry port on the map"
+       "right": "Belgium - the farthest ferry port on the map",
+       "speakAnswer": "Belgium - the farthest ferry port on the map"
       }
      ]
     },
@@ -379,23 +398,28 @@
      "tasks": [
       {
        "left": "A  (156-bet)",
-       "right": "a totem pole"
+       "right": "a totem pole",
+       "speakAnswer": "a totem pole"
       },
       {
        "left": "B  (156-bet)",
-       "right": "a military parade"
+       "right": "a military parade",
+       "speakAnswer": "a military parade"
       },
       {
        "left": "C  (157-bet)",
-       "right": "an art gallery and gardens"
+       "right": "an art gallery and gardens",
+       "speakAnswer": "an art gallery and gardens"
       },
       {
        "left": "D  (157-bet)",
-       "right": "a cafe"
+       "right": "a cafe",
+       "speakAnswer": "a cafe"
       },
       {
        "left": "E  (157-bet)",
-       "right": "a Chinese pagoda"
+       "right": "a Chinese pagoda",
+       "speakAnswer": "a Chinese pagoda"
       }
      ]
     },
@@ -420,7 +444,8 @@
         "Montreal",
         "Toronto"
        ],
-       "whyUz": "⚠ VANCOUVER.\n\nXaritada eng chapda (g'arbda), Tinch\nokeani sohilida, British Columbia\no'lkasida.\n\n⚠ 157-betdagi matnda ham: 'great views of\nthe PACIFIC OCEAN, to the west'."
+       "whyUz": "⚠ VANCOUVER.\n\nXaritada eng chapda (g'arbda), Tinch\nokeani sohilida, British Columbia\no'lkasida.\n\n⚠ 157-betdagi matnda ham: 'great views of\nthe PACIFIC OCEAN, to the west'.",
+       "speakAnswer": "Vancouver"
       },
       {
        "prompt": "3  Which two are in the south-east of Canada?  (birinchisi)",
@@ -432,7 +457,8 @@
         "Victoria",
         "Winnipeg"
        ],
-       "whyUz": "⚠ OTTAWA — Ontario o'lkasida, xaritaning\no'ng pastida.\n\n⚠ OTTAWA — KANADANING POYTAXTI.\nBu 4a mashqining 1-gapiga ham kerak\nbo'ladi."
+       "whyUz": "⚠ OTTAWA — Ontario o'lkasida, xaritaning\no'ng pastida.\n\n⚠ OTTAWA — KANADANING POYTAXTI.\nBu 4a mashqining 1-gapiga ham kerak\nbo'ladi.",
+       "speakAnswer": "Ottawa"
       },
       {
        "prompt": "3  Which two are in the south-east of Canada?  (ikkinchisi)",
@@ -444,7 +470,8 @@
         "Victoria",
         "Baker Lake"
        ],
-       "whyUz": "⚠ MONTREAL — Quebec o'lkasida, Ottavadan\no'ngroqda.\n\n⚠ Monrealda aholining uchdan ikki qismi\nFRANSUZ tilida gapiradi."
+       "whyUz": "⚠ MONTREAL — Quebec o'lkasida, Ottavadan\no'ngroqda.\n\n⚠ Monrealda aholining uchdan ikki qismi\nFRANSUZ tilida gapiradi.",
+       "speakAnswer": "Montreal"
       },
       {
        "prompt": "Which city is the capital of Canada?",
@@ -456,7 +483,8 @@
         "Vancouver",
         "Montreal"
        ],
-       "whyUz": "⚠ OTTAWA.\n\n157-betdagi matnda: 'OTTAWA, THE CAPITAL\nCITY OF CANADA, is a wonderful mixture of\nold and new buildings.'\n\n⚠⚠ ENG KO'P XATO: ko'pchilik Toronto yoki\nVankuverni poytaxt deb o'ylaydi. Toronto —\neng katta shahar, lekin poytaxt EMAS."
+       "whyUz": "⚠ OTTAWA.\n\n157-betdagi matnda: 'OTTAWA, THE CAPITAL\nCITY OF CANADA, is a wonderful mixture of\nold and new buildings.'\n\n⚠⚠ ENG KO'P XATO: ko'pchilik Toronto yoki\nVankuverni poytaxt deb o'ylaydi. Toronto —\neng katta shahar, lekin poytaxt EMAS.",
+       "speakAnswer": "Ottawa"
       }
      ]
     },
@@ -536,23 +564,28 @@
      "tasks": [
       {
        "left": "clean  (Vancouver matni)",
-       "right": "dirty"
+       "right": "dirty",
+       "speakAnswer": "dirty"
       },
       {
        "left": "huge  (Vancouver matni)",
-       "right": "small"
+       "right": "small",
+       "speakAnswer": "small"
       },
       {
        "left": "beautiful  (Ottawa matni)",
-       "right": "ugly"
+       "right": "ugly",
+       "speakAnswer": "ugly"
       },
       {
        "left": "old  (Montreal matni)",
-       "right": "new"
+       "right": "new",
+       "speakAnswer": "new"
       },
       {
        "left": "colourful  (Montreal matni)",
-       "right": "plain"
+       "right": "plain",
+       "speakAnswer": "plain"
       }
      ]
     }
@@ -767,27 +800,33 @@
      "tasks": [
       {
        "left": "A  (159-bet)",
-       "right": "a sandwich"
+       "right": "a sandwich",
+       "speakAnswer": "a sandwich"
       },
       {
        "left": "B  (159-bet)",
-       "right": "toast"
+       "right": "toast",
+       "speakAnswer": "toast"
       },
       {
        "left": "C  (159-bet)",
-       "right": "kippers"
+       "right": "kippers",
+       "speakAnswer": "kippers"
       },
       {
        "left": "D  (159-bet)",
-       "right": "cake"
+       "right": "cake",
+       "speakAnswer": "cake"
       },
       {
        "left": "E  (159-bet)",
-       "right": "a pot of tea"
+       "right": "a pot of tea",
+       "speakAnswer": "a pot of tea"
       },
       {
        "left": "F  (159-bet)",
-       "right": "biscuits"
+       "right": "biscuits",
+       "speakAnswer": "biscuits"
       }
      ]
     },
@@ -864,7 +903,8 @@
         "Around 65 million cups.",
         "Around 11 million cups."
        ],
-       "whyUz": "Matnning birinchi gapida:\n'they drink around 165 MILLION cups every\nday'.\n\n⚠ 'around' = taxminan (= 'about').\n\n⚠ '165 million cupS' — 'million' raqam\nbilan kelsa KO'PLIK OLMAYDI ('millions' ✗),\nlekin 'cups' ko'plikda."
+       "whyUz": "Matnning birinchi gapida:\n'they drink around 165 MILLION cups every\nday'.\n\n⚠ 'around' = taxminan (= 'about').\n\n⚠ '165 million cupS' — 'million' raqam\nbilan kelsa KO'PLIK OLMAYDI ('millions' ✗),\nlekin 'cups' ko'plikda.",
+       "speakAnswer": "Around 165 million cups."
       },
       {
        "prompt": "2  What do people have for high tea?",
@@ -876,7 +916,8 @@
         "Only cream cakes and fruit cake.",
         "A cup of tea and a biscuit."
        ],
-       "whyUz": "Matnda: 'high tea ... usually INCLUDES A\nHOT DISH. It is similar to a cooked\nbreakfast, and foods such as KIPPERS or\nEGGS WITH TOAST as well as COLD MEATS are\nserved.'\n\n⚠ TUZOQ: 'sandwiches, biscuits, cream cakes'\n— bu AFTERNOON TEA uchun, 'high tea' uchun\nemas!\n\n⚠ 'as well as' = shuningdek, ... bilan birga."
+       "whyUz": "Matnda: 'high tea ... usually INCLUDES A\nHOT DISH. It is similar to a cooked\nbreakfast, and foods such as KIPPERS or\nEGGS WITH TOAST as well as COLD MEATS are\nserved.'\n\n⚠ TUZOQ: 'sandwiches, biscuits, cream cakes'\n— bu AFTERNOON TEA uchun, 'high tea' uchun\nemas!\n\n⚠ 'as well as' = shuningdek, ... bilan birga.",
+       "speakAnswer": "A hot dish, such as kippers or eggs with toast, as well as cold meats."
       },
       {
        "prompt": "3  What time is 'elevenses'?",
@@ -888,7 +929,8 @@
         "At about 6am.",
         "In the evening."
        ],
-       "whyUz": "Matnda: 'they took a break in the morning\nat AROUND 11AM ... Today many people call\nthis \"elevenses\".'\n\n⚠ So'zning o'zi javobni aytib turibdi:\n'ELEVEN' (11) + '-es'.\n\n⚠ TUZOQ: '6am' ham matnda bor, lekin u —\nishchilar KUNNI BOSHLAGAN vaqt."
+       "whyUz": "Matnda: 'they took a break in the morning\nat AROUND 11AM ... Today many people call\nthis \"elevenses\".'\n\n⚠ So'zning o'zi javobni aytib turibdi:\n'ELEVEN' (11) + '-es'.\n\n⚠ TUZOQ: '6am' ham matnda bor, lekin u —\nishchilar KUNNI BOSHLAGAN vaqt.",
+       "speakAnswer": "Around 11am."
       },
       {
        "prompt": "4  Where is Earl Grey tea from?",
@@ -900,7 +942,8 @@
         "From Britain.",
         "From Darjeeling."
        ],
-       "whyUz": "Matnda: 'Darjeeling from INDIA and Earl\nGrey from CHINA are mild.'\n\n⚠ TUZOQ: bir gapda ikki choy va ikki\nmamlakat bor — qaysi biri qaysiga tegishli\nekaniga DIQQAT qiling.\n  Darjeeling → Hindiston\n  Earl Grey  → Xitoy\n\n⚠ HALOL IZOH: Earl Grey aslida hudud emas,\nARALASHMA nomi (bergamot moyi qo'shilgan\nqora choy)."
+       "whyUz": "Matnda: 'Darjeeling from INDIA and Earl\nGrey from CHINA are mild.'\n\n⚠ TUZOQ: bir gapda ikki choy va ikki\nmamlakat bor — qaysi biri qaysiga tegishli\nekaniga DIQQAT qiling.\n  Darjeeling → Hindiston\n  Earl Grey  → Xitoy\n\n⚠ HALOL IZOH: Earl Grey aslida hudud emas,\nARALASHMA nomi (bergamot moyi qo'shilgan\nqora choy).",
+       "speakAnswer": "From China."
       },
       {
        "prompt": "5  When do people drink fruit tea?",
@@ -912,7 +955,8 @@
         "Only with afternoon tea.",
         "At around 11am."
        ],
-       "whyUz": "Matnning oxirgi gapida:\n'Herbal and fruit teas are popular and are\ndrunk AT ANY TIME OF THE DAY.'\n\n⚠ 'at any time' = istalgan paytda.\n\n⚠ Boshqa choylar aniq vaqtga bog'langan:\n  English breakfast — ertalab\n  Darjeeling, Earl Grey — tushdan keyin"
+       "whyUz": "Matnning oxirgi gapida:\n'Herbal and fruit teas are popular and are\ndrunk AT ANY TIME OF THE DAY.'\n\n⚠ 'at any time' = istalgan paytda.\n\n⚠ Boshqa choylar aniq vaqtga bog'langan:\n  English breakfast — ertalab\n  Darjeeling, Earl Grey — tushdan keyin",
+       "speakAnswer": "At any time of the day."
       }
      ]
     },
@@ -929,27 +973,33 @@
      "tasks": [
       {
        "left": "1-qadam",
-       "right": "F  put the kettle on to boil"
+       "right": "F  put the kettle on to boil",
+       "speakAnswer": "F  put the kettle on to boil"
       },
       {
        "left": "2-qadam",
-       "right": "B  warm the teapot (using hot water)"
+       "right": "B  warm the teapot (using hot water)",
+       "speakAnswer": "B  warm the teapot"
       },
       {
        "left": "3-qadam",
-       "right": "D  put one teabag per person into the teapot, plus an extra one 'for the pot' and add boiling water"
+       "right": "D  put one teabag per person into the teapot, plus an extra one 'for the pot' and add boiling water",
+       "speakAnswer": "D  put one teabag per person into the teapot, plus an extra one 'for the pot' and add boiling water"
       },
       {
        "left": "4-qadam",
-       "right": "A  let it brew for about 5 minutes"
+       "right": "A  let it brew for about 5 minutes",
+       "speakAnswer": "A  let it brew for about 5 minutes"
       },
       {
        "left": "5-qadam",
-       "right": "E  pour into cups and add milk and sugar"
+       "right": "E  pour into cups and add milk and sugar",
+       "speakAnswer": "E  pour into cups and add milk and sugar"
       },
       {
        "left": "6-qadam",
-       "right": "C  drink and enjoy!"
+       "right": "C  drink and enjoy!",
+       "speakAnswer": "C  drink and enjoy!"
       }
      ]
     },
@@ -1127,27 +1177,33 @@
      "tasks": [
       {
        "left": "A  (160-bet)",
-       "right": "a dragon carving"
+       "right": "a dragon carving",
+       "speakAnswer": "a dragon carving"
       },
       {
        "left": "B  (160-bet)",
-       "right": "a Chinese dish"
+       "right": "a Chinese dish",
+       "speakAnswer": "a Chinese dish"
       },
       {
        "left": "C  (161-bet)",
-       "right": "Chinese lanterns"
+       "right": "Chinese lanterns",
+       "speakAnswer": "Chinese lanterns"
       },
       {
        "left": "D  (161-bet)",
-       "right": "a Chinese Gate"
+       "right": "a Chinese Gate",
+       "speakAnswer": "a Chinese Gate"
       },
       {
        "left": "E  (161-bet)",
-       "right": "a Chinese lion dance"
+       "right": "a Chinese lion dance",
+       "speakAnswer": "a Chinese lion dance"
       },
       {
        "left": "F  (161-bet)",
-       "right": "firecrackers"
+       "right": "firecrackers",
+       "speakAnswer": "firecrackers"
       }
      ]
     },
@@ -1232,7 +1288,8 @@
         "NY (New York)",
         "L (London)"
        ],
-       "whyUz": "⚠ NYU-YORK (NY).\n\nMatnda: 'Any visitor to MANHATTAN'S EAST\nSIDE will feel as if they are in another\nworld.'\n\n⚠ 'Manhattan' — Nyu-Yorkning markaziy\noroli. London matnida bunday joy nomi yo'q\n(u yerda 'Gerrard Street')."
+       "whyUz": "⚠ NYU-YORK (NY).\n\nMatnda: 'Any visitor to MANHATTAN'S EAST\nSIDE will feel as if they are in another\nworld.'\n\n⚠ 'Manhattan' — Nyu-Yorkning markaziy\noroli. London matnida bunday joy nomi yo'q\n(u yerda 'Gerrard Street').",
+       "speakAnswer": "NY"
       },
       {
        "prompt": "2  Shopkeepers give the lion dancers money.",
@@ -1242,7 +1299,8 @@
         "NY (New York)",
         "L (London)"
        ],
-       "whyUz": "⚠ NYU-YORK (NY).\n\nMatnda: 'Chinese SHOPKEEPERS must PAY THE\nLION DANCERS so that their shop has a good\nyear.'\n\n⚠⚠ TUZOQ: sher raqsi IKKALA matnda ham bor!\nLekin DO'KONDORLAR PUL BERISHI faqat\nNyu-York matnida aytilgan.\n\n⚠ London matnida esa BOLALARGA pul beriladi\n— bu boshqa an'ana."
+       "whyUz": "⚠ NYU-YORK (NY).\n\nMatnda: 'Chinese SHOPKEEPERS must PAY THE\nLION DANCERS so that their shop has a good\nyear.'\n\n⚠⚠ TUZOQ: sher raqsi IKKALA matnda ham bor!\nLekin DO'KONDORLAR PUL BERISHI faqat\nNyu-York matnida aytilgan.\n\n⚠ London matnida esa BOLALARGA pul beriladi\n— bu boshqa an'ana.",
+       "speakAnswer": "NY"
       },
       {
        "prompt": "3  No cars are allowed.",
@@ -1272,7 +1330,8 @@
         "NY (New York)",
         "L (London)"
        ],
-       "whyUz": "⚠ NYU-YORK (NY).\n\nMatnning boshida: 'more Chinese people\nliving in the United States than in any\nother country OUTSIDE OF ASIA' va\n'AMERICA'S LARGEST Chinese community is\nbased in New York City's very own\nChinatown'.\n\n⚠ 'a community' = jamoa.\n⚠ 'largest' — 2d mashqidagi so'z\n(sinonimi 'biggest')."
+       "whyUz": "⚠ NYU-YORK (NY).\n\nMatnning boshida: 'more Chinese people\nliving in the United States than in any\nother country OUTSIDE OF ASIA' va\n'AMERICA'S LARGEST Chinese community is\nbased in New York City's very own\nChinatown'.\n\n⚠ 'a community' = jamoa.\n⚠ 'largest' — 2d mashqidagi so'z\n(sinonimi 'biggest').",
+       "speakAnswer": "NY"
       }
      ]
     },
@@ -1289,27 +1348,33 @@
      "tasks": [
       {
        "left": "largest  (160-bet)",
-       "right": "biggest"
+       "right": "biggest",
+       "speakAnswer": "biggest"
       },
       {
        "left": "huge  (160-bet)",
-       "right": "enormous"
+       "right": "enormous",
+       "speakAnswer": "enormous"
       },
       {
        "left": "delicious  (160-bet)",
-       "right": "tasty"
+       "right": "tasty",
+       "speakAnswer": "tasty"
       },
       {
        "left": "amazing  (160-bet)",
-       "right": "wonderful"
+       "right": "wonderful",
+       "speakAnswer": "wonderful"
       },
       {
        "left": "cheap  (161-bet)",
-       "right": "inexpensive"
+       "right": "inexpensive",
+       "speakAnswer": "inexpensive"
       },
       {
        "left": "feature  (161-bet)",
-       "right": "part"
+       "right": "part",
+       "speakAnswer": "part"
       }
      ]
     },
@@ -1445,27 +1510,33 @@
      "tasks": [
       {
        "left": "A — o'yilgan ajdaho (160-bet)",
-       "right": "shops decorated with oriental carvings and images"
+       "right": "shops decorated with oriental carvings and images",
+       "speakAnswer": "shops decorated with oriental carvings and images"
       },
       {
        "left": "B — xitoy taomi (160-bet)",
-       "right": "hundreds of Chinese restaurants where you can try delicious oriental dishes"
+       "right": "hundreds of Chinese restaurants where you can try delicious oriental dishes",
+       "speakAnswer": "hundreds of Chinese restaurants where you can try delicious oriental dishes"
       },
       {
        "left": "C — fonuslar (161-bet)",
-       "right": "London's Chinatown is decorated with lanterns and flags"
+       "right": "London's Chinatown is decorated with lanterns and flags",
+       "speakAnswer": "London's Chinatown is decorated with lanterns and flags"
       },
       {
        "left": "D — Xitoy darvozasi (161-bet)",
-       "right": "The Chinese Gate is green and red and people see it as a symbol of the success of the area"
+       "right": "The Chinese Gate is green and red and people see it as a symbol of the success of the area",
+       "speakAnswer": "The Chinese Gate is green and red and people see it as a symbol of the success of the area"
       },
       {
        "left": "E — sherlar raqsi (161-bet)",
-       "right": "the lion dance is the main feature of the celebration"
+       "right": "the lion dance is the main feature of the celebration",
+       "speakAnswer": "the lion dance is the main feature of the celebration"
       },
       {
        "left": "F — petardalar (161-bet)",
-       "right": "the sound of noisy firecrackers fills the air"
+       "right": "the sound of noisy firecrackers fills the air",
+       "speakAnswer": "the sound of noisy firecrackers fills the air"
       }
      ]
     },
@@ -1554,23 +1625,28 @@
      "tasks": [
       {
        "left": "A  (162-bet)",
-       "right": "The Lord Mayor in a gold coach"
+       "right": "The Lord Mayor in a gold coach",
+       "speakAnswer": "The Lord Mayor in a gold coach"
       },
       {
        "left": "B  (162-bet)",
-       "right": "a yachting event"
+       "right": "a yachting event",
+       "speakAnswer": "a yachting event"
       },
       {
        "left": "C  (163-bet)",
-       "right": "a May Queen"
+       "right": "a May Queen",
+       "speakAnswer": "a May Queen"
       },
       {
        "left": "D  (163-bet)",
-       "right": "a maypole dance"
+       "right": "a maypole dance",
+       "speakAnswer": "a maypole dance"
       },
       {
        "left": "E  (163-bet)",
-       "right": "a firework display"
+       "right": "a firework display",
+       "speakAnswer": "a firework display"
       }
      ]
     },
@@ -1696,7 +1772,8 @@
         "faqat C (Cowes Week)",
         "faqat M (May Festivals)"
        ],
-       "whyUz": "⚠⚠ IKKALASI HAM — BU BETDAGI ENG MUHIM\nKUZATUV.\n\nLORD MAYOR'S SHOW (162-bet):\n'At the end of the parade there is a\nspectacular FIREWORK DISPLAY.'\n\nCOWES WEEK (163-bet):\n'On the last day there is a huge FIREWORK\nDISPLAY.'\n\n⚠ Kitob bitta harf kutgan bo'lsa kerak,\nlekin MATNLAR IKKALASINI HAM tasdiqlaydi.\n\n⚠ Shuning uchun 'L va C' deb yozish to'g'ri.\nFaqat bittasini yozish matnga to'liq mos\nkelmaydi."
+       "whyUz": "⚠⚠ IKKALASI HAM — BU BETDAGI ENG MUHIM\nKUZATUV.\n\nLORD MAYOR'S SHOW (162-bet):\n'At the end of the parade there is a\nspectacular FIREWORK DISPLAY.'\n\nCOWES WEEK (163-bet):\n'On the last day there is a huge FIREWORK\nDISPLAY.'\n\n⚠ Kitob bitta harf kutgan bo'lsa kerak,\nlekin MATNLAR IKKALASINI HAM tasdiqlaydi.\n\n⚠ Shuning uchun 'L va C' deb yozish to'g'ri.\nFaqat bittasini yozish matnga to'liq mos\nkelmaydi.",
+       "speakAnswer": "L va C"
       },
       {
        "prompt": "6  There are horses in the procession.",
@@ -1724,27 +1801,33 @@
      "tasks": [
       {
        "left": "spectacular  (162-bet)",
-       "right": "fantastic"
+       "right": "fantastic",
+       "speakAnswer": "fantastic"
       },
       {
        "left": "display  (162-bet)",
-       "right": "show"
+       "right": "show",
+       "speakAnswer": "show"
       },
       {
        "left": "traditions  (163-bet)",
-       "right": "customs"
+       "right": "customs",
+       "speakAnswer": "customs"
       },
       {
        "left": "pretty  (163-bet)",
-       "right": "beautiful"
+       "right": "beautiful",
+       "speakAnswer": "beautiful"
       },
       {
        "left": "perfect  (163-bet)",
-       "right": "ideal"
+       "right": "ideal",
+       "speakAnswer": "ideal"
       },
       {
        "left": "friendly  (163-bet)",
-       "right": "welcoming"
+       "right": "welcoming",
+       "speakAnswer": "welcoming"
       }
      ]
     },
@@ -1907,51 +1990,63 @@
      "tasks": [
       {
        "left": "January",
-       "right": "Burns Night"
+       "right": "Burns Night",
+       "speakAnswer": "Burns Night"
       },
       {
        "left": "February",
-       "right": "Pancake Day"
+       "right": "Pancake Day",
+       "speakAnswer": "Pancake Day"
       },
       {
        "left": "March",
-       "right": "Mother's Day"
+       "right": "Mother's Day",
+       "speakAnswer": "Mother's Day"
       },
       {
        "left": "April",
-       "right": "April Fool's Day"
+       "right": "April Fool's Day",
+       "speakAnswer": "April Fool's Day"
       },
       {
        "left": "May",
-       "right": "Brighton Arts Festival"
+       "right": "Brighton Arts Festival",
+       "speakAnswer": "Brighton Arts Festival"
       },
       {
        "left": "June",
-       "right": "Royal Ascot Races"
+       "right": "Royal Ascot Races",
+       "speakAnswer": "Royal Ascot Races"
       },
       {
        "left": "July",
-       "right": "Henley Royal Regatta"
+       "right": "Henley Royal Regatta",
+       "speakAnswer": "Henley Royal Regatta"
       },
       {
        "left": "August",
-       "right": "Notting Hill Carnival"
+       "right": "Notting Hill Carnival",
+       "speakAnswer": "Notting Hill Carnival"
       },
       {
        "left": "September",
-       "right": "Braemer Royal Highland Gathering  (⚠ kitobda xato: BRAEMAR bo'lishi kerak)"
+       "right": "Braemer Royal Highland Gathering  (⚠ kitobda xato: BRAEMAR bo'lishi kerak)",
+       "speakAnswer": "Braemer Royal Highland Gathering"
       },
       {
        "left": "October",
-       "right": "Halloween"
+       "right": "Halloween",
+       "speakAnswer": "Halloween"
       },
       {
        "left": "November",
-       "right": "Bonfire Night"
+       "right": "Bonfire Night",
+       "speakAnswer": "Bonfire Night"
       },
       {
        "left": "December",
-       "right": "New Year's Eve"
+       "right": "New Year's Eve",
+       "speakAnswer": "New Year's Eve"
       }
      ]
     },

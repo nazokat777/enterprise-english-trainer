@@ -65,27 +65,33 @@
      "tasks": [
       {
        "left": "quiet — noisy",
-       "right": "place"
+       "right": "place",
+       "speakAnswer": "place"
       },
       {
        "left": "clean — dirty/polluted",
-       "right": "streets"
+       "right": "streets",
+       "speakAnswer": "streets"
       },
       {
        "left": "tall — small",
-       "right": "buildings / houses"
+       "right": "buildings / houses",
+       "speakAnswer": "buildings / houses"
       },
       {
        "left": "cheap — expensive",
-       "right": "shops / hotels / restaurants"
+       "right": "shops / hotels / restaurants",
+       "speakAnswer": "shops / hotels / restaurants"
       },
       {
        "left": "modern — old",
-       "right": "city / town"
+       "right": "city / town",
+       "speakAnswer": "city / town"
       },
       {
        "left": "exciting — boring",
-       "right": "nightlife"
+       "right": "nightlife",
+       "speakAnswer": "nightlife"
       }
      ]
     },
@@ -141,55 +147,64 @@
        "prompt": "noisier",
        "answer": "LA is noisier than Stratford.",
        "promptUz": "LA Stratforddan shovqinliroq. (KITOBDAGI NAMUNA — 'noisy' -y → -IER)",
-       "speak": "noisier"
+       "speak": "noisier",
+       "speakAnswer": "LA is noisier than Stratford."
       },
       {
        "prompt": "more expensive",
        "answer": "LA is more expensive than Stratford.",
        "promptUz": "LA Stratforddan qimmatroq. (KITOBDAGI NAMUNA — uzun sifat, MORE)",
-       "speak": "more expensive"
+       "speak": "more expensive",
+       "speakAnswer": "LA is more expensive than Stratford."
       },
       {
        "prompt": "cleaner",
        "answer": "Stratford is cleaner than LA.",
        "promptUz": "Stratford LA dan tozaroq. (qisqa sifat, -ER)",
-       "speak": "cleaner"
+       "speak": "cleaner",
+       "speakAnswer": "Stratford is cleaner than LA."
       },
       {
        "prompt": "quieter",
        "answer": "Stratford is quieter than LA.",
        "promptUz": "Stratford LA dan tinchroq. (qisqa sifat, -ER)",
-       "speak": "quieter"
+       "speak": "quieter",
+       "speakAnswer": "Stratford is quieter than LA."
       },
       {
        "prompt": "more modern",
        "answer": "LA is more modern than Stratford.",
        "promptUz": "LA Stratforddan zamonaviyroq. (2 bo'g'in, MORE)",
-       "speak": "more modern"
+       "speak": "more modern",
+       "speakAnswer": "LA is more modern than Stratford."
       },
       {
        "prompt": "more polluted",
        "answer": "LA is more polluted than Stratford.",
        "promptUz": "LA Stratforddan ifloslanganroq. (uzun sifat, MORE)",
-       "speak": "more polluted"
+       "speak": "more polluted",
+       "speakAnswer": "LA is more polluted than Stratford."
       },
       {
        "prompt": "cheaper",
        "answer": "Stratford is cheaper than LA.",
        "promptUz": "Stratford LA dan arzonroq. (qisqa sifat, -ER)",
-       "speak": "cheaper"
+       "speak": "cheaper",
+       "speakAnswer": "Stratford is cheaper than LA."
       },
       {
        "prompt": "older",
        "answer": "Stratford is older than LA.",
        "promptUz": "Stratford LA dan eskiroq. (qisqa sifat, -ER)",
-       "speak": "older"
+       "speak": "older",
+       "speakAnswer": "Stratford is older than LA."
       },
       {
        "prompt": "more crowded",
        "answer": "LA is more crowded than Stratford.",
        "promptUz": "LA Stratforddan gavjumroq. (uzun sifat, MORE)",
-       "speak": "more crowded"
+       "speak": "more crowded",
+       "speakAnswer": "LA is more crowded than Stratford."
       }
      ]
     },
@@ -209,42 +224,48 @@
        "answer": "expensive",
        "promptUz": "'more' bor — uzun sifat; narx haqida",
        "whyUz": "ANIQ.\n'more' bor → UZUN sifat kerak.\n'e' + narx + mehmonxona → EXPENSIVE.\n2-mashqda ham 'more expensive' berilgan.\nDIQQAT: 'those' = 'the hotels' o'rniga —\ntakrordan qutqaradi.",
-       "speak": "1  The hotels in LA are more e............ than those in many other American cities."
+       "speak": "1  The hotels in LA are more e............ than those in many other American cities.",
+       "speakAnswer": "expensive"
       },
       {
        "prompt": "2  There are many i............ places you can visit.",
        "answer": "interesting",
        "promptUz": "Borib ko'rish mumkin bo'lgan joylar qanday?",
        "whyUz": "ANIQ.\n'interesting places' — turg'un birikma.\n'many' dan keyin KO'PLIK ot ('places').\n'you can visit' — 'places' ni aniqlaydi\n('which' tushirib qoldirilgan).",
-       "speak": "2  There are many i............ places you can visit."
+       "speak": "2  There are many i............ places you can visit.",
+       "speakAnswer": "interesting"
       },
       {
        "prompt": "3  There are f............ restaurants you can eat at.",
        "answer": "famous",
        "promptUz": "Mashhur restoranlar",
        "whyUz": "ANIQ — 83-betdagi maqoladan TASDIQLANGAN.\nMaqolaning 'EATING OUT' bo'limi so'zma-so'z shunday\nboshlanadi: 'There are FAMOUS restaurants you can\neat at, like the Buffalo Club ...'\n'famous' = mashhur.\nDIQQAT: 'eat AT' — predlog gap oxirida\n(restoranDA ovqatlanmoq).",
-       "speak": "3  There are f............ restaurants you can eat at."
+       "speak": "3  There are f............ restaurants you can eat at.",
+       "speakAnswer": "famous"
       },
       {
        "prompt": "4  You can buy c............, fashionable clothes on Melrose Avenue.",
        "answer": "cheap",
        "promptUz": "'fashionable' bilan birga; narx haqida",
        "whyUz": "ANIQ.\n'c' + narx → CHEAP (1-mashq ro'yxatidan).\nMa'no ham mos: 'arzon, lekin moda kiyimlar'.\n'Melrose Avenue' — LA dagi mashhur savdo ko'chasi.\n'ON ... Avenue' — ko'cha bilan predlog ON.",
-       "speak": "4  You can buy c............, fashionable clothes on Melrose Avenue."
+       "speak": "4  You can buy c............, fashionable clothes on Melrose Avenue.",
+       "speakAnswer": "cheap"
       },
       {
        "prompt": "5  The nightlife is e............ .",
        "answer": "exciting",
        "promptUz": "1-mashqda 'nightlife' qaysi juftlik bilan edi?",
        "whyUz": "ANIQ.\n1-mashqda 'nightlife' juftligi aynan\n'exciting - boring' edi.\n'e' → EXCITING.\nLA — shovqinli, gavjum shahar → tungi hayoti\nZERIKARLI emas, QIZIQARLI.",
-       "speak": "5  The nightlife is e............ ."
+       "speak": "5  The nightlife is e............ .",
+       "speakAnswer": "exciting"
       },
       {
        "prompt": "6  LA is a modern, n............ and crowded city.",
        "answer": "noisy",
        "promptUz": "Kitob 1-mashqda LA ni qanday atagan?",
        "whyUz": "ANIQ.\nKitobning 1-mashqdagi birinchi qatori:\n'Los Angeles, a NOISY city in the USA'.\n'n' → NOISY.\nDIQQAT: uch sifat ketma-ket —\n'modern, noisy AND crowded'.",
-       "speak": "6  LA is a modern, n............ and crowded city."
+       "speak": "6  LA is a modern, n............ and crowded city.",
+       "speakAnswer": "noisy"
       }
      ]
     }
@@ -279,7 +300,8 @@
         "24-hour"
        ],
        "whyUz": "Ob-havo haqidagi yagona sifat — SUNNY.\nMaqola: 'sunny weather'.\n'sunny' = quyoshli (sun + -ny).",
-       "speak": "1  ............ weather"
+       "speak": "1  ............ weather",
+       "speakAnswer": "sunny"
       },
       {
        "prompt": "2  ............ traffic",
@@ -291,7 +313,8 @@
         "sunny"
        ],
        "whyUz": "'HEAVY traffic' — turg'un birikma.\nMaqola: 'tall buildings and heavy traffic'.\nDIQQAT: bu yerda 'heavy' = ZICH, og'ir emas.",
-       "speak": "2  ............ traffic"
+       "speak": "2  ............ traffic",
+       "speakAnswer": "heavy"
       },
       {
        "prompt": "3  ............ shops",
@@ -303,7 +326,8 @@
         "24-hour"
        ],
        "whyUz": "Maqola: 'go to the EXPENSIVE shops on Rodeo Drive'.\n'expensive' = qimmat.",
-       "speak": "3  ............ shops"
+       "speak": "3  ............ shops",
+       "speakAnswer": "expensive"
       },
       {
        "prompt": "4  ............ stars",
@@ -315,7 +339,8 @@
         "sunny"
        ],
        "whyUz": "'FILM stars' = kino yulduzlari.\nMaqola: 'It's also home to film stars'.\nDIQQAT: 'film' bu yerda OT, lekin SIFAT\nvazifasini bajaradi.",
-       "speak": "4  ............ stars"
+       "speak": "4  ............ stars",
+       "speakAnswer": "film"
       },
       {
        "prompt": "5  to ............ films",
@@ -327,7 +352,8 @@
         "24-hour"
        ],
        "whyUz": "Bo'shliqdan oldin 'TO' turibdi →\nFE'L kerak. Ro'yxatdagi yagona fe'l — MAKE.\nMaqola: 'Universal Studios to see how they MAKE\nFILMS'.\nDIQQAT: ingliz tilida 'MAKE a film' deyiladi\n('do a film' EMAS).",
-       "speak": "5  to ............ films"
+       "speak": "5  to ............ films",
+       "speakAnswer": "make"
       },
       {
        "prompt": "6  ............ clothes",
@@ -339,7 +365,8 @@
         "24-hour"
        ],
        "whyUz": "Maqola: 'Do you want DESIGNER CLOTHES?'\n'designer clothes' = mashhur dizayner yaratgan,\nqimmat kiyimlar.\n83-betdagi C rasmi.",
-       "speak": "6  ............ clothes"
+       "speak": "6  ............ clothes",
+       "speakAnswer": "designer"
       },
       {
        "prompt": "7  ............ cafes",
@@ -351,7 +378,8 @@
         "sunny"
        ],
        "whyUz": "Maqola: '24-HOUR CAFES like Van Go's Ear'.\n= 24 soat, tunu kun ishlaydigan kafelar.\nDIQQAT: sifat sifatida 'hour' KO'PLIK BO'LMAYDI.",
-       "speak": "7  ............ cafes"
+       "speak": "7  ............ cafes",
+       "speakAnswer": "24-hour"
       },
       {
        "prompt": "8  ............ restaurants",
@@ -363,7 +391,8 @@
         "24-hour"
        ],
        "whyUz": "Maqola: 'There are FAMOUS restaurants you can\neat at'.\n82-betdagi 3-mashqning 3-bandi ham shu edi.\n'famous' = mashhur.",
-       "speak": "8  ............ restaurants"
+       "speak": "8  ............ restaurants",
+       "speakAnswer": "famous"
       }
      ]
     },
@@ -382,49 +411,57 @@
        "prompt": "sunny weather",
        "answer": "LA has sunny weather all year round.",
        "promptUz": "LA da yil bo'yi quyoshli ob-havo bo'ladi.",
-       "speak": "sunny weather"
+       "speak": "sunny weather",
+       "speakAnswer": "LA has sunny weather all year round."
       },
       {
        "prompt": "heavy traffic",
        "answer": "There is heavy traffic on the roads in LA.",
        "promptUz": "LA yo'llarida zich transport oqimi bor.",
-       "speak": "heavy traffic"
+       "speak": "heavy traffic",
+       "speakAnswer": "There is heavy traffic on the roads in LA."
       },
       {
        "prompt": "expensive shops",
        "answer": "There are expensive shops on Rodeo Drive.",
        "promptUz": "Rodeo-Drayvda qimmat do'konlar bor.",
-       "speak": "expensive shops"
+       "speak": "expensive shops",
+       "speakAnswer": "There are expensive shops on Rodeo Drive."
       },
       {
        "prompt": "film stars",
        "answer": "Many film stars live in Hollywood.",
        "promptUz": "Ko'plab kino yulduzlari Gollivudda yashaydi.",
-       "speak": "film stars"
+       "speak": "film stars",
+       "speakAnswer": "Many film stars live in Hollywood."
       },
       {
        "prompt": "to make films",
        "answer": "You can see how they make films at Universal Studios.",
        "promptUz": "'Universal Studios' da filmlarni qanday suratga olishlarini ko'rishingiz mumkin.",
-       "speak": "to make films"
+       "speak": "to make films",
+       "speakAnswer": "You can see how they make films at Universal Studios."
       },
       {
        "prompt": "designer clothes",
        "answer": "You can buy designer clothes on Rodeo Drive.",
        "promptUz": "Rodeo-Drayvda dizayner kiyimlar sotib olishingiz mumkin.",
-       "speak": "designer clothes"
+       "speak": "designer clothes",
+       "speakAnswer": "You can buy designer clothes on Rodeo Drive."
       },
       {
        "prompt": "24-hour cafes",
        "answer": "24-hour cafes are popular with visitors.",
        "promptUz": "24 soat ishlaydigan kafelar sayyohlar orasida mashhur.",
-       "speak": "24-hour cafes"
+       "speak": "24-hour cafes",
+       "speakAnswer": "24-hour cafes are popular with visitors."
       },
       {
        "prompt": "famous restaurants",
        "answer": "There are famous restaurants you can eat at in LA.",
        "promptUz": "LA da ovqatlanishingiz mumkin bo'lgan mashhur restoranlar bor.",
-       "speak": "famous restaurants"
+       "speak": "famous restaurants",
+       "speakAnswer": "There are famous restaurants you can eat at in LA."
       }
      ]
     },
@@ -449,7 +486,8 @@
         "to"
        ],
        "whyUz": "MAMLAKAT bilan IN.\n'in America', 'in Uzbekistan'.",
-       "speak": "1  the second largest city ........ America"
+       "speak": "1  the second largest city ........ America",
+       "speakAnswer": "in"
       },
       {
        "prompt": "2  it's home ........ film stars",
@@ -461,7 +499,8 @@
         "at"
        ],
        "whyUz": "'be home TO ...' — turg'un birikma\n(... ning makoni bo'lmoq).\nDIQQAT: 'home OF' EMAS.",
-       "speak": "2  it's home ........ film stars"
+       "speak": "2  it's home ........ film stars",
+       "speakAnswer": "to"
       },
       {
        "prompt": "3  close ........ special bus-stops",
@@ -473,7 +512,8 @@
         "at"
        ],
        "whyUz": "'close TO ...' — turg'un birikma (... ga yaqin).\nDIQQAT: 'close FROM' XATO.",
-       "speak": "3  close ........ special bus-stops"
+       "speak": "3  close ........ special bus-stops",
+       "speakAnswer": "to"
       },
       {
        "prompt": "4  footprints ........ film stars",
@@ -485,7 +525,8 @@
         "to"
        ],
        "whyUz": "EGALIK: kimning izlari? → film stars NING.\n'OF' egalikni bildiradi.",
-       "speak": "4  footprints ........ film stars"
+       "speak": "4  footprints ........ film stars",
+       "speakAnswer": "of"
       },
       {
        "prompt": "5  you can get rides ........ the various sights",
@@ -497,7 +538,8 @@
         "at"
        ],
        "whyUz": "YO'NALISh: qayerga? → sights GA.\n'a ride TO ...' = ... ga yo'l/sayohat.",
-       "speak": "5  you can get rides ........ the various sights"
+       "speak": "5  you can get rides ........ the various sights",
+       "speakAnswer": "to"
       },
       {
        "prompt": "6  eat ........ a restaurant",
@@ -509,7 +551,8 @@
         "to"
        ],
        "whyUz": "'eat AT a restaurant' — muassasa bilan AT.\n83-betdagi maqola: 'eat AT the Border Grill'.\nDIQQAT: 'eat IN a restaurant' ham aytiladi,\nlekin kitob 'at' shaklini o'rgatadi.",
-       "speak": "6  eat ........ a restaurant"
+       "speak": "6  eat ........ a restaurant",
+       "speakAnswer": "at"
       },
       {
        "prompt": "7  packed ........ celebrities",
@@ -521,7 +564,8 @@
         "at"
        ],
        "whyUz": "'packed WITH ...' — turg'un birikma\n(... bilan to'lib ketgan).\nTO'LGANLIK har doim WITH bilan.",
-       "speak": "7  packed ........ celebrities"
+       "speak": "7  packed ........ celebrities",
+       "speakAnswer": "with"
       },
       {
        "prompt": "8  ........ the world",
@@ -533,7 +577,8 @@
         "to"
        ],
        "whyUz": "'IN the world' — turg'un birikma.\nMaqola: 'one of the most exciting museums IN THE\nWORLD'.\nORTTIRMA daraja bilan doim 'in' yoki 'of'.",
-       "speak": "8  ........ the world"
+       "speak": "8  ........ the world",
+       "speakAnswer": "in"
       },
       {
        "prompt": "9  ........ Rodeo Drive",
@@ -545,7 +590,8 @@
         "at"
        ],
        "whyUz": "KO'ChA bilan ON.\n'ON Rodeo Drive', 'ON Melrose Avenue'.\nDIQQAT: 'in Rodeo Drive' XATO.",
-       "speak": "9  ........ Rodeo Drive"
+       "speak": "9  ........ Rodeo Drive",
+       "speakAnswer": "on"
       },
       {
        "prompt": "10  popular ........ visitors",
@@ -557,7 +603,8 @@
         "at"
        ],
        "whyUz": "'popular WITH ...' — turg'un birikma\n(... orasida mashhur).\nDIQQAT: 'popular AMONG' ham to'g'ri, lekin\nkitob 'with' shaklini beradi.",
-       "speak": "10  popular ........ visitors"
+       "speak": "10  popular ........ visitors",
+       "speakAnswer": "with"
       }
      ]
     },
@@ -582,7 +629,8 @@
         "well-known"
        ],
        "whyUz": "'safe' = xavfsiz.\n'not dangerous' = xavfli emas.\nYagona INKOR shaklidagi variant.",
-       "speak": "1  safe  -  ............"
+       "speak": "1  safe  -  ............",
+       "speakAnswer": "not dangerous"
       },
       {
        "prompt": "2  close  -  ............",
@@ -594,7 +642,8 @@
         "memorable"
        ],
        "whyUz": "Ikkalasi ham 'yaqin'.\nDIQQAT: 'close TO the shop' (predlog bilan),\n'NEAR the shop' (predlogsiz).",
-       "speak": "2  close  -  ............"
+       "speak": "2  close  -  ............",
+       "speakAnswer": "near"
       },
       {
        "prompt": "3  fascinating  -  ............",
@@ -606,7 +655,8 @@
         "memorable"
        ],
        "whyUz": "'fascinating' = maftunkor —\n'interesting' ning KUChLIROQ shakli.\n82-betdagi 3-mashqda ham 'interesting places'.",
-       "speak": "3  fascinating  -  ............"
+       "speak": "3  fascinating  -  ............",
+       "speakAnswer": "interesting"
       },
       {
        "prompt": "4  famous  -  ............",
@@ -618,7 +668,8 @@
         "memorable"
        ],
        "whyUz": "'well-known' = yaxshi tanilgan, mashhur.\nChiziqcha bilan yoziladi.\n5-mashqning 8-bandi: 'famous restaurants'.",
-       "speak": "4  famous  -  ............"
+       "speak": "4  famous  -  ............",
+       "speakAnswer": "well-known"
       },
       {
        "prompt": "5  unforgettable  -  ............",
@@ -630,7 +681,8 @@
         "well-known"
        ],
        "whyUz": "'memorable' = esda qolarli ('memory' dan).\n'unforgettable' = un + forget + able = unutilmas.\nMaqola: 'A visit there is always UNFORGETTABLE.'",
-       "speak": "5  unforgettable  -  ............"
+       "speak": "5  unforgettable  -  ............",
+       "speakAnswer": "memorable"
       },
       {
        "prompt": "6  area  -  ............",
@@ -642,7 +694,8 @@
         "well-known"
        ],
        "whyUz": "Ikkalasi ham 'hudud'.\nMaqola: 'the Sunset Strip, an AREA in Hollywood'.\n'district' — ko'proq shahar ichidagi tuman.",
-       "speak": "6  area  -  ............"
+       "speak": "6  area  -  ............",
+       "speakAnswer": "district"
       }
      ]
     }
@@ -677,7 +730,8 @@
         "small",
         "modern"
        ],
-       "whyUz": "NOTO'G'RI: HEAVY.\n'heavy' = og'ir — BINO haqida aytilmaydi.\n'heavy' odatda: heavy TRAFFIC (zich transport),\nheavy RAIN (kuchli yomg'ir), heavy BAG (og'ir sumka).\nTall, small, modern — hammasi bino uchun to'g'ri."
+       "whyUz": "NOTO'G'RI: HEAVY.\n'heavy' = og'ir — BINO haqida aytilmaydi.\n'heavy' odatda: heavy TRAFFIC (zich transport),\nheavy RAIN (kuchli yomg'ir), heavy BAG (og'ir sumka).\nTall, small, modern — hammasi bino uchun to'g'ri.",
+       "speakAnswer": "heavy"
       },
       {
        "prompt": "2  You can stay in a luxurious / polluted / cheap / expensive hotel.",
@@ -689,7 +743,8 @@
         "cheap",
         "expensive"
        ],
-       "whyUz": "NOTO'G'RI: POLLUTED.\n'polluted' = ifloslangan — HAVO, SUV yoki\nSHAHAR haqida aytiladi ('a polluted city'),\nmehmonxona haqida emas.\n'luxurious' = hashamatli."
+       "whyUz": "NOTO'G'RI: POLLUTED.\n'polluted' = ifloslangan — HAVO, SUV yoki\nSHAHAR haqida aytiladi ('a polluted city'),\nmehmonxona haqida emas.\n'luxurious' = hashamatli.",
+       "speakAnswer": "polluted"
       },
       {
        "prompt": "3  The nightlife is crowded / interesting / dull / boring.",
@@ -701,7 +756,8 @@
         "dull",
         "boring"
        ],
-       "whyUz": "NOTO'G'RI: CROWDED.\n'crowded' = gavjum — JOY haqida aytiladi\n('a crowded street'), 'nightlife' esa\nTUSHUNCHA (aniq joy emas).\n'dull' = zerikarli ('boring' ning sinonimi)."
+       "whyUz": "NOTO'G'RI: CROWDED.\n'crowded' = gavjum — JOY haqida aytiladi\n('a crowded street'), 'nightlife' esa\nTUSHUNCHA (aniq joy emas).\n'dull' = zerikarli ('boring' ning sinonimi).",
+       "speakAnswer": "crowded"
       },
       {
        "prompt": "4  You can have dinner in a very romantic / clean / famous / delicious restaurant.",
@@ -713,7 +769,8 @@
         "clean",
         "famous"
        ],
-       "whyUz": "NOTO'G'RI: DELICIOUS.\n'delicious' = mazali — faqat OVQAT haqida.\n'a delicious dish' ✓\n'a delicious restaurant' ✗\nTo'g'ri bo'lardi: 'a restaurant with delicious food'."
+       "whyUz": "NOTO'G'RI: DELICIOUS.\n'delicious' = mazali — faqat OVQAT haqida.\n'a delicious dish' ✓\n'a delicious restaurant' ✗\nTo'g'ri bo'lardi: 'a restaurant with delicious food'.",
+       "speakAnswer": "delicious"
       },
       {
        "prompt": "5  The streets are dangerous / safe / crowded / friendly.",
@@ -725,7 +782,8 @@
         "safe",
         "crowded"
        ],
-       "whyUz": "NOTO'G'RI: FRIENDLY.\n'friendly' = do'stona — ODAMLAR haqida aytiladi\n('friendly people', 'friendly staff'),\nko'chalar haqida emas.\nDangerous, safe, crowded — hammasi ko'cha uchun\nto'g'ri."
+       "whyUz": "NOTO'G'RI: FRIENDLY.\n'friendly' = do'stona — ODAMLAR haqida aytiladi\n('friendly people', 'friendly staff'),\nko'chalar haqida emas.\nDangerous, safe, crowded — hammasi ko'cha uchun\nto'g'ri.",
+       "speakAnswer": "friendly"
       }
      ]
     },
@@ -775,35 +833,43 @@
      "tasks": [
       {
        "left": "1  designer",
-       "right": "e  clothes"
+       "right": "e  clothes",
+       "speakAnswer": "e  clothes"
       },
       {
        "left": "2  film",
-       "right": "c  star"
+       "right": "c  star",
+       "speakAnswer": "c  star"
       },
       {
        "left": "3  heavy",
-       "right": "h  traffic"
+       "right": "h  traffic",
+       "speakAnswer": "h  traffic"
       },
       {
        "left": "4  unforgettable",
-       "right": "a  trip"
+       "right": "a  trip",
+       "speakAnswer": "a  trip"
       },
       {
        "left": "5  sunny",
-       "right": "b  weather"
+       "right": "b  weather",
+       "speakAnswer": "b  weather"
       },
       {
        "left": "6  double-decker",
-       "right": "g  bus"
+       "right": "g  bus",
+       "speakAnswer": "g  bus"
       },
       {
        "left": "7  tasty",
-       "right": "f  dishes"
+       "right": "f  dishes",
+       "speakAnswer": "f  dishes"
       },
       {
        "left": "8  friendly",
-       "right": "d  people"
+       "right": "d  people",
+       "speakAnswer": "d  people"
       }
      ]
     },
@@ -823,49 +889,56 @@
        "answer": "noisy",
        "promptUz": "'quiet' ning zidi",
        "whyUz": "quiet (tinch) ↔ NOISY (shovqinli).\nCoursebook 82-betdagi 1-mashqning birinchi\njuftligi.\n'very' + ODDIY sifat.",
-       "speak": "1  A: Is New York a QUIET city?  B: No, it's very ............ ."
+       "speak": "1  A: Is New York a QUIET city?  B: No, it's very ............ .",
+       "speakAnswer": "noisy"
       },
       {
        "prompt": "2  A: Do you live in a BIG house?  B: No, I live in a ............ house.",
        "answer": "small",
        "promptUz": "'big' ning zidi",
        "whyUz": "big (katta) ↔ SMALL (kichik).\nDIQQAT: bo'shliqdan keyin 'house' turibdi →\nsifat otdan OLDIN keladi.",
-       "speak": "2  A: Do you live in a BIG house?  B: No, I live in a ............ house."
+       "speak": "2  A: Do you live in a BIG house?  B: No, I live in a ............ house.",
+       "speakAnswer": "small"
       },
       {
        "prompt": "3  A: Is it SAFE to walk alone at night?  B: No, it's quite ............ .",
        "answer": "dangerous",
        "promptUz": "'safe' ning zidi",
        "whyUz": "safe (xavfsiz) ↔ DANGEROUS (xavfli).\nCoursebook 84-bet, 7-mashqda:\n'safe = not dangerous'.\n'quite' + ODDIY sifat.",
-       "speak": "3  A: Is it SAFE to walk alone at night?  B: No, it's quite ............ ."
+       "speak": "3  A: Is it SAFE to walk alone at night?  B: No, it's quite ............ .",
+       "speakAnswer": "dangerous"
       },
       {
        "prompt": "4  A: Are the beaches in your country DIRTY?  B: No, they are very ............ .",
        "answer": "clean",
        "promptUz": "'dirty' ning zidi",
        "whyUz": "dirty (iflos) ↔ CLEAN (toza).\n'the beaches' KO'PLIK → 'THEY ARE'.",
-       "speak": "4  A: Are the beaches in your country DIRTY?  B: No, they are very ............ ."
+       "speak": "4  A: Are the beaches in your country DIRTY?  B: No, they are very ............ .",
+       "speakAnswer": "clean"
       },
       {
        "prompt": "5  A: Has Venice got many MODERN buildings?  B: No, there are lots of ............ buildings.",
        "answer": "old",
        "promptUz": "'modern' ning zidi",
        "whyUz": "modern (zamonaviy) ↔ OLD (eski).\nVenesiya — eski binolari bilan mashhur.\n'lots of' = ko'p (= 'a lot of').",
-       "speak": "5  A: Has Venice got many MODERN buildings?  B: No, there are lots of ............ buildings."
+       "speak": "5  A: Has Venice got many MODERN buildings?  B: No, there are lots of ............ buildings.",
+       "speakAnswer": "old"
       },
       {
        "prompt": "6  A: Is the nightlife in Vienna BORING?  B: No, it's very ............ .",
        "answer": "exciting",
        "promptUz": "'boring' ning zidi",
        "whyUz": "boring (zerikarli) ↔ EXCITING (qiziqarli).\nCoursebook 82-betdagi 1-mashqda 'nightlife'\njuftligi aynan 'exciting - boring' edi.\nVena — Avstriya poytaxti.",
-       "speak": "6  A: Is the nightlife in Vienna BORING?  B: No, it's very ............ ."
+       "speak": "6  A: Is the nightlife in Vienna BORING?  B: No, it's very ............ .",
+       "speakAnswer": "exciting"
       },
       {
        "prompt": "7  A: Are the shops in Milan CHEAP?  B: No, they are quite ............ .",
        "answer": "expensive",
        "promptUz": "'cheap' ning zidi",
        "whyUz": "cheap (arzon) ↔ EXPENSIVE (qimmat).\nMilan — Italiyaning moda markazi,\nqimmat do'konlari bilan mashhur.\n'the shops' KO'PLIK → 'THEY ARE'.",
-       "speak": "7  A: Are the shops in Milan CHEAP?  B: No, they are quite ............ ."
+       "speak": "7  A: Are the shops in Milan CHEAP?  B: No, they are quite ............ .",
+       "speakAnswer": "expensive"
       }
      ]
     },
@@ -890,7 +963,8 @@
         "areas"
        ],
        "whyUz": "memorable = UNFORGETTABLE (unutilmas).\n'memorable' — 'memory' (xotira) dan,\n'unforgettable' — un + forget + able.\nCoursebook 84-bet, 7-mashqda ham shu juftlik.",
-       "speak": "1  A visit to Paris is a MEMORABLE experience.  →  ............"
+       "speak": "1  A visit to Paris is a MEMORABLE experience.  →  ............",
+       "speakAnswer": "unforgettable"
       },
       {
        "prompt": "2  Here you can see lots of INTERESTING sights.  →  ............",
@@ -902,7 +976,8 @@
         "well-known"
        ],
        "whyUz": "interesting = FASCINATING (maftunkor).\n'fascinating' — 'interesting' ning KUCHLIROQ\nshakli.\nCoursebook 84-bet, 7-mashqda ham shu juftlik.",
-       "speak": "2  Here you can see lots of INTERESTING sights.  →  ............"
+       "speak": "2  Here you can see lots of INTERESTING sights.  →  ............",
+       "speakAnswer": "fascinating"
       },
       {
        "prompt": "3  ... enjoy lunch in one of the many FAMOUS restaurants.  →  ............",
@@ -914,7 +989,8 @@
         "areas"
        ],
        "whyUz": "famous = WELL-KNOWN (yaxshi tanilgan).\nChiziqcha bilan yoziladi.\nCoursebook 84-bet, 7-mashqda ham shu juftlik.",
-       "speak": "3  ... enjoy lunch in one of the many FAMOUS restaurants.  →  ............"
+       "speak": "3  ... enjoy lunch in one of the many FAMOUS restaurants.  →  ............",
+       "speakAnswer": "well-known"
       },
       {
        "prompt": "4  Paris has a large number of different DISTRICTS you can visit.  →  ............",
@@ -926,7 +1002,8 @@
         "well-known"
        ],
        "whyUz": "districts = AREAS (hududlar).\nDIQQAT: matnda KO'PLIK ('districts') →\njavob ham KO'PLIK: 'AREAS' ('area' emas).\nCoursebook 84-bet, 7-mashqda 'area = district'.",
-       "speak": "4  Paris has a large number of different DISTRICTS you can visit.  →  ............"
+       "speak": "4  Paris has a large number of different DISTRICTS you can visit.  →  ............",
+       "speakAnswer": "areas"
       },
       {
        "prompt": "5  ... or go for a PEACEFUL walk along the riverside.  →  ............",
@@ -938,7 +1015,8 @@
         "areas"
        ],
        "whyUz": "peaceful = QUIET (tinch, osoyishta).\nCoursebook 87-betdagi Stratford maqolasida ham\n'enjoy the PEACEFULNESS of the place' bor edi.",
-       "speak": "5  ... or go for a PEACEFUL walk along the riverside.  →  ............"
+       "speak": "5  ... or go for a PEACEFUL walk along the riverside.  →  ............",
+       "speakAnswer": "quiet"
       },
       {
        "prompt": "6  There is never a DULL moment.  →  ............",
@@ -950,7 +1028,8 @@
         "well-known"
        ],
        "whyUz": "dull = BORING (zerikarli).\n1a-mashqda ham ikkalasi bir qatorda edi\n('interesting/dull/boring').\n'There is never a dull moment' — turg'un ibora:\n'hech qachon zerikmaysiz'.",
-       "speak": "6  There is never a DULL moment.  →  ............"
+       "speak": "6  There is never a DULL moment.  →  ............",
+       "speakAnswer": "boring"
       }
      ]
     },
@@ -974,7 +1053,8 @@
         "of",
         "at"
        ],
-       "whyUz": "B — 'be home TO ...' turg'un birikma\n(... ning makoni bo'lmoq).\n'home OF' XATO.\nCoursebook 83-betdagi maqola:\n'It's also home TO film stars.'"
+       "whyUz": "B — 'be home TO ...' turg'un birikma\n(... ning makoni bo'lmoq).\n'home OF' XATO.\nCoursebook 83-betdagi maqola:\n'It's also home TO film stars.'",
+       "speakAnswer": "to"
       },
       {
        "prompt": "2  This castle is very popular ............ visitors.",
@@ -985,7 +1065,8 @@
         "at",
         "in"
        ],
-       "whyUz": "A — 'popular WITH ...' turg'un birikma\n(... orasida mashhur).\nCoursebook 83-bet: '24-hour cafes ... are\nPOPULAR WITH visitors.'"
+       "whyUz": "A — 'popular WITH ...' turg'un birikma\n(... orasida mashhur).\nCoursebook 83-bet: '24-hour cafes ... are\nPOPULAR WITH visitors.'",
+       "speakAnswer": "with"
       },
       {
        "prompt": "3  We ate ............ a Mexican restaurant last night.",
@@ -996,7 +1077,8 @@
         "on",
         "to"
        ],
-       "whyUz": "A — 'eat AT a restaurant' turg'un birikma.\nCoursebook 83-bet: 'restaurants you can EAT AT',\n'EAT AT the Border Grill'.\nGrammar 55-bet, 12-mashqning 4-bandi ham shu."
+       "whyUz": "A — 'eat AT a restaurant' turg'un birikma.\nCoursebook 83-bet: 'restaurants you can EAT AT',\n'EAT AT the Border Grill'.\nGrammar 55-bet, 12-mashqning 4-bandi ham shu.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "4  My house is close ............ the train station.",
@@ -1007,7 +1089,8 @@
         "of",
         "on"
        ],
-       "whyUz": "C — 'close TO ...' turg'un birikma (... ga yaqin).\nDOIM 'to' bilan.\nDIQQAT: sinonimi 'near' esa predlogSIZ:\n'near the station'.\nCoursebook 87-bet: 'close TO special bus-stops'."
+       "whyUz": "C — 'close TO ...' turg'un birikma (... ga yaqin).\nDOIM 'to' bilan.\nDIQQAT: sinonimi 'near' esa predlogSIZ:\n'near the station'.\nCoursebook 87-bet: 'close TO special bus-stops'.",
+       "speakAnswer": "to"
       },
       {
        "prompt": "5  The town is packed ............ tourists.",
@@ -1018,7 +1101,8 @@
         "of",
         "on"
        ],
-       "whyUz": "C — 'packed WITH ...' turg'un birikma\n(... bilan to'lib ketgan).\nTO'LGANLIK doim WITH bilan.\nCoursebook 83-bet: 'the Buffalo Club, a place\nPACKED WITH celebrities'."
+       "whyUz": "C — 'packed WITH ...' turg'un birikma\n(... bilan to'lib ketgan).\nTO'LGANLIK doim WITH bilan.\nCoursebook 83-bet: 'the Buffalo Club, a place\nPACKED WITH celebrities'.",
+       "speakAnswer": "with"
       },
       {
        "prompt": "6  You can find cheap shops ............ Park Street.",
@@ -1029,7 +1113,8 @@
         "at",
         "of"
        ],
-       "whyUz": "C — BRITANIYA inglizchasida ko'cha bilan 'IN':\n'IN Park Street'.\nDIQQAT — SOLISHTIRING:\nCoursebook 84-bet, 6-mashqda 'ON Rodeo Drive'\nedi — bu AMERIKA varianti (LA haqida).\nIkkalasi ham to'g'ri; bu yerda 'on' variantlar\norasida berilmagan."
+       "whyUz": "C — BRITANIYA inglizchasida ko'cha bilan 'IN':\n'IN Park Street'.\nDIQQAT — SOLISHTIRING:\nCoursebook 84-bet, 6-mashqda 'ON Rodeo Drive'\nedi — bu AMERIKA varianti (LA haqida).\nIkkalasi ham to'g'ri; bu yerda 'on' variantlar\norasida berilmagan.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "7  Plaka is a popular tourist area ............ Athens.",
@@ -1040,7 +1125,8 @@
         "with",
         "at"
        ],
-       "whyUz": "C — hudud SHAHAR ichida → IN.\n'IN Athens' = Afinada.\nPlaka — Afinaning eski shahar hududi\n(Akropol etagida).\nDIQQAT: 2-bandda 'popular WITH visitors' edi,\nbu yerda esa 'area IN Athens' — boshqa qoida."
+       "whyUz": "C — hudud SHAHAR ichida → IN.\n'IN Athens' = Afinada.\nPlaka — Afinaning eski shahar hududi\n(Akropol etagida).\nDIQQAT: 2-bandda 'popular WITH visitors' edi,\nbu yerda esa 'area IN Athens' — boshqa qoida.",
+       "speakAnswer": "in"
       }
      ]
     }
@@ -1154,31 +1240,38 @@
      "tasks": [
       {
        "left": "A",
-       "right": "a museum"
+       "right": "a museum",
+       "speakAnswer": "a museum"
       },
       {
        "left": "B",
-       "right": "a Mexican dish"
+       "right": "a Mexican dish",
+       "speakAnswer": "a Mexican dish"
       },
       {
        "left": "C",
-       "right": "designer clothes"
+       "right": "designer clothes",
+       "speakAnswer": "designer clothes"
       },
       {
        "left": "D",
-       "right": "handprints of film stars"
+       "right": "handprints of film stars",
+       "speakAnswer": "handprints of film stars"
       },
       {
        "left": "E",
-       "right": "a street performer"
+       "right": "a street performer",
+       "speakAnswer": "a street performer"
       },
       {
        "left": "F",
-       "right": "a club"
+       "right": "a club",
+       "speakAnswer": "a club"
       },
       {
        "left": "G",
-       "right": "heavy traffic"
+       "right": "heavy traffic",
+       "speakAnswer": "heavy traffic"
       }
      ]
     },
@@ -1262,23 +1355,28 @@
      "tasks": [
       {
        "left": "ACCOMMODATION",
-       "right": "Hotels"
+       "right": "Hotels",
+       "speakAnswer": "Hotels"
       },
       {
        "left": "PLACES TO VISIT",
-       "right": "Sights"
+       "right": "Sights",
+       "speakAnswer": "Sights"
       },
       {
        "left": "EATING OUT",
-       "right": "Restaurants"
+       "right": "Restaurants",
+       "speakAnswer": "Restaurants"
       },
       {
        "left": "SHOPPING",
-       "right": "Shops"
+       "right": "Shops",
+       "speakAnswer": "Shops"
       },
       {
        "left": "ENTERTAINMENT",
-       "right": "Nightlife"
+       "right": "Nightlife",
+       "speakAnswer": "Nightlife"
       }
      ]
     }
@@ -1311,7 +1409,8 @@
         "Shakespeare's",
         "Duke's"
        ],
-       "whyUz": "MATNDAN TASDIQLANGAN:\n'This romantic town is in the south-west of England\nand is SHAKESPEARE'S BIRTHPLACE.'\n'Duke's' aldamchi — matnda 'The DUKES Hotel'\nbor, lekin u MEHMONXONA nomi.\n'a birthplace' = tug'ilgan joy."
+       "whyUz": "MATNDAN TASDIQLANGAN:\n'This romantic town is in the south-west of England\nand is SHAKESPEARE'S BIRTHPLACE.'\n'Duke's' aldamchi — matnda 'The DUKES Hotel'\nbor, lekin u MEHMONXONA nomi.\n'a birthplace' = tug'ilgan joy.",
+       "speakAnswer": "Shakespeare's"
       },
       {
        "prompt": "b  Have lunch at one of the many restaurants in ............ Street.",
@@ -1321,7 +1420,8 @@
         "Sheep",
         "High"
        ],
-       "whyUz": "MATNDAN TASDIQLANGAN:\n'Have lunch at one of the many restaurants in\nSHEEP STREET — the food is delicious.'\n'High Street' aldamchi — matnda 'Stratford HIGH\nSTREET's excellent shops' bor, lekin u DO'KONLAR\nko'chasi (D bo'limida)."
+       "whyUz": "MATNDAN TASDIQLANGAN:\n'Have lunch at one of the many restaurants in\nSHEEP STREET — the food is delicious.'\n'High Street' aldamchi — matnda 'Stratford HIGH\nSTREET's excellent shops' bor, lekin u DO'KONLAR\nko'chasi (D bo'limida).",
+       "speakAnswer": "Sheep"
       },
       {
        "prompt": "c  Stratford is a ............ town.",
@@ -1331,7 +1431,8 @@
         "small",
         "big"
        ],
-       "whyUz": "MATNDAN TASDIQLANGAN:\n'STRATFORD IS A SMALL TOWN. There aren't many\nnightclubs ...'\n82-betda ham kitob uni 'a QUIET TOWN in England'\ndeb atagan va LA bilan solishtirgan."
+       "whyUz": "MATNDAN TASDIQLANGAN:\n'STRATFORD IS A SMALL TOWN. There aren't many\nnightclubs ...'\n82-betda ham kitob uni 'a QUIET TOWN in England'\ndeb atagan va LA bilan solishtirgan.",
+       "speakAnswer": "small"
       }
      ]
     },
@@ -1430,23 +1531,28 @@
      "tasks": [
       {
        "left": "A",
-       "right": "Accommodation"
+       "right": "Accommodation",
+       "speakAnswer": "Accommodation"
       },
       {
        "left": "B",
-       "right": "Places to Visit"
+       "right": "Places to Visit",
+       "speakAnswer": "Places to Visit"
       },
       {
        "left": "C",
-       "right": "Eating out"
+       "right": "Eating out",
+       "speakAnswer": "Eating out"
       },
       {
        "left": "D",
-       "right": "Shopping"
+       "right": "Shopping",
+       "speakAnswer": "Shopping"
       },
       {
        "left": "E",
-       "right": "Nightlife"
+       "right": "Nightlife",
+       "speakAnswer": "Nightlife"
       }
      ]
     },
@@ -1592,11 +1698,13 @@
      "tasks": [
       {
        "left": "ACCOMMODATION",
-       "right": "the Ritz-Carlton Hotel (excellent service, but quite expensive) / the Bertram Inn (cheaper and very clean)"
+       "right": "the Ritz-Carlton Hotel (excellent service, but quite expensive) / the Bertram Inn (cheaper and very clean)",
+       "speakAnswer": "the Ritz-Carlton Hotel (excellent service, but quite expensive) / the Bertram Inn"
       },
       {
        "left": "PLACES TO VISIT (1)",
-       "right": "Harvard University"
+       "right": "Harvard University",
+       "speakAnswer": "Harvard University"
       },
       {
        "left": "PLACES TO VISIT (2)",
@@ -1782,133 +1890,152 @@
        "answer": "larger / the largest",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "Bir bo'g'inli, '-e' bilan tugagan →\nfaqat -R va -ST.\nMaqolada: 'the second LARGEST city'.",
-       "speak": "large  →  ............  →  ............"
+       "speak": "large  →  ............  →  ............",
+       "speakAnswer": "larger / the largest"
       },
       {
        "prompt": "sunny  →  ............  →  ............",
        "answer": "sunnier / the sunniest",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "'-y' bilan tugagan → -IER / THE -IEST.\nMaqolada: 'SUNNY weather'.",
-       "speak": "sunny  →  ............  →  ............"
+       "speak": "sunny  →  ............  →  ............",
+       "speakAnswer": "sunnier / the sunniest"
       },
       {
        "prompt": "tall  →  ............  →  ............",
        "answer": "taller / the tallest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "Bir bo'g'inli → -ER / THE -EST.\nMaqolada: 'TALL buildings'.",
-       "speak": "tall  →  ............  →  ............"
+       "speak": "tall  →  ............  →  ............",
+       "speakAnswer": "taller / the tallest"
       },
       {
        "prompt": "heavy  →  ............  →  ............",
        "answer": "heavier / the heaviest",
        "promptUz": "'-y' bilan tugagan",
        "whyUz": "'-y' tushadi → heavIER / the heavIEST.\nMaqolada: 'HEAVY traffic'.",
-       "speak": "heavy  →  ............  →  ............"
+       "speak": "heavy  →  ............  →  ............",
+       "speakAnswer": "heavier / the heaviest"
       },
       {
        "prompt": "expensive  →  ............  →  ............",
        "answer": "more expensive / the most expensive",
        "promptUz": "3 bo'g'inli",
        "whyUz": "Uzun sifat → MORE / THE MOST.\nMaqolada allaqachon: 'MORE EXPENSIVE than those\nin many other American cities'.",
-       "speak": "expensive  →  ............  →  ............"
+       "speak": "expensive  →  ............  →  ............",
+       "speakAnswer": "more expensive / the most expensive"
       },
       {
        "prompt": "clean  →  ............  →  ............",
        "answer": "cleaner / the cleanest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "Bir bo'g'inli → -ER / THE -EST.\nMaqolada: 'they are CLEAN and safe'.",
-       "speak": "clean  →  ............  →  ............"
+       "speak": "clean  →  ............  →  ............",
+       "speakAnswer": "cleaner / the cleanest"
       },
       {
        "prompt": "cheap  →  ............  →  ............",
        "answer": "cheaper / the cheapest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "8-mashqdagi jadvalning birinchi qatori.\nMaqolada: 'CHEAP rides', 'CHEAP fashionable clothes'.",
-       "speak": "cheap  →  ............  →  ............"
+       "speak": "cheap  →  ............  →  ............",
+       "speakAnswer": "cheaper / the cheapest"
       },
       {
        "prompt": "interesting  →  ............  →  ............",
        "answer": "more interesting / the most interesting",
        "promptUz": "4 bo'g'inli",
        "whyUz": "Uzun sifat → MORE / THE MOST.\nMaqolada: 'many INTERESTING places'.",
-       "speak": "interesting  →  ............  →  ............"
+       "speak": "interesting  →  ............  →  ............",
+       "speakAnswer": "more interesting / the most interesting"
       },
       {
        "prompt": "exciting  →  ............  →  ............",
        "answer": "more exciting / the most exciting",
        "promptUz": "3 bo'g'inli",
        "whyUz": "Uzun sifat → MORE / THE MOST.\nMaqolada allaqachon: 'one of THE MOST EXCITING\nmuseums in the world'.",
-       "speak": "exciting  →  ............  →  ............"
+       "speak": "exciting  →  ............  →  ............",
+       "speakAnswer": "more exciting / the most exciting"
       },
       {
        "prompt": "famous  →  ............  →  ............",
        "answer": "more famous / the most famous",
        "promptUz": "2 bo'g'inli",
        "whyUz": "Ikki bo'g'inli → MORE / THE MOST.\nMaqolada: 'FAMOUS restaurants', 'FAMOUS clubs'.",
-       "speak": "famous  →  ............  →  ............"
+       "speak": "famous  →  ............  →  ............",
+       "speakAnswer": "more famous / the most famous"
       },
       {
        "prompt": "old  →  ............  →  ............",
        "answer": "older / the oldest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "Bir bo'g'inli → -ER / THE -EST.\nMaqolada allaqachon: 'Hollywood's OLDEST\nrestaurant'.\n'Use' qutisidagi namunalar ham shu sifat bilan.",
-       "speak": "old  →  ............  →  ............"
+       "speak": "old  →  ............  →  ............",
+       "speakAnswer": "older / the oldest"
       },
       {
        "prompt": "delicious  →  ............  →  ............",
        "answer": "more delicious / the most delicious",
        "promptUz": "3 bo'g'inli",
        "whyUz": "Uzun sifat → MORE / THE MOST.\nMaqolada allaqachon: 'THE MOST DELICIOUS Mexican\ndishes'.",
-       "speak": "delicious  →  ............  →  ............"
+       "speak": "delicious  →  ............  →  ............",
+       "speakAnswer": "more delicious / the most delicious"
       },
       {
        "prompt": "fashionable  →  ............  →  ............",
        "answer": "more fashionable / the most fashionable",
        "promptUz": "4 bo'g'inli",
        "whyUz": "Uzun sifat → MORE / THE MOST.\nMaqolada: 'cheap FASHIONABLE clothes'.",
-       "speak": "fashionable  →  ............  →  ............"
+       "speak": "fashionable  →  ............  →  ............",
+       "speakAnswer": "more fashionable / the most fashionable"
       },
       {
        "prompt": "unforgettable  →  ............  →  ............",
        "answer": "more unforgettable / the most unforgettable",
        "promptUz": "5 bo'g'inli",
        "whyUz": "Uzun sifat → MORE / THE MOST.\nMaqolada: 'A visit there is always UNFORGETTABLE.'",
-       "speak": "unforgettable  →  ............  →  ............"
+       "speak": "unforgettable  →  ............  →  ............",
+       "speakAnswer": "more unforgettable / the most unforgettable"
       },
       {
        "prompt": "modern  →  ............  →  ............",
        "answer": "more modern / the most modern",
        "promptUz": "2 bo'g'inli",
        "whyUz": "Ikki bo'g'inli → MORE / THE MOST.\nMaqolada: 'LA is a MODERN city'.",
-       "speak": "modern  →  ............  →  ............"
+       "speak": "modern  →  ............  →  ............",
+       "speakAnswer": "more modern / the most modern"
       },
       {
        "prompt": "noisy  →  ............  →  ............",
        "answer": "noisier / the noisiest",
        "promptUz": "'-y' bilan tugagan",
        "whyUz": "8-mashqdagi jadvalning '-y' qatori.\nMaqolada: 'It's NOISY and crowded'.",
-       "speak": "noisy  →  ............  →  ............"
+       "speak": "noisy  →  ............  →  ............",
+       "speakAnswer": "noisier / the noisiest"
       },
       {
        "prompt": "crowded  →  ............  →  ............",
        "answer": "more crowded / the most crowded",
        "promptUz": "2 bo'g'inli",
        "whyUz": "Ikki bo'g'inli → MORE / THE MOST.\nMaqolada: 'It's noisy and CROWDED'.",
-       "speak": "crowded  →  ............  →  ............"
+       "speak": "crowded  →  ............  →  ............",
+       "speakAnswer": "more crowded / the most crowded"
       },
       {
        "prompt": "fascinating  →  ............  →  ............",
        "answer": "more fascinating / the most fascinating",
        "promptUz": "4 bo'g'inli",
        "whyUz": "Uzun sifat → MORE / THE MOST.\nMaqolaning oxirgi so'zi: 'but it's also\nFASCINATING'.",
-       "speak": "fascinating  →  ............  →  ............"
+       "speak": "fascinating  →  ............  →  ............",
+       "speakAnswer": "more fascinating / the most fascinating"
       },
       {
        "prompt": "safe  →  ............  →  ............",
        "answer": "safer / the safest",
        "promptUz": "Bir bo'g'inli, '-e' bilan tugagan",
        "whyUz": "'-e' bilan tugagan → faqat -R va -ST.\nMaqolada: 'they are clean and SAFE'.\n7-mashqda sinonimi berilgan: 'not dangerous'.",
-       "speak": "safe  →  ............  →  ............"
+       "speak": "safe  →  ............  →  ............",
+       "speakAnswer": "safer / the safest"
       }
      ]
     },
@@ -1927,85 +2054,99 @@
        "prompt": "large",
        "answer": "LA is larger than my town.",
        "promptUz": "LA mening shahrimdan kattaroq. (KITOBDAGI NAMUNA — qisqa sifat + -ER + THAN)",
-       "speak": "large"
+       "speak": "large",
+       "speakAnswer": "LA is larger than my town."
       },
       {
        "prompt": "clean",
        "answer": "My town is cleaner than LA.",
        "promptUz": "Mening shahrim LA dan tozaroq. (KITOBDAGI NAMUNA)",
-       "speak": "clean"
+       "speak": "clean",
+       "speakAnswer": "My town is cleaner than LA."
       },
       {
        "prompt": "noisy",
        "answer": "LA is much noisier than my town.",
        "promptUz": "LA mening shahrimdan ancha shovqinliroq. (KITOBDAGI NAMUNA — MUCH bilan kuchaytirish)",
-       "speak": "noisy"
+       "speak": "noisy",
+       "speakAnswer": "LA is much noisier than my town."
       },
       {
        "prompt": "noisy (tenglik)",
        "answer": "My town is as noisy as LA.",
        "promptUz": "Mening shahrim LA-chalik shovqinli. (KITOBDAGI NAMUNA — AS ... AS)",
-       "speak": "noisy (tenglik)"
+       "speak": "noisy (tenglik)",
+       "speakAnswer": "My town is as noisy as LA."
       },
       {
        "prompt": "polluted",
        "answer": "My town isn't as polluted as LA.",
        "promptUz": "Mening shahrim LA-chalik ifloslangan emas. (KITOBDAGI NAMUNA — ISN'T AS ... AS)",
-       "speak": "polluted"
+       "speak": "polluted",
+       "speakAnswer": "My town isn't as polluted as LA."
       },
       {
        "prompt": "crowded",
        "answer": "LA is more crowded than my town.",
        "promptUz": "LA mening shahrimdan gavjumroq. (uzun sifat → MORE)",
-       "speak": "crowded"
+       "speak": "crowded",
+       "speakAnswer": "LA is more crowded than my town."
       },
       {
        "prompt": "small",
        "answer": "My town is smaller than LA.",
        "promptUz": "Mening shahrim LA dan kichikroq. (qisqa sifat → -ER)",
-       "speak": "small"
+       "speak": "small",
+       "speakAnswer": "My town is smaller than LA."
       },
       {
        "prompt": "dirty",
        "answer": "LA is dirtier than my town.",
        "promptUz": "LA mening shahrimdan iflosroq. ('-y' → -IER)",
-       "speak": "dirty"
+       "speak": "dirty",
+       "speakAnswer": "LA is dirtier than my town."
       },
       {
        "prompt": "safe",
        "answer": "My town is safer than LA.",
        "promptUz": "Mening shahrim LA dan xavfsizroq. ('-e' → faqat -R)",
-       "speak": "safe"
+       "speak": "safe",
+       "speakAnswer": "My town is safer than LA."
       },
       {
        "prompt": "expensive",
        "answer": "LA is much more expensive than my town.",
        "promptUz": "LA mening shahrimdan ancha qimmatroq. (MUCH + MORE)",
-       "speak": "expensive"
+       "speak": "expensive",
+       "speakAnswer": "LA is much more expensive than my town."
       },
       {
        "prompt": "old",
        "answer": "My town is older than LA.",
        "promptUz": "Mening shahrim LA dan eskiroq. (qisqa sifat → -ER)",
-       "speak": "old"
+       "speak": "old",
+       "speakAnswer": "My town is older than LA."
       },
       {
        "prompt": "modern",
        "answer": "LA is more modern than my town.",
        "promptUz": "LA mening shahrimdan zamonaviyroq. (2 bo'g'in → MORE)",
-       "speak": "modern"
+       "speak": "modern",
+       "speakAnswer": "LA is more modern than my town."
       },
       {
        "prompt": "peaceful",
        "answer": "My town is more peaceful than LA.",
        "promptUz": "Mening shahrim LA dan osoyishtaroq. (2 bo'g'in → MORE; 'peaceful' = tinch)",
-       "speak": "peaceful"
+       "speak": "peaceful",
+       "speakAnswer": "My town is more peaceful than LA."
       },
       {
        "prompt": "cheap",
        "answer": "My town is cheaper than LA.",
        "promptUz": "Mening shahrim LA dan arzonroq. (qisqa sifat → -ER)",
-       "speak": "cheap"
+       "speak": "cheap",
+       "speakAnswer": "My town is cheaper than LA."
       }
      ]
     }
@@ -2131,49 +2272,56 @@
        "answer": "the largest",
        "promptUz": "'-e' bilan tugagan",
        "whyUz": "large → THE LARGEST.\n'-e' bilan tugagani uchun faqat -ST qo'shiladi.",
-       "speak": "1  Which is ............ (large) desert in the world?"
+       "speak": "1  Which is ............ (large) desert in the world?",
+       "speakAnswer": "the largest"
       },
       {
        "prompt": "2  Which is ............ (high) mountain in the world?",
        "answer": "the highest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "high → THE HIGHEST.\nOddiy -EST qo'shilishi.\n'high' = baland (tog', devor haqida).",
-       "speak": "2  Which is ............ (high) mountain in the world?"
+       "speak": "2  Which is ............ (high) mountain in the world?",
+       "speakAnswer": "the highest"
       },
       {
        "prompt": "3  Which is ............ (long) river in the world?",
        "answer": "the longest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "long → THE LONGEST.\nOddiy -EST qo'shilishi.",
-       "speak": "3  Which is ............ (long) river in the world?"
+       "speak": "3  Which is ............ (long) river in the world?",
+       "speakAnswer": "the longest"
       },
       {
        "prompt": "4  Where is ............ (dry) place in the world?",
        "answer": "the driest",
        "promptUz": "DIQQAT — '-y' bilan tugagan",
        "whyUz": "dry → THE DRIEST.\n'-y' tushadi, '-IEST' qo'shiladi.\n'the dryest' XATO.\n'dry' = quruq.",
-       "speak": "4  Where is ............ (dry) place in the world?"
+       "speak": "4  Where is ............ (dry) place in the world?",
+       "speakAnswer": "the driest"
       },
       {
        "prompt": "5  Which is ............ (small) country in the world?",
        "answer": "the smallest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "small → THE SMALLEST.\nOddiy -EST qo'shilishi.",
-       "speak": "5  Which is ............ (small) country in the world?"
+       "speak": "5  Which is ............ (small) country in the world?",
+       "speakAnswer": "the smallest"
       },
       {
        "prompt": "6  Where is ............ (hot) place in the world?",
        "answer": "the hottest",
        "promptUz": "DIQQAT — undosh ikkilanadi",
        "whyUz": "hot → THE HOTTEST.\n1 unli + 1 undosh → 't' IKKILANADI.\n'the hotest' XATO.\n84-betdagi 'big → biggest' bilan bir xil qoida.",
-       "speak": "6  Where is ............ (hot) place in the world?"
+       "speak": "6  Where is ............ (hot) place in the world?",
+       "speakAnswer": "the hottest"
       },
       {
        "prompt": "7  Which is ............ (tall) building in the USA?",
        "answer": "the tallest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "tall → THE TALLEST.\nDIQQAT: 'tall' bino va odam uchun,\n'high' esa tog' va devor uchun ishlatiladi.",
-       "speak": "7  Which is ............ (tall) building in the USA?"
+       "speak": "7  Which is ............ (tall) building in the USA?",
+       "speakAnswer": "the tallest"
       }
      ]
     },
@@ -2197,7 +2345,8 @@
         "the Gobi",
         "the Nevada"
        ],
-       "whyUz": "A — SAHRA (Sahroi Kabir).\nShimoliy Afrikada, ~9 mln km2 —\ndeyarli AQSh kattaligida.\nGobi (Mo'g'uliston) va Nevada undan ancha kichik.\n\n⚠⚠ MUHIM ANIQLIK: Sahroi Kabir — dunyodagi eng katta ISSIQ cho'l.\nUmuman eng katta cho'l esa ANTARKTIDA (~14 mln km2) — u SOVUQ cho'l.\n'Cho'l' deganda yomg'ir kam yog'adigan joy tushuniladi, issiq bo'lishi shart emas.\nKitobning javobi maktab darsligi uchun to'g'ri, lekin to'liq javob shu."
+       "whyUz": "A — SAHRA (Sahroi Kabir).\nShimoliy Afrikada, ~9 mln km2 —\ndeyarli AQSh kattaligida.\nGobi (Mo'g'uliston) va Nevada undan ancha kichik.\n\n⚠⚠ MUHIM ANIQLIK: Sahroi Kabir — dunyodagi eng katta ISSIQ cho'l.\nUmuman eng katta cho'l esa ANTARKTIDA (~14 mln km2) — u SOVUQ cho'l.\n'Cho'l' deganda yomg'ir kam yog'adigan joy tushuniladi, issiq bo'lishi shart emas.\nKitobning javobi maktab darsligi uchun to'g'ri, lekin to'liq javob shu.",
+       "speakAnswer": "the Sahara"
       },
       {
        "prompt": "2  Which is the highest mountain in the world?",
@@ -2208,7 +2357,8 @@
         "Ben Nevis",
         "Mount McKinley"
        ],
-       "whyUz": "C — MOUNT EVEREST (8848 m), Nepal/Xitoy chegarasida.\nBen Nevis (1345 m) — Shotlandiyaning eng baland\ntog'i.\nMount McKinley (6190 m) — Shimoliy Amerikaning\neng balandi.\nDIQQAT: tog' uchun 'HIGH', bino uchun 'TALL'.\n\n⚠ ESLATMA: Mount McKinley 2015-yildan rasman DENALI deb ataladi — bu tog'ning mahalliy (atabask tilidagi) qadimiy nomi."
+       "whyUz": "C — MOUNT EVEREST (8848 m), Nepal/Xitoy chegarasida.\nBen Nevis (1345 m) — Shotlandiyaning eng baland\ntog'i.\nMount McKinley (6190 m) — Shimoliy Amerikaning\neng balandi.\nDIQQAT: tog' uchun 'HIGH', bino uchun 'TALL'.\n\n⚠ ESLATMA: Mount McKinley 2015-yildan rasman DENALI deb ataladi — bu tog'ning mahalliy (atabask tilidagi) qadimiy nomi.",
+       "speakAnswer": "Mount Everest"
       },
       {
        "prompt": "3  Which is the longest river in the world?",
@@ -2219,7 +2369,8 @@
         "the Missouri",
         "the Mississippi"
        ],
-       "whyUz": "C — NIL (~6650 km), Afrikada.\nMissouri va Mississippi — AQShdagi daryolar,\nnisbatan qisqaroq.\n\n⚠⚠ BAHSLI JOY: an'anaviy javob — Nil (~6650 km).\nLekin 2007-yildan beri ba'zi o'lchovlar AMAZONni uzunroq deb ko'rsatadi (~6992 km).\nFarq daryoning boshlanish nuqtasi qayerdan hisoblanishiga bog'liq.\nMaktab darsliklarida hamon NIL deb beriladi — kitobning javobi shu."
+       "whyUz": "C — NIL (~6650 km), Afrikada.\nMissouri va Mississippi — AQShdagi daryolar,\nnisbatan qisqaroq.\n\n⚠⚠ BAHSLI JOY: an'anaviy javob — Nil (~6650 km).\nLekin 2007-yildan beri ba'zi o'lchovlar AMAZONni uzunroq deb ko'rsatadi (~6992 km).\nFarq daryoning boshlanish nuqtasi qayerdan hisoblanishiga bog'liq.\nMaktab darsliklarida hamon NIL deb beriladi — kitobning javobi shu.",
+       "speakAnswer": "the Nile"
       },
       {
        "prompt": "4  Where is the driest place in the world?",
@@ -2230,7 +2381,8 @@
         "in Canada",
         "in China"
        ],
-       "whyUz": "A — CHILIDA: Atakama cho'li.\nBa'zi joylarida yuzlab yil yomg'ir yog'magan.\nDIQQAT: uchala variant ham 'C' harfi bilan\nboshlanadi — ataylab chalkashtirish uchun."
+       "whyUz": "A — CHILIDA: Atakama cho'li.\nBa'zi joylarida yuzlab yil yomg'ir yog'magan.\nDIQQAT: uchala variant ham 'C' harfi bilan\nboshlanadi — ataylab chalkashtirish uchun.",
+       "speakAnswer": "in Chile"
       },
       {
        "prompt": "5  Which is the smallest country in the world?",
@@ -2241,7 +2393,8 @@
         "Luxembourg",
         "Wales"
        ],
-       "whyUz": "C — VATIKAN (0,44 km2), Rim ichida joylashgan.\nLyuksemburg (2586 km2) kichik, lekin Vatikandan\nming marta katta.\nUels — Buyuk Britaniya tarkibidagi o'lka,\nmustaqil davlat EMAS."
+       "whyUz": "C — VATIKAN (0,44 km2), Rim ichida joylashgan.\nLyuksemburg (2586 km2) kichik, lekin Vatikandan\nming marta katta.\nUels — Buyuk Britaniya tarkibidagi o'lka,\nmustaqil davlat EMAS.",
+       "speakAnswer": "the State of the Vatican City"
       },
       {
        "prompt": "6  Where is the hottest place in the world?",
@@ -2252,7 +2405,8 @@
         "Tokyo",
         "Malta"
        ],
-       "whyUz": "A — DEATH VALLEY (O'lim vodiysi), Kaliforniya, AQSh.\n1913-yilda +56,7 C qayd etilgan —\nyer yuzidagi eng yuqori harorat.\nTokio va Malta issiq, lekin bunchalik emas."
+       "whyUz": "A — DEATH VALLEY (O'lim vodiysi), Kaliforniya, AQSh.\n1913-yilda +56,7 C qayd etilgan —\nyer yuzidagi eng yuqori harorat.\nTokio va Malta issiq, lekin bunchalik emas.",
+       "speakAnswer": "Death Valley"
       },
       {
        "prompt": "7  Which is the tallest building in the USA?",
@@ -2263,7 +2417,8 @@
         "the Empire State Building",
         "the John Hancock Centre"
        ],
-       "whyUz": "C — SEARS TOWER (442 m), Chikago.\nEmpire State Building (381 m) — Nyu-Yorkda,\nJohn Hancock Centre (344 m) — Chikagoda.\nESLATMA: kitob chop etilgan davrda shunday edi.\nHozir Sears Tower 'Willis Tower' deb ataladi va\n2013-yildan Nyu-Yorkdagi One World Trade Center\n(541 m) undan balandroq."
+       "whyUz": "C — SEARS TOWER (442 m), Chikago.\nEmpire State Building (381 m) — Nyu-Yorkda,\nJohn Hancock Centre (344 m) — Chikagoda.\nESLATMA: kitob chop etilgan davrda shunday edi.\nHozir Sears Tower 'Willis Tower' deb ataladi va\n2013-yildan Nyu-Yorkdagi One World Trade Center\n(541 m) undan balandroq.",
+       "speakAnswer": "the Sears Tower"
       }
      ]
     },
@@ -2322,82 +2477,98 @@
       {
        "prompt": "expensive — buses (✓)",
        "answer": "Buses in Britain are expensive.",
-       "promptUz": "Britaniyadagi avtobuslar qimmat. (KITOBDAGI NAMUNA — oddiy shakl)"
+       "promptUz": "Britaniyadagi avtobuslar qimmat. (KITOBDAGI NAMUNA — oddiy shakl)",
+       "speakAnswer": "Buses in Britain are expensive."
       },
       {
        "prompt": "expensive — trains (✓✓)",
        "answer": "Trains in Britain are more expensive than buses.",
-       "promptUz": "Britaniyadagi poyezdlar avtobuslardan qimmatroq. (KITOBDAGI NAMUNA — qiyosiy)"
+       "promptUz": "Britaniyadagi poyezdlar avtobuslardan qimmatroq. (KITOBDAGI NAMUNA — qiyosiy)",
+       "speakAnswer": "Trains in Britain are more expensive than buses."
       },
       {
        "prompt": "expensive — taxis (✓✓✓)",
        "answer": "Taxis in Britain are the most expensive of all.",
-       "promptUz": "Britaniyadagi taksilar hammasidan qimmat. (KITOBDAGI NAMUNA — orttirma)"
+       "promptUz": "Britaniyadagi taksilar hammasidan qimmat. (KITOBDAGI NAMUNA — orttirma)",
+       "speakAnswer": "Taxis in Britain are the most expensive of all."
       },
       {
        "prompt": "expensive — as ... as",
        "answer": "Buses in Britain aren't as expensive as taxis.",
-       "promptUz": "Britaniyadagi avtobuslar taksilarchalik qimmat emas. (KITOBDAGI NAMUNA — AS ... AS)"
+       "promptUz": "Britaniyadagi avtobuslar taksilarchalik qimmat emas. (KITOBDAGI NAMUNA — AS ... AS)",
+       "speakAnswer": "Buses in Britain aren't as expensive as taxis."
       },
       {
        "prompt": "safe — taxis (✓)",
        "answer": "Taxis in Britain are safe.",
-       "promptUz": "Britaniyadagi taksilar xavfsiz. (bu qatorda eng past ko'rsatkich TAKSIda)"
+       "promptUz": "Britaniyadagi taksilar xavfsiz. (bu qatorda eng past ko'rsatkich TAKSIda)",
+       "speakAnswer": "Taxis in Britain are safe."
       },
       {
        "prompt": "safe — buses (✓✓)",
        "answer": "Buses in Britain are safer than taxis.",
-       "promptUz": "Britaniyadagi avtobuslar taksilardan xavfsizroq. ('-e' → faqat -R)"
+       "promptUz": "Britaniyadagi avtobuslar taksilardan xavfsizroq. ('-e' → faqat -R)",
+       "speakAnswer": "Buses in Britain are safer than taxis."
       },
       {
        "prompt": "safe — trains (✓✓✓)",
        "answer": "Trains in Britain are the safest of all.",
-       "promptUz": "Britaniyadagi poyezdlar hammasidan xavfsiz."
+       "promptUz": "Britaniyadagi poyezdlar hammasidan xavfsiz.",
+       "speakAnswer": "Trains in Britain are the safest of all."
       },
       {
        "prompt": "safe — as ... as",
        "answer": "Taxis in Britain aren't as safe as trains.",
-       "promptUz": "Britaniyadagi taksilar poyezdlarchalik xavfsiz emas."
+       "promptUz": "Britaniyadagi taksilar poyezdlarchalik xavfsiz emas.",
+       "speakAnswer": "Taxis in Britain aren't as safe as trains."
       },
       {
        "prompt": "fast — buses (✓)",
        "answer": "Buses in Britain are fast.",
-       "promptUz": "Britaniyadagi avtobuslar tez."
+       "promptUz": "Britaniyadagi avtobuslar tez.",
+       "speakAnswer": "Buses in Britain are fast."
       },
       {
        "prompt": "fast — taxis (✓✓)",
        "answer": "Taxis in Britain are faster than buses.",
-       "promptUz": "Britaniyadagi taksilar avtobuslardan tezroq."
+       "promptUz": "Britaniyadagi taksilar avtobuslardan tezroq.",
+       "speakAnswer": "Taxis in Britain are faster than buses."
       },
       {
        "prompt": "fast — trains (✓✓✓)",
        "answer": "Trains in Britain are the fastest of all.",
-       "promptUz": "Britaniyadagi poyezdlar hammasidan tez."
+       "promptUz": "Britaniyadagi poyezdlar hammasidan tez.",
+       "speakAnswer": "Trains in Britain are the fastest of all."
       },
       {
        "prompt": "fast — as ... as",
        "answer": "Buses in Britain aren't as fast as trains.",
-       "promptUz": "Britaniyadagi avtobuslar poyezdlarchalik tez emas."
+       "promptUz": "Britaniyadagi avtobuslar poyezdlarchalik tez emas.",
+       "speakAnswer": "Buses in Britain aren't as fast as trains."
       },
       {
        "prompt": "comfortable — buses (✓)",
        "answer": "Buses in Britain are comfortable.",
-       "promptUz": "Britaniyadagi avtobuslar qulay."
+       "promptUz": "Britaniyadagi avtobuslar qulay.",
+       "speakAnswer": "Buses in Britain are comfortable."
       },
       {
        "prompt": "comfortable — taxis (✓✓)",
        "answer": "Taxis in Britain are more comfortable than buses.",
-       "promptUz": "Britaniyadagi taksilar avtobuslardan qulayroq. (3 bo'g'in → MORE)"
+       "promptUz": "Britaniyadagi taksilar avtobuslardan qulayroq. (3 bo'g'in → MORE)",
+       "speakAnswer": "Taxis in Britain are more comfortable than buses."
       },
       {
        "prompt": "comfortable — trains (✓✓✓)",
        "answer": "Trains in Britain are the most comfortable of all.",
-       "promptUz": "Britaniyadagi poyezdlar hammasidan qulay."
+       "promptUz": "Britaniyadagi poyezdlar hammasidan qulay.",
+       "speakAnswer": "Trains in Britain are the most comfortable of all."
       },
       {
        "prompt": "comfortable — as ... as",
        "answer": "Buses in Britain aren't as comfortable as trains.",
-       "promptUz": "Britaniyadagi avtobuslar poyezdlarchalik qulay emas."
+       "promptUz": "Britaniyadagi avtobuslar poyezdlarchalik qulay emas.",
+       "speakAnswer": "Buses in Britain aren't as comfortable as trains."
       }
      ]
     },
@@ -2723,56 +2894,64 @@
        "answer": "expensive / the most expensive",
        "promptUz": "'more' bor — uzun sifat",
        "whyUz": "'more expensive' berilgan →\nasosiy shakl EXPENSIVE,\norttirma shakl THE MOST EXPENSIVE.\nUzun sifat (3 bo'g'in) → MORE / THE MOST.",
-       "speak": "............  /  more expensive  /  ............"
+       "speak": "............  /  more expensive  /  ............",
+       "speakAnswer": "expensive / the most expensive"
       },
       {
        "prompt": "............  /  ............  /  the worst",
        "answer": "bad / worse",
        "promptUz": "NOTO'G'RI sifat",
        "whyUz": "'the worst' — NOTO'G'RI sifatning orttirma shakli.\nJadvaldan: BAD → WORSE → the worst.\n'badder' yoki 'baddest' XATO.",
-       "speak": "............  /  ............  /  the worst"
+       "speak": "............  /  ............  /  the worst",
+       "speakAnswer": "bad / worse"
       },
       {
        "prompt": "old  /  ............  /  ............",
        "answer": "older / the oldest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "Bir bo'g'inli → -ER / THE -EST.\nold → OLDER → THE OLDEST.",
-       "speak": "old  /  ............  /  ............"
+       "speak": "old  /  ............  /  ............",
+       "speakAnswer": "older / the oldest"
       },
       {
        "prompt": "small  /  ............  /  ............",
        "answer": "smaller / the smallest",
        "promptUz": "Bir bo'g'inli",
        "whyUz": "Bir bo'g'inli → -ER / THE -EST.\nsmall → SMALLER → THE SMALLEST.",
-       "speak": "small  /  ............  /  ............"
+       "speak": "small  /  ............  /  ............",
+       "speakAnswer": "smaller / the smallest"
       },
       {
        "prompt": "............  /  more  /  ............",
        "answer": "much (many) / the most",
        "promptUz": "DIQQAT — 'more' YOLG'IZ turibdi",
        "whyUz": "'more' YOLG'IZ (sifatsiz) → bu NOTO'G'RI\nsifatning qiyosiy shakli.\nMUCH / MANY → more → THE MOST.\n'much' — sanalmaydigan ot bilan (much water),\n'many' — sanaladigan ot bilan (many books).\nDIQQAT: 1-qatorda 'more EXPENSIVE' edi —\nu yerda 'more' sifat bilan birga.",
-       "speak": "............  /  more  /  ............"
+       "speak": "............  /  more  /  ............",
+       "speakAnswer": "much (many) / the most"
       },
       {
        "prompt": "............  /  ............  /  the tiniest",
        "answer": "tiny / tinier",
        "promptUz": "'-iest' — qaysi qoida?",
        "whyUz": "'-IEST' → '-y' bilan tugagan sifat.\nTINY → TINIER → the tiniest.\n'tiny' = juda kichkina ('small' dan ham kichik).",
-       "speak": "............  /  ............  /  the tiniest"
+       "speak": "............  /  ............  /  the tiniest",
+       "speakAnswer": "tiny / tinier"
       },
       {
        "prompt": "............  /  higher  /  ............",
        "answer": "high / the highest",
        "promptUz": "'-er' — qisqa sifat",
        "whyUz": "'-ER' → qisqa sifat.\nHIGH → higher → THE HIGHEST.\n'high' = baland (tog', devor uchun;\nbino va odam uchun 'tall').",
-       "speak": "............  /  higher  /  ............"
+       "speak": "............  /  higher  /  ............",
+       "speakAnswer": "high / the highest"
       },
       {
        "prompt": "hot  /  ............  /  ............",
        "answer": "hotter / the hottest",
        "promptUz": "DIQQAT — undosh ikkilanadi",
        "whyUz": "hot = h (undosh) + o (unli) + t (undosh)\n→ 't' IKKILANADI.\nHOT → HOTTER → THE HOTTEST.\n'hoter' / 'hotest' XATO.",
-       "speak": "hot  /  ............  /  ............"
+       "speak": "hot  /  ............  /  ............",
+       "speakAnswer": "hotter / the hottest"
       }
      ]
     },
@@ -2797,7 +2976,8 @@
         "the"
        ],
        "whyUz": "'longER' — QIYOSIY daraja → THAN.\nAmazonka daryosi Missisipidan uzunroq.",
-       "speak": "1  The Amazon River is longer ........ the Mississippi."
+       "speak": "1  The Amazon River is longer ........ the Mississippi.",
+       "speakAnswer": "than"
       },
       {
        "prompt": "2  The State of the Vatican City is ........ smallest country ........ the world.  [1-bo'shliq]",
@@ -2809,7 +2989,8 @@
         "than"
        ],
        "whyUz": "'smallEST' — ORTTIRMA daraja →\noldidan DOIM 'THE'.\nGrammar 52-betdagi Note qutisidan.",
-       "speak": "2  The State of the Vatican City is ........ smallest country ........ the world.  [1-bo'shliq]"
+       "speak": "2  The State of the Vatican City is ........ smallest country ........ the world.  [1-bo'shliq]",
+       "speakAnswer": "the"
       },
       {
        "prompt": "2  ... smallest country ........ the world.  [2-bo'shliq]",
@@ -2821,7 +3002,8 @@
         "the"
        ],
        "whyUz": "'the world' — JOY → IN.\nORTTIRMA daraja: OF + guruh, IN + joy.\nCoursebook 85-bet, 12-mashqning 5-bandi ham\nshu fakt haqida edi.",
-       "speak": "2  ... smallest country ........ the world.  [2-bo'shliq]"
+       "speak": "2  ... smallest country ........ the world.  [2-bo'shliq]",
+       "speakAnswer": "in"
       },
       {
        "prompt": "3  New York is not ........ clean ........ Stratford.",
@@ -2833,7 +3015,8 @@
         "than"
        ],
        "whyUz": "'clean' — ODDIY shakl va 'not' bor →\nAS ... AS.\n'New York is NOT AS CLEAN AS Stratford'\n= Nyu-York Stratfordchalik toza emas\n(ya'ni Stratford tozaroq).",
-       "speak": "3  New York is not ........ clean ........ Stratford."
+       "speak": "3  New York is not ........ clean ........ Stratford.",
+       "speakAnswer": "as ... as"
       },
       {
        "prompt": "4  There are many hotels in my town. The Chelsea is the most comfortable ........ all.",
@@ -2845,7 +3028,8 @@
         "the"
        ],
        "whyUz": "'the most comfortable' — ORTTIRMA daraja,\nva 'all' — GURUH → OF.\n'of all' = hammasidan.\n'in all' XATO.",
-       "speak": "4  There are many hotels in my town. The Chelsea is the most comfortable ........ all."
+       "speak": "4  There are many hotels in my town. The Chelsea is the most comfortable ........ all.",
+       "speakAnswer": "of"
       },
       {
        "prompt": "5  The Whiskey is a famous club ........ Los Angeles.",
@@ -2857,7 +3041,8 @@
         "the"
        ],
        "whyUz": "Oddiy JOY ko'rsatish → IN.\nBu bandda qiyoslash YO'Q.\n'The Whiskey' — Coursebook 83-betdagi\nmaqolada eslatilgan klub.",
-       "speak": "5  The Whiskey is a famous club ........ Los Angeles."
+       "speak": "5  The Whiskey is a famous club ........ Los Angeles.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "6  Living in the country is cheaper ........ living in the city.",
@@ -2869,7 +3054,8 @@
         "the"
        ],
        "whyUz": "'cheapER' — QIYOSIY daraja → THAN.\nDIQQAT: ikki tomonda ham 'LIVING' —\nbir xil narsalar solishtiriladi.\n'the country' = qishloq (shahardan tashqari).",
-       "speak": "6  Living in the country is cheaper ........ living in the city."
+       "speak": "6  Living in the country is cheaper ........ living in the city.",
+       "speakAnswer": "than"
       },
       {
        "prompt": "7  Death Valley is the hottest place ........ the world.",
@@ -2881,7 +3067,8 @@
         "the"
        ],
        "whyUz": "'the hottEST' — ORTTIRMA daraja,\n'the world' — JOY → IN.\nCoursebook 85-bet, 12-mashqning 6-bandi\nham aynan shu fakt.",
-       "speak": "7  Death Valley is the hottest place ........ the world."
+       "speak": "7  Death Valley is the hottest place ........ the world.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "8  Oxford is not ........ noisy ........ Paris.",
@@ -2893,7 +3080,8 @@
         "than"
        ],
        "whyUz": "'noisy' — ODDIY shakl va 'not' bor →\nAS ... AS.\n'Oxford is NOT AS NOISY AS Paris'\n= Oksford Parijchalik shovqinli emas.\n3-band bilan bir xil qoida.",
-       "speak": "8  Oxford is not ........ noisy ........ Paris."
+       "speak": "8  Oxford is not ........ noisy ........ Paris.",
+       "speakAnswer": "as ... as"
       }
      ]
     },
@@ -2913,70 +3101,80 @@
        "answer": "more expensive",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'expensive' — 3 bo'g'in → MORE EXPENSIVE.\n'the ones' = 'the shops' o'rniga.",
-       "speak": "1  These shops are ............ (expensive) than the ones in the country."
+       "speak": "1  These shops are ............ (expensive) than the ones in the country.",
+       "speakAnswer": "more expensive"
       },
       {
        "prompt": "2  This city is ............ (crowded) than it was five years ago.",
        "answer": "more crowded",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'crowded' — 2 bo'g'in, '-y' yo'q → MORE CROWDED.\nShahar O'ZINING besh yil oldingi holati bilan\nsolishtirilmoqda.",
-       "speak": "2  This city is ............ (crowded) than it was five years ago."
+       "speak": "2  This city is ............ (crowded) than it was five years ago.",
+       "speakAnswer": "more crowded"
       },
       {
        "prompt": "3  Mount McKinley isn't as ............ (high) as Mount Everest.",
        "answer": "high",
        "promptUz": "DIQQAT — 'as ... as' qolipi",
        "whyUz": "ODDIY ShAKL — 'as ... as' orasiga sifat\nO'ZGARMASDAN qo'yiladi.\n'as HIGH as' ✓ / 'as higher as' ✗\nTOG' uchun 'high' (bino uchun 'tall').\nMakkinli (6190 m) Everestdan (8848 m) past —\nCoursebook 85-bet, 12-mashqdan.",
-       "speak": "3  Mount McKinley isn't as ............ (high) as Mount Everest."
+       "speak": "3  Mount McKinley isn't as ............ (high) as Mount Everest.",
+       "speakAnswer": "high"
       },
       {
        "prompt": "4  Is Athens ............ (old) city in Europe?",
        "answer": "the oldest",
        "promptUz": "'... in Europe' — qaysi daraja?",
        "whyUz": "'... IN Europe' → ORTTIRMA daraja.\n'old' — 1 bo'g'in → THE OLDEST.\n'THE' TUSHIB QOLMASIN.\nAfina — Yunoniston poytaxti.",
-       "speak": "4  Is Athens ............ (old) city in Europe?"
+       "speak": "4  Is Athens ............ (old) city in Europe?",
+       "speakAnswer": "the oldest"
       },
       {
        "prompt": "5  The Sahara is ............ (large) desert in the world.",
        "answer": "the largest",
        "promptUz": "'... in the world' — qaysi daraja?",
        "whyUz": "'... IN the world' → ORTTIRMA daraja.\n'large' — '-e' bilan tugagan → THE LARGEST.\nCoursebook 85-bet, 12-mashqning 1-bandi\nham aynan shu fakt.",
-       "speak": "5  The Sahara is ............ (large) desert in the world."
+       "speak": "5  The Sahara is ............ (large) desert in the world.",
+       "speakAnswer": "the largest"
       },
       {
        "prompt": "6  Edinburgh is ............ (cheap) than Paris.",
        "answer": "cheaper",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'cheap' — 1 bo'g'in → CHEAPER.\nCoursebook 85-bet, 11-mashqda Edinburg\nLondondan arzonroq edi.",
-       "speak": "6  Edinburgh is ............ (cheap) than Paris."
+       "speak": "6  Edinburgh is ............ (cheap) than Paris.",
+       "speakAnswer": "cheaper"
       },
       {
        "prompt": "7  Which is ............ (tall) building in the world?",
        "answer": "the tallest",
        "promptUz": "'... in the world' — qaysi daraja?",
        "whyUz": "'... IN the world' → ORTTIRMA daraja.\n'tall' — 1 bo'g'in → THE TALLEST.\nDIQQAT: BINO uchun 'tall'\n(3-bandda TOG' uchun 'high' edi).",
-       "speak": "7  Which is ............ (tall) building in the world?"
+       "speak": "7  Which is ............ (tall) building in the world?",
+       "speakAnswer": "the tallest"
       },
       {
        "prompt": "8  Los Angeles is ............ (polluted) than Stratford.",
        "answer": "more polluted",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'polluted' — 3 bo'g'in → MORE POLLUTED.\nCoursebook 82-betdagi 2-mashqda ham\naynan shu gap bor edi.",
-       "speak": "8  Los Angeles is ............ (polluted) than Stratford."
+       "speak": "8  Los Angeles is ............ (polluted) than Stratford.",
+       "speakAnswer": "more polluted"
       },
       {
        "prompt": "9  The Willow's is ............ (good) restaurant in my neighbourhood.",
        "answer": "the best",
        "promptUz": "NOTO'G'RI sifat",
        "whyUz": "'... IN my neighbourhood' → ORTTIRMA daraja.\n'good' — NOTO'G'RI sifat → THE BEST.\n'the goodest' XATO.\n'a neighbourhood' = mahalla.",
-       "speak": "9  The Willow's is ............ (good) restaurant in my neighbourhood."
+       "speak": "9  The Willow's is ............ (good) restaurant in my neighbourhood.",
+       "speakAnswer": "the best"
       },
       {
        "prompt": "10  Our new car is ............ (small) than our old one.",
        "answer": "smaller",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'small' — 1 bo'g'in → SMALLER.\n'our old ONE' = 'our old car' o'rniga.",
-       "speak": "10  Our new car is ............ (small) than our old one."
+       "speak": "10  Our new car is ............ (small) than our old one.",
+       "speakAnswer": "smaller"
       }
      ]
     },
@@ -2996,42 +3194,48 @@
        "answer": "as big as",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA. 'not' bor va bo'shliqdan keyin\nbirdan ot → AS ... AS.\n'big' ODDIY shaklda qoladi.\nJavobga IKKALA 'as' ham kiradi.",
-       "speak": "1  The chimpanzee is not ............ (big) the elephant."
+       "speak": "1  The chimpanzee is not ............ (big) the elephant.",
+       "speakAnswer": "as big as"
       },
       {
        "prompt": "2  The lion is ............ (small) the elephant.",
        "answer": "smaller than",
        "promptUz": "'not' YO'Q — qaysi qolip?",
        "whyUz": "'not' YO'Q → QIYOSIY daraja + THAN.\n'small' — 1 bo'g'in → SMALLER.\nDIQQAT: 'than' ham bo'shliqqa kiradi\n(gapda bosilmagan).\nSher fildan kichikroq — rasmda ko'rinib turibdi.",
-       "speak": "2  The lion is ............ (small) the elephant."
+       "speak": "2  The lion is ............ (small) the elephant.",
+       "speakAnswer": "smaller than"
       },
       {
        "prompt": "3  The lion is not ............ (friendly) the chimpanzee.",
        "answer": "as friendly as",
        "promptUz": "'not' bor",
        "whyUz": "'not' bor → AS ... AS.\n'friendly' ODDIY shaklda qoladi\n('friendlier' XATO).\nDIQQAT: 'friendly' '-ly' bilan tugasa ham\nSIFAT (ravish emas).",
-       "speak": "3  The lion is not ............ (friendly) the chimpanzee."
+       "speak": "3  The lion is not ............ (friendly) the chimpanzee.",
+       "speakAnswer": "as friendly as"
       },
       {
        "prompt": "4  The elephant is ............ (heavy) animal of all.",
        "answer": "the heaviest",
        "promptUz": "'of all' — qaysi daraja?",
        "whyUz": "'OF ALL' → ORTTIRMA daraja.\n'heavy' — '-y' bilan tugagan → THE HEAVIEST.\nFil — quruqlikdagi eng og'ir hayvon.",
-       "speak": "4  The elephant is ............ (heavy) animal of all."
+       "speak": "4  The elephant is ............ (heavy) animal of all.",
+       "speakAnswer": "the heaviest"
       },
       {
        "prompt": "5  The lion is ............ (dangerous) animal of all.",
        "answer": "the most dangerous",
        "promptUz": "'of all' — qaysi daraja?",
        "whyUz": "'OF ALL' → ORTTIRMA daraja.\n'dangerous' — 3 bo'g'in → THE MOST DANGEROUS.\n'dangerousest' XATO.",
-       "speak": "5  The lion is ............ (dangerous) animal of all."
+       "speak": "5  The lion is ............ (dangerous) animal of all.",
+       "speakAnswer": "the most dangerous"
       },
       {
        "prompt": "6  The chimpanzee is not ............ (fast) the lion.",
        "answer": "as fast as",
        "promptUz": "'not' bor",
        "whyUz": "'not' bor → AS ... AS.\n'fast' ODDIY shaklda qoladi.\nSher shimpanzedan tezroq yuguradi.",
-       "speak": "6  The chimpanzee is not ............ (fast) the lion."
+       "speak": "6  The chimpanzee is not ............ (fast) the lion.",
+       "speakAnswer": "as fast as"
       }
      ]
     },
@@ -3051,119 +3255,136 @@
        "answer": "older than",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA. Ikki odam solishtirilmoqda →\nQIYOSIY daraja + THAN.\n'old' — 1 bo'g'in → OLDER.",
-       "speak": "1  My father is ............ my mother.  (old)"
+       "speak": "1  My father is ............ my mother.  (old)",
+       "speakAnswer": "older than"
       },
       {
        "prompt": "2  This city is very ............ .  (noisy)",
        "answer": "noisy",
        "promptUz": "DIQQAT — 'very' dan keyin qaysi shakl?",
        "whyUz": "ODDIY ShAKL.\n'very' + ODDIY sifat (Grammar 52-bet qoidasi).\nQIYOSLASH YO'Q — gap nuqta bilan tugaydi.\n'very noisier' XATO.",
-       "speak": "2  This city is very ............ .  (noisy)"
+       "speak": "2  This city is very ............ .  (noisy)",
+       "speakAnswer": "noisy"
       },
       {
        "prompt": "3  She has got ............ toys ............ her sister.  (many)",
        "answer": "more ... than",
        "promptUz": "NOTO'G'RI sifat",
        "whyUz": "'many' — NOTO'G'RI sifat → MORE + THAN.\n'toys' — SANALADIGAN ot, shuning uchun 'many'\n('much' emas).\nQiyosiy shakli ikkalasi uchun ham 'more'.",
-       "speak": "3  She has got ............ toys ............ her sister.  (many)"
+       "speak": "3  She has got ............ toys ............ her sister.  (many)",
+       "speakAnswer": "more ... than"
       },
       {
        "prompt": "4  The cheetah is ............ animal ............ all.  (fast)",
        "answer": "the fastest ... of",
        "promptUz": "'all' — guruh",
        "whyUz": "'all' — GURUH → ORTTIRMA daraja + OF.\n'fast' — 1 bo'g'in → THE FASTEST ... OF all.\n'a cheetah' = gepard — yer yuzidagi\neng tez hayvon (110 km/soat).",
-       "speak": "4  The cheetah is ............ animal ............ all.  (fast)"
+       "speak": "4  The cheetah is ............ animal ............ all.  (fast)",
+       "speakAnswer": "the fastest ... of"
       },
       {
        "prompt": "5  That dress is very ............ .  (expensive)",
        "answer": "expensive",
        "promptUz": "DIQQAT — 'very' dan keyin",
        "whyUz": "ODDIY ShAKL.\n'very' + ODDIY sifat.\n'very more expensive' XATO.\n2-band bilan bir xil qoida.",
-       "speak": "5  That dress is very ............ .  (expensive)"
+       "speak": "5  That dress is very ............ .  (expensive)",
+       "speakAnswer": "expensive"
       },
       {
        "prompt": "6  That was ............ film of all.  (good)",
        "answer": "the best",
        "promptUz": "NOTO'G'RI sifat; 'of all' bor",
        "whyUz": "'of all' → ORTTIRMA daraja.\n'good' — NOTO'G'RI sifat → THE BEST.\n'the goodest' / 'the most good' XATO.\nDIQQAT: 'of all' gapda ALLAQACHON bor —\njavobga faqat 'the best' kiradi.",
-       "speak": "6  That was ............ film of all.  (good)"
+       "speak": "6  That was ............ film of all.  (good)",
+       "speakAnswer": "the best"
       },
       {
        "prompt": "7  Chile is ............ place ............ the world.  (dry)",
        "answer": "the driest ... in",
        "promptUz": "'the world' — joy",
        "whyUz": "'the world' — JOY → ORTTIRMA daraja + IN.\n'dry' — '-y' tushadi → THE DRIEST.\n'the dryest' XATO.\nCoursebook 85-bet, 12-mashqning 4-bandi\nham shu fakt (Atakama cho'li, Chili).",
-       "speak": "7  Chile is ............ place ............ the world.  (dry)"
+       "speak": "7  Chile is ............ place ............ the world.  (dry)",
+       "speakAnswer": "the driest ... in"
       },
       {
        "prompt": "8  Her flat is ............ ours.  (big)",
        "answer": "bigger than",
        "promptUz": "Undosh ikkilanadi",
        "whyUz": "Ikki kvartira solishtirilmoqda →\nQIYOSIY daraja + THAN.\n'big' — undosh + unli + undosh → 'g' IKKILANADI\n→ BIGGER.\n'ours' = 'our flat' o'rniga (egalik olmoshi).",
-       "speak": "8  Her flat is ............ ours.  (big)"
+       "speak": "8  Her flat is ............ ours.  (big)",
+       "speakAnswer": "bigger than"
       },
       {
        "prompt": "9  Tom Cruise is very ............ .  (famous)",
        "answer": "famous",
        "promptUz": "DIQQAT — 'very' dan keyin",
        "whyUz": "ODDIY ShAKL.\n'very' + ODDIY sifat.\n'very more famous' XATO.\nTom Kruz — amerikalik aktyor.",
-       "speak": "9  Tom Cruise is very ............ .  (famous)"
+       "speak": "9  Tom Cruise is very ............ .  (famous)",
+       "speakAnswer": "famous"
       },
       {
        "prompt": "10  The giraffe is ............ animal ............ all.  (tall)",
        "answer": "the tallest ... of",
        "promptUz": "'all' — guruh",
        "whyUz": "'all' — GURUH → ORTTIRMA daraja + OF.\n'tall' — 1 bo'g'in → THE TALLEST ... OF all.\nGrammar 52-betdagi 'Use' qutisidagi namuna\nning aynan o'zi.",
-       "speak": "10  The giraffe is ............ animal ............ all.  (tall)"
+       "speak": "10  The giraffe is ............ animal ............ all.  (tall)",
+       "speakAnswer": "the tallest ... of"
       },
       {
        "prompt": "11  Which is ............ city ............ the USA?  (large)",
        "answer": "the largest ... in",
        "promptUz": "'the USA' — joy",
        "whyUz": "'the USA' — JOY → ORTTIRMA daraja + IN.\n'large' — '-e' bilan tugagan → THE LARGEST.\nCoursebook 83-betdagi maqola: 'Los Angeles is\nthe second LARGEST city in America.'",
-       "speak": "11  Which is ............ city ............ the USA?  (large)"
+       "speak": "11  Which is ............ city ............ the USA?  (large)",
+       "speakAnswer": "the largest ... in"
       },
       {
        "prompt": "12  Michelle is ............ Jennifer.  (pretty)",
        "answer": "prettier than",
        "promptUz": "'-y' bilan tugagan",
        "whyUz": "Ikki odam solishtirilmoqda →\nQIYOSIY daraja + THAN.\n'pretty' — '-y' tushadi → PRETTIER.\n'more pretty' ham uchraydi, lekin kitob\nqoidasi bo'yicha PRETTIER.",
-       "speak": "12  Michelle is ............ Jennifer.  (pretty)"
+       "speak": "12  Michelle is ............ Jennifer.  (pretty)",
+       "speakAnswer": "prettier than"
       },
       {
        "prompt": "13  Motorcycles are ............ aeroplanes.  (dangerous)",
        "answer": "more dangerous than",
        "promptUz": "3 bo'g'inli",
        "whyUz": "QIYOSIY daraja + THAN.\n'dangerous' — 3 bo'g'in → MORE DANGEROUS.\n'a motorcycle' = mototsikl,\n'an aeroplane' = samolyot (Britaniya varianti;\nAmerikada 'airplane').",
-       "speak": "13  Motorcycles are ............ aeroplanes.  (dangerous)"
+       "speak": "13  Motorcycles are ............ aeroplanes.  (dangerous)",
+       "speakAnswer": "more dangerous than"
       },
       {
        "prompt": "14  Your money is ............ in the bank ............ it is at home.  (safe)",
        "answer": "safer ... than",
        "promptUz": "'-e' bilan tugagan",
        "whyUz": "IKKI joy solishtirilmoqda (bank ↔ uy) →\nQIYOSIY daraja + THAN.\n'safe' — '-e' bilan tugagan → SAFER.\n'safeer' XATO.\n'AT home' — predlog AT.",
-       "speak": "14  Your money is ............ in the bank ............ it is at home.  (safe)"
+       "speak": "14  Your money is ............ in the bank ............ it is at home.  (safe)",
+       "speakAnswer": "safer ... than"
       },
       {
        "prompt": "15  The beach is ............ it was last year.  (crowded)",
        "answer": "more crowded than",
        "promptUz": "2 bo'g'inli, '-y' yo'q",
        "whyUz": "Plyaj O'ZINING o'tgan yilgi holati bilan\nsolishtirilmoqda → QIYOSIY daraja + THAN.\n'crowded' — 2 bo'g'in, '-y' yo'q → MORE CROWDED.\n3-mashqning 2-bandi bilan bir xil tuzilish.",
-       "speak": "15  The beach is ............ it was last year.  (crowded)"
+       "speak": "15  The beach is ............ it was last year.  (crowded)",
+       "speakAnswer": "more crowded than"
       },
       {
        "prompt": "16  Joe is quite ............ .  (tall)",
        "answer": "tall",
        "promptUz": "DIQQAT — 'quite' dan keyin qaysi shakl?",
        "whyUz": "ODDIY ShAKL.\n'quite' + ODDIY sifat (Grammar 52-bet qoidasi).\n'quite taller' XATO.\n'quite tall' = ancha baland bo'yli.\n2, 5, 9-bandlar bilan bir xil qoida.",
-       "speak": "16  Joe is quite ............ .  (tall)"
+       "speak": "16  Joe is quite ............ .  (tall)",
+       "speakAnswer": "tall"
       },
       {
        "prompt": "17  My sister is ............ person I know.  (kind)",
        "answer": "the kindest",
        "promptUz": "'I know' guruhni chegaralaydi",
        "whyUz": "'person I KNOW' — guruh chegaralangan\n(men biladigan odamlar orasida) →\nORTTIRMA daraja.\n'kind' — 1 bo'g'in → THE KINDEST.\n'kind' = mehribon.",
-       "speak": "17  My sister is ............ person I know.  (kind)"
+       "speak": "17  My sister is ............ person I know.  (kind)",
+       "speakAnswer": "the kindest"
       }
      ]
     }
@@ -3192,43 +3413,50 @@
        "prompt": "tall (qiyosiy)",
        "answer": "My father is taller than my mother.",
        "promptUz": "Otam onamdan baland bo'yli. (KITOBDAGI NAMUNA — QIYOSIY + THAN)",
-       "speak": "tall (qiyosiy)"
+       "speak": "tall (qiyosiy)",
+       "speakAnswer": "My father is taller than my mother."
       },
       {
        "prompt": "tall (orttirma)",
        "answer": "My brother is the tallest in our family.",
        "promptUz": "Akam oilamizdagi eng baland bo'yli. (KITOBDAGI NAMUNA — ORTTIRMA + IN)",
-       "speak": "tall (orttirma)"
+       "speak": "tall (orttirma)",
+       "speakAnswer": "My brother is the tallest in our family."
       },
       {
        "prompt": "old",
        "answer": "My father is older than my mother.",
        "promptUz": "Otam onamdan katta. (1 bo'g'in → -ER)",
-       "speak": "old"
+       "speak": "old",
+       "speakAnswer": "My father is older than my mother."
       },
       {
        "prompt": "patient",
        "answer": "My mother is more patient than my father.",
        "promptUz": "Onam otamdan sabrliroq. (2 bo'g'in, '-y' yo'q → MORE)",
-       "speak": "patient"
+       "speak": "patient",
+       "speakAnswer": "My mother is more patient than my father."
       },
       {
        "prompt": "short",
        "answer": "My sister is the shortest in our family.",
        "promptUz": "Singlim oilamizdagi eng past bo'yli. (1 bo'g'in → THE -EST)",
-       "speak": "short"
+       "speak": "short",
+       "speakAnswer": "My sister is the shortest in our family."
       },
       {
        "prompt": "good",
        "answer": "My grandmother is a better cook than my mother.",
        "promptUz": "Buvim onamdan yaxshiroq oshpaz. (NOTO'G'RI sifat → BETTER)",
-       "speak": "good"
+       "speak": "good",
+       "speakAnswer": "My grandmother is a better cook than my mother."
       },
       {
        "prompt": "friendly",
        "answer": "My cousin is the friendliest person in our family.",
        "promptUz": "Amakivachcham oilamizdagi eng do'stona odam. ('-y' → THE -IEST)",
-       "speak": "friendly"
+       "speak": "friendly",
+       "speakAnswer": "My cousin is the friendliest person in our family."
       }
      ]
     },
@@ -3252,7 +3480,8 @@
         "short",
         "the shortest"
        ],
-       "whyUz": "B — 'THAN' bor → QIYOSIY daraja.\n'short' — 1 bo'g'in → SHORTER."
+       "whyUz": "B — 'THAN' bor → QIYOSIY daraja.\n'short' — 1 bo'g'in → SHORTER.",
+       "speakAnswer": "shorter"
       },
       {
        "prompt": "2  Bill is ............ student in his class.",
@@ -3263,7 +3492,8 @@
         "good",
         "better"
        ],
-       "whyUz": "C — 'IN his class' → ORTTIRMA daraja.\n'good' — NOTO'G'RI sifat → THE BEST.\nBo'shliqdan oldin artikl yo'q → 'the' javobda."
+       "whyUz": "C — 'IN his class' → ORTTIRMA daraja.\n'good' — NOTO'G'RI sifat → THE BEST.\nBo'shliqdan oldin artikl yo'q → 'the' javobda.",
+       "speakAnswer": "the best"
       },
       {
        "prompt": "3  Susan is a ............ girl.",
@@ -3274,7 +3504,8 @@
         "prettier",
         "the prettiest"
        ],
-       "whyUz": "A — QIYOSLASH YO'Q, shunchaki TASVIR.\n'than' ham, 'in ...' ham yo'q.\nDIQQAT: bo'shliqdan oldin 'A' bor —\n'a' va 'the' BIRGA kelmaydi, shuning uchun\nC varianti ('the prettiest') MUMKIN EMAS."
+       "whyUz": "A — QIYOSLASH YO'Q, shunchaki TASVIR.\n'than' ham, 'in ...' ham yo'q.\nDIQQAT: bo'shliqdan oldin 'A' bor —\n'a' va 'the' BIRGA kelmaydi, shuning uchun\nC varianti ('the prettiest') MUMKIN EMAS.",
+       "speakAnswer": "pretty"
       },
       {
        "prompt": "4  New York is ............ than Miami.",
@@ -3285,7 +3516,8 @@
         "interesting",
         "the most interesting"
        ],
-       "whyUz": "B — 'THAN' bor → QIYOSIY daraja.\n'interesting' — 4 bo'g'in → MORE INTERESTING."
+       "whyUz": "B — 'THAN' bor → QIYOSIY daraja.\n'interesting' — 4 bo'g'in → MORE INTERESTING.",
+       "speakAnswer": "more interesting"
       },
       {
        "prompt": "5  Paris is a very ............ city.",
@@ -3296,7 +3528,8 @@
         "more expensive",
         "the most expensive"
        ],
-       "whyUz": "A — 'VERY' bor → ODDIY shakl.\n'very more expensive' XATO.\nGrammar 52-betdagi 'Quite/Very/Too' qoidasi."
+       "whyUz": "A — 'VERY' bor → ODDIY shakl.\n'very more expensive' XATO.\nGrammar 52-betdagi 'Quite/Very/Too' qoidasi.",
+       "speakAnswer": "expensive"
       },
       {
        "prompt": "6  Nick is ............ in his family.",
@@ -3307,7 +3540,8 @@
         "tall",
         "taller"
        ],
-       "whyUz": "C — 'IN his family' → ORTTIRMA daraja.\n'tall' — 1 bo'g'in → THE TALLEST.\n6-mashqdagi namuna bilan bir xil qolip."
+       "whyUz": "C — 'IN his family' → ORTTIRMA daraja.\n'tall' — 1 bo'g'in → THE TALLEST.\n6-mashqdagi namuna bilan bir xil qolip.",
+       "speakAnswer": "the tallest"
       },
       {
        "prompt": "7  Independence Day is a very ............ film.",
@@ -3318,7 +3552,8 @@
         "more exciting",
         "the most exciting"
        ],
-       "whyUz": "A — 'VERY' bor → ODDIY shakl.\n5-band bilan bir xil qoida.\n'Independence Day' — 1996-yilgi film."
+       "whyUz": "A — 'VERY' bor → ODDIY shakl.\n5-band bilan bir xil qoida.\n'Independence Day' — 1996-yilgi film.",
+       "speakAnswer": "exciting"
       },
       {
        "prompt": "8  A dog is ............ than a mouse.",
@@ -3329,7 +3564,8 @@
         "heavy",
         "the heaviest"
        ],
-       "whyUz": "B — 'THAN' bor → QIYOSIY daraja.\n'heavy' — '-y' tushadi → HEAVIER.\nGrammar 52-betdagi 'Use' qutisida ham\n'An elephant is much heavier than a mouse' bor edi."
+       "whyUz": "B — 'THAN' bor → QIYOSIY daraja.\n'heavy' — '-y' tushadi → HEAVIER.\nGrammar 52-betdagi 'Use' qutisida ham\n'An elephant is much heavier than a mouse' bor edi.",
+       "speakAnswer": "heavier"
       },
       {
        "prompt": "9  The Roxy is a very ............ club in Boston.",
@@ -3340,7 +3576,8 @@
         "more famous",
         "the most famous"
        ],
-       "whyUz": "A — 'A VERY' bor → ODDIY shakl.\nDIQQAT: 'in Boston' bor, lekin 'A' artikli ham bor.\n'a the most famous' XATO.\nBu yerda 'in Boston' shunchaki JOY ko'rsatadi,\norttirma daraja belgisi EMAS.\n10-band bilan SOLISHTIRING."
+       "whyUz": "A — 'A VERY' bor → ODDIY shakl.\nDIQQAT: 'in Boston' bor, lekin 'A' artikli ham bor.\n'a the most famous' XATO.\nBu yerda 'in Boston' shunchaki JOY ko'rsatadi,\norttirma daraja belgisi EMAS.\n10-band bilan SOLISHTIRING.",
+       "speakAnswer": "famous"
       },
       {
        "prompt": "10  Anthony's is ............ cafe in my town.",
@@ -3351,7 +3588,8 @@
         "popular",
         "more popular"
        ],
-       "whyUz": "C — 'IN my town' → ORTTIRMA daraja.\nDIQQAT: 9-banddan farqli, bu yerda bo'shliqdan\noldin 'a very' YO'Q → 'the' javobning ichida.\n'popular' — 3 bo'g'in → THE MOST POPULAR."
+       "whyUz": "C — 'IN my town' → ORTTIRMA daraja.\nDIQQAT: 9-banddan farqli, bu yerda bo'shliqdan\noldin 'a very' YO'Q → 'the' javobning ichida.\n'popular' — 3 bo'g'in → THE MOST POPULAR.",
+       "speakAnswer": "the most popular"
       }
      ]
     },
@@ -3371,56 +3609,64 @@
        "answer": "faster",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA.\n'THAN' bor → QIYOSIY daraja kerak.\n'fast' — 1 bo'g'in → FASTER.\nORTTIRMA ('fastest') 'than' bilan ISHLATILMAYDI.",
-       "speak": "1  My new car is FASTEST than my old one."
+       "speak": "1  My new car is FASTEST than my old one.",
+       "speakAnswer": "faster"
       },
       {
        "prompt": "2  Alex is SHORT than Tom.",
        "answer": "shorter",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja kerak,\nlekin ODDIY shakl yozilgan.\n'short' — 1 bo'g'in → SHORTER.",
-       "speak": "2  Alex is SHORT than Tom."
+       "speak": "2  Alex is SHORT than Tom.",
+       "speakAnswer": "shorter"
       },
       {
        "prompt": "3  She's PRETTYER than her sister.",
        "answer": "prettier",
        "promptUz": "YOZILISh xatosi",
        "whyUz": "Daraja TO'G'RI (qiyosiy), lekin YOZILIShI xato.\n'pretty' — '-y' TUShADI, '-IER' qo'shiladi:\n  pretty → prett + IER → PRETTIER\n'prettyer' XATO.",
-       "speak": "3  She's PRETTYER than her sister."
+       "speak": "3  She's PRETTYER than her sister.",
+       "speakAnswer": "prettier"
       },
       {
        "prompt": "4  Edinburgh is much SMALLEST than London.",
        "answer": "smaller",
        "promptUz": "'much' va 'than' bor",
        "whyUz": "'MUCH' va 'THAN' — ikkalasi ham QIYOSIY\ndarajani talab qiladi.\n'small' — 1 bo'g'in → SMALLER.\n'much smallest' XATO — 'much' faqat qiyosiy\ndaraja bilan (Grammar 52-bet).",
-       "speak": "4  Edinburgh is much SMALLEST than London."
+       "speak": "4  Edinburgh is much SMALLEST than London.",
+       "speakAnswer": "smaller"
       },
       {
        "prompt": "5  Egypt is THE FASCINATING country.",
        "answer": "the most fascinating",
        "promptUz": "'the' bor, lekin sifat oddiy shaklda",
        "whyUz": "'THE' bor → ORTTIRMA daraja kerak.\n'fascinating' — 4 bo'g'in → THE MOST FASCINATING.\n'the fascinating country' — grammatik jihatdan\nto'liq emas ('the' orttirma darajani talab qiladi).",
-       "speak": "5  Egypt is THE FASCINATING country."
+       "speak": "5  Egypt is THE FASCINATING country.",
+       "speakAnswer": "the most fascinating"
       },
       {
        "prompt": "6  The Eiffel Tower is THE MORE FAMOUS tower in France.",
        "answer": "the most famous",
        "promptUz": "'the ... in France' — qaysi daraja?",
        "whyUz": "'THE ... IN France' → ORTTIRMA daraja.\n'the MORE' XATO → 'the MOST'.\nBU ENG KO'P UCHRAYDIGAN XATO:\n  MORE — qiyosiy daraja uchun\n  THE MOST — orttirma daraja uchun\nEyfel minorasi — Parijdagi mashhur minora.",
-       "speak": "6  The Eiffel Tower is THE MORE FAMOUS tower in France."
+       "speak": "6  The Eiffel Tower is THE MORE FAMOUS tower in France.",
+       "speakAnswer": "the most famous"
       },
       {
        "prompt": "7  Is Rome OLD than Venice?",
        "answer": "older",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja kerak.\n'old' — 1 bo'g'in → OLDER.\nRim va Venesiya — Coursebook 86-betdagi\n16b-mashqdagi shaharlar.",
-       "speak": "7  Is Rome OLD than Venice?"
+       "speak": "7  Is Rome OLD than Venice?",
+       "speakAnswer": "older"
       },
       {
        "prompt": "8  That is a very NICER dress.",
        "answer": "nice",
        "promptUz": "'a very' bor",
        "whyUz": "'A VERY' bor → ODDIY shakl kerak.\n'a very NICE dress'.\n'a very nicer' XATO.\n7-mashqning 5, 7, 9-bandlari bilan bir xil qoida.\nDIQQAT: 'a' artikli ham qiyosiy/orttirma\ndarajaga to'sqinlik qiladi.",
-       "speak": "8  That is a very NICER dress."
+       "speak": "8  That is a very NICER dress.",
+       "speakAnswer": "nice"
       }
      ]
     }
@@ -3450,63 +3696,72 @@
        "answer": "tall / taller",
        "promptUz": "'-est' — qisqa sifat",
        "whyUz": "'the tallEST' → qisqa sifat.\nTALL → TALLER → the tallest.\nBir bo'g'inli sifat -ER / THE -EST oladi.",
-       "speak": "............  /  ............  /  the tallest"
+       "speak": "............  /  ............  /  the tallest",
+       "speakAnswer": "tall / taller"
       },
       {
        "prompt": "............  /  safer  /  ............",
        "answer": "safe / the safest",
        "promptUz": "'-er' — '-e' bilan tugagan",
        "whyUz": "'safER' → sifat '-e' bilan tugagan.\nSAFE → safer → THE SAFEST.\n'safeest' XATO — faqat -ST qo'shiladi.",
-       "speak": "............  /  safer  /  ............"
+       "speak": "............  /  safer  /  ............",
+       "speakAnswer": "safe / the safest"
       },
       {
        "prompt": "sunny  /  ............  /  ............",
        "answer": "sunnier / the sunniest",
        "promptUz": "'-y' bilan tugagan",
        "whyUz": "'-y' TUSHADI, '-IER' / '-IEST' qo'shiladi.\nsunny → SUNNIER → THE SUNNIEST.\nCoursebook 84-bet, 9-mashqdagi namuna.",
-       "speak": "sunny  /  ............  /  ............"
+       "speak": "sunny  /  ............  /  ............",
+       "speakAnswer": "sunnier / the sunniest"
       },
       {
        "prompt": "............  /  more popular  /  ............",
        "answer": "popular / the most popular",
        "promptUz": "'more' — uzun sifat",
        "whyUz": "'MORE popular' → uzun sifat (3 bo'g'in).\nPOPULAR → more popular → THE MOST POPULAR.\n'popularer' XATO.",
-       "speak": "............  /  more popular  /  ............"
+       "speak": "............  /  more popular  /  ............",
+       "speakAnswer": "popular / the most popular"
       },
       {
        "prompt": "............  /  ............  /  the best",
        "answer": "good / better",
        "promptUz": "NOTO'G'RI sifat",
        "whyUz": "'the BEST' → NOTO'G'RI sifat.\nGOOD → BETTER → the best.\n'gooder' / 'the goodest' XATO.",
-       "speak": "............  /  ............  /  the best"
+       "speak": "............  /  ............  /  the best",
+       "speakAnswer": "good / better"
       },
       {
        "prompt": "............  /  worse  /  ............",
        "answer": "bad / the worst",
        "promptUz": "NOTO'G'RI sifat",
        "whyUz": "'WORSE' → NOTO'G'RI sifat.\nBAD → worse → THE WORST.\n'badder' / 'the baddest' XATO.",
-       "speak": "............  /  worse  /  ............"
+       "speak": "............  /  worse  /  ............",
+       "speakAnswer": "bad / the worst"
       },
       {
        "prompt": "much  /  ............  /  ............",
        "answer": "more / the most",
        "promptUz": "NOTO'G'RI sifat",
        "whyUz": "much → MORE → THE MOST.\n'much' — SANALMAYDIGAN otlar bilan\n(much water, much time).",
-       "speak": "much  /  ............  /  ............"
+       "speak": "much  /  ............  /  ............",
+       "speakAnswer": "more / the most"
       },
       {
        "prompt": "many  /  ............  /  the most",
        "answer": "more",
        "promptUz": "'much' bilan bir xil",
        "whyUz": "many → MORE → the most.\n'many' — SANALADIGAN otlar bilan\n(many books, many people).\nDIQQAT: 'much' va 'many' ning qiyosiy va\northirma shakllari AYNAN BIR XIL.",
-       "speak": "many  /  ............  /  the most"
+       "speak": "many  /  ............  /  the most",
+       "speakAnswer": "more"
       },
       {
        "prompt": "............  /  less  /  ............",
        "answer": "little / the least",
        "promptUz": "'much/many' ning aksi",
        "whyUz": "'LESS' → NOTO'G'RI sifat.\nLITTLE → less → THE LEAST.\nBu 'much/many' ning AKSI.\n'littler' / 'littlest' bu ma'noda XATO.",
-       "speak": "............  /  less  /  ............"
+       "speak": "............  /  less  /  ............",
+       "speakAnswer": "little / the least"
       }
      ]
     },
@@ -3526,42 +3781,48 @@
        "answer": "further from the sea than",
        "promptUz": "DIQQAT — kitobning namunasida XATO bor",
        "whyUz": "⚠ KITOBDA XATO.\nKitob shunday bosgan: 'Pebbles Restaurant is\nCLOSER TO THE SEA THAN Fisherman's Inn.'\n\nLEKIN kartochkalarda:\n  Pebbles         — dengizdan 400 metr\n  Fisherman's Inn — dengizdan 50 metr\n→ FISHERMAN'S INN yaqinroq!\n\nTO'G'RI VARIANTLAR:\n  'Pebbles Restaurant is FURTHER FROM the sea\n   than Fisherman's Inn.'\n  yoki\n  'Fisherman's Inn is CLOSER to the sea than\n   Pebbles Restaurant.'\n\n(Agar o'qituvchi kitobning javobini so'rasa —\n'closer to the sea than' deb yozing, lekin\nxatoni bilib turing.)",
-       "speak": "1  Pebbles Restaurant is ............ Fisherman's Inn.  (close)"
+       "speak": "1  Pebbles Restaurant is ............ Fisherman's Inn.  (close)",
+       "speakAnswer": "further from the sea than"
       },
       {
        "prompt": "2  Fisherman's Inn has got ............ .  (staff)",
        "answer": "more staff than Pebbles Restaurant",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA. 25 xodim > 15 xodim.\n'many' → MORE (noto'g'ri sifat).\n'staff' = xodimlar (shakli birlik, ma'nosi ko'plik).\n'more staffs' XATO.",
-       "speak": "2  Fisherman's Inn has got ............ .  (staff)"
+       "speak": "2  Fisherman's Inn has got ............ .  (staff)",
+       "speakAnswer": "more staff than Pebbles Restaurant"
       },
       {
        "prompt": "3  Pebbles Restaurant is ............ .  (expensive)",
        "answer": "more expensive than Fisherman's Inn",
        "promptUz": "Narxlarni solishtiring",
        "whyUz": "Pebbles: £25-£50\nFisherman's Inn: £10-£30\n→ Pebbles QIMMATROQ.\n'expensive' — 3 bo'g'in → MORE EXPENSIVE + THAN.",
-       "speak": "3  Pebbles Restaurant is ............ .  (expensive)"
+       "speak": "3  Pebbles Restaurant is ............ .  (expensive)",
+       "speakAnswer": "more expensive than Fisherman's Inn"
       },
       {
        "prompt": "4  Fisherman's Inn has got ............ .  (tables)",
        "answer": "more tables than Pebbles Restaurant",
        "promptUz": "Stollar sonini solishtiring",
        "whyUz": "Fisherman's Inn: 60 stol\nPebbles: 25 stol\n→ Fisherman's Inn da KO'PROQ.\n'many' → MORE + THAN.\n'tables' SANALADIGAN ot.",
-       "speak": "4  Fisherman's Inn has got ............ .  (tables)"
+       "speak": "4  Fisherman's Inn has got ............ .  (tables)",
+       "speakAnswer": "more tables than Pebbles Restaurant"
       },
       {
        "prompt": "5  Fisherman's Inn is ............ .  (old)",
        "answer": "older than Pebbles Restaurant",
        "promptUz": "Ochilgan yillarni solishtiring",
        "whyUz": "Fisherman's Inn: 1958-yilda ochilgan\nPebbles: 1975-yilda ochilgan\n→ 1958 AVVALROQ → Fisherman's Inn ESKIROQ.\n'old' — 1 bo'g'in → OLDER + THAN.\nDIQQAT: kichikroq sana = eskiroq.",
-       "speak": "5  Fisherman's Inn is ............ .  (old)"
+       "speak": "5  Fisherman's Inn is ............ .  (old)",
+       "speakAnswer": "older than Pebbles Restaurant"
       },
       {
        "prompt": "6  Pebbles Restaurant is ............ .  (small)",
        "answer": "smaller than Fisherman's Inn",
        "promptUz": "Kartochkalardagi sifatlarga qarang",
        "whyUz": "Pebbles: 'SMALL and romantic'\nFisherman's Inn: 'LARGE, clean dining area'\n→ Pebbles KICHIKROQ.\n'small' — 1 bo'g'in → SMALLER + THAN.\nStollar soni ham buni tasdiqlaydi (25 < 60).",
-       "speak": "6  Pebbles Restaurant is ............ .  (small)"
+       "speak": "6  Pebbles Restaurant is ............ .  (small)",
+       "speakAnswer": "smaller than Fisherman's Inn"
       }
      ]
     },
@@ -3586,7 +3847,8 @@
         "the"
        ],
        "whyUz": "'the tallEST' ORTTIRMA daraja + ShAHAR → IN.\nGrammar 52-bet: 'the ... IN' (joy bilan).",
-       "speak": "1  The World Trade Center is the tallest building ............ New York."
+       "speak": "1  The World Trade Center is the tallest building ............ New York.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "2  Travelling by plane is faster ............ travelling by train.",
@@ -3598,7 +3860,8 @@
         "the"
        ],
        "whyUz": "'fastER' QIYOSIY daraja → THAN.\nDIQQAT: ikki tomonda ham 'TRAVELLING' —\nbir xil narsalar solishtiriladi.",
-       "speak": "2  Travelling by plane is faster ............ travelling by train."
+       "speak": "2  Travelling by plane is faster ............ travelling by train.",
+       "speakAnswer": "than"
       },
       {
        "prompt": "3  There are five restaurants in my town. Pierre's is the most expensive ............ all.",
@@ -3610,7 +3873,8 @@
         "the"
        ],
        "whyUz": "'the most expensive' ORTTIRMA daraja +\n'all' GURUH → OF.\n'of all' = hammasidan.\n'in all' XATO.",
-       "speak": "3  There are five restaurants in my town. Pierre's is the most expensive ............ all."
+       "speak": "3  There are five restaurants in my town. Pierre's is the most expensive ............ all.",
+       "speakAnswer": "of"
       },
       {
        "prompt": "4  The Sandy Beach Hotel is more comfortable ............ the Paradise Hotel.",
@@ -3622,7 +3886,8 @@
         "the"
        ],
        "whyUz": "'MORE comfortable' QIYOSIY daraja → THAN.\nIkki mehmonxona solishtirilmoqda.",
-       "speak": "4  The Sandy Beach Hotel is more comfortable ............ the Paradise Hotel."
+       "speak": "4  The Sandy Beach Hotel is more comfortable ............ the Paradise Hotel.",
+       "speakAnswer": "than"
       },
       {
        "prompt": "5  The nightlife in Boston is not ............ exciting ............ the nightlife in Los Angeles.  [ikkala bo'shliq]",
@@ -3634,7 +3899,8 @@
         "than"
        ],
        "whyUz": "'exciting' ODDIY shaklda va 'not' bor →\nAS ... AS.\n'is NOT AS exciting AS ...'\n= ... chalik qiziqarli emas.\nDIQQAT: ikkala bo'shliq ham 'as'.",
-       "speak": "5  The nightlife in Boston is not ............ exciting ............ the nightlife in Los Angeles.  [ikkala bo'shliq]"
+       "speak": "5  The nightlife in Boston is not ............ exciting ............ the nightlife in Los Angeles.  [ikkala bo'shliq]",
+       "speakAnswer": "as ... as"
       },
       {
        "prompt": "6  Big Ben is one of the most famous sights ............ London.",
@@ -3646,7 +3912,8 @@
         "the"
        ],
        "whyUz": "'the most famous' ORTTIRMA daraja + ShAHAR → IN.\nDIQQAT: 'one of the ...' dan keyin KO'PLIK ot\n('sightS').\nBig Ben — London parlamentidagi mashhur soat minorasi.",
-       "speak": "6  Big Ben is one of the most famous sights ............ London."
+       "speak": "6  Big Ben is one of the most famous sights ............ London.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "7  St Mary's is ............ oldest church in the country.",
@@ -3658,7 +3925,8 @@
         "than"
        ],
        "whyUz": "'oldEST' ORTTIRMA daraja → oldidan DOIM 'THE'.\nBu — eng ko'p UNUTILADIGAN qoida.\n'St Mary's is oldest church' XATO.\n'a church' = cherkov.",
-       "speak": "7  St Mary's is ............ oldest church in the country."
+       "speak": "7  St Mary's is ............ oldest church in the country.",
+       "speakAnswer": "the"
       }
      ]
     },
@@ -3678,56 +3946,64 @@
        "answer": "the oldest",
        "promptUz": "'... in Europe' — qaysi daraja?",
        "whyUz": "'... IN Europe' → ORTTIRMA daraja.\n'old' — 1 bo'g'in → THE OLDEST.\n'THE' TUSHIB QOLMASIN.\nGrammar 53-bet, 3-mashqning 4-bandi ham shu\nqolipda edi ('Is Athens the oldest city in\nEurope?').",
-       "speak": "1  Is Rome ............ (old) city in Europe?"
+       "speak": "1  Is Rome ............ (old) city in Europe?",
+       "speakAnswer": "the oldest"
       },
       {
        "prompt": "2  The traffic today is ............ (bad) than yesterday.",
        "answer": "worse",
        "promptUz": "NOTO'G'RI sifat",
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'bad' — NOTO'G'RI sifat → WORSE.\n'badder' / 'more bad' XATO.\n6-mashqdagi jadvalda ham bor.",
-       "speak": "2  The traffic today is ............ (bad) than yesterday."
+       "speak": "2  The traffic today is ............ (bad) than yesterday.",
+       "speakAnswer": "worse"
       },
       {
        "prompt": "3  The garden in our new house is ............ (small) than the old one.",
        "answer": "smaller",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'small' — 1 bo'g'in → SMALLER.\n'the old ONE' = 'the old garden' o'rniga.",
-       "speak": "3  The garden in our new house is ............ (small) than the old one."
+       "speak": "3  The garden in our new house is ............ (small) than the old one.",
+       "speakAnswer": "smaller"
       },
       {
        "prompt": "4  Los Angeles is ............ (crowded) as Boston.",
        "answer": "as crowded",
        "promptUz": "DIQQAT — gapda 'as' allaqachon bor",
        "whyUz": "Gapda IKKINCHI 'as' allaqachon bosilgan →\n'AS ... AS' qolipi.\nJavobga BIRINCHI 'as' + ODDIY sifat kiradi:\n'AS CROWDED'.\n'more crowded as' XATO.\n= LA Bostonchalik gavjum (TENG).",
-       "speak": "4  Los Angeles is ............ (crowded) as Boston."
+       "speak": "4  Los Angeles is ............ (crowded) as Boston.",
+       "speakAnswer": "as crowded"
       },
       {
        "prompt": "5  The Stevens live in ............ (fashionable) area in town.",
        "answer": "the most fashionable",
        "promptUz": "'... in town' — qaysi daraja?",
        "whyUz": "'... IN town' → ORTTIRMA daraja.\n'fashionable' — 4 bo'g'in → THE MOST FASHIONABLE.\n'The Stevens' = Stivenslar oilasi\n('the' + familiya = butun oila).",
-       "speak": "5  The Stevens live in ............ (fashionable) area in town."
+       "speak": "5  The Stevens live in ............ (fashionable) area in town.",
+       "speakAnswer": "the most fashionable"
       },
       {
        "prompt": "6  Are the shops in the centre ............ (expensive) than the local shops?",
        "answer": "more expensive",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'expensive' — 3 bo'g'in → MORE EXPENSIVE.\n'local' = mahalliy.",
-       "speak": "6  Are the shops in the centre ............ (expensive) than the local shops?"
+       "speak": "6  Are the shops in the centre ............ (expensive) than the local shops?",
+       "speakAnswer": "more expensive"
       },
       {
        "prompt": "7  This room has got ............ (good) view of all the rooms in the hotel.",
        "answer": "the best",
        "promptUz": "NOTO'G'RI sifat; 'of all' bor",
        "whyUz": "'OF ALL the rooms' → ORTTIRMA daraja.\n'good' — NOTO'G'RI sifat → THE BEST.\n'the goodest' XATO.\n'a view' = manzara, ko'rinish.",
-       "speak": "7  This room has got ............ (good) view of all the rooms in the hotel."
+       "speak": "7  This room has got ............ (good) view of all the rooms in the hotel.",
+       "speakAnswer": "the best"
       },
       {
        "prompt": "8  The city isn't ............ (polluted) as it was ten years ago.",
        "answer": "as polluted",
        "promptUz": "DIQQAT — gapda 'as' allaqachon bor",
        "whyUz": "Gapda IKKINCHI 'as' bosilgan → 'AS ... AS' qolipi.\nJavob: 'AS POLLUTED'.\n'isn't AS POLLUTED AS it was' = o'n yil\noldingidek ifloslangan emas (ya'ni HOZIR\nTOZAROQ).\n4-band bilan bir xil qoida.",
-       "speak": "8  The city isn't ............ (polluted) as it was ten years ago."
+       "speak": "8  The city isn't ............ (polluted) as it was ten years ago.",
+       "speakAnswer": "as polluted"
       }
      ]
     },
@@ -3747,49 +4023,56 @@
        "answer": "The Colosseum is the most interesting sight in Rome.",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA. 'in Rome' → guruh chegaralangan →\nORTTIRMA daraja.\n'interesting' — 4 bo'g'in → THE MOST INTERESTING.\nKolizey — Coursebook 84-betdagi rasmda ham bor\n(82 AD).",
-       "speak": "1  The Colosseum is / interesting / sight in Rome"
+       "speak": "1  The Colosseum is / interesting / sight in Rome",
+       "speakAnswer": "The Colosseum is the most interesting sight in Rome."
       },
       {
        "prompt": "2  Big cities are usually / polluted / small towns.",
        "answer": "Big cities are usually more polluted than small towns.",
        "promptUz": "Ikki narsa solishtirilmoqda",
        "whyUz": "IKKI narsa (big cities / small towns) →\nQIYOSIY daraja + THAN.\n'polluted' — 3 bo'g'in → MORE POLLUTED.\n'usually' o'z o'rnida qoladi.",
-       "speak": "2  Big cities are usually / polluted / small towns."
+       "speak": "2  Big cities are usually / polluted / small towns.",
+       "speakAnswer": "Big cities are usually more polluted than small towns."
       },
       {
        "prompt": "3  Swimming in the sea is / dangerous / swimming in a pool.",
        "answer": "Swimming in the sea is more dangerous than swimming in a pool.",
        "promptUz": "Ikki harakat solishtirilmoqda",
        "whyUz": "IKKI harakat solishtirilmoqda →\nQIYOSIY daraja + THAN.\n'dangerous' — 3 bo'g'in → MORE DANGEROUS.\nDIQQAT: ikki tomonda ham 'SWIMMING' —\nbir xil shakl.",
-       "speak": "3  Swimming in the sea is / dangerous / swimming in a pool."
+       "speak": "3  Swimming in the sea is / dangerous / swimming in a pool.",
+       "speakAnswer": "Swimming in the sea is more dangerous than swimming in a pool."
       },
       {
        "prompt": "4  Is the Nile / long / the Thames?",
        "answer": "Is the Nile longer than the Thames?",
        "promptUz": "Ikki daryo solishtirilmoqda",
        "whyUz": "IKKI daryo → QIYOSIY daraja + THAN.\n'long' — 1 bo'g'in → LONGER.\nSAVOL shakli: 'IS the Nile longer than ...?'\nNil — dunyodagi eng uzun daryo (Coursebook\n85-bet, 12-mashq), Temza — Londondagi daryo.",
-       "speak": "4  Is the Nile / long / the Thames?"
+       "speak": "4  Is the Nile / long / the Thames?",
+       "speakAnswer": "Is the Nile longer than the Thames?"
       },
       {
        "prompt": "5  Last night was / romantic / night of my life.",
        "answer": "Last night was the most romantic night of my life.",
        "promptUz": "'of my life' — qaysi daraja?",
        "whyUz": "'OF my life' → guruh chegaralangan →\nORTTIRMA daraja.\n'romantic' — 3 bo'g'in → THE MOST ROMANTIC.\n1-band bilan bir xil qolip.",
-       "speak": "5  Last night was / romantic / night of my life."
+       "speak": "5  Last night was / romantic / night of my life.",
+       "speakAnswer": "Last night was the most romantic night of my life."
       },
       {
        "prompt": "6  The two cars are the same price. The blue one is / expensive / the white one.",
        "answer": "The blue one is as expensive as the white one.",
        "promptUz": "DIQQAT — 'the same price' javobni ko'rsatib turibdi",
        "whyUz": "BIRINCHI JUMLA KALIT: 'The two cars are THE SAME\nPRICE' — narxlar TENG.\n→ TENGLIK qolipi: AS ... AS.\n'AS EXPENSIVE AS' (sifat ODDIY shaklda).\n'more expensive than' XATO bo'lardi —\nnarxlar bir xil-ku.",
-       "speak": "6  The two cars are the same price. The blue one is / expensive / the white one."
+       "speak": "6  The two cars are the same price. The blue one is / expensive / the white one.",
+       "speakAnswer": "The blue one is as expensive as the white one."
       },
       {
        "prompt": "7  We paid / little / for accommodation than for entertainment.",
        "answer": "We paid less for accommodation than for entertainment.",
        "promptUz": "'little' — noto'g'ri sifat",
        "whyUz": "'than' allaqachon gapda bor → QIYOSIY daraja.\n'little' — NOTO'G'RI sifat → LESS\n(6-mashqdagi jadvaldan).\n'littler' XATO.\nSO'Z TARTIBI: 'We paid LESS for accommodation\nTHAN for entertainment.'\n= turar joyga ko'ngilochardan kamroq to'ladik.",
-       "speak": "7  We paid / little / for accommodation than for entertainment."
+       "speak": "7  We paid / little / for accommodation than for entertainment.",
+       "speakAnswer": "We paid less for accommodation than for entertainment."
       }
      ]
     }
@@ -3819,21 +4102,24 @@
        "answer": "Travelling by train isn't as expensive as travelling by plane.",
        "promptUz": "'isn't' bor — qaysi qolip?",
        "whyUz": "'ISN'T' bor → INKOR → AS ... AS qolipi.\n'expensive' ODDIY shaklda qoladi.\n'isn't more expensive as' XATO.\nDIQQAT: ikki tomonda ham 'TRAVELLING' —\nbir xil shakl.",
-       "speak": "8  Travelling by train isn't / expensive / travelling by plane."
+       "speak": "8  Travelling by train isn't / expensive / travelling by plane.",
+       "speakAnswer": "Travelling by train isn't as expensive as travelling by plane."
       },
       {
        "prompt": "9  Isn't this / dull / place of all?",
        "answer": "Isn't this the dullest place of all?",
        "promptUz": "'of all' — qaysi daraja?",
        "whyUz": "'OF ALL' → ORTTIRMA daraja.\n'dull' — 1 bo'g'in → THE DULLEST.\n'THE' TUSHIB QOLMASIN.\nSavol INKOR shaklda ('Isn't this ...?') —\najablanish yoki shikoyat.\n'dull' = zerikarli (= boring).",
-       "speak": "9  Isn't this / dull / place of all?"
+       "speak": "9  Isn't this / dull / place of all?",
+       "speakAnswer": "Isn't this the dullest place of all?"
       },
       {
        "prompt": "10  When I lived here it was much / quiet / it is today.",
        "answer": "When I lived here it was much quieter than it is today.",
        "promptUz": "'much' bor — qaysi daraja?",
        "whyUz": "'MUCH' bor → QIYOSIY daraja + THAN.\n'quiet' — 1 bo'g'in → QUIETER.\n'much quiet' XATO — 'much' faqat qiyosiy\ndaraja bilan.\nO'tmish HOZIR bilan solishtirilmoqda:\n'it WAS ... than it IS today'.",
-       "speak": "10  When I lived here it was much / quiet / it is today."
+       "speak": "10  When I lived here it was much / quiet / it is today.",
+       "speakAnswer": "When I lived here it was much quieter than it is today."
       }
      ]
     },
@@ -3853,42 +4139,48 @@
        "answer": "older / much older than",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA.\nRut 58, Teresa 26, Sandra 8.\nBirinchi bo'shliq: oddiy QIYOSIY → OLDER.\nIkkinchi bo'shliq: farq ANCHA katta →\nMUCH OLDER THAN.",
-       "speak": "1  Ruth is ............ (old) than Teresa but she's ............ (old) Sandra."
+       "speak": "1  Ruth is ............ (old) than Teresa but she's ............ (old) Sandra.",
+       "speakAnswer": "older / much older than"
       },
       {
        "prompt": "2  Sandra is ............ (short) than Ruth but she's ............ (short) than Teresa.",
        "answer": "shorter / much shorter",
        "promptUz": "Bo'ylarni solishtiring",
        "whyUz": "Sandra 1.30, Rut 1.60, Teresa 1.75.\nSandra Rutdan 0.30 past → SHORTER.\nSandra Teresadan 0.45 past (ANCHAKO'P) →\nMUCH SHORTER.\n'short' — 1 bo'g'in → -ER.",
-       "speak": "2  Sandra is ............ (short) than Ruth but she's ............ (short) than Teresa."
+       "speak": "2  Sandra is ............ (short) than Ruth but she's ............ (short) than Teresa.",
+       "speakAnswer": "shorter / much shorter"
       },
       {
        "prompt": "3  Ruth is ............ (heavy) than Teresa but she's ............ (heavy) than Sandra.",
        "answer": "heavier / much heavier",
        "promptUz": "Vaznlarni solishtiring; '-y' bilan tugagan",
        "whyUz": "Rut 75, Teresa 60, Sandra 35.\nRut Teresadan 15 kg og'ir → HEAVIER.\nRut Sandradan 40 kg og'ir (ANCHAKO'P) →\nMUCH HEAVIER.\n'heavy' — '-y' TUSHADI → HEAVIER.",
-       "speak": "3  Ruth is ............ (heavy) than Teresa but she's ............ (heavy) than Sandra."
+       "speak": "3  Ruth is ............ (heavy) than Teresa but she's ............ (heavy) than Sandra.",
+       "speakAnswer": "heavier / much heavier"
       },
       {
        "prompt": "4  Teresa has ............ (long) hair than Ruth but Sandra has got ............ (long) hair of all.",
        "answer": "longer / the longest",
        "promptUz": "RASMGA qarang — jadvalda yo'q",
        "whyUz": "Bu ma'lumot JADVALDA YO'Q — faqat RASMDAN\nko'rinadi:\n  Rut — KALTA soch (keksa ayol, ko'zoynakli)\n  Teresa — uzun soch\n  Sandra — ENG uzun soch\n\nBirinchi: 'than' bor → QIYOSIY → LONGER.\nIkkinchi: 'OF ALL' → ORTTIRMA → THE LONGEST.",
-       "speak": "4  Teresa has ............ (long) hair than Ruth but Sandra has got ............ (long) hair of all."
+       "speak": "4  Teresa has ............ (long) hair than Ruth but Sandra has got ............ (long) hair of all.",
+       "speakAnswer": "longer / the longest"
       },
       {
        "prompt": "5  Ruth is ............ (tall) Sandra but Teresa is ............ (tall) of all.",
        "answer": "taller than / the tallest",
        "promptUz": "DIQQAT — birinchi bo'shliqda 'than' ham kerak",
        "whyUz": "Rut 1.60 > Sandra 1.30 → TALLER.\nDIQQAT: gapda 'than' BOSILMAGAN →\nu ham javobga kiradi: 'TALLER THAN Sandra'.\n\nIkkinchi: 'OF ALL' → ORTTIRMA.\nTeresa 1.75 — eng baland → THE TALLEST.",
-       "speak": "5  Ruth is ............ (tall) Sandra but Teresa is ............ (tall) of all."
+       "speak": "5  Ruth is ............ (tall) Sandra but Teresa is ............ (tall) of all.",
+       "speakAnswer": "taller than / the tallest"
       },
       {
        "prompt": "6  Teresa is ............ (thin) Ruth but Sandra is ............ (thin) of all.",
        "answer": "thinner than / the thinnest",
        "promptUz": "DIQQAT — undosh ikkilanadi",
        "whyUz": "Teresa 60 kg < Rut 75 kg → THINNER.\nDIQQAT: 'than' ham javobga kiradi.\n\nIkkinchi: 'OF ALL' → ORTTIRMA.\nSandra 35 kg — eng yengil → THE THINNEST.\n\nYOZILISH: 'thin' = th + i + n\n(undosh + unli + undosh) → 'n' IKKILANADI:\nTHINNER, THE THINNEST.\n'thiner' XATO.",
-       "speak": "6  Teresa is ............ (thin) Ruth but Sandra is ............ (thin) of all."
+       "speak": "6  Teresa is ............ (thin) Ruth but Sandra is ............ (thin) of all.",
+       "speakAnswer": "thinner than / the thinnest"
       }
      ]
     },
@@ -3908,35 +4200,40 @@
        "answer": "No, they can't. It's too cold.",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA.\n'the children' → 'THEY'.\nOb-havo haqida → 'IT'S'.\n5°C — bog'da o'ynash uchun juda sovuq →\n'TOO cold' (imkonsizlik).",
-       "speak": "1  It's only 5°C. Can the children play in the garden?  (cold)"
+       "speak": "1  It's only 5°C. Can the children play in the garden?  (cold)",
+       "speakAnswer": "No, they can't. It's too cold."
       },
       {
        "prompt": "2  The box is full. Can we carry it?  (heavy)",
        "answer": "No, we can't. It's too heavy.",
        "promptUz": "Savoldagi ega: 'we'",
        "whyUz": "'Can WE ...?' → 'No, WE can't.'\nQuti haqida → 'IT'S too heavy'.\n'full' = to'la → shuning uchun og'ir.\n'to carry' = ko'tarib yurmoq.",
-       "speak": "2  The box is full. Can we carry it?  (heavy)"
+       "speak": "2  The box is full. Can we carry it?  (heavy)",
+       "speakAnswer": "No, we can't. It's too heavy."
       },
       {
        "prompt": "3  He is 80 years old. Can he windsurf?  (old)",
        "answer": "No, he can't. He's too old.",
        "promptUz": "ODAM haqida — qaysi olmosh?",
        "whyUz": "'Can HE ...?' → 'No, HE can't.'\nODAM haqida → 'HE'S too old' ('it's' EMAS).\n80 yosh — vindserfing uchun juda keksa.\n'to windsurf' = vindserfing bilan shug'ullanmoq.",
-       "speak": "3  He is 80 years old. Can he windsurf?  (old)"
+       "speak": "3  He is 80 years old. Can he windsurf?  (old)",
+       "speakAnswer": "No, he can't. He's too old."
       },
       {
        "prompt": "4  It costs £300. Can you buy it?  (expensive)",
        "answer": "No, I can't. It's too expensive.",
        "promptUz": "DIQQAT — olmosh o'zgaradi",
        "whyUz": "DIQQAT: savolda 'YOU' → javobda 'I'\n(javob beruvchi O'ZI haqida gapiradi).\n'No, I can't.'\nNarsa haqida → 'IT'S too expensive'.\n£300 — sotib olish uchun juda qimmat.",
-       "speak": "4  It costs £300. Can you buy it?  (expensive)"
+       "speak": "4  It costs £300. Can you buy it?  (expensive)",
+       "speakAnswer": "No, I can't. It's too expensive."
       },
       {
        "prompt": "5  She's ten years old. Can she drive a car?  (young)",
        "answer": "No, she can't. She's too young.",
        "promptUz": "ODAM haqida — qaysi olmosh?",
        "whyUz": "'Can SHE ...?' → 'No, SHE can't.'\nODAM haqida → 'SHE'S too young'.\n10 yosh — mashina haydash uchun juda yosh.\n'young' = yosh ('old' ning aksi).",
-       "speak": "5  She's ten years old. Can she drive a car?  (young)"
+       "speak": "5  She's ten years old. Can she drive a car?  (young)",
+       "speakAnswer": "No, she can't. She's too young."
       }
      ]
     },
@@ -3956,28 +4253,32 @@
        "answer": "Did you buy",
        "promptUz": "Javobda 'last week' bor",
        "whyUz": "PAST SIMPLE so'roq.\nJavobdan ma'lum: mashina 'LAST WEEK' sotib\nolingan.\nDID + you + BUY (ASOSIY shakl).\n'Did you bought' XATO.",
-       "speak": "Paul: 1) ............ (you/buy) a new car, John?"
+       "speak": "Paul: 1) ............ (you/buy) a new car, John?",
+       "speakAnswer": "Did you buy"
       },
       {
        "prompt": "John: Yes. I 2) ............ (buy) it last week.",
        "answer": "bought",
        "promptUz": "'last week' — noto'g'ri fe'l",
        "whyUz": "'last week' → PAST SIMPLE.\nbuy → BOUGHT (noto'g'ri fe'l).",
-       "speak": "John: Yes. I 2) ............ (buy) it last week."
+       "speak": "John: Yes. I 2) ............ (buy) it last week.",
+       "speakAnswer": "bought"
       },
       {
        "prompt": "John: I 3) ............ (go) for a drive now.",
        "answer": "'m going (am going)",
        "promptUz": "'now' — qaysi zamon?",
        "whyUz": "'NOW' → PRESENT CONTINUOUS.\n'I' → AM + GOING.\n'go for a drive' = mashinada sayr qilmoq.",
-       "speak": "John: I 3) ............ (go) for a drive now."
+       "speak": "John: I 3) ............ (go) for a drive now.",
+       "speakAnswer": "'m going"
       },
       {
        "prompt": "John: 4) ............ (you/want) to come?",
        "answer": "Do you want",
        "promptUz": "DIQQAT — 'want' his-tuyg'u fe'li",
        "whyUz": "PRESENT SIMPLE so'roq: DO + you + WANT.\n'want' — HIS-TUYG'U fe'li → '-ing' OLMAYDI.\n'Are you wanting' XATO.\nDIQQAT: 3-band bilan solishtiring —\nu yerda 'going' (harakat), bu yerda 'want'\n(his-tuyg'u).",
-       "speak": "John: 4) ............ (you/want) to come?"
+       "speak": "John: 4) ............ (you/want) to come?",
+       "speakAnswer": "Do you want"
       }
      ]
     },
@@ -3997,21 +4298,24 @@
        "answer": "are you doing",
        "promptUz": "'this afternoon' — reja",
        "whyUz": "PRESENT CONTINUOUS — REJALASHTIRILGAN yaqin\nkelajak.\n'this afternoon' hali kelmagan, lekin reja bor.\nARE + you + DOING.",
-       "speak": "Sheila: What 1) ............ (you/do) this afternoon?"
+       "speak": "Sheila: What 1) ............ (you/do) this afternoon?",
+       "speakAnswer": "are you doing"
       },
       {
        "prompt": "Diana: I 2) ............ (go) to the supermarket.",
        "answer": "'m going (am going)",
        "promptUz": "Yana reja",
        "whyUz": "PRESENT CONTINUOUS — reja.\n'I' → AM + GOING.\nSavolga mos zamonda javob berilmoqda.",
-       "speak": "Diana: I 2) ............ (go) to the supermarket."
+       "speak": "Diana: I 2) ............ (go) to the supermarket.",
+       "speakAnswer": "'m going"
       },
       {
        "prompt": "Diana: 3) ............ (you/need) anything?",
        "answer": "Do you need",
        "promptUz": "DIQQAT — 'need' holat fe'li",
        "whyUz": "PRESENT SIMPLE so'roq: DO + you + NEED.\n'need' — HOLAT fe'li → '-ing' OLMAYDI.\n'Are you needing' XATO.\nDIQQAT: 'ANYTHING' — so'roq gapda 'any-' shakli.",
-       "speak": "Diana: 3) ............ (you/need) anything?"
+       "speak": "Diana: 3) ............ (you/need) anything?",
+       "speakAnswer": "Do you need"
       }
      ]
     },
@@ -4031,14 +4335,16 @@
        "answer": "Do you know",
        "promptUz": "DIQQAT — 'know' holat fe'li",
        "whyUz": "PRESENT SIMPLE so'roq: DO + you + KNOW.\n'know' — HOLAT fe'li → '-ing' OLMAYDI.\n'Are you knowing' XATO.\nDIQQAT — SO'Z TARTIBI: 'where my jacket IS'\n(ergash gap, tartib tasdiq gapdagidek).",
-       "speak": "Tonia: 1) ............ (you/know) where my blue jacket is, Mum?"
+       "speak": "Tonia: 1) ............ (you/know) where my blue jacket is, Mum?",
+       "speakAnswer": "Do you know"
       },
       {
        "prompt": "Mum: 2) ............ (it/not be) in your wardrobe?",
        "answer": "Isn't it",
        "promptUz": "'be' fe'lining inkor so'roq shakli",
        "whyUz": "'be' fe'lining INKOR SO'ROQ shakli:\n'it' → is → isn't → 'ISN'T IT ...?'\n'did' yoki 'do' KERAK EMAS — 'be' o'zi\noldinga chiqadi.\n\nMA'NOSI: onasi kurtka shkafda deb O'YLAYDI va\nbuni tasdiqlashni so'rayapti.\n'a wardrobe' = kiyim shkafi.",
-       "speak": "Mum: 2) ............ (it/not be) in your wardrobe?"
+       "speak": "Mum: 2) ............ (it/not be) in your wardrobe?",
+       "speakAnswer": "Isn't it"
       }
      ]
     },
@@ -4058,56 +4364,64 @@
        "answer": "most",
        "promptUz": "'one of the ...' — qaysi daraja?",
        "whyUz": "'one of the ...' → ORTTIRMA daraja.\n'MORE' — qiyosiy → 'THE MOST' bo'lishi kerak.\n'one of the MOST beautiful islands'.\nBu ENG KO'P UCHRAYDIGAN xato\n(Grammar 54-bet, 8-mashqning 6-bandida ham bor edi).",
-       "speak": "1  ... is one of the MORE beautiful islands in the Caribbean."
+       "speak": "1  ... is one of the MORE beautiful islands in the Caribbean.",
+       "speakAnswer": "most"
       },
       {
        "prompt": "2  Today, they WERE nice hotels with comfortable rooms.",
        "answer": "are",
        "promptUz": "'Today' — qaysi zamon?",
        "whyUz": "'TODAY' → HOZIRGI zamon → 'ARE'.\nOldingi gap o'tgan zamonda edi\n('Two hundred years AGO ... WERE'),\nlekin bu gap BUGUN haqida.\nZamon xatosi.",
-       "speak": "2  Today, they WERE nice hotels with comfortable rooms."
+       "speak": "2  Today, they WERE nice hotels with comfortable rooms.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "3  The Carlisle Bay club is close BY a beautiful beach ...",
        "answer": "to",
        "promptUz": "Turg'un birikma",
        "whyUz": "'close TO ...' — turg'un birikma (... ga yaqin).\n'close by' boshqa ma'noda ('yaqin atrofda',\not bilan ishlatilmaydi).\n48-betdagi 5-mashqning 4-bandi ham shu qoida.",
-       "speak": "3  The Carlisle Bay club is close BY a beautiful beach ..."
+       "speak": "3  The Carlisle Bay club is close BY a beautiful beach ...",
+       "speakAnswer": "to"
       },
       {
        "prompt": "4  ... and is VERY less expensive than some of the other hotels.",
        "answer": "much",
        "promptUz": "'less expensive' — qaysi daraja?",
        "whyUz": "'less expensive' — QIYOSIY daraja.\n'VERY' ODDIY sifat bilan ishlatiladi,\n'MUCH' esa QIYOSIY daraja bilan.\n→ 'MUCH less expensive'.\nGrammar 52-betdagi qoida.",
-       "speak": "4  ... and is VERY less expensive than some of the other hotels."
+       "speak": "4  ... and is VERY less expensive than some of the other hotels.",
+       "speakAnswer": "much"
       },
       {
        "prompt": "5  The most popular FOR tourists are the Ebenezer Church and the Admiral's Museum.",
        "answer": "with",
        "promptUz": "Turg'un birikma",
        "whyUz": "'popular WITH ...' — turg'un birikma\n(... orasida mashhur).\n'popular for' XATO.\n48-betdagi 5-mashqning 2-bandi:\n'This castle is very popular WITH visitors.'",
-       "speak": "5  The most popular FOR tourists are the Ebenezer Church and the Admiral's Museum."
+       "speak": "5  The most popular FOR tourists are the Ebenezer Church and the Admiral's Museum.",
+       "speakAnswer": "with"
       },
       {
        "prompt": "6  The souvenir shops in English Harbour are the MOST CHEAP and the best.",
        "answer": "cheapest",
        "promptUz": "'cheap' — nechta bo'g'in?",
        "whyUz": "'cheap' — 1 BO'G'INLI sifat → '-EST' qo'shiladi:\n'THE CHEAPEST'.\n'the most cheap' XATO.\nDIQQAT: yonidagi 'the BEST' TO'G'RI —\nu 'good' ning noto'g'ri orttirma shakli.",
-       "speak": "6  The souvenir shops in English Harbour are the MOST CHEAP and the best."
+       "speak": "6  The souvenir shops in English Harbour are the MOST CHEAP and the best.",
+       "speakAnswer": "cheapest"
       },
       {
        "prompt": "7  For some of the MUCH delicious Caribbean dishes, go to the Calypso Cafe.",
        "answer": "most",
        "promptUz": "'some of the ...' — qaysi daraja?",
        "whyUz": "'some of the ...' → ORTTIRMA daraja.\n'delicious' — 3 bo'g'in → 'THE MOST delicious'.\n'much' bu yerda umuman mos emas —\nu faqat qiyosiy daraja bilan ishlatiladi.",
-       "speak": "7  For some of the MUCH delicious Caribbean dishes, go to the Calypso Cafe."
+       "speak": "7  For some of the MUCH delicious Caribbean dishes, go to the Calypso Cafe.",
+       "speakAnswer": "most"
       },
       {
        "prompt": "8  For a romantic and peaceful holiday, there is nowhere nicer AS Antigua.",
        "answer": "than",
        "promptUz": "'nicer' — qaysi daraja?",
        "whyUz": "'nicER' — QIYOSIY daraja → THAN.\n'as' faqat 'as ... as' qolipida ishlatiladi.\n→ 'there is nowhere nicer THAN Antigua'\n= Antiguadan yaxshiroq joy yo'q.\n'nowhere' = hech qayerda.",
-       "speak": "8  For a romantic and peaceful holiday, there is nowhere nicer AS Antigua."
+       "speak": "8  For a romantic and peaceful holiday, there is nowhere nicer AS Antigua.",
+       "speakAnswer": "than"
       }
      ]
     }
@@ -4140,7 +4454,8 @@
         "/tʃ/",
         "/dʒ/"
        ],
-       "whyUz": "/tf/ — JARANGSIZ.\n'ch-' bilan yoziladi → deyarli doim /tf/.\nO'zbekcha 'Ch' tovushi (CHOY dagidek).\nJUFTI: 'gin' /dzin/."
+       "whyUz": "/tf/ — JARANGSIZ.\n'ch-' bilan yoziladi → deyarli doim /tf/.\nO'zbekcha 'Ch' tovushi (CHOY dagidek).\nJUFTI: 'gin' /dzin/.",
+       "speakAnswer": "/tʃ/"
       },
       {
        "prompt": "gin",
@@ -4150,7 +4465,8 @@
         "/dʒ/",
         "/tʃ/"
        ],
-       "whyUz": "/dz/ — JARANGLI.\nDIQQAT — ALDAMChI: 'g' harfi bilan yozilgan,\nlekin /dz/ deb o'qiladi.\nQOIDA: 'g' dan keyin e, i, y kelsa → /dz/\n(gin, gym, giant, page, age).\nJUFTI: 'chin' /tfin/."
+       "whyUz": "/dz/ — JARANGLI.\nDIQQAT — ALDAMChI: 'g' harfi bilan yozilgan,\nlekin /dz/ deb o'qiladi.\nQOIDA: 'g' dan keyin e, i, y kelsa → /dz/\n(gin, gym, giant, page, age).\nJUFTI: 'chin' /tfin/.",
+       "speakAnswer": "/dʒ/"
       },
       {
        "prompt": "Jane",
@@ -4160,7 +4476,8 @@
         "/dʒ/",
         "/tʃ/"
        ],
-       "whyUz": "/dz/ — JARANGLI.\n'J-' bilan yoziladi → doim /dz/.\nO'zbekcha 'J' tovushi (JON dagidek).\nJUFTI: 'chain' /tfein/."
+       "whyUz": "/dz/ — JARANGLI.\n'J-' bilan yoziladi → doim /dz/.\nO'zbekcha 'J' tovushi (JON dagidek).\nJUFTI: 'chain' /tfein/.",
+       "speakAnswer": "/dʒ/"
       },
       {
        "prompt": "chain",
@@ -4170,7 +4487,8 @@
         "/tʃ/",
         "/dʒ/"
        ],
-       "whyUz": "/tf/ — JARANGSIZ.\n'ch-' bilan yoziladi → /tf/.\nJUFTI: 'Jane' /dzein/ —\nfaqat BIRINCHI tovush farq qiladi."
+       "whyUz": "/tf/ — JARANGSIZ.\n'ch-' bilan yoziladi → /tf/.\nJUFTI: 'Jane' /dzein/ —\nfaqat BIRINCHI tovush farq qiladi.",
+       "speakAnswer": "/tʃ/"
       },
       {
        "prompt": "cherry",
@@ -4180,7 +4498,8 @@
         "/tʃ/",
         "/dʒ/"
        ],
-       "whyUz": "/tf/ — JARANGSIZ.\n'ch-' bilan yoziladi → /tf/.\nJUFTI: 'Jerry' /dzeri/."
+       "whyUz": "/tf/ — JARANGSIZ.\n'ch-' bilan yoziladi → /tf/.\nJUFTI: 'Jerry' /dzeri/.",
+       "speakAnswer": "/tʃ/"
       },
       {
        "prompt": "Jerry",
@@ -4190,7 +4509,8 @@
         "/dʒ/",
         "/tʃ/"
        ],
-       "whyUz": "/dz/ — JARANGLI.\n'J-' bilan yoziladi → /dz/.\nJUFTI: 'cherry' /tferi/ —\nfaqat BIRINCHI tovush farq qiladi."
+       "whyUz": "/dz/ — JARANGLI.\n'J-' bilan yoziladi → /dz/.\nJUFTI: 'cherry' /tferi/ —\nfaqat BIRINCHI tovush farq qiladi.",
+       "speakAnswer": "/dʒ/"
       }
      ]
     }
@@ -4419,35 +4739,40 @@
        "answer": "very",
        "promptUz": "(++) belgisi",
        "whyUz": "(++) → VERY (kalit qutisidan).\n'very nice' = juda chiroyli.\nDIQQAT: 'nice' ODDIY shaklda → 'much' MUMKIN EMAS.",
-       "speak": "B: Well, it looks 1) ............ (++) nice, ..."
+       "speak": "B: Well, it looks 1) ............ (++) nice, ...",
+       "speakAnswer": "very"
       },
       {
        "prompt": "B: ... but I think it's 2) ............ (−) expensive for us.",
        "answer": "too",
        "promptUz": "(−) belgisi — salbiy",
        "whyUz": "(−) → TOO.\n'too expensive FOR US' = biz uchun haddan tashqari\nqimmat, ya'ni SOTIB OLA OLMAYMIZ.\nMehmonxona F misolidagi bilan bir xil mantiq.",
-       "speak": "B: ... but I think it's 2) ............ (−) expensive for us."
+       "speak": "B: ... but I think it's 2) ............ (−) expensive for us.",
+       "speakAnswer": "too"
       },
       {
        "prompt": "A: Why don't we go to Santorini then? It's 3) ............ (+) cheap ...",
        "answer": "quite",
        "promptUz": "(+) belgisi — eng zaif",
        "whyUz": "(+) → QUITE.\n'quite cheap' = ancha arzon (juda emas).\n'Why don't we ...?' — ikkinchi taklif usuli.",
-       "speak": "A: Why don't we go to Santorini then? It's 3) ............ (+) cheap ..."
+       "speak": "A: Why don't we go to Santorini then? It's 3) ............ (+) cheap ...",
+       "speakAnswer": "quite"
       },
       {
        "prompt": "A: ... and 4) ............ (++) pretty.",
        "answer": "very",
        "promptUz": "(++) belgisi",
        "whyUz": "(++) → VERY.\n'very pretty' = juda go'zal.\n1-band bilan bir xil belgi.",
-       "speak": "A: ... and 4) ............ (++) pretty."
+       "speak": "A: ... and 4) ............ (++) pretty.",
+       "speakAnswer": "very"
       },
       {
        "prompt": "B: Okay! Let's go there then. It's 5) ............ (+++) cheaper than Mykonos.",
        "answer": "much",
        "promptUz": "(+++) belgisi; keyin QIYOSIY daraja turibdi",
        "whyUz": "(+++) → MUCH.\nIKKI DALIL:\n  1) belgi (+++) kalit qutisidan\n  2) bo'shliqdan keyin 'cheapER ... THAN' —\n     QIYOSIY daraja. 'much' FAQAT qiyosiy daraja\n     bilan ishlatiladi.\nShuning uchun bu band belgisiz ham ANIQ.\n'Let's go there then' — uchinchi taklif usuli.",
-       "speak": "B: Okay! Let's go there then. It's 5) ............ (+++) cheaper than Mykonos."
+       "speak": "B: Okay! Let's go there then. It's 5) ............ (+++) cheaper than Mykonos.",
+       "speakAnswer": "much"
       }
      ]
     },
@@ -4465,42 +4790,50 @@
       {
        "prompt": "Italiya — 1-gap",
        "answer": "A: Shall we go to Rome for our summer holidays?",
-       "promptUz": "Yozgi ta'tilga Rimga boraylikmi?"
+       "promptUz": "Yozgi ta'tilga Rimga boraylikmi?",
+       "speakAnswer": "A: Shall we go to Rome for our summer holidays?"
       },
       {
        "prompt": "Italiya — 2-gap (pretty ++, noisy −)",
        "answer": "B: Well, it looks very pretty, but I think it's too noisy for us.",
-       "promptUz": "Ha, u juda chiroyli ko'rinadi, lekin menimcha biz uchun haddan tashqari shovqinli."
+       "promptUz": "Ha, u juda chiroyli ko'rinadi, lekin menimcha biz uchun haddan tashqari shovqinli.",
+       "speakAnswer": "B: Well, it looks very pretty, but I think it's too noisy for us."
       },
       {
        "prompt": "Italiya — 3-gap (quiet +, beautiful ++)",
        "answer": "A: Why don't we go to Venice then? It's quite quiet and very beautiful.",
-       "promptUz": "Unda nega Venesiyaga bormaymiz? U ancha tinch va juda go'zal."
+       "promptUz": "Unda nega Venesiyaga bormaymiz? U ancha tinch va juda go'zal.",
+       "speakAnswer": "A: Why don't we go to Venice then? It's quite quiet and very beautiful."
       },
       {
        "prompt": "Italiya — 4-gap (much + qiyosiy)",
        "answer": "B: Okay! Let's go there then. It's much quieter than Rome.",
-       "promptUz": "Yaxshi! Unda o'sha yerga boraylik. U Rimdan ancha tinchroq."
+       "promptUz": "Yaxshi! Unda o'sha yerga boraylik. U Rimdan ancha tinchroq.",
+       "speakAnswer": "B: Okay! Let's go there then. It's much quieter than Rome."
       },
       {
        "prompt": "Fransiya — 1-gap",
        "answer": "A: Shall we go to Paris for our summer holidays?",
-       "promptUz": "Yozgi ta'tilga Parijga boraylikmi?"
+       "promptUz": "Yozgi ta'tilga Parijga boraylikmi?",
+       "speakAnswer": "A: Shall we go to Paris for our summer holidays?"
       },
       {
        "prompt": "Fransiya — 2-gap (beautiful ++, crowded −)",
        "answer": "B: Well, it looks very beautiful, but I think it's too crowded for us.",
-       "promptUz": "Ha, u juda go'zal ko'rinadi, lekin menimcha biz uchun haddan tashqari gavjum."
+       "promptUz": "Ha, u juda go'zal ko'rinadi, lekin menimcha biz uchun haddan tashqari gavjum.",
+       "speakAnswer": "B: Well, it looks very beautiful, but I think it's too crowded for us."
       },
       {
        "prompt": "Fransiya — 3-gap (sunny +, exciting ++)",
        "answer": "A: Why don't we go to Nice then? It's quite sunny and very exciting.",
-       "promptUz": "Unda nega Nitstsaga bormaymiz? U ancha quyoshli va juda qiziqarli."
+       "promptUz": "Unda nega Nitstsaga bormaymiz? U ancha quyoshli va juda qiziqarli.",
+       "speakAnswer": "A: Why don't we go to Nice then? It's quite sunny and very exciting."
       },
       {
        "prompt": "Fransiya — 4-gap (much + qiyosiy)",
        "answer": "B: Okay! Let's go there then. It's much sunnier than Paris.",
-       "promptUz": "Yaxshi! Unda o'sha yerga boraylik. U Parijdan ancha quyoshliroq. ('-y' → sunnIER)"
+       "promptUz": "Yaxshi! Unda o'sha yerga boraylik. U Parijdan ancha quyoshliroq. ('-y' → sunnIER)",
+       "speakAnswer": "B: Okay! Let's go there then. It's much sunnier than Paris."
       }
      ]
     },
@@ -4520,70 +4853,80 @@
        "answer": "most comfortable",
        "promptUz": "'the ... OF THE THREE' — qaysi daraja?",
        "whyUz": "ORTTIRMA daraja: 'the ... OF the three'.\nUchta mehmonxonadan ENG qulayi.\n'comfortable' — 3 bo'g'in → THE MOST COMFORTABLE.\n'comfortablest' XATO.",
-       "speak": "Bob: Let me see. Hmm ... why don't we stay at the Sunset? It looks the 1) ............ (comfortable) of the three, ..."
+       "speak": "Bob: Let me see. Hmm ... why don't we stay at the Sunset? It looks the 1) ............ (comfortable) of the three, ...",
+       "speakAnswer": "most comfortable"
       },
       {
        "prompt": "Bob: ... and it's not as 2) ............ (expensive) as the Grand.",
        "answer": "expensive",
        "promptUz": "DIQQAT — 'as ... as' orasiga qaysi shakl?",
        "whyUz": "ODDIY ShAKL — 'as ... as' qolipi.\n'not as EXPENSIVE as' ✓\n'not as more expensive as' ✗\nBU BAND ALDAMChI: mashq 'qiyosiy va orttirma\nshakllarni to'ldiring' desa ham, bu yerda\nsifat O'ZGARMAYDI.",
-       "speak": "Bob: ... and it's not as 2) ............ (expensive) as the Grand."
+       "speak": "Bob: ... and it's not as 2) ............ (expensive) as the Grand.",
+       "speakAnswer": "expensive"
       },
       {
        "prompt": "Bob: So? That means it's in the 3) ............ (convenient) part of town.",
        "answer": "most convenient",
        "promptUz": "'the ...' — qaysi daraja?",
        "whyUz": "ORTTIRMA daraja: 'in THE ... part of town'.\n'convenient' — 3 bo'g'in → THE MOST CONVENIENT.\n'convenient' = qulay (joylashuv haqida).\nBob kamchilikni AFZALLIKKA aylantirmoqda.",
-       "speak": "Bob: So? That means it's in the 3) ............ (convenient) part of town."
+       "speak": "Bob: So? That means it's in the 3) ............ (convenient) part of town.",
+       "speakAnswer": "most convenient"
       },
       {
        "prompt": "Patsy: But I'm sure it's much 4) ............ (noisy) than the other hotels.",
        "answer": "noisier",
        "promptUz": "'much ... THAN' — qaysi daraja?",
        "whyUz": "QIYOSIY daraja: 'much ... THAN'.\n'noisy' — '-y' bilan tugagan → NOISIER.\nDIQQAT: 'much' FAQAT qiyosiy daraja bilan\n(16-mashqdagi kalit qutisi).",
-       "speak": "Patsy: But I'm sure it's much 4) ............ (noisy) than the other hotels."
+       "speak": "Patsy: But I'm sure it's much 4) ............ (noisy) than the other hotels.",
+       "speakAnswer": "noisier"
       },
       {
        "prompt": "Patsy: Well, it is the 5) ............ (cheap) hotel in town, ...",
        "answer": "cheapest",
        "promptUz": "'the ... IN TOWN' — qaysi daraja?",
        "whyUz": "ORTTIRMA daraja: 'THE ... hotel IN town'.\n'cheap' — 1 bo'g'in → THE CHEAPEST.",
-       "speak": "Patsy: Well, it is the 5) ............ (cheap) hotel in town, ..."
+       "speak": "Patsy: Well, it is the 5) ............ (cheap) hotel in town, ...",
+       "speakAnswer": "cheapest"
       },
       {
        "prompt": "Patsy: ... and it's probably 6) ............ (quiet) than the Sunset.",
        "answer": "quieter",
        "promptUz": "'... THAN' — qaysi daraja?",
        "whyUz": "QIYOSIY daraja: 'THAN' bor.\n'quiet' — 1 bo'g'in → QUIETER.\n'probably' = ehtimol (aniq emasligini bildiradi).",
-       "speak": "Patsy: ... and it's probably 6) ............ (quiet) than the Sunset."
+       "speak": "Patsy: ... and it's probably 6) ............ (quiet) than the Sunset.",
+       "speakAnswer": "quieter"
       },
       {
        "prompt": "Bob: Perhaps it's not as 7) ............ (clean) as the others, ...",
        "answer": "clean",
        "promptUz": "DIQQAT — yana 'as ... as' qolipi",
        "whyUz": "ODDIY ShAKL — 'as ... as' qolipi.\n'not as CLEAN as' ✓\n'not as cleaner as' ✗\n2-band bilan bir xil qoida.\nBu — mashqning ENG MUHIM darsi.",
-       "speak": "Bob: Perhaps it's not as 7) ............ (clean) as the others, ..."
+       "speak": "Bob: Perhaps it's not as 7) ............ (clean) as the others, ...",
+       "speakAnswer": "clean"
       },
       {
        "prompt": "Bob: ... but the brochure says it's got the \"8) ............ (friendly) staff in town.\"",
        "answer": "friendliest",
        "promptUz": "'the ... IN TOWN' — qaysi daraja?",
        "whyUz": "ORTTIRMA daraja: 'THE ... staff IN town'.\n'friendly' — '-y' bilan tugagan → THE FRIENDLIEST.\nDIQQAT: 'friendly' '-ly' bilan tugasa ham SIFAT,\nravish emas.\n'staff' = xodimlar (ko'plik ma'nosida, lekin\nfe'l birlikda: 'it's GOT').",
-       "speak": "Bob: ... but the brochure says it's got the \"8) ............ (friendly) staff in town.\""
+       "speak": "Bob: ... but the brochure says it's got the \"8) ............ (friendly) staff in town.\"",
+       "speakAnswer": "friendliest"
       },
       {
        "prompt": "Patsy: I like the Grand. It's the 9) ............ (luxurious) of the three hotels, ...",
        "answer": "most luxurious",
        "promptUz": "'the ... OF THE THREE' — qaysi daraja?",
        "whyUz": "ORTTIRMA daraja: 'the ... OF the three hotels'.\n'luxurious' — 3 bo'g'in → THE MOST LUXURIOUS.\n'luxurious' = hashamatli.",
-       "speak": "Patsy: I like the Grand. It's the 9) ............ (luxurious) of the three hotels, ..."
+       "speak": "Patsy: I like the Grand. It's the 9) ............ (luxurious) of the three hotels, ...",
+       "speakAnswer": "most luxurious"
       },
       {
        "prompt": "Patsy: ... and it's the 10) ............ (close) to the beach.",
        "answer": "closest",
        "promptUz": "'the ...' — qaysi daraja? '-e' bilan tugagan",
        "whyUz": "ORTTIRMA daraja: 'it's THE ... to the beach'.\n'close' — '-e' bilan tugagan → faqat -ST →\nTHE CLOSEST.\n'closeest' XATO.\n84-betdagi 7-mashqda sinonimi berilgan: 'near'.",
-       "speak": "Patsy: ... and it's the 10) ............ (close) to the beach."
+       "speak": "Patsy: ... and it's the 10) ............ (close) to the beach.",
+       "speakAnswer": "closest"
       }
      ]
     }
@@ -4612,25 +4955,29 @@
        "prompt": "A: 1) ............ ?",
        "answer": "What was China like",
        "promptUz": "Javob: umumiy taassurot",
-       "whyUz": "Javob UMUMIY taassurot beradi:\n'It was GREAT! There were lots of interesting\nplaces to visit and excellent shops.'\n→ 'What was China LIKE?'\nDIQQAT: 'like' bu yerda TASVIRLASH so'raydi\n('yoqtirmoq' EMAS)."
+       "whyUz": "Javob UMUMIY taassurot beradi:\n'It was GREAT! There were lots of interesting\nplaces to visit and excellent shops.'\n→ 'What was China LIKE?'\nDIQQAT: 'like' bu yerda TASVIRLASH so'raydi\n('yoqtirmoq' EMAS).",
+       "speakAnswer": "What was China like"
       },
       {
        "prompt": "A: 2) ............ ?",
        "answer": "What did you see there",
        "promptUz": "Javobda 'We saw ...' bor",
-       "whyUz": "Javob KO'RILGAN narsalarni sanaydi:\n'We SAW the Great Wall of China and the\nTerracotta Army ...'\n→ 'What did you SEE there?'\nSavolda 'see' (asosiy shakl), javobda 'saw'."
+       "whyUz": "Javob KO'RILGAN narsalarni sanaydi:\n'We SAW the Great Wall of China and the\nTerracotta Army ...'\n→ 'What did you SEE there?'\nSavolda 'see' (asosiy shakl), javobda 'saw'.",
+       "speakAnswer": "What did you see there"
       },
       {
        "prompt": "A: 3) ............ ?",
        "answer": "What did you think of Chinese food",
        "promptUz": "Javob: 'It was delicious'",
-       "whyUz": "Javob OVQAT haqida fikr:\n'It was DELICIOUS and quite cheap.'\n→ 'What did you THINK OF Chinese FOOD?'\nDIQQAT: 'think OF' — predlog OF."
+       "whyUz": "Javob OVQAT haqida fikr:\n'It was DELICIOUS and quite cheap.'\n→ 'What did you THINK OF Chinese FOOD?'\nDIQQAT: 'think OF' — predlog OF.",
+       "speakAnswer": "What did you think of Chinese food"
       },
       {
        "prompt": "A: 4) ............ ?",
        "answer": "Did you enjoy the nightlife",
        "promptUz": "Javob 'Yes' bilan boshlanadi",
-       "whyUz": "Javob 'YES, very much' bilan boshlanadi →\nHA/YO'Q savoli → 'DID you enjoy ...?'\nJavobda 'nightclubs' va 'clubs' bor →\nmavzu TUNGI HAYOT.\nDIQQAT: javobda Unit 12 grammatikasi:\n'the pubs were FRIENDLIER' (qiyosiy) va\n'NOT AS EXPENSIVE AS the clubs' (tenglik inkori)."
+       "whyUz": "Javob 'YES, very much' bilan boshlanadi →\nHA/YO'Q savoli → 'DID you enjoy ...?'\nJavobda 'nightclubs' va 'clubs' bor →\nmavzu TUNGI HAYOT.\nDIQQAT: javobda Unit 12 grammatikasi:\n'the pubs were FRIENDLIER' (qiyosiy) va\n'NOT AS EXPENSIVE AS the clubs' (tenglik inkori).",
+       "speakAnswer": "Did you enjoy the nightlife"
       }
      ]
     },
@@ -4650,70 +4997,80 @@
        "answer": "Shall",
        "promptUz": "Taklif SAVOLI",
        "whyUz": "'SHALL we ...?' — eng muloyim taklif savoli.\nCoursebook 86-betdagi taklif qutisidan.\nKeyin fe'lning ASOSIY shakli: 'go'.",
-       "speak": "A: 1) ............ we go out on Saturday? It's my birthday."
+       "speak": "A: 1) ............ we go out on Saturday? It's my birthday.",
+       "speakAnswer": "Shall"
       },
       {
        "prompt": "B: Great! 2) ............ go somewhere special.",
        "answer": "Let's",
        "promptUz": "Taklif, TASDIQ gap",
        "whyUz": "'LET'S ...' — taklifning TASDIQ shakli\n(savol emas, nuqta bilan tugaydi).\n'Let's' = 'let us'.\n'somewhere special' — sifat 'somewhere' dan KEYIN.",
-       "speak": "B: Great! 2) ............ go somewhere special."
+       "speak": "B: Great! 2) ............ go somewhere special.",
+       "speakAnswer": "Let's"
       },
       {
        "prompt": "B: 3) ............ we go to a nice restaurant like Tiffany's?",
        "answer": "Why don't",
        "promptUz": "Uchinchi taklif usuli",
        "whyUz": "'WHY DON'T we ...?' — taklifning uchinchi usuli.\nSavol shaklida, lekin ma'nosi TAKLIF.\n'like' bu yerda 'masalan' ma'nosida.",
-       "speak": "B: 3) ............ we go to a nice restaurant like Tiffany's?"
+       "speak": "B: 3) ............ we go to a nice restaurant like Tiffany's?",
+       "speakAnswer": "Why don't"
       },
       {
        "prompt": "A: Well, it's the 4) ............ place in town, so it's always very busy on Saturdays.",
        "answer": "most popular",
        "promptUz": "'the ... in town' — qaysi daraja?",
        "whyUz": "'the ... IN town' → ORTTIRMA daraja.\n'popular' — 3 bo'g'in → THE MOST POPULAR.\n'the' gapda allaqachon bosilgan.",
-       "speak": "A: Well, it's the 4) ............ place in town, so it's always very busy on Saturdays."
+       "speak": "A: Well, it's the 4) ............ place in town, so it's always very busy on Saturdays.",
+       "speakAnswer": "most popular"
       },
       {
        "prompt": "B: Hmm. You're right. Then, 5) ............ go to the Cave.",
        "answer": "let's",
        "promptUz": "IKKINCHI marta ishlatiladi",
        "whyUz": "'LET'S ...' — IKKINCHI marta (2-bandda ham edi).\nKitob aytgan: 'You can use some twice.'\nTaklifning TASDIQ shakli.",
-       "speak": "B: Hmm. You're right. Then, 5) ............ go to the Cave."
+       "speak": "B: Hmm. You're right. Then, 5) ............ go to the Cave.",
+       "speakAnswer": "let's"
       },
       {
        "prompt": "B: It's 6) ............ and it's never too crowded.",
        "answer": "very romantic",
        "promptUz": "'very' + qaysi shakl?",
        "whyUz": "'VERY ROMANTIC' — 'very' + ODDIY sifat.\nQIYOSLASH YO'Q.\nGrammar 52-bet: 'very' + oddiy sifat.",
-       "speak": "B: It's 6) ............ and it's never too crowded."
+       "speak": "B: It's 6) ............ and it's never too crowded.",
+       "speakAnswer": "very romantic"
       },
       {
        "prompt": "A: Yes, but it's very expensive, and it's 7) ............ . We'll need a car.",
        "answer": "quite far",
        "promptUz": "Keyingi gap ipni beradi",
        "whyUz": "'QUITE FAR' — 'quite' + ODDIY sifat.\nKeyingi gap TASDIQLAYDI:\n'We'll need a CAR' → demak UZOQ.\n'far' = uzoq.",
-       "speak": "A: Yes, but it's very expensive, and it's 7) ............ . We'll need a car."
+       "speak": "A: Yes, but it's very expensive, and it's 7) ............ . We'll need a car.",
+       "speakAnswer": "quite far"
       },
       {
        "prompt": "B: I know it's 8) ............ than many of the other places, ...",
        "answer": "more expensive",
        "promptUz": "'than' bor",
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'expensive' — 3 bo'g'in → MORE EXPENSIVE.\nA ning 'it's very expensive' fikrini\ntasdiqlamoqda.",
-       "speak": "B: I know it's 8) ............ than many of the other places, ..."
+       "speak": "B: I know it's 8) ............ than many of the other places, ...",
+       "speakAnswer": "more expensive"
       },
       {
        "prompt": "B: ... but it's also more luxurious and the food there is 9) ............ in town.",
        "answer": "the best",
        "promptUz": "'in town' — qaysi daraja? Noto'g'ri sifat",
        "whyUz": "'IN town' → ORTTIRMA daraja.\n'good' — NOTO'G'RI sifat → THE BEST.\n'the goodest' XATO.\nDIQQAT: bu yerda 'the' javobning IChIDA\n(4-banddan farqli).",
-       "speak": "B: ... but it's also more luxurious and the food there is 9) ............ in town."
+       "speak": "B: ... but it's also more luxurious and the food there is 9) ............ in town.",
+       "speakAnswer": "the best"
       },
       {
        "prompt": "B: And I've got my dad's car! So, 10) ............ we go there then?",
        "answer": "shall",
        "promptUz": "IKKINCHI marta ishlatiladi",
        "whyUz": "'SHALL we ...?' — IKKINCHI marta\n(1-bandda ham edi).\nYakuniy taklif savoli — B endi A ni\nko'ndirdi va tasdiqlash so'ramoqda.",
-       "speak": "B: And I've got my dad's car! So, 10) ............ we go there then?"
+       "speak": "B: And I've got my dad's car! So, 10) ............ we go there then?",
+       "speakAnswer": "shall"
       }
      ]
     }
@@ -4742,91 +5099,106 @@
        "prompt": "clean",
        "answer": "The streets in Stratford are very clean.",
        "promptUz": "Stratforddagi ko'chalar juda toza. (ODDIY sifat)",
-       "speak": "clean"
+       "speak": "clean",
+       "speakAnswer": "The streets in Stratford are very clean."
       },
       {
        "prompt": "quieter",
        "answer": "Stratford is much quieter than LA.",
        "promptUz": "Stratford LA dan ancha tinchroq. (QIYOSIY → 'than' kerak)",
-       "speak": "quieter"
+       "speak": "quieter",
+       "speakAnswer": "Stratford is much quieter than LA."
       },
       {
        "prompt": "more polluted",
        "answer": "London is more polluted than Edinburgh.",
        "promptUz": "London Edinburgdan ifloslanganroq. (QIYOSIY → 'than' kerak)",
-       "speak": "more polluted"
+       "speak": "more polluted",
+       "speakAnswer": "London is more polluted than Edinburgh."
       },
       {
        "prompt": "oldest",
        "answer": "Musso & Frank's is the oldest restaurant in Hollywood.",
        "promptUz": "'Musso & Frank's' Gollivuddagi eng eski restoran. (ORTTIRMA → 'THE ... in' kerak)",
-       "speak": "oldest"
+       "speak": "oldest",
+       "speakAnswer": "Musso & Frank's is the oldest restaurant in Hollywood."
       },
       {
        "prompt": "interesting",
        "answer": "There are many interesting places you can visit in LA.",
        "promptUz": "LA da borishingiz mumkin bo'lgan ko'plab qiziqarli joylar bor.",
-       "speak": "interesting"
+       "speak": "interesting",
+       "speakAnswer": "There are many interesting places you can visit in LA."
       },
       {
        "prompt": "street performers",
        "answer": "You can see street performers at Venice Beach.",
        "promptUz": "Venis-Bichda ko'cha artistlarini ko'rishingiz mumkin. (83-bet, E rasmi)",
-       "speak": "street performers"
+       "speak": "street performers",
+       "speakAnswer": "You can see street performers at Venice Beach."
       },
       {
        "prompt": "designer clothes",
        "answer": "You can buy designer clothes on Rodeo Drive.",
        "promptUz": "Rodeo-Drayvda dizayner kiyimlar sotib olishingiz mumkin. (83-bet, C rasmi)",
-       "speak": "designer clothes"
+       "speak": "designer clothes",
+       "speakAnswer": "You can buy designer clothes on Rodeo Drive."
       },
       {
        "prompt": "nightlife",
        "answer": "The nightlife is exciting on the Sunset Strip.",
        "promptUz": "Sanset-Stripda tungi hayot juda qiziqarli.",
-       "speak": "nightlife"
+       "speak": "nightlife",
+       "speakAnswer": "The nightlife is exciting on the Sunset Strip."
       },
       {
        "prompt": "sunny weather",
        "answer": "LA is famous for its sunny weather.",
        "promptUz": "LA quyoshli ob-havosi bilan mashhur.",
-       "speak": "sunny weather"
+       "speak": "sunny weather",
+       "speakAnswer": "LA is famous for its sunny weather."
       },
       {
        "prompt": "heavy traffic",
        "answer": "There is heavy traffic on the roads in LA.",
        "promptUz": "LA yo'llarida zich transport oqimi bor. (83-bet, G rasmi)",
-       "speak": "heavy traffic"
+       "speak": "heavy traffic",
+       "speakAnswer": "There is heavy traffic on the roads in LA."
       },
       {
        "prompt": "fashionable clothes",
        "answer": "You can buy cheap fashionable clothes on Melrose Avenue.",
        "promptUz": "Melrouz avenyusida arzon, moda kiyimlar sotib olishingiz mumkin.",
-       "speak": "fashionable clothes"
+       "speak": "fashionable clothes",
+       "speakAnswer": "You can buy cheap fashionable clothes on Melrose Avenue."
       },
       {
        "prompt": "delicious",
        "answer": "The Border Grill has the most delicious Mexican dishes.",
        "promptUz": "'Border Grill' da eng mazali meksika taomlari bor.",
-       "speak": "delicious"
+       "speak": "delicious",
+       "speakAnswer": "The Border Grill has the most delicious Mexican dishes."
       },
       {
        "prompt": "noisier",
        "answer": "LA is much noisier than Stratford.",
        "promptUz": "LA Stratforddan ancha shovqinliroq. (QIYOSIY → 'than' kerak)",
-       "speak": "noisier"
+       "speak": "noisier",
+       "speakAnswer": "LA is much noisier than Stratford."
       },
       {
        "prompt": "more expensive",
        "answer": "The hotels in LA are more expensive than those in many other American cities.",
        "promptUz": "LA dagi mehmonxonalar boshqa ko'p Amerika shaharlaridagilardan qimmatroq. (QIYOSIY → 'than' kerak)",
-       "speak": "more expensive"
+       "speak": "more expensive",
+       "speakAnswer": "The hotels in LA are more expensive than those in many other American cities."
       },
       {
        "prompt": "crowded",
        "answer": "LA is a modern, noisy and crowded city.",
        "promptUz": "LA — zamonaviy, shovqinli va gavjum shahar.",
-       "speak": "crowded"
+       "speak": "crowded",
+       "speakAnswer": "LA is a modern, noisy and crowded city."
       }
      ]
     }
@@ -5077,42 +5449,48 @@
        "answer": "Were",
        "promptUz": "'be' fe'li — 'did' kerak emas",
        "whyUz": "PAST SIMPLE SO'ROQ, 'be' fe'li bilan.\n'you' → WERE.\n'be' fe'li so'roqda O'ZI oldinga chiqadi —\n'did' KERAK EMAS.\n'last night' → o'tgan zamon.",
-       "speak": "A: 1) ............ (be) you at home last night?"
+       "speak": "A: 1) ............ (be) you at home last night?",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "B: No, I 2) ............ (not/be).",
        "answer": "wasn't",
        "promptUz": "'I' — qaysi shakl?",
        "whyUz": "QISQA JAVOB: 'No, I WASN'T.'\n'I' → was → WASN'T.\nDIQQAT: savolda 'were' (you), javobda\n'wasn't' (I) — ega o'zgargani uchun.",
-       "speak": "B: No, I 2) ............ (not/be)."
+       "speak": "B: No, I 2) ............ (not/be).",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "B: I 3) ............ (go) to hospital.",
        "answer": "went",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "go → WENT (noto'g'ri fe'l).\nDIQQAT: 'TO HOSPITAL' — artikl YO'Q,\nchunki davolanish uchun borilgan.\n('to THE hospital' — binoga tashrif uchun.)",
-       "speak": "B: I 3) ............ (go) to hospital."
+       "speak": "B: I 3) ............ (go) to hospital.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "A: What 4) ............ (happen)?",
        "answer": "happened",
        "promptUz": "DIQQAT — 'What' bu yerda EGA",
        "whyUz": "happen → HAPPENED (to'g'ri fe'l).\nDIQQAT: 'What' EGA o'rnida turibdi →\n'DID' KERAK EMAS.\n'What DID happen?' XATO.\nBu — Unit 11 dagi ega/to'ldiruvchi savollari\nqoidasi (Workbook 46-bet).",
-       "speak": "A: What 4) ............ (happen)?"
+       "speak": "A: What 4) ............ (happen)?",
+       "speakAnswer": "happened"
       },
       {
        "prompt": "B: I 5) ............ (fall) off my bicycle ...",
        "answer": "fell",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "fall → FELL (noto'g'ri fe'l).\n'fall OFF' = ... dan yiqilmoq (predlog OFF).",
-       "speak": "B: I 5) ............ (fall) off my bicycle ..."
+       "speak": "B: I 5) ............ (fall) off my bicycle ...",
+       "speakAnswer": "fell"
       },
       {
        "prompt": "B: ... and 6) ............ (break) my arm.",
        "answer": "broke",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "break → BROKE (noto'g'ri fe'l).\n'break my arm' = qo'limni sindirmoq.\nDIQQAT: 'and' dan keyin ega takrorlanmaydi\n(I fell ... and [I] broke ...).",
-       "speak": "B: ... and 6) ............ (break) my arm."
+       "speak": "B: ... and 6) ............ (break) my arm.",
+       "speakAnswer": "broke"
       }
      ]
     },
@@ -5132,28 +5510,32 @@
        "answer": "Are you going",
        "promptUz": "Hozir yoki yaqin kelajak",
        "whyUz": "PRESENT CONTINUOUS SO'ROQ:\nARE + you + GOING.\nHozir sodir bo'layotgan yoki rejalashtirilgan\nyaqin kelajak.\n'go out' = tashqariga chiqmoq.",
-       "speak": "A: 1) ............ (you/go) out?"
+       "speak": "A: 1) ............ (you/go) out?",
+       "speakAnswer": "Are you going"
       },
       {
        "prompt": "B: Yes, I 2) ............ (be).",
        "answer": "am",
        "promptUz": "Qisqa javob",
        "whyUz": "QISQA JAVOB: 'Yes, I AM.'\nPresent continuous savoliga faqat 'be' fe'li\nbilan javob beriladi.\n'Yes, I am going' — to'liq, lekin qisqa javobda\nfaqat 'am'.",
-       "speak": "B: Yes, I 2) ............ (be)."
+       "speak": "B: Yes, I 2) ............ (be).",
+       "speakAnswer": "am"
       },
       {
        "prompt": "A: Where 3) ............ (you/go)?",
        "answer": "are you going",
        "promptUz": "1-band bilan bir xil",
        "whyUz": "PRESENT CONTINUOUS SO'ROQ:\n'Where ARE YOU GOING?'\nSavol so'zi ('Where') eng oldinda,\nkeyin 'are you going'.",
-       "speak": "A: Where 3) ............ (you/go)?"
+       "speak": "A: Where 3) ............ (you/go)?",
+       "speakAnswer": "are you going"
       },
       {
        "prompt": "A: Take an umbrella. I think it 4) ............ (rain).",
        "answer": "will rain",
        "promptUz": "'I think' dan keyin qaysi shakl?",
        "whyUz": "'I THINK' + WILL — TAXMIN qolipi.\n'it WILL RAIN' = yomg'ir yog'adi (menimcha).\nDIQQAT: 'is raining' bo'lsa — hozir yog'ayotgan\nbo'lardi. Lekin 'Take an umbrella' aytilgan →\nhali yog'magan, KELAJAK haqida gap.\n'will' dan keyin fe'lning ASOSIY shakli.",
-       "speak": "A: Take an umbrella. I think it 4) ............ (rain)."
+       "speak": "A: Take an umbrella. I think it 4) ............ (rain).",
+       "speakAnswer": "will rain"
       }
      ]
     },
@@ -5173,28 +5555,32 @@
        "answer": "Can I have",
        "promptUz": "Buyurtma berish iborasi",
        "whyUz": "'CAN I HAVE ...?' — buyurtma berish/so'rashning\nstandart iborasi = '... bering, iltimos'.\nDIQQAT: faqat 'I have a sandwich, please?'\ngrammatik jihatdan NOTO'G'RI — 'can' kerak.\n'May I have ...?' ham to'g'ri, lekin rasmiyroq.\nUnit 8 ('Enjoy your Meal') da o'rganilgan.",
-       "speak": "A: 1) ............ (I/have) a cheese sandwich, please?"
+       "speak": "A: 1) ............ (I/have) a cheese sandwich, please?",
+       "speakAnswer": "Can I have"
       },
       {
        "prompt": "B: Yes, here you 2) ............ (be).",
        "answer": "are",
        "promptUz": "Turg'un ibora",
        "whyUz": "'HERE YOU ARE.' — TURG'UN IBORA:\n'Mana' (biror narsani uzatganda).\n'you' → ARE.\n'Here you go' ham aytiladi (norasmiy).",
-       "speak": "B: Yes, here you 2) ............ (be)."
+       "speak": "B: Yes, here you 2) ............ (be).",
+       "speakAnswer": "are"
       },
       {
        "prompt": "A: Thanks. How much 3) ............ (it/be)?",
        "answer": "is it",
        "promptUz": "SO'ROQ tartibi",
        "whyUz": "'How much IS IT?' — narx so'rashning standart\nsavoli.\nSO'ROQ tartibi: IS + IT (fe'l oldinda).\n'it' → IS.",
-       "speak": "A: Thanks. How much 3) ............ (it/be)?"
+       "speak": "A: Thanks. How much 3) ............ (it/be)?",
+       "speakAnswer": "is it"
       },
       {
        "prompt": "B: It 4) ............ (be) one pound thirty. Anything else?",
        "answer": "is",
        "promptUz": "TASDIQ tartibi",
        "whyUz": "'It IS one pound thirty.' ('It's ...')\nTASDIQ tartibi: IT + IS (ega oldinda).\n3-band bilan SOLISHTIRING — tartib TESKARI.\n'one pound thirty' = £1.30.\n'Anything else?' = Boshqa narsa kerakmi?",
-       "speak": "B: It 4) ............ (be) one pound thirty. Anything else?"
+       "speak": "B: It 4) ............ (be) one pound thirty. Anything else?",
+       "speakAnswer": "is"
       }
      ]
     },
@@ -5214,49 +5600,56 @@
        "answer": "was",
        "promptUz": "'the last time' — birlik",
        "whyUz": "'the last time' — BIRLIK → WAS.\n'be' fe'li bilan savolda 'did' KERAK EMAS.",
-       "speak": "A: When 1) ............ (be) the last time ..."
+       "speak": "A: When 1) ............ (be) the last time ...",
+       "speakAnswer": "was"
       },
       {
        "prompt": "A: ... you 2) ............ (go) out for dinner?",
        "answer": "went",
        "promptUz": "DIQQAT — bu SAVOL emas, ergash gap",
        "whyUz": "'did' KERAK EMAS!\nBu qism SAVOL emas — 'the last time' otini\naniqlaydigan ERGASH GAP:\n'the last time (when) you WENT out'.\nSavol qismi allaqachon 'When WAS ...?' bilan\nberilgan.\ngo → WENT.\n'you did go' XATO.",
-       "speak": "A: ... you 2) ............ (go) out for dinner?"
+       "speak": "A: ... you 2) ............ (go) out for dinner?",
+       "speakAnswer": "went"
       },
       {
        "prompt": "A: Where 3) ............ (you/go)?",
        "answer": "did you go",
        "promptUz": "Bu TO'LIQ savol",
        "whyUz": "TO'LIQ SAVOL → 'did' KERAK.\nDID + you + GO (ASOSIY shakl).\n'did you went' XATO.\n2-band bilan SOLISHTIRING — u yerda 'did' yo'q edi.",
-       "speak": "A: Where 3) ............ (you/go)?"
+       "speak": "A: Where 3) ............ (you/go)?",
+       "speakAnswer": "did you go"
       },
       {
        "prompt": "A: Who 4) ............ (you/go) with?",
        "answer": "did you go",
        "promptUz": "TO'LDIRUVChI savoli",
        "whyUz": "TO'LDIRUVCHI savoli ('kim BILAN') → 'did' KERAK.\nDID + you + GO.\n'with' gap OXIRIDA qoladi.\nUnit 11 (Workbook 46-bet, 14-mashq):\n'Who did you go with?'",
-       "speak": "A: Who 4) ............ (you/go) with?"
+       "speak": "A: Who 4) ............ (you/go) with?",
+       "speakAnswer": "did you go"
       },
       {
        "prompt": "B: I 5) ............ (go) with Terry and Sandra.",
        "answer": "went",
        "promptUz": "TASDIQ gap",
        "whyUz": "TASDIQ gap → 'did' YO'Q,\nfe'l O'TGAN shaklda: WENT.",
-       "speak": "B: I 5) ............ (go) with Terry and Sandra."
+       "speak": "B: I 5) ............ (go) with Terry and Sandra.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "A: 6) ............ (you/have) a good time?",
        "answer": "Did you have",
        "promptUz": "HA/YO'Q savoli",
        "whyUz": "HA/YO'Q SAVOLI → DID + you + HAVE (asosiy shakl).\n'Did you had' XATO.\n'have a good time' = yaxshi vaqt o'tkazmoq.",
-       "speak": "A: 6) ............ (you/have) a good time?"
+       "speak": "A: 6) ............ (you/have) a good time?",
+       "speakAnswer": "Did you have"
       },
       {
        "prompt": "B: Yes, it 7) ............ (be) great.",
        "answer": "was",
        "promptUz": "'it' — birlik",
        "whyUz": "'it' → WAS.\n'be' fe'li — 'did' KERAK EMAS.\nCoursebook 85-betdagi 15-mashq bilan bir xil\nqolip: 'It was fantastic!'",
-       "speak": "B: Yes, it 7) ............ (be) great."
+       "speak": "B: Yes, it 7) ............ (be) great.",
+       "speakAnswer": "was"
       }
      ]
     }
@@ -5286,70 +5679,80 @@
        "answer": "left",
        "promptUz": "'last week' — qaysi zamon?",
        "whyUz": "'last week' → PAST SIMPLE.\nleave → LEFT (noto'g'ri fe'l).\n'to leave' = tark etmoq.",
-       "speak": "We 1) ............ (leave) London last week ..."
+       "speak": "We 1) ............ (leave) London last week ...",
+       "speakAnswer": "left"
       },
       {
        "prompt": "... and 2) ............ (travel) north.",
        "answer": "travelled",
        "promptUz": "1-band bilan bir xil zamon",
        "whyUz": "PAST SIMPLE (o'tgan hafta).\ntravel → TRAVELLED.\nDIQQAT: britancha yozilishida 'l' IKKILANADI\n('traveled' — amerikacha).\n'travel NORTH' — predlog YO'Q.",
-       "speak": "... and 2) ............ (travel) north."
+       "speak": "... and 2) ............ (travel) north.",
+       "speakAnswer": "travelled"
       },
       {
        "prompt": "Some people 3) ............ (say) Edinburgh is the most beautiful city in Britain.",
        "answer": "say",
        "promptUz": "Umumiy fikr — qaysi zamon?",
        "whyUz": "PRESENT SIMPLE — bu odamlarning DOIMIY fikri,\no'tgan zamondagi bitta voqea emas.\n'people' — KO'PLIK → '-s' YO'Q: SAY.\n'says' XATO.",
-       "speak": "Some people 3) ............ (say) Edinburgh is the most beautiful city in Britain."
+       "speak": "Some people 3) ............ (say) Edinburgh is the most beautiful city in Britain.",
+       "speakAnswer": "say"
       },
       {
        "prompt": "We 4) ............ (stay) in a small, but comfortable hotel in the centre.",
        "answer": "are staying",
        "promptUz": "Flora HOZIR o'sha yerda",
        "whyUz": "PRESENT CONTINUOUS — VAQTINCHA holat.\nFlora ta'tilda va HOZIR o'sha mehmonxonada\nturibdi.\nXatning boshida 'I'm in Edinburgh NOW' —\nbu ham hozirgi vaqtni ko'rsatadi.\n'we' → ARE + STAYING.",
-       "speak": "We 4) ............ (stay) in a small, but comfortable hotel in the centre."
+       "speak": "We 4) ............ (stay) in a small, but comfortable hotel in the centre.",
+       "speakAnswer": "are staying"
       },
       {
        "prompt": "We 5) ............ (visit) the castle and Holyroodhouse last week.",
        "answer": "visited",
        "promptUz": "'last week' — qaysi zamon?",
        "whyUz": "'last week' → PAST SIMPLE.\nvisit → VISITED (to'g'ri fe'l).\nHolyroodhouse — Edinburgdagi qirollik saroyi.",
-       "speak": "We 5) ............ (visit) the castle and Holyroodhouse last week."
+       "speak": "We 5) ............ (visit) the castle and Holyroodhouse last week.",
+       "speakAnswer": "visited"
       },
       {
        "prompt": "Yesterday, we 6) ............ (go) to Edinburgh zoo and did some shopping.",
        "answer": "went",
        "promptUz": "'Yesterday' — qaysi zamon?",
        "whyUz": "'Yesterday' → PAST SIMPLE.\ngo → WENT (noto'g'ri fe'l).\nDIQQAT: gapda 'DID some shopping' ham bor —\nbu ham past simple, tasdiqlaydi.",
-       "speak": "Yesterday, we 6) ............ (go) to Edinburgh zoo and did some shopping."
+       "speak": "Yesterday, we 6) ............ (go) to Edinburgh zoo and did some shopping.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "The Royal Mile has lots of souvenir shops that 7) ............ (sell) traditional Scottish souvenirs.",
        "answer": "sell",
        "promptUz": "Do'konlarning DOIMIY xususiyati",
        "whyUz": "PRESENT SIMPLE — do'konlarning DOIMIY\nxususiyati.\n'shops' — KO'PLIK → '-s' YO'Q: SELL.\n'sells' XATO.\n'The Royal Mile' — Edinburgdagi mashhur ko'cha.",
-       "speak": "The Royal Mile has lots of souvenir shops that 7) ............ (sell) traditional Scottish souvenirs."
+       "speak": "The Royal Mile has lots of souvenir shops that 7) ............ (sell) traditional Scottish souvenirs.",
+       "speakAnswer": "sell"
       },
       {
        "prompt": "I really 8) ............ (love) the food here!",
        "answer": "love",
        "promptUz": "DIQQAT — 'love' his-tuyg'u fe'li",
        "whyUz": "PRESENT SIMPLE.\n'love' — HIS-TUYG'U fe'li → PRESENT CONTINUOUS\nOLMAYDI.\n'I am loving' XATO.\n'I' → '-s' YO'Q: LOVE.",
-       "speak": "I really 8) ............ (love) the food here!"
+       "speak": "I really 8) ............ (love) the food here!",
+       "speakAnswer": "love"
       },
       {
        "prompt": "There are very cosy cafes everywhere that 9) ............ (serve) delicious cakes and hot soups.",
        "answer": "serve",
        "promptUz": "Kafelarning DOIMIY xususiyati",
        "whyUz": "PRESENT SIMPLE — kafelarning DOIMIY xususiyati.\n'cafes' — KO'PLIK → '-s' YO'Q: SERVE.\n7-band bilan bir xil qoida.\n'to serve' = (ovqat) bermoq.",
-       "speak": "There are very cosy cafes everywhere that 9) ............ (serve) delicious cakes and hot soups."
+       "speak": "There are very cosy cafes everywhere that 9) ............ (serve) delicious cakes and hot soups.",
+       "speakAnswer": "serve"
       },
       {
        "prompt": "It is very cold and it 10) ............ (rain) a lot.",
        "answer": "rains",
        "promptUz": "'a lot' = tez-tez",
        "whyUz": "PRESENT SIMPLE — 'a lot' = tez-tez, DOIMIY\nholat.\n'it' — BIRLIK → '-S' QO'SHILADI: RAINS.\nDIQQAT: 'it is raining' bo'lsa — HOZIR\nyog'ayotgan bo'lardi.\nBu yerda esa Edinburgning umumiy ob-havosi\nhaqida gap.",
-       "speak": "It is very cold and it 10) ............ (rain) a lot."
+       "speak": "It is very cold and it 10) ............ (rain) a lot.",
+       "speakAnswer": "rains"
       }
      ]
     },
@@ -5367,62 +5770,74 @@
       {
        "prompt": "big — flats (✓)",
        "answer": "Flats are big.",
-       "promptUz": "Kvartiralar katta. (KITOBDAGI NAMUNA — ODDIY shakl)"
+       "promptUz": "Kvartiralar katta. (KITOBDAGI NAMUNA — ODDIY shakl)",
+       "speakAnswer": "Flats are big."
       },
       {
        "prompt": "big — houses (✓✓)",
        "answer": "Houses are bigger than flats.",
-       "promptUz": "Uylar kvartiralardan kattaroq. (KITOBDAGI NAMUNA — undosh IKKILANADI)"
+       "promptUz": "Uylar kvartiralardan kattaroq. (KITOBDAGI NAMUNA — undosh IKKILANADI)",
+       "speakAnswer": "Houses are bigger than flats."
       },
       {
        "prompt": "big — castles (✓✓✓)",
        "answer": "Castles are the biggest of all.",
-       "promptUz": "Qal'alar hammasidan katta. (KITOBDAGI NAMUNA — ORTTIRMA + OF ALL)"
+       "promptUz": "Qal'alar hammasidan katta. (KITOBDAGI NAMUNA — ORTTIRMA + OF ALL)",
+       "speakAnswer": "Castles are the biggest of all."
       },
       {
        "prompt": "expensive — flats (✓)",
        "answer": "Flats are expensive.",
-       "promptUz": "Kvartiralar qimmat."
+       "promptUz": "Kvartiralar qimmat.",
+       "speakAnswer": "Flats are expensive."
       },
       {
        "prompt": "expensive — houses (✓✓)",
        "answer": "Houses are more expensive than flats.",
-       "promptUz": "Uylar kvartiralardan qimmatroq. (3 bo'g'in → MORE)"
+       "promptUz": "Uylar kvartiralardan qimmatroq. (3 bo'g'in → MORE)",
+       "speakAnswer": "Houses are more expensive than flats."
       },
       {
        "prompt": "expensive — castles (✓✓✓)",
        "answer": "Castles are the most expensive of all.",
-       "promptUz": "Qal'alar hammasidan qimmat."
+       "promptUz": "Qal'alar hammasidan qimmat.",
+       "speakAnswer": "Castles are the most expensive of all."
       },
       {
        "prompt": "spacious — flats (✓)",
        "answer": "Flats are spacious.",
-       "promptUz": "Kvartiralar keng. ('spacious' = keng)"
+       "promptUz": "Kvartiralar keng. ('spacious' = keng)",
+       "speakAnswer": "Flats are spacious."
       },
       {
        "prompt": "spacious — houses (✓✓)",
        "answer": "Houses are more spacious than flats.",
-       "promptUz": "Uylar kvartiralardan kengroq. (3 bo'g'in → MORE)"
+       "promptUz": "Uylar kvartiralardan kengroq. (3 bo'g'in → MORE)",
+       "speakAnswer": "Houses are more spacious than flats."
       },
       {
        "prompt": "spacious — castles (✓✓✓)",
        "answer": "Castles are the most spacious of all.",
-       "promptUz": "Qal'alar hammasidan keng."
+       "promptUz": "Qal'alar hammasidan keng.",
+       "speakAnswer": "Castles are the most spacious of all."
       },
       {
        "prompt": "comfortable — castles (✓)",
        "answer": "Castles are comfortable.",
-       "promptUz": "Qal'alar qulay. (DIQQAT: bu qatorda eng past ko'rsatkich QAL'ADA)"
+       "promptUz": "Qal'alar qulay. (DIQQAT: bu qatorda eng past ko'rsatkich QAL'ADA)",
+       "speakAnswer": "Castles are comfortable."
       },
       {
        "prompt": "comfortable — houses (✓✓)",
        "answer": "Houses are more comfortable than castles.",
-       "promptUz": "Uylar qal'alardan qulayroq."
+       "promptUz": "Uylar qal'alardan qulayroq.",
+       "speakAnswer": "Houses are more comfortable than castles."
       },
       {
        "prompt": "comfortable — flats (✓✓✓)",
        "answer": "Flats are the most comfortable of all.",
-       "promptUz": "Kvartiralar hammasidan qulay. (jadvalning oxirgi qatori TESKARI)"
+       "promptUz": "Kvartiralar hammasidan qulay. (jadvalning oxirgi qatori TESKARI)",
+       "speakAnswer": "Flats are the most comfortable of all."
       }
      ]
     },
@@ -5446,7 +5861,8 @@
         "as",
         "for"
        ],
-       "whyUz": "C — 'biggER' QIYOSIY daraja → THAN.\n'as' faqat 'as ... as' qolipida ishlatiladi.\n'yours' = 'your house' o'rniga."
+       "whyUz": "C — 'biggER' QIYOSIY daraja → THAN.\n'as' faqat 'as ... as' qolipida ishlatiladi.\n'yours' = 'your house' o'rniga.",
+       "speakAnswer": "than"
       },
       {
        "prompt": "2  My grandmother is ............ than my grandfather.",
@@ -5457,7 +5873,8 @@
         "old",
         "the oldest"
        ],
-       "whyUz": "A — 'THAN' bor → QIYOSIY daraja.\n'old' — 1 bo'g'in → OLDER.\n'the oldest' 'than' bilan KELMAYDI."
+       "whyUz": "A — 'THAN' bor → QIYOSIY daraja.\n'old' — 1 bo'g'in → OLDER.\n'the oldest' 'than' bilan KELMAYDI.",
+       "speakAnswer": "older"
       },
       {
        "prompt": "3  Which is the hottest place ............ the world?",
@@ -5468,7 +5885,8 @@
         "on",
         "at"
        ],
-       "whyUz": "B — 'the hottEST' ORTTIRMA daraja +\n'the world' JOY → IN.\nCoursebook 85-bet, 12-mashqning 6-bandi ham\naynan shu savol (javob: Death Valley)."
+       "whyUz": "B — 'the hottEST' ORTTIRMA daraja +\n'the world' JOY → IN.\nCoursebook 85-bet, 12-mashqning 6-bandi ham\naynan shu savol (javob: Death Valley).",
+       "speakAnswer": "in"
       },
       {
        "prompt": "4  We ate ............ a Chinese restaurant on Saturday night.",
@@ -5479,7 +5897,8 @@
         "on",
         "to"
        ],
-       "whyUz": "A — 'eat AT a restaurant' — turg'un birikma.\nCoursebook 84-bet, 6-mashqda ham shu qoida.\n'ate' — 'eat' ning o'tgan shakli."
+       "whyUz": "A — 'eat AT a restaurant' — turg'un birikma.\nCoursebook 84-bet, 6-mashqda ham shu qoida.\n'ate' — 'eat' ning o'tgan shakli.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "5  My father always drives very ............ .",
@@ -5490,7 +5909,8 @@
         "careful",
         "more careful"
        ],
-       "whyUz": "A — 'drives' FE'L, uni RAVISH aniqlaydi.\ncareful (SIFAT) → carefulLY (RAVISH).\n'drives careful' XATO.\nUnit 11 ning asosiy mavzusi."
+       "whyUz": "A — 'drives' FE'L, uni RAVISH aniqlaydi.\ncareful (SIFAT) → carefulLY (RAVISH).\n'drives careful' XATO.\nUnit 11 ning asosiy mavzusi.",
+       "speakAnswer": "carefully"
       },
       {
        "prompt": "6  I closed the window ............ it was cold outside.",
@@ -5501,7 +5921,8 @@
         "when",
         "but"
        ],
-       "whyUz": "C — SABAB ko'rsatilmoqda → BECAUSE.\nNega yopdi? — chunki sovuq edi.\n'when' — vaqt, 'but' — qarama-qarshilik.\nUnit 11 (Workbook 45-bet) bog'lovchilaridan."
+       "whyUz": "C — SABAB ko'rsatilmoqda → BECAUSE.\nNega yopdi? — chunki sovuq edi.\n'when' — vaqt, 'but' — qarama-qarshilik.\nUnit 11 (Workbook 45-bet) bog'lovchilaridan.",
+       "speakAnswer": "because"
       },
       {
        "prompt": "7  ............ you go on holiday last summer?",
@@ -5512,7 +5933,8 @@
         "Don't",
         "Do"
        ],
-       "whyUz": "B — 'LAST summer' → PAST SIMPLE so'roq → DID.\n'Do' — hozirgi zamon,\n'Don't' — inkor (savol emas)."
+       "whyUz": "B — 'LAST summer' → PAST SIMPLE so'roq → DID.\n'Do' — hozirgi zamon,\n'Don't' — inkor (savol emas).",
+       "speakAnswer": "Did"
       },
       {
        "prompt": "8  The last time I watched TV was two hours ............ .",
@@ -5523,7 +5945,8 @@
         "before",
         "early"
        ],
-       "whyUz": "A — 'two hours AGO' = ikki soat oldin.\n'ago' vaqt miqdoridan KEYIN turadi.\n'before two hours' XATO.\n'early' = erta (vaqt miqdori bilan kelmaydi)."
+       "whyUz": "A — 'two hours AGO' = ikki soat oldin.\n'ago' vaqt miqdoridan KEYIN turadi.\n'before two hours' XATO.\n'early' = erta (vaqt miqdori bilan kelmaydi).",
+       "speakAnswer": "ago"
       },
       {
        "prompt": "9  He first played football ............ he was six.",
@@ -5534,7 +5957,8 @@
         "but",
         "until"
        ],
-       "whyUz": "B — VAQT ko'rsatilmoqda → WHEN.\n'when he was six' = olti yoshida.\n'until' = ... gacha (ma'no mos emas),\n'but' — qarama-qarshilik."
+       "whyUz": "B — VAQT ko'rsatilmoqda → WHEN.\n'when he was six' = olti yoshida.\n'until' = ... gacha (ma'no mos emas),\n'but' — qarama-qarshilik.",
+       "speakAnswer": "when"
       },
       {
        "prompt": "10  When you were ten ............ you ski?",
@@ -5545,7 +5969,8 @@
         "couldn't",
         "can"
        ],
-       "whyUz": "A — 'you WERE ten' → O'TGAN zamon →\n'can' emas, 'COULD'.\n'Could you ski?' = ucha olarmiding?\n'couldn't' — inkor (savolda mos emas).\n'could' = o'tmishdagi qobiliyat."
+       "whyUz": "A — 'you WERE ten' → O'TGAN zamon →\n'can' emas, 'COULD'.\n'Could you ski?' = ucha olarmiding?\n'couldn't' — inkor (savolda mos emas).\n'could' = o'tmishdagi qobiliyat.",
+       "speakAnswer": "could"
       },
       {
        "prompt": "11  ............ tomatoes do you need for the pizza?",
@@ -5556,7 +5981,8 @@
         "How much",
         "How long"
        ],
-       "whyUz": "B — 'tomatoes' SANALADIGAN (ko'plik) →\nHOW MANY.\n'How much' — SANALMAYDIGAN otlar bilan\n(how much water).\n'How long' — davomiylik."
+       "whyUz": "B — 'tomatoes' SANALADIGAN (ko'plik) →\nHOW MANY.\n'How much' — SANALMAYDIGAN otlar bilan\n(how much water).\n'How long' — davomiylik.",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "12  We need to buy ............ spaghetti for dinner.",
@@ -5567,7 +5993,8 @@
         "a",
         "any"
        ],
-       "whyUz": "C — 'spaghetti' SANALMAYDIGAN → 'a' MUMKIN EMAS.\nTASDIQ gapda → SOME.\n'any' so'roq va inkor gaplarda ishlatiladi.\nUnit 8 ('Enjoy your Meal') dan."
+       "whyUz": "C — 'spaghetti' SANALMAYDIGAN → 'a' MUMKIN EMAS.\nTASDIQ gapda → SOME.\n'any' so'roq va inkor gaplarda ishlatiladi.\nUnit 8 ('Enjoy your Meal') dan.",
+       "speakAnswer": "some"
       },
       {
        "prompt": "13  They are having breakfast ............ .",
@@ -5578,7 +6005,8 @@
         "yesterday",
         "every day"
        ],
-       "whyUz": "C — 'ARE HAVING' — PRESENT CONTINUOUS →\n'AT THE MOMENT' (hozir).\n'yesterday' — o'tgan zamon talab qiladi,\n'every day' — present simple talab qiladi."
+       "whyUz": "C — 'ARE HAVING' — PRESENT CONTINUOUS →\n'AT THE MOMENT' (hozir).\n'yesterday' — o'tgan zamon talab qiladi,\n'every day' — present simple talab qiladi.",
+       "speakAnswer": "at the moment"
       },
       {
        "prompt": "14  My mother ............ to the supermarket every Wednesday.",
@@ -5589,7 +6017,8 @@
         "is going",
         "go"
        ],
-       "whyUz": "A — 'every Wednesday' → PRESENT SIMPLE (odat).\n'my mother' — 3-shaxs BIRLIK → '-ES': GOES.\n'go' XATO ('-s' yo'q),\n'is going' XATO (odat uchun continuous emas)."
+       "whyUz": "A — 'every Wednesday' → PRESENT SIMPLE (odat).\n'my mother' — 3-shaxs BIRLIK → '-ES': GOES.\n'go' XATO ('-s' yo'q),\n'is going' XATO (odat uchun continuous emas).",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "15  ............ do you go out with your family?",
@@ -5600,7 +6029,8 @@
         "How long",
         "How many"
        ],
-       "whyUz": "C — javob CHASTOTA bo'ladi ('twice a week',\n'every Sunday') → HOW OFTEN.\n'How long' — davomiylik ('for two hours'),\n'How many' — son (otdan oldin turadi)."
+       "whyUz": "C — javob CHASTOTA bo'ladi ('twice a week',\n'every Sunday') → HOW OFTEN.\n'How long' — davomiylik ('for two hours'),\n'How many' — son (otdan oldin turadi).",
+       "speakAnswer": "How often"
       }
      ]
     }

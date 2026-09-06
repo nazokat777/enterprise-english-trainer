@@ -28,15 +28,18 @@
      "tasks": [
       {
        "left": "A — baland bo'yli, och rangli sochli, soqolli erkak",
-       "right": "Phoebus"
+       "right": "Phoebus",
+       "speakAnswer": "Phoebus"
       },
       {
        "left": "B — uzun qora sochli ayol",
-       "right": "Esmeralda"
+       "right": "Esmeralda",
+       "speakAnswer": "Esmeralda"
       },
       {
        "left": "C — toj kiygan, qo'lini ko'targan odam (kichik rasm)",
-       "right": "Quasimodo"
+       "right": "Quasimodo",
+       "speakAnswer": "Quasimodo"
       }
      ]
     },
@@ -60,7 +63,8 @@
         "a castle",
         "a tower"
        ],
-       "whyUz": "Notr-Dam — mashhur SOBOR (cathedral).\n'Cathedral' katta cherkov, shuning uchun\n'a church' to'g'ri.\n\n'a castle' = qal'a;\n'a tower' = minora (Notr-Damning minoralari\nbor, lekin o'zi minora emas)."
+       "whyUz": "Notr-Dam — mashhur SOBOR (cathedral).\n'Cathedral' katta cherkov, shuning uchun\n'a church' to'g'ri.\n\n'a castle' = qal'a;\n'a tower' = minora (Notr-Damning minoralari\nbor, lekin o'zi minora emas).",
+       "speakAnswer": "a church"
       },
       {
        "prompt": "2  Which city is it in?",
@@ -71,7 +75,8 @@
         "London",
         "Rome"
        ],
-       "whyUz": "Notr-Dam — PARIJDA, Fransiya poytaxtida.\n\n⚠ 8-nazorat testining 5-bandi ham shu:\n'He has already seen the LOUVRE but he hasn't\nseen NOTRE DAME yet.' — ikkalasi ham Parijda!"
+       "whyUz": "Notr-Dam — PARIJDA, Fransiya poytaxtida.\n\n⚠ 8-nazorat testining 5-bandi ham shu:\n'He has already seen the LOUVRE but he hasn't\nseen NOTRE DAME yet.' — ikkalasi ham Parijda!",
+       "speakAnswer": "Paris"
       },
       {
        "prompt": "3  Who is Quasimodo's master?",
@@ -82,7 +87,8 @@
         "Freddy",
         "Frilly"
        ],
-       "whyUz": "FROLLO — Kvazimodoni tarbiyalagan va uni\nsobordan chiqarmaydigan sudya.\n\n'Freddy' va 'Frilly' — o'xshash ovozli\nCHALG'ITUVCHI variantlar (filmda bunday\npersonajlar yo'q).\n\n6-mashqda Frollo tasvirlanadi."
+       "whyUz": "FROLLO — Kvazimodoni tarbiyalagan va uni\nsobordan chiqarmaydigan sudya.\n\n'Freddy' va 'Frilly' — o'xshash ovozli\nCHALG'ITUVCHI variantlar (filmda bunday\npersonajlar yo'q).\n\n6-mashqda Frollo tasvirlanadi.",
+       "speakAnswer": "Frollo"
       },
       {
        "prompt": "4  Where does Quasimodo want to go to?",
@@ -93,7 +99,8 @@
         "a party",
         "a park"
        ],
-       "whyUz": "'Festival of Fools' (Ahmoqlar bayrami).\n\n1-mashqdagi kichik rasmda AYNAN shu sahna:\nKvazimodo toj kiygan, atrofda konfetti\nuchmoqda."
+       "whyUz": "'Festival of Fools' (Ahmoqlar bayrami).\n\n1-mashqdagi kichik rasmda AYNAN shu sahna:\nKvazimodo toj kiygan, atrofda konfetti\nuchmoqda.",
+       "speakAnswer": "a festival"
       },
       {
        "prompt": "5  What is Esmeralda doing there?",
@@ -104,7 +111,8 @@
         "singing",
         "running"
        ],
-       "whyUz": "Esmeralda — lo'li RAQQOSA, bayramda raqsga\ntushadi.\n\n⚠ GRAMMATIKA: 'What IS she DOING?' —\nPRESENT CONTINUOUS. Javob ham shu zamonda:\n'She is DANCING.'"
+       "whyUz": "Esmeralda — lo'li RAQQOSA, bayramda raqsga\ntushadi.\n\n⚠ GRAMMATIKA: 'What IS she DOING?' —\nPRESENT CONTINUOUS. Javob ham shu zamonda:\n'She is DANCING.'",
+       "speakAnswer": "dancing"
       }
      ]
     },
@@ -129,7 +137,8 @@
         "thin",
         "fat"
        ],
-       "whyUz": "Kvazimodo — BUKRI, shuning uchun past bo'yli\nko'rinadi.\n\ntall (baland bo'yli) ↔ SHORT (past bo'yli)\n\n(5-mashqda Feb 'TALL' — u haqiqatan baland.)"
+       "whyUz": "Kvazimodo — BUKRI, shuning uchun past bo'yli\nko'rinadi.\n\ntall (baland bo'yli) ↔ SHORT (past bo'yli)\n\n(5-mashqda Feb 'TALL' — u haqiqatan baland.)",
+       "speakAnswer": "short"
       },
       {
        "prompt": "2  He's got BLACK hair.",
@@ -141,7 +150,8 @@
         "fair",
         "grey"
        ],
-       "whyUz": "Disney multfilmida Kvazimodoning sochi\nQIZG'ISH-SARIQ.\n\nQORA soch — ESMERALDADA (4-mashq:\n'She's got long BLACK hair').\n\nKitob ataylab ikkalasini chalkashtirmoqda."
+       "whyUz": "Disney multfilmida Kvazimodoning sochi\nQIZG'ISH-SARIQ.\n\nQORA soch — ESMERALDADA (4-mashq:\n'She's got long BLACK hair').\n\nKitob ataylab ikkalasini chalkashtirmoqda.",
+       "speakAnswer": "red"
       },
       {
        "prompt": "3  He's got big SQUARE eyes.",
@@ -153,7 +163,8 @@
         "green",
         "small"
        ],
-       "whyUz": "⚠ KITOB JAVOBNI BOSMAGAN — IKKI VARIANT\nASOSLI:\n\n(a) ROUND — 'square' SHAKL so'zi, uni yana\n    shakl so'zi bilan almashtirish eng\n    to'g'ridan-to'g'ri tuzatish.\n(b) GREEN — filmda Kvazimodoning ko'zlari\n    yashil, va Unit 4 ko'z RANGINI o'rgatadi.\n\nSkaner OQ-QORA — rangni tekshirib bo'lmadi."
+       "whyUz": "⚠ KITOB JAVOBNI BOSMAGAN — IKKI VARIANT\nASOSLI:\n\n(a) ROUND — 'square' SHAKL so'zi, uni yana\n    shakl so'zi bilan almashtirish eng\n    to'g'ridan-to'g'ri tuzatish.\n(b) GREEN — filmda Kvazimodoning ko'zlari\n    yashil, va Unit 4 ko'z RANGINI o'rgatadi.\n\nSkaner OQ-QORA — rangni tekshirib bo'lmadi.",
+       "speakAnswer": "round"
       },
       {
        "prompt": "4  He's got a SMALL nose.",
@@ -165,7 +176,8 @@
         "long",
         "hooked"
        ],
-       "whyUz": "Kvazimodoning burni KATTA — bu uning eng\nko'zga tashlanadigan belgisi.\n\nsmall (kichik) ↔ BIG (katta)\n\n(6-mashqda Frolloning burni 'HOOKED' —\nqiyshiq/burgutsimon.)"
+       "whyUz": "Kvazimodoning burni KATTA — bu uning eng\nko'zga tashlanadigan belgisi.\n\nsmall (kichik) ↔ BIG (katta)\n\n(6-mashqda Frolloning burni 'HOOKED' —\nqiyshiq/burgutsimon.)",
+       "speakAnswer": "big"
       }
      ]
     },
@@ -188,7 +200,8 @@
         "✓ TO'G'RI",
         "✗ NOTO'G'RI"
        ],
-       "whyUz": "✓ 1-mashqdagi rasmda Esmeraldaning sochi\nUZUN va QORA.\n\nBu — uning eng ko'zga tashlanadigan belgisi."
+       "whyUz": "✓ 1-mashqdagi rasmda Esmeraldaning sochi\nUZUN va QORA.\n\nBu — uning eng ko'zga tashlanadigan belgisi.",
+       "speakAnswer": "✓ TO'G'RI"
       },
       {
        "prompt": "She wears a black dress.",
@@ -198,7 +211,8 @@
         "✗ NOTO'G'RI",
         "✓ TO'G'RI"
        ],
-       "whyUz": "✗ Filmda Esmeraldaning ko'ylagi BINAFSHA,\nqora emas.\n\nQora — uning SOCHI, ko'ylagi emas — kitob\nataylab chalkashtirmoqda."
+       "whyUz": "✗ Filmda Esmeraldaning ko'ylagi BINAFSHA,\nqora emas.\n\nQora — uning SOCHI, ko'ylagi emas — kitob\nataylab chalkashtirmoqda.",
+       "speakAnswer": "✗ NOTO'G'RI"
       },
       {
        "prompt": "She's got small brown eyes.",
@@ -208,7 +222,8 @@
         "✗ NOTO'G'RI",
         "✓ TO'G'RI"
        ],
-       "whyUz": "✗ IKKI XATO: ko'zlari KATTA va YASHIL.\n\n'big green eyes' gapiga to'liq ZID —\nkitobning diqqatni tekshirish usuli."
+       "whyUz": "✗ IKKI XATO: ko'zlari KATTA va YASHIL.\n\n'big green eyes' gapiga to'liq ZID —\nkitobning diqqatni tekshirish usuli.",
+       "speakAnswer": "✗ NOTO'G'RI"
       },
       {
        "prompt": "She's got red lips.",
@@ -218,7 +233,8 @@
         "✓ TO'G'RI",
         "✗ NOTO'G'RI"
        ],
-       "whyUz": "✓ To'g'ri.\n\n'lips' — DOIM KO'PLIKDA (bir juft).\n\n⚠ QIZIL — bu yerda LAB haqida; Kvazimododa\nesa qizil SOCH (3-mashq)."
+       "whyUz": "✓ To'g'ri.\n\n'lips' — DOIM KO'PLIKDA (bir juft).\n\n⚠ QIZIL — bu yerda LAB haqida; Kvazimododa\nesa qizil SOCH (3-mashq).",
+       "speakAnswer": "✓ TO'G'RI"
       },
       {
        "prompt": "She's got big green eyes.",
@@ -228,7 +244,8 @@
         "✓ TO'G'RI",
         "✗ NOTO'G'RI"
        ],
-       "whyUz": "✓ To'g'ri — Esmeraldaning eng mashhur\nbelgisi.\n\n'eyes' — KO'PLIK: 'What colour ARE your\neyes?'"
+       "whyUz": "✓ To'g'ri — Esmeraldaning eng mashhur\nbelgisi.\n\n'eyes' — KO'PLIK: 'What colour ARE your\neyes?'",
+       "speakAnswer": "✓ TO'G'RI"
       },
       {
        "prompt": "She's got short red hair.",
@@ -238,7 +255,8 @@
         "✗ NOTO'G'RI",
         "✓ TO'G'RI"
        ],
-       "whyUz": "✗ IKKI XATO: sochi UZUN va QORA.\n\n⚠ QIZIL soch — KVAZIMODODA (3-mashqning\n2-bandi)!\n\n'long black hair' gapiga to'liq ZID."
+       "whyUz": "✗ IKKI XATO: sochi UZUN va QORA.\n\n⚠ QIZIL soch — KVAZIMODODA (3-mashqning\n2-bandi)!\n\n'long black hair' gapiga to'liq ZID.",
+       "speakAnswer": "✗ NOTO'G'RI"
       },
       {
        "prompt": "She has got a gold watch.",
@@ -248,7 +266,8 @@
         "✗ NOTO'G'RI",
         "✓ TO'G'RI"
        ],
-       "whyUz": "✗ ENG ALDAMCHI GAP!\n\n⚠ Film 1482-yilda, O'RTA ASRLARDA bo'lib\no'tadi — o'shanda qo'l soati YO'Q edi\n(qo'l soati 16-asrda paydo bo'lgan).\n\nEsmeraldada oltin ZIRAK bor, soat emas."
+       "whyUz": "✗ ENG ALDAMCHI GAP!\n\n⚠ Film 1482-yilda, O'RTA ASRLARDA bo'lib\no'tadi — o'shanda qo'l soati YO'Q edi\n(qo'l soati 16-asrda paydo bo'lgan).\n\nEsmeraldada oltin ZIRAK bor, soat emas.",
+       "speakAnswer": "✗ NOTO'G'RI"
       }
      ]
     },
@@ -274,7 +293,8 @@
         "fair"
        ],
        "whyUz": "'is' dan keyin SIFAT kerak.\n\nRasmda Feb BALAND bo'yli → TALL.\n\n⚠ 3-mashq bilan solishtiring: Kvazimodo\n'SHORT' (past bo'yli).",
-       "speak": "Phoebus is 1) ..................... and very ..."
+       "speak": "Phoebus is 1) ..................... and very ...",
+       "speakAnswer": "tall"
       },
       {
        "prompt": "Phoebus is tall and very 2) ..................... .",
@@ -287,7 +307,8 @@
         "fair"
        ],
        "whyUz": "'very' dan keyin SIFAT; tashqi ko'rinish\ndavom etmoqda → HANDSOME (kelishgan).\n\n⚠ 'handsome' — ERKAK haqida;\n'beautiful' — odatda ayol haqida.",
-       "speak": "Phoebus is tall and very 2) ..................... ."
+       "speak": "Phoebus is tall and very 2) ..................... .",
+       "speakAnswer": "handsome"
       },
       {
        "prompt": "He's got 3) ..................... hair",
@@ -300,7 +321,8 @@
         "handsome"
        ],
        "whyUz": "'hair' dan OLDIN — soch RANGI → FAIR\n(och rangli, sarg'ish).\n\n1-mashqda A ni aniqlash kaliti aynan shu edi.\n\n⚠ 'fair' ning boshqa ma'nosi — 'adolatli'.",
-       "speak": "He's got 3) ..................... hair"
+       "speak": "He's got 3) ..................... hair",
+       "speakAnswer": "fair"
       },
       {
        "prompt": "and a 4) ..................... .",
@@ -313,7 +335,8 @@
         "handsome"
        ],
        "whyUz": "⚠ ENG OSON BAND!\n\n'and A ...' — artikl 'a' bor, demak OT kerak.\nRo'yxatdagi YAGONA ot → BEARD.\n\nQolgan 5 tasi sifat.\n\n'a beard' = soqol; 'a moustache' = mo'ylov.",
-       "speak": "and a 4) ..................... ."
+       "speak": "and a 4) ..................... .",
+       "speakAnswer": "beard"
       },
       {
        "prompt": "He wears a long 5) ..................... cloak.",
@@ -326,7 +349,8 @@
         "handsome"
        ],
        "whyUz": "'cloak' dan oldin — RANG → BLUE.\n\nFeb — soqchilar KAPITANI, ko'k formada.\n\n'a cloak' = plash, yopinchiq.",
-       "speak": "He wears a long 5) ..................... cloak."
+       "speak": "He wears a long 5) ..................... cloak.",
+       "speakAnswer": "blue"
       },
       {
        "prompt": "Phoebus is also a very 6) ..................... man.",
@@ -339,7 +363,8 @@
         "fair"
        ],
        "whyUz": "⚠ 'ALSO' (shuningdek) yangi jihat qo'shadi:\navval TASHQI KO'RINISH, endi XARAKTER.\n\n→ BRAVE (jasur).\n\nUnit 4 ning asosiy farqi:\n'What does he LOOK LIKE?' ↔ 'What IS he\nLIKE?'",
-       "speak": "Phoebus is also a very 6) ..................... man."
+       "speak": "Phoebus is also a very 6) ..................... man.",
+       "speakAnswer": "brave"
       }
      ]
     },

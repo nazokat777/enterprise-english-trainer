@@ -282,7 +282,8 @@
         "guests"
        ],
        "whyUz": "'SOUVENIRS' — sovg'a QANDAY? → qo'lbola.\n\nCoursebook 105-bet, Jekning xati:\n'I bought some lovely HANDMADE souvenirs\nthere.'\n\nhand + made — qo'shma sifat, BIRGA yoziladi.",
-       "speak": "1  I bought some beautiful ................................ souvenirs at the bazaar yesterday."
+       "speak": "1  I bought some beautiful ................................ souvenirs at the bazaar yesterday.",
+       "speakAnswer": "handmade"
       },
       {
        "prompt": "2  We have .................... a table at Louis' for tonight.",
@@ -295,7 +296,8 @@
         "handmade"
        ],
        "whyUz": "⚠ GRAMMATIK KALIT: 'We HAVE ...' —\n'have' dan keyin V3 kerak.\n\nRo'yxatdagi YAGONA '-ed' shakli — BOOKED.\n\n'book a table' = stol band qilmoq\n(Coursebook 107 va 108-betlar).",
-       "speak": "2  We have .................... a table at Louis' for tonight."
+       "speak": "2  We have .................... a table at Louis' for tonight.",
+       "speakAnswer": "booked"
       },
       {
        "prompt": "3  It's a good idea to give your neighbour a ............ key before you go on holiday.",
@@ -308,7 +310,8 @@
         "handmade"
        ],
        "whyUz": "'a ... KEY' — kalit QANDAY? → zaxira.\n\nCoursebook 108-bet, Tipping matni:\n'no one can find the SPARE keys'.\n\n'a spare room' = mehmonxonasi.",
-       "speak": "3  It's a good idea to give your neighbour a ............ key before you go on holiday."
+       "speak": "3  It's a good idea to give your neighbour a ............ key before you go on holiday.",
+       "speakAnswer": "spare"
       },
       {
        "prompt": "4  Paris is a .................. city full of wonderful sights.",
@@ -321,7 +324,8 @@
         "guests"
        ],
        "whyUz": "'a ... CITY' — shahar QANDAY? → ulug'vor.\n\nCoursebook 107-bet, Madrid dialogi:\n'The state rooms were MAGNIFICENT.'\n\n'a sight' = diqqatga sazovor joy.",
-       "speak": "4  Paris is a .................. city full of wonderful sights."
+       "speak": "4  Paris is a .................. city full of wonderful sights.",
+       "speakAnswer": "magnificent"
       },
       {
        "prompt": "5  You mustn't touch the ................ in the museum.",
@@ -334,7 +338,8 @@
         "handmade"
        ],
        "whyUz": "'IN THE MUSEUM' — muzeyda nimaga tegib\nbo'lmaydi? → eksponatlar.\n\nCoursebook 105-bet: 'to see the EXHIBITS'.\n\nDIQQAT: 'an exhibit' = bitta buyum;\n'an exhibition' = butun ko'rgazma.",
-       "speak": "5  You mustn't touch the ................ in the museum."
+       "speak": "5  You mustn't touch the ................ in the museum.",
+       "speakAnswer": "exhibits"
       },
       {
        "prompt": "6  You should arrive at the airport ............................. two hours before your flight leaves.",
@@ -347,7 +352,8 @@
         "handmade"
        ],
        "whyUz": "'... TWO HOURS before' — kamida ikki soat.\n\nCoursebook 108-bet: 'tip a bellboy AT LEAST\n$5'.\n\n'at least' = kamida;\n'at most' = ko'pi bilan.",
-       "speak": "6  You should arrive at the airport ............................. two hours before your flight leaves."
+       "speak": "6  You should arrive at the airport ............................. two hours before your flight leaves.",
+       "speakAnswer": "at least"
       },
       {
        "prompt": "7  Don't forget to ............................. the waiter when you eat at a restaurant.",
@@ -360,7 +366,8 @@
         "guests"
        ],
        "whyUz": "⚠ GRAMMATIK KALIT: 'forget TO ...' —\n'to' dan keyin ASOSIY FE'L kerak.\n\nRo'yxatdagi YAGONA fe'l — TIP.\n\nDIQQAT: 'tip' ikki so'z turkumida:\n  a tip (OT) = choychaqa\n  to tip (FE'L) = choychaqa bermoq\nBu yerda FE'L.",
-       "speak": "7  Don't forget to ............................. the waiter when you eat at a restaurant."
+       "speak": "7  Don't forget to ............................. the waiter when you eat at a restaurant.",
+       "speakAnswer": "tip"
       },
       {
        "prompt": "8  Only the ............................................. can use the swimming-pool at the hotel.",
@@ -373,7 +380,8 @@
         "handmade"
        ],
        "whyUz": "'at the HOTEL' — mehmonxonada basseyndan kim\nfoydalanadi? → mehmonlar.\n\nCoursebook 108-bet: 'GUESTS who don't tip\nwell at hotels ...'\n\n'a guest' = mehmon;\n'a host' = mezbon.",
-       "speak": "8  Only the ............................................. can use the swimming-pool at the hotel."
+       "speak": "8  Only the ............................................. can use the swimming-pool at the hotel.",
+       "speakAnswer": "guests"
       }
      ]
     },
@@ -390,27 +398,33 @@
      "tasks": [
       {
        "left": "1  The weather is COLD",
-       "right": "hot"
+       "right": "hot",
+       "speakAnswer": "hot"
       },
       {
        "left": "2  I am having a HORRIBLE time",
-       "right": "wonderful"
+       "right": "wonderful",
+       "speakAnswer": "wonderful"
       },
       {
        "left": "3  The place is QUIET",
-       "right": "noisy"
+       "right": "noisy",
+       "speakAnswer": "noisy"
       },
       {
        "left": "4  The place is EMPTY",
-       "right": "crowded"
+       "right": "crowded",
+       "speakAnswer": "crowded"
       },
       {
        "left": "5  in a MODERN restaurant",
-       "right": "traditional"
+       "right": "traditional",
+       "speakAnswer": "traditional"
       },
       {
        "left": "6  The food is DISGUSTING",
-       "right": "delicious"
+       "right": "delicious",
+       "speakAnswer": "delicious"
       }
      ]
     },
@@ -433,7 +447,8 @@
         "primitive",
         "modern"
        ],
-       "whyUz": "Kanoe — eng qadimiy qayiq turlaridan biri\n(yog'ochdan yasalgan, eshkak bilan\nharakatlanadi).\n\n→ PRIMITIVE (ibtidoiy, oddiy)\n\n'modern' (zamonaviy) mantiqan noto'g'ri.\n\nCoursebook 109-bet, 7-mashq: 'a canoe trip'."
+       "whyUz": "Kanoe — eng qadimiy qayiq turlaridan biri\n(yog'ochdan yasalgan, eshkak bilan\nharakatlanadi).\n\n→ PRIMITIVE (ibtidoiy, oddiy)\n\n'modern' (zamonaviy) mantiqan noto'g'ri.\n\nCoursebook 109-bet, 7-mashq: 'a canoe trip'.",
+       "speakAnswer": "primitive"
       },
       {
        "prompt": "2  I think you're wasting/slowing down your time.",
@@ -443,7 +458,8 @@
         "wasting",
         "slowing down"
        ],
-       "whyUz": "TURG'UN IBORA: 'to WASTE your time'\n= vaqtni behuda o'tkazmoq.\n\n'slow down your time' — bunday ibora YO'Q\n('slow down' = sekinlashtirmoq, lekin vaqt\nbilan ishlatilmaydi).\n\nCoursebook 107-bet, Madrid dialogi:\n'I see you don't WASTE YOUR TIME.'"
+       "whyUz": "TURG'UN IBORA: 'to WASTE your time'\n= vaqtni behuda o'tkazmoq.\n\n'slow down your time' — bunday ibora YO'Q\n('slow down' = sekinlashtirmoq, lekin vaqt\nbilan ishlatilmaydi).\n\nCoursebook 107-bet, Madrid dialogi:\n'I see you don't WASTE YOUR TIME.'",
+       "speakAnswer": "wasting"
       },
       {
        "prompt": "3  I can't stand/believe Steven. I really don't like him.",
@@ -453,7 +469,8 @@
         "stand",
         "believe"
        ],
-       "whyUz": "TURG'UN IBORA: 'can't STAND somebody'\n= birovni ko'rgani ko'zi yo'q.\n\nKALIT: 'I really DON'T LIKE him' — salbiy\nma'no, demak 'can't stand' mos keladi.\n\n'can't believe' = ishonolmayman — ma'noga zid.\n\nDIQQAT: 'stand' bu yerda 'turmoq' EMAS!"
+       "whyUz": "TURG'UN IBORA: 'can't STAND somebody'\n= birovni ko'rgani ko'zi yo'q.\n\nKALIT: 'I really DON'T LIKE him' — salbiy\nma'no, demak 'can't stand' mos keladi.\n\n'can't believe' = ishonolmayman — ma'noga zid.\n\nDIQQAT: 'stand' bu yerda 'turmoq' EMAS!",
+       "speakAnswer": "stand"
       },
       {
        "prompt": "4  What's the wrong/matter with the TV? I can't hear it.",
@@ -463,7 +480,8 @@
         "matter",
         "wrong"
        ],
-       "whyUz": "⚠ ENG NOZIK BAND — GAPDA 'THE' BOR:\n  'What's THE ... with the TV?'\n\n'the' faqat 'matter' bilan keladi:\n  'What's THE MATTER with ...?'  ✓\n  'What's WRONG with ...?'       ✓ ('the' siz)\n  'What's THE WRONG with ...?'   ✗\n\nCoursebook 101-bet, 10-mashqda ikkalasi ham\nbor edi."
+       "whyUz": "⚠ ENG NOZIK BAND — GAPDA 'THE' BOR:\n  'What's THE ... with the TV?'\n\n'the' faqat 'matter' bilan keladi:\n  'What's THE MATTER with ...?'  ✓\n  'What's WRONG with ...?'       ✓ ('the' siz)\n  'What's THE WRONG with ...?'   ✗\n\nCoursebook 101-bet, 10-mashqda ikkalasi ham\nbor edi.",
+       "speakAnswer": "matter"
       },
       {
        "prompt": "5  I'm sure there is a logical/strange explanation for what he did.",
@@ -473,7 +491,8 @@
         "logical",
         "strange"
        ],
-       "whyUz": "TURG'UN BIRIKMA: 'a LOGICAL explanation'\n= mantiqiy izoh.\n\nKALIT: 'I'M SURE' — ishonch bildiryapti,\ndemak oddiy, tushunarli izoh bor.\n'a strange explanation' — ishonchni\nbildirmaydi.\n\n'logical' — 'illogical' (mantiqsiz) ning\nziddi."
+       "whyUz": "TURG'UN BIRIKMA: 'a LOGICAL explanation'\n= mantiqiy izoh.\n\nKALIT: 'I'M SURE' — ishonch bildiryapti,\ndemak oddiy, tushunarli izoh bor.\n'a strange explanation' — ishonchni\nbildirmaydi.\n\n'logical' — 'illogical' (mantiqsiz) ning\nziddi.",
+       "speakAnswer": "logical"
       },
       {
        "prompt": "6  The aliens took/erased their memories.",
@@ -483,7 +502,8 @@
         "erased",
         "took"
        ],
-       "whyUz": "TURG'UN BIRIKMA: 'to ERASE memories'\n= xotiralarni o'chirib tashlamoq.\n\n'take memories' — bunday ibora yo'q.\n\n'to erase' = o'chirmoq (yozuvni, yozuvni,\nxotirani).\n'an alien' = o'zga sayyoralik."
+       "whyUz": "TURG'UN BIRIKMA: 'to ERASE memories'\n= xotiralarni o'chirib tashlamoq.\n\n'take memories' — bunday ibora yo'q.\n\n'to erase' = o'chirmoq (yozuvni, yozuvni,\nxotirani).\n'an alien' = o'zga sayyoralik.",
+       "speakAnswer": "erased"
       }
      ]
     },
@@ -500,19 +520,23 @@
      "tasks": [
       {
        "left": "1  Qadimiy ustunlar va vayronalar",
-       "right": "temple"
+       "right": "temple",
+       "speakAnswer": "temple"
       },
       {
        "left": "2  Qilich taqqan bronza haykal",
-       "right": "statue"
+       "right": "statue",
+       "speakAnswer": "statue"
       },
       {
        "left": "3  Dengiz mahsulotlari bilan guruch taomi",
-       "right": "paella"
+       "right": "paella",
+       "speakAnswer": "paella"
       },
       {
        "left": "4  Rastalar va odamlar (ochiq bozor)",
-       "right": "flea market"
+       "right": "flea market",
+       "speakAnswer": "flea market"
       }
      ]
     }
@@ -724,7 +748,8 @@
         "are you staying"
        ],
        "whyUz": "KALIT: 'HOW LONG' — bu savol DOIM\nPRESENT PERFECT bilan (agar hozir ham davom\netayotgan bo'lsa).\n\n105-bet, 4b-mashqda ham shu savol bor edi:\n'How long HAS Jack BEEN there?'",
-       "speak": "1  Paul: How long ................... (you/be) here?"
+       "speak": "1  Paul: How long ................... (you/be) here?",
+       "speakAnswer": "have you been"
       },
       {
        "prompt": "2  Peter: Oh, I ........................ (arrive) last Saturday.",
@@ -737,7 +762,8 @@
         "are you staying"
        ],
        "whyUz": "KALIT: 'LAST SATURDAY' — ANIQ VAQT\n→ PAST SIMPLE.\n\n'I have arrived last Saturday' — XATO!\nAniq vaqt bilan Present Perfect ishlatilmaydi.",
-       "speak": "2  Peter: Oh, I ........................ (arrive) last Saturday."
+       "speak": "2  Peter: Oh, I ........................ (arrive) last Saturday.",
+       "speakAnswer": "arrived"
       },
       {
        "prompt": "3  I ................... (stay) at the Monaco Hotel.",
@@ -750,7 +776,8 @@
         "are you staying"
        ],
        "whyUz": "Hozirgi VAQTINCHALIK holat →\nPRESENT CONTINUOUS.\n\n'I stay at the Monaco Hotel' — doimiy odat\ndegan ma'no berardi (har safar shu yerda\nturaman).\n\nTa'til — vaqtinchalik, shuning uchun\n'am staying'.",
-       "speak": "3  I ................... (stay) at the Monaco Hotel."
+       "speak": "3  I ................... (stay) at the Monaco Hotel.",
+       "speakAnswer": "am staying"
       },
       {
        "prompt": "4  Where ................... (you/stay)?",
@@ -763,7 +790,8 @@
         "am staying"
        ],
        "whyUz": "3-band bilan bir xil — VAQTINCHALIK holat\n→ PRESENT CONTINUOUS.\n\nSavol shakli: ARE + ega + V-ing.",
-       "speak": "4  Where ................... (you/stay)?"
+       "speak": "4  Where ................... (you/stay)?",
+       "speakAnswer": "are you staying"
       },
       {
        "prompt": "5  Paul: With my friend Carlos. I ................... (be) here since last Monday.",
@@ -776,7 +804,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'SINCE' — Present Perfect ning\nko'rsatkichi.\n\n'SINCE last Monday' = o'tgan dushanbadan beri\n(boshlanish nuqtasi).\n\nbe → BEEN (V3).",
-       "speak": "5  Paul: With my friend Carlos. I ................... (be) here since last Monday."
+       "speak": "5  Paul: With my friend Carlos. I ................... (be) here since last Monday.",
+       "speakAnswer": "have been"
       },
       {
        "prompt": "6  Peter: Which places ................... (you/visit)?",
@@ -789,7 +818,8 @@
         "am staying"
        ],
        "whyUz": "Vaqt AYTILMAGAN — umumiy TAJRIBA so'ralyapti\n→ PRESENT PERFECT.\n\n105-bet, Speaking bo'limi bilan bir xil:\n'HAS Jack VISITED the bazaar?'",
-       "speak": "6  Peter: Which places ................... (you/visit)?"
+       "speak": "6  Peter: Which places ................... (you/visit)?",
+       "speakAnswer": "have you visited"
       },
       {
        "prompt": "7  Paul: Well, I ................... (already/visit) the Prado Museum.",
@@ -802,7 +832,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'ALREADY' — Present Perfect ning\nko'rsatkichi.\n\n'already' — 'have' va V3 ORASIDA:\n  'I have ALREADY visited' ✓\n  'I have visited already' (kamroq)\n  'ALREADY I have visited' ✗",
-       "speak": "7  Paul: Well, I ................... (already/visit) the Prado Museum."
+       "speak": "7  Paul: Well, I ................... (already/visit) the Prado Museum.",
+       "speakAnswer": "have already visited"
       },
       {
        "prompt": "8  I ................... (go) there last Monday.",
@@ -815,7 +846,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'LAST MONDAY' — ANIQ VAQT\n→ PAST SIMPLE.\n\n⚠ 7 va 8-BANDLAR — UNIT 15 NING ASOSIY NAQSHI:\n  7  'I HAVE ALREADY VISITED' (vaqt yo'q)\n  8  'I WENT there LAST MONDAY' (aniq vaqt)\n\n105-betdagi Jekning xati ham aynan shunday\ntuzilgan.\n\ngo → WENT (V2).",
-       "speak": "8  I ................... (go) there last Monday."
+       "speak": "8  I ................... (go) there last Monday.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "9  It's fantastic. I ................... (see) some beautiful paintings there.",
@@ -828,7 +860,8 @@
         "am staying"
        ],
        "whyUz": "8-band bilan BIR XIL vaqtda (o'tgan dushanba)\n→ PAST SIMPLE.\n\nsee → SAW (V2).\n\n'a painting' = kartina, rasm.",
-       "speak": "9  It's fantastic. I ................... (see) some beautiful paintings there."
+       "speak": "9  It's fantastic. I ................... (see) some beautiful paintings there.",
+       "speakAnswer": "saw"
       },
       {
        "prompt": "10  Peter: I will, indeed. ................... (you/go) to Palacio Real yet?",
@@ -841,7 +874,8 @@
         "are you staying"
        ],
        "whyUz": "KALIT: 'YET' — Present Perfect ning\nko'rsatkichi.\n\n⚠ MUHIM IZOH — NEGA 'BEEN', 'GONE' EMAS:\n  'Have you GONE to ...?' = hali u yerdasizmi?\n  'Have you BEEN to ...?' = borib qaytdingizmi?\n\nPol javob beradi: 'Yes, I WENT there\nYESTERDAY' — ya'ni borib QAYTGAN.\nShuning uchun 'BEEN' to'g'ri.\n\nQavsda '(you/go)' yozilgan, lekin ma'no\n'been' ni talab qiladi.",
-       "speak": "10  Peter: I will, indeed. ................... (you/go) to Palacio Real yet?"
+       "speak": "10  Peter: I will, indeed. ................... (you/go) to Palacio Real yet?",
+       "speakAnswer": "have you been"
       },
       {
        "prompt": "11  Paul: Yes, I ................... (go) there yesterday.",
@@ -854,7 +888,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'YESTERDAY' — ANIQ VAQT\n→ PAST SIMPLE.\n\nYana o'sha naqsh: savol Present Perfect da\n('Have you been ... yet?'), javob esa aniq\nvaqt bilan Past Simple da.",
-       "speak": "11  Paul: Yes, I ................... (go) there yesterday."
+       "speak": "11  Paul: Yes, I ................... (go) there yesterday.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "12  Peter: That sounds nice. ................... (you/be) shopping at all?",
@@ -867,7 +902,8 @@
         "are you staying"
        ],
        "whyUz": "Vaqt AYTILMAGAN, TAJRIBA so'ralyapti\n→ PRESENT PERFECT.\n\n'AT ALL' — savolni kuchaytiradi\n('umuman', 'biror marta bo'lsa ham').\n\n'to BE shopping' — Present Perfect da\nturg'un shakl ('have you been shopping').",
-       "speak": "12  Peter: That sounds nice. ................... (you/be) shopping at all?"
+       "speak": "12  Peter: That sounds nice. ................... (you/be) shopping at all?",
+       "speakAnswer": "have you been"
       },
       {
        "prompt": "13  Paul: No, I haven't, but I ................... (do) that soon.",
@@ -880,7 +916,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'SOON' — kelajak.\n\nKeyingi gap ('I WANT to go to the Rastro')\nniyat ALLAQACHON borligini ko'rsatadi\n→ BE GOING TO (reja).\n\nDIQQAT: 'I'LL DO that soon' ham to'g'ri —\nayni damdagi qaror sifatida.\nIkkalasi ham qabul qilinadi.",
-       "speak": "13  Paul: No, I haven't, but I ................... (do) that soon."
+       "speak": "13  Paul: No, I haven't, but I ................... (do) that soon.",
+       "speakAnswer": "am going to do"
       },
       {
        "prompt": "14  I ................... (want) to go to the Rastro flea market to buy some souvenirs.",
@@ -893,7 +930,8 @@
         "am staying"
        ],
        "whyUz": "'WANT' — HIS/XOHISH fe'li, Continuous\nshaklda ISHLATILMAYDI → PRESENT SIMPLE.\n\n'I am wanting' — XATO!\n\nShu kabi fe'llar: like, love, hate, know,\nunderstand, believe, need.\n\n'a flea market' = eski buyumlar bozori.",
-       "speak": "14  I ................... (want) to go to the Rastro flea market to buy some souvenirs."
+       "speak": "14  I ................... (want) to go to the Rastro flea market to buy some souvenirs.",
+       "speakAnswer": "want"
       },
       {
        "prompt": "15  Peter: That's a good idea. ................... (you/try) paella yet?",
@@ -906,7 +944,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'YET' — Present Perfect ning\nko'rsatkichi.\n\ntry → TRIED (y → i + ed).\n\n'paella' — ispan taomi (guruch, dengiz\nmahsulotlari, za'faron).",
-       "speak": "15  Peter: That's a good idea. ................... (you/try) paella yet?"
+       "speak": "15  Peter: That's a good idea. ................... (you/try) paella yet?",
+       "speakAnswer": "have you tried"
       },
       {
        "prompt": "16  Paul: Of course. I ................... (go) to 'Lhardy' restaurant last night with some friends.",
@@ -919,7 +958,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'LAST NIGHT' — ANIQ VAQT\n→ PAST SIMPLE.\n\nYana o'sha naqsh (15-16 bandlar):\nsavol Present Perfect, javob Past Simple.",
-       "speak": "16  Paul: Of course. I ................... (go) to 'Lhardy' restaurant last night with some friends."
+       "speak": "16  Paul: Of course. I ................... (go) to 'Lhardy' restaurant last night with some friends.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "17  Peter: What ................... (you/do) tonight?",
@@ -932,7 +972,8 @@
         "am staying"
        ],
        "whyUz": "Kelajakdagi REJA (aniq vaqt: 'tonight')\n→ PRESENT CONTINUOUS.\n\nUnit 13 dan: aniq vaqtli reja → Present\nContinuous.\n\nGrammar 63-bet, 13-mashqda ham shu savol bor\nedi: 'What ARE YOU DOING this evening?'",
-       "speak": "17  Peter: What ................... (you/do) tonight?"
+       "speak": "17  Peter: What ................... (you/do) tonight?",
+       "speakAnswer": "are you doing"
       },
       {
        "prompt": "18  Paul: I'd love to, but I can't. I ................... (go) to the opera to see Carmen.",
@@ -945,7 +986,8 @@
         "am staying"
        ],
        "whyUz": "Aniq REJA (ehtimol chipta ham bor)\n→ PRESENT CONTINUOUS.\n\n17-band bilan mos: savol 'are you doing',\njavob 'am going'.\n\n'I'd love to' = juda xohlardim\n('I would love to' qisqartmasi).\n'Carmen' — Bize operasi.",
-       "speak": "18  Paul: I'd love to, but I can't. I ................... (go) to the opera to see Carmen."
+       "speak": "18  Paul: I'd love to, but I can't. I ................... (go) to the opera to see Carmen.",
+       "speakAnswer": "am going"
       }
      ]
     },
@@ -1077,7 +1119,8 @@
         "Americans",
         "Canadians"
        ],
-       "whyUz": "MATNNING BIRINCHI GAPI so'zma-so'z:\n'AMERICANS take tipping more seriously than\nany other nationality.'\n\nMatn sarlavhasi ham aytib turibdi:\n'TIPPING IN AMERICA'.\n\n'Canadians' matnda umuman yo'q."
+       "whyUz": "MATNNING BIRINCHI GAPI so'zma-so'z:\n'AMERICANS take tipping more seriously than\nany other nationality.'\n\nMatn sarlavhasi ham aytib turibdi:\n'TIPPING IN AMERICA'.\n\n'Canadians' matnda umuman yo'q.",
+       "speakAnswer": "Americans"
       },
       {
        "prompt": "2  Tip your bellboy / travel agent generously, and you'll have the perfect holiday.",
@@ -1087,7 +1130,8 @@
         "bellboy",
         "travel agent"
        ],
-       "whyUz": "MATNDAN so'zma-so'z:\n'Tip your BELLBOY generously, and you'll have\nthe perfect holiday.'\n\n'travel agent' matnda umuman yo'q.\n\nButun matn BELLBOY (mehmonxona xizmatchisi)\nhaqida."
+       "whyUz": "MATNDAN so'zma-so'z:\n'Tip your BELLBOY generously, and you'll have\nthe perfect holiday.'\n\n'travel agent' matnda umuman yo'q.\n\nButun matn BELLBOY (mehmonxona xizmatchisi)\nhaqida.",
+       "speakAnswer": "bellboy"
       },
       {
        "prompt": "3  For tips of $60 / $20 or more, your bellboy will be your friend forever.",
@@ -1121,7 +1165,8 @@
         "A  They will have a great holiday.",
         "B  The bellboys will like them."
        ],
-       "whyUz": "MATNDAN so'zma-so'z:\n'DON'T TIP HIM, and you'll have the WORST\nHOLIDAY OF YOUR LIFE!'\n\nA va B — matnga ZID (aksincha, choychaqa\nBERGANLAR yaxshi ta'til o'tkazadi)."
+       "whyUz": "MATNDAN so'zma-so'z:\n'DON'T TIP HIM, and you'll have the WORST\nHOLIDAY OF YOUR LIFE!'\n\nA va B — matnga ZID (aksincha, choychaqa\nBERGANLAR yaxshi ta'til o'tkazadi).",
+       "speakAnswer": "C  They will have a very bad holiday."
       },
       {
        "prompt": "2  Which of the following can happen to guests who don't tip well?  A Their heating goes off in the middle of winter.  B They get more keys for their room.  C They don't get any phone calls.",
@@ -1132,7 +1177,8 @@
         "B  They get more keys for their room.",
         "C  They don't get any phone calls."
        ],
-       "whyUz": "MATNDAN:\n'the HEATING in their room \"accidentally\"\nSTOPS WORKING in the MIDDLE OF WINTER'\n\n⚠ ENG NOZIK SAVOL — B va C TESKARI aytilgan:\n\n  B XATO: matnda kalitlar KO'PAYMAYDI, balki\n     'DISAPPEAR' (yo'qoladi).\n  C XATO: matnda ular qo'ng'iroq OLADI\n     ('they RECEIVE strange phone calls'),\n     olmaydi emas!\n\n'to go off' = 'to stop working' (o'chib qolmoq)."
+       "whyUz": "MATNDAN:\n'the HEATING in their room \"accidentally\"\nSTOPS WORKING in the MIDDLE OF WINTER'\n\n⚠ ENG NOZIK SAVOL — B va C TESKARI aytilgan:\n\n  B XATO: matnda kalitlar KO'PAYMAYDI, balki\n     'DISAPPEAR' (yo'qoladi).\n  C XATO: matnda ular qo'ng'iroq OLADI\n     ('they RECEIVE strange phone calls'),\n     olmaydi emas!\n\n'to go off' = 'to stop working' (o'chib qolmoq).",
+       "speakAnswer": "A  Their heating goes off in the middle of winter."
       },
       {
        "prompt": "3  It's a good idea to tip a bellboy at least ...  A $50.  B $15.  C $5.",
@@ -1154,7 +1200,8 @@
         "A  a cheap or an expensive holiday.",
         "C  a clean or a dirty room."
        ],
-       "whyUz": "MATNNING OXIRGI GAPI:\n'bellboys can MAKE SURE you have the HOLIDAY\nOF YOUR DREAMS ... or they can make your\nvisit a NIGHTMARE!'\n\n'holiday of your dreams' = YAXSHI ta'til\n'nightmare' = YOMON ta'til\n→ B\n\nA XATO: matnda NARX haqida gap yo'q.\nC XATO: matnda TOZALIK haqida gap yo'q\n(isitish, kalit, qo'ng'iroq bor)."
+       "whyUz": "MATNNING OXIRGI GAPI:\n'bellboys can MAKE SURE you have the HOLIDAY\nOF YOUR DREAMS ... or they can make your\nvisit a NIGHTMARE!'\n\n'holiday of your dreams' = YAXSHI ta'til\n'nightmare' = YOMON ta'til\n→ B\n\nA XATO: matnda NARX haqida gap yo'q.\nC XATO: matnda TOZALIK haqida gap yo'q\n(isitish, kalit, qo'ng'iroq bor).",
+       "speakAnswer": "B  a good or a bad holiday."
       }
      ]
     }
@@ -1190,7 +1237,8 @@
         "have been"
        ],
        "whyUz": "Hozirgi holat → PRESENT SIMPLE.\n\nJek va Lauraning xatlari ham shunday\nboshlangan: 'The weather IS ...'",
-       "speak": "1  The weather ....................... (be) sunny"
+       "speak": "1  The weather ....................... (be) sunny",
+       "speakAnswer": "is"
       },
       {
        "prompt": "2  and I ....................... (have) a fantastic time.",
@@ -1203,7 +1251,8 @@
         "have been"
        ],
        "whyUz": "Hozir davom etayotgan → PRESENT CONTINUOUS.\n\n'to have a fantastic time' — bu ma'noda\n'have' Continuous BO'LADI.",
-       "speak": "2  and I ....................... (have) a fantastic time."
+       "speak": "2  and I ....................... (have) a fantastic time.",
+       "speakAnswer": "am having"
       },
       {
        "prompt": "3  David and I ....................... (stay) at a lovely hotel in the city centre.",
@@ -1216,7 +1265,8 @@
         "have been"
        ],
        "whyUz": "VAQTINCHALIK turish → PRESENT CONTINUOUS.\n\n⚠ EGA: 'DAVID AND I' — KO'PLIK (= WE)\n→ 'ARE staying' ('am' EMAS!)\n\nBu — eng ko'p unutiladigan joy.",
-       "speak": "3  David and I ....................... (stay) at a lovely hotel in the city centre."
+       "speak": "3  David and I ....................... (stay) at a lovely hotel in the city centre.",
+       "speakAnswer": "are staying"
       },
       {
        "prompt": "4  We ....................... (be) here since Tuesday",
@@ -1229,7 +1279,8 @@
         "are staying"
        ],
        "whyUz": "KALIT: 'SINCE Tuesday' → PRESENT PERFECT.\nbe → BEEN.",
-       "speak": "4  We ....................... (be) here since Tuesday"
+       "speak": "4  We ....................... (be) here since Tuesday",
+       "speakAnswer": "have been"
       },
       {
        "prompt": "5  and we ....................... (already/do) many interesting things.",
@@ -1242,7 +1293,8 @@
         "are staying"
        ],
        "whyUz": "KALIT: 'ALREADY' → PRESENT PERFECT.\n'already' — 'have' va V3 ORASIDA.\ndo → DONE.",
-       "speak": "5  and we ....................... (already/do) many interesting things."
+       "speak": "5  and we ....................... (already/do) many interesting things.",
+       "speakAnswer": "have already done"
       },
       {
        "prompt": "6  We ....................... (take) a boat trip down the Amstel River.",
@@ -1255,7 +1307,8 @@
         "are staying"
        ],
        "whyUz": "Vaqt AYTILMAGAN → PRESENT PERFECT.\ntake → TAKEN (V3).\n\n⚠ 7-BAND BILAN JUFT: xabar → aniq vaqt.",
-       "speak": "6  We ....................... (take) a boat trip down the Amstel River."
+       "speak": "6  We ....................... (take) a boat trip down the Amstel River.",
+       "speakAnswer": "have taken"
       },
       {
        "prompt": "7  We ....................... (do) that on Wednesday.",
@@ -1268,7 +1321,8 @@
         "are staying"
        ],
        "whyUz": "KALIT: 'ON WEDNESDAY' — ANIQ VAQT\n→ PAST SIMPLE.\ndo → DID (V2).\n\nUnit 15 ning oltin qoidasi.",
-       "speak": "7  We ....................... (do) that on Wednesday."
+       "speak": "7  We ....................... (do) that on Wednesday.",
+       "speakAnswer": "did"
       },
       {
        "prompt": "8  It ....................... (be) amazing!",
@@ -1281,7 +1335,8 @@
         "are staying"
        ],
        "whyUz": "O'sha sayohat haqida BAHO → PAST SIMPLE.\n\nBaho DOIM Past Simple da beriladi.",
-       "speak": "8  It ....................... (be) amazing!"
+       "speak": "8  It ....................... (be) amazing!",
+       "speakAnswer": "was"
       },
       {
        "prompt": "9  We ....................... (also/visit) the Van Gogh Museum.",
@@ -1294,7 +1349,8 @@
         "are staying"
        ],
        "whyUz": "Vaqt AYTILMAGAN → PRESENT PERFECT.\n'ALSO' — 'have' va V3 ORASIDA.\n\n⚠ 10-BAND BILAN JUFT.",
-       "speak": "9  We ....................... (also/visit) the Van Gogh Museum."
+       "speak": "9  We ....................... (also/visit) the Van Gogh Museum.",
+       "speakAnswer": "have also visited"
       },
       {
        "prompt": "10  We ....................... (visit) it on Thursday.",
@@ -1307,7 +1363,8 @@
         "are staying"
        ],
        "whyUz": "KALIT: 'ON THURSDAY' — ANIQ VAQT\n→ PAST SIMPLE.\n\nvisit → VISITED (to'g'ri fe'l).",
-       "speak": "10  We ....................... (visit) it on Thursday."
+       "speak": "10  We ....................... (visit) it on Thursday.",
+       "speakAnswer": "visited"
       },
       {
        "prompt": "11  The paintings ....................... (be) fascinating.",
@@ -1320,7 +1377,8 @@
         "are staying"
        ],
        "whyUz": "BAHO → PAST SIMPLE.\n\n⚠ EGA: 'The PAINTINGS' — KO'PLIK\n→ WERE ('was' EMAS!)\n\n'a painting' = kartina.",
-       "speak": "11  The paintings ....................... (be) fascinating."
+       "speak": "11  The paintings ....................... (be) fascinating.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "12  I ....................... (buy) some great posters there.",
@@ -1333,7 +1391,8 @@
         "are staying"
        ],
        "whyUz": "O'sha tashrifda (payshanba) → PAST SIMPLE.\n\nbuy → BOUGHT (V2 = V3).\n\nJekning xati: 'I BOUGHT some lovely handmade\nsouvenirs there.'",
-       "speak": "12  I ....................... (buy) some great posters there."
+       "speak": "12  I ....................... (buy) some great posters there.",
+       "speakAnswer": "bought"
       },
       {
        "prompt": "13  There are a lot of things we ....................... (not/do) yet.",
@@ -1346,7 +1405,8 @@
         "are staying"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT INKOR.\n\nJek va Lauraning xatlarida ham AYNAN shu gap\nbor edi.",
-       "speak": "13  There are a lot of things we ....................... (not/do) yet."
+       "speak": "13  There are a lot of things we ....................... (not/do) yet.",
+       "speakAnswer": "haven't done"
       },
       {
        "prompt": "14  We ....................... (not/visit) the Anne Frank House",
@@ -1359,7 +1419,8 @@
         "are staying"
        ],
        "whyUz": "'YET' ma'nosi davom etadi → PRESENT PERFECT\nINKOR.\n\nvisit → VISITED (V3).",
-       "speak": "14  We ....................... (not/visit) the Anne Frank House"
+       "speak": "14  We ....................... (not/visit) the Anne Frank House",
+       "speakAnswer": "haven't visited"
       },
       {
        "prompt": "15  and we ....................... (not/go) to the Artis Zoo.",
@@ -1372,7 +1433,8 @@
         "are staying"
        ],
        "whyUz": "PRESENT PERFECT INKOR.\n\n⚠ 'BEEN', 'GONE' EMAS!\nWorkbook 60-bet, 6-mashq qoidasi:\n'have BEEN to' = tajriba (borib qaytish).\n\nAgar 'gone' bo'lsa, hozir hayvonot bog'ida\nbo'lardilar — lekin xat yozyaptilar.",
-       "speak": "15  and we ....................... (not/go) to the Artis Zoo."
+       "speak": "15  and we ....................... (not/go) to the Artis Zoo.",
+       "speakAnswer": "haven't been"
       },
       {
        "prompt": "16  We ....................... (visit) the zoo tomorrow to see the animals.",
@@ -1385,7 +1447,8 @@
         "are staying"
        ],
        "whyUz": "KALIT: 'TOMORROW' — ANIQ vaqtli reja\n→ PRESENT CONTINUOUS.\n\n('are going to visit' ham to'g'ri —\nikkalasi qabul qilinadi.)\n\n'TO see' — maqsad.",
-       "speak": "16  We ....................... (visit) the zoo tomorrow to see the animals."
+       "speak": "16  We ....................... (visit) the zoo tomorrow to see the animals.",
+       "speakAnswer": "are visiting"
       },
       {
        "prompt": "17  We ....................... (also/visit) the Stedelijk Museum.",
@@ -1398,7 +1461,8 @@
         "are staying"
        ],
        "whyUz": "Vaqt AYTILMAGAN reja → BE GOING TO.\n\n⚠ 16-BAND BILAN FARQI:\n  16  'TOMORROW' bor → Present Continuous\n  17  vaqt YO'Q → be going to\n\nJekning xati ham shunday:\n'We are going on a boat trip TOMORROW and we\nare GOING TO VISIT the museum one of these\ndays.'",
-       "speak": "17  We ....................... (also/visit) the Stedelijk Museum."
+       "speak": "17  We ....................... (also/visit) the Stedelijk Museum.",
+       "speakAnswer": "are also going to visit"
       },
       {
        "prompt": "18  It ....................... (be) famous for its large collection of modern art.",
@@ -1411,7 +1475,8 @@
         "have been"
        ],
        "whyUz": "Doimiy haqiqat → PRESENT SIMPLE.\n\n'famous FOR' — predlog 'for'\n(Coursebook 105-bet, 7-mashq).",
-       "speak": "18  It ....................... (be) famous for its large collection of modern art."
+       "speak": "18  It ....................... (be) famous for its large collection of modern art.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "19  Amsterdam ....................... (be) a magnificent city",
@@ -1424,7 +1489,8 @@
         "have been"
        ],
        "whyUz": "Doimiy holat / fikr → PRESENT SIMPLE.\n\nJekning xati: 'Cairo IS a fascinating city.'\nLauraning xati: 'Dublin IS a very friendly\ncity.'",
-       "speak": "19  Amsterdam ....................... (be) a magnificent city"
+       "speak": "19  Amsterdam ....................... (be) a magnificent city",
+       "speakAnswer": "is"
       },
       {
        "prompt": "20  We ....................... (return) to New York on the 15th,",
@@ -1437,7 +1503,8 @@
         "are staying"
        ],
        "whyUz": "KALIT: 'ON THE 15TH' — ANIQ SANALI REJA\n→ PRESENT CONTINUOUS.\n\nJekning xati: 'I'M RETURNING to England ON\nSUNDAY next week.'",
-       "speak": "20  We ....................... (return) to New York on the 15th,"
+       "speak": "20  We ....................... (return) to New York on the 15th,",
+       "speakAnswer": "are returning"
       },
       {
        "prompt": "21  so I ....................... (see) you then.",
@@ -1450,7 +1517,8 @@
         "are staying"
        ],
        "whyUz": "VA'DA → WILL.\n\nJekning xati: 'so I'LL CALL you then.'\nLauraning xati: 'so I WILL CALL you then.'\n\nUchala xat ham shu gap bilan tugaydi!",
-       "speak": "21  so I ....................... (see) you then."
+       "speak": "21  so I ....................... (see) you then.",
+       "speakAnswer": "will see"
       }
      ]
     },
@@ -1523,7 +1591,8 @@
         "hasn't"
        ],
        "whyUz": "'we, you, they' — 'HAS' EMAS, 'HAVE'.\n\nOLTIN QOIDA:\n  HAS  → faqat he / she / it\n  HAVE → qolgan hammasi (I, you, we, they)\n\nQisqartmasi: we'VE, you'VE, they'VE.",
-       "speak": "TASDIQ:  we / you / they ............ cleaned"
+       "speak": "TASDIQ:  we / you / they ............ cleaned",
+       "speakAnswer": "have"
       },
       {
        "prompt": "INKOR:  he / she / it ............ cleaned",
@@ -1536,7 +1605,8 @@
         "haven't"
        ],
        "whyUz": "'he, she, it' → HAS, inkori HASN'T.\n\nhasn't = has not\n\n'he haven't' — XATO!",
-       "speak": "INKOR:  he / she / it ............ cleaned"
+       "speak": "INKOR:  he / she / it ............ cleaned",
+       "speakAnswer": "hasn't"
       },
       {
        "prompt": "INKOR:  we / you / they ............ cleaned",
@@ -1549,7 +1619,8 @@
         "hasn't"
        ],
        "whyUz": "'we, you, they' → HAVE, inkori HAVEN'T.\n\nhaven't = have not\n\nDIQQAT: inkor shaklda ham xuddi shu qoida —\nfaqat he/she/it 'hasn't' oladi.",
-       "speak": "INKOR:  we / you / they ............ cleaned"
+       "speak": "INKOR:  we / you / they ............ cleaned",
+       "speakAnswer": "haven't"
       }
      ]
     },
@@ -1658,7 +1729,8 @@
         "haven't",
         "hasn't"
        ],
-       "whyUz": "QISQA JAVOB savoldagi yordamchi fe'lni\nTAKRORLAYDI:\n  'HAVE you been?' → 'Yes, I HAVE.'\n\nDIQQAT: ijobiy qisqa javobda QISQARTMA\nISHLATILMAYDI:\n  'Yes, I HAVE.' ✓\n  'Yes, I'VE.'   ✗"
+       "whyUz": "QISQA JAVOB savoldagi yordamchi fe'lni\nTAKRORLAYDI:\n  'HAVE you been?' → 'Yes, I HAVE.'\n\nDIQQAT: ijobiy qisqa javobda QISQARTMA\nISHLATILMAYDI:\n  'Yes, I HAVE.' ✓\n  'Yes, I'VE.'   ✗",
+       "speakAnswer": "have"
       },
       {
        "prompt": "Have I/we/you/they been to Turkey?  —  No, I/we/you/they .......... .",
@@ -1670,7 +1742,8 @@
         "has",
         "hasn't"
        ],
-       "whyUz": "Salbiy qisqa javob: HAVEN'T.\n\nSalbiy javobda qisqartma ODATIY:\n  'No, I HAVEN'T.'  ✓\n  'No, I have not.' ✓ (rasmiyroq)"
+       "whyUz": "Salbiy qisqa javob: HAVEN'T.\n\nSalbiy javobda qisqartma ODATIY:\n  'No, I HAVEN'T.'  ✓\n  'No, I have not.' ✓ (rasmiyroq)",
+       "speakAnswer": "haven't"
       },
       {
        "prompt": "Has he/she/it been to Turkey?  —  Yes, he/she/it ............. .",
@@ -1682,7 +1755,8 @@
         "haven't",
         "hasn't"
        ],
-       "whyUz": "Savol 'HAS' bilan boshlangan → javob ham\n'HAS'.\n\n'he/she/it' — DOIM 'has'.\n'Yes, he have' — XATO!"
+       "whyUz": "Savol 'HAS' bilan boshlangan → javob ham\n'HAS'.\n\n'he/she/it' — DOIM 'has'.\n'Yes, he have' — XATO!",
+       "speakAnswer": "has"
       },
       {
        "prompt": "Has he/she/it been to Turkey?  —  No, he/she/it ............... .",
@@ -1694,7 +1768,8 @@
         "has",
         "haven't"
        ],
-       "whyUz": "Salbiy qisqa javob: HASN'T (= has not).\n\n'No, he haven't' — XATO!\n'he/she/it' faqat 'hasn't' oladi."
+       "whyUz": "Salbiy qisqa javob: HASN'T (= has not).\n\n'No, he haven't' — XATO!\n'he/she/it' faqat 'hasn't' oladi.",
+       "speakAnswer": "hasn't"
       }
      ]
     }
@@ -2117,7 +2192,8 @@
         "for"
        ],
        "whyUz": "KITOBDAGI NAMUNA.\n\n'Friday' — HAFTA KUNI, ya'ni ANIQ NUQTA\n→ SINCE.\n\nSavol: 'qachondan beri?' → juma kunidan.\n\nbe → BEEN (V3).",
-       "speak": "1  He/be in Cairo/Friday  →  He has been in Cairo ............ Friday."
+       "speak": "1  He/be in Cairo/Friday  →  He has been in Cairo ............ Friday.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "2  He/live in Rome/three years  →  He has lived in Rome ............ three years.",
@@ -2128,7 +2204,8 @@
         "since"
        ],
        "whyUz": "'three years' — RAQAM + VAQT BIRLIGI,\nya'ni DAVOMIYLIK → FOR.\n\nSavol: 'qancha vaqt?' → uch yil.\n\nlive → LIVED (to'g'ri fe'l).\nega 'He' → HAS.",
-       "speak": "2  He/live in Rome/three years  →  He has lived in Rome ............ three years."
+       "speak": "2  He/live in Rome/three years  →  He has lived in Rome ............ three years.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "3  I/not see/Jane/ten years  →  I haven't seen Jane ............ ten years.",
@@ -2139,7 +2216,8 @@
         "since"
        ],
        "whyUz": "'ten years' — DAVOMIYLIK → FOR.\n\nDIQQAT: 'not' bor, demak HAVEN'T.\nsee → SEEN (V3).\n\nINKOR gapda ham 'for' ishlatiladi:\n'I haven't seen Jane FOR ten years.'\n= o'n yildan beri ko'rmadim.",
-       "speak": "3  I/not see/Jane/ten years  →  I haven't seen Jane ............ ten years."
+       "speak": "3  I/not see/Jane/ten years  →  I haven't seen Jane ............ ten years.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "4  I/not travel/by plane/1987  →  I haven't travelled by plane ............ 1987.",
@@ -2150,7 +2228,8 @@
         "for"
        ],
        "whyUz": "'1987' — YIL, ya'ni ANIQ NUQTA → SINCE.\n\nSavol: 'qachondan beri?' → 1987-yildan.\n\nDIQQAT — YOZILISHI:\ntravel → TRAVELLED (britancha, IKKI 'L')\ntravel → TRAVELED (amerikacha, bitta 'L')\nEnterprise — britancha kitob.\n\n'BY plane' — transport 'by' bilan, artiklsiz.",
-       "speak": "4  I/not travel/by plane/1987  →  I haven't travelled by plane ............ 1987."
+       "speak": "4  I/not travel/by plane/1987  →  I haven't travelled by plane ............ 1987.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "5  They/be/on holiday/last Monday  →  They have been on holiday ............ last Monday.",
@@ -2161,7 +2240,8 @@
         "for"
        ],
        "whyUz": "'last Monday' — ANIQ NUQTA → SINCE.\n\nDIQQAT — CHALG'ITUVCHI:\n  'FOR a week'      (davomiylik)\n  'SINCE last week' (nuqta)\n'last' so'zi ANIQ NUQTANI bildiradi.\n\nega 'They' → HAVE.\nbe → BEEN.\n'ON HOLIDAY' — turg'un ibora, artiklsiz.",
-       "speak": "5  They/be/on holiday/last Monday  →  They have been on holiday ............ last Monday."
+       "speak": "5  They/be/on holiday/last Monday  →  They have been on holiday ............ last Monday.",
+       "speakAnswer": "since"
       }
      ]
     }
@@ -2479,7 +2559,8 @@
         "for"
        ],
        "whyUz": "KITOBDAGI NAMUNA.\n'1992' — YIL, ya'ni ANIQ NUQTA → SINCE.\n\nlive → LIVED (to'g'ri fe'l).\nega 'She' → HAS.",
-       "speak": "1  She/live in Brazil/1992  →  She has lived in Brazil ............ 1992."
+       "speak": "1  She/live in Brazil/1992  →  She has lived in Brazil ............ 1992.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "2  He/be/ill/three days  →  He has been ill ............ three days.",
@@ -2490,7 +2571,8 @@
         "since"
        ],
        "whyUz": "'three days' — RAQAM + VAQT BIRLIGI\n→ DAVOMIYLIK → FOR.\n\nbe → BEEN (V3).\n\n⚠ Bu — 64-betdagi IKKINCHI qo'llanish:\no'tmishda boshlanib HOZIR HAM davom etayotgan\nholat. O'zbekchada HOZIRGI zamon bilan\ntarjima qilinadi ('kasal').",
-       "speak": "2  He/be/ill/three days  →  He has been ill ............ three days."
+       "speak": "2  He/be/ill/three days  →  He has been ill ............ three days.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "3  They/not visit/their grandparents/last month  →  They haven't visited their grandparents ............ last month.",
@@ -2501,7 +2583,8 @@
         "for"
        ],
        "whyUz": "'last month' — ANIQ NUQTA → SINCE.\n\nDIQQAT — CHALG'ITUVCHI:\n  'FOR a month'      (davomiylik)\n  'SINCE last month' (nuqta)\n'last' so'zi ANIQ NUQTANI bildiradi.\n\n'not' bor → HAVEN'T (ega 'They').\nvisit → VISITED.",
-       "speak": "3  They/not visit/their grandparents/last month  →  They haven't visited their grandparents ............ last month."
+       "speak": "3  They/not visit/their grandparents/last month  →  They haven't visited their grandparents ............ last month.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "4  I/be/a policeman/twenty years  →  I have been a policeman ............ twenty years.",
@@ -2512,7 +2595,8 @@
         "since"
        ],
        "whyUz": "'twenty years' — DAVOMIYLIK → FOR.\n\nbe → BEEN.\nega 'I' → HAVE.\n\nYana IKKINCHI qo'llanish: hozir ham\nmilitsioner ('militsionerman').",
-       "speak": "4  I/be/a policeman/twenty years  →  I have been a policeman ............ twenty years."
+       "speak": "4  I/be/a policeman/twenty years  →  I have been a policeman ............ twenty years.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "5  Karen/not be/home/October  →  Karen hasn't been home ............ October.",
@@ -2523,7 +2607,8 @@
         "for"
        ],
        "whyUz": "'October' — OY nomi, ANIQ NUQTA → SINCE.\n\n'not' bor + ega 'Karen' (III shaxs birlik)\n→ HASN'T.\n\nDIQQAT: 'be HOME' — predlog YO'Q\n('be AT home' ham to'g'ri).",
-       "speak": "5  Karen/not be/home/October  →  Karen hasn't been home ............ October."
+       "speak": "5  Karen/not be/home/October  →  Karen hasn't been home ............ October.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "6  He/not travel/by boat/last summer  →  He hasn't travelled by boat ............ last summer.",
@@ -2534,7 +2619,8 @@
         "for"
        ],
        "whyUz": "'last summer' — ANIQ NUQTA → SINCE\n('last' so'zi kalit).\n\ntravel → TRAVELLED (britancha, IKKI 'L').\n'BY boat' — transport 'by' bilan, ARTIKLSIZ.\n\n'not' + 'He' → HASN'T.",
-       "speak": "6  He/not travel/by boat/last summer  →  He hasn't travelled by boat ............ last summer."
+       "speak": "6  He/not travel/by boat/last summer  →  He hasn't travelled by boat ............ last summer.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "7  I/not go/to Paris/six years  →  I haven't been to Paris ............ six years.",
@@ -2545,7 +2631,8 @@
         "since"
        ],
        "whyUz": "'six years' — DAVOMIYLIK → FOR.\n\n⚠ ENG MUHIM IZOH — 'BEEN', 'GONE' EMAS:\nBu betdagi grammatika qutisi:\n  'have GONE to' = ketgan va HALI U YERDA\n  'have BEEN to' = borib QAYTGAN\n\n'I haven't GONE to Paris' — g'alati\n(o'zim haqimda 'gone' ishlatilmaydi).\n'I haven't BEEN to Paris' ✓\n\nKitob ataylab shu bandni qo'ygan — yangi\nqoidani sinash uchun.",
-       "speak": "7  I/not go/to Paris/six years  →  I haven't been to Paris ............ six years."
+       "speak": "7  I/not go/to Paris/six years  →  I haven't been to Paris ............ six years.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "8  Jack/work in Canada/ten years  →  Jack has worked in Canada ............ ten years.",
@@ -2556,7 +2643,8 @@
         "since"
        ],
        "whyUz": "'ten years' — DAVOMIYLIK → FOR.\n\nwork → WORKED (to'g'ri fe'l).\nega 'Jack' → HAS.\n\nIKKINCHI qo'llanish: hozir ham ishlaydi.",
-       "speak": "8  Jack/work in Canada/ten years  →  Jack has worked in Canada ............ ten years."
+       "speak": "8  Jack/work in Canada/ten years  →  Jack has worked in Canada ............ ten years.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "9  She/not be abroad/two years  →  She hasn't been abroad ............ two years.",
@@ -2567,7 +2655,8 @@
         "since"
        ],
        "whyUz": "'two years' — DAVOMIYLIK → FOR.\n\n'not' + 'She' → HASN'T.\nbe → BEEN.\n\n'ABROAD' — predlog YO'Q:\n  'go abroad'  ✓\n  'go to abroad' ✗",
-       "speak": "9  She/not be abroad/two years  →  She hasn't been abroad ............ two years."
+       "speak": "9  She/not be abroad/two years  →  She hasn't been abroad ............ two years.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "10  Jeff/not call/Monday  →  Jeff hasn't called ............ Monday.",
@@ -2578,7 +2667,8 @@
         "for"
        ],
        "whyUz": "'Monday' — HAFTA KUNI, ANIQ NUQTA → SINCE.\n\n'not' + 'Jeff' → HASN'T.\ncall → CALLED (to'g'ri fe'l).\n\n'to call' = qo'ng'iroq qilmoq\n(= 'to phone', 'to ring').",
-       "speak": "10  Jeff/not call/Monday  →  Jeff hasn't called ............ Monday."
+       "speak": "10  Jeff/not call/Monday  →  Jeff hasn't called ............ Monday.",
+       "speakAnswer": "since"
       }
      ]
     },
@@ -2643,7 +2733,8 @@
         "already",
         "never"
        ],
-       "whyUz": "KALIT: 'YES' — gap IJOBIY.\n'never' inkor ma'no berardi va 'Yes' ga zid\nbo'lardi.\nTASDIQ gapda → ALREADY."
+       "whyUz": "KALIT: 'YES' — gap IJOBIY.\n'never' inkor ma'no berardi va 'Yes' ga zid\nbo'lardi.\nTASDIQ gapda → ALREADY.",
+       "speakAnswer": "already"
       },
       {
        "prompt": "2  He has been a teacher for/since thirty years.",
@@ -2653,7 +2744,8 @@
         "for",
         "since"
        ],
-       "whyUz": "'thirty years' — RAQAM + VAQT BIRLIGI,\nya'ni DAVOMIYLIK → FOR.\n\nSavol: 'qancha vaqt?' → o'ttiz yil."
+       "whyUz": "'thirty years' — RAQAM + VAQT BIRLIGI,\nya'ni DAVOMIYLIK → FOR.\n\nSavol: 'qancha vaqt?' → o'ttiz yil.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "3  A: Have you talked to Helen?  B: Yes, I have ever/just called her.",
@@ -2663,7 +2755,8 @@
         "just",
         "ever"
        ],
-       "whyUz": "'EVER' oddiy TASDIQ gapda ISHLATILMAYDI\n(faqat savolda yoki ustun daraja bilan).\n\n'just' = hozirgina — kontekstga mos\n('Have you talked to Helen?' savoliga\njavob)."
+       "whyUz": "'EVER' oddiy TASDIQ gapda ISHLATILMAYDI\n(faqat savolda yoki ustun daraja bilan).\n\n'just' = hozirgina — kontekstga mos\n('Have you talked to Helen?' savoliga\njavob).",
+       "speakAnswer": "just"
       },
       {
        "prompt": "4  No, I have ever/never been to Egypt.",
@@ -2673,7 +2766,8 @@
         "never",
         "ever"
        ],
-       "whyUz": "KALIT: 'NO' — gap SALBIY.\n\n'never' TASDIQ shaklda inkor ma'no beradi:\n'I have NEVER been' = bo'lmaganman.\n\n'ever' bu yerda XATO."
+       "whyUz": "KALIT: 'NO' — gap SALBIY.\n\n'never' TASDIQ shaklda inkor ma'no beradi:\n'I have NEVER been' = bo'lmaganman.\n\n'ever' bu yerda XATO.",
+       "speakAnswer": "never"
       },
       {
        "prompt": "5  Have you never/ever been to a football match?",
@@ -2683,7 +2777,8 @@
         "ever",
         "never"
        ],
-       "whyUz": "KALIT: bu SAVOL ('Have you ...?').\n\nSavolda DOIM 'ever' ishlatiladi.\n'Have you never been?' — grammatik jihatdan\nmumkin, lekin ajablanish ohangi (juda kam)."
+       "whyUz": "KALIT: bu SAVOL ('Have you ...?').\n\nSavolda DOIM 'ever' ishlatiladi.\n'Have you never been?' — grammatik jihatdan\nmumkin, lekin ajablanish ohangi (juda kam).",
+       "speakAnswer": "ever"
       },
       {
        "prompt": "6  I haven't finished my homework yet/already.",
@@ -2693,7 +2788,8 @@
         "yet",
         "already"
        ],
-       "whyUz": "KALIT: 'HAVEN'T' — INKOR gap.\n\n'already' INKORDA ishlatilmaydi.\n'yet' — savol va inkorda, GAP OXIRIDA."
+       "whyUz": "KALIT: 'HAVEN'T' — INKOR gap.\n\n'already' INKORDA ishlatilmaydi.\n'yet' — savol va inkorda, GAP OXIRIDA.",
+       "speakAnswer": "yet"
       },
       {
        "prompt": "7  She has lived in Rio for/since 1984.",
@@ -2703,7 +2799,8 @@
         "since",
         "for"
        ],
-       "whyUz": "'1984' — YIL, ya'ni ANIQ NUQTA → SINCE.\n\nSavol: 'qachondan beri?' → 1984-yildan."
+       "whyUz": "'1984' — YIL, ya'ni ANIQ NUQTA → SINCE.\n\nSavol: 'qachondan beri?' → 1984-yildan.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "8  They have already/yet bought a computer.",
@@ -2713,7 +2810,8 @@
         "already",
         "yet"
        ],
-       "whyUz": "TASDIQ gap ('They have bought').\n\n'yet' TASDIQ gapda ishlatilmaydi.\n'already' — 'have' va V3 ORASIDA."
+       "whyUz": "TASDIQ gap ('They have bought').\n\n'yet' TASDIQ gapda ishlatilmaydi.\n'already' — 'have' va V3 ORASIDA.",
+       "speakAnswer": "already"
       },
       {
        "prompt": "9  Tracy has never/ever seen snow.",
@@ -2723,7 +2821,8 @@
         "never",
         "ever"
        ],
-       "whyUz": "⚠ NOZIK BAND: gap TASDIQ shaklda\n('has seen'), lekin ma'no INKOR.\n\n'never' TASDIQ shaklda inkor ma'no beradi.\n'ever' oddiy tasdiq gapda ISHLATILMAYDI."
+       "whyUz": "⚠ NOZIK BAND: gap TASDIQ shaklda\n('has seen'), lekin ma'no INKOR.\n\n'never' TASDIQ shaklda inkor ma'no beradi.\n'ever' oddiy tasdiq gapda ISHLATILMAYDI.",
+       "speakAnswer": "never"
       },
       {
        "prompt": "10  Cairo is the best place I've never/ever visited.",
@@ -2733,7 +2832,8 @@
         "ever",
         "never"
        ],
-       "whyUz": "KALIT: 'THE BEST' — USTUN DARAJA.\n\nBu qurilmada DOIM 'ever':\n'the best place I've EVER visited'\n\nCoursebook 106-bet: 'Brazil is the best place\nI've ever visited.'\n\nBu — 'ever' TASDIQ gapda keladigan yagona\nholat."
+       "whyUz": "KALIT: 'THE BEST' — USTUN DARAJA.\n\nBu qurilmada DOIM 'ever':\n'the best place I've EVER visited'\n\nCoursebook 106-bet: 'Brazil is the best place\nI've ever visited.'\n\nBu — 'ever' TASDIQ gapda keladigan yagona\nholat.",
+       "speakAnswer": "ever"
       },
       {
        "prompt": "11  I have been at university already/for three years.",
@@ -2743,7 +2843,8 @@
         "for",
         "already"
        ],
-       "whyUz": "'three years' — DAVOMIYLIK → FOR.\n\n'already' vaqt MIQDORINI bildirmaydi,\nshuning uchun 'three years' bilan mos\nkelmaydi.\n\n'at university' — artikl YO'Q (o'qish\nma'nosida)."
+       "whyUz": "'three years' — DAVOMIYLIK → FOR.\n\n'already' vaqt MIQDORINI bildirmaydi,\nshuning uchun 'three years' bilan mos\nkelmaydi.\n\n'at university' — artikl YO'Q (o'qish\nma'nosida).",
+       "speakAnswer": "for"
       },
       {
        "prompt": "12  The boat to Malta hasn't left yet/already.",
@@ -2753,7 +2854,8 @@
         "yet",
         "already"
        ],
-       "whyUz": "KALIT: 'HASN'T' — INKOR gap.\n\n'yet' — inkorda, GAP OXIRIDA.\nleave → LEFT (V2 = V3)."
+       "whyUz": "KALIT: 'HASN'T' — INKOR gap.\n\n'yet' — inkorda, GAP OXIRIDA.\nleave → LEFT (V2 = V3).",
+       "speakAnswer": "yet"
       },
       {
        "prompt": "13  Gary hasn't been abroad for/since last summer.",
@@ -2763,7 +2865,8 @@
         "since",
         "for"
        ],
-       "whyUz": "'last summer' — ANIQ NUQTA → SINCE.\n\nDIQQAT — CHALG'ITUVCHI:\n  'FOR a summer'      (davomiylik)\n  'SINCE last summer' (nuqta)\n'last' so'zi kalit."
+       "whyUz": "'last summer' — ANIQ NUQTA → SINCE.\n\nDIQQAT — CHALG'ITUVCHI:\n  'FOR a summer'      (davomiylik)\n  'SINCE last summer' (nuqta)\n'last' so'zi kalit.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "14  A: Have you packed your suitcase?  B: Yes, I have just/since packed it.",
@@ -2773,7 +2876,8 @@
         "just",
         "since"
        ],
-       "whyUz": "'since' — predlog, undan keyin vaqt kelishi\nkerak ('since Monday'). Bu yerda ma'nosiz.\n\n'just' = hozirgina — savolga mos javob.\n\nCoursebook 107-bet, 14-mashq bilan bir xil\nnaqsh."
+       "whyUz": "'since' — predlog, undan keyin vaqt kelishi\nkerak ('since Monday'). Bu yerda ma'nosiz.\n\n'just' = hozirgina — savolga mos javob.\n\nCoursebook 107-bet, 14-mashq bilan bir xil\nnaqsh.",
+       "speakAnswer": "just"
       },
       {
        "prompt": "15  I have never/ever travelled by train.",
@@ -2783,7 +2887,8 @@
         "never",
         "ever"
        ],
-       "whyUz": "9-band bilan bir xil: TASDIQ shakl, INKOR\nma'no → NEVER.\n\n'ever' oddiy tasdiq gapda ISHLATILMAYDI.\n\n'BY train' — transport 'by' bilan, artiklsiz."
+       "whyUz": "9-band bilan bir xil: TASDIQ shakl, INKOR\nma'no → NEVER.\n\n'ever' oddiy tasdiq gapda ISHLATILMAYDI.\n\n'BY train' — transport 'by' bilan, artiklsiz.",
+       "speakAnswer": "never"
       }
      ]
     },
@@ -2809,7 +2914,8 @@
         "had"
        ],
        "whyUz": "'LAST YEAR' — ANIQ VAQT → PAST SIMPLE.\ngo → WENT.\n\nSavol Present Perfect da edi ('Have you ever\nbeen'), lekin javobda aniq vaqt qo'shilgani\nuchun Past Simple.",
-       "speak": "1b  B: Yes, I ........................... (go) to one last year."
+       "speak": "1b  B: Yes, I ........................... (go) to one last year.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "1c  A: ................................ (you/have) a good time?",
@@ -2822,7 +2928,8 @@
         "had"
        ],
        "whyUz": "Suhbat endi O'SHA SAFAR haqida ('last year')\n→ PAST SIMPLE savoli.\n\n⚠ 'DID' dan keyin ASOSIY shakl:\n  'Did you HAVE?'  ✓\n  'Did you HAD?'   ✗",
-       "speak": "1c  A: ................................ (you/have) a good time?"
+       "speak": "1c  A: ................................ (you/have) a good time?",
+       "speakAnswer": "Did you have"
       },
       {
        "prompt": "1d  B: Oh yes! I ......................... (have) a lot of fun.",
@@ -2835,7 +2942,8 @@
         "Did you have"
        ],
        "whyUz": "PAST SIMPLE (o'sha safar haqida).\nhave → HAD.\n\n'to have fun' = zavqlanmoq (turg'un ibora).",
-       "speak": "1d  B: Oh yes! I ......................... (have) a lot of fun."
+       "speak": "1d  B: Oh yes! I ......................... (have) a lot of fun.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "2a  A: ................................... (you/go) to the theatre last night?",
@@ -2848,7 +2956,8 @@
         "Did you have"
        ],
        "whyUz": "'LAST NIGHT' — ANIQ VAQT → PAST SIMPLE.\n\nDIQQAT: bu dialogda BIRINCHI savol ham Past\nSimple da — chunki aniq vaqt aytilgan.\n(1, 3, 4, 5-dialoglarda birinchi savol Present\nPerfect edi.)",
-       "speak": "2a  A: ................................... (you/go) to the theatre last night?"
+       "speak": "2a  A: ................................... (you/go) to the theatre last night?",
+       "speakAnswer": "Did you go"
       },
       {
        "prompt": "2b  B: Yes, I ......................... (see) an excellent play.",
@@ -2861,7 +2970,8 @@
         "Did you have"
        ],
        "whyUz": "PAST SIMPLE (o'tgan kecha).\nsee → SAW.\n\n'a play' = spektakl.\n'excellent' = a'lo.",
-       "speak": "2b  B: Yes, I ......................... (see) an excellent play."
+       "speak": "2b  B: Yes, I ......................... (see) an excellent play.",
+       "speakAnswer": "saw"
       },
       {
        "prompt": "2c  A: What ............................................. (you/see)?",
@@ -2874,7 +2984,8 @@
         "Did you have"
        ],
        "whyUz": "PAST SIMPLE savoli: DID + ega + ASOSIY shakl.\n\n⚠ 'What did you SEE?'  ✓\n   'What did you SAW?'  ✗\n\n'did' o'zi o'tgan zamonni ko'rsatadi.",
-       "speak": "2c  A: What ............................................. (you/see)?"
+       "speak": "2c  A: What ............................................. (you/see)?",
+       "speakAnswer": "did you see"
       },
       {
        "prompt": "3a  A: ........................... (you/do) the shopping yet?",
@@ -2887,7 +2998,8 @@
         "Did you have"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT.\ndo → DONE (V3).\n\n'do the shopping' = xarid qilmoq.",
-       "speak": "3a  A: ........................... (you/do) the shopping yet?"
+       "speak": "3a  A: ........................... (you/do) the shopping yet?",
+       "speakAnswer": "Have you done"
       },
       {
        "prompt": "3b  B: Yes, I ............................. (do) it this morning.",
@@ -2900,7 +3012,8 @@
         "Did you have"
        ],
        "whyUz": "'THIS MORNING' — ANIQ VAQT → PAST SIMPLE.\ndo → DID.\n\nDIQQAT: 'this morning' allaqachon TUGAGAN\n(hozir kunduz yoki kechqurun), shuning uchun\nPast Simple.",
-       "speak": "3b  B: Yes, I ............................. (do) it this morning."
+       "speak": "3b  B: Yes, I ............................. (do) it this morning.",
+       "speakAnswer": "did"
       },
       {
        "prompt": "3c  A: .................................... (you/wash) the car yet?",
@@ -2913,7 +3026,8 @@
         "Did you have"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT.\nwash → WASHED (to'g'ri fe'l).\n\nGrammar 64-betdagi misol bilan bir xil:\n'Has he washed the car?'",
-       "speak": "3c  A: .................................... (you/wash) the car yet?"
+       "speak": "3c  A: .................................... (you/wash) the car yet?",
+       "speakAnswer": "Have you washed"
       },
       {
        "prompt": "3d  B: Yes, I ................................. (already/wash) it.",
@@ -2926,7 +3040,8 @@
         "Did you have"
        ],
        "whyUz": "KALIT: 'ALREADY' → PRESENT PERFECT.\n\n'already' — 'have' va V3 ORASIDA:\n'I HAVE ALREADY WASHED it.' ✓",
-       "speak": "3d  B: Yes, I ................................. (already/wash) it."
+       "speak": "3d  B: Yes, I ................................. (already/wash) it.",
+       "speakAnswer": "have already washed"
       },
       {
        "prompt": "4a  A: ............................................... (you/ever/eat) Chinese food?",
@@ -2939,7 +3054,8 @@
         "Did you have"
        ],
        "whyUz": "KALIT: 'EVER' → PRESENT PERFECT.\neat → ate → EATEN (V3).\n\n'ever' — 'have' va V3 ORASIDA.",
-       "speak": "4a  A: ............................................... (you/ever/eat) Chinese food?"
+       "speak": "4a  A: ............................................... (you/ever/eat) Chinese food?",
+       "speakAnswer": "Have you ever eaten"
       },
       {
        "prompt": "4b  B: Yes, I ............................. (eat) Chinese food last month.",
@@ -2952,7 +3068,8 @@
         "Did you have"
        ],
        "whyUz": "'LAST MONTH' — ANIQ VAQT → PAST SIMPLE.\neat → ATE (V2).\n\nDIQQAT: savolda 'EATEN' (V3),\njavobda 'ATE' (V2) — adashtirmang!",
-       "speak": "4b  B: Yes, I ............................. (eat) Chinese food last month."
+       "speak": "4b  B: Yes, I ............................. (eat) Chinese food last month.",
+       "speakAnswer": "ate"
       },
       {
        "prompt": "4c  A: ................................................. (you/like) it?",
@@ -2965,7 +3082,8 @@
         "Did you have"
        ],
        "whyUz": "O'sha safar haqida → PAST SIMPLE.\n'DID you LIKE?' ('liked' EMAS).\n\n'like' — his fe'li, Continuous bo'lmaydi.",
-       "speak": "4c  A: ................................................. (you/like) it?"
+       "speak": "4c  A: ................................................. (you/like) it?",
+       "speakAnswer": "Did you like"
       },
       {
        "prompt": "4d  B: No, it ................................. (taste) terrible.",
@@ -2978,7 +3096,8 @@
         "Did you have"
        ],
        "whyUz": "PAST SIMPLE. taste → TASTED (to'g'ri fe'l).\n\n⚠ 'taste + SIFAT':\n  'It tasted TERRIBLE.'  ✓\n  'It tasted terriblY.'  ✗\n\nHis fe'llaridan keyin SIFAT (look, smell,\ntaste, sound, feel).",
-       "speak": "4d  B: No, it ................................. (taste) terrible."
+       "speak": "4d  B: No, it ................................. (taste) terrible.",
+       "speakAnswer": "tasted"
       },
       {
        "prompt": "5a  A: .......................................... (you/ever/work) in a bar?",
@@ -2991,7 +3110,8 @@
         "Did you have"
        ],
        "whyUz": "KALIT: 'EVER' → PRESENT PERFECT.\nwork → WORKED (to'g'ri fe'l).\n\n'work IN a bar' — predlog 'in'.",
-       "speak": "5a  A: .......................................... (you/ever/work) in a bar?"
+       "speak": "5a  A: .......................................... (you/ever/work) in a bar?",
+       "speakAnswer": "Have you ever worked"
       },
       {
        "prompt": "5b  B: Yes, I ..................................... (work) in a bar last summer.",
@@ -3004,7 +3124,8 @@
         "Did you have"
        ],
        "whyUz": "'LAST SUMMER' — ANIQ VAQT → PAST SIMPLE.\n\nDIQQAT: to'g'ri fe'lda V2 = V3 ('worked'),\nshuning uchun shakli bir xil ko'rinadi —\nlekin ZAMONI boshqa!",
-       "speak": "5b  B: Yes, I ..................................... (work) in a bar last summer."
+       "speak": "5b  B: Yes, I ..................................... (work) in a bar last summer.",
+       "speakAnswer": "worked"
       },
       {
        "prompt": "5c  A: ..................................... (you/enjoy) it?",
@@ -3017,7 +3138,8 @@
         "Did you have"
        ],
        "whyUz": "O'sha safar haqida → PAST SIMPLE.\n'DID you ENJOY?' ('enjoyed' EMAS).\n\n'to enjoy' — o'timli fe'l, to'ldiruvchi SHART\n('enjoy IT').",
-       "speak": "5c  A: ..................................... (you/enjoy) it?"
+       "speak": "5c  A: ..................................... (you/enjoy) it?",
+       "speakAnswer": "Did you enjoy"
       },
       {
        "prompt": "5d  B: Yes, I ........................... (enjoy) it very much!",
@@ -3030,7 +3152,8 @@
         "Did you have"
        ],
        "whyUz": "PAST SIMPLE. enjoy → ENJOYED.\n\n'very much' — gap oxirida.\n'I enjoyed it very much' ✓\n'I very much enjoyed it' ✓ (rasmiyroq)",
-       "speak": "5d  B: Yes, I ........................... (enjoy) it very much!"
+       "speak": "5d  B: Yes, I ........................... (enjoy) it very much!",
+       "speakAnswer": "enjoyed"
       }
      ]
     },
@@ -3111,7 +3234,8 @@
         "since"
        ],
        "whyUz": "KITOBDAGI NAMUNA.\n'nine years' — RAQAM + VAQT BIRLIGI\n→ DAVOMIYLIK → FOR.",
-       "speak": "1  ............ nine years"
+       "speak": "1  ............ nine years",
+       "speakAnswer": "for"
       },
       {
        "prompt": "2  ............ Monday",
@@ -3122,7 +3246,8 @@
         "for"
        ],
        "whyUz": "'Monday' — HAFTA KUNI nomi, ANIQ NUQTA\n→ SINCE.",
-       "speak": "2  ............ Monday"
+       "speak": "2  ............ Monday",
+       "speakAnswer": "since"
       },
       {
        "prompt": "3  ............ 1971",
@@ -3132,7 +3257,8 @@
         "since",
         "for"
        ],
-       "whyUz": "'1971' — YIL, ANIQ NUQTA → SINCE."
+       "whyUz": "'1971' — YIL, ANIQ NUQTA → SINCE.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "4  ............ a day",
@@ -3143,7 +3269,8 @@
         "since"
        ],
        "whyUz": "'a day' — 'A' bilan boshlanadi, ya'ni MIQDOR\n→ FOR.\n\n⚠ 10-BAND BILAN SOLISHTIRING:\n  FOR a day       (bir kun davomida)\n  SINCE yesterday (kechadan beri)",
-       "speak": "4  ............ a day"
+       "speak": "4  ............ a day",
+       "speakAnswer": "for"
       },
       {
        "prompt": "5  ............ last month",
@@ -3154,7 +3281,8 @@
         "for"
        ],
        "whyUz": "'last month' — 'LAST' so'zi ANIQ NUQTANI\nbildiradi → SINCE.\n\nSolishtiring: 'FOR a month' (bir oy davomida).",
-       "speak": "5  ............ last month"
+       "speak": "5  ............ last month",
+       "speakAnswer": "since"
       },
       {
        "prompt": "6  ............ six weeks",
@@ -3165,7 +3293,8 @@
         "since"
        ],
        "whyUz": "'six weeks' — RAQAM + VAQT BIRLIGI → FOR.",
-       "speak": "6  ............ six weeks"
+       "speak": "6  ............ six weeks",
+       "speakAnswer": "for"
       },
       {
        "prompt": "7  ............ a weekend",
@@ -3176,7 +3305,8 @@
         "since"
        ],
        "whyUz": "'a weekend' — 'A' bilan, MIQDOR → FOR.\n\n'a weekend' = shanba-yakshanba.",
-       "speak": "7  ............ a weekend"
+       "speak": "7  ............ a weekend",
+       "speakAnswer": "for"
       },
       {
        "prompt": "8  ............ December",
@@ -3187,7 +3317,8 @@
         "for"
        ],
        "whyUz": "'December' — OY nomi, ANIQ NUQTA → SINCE.\n\nOy nomlari BOSH HARF bilan yoziladi.",
-       "speak": "8  ............ December"
+       "speak": "8  ............ December",
+       "speakAnswer": "since"
       },
       {
        "prompt": "9  ............ five days",
@@ -3198,7 +3329,8 @@
         "since"
        ],
        "whyUz": "'five days' — RAQAM + VAQT BIRLIGI → FOR.",
-       "speak": "9  ............ five days"
+       "speak": "9  ............ five days",
+       "speakAnswer": "for"
       },
       {
        "prompt": "10  ............ yesterday",
@@ -3209,7 +3341,8 @@
         "for"
        ],
        "whyUz": "'yesterday' — ANIQ NUQTA (kecha) → SINCE.\n\n'FOR yesterday' — ma'nosiz.\n\nDIQQAT: 'yesterday' o'zi (since siz) —\nPast Simple ko'rsatkichi:\n'I saw him YESTERDAY.'",
-       "speak": "10  ............ yesterday"
+       "speak": "10  ............ yesterday",
+       "speakAnswer": "since"
       },
       {
        "prompt": "11  ............ last night",
@@ -3220,7 +3353,8 @@
         "for"
        ],
        "whyUz": "'last night' — 'LAST' bilan, ANIQ NUQTA\n→ SINCE.\n\nDIQQAT — IKKI XIL ISHLATILISH:\n  'I saw him LAST NIGHT.' (Past Simple)\n  'I haven't seen him SINCE LAST NIGHT.'\n     (Present Perfect)",
-       "speak": "11  ............ last night"
+       "speak": "11  ............ last night",
+       "speakAnswer": "since"
       },
       {
        "prompt": "12  ............ a week",
@@ -3231,7 +3365,8 @@
         "since"
        ],
        "whyUz": "'a week' — 'A' bilan, MIQDOR → FOR.\n\nSolishtiring: 'SINCE last week'\n(o'tgan haftadan beri).",
-       "speak": "12  ............ a week"
+       "speak": "12  ............ a week",
+       "speakAnswer": "for"
       }
      ]
     },
@@ -3257,7 +3392,8 @@
         "since"
        ],
        "whyUz": "KITOBDAGI NAMUNA.\nSavol MUDDAT haqida → HOW LONG.\n\n'How long' savoli DOIM Present Perfect bilan\n(agar hozir ham davom etayotgan bo'lsa).",
-       "speak": "1  ............... have you lived in Turkey?"
+       "speak": "1  ............... have you lived in Turkey?",
+       "speakAnswer": "how long"
       },
       {
        "prompt": "2  Sophie has ............................. been to the opera before.",
@@ -3270,7 +3406,8 @@
         "since"
        ],
        "whyUz": "KALIT: 'BEFORE' (ilgari) — TAJRIBA haqida.\n\nGap TASDIQ shaklda ('has been'), lekin ma'no\nINKOR → NEVER.\n\n'ever' oddiy tasdiq gapda ISHLATILMAYDI.",
-       "speak": "2  Sophie has ............................. been to the opera before."
+       "speak": "2  Sophie has ............................. been to the opera before.",
+       "speakAnswer": "never"
       },
       {
        "prompt": "3  I've ............................. finished my homework.",
@@ -3283,7 +3420,8 @@
         "never"
        ],
        "whyUz": "TASDIQ gap, harakat yaqinda tugagan → JUST.\n\n'yet' — tasdiqda ishlatilmaydi.\n'ever' — oddiy tasdiqda ishlatilmaydi.\n\n'just' — 'have' va V3 ORASIDA.",
-       "speak": "3  I've ............................. finished my homework."
+       "speak": "3  I've ............................. finished my homework.",
+       "speakAnswer": "just"
       },
       {
        "prompt": "4  He has been working in Hungary ............ 1993.",
@@ -3296,7 +3434,8 @@
         "never"
        ],
        "whyUz": "'1993' — YIL, ANIQ NUQTA → SINCE.\n\nDIQQAT: 'HAS BEEN WORKING' — bu Present\nPerfect Continuous (Enterprise 1 da\no'rganilmaydi).\nMa'nosi: 1993-dan beri ishlaydi va HOZIR HAM\nishlaydi.",
-       "speak": "4  He has been working in Hungary ............ 1993."
+       "speak": "4  He has been working in Hungary ............ 1993.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "5  A: Have you paid the phone bill?  B: No, I haven't paid it ........................ .",
@@ -3309,7 +3448,8 @@
         "since"
        ],
        "whyUz": "KALIT: 'HAVEN'T' — INKOR gap → YET.\n\n'yet' — GAP OXIRIDA.\n\npay → PAID (V2 = V3).\n'a phone bill' = telefon hisobi.",
-       "speak": "5  A: Have you paid the phone bill?  B: No, I haven't paid it ........................ ."
+       "speak": "5  A: Have you paid the phone bill?  B: No, I haven't paid it ........................ .",
+       "speakAnswer": "yet"
       },
       {
        "prompt": "6  ........................................ have you worked here?",
@@ -3322,7 +3462,8 @@
         "since"
        ],
        "whyUz": "Savol MUDDAT haqida → HOW LONG.\n1-band bilan bir xil.\n\nJavobi: 'For seven years.' yoki\n'Since 1992.' (Grammar 65-bet misoli).",
-       "speak": "6  ........................................ have you worked here?"
+       "speak": "6  ........................................ have you worked here?",
+       "speakAnswer": "how long"
       },
       {
        "prompt": "7  A: Have you cleaned your room?  B: Yes, I have ................................... cleaned it.",
@@ -3335,7 +3476,8 @@
         "never"
        ],
        "whyUz": "TASDIQ gap → JUST (hozirgina).\n\nDIQQAT: 'ALREADY' ham mos kelardi, lekin u\nRO'YXATDA YO'Q — shuning uchun 'just'.\n\n'just' — 'have' va V3 ORASIDA.",
-       "speak": "7  A: Have you cleaned your room?  B: Yes, I have ................................... cleaned it."
+       "speak": "7  A: Have you cleaned your room?  B: Yes, I have ................................... cleaned it.",
+       "speakAnswer": "just"
       },
       {
        "prompt": "8  I have ................................... been fishing before.",
@@ -3348,7 +3490,8 @@
         "since"
        ],
        "whyUz": "KALIT: 'BEFORE' — TAJRIBA haqida.\n2-band bilan bir xil → NEVER.\n\n'to go fishing' = baliq ovlagani bormoq.\nPresent Perfect da 'have BEEN fishing'\n('gone' EMAS — qaytib kelgan).",
-       "speak": "8  I have ................................... been fishing before."
+       "speak": "8  I have ................................... been fishing before.",
+       "speakAnswer": "never"
       },
       {
        "prompt": "9  Have you ........................ been on a canoe trip?",
@@ -3361,7 +3504,8 @@
         "never"
        ],
        "whyUz": "KALIT: bu SAVOL ('Have you ...?') → EVER.\n\nSavolda DOIM 'ever'.\n\n'a canoe' — o'qilishi /kəˈnuː/ ('kanu:').",
-       "speak": "9  Have you ........................ been on a canoe trip?"
+       "speak": "9  Have you ........................ been on a canoe trip?",
+       "speakAnswer": "ever"
       }
      ]
     }
@@ -3397,7 +3541,8 @@
         "never"
        ],
        "whyUz": "'last Monday' — 'LAST' bilan, ANIQ NUQTA\n→ SINCE.\n\nSolishtiring: 'FOR a week' (bir hafta\ndavomida).",
-       "speak": "10  She has been on holiday .............................. last Monday."
+       "speak": "10  She has been on holiday .............................. last Monday.",
+       "speakAnswer": "since"
       },
       {
        "prompt": "11  Jerry has been ill ......................... three days.",
@@ -3410,7 +3555,8 @@
         "never"
        ],
        "whyUz": "'three days' — RAQAM + VAQT BIRLIGI\n→ DAVOMIYLIK → FOR.\n\nDIQQAT: hozir HAM kasal (Grammar 64-betdagi\nIKKINCHI qo'llanish).",
-       "speak": "11  Jerry has been ill ......................... three days."
+       "speak": "11  Jerry has been ill ......................... three days.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "12  ....................................... have you been here?",
@@ -3423,7 +3569,8 @@
         "since"
        ],
        "whyUz": "Savol MUDDAT haqida → HOW LONG.\n\nJavobi: 'For three days.' yoki\n'Since Monday.'",
-       "speak": "12  ....................................... have you been here?"
+       "speak": "12  ....................................... have you been here?",
+       "speakAnswer": "how long"
       },
       {
        "prompt": "13  David hasn't found a job ....................... .",
@@ -3436,7 +3583,8 @@
         "since"
        ],
        "whyUz": "KALIT: 'HASN'T' — INKOR gap → YET.\n\n'yet' — GAP OXIRIDA.\nfind → FOUND (V2 = V3).",
-       "speak": "13  David hasn't found a job ....................... ."
+       "speak": "13  David hasn't found a job ....................... .",
+       "speakAnswer": "yet"
       },
       {
        "prompt": "14  I have lived in this house ................ eight years.",
@@ -3449,7 +3597,8 @@
         "never"
        ],
        "whyUz": "'eight years' — DAVOMIYLIK → FOR.\n\nDIQQAT: hozir HAM shu uyda yashayman —\nIKKINCHI qo'llanish.\nO'zbekchada HOZIRGI zamon bilan tarjima\nqilinadi.",
-       "speak": "14  I have lived in this house ................ eight years."
+       "speak": "14  I have lived in this house ................ eight years.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "15  This is the best hamburger I've .................. had.",
@@ -3462,7 +3611,8 @@
         "never"
        ],
        "whyUz": "KALIT: 'THE BEST' — USTUN DARAJA → EVER.\n\n'the best ... I've EVER had' — turg'un\nqurilma.\n\nKitob buni UCH marta takrorlagan\n(CB 106-bet, GB 66-bet, GB 67-bet).",
-       "speak": "15  This is the best hamburger I've .................. had."
+       "speak": "15  This is the best hamburger I've .................. had.",
+       "speakAnswer": "ever"
       }
      ]
     }
@@ -3563,7 +3713,8 @@
         "gone"
        ],
        "whyUz": "KALIT — KEYINGI GAP: 'I WENT there LAST\nSUMMER' — demak borib QAYTGAN, hozir AQShda\nemas.\n\n→ BEEN (borib qaytgan)\n\nYana: o'zingiz haqingizda DOIM 'been'\n('I have gone' g'alati).",
-       "speak": "1  I have ...................... to the USA. I went there last summer."
+       "speak": "1  I have ...................... to the USA. I went there last summer.",
+       "speakAnswer": "been"
       },
       {
        "prompt": "2  George isn't in Greece. He has ............... to Italy.",
@@ -3574,7 +3725,8 @@
         "been"
        ],
        "whyUz": "KALIT — OLDINGI GAP: 'George ISN'T IN\nGREECE' — u boshqa joyda, ya'ni HOZIR\nItaliyada.\n\n→ GONE (ketgan va hali u yerda)\n\nDIQQAT: 'GONE' faqat BOSHQA odam haqida\nishlatiladi.",
-       "speak": "2  George isn't in Greece. He has ............... to Italy."
+       "speak": "2  George isn't in Greece. He has ............... to Italy.",
+       "speakAnswer": "gone"
       },
       {
        "prompt": "3  Have you ever .......................................... to Bali?",
@@ -3585,7 +3737,8 @@
         "gone"
        ],
        "whyUz": "KALIT: 'EVER' — TAJRIBA haqida savol.\nTajriba = borib qaytish.\n\n→ BEEN\n\nCoursebook 104-bet: 'Have you ever BEEN\nthere?' — aynan bir xil savol.",
-       "speak": "3  Have you ever .......................................... to Bali?"
+       "speak": "3  Have you ever .......................................... to Bali?",
+       "speakAnswer": "been"
       },
       {
        "prompt": "4  My parents have ............................... to Portugal. They'll be back next week.",
@@ -3596,7 +3749,8 @@
         "been"
        ],
        "whyUz": "KALIT — KEYINGI GAP: 'They'll be BACK next\nweek' — demak HOZIR Portugaliyada.\n\n→ GONE (ketgan va hali u yerda)\n\n'to be back' = qaytmoq.",
-       "speak": "4  My parents have ............................... to Portugal. They'll be back next week."
+       "speak": "4  My parents have ............................... to Portugal. They'll be back next week.",
+       "speakAnswer": "gone"
       },
       {
        "prompt": "5  I have never ................................... to Egypt, but I want to go one day.",
@@ -3607,7 +3761,8 @@
         "gone"
        ],
        "whyUz": "KALIT — KEYINGI GAP: 'I WANT TO GO one day'\n— hali bormagan, TAJRIBA yo'q.\n\n→ BEEN\n\n'I have never GONE' — ishlatilmaydi.\n\nCoursebook 106-bet: 'I've never BEEN to\nChina.' — aynan bir xil qolip.",
-       "speak": "5  I have never ................................... to Egypt, but I want to go one day."
+       "speak": "5  I have never ................................... to Egypt, but I want to go one day.",
+       "speakAnswer": "been"
       }
      ]
     }
@@ -3634,39 +3789,48 @@
      "tasks": [
       {
        "left": "1  Erkak suv idishini olyapti (hali quymagan)",
-       "right": "He's going to water the plants."
+       "right": "He's going to water the plants.",
+       "speakAnswer": "He's going to water the plants."
       },
       {
        "left": "2  Erkak o'simlikka suv quyyapti",
-       "right": "He is watering the plants."
+       "right": "He is watering the plants.",
+       "speakAnswer": "He is watering the plants."
       },
       {
        "left": "3  Erkak kresloda dam olyapti, ish tugagan",
-       "right": "He has watered the plants."
+       "right": "He has watered the plants.",
+       "speakAnswer": "He has watered the plants."
       },
       {
        "left": "4  Ayol oshxonada ovqat tayyorlayapti",
-       "right": "She's going to have breakfast."
+       "right": "She's going to have breakfast.",
+       "speakAnswer": "She's going to have breakfast."
       },
       {
        "left": "5  Ayol stolda o'tirib ovqatlanyapti",
-       "right": "She's having breakfast."
+       "right": "She's having breakfast.",
+       "speakAnswer": "She's having breakfast."
       },
       {
        "left": "6  Ayol stol yonida, likopchalar bo'sh",
-       "right": "She has had breakfast."
+       "right": "She has had breakfast.",
+       "speakAnswer": "She has had breakfast."
       },
       {
        "left": "7  Ayol yo'lakda turibdi, ko'chaga qarayapti",
-       "right": "She is going to cross the street."
+       "right": "She is going to cross the street.",
+       "speakAnswer": "She is going to cross the street."
       },
       {
        "left": "8  Ayol zebra bo'ylab yuryapti",
-       "right": "She is crossing the street."
+       "right": "She is crossing the street.",
+       "speakAnswer": "She is crossing the street."
       },
       {
        "left": "9  Ayol narigi tomonda, kimdir bilan ko'rishyapti",
-       "right": "She has crossed the street."
+       "right": "She has crossed the street.",
+       "speakAnswer": "She has crossed the street."
       }
      ]
     },
@@ -3736,7 +3900,8 @@
         "ever",
         "never"
        ],
-       "whyUz": "KALIT: bu SAVOL ('Have you ...?') → EVER.\n\nSavolda DOIM 'ever' ishlatiladi.\n\nLisbon — Portugaliya poytaxti."
+       "whyUz": "KALIT: bu SAVOL ('Have you ...?') → EVER.\n\nSavolda DOIM 'ever' ishlatiladi.\n\nLisbon — Portugaliya poytaxti.",
+       "speakAnswer": "ever"
       },
       {
        "prompt": "2  Flight 201 for New York hasn't left yet/already.",
@@ -3746,7 +3911,8 @@
         "yet",
         "already"
        ],
-       "whyUz": "KALIT: 'HASN'T' — INKOR gap → YET.\n\n'already' INKORDA ishlatilmaydi.\n'yet' — GAP OXIRIDA.\n\nleave → LEFT (V2 = V3)."
+       "whyUz": "KALIT: 'HASN'T' — INKOR gap → YET.\n\n'already' INKORDA ishlatilmaydi.\n'yet' — GAP OXIRIDA.\n\nleave → LEFT (V2 = V3).",
+       "speakAnswer": "yet"
       },
       {
        "prompt": "3  John has been here for/since two weeks.",
@@ -3756,7 +3922,8 @@
         "for",
         "since"
        ],
-       "whyUz": "'two weeks' — RAQAM + VAQT BIRLIGI\n→ DAVOMIYLIK → FOR.\n\nSavol: 'qancha vaqt?' → ikki hafta."
+       "whyUz": "'two weeks' — RAQAM + VAQT BIRLIGI\n→ DAVOMIYLIK → FOR.\n\nSavol: 'qancha vaqt?' → ikki hafta.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "4  We have yet/already visited the Science Museum.",
@@ -3766,7 +3933,8 @@
         "already",
         "yet"
        ],
-       "whyUz": "TASDIQ gap ('We have visited') → ALREADY.\n\n'yet' TASDIQ gapda ishlatilmaydi.\n'already' — 'have' va V3 ORASIDA."
+       "whyUz": "TASDIQ gap ('We have visited') → ALREADY.\n\n'yet' TASDIQ gapda ishlatilmaydi.\n'already' — 'have' va V3 ORASIDA.",
+       "speakAnswer": "already"
       },
       {
        "prompt": "5  Melanie has ever/never been to a concert at the Royal Albert Hall.",
@@ -3776,7 +3944,8 @@
         "never",
         "ever"
        ],
-       "whyUz": "Gap TASDIQ shaklda ('has been'), lekin ma'no\nINKOR → NEVER.\n\n'ever' oddiy TASDIQ gapda ISHLATILMAYDI\n(faqat savolda yoki ustun daraja bilan).\n\nthe Royal Albert Hall — Londondagi mashhur\nkonsert zali."
+       "whyUz": "Gap TASDIQ shaklda ('has been'), lekin ma'no\nINKOR → NEVER.\n\n'ever' oddiy TASDIQ gapda ISHLATILMAYDI\n(faqat savolda yoki ustun daraja bilan).\n\nthe Royal Albert Hall — Londondagi mashhur\nkonsert zali.",
+       "speakAnswer": "never"
       },
       {
        "prompt": "6  A: Have you booked a hotel room?  B: Yes, I've just/yet booked one.",
@@ -3786,7 +3955,8 @@
         "just",
         "yet"
        ],
-       "whyUz": "TASDIQ javob ('Yes, I've booked') → JUST.\n\n'yet' TASDIQ gapda ISHLATILMAYDI.\n'just' = hozirgina, 'have' va V3 ORASIDA.\n\n'book a room' = xona band qilmoq."
+       "whyUz": "TASDIQ javob ('Yes, I've booked') → JUST.\n\n'yet' TASDIQ gapda ISHLATILMAYDI.\n'just' = hozirgina, 'have' va V3 ORASIDA.\n\n'book a room' = xona band qilmoq.",
+       "speakAnswer": "just"
       },
       {
        "prompt": "7  Peter hasn't travelled by boat for/since he was five years old.",
@@ -3796,7 +3966,8 @@
         "since",
         "for"
        ],
-       "whyUz": "⚠ ENG NOZIK BAND — KEYIN TO'LIQ GAP KELADI:\n'... HE WAS five years old.'\n\n'SINCE' dan keyin GAP kelishi mumkin;\n'FOR' dan keyin esa FAQAT vaqt miqdori:\n  'since he was five'  ✓\n  'for he was five'    ✗\n\nGrammar 65-bet: 'I've been here SINCE I\nARRIVED.'"
+       "whyUz": "⚠ ENG NOZIK BAND — KEYIN TO'LIQ GAP KELADI:\n'... HE WAS five years old.'\n\n'SINCE' dan keyin GAP kelishi mumkin;\n'FOR' dan keyin esa FAQAT vaqt miqdori:\n  'since he was five'  ✓\n  'for he was five'    ✗\n\nGrammar 65-bet: 'I've been here SINCE I\nARRIVED.'",
+       "speakAnswer": "since"
       },
       {
        "prompt": "8  This is the most comfortable hotel I've never/ever stayed at.",
@@ -3806,7 +3977,8 @@
         "ever",
         "never"
        ],
-       "whyUz": "KALIT: 'THE MOST COMFORTABLE' — USTUN\nDARAJA → EVER.\n\nBu qurilma butun unitda TO'RT marta uchraydi:\n  CB 106: 'the best place I've ever visited'\n  GB 66:  'the best place I've ever visited'\n  GB 67:  'the best hamburger I've ever had'\n  WB 61:  bu band\n\n'stay AT a hotel' — predlog gap oxirida\nqoladi."
+       "whyUz": "KALIT: 'THE MOST COMFORTABLE' — USTUN\nDARAJA → EVER.\n\nBu qurilma butun unitda TO'RT marta uchraydi:\n  CB 106: 'the best place I've ever visited'\n  GB 66:  'the best place I've ever visited'\n  GB 67:  'the best hamburger I've ever had'\n  WB 61:  bu band\n\n'stay AT a hotel' — predlog gap oxirida\nqoladi.",
+       "speakAnswer": "ever"
       }
      ]
     },
@@ -3832,7 +4004,8 @@
         "are you doing"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT savoli.\n\n⚠ 'BEEN', 'GONE' EMAS:\nB javob beradi 'Yes, I WENT there YESTERDAY'\n— ya'ni borib QAYTGAN.\n\nWorkbook 60-bet, 6-mashq qoidasi.",
-       "speak": "1a  A: ..................................... (you/go) to the bazaar yet?"
+       "speak": "1a  A: ..................................... (you/go) to the bazaar yet?",
+       "speakAnswer": "Have you been"
       },
       {
        "prompt": "1b  B: Yes, I ....................... (go) there yesterday.",
@@ -3845,7 +4018,8 @@
         "are you doing"
        ],
        "whyUz": "KALIT: 'YESTERDAY' — ANIQ VAQT\n→ PAST SIMPLE.\n\ngo → WENT (V2).",
-       "speak": "1b  B: Yes, I ....................... (go) there yesterday."
+       "speak": "1b  B: Yes, I ....................... (go) there yesterday.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "1c  I ................................. (buy) some souvenirs.",
@@ -3858,7 +4032,8 @@
         "are you doing"
        ],
        "whyUz": "O'sha safar haqida (kecha) → PAST SIMPLE.\n\nbuy → BOUGHT (V2 = V3).\n\nCoursebook 105-bet: 'I BOUGHT some lovely\nhandmade souvenirs there.'",
-       "speak": "1c  I ................................. (buy) some souvenirs."
+       "speak": "1c  I ................................. (buy) some souvenirs.",
+       "speakAnswer": "bought"
       },
       {
        "prompt": "2a  A: What ............................................. (you/do) tonight?",
@@ -3871,7 +4046,8 @@
         "bought"
        ],
        "whyUz": "KALIT: 'TONIGHT' — kelajakdagi REJA haqida\nsavol → PRESENT CONTINUOUS.\n\nCoursebook 107-bet, Madrid dialogi:\n'What ARE YOU DOING tonight?' — aynan bir\nxil savol.",
-       "speak": "2a  A: What ............................................. (you/do) tonight?"
+       "speak": "2a  A: What ............................................. (you/do) tonight?",
+       "speakAnswer": "are you doing"
       },
       {
        "prompt": "2b  B: I'm sorry, I can't. I ................................ (have) dinner with some friends.",
@@ -3884,7 +4060,8 @@
         "bought"
        ],
        "whyUz": "Rad etishning SABABI — allaqachon REJA bor\n→ PRESENT CONTINUOUS.\n\n⚠ 'have' = YEMOQ ma'nosida → Continuous\nBO'LADI:\n  'I am HAVING dinner.'  ✓\n  'I am HAVING a car.'   ✗ (egalik)",
-       "speak": "2b  B: I'm sorry, I can't. I ................................ (have) dinner with some friends."
+       "speak": "2b  B: I'm sorry, I can't. I ................................ (have) dinner with some friends.",
+       "speakAnswer": "am having"
       },
       {
        "prompt": "3a  A: How long ................................. (you/be) here?",
@@ -3897,7 +4074,8 @@
         "are you doing"
        ],
        "whyUz": "KALIT: 'HOW LONG' → PRESENT PERFECT.\n\nbe → BEEN (V3).",
-       "speak": "3a  A: How long ................................. (you/be) here?"
+       "speak": "3a  A: How long ................................. (you/be) here?",
+       "speakAnswer": "Have you been"
       },
       {
        "prompt": "3b  B: We ......................................... (be) here for three days.",
@@ -3910,7 +4088,8 @@
         "bought"
        ],
        "whyUz": "KALIT: 'FOR three days' → PRESENT PERFECT.\n\nEga 'We' → HAVE.",
-       "speak": "3b  B: We ......................................... (be) here for three days."
+       "speak": "3b  B: We ......................................... (be) here for three days.",
+       "speakAnswer": "have been"
       },
       {
        "prompt": "3c  We ............................... (arrive) on Monday morning.",
@@ -3923,7 +4102,8 @@
         "bought"
        ],
        "whyUz": "KALIT: 'ON MONDAY MORNING' — ANIQ VAQT\n→ PAST SIMPLE.\n\n⚠ 3b va 3c — UNIT 15 NING NAQSHI:\n  3b  'We HAVE BEEN here for three days.'\n      (Present Perfect — muddat)\n  3c  'We ARRIVED on Monday morning.'\n      (Past Simple — aniq vaqt)",
-       "speak": "3c  We ............................... (arrive) on Monday morning."
+       "speak": "3c  We ............................... (arrive) on Monday morning.",
+       "speakAnswer": "arrived"
       },
       {
        "prompt": "4a  A: Where ......................................... (Mike/live)?",
@@ -3936,7 +4116,8 @@
         "bought"
        ],
        "whyUz": "DOIMIY holat (qayerda yashaydi)\n→ PRESENT SIMPLE.\n\n'Mike' — III shaxs birlik → DOES.\n\n⚠ Savolda ASOSIY shakl:\n  'Does Mike LIVE?'  ✓\n  'Does Mike LIVES?' ✗",
-       "speak": "4a  A: Where ......................................... (Mike/live)?"
+       "speak": "4a  A: Where ......................................... (Mike/live)?",
+       "speakAnswer": "does Mike live"
       },
       {
        "prompt": "4b  B: He ........................... (live) in the city centre.",
@@ -3949,7 +4130,8 @@
         "bought"
        ],
        "whyUz": "PRESENT SIMPLE, ega 'He' — III shaxs birlik\n→ LIVES (-S bilan).\n\nDIQQAT: savolda 'live' (asosiy shakl),\njavobda 'liveS' (-S bilan).",
-       "speak": "4b  B: He ........................... (live) in the city centre."
+       "speak": "4b  B: He ........................... (live) in the city centre.",
+       "speakAnswer": "lives"
       },
       {
        "prompt": "5a  A: ................................... (you/visit) them yet?",
@@ -3962,7 +4144,8 @@
         "bought"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT savoli.\n\nvisit → VISITED (to'g'ri fe'l).",
-       "speak": "5a  A: ................................... (you/visit) them yet?"
+       "speak": "5a  A: ................................... (you/visit) them yet?",
+       "speakAnswer": "Have you visited"
       },
       {
        "prompt": "5b  B: No, not yet. I ................................. (go) there this afternoon.",
@@ -3975,7 +4158,8 @@
         "bought"
        ],
        "whyUz": "KALIT: 'THIS AFTERNOON' — yaqin kelajak REJA\n→ PRESENT CONTINUOUS.\n\n⚠ 6b BILAN SOLISHTIRING:\n  5b  'I AM GOING there'      ('go' fe'li)\n  6b  'I AM GOING TO BUY them' ('be going to')\n\nIkkalasida ham 'going' bor, lekin qurilmasi\nBOSHQA!",
-       "speak": "5b  B: No, not yet. I ................................. (go) there this afternoon."
+       "speak": "5b  B: No, not yet. I ................................. (go) there this afternoon.",
+       "speakAnswer": "am going"
       },
       {
        "prompt": "6a  A: ............................................. (you/buy) the tickets yet?",
@@ -3988,7 +4172,8 @@
         "bought"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT savoli.\n\nbuy → BOUGHT (V3).",
-       "speak": "6a  A: ............................................. (you/buy) the tickets yet?"
+       "speak": "6a  A: ............................................. (you/buy) the tickets yet?",
+       "speakAnswer": "Have you bought"
       },
       {
        "prompt": "6b  B: No, I haven't. I .............................................. (buy) them this afternoon.",
@@ -4001,7 +4186,8 @@
         "bought"
        ],
        "whyUz": "KALIT: 'THIS AFTERNOON' — REJA\n→ BE GOING TO.\n\n⚠ 5b BILAN FARQI:\n  5b  'I AM GOING there' — 'go' fe'lining\n      o'zi (Present Continuous)\n  6b  'I AM GOING TO BUY them' — 'be going to'\n      qurilmasi + 'buy'\n\nKitobda bo'shliq IKKI QATOR — uzun shakl\nkerakligini ko'rsatadi.",
-       "speak": "6b  B: No, I haven't. I .............................................. (buy) them this afternoon."
+       "speak": "6b  B: No, I haven't. I .............................................. (buy) them this afternoon.",
+       "speakAnswer": "am going to buy"
       }
      ]
     }
@@ -4028,35 +4214,43 @@
      "tasks": [
       {
        "left": "1  When did you go to Rome?",
-       "right": "f  Two years ago."
+       "right": "f  Two years ago.",
+       "speakAnswer": "f  Two years ago."
       },
       {
        "left": "2  How long have you been here?",
-       "right": "a  Since Saturday."
+       "right": "a  Since Saturday.",
+       "speakAnswer": "a  Since Saturday."
       },
       {
        "left": "3  How often do you go to the cinema?",
-       "right": "d  Once a week."
+       "right": "d  Once a week.",
+       "speakAnswer": "d  Once a week."
       },
       {
        "left": "4  What is Jack doing at the moment?",
-       "right": "h  He's sleeping."
+       "right": "h  He's sleeping.",
+       "speakAnswer": "h  He's sleeping."
       },
       {
        "left": "5  Are you going to stay at a hotel?",
-       "right": "e  Yes, I am."
+       "right": "e  Yes, I am.",
+       "speakAnswer": "e  Yes, I am."
       },
       {
        "left": "6  Have you ever been to India?",
-       "right": "c  No, I haven't."
+       "right": "c  No, I haven't.",
+       "speakAnswer": "c  No, I haven't."
       },
       {
        "left": "7  Will it be cold in London tomorrow?",
-       "right": "g  No, it won't."
+       "right": "g  No, it won't.",
+       "speakAnswer": "g  No, it won't."
       },
       {
        "left": "8  When are you leaving for your holiday?",
-       "right": "b  Next week."
+       "right": "b  Next week.",
+       "speakAnswer": "b  Next week."
       }
      ]
     },
@@ -4079,7 +4273,8 @@
         "a) Are you going out tonight?",
         "b) Do you go out tonight?"
        ],
-       "whyUz": "KITOBDA ✓ QO'YILGAN (namuna).\n\n'TONIGHT' — kelajakdagi REJA\n→ PRESENT CONTINUOUS.\n\n'Do you go out tonight?' — odat haqida\nbo'lardi ('har kecha chiqasizmi?')."
+       "whyUz": "KITOBDA ✓ QO'YILGAN (namuna).\n\n'TONIGHT' — kelajakdagi REJA\n→ PRESENT CONTINUOUS.\n\n'Do you go out tonight?' — odat haqida\nbo'lardi ('har kecha chiqasizmi?').",
+       "speakAnswer": "a) Are you going out tonight?"
       },
       {
        "prompt": "2  a) Tony reads a book at the moment.   b) Tony is reading a book at the moment.",
@@ -4089,7 +4284,8 @@
         "b) Tony is reading a book at the moment.",
         "a) Tony reads a book at the moment."
        ],
-       "whyUz": "KALIT: 'AT THE MOMENT' → PRESENT CONTINUOUS.\n\n'Tony reads' — Present Simple, odat haqida\nbo'lardi ('Toni kitob o'qiydi')."
+       "whyUz": "KALIT: 'AT THE MOMENT' → PRESENT CONTINUOUS.\n\n'Tony reads' — Present Simple, odat haqida\nbo'lardi ('Toni kitob o'qiydi').",
+       "speakAnswer": "b) Tony is reading a book at the moment."
       },
       {
        "prompt": "3  a) What have you done yesterday?   b) What did you do yesterday?",
@@ -4099,7 +4295,8 @@
         "b) What did you do yesterday?",
         "a) What have you done yesterday?"
        ],
-       "whyUz": "⚠ UNIT 15 NING ENG MUHIM QOIDASI:\n'YESTERDAY' — ANIQ VAQT, shuning uchun\nPRESENT PERFECT ISHLATILMAYDI.\n\n'What have you done yesterday?' — XATO!\n'What DID you DO yesterday?' ✓\n\nDIQQAT: 'did' dan keyin ASOSIY shakl ('do')."
+       "whyUz": "⚠ UNIT 15 NING ENG MUHIM QOIDASI:\n'YESTERDAY' — ANIQ VAQT, shuning uchun\nPRESENT PERFECT ISHLATILMAYDI.\n\n'What have you done yesterday?' — XATO!\n'What DID you DO yesterday?' ✓\n\nDIQQAT: 'did' dan keyin ASOSIY shakl ('do').",
+       "speakAnswer": "b) What did you do yesterday?"
       },
       {
        "prompt": "4  a) Have you ever eaten snake?   b) Did you ever eat snake?",
@@ -4109,7 +4306,8 @@
         "a) Have you ever eaten snake?",
         "b) Did you ever eat snake?"
        ],
-       "whyUz": "'EVER' — TAJRIBA haqida savol\n→ PRESENT PERFECT.\n\neat → ate → EATEN (V3).\n\n('Did you ever ...?' amerikachada uchraydi,\nlekin Enterprise — britancha kitob va\nPresent Perfect ni talab qiladi.)\n\nDIQQAT: 'snake' ARTIKLSIZ — ovqat sifatida."
+       "whyUz": "'EVER' — TAJRIBA haqida savol\n→ PRESENT PERFECT.\n\neat → ate → EATEN (V3).\n\n('Did you ever ...?' amerikachada uchraydi,\nlekin Enterprise — britancha kitob va\nPresent Perfect ni talab qiladi.)\n\nDIQQAT: 'snake' ARTIKLSIZ — ovqat sifatida.",
+       "speakAnswer": "a) Have you ever eaten snake?"
       },
       {
        "prompt": "5  a) We've been to Malta last summer.   b) We went to Malta last summer.",
@@ -4119,7 +4317,8 @@
         "b) We went to Malta last summer.",
         "a) We've been to Malta last summer."
        ],
-       "whyUz": "⚠ 'LAST SUMMER' — ANIQ VAQT → PAST SIMPLE.\n\n'We've been to Malta LAST SUMMER' — XATO!\nPresent Perfect aniq vaqt bilan\nishlatilmaydi.\n\n3-band bilan bir xil qoida."
+       "whyUz": "⚠ 'LAST SUMMER' — ANIQ VAQT → PAST SIMPLE.\n\n'We've been to Malta LAST SUMMER' — XATO!\nPresent Perfect aniq vaqt bilan\nishlatilmaydi.\n\n3-band bilan bir xil qoida.",
+       "speakAnswer": "b) We went to Malta last summer."
       },
       {
        "prompt": "6  a) He's flying to Athens tonight.   b) He has flown to Athens tonight.",
@@ -4129,7 +4328,8 @@
         "a) He's flying to Athens tonight.",
         "b) He has flown to Athens tonight."
        ],
-       "whyUz": "'TONIGHT' — KELAJAK reja\n→ PRESENT CONTINUOUS.\n\n'has flown' — o'tmish, 'tonight' (kelajak)\nbilan mos kelmaydi.\n\nfly → flew → FLOWN."
+       "whyUz": "'TONIGHT' — KELAJAK reja\n→ PRESENT CONTINUOUS.\n\n'has flown' — o'tmish, 'tonight' (kelajak)\nbilan mos kelmaydi.\n\nfly → flew → FLOWN.",
+       "speakAnswer": "a) He's flying to Athens tonight."
       },
       {
        "prompt": "7  a) He was born on 6th May, 1959.   b) He born on 6th May, 1959.",
@@ -4139,7 +4339,8 @@
         "a) He was born on 6th May, 1959.",
         "b) He born on 6th May, 1959."
        ],
-       "whyUz": "⚠ 'TO BE BORN' — DOIM 'be' fe'li bilan:\n  'He WAS BORN.'  ✓\n  'He BORN.'      ✗ (fe'l tushib qolgan)\n\nO'zbekchada 'tug'ildi' — bir so'z, lekin\ninglizchada IKKI so'z.\n\n'When WERE you BORN?' — 'Qachon\ntug'ilgansiz?'"
+       "whyUz": "⚠ 'TO BE BORN' — DOIM 'be' fe'li bilan:\n  'He WAS BORN.'  ✓\n  'He BORN.'      ✗ (fe'l tushib qolgan)\n\nO'zbekchada 'tug'ildi' — bir so'z, lekin\ninglizchada IKKI so'z.\n\n'When WERE you BORN?' — 'Qachon\ntug'ilgansiz?'",
+       "speakAnswer": "a) He was born on 6th May, 1959."
       }
      ]
     },
@@ -4224,7 +4425,8 @@
         "/tʃ/",
         "/ʃ/"
        ],
-       "whyUz": "'CH' harflari → /tʃ/ tovushi.\nO'qilishi: /tʃuːz/ — 'chu:z'\n\nJUFTI: 'shoes' /ʃuːz/.\nDIQQAT: 'choose' — hozirgi zamon;\n'chose' — o'tgan zamon (o'qilishi boshqa)."
+       "whyUz": "'CH' harflari → /tʃ/ tovushi.\nO'qilishi: /tʃuːz/ — 'chu:z'\n\nJUFTI: 'shoes' /ʃuːz/.\nDIQQAT: 'choose' — hozirgi zamon;\n'chose' — o'tgan zamon (o'qilishi boshqa).",
+       "speakAnswer": "/tʃ/"
       },
       {
        "prompt": "watch",
@@ -4234,7 +4436,8 @@
         "/tʃ/",
         "/ʃ/"
        ],
-       "whyUz": "'TCH' harflari → /tʃ/ tovushi.\nO'qilishi: /wɒtʃ/ — 'voch'\n\nJUFTI: 'wash' /wɒʃ/.\n\nDIQQAT — 'TCH' YOZILISHI: qisqa unlidan\nkeyin 'ch' o'rniga 'tch' yoziladi\n(watch, catch, match, kitchen)."
+       "whyUz": "'TCH' harflari → /tʃ/ tovushi.\nO'qilishi: /wɒtʃ/ — 'voch'\n\nJUFTI: 'wash' /wɒʃ/.\n\nDIQQAT — 'TCH' YOZILISHI: qisqa unlidan\nkeyin 'ch' o'rniga 'tch' yoziladi\n(watch, catch, match, kitchen).",
+       "speakAnswer": "/tʃ/"
       },
       {
        "prompt": "wash",
@@ -4264,7 +4467,8 @@
         "/tʃ/",
         "/ʃ/"
        ],
-       "whyUz": "'TCH' harflari → /tʃ/ tovushi.\nO'qilishi: /wɪtʃ/ — 'vich'\n\nJUFTI: 'wish' /wɪʃ/.\n\nDIQQAT: 'witch' (jodugar) va 'which'\n(qaysi) — bir xil o'qiladi /wɪtʃ/, lekin\nyozilishi va ma'nosi BOSHQA!"
+       "whyUz": "'TCH' harflari → /tʃ/ tovushi.\nO'qilishi: /wɪtʃ/ — 'vich'\n\nJUFTI: 'wish' /wɪʃ/.\n\nDIQQAT: 'witch' (jodugar) va 'which'\n(qaysi) — bir xil o'qiladi /wɪtʃ/, lekin\nyozilishi va ma'nosi BOSHQA!",
+       "speakAnswer": "/tʃ/"
       },
       {
        "prompt": "sheet",
@@ -4284,7 +4488,8 @@
         "/tʃ/",
         "/ʃ/"
        ],
-       "whyUz": "'CH' harflari → /tʃ/ tovushi.\nO'qilishi: /tʃiːt/ — 'chi:t'\n\nJUFTI: 'sheet' /ʃiːt/.\n\nGrammar 61-bet, 4-mashqda bor edi:\n'You mustn't CHEAT in tests.'"
+       "whyUz": "'CH' harflari → /tʃ/ tovushi.\nO'qilishi: /tʃiːt/ — 'chi:t'\n\nJUFTI: 'sheet' /ʃiːt/.\n\nGrammar 61-bet, 4-mashqda bor edi:\n'You mustn't CHEAT in tests.'",
+       "speakAnswer": "/tʃ/"
       }
      ]
     }
@@ -4353,15 +4558,18 @@
      "tasks": [
       {
        "left": "1-dialog: 'Hello, Rachel. What are you doing tonight? ... Would you like to go?'",
-       "right": "b) inviting somebody out"
+       "right": "b) inviting somebody out",
+       "speakAnswer": "b) inviting somebody out"
       },
       {
        "left": "2-dialog: 'Can I help you? ... I'm looking for a gift to take home for my brother.'",
-       "right": "c) buying souvenirs"
+       "right": "c) buying souvenirs",
+       "speakAnswer": "c) buying souvenirs"
       },
       {
        "left": "3-dialog: 'Hello. I'd like to book a table for tonight, please.'",
-       "right": "a) making a reservation at a restaurant"
+       "right": "a) making a reservation at a restaurant",
+       "speakAnswer": "a) making a reservation at a restaurant"
       }
      ]
     }
@@ -4394,7 +4602,8 @@
         "a) Yes, I loved it.",
         "b) Yes, I loved."
        ],
-       "whyUz": "⚠ AUDIO SHART EMAS — b) varianti GRAMMATIK\nJIHATDAN NOTO'G'RI.\n\n'to LOVE' — O'TIMLI fe'l, undan keyin\nTO'LDIRUVCHI kelishi SHART:\n  'I loved IT.'  ✓\n  'I loved.'     ✗ (nimani?)\n\nShu kabi fe'llar: like, want, need, enjoy,\nbuy, take, make.\n\nSavol qanday bo'lishidan qat'i nazar, javob\na) bo'ladi."
+       "whyUz": "⚠ AUDIO SHART EMAS — b) varianti GRAMMATIK\nJIHATDAN NOTO'G'RI.\n\n'to LOVE' — O'TIMLI fe'l, undan keyin\nTO'LDIRUVCHI kelishi SHART:\n  'I loved IT.'  ✓\n  'I loved.'     ✗ (nimani?)\n\nShu kabi fe'llar: like, want, need, enjoy,\nbuy, take, make.\n\nSavol qanday bo'lishidan qat'i nazar, javob\na) bo'ladi.",
+       "speakAnswer": "a) Yes, I loved it."
       }
      ]
     },
@@ -4502,7 +4711,8 @@
         "worst"
        ],
        "whyUz": "KALIT: B 'Oh, WONDERFUL!' deb boshlagan →\nIJOBIY sifat kerak.\n\n'a ... restaurant' — restoran haqida umumiy\nbaho → FANTASTIC.\n\n1-dialog IJOBIY, 2-dialog SALBIY —\nro'yxatdagi 8 sifat teng ikkiga bo'linadi.",
-       "speak": "1  B: Oh, wonderful! We went to a 1) ........................ restaurant for dinner."
+       "speak": "1  B: Oh, wonderful! We went to a 1) ........................ restaurant for dinner.",
+       "speakAnswer": "fantastic"
       },
       {
        "prompt": "2  B: Well, the food was 2) ......................... and ...",
@@ -4515,7 +4725,8 @@
         "fantastic"
        ],
        "whyUz": "⚠ ENG NOZIK JOY: 'the FOOD was ...'\n\n'DELICIOUS' — FAQAT ovqat haqida ishlatiladi.\n('delicious service' — XATO)\n\nShuning uchun 'delicious' OVQATGA tushadi,\n'excellent' esa XIZMATGA (3-band).",
-       "speak": "2  B: Well, the food was 2) ......................... and ..."
+       "speak": "2  B: Well, the food was 2) ......................... and ...",
+       "speakAnswer": "delicious"
       },
       {
        "prompt": "3  ... and the service was 3) ......................... .",
@@ -4528,7 +4739,8 @@
         "worst"
        ],
        "whyUz": "'the SERVICE was ...' — xizmat haqida.\n\n'EXCELLENT' — har narsa haqida ishlatiladi\n(ovqat, xizmat, ish, natija).\n\n'delicious service' — XATO, shuning uchun\nbu yerga 'excellent' tushadi.\n\n'the service' = xizmat (restoranda).",
-       "speak": "3  ... and the service was 3) ......................... ."
+       "speak": "3  ... and the service was 3) ......................... .",
+       "speakAnswer": "excellent"
       },
       {
        "prompt": "4  It's definitely the 4) ................. restaurant I've ever been to!",
@@ -4541,7 +4753,8 @@
         "fantastic"
        ],
        "whyUz": "USTUN DARAJA qurilmasi:\n'the ... restaurant I've EVER been to'\n\n1-dialog IJOBIY → BEST.\n\ngood → better → THE BEST (noto'g'ri daraja).\n\n'definitely' = shubhasiz (kuchaytiruvchi).",
-       "speak": "4  It's definitely the 4) ................. restaurant I've ever been to!"
+       "speak": "4  It's definitely the 4) ................. restaurant I've ever been to!",
+       "speakAnswer": "best"
       },
       {
        "prompt": "5  B: No, not at all. The restaurant was 5) .............. .",
@@ -4554,7 +4767,8 @@
         "worst"
        ],
        "whyUz": "KALIT: B 'No, NOT AT ALL' deb boshlagan →\nSALBIY sifat kerak.\n\n'The restaurant was ...' — restoran haqida\numumiy salbiy baho → HORRIBLE.\n\n'not at all' = umuman (rad etishni\nkuchaytiradi).",
-       "speak": "5  B: No, not at all. The restaurant was 5) .............. ."
+       "speak": "5  B: No, not at all. The restaurant was 5) .............. .",
+       "speakAnswer": "horrible"
       },
       {
        "prompt": "6  B: The food was 6) ......................... and ...",
@@ -4567,7 +4781,8 @@
         "fantastic"
        ],
        "whyUz": "'the FOOD was ...' — ovqat haqida SALBIY.\n\n'DISGUSTING' — asosan ovqat haqida\nishlatiladi ('delicious' ning ziddi).\n\nCoursebook 105-bet, 6-mashq:\ndelicious ↔ disgusting.",
-       "speak": "6  B: The food was 6) ......................... and ..."
+       "speak": "6  B: The food was 6) ......................... and ...",
+       "speakAnswer": "disgusting"
       },
       {
        "prompt": "7  ... and it was very 7) ........................... .",
@@ -4580,7 +4795,8 @@
         "fantastic"
        ],
        "whyUz": "'it was very ...' — restoran haqida yana bir\nsalbiy fikr.\n\nQolgan salbiy sifatlar: expensive, worst.\n'worst' USTUN DARAJA (8-band uchun),\nshuning uchun bu yerga EXPENSIVE.\n\nDIQQAT: 'very expensive' ✓ /\n'very worst' — g'alati.",
-       "speak": "7  ... and it was very 7) ........................... ."
+       "speak": "7  ... and it was very 7) ........................... .",
+       "speakAnswer": "expensive"
       },
       {
        "prompt": "8  It's certainly the 8) ....................... restaurant I've ever been to!",
@@ -4593,7 +4809,8 @@
         "fantastic"
        ],
        "whyUz": "USTUN DARAJA qurilmasi, 2-dialog SALBIY\n→ WORST.\n\nbad → worse → THE WORST (noto'g'ri daraja).\n\n⚠ 4-BAND BILAN JUFT:\n  4  'the BEST restaurant I've ever been to'\n  8  'the WORST restaurant I've ever been to'\n\n'certainly' = albatta (kuchaytiruvchi).",
-       "speak": "8  It's certainly the 8) ....................... restaurant I've ever been to!"
+       "speak": "8  It's certainly the 8) ....................... restaurant I've ever been to!",
+       "speakAnswer": "worst"
       }
      ]
     },
@@ -4672,15 +4889,18 @@
      "tasks": [
       {
        "left": "1  A: Hello, Sally. What are you doing tomorrow night?",
-       "right": "I haven't got any plans. Why?"
+       "right": "I haven't got any plans. Why?",
+       "speakAnswer": "I haven't got any plans. Why?"
       },
       {
        "left": "2  A: I've got two tickets for the Jupiter Rock Festival. Would you like to go with me?",
-       "right": "That's a good idea. What time does it start?"
+       "right": "That's a good idea. What time does it start?",
+       "speakAnswer": "That's a good idea. What time does it start?"
       },
       {
        "left": "3  A: It starts at eight o'clock.",
-       "right": "Okay, I'll meet you at seven thirty then."
+       "right": "Okay, I'll meet you at seven thirty then.",
+       "speakAnswer": "Okay, I'll meet you at seven thirty then."
       }
      ]
     }
@@ -4961,7 +5181,8 @@
         "fascinating"
        ],
        "whyUz": "XATDAN: 'The place is famous for its HUGE\nTEMPLES and statues.'\n\nMa'badlar QANDAY? — ulkan.\n'huge' = juda katta (very big dan kuchliroq).",
-       "speak": "1  .................... temples"
+       "speak": "1  .................... temples",
+       "speakAnswer": "huge"
       },
       {
        "prompt": "2  having a ............ time",
@@ -4974,7 +5195,8 @@
         "fascinating"
        ],
        "whyUz": "XATDAN: 'I'm having a WONDERFUL TIME.'\n\n'to have a wonderful/good/great time' —\nturg'un ibora (ajoyib vaqt o'tkazmoq).\n\n6-mashqda uning ziddi so'raladi: 'horrible'.",
-       "speak": "2  having a ............ time"
+       "speak": "2  having a ............ time",
+       "speakAnswer": "wonderful"
       },
       {
        "prompt": "3  in the .......... of Cairo",
@@ -4987,7 +5209,8 @@
         "fascinating"
        ],
        "whyUz": "XATDAN: 'He lives IN THE CENTRE OF Cairo.'\n\n'centre' — bu ro'yxatdagi yagona OT\n(qolganlari sifat yoki fe'l).\n'in the centre OF' — ikki predlog.\n\nDIQQAT: 'centre' britancha;\namerikacha 'center'.",
-       "speak": "3  in the .......... of Cairo"
+       "speak": "3  in the .......... of Cairo",
+       "speakAnswer": "centre"
       },
       {
        "prompt": "4  ................ restaurant",
@@ -5000,7 +5223,8 @@
         "fascinating"
        ],
        "whyUz": "XATDAN: 'I've been to a TRADITIONAL\nRESTAURANT.'\n\nRestoran QANDAY? — an'anaviy (mahalliy\ntaomlar beriladigan).\n\n6-mashqda uning ziddi so'raladi: 'modern'.",
-       "speak": "4  ................ restaurant"
+       "speak": "4  ................ restaurant",
+       "speakAnswer": "traditional"
       },
       {
        "prompt": "5  ................. souvenirs",
@@ -5013,7 +5237,8 @@
         "centre"
        ],
        "whyUz": "XATDAN: 'I bought some lovely HANDMADE\nSOUVENIRS there.'\n\nSovg'alar QANDAY? — qo'lda yasalgan.\n\n'handmade' = hand + made (qo'shma sifat,\nBIRGA yoziladi).\nShu kabi: homemade, handwritten.",
-       "speak": "5  ................. souvenirs"
+       "speak": "5  ................. souvenirs",
+       "speakAnswer": "handmade"
       },
       {
        "prompt": "6  a ......................... trip",
@@ -5026,7 +5251,8 @@
         "fascinating"
        ],
        "whyUz": "XATDAN: 'a BOAT TRIP down the River Nile'\n\n'a boat trip' — OT + OT birikmasi\n(qanday sayohat? — qayiqda).\n\nDIQQAT: birinchi ot KO'PLIKDA bo'lmaydi:\n  'a boat trip'  ✓\n  'a boats trip' ✗\n\nShu kabi: a bus stop, a school bag.",
-       "speak": "6  a ......................... trip"
+       "speak": "6  a ......................... trip",
+       "speakAnswer": "boat"
       },
       {
        "prompt": "7  I ................ a camel",
@@ -5039,7 +5265,8 @@
         "centre"
        ],
        "whyUz": "XATDAN: 'I even RODE A CAMEL. It was fun!'\n\n⚠ ENG NOZIK BAND:\nBo'shliqdan oldin EGA ('I'), keyin\nTO'LDIRUVCHI ('a camel') — orasida FE'L\nkerak.\n\nRo'yxatdagi YAGONA fe'l — RODE.\nQolgan hammasi sifat yoki ot.\n\nride → RODE → RIDDEN (noto'g'ri fe'l).",
-       "speak": "7  I ................ a camel"
+       "speak": "7  I ................ a camel",
+       "speakAnswer": "rode"
       },
       {
        "prompt": "8  a ......................... city",
@@ -5052,7 +5279,8 @@
         "centre"
        ],
        "whyUz": "XATDAN: 'Cairo is a FASCINATING CITY.'\n\nShahar QANDAY? — maftunkor, qiziqarli.\n\nDIQQAT — '-ING' va '-ED' FARQI:\n  'a FASCINATING city' — narsaning XUSUSIYATI\n  'I am FASCINATED' — odamning HISSI\n\nShu kabi: interesting/interested,\nboring/bored.",
-       "speak": "8  a ......................... city"
+       "speak": "8  a ......................... city",
+       "speakAnswer": "fascinating"
       }
      ]
     },
@@ -5069,27 +5297,33 @@
      "tasks": [
       {
        "left": "1  I'm having a WONDERFUL time.",
-       "right": "horrible"
+       "right": "horrible",
+       "speakAnswer": "horrible"
       },
       {
        "left": "2a  The streets are NOISY.",
-       "right": "quiet"
+       "right": "quiet",
+       "speakAnswer": "quiet"
       },
       {
        "left": "2b  The streets are CROWDED.",
-       "right": "empty"
+       "right": "empty",
+       "speakAnswer": "empty"
       },
       {
        "left": "3  We've been to a TRADITIONAL restaurant.",
-       "right": "modern"
+       "right": "modern",
+       "speakAnswer": "modern"
       },
       {
        "left": "4  The food was DELICIOUS.",
-       "right": "disgusting"
+       "right": "disgusting",
+       "speakAnswer": "disgusting"
       },
       {
        "left": "5  The weather is very HOT.",
-       "right": "cold"
+       "right": "cold",
+       "speakAnswer": "cold"
       }
      ]
     },
@@ -5115,7 +5349,8 @@
         "on"
        ],
        "whyUz": "'STAY WITH somebody' = birovnikida turmoq.\n'with' — hamrohlik bildiradi.\n\nDIQQAT — FARQI:\n  'stay WITH a friend' (ODAM bilan)\n  'stay AT a hotel'    (JOYDA)\n\nXatdan: 'I'm staying WITH my friend,\nAbdullah.'",
-       "speak": "1  I'm staying ...... my friend"
+       "speak": "1  I'm staying ...... my friend",
+       "speakAnswer": "with"
       },
       {
        "prompt": "2  ...... Tuesday",
@@ -5128,7 +5363,8 @@
         "with"
        ],
        "whyUz": "HAFTA KUNLARI DOIM 'ON' bilan:\n  on Monday, on Tuesday, on Sunday\n\nVAQT PREDLOGLARI:\n  AT + soat  (at 5 o'clock)\n  ON + kun   (on Tuesday)\n  IN + oy/yil (in May, in 2010)\n\nXatdan: 'We visited it ON Tuesday.'",
-       "speak": "2  ...... Tuesday"
+       "speak": "2  ...... Tuesday",
+       "speakAnswer": "on"
       },
       {
        "prompt": "3  ...... Giza",
@@ -5141,7 +5377,8 @@
         "on"
        ],
        "whyUz": "'AT' — aniq, kichik joy uchun.\n\nFARQI:\n  'IN Cairo'  — katta shahar (ichida)\n  'AT Giza'   — aniq joy/nuqta\n\nXatdan: 'the Pyramids and the Sphinx AT GIZA'\n\nGiza — Qohira yaqinidagi joy, u yerda uchta\nbuyuk ehrom va Sfenks bor.",
-       "speak": "3  ...... Giza"
+       "speak": "3  ...... Giza",
+       "speakAnswer": "at"
       },
       {
        "prompt": "4a  go ...... a boat trip",
@@ -5154,7 +5391,8 @@
         "with"
        ],
        "whyUz": "'GO ON a trip' — TURG'UN ibora.\n\nShu kabi:\n  go ON holiday, go ON a journey,\n  go ON a boat trip, go ON an excursion\n\nDIQQAT: 'on' bu mashqda IKKI marta ishlatiladi\n(2 va 4a-bandlar) — chunki 6 bo'shliq, 5 predlog.\n\nXatdan: 'We are GOING ON A BOAT TRIP\ntomorrow.'",
-       "speak": "4a  go ...... a boat trip"
+       "speak": "4a  go ...... a boat trip",
+       "speakAnswer": "on"
       },
       {
        "prompt": "4b  ...... the River Nile",
@@ -5167,7 +5405,8 @@
         "with"
        ],
        "whyUz": "'DOWN the river' = daryo BO'YLAB\n(oqim yo'nalishida).\n\nTeskarisi: 'UP the river' (oqimga qarshi).\n\nNil JANUBDAN SHIMOLGA oqadi, shuning uchun\n'down the Nile' — shimolga qarab.\n\nXatdan: 'a boat trip DOWN THE RIVER NILE'",
-       "speak": "4b  ...... the River Nile"
+       "speak": "4b  ...... the River Nile",
+       "speakAnswer": "down"
       },
       {
        "prompt": "5  famous ......",
@@ -5180,7 +5419,8 @@
         "with"
        ],
        "whyUz": "'FAMOUS FOR something' = ... bilan mashhur.\n\nDIQQAT — 'FAMOUS AS' BILAN ADASHTIRMANG:\n  'famous FOR its temples' = ma'badlari bilan\n     mashhur (NARSA)\n  'famous AS a singer' = qo'shiqchi sifatida\n     mashhur (KIM sifatida)\n\nXatdan: 'The place is FAMOUS FOR its huge\ntemples and statues.'",
-       "speak": "5  famous ......"
+       "speak": "5  famous ......",
+       "speakAnswer": "for"
       }
      ]
     }
@@ -5296,7 +5536,8 @@
         "A  worked",
         "B  am working"
        ],
-       "whyUz": "KALIT: 'I'M A BELLBOY' — bu DOIMIY kasb.\nDoimiy holat → PRESENT SIMPLE.\n\n'am working' — vaqtinchalik degan ma'no\nberardi.\n'worked' — o'tgan zamon, 'I'm a bellboy' ga zid."
+       "whyUz": "KALIT: 'I'M A BELLBOY' — bu DOIMIY kasb.\nDoimiy holat → PRESENT SIMPLE.\n\n'am working' — vaqtinchalik degan ma'no\nberardi.\n'worked' — o'tgan zamon, 'I'm a bellboy' ga zid.",
+       "speakAnswer": "C  work"
       },
       {
        "prompt": "2  He ..................... his sister last weekend.  A visited  B is visiting  C visit",
@@ -5307,7 +5548,8 @@
         "B  is visiting",
         "C  visit"
        ],
-       "whyUz": "KALIT: 'LAST WEEKEND' — ANIQ VAQT\n→ PAST SIMPLE."
+       "whyUz": "KALIT: 'LAST WEEKEND' — ANIQ VAQT\n→ PAST SIMPLE.",
+       "speakAnswer": "A  visited"
       },
       {
        "prompt": "3  I ..................... my room. Can I watch TV, now?  A tidy  B have tidied  C am tidying",
@@ -5318,7 +5560,8 @@
         "A  tidy",
         "C  am tidying"
        ],
-       "whyUz": "KALIT: 'NOW' — ish TUGAGAN va natijasi\nHOZIR muhim ('endi televizor ko'rsam\nbo'ladimi?').\n\n→ PRESENT PERFECT.\n\n'am tidying' bo'lsa hali yig'ishtirayotgan\nbo'lardi — televizor so'rash mantiqsiz.\ntidy → TIDIED."
+       "whyUz": "KALIT: 'NOW' — ish TUGAGAN va natijasi\nHOZIR muhim ('endi televizor ko'rsam\nbo'ladimi?').\n\n→ PRESENT PERFECT.\n\n'am tidying' bo'lsa hali yig'ishtirayotgan\nbo'lardi — televizor so'rash mantiqsiz.\ntidy → TIDIED.",
+       "speakAnswer": "B  have tidied"
       },
       {
        "prompt": "4  She ..................... to music right now.  A listen  B is listening  C listened",
@@ -5329,7 +5572,8 @@
         "A  listen",
         "C  listened"
        ],
-       "whyUz": "KALIT: 'RIGHT NOW' → PRESENT CONTINUOUS.\n\n'listen TO music' — predlog 'to'."
+       "whyUz": "KALIT: 'RIGHT NOW' → PRESENT CONTINUOUS.\n\n'listen TO music' — predlog 'to'.",
+       "speakAnswer": "B  is listening"
       },
       {
        "prompt": "5  We ..................... to Canada last summer.  A went  B go  C am going",
@@ -5340,7 +5584,8 @@
         "B  go",
         "C  am going"
        ],
-       "whyUz": "KALIT: 'LAST SUMMER' → PAST SIMPLE.\ngo → WENT."
+       "whyUz": "KALIT: 'LAST SUMMER' → PAST SIMPLE.\ngo → WENT.",
+       "speakAnswer": "A  went"
       },
       {
        "prompt": "6  Julie ..................... a chef for six years.  A be  B been  C has been",
@@ -5351,7 +5596,8 @@
         "A  be",
         "B  been"
        ],
-       "whyUz": "KALIT: 'FOR SIX YEARS' → PRESENT PERFECT.\n\nA ('be') va B ('been') — yordamchi fe'lsiz\nishlatilmaydi:\n  'Julie been a chef' ✗\n  'Julie HAS BEEN a chef' ✓\n\nHozir HAM oshpaz (IKKINCHI qo'llanish)."
+       "whyUz": "KALIT: 'FOR SIX YEARS' → PRESENT PERFECT.\n\nA ('be') va B ('been') — yordamchi fe'lsiz\nishlatilmaydi:\n  'Julie been a chef' ✗\n  'Julie HAS BEEN a chef' ✓\n\nHozir HAM oshpaz (IKKINCHI qo'llanish).",
+       "speakAnswer": "C  has been"
       },
       {
        "prompt": "7  I usually ..................... TV every afternoon.  A watch  B am watching  C watched",
@@ -5362,7 +5608,8 @@
         "B  am watching",
         "C  watched"
        ],
-       "whyUz": "IKKI KALIT: 'USUALLY' va 'EVERY AFTERNOON'\n— ODAT → PRESENT SIMPLE.\n\nEga 'I' — -S QO'SHILMAYDI."
+       "whyUz": "IKKI KALIT: 'USUALLY' va 'EVERY AFTERNOON'\n— ODAT → PRESENT SIMPLE.\n\nEga 'I' — -S QO'SHILMAYDI.",
+       "speakAnswer": "A  watch"
       },
       {
        "prompt": "8  She ..................... a book at the moment.  A reads  B read  C is reading",
@@ -5373,7 +5620,8 @@
         "A  reads",
         "B  read"
        ],
-       "whyUz": "KALIT: 'AT THE MOMENT' → PRESENT CONTINUOUS.\n\n4-band bilan bir xil qoida\n('right now' = 'at the moment')."
+       "whyUz": "KALIT: 'AT THE MOMENT' → PRESENT CONTINUOUS.\n\n4-band bilan bir xil qoida\n('right now' = 'at the moment').",
+       "speakAnswer": "C  is reading"
       },
       {
        "prompt": "9  Joe ..................... some souvenirs in London last month.  A bought  B buy  C is buying",
@@ -5384,7 +5632,8 @@
         "B  buy",
         "C  is buying"
        ],
-       "whyUz": "KALIT: 'LAST MONTH' → PAST SIMPLE.\nbuy → BOUGHT."
+       "whyUz": "KALIT: 'LAST MONTH' → PAST SIMPLE.\nbuy → BOUGHT.",
+       "speakAnswer": "A  bought"
       },
       {
        "prompt": "10  My father always ..................... to work by bus.  A go  B goes  C is going",
@@ -5395,7 +5644,8 @@
         "A  go",
         "C  is going"
        ],
-       "whyUz": "KALIT: 'ALWAYS' — ODAT → PRESENT SIMPLE.\n\n⚠ EGA 'MY FATHER' — III SHAXS BIRLIK,\nshuning uchun fe'lga -S: GOES.\n\nA ('go') — grammatik jihatdan XATO.\nC ('is going') — 'always' bilan mos kelmaydi.\n\n'BY bus' — transport 'by' bilan, artiklsiz."
+       "whyUz": "KALIT: 'ALWAYS' — ODAT → PRESENT SIMPLE.\n\n⚠ EGA 'MY FATHER' — III SHAXS BIRLIK,\nshuning uchun fe'lga -S: GOES.\n\nA ('go') — grammatik jihatdan XATO.\nC ('is going') — 'always' bilan mos kelmaydi.\n\n'BY bus' — transport 'by' bilan, artiklsiz.",
+       "speakAnswer": "B  goes"
       }
      ]
     },
@@ -5421,7 +5671,8 @@
         "didn't play"
        ],
        "whyUz": "KALIT: 'ALWAYS' — ODAT → PRESENT SIMPLE.\n\nEga 'My father' — III shaxs BIRLIK → -S:\nCOMES.",
-       "speak": "2  My father always ........................... (come) home at 6 pm."
+       "speak": "2  My father always ........................... (come) home at 6 pm.",
+       "speakAnswer": "comes"
       },
       {
        "prompt": "3  Finish your homework and I ........................... (take) you to the park.",
@@ -5434,7 +5685,8 @@
         "didn't play"
        ],
        "whyUz": "Shart-natija: agar tugatsang, olib boraman.\nBu — VA'DA → WILL.\n\nUnit 13 dan: WILL — va'da va ayni damdagi\nqaror.",
-       "speak": "3  Finish your homework and I ........................... (take) you to the park."
+       "speak": "3  Finish your homework and I ........................... (take) you to the park.",
+       "speakAnswer": "will take"
       },
       {
        "prompt": "4  Sara ........................... (not/play) football with us yesterday.",
@@ -5447,7 +5699,8 @@
         "will take"
        ],
        "whyUz": "KALIT: 'YESTERDAY' → PAST SIMPLE INKOR.\n\n⚠ 'DIDN'T' dan keyin ASOSIY shakl:\n  'didn't PLAY'   ✓\n  'didn't PLAYED' ✗",
-       "speak": "4  Sara ........................... (not/play) football with us yesterday."
+       "speak": "4  Sara ........................... (not/play) football with us yesterday.",
+       "speakAnswer": "didn't play"
       },
       {
        "prompt": "5  ........................... (you/want) something to drink?",
@@ -5460,7 +5713,8 @@
         "will take"
        ],
        "whyUz": "'WANT' — HIS/XOHISH fe'li, Continuous\nshaklda ISHLATILMAYDI → PRESENT SIMPLE.\n\n'Are you wanting?' — XATO!\n\nShu kabi: like, love, hate, know, need.",
-       "speak": "5  ........................... (you/want) something to drink?"
+       "speak": "5  ........................... (you/want) something to drink?",
+       "speakAnswer": "Do you want"
       },
       {
        "prompt": "6  Please be quiet! The baby ..................... (sleep).",
@@ -5473,7 +5727,8 @@
         "will take"
        ],
        "whyUz": "Ayni damda uxlayapti → PRESENT CONTINUOUS.\n\n'Please be quiet!' — hozir sodir bo'layotgan\nharakat borligini ko'rsatadi.",
-       "speak": "6  Please be quiet! The baby ..................... (sleep)."
+       "speak": "6  Please be quiet! The baby ..................... (sleep).",
+       "speakAnswer": "is sleeping"
       },
       {
        "prompt": "7  OK! I ..................................... (help) you with your maths.",
@@ -5486,7 +5741,8 @@
         "will take"
        ],
        "whyUz": "KALIT: 'OK!' — qaror AYNI DAMDA qabul\nqilinyapti → WILL.\n\nUnit 13 dan: WILL — ayni damdagi qaror.\n\n'help somebody WITH something' — predlog\n'with'.",
-       "speak": "7  OK! I ..................................... (help) you with your maths."
+       "speak": "7  OK! I ..................................... (help) you with your maths.",
+       "speakAnswer": "will help"
       },
       {
        "prompt": "8  Jill ........................... (do) the shopping every Saturday morning.",
@@ -5499,7 +5755,8 @@
         "will take"
        ],
        "whyUz": "KALIT: 'EVERY SATURDAY MORNING' — ODAT\n→ PRESENT SIMPLE.\n\nEga 'Jill' — III shaxs BIRLIK → DOES\n('do' emas).",
-       "speak": "8  Jill ........................... (do) the shopping every Saturday morning."
+       "speak": "8  Jill ........................... (do) the shopping every Saturday morning.",
+       "speakAnswer": "does"
       },
       {
        "prompt": "9  ........................... (Jim/pay) the phone bill yet?",
@@ -5512,7 +5769,8 @@
         "will take"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT savoli.\n\nHAS + ega + V3:\n'HAS Jim PAID ...?'\n\npay → PAID (V2 = V3).",
-       "speak": "9  ........................... (Jim/pay) the phone bill yet?"
+       "speak": "9  ........................... (Jim/pay) the phone bill yet?",
+       "speakAnswer": "Has Jim paid"
       },
       {
        "prompt": "10  Jason ................................. (wash) the car now.",
@@ -5525,7 +5783,8 @@
         "will take"
        ],
        "whyUz": "KALIT: 'NOW' → PRESENT CONTINUOUS.\n\nDIQQAT — 8-mashqning 3-bandi bilan\nsolishtiring:\n  'I HAVE TIDIED my room. Can I watch TV NOW?'\n     (ish tugagan)\n  'Jason IS WASHING the car NOW.'\n     (ish davom etyapti)",
-       "speak": "10  Jason ................................. (wash) the car now."
+       "speak": "10  Jason ................................. (wash) the car now.",
+       "speakAnswer": "is washing"
       },
       {
        "prompt": "11  Don't touch the stove! I ........................................ (just/turn) it on!",
@@ -5538,7 +5797,8 @@
         "will take"
        ],
        "whyUz": "KALIT: 'JUST' → PRESENT PERFECT.\n\n'just' — 'have' va V3 ORASIDA.\n\n'turn ON' — ajraladigan fe'l:\n  'turned IT ON'  ✓\n  'turned ON IT'  ✗\n\n'a stove' = plita, pech.",
-       "speak": "11  Don't touch the stove! I ........................................ (just/turn) it on!"
+       "speak": "11  Don't touch the stove! I ........................................ (just/turn) it on!",
+       "speakAnswer": "have just turned"
       },
       {
        "prompt": "12  How long ............................ (you/work) here?",
@@ -5551,7 +5811,8 @@
         "will take"
        ],
        "whyUz": "KALIT: 'HOW LONG' → PRESENT PERFECT.\n\nGrammar 66-bet, 7-mashqning 6-bandi bilan\nbir xil.",
-       "speak": "12  How long ............................ (you/work) here?"
+       "speak": "12  How long ............................ (you/work) here?",
+       "speakAnswer": "have you worked"
       },
       {
        "prompt": "13  Nicole .......................... (not/travel) to Spain.",
@@ -5564,7 +5825,8 @@
         "will take"
        ],
        "whyUz": "Vaqt AYTILMAGAN, TAJRIBA haqida\n→ PRESENT PERFECT INKOR.\n\n'hasn't' + V3: TRAVELLED.\n\nDIQQAT — YOZILISHI:\ntravel → TRAVELLED (britancha, IKKI 'L').",
-       "speak": "13  Nicole .......................... (not/travel) to Spain."
+       "speak": "13  Nicole .......................... (not/travel) to Spain.",
+       "speakAnswer": "hasn't travelled"
       },
       {
        "prompt": "14  The weather is nice. Why ................................ (not/we/go) to the beach?",
@@ -5577,7 +5839,8 @@
         "will take"
        ],
        "whyUz": "⚠ MAXSUS QURILMA — TAKLIF QILISH:\n'WHY DON'T WE go to the beach?'\n= plyajga borsak-chi?\n\nUnit 14 dan:\n  'Why don't YOU ...?' — sizga taklif\n  'Why don't WE ...?' — birgalikda taklif\n\nQavsda '(not/we/go)' berilgani shuning\nuchun.",
-       "speak": "14  The weather is nice. Why ................................ (not/we/go) to the beach?"
+       "speak": "14  The weather is nice. Why ................................ (not/we/go) to the beach?",
+       "speakAnswer": "don't we go"
       },
       {
        "prompt": "15  When ......................... (you/hear) the bad news?",
@@ -5590,7 +5853,8 @@
         "will take"
        ],
        "whyUz": "⚠ KALIT: 'WHEN' — ANIQ VAQT so'ralyapti\n→ PAST SIMPLE.\n\n'When HAVE you heard?' — XATO!\nPresent Perfect ANIQ VAQT bilan\nishlatilmaydi.\n\nBu — Unit 15 ning eng muhim qoidasi\n(Coursebook 105-bet, Speaking).\n\n'did' dan keyin ASOSIY shakl: HEAR\n('heard' EMAS).",
-       "speak": "15  When ......................... (you/hear) the bad news?"
+       "speak": "15  When ......................... (you/hear) the bad news?",
+       "speakAnswer": "did you hear"
       }
      ]
     },
@@ -5607,43 +5871,53 @@
      "tasks": [
       {
        "left": "1  Have you ever been to Paris?",
-       "right": "f  No, I haven't."
+       "right": "f  No, I haven't.",
+       "speakAnswer": "f  No, I haven't."
       },
       {
        "left": "2  Will it rain tomorrow?",
-       "right": "d  Yes, it will."
+       "right": "d  Yes, it will.",
+       "speakAnswer": "d  Yes, it will."
       },
       {
        "left": "3  What is she doing right now?",
-       "right": "h  She's reading."
+       "right": "h  She's reading.",
+       "speakAnswer": "h  She's reading."
       },
       {
        "left": "4  Do you watch TV every day?",
-       "right": "a  No, I don't."
+       "right": "a  No, I don't.",
+       "speakAnswer": "a  No, I don't."
       },
       {
        "left": "5  How often do you visit your parents?",
-       "right": "i  Once a week."
+       "right": "i  Once a week.",
+       "speakAnswer": "i  Once a week."
       },
       {
        "left": "6  How long have you lived in London?",
-       "right": "b  For four years."
+       "right": "b  For four years.",
+       "speakAnswer": "b  For four years."
       },
       {
        "left": "7  When did you become a lawyer?",
-       "right": "j  Seven years ago."
+       "right": "j  Seven years ago.",
+       "speakAnswer": "j  Seven years ago."
       },
       {
        "left": "8  Is she staying at Karen's house?",
-       "right": "c  Yes, she is."
+       "right": "c  Yes, she is.",
+       "speakAnswer": "c  Yes, she is."
       },
       {
        "left": "9  Are you going to Hungary?",
-       "right": "e  No, I'm not."
+       "right": "e  No, I'm not.",
+       "speakAnswer": "e  No, I'm not."
       },
       {
        "left": "10  When are you leaving for Germany?",
-       "right": "g  Tomorrow."
+       "right": "g  Tomorrow.",
+       "speakAnswer": "g  Tomorrow."
       }
      ]
     },
@@ -5669,7 +5943,8 @@
         "have been"
        ],
        "whyUz": "Hozirgi holat → PRESENT SIMPLE.\n\nCoursebook 105-bet, Jekning xati:\n'The weather IS very hot here.'",
-       "speak": "1  The weather ......................... (be) fantastic"
+       "speak": "1  The weather ......................... (be) fantastic",
+       "speakAnswer": "is"
       },
       {
        "prompt": "2  and I ......................... (have) a wonderful time.",
@@ -5682,7 +5957,8 @@
         "have been"
        ],
        "whyUz": "Hozir davom etayotgan → PRESENT CONTINUOUS.\n\n'to have a wonderful time' — bu ma'noda\n'have' Continuous BO'LADI\n(egalik ma'nosida esa bo'lmaydi).\n\nJekning xati: 'I'M HAVING a wonderful time.'",
-       "speak": "2  and I ......................... (have) a wonderful time."
+       "speak": "2  and I ......................... (have) a wonderful time.",
+       "speakAnswer": "am having"
       },
       {
        "prompt": "3  I ......................... (stay) at a comfortable hotel near the city centre.",
@@ -5695,7 +5971,8 @@
         "have been"
        ],
        "whyUz": "VAQTINCHALIK turish → PRESENT CONTINUOUS.\n\n'I stay at a hotel' — doimiy odat degan\nma'no berardi.\n\nJekning xati: 'I'M STAYING with my friend.'",
-       "speak": "3  I ......................... (stay) at a comfortable hotel near the city centre."
+       "speak": "3  I ......................... (stay) at a comfortable hotel near the city centre.",
+       "speakAnswer": "am staying"
       },
       {
        "prompt": "4  I ......................... (be) here since Thursday",
@@ -5708,7 +5985,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'SINCE Thursday' → PRESENT PERFECT.\n\nbe → BEEN.\n\nJekning xati: 'I've BEEN here SINCE Monday.'",
-       "speak": "4  I ......................... (be) here since Thursday"
+       "speak": "4  I ......................... (be) here since Thursday",
+       "speakAnswer": "have been"
       },
       {
        "prompt": "5  and I ......................... (already/do) many interesting things.",
@@ -5721,7 +5999,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'ALREADY' → PRESENT PERFECT.\n\n'already' — 'have' va V3 ORASIDA.\ndo → DONE.\n\nJekning xati: 'I've ALREADY DONE lots of\nthings!'",
-       "speak": "5  and I ......................... (already/do) many interesting things."
+       "speak": "5  and I ......................... (already/do) many interesting things.",
+       "speakAnswer": "have already done"
       },
       {
        "prompt": "6  I ......................... (see) a play at the Abbey Theatre.",
@@ -5734,7 +6013,8 @@
         "am staying"
        ],
        "whyUz": "Vaqt AYTILMAGAN → PRESENT PERFECT.\nsee → SEEN.\n\n⚠ 7-BAND BILAN JUFT:\n  6  'I HAVE SEEN a play.'     (xabar)\n  7  'It WAS entertaining!'    (baho)",
-       "speak": "6  I ......................... (see) a play at the Abbey Theatre."
+       "speak": "6  I ......................... (see) a play at the Abbey Theatre.",
+       "speakAnswer": "have seen"
       },
       {
        "prompt": "7  It ......................... (be) very entertaining!",
@@ -5747,7 +6027,8 @@
         "am staying"
        ],
        "whyUz": "O'sha spektakl haqida BAHO → PAST SIMPLE.\n\nBaho DOIM Past Simple da beriladi:\nJekning xati: 'They WERE amazing.'\n'The place WAS fantastic.'\n\n'entertaining' = maroqli, qiziqarli.",
-       "speak": "7  It ......................... (be) very entertaining!"
+       "speak": "7  It ......................... (be) very entertaining!",
+       "speakAnswer": "was"
       },
       {
        "prompt": "8  I ......................... (also/visit) the Guinness Brewery.",
@@ -5760,7 +6041,8 @@
         "am staying"
        ],
        "whyUz": "Vaqt AYTILMAGAN → PRESENT PERFECT.\n\n'ALSO' — 'have' va V3 ORASIDA:\n'I have ALSO visited ...'\n\nJekning xati: 'I have ALSO SEEN the\nPyramids.'",
-       "speak": "8  I ......................... (also/visit) the Guinness Brewery."
+       "speak": "8  I ......................... (also/visit) the Guinness Brewery.",
+       "speakAnswer": "have also visited"
       },
       {
        "prompt": "9  I ......................... (visit) it on Saturday.",
@@ -5773,7 +6055,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'ON SATURDAY' — ANIQ VAQT\n→ PAST SIMPLE.\n\n⚠ 8-BAND BILAN JUFT:\n  8  'I HAVE ALSO VISITED ...'  (vaqt yo'q)\n  9  'I VISITED it ON SATURDAY.' (aniq vaqt)\n\nJekning xati: 'We VISITED it ON TUESDAY.'",
-       "speak": "9  I ......................... (visit) it on Saturday."
+       "speak": "9  I ......................... (visit) it on Saturday.",
+       "speakAnswer": "visited"
       },
       {
        "prompt": "10  They ......................... (show) our tour group how they make beer.",
@@ -5786,7 +6069,8 @@
         "am staying"
        ],
        "whyUz": "O'sha tashrif haqida (shanba kuni)\n→ PAST SIMPLE.\n\nshow → SHOWED (to'g'ri fe'l).\n\n'a tour group' = ekskursiya guruhi.\n'how they make beer' — ergash gap\n(so'z tartibi TO'G'RI, savol tartibi emas).",
-       "speak": "10  They ......................... (show) our tour group how they make beer."
+       "speak": "10  They ......................... (show) our tour group how they make beer.",
+       "speakAnswer": "showed"
       },
       {
        "prompt": "11  There are a lot of things I ......................... (not/do) yet.",
@@ -5799,7 +6083,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT INKOR.\n\ndo → DONE.\n\nJekning xati: 'There are a lot of things I\nHAVEN'T DONE YET.' — AYNAN bir xil gap!",
-       "speak": "11  There are a lot of things I ......................... (not/do) yet."
+       "speak": "11  There are a lot of things I ......................... (not/do) yet.",
+       "speakAnswer": "haven't done"
       },
       {
        "prompt": "12  I ......................... (not/do) any shopping on Grafton Street yet",
@@ -5812,7 +6097,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT INKOR.\n\n'do the shopping' = xarid qilmoq.\n\nDIQQAT: INKOR gapda 'some' emas, 'ANY':\n'haven't done ANY shopping'.",
-       "speak": "12  I ......................... (not/do) any shopping on Grafton Street yet"
+       "speak": "12  I ......................... (not/do) any shopping on Grafton Street yet",
+       "speakAnswer": "haven't done"
       },
       {
        "prompt": "13  and I ......................... (not/be) to any pubs yet.",
@@ -5825,7 +6111,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'YET' → PRESENT PERFECT INKOR.\n\n⚠ 'BEEN', 'GONE' EMAS:\nGrammar 65-bet qoidasi — 'have been to' =\ntajriba (borib qaytish).\n\n'ANY pubs' — inkor gapda 'any'.",
-       "speak": "13  and I ......................... (not/be) to any pubs yet."
+       "speak": "13  and I ......................... (not/be) to any pubs yet.",
+       "speakAnswer": "haven't been"
       },
       {
        "prompt": "14  Dublin ......................... (be) a very friendly city",
@@ -5838,7 +6125,8 @@
         "have been"
        ],
        "whyUz": "Doimiy holat / fikr → PRESENT SIMPLE.\n\nJekning xati: 'Cairo IS a fascinating city.'",
-       "speak": "14  Dublin ......................... (be) a very friendly city"
+       "speak": "14  Dublin ......................... (be) a very friendly city",
+       "speakAnswer": "is"
       },
       {
        "prompt": "15  I ......................... (come) back on the 16th,",
@@ -5851,7 +6139,8 @@
         "am staying"
        ],
        "whyUz": "KALIT: 'ON THE 16TH' — ANIQ SANA bilan REJA\n→ PRESENT CONTINUOUS.\n\nUnit 13 dan: aniq vaqtli reja → Present\nContinuous.\n\nJekning xati: 'I'M RETURNING to England ON\nSUNDAY next week.'",
-       "speak": "15  I ......................... (come) back on the 16th,"
+       "speak": "15  I ......................... (come) back on the 16th,",
+       "speakAnswer": "am coming"
       },
       {
        "prompt": "16  so I ......................... (call) you then.",
@@ -5864,7 +6153,8 @@
         "am staying"
        ],
        "whyUz": "VA'DA → WILL.\n\nJekning xati: 'so I'LL CALL you then.' —\nAYNAN bir xil gap!\n\nUnit 13 dan: WILL — va'da.",
-       "speak": "16  so I ......................... (call) you then."
+       "speak": "16  so I ......................... (call) you then.",
+       "speakAnswer": "will call"
       }
      ]
     }

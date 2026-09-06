@@ -364,23 +364,28 @@
      "tasks": [
       {
        "left": "1  The new family restaurant",
-       "right": "c  is on Bridge Street."
+       "right": "c  is on Bridge Street.",
+       "speakAnswer": "c  is on Bridge Street."
       },
       {
        "left": "2  The food is",
-       "right": "d  very well cooked."
+       "right": "d  very well cooked.",
+       "speakAnswer": "d  very well cooked."
       },
       {
        "left": "3  A meal for two",
-       "right": "a  costs about £25."
+       "right": "a  costs about £25.",
+       "speakAnswer": "a  costs about £25."
       },
       {
        "left": "4  The service",
-       "right": "e  is excellent."
+       "right": "e  is excellent.",
+       "speakAnswer": "e  is excellent."
       },
       {
        "left": "5  Laura's is open",
-       "right": "b  from eleven in the morning till eleven in the evening."
+       "right": "b  from eleven in the morning till eleven in the evening.",
+       "speakAnswer": "b  from eleven in the morning till eleven in the evening."
       }
      ]
     }
@@ -415,7 +420,8 @@
         "don't miss"
        ],
        "whyUz": "'pepper steak' = qalampirli bifshteks.\nGap: There is pepper steak on the menu.",
-       "speak": "1  ............ steak"
+       "speak": "1  ............ steak",
+       "speakAnswer": "pepper"
       },
       {
        "prompt": "2  ............ sauce",
@@ -427,7 +433,8 @@
         "don't miss"
        ],
        "whyUz": "'tomato sauce' = pomidor sousi.\nDIQQAT: birinchi ot BIRLIKDA — 'tomatoes sauce' XATO.\nGap: I like pasta with rich tomato sauce.",
-       "speak": "2  ............ sauce"
+       "speak": "2  ............ sauce",
+       "speakAnswer": "tomato"
       },
       {
        "prompt": "3  ............ pie",
@@ -439,7 +446,8 @@
         "helpful"
        ],
        "whyUz": "'apple pie' = olmali pirog.\nGap: For dessert, have a slice of apple pie.",
-       "speak": "3  ............ pie"
+       "speak": "3  ............ pie",
+       "speakAnswer": "apple"
       },
       {
        "prompt": "4  ............ ice-cream",
@@ -451,7 +459,8 @@
         "don't miss"
        ],
        "whyUz": "'special ice-cream' = maxsus muzqaymoq.\nGap: Try Laura's special ice-cream.",
-       "speak": "4  ............ ice-cream"
+       "speak": "4  ............ ice-cream",
+       "speakAnswer": "special"
       },
       {
        "prompt": "5  ............ waiters",
@@ -463,7 +472,8 @@
         "don't miss"
        ],
        "whyUz": "'helpful waiters' = yordamchan ofitsiantlar.\nhelp + -ful = yordamchan.\nGap: The waiters are very helpful and friendly.",
-       "speak": "5  ............ waiters"
+       "speak": "5  ............ waiters",
+       "speakAnswer": "helpful"
       },
       {
        "prompt": "6  ............ chicken",
@@ -475,7 +485,8 @@
         "helpful"
        ],
        "whyUz": "'roast chicken' = qovurilgan tovuq.\nGap: I often have roast chicken for dinner.",
-       "speak": "6  ............ chicken"
+       "speak": "6  ............ chicken",
+       "speakAnswer": "roast"
       },
       {
        "prompt": "7  ............ bread",
@@ -487,7 +498,8 @@
         "don't miss"
        ],
        "whyUz": "'home-made bread' = uyda pishirilgan non.\nGap: Laura's home-made bread is delicious.",
-       "speak": "7  ............ bread"
+       "speak": "7  ............ bread",
+       "speakAnswer": "home-made"
       },
       {
        "prompt": "8  ............ dishes",
@@ -499,7 +511,8 @@
         "don't miss"
        ],
        "whyUz": "'tasty dishes' = mazali taomlar.\ntaste (ta'm) + -y = mazali.\nGap: There are a lot of tasty dishes to choose from.",
-       "speak": "8  ............ dishes"
+       "speak": "8  ............ dishes",
+       "speakAnswer": "tasty"
       },
       {
        "prompt": "9  to ............ a table",
@@ -511,7 +524,8 @@
         "don't miss"
        ],
        "whyUz": "'to book a table' = stol band qilmoq.\nDIQQAT: 'a book' = kitob (OT), 'to book' = band qilmoq (FE'L).\nGap: Don't forget to book a table first.",
-       "speak": "9  to ............ a table"
+       "speak": "9  to ............ a table",
+       "speakAnswer": "book"
       },
       {
        "prompt": "10  ............ the chance",
@@ -523,7 +537,8 @@
         "helpful"
        ],
        "whyUz": "'Don't miss the chance' = imkoniyatni qo'ldan boy bermang.\nGap: Don't miss the chance to try our home-made bread!",
-       "speak": "10  ............ the chance"
+       "speak": "10  ............ the chance",
+       "speakAnswer": "don't miss"
       }
      ]
     },
@@ -548,7 +563,8 @@
         "plate"
        ],
        "whyUz": "Sho'rva SUYUQ → qoshiq kerak.\n'eat WITH a spoon' — asbob uchun WITH.",
-       "speak": "1  We eat soup with a ............ ."
+       "speak": "1  We eat soup with a ............ .",
+       "speakAnswer": "spoon"
       },
       {
        "prompt": "2  We serve food on a ............ .",
@@ -560,7 +576,8 @@
         "frying-pan"
        ],
        "whyUz": "'to serve food' = ovqat tortmoq.\n'ON a plate' — tarelka YUZASIDA → ON.",
-       "speak": "2  We serve food on a ............ ."
+       "speak": "2  We serve food on a ............ .",
+       "speakAnswer": "plate"
       },
       {
        "prompt": "3  We cut food with a ............ .",
@@ -572,7 +589,8 @@
         "frying-pan"
        ],
        "whyUz": "'to cut' = kesmoq.\nTalaffuz: knife /naɪf/ — 'k' O'QILMAYDI.\nKo'pligi: KNIVES.",
-       "speak": "3  We cut food with a ............ ."
+       "speak": "3  We cut food with a ............ .",
+       "speakAnswer": "knife"
       },
       {
        "prompt": "4  We pick up food with a ............ .",
@@ -584,7 +602,8 @@
         "frying-pan"
        ],
        "whyUz": "'to pick up' = olmoq, ko'tarmoq.\nVilka bilan go'sht va sabzavot olinadi.",
-       "speak": "4  We pick up food with a ............ ."
+       "speak": "4  We pick up food with a ............ .",
+       "speakAnswer": "fork"
       },
       {
        "prompt": "5  We fry eggs in a ............ .",
@@ -596,7 +615,8 @@
         "plate"
        ],
        "whyUz": "'to fry' = yog'da qovurmoq.\n'IN a frying-pan' — tova ICHIDA → IN.\nfry + -ing + pan (chiziqcha bilan).",
-       "speak": "5  We fry eggs in a ............ ."
+       "speak": "5  We fry eggs in a ............ .",
+       "speakAnswer": "frying-pan"
       }
      ]
     }
@@ -643,7 +663,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 1 — a white mug with steam coming out of it"
+       "speak": "Picture 1 — a white mug with steam coming out of it",
+       "speakAnswer": "cup"
       },
       {
        "prompt": "Picture 2 — a small flat dish that goes under a cup",
@@ -667,7 +688,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 2 — a small flat dish that goes under a cup"
+       "speak": "Picture 2 — a small flat dish that goes under a cup",
+       "speakAnswer": "saucer"
       },
       {
        "prompt": "Picture 3 — an eating tool with four points",
@@ -691,7 +713,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 3 — an eating tool with four points"
+       "speak": "Picture 3 — an eating tool with four points",
+       "speakAnswer": "fork"
       },
       {
        "prompt": "Picture 4 — an open box with six white oval things in it",
@@ -715,7 +738,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 4 — an open box with six white oval things in it"
+       "speak": "Picture 4 — an open box with six white oval things in it",
+       "speakAnswer": "eggs"
       },
       {
        "prompt": "Picture 5 — long thin pieces of fried potato in a paper carton",
@@ -739,7 +763,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 5 — long thin pieces of fried potato in a paper carton"
+       "speak": "Picture 5 — long thin pieces of fried potato in a paper carton",
+       "speakAnswer": "chips"
       },
       {
        "prompt": "Picture 6 — thin strips of smoked pork",
@@ -763,7 +788,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 6 — thin strips of smoked pork"
+       "speak": "Picture 6 — thin strips of smoked pork",
+       "speakAnswer": "bacon"
       },
       {
        "prompt": "Picture 7 — a whole sea animal with fins and a tail",
@@ -787,7 +813,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 7 — a whole sea animal with fins and a tail"
+       "speak": "Picture 7 — a whole sea animal with fins and a tail",
+       "speakAnswer": "fish"
       },
       {
        "prompt": "Picture 8 — a tub with the word CREAM on it",
@@ -811,7 +838,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 8 — a tub with the word CREAM on it"
+       "speak": "Picture 8 — a tub with the word CREAM on it",
+       "speakAnswer": "cream"
       },
       {
        "prompt": "Picture 9 — a basket of different plants people cook and eat",
@@ -835,7 +863,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 9 — a basket of different plants people cook and eat"
+       "speak": "Picture 9 — a basket of different plants people cook and eat",
+       "speakAnswer": "vegetables"
       },
       {
        "prompt": "Picture 10 — a small shaker with the letter S on it",
@@ -859,7 +888,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 10 — a small shaker with the letter S on it"
+       "speak": "Picture 10 — a small shaker with the letter S on it",
+       "speakAnswer": "salt"
       },
       {
        "prompt": "Picture 11 — small red summer fruits with tiny seeds outside",
@@ -883,7 +913,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 11 — small red summer fruits with tiny seeds outside"
+       "speak": "Picture 11 — small red summer fruits with tiny seeds outside",
+       "speakAnswer": "strawberries"
       },
       {
        "prompt": "Picture 12 — a yellow block of a milk product on a dish",
@@ -907,7 +938,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 12 — a yellow block of a milk product on a dish"
+       "speak": "Picture 12 — a yellow block of a milk product on a dish",
+       "speakAnswer": "butter"
       },
       {
        "prompt": "Picture 13 — a cutting tool with a sharp blade and a black handle",
@@ -931,7 +963,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 13 — a cutting tool with a sharp blade and a black handle"
+       "speak": "Picture 13 — a cutting tool with a sharp blade and a black handle",
+       "speakAnswer": "knife"
       },
       {
        "prompt": "Picture 14 — a loaf with two slices cut off it",
@@ -955,7 +988,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 14 — a loaf with two slices cut off it"
+       "speak": "Picture 14 — a loaf with two slices cut off it",
+       "speakAnswer": "bread"
       },
       {
        "prompt": "Picture 15 — a small dark shaker with the letter P on it",
@@ -979,7 +1013,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 15 — a small dark shaker with the letter P on it"
+       "speak": "Picture 15 — a small dark shaker with the letter P on it",
+       "speakAnswer": "pepper"
       },
       {
        "prompt": "Picture 16 — a bowl with bananas, grapes and apples in it",
@@ -1003,7 +1038,8 @@
         "vegetables",
         "cup"
        ],
-       "speak": "Picture 16 — a bowl with bananas, grapes and apples in it"
+       "speak": "Picture 16 — a bowl with bananas, grapes and apples in it",
+       "speakAnswer": "fruit"
       }
      ]
     },
@@ -1023,42 +1059,48 @@
        "answer": "fish and chips",
        "promptUz": "Britaniyaning milliy taomi (4 va 5 harf)",
        "whyUz": "'fish and chips' = baliq va kartoshka fri.\nBritaniyaning eng mashhur taomi.\nCoursebook 58-betdagi menyuda ham bor edi (£2.75).",
-       "speak": "3  f _ _ _  and  c _ _ _ _"
+       "speak": "3  f _ _ _  and  c _ _ _ _",
+       "speakAnswer": "fish and chips"
       },
       {
        "prompt": "4  k _ _ _ _  and  f _ _ _",
        "answer": "knife and fork",
        "promptUz": "Ovqatlanish asboblari (5 va 4 harf)",
        "whyUz": "'a knife and fork' = pichoq va vilka.\nDIQQAT: birgalikda BITTA artikl bilan: 'a knife and fork'.\nCoursebook 58-betda ham bor edi.",
-       "speak": "4  k _ _ _ _  and  f _ _ _"
+       "speak": "4  k _ _ _ _  and  f _ _ _",
+       "speakAnswer": "knife and fork"
       },
       {
        "prompt": "5  s _ _ _ _ _ _ _ _ _ _ _  and  c _ _ _ _",
        "answer": "strawberries and cream",
        "promptUz": "Britaniyaning yozgi an'anaviy shirinligi (12 va 5 harf)",
        "whyUz": "'strawberries and cream' = qulupnay va qaymoq.\nBritaniyada yozda, ayniqsa Uimbldon tennis turnirida yeyiladi.",
-       "speak": "5  s _ _ _ _ _ _ _ _ _ _ _  and  c _ _ _ _"
+       "speak": "5  s _ _ _ _ _ _ _ _ _ _ _  and  c _ _ _ _",
+       "speakAnswer": "strawberries and cream"
       },
       {
        "prompt": "6  b _ _ _ _  and  b _ _ _ _ _",
        "answer": "bread and butter",
        "promptUz": "Nonushtaning eng oddiy taomi (5 va 6 harf)",
        "whyUz": "'bread and butter' = non va sariyog'.\nIDIOMA: 'bread and butter' = asosiy daromad manbai.",
-       "speak": "6  b _ _ _ _  and  b _ _ _ _ _"
+       "speak": "6  b _ _ _ _  and  b _ _ _ _ _",
+       "speakAnswer": "bread and butter"
       },
       {
        "prompt": "7  s _ _ _  and  p _ _ _ _ _",
        "answer": "salt and pepper",
        "promptUz": "Dasturxondagi ikki ziravor (4 va 6 harf)",
        "whyUz": "'salt and pepper' = tuz va qora qalampir.\nHar qanday dasturxonda birga turadi.",
-       "speak": "7  s _ _ _  and  p _ _ _ _ _"
+       "speak": "7  s _ _ _  and  p _ _ _ _ _",
+       "speakAnswer": "salt and pepper"
       },
       {
        "prompt": "8  f _ _ _ _  and  v _ _ _ _ _ _ _ _ _",
        "answer": "fruit and vegetables",
        "promptUz": "Sog'lom ovqatlanishning asosi (5 va 10 harf)",
        "whyUz": "'fruit and vegetables' = meva va sabzavot.\nDIQQAT: 'fruit' — SANALMAYDIGAN (odatda -s siz),\n'vegetables' esa DOIM ko'plikda.",
-       "speak": "8  f _ _ _ _  and  v _ _ _ _ _ _ _ _ _"
+       "speak": "8  f _ _ _ _  and  v _ _ _ _ _ _ _ _ _",
+       "speakAnswer": "fruit and vegetables"
       }
      ]
     }
@@ -1207,7 +1249,8 @@
         "home-made",
         "dessert"
        ],
-       "whyUz": "Narxi o'rtacha, muhiti tinch, bolalar uchun menyusi bor restoran."
+       "whyUz": "Narxi o'rtacha, muhiti tinch, bolalar uchun menyusi bor restoran.",
+       "speakAnswer": "a family restaurant"
       },
       {
        "prompt": "imkoniyatni qo'ldan boy bermang",
@@ -1219,7 +1262,8 @@
         "home-made",
         "dessert"
        ],
-       "whyUz": "'to miss' = o'tkazib yubormoq; 'a chance' = imkoniyat.\nBuyruq gapning inkori — reklama va tavsiyalarda ko'p ishlatiladi."
+       "whyUz": "'to miss' = o'tkazib yubormoq; 'a chance' = imkoniyat.\nBuyruq gapning inkori — reklama va tavsiyalarda ko'p ishlatiladi.",
+       "speakAnswer": "Don't miss the chance"
       },
       {
        "prompt": "uyda tayyorlangan",
@@ -1231,7 +1275,8 @@
         "Don't miss the chance",
         "dessert"
        ],
-       "whyUz": "home + made — chiziqcha bilan qo'shma sifat.\nZavodda emas, qo'lda tayyorlangan degani."
+       "whyUz": "home + made — chiziqcha bilan qo'shma sifat.\nZavodda emas, qo'lda tayyorlangan degani.",
+       "speakAnswer": "home-made"
       },
       {
        "prompt": "shirinlik (ovqatdan keyin yeyiladigan)",
@@ -1243,7 +1288,8 @@
         "Don't miss the chance",
         "home-made"
        ],
-       "whyUz": "Talaffuz: /dɪˈzɜːt/ — urg'u IKKINCHI bo'g'inda.\nDIQQAT: 'desert' /ˈdezət/ = CHO'L — butunlay boshqa so'z!"
+       "whyUz": "Talaffuz: /dɪˈzɜːt/ — urg'u IKKINCHI bo'g'inda.\nDIQQAT: 'desert' /ˈdezət/ = CHO'L — butunlay boshqa so'z!",
+       "speakAnswer": "dessert"
       },
       {
        "prompt": "bir bo'lak (pirog, non, pitsa)",
@@ -1255,7 +1301,8 @@
         "Don't miss the chance",
         "home-made"
        ],
-       "whyUz": "'a slice of pie/bread/pizza/cake' = bir bo'lak.\nYupqa, kesilgan bo'lak ma'nosida."
+       "whyUz": "'a slice of pie/bread/pizza/cake' = bir bo'lak.\nYupqa, kesilgan bo'lak ma'nosida.",
+       "speakAnswer": "a slice"
       },
       {
        "prompt": "kosa, piyola",
@@ -1267,7 +1314,8 @@
         "Don't miss the chance",
         "home-made"
        ],
-       "whyUz": "'a bowl of ice-cream/soup/rice' = bir kosa.\nTalaffuz: /bəʊl/ — 'boul'."
+       "whyUz": "'a bowl of ice-cream/soup/rice' = bir kosa.\nTalaffuz: /bəʊl/ — 'boul'.",
+       "speakAnswer": "a bowl"
       },
       {
        "prompt": "do'stona, iliq muomalali",
@@ -1279,7 +1327,8 @@
         "Don't miss the chance",
         "home-made"
        ],
-       "whyUz": "friend + -ly. '-ly' bilan tugasa ham SIFAT (ravish emas).\n40-betda 'friendly to people' bor edi."
+       "whyUz": "friend + -ly. '-ly' bilan tugasa ham SIFAT (ravish emas).\n40-betda 'friendly to people' bor edi.",
+       "speakAnswer": "friendly"
       },
       {
        "prompt": "tadbir, munosabat (tug'ilgan kun, yubiley)",
@@ -1291,7 +1340,8 @@
         "Don't miss the chance",
         "home-made"
        ],
-       "whyUz": "'for any occasion' = har qanday tadbir uchun.\nTalaffuz: /əˈkeɪʒn/."
+       "whyUz": "'for any occasion' = har qanday tadbir uchun.\nTalaffuz: /əˈkeɪʒn/.",
+       "speakAnswer": "an occasion"
       },
       {
        "prompt": "gavjum, band",
@@ -1303,7 +1353,8 @@
         "Don't miss the chance",
         "home-made"
        ],
-       "whyUz": "Talaffuz: /ˈbɪzi/ — 'bizi' (yozilishi aldamchi!).\nRestoran haqida — odam ko'p degani."
+       "whyUz": "Talaffuz: /ˈbɪzi/ — 'bizi' (yozilishi aldamchi!).\nRestoran haqida — odam ko'p degani.",
+       "speakAnswer": "busy"
       },
       {
        "prompt": "unutmang",
@@ -1315,7 +1366,8 @@
         "Don't miss the chance",
         "home-made"
        ],
-       "whyUz": "'to forget' = unutmoq. Buyruq gapning inkori.\n'don't forget TO + fe'l' — 'to' shart."
+       "whyUz": "'to forget' = unutmoq. Buyruq gapning inkori.\n'don't forget TO + fe'l' — 'to' shart.",
+       "speakAnswer": "don't forget"
       }
      ]
     }
@@ -1528,7 +1580,8 @@
         "strong coffee",
         "as well as"
        ],
-       "whyUz": "'Whether at home or in a restaurant' = uydami yoki restorandami.\nDIQQAT: 'weather' (ob-havo) bilan bir xil o'qiladi: /ˈweðə/."
+       "whyUz": "'Whether at home or in a restaurant' = uydami yoki restorandami.\nDIQQAT: 'weather' (ob-havo) bilan bir xil o'qiladi: /ˈweðə/.",
+       "speakAnswer": "whether ... or"
       },
       {
        "prompt": "ishxona, ofis",
@@ -1540,7 +1593,8 @@
         "strong coffee",
         "as well as"
        ],
-       "whyUz": "'at the office' = ishxonada. Unli tovush → AN."
+       "whyUz": "'at the office' = ishxonada. Unli tovush → AN.",
+       "speakAnswer": "an office"
       },
       {
        "prompt": "quyuq (kuchli) qahva",
@@ -1552,7 +1606,8 @@
         "an office",
         "as well as"
        ],
-       "whyUz": "'strong' = kuchli, quyuq. Aksi: 'weak coffee' (suyuq qahva)."
+       "whyUz": "'strong' = kuchli, quyuq. Aksi: 'weak coffee' (suyuq qahva).",
+       "speakAnswer": "strong coffee"
       },
       {
        "prompt": "...dan tashqari, shuningdek",
@@ -1564,7 +1619,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'As well as fruit drinks, they also make beer.'\n'and' dan kuchliroq — qo'shimcha ma'lumot qo'shadi."
+       "whyUz": "'As well as fruit drinks, they also make beer.'\n'and' dan kuchliroq — qo'shimcha ma'lumot qo'shadi.",
+       "speakAnswer": "as well as"
       },
       {
        "prompt": "yengil gazak (asosiy ovqat emas)",
@@ -1576,7 +1632,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'two snacks in between' = orasida ikki marta gazak.\nMasalan: pechenye, meva, buterbrod."
+       "whyUz": "'two snacks in between' = orasida ikki marta gazak.\nMasalan: pechenye, meva, buterbrod.",
+       "speakAnswer": "a snack"
       },
       {
        "prompt": "taklif qilmoq, chaqirmoq",
@@ -1588,7 +1645,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'invite people to eat with them' = odamlarni birga ovqatlanishga chaqirmoq.\nOt shakli: an invitation (taklifnoma)."
+       "whyUz": "'invite people to eat with them' = odamlarni birga ovqatlanishga chaqirmoq.\nOt shakli: an invitation (taklifnoma).",
+       "speakAnswer": "to invite"
       },
       {
        "prompt": "odobli, muloyim",
@@ -1600,7 +1658,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'It's polite to leave a little food' = bir oz taom qoldirish odobli.\nAksi: rude (qo'pol)."
+       "whyUz": "'It's polite to leave a little food' = bir oz taom qoldirish odobli.\nAksi: rude (qo'pol).",
+       "speakAnswer": "polite"
       },
       {
        "prompt": "qoldirmoq",
@@ -1612,7 +1671,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'leave a little food on the plate' = tarelkada bir oz taom qoldirmoq.\nDIQQAT: 'to leave' ning boshqa ma'nosi — 'jo'namoq, tark etmoq'."
+       "whyUz": "'leave a little food on the plate' = tarelkada bir oz taom qoldirmoq.\nDIQQAT: 'to leave' ning boshqa ma'nosi — 'jo'namoq, tark etmoq'.",
+       "speakAnswer": "to leave"
       },
       {
        "prompt": "masalan, ...kabi",
@@ -1624,7 +1684,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'Finnish dishes, such as smoked fish' = fin taomlari, masalan dudlangan baliq.\n55-betda ham bor edi."
+       "whyUz": "'Finnish dishes, such as smoked fish' = fin taomlari, masalan dudlangan baliq.\n55-betda ham bor edi.",
+       "speakAnswer": "such as"
       },
       {
        "prompt": "dudlangan baliq",
@@ -1636,7 +1697,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'to smoke' = dudlamoq (tutunda pishirmoq).\n'smoked' — sifatdosh.\nDIQQAT: 'to smoke' ning boshqa ma'nosi — 'chekmoq'."
+       "whyUz": "'to smoke' = dudlamoq (tutunda pishirmoq).\n'smoked' — sifatdosh.\nDIQQAT: 'to smoke' ning boshqa ma'nosi — 'chekmoq'.",
+       "speakAnswer": "smoked fish"
       },
       {
        "prompt": "mashhur, ommabop",
@@ -1648,7 +1710,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'very popular' = juda mashhur.\nOt shakli: popularity (mashhurlik)."
+       "whyUz": "'very popular' = juda mashhur.\nOt shakli: popularity (mashhurlik).",
+       "speakAnswer": "popular"
       },
       {
        "prompt": "rasta, ko'chadagi kichik do'kon",
@@ -1660,7 +1723,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'stalls which sell sausages' = sosiska sotadigan rastalar.\nBozorda va ko'chada bo'ladi."
+       "whyUz": "'stalls which sell sausages' = sosiska sotadigan rastalar.\nBozorda va ko'chada bo'ladi.",
+       "speakAnswer": "a stall"
       },
       {
        "prompt": "sotmoq",
@@ -1672,7 +1736,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "Aksi: 'to buy' (sotib olmoq).\nDIQQAT: sell — sotmoq; buy — sotib olmoq. Chalkashtirmang."
+       "whyUz": "Aksi: 'to buy' (sotib olmoq).\nDIQQAT: sell — sotmoq; buy — sotib olmoq. Chalkashtirmang.",
+       "speakAnswer": "to sell"
       },
       {
        "prompt": "har bir odam",
@@ -1684,7 +1749,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'each person makes and brings' — 'each' dan keyin BIRLIK ot va fe'l -S bilan.\n'each' = har bir (alohida-alohida)."
+       "whyUz": "'each person makes and brings' — 'each' dan keyin BIRLIK ot va fe'l -S bilan.\n'each' = har bir (alohida-alohida).",
+       "speakAnswer": "each person"
       },
       {
        "prompt": "olib kelmoq",
@@ -1696,7 +1762,8 @@
         "an office",
         "strong coffee"
        ],
-       "whyUz": "'brings a part of the meal' = taomning bir qismini olib keladi.\nAksi: 'to take' (olib ketmoq)."
+       "whyUz": "'brings a part of the meal' = taomning bir qismini olib keladi.\nAksi: 'to take' (olib ketmoq).",
+       "speakAnswer": "to bring"
       }
      ]
     },
@@ -1850,7 +1917,8 @@
         "reasonable"
        ],
        "whyUz": "'tasty pizzas' = mazali pitsalar.\ntaste (ta'm) + -y = mazali.\nCoursebook 55-betda ham 'tasty dishes' bor edi.",
-       "speak": "There are many 1) ............ pizzas and delicious pasta dishes to choose from."
+       "speak": "There are many 1) ............ pizzas and delicious pasta dishes to choose from.",
+       "speakAnswer": "tasty"
       },
       {
        "prompt": "Try the Special Spaghetti with 2) ............ garlic sauce ...",
@@ -1862,7 +1930,8 @@
         "reasonable"
        ],
        "whyUz": "'rich sauce' = quyuq, to'yimli sous.\nDIQQAT: 'rich' bu yerda 'boy' emas, 'quyuq' ma'nosida.\nCoursebook 55-betda ham 'pasta with rich tomato sauce' bor edi.",
-       "speak": "Try the Special Spaghetti with 2) ............ garlic sauce ..."
+       "speak": "Try the Special Spaghetti with 2) ............ garlic sauce ...",
+       "speakAnswer": "rich"
       },
       {
        "prompt": "... and of course the 3) ............ garlic bread!",
@@ -1874,7 +1943,8 @@
         "tasty"
        ],
        "whyUz": "'home-made garlic bread' = uyda pishirilgan sarimsoqli non.\nCoursebook 55-betda ham 'home-made bread' bor edi.",
-       "speak": "... and of course the 3) ............ garlic bread!"
+       "speak": "... and of course the 3) ............ garlic bread!",
+       "speakAnswer": "home-made"
       },
       {
        "prompt": "The waiters here are always very 4) ............",
@@ -1886,7 +1956,8 @@
         "reasonable"
        ],
        "whyUz": "'helpful waiters' = yordamchan ofitsiantlar.\nhelp + -ful.\nCoursebook 55-betda ham bor edi.",
-       "speak": "The waiters here are always very 4) ............"
+       "speak": "The waiters here are always very 4) ............",
+       "speakAnswer": "helpful"
       },
       {
        "prompt": "... and the prices are quite 5) ............ .",
@@ -1898,7 +1969,8 @@
         "tasty"
        ],
        "whyUz": "'reasonable prices' = o'rtacha (maqbul) narxlar — qimmat emas.\nKeyingi gap buni tasdiqlaydi: 'Two people can eat for only £10.'\nAksi: expensive (qimmat).",
-       "speak": "... and the prices are quite 5) ............ ."
+       "speak": "... and the prices are quite 5) ............ .",
+       "speakAnswer": "reasonable"
       },
       {
        "prompt": "Luigi's is the 6) ............ place to enjoy a meal with friends.",
@@ -1910,7 +1982,8 @@
         "reasonable"
        ],
        "whyUz": "'the perfect place' = mukammal joy.\n'the' bilan keladi, chunki eng yuqori daraja.",
-       "speak": "Luigi's is the 6) ............ place to enjoy a meal with friends."
+       "speak": "Luigi's is the 6) ............ place to enjoy a meal with friends.",
+       "speakAnswer": "perfect"
       },
       {
        "prompt": "... because it is always very 7) ............ in the evenings.",
@@ -1922,7 +1995,8 @@
         "tasty"
        ],
        "whyUz": "'very busy' = juda gavjum.\nShuning uchun oldindan stol band qilish kerak.\nCoursebook 55-betda ham 'it is very busy, so don't forget to book' bor edi.\nTalaffuz: /ˈbɪzi/ — 'bizi'.",
-       "speak": "... because it is always very 7) ............ in the evenings."
+       "speak": "... because it is always very 7) ............ in the evenings.",
+       "speakAnswer": "busy"
       }
      ]
     },
@@ -1947,7 +2021,8 @@
         "empty"
        ],
        "whyUz": "'The food is HORRIBLE!' = Ovqat dahshatli!\nREKLAMADA: 'tasty pizzas and delicious pasta dishes'.\nMijoz TESKARI aytyapti.",
-       "speak": "1  The food is h............ !"
+       "speak": "1  The food is h............ !",
+       "speakAnswer": "horrible"
       },
       {
        "prompt": "2  The garlic bread is very h............ ! I think it's about three days old!",
@@ -1959,7 +2034,8 @@
         "horrible"
        ],
        "whyUz": "'very HARD' = juda qattiq (non eskirgan).\nKeyingi gap buni tushuntiradi: 'about three days old'.\nREKLAMADA: 'home-made garlic bread' (yangi pishirilgan).",
-       "speak": "2  The garlic bread is very h............ ! I think it's about three days old!"
+       "speak": "2  The garlic bread is very h............ ! I think it's about three days old!",
+       "speakAnswer": "hard"
       },
       {
        "prompt": "3  I don't like this spaghetti — it's c............ .",
@@ -1970,7 +2046,8 @@
         "hard",
         "empty"
        ],
-       "whyUz": "'it's COLD' = u sovuq.\nIssiq taom sovuq bo'lsa — bu jiddiy kamchilik.\nREKLAMADA: 'Special Spaghetti with rich garlic sauce'."
+       "whyUz": "'it's COLD' = u sovuq.\nIssiq taom sovuq bo'lsa — bu jiddiy kamchilik.\nREKLAMADA: 'Special Spaghetti with rich garlic sauce'.",
+       "speakAnswer": "cold"
       },
       {
        "prompt": "4  The waiters are very r............ !",
@@ -1982,7 +2059,8 @@
         "empty"
        ],
        "whyUz": "'very RUDE' = juda qo'pol.\nREKLAMADA: 'The waiters are always very helpful'.\n'rude' — 'polite' (odobli) ning aksi.",
-       "speak": "4  The waiters are very r............ !"
+       "speak": "4  The waiters are very r............ !",
+       "speakAnswer": "rude"
       },
       {
        "prompt": "5  It's a very e............ restaurant — this tiny pizza costs £5!",
@@ -1993,7 +2071,8 @@
         "empty",
         "horrible"
        ],
-       "whyUz": "'very EXPENSIVE' = juda qimmat.\nKeyingi gap buni tasdiqlaydi: 'this tiny pizza costs £5'.\nREKLAMADA: 'the prices are quite reasonable'.\n'tiny' = juda kichkina."
+       "whyUz": "'very EXPENSIVE' = juda qimmat.\nKeyingi gap buni tasdiqlaydi: 'this tiny pizza costs £5'.\nREKLAMADA: 'the prices are quite reasonable'.\n'tiny' = juda kichkina.",
+       "speakAnswer": "expensive"
       },
       {
        "prompt": "6  It's a t............ place for a meal with friends! We're leaving now!",
@@ -2005,7 +2084,8 @@
         "empty"
        ],
        "whyUz": "'a TERRIBLE place' = dahshatli joy.\nREKLAMADA: 'the perfect place to enjoy a meal with friends'.\n'We're leaving now' = biz hozir ketyapmiz.",
-       "speak": "6  It's a t............ place for a meal with friends! We're leaving now!"
+       "speak": "6  It's a t............ place for a meal with friends! We're leaving now!",
+       "speakAnswer": "terrible"
       },
       {
        "prompt": "7  You don't need to book a table! Look — it's nearly e............ .",
@@ -2016,7 +2096,8 @@
         "hard",
         "horrible"
        ],
-       "whyUz": "'nearly EMPTY' = deyarli bo'sh.\nREKLAMADA: 'it is always very busy in the evenings'.\n'nearly' = deyarli."
+       "whyUz": "'nearly EMPTY' = deyarli bo'sh.\nREKLAMADA: 'it is always very busy in the evenings'.\n'nearly' = deyarli.",
+       "speakAnswer": "empty"
       }
      ]
     },
@@ -2036,7 +2117,8 @@
        "answer": "No, they don't. They say the opposite of everything in the advertisement.",
        "promptUz": "Reklama va fikrlarni solishtiring",
        "whyUz": "Mijozlar reklamadagi HAR BIR gapni rad etadi.\n'to agree with' = rozi bo'lmoq;\n'the opposite' = teskari, aksi.\nDemak, reklama HAQIQATNI aks ettirmaydi.",
-       "speak": "Do the people agree with the advertisement?"
+       "speak": "Do the people agree with the advertisement?",
+       "speakAnswer": "No, they don't. They say the opposite of everything in the advertisement."
       }
      ]
     }
@@ -2109,56 +2191,64 @@
        "answer": "Baker Street",
        "promptUz": "Radio matnida qaysi ko'cha aytilgan?",
        "whyUz": "Radio matni: 'the fast food restaurant on BAKER STREET'.\nPlakatda esa Compton Street yozilgan — XATO.\n(Compton Street — 33-betdagi Luigi's restorani ko'chasi.)",
-       "speak": "29, COMPTON STREET → ............"
+       "speak": "29, COMPTON STREET → ............",
+       "speakAnswer": "Baker Street"
       },
       {
        "prompt": "☆ Spaghetti → ............",
        "answer": "Pizzas",
        "promptUz": "Radio matnidagi taomlar ro'yxatiga qarang",
        "whyUz": "Radio matni: 'our hamburgers, PIZZAS and toasted sandwiches'.\nPlakatda 'Spaghetti' yozilgan — XATO.\n'Hamburgers' esa TO'G'RI.",
-       "speak": "☆ Spaghetti → ............"
+       "speak": "☆ Spaghetti → ............",
+       "speakAnswer": "Pizzas"
       },
       {
        "prompt": "☆ Toasted Rolls → ............",
        "answer": "Toasted Sandwiches",
        "promptUz": "Radio matnida 'toasted' dan keyin nima?",
        "whyUz": "Radio matni: 'toasted SANDWICHES'.\nPlakatda 'Toasted Rolls' (qovurilgan bulochkalar) — XATO.\n'a roll' = kichik yumaloq non.",
-       "speak": "☆ Toasted Rolls → ............"
+       "speak": "☆ Toasted Rolls → ............",
+       "speakAnswer": "Toasted Sandwiches"
       },
       {
        "prompt": "☆ Fresh Cream → ............",
        "answer": "Ice-cream",
        "promptUz": "Radio matnida 'special' dan keyin nima?",
        "whyUz": "Radio matni: 'our special ICE-CREAM and milkshakes'.\nPlakatda 'Fresh Cream' (yangi qaymoq) — XATO.\n'Milkshakes' esa TO'G'RI.",
-       "speak": "☆ Fresh Cream → ............"
+       "speak": "☆ Fresh Cream → ............",
+       "speakAnswer": "Ice-cream"
       },
       {
        "prompt": "Classical Music! → ............",
        "answer": "Rock Music!",
        "promptUz": "Radio matnida qanday musiqa?",
        "whyUz": "Radio matni: 'enjoy our ROCK MUSIC'.\nPlakatda 'Classical Music' (klassik musiqa) — XATO.",
-       "speak": "Classical Music! → ............"
+       "speak": "Classical Music! → ............",
+       "speakAnswer": "Rock Music!"
       },
       {
        "prompt": "Friendly People! → ............",
        "answer": "Friendly Service!",
        "promptUz": "Radio matnida 'friendly' dan keyin nima?",
        "whyUz": "Radio matni: 'friendly SERVICE'.\nPlakatda 'Friendly People' — XATO.\n'service' = xizmat ko'rsatish.",
-       "speak": "Friendly People! → ............"
+       "speak": "Friendly People! → ............",
+       "speakAnswer": "Friendly Service!"
       },
       {
        "prompt": "Lots of prices! → ............",
        "answer": "Low prices!",
        "promptUz": "Radio matnida narxlar qanday?",
        "whyUz": "Radio matni: 'LOW prices' = past narxlar.\nPlakatda 'Lots of prices' (ko'p narxlar) — ma'nosiz, XATO.",
-       "speak": "Lots of prices! → ............"
+       "speak": "Lots of prices! → ............",
+       "speakAnswer": "Low prices!"
       },
       {
        "prompt": "OPEN 8 AM – 11 PM → ............",
        "answer": "OPEN 10 AM – 10 PM",
        "promptUz": "Radio matnida ish vaqti qanday?",
        "whyUz": "Radio matni: 'open from 10 AM to 10 PM'.\nPlakatda '8 am – 11 pm' — XATO.",
-       "speak": "OPEN 8 AM – 11 PM → ............"
+       "speak": "OPEN 8 AM – 11 PM → ............",
+       "speakAnswer": "OPEN 10 AM – 10 PM"
       }
      ]
     }
@@ -2188,21 +2278,24 @@
        "answer": "-ves",
        "promptUz": "Jadvaldagi 'loaf - loaves' misoliga qarang",
        "whyUz": "loaf → loaVES.\nBoshqa misollar: knife → knives, leaf → leaves,\nwife → wives, life → lives, shelf → shelves.\nISTISNO: roof → roofs, chief → chiefs.",
-       "speak": "Some nouns ending in -f or -fe drop the -f and take ............ to form their plural."
+       "speak": "Some nouns ending in -f or -fe drop the -f and take ............ to form their plural.",
+       "speakAnswer": "-ves"
       },
       {
        "prompt": "Nouns ending in a consonant + y, drop the -y and take ............ .",
        "answer": "-ies",
        "promptUz": "Jadvaldagi 'cherry - cherries' misoliga qarang",
        "whyUz": "cherry → cherrIES ('r' — undosh).\nBoshqa misollar: strawberry → strawberries,\nbaby → babies, city → cities, story → stories.",
-       "speak": "Nouns ending in a consonant + y, drop the -y and take ............ ."
+       "speak": "Nouns ending in a consonant + y, drop the -y and take ............ .",
+       "speakAnswer": "-ies"
       },
       {
        "prompt": "Some nouns ending in -o take ............ .",
        "answer": "-es",
        "promptUz": "Jadvaldagi 'tomato - tomatoes' misoliga qarang",
        "whyUz": "tomato → tomatoES.\nBoshqa misollar: potato → potatoes, hero → heroes.\nISTISNO: photo → photos, piano → pianos, radio → radios.",
-       "speak": "Some nouns ending in -o take ............ ."
+       "speak": "Some nouns ending in -o take ............ .",
+       "speakAnswer": "-es"
       }
      ]
     },
@@ -2222,35 +2315,40 @@
        "answer": "potatoes",
        "promptUz": "-o bilan tugaydi",
        "whyUz": "4-qoida: -o → -ES = potatoES.\n'potatos' XATO.",
-       "speak": "1  potato → ............"
+       "speak": "1  potato → ............",
+       "speakAnswer": "potatoes"
       },
       {
        "prompt": "2  knife → ............",
        "answer": "knives",
        "promptUz": "-fe bilan tugaydi",
        "whyUz": "1-qoida: -fe → -VES = kniVES.\nTalaffuz: knife /naɪf/ → knives /naɪvz/ ('k' o'qilmaydi).",
-       "speak": "2  knife → ............"
+       "speak": "2  knife → ............",
+       "speakAnswer": "knives"
       },
       {
        "prompt": "3  strawberry → ............",
        "answer": "strawberries",
        "promptUz": "undosh + y bilan tugaydi",
        "whyUz": "2-qoida: undosh ('r') + y → -IES = strawberrIES.",
-       "speak": "3  strawberry → ............"
+       "speak": "3  strawberry → ............",
+       "speakAnswer": "strawberries"
       },
       {
        "prompt": "4  leaf → ............",
        "answer": "leaves",
        "promptUz": "-f bilan tugaydi",
        "whyUz": "1-qoida: -f → -VES = leaVES.\n'a leaf' = barg (42-betdagi koala matnida bor edi).",
-       "speak": "4  leaf → ............"
+       "speak": "4  leaf → ............",
+       "speakAnswer": "leaves"
       },
       {
        "prompt": "5  key → ............",
        "answer": "keys",
        "promptUz": "UNLI + y bilan tugaydi",
        "whyUz": "3-qoida: unli ('e') + y → -S = keyS.\nDIQQAT: 'keies' XATO — 'e' unli, shuning uchun y o'zgarmaydi.",
-       "speak": "5  key → ............"
+       "speak": "5  key → ............",
+       "speakAnswer": "keys"
       }
      ]
     },
@@ -2307,70 +2405,80 @@
        "answer": "some",
        "promptUz": "Quyuq shirin suyuqlik — sanaladimi?",
        "whyUz": "SANALMAYDIGAN (suyuq massa) → SOME honey.\n'a honey' XATO. 'two honeys' ham noto'g'ri.",
-       "speak": "1  ............ honey"
+       "speak": "1  ............ honey",
+       "speakAnswer": "some"
       },
       {
        "prompt": "2  ............ tomatoes",
        "answer": "some",
        "promptUz": "Rasmda bir nechta pomidor",
        "whyUz": "SANALADIGAN, lekin KO'PLIKDA → SOME tomatoes.\nBittasi bo'lsa: 'a tomato'.",
-       "speak": "2  ............ tomatoes"
+       "speak": "2  ............ tomatoes",
+       "speakAnswer": "some"
       },
       {
        "prompt": "3  ............ jam",
        "answer": "some",
        "promptUz": "Bankadagi shirin massa",
        "whyUz": "SANALMAYDIGAN → SOME jam.\n'jam' = murabbo, jem.",
-       "speak": "3  ............ jam"
+       "speak": "3  ............ jam",
+       "speakAnswer": "some"
       },
       {
        "prompt": "4  ............ rice",
        "answer": "some",
        "promptUz": "Mayda donador mahsulot",
        "whyUz": "SANALMAYDIGAN → SOME rice.\nDonalarini sanab bo'lmaydi.",
-       "speak": "4  ............ rice"
+       "speak": "4  ............ rice",
+       "speakAnswer": "some"
       },
       {
        "prompt": "5  ............ coffee",
        "answer": "some",
        "promptUz": "Suyuqlik",
        "whyUz": "SANALMAYDIGAN → SOME coffee.\nDIQQAT: restoranda 'two coffees' deyish mumkin —\nbu 'ikki piyola qahva' degani (qisqartma shakl).",
-       "speak": "5  ............ coffee"
+       "speak": "5  ............ coffee",
+       "speakAnswer": "some"
       },
       {
        "prompt": "6  ............ cherries",
        "answer": "some",
        "promptUz": "Rasmda bir nechta gilos",
        "whyUz": "SANALADIGAN, KO'PLIKDA → SOME cherries.\nBittasi: 'a cherry'.",
-       "speak": "6  ............ cherries"
+       "speak": "6  ............ cherries",
+       "speakAnswer": "some"
       },
       {
        "prompt": "7  ............ egg",
        "answer": "an",
        "promptUz": "Bitta tuxum, unli tovush bilan boshlanadi",
        "whyUz": "SANALADIGAN, BIRLIKDA → 'an' (unli tovush → AN).\n'a egg' XATO.",
-       "speak": "7  ............ egg"
+       "speak": "7  ............ egg",
+       "speakAnswer": "an"
       },
       {
        "prompt": "8  ............ ham",
        "answer": "some",
        "promptUz": "Go'sht mahsuloti (bo'lak emas, massa)",
        "whyUz": "SANALMAYDIGAN → SOME ham.\n'ham' = dudlangan cho'chqa go'shti.",
-       "speak": "8  ............ ham"
+       "speak": "8  ............ ham",
+       "speakAnswer": "some"
       },
       {
        "prompt": "9  ............ sugar",
        "answer": "some",
        "promptUz": "Kukunsimon shirin mahsulot",
        "whyUz": "SANALMAYDIGAN → SOME sugar.\nNazariya qutisida ham misol sifatida berilgan: 'NOT: a sugar'.",
-       "speak": "9  ............ sugar"
+       "speak": "9  ............ sugar",
+       "speakAnswer": "some"
       },
       {
        "prompt": "10  ............ flour",
        "answer": "some",
        "promptUz": "Non pishirish uchun kukun",
        "whyUz": "SANALMAYDIGAN → SOME flour.\n'flour' /ˈflaʊə/ = un.\nDIQQAT: 'a flower' /ˈflaʊə/ = gul — bir xil o'qiladi!",
-       "speak": "10  ............ flour"
+       "speak": "10  ............ flour",
+       "speakAnswer": "some"
       },
       {
        "prompt": "11  ............ sandwich",
@@ -2384,28 +2492,32 @@
        "answer": "some",
        "promptUz": "Sut mahsuloti (massa)",
        "whyUz": "SANALMAYDIGAN → SOME butter.\n'butter' = sariyog'.",
-       "speak": "12  ............ butter"
+       "speak": "12  ............ butter",
+       "speakAnswer": "some"
       },
       {
        "prompt": "13  ............ water",
        "answer": "some",
        "promptUz": "Suyuqlik",
        "whyUz": "SANALMAYDIGAN → SOME water.\nSanash uchun: 'a glass of water'.",
-       "speak": "13  ............ water"
+       "speak": "13  ............ water",
+       "speakAnswer": "some"
       },
       {
        "prompt": "14  ............ salt",
        "answer": "some",
        "promptUz": "Ziravor (kukun)",
        "whyUz": "SANALMAYDIGAN → SOME salt.",
-       "speak": "14  ............ salt"
+       "speak": "14  ............ salt",
+       "speakAnswer": "some"
       },
       {
        "prompt": "15  ............ pepper",
        "answer": "some",
        "promptUz": "Rasmda ziravor idishi — qora qalampir",
        "whyUz": "Rasmda ZIRAVOR (qora qalampir) → SANALMAYDIGAN → SOME pepper.\nDIQQAT: 'a pepper' = bulg'or qalampiri (sabzavot, sanaladi).",
-       "speak": "15  ............ pepper"
+       "speak": "15  ............ pepper",
+       "speakAnswer": "some"
       }
      ]
     }
@@ -2502,7 +2614,8 @@
         "glass"
        ],
        "whyUz": "'a loaf of bread' = bir butun non.\nKo'pligi: LOAVES (6-mashqdagi qoida).\n7-band bilan solishtiring: u yerda KESILGAN bo'lak.",
-       "speak": "2  a ............ of bread"
+       "speak": "2  a ............ of bread",
+       "speakAnswer": "loaf"
       },
       {
        "prompt": "3  a ............ of cheese",
@@ -2514,7 +2627,8 @@
         "glass"
        ],
        "whyUz": "'a piece of cheese' = bir bo'lak pishloq.\n'a piece' — eng umumiy so'z, deyarli hamma narsaga mos.",
-       "speak": "3  a ............ of cheese"
+       "speak": "3  a ............ of cheese",
+       "speakAnswer": "piece"
       },
       {
        "prompt": "4  a ............ of wine",
@@ -2526,7 +2640,8 @@
         "packet"
        ],
        "whyUz": "'a glass of wine' = bir qadah vino.\n1-band bilan solishtiring: 'a BOTTLE of wine' — butun shisha.",
-       "speak": "4  a ............ of wine"
+       "speak": "4  a ............ of wine",
+       "speakAnswer": "glass"
       },
       {
        "prompt": "5  a ............ of crisps",
@@ -2538,7 +2653,8 @@
         "glass"
        ],
        "whyUz": "'a packet of crisps' = bir paket chips.\nBritancha; amerikacha 'a bag of chips'.",
-       "speak": "5  a ............ of crisps"
+       "speak": "5  a ............ of crisps",
+       "speakAnswer": "packet"
       },
       {
        "prompt": "6  a ............ of milk",
@@ -2550,7 +2666,8 @@
         "glass"
        ],
        "whyUz": "'a carton of milk' = bir paket sut.\n'a carton' — qog'ozdan yasalgan to'rtburchak idish.",
-       "speak": "6  a ............ of milk"
+       "speak": "6  a ............ of milk",
+       "speakAnswer": "carton"
       },
       {
        "prompt": "7  a ............ of bread",
@@ -2562,7 +2679,8 @@
         "packet"
        ],
        "whyUz": "'a slice of bread' = bir bo'lak (kesilgan) non.\n2-band bilan solishtiring: 'a LOAF' — butun non.",
-       "speak": "7  a ............ of bread"
+       "speak": "7  a ............ of bread",
+       "speakAnswer": "slice"
       },
       {
        "prompt": "8  a ............ of coffee",
@@ -2574,7 +2692,8 @@
         "glass"
        ],
        "whyUz": "'a cup of coffee' = bir piyola qahva.\n'a cup' — issiq ichimlik uchun, dastasi bor.",
-       "speak": "8  a ............ of coffee"
+       "speak": "8  a ............ of coffee",
+       "speakAnswer": "cup"
       },
       {
        "prompt": "9  a ............ of soup",
@@ -2586,7 +2705,8 @@
         "glass"
        ],
        "whyUz": "'a bowl of soup' = bir kosa sho'rva.\n55-betda ham bor edi: 'a bowl of ice-cream'.",
-       "speak": "9  a ............ of soup"
+       "speak": "9  a ............ of soup",
+       "speakAnswer": "bowl"
       }
      ]
     },
@@ -2606,56 +2726,64 @@
        "answer": "a bottle of Coke / a glass of Coke",
        "promptUz": "Suyuqlik — shisha yoki stakan",
        "whyUz": "Kola shishada sotiladi (a bottle), stakanga quyiladi (a glass).\n'Coke' — bosh harf bilan (marka nomi).",
-       "speak": "Coke"
+       "speak": "Coke",
+       "speakAnswer": "a bottle of Coke / a glass of Coke"
       },
       {
        "prompt": "flour",
        "answer": "a packet of flour",
        "promptUz": "Kukun — paketda sotiladi",
        "whyUz": "Un paketda sotiladi → 'a packet of flour'.\n'a kilo of flour' ham to'g'ri (nazariya qutisida 'kilo' bor).",
-       "speak": "flour"
+       "speak": "flour",
+       "speakAnswer": "a packet of flour"
       },
       {
        "prompt": "cake",
        "answer": "a slice of cake / a piece of cake",
        "promptUz": "Kesib beriladigan shirinlik",
        "whyUz": "Tort kesib beriladi → 'a slice' yoki 'a piece'.\nDIQQAT: 'a piece of cake' — idioma sifatida ham ishlatiladi:\n'juda oson ish' degani.",
-       "speak": "cake"
+       "speak": "cake",
+       "speakAnswer": "a slice of cake / a piece of cake"
       },
       {
        "prompt": "juice",
        "answer": "a carton of juice / a glass of juice",
        "promptUz": "Suyuqlik — qog'oz paketda sotiladi",
        "whyUz": "Sharbat qog'oz paketda sotiladi (a carton), stakanga quyiladi (a glass).\n'a bottle of juice' ham mumkin.",
-       "speak": "juice"
+       "speak": "juice",
+       "speakAnswer": "a carton of juice / a glass of juice"
       },
       {
        "prompt": "water",
        "answer": "a bottle of water / a glass of water",
        "promptUz": "Suyuqlik",
        "whyUz": "Suv shishada sotiladi (a bottle), stakanga quyiladi (a glass).",
-       "speak": "water"
+       "speak": "water",
+       "speakAnswer": "a bottle of water / a glass of water"
       },
       {
        "prompt": "tea",
        "answer": "a cup of tea",
        "promptUz": "Issiq ichimlik",
        "whyUz": "'a cup of tea' — o'zgarmas ibora.\nDIQQAT: Britaniyada 'a cup of tea' — kundalik hayotning ramzi.\nIdioma: 'It's not my cup of tea' = bu menga yoqmaydi.",
-       "speak": "tea"
+       "speak": "tea",
+       "speakAnswer": "a cup of tea"
       },
       {
        "prompt": "cereal",
        "answer": "a bowl of cereal / a packet of cereal",
        "promptUz": "Nonushta xlopyasi",
        "whyUz": "'cereal' = nonushta uchun donli xlopya.\nPaketda sotiladi (a packet), kosada yeyiladi (a bowl).",
-       "speak": "cereal"
+       "speak": "cereal",
+       "speakAnswer": "a bowl of cereal / a packet of cereal"
       },
       {
        "prompt": "sugar",
        "answer": "a packet of sugar / a kilo of sugar",
        "promptUz": "Kukun — paketda sotiladi",
        "whyUz": "Shakar paketda sotiladi.\nChoyga qo'shish uchun: 'a spoonful of sugar' (bir qoshiq).",
-       "speak": "sugar"
+       "speak": "sugar",
+       "speakAnswer": "a packet of sugar / a kilo of sugar"
       }
      ]
     }
@@ -2685,28 +2813,32 @@
        "answer": "how much",
        "promptUz": "Misoldagi 'milk' bilan qaysi so'zlar ishlatilgan?",
        "whyUz": "SANALMAYDIGAN otlar bilan HOW MUCH va A LITTLE.\nMisol: How MUCH milk do you need? — Just a LITTLE.\nBoshqa misollar: how much bread, how much sugar, a little water.",
-       "speak": "We use ............ and ............ with uncountable nouns.  [1-bo'shliq]"
+       "speak": "We use ............ and ............ with uncountable nouns.  [1-bo'shliq]",
+       "speakAnswer": "how much"
       },
       {
        "prompt": "We use ............ and ............ with uncountable nouns.  [2-bo'shliq]",
        "answer": "a little",
        "promptUz": "Misoldagi 'milk' bilan qaysi so'zlar ishlatilgan?",
        "whyUz": "SANALMAYDIGAN otlar bilan HOW MUCH va A LITTLE.\nMisol: How MUCH milk do you need? — Just a LITTLE.\nBoshqa misollar: how much bread, how much sugar, a little water.",
-       "speak": "We use ............ and ............ with uncountable nouns.  [2-bo'shliq]"
+       "speak": "We use ............ and ............ with uncountable nouns.  [2-bo'shliq]",
+       "speakAnswer": "a little"
       },
       {
        "prompt": "We use ............ and ............ with countable nouns.  [1-bo'shliq]",
        "answer": "how many",
        "promptUz": "Misoldagi 'carrots' bilan qaysi so'zlar ishlatilgan?",
        "whyUz": "SANALADIGAN otlar bilan HOW MANY va A FEW.\nMisol: How MANY carrots do you need? — Just a FEW.\nBoshqa misollar: how many eggs, how many bananas, a few onions.",
-       "speak": "We use ............ and ............ with countable nouns.  [1-bo'shliq]"
+       "speak": "We use ............ and ............ with countable nouns.  [1-bo'shliq]",
+       "speakAnswer": "how many"
       },
       {
        "prompt": "We use ............ and ............ with countable nouns.  [2-bo'shliq]",
        "answer": "a few",
        "promptUz": "Misoldagi 'carrots' bilan qaysi so'zlar ishlatilgan?",
        "whyUz": "SANALADIGAN otlar bilan HOW MANY va A FEW.\nMisol: How MANY carrots do you need? — Just a FEW.\nBoshqa misollar: how many eggs, how many bananas, a few onions.",
-       "speak": "We use ............ and ............ with countable nouns.  [2-bo'shliq]"
+       "speak": "We use ............ and ............ with countable nouns.  [2-bo'shliq]",
+       "speakAnswer": "a few"
       }
      ]
     },
@@ -2726,154 +2858,176 @@
        "answer": "How much ham do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'ham' — SANALMAYDIGAN (massa) → HOW MUCH + A LITTLE.\nSanash uchun: 'a slice of ham'.",
-       "speak": "ham (sanalmaydigan)"
+       "speak": "ham (sanalmaydigan)",
+       "speakAnswer": "How much ham do you need?"
       },
       {
        "prompt": "ham (sanalmaydigan)",
        "answer": "Just a little.",
        "promptUz": "Javob tuzing",
        "whyUz": "'ham' — SANALMAYDIGAN (massa) → HOW MUCH + A LITTLE.\nSanash uchun: 'a slice of ham'.",
-       "speak": "ham (sanalmaydigan)"
+       "speak": "ham (sanalmaydigan)",
+       "speakAnswer": "Just a little."
       },
       {
        "prompt": "onions (sanaladigan)",
        "answer": "How many onions do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'onions' — SANALADIGAN → HOW MANY + A FEW.",
-       "speak": "onions (sanaladigan)"
+       "speak": "onions (sanaladigan)",
+       "speakAnswer": "How many onions do you need?"
       },
       {
        "prompt": "onions (sanaladigan)",
        "answer": "Just a few.",
        "promptUz": "Javob tuzing",
        "whyUz": "'onions' — SANALADIGAN → HOW MANY + A FEW.",
-       "speak": "onions (sanaladigan)"
+       "speak": "onions (sanaladigan)",
+       "speakAnswer": "Just a few."
       },
       {
        "prompt": "flour (sanalmaydigan)",
        "answer": "How much flour do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'flour' (un) — kukun → SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'a packet of flour', 'a kilo of flour'.",
-       "speak": "flour (sanalmaydigan)"
+       "speak": "flour (sanalmaydigan)",
+       "speakAnswer": "How much flour do you need?"
       },
       {
        "prompt": "flour (sanalmaydigan)",
        "answer": "Just a little.",
        "promptUz": "Javob tuzing",
        "whyUz": "'flour' (un) — kukun → SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'a packet of flour', 'a kilo of flour'.",
-       "speak": "flour (sanalmaydigan)"
+       "speak": "flour (sanalmaydigan)",
+       "speakAnswer": "Just a little."
       },
       {
        "prompt": "peppers (sanaladigan)",
        "answer": "How many peppers do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'peppers' bu yerda — bulg'or qalampiri (sabzavot) → SANALADIGAN.\nDIQQAT: 'pepper' (qora qalampir, ziravor) SANALMAYDI.",
-       "speak": "peppers (sanaladigan)"
+       "speak": "peppers (sanaladigan)",
+       "speakAnswer": "How many peppers do you need?"
       },
       {
        "prompt": "peppers (sanaladigan)",
        "answer": "Just a few.",
        "promptUz": "Javob tuzing",
        "whyUz": "'peppers' bu yerda — bulg'or qalampiri (sabzavot) → SANALADIGAN.\nDIQQAT: 'pepper' (qora qalampir, ziravor) SANALMAYDI.",
-       "speak": "peppers (sanaladigan)"
+       "speak": "peppers (sanaladigan)",
+       "speakAnswer": "Just a few."
       },
       {
        "prompt": "tomatoes (sanaladigan)",
        "answer": "How many tomatoes do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'tomatoes' — SANALADIGAN → HOW MANY.\nKo'pligi: tomato → tomatoES.",
-       "speak": "tomatoes (sanaladigan)"
+       "speak": "tomatoes (sanaladigan)",
+       "speakAnswer": "How many tomatoes do you need?"
       },
       {
        "prompt": "tomatoes (sanaladigan)",
        "answer": "Just a few.",
        "promptUz": "Javob tuzing",
        "whyUz": "'tomatoes' — SANALADIGAN → HOW MANY.\nKo'pligi: tomato → tomatoES.",
-       "speak": "tomatoes (sanaladigan)"
+       "speak": "tomatoes (sanaladigan)",
+       "speakAnswer": "Just a few."
       },
       {
        "prompt": "olives (sanaladigan)",
        "answer": "How many olives do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'olives' (zaytun) — SANALADIGAN → HOW MANY.\nDIQQAT: 'olive oil' (zaytun moyi) esa SANALMAYDI.",
-       "speak": "olives (sanaladigan)"
+       "speak": "olives (sanaladigan)",
+       "speakAnswer": "How many olives do you need?"
       },
       {
        "prompt": "olives (sanaladigan)",
        "answer": "Just a few.",
        "promptUz": "Javob tuzing",
        "whyUz": "'olives' (zaytun) — SANALADIGAN → HOW MANY.\nDIQQAT: 'olive oil' (zaytun moyi) esa SANALMAYDI.",
-       "speak": "olives (sanaladigan)"
+       "speak": "olives (sanaladigan)",
+       "speakAnswer": "Just a few."
       },
       {
        "prompt": "bacon (sanalmaydigan)",
        "answer": "How much bacon do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'bacon' — SANALMAYDIGAN (massa) → HOW MUCH.\nSanash uchun: 'a slice of bacon'.",
-       "speak": "bacon (sanalmaydigan)"
+       "speak": "bacon (sanalmaydigan)",
+       "speakAnswer": "How much bacon do you need?"
       },
       {
        "prompt": "bacon (sanalmaydigan)",
        "answer": "Just a little.",
        "promptUz": "Javob tuzing",
        "whyUz": "'bacon' — SANALMAYDIGAN (massa) → HOW MUCH.\nSanash uchun: 'a slice of bacon'.",
-       "speak": "bacon (sanalmaydigan)"
+       "speak": "bacon (sanalmaydigan)",
+       "speakAnswer": "Just a little."
       },
       {
        "prompt": "cheese (sanalmaydigan)",
        "answer": "How much cheese do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'cheese' — SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'a piece of cheese', 'a kilo of cheese'.",
-       "speak": "cheese (sanalmaydigan)"
+       "speak": "cheese (sanalmaydigan)",
+       "speakAnswer": "How much cheese do you need?"
       },
       {
        "prompt": "cheese (sanalmaydigan)",
        "answer": "Just a little.",
        "promptUz": "Javob tuzing",
        "whyUz": "'cheese' — SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'a piece of cheese', 'a kilo of cheese'.",
-       "speak": "cheese (sanalmaydigan)"
+       "speak": "cheese (sanalmaydigan)",
+       "speakAnswer": "Just a little."
       },
       {
        "prompt": "bread (sanalmaydigan)",
        "answer": "How much bread do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'a loaf of bread', 'a slice of bread'.",
-       "speak": "bread (sanalmaydigan)"
+       "speak": "bread (sanalmaydigan)",
+       "speakAnswer": "How much bread do you need?"
       },
       {
        "prompt": "bread (sanalmaydigan)",
        "answer": "Just a little.",
        "promptUz": "Javob tuzing",
        "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'a loaf of bread', 'a slice of bread'.",
-       "speak": "bread (sanalmaydigan)"
+       "speak": "bread (sanalmaydigan)",
+       "speakAnswer": "Just a little."
       },
       {
        "prompt": "bananas (sanaladigan)",
        "answer": "How many bananas do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'bananas' — SANALADIGAN → HOW MANY.",
-       "speak": "bananas (sanaladigan)"
+       "speak": "bananas (sanaladigan)",
+       "speakAnswer": "How many bananas do you need?"
       },
       {
        "prompt": "bananas (sanaladigan)",
        "answer": "Just a few.",
        "promptUz": "Javob tuzing",
        "whyUz": "'bananas' — SANALADIGAN → HOW MANY.",
-       "speak": "bananas (sanaladigan)"
+       "speak": "bananas (sanaladigan)",
+       "speakAnswer": "Just a few."
       },
       {
        "prompt": "coconuts (sanaladigan)",
        "answer": "How many coconuts do you need?",
        "promptUz": "Savol tuzing",
        "whyUz": "'coconuts' — SANALADIGAN → HOW MANY.\nDIQQAT: 'coconut milk' (kokos suti) esa SANALMAYDI.",
-       "speak": "coconuts (sanaladigan)"
+       "speak": "coconuts (sanaladigan)",
+       "speakAnswer": "How many coconuts do you need?"
       },
       {
        "prompt": "coconuts (sanaladigan)",
        "answer": "Just a few.",
        "promptUz": "Javob tuzing",
        "whyUz": "'coconuts' — SANALADIGAN → HOW MANY.\nDIQQAT: 'coconut milk' (kokos suti) esa SANALMAYDI.",
-       "speak": "coconuts (sanaladigan)"
+       "speak": "coconuts (sanaladigan)",
+       "speakAnswer": "Just a few."
       }
      ]
     },
@@ -2893,97 +3047,113 @@
        "prompt": "cheese — 1 kilo",
        "answer": "How much cheese does she need?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'cheese' — SANALMAYDIGAN → HOW MUCH.\nAgar audioda chizib tashlansa: 'She doesn't need any cheese.'"
+       "whyUz": "'cheese' — SANALMAYDIGAN → HOW MUCH.\nAgar audioda chizib tashlansa: 'She doesn't need any cheese.'",
+       "speakAnswer": "How much cheese does she need?"
       },
       {
        "prompt": "cheese — 1 kilo",
        "answer": "She needs one kilo of cheese.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'cheese' — SANALMAYDIGAN → HOW MUCH.\nAgar audioda chizib tashlansa: 'She doesn't need any cheese.'"
+       "whyUz": "'cheese' — SANALMAYDIGAN → HOW MUCH.\nAgar audioda chizib tashlansa: 'She doesn't need any cheese.'",
+       "speakAnswer": "She needs one kilo of cheese."
       },
       {
        "prompt": "ham — 20 slices",
        "answer": "How much ham does she need?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'ham' — SANALMAYDIGAN → HOW MUCH.\n'20 slices of ham' = yigirma bo'lak vetchina."
+       "whyUz": "'ham' — SANALMAYDIGAN → HOW MUCH.\n'20 slices of ham' = yigirma bo'lak vetchina.",
+       "speakAnswer": "How much ham does she need?"
       },
       {
        "prompt": "ham — 20 slices",
        "answer": "She needs twenty slices of ham.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'ham' — SANALMAYDIGAN → HOW MUCH.\n'20 slices of ham' = yigirma bo'lak vetchina."
+       "whyUz": "'ham' — SANALMAYDIGAN → HOW MUCH.\n'20 slices of ham' = yigirma bo'lak vetchina.",
+       "speakAnswer": "She needs twenty slices of ham."
       },
       {
        "prompt": "bread — 2 loaves",
        "answer": "How much bread does she need?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.\n'loaves' — 'loaf' ning ko'pligi (-f → -VES, 56-bet)."
+       "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.\n'loaves' — 'loaf' ning ko'pligi (-f → -VES, 56-bet).",
+       "speakAnswer": "How much bread does she need?"
       },
       {
        "prompt": "bread — 2 loaves",
        "answer": "She needs two loaves of bread.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.\n'loaves' — 'loaf' ning ko'pligi (-f → -VES, 56-bet)."
+       "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.\n'loaves' — 'loaf' ning ko'pligi (-f → -VES, 56-bet).",
+       "speakAnswer": "She needs two loaves of bread."
       },
       {
        "prompt": "tomatoes — 1 kilo",
        "answer": "How many tomatoes does she need?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'tomatoes' — SANALADIGAN → HOW MANY.\nMiqdori kilo bilan berilgan bo'lsa ham, ot sanaladi."
+       "whyUz": "'tomatoes' — SANALADIGAN → HOW MANY.\nMiqdori kilo bilan berilgan bo'lsa ham, ot sanaladi.",
+       "speakAnswer": "How many tomatoes does she need?"
       },
       {
        "prompt": "tomatoes — 1 kilo",
        "answer": "She needs one kilo of tomatoes.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'tomatoes' — SANALADIGAN → HOW MANY.\nMiqdori kilo bilan berilgan bo'lsa ham, ot sanaladi."
+       "whyUz": "'tomatoes' — SANALADIGAN → HOW MANY.\nMiqdori kilo bilan berilgan bo'lsa ham, ot sanaladi.",
+       "speakAnswer": "She needs one kilo of tomatoes."
       },
       {
        "prompt": "flour — 2 packets",
        "answer": "How much flour does she need?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'flour' — SANALMAYDIGAN → HOW MUCH.\n'2 packets of flour' = ikki paket un."
+       "whyUz": "'flour' — SANALMAYDIGAN → HOW MUCH.\n'2 packets of flour' = ikki paket un.",
+       "speakAnswer": "How much flour does she need?"
       },
       {
        "prompt": "flour — 2 packets",
        "answer": "She needs two packets of flour.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'flour' — SANALMAYDIGAN → HOW MUCH.\n'2 packets of flour' = ikki paket un."
+       "whyUz": "'flour' — SANALMAYDIGAN → HOW MUCH.\n'2 packets of flour' = ikki paket un.",
+       "speakAnswer": "She needs two packets of flour."
       },
       {
        "prompt": "Coke — 3 bottles",
        "answer": "How much Coke does she need?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'Coke' — SANALMAYDIGAN (suyuqlik) → HOW MUCH.\n'3 bottles of Coke' = uch shisha kola."
+       "whyUz": "'Coke' — SANALMAYDIGAN (suyuqlik) → HOW MUCH.\n'3 bottles of Coke' = uch shisha kola.",
+       "speakAnswer": "How much Coke does she need?"
       },
       {
        "prompt": "Coke — 3 bottles",
        "answer": "She needs three bottles of Coke.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'Coke' — SANALMAYDIGAN (suyuqlik) → HOW MUCH.\n'3 bottles of Coke' = uch shisha kola."
+       "whyUz": "'Coke' — SANALMAYDIGAN (suyuqlik) → HOW MUCH.\n'3 bottles of Coke' = uch shisha kola.",
+       "speakAnswer": "She needs three bottles of Coke."
       },
       {
        "prompt": "orange juice — 1 carton",
        "answer": "How much orange juice does she need?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'orange juice' — SANALMAYDIGAN → HOW MUCH.\n'a carton' = qog'oz paket."
+       "whyUz": "'orange juice' — SANALMAYDIGAN → HOW MUCH.\n'a carton' = qog'oz paket.",
+       "speakAnswer": "How much orange juice does she need?"
       },
       {
        "prompt": "orange juice — 1 carton",
        "answer": "She needs one carton of orange juice.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'orange juice' — SANALMAYDIGAN → HOW MUCH.\n'a carton' = qog'oz paket."
+       "whyUz": "'orange juice' — SANALMAYDIGAN → HOW MUCH.\n'a carton' = qog'oz paket.",
+       "speakAnswer": "She needs one carton of orange juice."
       },
       {
        "prompt": "bananas — 8",
        "answer": "How many bananas does she need?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'bananas' — SANALADIGAN → HOW MANY.\nMiqdor so'zi kerak emas — to'g'ridan-to'g'ri son."
+       "whyUz": "'bananas' — SANALADIGAN → HOW MANY.\nMiqdor so'zi kerak emas — to'g'ridan-to'g'ri son.",
+       "speakAnswer": "How many bananas does she need?"
       },
       {
        "prompt": "bananas — 8",
        "answer": "She needs eight bananas.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'bananas' — SANALADIGAN → HOW MANY.\nMiqdor so'zi kerak emas — to'g'ridan-to'g'ri son."
+       "whyUz": "'bananas' — SANALADIGAN → HOW MANY.\nMiqdor so'zi kerak emas — to'g'ridan-to'g'ri son.",
+       "speakAnswer": "She needs eight bananas."
       }
      ]
     }
@@ -3013,14 +3183,16 @@
        "answer": "some",
        "promptUz": "Dialogda 'Would you like ...?' va 'Can I have ...?' da qaysi so'z bor?",
        "whyUz": "TAKLIF va ILTIMOS savollarida ham SOME ishlatiladi:\n  Would you like SOME Coke?  (taklif — offer)\n  Can I have SOME ice?       (iltimos — request)\nSababi: bu savollarda javob 'ha' bo'lishi kutiladi.",
-       "speak": "We use some in the affirmative. We also use ............ in the interrogative form for offers or requests."
+       "speak": "We use some in the affirmative. We also use ............ in the interrogative form for offers or requests.",
+       "speakAnswer": "some"
       },
       {
        "prompt": "We use ............ in the negative and interrogative form.",
        "answer": "any",
        "promptUz": "Dialogda 'Is there ...?' va 'there isn't ...' da qaysi so'z bor?",
        "whyUz": "INKOR va oddiy SAVOLDA ANY:\n  There ISN'T any milk.        (inkor)\n  IS there any milk?           (ma'lumot so'rash)\n'There isn't some milk' XATO.",
-       "speak": "We use ............ in the negative and interrogative form."
+       "speak": "We use ............ in the negative and interrogative form.",
+       "speakAnswer": "any"
       }
      ]
     },
@@ -3043,7 +3215,8 @@
         "an offer (taklif)",
         "a request (iltimos)"
        ],
-       "whyUz": "'Would YOU like ...?' — gapiruvchi boshqaga narsa TAKLIF qilyapti.\nBu — OFFER (taklif)."
+       "whyUz": "'Would YOU like ...?' — gapiruvchi boshqaga narsa TAKLIF qilyapti.\nBu — OFFER (taklif).",
+       "speakAnswer": "an offer"
       },
       {
        "prompt": "Can I have some ice too?",
@@ -3053,7 +3226,8 @@
         "a request (iltimos)",
         "an offer (taklif)"
        ],
-       "whyUz": "'Can I have ...?' — gapiruvchi o'ziga narsa SO'rayapti.\nBu — REQUEST (iltimos)."
+       "whyUz": "'Can I have ...?' — gapiruvchi o'ziga narsa SO'rayapti.\nBu — REQUEST (iltimos).",
+       "speakAnswer": "a request"
       },
       {
        "prompt": "Is there any milk in the fridge?",
@@ -3064,7 +3238,8 @@
         "an offer (taklif)",
         "a request (iltimos)"
        ],
-       "whyUz": "Bu — na taklif, na iltimos; shunchaki MA'LUMOT so'rash.\nShuning uchun ANY ishlatiladi ('some' emas)."
+       "whyUz": "Bu — na taklif, na iltimos; shunchaki MA'LUMOT so'rash.\nShuning uchun ANY ishlatiladi ('some' emas).",
+       "speakAnswer": "ma'lumot so'rash"
       }
      ]
     },
@@ -3292,79 +3467,92 @@
        "prompt": "a/an katagi — 2",
        "answer": "saucer",
        "promptUz": "Chashka ostidagi likopcha",
-       "whyUz": "'a saucer' — SANALADIGAN BIRLIK.\nBitta likopcha, ikkita likopcha — sanash mumkin."
+       "whyUz": "'a saucer' — SANALADIGAN BIRLIK.\nBitta likopcha, ikkita likopcha — sanash mumkin.",
+       "speakAnswer": "saucer"
       },
       {
        "prompt": "a/an katagi — 3",
        "answer": "fork",
        "promptUz": "Ovqatlanish asbobi",
-       "whyUz": "'a fork' — SANALADIGAN BIRLIK."
+       "whyUz": "'a fork' — SANALADIGAN BIRLIK.",
+       "speakAnswer": "fork"
       },
       {
        "prompt": "a/an katagi — 4",
        "answer": "knife",
        "promptUz": "Kesish asbobi",
-       "whyUz": "'a knife' — SANALADIGAN BIRLIK.\nKo'pligi: KNIVES."
+       "whyUz": "'a knife' — SANALADIGAN BIRLIK.\nKo'pligi: KNIVES.",
+       "speakAnswer": "knife"
       },
       {
        "prompt": "some (plural) katagi — 2",
        "answer": "eggs",
        "promptUz": "Ro'yxatda -s bilan tugagan",
-       "whyUz": "'some eggs' — SANALADIGAN, KO'PLIKDA.\nBittasi: 'an egg'."
+       "whyUz": "'some eggs' — SANALADIGAN, KO'PLIKDA.\nBittasi: 'an egg'.",
+       "speakAnswer": "eggs"
       },
       {
        "prompt": "some (plural) katagi — 3",
        "answer": "strawberries",
        "promptUz": "Ro'yxatda -ies bilan tugagan",
-       "whyUz": "'some strawberries' — SANALADIGAN, KO'PLIKDA.\nBittasi: 'a strawberry'."
+       "whyUz": "'some strawberries' — SANALADIGAN, KO'PLIKDA.\nBittasi: 'a strawberry'.",
+       "speakAnswer": "strawberries"
       },
       {
        "prompt": "some (plural) katagi — 4",
        "answer": "vegetables",
        "promptUz": "Ro'yxatda -s bilan tugagan",
-       "whyUz": "'some vegetables' — SANALADIGAN, KO'PLIKDA.\nBittasi: 'a vegetable'."
+       "whyUz": "'some vegetables' — SANALADIGAN, KO'PLIKDA.\nBittasi: 'a vegetable'.",
+       "speakAnswer": "vegetables"
       },
       {
        "prompt": "some (uncountable) katagi — 2",
        "answer": "bread",
        "promptUz": "Massa — sanaladimi?",
-       "whyUz": "'some bread' — SANALMAYDIGAN.\nSanash uchun: 'a loaf of bread', 'a slice of bread'."
+       "whyUz": "'some bread' — SANALMAYDIGAN.\nSanash uchun: 'a loaf of bread', 'a slice of bread'.",
+       "speakAnswer": "bread"
       },
       {
        "prompt": "some (uncountable) katagi — 3",
        "answer": "butter",
        "promptUz": "Sut mahsuloti (massa)",
-       "whyUz": "'some butter' — SANALMAYDIGAN.\n'a butter' XATO."
+       "whyUz": "'some butter' — SANALMAYDIGAN.\n'a butter' XATO.",
+       "speakAnswer": "butter"
       },
       {
        "prompt": "some (uncountable) katagi — 4",
        "answer": "cream",
        "promptUz": "Sut mahsuloti (suyuq)",
-       "whyUz": "'some cream' — SANALMAYDIGAN.\n'cream' = qaymoq, smetana."
+       "whyUz": "'some cream' — SANALMAYDIGAN.\n'cream' = qaymoq, smetana.",
+       "speakAnswer": "cream"
       },
       {
        "prompt": "some (uncountable) katagi — 5",
        "answer": "fish",
        "promptUz": "Ovqat sifatida — sanaladimi?",
-       "whyUz": "'some fish' — OVQAT sifatida SANALMAYDIGAN.\nDIQQAT: JONIVOR sifatida sanaladi ('three fish'),\nlekin ovqat sifatida 'some fish' deyiladi."
+       "whyUz": "'some fish' — OVQAT sifatida SANALMAYDIGAN.\nDIQQAT: JONIVOR sifatida sanaladi ('three fish'),\nlekin ovqat sifatida 'some fish' deyiladi.",
+       "speakAnswer": "fish"
       },
       {
        "prompt": "some (uncountable) katagi — 6",
        "answer": "fruit",
        "promptUz": "Umumiy so'z — sanaladimi?",
-       "whyUz": "'some fruit' — SANALMAYDIGAN (umumiy so'z).\n'I eat a lot of FRUIT' — 'fruits' emas.\nAlohida mevalar esa sanaladi: 'two apples'."
+       "whyUz": "'some fruit' — SANALMAYDIGAN (umumiy so'z).\n'I eat a lot of FRUIT' — 'fruits' emas.\nAlohida mevalar esa sanaladi: 'two apples'.",
+       "speakAnswer": "fruit"
       },
       {
        "prompt": "some (uncountable) katagi — 7",
        "answer": "pepper",
        "promptUz": "Ziravor (kukun)",
-       "whyUz": "'some pepper' — ZIRAVOR sifatida SANALMAYDIGAN.\nDIQQAT: 'a pepper' (bulg'or qalampiri, sabzavot) esa SANALADI."
+       "whyUz": "'some pepper' — ZIRAVOR sifatida SANALMAYDIGAN.\nDIQQAT: 'a pepper' (bulg'or qalampiri, sabzavot) esa SANALADI.",
+       "speakAnswer": "pepper"
       },
       {
        "prompt": "some (uncountable) katagi — 8",
        "answer": "salt",
        "promptUz": "Ziravor (kukun)",
-       "whyUz": "'some salt' — SANALMAYDIGAN.\n'a salt' XATO."
+       "whyUz": "'some salt' — SANALMAYDIGAN.\n'a salt' XATO.",
+       "speakAnswer": "salt"
       }
      ]
     },
@@ -3440,7 +3628,8 @@
         "in"
        ],
        "whyUz": "'FROM ... TILL ...' = ...dan ...gacha.\nCoursebook 55-betda ham bor edi:\n'open from eleven in the morning till eleven in the evening'.",
-       "speak": "2  The restaurant is open ............ 8 pm till midnight."
+       "speak": "2  The restaurant is open ............ 8 pm till midnight.",
+       "speakAnswer": "from"
       },
       {
        "prompt": "3  I'd like to book a table ............ two people, please.",
@@ -3452,7 +3641,8 @@
         "in"
        ],
        "whyUz": "'a table FOR two people' = ikki kishilik stol.\n'for' — kim uchun ekanini bildiradi.\nCoursebook 59-betda: 'Table for two?'",
-       "speak": "3  I'd like to book a table ............ two people, please."
+       "speak": "3  I'd like to book a table ............ two people, please.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "4  My favourite food is pasta ............ tomato sauce.",
@@ -3464,7 +3654,8 @@
         "from"
        ],
        "whyUz": "'pasta WITH tomato sauce' = pomidor sousli makaron.\nCoursebook 55-betdagi Laura's menyusida ham bor edi.",
-       "speak": "4  My favourite food is pasta ............ tomato sauce."
+       "speak": "4  My favourite food is pasta ............ tomato sauce.",
+       "speakAnswer": "with"
       },
       {
        "prompt": "5  Is there any milk ............ the fridge?",
@@ -3476,7 +3667,8 @@
         "from"
        ],
        "whyUz": "'IN the fridge' = muzlatgich ichida.\nCoursebook 57-betda ham bor edi.",
-       "speak": "5  Is there any milk ............ the fridge?"
+       "speak": "5  Is there any milk ............ the fridge?",
+       "speakAnswer": "in"
       },
       {
        "prompt": "6  Shall I put the plates ............ the table?",
@@ -3488,7 +3680,8 @@
         "from"
        ],
        "whyUz": "'ON the table' = stol ustida.\n'Shall I ...?' = ...ayinmi? (taklif qilish).",
-       "speak": "6  Shall I put the plates ............ the table?"
+       "speak": "6  Shall I put the plates ............ the table?",
+       "speakAnswer": "on"
       },
       {
        "prompt": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?",
@@ -3500,7 +3693,8 @@
         "from"
        ],
        "whyUz": "'go TO + joy' — yo'nalish.\n'FOR dinner' = kechki ovqatga (maqsad).\n'go to a restaurant FOR dinner' — o'zgarmas qolip.",
-       "speak": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?"
+       "speak": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?",
+       "speakAnswer": "to"
       },
       {
        "prompt": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?",
@@ -3512,7 +3706,8 @@
         "in"
        ],
        "whyUz": "'go TO + joy' — yo'nalish.\n'FOR dinner' = kechki ovqatga (maqsad).\n'go to a restaurant FOR dinner' — o'zgarmas qolip.",
-       "speak": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?"
+       "speak": "7  Would you like to go ............ the new Chinese restaurant ............ dinner tonight?",
+       "speakAnswer": "for"
       },
       {
        "prompt": "8  Brazilians have dinner ............ about 10 o'clock ............ night.",
@@ -3524,7 +3719,8 @@
         "in"
        ],
        "whyUz": "'AT about 10 o'clock' — aniq soat oldida AT.\n'AT night' — ISTISNO ibora ('in the night' emas).\nCoursebook 58-betdagi Braziliya matnidan.",
-       "speak": "8  Brazilians have dinner ............ about 10 o'clock ............ night."
+       "speak": "8  Brazilians have dinner ............ about 10 o'clock ............ night.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "8  Brazilians have dinner ............ about 10 o'clock ............ night.",
@@ -3536,7 +3732,8 @@
         "in"
        ],
        "whyUz": "'AT about 10 o'clock' — aniq soat oldida AT.\n'AT night' — ISTISNO ibora ('in the night' emas).\nCoursebook 58-betdagi Braziliya matnidan.",
-       "speak": "8  Brazilians have dinner ............ about 10 o'clock ............ night."
+       "speak": "8  Brazilians have dinner ............ about 10 o'clock ............ night.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.",
@@ -3548,7 +3745,8 @@
         "from"
        ],
        "whyUz": "'IN the Philippines' — mamlakat oldida IN.\n'ON your plate' — tarelka yuzasida ON.\n'AT the end of a meal' — 'at the end of' o'zgarmas ibora.\nCoursebook 58-betdagi Filippin matnidan.",
-       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal."
+       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.",
+       "speakAnswer": "In"
       },
       {
        "prompt": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.",
@@ -3560,7 +3758,8 @@
         "from"
        ],
        "whyUz": "'IN the Philippines' — mamlakat oldida IN.\n'ON your plate' — tarelka yuzasida ON.\n'AT the end of a meal' — 'at the end of' o'zgarmas ibora.\nCoursebook 58-betdagi Filippin matnidan.",
-       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal."
+       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.",
@@ -3572,7 +3771,8 @@
         "in"
        ],
        "whyUz": "'IN the Philippines' — mamlakat oldida IN.\n'ON your plate' — tarelka yuzasida ON.\n'AT the end of a meal' — 'at the end of' o'zgarmas ibora.\nCoursebook 58-betdagi Filippin matnidan.",
-       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal."
+       "speak": "9  ............ the Philippines, it's polite to leave a little food ............ your plate ............ the end of a meal.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "10  Finnish people sometimes eat ............ their friends ............ the weekend.",
@@ -3584,7 +3784,8 @@
         "from"
        ],
        "whyUz": "'eat WITH their friends' = do'stlari bilan ovqatlanmoq.\n'AT the weekend' — britancha (amerikacha 'on the weekend').\nCoursebook 58-betdagi Finlandiya matnidan.",
-       "speak": "10  Finnish people sometimes eat ............ their friends ............ the weekend."
+       "speak": "10  Finnish people sometimes eat ............ their friends ............ the weekend.",
+       "speakAnswer": "with"
       },
       {
        "prompt": "10  Finnish people sometimes eat ............ their friends ............ the weekend.",
@@ -3596,7 +3797,8 @@
         "in"
        ],
        "whyUz": "'eat WITH their friends' = do'stlari bilan ovqatlanmoq.\n'AT the weekend' — britancha (amerikacha 'on the weekend').\nCoursebook 58-betdagi Finlandiya matnidan.",
-       "speak": "10  Finnish people sometimes eat ............ their friends ............ the weekend."
+       "speak": "10  Finnish people sometimes eat ............ their friends ............ the weekend.",
+       "speakAnswer": "at"
       }
      ]
     },
@@ -3615,25 +3817,29 @@
        "prompt": "FRUIT (meva) — 4 ta so'z:",
        "answer": "banana, orange, pear, cherry",
        "promptUz": "Daraxt va butalarda o'sadigan shirin mahsulotlar",
-       "whyUz": "MEVALAR: banan, apelsin, nok, gilos.\nHammasi SANALADIGAN otlar.\nDIQQAT: 'fruit' umumiy so'z sifatida SANALMAYDI."
+       "whyUz": "MEVALAR: banan, apelsin, nok, gilos.\nHammasi SANALADIGAN otlar.\nDIQQAT: 'fruit' umumiy so'z sifatida SANALMAYDI.",
+       "speakAnswer": "banana, orange, pear, cherry"
       },
       {
        "prompt": "VEGETABLES (sabzavot) — 3 ta so'z:",
        "answer": "lettuce, onion, carrot",
        "promptUz": "Taom uchun pishiriladigan yoki salatga qo'shiladigan o'simliklar",
-       "whyUz": "SABZAVOTLAR: salat bargi, piyoz, sabzi.\nDIQQAT: 'lettuce' — SANALMAYDIGAN,\n'onion' va 'carrot' esa SANALADIGAN."
+       "whyUz": "SABZAVOTLAR: salat bargi, piyoz, sabzi.\nDIQQAT: 'lettuce' — SANALMAYDIGAN,\n'onion' va 'carrot' esa SANALADIGAN.",
+       "speakAnswer": "lettuce, onion, carrot"
       },
       {
        "prompt": "MEAT (go'sht) — 3 ta so'z:",
        "answer": "beef, ham, sausage",
        "promptUz": "Hayvon mahsulotidan tayyorlangan taomlar",
-       "whyUz": "GO'SHT: mol go'shti, vetchina, sosiska.\n'beef' va 'ham' — SANALMAYDIGAN;\n'sausage' — SANALADIGAN ('a sausage')."
+       "whyUz": "GO'SHT: mol go'shti, vetchina, sosiska.\n'beef' va 'ham' — SANALMAYDIGAN;\n'sausage' — SANALADIGAN ('a sausage').",
+       "speakAnswer": "beef, ham, sausage"
       },
       {
        "prompt": "DRINKS (ichimlik) — 4 ta so'z:",
        "answer": "coffee, milk, tea, Coke",
        "promptUz": "Ichiladigan suyuqliklar",
-       "whyUz": "ICHIMLIKLAR: qahva, sut, choy, kola.\nHammasi SANALMAYDIGAN (suyuqlik).\nSanash uchun: 'a cup of coffee', 'a glass of milk'."
+       "whyUz": "ICHIMLIKLAR: qahva, sut, choy, kola.\nHammasi SANALMAYDIGAN (suyuqlik).\nSanash uchun: 'a cup of coffee', 'a glass of milk'.",
+       "speakAnswer": "coffee, milk, tea, Coke"
       }
      ]
     }
@@ -3811,7 +4017,8 @@
         "loaves"
        ],
        "whyUz": "'2 bottles of wine' = ikki shisha vino.\nVino DOIM shishada sotiladi.",
-       "speak": "2  ............ of wine"
+       "speak": "2  ............ of wine",
+       "speakAnswer": "bottles"
       },
       {
        "prompt": "3  ............ of potatoes",
@@ -3823,7 +4030,8 @@
         "loaves"
        ],
        "whyUz": "'3 kilos of potatoes' = uch kilo kartoshka.\nKartoshka og'irlik bilan sotiladi.\nDIQQAT: 'potatoes' — KO'PLIKDA.",
-       "speak": "3  ............ of potatoes"
+       "speak": "3  ............ of potatoes",
+       "speakAnswer": "kilos"
       },
       {
        "prompt": "2  ............ of milk",
@@ -3835,7 +4043,8 @@
         "loaves"
        ],
        "whyUz": "'2 cartons of milk' = ikki paket sut.\n'a carton' — qog'ozdan yasalgan to'rtburchak idish.",
-       "speak": "2  ............ of milk"
+       "speak": "2  ............ of milk",
+       "speakAnswer": "cartons"
       },
       {
        "prompt": "12  ............ of salami",
@@ -3847,7 +4056,8 @@
         "kilos"
        ],
        "whyUz": "'12 slices of salami' = o'n ikki bo'lak salyami.\nSalyami YUPQA kesib beriladi.",
-       "speak": "12  ............ of salami"
+       "speak": "12  ............ of salami",
+       "speakAnswer": "slices"
       },
       {
        "prompt": "2  ............ of bread",
@@ -3859,7 +4069,8 @@
         "kilos"
        ],
        "whyUz": "'2 loaves of bread' = ikki (butun) non.\n'loaf' → 'LOAVES' (-f → -VES).\nDIQQAT: 'loaf' FAQAT non uchun ishlatiladi.",
-       "speak": "2  ............ of bread"
+       "speak": "2  ............ of bread",
+       "speakAnswer": "loaves"
       },
       {
        "prompt": "4  ............ of flour",
@@ -3871,7 +4082,8 @@
         "kilos"
        ],
        "whyUz": "'4 packets of flour' = to'rt paket un.\nQuruq kukun mahsulotlar paketda sotiladi.",
-       "speak": "4  ............ of flour"
+       "speak": "4  ............ of flour",
+       "speakAnswer": "packets"
       }
      ]
     },
@@ -3891,35 +4103,40 @@
        "answer": "some",
        "promptUz": "TASDIQ gap, sanalmaydigan ot",
        "whyUz": "TASDIQ gap ('I'd like') → SOME.\n'bread' — SANALMAYDIGAN → 'a bread' XATO.",
-       "speak": "H: I'd like 1) ............ bread, please."
+       "speak": "H: I'd like 1) ............ bread, please.",
+       "speakAnswer": "some"
       },
       {
        "prompt": "A: Certainly. How 2) ............ would you like?",
        "answer": "much",
        "promptUz": "'bread' sanaladimi?",
        "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.",
-       "speak": "A: Certainly. How 2) ............ would you like?"
+       "speak": "A: Certainly. How 2) ............ would you like?",
+       "speakAnswer": "much"
       },
       {
        "prompt": "H: Two loaves, please. 3) ............ there 4) ............ eggs?  [1-bo'shliq]",
        "answer": "Are",
        "promptUz": "'eggs' ko'plik + ma'lumot savoli",
        "whyUz": "'eggs' — KO'PLIK → 'ARE there ...?'\nMA'LUMOT savoli (taklif ham, iltimos ham emas) → ANY.",
-       "speak": "H: Two loaves, please. 3) ............ there 4) ............ eggs?  [1-bo'shliq]"
+       "speak": "H: Two loaves, please. 3) ............ there 4) ............ eggs?  [1-bo'shliq]",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "H: Two loaves, please. 3) ............ there 4) ............ eggs?  [2-bo'shliq]",
        "answer": "any",
        "promptUz": "'eggs' ko'plik + ma'lumot savoli",
        "whyUz": "'eggs' — KO'PLIK → 'ARE there ...?'\nMA'LUMOT savoli (taklif ham, iltimos ham emas) → ANY.",
-       "speak": "H: Two loaves, please. 3) ............ there 4) ............ eggs?  [2-bo'shliq]"
+       "speak": "H: Two loaves, please. 3) ............ there 4) ............ eggs?  [2-bo'shliq]",
+       "speakAnswer": "any"
       },
       {
        "prompt": "A: Of course. How 5) ............ do you want?",
        "answer": "many",
        "promptUz": "'eggs' sanaladimi?",
        "whyUz": "'eggs' — SANALADIGAN → HOW MANY.\n2-band bilan solishtiring: bread → much, eggs → many.",
-       "speak": "A: Of course. How 5) ............ do you want?"
+       "speak": "A: Of course. How 5) ............ do you want?",
+       "speakAnswer": "many"
       }
      ]
     },
@@ -3944,7 +4161,8 @@
        "prompt": "wine — 2 bottles",
        "answer": "Two bottles, please. Are there any eggs?",
        "promptUz": "Javob tuzing",
-       "whyUz": "'wine' — SANALMAYDIGAN → HOW MUCH.\n'eggs' — KO'PLIK → 'ARE there any ...?'"
+       "whyUz": "'wine' — SANALMAYDIGAN → HOW MUCH.\n'eggs' — KO'PLIK → 'ARE there any ...?'",
+       "speakAnswer": "Two bottles, please. Are there any eggs?"
       },
       {
        "prompt": "milk — 2 cartons",
@@ -3956,7 +4174,8 @@
        "prompt": "milk — 2 cartons",
        "answer": "Two cartons, please. Are there any sausages?",
        "promptUz": "Javob tuzing",
-       "whyUz": "'milk' — SANALMAYDIGAN → HOW MUCH.\n'sausages' — KO'PLIK → ARE."
+       "whyUz": "'milk' — SANALMAYDIGAN → HOW MUCH.\n'sausages' — KO'PLIK → ARE.",
+       "speakAnswer": "Two cartons, please. Are there any sausages?"
       },
       {
        "prompt": "salami — 12 slices",
@@ -3968,7 +4187,8 @@
        "prompt": "salami — 12 slices",
        "answer": "Twelve slices, please. Are there any bananas?",
        "promptUz": "Javob tuzing",
-       "whyUz": "'salami' — SANALMAYDIGAN → HOW MUCH.\n'slices' bilan sanaladi, lekin otning o'zi sanalmaydi."
+       "whyUz": "'salami' — SANALMAYDIGAN → HOW MUCH.\n'slices' bilan sanaladi, lekin otning o'zi sanalmaydi.",
+       "speakAnswer": "Twelve slices, please. Are there any bananas?"
       },
       {
        "prompt": "flour — 4 packets",
@@ -3980,7 +4200,8 @@
        "prompt": "flour — 4 packets",
        "answer": "Four packets, please. Is there any bread?",
        "promptUz": "Javob tuzing",
-       "whyUz": "'flour' — SANALMAYDIGAN → HOW MUCH.\n'bread' ham sanalmaydi → 'IS there any bread?'"
+       "whyUz": "'flour' — SANALMAYDIGAN → HOW MUCH.\n'bread' ham sanalmaydi → 'IS there any bread?'",
+       "speakAnswer": "Four packets, please. Is there any bread?"
       },
       {
        "prompt": "sausages — 12",
@@ -3992,7 +4213,8 @@
        "prompt": "sausages — 12",
        "answer": "Twelve, please. Is there any milk?",
        "promptUz": "Javob tuzing",
-       "whyUz": "'sausages' — SANALADIGAN → HOW MANY.\nMiqdor so'zi kerak emas — to'g'ridan-to'g'ri son."
+       "whyUz": "'sausages' — SANALADIGAN → HOW MANY.\nMiqdor so'zi kerak emas — to'g'ridan-to'g'ri son.",
+       "speakAnswer": "Twelve, please. Is there any milk?"
       },
       {
        "prompt": "oranges — 6",
@@ -4004,7 +4226,8 @@
        "prompt": "oranges — 6",
        "answer": "Six, please. Are there any lettuces?",
        "promptUz": "Javob tuzing",
-       "whyUz": "'oranges' — SANALADIGAN → HOW MANY.\n'lettuces' — bu yerda bosh (dona) sifatida sanaladi."
+       "whyUz": "'oranges' — SANALADIGAN → HOW MANY.\n'lettuces' — bu yerda bosh (dona) sifatida sanaladi.",
+       "speakAnswer": "Six, please. Are there any lettuces?"
       },
       {
        "prompt": "frozen pizzas — 2",
@@ -4016,7 +4239,8 @@
        "prompt": "frozen pizzas — 2",
        "answer": "Two, please. Is there any flour?",
        "promptUz": "Javob tuzing",
-       "whyUz": "'pizzas' — SANALADIGAN → HOW MANY.\n'frozen' = muzlatilgan."
+       "whyUz": "'pizzas' — SANALADIGAN → HOW MANY.\n'frozen' = muzlatilgan.",
+       "speakAnswer": "Two, please. Is there any flour?"
       }
      ]
     }
@@ -4046,77 +4270,88 @@
        "answer": "How many",
        "promptUz": "'apples' — ko'plik",
        "whyUz": "'apples' — SANALADIGAN, KO'PLIKDA → HOW MANY.",
-       "speak": "1  A: ............ apples do you need, sir?"
+       "speak": "1  A: ............ apples do you need, sir?",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "1  B: Just ............ , please.",
        "answer": "a few",
        "promptUz": "Sanaladigan uchun 'bir nechta'",
        "whyUz": "SANALADIGAN → A FEW.",
-       "speak": "1  B: Just ............ , please."
+       "speak": "1  B: Just ............ , please.",
+       "speakAnswer": "a few"
       },
       {
        "prompt": "2  A: Would you like ............ milk in your coffee, madam?",
        "answer": "some",
        "promptUz": "Bu savol TAKLIF ifodalaydi",
        "whyUz": "'Would you like ...?' — TAKLIF (offer) → SOME.",
-       "speak": "2  A: Would you like ............ milk in your coffee, madam?"
+       "speak": "2  A: Would you like ............ milk in your coffee, madam?",
+       "speakAnswer": "some"
       },
       {
        "prompt": "2  B: Yes, but only ............ , please.",
        "answer": "a little",
        "promptUz": "'milk' sanaladimi?",
        "whyUz": "'milk' — SANALMAYDIGAN → A LITTLE.\n'only a little' = atigi bir oz.",
-       "speak": "2  B: Yes, but only ............ , please."
+       "speak": "2  B: Yes, but only ............ , please.",
+       "speakAnswer": "a little"
       },
       {
        "prompt": "3  A: ............ are the chicken sandwiches?",
        "answer": "How much",
        "promptUz": "NARX so'ralmoqda",
        "whyUz": "NARX so'rash uchun DOIM 'HOW MUCH ...?'\nOt ko'plikda bo'lgani uchun fe'l ARE:\n  'How much ARE the sandwiches?'\nDIQQAT: 'How many are ...?' — narx uchun ISHLATILMAYDI.",
-       "speak": "3  A: ............ are the chicken sandwiches?"
+       "speak": "3  A: ............ are the chicken sandwiches?",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "3  B: I'm sorry. We haven't got ............ chicken sandwiches left.",
        "answer": "any",
        "promptUz": "Bu INKOR gap",
        "whyUz": "INKOR gap ('haven't got') → ANY.\n'left' = qolgan.",
-       "speak": "3  B: I'm sorry. We haven't got ............ chicken sandwiches left."
+       "speak": "3  B: I'm sorry. We haven't got ............ chicken sandwiches left.",
+       "speakAnswer": "any"
       },
       {
        "prompt": "4  A: Mum, can I have ............ orange juice?",
        "answer": "some",
        "promptUz": "Bu savol ILTIMOS ifodalaydi",
        "whyUz": "'Can I have ...?' — ILTIMOS (request) → SOME.",
-       "speak": "4  A: Mum, can I have ............ orange juice?"
+       "speak": "4  A: Mum, can I have ............ orange juice?",
+       "speakAnswer": "some"
       },
       {
        "prompt": "4  B: Sorry. There isn't ............ left.",
        "answer": "any",
        "promptUz": "Bu INKOR gap",
        "whyUz": "INKOR gap ('There isn't') → ANY.\n'There isn't any left' = hech narsa qolmadi.",
-       "speak": "4  B: Sorry. There isn't ............ left."
+       "speak": "4  B: Sorry. There isn't ............ left.",
+       "speakAnswer": "any"
       },
       {
        "prompt": "5  A: John, have we got ............ bananas?",
        "answer": "any",
        "promptUz": "Bu MA'LUMOT so'rash savoli",
        "whyUz": "'Have we got ...?' — MA'LUMOT savoli → ANY.\n2 va 4-band bilan solishtiring: ular taklif/iltimos edi → SOME.",
-       "speak": "5  A: John, have we got ............ bananas?"
+       "speak": "5  A: John, have we got ............ bananas?",
+       "speakAnswer": "any"
       },
       {
        "prompt": "5  B: Yes, but there are only ............ .",
        "answer": "a few",
        "promptUz": "'bananas' sanaladimi?",
        "whyUz": "'bananas' — SANALADIGAN → A FEW.\n'only a few' = atigi bir nechta.",
-       "speak": "5  B: Yes, but there are only ............ ."
+       "speak": "5  B: Yes, but there are only ............ .",
+       "speakAnswer": "a few"
       },
       {
        "prompt": "5  B: ............ do we need?",
        "answer": "How many",
        "promptUz": "'bananas' haqida savol",
        "whyUz": "'bananas' — SANALADIGAN → HOW MANY.\nJavob: 'About five' — son bilan, demak sanaladigan.",
-       "speak": "5  B: ............ do we need?"
+       "speak": "5  B: ............ do we need?",
+       "speakAnswer": "How many"
       }
      ]
     },
@@ -4136,63 +4371,72 @@
        "answer": "some",
        "promptUz": "'bread' sanaladimi?",
        "whyUz": "'bread' — SANALMAYDIGAN → 'an' ISHLATILMAYDI.\nTAKLIF savoli → SOME bread.",
-       "speak": "2  Would you like an bread? → ............"
+       "speak": "2  Would you like an bread? → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "3  How many does this cost? → ............",
        "answer": "How much",
        "promptUz": "NARX so'ralmoqda",
        "whyUz": "NARX uchun DOIM 'How MUCH does it cost?'\n'How many' — son uchun.",
-       "speak": "3  How many does this cost? → ............"
+       "speak": "3  How many does this cost? → ............",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "4  We haven't got much tomatoes. → ............",
        "answer": "many",
        "promptUz": "'tomatoes' sanaladimi?",
        "whyUz": "'tomatoes' — SANALADIGAN, KO'PLIKDA → MANY.\n'much' faqat sanalmaydigan otlar bilan.",
-       "speak": "4  We haven't got much tomatoes. → ............"
+       "speak": "4  We haven't got much tomatoes. → ............",
+       "speakAnswer": "many"
       },
       {
        "prompt": "5  I'd like a milk in my tea, please. → ............",
        "answer": "some",
        "promptUz": "'milk' sanaladimi?",
        "whyUz": "'milk' — SANALMAYDIGAN → 'a' ISHLATILMAYDI.\nTASDIQ gap → SOME milk.\n(Yoki: 'a little milk' — 8-mashqning 2-bandi kabi.)",
-       "speak": "5  I'd like a milk in my tea, please. → ............"
+       "speak": "5  I'd like a milk in my tea, please. → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "6  Could I have some orange, please? → ............",
        "answer": "an",
        "promptUz": "Bitta meva — sanaladigan birlik",
        "whyUz": "'an orange' — SANALADIGAN BIRLIK (bitta apelsin).\nUnli tovush → AN.\nDIQQAT: 'some orange JUICE' bo'lsa to'g'ri bo'lardi —\nlekin bu yerda faqat 'orange' bor.",
-       "speak": "6  Could I have some orange, please? → ............"
+       "speak": "6  Could I have some orange, please? → ............",
+       "speakAnswer": "an"
       },
       {
        "prompt": "7  How much cherries do you need? → ............",
        "answer": "How many",
        "promptUz": "'cherries' sanaladimi?",
        "whyUz": "'cherries' — SANALADIGAN, KO'PLIKDA → HOW MANY.",
-       "speak": "7  How much cherries do you need? → ............"
+       "speak": "7  How much cherries do you need? → ............",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "8  I'd like many fish for lunch. → ............",
        "answer": "some",
        "promptUz": "TASDIQ gapda 'many' o'rniga nima?",
        "whyUz": "TASDIQ gapda 'many' odatda ISHLATILMAYDI → SOME.\n'fish' — ovqat sifatida SANALMAYDIGAN.\nTo'g'ri gap: I'd like SOME fish for lunch.",
-       "speak": "8  I'd like many fish for lunch. → ............"
+       "speak": "8  I'd like many fish for lunch. → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "9  How many sugar have we got? → ............",
        "answer": "How much",
        "promptUz": "'sugar' sanaladimi?",
        "whyUz": "'sugar' — SANALMAYDIGAN → HOW MUCH.",
-       "speak": "9  How many sugar have we got? → ............"
+       "speak": "9  How many sugar have we got? → ............",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "10  I'd like some apple, please. → ............",
        "answer": "an",
        "promptUz": "Bitta meva — sanaladigan birlik",
        "whyUz": "'an apple' — SANALADIGAN BIRLIK.\nUnli tovush → AN.\n6-band bilan bir xil xato turi.",
-       "speak": "10  I'd like some apple, please. → ............"
+       "speak": "10  I'd like some apple, please. → ............",
+       "speakAnswer": "an"
       }
      ]
     },
@@ -4215,7 +4459,8 @@
         "b  Is there anything to drink?",
         "a  Is there something to drink?"
        ],
-       "whyUz": "SAVOLDA 'anything' ishlatiladi ('something' emas).\nCoursebook 56-betda ham shu ibora bor edi.\n'something' — TASDIQ gapda: 'There is something to drink.'"
+       "whyUz": "SAVOLDA 'anything' ishlatiladi ('something' emas).\nCoursebook 56-betda ham shu ibora bor edi.\n'something' — TASDIQ gapda: 'There is something to drink.'",
+       "speakAnswer": "b  Is there anything to drink?"
       },
       {
        "prompt": "3  Qaysi biri to'g'ri?",
@@ -4225,7 +4470,8 @@
         "a  No thanks. I don't like fish.",
         "b  I wouldn't like fish."
        ],
-       "whyUz": "Rad etishda SABAB 'I don't like ...' bilan aytiladi.\n'I wouldn't like fish' — tabiiy ingliz tilida ishlatilmaydi.\nCoursebook 56-betdagi dialoglarda ham 'I don't like ...' bor edi."
+       "whyUz": "Rad etishda SABAB 'I don't like ...' bilan aytiladi.\n'I wouldn't like fish' — tabiiy ingliz tilida ishlatilmaydi.\nCoursebook 56-betdagi dialoglarda ham 'I don't like ...' bor edi.",
+       "speakAnswer": "a  No thanks. I don't like fish."
       },
       {
        "prompt": "4  Qaysi biri to'g'ri?",
@@ -4235,7 +4481,8 @@
         "b  I like pizza.",
         "a  I'd like pizzas."
        ],
-       "whyUz": "'I like pizza' = pitsani yoqtiraman (umuman) — TO'G'RI.\n'I'd like pizzas' — buyurtmada 'some pizzas' yoki 'a pizza' bo'lishi kerak,\nyalang'och ko'plik ishlatilmaydi."
+       "whyUz": "'I like pizza' = pitsani yoqtiraman (umuman) — TO'G'RI.\n'I'd like pizzas' — buyurtmada 'some pizzas' yoki 'a pizza' bo'lishi kerak,\nyalang'och ko'plik ishlatilmaydi.",
+       "speakAnswer": "b  I like pizza."
       },
       {
        "prompt": "5  Qaysi biri to'g'ri?",
@@ -4245,7 +4492,8 @@
         "b  How much is that?",
         "a  How many is that?"
        ],
-       "whyUz": "NARX uchun DOIM 'How much is that?'\nCoursebook 56-betdagi do'kon dialogida ham bor edi."
+       "whyUz": "NARX uchun DOIM 'How much is that?'\nCoursebook 56-betdagi do'kon dialogida ham bor edi.",
+       "speakAnswer": "b  How much is that?"
       },
       {
        "prompt": "6  Qaysi biri to'g'ri?",
@@ -4255,7 +4503,8 @@
         "b  How much does it cost?",
         "a  How much it costs?"
        ],
-       "whyUz": "Present Simple savolida DOES yordamchi fe'li SHART.\n'does' bor bo'lsa asosiy fe'lga -S QO'ShILMAYDI: 'does it COST'."
+       "whyUz": "Present Simple savolida DOES yordamchi fe'li SHART.\n'does' bor bo'lsa asosiy fe'lga -S QO'ShILMAYDI: 'does it COST'.",
+       "speakAnswer": "b  How much does it cost?"
       },
       {
        "prompt": "7  Qaysi biri to'g'ri?",
@@ -4265,7 +4514,8 @@
         "a  There isn't any Coke in the fridge.",
         "b  There isn't some Coke in the fridge."
        ],
-       "whyUz": "INKOR gapda ANY ishlatiladi.\n'There isn't SOME' XATO."
+       "whyUz": "INKOR gapda ANY ishlatiladi.\n'There isn't SOME' XATO.",
+       "speakAnswer": "a  There isn't any Coke in the fridge."
       }
      ]
     }
@@ -4321,7 +4571,8 @@
         "/s/",
         "/z/"
        ],
-       "whyUz": "glass /ɡlɑːs/ — oxirgi tovush /s/ SIZILDOQ → /ɪz/.\nO'qilishi: /ˈɡlɑːsɪz/ — QO'ShIMCHA BO'G'IN qo'shildi."
+       "whyUz": "glass /ɡlɑːs/ — oxirgi tovush /s/ SIZILDOQ → /ɪz/.\nO'qilishi: /ˈɡlɑːsɪz/ — QO'ShIMCHA BO'G'IN qo'shildi.",
+       "speakAnswer": "/ɪz/"
       },
       {
        "prompt": "sandwiches",
@@ -4332,7 +4583,8 @@
         "/s/",
         "/z/"
        ],
-       "whyUz": "sandwich — oxirgi tovush /tʃ/ SIZILDOQ → /ɪz/.\nO'qilishi: /ˈsænwɪdʒɪz/ — qo'shimcha bo'g'in.\nDIQQAT: 'sandwich' da 'd' ko'pincha O'QILMAYDI."
+       "whyUz": "sandwich — oxirgi tovush /tʃ/ SIZILDOQ → /ɪz/.\nO'qilishi: /ˈsænwɪdʒɪz/ — qo'shimcha bo'g'in.\nDIQQAT: 'sandwich' da 'd' ko'pincha O'QILMAYDI.",
+       "speakAnswer": "/ɪz/"
       },
       {
        "prompt": "cherries",
@@ -4388,7 +4640,8 @@
         "Hawaiian",
         "Chinese"
        ],
-       "whyUz": "TAOMLARDAN ANIQ TOPILADI (audio kerak emas):\n  'HAWAIIAN burgers with pineapple'\n  'COCONUT ice-cream'\n  'fried BANANAS in honey'\nAnanas, kokos va banan — tropik mahsulotlar → GAVAYI oshxonasi.\nRestoran nomi ham shunga ishora qiladi: 'The Blue Lagoon' (Ko'k laguna)."
+       "whyUz": "TAOMLARDAN ANIQ TOPILADI (audio kerak emas):\n  'HAWAIIAN burgers with pineapple'\n  'COCONUT ice-cream'\n  'fried BANANAS in honey'\nAnanas, kokos va banan — tropik mahsulotlar → GAVAYI oshxonasi.\nRestoran nomi ham shunga ishora qiladi: 'The Blue Lagoon' (Ko'k laguna).",
+       "speakAnswer": "Hawaiian"
       },
       {
        "prompt": "Main Course: fresh fish / meat dishes",
@@ -4398,7 +4651,8 @@
         "fish",
         "meat"
        ],
-       "whyUz": "AUDIO talab qiladi, lekin mantiq FISH tomonda:\nGavayi — orollar, dengiz mahsulotlari asosiy taom.\n'fresh fish dishes' = yangi baliq taomlari."
+       "whyUz": "AUDIO talab qiladi, lekin mantiq FISH tomonda:\nGavayi — orollar, dengiz mahsulotlari asosiy taom.\n'fresh fish dishes' = yangi baliq taomlari.",
+       "speakAnswer": "fish"
       },
       {
        "prompt": "Desserts: coconut ice-cream / milk",
@@ -4408,7 +4662,8 @@
         "ice-cream",
         "milk"
        ],
-       "whyUz": "AUDIO talab qiladi, lekin mantiq ICE-CREAM tomonda:\nqator sarlavhasi 'DESSERTS' — 'coconut milk' ichimlik/masalliq,\n'coconut ice-cream' esa SHIRINLIK."
+       "whyUz": "AUDIO talab qiladi, lekin mantiq ICE-CREAM tomonda:\nqator sarlavhasi 'DESSERTS' — 'coconut milk' ichimlik/masalliq,\n'coconut ice-cream' esa SHIRINLIK.",
+       "speakAnswer": "ice-cream"
       },
       {
        "prompt": "Cost: £50 / £30 for two people",
@@ -4428,7 +4683,8 @@
         "12 am",
         "10 pm"
        ],
-       "whyUz": "AUDIO talab qiladi.\n'12 am' = yarim tun — restoranlar uchun odatiy yopilish vaqti.\n'2 pm – 12 am' = kunduzi soat 2 dan yarim tungacha."
+       "whyUz": "AUDIO talab qiladi.\n'12 am' = yarim tun — restoranlar uchun odatiy yopilish vaqti.\n'2 pm – 12 am' = kunduzi soat 2 dan yarim tungacha.",
+       "speakAnswer": "12 am"
       },
       {
        "prompt": "Location: Long / Short Street",
@@ -4438,7 +4694,8 @@
         "Long Street",
         "Short Street"
        ],
-       "whyUz": "AUDIO talab qiladi — bu qatorni matndan aniqlab bo'lmaydi.\nIkkala variant ham grammatik jihatdan to'g'ri.\nTinglaganda ko'cha nomini diqqat bilan eshiting."
+       "whyUz": "AUDIO talab qiladi — bu qatorni matndan aniqlab bo'lmaydi.\nIkkala variant ham grammatik jihatdan to'g'ri.\nTinglaganda ko'cha nomini diqqat bilan eshiting.",
+       "speakAnswer": "Long Street"
       }
      ]
     },
@@ -4728,14 +4985,16 @@
        "answer": "please",
        "promptUz": "Taklifni qabul qilish so'zi",
        "whyUz": "'Yes, PLEASE.' — taklifni QABUL QILISH.\n'Yes, thanks' — bu kontekstda g'alati eshitiladi.",
-       "speak": "Qiz: Yes, ............ . I'd love some."
+       "speak": "Qiz: Yes, ............ . I'd love some.",
+       "speakAnswer": "please"
       },
       {
        "prompt": "Qiz: No, ............ . I don't like cakes.",
        "answer": "thanks",
        "promptUz": "Taklifni muloyim rad etish so'zi",
        "whyUz": "'No, THANKS.' — taklifni muloyim RAD ETISH.\n'No, thank you' ham to'g'ri (rasmiyroq).\nDIQQAT: 'No, please' XATO.",
-       "speak": "Qiz: No, ............ . I don't like cakes."
+       "speak": "Qiz: No, ............ . I don't like cakes.",
+       "speakAnswer": "thanks"
       }
      ]
     },
@@ -4758,7 +5017,8 @@
         "Yes, please. I'd love some.",
         "No, thanks. I don't like cakes."
        ],
-       "whyUz": "QABUL QILISH: 'Yes, PLEASE.'\n'I'd love some' = juda xohlardim (kuchli qabul).\n'I'd' = I would."
+       "whyUz": "QABUL QILISH: 'Yes, PLEASE.'\n'I'd love some' = juda xohlardim (kuchli qabul).\n'I'd' = I would.",
+       "speakAnswer": "Yes, please. I'd love some."
       },
       {
        "prompt": "Taklifni RAD ETISH uchun nima deydi?",
@@ -4768,7 +5028,8 @@
         "No, thanks. I don't like cakes.",
         "Yes, please. I'd love some."
        ],
-       "whyUz": "RAD ETISH: 'No, THANKS.'\nSo'ng SABAB aytiladi — bu muloyimlik belgisi."
+       "whyUz": "RAD ETISH: 'No, THANKS.'\nSo'ng SABAB aytiladi — bu muloyimlik belgisi.",
+       "speakAnswer": "No, thanks. I don't like cakes."
       }
      ]
     },
@@ -5053,63 +5314,72 @@
        "answer": "Would",
        "promptUz": "Muloyim taklif shakli",
        "whyUz": "'WOULD you like to ...?' = ...moqchimisiz? (muloyim taklif).\n'Do you like' XATO — bu 'yoqtirasizmi?' degan boshqa savol.",
-       "speak": "W: 1) ............ you like to look at the menu?"
+       "speak": "W: 1) ............ you like to look at the menu?",
+       "speakAnswer": "Would"
       },
       {
        "prompt": "M: Yes. To start with I 2) ............ the tomato soup.",
        "answer": "'d like",
        "promptUz": "'would like' ning qisqargan shakli",
        "whyUz": "'I'D LIKE' = I WOULD like = men ... olsam deb edim.\n'To start with' = birinchi taom sifatida (starter).",
-       "speak": "M: Yes. To start with I 2) ............ the tomato soup."
+       "speak": "M: Yes. To start with I 2) ............ the tomato soup.",
+       "speakAnswer": "'d like"
       },
       {
        "prompt": "L: Oh. 3) ............ I have a pepper steak, then?",
        "answer": "Can",
        "promptUz": "Iltimos (request) so'rash shakli",
        "whyUz": "'CAN I have ...?' — ILTIMOS (request) savoli.\n'COULD I have ...?' ham to'g'ri va MULOYIMROQ.\n'then' bu yerda = unda, u holda.",
-       "speak": "L: Oh. 3) ............ I have a pepper steak, then?"
+       "speak": "L: Oh. 3) ............ I have a pepper steak, then?",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "W: Of course. 4) ............ you like something to drink?",
        "answer": "Would",
        "promptUz": "Muloyim taklif shakli",
        "whyUz": "'WOULD you like ...?' — taklif (offer).\n'something to drink' = ichgani biror narsa.",
-       "speak": "W: Of course. 4) ............ you like something to drink?"
+       "speak": "W: Of course. 4) ............ you like something to drink?",
+       "speakAnswer": "Would"
       },
       {
        "prompt": "L: Just 5) ............ water, please.",
        "answer": "some",
        "promptUz": "Sanalmaydigan ot bilan, ILTIMOS savolida",
        "whyUz": "'water' — SANALMAYDIGAN → 'a water' XATO.\nILTIMOSDA SOME ishlatiladi (57-betdagi qoida).\n'Just' = shunchaki, faqat.",
-       "speak": "L: Just 5) ............ water, please."
+       "speak": "L: Just 5) ............ water, please.",
+       "speakAnswer": "some"
       },
       {
        "prompt": "M: Yes. I 6) ............ the apple pie.",
        "answer": "'d like",
        "promptUz": "2-band bilan bir xil shakl",
        "whyUz": "'I'D LIKE the apple pie.' — buyurtma berish qolipi.\n'the' — menyudagi ANIQ taom.",
-       "speak": "M: Yes. I 6) ............ the apple pie."
+       "speak": "M: Yes. I 6) ............ the apple pie.",
+       "speakAnswer": "'d like"
       },
       {
        "prompt": "L: Have you got 7) ............ strawberries?",
        "answer": "any",
        "promptUz": "Ma'lumot so'rash savoli — qaysi so'z?",
        "whyUz": "MA'LUMOT so'rash savolida ANY (57-betdagi qoida).\nBu taklif ham, iltimos ham emas — bor-yo'qligi so'ralyapti.",
-       "speak": "L: Have you got 7) ............ strawberries?"
+       "speak": "L: Have you got 7) ............ strawberries?",
+       "speakAnswer": "any"
       },
       {
        "prompt": "M: Delicious. 8) ............ about the steak?",
        "answer": "What",
        "promptUz": "Mavzuni davom ettirish iborasi",
        "whyUz": "'WHAT about ...?' = ...-chi? (savolni boshqasiga o'tkazish).\n'How about ...?' ham to'g'ri, lekin bu yerda 'What about'\nchunki oldingi savol 'How is your fish?' bo'lgan.",
-       "speak": "M: Delicious. 8) ............ about the steak?"
+       "speak": "M: Delicious. 8) ............ about the steak?",
+       "speakAnswer": "What"
       },
       {
        "prompt": "M: 9) ............ we have the bill, please?",
        "answer": "Can",
        "promptUz": "Iltimos so'rash shakli (3-band kabi)",
        "whyUz": "'CAN we have the bill, please?' — hisob so'rash qolipi.\n'COULD we ...?' va 'MAY we ...?' ham to'g'ri (muloyimroq).\n'the bill' = hisob (britancha); amerikacha 'the check'.",
-       "speak": "M: 9) ............ we have the bill, please?"
+       "speak": "M: 9) ............ we have the bill, please?",
+       "speakAnswer": "Can"
       }
      ]
     },
@@ -5196,85 +5466,99 @@
        "prompt": "how much",
        "answer": "How much milk do you need?",
        "promptUz": "'qancha (sanalmaydigan)' iborasi bilan savol tuzing",
-       "speak": "how much"
+       "speak": "how much",
+       "speakAnswer": "How much milk do you need?"
       },
       {
        "prompt": "delicious",
        "answer": "Laura's home-made bread is delicious.",
        "promptUz": "'juda mazali' so'zi bilan gap tuzing",
-       "speak": "delicious"
+       "speak": "delicious",
+       "speakAnswer": "Laura's home-made bread is delicious."
       },
       {
        "prompt": "dessert",
        "answer": "For dessert, I'd like a slice of apple pie.",
        "promptUz": "'shirinlik' so'zi bilan gap tuzing",
-       "speak": "dessert"
+       "speak": "dessert",
+       "speakAnswer": "For dessert, I'd like a slice of apple pie."
       },
       {
        "prompt": "how many",
        "answer": "How many eggs does she need?",
        "promptUz": "'nechta (sanaladigan)' iborasi bilan savol tuzing",
-       "speak": "how many"
+       "speak": "how many",
+       "speakAnswer": "How many eggs does she need?"
       },
       {
        "prompt": "helpful waiters",
        "answer": "The service is excellent, with very helpful waiters.",
        "promptUz": "'yordamchan ofitsiantlar' iborasi bilan gap tuzing",
-       "speak": "helpful waiters"
+       "speak": "helpful waiters",
+       "speakAnswer": "The service is excellent, with very helpful waiters."
       },
       {
        "prompt": "home-made",
        "answer": "Don't miss the chance to try our home-made bread.",
        "promptUz": "'uyda tayyorlangan' so'zi bilan gap tuzing",
-       "speak": "home-made"
+       "speak": "home-made",
+       "speakAnswer": "Don't miss the chance to try our home-made bread."
       },
       {
        "prompt": "have dinner",
        "answer": "Brazilians have dinner very late, at about ten o'clock at night.",
        "promptUz": "'kechki ovqat qilmoq' iborasi bilan gap tuzing",
-       "speak": "have dinner"
+       "speak": "have dinner",
+       "speakAnswer": "Brazilians have dinner very late, at about ten o'clock at night."
       },
       {
        "prompt": "lunch",
        "answer": "The restaurant is open for lunch and dinner every day.",
        "promptUz": "'tushlik' so'zi bilan gap tuzing",
-       "speak": "lunch"
+       "speak": "lunch",
+       "speakAnswer": "The restaurant is open for lunch and dinner every day."
       },
       {
        "prompt": "cut food",
        "answer": "We cut food with a knife.",
        "promptUz": "'ovqatni kesmoq' iborasi bilan gap tuzing",
-       "speak": "cut food"
+       "speak": "cut food",
+       "speakAnswer": "We cut food with a knife."
       },
       {
        "prompt": "choose from",
        "answer": "There are a lot of tasty dishes to choose from.",
        "promptUz": "'tanlash uchun' iborasi bilan gap tuzing",
-       "speak": "choose from"
+       "speak": "choose from",
+       "speakAnswer": "There are a lot of tasty dishes to choose from."
       },
       {
        "prompt": "I'd like",
        "answer": "I'd like the grilled fish, please.",
        "promptUz": "'men ... olsam deb edim' iborasi bilan gap tuzing",
-       "speak": "I'd like"
+       "speak": "I'd like",
+       "speakAnswer": "I'd like the grilled fish, please."
       },
       {
        "prompt": "any",
        "answer": "Have you got any strawberries?",
        "promptUz": "'biror' so'zi bilan savol tuzing",
-       "speak": "any"
+       "speak": "any",
+       "speakAnswer": "Have you got any strawberries?"
       },
       {
        "prompt": "something else",
        "answer": "Would you like something else instead?",
        "promptUz": "'boshqa biror narsa' iborasi bilan savol tuzing",
-       "speak": "something else"
+       "speak": "something else",
+       "speakAnswer": "Would you like something else instead?"
       },
       {
        "prompt": "tough steak",
        "answer": "The steak is a bit tough, but the sauce is nice.",
        "promptUz": "'qattiq bifshteks' iborasi bilan gap tuzing",
-       "speak": "tough steak"
+       "speak": "tough steak",
+       "speakAnswer": "The steak is a bit tough, but the sauce is nice."
       }
      ]
     }
@@ -5309,7 +5593,8 @@
         "main courses"
        ],
        "whyUz": "'a starter' = birinchi taom (asosiy taomdan OLDIN).\nSho'rva va salat — tipik starterlar.\nCoursebook 59-betda ham bor edi: 'To start with I'd like the tomato soup.'",
-       "speak": "1-bo'lim: Tomato soup £2.50, Onion soup £2.50, Garden salad £3.00"
+       "speak": "1-bo'lim: Tomato soup £2.50, Onion soup £2.50, Garden salad £3.00",
+       "speakAnswer": "Starters"
       },
       {
        "prompt": "2-bo'lim: Grilled fish with rice £4.99, Pepper steak with potatoes £7.00, Roast chicken with carrots £5.75",
@@ -5321,7 +5606,8 @@
         "desserts"
        ],
        "whyUz": "'a main course' = asosiy (ikkinchi) taom.\nGo'sht va baliq taomlari — eng qimmat bo'limi.\nCoursebook 59-betda: 'And for the main course?'",
-       "speak": "2-bo'lim: Grilled fish with rice £4.99, Pepper steak with potatoes £7.00, Roast chicken with carrots £5.75"
+       "speak": "2-bo'lim: Grilled fish with rice £4.99, Pepper steak with potatoes £7.00, Roast chicken with carrots £5.75",
+       "speakAnswer": "Main courses"
       },
       {
        "prompt": "3-bo'lim: Ice-cream £2.75, Apple pie £2.75, Strawberries and cream £3.00",
@@ -5333,7 +5619,8 @@
         "main courses"
        ],
        "whyUz": "'a dessert' /dɪˈzɜːt/ = shirinlik.\nMuzqaymoq, pirog, qulupnay — hammasi shirinlik.",
-       "speak": "3-bo'lim: Ice-cream £2.75, Apple pie £2.75, Strawberries and cream £3.00"
+       "speak": "3-bo'lim: Ice-cream £2.75, Apple pie £2.75, Strawberries and cream £3.00",
+       "speakAnswer": "Desserts"
       },
       {
        "prompt": "4-bo'lim: Wine £2.00, Beer £2.00, Mineral water £1.50, Coffee £1.50",
@@ -5345,7 +5632,8 @@
         "main courses"
        ],
        "whyUz": "'drinks' = ichimliklar.\nHammasi SANALMAYDIGAN otlar, lekin menyuda porsiya sifatida sotiladi.",
-       "speak": "4-bo'lim: Wine £2.00, Beer £2.00, Mineral water £1.50, Coffee £1.50"
+       "speak": "4-bo'lim: Wine £2.00, Beer £2.00, Mineral water £1.50, Coffee £1.50",
+       "speakAnswer": "Drinks"
       }
      ]
     },
@@ -5364,27 +5652,31 @@
        "prompt": "W: 1) ............ ?",
        "answer": "What would you like to start",
        "promptUz": "Javob: 'I'd like a garden salad' — bu qaysi bo'lim?",
-       "whyUz": "Javob SALAT — bu STARTER (birinchi taom).\n'What would you like to start?' = birinchi taomga nima olasiz?"
+       "whyUz": "Javob SALAT — bu STARTER (birinchi taom).\n'What would you like to start?' = birinchi taomga nima olasiz?",
+       "speakAnswer": "What would you like to start"
       },
       {
        "prompt": "W: Okay. 2) ............ ?",
        "answer": "And for the main course",
        "promptUz": "Javob: qovurilgan tovuq — bu qaysi bo'lim?",
        "whyUz": "Javob QOVURILGAN TOVUQ — bu MAIN COURSE.\n'And for the main course?' — Coursebook 59-betda ham bor edi.",
-       "speak": "W: Okay. 2) ............ ?"
+       "speak": "W: Okay. 2) ............ ?",
+       "speakAnswer": "And for the main course"
       },
       {
        "prompt": "W: Excellent choice. 3) ............ ?",
        "answer": "Would you like some dessert",
        "promptUz": "Javob: olmali pirog — bu qaysi bo'lim?",
        "whyUz": "Javob OLMALI PIROG — bu DESSERT.\nTAKLIF savoli → 'Would you like SOME dessert?'",
-       "speak": "W: Excellent choice. 3) ............ ?"
+       "speak": "W: Excellent choice. 3) ............ ?",
+       "speakAnswer": "Would you like some dessert"
       },
       {
        "prompt": "W: 4) ............ ?",
        "answer": "What would you like to drink",
        "promptUz": "Javob: bir piyola qahva",
-       "whyUz": "Javob QAHVA — bu DRINK.\n'What would you like to drink?' = nima ichasiz?"
+       "whyUz": "Javob QAHVA — bu DRINK.\n'What would you like to drink?' = nima ichasiz?",
+       "speakAnswer": "What would you like to drink"
       }
      ]
     },
@@ -5445,32 +5737,38 @@
       {
        "left": "1-o'rin",
        "right": "A: Good evening, sir.",
-       "note": "Xayrli kech, janob."
+       "note": "Xayrli kech, janob.",
+       "speakAnswer": "A: Good evening, sir."
       },
       {
        "left": "2-o'rin",
        "right": "B: Good evening. Have you got a table for four?",
-       "note": "Xayrli kech. To'rt kishilik stolingiz bormi?"
+       "note": "Xayrli kech. To'rt kishilik stolingiz bormi?",
+       "speakAnswer": "B: Good evening. Have you got a table for four?"
       },
       {
        "left": "3-o'rin",
        "right": "A: Yes, sir. Over here, near the fireplace.",
-       "note": "Ha, janob. Mana bu yerda, kamin yonida."
+       "note": "Ha, janob. Mana bu yerda, kamin yonida.",
+       "speakAnswer": "A: Yes, sir. Over here, near the fireplace."
       },
       {
        "left": "4-o'rin",
        "right": "B: Thank you.",
-       "note": "Rahmat."
+       "note": "Rahmat.",
+       "speakAnswer": "B: Thank you."
       },
       {
        "left": "5-o'rin",
        "right": "A: Would you like to see the menu?",
-       "note": "Menyuni ko'rmoqchimisiz?"
+       "note": "Menyuni ko'rmoqchimisiz?",
+       "speakAnswer": "A: Would you like to see the menu?"
       },
       {
        "left": "6-o'rin",
        "right": "B: Yes, please.",
-       "note": "Ha, iltimos."
+       "note": "Ha, iltimos.",
+       "speakAnswer": "B: Yes, please."
       }
      ]
     }
@@ -5553,68 +5851,78 @@
        "answer": "some",
        "promptUz": "TASDIQ gap",
        "whyUz": "TASDIQ gap ('We've got') → SOME.\n'ham', 'cheese', 'tuna' — sanalmaydigan otlar.",
-       "speak": "B: We've got 1) ............ ham, cheese, tuna and tomato."
+       "speak": "B: We've got 1) ............ ham, cheese, tuna and tomato.",
+       "speakAnswer": "some"
       },
       {
        "prompt": "B: Which 2) ............ you like?",
        "answer": "would",
        "promptUz": "Muloyim taklif shakli",
        "whyUz": "'Which WOULD you like?' = qaysinisini xohlaysiz?\n'Which do you like?' — umumiy yoqtirish savoli bo'lardi.",
-       "speak": "B: Which 2) ............ you like?"
+       "speak": "B: Which 2) ............ you like?",
+       "speakAnswer": "would"
       },
       {
        "prompt": "A: 3) ............ I have three ham sandwiches please?",
        "answer": "Can",
        "promptUz": "ILTIMOS so'rash shakli",
        "whyUz": "'CAN I have ...?' — ILTIMOS (request).",
-       "speak": "A: 3) ............ I have three ham sandwiches please?"
+       "speak": "A: 3) ............ I have three ham sandwiches please?",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "B: Of course. Here you 4) ............ .",
        "answer": "are",
        "promptUz": "Narsani uzatganda aytiladigan ibora",
        "whyUz": "'Here you ARE.' = Mana, oling.\nO'zgarmas ibora — Coursebook 53 va 58-betlarda ham bor edi.",
-       "speak": "B: Of course. Here you 4) ............ ."
+       "speak": "B: Of course. Here you 4) ............ .",
+       "speakAnswer": "are"
       },
       {
        "prompt": "A: Thank you. How 5) ............ 6) ............ they?  [1-bo'shliq]",
        "answer": "much",
        "promptUz": "Narx savoli + 'they' bilan fe'l",
        "whyUz": "NARX → HOW MUCH.\n'they' (sandwiches — ko'plik) → ARE.\n'How MUCH ARE they?' = ular qancha turadi?",
-       "speak": "A: Thank you. How 5) ............ 6) ............ they?  [1-bo'shliq]"
+       "speak": "A: Thank you. How 5) ............ 6) ............ they?  [1-bo'shliq]",
+       "speakAnswer": "much"
       },
       {
        "prompt": "A: Thank you. How 5) ............ 6) ............ they?  [2-bo'shliq]",
        "answer": "are",
        "promptUz": "Narx savoli + 'they' bilan fe'l",
        "whyUz": "NARX → HOW MUCH.\n'they' (sandwiches — ko'plik) → ARE.\n'How MUCH ARE they?' = ular qancha turadi?",
-       "speak": "A: Thank you. How 5) ............ 6) ............ they?  [2-bo'shliq]"
+       "speak": "A: Thank you. How 5) ............ 6) ............ they?  [2-bo'shliq]",
+       "speakAnswer": "are"
       },
       {
        "prompt": "A: Oh, yes — 7) ............ I have 8) ............ bananas, please?  [1-bo'shliq]",
        "answer": "can",
        "promptUz": "ILTIMOS so'rash + iltimos savolida qaysi so'z?",
-       "whyUz": "'CAN I have ...?' — ILTIMOS.\nILTIMOS savolida SOME ('any' emas)."
+       "whyUz": "'CAN I have ...?' — ILTIMOS.\nILTIMOS savolida SOME ('any' emas).",
+       "speakAnswer": "can"
       },
       {
        "prompt": "A: Oh, yes — 7) ............ I have 8) ............ bananas, please?  [2-bo'shliq]",
        "answer": "some",
        "promptUz": "ILTIMOS so'rash + iltimos savolida qaysi so'z?",
-       "whyUz": "'CAN I have ...?' — ILTIMOS.\nILTIMOS savolida SOME ('any' emas)."
+       "whyUz": "'CAN I have ...?' — ILTIMOS.\nILTIMOS savolida SOME ('any' emas).",
+       "speakAnswer": "some"
       },
       {
        "prompt": "B: Sure. How 9) ............ 10) ............ you like?  [1-bo'shliq]",
        "answer": "many",
        "promptUz": "'bananas' sanaladimi? + muloyim savol",
        "whyUz": "'bananas' — SANALADIGAN → HOW MANY.\n'WOULD you like?' — muloyim shakl.\n5-band bilan solishtiring: sandwiches narxi → much; bananas soni → many.",
-       "speak": "B: Sure. How 9) ............ 10) ............ you like?  [1-bo'shliq]"
+       "speak": "B: Sure. How 9) ............ 10) ............ you like?  [1-bo'shliq]",
+       "speakAnswer": "many"
       },
       {
        "prompt": "B: Sure. How 9) ............ 10) ............ you like?  [2-bo'shliq]",
        "answer": "would",
        "promptUz": "'bananas' sanaladimi? + muloyim savol",
        "whyUz": "'bananas' — SANALADIGAN → HOW MANY.\n'WOULD you like?' — muloyim shakl.\n5-band bilan solishtiring: sandwiches narxi → much; bananas soni → many.",
-       "speak": "B: Sure. How 9) ............ 10) ............ you like?  [2-bo'shliq]"
+       "speak": "B: Sure. How 9) ............ 10) ............ you like?  [2-bo'shliq]",
+       "speakAnswer": "would"
       }
      ]
     }
@@ -5833,84 +6141,96 @@
        "answer": "some",
        "promptUz": "'water' sanaladimi?",
        "whyUz": "'water' — SANALMAYDIGAN → 'a' ISHLATILMAYDI.\nTo'g'ri gap: I'd like SOME water.\n(Yoki: 'a glass of water'.)",
-       "speak": "2  I'm thirsty. I'd like a water. → ............"
+       "speak": "2  I'm thirsty. I'd like a water. → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "3  Can I have any bread, please? → ............",
        "answer": "some",
        "promptUz": "Bu savol ILTIMOS ifodalaydi",
        "whyUz": "ILTIMOS (request) savolida SOME ishlatiladi.\nTo'g'ri gap: Can I have SOME bread, please?\n13-mashqdagi qoida.",
-       "speak": "3  Can I have any bread, please? → ............"
+       "speak": "3  Can I have any bread, please? → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "4  I'm hungry. I like a hamburger. → ............",
        "answer": "I'd like",
        "promptUz": "'yoqtiraman' emas, 'xohlayman'",
        "whyUz": "'I like' = umuman yoqtiraman.\n'I'd like' (= I WOULD like) = hozir xohlayman.\nQorni ochgan odam 'I'D LIKE a hamburger' deydi.",
-       "speak": "4  I'm hungry. I like a hamburger. → ............"
+       "speak": "4  I'm hungry. I like a hamburger. → ............",
+       "speakAnswer": "I'd like"
       },
       {
        "prompt": "5  Would you like some tea? Yes, I love some. → ............",
        "answer": "I'd love",
        "promptUz": "Javobda ham 'would' kerak",
        "whyUz": "'I love some' — noto'g'ri.\nTo'g'ri: 'Yes, I'D LOVE some.' (= I WOULD love)\nTaklifga javobda DOIM 'I'd love' ishlatiladi.",
-       "speak": "5  Would you like some tea? Yes, I love some. → ............"
+       "speak": "5  Would you like some tea? Yes, I love some. → ............",
+       "speakAnswer": "I'd love"
       },
       {
        "prompt": "6  Do you like a cup of tea? Yes, please. → ............",
        "answer": "Would you like",
        "promptUz": "Javob 'Yes, please' — bu TAKLIFGA javob",
        "whyUz": "'Yes, please' — TAKLIFGA javob, shuning uchun savol ham\ntaklif bo'lishi kerak: 'WOULD YOU LIKE a cup of tea?'\n'Do you like tea?' savoliga javob 'Yes, I do' bo'lardi.",
-       "speak": "6  Do you like a cup of tea? Yes, please. → ............"
+       "speak": "6  Do you like a cup of tea? Yes, please. → ............",
+       "speakAnswer": "Would you like"
       },
       {
        "prompt": "7  I'd like some sugars in my tea. → ............",
        "answer": "sugar",
        "promptUz": "'sugar' sanaladimi?",
        "whyUz": "'sugar' — SANALMAYDIGAN → -S QO'SHILMAYDI.\nTo'g'ri gap: I'd like some SUGAR in my tea.",
-       "speak": "7  I'd like some sugars in my tea. → ............"
+       "speak": "7  I'd like some sugars in my tea. → ............",
+       "speakAnswer": "sugar"
       },
       {
        "prompt": "8  How many honey do you need? → ............",
        "answer": "How much",
        "promptUz": "'honey' sanaladimi?",
        "whyUz": "'honey' (asal) — SANALMAYDIGAN → HOW MUCH.\nTo'g'ri gap: HOW MUCH honey do you need?",
-       "speak": "8  How many honey do you need? → ............"
+       "speak": "8  How many honey do you need? → ............",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "9  Could I have a butter please? → ............",
        "answer": "some",
        "promptUz": "'butter' sanaladimi?",
        "whyUz": "'butter' — SANALMAYDIGAN → 'a' ISHLATILMAYDI.\nTo'g'ri gap: Could I have SOME butter, please?\n('Could I have ...?' — 'Can I have ...?' dan muloyimroq.)",
-       "speak": "9  Could I have a butter please? → ............"
+       "speak": "9  Could I have a butter please? → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "10  \"Would you like some milk in your tea?\" \"Just a few, please.\" → ............",
        "answer": "a little",
        "promptUz": "'milk' sanaladimi?",
        "whyUz": "'milk' — SANALMAYDIGAN → A LITTLE ('a few' XATO).\nTo'g'ri javob: 'Just A LITTLE, please.'\n11-mashqdagi qoida.",
-       "speak": "10  \"Would you like some milk in your tea?\" \"Just a few, please.\" → ............"
+       "speak": "10  \"Would you like some milk in your tea?\" \"Just a few, please.\" → ............",
+       "speakAnswer": "a little"
       },
       {
        "prompt": "11  I'd like eggs but I don't like bacon. → ............",
        "answer": "some eggs",
        "promptUz": "Tasdiq gapda qaysi so'z tushib qolgan?",
        "whyUz": "TASDIQ gapda ko'plik ot oldida SOME kerak.\nTo'g'ri gap: I'd like SOME EGGS but I don't like bacon.\nDIQQAT: inkorda ('I don't like bacon') 'some' KERAK EMAS.",
-       "speak": "11  I'd like eggs but I don't like bacon. → ............"
+       "speak": "11  I'd like eggs but I don't like bacon. → ............",
+       "speakAnswer": "some eggs"
       },
       {
        "prompt": "12  How many wine is there in the fridge? → ............",
        "answer": "How much",
        "promptUz": "'wine' sanaladimi?",
        "whyUz": "'wine' — SANALMAYDIGAN → HOW MUCH.\nTo'g'ri gap: HOW MUCH wine is there in the fridge?\n(Fe'l 'is' ham sanalmaydigan otga ishora qiladi.)",
-       "speak": "12  How many wine is there in the fridge? → ............"
+       "speak": "12  How many wine is there in the fridge? → ............",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "13  How much oranges do we need? → ............",
        "answer": "How many",
        "promptUz": "'oranges' sanaladimi?",
        "whyUz": "'oranges' — SANALADIGAN, KO'PLIKDA → HOW MANY.\nTo'g'ri gap: HOW MANY oranges do we need?\n12-band bilan solishtiring — teskari xato.",
-       "speak": "13  How much oranges do we need? → ............"
+       "speak": "13  How much oranges do we need? → ............",
+       "speakAnswer": "How many"
       }
      ]
     }
@@ -5975,70 +6295,80 @@
        "answer": "cherries",
        "promptUz": "undosh + y",
        "whyUz": "2-qoida: undosh ('r') + y → -IES = cherrIES.",
-       "speak": "1  cherry → ............"
+       "speak": "1  cherry → ............",
+       "speakAnswer": "cherries"
       },
       {
        "prompt": "2  cliff → ............",
        "answer": "cliffs",
        "promptUz": "-f bilan tugaydi, LEKIN istisno",
        "whyUz": "ISTISNO! -f bilan tugasa ham -VES OLMAYDI → cliffS.\nNazariya qutisida ham aynan shu misol berilgan.\n'a cliff' = qoya, jarlik.",
-       "speak": "2  cliff → ............"
+       "speak": "2  cliff → ............",
+       "speakAnswer": "cliffs"
       },
       {
        "prompt": "3  butterfly → ............",
        "answer": "butterflies",
        "promptUz": "undosh + y",
        "whyUz": "2-qoida: undosh ('l') + y → -IES = butterflIES.\n'a butterfly' = kapalak (6-unitda ham bor edi).",
-       "speak": "3  butterfly → ............"
+       "speak": "3  butterfly → ............",
+       "speakAnswer": "butterflies"
       },
       {
        "prompt": "4  tomato → ............",
        "answer": "tomatoes",
        "promptUz": "-o bilan tugaydi",
        "whyUz": "4-qoida: -o → -ES = tomatoES.",
-       "speak": "4  tomato → ............"
+       "speak": "4  tomato → ............",
+       "speakAnswer": "tomatoes"
       },
       {
        "prompt": "5  radio → ............",
        "answer": "radios",
        "promptUz": "-o bilan tugaydi, LEKIN istisno",
        "whyUz": "ISTISNO! -o bilan tugasa ham -ES OLMAYDI → radioS.\nNazariya qutisida ham aynan shu misol berilgan.",
-       "speak": "5  radio → ............"
+       "speak": "5  radio → ............",
+       "speakAnswer": "radios"
       },
       {
        "prompt": "6  banana → ............",
        "answer": "bananas",
        "promptUz": "Oddiy -s",
        "whyUz": "Unli bilan tugaydi (lekin -o emas) → oddiy -S = bananaS.",
-       "speak": "6  banana → ............"
+       "speak": "6  banana → ............",
+       "speakAnswer": "bananas"
       },
       {
        "prompt": "7  toy → ............",
        "answer": "toys",
        "promptUz": "UNLI + y",
        "whyUz": "3-qoida: UNLI ('o') + y → -S = toyS.\n'toies' XATO.",
-       "speak": "7  toy → ............"
+       "speak": "7  toy → ............",
+       "speakAnswer": "toys"
       },
       {
        "prompt": "8  loaf → ............",
        "answer": "loaves",
        "promptUz": "-f bilan tugaydi",
        "whyUz": "1-qoida: -f → -VES = loaVES.\n2-band bilan solishtiring: 'cliff' istisno, 'loaf' esa qoidaga bo'ysunadi.",
-       "speak": "8  loaf → ............"
+       "speak": "8  loaf → ............",
+       "speakAnswer": "loaves"
       },
       {
        "prompt": "9  photo → ............",
        "answer": "photos",
        "promptUz": "-o bilan tugaydi, LEKIN istisno",
        "whyUz": "ISTISNO! → photoS.\n4-band bilan solishtiring: 'tomato' → tomatoES, 'photo' → photoS.",
-       "speak": "9  photo → ............"
+       "speak": "9  photo → ............",
+       "speakAnswer": "photos"
       },
       {
        "prompt": "10  city → ............",
        "answer": "cities",
        "promptUz": "undosh + y",
        "whyUz": "2-qoida: undosh ('t') + y → -IES = citIES.\n'a city' = shahar.",
-       "speak": "10  city → ............"
+       "speak": "10  city → ............",
+       "speakAnswer": "cities"
       }
      ]
     },
@@ -6058,105 +6388,120 @@
        "answer": "How much",
        "promptUz": "'butter' sanaladimi?",
        "whyUz": "'butter' — SANALMAYDIGAN → HOW MUCH.\nFe'l 'IS' ham buni tasdiqlaydi (ko'plik bo'lsa 'are' bo'lardi).",
-       "speak": "2  How many butter is there in the fridge? → ............"
+       "speak": "2  How many butter is there in the fridge? → ............",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "3  I'm hungry. I'd like a soup. → ............",
        "answer": "some",
        "promptUz": "'soup' sanaladimi?",
        "whyUz": "'soup' — SANALMAYDIGAN → SOME.\nTo'g'ri gap: I'd like SOME soup.\n(Restoranda 'a soup' = 'bir kosa sho'rva' ma'nosida ham eshitiladi,\nlekin bu darslikning qoidasi bo'yicha SOME.)",
-       "speak": "3  I'm hungry. I'd like a soup. → ............"
+       "speak": "3  I'm hungry. I'd like a soup. → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "4  How much eggs do we need? → ............",
        "answer": "How many",
        "promptUz": "'eggs' sanaladimi?",
        "whyUz": "'eggs' — SANALADIGAN, KO'PLIKDA → HOW MANY.",
-       "speak": "4  How much eggs do we need? → ............"
+       "speak": "4  How much eggs do we need? → ............",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "5  Do we have a salt? → ............",
        "answer": "any",
        "promptUz": "'salt' sanaladimi? Bu qanday savol?",
        "whyUz": "'salt' — SANALMAYDIGAN → 'a' ISHLATILMAYDI.\nBu MA'LUMOT so'rash savoli → ANY.\nTo'g'ri gap: Do we have ANY salt?",
-       "speak": "5  Do we have a salt? → ............"
+       "speak": "5  Do we have a salt? → ............",
+       "speakAnswer": "any"
       },
       {
        "prompt": "6  How many sugar would you like? → ............",
        "answer": "How much",
        "promptUz": "'sugar' sanaladimi?",
        "whyUz": "'sugar' — SANALMAYDIGAN → HOW MUCH.",
-       "speak": "6  How many sugar would you like? → ............"
+       "speak": "6  How many sugar would you like? → ............",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "7  How much lemons do you need? → ............",
        "answer": "How many",
        "promptUz": "'lemons' sanaladimi?",
        "whyUz": "'lemons' — SANALADIGAN, KO'PLIKDA → HOW MANY.\nNazariya qutisida ham 'lemon' sanaladigan ot misoli sifatida berilgan.",
-       "speak": "7  How much lemons do you need? → ............"
+       "speak": "7  How much lemons do you need? → ............",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "8  I'd like some hams, please. → ............",
        "answer": "ham",
        "promptUz": "'ham' ga -s qo'shiladimi?",
        "whyUz": "'ham' — SANALMAYDIGAN → -S QO'ShILMAYDI.\nTo'g'ri gap: I'd like some HAM, please.",
-       "speak": "8  I'd like some hams, please. → ............"
+       "speak": "8  I'd like some hams, please. → ............",
+       "speakAnswer": "ham"
       },
       {
        "prompt": "9  Would you like any coffee? → ............",
        "answer": "some",
        "promptUz": "Bu savol TAKLIF ifodalaydi",
        "whyUz": "'Would you like ...?' — TAKLIF (offer) → SOME.\nTo'g'ri gap: Would you like SOME coffee?",
-       "speak": "9  Would you like any coffee? → ............"
+       "speak": "9  Would you like any coffee? → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "10  How many meat do you need? → ............",
        "answer": "How much",
        "promptUz": "'meat' sanaladimi?",
        "whyUz": "'meat' — SANALMAYDIGAN → HOW MUCH.",
-       "speak": "10  How many meat do you need? → ............"
+       "speak": "10  How many meat do you need? → ............",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "11  Could I have a bananas, please? → ............",
        "answer": "some",
        "promptUz": "'a' va ko'plik ot birga kelmaydi",
        "whyUz": "'a' + KO'PLIK ot — XATO.\nBu ILTIMOS savoli → SOME bananas.\nTo'g'ri gap: Could I have SOME bananas, please?\nDIQQAT: 'a banana' (birlik) ham grammatik jihatdan to'g'ri bo'lardi,\nlekin bu mashq some/any qoidasini mashq qildiradi.",
-       "speak": "11  Could I have a bananas, please? → ............"
+       "speak": "11  Could I have a bananas, please? → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "12  I need a little carrots. → ............",
        "answer": "a few",
        "promptUz": "'carrots' sanaladimi?",
        "whyUz": "'carrots' — SANALADIGAN → A FEW.\n'a little' faqat sanalmaydigan otlar bilan.\nTo'g'ri gap: I need A FEW carrots.",
-       "speak": "12  I need a little carrots. → ............"
+       "speak": "12  I need a little carrots. → ............",
+       "speakAnswer": "a few"
       },
       {
        "prompt": "13  There are a few cherrys in the bowl. → ............",
        "answer": "cherries",
        "promptUz": "Ko'plik imlosi",
        "whyUz": "IMLO XATOSI: 'cherry' — undosh ('r') + y → -IES.\nTo'g'ri: CHERRIES.\n1-mashqning 1-bandida ham shu so'z bor edi.",
-       "speak": "13  There are a few cherrys in the bowl. → ............"
+       "speak": "13  There are a few cherrys in the bowl. → ............",
+       "speakAnswer": "cherries"
       },
       {
        "prompt": "14  I haven't got some biscuits. → ............",
        "answer": "any",
        "promptUz": "Bu INKOR gap",
        "whyUz": "INKOR gapda ANY ishlatiladi.\nTo'g'ri gap: I haven't got ANY biscuits.\nNazariya qutisida ham aynan shu misol bor.",
-       "speak": "14  I haven't got some biscuits. → ............"
+       "speak": "14  I haven't got some biscuits. → ............",
+       "speakAnswer": "any"
       },
       {
        "prompt": "15  Can I have any milk? → ............",
        "answer": "some",
        "promptUz": "Bu savol ILTIMOS ifodalaydi",
        "whyUz": "'Can I have ...?' — ILTIMOS (request) → SOME.\nTo'g'ri gap: Can I have SOME milk?\n9-band bilan solishtiring: u TAKLIF, bu ILTIMOS — ikkalasida ham SOME.",
-       "speak": "15  Can I have any milk? → ............"
+       "speak": "15  Can I have any milk? → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "16  I want some cheeses. → ............",
        "answer": "cheese",
        "promptUz": "'cheese' ga -s qo'shiladimi?",
        "whyUz": "'cheese' — SANALMAYDIGAN → -S QO'ShILMAYDI.\nTo'g'ri gap: I want some CHEESE.\n8-band bilan bir xil xato turi.",
-       "speak": "16  I want some cheeses. → ............"
+       "speak": "16  I want some cheeses. → ............",
+       "speakAnswer": "cheese"
       }
      ]
     }
@@ -6193,77 +6538,88 @@
        "answer": "some",
        "promptUz": "Suyuqlik — sanaladimi?",
        "whyUz": "SANALMAYDIGAN → 'some tea'.\n'a tea' XATO (restoranda 'bir piyola choy' ma'nosida eshitiladi,\nlekin qoida bo'yicha SOME).",
-       "speak": "2  ............ tea"
+       "speak": "2  ............ tea",
+       "speakAnswer": "some"
       },
       {
        "prompt": "3  ............ bananas",
        "answer": "some",
        "promptUz": "Rasmda bir nechta banan",
        "whyUz": "SANALADIGAN, lekin KO'PLIKDA → 'some bananas'.\nBittasi bo'lsa 'a banana' bo'lardi.",
-       "speak": "3  ............ bananas"
+       "speak": "3  ............ bananas",
+       "speakAnswer": "some"
       },
       {
        "prompt": "4  ............ grapes",
        "answer": "some",
        "promptUz": "Uzum — doim ko'plikda",
        "whyUz": "'grapes' — DOIM ko'plikda ishlatiladi → 'some grapes'.\nBitta donasi: 'a grape'.",
-       "speak": "4  ............ grapes"
+       "speak": "4  ............ grapes",
+       "speakAnswer": "some"
       },
       {
        "prompt": "5  ............ milk",
        "answer": "some",
        "promptUz": "Suyuqlik",
        "whyUz": "SANALMAYDIGAN → 'some milk'.\nSanash uchun: 'a carton of milk', 'a glass of milk'.",
-       "speak": "5  ............ milk"
+       "speak": "5  ............ milk",
+       "speakAnswer": "some"
       },
       {
        "prompt": "6  ............ biscuits",
        "answer": "some",
        "promptUz": "Rasmda bir nechta pechenye",
        "whyUz": "SANALADIGAN, KO'PLIKDA → 'some biscuits'.\nBittasi: 'a biscuit'.",
-       "speak": "6  ............ biscuits"
+       "speak": "6  ............ biscuits",
+       "speakAnswer": "some"
       },
       {
        "prompt": "7  ............ cheese",
        "answer": "some",
        "promptUz": "Massa — sanaladimi?",
        "whyUz": "SANALMAYDIGAN → 'some cheese'.\nSanash uchun: 'a piece of cheese', 'a kilo of cheese'.",
-       "speak": "7  ............ cheese"
+       "speak": "7  ............ cheese",
+       "speakAnswer": "some"
       },
       {
        "prompt": "8  ............ strawberries",
        "answer": "some",
        "promptUz": "Rasmda bir nechta qulupnay",
        "whyUz": "SANALADIGAN, KO'PLIKDA → 'some strawberries'.\nBittasi: 'a strawberry' (undosh + y → -IES).",
-       "speak": "8  ............ strawberries"
+       "speak": "8  ............ strawberries",
+       "speakAnswer": "some"
       },
       {
        "prompt": "9  ............ egg",
        "answer": "an",
        "promptUz": "Bitta tuxum, unli tovush bilan boshlanadi",
        "whyUz": "SANALADIGAN BIRLIK va UNLI tovush → 'AN egg'.\n'a egg' XATO.",
-       "speak": "9  ............ egg"
+       "speak": "9  ............ egg",
+       "speakAnswer": "an"
       },
       {
        "prompt": "10  ............ apple",
        "answer": "an",
        "promptUz": "Bitta olma, unli tovush",
        "whyUz": "SANALADIGAN BIRLIK va UNLI tovush → 'AN apple'.",
-       "speak": "10  ............ apple"
+       "speak": "10  ............ apple",
+       "speakAnswer": "an"
       },
       {
        "prompt": "11  ............ onions",
        "answer": "some",
        "promptUz": "Rasmda bir nechta piyoz",
        "whyUz": "SANALADIGAN, KO'PLIKDA → 'some onions'.\nBittasi: 'AN onion' (unli tovush).",
-       "speak": "11  ............ onions"
+       "speak": "11  ............ onions",
+       "speakAnswer": "some"
       },
       {
        "prompt": "12  ............ orange",
        "answer": "an",
        "promptUz": "Bitta apelsin, unli tovush",
        "whyUz": "SANALADIGAN BIRLIK va UNLI tovush → 'AN orange'.\n34-betdagi nazariya qutisida ham shu misol bor.",
-       "speak": "12  ............ orange"
+       "speak": "12  ............ orange",
+       "speakAnswer": "an"
       },
       {
        "prompt": "13  ............ carrot",
@@ -6284,7 +6640,8 @@
        "answer": "some",
        "promptUz": "Go'sht — sanaladimi?",
        "whyUz": "SANALMAYDIGAN → 'some meat'.\n'a meat' va 'meats' XATO.\nSanash uchun: 'a kilo of meat'.",
-       "speak": "15  ............ meat"
+       "speak": "15  ............ meat",
+       "speakAnswer": "some"
       }
      ]
     },
@@ -6309,7 +6666,8 @@
         "packet"
        ],
        "whyUz": "'a kilo of meat' = bir kilo go'sht.\nGo'sht og'irlik bilan sotiladi.",
-       "speak": "1  a ............ of meat"
+       "speak": "1  a ............ of meat",
+       "speakAnswer": "kilo"
       },
       {
        "prompt": "2  a ............ of bread",
@@ -6321,7 +6679,8 @@
         "packet"
        ],
        "whyUz": "'a slice of bread' = bir bo'lak (kesilgan) non.\nDIQQAT: butun non bo'lsa 'a LOAF of bread' bo'lardi.",
-       "speak": "2  a ............ of bread"
+       "speak": "2  a ............ of bread",
+       "speakAnswer": "slice"
       },
       {
        "prompt": "3  a ............ of coke",
@@ -6333,7 +6692,8 @@
         "packet"
        ],
        "whyUz": "'a bottle of coke' = bir shisha kola.",
-       "speak": "3  a ............ of coke"
+       "speak": "3  a ............ of coke",
+       "speakAnswer": "bottle"
       },
       {
        "prompt": "4  a ............ of orange juice",
@@ -6345,7 +6705,8 @@
         "slice"
        ],
        "whyUz": "'a glass of orange juice' = bir stakan apelsin sharbati.\n3-band bilan solishtiring: bottle — shisha, glass — stakan.",
-       "speak": "4  a ............ of orange juice"
+       "speak": "4  a ............ of orange juice",
+       "speakAnswer": "glass"
       },
       {
        "prompt": "5  a ............ of cake",
@@ -6357,7 +6718,8 @@
         "packet"
        ],
        "whyUz": "'a piece of cake' = bir bo'lak tort.\n'a slice of cake' ham to'g'ri, lekin 'slice' 2-bandda ishlatilgan —\nhar bir so'z faqat bir marta.\nIDIOMA: 'It's a piece of cake' = bu juda oson ish.",
-       "speak": "5  a ............ of cake"
+       "speak": "5  a ............ of cake",
+       "speakAnswer": "piece"
       },
       {
        "prompt": "6  a ............ of hot chocolate",
@@ -6369,7 +6731,8 @@
         "slice"
        ],
        "whyUz": "'a cup of hot chocolate' = bir chashka issiq shokolad.\n'a cup' — ISSIQ ichimlik uchun (choy, qahva, shokolad).",
-       "speak": "6  a ............ of hot chocolate"
+       "speak": "6  a ............ of hot chocolate",
+       "speakAnswer": "cup"
       },
       {
        "prompt": "7  a ............ of milk",
@@ -6381,7 +6744,8 @@
         "packet"
        ],
        "whyUz": "'a carton of milk' = bir paket sut.\n'a carton' — qog'ozdan yasalgan to'rtburchak idish.",
-       "speak": "7  a ............ of milk"
+       "speak": "7  a ............ of milk",
+       "speakAnswer": "carton"
       },
       {
        "prompt": "8  a ............ of sugar",
@@ -6393,7 +6757,8 @@
         "slice"
        ],
        "whyUz": "'a packet of sugar' = bir paket shakar.\nBritancha; amerikacha 'a package'.",
-       "speak": "8  a ............ of sugar"
+       "speak": "8  a ............ of sugar",
+       "speakAnswer": "packet"
       }
      ]
     },
@@ -6413,49 +6778,56 @@
        "answer": "a piece of cheese / a slice of cheese / a kilo of cheese",
        "promptUz": "Kesiladigan va og'irlik bilan sotiladigan",
        "whyUz": "'a piece of cheese' — bir bo'lak (umumiy).\n'a slice of cheese' — yupqa kesilgan bo'lak (buterbrod uchun).\n'a kilo of cheese' — do'konda og'irlik bilan.",
-       "speak": "cheese"
+       "speak": "cheese",
+       "speakAnswer": "a piece of cheese / a slice of cheese / a kilo of cheese"
       },
       {
        "prompt": "ham",
        "answer": "a slice of ham / a kilo of ham",
        "promptUz": "Yupqa kesiladigan go'sht mahsuloti",
        "whyUz": "'a slice of ham' — yupqa kesilgan bo'lak (buterbrod uchun).\nCoursebook 57-betdagi xarid ro'yxatida ham '20 slices of ham' bor edi.\n'a kilo of ham' — do'konda.",
-       "speak": "ham"
+       "speak": "ham",
+       "speakAnswer": "a slice of ham / a kilo of ham"
       },
       {
        "prompt": "water",
        "answer": "a glass of water / a bottle of water",
        "promptUz": "Suyuqlik — stakanda yoki shishada",
        "whyUz": "'a glass of water' — ichish uchun stakanda.\n'a bottle of water' — do'konda sotiladigan shisha.",
-       "speak": "water"
+       "speak": "water",
+       "speakAnswer": "a glass of water / a bottle of water"
       },
       {
        "prompt": "crisps",
        "answer": "a packet of crisps",
        "promptUz": "Quruq gazak — paketda sotiladi",
        "whyUz": "'a packet of crisps' = bir paket chips.\nCoursebook 56-betda ham shu ibora bor edi.",
-       "speak": "crisps"
+       "speak": "crisps",
+       "speakAnswer": "a packet of crisps"
       },
       {
        "prompt": "wine",
        "answer": "a glass of wine / a bottle of wine",
        "promptUz": "Suyuqlik — qadahda yoki shishada",
        "whyUz": "'a glass of wine' — bir qadah vino.\n'a bottle of wine' — bir shisha vino.\nCoursebook 56-betda ikkalasi ham bor edi.",
-       "speak": "wine"
+       "speak": "wine",
+       "speakAnswer": "a glass of wine / a bottle of wine"
       },
       {
        "prompt": "tea",
        "answer": "a cup of tea",
        "promptUz": "Issiq ichimlik",
        "whyUz": "'a cup of tea' — o'zgarmas ibora.\nISSIQ ichimlik uchun DOIM 'cup' ('glass' emas).\nBritaniyada 'a cup of tea' — kundalik hayotning ramzi.",
-       "speak": "tea"
+       "speak": "tea",
+       "speakAnswer": "a cup of tea"
       },
       {
        "prompt": "tomato(es)",
        "answer": "a kilo of tomatoes",
        "promptUz": "Og'irlik bilan sotiladigan sabzavot",
        "whyUz": "'a kilo of tomatoes' = bir kilo pomidor.\nDIQQAT: 'tomatoes' — KO'PLIKDA ('a kilo of tomato' XATO).\n'a slice of tomato' ham mumkin — buterbrodga kesilgan bo'lak.",
-       "speak": "tomato(es)"
+       "speak": "tomato(es)",
+       "speakAnswer": "a kilo of tomatoes"
       }
      ]
     }
@@ -6485,35 +6857,40 @@
        "answer": "How many",
        "promptUz": "'potatoes' — ko'plik",
        "whyUz": "'potatoes' — SANALADIGAN, KO'PLIKDA → HOW MANY.",
-       "speak": "1  ............ potatoes do we need?"
+       "speak": "1  ............ potatoes do we need?",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "2  ............ sugar would you like?",
        "answer": "How much",
        "promptUz": "'sugar' sanaladimi?",
        "whyUz": "'sugar' — SANALMAYDIGAN → HOW MUCH.",
-       "speak": "2  ............ sugar would you like?"
+       "speak": "2  ............ sugar would you like?",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "3  ............ milk is there in the fridge?",
        "answer": "How much",
        "promptUz": "'milk' sanaladimi? Fe'l 'is' ham ishora beradi",
        "whyUz": "'milk' — SANALMAYDIGAN → HOW MUCH.\nFe'l 'IS' ham buni tasdiqlaydi (ko'plik bo'lsa 'are' bo'lardi).",
-       "speak": "3  ............ milk is there in the fridge?"
+       "speak": "3  ............ milk is there in the fridge?",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "4  ............ eggs do you want?",
        "answer": "How many",
        "promptUz": "'eggs' — ko'plik",
        "whyUz": "'eggs' — SANALADIGAN, KO'PLIKDA → HOW MANY.",
-       "speak": "4  ............ eggs do you want?"
+       "speak": "4  ............ eggs do you want?",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "5  ............ ham do you need?",
        "answer": "How much",
        "promptUz": "'ham' sanaladimi?",
        "whyUz": "'ham' — SANALMAYDIGAN → HOW MUCH.\nSanash uchun: 'How many SLICES of ham?'",
-       "speak": "5  ............ ham do you need?"
+       "speak": "5  ............ ham do you need?",
+       "speakAnswer": "How much"
       }
      ]
     },
@@ -6533,140 +6910,160 @@
        "answer": "How many",
        "promptUz": "'bananas' — ko'plik",
        "whyUz": "SANALADIGAN, KO'PLIKDA → HOW MANY.",
-       "speak": "1  A: ............ bananas would you like, sir?"
+       "speak": "1  A: ............ bananas would you like, sir?",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "1  B: Just ............ , please.",
        "answer": "a few",
        "promptUz": "Sanaladigan uchun 'bir nechta'",
        "whyUz": "SANALADIGAN → A FEW.\n'a little' faqat sanalmaydigan otlar bilan.",
-       "speak": "1  B: Just ............ , please."
+       "speak": "1  B: Just ............ , please.",
+       "speakAnswer": "a few"
       },
       {
        "prompt": "2  A: Can I have ............ milk?",
        "answer": "some",
        "promptUz": "Bu savol ILTIMOS ifodalaydi",
        "whyUz": "'Can I have ...?' — ILTIMOS (request) → SOME.",
-       "speak": "2  A: Can I have ............ milk?"
+       "speak": "2  A: Can I have ............ milk?",
+       "speakAnswer": "some"
       },
       {
        "prompt": "2  B: Sorry, we haven't got ............ milk.",
        "answer": "any",
        "promptUz": "Bu INKOR gap",
        "whyUz": "INKOR gap ('haven't got') → ANY.",
-       "speak": "2  B: Sorry, we haven't got ............ milk."
+       "speak": "2  B: Sorry, we haven't got ............ milk.",
+       "speakAnswer": "any"
       },
       {
        "prompt": "3  A: ............ bread would you like?",
        "answer": "How much",
        "promptUz": "'bread' sanaladimi?",
        "whyUz": "'bread' — SANALMAYDIGAN → HOW MUCH.",
-       "speak": "3  A: ............ bread would you like?"
+       "speak": "3  A: ............ bread would you like?",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "3  B: Just ............ , please.",
        "answer": "a little",
        "promptUz": "Sanalmaydigan uchun 'bir oz'",
        "whyUz": "SANALMAYDIGAN → A LITTLE.\n1-band bilan solishtiring: bananas → a few, bread → a little.",
-       "speak": "3  B: Just ............ , please."
+       "speak": "3  B: Just ............ , please.",
+       "speakAnswer": "a little"
       },
       {
        "prompt": "4  A: ............ carrots do we have?",
        "answer": "How many",
        "promptUz": "'carrots' — ko'plik",
        "whyUz": "SANALADIGAN, KO'PLIKDA → HOW MANY.",
-       "speak": "4  A: ............ carrots do we have?"
+       "speak": "4  A: ............ carrots do we have?",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "4  B: We have only ............ .",
        "answer": "a few",
        "promptUz": "Sanaladigan uchun",
        "whyUz": "SANALADIGAN → A FEW.\n'only a few' = atigi bir nechta.",
-       "speak": "4  B: We have only ............ ."
+       "speak": "4  B: We have only ............ .",
+       "speakAnswer": "a few"
       },
       {
        "prompt": "5  A: ............ oranges do we need?",
        "answer": "How many",
        "promptUz": "'oranges' — ko'plik",
        "whyUz": "SANALADIGAN, KO'PLIKDA → HOW MANY.",
-       "speak": "5  A: ............ oranges do we need?"
+       "speak": "5  A: ............ oranges do we need?",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "5  B: We don't need ............ oranges.",
        "answer": "any",
        "promptUz": "Bu INKOR gap",
        "whyUz": "INKOR gap ('don't need') → ANY.",
-       "speak": "5  B: We don't need ............ oranges."
+       "speak": "5  B: We don't need ............ oranges.",
+       "speakAnswer": "any"
       },
       {
        "prompt": "6  A: ............ sugar would you like in your coffee?",
        "answer": "How much",
        "promptUz": "'sugar' sanaladimi?",
        "whyUz": "'sugar' — SANALMAYDIGAN → HOW MUCH.",
-       "speak": "6  A: ............ sugar would you like in your coffee?"
+       "speak": "6  A: ............ sugar would you like in your coffee?",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "6  B: Just ............ , please.",
        "answer": "a little",
        "promptUz": "Sanalmaydigan uchun",
        "whyUz": "SANALMAYDIGAN → A LITTLE.\nCoursebook 57-betdagi 15-mashqning 10-bandi bilan bir xil holat.",
-       "speak": "6  B: Just ............ , please."
+       "speak": "6  B: Just ............ , please.",
+       "speakAnswer": "a little"
       },
       {
        "prompt": "7  A: Could I have ............ tea, please?",
        "answer": "some",
        "promptUz": "Bu savol ILTIMOS ifodalaydi",
        "whyUz": "'Could I have ...?' — ILTIMOS (request) → SOME.\n'Could' — 'Can' dan MULOYIMROQ.",
-       "speak": "7  A: Could I have ............ tea, please?"
+       "speak": "7  A: Could I have ............ tea, please?",
+       "speakAnswer": "some"
       },
       {
        "prompt": "7  B: Of course. Would you like ............ biscuits, too?",
        "answer": "some",
        "promptUz": "Bu savol TAKLIF ifodalaydi",
        "whyUz": "'Would you like ...?' — TAKLIF (offer) → SOME.\nIkkala savolda ham SOME, lekin biri iltimos, biri taklif.",
-       "speak": "7  B: Of course. Would you like ............ biscuits, too?"
+       "speak": "7  B: Of course. Would you like ............ biscuits, too?",
+       "speakAnswer": "some"
       },
       {
        "prompt": "8  A: Is there ............ wine in the fridge?",
        "answer": "any",
        "promptUz": "Bu MA'LUMOT so'rash savoli",
        "whyUz": "Oddiy MA'LUMOT savoli (taklif ham, iltimos ham emas) → ANY.",
-       "speak": "8  A: Is there ............ wine in the fridge?"
+       "speak": "8  A: Is there ............ wine in the fridge?",
+       "speakAnswer": "any"
       },
       {
        "prompt": "8  B: No, we need to buy ............ .",
        "answer": "some",
        "promptUz": "Bu TASDIQ gap",
        "whyUz": "TASDIQ gap ('we need to buy') → SOME.\n'No' bilan boshlangan bo'lsa ham, gapning o'zi tasdiq.",
-       "speak": "8  B: No, we need to buy ............ ."
+       "speak": "8  B: No, we need to buy ............ .",
+       "speakAnswer": "some"
       },
       {
        "prompt": "9  A: ............ flour does she need?",
        "answer": "How much",
        "promptUz": "'flour' sanaladimi?",
        "whyUz": "'flour' (un) — SANALMAYDIGAN → HOW MUCH.",
-       "speak": "9  A: ............ flour does she need?"
+       "speak": "9  A: ............ flour does she need?",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "9  B: Just ............ .",
        "answer": "a little",
        "promptUz": "Sanalmaydigan uchun",
        "whyUz": "SANALMAYDIGAN → A LITTLE.",
-       "speak": "9  B: Just ............ ."
+       "speak": "9  B: Just ............ .",
+       "speakAnswer": "a little"
       },
       {
        "prompt": "10  A: Have you got ............ potatoes?",
        "answer": "any",
        "promptUz": "Bu MA'LUMOT so'rash savoli",
        "whyUz": "'Have you got ...?' — MA'LUMOT savoli → ANY.\nNazariya qutisidagi misol bilan bir xil (34-bet).",
-       "speak": "10  A: Have you got ............ potatoes?"
+       "speak": "10  A: Have you got ............ potatoes?",
+       "speakAnswer": "any"
       },
       {
        "prompt": "10  B: Yes. ............ would you like?",
        "answer": "How many",
        "promptUz": "'potatoes' — ko'plik",
        "whyUz": "SANALADIGAN, KO'PLIKDA → HOW MANY.\nOt takrorlanmagan, lekin 'potatoes' nazarda tutilyapti.",
-       "speak": "10  B: Yes. ............ would you like?"
+       "speak": "10  B: Yes. ............ would you like?",
+       "speakAnswer": "How many"
       }
      ]
     },
@@ -6686,70 +7083,80 @@
        "answer": "some",
        "promptUz": "TASDIQ gap, ko'plik ot",
        "whyUz": "TASDIQ gap ('I'd like') → SOME.",
-       "speak": "1  A: I'd like 1) ............ eggs, please."
+       "speak": "1  A: I'd like 1) ............ eggs, please.",
+       "speakAnswer": "some"
       },
       {
        "prompt": "1  B: Of course. How 2) ............ would you like?",
        "answer": "many",
        "promptUz": "'eggs' sanaladimi?",
        "whyUz": "'eggs' — SANALADIGAN → HOW MANY.",
-       "speak": "1  B: Of course. How 2) ............ would you like?"
+       "speak": "1  B: Of course. How 2) ............ would you like?",
+       "speakAnswer": "many"
       },
       {
        "prompt": "1  A: Six, please. 3) ............ there 4) ............ tomatoes?  [1-bo'shliq]",
        "answer": "Are",
        "promptUz": "'tomatoes' ko'plik + ma'lumot savoli",
        "whyUz": "'tomatoes' — KO'PLIK → 'ARE there ...?'\nMA'LUMOT savoli → ANY.",
-       "speak": "1  A: Six, please. 3) ............ there 4) ............ tomatoes?  [1-bo'shliq]"
+       "speak": "1  A: Six, please. 3) ............ there 4) ............ tomatoes?  [1-bo'shliq]",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "1  A: Six, please. 3) ............ there 4) ............ tomatoes?  [2-bo'shliq]",
        "answer": "any",
        "promptUz": "'tomatoes' ko'plik + ma'lumot savoli",
        "whyUz": "'tomatoes' — KO'PLIK → 'ARE there ...?'\nMA'LUMOT savoli → ANY.",
-       "speak": "1  A: Six, please. 3) ............ there 4) ............ tomatoes?  [2-bo'shliq]"
+       "speak": "1  A: Six, please. 3) ............ there 4) ............ tomatoes?  [2-bo'shliq]",
+       "speakAnswer": "any"
       },
       {
        "prompt": "1  B: Certainly. How 5) ............ do you need?",
        "answer": "many",
        "promptUz": "Hali ham 'tomatoes' haqida",
        "whyUz": "'tomatoes' — SANALADIGAN → HOW MANY.\n'A kilo' javob bo'lsa ham, ot sanaladi.",
-       "speak": "1  B: Certainly. How 5) ............ do you need?"
+       "speak": "1  B: Certainly. How 5) ............ do you need?",
+       "speakAnswer": "many"
       },
       {
        "prompt": "2  A: I'd like 1) ............ olive oil.",
        "answer": "some",
        "promptUz": "TASDIQ gap, sanalmaydigan ot",
        "whyUz": "TASDIQ gap → SOME.\n'olive oil' (zaytun moyi) — SANALMAYDIGAN.",
-       "speak": "2  A: I'd like 1) ............ olive oil."
+       "speak": "2  A: I'd like 1) ............ olive oil.",
+       "speakAnswer": "some"
       },
       {
        "prompt": "2  B: How 2) ............ do you need?",
        "answer": "much",
        "promptUz": "'olive oil' sanaladimi?",
        "whyUz": "'olive oil' — SANALMAYDIGAN → HOW MUCH.\n1-dialogning 2-bandi bilan solishtiring: eggs → many, oil → much.",
-       "speak": "2  B: How 2) ............ do you need?"
+       "speak": "2  B: How 2) ............ do you need?",
+       "speakAnswer": "much"
       },
       {
        "prompt": "2  A: Half a bottle. 3) ............ there 4) ............ flour?  [1-bo'shliq]",
        "answer": "Is",
        "promptUz": "'flour' sanalmaydigan + ma'lumot savoli",
        "whyUz": "'flour' — SANALMAYDIGAN → 'IS there ...?' (birlik fe'l).\nMA'LUMOT savoli → ANY.\n1-dialog bilan solishtiring: 'ARE there any tomatoes?' (ko'plik).",
-       "speak": "2  A: Half a bottle. 3) ............ there 4) ............ flour?  [1-bo'shliq]"
+       "speak": "2  A: Half a bottle. 3) ............ there 4) ............ flour?  [1-bo'shliq]",
+       "speakAnswer": "Is"
       },
       {
        "prompt": "2  A: Half a bottle. 3) ............ there 4) ............ flour?  [2-bo'shliq]",
        "answer": "any",
        "promptUz": "'flour' sanalmaydigan + ma'lumot savoli",
        "whyUz": "'flour' — SANALMAYDIGAN → 'IS there ...?' (birlik fe'l).\nMA'LUMOT savoli → ANY.\n1-dialog bilan solishtiring: 'ARE there any tomatoes?' (ko'plik).",
-       "speak": "2  A: Half a bottle. 3) ............ there 4) ............ flour?  [2-bo'shliq]"
+       "speak": "2  A: Half a bottle. 3) ............ there 4) ............ flour?  [2-bo'shliq]",
+       "speakAnswer": "any"
       },
       {
        "prompt": "2  B: Certainly. How 5) ............ do you need?",
        "answer": "much",
        "promptUz": "Hali ham 'flour' haqida",
        "whyUz": "'flour' — SANALMAYDIGAN → HOW MUCH.",
-       "speak": "2  B: Certainly. How 5) ............ do you need?"
+       "speak": "2  B: Certainly. How 5) ............ do you need?",
+       "speakAnswer": "much"
       }
      ]
     },
@@ -6895,7 +7302,8 @@
         "a  I'd like some soup, please.",
         "b  I like some soup, please."
        ],
-       "whyUz": "'I'D LIKE' = xohlayman (buyurtma).\n'I like' = yoqtiraman (umumiy) — 'please' bilan mos kelmaydi."
+       "whyUz": "'I'D LIKE' = xohlayman (buyurtma).\n'I like' = yoqtiraman (umumiy) — 'please' bilan mos kelmaydi.",
+       "speakAnswer": "a  I'd like some soup, please."
       },
       {
        "prompt": "3  Qaysi biri to'g'ri?",
@@ -6905,7 +7313,8 @@
         "a  Would you like some orange juice?",
         "b  Do you like some orange juice?"
        ],
-       "whyUz": "TAKLIF savoli 'WOULD you like ...?' bilan.\n'Do you like ...?' — umumiy yoqtirish savoli, 'some' bilan kelmaydi."
+       "whyUz": "TAKLIF savoli 'WOULD you like ...?' bilan.\n'Do you like ...?' — umumiy yoqtirish savoli, 'some' bilan kelmaydi.",
+       "speakAnswer": "a  Would you like some orange juice?"
       },
       {
        "prompt": "4  Qaysi biri to'g'ri?",
@@ -6915,7 +7324,8 @@
         "b  How many cherries do you need?",
         "a  How much cherries do you need?"
        ],
-       "whyUz": "'cherries' — SANALADIGAN, KO'PLIKDA → HOW MANY."
+       "whyUz": "'cherries' — SANALADIGAN, KO'PLIKDA → HOW MANY.",
+       "speakAnswer": "b  How many cherries do you need?"
       },
       {
        "prompt": "5  Qaysi biri to'g'ri?",
@@ -6925,7 +7335,8 @@
         "a  I'd like some rice for lunch.",
         "b  I'd like a rice for lunch."
        ],
-       "whyUz": "'rice' — SANALMAYDIGAN → 'a' ISHLATILMAYDI → SOME rice.\n8-mashqning 12-bandi bilan bog'liq."
+       "whyUz": "'rice' — SANALMAYDIGAN → 'a' ISHLATILMAYDI → SOME rice.\n8-mashqning 12-bandi bilan bog'liq.",
+       "speakAnswer": "a  I'd like some rice for lunch."
       },
       {
        "prompt": "6  Qaysi biri to'g'ri?",
@@ -6935,7 +7346,8 @@
         "a  Would you like some bread?",
         "b  Do you like some bread?"
        ],
-       "whyUz": "TAKLIF savoli → 'Would you like ...?'\n3-band bilan bir xil qoida."
+       "whyUz": "TAKLIF savoli → 'Would you like ...?'\n3-band bilan bir xil qoida.",
+       "speakAnswer": "a  Would you like some bread?"
       },
       {
        "prompt": "7  Qaysi biri to'g'ri?",
@@ -6945,7 +7357,8 @@
         "a  No thanks. I don't want any coffee.",
         "b  No thanks. I'd like any coffee."
        ],
-       "whyUz": "INKOR gap ('don't want') → ANY.\n'I'd like any coffee' — mantiqsiz: 'I'd like' tasdiq, 'any' esa inkor uchun."
+       "whyUz": "INKOR gap ('don't want') → ANY.\n'I'd like any coffee' — mantiqsiz: 'I'd like' tasdiq, 'any' esa inkor uchun.",
+       "speakAnswer": "a  No thanks. I don't want any coffee."
       },
       {
        "prompt": "8  Qaysi biri to'g'ri?",
@@ -6955,7 +7368,8 @@
         "b  \"Here's your hamburger.\" \"How much is it?\"",
         "a  \"Here's your hamburger.\" \"How many is it?\""
        ],
-       "whyUz": "NARX so'rash uchun DOIM 'How much is it?'\n'How many is it?' — grammatik jihatdan ham noto'g'ri."
+       "whyUz": "NARX so'rash uchun DOIM 'How much is it?'\n'How many is it?' — grammatik jihatdan ham noto'g'ri.",
+       "speakAnswer": "b  \"Here's your hamburger.\" \"How much is it?\""
       },
       {
        "prompt": "9  Qaysi biri to'g'ri?",
@@ -6965,7 +7379,8 @@
         "b  How much do you want?",
         "a  How much you want?"
        ],
-       "whyUz": "Present Simple savolida DO yordamchi fe'li SHART.\n'How much you want?' — yordamchi fe'l yo'q → XATO."
+       "whyUz": "Present Simple savolida DO yordamchi fe'li SHART.\n'How much you want?' — yordamchi fe'l yo'q → XATO.",
+       "speakAnswer": "b  How much do you want?"
       },
       {
        "prompt": "10  Qaysi biri to'g'ri?",
@@ -6975,7 +7390,8 @@
         "a  I'm hungry. Is there anything to eat?",
         "b  I'm hungry. Is this anything to eat?"
        ],
-       "whyUz": "'Is there anything to eat/drink?' — o'zgarmas qolip.\nCoursebook 56-betda ham shu ibora bor edi.\n'Is this anything to eat?' — ma'nosiz."
+       "whyUz": "'Is there anything to eat/drink?' — o'zgarmas qolip.\nCoursebook 56-betda ham shu ibora bor edi.\n'Is this anything to eat?' — ma'nosiz.",
+       "speakAnswer": "a  I'm hungry. Is there anything to eat?"
       }
      ]
     }
@@ -7005,28 +7421,32 @@
        "answer": "Does Susan like the theatre?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'Susan' — birlik 3-shaxs → DOES.\n'the theatre' — THE bilan (bino/muassasa sifatida).\nTalaffuz: /ˈθɪətə/.",
-       "speak": "Susan/the theatre?"
+       "speak": "Susan/the theatre?",
+       "speakAnswer": "Does Susan like the theatre?"
       },
       {
        "prompt": "your parents/reading?",
        "answer": "Do your parents like reading?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'your parents' — KO'PLIK → DO.\n'like + fe'l-ING' → 'like READING'.",
-       "speak": "your parents/reading?"
+       "speak": "your parents/reading?",
+       "speakAnswer": "Do your parents like reading?"
       },
       {
        "prompt": "he/rock music?",
        "answer": "Does he like rock music?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'he' — birlik 3-shaxs → DOES.\n'rock music' — SANALMAYDIGAN, artiklsiz.",
-       "speak": "he/rock music?"
+       "speak": "he/rock music?",
+       "speakAnswer": "Does he like rock music?"
       },
       {
        "prompt": "you/exercising?",
        "answer": "Do you like exercising?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'you' → DO.\n'like + fe'l-ING' → 'like EXERCISING'.\n'to exercise' = mashq qilmoq, sport bilan shug'ullanmoq.",
-       "speak": "you/exercising?"
+       "speak": "you/exercising?",
+       "speakAnswer": "Do you like exercising?"
       }
      ]
     }
@@ -7056,63 +7476,72 @@
        "answer": "are having",
        "promptUz": "'at the moment' — qaysi zamon belgisi?",
        "whyUz": "'at the moment' → PRESENT CONTINUOUS kerak.\n'They' — ko'plik → ARE + having.\n'have dinner' — HARAKAT, shuning uchun -ing mumkin.",
-       "speak": "2  They have dinner at the moment. → ............"
+       "speak": "2  They have dinner at the moment. → ............",
+       "speakAnswer": "are having"
       },
       {
        "prompt": "3  I can speaks Italian. → ............",
        "answer": "speak",
        "promptUz": "'can' dan keyin fe'l qanday shaklda?",
        "whyUz": "'can' dan keyin fe'l ASOS shaklida — -S QO'ShILMAYDI.\n'I can SPEAK Italian.'",
-       "speak": "3  I can speaks Italian. → ............"
+       "speak": "3  I can speaks Italian. → ............",
+       "speakAnswer": "speak"
       },
       {
        "prompt": "4  There's a few milk in the fridge. → ............",
        "answer": "a little",
        "promptUz": "'milk' sanaladimi?",
        "whyUz": "'milk' — SANALMAYDIGAN → A LITTLE.\n'a few' faqat sanaladigan otlar bilan.\nFe'l 'There'S' ham buni tasdiqlaydi (birlik).",
-       "speak": "4  There's a few milk in the fridge. → ............"
+       "speak": "4  There's a few milk in the fridge. → ............",
+       "speakAnswer": "a little"
       },
       {
        "prompt": "5  He live in Brighton. → ............",
        "answer": "lives",
        "promptUz": "Ega birlik 3-shaxs",
        "whyUz": "'He' — birlik 3-shaxs → LIVES.\n'Brighton' — Angliyaning janubidagi dengiz bo'yi shahri.",
-       "speak": "5  He live in Brighton. → ............"
+       "speak": "5  He live in Brighton. → ............",
+       "speakAnswer": "lives"
       },
       {
        "prompt": "6  She are having lunch with Judy at the moment. → ............",
        "answer": "is",
        "promptUz": "'she' bilan qaysi 'be' shakli?",
        "whyUz": "'She' — birlik → IS having ('are' XATO).\nZamon to'g'ri tanlangan — 'at the moment' bor.",
-       "speak": "6  She are having lunch with Judy at the moment. → ............"
+       "speak": "6  She are having lunch with Judy at the moment. → ............",
+       "speakAnswer": "is"
       },
       {
        "prompt": "7  I haven't got some apples. → ............",
        "answer": "any",
        "promptUz": "Bu INKOR gap",
        "whyUz": "INKOR gapda ANY ishlatiladi.\n'I haven't got ANY apples.'",
-       "speak": "7  I haven't got some apples. → ............"
+       "speak": "7  I haven't got some apples. → ............",
+       "speakAnswer": "any"
       },
       {
        "prompt": "8  How many ham do you need? → ............",
        "answer": "How much",
        "promptUz": "'ham' sanaladimi?",
        "whyUz": "'ham' — SANALMAYDIGAN → HOW MUCH.\n36-betdagi 5-mashqning 5-bandi bilan bir xil.",
-       "speak": "8  How many ham do you need? → ............"
+       "speak": "8  How many ham do you need? → ............",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "9  Can I have any tea, please? → ............",
        "answer": "some",
        "promptUz": "Bu savol ILTIMOS ifodalaydi",
        "whyUz": "'Can I have ...?' — ILTIMOS (request) → SOME.",
-       "speak": "9  Can I have any tea, please? → ............"
+       "speak": "9  Can I have any tea, please? → ............",
+       "speakAnswer": "some"
       },
       {
        "prompt": "10  This is mine umbrella. → ............",
        "answer": "my",
        "promptUz": "Ot bor — sifat kerakmi yoki olmoshmi?",
        "whyUz": "OT bor ('umbrella') → egalik SIFATI kerak: MY.\n'mine' — egalik OLMOSHI, otsiz ishlatiladi:\n  'This umbrella is MINE.'\n  'This is MY umbrella.'",
-       "speak": "10  This is mine umbrella. → ............"
+       "speak": "10  This is mine umbrella. → ............",
+       "speakAnswer": "my"
       }
      ]
     },
@@ -7132,56 +7561,64 @@
        "answer": "Does she",
        "promptUz": "Javobdagi 'she' savolni ham belgilaydi",
        "whyUz": "Javobda 'she' → savolda ham 'she'.\n'she' — birlik 3-shaxs → DOES.\nDIQQAT: 'does' bor bo'lsa 'like' ga -S qo'shilmaydi.",
-       "speak": "2  A: ............ like fishing?  B: Yes, she ............ .  [1-bo'shliq]"
+       "speak": "2  A: ............ like fishing?  B: Yes, she ............ .  [1-bo'shliq]",
+       "speakAnswer": "Does she"
       },
       {
        "prompt": "2  A: ............ like fishing?  B: Yes, she ............ .  [2-bo'shliq]",
        "answer": "does",
        "promptUz": "Javobdagi 'she' savolni ham belgilaydi",
        "whyUz": "Javobda 'she' → savolda ham 'she'.\n'she' — birlik 3-shaxs → DOES.\nDIQQAT: 'does' bor bo'lsa 'like' ga -S qo'shilmaydi.",
-       "speak": "2  A: ............ like fishing?  B: Yes, she ............ .  [2-bo'shliq]"
+       "speak": "2  A: ............ like fishing?  B: Yes, she ............ .  [2-bo'shliq]",
+       "speakAnswer": "does"
       },
       {
        "prompt": "3  A: What ............ your sisters like?  B: ............ very friendly and polite.  [1-bo'shliq]",
        "answer": "are",
        "promptUz": "Bu 'yoqtirish' emas, XARAKTER haqidagi savol",
        "whyUz": "'What are they LIKE?' = ular qanday odam? (xarakter savoli).\n'your sisters' — KO'PLIK → ARE.\nJavob: 'They are (They're) very friendly and polite.'\nDIQQAT: 'What do they like?' bo'lsa 'nimani yoqtiradi?' bo'lardi.",
-       "speak": "3  A: What ............ your sisters like?  B: ............ very friendly and polite.  [1-bo'shliq]"
+       "speak": "3  A: What ............ your sisters like?  B: ............ very friendly and polite.  [1-bo'shliq]",
+       "speakAnswer": "are"
       },
       {
        "prompt": "3  A: What ............ your sisters like?  B: ............ very friendly and polite.  [2-bo'shliq]",
        "answer": "They are",
        "promptUz": "Bu 'yoqtirish' emas, XARAKTER haqidagi savol",
        "whyUz": "'What are they LIKE?' = ular qanday odam? (xarakter savoli).\n'your sisters' — KO'PLIK → ARE.\nJavob: 'They are (They're) very friendly and polite.'\nDIQQAT: 'What do they like?' bo'lsa 'nimani yoqtiradi?' bo'lardi.",
-       "speak": "3  A: What ............ your sisters like?  B: ............ very friendly and polite.  [2-bo'shliq]"
+       "speak": "3  A: What ............ your sisters like?  B: ............ very friendly and polite.  [2-bo'shliq]",
+       "speakAnswer": "They are"
       },
       {
        "prompt": "4  A: ............ like camping?  B: No, they ............ .  [1-bo'shliq]",
        "answer": "Do they",
        "promptUz": "Javobdagi 'they' savolni belgilaydi",
        "whyUz": "'they' — ko'plik → DO.\nINKOR javob: 'No, they DON'T.'\n'camping' — 'like' dan keyin -ing shakli.",
-       "speak": "4  A: ............ like camping?  B: No, they ............ .  [1-bo'shliq]"
+       "speak": "4  A: ............ like camping?  B: No, they ............ .  [1-bo'shliq]",
+       "speakAnswer": "Do they"
       },
       {
        "prompt": "4  A: ............ like camping?  B: No, they ............ .  [2-bo'shliq]",
        "answer": "don't",
        "promptUz": "Javobdagi 'they' savolni belgilaydi",
        "whyUz": "'they' — ko'plik → DO.\nINKOR javob: 'No, they DON'T.'\n'camping' — 'like' dan keyin -ing shakli.",
-       "speak": "4  A: ............ like camping?  B: No, they ............ .  [2-bo'shliq]"
+       "speak": "4  A: ............ like camping?  B: No, they ............ .  [2-bo'shliq]",
+       "speakAnswer": "don't"
       },
       {
        "prompt": "5  A: ............ Mary like going shopping?  B: No, she ............ .  [1-bo'shliq]",
        "answer": "Does",
        "promptUz": "'Mary' — birlik 3-shaxs",
        "whyUz": "'Mary' — birlik 3-shaxs → DOES.\nINKOR javob: 'No, she DOESN'T.'\n'go shopping' → 'like GOING shopping' (like + -ing).",
-       "speak": "5  A: ............ Mary like going shopping?  B: No, she ............ .  [1-bo'shliq]"
+       "speak": "5  A: ............ Mary like going shopping?  B: No, she ............ .  [1-bo'shliq]",
+       "speakAnswer": "Does"
       },
       {
        "prompt": "5  A: ............ Mary like going shopping?  B: No, she ............ .  [2-bo'shliq]",
        "answer": "doesn't",
        "promptUz": "'Mary' — birlik 3-shaxs",
        "whyUz": "'Mary' — birlik 3-shaxs → DOES.\nINKOR javob: 'No, she DOESN'T.'\n'go shopping' → 'like GOING shopping' (like + -ing).",
-       "speak": "5  A: ............ Mary like going shopping?  B: No, she ............ .  [2-bo'shliq]"
+       "speak": "5  A: ............ Mary like going shopping?  B: No, she ............ .  [2-bo'shliq]",
+       "speakAnswer": "doesn't"
       }
      ]
     },
@@ -7201,77 +7638,88 @@
        "answer": "are you going",
        "promptUz": "Hozir sodir bo'layotgan ish",
        "whyUz": "Hozir qayerga ketayotgani so'ralyapti → PRESENT CONTINUOUS.\nSo'roq tartibi: Where + ARE + YOU + GOING?",
-       "speak": "1  A: Where 1) ............ (you/go)?"
+       "speak": "1  A: Where 1) ............ (you/go)?",
+       "speakAnswer": "are you going"
       },
       {
        "prompt": "1  B: I 2) ............ (go) ice-skating.",
        "answer": "am going",
        "promptUz": "Hozir sodir bo'layotgan ish",
        "whyUz": "'I' → AM + going.\n'go ice-skating' = konkida uchgani bormoq.",
-       "speak": "1  B: I 2) ............ (go) ice-skating."
+       "speak": "1  B: I 2) ............ (go) ice-skating.",
+       "speakAnswer": "am going"
       },
       {
        "prompt": "1  B: Yes, I 3) ............ (be) very good ...",
        "answer": "am",
        "promptUz": "'be' fe'li -ing OLMAYDI",
        "whyUz": "'be' — HOLAT fe'li, -ing shaklida ishlatilmaydi.\n'I AM very good' = men juda yaxshiman (bu ishda).",
-       "speak": "1  B: Yes, I 3) ............ (be) very good ..."
+       "speak": "1  B: Yes, I 3) ............ (be) very good ...",
+       "speakAnswer": "am"
       },
       {
        "prompt": "1  B: ... because I 4) ............ (go) ice-skating every Saturday.",
        "answer": "go",
        "promptUz": "'every Saturday' — odat belgisi",
        "whyUz": "'every Saturday' → PRESENT SIMPLE.\n'I' bilan fe'l ASOS shaklida → GO.\n2-band bilan solishtiring: hozir 'am going', odatda esa 'go'.",
-       "speak": "1  B: ... because I 4) ............ (go) ice-skating every Saturday."
+       "speak": "1  B: ... because I 4) ............ (go) ice-skating every Saturday.",
+       "speakAnswer": "go"
       },
       {
        "prompt": "2  A: What 1) ............ (you/do) every weekend?",
        "answer": "do you do",
        "promptUz": "'every weekend' — odat belgisi",
        "whyUz": "'every weekend' → PRESENT SIMPLE.\nBirinchi 'do' — yordamchi, ikkinchisi — asosiy fe'l:\n'What DO you DO ...?'",
-       "speak": "2  A: What 1) ............ (you/do) every weekend?"
+       "speak": "2  A: What 1) ............ (you/do) every weekend?",
+       "speakAnswer": "do you do"
       },
       {
        "prompt": "2  B: We usually 2) ............ (visit) our grandparents.",
        "answer": "visit",
        "promptUz": "'usually' — odat belgisi",
        "whyUz": "'usually' → PRESENT SIMPLE.\n'We' — ko'plik → -S QO'ShILMAYDI.",
-       "speak": "2  B: We usually 2) ............ (visit) our grandparents."
+       "speak": "2  B: We usually 2) ............ (visit) our grandparents.",
+       "speakAnswer": "visit"
       },
       {
        "prompt": "2  B: They 3) ............ (live) by the sea.",
        "answer": "live",
        "promptUz": "DOIMIY holat, ega ko'plik",
        "whyUz": "DOIMIY holat → PRESENT SIMPLE.\n'They' — ko'plik → LIVE.\n'by the sea' = dengiz bo'yida.",
-       "speak": "2  B: They 3) ............ (live) by the sea."
+       "speak": "2  B: They 3) ............ (live) by the sea.",
+       "speakAnswer": "live"
       },
       {
        "prompt": "2  A: How 4) ............ (you/spend) your time there?",
        "answer": "do you spend",
        "promptUz": "Odat haqidagi savol",
        "whyUz": "ODAT haqidagi savol → PRESENT SIMPLE.\n'How DO you SPEND ...?'\n'spend time' = vaqt o'tkazmoq.",
-       "speak": "2  A: How 4) ............ (you/spend) your time there?"
+       "speak": "2  A: How 4) ............ (you/spend) your time there?",
+       "speakAnswer": "do you spend"
       },
       {
        "prompt": "2  B: We usually 5) ............ (swim) in the mornings ...",
        "answer": "swim",
        "promptUz": "'usually' — odat belgisi",
        "whyUz": "'usually' → PRESENT SIMPLE.\n'We' — ko'plik → SWIM.\n'in the mornings' — ko'plik: har kuni ertalab.",
-       "speak": "2  B: We usually 5) ............ (swim) in the mornings ..."
+       "speak": "2  B: We usually 5) ............ (swim) in the mornings ...",
+       "speakAnswer": "swim"
       },
       {
        "prompt": "2  B: ... and 6) ............ (play) tennis in the afternoons.",
        "answer": "play",
        "promptUz": "Ega hali ham 'We'",
        "whyUz": "Ega o'zgarmagan ('We') → PLAY.\n'play tennis' — sport oldida artikl YO'Q.",
-       "speak": "2  B: ... and 6) ............ (play) tennis in the afternoons."
+       "speak": "2  B: ... and 6) ............ (play) tennis in the afternoons.",
+       "speakAnswer": "play"
       },
       {
        "prompt": "2  B: We often 7) ............ (go) for a walk along the beach.",
        "answer": "go",
        "promptUz": "'often' — odat belgisi",
        "whyUz": "'often' → PRESENT SIMPLE.\n'We' — ko'plik → GO.\n'go for a walk' = sayrga chiqmoq; 'along the beach' = plyaj bo'ylab.",
-       "speak": "2  B: We often 7) ............ (go) for a walk along the beach."
+       "speak": "2  B: We often 7) ............ (go) for a walk along the beach.",
+       "speakAnswer": "go"
       }
      ]
     },
@@ -7295,7 +7743,8 @@
         "sometimes",
         "always"
        ],
-       "whyUz": "'How OFTEN ...?' — chastota savoli (o'zgarmas ibora).\n'sometimes' va 'always' — javob so'zlari, savolda ishlatilmaydi."
+       "whyUz": "'How OFTEN ...?' — chastota savoli (o'zgarmas ibora).\n'sometimes' va 'always' — javob so'zlari, savolda ishlatilmaydi.",
+       "speakAnswer": "often"
       },
       {
        "prompt": "2  What time does the plane ............ Paris arrive?",
@@ -7306,7 +7755,8 @@
         "to",
         "at"
        ],
-       "whyUz": "'the plane FROM Paris' = Parijdan keladigan samolyot.\nSamolyot Parijdan KELMOQDA → FROM.\n'the plane TO Paris' bo'lsa 'Parijga ketadigan' bo'lardi —\nlekin u holda 'arrive' emas, 'leave' bo'lardi."
+       "whyUz": "'the plane FROM Paris' = Parijdan keladigan samolyot.\nSamolyot Parijdan KELMOQDA → FROM.\n'the plane TO Paris' bo'lsa 'Parijga ketadigan' bo'lardi —\nlekin u holda 'arrive' emas, 'leave' bo'lardi.",
+       "speakAnswer": "from"
       },
       {
        "prompt": "3  I don't like football ............ I love basketball.",
@@ -7317,7 +7767,8 @@
         "often",
         "sometimes"
        ],
-       "whyUz": "Ikki QARAMA-QARSHI fikr → BUT (lekin).\n'often' va 'sometimes' — chastota ravishlari, bog'lovchi emas."
+       "whyUz": "Ikki QARAMA-QARSHI fikr → BUT (lekin).\n'often' va 'sometimes' — chastota ravishlari, bog'lovchi emas.",
+       "speakAnswer": "but"
       },
       {
        "prompt": "4  Have you got ............ bread?",
@@ -7328,7 +7779,8 @@
         "a",
         "few"
        ],
-       "whyUz": "'Have you got ...?' — MA'LUMOT savoli → ANY.\n'bread' — SANALMAYDIGAN → 'a' va 'few' ishlatilmaydi."
+       "whyUz": "'Have you got ...?' — MA'LUMOT savoli → ANY.\n'bread' — SANALMAYDIGAN → 'a' va 'few' ishlatilmaydi.",
+       "speakAnswer": "any"
       },
       {
        "prompt": "5  I brush my ............ every night.",
@@ -7339,7 +7791,8 @@
         "teeth's",
         "tooth"
        ],
-       "whyUz": "'tooth' → 'TEETH' (noto'g'ri ko'plik, 6-unitda o'rganilgan).\nTishlar ko'p → ko'plik shakl.\n'brush your teeth' = tish yuvmoq."
+       "whyUz": "'tooth' → 'TEETH' (noto'g'ri ko'plik, 6-unitda o'rganilgan).\nTishlar ko'p → ko'plik shakl.\n'brush your teeth' = tish yuvmoq.",
+       "speakAnswer": "teeth"
       },
       {
        "prompt": "6  We usually ............ out on Saturday afternoons.",
@@ -7350,7 +7803,8 @@
         "going",
         "goes"
        ],
-       "whyUz": "'usually' → PRESENT SIMPLE.\n'We' — ko'plik → GO ('goes' XATO).\n'go out' = sayrga chiqmoq, ko'ngil ochgani chiqmoq."
+       "whyUz": "'usually' → PRESENT SIMPLE.\n'We' — ko'plik → GO ('goes' XATO).\n'go out' = sayrga chiqmoq, ko'ngil ochgani chiqmoq.",
+       "speakAnswer": "go"
       },
       {
        "prompt": "7  What's the weather like ............ London today?",
@@ -7361,7 +7815,8 @@
         "at",
         "on"
        ],
-       "whyUz": "SHAHAR nomi oldida IN.\n'What's the weather like?' — 7-unitdagi asosiy savol."
+       "whyUz": "SHAHAR nomi oldida IN.\n'What's the weather like?' — 7-unitdagi asosiy savol.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "8  I'd like ............ sugar please.",
@@ -7372,7 +7827,8 @@
         "a",
         "many"
        ],
-       "whyUz": "'sugar' — SANALMAYDIGAN → 'a' va 'many' ISHLATILMAYDI.\nTASDIQ gap → SOME."
+       "whyUz": "'sugar' — SANALMAYDIGAN → 'a' va 'many' ISHLATILMAYDI.\nTASDIQ gap → SOME.",
+       "speakAnswer": "some"
       },
       {
        "prompt": "9  This is ............ house.",
@@ -7383,7 +7839,8 @@
         "ours",
         "mine"
        ],
-       "whyUz": "OT bor ('house') → egalik SIFATI kerak: MY.\n'ours' va 'mine' — egalik OLMOSHLARI, otsiz ishlatiladi.\n11-mashqning 10-bandi bilan bir xil qoida."
+       "whyUz": "OT bor ('house') → egalik SIFATI kerak: MY.\n'ours' va 'mine' — egalik OLMOSHLARI, otsiz ishlatiladi.\n11-mashqning 10-bandi bilan bir xil qoida.",
+       "speakAnswer": "my"
       },
       {
        "prompt": "10  ............ a hamburger?",
@@ -7394,7 +7851,8 @@
         "I'd like",
         "Would you"
        ],
-       "whyUz": "'How about + ot?' — TAKLIF savoli, to'liq gap.\n'Would you ... a hamburger?' — 'like' tushib qolgan → XATO.\n'I'd like a hamburger' — savol emas, tasdiq gap."
+       "whyUz": "'How about + ot?' — TAKLIF savoli, to'liq gap.\n'Would you ... a hamburger?' — 'like' tushib qolgan → XATO.\n'I'd like a hamburger' — savol emas, tasdiq gap.",
+       "speakAnswer": "How about"
       },
       {
        "prompt": "11  ............ you see the boat?",
@@ -7405,7 +7863,8 @@
         "Are",
         "Does"
        ],
-       "whyUz": "'see' — sezgi fe'li, u bilan 'can' ishlatiladi:\n'CAN you see ...?' = ko'ryapsizmi?\n'Are you see' va 'Does you see' — grammatik XATO."
+       "whyUz": "'see' — sezgi fe'li, u bilan 'can' ishlatiladi:\n'CAN you see ...?' = ko'ryapsizmi?\n'Are you see' va 'Does you see' — grammatik XATO.",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "12  How ............ does it weigh?",
@@ -7416,7 +7875,8 @@
         "many",
         "few"
        ],
-       "whyUz": "OG'IRLIK → HOW MUCH ('weigh' fe'li bilan doim shu).\n6-unitda ham shu qolip bor edi."
+       "whyUz": "OG'IRLIK → HOW MUCH ('weigh' fe'li bilan doim shu).\n6-unitda ham shu qolip bor edi.",
+       "speakAnswer": "much"
       },
       {
        "prompt": "13  The children are ............ their pyjamas.",
@@ -7427,7 +7887,8 @@
         "on",
         "at"
        ],
-       "whyUz": "'be IN + kiyim' = kiygan holda bo'lmoq.\n7-unitdagi otkritkada ham bor edi: 'The children are IN their pyjamas.'"
+       "whyUz": "'be IN + kiyim' = kiygan holda bo'lmoq.\n7-unitdagi otkritkada ham bor edi: 'The children are IN their pyjamas.'",
+       "speakAnswer": "in"
       },
       {
        "prompt": "14  ............ you like some strawberries?",
@@ -7438,7 +7899,8 @@
         "Do",
         "Can"
        ],
-       "whyUz": "'some' bor → bu TAKLIF savoli → 'WOULD you like ...?'\n'Do you like ...?' — umumiy yoqtirish savoli, 'some' bilan kelmaydi."
+       "whyUz": "'some' bor → bu TAKLIF savoli → 'WOULD you like ...?'\n'Do you like ...?' — umumiy yoqtirish savoli, 'some' bilan kelmaydi.",
+       "speakAnswer": "Would"
       },
       {
        "prompt": "15  How many ............ of ham do you want?",
@@ -7449,7 +7911,8 @@
         "cartons",
         "loaves"
        ],
-       "whyUz": "'ham' YUPQA kesib beriladi → SLICES.\n'cartons' — sut/sharbat uchun; 'loaves' — faqat non uchun.\nCoursebook 57-betdagi xarid ro'yxatida ham '20 slices of ham' bor edi."
+       "whyUz": "'ham' YUPQA kesib beriladi → SLICES.\n'cartons' — sut/sharbat uchun; 'loaves' — faqat non uchun.\nCoursebook 57-betdagi xarid ro'yxatida ham '20 slices of ham' bor edi.",
+       "speakAnswer": "slices"
       },
       {
        "prompt": "16  Give this to Carol. It's ............ .",
@@ -7460,7 +7923,8 @@
         "her",
         "she"
        ],
-       "whyUz": "OT YO'Q → egalik OLMOSHI kerak: HERS.\n'her' — egalik sifati, otdan oldin: 'her book'.\n9-band bilan solishtiring — teskari holat."
+       "whyUz": "OT YO'Q → egalik OLMOSHI kerak: HERS.\n'her' — egalik sifati, otdan oldin: 'her book'.\n9-band bilan solishtiring — teskari holat.",
+       "speakAnswer": "hers"
       },
       {
        "prompt": "17  A: ............ is his job?  B: He's a mechanic.",
@@ -7471,7 +7935,8 @@
         "Who",
         "How"
        ],
-       "whyUz": "KASB so'ralmoqda → 'WHAT is his job?'\n'Who is he?' — kimligini so'raydi (ism).\n'a mechanic' = mexanik, usta."
+       "whyUz": "KASB so'ralmoqda → 'WHAT is his job?'\n'Who is he?' — kimligini so'raydi (ism).\n'a mechanic' = mexanik, usta.",
+       "speakAnswer": "What"
       }
      ]
     }

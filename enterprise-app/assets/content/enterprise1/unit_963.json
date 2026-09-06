@@ -35,7 +35,8 @@
         "usually",
         "sometimes"
        ],
-       "whyUz": "KALIT: javob 'NO' bilan boshlanadi → NEVER.\n\n'usually' va 'sometimes' — IJOBIY ma'no,\n'No' ga zid.\n\n⚠ O'RNI: asosiy fe'ldan OLDIN\n('I NEVER work' ✓ / 'I work never' ✗)."
+       "whyUz": "KALIT: javob 'NO' bilan boshlanadi → NEVER.\n\n'usually' va 'sometimes' — IJOBIY ma'no,\n'No' ga zid.\n\n⚠ O'RNI: asosiy fe'ldan OLDIN\n('I NEVER work' ✓ / 'I work never' ✗).",
+       "speakAnswer": "never"
       },
       {
        "prompt": "2  How many ................. are there in your class?",
@@ -46,7 +47,8 @@
         "child",
         "children's"
        ],
-       "whyUz": "'How MANY' dan keyin KO'PLIK kerak.\n\nchild → CHILDREN (noto'g'ri ko'plik).\n\n⚠ 'children'S' — EGALIK shakli\n('the children'S names'), bu yerda XATO."
+       "whyUz": "'How MANY' dan keyin KO'PLIK kerak.\n\nchild → CHILDREN (noto'g'ri ko'plik).\n\n⚠ 'children'S' — EGALIK shakli\n('the children'S names'), bu yerda XATO.",
+       "speakAnswer": "children"
       },
       {
        "prompt": "3  ................. those your pencils?",
@@ -57,7 +59,8 @@
         "Is",
         "Isn't"
        ],
-       "whyUz": "'those' — KO'PLIK → ARE.\n\n'Is' — birlik ('Is THAT your pencil?').\n'Isn't' — birlik VA inkor, savolga mos\nkelmaydi."
+       "whyUz": "'those' — KO'PLIK → ARE.\n\n'Is' — birlik ('Is THAT your pencil?').\n'Isn't' — birlik VA inkor, savolga mos\nkelmaydi.",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "4  A: ................. do koalas live?  B: In Australia.",
@@ -68,7 +71,8 @@
         "When",
         "Why"
        ],
-       "whyUz": "KALIT: javob JOY ('In Australia') → WHERE.\n\n'When' — vaqt; 'Why' — sabab."
+       "whyUz": "KALIT: javob JOY ('In Australia') → WHERE.\n\n'When' — vaqt; 'Why' — sabab.",
+       "speakAnswer": "Where"
       },
       {
        "prompt": "5  Tom was born ................. 1989.",
@@ -79,7 +83,8 @@
         "on",
         "at"
        ],
-       "whyUz": "⚠ YIL bilan 'IN'.\n\n  AT + soat\n  ON + kun/sana (on 2nd August)\n  IN + oy/yil/fasl (in 1989, in August)"
+       "whyUz": "⚠ YIL bilan 'IN'.\n\n  AT + soat\n  ON + kun/sana (on 2nd August)\n  IN + oy/yil/fasl (in 1989, in August)",
+       "speakAnswer": "in"
       },
       {
        "prompt": "6  There are three ................. in the car.",
@@ -90,7 +95,8 @@
         "man",
         "men's"
        ],
-       "whyUz": "'three' (son) dan keyin KO'PLIK kerak.\n\nman → MEN (noto'g'ri ko'plik).\n\n⚠ 'men'S' — egalik shakli, XATO."
+       "whyUz": "'three' (son) dan keyin KO'PLIK kerak.\n\nman → MEN (noto'g'ri ko'plik).\n\n⚠ 'men'S' — egalik shakli, XATO.",
+       "speakAnswer": "men"
       },
       {
        "prompt": "7  ................. Susan go to school?",
@@ -101,7 +107,8 @@
         "Do",
         "Don't"
        ],
-       "whyUz": "'Susan' — 3-shaxs BIRLIK → DOES.\n\nKeyin ASOSIY shakl: 'Does she GO?'\n\n'Do' — ko'plik bilan; 'Don't' — inkor."
+       "whyUz": "'Susan' — 3-shaxs BIRLIK → DOES.\n\nKeyin ASOSIY shakl: 'Does she GO?'\n\n'Do' — ko'plik bilan; 'Don't' — inkor.",
+       "speakAnswer": "Does"
       },
       {
        "prompt": "8  ................. do you eat for dinner?",
@@ -112,7 +119,8 @@
         "Who",
         "When"
        ],
-       "whyUz": "NARSA (ovqat) so'raladi → WHAT.\n\n'Who' — odam; 'When' — vaqt."
+       "whyUz": "NARSA (ovqat) so'raladi → WHAT.\n\n'Who' — odam; 'When' — vaqt.",
+       "speakAnswer": "What"
       },
       {
        "prompt": "9  I sometimes go out with my friends ................. Fridays.",
@@ -123,7 +131,8 @@
         "in",
         "at"
        ],
-       "whyUz": "KUN bilan 'ON':\n  ON Friday / ON Fridays / ON Monday\n\n⚠ 20-band bilan solishtiring: u yerda ham\n'ON Friday mornings'."
+       "whyUz": "KUN bilan 'ON':\n  ON Friday / ON Fridays / ON Monday\n\n⚠ 20-band bilan solishtiring: u yerda ham\n'ON Friday mornings'.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "10  How ................. legs does a cat have?",
@@ -134,7 +143,8 @@
         "much",
         "long"
        ],
-       "whyUz": "'legs' — SANALADIGAN KO'PLIK → HOW MANY.\n\n⚠ 12-band bilan solishtiring: u yerda\n'How MUCH' (narx)."
+       "whyUz": "'legs' — SANALADIGAN KO'PLIK → HOW MANY.\n\n⚠ 12-band bilan solishtiring: u yerda\n'How MUCH' (narx).",
+       "speakAnswer": "many"
       },
       {
        "prompt": "11  A: Is this your sweater?  B: No, it's ................. sweater.",
@@ -145,7 +155,8 @@
         "hers",
         "she"
        ],
-       "whyUz": "'sweater' (OT) dan OLDIN → EGALIK SIFATI\n'HER'.\n\n⚠ 'hers' — OTSIZ ishlatiladi ('It's HERS.').\n⚠ 'she' — ega shakli, otdan oldin kelmaydi."
+       "whyUz": "'sweater' (OT) dan OLDIN → EGALIK SIFATI\n'HER'.\n\n⚠ 'hers' — OTSIZ ishlatiladi ('It's HERS.').\n⚠ 'she' — ega shakli, otdan oldin kelmaydi.",
+       "speakAnswer": "her"
       },
       {
        "prompt": "12  ................. is an orange juice, please?",
@@ -156,7 +167,8 @@
         "How",
         "How many"
        ],
-       "whyUz": "⚠ Bu yerda 'HOW MUCH' — NARX so'raydi!\n\n'How much is it?' = qancha turadi?\n\n'How many' — sanaladigan miqdor uchun\n(10-band)."
+       "whyUz": "⚠ Bu yerda 'HOW MUCH' — NARX so'raydi!\n\n'How much is it?' = qancha turadi?\n\n'How many' — sanaladigan miqdor uchun\n(10-band).",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "13  They ................. going to the cinema at the weekend.",
@@ -167,7 +179,8 @@
         "doesn't like",
         "likes"
        ],
-       "whyUz": "'They' — KO'PLIK → 'LIKE' ('-s' YO'Q).\n\n⚠ 'likes' — 3-shaxs BIRLIK bilan.\n⚠ 'doesn't like' — 'they' bilan XATO\n(va ma'nosi ham inkor).\n\n'like + V-ing': 'like GOING'."
+       "whyUz": "'They' — KO'PLIK → 'LIKE' ('-s' YO'Q).\n\n⚠ 'likes' — 3-shaxs BIRLIK bilan.\n⚠ 'doesn't like' — 'they' bilan XATO\n(va ma'nosi ham inkor).\n\n'like + V-ing': 'like GOING'.",
+       "speakAnswer": "like"
       },
       {
        "prompt": "14  He always reads a magazine ................. the evening.",
@@ -178,7 +191,8 @@
         "at",
         "on"
        ],
-       "whyUz": "⚠ KUNNING QISMI bilan 'IN':\n  IN the morning / IN the afternoon /\n  IN the evening\n\n⚠ ISTISNO: 'AT night' (kechasi).\n\n20-band bilan solishtiring: u yerda ANIQ KUN\naytilgani uchun 'ON Friday mornings'."
+       "whyUz": "⚠ KUNNING QISMI bilan 'IN':\n  IN the morning / IN the afternoon /\n  IN the evening\n\n⚠ ISTISNO: 'AT night' (kechasi).\n\n20-band bilan solishtiring: u yerda ANIQ KUN\naytilgani uchun 'ON Friday mornings'.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "15  The plane leaves ................. 9 am in the morning.",
@@ -189,7 +203,8 @@
         "in",
         "on"
        ],
-       "whyUz": "SOAT bilan DOIM 'AT':\n  AT 9 am / AT 7 o'clock / AT noon\n\n⚠ Gapda 'in the morning' ham bor — lekin\nbo'sh joy SOAT oldida."
+       "whyUz": "SOAT bilan DOIM 'AT':\n  AT 9 am / AT 7 o'clock / AT noon\n\n⚠ Gapda 'in the morning' ham bor — lekin\nbo'sh joy SOAT oldida.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "16  ................. long do elephants live?",
@@ -200,7 +215,8 @@
         "Where",
         "Why"
        ],
-       "whyUz": "'HOW LONG' = qancha vaqt (davomiylik).\n\n'Where long' / 'Why long' — mavjud emas.\n\n'How' oilasi: how old, how many, how much,\nhow long, how often, how far."
+       "whyUz": "'HOW LONG' = qancha vaqt (davomiylik).\n\n'Where long' / 'Why long' — mavjud emas.\n\n'How' oilasi: how old, how many, how much,\nhow long, how often, how far.",
+       "speakAnswer": "How"
       },
       {
        "prompt": "17  Pam ................. wakes up very early. She starts work at 7 am in the morning.",
@@ -211,7 +227,8 @@
         "never",
         "rarely"
        ],
-       "whyUz": "⚠ KALIT: ikkinchi gap — 'She starts work AT\n7 AM'.\n\nErtalab 7 da ish boshlash uchun DOIM erta\nturish kerak → ALWAYS.\n\n'never' va 'rarely' — mantiqan zid."
+       "whyUz": "⚠ KALIT: ikkinchi gap — 'She starts work AT\n7 AM'.\n\nErtalab 7 da ish boshlash uchun DOIM erta\nturish kerak → ALWAYS.\n\n'never' va 'rarely' — mantiqan zid.",
+       "speakAnswer": "always"
       },
       {
        "prompt": "18  A: ................. is your best friend?  B: Ann.",
@@ -222,7 +239,8 @@
         "When",
         "What"
        ],
-       "whyUz": "KALIT: javob ODAM ISMI ('Ann') → WHO.\n\n'When' — vaqt; 'What' — narsa."
+       "whyUz": "KALIT: javob ODAM ISMI ('Ann') → WHO.\n\n'When' — vaqt; 'What' — narsa.",
+       "speakAnswer": "Who"
       },
       {
        "prompt": "19  ................. Jim and Bill like playing football?",
@@ -233,7 +251,8 @@
         "Are",
         "Doesn't"
        ],
-       "whyUz": "'Jim and Bill' — KO'PLIK → DO.\n\n⚠ 'Are' — 'like' fe'li bilan ishlatilmaydi\n('Are they like?' XATO).\n⚠ 'Doesn't' — birlik va inkor."
+       "whyUz": "'Jim and Bill' — KO'PLIK → DO.\n\n⚠ 'Are' — 'like' fe'li bilan ishlatilmaydi\n('Are they like?' XATO).\n⚠ 'Doesn't' — birlik va inkor.",
+       "speakAnswer": "Do"
       },
       {
        "prompt": "20  Mum does the shopping ................. Friday mornings.",
@@ -244,7 +263,8 @@
         "at",
         "in"
        ],
-       "whyUz": "⚠ ANIQ KUN aytilgani uchun 'ON':\n  ON Friday mornings\n\n⚠ 14-band bilan solishtiring:\n  'IN the morning' (umuman ertalab)\n  'ON Friday morning' (aniq kun)\n\n'do the shopping' = xarid qilmoq."
+       "whyUz": "⚠ ANIQ KUN aytilgani uchun 'ON':\n  ON Friday mornings\n\n⚠ 14-band bilan solishtiring:\n  'IN the morning' (umuman ertalab)\n  'ON Friday morning' (aniq kun)\n\n'do the shopping' = xarid qilmoq.",
+       "speakAnswer": "on"
       }
      ]
     }
@@ -280,7 +300,8 @@
         "how long"
        ],
        "whyUz": "KALIT: javob 'TWICE A MONTH' — chastota\n→ HOW OFTEN.\n\nJavoblari: always, usually, often, sometimes,\nnever; once/twice a week.",
-       "speak": "1  '........................... do you go to the theatre?'  'Twice a month.'"
+       "speak": "1  '........................... do you go to the theatre?'  'Twice a month.'",
+       "speakAnswer": "how often"
       },
       {
        "prompt": "2  What ..................... do the shops open in Holland?",
@@ -293,7 +314,8 @@
         "how long"
        ],
        "whyUz": "'What TIME ...?' = soat nechchida?\n\n'What' allaqachon bosilgan, demak 'time'\nkerak.\n\nO'xshash: 'When do the shops open?'",
-       "speak": "2  What ..................... do the shops open in Holland?"
+       "speak": "2  What ..................... do the shops open in Holland?",
+       "speakAnswer": "time"
       },
       {
        "prompt": "3  He usually plays football ................... the weekend.",
@@ -306,7 +328,8 @@
         "how long"
        ],
        "whyUz": "⚠ 'AT the weekend' — Britaniya inglizchasi.\nAmerikada: 'ON the weekend'.\n\nEnterprise — BRITANIYA kitobi, shuning uchun\n'AT'.",
-       "speak": "3  He usually plays football ................... the weekend."
+       "speak": "3  He usually plays football ................... the weekend.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "4  '........... do kangaroos live?'  'Up to fifteen years.'",
@@ -319,7 +342,8 @@
         "at"
        ],
        "whyUz": "KALIT: javob 'UP TO FIFTEEN YEARS' —\nDAVOMIYLIK → HOW LONG.\n\n'How long' — qancha VAQT.\n'How far' — qancha MASOFA.",
-       "speak": "4  '........... do kangaroos live?'  'Up to fifteen years.'"
+       "speak": "4  '........... do kangaroos live?'  'Up to fifteen years.'",
+       "speakAnswer": "how long"
       },
       {
        "prompt": "5  Penguins have got wings, but they can't ............",
@@ -332,7 +356,8 @@
         "at"
        ],
        "whyUz": "⚠ Mashhur fakt: pingvinlarning QANOTI bor,\nlekin UCHA OLMAYDI (qanotlari bilan suzadi).\n\n'can't' dan keyin ASOSIY shakl: 'can't FLY'.",
-       "speak": "5  Penguins have got wings, but they can't ............"
+       "speak": "5  Penguins have got wings, but they can't ............",
+       "speakAnswer": "fly"
       },
       {
        "prompt": "6  ................................. legs has a tiger got?",
@@ -345,7 +370,8 @@
         "at"
        ],
        "whyUz": "'legs' — SANALADIGAN KO'PLIK → HOW MANY.\n\n⚠ HOW MANY + ko'plik ot (legs, books)\n   HOW MUCH + sanalmaydigan (money, water)\n\n12-band bilan solishtiring.",
-       "speak": "6  ................................. legs has a tiger got?"
+       "speak": "6  ................................. legs has a tiger got?",
+       "speakAnswer": "how many"
       },
       {
        "prompt": "7  She was born ......................... 2nd August, 1991.",
@@ -358,7 +384,8 @@
         "at"
        ],
        "whyUz": "ANIQ SANA bilan → ON.\n\n  ON 2nd August (sana)\n  IN August (oy)\n  IN 1991 (yil)\n\n3-mashqning 5-bandi ham shu qoidaga oid.",
-       "speak": "7  She was born ......................... 2nd August, 1991."
+       "speak": "7  She was born ......................... 2nd August, 1991.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "8  Do you usually ......................... TV in the evening?",
@@ -371,7 +398,8 @@
         "at"
        ],
        "whyUz": "⚠ 'WATCH TV' — 'see' yoki 'look' EMAS!\n\n  WATCH TV / watch a film / watch a match\n  SEE a friend / see a doctor\n  LOOK AT a picture\n\n'do' dan keyin ASOSIY shakl.",
-       "speak": "8  Do you usually ......................... TV in the evening?"
+       "speak": "8  Do you usually ......................... TV in the evening?",
+       "speakAnswer": "watch"
       },
       {
        "prompt": "9  He always ............... lunch   (birinchi bo'sh joy)",
@@ -384,7 +412,8 @@
         "at"
        ],
        "whyUz": "'He' — 3-shaxs birlik → HAS.\n\n'have lunch' = tushlik qilmoq\n(have breakfast/lunch/dinner).",
-       "speak": "9  He always ............... lunch   (birinchi bo'sh joy)"
+       "speak": "9  He always ............... lunch   (birinchi bo'sh joy)",
+       "speakAnswer": "has"
       },
       {
        "prompt": "9  He always has lunch ............... two o'clock.   (ikkinchi bo'sh joy)",
@@ -397,7 +426,8 @@
         "how long"
        ],
        "whyUz": "SOAT bilan DOIM 'AT':\n  AT two o'clock / AT 7:30 / AT noon",
-       "speak": "9  He always has lunch ............... two o'clock.   (ikkinchi bo'sh joy)"
+       "speak": "9  He always has lunch ............... two o'clock.   (ikkinchi bo'sh joy)",
+       "speakAnswer": "at"
       },
       {
        "prompt": "10  He never wakes up early ......................... Sundays.",
@@ -410,7 +440,8 @@
         "at"
        ],
        "whyUz": "KUN bilan → ON.\n\n  ON Sunday / ON Sundays / ON Monday morning\n\n3-band bilan solishtiring: 'AT the weekend'\n(dam olish kunlari) — bu ISTISNO.",
-       "speak": "10  He never wakes up early ......................... Sundays."
+       "speak": "10  He never wakes up early ......................... Sundays.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "11  He ......................... eats meat. He hates it.",
@@ -423,7 +454,8 @@
         "at"
        ],
        "whyUz": "KALIT: 'He HATES it' — demak UMUMAN yemaydi\n→ NEVER.\n\n⚠ O'RNI: asosiy fe'ldan OLDIN\n  'He NEVER eats.'  ✓\n  'He eats never.'  ✗\nLekin 'to be' dan KEYIN: 'He IS NEVER late.'",
-       "speak": "11  He ......................... eats meat. He hates it."
+       "speak": "11  He ......................... eats meat. He hates it.",
+       "speakAnswer": "never"
       },
       {
        "prompt": "12  ......................... does a sea lion weigh?",
@@ -436,7 +468,8 @@
         "at"
        ],
        "whyUz": "OG'IRLIK — SANALMAYDIGAN → HOW MUCH.\n\n⚠ 6-band bilan solishtiring:\n  HOW MANY legs? (sanaladigan)\n  HOW MUCH weight? (sanalmaydigan)\n\n'How much does it weigh?' — turg'un savol.",
-       "speak": "12  ......................... does a sea lion weigh?"
+       "speak": "12  ......................... does a sea lion weigh?",
+       "speakAnswer": "how much"
       },
       {
        "prompt": "13  'What ......................... he do?'  'He's a student.'",
@@ -449,7 +482,8 @@
         "at"
        ],
        "whyUz": "'he' — 3-shaxs birlik → DOES.\n\n⚠ 'What does he DO?' = kasbi nima?\n(20-banddagi 'What do you do in your FREE\nTIME?' dan farqli — u yerda mashg'ulot\nso'raladi.)",
-       "speak": "13  'What ......................... he do?'  'He's a student.'"
+       "speak": "13  'What ......................... he do?'  'He's a student.'",
+       "speakAnswer": "does"
       },
       {
        "prompt": "14  Jane likes cats but she ......................... like dogs.",
@@ -462,7 +496,8 @@
         "at"
        ],
        "whyUz": "'she' → DOESN'T + ASOSIY shakl:\n  'doesn't LIKE'  ✓\n  'doesn't LIKES' ✗\n\nBir gapda 'likes' (tasdiq) va 'doesn't like'\n(inkor) — '-s' faqat tasdiqda.",
-       "speak": "14  Jane likes cats but she ......................... like dogs."
+       "speak": "14  Jane likes cats but she ......................... like dogs.",
+       "speakAnswer": "doesn't"
       },
       {
        "prompt": "15  He likes reading, ................. he doesn't like fishing.",
@@ -475,7 +510,8 @@
         "at"
        ],
        "whyUz": "QARAMA-QARSHILIK (yoqtiradi ↔ yoqtirmaydi)\n→ BUT.\n\n18-band bilan solishtiring: u yerda SABAB\n→ BECAUSE.",
-       "speak": "15  He likes reading, ................. he doesn't like fishing."
+       "speak": "15  He likes reading, ................. he doesn't like fishing.",
+       "speakAnswer": "but"
       },
       {
        "prompt": "16  The plane arrives at a ......................... to seven.",
@@ -488,7 +524,8 @@
         "at"
        ],
        "whyUz": "'a QUARTER TO seven' = 06:45.\n\n  a quarter TO seven  = 06:45\n  a quarter PAST six  = 06:15\n  HALF PAST six       = 06:30\n\nTO — kam; PAST — o'tdi.",
-       "speak": "16  The plane arrives at a ......................... to seven."
+       "speak": "16  The plane arrives at a ......................... to seven.",
+       "speakAnswer": "quarter"
       },
       {
        "prompt": "17  ......................... you like your job?",
@@ -501,7 +538,8 @@
         "at"
        ],
        "whyUz": "'you' → DO.\n\n⚠ Gap boshida turgani uchun kitobda BOSH\nHARF: 'DO you like your job?'",
-       "speak": "17  ......................... you like your job?"
+       "speak": "17  ......................... you like your job?",
+       "speakAnswer": "do"
       },
       {
        "prompt": "18  She likes Sundays ............. she   (birinchi bo'sh joy)",
@@ -514,7 +552,8 @@
         "at"
        ],
        "whyUz": "SABAB → BECAUSE.\n\n  [natija] BECAUSE [sabab]\n  'She likes Sundays BECAUSE she goes to the\n   disco.'",
-       "speak": "18  She likes Sundays ............. she   (birinchi bo'sh joy)"
+       "speak": "18  She likes Sundays ............. she   (birinchi bo'sh joy)",
+       "speakAnswer": "because"
       },
       {
        "prompt": "18  She likes Sundays because she ......... to the disco.   (ikkinchi bo'sh joy)",
@@ -527,7 +566,8 @@
         "at"
        ],
        "whyUz": "'she' → fe'lga qo'shimcha.\n\n⚠ '-O' ga tugagan fe'lga '-ES' qo'shiladi:\n  go → GOES / do → DOES\n  (watch → watchES, wash → washES ham)",
-       "speak": "18  She likes Sundays because she ......... to the disco.   (ikkinchi bo'sh joy)"
+       "speak": "18  She likes Sundays because she ......... to the disco.   (ikkinchi bo'sh joy)",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "19  '......................... are you?'  'I'm thirty-nine.'",
@@ -540,7 +580,8 @@
         "at"
        ],
        "whyUz": "KALIT: javob YOSH → HOW OLD.\n\n'How old ARE you?' — 'be' bilan\n('How old HAVE you?' XATO).",
-       "speak": "19  '......................... are you?'  'I'm thirty-nine.'"
+       "speak": "19  '......................... are you?'  'I'm thirty-nine.'",
+       "speakAnswer": "how old"
       },
       {
        "prompt": "20  What ......................... you do in your free time?",
@@ -553,7 +594,8 @@
         "at"
        ],
        "whyUz": "'you' → DO.\n\n⚠ IKKI 'do' bir gapda:\n  birinchisi — YORDAMCHI ('do you')\n  ikkinchisi — ASOSIY fe'l ('do' = qilmoq)\n\n13-band bilan solishtiring:\n'What does he DO?' = kasbi nima?",
-       "speak": "20  What ......................... you do in your free time?"
+       "speak": "20  What ......................... you do in your free time?",
+       "speakAnswer": "do"
       }
      ]
     },
@@ -577,7 +619,8 @@
         "mouse",
         "mouse's"
        ],
-       "whyUz": "⚠ MANTIQAN G'ALATI (sichqonlarda pat yo'q),\nlekin GRAMMATIKA aniq:\n\n'HAVE' — KO'PLIK ega talab qiladi → MICE.\n'mouse' — birlik, 'HAS' kerak bo'lardi.\n'mouse's' — egalik shakli, ega bo'la olmaydi.\n\n⚠ mouse → MICE (noto'g'ri ko'plik!)"
+       "whyUz": "⚠ MANTIQAN G'ALATI (sichqonlarda pat yo'q),\nlekin GRAMMATIKA aniq:\n\n'HAVE' — KO'PLIK ega talab qiladi → MICE.\n'mouse' — birlik, 'HAS' kerak bo'lardi.\n'mouse's' — egalik shakli, ega bo'la olmaydi.\n\n⚠ mouse → MICE (noto'g'ri ko'plik!)",
+       "speakAnswer": "mice"
       },
       {
        "prompt": "2  The film starts at 9 o'clock and ................. at 10:30.",
@@ -588,7 +631,8 @@
         "begins",
         "completes"
        ],
-       "whyUz": "'start' ning ZIDI → FINISH.\n\n'begins' — 'starts' bilan BIR XIL ma'no\n(takror bo'lardi).\n'completes' — 'tugatmoq', obyekt kerak\n('complete a task')."
+       "whyUz": "'start' ning ZIDI → FINISH.\n\n'begins' — 'starts' bilan BIR XIL ma'no\n(takror bo'lardi).\n'completes' — 'tugatmoq', obyekt kerak\n('complete a task').",
+       "speakAnswer": "finishes"
       },
       {
        "prompt": "3  He ................. to work by car.",
@@ -599,7 +643,8 @@
         "drives",
         "arrives"
        ],
-       "whyUz": "⚠ 'BY car' bo'lgani uchun 'GOES' kerak.\n\n'DRIVES to work BY CAR' — TAKROR ('drive'\no'zi mashinada demakdir).\n'arrives TO work' — XATO ('arrive AT work')."
+       "whyUz": "⚠ 'BY car' bo'lgani uchun 'GOES' kerak.\n\n'DRIVES to work BY CAR' — TAKROR ('drive'\no'zi mashinada demakdir).\n'arrives TO work' — XATO ('arrive AT work').",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "4  ................. me, what's the time?",
@@ -610,7 +655,8 @@
         "Sorry",
         "Thanks"
        ],
-       "whyUz": "⚠ NOTANISH odamga murojaat → 'EXCUSE me'.\n\n  Excuse me — murojaat qilishdan OLDIN\n  Sorry — xato qilgandan KEYIN uzr\n  Thanks — minnatdorchilik"
+       "whyUz": "⚠ NOTANISH odamga murojaat → 'EXCUSE me'.\n\n  Excuse me — murojaat qilishdan OLDIN\n  Sorry — xato qilgandan KEYIN uzr\n  Thanks — minnatdorchilik",
+       "speakAnswer": "Excuse"
       },
       {
        "prompt": "5  He ................. the bus to work at 7:30.",
@@ -621,7 +667,8 @@
         "goes",
         "has"
        ],
-       "whyUz": "⚠ 'CATCH a bus/train' = avtobusga ulgurmoq.\n\n'goes the bus' — XATO (predlogsiz bo'lmaydi:\n'go BY bus').\n'has the bus' — mantiqsiz.\n\ncatch → caught → caught."
+       "whyUz": "⚠ 'CATCH a bus/train' = avtobusga ulgurmoq.\n\n'goes the bus' — XATO (predlogsiz bo'lmaydi:\n'go BY bus').\n'has the bus' — mantiqsiz.\n\ncatch → caught → caught.",
+       "speakAnswer": "catches"
       },
       {
        "prompt": "6  She is never late ................. school.",
@@ -632,7 +679,8 @@
         "in",
         "at"
        ],
-       "whyUz": "'be late FOR' — TURG'UN BIRIKMA.\n\n  be late FOR school / work / an appointment\n\n2-nazorat testida ham bor edi."
+       "whyUz": "'be late FOR' — TURG'UN BIRIKMA.\n\n  be late FOR school / work / an appointment\n\n2-nazorat testida ham bor edi.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "7  He ................. a shower before he goes to bed.",
@@ -643,7 +691,8 @@
         "makes",
         "does"
        ],
-       "whyUz": "⚠ 'HAVE a shower' (Britaniya) /\n'TAKE a shower' (Amerika).\n\n'make a shower' / 'do a shower' — XATO.\n\nO'xshash: have a bath, have breakfast."
+       "whyUz": "⚠ 'HAVE a shower' (Britaniya) /\n'TAKE a shower' (Amerika).\n\n'make a shower' / 'do a shower' — XATO.\n\nO'xshash: have a bath, have breakfast.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "8  Post offices are open from 9 am ................. 3pm.",
@@ -654,7 +703,8 @@
         "at",
         "for"
        ],
-       "whyUz": "'FROM ... UNTIL ...' — vaqt oralig'i.\n\n'until' = 'till' = 'to' (bu ma'noda).\n\n'from ... at' / 'from ... for' — XATO."
+       "whyUz": "'FROM ... UNTIL ...' — vaqt oralig'i.\n\n'until' = 'till' = 'to' (bu ma'noda).\n\n'from ... at' / 'from ... for' — XATO.",
+       "speakAnswer": "until"
       },
       {
        "prompt": "9  She likes her job a lot because she ................. a lot of money.",
@@ -665,7 +715,8 @@
         "wins",
         "does"
        ],
-       "whyUz": "⚠ 'EARN money' = ishlab pul topmoq.\n\n'WIN money' = yutuq yutmoq (lotereya,\nmusobaqa).\n'do money' — mavjud emas.\n\n(Coursebook 114-bet, 4-mashq: find ↔ earn.)"
+       "whyUz": "⚠ 'EARN money' = ishlab pul topmoq.\n\n'WIN money' = yutuq yutmoq (lotereya,\nmusobaqa).\n'do money' — mavjud emas.\n\n(Coursebook 114-bet, 4-mashq: find ↔ earn.)",
+       "speakAnswer": "earns"
       },
       {
        "prompt": "10  Mammals ................. their babies on milk.",
@@ -676,7 +727,8 @@
         "give",
         "eat"
        ],
-       "whyUz": "⚠ 'FEED somebody ON something' = kimnidir\nbiror narsa bilan BOQMOQ.\n\n'EAT' — o'zi yemoq (bola o'zi yeydi).\n'GIVE' — 'give milk TO their babies' bo'lardi\n(predlog 'on' emas, 'to')."
+       "whyUz": "⚠ 'FEED somebody ON something' = kimnidir\nbiror narsa bilan BOQMOQ.\n\n'EAT' — o'zi yemoq (bola o'zi yeydi).\n'GIVE' — 'give milk TO their babies' bo'lardi\n(predlog 'on' emas, 'to').",
+       "speakAnswer": "feed"
       }
      ]
     }

@@ -192,35 +192,40 @@
        "answer": "She is in the water.",
        "promptUz": "1-rasm: qayiq va ko'l",
        "whyUz": "Sandra qayiqdan tushib, Loch Ness ko'lining suviga tushib qolgan.\n'in the water' — suv ICHIDA → IN.",
-       "speak": "1  Where is Sandra in the first picture?"
+       "speak": "1  Where is Sandra in the first picture?",
+       "speakAnswer": "She is in the water."
       },
       {
        "prompt": "2  Who saves Sandra?",
        "answer": "David saves her.",
        "promptUz": "Kim qo'lini uzatadi?",
        "whyUz": "Devid: 'Just take my hand!' — u Sandrani qutqaradi.\n'to save' = qutqarmoq. Birlik ega → saveS.",
-       "speak": "2  Who saves Sandra?"
+       "speak": "2  Who saves Sandra?",
+       "speakAnswer": "David saves her."
       },
       {
        "prompt": "3  How does Sandra feel in the third picture?",
        "answer": "She feels cold.",
        "promptUz": "Sandra 'Brrr!' deydi",
        "whyUz": "Sandra: 'Brrr! I'm cold.' — u sovqotgan.\n'feel' + sifat: She feels cold ('feels coldly' XATO).",
-       "speak": "3  How does Sandra feel in the third picture?"
+       "speak": "3  How does Sandra feel in the third picture?",
+       "speakAnswer": "She feels cold."
       },
       {
        "prompt": "4  What is in the envelope?",
        "answer": "The photographs are in the envelope.",
        "promptUz": "Devid Maykka nima beradi?",
        "whyUz": "Devid: 'They're right here in this envelope!'",
-       "speak": "4  What is in the envelope?"
+       "speak": "4  What is in the envelope?",
+       "speakAnswer": "The photographs are in the envelope."
       },
       {
        "prompt": "5  Whose face is it in the photographs?",
        "answer": "It is Sandra's face.",
        "promptUz": "Mayk sariq soch va ko'k ko'z haqida gapiradi",
        "whyUz": "Mayk: 'the monster has got blonde hair and big blue eyes' — bu Sandra.\nOxirgi rasmda ham Sandraning surati ko'rinadi.\n'Whose' = kimniki → javobda egalik: Sandra'S face.",
-       "speak": "5  Whose face is it in the photographs?"
+       "speak": "5  Whose face is it in the photographs?",
+       "speakAnswer": "It is Sandra's face."
       }
      ]
     },
@@ -301,7 +306,8 @@
         "short"
        ],
        "whyUz": "cold (sovuq) ↔ warm (iliq).\nDIQQAT: 'hot' (issiq) ham aksi, lekin ro'yxatda 'warm' bor.",
-       "speak": "1  cold ≠ ............"
+       "speak": "1  cold ≠ ............",
+       "speakAnswer": "warm"
       },
       {
        "prompt": "2  long ≠ ............",
@@ -312,7 +318,8 @@
         "warm"
        ],
        "whyUz": "long (uzun) ↔ short (kalta).\nMaxluqning bo'yni UZUN, dumi esa kalta bo'lardi.",
-       "speak": "2  long ≠ ............"
+       "speak": "2  long ≠ ............",
+       "speakAnswer": "short"
       },
       {
        "prompt": "3  small ≠ ............",
@@ -323,7 +330,8 @@
         "warm"
        ],
        "whyUz": "small (kichik) ↔ big (katta).\nMaxluqning boshi KICHIK, o'zi esa juda katta (huge).",
-       "speak": "3  small ≠ ............"
+       "speak": "3  small ≠ ............",
+       "speakAnswer": "big"
       }
      ]
     },
@@ -343,21 +351,24 @@
        "answer": "No, it isn't. The water is cold.",
        "promptUz": "Sandra suv haqida nima deydi?",
        "whyUz": "Sandra: 'The water's COLD and I'm scared!'\n'is' bilan gap → qisqa javob 'it isn't'.",
-       "speak": "2  The water is warm."
+       "speak": "2  The water is warm.",
+       "speakAnswer": "No, it isn't. The water is cold."
       },
       {
        "prompt": "3  The monster's name is Nessie.",
        "answer": "Yes, it is.",
        "promptUz": "Devid maxluqni qanday ataydi?",
        "whyUz": "TO'G'RI. Devid: 'we've got photos of NESSIE'.\nMayk ham: 'the photographs of Nessie'.",
-       "speak": "3  The monster's name is Nessie."
+       "speak": "3  The monster's name is Nessie.",
+       "speakAnswer": "Yes, it is."
       },
       {
        "prompt": "4  The monster has got a short neck.",
        "answer": "No, it hasn't. The monster has got a long neck.",
        "promptUz": "Devid telefonda nima deydi?",
        "whyUz": "Devid: 'It's got a LONG neck and a small head.'\n'has got' bilan gap → qisqa javob 'it hasn't'.",
-       "speak": "4  The monster has got a short neck."
+       "speak": "4  The monster has got a short neck.",
+       "speakAnswer": "No, it hasn't. The monster has got a long neck."
       }
      ]
     },
@@ -382,7 +393,8 @@
         "surprised",
         "tired"
        ],
-       "whyUz": "b-rasmda Maykning qoshlari qovoq solgan va tishlari ko'rinadi → ANGRY.\nU noto'g'ri suratlarni ko'rib jahli chiqadi."
+       "whyUz": "b-rasmda Maykning qoshlari qovoq solgan va tishlari ko'rinadi → ANGRY.\nU noto'g'ri suratlarni ko'rib jahli chiqadi.",
+       "speakAnswer": "angry"
       },
       {
        "prompt": "c-strelka",
@@ -394,7 +406,8 @@
         "surprised",
         "tired"
        ],
-       "whyUz": "c-rasmda Devid tabassum qilyapti → HAPPY.\nU Nessining suratini olganiga ishonib xursand."
+       "whyUz": "c-rasmda Devid tabassum qilyapti → HAPPY.\nU Nessining suratini olganiga ishonib xursand.",
+       "speakAnswer": "happy"
       },
       {
        "prompt": "d-strelka",
@@ -406,7 +419,8 @@
         "tired",
         "angry"
        ],
-       "whyUz": "d-rasmda Sandraning ko'zlari katta ochilgan, og'zi 'O' shaklida → SCARED.\nBu — suvga tushgan paytdagi ifodasi."
+       "whyUz": "d-rasmda Sandraning ko'zlari katta ochilgan, og'zi 'O' shaklida → SCARED.\nBu — suvga tushgan paytdagi ifodasi.",
+       "speakAnswer": "scared"
       },
       {
        "prompt": "e-strelka",
@@ -418,7 +432,8 @@
         "surprised",
         "angry"
        ],
-       "whyUz": "e-rasmda Sandraning ko'zlari yumilgan, qo'li peshanasida → TIRED.\nSuvdan chiqqandan keyin charchagan."
+       "whyUz": "e-rasmda Sandraning ko'zlari yumilgan, qo'li peshanasida → TIRED.\nSuvdan chiqqandan keyin charchagan.",
+       "speakAnswer": "tired"
       },
       {
        "prompt": "f-strelka",
@@ -430,7 +445,8 @@
         "surprised",
         "tired"
        ],
-       "whyUz": "f-rasmda Sandraning yuzi burishgan → UPSET.\nSuratlar noto'g'ri chiqqanidan xafa."
+       "whyUz": "f-rasmda Sandraning yuzi burishgan → UPSET.\nSuratlar noto'g'ri chiqqanidan xafa.",
+       "speakAnswer": "upset"
       }
      ]
     },
@@ -448,32 +464,38 @@
       {
        "prompt": "a — Mike",
        "answer": "Mike is surprised.",
-       "promptUz": "Kitobdagi namuna gapni yozing"
+       "promptUz": "Kitobdagi namuna gapni yozing",
+       "speakAnswer": "Mike is surprised."
       },
       {
        "prompt": "b — Mike",
        "answer": "Mike is angry.",
-       "promptUz": "b-rasm bo'yicha gap tuzing"
+       "promptUz": "b-rasm bo'yicha gap tuzing",
+       "speakAnswer": "Mike is angry."
       },
       {
        "prompt": "c — David",
        "answer": "David is happy.",
-       "promptUz": "c-rasm bo'yicha gap tuzing"
+       "promptUz": "c-rasm bo'yicha gap tuzing",
+       "speakAnswer": "David is happy."
       },
       {
        "prompt": "d — Sandra",
        "answer": "Sandra is scared.",
-       "promptUz": "d-rasm bo'yicha gap tuzing"
+       "promptUz": "d-rasm bo'yicha gap tuzing",
+       "speakAnswer": "Sandra is scared."
       },
       {
        "prompt": "e — Sandra",
        "answer": "Sandra is tired.",
-       "promptUz": "e-rasm bo'yicha gap tuzing"
+       "promptUz": "e-rasm bo'yicha gap tuzing",
+       "speakAnswer": "Sandra is tired."
       },
       {
        "prompt": "f — Sandra",
        "answer": "Sandra is upset.",
-       "promptUz": "f-rasm bo'yicha gap tuzing"
+       "promptUz": "f-rasm bo'yicha gap tuzing",
+       "speakAnswer": "Sandra is upset."
       }
      ]
     },
@@ -492,79 +514,92 @@
        "prompt": "1-buyruq gap (Sandra, 1-rasm):",
        "answer": "Help me!",
        "promptUz": "Sandra suvdan baqiradi",
-       "whyUz": "'Help' — fe'l, egasi yo'q → buyruq gap."
+       "whyUz": "'Help' — fe'l, egasi yo'q → buyruq gap.",
+       "speakAnswer": "Help me!"
       },
       {
        "prompt": "2-buyruq gap (Devid, 1-rasm):",
        "answer": "Don't be afraid, Sandra.",
        "promptUz": "Devid Sandrani tinchlantiradi",
-       "whyUz": "DON'T + BE → buyruq gapning inkori."
+       "whyUz": "DON'T + BE → buyruq gapning inkori.",
+       "speakAnswer": "Don't be afraid, Sandra."
       },
       {
        "prompt": "3-buyruq gap (Devid, 1-rasm):",
        "answer": "Swim fast!",
        "promptUz": "Devid Sandraga maslahat beradi",
-       "whyUz": "'Swim' — fe'l asos shaklida → buyruq gap."
+       "whyUz": "'Swim' — fe'l asos shaklida → buyruq gap.",
+       "speakAnswer": "Swim fast!"
       },
       {
        "prompt": "4-buyruq gap (Sandra, 2-rasm):",
        "answer": "Help!",
        "promptUz": "Sandra yana baqiradi",
-       "whyUz": "Bitta so'zli buyruq gap — favqulodda holatda ishlatiladi."
+       "whyUz": "Bitta so'zli buyruq gap — favqulodda holatda ishlatiladi.",
+       "speakAnswer": "Help!"
       },
       {
        "prompt": "5-buyruq gap (Devid, 2-rasm):",
        "answer": "Just take my hand!",
        "promptUz": "Devid qo'lini uzatadi",
-       "whyUz": "'Just' — yumshatuvchi so'z, buyruq gapni o'zgartirmaydi."
+       "whyUz": "'Just' — yumshatuvchi so'z, buyruq gapni o'zgartirmaydi.",
+       "speakAnswer": "Just take my hand!"
       },
       {
        "prompt": "6-buyruq gap (Devid, 3-rasm):",
        "answer": "Here, put this on.",
        "promptUz": "Devid Sandraga kiyim beradi",
-       "whyUz": "'put on' — frazali fe'l, buyruq shaklida."
+       "whyUz": "'put on' — frazali fe'l, buyruq shaklida.",
+       "speakAnswer": "Here, put this on."
       },
       {
        "prompt": "7-buyruq gap (Devid, 4-rasm):",
        "answer": "Don't worry.",
        "promptUz": "Devid Sandrani tinchlantiradi",
-       "whyUz": "DON'T + fe'l → buyruq gapning inkori."
+       "whyUz": "DON'T + fe'l → buyruq gapning inkori.",
+       "speakAnswer": "Don't worry."
       },
       {
        "prompt": "1-savol (Sandra, 1-rasm):",
        "answer": "David! Where are you?",
        "promptUz": "Sandra Devidni qidiradi",
-       "whyUz": "'Where' so'roq so'zi + 'are' + ega."
+       "whyUz": "'Where' so'roq so'zi + 'are' + ega.",
+       "speakAnswer": "David! Where are you?"
       },
       {
        "prompt": "2-savol (Devid, 3-rasm):",
        "answer": "Are you okay?",
        "promptUz": "Devid Sandraning ahvolini so'raydi",
-       "whyUz": "'Are' bilan boshlanadi → ha/yo'q savoli."
+       "whyUz": "'Are' bilan boshlanadi → ha/yo'q savoli.",
+       "speakAnswer": "Are you okay?"
       },
       {
        "prompt": "3-savol (Sandra, 4-rasm):",
        "answer": "Where's the monster?",
        "promptUz": "Sandra maxluq haqida so'raydi",
-       "whyUz": "'Where's' = Where IS."
+       "whyUz": "'Where's' = Where IS.",
+       "speakAnswer": "Where's the monster?"
       },
       {
        "prompt": "4-savol (Mayk, Londonda):",
        "answer": "Well, David, are these the photographs of Nessie?",
        "promptUz": "Mayk konvert haqida so'raydi",
-       "whyUz": "'are these ...?' — ko'plik ha/yo'q savoli."
+       "whyUz": "'are these ...?' — ko'plik ha/yo'q savoli.",
+       "speakAnswer": "Well, David, are these the photographs of Nessie?"
       },
       {
        "prompt": "5-savol (Devid, oxirgi rasm):",
        "answer": "What?!",
        "promptUz": "Devid hayron bo'ladi",
-       "whyUz": "Bitta so'zli savol — hayrat va tushunmovchilikni bildiradi."
+       "whyUz": "Bitta so'zli savol — hayrat va tushunmovchilikni bildiradi.",
+       "speakAnswer": "What?!"
       },
       {
        "prompt": "6-savol (Devid, oxirgi rasm):",
        "answer": "Where are the photographs of Nessie?",
        "promptUz": "Devid suratlarni qidiradi",
-       "whyUz": "'Where' + 'are' + ko'plik ega ('the photographs')."
+       "whyUz": "'Where' + 'are' + ko'plik ega ('the photographs').",
+       "speakAnswer": "Where are the photographs of Nessie?"
       }
      ]
     },
@@ -653,28 +688,32 @@
        "answer": "They go to the loch by train.",
        "promptUz": "1-epizodda 'ON THE TRAIN...' yozuvi bor edi",
        "whyUz": "1-epizodda (24-bet) 'ON THE TRAIN...' sahnasi bor;\n2-epizodda esa 'AT THE TRAIN STATION...' — demak POYEZDDA.\nTransport: BY train (artiklsiz).",
-       "speak": "1-XATO: \"David and Sandra go to the loch by bus.\""
+       "speak": "1-XATO: \"David and Sandra go to the loch by bus.\"",
+       "speakAnswer": "They go to the loch by train."
       },
       {
        "prompt": "2-XATO: \"The monster is small.\"",
        "answer": "The monster is huge.",
        "promptUz": "Devid telefonda maxluq haqida nima deydi?",
        "whyUz": "Devid: 'It's amazing — it's HUGE!'\n1-epizodda ham: 'Wow! It's huge!'\nFaqat BOSHI kichik ('a small head'), o'zi esa ulkan.",
-       "speak": "2-XATO: \"The monster is small.\""
+       "speak": "2-XATO: \"The monster is small.\"",
+       "speakAnswer": "The monster is huge."
       },
       {
        "prompt": "3-XATO: \"David telephones Mike and tells him about the accident.\"",
        "answer": "David telephones Mike and tells him about the monster and the photographs.",
        "promptUz": "Telefon suhbatida nima haqida gapiriladi?",
        "whyUz": "Devid telefonda halokat haqida emas, MAXLUQ va SURATLAR haqida gapiradi:\n'Bingo! I've got photos of the Loch Ness monster.'",
-       "speak": "3-XATO: \"David telephones Mike and tells him about the accident.\""
+       "speak": "3-XATO: \"David telephones Mike and tells him about the accident.\"",
+       "speakAnswer": "David telephones Mike and tells him about the monster and the photographs."
       },
       {
        "prompt": "4-XATO: \"They are all photographs of David's face.\"",
        "answer": "They are all photographs of Sandra's face.",
        "promptUz": "Konvertdagi suratda kim bor?",
        "whyUz": "Mayk: 'blonde hair and big blue eyes' — bu SANDRA.\nOxirgi rasmda ham Sandraning surati ko'rinadi.",
-       "speak": "4-XATO: \"They are all photographs of David's face.\""
+       "speak": "4-XATO: \"They are all photographs of David's face.\"",
+       "speakAnswer": "They are all photographs of Sandra's face."
       }
      ]
     }
@@ -704,49 +743,56 @@
        "answer": "long",
        "promptUz": "'wide' (en) bilan juft bo'lgan o'lcham",
        "whyUz": "'X miles LONG and Y miles WIDE' — uzunlik va en.\n'a mile' = mil (taxminan 1,6 km).",
-       "speak": "It is twenty-three miles 1) ............ and one mile wide."
+       "speak": "It is twenty-three miles 1) ............ and one mile wide.",
+       "speakAnswer": "long"
       },
       {
        "prompt": "It's a very deep 2) ............ .",
        "answer": "lake",
        "promptUz": "Loch Ness nima?",
        "whyUz": "'a lake' = ko'l. 'deep' = chuqur.\nLoch Ness — Britaniyadagi eng chuqur ko'llardan.",
-       "speak": "It's a very deep 2) ............ ."
+       "speak": "It's a very deep 2) ............ .",
+       "speakAnswer": "lake"
       },
       {
        "prompt": "The water is 3) ............ and cold.",
        "answer": "dark",
        "promptUz": "Suvning rangi haqida",
        "whyUz": "'dark' = qorong'i, to'q. Torf tufayli suv qora ko'rinadi —\nshuning uchun maxluqni ko'rish qiyin degan afsona bor.",
-       "speak": "The water is 3) ............ and cold."
+       "speak": "The water is 3) ............ and cold.",
+       "speakAnswer": "dark"
       },
       {
        "prompt": "People believe that a 4) ............ lives in the waters of Loch Ness.",
        "answer": "monster",
        "promptUz": "Nessi kim?",
        "whyUz": "'a monster' = maxluq. Keyingi gapda: 'They call this MONSTER Nessie.'\n'believe that ...' = ...deb ishonmoq.",
-       "speak": "People believe that a 4) ............ lives in the waters of Loch Ness."
+       "speak": "People believe that a 4) ............ lives in the waters of Loch Ness.",
+       "speakAnswer": "monster"
       },
       {
        "prompt": "There are lots of 5) ............ by the lake.",
        "answer": "trees",
        "promptUz": "Ko'l bo'yidagi o'simliklar",
        "whyUz": "'trees' = daraxtlar. 'lots of' = ko'p.\n'by the lake' = ko'l bo'yida.",
-       "speak": "There are lots of 5) ............ by the lake."
+       "speak": "There are lots of 5) ............ by the lake.",
+       "speakAnswer": "trees"
       },
       {
        "prompt": "A lot of tourists 6) ............ Loch Ness every year.",
        "answer": "visit",
        "promptUz": "Sayyohlar nima qiladi?",
        "whyUz": "'to visit' = tashrif buyurmoq.\nKo'plik ega ('tourists') → fe'lga -s QO'SHILMAYDI.",
-       "speak": "A lot of tourists 6) ............ Loch Ness every year."
+       "speak": "A lot of tourists 6) ............ Loch Ness every year.",
+       "speakAnswer": "visit"
       },
       {
        "prompt": "SAVOL: What is the name of the castle?",
        "answer": "It is called Urquhart Castle.",
        "promptUz": "Matnda qasr nomi aytilgan",
        "whyUz": "Matnda: 'There is also a castle called Urquhart Castle.'\nTalaffuzi: /ˈɜːkət/ — 'orkat' (shotlandcha nom).\nRasmdagi vayrona qasr — aynan shu.",
-       "speak": "SAVOL: What is the name of the castle?"
+       "speak": "SAVOL: What is the name of the castle?",
+       "speakAnswer": "It is called Urquhart Castle."
       }
      ]
     }

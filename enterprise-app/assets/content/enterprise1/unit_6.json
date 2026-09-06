@@ -36,7 +36,8 @@
         "penguins",
         "lion"
        ],
-       "speak": "Picture A — a grey sea animal jumping out of the waves"
+       "speak": "Picture A — a grey sea animal jumping out of the waves",
+       "speakAnswer": "dolphin"
       },
       {
        "prompt": "Picture B — a bird with bright red, yellow and blue feathers and a long tail",
@@ -48,7 +49,8 @@
         "penguins",
         "lion"
        ],
-       "speak": "Picture B — a bird with bright red, yellow and blue feathers and a long tail"
+       "speak": "Picture B — a bird with bright red, yellow and blue feathers and a long tail",
+       "speakAnswer": "parrot"
       },
       {
        "prompt": "Picture C — a group of black and white birds standing upright on the ice",
@@ -60,7 +62,8 @@
         "penguins",
         "lion"
        ],
-       "speak": "Picture C — a group of black and white birds standing upright on the ice"
+       "speak": "Picture C — a group of black and white birds standing upright on the ice",
+       "speakAnswer": "penguins"
       },
       {
        "prompt": "Picture D — a large golden cat with a thick mane around its head",
@@ -72,7 +75,8 @@
         "penguins",
         "lion"
        ],
-       "speak": "Picture D — a large golden cat with a thick mane around its head"
+       "speak": "Picture D — a large golden cat with a thick mane around its head",
+       "speakAnswer": "lion"
       }
      ]
     },
@@ -97,7 +101,8 @@
         "dolphin and parrot",
         "lion and penguins"
        ],
-       "whyUz": "Qushlarda pat va qanot bor, tuxum qo'yadi. To'tiqush va pingvin — qush."
+       "whyUz": "Qushlarda pat va qanot bor, tuxum qo'yadi. To'tiqush va pingvin — qush.",
+       "speakAnswer": "parrot and penguins"
       },
       {
        "prompt": "Which of them are mammals?",
@@ -109,7 +114,8 @@
         "dolphin and parrot",
         "lion and penguins"
        ],
-       "whyUz": "Sutemizuvchilar bola tug'adi va sut bilan boqadi. Delfin BALIQ EMAS — sutemizuvchi!"
+       "whyUz": "Sutemizuvchilar bola tug'adi va sut bilan boqadi. Delfin BALIQ EMAS — sutemizuvchi!",
+       "speakAnswer": "dolphin and lion"
       },
       {
        "prompt": "Which of them have fur?",
@@ -121,7 +127,8 @@
         "the parrot",
         "the penguins"
        ],
-       "whyUz": "'fur' = jun. Faqat sherda. Delfinda teri (skin) bor, jun yo'q."
+       "whyUz": "'fur' = jun. Faqat sherda. Delfinda teri (skin) bor, jun yo'q.",
+       "speakAnswer": "the lion"
       },
       {
        "prompt": "Which of them have fins?",
@@ -133,7 +140,8 @@
         "the parrot",
         "the penguins"
        ],
-       "whyUz": "'fins' = suzgichlar. Suzishga yordam beradi."
+       "whyUz": "'fins' = suzgichlar. Suzishga yordam beradi.",
+       "speakAnswer": "the dolphin"
       },
       {
        "prompt": "Which of them have a tail?",
@@ -145,7 +153,8 @@
         "only the dolphin",
         "only the birds"
        ],
-       "whyUz": "To'rttasida ham dum bor: delfin, sher, to'tiqush, pingvin."
+       "whyUz": "To'rttasida ham dum bor: delfin, sher, to'tiqush, pingvin.",
+       "speakAnswer": "all of them"
       },
       {
        "prompt": "Which of them have skin (without fur)?",
@@ -157,7 +166,8 @@
         "the parrot",
         "the penguins"
        ],
-       "whyUz": "Matnda: 'They've got grey skin'. Delfinda jun yo'q — silliq teri."
+       "whyUz": "Matnda: 'They've got grey skin'. Delfinda jun yo'q — silliq teri.",
+       "speakAnswer": "the dolphin"
       },
       {
        "prompt": "Which of them have feathers?",
@@ -169,7 +179,8 @@
         "the lion",
         "the dolphin and the lion"
        ],
-       "whyUz": "'feathers' = patlar. Faqat qushlarda bo'ladi."
+       "whyUz": "'feathers' = patlar. Faqat qushlarda bo'ladi.",
+       "speakAnswer": "the parrot and the penguins"
       },
       {
        "prompt": "Which of them have wings?",
@@ -181,7 +192,8 @@
         "the lion",
         "only the parrot"
        ],
-       "whyUz": "Pingvinda ham qanot BOR, lekin u ucha olmaydi — qanotlari suzish uchun."
+       "whyUz": "Pingvinda ham qanot BOR, lekin u ucha olmaydi — qanotlari suzish uchun.",
+       "speakAnswer": "the parrot and the penguins"
       },
       {
        "prompt": "Which of them have a mane?",
@@ -193,7 +205,8 @@
         "the parrot",
         "the penguins"
        ],
-       "whyUz": "'a mane' = yol (bo'yin sochi). Faqat ERKAK sherda bo'ladi."
+       "whyUz": "'a mane' = yol (bo'yin sochi). Faqat ERKAK sherda bo'ladi.",
+       "speakAnswer": "the lion"
       },
       {
        "prompt": "Which of them have legs?",
@@ -205,7 +218,8 @@
         "only the lion",
         "the dolphin and the lion"
        ],
-       "whyUz": "Delfinda oyoq YO'Q. Matnda: 'They haven't got legs'."
+       "whyUz": "Delfinda oyoq YO'Q. Matnda: 'They haven't got legs'.",
+       "speakAnswer": "the lion, the parrot and the penguins"
       },
       {
        "prompt": "Which of them can fly?",
@@ -217,7 +231,8 @@
         "the penguins",
         "none of them"
        ],
-       "whyUz": "Pingvin qush, lekin UCHA OLMAYDI. Matnda: 'they can't fly!'"
+       "whyUz": "Pingvin qush, lekin UCHA OLMAYDI. Matnda: 'they can't fly!'",
+       "speakAnswer": "the parrot"
       },
       {
        "prompt": "Which of them can run?",
@@ -229,7 +244,8 @@
         "the parrot",
         "the penguins"
        ],
-       "whyUz": "Sher tez yuguradi. Pingvin yura oladi, lekin yugurmaydi."
+       "whyUz": "Sher tez yuguradi. Pingvin yura oladi, lekin yugurmaydi.",
+       "speakAnswer": "the lion"
       },
       {
        "prompt": "Which of them can swim?",
@@ -241,7 +257,8 @@
         "the lion and the dolphin",
         "all of them"
        ],
-       "whyUz": "Ikkalasi ham juda yaxshi suzadi. Matnda: 'They can swim very well'."
+       "whyUz": "Ikkalasi ham juda yaxshi suzadi. Matnda: 'They can swim very well'.",
+       "speakAnswer": "the dolphin and the penguins"
       }
      ]
     },
@@ -375,7 +392,8 @@
         "h. dog",
         "i. cat"
        ],
-       "speak": "Picture 1 — a large reptile with its mouth wide open"
+       "speak": "Picture 1 — a large reptile with its mouth wide open",
+       "speakAnswer": "a. crocodile"
       },
       {
        "prompt": "Picture 2 — a dark brown farm animal with a white mane and four long legs",
@@ -392,7 +410,8 @@
         "h. dog",
         "i. cat"
        ],
-       "speak": "Picture 2 — a dark brown farm animal with a white mane and four long legs"
+       "speak": "Picture 2 — a dark brown farm animal with a white mane and four long legs",
+       "speakAnswer": "d. horse"
       },
       {
        "prompt": "Picture 3 — a black and white farm bird with a red comb on its head",
@@ -409,7 +428,8 @@
         "h. dog",
         "i. cat"
        ],
-       "speak": "Picture 3 — a black and white farm bird with a red comb on its head"
+       "speak": "Picture 3 — a black and white farm bird with a red comb on its head",
+       "speakAnswer": "e. rooster"
       },
       {
        "prompt": "Picture 4 — a small brown animal with hands and a long tail, sitting down",
@@ -426,7 +446,8 @@
         "h. dog",
         "i. cat"
        ],
-       "speak": "Picture 4 — a small brown animal with hands and a long tail, sitting down"
+       "speak": "Picture 4 — a small brown animal with hands and a long tail, sitting down",
+       "speakAnswer": "c. monkey"
       },
       {
        "prompt": "Picture 5 — a small grey striped pet with whiskers, sitting",
@@ -443,7 +464,8 @@
         "h. dog",
         "i. cat"
        ],
-       "speak": "Picture 5 — a small grey striped pet with whiskers, sitting"
+       "speak": "Picture 5 — a small grey striped pet with whiskers, sitting",
+       "speakAnswer": "i. cat"
       },
       {
        "prompt": "Picture 6 — a black and brown pet with big ears standing up",
@@ -460,7 +482,8 @@
         "h. dog",
         "i. cat"
        ],
-       "speak": "Picture 6 — a black and brown pet with big ears standing up"
+       "speak": "Picture 6 — a black and brown pet with big ears standing up",
+       "speakAnswer": "h. dog"
       },
       {
        "prompt": "Picture 7 — a big black and white farm animal that gives milk",
@@ -477,7 +500,8 @@
         "h. dog",
         "i. cat"
        ],
-       "speak": "Picture 7 — a big black and white farm animal that gives milk"
+       "speak": "Picture 7 — a big black and white farm animal that gives milk",
+       "speakAnswer": "g. cow"
       },
       {
        "prompt": "Picture 8 — a long brown and orange reptile with no legs",
@@ -494,7 +518,8 @@
         "h. dog",
         "i. cat"
        ],
-       "speak": "Picture 8 — a long brown and orange reptile with no legs"
+       "speak": "Picture 8 — a long brown and orange reptile with no legs",
+       "speakAnswer": "f. snake"
       },
       {
        "prompt": "Picture 9 — a black insect with two big yellow-patterned wings",
@@ -511,7 +536,8 @@
         "h. dog",
         "i. cat"
        ],
-       "speak": "Picture 9 — a black insect with two big yellow-patterned wings"
+       "speak": "Picture 9 — a black insect with two big yellow-patterned wings",
+       "speakAnswer": "b. butterfly"
       }
      ]
     },
@@ -536,7 +562,8 @@
         "insects",
         "birds"
        ],
-       "whyUz": "Ilon — sudralib yuruvchi. Timsoh bilan bir guruhda."
+       "whyUz": "Ilon — sudralib yuruvchi. Timsoh bilan bir guruhda.",
+       "speakAnswer": "reptiles"
       },
       {
        "prompt": "Butterflies are ... .",
@@ -548,7 +575,8 @@
         "reptiles",
         "mammals"
        ],
-       "whyUz": "Kapalak — hasharot. Qanoti bor, lekin qush EMAS: pati yo'q, olti oyog'i bor.\n'butterfly' → ko'plikda 'butterflies' (y → ies)."
+       "whyUz": "Kapalak — hasharot. Qanoti bor, lekin qush EMAS: pati yo'q, olti oyog'i bor.\n'butterfly' → ko'plikda 'butterflies' (y → ies).",
+       "speakAnswer": "insects"
       },
       {
        "prompt": "Roosters are ... .",
@@ -560,7 +588,8 @@
         "reptiles",
         "insects"
        ],
-       "whyUz": "Xo'roz — qush. Pat, qanot va tumshug'i bor."
+       "whyUz": "Xo'roz — qush. Pat, qanot va tumshug'i bor.",
+       "speakAnswer": "birds"
       },
       {
        "prompt": "Horses are ... .",
@@ -572,7 +601,8 @@
         "reptiles",
         "insects"
        ],
-       "whyUz": "Ot bola tug'adi va sut bilan boqadi."
+       "whyUz": "Ot bola tug'adi va sut bilan boqadi.",
+       "speakAnswer": "mammals"
       },
       {
        "prompt": "Monkeys are ... .",
@@ -584,7 +614,8 @@
         "reptiles",
         "insects"
        ],
-       "whyUz": "'monkey' → ko'plikda 'monkeys' (unlidan keyin y → faqat -s)."
+       "whyUz": "'monkey' → ko'plikda 'monkeys' (unlidan keyin y → faqat -s).",
+       "speakAnswer": "mammals"
       },
       {
        "prompt": "Cats are ... .",
@@ -596,7 +627,8 @@
         "reptiles",
         "insects"
        ],
-       "whyUz": "Mushuk — sutemizuvchi, juni bor."
+       "whyUz": "Mushuk — sutemizuvchi, juni bor.",
+       "speakAnswer": "mammals"
       },
       {
        "prompt": "Dogs are ... .",
@@ -608,7 +640,8 @@
         "reptiles",
         "insects"
        ],
-       "whyUz": "It — sutemizuvchi."
+       "whyUz": "It — sutemizuvchi.",
+       "speakAnswer": "mammals"
       },
       {
        "prompt": "Cows are ... .",
@@ -620,7 +653,8 @@
         "reptiles",
         "insects"
        ],
-       "whyUz": "Sigir sut beradi — eng aniq sutemizuvchi."
+       "whyUz": "Sigir sut beradi — eng aniq sutemizuvchi.",
+       "speakAnswer": "mammals"
       }
      ]
     },
@@ -645,7 +679,8 @@
         "feathers",
         "fur"
        ],
-       "whyUz": "Strelka qushning boshi oldidagi tumshuqqa ko'rsatadi. 'a beak' — faqat qushda bo'ladi."
+       "whyUz": "Strelka qushning boshi oldidagi tumshuqqa ko'rsatadi. 'a beak' — faqat qushda bo'ladi.",
+       "speakAnswer": "beak"
       },
       {
        "prompt": "2-strelka",
@@ -657,7 +692,8 @@
         "fur",
         "tail"
        ],
-       "whyUz": "Strelka qushning tanasini qoplagan qismga ko'rsatadi. Doim ko'plikda: 'feathers'."
+       "whyUz": "Strelka qushning tanasini qoplagan qismga ko'rsatadi. Doim ko'plikda: 'feathers'.",
+       "speakAnswer": "feathers"
       },
       {
        "prompt": "3-strelka",
@@ -669,7 +705,8 @@
         "feathers",
         "tail"
        ],
-       "whyUz": "Strelka yo'lbarsning tanasini qoplagan qismga ko'rsatadi. 'fur' — sanalmaydigan ot, -s YO'Q."
+       "whyUz": "Strelka yo'lbarsning tanasini qoplagan qismga ko'rsatadi. 'fur' — sanalmaydigan ot, -s YO'Q.",
+       "speakAnswer": "fur"
       },
       {
        "prompt": "4-strelka",
@@ -681,7 +718,8 @@
         "fur",
         "tail"
        ],
-       "whyUz": "Strelka yo'lbarsning old oyog'i uchiga ko'rsatadi. 'paws' — mushuksimonlar va itlarning panjasi."
+       "whyUz": "Strelka yo'lbarsning old oyog'i uchiga ko'rsatadi. 'paws' — mushuksimonlar va itlarning panjasi.",
+       "speakAnswer": "paws"
       },
       {
        "prompt": "5-strelka",
@@ -693,7 +731,8 @@
         "feathers",
         "fur"
        ],
-       "whyUz": "Strelka kenguruning boshidagi uzun qismlarga ko'rsatadi."
+       "whyUz": "Strelka kenguruning boshidagi uzun qismlarga ko'rsatadi.",
+       "speakAnswer": "ears"
       },
       {
        "prompt": "6-strelka",
@@ -705,7 +744,8 @@
         "feathers",
         "fur"
        ],
-       "whyUz": "Strelka kenguruning orqasidagi yo'g'on qismga ko'rsatadi. Kenguru u bilan tayanadi."
+       "whyUz": "Strelka kenguruning orqasidagi yo'g'on qismga ko'rsatadi. Kenguru u bilan tayanadi.",
+       "speakAnswer": "tail"
       }
      ]
     },
@@ -723,17 +763,20 @@
       {
        "prompt": "Yuqoridagi hayvon (tumshuq, patlar, qanotlar, o'tkir tirnoqlar):",
        "answer": "an eagle",
-       "whyUz": "Burgut — yirtqich qush. Tumshug'i egri, tirnoqlari o'tkir."
+       "whyUz": "Burgut — yirtqich qush. Tumshug'i egri, tirnoqlari o'tkir.",
+       "speakAnswer": "an eagle"
       },
       {
        "prompt": "O'rtadagi hayvon (jun, panjalar, mo'ylovlar, qora chiziqlar):",
        "answer": "a tiger",
-       "whyUz": "Yo'lbars — qora chiziqlari bilan tanib olinadi."
+       "whyUz": "Yo'lbars — qora chiziqlari bilan tanib olinadi.",
+       "speakAnswer": "a tiger"
       },
       {
        "prompt": "Pastdagi hayvon (quloqlar, dum, xalta, orqa oyoqlar):",
        "answer": "a kangaroo",
-       "whyUz": "Kenguru — xaltasi (pouch) bor yagona hayvon. Avstraliyada yashaydi."
+       "whyUz": "Kenguru — xaltasi (pouch) bor yagona hayvon. Avstraliyada yashaydi.",
+       "speakAnswer": "a kangaroo"
       }
      ]
     },
@@ -758,7 +801,8 @@
         "keep"
        ],
        "whyUz": "'intelligent animals' = aqlli hayvonlar.\nGap: Dolphins are very intelligent animals.",
-       "speak": "1  ............ animals"
+       "speak": "1  ............ animals",
+       "speakAnswer": "intelligent"
       },
       {
        "prompt": "2  ............ feathers",
@@ -770,7 +814,8 @@
         "intelligent"
        ],
        "whyUz": "'thick feathers' = qalin patlar.\nGap: Penguins have got thick feathers.",
-       "speak": "2  ............ feathers"
+       "speak": "2  ............ feathers",
+       "speakAnswer": "thick"
       },
       {
        "prompt": "3  a ............ tail",
@@ -782,7 +827,8 @@
         "keep"
        ],
        "whyUz": "'a short tail' = kalta dum.\nGap: Penguins have got a short tail.",
-       "speak": "3  a ............ tail"
+       "speak": "3  a ............ tail",
+       "speakAnswer": "short"
       },
       {
        "prompt": "4  a ............ smile",
@@ -794,7 +840,8 @@
         "intelligent"
        ],
        "whyUz": "'a big smile' = katta tabassum.\nGap: Dolphins have got a big smile.",
-       "speak": "4  a ............ smile"
+       "speak": "4  a ............ smile",
+       "speakAnswer": "big"
       },
       {
        "prompt": "5  in ............ seas",
@@ -806,7 +853,8 @@
         "intelligent"
        ],
        "whyUz": "'in warm seas' = iliq dengizlarda.\nGap: Dolphins live in warm seas.",
-       "speak": "5  in ............ seas"
+       "speak": "5  in ............ seas",
+       "speakAnswer": "warm"
       },
       {
        "prompt": "6  ............ of the world",
@@ -818,7 +866,8 @@
         "intelligent"
        ],
        "whyUz": "'parts of the world' = dunyo qismlari.\nGap: Dolphins live in many different parts of the world.",
-       "speak": "6  ............ of the world"
+       "speak": "6  ............ of the world",
+       "speakAnswer": "parts"
       },
       {
        "prompt": "7  to ............ them warm",
@@ -830,7 +879,8 @@
         "intelligent"
        ],
        "whyUz": "'to keep them warm' = ularni issiq saqlash uchun.\nGap: Penguins have got thick feathers to keep them warm.",
-       "speak": "7  to ............ them warm"
+       "speak": "7  to ............ them warm",
+       "speakAnswer": "keep"
       },
       {
        "prompt": "8  to ............ funny",
@@ -842,7 +892,8 @@
         "intelligent"
        ],
        "whyUz": "'to look funny' = kulgili ko'rinmoq.\nGap: Penguins look funny when they walk.",
-       "speak": "8  to ............ funny"
+       "speak": "8  to ............ funny",
+       "speakAnswer": "look"
       },
       {
        "prompt": "9  to ............ eggs",
@@ -854,7 +905,8 @@
         "keep"
        ],
        "whyUz": "'to lay eggs' = tuxum qo'ymoq.\nGap: Penguins lay eggs.",
-       "speak": "9  to ............ eggs"
+       "speak": "9  to ............ eggs",
+       "speakAnswer": "lay"
       },
       {
        "prompt": "10  to ............ babies",
@@ -866,7 +918,8 @@
         "intelligent"
        ],
        "whyUz": "'to have babies' = bola tug'moq.\nGap: Dolphins have babies and feed them on milk.",
-       "speak": "10  to ............ babies"
+       "speak": "10  to ............ babies",
+       "speakAnswer": "have"
       }
      ]
     }
@@ -896,63 +949,72 @@
        "answer": "on",
        "promptUz": "boqmoq fe'lining predlogi",
        "whyUz": "'feed somebody ON something' — o'zgarmas birikma. 'with' XATO.",
-       "speak": "1  Dolphins feed their babies ............ milk."
+       "speak": "1  Dolphins feed their babies ............ milk.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "2  They weigh ............ 70 ............ 500 kilos.  [1-bo'shliq]",
        "answer": "from",
        "promptUz": "oraliq ko'rsatuvchi juft predlog",
        "whyUz": "'from ... to ...' — ...dan ...gacha. Ikkalasi birga ishlatiladi.",
-       "speak": "2  They weigh ............ 70 ............ 500 kilos.  [1-bo'shliq]"
+       "speak": "2  They weigh ............ 70 ............ 500 kilos.  [1-bo'shliq]",
+       "speakAnswer": "from"
       },
       {
        "prompt": "2  They weigh ............ 70 ............ 500 kilos.  [2-bo'shliq]",
        "answer": "to",
        "promptUz": "oraliq ko'rsatuvchi juft predlog",
        "whyUz": "'from ... to ...' — ...dan ...gacha. Ikkalasi birga ishlatiladi.",
-       "speak": "2  They weigh ............ 70 ............ 500 kilos.  [2-bo'shliq]"
+       "speak": "2  They weigh ............ 70 ............ 500 kilos.  [2-bo'shliq]",
+       "speakAnswer": "to"
       },
       {
        "prompt": "3  Dolphins are friendly ............ people.",
        "answer": "to",
        "promptUz": "'friendly' sifatining predlogi",
        "whyUz": "'friendly TO somebody' — kimgadir do'stona. 'friendly with' ham bor, lekin kitob 'to' beradi.",
-       "speak": "3  Dolphins are friendly ............ people."
+       "speak": "3  Dolphins are friendly ............ people.",
+       "speakAnswer": "to"
       },
       {
        "prompt": "4  They live ............ warm seas.",
        "answer": "in",
        "promptUz": "suv ICHIDA",
        "whyUz": "Dengiz suvining ichida yashaydi → IN.",
-       "speak": "4  They live ............ warm seas."
+       "speak": "4  They live ............ warm seas.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "5  They live ............ about fifty years.",
        "answer": "for",
        "promptUz": "qancha VAQT davomida",
        "whyUz": "'live FOR + davomiylik'. 'during' yoki 'in' XATO.",
-       "speak": "5  They live ............ about fifty years."
+       "speak": "5  They live ............ about fifty years.",
+       "speakAnswer": "for"
       },
       {
        "prompt": "6  Penguins live ............ the ice ............ Antarctica.  [1-bo'shliq]",
        "answer": "on",
        "promptUz": "birinchisi — yuza, ikkinchisi — egalik",
        "whyUz": "Muzning USTIDA → ON. 'the ice OF Antarctica' = Antarktidaning muzi.",
-       "speak": "6  Penguins live ............ the ice ............ Antarctica.  [1-bo'shliq]"
+       "speak": "6  Penguins live ............ the ice ............ Antarctica.  [1-bo'shliq]",
+       "speakAnswer": "on"
       },
       {
        "prompt": "6  Penguins live ............ the ice ............ Antarctica.  [2-bo'shliq]",
        "answer": "of",
        "promptUz": "birinchisi — yuza, ikkinchisi — egalik",
        "whyUz": "Muzning USTIDA → ON. 'the ice OF Antarctica' = Antarktidaning muzi.",
-       "speak": "6  Penguins live ............ the ice ............ Antarctica.  [2-bo'shliq]"
+       "speak": "6  Penguins live ............ the ice ............ Antarctica.  [2-bo'shliq]",
+       "speakAnswer": "of"
       },
       {
        "prompt": "7  They live ............ big groups.",
        "answer": "in",
        "promptUz": "guruh ICHIDA",
        "whyUz": "'live IN groups' — guruh bo'lib yashamoq.",
-       "speak": "7  They live ............ big groups."
+       "speak": "7  They live ............ big groups.",
+       "speakAnswer": "in"
       }
      ]
     },
@@ -976,7 +1038,8 @@
         "farm",
         "wild"
        ],
-       "whyUz": "Otni odam boqadi va ishlatadi."
+       "whyUz": "Otni odam boqadi va ishlatadi.",
+       "speakAnswer": "farm"
       },
       {
        "prompt": "Monkeys are ............ animals.",
@@ -986,7 +1049,8 @@
         "wild",
         "farm"
        ],
-       "whyUz": "Maymun o'rmonda yashaydi."
+       "whyUz": "Maymun o'rmonda yashaydi.",
+       "speakAnswer": "wild"
       },
       {
        "prompt": "Lions are ............ animals.",
@@ -996,7 +1060,8 @@
         "wild",
         "farm"
        ],
-       "whyUz": "Sher — Afrika savannasining yirtqichi."
+       "whyUz": "Sher — Afrika savannasining yirtqichi.",
+       "speakAnswer": "wild"
       },
       {
        "prompt": "Tigers are ............ animals.",
@@ -1006,7 +1071,8 @@
         "wild",
         "farm"
        ],
-       "whyUz": "Yo'lbars — o'rmon yirtqichi."
+       "whyUz": "Yo'lbars — o'rmon yirtqichi.",
+       "speakAnswer": "wild"
       },
       {
        "prompt": "Parrots are ............ animals.",
@@ -1016,7 +1082,8 @@
         "wild",
         "farm"
        ],
-       "whyUz": "To'tiqushni uyda boqish mumkin, lekin tabiatda yovvoyi qush."
+       "whyUz": "To'tiqushni uyda boqish mumkin, lekin tabiatda yovvoyi qush.",
+       "speakAnswer": "wild"
       },
       {
        "prompt": "Kangaroos are ............ animals.",
@@ -1026,7 +1093,8 @@
         "wild",
         "farm"
        ],
-       "whyUz": "Kenguru Avstraliya tabiatida yashaydi."
+       "whyUz": "Kenguru Avstraliya tabiatida yashaydi.",
+       "speakAnswer": "wild"
       },
       {
        "prompt": "Cows are ............ animals.",
@@ -1036,7 +1104,8 @@
         "farm",
         "wild"
        ],
-       "whyUz": "Sigir sut beradi — asosiy xo'jalik hayvoni."
+       "whyUz": "Sigir sut beradi — asosiy xo'jalik hayvoni.",
+       "speakAnswer": "farm"
       },
       {
        "prompt": "Snakes are ............ animals.",
@@ -1046,7 +1115,8 @@
         "wild",
         "farm"
        ],
-       "whyUz": "Ilon tabiatda o'zi yashaydi."
+       "whyUz": "Ilon tabiatda o'zi yashaydi.",
+       "speakAnswer": "wild"
       },
       {
        "prompt": "Sheep are ............ animals.",
@@ -1056,7 +1126,8 @@
         "farm",
         "wild"
        ],
-       "whyUz": "Qo'y jun va go'sht beradi. DIQQAT: 'sheep' ko'plikda ham 'sheep'."
+       "whyUz": "Qo'y jun va go'sht beradi. DIQQAT: 'sheep' ko'plikda ham 'sheep'.",
+       "speakAnswer": "farm"
       },
       {
        "prompt": "Penguins are ............ animals.",
@@ -1066,7 +1137,8 @@
         "wild",
         "farm"
        ],
-       "whyUz": "Pingvin Antarktida muzida o'zi yashaydi."
+       "whyUz": "Pingvin Antarktida muzida o'zi yashaydi.",
+       "speakAnswer": "wild"
       }
      ]
     },
@@ -1128,7 +1200,8 @@
         "fins",
         "feet"
        ],
-       "whyUz": "Delfin suvda yashaydi → SUZGICHLARI bor. Oyog'i YO'Q (Coursebook 40-bet)."
+       "whyUz": "Delfin suvda yashaydi → SUZGICHLARI bor. Oyog'i YO'Q (Coursebook 40-bet).",
+       "speakAnswer": "fins"
       },
       {
        "prompt": "2  Lions have got ............ .",
@@ -1138,7 +1211,8 @@
         "a mane",
         "feathers"
        ],
-       "whyUz": "Sher — sutemizuvchi, pati bo'lmaydi. Erkak sherda YOL (a mane) bor."
+       "whyUz": "Sher — sutemizuvchi, pati bo'lmaydi. Erkak sherda YOL (a mane) bor.",
+       "speakAnswer": "a mane"
       },
       {
        "prompt": "3  Mice have got ............ .",
@@ -1148,7 +1222,8 @@
         "a long tail",
         "a beak"
        ],
-       "whyUz": "Sichqon — sutemizuvchi, tumshug'i (beak) yo'q. UZUN DUMI bor.\n'mice' — 'mouse' ning ko'pligi."
+       "whyUz": "Sichqon — sutemizuvchi, tumshug'i (beak) yo'q. UZUN DUMI bor.\n'mice' — 'mouse' ning ko'pligi.",
+       "speakAnswer": "a long tail"
       },
       {
        "prompt": "4  Sharks have got grey ............ .",
@@ -1158,7 +1233,8 @@
         "skin",
         "fur"
        ],
-       "whyUz": "Akula — baliq, juni yo'q. Kulrang TERISI bor (delfin kabi).\n'a shark' = akula."
+       "whyUz": "Akula — baliq, juni yo'q. Kulrang TERISI bor (delfin kabi).\n'a shark' = akula.",
+       "speakAnswer": "skin"
       },
       {
        "prompt": "5  Camels have got long ............ .",
@@ -1168,7 +1244,8 @@
         "legs",
         "ears"
        ],
-       "whyUz": "Tuyaning uzun OYOQLARI bor — cho'lda yurish uchun.\nQuloqlari esa kichkina. 'a camel' = tuya."
+       "whyUz": "Tuyaning uzun OYOQLARI bor — cho'lda yurish uchun.\nQuloqlari esa kichkina. 'a camel' = tuya.",
+       "speakAnswer": "legs"
       },
       {
        "prompt": "6  Eagles have got sharp ............ .",
@@ -1178,7 +1255,8 @@
         "claws",
         "paws"
        ],
-       "whyUz": "Burgut — qush. Qushda 'paws' (panja) BO'LMAYDI, 'claws' (tirnoq) bo'ladi.\nCoursebook 41-betda 'sharp claws' berilgan edi."
+       "whyUz": "Burgut — qush. Qushda 'paws' (panja) BO'LMAYDI, 'claws' (tirnoq) bo'ladi.\nCoursebook 41-betda 'sharp claws' berilgan edi.",
+       "speakAnswer": "claws"
       },
       {
        "prompt": "7  Cats have got ............ .",
@@ -1188,7 +1266,8 @@
         "whiskers",
         "wings"
        ],
-       "whyUz": "Mushuk ucha olmaydi — qanoti yo'q. MO'YLOVLARI bor (yo'lbars kabi)."
+       "whyUz": "Mushuk ucha olmaydi — qanoti yo'q. MO'YLOVLARI bor (yo'lbars kabi).",
+       "speakAnswer": "whiskers"
       },
       {
        "prompt": "8  Elephants have got ............ .",
@@ -1198,7 +1277,8 @@
         "a trunk",
         "arms"
        ],
-       "whyUz": "Filda qo'l yo'q — XARTUM (a trunk) bor. U qo'l vazifasini bajaradi.\nCoursebook 43-betda: 'How long is its trunk?'"
+       "whyUz": "Filda qo'l yo'q — XARTUM (a trunk) bor. U qo'l vazifasini bajaradi.\nCoursebook 43-betda: 'How long is its trunk?'",
+       "speakAnswer": "a trunk"
       }
      ]
     },
@@ -1223,7 +1303,8 @@
         "play"
        ],
        "whyUz": "'lay eggs' = tuxum qo'ymoq — o'zgarmas birikma (Coursebook 40-bet).\n'both' = ikkalasi ham.",
-       "speak": "1  Birds and reptiles both lay ............ ."
+       "speak": "1  Birds and reptiles both lay ............ .",
+       "speakAnswer": "eggs"
       },
       {
        "prompt": "2  Grey seals have got thick fur to keep them ............ .",
@@ -1235,7 +1316,8 @@
         "claws"
        ],
        "whyUz": "'keep somebody warm' = issiq saqlamoq (Coursebook 40-betdagi pingvin matni).\n'a seal' = tyulen.",
-       "speak": "2  Grey seals have got thick fur to keep them ............ ."
+       "speak": "2  Grey seals have got thick fur to keep them ............ .",
+       "speakAnswer": "warm"
       },
       {
        "prompt": "3  Mammals ............ babies and feed their young on milk.",
@@ -1247,7 +1329,8 @@
         "play"
        ],
        "whyUz": "'have babies' = bola tug'moq. Ko'plik ega → HAVE ('has' XATO).",
-       "speak": "3  Mammals ............ babies and feed their young on milk."
+       "speak": "3  Mammals ............ babies and feed their young on milk.",
+       "speakAnswer": "have"
       },
       {
        "prompt": "4  Sharks live in warm ............ .",
@@ -1259,7 +1342,8 @@
         "claws"
        ],
        "whyUz": "'in warm seas' = iliq dengizlarda (Coursebook 40-betdagi delfin matni).\n'sea' → ko'plikda 'seas'.",
-       "speak": "4  Sharks live in warm ............ ."
+       "speak": "4  Sharks live in warm ............ .",
+       "speakAnswer": "seas"
       },
       {
        "prompt": "5  Zebras have got ............ and white stripes.",
@@ -1271,7 +1355,8 @@
         "play"
        ],
        "whyUz": "Zebra QORA va oq chiziqli (Coursebook 44-betdagi D rasm).\n'black and white' — tartib o'zgarmaydi.",
-       "speak": "5  Zebras have got ............ and white stripes."
+       "speak": "5  Zebras have got ............ and white stripes.",
+       "speakAnswer": "black"
       },
       {
        "prompt": "6  Dolphins can easily learn how to ............ games.",
@@ -1283,7 +1368,8 @@
         "claws"
        ],
        "whyUz": "'play games' = o'yin o'ynamoq (Coursebook 40-betdagi delfin matni).\n'how to' dan keyin fe'l ASOS shaklida.",
-       "speak": "6  Dolphins can easily learn how to ............ games."
+       "speak": "6  Dolphins can easily learn how to ............ games.",
+       "speakAnswer": "play"
       },
       {
        "prompt": "7  Penguins have got thick ............ .",
@@ -1295,7 +1381,8 @@
         "play"
        ],
        "whyUz": "'thick feathers' = qalin patlar (Coursebook 40-betdagi pingvin matni).",
-       "speak": "7  Penguins have got thick ............ ."
+       "speak": "7  Penguins have got thick ............ .",
+       "speakAnswer": "feathers"
       },
       {
        "prompt": "8  Koalas have got very sharp ............ .",
@@ -1307,7 +1394,8 @@
         "play"
        ],
        "whyUz": "'sharp claws' = o'tkir tirnoqlar (Coursebook 42-betdagi koala matni).",
-       "speak": "8  Koalas have got very sharp ............ ."
+       "speak": "8  Koalas have got very sharp ............ .",
+       "speakAnswer": "claws"
       },
       {
        "prompt": "9  Penguins look ............ when they walk.",
@@ -1319,7 +1407,8 @@
         "play"
        ],
        "whyUz": "'look funny' = kulgili ko'rinmoq (Coursebook 40-betdagi pingvin matni).",
-       "speak": "9  Penguins look ............ when they walk."
+       "speak": "9  Penguins look ............ when they walk.",
+       "speakAnswer": "funny"
       },
       {
        "prompt": "10  Dolphins have got a big ............ .",
@@ -1331,7 +1420,8 @@
         "play"
        ],
        "whyUz": "'a big smile' = katta tabassum (Coursebook 40-betdagi delfin matni).",
-       "speak": "10  Dolphins have got a big ............ ."
+       "speak": "10  Dolphins have got a big ............ .",
+       "speakAnswer": "smile"
       }
      ]
     },
@@ -1356,7 +1446,8 @@
         "friendly"
        ],
        "whyUz": "'live IN water'. 'fish' ko'plikda ham 'fish' → fe'lga -s QO'SHILMAYDI.",
-       "speak": "1  Fish ............ in water."
+       "speak": "1  Fish ............ in water.",
+       "speakAnswer": "live"
       },
       {
        "prompt": "2  Kangaroos have got ............ back legs.",
@@ -1368,7 +1459,8 @@
         "friendly"
        ],
        "whyUz": "'strong back legs' = kuchli orqa oyoqlar (Coursebook 43-betdagi kenguru matni).",
-       "speak": "2  Kangaroos have got ............ back legs."
+       "speak": "2  Kangaroos have got ............ back legs.",
+       "speakAnswer": "strong"
       },
       {
        "prompt": "3  Penguins ............ about twenty kilos.",
@@ -1380,7 +1472,8 @@
         "friendly"
        ],
        "whyUz": "'weigh about twenty kilos' (Coursebook 40-bet).\nDIQQAT: 'are weigh' XATO — 'be' ishlatilmaydi.",
-       "speak": "3  Penguins ............ about twenty kilos."
+       "speak": "3  Penguins ............ about twenty kilos.",
+       "speakAnswer": "weigh"
       },
       {
        "prompt": "4  Mammals ............ their young on milk.",
@@ -1392,7 +1485,8 @@
         "live"
        ],
        "whyUz": "'feed somebody ON milk' = sut bilan boqmoq.\n'young' bu yerda OT — hayvonning bolasi.",
-       "speak": "4  Mammals ............ their young on milk."
+       "speak": "4  Mammals ............ their young on milk.",
+       "speakAnswer": "feed"
       },
       {
        "prompt": "5  Parrots can learn how to talk ............ .",
@@ -1404,7 +1498,8 @@
         "friendly"
        ],
        "whyUz": "'easily' = osonlik bilan (Coursebook 40-bet: 'can easily learn').\nBu RAVISH, chunki fe'lni ('talk') tavsiflaydi.",
-       "speak": "5  Parrots can learn how to talk ............ ."
+       "speak": "5  Parrots can learn how to talk ............ .",
+       "speakAnswer": "easily"
       },
       {
        "prompt": "6  Dogs are ............ to people.",
@@ -1416,7 +1511,8 @@
         "live"
        ],
        "whyUz": "'friendly TO somebody' = kimgadir do'stona (Coursebook 40-bet).\n'are' dan keyin SIFAT keladi.",
-       "speak": "6  Dogs are ............ to people."
+       "speak": "6  Dogs are ............ to people.",
+       "speakAnswer": "friendly"
       },
       {
        "prompt": "7  Dolphins live in small ............ .",
@@ -1428,7 +1524,8 @@
         "friendly"
        ],
        "whyUz": "'live in small groups' = kichik guruhlarda (Coursebook 40-bet).",
-       "speak": "7  Dolphins live in small ............ ."
+       "speak": "7  Dolphins live in small ............ .",
+       "speakAnswer": "groups"
       },
       {
        "prompt": "8  Snakes live in many different parts of the ............ .",
@@ -1440,7 +1537,8 @@
         "friendly"
        ],
        "whyUz": "'parts of the world' = dunyo qismlari (Coursebook 40-bet).\nDIQQAT: 'the' shart — the world.",
-       "speak": "8  Snakes live in many different parts of the ............ ."
+       "speak": "8  Snakes live in many different parts of the ............ .",
+       "speakAnswer": "world"
       },
       {
        "prompt": "9  Cats have ............ and dogs have ............ .",
@@ -1452,7 +1550,8 @@
         "live"
        ],
        "whyUz": "Mushukning bolasi — KITTENS, itning bolasi — PUPPIES.\nHar birining alohida so'zi bor (Coursebook 42-betdagi 10-mashq).",
-       "speak": "9  Cats have ............ and dogs have ............ ."
+       "speak": "9  Cats have ............ and dogs have ............ .",
+       "speakAnswer": "kittens"
       },
       {
        "prompt": "9  Cats have ............ and dogs have ............ .",
@@ -1464,7 +1563,8 @@
         "friendly"
        ],
        "whyUz": "Mushukning bolasi — KITTENS, itning bolasi — PUPPIES.\nHar birining alohida so'zi bor (Coursebook 42-betdagi 10-mashq).",
-       "speak": "9  Cats have ............ and dogs have ............ ."
+       "speak": "9  Cats have ............ and dogs have ............ .",
+       "speakAnswer": "puppies"
       }
      ]
     }
@@ -1491,19 +1591,23 @@
      "tasks": [
       {
        "left": "1  They are small creatures. They have got six legs and usually two pairs of wings.",
-       "right": "c  insects"
+       "right": "c  insects",
+       "speakAnswer": "c  insects"
       },
       {
        "left": "2  They have babies and they feed their young on milk.",
-       "right": "d  mammals"
+       "right": "d  mammals",
+       "speakAnswer": "d  mammals"
       },
       {
        "left": "3  They haven't got wings. They lay eggs. Some of them are dangerous.",
-       "right": "a  reptiles"
+       "right": "a  reptiles",
+       "speakAnswer": "a  reptiles"
       },
       {
        "left": "4  They have got feathers, two wings and two legs. They lay eggs and they can fly.",
-       "right": "b  birds"
+       "right": "b  birds",
+       "speakAnswer": "b  birds"
       }
      ]
     },
@@ -1535,7 +1639,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 1 — a large reptile lying on the ground with a long body and short legs"
+       "speak": "Picture 1 — a large reptile lying on the ground with a long body and short legs",
+       "speakAnswer": "crocodile"
       },
       {
        "prompt": "Picture 2 — a water bird with a dark head swimming on the water",
@@ -1554,7 +1659,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 2 — a water bird with a dark head swimming on the water"
+       "speak": "Picture 2 — a water bird with a dark head swimming on the water",
+       "speakAnswer": "duck"
       },
       {
        "prompt": "Picture 3 — a grey sea mammal with a long nose and a smiling mouth",
@@ -1573,7 +1679,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 3 — a grey sea mammal with a long nose and a smiling mouth"
+       "speak": "Picture 3 — a grey sea mammal with a long nose and a smiling mouth",
+       "speakAnswer": "dolphin"
       },
       {
        "prompt": "Picture 4 — a black and white bird standing upright on a rock",
@@ -1592,7 +1699,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 4 — a black and white bird standing upright on a rock"
+       "speak": "Picture 4 — a black and white bird standing upright on a rock",
+       "speakAnswer": "penguin"
       },
       {
        "prompt": "Picture 5 — a small round insect with spots on its back",
@@ -1611,7 +1719,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 5 — a small round insect with spots on its back"
+       "speak": "Picture 5 — a small round insect with spots on its back",
+       "speakAnswer": "ladybird"
       },
       {
        "prompt": "Picture 6 — a bird with a curved beak and a very long tail sitting on a branch",
@@ -1630,7 +1739,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 6 — a bird with a curved beak and a very long tail sitting on a branch"
+       "speak": "Picture 6 — a bird with a curved beak and a very long tail sitting on a branch",
+       "speakAnswer": "parrot"
       },
       {
        "prompt": "Picture 7 — a small insect with two transparent wings and big eyes",
@@ -1649,7 +1759,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 7 — a small insect with two transparent wings and big eyes"
+       "speak": "Picture 7 — a small insect with two transparent wings and big eyes",
+       "speakAnswer": "fly"
       },
       {
        "prompt": "Picture 8 — a long reptile with no legs, lying in a curve",
@@ -1668,7 +1779,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 8 — a long reptile with no legs, lying in a curve"
+       "speak": "Picture 8 — a long reptile with no legs, lying in a curve",
+       "speakAnswer": "snake"
       },
       {
        "prompt": "Picture 9 — an insect with four large patterned wings",
@@ -1687,7 +1799,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 9 — an insect with four large patterned wings"
+       "speak": "Picture 9 — an insect with four large patterned wings",
+       "speakAnswer": "butterfly"
       },
       {
        "prompt": "Picture 10 — a large black and white farm animal that gives milk",
@@ -1706,7 +1819,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 10 — a large black and white farm animal that gives milk"
+       "speak": "Picture 10 — a large black and white farm animal that gives milk",
+       "speakAnswer": "cow"
       },
       {
        "prompt": "Picture 11 — a large golden cat with a dark mane around its head",
@@ -1725,7 +1839,8 @@
         "crocodile",
         "ladybird"
        ],
-       "speak": "Picture 11 — a large golden cat with a dark mane around its head"
+       "speak": "Picture 11 — a large golden cat with a dark mane around its head",
+       "speakAnswer": "lion"
       }
      ]
     }
@@ -1754,67 +1869,78 @@
        "prompt": "REPTILES — 1",
        "answer": "crocodile",
        "promptUz": "Suvda va quruqlikda yashaydigan yirik sudralib yuruvchi",
-       "whyUz": "Timsoh — sudralib yuruvchi: tuxum qo'yadi, qanoti yo'q, xavfli."
+       "whyUz": "Timsoh — sudralib yuruvchi: tuxum qo'yadi, qanoti yo'q, xavfli.",
+       "speakAnswer": "crocodile"
       },
       {
        "prompt": "REPTILES — 2",
        "answer": "snake",
        "promptUz": "Oyog'i yo'q sudralib yuruvchi",
-       "whyUz": "Ilon — sudralib yuruvchi: tuxum qo'yadi, ba'zilari zaharli."
+       "whyUz": "Ilon — sudralib yuruvchi: tuxum qo'yadi, ba'zilari zaharli.",
+       "speakAnswer": "snake"
       },
       {
        "prompt": "MAMMALS — 1",
        "answer": "dolphin",
        "promptUz": "Suvda yashaydi, lekin baliq emas",
-       "whyUz": "Delfin bola tug'adi va sut bilan boqadi → sutemizuvchi."
+       "whyUz": "Delfin bola tug'adi va sut bilan boqadi → sutemizuvchi.",
+       "speakAnswer": "dolphin"
       },
       {
        "prompt": "MAMMALS — 2",
        "answer": "cow",
        "promptUz": "Sut beradigan uy hayvoni",
-       "whyUz": "Sigir — eng aniq sutemizuvchi: sut beradi."
+       "whyUz": "Sigir — eng aniq sutemizuvchi: sut beradi.",
+       "speakAnswer": "cow"
       },
       {
        "prompt": "MAMMALS — 3",
        "answer": "lion",
        "promptUz": "Yoli bor yirtqich",
-       "whyUz": "Sher bola tug'adi va sut bilan boqadi → sutemizuvchi."
+       "whyUz": "Sher bola tug'adi va sut bilan boqadi → sutemizuvchi.",
+       "speakAnswer": "lion"
       },
       {
        "prompt": "INSECTS — 1",
        "answer": "ladybird",
        "promptUz": "Nuqtali kichik qizil hasharot",
-       "whyUz": "Xonqizining olti oyog'i bor → hasharot."
+       "whyUz": "Xonqizining olti oyog'i bor → hasharot.",
+       "speakAnswer": "ladybird"
       },
       {
        "prompt": "INSECTS — 2",
        "answer": "fly",
        "promptUz": "Uyda uchadigan mayda hasharot",
-       "whyUz": "Pashshaning olti oyog'i va bir juft qanoti bor → hasharot."
+       "whyUz": "Pashshaning olti oyog'i va bir juft qanoti bor → hasharot.",
+       "speakAnswer": "fly"
       },
       {
        "prompt": "INSECTS — 3",
        "answer": "butterfly",
        "promptUz": "Katta naqshli qanotli hasharot",
-       "whyUz": "Kapalakning olti oyog'i va ikki juft qanoti bor → hasharot.\nQanoti bor, lekin PATI yo'q — shuning uchun qush emas."
+       "whyUz": "Kapalakning olti oyog'i va ikki juft qanoti bor → hasharot.\nQanoti bor, lekin PATI yo'q — shuning uchun qush emas.",
+       "speakAnswer": "butterfly"
       },
       {
        "prompt": "BIRDS — 1",
        "answer": "duck",
        "promptUz": "Suvda suzadigan uy qushi",
-       "whyUz": "O'rdakda pat, ikki qanot, ikki oyoq bor → qush."
+       "whyUz": "O'rdakda pat, ikki qanot, ikki oyoq bor → qush.",
+       "speakAnswer": "duck"
       },
       {
        "prompt": "BIRDS — 2",
        "answer": "penguin",
        "promptUz": "Ucha olmaydigan qora-oq qush",
-       "whyUz": "Pingvinda pat, qanot va ikki oyoq bor → QUSH.\nUcha olmasligi uni qush bo'lishdan chiqarmaydi."
+       "whyUz": "Pingvinda pat, qanot va ikki oyoq bor → QUSH.\nUcha olmasligi uni qush bo'lishdan chiqarmaydi.",
+       "speakAnswer": "penguin"
       },
       {
        "prompt": "BIRDS — 3",
        "answer": "parrot",
        "promptUz": "Yorqin rangli, gapira oladigan qush",
-       "whyUz": "To'tiqushda pat, qanot va tumshuq bor → qush."
+       "whyUz": "To'tiqushda pat, qanot va tumshuq bor → qush.",
+       "speakAnswer": "parrot"
       }
      ]
     }
@@ -1983,27 +2109,32 @@
       {
        "prompt": "1-o'xshashlik (suzish):",
        "answer": "Both dolphins and penguins can swim very well.",
-       "whyUz": "Ikkala matnda ham 'They can swim very well' deyilgan."
+       "whyUz": "Ikkala matnda ham 'They can swim very well' deyilgan.",
+       "speakAnswer": "Both dolphins and penguins can swim very well."
       },
       {
        "prompt": "2-o'xshashlik (yashash tarzi):",
        "answer": "Both dolphins and penguins live in groups.",
-       "whyUz": "Delfin — 'small groups', pingvin — 'big groups'. Ikkalasi ham guruhda."
+       "whyUz": "Delfin — 'small groups', pingvin — 'big groups'. Ikkalasi ham guruhda.",
+       "speakAnswer": "Both dolphins and penguins live in groups."
       },
       {
        "prompt": "3-o'xshashlik (ovqat):",
        "answer": "Both dolphins and penguins eat fish.",
-       "whyUz": "Ikkala matnda ham 'they eat fish' deyilgan."
+       "whyUz": "Ikkala matnda ham 'they eat fish' deyilgan.",
+       "speakAnswer": "Both dolphins and penguins eat fish."
       },
       {
        "prompt": "Qo'shimcha o'xshashlik (tana):",
        "answer": "Both dolphins and penguins have got a tail.",
-       "whyUz": "Delfin — 'a tail', pingvin — 'a short tail'."
+       "whyUz": "Delfin — 'a tail', pingvin — 'a short tail'.",
+       "speakAnswer": "Both dolphins and penguins have got a tail."
       },
       {
        "prompt": "Qo'shimcha o'xshashlik (joy):",
        "answer": "Both dolphins and penguins live in or near the sea.",
-       "whyUz": "Delfin dengizda, pingvin muzda va dengizda."
+       "whyUz": "Delfin dengizda, pingvin muzda va dengizda.",
+       "speakAnswer": "Both dolphins and penguins live in or near the sea."
       }
      ]
     },
@@ -2028,7 +2159,8 @@
         "intelligent",
         "easily"
        ],
-       "whyUz": "'a big smile' — delfinning og'zi tabassumga o'xshaydi."
+       "whyUz": "'a big smile' — delfinning og'zi tabassumga o'xshaydi.",
+       "speakAnswer": "a smile"
       },
       {
        "prompt": "og'irlikda bo'lmoq",
@@ -2040,7 +2172,8 @@
         "intelligent",
         "easily"
        ],
-       "whyUz": "O'qilishi /weɪ/ — 'gh' o'qilmaydi! Ot shakli: weight (og'irlik)."
+       "whyUz": "O'qilishi /weɪ/ — 'gh' o'qilmaydi! Ot shakli: weight (og'irlik).",
+       "speakAnswer": "to weigh"
       },
       {
        "prompt": "aqlli",
@@ -2052,7 +2185,8 @@
         "to weigh",
         "easily"
        ],
-       "whyUz": "'clever' dan kuchliroq. Ot: intelligence (aql)."
+       "whyUz": "'clever' dan kuchliroq. Ot: intelligence (aql).",
+       "speakAnswer": "intelligent"
       },
       {
        "prompt": "oson, osonlik bilan",
@@ -2064,7 +2198,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'easy' (oson) + -ly = ravish. y → i."
+       "whyUz": "'easy' (oson) + -ly = ravish. y → i.",
+       "speakAnswer": "easily"
       },
       {
        "prompt": "do'stona",
@@ -2076,7 +2211,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'friendly TO somebody' — predlog shart. '-ly' bilan tugasa ham SIFAT."
+       "whyUz": "'friendly TO somebody' — predlog shart. '-ly' bilan tugasa ham SIFAT.",
+       "speakAnswer": "friendly"
       },
       {
        "prompt": "iliq dengizlar",
@@ -2088,7 +2224,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'sea' → 'seas'. Delfin iliq suvda yashaydi."
+       "whyUz": "'sea' → 'seas'. Delfin iliq suvda yashaydi.",
+       "speakAnswer": "warm seas"
       },
       {
        "prompt": "dunyo qismlari",
@@ -2100,7 +2237,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'part OF' — predlog shart."
+       "whyUz": "'part OF' — predlog shart.",
+       "speakAnswer": "parts of the world"
       },
       {
        "prompt": "guruhlar",
@@ -2112,7 +2250,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'live IN groups' — guruhda yashamoq."
+       "whyUz": "'live IN groups' — guruhda yashamoq.",
+       "speakAnswer": "groups"
       },
       {
        "prompt": "tuxum qo'ymoq",
@@ -2124,7 +2263,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'lay' — qo'ymoq (tuxum). 'lie' (yotmoq) bilan chalkashtirmang."
+       "whyUz": "'lay' — qo'ymoq (tuxum). 'lie' (yotmoq) bilan chalkashtirmang.",
+       "speakAnswer": "to lay eggs"
       },
       {
        "prompt": "qalin",
@@ -2136,7 +2276,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'thick feathers' = qalin patlar. Aksi: thin (yupqa)."
+       "whyUz": "'thick feathers' = qalin patlar. Aksi: thin (yupqa).",
+       "speakAnswer": "thick"
       },
       {
        "prompt": "issiq",
@@ -2148,7 +2289,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'keep them warm' = ularni issiq saqlaydi. 'hot' dan yumshoqroq."
+       "whyUz": "'keep them warm' = ularni issiq saqlaydi. 'hot' dan yumshoqroq.",
+       "speakAnswer": "warm"
       },
       {
        "prompt": "sovuq suv",
@@ -2160,7 +2302,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'water' — sanalmaydigan ot."
+       "whyUz": "'water' — sanalmaydigan ot.",
+       "speakAnswer": "cold water"
       },
       {
        "prompt": "kulgili",
@@ -2172,7 +2315,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'look funny' = kulgili ko'rinmoq. 'fun' (zavq) + -ny."
+       "whyUz": "'look funny' = kulgili ko'rinmoq. 'fun' (zavq) + -ny.",
+       "speakAnswer": "funny"
       },
       {
        "prompt": "muz",
@@ -2184,7 +2328,8 @@
         "to weigh",
         "intelligent"
        ],
-       "whyUz": "'ON the ice' — yuza → ON. Sanalmaydigan ot."
+       "whyUz": "'ON the ice' — yuza → ON. Sanalmaydigan ot.",
+       "speakAnswer": "ice"
       }
      ]
     },
@@ -2203,37 +2348,43 @@
        "prompt": "1  What can dolphins do very well?",
        "answer": "They can swim very well.",
        "whyUz": "Matnda: 'They can swim very well.' 'can' bilan savol → 'can' bilan javob.",
-       "speak": "1  What can dolphins do very well?"
+       "speak": "1  What can dolphins do very well?",
+       "speakAnswer": "They can swim very well."
       },
       {
        "prompt": "2  Where do dolphins live?",
        "answer": "They live in warm seas in many different parts of the world.",
        "whyUz": "Joy savoli. Matndan to'liq javob.",
-       "speak": "2  Where do dolphins live?"
+       "speak": "2  Where do dolphins live?",
+       "speakAnswer": "They live in warm seas in many different parts of the world."
       },
       {
        "prompt": "3  How long do dolphins live?",
        "answer": "They live for about fifty years.",
        "whyUz": "'How long' — davomiylik. 'live FOR' — 'for' shart.",
-       "speak": "3  How long do dolphins live?"
+       "speak": "3  How long do dolphins live?",
+       "speakAnswer": "They live for about fifty years."
       },
       {
        "prompt": "4  Why are penguins unusual birds?",
        "answer": "Because they can't fly.",
        "whyUz": "'Why' → 'Because'. Pingvin qush, lekin ucha olmaydi — bu g'ayrioddiy. 'unusual' = g'ayrioddiy.",
-       "speak": "4  Why are penguins unusual birds?"
+       "speak": "4  Why are penguins unusual birds?",
+       "speakAnswer": "Because they can't fly."
       },
       {
        "prompt": "5  What have penguins got to keep them warm?",
        "answer": "They have got thick feathers.",
        "whyUz": "'have got' bilan savol → 'have got' bilan javob. Matnda: 'thick feathers to keep them warm'.",
-       "speak": "5  What have penguins got to keep them warm?"
+       "speak": "5  What have penguins got to keep them warm?",
+       "speakAnswer": "They have got thick feathers."
       },
       {
        "prompt": "6  What do penguins eat?",
        "answer": "They eat fish.",
        "whyUz": "Matnda: 'they eat fish'. 'fish' — ko'plikda ham 'fish'.",
-       "speak": "6  What do penguins eat?"
+       "speak": "6  What do penguins eat?",
+       "speakAnswer": "They eat fish."
       }
      ]
     }
@@ -2266,7 +2417,8 @@
         "mammals",
         "fish"
        ],
-       "whyUz": "Bola tug'adi va sut bilan boqadi → sutemizuvchi. Baliq tuxum qo'yadi."
+       "whyUz": "Bola tug'adi va sut bilan boqadi → sutemizuvchi. Baliq tuxum qo'yadi.",
+       "speakAnswer": "mammals"
       },
       {
        "prompt": "... they have babies and feed them on 2) ............ .",
@@ -2276,7 +2428,8 @@
         "milk",
         "water"
        ],
-       "whyUz": "'feed them on MILK' — sutemizuvchining asosiy belgisi."
+       "whyUz": "'feed them on MILK' — sutemizuvchining asosiy belgisi.",
+       "speakAnswer": "milk"
       },
       {
        "prompt": "Koalas can 3) ............ very well.",
@@ -2286,7 +2439,8 @@
         "climb",
         "fly"
        ],
-       "whyUz": "Koala — sutemizuvchi, qanoti yo'q, ucha olmaydi. Daraxtga CHIQADI (climb)."
+       "whyUz": "Koala — sutemizuvchi, qanoti yo'q, ucha olmaydi. Daraxtga CHIQADI (climb).",
+       "speakAnswer": "climb"
       },
       {
        "prompt": "They have got thick, 4) ............ fur and a big, black nose.",
@@ -2296,7 +2450,8 @@
         "grey",
         "black"
        ],
-       "whyUz": "Rasmda koalaning juni kulrang. Burni esa qora — matnda alohida aytilgan."
+       "whyUz": "Rasmda koalaning juni kulrang. Burni esa qora — matnda alohida aytilgan.",
+       "speakAnswer": "grey"
       },
       {
        "prompt": "They've also got very sharp 5) ............ .",
@@ -2306,7 +2461,8 @@
         "claws",
         "paws"
        ],
-       "whyUz": "'sharp CLAWS' = o'tkir tirnoqlar. 'paws' (panjalar) o'tkir bo'lmaydi — tirnoq o'tkir bo'ladi."
+       "whyUz": "'sharp CLAWS' = o'tkir tirnoqlar. 'paws' (panjalar) o'tkir bo'lmaydi — tirnoq o'tkir bo'ladi.",
+       "speakAnswer": "claws"
       },
       {
        "prompt": "Koalas live in the tops of eucalyptus trees in eastern 6) ............ .",
@@ -2316,7 +2472,8 @@
         "Australia",
         "America"
        ],
-       "whyUz": "Koala faqat Avstraliyada yashaydi. Evkalipt ham Avstraliya daraxti."
+       "whyUz": "Koala faqat Avstraliyada yashaydi. Evkalipt ham Avstraliya daraxti.",
+       "speakAnswer": "Australia"
       },
       {
        "prompt": "Koalas live for about 7) ............ years.",
@@ -2326,7 +2483,8 @@
         "fifteen",
         "fifty"
        ],
-       "whyUz": "Koala taxminan 15 yil yashaydi. 'fifty' (50) — delfinning umri.\nTALAFFUZ: fifteen /fɪfˈtiːn/ oxirgi bo'g'inga urg'u; fifty /ˈfɪfti/ birinchi bo'g'inga."
+       "whyUz": "Koala taxminan 15 yil yashaydi. 'fifty' (50) — delfinning umri.\nTALAFFUZ: fifteen /fɪfˈtiːn/ oxirgi bo'g'inga urg'u; fifty /ˈfɪfti/ birinchi bo'g'inga.",
+       "speakAnswer": "fifteen"
       }
      ]
     },
@@ -2345,25 +2503,29 @@
        "prompt": "1  What can koalas do?",
        "answer": "They can climb very well and they can swim very well, too.",
        "whyUz": "Matnda ikki qobiliyat: 'Koalas can climb very well. They can swim very well, too.'",
-       "speak": "1  What can koalas do?"
+       "speak": "1  What can koalas do?",
+       "speakAnswer": "They can climb very well and they can swim very well, too."
       },
       {
        "prompt": "2  What do they look like?",
        "answer": "They have got thick, grey fur, a big, black nose and very sharp claws.",
        "whyUz": "'What do they look like?' = ular qanday ko'rinadi? Tashqi ko'rinish tasvirlanadi.",
-       "speak": "2  What do they look like?"
+       "speak": "2  What do they look like?",
+       "speakAnswer": "They have got thick, grey fur, a big, black nose and very sharp claws."
       },
       {
        "prompt": "3  Where do they live?",
        "answer": "They live in the tops of eucalyptus trees in eastern Australia.",
        "whyUz": "Joy savoli. Matndan to'liq javob.",
-       "speak": "3  Where do they live?"
+       "speak": "3  Where do they live?",
+       "speakAnswer": "They live in the tops of eucalyptus trees in eastern Australia."
       },
       {
        "prompt": "4  How long do they live?",
        "answer": "They live for about fifteen years.",
        "whyUz": "'How long' — davomiylik. 'live FOR' — 'for' shart.",
-       "speak": "4  How long do they live?"
+       "speak": "4  How long do they live?",
+       "speakAnswer": "They live for about fifteen years."
       }
      ]
     }
@@ -2390,27 +2552,33 @@
      "tasks": [
       {
        "left": "1  What are their names?",
-       "right": "B  Hansel and Gretel."
+       "right": "B  Hansel and Gretel.",
+       "speakAnswer": "B  Hansel and Gretel."
       },
       {
        "left": "2  How old are they?",
-       "right": "C  One year old."
+       "right": "C  One year old.",
+       "speakAnswer": "C  One year old."
       },
       {
        "left": "3  What do they eat?",
-       "right": "A  Lettuce and carrots."
+       "right": "A  Lettuce and carrots.",
+       "speakAnswer": "A  Lettuce and carrots."
       },
       {
        "left": "4  When do you feed them?",
-       "right": "F  Every morning."
+       "right": "F  Every morning.",
+       "speakAnswer": "F  Every morning."
       },
       {
        "left": "5  Where do they live?",
-       "right": "D  In a big cage."
+       "right": "D  In a big cage.",
+       "speakAnswer": "D  In a big cage."
       },
       {
        "left": "6  How often do you clean it?",
-       "right": "E  Two or three times a week."
+       "right": "E  Two or three times a week.",
+       "speakAnswer": "E  Two or three times a week."
       }
      ]
     }
@@ -2497,49 +2665,57 @@
        "prompt": "grey seals / are / what?",
        "answer": "What are grey seals?",
        "whyUz": "'be' fe'li so'roq so'zidan keyin, egadan oldin turadi.\nJAVOB: They are (lovely) mammals.",
-       "speak": "grey seals / are / what?"
+       "speak": "grey seals / are / what?",
+       "speakAnswer": "What are grey seals?"
       },
       {
        "prompt": "where / live / they / do?",
        "answer": "Where do they live?",
        "whyUz": "So'roq so'zi → DO → ega → fe'l.\nJAVOB: They live in the north-east and north-west parts of the Atlantic and in the Baltic sea.",
-       "speak": "where / live / they / do?"
+       "speak": "where / live / they / do?",
+       "speakAnswer": "Where do they live?"
       },
       {
        "prompt": "they / do / can / what?",
        "answer": "What can they do?",
        "whyUz": "'can' yordamchi fe'l — 'do' KERAK EMAS.\nOxirgi 'do' — asosiy fe'l ('qilmoq').\nJAVOB: They can swim very fast and they can stay underwater for about 15 minutes.",
-       "speak": "they / do / can / what?"
+       "speak": "they / do / can / what?",
+       "speakAnswer": "What can they do?"
       },
       {
        "prompt": "have / they got / what?",
        "answer": "What have they got?",
        "whyUz": "'have got' bilan 'do' KERAK EMAS: What HAVE they GOT?\nJAVOB: They have got big eyes, long whiskers and thick grey fur.",
-       "speak": "have / they got / what?"
+       "speak": "have / they got / what?",
+       "speakAnswer": "What have they got?"
       },
       {
        "prompt": "have / they got / why / big eyes?",
        "answer": "Why have they got big eyes?",
        "whyUz": "'Why' + have + ega + got + ot?\nJAVOB: To help them see well in dark waters.\n(Sabab javobida 'To ...' yoki 'Because ...' ishlatiladi.)",
-       "speak": "have / they got / why / big eyes?"
+       "speak": "have / they got / why / big eyes?",
+       "speakAnswer": "Why have they got big eyes?"
       },
       {
        "prompt": "they weigh / how much / do?",
        "answer": "How much do they weigh?",
        "whyUz": "Og'irlik → HOW MUCH + DO + ega + weigh?\nJAVOB: They weigh from 150 to 230 kilos.",
-       "speak": "they weigh / how much / do?"
+       "speak": "they weigh / how much / do?",
+       "speakAnswer": "How much do they weigh?"
       },
       {
        "prompt": "they / eat / what / do?",
        "answer": "What do they eat?",
        "whyUz": "So'roq so'zi → DO → ega → fe'l.\nJAVOB: They eat various kinds of fish.",
-       "speak": "they / eat / what / do?"
+       "speak": "they / eat / what / do?",
+       "speakAnswer": "What do they eat?"
       },
       {
        "prompt": "do / they / how long / live for?",
        "answer": "How long do they live for?",
        "whyUz": "'How long' + DO + ega + live FOR?\n'for' gap OXIRIDA qoladi.\nJAVOB: They live for about 25 to 30 years.",
-       "speak": "do / they / how long / live for?"
+       "speak": "do / they / how long / live for?",
+       "speakAnswer": "How long do they live for?"
       }
      ]
     }
@@ -2760,39 +2936,48 @@
      "tasks": [
       {
        "left": "WHAT is this animal?",
-       "right": "An elephant."
+       "right": "An elephant.",
+       "speakAnswer": "An elephant."
       },
       {
        "left": "WHERE does it live?",
-       "right": "On the plains in Africa and India."
+       "right": "On the plains in Africa and India.",
+       "speakAnswer": "On the plains in Africa and India."
       },
       {
        "left": "WHEN does it sleep?",
-       "right": "At night."
+       "right": "At night.",
+       "speakAnswer": "At night."
       },
       {
        "left": "WHY can it walk long distances?",
-       "right": "Because it has got strong legs."
+       "right": "Because it has got strong legs.",
+       "speakAnswer": "Because it has got strong legs."
       },
       {
        "left": "HOW long is its trunk?",
-       "right": "About 3.1 metres."
+       "right": "About 3.1 metres.",
+       "speakAnswer": "About 3.1 metres."
       },
       {
        "left": "HOW tall is it?",
-       "right": "About 3.3 metres."
+       "right": "About 3.3 metres.",
+       "speakAnswer": "About 3.3 metres."
       },
       {
        "left": "HOW much does it weigh?",
-       "right": "About 4,000 kilos."
+       "right": "About 4,000 kilos.",
+       "speakAnswer": "About 4,000 kilos."
       },
       {
        "left": "HOW many legs has it got?",
-       "right": "Four."
+       "right": "Four.",
+       "speakAnswer": "Four."
       },
       {
        "left": "HOW long does it live?",
-       "right": "About 60 years."
+       "right": "About 60 years.",
+       "speakAnswer": "About 60 years."
       }
      ]
     }
@@ -2826,7 +3011,8 @@
         "fish",
         "mice"
        ],
-       "whyUz": "goose → geese. O'zakdagi 'oo' → 'ee' ga o'zgaradi.\nTalaffuz: goose /ɡuːs/, geese /ɡiːs/."
+       "whyUz": "goose → geese. O'zakdagi 'oo' → 'ee' ga o'zgaradi.\nTalaffuz: goose /ɡuːs/, geese /ɡiːs/.",
+       "speakAnswer": "goose"
       },
       {
        "prompt": "SINGULAR: mouse — PLURAL: ............",
@@ -2837,7 +3023,8 @@
         "fish",
         "goose"
        ],
-       "whyUz": "mouse → mice. 'mouses' XATO.\nTalaffuz: mouse /maʊs/, mice /maɪs/.\nDIQQAT: kompyuter sichqonchasi uchun 'mouses' ham ishlatiladi."
+       "whyUz": "mouse → mice. 'mouses' XATO.\nTalaffuz: mouse /maʊs/, mice /maɪs/.\nDIQQAT: kompyuter sichqonchasi uchun 'mouses' ham ishlatiladi.",
+       "speakAnswer": "mice"
       },
       {
        "prompt": "SINGULAR: ox — PLURAL: ............",
@@ -2848,7 +3035,8 @@
         "fish",
         "goose"
        ],
-       "whyUz": "ox → oxen. -EN qo'shimchasi bilan ko'plik — juda kam uchraydi.\n'children' ham shu turdan."
+       "whyUz": "ox → oxen. -EN qo'shimchasi bilan ko'plik — juda kam uchraydi.\n'children' ham shu turdan.",
+       "speakAnswer": "oxen"
       },
       {
        "prompt": "SINGULAR: ............  — PLURAL: sheep",
@@ -2859,7 +3047,8 @@
         "fish",
         "goose"
        ],
-       "whyUz": "sheep → sheep. Shakl O'ZGARMAYDI.\n'One sheep, ten sheep' — bir xil."
+       "whyUz": "sheep → sheep. Shakl O'ZGARMAYDI.\n'One sheep, ten sheep' — bir xil.",
+       "speakAnswer": "sheep"
       },
       {
        "prompt": "SINGULAR: deer — PLURAL: ............",
@@ -2870,7 +3059,8 @@
         "goose",
         "mice"
        ],
-       "whyUz": "deer → deer. 'deers' XATO. 43-betda yo'lbars 'deer' yeydi."
+       "whyUz": "deer → deer. 'deers' XATO. 43-betda yo'lbars 'deer' yeydi.",
+       "speakAnswer": "deer"
       },
       {
        "prompt": "SINGULAR: ............  — PLURAL: fish",
@@ -2881,7 +3071,8 @@
         "goose",
         "mice"
        ],
-       "whyUz": "fish → fish. Shakl o'zgarmaydi.\nDIQQAT: 'fishes' — turli TURLARI haqida gapirilganda ishlatiladi."
+       "whyUz": "fish → fish. Shakl o'zgarmaydi.\nDIQQAT: 'fishes' — turli TURLARI haqida gapirilganda ishlatiladi.",
+       "speakAnswer": "fish"
       }
      ]
     },
@@ -2901,28 +3092,32 @@
        "answer": "men",
        "promptUz": "Unli o'zgaradi: a → e",
        "whyUz": "man → men. Talaffuz: man /mæn/, men /men/.\n'mans' XATO.",
-       "speak": "man  → ............"
+       "speak": "man  → ............",
+       "speakAnswer": "men"
       },
       {
        "prompt": "woman  → ............",
        "answer": "women",
        "promptUz": "Yozilishi bitta harf o'zgaradi, talaffuzi ko'proq",
        "whyUz": "woman → women. YOZILISHI: a → e (ikkinchi bo'g'inda).\nLEKIN TALAFFUZI birinchi bo'g'inda o'zgaradi:\n  woman /ˈwʊmən/ — 'vumen'\n  women /ˈwɪmɪn/ — 'vimin'",
-       "speak": "woman  → ............"
+       "speak": "woman  → ............",
+       "speakAnswer": "women"
       },
       {
        "prompt": "child  → ............",
        "answer": "children",
        "promptUz": "-ren qo'shimchasi",
        "whyUz": "child → children. 'childs' XATO.\n'oxen' kabi -EN bilan tugaydi.",
-       "speak": "child  → ............"
+       "speak": "child  → ............",
+       "speakAnswer": "children"
       },
       {
        "prompt": "person  → ............",
        "answer": "people",
        "promptUz": "Butunlay boshqa so'z",
        "whyUz": "person → people. O'zak BUTUNLAY o'zgaradi.\n'persons' ham bor, lekin faqat rasmiy hujjatlarda.\n'people' — DOIM ko'plik: 'people ARE' ('people is' XATO).",
-       "speak": "person  → ............"
+       "speak": "person  → ............",
+       "speakAnswer": "people"
       }
      ]
     }
@@ -3105,43 +3300,50 @@
        "prompt": "Baliqlar:",
        "answer": "I can see five fish.",
        "promptUz": "Shakli o'zgarmaydigan ot",
-       "whyUz": "Rasmda 5 ta baliq. 'fish' — ko'plikda ham FISH.\n'five fishes' XATO."
+       "whyUz": "Rasmda 5 ta baliq. 'fish' — ko'plikda ham FISH.\n'five fishes' XATO.",
+       "speakAnswer": "I can see five fish."
       },
       {
        "prompt": "Kapalaklar:",
        "answer": "I can see four butterflies.",
        "promptUz": "y → ies",
-       "whyUz": "Rasmda 4 ta kapalak. 'butterfly' → 'butterflies' (undosh + y → ies)."
+       "whyUz": "Rasmda 4 ta kapalak. 'butterfly' → 'butterflies' (undosh + y → ies).",
+       "speakAnswer": "I can see four butterflies."
       },
       {
        "prompt": "Sichqonlar:",
        "answer": "I can see four mice.",
        "promptUz": "O'zak o'zgaradi",
-       "whyUz": "Rasmda 4 ta sichqon. 'mouse' → MICE.\n'four mouses' XATO."
+       "whyUz": "Rasmda 4 ta sichqon. 'mouse' → MICE.\n'four mouses' XATO.",
+       "speakAnswer": "I can see four mice."
       },
       {
        "prompt": "G'ozlar:",
        "answer": "I can see three geese.",
        "promptUz": "oo → ee",
-       "whyUz": "Rasmda 3 ta g'oz. 'goose' → GEESE.\n'three gooses' XATO."
+       "whyUz": "Rasmda 3 ta g'oz. 'goose' → GEESE.\n'three gooses' XATO.",
+       "speakAnswer": "I can see three geese."
       },
       {
        "prompt": "Kiyiklar:",
        "answer": "I can see two deer.",
        "promptUz": "Shakli o'zgarmaydigan ot",
-       "whyUz": "Rasmda 2 ta kiyik (shoxli, oldindan ko'rinadi). 'deer' → DEER.\n'two deers' XATO."
+       "whyUz": "Rasmda 2 ta kiyik (shoxli, oldindan ko'rinadi). 'deer' → DEER.\n'two deers' XATO.",
+       "speakAnswer": "I can see two deer."
       },
       {
        "prompt": "Qo'ylar:",
        "answer": "I can see two sheep.",
        "promptUz": "Shakli o'zgarmaydigan ot",
-       "whyUz": "Rasmda 2 ta qo'y. 'sheep' → SHEEP.\n'two sheeps' XATO."
+       "whyUz": "Rasmda 2 ta qo'y. 'sheep' → SHEEP.\n'two sheeps' XATO.",
+       "speakAnswer": "I can see two sheep."
       },
       {
        "prompt": "Ho'kizlar:",
        "answer": "I can see two oxen.",
        "promptUz": "-en qo'shimchasi",
-       "whyUz": "Rasmda 2 ta ho'kiz (bo'yinturuqli). 'ox' → OXEN.\n'two oxes' XATO."
+       "whyUz": "Rasmda 2 ta ho'kiz (bo'yinturuqli). 'ox' → OXEN.\n'two oxes' XATO.",
+       "speakAnswer": "I can see two oxen."
       }
      ]
     },
@@ -3161,70 +3363,80 @@
        "answer": "Deer have got a very short tail.",
        "promptUz": "+++ belgisiga qarang",
        "whyUz": "+++ → VERY. Kiyikning dumi juda kalta.",
-       "speak": "1  deer: +++ short tail"
+       "speak": "1  deer: +++ short tail",
+       "speakAnswer": "Deer have got a very short tail."
       },
       {
        "prompt": "1  deer: +++ big antlers",
        "answer": "Deer have got very big antlers.",
        "promptUz": "+++ belgisiga qarang",
        "whyUz": "+++ → VERY. 'antlers' = shoxlar (kiyikning shoxi, doim ko'plikda).",
-       "speak": "1  deer: +++ big antlers"
+       "speak": "1  deer: +++ big antlers",
+       "speakAnswer": "Deer have got very big antlers."
       },
       {
        "prompt": "2  elephant: +++ long trunk",
        "answer": "Elephants have got a very long trunk.",
        "promptUz": "+++ belgisiga qarang",
        "whyUz": "+++ → VERY. Filning xartumi juda uzun (Coursebook 43-bet: 3,1 metr).",
-       "speak": "2  elephant: +++ long trunk"
+       "speak": "2  elephant: +++ long trunk",
+       "speakAnswer": "Elephants have got a very long trunk."
       },
       {
        "prompt": "2  elephant: +++ big ears",
        "answer": "Elephants have got very big ears.",
        "promptUz": "+++ belgisiga qarang",
        "whyUz": "+++ → VERY. Fil quloqlari juda katta — issiqda salqinlatadi.",
-       "speak": "2  elephant: +++ big ears"
+       "speak": "2  elephant: +++ big ears",
+       "speakAnswer": "Elephants have got very big ears."
       },
       {
        "prompt": "2  elephant: ++ big eyes",
        "answer": "Elephants have got quite big eyes.",
        "promptUz": "++ belgisiga qarang",
        "whyUz": "++ → QUITE. Fil tanasiga nisbatan ko'zi unchalik katta emas.",
-       "speak": "2  elephant: ++ big eyes"
+       "speak": "2  elephant: ++ big eyes",
+       "speakAnswer": "Elephants have got quite big eyes."
       },
       {
        "prompt": "3  cat: ++ small ears",
        "answer": "Cats have got quite small ears.",
        "promptUz": "++ belgisiga qarang",
        "whyUz": "++ → QUITE.",
-       "speak": "3  cat: ++ small ears"
+       "speak": "3  cat: ++ small ears",
+       "speakAnswer": "Cats have got quite small ears."
       },
       {
        "prompt": "3  cat: ++ big eyes",
        "answer": "Cats have got quite big eyes.",
        "promptUz": "++ belgisiga qarang",
        "whyUz": "++ → QUITE. Mushuk ko'zi kechasi ko'rish uchun kattaroq.",
-       "speak": "3  cat: ++ big eyes"
+       "speak": "3  cat: ++ big eyes",
+       "speakAnswer": "Cats have got quite big eyes."
       },
       {
        "prompt": "3  cat: +++ long tail",
        "answer": "Cats have got a very long tail.",
        "promptUz": "+++ belgisiga qarang",
        "whyUz": "+++ → VERY. Mushuk dumi bilan muvozanat saqlaydi.",
-       "speak": "3  cat: +++ long tail"
+       "speak": "3  cat: +++ long tail",
+       "speakAnswer": "Cats have got a very long tail."
       },
       {
        "prompt": "4  koala: +++ sharp claws",
        "answer": "Koalas have got very sharp claws.",
        "promptUz": "+++ belgisiga qarang",
        "whyUz": "+++ → VERY. Coursebook 42-betdagi koala matnida ham 'very sharp claws'.",
-       "speak": "4  koala: +++ sharp claws"
+       "speak": "4  koala: +++ sharp claws",
+       "speakAnswer": "Koalas have got very sharp claws."
       },
       {
        "prompt": "4  koala: ++ small eyes",
        "answer": "Koalas have got quite small eyes.",
        "promptUz": "++ belgisiga qarang",
        "whyUz": "++ → QUITE. Koala ko'zi kichkina, burni esa katta va qora.",
-       "speak": "4  koala: ++ small eyes"
+       "speak": "4  koala: ++ small eyes",
+       "speakAnswer": "Koalas have got quite small eyes."
       }
      ]
     }
@@ -3259,7 +3471,8 @@
         "How long"
        ],
        "whyUz": "Hayvon nomi so'ralmoqda → WHAT.\nJavob: d — A White Shark (oq akula).",
-       "speak": "1  ............ is this animal?"
+       "speak": "1  ............ is this animal?",
+       "speakAnswer": "What"
       },
       {
        "prompt": "2  ............ does it live?",
@@ -3271,7 +3484,8 @@
         "How long"
        ],
        "whyUz": "Joy so'ralmoqda → WHERE.\nJavob: f — In tropical and warm seas (tropik va iliq dengizlarda).",
-       "speak": "2  ............ does it live?"
+       "speak": "2  ............ does it live?",
+       "speakAnswer": "Where"
       },
       {
        "prompt": "3  ............ does it eat?",
@@ -3283,7 +3497,8 @@
         "How long"
        ],
        "whyUz": "Ovqat so'ralmoqda → WHAT.\nJavob: a — All kinds of fish (har xil baliqlar).",
-       "speak": "3  ............ does it eat?"
+       "speak": "3  ............ does it eat?",
+       "speakAnswer": "What"
       },
       {
        "prompt": "4  ............ has it got?",
@@ -3295,7 +3510,8 @@
         "How long"
        ],
        "whyUz": "Tana qismlari so'ralmoqda → WHAT.\n'has it got' bilan 'does' KERAK EMAS.\nJavob: b — Sharp teeth and pointed fins (o'tkir tishlar va uchli suzgichlar).",
-       "speak": "4  ............ has it got?"
+       "speak": "4  ............ has it got?",
+       "speakAnswer": "What"
       },
       {
        "prompt": "5  ............ does it weigh?",
@@ -3307,7 +3523,8 @@
         "How long"
        ],
        "whyUz": "Og'irlik so'ralmoqda → HOW MUCH.\nJavob: c — 1200 kilos.",
-       "speak": "5  ............ does it weigh?"
+       "speak": "5  ............ does it weigh?",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "6  ............ long is it?",
@@ -3319,7 +3536,8 @@
         "What"
        ],
        "whyUz": "'long' allaqachon bor → faqat HOW qo'shiladi: How long IS it? (uzunlik).\nJavob: g — 3-6 metres.",
-       "speak": "6  ............ long is it?"
+       "speak": "6  ............ long is it?",
+       "speakAnswer": "How"
       },
       {
        "prompt": "7  ............ does it live for?",
@@ -3331,7 +3549,8 @@
         "What"
        ],
        "whyUz": "Umr so'ralmoqda → HOW LONG.\n'live FOR' — 'for' davomiylikni bildiradi.\nJavob: e — 30-40 years.",
-       "speak": "7  ............ does it live for?"
+       "speak": "7  ............ does it live for?",
+       "speakAnswer": "How long"
       }
      ]
     },
@@ -3348,31 +3567,38 @@
      "tasks": [
       {
        "left": "1  What is this animal?",
-       "right": "d  A White Shark."
+       "right": "d  A White Shark.",
+       "speakAnswer": "d  A White Shark."
       },
       {
        "left": "2  Where does it live?",
-       "right": "f  In tropical and warm seas."
+       "right": "f  In tropical and warm seas.",
+       "speakAnswer": "f  In tropical and warm seas."
       },
       {
        "left": "3  What does it eat?",
-       "right": "a  All kinds of fish."
+       "right": "a  All kinds of fish.",
+       "speakAnswer": "a  All kinds of fish."
       },
       {
        "left": "4  What has it got?",
-       "right": "b  Sharp teeth and pointed fins."
+       "right": "b  Sharp teeth and pointed fins.",
+       "speakAnswer": "b  Sharp teeth and pointed fins."
       },
       {
        "left": "5  How much does it weigh?",
-       "right": "c  1200 kilos."
+       "right": "c  1200 kilos.",
+       "speakAnswer": "c  1200 kilos."
       },
       {
        "left": "6  How long is it?",
-       "right": "g  3-6 metres."
+       "right": "g  3-6 metres.",
+       "speakAnswer": "g  3-6 metres."
       },
       {
        "left": "7  How long does it live for?",
-       "right": "e  30-40 years."
+       "right": "e  30-40 years.",
+       "speakAnswer": "e  30-40 years."
       }
      ]
     },
@@ -3392,42 +3618,48 @@
        "answer": "Where do green turtles live?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Yangi ma'lumot — JOY ('in warm oceans') → WHERE.\nKo'plik ega → DO.",
-       "speak": "Green turtles live in warm oceans."
+       "speak": "Green turtles live in warm oceans.",
+       "speakAnswer": "Where do green turtles live?"
       },
       {
        "prompt": "They have got a shell to protect them.",
        "answer": "What have they got?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Yangi ma'lumot — TANA QISMI ('a shell') → WHAT.\n'have got' bilan 'do' KERAK EMAS.\n'a shell' = qobiq; 'to protect' = himoya qilmoq.",
-       "speak": "They have got a shell to protect them."
+       "speak": "They have got a shell to protect them.",
+       "speakAnswer": "What have they got?"
       },
       {
        "prompt": "They eat fish and plants.",
        "answer": "What do they eat?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Yangi ma'lumot — OVQAT → WHAT. Ko'plik ega → DO.\n'a plant' = o'simlik.",
-       "speak": "They eat fish and plants."
+       "speak": "They eat fish and plants.",
+       "speakAnswer": "What do they eat?"
       },
       {
        "prompt": "They weigh about 270 kilos.",
        "answer": "How much do they weigh?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Yangi ma'lumot — OG'IRLIK → HOW MUCH.\nDIQQAT: 'weigh' bilan 'be' ishlatilmaydi — 'do they weigh'.",
-       "speak": "They weigh about 270 kilos."
+       "speak": "They weigh about 270 kilos.",
+       "speakAnswer": "How much do they weigh?"
       },
       {
        "prompt": "They lay about 100 eggs at a time.",
        "answer": "How many eggs do they lay at a time?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Yangi ma'lumot — SON ('100 eggs') → HOW MANY (tuxum sanaladi).\n'at a time' = bir martada, bir yo'la.",
-       "speak": "They lay about 100 eggs at a time."
+       "speak": "They lay about 100 eggs at a time.",
+       "speakAnswer": "How many eggs do they lay at a time?"
       },
       {
        "prompt": "They live for about 50 years.",
        "answer": "How long do they live for?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Yangi ma'lumot — DAVOMIYLIK → HOW LONG.\n'for' savolda ham qoladi: 'How long do they live FOR?'",
-       "speak": "They live for about 50 years."
+       "speak": "They live for about 50 years.",
+       "speakAnswer": "How long do they live for?"
       }
      ]
     }
@@ -3470,7 +3702,8 @@
         "/ɜː/",
         "/e/"
        ],
-       "whyUz": "bird /bɜːd/ — 'ir' birikmasi uzun chuqur tovush beradi."
+       "whyUz": "bird /bɜːd/ — 'ir' birikmasi uzun chuqur tovush beradi.",
+       "speakAnswer": "/ɜː/"
       },
       {
        "prompt": "herd",
@@ -3480,7 +3713,8 @@
         "/ɜː/",
         "/e/"
        ],
-       "whyUz": "herd /hɜːd/ — 'er' birikmasi. 'head' bilan chalkashtirmang!"
+       "whyUz": "herd /hɜːd/ — 'er' birikmasi. 'head' bilan chalkashtirmang!",
+       "speakAnswer": "/ɜː/"
       },
       {
        "prompt": "head",
@@ -3510,7 +3744,8 @@
         "/ɜː/",
         "/e/"
        ],
-       "whyUz": "turn /tɜːn/ — 'ur' birikmasi uzun chuqur tovush beradi."
+       "whyUz": "turn /tɜːn/ — 'ur' birikmasi uzun chuqur tovush beradi.",
+       "speakAnswer": "/ɜː/"
       }
      ]
     }
@@ -3540,25 +3775,29 @@
        "prompt": "LIONS — they've got: light brown fur and a long ............",
        "answer": "tail",
        "promptUz": "Sherning orqasidagi uzun qism (uchida tuk bor)",
-       "whyUz": "Sherning uzun dumi bor, uchida qora tuk. 40–41-betdagi 'a tail' so'zi."
+       "whyUz": "Sherning uzun dumi bor, uchida qora tuk. 40–41-betdagi 'a tail' so'zi.",
+       "speakAnswer": "tail"
       },
       {
        "prompt": "CHIMPANZEES — they've got: ............ or brown fur and very long arms",
        "answer": "black",
        "promptUz": "Rasmda shimpanzening juni asosan shu rangda",
-       "whyUz": "Shimpanzening juni qora yoki jigarrang. Rasmda qora ko'rinadi.\n44-betdagi ranglar ro'yxatidan."
+       "whyUz": "Shimpanzening juni qora yoki jigarrang. Rasmda qora ko'rinadi.\n44-betdagi ranglar ro'yxatidan.",
+       "speakAnswer": "black"
       },
       {
        "prompt": "LIONS — they live: on the hot plains of ............",
        "answer": "Africa",
        "promptUz": "Sher qaysi qit'ada yashaydi?",
-       "whyUz": "Sher Afrika savannasida yashaydi. 43-betdagi fil ham 'on the plains in Africa'.\n'hot plains' = issiq tekisliklar."
+       "whyUz": "Sher Afrika savannasida yashaydi. 43-betdagi fil ham 'on the plains in Africa'.\n'hot plains' = issiq tekisliklar.",
+       "speakAnswer": "Africa"
       },
       {
        "prompt": "CHIMPANZEES — they live: in African ............",
        "answer": "forests",
        "promptUz": "Daraxtlar ko'p bo'lgan joy (ko'plikda)",
-       "whyUz": "Shimpanze Afrika o'rmonlarida yashaydi — uzun qo'llari bilan daraxtga chiqadi.\n'a forest' → ko'plikda 'forests'."
+       "whyUz": "Shimpanze Afrika o'rmonlarida yashaydi — uzun qo'llari bilan daraxtga chiqadi.\n'a forest' → ko'plikda 'forests'.",
+       "speakAnswer": "forests"
       },
       {
        "prompt": "LIONS — they live for: about 12 to ............ years",
@@ -3663,82 +3902,98 @@
       {
        "prompt": "DOLPHINS — kind of animal:",
        "answer": "mammals",
-       "whyUz": "Kitobda BERILGAN namuna. Matnda: 'Dolphins are mammals.'"
+       "whyUz": "Kitobda BERILGAN namuna. Matnda: 'Dolphins are mammals.'",
+       "speakAnswer": "mammals"
       },
       {
        "prompt": "DOLPHINS — unusual because:",
        "answer": "they are not fish, but they live in water",
-       "whyUz": "Matnda: 'Dolphins are not fish, but they live in water.'"
+       "whyUz": "Matnda: 'Dolphins are not fish, but they live in water.'",
+       "speakAnswer": "they are not fish, but they live in water"
       },
       {
        "prompt": "DOLPHINS — they can:",
        "answer": "swim very well; easily learn how to play games",
-       "whyUz": "Matnda: 'They can swim very well' va 'They can easily learn how to play games'."
+       "whyUz": "Matnda: 'They can swim very well' va 'They can easily learn how to play games'.",
+       "speakAnswer": "swim very well; easily learn how to play games"
       },
       {
        "prompt": "DOLPHINS — they've got:",
        "answer": "grey skin, a big smile, fins and a tail",
-       "whyUz": "Matnda: 'They've got grey skin and a big smile. They've also got fins and a tail.' Oyog'i YO'Q."
+       "whyUz": "Matnda: 'They've got grey skin and a big smile. They've also got fins and a tail.' Oyog'i YO'Q.",
+       "speakAnswer": "grey skin, a big smile, fins and a tail"
       },
       {
        "prompt": "DOLPHINS — they weigh:",
        "answer": "from seventy to five hundred kilos",
-       "whyUz": "Matnda: 'They weigh from seventy to five hundred kilos.'"
+       "whyUz": "Matnda: 'They weigh from seventy to five hundred kilos.'",
+       "speakAnswer": "from seventy to five hundred kilos"
       },
       {
        "prompt": "DOLPHINS — they live:",
        "answer": "in warm seas in many different parts of the world, in small groups",
-       "whyUz": "Matnda: 'in warm seas in many different parts of the world' va 'in small groups'."
+       "whyUz": "Matnda: 'in warm seas in many different parts of the world' va 'in small groups'.",
+       "speakAnswer": "in warm seas in many different parts of the world, in small groups"
       },
       {
        "prompt": "DOLPHINS — they eat:",
        "answer": "fish",
-       "whyUz": "Matnda: 'they eat fish'."
+       "whyUz": "Matnda: 'they eat fish'.",
+       "speakAnswer": "fish"
       },
       {
        "prompt": "DOLPHINS — they live for:",
        "answer": "about fifty years",
-       "whyUz": "Matnda: 'They live for about fifty years.'"
+       "whyUz": "Matnda: 'They live for about fifty years.'",
+       "speakAnswer": "about fifty years"
       },
       {
        "prompt": "PENGUINS — kind of animal:",
        "answer": "birds",
-       "whyUz": "Matnda: 'they are like other birds'. Tuxum qo'yadi, qanoti va pati bor."
+       "whyUz": "Matnda: 'they are like other birds'. Tuxum qo'yadi, qanoti va pati bor.",
+       "speakAnswer": "birds"
       },
       {
        "prompt": "PENGUINS — unusual because:",
        "answer": "they are birds, but they can't fly",
-       "whyUz": "Matnda: 'they are like other birds, but they can't fly!'"
+       "whyUz": "Matnda: 'they are like other birds, but they can't fly!'",
+       "speakAnswer": "they are birds, but they can't fly"
       },
       {
        "prompt": "PENGUINS — they can:",
        "answer": "swim very well, but they can't fly",
-       "whyUz": "Matnda: 'They can swim very well, though.'"
+       "whyUz": "Matnda: 'They can swim very well, though.'",
+       "speakAnswer": "swim very well, but they can't fly"
       },
       {
        "prompt": "PENGUINS — they've got:",
        "answer": "small wings, very short legs, a short tail and thick feathers",
-       "whyUz": "Matnda: 'small wings, very short legs and a short tail' + 'thick feathers'."
+       "whyUz": "Matnda: 'small wings, very short legs and a short tail' + 'thick feathers'.",
+       "speakAnswer": "small wings, very short legs, a short tail and thick feathers"
       },
       {
        "prompt": "PENGUINS — they weigh:",
        "answer": "about twenty kilos",
-       "whyUz": "Matnda: 'They weigh about twenty kilos.'"
+       "whyUz": "Matnda: 'They weigh about twenty kilos.'",
+       "speakAnswer": "about twenty kilos"
       },
       {
        "prompt": "PENGUINS — they live:",
        "answer": "on the ice of Antarctica and in the sea around it, in big groups",
-       "whyUz": "Matnda: 'on the ice of Antarctica and in the sea around it' va 'in big groups'."
+       "whyUz": "Matnda: 'on the ice of Antarctica and in the sea around it' va 'in big groups'.",
+       "speakAnswer": "on the ice of Antarctica and in the sea around it, in big groups"
       },
       {
        "prompt": "PENGUINS — they eat:",
        "answer": "fish",
-       "whyUz": "Matnda: 'they eat fish'. Delfin bilan bir xil."
+       "whyUz": "Matnda: 'they eat fish'. Delfin bilan bir xil.",
+       "speakAnswer": "fish"
       },
       {
        "prompt": "PENGUINS — they live for:",
        "answer": "about twenty years",
-       "whyUz": "Matnda: 'They live for about twenty years.'"
+       "whyUz": "Matnda: 'They live for about twenty years.'",
+       "speakAnswer": "about twenty years"
       }
      ]
     },
@@ -3900,70 +4155,80 @@
        "answer": "In Australia.",
        "promptUz": "Joy — matnning 3-gapi",
        "whyUz": "Matnda: 'They live in Australia.'",
-       "speak": "Where does it live?"
+       "speak": "Where does it live?",
+       "speakAnswer": "In Australia."
       },
       {
        "prompt": "When does it sleep?",
        "answer": "During the day.",
        "promptUz": "Vaqt — matnning 7-gapi",
        "whyUz": "Matnda: 'They sleep during the day.' Fil kechasi uxlaydi, kenguru esa kunduzi.",
-       "speak": "When does it sleep?"
+       "speak": "When does it sleep?",
+       "speakAnswer": "During the day."
       },
       {
        "prompt": "Why can it jump very high?",
        "answer": "Because its back legs are very strong.",
        "promptUz": "Sabab — 'Because' bilan boshlang",
        "whyUz": "Matnda: 'because their back legs are very strong'.\nBirlik ('it') haqida gapirganda 'their' → 'its'.",
-       "speak": "Why can it jump very high?"
+       "speak": "Why can it jump very high?",
+       "speakAnswer": "Because its back legs are very strong."
       },
       {
        "prompt": "How tall is it?",
        "answer": "About two metres.",
        "promptUz": "Bo'y — matnning 4-gapi",
        "whyUz": "Matnda: 'They are about two metres tall.'",
-       "speak": "How tall is it?"
+       "speak": "How tall is it?",
+       "speakAnswer": "About two metres."
       },
       {
        "prompt": "How much does it weigh?",
        "answer": "About sixty kilos.",
        "promptUz": "Og'irlik — matnning 4-gapi",
        "whyUz": "Matnda: 'weigh about sixty kilos'.",
-       "speak": "How much does it weigh?"
+       "speak": "How much does it weigh?",
+       "speakAnswer": "About sixty kilos."
       },
       {
        "prompt": "How many legs has it got?",
        "answer": "Four.",
        "promptUz": "Orqa va old oyoqlarni qo'shing",
        "whyUz": "Ikkita orqa + ikkita old = to'rtta.",
-       "speak": "How many legs has it got?"
+       "speak": "How many legs has it got?",
+       "speakAnswer": "Four."
       },
       {
        "prompt": "What does it eat?",
        "answer": "Leaves.",
        "promptUz": "Ovqat — matnning 7-gapi",
        "whyUz": "Matnda: 'they eat leaves'. Koala ham barg yeydi (42-bet).",
-       "speak": "What does it eat?"
+       "speak": "What does it eat?",
+       "speakAnswer": "Leaves."
       },
       {
        "prompt": "How long does it live?",
        "answer": "About fifteen to twenty years.",
        "promptUz": "Umri — matnning oxirgi gapi",
        "whyUz": "Matnda: 'They live for about fifteen to twenty years.'",
-       "speak": "How long does it live?"
+       "speak": "How long does it live?",
+       "speakAnswer": "About fifteen to twenty years."
       },
       {
        "prompt": "What can it do very well?",
        "answer": "It can jump very high.",
        "promptUz": "Qobiliyat — matnning 6-gapi",
        "whyUz": "Matnda: 'They can jump very high'.",
-       "speak": "What can it do very well?"
+       "speak": "What can it do very well?",
+       "speakAnswer": "It can jump very high."
       },
       {
        "prompt": "Where does it carry its babies?",
        "answer": "In a pouch.",
        "promptUz": "Bola qayerda olib yuriladi?",
        "whyUz": "Matnda: 'Kangaroos carry their babies in a pouch.'",
-       "speak": "Where does it carry its babies?"
+       "speak": "Where does it carry its babies?",
+       "speakAnswer": "In a pouch."
       }
      ]
     }
@@ -4126,85 +4391,99 @@
        "prompt": "B — What is this animal?",
        "answer": "It's a parrot.",
        "promptUz": "Yorqin patli, egri tumshuqli qush",
-       "whyUz": "B rasmda to'tiqush — 41-betda ham ko'rgansiz."
+       "whyUz": "B rasmda to'tiqush — 41-betda ham ko'rgansiz.",
+       "speakAnswer": "It's a parrot."
       },
       {
        "prompt": "B — What colour is it?",
        "answer": "It's red.",
        "promptUz": "Tanasining asosiy rangi",
-       "whyUz": "Tanasi qizil; qanotida sariq, ko'k va qora patlar ham bor.\nTo'liqroq javob: 'It's red, yellow, blue and black.'"
+       "whyUz": "Tanasi qizil; qanotida sariq, ko'k va qora patlar ham bor.\nTo'liqroq javob: 'It's red, yellow, blue and black.'",
+       "speakAnswer": "It's red."
       },
       {
        "prompt": "B — How big is it?",
        "answer": "It's small.",
        "promptUz": "Sigir bilan solishtiring",
-       "whyUz": "To'tiqush sigirga nisbatan juda kichik."
+       "whyUz": "To'tiqush sigirga nisbatan juda kichik.",
+       "speakAnswer": "It's small."
       },
       {
        "prompt": "B — How long is its tail?",
        "answer": "It's very long.",
        "promptUz": "Rasmda dumi shoxdan pastga osilib turibdi",
-       "whyUz": "To'tiqushning dumi tanasidan ham uzun — 'very long'."
+       "whyUz": "To'tiqushning dumi tanasidan ham uzun — 'very long'.",
+       "speakAnswer": "It's very long."
       },
       {
        "prompt": "C — What is this animal?",
        "answer": "It's a dog.",
        "promptUz": "Uy hayvoni, o'tirib turibdi",
-       "whyUz": "C rasmda it."
+       "whyUz": "C rasmda it.",
+       "speakAnswer": "It's a dog."
       },
       {
        "prompt": "C — What colour is it?",
        "answer": "It's brown and white.",
        "promptUz": "Ikki rangni ayting",
-       "whyUz": "Rasmda itning tanasi jigarrang-kulrang, bo'yni va oyoqlari oq."
+       "whyUz": "Rasmda itning tanasi jigarrang-kulrang, bo'yni va oyoqlari oq.",
+       "speakAnswer": "It's brown and white."
       },
       {
        "prompt": "C — How big is it?",
        "answer": "It's small.",
        "promptUz": "Sigir va zebra bilan solishtiring",
-       "whyUz": "It sigirdan va zebradan ancha kichik."
+       "whyUz": "It sigirdan va zebradan ancha kichik.",
+       "speakAnswer": "It's small."
       },
       {
        "prompt": "C — How long is its tail?",
        "answer": "It's quite long.",
        "promptUz": "Ingichka va pastga osilgan",
-       "whyUz": "Rasmda itning dumi ingichka va ancha uzun."
+       "whyUz": "Rasmda itning dumi ingichka va ancha uzun.",
+       "speakAnswer": "It's quite long."
       },
       {
        "prompt": "C — How long are its ears?",
        "answer": "They're quite short.",
        "promptUz": "Ikkita narsa — 'They're' bilan javob bering",
-       "whyUz": "Quloqlari kalta va bukilgan. Ko'plik → THEY'RE."
+       "whyUz": "Quloqlari kalta va bukilgan. Ko'plik → THEY'RE.",
+       "speakAnswer": "They're quite short."
       },
       {
        "prompt": "D — What is this animal?",
        "answer": "It's a zebra.",
        "promptUz": "Qora-oq chiziqli ot",
-       "whyUz": "D rasmda zebra."
+       "whyUz": "D rasmda zebra.",
+       "speakAnswer": "It's a zebra."
       },
       {
        "prompt": "D — What colour is it?",
        "answer": "It's black and white.",
        "promptUz": "Ikki rang — chiziqlar",
-       "whyUz": "Zebra qora va oq chiziqli."
+       "whyUz": "Zebra qora va oq chiziqli.",
+       "speakAnswer": "It's black and white."
       },
       {
        "prompt": "D — How big is it?",
        "answer": "It's quite big.",
        "promptUz": "Sigirdan kichikroq, itdan kattaroq",
-       "whyUz": "Zebra katta hayvon, lekin sigirdek 'very big' emas."
+       "whyUz": "Zebra katta hayvon, lekin sigirdek 'very big' emas.",
+       "speakAnswer": "It's quite big."
       },
       {
        "prompt": "D — How long is its tail?",
        "answer": "It's quite long.",
        "promptUz": "Uchida qora tuk bor",
-       "whyUz": "Zebraning dumi ancha uzun, uchida qora tuki bor."
+       "whyUz": "Zebraning dumi ancha uzun, uchida qora tuki bor.",
+       "speakAnswer": "It's quite long."
       },
       {
        "prompt": "D — How long are its ears?",
        "answer": "They're quite long.",
        "promptUz": "Ikkita narsa — 'They're' bilan javob bering",
-       "whyUz": "Zebraning quloqlari uzun va tik. Sigirning quloqlaridan uzunroq."
+       "whyUz": "Zebraning quloqlari uzun va tik. Sigirning quloqlaridan uzunroq.",
+       "speakAnswer": "They're quite long."
       }
      ]
     }
@@ -4234,70 +4513,80 @@
        "answer": "Can fish run?",
        "promptUz": "Savol tuzing",
        "whyUz": "Baliqning oyog'i yo'q — suzadi, yugurmaydi.\nKo'pligi: fish → FISH (o'zgarmaydi).",
-       "speak": "2  (baliq) can/run?"
+       "speak": "2  (baliq) can/run?",
+       "speakAnswer": "Can fish run?"
       },
       {
        "prompt": "2  (baliq) can/run?",
        "answer": "No, fish can't run.",
        "promptUz": "Javob tuzing",
        "whyUz": "Baliqning oyog'i yo'q — suzadi, yugurmaydi.\nKo'pligi: fish → FISH (o'zgarmaydi).",
-       "speak": "2  (baliq) can/run?"
+       "speak": "2  (baliq) can/run?",
+       "speakAnswer": "No, fish can't run."
       },
       {
        "prompt": "3  (kiyik) have/got short legs?",
        "answer": "Have deer got short legs?",
        "promptUz": "Savol tuzing",
        "whyUz": "Kiyikning oyoqlari UZUN — shuning uchun tez yuguradi.\nKo'pligi: deer → DEER (o'zgarmaydi).",
-       "speak": "3  (kiyik) have/got short legs?"
+       "speak": "3  (kiyik) have/got short legs?",
+       "speakAnswer": "Have deer got short legs?"
       },
       {
        "prompt": "3  (kiyik) have/got short legs?",
        "answer": "No, deer haven't got short legs. They've got long legs.",
        "promptUz": "Javob tuzing",
        "whyUz": "Kiyikning oyoqlari UZUN — shuning uchun tez yuguradi.\nKo'pligi: deer → DEER (o'zgarmaydi).",
-       "speak": "3  (kiyik) have/got short legs?"
+       "speak": "3  (kiyik) have/got short legs?",
+       "speakAnswer": "No, deer haven't got short legs. They've got long legs."
       },
       {
        "prompt": "4  (g'oz) have/got whiskers?",
        "answer": "Have geese got whiskers?",
        "promptUz": "Savol tuzing",
        "whyUz": "'whiskers' (mo'ylov) faqat mushuksimonlar va ba'zi sutemizuvchilarda bo'ladi.\nG'oz — qush, unda pat bor.\nKo'pligi: goose → GEESE.",
-       "speak": "4  (g'oz) have/got whiskers?"
+       "speak": "4  (g'oz) have/got whiskers?",
+       "speakAnswer": "Have geese got whiskers?"
       },
       {
        "prompt": "4  (g'oz) have/got whiskers?",
        "answer": "No, geese haven't got whiskers.",
        "promptUz": "Javob tuzing",
        "whyUz": "'whiskers' (mo'ylov) faqat mushuksimonlar va ba'zi sutemizuvchilarda bo'ladi.\nG'oz — qush, unda pat bor.\nKo'pligi: goose → GEESE.",
-       "speak": "4  (g'oz) have/got whiskers?"
+       "speak": "4  (g'oz) have/got whiskers?",
+       "speakAnswer": "No, geese haven't got whiskers."
       },
       {
        "prompt": "5  (qo'y) can/fly?",
        "answer": "Can sheep fly?",
        "promptUz": "Savol tuzing",
        "whyUz": "Qo'y — sutemizuvchi, qanoti yo'q.\nKo'pligi: sheep → SHEEP (o'zgarmaydi).",
-       "speak": "5  (qo'y) can/fly?"
+       "speak": "5  (qo'y) can/fly?",
+       "speakAnswer": "Can sheep fly?"
       },
       {
        "prompt": "5  (qo'y) can/fly?",
        "answer": "No, sheep can't fly.",
        "promptUz": "Javob tuzing",
        "whyUz": "Qo'y — sutemizuvchi, qanoti yo'q.\nKo'pligi: sheep → SHEEP (o'zgarmaydi).",
-       "speak": "5  (qo'y) can/fly?"
+       "speak": "5  (qo'y) can/fly?",
+       "speakAnswer": "No, sheep can't fly."
       },
       {
        "prompt": "6  (tovuq) have/got fur?",
        "answer": "Have hens got fur?",
        "promptUz": "Savol tuzing",
        "whyUz": "Tovuq — qush. Qushda JUN emas, PAT bo'ladi.\nDIQQAT: 'hen' — TO'G'RI ot, ko'pligi oddiy: hen → HENS.",
-       "speak": "6  (tovuq) have/got fur?"
+       "speak": "6  (tovuq) have/got fur?",
+       "speakAnswer": "Have hens got fur?"
       },
       {
        "prompt": "6  (tovuq) have/got fur?",
        "answer": "No, hens haven't got fur. They've got feathers.",
        "promptUz": "Javob tuzing",
        "whyUz": "Tovuq — qush. Qushda JUN emas, PAT bo'ladi.\nDIQQAT: 'hen' — TO'G'RI ot, ko'pligi oddiy: hen → HENS.",
-       "speak": "6  (tovuq) have/got fur?"
+       "speak": "6  (tovuq) have/got fur?",
+       "speakAnswer": "No, hens haven't got fur. They've got feathers."
       }
      ]
     }
@@ -4328,35 +4617,40 @@
        "answer": "What's",
        "promptUz": "Ism so'raladi (qisqartma shakl)",
        "whyUz": "'What's your dog's name?' = What IS ... .\nDIQQAT: ikkita 's bor — biri qisqartma (What's), biri egalik (dog's).",
-       "speak": "Tom: ............ your dog's name?"
+       "speak": "Tom: ............ your dog's name?",
+       "speakAnswer": "What's"
       },
       {
        "prompt": "Tom: What ............ of dog is it?",
        "answer": "kind",
        "promptUz": "Zot/turini so'rash iborasi",
        "whyUz": "'What kind of ...?' = qanday turdagi? qaysi zot?\n'What type of ...?' ham to'g'ri, lekin kitob 'kind' beradi.",
-       "speak": "Tom: What ............ of dog is it?"
+       "speak": "Tom: What ............ of dog is it?",
+       "speakAnswer": "kind"
       },
       {
        "prompt": "Sally: It's a ............ .",
        "answer": "female",
        "promptUz": "Keyingi qatorda Tom 'she' deydi",
        "whyUz": "Keyingi savolda 'How old is SHE?' deyilgan → demak it URG'OCHI.\n'a female' = urg'ochi.",
-       "speak": "Sally: It's a ............ ."
+       "speak": "Sally: It's a ............ .",
+       "speakAnswer": "female"
       },
       {
        "prompt": "Tom: ............ is she?",
        "answer": "How old",
        "promptUz": "Yosh so'raladi",
        "whyUz": "'How old is she?' = U necha yoshda? Javob yosh bilan beriladi.",
-       "speak": "Tom: ............ is she?"
+       "speak": "Tom: ............ is she?",
+       "speakAnswer": "How old"
       },
       {
        "prompt": "Sally: She's ............ old.",
        "answer": "two years",
        "promptUz": "Yosh — kassetada aytiladi",
        "whyUz": "AUDIO: aniq yosh kassetada. Qolip: 'She's + son + yearS + old'.\nDIQQAT: bir yoshdan katta bo'lsa 'yearS' (ko'plik):\n  She's TWO YEARS old.  (1 yosh bo'lsa: She's ONE YEAR old.)",
-       "speak": "Sally: She's ............ old."
+       "speak": "Sally: She's ............ old.",
+       "speakAnswer": "two years"
       }
      ]
     }
@@ -4386,56 +4680,64 @@
        "answer": "Do you like dolphins?",
        "promptUz": "Savol tuzing",
        "whyUz": "'intelligent' (aqlli) — IJOBIY sifat → ijobiy qolip.\nCoursebook 40-betda: 'Dolphins are very intelligent animals.'",
-       "speak": "dolphins - intelligent"
+       "speak": "dolphins - intelligent",
+       "speakAnswer": "Do you like dolphins?"
       },
       {
        "prompt": "dolphins - intelligent",
        "answer": "Yes, I love dolphins. They're very intelligent animals.",
        "promptUz": "Javob tuzing",
        "whyUz": "'intelligent' (aqlli) — IJOBIY sifat → ijobiy qolip.\nCoursebook 40-betda: 'Dolphins are very intelligent animals.'",
-       "speak": "dolphins - intelligent"
+       "speak": "dolphins - intelligent",
+       "speakAnswer": "Yes, I love dolphins. They're very intelligent animals."
       },
       {
        "prompt": "cats - lazy",
        "answer": "Do you like cats?",
        "promptUz": "Savol tuzing",
        "whyUz": "'lazy' (dangasa) — SALBIY sifat → salbiy qolip.\nAksi: hard-working (mehnatkash).",
-       "speak": "cats - lazy"
+       "speak": "cats - lazy",
+       "speakAnswer": "Do you like cats?"
       },
       {
        "prompt": "cats - lazy",
        "answer": "No, I hate cats. I think they're very lazy.",
        "promptUz": "Javob tuzing",
        "whyUz": "'lazy' (dangasa) — SALBIY sifat → salbiy qolip.\nAksi: hard-working (mehnatkash).",
-       "speak": "cats - lazy"
+       "speak": "cats - lazy",
+       "speakAnswer": "No, I hate cats. I think they're very lazy."
       },
       {
        "prompt": "horses - clever",
        "answer": "Do you like horses?",
        "promptUz": "Savol tuzing",
        "whyUz": "'clever' (aqlli) — IJOBIY sifat → ijobiy qolip.\n'clever' va 'intelligent' deyarli bir xil ma'noda.",
-       "speak": "horses - clever"
+       "speak": "horses - clever",
+       "speakAnswer": "Do you like horses?"
       },
       {
        "prompt": "horses - clever",
        "answer": "Yes, I love horses. They're very clever animals.",
        "promptUz": "Javob tuzing",
        "whyUz": "'clever' (aqlli) — IJOBIY sifat → ijobiy qolip.\n'clever' va 'intelligent' deyarli bir xil ma'noda.",
-       "speak": "horses - clever"
+       "speak": "horses - clever",
+       "speakAnswer": "Yes, I love horses. They're very clever animals."
       },
       {
        "prompt": "lions - scary",
        "answer": "Do you like lions?",
        "promptUz": "Savol tuzing",
        "whyUz": "'scary' (qo'rqinchli) — SALBIY sifat → salbiy qolip.\n'scary' = qo'rqitadigan; 'scared' = qo'rqqan. Aralashtirmang.",
-       "speak": "lions - scary"
+       "speak": "lions - scary",
+       "speakAnswer": "Do you like lions?"
       },
       {
        "prompt": "lions - scary",
        "answer": "No, I hate lions. I think they're very scary.",
        "promptUz": "Javob tuzing",
        "whyUz": "'scary' (qo'rqinchli) — SALBIY sifat → salbiy qolip.\n'scary' = qo'rqitadigan; 'scared' = qo'rqqan. Aralashtirmang.",
-       "speak": "lions - scary"
+       "speak": "lions - scary",
+       "speakAnswer": "No, I hate lions. I think they're very scary."
       }
      ]
     }
@@ -4499,19 +4801,23 @@
      "tasks": [
       {
        "left": "1  What's your cat's name?",
-       "right": "d  Pinky."
+       "right": "d  Pinky.",
+       "speakAnswer": "d  Pinky."
       },
       {
        "left": "2  Is it a male or a female?",
-       "right": "a  A male."
+       "right": "a  A male.",
+       "speakAnswer": "a  A male."
       },
       {
        "left": "3  What kind of cat is he?",
-       "right": "c  He's a Persian."
+       "right": "c  He's a Persian.",
+       "speakAnswer": "c  He's a Persian."
       },
       {
        "left": "4  How old is he?",
-       "right": "b  He's four years old."
+       "right": "b  He's four years old.",
+       "speakAnswer": "b  He's four years old."
       }
      ]
     }
@@ -4540,37 +4846,43 @@
        "prompt": "fur",
        "answer": "Tigers have got orange fur with black stripes.",
        "promptUz": "'jun' so'zi bilan gap tuzing",
-       "speak": "fur"
+       "speak": "fur",
+       "speakAnswer": "Tigers have got orange fur with black stripes."
       },
       {
        "prompt": "skin",
        "answer": "Dolphins have got grey skin.",
        "promptUz": "'teri' so'zi bilan gap tuzing",
-       "speak": "skin"
+       "speak": "skin",
+       "speakAnswer": "Dolphins have got grey skin."
       },
       {
        "prompt": "wings",
        "answer": "Penguins have got small wings, but they can't fly.",
        "promptUz": "'qanotlar' so'zi bilan gap tuzing",
-       "speak": "wings"
+       "speak": "wings",
+       "speakAnswer": "Penguins have got small wings, but they can't fly."
       },
       {
        "prompt": "weigh",
        "answer": "Elephants weigh about 4,000 kilos.",
        "promptUz": "'og'irlikda bo'lmoq' fe'li bilan gap tuzing",
-       "speak": "weigh"
+       "speak": "weigh",
+       "speakAnswer": "Elephants weigh about 4,000 kilos."
       },
       {
        "prompt": "intelligent",
        "answer": "Dolphins are very intelligent animals.",
        "promptUz": "'aqlli' so'zi bilan gap tuzing",
-       "speak": "intelligent"
+       "speak": "intelligent",
+       "speakAnswer": "Dolphins are very intelligent animals."
       },
       {
        "prompt": "feathers",
        "answer": "Penguins have got thick feathers to keep them warm.",
        "promptUz": "'patlar' so'zi bilan gap tuzing",
-       "speak": "feathers"
+       "speak": "feathers",
+       "speakAnswer": "Penguins have got thick feathers to keep them warm."
       },
       {
        "prompt": "what",
@@ -4582,37 +4894,43 @@
        "prompt": "pouch",
        "answer": "Kangaroos carry their babies in a pouch.",
        "promptUz": "'xalta' so'zi bilan gap tuzing",
-       "speak": "pouch"
+       "speak": "pouch",
+       "speakAnswer": "Kangaroos carry their babies in a pouch."
       },
       {
        "prompt": "reptiles",
        "answer": "Crocodiles and snakes are reptiles.",
        "promptUz": "'sudralib yuruvchilar' so'zi bilan gap tuzing",
-       "speak": "reptiles"
+       "speak": "reptiles",
+       "speakAnswer": "Crocodiles and snakes are reptiles."
       },
       {
        "prompt": "mammals",
        "answer": "Dolphins, koalas and kangaroos are mammals.",
        "promptUz": "'sutemizuvchilar' so'zi bilan gap tuzing",
-       "speak": "mammals"
+       "speak": "mammals",
+       "speakAnswer": "Dolphins, koalas and kangaroos are mammals."
       },
       {
        "prompt": "insects",
        "answer": "Butterflies are insects.",
        "promptUz": "'hasharotlar' so'zi bilan gap tuzing",
-       "speak": "insects"
+       "speak": "insects",
+       "speakAnswer": "Butterflies are insects."
       },
       {
        "prompt": "paws",
        "answer": "Tigers have got big paws.",
        "promptUz": "'panjalar' so'zi bilan gap tuzing",
-       "speak": "paws"
+       "speak": "paws",
+       "speakAnswer": "Tigers have got big paws."
       },
       {
        "prompt": "feed",
        "answer": "Mammals feed their babies on milk.",
        "promptUz": "'boqmoq' fe'li bilan gap tuzing",
-       "speak": "feed"
+       "speak": "feed",
+       "speakAnswer": "Mammals feed their babies on milk."
       },
       {
        "prompt": "where",
@@ -4624,19 +4942,22 @@
        "prompt": "sharp claws",
        "answer": "Koalas have got very sharp claws.",
        "promptUz": "'o'tkir tirnoqlar' iborasi bilan gap tuzing",
-       "speak": "sharp claws"
+       "speak": "sharp claws",
+       "speakAnswer": "Koalas have got very sharp claws."
       },
       {
        "prompt": "trunk",
        "answer": "An elephant's trunk is about 3.1 metres long.",
        "promptUz": "'xartum' so'zi bilan gap tuzing",
-       "speak": "trunk"
+       "speak": "trunk",
+       "speakAnswer": "An elephant's trunk is about 3.1 metres long."
       },
       {
        "prompt": "whiskers",
        "answer": "Tigers and cats have got whiskers.",
        "promptUz": "'mo'ylovlar' so'zi bilan gap tuzing",
-       "speak": "whiskers"
+       "speak": "whiskers",
+       "speakAnswer": "Tigers and cats have got whiskers."
       },
       {
        "prompt": "how big",
@@ -4677,133 +4998,155 @@
        "prompt": "dolphins + fly",
        "answer": "Dolphins can't fly.",
        "promptUz": "Kitobdagi 1-namuna — inkor gap tuzing",
-       "speak": "dolphins + fly"
+       "speak": "dolphins + fly",
+       "speakAnswer": "Dolphins can't fly."
       },
       {
        "prompt": "penguins + swim",
        "answer": "Penguins can swim.",
        "promptUz": "Kitobdagi 2-namuna — tasdiq gap tuzing",
-       "speak": "penguins + swim"
+       "speak": "penguins + swim",
+       "speakAnswer": "Penguins can swim."
       },
       {
        "prompt": "dolphins + swim",
        "answer": "Dolphins can swim.",
        "promptUz": "Delfin va suzish",
-       "speak": "dolphins + swim"
+       "speak": "dolphins + swim",
+       "speakAnswer": "Dolphins can swim."
       },
       {
        "prompt": "dolphins + walk",
        "answer": "Dolphins can't walk.",
        "promptUz": "Delfin va yurish (oyog'i yo'q)",
-       "speak": "dolphins + walk"
+       "speak": "dolphins + walk",
+       "speakAnswer": "Dolphins can't walk."
       },
       {
        "prompt": "monkeys + climb",
        "answer": "Monkeys can climb.",
        "promptUz": "Maymun va daraxtga chiqish",
-       "speak": "monkeys + climb"
+       "speak": "monkeys + climb",
+       "speakAnswer": "Monkeys can climb."
       },
       {
        "prompt": "monkeys + jump",
        "answer": "Monkeys can jump.",
        "promptUz": "Maymun va sakrash",
-       "speak": "monkeys + jump"
+       "speak": "monkeys + jump",
+       "speakAnswer": "Monkeys can jump."
       },
       {
        "prompt": "butterflies + fly",
        "answer": "Butterflies can fly.",
        "promptUz": "Kapalak va uchish",
-       "speak": "butterflies + fly"
+       "speak": "butterflies + fly",
+       "speakAnswer": "Butterflies can fly."
       },
       {
        "prompt": "butterflies + swim",
        "answer": "Butterflies can't swim.",
        "promptUz": "Kapalak va suzish",
-       "speak": "butterflies + swim"
+       "speak": "butterflies + swim",
+       "speakAnswer": "Butterflies can't swim."
       },
       {
        "prompt": "penguins + fly",
        "answer": "Penguins can't fly.",
        "promptUz": "Pingvin va uchish (asosiy fakt!)",
-       "speak": "penguins + fly"
+       "speak": "penguins + fly",
+       "speakAnswer": "Penguins can't fly."
       },
       {
        "prompt": "penguins + walk",
        "answer": "Penguins can walk.",
        "promptUz": "Pingvin va yurish (kulgili yuradi)",
-       "speak": "penguins + walk"
+       "speak": "penguins + walk",
+       "speakAnswer": "Penguins can walk."
       },
       {
        "prompt": "kangaroos + jump",
        "answer": "Kangaroos can jump very high.",
        "promptUz": "Kenguru va sakrash",
-       "speak": "kangaroos + jump"
+       "speak": "kangaroos + jump",
+       "speakAnswer": "Kangaroos can jump very high."
       },
       {
        "prompt": "kangaroos + fly",
        "answer": "Kangaroos can't fly.",
        "promptUz": "Kenguru va uchish",
-       "speak": "kangaroos + fly"
+       "speak": "kangaroos + fly",
+       "speakAnswer": "Kangaroos can't fly."
       },
       {
        "prompt": "crocodiles + swim",
        "answer": "Crocodiles can swim.",
        "promptUz": "Timsoh va suzish",
-       "speak": "crocodiles + swim"
+       "speak": "crocodiles + swim",
+       "speakAnswer": "Crocodiles can swim."
       },
       {
        "prompt": "crocodiles + climb",
        "answer": "Crocodiles can't climb.",
        "promptUz": "Timsoh va daraxtga chiqish",
-       "speak": "crocodiles + climb"
+       "speak": "crocodiles + climb",
+       "speakAnswer": "Crocodiles can't climb."
       },
       {
        "prompt": "cats + climb",
        "answer": "Cats can climb.",
        "promptUz": "Mushuk va daraxtga chiqish",
-       "speak": "cats + climb"
+       "speak": "cats + climb",
+       "speakAnswer": "Cats can climb."
       },
       {
        "prompt": "cats + fly",
        "answer": "Cats can't fly.",
        "promptUz": "Mushuk va uchish",
-       "speak": "cats + fly"
+       "speak": "cats + fly",
+       "speakAnswer": "Cats can't fly."
       },
       {
        "prompt": "tigers + swim",
        "answer": "Tigers can swim.",
        "promptUz": "Yo'lbars va suzish (mushuksimonlar ichida kam uchraydi)",
-       "speak": "tigers + swim"
+       "speak": "tigers + swim",
+       "speakAnswer": "Tigers can swim."
       },
       {
        "prompt": "tigers + fly",
        "answer": "Tigers can't fly.",
        "promptUz": "Yo'lbars va uchish",
-       "speak": "tigers + fly"
+       "speak": "tigers + fly",
+       "speakAnswer": "Tigers can't fly."
       },
       {
        "prompt": "sea lions + swim",
        "answer": "Sea lions can swim very well.",
        "promptUz": "Dengiz sheri va suzish (Coursebook 43-bet)",
-       "speak": "sea lions + swim"
+       "speak": "sea lions + swim",
+       "speakAnswer": "Sea lions can swim very well."
       },
       {
        "prompt": "sea lions + climb",
        "answer": "Sea lions can't climb.",
        "promptUz": "Dengiz sheri va daraxtga chiqish",
-       "speak": "sea lions + climb"
+       "speak": "sea lions + climb",
+       "speakAnswer": "Sea lions can't climb."
       },
       {
        "prompt": "dogs + walk",
        "answer": "Dogs can walk.",
        "promptUz": "It va yurish",
-       "speak": "dogs + walk"
+       "speak": "dogs + walk",
+       "speakAnswer": "Dogs can walk."
       },
       {
        "prompt": "dogs + fly",
        "answer": "Dogs can't fly.",
        "promptUz": "It va uchish",
-       "speak": "dogs + fly"
+       "speak": "dogs + fly",
+       "speakAnswer": "Dogs can't fly."
       }
      ]
     }
@@ -4838,7 +5181,8 @@
         "dog"
        ],
        "whyUz": "Rasmda katta urg'ochi uy qushi — 'a hen'. Erkagi 'a rooster' (41-betda ko'rgansiz).",
-       "speak": "3  (katta qizil-qora tovuq)"
+       "speak": "3  (katta qizil-qora tovuq)",
+       "speakAnswer": "hen"
       },
       {
        "prompt": "4  (uchta sariq mayda qush bolasi)",
@@ -4850,7 +5194,8 @@
         "ducklings"
        ],
        "whyUz": "'chicks' = jo'jalar. Doim ko'plikda ishlatiladi, chunki bir nechta bo'ladi.",
-       "speak": "4  (uchta sariq mayda qush bolasi)"
+       "speak": "4  (uchta sariq mayda qush bolasi)",
+       "speakAnswer": "chicks"
       },
       {
        "prompt": "5  (katta sariq to'rt oyoqli uy hayvoni)",
@@ -4862,7 +5207,8 @@
         "ducklings"
        ],
        "whyUz": "Rasmda katta it — 'a dog'.",
-       "speak": "5  (katta sariq to'rt oyoqli uy hayvoni)"
+       "speak": "5  (katta sariq to'rt oyoqli uy hayvoni)",
+       "speakAnswer": "dog"
       },
       {
        "prompt": "6  (ikkita kichkina oq bola hayvon)",
@@ -4874,7 +5220,8 @@
         "dog"
        ],
        "whyUz": "'puppies' = kuchukchalar. Birligi 'a puppy' (y → ies).",
-       "speak": "6  (ikkita kichkina oq bola hayvon)"
+       "speak": "6  (ikkita kichkina oq bola hayvon)",
+       "speakAnswer": "puppies"
       },
       {
        "prompt": "7  (yashil boshli, keng tumshuqli suv qushi)",
@@ -4886,7 +5233,8 @@
         "dog"
        ],
        "whyUz": "Rasmda o'rdak — 'a duck'. Keng, yassi tumshug'i bor.",
-       "speak": "7  (yashil boshli, keng tumshuqli suv qushi)"
+       "speak": "7  (yashil boshli, keng tumshuqli suv qushi)",
+       "speakAnswer": "duck"
       },
       {
        "prompt": "8  (uchta sariq mayda suv qushi bolasi)",
@@ -4898,7 +5246,8 @@
         "dog"
        ],
        "whyUz": "'ducklings' = o'rdakchalar. 'duck' + -ling (kichraytiruvchi qo'shimcha).",
-       "speak": "8  (uchta sariq mayda suv qushi bolasi)"
+       "speak": "8  (uchta sariq mayda suv qushi bolasi)",
+       "speakAnswer": "ducklings"
       }
      ]
     },
@@ -4917,25 +5266,29 @@
        "prompt": "a cat + kittens",
        "answer": "A cat has kittens.",
        "promptUz": "Kitobdagi namuna gapni yozing",
-       "speak": "a cat + kittens"
+       "speak": "a cat + kittens",
+       "speakAnswer": "A cat has kittens."
       },
       {
        "prompt": "a hen + chicks",
        "answer": "A hen has chicks.",
        "promptUz": "Namuna bo'yicha gap tuzing (birlik ega → has)",
-       "speak": "a hen + chicks"
+       "speak": "a hen + chicks",
+       "speakAnswer": "A hen has chicks."
       },
       {
        "prompt": "a dog + puppies",
        "answer": "A dog has puppies.",
        "promptUz": "Namuna bo'yicha gap tuzing (birlik ega → has)",
-       "speak": "a dog + puppies"
+       "speak": "a dog + puppies",
+       "speakAnswer": "A dog has puppies."
       },
       {
        "prompt": "a duck + ducklings",
        "answer": "A duck has ducklings.",
        "promptUz": "Namuna bo'yicha gap tuzing (birlik ega → has)",
-       "speak": "a duck + ducklings"
+       "speak": "a duck + ducklings",
+       "speakAnswer": "A duck has ducklings."
       }
      ]
     }
@@ -4964,145 +5317,169 @@
        "prompt": "YO'LBARS — ...this animal?",
        "answer": "What is this animal?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Hayvon nomini so'rash — 'What is ...?' ('does' kerak emas)."
+       "whyUz": "Hayvon nomini so'rash — 'What is ...?' ('does' kerak emas).",
+       "speakAnswer": "What is this animal?"
       },
       {
        "prompt": "YO'LBARS — ...this animal?",
        "answer": "It's a tiger.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Hayvon nomini so'rash — 'What is ...?' ('does' kerak emas)."
+       "whyUz": "Hayvon nomini so'rash — 'What is ...?' ('does' kerak emas).",
+       "speakAnswer": "It's a tiger."
       },
       {
        "prompt": "YO'LBARS — ...weigh?",
        "answer": "How much does it weigh?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Og'irlik → 'How much'. Javobda fe'lga -s: weighS."
+       "whyUz": "Og'irlik → 'How much'. Javobda fe'lga -s: weighS.",
+       "speakAnswer": "How much does it weigh?"
       },
       {
        "prompt": "YO'LBARS — ...weigh?",
        "answer": "It weighs about 200 kilos.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Og'irlik → 'How much'. Javobda fe'lga -s: weighS."
+       "whyUz": "Og'irlik → 'How much'. Javobda fe'lga -s: weighS.",
+       "speakAnswer": "It weighs about 200 kilos."
       },
       {
        "prompt": "YO'LBARS — ...eat?",
        "answer": "What does it eat?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Ma'lumot varaqasidan: deer and monkeys. 'deer' ko'plikda ham 'deer'."
+       "whyUz": "Ma'lumot varaqasidan: deer and monkeys. 'deer' ko'plikda ham 'deer'.",
+       "speakAnswer": "What does it eat?"
       },
       {
        "prompt": "YO'LBARS — ...eat?",
        "answer": "It eats deer and monkeys.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Ma'lumot varaqasidan: deer and monkeys. 'deer' ko'plikda ham 'deer'."
+       "whyUz": "Ma'lumot varaqasidan: deer and monkeys. 'deer' ko'plikda ham 'deer'.",
+       "speakAnswer": "It eats deer and monkeys."
       },
       {
        "prompt": "YO'LBARS — ...sleep?",
        "answer": "When does it sleep?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Vaqt → 'When'. Ma'lumot varaqasidan: during the day."
+       "whyUz": "Vaqt → 'When'. Ma'lumot varaqasidan: during the day.",
+       "speakAnswer": "When does it sleep?"
       },
       {
        "prompt": "YO'LBARS — ...sleep?",
        "answer": "It sleeps during the day.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Vaqt → 'When'. Ma'lumot varaqasidan: during the day."
+       "whyUz": "Vaqt → 'When'. Ma'lumot varaqasidan: during the day.",
+       "speakAnswer": "It sleeps during the day."
       },
       {
        "prompt": "YO'LBARS — ...live? (joy)",
        "answer": "Where does it live?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Joy → 'Where'. Ma'lumot varaqasidan: forests in India."
+       "whyUz": "Joy → 'Where'. Ma'lumot varaqasidan: forests in India.",
+       "speakAnswer": "Where does it live?"
       },
       {
        "prompt": "YO'LBARS — ...live? (joy)",
        "answer": "It lives in the forests in India.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Joy → 'Where'. Ma'lumot varaqasidan: forests in India."
+       "whyUz": "Joy → 'Where'. Ma'lumot varaqasidan: forests in India.",
+       "speakAnswer": "It lives in the forests in India."
       },
       {
        "prompt": "YO'LBARS — ...live? (umr)",
        "answer": "How long does it live?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Umr → 'How long'. 'live FOR' — 'for' shart."
+       "whyUz": "Umr → 'How long'. 'live FOR' — 'for' shart.",
+       "speakAnswer": "How long does it live?"
       },
       {
        "prompt": "YO'LBARS — ...live? (umr)",
        "answer": "It lives for about 15 years.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Umr → 'How long'. 'live FOR' — 'for' shart."
+       "whyUz": "Umr → 'How long'. 'live FOR' — 'for' shart.",
+       "speakAnswer": "It lives for about 15 years."
       },
       {
        "prompt": "DENGIZ SHERI — ...this animal?",
        "answer": "What is this animal?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'a sea lion' — dengiz sheri, sutemizuvchi."
+       "whyUz": "'a sea lion' — dengiz sheri, sutemizuvchi.",
+       "speakAnswer": "What is this animal?"
       },
       {
        "prompt": "DENGIZ SHERI — ...this animal?",
        "answer": "It's a sea lion.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'a sea lion' — dengiz sheri, sutemizuvchi."
+       "whyUz": "'a sea lion' — dengiz sheri, sutemizuvchi.",
+       "speakAnswer": "It's a sea lion."
       },
       {
        "prompt": "DENGIZ SHERI — ...weigh?",
        "answer": "How much does it weigh?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Ma'lumot varaqasidan: about 250 kilos — yo'lbarsdan og'irroq."
+       "whyUz": "Ma'lumot varaqasidan: about 250 kilos — yo'lbarsdan og'irroq.",
+       "speakAnswer": "How much does it weigh?"
       },
       {
        "prompt": "DENGIZ SHERI — ...weigh?",
        "answer": "It weighs about 250 kilos.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Ma'lumot varaqasidan: about 250 kilos — yo'lbarsdan og'irroq."
+       "whyUz": "Ma'lumot varaqasidan: about 250 kilos — yo'lbarsdan og'irroq.",
+       "speakAnswer": "It weighs about 250 kilos."
       },
       {
        "prompt": "DENGIZ SHERI — ...eat?",
        "answer": "What does it eat?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Ma'lumot varaqasidan: fish. Delfin va pingvin ham baliq yeydi."
+       "whyUz": "Ma'lumot varaqasidan: fish. Delfin va pingvin ham baliq yeydi.",
+       "speakAnswer": "What does it eat?"
       },
       {
        "prompt": "DENGIZ SHERI — ...eat?",
        "answer": "It eats fish.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Ma'lumot varaqasidan: fish. Delfin va pingvin ham baliq yeydi."
+       "whyUz": "Ma'lumot varaqasidan: fish. Delfin va pingvin ham baliq yeydi.",
+       "speakAnswer": "It eats fish."
       },
       {
        "prompt": "DENGIZ SHERI — ...can/do?",
        "answer": "What can it do?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Qobiliyat → 'can'. 'can' dan keyin fe'l asos shaklida."
+       "whyUz": "Qobiliyat → 'can'. 'can' dan keyin fe'l asos shaklida.",
+       "speakAnswer": "What can it do?"
       },
       {
        "prompt": "DENGIZ SHERI — ...can/do?",
        "answer": "It can swim very well.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Qobiliyat → 'can'. 'can' dan keyin fe'l asos shaklida."
+       "whyUz": "Qobiliyat → 'can'. 'can' dan keyin fe'l asos shaklida.",
+       "speakAnswer": "It can swim very well."
       },
       {
        "prompt": "DENGIZ SHERI — ...live? (joy)",
        "answer": "Where does it live?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Okean nomi oldida THE shart: THE Pacific Ocean."
+       "whyUz": "Okean nomi oldida THE shart: THE Pacific Ocean.",
+       "speakAnswer": "Where does it live?"
       },
       {
        "prompt": "DENGIZ SHERI — ...live? (joy)",
        "answer": "It lives in the Pacific Ocean.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Okean nomi oldida THE shart: THE Pacific Ocean."
+       "whyUz": "Okean nomi oldida THE shart: THE Pacific Ocean.",
+       "speakAnswer": "It lives in the Pacific Ocean."
       },
       {
        "prompt": "DENGIZ SHERI — ...live? (umr)",
        "answer": "How long does it live?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Ma'lumot varaqasidan: about 15 years."
+       "whyUz": "Ma'lumot varaqasidan: about 15 years.",
+       "speakAnswer": "How long does it live?"
       },
       {
        "prompt": "DENGIZ SHERI — ...live? (umr)",
        "answer": "It lives for about 15 years.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Ma'lumot varaqasidan: about 15 years."
+       "whyUz": "Ma'lumot varaqasidan: about 15 years.",
+       "speakAnswer": "It lives for about 15 years."
       }
      ]
     },
@@ -5523,7 +5900,8 @@
         "how long"
        ],
        "whyUz": "Javob 'fish' (narsa) → WHAT.",
-       "speak": "1  A: \"............ do dolphins eat?\"  B: \"They eat fish.\""
+       "speak": "1  A: \"............ do dolphins eat?\"  B: \"They eat fish.\"",
+       "speakAnswer": "What"
       },
       {
        "prompt": "2  A: \"............ do penguins live?\"  B: \"In Antarctica.\"",
@@ -5535,7 +5913,8 @@
         "how many"
        ],
        "whyUz": "Javob 'In Antarctica' (joy) → WHERE.",
-       "speak": "2  A: \"............ do penguins live?\"  B: \"In Antarctica.\""
+       "speak": "2  A: \"............ do penguins live?\"  B: \"In Antarctica.\"",
+       "speakAnswer": "Where"
       },
       {
        "prompt": "3  A: \"............ do you play football?\"  B: \"In my free time.\"",
@@ -5547,7 +5926,8 @@
         "how many"
        ],
        "whyUz": "'In my free time' = bo'sh vaqtimda — bu VAQT → WHEN.",
-       "speak": "3  A: \"............ do you play football?\"  B: \"In my free time.\""
+       "speak": "3  A: \"............ do you play football?\"  B: \"In my free time.\"",
+       "speakAnswer": "When"
       },
       {
        "prompt": "4  A: \"............ do you visit your grandparents?\"  B: \"Once a month.\"",
@@ -5559,7 +5939,8 @@
         "how many"
        ],
        "whyUz": "'Once a month' = oyiga bir marta — bu CHASTOTA → HOW OFTEN.",
-       "speak": "4  A: \"............ do you visit your grandparents?\"  B: \"Once a month.\""
+       "speak": "4  A: \"............ do you visit your grandparents?\"  B: \"Once a month.\"",
+       "speakAnswer": "How often"
       },
       {
        "prompt": "5  A: \"............ is that girl over there?\"  B: \"My sister.\"",
@@ -5571,7 +5952,8 @@
         "how long"
        ],
        "whyUz": "'My sister' (odam) → WHO. 'be' bilan 'does' kerak emas.",
-       "speak": "5  A: \"............ is that girl over there?\"  B: \"My sister.\""
+       "speak": "5  A: \"............ is that girl over there?\"  B: \"My sister.\"",
+       "speakAnswer": "Who"
       },
       {
        "prompt": "6  A: \"............ do kangaroos have strong back legs?\"  B: \"Because they need to jump very high.\"",
@@ -5583,7 +5965,8 @@
         "how many"
        ],
        "whyUz": "Javob 'Because ...' → WHY. Bu eng aniq belgi.",
-       "speak": "6  A: \"............ do kangaroos have strong back legs?\"  B: \"Because they need to jump very high.\""
+       "speak": "6  A: \"............ do kangaroos have strong back legs?\"  B: \"Because they need to jump very high.\"",
+       "speakAnswer": "Why"
       },
       {
        "prompt": "7  A: \"............ do koalas sleep?\"  B: \"In the tops of eucalyptus trees.\"",
@@ -5595,7 +5978,8 @@
         "how many"
        ],
        "whyUz": "'In the tops of eucalyptus trees' (joy) → WHERE.\nDIQQAT: 'When do koalas sleep?' savoliga 'during the day' javob bo'lardi.",
-       "speak": "7  A: \"............ do koalas sleep?\"  B: \"In the tops of eucalyptus trees.\""
+       "speak": "7  A: \"............ do koalas sleep?\"  B: \"In the tops of eucalyptus trees.\"",
+       "speakAnswer": "Where"
       },
       {
        "prompt": "8  A: \"............ money do you have?\"  B: \"Not much.\"",
@@ -5607,7 +5991,8 @@
         "how many"
        ],
        "whyUz": "'money' — SANALMAYDIGAN ot → HOW MUCH.\nJavob ham 'Not much' — bu ham sanalmaydigan miqdor.",
-       "speak": "8  A: \"............ money do you have?\"  B: \"Not much.\""
+       "speak": "8  A: \"............ money do you have?\"  B: \"Not much.\"",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "9  A: \"............ can a sea lion do?\"  B: \"It can swim very well.\"",
@@ -5619,7 +6004,8 @@
         "how long"
        ],
        "whyUz": "Javob ISH (swim) → WHAT. 'can' bilan 'does' kerak emas.",
-       "speak": "9  A: \"............ can a sea lion do?\"  B: \"It can swim very well.\""
+       "speak": "9  A: \"............ can a sea lion do?\"  B: \"It can swim very well.\"",
+       "speakAnswer": "What"
       },
       {
        "prompt": "10  A: \"............ are you smiling?\"  B: \"Because I'm happy.\"",
@@ -5631,7 +6017,8 @@
         "how many"
        ],
        "whyUz": "Javob 'Because I'm happy' → WHY.\n'to smile' = tabassum qilmoq (40-betdagi 'a smile' — ot).",
-       "speak": "10  A: \"............ are you smiling?\"  B: \"Because I'm happy.\""
+       "speak": "10  A: \"............ are you smiling?\"  B: \"Because I'm happy.\"",
+       "speakAnswer": "Why"
       },
       {
        "prompt": "11  A: \"............ do you feed your goldfish?\"  B: \"Every morning.\"",
@@ -5643,7 +6030,8 @@
         "how many"
        ],
        "whyUz": "'Every morning' = har ertalab — bu CHASTOTA → HOW OFTEN.\n'a goldfish' = tilla baliq.",
-       "speak": "11  A: \"............ do you feed your goldfish?\"  B: \"Every morning.\""
+       "speak": "11  A: \"............ do you feed your goldfish?\"  B: \"Every morning.\"",
+       "speakAnswer": "How often"
       },
       {
        "prompt": "12  A: \"............ do tigers live?\"  B: \"For about fifteen years.\"",
@@ -5655,7 +6043,8 @@
         "how many"
        ],
        "whyUz": "'For about fifteen years' — DAVOMIYLIK → HOW LONG.",
-       "speak": "12  A: \"............ do tigers live?\"  B: \"For about fifteen years.\""
+       "speak": "12  A: \"............ do tigers live?\"  B: \"For about fifteen years.\"",
+       "speakAnswer": "How long"
       },
       {
        "prompt": "13  A: \"............ is Mrs Jackson?\"  B: \"Our neighbour.\"",
@@ -5667,7 +6056,8 @@
         "how long"
        ],
        "whyUz": "'Our neighbour' (odam) → WHO.\n'a neighbour' = qo'shni (britancha yozilishi; amerikacha: neighbor).",
-       "speak": "13  A: \"............ is Mrs Jackson?\"  B: \"Our neighbour.\""
+       "speak": "13  A: \"............ is Mrs Jackson?\"  B: \"Our neighbour.\"",
+       "speakAnswer": "Who"
       },
       {
        "prompt": "14  A: \"............ colour is your cat?\"  B: \"Black.\"",
@@ -5679,7 +6069,8 @@
         "how long"
        ],
        "whyUz": "'What colour ...?' = qanday rangda? — o'zgarmas ibora (44-bet).",
-       "speak": "14  A: \"............ colour is your cat?\"  B: \"Black.\""
+       "speak": "14  A: \"............ colour is your cat?\"  B: \"Black.\"",
+       "speakAnswer": "What"
       },
       {
        "prompt": "15  A: \"............ pieces of pie do you want?\"  B: \"Only one, please.\"",
@@ -5691,7 +6082,8 @@
         "how long"
        ],
        "whyUz": "'pieces' — SANALADIGAN ot → HOW MANY. Javob ham son: 'Only one'.\n'a piece of pie' = bir bo'lak pirog.",
-       "speak": "15  A: \"............ pieces of pie do you want?\"  B: \"Only one, please.\""
+       "speak": "15  A: \"............ pieces of pie do you want?\"  B: \"Only one, please.\"",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "16  A: \"............ tall are you?\"  B: \"I'm 1.50 m.\"",
@@ -5703,7 +6095,8 @@
         "how many"
        ],
        "whyUz": "'How + sifat' — o'lchov savoli: How TALL are you? (44-betdagi 'How big is it?' kabi).",
-       "speak": "16  A: \"............ tall are you?\"  B: \"I'm 1.50 m.\""
+       "speak": "16  A: \"............ tall are you?\"  B: \"I'm 1.50 m.\"",
+       "speakAnswer": "How"
       },
       {
        "prompt": "17  A: \"............ do sea lions weigh?\"  B: \"About 250 kilos.\"",
@@ -5715,7 +6108,8 @@
         "how many"
        ],
        "whyUz": "Og'irlik → HOW MUCH. 45-betdagi dengiz sheri ma'lumoti bilan bir xil.",
-       "speak": "17  A: \"............ do sea lions weigh?\"  B: \"About 250 kilos.\""
+       "speak": "17  A: \"............ do sea lions weigh?\"  B: \"About 250 kilos.\"",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "18  A: \"............ do you get to school?\"  B: \"By bus.\"",
@@ -5727,7 +6121,8 @@
         "how many"
        ],
        "whyUz": "'By bus' — USUL → yolg'iz HOW.\n'get to' = yetib bormoq. Transport: BY bus/car/train (artiklsiz).",
-       "speak": "18  A: \"............ do you get to school?\"  B: \"By bus.\""
+       "speak": "18  A: \"............ do you get to school?\"  B: \"By bus.\"",
+       "speakAnswer": "How"
       },
       {
        "prompt": "19  A: \"............ do you sleep at night?\"  B: \"Eight hours.\"",
@@ -5739,7 +6134,8 @@
         "how many"
        ],
        "whyUz": "'Eight hours' — DAVOMIYLIK → HOW LONG.\nDIQQAT: 'How often' bo'lsa javob 'every night' bo'lardi.",
-       "speak": "19  A: \"............ do you sleep at night?\"  B: \"Eight hours.\""
+       "speak": "19  A: \"............ do you sleep at night?\"  B: \"Eight hours.\"",
+       "speakAnswer": "How long"
       },
       {
        "prompt": "20  A: \"............ is Ankara?\"  B: \"In Turkey.\"",
@@ -5751,7 +6147,8 @@
         "how many"
        ],
        "whyUz": "'In Turkey' (joy) → WHERE. Ankara — Turkiya poytaxti.",
-       "speak": "20  A: \"............ is Ankara?\"  B: \"In Turkey.\""
+       "speak": "20  A: \"............ is Ankara?\"  B: \"In Turkey.\"",
+       "speakAnswer": "Where"
       }
      ]
     }
@@ -5786,7 +6183,8 @@
         "how long"
        ],
        "whyUz": "Javob JOY → WHERE.\nDIQQAT: 5-savol ham 'live' bilan, lekin u DAVOMIYLIK so'raydi.",
-       "speak": "1  \"............ does a wild red fox live?\""
+       "speak": "1  \"............ does a wild red fox live?\"",
+       "speakAnswer": "Where"
       },
       {
        "prompt": "2  \"............ does it eat?\"",
@@ -5798,7 +6196,8 @@
         "how long"
        ],
        "whyUz": "Javob OVQAT (narsa) → WHAT.",
-       "speak": "2  \"............ does it eat?\""
+       "speak": "2  \"............ does it eat?\"",
+       "speakAnswer": "What"
       },
       {
        "prompt": "3  \"............ does it weigh?\"",
@@ -5810,7 +6209,8 @@
         "how long"
        ],
        "whyUz": "Og'irlik → HOW MUCH ('weigh' fe'li bilan doim shu).",
-       "speak": "3  \"............ does it weigh?\""
+       "speak": "3  \"............ does it weigh?\"",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "4  \"............ legs has it got?\"",
@@ -5822,7 +6222,8 @@
         "where"
        ],
        "whyUz": "'legs' — SANALADIGAN ot → HOW MANY.\n'has it got' bilan 'does' kerak emas.",
-       "speak": "4  \"............ legs has it got?\""
+       "speak": "4  \"............ legs has it got?\"",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "5  \"............ does it live?\"",
@@ -5834,7 +6235,8 @@
         "where"
        ],
        "whyUz": "Javob YIL (davomiylik) → HOW LONG.\n1-savoldan farqi: bu yerda JOY emas, VAQT so'ralyapti.",
-       "speak": "5  \"............ does it live?\""
+       "speak": "5  \"............ does it live?\"",
+       "speakAnswer": "How long"
       }
      ]
     },
@@ -5851,23 +6253,28 @@
      "tasks": [
       {
        "left": "1  Where does a wild red fox live?",
-       "right": "d  In North America, Asia, Europe and Africa."
+       "right": "d  In North America, Asia, Europe and Africa.",
+       "speakAnswer": "d  In North America, Asia, Europe and Africa."
       },
       {
        "left": "2  What does it eat?",
-       "right": "e  Mice, rabbits, eggs, fruit and birds."
+       "right": "e  Mice, rabbits, eggs, fruit and birds.",
+       "speakAnswer": "e  Mice, rabbits, eggs, fruit and birds."
       },
       {
        "left": "3  How much does it weigh?",
-       "right": "a  6 kilos."
+       "right": "a  6 kilos.",
+       "speakAnswer": "a  6 kilos."
       },
       {
        "left": "4  How many legs has it got?",
-       "right": "b  Four."
+       "right": "b  Four.",
+       "speakAnswer": "b  Four."
       },
       {
        "left": "5  How long does it live?",
-       "right": "c  2 years."
+       "right": "c  2 years.",
+       "speakAnswer": "c  2 years."
       }
      ]
     },
@@ -5892,7 +6299,8 @@
         "which"
        ],
        "whyUz": "Javob 'Paul's' (Polniki) — EGALIK → WHOSE.\n'glasses' = ko'zoynak (doim ko'plik) yoki stakanlar.",
-       "speak": "1  A: \"............ are these glasses?\"  B: \"Paul's.\""
+       "speak": "1  A: \"............ are these glasses?\"  B: \"Paul's.\"",
+       "speakAnswer": "Whose"
       },
       {
        "prompt": "2  A: \"............ do dolphins live?\"  B: \"About fifty years.\"",
@@ -5904,7 +6312,8 @@
         "which"
        ],
        "whyUz": "'About fifty years' — DAVOMIYLIK → HOW LONG.\nCoursebook 40-betdagi delfin matni bilan bir xil fakt.",
-       "speak": "2  A: \"............ do dolphins live?\"  B: \"About fifty years.\""
+       "speak": "2  A: \"............ do dolphins live?\"  B: \"About fifty years.\"",
+       "speakAnswer": "How long"
       },
       {
        "prompt": "3  A: \"............ do tigers eat?\"  B: \"Deer and monkeys.\"",
@@ -5916,7 +6325,8 @@
         "where"
        ],
        "whyUz": "Ovqat (narsa) → WHAT. Coursebook 43-betdagi ma'lumot varaqasidan.",
-       "speak": "3  A: \"............ do tigers eat?\"  B: \"Deer and monkeys.\""
+       "speak": "3  A: \"............ do tigers eat?\"  B: \"Deer and monkeys.\"",
+       "speakAnswer": "What"
       },
       {
        "prompt": "4  A: \"............ are you?\"  B: \"I'm Tom.\"",
@@ -5928,7 +6338,8 @@
         "where"
        ],
        "whyUz": "Javob ODAM ismi → WHO.\nDIQQAT: 'How are you?' bo'lsa javob 'I'm fine' bo'lardi.",
-       "speak": "4  A: \"............ are you?\"  B: \"I'm Tom.\""
+       "speak": "4  A: \"............ are you?\"  B: \"I'm Tom.\"",
+       "speakAnswer": "Who"
       },
       {
        "prompt": "5  A: \"............ are the children?\"  B: \"They're fine.\"",
@@ -5940,7 +6351,8 @@
         "which"
        ],
        "whyUz": "Javob AHVOL ('fine') → HOW.\n4-savoldan farqini solishtiring: Who are you? / How are you?\n'children' — 'child' ning noto'g'ri ko'pligi.",
-       "speak": "5  A: \"............ are the children?\"  B: \"They're fine.\""
+       "speak": "5  A: \"............ are the children?\"  B: \"They're fine.\"",
+       "speakAnswer": "How"
       },
       {
        "prompt": "6  A: \"............ animals do you like?\"  B: \"Dogs and cats.\"",
@@ -5952,7 +6364,8 @@
         "where"
        ],
        "whyUz": "Tanlov CHEKSIZ (dunyodagi hamma hayvon) → WHAT animals.\nDIQQAT: 'Which animals ...?' ham grammatik jihatdan to'g'ri —\nlekin u CHEKLANGAN ro'yxatdan tanlashni bildiradi\n(masalan, rasmda 5 ta hayvon bo'lsa).",
-       "speak": "6  A: \"............ animals do you like?\"  B: \"Dogs and cats.\""
+       "speak": "6  A: \"............ animals do you like?\"  B: \"Dogs and cats.\"",
+       "speakAnswer": "What"
       },
       {
        "prompt": "7  A: \"............ do kangaroos sleep?\"  B: \"During the day.\"",
@@ -5964,7 +6377,8 @@
         "which"
        ],
        "whyUz": "'During the day' — VAQT → WHEN.\nCoursebook 43-betdagi kenguru matnidan.",
-       "speak": "7  A: \"............ do kangaroos sleep?\"  B: \"During the day.\""
+       "speak": "7  A: \"............ do kangaroos sleep?\"  B: \"During the day.\"",
+       "speakAnswer": "When"
       },
       {
        "prompt": "8  A: \"............ do koalas live?\"  B: \"In eastern Australia.\"",
@@ -5976,7 +6390,8 @@
         "which"
        ],
        "whyUz": "'In eastern Australia' — JOY → WHERE.\nCoursebook 42-betdagi koala matnidan.",
-       "speak": "8  A: \"............ do koalas live?\"  B: \"In eastern Australia.\""
+       "speak": "8  A: \"............ do koalas live?\"  B: \"In eastern Australia.\"",
+       "speakAnswer": "Where"
       },
       {
        "prompt": "9  A: \"............ colour is an elephant?\"  B: \"Grey.\"",
@@ -5988,7 +6403,8 @@
         "where"
        ],
        "whyUz": "'What colour ...?' — o'zgarmas ibora.\nFil kulrang — Coursebook 43-betdagi rasmda ko'rgansiz.",
-       "speak": "9  A: \"............ colour is an elephant?\"  B: \"Grey.\""
+       "speak": "9  A: \"............ colour is an elephant?\"  B: \"Grey.\"",
+       "speakAnswer": "What"
       },
       {
        "prompt": "10  A: \"............ do you wash your dog?\"  B: \"Once a week.\"",
@@ -6000,7 +6416,8 @@
         "which"
        ],
        "whyUz": "'Once a week' — CHASTOTA → HOW OFTEN.\n'to wash' = yuvmoq.",
-       "speak": "10  A: \"............ do you wash your dog?\"  B: \"Once a week.\""
+       "speak": "10  A: \"............ do you wash your dog?\"  B: \"Once a week.\"",
+       "speakAnswer": "How often"
       },
       {
        "prompt": "11  A: \"............ tall is your brother?\"  B: \"About 1.80 metres.\"",
@@ -6012,7 +6429,8 @@
         "which"
        ],
        "whyUz": "'How + sifat' = o'lchov savoli: How TALL ...?\nJavob metrda beriladi.",
-       "speak": "11  A: \"............ tall is your brother?\"  B: \"About 1.80 metres.\""
+       "speak": "11  A: \"............ tall is your brother?\"  B: \"About 1.80 metres.\"",
+       "speakAnswer": "How"
       },
       {
        "prompt": "12  A: \"............ is that animal?\"  B: \"It's a sea lion.\"",
@@ -6024,7 +6442,8 @@
         "where"
        ],
        "whyUz": "Hayvon nomi (narsa) → WHAT.\nDIQQAT: odam bo'lsa WHO bo'lardi.",
-       "speak": "12  A: \"............ is that animal?\"  B: \"It's a sea lion.\""
+       "speak": "12  A: \"............ is that animal?\"  B: \"It's a sea lion.\"",
+       "speakAnswer": "What"
       },
       {
        "prompt": "13  A: \"............ cat is that?\"  B: \"It's mine.\"",
@@ -6036,7 +6455,8 @@
         "which"
        ],
        "whyUz": "Javob 'mine' (meniki) — EGALIK → WHOSE.\n'Whose + ot' tartibi: Whose CAT is that?",
-       "speak": "13  A: \"............ cat is that?\"  B: \"It's mine.\""
+       "speak": "13  A: \"............ cat is that?\"  B: \"It's mine.\"",
+       "speakAnswer": "Whose"
       }
      ]
     }
@@ -6066,140 +6486,160 @@
        "answer": "chairs",
        "promptUz": "Oddiy -s",
        "whyUz": "-r bilan tugaydi → oddiy -s. 'a chair' = stul.",
-       "speak": "-S katagi: chair → ............"
+       "speak": "-S katagi: chair → ............",
+       "speakAnswer": "chairs"
       },
       {
        "prompt": "-S katagi: bed → ............",
        "answer": "beds",
        "promptUz": "Oddiy -s",
        "whyUz": "-d bilan tugaydi → oddiy -s.",
-       "speak": "-S katagi: bed → ............"
+       "speak": "-S katagi: bed → ............",
+       "speakAnswer": "beds"
       },
       {
        "prompt": "-S katagi: koala → ............",
        "answer": "koalas",
        "promptUz": "Oddiy -s",
        "whyUz": "Unli bilan tugaydi → oddiy -s.",
-       "speak": "-S katagi: koala → ............"
+       "speak": "-S katagi: koala → ............",
+       "speakAnswer": "koalas"
       },
       {
        "prompt": "-S katagi: penguin → ............",
        "answer": "penguins",
        "promptUz": "Oddiy -s",
        "whyUz": "-n bilan tugaydi → oddiy -s.",
-       "speak": "-S katagi: penguin → ............"
+       "speak": "-S katagi: penguin → ............",
+       "speakAnswer": "penguins"
       },
       {
        "prompt": "-S katagi: dolphin → ............",
        "answer": "dolphins",
        "promptUz": "Oddiy -s",
        "whyUz": "-n bilan tugaydi → oddiy -s.",
-       "speak": "-S katagi: dolphin → ............"
+       "speak": "-S katagi: dolphin → ............",
+       "speakAnswer": "dolphins"
       },
       {
        "prompt": "-S katagi: tiger → ............",
        "answer": "tigers",
        "promptUz": "Oddiy -s",
        "whyUz": "-r bilan tugaydi → oddiy -s.",
-       "speak": "-S katagi: tiger → ............"
+       "speak": "-S katagi: tiger → ............",
+       "speakAnswer": "tigers"
       },
       {
        "prompt": "-ES katagi: bus → ............",
        "answer": "buses",
        "promptUz": "-s bilan tugaydi",
        "whyUz": "-S bilan tugaydi → -es. Talaffuzi /ˈbʌsɪz/.",
-       "speak": "-ES katagi: bus → ............"
+       "speak": "-ES katagi: bus → ............",
+       "speakAnswer": "buses"
       },
       {
        "prompt": "-ES katagi: pouch → ............",
        "answer": "pouches",
        "promptUz": "-ch bilan tugaydi",
        "whyUz": "-CH bilan tugaydi → -es. 'a pouch' = xalta (kenguruda).",
-       "speak": "-ES katagi: pouch → ............"
+       "speak": "-ES katagi: pouch → ............",
+       "speakAnswer": "pouches"
       },
       {
        "prompt": "-ES katagi: brush → ............",
        "answer": "brushes",
        "promptUz": "-sh bilan tugaydi",
        "whyUz": "-SH bilan tugaydi → -es. 'a brush' = cho'tka.",
-       "speak": "-ES katagi: brush → ............"
+       "speak": "-ES katagi: brush → ............",
+       "speakAnswer": "brushes"
       },
       {
        "prompt": "-ES katagi: address → ............",
        "answer": "addresses",
        "promptUz": "-ss bilan tugaydi",
        "whyUz": "-SS bilan tugaydi → -es. 'an address' = manzil.",
-       "speak": "-ES katagi: address → ............"
+       "speak": "-ES katagi: address → ............",
+       "speakAnswer": "addresses"
       },
       {
        "prompt": "-ES katagi: bench → ............",
        "answer": "benches",
        "promptUz": "-ch bilan tugaydi",
        "whyUz": "-CH bilan tugaydi → -es. 'a bench' = skameyka.",
-       "speak": "-ES katagi: bench → ............"
+       "speak": "-ES katagi: bench → ............",
+       "speakAnswer": "benches"
       },
       {
        "prompt": "IRREGULAR katagi: mouse → ............",
        "answer": "mice",
        "promptUz": "O'zak butunlay o'zgaradi",
        "whyUz": "mouse → mice. 'mouses' XATO.",
-       "speak": "IRREGULAR katagi: mouse → ............"
+       "speak": "IRREGULAR katagi: mouse → ............",
+       "speakAnswer": "mice"
       },
       {
        "prompt": "IRREGULAR katagi: sheep → ............",
        "answer": "sheep",
        "promptUz": "Shakl o'zgarmaydi",
        "whyUz": "sheep → sheep. 'sheeps' XATO.",
-       "speak": "IRREGULAR katagi: sheep → ............"
+       "speak": "IRREGULAR katagi: sheep → ............",
+       "speakAnswer": "sheep"
       },
       {
        "prompt": "IRREGULAR katagi: child → ............",
        "answer": "children",
        "promptUz": "-ren qo'shiladi",
        "whyUz": "child → children. 'childs' XATO.",
-       "speak": "IRREGULAR katagi: child → ............"
+       "speak": "IRREGULAR katagi: child → ............",
+       "speakAnswer": "children"
       },
       {
        "prompt": "IRREGULAR katagi: man → ............",
        "answer": "men",
        "promptUz": "a → e",
        "whyUz": "man → men. 'mans' XATO.",
-       "speak": "IRREGULAR katagi: man → ............"
+       "speak": "IRREGULAR katagi: man → ............",
+       "speakAnswer": "men"
       },
       {
        "prompt": "IRREGULAR katagi: deer → ............",
        "answer": "deer",
        "promptUz": "Shakl o'zgarmaydi",
        "whyUz": "deer → deer. 'deers' XATO.",
-       "speak": "IRREGULAR katagi: deer → ............"
+       "speak": "IRREGULAR katagi: deer → ............",
+       "speakAnswer": "deer"
       },
       {
        "prompt": "IRREGULAR katagi: foot → ............",
        "answer": "feet",
        "promptUz": "oo → ee",
        "whyUz": "foot → feet. 'foots' XATO.",
-       "speak": "IRREGULAR katagi: foot → ............"
+       "speak": "IRREGULAR katagi: foot → ............",
+       "speakAnswer": "feet"
       },
       {
        "prompt": "IRREGULAR katagi: fish → ............",
        "answer": "fish",
        "promptUz": "Shakl o'zgarmaydi",
        "whyUz": "fish → fish.\nDIQQAT: -sh bilan tugasa ham -ES OLMAYDI, chunki u NOTO'G'RI ot.\n('fishes' faqat turli TURLARI haqida.)",
-       "speak": "IRREGULAR katagi: fish → ............"
+       "speak": "IRREGULAR katagi: fish → ............",
+       "speakAnswer": "fish"
       },
       {
        "prompt": "IRREGULAR katagi: woman → ............",
        "answer": "women",
        "promptUz": "Yozilishi bir harf, talaffuzi boshqacha o'zgaradi",
        "whyUz": "woman → women. Talaffuz: /ˈwʊmən/ → /ˈwɪmɪn/.",
-       "speak": "IRREGULAR katagi: woman → ............"
+       "speak": "IRREGULAR katagi: woman → ............",
+       "speakAnswer": "women"
       },
       {
        "prompt": "IRREGULAR katagi: goose → ............",
        "answer": "geese",
        "promptUz": "oo → ee",
        "whyUz": "goose → geese. 'gooses' XATO.",
-       "speak": "IRREGULAR katagi: goose → ............"
+       "speak": "IRREGULAR katagi: goose → ............",
+       "speakAnswer": "geese"
       }
      ]
     }
@@ -6229,98 +6669,112 @@
        "answer": "They are policemen.",
        "promptUz": "'man' bilan tugagan ot — noto'g'ri ko'plik",
        "whyUz": "he → they, is → are.\n'policeman' → 'policemen' (man → men qoidasi so'z ichida ham ishlaydi).\n'policemans' XATO.",
-       "speak": "2  He is a policeman."
+       "speak": "2  He is a policeman.",
+       "speakAnswer": "They are policemen."
       },
       {
        "prompt": "3  It is a cat.",
        "answer": "They are cats.",
        "promptUz": "Oddiy -s",
        "whyUz": "it → they, is → are, a cat → cats.",
-       "speak": "3  It is a cat."
+       "speak": "3  It is a cat.",
+       "speakAnswer": "They are cats."
       },
       {
        "prompt": "4  I am a singer.",
        "answer": "We are singers.",
        "promptUz": "'I' ning ko'pligi",
        "whyUz": "I → WE (they emas!), am → are, a singer → singers.",
-       "speak": "4  I am a singer."
+       "speak": "4  I am a singer.",
+       "speakAnswer": "We are singers."
       },
       {
        "prompt": "5  She is a girl.",
        "answer": "They are girls.",
        "promptUz": "Oddiy -s",
        "whyUz": "she → they, is → are, a girl → girls.",
-       "speak": "5  She is a girl."
+       "speak": "5  She is a girl.",
+       "speakAnswer": "They are girls."
       },
       {
        "prompt": "6  It is an armchair.",
        "answer": "They are armchairs.",
        "promptUz": "'an' butunlay tushib qoladi",
        "whyUz": "it → they, is → are.\n'an armchair' → 'armchairs' — AN tushib qoladi.",
-       "speak": "6  It is an armchair."
+       "speak": "6  It is an armchair.",
+       "speakAnswer": "They are armchairs."
       },
       {
        "prompt": "7  I am a man.",
        "answer": "We are men.",
        "promptUz": "Noto'g'ri ko'plik",
        "whyUz": "I → WE, am → are, a man → MEN ('mans' XATO).",
-       "speak": "7  I am a man."
+       "speak": "7  I am a man.",
+       "speakAnswer": "We are men."
       },
       {
        "prompt": "8  He is a pilot.",
        "answer": "They are pilots.",
        "promptUz": "Oddiy -s",
        "whyUz": "he → they, is → are, a pilot → pilots.",
-       "speak": "8  He is a pilot."
+       "speak": "8  He is a pilot.",
+       "speakAnswer": "They are pilots."
       },
       {
        "prompt": "9  You are a farmer.",
        "answer": "You are farmers.",
        "promptUz": "'you' o'zgarmaydi",
        "whyUz": "you → YOU (o'zgarmaydi), are → are (o'zgarmaydi).\nFaqat OT o'zgaradi: a farmer → farmers.",
-       "speak": "9  You are a farmer."
+       "speak": "9  You are a farmer.",
+       "speakAnswer": "You are farmers."
       },
       {
        "prompt": "10  It is a mouse.",
        "answer": "They are mice.",
        "promptUz": "Noto'g'ri ko'plik",
        "whyUz": "it → they, is → are, a mouse → MICE ('mouses' XATO).",
-       "speak": "10  It is a mouse."
+       "speak": "10  It is a mouse.",
+       "speakAnswer": "They are mice."
       },
       {
        "prompt": "11  I am a surgeon.",
        "answer": "We are surgeons.",
        "promptUz": "'I' ning ko'pligi",
        "whyUz": "I → WE, am → are, a surgeon → surgeons.\n'a surgeon' = jarroh.",
-       "speak": "11  I am a surgeon."
+       "speak": "11  I am a surgeon.",
+       "speakAnswer": "We are surgeons."
       },
       {
        "prompt": "12  It is a fox.",
        "answer": "They are foxes.",
        "promptUz": "-x bilan tugaydi",
        "whyUz": "it → they, is → are.\n'fox' -X bilan tugaydi → -ES: foxes.",
-       "speak": "12  It is a fox."
+       "speak": "12  It is a fox.",
+       "speakAnswer": "They are foxes."
       },
       {
        "prompt": "13  It is a fish.",
        "answer": "They are fish.",
        "promptUz": "Shakl o'zgarmaydi",
        "whyUz": "it → they, is → are.\n'fish' — noto'g'ri ot, ko'pligi ham FISH.\nDIQQAT: -sh bo'lsa ham 'fishes' EMAS.",
-       "speak": "13  It is a fish."
+       "speak": "13  It is a fish.",
+       "speakAnswer": "They are fish."
       },
       {
        "prompt": "14  You are an actress.",
        "answer": "You are actresses.",
        "promptUz": "-ss bilan tugaydi, 'you' o'zgarmaydi",
        "whyUz": "you → you, are → are.\n'an actress' → 'actresses' (-SS → -ES, AN tushadi).",
-       "speak": "14  You are an actress."
+       "speak": "14  You are an actress.",
+       "speakAnswer": "You are actresses."
       },
       {
        "prompt": "15  He is an astronaut.",
        "answer": "They are astronauts.",
        "promptUz": "Oddiy -s, 'an' tushadi",
        "whyUz": "he → they, is → are.\n'an astronaut' → 'astronauts'. 'an astronaut' = kosmonavt.",
-       "speak": "15  He is an astronaut."
+       "speak": "15  He is an astronaut.",
+       "speakAnswer": "They are astronauts."
       }
      ]
     },
@@ -6345,7 +6799,8 @@
         "live"
        ],
        "whyUz": "'X are mammals' — turkumlash qolipi (Coursebook 40-bet).\nKo'plik ega → ARE.",
-       "speak": "Polar bears 1) ............ mammals and feed their babies on milk."
+       "speak": "Polar bears 1) ............ mammals and feed their babies on milk.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "They 2) ............ in the Arctic.",
@@ -6357,7 +6812,8 @@
         "are"
        ],
        "whyUz": "'live IN + joy'. Ko'plik ega → fe'lga -s QO'SHILMAYDI.\n'the Arctic' = Arktika (Shimoliy qutb). Artikl THE shart.",
-       "speak": "They 2) ............ in the Arctic."
+       "speak": "They 2) ............ in the Arctic.",
+       "speakAnswer": "live"
       },
       {
        "prompt": "They are about two metres tall and they 3) ............ about 400 kilos.",
@@ -6369,7 +6825,8 @@
         "are"
        ],
        "whyUz": "'weigh + og'irlik'. Bo'y uchun 'are ... tall', og'irlik uchun 'weigh'.\nDIQQAT: 'they are weigh' XATO — 'weigh' bilan 'be' ishlatilmaydi.",
-       "speak": "They are about two metres tall and they 3) ............ about 400 kilos."
+       "speak": "They are about two metres tall and they 3) ............ about 400 kilos.",
+       "speakAnswer": "weigh"
       },
       {
        "prompt": "Polar bears 4) ............ cream-coloured fur which keeps them very warm.",
@@ -6381,7 +6838,8 @@
         "live"
        ],
        "whyUz": "Tana qismi (fur) → HAVE GOT. Ko'plik ega → HAVE ('has' XATO).\n'cream-coloured' = krem rangli. 'which' = ...ki, u.",
-       "speak": "Polar bears 4) ............ cream-coloured fur which keeps them very warm."
+       "speak": "Polar bears 4) ............ cream-coloured fur which keeps them very warm.",
+       "speakAnswer": "have got"
       },
       {
        "prompt": "They can 5) ............ very well because their front legs are very strong.",
@@ -6393,7 +6851,8 @@
         "live"
        ],
        "whyUz": "'can' dan keyin fe'l ASOS shaklida — 'to' va '-s' YO'Q.\nOq ayiq juda yaxshi suzadi.",
-       "speak": "They can 5) ............ very well because their front legs are very strong."
+       "speak": "They can 5) ............ very well because their front legs are very strong.",
+       "speakAnswer": "swim"
       },
       {
        "prompt": "They 6) ............ seals and they usually live on their own.",
@@ -6405,7 +6864,8 @@
         "are"
        ],
        "whyUz": "'a seal' = tyulen (dengiz hayvoni). Oq ayiqning asosiy ovqati.\n'on their own' = yolg'iz o'zi ('alone' bilan bir xil).",
-       "speak": "They 6) ............ seals and they usually live on their own."
+       "speak": "They 6) ............ seals and they usually live on their own.",
+       "speakAnswer": "eat"
       }
      ]
     }
@@ -6435,56 +6895,64 @@
        "answer": "Where is Karen?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Javob JOY ('at the cinema') → WHERE.\n'Karen's' bu yerda 'Karen IS' qisqartmasi (egalik emas).",
-       "speak": "Karen's at the cinema."
+       "speak": "Karen's at the cinema.",
+       "speakAnswer": "Where is Karen?"
       },
       {
        "prompt": "He's 13 years old.",
        "answer": "How old is he?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Javob YOSH → 'How old ...?'\n13 → 'thirteen years old' (yearS ko'plikda).",
-       "speak": "He's 13 years old."
+       "speak": "He's 13 years old.",
+       "speakAnswer": "How old is he?"
       },
       {
        "prompt": "No, he isn't a doctor. He's a dentist.",
        "answer": "Is he a doctor?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Javob 'No' bilan boshlanadi → HA/YO'Q savoli.\nInkorda takrorlangan so'z ('a doctor') savolda bo'ladi.",
-       "speak": "No, he isn't a doctor. He's a dentist."
+       "speak": "No, he isn't a doctor. He's a dentist.",
+       "speakAnswer": "Is he a doctor?"
       },
       {
        "prompt": "The Eiffel Tower is in Paris, France.",
        "answer": "Where is the Eiffel Tower?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Javob JOY → WHERE.\n'the Eiffel Tower' — Eyfel minorasi, THE bilan.",
-       "speak": "The Eiffel Tower is in Paris, France."
+       "speak": "The Eiffel Tower is in Paris, France.",
+       "speakAnswer": "Where is the Eiffel Tower?"
       },
       {
        "prompt": "No, I'm not married.",
        "answer": "Are you married?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Javob 'No, I'm not' → savolda 'Are YOU ...?'\nDIQQAT: I → savolda YOU ga aylanadi.\n'married' = uylangan, turmushga chiqqan.",
-       "speak": "No, I'm not married."
+       "speak": "No, I'm not married.",
+       "speakAnswer": "Are you married?"
       },
       {
        "prompt": "Yes, she's my sister.",
        "answer": "Is she your sister?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Javob 'Yes, she's MY sister' → savolda 'YOUR sister'.\nEgalik olmoshi ham almashadi: my ↔ your.",
-       "speak": "Yes, she's my sister."
+       "speak": "Yes, she's my sister.",
+       "speakAnswer": "Is she your sister?"
       },
       {
        "prompt": "No, he isn't a barman. He's a waiter.",
        "answer": "Is he a barman?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Javob 'No, he isn't a barman' → savol 'Is he a barman?'\n'a barman' = barmen, 'a waiter' = ofitsiant.",
-       "speak": "No, he isn't a barman. He's a waiter."
+       "speak": "No, he isn't a barman. He's a waiter.",
+       "speakAnswer": "Is he a barman?"
       },
       {
        "prompt": "Yes, we are from Holland.",
        "answer": "Are you from Holland?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Javob 'we are' → savolda 'Are YOU ...?'\nDIQQAT: we → savolda YOU ga aylanadi.\n'Holland' = Gollandiya (Niderlandiya).",
-       "speak": "Yes, we are from Holland."
+       "speak": "Yes, we are from Holland.",
+       "speakAnswer": "Are you from Holland?"
       }
      ]
     },
@@ -6504,56 +6972,64 @@
        "answer": "There are some pictures on the walls, but there aren't any posters.",
        "promptUz": "Ikkalasi ham ko'plik",
        "whyUz": "Ko'plik tasdiq → There are SOME.\nKo'plik inkor → there aren't ANY.\n'on the walls' — devor YUZASIDA → ON.",
-       "speak": "3  pictures (✓) / on the walls / posters (✗)"
+       "speak": "3  pictures (✓) / on the walls / posters (✗)",
+       "speakAnswer": "There are some pictures on the walls, but there aren't any posters."
       },
       {
        "prompt": "4  a post office / in your area?",
        "answer": "Is there a post office in your area?",
        "promptUz": "Birlik savol",
        "whyUz": "Birlik ('a post office') → IS there a ...?\n'a post office' = pochta bo'limi, 'an area' = hudud, mahalla.",
-       "speak": "4  a post office / in your area?"
+       "speak": "4  a post office / in your area?",
+       "speakAnswer": "Is there a post office in your area?"
       },
       {
        "prompt": "5  fireplace (✓) / in the living-room / bed (✗)",
        "answer": "There's a fireplace in the living-room, but there isn't a bed.",
        "promptUz": "Ikkalasi ham birlik",
        "whyUz": "Birlik tasdiq → There's A.\nBirlik inkor → there isn't A.\n'a fireplace' = kamin.",
-       "speak": "5  fireplace (✓) / in the living-room / bed (✗)"
+       "speak": "5  fireplace (✓) / in the living-room / bed (✗)",
+       "speakAnswer": "There's a fireplace in the living-room, but there isn't a bed."
       },
       {
        "prompt": "6  books / in your bag?",
        "answer": "Are there any books in your bag?",
        "promptUz": "Ko'plik savol",
        "whyUz": "Ko'plik savol → Are there ANY ...?",
-       "speak": "6  books / in your bag?"
+       "speak": "6  books / in your bag?",
+       "speakAnswer": "Are there any books in your bag?"
       },
       {
        "prompt": "7  four boys (✓) / in my family / girls (✗)",
        "answer": "There are four boys in my family, but there aren't any girls.",
        "promptUz": "Aniq son berilgan — 'some' kerak emas",
        "whyUz": "ANIQ SON bor ('four') → 'some' QO'SHILMAYDI.\nInkorda esa ANY shart: there aren't ANY girls.",
-       "speak": "7  four boys (✓) / in my family / girls (✗)"
+       "speak": "7  four boys (✓) / in my family / girls (✗)",
+       "speakAnswer": "There are four boys in my family, but there aren't any girls."
       },
       {
        "prompt": "8  mirror / in your room?",
        "answer": "Is there a mirror in your room?",
        "promptUz": "Birlik savol",
        "whyUz": "Birlik → IS there A ...?\n'a mirror' = oyna (ko'zgu).",
-       "speak": "8  mirror / in your room?"
+       "speak": "8  mirror / in your room?",
+       "speakAnswer": "Is there a mirror in your room?"
       },
       {
        "prompt": "9  dishwasher (✓) / in the kitchen / armchair (✗)",
        "answer": "There's a dishwasher in the kitchen, but there isn't an armchair.",
        "promptUz": "Ikkinchi ot unli bilan boshlanadi",
        "whyUz": "Birlik tasdiq → There's a dishwasher.\nBirlik inkor → there isn't AN armchair ('armchair' unli bilan boshlanadi).\n'a dishwasher' = idish yuvish mashinasi.",
-       "speak": "9  dishwasher (✓) / in the kitchen / armchair (✗)"
+       "speak": "9  dishwasher (✓) / in the kitchen / armchair (✗)",
+       "speakAnswer": "There's a dishwasher in the kitchen, but there isn't an armchair."
       },
       {
        "prompt": "10  flats / for rent?",
        "answer": "Are there any flats for rent?",
        "promptUz": "Ko'plik savol",
        "whyUz": "Ko'plik savol → Are there ANY ...?\n'a flat' = kvartira (britancha; amerikacha 'an apartment').\n'for rent' = ijaraga.",
-       "speak": "10  flats / for rent?"
+       "speak": "10  flats / for rent?",
+       "speakAnswer": "Are there any flats for rent?"
       }
      ]
     }
@@ -6586,7 +7062,8 @@
         "Daniel's",
         "Daniel"
        ],
-       "whyUz": "Egalik kerak: kimning otasi? → Danielning → DANIEL'S."
+       "whyUz": "Egalik kerak: kimning otasi? → Danielning → DANIEL'S.",
+       "speakAnswer": "Daniel's"
       },
       {
        "prompt": "2  This is ............ car.",
@@ -6596,7 +7073,8 @@
         "John and Lisa's",
         "John's and Lisa"
        ],
-       "whyUz": "BITTA mashina, IKKI ega → faqat OXIRGI ismga 's qo'yiladi.\n'John's and Lisa' — ikkinchi ismda 's yo'q, mutlaqo XATO."
+       "whyUz": "BITTA mashina, IKKI ega → faqat OXIRGI ismga 's qo'yiladi.\n'John's and Lisa' — ikkinchi ismda 's yo'q, mutlaqo XATO.",
+       "speakAnswer": "John and Lisa's"
       },
       {
        "prompt": "3  Where is ............ cat?",
@@ -6606,7 +7084,8 @@
         "Tommy's",
         "Tommy"
        ],
-       "whyUz": "Egalik: Tommining mushugi → TOMMY'S."
+       "whyUz": "Egalik: Tommining mushugi → TOMMY'S.",
+       "speakAnswer": "Tommy's"
       },
       {
        "prompt": "4  Those are the ............ bicycles.",
@@ -6626,7 +7105,8 @@
         "Steven's",
         "Stevens"
        ],
-       "whyUz": "Egalik → STEVEN'S. 'Stevens' — apostrofsiz, bu shunchaki ko'plik/familiya."
+       "whyUz": "Egalik → STEVEN'S. 'Stevens' — apostrofsiz, bu shunchaki ko'plik/familiya.",
+       "speakAnswer": "Steven's"
       },
       {
        "prompt": "6  My ............ sister lives in Canada.",
@@ -6636,7 +7116,8 @@
         "mother's",
         "mother"
        ],
-       "whyUz": "Egalik: onamNING singlisi → MOTHER'S.\n'My mother sister' XATO."
+       "whyUz": "Egalik: onamNING singlisi → MOTHER'S.\n'My mother sister' XATO.",
+       "speakAnswer": "mother's"
       },
       {
        "prompt": "7  Is your ............ name Helen?",
@@ -6646,7 +7127,8 @@
         "sister's",
         "sisters'"
        ],
-       "whyUz": "'name' BIRLIKDA → bitta singil → SISTER'S.\n'sisters' name' bo'lsa bir necha singilning BITTA ismi bo'lardi — mantiqsiz."
+       "whyUz": "'name' BIRLIKDA → bitta singil → SISTER'S.\n'sisters' name' bo'lsa bir necha singilning BITTA ismi bo'lardi — mantiqsiz.",
+       "speakAnswer": "sister's"
       },
       {
        "prompt": "8  My ............ names are Nick and Paula.",
@@ -6666,7 +7148,8 @@
         "Robyn and Tim's",
         "Robyn's and Tim's"
        ],
-       "whyUz": "BITTA kompyuter, ikkalasiniki → faqat OXIRGI ismga 's.\n'Robyn's and Tim's' bo'lsa har birining ALOHIDA kompyuteri bo'lardi."
+       "whyUz": "BITTA kompyuter, ikkalasiniki → faqat OXIRGI ismga 's.\n'Robyn's and Tim's' bo'lsa har birining ALOHIDA kompyuteri bo'lardi.",
+       "speakAnswer": "Robyn and Tim's"
       },
       {
        "prompt": "10  This is ............ desk.",
@@ -6676,7 +7159,8 @@
         "Sean's",
         "Sean"
        ],
-       "whyUz": "Egalik → SEAN'S. 'Sean' /ʃɔːn/ — irlandcha ism, 'Shon' deb o'qiladi."
+       "whyUz": "Egalik → SEAN'S. 'Sean' /ʃɔːn/ — irlandcha ism, 'Shon' deb o'qiladi.",
+       "speakAnswer": "Sean's"
       }
      ]
     },
@@ -6696,42 +7180,48 @@
        "answer": "The chair is in front of the window.",
        "promptUz": "Rasmda kreslo derazaga qaragan holda uning oldida turibdi",
        "whyUz": "'in front of' = oldida. Kreslo deraza OLDIDA.\nDIQQAT: 'next to the window' (yonida) ham mumkin, lekin unda\nro'yxatdagi 'in front of' predlogi ishlatilmay qolardi.",
-       "speak": "1  chair / window"
+       "speak": "1  chair / window",
+       "speakAnswer": "The chair is in front of the window."
       },
       {
        "prompt": "2  pictures / wall",
        "answer": "The pictures are on the wall.",
        "promptUz": "Devor yuzasiga osilgan",
        "whyUz": "Devorga osilgan narsa → ON the wall.\n'pictures' KO'PLIK → ARE.",
-       "speak": "2  pictures / wall"
+       "speak": "2  pictures / wall",
+       "speakAnswer": "The pictures are on the wall."
       },
       {
        "prompt": "3  small table / sofa",
        "answer": "The small table is next to the sofa.",
        "promptUz": "Divanning yonida",
        "whyUz": "'next to' = yonida. Kichik stol divan yonida turibdi.",
-       "speak": "3  small table / sofa"
+       "speak": "3  small table / sofa",
+       "speakAnswer": "The small table is next to the sofa."
       },
       {
        "prompt": "4  rug / table",
        "answer": "The rug is under the table.",
        "promptUz": "Stolning ostida, polda",
        "whyUz": "'under' = ostida. Gilam polda, stol ustida turadi.\n'a rug' = gilamcha.",
-       "speak": "4  rug / table"
+       "speak": "4  rug / table",
+       "speakAnswer": "The rug is under the table."
       },
       {
        "prompt": "5  flowers / room",
        "answer": "The flowers are in the room.",
        "promptUz": "Xonaning ichida",
        "whyUz": "'in' = ichida. Xona ICHIDA.\n'flowers' KO'PLIK → ARE.",
-       "speak": "5  flowers / room"
+       "speak": "5  flowers / room",
+       "speakAnswer": "The flowers are in the room."
       },
       {
        "prompt": "6  cushion / sofa",
        "answer": "The cushion is on the sofa.",
        "promptUz": "Divan ustida turibdi",
        "whyUz": "'on' = ustida. Yostiqcha divan ustida.\n'a cushion' = kichik yostiqcha (divan uchun).",
-       "speak": "6  cushion / sofa"
+       "speak": "6  cushion / sofa",
+       "speakAnswer": "The cushion is on the sofa."
       }
      ]
     }
@@ -6765,7 +7255,8 @@
         "persons",
         "peoples"
        ],
-       "whyUz": "'person' ning ko'pligi — PEOPLE (noto'g'ri ot).\n'persons' faqat rasmiy hujjatlarda; 'peoples' = XALQLAR (millatlar) — bu yerda xato."
+       "whyUz": "'person' ning ko'pligi — PEOPLE (noto'g'ri ot).\n'persons' faqat rasmiy hujjatlarda; 'peoples' = XALQLAR (millatlar) — bu yerda xato.",
+       "speakAnswer": "people"
       },
       {
        "prompt": "2  ............ do you weigh?",
@@ -6776,7 +7267,8 @@
         "How",
         "How many"
        ],
-       "whyUz": "Og'irlik SANALMAYDI → HOW MUCH ('weigh' fe'li bilan doim shu)."
+       "whyUz": "Og'irlik SANALMAYDI → HOW MUCH ('weigh' fe'li bilan doim shu).",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "3  We live ............ a flat.",
@@ -6787,7 +7279,8 @@
         "on",
         "at"
        ],
-       "whyUz": "Kvartira ICHIDA yashaymiz → IN a flat.\nUy uchun ham: live IN a house."
+       "whyUz": "Kvartira ICHIDA yashaymiz → IN a flat.\nUy uchun ham: live IN a house.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "4  There are four ............ in the room.",
@@ -6798,7 +7291,8 @@
         "woman",
         "woman's"
        ],
-       "whyUz": "'four' → KO'PLIK kerak. woman → WOMEN (noto'g'ri ot)."
+       "whyUz": "'four' → KO'PLIK kerak. woman → WOMEN (noto'g'ri ot).",
+       "speakAnswer": "women"
       },
       {
        "prompt": "5  I always visit my grandparents ............ weekends.",
@@ -6809,7 +7303,8 @@
         "in",
         "on"
        ],
-       "whyUz": "BRITANCHA ingliz tilida: AT weekends / AT the weekend.\nEnterprise — britancha darslik, shuning uchun AT.\nDIQQAT: amerikacha ingliz tilida 'ON weekends' deyiladi."
+       "whyUz": "BRITANCHA ingliz tilida: AT weekends / AT the weekend.\nEnterprise — britancha darslik, shuning uchun AT.\nDIQQAT: amerikacha ingliz tilida 'ON weekends' deyiladi.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "6  ............ you like ice cream?",
@@ -6820,7 +7315,8 @@
         "Doesn't",
         "Are"
        ],
-       "whyUz": "'you' ega + oddiy fe'l ('like') → DO you like ...?\n'Are you like' XATO — 'like' fe'l, sifat emas."
+       "whyUz": "'you' ega + oddiy fe'l ('like') → DO you like ...?\n'Are you like' XATO — 'like' fe'l, sifat emas.",
+       "speakAnswer": "Do"
       },
       {
        "prompt": "7  We always have lunch ............ 12 o'clock.",
@@ -6831,7 +7327,8 @@
         "on",
         "in"
        ],
-       "whyUz": "ANIQ SOAT oldida → AT: at 12 o'clock, at 7.30."
+       "whyUz": "ANIQ SOAT oldida → AT: at 12 o'clock, at 7.30.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "8  Frank is my ............ brother. He's my uncle.",
@@ -6842,7 +7339,8 @@
         "fathers",
         "father"
        ],
-       "whyUz": "Egalik: otamNING akasi → FATHER'S brother.\nHaqiqatan ham otaning akasi = amaki (uncle)."
+       "whyUz": "Egalik: otamNING akasi → FATHER'S brother.\nHaqiqatan ham otaning akasi = amaki (uncle).",
+       "speakAnswer": "father's"
       },
       {
        "prompt": "9  A: Are these books yours?  B: Yes, they're ............ .",
@@ -6853,7 +7351,8 @@
         "yours",
         "hers"
        ],
-       "whyUz": "Savolda 'yours' (sizniki) → javobda 'MINE' (meniki).\nJavob beruvchi O'ZI haqida gapiradi."
+       "whyUz": "Savolda 'yours' (sizniki) → javobda 'MINE' (meniki).\nJavob beruvchi O'ZI haqida gapiradi.",
+       "speakAnswer": "mine"
       },
       {
        "prompt": "10  There are a lot of ............ in the park.",
@@ -6864,7 +7363,8 @@
         "goose",
         "goose's"
        ],
-       "whyUz": "'a lot of' → KO'PLIK. goose → GEESE (noto'g'ri ot)."
+       "whyUz": "'a lot of' → KO'PLIK. goose → GEESE (noto'g'ri ot).",
+       "speakAnswer": "geese"
       },
       {
        "prompt": "11  It's my birthday ............ Saturday.",
@@ -6875,7 +7375,8 @@
         "at",
         "in"
        ],
-       "whyUz": "HAFTA KUNLARI oldida → ON: on Saturday, on Monday."
+       "whyUz": "HAFTA KUNLARI oldida → ON: on Saturday, on Monday.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "12  There are ............ pillows on the bed.",
@@ -6886,7 +7387,8 @@
         "any",
         "a"
        ],
-       "whyUz": "TASDIQ gap + KO'PLIK → SOME.\n'any' inkor va savolda; 'a' faqat birlikda."
+       "whyUz": "TASDIQ gap + KO'PLIK → SOME.\n'any' inkor va savolda; 'a' faqat birlikda.",
+       "speakAnswer": "some"
       },
       {
        "prompt": "13  A: Does Claire work on Sundays?  B: No, she ............ works on Sundays.",
@@ -6897,7 +7399,8 @@
         "usually",
         "often"
        ],
-       "whyUz": "Javob 'No' → INKOR ma'no kerak → NEVER (hech qachon).\nDIQQAT: 'never' o'zi inkor — 'doesn't never' XATO."
+       "whyUz": "Javob 'No' → INKOR ma'no kerak → NEVER (hech qachon).\nDIQQAT: 'never' o'zi inkor — 'doesn't never' XATO.",
+       "speakAnswer": "never"
       },
       {
        "prompt": "14  It's raining. Have you got ............ umbrella?",
@@ -6908,7 +7411,8 @@
         "a",
         "some"
        ],
-       "whyUz": "'umbrella' UNLI tovush bilan boshlanadi → AN.\n'some' sanalmaydigan yoki ko'plik uchun."
+       "whyUz": "'umbrella' UNLI tovush bilan boshlanadi → AN.\n'some' sanalmaydigan yoki ko'plik uchun.",
+       "speakAnswer": "an"
       },
       {
        "prompt": "15  ............ is that bicycle, please?",
@@ -6919,7 +7423,8 @@
         "How",
         "How many"
        ],
-       "whyUz": "NARX so'ralmoqda → HOW MUCH is ...?\n'How much is it?' = Qancha turadi?"
+       "whyUz": "NARX so'ralmoqda → HOW MUCH is ...?\n'How much is it?' = Qancha turadi?",
+       "speakAnswer": "How much"
       },
       {
        "prompt": "16  There are some ............ in the field.",
@@ -6930,7 +7435,8 @@
         "mouse",
         "mice's"
        ],
-       "whyUz": "'some' → KO'PLIK. mouse → MICE (noto'g'ri ot).\n'a field' = dala."
+       "whyUz": "'some' → KO'PLIK. mouse → MICE (noto'g'ri ot).\n'a field' = dala.",
+       "speakAnswer": "mice"
       },
       {
        "prompt": "17  ............ legs has a spider got?",
@@ -6941,7 +7447,8 @@
         "How long",
         "How often"
        ],
-       "whyUz": "'legs' SANALADI → HOW MANY.\nJavob: sakkizta (o'rgimchak — hasharot emas, arachnid).\n'a spider' = o'rgimchak."
+       "whyUz": "'legs' SANALADI → HOW MANY.\nJavob: sakkizta (o'rgimchak — hasharot emas, arachnid).\n'a spider' = o'rgimchak.",
+       "speakAnswer": "How many"
       },
       {
        "prompt": "18  I never sleep ............ the afternoon.",
@@ -6952,7 +7459,8 @@
         "at",
         "on"
        ],
-       "whyUz": "IN the morning / IN the afternoon / IN the evening.\nISTISNO: AT night (the yo'q, at bilan)."
+       "whyUz": "IN the morning / IN the afternoon / IN the evening.\nISTISNO: AT night (the yo'q, at bilan).",
+       "speakAnswer": "in"
       },
       {
        "prompt": "19  ............ do you eat for breakfast?",
@@ -6963,7 +7471,8 @@
         "When",
         "How"
        ],
-       "whyUz": "Ovqat (NARSA) so'ralmoqda → WHAT.\n'When' bo'lsa vaqt, 'How' bo'lsa usul so'ralardi."
+       "whyUz": "Ovqat (NARSA) so'ralmoqda → WHAT.\n'When' bo'lsa vaqt, 'How' bo'lsa usul so'ralardi.",
+       "speakAnswer": "What"
       },
       {
        "prompt": "20  This is ............ car.",
@@ -6974,7 +7483,8 @@
         "she",
         "hers"
        ],
-       "whyUz": "OT oldida egalik SIFATI kerak → HER car.\n'hers' — egalik OLMOSHI, otsiz ishlatiladi: 'This car is hers.'\n'she' — ega olmoshi, bu yerda mos emas."
+       "whyUz": "OT oldida egalik SIFATI kerak → HER car.\n'hers' — egalik OLMOSHI, otsiz ishlatiladi: 'This car is hers.'\n'she' — ega olmoshi, bu yerda mos emas.",
+       "speakAnswer": "her"
       }
      ]
     }

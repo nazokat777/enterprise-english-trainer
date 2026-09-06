@@ -37,7 +37,8 @@
         "He"
        ],
        "whyUz": "'be FROM a place' = ... dan bo'lmoq.\n\n'Where are you FROM?' — 19-band bilan\nbir xil qoida.",
-       "speak": "1  Daniel is ................................... Lisbon, Portugal."
+       "speak": "1  Daniel is ................................... Lisbon, Portugal.",
+       "speakAnswer": "from"
       },
       {
        "prompt": "2  They ................................... friends.",
@@ -50,7 +51,8 @@
         "He"
        ],
        "whyUz": "'they' — KO'PLIK → ARE.\n\n  I → am\n  he/she/it → is\n  you/we/they → are",
-       "speak": "2  They ................................... friends."
+       "speak": "2  They ................................... friends.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "3  He is ................................... astronaut.",
@@ -63,7 +65,8 @@
         "He"
        ],
        "whyUz": "⚠ 'astronaut' UNLI tovush bilan boshlanadi\n→ 'AN'.\n\n'a astronaut' — XATO.\n\nA → undosh tovush oldidan;\nAN → unli tovush oldidan.",
-       "speak": "3  He is ................................... astronaut."
+       "speak": "3  He is ................................... astronaut.",
+       "speakAnswer": "an"
       },
       {
        "prompt": "4  This is Steve Richway. ................. is a teacher.",
@@ -76,7 +79,8 @@
         "an"
        ],
        "whyUz": "Stiv — ERKAK ismi → HE.\n\nIkkinchi gapda ismni takrorlash o'rniga\nOLMOSH ishlatiladi.",
-       "speak": "4  This is Steve Richway. ................. is a teacher."
+       "speak": "4  This is Steve Richway. ................. is a teacher.",
+       "speakAnswer": "He"
       },
       {
        "prompt": "5  ................................... old are you?",
@@ -89,7 +93,8 @@
         "an"
        ],
        "whyUz": "'HOW old are you?' — turg'un savol.\n\nJavobi: 'I am twelve years old.' (11-band)",
-       "speak": "5  ................................... old are you?"
+       "speak": "5  ................................... old are you?",
+       "speakAnswer": "How"
       },
       {
        "prompt": "6  ................................... your name?",
@@ -102,7 +107,8 @@
         "an"
        ],
        "whyUz": "'WHAT'S your name?' = What IS your name?\n\n'How is your name?' — XATO.",
-       "speak": "6  ................................... your name?"
+       "speak": "6  ................................... your name?",
+       "speakAnswer": "What's"
       },
       {
        "prompt": "7  'Is she from Italy?'  'No, she ....................... .'",
@@ -115,7 +121,8 @@
         "an"
        ],
        "whyUz": "QISQA JAVOB: savoldagi fe'l takrorlanadi.\n\n'IS she ...?' → 'No, she ISN'T.'\n\n'No, she isn't from Italy' — to'liq shakl,\nlekin qisqa javob yetarli.",
-       "speak": "7  'Is she from Italy?'  'No, she ....................... .'"
+       "speak": "7  'Is she from Italy?'  'No, she ....................... .'",
+       "speakAnswer": "isn't"
       },
       {
        "prompt": "8  What sort of hair ................................... she got?",
@@ -128,7 +135,8 @@
         "an"
        ],
        "whyUz": "'she' → HAS got.\n\n'have got' savol shakli:\n  HAS he/she/it got ...?\n  HAVE I/you/we/they got ...?\n\n'what SORT OF' = qanday, qanaqa.",
-       "speak": "8  What sort of hair ................................... she got?"
+       "speak": "8  What sort of hair ................................... she got?",
+       "speakAnswer": "has"
       },
       {
        "prompt": "9  What colour ................................... your eyes?",
@@ -141,7 +149,8 @@
         "He"
        ],
        "whyUz": "⚠ 'EYES' — KO'PLIK → ARE!\n\n'What colour IS your hair?' (hair —\nSANALMAYDIGAN, birlik)\n'What colour ARE your eyes?' (eyes — ko'plik)",
-       "speak": "9  What colour ................................... your eyes?"
+       "speak": "9  What colour ................................... your eyes?",
+       "speakAnswer": "are"
       },
       {
        "prompt": "10  ................................... you from Australia?",
@@ -154,7 +163,8 @@
         "He"
        ],
        "whyUz": "SAVOLDA 'be' EGADAN OLDIN keladi:\n  'You ARE from Australia.' (tasdiq)\n  'ARE you from Australia?' (savol)\n\n'you' → ARE.",
-       "speak": "10  ................................... you from Australia?"
+       "speak": "10  ................................... you from Australia?",
+       "speakAnswer": "are"
       },
       {
        "prompt": "11  I ................................... twelve years old.",
@@ -167,7 +177,8 @@
         "an"
        ],
        "whyUz": "'I' bilan DOIM 'AM'.\n\n⚠ Yoshni aytishda 'BE' ishlatiladi:\n  'I AM twelve.'  ✓\n  'I HAVE twelve years.' ✗",
-       "speak": "11  I ................................... twelve years old."
+       "speak": "11  I ................................... twelve years old.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "12  Big Ben is ................................... London.",
@@ -180,7 +191,8 @@
         "an"
        ],
        "whyUz": "SHAHAR bilan 'IN':\n  in London / in Tashkent / in Paris\n\nAniq manzil bilan 'AT':\n  'at 4, Pine Street'",
-       "speak": "12  Big Ben is ................................... London."
+       "speak": "12  Big Ben is ................................... London.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "13  ................................... Pierre got green eyes?",
@@ -193,7 +205,8 @@
         "an"
        ],
        "whyUz": "'Pierre' — bitta odam (3-shaxs birlik)\n→ HAS got.\n\nSavolda 'has' GAP BOSHIDA:\n'HAS Pierre got green eyes?'",
-       "speak": "13  ................................... Pierre got green eyes?"
+       "speak": "13  ................................... Pierre got green eyes?",
+       "speakAnswer": "has"
       },
       {
        "prompt": "14  '................................... you sing?'  'Yes, quite well.'",
@@ -206,7 +219,8 @@
         "an"
        ],
        "whyUz": "QOBILIYAT haqida → CAN.\n\nKeyin ASOSIY shakl: 'Can you SING?'\n('Can you to sing?' XATO)\n\n'quite well' = ancha yaxshi.",
-       "speak": "14  '................................... you sing?'  'Yes, quite well.'"
+       "speak": "14  '................................... you sing?'  'Yes, quite well.'",
+       "speakAnswer": "can"
       },
       {
        "prompt": "15  A ................................... in need is a friend indeed.",
@@ -219,7 +233,8 @@
         "an"
        ],
        "whyUz": "⚠ Bu — INGLIZ MAQOLI!\n\n'A FRIEND in need is a friend indeed.'\nSo'zma-so'z: 'Muhtojlikdagi do'st — haqiqiy\ndo'st.'\n\nQofiya: nEED — indEED.",
-       "speak": "15  A ................................... in need is a friend indeed."
+       "speak": "15  A ................................... in need is a friend indeed.",
+       "speakAnswer": "friend"
       },
       {
        "prompt": "16  He ................................... run very fast.",
@@ -232,7 +247,8 @@
         "an"
        ],
        "whyUz": "QOBILIYAT → CAN.\n\n⚠ 'can' 3-shaxsda O'ZGARMAYDI:\n  'He CAN run.'   ✓\n  'He CANS run.'  ✗\n  'He can RUNS.'  ✗",
-       "speak": "16  He ................................... run very fast."
+       "speak": "16  He ................................... run very fast.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "17  He hasn't got curly hair; he's got ................. hair.",
@@ -245,7 +261,8 @@
         "an"
        ],
        "whyUz": "curly (jingalak) ↔ STRAIGHT (tekis)\n\nBoshqa turlari: wavy (to'lqinsimon).\n\n⚠ 'hair' — SANALMAYDIGAN ('hairs' XATO).",
-       "speak": "17  He hasn't got curly hair; he's got ................. hair."
+       "speak": "17  He hasn't got curly hair; he's got ................. hair.",
+       "speakAnswer": "straight"
       },
       {
        "prompt": "18  Hope to ................................... from you soon.",
@@ -258,7 +275,8 @@
         "an"
        ],
        "whyUz": "⚠ 'hear FROM somebody' = kimdandir XABAR\nolmoq (xat, qo'ng'iroq).\n\n'Hope to hear from you soon' — do'stona xat\noxiridagi TURG'UN ibora.\n\n'hear somebody' = kimnidir eshitmoq (boshqa\nma'no).",
-       "speak": "18  Hope to ................................... from you soon."
+       "speak": "18  Hope to ................................... from you soon.",
+       "speakAnswer": "hear"
       },
       {
        "prompt": "19  '................................... are you from?'  'I'm from Egypt.'",
@@ -271,7 +289,8 @@
         "an"
        ],
        "whyUz": "JOY so'raladi → WHERE.\n\n'Where are you FROM?' — predlog 'from' GAP\nOXIRIDA qoladi.\n\n1-band bilan bir xil qurilma.",
-       "speak": "19  '................................... are you from?'  'I'm from Egypt.'"
+       "speak": "19  '................................... are you from?'  'I'm from Egypt.'",
+       "speakAnswer": "Where"
       },
       {
        "prompt": "20  I ..................................., playing computer games.",
@@ -284,7 +303,8 @@
         "an"
        ],
        "whyUz": "'LIKE + V-ing' = ... ni yoqtirmoq.\n\n2-mashqning 9-bandi ham shu:\n'I LIKE PLAYING the guitar.'\n\n⚠ Kitobda bo'sh joydan keyin VERGUL bosilgan\n— mantiqan ortiqcha, bosma xato.\nTo'g'ri gap: 'I like playing computer games.'",
-       "speak": "20  I ..................................., playing computer games."
+       "speak": "20  I ..................................., playing computer games.",
+       "speakAnswer": "like"
       }
      ]
     },
@@ -308,7 +328,8 @@
         "big",
         "small"
        ],
-       "whyUz": "'FAVOURITE sport' = eng yoqtirgan sport.\n\n'big sport' / 'small sport' — mantiqsiz\nbirikmalar."
+       "whyUz": "'FAVOURITE sport' = eng yoqtirgan sport.\n\n'big sport' / 'small sport' — mantiqsiz\nbirikmalar.",
+       "speakAnswer": "favourite"
       },
       {
        "prompt": "2  She ................. wavy hair.",
@@ -319,7 +340,8 @@
         "have got",
         "is"
        ],
-       "whyUz": "'she' — 3-shaxs birlik → HAS got.\n\n'have got' — I/you/we/they bilan.\n'She IS wavy hair' — mantiqsiz."
+       "whyUz": "'she' — 3-shaxs birlik → HAS got.\n\n'have got' — I/you/we/they bilan.\n'She IS wavy hair' — mantiqsiz.",
+       "speakAnswer": "has got"
       },
       {
        "prompt": "3  Lemons are ................. .",
@@ -330,7 +352,8 @@
         "red",
         "black"
        ],
-       "whyUz": "Limon SARIQ bo'ladi.\n\n(Qizil — pomidor, olma;\n qora — ko'mir.)"
+       "whyUz": "Limon SARIQ bo'ladi.\n\n(Qizil — pomidor, olma;\n qora — ko'mir.)",
+       "speakAnswer": "yellow"
       },
       {
        "prompt": "4  ................. you help me, please?",
@@ -341,7 +364,8 @@
         "Have",
         "Are"
        ],
-       "whyUz": "ILTIMOS → CAN.\n\n'Can you help me, please?' — turg'un iltimos\nshakli.\n\n'Have you help' / 'Are you help' — grammatik\njihatdan XATO."
+       "whyUz": "ILTIMOS → CAN.\n\n'Can you help me, please?' — turg'un iltimos\nshakli.\n\n'Have you help' / 'Are you help' — grammatik\njihatdan XATO.",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "5  Hi! I ................. John Smith.",
@@ -352,7 +376,8 @@
         "have",
         "can"
        ],
-       "whyUz": "'I' bilan DOIM 'AM'.\n\nTanishtirish: 'I AM John Smith.'\n'I HAVE John Smith' — mantiqsiz."
+       "whyUz": "'I' bilan DOIM 'AM'.\n\nTanishtirish: 'I AM John Smith.'\n'I HAVE John Smith' — mantiqsiz.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "6  ................. is Marco from?",
@@ -363,7 +388,8 @@
         "How",
         "What"
        ],
-       "whyUz": "'be FROM' — JOY so'raladi → WHERE.\n\n'How is Marco from?' — mantiqsiz.\n'What is Marco from?' — mantiqsiz."
+       "whyUz": "'be FROM' — JOY so'raladi → WHERE.\n\n'How is Marco from?' — mantiqsiz.\n'What is Marco from?' — mantiqsiz.",
+       "speakAnswer": "Where"
       },
       {
        "prompt": "7  I'm a student ............. an English boarding school.",
@@ -374,7 +400,8 @@
         "from",
         "to"
        ],
-       "whyUz": "⚠ MAKTAB/UNIVERSITET bilan 'AT':\n  'a student AT a school'\n  'AT university'\n\n'from' — kelib chiqish;\n'to' — yo'nalish. Ikkalasi bu yerda mos\nkelmaydi."
+       "whyUz": "⚠ MAKTAB/UNIVERSITET bilan 'AT':\n  'a student AT a school'\n  'AT university'\n\n'from' — kelib chiqish;\n'to' — yo'nalish. Ikkalasi bu yerda mos\nkelmaydi.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "8  He is forty-one. He is ................. .",
@@ -385,7 +412,8 @@
         "young",
         "old"
        ],
-       "whyUz": "41 yosh — O'RTA YOSH.\n\n  young = yosh (bola, o'smir)\n  middle-aged = o'rta yoshli (taxminan\n     40-60)\n  old = keksa"
+       "whyUz": "41 yosh — O'RTA YOSH.\n\n  young = yosh (bola, o'smir)\n  middle-aged = o'rta yoshli (taxminan\n     40-60)\n  old = keksa",
+       "speakAnswer": "middle-aged"
       },
       {
        "prompt": "9  I like ................. the guitar.",
@@ -396,7 +424,8 @@
         "singing",
         "cooking"
        ],
-       "whyUz": "⚠ CHOLG'U ASBOBI bilan 'PLAY':\n  'play THE guitar/piano/violin'\n  (artikl 'the' bilan!)\n\nSport bilan artikl YO'Q: 'play football'.\n\n'sing/cook the guitar' — mantiqsiz."
+       "whyUz": "⚠ CHOLG'U ASBOBI bilan 'PLAY':\n  'play THE guitar/piano/violin'\n  (artikl 'the' bilan!)\n\nSport bilan artikl YO'Q: 'play football'.\n\n'sing/cook the guitar' — mantiqsiz.",
+       "speakAnswer": "playing"
       },
       {
        "prompt": "10  I can ................. French. Can you?",
@@ -407,7 +436,8 @@
         "swim",
         "like"
        ],
-       "whyUz": "⚠ TIL bilan 'SPEAK':\n  'speak French / English / Uzbek'\n\n'swim French' — mantiqsiz.\n'like French' — grammatik to'g'ri, lekin\n'CAN you?' savoli QOBILIYAT haqida."
+       "whyUz": "⚠ TIL bilan 'SPEAK':\n  'speak French / English / Uzbek'\n\n'swim French' — mantiqsiz.\n'like French' — grammatik to'g'ri, lekin\n'CAN you?' savoli QOBILIYAT haqida.",
+       "speakAnswer": "speak"
       }
      ]
     }

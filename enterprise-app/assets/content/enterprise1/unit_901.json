@@ -183,15 +183,18 @@
      "tasks": [
       {
        "left": "1-o'rin",
-       "right": "Go to Loch Ness. (Mayk, idorada)"
+       "right": "Go to Loch Ness. (Mayk, idorada)",
+       "speakAnswer": "Go to Loch Ness."
       },
       {
        "left": "2-o'rin",
-       "right": "Let's hire a boat and look for it. (Devid, ko'l bo'yida)"
+       "right": "Let's hire a boat and look for it. (Devid, ko'l bo'yida)",
+       "speakAnswer": "Let's hire a boat and look for it."
       },
       {
        "left": "3-o'rin",
-       "right": "Sandra, be careful! (Devid, qayiqda)"
+       "right": "Sandra, be careful! (Devid, qayiqda)",
+       "speakAnswer": "Sandra, be careful!"
       }
      ]
     },
@@ -267,7 +270,8 @@
         "in",
         "on"
        ],
-       "whyUz": "Idora — yopiq joy → IN the office."
+       "whyUz": "Idora — yopiq joy → IN the office.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "2  Mike's got newspapers ____ his hand.",
@@ -277,7 +281,8 @@
         "in",
         "on"
        ],
-       "whyUz": "Qo'lda ushlab turibdi → IN his hand. 'on his hand' — qo'l ustida yotibdi degani."
+       "whyUz": "Qo'lda ushlab turibdi → IN his hand. 'on his hand' — qo'l ustida yotibdi degani.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "3  There are stories about the monster ____ all the papers.",
@@ -287,7 +292,8 @@
         "in",
         "on"
        ],
-       "whyUz": "Gazeta ICHIDA yozilgan → IN the papers."
+       "whyUz": "Gazeta ICHIDA yozilgan → IN the papers.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "4  Sandra and David are ____ the train.",
@@ -297,7 +303,8 @@
         "on",
         "in"
        ],
-       "whyUz": "Katta transport → ON the train. 'in the train' NOTO'G'RI."
+       "whyUz": "Katta transport → ON the train. 'in the train' NOTO'G'RI.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "5  Sandra and David are ____ a boat.",
@@ -307,7 +314,8 @@
         "on",
         "in"
        ],
-       "whyUz": "Qayiq ham transport → ON a boat."
+       "whyUz": "Qayiq ham transport → ON a boat.",
+       "speakAnswer": "on"
       }
      ]
     }
@@ -337,98 +345,112 @@
        "answer": "Go to Loch Ness.",
        "promptUz": "Savol tuzing",
        "whyUz": "Tasdiq buyruq — fe'lning asos shakli 'go'.",
-       "speak": "Idorada, Mayk topshiriq beradi"
+       "speak": "Idorada, Mayk topshiriq beradi",
+       "speakAnswer": "Go to Loch Ness."
       },
       {
        "prompt": "Idorada, Mayk topshiriq beradi",
        "answer": "Mike",
        "promptUz": "Javob tuzing",
        "whyUz": "Tasdiq buyruq — fe'lning asos shakli 'go'.",
-       "speak": "Idorada, Mayk topshiriq beradi"
+       "speak": "Idorada, Mayk topshiriq beradi",
+       "speakAnswer": "Mike"
       },
       {
        "prompt": "Qayiqda, Devid maxluqni ko'radi",
        "answer": "Look!",
        "promptUz": "Savol tuzing",
        "whyUz": "'Sandra! Look! The monster!' — eng qisqa buyruq, bitta so'z.",
-       "speak": "Qayiqda, Devid maxluqni ko'radi"
+       "speak": "Qayiqda, Devid maxluqni ko'radi",
+       "speakAnswer": "Look!"
       },
       {
        "prompt": "Qayiqda, Devid maxluqni ko'radi",
        "answer": "David",
        "promptUz": "Javob tuzing",
        "whyUz": "'Sandra! Look! The monster!' — eng qisqa buyruq, bitta so'z.",
-       "speak": "Qayiqda, Devid maxluqni ko'radi"
+       "speak": "Qayiqda, Devid maxluqni ko'radi",
+       "speakAnswer": "David"
       },
       {
        "prompt": "Qayiqda, Sandra shoshiltiradi",
        "answer": "Quick, take some photographs!",
        "promptUz": "Savol tuzing",
        "whyUz": "'take' — tasdiq buyruq. 'Quick' — 'tez bo'l'.",
-       "speak": "Qayiqda, Sandra shoshiltiradi"
+       "speak": "Qayiqda, Sandra shoshiltiradi",
+       "speakAnswer": "Quick, take some photographs!"
       },
       {
        "prompt": "Qayiqda, Sandra shoshiltiradi",
        "answer": "Sandra",
        "promptUz": "Javob tuzing",
        "whyUz": "'take' — tasdiq buyruq. 'Quick' — 'tez bo'l'.",
-       "speak": "Qayiqda, Sandra shoshiltiradi"
+       "speak": "Qayiqda, Sandra shoshiltiradi",
+       "speakAnswer": "Sandra"
       },
       {
        "prompt": "Qayiqda, Devid ogohlantiradi",
        "answer": "Be careful!",
        "promptUz": "Savol tuzing",
        "whyUz": "'be' — 'to be' fe'lining asos shakli. Buyruqda 'are' emas, 'be' ishlatiladi.",
-       "speak": "Qayiqda, Devid ogohlantiradi"
+       "speak": "Qayiqda, Devid ogohlantiradi",
+       "speakAnswer": "Be careful!"
       },
       {
        "prompt": "Qayiqda, Devid ogohlantiradi",
        "answer": "David",
        "promptUz": "Javob tuzing",
        "whyUz": "'be' — 'to be' fe'lining asos shakli. Buyruqda 'are' emas, 'be' ishlatiladi.",
-       "speak": "Qayiqda, Devid ogohlantiradi"
+       "speak": "Qayiqda, Devid ogohlantiradi",
+       "speakAnswer": "David"
       },
       {
        "prompt": "Qayiqda, Devid o'tirishni aytadi",
        "answer": "Sit down!",
        "promptUz": "Savol tuzing",
        "whyUz": "'sit down' — fe'l + predlog.",
-       "speak": "Qayiqda, Devid o'tirishni aytadi"
+       "speak": "Qayiqda, Devid o'tirishni aytadi",
+       "speakAnswer": "Sit down!"
       },
       {
        "prompt": "Qayiqda, Devid o'tirishni aytadi",
        "answer": "David",
        "promptUz": "Javob tuzing",
        "whyUz": "'sit down' — fe'l + predlog.",
-       "speak": "Qayiqda, Devid o'tirishni aytadi"
+       "speak": "Qayiqda, Devid o'tirishni aytadi",
+       "speakAnswer": "David"
       },
       {
        "prompt": "Qayiqda, Devid turishni man qiladi",
        "answer": "Don't stand up!",
        "promptUz": "Savol tuzing",
        "whyUz": "YAGONA inkor buyruq: don't + asos shakl.",
-       "speak": "Qayiqda, Devid turishni man qiladi"
+       "speak": "Qayiqda, Devid turishni man qiladi",
+       "speakAnswer": "Don't stand up!"
       },
       {
        "prompt": "Qayiqda, Devid turishni man qiladi",
        "answer": "David",
        "promptUz": "Javob tuzing",
        "whyUz": "YAGONA inkor buyruq: don't + asos shakl.",
-       "speak": "Qayiqda, Devid turishni man qiladi"
+       "speak": "Qayiqda, Devid turishni man qiladi",
+       "speakAnswer": "David"
       },
       {
        "prompt": "Suvda, Sandra yordam so'raydi",
        "answer": "Help me!",
        "promptUz": "Savol tuzing",
        "whyUz": "'help' + obyekt olmoshi 'me'.",
-       "speak": "Suvda, Sandra yordam so'raydi"
+       "speak": "Suvda, Sandra yordam so'raydi",
+       "speakAnswer": "Help me!"
       },
       {
        "prompt": "Suvda, Sandra yordam so'raydi",
        "answer": "Sandra",
        "promptUz": "Javob tuzing",
        "whyUz": "'help' + obyekt olmoshi 'me'.",
-       "speak": "Suvda, Sandra yordam so'raydi"
+       "speak": "Suvda, Sandra yordam so'raydi",
+       "speakAnswer": "Sandra"
       }
      ]
     }
@@ -493,7 +515,8 @@
         "her",
         "them"
        ],
-       "whyUz": "Erkak → he, predlogdan keyin HIM."
+       "whyUz": "Erkak → he, predlogdan keyin HIM.",
+       "speakAnswer": "him"
       },
       {
        "prompt": "Look at ____ ! (a kangaroo)",
@@ -505,7 +528,8 @@
         "him",
         "them"
        ],
-       "whyUz": "Hayvon → it. 'it' o'zgarmaydi."
+       "whyUz": "Hayvon → it. 'it' o'zgarmaydi.",
+       "speakAnswer": "it"
       },
       {
        "prompt": "Look at ____ ! (a group of men)",
@@ -517,7 +541,8 @@
         "him",
         "us"
        ],
-       "whyUz": "Ko'plik → they, predlogdan keyin THEM."
+       "whyUz": "Ko'plik → they, predlogdan keyin THEM.",
+       "speakAnswer": "them"
       }
      ]
     },
@@ -535,40 +560,47 @@
       {
        "prompt": "I →",
        "answer": "me",
-       "whyUz": "Help ME!"
+       "whyUz": "Help ME!",
+       "speakAnswer": "me"
       },
       {
        "prompt": "you →",
        "answer": "you",
        "whyUz": "O'zgarmaydi.",
-       "speak": "you →"
+       "speak": "you →",
+       "speakAnswer": "you"
       },
       {
        "prompt": "he →",
        "answer": "him",
-       "whyUz": "Look at HIM."
+       "whyUz": "Look at HIM.",
+       "speakAnswer": "him"
       },
       {
        "prompt": "she →",
        "answer": "her",
        "whyUz": "Look at HER.",
-       "speak": "she →"
+       "speak": "she →",
+       "speakAnswer": "her"
       },
       {
        "prompt": "it →",
        "answer": "it",
-       "whyUz": "O'zgarmaydi. Look for IT."
+       "whyUz": "O'zgarmaydi. Look for IT.",
+       "speakAnswer": "it"
       },
       {
        "prompt": "we →",
        "answer": "us",
-       "whyUz": "Come with US."
+       "whyUz": "Come with US.",
+       "speakAnswer": "us"
       },
       {
        "prompt": "they →",
        "answer": "them",
        "whyUz": "Look at THEM.",
-       "speak": "they →"
+       "speak": "they →",
+       "speakAnswer": "them"
       }
      ]
     }
@@ -623,22 +655,26 @@
       {
        "prompt": "1-rasm — sovqotgan ayol va yonidagi erkak — erkakning javobi",
        "answer": "Put this on.",
-       "promptUz": "Buni kiy."
+       "promptUz": "Buni kiy.",
+       "speakAnswer": "Put this on."
       },
       {
        "prompt": "2-rasm — daraxt orqasidagi ayiqdan qo'rqqan ikki kishi — tinchlantiruvchining gapi",
        "answer": "Don't be afraid!",
-       "promptUz": "Qo'rqma!"
+       "promptUz": "Qo'rqma!",
+       "speakAnswer": "Don't be afraid!"
       },
       {
        "prompt": "3-rasm — suvdagi odam qirg'oqdagi odamga qo'l cho'zadi — yordam beruvchining gapi",
        "answer": "Take my hand!",
-       "promptUz": "Qo'limdan ushla!"
+       "promptUz": "Qo'limdan ushla!",
+       "speakAnswer": "Take my hand!"
       },
       {
        "prompt": "4-rasm — it ketgandan keyin erkak bolani tinchlantiradi — erkakning gapi",
        "answer": "Don't worry. It's gone.",
-       "promptUz": "Xavotir olma. U ketdi."
+       "promptUz": "Xavotir olma. U ketdi.",
+       "speakAnswer": "Don't worry. It's gone."
       }
      ]
     }
@@ -667,42 +703,49 @@
        "prompt": "1  (gazeta rasmi, 5 harf)",
        "answer": "paper",
        "whyUz": "Gazeta. 4-harfi E — vertikal so'zning 1-harfi.",
-       "speak": "1  (gazeta rasmi, 5 harf)"
+       "speak": "1  (gazeta rasmi, 5 harf)",
+       "speakAnswer": "paper"
       },
       {
        "prompt": "2  (yozuv stoli rasmi, 4 harf)",
        "answer": "desk",
        "whyUz": "Yozuv stoli. 1-harfi D.",
-       "speak": "2  (yozuv stoli rasmi, 4 harf)"
+       "speak": "2  (yozuv stoli rasmi, 4 harf)",
+       "speakAnswer": "desk"
       },
       {
        "prompt": "3  (poyezd rasmi, 5 harf)",
        "answer": "train",
        "whyUz": "Poyezd. 4-harfi I.",
-       "speak": "3  (poyezd rasmi, 5 harf)"
+       "speak": "3  (poyezd rasmi, 5 harf)",
+       "speakAnswer": "train"
       },
       {
        "prompt": "4  (suratli ramka rasmi, 10 harf)",
        "answer": "photograph",
        "whyUz": "Surat. 4-harfi T.",
-       "speak": "4  (suratli ramka rasmi, 10 harf)"
+       "speak": "4  (suratli ramka rasmi, 10 harf)",
+       "speakAnswer": "photograph"
       },
       {
        "prompt": "5  (qayiq rasmi, 4 harf)",
        "answer": "boat",
        "whyUz": "Qayiq. 2-harfi O.",
-       "speak": "5  (qayiq rasmi, 4 harf)"
+       "speak": "5  (qayiq rasmi, 4 harf)",
+       "speakAnswer": "boat"
       },
       {
        "prompt": "6  (maxluq rasmi, 7 harf)",
        "answer": "monster",
        "whyUz": "Maxluq. 7-harfi R.",
-       "speak": "6  (maxluq rasmi, 7 harf)"
+       "speak": "6  (maxluq rasmi, 7 harf)",
+       "speakAnswer": "monster"
       },
       {
        "prompt": "VERTIKAL — Mike's job",
        "answer": "editor",
-       "whyUz": "E-D-I-T-O-R. Mayk Betl — gazeta muharriri."
+       "whyUz": "E-D-I-T-O-R. Mayk Betl — gazeta muharriri.",
+       "speakAnswer": "editor"
       }
      ]
     },
@@ -789,43 +832,50 @@
        "prompt": "In the office, Mike shows David and Sandra some 2) p_____ .",
        "answer": "papers",
        "whyUz": "p + 5 harf = papers (gazetalar). Mayk qo'lida gazetalar bor edi.",
-       "speak": "In the office, Mike shows David and Sandra some 2) p_____ ."
+       "speak": "In the office, Mike shows David and Sandra some 2) p_____ .",
+       "speakAnswer": "papers"
       },
       {
        "prompt": "There are stories about Nessie, the 3) m______ in Loch Ness, in all of them.",
        "answer": "monster",
        "whyUz": "m + 6 harf = monster (maxluq).",
-       "speak": "There are stories about Nessie, the 3) m______ in Loch Ness, in all of them."
+       "speak": "There are stories about Nessie, the 3) m______ in Loch Ness, in all of them.",
+       "speakAnswer": "monster"
       },
       {
        "prompt": "David and Sandra go to Scotland on a 4) t____ .",
        "answer": "train",
        "whyUz": "t + 4 harf = train. 'ON a train' — transport qoidasi.",
-       "speak": "David and Sandra go to Scotland on a 4) t____ ."
+       "speak": "David and Sandra go to Scotland on a 4) t____ .",
+       "speakAnswer": "train"
       },
       {
        "prompt": "They want to take 5) p__________ of Nessie.",
        "answer": "photographs",
        "whyUz": "'take photographs' — suratga olmoq. Ko'plik, chunki bir nechta surat kerak.",
-       "speak": "They want to take 5) p__________ of Nessie."
+       "speak": "They want to take 5) p__________ of Nessie.",
+       "speakAnswer": "photographs"
       },
       {
        "prompt": "There are 6) b____ by the loch.",
        "answer": "boats",
        "whyUz": "b + 4 harf = boats. 'There ARE' — ko'plik.",
-       "speak": "There are 6) b____ by the loch."
+       "speak": "There are 6) b____ by the loch.",
+       "speakAnswer": "boats"
       },
       {
        "prompt": "David and Sandra hire one to 7) l___ for Nessie.",
        "answer": "look",
        "whyUz": "l + 3 harf = look. 'look for' — qidirmoq.",
-       "speak": "David and Sandra hire one to 7) l___ for Nessie."
+       "speak": "David and Sandra hire one to 7) l___ for Nessie.",
+       "speakAnswer": "look"
       },
       {
        "prompt": "After three 8) h____ on the boat, David sees the monster behind Sandra.",
        "answer": "hours",
        "whyUz": "h + 4 harf = hours. Hikoyada: 'AFTER THREE HOURS ON THE BOAT...'",
-       "speak": "After three 8) h____ on the boat, David sees the monster behind Sandra."
+       "speak": "After three 8) h____ on the boat, David sees the monster behind Sandra.",
+       "speakAnswer": "hours"
       }
      ]
     },

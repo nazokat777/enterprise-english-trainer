@@ -193,31 +193,38 @@
      "tasks": [
       {
        "left": "Amy",
-       "right": "old; short white curly hair; glasses; a red cardigan"
+       "right": "old; short white curly hair; glasses; a red cardigan",
+       "speakAnswer": "old; short white curly hair; glasses; a red cardigan"
       },
       {
        "left": "Eric",
-       "right": "a boy; short dark hair; a striped jumper"
+       "right": "a boy; short dark hair; a striped jumper",
+       "speakAnswer": "a boy; short dark hair; a striped jumper"
       },
       {
        "left": "Frank",
-       "right": "a boy; short fair hair; a striped jumper"
+       "right": "a boy; short fair hair; a striped jumper",
+       "speakAnswer": "a boy; short fair hair; a striped jumper"
       },
       {
        "left": "Max",
-       "right": "a young man; short dark hair; a moustache; a red sports vest; a basketball"
+       "right": "a young man; short dark hair; a moustache; a red sports vest; a basketball",
+       "speakAnswer": "a young man; short dark hair; a moustache; a red sports vest; a basketball"
       },
       {
        "left": "Yoko",
-       "right": "a girl; dark straight hair with a fringe; a floral dress"
+       "right": "a girl; dark straight hair with a fringe; a floral dress",
+       "speakAnswer": "a girl; dark straight hair with a fringe; a floral dress"
       },
       {
        "left": "Lee",
-       "right": "a girl; long dark hair; a floral dress"
+       "right": "a girl; long dark hair; a floral dress",
+       "speakAnswer": "a girl; long dark hair; a floral dress"
       },
       {
        "left": "Lester",
-       "right": "middle-aged; fair/grey hair; a moustache; glasses on his jumper; a tie"
+       "right": "middle-aged; fair/grey hair; a moustache; glasses on his jumper; a tie",
+       "speakAnswer": "middle-aged; fair/grey hair; a moustache; glasses on his jumper; a tie"
       }
      ]
     }
@@ -255,7 +262,8 @@
         "window"
        ],
        "whyUz": "⚠ BU — KITOBDAGI NAMUNA (qiyshiq harflar\nbilan yozilgan).\n\nO'quvchi shundan vazifani tushunadi.\n\n'a block of flats' = ko'p qavatli turar joy\nbinosi.\n\n⚠ Britaniyada 'seventh floor' = yerdan\n8-qavat (ground floor alohida sanaladi).",
-       "speak": "1  It's on the seventh floor of a big ......................... near the city centre.  (RASM: baland ko'p qavatli bino)"
+       "speak": "1  It's on the seventh floor of a big ......................... near the city centre.  (RASM: baland ko'p qavatli bino)",
+       "speakAnswer": "block of flats"
       },
       {
        "prompt": "2  It's got two bedrooms, a kitchen, a ......................... and a huge living-room.  (RASM: vanna)",
@@ -268,7 +276,8 @@
         "window"
        ],
        "whyUz": "⚠ Rasmda VANNA, lekin javob 'BATHROOM'!\n\nSababi: gap XONALAR ro'yxati haqida —\n'two bedroomS, a kitchen, a ......,\na living-room'. Hammasi XONA.\n\n'bath' (vanna) — xona emas, buyum.",
-       "speak": "2  It's got two bedrooms, a kitchen, a ......................... and a huge living-room.  (RASM: vanna)"
+       "speak": "2  It's got two bedrooms, a kitchen, a ......................... and a huge living-room.  (RASM: vanna)",
+       "speakAnswer": "bathroom"
       },
       {
        "prompt": "3  ... a huge living-room with a ......................... in it.  (RASM: yonayotgan kamin)",
@@ -281,7 +290,8 @@
         "window"
        ],
        "whyUz": "Rasmda yonayotgan olov va uning atrofidagi\ng'ishtli ramka — bu KAMIN.\n\n'a fireplace' = kamin ('fire' + 'place').\n\nWord List 120-betda Unit 3 bo'limida bor.",
-       "speak": "3  ... a huge living-room with a ......................... in it.  (RASM: yonayotgan kamin)"
+       "speak": "3  ... a huge living-room with a ......................... in it.  (RASM: yonayotgan kamin)",
+       "speakAnswer": "fireplace"
       },
       {
        "prompt": "4  It's got a blue carpet on the floor and a large ......................... with a great view of the city.  (RASM: qizil pardalar)",
@@ -294,7 +304,8 @@
         "fireplace"
        ],
        "whyUz": "⚠ Rasmda PARDALAR, lekin javob 'WINDOW'!\n\nIKKI DALIL:\n1) manzara ('view') DERAZADAN ochiladi,\n   pardadan emas;\n2) 'a LARGE' — BIRLIK, 'curtains' esa\n   KO'PLIK ('a large curtains' XATO).",
-       "speak": "4  It's got a blue carpet on the floor and a large ......................... with a great view of the city.  (RASM: qizil pardalar)"
+       "speak": "4  It's got a blue carpet on the floor and a large ......................... with a great view of the city.  (RASM: qizil pardalar)",
+       "speakAnswer": "window"
       },
       {
        "prompt": "5  My comfortable ......................... is right next to the ...  (RASM: karavot)",
@@ -307,7 +318,8 @@
         "fireplace"
        ],
        "whyUz": "Rasmda yostiqli karavot.\n\n'right next to' = aynan yonida\n('right' bu yerda kuchaytiruvchi).",
-       "speak": "5  My comfortable ......................... is right next to the ...  (RASM: karavot)"
+       "speak": "5  My comfortable ......................... is right next to the ...  (RASM: karavot)",
+       "speakAnswer": "bed"
       },
       {
        "prompt": "6  My comfortable bed is right next to the ......................... .  (RASM: kichik shkafcha ustidagi dumaloq oyna)",
@@ -320,7 +332,8 @@
         "fireplace"
        ],
        "whyUz": "Rasmda kichik shkafcha va uning ustida\nDUMALOQ OYNA — bu kiyinish stoli.\n\n'a dressing table' = kiyinish stoli\n(oynasi bor stolcha).\n\nWord List 120-betda Unit 3 bo'limida bor.",
-       "speak": "6  My comfortable bed is right next to the ......................... .  (RASM: kichik shkafcha ustidagi dumaloq oyna)"
+       "speak": "6  My comfortable bed is right next to the ......................... .  (RASM: kichik shkafcha ustidagi dumaloq oyna)",
+       "speakAnswer": "dressing table"
       },
       {
        "prompt": "7  There is also a small table in the room with a telephone and a ......................... on it.  (RASM: stol chirog'i)",
@@ -333,7 +346,8 @@
         "fireplace"
        ],
        "whyUz": "Rasmda abajurli stol chirog'i.\n\n'a lamp' = chiroq (stol yoki poldagi).\n\n⚠ 'a light' — umumiy yorug'lik;\n'a lamp' — aniq buyum.",
-       "speak": "7  There is also a small table in the room with a telephone and a ......................... on it.  (RASM: stol chirog'i)"
+       "speak": "7  There is also a small table in the room with a telephone and a ......................... on it.  (RASM: stol chirog'i)",
+       "speakAnswer": "lamp"
       },
       {
        "prompt": "8  I've got a big ........................., a large wardrobe, a TV and a CD player in my bedroom.  (RASM: kitobli javon)",
@@ -346,7 +360,8 @@
         "fireplace"
        ],
        "whyUz": "Rasmda rangli kitoblar terilgan javon.\n\n'a bookcase' = kitob javoni\n('book' + 'case').\n\n⚠ 'a wardrobe' (kiyim shkafi) gapda\nallaqachon bor — takrorlanmaydi.",
-       "speak": "8  I've got a big ........................., a large wardrobe, a TV and a CD player in my bedroom.  (RASM: kitobli javon)"
+       "speak": "8  I've got a big ........................., a large wardrobe, a TV and a CD player in my bedroom.  (RASM: kitobli javon)",
+       "speakAnswer": "bookcase"
       },
       {
        "prompt": "9  I've also got some ......................... on the walls.  (RASM: ramkali manzara rasmi)",
@@ -359,7 +374,8 @@
         "fireplace"
        ],
        "whyUz": "⚠ KO'PLIKDA! 'SOME' dan keyin sanaladigan ot\nKO'PLIKDA bo'ladi.\n\n  'some PICTURES'  ✓\n  'some PICTURE'   ✗\n\n'on the walls' ham ko'plik — bir nechta rasm.",
-       "speak": "9  I've also got some ......................... on the walls.  (RASM: ramkali manzara rasmi)"
+       "speak": "9  I've also got some ......................... on the walls.  (RASM: ramkali manzara rasmi)",
+       "speakAnswer": "pictures"
       },
       {
        "prompt": "10  My bedroom has got a balcony, too. There are some ......................... on it.  (RASM: guldondagi o'simlik)",
@@ -372,7 +388,8 @@
         "fireplace"
        ],
        "whyUz": "⚠ KO'PLIKDA! 'THERE ARE some ...' —\nko'plik.\n\n  'There ARE some PLANTS'  ✓\n  'There IS some plant'    ✗\n\n'a plant' = o'simlik, guldondagi gul.",
-       "speak": "10  My bedroom has got a balcony, too. There are some ......................... on it.  (RASM: guldondagi o'simlik)"
+       "speak": "10  My bedroom has got a balcony, too. There are some ......................... on it.  (RASM: guldondagi o'simlik)",
+       "speakAnswer": "plants"
       }
      ]
     }
@@ -519,19 +536,23 @@
      "tasks": [
       {
        "left": "1  orange fur with black stripes, a white chest, standing and looking straight ahead",
-       "right": "a tiger"
+       "right": "a tiger",
+       "speakAnswer": "a tiger"
       },
       {
        "left": "2  white-grey fur, black flippers, holding its head up",
-       "right": "a seal"
+       "right": "a seal",
+       "speakAnswer": "a seal"
       },
       {
        "left": "3  lying down, with a big dark mane and a long tail",
-       "right": "a lion"
+       "right": "a lion",
+       "speakAnswer": "a lion"
       },
       {
        "left": "4  sitting with both hands on its head, mouth open",
-       "right": "a chimpanzee"
+       "right": "a chimpanzee",
+       "speakAnswer": "a chimpanzee"
       }
      ]
     }
@@ -569,7 +590,8 @@
         "bacon"
        ],
        "whyUz": "Rasmda 'Jam' yozuvli banka.\n\n⚠ 'jam' SANALMAYDI — ko'pligi yo'q.\n'How MUCH jam?' ('how many' EMAS)\n\n'toast' ham sanalmaydi:\n'a SLICE of toast' = bir tilim tost.",
-       "speak": "1  People in Britain usually have toast with ......................... for breakfast.  (RASM: murabbo bankasi)"
+       "speak": "1  People in Britain usually have toast with ......................... for breakfast.  (RASM: murabbo bankasi)",
+       "speakAnswer": "jam"
       },
       {
        "prompt": "2  ... or ......................... with milk.  (RASM: kosadagi donli nonushta)",
@@ -582,7 +604,8 @@
         "bacon"
        ],
        "whyUz": "Rasmda kosadagi don parchalari.\n\n'cereal' = donli nonushta (kukuruz\nparchalari, ovsyanka va h.k.).\n\n⚠ Sanalmaydi.",
-       "speak": "2  ... or ......................... with milk.  (RASM: kosadagi donli nonushta)"
+       "speak": "2  ... or ......................... with milk.  (RASM: kosadagi donli nonushta)",
+       "speakAnswer": "cereal"
       },
       {
        "prompt": "3  They drink instant coffee or ......................... with milk.  (RASM: choy solingan piyola)",
@@ -595,7 +618,8 @@
         "bacon"
        ],
        "whyUz": "Rasmda likobcha ustidagi piyolada sutli\nichimlik.\n\n⚠ 'coffee' allaqachon gapda bor — demak\nikkinchisi 'TEA'.\n\n⚠ Britaniyaliklar choyni SUT bilan ichadi.",
-       "speak": "3  They drink instant coffee or ......................... with milk.  (RASM: choy solingan piyola)"
+       "speak": "3  They drink instant coffee or ......................... with milk.  (RASM: choy solingan piyola)",
+       "speakAnswer": "tea"
       },
       {
        "prompt": "4  A traditional English breakfast includes ........................., ...  (RASM: pushti go'sht tilimi)",
@@ -608,7 +632,8 @@
         "tea"
        ],
        "whyUz": "Rasmda yupqa pushti-oq go'sht tilimi.\n\n'bacon' = cho'chqa go'shtining dudlangan\ntilimi.\n\n⚠ Sanalmaydi: 'some bacon'\n('a bacon' EMAS).",
-       "speak": "4  A traditional English breakfast includes ........................., ...  (RASM: pushti go'sht tilimi)"
+       "speak": "4  A traditional English breakfast includes ........................., ...  (RASM: pushti go'sht tilimi)",
+       "speakAnswer": "bacon"
       },
       {
        "prompt": "5  ... bacon, ........................., ...  (RASM: quticha ichidagi jigarrang tuxumlar)",
@@ -621,7 +646,8 @@
         "tea"
        ],
        "whyUz": "⚠ KO'PLIKDA! Rasmda bir nechta tuxum.\n\n'an egg' → 'eggS'\n\n⚠ Tuxum SANALADI: 'How MANY eggs?'",
-       "speak": "5  ... bacon, ........................., ...  (RASM: quticha ichidagi jigarrang tuxumlar)"
+       "speak": "5  ... bacon, ........................., ...  (RASM: quticha ichidagi jigarrang tuxumlar)",
+       "speakAnswer": "eggs"
       },
       {
        "prompt": "6  ... eggs, ........................., ...  (RASM: ikkita qovurilgan kolbasacha)",
@@ -634,7 +660,8 @@
         "tea"
        ],
        "whyUz": "⚠ KO'PLIKDA! Rasmda ikkita kolbasacha.\n\n'a sausage' → 'sausageS'\n\n⚠ Ingliz nonushtasi — bekon, tuxum,\nkolbasacha, pomidor va tost.",
-       "speak": "6  ... eggs, ........................., ...  (RASM: ikkita qovurilgan kolbasacha)"
+       "speak": "6  ... eggs, ........................., ...  (RASM: ikkita qovurilgan kolbasacha)",
+       "speakAnswer": "sausages"
       },
       {
        "prompt": "7  ... sausages, ......................... and some slices of toast.  (RASM: uchta qizil pomidor)",
@@ -647,7 +674,8 @@
         "tea"
        ],
        "whyUz": "⚠ KO'PLIK '-OES' bilan!\n\n  tomato → tomatOES  ✓\n  tomatos            ✗\n\nUndoshdan keyingi '-o' ga '-ES' qo'shiladi\n(potato → potatoes ham shunday).",
-       "speak": "7  ... sausages, ......................... and some slices of toast.  (RASM: uchta qizil pomidor)"
+       "speak": "7  ... sausages, ......................... and some slices of toast.  (RASM: uchta qizil pomidor)",
+       "speakAnswer": "tomatoes"
       },
       {
        "prompt": "8  They usually have a light meal, such as a ........................., ...  (RASM: likobchadagi yashil salat)",
@@ -660,7 +688,8 @@
         "tea"
        ],
        "whyUz": "Rasmda ko'k likobchada yashil barglar va\nsabzavotlar.\n\n⚠ Gapda 'a' artikli bor — demak BIRLIK:\n'a salad'.",
-       "speak": "8  They usually have a light meal, such as a ........................., ...  (RASM: likobchadagi yashil salat)"
+       "speak": "8  They usually have a light meal, such as a ........................., ...  (RASM: likobchadagi yashil salat)",
+       "speakAnswer": "salad"
       },
       {
        "prompt": "9  ... such as a salad, a ......................... or ...  (RASM: uzun bulochkadagi buterbrod)",
@@ -673,7 +702,8 @@
         "tea"
        ],
        "whyUz": "Rasmda uzun bulochka ichida go'sht va\nsabzavot.\n\n⚠ Ko'pligi 'sandwichES' ('-ch' → '-es'),\nlekin bu yerda 'a' bor — BIRLIK.",
-       "speak": "9  ... such as a salad, a ......................... or ...  (RASM: uzun bulochkadagi buterbrod)"
+       "speak": "9  ... such as a salad, a ......................... or ...  (RASM: uzun bulochkadagi buterbrod)",
+       "speakAnswer": "sandwich"
       },
       {
        "prompt": "10  ... or a piece of ......................... .  (RASM: yumaloq pirog)",
@@ -686,7 +716,8 @@
         "tea"
        ],
        "whyUz": "⚠ 'a PIECE OF pie' — bo'lak bilan\no'lchanadi.\n\n⚠ Shu sababli javob BIRLIKDA va artiklsiz:\n'a piece of PIE' ('a pie' EMAS).",
-       "speak": "10  ... or a piece of ......................... .  (RASM: yumaloq pirog)"
+       "speak": "10  ... or a piece of ......................... .  (RASM: yumaloq pirog)",
+       "speakAnswer": "pie"
       },
       {
        "prompt": "11  A traditional full dinner is ......................... or ...  (RASM: butun baliq)",
@@ -699,7 +730,8 @@
         "tea"
        ],
        "whyUz": "⚠ 'fish' KO'PLIKDA HAM 'fish' —\no'zgarmaydi!\n\n  one fish → two FISH  ✓\n  two fishes           ✗\n\n('fishes' faqat turlari haqida gapirganda).",
-       "speak": "11  A traditional full dinner is ......................... or ...  (RASM: butun baliq)"
+       "speak": "11  A traditional full dinner is ......................... or ...  (RASM: butun baliq)",
+       "speakAnswer": "fish"
       },
       {
        "prompt": "12  ... is fish or ........................., meat with ...  (RASM: oq kosadagi qizil sho'rva)",
@@ -712,7 +744,8 @@
         "tea"
        ],
        "whyUz": "Rasmda oq kosada qizil suyuq taom.\n\n⚠ 'soup' SANALMAYDI:\n  'some soup', 'a bowl of soup'\n  ('a soup' EMAS).",
-       "speak": "12  ... is fish or ........................., meat with ...  (RASM: oq kosadagi qizil sho'rva)"
+       "speak": "12  ... is fish or ........................., meat with ...  (RASM: oq kosadagi qizil sho'rva)",
+       "speakAnswer": "soup"
       },
       {
        "prompt": "13  ... meat with ........................., and dessert - ...  (RASM: savatdagi rang-barang sabzavotlar)",
@@ -725,7 +758,8 @@
         "tea"
        ],
        "whyUz": "⚠ KO'PLIKDA! Rasmda ko'p xil sabzavot.\n\n'a vegetable' → 'vegetableS'\n\n⚠ Matn oxirida ham 'with vegetables'\nyozilgan — bir xil shakl.",
-       "speak": "13  ... meat with ........................., and dessert - ...  (RASM: savatdagi rang-barang sabzavotlar)"
+       "speak": "13  ... meat with ........................., and dessert - ...  (RASM: savatdagi rang-barang sabzavotlar)",
+       "speakAnswer": "vegetables"
       },
       {
        "prompt": "14  ... and dessert - ......................... or cheese.  (RASM: savatdagi banan, olma, uzum)",
@@ -738,7 +772,8 @@
         "tea"
        ],
        "whyUz": "⚠ 'fruit' odatda SANALMAYDI —\nrasmda ko'p meva bo'lsa ham BIRLIKDA:\n\n  'some fruit'  ✓\n  'some fruits' ✗ (faqat turlari haqida)\n\n⚠ 'cheese' ham sanalmaydi.",
-       "speak": "14  ... and dessert - ......................... or cheese.  (RASM: savatdagi banan, olma, uzum)"
+       "speak": "14  ... and dessert - ......................... or cheese.  (RASM: savatdagi banan, olma, uzum)",
+       "speakAnswer": "fruit"
       },
       {
        "prompt": "15  Sometimes they buy fish and ......................... .  (RASM: sariq qovurilgan kartoshka bo'laklari)",
@@ -751,7 +786,8 @@
         "tea"
        ],
        "whyUz": "⚠ 'FISH AND CHIPS' — Britaniyaning eng\nmashhur taomi.\n\n⚠⚠ BrE va AmE ADAShTIRMANG:\n  BrE 'chips'  = yo'g'on qovurilgan kartoshka\n  AmE 'chips'  = kartoshka ChIPSI!\n\n  AmE 'French fries' = BrE 'chips'\n  BrE 'crisps' = AmE 'chips'\n\nRasmda YO'G'ON kartoshka — britancha 'chips'.",
-       "speak": "15  Sometimes they buy fish and ......................... .  (RASM: sariq qovurilgan kartoshka bo'laklari)"
+       "speak": "15  Sometimes they buy fish and ......................... .  (RASM: sariq qovurilgan kartoshka bo'laklari)",
+       "speakAnswer": "chips"
       },
       {
        "prompt": "16  This is roast meat, such as ......................... or beef.  (RASM: qovurilgan butun parranda)",
@@ -764,7 +800,8 @@
         "tea"
        ],
        "whyUz": "Rasmda duxovkada qovurilgan butun parranda.\n\n⚠ 'chicken' IKKI MA'NO:\n  'a chicken' (SANALADI) = tovuq (qush)\n  'chicken' (SANALMAYDI) = tovuq go'shti\n\nBu yerda GO'ShT haqida — artiklsiz.",
-       "speak": "16  This is roast meat, such as ......................... or beef.  (RASM: qovurilgan butun parranda)"
+       "speak": "16  This is roast meat, such as ......................... or beef.  (RASM: qovurilgan butun parranda)",
+       "speakAnswer": "chicken"
       },
       {
        "prompt": "17  ... with vegetables and roast ......................... .  (RASM: qovurilgan kartoshkalar)",
@@ -777,7 +814,8 @@
         "tea"
        ],
        "whyUz": "⚠ KO'PLIK '-OES' bilan!\n\n  potato → potatOES  ✓\n  potatos            ✗\n\n⚠ 'roast potatoes' = duxovkada qovurilgan\nkartoshka — yakshanba tushligining ajralmas\nqismi.",
-       "speak": "17  ... with vegetables and roast ......................... .  (RASM: qovurilgan kartoshkalar)"
+       "speak": "17  ... with vegetables and roast ......................... .  (RASM: qovurilgan kartoshkalar)",
+       "speakAnswer": "potatoes"
       }
      ]
     }
@@ -1041,51 +1079,63 @@
      "tasks": [
       {
        "left": "TAURUS (Savr)  —  ! + pul qopi + mashina",
-       "right": "You will have a good week. You will get a lot of money and you will go on a short trip."
+       "right": "You will have a good week. You will get a lot of money and you will go on a short trip.",
+       "speakAnswer": "You will have a good week. You will get a lot of money and you will go on a short trip."
       },
       {
        "left": "GEMINI (Javzo)  —  ? + janjal + xat",
-       "right": "You will have a difficult week. You will argue with someone, but you will receive a letter."
+       "right": "You will have a difficult week. You will argue with someone, but you will receive a letter.",
+       "speakAnswer": "You will have a difficult week. You will argue with someone, but you will receive a letter."
       },
       {
        "left": "CANCER (Saraton)  —  ! + taklifnoma + mashina",
-       "right": "You will have an exciting week. You will get an invitation and you will go on a short trip."
+       "right": "You will have an exciting week. You will get an invitation and you will go on a short trip.",
+       "speakAnswer": "You will have an exciting week. You will get an invitation and you will go on a short trip."
       },
       {
        "left": "LEO (Asad)  —  ! + taklifnoma + ko'ngil ochish",
-       "right": "You will have a pleasant week. You will get an invitation and you will have fun."
+       "right": "You will have a pleasant week. You will get an invitation and you will have fun.",
+       "speakAnswer": "You will have a pleasant week. You will get an invitation and you will have fun."
       },
       {
        "left": "VIRGO (Sunbula)  —  ? + salomatlik + janjal",
-       "right": "You will have a horrible week. You will have health problems and you will argue with someone."
+       "right": "You will have a horrible week. You will have health problems and you will argue with someone.",
+       "speakAnswer": "You will have a horrible week. You will have health problems and you will argue with someone."
       },
       {
        "left": "LIBRA (Mezon)  —  ! + tanishuv + ko'ngil ochish",
-       "right": "You will have a good week. You will meet an interesting person and you will have fun."
+       "right": "You will have a good week. You will meet an interesting person and you will have fun.",
+       "speakAnswer": "You will have a good week. You will meet an interesting person and you will have fun."
       },
       {
        "left": "SCORPIO (Aqrab)  —  ! + xat + pul qopi",
-       "right": "You will have an exciting week. You will receive letters and you will get a lot of money."
+       "right": "You will have an exciting week. You will receive letters and you will get a lot of money.",
+       "speakAnswer": "You will have an exciting week. You will receive letters and you will get a lot of money."
       },
       {
        "left": "SAGITTARIUS (Qavs)  —  ? + xat + janjal",
-       "right": "You will have a horrible week. You will receive a letter and you will argue with a friend."
+       "right": "You will have a horrible week. You will receive a letter and you will argue with a friend.",
+       "speakAnswer": "You will have a horrible week. You will receive a letter and you will argue with a friend."
       },
       {
        "left": "CAPRICORN (Jadiy)  —  ? + salomatlik + janjal",
-       "right": "You will have a difficult week. You will have problems with your health and you will argue with someone."
+       "right": "You will have a difficult week. You will have problems with your health and you will argue with someone.",
+       "speakAnswer": "You will have a difficult week. You will have problems with your health and you will argue with someone."
       },
       {
        "left": "AQUARIUS (Dalv)  —  ! + taklifnoma + tanishuv",
-       "right": "You will have a pleasant week. You will get an invitation and you will meet an interesting person."
+       "right": "You will have a pleasant week. You will get an invitation and you will meet an interesting person.",
+       "speakAnswer": "You will have a pleasant week. You will get an invitation and you will meet an interesting person."
       },
       {
        "left": "PISCES (Hut)  —  ! + xat + mashina",
-       "right": "You will have a good week. You will receive a letter and you will go on a short trip."
+       "right": "You will have a good week. You will receive a letter and you will go on a short trip.",
+       "speakAnswer": "You will have a good week. You will receive a letter and you will go on a short trip."
       },
       {
        "left": "ARIES (Hamal)  —  ! + tanishuv + janjal",
-       "right": "You will have an exciting week. You will meet an interesting person, but you will argue with someone."
+       "right": "You will have an exciting week. You will meet an interesting person, but you will argue with someone.",
+       "speakAnswer": "You will have an exciting week. You will meet an interesting person, but you will argue with someone."
       }
      ]
     }
@@ -1123,7 +1173,8 @@
         "better to have cereal"
        ],
        "whyUz": "⚠ Rasm yonida ✓ — demak MASLAHAT BERILADI:\n'SHOULD'.\n\n⚠ 'should' dan keyin fe'l ASOSIY shaklda:\n  'should EAT'    ✓\n  'should to eat' ✗\n  'should eats'   ✗\n\n⚠ 'fruit' va 'vegetables': 'fruit'\nsanalmaydi, 'vegetableS' — ko'plikda.",
-       "speak": "1  Firstly, you ......................................... .  (RASM: meva-sabzavot savati ✓)"
+       "speak": "1  Firstly, you ......................................... .  (RASM: meva-sabzavot savati ✓)",
+       "speakAnswer": "should eat more fruit and vegetables"
       },
       {
        "prompt": "2  You ......................................... or ...  (RASM: pitsa ✗)",
@@ -1136,7 +1187,8 @@
         "better to have cereal"
        ],
        "whyUz": "⚠ Rasm yonida ✗ — demak INKOR:\n'SHOULDN'T'.\n\n'should not' → 'shouldn't'.\n\n⚠ Inkorda ham fe'l ASOSIY shaklda:\n'shouldn't EAT' ✓",
-       "speak": "2  You ......................................... or ...  (RASM: pitsa ✗)"
+       "speak": "2  You ......................................... or ...  (RASM: pitsa ✗)",
+       "speakAnswer": "shouldn't eat pizza"
       },
       {
        "prompt": "3  ... or ......................................... . They aren't healthy at all.  (RASM: gamburger ✗)",
@@ -1149,7 +1201,8 @@
         "better to have cereal"
        ],
        "whyUz": "⚠ 'or' dan keyin fe'l TAKRORLANMAYDI —\nfaqat ot yoziladi.\n\n⚠ KO'PLIKDA: 'pizza or hamburgerS' —\numumiy ma'noda ovqat nomlari ko'plikda.\n\n⚠ 'not ... AT ALL' = UMUMAN emas.",
-       "speak": "3  ... or ......................................... . They aren't healthy at all.  (RASM: gamburger ✗)"
+       "speak": "3  ... or ......................................... . They aren't healthy at all.  (RASM: gamburger ✗)",
+       "speakAnswer": "hamburgers"
       },
       {
        "prompt": "4  It's ......................................... and ...  (RASM: kosadagi donli nonushta ✓)",
@@ -1162,7 +1215,8 @@
         "hamburgers"
        ],
        "whyUz": "⚠ ✓ belgisi, lekin bu safar 'should' EMAS —\nkitob 'It's ...' deb boshlagan.\n\n⚠ QOLIP: 'It's BETTER TO + fe'l'\n= ... qilgan yaxshiroq.\n\nBu — maslahat berishning 2-usuli.",
-       "speak": "4  It's ......................................... and ...  (RASM: kosadagi donli nonushta ✓)"
+       "speak": "4  It's ......................................... and ...  (RASM: kosadagi donli nonushta ✓)",
+       "speakAnswer": "better to have cereal"
       },
       {
        "prompt": "5  ... and ......................................... for breakfast.  (RASM: bir stakan sut ✓)",
@@ -1175,7 +1229,8 @@
         "hamburgers"
        ],
        "whyUz": "⚠ 'and' dan keyin faqat OT.\n\n⚠ 'milk' SANALMAYDI — artiklsiz.\n\n⚠ 'FOR breakfast' — ovqat mahali oldidan\n'for'.",
-       "speak": "5  ... and ......................................... for breakfast.  (RASM: bir stakan sut ✓)"
+       "speak": "5  ... and ......................................... for breakfast.  (RASM: bir stakan sut ✓)",
+       "speakAnswer": "milk"
       },
       {
        "prompt": "6  You ......................................... or ...  (RASM: bir stakan kola ✗)",
@@ -1188,7 +1243,8 @@
         "hamburgers"
        ],
        "whyUz": "⚠ ✗ belgisi → 'SHOULDN'T'.\n\n⚠ Bu safar fe'l 'drink' — rasmda IChIMLIK.\n\n⚠ 'cola' sanalmaydi — artiklsiz.",
-       "speak": "6  You ......................................... or ...  (RASM: bir stakan kola ✗)"
+       "speak": "6  You ......................................... or ...  (RASM: bir stakan kola ✗)",
+       "speakAnswer": "shouldn't drink cola"
       },
       {
        "prompt": "7  ... or ......................................... because they are full of sugar.  (RASM: sariq gazlangan ichimlik ✗)",
@@ -1201,7 +1257,8 @@
         "hamburgers"
        ],
        "whyUz": "⚠ 'lemonade' — Britaniyada GAZLANGAN\nshirin ichimlik (rasmda sariq gazli suv).\n\n⚠ AmE 'lemonade' — limon sharbati\n(gazsiz)! Ikki mamlakatda boshqacha.\n\n'full of sugar' = shakarga to'la.",
-       "speak": "7  ... or ......................................... because they are full of sugar.  (RASM: sariq gazlangan ichimlik ✗)"
+       "speak": "7  ... or ......................................... because they are full of sugar.  (RASM: sariq gazlangan ichimlik ✗)",
+       "speakAnswer": "lemonade"
       },
       {
        "prompt": "8  Why ......................................... instead?  (RASM: bir stakan suv ✓)",
@@ -1214,7 +1271,8 @@
         "hamburgers"
        ],
        "whyUz": "⚠⚠ MASLAHATNING 4-USULI:\n'WHY DON'T YOU + fe'l?'\n= ... qilsangiz-chi?\n\n⚠ Fe'l ASOSIY shaklda:\n  'Why don't you DRINK' ✓\n  'Why don't you to drink' ✗\n\n⚠ 'instead' gap OXIRIDA turadi.",
-       "speak": "8  Why ......................................... instead?  (RASM: bir stakan suv ✓)"
+       "speak": "8  Why ......................................... instead?  (RASM: bir stakan suv ✓)",
+       "speakAnswer": "don't you drink water"
       },
       {
        "prompt": "9  Also, it ......................................... or ...  (RASM: shokoladlar ✗)",
@@ -1227,7 +1285,8 @@
         "hamburgers"
        ],
        "whyUz": "⚠⚠ MASLAHATNING 3-USULI:\n'It ISN'T A GOOD IDEA TO + fe'l'\n= ... qilish yaxshi fikr emas.\n\n⚠ 4-bandda 'It's BETTER TO' edi (✓ uchun),\nbu yerda ✗ — shuning uchun INKOR shakl.\n\n⚠ 'an idea' SANALADI — 'a good idea'.",
-       "speak": "9  Also, it ......................................... or ...  (RASM: shokoladlar ✗)"
+       "speak": "9  Also, it ......................................... or ...  (RASM: shokoladlar ✗)",
+       "speakAnswer": "isn't a good idea to eat chocolates"
       },
       {
        "prompt": "10  ... or ......................................... . You will only get fat.  (RASM: tort ✗)",
@@ -1240,7 +1299,8 @@
         "hamburgers"
        ],
        "whyUz": "⚠ KO'PLIKDA: 'chocolates or cakeS'.\n\n⚠ 'to get fat' = semirmoq.\n'get' + sifat = holatga o'tmoq:\n  get fat  — semirmoq\n  get tired — charchamoq\n  get old  — qarimoq\n\n⚠ 'will only get fat' — 'only' fe'ldan\noldin.",
-       "speak": "10  ... or ......................................... . You will only get fat.  (RASM: tort ✗)"
+       "speak": "10  ... or ......................................... . You will only get fat.  (RASM: tort ✗)",
+       "speakAnswer": "cakes"
       },
       {
        "prompt": "11  You ......................................... .  (RASM: mashq qilayotgan odam ✓)",
@@ -1253,7 +1313,8 @@
         "hamburgers"
        ],
        "whyUz": "⚠ ✓ belgisi → 'SHOULD'.\n\n⚠⚠ 'DO exercise' — 'MAKE' EMAS!\n  'do exercise'   ✓\n  'make exercise' ✗\n\n⚠ 'exercise' bu ma'noda SANALMAYDI:\n'more exercise' ('more exercises' ✗).",
-       "speak": "11  You ......................................... .  (RASM: mashq qilayotgan odam ✓)"
+       "speak": "11  You ......................................... .  (RASM: mashq qilayotgan odam ✓)",
+       "speakAnswer": "should do more exercise"
       },
       {
        "prompt": "12  Why don't you leave the car at home and ......................................... to work?  (RASM: piyoda ketayotgan odam ✓)",
@@ -1266,7 +1327,8 @@
         "hamburgers"
        ],
        "whyUz": "⚠ 'Why don't you leave ... and WALK' —\n'and' dan keyin fe'l ASOSIY shaklda\n(chunki 'don't you' ikkalasiga tegishli).\n\n⚠ 'walk TO work' — 'to' bor;\nlekin 'go home' da 'to' YO'Q.\n\n'to leave' = qoldirmoq; ketmoq.",
-       "speak": "12  Why don't you leave the car at home and ......................................... to work?  (RASM: piyoda ketayotgan odam ✓)"
+       "speak": "12  Why don't you leave the car at home and ......................................... to work?  (RASM: piyoda ketayotgan odam ✓)",
+       "speakAnswer": "walk"
       }
      ]
     }

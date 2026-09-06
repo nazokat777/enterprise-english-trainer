@@ -81,7 +81,8 @@
         "a In a safari park.",
         "b In an aquarium."
        ],
-       "whyUz": "A-rasmda SHERLAR erkin yuribdi → SAFARI PARK.\n'an aquarium' = akvarium (baliqlar uchun) — mos emas.\nHikoyada joy nomi ham bor: Longleat Safari Park."
+       "whyUz": "A-rasmda SHERLAR erkin yuribdi → SAFARI PARK.\n'an aquarium' = akvarium (baliqlar uchun) — mos emas.\nHikoyada joy nomi ham bor: Longleat Safari Park.",
+       "speakAnswer": "a In a safari park."
       },
       {
        "prompt": "2  How do the lions look in picture A?",
@@ -91,7 +92,8 @@
         "a Friendly.",
         "b Scary."
        ],
-       "whyUz": "Sherlar mashinani o'rab olgan, tishlari ko'rinadi →\nQO'RQINChLI.\n'scary' = qo'rqinchli;  'friendly' = do'stona.\n77-betdagi matnda ham: 'very SCARY animals'."
+       "whyUz": "Sherlar mashinani o'rab olgan, tishlari ko'rinadi →\nQO'RQINChLI.\n'scary' = qo'rqinchli;  'friendly' = do'stona.\n77-betdagi matnda ham: 'very SCARY animals'.",
+       "speakAnswer": "b Scary."
       },
       {
        "prompt": "3  What is coming out of the engine in picture B?",
@@ -101,7 +103,8 @@
         "a Fire.",
         "b Smoke."
        ],
-       "whyUz": "B-rasmda dvigateldan kulrang TUTUN chiqyapti — hali olov emas.\nOlov keyingi rasmda (C) paydo bo'ladi.\n77-betdagi matnda: 'SMOKE began to come out of the engine'."
+       "whyUz": "B-rasmda dvigateldan kulrang TUTUN chiqyapti — hali olov emas.\nOlov keyingi rasmda (C) paydo bo'ladi.\n77-betdagi matnda: 'SMOKE began to come out of the engine'.",
+       "speakAnswer": "b Smoke."
       },
       {
        "prompt": "4  What's wrong with the front of the car in picture C?",
@@ -111,7 +114,8 @@
         "a It's on fire.",
         "b There's a lion on it."
        ],
-       "whyUz": "C-rasmda mashinaning oldi YONYAPTI.\n77-betdagi matnda: 'the front of the car was ON FIRE'.\n'What's wrong with ...?' = ...da nima yomon?"
+       "whyUz": "C-rasmda mashinaning oldi YONYAPTI.\n77-betdagi matnda: 'the front of the car was ON FIRE'.\n'What's wrong with ...?' = ...da nima yomon?",
+       "speakAnswer": "a It's on fire."
       },
       {
        "prompt": "5  What does a park ranger do?",
@@ -121,7 +125,8 @@
         "a He looks after a park.",
         "b He puts out fires."
        ],
-       "whyUz": "'a park ranger' = bog'ni QO'RIQLAYDIGAN va PARVARISH\nqiladigan xodim.\n'look after' = qaramoq, parvarish qilmoq.\n'put out fires' = o't o'chirmoq — bu o't o'chiruvchining ishi\n('a firefighter')."
+       "whyUz": "'a park ranger' = bog'ni QO'RIQLAYDIGAN va PARVARISH\nqiladigan xodim.\n'look after' = qaramoq, parvarish qilmoq.\n'put out fires' = o't o'chirmoq — bu o't o'chiruvchining ishi\n('a firefighter').",
+       "speakAnswer": "a He looks after a park."
       },
       {
        "prompt": "6  How do the people feel in picture C?",
@@ -131,7 +136,8 @@
         "a Happy.",
         "b Scared."
        ],
-       "whyUz": "Mashina yonyapti, chiqib bo'lmaydi → QO'RQQAN.\n'scared' = qo'rqqan.\n77-betdagi matnda: 'They were both really SCARED'."
+       "whyUz": "Mashina yonyapti, chiqib bo'lmaydi → QO'RQQAN.\n'scared' = qo'rqqan.\n77-betdagi matnda: 'They were both really SCARED'.",
+       "speakAnswer": "b Scared."
       },
       {
        "prompt": "7  How do they feel in picture F?",
@@ -141,7 +147,8 @@
         "a Shocked but happy.",
         "b Tired and scared."
        ],
-       "whyUz": "F-rasmda quchoqlashgan va jilmayishyapti — qutulishdi.\nLekin hali sarosimadalar.\n77-betdagi matnda: 'They were still SHOCKED, but HAPPY'.\nUnit nomiga mos: 'All's Well that Ends Well'."
+       "whyUz": "F-rasmda quchoqlashgan va jilmayishyapti — qutulishdi.\nLekin hali sarosimadalar.\n77-betdagi matnda: 'They were still SHOCKED, but HAPPY'.\nUnit nomiga mos: 'All's Well that Ends Well'.",
+       "speakAnswer": "a Shocked but happy."
       }
      ]
     },
@@ -293,84 +300,96 @@
        "prompt": "1  go  →  ............",
        "answer": "went",
        "promptUz": "NOTO'G'RI fe'l",
-       "whyUz": "go → WENT.\nMatnda: 'Claire and Greg WENT to Longleat Safari Park'."
+       "whyUz": "go → WENT.\nMatnda: 'Claire and Greg WENT to Longleat Safari Park'.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "2  close  →  ............",
        "answer": "closed",
        "promptUz": "Oxiri -E → faqat + D",
        "whyUz": "close → closed (to'g'ri fe'l).\nMatnda: 'they CLOSED the car windows tightly'.",
-       "speak": "2  close  →  ............"
+       "speak": "2  close  →  ............",
+       "speakAnswer": "closed"
       },
       {
        "prompt": "3  come  →  ............",
        "answer": "came",
        "promptUz": "NOTO'G'RI fe'l",
        "whyUz": "come → CAME.\nMatnda: 'a park ranger CAME along the road'.\n'become → became' bilan bir xil naqsh.",
-       "speak": "3  come  →  ............"
+       "speak": "3  come  →  ............",
+       "speakAnswer": "came"
       },
       {
        "prompt": "4  see  →  ............",
        "answer": "saw",
        "promptUz": "NOTO'G'RI fe'l",
        "whyUz": "see → SAW, o'qilishi /sɔː/.\nMatnda: 'they SAW some lions'.\nDIQQAT: 'seed' XATO.",
-       "speak": "4  see  →  ............"
+       "speak": "4  see  →  ............",
+       "speakAnswer": "saw"
       },
       {
        "prompt": "5  stop  →  ............",
        "answer": "stopped",
        "promptUz": "Undosh IKKILANADI",
        "whyUz": "stop → stoPPed.\nBir bo'g'inli, oxiri UNDOSH+UNLI+UNDOSH → 'p' ikkilanadi.\nMatnda: 'Greg STOPPED the car'.",
-       "speak": "5  stop  →  ............"
+       "speak": "5  stop  →  ............",
+       "speakAnswer": "stopped"
       },
       {
        "prompt": "6  chase  →  ............",
        "answer": "chased",
        "promptUz": "Oxiri -E → faqat + D",
        "whyUz": "chase → chased (to'g'ri fe'l).\nMatnda: 'another jeep arrived and CHASED AWAY the lions'.",
-       "speak": "6  chase  →  ............"
+       "speak": "6  chase  →  ............",
+       "speakAnswer": "chased"
       },
       {
        "prompt": "7  start  →  ............",
        "answer": "started",
        "promptUz": "Oddiy + ED",
        "whyUz": "start → started.\n-ed /ɪd/ deb o'qiladi (oxiri 't').\nMatnda: 'STARTED taking pictures'.",
-       "speak": "7  start  →  ............"
+       "speak": "7  start  →  ............",
+       "speakAnswer": "started"
       },
       {
        "prompt": "8  roar  →  ............",
        "answer": "roared",
        "promptUz": "Oddiy + ED",
        "whyUz": "roar → roared.\nMatnda: 'The lions ROARED loudly'.",
-       "speak": "8  roar  →  ............"
+       "speak": "8  roar  →  ............",
+       "speakAnswer": "roared"
       },
       {
        "prompt": "9  know  →  ............",
        "answer": "knew",
        "promptUz": "NOTO'G'RI fe'l",
        "whyUz": "know → KNEW.\nDIQQAT: boshidagi 'k' O'QILMAYDI — /njuː/.\nMatnda: 'They KNEW they were very lucky'.",
-       "speak": "9  know  →  ............"
+       "speak": "9  know  →  ............",
+       "speakAnswer": "knew"
       },
       {
        "prompt": "10  try  →  ............",
        "answer": "tried",
        "promptUz": "UNDOSH + Y → IED",
        "whyUz": "try → TRIED ('r' undosh + 'y' → -IED).\nMatnda: 'He TRIED to start the car'.",
-       "speak": "10  try  →  ............"
+       "speak": "10  try  →  ............",
+       "speakAnswer": "tried"
       },
       {
        "prompt": "11  begin  →  ............",
        "answer": "began",
        "promptUz": "NOTO'G'RI fe'l",
        "whyUz": "begin → BEGAN.\nMatnda: 'smoke BEGAN to come out of the engine'.\n'sing → sang' bilan bir xil naqsh.",
-       "speak": "11  begin  →  ............"
+       "speak": "11  begin  →  ............",
+       "speakAnswer": "began"
       },
       {
        "prompt": "12  jump  →  ............",
        "answer": "jumped",
        "promptUz": "Oddiy + ED",
        "whyUz": "jump → jumped.\nMatnda: 'Claire and Greg JUMPED OUT of the car'.",
-       "speak": "12  jump  →  ............"
+       "speak": "12  jump  →  ............",
+       "speakAnswer": "jumped"
       }
      ]
     },
@@ -395,7 +414,8 @@
         "roared"
        ],
        "whyUz": "'closed the windows TIGHTLY' = oynalarni mahkam yopdi.\n'tight' (mahkam) + -ly → RAVISH.\nGap: When they drove into the park, they closed the car\nwindows tightly.",
-       "speak": "1  closed the car windows ............"
+       "speak": "1  closed the car windows ............",
+       "speakAnswer": "tightly"
       },
       {
        "prompt": "2  ............ loudly",
@@ -407,7 +427,8 @@
         "tightly"
        ],
        "whyUz": "'ROARED loudly' = baland ovozda bo'kirdi.\n'loudly' — ravish, fe'lga tegishli.\nGap: The lions roared loudly.",
-       "speak": "2  ............ loudly"
+       "speak": "2  ............ loudly",
+       "speakAnswer": "roared"
       },
       {
        "prompt": "3  ............ the horn",
@@ -419,7 +440,8 @@
         "tightly"
        ],
        "whyUz": "'BEEPED the horn' = signal chaldi.\nGap: She beeped the horn and shouted for help.",
-       "speak": "3  ............ the horn"
+       "speak": "3  ............ the horn",
+       "speakAnswer": "beeped"
       },
       {
        "prompt": "4  ............ desperately",
@@ -431,7 +453,8 @@
         "roared"
        ],
        "whyUz": "'SCREAMED desperately' = jon holatda qichqirdi.\n'to scream' = chinqirmoq (qo'rquvdan).\nGap: \"We'll burn alive!\" Claire screamed desperately.",
-       "speak": "4  ............ desperately"
+       "speak": "4  ............ desperately",
+       "speakAnswer": "screamed"
       },
       {
        "prompt": "5  ............ alive",
@@ -443,7 +466,8 @@
         "tightly"
        ],
        "whyUz": "'BURN alive' = tiriklayin yonmoq.\nDIQQAT: bu yerda fe'l ASOSIY shaklda —\nchunki 'we'll' dan keyin keladi.\nGap: We'll burn alive!",
-       "speak": "5  ............ alive"
+       "speak": "5  ............ alive",
+       "speakAnswer": "burn"
       },
       {
        "prompt": "6  ............ ranger",
@@ -455,7 +479,8 @@
         "roared"
        ],
        "whyUz": "'PARK ranger' = park qo'riqchisi.\n'park' bu yerda OT sifatida boshqa otni aniqlaydi\n(qo'shma ot).\nGap: A park ranger came along the road in his jeep.",
-       "speak": "6  ............ ranger"
+       "speak": "6  ............ ranger",
+       "speakAnswer": "park"
       },
       {
        "prompt": "7  ............ animals",
@@ -467,7 +492,8 @@
         "roared"
        ],
        "whyUz": "'SCARY animals' = qo'rqinchli hayvonlar.\nDIQQAT: 'scary' (narsa qo'rqinchli) ↔ 'scared' (odam qo'rqqan).\nGap: They're beautiful, but very scary animals.",
-       "speak": "7  ............ animals"
+       "speak": "7  ............ animals",
+       "speakAnswer": "scary"
       },
       {
        "prompt": "8  ............ away the lions",
@@ -479,7 +505,8 @@
         "roared"
        ],
        "whyUz": "'CHASED AWAY the lions' = sherlarni quvib yubordi.\n'chase away' — frazali fe'l.\nGap: Another jeep arrived and chased away the lions.",
-       "speak": "8  ............ away the lions"
+       "speak": "8  ............ away the lions",
+       "speakAnswer": "chased"
       },
       {
        "prompt": "9  ............ to be alive",
@@ -491,7 +518,8 @@
         "roared"
        ],
        "whyUz": "'LUCKY to be alive' = tirik qolgani uchun omadli.\n'lucky' = omadli;  'luck' = omad.\nGap: They knew they were very lucky to be alive.",
-       "speak": "9  ............ to be alive"
+       "speak": "9  ............ to be alive",
+       "speakAnswer": "lucky"
       }
      ]
     },
@@ -516,7 +544,8 @@
         "on"
        ],
        "whyUz": "'drove INTO the park' = parkka haydab kirdi.\nINTO — ichkariga HARAKAT.\nDIQQAT: 'in the park' bo'lsa — parkning ICHIDA bo'lish\n(harakat emas).",
-       "speak": "1  they drove ............ the park"
+       "speak": "1  they drove ............ the park",
+       "speakAnswer": "into"
       },
       {
        "prompt": "2  the car was ............ fire",
@@ -528,7 +557,8 @@
         "in"
        ],
        "whyUz": "'ON fire' = yonayotgan — o'zgarmas ibora.\n'in fire' XATO.",
-       "speak": "2  the car was ............ fire"
+       "speak": "2  the car was ............ fire",
+       "speakAnswer": "on"
       },
       {
        "prompt": "3  they jumped ............ ............ the car",
@@ -540,7 +570,8 @@
         "on"
        ],
        "whyUz": "'jump OUT OF the car' = mashinadan sakrab chiqmoq.\nIKKI so'zdan iborat predlog.\n'INTO' ning aksi:\n  jump INTO the car   (ichkariga)\n  jump OUT OF the car (tashqariga)",
-       "speak": "3  they jumped ............ ............ the car"
+       "speak": "3  they jumped ............ ............ the car",
+       "speakAnswer": "out of"
       },
       {
        "prompt": "4  the lions were ............ it",
@@ -552,7 +583,8 @@
         "in"
        ],
        "whyUz": "'AROUND it' = uning atrofida.\nShuning uchun chiqib bo'lmasdi.",
-       "speak": "4  the lions were ............ it"
+       "speak": "4  the lions were ............ it",
+       "speakAnswer": "around"
       },
       {
        "prompt": "5  she shouted ............ help",
@@ -564,7 +596,8 @@
         "on"
        ],
        "whyUz": "'shout FOR help' = yordam so'rab qichqirmoq.\n'for' — MAQSAD bildiradi.\n8-band bilan solishtiring — 'for' u yerda ham bor.",
-       "speak": "5  she shouted ............ help"
+       "speak": "5  she shouted ............ help",
+       "speakAnswer": "for"
       },
       {
        "prompt": "6  he came ............ the road ............ his jeep  [1-bo'shliq]",
@@ -576,7 +609,8 @@
         "on"
        ],
        "whyUz": "'come ALONG the road' = yo'l bo'ylab kelmoq.\n'along' = bo'ylab (uzunasiga).",
-       "speak": "6  he came ............ the road ............ his jeep  [1-bo'shliq]"
+       "speak": "6  he came ............ the road ............ his jeep  [1-bo'shliq]",
+       "speakAnswer": "along"
       },
       {
        "prompt": "6  ... ............ his jeep  [2-bo'shliq]",
@@ -588,7 +622,8 @@
         "on"
        ],
        "whyUz": "'IN his jeep' = jipida (ichida o'tirgan).\nDIQQAT — TRANSPORT PREDLOGLARI:\n  BY car/jeep  — umumiy usul ('by jeep')\n  IN a car/jeep — aniq mashina ichida\n  ON a bus/train — katta transportda",
-       "speak": "6  ... ............ his jeep  [2-bo'shliq]"
+       "speak": "6  ... ............ his jeep  [2-bo'shliq]",
+       "speakAnswer": "in"
       },
       {
        "prompt": "7  they ran ............ the jeep",
@@ -600,7 +635,8 @@
         "in"
        ],
        "whyUz": "'run TOWARDS the jeep' = jip tomon yugurmoq.\n'towards' = ...tomon (YO'NALISh).\nDIQQAT: 'to' ham to'g'ri, lekin 'towards' harakat\nyo'nalishini kuchliroq ta'kidlaydi.",
-       "speak": "7  they ran ............ the jeep"
+       "speak": "7  they ran ............ the jeep",
+       "speakAnswer": "towards"
       },
       {
        "prompt": "8  they thanked him ............ his help",
@@ -612,7 +648,8 @@
         "on"
        ],
        "whyUz": "'thank somebody FOR something' = ...uchun rahmat aytmoq.\n'for' SHART.\n5-band bilan bir xil predlog — ro'yxatda 8 ta so'z,\n9 ta bo'shliq bo'lgani uchun 'for' ikki marta.",
-       "speak": "8  they thanked him ............ his help"
+       "speak": "8  they thanked him ............ his help",
+       "speakAnswer": "for"
       }
      ]
     }
@@ -647,7 +684,8 @@
         "white"
        ],
        "whyUz": "'that SUNNY day' = o'sha quyoshli kun.\n'sun' + -y → sifat.\nTo'y kuni — quyoshli, yaxshi ob-havo.",
-       "speak": "1  Everything was ready for Sally's wedding that ............ day."
+       "speak": "1  Everything was ready for Sally's wedding that ............ day.",
+       "speakAnswer": "sunny"
       },
       {
        "prompt": "2  She put on her ............ silk dress ...",
@@ -659,7 +697,8 @@
         "shocking"
        ],
        "whyUz": "'her WHITE silk dress' = oq ipak ko'ylagi.\nAn'anaviy to'y ko'ylagi OQ rangda.\n'silk' = ipak (ot, lekin sifat vazifasida).\nSifatlar tartibi: rang (white) → material (silk).",
-       "speak": "2  She put on her ............ silk dress ..."
+       "speak": "2  She put on her ............ silk dress ...",
+       "speakAnswer": "white"
       },
       {
        "prompt": "3  Just then, a ............ bouquet of flowers arrived for her.",
@@ -671,7 +710,8 @@
         "white"
        ],
        "whyUz": "'a BEAUTIFUL bouquet' = go'zal gul dastasi.\n'a bouquet OF flowers' — 'of' shart.\n'Just then' — 77-betdagi ketma-ketlik so'zi.",
-       "speak": "3  Just then, a ............ bouquet of flowers arrived for her."
+       "speak": "3  Just then, a ............ bouquet of flowers arrived for her.",
+       "speakAnswer": "beautiful"
       },
       {
        "prompt": "4  Sally had a ............ smile on her face.",
@@ -683,7 +723,8 @@
         "shocking"
        ],
        "whyUz": "'a HAPPY smile' = baxtli tabassum.\nGul kelgani uchun xursand edi.\n'on her face' = yuzida.",
-       "speak": "4  Sally had a ............ smile on her face."
+       "speak": "4  Sally had a ............ smile on her face.",
+       "speakAnswer": "happy"
       },
       {
        "prompt": "5  Suddenly, she screamed as she read the ............ message on the bouquet.",
@@ -695,7 +736,8 @@
         "white"
        ],
        "whyUz": "'the SHOCKING message' = hayratlanarli xabar.\n'shocking' — u qichqirishga sabab bo'lgan.\nDIQQAT: bu — hikoyadagi BURILISh nuqtasi.\nOldingi to'rt sifat IJOBIY, bu esa SALBIY.\n'as' bu yerda = ...ganda.",
-       "speak": "5  Suddenly, she screamed as she read the ............ message on the bouquet."
+       "speak": "5  Suddenly, she screamed as she read the ............ message on the bouquet.",
+       "speakAnswer": "shocking"
       }
      ]
     }
@@ -729,7 +771,8 @@
         "B shouted",
         "C screamed"
        ],
-       "whyUz": "'a very FUNNY story' → odamlar KULADI → LAUGHED.\n'shouted' = qichqirdi;  'screamed' = chinqirdi —\nikkalasi ham kulgili hikoyaga mos kelmaydi.\nCoursebook 77-betda: 'Claire LAUGHED'."
+       "whyUz": "'a very FUNNY story' → odamlar KULADI → LAUGHED.\n'shouted' = qichqirdi;  'screamed' = chinqirdi —\nikkalasi ham kulgili hikoyaga mos kelmaydi.\nCoursebook 77-betda: 'Claire LAUGHED'.",
+       "speakAnswer": "A laughed"
       },
       {
        "prompt": "2  There is a beautiful ............ from the top of the hill.",
@@ -740,7 +783,8 @@
         "B lake",
         "C view"
        ],
-       "whyUz": "'a beautiful VIEW' = go'zal manzara.\n'FROM the top of the hill' — 'from' manzara qayerdan\nko'rinishini ko'rsatadi → VIEW.\nCoursebook 78-betda ham: 'The VIEW from there was beautiful!'\n'a field' = dala;  'a lake' = ko'l — ular manzara EMAS."
+       "whyUz": "'a beautiful VIEW' = go'zal manzara.\n'FROM the top of the hill' — 'from' manzara qayerdan\nko'rinishini ko'rsatadi → VIEW.\nCoursebook 78-betda ham: 'The VIEW from there was beautiful!'\n'a field' = dala;  'a lake' = ko'l — ular manzara EMAS.",
+       "speakAnswer": "C view"
       },
       {
        "prompt": "3  Tom ............ the hole in the roof.",
@@ -751,7 +795,8 @@
         "B mended",
         "C corrected"
        ],
-       "whyUz": "'MENDED the hole' = teshikni tuzatdi.\n'to mend' = ta'mirlamoq (buyum, teshik uchun).\nCoursebook 80-betda: 'they quickly MENDED the hole'.\nDIQQAT: 'to correct' = XATONI to'g'rilamoq (matn, javob) —\nteshik uchun ishlatilmaydi."
+       "whyUz": "'MENDED the hole' = teshikni tuzatdi.\n'to mend' = ta'mirlamoq (buyum, teshik uchun).\nCoursebook 80-betda: 'they quickly MENDED the hole'.\nDIQQAT: 'to correct' = XATONI to'g'rilamoq (matn, javob) —\nteshik uchun ishlatilmaydi.",
+       "speakAnswer": "B mended"
       },
       {
        "prompt": "4  Rain began to ............ heavily from the dark sky.",
@@ -762,7 +807,8 @@
         "B drop",
         "C run"
        ],
-       "whyUz": "'rain began to FALL' = yomg'ir yog'a boshladi.\nCoursebook 80-betda: 'heavy rain began to FALL'.\nDIQQAT: 'fall' bu yerda YOG'MOQ ma'nosida\n(78-betda esa YIQILMOQ ma'nosida edi).\n'heavily' — RAVISh."
+       "whyUz": "'rain began to FALL' = yomg'ir yog'a boshladi.\nCoursebook 80-betda: 'heavy rain began to FALL'.\nDIQQAT: 'fall' bu yerda YOG'MOQ ma'nosida\n(78-betda esa YIQILMOQ ma'nosida edi).\n'heavily' — RAVISh.",
+       "speakAnswer": "A fall"
       },
       {
        "prompt": "5  When we went to the zoo, I ............ photographs of all the animals.",
@@ -773,7 +819,8 @@
         "B took",
         "C did"
        ],
-       "whyUz": "'TAKE photographs' = suratga olmoq — turg'un birikma.\ntake → TOOK (noto'g'ri fe'l).\nCoursebook 77-betda: 'started TAKING PICTURES of them'.\nDIQQAT: 'make photographs' va 'do photographs' XATO."
+       "whyUz": "'TAKE photographs' = suratga olmoq — turg'un birikma.\ntake → TOOK (noto'g'ri fe'l).\nCoursebook 77-betda: 'started TAKING PICTURES of them'.\nDIQQAT: 'make photographs' va 'do photographs' XATO.",
+       "speakAnswer": "B took"
       },
       {
        "prompt": "6  Simon ............ the horn and waved goodbye.",
@@ -784,7 +831,8 @@
         "B touched",
         "C hit"
        ],
-       "whyUz": "'BEEP the horn' = signal chalmoq — turg'un birikma.\nCoursebook 77-betda: 'She BEEPED THE HORN'.\n'to touch' = tegmoq;  'to hit' = urmoq —\nikkalasi ham signal uchun ishlatilmaydi.\n'to wave goodbye' = qo'l silkib xayrlashmoq."
+       "whyUz": "'BEEP the horn' = signal chalmoq — turg'un birikma.\nCoursebook 77-betda: 'She BEEPED THE HORN'.\n'to touch' = tegmoq;  'to hit' = urmoq —\nikkalasi ham signal uchun ishlatilmaydi.\n'to wave goodbye' = qo'l silkib xayrlashmoq.",
+       "speakAnswer": "A beeped"
       }
      ]
     },
@@ -809,7 +857,8 @@
         "carefully"
        ],
        "whyUz": "Uy yong'ini 'wonderful' (ajoyib) BO'LOLMAYDI →\n'HORRIBLE' (dahshatli).\nCoursebook 78-betda: 'It was a HORRIBLE experience!'\n'catch fire' = yona boshlamoq;  catch → CAUGHT.",
-       "speak": "2  It was a WONDERFUL experience when my house caught fire.  →  ?"
+       "speak": "2  It was a WONDERFUL experience when my house caught fire.  →  ?",
+       "speakAnswer": "horrible"
       },
       {
        "prompt": "3  He put the vase down CARELESSLY because he didn't want to break it.  →  ?",
@@ -821,7 +870,8 @@
         "horrible"
        ],
        "whyUz": "'didn't want to break it' → EHTIYOTKORLIK bilan qo'ygan →\n'CAREFULLY'.\n'carelessly' (ehtiyotsizlik bilan) — mantiqiy ZIDDIYAT.\nIkkalasi ham RAVISh.\n'a vase' = vaza.",
-       "speak": "3  He put the vase down CARELESSLY because he didn't want to break it.  →  ?"
+       "speak": "3  He put the vase down CARELESSLY because he didn't want to break it.  →  ?",
+       "speakAnswer": "carefully"
       },
       {
        "prompt": "4  They SLOWLY jumped out of the burning car and ran to safety.  →  ?",
@@ -833,7 +883,8 @@
         "horrible"
        ],
        "whyUz": "Yonayotgan mashinadan TEZ chiqiladi → 'QUICKLY'.\n'slowly' (sekin) — mantiqiy ZIDDIYAT.\nCoursebook 77-betda: 'jumped out of the car QUICKLY'.\n'run to safety' = xavfsiz joyga yugurmoq.",
-       "speak": "4  They SLOWLY jumped out of the burning car and ran to safety.  →  ?"
+       "speak": "4  They SLOWLY jumped out of the burning car and ran to safety.  →  ?",
+       "speakAnswer": "quickly"
       },
       {
        "prompt": "5  \"Please, someone help me!\" John shouted HAPPILY.  →  ?",
@@ -845,7 +896,8 @@
         "carefully"
        ],
        "whyUz": "Yordam so'rab qichqirish 'happily' (xursand) BO'LMAYDI →\n'DESPERATELY' (jon holatda).\nCoursebook 77-betda: 'Claire screamed DESPERATELY'.\n80-betda ham: 'Please, someone help me!'\nIkkalasi ham RAVISh.",
-       "speak": "5  \"Please, someone help me!\" John shouted HAPPILY.  →  ?"
+       "speak": "5  \"Please, someone help me!\" John shouted HAPPILY.  →  ?",
+       "speakAnswer": "desperately"
       },
       {
        "prompt": "6  Elaine felt BRAVE because the lions were very scary.  →  ?",
@@ -857,7 +909,8 @@
         "carefully"
        ],
        "whyUz": "Sherlar qo'rqinchli bo'lsa, 'brave' (jasur) emas,\n'NERVOUS' (asabiy, xavotirli) his qilinadi.\n'because' — sabab: sherlar qo'rqinchli edi.\nIkkalasi ham SIFAT.\n'feel + SIFAT' — 49-betdagi qoida.",
-       "speak": "6  Elaine felt BRAVE because the lions were very scary.  →  ?"
+       "speak": "6  Elaine felt BRAVE because the lions were very scary.  →  ?",
+       "speakAnswer": "nervous"
       }
      ]
     },
@@ -877,35 +930,40 @@
        "answer": "We had a wonderful time at the beach last summer.",
        "promptUz": "Ajoyib tajriba haqida",
        "whyUz": "'wonderful' — SIFAT, otdan OLDIN turibdi\n('a wonderful time').\n2a-mashqda u yong'in haqida edi — noto'g'ri kontekst.\nBu yerda ijobiy voqea haqida — to'g'ri.",
-       "speak": "wonderful  (sifat)"
+       "speak": "wonderful  (sifat)",
+       "speakAnswer": "We had a wonderful time at the beach last summer."
       },
       {
        "prompt": "carelessly  (ravish)",
        "answer": "He drove carelessly and had an accident.",
        "promptUz": "Ehtiyotsizlik natijasi",
        "whyUz": "'carelessly' — RAVISh, 'drove' fe'lidan keyin.\n2a-mashqda u vazani ehtiyot bilan qo'yish haqida edi —\nziddiyat. Bu yerda esa natija mos keladi (halokat).",
-       "speak": "carelessly  (ravish)"
+       "speak": "carelessly  (ravish)",
+       "speakAnswer": "He drove carelessly and had an accident."
       },
       {
        "prompt": "slowly  (ravish)",
        "answer": "The old man walked slowly down the street.",
        "promptUz": "Sekin harakat haqida",
        "whyUz": "'slowly' — RAVISh, 'walked' fe'lidan keyin.\n2a-mashqda yonayotgan mashina bilan ziddiyat edi.\nBu yerda keksa odam — mantiqan to'g'ri.",
-       "speak": "slowly  (ravish)"
+       "speak": "slowly  (ravish)",
+       "speakAnswer": "The old man walked slowly down the street."
       },
       {
        "prompt": "happily  (ravish)",
        "answer": "The children played happily in the garden.",
        "promptUz": "Xursandchilik bilan qilingan ish",
        "whyUz": "'happily' — RAVISh, 'played' fe'lidan keyin.\n2a-mashqda yordam so'rash bilan ziddiyat edi.\nBu yerda bolalar o'yini — mos keladi.",
-       "speak": "happily  (ravish)"
+       "speak": "happily  (ravish)",
+       "speakAnswer": "The children played happily in the garden."
       },
       {
        "prompt": "brave  (sifat)",
        "answer": "Everyone was very proud of that brave little boy.",
        "promptUz": "Jasorat ko'rsatgan odam haqida",
        "whyUz": "'brave' — SIFAT, otdan OLDIN turibdi.\nCoursebook 80-betdagi Hans Brinker hikoyasining\noxirgi gapi.\n2a-mashqda sherlar oldida — ziddiyat edi.",
-       "speak": "brave  (sifat)"
+       "speak": "brave  (sifat)",
+       "speakAnswer": "Everyone was very proud of that brave little boy."
       }
      ]
     },
@@ -930,7 +988,8 @@
         "frightened"
        ],
        "whyUz": "'lovely' = yoqimli → 'GORGEOUS' = ajoyib, go'zal.\nCoursebook 77-betda: 'One GORGEOUS, sunny day'.\nIkkalasi ham SIFAT.\n'so' — natija bog'lovchisi.",
-       "speak": "2  It was a LOVELY day so we went to the beach.  →  ?"
+       "speak": "2  It was a LOVELY day so we went to the beach.  →  ?",
+       "speakAnswer": "gorgeous"
       },
       {
        "prompt": "3  Suddenly the sky got dark and it STARTED to rain.  →  ?",
@@ -942,7 +1001,8 @@
         "gorgeous"
        ],
        "whyUz": "'started' = boshladi → 'BEGAN' = boshladi.\nCoursebook 80-betda: 'heavy rain BEGAN to fall'.\nDIQQAT: FE'L ShAKLI ham saqlanadi —\nikkalasi ham O'TGAN zamonda.\nbegin → BEGAN (noto'g'ri fe'l).",
-       "speak": "3  Suddenly the sky got dark and it STARTED to rain.  →  ?"
+       "speak": "3  Suddenly the sky got dark and it STARTED to rain.  →  ?",
+       "speakAnswer": "began"
       },
       {
        "prompt": "4  After the earthquake there was a BIG hole in the ground.  →  ?",
@@ -954,7 +1014,8 @@
         "frightened"
        ],
        "whyUz": "'big' = katta → 'HUGE' = juda katta, ulkan.\n'huge' — 'big' dan KUChLIROQ.\nZilziladan keyingi teshik uchun mos.\n'an earthquake' = zilzila (earth + quake).",
-       "speak": "4  After the earthquake there was a BIG hole in the ground.  →  ?"
+       "speak": "4  After the earthquake there was a BIG hole in the ground.  →  ?",
+       "speakAnswer": "huge"
       },
       {
        "prompt": "5  I was very SCARED when the dog barked at me.  →  ?",
@@ -966,7 +1027,8 @@
         "gorgeous"
        ],
        "whyUz": "'scared' = qo'rqqan → 'FRIGHTENED' = qo'rqib ketgan.\nCoursebook 80-betda: 'Hans felt FRIGHTENED'.\nIkkalasi ham -ED sifati — ODAM haqida.\n'to bark AT somebody' = kimgadir hurmoq.",
-       "speak": "5  I was very SCARED when the dog barked at me.  →  ?"
+       "speak": "5  I was very SCARED when the dog barked at me.  →  ?",
+       "speakAnswer": "frightened"
       },
       {
        "prompt": "6  Kevin heard strange SOUNDS coming from the kitchen.  →  ?",
@@ -978,7 +1040,8 @@
         "frightened"
        ],
        "whyUz": "'sounds' = ovozlar → 'NOISES' = shovqinlar.\nDIQQAT — nozik farq:\n  'a sound' — HAR QANDAY ovoz (yoqimli ham)\n  'a noise' — odatda YOQIMSIZ, bezovta qiluvchi ovoz\nBu yerda 'strange' (g'alati) bo'lgani uchun 'noises' mos.\nCoursebook 79 va 81-betlarda ham 'noises' bor edi.",
-       "speak": "6  Kevin heard strange SOUNDS coming from the kitchen.  →  ?"
+       "speak": "6  Kevin heard strange SOUNDS coming from the kitchen.  →  ?",
+       "speakAnswer": "noises"
       }
      ]
     }
@@ -1310,28 +1373,32 @@
        "answer": "Pictures A and B (B is a close-up of the dike showing the hole)",
        "promptUz": "Sariq bloklardan qurilgan devor",
        "whyUz": "TO'G'ON — sariq bloklardan qurilgan katta devor.\nA-rasmda to'liq ko'rinadi, B-rasmda esa uning\nkattalashtirilgan qismi (teshik bilan).\n'a dike' = to'g'on — Gollandiyani dengizdan himoya qiladi.",
-       "speak": "a dike"
+       "speak": "a dike",
+       "speakAnswer": "Pictures A and B"
       },
       {
        "prompt": "a priest",
        "answer": "Picture C (and he is also in picture D)",
        "promptUz": "Qizil libos va xoch",
        "whyUz": "RUHONIY — C-rasmda qizil libosda, ko'kragida xoch.\nU D-rasmda ham bor (chap tomonda).\n'a priest' = ruhoniy, cherkov xizmatchisi.",
-       "speak": "a priest"
+       "speak": "a priest",
+       "speakAnswer": "Picture C"
       },
       {
        "prompt": "a boy with his finger in a hole",
        "answer": "Picture A",
        "promptUz": "Bola to'g'on yonida o'tiribdi",
        "whyUz": "A-rasmda Hans to'g'on yonida o'tirib, barmog'ini\nteshikka tiqib turibdi.\nMatnda: 'He put his finger in the hole'.\nBu — hikoyaning eng mashhur sahnasi.",
-       "speak": "a boy with his finger in a hole"
+       "speak": "a boy with his finger in a hole",
+       "speakAnswer": "Picture A"
       },
       {
        "prompt": "people mending a hole",
        "answer": "Picture D",
        "promptUz": "Belkurak va chelakli odamlar",
        "whyUz": "D-rasmda bir necha odam belkurak va chelak bilan\nteshikni tuzatishyapti.\nMatnda: 'they quickly mended the hole'.\n'to mend' = tuzatmoq, ta'mirlamoq.",
-       "speak": "people mending a hole"
+       "speak": "people mending a hole",
+       "speakAnswer": "Picture D"
       }
      ]
     },
@@ -1443,21 +1510,24 @@
        "answer": "He looked around carefully, then noticed a very small hole in the dike.",
        "promptUz": "Kattalashtirilgan doirada nima ko'rinadi?",
        "whyUz": "B-rasm — to'g'ondagi KIChKINA TEShIKning\nkattalashtirilgan ko'rinishi.\nMatnning 2-xatboshi oxiridan.\nDIQQAT: 17d-mashqning 3-bandi ham shu gapga asoslanadi —\nteshik KIChKINA edi, katta emas.",
-       "speak": "Picture B"
+       "speak": "Picture B",
+       "speakAnswer": "He looked around carefully, then noticed a very small hole in the dike."
       },
       {
        "prompt": "Picture C",
        "answer": "The next morning, a priest walked by and heard Hans' cries.",
        "promptUz": "Ruhoniy va bola",
        "whyUz": "C-rasmda ruhoniy turibdi, bola unga murojaat qilyapti.\nMatnning 4-xatboshi boshidan.\nBoshqa mumkin variant: \"'I'm trying to stop the water,'\nthe boy said. 'Can you help me?'\"",
-       "speak": "Picture C"
+       "speak": "Picture C",
+       "speakAnswer": "The next morning, a priest walked by and heard Hans' cries."
       },
       {
        "prompt": "Picture D",
        "answer": "The priest called some other people and they quickly mended the hole.",
        "promptUz": "Belkurakli odamlar",
        "whyUz": "D-rasmda odamlar teshikni tuzatishyapti.\nMatnning 4-xatboshi o'rtasidan.\n'to mend' = tuzatmoq.",
-       "speak": "Picture D"
+       "speak": "Picture D",
+       "speakAnswer": "The priest called some other people and they quickly mended the hole."
       }
      ]
     },
@@ -1572,126 +1642,144 @@
        "answer": "Where did Hans live?",
        "promptUz": "Savol tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\nSavolda 'LIVE' (asosiy), javobda 'LIVED' (o'tgan).",
-       "speak": "Where / Hans / live?  (namuna)"
+       "speak": "Where / Hans / live?  (namuna)",
+       "speakAnswer": "Where did Hans live?"
       },
       {
        "prompt": "Where / Hans / live?  (namuna)",
        "answer": "He lived in Haarlem, Holland.",
        "promptUz": "Javob tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\nSavolda 'LIVE' (asosiy), javobda 'LIVED' (o'tgan).",
-       "speak": "Where / Hans / live?  (namuna)"
+       "speak": "Where / Hans / live?  (namuna)",
+       "speakAnswer": "He lived in Haarlem, Holland."
       },
       {
        "prompt": "1  How old / be / Hans?",
        "answer": "How old was Hans?",
        "promptUz": "Savol tuzing",
        "whyUz": "DIQQAT — BU BAND BOShQACHA:\n'be' fe'li → 'How old WAS Hans?'\n'did' KERAK EMAS.\nMatnda: 'he was EIGHT years old'.",
-       "speak": "1  How old / be / Hans?"
+       "speak": "1  How old / be / Hans?",
+       "speakAnswer": "How old was Hans?"
       },
       {
        "prompt": "1  How old / be / Hans?",
        "answer": "He was eight years old.",
        "promptUz": "Javob tuzing",
        "whyUz": "DIQQAT — BU BAND BOShQACHA:\n'be' fe'li → 'How old WAS Hans?'\n'did' KERAK EMAS.\nMatnda: 'he was EIGHT years old'.",
-       "speak": "1  How old / be / Hans?"
+       "speak": "1  How old / be / Hans?",
+       "speakAnswer": "He was eight years old."
       },
       {
        "prompt": "2  Who / Hans / visit?",
        "answer": "Who did Hans visit?",
        "promptUz": "Savol tuzing",
        "whyUz": "'who' bu yerda TO'LDIRUVChI (kimni?) → 'did' KERAK.\nSavolda 'VISIT', javobda 'VISITED'.",
-       "speak": "2  Who / Hans / visit?"
+       "speak": "2  Who / Hans / visit?",
+       "speakAnswer": "Who did Hans visit?"
       },
       {
        "prompt": "2  Who / Hans / visit?",
        "answer": "He visited an old blind man.",
        "promptUz": "Javob tuzing",
        "whyUz": "'who' bu yerda TO'LDIRUVChI (kimni?) → 'did' KERAK.\nSavolda 'VISIT', javobda 'VISITED'.",
-       "speak": "2  Who / Hans / visit?"
+       "speak": "2  Who / Hans / visit?",
+       "speakAnswer": "He visited an old blind man."
       },
       {
        "prompt": "3  What / Hans / take / the man?",
        "answer": "What did Hans take the man?",
        "promptUz": "Savol tuzing",
        "whyUz": "Savolda 'TAKE' (asosiy), javobda 'TOOK' (o'tgan).\n'take somebody something' = kimgadir nimadir olib bormoq.\n'a biscuit' = pechenye.",
-       "speak": "3  What / Hans / take / the man?"
+       "speak": "3  What / Hans / take / the man?",
+       "speakAnswer": "What did Hans take the man?"
       },
       {
        "prompt": "3  What / Hans / take / the man?",
        "answer": "He took him some biscuits.",
        "promptUz": "Javob tuzing",
        "whyUz": "Savolda 'TAKE' (asosiy), javobda 'TOOK' (o'tgan).\n'take somebody something' = kimgadir nimadir olib bormoq.\n'a biscuit' = pechenye.",
-       "speak": "3  What / Hans / take / the man?"
+       "speak": "3  What / Hans / take / the man?",
+       "speakAnswer": "He took him some biscuits."
       },
       {
        "prompt": "4  What / Hans / hear?",
        "answer": "What did Hans hear?",
        "promptUz": "Savol tuzing",
        "whyUz": "Savolda 'HEAR' (asosiy), javobda 'HEARD' (o'tgan).\nDIQQAT: 'did he heard' XATO.",
-       "speak": "4  What / Hans / hear?"
+       "speak": "4  What / Hans / hear?",
+       "speakAnswer": "What did Hans hear?"
       },
       {
        "prompt": "4  What / Hans / hear?",
        "answer": "He heard the sound of water flowing away.",
        "promptUz": "Javob tuzing",
        "whyUz": "Savolda 'HEAR' (asosiy), javobda 'HEARD' (o'tgan).\nDIQQAT: 'did he heard' XATO.",
-       "speak": "4  What / Hans / hear?"
+       "speak": "4  What / Hans / hear?",
+       "speakAnswer": "He heard the sound of water flowing away."
       },
       {
        "prompt": "5  What / Hans / notice?",
        "answer": "What did Hans notice?",
        "promptUz": "Savol tuzing",
        "whyUz": "Savolda 'NOTICE', javobda 'NOTICED'.\n'to notice' = payqamoq.",
-       "speak": "5  What / Hans / notice?"
+       "speak": "5  What / Hans / notice?",
+       "speakAnswer": "What did Hans notice?"
       },
       {
        "prompt": "5  What / Hans / notice?",
        "answer": "He noticed a very small hole in the dike.",
        "promptUz": "Javob tuzing",
        "whyUz": "Savolda 'NOTICE', javobda 'NOTICED'.\n'to notice' = payqamoq.",
-       "speak": "5  What / Hans / notice?"
+       "speak": "5  What / Hans / notice?",
+       "speakAnswer": "He noticed a very small hole in the dike."
       },
       {
        "prompt": "6  How long / Hans / stay / there?",
        "answer": "How long did Hans stay there?",
        "promptUz": "Savol tuzing",
        "whyUz": "'How long ...?' = qancha vaqt?\nMatnda: 'ALL NIGHT LONG, Hans waited and waited'.\nSavolda 'STAY', javobda 'STAYED'.",
-       "speak": "6  How long / Hans / stay / there?"
+       "speak": "6  How long / Hans / stay / there?",
+       "speakAnswer": "How long did Hans stay there?"
       },
       {
        "prompt": "6  How long / Hans / stay / there?",
        "answer": "He stayed there all night long.",
        "promptUz": "Javob tuzing",
        "whyUz": "'How long ...?' = qancha vaqt?\nMatnda: 'ALL NIGHT LONG, Hans waited and waited'.\nSavolda 'STAY', javobda 'STAYED'.",
-       "speak": "6  How long / Hans / stay / there?"
+       "speak": "6  How long / Hans / stay / there?",
+       "speakAnswer": "He stayed there all night long."
       },
       {
        "prompt": "7  Who / the priest / call?",
        "answer": "Who did the priest call?",
        "promptUz": "Savol tuzing",
        "whyUz": "'who' TO'LDIRUVChI → 'did' KERAK.\nSavolda 'CALL', javobda 'CALLED'.",
-       "speak": "7  Who / the priest / call?"
+       "speak": "7  Who / the priest / call?",
+       "speakAnswer": "Who did the priest call?"
       },
       {
        "prompt": "7  Who / the priest / call?",
        "answer": "He called some other people.",
        "promptUz": "Javob tuzing",
        "whyUz": "'who' TO'LDIRUVChI → 'did' KERAK.\nSavolda 'CALL', javobda 'CALLED'.",
-       "speak": "7  Who / the priest / call?"
+       "speak": "7  Who / the priest / call?",
+       "speakAnswer": "He called some other people."
       },
       {
        "prompt": "8  What / the people / do?",
        "answer": "What did the people do?",
        "promptUz": "Savol tuzing",
        "whyUz": "DIQQAT: 'do' fe'li IKKI marta —\n'did' (yordamchi) + 'do' (asosiy).\n'What did the people DO?' — to'g'ri qolip.\nJavobda ikki harakat: tuzatishdi va uyiga olib borishdi.",
-       "speak": "8  What / the people / do?"
+       "speak": "8  What / the people / do?",
+       "speakAnswer": "What did the people do?"
       },
       {
        "prompt": "8  What / the people / do?",
        "answer": "They quickly mended the hole and took Hans home.",
        "promptUz": "Javob tuzing",
        "whyUz": "DIQQAT: 'do' fe'li IKKI marta —\n'did' (yordamchi) + 'do' (asosiy).\n'What did the people DO?' — to'g'ri qolip.\nJavobda ikki harakat: tuzatishdi va uyiga olib borishdi.",
-       "speak": "8  What / the people / do?"
+       "speak": "8  What / the people / do?",
+       "speakAnswer": "They quickly mended the hole and took Hans home."
       }
      ]
     }
@@ -1721,154 +1809,176 @@
        "answer": "was",
        "promptUz": "'Mary' — birlik",
        "whyUz": "be → WAS (birlik uchun).\n'alone' = yolg'iz.",
-       "speak": "Mary Bond 1) ............ (be) alone in her bedroom."
+       "speak": "Mary Bond 1) ............ (be) alone in her bedroom.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "Her husband, Steve, was a doctor and he often 2) ............ (work) at night.",
        "answer": "worked",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "work → WORKED (-ed).\n'often' bo'lsa ham — bu O'TMIShdagi ODAT,\nshuning uchun past simple.",
-       "speak": "Her husband, Steve, was a doctor and he often 2) ............ (work) at night."
+       "speak": "Her husband, Steve, was a doctor and he often 2) ............ (work) at night.",
+       "speakAnswer": "worked"
       },
       {
        "prompt": "That night, Mary was tired, so she 3) ............ (decide) to go to bed.",
        "answer": "decided",
        "promptUz": "'-e' bilan tugagan to'g'ri fe'l",
        "whyUz": "decide → DECIDED (faqat -d qo'shiladi).\n'decide TO + asosiy fe'l' — qolip.",
-       "speak": "That night, Mary was tired, so she 3) ............ (decide) to go to bed."
+       "speak": "That night, Mary was tired, so she 3) ............ (decide) to go to bed.",
+       "speakAnswer": "decided"
       },
       {
        "prompt": "Suddenly, she 4) ............ (hear) a loud crash downstairs.",
        "answer": "heard",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "hear → HEARD (noto'g'ri).\n'a loud crash' = baland taraqlash.\n'downstairs' = pastda, pastki qavatda.",
-       "speak": "Suddenly, she 4) ............ (hear) a loud crash downstairs."
+       "speak": "Suddenly, she 4) ............ (hear) a loud crash downstairs.",
+       "speakAnswer": "heard"
       },
       {
        "prompt": "She 5) ............ (walk) nervously to the door ...",
        "answer": "walked",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "walk → WALKED.\n'nervously' — RAVISh (nervous + ly).",
-       "speak": "She 5) ............ (walk) nervously to the door ..."
+       "speak": "She 5) ............ (walk) nervously to the door ...",
+       "speakAnswer": "walked"
       },
       {
        "prompt": "... and 6) ............ (listen) carefully.",
        "answer": "listened",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "listen → LISTENED ('t' O'QILMAYDI).\n'carefully' — RAVISh.",
-       "speak": "... and 6) ............ (listen) carefully."
+       "speak": "... and 6) ............ (listen) carefully.",
+       "speakAnswer": "listened"
       },
       {
        "prompt": "She 7) ............ (feel) very frightened ...",
        "answer": "felt",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "feel → FELT (noto'g'ri).\n'frightened' = qo'rqib ketgan.\n'feel + SIFAT' — qolip.",
-       "speak": "She 7) ............ (feel) very frightened ..."
+       "speak": "She 7) ............ (feel) very frightened ...",
+       "speakAnswer": "felt"
       },
       {
        "prompt": "... so she 8) ............ (pick up) the phone in her room ...",
        "answer": "picked up",
        "promptUz": "Ikki so'zli fe'l",
        "whyUz": "pick up → PICKED UP.\nFaqat BIRINChI so'z o'zgaradi, 'up' o'zgarmaydi.\n'pick up the phone' = telefonni ko'tarmoq.",
-       "speak": "... so she 8) ............ (pick up) the phone in her room ..."
+       "speak": "... so she 8) ............ (pick up) the phone in her room ...",
+       "speakAnswer": "picked up"
       },
       {
        "prompt": "... and 9) ............ (call) the police.",
        "answer": "called",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "call → CALLED.\n'call the police' = militsiyaga qo'ng'iroq qilmoq.",
-       "speak": "... and 9) ............ (call) the police."
+       "speak": "... and 9) ............ (call) the police.",
+       "speakAnswer": "called"
       },
       {
        "prompt": "After that, she 10) ............ (hide) under the bed.",
        "answer": "hid",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "hide → HID (noto'g'ri).\n'hide UNDER the bed' — 46-betdagi 12-mashqda\nham aynan shu ibora bor edi.",
-       "speak": "After that, she 10) ............ (hide) under the bed."
+       "speak": "After that, she 10) ............ (hide) under the bed.",
+       "speakAnswer": "hid"
       },
       {
        "prompt": "Anxiously, she 11) ............ (go) downstairs to meet them.",
        "answer": "went",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "go → WENT (noto'g'ri).\n'anxiously' = xavotir bilan.\n'go downstairs' — predlog YO'Q.",
-       "speak": "Anxiously, she 11) ............ (go) downstairs to meet them."
+       "speak": "Anxiously, she 11) ............ (go) downstairs to meet them.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "She 12) ............ (walk) into the kitchen ...",
        "answer": "walked",
        "promptUz": "5-band bilan bir xil",
        "whyUz": "walk → WALKED.\n'walk INTO' = ichkariga kirmoq (45-betdagi\nharakat predloglaridan).",
-       "speak": "She 12) ............ (walk) into the kitchen ..."
+       "speak": "She 12) ............ (walk) into the kitchen ...",
+       "speakAnswer": "walked"
       },
       {
        "prompt": "... and 13) ............ (see) a man on the floor.",
        "answer": "saw",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "see → SAW (noto'g'ri).\nDIQQAT: 'a MAN' — 'a policeman' EMAS.\nBu 15b-mashqning 8-bandi uchun muhim.",
-       "speak": "... and 13) ............ (see) a man on the floor."
+       "speak": "... and 13) ............ (see) a man on the floor.",
+       "speakAnswer": "saw"
       },
       {
        "prompt": "One of the policemen 14) ............ (have) a gun to the man's head.",
        "answer": "had",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "have → HAD (noto'g'ri).\n'One of the policemen' — 'one of' dan keyin\nKO'PLIK, lekin fe'l BIRLIK.\n'a gun' = qurol.",
-       "speak": "One of the policemen 14) ............ (have) a gun to the man's head."
+       "speak": "One of the policemen 14) ............ (have) a gun to the man's head.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "When Mary 15) ............ (look) at the man, she was shocked.",
        "answer": "looked",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "look → LOOKED.\n'look AT' — predlog AT.\n'shocked' = dovdirab qolgan.",
-       "speak": "When Mary 15) ............ (look) at the man, she was shocked."
+       "speak": "When Mary 15) ............ (look) at the man, she was shocked.",
+       "speakAnswer": "looked"
       },
       {
        "prompt": "\"Oh, gosh! I'm so sorry, Steve!\" she 16) ............ (whisper) quietly.",
        "answer": "whispered",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "whisper → WHISPERED.\n'to whisper' = pichirlamoq.\n'quietly' — RAVISh (sekin).\nDIQQAT: bu 15b-mashqning 9-bandi uchun muhim.",
-       "speak": "\"Oh, gosh! I'm so sorry, Steve!\" she 16) ............ (whisper) quietly."
+       "speak": "\"Oh, gosh! I'm so sorry, Steve!\" she 16) ............ (whisper) quietly.",
+       "speakAnswer": "whispered"
       },
       {
        "prompt": "The two policemen 17) ............ (look) strangely at Mary.",
        "answer": "looked",
        "promptUz": "15-band bilan bir xil",
        "whyUz": "look → LOOKED.\n'strangely' — RAVISh (strange + ly).",
-       "speak": "The two policemen 17) ............ (look) strangely at Mary."
+       "speak": "The two policemen 17) ............ (look) strangely at Mary.",
+       "speakAnswer": "looked"
       },
       {
        "prompt": "\"It's my husband,\" she 18) ............ (say).",
        "answer": "said",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "say → SAID (noto'g'ri; 'sed' deb o'qiladi).\nDIQQAT: 'my HUSBAND' — bu 15b-mashqning\n10-bandi uchun muhim.",
-       "speak": "\"It's my husband,\" she 18) ............ (say)."
+       "speak": "\"It's my husband,\" she 18) ............ (say).",
+       "speakAnswer": "said"
       },
       {
        "prompt": "\"I 19) ............ (come) home early ...",
        "answer": "came",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "come → CAME (noto'g'ri).\n'come home' — predlog YO'Q.\nMantiqan bu so'zlarni STIV aytadi (yuqoridagi\nizohga qarang).",
-       "speak": "\"I 19) ............ (come) home early ..."
+       "speak": "\"I 19) ............ (come) home early ...",
+       "speakAnswer": "came"
       },
       {
        "prompt": "... and I 20) ............ (want) to eat something.\"",
        "answer": "wanted",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "want → WANTED.\n'want TO + asosiy fe'l' — qolip.",
-       "speak": "... and I 20) ............ (want) to eat something.\""
+       "speak": "... and I 20) ............ (want) to eat something.\"",
+       "speakAnswer": "wanted"
       },
       {
        "prompt": "Steve said, \"I 21) ............ (think) you were asleep ...",
        "answer": "thought",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "think → THOUGHT (noto'g'ri).\n'asleep' = uxlab yotgan (SIFAT, 'be' bilan).",
-       "speak": "Steve said, \"I 21) ............ (think) you were asleep ..."
+       "speak": "Steve said, \"I 21) ............ (think) you were asleep ...",
+       "speakAnswer": "thought"
       },
       {
        "prompt": "... and I 22) ............ (not/want) to wake you.\"",
        "answer": "didn't want",
        "promptUz": "INKOR shakl",
        "whyUz": "PAST SIMPLE INKOR: DIDN'T + WANT (asosiy shakl).\n'didn't wanted' XATO.\n'to wake sb' = kimnidir uyg'otmoq.",
-       "speak": "... and I 22) ............ (not/want) to wake you.\""
+       "speak": "... and I 22) ............ (not/want) to wake you.\"",
+       "speakAnswer": "didn't want"
       }
      ]
     },
@@ -1888,70 +1998,80 @@
        "answer": "alone",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "Matn: 'Mary Bond WAS ALONE in her bedroom.'\nEri Stiv o'sha kecha ishda deb o'ylangan edi.",
-       "speak": "1  Mary was WITH HER HUSBAND in her bedroom."
+       "speak": "1  Mary was WITH HER HUSBAND in her bedroom.",
+       "speakAnswer": "alone"
       },
       {
        "prompt": "2  Mary was UNHAPPY, so she decided to go to bed.",
        "answer": "tired",
        "promptUz": "Nega yotishga qaror qildi?",
        "whyUz": "Matn: 'Mary was TIRED, so she decided to go to bed.'\n'unhappy' (xafa) EMAS — 'tired' (charchagan).",
-       "speak": "2  Mary was UNHAPPY, so she decided to go to bed."
+       "speak": "2  Mary was UNHAPPY, so she decided to go to bed.",
+       "speakAnswer": "tired"
       },
       {
        "prompt": "3  She heard a loud VOICE downstairs.",
        "answer": "crash",
        "promptUz": "Nima eshitdi?",
        "whyUz": "Matn: 'she heard a loud CRASH downstairs.'\n'a voice' = odam ovozi;\n'a crash' = taraqlash, narsaning qulash ovozi.",
-       "speak": "3  She heard a loud VOICE downstairs."
+       "speak": "3  She heard a loud VOICE downstairs.",
+       "speakAnswer": "crash"
       },
       {
        "prompt": "4  She walked CALMLY to the door.",
        "answer": "nervously",
        "promptUz": "RAVISh — qanday yurdi?",
        "whyUz": "Matn: 'She walked NERVOUSLY to the door.'\n'calmly' (xotirjam) — 'nervously' ning\nQARAMA-QARShISI. Meri qo'rqqan edi.",
-       "speak": "4  She walked CALMLY to the door."
+       "speak": "4  She walked CALMLY to the door.",
+       "speakAnswer": "nervously"
       },
       {
        "prompt": "5  She could hear strange MUSIC downstairs.",
        "answer": "noises",
        "promptUz": "Hikoyaning nomi nima?",
        "whyUz": "Matn: 'She could hear strange NOISES downstairs.'\nHikoyaning nomi ham 'Noises in the Night'.\n'noises' KO'PLIK shaklda.",
-       "speak": "5  She could hear strange MUSIC downstairs."
+       "speak": "5  She could hear strange MUSIC downstairs.",
+       "speakAnswer": "noises"
       },
       {
        "prompt": "6  She felt very ANGRY, so she called the police.",
        "answer": "frightened",
        "promptUz": "Nima his qildi?",
        "whyUz": "Matn: 'She FELT very FRIGHTENED.'\n'angry' (jahli chiqqan) EMAS —\n'frightened' (qo'rqib ketgan).",
-       "speak": "6  She felt very ANGRY, so she called the police."
+       "speak": "6  She felt very ANGRY, so she called the police.",
+       "speakAnswer": "frightened"
       },
       {
        "prompt": "7  TEN MINUTES later, she heard the police car outside.",
        "answer": "Five minutes",
        "promptUz": "Qancha vaqtdan keyin?",
        "whyUz": "Matn: 'FIVE MINUTES later, she heard the police\ncar outside.'\nSon xato — 'ten' emas, 'five'.",
-       "speak": "7  TEN MINUTES later, she heard the police car outside."
+       "speak": "7  TEN MINUTES later, she heard the police car outside.",
+       "speakAnswer": "Five minutes"
       },
       {
        "prompt": "8  She walked into the kitchen and saw A POLICEMAN on the floor.",
        "answer": "a man",
        "promptUz": "Polda kim yotgan edi?",
        "whyUz": "Matn: 'she saw A MAN on the floor.'\nPolda yotgan odam — Stiv (Merining eri),\nmilitsioner EMAS.\nMilitsionerlar tik turgan va unga qurol\ntirab turgan edi.",
-       "speak": "8  She walked into the kitchen and saw A POLICEMAN on the floor."
+       "speak": "8  She walked into the kitchen and saw A POLICEMAN on the floor.",
+       "speakAnswer": "a man"
       },
       {
        "prompt": "9  \"I'm so sorry, Steve!\" she whispered LOUDLY.",
        "answer": "quietly",
        "promptUz": "RAVISh — pichirlash qanday bo'ladi?",
        "whyUz": "Matn: 'she WHISPERED QUIETLY.'\n'loudly' (baland ovozda) 'whisper' (pichirlamoq)\nbilan MANTIQAN mos kelmaydi.",
-       "speak": "9  \"I'm so sorry, Steve!\" she whispered LOUDLY."
+       "speak": "9  \"I'm so sorry, Steve!\" she whispered LOUDLY.",
+       "speakAnswer": "quietly"
       },
       {
        "prompt": "10  \"It's my BROTHER,\" she explained.",
        "answer": "husband",
        "promptUz": "Polda yotgan odam Meriga kim bo'ladi?",
        "whyUz": "Matn: '\"It's my HUSBAND,\" she said.'\nStiv — Merining ERI.\nDIQQAT: kitob 'explained' fe'lini o'zgartirishni\nso'ramaydi — asosiy xato 'brother' so'zida\n(matnda 'said' deyilgan).",
-       "speak": "10  \"It's my BROTHER,\" she explained."
+       "speak": "10  \"It's my BROTHER,\" she explained.",
+       "speakAnswer": "husband"
       }
      ]
     }
@@ -2115,49 +2235,56 @@
        "answer": "adjective: day",
        "promptUz": "Xuddi 'gorgeous' bilan bir joyda",
        "whyUz": "Matnda: 'One gorgeous, SUNNY DAY last summer'.\n'sunny' ham 'day' otini aniqlaydi → SIFAT.\nIkki sifat bir otni aniqlaydi, vergul bilan ajratilgan.\n'sun' + -y → sifat.",
-       "speak": "2  sunny"
+       "speak": "2  sunny",
+       "speakAnswer": "adjective: day"
       },
       {
        "prompt": "3  tightly",
        "answer": "adverb: closed",
        "promptUz": "-ly bilan tugaydi — qaysi fe'lni aniqlaydi?",
        "whyUz": "Matnda: 'they CLOSED the car windows TIGHTLY'.\n'tightly' — 'closed' fe'lini aniqlaydi → RAVISH.\nSavol: qanday yopishdi? Mahkam.\n'tight' + -ly → ravish.",
-       "speak": "3  tightly"
+       "speak": "3  tightly",
+       "speakAnswer": "adverb: closed"
       },
       {
        "prompt": "4  loudly",
        "answer": "adverb: roared",
        "promptUz": "Sherlar qanday bo'kirdi?",
        "whyUz": "Matnda: 'The lions ROARED LOUDLY'.\n'loudly' — 'roared' fe'lini aniqlaydi → RAVISH.\nSavol: qanday bo'kirishdi? Baland ovozda.\n'loud' + -ly → ravish.",
-       "speak": "4  loudly"
+       "speak": "4  loudly",
+       "speakAnswer": "adverb: roared"
       },
       {
        "prompt": "5  beautiful",
        "answer": "adjective: animals",
        "promptUz": "Kler sherlar haqida nima dedi?",
        "whyUz": "Matnda: \"They're BEAUTIFUL, but very scary ANIMALS\".\n'beautiful' — 'animals' otini aniqlaydi → SIFAT.\nDIQQAT: 'They're beautiful' — 'to be' dan keyin turgan\nsifat ham otga tegishli ('they' = animals).",
-       "speak": "5  beautiful"
+       "speak": "5  beautiful",
+       "speakAnswer": "adjective: animals"
       },
       {
        "prompt": "6  scary",
        "answer": "adjective: animals",
        "promptUz": "'beautiful' bilan bir gapda",
        "whyUz": "Matnda: 'beautiful, but very SCARY ANIMALS'.\n'scary' — 'animals' otini aniqlaydi → SIFAT.\n'scare' (qo'rqitmoq) + -y → sifat.\nDIQQAT: 'scary' (narsa) ↔ 'scared' (odam).",
-       "speak": "6  scary"
+       "speak": "6  scary",
+       "speakAnswer": "adjective: animals"
       },
       {
        "prompt": "7  desperately",
        "answer": "adverb: screamed",
        "promptUz": "Kler qanday qichqirdi?",
        "whyUz": "Matnda: 'Claire SCREAMED DESPERATELY'.\n'desperately' — 'screamed' fe'lini aniqlaydi → RAVISH.\nSavol: qanday qichqirdi? Jon holatda.\n'desperate' + -ly → ravish.",
-       "speak": "7  desperately"
+       "speak": "7  desperately",
+       "speakAnswer": "adverb: screamed"
       },
       {
        "prompt": "8  quickly",
        "answer": "adverb: jumped (out)",
        "promptUz": "Mashinadan qanday chiqishdi?",
        "whyUz": "Matnda: 'Claire and Greg JUMPED OUT of the car QUICKLY'.\n'quickly' — 'jumped out' fe'lini aniqlaydi → RAVISH.\nSavol: qanday sakrab chiqishdi? Tez.\n'quick' + -ly → ravish.",
-       "speak": "8  quickly"
+       "speak": "8  quickly",
+       "speakAnswer": "adverb: jumped"
       }
      ]
     },
@@ -2182,7 +2309,8 @@
         "strange"
        ],
        "whyUz": "'her NEW car' = uning yangi mashinasi.\n'get INTO a car' = mashinaga o'tirmoq —\n8-mashqdagi 'into' predlogi.",
-       "speak": "1  Suzy got into her ............ car ..."
+       "speak": "1  Suzy got into her ............ car ...",
+       "speakAnswer": "new"
       },
       {
        "prompt": "2  ... and started to drive home along a ............ country road.",
@@ -2194,7 +2322,8 @@
         "strange"
        ],
        "whyUz": "'a QUIET country road' = tinch qishloq yo'li.\n'quiet' = tinch, jimjit.\n'ALONG a road' — 8-mashqdagi predlog.",
-       "speak": "2  ... and started to drive home along a ............ country road."
+       "speak": "2  ... and started to drive home along a ............ country road.",
+       "speakAnswer": "quiet"
       },
       {
        "prompt": "3  Suddenly, she saw a ............ light in the sky above her.",
@@ -2206,7 +2335,8 @@
         "old"
        ],
        "whyUz": "'a BRIGHT light' = yorqin nur.\n'bright' = yorqin, porloq.\n'above her' = uning tepasida.",
-       "speak": "3  Suddenly, she saw a ............ light in the sky above her."
+       "speak": "3  Suddenly, she saw a ............ light in the sky above her.",
+       "speakAnswer": "bright"
       },
       {
        "prompt": "4  Then, she heard ............ voices.",
@@ -2218,7 +2348,8 @@
         "old"
        ],
        "whyUz": "'STRANGE voices' = g'alati ovozlar.\n'strange' = g'alati, notanish.\nDIQQAT: 'voices' KO'PLIK → artikl KERAK EMAS.",
-       "speak": "4  Then, she heard ............ voices."
+       "speak": "4  Then, she heard ............ voices.",
+       "speakAnswer": "strange"
       },
       {
        "prompt": "5  She saw an ............ man with ...",
@@ -2230,7 +2361,8 @@
         "strange"
        ],
        "whyUz": "'AN OLD man' = keksa odam.\nENG MUHIM BELGI: 'AN' artikli berilgan →\nkeyingi so'z UNLI tovush bilan boshlanishi kerak.\nRo'yxatda faqat 'OLD' unli bilan boshlanadi.\n('a new man', 'a strange man' bo'lsa 'A' bo'lardi.)",
-       "speak": "5  She saw an ............ man with ..."
+       "speak": "5  She saw an ............ man with ...",
+       "speakAnswer": "old"
       },
       {
        "prompt": "6  ... with ............ hair and blue eyes.",
@@ -2242,7 +2374,8 @@
         "old"
        ],
        "whyUz": "'WHITE hair' = oq soch.\nKeksa odam — oq sochli.\nDIQQAT: 'hair' SANALMAYDIGAN → artikl YO'Q.\n'blue eyes' bilan juft — ikkalasi ham rang.",
-       "speak": "6  ... with ............ hair and blue eyes."
+       "speak": "6  ... with ............ hair and blue eyes.",
+       "speakAnswer": "white"
       },
       {
        "prompt": "7  He had a ............ object in his hand ...",
@@ -2254,7 +2387,8 @@
         "old"
        ],
        "whyUz": "'a METAL object' = metall buyum.\nDIQQAT: 'metal' — OT, lekin bu yerda boshqa otni\naniqlab SIFAT vazifasini bajaryapti.\nShunga o'xshash: a stone cottage, a glass door,\na paper bag.\n'to point AT' = ...ga qaratmoq.",
-       "speak": "7  He had a ............ object in his hand ..."
+       "speak": "7  He had a ............ object in his hand ...",
+       "speakAnswer": "metal"
       }
      ]
     }
@@ -2284,7 +2418,8 @@
        "answer": "-ly",
        "promptUz": "careful → carefully",
        "whyUz": "SIFAT + -LY = RAVISH.\nBu — asosiy qoida.\nMisol: careful → carefully;  loud → loudly.",
-       "speak": "We usually form adverbs by adding ............ to the adjective."
+       "speak": "We usually form adverbs by adding ............ to the adjective.",
+       "speakAnswer": "-ly"
       },
       {
        "prompt": "When the adjective ends with a consonant + y, we drop the ............ and add ............ to form the adverb.  [1-bo'shliq]",
@@ -2298,14 +2433,16 @@
        "answer": "-ily",
        "promptUz": "happy → happily: nima qo'shildi?",
        "whyUz": "'-ILY' QO'ShILADI.\nhappy → happily;  easy → easily;  lucky → luckily.\nDIQQAT: o'tgan zamondagi -IED qoidasiga o'xshash.",
-       "speak": "When the adjective ends with a consonant + y, we drop the -y and add ............ to form the adverb.  [2-bo'shliq]"
+       "speak": "When the adjective ends with a consonant + y, we drop the -y and add ............ to form the adverb.  [2-bo'shliq]",
+       "speakAnswer": "-ily"
       },
       {
        "prompt": "Some adverbs have the same form as their ............ .",
        "answer": "adjectives",
        "promptUz": "hard → hard, fast → fast",
        "whyUz": "Ba'zi ravishlar SIFAT bilan BIR XIL.\nhard → hard;  fast → fast;  early → early.\nLEKIN: good → WELL (istisno).\nDIQQAT: 'fastly' va 'goodly' shakllari YO'Q.",
-       "speak": "Some adverbs have the same form as their ............ ."
+       "speak": "Some adverbs have the same form as their ............ .",
+       "speakAnswer": "adjectives"
       }
      ]
     },
@@ -2325,56 +2462,64 @@
        "answer": "hard",
        "promptUz": "3-qoida: shakli O'ZGARMAYDI",
        "whyUz": "hard → HARD (sifat bilan bir xil).\n'He works HARD.' = U ko'p ishlaydi.\nDIQQAT: 'hardly' shakli BOR, lekin ma'nosi TESKARI —\n'deyarli emas'.\n'He HARDLY works' = U deyarli ishlamaydi.",
-       "speak": "hard  →  ............"
+       "speak": "hard  →  ............",
+       "speakAnswer": "hard"
       },
       {
        "prompt": "strange  →  ............",
        "answer": "strangely",
        "promptUz": "1-qoida: oddiy + LY",
        "whyUz": "strange → strangely.\nOxiri '-e' bo'lsa ham, faqat -LY qo'shiladi\n('strangeely' XATO — 'e' saqlanadi).\n'He behaved STRANGELY.' = U g'alati o'zini tutdi.",
-       "speak": "strange  →  ............"
+       "speak": "strange  →  ............",
+       "speakAnswer": "strangely"
       },
       {
        "prompt": "happy  →  ............",
        "answer": "happily",
        "promptUz": "2-qoida: UNDOSH + Y",
        "whyUz": "happy → HAPPILY.\n'p' undosh + 'y' → 'y' tushadi, -ILY qo'shiladi.\nKitobdagi misol: 'The child smiled HAPPILY.'",
-       "speak": "happy  →  ............"
+       "speak": "happy  →  ............",
+       "speakAnswer": "happily"
       },
       {
        "prompt": "desperate  →  ............",
        "answer": "desperately",
        "promptUz": "1-qoida: oddiy + LY",
        "whyUz": "desperate → desperately.\n77-betdagi hikoyada bor:\n'Claire screamed DESPERATELY.'",
-       "speak": "desperate  →  ............"
+       "speak": "desperate  →  ............",
+       "speakAnswer": "desperately"
       },
       {
        "prompt": "fast  →  ............",
        "answer": "fast",
        "promptUz": "3-qoida: shakli O'ZGARMAYDI",
        "whyUz": "fast → FAST (sifat bilan bir xil).\nKitobdagi misol: 'She could run very FAST.'\n'fastly' shakli YO'Q.",
-       "speak": "fast  →  ............"
+       "speak": "fast  →  ............",
+       "speakAnswer": "fast"
       },
       {
        "prompt": "easy  →  ............",
        "answer": "easily",
        "promptUz": "2-qoida: UNDOSH + Y",
        "whyUz": "easy → EASILY.\n's' undosh + 'y' → -ILY.\n'happy → happily' bilan bir xil qoida.",
-       "speak": "easy  →  ............"
+       "speak": "easy  →  ............",
+       "speakAnswer": "easily"
       },
       {
        "prompt": "good  →  ............",
        "answer": "well",
        "promptUz": "ISTISNO — butunlay boshqa so'z",
        "whyUz": "good → WELL — ISTISNO.\n'goodly' shakli YO'Q.\nKitobdagi misol: 'They sang very WELL.'\nDIQQAT: 'well' sifat sifatida ham ishlatiladi —\n'I feel WELL' = o'zimni yaxshi his qilaman (sog'lom).",
-       "speak": "good  →  ............"
+       "speak": "good  →  ............",
+       "speakAnswer": "well"
       },
       {
        "prompt": "quick  →  ............",
        "answer": "quickly",
        "promptUz": "1-qoida: oddiy + LY",
        "whyUz": "quick → quickly.\n77-betdagi hikoyada bor:\n'jumped out of the car QUICKLY'.",
-       "speak": "quick  →  ............"
+       "speak": "quick  →  ............",
+       "speakAnswer": "quickly"
       }
      ]
     }
@@ -2484,7 +2629,8 @@
         "because"
        ],
        "whyUz": "SABAB (eshik qulflanmagan) → NATIJA (Mayk ochdi) → SO.\nOldidan VERGUL bor — bu ham 'so' ni ko'rsatadi.\nDIQQAT: 'because' bo'lsa tartib teskari bo'lardi:\n'Mike opened the door BECAUSE it was not locked.'",
-       "speak": "1  The door was not locked, ............ Mike opened it and went inside."
+       "speak": "1  The door was not locked, ............ Mike opened it and went inside.",
+       "speakAnswer": "so"
       },
       {
        "prompt": "2  First, the sky turned grey, ............ it began to rain.",
@@ -2496,7 +2642,8 @@
         "because"
        ],
        "whyUz": "'First' so'zi bor → keyingi voqea 'THEN' bilan.\nKETMA-KETLIK: avval osmon kulrang bo'ldi, so'ng yomg'ir\nyog'a boshladi.\n'turn grey' = kulrang bo'lmoq.",
-       "speak": "2  First, the sky turned grey, ............ it began to rain."
+       "speak": "2  First, the sky turned grey, ............ it began to rain.",
+       "speakAnswer": "then"
       },
       {
        "prompt": "3  We waited for Rob's answer, ............ he said nothing.",
@@ -2508,7 +2655,8 @@
         "so"
        ],
        "whyUz": "QARAMA-QARShILIK: javob kutishdi ↔ u hech narsa demadi →\nBUT.\nOldidan VERGUL bor.\n'wait FOR' = kutmoq;  'say nothing' = hech narsa demaslik.",
-       "speak": "3  We waited for Rob's answer, ............ he said nothing."
+       "speak": "3  We waited for Rob's answer, ............ he said nothing.",
+       "speakAnswer": "but"
       },
       {
        "prompt": "4  Liz was in the kitchen ............ the phone rang.",
@@ -2520,7 +2668,8 @@
         "because"
        ],
        "whyUz": "VAQT: Liz oshxonada edi — O'ShANDA telefon jiringladi →\nWHEN.\nring → RANG (noto'g'ri fe'l).\nKitobdagi misolga o'xshash:\n'He was in bed WHEN he heard a strange noise.'",
-       "speak": "4  Liz was in the kitchen ............ the phone rang."
+       "speak": "4  Liz was in the kitchen ............ the phone rang.",
+       "speakAnswer": "when"
       },
       {
        "prompt": "5  Mr Grant opened the letter ............ read the message inside.",
@@ -2532,7 +2681,8 @@
         "so"
        ],
        "whyUz": "AND — ketma-ketlik, ega BIR XIL.\nDIQQAT: ikkinchi qismda ega ('he') TUShIB QOLGAN —\n'Mr Grant opened ... and (he) read ...'\nBu 'and' ning belgisi.\nread → READ (yozilishi bir xil, /red/ deb o'qiladi).",
-       "speak": "5  Mr Grant opened the letter ............ read the message inside."
+       "speak": "5  Mr Grant opened the letter ............ read the message inside.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "6  Mandy felt nervous ............ the dog looked very scary.",
@@ -2544,7 +2694,8 @@
         "so"
        ],
        "whyUz": "SABAB: it qo'rqinchli ko'rinardi → BECAUSE.\nTartib: NATIJA (asabiy edi) + BECAUSE + SABAB (it qo'rqinchli).\n1-band bilan SOLISHTIRING — u yerda tartib teskari edi ('so').\n'scary' — 76-betdagi so'z.",
-       "speak": "6  Mandy felt nervous ............ the dog looked very scary."
+       "speak": "6  Mandy felt nervous ............ the dog looked very scary.",
+       "speakAnswer": "because"
       }
      ]
     }
@@ -2879,7 +3030,8 @@
         "up"
        ],
        "whyUz": "'THROUGH the tunnel' = tunnel ichidan o'tib.\nTunnel — yopiq joy → THROUGH.\nRasm h.",
-       "speak": "2  ... ............ the tunnel ...  (rasm h)"
+       "speak": "2  ... ............ the tunnel ...  (rasm h)",
+       "speakAnswer": "through"
       },
       {
        "prompt": "3  ... and ............ the forest.  (rasm b)",
@@ -2891,7 +3043,8 @@
         "up"
        ],
        "whyUz": "'TOWARDS the forest' = o'rmon tomon.\nDIQQAT: 'through the forest' bo'lsa o'rmon IChIDAN\no'tgan bo'lardi, lekin matnda o'rmonga YETIB BORMAGAN —\nfaqat o'sha tomonga ketgan.\nRasm b.",
-       "speak": "3  ... and ............ the forest.  (rasm b)"
+       "speak": "3  ... and ............ the forest.  (rasm b)",
+       "speakAnswer": "towards"
       },
       {
        "prompt": "4  Then, he went ............ the hill.  (rasm d)",
@@ -2903,7 +3056,8 @@
         "towards"
        ],
        "whyUz": "'UP the hill' = tepalikka chiqmoq.\nKeyingi gapda 'The view from THERE was beautiful' —\ndemak tepaga chiqqan.\nRasm d (birinchi qismi).",
-       "speak": "4  Then, he went ............ the hill.  (rasm d)"
+       "speak": "4  Then, he went ............ the hill.  (rasm d)",
+       "speakAnswer": "up"
       },
       {
        "prompt": "5  After that, he went ............ the other side of the hill,  (rasm d)",
@@ -2915,7 +3069,8 @@
         "towards"
        ],
        "whyUz": "'DOWN the other side' = narigi tomonidan tushmoq.\n4-band bilan JUFT: chiqdi (up) → tushdi (down).\nRasm d (ikkinchi qismi) — shuning uchun 'd' qutisida\nqiya chiziq bor.",
-       "speak": "5  After that, he went ............ the other side of the hill,  (rasm d)"
+       "speak": "5  After that, he went ............ the other side of the hill,  (rasm d)",
+       "speakAnswer": "down"
       },
       {
        "prompt": "6  ... ............ a little old cottage ...  (rasm a)",
@@ -2927,7 +3082,8 @@
         "towards"
        ],
        "whyUz": "'PAST a cottage' = kulba yonidan o'tib.\nTo'xtamadi, faqat yonidan o'tdi.\nRasm a.\nDIQQAT: 'a little old cottage' — sifatlar tartibi:\no'lcham (little) → yosh (old).",
-       "speak": "6  ... ............ a little old cottage ...  (rasm a)"
+       "speak": "6  ... ............ a little old cottage ...  (rasm a)",
+       "speakAnswer": "past"
       },
       {
        "prompt": "7  ... and ............ the bridge.  (rasm f)",
@@ -2939,7 +3095,8 @@
         "towards"
        ],
        "whyUz": "'UNDER the bridge' = ko'prik ostidan.\nRasm f.\nDIQQAT: 'over the bridge' bo'lsa ko'prik USTIDAN\no'tgan bo'lardi — rasmda esa ostidan o'tyapti.",
-       "speak": "7  ... and ............ the bridge.  (rasm f)"
+       "speak": "7  ... and ............ the bridge.  (rasm f)",
+       "speakAnswer": "under"
       },
       {
        "prompt": "8  After that, he went ............ a field.  (rasm c)",
@@ -2951,7 +3108,8 @@
         "towards"
        ],
        "whyUz": "'ACROSS a field' = dala bo'ylab (bir chetdan ikkinchisiga).\nDala — ochiq maydon → ACROSS.\nRasm c — u yerda TRAKTOR ham ko'rinadi,\nbu keyingi gapga bog'liq.",
-       "speak": "8  After that, he went ............ a field.  (rasm c)"
+       "speak": "8  After that, he went ............ a field.  (rasm c)",
+       "speakAnswer": "across"
       },
       {
        "prompt": "9  A tractor scared the horse and it jumped ............ the fence.  (rasm i)",
@@ -2963,7 +3121,8 @@
         "towards"
        ],
        "whyUz": "'jump OVER the fence' = panjara ustidan sakramoq.\nRasm i.\n'to scare' = qo'rqitmoq;  'a fence' = panjara.",
-       "speak": "9  A tractor scared the horse and it jumped ............ the fence.  (rasm i)"
+       "speak": "9  A tractor scared the horse and it jumped ............ the fence.  (rasm i)",
+       "speakAnswer": "over"
       },
       {
        "prompt": "10  Ralph fell off the horse and ............ the lake.  (rasm g)",
@@ -2975,7 +3134,8 @@
         "towards"
        ],
        "whyUz": "'INTO the lake' = ko'lga (ichkariga) tushmoq.\nRasm g.\n'fall off' = ustidan yiqilmoq;  fall → FELL (noto'g'ri fe'l).\nDIQQAT: 'fell off the horse AND into the lake' —\nikki harakat: otdan yiqildi VA ko'lga tushdi.",
-       "speak": "10  Ralph fell off the horse and ............ the lake.  (rasm g)"
+       "speak": "10  Ralph fell off the horse and ............ the lake.  (rasm g)",
+       "speakAnswer": "into"
       }
      ]
     },
@@ -3086,7 +3246,8 @@
         "tightly"
        ],
        "whyUz": "'yawned SLEEPILY' = uyqusirab esnadi.\n'to yawn' = esnamoq — uyqu belgisi.\nCoursebook 81-betdagi 21-mashqda ham 'sleepily' bor edi.\n'sleepy' + -ILY (undosh + Y qoidasi).",
-       "speak": "1  Tom's wife yawned ............ as she stood at the front door."
+       "speak": "1  Tom's wife yawned ............ as she stood at the front door.",
+       "speakAnswer": "sleepily"
       },
       {
        "prompt": "2  \"Goodbye, Tom. Drive ............ ,\" she called.",
@@ -3098,7 +3259,8 @@
         "sleepily"
        ],
        "whyUz": "'Drive CAREFULLY' = ehtiyot bo'lib hayda —\nyo'lga chiqayotganga aytiladigan standart ibora.\nGrammar 48-betdagi asosiy namuna:\n'He drives CAREFULLY.'",
-       "speak": "2  \"Goodbye, Tom. Drive ............ ,\" she called."
+       "speak": "2  \"Goodbye, Tom. Drive ............ ,\" she called.",
+       "speakAnswer": "carefully"
       },
       {
        "prompt": "3  It was a cold morning, so he closed the windows ............ .",
@@ -3110,7 +3272,8 @@
         "sleepily"
        ],
        "whyUz": "'closed the windows TIGHTLY' = oynalarni mahkam yopdi.\nSovuq bo'lgani uchun mahkam yopgan.\nCoursebook 77-betda ham: 'closed the car windows TIGHTLY'.",
-       "speak": "3  It was a cold morning, so he closed the windows ............ ."
+       "speak": "3  It was a cold morning, so he closed the windows ............ .",
+       "speakAnswer": "tightly"
       },
       {
        "prompt": "4  As he drove along he smiled ............ .",
@@ -3122,7 +3285,8 @@
         "tightly"
        ],
        "whyUz": "'smiled HAPPILY' = baxtli jilmaydi.\nKeyingi gap sababini aytadi: 'Today was his first day\nin his new job' — yangi ish, shuning uchun xursand.\n'happy' + -ILY (undosh + Y qoidasi).\n'drive ALONG' — harakat predlogi.",
-       "speak": "4  As he drove along he smiled ............ ."
+       "speak": "4  As he drove along he smiled ............ .",
+       "speakAnswer": "happily"
       },
       {
        "prompt": "5  Tom screamed ............ as his car crashed into a tree.",
@@ -3134,7 +3298,8 @@
         "tightly"
        ],
        "whyUz": "'screamed LOUDLY' = baland ovozda qichqirdi.\n'crash INTO a tree' = daraxtga urilmoq — 'into' predlogi.\n'to skid' = sirg'anib ketmoq;  'icy' = muzli.",
-       "speak": "5  Tom screamed ............ as his car crashed into a tree."
+       "speak": "5  Tom screamed ............ as his car crashed into a tree.",
+       "speakAnswer": "loudly"
       },
       {
        "prompt": "6  The driver ran ............ towards Tom.",
@@ -3146,7 +3311,8 @@
         "sleepily"
        ],
        "whyUz": "'ran QUICKLY' = tez yugurdi.\nFavqulodda vaziyatda tez harakat qilinadi.\n'run TOWARDS' — yo'nalish predlogi (Coursebook 77-betda ham).\n'the driver' bu yerda — tez yordam haydovchisi.",
-       "speak": "6  The driver ran ............ towards Tom."
+       "speak": "6  The driver ran ............ towards Tom.",
+       "speakAnswer": "quickly"
       },
       {
        "prompt": "7  \"Are you alright, sir?\" he asked ............ .",
@@ -3158,7 +3324,8 @@
         "tightly"
        ],
        "whyUz": "'asked POLITELY' = muloyimlik bilan so'radi.\nBELGI: gapda 'SIR' bor — bu MULOYIM murojaat.\n'polite' = muloyim → 'politely' = muloyimlik bilan.\n'alright' = yaxshi, joyida ('all right' ning qisqasi).",
-       "speak": "7  \"Are you alright, sir?\" he asked ............ ."
+       "speak": "7  \"Are you alright, sir?\" he asked ............ .",
+       "speakAnswer": "politely"
       }
      ]
     },
@@ -3181,7 +3348,8 @@
         "comfortable",
         "comfortably"
        ],
-       "whyUz": "'armchair' OTINI aniqlaydi → SIFAT → COMFORTABLE.\nSifat otdan OLDIN turadi.\n'an armchair' = kreslo;  'comfortable' = qulay."
+       "whyUz": "'armchair' OTINI aniqlaydi → SIFAT → COMFORTABLE.\nSifat otdan OLDIN turadi.\n'an armchair' = kreslo;  'comfortable' = qulay.",
+       "speakAnswer": "comfortable"
       },
       {
        "prompt": "2  The singers sang very good / well.",
@@ -3191,7 +3359,8 @@
         "good",
         "well"
        ],
-       "whyUz": "'sang' FE'LINI aniqlaydi → RAVISh kerak.\n'good' ning ravishi — WELL (ISTISNO).\n'sang very good' XATO — juda ko'p uchraydigan xato.\nGrammar 48-betdagi 'Note: good → well'."
+       "whyUz": "'sang' FE'LINI aniqlaydi → RAVISh kerak.\n'good' ning ravishi — WELL (ISTISNO).\n'sang very good' XATO — juda ko'p uchraydigan xato.\nGrammar 48-betdagi 'Note: good → well'.",
+       "speakAnswer": "well"
       },
       {
        "prompt": "3  Sudden / Suddenly, he started to run.",
@@ -3201,7 +3370,8 @@
         "Sudden",
         "Suddenly"
        ],
-       "whyUz": "'SUDDENLY' — RAVISh, gap boshida, butun gapga tegishli.\n'Sudden' SIFAT — otdan oldin turishi kerak edi\n('a sudden noise').\nOldidan VERGUL bor — bu ham ravishni ko'rsatadi."
+       "whyUz": "'SUDDENLY' — RAVISh, gap boshida, butun gapga tegishli.\n'Sudden' SIFAT — otdan oldin turishi kerak edi\n('a sudden noise').\nOldidan VERGUL bor — bu ham ravishni ko'rsatadi.",
+       "speakAnswer": "Suddenly"
       },
       {
        "prompt": "4  The exam was very easy / easily.",
@@ -3211,7 +3381,8 @@
         "easy",
         "easily"
        ],
-       "whyUz": "'was' ('to be') dan keyin SIFAT keladi → EASY.\n'The exam was easily' XATO.\nDIQQAT: 'He passed the exam EASILY' bo'lsa —\nu yerda 'passed' fe'lini aniqlaydi → ravish."
+       "whyUz": "'was' ('to be') dan keyin SIFAT keladi → EASY.\n'The exam was easily' XATO.\nDIQQAT: 'He passed the exam EASILY' bo'lsa —\nu yerda 'passed' fe'lini aniqlaydi → ravish.",
+       "speakAnswer": "easy"
       },
       {
        "prompt": "5  They reached the river safe / safely.",
@@ -3221,7 +3392,8 @@
         "safe",
         "safely"
        ],
-       "whyUz": "'reached' FE'LINI aniqlaydi → RAVISh → SAFELY.\nSavol: qanday yetib bordilar? Xavfsiz holda.\nDIQQAT: 'They were SAFE' bo'lsa — 'were' dan keyin SIFAT.\nBu yerda esa 'reached' fe'li bor.\n'to reach' = yetib bormoq (predlogsiz!)."
+       "whyUz": "'reached' FE'LINI aniqlaydi → RAVISh → SAFELY.\nSavol: qanday yetib bordilar? Xavfsiz holda.\nDIQQAT: 'They were SAFE' bo'lsa — 'were' dan keyin SIFAT.\nBu yerda esa 'reached' fe'li bor.\n'to reach' = yetib bormoq (predlogsiz!).",
+       "speakAnswer": "safely"
       },
       {
        "prompt": "6  They knew they were lucky / luckily to be alive.",
@@ -3231,7 +3403,8 @@
         "lucky",
         "luckily"
        ],
-       "whyUz": "'were' ('to be') dan keyin SIFAT keladi → LUCKY.\nCoursebook 77-betda: 'they were very LUCKY to be alive'.\nDIQQAT: 'LUCKILY, they were alive' bo'lsa —\nu yerda gap boshida, butun gapga tegishli → ravish."
+       "whyUz": "'were' ('to be') dan keyin SIFAT keladi → LUCKY.\nCoursebook 77-betda: 'they were very LUCKY to be alive'.\nDIQQAT: 'LUCKILY, they were alive' bo'lsa —\nu yerda gap boshida, butun gapga tegishli → ravish.",
+       "speakAnswer": "lucky"
       },
       {
        "prompt": "7  She opened the door quiet / quietly.",
@@ -3241,7 +3414,8 @@
         "quiet",
         "quietly"
        ],
-       "whyUz": "'opened' FE'LINI aniqlaydi → RAVISh → QUIETLY.\nSavol: qanday ochdi? Jimgina.\n'quiet' = tinch, jim (SIFAT)."
+       "whyUz": "'opened' FE'LINI aniqlaydi → RAVISh → QUIETLY.\nSavol: qanday ochdi? Jimgina.\n'quiet' = tinch, jim (SIFAT).",
+       "speakAnswer": "quietly"
       },
       {
        "prompt": "8  They saw a bright / brightly light in the sky.",
@@ -3251,7 +3425,8 @@
         "bright",
         "brightly"
        ],
-       "whyUz": "'light' OTINI aniqlaydi → SIFAT → BRIGHT.\nSifat otdan OLDIN turadi.\nCoursebook 78-betdagi 10a-mashqda ham:\n'she saw a BRIGHT light in the sky'."
+       "whyUz": "'light' OTINI aniqlaydi → SIFAT → BRIGHT.\nSifat otdan OLDIN turadi.\nCoursebook 78-betdagi 10a-mashqda ham:\n'she saw a BRIGHT light in the sky'.",
+       "speakAnswer": "bright"
       },
       {
        "prompt": "9  Tony climbed slow / slowly down the ladder.",
@@ -3261,7 +3436,8 @@
         "slow",
         "slowly"
        ],
-       "whyUz": "'climbed' FE'LINI aniqlaydi → RAVISh → SLOWLY.\nSavol: qanday tushdi? Sekin.\nCoursebook 81-betdagi 21-mashqda ham:\n'He climbed carefully DOWN' — narvondan tushish.\n'a ladder' = narvon."
+       "whyUz": "'climbed' FE'LINI aniqlaydi → RAVISh → SLOWLY.\nSavol: qanday tushdi? Sekin.\nCoursebook 81-betdagi 21-mashqda ham:\n'He climbed carefully DOWN' — narvondan tushish.\n'a ladder' = narvon.",
+       "speakAnswer": "slowly"
       },
       {
        "prompt": "10  The actor held his award proud / proudly.",
@@ -3271,7 +3447,8 @@
         "proud",
         "proudly"
        ],
-       "whyUz": "'held' FE'LINI aniqlaydi → RAVISh → PROUDLY.\nSavol: qanday ushladi? Faxr bilan.\nhold → HELD (noto'g'ri fe'l).\nDIQQAT: 'The actor was PROUD' bo'lsa —\n'was' dan keyin SIFAT.\nCoursebook 79-betda: 'He felt PROUD with the gold cup'."
+       "whyUz": "'held' FE'LINI aniqlaydi → RAVISh → PROUDLY.\nSavol: qanday ushladi? Faxr bilan.\nhold → HELD (noto'g'ri fe'l).\nDIQQAT: 'The actor was PROUD' bo'lsa —\n'was' dan keyin SIFAT.\nCoursebook 79-betda: 'He felt PROUD with the gold cup'.",
+       "speakAnswer": "proudly"
       }
      ]
     }
@@ -3306,7 +3483,8 @@
         "up"
        ],
        "whyUz": "'climbing THROUGH the window' = derazadan tirmashib kiryapti.\nTHROUGH — ochiq joy (deraza) ORQALI o'tib.\nDIQQAT: 'into the window' XATO —\n'through the window INTO the house' bo'lardi.\n'a thief' = o'g'ri;  ko'pligi: thieves.",
-       "speak": "1  The thief is climbing ............ the window."
+       "speak": "1  The thief is climbing ............ the window.",
+       "speakAnswer": "through"
       },
       {
        "prompt": "2  He is roller-skating ............ the street.",
@@ -3318,7 +3496,8 @@
         "towards"
        ],
        "whyUz": "'roller-skating ALONG the street' = ko'cha bo'ylab\nrolik uchyapti.\nALONG — UZUNASIGA harakat.\nDIQQAT: 'across the street' bo'lsa ko'chani KESIB\no'tgan bo'lardi.\n'to roller-skate' = rolikli konkida uchmoq.",
-       "speak": "2  He is roller-skating ............ the street."
+       "speak": "2  He is roller-skating ............ the street.",
+       "speakAnswer": "along"
       },
       {
        "prompt": "3  The ball fell ............ the swimming-pool.",
@@ -3330,7 +3509,8 @@
         "up"
        ],
        "whyUz": "'fell INTO the pool' = havzaga tushib ketdi.\nINTO — IChKARIGA harakat.\nfall → FELL (noto'g'ri fe'l).\nGrammar 51-betda ham: 'threw the ball INTO the\nswimming-pool'.",
-       "speak": "3  The ball fell ............ the swimming-pool."
+       "speak": "3  The ball fell ............ the swimming-pool.",
+       "speakAnswer": "into"
       },
       {
        "prompt": "4  He is holding the ball ............ his head.",
@@ -3342,7 +3522,8 @@
         "towards"
        ],
        "whyUz": "'holding the ball OVER his head' = to'pni boshi ustida\nushlab turibdi.\nOVER — USTIDA (tegmasdan).\nDIQQAT: bu yerda 'over' HARAKAT emas, JOY bildiradi —\n'over' ikkalasida ham ishlatiladi.\nAksi: under.",
-       "speak": "4  He is holding the ball ............ his head."
+       "speak": "4  He is holding the ball ............ his head.",
+       "speakAnswer": "over"
       },
       {
        "prompt": "5  The woman is climbing ............ the ladder.",
@@ -3354,7 +3535,8 @@
         "towards"
        ],
        "whyUz": "'climbing UP the ladder' = narvondan yuqoriga chiqyapti.\nUP — YUQORIGA.\nGrammar 50-betda ham: 'The firefighter climbed UP the\nladder'.\nAksi: down (8-band).",
-       "speak": "5  The woman is climbing ............ the ladder."
+       "speak": "5  The woman is climbing ............ the ladder.",
+       "speakAnswer": "up"
       },
       {
        "prompt": "6  The horse is racing ............ the finish line.",
@@ -3366,7 +3548,8 @@
         "up"
        ],
        "whyUz": "'racing TOWARDS the finish line' = marra tomon chopyapti.\nTOWARDS — YO'NALISh (hali yetib bormagan).\nGrammar 50-betda ham: 'running TOWARDS the finishing line'.\n'to race' = poyga qilmoq, chopmoq.",
-       "speak": "6  The horse is racing ............ the finish line."
+       "speak": "6  The horse is racing ............ the finish line.",
+       "speakAnswer": "towards"
       },
       {
        "prompt": "7  They are standing ............ an umbrella.",
@@ -3378,7 +3561,8 @@
         "up"
        ],
        "whyUz": "'standing UNDER an umbrella' = soyabon ostida turishibdi.\nUNDER — OSTIDA.\n4-band bilan JUFT: over ↔ under.\nDIQQAT: bu yerda ham JOY ma'nosida.",
-       "speak": "7  They are standing ............ an umbrella."
+       "speak": "7  They are standing ............ an umbrella.",
+       "speakAnswer": "under"
       },
       {
        "prompt": "8  The girl is skiing ............ the mountain.",
@@ -3390,7 +3574,8 @@
         "up"
        ],
        "whyUz": "'skiing DOWN the mountain' = tog'dan pastga chang'i uchyapti.\nDOWN — PASTGA.\n5-band bilan JUFT: up ↔ down.\n'to ski' = chang'i uchmoq (Workbook 37-betda ham bor edi).",
-       "speak": "8  The girl is skiing ............ the mountain."
+       "speak": "8  The girl is skiing ............ the mountain.",
+       "speakAnswer": "down"
       }
      ]
     },
@@ -3410,70 +3595,80 @@
        "answer": "are",
        "promptUz": "Salomlashish — hozirgi zamon",
        "whyUz": "'How ARE you?' = Yaxshimisan?\nStandart salomlashish savoli.\n'you' → ARE.",
-       "speak": "a1  A: Hi Jane. How ............ (be) you?"
+       "speak": "a1  A: Hi Jane. How ............ (be) you?",
+       "speakAnswer": "are"
       },
       {
        "prompt": "a2  B: Oh fine, but I ............ (have) a really busy day.",
        "answer": "'m having (am having)",
        "promptUz": "Kun hali TUGAMAGAN — davom etyapti",
        "whyUz": "Kun HALI DAVOM ETYAPTI ('now I'm cooking' deb aytadi) →\nPRESENT CONTINUOUS.\n'I'M HAVING a busy day' = band kunim bo'lyapti.\nDIQQAT: 'have' bu yerda BOShDAN KEChIRMOQ ma'nosida —\nshuning uchun -ing OLADI.\n('have' = ega bo'lmoq ma'nosida -ing olmaydi.)",
-       "speak": "a2  B: Oh fine, but I ............ (have) a really busy day."
+       "speak": "a2  B: Oh fine, but I ............ (have) a really busy day.",
+       "speakAnswer": "'m having"
       },
       {
        "prompt": "a3  B: First I ............ (take) the dog to the vet.",
        "answer": "took",
        "promptUz": "'First' — bu allaqachon TUGAGAN harakat",
        "whyUz": "'First' — bugun ERTALAB bo'lgan, TUGAGAN harakat →\nPAST SIMPLE.\ntake → TOOK (noto'g'ri fe'l).\n'a vet' = veterinar (veterinarian ning qisqasi).",
-       "speak": "a3  B: First I ............ (take) the dog to the vet."
+       "speak": "a3  B: First I ............ (take) the dog to the vet.",
+       "speakAnswer": "took"
       },
       {
        "prompt": "a4  B: Then I ............ (go) shopping ...",
        "answer": "went",
        "promptUz": "'Then' — bu ham TUGAGAN harakat",
        "whyUz": "PAST SIMPLE. go → WENT.\n'go shopping' — predlogsiz, -ing shakli bilan.\n3-band bilan ketma-ket: First ... Then ...",
-       "speak": "a4  B: Then I ............ (go) shopping ..."
+       "speak": "a4  B: Then I ............ (go) shopping ...",
+       "speakAnswer": "went"
       },
       {
        "prompt": "a5  B: ... and now I ............ (cook) dinner for our dinner party tonight.",
        "answer": "'m cooking (am cooking)",
        "promptUz": "'now' — AYNI DAMDA",
        "whyUz": "'NOW' → PRESENT CONTINUOUS.\n'I' → AM + cooking.\nDIQQAT — BU XATBOShIDA UCh ZAMON:\n  'm having (kun davom etyapti) → took, went (tugagan)\n  → 'm cooking (ayni damda)\n'exhausted' = holdan toygan.",
-       "speak": "a5  B: ... and now I ............ (cook) dinner for our dinner party tonight."
+       "speak": "a5  B: ... and now I ............ (cook) dinner for our dinner party tonight.",
+       "speakAnswer": "'m cooking"
       },
       {
        "prompt": "b1  A: You ............ (wear) a lovely suit today Tim.",
        "answer": "are wearing",
        "promptUz": "'today' — hozir kiyib turibdi",
        "whyUz": "Hozir kiyib turibdi → PRESENT CONTINUOUS.\n'You' → ARE + wearing.\n'a suit' = kostyum.\nDIQQAT: 'You wear a lovely suit' bo'lsa —\nodat haqida bo'lardi, mos emas.",
-       "speak": "b1  A: You ............ (wear) a lovely suit today Tim."
+       "speak": "b1  A: You ............ (wear) a lovely suit today Tim.",
+       "speakAnswer": "are wearing"
       },
       {
        "prompt": "b2  B: Yes it is actually. I ............ (buy) it in Milan last week.",
        "answer": "bought",
        "promptUz": "'last week' — qaysi zamon?",
        "whyUz": "'last week' → PAST SIMPLE.\nbuy → BOUGHT (noto'g'ri fe'l).\n'actually' = rostdan ham, aslida.",
-       "speak": "b2  B: Yes it is actually. I ............ (buy) it in Milan last week."
+       "speak": "b2  B: Yes it is actually. I ............ (buy) it in Milan last week.",
+       "speakAnswer": "bought"
       },
       {
        "prompt": "b3  A: Why ............ (you/go) there?",
        "answer": "did you go",
        "promptUz": "O'tgan zamon so'roq shakli",
        "whyUz": "PAST SIMPLE SO'ROQ: DID + you + GO (asosiy shakl).\n'did you went' XATO.\n'there' = o'sha yerga (Milanga).",
-       "speak": "b3  A: Why ............ (you/go) there?"
+       "speak": "b3  A: Why ............ (you/go) there?",
+       "speakAnswer": "did you go"
       },
       {
        "prompt": "b4  B: I ............ (have) a business meeting.",
        "answer": "had",
        "promptUz": "O'tgan zamon; 'did' yo'q",
        "whyUz": "PAST SIMPLE. have → HAD.\nDIQQAT: bu yerda 'have' = ega bo'lmoq ma'nosida\n(uchrashuvim bor edi) — a2-band bilan solishtiring,\nu yerda 'boshdan kechirmoq' ma'nosida edi.\n'a business meeting' = ish uchrashuvi.",
-       "speak": "b4  B: I ............ (have) a business meeting."
+       "speak": "b4  B: I ............ (have) a business meeting.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "b5  A: ............ (it/go) well?",
        "answer": "Did it go",
        "promptUz": "O'tgan zamon so'roq shakli",
        "whyUz": "PAST SIMPLE SO'ROQ: DID + it + GO.\n'go well' = yaxshi o'tmoq.\nJavob: 'Yes, very well' — 'well' RAVISh.",
-       "speak": "b5  A: ............ (it/go) well?"
+       "speak": "b5  A: ............ (it/go) well?",
+       "speakAnswer": "Did it go"
       }
      ]
     },
@@ -3490,27 +3685,33 @@
      "tasks": [
       {
        "left": "1  She didn't buy the vase.",
-       "right": "a  She didn't have enough money."
+       "right": "a  She didn't have enough money.",
+       "speakAnswer": "a  She didn't have enough money."
       },
       {
        "left": "2  It was very cold.",
-       "right": "d  Joe put his coat on."
+       "right": "d  Joe put his coat on.",
+       "speakAnswer": "d  Joe put his coat on."
       },
       {
        "left": "3  I was in the bathroom.",
-       "right": "b  The doorbell rang."
+       "right": "b  The doorbell rang.",
+       "speakAnswer": "b  The doorbell rang."
       },
       {
        "left": "4  I washed the dishes.",
-       "right": "f  I watched TV."
+       "right": "f  I watched TV.",
+       "speakAnswer": "f  I watched TV."
       },
       {
        "left": "5  I shut the window.",
-       "right": "c  I closed the curtains."
+       "right": "c  I closed the curtains.",
+       "speakAnswer": "c  I closed the curtains."
       },
       {
        "left": "6  He screamed for help.",
-       "right": "e  Nobody could hear him."
+       "right": "e  Nobody could hear him.",
+       "speakAnswer": "e  Nobody could hear him."
       }
      ]
     },
@@ -3530,35 +3731,40 @@
        "answer": "It was very cold, so Joe put his coat on.",
        "promptUz": "Sovuq → NATIJASI nima?",
        "whyUz": "SO — NATIJA.\nTartib: SABAB (sovuq edi) + so + NATIJA (palto kiydi).\nOldidan VERGUL.",
-       "speak": "2  It was very cold. + Joe put his coat on."
+       "speak": "2  It was very cold. + Joe put his coat on.",
+       "speakAnswer": "It was very cold, so Joe put his coat on."
       },
       {
        "prompt": "3  I was in the bathroom. + The doorbell rang.",
        "answer": "I was in the bathroom when the doorbell rang.",
        "promptUz": "Qo'ng'iroq QACHON jiringladi?",
        "whyUz": "WHEN — VAQT.\nDavom etayotgan holat (hammomda edim) +\nto'satdan bo'lgan voqea (qo'ng'iroq jiringladi).\nGrammar 48-betdagi misolga o'xshash.",
-       "speak": "3  I was in the bathroom. + The doorbell rang."
+       "speak": "3  I was in the bathroom. + The doorbell rang.",
+       "speakAnswer": "I was in the bathroom when the doorbell rang."
       },
       {
        "prompt": "4  I washed the dishes. + I watched TV.",
        "answer": "I washed the dishes, then I watched TV.",
        "promptUz": "Ikki ish KETMA-KET",
        "whyUz": "THEN — ANIQ ketma-ketlik: avval idish, keyin televizor.\nOldidan VERGUL.\nGrammar 48-betda: 'She parked the car, THEN she went\ninside.'",
-       "speak": "4  I washed the dishes. + I watched TV."
+       "speak": "4  I washed the dishes. + I watched TV.",
+       "speakAnswer": "I washed the dishes, then I watched TV."
       },
       {
        "prompt": "5  I shut the window. + I closed the curtains.",
        "answer": "I shut the window and closed the curtains.",
        "promptUz": "Ikki O'XSHASH harakat",
        "whyUz": "AND — qo'shimcha, o'xshash harakatlar.\nDIQQAT: ikkinchi qismda ega ('I') TUShIB QOLDI —\nbu 'and' ning belgisi.\n4-band bilan solishtiring: u yerda 'then' va ega saqlangan.",
-       "speak": "5  I shut the window. + I closed the curtains."
+       "speak": "5  I shut the window. + I closed the curtains.",
+       "speakAnswer": "I shut the window and closed the curtains."
       },
       {
        "prompt": "6  He screamed for help. + Nobody could hear him.",
        "answer": "He screamed for help, but nobody could hear him.",
        "promptUz": "Qichqirdi, LEKIN...",
        "whyUz": "BUT — QARAMA-QARShILIK.\nQichqirdi ↔ lekin hech kim eshitmadi.\nOldidan VERGUL.",
-       "speak": "6  He screamed for help. + Nobody could hear him."
+       "speak": "6  He screamed for help. + Nobody could hear him.",
+       "speakAnswer": "He screamed for help, but nobody could hear him."
       }
      ]
     },
@@ -3583,7 +3789,8 @@
         "so"
        ],
        "whyUz": "WHEN — VAQT.\nDavom etayotgan holat (yotoqxonada edi) +\nto'satdan bo'lgan voqea (qo'ng'iroq jiringladi).\n8-mashqning 3-bandiga o'xshash.",
-       "speak": "1  Lucy was in her bedroom ............ the doorbell rang."
+       "speak": "1  Lucy was in her bedroom ............ the doorbell rang.",
+       "speakAnswer": "when"
       },
       {
        "prompt": "2  It was dark, ............ she switched on the lights ...",
@@ -3595,7 +3802,8 @@
         "because"
        ],
        "whyUz": "SO — NATIJA.\nSABAB (qorong'i edi) → NATIJA (chiroq yoqdi).\nOldidan VERGUL bor.\n'switch on' = yoqmoq (= turn on).",
-       "speak": "2  It was dark, ............ she switched on the lights ..."
+       "speak": "2  It was dark, ............ she switched on the lights ...",
+       "speakAnswer": "so"
       },
       {
        "prompt": "3  ... ............ went downstairs.",
@@ -3607,7 +3815,8 @@
         "because"
        ],
        "whyUz": "AND — qo'shimcha.\nDIQQAT: ikkinchi qismda ega ('she') TUShIB QOLGAN —\n'she switched on the lights and (she) went downstairs'.\n'downstairs' = pastga (zinadan).",
-       "speak": "3  ... ............ went downstairs."
+       "speak": "3  ... ............ went downstairs.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "4  She opened the front door, ............ there was nobody there.",
@@ -3619,7 +3828,8 @@
         "because"
        ],
        "whyUz": "BUT — QARAMA-QARShILIK.\nEshikni ochdi (kimdir bor deb o'yladi) ↔\nlekin hech kim yo'q edi.\nOldidan VERGUL bor.\n'nobody' = hech kim.",
-       "speak": "4  She opened the front door, ............ there was nobody there."
+       "speak": "4  She opened the front door, ............ there was nobody there.",
+       "speakAnswer": "but"
       },
       {
        "prompt": "5  Nervously, she closed the door ............ went into the living-room.",
@@ -3631,7 +3841,8 @@
         "because"
        ],
        "whyUz": "AND — qo'shimcha.\nEga yana TUShIB QOLGAN.\n'Nervously' — RAVISh, gap boshida.\n'go INTO' — harakat predlogi.",
-       "speak": "5  Nervously, she closed the door ............ went into the living-room."
+       "speak": "5  Nervously, she closed the door ............ went into the living-room.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "6  She was very scared ............ she was all alone.",
@@ -3643,7 +3854,8 @@
         "so"
        ],
        "whyUz": "BECAUSE — SABAB.\n'she was all alone' — qo'rqishning sababi.\nRo'yxatdagi 'because' YAGONA marta shu yerda.\n'all alone' = butunlay yolg'iz.\nGrammar 49-betdagi Salli hikoyasida ham xuddi shu edi.",
-       "speak": "6  She was very scared ............ she was all alone."
+       "speak": "6  She was very scared ............ she was all alone.",
+       "speakAnswer": "because"
       },
       {
        "prompt": "7  She closed the windows ............ doors tightly.",
@@ -3655,7 +3867,8 @@
         "because"
        ],
        "whyUz": "AND — bu yerda ikki GAP emas, ikki OT birlashtiriladi:\n'the windows AND doors'.\n'tightly' — RAVISh (mahkam).\nCoursebook 77-betda ham 'closed the car windows TIGHTLY'.",
-       "speak": "7  She closed the windows ............ doors tightly."
+       "speak": "7  She closed the windows ............ doors tightly.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "8  ............ , she heard a strange noise in the garden.",
@@ -3667,7 +3880,8 @@
         "because"
        ],
        "whyUz": "BUT — QARAMA-QARShILIK.\nHamma joyni mahkam yopdi (xavfsiz deb o'yladi) ↔\nLEKIN shovqin eshitdi.\n\nDIQQAT — BU BAND ALOHIDA:\nBo'shliq YANGI GAP boshida va undan keyin VERGUL bor.\nRo'yxatdagi besh so'zdan ('and, but, so, because, when')\ngap boshida kela oladigan YAGONA so'z — 'BUT'.\n('When,' / 'Because,' / 'And,' / 'So,' bu joyda\nmantiqan mos kelmaydi.)\n\nESLATMA: rasmiy yozuvda 'But' dan keyin vergul qo'yilishi\ng'ayrioddiy, lekin kitobda shunday bosilgan.\n8-mashqda 'then' bor edi va u bu yerga juda mos kelardi —\nlekin 9-mashqning ro'yxatida 'then' YO'Q.",
-       "speak": "8  ............ , she heard a strange noise in the garden."
+       "speak": "8  ............ , she heard a strange noise in the garden.",
+       "speakAnswer": "But"
       },
       {
        "prompt": "9  She went to the window ............ looked out nervously.",
@@ -3679,7 +3893,8 @@
         "because"
        ],
        "whyUz": "AND — qo'shimcha.\nEga TUShIB QOLGAN: 'she went ... and (she) looked out'.\n'look out' = tashqariga qaramoq.\n'nervously' — RAVISh.",
-       "speak": "9  She went to the window ............ looked out nervously."
+       "speak": "9  She went to the window ............ looked out nervously.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "10  She screamed ............ she saw what was outside!",
@@ -3691,7 +3906,8 @@
         "so"
        ],
        "whyUz": "WHEN — VAQT.\nQichqirish QAChON sodir bo'ldi — ko'rganida.\n1-band bilan bir xil naqsh.\nHikoya OChIQ tugaydi — tashqarida nima borligi aytilmaydi.\nBu — qo'rqinchli hikoya uslubi.",
-       "speak": "10  She screamed ............ she saw what was outside!"
+       "speak": "10  She screamed ............ she saw what was outside!",
+       "speakAnswer": "when"
       }
      ]
     },
@@ -3810,42 +4026,48 @@
        "answer": "Who invented the radio?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\n'Marconi' gap BOShIDA → EGA → 'did' YO'Q.\nFe'l 'INVENTED' o'tgan shaklda qoladi.\nMarkoni — radioni ixtiro qilgan italyan olimi.",
-       "speak": "MARCONI invented the radio."
+       "speak": "MARCONI invented the radio.",
+       "speakAnswer": "Who invented the radio?"
       },
       {
        "prompt": "Graham visited ANN.",
        "answer": "Who did Graham visit?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'Ann' gap OXIRIDA → TO'LDIRUVChI → 'did' BOR.\nFe'l ASOSIY shaklda: 'VISIT' ('visited' EMAS).\nDIQQAT: 1-band bilan SOLIShTIRING — u yerda 'did' yo'q edi.",
-       "speak": "Graham visited ANN."
+       "speak": "Graham visited ANN.",
+       "speakAnswer": "Who did Graham visit?"
       },
       {
        "prompt": "BILL closed the window.",
        "answer": "Who closed the window?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'Bill' gap BOShIDA → EGA → 'did' YO'Q.\nFe'l 'CLOSED' o'tgan shaklda qoladi.",
-       "speak": "BILL closed the window."
+       "speak": "BILL closed the window.",
+       "speakAnswer": "Who closed the window?"
       },
       {
        "prompt": "Terry married JUNE.",
        "answer": "Who did Terry marry?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'June' gap OXIRIDA → TO'LDIRUVChI → 'did' BOR.\nFe'l ASOSIY shaklda: 'MARRY'.\nBu — kitobdagi B-chizmaning aynan o'zi\n('Who did Ann marry?').\nDIQQAT: 'June' bu yerda AYOL ISMI (oy nomi emas).",
-       "speak": "Terry married JUNE."
+       "speak": "Terry married JUNE.",
+       "speakAnswer": "Who did Terry marry?"
       },
       {
        "prompt": "DA VINCI painted the Mona Lisa.",
        "answer": "Who painted the Mona Lisa?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'Da Vinci' gap BOShIDA → EGA → 'did' YO'Q.\nFe'l 'PAINTED' o'tgan shaklda.\nCoursebook 73-betdagi 14-mashqda ham shu gap bor edi.",
-       "speak": "DA VINCI painted the Mona Lisa."
+       "speak": "DA VINCI painted the Mona Lisa.",
+       "speakAnswer": "Who painted the Mona Lisa?"
       },
       {
        "prompt": "CHARLES DICKENS wrote A Tale of Two Cities.",
        "answer": "Who wrote A Tale of Two Cities?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'Charles Dickens' gap BOShIDA → EGA → 'did' YO'Q.\nFe'l 'WROTE' o'tgan shaklda.\nDikkens — Grammar 43-betdagi matnning qahramoni.\n'A Tale of Two Cities' = 'Ikki shahar haqida hikoya'.",
-       "speak": "CHARLES DICKENS wrote A Tale of Two Cities."
+       "speak": "CHARLES DICKENS wrote A Tale of Two Cities.",
+       "speakAnswer": "Who wrote A Tale of Two Cities?"
       }
      ]
     },
@@ -3865,42 +4087,48 @@
        "answer": "Where did you buy it from?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\nDID + you + BUY (asosiy shakl).\nDIQQAT: 'from' gap OXIRIDA qoladi.",
-       "speak": "Where / you / buy / it / from?"
+       "speak": "Where / you / buy / it / from?",
+       "speakAnswer": "Where did you buy it from?"
       },
       {
        "prompt": "When / John / arrive?",
        "answer": "When did John arrive?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "DID + John + ARRIVE (asosiy shakl).\nEga ISM bo'lsa ham qolip bir xil.\n'to arrive' = yetib kelmoq.",
-       "speak": "When / John / arrive?"
+       "speak": "When / John / arrive?",
+       "speakAnswer": "When did John arrive?"
       },
       {
        "prompt": "What / you / have / for lunch?",
        "answer": "What did you have for lunch?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "DID + you + HAVE ('had' EMAS).\n'for lunch' — 'lunch' oldidan artikl YO'Q.",
-       "speak": "What / you / have / for lunch?"
+       "speak": "What / you / have / for lunch?",
+       "speakAnswer": "What did you have for lunch?"
       },
       {
        "prompt": "How / you / get / to school / today?",
        "answer": "How did you get to school today?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "DID + you + GET.\n'How ...?' — USUL so'raladi (transport).\n'get TO school' = maktabga yetib bormoq.",
-       "speak": "How / you / get / to school / today?"
+       "speak": "How / you / get / to school / today?",
+       "speakAnswer": "How did you get to school today?"
       },
       {
        "prompt": "Where / Jane / go / on holiday?",
        "answer": "Where did Jane go on holiday?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "DID + Jane + GO ('went' EMAS).\n'go ON holiday' — predlog ON.",
-       "speak": "Where / Jane / go / on holiday?"
+       "speak": "Where / Jane / go / on holiday?",
+       "speakAnswer": "Where did Jane go on holiday?"
       },
       {
        "prompt": "What / you / do / last night?",
        "answer": "What did you do last night?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "DID + you + DO.\nDIQQAT: 'do' fe'li IKKI marta —\n'did' (yordamchi) + 'do' (asosiy).\nBu TO'G'RI qolip.",
-       "speak": "What / you / do / last night?"
+       "speak": "What / you / do / last night?",
+       "speakAnswer": "What did you do last night?"
       }
      ]
     },
@@ -3917,27 +4145,33 @@
      "tasks": [
       {
        "left": "1  Where did you buy it from?",
-       "right": "d  I bought it from Marks and Spencer."
+       "right": "d  I bought it from Marks and Spencer.",
+       "speakAnswer": "d  I bought it from Marks and Spencer."
       },
       {
        "left": "2  When did John arrive?",
-       "right": "e  He arrived yesterday afternoon."
+       "right": "e  He arrived yesterday afternoon.",
+       "speakAnswer": "e  He arrived yesterday afternoon."
       },
       {
        "left": "3  What did you have for lunch?",
-       "right": "f  I had a sandwich."
+       "right": "f  I had a sandwich.",
+       "speakAnswer": "f  I had a sandwich."
       },
       {
        "left": "4  How did you get to school today?",
-       "right": "a  I went to school by bus."
+       "right": "a  I went to school by bus.",
+       "speakAnswer": "a  I went to school by bus."
       },
       {
        "left": "5  Where did Jane go on holiday?",
-       "right": "b  She went to France."
+       "right": "b  She went to France.",
+       "speakAnswer": "b  She went to France."
       },
       {
        "left": "6  What did you do last night?",
-       "right": "c  I went to the cinema."
+       "right": "c  I went to the cinema.",
+       "speakAnswer": "c  I went to the cinema."
       }
      ]
     },
@@ -3998,84 +4232,96 @@
        "answer": "did you go",
        "promptUz": "'last night' — qaysi zamon?",
        "whyUz": "'last night' → PAST SIMPLE SO'ROQ.\nDID + you + GO (asosiy shakl).\n'What time ...?' = soat nechada?",
-       "speak": "1  A: What time ............ (you/go) to bed last night?"
+       "speak": "1  A: What time ............ (you/go) to bed last night?",
+       "speakAnswer": "did you go"
       },
       {
        "prompt": "1  B: I ............ (stay up) late because there ............ (be) a great film on TV.  [1-bo'shliq]",
        "answer": "stayed up",
        "promptUz": "O'tgan zamon; 'did' yo'q",
        "whyUz": "PAST SIMPLE. stay up → stayed up (to'g'ri fe'l).\n'to stay up late' = kech yotmoq, uxlamay o'tirmoq.",
-       "speak": "1  B: I ............ (stay up) late because there ............ (be) a great film on TV.  [1-bo'shliq]"
+       "speak": "1  B: I ............ (stay up) late because there ............ (be) a great film on TV.  [1-bo'shliq]",
+       "speakAnswer": "stayed up"
       },
       {
        "prompt": "1  ... because there ............ (be) a great film on TV.  [2-bo'shliq]",
        "answer": "was",
        "promptUz": "'a film' — BIRLIK; o'tgan zamon",
        "whyUz": "PAST SIMPLE. 'there WAS a great film'.\n'a film' BIRLIK → was.\n'ON TV' — predlog ON.",
-       "speak": "1  ... because there ............ (be) a great film on TV.  [2-bo'shliq]"
+       "speak": "1  ... because there ............ (be) a great film on TV.  [2-bo'shliq]",
+       "speakAnswer": "was"
       },
       {
        "prompt": "1  B: Horror at Park Town. ............ (you/watch) it?",
        "answer": "Did you watch",
        "promptUz": "O'tgan kecha haqida so'roq",
        "whyUz": "PAST SIMPLE SO'ROQ (o'sha kecha haqida).\nDID + you + WATCH (asosiy shakl).",
-       "speak": "1  B: Horror at Park Town. ............ (you/watch) it?"
+       "speak": "1  B: Horror at Park Town. ............ (you/watch) it?",
+       "speakAnswer": "Did you watch"
       },
       {
        "prompt": "1  A: No, I ............ (not/like) horror films very much.",
        "answer": "don't like",
        "promptUz": "DIQQAT — bu umumiy fikr, o'tgan voqea emas!",
        "whyUz": "BU BAND ALDAMChI.\nQo'rqinchli filmlarni yoqtirmaslik — DOIMIY fikr,\no'tgan zamondagi bitta voqea EMAS → PRESENT SIMPLE.\n'I DON'T LIKE horror films' = umuman yoqtirmayman.\nDIQQAT: 'I didn't like' bo'lsa — faqat o'sha filmni\nyoqtirmagan bo'lardi, mashqning ma'nosi boshqa.",
-       "speak": "1  A: No, I ............ (not/like) horror films very much."
+       "speak": "1  A: No, I ............ (not/like) horror films very much.",
+       "speakAnswer": "don't like"
       },
       {
        "prompt": "2  A: Hi Tom. It ............ (be) Gary.",
        "answer": "'s (is)",
        "promptUz": "Telefonda o'zini tanishtirish — hozirgi zamon",
        "whyUz": "PRESENT SIMPLE. 'It'S Gary' = Bu Geri.\nTelefonda o'zini tanishtirish qolipi.\nDIQQAT: 'I am Gary' emas, 'IT IS Gary' —\ntelefonda shunday aytiladi.",
-       "speak": "2  A: Hi Tom. It ............ (be) Gary."
+       "speak": "2  A: Hi Tom. It ............ (be) Gary.",
+       "speakAnswer": "'s"
       },
       {
        "prompt": "2  A: How ............ (be) you?",
        "answer": "are",
        "promptUz": "Salomlashish savoli",
        "whyUz": "'How ARE you?' — standart salomlashish.\n'you' → ARE.",
-       "speak": "2  A: How ............ (be) you?"
+       "speak": "2  A: How ............ (be) you?",
+       "speakAnswer": "are"
       },
       {
        "prompt": "2  B: Fine. I ............ (come) home fifteen minutes ago ...",
        "answer": "came",
        "promptUz": "'fifteen minutes ago' — qaysi zamon?",
        "whyUz": "'... AGO' → PAST SIMPLE.\ncome → CAME (noto'g'ri fe'l).\n'come home' — predlogsiz.",
-       "speak": "2  B: Fine. I ............ (come) home fifteen minutes ago ..."
+       "speak": "2  B: Fine. I ............ (come) home fifteen minutes ago ...",
+       "speakAnswer": "came"
       },
       {
        "prompt": "2  B: ... and I ............ (have) lunch at the moment.",
        "answer": "'m having (am having)",
        "promptUz": "'at the moment' — qaysi zamon?",
        "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'I' → AM + having.\nDIQQAT: 'have lunch' = ovqatlanmoq (HARAKAT) —\nshuning uchun -ing OLADI.",
-       "speak": "2  B: ... and I ............ (have) lunch at the moment."
+       "speak": "2  B: ... and I ............ (have) lunch at the moment.",
+       "speakAnswer": "'m having"
       },
       {
        "prompt": "2  A: Lunch? But it ............ (be) almost four o'clock!",
        "answer": "'s (is)",
        "promptUz": "Soat haqida — hozirgi zamon",
        "whyUz": "PRESENT SIMPLE. 'it'S almost four o'clock'.\nSoat aytishda ega DOIM 'it'.\n'almost' = deyarli.",
-       "speak": "2  A: Lunch? But it ............ (be) almost four o'clock!"
+       "speak": "2  A: Lunch? But it ............ (be) almost four o'clock!",
+       "speakAnswer": "'s"
       },
       {
        "prompt": "2  B: Well, I ............ (not/take) a break for lunch at work today.",
        "answer": "didn't take",
        "promptUz": "'today' — lekin bu TUGAGAN harakat",
        "whyUz": "PAST SIMPLE INKOR: DIDN'T + TAKE (asosiy shakl).\n'today' bo'lsa ham, ish kunining tushlik vaqti\nallaqachon O'TGAN → past simple.\n'take a break' = tanaffus qilmoq.\n'didn't took' XATO.",
-       "speak": "2  B: Well, I ............ (not/take) a break for lunch at work today."
+       "speak": "2  B: Well, I ............ (not/take) a break for lunch at work today.",
+       "speakAnswer": "didn't take"
       },
       {
        "prompt": "2  B: You see, we always ............ (have) a lot of work in August.",
        "answer": "have",
        "promptUz": "'always' — qaysi zamon?",
        "whyUz": "'always' → PRESENT SIMPLE (doimiy odat).\n'we' KO'PLIK → HAVE (-S YO'Q).\nDIQQAT: bu yerda 'have' = ega bo'lmoq → -ing OLMAYDI.\n11-band bilan SOLIShTIRING: bir gapda ikki zamon —\n'didn't take' (bugun) ↔ 'always have' (doim).",
-       "speak": "2  B: You see, we always ............ (have) a lot of work in August."
+       "speak": "2  B: You see, we always ............ (have) a lot of work in August.",
+       "speakAnswer": "have"
       }
      ]
     }
@@ -4110,7 +4356,8 @@
         "strange"
        ],
        "whyUz": "'AN INTERESTING film' = qiziqarli film.\nDIQQAT: 'interesting' — 'i' UNLI tovush → AN.\nRo'yxatdagi YAGONA 'an' oladigan so'z —\nbu javobni tekshirishning yaxshi usuli.",
-       "speak": "1  There was a(n) ............ film on television last night."
+       "speak": "1  There was a(n) ............ film on television last night.",
+       "speakAnswer": "interesting"
       },
       {
        "prompt": "2  Carlos is a(n) ............ driver. He never has accidents.",
@@ -4122,7 +4369,8 @@
         "happy"
        ],
        "whyUz": "'A CAREFUL driver' = ehtiyotkor haydovchi.\nKeyingi gap tushuntiradi: 'He never has accidents'.\n48-betdagi nazariyada ham shu misol bor edi.",
-       "speak": "2  Carlos is a(n) ............ driver. He never has accidents."
+       "speak": "2  Carlos is a(n) ............ driver. He never has accidents.",
+       "speakAnswer": "careful"
       },
       {
        "prompt": "3  There was a(n) ............ man looking through my kitchen window.",
@@ -4134,7 +4382,8 @@
         "happy"
        ],
        "whyUz": "'A STRANGE man' = g'alati, notanish odam.\nCoursebook 78-betdagi 10a-mashqda ham 'strange voices' bor edi.\n'look THROUGH a window' — 78-betdagi predlog.",
-       "speak": "3  There was a(n) ............ man looking through my kitchen window."
+       "speak": "3  There was a(n) ............ man looking through my kitchen window.",
+       "speakAnswer": "strange"
       },
       {
        "prompt": "4  It was a(n) ............ spring day so they went on a picnic.",
@@ -4146,7 +4395,8 @@
         "strange"
        ],
        "whyUz": "'A GORGEOUS spring day' = ajoyib bahor kuni.\n'gorgeous' = ajoyib, go'zal.\nCoursebook 77-betdagi hikoya ham shunday boshlangan:\n'One GORGEOUS, sunny day'.\n'so' — natija bog'lovchisi (48-bet).",
-       "speak": "4  It was a(n) ............ spring day so they went on a picnic."
+       "speak": "4  It was a(n) ............ spring day so they went on a picnic.",
+       "speakAnswer": "gorgeous"
       },
       {
        "prompt": "5  Kate was very ............ when she won first prize in the art competition.",
@@ -4158,7 +4408,8 @@
         "strange"
        ],
        "whyUz": "'very HAPPY' = juda xursand.\n'win first prize' = birinchi o'rinni olmoq.\nDIQQAT: 'was' dan keyin SIFAT keladi (ravish emas) —\n48-betdagi qoida.\n'when' — vaqt bog'lovchisi.",
-       "speak": "5  Kate was very ............ when she won first prize in the art competition."
+       "speak": "5  Kate was very ............ when she won first prize in the art competition.",
+       "speakAnswer": "happy"
       }
      ]
     }
@@ -4188,42 +4439,48 @@
        "answer": "easily",
        "promptUz": "UNDOSH + Y qoidasi",
        "whyUz": "easy → EASILY.\n's' undosh + 'y' → 'y' tushadi, -ILY qo'shiladi.\n'He passed the test easily.' = Testdan osonlik bilan o'tdi.",
-       "speak": "easy  →  ............"
+       "speak": "easy  →  ............",
+       "speakAnswer": "easily"
       },
       {
        "prompt": "proud  →  ............",
        "answer": "proudly",
        "promptUz": "Oddiy + LY",
        "whyUz": "proud → proudly.\n'proud' = faxrlanuvchi → 'proudly' = faxr bilan.\n'He smiled proudly.' = U faxr bilan jilmaydi.",
-       "speak": "proud  →  ............"
+       "speak": "proud  →  ............",
+       "speakAnswer": "proudly"
       },
       {
        "prompt": "happy  →  ............",
        "answer": "happily",
        "promptUz": "UNDOSH + Y qoidasi",
        "whyUz": "happy → HAPPILY.\n'p' undosh + 'y' → -ILY.\nCoursebook 79-betdagi namunada ham bor:\n'The child smiled HAPPILY.'",
-       "speak": "happy  →  ............"
+       "speak": "happy  →  ............",
+       "speakAnswer": "happily"
       },
       {
        "prompt": "good  →  ............",
        "answer": "well",
        "promptUz": "ISTISNO — butunlay boshqa so'z",
        "whyUz": "good → WELL.\n'goodly' shakli YO'Q.\n48-betdagi 'Note: good → well' qoidasi.\n'He sings WELL.' = U yaxshi kuylaydi.",
-       "speak": "good  →  ............"
+       "speak": "good  →  ............",
+       "speakAnswer": "well"
       },
       {
        "prompt": "close  →  ............",
        "answer": "closely",
        "promptUz": "Oddiy + LY (oxiridagi 'e' saqlanadi)",
        "whyUz": "close → CLOSELY.\nOxiri '-e' bo'lsa ham faqat -LY qo'shiladi.\n'Look CLOSELY' = diqqat bilan qarang.\nDIQQAT: 'close' sifat sifatida ham RAVISh bo'ladi —\n'He lives CLOSE to the school' (yaqin).",
-       "speak": "close  →  ............"
+       "speak": "close  →  ............",
+       "speakAnswer": "closely"
       },
       {
        "prompt": "sleepy  →  ............",
        "answer": "sleepily",
        "promptUz": "UNDOSH + Y qoidasi",
        "whyUz": "sleepy → SLEEPILY.\n'p' undosh + 'y' → -ILY.\nCoursebook 81-betdagi 21-mashqda bor edi:\n'he went SLEEPILY to the window'.",
-       "speak": "sleepy  →  ............"
+       "speak": "sleepy  →  ............",
+       "speakAnswer": "sleepily"
       }
      ]
     },
@@ -4243,70 +4500,80 @@
        "answer": "tightly",
        "promptUz": "Oddiy + LY",
        "whyUz": "tight → tightly.\nCoursebook 77-betda: 'closed the car windows TIGHTLY'.",
-       "speak": "1  tight  →  ............"
+       "speak": "1  tight  →  ............",
+       "speakAnswer": "tightly"
       },
       {
        "prompt": "2  loud  →  ............",
        "answer": "loudly",
        "promptUz": "Oddiy + LY",
        "whyUz": "loud → loudly.\nCoursebook 77-betda: 'The lions roared LOUDLY'.",
-       "speak": "2  loud  →  ............"
+       "speak": "2  loud  →  ............",
+       "speakAnswer": "loudly"
       },
       {
        "prompt": "3  sudden  →  ............",
        "answer": "suddenly",
        "promptUz": "Oddiy + LY",
        "whyUz": "sudden → suddenly.\nHikoyalarda BURILISh nuqtasini bildiradi.",
-       "speak": "3  sudden  →  ............"
+       "speak": "3  sudden  →  ............",
+       "speakAnswer": "suddenly"
       },
       {
        "prompt": "4  desperate  →  ............",
        "answer": "desperately",
        "promptUz": "Oddiy + LY (oxiridagi 'e' saqlanadi)",
        "whyUz": "desperate → desperately.\nCoursebook 77-betda: 'Claire screamed DESPERATELY'.",
-       "speak": "4  desperate  →  ............"
+       "speak": "4  desperate  →  ............",
+       "speakAnswer": "desperately"
       },
       {
        "prompt": "5  quick  →  ............",
        "answer": "quickly",
        "promptUz": "Oddiy + LY",
        "whyUz": "quick → quickly.\nCoursebook 77-betda: 'jumped out of the car QUICKLY'.",
-       "speak": "5  quick  →  ............"
+       "speak": "5  quick  →  ............",
+       "speakAnswer": "quickly"
       },
       {
        "prompt": "6  nervous  →  ............",
        "answer": "nervously",
        "promptUz": "Oddiy + LY",
        "whyUz": "nervous → nervously.\nCoursebook 81-betdagi 21-mashqda bor edi.",
-       "speak": "6  nervous  →  ............"
+       "speak": "6  nervous  →  ............",
+       "speakAnswer": "nervously"
       },
       {
        "prompt": "7  immediate  →  ............",
        "answer": "immediately",
        "promptUz": "Oddiy + LY (oxiridagi 'e' saqlanadi)",
        "whyUz": "immediate → immediately.\nCoursebook 80-betda: 'ALMOST IMMEDIATELY, another jeep\narrived'.",
-       "speak": "7  immediate  →  ............"
+       "speak": "7  immediate  →  ............",
+       "speakAnswer": "immediately"
       },
       {
        "prompt": "8  fast  →  ............",
        "answer": "fast",
        "promptUz": "ISTISNO — shakli O'ZGARMAYDI",
        "whyUz": "fast → FAST.\n'fastly' shakli YO'Q.\n48-betdagi 3-qoida.\n'She can run FAST.' = U tez yugura oladi.",
-       "speak": "8  fast  →  ............"
+       "speak": "8  fast  →  ............",
+       "speakAnswer": "fast"
       },
       {
        "prompt": "9  careful  →  ............",
        "answer": "carefully",
        "promptUz": "Oddiy + LY",
        "whyUz": "careful → carefully.\n48-betdagi asosiy namuna: 'He drives CAREFULLY'.",
-       "speak": "9  careful  →  ............"
+       "speak": "9  careful  →  ............",
+       "speakAnswer": "carefully"
       },
       {
        "prompt": "10  hard  →  ............",
        "answer": "hard",
        "promptUz": "ISTISNO — shakli O'ZGARMAYDI",
        "whyUz": "hard → HARD.\n48-betdagi 3-qoida.\n'He works HARD.' = U ko'p ishlaydi.\nDIQQAT: 'hardly' shakli BOR, lekin ma'nosi\n'DEYARLI EMAS' — butunlay boshqa:\n'He HARDLY works' = U deyarli ishlamaydi.",
-       "speak": "10  hard  →  ............"
+       "speak": "10  hard  →  ............",
+       "speakAnswer": "hard"
       }
      ]
     },
@@ -4329,7 +4596,8 @@
         "quick",
         "quickly"
        ],
-       "whyUz": "'dressed' FE'LINI aniqlaydi → RAVISh → QUICKLY.\nSavol: qanday kiyindi? Tez.\n'to dress' = kiyinmoq."
+       "whyUz": "'dressed' FE'LINI aniqlaydi → RAVISh → QUICKLY.\nSavol: qanday kiyindi? Tez.\n'to dress' = kiyinmoq.",
+       "speakAnswer": "quickly"
       },
       {
        "prompt": "2  She looked beautiful / beautifully on her wedding day.",
@@ -4339,7 +4607,8 @@
         "beautiful",
         "beautifully"
        ],
-       "whyUz": "'look' = KO'RINMOQ (harakat emas!) → SIFAT → BEAUTIFUL.\nMa'nosi: u go'zal KO'RINDI.\nDIQQAT — ENG MUHIM ISTISNO:\n'look', 'feel', 'seem' fe'llaridan keyin SIFAT keladi.\n'She looked beautifully' XATO."
+       "whyUz": "'look' = KO'RINMOQ (harakat emas!) → SIFAT → BEAUTIFUL.\nMa'nosi: u go'zal KO'RINDI.\nDIQQAT — ENG MUHIM ISTISNO:\n'look', 'feel', 'seem' fe'llaridan keyin SIFAT keladi.\n'She looked beautifully' XATO.",
+       "speakAnswer": "beautiful"
       },
       {
        "prompt": "3  Sudden / Suddenly it started to rain.",
@@ -4349,7 +4618,8 @@
         "Sudden",
         "Suddenly"
        ],
-       "whyUz": "'SUDDENLY' — RAVISh, butun gapga tegishli.\nGap boshida turadi.\n'Sudden' SIFAT bo'lgani uchun bu yerda mos kelmaydi\n(otdan oldin turishi kerak edi: 'a sudden noise')."
+       "whyUz": "'SUDDENLY' — RAVISh, butun gapga tegishli.\nGap boshida turadi.\n'Sudden' SIFAT bo'lgani uchun bu yerda mos kelmaydi\n(otdan oldin turishi kerak edi: 'a sudden noise').",
+       "speakAnswer": "Suddenly"
       },
       {
        "prompt": "4  Richard can paint very good / well.",
@@ -4359,7 +4629,8 @@
         "good",
         "well"
        ],
-       "whyUz": "'paint' FE'LINI aniqlaydi → RAVISh kerak.\n'good' ning ravishi — WELL (48-betdagi istisno).\n'He can paint very GOOD' XATO — juda ko'p uchraydigan xato."
+       "whyUz": "'paint' FE'LINI aniqlaydi → RAVISh kerak.\n'good' ning ravishi — WELL (48-betdagi istisno).\n'He can paint very GOOD' XATO — juda ko'p uchraydigan xato.",
+       "speakAnswer": "well"
       },
       {
        "prompt": "5  Hannah desperate / desperately tried to open the window.",
@@ -4369,7 +4640,8 @@
         "desperate",
         "desperately"
        ],
-       "whyUz": "'tried' FE'LINI aniqlaydi → RAVISh → DESPERATELY.\nSavol: qanday urindi? Jon holatda.\nDIQQAT: ravish bu yerda fe'ldan OLDIN turibdi."
+       "whyUz": "'tried' FE'LINI aniqlaydi → RAVISh → DESPERATELY.\nSavol: qanday urindi? Jon holatda.\nDIQQAT: ravish bu yerda fe'ldan OLDIN turibdi.",
+       "speakAnswer": "desperately"
       },
       {
        "prompt": "6  You are very lucky / luckily you weren't hurt.",
@@ -4379,7 +4651,8 @@
         "lucky",
         "luckily"
        ],
-       "whyUz": "'are' ('to be') dan keyin SIFAT keladi → LUCKY.\nMa'nosi: siz omadlisiz.\n'You are luckily' XATO.\n'to be hurt' = jarohat olmoq."
+       "whyUz": "'are' ('to be') dan keyin SIFAT keladi → LUCKY.\nMa'nosi: siz omadlisiz.\n'You are luckily' XATO.\n'to be hurt' = jarohat olmoq.",
+       "speakAnswer": "lucky"
       },
       {
        "prompt": "7  Don won first prize and was very proud / proudly.",
@@ -4389,7 +4662,8 @@
         "proud",
         "proudly"
        ],
-       "whyUz": "'was' ('to be') dan keyin SIFAT keladi → PROUD.\nMa'nosi: u juda faxrlanardi.\n6-band bilan bir xil qoida.\nCoursebook 79-betdagi 16-mashqda ham 'He felt PROUD'."
+       "whyUz": "'was' ('to be') dan keyin SIFAT keladi → PROUD.\nMa'nosi: u juda faxrlanardi.\n6-band bilan bir xil qoida.\nCoursebook 79-betdagi 16-mashqda ham 'He felt PROUD'.",
+       "speakAnswer": "proud"
       },
       {
        "prompt": "8  \"Help, help me!\" she shouted loud / loudly.",
@@ -4399,7 +4673,8 @@
         "loud",
         "loudly"
        ],
-       "whyUz": "'shouted' FE'LINI aniqlaydi → RAVISh → LOUDLY.\nSavol: qanday qichqirdi? Baland ovozda."
+       "whyUz": "'shouted' FE'LINI aniqlaydi → RAVISh → LOUDLY.\nSavol: qanday qichqirdi? Baland ovozda.",
+       "speakAnswer": "loudly"
       },
       {
        "prompt": "9  My sister is a very careless / carelessly driver.",
@@ -4409,7 +4684,8 @@
         "careless",
         "carelessly"
        ],
-       "whyUz": "'driver' OTINI aniqlaydi → SIFAT → CARELESS.\nSavol: qanday haydovchi? Ehtiyotsiz.\n'careless' = ehtiyotsiz ('careful' ning aksi).\n'-less' qo'shimchasi 'siz' ma'nosini beradi:\ncare + less = g'amxo'rliksiz."
+       "whyUz": "'driver' OTINI aniqlaydi → SIFAT → CARELESS.\nSavol: qanday haydovchi? Ehtiyotsiz.\n'careless' = ehtiyotsiz ('careful' ning aksi).\n'-less' qo'shimchasi 'siz' ma'nosini beradi:\ncare + less = g'amxo'rliksiz.",
+       "speakAnswer": "careless"
       }
      ]
     }
@@ -4436,31 +4712,38 @@
      "tasks": [
       {
        "left": "1  I washed my dress",
-       "right": "d  because I wanted to wear it to the party."
+       "right": "d  because I wanted to wear it to the party.",
+       "speakAnswer": "d  because I wanted to wear it to the party."
       },
       {
        "left": "2  It was raining outside",
-       "right": "a  so I took my umbrella."
+       "right": "a  so I took my umbrella.",
+       "speakAnswer": "a  so I took my umbrella."
       },
       {
        "left": "3  I was in bed",
-       "right": "f  when I heard a strange noise."
+       "right": "f  when I heard a strange noise.",
+       "speakAnswer": "f  when I heard a strange noise."
       },
       {
        "left": "4  I woke up early",
-       "right": "e  and I had breakfast."
+       "right": "e  and I had breakfast.",
+       "speakAnswer": "e  and I had breakfast."
       },
       {
        "left": "5  She put on her pyjamas",
-       "right": "g  then she went to bed."
+       "right": "g  then she went to bed.",
+       "speakAnswer": "g  then she went to bed."
       },
       {
        "left": "6  He studied hard",
-       "right": "c  but he failed the test."
+       "right": "c  but he failed the test.",
+       "speakAnswer": "c  but he failed the test."
       },
       {
        "left": "7  We didn't buy the house",
-       "right": "b  because it was expensive."
+       "right": "b  because it was expensive.",
+       "speakAnswer": "b  because it was expensive."
       }
      ]
     },
@@ -4485,7 +4768,8 @@
         "because"
        ],
        "whyUz": "SABAB (charchagan) → NATIJA (yotishga qaror qildi) → SO.\nOldidan VERGUL bor — bu ham 'so' ni ko'rsatadi.\n48-betdagi misolga o'xshash:\n'I was very tired, SO I decided to go to bed.'",
-       "speak": "1  Sally was tired, ............ she decided to go to bed."
+       "speak": "1  Sally was tired, ............ she decided to go to bed.",
+       "speakAnswer": "so"
       },
       {
        "prompt": "2  She was asleep ............ the telephone rang.",
@@ -4497,7 +4781,8 @@
         "so"
        ],
        "whyUz": "WHEN — VAQT.\nDavom etayotgan holat (uxlab yotgan) +\nto'satdan bo'lgan voqea (telefon jiringladi).\nring → RANG (noto'g'ri fe'l).",
-       "speak": "2  She was asleep ............ the telephone rang."
+       "speak": "2  She was asleep ............ the telephone rang.",
+       "speakAnswer": "when"
       },
       {
        "prompt": "3  She got up ............ answered the phone ...",
@@ -4509,7 +4794,8 @@
         "because"
        ],
        "whyUz": "AND — ketma-ketlik.\nDIQQAT: ikkinchi qismda ega ('she') TUShIB QOLGAN —\n'she got up and (she) answered' — bu 'and' belgisi.\n'get up' = o'rnidan turmoq.",
-       "speak": "3  She got up ............ answered the phone ..."
+       "speak": "3  She got up ............ answered the phone ...",
+       "speakAnswer": "and"
       },
       {
        "prompt": "4  ... ............ no one spoke on the other end.",
@@ -4521,7 +4807,8 @@
         "because"
        ],
        "whyUz": "BUT — QARAMA-QARShILIK.\nTelefonga javob berdi ↔ lekin hech kim gapirmadi —\nkutilmagan natija.\nspeak → SPOKE (noto'g'ri fe'l).\n'on the other end' = narigi tomonda (telefonda).",
-       "speak": "4  ... ............ no one spoke on the other end."
+       "speak": "4  ... ............ no one spoke on the other end.",
+       "speakAnswer": "but"
       },
       {
        "prompt": "5  Sally hung up the phone ............ went back to bed.",
@@ -4533,7 +4820,8 @@
         "because"
        ],
        "whyUz": "AND — ketma-ketlik.\nEga yana TUShIB QOLGAN: 'Sally hung up ... and (she) went'.\n'hang up' = go'shakni qo'ymoq;  hang → HUNG.\n'go back' = qaytmoq.",
-       "speak": "5  Sally hung up the phone ............ went back to bed."
+       "speak": "5  Sally hung up the phone ............ went back to bed.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "6  She couldn't sleep, ............ she went into the kitchen ...",
@@ -4545,7 +4833,8 @@
         "because"
        ],
        "whyUz": "SABAB (uxlay olmadi) → NATIJA (oshxonaga bordi) → SO.\nOldidan VERGUL bor.\n1-band bilan bir xil mantiq.\n'go INTO' — harakat predlogi (48-bet).",
-       "speak": "6  She couldn't sleep, ............ she went into the kitchen ..."
+       "speak": "6  She couldn't sleep, ............ she went into the kitchen ...",
+       "speakAnswer": "so"
       },
       {
        "prompt": "7  ... ............ made some tea.",
@@ -4557,7 +4846,8 @@
         "because"
        ],
        "whyUz": "AND — ketma-ketlik.\nEga TUShIB QOLGAN: 'she went into the kitchen and (she)\nmade some tea'.\n'make tea' = choy damlamoq (do EMAS, MAKE).",
-       "speak": "7  ... ............ made some tea."
+       "speak": "7  ... ............ made some tea.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "8  She was still in the kitchen ............ the phone rang again.",
@@ -4569,7 +4859,8 @@
         "so"
        ],
        "whyUz": "WHEN — VAQT.\n2-band bilan bir xil naqsh: davom etayotgan holat\n(oshxonada edi) + to'satdan bo'lgan voqea.\n'still' = hali ham.",
-       "speak": "8  She was still in the kitchen ............ the phone rang again."
+       "speak": "8  She was still in the kitchen ............ the phone rang again.",
+       "speakAnswer": "when"
       },
       {
        "prompt": "9  Sally didn't want to answer it, ............ she did.",
@@ -4581,7 +4872,8 @@
         "because"
        ],
        "whyUz": "BUT — QARAMA-QARShILIK.\nXohlamadi ↔ lekin qildi.\n'she DID' = she did answer it —\n'did' takrorlanmaslik uchun asosiy fe'l o'rniga turibdi.\n4-band bilan bir xil mantiq.",
-       "speak": "9  Sally didn't want to answer it, ............ she did."
+       "speak": "9  Sally didn't want to answer it, ............ she did.",
+       "speakAnswer": "but"
       },
       {
        "prompt": "10  She felt nervous ............ she was alone in the house.",
@@ -4593,7 +4885,8 @@
         "so"
        ],
        "whyUz": "BECAUSE — SABAB.\n'she was alone' — asabiylashishning sababi.\nRo'yxatdagi 'because' YAGONA marta shu yerda ishlatiladi.\n'feel nervous' — 'feel' dan keyin SIFAT (4-mashqning qoidasi).\n'alone' = yolg'iz.",
-       "speak": "10  She felt nervous ............ she was alone in the house."
+       "speak": "10  She felt nervous ............ she was alone in the house.",
+       "speakAnswer": "because"
       }
      ]
     },
@@ -4618,7 +4911,8 @@
         "so"
        ],
        "whyUz": "BECAUSE — SABAB.\n'he wanted to study' — erta turishning sababi.\n'study FOR a test' = testga tayyorlanmoq.",
-       "speak": "1  Mike got up early ............ he wanted to study for his test."
+       "speak": "1  Mike got up early ............ he wanted to study for his test.",
+       "speakAnswer": "because"
       },
       {
        "prompt": "2  First, I went to the supermarket, ............ I went to the post office.",
@@ -4630,7 +4924,8 @@
         "because"
        ],
        "whyUz": "THEN — ketma-ketlik.\n'First' so'zi bor → uning juftligi 'THEN'.\nCoursebook 77-betdagi ketma-ketlik so'zlari:\nfirst, then, after that, finally.",
-       "speak": "2  First, I went to the supermarket, ............ I went to the post office."
+       "speak": "2  First, I went to the supermarket, ............ I went to the post office.",
+       "speakAnswer": "then"
       },
       {
        "prompt": "3  Sophie was hungry, ............ she made a sandwich.",
@@ -4642,7 +4937,8 @@
         "because"
        ],
        "whyUz": "SO — NATIJA.\nSABAB (och edi) → NATIJA (buterbrod tayyorladi).\nOldidan VERGUL bor.\n'make a sandwich' — 'do' EMAS, MAKE.",
-       "speak": "3  Sophie was hungry, ............ she made a sandwich."
+       "speak": "3  Sophie was hungry, ............ she made a sandwich.",
+       "speakAnswer": "so"
       },
       {
        "prompt": "4  He turned off the lights ............ went to bed.",
@@ -4654,7 +4950,8 @@
         "so"
        ],
        "whyUz": "AND — ketma-ketlik.\nDIQQAT: ikkinchi qismda ega ('he') TUShIB QOLGAN —\nbu 'and' ning aniq belgisi.\n'turn off' = o'chirmoq (aksi: turn on = yoqmoq).",
-       "speak": "4  He turned off the lights ............ went to bed."
+       "speak": "4  He turned off the lights ............ went to bed.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "5  I was happy ............ I heard the great news.",
@@ -4666,7 +4963,8 @@
         "because"
        ],
        "whyUz": "WHEN — VAQT.\n'I heard the great news' — xursand bo'lgan PAYT.\nhear → HEARD (noto'g'ri fe'l).\n'the news' — SANALMAYDIGAN, doim 'the' bilan.",
-       "speak": "5  I was happy ............ I heard the great news."
+       "speak": "5  I was happy ............ I heard the great news.",
+       "speakAnswer": "when"
       },
       {
        "prompt": "6  David likes rock music, ............ his sister doesn't.",
@@ -4678,7 +4976,8 @@
         "so"
        ],
        "whyUz": "BUT — QARAMA-QARShILIK.\n'David LIKES' ↔ 'his sister DOESN'T' — teskari.\nOldidan VERGUL bor.\n'doesn't' = doesn't like rock music (qisqartirilgan).\nCoursebook 79-betdagi 12-mashqning 10-bandiga o'xshash.",
-       "speak": "6  David likes rock music, ............ his sister doesn't."
+       "speak": "6  David likes rock music, ............ his sister doesn't.",
+       "speakAnswer": "but"
       }
      ]
     }
@@ -4713,7 +5012,8 @@
         "towards"
        ],
        "whyUz": "'climbed UP the ladder' = narvondan yuqoriga chiqdi.\nRasmda o't o'chiruvchi daraxtdagi mushukni qutqarish uchun\nyuqoriga chiqyapti.\nAksi: down.\nCoursebook 81-betdagi 21-mashqda ham 'climbed onto a ladder'.",
-       "speak": "1  The firefighter climbed ............ the ladder."
+       "speak": "1  The firefighter climbed ............ the ladder.",
+       "speakAnswer": "up"
       },
       {
        "prompt": "2  She is looking ............ the camera lens.",
@@ -4725,7 +5025,8 @@
         "up"
        ],
        "whyUz": "'looking THROUGH the lens' = ob'ektiv ichidan qarab turibdi.\nTHROUGH — biror narsaning IChIDAN.\nShunga o'xshash: look through a window, look through binoculars.\n'a lens' = ob'ektiv, linza.",
-       "speak": "2  She is looking ............ the camera lens."
+       "speak": "2  She is looking ............ the camera lens.",
+       "speakAnswer": "through"
       },
       {
        "prompt": "3  He's putting a CD ............ the CD player.",
@@ -4737,7 +5038,8 @@
         "up"
        ],
        "whyUz": "'putting a CD INTO the player' = diskni pleyerga solyapti.\nINTO — IChKARIGA harakat.\nAksi: out of.\n'a CD player' = disk pleyeri (Workbook 38-betda ham bor edi).",
-       "speak": "3  He's putting a CD ............ the CD player."
+       "speak": "3  He's putting a CD ............ the CD player.",
+       "speakAnswer": "into"
       },
       {
        "prompt": "4  He is jumping ............ the hurdle.",
@@ -4749,7 +5051,8 @@
         "towards"
        ],
        "whyUz": "'jumping OVER the hurdle' = to'siq ustidan sakrayapti.\nOVER — USTIDAN, tegmasdan.\n'a hurdle' = to'siq (yengil atletikada).\nAksi: under.",
-       "speak": "4  He is jumping ............ the hurdle."
+       "speak": "4  He is jumping ............ the hurdle.",
+       "speakAnswer": "over"
       },
       {
        "prompt": "5  They are driving ............ the road.",
@@ -4761,7 +5064,8 @@
         "towards"
        ],
        "whyUz": "'driving ALONG the road' = yo'l bo'ylab ketyapti.\nALONG — UZUNASIGA harakat.\nDIQQAT: 'across the road' bo'lsa yo'lni KESIB o'tgan\nbo'lardi — rasmda esa yo'l bo'ylab ketishyapti.\nCoursebook 78-betda ham: 'He went ALONG the road'.",
-       "speak": "5  They are driving ............ the road."
+       "speak": "5  They are driving ............ the road.",
+       "speakAnswer": "along"
       },
       {
        "prompt": "6  He is running ............ the finishing line.",
@@ -4773,7 +5077,8 @@
         "up"
        ],
        "whyUz": "'running TOWARDS the finishing line' = marra tomon yuguryapti.\nTOWARDS — YO'NALISh (hali yetib bormagan).\n'the finishing line' = marra chizig'i.\nCoursebook 77-betda ham: 'ran TOWARDS the jeep'.",
-       "speak": "6  He is running ............ the finishing line."
+       "speak": "6  He is running ............ the finishing line.",
+       "speakAnswer": "towards"
       },
       {
        "prompt": "7  The child is going ............ the slide.",
@@ -4785,7 +5090,8 @@
         "up"
        ],
        "whyUz": "'going DOWN the slide' = sirg'anchiqdan pastga tushyapti.\nDOWN — PASTGA.\n1-band bilan JUFT: up ↔ down.\n'a slide' = sirg'anchiq.",
-       "speak": "7  The child is going ............ the slide."
+       "speak": "7  The child is going ............ the slide.",
+       "speakAnswer": "down"
       },
       {
        "prompt": "8  The man is going ............ the ladder.",
@@ -4797,7 +5103,8 @@
         "up"
        ],
        "whyUz": "'going UNDER the ladder' = narvon ostidan o'tyapti.\nUNDER — OSTIDAN.\n4-band bilan JUFT: over ↔ under.\nMADANIY ESLATMA: Britaniyada narvon ostidan o'tish\nomadsizlik keltiradi deb hisoblanadi —\nrasmda odamning yuzi xavotirli.",
-       "speak": "8  The man is going ............ the ladder."
+       "speak": "8  The man is going ............ the ladder.",
+       "speakAnswer": "under"
       }
      ]
     }
@@ -4827,35 +5134,40 @@
        "answer": "did you go",
        "promptUz": "'last night' — o'tgan zamon; qavsda ega bor → so'roq",
        "whyUz": "SO'ROQ shakli: DID + you + GO (asosiy shakl).\n'did you went' XATO.\n'last night' — past simple belgisi.",
-       "speak": "1  A: Where ............ (you/go) last night?"
+       "speak": "1  A: Where ............ (you/go) last night?",
+       "speakAnswer": "did you go"
       },
       {
        "prompt": "2  B: I ............ (go) to Ann's party.",
        "answer": "went",
        "promptUz": "Tasdiq; 'did' yo'q → o'tgan shakl",
        "whyUz": "TASDIQ shakli: go → WENT (noto'g'ri fe'l).\n1-band bilan SOLIShTIRING: savolda 'go', javobda 'went'.\n\"Ann'S party\" — egalik apostrofi.",
-       "speak": "2  B: I ............ (go) to Ann's party."
+       "speak": "2  B: I ............ (go) to Ann's party.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "3  A: ............ (you/have) fun?",
        "answer": "Did you have",
        "promptUz": "Qavsda ega bor → so'roq shakli",
        "whyUz": "SO'ROQ: DID + you + HAVE (asosiy shakl).\n'did you had' XATO.\n'have fun' = yaxshi vaqt o'tkazmoq.",
-       "speak": "3  A: ............ (you/have) fun?"
+       "speak": "3  A: ............ (you/have) fun?",
+       "speakAnswer": "Did you have"
       },
       {
        "prompt": "4  B: Oh, yes! It ............ (be) great!",
        "answer": "was",
        "promptUz": "'be' fe'li — 'did' kerakmi?",
        "whyUz": "'be' → WAS.\n'It' BIRLIK → was.\nDIQQAT: 'to be' fe'lida 'did' KERAK EMAS.",
-       "speak": "4  B: Oh, yes! It ............ (be) great!"
+       "speak": "4  B: Oh, yes! It ............ (be) great!",
+       "speakAnswer": "was"
       },
       {
        "prompt": "5  B: I came home very late and I ............ (go) straight to bed.",
        "answer": "went",
        "promptUz": "Tasdiq; 'did' yo'q",
        "whyUz": "go → WENT.\n'came' ham o'tgan shaklda (come → came) —\ngap butunlay o'tgan zamonda.\n'go straight to bed' = to'g'ri yotmoq.\n'go to bed' — artikl YO'Q.",
-       "speak": "5  B: I came home very late and I ............ (go) straight to bed."
+       "speak": "5  B: I came home very late and I ............ (go) straight to bed.",
+       "speakAnswer": "went"
       }
      ]
     },
@@ -4875,70 +5187,80 @@
        "answer": "Who drove to work?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "KITOBDAGI NAMUNA.\n'John' — EGA → WHO ...?\n'did' KERAK EMAS, fe'l O'TGAN shaklda ('drove').",
-       "speak": "John drove to work."
+       "speak": "John drove to work.",
+       "speakAnswer": "Who drove to work?"
       },
       {
        "prompt": "Kate did the shopping.",
        "answer": "What did Kate do?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'the shopping' — TO'LDIRUVChI → WHAT ...?\n'did' KERAK → 'What DID Kate DO?'\nDIQQAT: 'do' fe'li IKKI marta —\n'did' (yordamchi) + 'do' (asosiy).",
-       "speak": "Kate did the shopping."
+       "speak": "Kate did the shopping.",
+       "speakAnswer": "What did Kate do?"
       },
       {
        "prompt": "Alex went for a walk.",
        "answer": "Who went for a walk?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'Alex' — EGA → WHO ...?\n'did' KERAK EMAS, fe'l 'WENT' shaklida qoladi.\n1-band bilan bir xil naqsh.",
-       "speak": "Alex went for a walk."
+       "speak": "Alex went for a walk.",
+       "speakAnswer": "Who went for a walk?"
       },
       {
        "prompt": "She opened the door.",
        "answer": "What did she open?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'the door' — TO'LDIRUVChI → WHAT ...?\n'What DID she OPEN?' — 'open' asosiy shaklda.\n'did she opened' XATO.",
-       "speak": "She opened the door."
+       "speak": "She opened the door.",
+       "speakAnswer": "What did she open?"
       },
       {
        "prompt": "Sean visited his grandparents.",
        "answer": "Who visited his grandparents?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'Sean' — EGA → WHO ...?\nFe'l 'VISITED' shaklida qoladi.",
-       "speak": "Sean visited his grandparents."
+       "speak": "Sean visited his grandparents.",
+       "speakAnswer": "Who visited his grandparents?"
       },
       {
        "prompt": "They heard noises.",
        "answer": "What did they hear?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'noises' — TO'LDIRUVChI → WHAT ...?\n'What DID they HEAR?' — 'hear' asosiy shaklda\n('heard' EMAS).\nCoursebook 79-betdagi 15-mashqda ham 'noises' bor edi.",
-       "speak": "They heard noises."
+       "speak": "They heard noises.",
+       "speakAnswer": "What did they hear?"
       },
       {
        "prompt": "Helen called the police.",
        "answer": "Who called the police?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'Helen' — EGA → WHO ...?\nFe'l 'CALLED' shaklida qoladi.\nCoursebook 81-betdagi favqulodda xizmat mavzusiga bog'liq.",
-       "speak": "Helen called the police."
+       "speak": "Helen called the police.",
+       "speakAnswer": "Who called the police?"
       },
       {
        "prompt": "Sophie wore a red dress.",
        "answer": "What did Sophie wear?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'a red dress' — TO'LDIRUVChI → WHAT ...?\n'What DID Sophie WEAR?' — 'wear' asosiy shaklda\n('wore' EMAS).\nwear → WORE (noto'g'ri fe'l).",
-       "speak": "Sophie wore a red dress."
+       "speak": "Sophie wore a red dress.",
+       "speakAnswer": "What did Sophie wear?"
       },
       {
        "prompt": "Jimmy is a careful driver.",
        "answer": "Who is a careful driver?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'Jimmy' — EGA → WHO ...?\nDIQQAT — BU BAND BOShQAChA:\nfe'l 'IS' ('to be', HOZIRGI zamon) —\nshuning uchun 'did' ham, o'tgan zamon ham YO'Q.\n'a careful driver' — 48 va 49-betlardagi misol.",
-       "speak": "Jimmy is a careful driver."
+       "speak": "Jimmy is a careful driver.",
+       "speakAnswer": "Who is a careful driver?"
       },
       {
        "prompt": "They went to the beach.",
        "answer": "Where did they go?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "'the beach' — JOY → WHERE ...?\n'Where DID they GO?' — 'go' asosiy shaklda.\nDIQQAT: javobda 'TO the beach' bor edi, savolda 'to'\nKERAK EMAS — 'where' allaqachon joyni so'raydi.",
-       "speak": "They went to the beach."
+       "speak": "They went to the beach.",
+       "speakAnswer": "Where did they go?"
       }
      ]
     },
@@ -4958,42 +5280,48 @@
        "answer": "'ll open (will open)",
        "promptUz": "Ayni damda qabul qilingan QAROR",
        "whyUz": "'It's too hot' — hozirgi holat.\nUnga javoban AYNI DAMDA qaror qabul qilinyapti →\nWILL ('ll open).\n10-unitdagi qoida: 'will' — bashorat va shu ondagi qaror.\n'I'll open the window' = derazani ochaman.\nDIQQAT: 'I open' (present simple) bo'lsa —\nbu odat bo'lardi, mantiqsiz.",
-       "speak": "1  It's too hot. I ............ (open) the window."
+       "speak": "1  It's too hot. I ............ (open) the window.",
+       "speakAnswer": "'ll open"
       },
       {
        "prompt": "2  Yesterday, when she ............ (come) home from work, ...",
        "answer": "came",
        "promptUz": "'Yesterday' — o'tgan zamon; noto'g'ri fe'l",
        "whyUz": "'Yesterday' → PAST SIMPLE.\ncome → CAME (noto'g'ri fe'l).\n'come home FROM work' — 'from' shart.",
-       "speak": "2  Yesterday, when she ............ (come) home from work, ..."
+       "speak": "2  Yesterday, when she ............ (come) home from work, ...",
+       "speakAnswer": "came"
       },
       {
        "prompt": "2  ... she ............ (find) a dog in the garden.",
        "answer": "found",
        "promptUz": "O'tgan zamon; noto'g'ri fe'l",
        "whyUz": "PAST SIMPLE. find → FOUND (noto'g'ri fe'l).\nIkkala fe'l ham o'tgan zamonda —\n'when' ikkisini bog'laydi (49-betdagi qoida).",
-       "speak": "2  ... she ............ (find) a dog in the garden."
+       "speak": "2  ... she ............ (find) a dog in the garden.",
+       "speakAnswer": "found"
       },
       {
        "prompt": "3  What ............ (you/work) on at the moment?",
        "answer": "are you working",
        "promptUz": "'at the moment' — qaysi zamon?",
        "whyUz": "'at the moment' → PRESENT CONTINUOUS.\nSO'ROQ shakli: ARE + you + WORKING.\n'work ON something' = biror narsa ustida ishlamoq —\n'on' gap OXIRIDA qoladi.",
-       "speak": "3  What ............ (you/work) on at the moment?"
+       "speak": "3  What ............ (you/work) on at the moment?",
+       "speakAnswer": "are you working"
       },
       {
        "prompt": "4  ............ (you/enjoy) the party last night?",
        "answer": "Did you enjoy",
        "promptUz": "'last night' — qaysi zamon?",
        "whyUz": "'last night' → PAST SIMPLE.\nSO'ROQ shakli: DID + you + ENJOY (asosiy shakl).\n'did you enjoyed' XATO.\n9-mashqning 3-bandiga o'xshash.",
-       "speak": "4  ............ (you/enjoy) the party last night?"
+       "speak": "4  ............ (you/enjoy) the party last night?",
+       "speakAnswer": "Did you enjoy"
       },
       {
        "prompt": "5  She ............ (live) in a big house outside London.",
        "answer": "lives",
        "promptUz": "Vaqt belgisi yo'q — doimiy holat",
        "whyUz": "Yashash joyi — DOIMIY holat, vaqt belgisi yo'q →\nPRESENT SIMPLE.\n'She' 3-shaxs BIRLIK → live + S = LIVES.\n'outside London' = London tashqarisida.",
-       "speak": "5  She ............ (live) in a big house outside London."
+       "speak": "5  She ............ (live) in a big house outside London.",
+       "speakAnswer": "lives"
       }
      ]
     }
@@ -5027,7 +5355,8 @@
         "B had",
         "C are having"
        ],
-       "whyUz": "'yesterday' → PAST SIMPLE.\nhave → HAD (noto'g'ri fe'l).\n'have dinner' = kechki ovqat yemoq.\n\"my parents' house\" — KO'PLIK otda apostrof 's' dan KEYIN."
+       "whyUz": "'yesterday' → PAST SIMPLE.\nhave → HAD (noto'g'ri fe'l).\n'have dinner' = kechki ovqat yemoq.\n\"my parents' house\" — KO'PLIK otda apostrof 's' dan KEYIN.",
+       "speakAnswer": "B had"
       },
       {
        "prompt": "2  The horse jumped ............ the fence.",
@@ -5038,7 +5367,8 @@
         "B across",
         "C over"
        ],
-       "whyUz": "'jump OVER a fence' = panjara ustidan sakramoq.\nOVER — USTIDAN, tegmasdan.\nCoursebook 78-betda ham: 'it jumped OVER the fence'.\n'across' — ko'ndalang (dala, ko'cha uchun);\n'on' — ustida turish (harakat emas)."
+       "whyUz": "'jump OVER a fence' = panjara ustidan sakramoq.\nOVER — USTIDAN, tegmasdan.\nCoursebook 78-betda ham: 'it jumped OVER the fence'.\n'across' — ko'ndalang (dala, ko'cha uchun);\n'on' — ustida turish (harakat emas).",
+       "speakAnswer": "C over"
       },
       {
        "prompt": "3  They ............ their breakfast right now.",
@@ -5049,7 +5379,8 @@
         "B eat",
         "C eating"
        ],
-       "whyUz": "'right now' → PRESENT CONTINUOUS.\n'They' KO'PLIK → ARE + eating.\nDIQQAT: 'C eating' — yordamchi fe'lsiz -ing shakli\nyolg'iz ishlatilmaydi."
+       "whyUz": "'right now' → PRESENT CONTINUOUS.\n'They' KO'PLIK → ARE + eating.\nDIQQAT: 'C eating' — yordamchi fe'lsiz -ing shakli\nyolg'iz ishlatilmaydi.",
+       "speakAnswer": "A are eating"
       },
       {
        "prompt": "4  I think there ............ underwater cities in the future.",
@@ -5060,7 +5391,8 @@
         "B will be",
         "C was"
        ],
-       "whyUz": "'in the future' → KELASI zamon → WILL BE.\n'I think ... will ...' — BAShORAT qolipi (10-unit).\n'underwater' = suv ostidagi.\nDIQQAT: 'there will be' — 'there is/are' ning kelasi shakli."
+       "whyUz": "'in the future' → KELASI zamon → WILL BE.\n'I think ... will ...' — BAShORAT qolipi (10-unit).\n'underwater' = suv ostidagi.\nDIQQAT: 'there will be' — 'there is/are' ning kelasi shakli.",
+       "speakAnswer": "B will be"
       },
       {
        "prompt": "5  Doug ............ painting the door yesterday.",
@@ -5071,7 +5403,8 @@
         "B is finishing",
         "C finishes"
        ],
-       "whyUz": "'yesterday' → PAST SIMPLE → FINISHED.\n'finish + fe'l-ing' = ...ni tugatmoq.\n'finish PAINTING' — 'to paint' EMAS."
+       "whyUz": "'yesterday' → PAST SIMPLE → FINISHED.\n'finish + fe'l-ing' = ...ni tugatmoq.\n'finish PAINTING' — 'to paint' EMAS.",
+       "speakAnswer": "A finished"
       },
       {
        "prompt": "6  I ............ to a party last weekend.",
@@ -5082,7 +5415,8 @@
         "B go",
         "C am going"
        ],
-       "whyUz": "'last weekend' → PAST SIMPLE.\ngo → WENT (noto'g'ri fe'l)."
+       "whyUz": "'last weekend' → PAST SIMPLE.\ngo → WENT (noto'g'ri fe'l).",
+       "speakAnswer": "A went"
       },
       {
        "prompt": "7  Tina ............ at the moment.",
@@ -5093,7 +5427,8 @@
         "B is sleeping",
         "C slept"
        ],
-       "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'Tina' BIRLIK → IS + sleeping."
+       "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'Tina' BIRLIK → IS + sleeping.",
+       "speakAnswer": "B is sleeping"
       },
       {
        "prompt": "8  Tom ............ three letters yesterday.",
@@ -5104,7 +5439,8 @@
         "B is writing",
         "C wrote"
        ],
-       "whyUz": "'yesterday' → PAST SIMPLE.\nwrite → WROTE (noto'g'ri fe'l)."
+       "whyUz": "'yesterday' → PAST SIMPLE.\nwrite → WROTE (noto'g'ri fe'l).",
+       "speakAnswer": "C wrote"
       },
       {
        "prompt": "9  I live in a flat ............ the city centre.",
@@ -5115,7 +5451,8 @@
         "B on",
         "C down"
        ],
-       "whyUz": "'IN the city centre' = shahar markazida.\nJoy ichida bo'lish → IN.\n'a flat' = kvartira.\nDIQQAT: bu HARAKAT predlogi emas — joy predlogi."
+       "whyUz": "'IN the city centre' = shahar markazida.\nJoy ichida bo'lish → IN.\n'a flat' = kvartira.\nDIQQAT: bu HARAKAT predlogi emas — joy predlogi.",
+       "speakAnswer": "A in"
       },
       {
        "prompt": "10  She ............ count to ten when she was four.",
@@ -5126,7 +5463,8 @@
         "B could",
         "C can't"
        ],
-       "whyUz": "'when she WAS four' → O'TGAN zamon → COULD.\n9-unitdagi qoida: 'can' ning o'tgan shakli — COULD.\n'count TO ten' = o'ngacha sanamoq.\n'can't' — ma'nosi ham mos kelmaydi (4 yoshli bola\no'ngacha sanay oladi)."
+       "whyUz": "'when she WAS four' → O'TGAN zamon → COULD.\n9-unitdagi qoida: 'can' ning o'tgan shakli — COULD.\n'count TO ten' = o'ngacha sanamoq.\n'can't' — ma'nosi ham mos kelmaydi (4 yoshli bola\no'ngacha sanay oladi).",
+       "speakAnswer": "B could"
       },
       {
        "prompt": "11  ............ did you go out to dinner with?",
@@ -5137,7 +5475,8 @@
         "B Who",
         "C When"
        ],
-       "whyUz": "Gap oxirida 'WITH' bor → ODAM so'ralmoqda → WHO.\n'Who did you go out to dinner WITH?'\n= Kim bilan ovqatlanishga chiqding?\nDIQQAT: 'with' gap OXIRIDA qoladi —\nbu 'who' ning aniq belgisi."
+       "whyUz": "Gap oxirida 'WITH' bor → ODAM so'ralmoqda → WHO.\n'Who did you go out to dinner WITH?'\n= Kim bilan ovqatlanishga chiqding?\nDIQQAT: 'with' gap OXIRIDA qoladi —\nbu 'who' ning aniq belgisi.",
+       "speakAnswer": "B Who"
       },
       {
        "prompt": "12  It ............ heavily today.",
@@ -5148,7 +5487,8 @@
         "B snows",
         "C is snowing"
        ],
-       "whyUz": "'today' + 'heavily' → hozir sodir bo'layotgan\nharakat → PRESENT CONTINUOUS.\n'It' → IS + snowing.\nDIQQAT: 'A snowing' — yordamchi fe'lsiz -ing yolg'iz\nishlatilmaydi.\n'heavily' — RAVISh (11-unitdagi qoida)."
+       "whyUz": "'today' + 'heavily' → hozir sodir bo'layotgan\nharakat → PRESENT CONTINUOUS.\n'It' → IS + snowing.\nDIQQAT: 'A snowing' — yordamchi fe'lsiz -ing yolg'iz\nishlatilmaydi.\n'heavily' — RAVISh (11-unitdagi qoida).",
+       "speakAnswer": "C is snowing"
       },
       {
        "prompt": "13  Do you believe there ............ life on other planets?",
@@ -5159,7 +5499,8 @@
         "B be",
         "C are"
        ],
-       "whyUz": "'life' — SANALMAYDIGAN ot → THERE IS.\n'there are' KO'PLIK otlar bilan ishlatiladi.\n'a planet' = sayyora.\n'to believe' = ishonmoq."
+       "whyUz": "'life' — SANALMAYDIGAN ot → THERE IS.\n'there are' KO'PLIK otlar bilan ishlatiladi.\n'a planet' = sayyora.\n'to believe' = ishonmoq.",
+       "speakAnswer": "A is"
       },
       {
        "prompt": "14  Put the cups ............ the shelf.",
@@ -5170,7 +5511,8 @@
         "B up",
         "C in"
        ],
-       "whyUz": "'put ON the shelf' = javonga (ustiga) qo'ymoq.\nJavon — tekis yuza → ON.\n'a shelf' = javon;  ko'pligi: shelves.\n'in' bo'lsa yopiq joy bo'lardi (in the box)."
+       "whyUz": "'put ON the shelf' = javonga (ustiga) qo'ymoq.\nJavon — tekis yuza → ON.\n'a shelf' = javon;  ko'pligi: shelves.\n'in' bo'lsa yopiq joy bo'lardi (in the box).",
+       "speakAnswer": "A on"
       },
       {
        "prompt": "15  \"Help ............ ! I can't open the door.\"",
@@ -5181,7 +5523,8 @@
         "B me",
         "C mine"
        ],
-       "whyUz": "'Help ME!' — fe'ldan keyin TO'LDIRUVChI olmosh → ME.\n'my' — EGALIK sifati, otdan oldin turadi (my book).\n'mine' — EGALIK olmoshi, ot kerak emas (It's mine).\nCoursebook 80-betda ham: 'Please, someone help me!'"
+       "whyUz": "'Help ME!' — fe'ldan keyin TO'LDIRUVChI olmosh → ME.\n'my' — EGALIK sifati, otdan oldin turadi (my book).\n'mine' — EGALIK olmoshi, ot kerak emas (It's mine).\nCoursebook 80-betda ham: 'Please, someone help me!'",
+       "speakAnswer": "B me"
       },
       {
        "prompt": "16  She always ............ to bed at ten o'clock.",
@@ -5192,7 +5535,8 @@
         "B goes",
         "C will go"
        ],
-       "whyUz": "'always' → PRESENT SIMPLE (odat).\n'She' 3-shaxs BIRLIK → go + ES = GOES.\nDIQQAT: oxiri 'o' bo'lsa -ES qo'shiladi.\n'go to bed' — artikl YO'Q."
+       "whyUz": "'always' → PRESENT SIMPLE (odat).\n'She' 3-shaxs BIRLIK → go + ES = GOES.\nDIQQAT: oxiri 'o' bo'lsa -ES qo'shiladi.\n'go to bed' — artikl YO'Q.",
+       "speakAnswer": "B goes"
       },
       {
        "prompt": "17  I ............ my umbrella with me because it's raining.",
@@ -5203,7 +5547,8 @@
         "B taking",
         "C took"
        ],
-       "whyUz": "'because it's raining' — HOZIRGI holat.\nUnga javoban AYNI DAMDA qaror → WILL TAKE.\n50-betdagi 11-mashqning 1-bandiga o'xshash:\n'It's too hot. I'LL OPEN the window.'\n'an umbrella' = soyabon."
+       "whyUz": "'because it's raining' — HOZIRGI holat.\nUnga javoban AYNI DAMDA qaror → WILL TAKE.\n50-betdagi 11-mashqning 1-bandiga o'xshash:\n'It's too hot. I'LL OPEN the window.'\n'an umbrella' = soyabon.",
+       "speakAnswer": "A will take"
       },
       {
        "prompt": "18  Billy threw the ball ............ the swimming-pool.",
@@ -5214,7 +5559,8 @@
         "B into",
         "C up"
        ],
-       "whyUz": "'threw the ball INTO the pool' = to'pni havzaga tashladi.\nINTO — IChKARIGA harakat.\nthrow → THREW (noto'g'ri fe'l).\n'a swimming-pool' = suzish havzasi."
+       "whyUz": "'threw the ball INTO the pool' = to'pni havzaga tashladi.\nINTO — IChKARIGA harakat.\nthrow → THREW (noto'g'ri fe'l).\n'a swimming-pool' = suzish havzasi.",
+       "speakAnswer": "B into"
       }
      ]
     },
@@ -5425,7 +5771,8 @@
         "suddenly"
        ],
        "whyUz": "AUDIODAN ANIQLANADI — bu yerda eng mos variant.\nAsos: shovqin eshitib pastga yuguryapti —\nhali nima bo'lganini bilmaydi, xavotirda →\nNERVOUSLY (asabiy holda).\n'nervous' + -ly → ravish.",
-       "speak": "c  He ran ............ downstairs."
+       "speak": "c  He ran ............ downstairs.",
+       "speakAnswer": "nervously"
       },
       {
        "prompt": "d  He ............ rushed upstairs.",
@@ -5437,7 +5784,8 @@
         "carefully"
        ],
        "whyUz": "AUDIODAN ANIQLANADI — bu yerda eng mos variant.\nAsos: 'rush' (otilmoq) allaqachon tezlikni bildiradi,\nshuning uchun 'quickly' takror bo'lardi.\n'IMMEDIATELY rushed' = darhol otildi — tabiiy birikma.\nDIQQAT: ravish bu yerda fe'ldan OLDIN turibdi.",
-       "speak": "d  He ............ rushed upstairs."
+       "speak": "d  He ............ rushed upstairs.",
+       "speakAnswer": "immediately"
       },
       {
        "prompt": "e  He closed the door ............ .",
@@ -5449,7 +5797,8 @@
         "suddenly"
        ],
        "whyUz": "MA'NO JIHATDAN MAJBUR — boshqa ravish eshikka mos\nkelmaydi.\n'closed the door TIGHTLY' = eshikni mahkam yopdi\n(tutun kirmasligi uchun).\n77-betdagi hikoyada ham: 'closed the car windows TIGHTLY'.",
-       "speak": "e  He closed the door ............ ."
+       "speak": "e  He closed the door ............ .",
+       "speakAnswer": "tightly"
       },
       {
        "prompt": "f  \"Help!\" he shouted ............ .",
@@ -5461,7 +5810,8 @@
         "carefully"
        ],
        "whyUz": "MA'NO JIHATDAN MAJBUR.\n'shouted DESPERATELY' = jon holatda qichqirdi.\n77-betdagi hikoyada ham: 'Claire screamed DESPERATELY'.\n'desperate' + -ly → ravish.",
-       "speak": "f  \"Help!\" he shouted ............ ."
+       "speak": "f  \"Help!\" he shouted ............ .",
+       "speakAnswer": "desperately"
       },
       {
        "prompt": "g  He climbed ............ onto a ladder.",
@@ -5473,7 +5823,8 @@
         "suddenly"
        ],
        "whyUz": "AUDIODAN ANIQLANADI — bu yerda eng mos variant.\nAsos: uy yonyapti — narvonga TEZ chiqish kerak.\n'a ladder' = narvon.\n'climb ONTO' = ustiga chiqmoq.",
-       "speak": "g  He climbed ............ onto a ladder."
+       "speak": "g  He climbed ............ onto a ladder.",
+       "speakAnswer": "quickly"
       },
       {
        "prompt": "h  He climbed ............ down.",
@@ -5485,7 +5836,8 @@
         "suddenly"
        ],
        "whyUz": "AUDIODAN ANIQLANADI — bu yerda eng mos variant.\nAsos: narvondan tushish XAVFLI, shuning uchun\nEHTIYOTKORLIK bilan.\n'careful' + -ly → carefully (78-betdagi namuna).\ng-band bilan JUFT: tez chiqdi, ehtiyot bilan tushdi.",
-       "speak": "h  He climbed ............ down."
+       "speak": "h  He climbed ............ down.",
+       "speakAnswer": "carefully"
       }
      ]
     },
@@ -5503,32 +5855,38 @@
       {
        "prompt": "a — hikoyaning boshlanishi",
        "answer": "Tony suddenly heard noises.",
-       "promptUz": "a — hikoyaning boshlanishi"
+       "promptUz": "a — hikoyaning boshlanishi",
+       "speakAnswer": "Tony suddenly heard noises."
       },
       {
        "prompt": "b — birinchi harakat",
        "answer": "First, he went sleepily to the window.",
-       "promptUz": "b — birinchi harakat"
+       "promptUz": "b — birinchi harakat",
+       "speakAnswer": "First, he went sleepily to the window."
       },
       {
        "prompt": "c — keyingi harakat",
        "answer": "Next, he ran nervously downstairs.",
-       "promptUz": "c — keyingi harakat"
+       "promptUz": "c — keyingi harakat",
+       "speakAnswer": "Next, he ran nervously downstairs."
       },
       {
        "prompt": "d va e — shundan keyin",
        "answer": "After that, he immediately rushed upstairs and closed the door tightly.",
-       "promptUz": "d va e — shundan keyin"
+       "promptUz": "d va e — shundan keyin",
+       "speakAnswer": "After that, he immediately rushed upstairs and closed the door tightly."
       },
       {
        "prompt": "f — so'ng",
        "answer": "Then, \"Help!\" he shouted desperately.",
-       "promptUz": "f — so'ng"
+       "promptUz": "f — so'ng",
+       "speakAnswer": "Then, \"Help!\" he shouted desperately."
       },
       {
        "prompt": "g va h — nihoyat",
        "answer": "Finally, he climbed quickly onto a ladder and climbed carefully down.",
-       "promptUz": "g va h — nihoyat"
+       "promptUz": "g va h — nihoyat",
+       "speakAnswer": "Finally, he climbed quickly onto a ladder and climbed carefully down."
       }
      ]
     }
@@ -5561,7 +5919,8 @@
         "First",
         "Next"
        ],
-       "whyUz": "Bu — xulosaning BIRINCHI voqeasi → FIRST.\n'Next' oldingi voqeadan keyin kelganda ishlatiladi,\nlekin bu yerda oldin hech narsa bo'lmagan\n(faqat qaror qabul qilingan)."
+       "whyUz": "Bu — xulosaning BIRINCHI voqeasi → FIRST.\n'Next' oldingi voqeadan keyin kelganda ishlatiladi,\nlekin bu yerda oldin hech narsa bo'lmagan\n(faqat qaror qabul qilingan).",
+       "speakAnswer": "First"
       },
       {
        "prompt": "2  Finally / After that, he tried to start the car again.",
@@ -5571,7 +5930,8 @@
         "Finally",
         "After that"
        ],
-       "whyUz": "Hikoya HALI DAVOM ETADI → AFTER THAT.\n'Finally' faqat ENG OXIRGI voqea uchun —\nbu yerda hali yong'in, qutqaruv voqealari bor."
+       "whyUz": "Hikoya HALI DAVOM ETADI → AFTER THAT.\n'Finally' faqat ENG OXIRGI voqea uchun —\nbu yerda hali yong'in, qutqaruv voqealari bor.",
+       "speakAnswer": "After that"
       },
       {
        "prompt": "3  When / Just then, a park ranger came along in his jeep to help them.",
@@ -5581,7 +5941,8 @@
         "When",
         "Just then"
        ],
-       "whyUz": "'JUST THEN' — kutilmagan voqea uchun RAVISH,\ngap boshida mustaqil turadi.\n'When' esa BOG'LOVChI — undan keyin ERGASH GAP kerak:\n  'WHEN they were safe, they thanked him.'  ✓\n  'WHEN, a park ranger came ...'            ✗ XATO\n77-betdagi hikoyada ham aynan 'Just then' ishlatilgan."
+       "whyUz": "'JUST THEN' — kutilmagan voqea uchun RAVISH,\ngap boshida mustaqil turadi.\n'When' esa BOG'LOVChI — undan keyin ERGASH GAP kerak:\n  'WHEN they were safe, they thanked him.'  ✓\n  'WHEN, a park ranger came ...'            ✗ XATO\n77-betdagi hikoyada ham aynan 'Just then' ishlatilgan.",
+       "speakAnswer": "Just then"
       },
       {
        "prompt": "4  Finally / Last, another jeep arrived and chased the lions away.",
@@ -5591,7 +5952,8 @@
         "Finally",
         "Last"
        ],
-       "whyUz": "'FINALLY' — eng oxirgi voqea uchun standart RAVISH.\n'Last' — SIFAT yoki ravish, lekin gap boshida\nvoqealar ketma-ketligida ishlatilmaydi.\n'At last' esa to'g'ri bo'lardi."
+       "whyUz": "'FINALLY' — eng oxirgi voqea uchun standart RAVISH.\n'Last' — SIFAT yoki ravish, lekin gap boshida\nvoqealar ketma-ketligida ishlatilmaydi.\n'At last' esa to'g'ri bo'lardi.",
+       "speakAnswer": "Finally"
       }
      ]
     },
@@ -5762,37 +6124,43 @@
        "prompt": "A: 1) ............ ?",
        "answer": "What did you do last night",
        "promptUz": "Javob: 'I went to the cinema' — mashg'ulot",
-       "whyUz": "Javob MAShG'ULOT ('went to the cinema') →\n'What did you do last night?'\nDialogning BIRINChI savoli — umumiy savol.\n11-mashqning 6-bandida ham shu savol bor edi."
+       "whyUz": "Javob MAShG'ULOT ('went to the cinema') →\n'What did you do last night?'\nDialogning BIRINChI savoli — umumiy savol.\n11-mashqning 6-bandida ham shu savol bor edi.",
+       "speakAnswer": "What did you do last night"
       },
       {
        "prompt": "A: 2) ............ ?",
        "answer": "Who did you go with",
        "promptUz": "Javob: 'I went with Elaine' — odam",
-       "whyUz": "Javob ODAM ('with Elaine') → 'Who did you go WITH?'\nDIQQAT: 'with' gap OXIRIDA qoladi.\nBu — TO'LDIRUVChI savoli → 'did' KERAK."
+       "whyUz": "Javob ODAM ('with Elaine') → 'Who did you go WITH?'\nDIQQAT: 'with' gap OXIRIDA qoladi.\nBu — TO'LDIRUVChI savoli → 'did' KERAK.",
+       "speakAnswer": "Who did you go with"
       },
       {
        "prompt": "A: 3) ............ ?",
        "answer": "What did you see",
        "promptUz": "Javob: film nomi",
-       "whyUz": "Javob FILM NOMI ('Danger at Midnight') →\n'What did you see?'\n'did' + SEE (asosiy shakl), javobda 'saw'."
+       "whyUz": "Javob FILM NOMI ('Danger at Midnight') →\n'What did you see?'\n'did' + SEE (asosiy shakl), javobda 'saw'.",
+       "speakAnswer": "What did you see"
       },
       {
        "prompt": "A: 4) ............ ?",
        "answer": "What was it about",
        "promptUz": "Javob: 'It was about a dangerous man' — mavzu",
-       "whyUz": "Javob MAVZU ('about a dangerous man') →\n'What was it ABOUT?'\nDIQQAT: 'be' fe'li → 'did' KERAK EMAS.\n'about' gap OXIRIDA qoladi."
+       "whyUz": "Javob MAVZU ('about a dangerous man') →\n'What was it ABOUT?'\nDIQQAT: 'be' fe'li → 'did' KERAK EMAS.\n'about' gap OXIRIDA qoladi.",
+       "speakAnswer": "What was it about"
       },
       {
        "prompt": "A: 5) ............ ?",
        "answer": "Was it a good film",
        "promptUz": "Javob 'Yes, it was' — HA/YO'Q savoli",
-       "whyUz": "Javob 'YES, it was' → HA/YO'Q savoli →\nsavol so'zi YO'Q, 'WAS' bilan boshlanadi:\n'WAS it a good film?'\nJavob: 'Yes, it was, BUT it was very scary' —\n'but' qarama-qarshilik."
+       "whyUz": "Javob 'YES, it was' → HA/YO'Q savoli →\nsavol so'zi YO'Q, 'WAS' bilan boshlanadi:\n'WAS it a good film?'\nJavob: 'Yes, it was, BUT it was very scary' —\n'but' qarama-qarshilik.",
+       "speakAnswer": "Was it a good film"
       },
       {
        "prompt": "A: 6) ............ ?",
        "answer": "Who was in it",
        "promptUz": "Javob: ikki aktyor ismi",
-       "whyUz": "Javob AKTYORLAR ismi → 'Who was IN IT?'\n= Unda kimlar o'ynagan?\n'to be in a film' = filmda o'ynamoq.\nDIQQAT: 'be' fe'li → 'did' KERAK EMAS."
+       "whyUz": "Javob AKTYORLAR ismi → 'Who was IN IT?'\n= Unda kimlar o'ynagan?\n'to be in a film' = filmda o'ynamoq.\nDIQQAT: 'be' fe'li → 'did' KERAK EMAS.",
+       "speakAnswer": "Who was in it"
       }
      ]
     }
@@ -5821,85 +6189,99 @@
        "prompt": "suddenly",
        "answer": "Suddenly, smoke began to come out of the engine.",
        "promptUz": "To'satdan dvigateldan tutun chiqa boshladi.",
-       "speak": "suddenly"
+       "speak": "suddenly",
+       "speakAnswer": "Suddenly, smoke began to come out of the engine."
       },
       {
        "prompt": "roared",
        "answer": "The lions roared loudly.",
        "promptUz": "Sherlar baland ovozda bo'kirishdi.",
-       "speak": "roared"
+       "speak": "roared",
+       "speakAnswer": "The lions roared loudly."
       },
       {
        "prompt": "desperately",
        "answer": "\"We'll burn alive!\" Claire screamed desperately.",
        "promptUz": "\"Tiriklayin yonamiz!\" — deb jon holatda qichqirdi Kler.",
-       "speak": "desperately"
+       "speak": "desperately",
+       "speakAnswer": "\"We'll burn alive!\" Claire screamed desperately."
       },
       {
        "prompt": "beeped the horn",
        "answer": "She beeped the horn and shouted for help.",
        "promptUz": "U signal chaldi va yordam so'rab qichqirdi.",
-       "speak": "beeped the horn"
+       "speak": "beeped the horn",
+       "speakAnswer": "She beeped the horn and shouted for help."
       },
       {
        "prompt": "scary",
        "answer": "They're beautiful, but very scary animals.",
        "promptUz": "Ular go'zal, lekin juda qo'rqinchli hayvonlar.",
-       "speak": "scary"
+       "speak": "scary",
+       "speakAnswer": "They're beautiful, but very scary animals."
       },
       {
        "prompt": "thanked",
        "answer": "They thanked the park ranger for his help.",
        "promptUz": "Ular park qo'riqchisiga yordami uchun rahmat aytishdi.",
-       "speak": "thanked"
+       "speak": "thanked",
+       "speakAnswer": "They thanked the park ranger for his help."
       },
       {
        "prompt": "proud",
        "answer": "Everyone was very proud of that brave little boy.",
        "promptUz": "Hamma o'sha jasur kichkina boladan juda faxrlanardi.",
-       "speak": "proud"
+       "speak": "proud",
+       "speakAnswer": "Everyone was very proud of that brave little boy."
       },
       {
        "prompt": "mended",
        "answer": "The people quickly mended the hole in the dike.",
        "promptUz": "Odamlar to'g'ondagi teshikni tezda tuzatishdi.",
-       "speak": "mended"
+       "speak": "mended",
+       "speakAnswer": "The people quickly mended the hole in the dike."
       },
       {
        "prompt": "hold on",
        "answer": "\"Hold on, we'll get you out!\" the park ranger shouted.",
        "promptUz": "\"Chidang, sizni chiqarib olamiz!\" — deb qichqirdi park qo'riqchisi.",
-       "speak": "hold on"
+       "speak": "hold on",
+       "speakAnswer": "\"Hold on, we'll get you out!\" the park ranger shouted."
       },
       {
        "prompt": "tightly",
        "answer": "When they drove into the park, they closed the car windows tightly.",
        "promptUz": "Parkka kirganlarida mashina oynalarini mahkam yopishdi.",
-       "speak": "tightly"
+       "speak": "tightly",
+       "speakAnswer": "When they drove into the park, they closed the car windows tightly."
       },
       {
        "prompt": "alive",
        "answer": "They knew they were very lucky to be alive.",
        "promptUz": "Tirik qolganlari uchun juda omadli ekanlarini bilishardi.",
-       "speak": "alive"
+       "speak": "alive",
+       "speakAnswer": "They knew they were very lucky to be alive."
       },
       {
        "prompt": "shocked",
        "answer": "They were still shocked, but happy.",
        "promptUz": "Ular hali ham sarosimada edi, lekin xursand edi.",
-       "speak": "shocked"
+       "speak": "shocked",
+       "speakAnswer": "They were still shocked, but happy."
       },
       {
        "prompt": "for a while",
        "answer": "Hans took the man some biscuits and stayed there for a while.",
        "promptUz": "Hans odamga pechenye olib bordi va u yerda birpas qoldi.",
-       "speak": "for a while"
+       "speak": "for a while",
+       "speakAnswer": "Hans took the man some biscuits and stayed there for a while."
       },
       {
        "prompt": "on his way home",
        "answer": "On his way home, Hans sang a song and picked some flowers.",
        "promptUz": "Uyga qaytayotib Hans qo'shiq aytdi va gul terdi.",
-       "speak": "on his way home"
+       "speak": "on his way home",
+       "speakAnswer": "On his way home, Hans sang a song and picked some flowers."
       }
      ]
     }
@@ -5966,28 +6348,32 @@
        "answer": "It happened that cold winter afternoon.",
        "promptUz": "Matnning birinchi so'zlari",
        "whyUz": "Matnda: 'THAT COLD WINTER AFTERNOON'.\nHikoya boshlanishining BIRINCHI qismi — VAQT.\nDIQQAT: 'cold' va 'winter' — sifatlar, matnni\nqiziqarliroq qiladi.",
-       "speak": "1  When did this happen?"
+       "speak": "1  When did this happen?",
+       "speakAnswer": "It happened that cold winter afternoon."
       },
       {
        "prompt": "2  Where did this happen?",
        "answer": "It happened on the beach.",
        "promptUz": "Sayr qayerda bo'ldi?",
        "whyUz": "Matnda: 'for a walk ON THE BEACH'.\nHikoya boshlanishining IKKINCHI qismi — JOY.\n'ON the beach' — predlog ON.",
-       "speak": "2  Where did this happen?"
+       "speak": "2  Where did this happen?",
+       "speakAnswer": "It happened on the beach."
       },
       {
        "prompt": "3  Who was there?",
        "answer": "The writer (I) and his/her dog, Rex, were there.",
        "promptUz": "Necha jonzot bor edi?",
        "whyUz": "Matnda: 'I decided to take MY DOG, REX, for a walk'.\nHikoya boshlanishining UChINChI qismi — ODAMLAR.\nHikoya BIRINChI shaxsda ('I') yozilgan.",
-       "speak": "3  Who was there?"
+       "speak": "3  Who was there?",
+       "speakAnswer": "The writer (I) and his/her dog, Rex, were there."
       },
       {
        "prompt": "4  What happened suddenly?",
        "answer": "Suddenly, Rex began to bark loudly.",
        "promptUz": "Matnning oxirgi gapi",
        "whyUz": "Matnda: 'SUDDENLY, Rex BEGAN TO BARK LOUDLY.'\nHikoya boshlanishining TO'RTINChI qismi — birinchi voqea.\n'Suddenly' — hikoyada burilish nuqtasi.\n'loudly' — ravish (78-betdagi qoida).",
-       "speak": "4  What happened suddenly?"
+       "speak": "4  What happened suddenly?",
+       "speakAnswer": "Suddenly, Rex began to bark loudly."
       }
      ]
     },
@@ -6197,70 +6583,80 @@
        "answer": "went",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "go → WENT.\n'go ON holiday' — predlog ON.\n'Last summer' → past simple.",
-       "speak": "1  Last summer, David ............ (go) on holiday with his dog, Leo."
+       "speak": "1  Last summer, David ............ (go) on holiday with his dog, Leo.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "2  They ............ (spend) most of the time on the beach.",
        "answer": "spent",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "spend → SPENT (noto'g'ri).\n'spend time' = vaqt o'tkazmoq.\n'ON the beach' — predlog ON.",
-       "speak": "2  They ............ (spend) most of the time on the beach."
+       "speak": "2  They ............ (spend) most of the time on the beach.",
+       "speakAnswer": "spent"
       },
       {
        "prompt": "3  One night, David ............ (be) in bed.",
        "answer": "was",
        "promptUz": "'David' — birlik",
        "whyUz": "be → WAS.\n'in bed' — artikl YO'Q ('in the bed' EMAS).",
-       "speak": "3  One night, David ............ (be) in bed."
+       "speak": "3  One night, David ............ (be) in bed.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "4  Leo ............ (start) barking.",
        "answer": "started",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "start → STARTED.\nDIQQAT: 'start' dan keyin fe'l -ING oladi:\n'started BARKING'.\n'to bark' = hurmoq.",
-       "speak": "4  Leo ............ (start) barking."
+       "speak": "4  Leo ............ (start) barking.",
+       "speakAnswer": "started"
       },
       {
        "prompt": "5  David ............ (ask) him to be quiet.",
        "answer": "asked",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "ask → ASKED.\n'ask sb TO + asosiy fe'l' — qolip.\nRasmda: 'Quiet Leo. Everyone's sleeping.'",
-       "speak": "5  David ............ (ask) him to be quiet."
+       "speak": "5  David ............ (ask) him to be quiet.",
+       "speakAnswer": "asked"
       },
       {
        "prompt": "6  Suddenly, the earth ............ (start) shaking.",
        "answer": "started",
        "promptUz": "4-band bilan bir xil",
        "whyUz": "start → STARTED + SHAKING (-ing).\n'the earth' = yer.\nBu — zilzilaning boshlanishi.",
-       "speak": "6  Suddenly, the earth ............ (start) shaking."
+       "speak": "6  Suddenly, the earth ............ (start) shaking.",
+       "speakAnswer": "started"
       },
       {
        "prompt": "7  David ............ (take) Leo under the door frame.",
        "answer": "took",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "take → TOOK (noto'g'ri).\n'a door frame' = eshik romi.\nZilzilada eshik romi tagi eng xavfsiz joy\nhisoblanadi.",
-       "speak": "7  David ............ (take) Leo under the door frame."
+       "speak": "7  David ............ (take) Leo under the door frame.",
+       "speakAnswer": "took"
       },
       {
        "prompt": "8  Stones ............ (fall) on David's bed.",
        "answer": "fell",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "fall → FELL (noto'g'ri).\n'Stones' KO'PLIK, lekin past simple da\nfe'l o'zgarmaydi.\nAgar Devid karavotda qolganda — halok bo'lardi.",
-       "speak": "8  Stones ............ (fall) on David's bed."
+       "speak": "8  Stones ............ (fall) on David's bed.",
+       "speakAnswer": "fell"
       },
       {
        "prompt": "9  David ............ (be) lucky to be alive.",
        "answer": "was",
        "promptUz": "'be' fe'li",
        "whyUz": "be → WAS.\n'lucky to be alive' = tirik qolgani uchun omadli.\n'alive' = tirik (SIFAT).",
-       "speak": "9  David ............ (be) lucky to be alive."
+       "speak": "9  David ............ (be) lucky to be alive.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "10  David ............ (be) proud of Leo.",
        "answer": "was",
        "promptUz": "'be' fe'li",
        "whyUz": "be → WAS.\n'proud OF sb' = kimdir bilan faxrlanmoq.\nLeo hurib Devidni uyg'otgani uchun\nu tirik qoldi.",
-       "speak": "10  David ............ (be) proud of Leo."
+       "speak": "10  David ............ (be) proud of Leo.",
+       "speakAnswer": "was"
       }
      ]
     },
@@ -6277,27 +6673,33 @@
      "tasks": [
       {
        "left": "B — chamadon va it bilan avtobus bekatida",
-       "right": "1  Last summer, David went on holiday with his dog, Leo."
+       "right": "1  Last summer, David went on holiday with his dog, Leo.",
+       "speakAnswer": "1  Last summer, David went on holiday with his dog, Leo."
       },
       {
        "left": "D — plyajda it bilan yugurib yuribdi",
-       "right": "2  They spent most of the time on the beach."
+       "right": "2  They spent most of the time on the beach.",
+       "speakAnswer": "2  They spent most of the time on the beach."
       },
       {
        "left": "E — karavotda uxlayapti, it yonida turibdi",
-       "right": "3-4  One night, David was in bed. Leo started barking."
+       "right": "3-4  One night, David was in bed. Leo started barking.",
+       "speakAnswer": "3-4  One night, David was in bed. Leo started barking."
       },
       {
        "left": "A — karavotda o'tirib itga gapiryapti",
-       "right": "5  David asked him to be quiet."
+       "right": "5  David asked him to be quiet.",
+       "speakAnswer": "5  David asked him to be quiet."
       },
       {
        "left": "C — Leoni quchoqlab eshik romi tagida",
-       "right": "6-7  Suddenly, the earth started shaking. David took Leo under the door frame."
+       "right": "6-7  Suddenly, the earth started shaking. David took Leo under the door frame.",
+       "speakAnswer": "6-7  Suddenly, the earth started shaking. David took Leo under the door frame."
       },
       {
        "left": "F — toshlar tushgan karavotga qarab turibdi",
-       "right": "8-9-10  Stones fell on David's bed. David was lucky to be alive and proud of Leo."
+       "right": "8-9-10  Stones fell on David's bed. David was lucky to be alive and proud of Leo.",
+       "speakAnswer": "8-9-10  Stones fell on David's bed. David was lucky to be alive and proud of Leo."
       }
      ]
     },

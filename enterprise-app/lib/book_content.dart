@@ -82,6 +82,14 @@ class ExTask {
   /// oldindan o'qimaydi (eksport skripti buni ta'minlaydi).
   final String speak;
 
+  /// Javob berilgandan KEYIN o'qiladigan matn.
+  ///
+  /// Javoblarning bir qismi o'zbekcha (moslash o'yinida o'ng tomon
+  /// ko'pincha tarjima, tanlashda "Yo'q"/"Ha"). Ularni ingliz ovozi
+  /// bilan o'qish noto'g'ri eshitiladi, shuning uchun eksport skripti
+  /// bu maydonni FAQAT inglizcha javob uchun to'ldiradi.
+  final String speakAnswer;
+
   /// Rasm o'rnidagi belgi (emoji yoki asset yo'li).
   final String visual;
 
@@ -98,6 +106,7 @@ class ExTask {
     this.uz = '',
     this.note = '',
     this.speak = '',
+    this.speakAnswer = '',
     this.visual = '',
   });
 
@@ -115,6 +124,7 @@ class ExTask {
         uz: j['uz'] as String? ?? '',
         note: j['note'] as String? ?? '',
         speak: j['speak'] as String? ?? '',
+        speakAnswer: j['speakAnswer'] as String? ?? '',
         visual: j['visual'] as String? ?? '',
       );
 

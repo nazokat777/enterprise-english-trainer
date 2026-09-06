@@ -39,7 +39,8 @@
         "John",
         "Jack"
        ],
-       "speak": "Who's got brown, curly hair?"
+       "speak": "Who's got brown, curly hair?",
+       "speakAnswer": "Alice"
       },
       {
        "prompt": "Who's got brown, wavy hair?",
@@ -54,7 +55,8 @@
         "John",
         "Jack"
        ],
-       "speak": "Who's got brown, wavy hair?"
+       "speak": "Who's got brown, wavy hair?",
+       "speakAnswer": "Mario"
       },
       {
        "prompt": "Who's got short grey hair?",
@@ -69,7 +71,8 @@
         "John",
         "Jack"
        ],
-       "speak": "Who's got short grey hair?"
+       "speak": "Who's got short grey hair?",
+       "speakAnswer": "Helen"
       },
       {
        "prompt": "Who's got long straight fair hair?",
@@ -84,7 +87,8 @@
         "John",
         "Jack"
        ],
-       "speak": "Who's got long straight fair hair?"
+       "speak": "Who's got long straight fair hair?",
+       "speakAnswer": "Anna"
       },
       {
        "prompt": "Who's got dark hair?",
@@ -99,7 +103,8 @@
         "John",
         "Jack"
        ],
-       "speak": "Who's got dark hair?"
+       "speak": "Who's got dark hair?",
+       "speakAnswer": "Pierre"
       },
       {
        "prompt": "Who's got a moustache?",
@@ -114,7 +119,8 @@
         "John",
         "Jack"
        ],
-       "speak": "Who's got a moustache?"
+       "speak": "Who's got a moustache?",
+       "speakAnswer": "John"
       },
       {
        "prompt": "Who's got a beard and a moustache?",
@@ -129,7 +135,8 @@
         "John",
         "Jack"
        ],
-       "speak": "Who's got a beard and a moustache?"
+       "speak": "Who's got a beard and a moustache?",
+       "speakAnswer": "Jack"
       }
      ]
     },
@@ -153,7 +160,8 @@
         "Anna",
         "Jack"
        ],
-       "speak": "___ is old."
+       "speak": "___ is old.",
+       "speakAnswer": "Helen"
       },
       {
        "prompt": "___ is quite tall and slim.",
@@ -165,7 +173,8 @@
         "Anna",
         "Jack"
        ],
-       "speak": "___ is quite tall and slim."
+       "speak": "___ is quite tall and slim.",
+       "speakAnswer": "Pierre"
       },
       {
        "prompt": "___ is short and quite slim.",
@@ -177,7 +186,8 @@
         "Pierre",
         "Jack"
        ],
-       "speak": "___ is short and quite slim."
+       "speak": "___ is short and quite slim.",
+       "speakAnswer": "Anna"
       },
       {
        "prompt": "___ is middle-aged and Pierre is young.",
@@ -189,7 +199,8 @@
         "Pierre",
         "Anna"
        ],
-       "speak": "___ is middle-aged and Pierre is young."
+       "speak": "___ is middle-aged and Pierre is young.",
+       "speakAnswer": "Jack"
       },
       {
        "prompt": "___ is well-built.",
@@ -201,7 +212,8 @@
         "Pierre",
         "Anna"
        ],
-       "speak": "___ is well-built."
+       "speak": "___ is well-built.",
+       "speakAnswer": "Mario"
       },
       {
        "prompt": "___ is fat.",
@@ -213,7 +225,8 @@
         "Pierre",
         "Anna"
        ],
-       "speak": "___ is fat."
+       "speak": "___ is fat.",
+       "speakAnswer": "John"
       }
      ]
     },
@@ -278,7 +291,8 @@
         "cheek",
         "chin",
         "ear"
-       ]
+       ],
+       "speakAnswer": "hair"
       },
       {
        "prompt": "ko'z",
@@ -289,7 +303,8 @@
         "cheek",
         "chin",
         "ear"
-       ]
+       ],
+       "speakAnswer": "eye"
       },
       {
        "prompt": "burun",
@@ -300,7 +315,8 @@
         "cheek",
         "chin",
         "ear"
-       ]
+       ],
+       "speakAnswer": "nose"
       },
       {
        "prompt": "tishlar",
@@ -311,7 +327,8 @@
         "cheek",
         "chin",
         "ear"
-       ]
+       ],
+       "speakAnswer": "teeth"
       },
       {
        "prompt": "lablar",
@@ -322,7 +339,8 @@
         "cheek",
         "chin",
         "ear"
-       ]
+       ],
+       "speakAnswer": "lips"
       },
       {
        "prompt": "iyak",
@@ -333,7 +351,8 @@
         "cheek",
         "ear",
         "eye"
-       ]
+       ],
+       "speakAnswer": "chin"
       },
       {
        "prompt": "og'iz",
@@ -344,7 +363,8 @@
         "cheek",
         "chin",
         "ear"
-       ]
+       ],
+       "speakAnswer": "mouth"
       },
       {
        "prompt": "yonoq",
@@ -355,7 +375,8 @@
         "chin",
         "ear",
         "eye"
-       ]
+       ],
+       "speakAnswer": "cheek"
       },
       {
        "prompt": "quloq",
@@ -366,7 +387,8 @@
         "cheek",
         "chin",
         "eye"
-       ]
+       ],
+       "speakAnswer": "ear"
       }
      ]
     },
@@ -390,7 +412,8 @@
         "fair",
         "thin"
        ],
-       "speak": "tall boy ≠ ___ boy"
+       "speak": "tall boy ≠ ___ boy",
+       "speakAnswer": "short"
       },
       {
        "prompt": "slim girl ≠ ___ girl",
@@ -402,7 +425,8 @@
         "short",
         "fair"
        ],
-       "speak": "slim girl ≠ ___ girl"
+       "speak": "slim girl ≠ ___ girl",
+       "speakAnswer": "fat"
       },
       {
        "prompt": "long hair ≠ ___ hair",
@@ -414,7 +438,8 @@
         "fair",
         "thin"
        ],
-       "speak": "long hair ≠ ___ hair"
+       "speak": "long hair ≠ ___ hair",
+       "speakAnswer": "short"
       },
       {
        "prompt": "straight hair ≠ ___ hair",
@@ -426,7 +451,8 @@
         "short",
         "fair"
        ],
-       "speak": "straight hair ≠ ___ hair"
+       "speak": "straight hair ≠ ___ hair",
+       "speakAnswer": "curly"
       },
       {
        "prompt": "dark hair ≠ ___ hair",
@@ -438,7 +464,8 @@
         "short",
         "thin"
        ],
-       "speak": "dark hair ≠ ___ hair"
+       "speak": "dark hair ≠ ___ hair",
+       "speakAnswer": "fair"
       },
       {
        "prompt": "full lips ≠ ___ lips",
@@ -450,7 +477,8 @@
         "short",
         "fair"
        ],
-       "speak": "full lips ≠ ___ lips"
+       "speak": "full lips ≠ ___ lips",
+       "speakAnswer": "thin"
       },
       {
        "prompt": "big nose ≠ ___ nose",
@@ -462,7 +490,8 @@
         "fair",
         "thin"
        ],
-       "speak": "big nose ≠ ___ nose"
+       "speak": "big nose ≠ ___ nose",
+       "speakAnswer": "small"
       },
       {
        "prompt": "big eyes ≠ ___ eyes",
@@ -474,7 +503,8 @@
         "fair",
         "thin"
        ],
-       "speak": "big eyes ≠ ___ eyes"
+       "speak": "big eyes ≠ ___ eyes",
+       "speakAnswer": "small"
       }
      ]
     },
@@ -497,7 +527,8 @@
         "green",
         "blue",
         "black"
-       ]
+       ],
+       "speakAnswer": "red"
       },
       {
        "prompt": "qora",
@@ -508,7 +539,8 @@
         "green",
         "blue",
         "red"
-       ]
+       ],
+       "speakAnswer": "black"
       },
       {
        "prompt": "yashil",
@@ -519,7 +551,8 @@
         "blue",
         "black",
         "red"
-       ]
+       ],
+       "speakAnswer": "green"
       },
       {
        "prompt": "kulrang",
@@ -530,7 +563,8 @@
         "green",
         "blue",
         "black"
-       ]
+       ],
+       "speakAnswer": "grey"
       },
       {
        "prompt": "ko'k",
@@ -541,7 +575,8 @@
         "green",
         "black",
         "red"
-       ]
+       ],
+       "speakAnswer": "blue"
       },
       {
        "prompt": "jigarrang",
@@ -552,7 +587,8 @@
         "green",
         "blue",
         "black"
-       ]
+       ],
+       "speakAnswer": "brown"
       }
      ]
     }
@@ -580,61 +616,71 @@
        "prompt": "He hasn't got long hair. He's got ___ hair.",
        "answer": "short",
        "whyUz": "long ↔ short (soch uzunligi)",
-       "speak": "He hasn't got long hair. He's got ___ hair."
+       "speak": "He hasn't got long hair. He's got ___ hair.",
+       "speakAnswer": "short"
       },
       {
        "prompt": "She hasn't got dark hair. She's got ___ hair.",
        "answer": "fair",
        "whyUz": "dark ↔ fair (soch rangi)",
-       "speak": "She hasn't got dark hair. She's got ___ hair."
+       "speak": "She hasn't got dark hair. She's got ___ hair.",
+       "speakAnswer": "fair"
       },
       {
        "prompt": "Sarah and Kate are twenty-four ___ old.",
        "answer": "years",
        "whyUz": "'years old' — buzilmas ibora",
-       "speak": "Sarah and Kate are twenty-four ___ old."
+       "speak": "Sarah and Kate are twenty-four ___ old.",
+       "speakAnswer": "years"
       },
       {
        "prompt": "Gordon isn't ___ . He's short.",
        "answer": "tall",
        "whyUz": "short ↔ tall (bo'y)",
-       "speak": "Gordon isn't ___ . He's short."
+       "speak": "Gordon isn't ___ . He's short.",
+       "speakAnswer": "tall"
       },
       {
        "prompt": "He hasn't got big eyes. He's got ___ eyes.",
        "answer": "small",
        "whyUz": "big ↔ small",
-       "speak": "He hasn't got big eyes. He's got ___ eyes."
+       "speak": "He hasn't got big eyes. He's got ___ eyes.",
+       "speakAnswer": "small"
       },
       {
        "prompt": "Tony is short and slim and he ___ a beard.",
        "answer": "has got",
        "whyUz": "'he' → HAS got (have emas)",
-       "speak": "Tony is short and slim and he ___ a beard."
+       "speak": "Tony is short and slim and he ___ a beard.",
+       "speakAnswer": "has got"
       },
       {
        "prompt": "___ you dance well?",
        "answer": "Can",
        "whyUz": "Qobiliyat so'ralyapti → Can. Gap boshida katta harf.",
-       "speak": "___ you dance well?"
+       "speak": "___ you dance well?",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "Hope to ___ from you soon.",
        "answer": "hear",
        "whyUz": "'hear from you' — sizdan xabar olmoq. E'lon oxiridagi ibora.",
-       "speak": "Hope to ___ from you soon."
+       "speak": "Hope to ___ from you soon.",
+       "speakAnswer": "hear"
       },
       {
        "prompt": "I ___ in Edinburgh, Scotland.",
        "answer": "live",
        "whyUz": "'I' bilan fe'l asos shaklida — 'live' (lives emas)",
-       "speak": "I ___ in Edinburgh, Scotland."
+       "speak": "I ___ in Edinburgh, Scotland.",
+       "speakAnswer": "live"
       },
       {
        "prompt": "He can run quite ___ .",
        "answer": "fast",
        "whyUz": "Tezlik → fast. 'fastly' degan so'z YO'Q.",
-       "speak": "He can run quite ___ ."
+       "speak": "He can run quite ___ .",
+       "speakAnswer": "fast"
       }
      ]
     },
@@ -659,7 +705,8 @@
         "Billy can play the trumpet.",
         "Can you sign here, please?"
        ],
-       "speak": "A woman with a headset working at a computer"
+       "speak": "A woman with a headset working at a computer",
+       "speakAnswer": "Ann can use the computer very well."
       },
       {
        "prompt": "People signing a document together",
@@ -671,7 +718,8 @@
         "Billy can play the trumpet.",
         "Can you sign here, please?"
        ],
-       "speak": "People signing a document together"
+       "speak": "People signing a document together",
+       "speakAnswer": "Can you sign here, please?"
       },
       {
        "prompt": "A man playing the trumpet",
@@ -683,7 +731,8 @@
         "Billy can play the trumpet.",
         "Can you sign here, please?"
        ],
-       "speak": "A man playing the trumpet"
+       "speak": "A man playing the trumpet",
+       "speakAnswer": "Billy can play the trumpet."
       },
       {
        "prompt": "A woman asking about a price while shopping",
@@ -695,7 +744,8 @@
         "Billy can play the trumpet.",
         "Can you sign here, please?"
        ],
-       "speak": "A woman asking about a price while shopping"
+       "speak": "A woman asking about a price while shopping",
+       "speakAnswer": "Can you tell me how much it is, please?"
       }
      ]
     }
@@ -730,7 +780,8 @@
         "black"
        ],
        "whyUz": "Qo'lyozmada 'green' yozilgan — XATO. Limon SARIQ (yellow). Yashil rangdagi o'xshash meva — 'a lime', bu boshqa so'z.",
-       "speak": "A lemon is ___ ."
+       "speak": "A lemon is ___ .",
+       "speakAnswer": "yellow"
       },
       {
        "prompt": "An egg is ___ .",
@@ -742,7 +793,8 @@
         "yellow",
         "black"
        ],
-       "speak": "An egg is ___ ."
+       "speak": "An egg is ___ .",
+       "speakAnswer": "white"
       },
       {
        "prompt": "A tree is ___ .",
@@ -754,7 +806,8 @@
         "yellow",
         "black"
        ],
-       "speak": "A tree is ___ ."
+       "speak": "A tree is ___ .",
+       "speakAnswer": "green"
       },
       {
        "prompt": "A penguin is ___ and white.",
@@ -767,7 +820,8 @@
         "yellow"
        ],
        "whyUz": "Qo'lyozmada 'yellow' yozilgan — XATO. Pingvin QORA va oq (black and white). 'yellow' allaqachon limonga ketishi kerak edi.",
-       "speak": "A penguin is ___ and white."
+       "speak": "A penguin is ___ and white.",
+       "speakAnswer": "black"
       }
      ]
     }
@@ -800,7 +854,8 @@
         "chest",
         "hand",
         "arm"
-       ]
+       ],
+       "speakAnswer": "head"
       },
       {
        "prompt": "ko'krak",
@@ -811,7 +866,8 @@
         "head",
         "hand",
         "arm"
-       ]
+       ],
+       "speakAnswer": "chest"
       },
       {
        "prompt": "qo'l (panja)",
@@ -822,7 +878,8 @@
         "chest",
         "head",
         "arm"
-       ]
+       ],
+       "speakAnswer": "hand"
       },
       {
        "prompt": "qo'l barmog'i",
@@ -833,7 +890,8 @@
         "chest",
         "head",
         "hand"
-       ]
+       ],
+       "speakAnswer": "finger"
       },
       {
        "prompt": "oyoq barmog'i",
@@ -844,7 +902,8 @@
         "chest",
         "head",
         "hand"
-       ]
+       ],
+       "speakAnswer": "toe"
       },
       {
        "prompt": "qo'l (yelkadan)",
@@ -855,7 +914,8 @@
         "chest",
         "head",
         "hand"
-       ]
+       ],
+       "speakAnswer": "arm"
       },
       {
        "prompt": "oyoq (son)",
@@ -866,7 +926,8 @@
         "chest",
         "head",
         "hand"
-       ]
+       ],
+       "speakAnswer": "leg"
       },
       {
        "prompt": "oyoq (panja)",
@@ -877,7 +938,8 @@
         "chest",
         "head",
         "hand"
-       ]
+       ],
+       "speakAnswer": "foot"
       }
      ]
     },
@@ -963,7 +1025,8 @@
         "France"
        ],
        "whyUz": "Mexican -AN bilan tugaydi, -ian emas. Diqqat bilan qarang: Mexic-AN.",
-       "speak": "Mexico → ___ (-an guruhi)"
+       "speak": "Mexico → ___ (-an guruhi)",
+       "speakAnswer": "Mexican"
       },
       {
        "prompt": "the USA → ___ (-an guruhi)",
@@ -976,7 +1039,8 @@
         "France"
        ],
        "whyUz": "Americ-AN — -an bilan tugaydi.",
-       "speak": "the USA → ___ (-an guruhi)"
+       "speak": "the USA → ___ (-an guruhi)",
+       "speakAnswer": "American"
       },
       {
        "prompt": "Germany → ___ (-an guruhi)",
@@ -989,7 +1053,8 @@
         "France"
        ],
        "whyUz": "Germ-AN — -an guruhiga kiradi, 'boshqa' emas.",
-       "speak": "Germany → ___ (-an guruhi)"
+       "speak": "Germany → ___ (-an guruhi)",
+       "speakAnswer": "German"
       },
       {
        "prompt": "Canada → ___ (-ian guruhi)",
@@ -1002,7 +1067,8 @@
         "France"
        ],
        "whyUz": "Canad-IAN — -ian bilan tugaydi.",
-       "speak": "Canada → ___ (-ian guruhi)"
+       "speak": "Canada → ___ (-ian guruhi)",
+       "speakAnswer": "Canadian"
       },
       {
        "prompt": "Italy → ___ (-ian guruhi)",
@@ -1015,7 +1081,8 @@
         "France"
        ],
        "whyUz": "Millat nomlari HAR DOIM katta harf bilan: Italian.",
-       "speak": "Italy → ___ (-ian guruhi)"
+       "speak": "Italy → ___ (-ian guruhi)",
+       "speakAnswer": "Italian"
       },
       {
        "prompt": "Brazil → ___ (-ian guruhi)",
@@ -1028,7 +1095,8 @@
         "France"
        ],
        "whyUz": "Brazil-IAN — -ian bilan.",
-       "speak": "Brazil → ___ (-ian guruhi)"
+       "speak": "Brazil → ___ (-ian guruhi)",
+       "speakAnswer": "Brazilian"
       },
       {
        "prompt": "Egypt → ___ (-ian guruhi)",
@@ -1040,7 +1108,8 @@
         "Canada",
         "France"
        ],
-       "speak": "Egypt → ___ (-ian guruhi)"
+       "speak": "Egypt → ___ (-ian guruhi)",
+       "speakAnswer": "Egyptian"
       },
       {
        "prompt": "Hungary → ___ (-ian guruhi)",
@@ -1053,7 +1122,8 @@
         "France"
        ],
        "whyUz": "Hungar-IAN — -ian bilan.",
-       "speak": "Hungary → ___ (-ian guruhi)"
+       "speak": "Hungary → ___ (-ian guruhi)",
+       "speakAnswer": "Hungarian"
       },
       {
        "prompt": "Australia → ___ (-ian guruhi)",
@@ -1066,7 +1136,8 @@
         "France"
        ],
        "whyUz": "Bu millat qo'lyozmada TUSHIB QOLGAN. Australia → Australian (-ian).",
-       "speak": "Australia → ___ (-ian guruhi)"
+       "speak": "Australia → ___ (-ian guruhi)",
+       "speakAnswer": "Australian"
       },
       {
        "prompt": "Sweden → ___ (-ish guruhi)",
@@ -1078,7 +1149,8 @@
         "Canada",
         "France"
        ],
-       "speak": "Sweden → ___ (-ish guruhi)"
+       "speak": "Sweden → ___ (-ish guruhi)",
+       "speakAnswer": "Swedish"
       },
       {
        "prompt": "Turkey → ___ (-ish guruhi)",
@@ -1090,7 +1162,8 @@
         "Canada",
         "France"
        ],
-       "speak": "Turkey → ___ (-ish guruhi)"
+       "speak": "Turkey → ___ (-ish guruhi)",
+       "speakAnswer": "Turkish"
       },
       {
        "prompt": "Poland → ___ (-ish guruhi)",
@@ -1102,7 +1175,8 @@
         "Canada",
         "France"
        ],
-       "speak": "Poland → ___ (-ish guruhi)"
+       "speak": "Poland → ___ (-ish guruhi)",
+       "speakAnswer": "Polish"
       },
       {
        "prompt": "Spain → ___ (-ish guruhi)",
@@ -1114,7 +1188,8 @@
         "Canada",
         "France"
        ],
-       "speak": "Spain → ___ (-ish guruhi)"
+       "speak": "Spain → ___ (-ish guruhi)",
+       "speakAnswer": "Spanish"
       },
       {
        "prompt": "Britain → ___ (-ish guruhi)",
@@ -1126,7 +1201,8 @@
         "Canada",
         "France"
        ],
-       "speak": "Britain → ___ (-ish guruhi)"
+       "speak": "Britain → ___ (-ish guruhi)",
+       "speakAnswer": "British"
       },
       {
        "prompt": "Scotland → ___ (-ish guruhi)",
@@ -1138,7 +1214,8 @@
         "Canada",
         "France"
        ],
-       "speak": "Scotland → ___ (-ish guruhi)"
+       "speak": "Scotland → ___ (-ish guruhi)",
+       "speakAnswer": "Scottish"
       },
       {
        "prompt": "Japan → ___ (-ese guruhi)",
@@ -1150,7 +1227,8 @@
         "Canada",
         "France"
        ],
-       "speak": "Japan → ___ (-ese guruhi)"
+       "speak": "Japan → ___ (-ese guruhi)",
+       "speakAnswer": "Japanese"
       },
       {
        "prompt": "China → ___ (-ese guruhi)",
@@ -1162,7 +1240,8 @@
         "Canada",
         "France"
        ],
-       "speak": "China → ___ (-ese guruhi)"
+       "speak": "China → ___ (-ese guruhi)",
+       "speakAnswer": "Chinese"
       },
       {
        "prompt": "Portugal → ___ (-ese guruhi)",
@@ -1174,7 +1253,8 @@
         "Canada",
         "France"
        ],
-       "speak": "Portugal → ___ (-ese guruhi)"
+       "speak": "Portugal → ___ (-ese guruhi)",
+       "speakAnswer": "Portuguese"
       },
       {
        "prompt": "Lebanon → ___ (-ese guruhi)",
@@ -1187,7 +1267,8 @@
         "France"
        ],
        "whyUz": "Bu millat qo'lyozmada TUSHIB QOLGAN. Lebanon → Lebanese (-ese).",
-       "speak": "Lebanon → ___ (-ese guruhi)"
+       "speak": "Lebanon → ___ (-ese guruhi)",
+       "speakAnswer": "Lebanese"
       },
       {
        "prompt": "France → ___ (boshqa qo'shimcha)",
@@ -1199,7 +1280,8 @@
         "Canada",
         "France"
        ],
-       "speak": "France → ___ (boshqa qo'shimcha)"
+       "speak": "France → ___ (boshqa qo'shimcha)",
+       "speakAnswer": "French"
       },
       {
        "prompt": "Wales → ___ (boshqa qo'shimcha)",
@@ -1212,7 +1294,8 @@
         "France"
        ],
        "whyUz": "Ikki xato: 1) 'wales' — bu MAMLAKAT nomi, millat emas. 2) Millat shakli WELSH va u 'boshqa' guruhiga kiradi.",
-       "speak": "Wales → ___ (boshqa qo'shimcha)"
+       "speak": "Wales → ___ (boshqa qo'shimcha)",
+       "speakAnswer": "Welsh"
       },
       {
        "prompt": "Greece → ___ (boshqa qo'shimcha)",
@@ -1225,7 +1308,8 @@
         "France"
        ],
        "whyUz": "Bu millat qo'lyozmada TUSHIB QOLGAN. Greece → Greek (qoidasiz).",
-       "speak": "Greece → ___ (boshqa qo'shimcha)"
+       "speak": "Greece → ___ (boshqa qo'shimcha)",
+       "speakAnswer": "Greek"
       }
      ]
     }
@@ -1466,25 +1550,29 @@
        "prompt": "What colour eyes and hair has Ann got?",
        "answer": "She's got blue eyes and short grey curly hair.",
        "promptUz": "Annning ko'zi va sochi qanday rangda?",
-       "speak": "What colour eyes and hair has Ann got?"
+       "speak": "What colour eyes and hair has Ann got?",
+       "speakAnswer": "She's got blue eyes and short grey curly hair."
       },
       {
        "prompt": "What colour eyes and hair has Jean got?",
        "answer": "She's got green eyes and long red hair.",
        "promptUz": "Jeanning ko'zi va sochi qanday rangda?",
-       "speak": "What colour eyes and hair has Jean got?"
+       "speak": "What colour eyes and hair has Jean got?",
+       "speakAnswer": "She's got green eyes and long red hair."
       },
       {
        "prompt": "What colour eyes and hair has George got?",
        "answer": "He's got brown eyes and short black hair.",
        "promptUz": "Georgening ko'zi va sochi qanday rangda?",
-       "speak": "What colour eyes and hair has George got?"
+       "speak": "What colour eyes and hair has George got?",
+       "speakAnswer": "He's got brown eyes and short black hair."
       },
       {
        "prompt": "What colour eyes and hair has Eric got?",
        "answer": "He's got dark brown eyes and light brown straight hair.",
        "promptUz": "Ericning ko'zi va sochi qanday rangda?",
-       "speak": "What colour eyes and hair has Eric got?"
+       "speak": "What colour eyes and hair has Eric got?",
+       "speakAnswer": "He's got dark brown eyes and light brown straight hair."
       }
      ]
     },
@@ -1503,84 +1591,96 @@
        "answer": "What colour eyes has Ann got?",
        "promptUz": "Savol tuzing",
        "whyUz": "Ann — ayol → she",
-       "speak": "Ann/eyes"
+       "speak": "Ann/eyes",
+       "speakAnswer": "What colour eyes has Ann got?"
       },
       {
        "prompt": "Ann/eyes",
        "answer": "She's got blue eyes.",
        "promptUz": "Javob tuzing",
        "whyUz": "Ann — ayol → she",
-       "speak": "Ann/eyes"
+       "speak": "Ann/eyes",
+       "speakAnswer": "She's got blue eyes."
       },
       {
        "prompt": "Ann/hair",
        "answer": "What sort of hair has she got?",
        "promptUz": "Savol tuzing",
        "whyUz": "Uzunlik + rang + shakl",
-       "speak": "Ann/hair"
+       "speak": "Ann/hair",
+       "speakAnswer": "What sort of hair has she got?"
       },
       {
        "prompt": "Ann/hair",
        "answer": "She's got short grey curly hair.",
        "promptUz": "Javob tuzing",
        "whyUz": "Uzunlik + rang + shakl",
-       "speak": "Ann/hair"
+       "speak": "Ann/hair",
+       "speakAnswer": "She's got short grey curly hair."
       },
       {
        "prompt": "George/eyes",
        "answer": "What colour eyes has George got?",
        "promptUz": "Savol tuzing",
        "whyUz": "George — erkak → he",
-       "speak": "George/eyes"
+       "speak": "George/eyes",
+       "speakAnswer": "What colour eyes has George got?"
       },
       {
        "prompt": "George/eyes",
        "answer": "He's got brown eyes.",
        "promptUz": "Javob tuzing",
        "whyUz": "George — erkak → he",
-       "speak": "George/eyes"
+       "speak": "George/eyes",
+       "speakAnswer": "He's got brown eyes."
       },
       {
        "prompt": "George/hair",
        "answer": "What sort of hair has he got?",
        "promptUz": "Savol tuzing",
        "whyUz": "Kalta qora soch",
-       "speak": "George/hair"
+       "speak": "George/hair",
+       "speakAnswer": "What sort of hair has he got?"
       },
       {
        "prompt": "George/hair",
        "answer": "He's got short black hair.",
        "promptUz": "Javob tuzing",
        "whyUz": "Kalta qora soch",
-       "speak": "George/hair"
+       "speak": "George/hair",
+       "speakAnswer": "He's got short black hair."
       },
       {
        "prompt": "Jean/eyes",
        "answer": "What colour eyes has Jean got?",
        "promptUz": "Savol tuzing",
        "whyUz": "Jean — bu yerda ayol ismi → she",
-       "speak": "Jean/eyes"
+       "speak": "Jean/eyes",
+       "speakAnswer": "What colour eyes has Jean got?"
       },
       {
        "prompt": "Jean/eyes",
        "answer": "She's got green eyes.",
        "promptUz": "Javob tuzing",
        "whyUz": "Jean — bu yerda ayol ismi → she",
-       "speak": "Jean/eyes"
+       "speak": "Jean/eyes",
+       "speakAnswer": "She's got green eyes."
       },
       {
        "prompt": "Jean/hair",
        "answer": "What sort of hair has she got?",
        "promptUz": "Savol tuzing",
        "whyUz": "Uzun qizg'ish soch",
-       "speak": "Jean/hair"
+       "speak": "Jean/hair",
+       "speakAnswer": "What sort of hair has she got?"
       },
       {
        "prompt": "Jean/hair",
        "answer": "She's got long red hair.",
        "promptUz": "Javob tuzing",
        "whyUz": "Uzun qizg'ish soch",
-       "speak": "Jean/hair"
+       "speak": "Jean/hair",
+       "speakAnswer": "She's got long red hair."
       }
      ]
     }
@@ -1667,7 +1767,8 @@
      "tasks": [
       {
        "prompt": "Peter — Name",
-       "answer": "Peter"
+       "answer": "Peter",
+       "speakAnswer": "Peter"
       },
       {
        "prompt": "Peter — Age",
@@ -1675,23 +1776,28 @@
       },
       {
        "prompt": "Peter — Height",
-       "answer": "tall"
+       "answer": "tall",
+       "speakAnswer": "tall"
       },
       {
        "prompt": "Peter — Build",
-       "answer": "well-built"
+       "answer": "well-built",
+       "speakAnswer": "well-built"
       },
       {
        "prompt": "Peter — Hair",
-       "answer": "short curly"
+       "answer": "short curly",
+       "speakAnswer": "short curly"
       },
       {
        "prompt": "Peter — Nose",
-       "answer": "wide flattish"
+       "answer": "wide flattish",
+       "speakAnswer": "wide flattish"
       },
       {
        "prompt": "Peter — Lips",
-       "answer": "full"
+       "answer": "full",
+       "speakAnswer": "full"
       },
       {
        "prompt": "Peter — Other Characteristics",
@@ -1699,7 +1805,8 @@
       },
       {
        "prompt": "Ian — Name",
-       "answer": "Ian"
+       "answer": "Ian",
+       "speakAnswer": "Ian"
       },
       {
        "prompt": "Ian — Age",
@@ -1707,31 +1814,38 @@
       },
       {
        "prompt": "Ian — Height",
-       "answer": "medium height"
+       "answer": "medium height",
+       "speakAnswer": "medium height"
       },
       {
        "prompt": "Ian — Build",
-       "answer": "fat"
+       "answer": "fat",
+       "speakAnswer": "fat"
       },
       {
        "prompt": "Ian — Hair",
-       "answer": "grey straight"
+       "answer": "grey straight",
+       "speakAnswer": "grey straight"
       },
       {
        "prompt": "Ian — Nose",
-       "answer": "large"
+       "answer": "large",
+       "speakAnswer": "large"
       },
       {
        "prompt": "Ian — Lips",
-       "answer": "full"
+       "answer": "full",
+       "speakAnswer": "full"
       },
       {
        "prompt": "Ian — Other Characteristics",
-       "answer": "a beard and a moustache"
+       "answer": "a beard and a moustache",
+       "speakAnswer": "a beard and a moustache"
       },
       {
        "prompt": "Robert — Name",
-       "answer": "Robert"
+       "answer": "Robert",
+       "speakAnswer": "Robert"
       },
       {
        "prompt": "Robert — Age",
@@ -1739,23 +1853,28 @@
       },
       {
        "prompt": "Robert — Height",
-       "answer": "short"
+       "answer": "short",
+       "speakAnswer": "short"
       },
       {
        "prompt": "Robert — Build",
-       "answer": "slim"
+       "answer": "slim",
+       "speakAnswer": "slim"
       },
       {
        "prompt": "Robert — Hair",
-       "answer": "short white"
+       "answer": "short white",
+       "speakAnswer": "short white"
       },
       {
        "prompt": "Robert — Nose",
-       "answer": "big"
+       "answer": "big",
+       "speakAnswer": "big"
       },
       {
        "prompt": "Robert — Lips",
-       "answer": "thin"
+       "answer": "thin",
+       "speakAnswer": "thin"
       },
       {
        "prompt": "Robert — Other Characteristics",
@@ -1814,35 +1933,43 @@
      "tasks": [
       {
        "prompt": "Juan Lopez — First name",
-       "answer": "Juan"
+       "answer": "Juan",
+       "speakAnswer": "Juan"
       },
       {
        "prompt": "Juan Lopez — Family name",
-       "answer": "Lopez"
+       "answer": "Lopez",
+       "speakAnswer": "Lopez"
       },
       {
        "prompt": "Juan Lopez — City/Town",
-       "answer": "Barcelona"
+       "answer": "Barcelona",
+       "speakAnswer": "Barcelona"
       },
       {
        "prompt": "Juan Lopez — Country",
-       "answer": "Spain"
+       "answer": "Spain",
+       "speakAnswer": "Spain"
       },
       {
        "prompt": "Juan Lopez — Age",
-       "answer": "ten (10)"
+       "answer": "ten (10)",
+       "speakAnswer": "ten"
       },
       {
        "prompt": "Juan Lopez — Appearance",
-       "answer": "short straight brown hair, brown eyes, tall and quite slim"
+       "answer": "short straight brown hair, brown eyes, tall and quite slim",
+       "speakAnswer": "short straight brown hair, brown eyes, tall and quite slim"
       },
       {
        "prompt": "Juan Lopez — Likes",
-       "answer": "playing football"
+       "answer": "playing football",
+       "speakAnswer": "playing football"
       },
       {
        "prompt": "Juan Lopez — Can do",
-       "answer": "run very fast"
+       "answer": "run very fast",
+       "speakAnswer": "run very fast"
       }
      ]
     }
@@ -2121,61 +2248,71 @@
        "prompt": ": No, he ___ .",
        "answer": "hasn't",
        "whyUz": "Pierre — bitta erkak → Has. E'londa soqol aytilmagan → hasn't.",
-       "speak": ": No, he ___ ."
+       "speak": ": No, he ___ .",
+       "speakAnswer": "hasn't"
       },
       {
        "prompt": ": ___ Mario and Pierre got brown eyes?",
        "answer": "Have",
        "whyUz": "Ikki kishi → Have. Ikkalasining ko'zi ham jigarrang → have.",
-       "speak": ": ___ Mario and Pierre got brown eyes?"
+       "speak": ": ___ Mario and Pierre got brown eyes?",
+       "speakAnswer": "Have"
       },
       {
        "prompt": ": Yes, they ___ .",
        "answer": "have",
        "whyUz": "Ikki kishi → Have. Ikkalasining ko'zi ham jigarrang → have.",
-       "speak": ": Yes, they ___ ."
+       "speak": ": Yes, they ___ .",
+       "speakAnswer": "have"
       },
       {
        "prompt": ": ___ Anna got long hair?",
        "answer": "Has",
        "whyUz": "Anna — bitta ayol → Has. Uning sochi uzun → has.",
-       "speak": ": ___ Anna got long hair?"
+       "speak": ": ___ Anna got long hair?",
+       "speakAnswer": "Has"
       },
       {
        "prompt": ": Yes, she ___ .",
        "answer": "has",
        "whyUz": "Anna — bitta ayol → Has. Uning sochi uzun → has.",
-       "speak": ": Yes, she ___ ."
+       "speak": ": Yes, she ___ .",
+       "speakAnswer": "has"
       },
       {
        "prompt": ": ___ Mario got a beard?",
        "answer": "Has",
        "whyUz": "Mario e'lonida soqol aytilmagan → hasn't.",
-       "speak": ": ___ Mario got a beard?"
+       "speak": ": ___ Mario got a beard?",
+       "speakAnswer": "Has"
       },
       {
        "prompt": ": No, he ___ .",
        "answer": "hasn't",
        "whyUz": "Mario e'lonida soqol aytilmagan → hasn't.",
-       "speak": ": No, he ___ ."
+       "speak": ": No, he ___ .",
+       "speakAnswer": "hasn't"
       },
       {
        "prompt": ": Anna ___ got brown hair.",
        "answer": "hasn't",
        "whyUz": "Annaning sochi oq-sariq (fair), jigarrang emas → hasn't.",
-       "speak": ": Anna ___ got brown hair."
+       "speak": ": Anna ___ got brown hair.",
+       "speakAnswer": "hasn't"
       },
       {
        "prompt": ": ___ Mario and Pierre got fair hair?",
        "answer": "Have",
        "whyUz": "Marioda jigarrang, Pierreda qora soch — ikkalasi ham oq-sariq emas → haven't.",
-       "speak": ": ___ Mario and Pierre got fair hair?"
+       "speak": ": ___ Mario and Pierre got fair hair?",
+       "speakAnswer": "Have"
       },
       {
        "prompt": ": No, they ___ .",
        "answer": "haven't",
        "whyUz": "Marioda jigarrang, Pierreda qora soch — ikkalasi ham oq-sariq emas → haven't.",
-       "speak": ": No, they ___ ."
+       "speak": ": No, they ___ .",
+       "speakAnswer": "haven't"
       }
      ]
     }
@@ -2256,7 +2393,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a car?"
+       "speak": "Can you see a car?",
+       "speakAnswer": "Yes, I can."
       },
       {
        "prompt": "Can you see a bus?",
@@ -2266,7 +2404,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a bus?"
+       "speak": "Can you see a bus?",
+       "speakAnswer": "Yes, I can."
       },
       {
        "prompt": "Can you see a dog?",
@@ -2276,7 +2415,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a dog?"
+       "speak": "Can you see a dog?",
+       "speakAnswer": "Yes, I can."
       },
       {
        "prompt": "Can you see a helicopter?",
@@ -2286,7 +2426,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a helicopter?"
+       "speak": "Can you see a helicopter?",
+       "speakAnswer": "Yes, I can."
       },
       {
        "prompt": "Can you see a train?",
@@ -2296,7 +2437,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a train?"
+       "speak": "Can you see a train?",
+       "speakAnswer": "Yes, I can."
       },
       {
        "prompt": "Can you see a motorbike?",
@@ -2306,7 +2448,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a motorbike?"
+       "speak": "Can you see a motorbike?",
+       "speakAnswer": "Yes, I can."
       },
       {
        "prompt": "Can you see a plane?",
@@ -2316,7 +2459,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a plane?"
+       "speak": "Can you see a plane?",
+       "speakAnswer": "Yes, I can."
       },
       {
        "prompt": "Can you see a cat?",
@@ -2326,7 +2470,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a cat?"
+       "speak": "Can you see a cat?",
+       "speakAnswer": "Yes, I can."
       },
       {
        "prompt": "Can you see a guitar?",
@@ -2336,7 +2481,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a guitar?"
+       "speak": "Can you see a guitar?",
+       "speakAnswer": "No, I can't."
       },
       {
        "prompt": "Can you see a piano?",
@@ -2346,7 +2492,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a piano?"
+       "speak": "Can you see a piano?",
+       "speakAnswer": "No, I can't."
       },
       {
        "prompt": "Can you see a computer?",
@@ -2356,7 +2503,8 @@
         "Yes, I can.",
         "No, I can't."
        ],
-       "speak": "Can you see a computer?"
+       "speak": "Can you see a computer?",
+       "speakAnswer": "No, I can't."
       }
      ]
     },
@@ -2414,7 +2562,8 @@
         "swim fast",
         "type fast"
        ],
-       "speak": "A swimmer in a pool"
+       "speak": "A swimmer in a pool",
+       "speakAnswer": "swim fast"
       },
       {
        "prompt": "A woman typing at a computer",
@@ -2430,7 +2579,8 @@
         "swim fast",
         "type fast"
        ],
-       "speak": "A woman typing at a computer"
+       "speak": "A woman typing at a computer",
+       "speakAnswer": "type fast"
       },
       {
        "prompt": "A man in a coat walking quickly",
@@ -2446,7 +2596,8 @@
         "swim fast",
         "type fast"
        ],
-       "speak": "A man in a coat walking quickly"
+       "speak": "A man in a coat walking quickly",
+       "speakAnswer": "walk fast"
       },
       {
        "prompt": "A woman with a \"HELLO!\" speech bubble",
@@ -2462,7 +2613,8 @@
         "swim fast",
         "type fast"
        ],
-       "speak": "A woman with a \"HELLO!\" speech bubble"
+       "speak": "A woman with a \"HELLO!\" speech bubble",
+       "speakAnswer": "speak English well"
       },
       {
        "prompt": "A ballerina dancing",
@@ -2478,7 +2630,8 @@
         "swim fast",
         "type fast"
        ],
-       "speak": "A ballerina dancing"
+       "speak": "A ballerina dancing",
+       "speakAnswer": "dance well"
       },
       {
        "prompt": "A boy reading a book",
@@ -2494,7 +2647,8 @@
         "swim fast",
         "type fast"
        ],
-       "speak": "A boy reading a book"
+       "speak": "A boy reading a book",
+       "speakAnswer": "read fast"
       },
       {
        "prompt": "A chef with a plate of food",
@@ -2510,7 +2664,8 @@
         "swim fast",
         "type fast"
        ],
-       "speak": "A chef with a plate of food"
+       "speak": "A chef with a plate of food",
+       "speakAnswer": "cook well"
       },
       {
        "prompt": "A woman jogging on a road",
@@ -2526,7 +2681,8 @@
         "swim fast",
         "type fast"
        ],
-       "speak": "A woman jogging on a road"
+       "speak": "A woman jogging on a road",
+       "speakAnswer": "run fast"
       }
      ]
     }
@@ -2586,55 +2742,64 @@
        "prompt": "Jamaicans ___ got a dark complexion.",
        "answer": "have",
        "whyUz": "Jamaicans — ko'plik (they) → have",
-       "speak": "Jamaicans ___ got a dark complexion."
+       "speak": "Jamaicans ___ got a dark complexion.",
+       "speakAnswer": "have"
       },
       {
        "prompt": "A: Has Sue got blue eyes? B: Yes, she ___ .",
        "answer": "has",
        "whyUz": "Savolda 'Has' bo'lgani uchun javobda ham 'has'. Qisqa javobda 'got' YO'Q.",
-       "speak": "A: Has Sue got blue eyes? B: Yes, she ___ ."
+       "speak": "A: Has Sue got blue eyes? B: Yes, she ___ .",
+       "speakAnswer": "has"
       },
       {
        "prompt": "A: ___ your brothers got straight hair? B: No, they ___ .",
        "answer": "Have / haven't",
        "whyUz": "'brothers' — ko'plik → Have. Inkor javob → haven't.",
-       "speak": "A: ___ your brothers got straight hair? B: No, they ___ ."
+       "speak": "A: ___ your brothers got straight hair? B: No, they ___ .",
+       "speakAnswer": "Have / haven't"
       },
       {
        "prompt": "A: ___ Lisa got a big nose? B: No, she ___ .",
        "answer": "Has / hasn't",
        "whyUz": "Lisa — bitta ayol → Has. Inkor → hasn't.",
-       "speak": "A: ___ Lisa got a big nose? B: No, she ___ ."
+       "speak": "A: ___ Lisa got a big nose? B: No, she ___ .",
+       "speakAnswer": "Has / hasn't"
       },
       {
        "prompt": "Erik is from Norway and he ___ got a fair complexion.",
        "answer": "has",
        "whyUz": "he → has",
-       "speak": "Erik is from Norway and he ___ got a fair complexion."
+       "speak": "Erik is from Norway and he ___ got a fair complexion.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "My mother ___ got long fair hair and green eyes.",
        "answer": "has",
        "whyUz": "mother — bitta ayol (she) → has",
-       "speak": "My mother ___ got long fair hair and green eyes."
+       "speak": "My mother ___ got long fair hair and green eyes.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "Asians ___ got fair hair. They ___ got dark hair.",
        "answer": "haven't / have",
        "whyUz": "Asians — ko'plik. Birinchi gap inkor (oq-sariq soch emas), ikkinchisi tasdiq (qora soch).",
-       "speak": "Asians ___ got fair hair. They ___ got dark hair."
+       "speak": "Asians ___ got fair hair. They ___ got dark hair.",
+       "speakAnswer": "haven't / have"
       },
       {
        "prompt": "My father ___ got short curly hair and blue eyes.",
        "answer": "has",
        "whyUz": "father — bitta erkak (he) → has",
-       "speak": "My father ___ got short curly hair and blue eyes."
+       "speak": "My father ___ got short curly hair and blue eyes.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "All my sisters ___ got brown eyes.",
        "answer": "have",
        "whyUz": "sisters — ko'plik (they) → have",
-       "speak": "All my sisters ___ got brown eyes."
+       "speak": "All my sisters ___ got brown eyes.",
+       "speakAnswer": "have"
       }
      ]
     },
@@ -2652,49 +2817,57 @@
        "prompt": "Anna ___ got a cat. She ___ got a video camera.",
        "answer": "has / hasn't",
        "whyUz": "Anna: mushuk ✓, videokamera ✗",
-       "speak": "Anna ___ got a cat. She ___ got a video camera."
+       "speak": "Anna ___ got a cat. She ___ got a video camera.",
+       "speakAnswer": "has / hasn't"
       },
       {
        "prompt": "Michael ___ got a car, but he ___ got a stereo.",
        "answer": "hasn't / has",
        "whyUz": "Michael: mashina ✗, stereo ✓. 'but' qarama-qarshilikni bildiradi.",
-       "speak": "Michael ___ got a car, but he ___ got a stereo."
+       "speak": "Michael ___ got a car, but he ___ got a stereo.",
+       "speakAnswer": "hasn't / has"
       },
       {
        "prompt": "Rachel ___ got a stereo. She ___ got a cat.",
        "answer": "has / hasn't",
        "whyUz": "Rachel: stereo ✓, mushuk ✗",
-       "speak": "Rachel ___ got a stereo. She ___ got a cat."
+       "speak": "Rachel ___ got a stereo. She ___ got a cat.",
+       "speakAnswer": "has / hasn't"
       },
       {
        "prompt": "Michael and Anna ___ got a car. They ___ got a stereo.",
        "answer": "haven't / have",
        "whyUz": "Ikkalasida ham mashina ✗, stereo ✓. Ikki odam → have/haven't.",
-       "speak": "Michael and Anna ___ got a car. They ___ got a stereo."
+       "speak": "Michael and Anna ___ got a car. They ___ got a stereo.",
+       "speakAnswer": "haven't / have"
       },
       {
        "prompt": "Rachel ___ got a video camera, but she ___ got a car.",
        "answer": "hasn't / has",
        "whyUz": "Rachel: videokamera ✗, mashina ✓",
-       "speak": "Rachel ___ got a video camera, but she ___ got a car."
+       "speak": "Rachel ___ got a video camera, but she ___ got a car.",
+       "speakAnswer": "hasn't / has"
       },
       {
        "prompt": "Michael ___ got a video camera, but he ___ got a cat.",
        "answer": "has / hasn't",
        "whyUz": "Michael: videokamera ✓, mushuk ✗",
-       "speak": "Michael ___ got a video camera, but he ___ got a cat."
+       "speak": "Michael ___ got a video camera, but he ___ got a cat.",
+       "speakAnswer": "has / hasn't"
       },
       {
        "prompt": "Rachel and Anna ___ got a stereo. They ___ got a video camera.",
        "answer": "have / haven't",
        "whyUz": "Ikkalasida stereo ✓, videokamera ✗",
-       "speak": "Rachel and Anna ___ got a stereo. They ___ got a video camera."
+       "speak": "Rachel and Anna ___ got a stereo. They ___ got a video camera.",
+       "speakAnswer": "have / haven't"
       },
       {
        "prompt": "Anna ___ got a car, but she ___ got a stereo.",
        "answer": "hasn't / has",
        "whyUz": "Anna: mashina ✗, stereo ✓",
-       "speak": "Anna ___ got a car, but she ___ got a stereo."
+       "speak": "Anna ___ got a car, but she ___ got a stereo.",
+       "speakAnswer": "hasn't / has"
       }
      ]
     },
@@ -2713,112 +2886,128 @@
        "answer": "Has he got a basketball?",
        "promptUz": "Savol tuzing",
        "whyUz": "Rasmda basketbol to'pi bor — tasdiq javob, tuzatish shart emas.",
-       "speak": "a boy sitting with a basketball"
+       "speak": "a boy sitting with a basketball",
+       "speakAnswer": "Has he got a basketball?"
       },
       {
        "prompt": "a boy sitting with a basketball",
        "answer": "Yes, he has.",
        "promptUz": "Javob tuzing",
        "whyUz": "Rasmda basketbol to'pi bor — tasdiq javob, tuzatish shart emas.",
-       "speak": "a boy sitting with a basketball"
+       "speak": "a boy sitting with a basketball",
+       "speakAnswer": "Yes, he has."
       },
       {
        "prompt": "a woman with long fair hair",
        "answer": "Has she got short hair?",
        "promptUz": "Savol tuzing",
        "whyUz": "Soch uzun — savolda kalta deyilgan, demak inkor + tuzatish.",
-       "speak": "a woman with long fair hair"
+       "speak": "a woman with long fair hair",
+       "speakAnswer": "Has she got short hair?"
       },
       {
        "prompt": "a woman with long fair hair",
        "answer": "No, she hasn't. She's got long hair.",
        "promptUz": "Javob tuzing",
        "whyUz": "Soch uzun — savolda kalta deyilgan, demak inkor + tuzatish.",
-       "speak": "a woman with long fair hair"
+       "speak": "a woman with long fair hair",
+       "speakAnswer": "No, she hasn't. She's got long hair."
       },
       {
        "prompt": "two girls holding books",
        "answer": "Have they got books?",
        "promptUz": "Savol tuzing",
        "whyUz": "Ikki kishi → Have. 'books' ko'plik — artikl yo'q.",
-       "speak": "two girls holding books"
+       "speak": "two girls holding books",
+       "speakAnswer": "Have they got books?"
       },
       {
        "prompt": "two girls holding books",
        "answer": "Yes, they have.",
        "promptUz": "Javob tuzing",
        "whyUz": "Ikki kishi → Have. 'books' ko'plik — artikl yo'q.",
-       "speak": "two girls holding books"
+       "speak": "two girls holding books",
+       "speakAnswer": "Yes, they have."
       },
       {
        "prompt": "a person playing the piano",
        "answer": "Has he got a guitar?",
        "promptUz": "Savol tuzing",
        "whyUz": "Rasmda pianino — savolda gitara deyilgan, demak inkor + tuzatish.",
-       "speak": "a person playing the piano"
+       "speak": "a person playing the piano",
+       "speakAnswer": "Has he got a guitar?"
       },
       {
        "prompt": "a person playing the piano",
        "answer": "No, he hasn't. He's got a piano.",
        "promptUz": "Javob tuzing",
        "whyUz": "Rasmda pianino — savolda gitara deyilgan, demak inkor + tuzatish.",
-       "speak": "a person playing the piano"
+       "speak": "a person playing the piano",
+       "speakAnswer": "No, he hasn't. He's got a piano."
       },
       {
        "prompt": "a sailor with a beard",
        "answer": "Has he got a beard?",
        "promptUz": "Savol tuzing",
        "whyUz": "Soqoli bor — tasdiq.",
-       "speak": "a sailor with a beard"
+       "speak": "a sailor with a beard",
+       "speakAnswer": "Has he got a beard?"
       },
       {
        "prompt": "a sailor with a beard",
        "answer": "Yes, he has.",
        "promptUz": "Javob tuzing",
        "whyUz": "Soqoli bor — tasdiq.",
-       "speak": "a sailor with a beard"
+       "speak": "a sailor with a beard",
+       "speakAnswer": "Yes, he has."
       },
       {
        "prompt": "a man wearing a hat",
        "answer": "Has he got a hat?",
        "promptUz": "Savol tuzing",
        "whyUz": "Shlyapasi bor — tasdiq.",
-       "speak": "a man wearing a hat"
+       "speak": "a man wearing a hat",
+       "speakAnswer": "Has he got a hat?"
       },
       {
        "prompt": "a man wearing a hat",
        "answer": "Yes, he has.",
        "promptUz": "Javob tuzing",
        "whyUz": "Shlyapasi bor — tasdiq.",
-       "speak": "a man wearing a hat"
+       "speak": "a man wearing a hat",
+       "speakAnswer": "Yes, he has."
       },
       {
        "prompt": "a woman reading a newspaper",
        "answer": "Has she got a newspaper?",
        "promptUz": "Savol tuzing",
        "whyUz": "Gazetasi bor — tasdiq.",
-       "speak": "a woman reading a newspaper"
+       "speak": "a woman reading a newspaper",
+       "speakAnswer": "Has she got a newspaper?"
       },
       {
        "prompt": "a woman reading a newspaper",
        "answer": "Yes, she has.",
        "promptUz": "Javob tuzing",
        "whyUz": "Gazetasi bor — tasdiq.",
-       "speak": "a woman reading a newspaper"
+       "speak": "a woman reading a newspaper",
+       "speakAnswer": "Yes, she has."
       },
       {
        "prompt": "a woman working at a computer",
        "answer": "Has she got a computer?",
        "promptUz": "Savol tuzing",
        "whyUz": "Kompyuteri bor — tasdiq.",
-       "speak": "a woman working at a computer"
+       "speak": "a woman working at a computer",
+       "speakAnswer": "Has she got a computer?"
       },
       {
        "prompt": "a woman working at a computer",
        "answer": "Yes, she has.",
        "promptUz": "Javob tuzing",
        "whyUz": "Kompyuteri bor — tasdiq.",
-       "speak": "a woman working at a computer"
+       "speak": "a woman working at a computer",
+       "speakAnswer": "Yes, she has."
       }
      ]
     }
@@ -2853,7 +3042,8 @@
         "play the guitar",
         "dance"
        ],
-       "speak": "a cyclist on a racing bicycle"
+       "speak": "a cyclist on a racing bicycle",
+       "speakAnswer": "ride a bicycle"
       },
       {
        "prompt": "a person painting at an easel",
@@ -2865,7 +3055,8 @@
         "play the guitar",
         "dance"
        ],
-       "speak": "a person painting at an easel"
+       "speak": "a person painting at an easel",
+       "speakAnswer": "paint"
       },
       {
        "prompt": "a man playing an electric guitar",
@@ -2877,7 +3068,8 @@
         "paint",
         "dance"
        ],
-       "speak": "a man playing an electric guitar"
+       "speak": "a man playing an electric guitar",
+       "speakAnswer": "play the guitar"
       },
       {
        "prompt": "a dancer in a black outfit",
@@ -2889,7 +3081,8 @@
         "paint",
         "play the guitar"
        ],
-       "speak": "a dancer in a black outfit"
+       "speak": "a dancer in a black outfit",
+       "speakAnswer": "dance"
       },
       {
        "prompt": "a roller-skater",
@@ -2901,7 +3094,8 @@
         "paint",
         "play the guitar"
        ],
-       "speak": "a roller-skater"
+       "speak": "a roller-skater",
+       "speakAnswer": "roller-skate"
       },
       {
        "prompt": "a rider on a brown horse",
@@ -2913,7 +3107,8 @@
         "paint",
         "play the guitar"
        ],
-       "speak": "a rider on a brown horse"
+       "speak": "a rider on a brown horse",
+       "speakAnswer": "ride a horse"
       },
       {
        "prompt": "a bird in flight",
@@ -2925,7 +3120,8 @@
         "paint",
         "play the guitar"
        ],
-       "speak": "a bird in flight"
+       "speak": "a bird in flight",
+       "speakAnswer": "fly"
       },
       {
        "prompt": "a chef holding a cake",
@@ -2937,7 +3133,8 @@
         "paint",
         "play the guitar"
        ],
-       "speak": "a chef holding a cake"
+       "speak": "a chef holding a cake",
+       "speakAnswer": "cook"
       },
       {
        "prompt": "a pilot in a cockpit",
@@ -2949,7 +3146,8 @@
         "paint",
         "play the guitar"
        ],
-       "speak": "a pilot in a cockpit"
+       "speak": "a pilot in a cockpit",
+       "speakAnswer": "fly a plane"
       },
       {
        "prompt": "a cheetah running",
@@ -2961,7 +3159,8 @@
         "paint",
         "play the guitar"
        ],
-       "speak": "a cheetah running"
+       "speak": "a cheetah running",
+       "speakAnswer": "run fast"
       },
       {
        "prompt": "a woman singing into a microphone",
@@ -2973,7 +3172,8 @@
         "paint",
         "play the guitar"
        ],
-       "speak": "a woman singing into a microphone"
+       "speak": "a woman singing into a microphone",
+       "speakAnswer": "sing"
       },
       {
        "prompt": "basketball players with a ball",
@@ -2985,7 +3185,8 @@
         "paint",
         "play the guitar"
        ],
-       "speak": "basketball players with a ball"
+       "speak": "basketball players with a ball",
+       "speakAnswer": "play basketball"
       }
      ]
     },
@@ -3003,31 +3204,36 @@
        "prompt": "Karen ___ dance, but she ___ play football.",
        "answer": "can / can't",
        "whyUz": "Karen: raqs ✓, futbol ✗",
-       "speak": "Karen ___ dance, but she ___ play football."
+       "speak": "Karen ___ dance, but she ___ play football.",
+       "speakAnswer": "can / can't"
       },
       {
        "prompt": "Chris ___ paint, but he ___ speak French.",
        "answer": "can't / can",
        "whyUz": "Chris: rasm ✗, fransuzcha ✓",
-       "speak": "Chris ___ paint, but he ___ speak French."
+       "speak": "Chris ___ paint, but he ___ speak French.",
+       "speakAnswer": "can't / can"
       },
       {
        "prompt": "Jack ___ drive and paint, but he ___ dance.",
        "answer": "can / can't",
        "whyUz": "Jack: haydash ✓, rasm ✓, raqs ✗",
-       "speak": "Jack ___ drive and paint, but he ___ dance."
+       "speak": "Jack ___ drive and paint, but he ___ dance.",
+       "speakAnswer": "can / can't"
       },
       {
        "prompt": "Karen ___ speak French, but she ___ paint.",
        "answer": "can't / can",
        "whyUz": "Karen: fransuzcha ✗, rasm ✓",
-       "speak": "Karen ___ speak French, but she ___ paint."
+       "speak": "Karen ___ speak French, but she ___ paint.",
+       "speakAnswer": "can't / can"
       },
       {
        "prompt": "Jack and Chris ___ play football, but they ___ dance.",
        "answer": "can / can't",
        "whyUz": "Ikkalasi: futbol ✓, raqs ✗. 'can' ko'plikda ham o'zgarmaydi.",
-       "speak": "Jack and Chris ___ play football, but they ___ dance."
+       "speak": "Jack and Chris ___ play football, but they ___ dance.",
+       "speakAnswer": "can / can't"
       }
      ]
     },
@@ -3046,126 +3252,144 @@
        "answer": "Can Karen dance?",
        "promptUz": "Savol tuzing",
        "whyUz": "Karen raqsga tusha oladi ✓",
-       "speak": "Karen/dance"
+       "speak": "Karen/dance",
+       "speakAnswer": "Can Karen dance?"
       },
       {
        "prompt": "Karen/dance",
        "answer": "Yes, she can.",
        "promptUz": "Javob tuzing",
        "whyUz": "Karen raqsga tusha oladi ✓",
-       "speak": "Karen/dance"
+       "speak": "Karen/dance",
+       "speakAnswer": "Yes, she can."
       },
       {
        "prompt": "Chris/dance",
        "answer": "Can Chris dance?",
        "promptUz": "Savol tuzing",
        "whyUz": "Chris raqsga tusha olmaydi ✗",
-       "speak": "Chris/dance"
+       "speak": "Chris/dance",
+       "speakAnswer": "Can Chris dance?"
       },
       {
        "prompt": "Chris/dance",
        "answer": "No, he can't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Chris raqsga tusha olmaydi ✗",
-       "speak": "Chris/dance"
+       "speak": "Chris/dance",
+       "speakAnswer": "No, he can't."
       },
       {
        "prompt": "Jack/play football",
        "answer": "Can Jack play football?",
        "promptUz": "Savol tuzing",
        "whyUz": "Jack futbol o'ynay oladi ✓",
-       "speak": "Jack/play football"
+       "speak": "Jack/play football",
+       "speakAnswer": "Can Jack play football?"
       },
       {
        "prompt": "Jack/play football",
        "answer": "Yes, he can.",
        "promptUz": "Javob tuzing",
        "whyUz": "Jack futbol o'ynay oladi ✓",
-       "speak": "Jack/play football"
+       "speak": "Jack/play football",
+       "speakAnswer": "Yes, he can."
       },
       {
        "prompt": "Karen/play football",
        "answer": "Can Karen play football?",
        "promptUz": "Savol tuzing",
        "whyUz": "Karen futbol o'ynay olmaydi ✗",
-       "speak": "Karen/play football"
+       "speak": "Karen/play football",
+       "speakAnswer": "Can Karen play football?"
       },
       {
        "prompt": "Karen/play football",
        "answer": "No, she can't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Karen futbol o'ynay olmaydi ✗",
-       "speak": "Karen/play football"
+       "speak": "Karen/play football",
+       "speakAnswer": "No, she can't."
       },
       {
        "prompt": "Chris/speak French",
        "answer": "Can Chris speak French?",
        "promptUz": "Savol tuzing",
        "whyUz": "Chris fransuzchani biladi ✓",
-       "speak": "Chris/speak French"
+       "speak": "Chris/speak French",
+       "speakAnswer": "Can Chris speak French?"
       },
       {
        "prompt": "Chris/speak French",
        "answer": "Yes, he can.",
        "promptUz": "Javob tuzing",
        "whyUz": "Chris fransuzchani biladi ✓",
-       "speak": "Chris/speak French"
+       "speak": "Chris/speak French",
+       "speakAnswer": "Yes, he can."
       },
       {
        "prompt": "Jack/speak French",
        "answer": "Can Jack speak French?",
        "promptUz": "Savol tuzing",
        "whyUz": "Jack fransuzchani bilmaydi ✗",
-       "speak": "Jack/speak French"
+       "speak": "Jack/speak French",
+       "speakAnswer": "Can Jack speak French?"
       },
       {
        "prompt": "Jack/speak French",
        "answer": "No, he can't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Jack fransuzchani bilmaydi ✗",
-       "speak": "Jack/speak French"
+       "speak": "Jack/speak French",
+       "speakAnswer": "No, he can't."
       },
       {
        "prompt": "Karen/drive",
        "answer": "Can Karen drive?",
        "promptUz": "Savol tuzing",
        "whyUz": "Karen haydashni bilmaydi ✗",
-       "speak": "Karen/drive"
+       "speak": "Karen/drive",
+       "speakAnswer": "Can Karen drive?"
       },
       {
        "prompt": "Karen/drive",
        "answer": "No, she can't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Karen haydashni bilmaydi ✗",
-       "speak": "Karen/drive"
+       "speak": "Karen/drive",
+       "speakAnswer": "No, she can't."
       },
       {
        "prompt": "Chris/paint",
        "answer": "Can Chris paint?",
        "promptUz": "Savol tuzing",
        "whyUz": "Chris rasm chiza olmaydi ✗",
-       "speak": "Chris/paint"
+       "speak": "Chris/paint",
+       "speakAnswer": "Can Chris paint?"
       },
       {
        "prompt": "Chris/paint",
        "answer": "No, he can't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Chris rasm chiza olmaydi ✗",
-       "speak": "Chris/paint"
+       "speak": "Chris/paint",
+       "speakAnswer": "No, he can't."
       },
       {
        "prompt": "Jack/paint",
        "answer": "Can Jack paint?",
        "promptUz": "Savol tuzing",
        "whyUz": "Jack rasm chiza oladi ✓",
-       "speak": "Jack/paint"
+       "speak": "Jack/paint",
+       "speakAnswer": "Can Jack paint?"
       },
       {
        "prompt": "Jack/paint",
        "answer": "Yes, he can.",
        "promptUz": "Javob tuzing",
        "whyUz": "Jack rasm chiza oladi ✓",
-       "speak": "Jack/paint"
+       "speak": "Jack/paint",
+       "speakAnswer": "Yes, he can."
       }
      ]
     },
@@ -3184,56 +3408,64 @@
        "answer": "Can you swim?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Suza olasizmi?",
-       "speak": "Yes, I can. I can swim quite well."
+       "speak": "Yes, I can. I can swim quite well.",
+       "speakAnswer": "Can you swim?"
       },
       {
        "prompt": "No, I can't dance very well.",
        "answer": "Can you dance?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Raqsga tusha olasizmi?",
-       "speak": "No, I can't dance very well."
+       "speak": "No, I can't dance very well.",
+       "speakAnswer": "Can you dance?"
       },
       {
        "prompt": "No, I can't roller-skate.",
        "answer": "Can you roller-skate?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Rolik ucha olasizmi?",
-       "speak": "No, I can't roller-skate."
+       "speak": "No, I can't roller-skate.",
+       "speakAnswer": "Can you roller-skate?"
       },
       {
        "prompt": "No, I can't fly a plane.",
        "answer": "Can you fly a plane?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Samolyot ucha olasizmi?",
-       "speak": "No, I can't fly a plane."
+       "speak": "No, I can't fly a plane.",
+       "speakAnswer": "Can you fly a plane?"
       },
       {
        "prompt": "Yes, I can ride a bicycle.",
        "answer": "Can you ride a bicycle?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Velosiped hayday olasizmi?",
-       "speak": "Yes, I can ride a bicycle."
+       "speak": "Yes, I can ride a bicycle.",
+       "speakAnswer": "Can you ride a bicycle?"
       },
       {
        "prompt": "No, I can't play the violin.",
        "answer": "Can you play the violin?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Skripka chala olasizmi? ('the' bilan — cholg'u asbobi)",
-       "speak": "No, I can't play the violin."
+       "speak": "No, I can't play the violin.",
+       "speakAnswer": "Can you play the violin?"
       },
       {
        "prompt": "Yes, I can speak English.",
        "answer": "Can you speak English?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Inglizcha gapira olasizmi?",
-       "speak": "Yes, I can speak English."
+       "speak": "Yes, I can speak English.",
+       "speakAnswer": "Can you speak English?"
       },
       {
        "prompt": "No, I can't ride a horse.",
        "answer": "Can you ride a horse?",
        "promptUz": "Shu javobga savol tuzing",
        "whyUz": "Otda yura olasizmi?",
-       "speak": "No, I can't ride a horse."
+       "speak": "No, I can't ride a horse.",
+       "speakAnswer": "Can you ride a horse?"
       }
      ]
     },
@@ -3249,27 +3481,33 @@
      "tasks": [
       {
        "prompt": "Namuna bo'yicha yozing",
-       "answer": "My partner can swim very well."
+       "answer": "My partner can swim very well.",
+       "speakAnswer": "My partner can swim very well."
       },
       {
        "prompt": "Namuna bo'yicha yozing",
-       "answer": "She can speak English quite well."
+       "answer": "She can speak English quite well.",
+       "speakAnswer": "She can speak English quite well."
       },
       {
        "prompt": "Namuna bo'yicha yozing",
-       "answer": "She can ride a bicycle."
+       "answer": "She can ride a bicycle.",
+       "speakAnswer": "She can ride a bicycle."
       },
       {
        "prompt": "Namuna bo'yicha yozing",
-       "answer": "She can't fly a plane."
+       "answer": "She can't fly a plane.",
+       "speakAnswer": "She can't fly a plane."
       },
       {
        "prompt": "Namuna bo'yicha yozing",
-       "answer": "She can't play the violin."
+       "answer": "She can't play the violin.",
+       "speakAnswer": "She can't play the violin."
       },
       {
        "prompt": "Namuna bo'yicha yozing",
-       "answer": "She can't ride a horse."
+       "answer": "She can't ride a horse.",
+       "speakAnswer": "She can't ride a horse."
       }
      ]
     }
@@ -3297,115 +3535,134 @@
        "prompt": "They hasn't got a car.",
        "answer": "haven't",
        "whyUz": "they → HAVEN'T got",
-       "speak": "They hasn't got a car."
+       "speak": "They hasn't got a car.",
+       "speakAnswer": "haven't"
       },
       {
        "prompt": "Where has Fergus from?",
        "answer": "is",
        "whyUz": "Joy so'ralganda 'be' ishlatiladi: 'Where IS he from?'",
-       "speak": "Where has Fergus from?"
+       "speak": "Where has Fergus from?",
+       "speakAnswer": "is"
       },
       {
        "prompt": "Can't you close the window, please?",
        "answer": "Can",
        "whyUz": "Muloyim iltimos INKOR shaklda bo'lmaydi: 'CAN you close...?'",
-       "speak": "Can't you close the window, please?"
+       "speak": "Can't you close the window, please?",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "Are she from Spain?",
        "answer": "Is",
        "whyUz": "she → IS",
-       "speak": "Are she from Spain?"
+       "speak": "Are she from Spain?",
+       "speakAnswer": "Is"
       },
       {
        "prompt": "My mother have got brown eyes.",
        "answer": "has",
        "whyUz": "mother (she) → HAS got",
-       "speak": "My mother have got brown eyes."
+       "speak": "My mother have got brown eyes.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "The Pyramids is in Cairo.",
        "answer": "are",
        "whyUz": "Pyramids — KO'PLIK → ARE",
-       "speak": "The Pyramids is in Cairo."
+       "speak": "The Pyramids is in Cairo.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "Our neighbours hasn't got a car.",
        "answer": "haven't",
        "whyUz": "neighbours — ko'plik → HAVEN'T got",
-       "speak": "Our neighbours hasn't got a car."
+       "speak": "Our neighbours hasn't got a car.",
+       "speakAnswer": "haven't"
       },
       {
        "prompt": "My father is a actor.",
        "answer": "an",
        "whyUz": "actor — 'a' unli tovush → AN",
-       "speak": "My father is a actor."
+       "speak": "My father is a actor.",
+       "speakAnswer": "an"
       },
       {
        "prompt": "Have she got a sister?",
        "answer": "Has",
        "whyUz": "she → HAS",
-       "speak": "Have she got a sister?"
+       "speak": "Have she got a sister?",
+       "speakAnswer": "Has"
       },
       {
        "prompt": "How old is you?",
        "answer": "are",
        "whyUz": "you → ARE",
-       "speak": "How old is you?"
+       "speak": "How old is you?",
+       "speakAnswer": "are"
       },
       {
        "prompt": "He have got two bicycles.",
        "answer": "has",
        "whyUz": "he → HAS got",
-       "speak": "He have got two bicycles."
+       "speak": "He have got two bicycles.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "She can plays the guitar.",
        "answer": "play",
        "whyUz": "'can' dan keyin fe'l ASOS shaklida — -S QO'SHILMAYDI",
-       "speak": "She can plays the guitar."
+       "speak": "She can plays the guitar.",
+       "speakAnswer": "play"
       },
       {
        "prompt": "Has you got a pencil, please?",
        "answer": "Have",
        "whyUz": "you → HAVE",
-       "speak": "Has you got a pencil, please?"
+       "speak": "Has you got a pencil, please?",
+       "speakAnswer": "Have"
       },
       {
        "prompt": "His favourite sport are football.",
        "answer": "is",
        "whyUz": "'sport' — birlik → IS",
-       "speak": "His favourite sport are football."
+       "speak": "His favourite sport are football.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "What can Tim does?",
        "answer": "do",
        "whyUz": "'can' dan keyin asos shakli — 'do' (does emas)",
-       "speak": "What can Tim does?"
+       "speak": "What can Tim does?",
+       "speakAnswer": "do"
       },
       {
        "prompt": "Has Bob a musician?",
        "answer": "Is",
        "whyUz": "Kasb aytilganda 'be' ishlatiladi: 'IS Bob a musician?'",
-       "speak": "Has Bob a musician?"
+       "speak": "Has Bob a musician?",
+       "speakAnswer": "Is"
       },
       {
        "prompt": "Can you see a car? No, I can.",
        "answer": "can't",
        "whyUz": "Inkor javob → CAN'T. 'No, I can' ma'nosiz.",
-       "speak": "Can you see a car? No, I can."
+       "speak": "Can you see a car? No, I can.",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "Has Mario and Peter got brown eyes?",
        "answer": "Have",
        "whyUz": "Ikki kishi → HAVE",
-       "speak": "Has Mario and Peter got brown eyes?"
+       "speak": "Has Mario and Peter got brown eyes?",
+       "speakAnswer": "Have"
       },
       {
        "prompt": "Mary can't speaks Italian.",
        "answer": "speak",
        "whyUz": "'can't' dan keyin ham asos shakli — SPEAK",
-       "speak": "Mary can't speaks Italian."
+       "speak": "Mary can't speaks Italian.",
+       "speakAnswer": "speak"
       }
      ]
     },
@@ -3440,7 +3697,8 @@
         "an"
        ],
        "whyUz": "i — unli",
-       "speak": "ice cream"
+       "speak": "ice cream",
+       "speakAnswer": "an"
       },
       {
        "prompt": "postman",
@@ -3488,7 +3746,8 @@
        ],
        "whyUz": "o — unli",
        "visual": "🍊",
-       "speak": "orange"
+       "speak": "orange",
+       "speakAnswer": "an"
       },
       {
        "prompt": "apple",
@@ -3500,7 +3759,8 @@
        ],
        "whyUz": "a — unli",
        "visual": "🍎",
-       "speak": "apple"
+       "speak": "apple",
+       "speakAnswer": "an"
       },
       {
        "prompt": "umbrella",
@@ -3512,7 +3772,8 @@
        ],
        "whyUz": "u — bu yerda unli tovush",
        "visual": "☂️",
-       "speak": "umbrella"
+       "speak": "umbrella",
+       "speakAnswer": "an"
       },
       {
        "prompt": "large house",
@@ -3559,7 +3820,8 @@
        ],
        "whyUz": "a — unli",
        "visual": "🧑‍🎨",
-       "speak": "artist"
+       "speak": "artist",
+       "speakAnswer": "an"
       },
       {
        "prompt": "engineer",
@@ -3571,7 +3833,8 @@
        ],
        "whyUz": "e — unli",
        "visual": "👷",
-       "speak": "engineer"
+       "speak": "engineer",
+       "speakAnswer": "an"
       },
       {
        "prompt": "astronaut",
@@ -3583,7 +3846,8 @@
        ],
        "whyUz": "a — unli",
        "visual": "🧑‍🚀",
-       "speak": "astronaut"
+       "speak": "astronaut",
+       "speakAnswer": "an"
       },
       {
        "prompt": "small nose",
@@ -3628,7 +3892,8 @@
         "an"
        ],
        "whyUz": "I — unli",
-       "speak": "Italian school"
+       "speak": "Italian school",
+       "speakAnswer": "an"
       },
       {
        "prompt": "elephant",
@@ -3640,7 +3905,8 @@
        ],
        "whyUz": "e — unli",
        "visual": "🐘",
-       "speak": "elephant"
+       "speak": "elephant",
+       "speakAnswer": "an"
       },
       {
        "prompt": "helicopter",
@@ -3691,31 +3957,36 @@
        "prompt": "A: Who is ___ ?",
        "answer": "she",
        "whyUz": "Sarah — ayol → she.",
-       "speak": "A: Who is ___ ?"
+       "speak": "A: Who is ___ ?",
+       "speakAnswer": "she"
       },
       {
        "prompt": "A: Who is ___ ?",
        "answer": "he",
        "whyUz": "Bob — erkak → he.",
-       "speak": "A: Who is ___ ?"
+       "speak": "A: Who is ___ ?",
+       "speakAnswer": "he"
       },
       {
        "prompt": "B: ___ are in the kitchen.",
        "answer": "They",
        "whyUz": "Ikki kishi → They. Gap boshida katta harf.",
-       "speak": "B: ___ are in the kitchen."
+       "speak": "B: ___ are in the kitchen.",
+       "speakAnswer": "They"
       },
       {
        "prompt": "A: What is ___ ?",
        "answer": "it",
        "whyUz": "Xat — narsa → it. Narsa uchun 'What', odam uchun 'Who'.",
-       "speak": "A: What is ___ ?"
+       "speak": "A: What is ___ ?",
+       "speakAnswer": "it"
       },
       {
        "prompt": "A: Are ___ from Canada?",
        "answer": "you",
        "whyUz": "Javob 'we're' — demak savol 'you' (sizlar) haqida.",
-       "speak": "A: Are ___ from Canada?"
+       "speak": "A: Are ___ from Canada?",
+       "speakAnswer": "you"
       }
      ]
     },
@@ -3734,61 +4005,71 @@
        "prompt": "Is he 35 years old?",
        "answer": "No, he isn't.",
        "promptUz": "U 35 yoshdami?",
-       "speak": "Is he 35 years old?"
+       "speak": "Is he 35 years old?",
+       "speakAnswer": "No, he isn't."
       },
       {
        "prompt": "Is he English?",
        "answer": "No, he isn't. He's American.",
        "promptUz": "U inglizmi?",
-       "speak": "Is he English?"
+       "speak": "Is he English?",
+       "speakAnswer": "No, he isn't. He's American."
       },
       {
        "prompt": "Is he single?",
        "answer": "No, he isn't. He's married.",
        "promptUz": "U bo'ydoqmi?",
-       "speak": "Is he single?"
+       "speak": "Is he single?",
+       "speakAnswer": "No, he isn't. He's married."
       },
       {
        "prompt": "Has he got short hair?",
        "answer": "Yes, he has.",
        "promptUz": "Uning sochi kaltami?",
-       "speak": "Has he got short hair?"
+       "speak": "Has he got short hair?",
+       "speakAnswer": "Yes, he has."
       },
       {
        "prompt": "Has he got a moustache?",
        "answer": "No, he hasn't.",
        "promptUz": "Uning mo'ylovi bormi?",
-       "speak": "Has he got a moustache?"
+       "speak": "Has he got a moustache?",
+       "speakAnswer": "No, he hasn't."
       },
       {
        "prompt": "Is he poor?",
        "answer": "No, he isn't. He's very rich.",
        "promptUz": "U kambag'almi?",
-       "speak": "Is he poor?"
+       "speak": "Is he poor?",
+       "speakAnswer": "No, he isn't. He's very rich."
       },
       {
        "prompt": "Has he got a house in the city?",
        "answer": "No, he hasn't. He's got a house in the country.",
        "promptUz": "Uning shaharda uyi bormi?",
-       "speak": "Has he got a house in the city?"
+       "speak": "Has he got a house in the city?",
+       "speakAnswer": "No, he hasn't. He's got a house in the country."
       },
       {
        "prompt": "Has he got a dog?",
        "answer": "No, he hasn't.",
        "promptUz": "Uning iti bormi?",
-       "speak": "Has he got a dog?"
+       "speak": "Has he got a dog?",
+       "speakAnswer": "No, he hasn't."
       },
       {
        "prompt": "Can he drive?",
        "answer": "Yes, he can. He's got a car.",
        "promptUz": "U hayday oladimi?",
-       "speak": "Can he drive?"
+       "speak": "Can he drive?",
+       "speakAnswer": "Yes, he can. He's got a car."
       },
       {
        "prompt": "Can he ski?",
        "answer": "Yes, he can. He can ski very well.",
        "promptUz": "U chang'i ucha oladimi?",
-       "speak": "Can he ski?"
+       "speak": "Can he ski?",
+       "speakAnswer": "Yes, he can. He can ski very well."
       }
      ]
     }
@@ -3817,28 +4098,32 @@
        "answer": "Is your car new?",
        "promptUz": "Savol tuzing",
        "whyUz": "'your car' — narsa (it) → Is. Javobda ham IT.",
-       "speak": "your car / new? → No / very old"
+       "speak": "your car / new? → No / very old",
+       "speakAnswer": "Is your car new?"
       },
       {
        "prompt": "your car / new? → No / very old",
        "answer": "No, it's very old.",
        "promptUz": "Javob tuzing",
        "whyUz": "'your car' — narsa (it) → Is. Javobda ham IT.",
-       "speak": "your car / new? → No / very old"
+       "speak": "your car / new? → No / very old",
+       "speakAnswer": "No, it's very old."
       },
       {
        "prompt": "he / Portugal? → No / Turkey",
        "answer": "Is he from Portugal?",
        "promptUz": "Savol tuzing",
        "whyUz": "'he' → Is. Mamlakat oldidan 'from' shart.",
-       "speak": "he / Portugal? → No / Turkey"
+       "speak": "he / Portugal? → No / Turkey",
+       "speakAnswer": "Is he from Portugal?"
       },
       {
        "prompt": "he / Portugal? → No / Turkey",
        "answer": "No, he's from Turkey.",
        "promptUz": "Javob tuzing",
        "whyUz": "'he' → Is. Mamlakat oldidan 'from' shart.",
-       "speak": "he / Portugal? → No / Turkey"
+       "speak": "he / Portugal? → No / Turkey",
+       "speakAnswer": "No, he's from Turkey."
       }
      ]
     }
@@ -3867,28 +4152,32 @@
        "answer": "Are they tall?",
        "promptUz": "Savol tuzing",
        "whyUz": "Bo'y — sifat, demak BE. Javobda ega ('they're') tushib qolmasin.",
-       "speak": "they / tall? → No / quite short"
+       "speak": "they / tall? → No / quite short",
+       "speakAnswer": "Are they tall?"
       },
       {
        "prompt": "they / tall? → No / quite short",
        "answer": "No, they're quite short.",
        "promptUz": "Javob tuzing",
        "whyUz": "Bo'y — sifat, demak BE. Javobda ega ('they're') tushib qolmasin.",
-       "speak": "they / tall? → No / quite short"
+       "speak": "they / tall? → No / quite short",
+       "speakAnswer": "No, they're quite short."
       },
       {
        "prompt": "he / fair hair? → No / dark hair",
        "answer": "Has he got fair hair?",
        "promptUz": "Savol tuzing",
        "whyUz": "Soch — egalik, demak HAVE GOT.",
-       "speak": "he / fair hair? → No / dark hair"
+       "speak": "he / fair hair? → No / dark hair",
+       "speakAnswer": "Has he got fair hair?"
       },
       {
        "prompt": "he / fair hair? → No / dark hair",
        "answer": "No, he's got dark hair.",
        "promptUz": "Javob tuzing",
        "whyUz": "Soch — egalik, demak HAVE GOT.",
-       "speak": "he / fair hair? → No / dark hair"
+       "speak": "he / fair hair? → No / dark hair",
+       "speakAnswer": "No, he's got dark hair."
       }
      ]
     },
@@ -3906,31 +4195,36 @@
        "prompt": "Kate ___ play cricket, but she ___ swim.",
        "answer": "can't / can",
        "whyUz": "Kate: kriket ✗, suzish ✓",
-       "speak": "Kate ___ play cricket, but she ___ swim."
+       "speak": "Kate ___ play cricket, but she ___ swim.",
+       "speakAnswer": "can't / can"
       },
       {
        "prompt": "Daniel ___ sing very well and he ___ use computers but he ___ play cricket.",
        "answer": "can / can / can't",
        "whyUz": "Daniel: kuylash ✓, kompyuter ✓, kriket ✗",
-       "speak": "Daniel ___ sing very well and he ___ use computers but he ___ play cricket."
+       "speak": "Daniel ___ sing very well and he ___ use computers but he ___ play cricket.",
+       "speakAnswer": "can / can / can't"
       },
       {
        "prompt": "Ben ___ cook but he ___ play cricket.",
        "answer": "can't / can",
        "whyUz": "Ben: ovqat ✗, kriket ✓",
-       "speak": "Ben ___ cook but he ___ play cricket."
+       "speak": "Ben ___ cook but he ___ play cricket.",
+       "speakAnswer": "can't / can"
       },
       {
        "prompt": "Ben, Daniel and Kate ___ speak English.",
        "answer": "can",
        "whyUz": "Uchalasi ham inglizcha biladi ✓",
-       "speak": "Ben, Daniel and Kate ___ speak English."
+       "speak": "Ben, Daniel and Kate ___ speak English.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "Ben and Daniel ___ cook, but they ___ use computers.",
        "answer": "can't / can",
        "whyUz": "Ikkalasi: ovqat ✗, kompyuter ✓",
-       "speak": "Ben and Daniel ___ cook, but they ___ use computers."
+       "speak": "Ben and Daniel ___ cook, but they ___ use computers.",
+       "speakAnswer": "can't / can"
       }
      ]
     },
@@ -3949,84 +4243,96 @@
        "answer": "Can Kate cook?",
        "promptUz": "Savol tuzing",
        "whyUz": "Kate: ovqat ✓",
-       "speak": "Kate/cook"
+       "speak": "Kate/cook",
+       "speakAnswer": "Can Kate cook?"
       },
       {
        "prompt": "Kate/cook",
        "answer": "Yes, she can.",
        "promptUz": "Javob tuzing",
        "whyUz": "Kate: ovqat ✓",
-       "speak": "Kate/cook"
+       "speak": "Kate/cook",
+       "speakAnswer": "Yes, she can."
       },
       {
        "prompt": "Ben/sing",
        "answer": "Can Ben sing?",
        "promptUz": "Savol tuzing",
        "whyUz": "Ben: kuylash ✗",
-       "speak": "Ben/sing"
+       "speak": "Ben/sing",
+       "speakAnswer": "Can Ben sing?"
       },
       {
        "prompt": "Ben/sing",
        "answer": "No, he can't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Ben: kuylash ✗",
-       "speak": "Ben/sing"
+       "speak": "Ben/sing",
+       "speakAnswer": "No, he can't."
       },
       {
        "prompt": "Daniel/swim",
        "answer": "Can Daniel swim?",
        "promptUz": "Savol tuzing",
        "whyUz": "Daniel: suzish ✗",
-       "speak": "Daniel/swim"
+       "speak": "Daniel/swim",
+       "speakAnswer": "Can Daniel swim?"
       },
       {
        "prompt": "Daniel/swim",
        "answer": "No, he can't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Daniel: suzish ✗",
-       "speak": "Daniel/swim"
+       "speak": "Daniel/swim",
+       "speakAnswer": "No, he can't."
       },
       {
        "prompt": "Kate/use computers",
        "answer": "Can Kate use computers?",
        "promptUz": "Savol tuzing",
        "whyUz": "Kate: kompyuter ✗",
-       "speak": "Kate/use computers"
+       "speak": "Kate/use computers",
+       "speakAnswer": "Can Kate use computers?"
       },
       {
        "prompt": "Kate/use computers",
        "answer": "No, she can't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Kate: kompyuter ✗",
-       "speak": "Kate/use computers"
+       "speak": "Kate/use computers",
+       "speakAnswer": "No, she can't."
       },
       {
        "prompt": "Ben/speak English",
        "answer": "Can Ben speak English?",
        "promptUz": "Savol tuzing",
        "whyUz": "Ben: inglizcha ✓",
-       "speak": "Ben/speak English"
+       "speak": "Ben/speak English",
+       "speakAnswer": "Can Ben speak English?"
       },
       {
        "prompt": "Ben/speak English",
        "answer": "Yes, he can.",
        "promptUz": "Javob tuzing",
        "whyUz": "Ben: inglizcha ✓",
-       "speak": "Ben/speak English"
+       "speak": "Ben/speak English",
+       "speakAnswer": "Yes, he can."
       },
       {
        "prompt": "Daniel/sing",
        "answer": "Can Daniel sing?",
        "promptUz": "Savol tuzing",
        "whyUz": "Daniel: kuylash ✓",
-       "speak": "Daniel/sing"
+       "speak": "Daniel/sing",
+       "speakAnswer": "Can Daniel sing?"
       },
       {
        "prompt": "Daniel/sing",
        "answer": "Yes, he can.",
        "promptUz": "Javob tuzing",
        "whyUz": "Daniel: kuylash ✓",
-       "speak": "Daniel/sing"
+       "speak": "Daniel/sing",
+       "speakAnswer": "Yes, he can."
       }
      ]
     }
@@ -4054,25 +4360,29 @@
        "prompt": "Jennifer ___ got a camera and a TV. She ___ got a computer.",
        "answer": "has / hasn't",
        "whyUz": "Jennifer: kamera ✓, TV ✓, kompyuter ✗",
-       "speak": "Jennifer ___ got a camera and a TV. She ___ got a computer."
+       "speak": "Jennifer ___ got a camera and a TV. She ___ got a computer.",
+       "speakAnswer": "has / hasn't"
       },
       {
        "prompt": "Richard and Jennifer ___ got a mobile phone.",
        "answer": "haven't",
        "whyUz": "Ikkalasida ham mobil telefon ✗ → ko'plik, inkor",
-       "speak": "Richard and Jennifer ___ got a mobile phone."
+       "speak": "Richard and Jennifer ___ got a mobile phone.",
+       "speakAnswer": "haven't"
       },
       {
        "prompt": "Helen and Chris ___ got a camera or a computer, but they ___ got a TV and a mobile phone.",
        "answer": "haven't / have",
        "whyUz": "Kamera ✗, kompyuter ✗ (inkorda 'or'), TV ✓, mobil ✓ (tasdiqda 'and')",
-       "speak": "Helen and Chris ___ got a camera or a computer, but they ___ got a TV and a mobile phone."
+       "speak": "Helen and Chris ___ got a camera or a computer, but they ___ got a TV and a mobile phone.",
+       "speakAnswer": "haven't / have"
       },
       {
        "prompt": "Richard ___ got a computer and a TV, but he ___ got a camera or a mobile phone.",
        "answer": "has / hasn't",
        "whyUz": "Richard: kompyuter ✓, TV ✓, kamera ✗, mobil ✗",
-       "speak": "Richard ___ got a computer and a TV, but he ___ got a camera or a mobile phone."
+       "speak": "Richard ___ got a computer and a TV, but he ___ got a camera or a mobile phone.",
+       "speakAnswer": "has / hasn't"
       }
      ]
     },
@@ -4091,84 +4401,96 @@
        "answer": "Has Richard got a camera?",
        "promptUz": "Savol tuzing",
        "whyUz": "Richard: kamera ✗",
-       "speak": "Richard/camera"
+       "speak": "Richard/camera",
+       "speakAnswer": "Has Richard got a camera?"
       },
       {
        "prompt": "Richard/camera",
        "answer": "No, he hasn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Richard: kamera ✗",
-       "speak": "Richard/camera"
+       "speak": "Richard/camera",
+       "speakAnswer": "No, he hasn't."
       },
       {
        "prompt": "Richard/computer",
        "answer": "Has Richard got a computer?",
        "promptUz": "Savol tuzing",
        "whyUz": "Richard: kompyuter ✓",
-       "speak": "Richard/computer"
+       "speak": "Richard/computer",
+       "speakAnswer": "Has Richard got a computer?"
       },
       {
        "prompt": "Richard/computer",
        "answer": "Yes, he has.",
        "promptUz": "Javob tuzing",
        "whyUz": "Richard: kompyuter ✓",
-       "speak": "Richard/computer"
+       "speak": "Richard/computer",
+       "speakAnswer": "Yes, he has."
       },
       {
        "prompt": "Helen and Chris/mobile phone",
        "answer": "Have Helen and Chris got a mobile phone?",
        "promptUz": "Savol tuzing",
        "whyUz": "Ikki kishi → Have. Mobil ✓",
-       "speak": "Helen and Chris/mobile phone"
+       "speak": "Helen and Chris/mobile phone",
+       "speakAnswer": "Have Helen and Chris got a mobile phone?"
       },
       {
        "prompt": "Helen and Chris/mobile phone",
        "answer": "Yes, they have.",
        "promptUz": "Javob tuzing",
        "whyUz": "Ikki kishi → Have. Mobil ✓",
-       "speak": "Helen and Chris/mobile phone"
+       "speak": "Helen and Chris/mobile phone",
+       "speakAnswer": "Yes, they have."
       },
       {
        "prompt": "Helen and Chris/computer",
        "answer": "Have Helen and Chris got a computer?",
        "promptUz": "Savol tuzing",
        "whyUz": "Kompyuter ✗",
-       "speak": "Helen and Chris/computer"
+       "speak": "Helen and Chris/computer",
+       "speakAnswer": "Have Helen and Chris got a computer?"
       },
       {
        "prompt": "Helen and Chris/computer",
        "answer": "No, they haven't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Kompyuter ✗",
-       "speak": "Helen and Chris/computer"
+       "speak": "Helen and Chris/computer",
+       "speakAnswer": "No, they haven't."
       },
       {
        "prompt": "Jennifer/TV",
        "answer": "Has Jennifer got a TV?",
        "promptUz": "Savol tuzing",
        "whyUz": "TV ✓",
-       "speak": "Jennifer/TV"
+       "speak": "Jennifer/TV",
+       "speakAnswer": "Has Jennifer got a TV?"
       },
       {
        "prompt": "Jennifer/TV",
        "answer": "Yes, she has.",
        "promptUz": "Javob tuzing",
        "whyUz": "TV ✓",
-       "speak": "Jennifer/TV"
+       "speak": "Jennifer/TV",
+       "speakAnswer": "Yes, she has."
       },
       {
        "prompt": "Richard/mobile phone",
        "answer": "Has Richard got a mobile phone?",
        "promptUz": "Savol tuzing",
        "whyUz": "Mobil ✗",
-       "speak": "Richard/mobile phone"
+       "speak": "Richard/mobile phone",
+       "speakAnswer": "Has Richard got a mobile phone?"
       },
       {
        "prompt": "Richard/mobile phone",
        "answer": "No, he hasn't.",
        "promptUz": "Javob tuzing",
        "whyUz": "Mobil ✗",
-       "speak": "Richard/mobile phone"
+       "speak": "Richard/mobile phone",
+       "speakAnswer": "No, he hasn't."
       }
      ]
     }
@@ -4229,7 +4551,8 @@
         "J - I - double M - Y ... S - T - U - A - R - T",
         "W - E - N - D - Y ... C - L - A - R - K - E",
         "V - I - V - I - E - double N - E ... B - R - O - W - N"
-       ]
+       ],
+       "speakAnswer": "A - double N - A ... H - U - G - H - E - S"
       },
       {
        "prompt": "Jimmy Stuart",
@@ -4240,7 +4563,8 @@
         "A - double N - A ... H - U - G - H - E - S",
         "W - E - N - D - Y ... C - L - A - R - K - E",
         "V - I - V - I - E - double N - E ... B - R - O - W - N"
-       ]
+       ],
+       "speakAnswer": "J - I - double M - Y ... S - T - U - A - R - T"
       },
       {
        "prompt": "Wendy Clarke",
@@ -4251,7 +4575,8 @@
         "A - double N - A ... H - U - G - H - E - S",
         "J - I - double M - Y ... S - T - U - A - R - T",
         "V - I - V - I - E - double N - E ... B - R - O - W - N"
-       ]
+       ],
+       "speakAnswer": "W - E - N - D - Y ... C - L - A - R - K - E"
       },
       {
        "prompt": "Vivienne Brown",
@@ -4262,7 +4587,8 @@
         "A - double N - A ... H - U - G - H - E - S",
         "J - I - double M - Y ... S - T - U - A - R - T",
         "W - E - N - D - Y ... C - L - A - R - K - E"
-       ]
+       ],
+       "speakAnswer": "V - I - V - I - E - double N - E ... B - R - O - W - N"
       },
       {
        "prompt": "Frank Williams",
@@ -4273,7 +4599,8 @@
         "A - double N - A ... H - U - G - H - E - S",
         "J - I - double M - Y ... S - T - U - A - R - T",
         "W - E - N - D - Y ... C - L - A - R - K - E"
-       ]
+       ],
+       "speakAnswer": "F - R - A - N - K ... W - I - double L - I - A - M - S"
       },
       {
        "prompt": "Quentin Phillips",
@@ -4284,7 +4611,8 @@
         "A - double N - A ... H - U - G - H - E - S",
         "J - I - double M - Y ... S - T - U - A - R - T",
         "W - E - N - D - Y ... C - L - A - R - K - E"
-       ]
+       ],
+       "speakAnswer": "Q - U - E - N - T - I - N ... P - H - I - double L - I - P - S"
       }
      ]
     }
@@ -4326,7 +4654,8 @@
         "/iː/ (uzun)",
         "/ɪ/ (qisqa)"
        ],
-       "speak": "read"
+       "speak": "read",
+       "speakAnswer": "/iː/"
       },
       {
        "prompt": "three",
@@ -4336,7 +4665,8 @@
         "/iː/ (uzun)",
         "/ɪ/ (qisqa)"
        ],
-       "speak": "three"
+       "speak": "three",
+       "speakAnswer": "/iː/"
       },
       {
        "prompt": "slim",
@@ -4356,7 +4686,8 @@
         "/iː/ (uzun)",
         "/ɪ/ (qisqa)"
        ],
-       "speak": "teacher"
+       "speak": "teacher",
+       "speakAnswer": "/iː/"
       },
       {
        "prompt": "singer",
@@ -4530,31 +4861,38 @@
       },
       {
        "prompt": "Anna — Lives in",
-       "answer": "Moscow, Russia"
+       "answer": "Moscow, Russia",
+       "speakAnswer": "Moscow, Russia"
       },
       {
        "prompt": "Anna — Hair",
-       "answer": "long straight fair"
+       "answer": "long straight fair",
+       "speakAnswer": "long straight fair"
       },
       {
        "prompt": "Anna — Eyes",
-       "answer": "green"
+       "answer": "green",
+       "speakAnswer": "green"
       },
       {
        "prompt": "Anna — Height",
-       "answer": "quite short"
+       "answer": "quite short",
+       "speakAnswer": "quite short"
       },
       {
        "prompt": "Anna — Build",
-       "answer": "slim"
+       "answer": "slim",
+       "speakAnswer": "slim"
       },
       {
        "prompt": "Anna — Likes/Loves",
-       "answer": "skiing"
+       "answer": "skiing",
+       "speakAnswer": "skiing"
       },
       {
        "prompt": "Anna — Can",
-       "answer": "play the piano quite well"
+       "answer": "play the piano quite well",
+       "speakAnswer": "play the piano quite well"
       },
       {
        "prompt": "Mario — Age",
@@ -4562,31 +4900,38 @@
       },
       {
        "prompt": "Mario — Lives in",
-       "answer": "Florence, Italy"
+       "answer": "Florence, Italy",
+       "speakAnswer": "Florence, Italy"
       },
       {
        "prompt": "Mario — Hair",
-       "answer": "brown wavy"
+       "answer": "brown wavy",
+       "speakAnswer": "brown wavy"
       },
       {
        "prompt": "Mario — Eyes",
-       "answer": "brown"
+       "answer": "brown",
+       "speakAnswer": "brown"
       },
       {
        "prompt": "Mario — Height",
-       "answer": "tall"
+       "answer": "tall",
+       "speakAnswer": "tall"
       },
       {
        "prompt": "Mario — Build",
-       "answer": "well-built"
+       "answer": "well-built",
+       "speakAnswer": "well-built"
       },
       {
        "prompt": "Mario — Likes/Loves",
-       "answer": "playing the guitar, dancing"
+       "answer": "playing the guitar, dancing",
+       "speakAnswer": "playing the guitar, dancing"
       },
       {
        "prompt": "Mario — Can",
-       "answer": "speak French"
+       "answer": "speak French",
+       "speakAnswer": "speak French"
       }
      ]
     }
@@ -4615,27 +4960,32 @@
       {
        "prompt": "1-rasm",
        "answer": "She's young. She's got long straight black hair and green eyes.",
-       "promptUz": "Yosh ayol: uzun tekis qora soch, oq bosh bog'ich, yashil ko'z."
+       "promptUz": "Yosh ayol: uzun tekis qora soch, oq bosh bog'ich, yashil ko'z.",
+       "speakAnswer": "She's young. She's got long straight black hair and green eyes."
       },
       {
        "prompt": "2-rasm",
        "answer": "He's old. He's got a white beard and a moustache. He wears glasses.",
-       "promptUz": "Keksa erkak: oq soqol, mo'ylov va ko'zoynak."
+       "promptUz": "Keksa erkak: oq soqol, mo'ylov va ko'zoynak.",
+       "speakAnswer": "He's old. He's got a white beard and a moustache. He wears glasses."
       },
       {
        "prompt": "3-rasm",
        "answer": "He's young. He's got short fair hair and blue eyes.",
-       "promptUz": "Yosh odam: kalta oq-sariq soch, ko'k ko'z, qizil kiyim."
+       "promptUz": "Yosh odam: kalta oq-sariq soch, ko'k ko'z, qizil kiyim.",
+       "speakAnswer": "He's young. He's got short fair hair and blue eyes."
       },
       {
        "prompt": "4-rasm",
        "answer": "She's got long dark curly hair.",
-       "promptUz": "Ayol: uzun qora jingalak soch."
+       "promptUz": "Ayol: uzun qora jingalak soch.",
+       "speakAnswer": "She's got long dark curly hair."
       },
       {
        "prompt": "5-rasm",
        "answer": "He's middle-aged. He's got short grey hair and a moustache.",
-       "promptUz": "O'rta yoshli erkak: kalta kulrang soch va mo'ylov."
+       "promptUz": "O'rta yoshli erkak: kalta kulrang soch va mo'ylov.",
+       "speakAnswer": "He's middle-aged. He's got short grey hair and a moustache."
       }
      ]
     }
@@ -4663,22 +5013,26 @@
       {
        "prompt": "A — ayolning pufakchasi",
        "answer": "Can you give this to Mr Harris, please?",
-       "promptUz": "Buni janob Harrisga bera olasizmi?"
+       "promptUz": "Buni janob Harrisga bera olasizmi?",
+       "speakAnswer": "Can you give this to Mr Harris, please?"
       },
       {
        "prompt": "B — erkakning pufakchasi",
        "answer": "Can you read this for me, please?",
-       "promptUz": "Buni menga o'qib bera olasizmi?"
+       "promptUz": "Buni menga o'qib bera olasizmi?",
+       "speakAnswer": "Can you read this for me, please?"
       },
       {
        "prompt": "C — bolaning pufakchasi",
        "answer": "Can you help me up, please?",
-       "promptUz": "Meni turg'aza olasizmi?"
+       "promptUz": "Meni turg'aza olasizmi?",
+       "speakAnswer": "Can you help me up, please?"
       },
       {
        "prompt": "D — o'qituvchining pufakchasi",
        "answer": "Can you open your books at page 7, please?",
-       "promptUz": "Kitobingizning 7-betini ocha olasizmi?"
+       "promptUz": "Kitobingizning 7-betini ocha olasizmi?",
+       "speakAnswer": "Can you open your books at page 7, please?"
       }
      ]
     },
@@ -4696,25 +5050,29 @@
        "prompt": "A: Certainly, madam. What's your 1) ___ ?",
        "answer": "name",
        "promptUz": "Albatta, xonim. Ismingiz nima?",
-       "speak": "A: Certainly, madam. What's your 1) ___ ?"
+       "speak": "A: Certainly, madam. What's your 1) ___ ?",
+       "speakAnswer": "name"
       },
       {
        "prompt": "A: And 2) ___ are you?",
        "answer": "how old",
        "promptUz": "Necha yoshdasiz?",
-       "speak": "A: And 2) ___ are you?"
+       "speak": "A: And 2) ___ are you?",
+       "speakAnswer": "how old"
       },
       {
        "prompt": "A: Right. 3) ___ your home address?",
        "answer": "What's",
        "promptUz": "Yaxshi. Uy manzilingiz qanday?",
-       "speak": "A: Right. 3) ___ your home address?"
+       "speak": "A: Right. 3) ___ your home address?",
+       "speakAnswer": "What's"
       },
       {
        "prompt": "A: 4) ___ , Ms Steed. Here's your card. Please, sign it here.",
        "answer": "Thank you",
        "promptUz": "Rahmat, Steed xonim. Mana kartangiz. Iltimos, shu yerga imzo cheking.",
-       "speak": "A: 4) ___ , Ms Steed. Here's your card. Please, sign it here."
+       "speak": "A: 4) ___ , Ms Steed. Here's your card. Please, sign it here.",
+       "speakAnswer": "Thank you"
       }
      ]
     }
@@ -4742,25 +5100,29 @@
        "prompt": "A: Good morning, Paul. 1) ___ are you?",
        "answer": "How",
        "promptUz": "Xayrli tong, Paul. Qalaysiz?",
-       "speak": "A: Good morning, Paul. 1) ___ are you?"
+       "speak": "A: Good morning, Paul. 1) ___ are you?",
+       "speakAnswer": "How"
       },
       {
        "prompt": "B: Very well, thanks. And 2) ___ ?",
        "answer": "you",
        "promptUz": "Juda yaxshi, rahmat. Siz-chi?",
-       "speak": "B: Very well, thanks. And 2) ___ ?"
+       "speak": "B: Very well, thanks. And 2) ___ ?",
+       "speakAnswer": "you"
       },
       {
        "prompt": "B: 3) ___ , thanks. How are you?",
        "answer": "Fine",
        "promptUz": "Yaxshi, rahmat. Siz qalaysiz?",
-       "speak": "B: 3) ___ , thanks. How are you?"
+       "speak": "B: 3) ___ , thanks. How are you?",
+       "speakAnswer": "Fine"
       },
       {
        "prompt": "B: 4) ___ bad. And you?",
        "answer": "Not",
        "promptUz": "Yomon emas. Siz-chi?",
-       "speak": "B: 4) ___ bad. And you?"
+       "speak": "B: 4) ___ bad. And you?",
+       "speakAnswer": "Not"
       }
      ]
     },
@@ -4777,12 +5139,14 @@
       {
        "prompt": "1 — farzandning pufakchasi",
        "answer": "Bye, Mum. See you.",
-       "promptUz": "Xayr, oyi. Ko'rishguncha."
+       "promptUz": "Xayr, oyi. Ko'rishguncha.",
+       "speakAnswer": "Bye, Mum. See you."
       },
       {
        "prompt": "2 — ikkinchi odamning pufakchasi",
        "answer": "You too. Goodbye.",
-       "promptUz": "Sizga ham. Xayr."
+       "promptUz": "Sizga ham. Xayr.",
+       "speakAnswer": "You too. Goodbye."
       }
      ]
     }
@@ -4808,35 +5172,43 @@
      "tasks": [
       {
        "left": "1. Where are your friends from?",
-       "right": "c. They're from Portugal."
+       "right": "c. They're from Portugal.",
+       "speakAnswer": "c. They're from Portugal."
       },
       {
        "left": "2. What's your nationality?",
-       "right": "i. I'm Italian."
+       "right": "i. I'm Italian.",
+       "speakAnswer": "i. I'm Italian."
       },
       {
        "left": "3. How old is she?",
-       "right": "f. She's 17."
+       "right": "f. She's 17.",
+       "speakAnswer": "f. She's 17."
       },
       {
        "left": "4. Are you a doctor?",
-       "right": "k. Yes, I am."
+       "right": "k. Yes, I am.",
+       "speakAnswer": "k. Yes, I am."
       },
       {
        "left": "5. What's your favourite colour?",
-       "right": "a. Red."
+       "right": "a. Red.",
+       "speakAnswer": "a. Red."
       },
       {
        "left": "6. Are you in the school basketball team?",
-       "right": "b. No, I'm in the school football team."
+       "right": "b. No, I'm in the school football team.",
+       "speakAnswer": "b. No, I'm in the school football team."
       },
       {
        "left": "7. What's your home town?",
-       "right": "j. Paris, France."
+       "right": "j. Paris, France.",
+       "speakAnswer": "j. Paris, France."
       },
       {
        "left": "8. What's your favourite band?",
-       "right": "l. The Spice Girls."
+       "right": "l. The Spice Girls.",
+       "speakAnswer": "l. The Spice Girls."
       },
       {
        "left": "9. What's your telephone number?",
@@ -4844,15 +5216,18 @@
       },
       {
        "left": "10. Where is Barcelona?",
-       "right": "d. In Spain."
+       "right": "d. In Spain.",
+       "speakAnswer": "d. In Spain."
       },
       {
        "left": "11. What's her job?",
-       "right": "h. She's a hairdresser."
+       "right": "h. She's a hairdresser.",
+       "speakAnswer": "h. She's a hairdresser."
       },
       {
        "left": "12. Where are you and your friend from?",
-       "right": "g. We're from Germany."
+       "right": "g. We're from Germany.",
+       "speakAnswer": "g. We're from Germany."
       }
      ]
     }
@@ -4879,29 +5254,34 @@
       {
        "prompt": "A: 1) ___ ?",
        "answer": "What's your first name",
-       "promptUz": "Ismingiz nima?"
+       "promptUz": "Ismingiz nima?",
+       "speakAnswer": "What's your first name"
       },
       {
        "prompt": "A: 2) ___ last name?",
        "answer": "What's your",
        "promptUz": "Familiyangiz nima?",
-       "speak": "A: 2) ___ last name?"
+       "speak": "A: 2) ___ last name?",
+       "speakAnswer": "What's your"
       },
       {
        "prompt": "A: 3) ___ spell that, please?",
        "answer": "How do you",
        "promptUz": "Buni qanday yozasiz?",
-       "speak": "A: 3) ___ spell that, please?"
+       "speak": "A: 3) ___ spell that, please?",
+       "speakAnswer": "How do you"
       },
       {
        "prompt": "A: 4) ___ ?",
        "answer": "What's your address",
-       "promptUz": "Manzilingiz qanday?"
+       "promptUz": "Manzilingiz qanday?",
+       "speakAnswer": "What's your address"
       },
       {
        "prompt": "A: 5) ___ ?",
        "answer": "What's your phone number",
-       "promptUz": "Telefon raqamingiz nechchi?"
+       "promptUz": "Telefon raqamingiz nechchi?",
+       "speakAnswer": "What's your phone number"
       }
      ]
     },
@@ -4919,31 +5299,36 @@
        "prompt": "J: Hi Bob, ___ ?",
        "answer": "how are you",
        "promptUz": "qalaysan?",
-       "speak": "J: Hi Bob, ___ ?"
+       "speak": "J: Hi Bob, ___ ?",
+       "speakAnswer": "how are you"
       },
       {
        "prompt": "B: ___ , thanks and you?",
        "answer": "Fine",
        "promptUz": "yaxshi",
-       "speak": "B: ___ , thanks and you?"
+       "speak": "B: ___ , thanks and you?",
+       "speakAnswer": "Fine"
       },
       {
        "prompt": "J: ___ bad.",
        "answer": "Not",
        "promptUz": "yomon emas",
-       "speak": "J: ___ bad."
+       "speak": "J: ___ bad.",
+       "speakAnswer": "Not"
       },
       {
        "prompt": "D: Good afternoon, Mrs Brown. ___ ?",
        "answer": "How are you",
        "promptUz": "qalaysiz?",
-       "speak": "D: Good afternoon, Mrs Brown. ___ ?"
+       "speak": "D: Good afternoon, Mrs Brown. ___ ?",
+       "speakAnswer": "How are you"
       },
       {
        "prompt": "D: I ___ , thank you.",
        "answer": "'m fine",
        "promptUz": "yaxshiman",
-       "speak": "D: I ___ , thank you."
+       "speak": "D: I ___ , thank you.",
+       "speakAnswer": "'m fine"
       }
      ]
     }
@@ -4971,61 +5356,71 @@
        "prompt": "young",
        "answer": "She's young.",
        "promptUz": "U yosh.",
-       "speak": "young"
+       "speak": "young",
+       "speakAnswer": "She's young."
       },
       {
        "prompt": "middle-aged",
        "answer": "He's middle-aged.",
        "promptUz": "U o'rta yoshli.",
-       "speak": "middle-aged"
+       "speak": "middle-aged",
+       "speakAnswer": "He's middle-aged."
       },
       {
        "prompt": "curly",
        "answer": "She's got long curly hair.",
        "promptUz": "Uning uzun jingalak sochi bor.",
-       "speak": "curly"
+       "speak": "curly",
+       "speakAnswer": "She's got long curly hair."
       },
       {
        "prompt": "long",
        "answer": "She's got long hair.",
        "promptUz": "Uning uzun sochi bor.",
-       "speak": "long"
+       "speak": "long",
+       "speakAnswer": "She's got long hair."
       },
       {
        "prompt": "straight",
        "answer": "She's got straight hair.",
        "promptUz": "Uning tekis sochi bor.",
-       "speak": "straight"
+       "speak": "straight",
+       "speakAnswer": "She's got straight hair."
       },
       {
        "prompt": "slim",
        "answer": "He's slim.",
        "promptUz": "U nozik.",
-       "speak": "slim"
+       "speak": "slim",
+       "speakAnswer": "He's slim."
       },
       {
        "prompt": "well-built",
        "answer": "He's well-built.",
        "promptUz": "U baquvvat.",
-       "speak": "well-built"
+       "speak": "well-built",
+       "speakAnswer": "He's well-built."
       },
       {
        "prompt": "beard",
        "answer": "He's got a white beard.",
        "promptUz": "Uning oq soqoli bor.",
-       "speak": "beard"
+       "speak": "beard",
+       "speakAnswer": "He's got a white beard."
       },
       {
        "prompt": "moustache",
        "answer": "He's got a moustache.",
        "promptUz": "Uning mo'ylovi bor.",
-       "speak": "moustache"
+       "speak": "moustache",
+       "speakAnswer": "He's got a moustache."
       },
       {
        "prompt": "big nose",
        "answer": "He's got a big nose.",
        "promptUz": "Uning burni katta.",
-       "speak": "big nose"
+       "speak": "big nose",
+       "speakAnswer": "He's got a big nose."
       }
      ]
     }
@@ -5053,109 +5448,127 @@
        "prompt": "slim",
        "answer": "My sister is slim.",
        "promptUz": "Singlim nozik.",
-       "speak": "slim"
+       "speak": "slim",
+       "speakAnswer": "My sister is slim."
       },
       {
        "prompt": "full lips",
        "answer": "She has got full lips.",
        "promptUz": "Uning labi to'la.",
-       "speak": "full lips"
+       "speak": "full lips",
+       "speakAnswer": "She has got full lips."
       },
       {
        "prompt": "moustache",
        "answer": "My uncle has got a moustache.",
        "promptUz": "Tog'amning mo'ylovi bor.",
-       "speak": "moustache"
+       "speak": "moustache",
+       "speakAnswer": "My uncle has got a moustache."
       },
       {
        "prompt": "straight hair",
        "answer": "Anna has got long straight hair.",
        "promptUz": "Annaning uzun tekis sochi bor.",
-       "speak": "straight hair"
+       "speak": "straight hair",
+       "speakAnswer": "Anna has got long straight hair."
       },
       {
        "prompt": "beard",
        "answer": "The old man has got a white beard.",
        "promptUz": "Keksa erkakning oq soqoli bor.",
-       "speak": "beard"
+       "speak": "beard",
+       "speakAnswer": "The old man has got a white beard."
       },
       {
        "prompt": "with",
        "answer": "The man with a beard is my teacher.",
        "promptUz": "Soqolli erkak — mening o'qituvchim.",
-       "speak": "with"
+       "speak": "with",
+       "speakAnswer": "The man with a beard is my teacher."
       },
       {
        "prompt": "wavy",
        "answer": "Mario has got brown wavy hair.",
        "promptUz": "Marioning jigarrang to'lqinsimon sochi bor.",
-       "speak": "wavy"
+       "speak": "wavy",
+       "speakAnswer": "Mario has got brown wavy hair."
       },
       {
        "prompt": "well-built",
        "answer": "He is tall and well-built.",
        "promptUz": "U baland va baquvvat.",
-       "speak": "well-built"
+       "speak": "well-built",
+       "speakAnswer": "He is tall and well-built."
       },
       {
        "prompt": "speak Italian",
        "answer": "She can speak Italian very well.",
        "promptUz": "U italyanchani juda yaxshi gapiradi.",
-       "speak": "speak Italian"
+       "speak": "speak Italian",
+       "speakAnswer": "She can speak Italian very well."
       },
       {
        "prompt": "yellowish complexion",
        "answer": "They have got a yellowish complexion.",
        "promptUz": "Ularning yuz rangi sarg'ish.",
-       "speak": "yellowish complexion"
+       "speak": "yellowish complexion",
+       "speakAnswer": "They have got a yellowish complexion."
       },
       {
        "prompt": "skin",
        "answer": "He has got dark skin.",
        "promptUz": "Uning terisi to'q.",
-       "speak": "skin"
+       "speak": "skin",
+       "speakAnswer": "He has got dark skin."
       },
       {
        "prompt": "flattish nose",
        "answer": "She has got a wide, flattish nose.",
        "promptUz": "Uning keng, yassiroq burni bor.",
-       "speak": "flattish nose"
+       "speak": "flattish nose",
+       "speakAnswer": "She has got a wide, flattish nose."
       },
       {
        "prompt": "swim",
        "answer": "I can swim quite fast.",
        "promptUz": "Men ancha tez suza olaman.",
-       "speak": "swim"
+       "speak": "swim",
+       "speakAnswer": "I can swim quite fast."
       },
       {
        "prompt": "slanting eyes",
        "answer": "He has got dark slanting eyes.",
        "promptUz": "Uning qiyshiq qora ko'zi bor.",
-       "speak": "slanting eyes"
+       "speak": "slanting eyes",
+       "speakAnswer": "He has got dark slanting eyes."
       },
       {
        "prompt": "quite fast",
        "answer": "My brother can run quite fast.",
        "promptUz": "Akam ancha tez yugura oladi.",
-       "speak": "quite fast"
+       "speak": "quite fast",
+       "speakAnswer": "My brother can run quite fast."
       },
       {
        "prompt": "sign",
        "answer": "Can you sign here, please?",
        "promptUz": "Shu yerga imzo cheka olasizmi?",
-       "speak": "sign"
+       "speak": "sign",
+       "speakAnswer": "Can you sign here, please?"
       },
       {
        "prompt": "very well",
        "answer": "Ann can cook very well.",
        "promptUz": "Ann juda yaxshi ovqat pishiradi.",
-       "speak": "very well"
+       "speak": "very well",
+       "speakAnswer": "Ann can cook very well."
       },
       {
        "prompt": "very dark skin",
        "answer": "They have got very dark skin.",
        "promptUz": "Ularning terisi juda to'q.",
-       "speak": "very dark skin"
+       "speak": "very dark skin",
+       "speakAnswer": "They have got very dark skin."
       }
      ]
     }
@@ -5239,7 +5652,8 @@
        "prompt": "Hi. / My / name / be / Ingrid Jönsson.",
        "answer": "Hi. My name is Ingrid Jönsson.",
        "whyUz": "'be' → IS (name — birlik)",
-       "speak": "Hi. / My / name / be / Ingrid Jönsson."
+       "speak": "Hi. / My / name / be / Ingrid Jönsson.",
+       "speakAnswer": "Hi. My name is Ingrid Jönsson."
       },
       {
        "prompt": "I / be / sixteen years old.",
@@ -5248,19 +5662,22 @@
        "alt": [
         "I'm sixteen years old."
        ],
-       "speak": "I / be / sixteen years old."
+       "speak": "I / be / sixteen years old.",
+       "speakAnswer": "I am sixteen years old."
       },
       {
        "prompt": "I / live / Stockholm, Sweden.",
        "answer": "I live in Stockholm, Sweden.",
        "whyUz": "Shahar oldidan 'in' qo'shiladi",
-       "speak": "I / live / Stockholm, Sweden."
+       "speak": "I / live / Stockholm, Sweden.",
+       "speakAnswer": "I live in Stockholm, Sweden."
       },
       {
        "prompt": "I / have got / long fair hair / blue eyes.",
        "answer": "I have got long fair hair and blue eyes.",
        "whyUz": "Ikki narsa 'and' bilan bog'lanadi",
-       "speak": "I / have got / long fair hair / blue eyes."
+       "speak": "I / have got / long fair hair / blue eyes.",
+       "speakAnswer": "I have got long fair hair and blue eyes."
       },
       {
        "prompt": "I / be / tall / slim.",
@@ -5269,25 +5686,29 @@
        "alt": [
         "I'm tall and slim."
        ],
-       "speak": "I / be / tall / slim."
+       "speak": "I / be / tall / slim.",
+       "speakAnswer": "I am tall and slim."
       },
       {
        "prompt": "I / like / skiing / I / love / swimming.",
        "answer": "I like skiing and I love swimming.",
        "whyUz": "'like/love' dan keyin -ing shakli",
-       "speak": "I / like / skiing / I / love / swimming."
+       "speak": "I / like / skiing / I / love / swimming.",
+       "speakAnswer": "I like skiing and I love swimming."
       },
       {
        "prompt": "I / cook / very well.",
        "answer": "I can cook very well.",
        "whyUz": "Qobiliyat aytilganda 'can' qo'shiladi",
-       "speak": "I / cook / very well."
+       "speak": "I / cook / very well.",
+       "speakAnswer": "I can cook very well."
       },
       {
        "prompt": "Be / my / pen-friend.",
        "answer": "Be my pen-friend.",
        "whyUz": "Buyruq gap — ega yo'q, fe'l asos shaklida",
-       "speak": "Be / my / pen-friend."
+       "speak": "Be / my / pen-friend.",
+       "speakAnswer": "Be my pen-friend."
       }
      ]
     }

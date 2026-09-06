@@ -418,7 +418,7 @@ class _ChoiceStageState extends State<_ChoiceStage> {
     final ok = widget.task.isCorrect(o);
     setState(() => _chosen = o);
     if (ok) showCorrectBurst(context);
-    Tts.instance.speak(widget.task.answer, id: 'ex');
+    Tts.instance.speak(widget.task.speakAnswer, id: 'ex');
     _advance = Timer(Duration(milliseconds: ok ? 900 : 1900), () {
       if (mounted) widget.onDone(ok);
     });
@@ -596,7 +596,7 @@ class _BuildStageState extends State<_BuildStage> {
     final ok = widget.task.isCorrect(built);
     setState(() => _result = ok);
     if (ok) showCorrectBurst(context);
-    Tts.instance.speak(widget.task.answer, id: 'ex');
+    Tts.instance.speak(widget.task.speakAnswer, id: 'ex');
     _advance = Timer(Duration(milliseconds: ok ? 950 : 2100), () {
       if (mounted) widget.onDone(ok);
     });
@@ -790,7 +790,7 @@ class _MatchStageState extends State<_MatchStage> {
         _matched.add(r.left);
         _sel = null;
       });
-      Tts.instance.speak(r.right, id: r.left);
+      Tts.instance.speak(r.speakAnswer, id: r.left);
       final roundDone = _left.every((t) => _matched.contains(t.left));
       if (!roundDone) return;
       if (_round + 1 >= _roundCount) {

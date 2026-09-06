@@ -60,23 +60,28 @@
      "tasks": [
       {
        "left": "a  Use buses and trams — not cars.",
-       "right": "the environment"
+       "right": "the environment",
+       "speakAnswer": "the environment"
       },
       {
        "left": "b  Always have your passport with you.",
-       "right": "travel"
+       "right": "travel",
+       "speakAnswer": "travel"
       },
       {
        "left": "c  Eat lots of fruit and vegetables.",
-       "right": "health"
+       "right": "health",
+       "speakAnswer": "health"
       },
       {
        "left": "d  Don't keep pets in your room.",
-       "right": "house rules"
+       "right": "house rules",
+       "speakAnswer": "house rules"
       },
       {
        "left": "e  Never eat in class.",
-       "right": "school"
+       "right": "school",
+       "speakAnswer": "school"
       }
      ]
     },
@@ -212,7 +217,8 @@
         "a) Try not to buy pre-packaged food.",
         "b) Try to buy pre-packaged food."
        ],
-       "whyUz": "a) — EKOLOGIK jihatdan TO'G'RI.\nHar bir o'ram plastik CHIQINDI hosil qiladi.\nOchiq sotiladigan mahsulot atrof-muhitga\nkamroq zarar beradi.\n\nb) teskari maslahat bo'lardi — chiqindini\nKO'PAYTIRADI.\n\n2-mashqdagi C rasmi (o'ralgan go'sht) shu haqda."
+       "whyUz": "a) — EKOLOGIK jihatdan TO'G'RI.\nHar bir o'ram plastik CHIQINDI hosil qiladi.\nOchiq sotiladigan mahsulot atrof-muhitga\nkamroq zarar beradi.\n\nb) teskari maslahat bo'lardi — chiqindini\nKO'PAYTIRADI.\n\n2-mashqdagi C rasmi (o'ralgan go'sht) shu haqda.",
+       "speakAnswer": "a) Try not to buy pre-packaged food."
       },
       {
        "prompt": "2  a) Always light fires in forests.  /  b) Never light fires in forests.",
@@ -222,7 +228,8 @@
         "b) Never light fires in forests.",
         "a) Always light fires in forests."
        ],
-       "whyUz": "b) — EKOLOGIK jihatdan TO'G'RI.\nO'rmonda olov YONG'INGA sabab bo'ladi —\nminglab daraxt va hayvon nobud bo'ladi.\n\na) 'ALWAYS light fires' — juda xavfli maslahat,\nmantiqan ham noto'g'ri.\n\n'to LIGHT a fire' = olov yoqmoq (light → LIT).\n2-mashqdagi A rasmi (o'rmon) shu haqda."
+       "whyUz": "b) — EKOLOGIK jihatdan TO'G'RI.\nO'rmonda olov YONG'INGA sabab bo'ladi —\nminglab daraxt va hayvon nobud bo'ladi.\n\na) 'ALWAYS light fires' — juda xavfli maslahat,\nmantiqan ham noto'g'ri.\n\n'to LIGHT a fire' = olov yoqmoq (light → LIT).\n2-mashqdagi A rasmi (o'rmon) shu haqda.",
+       "speakAnswer": "b) Never light fires in forests."
       },
       {
        "prompt": "3  a) Do not throw plastic bottles into the sea.  /  b) Throw plastic bottles into the sea.",
@@ -232,7 +239,8 @@
         "a) Do not throw plastic bottles into the sea.",
         "b) Throw plastic bottles into the sea."
        ],
-       "whyUz": "a) — EKOLOGIK jihatdan TO'G'RI.\nPlastik dengizda yuzlab yil chiriydi;\nbaliq va dengiz qushlari uni yutib halok\nbo'ladi.\n\nb) — ochiq-oydin zararli maslahat.\n\n2-mashqdagi B rasmi (plastik shishalar) shu\nhaqda."
+       "whyUz": "a) — EKOLOGIK jihatdan TO'G'RI.\nPlastik dengizda yuzlab yil chiriydi;\nbaliq va dengiz qushlari uni yutib halok\nbo'ladi.\n\nb) — ochiq-oydin zararli maslahat.\n\n2-mashqdagi B rasmi (plastik shishalar) shu\nhaqda.",
+       "speakAnswer": "a) Do not throw plastic bottles into the sea."
       },
       {
        "prompt": "4  a) Use aerosols.  /  b) Do not use aerosols.",
@@ -242,7 +250,8 @@
         "b) Do not use aerosols.",
         "a) Use aerosols."
        ],
-       "whyUz": "b) — EKOLOGIK jihatdan TO'G'RI.\nAerozollardagi gazlar OZON qatlamini yemiradi.\n\na) — teskari maslahat.\n\n2-mashqdagi H rasmi (aerozol balloni) shu haqda.\nDIQQAT: bu yerda inkor variant IKKINCHI o'rinda\n(1 va 3-bandlarda birinchi edi) — kitob ataylab\ntartibni almashtirgan."
+       "whyUz": "b) — EKOLOGIK jihatdan TO'G'RI.\nAerozollardagi gazlar OZON qatlamini yemiradi.\n\na) — teskari maslahat.\n\n2-mashqdagi H rasmi (aerozol balloni) shu haqda.\nDIQQAT: bu yerda inkor variant IKKINCHI o'rinda\n(1 va 3-bandlarda birinchi edi) — kitob ataylab\ntartibni almashtirgan.",
+       "speakAnswer": "b) Do not use aerosols."
       }
      ]
     }
@@ -278,7 +287,8 @@
         "use"
        ],
        "whyUz": "KALIT: 'with your FINGERS' (barmoqlar bilan).\nBarmoq bilan qilinadigan ish — OVQAT YEYISH.\n\n1-rasmda ayol ikki qo'llab katta bo'lakni\nyeyapti.\n\n'to eat WITH your fingers' — predlog 'with'\n(vosita).",
-       "speak": "1  Never ...................... with your fingers."
+       "speak": "1  Never ...................... with your fingers.",
+       "speakAnswer": "eat"
       },
       {
        "prompt": "2  Don't ............... your elbows on the table.",
@@ -291,7 +301,8 @@
         "ask"
        ],
        "whyUz": "KALIT: 'your ELBOWS ON the table'.\nTirsakni stolga QO'YISH → PUT.\n\n2-rasmda ayol tirsaklarini stolga qo'ygan.\n\n'to put something ON something' — joylashtirish.\n'an elbow' = tirsak.",
-       "speak": "2  Don't ............... your elbows on the table."
+       "speak": "2  Don't ............... your elbows on the table.",
+       "speakAnswer": "put"
       },
       {
        "prompt": "3  Don't ...................... with your mouth full.",
@@ -304,7 +315,8 @@
         "ask"
        ],
        "whyUz": "KALIT: 'with your MOUTH FULL' (og'zi to'la).\nOg'iz bilan qilinadigan ish (yeyishdan tashqari)\n— GAPIRISH.\n\nCoursebook 100-bet, Angliya matni AYNAN shu:\n'Don't talk with your mouth full.'\n\n'with + ot + SIFAT' qurilmasi.",
-       "speak": "3  Don't ...................... with your mouth full."
+       "speak": "3  Don't ...................... with your mouth full.",
+       "speakAnswer": "talk"
       },
       {
        "prompt": "4  Never ............... your nose at the table.",
@@ -317,7 +329,8 @@
         "use"
        ],
        "whyUz": "KALIT: 'your NOSE' (burun).\n'to BLOW your nose' = burnini qoqmoq\n(turg'un ibora).\n\n4-rasmda erkak dasturxonda burnini qoqyapti.\n\nCoursebook 100-bet, Yaponiya matni:\n'don't blow your nose in public'.\nBu yerda esa 'AT THE TABLE'.\n\nblow → BLEW (noto'g'ri fe'l).",
-       "speak": "4  Never ............... your nose at the table."
+       "speak": "4  Never ............... your nose at the table.",
+       "speakAnswer": "blow"
       },
       {
        "prompt": "5  Always ...................... before you smoke.",
@@ -330,7 +343,8 @@
         "use"
        ],
        "whyUz": "KALIT: 'before you SMOKE' — chekishdan oldin\nnima qilish kerak? RUXSAT SO'RASH.\n\n5-rasmda ayol dasturxonda sigaret tutgan.\n\nCoursebook 100-bet, Angliya matni:\n'always ASK before smoking in someone's house'.\n\nFarqi: bu yerda 'before you SMOKE' (to'liq gap),\nu yerda 'before SMOKING' (-ing).",
-       "speak": "5  Always ...................... before you smoke."
+       "speak": "5  Always ...................... before you smoke.",
+       "speakAnswer": "ask"
       },
       {
        "prompt": "6  Don't ...................... for dinner.",
@@ -343,7 +357,8 @@
         "ask"
        ],
        "whyUz": "KALIT: 'FOR dinner' — 'late FOR' turg'un\nbirikmasi.\n\nRO'YXATDAGI YAGONA IKKI SO'ZLI SHAKL:\n'be late'.\n'late' — SIFAT, shuning uchun 'BE' fe'li kerak:\n  'Don't BE late.' ✓\n  'Don't late.'    ✗\n\nCoursebook 100-bet: 'Don't be late for\nappointments.'",
-       "speak": "6  Don't ...................... for dinner."
+       "speak": "6  Don't ...................... for dinner.",
+       "speakAnswer": "be late"
       },
       {
        "prompt": "7  Always ...................... a knife and fork.",
@@ -356,7 +371,8 @@
         "ask"
        ],
        "whyUz": "KALIT: 'a KNIFE AND FORK' — asboblardan\nFOYDALANISH → USE.\n\n7-rasmda erkak pichoq va sanchqi bilan\novqatlanyapti.\n\nDIQQAT — 1-BAND BILAN JUFT:\n  1  Never EAT with your FINGERS.  (taqiq)\n  7  Always USE a KNIFE AND FORK. (maslahat)\nKitob ataylab ikkalasini bergan.\n\n'a knife' — ko'pligi KNIVES (f → ves).",
-       "speak": "7  Always ...................... a knife and fork."
+       "speak": "7  Always ...................... a knife and fork.",
+       "speakAnswer": "use"
       },
       {
        "prompt": "8  Never ....... food from someone else's plate.",
@@ -369,7 +385,8 @@
         "ask"
        ],
        "whyUz": "KALIT: 'FOOD FROM someone's plate' —\novqatni OLISH → TAKE.\n\n8-rasmda ayol yonidagi odamning likopchasidan\novqat olyapti.\n\n'take something FROM somewhere' — predlog\n'from'.\n\nDIQQAT — 'SOMEONE ELSE'S':\nApostrof 'ELSE' ga qo'shiladi:\n  someone else's plate  ✓\n  someone's else plate  ✗",
-       "speak": "8  Never ....... food from someone else's plate."
+       "speak": "8  Never ....... food from someone else's plate.",
+       "speakAnswer": "take"
       }
      ]
     },
@@ -386,27 +403,33 @@
      "tasks": [
       {
        "left": "1  dangerous",
-       "right": "B  safe"
+       "right": "B  safe",
+       "speakAnswer": "B  safe"
       },
       {
        "left": "2  rude",
-       "right": "E  polite"
+       "right": "E  polite",
+       "speakAnswer": "E  polite"
       },
       {
        "left": "3  upset",
-       "right": "F  content"
+       "right": "F  content",
+       "speakAnswer": "F  content"
       },
       {
        "left": "4  upwards",
-       "right": "C  downwards"
+       "right": "C  downwards",
+       "speakAnswer": "C  downwards"
       },
       {
        "left": "5  illegal",
-       "right": "D  legal"
+       "right": "D  legal",
+       "speakAnswer": "D  legal"
       },
       {
        "left": "6  protect",
-       "right": "A  destroy"
+       "right": "A  destroy",
+       "speakAnswer": "A  destroy"
       }
      ]
     },
@@ -432,7 +455,8 @@
         "headache"
        ],
        "whyUz": "KALIT: javob gapida 'put a JUMPER on'\n(jemper kiying) — demak odam SOVQOTGAN.\n\n'I FEEL very ...' — 'feel' dan keyin SIFAT.\n'cold' bu yerda SIFAT (sovqotgan), OT emas.\n\nCoursebook 101-bet, 9-mashqning 3-rasmi.",
-       "speak": "1  A: I feel very ................ .   B: You should put a jumper on."
+       "speak": "1  A: I feel very ................ .   B: You should put a jumper on.",
+       "speakAnswer": "cold"
       },
       {
        "prompt": "2  A: Doctor, I've got a bad ................ .   B: You should take some cough syrup.",
@@ -445,7 +469,8 @@
         "headache"
        ],
        "whyUz": "KALIT: javob gapida 'COUGH SYRUP'\n(yo'tal sharbati) — so'zning o'zi berilgan!\n\n'a BAD cough' = qattiq yo'tal\n('bad' bu yerda 'kuchli' ma'nosida).\n\n'cough' o'qilishi /kɒf/ — 'gh' = /f/ tovushi.",
-       "speak": "2  A: Doctor, I've got a bad ................ .   B: You should take some cough syrup."
+       "speak": "2  A: Doctor, I've got a bad ................ .   B: You should take some cough syrup.",
+       "speakAnswer": "cough"
       },
       {
        "prompt": "3  A: Ooh! I've got toothache.   B: You need to see a ................ .",
@@ -458,7 +483,8 @@
         "headache"
        ],
        "whyUz": "KALIT: 'I've got TOOTHACHE' (tish og'rig'i)\n— tish bilan kim shug'ullanadi? DENTIST.\n\n'to SEE a dentist' = qabuliga bormoq\n('ko'rmoq' emas).\n\nDIQQAT: 'toothache' ARTIKLSIZ (britancha),\nlekin 'a DENTIST' — artikl bilan.\n\nCoursebook 101-bet, 9b: 'See the dentist.'",
-       "speak": "3  A: Ooh! I've got toothache.   B: You need to see a ................ ."
+       "speak": "3  A: Ooh! I've got toothache.   B: You need to see a ................ .",
+       "speakAnswer": "dentist"
       },
       {
        "prompt": "4  A: I've got a ................ .   B: You should take an aspirin.",
@@ -471,7 +497,8 @@
         "dentist"
        ],
        "whyUz": "KALIT: javob gapida 'take an ASPIRIN' —\naspirin BOSH OG'RIG'IGA ichiladi.\n\nARTIKL KALITI: 'I've got A ...' — demak 'a'\noladigan kasallik.\n  a headache ✓\n  toothache  ✗ (artiklsiz)\n  the flu    ✗ ('the' kerak)\n\nCoursebook 101-bet, 9b: 'Take an aspirin.'",
-       "speak": "4  A: I've got a ................ .   B: You should take an aspirin."
+       "speak": "4  A: I've got a ................ .   B: You should take an aspirin.",
+       "speakAnswer": "headache"
       },
       {
        "prompt": "5  B: I feel very tired. I need to get some ................ .",
@@ -484,7 +511,8 @@
         "dentist"
        ],
        "whyUz": "KALIT: 'I feel very TIRED' — charchagan odamga\nnima kerak? UYQU.\n\n'get SOME sleep' = uxlab olmoq.\n'sleep' bu yerda OT va SANALMAYDIGAN,\nshuning uchun 'some' bilan ('a sleep' XATO).\n\nCoursebook 101-bet, 9b: 'Get some sleep.'",
-       "speak": "5  B: I feel very tired. I need to get some ................ ."
+       "speak": "5  B: I feel very tired. I need to get some ................ .",
+       "speakAnswer": "sleep"
       },
       {
        "prompt": "6  A: I've got a ...................... throat and I think I've got the flu.",
@@ -497,7 +525,8 @@
         "dentist"
        ],
        "whyUz": "KALIT: bo'shliq 'THROAT' (tomoq) dan OLDIN\n— demak SIFAT kerak.\n\n'a SORE throat' = og'riyotgan tomoq\n(turg'un birikma).\n\n  'a sore throat'  ✓\n  'a throat sore'  ✗\n\nDIQQAT: 'the FLU' — 'the' bilan (kasallik\nartikllari qoidasi).",
-       "speak": "6  A: I've got a ...................... throat and I think I've got the flu."
+       "speak": "6  A: I've got a ...................... throat and I think I've got the flu.",
+       "speakAnswer": "sore"
       }
      ]
     },
@@ -523,7 +552,8 @@
         "use"
        ],
        "whyUz": "MA'NO KALITI: 'THE ENVIRONMENT' — atrof-muhitni\nHIMOYA qilish.\n\nSHAKL KALITI: 'help TO ...' — 'to' dan keyin\nASOSIY shakl → 'protect' ('protects' emas).\n\nCoursebook 99-bet, varaqaning birinchi gapi:\n'things we can do to PROTECT the environment'.",
-       "speak": "1  We can all help to ................ the environment"
+       "speak": "1  We can all help to ................ the environment",
+       "speakAnswer": "protect"
       },
       {
        "prompt": "2  To start with we should ................ public transport",
@@ -536,7 +566,8 @@
         "protect"
        ],
        "whyUz": "MA'NO KALITI: 'PUBLIC TRANSPORT' — undan\nFOYDALANISH.\n\nSHAKL KALITI: 'we SHOULD ...' — modaldan keyin\nASOSIY shakl.\n\nCoursebook 99-bet: 'USE public transport\n(i.e. buses, trains, trams).'\n\n'to start with' = avvalo.",
-       "speak": "2  To start with we should ................ public transport"
+       "speak": "2  To start with we should ................ public transport",
+       "speakAnswer": "use"
       },
       {
        "prompt": "3  because cars ...................... the air.",
@@ -549,7 +580,8 @@
         "use"
        ],
        "whyUz": "MA'NO KALITI: 'THE AIR' — havoni\nIFLOSLANTIRISH.\n\nSHAKL KALITI: ega 'CARS' — KO'PLIK,\nshuning uchun '-S' YO'Q:\n  'cars pollute'   ✓\n  'cars pollutes'  ✗\n\nCoursebook 99-bet: 'Cars pollute the air.'",
-       "speak": "3  because cars ...................... the air."
+       "speak": "3  because cars ...................... the air.",
+       "speakAnswer": "pollute"
       },
       {
        "prompt": "4  Packaging from food products ......................... a lot of rubbish.",
@@ -562,7 +594,8 @@
         "protect"
        ],
        "whyUz": "MA'NO KALITI: 'A LOT OF RUBBISH' — axlat\nHOSIL QILISH.\n\nENG MUHIM SHAKL KALITI: ega 'PACKAGING' —\nSANALMAYDIGAN ot, ya'ni BIRLIK\n→ fe'lga '-S' kerak!\n\nRo'yxatda 'creates' allaqachon '-S' bilan\nberilgan — bu kalit.\n\nCoursebook 99-bet: 'The packaging CREATES a\nlot of rubbish.'",
-       "speak": "4  Packaging from food products ......................... a lot of rubbish."
+       "speak": "4  Packaging from food products ......................... a lot of rubbish.",
+       "speakAnswer": "creates"
       },
       {
        "prompt": "5  We should not ......................... rubbish in the streets",
@@ -575,7 +608,8 @@
         "use"
        ],
        "whyUz": "MA'NO KALITI: 'RUBBISH IN THE STREETS' —\nko'chaga axlat TUSHIRIB YUBORISH.\n\nSHAKL KALITI: 'should not ...' — modaldan\nkeyin ASOSIY shakl.\n\nDIQQAT — 'DROP' va 'THROW' FARQI:\n  DROP  — tushirib yubormoq (beixtiyor)\n  THROW — uloqtirmoq (7-band, dengizga)\n\nCoursebook 99-bet: 'Do not DROP rubbish in\nthe street.'",
-       "speak": "5  We should not ......................... rubbish in the streets"
+       "speak": "5  We should not ......................... rubbish in the streets",
+       "speakAnswer": "drop"
       },
       {
        "prompt": "6  because it looks and ......................... horrible.",
@@ -588,7 +622,8 @@
         "use"
        ],
        "whyUz": "MA'NO KALITI: 'HORRIBLE' bilan keladigan his\nfe'li — HIDLASH.\n\nSHAKL KALITI — IKKI TOMONI:\n  1) ega 'IT' — BIRLIK\n  2) yonidagi 'LOOKS' ham '-S' bilan\n  → 'smells' ('-S' bilan)\n\nRo'yxatda 'smells' allaqachon '-S' bilan\nberilgan.\n\nCoursebook 99-bet: 'It looks and SMELLS\nhorrible.'",
-       "speak": "6  because it looks and ......................... horrible."
+       "speak": "6  because it looks and ......................... horrible.",
+       "speakAnswer": "smells"
       },
       {
        "prompt": "7  We mustn't ......................... rubbish in the sea either",
@@ -601,7 +636,8 @@
         "protect"
        ],
        "whyUz": "MA'NO KALITI: 'IN THE SEA' — dengizga\nULOQTIRISH.\n\nSHAKL KALITI: 'mustn't ...' — modaldan keyin\nASOSIY shakl.\n\nDIQQAT — 'EITHER':\nInkor gapda 'ham' → EITHER ('too' emas).\n\nCoursebook 99-bet: 'Do not THROW plastic\nbottles into the sea. Fish will die.'",
-       "speak": "7  We mustn't ......................... rubbish in the sea either"
+       "speak": "7  We mustn't ......................... rubbish in the sea either",
+       "speakAnswer": "throw"
       },
       {
        "prompt": "8  Lastly, we should never ......................... fires in forests",
@@ -614,7 +650,8 @@
         "use"
        ],
        "whyUz": "MA'NO KALITI: 'FIRES' — olov YOQISH.\n'to LIGHT a fire' = olov yoqmoq.\n\nSHAKL KALITI: 'should never ...' — modaldan\nkeyin ASOSIY shakl.\n\nCoursebook 99-bet: 'Never LIGHT fires in\nforests. Trees will burn.'\n\nlight → LIT (noto'g'ri fe'l).\n'lastly' = nihoyat, oxirida.",
-       "speak": "8  Lastly, we should never ......................... fires in forests"
+       "speak": "8  Lastly, we should never ......................... fires in forests",
+       "speakAnswer": "light"
       }
      ]
     }
@@ -685,7 +722,8 @@
         "A  at",
         "B  in"
        ],
-       "whyUz": "'to be late FOR something' — TURG'UN birikma.\n\n  late FOR school / work / the party  ✓\n  late AT / IN ...                    ✗\n\nCoursebook 100-bet, Xitoy va Angliya matnlari:\n'Never be late FOR appointments.'"
+       "whyUz": "'to be late FOR something' — TURG'UN birikma.\n\n  late FOR school / work / the party  ✓\n  late AT / IN ...                    ✗\n\nCoursebook 100-bet, Xitoy va Angliya matnlari:\n'Never be late FOR appointments.'",
+       "speakAnswer": "C  for"
       },
       {
        "prompt": "2  When you visit a Japanese house, leave your shoes ................ the door.  A in  B on  C at",
@@ -696,7 +734,8 @@
         "A  in",
         "B  on"
        ],
-       "whyUz": "'AT the door' = eshik OLDIDA (aniq nuqta).\n\n'AT' — aniq nuqtani bildiradi:\n  at the door, at the bus stop, at home\n\nCoursebook 100-bet, Yaponiya matni:\n'Leave your shoes AT the door.'\n\n'in the door' — eshikning ICHIDA (ma'nosiz)."
+       "whyUz": "'AT the door' = eshik OLDIDA (aniq nuqta).\n\n'AT' — aniq nuqtani bildiradi:\n  at the door, at the bus stop, at home\n\nCoursebook 100-bet, Yaponiya matni:\n'Leave your shoes AT the door.'\n\n'in the door' — eshikning ICHIDA (ma'nosiz).",
+       "speakAnswer": "C  at"
       },
       {
        "prompt": "3  English people don't like it if you push ................ a queue.  A into  B onto  C at",
@@ -707,7 +746,8 @@
         "B  onto",
         "C  at"
        ],
-       "whyUz": "'to push INTO a queue' = navbatga SUQILIB\nKIRMOQ.\n\n'INTO' — ichkariga HARAKAT.\n'onto' — yuzaga chiqish (mos emas).\n\nCoursebook 100-bet, Angliya matni:\n'Never push INTO a queue of people or they'll\nget angry.'\n\n'queue' o'qilishi /kyu/."
+       "whyUz": "'to push INTO a queue' = navbatga SUQILIB\nKIRMOQ.\n\n'INTO' — ichkariga HARAKAT.\n'onto' — yuzaga chiqish (mos emas).\n\nCoursebook 100-bet, Angliya matni:\n'Never push INTO a queue of people or they'll\nget angry.'\n\n'queue' o'qilishi /kyu/.",
+       "speakAnswer": "A  into"
       },
       {
        "prompt": "4  'Don't talk ......... your mouth full,' his mother said.  A at  B with  C about",
@@ -718,7 +758,8 @@
         "A  at",
         "C  about"
        ],
-       "whyUz": "'WITH + ot + SIFAT' — holat qurilmasi:\n  with your mouth full\n  with your eyes closed\n  with the door open\n\nCoursebook 100-bet, Angliya matni:\n'Don't talk WITH your mouth full.'\n\nWorkbook 56-bet, 1-mashqning 3-bandi ham\nshu edi."
+       "whyUz": "'WITH + ot + SIFAT' — holat qurilmasi:\n  with your mouth full\n  with your eyes closed\n  with the door open\n\nCoursebook 100-bet, Angliya matni:\n'Don't talk WITH your mouth full.'\n\nWorkbook 56-bet, 1-mashqning 3-bandi ham\nshu edi.",
+       "speakAnswer": "B  with"
       },
       {
        "prompt": "5  In some countries you can't kiss ................ public.  A in  B on  C at",
@@ -729,7 +770,8 @@
         "B  on",
         "C  at"
        ],
-       "whyUz": "'IN public' = odamlar oldida — TURG'UN ibora,\nARTIKLSIZ.\n\n  in public  ✓\n  on public  ✗\n  in THE public — boshqa ma'no\n\nCoursebook 100-bet, Xitoy matni:\n'don't kiss anyone IN public — it's very rude.'"
+       "whyUz": "'IN public' = odamlar oldida — TURG'UN ibora,\nARTIKLSIZ.\n\n  in public  ✓\n  on public  ✗\n  in THE public — boshqa ma'no\n\nCoursebook 100-bet, Xitoy matni:\n'don't kiss anyone IN public — it's very rude.'",
+       "speakAnswer": "A  in"
       },
       {
        "prompt": "6  'You must pay the rent ................ time,' said Mrs Battersby.  A at  B for  C on",
@@ -740,7 +782,8 @@
         "A  at",
         "B  for"
        ],
-       "whyUz": "'ON time' = o'z vaqtida — TURG'UN ibora.\n\nDIQQAT — 'ON TIME' va 'IN TIME' FARQI:\n  ON time = belgilangan paytda\n     'The train arrived ON time.'\n  IN time = ulgurib, kech qolmasdan\n     'We arrived IN time to see the film.'\n\nCoursebook 101-bet, 11-mashq jadvali:\n'pay the rent ON time'.\nMrs Battersby — o'sha betdagi uy egasi!"
+       "whyUz": "'ON time' = o'z vaqtida — TURG'UN ibora.\n\nDIQQAT — 'ON TIME' va 'IN TIME' FARQI:\n  ON time = belgilangan paytda\n     'The train arrived ON time.'\n  IN time = ulgurib, kech qolmasdan\n     'We arrived IN time to see the film.'\n\nCoursebook 101-bet, 11-mashq jadvali:\n'pay the rent ON time'.\nMrs Battersby — o'sha betdagi uy egasi!",
+       "speakAnswer": "C  on"
       },
       {
        "prompt": "7  My father said I must be home ................ 11 pm.  A on  B by  C in",
@@ -751,7 +794,8 @@
         "A  on",
         "C  in"
        ],
-       "whyUz": "'BY 11 pm' = 11 GACHA (oxirgi muddat).\n\nDIQQAT — 'BY' va 'UNTIL' FARQI:\n  be home BY 11 pm    = 11 dan KECHIKMASDAN\n                        yetib kelish\n  stay home UNTIL 11  = 11 gacha uyda TURISH\n\nCoursebook 101-bet va Grammar 60-bet:\n'You must be home BY 11 pm.'\n(Grammar 60-bet buni 'for RULES' misoli\nsifatida bergan.)"
+       "whyUz": "'BY 11 pm' = 11 GACHA (oxirgi muddat).\n\nDIQQAT — 'BY' va 'UNTIL' FARQI:\n  be home BY 11 pm    = 11 dan KECHIKMASDAN\n                        yetib kelish\n  stay home UNTIL 11  = 11 gacha uyda TURISH\n\nCoursebook 101-bet va Grammar 60-bet:\n'You must be home BY 11 pm.'\n(Grammar 60-bet buni 'for RULES' misoli\nsifatida bergan.)",
+       "speakAnswer": "B  by"
       },
       {
        "prompt": "8  The teacher said we mustn't write ................ the desks.  A on  B in  C over",
@@ -762,7 +806,8 @@
         "B  in",
         "C  over"
        ],
-       "whyUz": "'write ON a surface' — YUZAGA yozish.\n\n'ON' — yuzasida:\n  on the table, on the wall, on the desk\n\nCoursebook 102-bet, 13a-mashq, 2-o'quvchi:\n'You mustn't write ON the walls.'\n\n'a desk' = parta, yozuv stoli."
+       "whyUz": "'write ON a surface' — YUZAGA yozish.\n\n'ON' — yuzasida:\n  on the table, on the wall, on the desk\n\nCoursebook 102-bet, 13a-mashq, 2-o'quvchi:\n'You mustn't write ON the walls.'\n\n'a desk' = parta, yozuv stoli.",
+       "speakAnswer": "A  on"
       }
      ]
     }
@@ -877,7 +922,8 @@
         "C",
         "F",
         "E"
-       ]
+       ],
+       "speakAnswer": "G va D"
       },
       {
        "prompt": "4  Use public transport.",
@@ -1130,7 +1176,8 @@
         "always",
         "never"
        ],
-       "whyUz": "ANGLIYA matnining oxirgi gapi so'zma-so'z:\n'Remember — ALWAYS ask before smoking in\nsomeone's house.'\n\n'never' bo'lsa ma'no teskari bo'lardi:\n'hech qachon so'ramang' — bu qo'pollik."
+       "whyUz": "ANGLIYA matnining oxirgi gapi so'zma-so'z:\n'Remember — ALWAYS ask before smoking in\nsomeone's house.'\n\n'never' bo'lsa ma'no teskari bo'lardi:\n'hech qachon so'ramang' — bu qo'pollik.",
+       "speakAnswer": "always"
       },
       {
        "prompt": "2  In China, never be late/early for appointments.",
@@ -1140,7 +1187,8 @@
         "late",
         "early"
        ],
-       "whyUz": "XITOY matnidan so'zma-so'z:\n'NEVER BE LATE for appointments ...'\n\n'never be early' mantiqan ham noto'g'ri —\nerta kelish hech qayerda taqiqlanmaydi.\n\nDIQQAT: ANGLIYA matnida ham shu qoida bor:\n'Don't be late for appointments.'\nShuning uchun 7b ning 10-bandi IKKI javobli."
+       "whyUz": "XITOY matnidan so'zma-so'z:\n'NEVER BE LATE for appointments ...'\n\n'never be early' mantiqan ham noto'g'ri —\nerta kelish hech qayerda taqiqlanmaydi.\n\nDIQQAT: ANGLIYA matnida ham shu qoida bor:\n'Don't be late for appointments.'\nShuning uchun 7b ning 10-bandi IKKI javobli.",
+       "speakAnswer": "late"
       },
       {
        "prompt": "3  In Japan, leave your gifts/shoes at the door.",
@@ -1150,7 +1198,8 @@
         "shoes",
         "gifts"
        ],
-       "whyUz": "YAPONIYA matnidan so'zma-so'z:\n'LEAVE YOUR SHOES AT THE DOOR, but make sure\nthe toes are pointing towards the door.'\n\nDIQQAT — CHALG'ITUVCHI:\nYaponiya matnida sovg'a (gift) ham bor, lekin\nu eshikda QOLDIRILMAYDI — uy egasiga BERILADI:\n'it is polite to TAKE a gift.'"
+       "whyUz": "YAPONIYA matnidan so'zma-so'z:\n'LEAVE YOUR SHOES AT THE DOOR, but make sure\nthe toes are pointing towards the door.'\n\nDIQQAT — CHALG'ITUVCHI:\nYaponiya matnida sovg'a (gift) ham bor, lekin\nu eshikda QOLDIRILMAYDI — uy egasiga BERILADI:\n'it is polite to TAKE a gift.'",
+       "speakAnswer": "shoes"
       }
      ]
     },
@@ -1263,7 +1312,8 @@
         "J (Japan)",
         "C (China)",
         "E va C (England va China)"
-       ]
+       ],
+       "speakAnswer": "E va C"
       },
       {
        "prompt": "11  Don't tell jokes to people you don't know well.",
@@ -1623,7 +1673,8 @@
         "MUST",
         "CAN"
        ],
-       "whyUz": "KITOBDA ✓ ALLAQACHON QO'YILGAN (namuna).\n\nUch marta tasdiqlanadi:\n  1) jadvalda ✓ CAN'T ustunida\n  2) grammatika qutisi:\n     'You CAN'T keep pets in your room.'\n  3) jadval ostidagi namuna gap:\n     'You can't keep pets.'\n\nTO'LIQ GAP: You can't keep pets."
+       "whyUz": "KITOBDA ✓ ALLAQACHON QO'YILGAN (namuna).\n\nUch marta tasdiqlanadi:\n  1) jadvalda ✓ CAN'T ustunida\n  2) grammatika qutisi:\n     'You CAN'T keep pets in your room.'\n  3) jadval ostidagi namuna gap:\n     'You can't keep pets.'\n\nTO'LIQ GAP: You can't keep pets.",
+       "speakAnswer": "CAN'T"
       },
       {
        "prompt": "play loud music",
@@ -1634,7 +1685,8 @@
         "MUST",
         "CAN"
        ],
-       "whyUz": "12-MASHQNING NAMUNA DIALOGI TASDIQLAYDI:\n  SA: 'Can I play loud music?'\n  SB: 'NO, YOU CAN'T.'\n\nMantiq ham shuni ko'rsatadi: baland musiqa\nboshqa ijarachilarga xalaqit beradi.\n\nTO'LIQ GAP: You can't play loud music."
+       "whyUz": "12-MASHQNING NAMUNA DIALOGI TASDIQLAYDI:\n  SA: 'Can I play loud music?'\n  SB: 'NO, YOU CAN'T.'\n\nMantiq ham shuni ko'rsatadi: baland musiqa\nboshqa ijarachilarga xalaqit beradi.\n\nTO'LIQ GAP: You can't play loud music.",
+       "speakAnswer": "CAN'T"
       },
       {
        "prompt": "use the telephone",
@@ -1645,7 +1697,8 @@
         "CAN'T",
         "MUST"
        ],
-       "whyUz": "12-MASHQNING NAMUNA DIALOGI TASDIQLAYDI:\n  SA: 'Can I use the telephone?'\n  SB: 'YES, OF COURSE YOU CAN.'\n\n'of course' — ruxsatni kuchaytiradi\n(ya'ni bu oddiy, muammosiz narsa).\n\nTO'LIQ GAP: You can use the telephone."
+       "whyUz": "12-MASHQNING NAMUNA DIALOGI TASDIQLAYDI:\n  SA: 'Can I use the telephone?'\n  SB: 'YES, OF COURSE YOU CAN.'\n\n'of course' — ruxsatni kuchaytiradi\n(ya'ni bu oddiy, muammosiz narsa).\n\nTO'LIQ GAP: You can use the telephone.",
+       "speakAnswer": "CAN"
       },
       {
        "prompt": "keep the room clean",
@@ -1656,7 +1709,8 @@
         "CAN'T",
         "CAN"
        ],
-       "whyUz": "GRAMMATIKA QUTISINING MISOLI TASDIQLAYDI:\n  'You MUST CLEAN YOUR ROOM.'\n  (= majburiyat, obligation)\n\nKitob 'must' ni tushuntirish uchun aynan shu\nmisolni tanlagan — bu tasodif emas.\n\n'to KEEP + ot + SIFAT' = ... holatda saqlamoq:\n  keep the room clean\n  keep the door open\n\nTO'LIQ GAP: You must keep the room clean."
+       "whyUz": "GRAMMATIKA QUTISINING MISOLI TASDIQLAYDI:\n  'You MUST CLEAN YOUR ROOM.'\n  (= majburiyat, obligation)\n\nKitob 'must' ni tushuntirish uchun aynan shu\nmisolni tanlagan — bu tasodif emas.\n\n'to KEEP + ot + SIFAT' = ... holatda saqlamoq:\n  keep the room clean\n  keep the door open\n\nTO'LIQ GAP: You must keep the room clean.",
+       "speakAnswer": "MUST"
       },
       {
        "prompt": "make the bed",
@@ -1667,7 +1721,8 @@
         "CAN'T",
         "CAN"
        ],
-       "whyUz": "12-MASHQNING NAMUNA DIALOGI TASDIQLAYDI:\n  SA: 'Do I have to make the bed?'\n  SB: 'Yes, you do. YOU MUST MAKE THE BED.'\n\nDIQQAT: savolda 'have to', javobda 'must' —\nma'nosi bir xil, lekin savolda 'Do I have to'\ntabiiyroq.\n\nTO'LIQ GAP: You must make the bed."
+       "whyUz": "12-MASHQNING NAMUNA DIALOGI TASDIQLAYDI:\n  SA: 'Do I have to make the bed?'\n  SB: 'Yes, you do. YOU MUST MAKE THE BED.'\n\nDIQQAT: savolda 'have to', javobda 'must' —\nma'nosi bir xil, lekin savolda 'Do I have to'\ntabiiyroq.\n\nTO'LIQ GAP: You must make the bed.",
+       "speakAnswer": "MUST"
       },
       {
        "prompt": "be home by 11 pm",
@@ -1678,7 +1733,8 @@
         "CAN'T",
         "CAN"
        ],
-       "whyUz": "GRAMMAR BOOK 60-BET TASDIQLAYDI:\n'must' ning ishlatilishi tushuntirilgan joyda\nkitob aynan shu misolni bergan:\n  'b) for RULES —\n      You MUST BE HOME BY 11 PM.'\n\nYa'ni uy egasining qoidasi → MUST.\n\nDIQQAT — 'BY' va 'UNTIL' FARQI:\n  'be home BY 11 pm' = 11 GACHA yetib kelish\n  'stay home UNTIL 11 pm' = 11 gacha uyda TURISH\n\nTO'LIQ GAP: You must be home by 11 pm."
+       "whyUz": "GRAMMAR BOOK 60-BET TASDIQLAYDI:\n'must' ning ishlatilishi tushuntirilgan joyda\nkitob aynan shu misolni bergan:\n  'b) for RULES —\n      You MUST BE HOME BY 11 PM.'\n\nYa'ni uy egasining qoidasi → MUST.\n\nDIQQAT — 'BY' va 'UNTIL' FARQI:\n  'be home BY 11 pm' = 11 GACHA yetib kelish\n  'stay home UNTIL 11 pm' = 11 gacha uyda TURISH\n\nTO'LIQ GAP: You must be home by 11 pm.",
+       "speakAnswer": "MUST"
       }
      ]
     },
@@ -1742,43 +1798,53 @@
      "tasks": [
       {
        "left": "1  (pufak chiqarayotgan qiz)",
-       "right": "You mustn't chew gum in class."
+       "right": "You mustn't chew gum in class.",
+       "speakAnswer": "You mustn't chew gum in class."
       },
       {
        "left": "2  (devorga yozayotgan bola)",
-       "right": "You mustn't write on the walls."
+       "right": "You mustn't write on the walls.",
+       "speakAnswer": "You mustn't write on the walls."
       },
       {
        "left": "3  (yon tomonga qarayotgan qiz)",
-       "right": "You mustn't cheat in tests."
+       "right": "You mustn't cheat in tests.",
+       "speakAnswer": "You mustn't cheat in tests."
       },
       {
        "left": "4  (boshini partaga qo'ygan bola)",
-       "right": "You mustn't sleep in class."
+       "right": "You mustn't sleep in class.",
+       "speakAnswer": "You mustn't sleep in class."
       },
       {
        "left": "5  (qo'lida pishiriq bo'lgan bola)",
-       "right": "You mustn't eat in class."
+       "right": "You mustn't eat in class.",
+       "speakAnswer": "You mustn't eat in class."
       },
       {
        "left": "6  (bo'yinlashayotgan ikki bola)",
-       "right": "You mustn't fight in class."
+       "right": "You mustn't fight in class.",
+       "speakAnswer": "You mustn't fight in class."
       },
       {
        "left": "7  (qog'oz otayotgan bola)",
-       "right": "You must keep the classroom clean."
+       "right": "You must keep the classroom clean.",
+       "speakAnswer": "You must keep the classroom clean."
       },
       {
        "left": "8  (mushukchaga qo'l cho'zgan qiz)",
-       "right": "You mustn't bring pets into school."
+       "right": "You mustn't bring pets into school.",
+       "speakAnswer": "You mustn't bring pets into school."
       },
       {
        "left": "9  (pichirlashayotgan ikki qiz)",
-       "right": "You mustn't talk to each other in class."
+       "right": "You mustn't talk to each other in class.",
+       "speakAnswer": "You mustn't talk to each other in class."
       },
       {
        "left": "(alohida o'quvchisi yo'q)",
-       "right": "You must be quiet in class."
+       "right": "You must be quiet in class.",
+       "speakAnswer": "You must be quiet in class."
       }
      ]
     },
@@ -2087,7 +2153,8 @@
         "shouldn't"
        ],
        "whyUz": "Meva-sabzavot yeyish — FOYDALI ish → SHOULD.\n\nCoursebook 98-betdagi 1-mashqning c-bandi\naynan shu edi:\n'Eat lots of fruit and vegetables.' (health)",
-       "speak": "1  You .................. eat lots of fruit and vegetables."
+       "speak": "1  You .................. eat lots of fruit and vegetables.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "2  You .................. wear sunglasses at the beach.",
@@ -2098,7 +2165,8 @@
         "shouldn't"
        ],
        "whyUz": "Ko'zoynak ko'zni himoya qiladi — FOYDALI → SHOULD.\n\nCoursebook 103-bet, 17-mashq:\n'Always wear sunglasses. They protect your eyes\nfrom the sun.'\n\n'sunglasses' — DOIM ko'plikda.",
-       "speak": "2  You .................. wear sunglasses at the beach."
+       "speak": "2  You .................. wear sunglasses at the beach.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "3  You ..................... talk with your mouth full.",
@@ -2109,7 +2177,8 @@
         "should"
        ],
        "whyUz": "Og'zi to'la gapirish — QO'POL → SHOULDN'T.\n\nCoursebook 100-bet, Angliya matni:\n'Don't talk with your mouth full.'\n\n'with + ot + SIFAT' qurilmasi.",
-       "speak": "3  You ..................... talk with your mouth full."
+       "speak": "3  You ..................... talk with your mouth full.",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "4  A: I have a test tomorrow.  B: You ..................... stay at home and study.",
@@ -2120,7 +2189,8 @@
         "shouldn't"
        ],
        "whyUz": "Imtihon oldidan o'qish — FOYDALI → SHOULD.\n\nKONTEKST KALITI: 'I have a TEST tomorrow' —\nbu yordamga muhtoj holat, demak IJOBIY\nmaslahat beriladi.\n\n'stay AT home' — artikl YO'Q.",
-       "speak": "4  A: I have a test tomorrow.  B: You ..................... stay at home and study."
+       "speak": "4  A: I have a test tomorrow.  B: You ..................... stay at home and study.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "5  Peter ..................... eat so much junk food.",
@@ -2131,7 +2201,8 @@
         "should"
        ],
        "whyUz": "Zararli tez ovqat — ZARAR → SHOULDN'T.\n\nDIQQAT — EGA 'PETER' (III shaxs birlik):\n'should' baribir O'ZGARMAYDI!\n  'Peter shouldn't' ✓\n  'Peter doesn't should' ✗\n\n'so MUCH junk food' — 'food' SANALMAYDIGAN,\nshuning uchun 'much'.",
-       "speak": "5  Peter ..................... eat so much junk food."
+       "speak": "5  Peter ..................... eat so much junk food.",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "6  People ..................... light fires in the forests.",
@@ -2142,7 +2213,8 @@
         "should"
        ],
        "whyUz": "O'rmonda olov — XAVFLI → SHOULDN'T.\n\nCoursebook 99-betdagi varaqa:\n'Never light fires in forests. Trees will burn.'\n\n'to light a fire' — light → LIT (noto'g'ri fe'l).",
-       "speak": "6  People ..................... light fires in the forests."
+       "speak": "6  People ..................... light fires in the forests.",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "7  You ...................... always do your homework.",
@@ -2153,7 +2225,8 @@
         "shouldn't"
        ],
        "whyUz": "Uy vazifasi — FOYDALI → SHOULD.\n\nCoursebook 102-bet, 13b-mashq namunasi:\n'You must do your homework.'\n\nDIQQAT — 'ALWAYS' QAYERDA:\n'You should ALWAYS do ...' ✓\n'You ALWAYS should do ...' ✗\nRavish modal bilan asosiy fe'l ORASIDA.",
-       "speak": "7  You ...................... always do your homework."
+       "speak": "7  You ...................... always do your homework.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "8  People .......................................... use aerosols.",
@@ -2164,7 +2237,8 @@
         "should"
        ],
        "whyUz": "Aerozol ozon qatlamiga ZARAR beradi → SHOULDN'T.\n\nCoursebook 99-betdagi varaqa:\n'Do not use aerosols. They pollute the air.'\n\nCoursebook 98-bet, 3-mashq:\n'Do not use aerosols.'",
-       "speak": "8  People .......................................... use aerosols."
+       "speak": "8  People .......................................... use aerosols.",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "9  A: Tim isn't feeling well.  B: He .......................................... go to a doctor.",
@@ -2175,7 +2249,8 @@
         "shouldn't"
        ],
        "whyUz": "Kasal odam shifokorga borishi — FOYDALI → SHOULD.\n\nKONTEKST KALITI: 'Tim ISN'T FEELING WELL' —\nyordam kerak, demak IJOBIY maslahat.\n\nCoursebook 101-bet, 9b: 'Call the doctor.'\n\n'isn't feeling' — Present Continuous, chunki\nVAQTINCHA holat ('doesn't feel' ham to'g'ri).\n\n'go to A doctor' — qaysi shifokor ekani\nmuhim emas.",
-       "speak": "9  A: Tim isn't feeling well.  B: He .......................................... go to a doctor."
+       "speak": "9  A: Tim isn't feeling well.  B: He .......................................... go to a doctor.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "10  You .......................................... eat so many sweets.",
@@ -2186,7 +2261,8 @@
         "should"
        ],
        "whyUz": "Ko'p shirinlik — tishga va sog'liqqa ZARAR\n→ SHOULDN'T.\n\nCoursebook 102-bet, 16d-dialog:\n'No, you can't. They're bad for your teeth.'\n\nDIQQAT — 'SO MANY' (5-bandda 'so MUCH' edi):\n  many + SANALADIGAN  (sweets)\n  much + SANALMAYDIGAN (junk food)",
-       "speak": "10  You .......................................... eat so many sweets."
+       "speak": "10  You .......................................... eat so many sweets.",
+       "speakAnswer": "shouldn't"
       }
      ]
     },
@@ -2251,7 +2327,8 @@
         "must",
         "shouldn't"
        ],
-       "whyUz": "Jim bo'lish — IJOBIY maktab QOIDASI → MUST.\n\n'shouldn't' bo'lsa ma'no TESKARI bo'lardi:\n'jim bo'lmasligingiz kerak'.\n\nCoursebook 102-bet, 13a-mashq:\n'You must be quiet in class.'\n(bu ham IJOBIY ko'rsatmalardan biri edi)"
+       "whyUz": "Jim bo'lish — IJOBIY maktab QOIDASI → MUST.\n\n'shouldn't' bo'lsa ma'no TESKARI bo'lardi:\n'jim bo'lmasligingiz kerak'.\n\nCoursebook 102-bet, 13a-mashq:\n'You must be quiet in class.'\n(bu ham IJOBIY ko'rsatmalardan biri edi)",
+       "speakAnswer": "must"
       },
       {
        "prompt": "2  When in China, you mustn't/must kiss anyone in public.",
@@ -2261,7 +2338,8 @@
         "mustn't",
         "must"
        ],
-       "whyUz": "Xitoyda bu QO'POL hisoblanadi → MUSTN'T (taqiq).\n\n'must kiss' bo'lsa 'o'pishingiz SHART' degan\nkulgili ma'no chiqadi.\n\nCoursebook 100-bet, Xitoy matni:\n'When in China, don't kiss anyone in public —\nit's very rude.'"
+       "whyUz": "Xitoyda bu QO'POL hisoblanadi → MUSTN'T (taqiq).\n\n'must kiss' bo'lsa 'o'pishingiz SHART' degan\nkulgili ma'no chiqadi.\n\nCoursebook 100-bet, Xitoy matni:\n'When in China, don't kiss anyone in public —\nit's very rude.'",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "3  People should/shouldn't smoke because it's bad for their health.",
@@ -2271,7 +2349,8 @@
         "shouldn't",
         "should"
        ],
-       "whyUz": "KALIT — SABAB GAPI:\n'BECAUSE IT'S BAD for their health'\n\nSabab salbiy, demak maslahat ham salbiy\n→ SHOULDN'T.\n\nBu bandda javob gapning ICHIDA berilgan —\ntaxmin qilish shart emas."
+       "whyUz": "KALIT — SABAB GAPI:\n'BECAUSE IT'S BAD for their health'\n\nSabab salbiy, demak maslahat ham salbiy\n→ SHOULDN'T.\n\nBu bandda javob gapning ICHIDA berilgan —\ntaxmin qilish shart emas.",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "4  Speak louder, please. I can't/can hear you.",
@@ -2281,7 +2360,8 @@
         "can't",
         "can"
        ],
-       "whyUz": "KALIT — BIRINCHI GAP:\n'SPEAK LOUDER, please' — demak hozir\nESHITILMAYAPTI.\n\nAgar 'I CAN hear you' bo'lsa, balandroq\ngapirish kerak bo'lmasdi — mantiqan zid.\n\n'to hear' → HEARD (noto'g'ri fe'l).\n'louder' — 'loud' ning qiyosiy darajasi."
+       "whyUz": "KALIT — BIRINCHI GAP:\n'SPEAK LOUDER, please' — demak hozir\nESHITILMAYAPTI.\n\nAgar 'I CAN hear you' bo'lsa, balandroq\ngapirish kerak bo'lmasdi — mantiqan zid.\n\n'to hear' → HEARD (noto'g'ri fe'l).\n'louder' — 'loud' ning qiyosiy darajasi.",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "5  Must/Can I have a glass of water, please?",
@@ -2291,7 +2371,8 @@
         "Can",
         "Must"
        ],
-       "whyUz": "KALIT — 'PLEASE':\nBu ILTIMOS, majburiyat emas → CAN.\n\n'Must I have a glass of water?' =\n'suv ichishim SHARTMI?' — ma'nosiz savol.\n\nRasmiyroq shakl: 'MAY I ...?' yoki\n'COULD I ...?'"
+       "whyUz": "KALIT — 'PLEASE':\nBu ILTIMOS, majburiyat emas → CAN.\n\n'Must I have a glass of water?' =\n'suv ichishim SHARTMI?' — ma'nosiz savol.\n\nRasmiyroq shakl: 'MAY I ...?' yoki\n'COULD I ...?'",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "6  You should/mustn't keep your room tidy.",
@@ -2301,7 +2382,8 @@
         "should",
         "mustn't"
        ],
-       "whyUz": "Xonani ozoda tutish — IJOBIY ish → SHOULD.\n\n'mustn't' bo'lsa ma'no TESKARI:\n'xonangizni ozoda tutmasligingiz kerak' —\nkulgili.\n\nDIQQAT — 1-BAND BILAN SOLISHTIRING:\n  1  'You MUST be quiet' — QOIDA (majburiy)\n  6  'You SHOULD keep tidy' — MASLAHAT (yumshoq)\n\n'tidy' = ozoda, tartibli."
+       "whyUz": "Xonani ozoda tutish — IJOBIY ish → SHOULD.\n\n'mustn't' bo'lsa ma'no TESKARI:\n'xonangizni ozoda tutmasligingiz kerak' —\nkulgili.\n\nDIQQAT — 1-BAND BILAN SOLISHTIRING:\n  1  'You MUST be quiet' — QOIDA (majburiy)\n  6  'You SHOULD keep tidy' — MASLAHAT (yumshoq)\n\n'tidy' = ozoda, tartibli.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "7  You must/shouldn't buy pre-packaged food.",
@@ -2311,7 +2393,8 @@
         "shouldn't",
         "must"
        ],
-       "whyUz": "O'ralgan ovqat ko'p CHIQINDI hosil qiladi\n— SALBIY → SHOULDN'T.\n\nCoursebook 99-betdagi varaqa:\n'TRY NOT TO buy pre-packaged food.\nThe packaging creates a lot of rubbish.'\n\n'must buy' bo'lsa 'sotib olishingiz shart'\ndegan teskari ma'no chiqadi."
+       "whyUz": "O'ralgan ovqat ko'p CHIQINDI hosil qiladi\n— SALBIY → SHOULDN'T.\n\nCoursebook 99-betdagi varaqa:\n'TRY NOT TO buy pre-packaged food.\nThe packaging creates a lot of rubbish.'\n\n'must buy' bo'lsa 'sotib olishingiz shart'\ndegan teskari ma'no chiqadi.",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "8  You can/mustn't fight in class.",
@@ -2321,7 +2404,8 @@
         "mustn't",
         "can"
        ],
-       "whyUz": "Urishish — TAQIQLANGAN → MUSTN'T.\n\n'can fight' bo'lsa 'urishishingiz MUMKIN'\ndegan ma'no chiqadi — maktab qoidasiga zid.\n\nCoursebook 102-bet, 13a-mashq, 6-o'quvchi:\n'You mustn't fight in class.'\n\n'to fight' → FOUGHT (noto'g'ri fe'l)."
+       "whyUz": "Urishish — TAQIQLANGAN → MUSTN'T.\n\n'can fight' bo'lsa 'urishishingiz MUMKIN'\ndegan ma'no chiqadi — maktab qoidasiga zid.\n\nCoursebook 102-bet, 13a-mashq, 6-o'quvchi:\n'You mustn't fight in class.'\n\n'to fight' → FOUGHT (noto'g'ri fe'l).",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "9  A: I'm tired.  B: You should/mustn't go to bed early.",
@@ -2331,7 +2415,8 @@
         "should",
         "mustn't"
        ],
-       "whyUz": "KALIT — 'I'M TIRED':\nCharchagan odamga YORDAM kerak, demak\nIJOBIY maslahat → SHOULD.\n\n'mustn't go to bed early' = 'erta yotish\ntaqiqlangan' — charchagan odamga aytiladigan\ngap emas.\n\nCoursebook 101-bet, 9b va 10-mashq:\n'I feel very tired.' → 'You should get some\nsleep.'"
+       "whyUz": "KALIT — 'I'M TIRED':\nCharchagan odamga YORDAM kerak, demak\nIJOBIY maslahat → SHOULD.\n\n'mustn't go to bed early' = 'erta yotish\ntaqiqlangan' — charchagan odamga aytiladigan\ngap emas.\n\nCoursebook 101-bet, 9b va 10-mashq:\n'I feel very tired.' → 'You should get some\nsleep.'",
+       "speakAnswer": "should"
       },
       {
        "prompt": "10  A: Can I go to the cinema?  B: No, you shouldn't/can't.",
@@ -2341,7 +2426,8 @@
         "can't",
         "shouldn't"
        ],
-       "whyUz": "OLTIN QOIDA — QISQA JAVOB SAVOLDAGI MODALNI\nTAKRORLAYDI:\n\n  'CAN I go ...?'  →  'No, you CAN'T.'\n  'SHOULD I go ...?' → 'No, you SHOULDN'T.'\n\nSavol 'CAN' bilan boshlangan, demak javob ham\n'CAN'T' bo'ladi.\n\nCoursebook 101-bet, 12-mashq namunasi:\n'Can I play loud music?' — 'No, you can't.'"
+       "whyUz": "OLTIN QOIDA — QISQA JAVOB SAVOLDAGI MODALNI\nTAKRORLAYDI:\n\n  'CAN I go ...?'  →  'No, you CAN'T.'\n  'SHOULD I go ...?' → 'No, you SHOULDN'T.'\n\nSavol 'CAN' bilan boshlangan, demak javob ham\n'CAN'T' bo'ladi.\n\nCoursebook 101-bet, 12-mashq namunasi:\n'Can I play loud music?' — 'No, you can't.'",
+       "speakAnswer": "can't"
       }
      ]
     }
@@ -2377,7 +2463,8 @@
         "mustn't"
        ],
        "whyUz": "KALIT: 'RULES' (qoidalar).\nQoidaga amal qilish — MAJBURIYAT → MUST.\n\nGrammar 60-bet: 'We use must b) FOR RULES'.",
-       "speak": "1  Teacher: ... there are some rules we ................ follow."
+       "speak": "1  Teacher: ... there are some rules we ................ follow.",
+       "speakAnswer": "must"
       },
       {
        "prompt": "2  First, you .................... feed the animals.",
@@ -2390,7 +2477,8 @@
         "must"
        ],
        "whyUz": "Hayvonot bog'ida hayvonlarni ovqatlantirish\nTAQIQLANGAN (ular kasal bo'lishi mumkin)\n→ MUSTN'T.\n\n'must feed' bo'lsa 'ovqatlantirishingiz SHART'\ndegan teskari ma'no chiqadi.",
-       "speak": "2  First, you .................... feed the animals."
+       "speak": "2  First, you .................... feed the animals.",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "3  Student: .................... we touch the animals?",
@@ -2403,7 +2491,8 @@
         "mustn't"
        ],
        "whyUz": "O'quvchi RUXSAT so'rayapti → CAN ...?\n\n'Must we touch the animals?' =\n'hayvonlarga tegishimiz SHARTMI?' — ma'nosiz.\n\nMashqda o'quvchi UCH marta savol beradi\n(3, 5, 9) va uchalasi ham 'CAN'.",
-       "speak": "3  Student: .................... we touch the animals?"
+       "speak": "3  Student: .................... we touch the animals?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "4  Teacher: No, you ....................! You are not allowed to touch the animals because it's dangerous.",
@@ -2416,7 +2505,8 @@
         "mustn't"
        ],
        "whyUz": "IKKI KALIT:\n\n1) QISQA JAVOB savoldagi modalni TAKRORLAYDI:\n   'CAN we touch?' → 'No, you CAN'T.'\n\n2) Matnning o'zi aytadi: 'You are NOT ALLOWED\n   to touch' — bu aynan 'can't' ning ta'rifi\n   (Grammar 60-bet: 'can't = you AREN'T\n   ALLOWED to').\n\nShuning uchun 'mustn't' emas, CAN'T.",
-       "speak": "4  Teacher: No, you ....................! You are not allowed to touch the animals because it's dangerous."
+       "speak": "4  Teacher: No, you ....................! You are not allowed to touch the animals because it's dangerous.",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "5  Student: .................... we take pictures of the animals?",
@@ -2429,7 +2519,8 @@
         "mustn't"
        ],
        "whyUz": "Yana RUXSAT savoli → CAN.\n\n'to take pictures OF something' — predlog 'of'.\n('take pictures FOR' XATO)",
-       "speak": "5  Student: .................... we take pictures of the animals?"
+       "speak": "5  Student: .................... we take pictures of the animals?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "6  Teacher: Yes, you .................... .",
@@ -2442,7 +2533,8 @@
         "mustn't"
        ],
        "whyUz": "QISQA JAVOB savoldagi modalni takrorlaydi:\n'CAN we take pictures?' → 'Yes, you CAN.'\n\nQisqa javobda fe'l takrorlanmaydi.",
-       "speak": "6  Teacher: Yes, you .................... ."
+       "speak": "6  Teacher: Yes, you .................... .",
+       "speakAnswer": "can"
       },
       {
        "prompt": "7  You .................... take pictures but you ...",
@@ -2455,7 +2547,8 @@
         "mustn't"
        ],
        "whyUz": "O'qituvchi hozirgina 'Yes, you can' dedi —\ndemak RUXSAT bor → CAN.\n\nBu — 6-bandning to'liq gap shakli.",
-       "speak": "7  You .................... take pictures but you ..."
+       "speak": "7  You .................... take pictures but you ...",
+       "speakAnswer": "can"
       },
       {
        "prompt": "8  ... but you .................... bother them.",
@@ -2468,7 +2561,8 @@
         "must"
        ],
        "whyUz": "KALIT: 'BUT' — qarama-qarshilik.\nRuxsat BOR, lekin chegara ham bor.\n\nHayvonlarni bezovta qilish TAQIQLANGAN\n→ MUSTN'T.\n\n'to bother' = bezovta qilmoq.",
-       "speak": "8  ... but you .................... bother them."
+       "speak": "8  ... but you .................... bother them.",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "9  Student: .................... we go anywhere we want?",
@@ -2481,7 +2575,8 @@
         "mustn't"
        ],
        "whyUz": "O'quvchining UCHINCHI savoli — yana RUXSAT\n→ CAN.\n\n'anywhere (that) we want' = xohlagan joyimizga.\nCoursebook 100-bet, Yaponiya matni:\n'don't sit ANYWHERE YOU LIKE'.",
-       "speak": "9  Student: .................... we go anywhere we want?"
+       "speak": "9  Student: .................... we go anywhere we want?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "10  Teacher: No! Everyone .................... stay close to me.",
@@ -2494,7 +2589,8 @@
         "mustn't"
        ],
        "whyUz": "KALIT: 'NO!' undov bilan boshlangan — bu\nQAT'IY qoida → MUST.\n\n'EVERYONE' — III shaxs BIRLIK, lekin 'must'\nbaribir o'zgarmaydi ('everyone musts' XATO).\n\n'close TO me' — predlog 'to'\n(9-mashqning 7-bandi ham shu haqda).",
-       "speak": "10  Teacher: No! Everyone .................... stay close to me."
+       "speak": "10  Teacher: No! Everyone .................... stay close to me.",
+       "speakAnswer": "must"
       }
      ]
     },
@@ -2520,7 +2616,8 @@
         "I don't think it's a good idea"
        ],
        "whyUz": "GRAMMATIK KALIT: keyin 'TO MOVE' keladi —\nya'ni 'TO + fe'l'.\nBu qurilmani faqat 'it's a good idea TO ...'\ntalab qiladi.\n\nMA'NO KALITI: Tresi Rimga ko'chishni\nQO'LLAB-QUVVATLAYDI ('I'm happy to hear that\nyou are moving to Rome') → IJOBIY shakl.",
-       "speak": "1  ....................................... to move to Rome,"
+       "speak": "1  ....................................... to move to Rome,",
+       "speakAnswer": "I think it's a good idea"
       },
       {
        "prompt": "2  but ....................................... to stay at a hotel because hotels are very expensive in Rome.",
@@ -2533,7 +2630,8 @@
         "Why don't you"
        ],
        "whyUz": "GRAMMATIK KALIT: keyin 'TO STAY' —\nyana 'TO + fe'l'.\n\nIKKI MA'NO KALITI:\n  1) 'BUT' — qarama-qarshilik\n  2) 'hotels are very EXPENSIVE' — salbiy sabab\n\nDemak SALBIY shakl → I DON'T THINK ...\n\nDIQQAT: inkor BOSH gapga qo'yiladi\n('I DON'T think', 'I think it ISN'T' emas).",
-       "speak": "2  but ....................................... to stay at a hotel because hotels are very expensive in Rome."
+       "speak": "2  but ....................................... to stay at a hotel because hotels are very expensive in Rome.",
+       "speakAnswer": "I don't think it's a good idea"
       },
       {
        "prompt": "3  Maybe ....................................... wait a little while and go when you find a flat.",
@@ -2546,7 +2644,8 @@
         "I don't think it's a good idea"
        ],
        "whyUz": "GRAMMATIK KALIT: keyin 'WAIT' keladi —\n'TO' SIZ asosiy fe'l!\n\nBu qurilmani faqat 'you SHOULD + fe'l'\ntalab qiladi.\n  'you should WAIT'                    ✓\n  'it's a good idea WAIT'              ✗\n   (bu yerda 'TO wait' kerak bo'lardi)\n\n'a little while' = biroz vaqt.",
-       "speak": "3  Maybe ....................................... wait a little while and go when you find a flat."
+       "speak": "3  Maybe ....................................... wait a little while and go when you find a flat.",
+       "speakAnswer": "you should"
       },
       {
        "prompt": "4  ....................................... ask your friends there to look for a flat for you?",
@@ -2559,7 +2658,8 @@
         "I don't think it's a good idea"
        ],
        "whyUz": "ENG ANIQ KALIT: gap SAVOL BELGISI (?) bilan\ntugaydi!\n\nRo'yxatdagi to'rt iboradan faqat BITTASI\nsavol shaklida: 'Why don't you ...?'\n\nYana: keyin 'ASK' — 'to' siz asosiy fe'l\n('Why don't you + ASOSIY fe'l?').\n\n'to look FOR' = qidirmoq (predlog 'for').",
-       "speak": "4  ....................................... ask your friends there to look for a flat for you?"
+       "speak": "4  ....................................... ask your friends there to look for a flat for you?",
+       "speakAnswer": "Why don't you"
       }
      ]
     },
@@ -2585,7 +2685,8 @@
         "could"
        ],
        "whyUz": "VAQT KALITI: 'when he WAS two' — O'TGAN zamon\n('was' fe'li).\n\nMA'NO KALITI: ikki yoshli bola kompyuterdan\nfoydalana olmaydi → INKOR.\n\n→ COULDN'T",
-       "speak": "1a  Michael .................. use a computer when he was two ..."
+       "speak": "1a  Michael .................. use a computer when he was two ...",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "1b  ... but he ................ now.",
@@ -2598,7 +2699,8 @@
         "couldn't"
        ],
        "whyUz": "VAQT KALITI: 'NOW' — HOZIRGI zamon.\n\n'BUT' — qarama-qarshilik: avval bilmasdi,\nendi biladi → TASDIQ.\n\n→ CAN\n\nQisqa javobda fe'l takrorlanmaydi:\n'he can' ('he can use a computer' o'rniga).",
-       "speak": "1b  ... but he ................ now."
+       "speak": "1b  ... but he ................ now.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "2  Sally is from Paris. She ................ speak French.",
@@ -2611,7 +2713,8 @@
         "couldn't"
        ],
        "whyUz": "VAQT KALITI: 'She IS from Paris' — HOZIRGI\nzamon.\n\nMA'NO KALITI: Parij — Fransiyaning poytaxti,\ndemak fransuzcha biladi → QOBILIYAT bor.\n\n→ CAN\n\n'speak French' — til nomi oldida artikl YO'Q.",
-       "speak": "2  Sally is from Paris. She ................ speak French."
+       "speak": "2  Sally is from Paris. She ................ speak French.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "3  ................ you play football when you were five?",
@@ -2624,7 +2727,8 @@
         "couldn't"
        ],
        "whyUz": "VAQT KALITI: 'when you WERE five' — O'TGAN\nzamon ('were').\n\nSHAKL: bu SAVOL — modal egadan OLDIN turadi.\n\n→ COULD\n\n'Did you could play?' — XATO ('do' kerak emas).",
-       "speak": "3  ................ you play football when you were five?"
+       "speak": "3  ................ you play football when you were five?",
+       "speakAnswer": "could"
       },
       {
        "prompt": "4  I ..................... go to the cinema. I must study for a test.",
@@ -2637,7 +2741,8 @@
         "couldn't"
        ],
        "whyUz": "VAQT KALITI: 'I MUST study' — HOZIRGI\nmajburiyat.\n\nMA'NO KALITI: o'qishi kerak, demak kinoga\nbora OLMAYDI → INKOR.\n\n→ CAN'T\n\nDIQQAT: bu QOBILIYAT emas, VAZIYAT (imkoni\nyo'q).\n'study FOR a test' — predlog 'for'.",
-       "speak": "4  I ..................... go to the cinema. I must study for a test."
+       "speak": "4  I ..................... go to the cinema. I must study for a test.",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "5  Paul is a chef. He .................. make many delicious dishes.",
@@ -2650,7 +2755,8 @@
         "couldn't"
        ],
        "whyUz": "VAQT KALITI: 'Paul IS a chef' — HOZIRGI zamon.\n\nMA'NO KALITI: oshpaz bo'lsa, taom tayyorlashni\nBILADI → QOBILIYAT.\n\n→ CAN\n\n'a chef' = professional oshpaz\n('a cook' — umumiy).\n'many dishES' — sanaladigan, shuning uchun\n'many'.",
-       "speak": "5  Paul is a chef. He .................. make many delicious dishes."
+       "speak": "5  Paul is a chef. He .................. make many delicious dishes.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "6  I lost my keys and I .......................... find them anywhere.",
@@ -2663,7 +2769,8 @@
         "could"
        ],
        "whyUz": "VAQT KALITI: 'I LOST my keys' — O'TGAN zamon\n(lose → LOST).\n\nBir gapdagi ikki fe'l odatda BIR zamonda\nbo'ladi → COULDN'T.\n\nMA'NO: yo'qotdi va topa olmadi → INKOR.\n\nDIQQAT — 'ANYWHERE' INKORDA:\n'couldn't find them ANYWHERE' = HECH QAYERDAN\ntopa olmadim.\n(Tasdiq gapda 'anywhere' = istalgan joyda.)",
-       "speak": "6  I lost my keys and I .......................... find them anywhere."
+       "speak": "6  I lost my keys and I .......................... find them anywhere.",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "7a  I ........................ count when I was three ...",
@@ -2676,7 +2783,8 @@
         "could"
        ],
        "whyUz": "VAQT KALITI: 'when I WAS three' — O'TGAN zamon.\n\nMA'NO: uch yoshli bola sanay olmaydi → INKOR.\n\n→ COULDN'T\n\n1-band bilan AYNAN bir xil tuzilish.",
-       "speak": "7a  I ........................ count when I was three ..."
+       "speak": "7a  I ........................ count when I was three ...",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "7b  ... but I .............. now.",
@@ -2689,7 +2797,8 @@
         "couldn't"
        ],
        "whyUz": "VAQT KALITI: 'NOW' — HOZIRGI zamon.\n'BUT' — qarama-qarshilik → TASDIQ.\n\n→ CAN\n\n1b-band bilan bir xil.",
-       "speak": "7b  ... but I .............. now."
+       "speak": "7b  ... but I .............. now.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "8  .............. you ride a bicycle when you were four?",
@@ -2702,7 +2811,8 @@
         "couldn't"
        ],
        "whyUz": "VAQT KALITI: 'when you WERE four' — O'TGAN\nzamon.\n\nSHAKL: SAVOL — modal egadan OLDIN.\n\n→ COULD\n\n3-band bilan bir xil.\n'to RIDE a bicycle' (Grammar 61-bet, D belgisi).",
-       "speak": "8  .............. you ride a bicycle when you were four?"
+       "speak": "8  .............. you ride a bicycle when you were four?",
+       "speakAnswer": "could"
       }
      ]
     },
@@ -2726,7 +2836,8 @@
         "must"
        ],
        "whyUz": "SABAB KALITI: 'IT'S COLD' — sovuq.\nKurtkasiz chiqish — SHAMOLLASH xavfi → MUSTN'T.\n\n'must leave without your jacket' bo'lsa\n'kurtkasiz chiqishingiz SHART' degan teskari\nma'no chiqadi.\n\n'without + OT' — predlog.",
-       "speak": "1  It's cold. You .............. leave without your jacket."
+       "speak": "1  It's cold. You .............. leave without your jacket.",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "2  You ......................... eat fruit and vegetables to stay healthy.",
@@ -2737,7 +2848,8 @@
         "mustn't"
        ],
        "whyUz": "MAQSAD KALITI: 'TO STAY HEALTHY' — sog'lom\nbo'lish uchun.\nMaqsad IJOBIY → MUST.\n\nCoursebook 98-bet, 1-mashq (c-band):\n'Eat lots of fruit and vegetables.' (health)\n\n'TO stay' — MAQSAD to-infinitive.",
-       "speak": "2  You ......................... eat fruit and vegetables to stay healthy."
+       "speak": "2  You ......................... eat fruit and vegetables to stay healthy.",
+       "speakAnswer": "must"
       },
       {
        "prompt": "3  I ......................... go to the post office. I have a letter to send.",
@@ -2748,7 +2860,8 @@
         "mustn't"
        ],
        "whyUz": "SABAB KALITI: 'I HAVE A LETTER TO SEND' —\nyuboradigan xat bor, demak borish ZARUR → MUST.\n\n'a letter TO SEND' — 'ot + TO + fe'l' qurilmasi\n(yuboradigan xat).\n\nDIQQAT: bu bandda ega 'I' — o'zi o'ziga\nmajburiyat qo'yyapti (ichki zarurat).",
-       "speak": "3  I ......................... go to the post office. I have a letter to send."
+       "speak": "3  I ......................... go to the post office. I have a letter to send.",
+       "speakAnswer": "must"
       },
       {
        "prompt": "4  You .................... speak rudely to your parents.",
@@ -2759,7 +2872,8 @@
         "must"
        ],
        "whyUz": "MA'NO KALITI: 'RUDELY' (qo'pol tarzda) —\nqo'pollik hech qachon IJOBIY bo'lmaydi\n→ MUSTN'T.\n\n'speak RUDELY' — RAVISH (fe'lni izohlaydi).\n'be RUDE' — SIFAT.\n\nCoursebook 100-bet, Xitoy matni:\n'it's very RUDE'.",
-       "speak": "4  You .................... speak rudely to your parents."
+       "speak": "4  You .................... speak rudely to your parents.",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "5  You .................... park here — it's illegal.",
@@ -2769,7 +2883,8 @@
         "mustn't",
         "must"
        ],
-       "whyUz": "SABAB KALITI: 'IT'S ILLEGAL' (qonunga xilof)\n— QONUNIY taqiq → MUSTN'T.\n\nGrammar 60-bet ta'rifi:\n'mustn't means it is FORBIDDEN ... it is\nAGAINST THE RULE'.\n\nCoursebook 102-bet, 16e-dialog AYNAN shu:\n'You mustn't park here — it's illegal.'"
+       "whyUz": "SABAB KALITI: 'IT'S ILLEGAL' (qonunga xilof)\n— QONUNIY taqiq → MUSTN'T.\n\nGrammar 60-bet ta'rifi:\n'mustn't means it is FORBIDDEN ... it is\nAGAINST THE RULE'.\n\nCoursebook 102-bet, 16e-dialog AYNAN shu:\n'You mustn't park here — it's illegal.'",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "6  We .................... hurry or we'll miss the bus.",
@@ -2780,7 +2895,8 @@
         "mustn't"
        ],
        "whyUz": "MANTIQ KALITI: 'OR WE'LL MISS THE BUS' —\naks holda avtobusdan qolamiz.\nDemak shoshilish ZARUR → MUST.\n\n'OR' bu yerda = 'aks holda'.\nTuzilishi: [must + fe'l] + OR + [will bilan\nnatija].\n\nCoursebook 100-bet, Angliya matni:\n'Never push into a queue OR they'll get angry.'",
-       "speak": "6  We .................... hurry or we'll miss the bus."
+       "speak": "6  We .................... hurry or we'll miss the bus.",
+       "speakAnswer": "must"
       }
      ]
     }
@@ -2814,7 +2930,8 @@
         "shouldn't"
        ],
        "whyUz": "KALIT: 'a PROBLEM with his eyes' — muammo bor,\ndemak YORDAM kerak → SHOULD.\n\nCoursebook 102-bet, 16a-dialog AYNAN shu:\n'I can't see that sign very well.'\n'You SHOULD see an optician.'\n\n'to SEE an optician' = qabuliga bormoq.",
-       "speak": "1  Kevin has a problem with his eyes. He ................ see an optician."
+       "speak": "1  Kevin has a problem with his eyes. He ................ see an optician.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "2  People ........................... drop litter in the streets.",
@@ -2825,7 +2942,8 @@
         "should"
        ],
        "whyUz": "Ko'chaga axlat tashlash — ZARARLI → SHOULDN'T.\n\nCoursebook 99-bet, varaqa:\n'Do not DROP rubbish in the street.\nIt looks and smells horrible.'\n\nGrammar 60-bet: 'You shouldn't drop rubbish\nin the street.'",
-       "speak": "2  People ........................... drop litter in the streets."
+       "speak": "2  People ........................... drop litter in the streets.",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "3  It's cold outside. You ......................... put on a heavy jacket.",
@@ -2836,7 +2954,8 @@
         "shouldn't"
        ],
        "whyUz": "KALIT: 'IT'S COLD outside' — sovuqda qalin\nkiyim FOYDALI → SHOULD.\n\n'PUT ON' — ajraladigan fe'l:\n  put on a jacket = put a jacket on ✓\n  put IT on ✓ / put on IT ✗\n\nCoursebook 101-bet, 9b: 'Put a jumper on.'\n'heavy' bu yerda = qalin (kiyim haqida).",
-       "speak": "3  It's cold outside. You ......................... put on a heavy jacket."
+       "speak": "3  It's cold outside. You ......................... put on a heavy jacket.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "4  You ..................... look both ways before crossing the street.",
@@ -2847,7 +2966,8 @@
         "shouldn't"
        ],
        "whyUz": "Ko'chadan o'tishdan oldin qarash —\nXAVFSIZLIK chorasi, FOYDALI → SHOULD.\n\n'both ways' = ikki tomonga (chap va o'ng).\n\n'before CROSSING' — predlogdan keyin -ING\n(Coursebook 100-bet: 'before smoking').",
-       "speak": "4  You ..................... look both ways before crossing the street."
+       "speak": "4  You ..................... look both ways before crossing the street.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "5  You ......................... swim after eating a big meal.",
@@ -2858,7 +2978,8 @@
         "should"
        ],
        "whyUz": "To'la oshqozon bilan suzish — XAVFLI\n→ SHOULDN'T.\n\nCoursebook 103-bet, 17b-mashq:\n'Never swim after eating.'\n'It is dangerous to swim with a full stomach.'\n\n'after EATING' — predlogdan keyin -ING.\n'a meal' = bir mahal ovqat.",
-       "speak": "5  You ......................... swim after eating a big meal."
+       "speak": "5  You ......................... swim after eating a big meal.",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "6  Michael ......................... join a gym to lose weight.",
@@ -2869,7 +2990,8 @@
         "shouldn't"
        ],
        "whyUz": "KALIT: 'TO LOSE WEIGHT' — maqsad IJOBIY\n(sog'liq uchun) → SHOULD.\n\nDIQQAT: ega 'MICHAEL' (III shaxs birlik)\nbo'lsa ham 'should' O'ZGARMAYDI.\n\n'to JOIN a gym' = sport zaliga yozilmoq.\n'to LOSE weight' = vazn tashlamoq\n(teskarisi: 'to PUT ON weight' = semirmoq).",
-       "speak": "6  Michael ......................... join a gym to lose weight."
+       "speak": "6  Michael ......................... join a gym to lose weight.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "7  When you are on a bus you ......................... give your seat to older people.",
@@ -2880,7 +3002,8 @@
         "shouldn't"
        ],
        "whyUz": "Keksalarga o'rin berish — ODOBLI, FOYDALI ish\n→ SHOULD.\n\n'give something TO somebody' — predlog 'to'.\n'ON a bus' — avtobusda (predlog 'on').\n'older people' = keksalar ('old people' dan\nodobliroq).",
-       "speak": "7  When you are on a bus you ......................... give your seat to older people."
+       "speak": "7  When you are on a bus you ......................... give your seat to older people.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "8  Children ......................... talk to strangers.",
@@ -2891,7 +3014,8 @@
         "should"
        ],
        "whyUz": "Notanish odamlar bilan gaplashish — bolalar\nuchun XAVFLI → SHOULDN'T.\n\n'talk TO somebody' — predlog 'to'.\n'a stranger' = notanish odam\n(strange = g'alati, notanish).\n\nCoursebook 100-bet, Xitoy matni:\n'don't tell jokes to people you don't know\nvery well'.",
-       "speak": "8  Children ......................... talk to strangers."
+       "speak": "8  Children ......................... talk to strangers.",
+       "speakAnswer": "shouldn't"
       }
      ]
     },
@@ -3021,7 +3145,8 @@
         "I don't think it's a good idea"
        ],
        "whyUz": "GRAMMATIK KALIT: keyin 'TO OPEN' — 'TO + fe'l'.\nBuni faqat 'it's a good idea TO ...' talab\nqiladi.\n\nMA'NO KALITI: Erik do'kon ochishni QO'LLAB-\nQUVVATLAYDI ('I'm PLEASED to hear that you\nwant to open your own shop') → IJOBIY.\n\n'a place OF YOUR OWN' = o'zingizniki.",
-       "speak": "1  ....................................... to open a place of your own"
+       "speak": "1  ....................................... to open a place of your own",
+       "speakAnswer": "I think it's a good idea"
       },
       {
        "prompt": "2  but ....................................... to borrow money from your friend",
@@ -3034,7 +3159,8 @@
         "Why don't you"
        ],
        "whyUz": "GRAMMATIK KALIT: keyin 'TO BORROW' —\nyana 'TO + fe'l'.\n\nIKKI MA'NO KALITI:\n  1) 'BUT' — qarama-qarshilik\n  2) sabab salbiy: 'that can become a PROBLEM'\n\n→ SALBIY shakl.\n\nDIQQAT: inkor BOSH gapga qo'yiladi\n('I DON'T think').\n\n'to BORROW' = qarz OLMOQ;\n'to LEND' = qarz BERMOQ (teskarisi).",
-       "speak": "2  but ....................................... to borrow money from your friend"
+       "speak": "2  but ....................................... to borrow money from your friend",
+       "speakAnswer": "I don't think it's a good idea"
       },
       {
        "prompt": "3  Perhaps ....................................... wait a little while",
@@ -3047,7 +3173,8 @@
         "I don't think it's a good idea"
        ],
        "whyUz": "GRAMMATIK KALIT: keyin 'WAIT' — 'TO' SIZ\nasosiy fe'l!\n\nBuni faqat 'you SHOULD + fe'l' talab qiladi:\n  'you should WAIT'          ✓\n  'it's a good idea WAIT'    ✗\n   (bu yerda 'TO wait' kerak bo'lardi)\n\n'perhaps' = balki (maslahatni yumshatadi).\n'a little while' = biroz vaqt.",
-       "speak": "3  Perhaps ....................................... wait a little while"
+       "speak": "3  Perhaps ....................................... wait a little while",
+       "speakAnswer": "you should"
       },
       {
        "prompt": "4  ....................................... ask the bank for a loan?",
@@ -3060,7 +3187,8 @@
         "I don't think it's a good idea"
        ],
        "whyUz": "ENG ANIQ KALIT: gap SAVOL BELGISI (?) bilan\ntugaydi!\n\nRo'yxatdagi yagona savol shakli:\n'Why don't you ...?'\n\nYana: keyin 'ASK' — 'to' siz asosiy fe'l.\n\n'to ask somebody FOR something' = so'ramoq.\n'a loan' = qarz, kredit.",
-       "speak": "4  ....................................... ask the bank for a loan?"
+       "speak": "4  ....................................... ask the bank for a loan?",
+       "speakAnswer": "Why don't you"
       }
      ]
     },
@@ -3133,7 +3261,8 @@
         "can't"
        ],
        "whyUz": "Bu — o'qituvchining QAT'IY qoidasi → MUST.\n\nGrammar 62-bet, hayvonot bog'i dialogi ham\nshu gap bilan tugagan:\n'Everyone MUST stay close to me.'\n\nDIQQAT: 'MUST ALWAYS stay' — ravish modal\nbilan asosiy fe'l ORASIDA.",
-       "speak": "1  Teacher: First you ........................... always stay close to me."
+       "speak": "1  Teacher: First you ........................... always stay close to me.",
+       "speakAnswer": "must"
       },
       {
        "prompt": "2  S1: ........................... we bring our cameras?",
@@ -3146,7 +3275,8 @@
         "can't"
        ],
        "whyUz": "O'quvchi RUXSAT so'rayapti → CAN ...?\n\n'Must we bring our cameras?' =\n'olib kelishimiz SHARTMI?' — ma'nosiz.\n\nDialogda o'quvchilar UCH marta savol beradi\n(2, 5, 8) va uchalasi ham 'CAN'.",
-       "speak": "2  S1: ........................... we bring our cameras?"
+       "speak": "2  S1: ........................... we bring our cameras?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "3  Teacher: No, you ................... !",
@@ -3159,7 +3289,8 @@
         "can"
        ],
        "whyUz": "QISQA JAVOB savoldagi modalni TAKRORLAYDI:\n  'CAN we bring?' → 'No, you CAN'T.'\n\n'No, you mustn't' — grammatik jihatdan\nmumkin, lekin qisqa javob qoidasiga ko'ra\n'can't' to'g'ri.",
-       "speak": "3  Teacher: No, you ................... !"
+       "speak": "3  Teacher: No, you ................... !",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "4  You ..................... take any pictures.",
@@ -3172,7 +3303,8 @@
         "can't"
        ],
        "whyUz": "Bu — MUZEYNING TAQIQI → MUSTN'T.\n\nOldingi 'can't' savolga javob edi; bu esa\nTAQIQNI kuchaytiradi.\n(CB 102-bet, 16e: 'No, you can't. You MUSTN'T\npark here.' — bir xil naqsh.)\n\nWorkbook 57-bet, F belgisi:\n'Don't take pictures.'\n\n'ANY' — inkor gapda ('some' emas).",
-       "speak": "4  You ..................... take any pictures."
+       "speak": "4  You ..................... take any pictures.",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "5  S2: ................... we bring our lunch with us?",
@@ -3185,7 +3317,8 @@
         "can't"
        ],
        "whyUz": "Yana RUXSAT savoli → CAN.\n2-band bilan bir xil.",
-       "speak": "5  S2: ................... we bring our lunch with us?"
+       "speak": "5  S2: ................... we bring our lunch with us?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "6  Teacher: No, you ............... !",
@@ -3198,7 +3331,8 @@
         "can"
        ],
        "whyUz": "QISQA JAVOB savoldagi modalni takrorlaydi:\n'CAN we bring?' → 'No, you CAN'T.'\n3-band bilan bir xil.",
-       "speak": "6  Teacher: No, you ............... !"
+       "speak": "6  Teacher: No, you ............... !",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "7  You ....................... eat in the museum.",
@@ -3211,7 +3345,8 @@
         "can't"
        ],
        "whyUz": "Muzeyda ovqat yeyish TAQIQLANGAN → MUSTN'T\n(eksponatlarga zarar yetishi mumkin).\n\n4-band bilan bir xil naqsh:\n'No, you CAN'T! You MUSTN'T ...'",
-       "speak": "7  You ....................... eat in the museum."
+       "speak": "7  You ....................... eat in the museum.",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "8  S3: Where ........................................ we eat?",
@@ -3224,7 +3359,8 @@
         "can't"
        ],
        "whyUz": "'WHERE' bilan savol — IMKONIYAT so'ralyapti\n→ CAN.\n\n'Where MUST we eat?' = 'qayerda yeyishimiz\nSHART?' — g'alati.\n\nSavol so'zi + modal + ega + fe'l:\n'Where CAN we eat?'",
-       "speak": "8  S3: Where ........................................ we eat?"
+       "speak": "8  S3: Where ........................................ we eat?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "9  Teacher: You ........................ eat in the restaurant which is next to the museum.",
@@ -3237,7 +3373,8 @@
         "can't"
        ],
        "whyUz": "O'qituvchi RUXSAT beryapti → CAN.\n\nSavol 'Where CAN we eat?' edi, javob ham\n'CAN' bilan.\n\n'WHICH IS NEXT TO the museum' — ergash gap\n('which' narsalar uchun; 'next to' = yonida).",
-       "speak": "9  Teacher: You ........................ eat in the restaurant which is next to the museum."
+       "speak": "9  Teacher: You ........................ eat in the restaurant which is next to the museum.",
+       "speakAnswer": "can"
       }
      ]
     },
@@ -3260,7 +3397,8 @@
         "should",
         "shouldn't"
        ],
-       "whyUz": "Xavfsizlik kamari — hayot saqlaydi, IJOBIY\nmaslahat → SHOULD.\n\n'shouldn't wear a seatbelt' = xavfli maslahat\nbo'lardi.\n\nDIQQAT — 'ALWAYS' QAYERDA:\n'should ALWAYS wear' ✓\n(ravish modal bilan asosiy fe'l ORASIDA)."
+       "whyUz": "Xavfsizlik kamari — hayot saqlaydi, IJOBIY\nmaslahat → SHOULD.\n\n'shouldn't wear a seatbelt' = xavfli maslahat\nbo'lardi.\n\nDIQQAT — 'ALWAYS' QAYERDA:\n'should ALWAYS wear' ✓\n(ravish modal bilan asosiy fe'l ORASIDA).",
+       "speakAnswer": "should"
       },
       {
        "prompt": "2  Should/Can I have a glass of water, please?",
@@ -3270,7 +3408,8 @@
         "Can",
         "Should"
        ],
-       "whyUz": "KALIT: 'PLEASE' — bu ILTIMOS, ruxsat so'rash\n→ CAN.\n\n'Should I have a glass of water?' =\n'suv ichishim KERAKMI?' — maslahat so'rash,\nboshqa ma'no.\n\nDIQQAT: bu gap Grammar 61 va 63-betlarda ham\nbor edi — kitob UCH marta takrorlagan."
+       "whyUz": "KALIT: 'PLEASE' — bu ILTIMOS, ruxsat so'rash\n→ CAN.\n\n'Should I have a glass of water?' =\n'suv ichishim KERAKMI?' — maslahat so'rash,\nboshqa ma'no.\n\nDIQQAT: bu gap Grammar 61 va 63-betlarda ham\nbor edi — kitob UCH marta takrorlagan.",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "3  Harvey can't/should take singing lessons because he has a fantastic voice.",
@@ -3280,7 +3419,8 @@
         "should",
         "can't"
        ],
-       "whyUz": "KALIT — SABAB GAPI:\n'because he has a FANTASTIC VOICE'\nSabab IJOBIY, demak maslahat ham ijobiy\n→ SHOULD.\n\n'can't take lessons' bo'lsa sabab bilan mos\nkelmaydi (ajoyib ovoz — dars olishga TO'SIQ\nemas, aksincha SABAB).\n\nDIQQAT: ega 'HARVEY' (III shaxs birlik)\nbo'lsa ham 'should' o'zgarmaydi."
+       "whyUz": "KALIT — SABAB GAPI:\n'because he has a FANTASTIC VOICE'\nSabab IJOBIY, demak maslahat ham ijobiy\n→ SHOULD.\n\n'can't take lessons' bo'lsa sabab bilan mos\nkelmaydi (ajoyib ovoz — dars olishga TO'SIQ\nemas, aksincha SABAB).\n\nDIQQAT: ega 'HARVEY' (III shaxs birlik)\nbo'lsa ham 'should' o'zgarmaydi.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "4  You can/can't go to the cinema tonight, because you have to do your homework.",
@@ -3290,7 +3430,8 @@
         "can't",
         "can"
        ],
-       "whyUz": "KALIT — SABAB GAPI:\n'because you HAVE TO DO your homework'\nUy vazifasi TO'SQINLIK qilyapti → CAN'T.\n\n'can go' bo'lsa sabab bilan ZID bo'lardi.\n\nGrammar 62-bet, 7-mashqning 4-bandi ham\naynan shunday edi:\n'I CAN'T go to the cinema. I must study for\na test.'\n\n'have to' = shart (must bilan bir xil)."
+       "whyUz": "KALIT — SABAB GAPI:\n'because you HAVE TO DO your homework'\nUy vazifasi TO'SQINLIK qilyapti → CAN'T.\n\n'can go' bo'lsa sabab bilan ZID bo'lardi.\n\nGrammar 62-bet, 7-mashqning 4-bandi ham\naynan shunday edi:\n'I CAN'T go to the cinema. I must study for\na test.'\n\n'have to' = shart (must bilan bir xil).",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "5  You mustn't/should play music after eleven o'clock at night.",
@@ -3300,7 +3441,8 @@
         "mustn't",
         "should"
        ],
-       "whyUz": "Kechasi baland musiqa — qo'shnilarga xalaqit;\nko'p joyda QONUNAN taqiqlangan → MUSTN'T.\n\n'should play music after eleven' = 'kechasi\nmusiqa qo'yishingiz kerak' — teskari maslahat.\n\nCoursebook 101-bet, 11-mashq jadvali:\n'play loud music' → CAN'T.\n\n'AT night' = kechasi (predlog 'at')."
+       "whyUz": "Kechasi baland musiqa — qo'shnilarga xalaqit;\nko'p joyda QONUNAN taqiqlangan → MUSTN'T.\n\n'should play music after eleven' = 'kechasi\nmusiqa qo'yishingiz kerak' — teskari maslahat.\n\nCoursebook 101-bet, 11-mashq jadvali:\n'play loud music' → CAN'T.\n\n'AT night' = kechasi (predlog 'at').",
+       "speakAnswer": "mustn't"
       }
      ]
     }
@@ -3333,7 +3475,8 @@
         "should",
         "can't"
        ],
-       "whyUz": "KALIT — MAQSAD GAPI:\n'TO SAVE MONEY' (pul tejash uchun) — maqsad\nIJOBIY, demak maslahat ham ijobiy → SHOULD.\n\n'can't take the bus' = 'avtobusda yura\nolmaydi' — maqsad bilan mos kelmaydi.\n\n'INSTEAD OF the car' = mashina o'rniga.\nCoursebook 98-bet: 'Use buses and trams —\nnot cars.'"
+       "whyUz": "KALIT — MAQSAD GAPI:\n'TO SAVE MONEY' (pul tejash uchun) — maqsad\nIJOBIY, demak maslahat ham ijobiy → SHOULD.\n\n'can't take the bus' = 'avtobusda yura\nolmaydi' — maqsad bilan mos kelmaydi.\n\n'INSTEAD OF the car' = mashina o'rniga.\nCoursebook 98-bet: 'Use buses and trams —\nnot cars.'",
+       "speakAnswer": "should"
       },
       {
        "prompt": "7  It's cold! Must/Can you close the window, please?",
@@ -3343,7 +3486,8 @@
         "Can",
         "Must"
        ],
-       "whyUz": "KALIT: 'PLEASE' — bu ILTIMOS.\n\n'CAN you ...?' — birovdan iltimos qilish\nshakli.\n'MUST you close the window?' = 'derazani\nyopishingiz SHARTMI?' — g'alati savol.\n\nOdobliroq shakl: 'COULD you close the\nwindow, please?'"
+       "whyUz": "KALIT: 'PLEASE' — bu ILTIMOS.\n\n'CAN you ...?' — birovdan iltimos qilish\nshakli.\n'MUST you close the window?' = 'derazani\nyopishingiz SHARTMI?' — g'alati savol.\n\nOdobliroq shakl: 'COULD you close the\nwindow, please?'",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "8  You shouldn't/can't leave the electricity on when you go on holiday.",
@@ -3353,7 +3497,8 @@
         "shouldn't",
         "can't"
        ],
-       "whyUz": "Bu — MASLAHAT (isrofgarchilikning oldini olish),\nQONUNIY taqiq EMAS → SHOULDN'T.\n\n'can't leave' = 'qoldira olmaysiz' — lekin\njismonan qoldirish mumkin, demak mantiqan\nnoto'g'ri.\n\n'to leave ... ON' = yoqib qoldirmoq\n(teskarisi: 'turn ... OFF' = o'chirmoq)."
+       "whyUz": "Bu — MASLAHAT (isrofgarchilikning oldini olish),\nQONUNIY taqiq EMAS → SHOULDN'T.\n\n'can't leave' = 'qoldira olmaysiz' — lekin\njismonan qoldirish mumkin, demak mantiqan\nnoto'g'ri.\n\n'to leave ... ON' = yoqib qoldirmoq\n(teskarisi: 'turn ... OFF' = o'chirmoq).",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "9  You mustn't/can drink and drive.",
@@ -3363,7 +3508,8 @@
         "mustn't",
         "can"
        ],
-       "whyUz": "Ichib mashina haydash — KO'P MAMLAKATDA\nQONUNAN TAQIQLANGAN → MUSTN'T.\n\nGrammar 60-bet: 'mustn't means it is\nFORBIDDEN ... against the rule'.\n\n'can drink and drive' = 'ichib haydashingiz\nmumkin' — juda xavfli va noto'g'ri.\n\n'Don't drink and drive' — dunyo bo'ylab\nmashhur xavfsizlik shiori.\n\nDIQQAT: 8 va 10-bandlar 'shouldn't' (maslahat),\nbu esa 'mustn't' (qonun) — farqi shu."
+       "whyUz": "Ichib mashina haydash — KO'P MAMLAKATDA\nQONUNAN TAQIQLANGAN → MUSTN'T.\n\nGrammar 60-bet: 'mustn't means it is\nFORBIDDEN ... against the rule'.\n\n'can drink and drive' = 'ichib haydashingiz\nmumkin' — juda xavfli va noto'g'ri.\n\n'Don't drink and drive' — dunyo bo'ylab\nmashhur xavfsizlik shiori.\n\nDIQQAT: 8 va 10-bandlar 'shouldn't' (maslahat),\nbu esa 'mustn't' (qonun) — farqi shu.",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "10  You can't/shouldn't forget to lock your door before you leave the house.",
@@ -3373,7 +3519,8 @@
         "shouldn't",
         "can't"
        ],
-       "whyUz": "Bu — MASLAHAT (eslatma) → SHOULDN'T.\n\n'can't forget' = 'unuta OLMAYSIZ' — ma'nosiz,\nchunki unutish har kimning qo'lidan keladi.\n\n'shouldn't FORGET to ...' = unutmasligingiz\nkerak (= 'should REMEMBER to ...').\n\n'before you LEAVE' — 'before' dan keyin\nto'liq gap ham kelishi mumkin."
+       "whyUz": "Bu — MASLAHAT (eslatma) → SHOULDN'T.\n\n'can't forget' = 'unuta OLMAYSIZ' — ma'nosiz,\nchunki unutish har kimning qo'lidan keladi.\n\n'shouldn't FORGET to ...' = unutmasligingiz\nkerak (= 'should REMEMBER to ...').\n\n'before you LEAVE' — 'before' dan keyin\nto'liq gap ham kelishi mumkin.",
+       "speakAnswer": "shouldn't"
       }
      ]
     }
@@ -3406,7 +3553,8 @@
         "/r/ SILENT (jim)",
         "/r/ PRONOUNCED (o'qiladi)"
        ],
-       "whyUz": "t-u-R-N: 'r' dan keyin 'N' — UNDOSH.\nBritancha qoida: /r/ faqat UNLIDAN oldin\no'qiladi → bu yerda JIM.\n\nO'qilishi: /tɜːn/ ('to'n')\n\nShu kabi: work, first, girl, park, short."
+       "whyUz": "t-u-R-N: 'r' dan keyin 'N' — UNDOSH.\nBritancha qoida: /r/ faqat UNLIDAN oldin\no'qiladi → bu yerda JIM.\n\nO'qilishi: /tɜːn/ ('to'n')\n\nShu kabi: work, first, girl, park, short.",
+       "speakAnswer": "/r/ SILENT"
       },
       {
        "prompt": "care",
@@ -3416,7 +3564,8 @@
         "/r/ SILENT (jim)",
         "/r/ PRONOUNCED (o'qiladi)"
        ],
-       "whyUz": "c-a-R-e: oxiridagi 'e' JIM, demak 'r' amalda\nSO'Z OXIRIDA turibdi — undan keyin hech qanday\nunli yo'q → JIM.\n\nO'qilishi: /keə/ ('kea')\n\nShu kabi: car, far, door, more, teacher.\n\nDIQQAT: 'I care about it' desangiz ham 'r' jim,\nlekin 'care about' da keyingi so'z unli bilan\nboshlangani uchun 'linking r' paydo bo'ladi."
+       "whyUz": "c-a-R-e: oxiridagi 'e' JIM, demak 'r' amalda\nSO'Z OXIRIDA turibdi — undan keyin hech qanday\nunli yo'q → JIM.\n\nO'qilishi: /keə/ ('kea')\n\nShu kabi: car, far, door, more, teacher.\n\nDIQQAT: 'I care about it' desangiz ham 'r' jim,\nlekin 'care about' da keyingi so'z unli bilan\nboshlangani uchun 'linking r' paydo bo'ladi.",
+       "speakAnswer": "/r/ SILENT"
       },
       {
        "prompt": "hurry",
@@ -3426,7 +3575,8 @@
         "/r/ PRONOUNCED (o'qiladi)",
         "/r/ SILENT (jim)"
        ],
-       "whyUz": "h-u-RR-Y: 'r' dan keyin 'Y' keladi va u bu\nyerda UNLI tovush (/i/) beradi → O'QILADI.\n\nO'qilishi: /ˈhʌri/ ('hari')\n\nShu kabi: very, sorry, marry, carry, borrow."
+       "whyUz": "h-u-RR-Y: 'r' dan keyin 'Y' keladi va u bu\nyerda UNLI tovush (/i/) beradi → O'QILADI.\n\nO'qilishi: /ˈhʌri/ ('hari')\n\nShu kabi: very, sorry, marry, carry, borrow.",
+       "speakAnswer": "/r/ PRONOUNCED"
       },
       {
        "prompt": "various",
@@ -3436,7 +3586,8 @@
         "/r/ PRONOUNCED (o'qiladi)",
         "/r/ SILENT (jim)"
        ],
-       "whyUz": "v-a-R-i-ous: 'r' dan keyin 'I' keladi — UNLI\n→ O'QILADI.\n\nO'qilishi: /ˈveəriəs/ ('vearias')\n\nShu kabi: around, arrive, correct, America."
+       "whyUz": "v-a-R-i-ous: 'r' dan keyin 'I' keladi — UNLI\n→ O'QILADI.\n\nO'qilishi: /ˈveəriəs/ ('vearias')\n\nShu kabi: around, arrive, correct, America.",
+       "speakAnswer": "/r/ PRONOUNCED"
       }
      ]
     }
@@ -3734,7 +3885,8 @@
         "mustn't",
         "can"
        ],
-       "whyUz": "SARLAVHA KALIT: 'giving ADVICE' (maslahat).\nMaslahat uchun → SHOULD.\n\nIjobiy maslahat, chunki ko'z shifokoriga borish\nFOYDALI ish.\n\n'must' bo'lmaydi — bu majburiyat emas, do'stona\nmaslahat.\n\n'an optician' = ko'zoynak ustasi, optik."
+       "whyUz": "SARLAVHA KALIT: 'giving ADVICE' (maslahat).\nMaslahat uchun → SHOULD.\n\nIjobiy maslahat, chunki ko'z shifokoriga borish\nFOYDALI ish.\n\n'must' bo'lmaydi — bu majburiyat emas, do'stona\nmaslahat.\n\n'an optician' = ko'zoynak ustasi, optik.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "a) giving advice —  A: I feel tired.  B: You ............ go to bed so late.",
@@ -3746,7 +3898,8 @@
         "mustn't",
         "can"
        ],
-       "whyUz": "SARLAVHA KALIT: 'giving ADVICE' → should/shouldn't.\n\nBu yerda SALBIY maslahat: kech yotish CHARCHOQQA\nsabab bo'ladi.\n\nDIQQAT: 'You should go to bed' bo'lsa ma'no\nboshqa — 'hozir uxlang'. Lekin gap KELAJAKDA\nkech yotmaslik haqida, shuning uchun SHOULDN'T.\n\n'so late' = shunchalik kech."
+       "whyUz": "SARLAVHA KALIT: 'giving ADVICE' → should/shouldn't.\n\nBu yerda SALBIY maslahat: kech yotish CHARCHOQQA\nsabab bo'ladi.\n\nDIQQAT: 'You should go to bed' bo'lsa ma'no\nboshqa — 'hozir uxlang'. Lekin gap KELAJAKDA\nkech yotmaslik haqida, shuning uchun SHOULDN'T.\n\n'so late' = shunchalik kech.",
+       "speakAnswer": "shouldn't"
       },
       {
        "prompt": "b) giving permission —  A: ............... I use your phone, please?",
@@ -3758,7 +3911,8 @@
         "mustn't",
         "can't"
        ],
-       "whyUz": "SARLAVHA KALIT: 'giving PERMISSION' (ruxsat).\nRuxsat SO'RASH uchun → CAN I ...?\n\n'Must I use your phone?' — ma'nosiz\n(majburiyat emas, iltimos).\n\n'please' ham iltimos ekanini ko'rsatib turibdi.\n\nRasmiyroq: 'MAY I ...?' yoki 'COULD I ...?'"
+       "whyUz": "SARLAVHA KALIT: 'giving PERMISSION' (ruxsat).\nRuxsat SO'RASH uchun → CAN I ...?\n\n'Must I use your phone?' — ma'nosiz\n(majburiyat emas, iltimos).\n\n'please' ham iltimos ekanini ko'rsatib turibdi.\n\nRasmiyroq: 'MAY I ...?' yoki 'COULD I ...?'",
+       "speakAnswer": "can"
       },
       {
        "prompt": "b) giving permission —  B: Yes, of course you ............... .",
@@ -3770,7 +3924,8 @@
         "mustn't",
         "can't"
        ],
-       "whyUz": "QISQA JAVOB savoldagi modalni TAKRORLAYDI:\n  'CAN I ...?'  →  'Yes, you CAN.'\n\n'of course' — ruxsatni kuchaytiradi\n(101-betdagi 12-mashqda ham shunday edi:\n'Yes, of course you can.').\n\nQisqa javobda fe'l takrorlanmaydi:\n'Yes, you can.' ✓\n'Yes, you can use my phone.' (ortiqcha)"
+       "whyUz": "QISQA JAVOB savoldagi modalni TAKRORLAYDI:\n  'CAN I ...?'  →  'Yes, you CAN.'\n\n'of course' — ruxsatni kuchaytiradi\n(101-betdagi 12-mashqda ham shunday edi:\n'Yes, of course you can.').\n\nQisqa javobda fe'l takrorlanmaydi:\n'Yes, you can.' ✓\n'Yes, you can use my phone.' (ortiqcha)",
+       "speakAnswer": "can"
       },
       {
        "prompt": "c) expressing obligation —  A: Do I have to wash the dishes?  B: Yes, you do! You ............... wash the dishes — it's your turn!",
@@ -3782,7 +3937,8 @@
         "can",
         "can't"
        ],
-       "whyUz": "SARLAVHA KALIT: 'expressing OBLIGATION'\n(majburiyat) → MUST.\n\nSavolda 'DO I HAVE TO', javobda 'YOU MUST' —\n101-betdagi 12-mashq bilan AYNAN bir xil naqsh:\n  SA: 'Do I have to make the bed?'\n  SB: 'Yes, you do. You must make the bed.'\n\n'it's your turn' — majburiyatning sababi.\n'to wash the dishes' = idish yuvmoq."
+       "whyUz": "SARLAVHA KALIT: 'expressing OBLIGATION'\n(majburiyat) → MUST.\n\nSavolda 'DO I HAVE TO', javobda 'YOU MUST' —\n101-betdagi 12-mashq bilan AYNAN bir xil naqsh:\n  SA: 'Do I have to make the bed?'\n  SB: 'Yes, you do. You must make the bed.'\n\n'it's your turn' — majburiyatning sababi.\n'to wash the dishes' = idish yuvmoq.",
+       "speakAnswer": "must"
       },
       {
        "prompt": "d) refusing permission —  A: Mum, ............... I have some sweets?",
@@ -3794,7 +3950,8 @@
         "mustn't",
         "can't"
        ],
-       "whyUz": "Bola onasidan RUXSAT so'rayapti → CAN I ...?\n\nSarlavha 'REFUSING permission' — ya'ni ruxsat\nBERILMAYDI, lekin SAVOL baribir 'Can I ...?'\nshaklida bo'ladi.\n\n'to HAVE sweets' = shirinlik yemoq\n('have' bu yerda 'yemoq' ma'nosida)."
+       "whyUz": "Bola onasidan RUXSAT so'rayapti → CAN I ...?\n\nSarlavha 'REFUSING permission' — ya'ni ruxsat\nBERILMAYDI, lekin SAVOL baribir 'Can I ...?'\nshaklida bo'ladi.\n\n'to HAVE sweets' = shirinlik yemoq\n('have' bu yerda 'yemoq' ma'nosida).",
+       "speakAnswer": "can"
       },
       {
        "prompt": "d) refusing permission —  B: No, you ............... . They're bad for your teeth.",
@@ -3806,7 +3963,8 @@
         "mustn't",
         "can"
        ],
-       "whyUz": "SARLAVHA KALIT: 'REFUSING permission'\n(ruxsat bermaslik) → CAN'T.\n\nQisqa javob savoldagi modalni takrorlaydi:\n  'CAN I ...?'  →  'No, you CAN'T.'\n\nDIQQAT — NEGA 'MUSTN'T' EMAS:\nBu ONANING shaxsiy qarori, QONUN emas.\n'mustn't' qonuniy taqiq uchun (e-dialogga\nqarang).\n\n'teeth' — 'tooth' ning ko'pligi\n(tooth → TEETH, noto'g'ri ko'plik)."
+       "whyUz": "SARLAVHA KALIT: 'REFUSING permission'\n(ruxsat bermaslik) → CAN'T.\n\nQisqa javob savoldagi modalni takrorlaydi:\n  'CAN I ...?'  →  'No, you CAN'T.'\n\nDIQQAT — NEGA 'MUSTN'T' EMAS:\nBu ONANING shaxsiy qarori, QONUN emas.\n'mustn't' qonuniy taqiq uchun (e-dialogga\nqarang).\n\n'teeth' — 'tooth' ning ko'pligi\n(tooth → TEETH, noto'g'ri ko'plik).",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "e) expressing prohibition —  A: Can I park here?  B: No, you can't. You ............... park here — it's illegal.",
@@ -3818,7 +3976,8 @@
         "can",
         "can't"
        ],
-       "whyUz": "SARLAVHA KALIT: 'expressing PROHIBITION'\n(taqiq) → MUSTN'T.\n\nENG MUHIM FARQ — d) va e):\n  d) CAN'T   — ONA ruxsat bermayapti\n               (shaxsiy qaror)\n  e) MUSTN'T — QONUN taqiqlagan\n               ('it's ILLEGAL')\n\nShuning uchun bu yerda avval 'you can't'\ndeyilib, keyin 'you MUSTN'T' bilan\nKUCHAYTIRILADI.\n\n'illegal' = qonunga xilof (il- + legal).\n'to park' = mashina qo'ymoq."
+       "whyUz": "SARLAVHA KALIT: 'expressing PROHIBITION'\n(taqiq) → MUSTN'T.\n\nENG MUHIM FARQ — d) va e):\n  d) CAN'T   — ONA ruxsat bermayapti\n               (shaxsiy qaror)\n  e) MUSTN'T — QONUN taqiqlagan\n               ('it's ILLEGAL')\n\nShuning uchun bu yerda avval 'you can't'\ndeyilib, keyin 'you MUSTN'T' bilan\nKUCHAYTIRILADI.\n\n'illegal' = qonunga xilof (il- + legal).\n'to park' = mashina qo'ymoq.",
+       "speakAnswer": "mustn't"
       }
      ]
     }
@@ -3854,7 +4013,8 @@
         "mustn't"
        ],
        "whyUz": "'My eyes are TIRED' — muammo bor, do'stona\nMASLAHAT kerak → SHOULD.\n\n'must wear' bo'lsa juda qat'iy bo'lardi\n(bu maktab qoidasi emas, do'stona maslahat).\n\n'glasses' = ko'zoynak — DOIM ko'plikda\n('a glass' = stakan, boshqa ma'no).",
-       "speak": "1  A: My eyes are tired.  B: You ...................................... wear your glasses."
+       "speak": "1  A: My eyes are tired.  B: You ...................................... wear your glasses.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "2a  A: ........................................ I go outside to play?",
@@ -3867,7 +4027,8 @@
         "must"
        ],
        "whyUz": "Bola RUXSAT so'rayapti → CAN I ...?\n\n'Must I go outside?' = 'chiqishim SHARTMI?'\n— ma'nosiz.\n\n'go outside TO play' — MAQSAD to-infinitive.",
-       "speak": "2a  A: ........................................ I go outside to play?"
+       "speak": "2a  A: ........................................ I go outside to play?",
+       "speakAnswer": "can"
       },
       {
        "prompt": "2b  B: No, you ........................................ . It's raining.",
@@ -3880,7 +4041,8 @@
         "must"
        ],
        "whyUz": "QISQA JAVOB savoldagi modalni TAKRORLAYDI:\n  'CAN I go?' → 'No, you CAN'T.'\n\nSababi gapda berilgan: 'It's RAINING.'\n\n'mustn't' bo'lsa juda qat'iy — bu qonuniy\ntaqiq emas, ob-havo tufayli rad etish.",
-       "speak": "2b  B: No, you ........................................ . It's raining."
+       "speak": "2b  B: No, you ........................................ . It's raining.",
+       "speakAnswer": "can't"
       },
       {
        "prompt": "3  A: Do I have to go to school?  B: Yes you do. You ......................... go to school.",
@@ -3893,7 +4055,8 @@
         "mustn't"
        ],
        "whyUz": "KALIT: savolda 'DO I HAVE TO ...?' —\nMAJBURIYAT so'ralyapti → javobda MUST.\n\nCoursebook 101-bet, 12-mashq namunasi AYNAN\nshunday:\n  'Do I have to make the bed?'\n  'Yes, you do. You MUST make the bed.'\n\nNega ikki xil shakl? Savolda 'Must I ...?'\nzamonaviy inglizchada kam ishlatiladi.",
-       "speak": "3  A: Do I have to go to school?  B: Yes you do. You ......................... go to school."
+       "speak": "3  A: Do I have to go to school?  B: Yes you do. You ......................... go to school.",
+       "speakAnswer": "must"
       },
       {
        "prompt": "4  A: I want to go on holiday this Christmas.  B: You ......................... start saving some money.",
@@ -3906,7 +4069,8 @@
         "mustn't"
        ],
        "whyUz": "'I WANT to go on holiday' — maqsad bor,\nunga erishish uchun do'stona MASLAHAT\n→ SHOULD.\n\n'must start saving' bo'lsa juda qat'iy —\nbu majburiyat emas, tavsiya.\n\n'start SAVING' — 'start' dan keyin -ING\n('start TO save' ham to'g'ri).",
-       "speak": "4  A: I want to go on holiday this Christmas.  B: You ......................... start saving some money."
+       "speak": "4  A: I want to go on holiday this Christmas.  B: You ......................... start saving some money.",
+       "speakAnswer": "should"
       },
       {
        "prompt": "5  A: I'm sorry I'm late, Mrs Brown.  B: You ............................. be late for school again.",
@@ -3919,7 +4083,8 @@
         "must"
        ],
        "whyUz": "IKKI KALIT:\n  1) 'Mrs Brown' — o'qituvchi, ya'ni MAKTAB\n     QOIDASI haqida gapiryapti\n  2) 'AGAIN' — bu birinchi marta EMAS,\n     demak ogohlantirish QAT'IY\n\n→ MUSTN'T\n\n'shouldn't be late' bo'lsa juda yumshoq\nbo'lardi (do'stona maslahat kabi).\n\n'late FOR school' — predlog 'for'.",
-       "speak": "5  A: I'm sorry I'm late, Mrs Brown.  B: You ............................. be late for school again."
+       "speak": "5  A: I'm sorry I'm late, Mrs Brown.  B: You ............................. be late for school again.",
+       "speakAnswer": "mustn't"
       }
      ]
     }
@@ -4210,7 +4375,8 @@
         "plastic"
        ],
        "whyUz": "SIFAT + OT: qanday ovqat? — o'ralgan.\nVaraqadagi 1-ko'rsatmadan.\n98-betdagi C rasmi.",
-       "speak": "1  ................ food"
+       "speak": "1  ................ food",
+       "speakAnswer": "pre-packaged"
       },
       {
        "prompt": "2  ................ liquid",
@@ -4223,7 +4389,8 @@
         "plastic"
        ],
        "whyUz": "SIFAT + OT: qanday suyuqlik? — idish yuvish.\nBritancha ibora ('to wash up' = idish yuvmoq).\n98-betdagi F rasmi.",
-       "speak": "2  ................ liquid"
+       "speak": "2  ................ liquid",
+       "speakAnswer": "washing-up"
       },
       {
        "prompt": "3  ................ cans",
@@ -4236,7 +4403,8 @@
         "washing-up"
        ],
        "whyUz": "'plastic' ham mos kelardi, LEKIN 8-band\n('bottles') ga faqat 'plastic' mos keladi\n(alyuminiy shisha bo'lmaydi).\nShuning uchun bu yerda ALUMINIUM.\nELIMINATSIYA usuli.",
-       "speak": "3  ................ cans"
+       "speak": "3  ................ cans",
+       "speakAnswer": "aluminium"
       },
       {
        "prompt": "4  ................ transport",
@@ -4249,7 +4417,8 @@
         "plastic"
        ],
        "whyUz": "SIFAT + OT: qanday transport? — jamoat.\n'public transport' — SANALMAYDIGAN\n('a public transport' XATO).\n98-betdagi E rasmi.",
-       "speak": "4  ................ transport"
+       "speak": "4  ................ transport",
+       "speakAnswer": "public"
       },
       {
        "prompt": "5  to ................ the air",
@@ -4262,7 +4431,8 @@
         "plastic"
        ],
        "whyUz": "'TO' dan keyin fe'lning ASOSIY shakli.\nShuning uchun 'pollute' (-S siz).\nVaraqadan: 'Cars pollute the air.'",
-       "speak": "5  to ................ the air"
+       "speak": "5  to ................ the air",
+       "speakAnswer": "pollute"
       },
       {
        "prompt": "6  to ................ fires",
@@ -4275,7 +4445,8 @@
         "plastic"
        ],
        "whyUz": "'TO' dan keyin ASOSIY shakl.\n'to light a fire' = olov yoqmoq.\nDIQQAT: 'light' — noto'g'ri fe'l (light → LIT).\nOT sifatida 'light' = yorug'lik, chiroq.",
-       "speak": "6  to ................ fires"
+       "speak": "6  to ................ fires",
+       "speakAnswer": "light"
       },
       {
        "prompt": "7  it ................ horrible",
@@ -4288,7 +4459,8 @@
         "washing-up"
        ],
        "whyUz": "'IT' — III shaxs BIRLIK → fe'lga -S qo'shiladi.\nRo'yxatda 'smells' allaqachon -S bilan berilgan —\nbu kalit!\nDIQQAT: 'smell + SIFAT' (horrible), RAVISH emas.",
-       "speak": "7  it ................ horrible"
+       "speak": "7  it ................ horrible",
+       "speakAnswer": "smells"
       },
       {
        "prompt": "8  ................ bottles",
@@ -4301,7 +4473,8 @@
         "washing-up"
        ],
        "whyUz": "Shisha faqat PLASTIK bo'lishi mumkin\n(alyuminiy shisha yo'q).\nShuning uchun 3-band 'aluminium' ni oladi.\n98-betdagi B rasmi.",
-       "speak": "8  ................ bottles"
+       "speak": "8  ................ bottles",
+       "speakAnswer": "plastic"
       }
      ]
     },
@@ -4369,7 +4542,8 @@
         "cold"
        ],
        "whyUz": "1-rasmda erkak BOSHINI ushlab turibdi.\n\nARTIKL KALITI: 'I've got A ...' — demak\n'a' oladigan kasallik kerak:\n  a headache  ✓\n  the flu     ✗ ('the' kerak)\n  toothache   ✗ (artiklsiz)\n\nhead + ache = bosh + og'riq",
-       "speak": "1  I've got a ............... ."
+       "speak": "1  I've got a ............... .",
+       "speakAnswer": "headache"
       },
       {
        "prompt": "2  I've got a ............ .",
@@ -4382,7 +4556,8 @@
         "toothache"
        ],
        "whyUz": "2-rasmda erkak TOMOG'INI ushlagan, og'zi ochiq.\n\nARTIKL KALITI: 'I've got A ...' — 'a sore\nthroat' ✓\n\n'sore' = og'riyotgan, yallig'langan (SIFAT)\n'throat' = tomoq\n\nMaslahati: 'Take some cough syrup' (9b).",
-       "speak": "2  I've got a ............ ."
+       "speak": "2  I've got a ............ .",
+       "speakAnswer": "sore throat"
       },
       {
        "prompt": "3  I feel very .......... .",
@@ -4395,7 +4570,8 @@
         "toothache"
        ],
        "whyUz": "3-rasmda erkak o'zini QUCHOQLAB, QALTIRAB\nturibdi.\n\nKALIT: 'I FEEL very ...' — 'feel' dan keyin\nSIFAT keladi. Ro'yxatda ikki sifat bor:\ncold va tired.\nQaltirash → COLD.\n\nDIQQAT — 'COLD' IKKI MA'NOLI:\n  'I feel COLD'   = sovqotdim (SIFAT)\n  'I've got A COLD' = shamolladim (OT)\nBu yerda birinchisi.\n\nMaslahati: 'Put a jumper on' (9b).",
-       "speak": "3  I feel very .......... ."
+       "speak": "3  I feel very .......... .",
+       "speakAnswer": "cold"
       },
       {
        "prompt": "4  I've got the ..................... .",
@@ -4408,7 +4584,8 @@
         "cold"
        ],
        "whyUz": "4-rasmda yigit YO'TALYAPTI, qo'lini og'ziga\ntutgan.\n\nARTIKL KALITI — ENG ANIQ BELGI:\n'I've got THE ...' — ro'yxatda faqat BITTA so'z\n'the' oladi: THE FLU.\n\n  the flu    ✓\n  a headache ✗ ('a' kerak)\n\n'flu' — 'influenza' so'zining qisqartmasi.\nMaslahati: 'Call the doctor and go to bed' (9b).",
-       "speak": "4  I've got the ..................... ."
+       "speak": "4  I've got the ..................... .",
+       "speakAnswer": "flu"
       },
       {
        "prompt": "5  I feel very .......... .",
@@ -4421,7 +4598,8 @@
         "toothache"
        ],
        "whyUz": "5-rasmda keksa erkak QO'LIGA SUYANIB, ko'zlari\nyumilayapti.\n\nKALIT: 'I FEEL very ...' + SIFAT.\n3-rasm 'cold' ni olgan, demak bu yerda TIRED.\n\nDIQQAT: 'tired' — SIFAT, 'tiredly' emas.\n'feel' his fe'li bo'lgani uchun.\n\nMaslahati: 'Get some sleep' (9b).",
-       "speak": "5  I feel very .......... ."
+       "speak": "5  I feel very .......... .",
+       "speakAnswer": "tired"
       },
       {
        "prompt": "6  I've got ............... .",
@@ -4434,7 +4612,8 @@
         "cold"
        ],
        "whyUz": "6-rasmda odamning BOSHI BOG'LANGAN va yuzini\nushlab turibdi — tish og'rig'ining klassik\ntasviri.\n\nARTIKL KALITI — ENG NOZIK JOY:\n'I've got ...' — ARTIKL YO'Q!\nRo'yxatda artiklsiz ishlatiladigan yagona so'z:\nTOOTHACHE.\n\nBRITANCHA QOIDA:\n  toothache, backache, earache, stomachache\n  — artiklsiz\nAmerikada: 'a toothache' ✓\n\ntooth + ache = tish + og'riq\nMaslahati: 'See the dentist' (9b).",
-       "speak": "6  I've got ............... ."
+       "speak": "6  I've got ............... .",
+       "speakAnswer": "toothache"
       }
      ]
     },
@@ -4626,31 +4805,38 @@
      "tasks": [
       {
        "left": "put suncream on your skin",
-       "right": "It protects your skin from the hot sun."
+       "right": "It protects your skin from the hot sun.",
+       "speakAnswer": "It protects your skin from the hot sun."
       },
       {
        "left": "drop litter on the beach",
-       "right": "It looks and smells horrible."
+       "right": "It looks and smells horrible.",
+       "speakAnswer": "It looks and smells horrible."
       },
       {
        "left": "play in the sun between 11am and 3pm",
-       "right": "The sun is very dangerous then."
+       "right": "The sun is very dangerous then.",
+       "speakAnswer": "The sun is very dangerous then."
       },
       {
        "left": "wear a hat",
-       "right": "It protects your head from the sun."
+       "right": "It protects your head from the sun.",
+       "speakAnswer": "It protects your head from the sun."
       },
       {
        "left": "swim after eating",
-       "right": "It is dangerous to swim with a full stomach."
+       "right": "It is dangerous to swim with a full stomach.",
+       "speakAnswer": "It is dangerous to swim with a full stomach."
       },
       {
        "left": "wear sunglasses",
-       "right": "They protect your eyes from the sun."
+       "right": "They protect your eyes from the sun.",
+       "speakAnswer": "They protect your eyes from the sun."
       },
       {
        "left": "swim near windsurfers",
-       "right": "There is always a danger of accidents."
+       "right": "There is always a danger of accidents.",
+       "speakAnswer": "There is always a danger of accidents."
       }
      ]
     }
@@ -4686,7 +4872,8 @@
         "mustn't"
        ],
        "whyUz": "KITOBDAGI NAMUNA ('of' yozib qo'yilgan).\n\nUSTUN darajada guruh 'OF' bilan beriladi:\n  the best OF all\n  the biggest OF the three\n  the most comfortable OF all\n\n'in all' — bunday qurilma yo'q.",
-       "speak": "1  It's the most comfortable flat IN all."
+       "speak": "1  It's the most comfortable flat IN all.",
+       "speakAnswer": "of"
       },
       {
        "prompt": "2  Tonia is saving some money BECAUSE she can go on holiday next year.",
@@ -4699,7 +4886,8 @@
         "mustn't"
        ],
        "whyUz": "MANTIQ: Toniya pulni MAQSAD uchun yig'yapti\n(ta'tilga borish uchun) — sabab uchun emas.\n\n'BECAUSE' — SABAB (nima uchun sodir bo'lgan)\n'SO' — MAQSAD/NATIJA (nima uchun qilyapti)\n\n'Tonia is saving money SO she can go on\nholiday.' ✓\n\n('SO THAT' ham to'g'ri, lekin bitta so'z\nkerak bo'lsa — 'so'.)",
-       "speak": "2  Tonia is saving some money BECAUSE she can go on holiday next year."
+       "speak": "2  Tonia is saving some money BECAUSE she can go on holiday next year.",
+       "speakAnswer": "so"
       },
       {
        "prompt": "3  THERE will be hot and sunny at the weekend.",
@@ -4712,7 +4900,8 @@
         "mustn't"
        ],
        "whyUz": "OB-HAVO haqida gapirganda ega DOIM 'IT':\n  IT is cold.\n  IT will be sunny.\n  IT was raining.\n\n'THERE is/are/will be' — MAVJUDLIK uchun va\nundan keyin OT keladi:\n  'There will be A STORM.'  ✓ (ot)\n  'There will be SUNNY.'    ✗ (sifat)\n\nDIQQAT: Grammar 59-betdagi 10-mashqda ham\naynan shu xato bor edi.",
-       "speak": "3  THERE will be hot and sunny at the weekend."
+       "speak": "3  THERE will be hot and sunny at the weekend.",
+       "speakAnswer": "it"
       },
       {
        "prompt": "4  You MUST talk during the test.",
@@ -4725,7 +4914,8 @@
         "it"
        ],
        "whyUz": "Nazorat ishida gapirish TAQIQLANGAN → MUSTN'T.\n\n'You must talk during the test' =\n'gapirishingiz SHART' — mantiqan noto'g'ri.\n\nCoursebook 102-bet, 13a: darsda jim bo'lish\nkerak; nusxa ko'chirish taqiqlangan.\n\n'DURING the test' = nazorat ishi davomida.",
-       "speak": "4  You MUST talk during the test."
+       "speak": "4  You MUST talk during the test.",
+       "speakAnswer": "mustn't"
       },
       {
        "prompt": "5  This car is cheaper AS that one.",
@@ -4738,7 +4928,8 @@
         "it"
        ],
        "whyUz": "QIYOSIY daraja DOIM 'THAN' bilan:\n  cheapER THAN, biggER THAN, bettER THAN\n\n'AS ... AS' — TENGLIK uchun:\n  'as cheap AS that one' (bir xil narxda)\n\nBu yerda '-ER' qo'shimchasi bor, demak\nQIYOS — 'than' kerak.",
-       "speak": "5  This car is cheaper AS that one."
+       "speak": "5  This car is cheaper AS that one.",
+       "speakAnswer": "than"
       },
       {
        "prompt": "6  Don't talk so FASTLY.",
@@ -4751,7 +4942,8 @@
         "it"
        ],
        "whyUz": "'FASTLY' degan so'z INGLIZ TILIDA YO'Q!\n\n'FAST' — ham SIFAT, ham RAVISH:\n  'a fast car'    (sifat)\n  'drive fast'    (ravish)\n\nShu kabi so'zlar (-ly OLMAYDI):\n  hard, late, early, high, straight\n\nDIQQAT: 'hardly' bor, lekin ma'nosi BOSHQA\n('deyarli emas').",
-       "speak": "6  Don't talk so FASTLY."
+       "speak": "6  Don't talk so FASTLY.",
+       "speakAnswer": "fast"
       },
       {
        "prompt": "7  My school is close FROM my house.",
@@ -4764,7 +4956,8 @@
         "it"
        ],
        "whyUz": "'CLOSE TO' — turg'un birikma.\n\nTESKARISI 'from' bilan:\n  close TO   ✓   (yaqin)\n  far FROM   ✓   (uzoq)\n  close FROM ✗\n  far TO     ✗\n\nGrammar 62-bet, 5-mashqning 10-bandi ham:\n'stay close TO me'.",
-       "speak": "7  My school is close FROM my house."
+       "speak": "7  My school is close FROM my house.",
+       "speakAnswer": "to"
       },
       {
        "prompt": "8  WILL you like a cup of tea?",
@@ -4777,7 +4970,8 @@
         "it"
        ],
        "whyUz": "'WOULD you like ...?' — TAKLIF qilish\n(choy, ovqat, yordam).\n\n'WILL you like ...?' = 'kelajakda sizga\nyoqadimi?' — butunlay boshqa ma'no.\n\nJavobi: 'Yes, please.' / 'No, thank you.'\n\n'a cup of tea' — 'tea' sanalmaydigan,\nshuning uchun 'a CUP OF'.",
-       "speak": "8  WILL you like a cup of tea?"
+       "speak": "8  WILL you like a cup of tea?",
+       "speakAnswer": "would"
       },
       {
        "prompt": "9  Sonia is my brother's daughter. She's MINE niece.",
@@ -4790,7 +4984,8 @@
         "it"
        ],
        "whyUz": "OT OLDIDA — 'MY' (egalik SIFATI):\n  MY niece, MY book, MY house\n\n'MINE' — OT O'RNIGA (egalik OLMOSHI):\n  'This book is MINE.'\n\n  my + OT    ✓\n  mine + OT  ✗\n\nDIQQAT: 10-band bu bandning TESKARISI —\nkitob ataylab ikkalasini bergan.\n\n'a niece' = qiz jiyan; 'a nephew' = o'g'il jiyan.",
-       "speak": "9  Sonia is my brother's daughter. She's MINE niece."
+       "speak": "9  Sonia is my brother's daughter. She's MINE niece.",
+       "speakAnswer": "my"
       },
       {
        "prompt": "10  That's not your coat. Its MY.",
@@ -4803,7 +4998,8 @@
         "it"
        ],
        "whyUz": "OT O'RNIGA — 'MINE' (egalik OLMOSHI):\n  'It's MINE.' ✓\n  'It's MY.'   ✗ (keyin ot kerak bo'lardi)\n\n9-bandning TESKARISI:\n  9  ot BOR  → my\n  10 ot YO'Q → mine\n\n⚠ DIQQAT — BU BANDDA IKKI XATO BOR:\n  'ITS my'  →  'IT'S mine'\n  'Its' (egalik, apostrofsiz) va\n  'It's' (it is, apostrof bilan) — boshqa so'z!\n\nKitobda bitta katakcha bo'lgani uchun asosiy\njavob MINE, lekin apostrof ham qo'yilishi\nkerak.",
-       "speak": "10  That's not your coat. Its MY."
+       "speak": "10  That's not your coat. Its MY.",
+       "speakAnswer": "mine"
       },
       {
        "prompt": "11  I can't swim. DO you?",
@@ -4816,7 +5012,8 @@
         "it"
        ],
        "whyUz": "QISQA SAVOL asosiy gapdagi YORDAMCHI yoki\nMODAL fe'lni TAKRORLAYDI:\n\n  'I CAN'T swim.  CAN you?'    ✓\n  'I DON'T like it. DO you?'   ✓\n  'I AM tired.  ARE you?'      ✓\n\nAsosiy gapda 'can't' bor, demak qisqa savolda\nham 'Can' bo'lishi kerak — 'Do' emas.",
-       "speak": "11  I can't swim. DO you?"
+       "speak": "11  I can't swim. DO you?",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "12  I'm Italian. WHERE about you?",
@@ -4829,7 +5026,8 @@
         "it"
        ],
        "whyUz": "'WHAT about you?' = Sizchi?\n\nBu TURG'UN IBORA — faqat 'what' bilan\nishlatiladi:\n  What about you?    ✓\n  What about tea?    ✓\n  Where about you?   ✗\n\n'How about you?' ham to'g'ri (bir xil ma'no).",
-       "speak": "12  I'm Italian. WHERE about you?"
+       "speak": "12  I'm Italian. WHERE about you?",
+       "speakAnswer": "What"
       },
       {
        "prompt": "13  Banks are open from 9 am FOR 3 pm.",
@@ -4842,7 +5040,8 @@
         "it"
        ],
        "whyUz": "'FROM ... TO ...' — vaqt ORALIG'I:\n  from 9 am TO 3 pm\n  from Monday TO Friday\n\n'FOR' — DAVOMIYLIK:\n  'for 3 hours' (uch soat davomida)\n\nGapda 'FROM' bor, demak juftligi 'TO' bo'lishi\nkerak.\n('from ... UNTIL/TILL ...' ham to'g'ri.)",
-       "speak": "13  Banks are open from 9 am FOR 3 pm."
+       "speak": "13  Banks are open from 9 am FOR 3 pm.",
+       "speakAnswer": "to"
       },
       {
        "prompt": "14  I'd like SOME bottle of water, please.",
@@ -4889,7 +5088,8 @@
         "those"
        ],
        "whyUz": "'EXCUSE ME' — turg'un ibora.\n\n'me' — TO'LDIRUVCHI olmoshi.\n'my' — EGALIK sifati, undan keyin OT kerak:\n  'my book' ✓ / 'excuse my' ✗\n\nMa'nosi: birovga murojaat qilishdan oldingi\nodobli boshlanish.",
-       "speak": "15  Excuse MY, what's the time?"
+       "speak": "15  Excuse MY, what's the time?",
+       "speakAnswer": "me"
       },
       {
        "prompt": "16  There wasn't a cinema in THESE days.",
@@ -4900,7 +5100,8 @@
         "me"
        ],
        "whyUz": "ZAMON KALITI: 'WASN'T' — O'TGAN zamon.\n\nTHESE = bular (YAQIN, hozirgi)\nTHOSE = ular (UZOQ, o'tgan)\n\nO'tmish haqida gapirilyapti → THOSE.\n'in those days' = o'sha paytlarda (turg'un\nibora).",
-       "speak": "16  There wasn't a cinema in THESE days."
+       "speak": "16  There wasn't a cinema in THESE days.",
+       "speakAnswer": "those"
       }
      ]
     },
@@ -4924,7 +5125,8 @@
         "—"
        ],
        "whyUz": "O'RMON, DARYO, DENGIZ nomlari 'THE' oladi:\n  THE Amazon Rainforest\n  THE Nile, THE Pacific Ocean",
-       "speak": "1  ...... Amazon Rainforest is in ..."
+       "speak": "1  ...... Amazon Rainforest is in ...",
+       "speakAnswer": "the"
       },
       {
        "prompt": "2  ... is in ...... Brazil,",
@@ -4957,7 +5159,8 @@
         "—"
        ],
        "whyUz": "DARYO nomlari DOIM 'THE' oladi:\n  THE Amazon River, THE Nile, THE Thames\n\n'to LIE' = yotmoq, joylashgan bo'lmoq\n(lie → LAY → LAIN).",
-       "speak": "4  It lies at the beginning of ...... Amazon River."
+       "speak": "4  It lies at the beginning of ...... Amazon River.",
+       "speakAnswer": "the"
       },
       {
        "prompt": "5  ...... Amazon River is ...",
@@ -4968,7 +5171,8 @@
         "—"
        ],
        "whyUz": "Yana DARYO nomi → THE.\n4-band bilan bir xil.",
-       "speak": "5  ...... Amazon River is ..."
+       "speak": "5  ...... Amazon River is ...",
+       "speakAnswer": "the"
       },
       {
        "prompt": "6  ... is ...... longest river in the world.",
@@ -4979,7 +5183,8 @@
         "—"
        ],
        "whyUz": "USTUN DARAJA DOIM 'THE' oladi:\n  THE longest, THE best, THE biggest\n\n'-EST' qo'shimchasi 'the' ni talab qiladi.",
-       "speak": "6  ... is ...... longest river in the world."
+       "speak": "6  ... is ...... longest river in the world.",
+       "speakAnswer": "the"
       },
       {
        "prompt": "7  ...... Amazon Rainforest is a very beautiful place.",
@@ -4990,7 +5195,8 @@
         "—"
        ],
        "whyUz": "Yana O'RMON nomi → THE.\n1-band bilan bir xil.",
-       "speak": "7  ...... Amazon Rainforest is a very beautiful place."
+       "speak": "7  ...... Amazon Rainforest is a very beautiful place.",
+       "speakAnswer": "the"
       },
       {
        "prompt": "8  ...... forest has a serious problem.",
@@ -5001,7 +5207,8 @@
         "—"
        ],
        "whyUz": "ALLAQACHON AYTILGAN narsa → THE.\n\nYuqorida 'the Amazon Rainforest' deyilgan edi,\nendi 'O'SHA o'rmon' haqida gapirilyapti.\n\nDIQQAT — 9 va 12 BILAN SOLISHTIRING:\n  8   ANIQ o'rmon  → THE\n  12  UMUMIY o'rmonlar → the YO'Q",
-       "speak": "8  ...... forest has a serious problem."
+       "speak": "8  ...... forest has a serious problem.",
+       "speakAnswer": "the"
       },
       {
        "prompt": "9  ...... trees and plants are very important to the environment.",
@@ -5023,7 +5230,8 @@
         "—"
        ],
        "whyUz": "YAGONA narsalar DOIM 'THE' oladi:\n  THE world, THE sun, THE moon, THE sky,\n  THE earth\n\nDunyo bitta — shuning uchun 'the'.",
-       "speak": "10  Scientists say that ...... world is in danger"
+       "speak": "10  Scientists say that ...... world is in danger",
+       "speakAnswer": "the"
       },
       {
        "prompt": "11  ... because of ...... destruction of ...",
@@ -5034,7 +5242,8 @@
         "—"
        ],
        "whyUz": "'THE ... OF ...' qurilmasi:\n  THE destruction OF rainforests\n  THE top OF the hill\n  THE beginning OF the river\n\n'of' bilan aniqlangan ot 'the' oladi.\n\n'BECAUSE OF + OT' — sabab (predlog).",
-       "speak": "11  ... because of ...... destruction of ..."
+       "speak": "11  ... because of ...... destruction of ...",
+       "speakAnswer": "the"
       },
       {
        "prompt": "12  ... destruction of ...... rainforests.",
@@ -5071,7 +5280,8 @@
         "the oldest"
        ],
        "whyUz": "'THAN' bor → QIYOSIY daraja.\n'beautiful' — 3 bo'g'in (UZUN sifat)\n→ MORE + sifat.\n\n'beautifuller' XATO!",
-       "speak": "1  Claire is ........................ (beautiful) than Marie."
+       "speak": "1  Claire is ........................ (beautiful) than Marie.",
+       "speakAnswer": "more beautiful"
       },
       {
        "prompt": "2  Your motorbike is ................. (noisy) than mine.",
@@ -5084,7 +5294,8 @@
         "the oldest"
        ],
        "whyUz": "'THAN' bor → QIYOSIY.\n'noisy' oxiri 'Y' → Y ni I ga aylantirib + ER:\n  noisy → noisIER\n\n'more noisy' — kam ishlatiladi.\n'than MINE' = 'than my motorbike'.",
-       "speak": "2  Your motorbike is ................. (noisy) than mine."
+       "speak": "2  Your motorbike is ................. (noisy) than mine.",
+       "speakAnswer": "noisier"
       },
       {
        "prompt": "3a  The Parthenon is ................. (old) than the Colosseum,",
@@ -5097,7 +5308,8 @@
         "the oldest"
        ],
        "whyUz": "'THAN' bor → QIYOSIY.\n'old' — 1 bo'g'in → -ER:\n  old → oldER\n\nTarixiy haqiqat: Parfenon (mil. avv. 447-438)\nKolizeydan (mil. 70-80) ancha qadimiy.",
-       "speak": "3a  The Parthenon is ................. (old) than the Colosseum,"
+       "speak": "3a  The Parthenon is ................. (old) than the Colosseum,",
+       "speakAnswer": "older"
       },
       {
        "prompt": "3b  ... but the Pyramids are .................. (old) of all.",
@@ -5110,7 +5322,8 @@
         "older"
        ],
        "whyUz": "'OF ALL' bor → USTUN daraja.\n'old' — 1 bo'g'in → THE + -EST:\n  the oldEST\n\n'THE' SHART! ('oldest of all' — xato)\n\nTarixiy haqiqat: Misr piramidalari\n(mil. avv. 2600 yillar) — eng qadimiy.",
-       "speak": "3b  ... but the Pyramids are .................. (old) of all."
+       "speak": "3b  ... but the Pyramids are .................. (old) of all.",
+       "speakAnswer": "the oldest"
       },
       {
        "prompt": "4  Which is .......................... (large) desert in the world?",
@@ -5123,7 +5336,8 @@
         "older"
        ],
        "whyUz": "'IN THE WORLD' bor → USTUN daraja.\n'large' oxiri 'E' → faqat -ST qo'shiladi:\n  large → the largEST\n\n'largeest' XATO.",
-       "speak": "4  Which is .......................... (large) desert in the world?"
+       "speak": "4  Which is .......................... (large) desert in the world?",
+       "speakAnswer": "the largest"
       },
       {
        "prompt": "5  Taxis in London are ..................... (expensive) than taxis in Rome.",
@@ -5136,7 +5350,8 @@
         "older"
        ],
        "whyUz": "'THAN' bor → QIYOSIY.\n'expensive' — 3 bo'g'in (UZUN) → MORE + sifat.\n\n'expensiver' XATO!",
-       "speak": "5  Taxis in London are ..................... (expensive) than taxis in Rome."
+       "speak": "5  Taxis in London are ..................... (expensive) than taxis in Rome.",
+       "speakAnswer": "more expensive"
       },
       {
        "prompt": "6  My sister is .......................... (clever) than me.",
@@ -5149,7 +5364,8 @@
         "older"
        ],
        "whyUz": "'THAN' bor → QIYOSIY.\n'clever' — 2 bo'g'in, lekin '-er' bilan\ntugagani uchun -ER qo'shiladi:\n  clever → cleverER\n\n('MORE CLEVER' ham to'g'ri hisoblanadi,\n lekin 'cleverer' ko'proq ishlatiladi.)\n\n'than ME' — og'zaki nutqda to'g'ri;\nrasmiy: 'than I am'.",
-       "speak": "6  My sister is .......................... (clever) than me."
+       "speak": "6  My sister is .......................... (clever) than me.",
+       "speakAnswer": "cleverer"
       },
       {
        "prompt": "7  Our neighbour's house is .................. (big) than ours.",
@@ -5162,7 +5378,8 @@
         "older"
        ],
        "whyUz": "'THAN' bor → QIYOSIY.\n'big' — 1 bo'g'in, oxiri UNLI+UNDOSH\n→ oxirgi undosh IKKILANADI:\n  big → bigGER\n\nShu kabi: hot → hotter, thin → thinner.\n\n'than OURS' = 'than our house'.",
-       "speak": "7  Our neighbour's house is .................. (big) than ours."
+       "speak": "7  Our neighbour's house is .................. (big) than ours.",
+       "speakAnswer": "bigger"
       },
       {
        "prompt": "8a  Tim is ....................... (tall) than Joe,",
@@ -5175,7 +5392,8 @@
         "older"
        ],
        "whyUz": "'THAN' bor → QIYOSIY.\n'tall' — 1 bo'g'in → tallER.",
-       "speak": "8a  Tim is ....................... (tall) than Joe,"
+       "speak": "8a  Tim is ....................... (tall) than Joe,",
+       "speakAnswer": "taller"
       },
       {
        "prompt": "8b  ... but Jack is ...................... (tall) of all.",
@@ -5188,7 +5406,8 @@
         "older"
        ],
        "whyUz": "'OF ALL' bor → USTUN daraja.\n'tall' — 1 bo'g'in → THE tallEST.\n\n'THE' SHART!\n3-band bilan bir xil naqsh (qiyosiy + ustun).",
-       "speak": "8b  ... but Jack is ...................... (tall) of all."
+       "speak": "8b  ... but Jack is ...................... (tall) of all.",
+       "speakAnswer": "the tallest"
       },
       {
        "prompt": "9  The Grand is ....................... (luxurious) hotel in the area.",
@@ -5201,7 +5420,8 @@
         "older"
        ],
        "whyUz": "'IN THE AREA' bor → USTUN daraja.\n'luxurious' — 4 bo'g'in (UZUN)\n→ THE MOST + sifat.\n\n'the luxuriousest' XATO!\n\n'The Grand' — mehmonxona nomi.",
-       "speak": "9  The Grand is ....................... (luxurious) hotel in the area."
+       "speak": "9  The Grand is ....................... (luxurious) hotel in the area.",
+       "speakAnswer": "the most luxurious"
       },
       {
        "prompt": "10  I want to live in the country. It's much ....................... (quiet) than the city.",
@@ -5214,7 +5434,8 @@
         "older"
        ],
        "whyUz": "'THAN' bor → QIYOSIY.\n'quiet' — 2 bo'g'in, lekin qisqa sifat sifatida\n-ER oladi:\n  quiet → quietER\n\nDIQQAT — 'MUCH':\n'MUCH quieter' = ANCHA tinchroq.\n'much' qiyosiy darajani KUCHAYTIRADI\n(a lot, far ham shunday).\n\n'the country' bu yerda = QISHLOQ (shahar\nemas).",
-       "speak": "10  I want to live in the country. It's much ....................... (quiet) than the city."
+       "speak": "10  I want to live in the country. It's much ....................... (quiet) than the city.",
+       "speakAnswer": "quieter"
       }
      ]
     },
@@ -5238,7 +5459,8 @@
         "A  Must",
         "C  Should"
        ],
-       "whyUz": "KALIT: 'PLEASE' — bu ILTIMOS, majburiyat emas.\nRuxsat so'rash → CAN.\n\n'Must I have a glass of water?' =\n'suv ichishim SHARTMI?' — ma'nosiz.\n\nGrammar 61-bet, 4-mashqning 5-bandi ham\naynan shu gap edi."
+       "whyUz": "KALIT: 'PLEASE' — bu ILTIMOS, majburiyat emas.\nRuxsat so'rash → CAN.\n\n'Must I have a glass of water?' =\n'suv ichishim SHARTMI?' — ma'nosiz.\n\nGrammar 61-bet, 4-mashqning 5-bandi ham\naynan shu gap edi.",
+       "speakAnswer": "B  Can"
       },
       {
        "prompt": "2  ................. drop litter in the street.  A Don't  B Shouldn't  C Mustn't",
@@ -5249,7 +5471,8 @@
         "B  Shouldn't",
         "C  Mustn't"
        ],
-       "whyUz": "ENG MUHIM KALIT: gapda EGA YO'Q!\n\n'Shouldn't' va 'Mustn't' dan OLDIN ega kerak:\n  'YOU shouldn't drop litter.' ✓\n  'Shouldn't drop litter.'     ✗\n\nEgasiz ishlatiladigan yagona shakl —\nBUYRUQ MAYLI: 'DON'T + fe'l'.\n\nCoursebook 99-bet, varaqa:\n'Do not drop rubbish in the street.'"
+       "whyUz": "ENG MUHIM KALIT: gapda EGA YO'Q!\n\n'Shouldn't' va 'Mustn't' dan OLDIN ega kerak:\n  'YOU shouldn't drop litter.' ✓\n  'Shouldn't drop litter.'     ✗\n\nEgasiz ishlatiladigan yagona shakl —\nBUYRUQ MAYLI: 'DON'T + fe'l'.\n\nCoursebook 99-bet, varaqa:\n'Do not drop rubbish in the street.'",
+       "speakAnswer": "A  Don't"
       },
       {
        "prompt": "3  He ................. dinner at the moment.  A cooks  B cooked  C is cooking",
@@ -5260,7 +5483,8 @@
         "A  cooks",
         "B  cooked"
        ],
-       "whyUz": "VAQT KALITI: 'AT THE MOMENT' = ayni damda\n→ PRESENT CONTINUOUS (is/are + -ing).\n\n'cooks' — Present Simple (odat, har kuni)\n'cooked' — Past Simple (o'tgan zamon)\n\nBu ikkalasi 'at the moment' bilan mos kelmaydi."
+       "whyUz": "VAQT KALITI: 'AT THE MOMENT' = ayni damda\n→ PRESENT CONTINUOUS (is/are + -ing).\n\n'cooks' — Present Simple (odat, har kuni)\n'cooked' — Past Simple (o'tgan zamon)\n\nBu ikkalasi 'at the moment' bilan mos kelmaydi.",
+       "speakAnswer": "C  is cooking"
       },
       {
        "prompt": "4  There is ................. man at the door.  A an  B a  C the",
@@ -5271,7 +5495,8 @@
         "A  an",
         "C  the"
        ],
-       "whyUz": "'man' UNDOSH tovush /m/ bilan boshlanadi → 'A'.\n'an' faqat UNLI tovush oldidan\n(an apple, an hour).\n\n'the' bo'lmaydi, chunki 'There is ...'\nYANGI, noma'lum narsani tanishtiradi."
+       "whyUz": "'man' UNDOSH tovush /m/ bilan boshlanadi → 'A'.\n'an' faqat UNLI tovush oldidan\n(an apple, an hour).\n\n'the' bo'lmaydi, chunki 'There is ...'\nYANGI, noma'lum narsani tanishtiradi.",
+       "speakAnswer": "B  a"
       },
       {
        "prompt": "5  I did the shopping yesterday, ................. I didn't clean the house.  A but  B to  C when",
@@ -5282,7 +5507,8 @@
         "B  to",
         "C  when"
        ],
-       "whyUz": "MANTIQ KALITI: ikki qism QARAMA-QARSHI —\nbir ishni qildim, ikkinchisini QILMADIM.\n\nQarama-qarshilik bog'lovchisi → BUT.\n\n'to' — maqsad; 'when' — vaqt. Ikkalasi ham\nbu yerda mos kelmaydi."
+       "whyUz": "MANTIQ KALITI: ikki qism QARAMA-QARSHI —\nbir ishni qildim, ikkinchisini QILMADIM.\n\nQarama-qarshilik bog'lovchisi → BUT.\n\n'to' — maqsad; 'when' — vaqt. Ikkalasi ham\nbu yerda mos kelmaydi.",
+       "speakAnswer": "A  but"
       },
       {
        "prompt": "6  ................. I use your pen?  A Can  B Can't  C Mustn't",
@@ -5293,7 +5519,8 @@
         "B  Can't",
         "C  Mustn't"
        ],
-       "whyUz": "Ruxsat SO'RASH → CAN I ...?\n\n'Can't I use your pen?' — bu norozilik\nohangi ('nega foydalanolmayman?').\n'Mustn't I ...?' — juda g'alati.\n\n1-band bilan bir xil qoida."
+       "whyUz": "Ruxsat SO'RASH → CAN I ...?\n\n'Can't I use your pen?' — bu norozilik\nohangi ('nega foydalanolmayman?').\n'Mustn't I ...?' — juda g'alati.\n\n1-band bilan bir xil qoida.",
+       "speakAnswer": "A  Can"
       },
       {
        "prompt": "7  ................. did you go on holiday with?  A Which  B When  C Who",
@@ -5304,7 +5531,8 @@
         "A  Which",
         "B  When"
        ],
-       "whyUz": "KALIT: gap oxiridagi 'WITH' — kim BILAN?\n\nODAM haqida so'ralganda → WHO.\n  'Who did you go with?' ✓\n\n'Which' — berilgan tanlov ichidan\n  ('Which hotel did you stay at?')\n'When' — vaqt ('When did you go?')\n\nDIQQAT: predlog gap OXIRIDA qoladi —\nog'zaki inglizchada odatiy hol."
+       "whyUz": "KALIT: gap oxiridagi 'WITH' — kim BILAN?\n\nODAM haqida so'ralganda → WHO.\n  'Who did you go with?' ✓\n\n'Which' — berilgan tanlov ichidan\n  ('Which hotel did you stay at?')\n'When' — vaqt ('When did you go?')\n\nDIQQAT: predlog gap OXIRIDA qoladi —\nog'zaki inglizchada odatiy hol.",
+       "speakAnswer": "C  Who"
       },
       {
        "prompt": "8  Go along High Street and take the first turning ................. your left.  A in  B on  C to",
@@ -5315,7 +5543,8 @@
         "A  in",
         "C  to"
        ],
-       "whyUz": "'ON your left / ON your right' — TURG'UN\nibora (yo'l ko'rsatishda).\n\n  'on your left'  ✓\n  'in your left'  ✗\n  'to your left'  — ba'zan ishlatiladi, lekin\n                   'on' standart\n\n'a turning' = burilish (yo'ldagi).\n'go ALONG a street' = ko'cha bo'ylab bormoq."
+       "whyUz": "'ON your left / ON your right' — TURG'UN\nibora (yo'l ko'rsatishda).\n\n  'on your left'  ✓\n  'in your left'  ✗\n  'to your left'  — ba'zan ishlatiladi, lekin\n                   'on' standart\n\n'a turning' = burilish (yo'ldagi).\n'go ALONG a street' = ko'cha bo'ylab bormoq.",
+       "speakAnswer": "B  on"
       },
       {
        "prompt": "9  He ................. to work every day.  A is driving  B drove  C drives",
@@ -5326,7 +5555,8 @@
         "A  is driving",
         "B  drove"
        ],
-       "whyUz": "VAQT KALITI: 'EVERY DAY' — takrorlanuvchi,\nodatiy harakat → PRESENT SIMPLE.\n\n'He' — III shaxs BIRLIK → fe'lga -S:\n  he driveS ✓\n\n'is driving' — ayni damdagi harakat\n('at the moment' bilan ishlatilardi).\n'drove' — o'tgan zamon."
+       "whyUz": "VAQT KALITI: 'EVERY DAY' — takrorlanuvchi,\nodatiy harakat → PRESENT SIMPLE.\n\n'He' — III shaxs BIRLIK → fe'lga -S:\n  he driveS ✓\n\n'is driving' — ayni damdagi harakat\n('at the moment' bilan ishlatilardi).\n'drove' — o'tgan zamon.",
+       "speakAnswer": "C  drives"
       },
       {
        "prompt": "10  'Do they live in a flat?' 'Yes, they ................. .'  A do  B does  C don't",
@@ -5337,7 +5567,8 @@
         "B  does",
         "C  don't"
        ],
-       "whyUz": "QISQA JAVOB savoldagi YORDAMCHI FE'LNI\ntakrorlaydi:\n  'DO they live ...?' → 'Yes, they DO.'\n\n'does' — faqat he/she/it uchun\n  ('Does he live ...?' → 'Yes, he does.')\n\n'don't' — 'YES' bilan ZID:\n  'Yes, they don't' — mantiqsiz."
+       "whyUz": "QISQA JAVOB savoldagi YORDAMCHI FE'LNI\ntakrorlaydi:\n  'DO they live ...?' → 'Yes, they DO.'\n\n'does' — faqat he/she/it uchun\n  ('Does he live ...?' → 'Yes, he does.')\n\n'don't' — 'YES' bilan ZID:\n  'Yes, they don't' — mantiqsiz.",
+       "speakAnswer": "A  do"
       }
      ]
     },
@@ -5363,7 +5594,8 @@
         "am"
        ],
        "whyUz": "VAQT KALITI: 'YESTERDAY' → PAST SIMPLE.\nbuy → BOUGHT (noto'g'ri fe'l).\n\n'I have bought' bo'lmaydi — 'yesterday' aniq\no'tgan vaqtni ko'rsatadi.",
-       "speak": "1a  B: Oh, thanks. I ................ (buy) it yesterday."
+       "speak": "1a  B: Oh, thanks. I ................ (buy) it yesterday.",
+       "speakAnswer": "bought"
       },
       {
        "prompt": "1b  A: ................ (be) it very expensive?",
@@ -5376,7 +5608,8 @@
         "am"
        ],
        "whyUz": "Kecha sotib olingan — o'tmishdagi narx haqida\n→ PAST SIMPLE.\n'it' → WAS (was/were dan 'was').",
-       "speak": "1b  A: ................ (be) it very expensive?"
+       "speak": "1b  A: ................ (be) it very expensive?",
+       "speakAnswer": "was"
       },
       {
        "prompt": "1c  B: Yes, it ................ (be).",
@@ -5389,7 +5622,8 @@
         "am"
        ],
        "whyUz": "QISQA JAVOB savoldagi fe'lni takrorlaydi:\n  'WAS it expensive?' → 'Yes, it WAS.'",
-       "speak": "1c  B: Yes, it ................ (be)."
+       "speak": "1c  B: Yes, it ................ (be).",
+       "speakAnswer": "was"
       },
       {
        "prompt": "1d  A: ................ (you/wear) it to the party tonight?",
@@ -5402,7 +5636,8 @@
         "am"
        ],
        "whyUz": "ENG MUHIM KALIT — KEYINGI JAVOBGA QARANG:\n'Yes, I ...... (BE)' — javobda 'BE' fe'li!\n\nDemak savol ham 'BE' bilan boshlanishi kerak:\n  'ARE you going to wear ...?' → 'Yes, I AM.'\n\nAgar 'WILL you wear ...?' bo'lsa, javob\n'Yes, I WILL' bo'lardi — lekin kitob (be)\nbergan.\n\n'be going to' — oldindan o'ylangan REJA.",
-       "speak": "1d  A: ................ (you/wear) it to the party tonight?"
+       "speak": "1d  A: ................ (you/wear) it to the party tonight?",
+       "speakAnswer": "are you going to wear"
       },
       {
        "prompt": "1e  B: Yes, I ................ (be).",
@@ -5415,7 +5650,8 @@
         "are you going to wear"
        ],
        "whyUz": "'ARE you going to ...?' ga qisqa javob:\n'Yes, I AM.'\n\nQisqa javobda faqat 'be' qoladi\n('Yes, I am going to wear it' — ortiqcha).",
-       "speak": "1e  B: Yes, I ................ (be)."
+       "speak": "1e  B: Yes, I ................ (be).",
+       "speakAnswer": "am"
       },
       {
        "prompt": "2a  A: Hi, Sue. It ................ (be) Anne.",
@@ -5428,7 +5664,8 @@
         "are you going to wear"
        ],
        "whyUz": "TELEFONDA o'zini tanishtirish turg'un shakli:\n  'It's Anne.' = Bu Enn (gapiryapti).\n\nPRESENT SIMPLE ('is' → qisqartma \"'s\").\n\nDIQQAT: 'I am Anne' emas, 'IT'S Anne' —\ntelefonda shunday deyiladi.",
-       "speak": "2a  A: Hi, Sue. It ................ (be) Anne."
+       "speak": "2a  A: Hi, Sue. It ................ (be) Anne.",
+       "speakAnswer": "'s"
       },
       {
        "prompt": "2b  What ........................ (you/do) this evening?",
@@ -5441,7 +5678,8 @@
         "are you going to wear"
        ],
        "whyUz": "KELAJAKDAGI REJA haqida so'rash →\nPRESENT CONTINUOUS.\n\n'this evening' — yaqin kelajak, reja\nallaqachon bor.\n\nUnit 13 dan: aniq vaqt + reja → Present\nContinuous.",
-       "speak": "2b  What ........................ (you/do) this evening?"
+       "speak": "2b  What ........................ (you/do) this evening?",
+       "speakAnswer": "are you doing"
       },
       {
        "prompt": "2c  B: Well, I ........................ (stay) at home and relax.",
@@ -5454,7 +5692,8 @@
         "are you going to wear"
        ],
        "whyUz": "REJA (oldindan o'ylangan) → BE GOING TO.\n\n('I'm staying at home' — Present Continuous\nham to'g'ri, chunki reja aniq.)\n\nUnit 13 dan: 'be going to' — niyat/reja.",
-       "speak": "2c  B: Well, I ........................ (stay) at home and relax."
+       "speak": "2c  B: Well, I ........................ (stay) at home and relax.",
+       "speakAnswer": "'m going to stay"
       },
       {
        "prompt": "2d  A: Okay. I ........................ (call) you tomorrow.",
@@ -5467,7 +5706,8 @@
         "are you going to wear"
        ],
        "whyUz": "KALIT: 'OKAY' — qaror AYNI DAMDA qabul\nqilinyapti (Syuning javobini eshitgandan\nkeyin) → WILL.\n\n'I'm going to call' bo'lsa — reja oldindan\nbor edi degan ma'no chiqadi, lekin bu yerda\nqaror hozir tug'ildi.\n\nUnit 13 dan: WILL — ayni damdagi qaror.",
-       "speak": "2d  A: Okay. I ........................ (call) you tomorrow."
+       "speak": "2d  A: Okay. I ........................ (call) you tomorrow.",
+       "speakAnswer": "'ll call"
       },
       {
        "prompt": "3a  A: How ................ (be) your holiday, Molly?",
@@ -5480,7 +5720,8 @@
         "am"
        ],
        "whyUz": "Ta'til TUGAGAN → PAST SIMPLE.\n'your holiday' — birlik → WAS.",
-       "speak": "3a  A: How ................ (be) your holiday, Molly?"
+       "speak": "3a  A: How ................ (be) your holiday, Molly?",
+       "speakAnswer": "was"
       },
       {
        "prompt": "3b  B: Oh, it ................ (be) terrible!",
@@ -5493,7 +5734,8 @@
         "am"
        ],
        "whyUz": "PAST SIMPLE — tugagan ta'til haqida.\n'terrible' = dahshatli.",
-       "speak": "3b  B: Oh, it ................ (be) terrible!"
+       "speak": "3b  B: Oh, it ................ (be) terrible!",
+       "speakAnswer": "was"
       },
       {
        "prompt": "3c  The hotel ................ (be) very expensive",
@@ -5506,7 +5748,8 @@
         "am"
        ],
        "whyUz": "PAST SIMPLE. 'The hotel' — birlik → WAS.",
-       "speak": "3c  The hotel ................ (be) very expensive"
+       "speak": "3c  The hotel ................ (be) very expensive",
+       "speakAnswer": "was"
       },
       {
        "prompt": "3d  and the beach ................ (be) dirty.",
@@ -5519,7 +5762,8 @@
         "am"
        ],
        "whyUz": "PAST SIMPLE. 'the beach' — birlik → WAS.",
-       "speak": "3d  and the beach ................ (be) dirty."
+       "speak": "3d  and the beach ................ (be) dirty.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "3e  B: It ................ (rain) every day.",
@@ -5532,7 +5776,8 @@
         "are you going to wear"
        ],
        "whyUz": "PAST SIMPLE — ta'til tugagan.\n\nDIQQAT: 'EVERY DAY' bo'lsa ham Past Simple!\nChunki gap O'SHA ta'tildagi har kun haqida,\nhozirgi odat haqida emas.\n\n'to rain' — to'g'ri fe'l: rain → RAINED.\nOb-havo egasi DOIM 'IT'.",
-       "speak": "3e  B: It ................ (rain) every day."
+       "speak": "3e  B: It ................ (rain) every day.",
+       "speakAnswer": "rained"
       },
       {
        "prompt": "3f  A: ................ (be) the food good?",
@@ -5545,7 +5790,8 @@
         "am"
        ],
        "whyUz": "PAST SIMPLE savoli.\n'food' — SANALMAYDIGAN → birlik → WAS.",
-       "speak": "3f  A: ................ (be) the food good?"
+       "speak": "3f  A: ................ (be) the food good?",
+       "speakAnswer": "was"
       },
       {
        "prompt": "3g  B: No, it ................ (taste) awful!",
@@ -5558,7 +5804,8 @@
         "are you going to wear"
        ],
        "whyUz": "PAST SIMPLE. taste → TASTED (to'g'ri fe'l).\n\nDIQQAT: 'taste + SIFAT' (awful), RAVISH emas:\n  'It tasted AWFUL.'   ✓\n  'It tasted AWFULLY.' ✗\n\n'taste' — his fe'li (look, smell, sound,\nfeel bilan bir guruh).",
-       "speak": "3g  B: No, it ................ (taste) awful!"
+       "speak": "3g  B: No, it ................ (taste) awful!",
+       "speakAnswer": "tasted"
       },
       {
        "prompt": "4a  A: I ................ (be) hungry.",
@@ -5571,7 +5818,8 @@
         "are you going to wear"
        ],
        "whyUz": "HOZIRGI holat → PRESENT SIMPLE.\n'I am hungry' → qisqartmasi \"I'm\".\n\nDIQQAT: o'zbekchada 'qornim och' desak ham,\ninglizchada 'I AM hungry' (to be bilan).",
-       "speak": "4a  A: I ................ (be) hungry."
+       "speak": "4a  A: I ................ (be) hungry.",
+       "speakAnswer": "'m"
       },
       {
        "prompt": "4b  A: No, thanks. I ............ (want) something hot.",
@@ -5584,7 +5832,8 @@
         "are you going to wear"
        ],
        "whyUz": "PRESENT SIMPLE — xohish bildiryapti.\n\nDIQQAT — 'WANT' CONTINUOUS BO'LMAYDI:\n  'I want' ✓\n  'I am wanting' ✗\n\nShu kabi fe'llar: like, love, hate, know,\nunderstand, believe, need — bularning\nhammasi Continuous shaklda ishlatilmaydi.",
-       "speak": "4b  A: No, thanks. I ............ (want) something hot."
+       "speak": "4b  A: No, thanks. I ............ (want) something hot.",
+       "speakAnswer": "want"
       },
       {
        "prompt": "4c  I think I ..................... (have) a bowl of soup.",
@@ -5597,7 +5846,8 @@
         "are you going to wear"
        ],
        "whyUz": "KALIT: 'I THINK' — qaror AYNI DAMDA qabul\nqilinyapti → WILL.\n\n'I think I'll ...' — juda keng tarqalgan\nqolip (hozirgi qaror).\n\nUnit 13 dan: WILL — ayni damdagi qaror.\n'have' bu yerda = yemoq/ichmoq.",
-       "speak": "4c  I think I ..................... (have) a bowl of soup."
+       "speak": "4c  I think I ..................... (have) a bowl of soup.",
+       "speakAnswer": "'ll have"
       },
       {
        "prompt": "5a  A: There ................ (be) a great film on TV yesterday.",
@@ -5610,7 +5860,8 @@
         "am"
        ],
        "whyUz": "VAQT KALITI: 'YESTERDAY' → PAST SIMPLE.\n'There is' ning o'tgan zamoni — 'There WAS'\n(birlik: 'a film').\n\nKo'plik bo'lsa: 'There WERE two films'.",
-       "speak": "5a  A: There ................ (be) a great film on TV yesterday."
+       "speak": "5a  A: There ................ (be) a great film on TV yesterday.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "5b  ..................... (you/see) it?",
@@ -5623,7 +5874,8 @@
         "are you going to wear"
        ],
        "whyUz": "PAST SIMPLE savoli: DID + ega + ASOSIY shakl.\n\n  'Did you SEE it?'  ✓\n  'Did you SAW it?'  ✗ (did dan keyin ASOSIY\n                        shakl!)\n\nsee → SAW → SEEN, lekin savolda 'see' qoladi.",
-       "speak": "5b  ..................... (you/see) it?"
+       "speak": "5b  ..................... (you/see) it?",
+       "speakAnswer": "did you see"
       },
       {
        "prompt": "5c  B: No, I ..................... .",
@@ -5636,7 +5888,8 @@
         "are you going to wear"
        ],
        "whyUz": "QISQA JAVOB savoldagi yordamchi fe'lni\ntakrorlaydi:\n  'DID you see it?' → 'No, I DIDN'T.'\n\nQisqa javobda asosiy fe'l takrorlanmaydi.",
-       "speak": "5c  B: No, I ..................... ."
+       "speak": "5c  B: No, I ..................... .",
+       "speakAnswer": "didn't"
       }
      ]
     }

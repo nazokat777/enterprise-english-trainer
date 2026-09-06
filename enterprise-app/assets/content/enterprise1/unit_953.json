@@ -36,7 +36,8 @@
         "beeped"
        ],
        "whyUz": "'HEAVY traffic' — turg'un birikma\n(zich transport oqimi).\nCoursebook 83, 84-betlarda ham bor.\nDIQQAT: 'heavy' bu yerda 'og'ir' EMAS.",
-       "speak": "1  There is a lot of ............ traffic in the city centre."
+       "speak": "1  There is a lot of ............ traffic in the city centre.",
+       "speakAnswer": "heavy"
       },
       {
        "prompt": "2  The children were scared when the lions ............ .",
@@ -48,7 +49,8 @@
         "beeped"
        ],
        "whyUz": "'to ROAR' = bo'kirmoq (sher, arslon).\nO'tgan zamon → ROARED (to'g'ri fe'l).\n'were scared' ham o'tgan zamonda.",
-       "speak": "2  The children were scared when the lions ............ ."
+       "speak": "2  The children were scared when the lions ............ .",
+       "speakAnswer": "roared"
       },
       {
        "prompt": "3  Peter ............ the horn and shouted for help.",
@@ -60,7 +62,8 @@
         "completed"
        ],
        "whyUz": "'to BEEP the horn' = signal chalmoq.\nO'tgan zamon → BEEPED.\n'a horn' = mashinadagi signal.\n'and shouted' ham o'tgan zamonda.",
-       "speak": "3  Peter ............ the horn and shouted for help."
+       "speak": "3  Peter ............ the horn and shouted for help.",
+       "speakAnswer": "beeped"
       },
       {
        "prompt": "4  Princess Diana ............ her education in Switzerland.",
@@ -72,7 +75,8 @@
         "beeped"
        ],
        "whyUz": "'to COMPLETE one's education' = ta'limini\ntugatmoq.\nO'tgan zamon → COMPLETED.\nMalika Diana — Coursebook 70-71-betlardagi\nmatndan (Unit 10).",
-       "speak": "4  Princess Diana ............ her education in Switzerland."
+       "speak": "4  Princess Diana ............ her education in Switzerland.",
+       "speakAnswer": "completed"
       },
       {
        "prompt": "5  They stayed in a wonderful ............ house by the sea.",
@@ -84,7 +88,8 @@
         "completed"
        ],
        "whyUz": "Bo'shliqdan keyin 'HOUSE' turibdi →\not + ot birikmasi: 'GUEST HOUSE'.\n'a guest house' = mehmon uyi (kichik xususiy\nmehmonxona).\n'a guest' = mehmon.",
-       "speak": "5  They stayed in a wonderful ............ house by the sea."
+       "speak": "5  They stayed in a wonderful ............ house by the sea.",
+       "speakAnswer": "guest"
       },
       {
        "prompt": "6  Tupelo, Mississippi is Elvis Presley's ............ .",
@@ -96,7 +101,8 @@
         "beeped"
        ],
        "whyUz": "'a BIRTHPLACE' = tug'ilgan joy (birth + place).\nCoursebook 87-bet: 'Stratford ... is\nShakespeare's BIRTHPLACE.'\nElvis Presli 1935-yilda Tupelo shahrida\ntug'ilgan.",
-       "speak": "6  Tupelo, Mississippi is Elvis Presley's ............ ."
+       "speak": "6  Tupelo, Mississippi is Elvis Presley's ............ .",
+       "speakAnswer": "birthplace"
       },
       {
        "prompt": "7  You can only ............ the island on foot.",
@@ -108,7 +114,8 @@
         "beeped"
        ],
        "whyUz": "'CAN' dan keyin fe'lning ASOSIY shakli →\nGET AROUND.\n'to get around' = aylanib chiqmoq, yurib yurmoq.\n'ON FOOT' = piyoda (predlog ON).",
-       "speak": "7  You can only ............ the island on foot."
+       "speak": "7  You can only ............ the island on foot.",
+       "speakAnswer": "get around"
       },
       {
        "prompt": "8  Paris is ............ to many famous actors.",
@@ -120,7 +127,8 @@
         "beeped"
        ],
        "whyUz": "'TO' predlogi bor → 'be HOME TO ...'\nturg'un birikmasi (... ning makoni bo'lmoq).\nCoursebook 83-bet: 'It's also HOME TO film\nstars.'\n'home OF' XATO.",
-       "speak": "8  Paris is ............ to many famous actors."
+       "speak": "8  Paris is ............ to many famous actors.",
+       "speakAnswer": "home"
       },
       {
        "prompt": "9  The band has got ............ in many countries.",
@@ -132,7 +140,8 @@
         "completed"
        ],
        "whyUz": "'a FAN' = muxlis.\n'in many countries' → KO'PLIK: FANS.\nUnit 10 ('The Price of Fame') mavzusidan.",
-       "speak": "9  The band has got ............ in many countries."
+       "speak": "9  The band has got ............ in many countries.",
+       "speakAnswer": "fans"
       },
       {
        "prompt": "10  We stopped at a ............ shop to buy gifts.",
@@ -144,7 +153,8 @@
         "beeped"
        ],
        "whyUz": "Bo'shliqdan keyin 'SHOP' turibdi →\not + ot birikmasi: 'SOUVENIR SHOP' (sovg'a\ndo'koni).\nGrammar 55-betdagi Edinburg xatida ham bor:\n'lots of SOUVENIR SHOPS'.\n'a gift' = sovg'a.",
-       "speak": "10  We stopped at a ............ shop to buy gifts."
+       "speak": "10  We stopped at a ............ shop to buy gifts.",
+       "speakAnswer": "souvenir"
       }
      ]
     },
@@ -167,7 +177,8 @@
         "crowded",
         "heavy"
        ],
-       "whyUz": "KO'ChALAR haqida → CROWDED (gavjum).\n'heavy' faqat 'traffic' bilan keladi\n('heavy traffic'), ko'cha bilan emas."
+       "whyUz": "KO'ChALAR haqida → CROWDED (gavjum).\n'heavy' faqat 'traffic' bilan keladi\n('heavy traffic'), ko'cha bilan emas.",
+       "speakAnswer": "crowded"
       },
       {
        "prompt": "2  The street was too ............ . Tom couldn't drive along it.",
@@ -177,7 +188,8 @@
         "narrow",
         "wide"
        ],
-       "whyUz": "'Tom COULDN'T DRIVE along it' — IP.\nNega hayday olmadi? — ko'cha TOR bo'lgani uchun.\n'narrow' = tor, 'wide' = keng (teskari)."
+       "whyUz": "'Tom COULDN'T DRIVE along it' — IP.\nNega hayday olmadi? — ko'cha TOR bo'lgani uchun.\n'narrow' = tor, 'wide' = keng (teskari).",
+       "speakAnswer": "narrow"
       },
       {
        "prompt": "3  Big cities are often ............ and polluted.",
@@ -187,7 +199,8 @@
         "noisy",
         "quiet"
        ],
-       "whyUz": "'and POLLUTED' — SALBIY sifatlar qatori.\n'quiet' IJOBIY → mos emas.\nCoursebook 82-betda ham katta shahar 'noisy'\nva 'polluted' edi."
+       "whyUz": "'and POLLUTED' — SALBIY sifatlar qatori.\n'quiet' IJOBIY → mos emas.\nCoursebook 82-betda ham katta shahar 'noisy'\nva 'polluted' edi.",
+       "speakAnswer": "noisy"
       },
       {
        "prompt": "4  He couldn't buy the shoes because they were too ............ .",
@@ -197,7 +210,8 @@
         "expensive",
         "cheap"
        ],
-       "whyUz": "'He COULDN'T BUY ... BECAUSE they were TOO ...'\nNega sotib ololmadi? — QIMMAT bo'lgani uchun.\n'too' + imkonsizlik (Workbook 50-bet, 12-mashq)."
+       "whyUz": "'He COULDN'T BUY ... BECAUSE they were TOO ...'\nNega sotib ololmadi? — QIMMAT bo'lgani uchun.\n'too' + imkonsizlik (Workbook 50-bet, 12-mashq).",
+       "speakAnswer": "expensive"
       },
       {
        "prompt": "5  He's a very ............ child. He knows all the answers.",
@@ -207,7 +221,8 @@
         "clever",
         "silly"
        ],
-       "whyUz": "'He KNOWS ALL THE ANSWERS' — IP.\nHamma javobni biladigan bola — AQLLI.\n'clever' = aqlli, 'silly' = ahmoq (teskari)."
+       "whyUz": "'He KNOWS ALL THE ANSWERS' — IP.\nHamma javobni biladigan bola — AQLLI.\n'clever' = aqlli, 'silly' = ahmoq (teskari).",
+       "speakAnswer": "clever"
       },
       {
        "prompt": "6  Don't go near the river, it's very ............ .",
@@ -217,7 +232,8 @@
         "dangerous",
         "safe"
        ],
-       "whyUz": "'DON'T GO NEAR' — ogohlantirish.\nNega bormaslik kerak? — XAVFLI bo'lgani uchun.\n'safe' (xavfsiz) — teskari."
+       "whyUz": "'DON'T GO NEAR' — ogohlantirish.\nNega bormaslik kerak? — XAVFLI bo'lgani uchun.\n'safe' (xavfsiz) — teskari.",
+       "speakAnswer": "dangerous"
       },
       {
        "prompt": "7  That is a(n) ............ question. I can't answer it.",
@@ -227,7 +243,8 @@
         "difficult",
         "easy"
        ],
-       "whyUz": "'I CAN'T ANSWER IT' — IP.\nJavob bera olmasa — savol QIYIN.\nDIQQAT: kitob 'a(n)' deb yozgan, chunki\n'a difficult' / 'an easy' — artikl javobga\nqarab o'zgaradi."
+       "whyUz": "'I CAN'T ANSWER IT' — IP.\nJavob bera olmasa — savol QIYIN.\nDIQQAT: kitob 'a(n)' deb yozgan, chunki\n'a difficult' / 'an easy' — artikl javobga\nqarab o'zgaradi.",
+       "speakAnswer": "difficult"
       },
       {
        "prompt": "8  It was a boiling ............ day, so we went to the beach.",
@@ -237,7 +254,8 @@
         "hot",
         "cold"
        ],
-       "whyUz": "'BOILING HOT' — turg'un birikma\n('boiling' = qaynoq).\n'boiling cold' MA'NOSIZ.\n'so we went to the BEACH' ham tasdiqlaydi."
+       "whyUz": "'BOILING HOT' — turg'un birikma\n('boiling' = qaynoq).\n'boiling cold' MA'NOSIZ.\n'so we went to the BEACH' ham tasdiqlaydi.",
+       "speakAnswer": "hot"
       },
       {
        "prompt": "9  He wasn't scared when the fire started. He was very ............ .",
@@ -247,7 +265,8 @@
         "brave",
         "blind"
        ],
-       "whyUz": "'He WASN'T SCARED' — IP.\nQo'rqmagan odam — JASUR.\n'brave' = jasur, 'blind' = ko'r (mos emas)."
+       "whyUz": "'He WASN'T SCARED' — IP.\nQo'rqmagan odam — JASUR.\n'brave' = jasur, 'blind' = ko'r (mos emas).",
+       "speakAnswer": "brave"
       },
       {
        "prompt": "10  I like my teacher. His lessons are very ............ .",
@@ -257,7 +276,8 @@
         "interesting",
         "dull"
        ],
-       "whyUz": "'I LIKE my teacher' — IJOBIY.\nYoqadigan darslar — QIZIQARLI.\n'dull' = zerikarli (teskari).\nWorkbook 48-betda 'dull = boring' sinonimi."
+       "whyUz": "'I LIKE my teacher' — IJOBIY.\nYoqadigan darslar — QIZIQARLI.\n'dull' = zerikarli (teskari).\nWorkbook 48-betda 'dull = boring' sinonimi.",
+       "speakAnswer": "interesting"
       }
      ]
     },
@@ -282,7 +302,8 @@
         "in"
        ],
        "whyUz": "'packed WITH ...' — turg'un birikma\n(... bilan to'lib ketgan).\nTO'LGANLIK doim WITH bilan.\nCoursebook 83-bet: 'a place PACKED WITH\ncelebrities'.",
-       "speak": "1  The shop was packed ............ fashionable clothes."
+       "speak": "1  The shop was packed ............ fashionable clothes.",
+       "speakAnswer": "with"
       },
       {
        "prompt": "2  This is the most peaceful place ............ the world.",
@@ -294,7 +315,8 @@
         "at"
        ],
        "whyUz": "'the most peaceful' — ORTTIRMA daraja +\n'the world' — JOY → IN.\nGrammar 52-bet: 'the ... IN' (joy bilan).",
-       "speak": "2  This is the most peaceful place ............ the world."
+       "speak": "2  This is the most peaceful place ............ the world.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "3  My school is close ............ my house.",
@@ -306,7 +328,8 @@
         "at"
        ],
        "whyUz": "'close TO ...' — turg'un birikma (... ga yaqin).\nDOIM 'to' bilan.\nDIQQAT: sinonimi 'near' esa predlogSIZ:\n'near my house'.",
-       "speak": "3  My school is close ............ my house."
+       "speak": "3  My school is close ............ my house.",
+       "speakAnswer": "to"
       },
       {
        "prompt": "4  Football is popular ............ children.",
@@ -318,7 +341,8 @@
         "in"
        ],
        "whyUz": "'popular WITH ...' — turg'un birikma\n(... orasida mashhur).\n'popular FOR' XATO.\nWorkbook 50-bet, 14-mashqda ham shu xato\ntuzatilgan edi.",
-       "speak": "4  Football is popular ............ children."
+       "speak": "4  Football is popular ............ children.",
+       "speakAnswer": "with"
       },
       {
        "prompt": "5  To get to the station, take the second turning ............ your left.",
@@ -330,7 +354,8 @@
         "in"
        ],
        "whyUz": "'ON your left / ON your right' — yo'l\nko'rsatish iborasi.\n'a turning' = burilish.\n'in your left' XATO.",
-       "speak": "5  To get to the station, take the second turning ............ your left."
+       "speak": "5  To get to the station, take the second turning ............ your left.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "6  Bob wants to study ............ Oxford University.",
@@ -342,7 +367,8 @@
         "in"
        ],
        "whyUz": "MUASSASA bilan AT:\n'study AT university', 'AT school'.\n'in Oxford University' XATO.\nDIQQAT: 'IN Oxford' (shahar) — boshqa gap.",
-       "speak": "6  Bob wants to study ............ Oxford University."
+       "speak": "6  Bob wants to study ............ Oxford University.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "7  Alex was born ............ 6th August, 1981.",
@@ -354,7 +380,8 @@
         "in"
        ],
        "whyUz": "ANIQ SANA → ON.\n'ON 6th August, 1981'.\nDIQQAT: 8-band bilan SOLISHTIRING —\nu yerda faqat YIL bor → 'IN'.\nBu — eng ko'p xato qilinadigan joy.",
-       "speak": "7  Alex was born ............ 6th August, 1981."
+       "speak": "7  Alex was born ............ 6th August, 1981.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "8  John F. Kennedy died ............ 1963.",
@@ -366,7 +393,8 @@
         "at"
        ],
        "whyUz": "FAQAT YIL → IN.\n'IN 1963'.\nDIQQAT: 7-band bilan SOLISHTIRING —\nu yerda ANIQ SANA bor → 'ON'.\nQOIDA: AT + soat, ON + kun/sana,\nIN + oy/yil/fasl.",
-       "speak": "8  John F. Kennedy died ............ 1963."
+       "speak": "8  John F. Kennedy died ............ 1963.",
+       "speakAnswer": "in"
       }
      ]
     },
@@ -386,56 +414,64 @@
        "answer": "loudly",
        "promptUz": "Oddiy qoida",
        "whyUz": "loud + LY = LOUDLY (baland ovozda).\nEng oddiy qoida — hech narsa o'zgarmaydi.",
-       "speak": "1  loud  -  ............"
+       "speak": "1  loud  -  ............",
+       "speakAnswer": "loudly"
       },
       {
        "prompt": "2  tight  -  ............",
        "answer": "tightly",
        "promptUz": "Oddiy qoida",
        "whyUz": "tight + LY = TIGHTLY (mahkam).\n'to hold on tightly' = mahkam ushlamoq.",
-       "speak": "2  tight  -  ............"
+       "speak": "2  tight  -  ............",
+       "speakAnswer": "tightly"
       },
       {
        "prompt": "3  sleepy  -  ............",
        "answer": "sleepily",
        "promptUz": "'-y' bilan tugagan",
        "whyUz": "'-y' TUSHADI, '-ILY' qo'shiladi:\nsleepy → sleepILY (uyquchan holda).\n'sleepyly' XATO.",
-       "speak": "3  sleepy  -  ............"
+       "speak": "3  sleepy  -  ............",
+       "speakAnswer": "sleepily"
       },
       {
        "prompt": "4  nervous  -  ............",
        "answer": "nervously",
        "promptUz": "Oddiy qoida",
        "whyUz": "nervous + LY = NERVOUSLY (asabiy holda).\nWorkbook 47-bet: 'She walked NERVOUSLY to the\ndoor.'",
-       "speak": "4  nervous  -  ............"
+       "speak": "4  nervous  -  ............",
+       "speakAnswer": "nervously"
       },
       {
        "prompt": "5  happy  -  ............",
        "answer": "happily",
        "promptUz": "'-y' bilan tugagan",
        "whyUz": "'-y' TUSHADI, '-ILY' qo'shiladi:\nhappy → happILY (xursand holda).\n3-band bilan bir xil qoida.",
-       "speak": "5  happy  -  ............"
+       "speak": "5  happy  -  ............",
+       "speakAnswer": "happily"
       },
       {
        "prompt": "6  careful  -  ............",
        "answer": "carefully",
        "promptUz": "Oddiy qoida",
        "whyUz": "careful + LY = CAREFULLY (ehtiyotkorlik bilan).\nDIQQAT: ikkita 'l' bo'ladi (carefuL + Ly).\nGrammar 55-bet, 12-mashq: 'My father always\ndrives very CAREFULLY.'",
-       "speak": "6  careful  -  ............"
+       "speak": "6  careful  -  ............",
+       "speakAnswer": "carefully"
       },
       {
        "prompt": "7  desperate  -  ............",
        "answer": "desperately",
        "promptUz": "'-e' bilan tugagan",
        "whyUz": "desperate + LY = DESPERATELY\n(umidsiz holda, jon-jahdi bilan).\nDIQQAT: 'e' TUSHMAYDI — shunchaki '-ly'\nqo'shiladi.",
-       "speak": "7  desperate  -  ............"
+       "speak": "7  desperate  -  ............",
+       "speakAnswer": "desperately"
       },
       {
        "prompt": "8  good  -  ............",
        "answer": "well",
        "promptUz": "DIQQAT — NOTO'G'RI ravish",
        "whyUz": "good → WELL (NOTO'G'RI ravish).\n'goodly' XATO.\n\nENG MUHIM FARQ:\n  'good' — SIFAT: a GOOD student\n  'well' — RAVISH: He speaks WELL\n\n  'He speaks English WELL.'  ✓\n  'He speaks English good.'  ✗",
-       "speak": "8  good  -  ............"
+       "speak": "8  good  -  ............",
+       "speakAnswer": "well"
       }
      ]
     }
@@ -470,7 +506,8 @@
         "helped"
        ],
        "whyUz": "'a ...... British POLITICIAN' — 'a' va otning\norasida → SIFAT kerak.\nRo'yxatdagi yagona sifat — FAMOUS (mashhur).",
-       "speak": "1  Winston Churchill was a ............ British politician."
+       "speak": "1  Winston Churchill was a ............ British politician.",
+       "speakAnswer": "famous"
       },
       {
        "prompt": "2  He was ............ in Oxfordshire, England, on 30th November, 1874.",
@@ -482,7 +519,8 @@
         "helped"
        ],
        "whyUz": "'be BORN' = tug'ilmoq (turg'un birikma).\nJoy va SANA berilgan → BORN.\nDIQQAT: 'ON 30th November' — aniq sana → ON\n(90-bet, 3-mashqning qoidasi).",
-       "speak": "2  He was ............ in Oxfordshire, England, on 30th November, 1874."
+       "speak": "2  He was ............ in Oxfordshire, England, on 30th November, 1874.",
+       "speakAnswer": "born"
       },
       {
        "prompt": "3  He ............ at the Royal Military College in Sandhurst.",
@@ -494,7 +532,8 @@
         "born"
        ],
        "whyUz": "Kollejda nima qiladi? → STUDIED (o'qidi).\n'study AT a college' — muassasa bilan AT.\nSandxerst — Britaniyaning mashhur harbiy\nakademiyasi.",
-       "speak": "3  He ............ at the Royal Military College in Sandhurst."
+       "speak": "3  He ............ at the Royal Military College in Sandhurst.",
+       "speakAnswer": "studied"
       },
       {
        "prompt": "4  After he completed his ............ in 1896, he became a journalist.",
@@ -506,7 +545,8 @@
         "helped"
        ],
        "whyUz": "'HIS ......' — egalik olmoshidan keyin OT kerak.\n'complete one's EDUCATION' = ta'limini tugatmoq.\n90-betdagi 1-mashqning 4-bandi ham shu ibora:\n'Princess Diana COMPLETED HER EDUCATION.'",
-       "speak": "4  After he completed his ............ in 1896, he became a journalist."
+       "speak": "4  After he completed his ............ in 1896, he became a journalist.",
+       "speakAnswer": "education"
       },
       {
        "prompt": "5  ... he became a journalist and ............ for a newspaper.",
@@ -518,7 +558,8 @@
         "born"
        ],
        "whyUz": "'...... FOR a newspaper' → 'work FOR' turg'un\nbirikma (biror joyda ishlamoq).\n→ WORKED.\n'and' dan keyin ega takrorlanmaydi.",
-       "speak": "5  ... he became a journalist and ............ for a newspaper."
+       "speak": "5  ... he became a journalist and ............ for a newspaper.",
+       "speakAnswer": "worked"
       },
       {
        "prompt": "6  The people ............ him for his strength and wisdom.",
@@ -530,7 +571,8 @@
         "born"
        ],
        "whyUz": "Xalq uni nima qildi? → LOVED (sevdi).\n'love sb FOR sth' = kimnidir nimasi uchun sevmoq.\n'strength' = kuch, 'wisdom' = donolik.",
-       "speak": "6  The people ............ him for his strength and wisdom."
+       "speak": "6  The people ............ him for his strength and wisdom.",
+       "speakAnswer": "loved"
       },
       {
        "prompt": "7  He ............ his country very much during the Second World War.",
@@ -542,7 +584,8 @@
         "born"
        ],
        "whyUz": "Mamlakatiga nima qildi? → HELPED (yordam berdi).\n'help sb' — predlogSIZ.\n'during' = ... davomida.",
-       "speak": "7  He ............ his country very much during the Second World War."
+       "speak": "7  He ............ his country very much during the Second World War.",
+       "speakAnswer": "helped"
       },
       {
        "prompt": "8  He ............ Clementine Hozier in 1908.",
@@ -554,7 +597,8 @@
         "born"
        ],
        "whyUz": "AYOL ISMI berilgan → MARRIED (uylandi).\n'marry sb' — predlogSIZ ('marry WITH' XATO).\nDIQQAT: xatboshida tartib buzilgan —\nuylanish (1908) Bosh vazirlikdan (1940) OLDIN\nsodir bo'lgan.",
-       "speak": "8  He ............ Clementine Hozier in 1908."
+       "speak": "8  He ............ Clementine Hozier in 1908.",
+       "speakAnswer": "married"
       },
       {
        "prompt": "9  Churchill ............ at home in 1965. He was 91 years old.",
@@ -566,7 +610,8 @@
         "born"
        ],
        "whyUz": "Oxirgi voqea → DIED (vafot etdi).\n'die AT home' — predlog AT.\n'IN 1965' — faqat yil → IN.\nESLATMA: kitob '91 years old' deydi, aslida\nu 90 yoshda edi (30.11.1874 - 24.01.1965).",
-       "speak": "9  Churchill ............ at home in 1965. He was 91 years old."
+       "speak": "9  Churchill ............ at home in 1965. He was 91 years old.",
+       "speakAnswer": "died"
       }
      ]
     },
@@ -625,70 +670,80 @@
        "answer": "was",
        "promptUz": "'the last time' — birlik",
        "whyUz": "'the last time' BIRLIK → WAS.\n'be' fe'li bilan savolda 'did' KERAK EMAS.",
-       "speak": "1  When ............ (be) the last time you ............ (tidy) your room?  [1-bo'shliq]"
+       "speak": "1  When ............ (be) the last time you ............ (tidy) your room?  [1-bo'shliq]",
+       "speakAnswer": "was"
       },
       {
        "prompt": "1  ... the last time you ............ (tidy) your room?  [2-bo'shliq]",
        "answer": "tidied",
        "promptUz": "DIQQAT — bu ERGASH gap, savol emas",
        "whyUz": "ERGASH GAP → 'did' KERAK EMAS,\nfe'l O'TGAN shaklda: TIDIED.\n'you did tidy' XATO.\nYOZILISHI: tidy → '-y' tushadi → TIDIED.\nGrammar 54-bet, 9-mashqda ham shu qolip.",
-       "speak": "1  ... the last time you ............ (tidy) your room?  [2-bo'shliq]"
+       "speak": "1  ... the last time you ............ (tidy) your room?  [2-bo'shliq]",
+       "speakAnswer": "tidied"
       },
       {
        "prompt": "2  They ............ (go) to Malta last month.",
        "answer": "went",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "'last month' → PAST SIMPLE.\ngo → WENT (noto'g'ri fe'l).\nMalta — O'rta yer dengizidagi orol davlat.",
-       "speak": "2  They ............ (go) to Malta last month."
+       "speak": "2  They ............ (go) to Malta last month.",
+       "speakAnswer": "went"
       },
       {
        "prompt": "3  Yesterday we ............ (cut) the grass, then we ............ (wash) the car.",
        "answer": "cut / washed",
        "promptUz": "DIQQAT — 'cut' o'zgarmaydi",
        "whyUz": "cut → CUT → CUT — shakl O'ZGARMAYDI\n(noto'g'ri fe'l).\n'cutted' XATO.\n'Yesterday' o'tgan zamonni ko'rsatadi.\nwash → WASHED (to'g'ri fe'l).",
-       "speak": "3  Yesterday we ............ (cut) the grass, then we ............ (wash) the car."
+       "speak": "3  Yesterday we ............ (cut) the grass, then we ............ (wash) the car.",
+       "speakAnswer": "cut / washed"
       },
       {
        "prompt": "4  When we ............ (go) to Europe last year we ............ (drive) through France and Italy.",
        "answer": "went / drove",
        "promptUz": "Ikkalasi ham noto'g'ri fe'l",
        "whyUz": "'last year' → PAST SIMPLE.\ngo → WENT, drive → DROVE (ikkalasi noto'g'ri).\n'through' = ... orqali, ... bo'ylab.\nDIQQAT: 'When we went ...' — ERGASH gap,\n'did' KERAK EMAS.",
-       "speak": "4  When we ............ (go) to Europe last year we ............ (drive) through France and Italy."
+       "speak": "4  When we ............ (go) to Europe last year we ............ (drive) through France and Italy.",
+       "speakAnswer": "went / drove"
       },
       {
        "prompt": "5  They ............ (not/play) my favourite song at the concert yesterday.",
        "answer": "didn't play",
        "promptUz": "INKOR shakl",
        "whyUz": "PAST SIMPLE INKOR: DIDN'T + PLAY (ASOSIY shakl).\n'didn't played' XATO.\n'at the concert' — predlog AT.",
-       "speak": "5  They ............ (not/play) my favourite song at the concert yesterday."
+       "speak": "5  They ............ (not/play) my favourite song at the concert yesterday.",
+       "speakAnswer": "didn't play"
       },
       {
        "prompt": "6  The last time I ............ (have) a haircut was two weeks ago.",
        "answer": "had",
        "promptUz": "ERGASH gap; noto'g'ri fe'l",
        "whyUz": "ERGASH GAP → 'did' KERAK EMAS.\nhave → HAD (noto'g'ri fe'l).\n'have a haircut' = sochini oldirmoq.\n'was' allaqachon gapda bor — u asosiy fe'l.\n1-band bilan bir xil qolip.",
-       "speak": "6  The last time I ............ (have) a haircut was two weeks ago."
+       "speak": "6  The last time I ............ (have) a haircut was two weeks ago.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "7  My sister ............ (make) a beautiful cake yesterday and I ............ (cook) dinner.",
        "answer": "made / cooked",
        "promptUz": "Biri noto'g'ri, biri to'g'ri fe'l",
        "whyUz": "make → MADE (noto'g'ri fe'l).\ncook → COOKED (to'g'ri fe'l).\n'Yesterday' → past simple.\nDIQQAT: 'make a cake' = tort pishirmoq\n('do a cake' XATO).",
-       "speak": "7  My sister ............ (make) a beautiful cake yesterday and I ............ (cook) dinner."
+       "speak": "7  My sister ............ (make) a beautiful cake yesterday and I ............ (cook) dinner.",
+       "speakAnswer": "made / cooked"
       },
       {
        "prompt": "8  Sally ............ (not/visit) her grandparents last Christmas, so she ............ (write) them a letter.",
        "answer": "didn't visit / wrote",
        "promptUz": "INKOR + noto'g'ri fe'l",
        "whyUz": "INKOR: DIDN'T + VISIT (asosiy shakl).\nwrite → WROTE (noto'g'ri fe'l).\n'so' — NATIJA bog'lovchisi: bormadi →\nshuning uchun xat yozdi.\n'write sb a letter' = kimgadir xat yozmoq.",
-       "speak": "8  Sally ............ (not/visit) her grandparents last Christmas, so she ............ (write) them a letter."
+       "speak": "8  Sally ............ (not/visit) her grandparents last Christmas, so she ............ (write) them a letter.",
+       "speakAnswer": "didn't visit / wrote"
       },
       {
        "prompt": "9  Yesterday we ............ (take) the camera with us, but we ............ (not/take) any pictures.",
        "answer": "took / didn't take",
        "promptUz": "DIQQAT — bitta fe'l, ikki xil shakl",
        "whyUz": "BITTA fe'l IKKI xil shaklda:\n  TASDIQ → TOOK (o'tgan shakl)\n  INKOR  → DIDN'T TAKE (ASOSIY shakl)\n'didn't took' XATO.\nDIQQAT: 'ANY pictures' — 'any' INKOR gapda.\n'take pictures' = surat olmoq.",
-       "speak": "9  Yesterday we ............ (take) the camera with us, but we ............ (not/take) any pictures."
+       "speak": "9  Yesterday we ............ (take) the camera with us, but we ............ (not/take) any pictures.",
+       "speakAnswer": "took / didn't take"
       }
      ]
     },
@@ -713,7 +768,8 @@
         "were"
        ],
        "whyUz": "'TODAY' → HOZIRGI zamon.\n'she' BIRLIK → IS.",
-       "speak": "1  Today she ............ a famous film star, ..."
+       "speak": "1  Today she ............ a famous film star, ...",
+       "speakAnswer": "is"
       },
       {
        "prompt": "1  ... but when she was twenty years old she ............ .",
@@ -725,7 +781,8 @@
         "couldn't"
        ],
        "whyUz": "'when she WAS twenty' → O'TGAN zamon.\nQarama-qarshilik ('but') → INKOR: WASN'T.\n= o'shanda mashhur emas edi.",
-       "speak": "1  ... but when she was twenty years old she ............ ."
+       "speak": "1  ... but when she was twenty years old she ............ .",
+       "speakAnswer": "wasn't"
       },
       {
        "prompt": "2  There ............ six members in the band now.",
@@ -737,7 +794,8 @@
         "were"
        ],
        "whyUz": "'NOW' → HOZIRGI zamon.\n'six members' KO'PLIK → ARE.\n'There ARE ...' = ... bor.",
-       "speak": "2  There ............ six members in the band now."
+       "speak": "2  There ............ six members in the band now.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "2  Three years ago there ............ only four members.",
@@ -749,7 +807,8 @@
         "couldn't"
        ],
        "whyUz": "'three years AGO' → O'TGAN zamon.\n'four members' KO'PLIK → WERE.\n'There WERE ...' = ... bor edi.",
-       "speak": "2  Three years ago there ............ only four members."
+       "speak": "2  Three years ago there ............ only four members.",
+       "speakAnswer": "were"
       },
       {
        "prompt": "3  A: ............ you play the guitar well when you were twelve?",
@@ -761,7 +820,8 @@
         "were"
        ],
        "whyUz": "'when you WERE twelve' → O'TGAN zamon →\n'CAN' emas, 'COULD'.\n'could' = o'tmishdagi QOBILIYAT.\nSavolda 'Could' eng oldinda.",
-       "speak": "3  A: ............ you play the guitar well when you were twelve?"
+       "speak": "3  A: ............ you play the guitar well when you were twelve?",
+       "speakAnswer": "Could"
       },
       {
        "prompt": "3  B: No, I ............ , ...",
@@ -773,7 +833,8 @@
         "were"
        ],
        "whyUz": "QISQA JAVOB: 'No, I COULDN'T.'\nSavol 'Could ...?' bilan → javob ham\n'could/couldn't' bilan.",
-       "speak": "3  B: No, I ............ , ..."
+       "speak": "3  B: No, I ............ , ...",
+       "speakAnswer": "couldn't"
       },
       {
        "prompt": "3  ... but I ............ play it well now.",
@@ -785,7 +846,8 @@
         "were"
        ],
        "whyUz": "'NOW' → HOZIRGI zamon → CAN.\n'can' = hozirgi qobiliyat.\nQarama-qarshilik: o'shanda chala olmasdi,\nhozir chala oladi.",
-       "speak": "3  ... but I ............ play it well now."
+       "speak": "3  ... but I ............ play it well now.",
+       "speakAnswer": "can"
       },
       {
        "prompt": "4  I ............ five brothers, ...",
@@ -797,7 +859,8 @@
         "couldn't"
        ],
        "whyUz": "EGALIK, HOZIRGI zamon, TASDIQ → HAVE GOT.\n'I have got five brothers' = beshta akam bor.\n'I' bilan 'have got' ('has got' EMAS).",
-       "speak": "4  I ............ five brothers, ..."
+       "speak": "4  I ............ five brothers, ...",
+       "speakAnswer": "have got"
       },
       {
        "prompt": "4  ... but I ............ any sisters.",
@@ -809,7 +872,8 @@
         "were"
        ],
        "whyUz": "EGALIK, HOZIRGI zamon, INKOR → HAVEN'T GOT.\nDIQQAT: 'ANY sisters' — 'any' INKOR gapda\n('some' emas).",
-       "speak": "4  ... but I ............ any sisters."
+       "speak": "4  ... but I ............ any sisters.",
+       "speakAnswer": "haven't got"
       },
       {
        "prompt": "5  When I ............ young, ...",
@@ -821,7 +885,8 @@
         "were"
        ],
        "whyUz": "'When I ...... young' → O'TGAN zamon.\n'I' → WAS.\nBu — ergash gap, savol emas.",
-       "speak": "5  When I ............ young, ..."
+       "speak": "5  When I ............ young, ...",
+       "speakAnswer": "was"
       },
       {
        "prompt": "5  ... there ............ any nightclubs in the town.",
@@ -833,7 +898,8 @@
         "were"
        ],
        "whyUz": "O'TGAN zamon, KO'PLIK ('nightclubs'), INKOR →\nWEREN'T.\n'There WEREN'T any nightclubs' = tungi klublar\nyo'q edi.\nDIQQAT: 'ANY' — inkor gapda.",
-       "speak": "5  ... there ............ any nightclubs in the town."
+       "speak": "5  ... there ............ any nightclubs in the town.",
+       "speakAnswer": "weren't"
       }
      ]
     }
@@ -866,7 +932,8 @@
         "more",
         "most"
        ],
-       "whyUz": "'THAN' bor → QIYOSIY daraja.\n'beautiful' — 3 bo'g'in → MORE.\n'most' orttirma daraja uchun."
+       "whyUz": "'THAN' bor → QIYOSIY daraja.\n'beautiful' — 3 bo'g'in → MORE.\n'most' orttirma daraja uchun.",
+       "speakAnswer": "more"
       },
       {
        "prompt": "1  B: She is, but she isn't as ............ as Mary.",
@@ -876,7 +943,8 @@
         "clever",
         "cleverer"
        ],
-       "whyUz": "'AS ... AS' qolipi → ODDIY shakl.\n'isn't as CLEVER as' ✓\n'isn't as cleverer as' ✗"
+       "whyUz": "'AS ... AS' qolipi → ODDIY shakl.\n'isn't as CLEVER as' ✓\n'isn't as cleverer as' ✗",
+       "speakAnswer": "clever"
       },
       {
        "prompt": "2  A: This is the ............ hotel of all.",
@@ -886,7 +954,8 @@
         "most luxurious",
         "luxurious"
        ],
-       "whyUz": "'THE ... OF ALL' → ORTTIRMA daraja.\n'luxurious' — 4 bo'g'in → THE MOST LUXURIOUS."
+       "whyUz": "'THE ... OF ALL' → ORTTIRMA daraja.\n'luxurious' — 4 bo'g'in → THE MOST LUXURIOUS.",
+       "speakAnswer": "most luxurious"
       },
       {
        "prompt": "2  B: But it's on the ............ street in Rome.",
@@ -896,7 +965,8 @@
         "noisiest",
         "noisier"
        ],
-       "whyUz": "'THE ... IN Rome' → ORTTIRMA daraja.\n'noisy' — '-y' tushadi → THE NOISIEST.\n'noisier' qiyosiy daraja uchun ('than' kerak\nbo'lardi)."
+       "whyUz": "'THE ... IN Rome' → ORTTIRMA daraja.\n'noisy' — '-y' tushadi → THE NOISIEST.\n'noisier' qiyosiy daraja uchun ('than' kerak\nbo'lardi).",
+       "speakAnswer": "noisiest"
       },
       {
        "prompt": "3  A: Was Claire ............ when she saw the lions?",
@@ -906,7 +976,8 @@
         "scared",
         "scary"
        ],
-       "whyUz": "'scary'  = qo'rqinchli (NARSA haqida)\n'scared' = qo'rqib ketgan (ODAM haqida)\nKler — ODAM → SCARED.\n'a scary film' ✓ / 'a scared film' ✗"
+       "whyUz": "'scary'  = qo'rqinchli (NARSA haqida)\n'scared' = qo'rqib ketgan (ODAM haqida)\nKler — ODAM → SCARED.\n'a scary film' ✓ / 'a scared film' ✗",
+       "speakAnswer": "scared"
       },
       {
        "prompt": "3  B: Yes, and she screamed ............ .",
@@ -916,7 +987,8 @@
         "desperately",
         "desperate"
        ],
-       "whyUz": "'screamed' — FE'L → RAVISH kerak.\ndesperate (sifat) → DESPERATELY (ravish).\n90-betdagi 4-mashqda ham shu juftlik bor edi."
+       "whyUz": "'screamed' — FE'L → RAVISH kerak.\ndesperate (sifat) → DESPERATELY (ravish).\n90-betdagi 4-mashqda ham shu juftlik bor edi.",
+       "speakAnswer": "desperately"
       },
       {
        "prompt": "4  A: Sam's motorbike is much ............ than Tom's or Frank's.",
@@ -926,7 +998,8 @@
         "bigger",
         "biggest"
        ],
-       "whyUz": "'MUCH' va 'THAN' — ikkalasi ham QIYOSIY\ndarajani talab qiladi.\n'big' → BIGGER (undosh IKKILANADI).\n'much biggest' XATO."
+       "whyUz": "'MUCH' va 'THAN' — ikkalasi ham QIYOSIY\ndarajani talab qiladi.\n'big' → BIGGER (undosh IKKILANADI).\n'much biggest' XATO.",
+       "speakAnswer": "bigger"
       },
       {
        "prompt": "4  B: It's also the ............ expensive of all.",
@@ -936,7 +1009,8 @@
         "most",
         "more"
        ],
-       "whyUz": "'THE ... OF ALL' → ORTTIRMA daraja → MOST.\n'the more expensive' XATO.\nDIQQAT: bir dialogda A da QIYOSIY, B da\nORTTIRMA daraja."
+       "whyUz": "'THE ... OF ALL' → ORTTIRMA daraja → MOST.\n'the more expensive' XATO.\nDIQQAT: bir dialogda A da QIYOSIY, B da\nORTTIRMA daraja.",
+       "speakAnswer": "most"
       },
       {
        "prompt": "5  A: This dress is prettier ............ that one.",
@@ -946,7 +1020,8 @@
         "than",
         "as"
        ],
-       "whyUz": "'prettIER' — QIYOSIY daraja → THAN.\n'as' faqat 'as ... as' qolipida.\n'that one' = 'that dress' o'rniga."
+       "whyUz": "'prettIER' — QIYOSIY daraja → THAN.\n'as' faqat 'as ... as' qolipida.\n'that one' = 'that dress' o'rniga.",
+       "speakAnswer": "than"
       },
       {
        "prompt": "5  B: Yes, and it is also the cheapest ............ all.",
@@ -956,7 +1031,8 @@
         "of",
         "in"
        ],
-       "whyUz": "'the cheapEST' ORTTIRMA + 'ALL' GURUH → OF.\n'of all' = hammasidan.\n'IN' esa JOY bilan ishlatiladi\n('the cheapest IN town')."
+       "whyUz": "'the cheapEST' ORTTIRMA + 'ALL' GURUH → OF.\n'of all' = hammasidan.\n'IN' esa JOY bilan ishlatiladi\n('the cheapest IN town').",
+       "speakAnswer": "of"
       },
       {
        "prompt": "6  A: The black shoes are ............ than the blue shoes.",
@@ -966,7 +1042,8 @@
         "cheaper",
         "cheapest"
        ],
-       "whyUz": "'THAN' bor → QIYOSIY daraja.\n'cheap' → CHEAPER.\n'cheapest than' XATO."
+       "whyUz": "'THAN' bor → QIYOSIY daraja.\n'cheap' → CHEAPER.\n'cheapest than' XATO.",
+       "speakAnswer": "cheaper"
       },
       {
        "prompt": "6  B: Are they ............ comfortable as the blue ones?",
@@ -976,7 +1053,8 @@
         "as",
         "much"
        ],
-       "whyUz": "Gapda IKKINCHI 'as' allaqachon bor →\nbirinchi ham 'AS': 'AS comfortable AS'.\n'much comfortable' XATO — 'much' faqat\nQIYOSIY daraja bilan ('much MORE comfortable')."
+       "whyUz": "Gapda IKKINCHI 'as' allaqachon bor →\nbirinchi ham 'AS': 'AS comfortable AS'.\n'much comfortable' XATO — 'much' faqat\nQIYOSIY daraja bilan ('much MORE comfortable').",
+       "speakAnswer": "as"
       },
       {
        "prompt": "7  A: Did the footballers play ............ yesterday?",
@@ -986,7 +1064,8 @@
         "well",
         "good"
        ],
-       "whyUz": "'play' — FE'L → RAVISH kerak.\ngood (sifat) → WELL (ravish, NOTO'G'RI shakl).\n'play good' XATO.\n90-betdagi 4-mashqning 8-bandi ham shu."
+       "whyUz": "'play' — FE'L → RAVISH kerak.\ngood (sifat) → WELL (ravish, NOTO'G'RI shakl).\n'play good' XATO.\n90-betdagi 4-mashqning 8-bandi ham shu.",
+       "speakAnswer": "well"
       },
       {
        "prompt": "7  B: No, they didn't. They played very ............ .",
@@ -996,7 +1075,8 @@
         "badly",
         "bad"
        ],
-       "whyUz": "'played' — FE'L → RAVISH kerak.\nbad (sifat) → BADLY (ravish).\n'played bad' XATO.\n'well' ning aksi."
+       "whyUz": "'played' — FE'L → RAVISH kerak.\nbad (sifat) → BADLY (ravish).\n'played bad' XATO.\n'well' ning aksi.",
+       "speakAnswer": "badly"
       }
      ]
     },
@@ -1013,27 +1093,33 @@
      "tasks": [
       {
        "left": "1  The children couldn't go to the concert",
-       "right": "b  because they didn't have any money."
+       "right": "b  because they didn't have any money.",
+       "speakAnswer": "b  because they didn't have any money."
       },
       {
        "left": "2  Paul married Elizabeth",
-       "right": "d  and they had four children."
+       "right": "d  and they had four children.",
+       "speakAnswer": "d  and they had four children."
       },
       {
        "left": "3  We were in the fishing boat",
-       "right": "f  when it started to rain."
+       "right": "f  when it started to rain.",
+       "speakAnswer": "f  when it started to rain."
       },
       {
        "left": "4  I wanted to make a cake,",
-       "right": "a  but I didn't have any sugar or flour."
+       "right": "a  but I didn't have any sugar or flour.",
+       "speakAnswer": "a  but I didn't have any sugar or flour."
       },
       {
        "left": "5  First, they got into the canoe,",
-       "right": "e  then they started paddling down the river."
+       "right": "e  then they started paddling down the river.",
+       "speakAnswer": "e  then they started paddling down the river."
       },
       {
        "left": "6  Roberta didn't like any of the souvenirs,",
-       "right": "c  so she didn't buy any."
+       "right": "c  so she didn't buy any.",
+       "speakAnswer": "c  so she didn't buy any."
       }
      ]
     }
@@ -1068,7 +1154,8 @@
         "though"
        ],
        "whyUz": "'when you WERE a boy' → O'TMISH haqida gap.\n'BACK THEN' = o'sha paytlarda.\nO'tmishga ishora qiluvchi ibora.",
-       "speak": "1  A: Grandad, what was it like when you were a boy?  B: Oh, life was very difficult ............ !"
+       "speak": "1  A: Grandad, what was it like when you were a boy?  B: Oh, life was very difficult ............ !",
+       "speakAnswer": "back then"
       },
       {
        "prompt": "2  A: We can't afford this hotel.  B: Oh, ............ you're right.",
@@ -1080,7 +1167,8 @@
         "though"
        ],
        "whyUz": "'I SUPPOSE' = shekilli, menimcha.\nRozilikni YUMSHATADI (to'liq ishonch emas).\nCoursebook 86-bet, 17-mashqda ham:\n'Oh, I suppose you're right.'",
-       "speak": "2  A: We can't afford this hotel.  B: Oh, ............ you're right."
+       "speak": "2  A: We can't afford this hotel.  B: Oh, ............ you're right.",
+       "speakAnswer": "I suppose"
       },
       {
        "prompt": "3  A: Lions are very dangerous animals. You're ............ !",
@@ -1092,7 +1180,8 @@
         "though"
        ],
        "whyUz": "Javob IPNI beradi: 'I was NEARLY A LION'S LUNCH!'\n= sal bo'lmasa sher yeb qo'yardi.\n→ 'LUCKY TO BE ALIVE' (tirik qolgani omad).\nGrammar 52-bet: 'lucky to be alive'.",
-       "speak": "3  A: Lions are very dangerous animals. You're ............ !"
+       "speak": "3  A: Lions are very dangerous animals. You're ............ !",
+       "speakAnswer": "lucky to be alive"
       },
       {
        "prompt": "4  A: My house is very old.  B: Yes, it is. It's very beautiful, ............ .",
@@ -1104,7 +1193,8 @@
         "back then"
        ],
        "whyUz": "Vergul bilan ajratilgan va gap OXIRIDA →\n'THOUGH' (lekin).\nEski, LEKIN chiroyli — qarama-qarshilik.\nCoursebook 88-betdagi epizodda ham:\n'David needs a new camera, THOUGH.'",
-       "speak": "4  A: My house is very old.  B: Yes, it is. It's very beautiful, ............ ."
+       "speak": "4  A: My house is very old.  B: Yes, it is. It's very beautiful, ............ .",
+       "speakAnswer": "though"
       },
       {
        "prompt": "5  A: Where ............ last weekend?  B: I went to the art museum.",
@@ -1116,7 +1206,8 @@
         "back then"
        ],
        "whyUz": "Javob 'I WENT ...' → PAST SIMPLE.\nSavol: DID + you + GO (ASOSIY shakl).\n'Where did you went' XATO.",
-       "speak": "5  A: Where ............ last weekend?  B: I went to the art museum."
+       "speak": "5  A: Where ............ last weekend?  B: I went to the art museum.",
+       "speakAnswer": "did you go"
       },
       {
        "prompt": "6  A: Excuse me, ............ the way to the post office?",
@@ -1128,7 +1219,8 @@
         "back then"
        ],
        "whyUz": "Yo'l so'rash iborasi:\n'CAN YOU TELL ME the way to ...?'\n'Excuse me' bilan boshlanadi — muloyim murojaat.\nJavob: 'Go down this street and turn left.'",
-       "speak": "6  A: Excuse me, ............ the way to the post office?"
+       "speak": "6  A: Excuse me, ............ the way to the post office?",
+       "speakAnswer": "can you tell me"
       },
       {
        "prompt": "7  A: ............ Mother go shopping with?  B: She went with Aunt May.",
@@ -1140,7 +1232,8 @@
         "back then"
        ],
        "whyUz": "Javob ODAM ('with Aunt May') →\nTO'LDIRUVCHI savoli → 'WHO DID' + ega + asosiy\nfe'l.\nDIQQAT: 'with' gap OXIRIDA qoladi.\nUnit 11 (Workbook 46-bet) qoidasi.",
-       "speak": "7  A: ............ Mother go shopping with?  B: She went with Aunt May."
+       "speak": "7  A: ............ Mother go shopping with?  B: She went with Aunt May.",
+       "speakAnswer": "Who did"
       },
       {
        "prompt": "8  A: Did you enjoy your holiday?  B: Yes, it ............ !",
@@ -1152,7 +1245,8 @@
         "back then"
        ],
        "whyUz": "IJOBIY javob → 'WAS FANTASTIC'.\nCoursebook 85-bet, 15-mashqda ham:\n'It was fantastic!'\nO'tgan zamon — ta'til tugagan.",
-       "speak": "8  A: Did you enjoy your holiday?  B: Yes, it ............ !"
+       "speak": "8  A: Did you enjoy your holiday?  B: Yes, it ............ !",
+       "speakAnswer": "was fantastic"
       }
      ]
     }

@@ -18,6 +18,7 @@ Ishlatish:
 from __future__ import annotations
 
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -133,21 +134,64 @@ def _line_prompt(who, body):
     return f"{who}: {body}" if who else body
 
 
-def _auto_speak(prompt):
-    """Savol matni inglizcha bo'lsa — o'qiladi, aks holda ovoz yo'q."""
+# Inglizcha qisqartma qo'shimchalari — apostrofdan keyin SO'Z OXIRIDA
+# keladi: isn't, who's, they're, I've, we'll, he'd, I'm.
+_EN_CONTRACTIONS = ("s", "t", "re", "ve", "ll", "d", "m")
+
+# Apostrofli, lekin inglizcha bo'lgan so'zlar (qisqartma emas).
+_EN_APOSTROPHE_WORDS = ("o'clock",)
+
+
+def _looks_uzbek_word(w):
+    """Apostrofli bitta so'z o'zbekchami.
+
+    O'zbekchada apostrof `o`/`g` dan keyin keladi va so'zning ichida
+    qoladi (bo'sh, to'g'ri, yo'q). Inglizchada esa qisqartma yasaydi va
+    qo'shimcha so'z OXIRIDA turadi (isn't, who's, they're).
+    """
+    low = w.lower().replace("‘", "'").replace("’", "'")
+    if low.strip(".,!?") in _EN_APOSTROPHE_WORDS:
+        return False
+    i = low.find("'")
+    if i < 0:
+        return False
+    tail = low[i + 1:].strip(".,!?")
+    if tail in _EN_CONTRACTIONS:
+        return False  # inglizcha qisqartma
+    return True
+
+
+def _auto_speak(prompt, min_letters=3):
+    """Matn inglizcha bo'lsa — o'qiladi, aks holda ovoz yo'q.
+
+    `min_letters` — eng qisqa o'qiladigan matn. SAVOL uchun 3 (undan
+    qisqasi "A:" kabi yorliq bo'ladi), JAVOB uchun esa 2: grammatika
+    mashqlarining javoblari aynan qisqa so'zlar — `in`, `on`, `is`,
+    `an`, `am`, `to`. Ilgari ular hech qachon o'qilmasdi (960 band).
+    Bitta harf (`T`, `F`, `C`) esa yorliq — u jim qoladi.
+    """
     p = str(prompt).strip()
     if not p:
         return ""
     if any(m in p for m in _UZ_MARKERS):
         return ""
     # O'zbekcha o'ziga xos harflar yoki raqamdan iborat bo'lsa — o'qimaymiz.
-    if any(ch in p for ch in "'‘’") and " " not in p:
+    #
+    # DIQQAT: apostrof O'ZI o'zbekcha degani emas. O'zbekchada u `o'`/`g'`
+    # dan keyin keladi (bo'sh, to'g'ri), inglizchada esa qisqartma yasaydi
+    # (isn't, aren't, it's, I'm). Ilgari apostrofli har qanday bitta so'z
+    # jim qolardi va grammatika mashqlarining javoblari — aynan `isn't`,
+    # `aren't` kabi shakllar — hech qachon o'qilmasdi.
+    if " " not in p and _looks_uzbek_word(p):
         return ""
     letters = [c for c in p if c.isalpha()]
     if not letters:
         return ""  # faqat raqam (masalan "13")
-    # "A:" kabi qisqa yorliqni o'qishning ma'nosi yo'q.
-    if len(letters) < 3 or p.rstrip().endswith(":"):
+    # "A:" kabi qisqa yorliqni o'qishning ma'nosi yo'q. LEKIN inglizcha
+    # qisqartma ("I'm", "I'd") ikkitagina harfdan iborat bo'lsa ham
+    # to'laqonli javob — u o'qilishi kerak.
+    short_ok = " " not in p and "'" in p.replace("‘", "'").replace("’", "'")
+    if (len(letters) < min_letters and not short_ok) or p.rstrip().endswith(":"):
         return ""
     return p
 
@@ -271,6 +315,7 @@ def norm_exercise(ex, page):
     kind, tasks = _fix_ambiguous_match(kind, tasks)
     kind, tasks = _fix_unbuildable_text(kind, tasks)
     tasks = _strip_answer_uz(kind, tasks)
+    tasks = _add_answer_speech(kind, tasks)
     tasks, dropped = _drop_marker_answers(kind, tasks)
     if dropped:
         base["explanationUz"] = (base["explanationUz"] + "\n\n" + dropped).strip()
@@ -359,6 +404,79 @@ def _fix_unbuildable_text(kind, tasks):
               t.get("whyUz", ""))
         for t in tasks
     ]
+
+
+# Loyihaning O'Z lug'ati — o'zbekcha tarjimalar to'plami.
+#
+# Javob o'zbekchami yoki inglizchami degan savolga eng ishonchli javobni
+# taxmin emas, MA'LUMOTNING O'ZI beradi: kitob sahifalarida har bir so'z
+# `en`/`uz` juftligi bilan yozilgan. Shu to'plamdagi matn ingliz ovozi
+# bilan o'qilmaydi.
+UZ_GLOSSES: set = set()
+
+# Ba'zi inglizcha yordamchi so'zlar tasodifan o'zbekcha so'zga o'xshaydi:
+# o'zbekcha "it" — hayvon (dog), inglizcha "it" — olmosh. Kitobda "it"
+# javob sifatida 27 marta uchraydi va u ALBATTA o'qilishi kerak.
+# Lug'atdagi barcha o'zbekcha tarjimalar bilan solishtirilganda faqat
+# shu bitta to'qnashuv chiqdi.
+_ENGLISH_ALWAYS = frozenset({
+    "a", "an", "the", "it", "is", "am", "are", "was", "were", "be",
+    "to", "of", "in", "on", "at", "and", "or", "but", "not",
+    "do", "does", "did", "have", "has", "had", "can", "will",
+})
+
+
+def collect_uz_glosses(pages):
+    """Barcha sahifalardagi o'zbekcha tarjimalarni yig'adi.
+
+    Ikkala tilda ham uchraydigan so'zlar (masalan xalqaro atamalar)
+    to'plamdan chiqariladi — ular inglizcha ham bo'lishi mumkin.
+    """
+    uz, en = set(), set()
+    for p in pages:
+        for v in p.get("vocabularyOnPage", []):
+            if v.get("uz"):
+                uz.add(str(v["uz"]).strip().lower())
+            if v.get("en"):
+                en.add(str(v["en"]).strip().lower())
+    UZ_GLOSSES.clear()
+    UZ_GLOSSES.update(uz - en)
+    return UZ_GLOSSES
+
+
+def _add_answer_speech(kind, tasks):
+    """Javob OVOZ bilan o'qilishi mumkinmi — shu yerda hal qilinadi.
+
+    Ilova javob berilgandan keyin javobni ovoz chiqarib o'qiydi. Lekin
+    javoblarning bir qismi O'ZBEKChA: moslash o'yinida o'ng tomon
+    ko'pincha o'zbekcha tarjima (207 band), tanlash o'yinida esa
+    "Yo'q"/"Ha" kabi javoblar bor. Ularni INGLIZ ovozi bilan o'qish
+    ma'nosiz va noto'g'ri eshitiladi.
+
+    `_auto_speak` — mashq savoli uchun ishlatiladigan bir xil tekshiruv.
+    Natija bo'sh bo'lsa, ilova ovozni umuman chiqarmaydi.
+    """
+    for t in tasks:
+        src = t.get("right") if kind == "match" else t.get("answer")
+        sp = _auto_speak(_strip_gloss(src or ""), min_letters=2)
+        low = sp.strip().lower()
+        if sp and low in UZ_GLOSSES and low not in _ENGLISH_ALWAYS:
+            sp = ""  # lug'atda o'zbekcha tarjima sifatida yozilgan
+        if sp:
+            t["speakAnswer"] = sp
+    return tasks
+
+
+# Javob oxiridagi qavs ichida ko'pincha O'ZBEKChA izoh turadi:
+#   "T (to'g'ri)", "E (England)", "'ll (will)".
+# Ovozga faqat asosiy qism kerak — izohni ingliz ovozi bilan o'qish
+# ma'nosiz eshitiladi.
+_GLOSS = re.compile(r"\s*\([^)]*\)\s*$")
+
+
+def _strip_gloss(s):
+    out = _GLOSS.sub("", str(s)).strip()
+    return out or str(s)
 
 
 def _strip_answer_uz(kind, tasks):
@@ -1055,6 +1173,10 @@ def main():
     if not by_unit:
         print("Sahifa fayllari topilmadi.")
         return 1
+
+    # Mashqlarni tayyorlashdan OLDIN o'zbekcha lug'atni yig'amiz —
+    # javobni ovoz bilan o'qish kerakmi degan qarorga shu to'plam kerak.
+    collect_uz_glosses([p for pp in by_unit.values() for p in pp])
 
     OUT.mkdir(parents=True, exist_ok=True)
     built = []

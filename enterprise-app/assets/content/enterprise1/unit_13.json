@@ -65,43 +65,53 @@
      "tasks": [
       {
        "left": "A",
-       "right": "9  sell her house"
+       "right": "9  sell her house",
+       "speakAnswer": "9  sell her house"
       },
       {
        "left": "B",
-       "right": "7  start French lessons"
+       "right": "7  start French lessons",
+       "speakAnswer": "7  start French lessons"
       },
       {
        "left": "C",
-       "right": "10  start a computer course"
+       "right": "10  start a computer course",
+       "speakAnswer": "10  start a computer course"
       },
       {
        "left": "D",
-       "right": "2  relax"
+       "right": "2  relax",
+       "speakAnswer": "2  relax"
       },
       {
        "left": "E",
-       "right": "5  take ballet lessons"
+       "right": "5  take ballet lessons",
+       "speakAnswer": "5  take ballet lessons"
       },
       {
        "left": "F",
-       "right": "3  start windsurfing"
+       "right": "3  start windsurfing",
+       "speakAnswer": "3  start windsurfing"
       },
       {
        "left": "G",
-       "right": "1  stay at a fabulous hotel"
+       "right": "1  stay at a fabulous hotel",
+       "speakAnswer": "1  stay at a fabulous hotel"
       },
       {
        "left": "H",
-       "right": "6  work at a cafe"
+       "right": "6  work at a cafe",
+       "speakAnswer": "6  work at a cafe"
       },
       {
        "left": "I",
-       "right": "4  sunbathe"
+       "right": "4  sunbathe",
+       "speakAnswer": "4  sunbathe"
       },
       {
        "left": "J",
-       "right": "8  join a gym"
+       "right": "8  join a gym",
+       "speakAnswer": "8  join a gym"
       }
      ]
     },
@@ -120,61 +130,71 @@
        "prompt": "1  stay at a fabulous hotel  ✓",
        "answer": "Jenny is going to stay at a fabulous hotel.",
        "promptUz": "Jenni ajoyib mehmonxonada turmoqchi. (KITOBDAGI NAMUNA)",
-       "speak": "1  stay at a fabulous hotel  ✓"
+       "speak": "1  stay at a fabulous hotel  ✓",
+       "speakAnswer": "Jenny is going to stay at a fabulous hotel."
       },
       {
        "prompt": "2  relax  ✓",
        "answer": "Jenny is going to relax.",
        "promptUz": "Jenni dam olmoqchi.",
-       "speak": "2  relax  ✓"
+       "speak": "2  relax  ✓",
+       "speakAnswer": "Jenny is going to relax."
       },
       {
        "prompt": "3  start windsurfing  ✗",
        "answer": "Jenny isn't going to start windsurfing.",
        "promptUz": "Jenni vindserfingni boshlamoqchi emas.",
-       "speak": "3  start windsurfing  ✗"
+       "speak": "3  start windsurfing  ✗",
+       "speakAnswer": "Jenny isn't going to start windsurfing."
       },
       {
        "prompt": "4  sunbathe  ✗",
        "answer": "Jenny isn't going to sunbathe.",
        "promptUz": "Jenni quyoshda toblanmoqchi emas. (KITOBDAGI NAMUNA)",
-       "speak": "4  sunbathe  ✗"
+       "speak": "4  sunbathe  ✗",
+       "speakAnswer": "Jenny isn't going to sunbathe."
       },
       {
        "prompt": "5  take ballet lessons  ✗",
        "answer": "Jenny isn't going to take ballet lessons.",
        "promptUz": "Jenni balet darslariga bormoqchi emas.",
-       "speak": "5  take ballet lessons  ✗"
+       "speak": "5  take ballet lessons  ✗",
+       "speakAnswer": "Jenny isn't going to take ballet lessons."
       },
       {
        "prompt": "6  work at a cafe  ✓",
        "answer": "Jenny is going to work at a cafe.",
        "promptUz": "Jenni kafeda ishlamoqchi.",
-       "speak": "6  work at a cafe  ✓"
+       "speak": "6  work at a cafe  ✓",
+       "speakAnswer": "Jenny is going to work at a cafe."
       },
       {
        "prompt": "7  start French lessons  ✗",
        "answer": "Jenny isn't going to start French lessons.",
        "promptUz": "Jenni fransuz tili darslarini boshlamoqchi emas.",
-       "speak": "7  start French lessons  ✗"
+       "speak": "7  start French lessons  ✗",
+       "speakAnswer": "Jenny isn't going to start French lessons."
       },
       {
        "prompt": "8  join a gym  ✓",
        "answer": "Jenny is going to join a gym.",
        "promptUz": "Jenni sport zaliga a'zo bo'lmoqchi.",
-       "speak": "8  join a gym  ✓"
+       "speak": "8  join a gym  ✓",
+       "speakAnswer": "Jenny is going to join a gym."
       },
       {
        "prompt": "9  sell her house  ✗",
        "answer": "Jenny isn't going to sell her house.",
        "promptUz": "Jenni uyini sotmoqchi emas.",
-       "speak": "9  sell her house  ✗"
+       "speak": "9  sell her house  ✗",
+       "speakAnswer": "Jenny isn't going to sell her house."
       },
       {
        "prompt": "10  start a computer course  ✓",
        "answer": "Jenny is going to start a computer course.",
        "promptUz": "Jenni kompyuter kursini boshlamoqchi.",
-       "speak": "10  start a computer course  ✓"
+       "speak": "10  start a computer course  ✓",
+       "speakAnswer": "Jenny is going to start a computer course."
       }
      ]
     },
@@ -251,7 +271,8 @@
         "earn"
        ],
        "whyUz": "'GREAT news' = ajoyib yangilik.\nXatning birinchi jumlasi:\n'I've got some GREAT NEWS.'\nDIQQAT: 'news' SANALMAYDIGAN ot → 'a' YO'Q.",
-       "speak": "1  ............ news"
+       "speak": "1  ............ news",
+       "speakAnswer": "great"
       },
       {
        "prompt": "2  to ............ on holiday",
@@ -263,7 +284,8 @@
         "earn"
        ],
        "whyUz": "'to GO ON holiday' = ta'tilga bormoq.\n'TO' bor → FE'L kerak.\nXatda: 'we are GOING ON HOLIDAY for a whole\nmonth'.\nPredlog ON.",
-       "speak": "2  to ............ on holiday"
+       "speak": "2  to ............ on holiday",
+       "speakAnswer": "go"
       },
       {
        "prompt": "3  a ............ hotel",
@@ -275,7 +297,8 @@
         "go"
        ],
        "whyUz": "'a FABULOUS hotel' = ajoyib mehmonxona.\n'A' va ot orasida → SIFAT kerak.\nXatda: 'a FABULOUS HOTEL right next to the\nbeach'.\n92-betdagi 1-band ham shu.",
-       "speak": "3  a ............ hotel"
+       "speak": "3  a ............ hotel",
+       "speakAnswer": "fabulous"
       },
       {
        "prompt": "4  to ............ hard",
@@ -287,7 +310,8 @@
         "go"
        ],
        "whyUz": "'to WORK HARD' = qattiq ishlamoq.\nXatda: 'after WORKING HARD all this year'.\nDIQQAT: 'hard' (qattiq) va 'hardly'\n(deyarli emas) — BUTUNLAY boshqa so'zlar!\n'work hardly' XATO.",
-       "speak": "4  to ............ hard"
+       "speak": "4  to ............ hard",
+       "speakAnswer": "work"
       },
       {
        "prompt": "5  to ............ money",
@@ -299,7 +323,8 @@
         "go"
        ],
        "whyUz": "'to EARN money' = pul topmoq (mehnat bilan).\nXatda: 'I want to EARN some extra MONEY'.\nDIQQAT: 'to WIN money' — yutuq, sovrin uchun.\n'to earn' — ishlab topish.",
-       "speak": "5  to ............ money"
+       "speak": "5  to ............ money",
+       "speakAnswer": "earn"
       },
       {
        "prompt": "6  to ............ a gym",
@@ -311,7 +336,8 @@
         "go"
        ],
        "whyUz": "'to JOIN a gym' = sport zaliga A'ZO BO'LMOQ.\nXatda: 'I'm also going to JOIN A GYM'.\nDIQQAT: 'to go to a gym' — shunchaki bormoq;\n'to join' — a'zolik ochish.",
-       "speak": "6  to ............ a gym"
+       "speak": "6  to ............ a gym",
+       "speakAnswer": "join"
       },
       {
        "prompt": "7  to ............ weight",
@@ -323,7 +349,8 @@
         "go"
        ],
        "whyUz": "'to LOSE weight' = vazn tashlamoq.\nXatda: 'to LOSE some WEIGHT'.\nAksi: 'to PUT ON weight' (vazn olmoq).\nlose → LOST (noto'g'ri fe'l).",
-       "speak": "7  to ............ weight"
+       "speak": "7  to ............ weight",
+       "speakAnswer": "lose"
       },
       {
        "prompt": "8  a ............ course",
@@ -335,7 +362,8 @@
         "earn"
        ],
        "whyUz": "'a COMPUTER course' = kompyuter kursi.\nXatda: 'I'm going to start a COMPUTER COURSE'.\nDIQQAT: 'computer' — OT, lekin bu yerda SIFAT\nvazifasini bajaradi (ot + ot birikmasi).\nBirinchi ot KO'PLIK BO'LMAYDI\n('computers course' XATO).",
-       "speak": "8  a ............ course"
+       "speak": "8  a ............ course",
+       "speakAnswer": "computer"
       }
      ]
     },
@@ -360,43 +388,50 @@
        "prompt": "to go on holiday",
        "answer": "We are going to go on holiday for a whole month.",
        "promptUz": "Biz butun bir oyga ta'tilga bormoqchimiz.",
-       "speak": "to go on holiday"
+       "speak": "to go on holiday",
+       "speakAnswer": "We are going to go on holiday for a whole month."
       },
       {
        "prompt": "a fabulous hotel",
        "answer": "They are going to stay at a fabulous hotel next to the beach.",
        "promptUz": "Ular plyaj yonidagi ajoyib mehmonxonada turmoqchi.",
-       "speak": "a fabulous hotel"
+       "speak": "a fabulous hotel",
+       "speakAnswer": "They are going to stay at a fabulous hotel next to the beach."
       },
       {
        "prompt": "to work hard",
        "answer": "I'm quite tired because I worked hard all this year.",
        "promptUz": "Men ancha charchaganman, chunki butun yil qattiq ishladim.",
-       "speak": "to work hard"
+       "speak": "to work hard",
+       "speakAnswer": "I'm quite tired because I worked hard all this year."
       },
       {
        "prompt": "to earn money",
        "answer": "She is going to work at a cafe to earn some extra money.",
        "promptUz": "U qo'shimcha pul topish uchun kafeda ishlamoqchi.",
-       "speak": "to earn money"
+       "speak": "to earn money",
+       "speakAnswer": "She is going to work at a cafe to earn some extra money."
       },
       {
        "prompt": "to join a gym",
        "answer": "I'm going to join a gym next month.",
        "promptUz": "Keyingi oy sport zaliga a'zo bo'lmoqchiman.",
-       "speak": "to join a gym"
+       "speak": "to join a gym",
+       "speakAnswer": "I'm going to join a gym next month."
       },
       {
        "prompt": "to lose weight",
        "answer": "He is going to join a gym to lose some weight.",
        "promptUz": "U vazn tashlash uchun sport zaliga a'zo bo'lmoqchi.",
-       "speak": "to lose weight"
+       "speak": "to lose weight",
+       "speakAnswer": "He is going to join a gym to lose some weight."
       },
       {
        "prompt": "a computer course",
        "answer": "She is going to start a computer course to find a better job.",
        "promptUz": "U yaxshiroq ish topish uchun kompyuter kursini boshlamoqchi.",
-       "speak": "a computer course"
+       "speak": "a computer course",
+       "speakAnswer": "She is going to start a computer course to find a better job."
       }
      ]
     }
@@ -423,27 +458,33 @@
      "tasks": [
       {
        "left": "A",
-       "right": "pick some flowers"
+       "right": "pick some flowers",
+       "speakAnswer": "pick some flowers"
       },
       {
        "left": "B",
-       "right": "fix his car"
+       "right": "fix his car",
+       "speakAnswer": "fix his car"
       },
       {
        "left": "C",
-       "right": "take some photographs"
+       "right": "take some photographs",
+       "speakAnswer": "take some photographs"
       },
       {
        "left": "D",
-       "right": "have a picnic in the park"
+       "right": "have a picnic in the park",
+       "speakAnswer": "have a picnic in the park"
       },
       {
        "left": "E",
-       "right": "play football"
+       "right": "play football",
+       "speakAnswer": "play football"
       },
       {
        "left": "F",
-       "right": "make some fresh orange juice"
+       "right": "make some fresh orange juice",
+       "speakAnswer": "make some fresh orange juice"
       }
      ]
     },
@@ -462,37 +503,43 @@
        "prompt": "A  pick some flowers",
        "answer": "She's going to pick some flowers.",
        "promptUz": "U gul termoqchi. (KITOBDAGI NAMUNA)",
-       "speak": "A  pick some flowers"
+       "speak": "A  pick some flowers",
+       "speakAnswer": "She's going to pick some flowers."
       },
       {
        "prompt": "B  fix his car",
        "answer": "He's going to fix his car.",
        "promptUz": "U mashinasini tuzatmoqchi. (ERKAK → 'he's')",
-       "speak": "B  fix his car"
+       "speak": "B  fix his car",
+       "speakAnswer": "He's going to fix his car."
       },
       {
        "prompt": "C  take some photographs",
        "answer": "She's going to take some photographs.",
        "promptUz": "U surat olmoqchi. ('TAKE photographs')",
-       "speak": "C  take some photographs"
+       "speak": "C  take some photographs",
+       "speakAnswer": "She's going to take some photographs."
       },
       {
        "prompt": "D  have a picnic in the park",
        "answer": "They're going to have a picnic in the park.",
        "promptUz": "Ular parkda piknik qilishmoqchi. (IKKI kishi → 'they're')",
-       "speak": "D  have a picnic in the park"
+       "speak": "D  have a picnic in the park",
+       "speakAnswer": "They're going to have a picnic in the park."
       },
       {
        "prompt": "E  play football",
        "answer": "He's going to play football.",
        "promptUz": "U futbol o'ynamoqchi. (sport oldidan artikl YO'Q)",
-       "speak": "E  play football"
+       "speak": "E  play football",
+       "speakAnswer": "He's going to play football."
       },
       {
        "prompt": "F  make some fresh orange juice",
        "answer": "She's going to make some fresh orange juice.",
        "promptUz": "U yangi apelsin sharbati tayyorlamoqchi. ('MAKE juice')",
-       "speak": "F  make some fresh orange juice"
+       "speak": "F  make some fresh orange juice",
+       "speakAnswer": "She's going to make some fresh orange juice."
       }
      ]
     },
@@ -509,27 +556,33 @@
      "tasks": [
       {
        "left": "1  Joe doesn't like working at the cafe",
-       "right": "d  find another job"
+       "right": "d  find another job",
+       "speakAnswer": "d  find another job"
       },
       {
        "left": "2  Richard needs to lose weight",
-       "right": "f  join a gym"
+       "right": "f  join a gym",
+       "speakAnswer": "f  join a gym"
       },
       {
        "left": "3  Sally wants to pass her exams",
-       "right": "a  study really hard"
+       "right": "a  study really hard",
+       "speakAnswer": "a  study really hard"
       },
       {
        "left": "4  David has got a new job in Paris",
-       "right": "e  start French lessons"
+       "right": "e  start French lessons",
+       "speakAnswer": "e  start French lessons"
       },
       {
        "left": "5  Tina wants a nice suntan",
-       "right": "b  sunbathe in the garden"
+       "right": "b  sunbathe in the garden",
+       "speakAnswer": "b  sunbathe in the garden"
       },
       {
        "left": "6  Lucy likes dancing",
-       "right": "c  take ballet lessons"
+       "right": "c  take ballet lessons",
+       "speakAnswer": "c  take ballet lessons"
       }
      ]
     },
@@ -583,27 +636,33 @@
      "tasks": [
       {
        "left": "ANDY — ikki erkak peshonama-peshona janjallashyapti",
-       "right": "argue with your best friend"
+       "right": "argue with your best friend",
+       "speakAnswer": "argue with your best friend"
       },
       {
        "left": "ANDY — kapoti ochiq mashina + jarima yozayotgan nazoratchi",
-       "right": "have problems with your car"
+       "right": "have problems with your car",
+       "speakAnswer": "have problems with your car"
       },
       {
        "left": "MARY — stetoskopli shifokor ko'rigi",
-       "right": "have problems with your health"
+       "right": "have problems with your health",
+       "speakAnswer": "have problems with your health"
       },
       {
        "left": "MARY — ikki qadah bir-biriga urilmoqda",
-       "right": "celebrate something special"
+       "right": "celebrate something special",
+       "speakAnswer": "celebrate something special"
       },
       {
        "left": "MARY — ochiq chamadon, ichida narsalar joylangan",
-       "right": "go on a long journey"
+       "right": "go on a long journey",
+       "speakAnswer": "go on a long journey"
       },
       {
        "left": "⚠  receive an invitation",
-       "right": "mos rasm TOPILMADI"
+       "right": "mos rasm TOPILMADI",
+       "speakAnswer": "mos rasm TOPILMADI"
       }
      ]
     }
@@ -775,43 +834,53 @@
      "tasks": [
       {
        "left": "1  stay at a fabulous hotel",
-       "right": "✓  Jenny is going to stay at a fabulous hotel."
+       "right": "✓  Jenny is going to stay at a fabulous hotel.",
+       "speakAnswer": "✓  Jenny is going to stay at a fabulous hotel."
       },
       {
        "left": "2  relax",
-       "right": "✓  Jenny is going to relax."
+       "right": "✓  Jenny is going to relax.",
+       "speakAnswer": "✓  Jenny is going to relax."
       },
       {
        "left": "3  start windsurfing",
-       "right": "✗  Jenny isn't going to start windsurfing."
+       "right": "✗  Jenny isn't going to start windsurfing.",
+       "speakAnswer": "✗  Jenny isn't going to start windsurfing."
       },
       {
        "left": "4  sunbathe",
-       "right": "✗  Jenny isn't going to sunbathe."
+       "right": "✗  Jenny isn't going to sunbathe.",
+       "speakAnswer": "✗  Jenny isn't going to sunbathe."
       },
       {
        "left": "5  take ballet lessons",
-       "right": "✗  Jenny isn't going to take ballet lessons."
+       "right": "✗  Jenny isn't going to take ballet lessons.",
+       "speakAnswer": "✗  Jenny isn't going to take ballet lessons."
       },
       {
        "left": "6  work at a cafe",
-       "right": "✓  Jenny is going to work at a cafe."
+       "right": "✓  Jenny is going to work at a cafe.",
+       "speakAnswer": "✓  Jenny is going to work at a cafe."
       },
       {
        "left": "7  start French lessons",
-       "right": "✗  Jenny isn't going to start French lessons."
+       "right": "✗  Jenny isn't going to start French lessons.",
+       "speakAnswer": "✗  Jenny isn't going to start French lessons."
       },
       {
        "left": "8  join a gym",
-       "right": "✓  Jenny is going to join a gym."
+       "right": "✓  Jenny is going to join a gym.",
+       "speakAnswer": "✓  Jenny is going to join a gym."
       },
       {
        "left": "9  sell her house",
-       "right": "✗  Jenny isn't going to sell her house."
+       "right": "✗  Jenny isn't going to sell her house.",
+       "speakAnswer": "✗  Jenny isn't going to sell her house."
       },
       {
        "left": "10  start a computer course",
-       "right": "✓  Jenny is going to start a computer course."
+       "right": "✓  Jenny is going to start a computer course.",
+       "speakAnswer": "✓  Jenny is going to start a computer course."
       }
      ]
     },
@@ -1078,23 +1147,28 @@
      "tasks": [
       {
        "left": "1  you'll receive a letter from a friend?",
-       "right": "TAURUS"
+       "right": "TAURUS",
+       "speakAnswer": "TAURUS"
       },
       {
        "left": "2  you'll get an invitation/invitations?",
-       "right": "TAURUS, SCORPIO, AQUARIUS, ARIES  (TO'RTTA)"
+       "right": "TAURUS, SCORPIO, AQUARIUS, ARIES  (TO'RTTA)",
+       "speakAnswer": "TAURUS, SCORPIO, AQUARIUS, ARIES"
       },
       {
        "left": "3  you'll have health problems?",
-       "right": "CAPRICORN, PISCES  (IKKITA)"
+       "right": "CAPRICORN, PISCES  (IKKITA)",
+       "speakAnswer": "CAPRICORN, PISCES"
       },
       {
        "left": "4  you'll get a lot of money?",
-       "right": "AQUARIUS  (faqat BITTA)"
+       "right": "AQUARIUS  (faqat BITTA)",
+       "speakAnswer": "AQUARIUS"
       },
       {
        "left": "5  you'll have problems with someone in your family?",
-       "right": "VIRGO, SAGITTARIUS  (IKKITA)"
+       "right": "VIRGO, SAGITTARIUS  (IKKITA)",
+       "speakAnswer": "VIRGO, SAGITTARIUS"
       }
      ]
     },
@@ -1330,27 +1404,33 @@
      "tasks": [
       {
        "left": "Tony's going to spend his summer holidays in Australia",
-       "right": "He wants to see his sister and her family."
+       "right": "He wants to see his sister and her family.",
+       "speakAnswer": "He wants to see his sister and her family."
       },
       {
        "left": "He's going to stay there for TWO MONTHS",
-       "right": "He wants to TRAVEL around while he's there."
+       "right": "He wants to TRAVEL around while he's there.",
+       "speakAnswer": "He wants to TRAVEL around while he's there."
       },
       {
        "left": "He's going to visit SYDNEY",
-       "right": "He wants to SEE the Opera House."
+       "right": "He wants to SEE the Opera House.",
+       "speakAnswer": "He wants to SEE the Opera House."
       },
       {
        "left": "He's going to hire A CAR",
-       "right": "He wants to VISIT Canberra the capital city."
+       "right": "He wants to VISIT Canberra the capital city.",
+       "speakAnswer": "He wants to VISIT Canberra the capital city."
       },
       {
        "left": "He's going to take a BOAT (out to the Great Barrier Reef)",
-       "right": "He wants to SEE all the colourful fish."
+       "right": "He wants to SEE all the colourful fish.",
+       "speakAnswer": "He wants to SEE all the colourful fish."
       },
       {
        "left": "He's going to take his VIDEO CAMERA",
-       "right": "He wants to SHOW everyone what Australia is like when he gets back."
+       "right": "He wants to SHOW everyone what Australia is like when he gets back.",
+       "speakAnswer": "He wants to SHOW everyone what Australia is like when he gets back."
       }
      ]
     }
@@ -1463,55 +1543,64 @@
        "prompt": "✓  listen to music and relax",
        "answer": "I'm going to listen to music and relax.",
        "promptUz": "Musiqa tinglab dam olmoqchiman. (KITOBDAGI NAMUNA — TASDIQ)",
-       "speak": "✓  listen to music and relax"
+       "speak": "✓  listen to music and relax",
+       "speakAnswer": "I'm going to listen to music and relax."
       },
       {
        "prompt": "✗  fly to New Delhi",
        "answer": "I'm not going to fly to New Delhi.",
        "promptUz": "Nyu-Delhiga uchmoqchi emasman. (KITOBDAGI NAMUNA — INKOR)",
-       "speak": "✗  fly to New Delhi"
+       "speak": "✗  fly to New Delhi",
+       "speakAnswer": "I'm not going to fly to New Delhi."
       },
       {
        "prompt": "✓  meet my friends",
        "answer": "I'm going to meet my friends.",
        "promptUz": "Do'stlarim bilan uchrashmoqchiman. ('meet' predlogsiz)",
-       "speak": "✓  meet my friends"
+       "speak": "✓  meet my friends",
+       "speakAnswer": "I'm going to meet my friends."
       },
       {
        "prompt": "✓  study for a test",
        "answer": "I'm going to study for a test.",
        "promptUz": "Imtihonga tayyorlanmoqchiman. ('study FOR' — predlog FOR)",
-       "speak": "✓  study for a test"
+       "speak": "✓  study for a test",
+       "speakAnswer": "I'm going to study for a test."
       },
       {
        "prompt": "✗  have a party",
        "answer": "I'm not going to have a party.",
        "promptUz": "Ziyofat qilmoqchi emasman. ('have a party', 'make a party' XATO)",
-       "speak": "✗  have a party"
+       "speak": "✗  have a party",
+       "speakAnswer": "I'm not going to have a party."
       },
       {
        "prompt": "✗  clean my room",
        "answer": "I'm not going to clean my room.",
        "promptUz": "Xonamni yig'ishtirmoqchi emasman.",
-       "speak": "✗  clean my room"
+       "speak": "✗  clean my room",
+       "speakAnswer": "I'm not going to clean my room."
       },
       {
        "prompt": "✓  stay at home",
        "answer": "I'm going to stay at home on Sunday.",
        "promptUz": "Yakshanba kuni uyda qolmoqchiman. ('at home' — artikl YO'Q)",
-       "speak": "✓  stay at home"
+       "speak": "✓  stay at home",
+       "speakAnswer": "I'm going to stay at home on Sunday."
       },
       {
        "prompt": "✗  play football",
        "answer": "I'm not going to play football.",
        "promptUz": "Futbol o'ynamoqchi emasman. (sport oldidan artikl YO'Q)",
-       "speak": "✗  play football"
+       "speak": "✗  play football",
+       "speakAnswer": "I'm not going to play football."
       },
       {
        "prompt": "✓  watch TV",
        "answer": "I'm going to watch TV in the evening.",
        "promptUz": "Kechqurun televizor ko'rmoqchiman. ('TV' oldidan artikl YO'Q)",
-       "speak": "✓  watch TV"
+       "speak": "✓  watch TV",
+       "speakAnswer": "I'm going to watch TV in the evening."
       }
      ]
     }
@@ -1724,23 +1813,28 @@
      "tasks": [
       {
        "left": "1  save money",
-       "right": "c  go on holiday"
+       "right": "c  go on holiday",
+       "speakAnswer": "c  go on holiday"
       },
       {
        "left": "2  join a gym",
-       "right": "a  keep fit"
+       "right": "a  keep fit",
+       "speakAnswer": "a  keep fit"
       },
       {
        "left": "3  stop eating sweets",
-       "right": "d  lose weight"
+       "right": "d  lose weight",
+       "speakAnswer": "d  lose weight"
       },
       {
        "left": "4  study hard",
-       "right": "b  pass his exams"
+       "right": "b  pass his exams",
+       "speakAnswer": "b  pass his exams"
       },
       {
        "left": "5  learn English",
-       "right": "e  get a better job"
+       "right": "e  get a better job",
+       "speakAnswer": "e  get a better job"
       }
      ]
     },
@@ -1851,7 +1945,8 @@
         "on-the-spot decision",
         "prediction"
        ],
-       "whyUz": "QAROR (on-the-spot decision).\nOldida HOZIRGI HOLAT: 'I'M COLD.'\nSovqotgani uchun AYNI DAMDA derazani yopishga\nqaror qildi.\nOldindan rejalashtirilmagan."
+       "whyUz": "QAROR (on-the-spot decision).\nOldida HOZIRGI HOLAT: 'I'M COLD.'\nSovqotgani uchun AYNI DAMDA derazani yopishga\nqaror qildi.\nOldindan rejalashtirilmagan.",
+       "speakAnswer": "on-the-spot decision"
       },
       {
        "prompt": "2  In 50 years' time, I think there will be more cars in the streets than people.",
@@ -1861,7 +1956,8 @@
         "prediction",
         "on-the-spot decision"
        ],
-       "whyUz": "BASHORAT (prediction).\nIKKI IP: 'IN 50 YEARS' TIME' (kelajak vaqti)\nva 'I THINK' (fikr).\nDalil yo'q — shunchaki taxmin.\nDIQQAT: 'MORE cars THAN people' — qiyosiy daraja."
+       "whyUz": "BASHORAT (prediction).\nIKKI IP: 'IN 50 YEARS' TIME' (kelajak vaqti)\nva 'I THINK' (fikr).\nDalil yo'q — shunchaki taxmin.\nDIQQAT: 'MORE cars THAN people' — qiyosiy daraja.",
+       "speakAnswer": "prediction"
       },
       {
        "prompt": "3  It will be cold and rainy tomorrow.",
@@ -1871,7 +1967,8 @@
         "prediction",
         "on-the-spot decision"
        ],
-       "whyUz": "BASHORAT.\n'TOMORROW' — kelajak vaqt iborasi.\nOb-havo bashorati.\n'It will be + SIFAT' qolipi (quyidagi qutiga\nqarang)."
+       "whyUz": "BASHORAT.\n'TOMORROW' — kelajak vaqt iborasi.\nOb-havo bashorati.\n'It will be + SIFAT' qolipi (quyidagi qutiga\nqarang).",
+       "speakAnswer": "prediction"
       },
       {
        "prompt": "4  I'm hungry. I'll make myself a sandwich.",
@@ -1881,7 +1978,8 @@
         "on-the-spot decision",
         "prediction"
        ],
-       "whyUz": "QAROR.\nOldida HOZIRGI HOLAT: 'I'M HUNGRY.'\nQorni ochgani uchun AYNI DAMDA qaror qildi.\n'MYSELF' = o'zimga (o'zlik olmoshi).\n1-band bilan bir xil naqsh."
+       "whyUz": "QAROR.\nOldida HOZIRGI HOLAT: 'I'M HUNGRY.'\nQorni ochgani uchun AYNI DAMDA qaror qildi.\n'MYSELF' = o'zimga (o'zlik olmoshi).\n1-band bilan bir xil naqsh.",
+       "speakAnswer": "on-the-spot decision"
       },
       {
        "prompt": "5  In 100 years' time, people will have flying cars.",
@@ -1891,7 +1989,8 @@
         "prediction",
         "on-the-spot decision"
        ],
-       "whyUz": "BASHORAT.\n'IN 100 YEARS' TIME' — uzoq kelajak.\nQutidagi namuna bilan bir xil:\n'In 100 years' time, there will be underwater\ncities.'"
+       "whyUz": "BASHORAT.\n'IN 100 YEARS' TIME' — uzoq kelajak.\nQutidagi namuna bilan bir xil:\n'In 100 years' time, there will be underwater\ncities.'",
+       "speakAnswer": "prediction"
       }
      ]
     },
@@ -2364,37 +2463,44 @@
       {
        "prompt": "Monday — go to the cinema",
        "answer": "They're going to the cinema on Monday.",
-       "promptUz": "Dushanba kuni kinoga borishadi. (KITOBDAGI NAMUNA — 'go TO + JOY')"
+       "promptUz": "Dushanba kuni kinoga borishadi. (KITOBDAGI NAMUNA — 'go TO + JOY')",
+       "speakAnswer": "They're going to the cinema on Monday."
       },
       {
        "prompt": "Tuesday — visit Heather's parents",
        "answer": "They're visiting Heather's parents on Tuesday.",
-       "promptUz": "Seshanba kuni Xezerning ota-onasinikiga borishadi. ('visit' — predlogSIZ)"
+       "promptUz": "Seshanba kuni Xezerning ota-onasinikiga borishadi. ('visit' — predlogSIZ)",
+       "speakAnswer": "They're visiting Heather's parents on Tuesday."
       },
       {
        "prompt": "Wednesday — take the car to a mechanic",
        "answer": "They're taking the car to a mechanic on Wednesday.",
-       "promptUz": "Chorshanba kuni mashinani ustaga olib borishadi. (take → TAKING, '-e' tushadi)"
+       "promptUz": "Chorshanba kuni mashinani ustaga olib borishadi. (take → TAKING, '-e' tushadi)",
+       "speakAnswer": "They're taking the car to a mechanic on Wednesday."
       },
       {
        "prompt": "Thursday — buy a computer",
        "answer": "They're buying a computer on Thursday.",
-       "promptUz": "Payshanba kuni kompyuter sotib olishadi."
+       "promptUz": "Payshanba kuni kompyuter sotib olishadi.",
+       "speakAnswer": "They're buying a computer on Thursday."
       },
       {
        "prompt": "Friday — clean the house",
        "answer": "They're cleaning the house on Friday.",
-       "promptUz": "Juma kuni uyni yig'ishtirishadi."
+       "promptUz": "Juma kuni uyni yig'ishtirishadi.",
+       "speakAnswer": "They're cleaning the house on Friday."
       },
       {
        "prompt": "Saturday — have a dinner party",
        "answer": "They're having a dinner party on Saturday.",
-       "promptUz": "Shanba kuni kechki ziyofat qilishadi. (have → HAVING; 'make a party' XATO)"
+       "promptUz": "Shanba kuni kechki ziyofat qilishadi. (have → HAVING; 'make a party' XATO)",
+       "speakAnswer": "They're having a dinner party on Saturday."
       },
       {
        "prompt": "Sunday — go on a picnic",
        "answer": "They're going on a picnic on Sunday.",
-       "promptUz": "Yakshanba kuni piknikka borishadi. ('go ON a picnic' — turg'un ibora)"
+       "promptUz": "Yakshanba kuni piknikka borishadi. ('go ON a picnic' — turg'un ibora)",
+       "speakAnswer": "They're going on a picnic on Sunday."
       }
      ]
     },
@@ -2414,91 +2520,104 @@
        "answer": "'ll (will)",
        "promptUz": "'Okay' — ayni damdagi reaksiya",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\n'Okay' so'zi buni ko'rsatadi: B endigina eshitdi\nva darhol yordam taklif qildi.\nOldindan rejalashtirilmagan.",
-       "speak": "1  A: I need to go to the dentist.  B: Okay, I ............ drive you there."
+       "speak": "1  A: I need to go to the dentist.  B: Okay, I ............ drive you there.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "2  A: Your shirt is dirty.  B: I know. I ............ wash it later.",
        "answer": "'m going to (am going to)",
        "promptUz": "'I know' — allaqachon bilgan",
        "whyUz": "BE GOING TO — ALLAQACHON rejalashtirgan.\n'I KNOW' — B buni oldin ham bilgan va yuvishni\nrejalashtirgan.\nAgar 'will' bo'lsa — endigina qaror qilgan\nbo'lardi, lekin 'I know' bunga zid.",
-       "speak": "2  A: Your shirt is dirty.  B: I know. I ............ wash it later."
+       "speak": "2  A: Your shirt is dirty.  B: I know. I ............ wash it later.",
+       "speakAnswer": "'m going to"
       },
       {
        "prompt": "3  A: We haven't got any tomatoes.  B: I know. I ............ buy some this afternoon.",
        "answer": "'m going to (am going to)",
        "promptUz": "Yana 'I know'",
        "whyUz": "BE GOING TO — ALLAQACHON rejalashtirgan.\n'I KNOW' — 2-band bilan bir xil ip.\nB pomidor yo'qligini bilgan va sotib olishni\nrejalashtirgan.",
-       "speak": "3  A: We haven't got any tomatoes.  B: I know. I ............ buy some this afternoon."
+       "speak": "3  A: We haven't got any tomatoes.  B: I know. I ............ buy some this afternoon.",
+       "speakAnswer": "'m going to"
       },
       {
        "prompt": "4  A: I don't understand this exercise!  B: Don't worry, I ............ help you.",
        "answer": "'ll (will)",
        "promptUz": "'Don't worry' — ayni damdagi taklif",
        "whyUz": "WILL — AYNI DAMDA yordam taklifi.\n'Don't worry' so'zi buni ko'rsatadi.\nB muammoni endigina eshitdi.",
-       "speak": "4  A: I don't understand this exercise!  B: Don't worry, I ............ help you."
+       "speak": "4  A: I don't understand this exercise!  B: Don't worry, I ............ help you.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "5  A: Why are you so excited?  B: I ............ buy some new clothes next week.",
        "answer": "'m going to (am going to)",
        "promptUz": "Hayajonining SABABI",
        "whyUz": "BE GOING TO — ALLAQACHON rejalashtirgan.\nB nega hayajonlanganini TUSHUNTIRADI:\nchunki reja bor.\nReja oldindan mavjud bo'lgani uchun u\nhayajonlangan.",
-       "speak": "5  A: Why are you so excited?  B: I ............ buy some new clothes next week."
+       "speak": "5  A: Why are you so excited?  B: I ............ buy some new clothes next week.",
+       "speakAnswer": "'m going to"
       },
       {
        "prompt": "6  A: It's hot in here.  B: I ............ open the window.",
        "answer": "'ll (will)",
        "promptUz": "Ayni damdagi qaror",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\nIssiqligini eshitib, darhol derazani ochishga\nqaror qildi.\nCoursebook 95-betdagi 11-mashqda ham shu misol.",
-       "speak": "6  A: It's hot in here.  B: I ............ open the window."
+       "speak": "6  A: It's hot in here.  B: I ............ open the window.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "7  A: I can't do this puzzle.  B: I ............ show you how to do it.",
        "answer": "'ll (will)",
        "promptUz": "Ayni damdagi yordam taklifi",
        "whyUz": "WILL — AYNI DAMDA yordam taklifi.\n'a puzzle' = boshqotirma.\n'show sb HOW TO do sth' — qolip.",
-       "speak": "7  A: I can't do this puzzle.  B: I ............ show you how to do it."
+       "speak": "7  A: I can't do this puzzle.  B: I ............ show you how to do it.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "8  A: I'm not feeling well.  B: I ............ take you to the doctor.",
        "answer": "'ll (will)",
        "promptUz": "Ayni damdagi qaror",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\n'I'm not feeling well' = o'zimni yaxshi his\nqilmayapman.\n'take sb TO the doctor' — predlog TO.",
-       "speak": "8  A: I'm not feeling well.  B: I ............ take you to the doctor."
+       "speak": "8  A: I'm not feeling well.  B: I ............ take you to the doctor.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "9  A: What are you doing next weekend?  B: I ............ visit my parents.",
        "answer": "'m going to (am going to)",
        "promptUz": "REJA so'ralmoqda",
        "whyUz": "BE GOING TO — REJA so'ralmoqda.\n'What are you doing next weekend?' —\nkelajak REJASI haqidagi savol.\nJavob ham reja bo'lishi kerak.",
-       "speak": "9  A: What are you doing next weekend?  B: I ............ visit my parents."
+       "speak": "9  A: What are you doing next weekend?  B: I ............ visit my parents.",
+       "speakAnswer": "'m going to"
       },
       {
        "prompt": "10  A: There's something wrong with the car.  B: I ............ call a mechanic.",
        "answer": "'ll (will)",
        "promptUz": "Ayni damdagi qaror",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\nNosozlikni eshitib, darhol ustani chaqirishga\nqaror qildi.\n'something wrong with' = ... da nosozlik.",
-       "speak": "10  A: There's something wrong with the car.  B: I ............ call a mechanic."
+       "speak": "10  A: There's something wrong with the car.  B: I ............ call a mechanic.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "11  A: Why is she wearing these clothes?  B: She ............ have dinner with Paul.",
        "answer": "'s going to (is going to)",
        "promptUz": "Kiyimining SABABI; ega — 'she'",
        "whyUz": "BE GOING TO — ALLAQACHON rejalashtirgan.\nB uning nega bunday kiyinganini TUSHUNTIRADI:\nchunki reja bor.\nDIQQAT — EGA: 'SHE' → 'SHE'S going to'\n('she is'), 'I'm' EMAS.",
-       "speak": "11  A: Why is she wearing these clothes?  B: She ............ have dinner with Paul."
+       "speak": "11  A: Why is she wearing these clothes?  B: She ............ have dinner with Paul.",
+       "speakAnswer": "'s going to"
       },
       {
        "prompt": "12  A: What are Sean's plans for the summer?  B: He ............ work at a restaurant to earn some money.",
        "answer": "'s going to (is going to)",
        "promptUz": "'plans' so'zi savolda bor",
        "whyUz": "BE GOING TO — savolda 'PLANS' so'zi BEVOSITA\naytilgan.\nDIQQAT — EGA: 'HE' → 'HE'S going to'.\n'TO EARN' — maqsad infinitivi\n(yuqoridagi 'Expressing Purpose' qoidasi).",
-       "speak": "12  A: What are Sean's plans for the summer?  B: He ............ work at a restaurant to earn some money."
+       "speak": "12  A: What are Sean's plans for the summer?  B: He ............ work at a restaurant to earn some money.",
+       "speakAnswer": "'s going to"
       },
       {
        "prompt": "13  A: What are you looking for?  B: My basketball. I ............ play basketball with Peter.",
        "answer": "'m going to (am going to)",
        "promptUz": "To'pni qidirishining SABABI",
        "whyUz": "BE GOING TO — ALLAQACHON rejalashtirgan.\nB nega to'pni qidirayotganini TUSHUNTIRADI:\nchunki Piter bilan o'ynash rejasi bor.\n'look FOR' = qidirmoq (predlog FOR).",
-       "speak": "13  A: What are you looking for?  B: My basketball. I ............ play basketball with Peter."
+       "speak": "13  A: What are you looking for?  B: My basketball. I ............ play basketball with Peter.",
+       "speakAnswer": "'m going to"
       }
      ]
     }
@@ -2528,14 +2647,16 @@
        "answer": "'ll (will)",
        "promptUz": "Ayni damdagi yordam taklifi",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\nA qornining ochligini aytdi, B darhol yordam\ntaklif qildi.\n'MUAMMO → YORDAM TAKLIFI' naqshi.",
-       "speak": "14  A: I'm hungry.  B: I ............ make you a sandwich."
+       "speak": "14  A: I'm hungry.  B: I ............ make you a sandwich.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "15  A: Shall we go out tonight?  B: Sorry, I can't. I ............ visit my aunt.",
        "answer": "'m going to (am going to)",
        "promptUz": "Taklifni rad etish sababi",
        "whyUz": "BE GOING TO — ALLAQACHON rejalashtirgan.\n'Sorry, I can't' — nega bora olmaydi?\nChunki BOSHQA REJASI bor.\nReja OLDINDAN mavjud bo'lgani uchun taklifni\nrad etyapti.\nCoursebook 97-betdagi rad etish qolipi bilan\nbir xil.",
-       "speak": "15  A: Shall we go out tonight?  B: Sorry, I can't. I ............ visit my aunt."
+       "speak": "15  A: Shall we go out tonight?  B: Sorry, I can't. I ............ visit my aunt.",
+       "speakAnswer": "'m going to"
       }
      ]
     },
@@ -2552,19 +2673,23 @@
      "tasks": [
       {
        "left": "1",
-       "right": "send invitations to friends"
+       "right": "send invitations to friends",
+       "speakAnswer": "send invitations to friends"
       },
       {
        "left": "2",
-       "right": "hire a band"
+       "right": "hire a band",
+       "speakAnswer": "hire a band"
       },
       {
        "left": "3",
-       "right": "make birthday cake"
+       "right": "make birthday cake",
+       "speakAnswer": "make birthday cake"
       },
       {
        "left": "4",
-       "right": "buy coke and crisps"
+       "right": "buy coke and crisps",
+       "speakAnswer": "buy coke and crisps"
       }
      ]
     },
@@ -2583,25 +2708,29 @@
        "prompt": "1  send invitations",
        "answer": "She's going to send invitations to her friends.",
        "promptUz": "U do'stlariga taklifnoma yubormoqchi. (KITOBDAGI NAMUNA — 'to HER friends')",
-       "speak": "1  send invitations"
+       "speak": "1  send invitations",
+       "speakAnswer": "She's going to send invitations to her friends."
       },
       {
        "prompt": "2  hire a band",
        "answer": "She's going to hire a band.",
        "promptUz": "U musiqa guruhini yollamoqchi. ('to hire' = yollamoq)",
-       "speak": "2  hire a band"
+       "speak": "2  hire a band",
+       "speakAnswer": "She's going to hire a band."
       },
       {
        "prompt": "3  make a birthday cake",
        "answer": "She's going to make a birthday cake.",
        "promptUz": "U tug'ilgan kun torti pishirmoqchi. ('MAKE a cake', 'do a cake' XATO)",
-       "speak": "3  make a birthday cake"
+       "speak": "3  make a birthday cake",
+       "speakAnswer": "She's going to make a birthday cake."
       },
       {
        "prompt": "4  buy coke and crisps",
        "answer": "She's going to buy coke and crisps.",
        "promptUz": "U kola va chips sotib olmoqchi. ('crisps' — britancha)",
-       "speak": "4  buy coke and crisps"
+       "speak": "4  buy coke and crisps",
+       "speakAnswer": "She's going to buy coke and crisps."
       }
      ]
     },
@@ -2626,7 +2755,8 @@
         "fix"
        ],
        "whyUz": "KITOBDAGI NAMUNA.\nDALIL: gazetaga e'lon beryapti.\n→ mashinasini SOTMOQCHI.\n'an ad' = e'lon (advertisement ning qisqargani).",
-       "speak": "1  Jane's putting an ad in the newspaper.  She ............ ."
+       "speak": "1  Jane's putting an ad in the newspaper.  She ............ .",
+       "speakAnswer": "is going to sell her car"
       },
       {
        "prompt": "2  The washing machine isn't working.  My father ............ .",
@@ -2638,7 +2768,8 @@
         "fix"
        ],
        "whyUz": "DALIL: kir yuvish mashinasi buzilgan.\n→ otasi uni TUZATMOQCHI.\n'to fix' = tuzatmoq, ta'mirlamoq.\nDIQQAT: 'IT' qo'shiladi (mashinani).\n'My father' — 3-shaxs birlik → 'IS going to'.",
-       "speak": "2  The washing machine isn't working.  My father ............ ."
+       "speak": "2  The washing machine isn't working.  My father ............ .",
+       "speakAnswer": "is going to fix it"
       },
       {
        "prompt": "3  I bought some flour and some eggs.  I ............ .",
@@ -2650,7 +2781,8 @@
         "fix"
        ],
        "whyUz": "DALIL: un va tuxum sotib olindi —\nbular TORTNING masalliqlari.\n→ TORT PISHIRMOQCHI.\n'flour' = un (DIQQAT: 'flower' — gul, bir xil\no'qiladi!).\n'I' → 'AM going to'.",
-       "speak": "3  I bought some flour and some eggs.  I ............ ."
+       "speak": "3  I bought some flour and some eggs.  I ............ .",
+       "speakAnswer": "am going to make a cake"
       },
       {
        "prompt": "4  Robert is on a diet.  He ............ .",
@@ -2662,7 +2794,8 @@
         "fix"
        ],
        "whyUz": "DALIL: Robert parhezda.\n→ VAZN TASHLAMOQCHI (parhezning maqsadi shu).\n'be ON a diet' = parhezda bo'lmoq (predlog ON).\n'lose weight' = vazn tashlamoq.",
-       "speak": "4  Robert is on a diet.  He ............ ."
+       "speak": "4  Robert is on a diet.  He ............ .",
+       "speakAnswer": "is going to lose weight"
       },
       {
        "prompt": "5  Peter is still in bed.  He ............ .",
@@ -2674,7 +2807,8 @@
         "fix"
        ],
        "whyUz": "DALIL: Piter hali ham karavotda.\n→ MAKTABGA KECHIKADI.\n\nDIQQAT — BU BAND FARQ QILADI:\n1-4-bandlarda 'be going to' — REJA/NIYAT.\nBu yerda esa DALILGA ASOSLANGAN BASHORAT:\nPiter kechikishni XOHLAMAYDI, lekin dalil\nshuni ko'rsatadi.\n'be late FOR' — predlog FOR.\n'still' = hali ham.",
-       "speak": "5  Peter is still in bed.  He ............ ."
+       "speak": "5  Peter is still in bed.  He ............ .",
+       "speakAnswer": "is going to be late for school"
       }
      ]
     },
@@ -2694,70 +2828,80 @@
        "answer": "am going to visit",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA.\n'plans' so'zi savolda bor → BE GOING TO.\nFe'l: VISIT.",
-       "speak": "1  A: Have you got any plans for this evening?  B: Yes, I ............ my parents."
+       "speak": "1  A: Have you got any plans for this evening?  B: Yes, I ............ my parents.",
+       "speakAnswer": "am going to visit"
       },
       {
        "prompt": "2  A: Are you ready to order, sir?  B: Yes, I ............ the steak, please.",
        "answer": "'ll have",
        "promptUz": "Restoranda buyurtma — turg'un ibora",
        "whyUz": "WILL — menyuga qarab AYNI DAMDA tanladi.\nFe'l: HAVE.\nDIQQAT: restoranda buyurtma berishda DOIM\n'I'LL HAVE ...' deyiladi — turg'un ibora.\n'a steak' = bifshteks.",
-       "speak": "2  A: Are you ready to order, sir?  B: Yes, I ............ the steak, please."
+       "speak": "2  A: Are you ready to order, sir?  B: Yes, I ............ the steak, please.",
+       "speakAnswer": "'ll have"
       },
       {
        "prompt": "3  A: There are dark clouds in the sky.  B: It ............ this afternoon.",
        "answer": "'s going to rain",
        "promptUz": "DALIL bor",
        "whyUz": "BE GOING TO — DALILGA asoslangan bashorat.\nDALIL: 'There are dark clouds in the sky.'\nFe'l: RAIN.\nBu — 56 va 57-betlardagi namunaning aynan o'zi.",
-       "speak": "3  A: There are dark clouds in the sky.  B: It ............ this afternoon."
+       "speak": "3  A: There are dark clouds in the sky.  B: It ............ this afternoon.",
+       "speakAnswer": "'s going to rain"
       },
       {
        "prompt": "4  A: My teacher wants to speak to you.  B: Okay, I ............ her tomorrow morning.",
        "answer": "'ll phone",
        "promptUz": "'Okay' — ayni damdagi reaksiya",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\n'Okay' so'zi buni ko'rsatadi.\nFe'l: PHONE (qo'ng'iroq qilmoq, predlogSIZ).",
-       "speak": "4  A: My teacher wants to speak to you.  B: Okay, I ............ her tomorrow morning."
+       "speak": "4  A: My teacher wants to speak to you.  B: Okay, I ............ her tomorrow morning.",
+       "speakAnswer": "'ll phone"
       },
       {
        "prompt": "5  A: Why did you buy those brushes?  B: I ............ the house.",
        "answer": "'m going to paint",
        "promptUz": "Cho'tkalar ALLAQACHON sotib olingan",
        "whyUz": "BE GOING TO — reja OLDINDAN bor.\nCho'tkalar ALLAQACHON sotib olingan —\ndemak bo'yash rejasi oldindan mavjud.\nFe'l: PAINT.\n'a brush' = cho'tka.",
-       "speak": "5  A: Why did you buy those brushes?  B: I ............ the house."
+       "speak": "5  A: Why did you buy those brushes?  B: I ............ the house.",
+       "speakAnswer": "'m going to paint"
       },
       {
        "prompt": "6  A: There's somebody knocking at the door.  B: I ............ it.",
        "answer": "'ll answer",
        "promptUz": "Ayni damdagi qaror",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\nEshik taqillayapti, B darhol javob berishga\nqaror qildi.\nFe'l: ANSWER.\nDIQQAT: 'answer the door' = eshikni ochmoq\n('answer the phone' = telefonga javob bermoq).",
-       "speak": "6  A: There's somebody knocking at the door.  B: I ............ it."
+       "speak": "6  A: There's somebody knocking at the door.  B: I ............ it.",
+       "speakAnswer": "'ll answer"
       },
       {
        "prompt": "7  A: What are his plans for the weekend?  B: He ............ at home and relax.",
        "answer": "'s going to stay",
        "promptUz": "'plans' so'zi savolda bor",
        "whyUz": "BE GOING TO — savolda 'PLANS' so'zi bevosita\naytilgan.\nFe'l: STAY.\n'stay AT home' — predlog AT, artikl YO'Q.\n'and relax' — ikkinchi fe'l takrorlanmaydi.",
-       "speak": "7  A: What are his plans for the weekend?  B: He ............ at home and relax."
+       "speak": "7  A: What are his plans for the weekend?  B: He ............ at home and relax.",
+       "speakAnswer": "'s going to stay"
       },
       {
        "prompt": "8  A: What are the Johnsons doing tomorrow?  B: They ............ to the beach.",
        "answer": "are going to drive",
        "promptUz": "Reja so'ralmoqda; ega KO'PLIK",
        "whyUz": "BE GOING TO — kelajak rejasi so'ralmoqda.\nFe'l: DRIVE.\nDIQQAT — EGA: 'They' KO'PLIK →\n'They ARE going to' ('They're going to').\n'the Johnsons' = Jonsonlar oilasi.",
-       "speak": "8  A: What are the Johnsons doing tomorrow?  B: They ............ to the beach."
+       "speak": "8  A: What are the Johnsons doing tomorrow?  B: They ............ to the beach.",
+       "speakAnswer": "are going to drive"
       },
       {
        "prompt": "9  A: This house is a mess!  B: Don't worry, I ............ it.",
        "answer": "'ll clean",
        "promptUz": "'Don't worry' — ayni damdagi taklif",
        "whyUz": "WILL — AYNI DAMDA yordam taklifi.\n'Don't worry' so'zi buni ko'rsatadi.\nFe'l: CLEAN.\n'a mess' = tartibsizlik.",
-       "speak": "9  A: This house is a mess!  B: Don't worry, I ............ it."
+       "speak": "9  A: This house is a mess!  B: Don't worry, I ............ it.",
+       "speakAnswer": "'ll clean"
       },
       {
        "prompt": "10  A: I'm hungry!  B: Okay, I ............ dinner.",
        "answer": "'ll cook",
        "promptUz": "'Okay' — ayni damdagi qaror",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\n'Okay' so'zi buni ko'rsatadi.\nFe'l: COOK.\n'cook dinner' — artikl YO'Q.",
-       "speak": "10  A: I'm hungry!  B: Okay, I ............ dinner."
+       "speak": "10  A: I'm hungry!  B: Okay, I ............ dinner.",
+       "speakAnswer": "'ll cook"
       }
      ]
     },
@@ -2777,63 +2921,72 @@
        "answer": "is going to be",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA.\n'He LIKES PAINTING' → bu uning NIYATI.\nBE GOING TO — reja/niyat.\n'an artist' = rassom.",
-       "speak": "1  He likes painting. He ............ (be) an artist."
+       "speak": "1  He likes painting. He ............ (be) an artist.",
+       "speakAnswer": "is going to be"
       },
       {
        "prompt": "2  I'm sure Kelly ............ (let) you borrow her CDs.",
        "answer": "will let",
        "promptUz": "'I'm sure' — fikr, dalil yo'q",
        "whyUz": "WILL — FIKRGA asoslangan bashorat.\n'I'M SURE' = ishonchim komil — bu shunchaki\nFIKR, ko'rinib turgan DALIL yo'q.\n\nDIQQAT — 'LET' DAN KEYIN 'TO' YO'Q:\n'let you BORROW' ✓\n'let you TO borrow' ✗\nShunday: make sb do, help sb do.",
-       "speak": "2  I'm sure Kelly ............ (let) you borrow her CDs."
+       "speak": "2  I'm sure Kelly ............ (let) you borrow her CDs.",
+       "speakAnswer": "will let"
       },
       {
        "prompt": "3  Look at him! He ............ (fall) off his bike.",
        "answer": "is going to fall",
        "promptUz": "'Look at him!' — dalil ko'rinib turibdi",
        "whyUz": "BE GOING TO — DALILGA asoslangan bashorat.\n'LOOK AT HIM!' — dalil HOZIR ko'rinib turibdi\n(bola muvozanatini yo'qotgan).\n'fall OFF' = ... dan yiqilmoq (predlog OFF).",
-       "speak": "3  Look at him! He ............ (fall) off his bike."
+       "speak": "3  Look at him! He ............ (fall) off his bike.",
+       "speakAnswer": "is going to fall"
       },
       {
        "prompt": "4  They ............ (have) dinner at Mario's on Saturday evening.",
        "answer": "are having",
        "promptUz": "'on Saturday evening' — aniq vaqt",
        "whyUz": "PRESENT CONTINUOUS — QAT'IY BELGILANGAN ish.\n'ON SATURDAY EVENING' — ANIQ VAQT,\nrestoranda joy band qilingan.\n57-betdagi qoida.",
-       "speak": "4  They ............ (have) dinner at Mario's on Saturday evening."
+       "speak": "4  They ............ (have) dinner at Mario's on Saturday evening.",
+       "speakAnswer": "are having"
       },
       {
        "prompt": "5  I can't see you at the weekend. I ............ (visit) my parents.",
        "answer": "am visiting",
        "promptUz": "Nega ko'risha olmaydi?",
        "whyUz": "PRESENT CONTINUOUS — QAT'IY BELGILANGAN ish.\n'I CAN'T SEE YOU at the weekend' — nega?\nChunki BOSHQA belgilangan ishi bor.\n'at the weekend' — ANIQ VAQT.\n\nESLATMA: 'am going to visit' ham grammatik\njihatdan mumkin, lekin KELISHILGAN reja uchun\npresent continuous tabiiyroq — 4, 7, 8-bandlar\nham shu naqshda.",
-       "speak": "5  I can't see you at the weekend. I ............ (visit) my parents."
+       "speak": "5  I can't see you at the weekend. I ............ (visit) my parents.",
+       "speakAnswer": "am visiting"
       },
       {
        "prompt": "6  I'm cold. I ............ (put on) my jacket.",
        "answer": "will put on",
        "promptUz": "'I'm cold' — ayni damdagi qaror",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\n'I'M COLD' — sovqotgani uchun darhol qaror\nqildi.\n'put ON' = kiymoq (ikki so'zli fe'l).\nCoursebook 95-betdagi 11-mashqda ham shu naqsh.",
-       "speak": "6  I'm cold. I ............ (put on) my jacket."
+       "speak": "6  I'm cold. I ............ (put on) my jacket.",
+       "speakAnswer": "will put on"
       },
       {
        "prompt": "7  He ............ (meet) Lisa for coffee at noon.",
        "answer": "is meeting",
        "promptUz": "'at noon' — aniq vaqt",
        "whyUz": "PRESENT CONTINUOUS — QAT'IY BELGILANGAN ish.\n'AT NOON' — ANIQ VAQT (soat 12).\nKelishilgan uchrashuv.\n'meet sb FOR coffee' — predlog FOR.",
-       "speak": "7  He ............ (meet) Lisa for coffee at noon."
+       "speak": "7  He ............ (meet) Lisa for coffee at noon.",
+       "speakAnswer": "is meeting"
       },
       {
        "prompt": "8  I ............ (fly) to Madrid next month.",
        "answer": "am flying",
        "promptUz": "'fly' — harakat fe'li; 'next month' — aniq vaqt",
        "whyUz": "PRESENT CONTINUOUS — IKKI DALIL:\n  1) 'NEXT MONTH' — aniq vaqt\n  2) 'FLY' — HARAKAT FE'LI\n57-bet: harakat fe'llari (come, go, FLY, travel,\nleave) kelajak rejasida present continuous da\nkeladi.\nChipta olingan.",
-       "speak": "8  I ............ (fly) to Madrid next month."
+       "speak": "8  I ............ (fly) to Madrid next month.",
+       "speakAnswer": "am flying"
       },
       {
        "prompt": "9  Don't worry, I ............ (call) the plumber for the dishwasher.",
        "answer": "will call",
        "promptUz": "'Don't worry' — ayni damdagi taklif",
        "whyUz": "WILL — AYNI DAMDA yordam taklifi.\n'DON'T WORRY' so'zi buni ko'rsatadi.\n'a plumber' = santexnik ('b' O'QILMAYDI:\n'PLA-mer').\n'a dishwasher' = idish yuvish mashinasi.",
-       "speak": "9  Don't worry, I ............ (call) the plumber for the dishwasher."
+       "speak": "9  Don't worry, I ............ (call) the plumber for the dishwasher.",
+       "speakAnswer": "will call"
       }
      ]
     }
@@ -2863,7 +3016,8 @@
        "answer": "am taking",
        "promptUz": "Nega parkga bora olmaydi?",
        "whyUz": "PRESENT CONTINUOUS — QAT'IY BELGILANGAN ish.\n'I CAN'T GO to the park TODAY' — nega?\nChunki BOSHQA belgilangan ishi bor.\n'today' — ANIQ vaqt.\n\n58-betdagi 5-band bilan bir xil naqsh.\n\nESLATMA: 'am going to take' ham mumkin, lekin\nveterinarga oldindan yozilgan bo'lsa\npresent continuous tabiiyroq.\n'a vet' = veterinar.",
-       "speak": "10  I can't go to the park today. I ............ (take) my dog to the vet."
+       "speak": "10  I can't go to the park today. I ............ (take) my dog to the vet.",
+       "speakAnswer": "am taking"
       }
      ]
     },
@@ -2883,56 +3037,64 @@
        "answer": "There",
        "promptUz": "'fewer cars' — sifatmi yoki ot?",
        "whyUz": "'fewer CARS' — OT (ko'plik) → THERE.\nDIQQAT: 'FEWER' — 'few' ning qiyosiy shakli,\nSANALADIGAN otlar bilan ishlatiladi\n('fewer cars' ✓, 'less cars' XATO).",
-       "speak": "1  ............ will be fewer cars in the future."
+       "speak": "1  ............ will be fewer cars in the future.",
+       "speakAnswer": "There"
       },
       {
        "prompt": "2  ............ will be foggy in London tomorrow.",
        "answer": "It",
        "promptUz": "'foggy' — sifat",
        "whyUz": "'foggy' — SIFAT ('-y' bilan tugaydi) → IT.\nOt shakli: 'There will be FOG in London\ntomorrow.'\nMa'no bir xil.",
-       "speak": "2  ............ will be foggy in London tomorrow."
+       "speak": "2  ............ will be foggy in London tomorrow.",
+       "speakAnswer": "It"
       },
       {
        "prompt": "3  ............ will be sunshine in Madrid next week.",
        "answer": "There",
        "promptUz": "'sunshine' — ot",
        "whyUz": "'sunshine' — OT → THERE.\nSifat shakli: 'It will be SUNNY in Madrid next\nweek.'",
-       "speak": "3  ............ will be sunshine in Madrid next week."
+       "speak": "3  ............ will be sunshine in Madrid next week.",
+       "speakAnswer": "There"
       },
       {
        "prompt": "4  ............ will be hot in Rome tomorrow.",
        "answer": "It",
        "promptUz": "'hot' — sifat",
        "whyUz": "'hot' — SIFAT → IT.\nDIQQAT: '-y' bilan tugamaydi, lekin baribir\nSIFAT (holatni bildiradi).\nOt shakli 'heat' (issiqlik) bo'lardi.",
-       "speak": "4  ............ will be hot in Rome tomorrow."
+       "speak": "4  ............ will be hot in Rome tomorrow.",
+       "speakAnswer": "It"
       },
       {
        "prompt": "5  ............ will be rain in Ankara today.",
        "answer": "There",
        "promptUz": "'rain' — ot",
        "whyUz": "'rain' — OT → THERE.\nSifat shakli: 'It will be RAINY in Ankara\ntoday.'\nAnkara — Turkiya poytaxti.",
-       "speak": "5  ............ will be rain in Ankara today."
+       "speak": "5  ............ will be rain in Ankara today.",
+       "speakAnswer": "There"
       },
       {
        "prompt": "6  ............ will be less pollution in 20 years' time.",
        "answer": "There",
        "promptUz": "'pollution' — ot",
        "whyUz": "'less POLLUTION' — OT → THERE.\nDIQQAT: 'LESS' — 'little' ning qiyosiy shakli,\nSANALMAYDIGAN otlar bilan\n('less pollution' ✓, 'fewer pollution' XATO).\n1-band bilan SOLISHTIRING.",
-       "speak": "6  ............ will be less pollution in 20 years' time."
+       "speak": "6  ............ will be less pollution in 20 years' time.",
+       "speakAnswer": "There"
       },
       {
        "prompt": "7  ............ will be cold in Prague tomorrow.",
        "answer": "It",
        "promptUz": "'cold' — sifat",
        "whyUz": "'cold' — SIFAT → IT.\n4-band bilan bir xil qoida.\nPraga — Chexiya poytaxti.",
-       "speak": "7  ............ will be cold in Prague tomorrow."
+       "speak": "7  ............ will be cold in Prague tomorrow.",
+       "speakAnswer": "It"
       },
       {
        "prompt": "8  ............ will be strong winds in Paris next week.",
        "answer": "There",
        "promptUz": "'strong winds' — ot",
        "whyUz": "'strong WINDS' — OT (ko'plik) → THERE.\nSifat shakli: 'It will be WINDY in Paris next\nweek.'\nCoursebook 95-betdagi 10c-mashqda ham aynan\nshu juftlik bor edi.",
-       "speak": "8  ............ will be strong winds in Paris next week."
+       "speak": "8  ............ will be strong winds in Paris next week.",
+       "speakAnswer": "There"
       }
      ]
     },
@@ -2949,27 +3111,33 @@
      "tasks": [
       {
        "left": "1  Tom has toothache",
-       "right": "d  visit the dentist"
+       "right": "d  visit the dentist",
+       "speakAnswer": "d  visit the dentist"
       },
       {
        "left": "2  Amanda likes music",
-       "right": "f  take piano lessons"
+       "right": "f  take piano lessons",
+       "speakAnswer": "f  take piano lessons"
       },
       {
        "left": "3  Chris wants to go on holiday",
-       "right": "a  save some money"
+       "right": "a  save some money",
+       "speakAnswer": "a  save some money"
       },
       {
        "left": "4  Lisa needs to relax",
-       "right": "e  stay at home"
+       "right": "e  stay at home",
+       "speakAnswer": "e  stay at home"
       },
       {
        "left": "5  Dave wants to have a party",
-       "right": "c  send invitations to his friends"
+       "right": "c  send invitations to his friends",
+       "speakAnswer": "c  send invitations to his friends"
       },
       {
        "left": "6  Jill wants to take some pictures",
-       "right": "b  borrow a camera"
+       "right": "b  borrow a camera",
+       "speakAnswer": "b  borrow a camera"
       }
      ]
     },
@@ -3023,23 +3191,28 @@
      "tasks": [
       {
        "left": "1  save money",
-       "right": "d  buy a car"
+       "right": "d  buy a car",
+       "speakAnswer": "d  buy a car"
       },
       {
        "left": "2  study hard",
-       "right": "c  finish university"
+       "right": "c  finish university",
+       "speakAnswer": "c  finish university"
       },
       {
        "left": "3  take French lessons",
-       "right": "e  get a job in France"
+       "right": "e  get a job in France",
+       "speakAnswer": "e  get a job in France"
       },
       {
        "left": "4  stay at home",
-       "right": "b  relax"
+       "right": "b  relax",
+       "speakAnswer": "b  relax"
       },
       {
        "left": "5  buy a new dress",
-       "right": "a  go to a party"
+       "right": "a  go to a party",
+       "speakAnswer": "a  go to a party"
       }
      ]
     },
@@ -3110,56 +3283,64 @@
        "answer": "She isn't going to buy any biscuits.",
        "promptUz": "✗ — inkor; 'any' yoki 'some'?",
        "whyUz": "✗ → INKOR gap → 'ANY'.\n'She ISN'T going to buy ANY biscuits.'\n'biscuits' — SANALADIGAN (ko'plik).\nDIQQAT: inkor gapda 'some' EMAS, 'any'.",
-       "speak": "a  biscuits  ✗"
+       "speak": "a  biscuits  ✗",
+       "speakAnswer": "She isn't going to buy any biscuits."
       },
       {
        "prompt": "b  onions  ✓",
        "answer": "She's going to buy some onions.",
        "promptUz": "✓ — tasdiq; 'some' yoki 'any'?",
        "whyUz": "✓ → TASDIQ gap → 'SOME'.\n'She'S going to buy SOME onions.'\n'onions' — SANALADIGAN (ko'plik).\nPiyoz barbekyuda go'sht bilan ishlatiladi.",
-       "speak": "b  onions  ✓"
+       "speak": "b  onions  ✓",
+       "speakAnswer": "She's going to buy some onions."
       },
       {
        "prompt": "c  meat  ✓",
        "answer": "She's going to buy some meat.",
        "promptUz": "✓ — tasdiq",
        "whyUz": "✓ → TASDIQ gap → 'SOME'.\n'meat' — SANALMAYDIGAN ot\n('a meat' yoki 'meats' XATO).\nBarbekyuning asosiy mahsuloti.",
-       "speak": "c  meat  ✓"
+       "speak": "c  meat  ✓",
+       "speakAnswer": "She's going to buy some meat."
       },
       {
        "prompt": "d  pizza  ✗",
        "answer": "She isn't going to buy any pizza.",
        "promptUz": "✗ — inkor",
        "whyUz": "✗ → INKOR gap → 'ANY'.\n'pizza' bu yerda umumiy ovqat ma'nosida →\nSANALMAYDIGAN.\nPitsa barbekyuga mos emas.",
-       "speak": "d  pizza  ✗"
+       "speak": "d  pizza  ✗",
+       "speakAnswer": "She isn't going to buy any pizza."
       },
       {
        "prompt": "e  chicken  ✓",
        "answer": "She's going to buy some chicken.",
        "promptUz": "✓ — tasdiq",
        "whyUz": "✓ → TASDIQ gap → 'SOME'.\n'chicken' go'sht sifatida — SANALMAYDIGAN.\nDIQQAT: tirik tovuq bo'lsa 'A chicken'\n(sanaladigan), go'sht bo'lsa 'chicken'.",
-       "speak": "e  chicken  ✓"
+       "speak": "e  chicken  ✓",
+       "speakAnswer": "She's going to buy some chicken."
       },
       {
        "prompt": "f  bread  ✓",
        "answer": "She's going to buy some bread.",
        "promptUz": "✓ — tasdiq",
        "whyUz": "✓ → TASDIQ gap → 'SOME'.\n'bread' — SANALMAYDIGAN ot\n('a bread' XATO; 'a loaf of bread' deyiladi).\nGrammar 59-bet, 11-mashqning 5-bandida ham\n'a loaf of bread' bor edi.",
-       "speak": "f  bread  ✓"
+       "speak": "f  bread  ✓",
+       "speakAnswer": "She's going to buy some bread."
       },
       {
        "prompt": "g  eggs  ✗",
        "answer": "She isn't going to buy any eggs.",
        "promptUz": "✗ — inkor",
        "whyUz": "✗ → INKOR gap → 'ANY'.\n'eggs' — SANALADIGAN (ko'plik).\nTuxum barbekyuda ishlatilmaydi.",
-       "speak": "g  eggs  ✗"
+       "speak": "g  eggs  ✗",
+       "speakAnswer": "She isn't going to buy any eggs."
       },
       {
        "prompt": "h  potatoes  ✗",
        "answer": "She isn't going to buy any potatoes.",
        "promptUz": "✗ — inkor",
        "whyUz": "✗ → INKOR gap → 'ANY'.\n'potatoes' — SANALADIGAN (ko'plik).\nDIQQAT: KO'PLIK '-ES' bilan:\npotato → potatoES (tomato → tomatoES ham).",
-       "speak": "h  potatoes  ✗"
+       "speak": "h  potatoes  ✗",
+       "speakAnswer": "She isn't going to buy any potatoes."
       }
      ]
     }
@@ -3188,49 +3369,57 @@
        "prompt": "a  biscuits ✗",
        "answer": "She isn't going to buy any biscuits.",
        "promptUz": "U pechenye sotib olmoqchi emas. (KITOBDAGI NAMUNA — INKOR → ANY)",
-       "speak": "a  biscuits ✗"
+       "speak": "a  biscuits ✗",
+       "speakAnswer": "She isn't going to buy any biscuits."
       },
       {
        "prompt": "b  onions ✓",
        "answer": "She's going to buy some onions.",
        "promptUz": "U piyoz sotib olmoqchi. (TASDIQ → SOME)",
-       "speak": "b  onions ✓"
+       "speak": "b  onions ✓",
+       "speakAnswer": "She's going to buy some onions."
       },
       {
        "prompt": "c  meat ✓",
        "answer": "She's going to buy some meat.",
        "promptUz": "U go'sht sotib olmoqchi. ('meat' — sanalmaydigan)",
-       "speak": "c  meat ✓"
+       "speak": "c  meat ✓",
+       "speakAnswer": "She's going to buy some meat."
       },
       {
        "prompt": "d  pizza ✗",
        "answer": "She isn't going to buy any pizza.",
        "promptUz": "U pitsa sotib olmoqchi emas.",
-       "speak": "d  pizza ✗"
+       "speak": "d  pizza ✗",
+       "speakAnswer": "She isn't going to buy any pizza."
       },
       {
        "prompt": "e  chicken ✓",
        "answer": "She's going to buy some chicken.",
        "promptUz": "U tovuq sotib olmoqchi.",
-       "speak": "e  chicken ✓"
+       "speak": "e  chicken ✓",
+       "speakAnswer": "She's going to buy some chicken."
       },
       {
        "prompt": "f  bread ✓",
        "answer": "She's going to buy some bread.",
        "promptUz": "U non sotib olmoqchi. ('a bread' XATO)",
-       "speak": "f  bread ✓"
+       "speak": "f  bread ✓",
+       "speakAnswer": "She's going to buy some bread."
       },
       {
        "prompt": "g  eggs ✗",
        "answer": "She isn't going to buy any eggs.",
        "promptUz": "U tuxum sotib olmoqchi emas.",
-       "speak": "g  eggs ✗"
+       "speak": "g  eggs ✗",
+       "speakAnswer": "She isn't going to buy any eggs."
       },
       {
        "prompt": "h  potatoes ✗",
        "answer": "She isn't going to buy any potatoes.",
        "promptUz": "U kartoshka sotib olmoqchi emas. (potato → potatoES)",
-       "speak": "h  potatoes ✗"
+       "speak": "h  potatoes ✗",
+       "speakAnswer": "She isn't going to buy any potatoes."
       }
      ]
     },
@@ -3249,31 +3438,36 @@
        "prompt": "1  Where / go?",
        "answer": "Where are you going?",
        "promptUz": "Qayerga ketyapsan? (KITOBDAGI NAMUNA)",
-       "speak": "1  Where / go?"
+       "speak": "1  Where / go?",
+       "speakAnswer": "Where are you going?"
       },
       {
        "prompt": "2  How / get there?",
        "answer": "How are you getting there?",
        "promptUz": "U yerga qanday borasan? ('get there' — predlogSIZ)",
-       "speak": "2  How / get there?"
+       "speak": "2  How / get there?",
+       "speakAnswer": "How are you getting there?"
       },
       {
        "prompt": "3  Where / stay?",
        "answer": "Where are you staying?",
        "promptUz": "Qayerda turasan?",
-       "speak": "3  Where / stay?"
+       "speak": "3  Where / stay?",
+       "speakAnswer": "Where are you staying?"
       },
       {
        "prompt": "4  Who / go with?",
        "answer": "Who are you going with?",
        "promptUz": "Kim bilan ketyapsan? (DIQQAT: 'with' gap OXIRIDA)",
-       "speak": "4  Who / go with?"
+       "speak": "4  Who / go with?",
+       "speakAnswer": "Who are you going with?"
       },
       {
        "prompt": "5  How long / go for?",
        "answer": "How long are you going for?",
        "promptUz": "Qancha vaqtga ketyapsan? (DIQQAT: 'for' gap OXIRIDA)",
-       "speak": "5  How long / go for?"
+       "speak": "5  How long / go for?",
+       "speakAnswer": "How long are you going for?"
       }
      ]
     },
@@ -3290,23 +3484,28 @@
      "tasks": [
       {
        "left": "1  Where are you going?",
-       "right": "c  Rome"
+       "right": "c  Rome",
+       "speakAnswer": "c  Rome"
       },
       {
        "left": "2  How are you getting there?",
-       "right": "d  plane"
+       "right": "d  plane",
+       "speakAnswer": "d  plane"
       },
       {
        "left": "3  Where are you staying?",
-       "right": "e  hotel"
+       "right": "e  hotel",
+       "speakAnswer": "e  hotel"
       },
       {
        "left": "4  Who are you going with?",
-       "right": "b  Jonathan"
+       "right": "b  Jonathan",
+       "speakAnswer": "b  Jonathan"
       },
       {
        "left": "5  How long are you going for?",
-       "right": "a  a week"
+       "right": "a  a week",
+       "speakAnswer": "a  a week"
       }
      ]
     },
@@ -3331,7 +3530,8 @@
         "make some tea"
        ],
        "whyUz": "KITOBDAGI NAMUNA.\nDALIL: mashinani to'xtata olmayapti.\n→ URILIB KETADI.\nBu — BASHORAT (u xohlamaydi, lekin sodir\nbo'ladi).",
-       "speak": "1  She can't stop the car!  She ............ ."
+       "speak": "1  She can't stop the car!  She ............ .",
+       "speakAnswer": "is going to crash"
       },
       {
        "prompt": "2  They are late.  They ............ .",
@@ -3343,7 +3543,8 @@
         "make some tea"
        ],
        "whyUz": "DALIL: kechikishyapti.\n→ POYEZDNI BOY BERISHADI.\n'miss the train' = poyezdni boy bermoq\n(aksi: 'catch the train').\nDIQQAT — EGA: 'They' KO'PLIK → 'ARE going to'.",
-       "speak": "2  They are late.  They ............ ."
+       "speak": "2  They are late.  They ............ .",
+       "speakAnswer": "are going to miss the train"
       },
       {
        "prompt": "3  The headmaster looks angry!  He ............ .",
@@ -3355,7 +3556,8 @@
         "make some tea"
        ],
        "whyUz": "DALIL: direktorning jahli chiqqan.\n→ BAQIRADI.\n'shout AT sb' = kimgadir jahl bilan baqirmoq.\nDIQQAT: 'shout TO sb' — uzoqdan chaqirish,\nBOSHQA ma'no.",
-       "speak": "3  The headmaster looks angry!  He ............ ."
+       "speak": "3  The headmaster looks angry!  He ............ .",
+       "speakAnswer": "is going to shout at us"
       },
       {
        "prompt": "4  Jim has got his camera.  He ............ .",
@@ -3367,7 +3569,8 @@
         "make some tea"
        ],
        "whyUz": "DALIL: fotoapparati bor.\n→ SURAT OLADI.\n'TAKE photos' = surat olmoq\n('make photos' XATO).",
-       "speak": "4  Jim has got his camera.  He ............ ."
+       "speak": "4  Jim has got his camera.  He ............ .",
+       "speakAnswer": "is going to take some photos"
       },
       {
        "prompt": "5  Mick's putting up a \"For Sale\" sign.  He ............ .",
@@ -3379,7 +3582,8 @@
         "make some tea"
        ],
        "whyUz": "DALIL: 'Sotiladi' taxtachasini o'rnatyapti.\n→ UYINI SOTADI.\n'put up a sign' = taxtacha o'rnatmoq.\nGrammar 58-bet, 4-mashqning 1-bandida ham\nshunga o'xshash: 'putting an ad in the\nnewspaper → going to sell her car'.",
-       "speak": "5  Mick's putting up a \"For Sale\" sign.  He ............ ."
+       "speak": "5  Mick's putting up a \"For Sale\" sign.  He ............ .",
+       "speakAnswer": "is going to sell his house"
       },
       {
        "prompt": "6  The car has got a flat tyre.  He ............ .",
@@ -3391,7 +3595,8 @@
         "make some tea"
        ],
        "whyUz": "DALIL: g'ildirak teshilgan.\n→ ALMASHTIRADI.\n'a flat tyre' = teshilgan (shalpaygan) g'ildirak.\n'IT' = g'ildirak (tyre).\n'change' bu yerda 'almashtirmoq'.",
-       "speak": "6  The car has got a flat tyre.  He ............ ."
+       "speak": "6  The car has got a flat tyre.  He ............ .",
+       "speakAnswer": "is going to change it"
       },
       {
        "prompt": "7  Mum's looking at a recipe.  She ............ .",
@@ -3403,7 +3608,8 @@
         "make some tea"
        ],
        "whyUz": "DALIL: retseptga qarayapti.\n→ TORT PISHIRADI.\n'a recipe' = retsept ('RE-si-pi' deb o'qiladi).\n'MAKE a cake' ('do a cake' XATO).",
-       "speak": "7  Mum's looking at a recipe.  She ............ ."
+       "speak": "7  Mum's looking at a recipe.  She ............ .",
+       "speakAnswer": "is going to make a cake"
       },
       {
        "prompt": "8  Look, the ladder is broken.  Oh no, he ............ .",
@@ -3415,7 +3621,8 @@
         "make some tea"
        ],
        "whyUz": "DALIL: narvon singan.\n→ YIQILADI.\n'fall OFF' = (narsadan) yiqilmoq.\n'Oh no' — bu BASHORAT ekanini ko'rsatadi\n(u yiqilishni xohlamaydi).\nGrammar 58-betda ham: 'He is going to fall off\nhis bike.'",
-       "speak": "8  Look, the ladder is broken.  Oh no, he ............ ."
+       "speak": "8  Look, the ladder is broken.  Oh no, he ............ .",
+       "speakAnswer": "is going to fall off"
       },
       {
        "prompt": "9  They're putting their hats and gloves on.  They ............ .",
@@ -3427,7 +3634,8 @@
         "make some tea"
        ],
        "whyUz": "DALIL: shapka va qo'lqop kiyishyapti.\n→ QORDA O'YNASHADI.\n'put ON' = kiymoq (bu yerda 'put ... on' —\nikki qismga bo'lingan).\nDIQQAT — EGA: 'They' KO'PLIK → 'ARE going to'.",
-       "speak": "9  They're putting their hats and gloves on.  They ............ ."
+       "speak": "9  They're putting their hats and gloves on.  They ............ .",
+       "speakAnswer": "are going to play in the snow"
       },
       {
        "prompt": "10  Kevin's putting the kettle on.  He ............ .",
@@ -3439,7 +3647,8 @@
         "make some tea"
        ],
        "whyUz": "DALIL: choynakni (suv qaynatgichni) qo'yyapti.\n→ CHOY DAMLAYDI.\n'put the kettle on' = suv qaynatgichni yoqmoq\n(Britaniyada choy damlashning birinchi qadami).\n'MAKE tea' = choy damlamoq.",
-       "speak": "10  Kevin's putting the kettle on.  He ............ ."
+       "speak": "10  Kevin's putting the kettle on.  He ............ .",
+       "speakAnswer": "is going to make some tea"
       }
      ]
     },
@@ -3458,25 +3667,29 @@
        "prompt": "1  order / wedding cake",
        "answer": "They're going to order a wedding cake.",
        "promptUz": "Ular to'y torti buyurtma qilishmoqchi. (KITOBDAGI NAMUNA — 'A wedding cake', artikl BOR)",
-       "speak": "1  order / wedding cake"
+       "speak": "1  order / wedding cake",
+       "speakAnswer": "They're going to order a wedding cake."
       },
       {
        "prompt": "2  buy / new clothes",
        "answer": "They're going to buy new clothes.",
        "promptUz": "Ular yangi kiyim sotib olishmoqchi. (DIQQAT: 'clothes' DOIM ko'plik, artikl YO'Q)",
-       "speak": "2  buy / new clothes"
+       "speak": "2  buy / new clothes",
+       "speakAnswer": "They're going to buy new clothes."
       },
       {
        "prompt": "3  hire / photographer",
        "answer": "They're going to hire a photographer.",
        "promptUz": "Ular fotograf yollashmoqchi. ('to hire' = pul evaziga yollamoq)",
-       "speak": "3  hire / photographer"
+       "speak": "3  hire / photographer",
+       "speakAnswer": "They're going to hire a photographer."
       },
       {
        "prompt": "4  send / invitations",
        "answer": "They're going to send invitations.",
        "promptUz": "Ular taklifnomalar yuborishmoqchi. (ko'plik, artikl YO'Q)",
-       "speak": "4  send / invitations"
+       "speak": "4  send / invitations",
+       "speakAnswer": "They're going to send invitations."
       }
      ]
     },
@@ -3494,37 +3707,44 @@
       {
        "prompt": "Monday — take the dog to the vet's",
        "answer": "They're taking the dog to the vet's on Monday.",
-       "promptUz": "Dushanba kuni itni veterinarga olib borishadi. (KITOBDAGI NAMUNA; take → TAKING, '-e' tushadi)"
+       "promptUz": "Dushanba kuni itni veterinarga olib borishadi. (KITOBDAGI NAMUNA; take → TAKING, '-e' tushadi)",
+       "speakAnswer": "They're taking the dog to the vet's on Monday."
       },
       {
        "prompt": "Tuesday — paint the living-room",
        "answer": "They're painting the living-room on Tuesday.",
-       "promptUz": "Seshanba kuni mehmonxonani bo'yashadi. ('a living-room' — chiziqcha bilan)"
+       "promptUz": "Seshanba kuni mehmonxonani bo'yashadi. ('a living-room' — chiziqcha bilan)",
+       "speakAnswer": "They're painting the living-room on Tuesday."
       },
       {
        "prompt": "Wednesday — buy a new TV",
        "answer": "They're buying a new TV on Wednesday.",
-       "promptUz": "Chorshanba kuni yangi televizor sotib olishadi."
+       "promptUz": "Chorshanba kuni yangi televizor sotib olishadi.",
+       "speakAnswer": "They're buying a new TV on Wednesday."
       },
       {
        "prompt": "Thursday — have dinner at the Smith's house",
        "answer": "They're having dinner at the Smith's house on Thursday.",
-       "promptUz": "Payshanba kuni Smitlarnikida kechki ovqat qilishadi. (have → HAVING; kitobda apostrof xatosi — scanNote'ga qarang)"
+       "promptUz": "Payshanba kuni Smitlarnikida kechki ovqat qilishadi. (have → HAVING; kitobda apostrof xatosi — scanNote'ga qarang)",
+       "speakAnswer": "They're having dinner at the Smith's house on Thursday."
       },
       {
        "prompt": "Friday — play tennis with Sue and Bob",
        "answer": "They're playing tennis with Sue and Bob on Friday.",
-       "promptUz": "Juma kuni Syu va Bob bilan tennis o'ynashadi. ('play tennis' — artikl YO'Q)"
+       "promptUz": "Juma kuni Syu va Bob bilan tennis o'ynashadi. ('play tennis' — artikl YO'Q)",
+       "speakAnswer": "They're playing tennis with Sue and Bob on Friday."
       },
       {
        "prompt": "Saturday — drive to the beach",
        "answer": "They're driving to the beach on Saturday.",
-       "promptUz": "Shanba kuni plyajga haydab borishadi. (drive → DRIVING, '-e' tushadi)"
+       "promptUz": "Shanba kuni plyajga haydab borishadi. (drive → DRIVING, '-e' tushadi)",
+       "speakAnswer": "They're driving to the beach on Saturday."
       },
       {
        "prompt": "Sunday — visit John's parents",
        "answer": "They're visiting John's parents on Sunday.",
-       "promptUz": "Yakshanba kuni Jonning ota-onasinikiga borishadi. ('visit' — predlogSIZ)"
+       "promptUz": "Yakshanba kuni Jonning ota-onasinikiga borishadi. ('visit' — predlogSIZ)",
+       "speakAnswer": "They're visiting John's parents on Sunday."
       }
      ]
     }
@@ -3551,27 +3771,33 @@
      "tasks": [
       {
        "left": "1  I'm cold.",
-       "right": "b  put a jumper on"
+       "right": "b  put a jumper on",
+       "speakAnswer": "b  put a jumper on"
       },
       {
        "left": "2  There's no milk left.",
-       "right": "d  go to the supermarket"
+       "right": "d  go to the supermarket",
+       "speakAnswer": "d  go to the supermarket"
       },
       {
        "left": "3  I've got toothache.",
-       "right": "a  visit the dentist"
+       "right": "a  visit the dentist",
+       "speakAnswer": "a  visit the dentist"
       },
       {
        "left": "4  It's a sunny morning.",
-       "right": "f  have breakfast in the garden"
+       "right": "f  have breakfast in the garden",
+       "speakAnswer": "f  have breakfast in the garden"
       },
       {
        "left": "5  These trousers are dirty.",
-       "right": "e  put them in the washing machine"
+       "right": "e  put them in the washing machine",
+       "speakAnswer": "e  put them in the washing machine"
       },
       {
        "left": "6  The car isn't working.",
-       "right": "c  call a mechanic"
+       "right": "c  call a mechanic",
+       "speakAnswer": "c  call a mechanic"
       }
      ]
     },
@@ -3590,37 +3816,43 @@
        "prompt": "1  I'm cold.",
        "answer": "I'm cold. I'll put a jumper on.",
        "promptUz": "Sovqotdim. Sviter kiyaman. (KITOBDAGI NAMUNA)",
-       "speak": "1  I'm cold."
+       "speak": "1  I'm cold.",
+       "speakAnswer": "I'm cold. I'll put a jumper on."
       },
       {
        "prompt": "2  There's no milk left.",
        "answer": "There's no milk left. I'll go to the supermarket.",
        "promptUz": "Sut qolmadi. Supermarketga boraman.",
-       "speak": "2  There's no milk left."
+       "speak": "2  There's no milk left.",
+       "speakAnswer": "There's no milk left. I'll go to the supermarket."
       },
       {
        "prompt": "3  I've got toothache.",
        "answer": "I've got toothache. I'll visit the dentist.",
        "promptUz": "Tishim og'riyapti. Tish shifokoriga boraman.",
-       "speak": "3  I've got toothache."
+       "speak": "3  I've got toothache.",
+       "speakAnswer": "I've got toothache. I'll visit the dentist."
       },
       {
        "prompt": "4  It's a sunny morning.",
        "answer": "It's a sunny morning. I'll have breakfast in the garden.",
        "promptUz": "Quyoshli tong. Bog'da nonushta qilaman. ('have breakfast' — artikl YO'Q)",
-       "speak": "4  It's a sunny morning."
+       "speak": "4  It's a sunny morning.",
+       "speakAnswer": "It's a sunny morning. I'll have breakfast in the garden."
       },
       {
        "prompt": "5  These trousers are dirty.",
        "answer": "These trousers are dirty. I'll put them in the washing machine.",
        "promptUz": "Bu shim iflos. Ularni kir yuvish mashinasiga solaman. ('trousers' — ko'plik → 'them')",
-       "speak": "5  These trousers are dirty."
+       "speak": "5  These trousers are dirty.",
+       "speakAnswer": "These trousers are dirty. I'll put them in the washing machine."
       },
       {
        "prompt": "6  The car isn't working.",
        "answer": "The car isn't working. I'll call a mechanic.",
        "promptUz": "Mashina ishlamayapti. Ustani chaqiraman.",
-       "speak": "6  The car isn't working."
+       "speak": "6  The car isn't working.",
+       "speakAnswer": "The car isn't working. I'll call a mechanic."
       }
      ]
     },
@@ -3681,70 +3913,80 @@
        "answer": "'ll (will)",
        "promptUz": "Ayni damdagi qaror",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\nSovqotganini eshitib, darhol isitgichni yoqishga\nqaror qildi.\n'put the heating ON' = isitgichni yoqmoq.",
-       "speak": "1  A: I'm cold.  B: I ............ put the heating on."
+       "speak": "1  A: I'm cold.  B: I ............ put the heating on.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "2  A: Why did Mum and Dad buy so much meat?  B: They ............ invite the Jacksons to dinner tomorrow.",
        "answer": "'re going to (are going to)",
        "promptUz": "'Why ...?' — holatni tushuntirmoqda",
        "whyUz": "BE GOING TO — reja ALLAQACHON bor.\n'WHY did they buy so much meat?' — ko'p go'sht\nolinganining SABABI tushuntirilmoqda:\nchunki taklif rejasi bor.\nDIQQAT — EGA: 'They' KO'PLIK → 'They'RE going to'.\n'the Jacksons' = Jeksonlar oilasi.",
-       "speak": "2  A: Why did Mum and Dad buy so much meat?  B: They ............ invite the Jacksons to dinner tomorrow."
+       "speak": "2  A: Why did Mum and Dad buy so much meat?  B: They ............ invite the Jacksons to dinner tomorrow.",
+       "speakAnswer": "'re going to"
       },
       {
        "prompt": "3  A: The washing machine isn't working!  B: I ............ phone the repair man.",
        "answer": "'ll (will)",
        "promptUz": "Ayni damdagi yordam",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\nMashina buzilganini eshitib, darhol ustaga\nqo'ng'iroq qilishga qaror qildi.\n'a repair man' = ta'mirlovchi usta.",
-       "speak": "3  A: The washing machine isn't working!  B: I ............ phone the repair man."
+       "speak": "3  A: The washing machine isn't working!  B: I ............ phone the repair man.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "4  A: My jacket's still at the dry cleaner's.  B: I know. I ............ pick it up this afternoon.",
        "answer": "'m going to (am going to)",
        "promptUz": "'I know' — allaqachon bilgan",
        "whyUz": "BE GOING TO — ALLAQACHON rejalashtirgan.\n'I KNOW' — B buni oldin ham bilgan va olib\nkelishni rejalashtirgan.\n'pick IT up' — olmosh O'RTADA ('pick up it' XATO).\n'the dry cleaner's' = kimyoviy tozalash.",
-       "speak": "4  A: My jacket's still at the dry cleaner's.  B: I know. I ............ pick it up this afternoon."
+       "speak": "4  A: My jacket's still at the dry cleaner's.  B: I know. I ............ pick it up this afternoon.",
+       "speakAnswer": "'m going to"
       },
       {
        "prompt": "5  A: I can't do my homework!  B: Ask Dad. I'm sure he ............ help you.",
        "answer": "will",
        "promptUz": "'I'm sure' — fikr, dalil yo'q",
        "whyUz": "WILL — FIKRGA asoslangan bashorat.\n'I'M SURE he ...' — bu B ning FIKRI,\nko'rinib turgan dalil yo'q.\nGrammar 58-bet, 6-mashqning 2-bandi bilan\nbir xil: 'I'm sure Kelly will let you ...'",
-       "speak": "5  A: I can't do my homework!  B: Ask Dad. I'm sure he ............ help you."
+       "speak": "5  A: I can't do my homework!  B: Ask Dad. I'm sure he ............ help you.",
+       "speakAnswer": "will"
       },
       {
        "prompt": "6  A: I've got a headache.  B: I ............ bring you an aspirin.",
        "answer": "'ll (will)",
        "promptUz": "Ayni damdagi yordam taklifi",
        "whyUz": "WILL — AYNI DAMDA yordam taklifi.\nBoshi og'riganini eshitib, darhol aspirin olib\nkelishga qaror qildi.\n'a headache' = bosh og'rig'i (head + ache).",
-       "speak": "6  A: I've got a headache.  B: I ............ bring you an aspirin."
+       "speak": "6  A: I've got a headache.  B: I ............ bring you an aspirin.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "7  A: Why is Karen wearing her trainers?  B: She ............ play tennis with Ray.",
        "answer": "'s going to (is going to)",
        "promptUz": "'Why ...?' — kiyimining sababi",
        "whyUz": "BE GOING TO — reja ALLAQACHON bor.\n'WHY is Karen wearing her trainers?' —\nkrossovka kiyganining SABABI: tennis rejasi.\nDIQQAT — EGA: 'She' → 'She'S going to'.\n'trainers' = krossovka (Britaniya;\nAmerikada 'sneakers').",
-       "speak": "7  A: Why is Karen wearing her trainers?  B: She ............ play tennis with Ray."
+       "speak": "7  A: Why is Karen wearing her trainers?  B: She ............ play tennis with Ray.",
+       "speakAnswer": "'s going to"
       },
       {
        "prompt": "8  A: What's on TV tonight?  B: I'm not sure. I ............ look in the TV guide.",
        "answer": "'ll (will)",
        "promptUz": "'I'm not sure' — darhol qaror",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\n'I'm not sure' — bilmaydi, shuning uchun\ndarhol dasturga qarashga qaror qildi.\n'look IN a guide' — predlog IN.\n'What's ON TV?' — predlog ON.",
-       "speak": "8  A: What's on TV tonight?  B: I'm not sure. I ............ look in the TV guide."
+       "speak": "8  A: What's on TV tonight?  B: I'm not sure. I ............ look in the TV guide.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "9  A: I need to go to the station.  B: Okay, I ............ take you in the car.",
        "answer": "'ll (will)",
        "promptUz": "'Okay' — ayni damdagi reaksiya",
        "whyUz": "WILL — AYNI DAMDA qabul qilingan qaror.\n'Okay' so'zi buni ko'rsatadi.\nGrammar 57-bet, 2-mashqning 1-bandi bilan\nbir xil: 'Okay, I'll drive you there.'\n'IN the car' — predlog IN.",
-       "speak": "9  A: I need to go to the station.  B: Okay, I ............ take you in the car."
+       "speak": "9  A: I need to go to the station.  B: Okay, I ............ take you in the car.",
+       "speakAnswer": "'ll"
       },
       {
        "prompt": "10  A: Did you phone grandma?  B: Not yet, but I ............ phone her this evening.",
        "answer": "'m going to (am going to)",
        "promptUz": "'Not yet, but ...' — reja bor",
        "whyUz": "BE GOING TO — ALLAQACHON rejalashtirgan.\n'NOT YET, BUT I ...' — hali qilmagan, lekin\nkechqurun qilishni REJALASHTIRGAN.\nAgar 'will' bo'lsa — endigina qaror qilgan\nbo'lardi, lekin 'but' reja borligini\nko'rsatadi.",
-       "speak": "10  A: Did you phone grandma?  B: Not yet, but I ............ phone her this evening."
+       "speak": "10  A: Did you phone grandma?  B: Not yet, but I ............ phone her this evening.",
+       "speakAnswer": "'m going to"
       }
      ]
     },
@@ -3761,19 +4003,23 @@
      "tasks": [
       {
        "left": "camera",
-       "right": "to take pictures"
+       "right": "to take pictures",
+       "speakAnswer": "to take pictures"
       },
       {
        "left": "radio",
-       "right": "to listen to music"
+       "right": "to listen to music",
+       "speakAnswer": "to listen to music"
       },
       {
        "left": "matches",
-       "right": "to light a campfire"
+       "right": "to light a campfire",
+       "speakAnswer": "to light a campfire"
       },
       {
        "left": "fishing rod",
-       "right": "to catch some fish"
+       "right": "to catch some fish",
+       "speakAnswer": "to catch some fish"
       }
      ]
     },
@@ -3843,7 +4089,8 @@
         "/h/ silent",
         "/h/ pronounced"
        ],
-       "whyUz": "'h' O'QILMAYDI: /aʊər/ — 'AUER'.\nDIQQAT — ARTIKL: 'AN hour' ✓ / 'a hour' ✗\n(so'z unli tovush bilan boshlanadi).\nEng ko'p uchraydigan 'h'-siz so'z."
+       "whyUz": "'h' O'QILMAYDI: /aʊər/ — 'AUER'.\nDIQQAT — ARTIKL: 'AN hour' ✓ / 'a hour' ✗\n(so'z unli tovush bilan boshlanadi).\nEng ko'p uchraydigan 'h'-siz so'z.",
+       "speakAnswer": "/h/ silent"
       },
       {
        "prompt": "horrible",
@@ -3853,7 +4100,8 @@
         "/h/ pronounced",
         "/h/ silent"
        ],
-       "whyUz": "'h' O'QILADI: /ˈhɒrəbl/ — 'HO-ribl'.\nArtikl: 'A horrible week'.\n96-betdagi Sagittarius bashoratida uchragan."
+       "whyUz": "'h' O'QILADI: /ˈhɒrəbl/ — 'HO-ribl'.\nArtikl: 'A horrible week'.\n96-betdagi Sagittarius bashoratida uchragan.",
+       "speakAnswer": "/h/ pronounced"
       },
       {
        "prompt": "vehicle",
@@ -3863,7 +4111,8 @@
         "/h/ silent",
         "/h/ pronounced"
        ],
-       "whyUz": "'h' O'QILMAYDI: /ˈviːəkl/ — 'VII-ikl'.\nDIQQAT: bu yerda 'h' so'zning O'RTASIDA\nva umuman eshitilmaydi.\nEng ko'p xato qilinadigan so'z."
+       "whyUz": "'h' O'QILMAYDI: /ˈviːəkl/ — 'VII-ikl'.\nDIQQAT: bu yerda 'h' so'zning O'RTASIDA\nva umuman eshitilmaydi.\nEng ko'p xato qilinadigan so'z.",
+       "speakAnswer": "/h/ silent"
       },
       {
        "prompt": "honest",
@@ -3873,7 +4122,8 @@
         "/h/ silent",
         "/h/ pronounced"
        ],
-       "whyUz": "'h' O'QILMAYDI: /ˈɒnɪst/ — 'O-nist'.\nDIQQAT — ARTIKL: 'AN honest man' ✓ /\n'a honest man' ✗.\nOt shakli: 'honesty' (halollik) — unda ham\n'h' o'qilmaydi."
+       "whyUz": "'h' O'QILMAYDI: /ˈɒnɪst/ — 'O-nist'.\nDIQQAT — ARTIKL: 'AN honest man' ✓ /\n'a honest man' ✗.\nOt shakli: 'honesty' (halollik) — unda ham\n'h' o'qilmaydi.",
+       "speakAnswer": "/h/ silent"
       },
       {
        "prompt": "hand",
@@ -3883,7 +4133,8 @@
         "/h/ pronounced",
         "/h/ silent"
        ],
-       "whyUz": "'h' O'QILADI: /hænd/ — 'HEND'.\nArtikl: 'A hand'.\nUnit 12 da 'handprint' (qo'l izi) so'zi uchragan."
+       "whyUz": "'h' O'QILADI: /hænd/ — 'HEND'.\nArtikl: 'A hand'.\nUnit 12 da 'handprint' (qo'l izi) so'zi uchragan.",
+       "speakAnswer": "/h/ pronounced"
       },
       {
        "prompt": "perhaps",
@@ -3893,7 +4144,8 @@
         "/h/ pronounced",
         "/h/ silent"
        ],
-       "whyUz": "'h' O'QILADI: /pəˈhæps/ — 'pa-HEPS'.\nDIQQAT: 'h' so'zning O'RTASIDA, lekin\n'vehicle' dan farqli, bu yerda O'QILADI.\nCoursebook 86-betda uchragan."
+       "whyUz": "'h' O'QILADI: /pəˈhæps/ — 'pa-HEPS'.\nDIQQAT: 'h' so'zning O'RTASIDA, lekin\n'vehicle' dan farqli, bu yerda O'QILADI.\nCoursebook 86-betda uchragan.",
+       "speakAnswer": "/h/ pronounced"
       }
      ]
     }
@@ -3926,7 +4178,8 @@
         "FOGGY  ✓",
         "WINDY  ✓",
         "RAINY  ✓"
-       ]
+       ],
+       "speakAnswer": "SUNNY  ✓"
       },
       {
        "prompt": "Dublin  (☁☁ foggy | ☁💧 rainy)",
@@ -3936,7 +4189,8 @@
         "SUNNY  ✓",
         "WINDY  ✓",
         "RAINY  ✓"
-       ]
+       ],
+       "speakAnswer": "FOGGY  ✓"
       },
       {
        "prompt": "Harare  (☁❄ snowy | ☁💨 windy)",
@@ -3946,7 +4200,8 @@
         "SUNNY  ✓",
         "FOGGY  ✓",
         "RAINY  ✓"
-       ]
+       ],
+       "speakAnswer": "WINDY  ✓"
       },
       {
        "prompt": "Seoul  (☁💧 rainy | ☁💨 windy)",
@@ -3956,7 +4211,8 @@
         "SUNNY  ✓",
         "FOGGY  ✓",
         "WINDY  ✓"
-       ]
+       ],
+       "speakAnswer": "RAINY  ✓"
       },
       {
        "prompt": "Sydney  (☁💧 rainy | ☀ sunny)",
@@ -3966,7 +4222,8 @@
         "FOGGY  ✓",
         "WINDY  ✓",
         "RAINY  ✓"
-       ]
+       ],
+       "speakAnswer": "SUNNY  ✓"
       },
       {
        "prompt": "Warsaw  (☁💧 rainy | ☁❄ snowy)",
@@ -3976,7 +4233,8 @@
         "SUNNY  ✓",
         "FOGGY  ✓",
         "WINDY  ✓"
-       ]
+       ],
+       "speakAnswer": "SNOWY  ✓"
       }
      ]
     },
@@ -4041,35 +4299,40 @@
        "answer": "It",
        "promptUz": "'foggy' — sifatmi yoki ot?",
        "whyUz": "'foggy' — SIFAT ('-y' bilan tugaydi) → IT.\n'IT will be + SIFAT'.\nBu gap 10a-mashqda Dublin uchun FOGGY belgisini\ntanlash kerakligini ham ko'rsatadi.",
-       "speak": "1  ............ will be foggy in Dublin tomorrow."
+       "speak": "1  ............ will be foggy in Dublin tomorrow.",
+       "speakAnswer": "It"
       },
       {
        "prompt": "2  ............ will be strong winds in Harare tomorrow.",
        "answer": "There",
        "promptUz": "'strong winds' — sifatmi yoki ot?",
        "whyUz": "'strong winds' — OT (ko'plik) → THERE.\n'THERE will be + OT'.\nAgar sifat ishlatilganda: 'IT will be WINDY.'\nMa'no bir xil.\nBu gap 10a da Harare uchun WINDY belgisini\ntasdiqlaydi.",
-       "speak": "2  ............ will be strong winds in Harare tomorrow."
+       "speak": "2  ............ will be strong winds in Harare tomorrow.",
+       "speakAnswer": "There"
       },
       {
        "prompt": "3  ............ will be rainy in Seoul tomorrow.",
        "answer": "It",
        "promptUz": "'rainy' — sifatmi yoki ot?",
        "whyUz": "'rainy' — SIFAT ('-y') → IT.\nOT shakli 'rain' bo'lardi:\n'THERE will be RAIN in Seoul tomorrow.'\nBu gap 10a da Seoul uchun RAINY belgisini\ntasdiqlaydi.",
-       "speak": "3  ............ will be rainy in Seoul tomorrow."
+       "speak": "3  ............ will be rainy in Seoul tomorrow.",
+       "speakAnswer": "It"
       },
       {
        "prompt": "4  ............ will be sunny in Sydney tomorrow.",
        "answer": "It",
        "promptUz": "'sunny' — sifatmi yoki ot?",
        "whyUz": "'sunny' — SIFAT ('-y') → IT.\nOT shakli 'sunshine' bo'lardi:\n'THERE will be SUNSHINE in Sydney tomorrow.'\n10a-mashqning namunasida ham aynan shu juftlik\nBangkok uchun ko'rsatilgan.",
-       "speak": "4  ............ will be sunny in Sydney tomorrow."
+       "speak": "4  ............ will be sunny in Sydney tomorrow.",
+       "speakAnswer": "It"
       },
       {
        "prompt": "5  ............ will be snow in Warsaw tomorrow.",
        "answer": "There",
        "promptUz": "'snow' — sifatmi yoki ot?",
        "whyUz": "'snow' — OT (sanalmaydigan) → THERE.\nSIFAT shakli 'snowy' bo'lardi:\n'IT will be SNOWY in Warsaw tomorrow.'\nBu gap 10a da Warsaw uchun SNOWY belgisini\ntasdiqlaydi.",
-       "speak": "5  ............ will be snow in Warsaw tomorrow."
+       "speak": "5  ............ will be snow in Warsaw tomorrow.",
+       "speakAnswer": "There"
       }
      ]
     },
@@ -4086,31 +4349,38 @@
      "tasks": [
       {
        "left": "I'm thirsty.",
-       "right": "have a glass of water  →  I'm thirsty. I'll have a glass of water."
+       "right": "have a glass of water  →  I'm thirsty. I'll have a glass of water.",
+       "speakAnswer": "have a glass of water  →  I'm thirsty. I'll have a glass of water."
       },
       {
        "left": "It's raining.",
-       "right": "put on my raincoat  →  It's raining. I'll put on my raincoat."
+       "right": "put on my raincoat  →  It's raining. I'll put on my raincoat.",
+       "speakAnswer": "put on my raincoat  →  It's raining. I'll put on my raincoat."
       },
       {
        "left": "It's cold.",
-       "right": "close the window  →  It's cold. I'll close the window."
+       "right": "close the window  →  It's cold. I'll close the window.",
+       "speakAnswer": "close the window  →  It's cold. I'll close the window."
       },
       {
        "left": "I'm tired.",
-       "right": "go to bed  →  I'm tired. I'll go to bed."
+       "right": "go to bed  →  I'm tired. I'll go to bed.",
+       "speakAnswer": "go to bed  →  I'm tired. I'll go to bed."
       },
       {
        "left": "I'm hungry.",
-       "right": "have a sandwich  →  I'm hungry. I'll have a sandwich."
+       "right": "have a sandwich  →  I'm hungry. I'll have a sandwich.",
+       "speakAnswer": "have a sandwich  →  I'm hungry. I'll have a sandwich."
       },
       {
        "left": "It's hot.",
-       "right": "open the window  →  It's hot. I'll open the window."
+       "right": "open the window  →  It's hot. I'll open the window.",
+       "speakAnswer": "open the window  →  It's hot. I'll open the window."
       },
       {
        "left": "The house is on fire.",
-       "right": "call the fire brigade  →  The house is on fire. I'll call the fire brigade."
+       "right": "call the fire brigade  →  The house is on fire. I'll call the fire brigade.",
+       "speakAnswer": "call the fire brigade  →  The house is on fire. I'll call the fire brigade."
       }
      ]
     }
@@ -4836,70 +5106,80 @@
        "answer": "on",
        "promptUz": "KITOBDAGI NAMUNA",
        "whyUz": "NAMUNA.\n'ON your left / ON your right' — yo'l ko'rsatish\niborasi.\n'under your left' MA'NOSIZ.\nCoursebook 90-bet, 3-mashqning 5-bandi ham shu.",
-       "speak": "1  The exit is UNDER your left."
+       "speak": "1  The exit is UNDER your left.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "2  It will be FOG tomorrow.",
        "answer": "foggy  (yoki: It → There)",
        "promptUz": "'fog' — ot; 'It will be' — sifat talab qiladi",
        "whyUz": "'IT will be' dan keyin SIFAT kerak,\nlekin 'fog' — OT.\n\nIKKI XIL TO'G'RI TUZATISh:\n  a) 'fog' → 'FOGGY':\n     'It will be FOGGY tomorrow.'\n  b) 'It' → 'THERE':\n     'THERE will be fog tomorrow.'\n\nIkkalasi ham to'g'ri, ma'no bir xil.\nUnit 13 ning asosiy qoidasi (56, 57-betlar).",
-       "speak": "2  It will be FOG tomorrow."
+       "speak": "2  It will be FOG tomorrow.",
+       "speakAnswer": "foggy"
       },
       {
        "prompt": "3  We are visiting the hospital AT Saturday.",
        "answer": "on",
        "promptUz": "KUN bilan qaysi predlog?",
        "whyUz": "KUN bilan 'ON':\n'ON Saturday' ✓  ('at Saturday' XATO).\n\nQOIDA (Coursebook 90-bet):\n  AT + soat   (at 5 o'clock)\n  ON + kun/sana (on Saturday, on 6th August)\n  IN + oy/yil/fasl (in August, in 1963)",
-       "speak": "3  We are visiting the hospital AT Saturday."
+       "speak": "3  We are visiting the hospital AT Saturday.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "4  John is OLDEST than Catherine.",
        "answer": "older",
        "promptUz": "'than' bor — qaysi daraja?",
        "whyUz": "'THAN' bor → QIYOSIY daraja kerak.\n'oldEST' — ORTTIRMA daraja → 'oldER'.\nUnit 12 qoidasi:\n  'than' → qiyosiy, 'the ... of/in' → orttirma.",
-       "speak": "4  John is OLDEST than Catherine."
+       "speak": "4  John is OLDEST than Catherine.",
+       "speakAnswer": "older"
       },
       {
        "prompt": "5  The football team played GOOD yesterday.",
        "answer": "well",
        "promptUz": "'played' — fe'l, demak nima kerak?",
        "whyUz": "'played' — FE'L → RAVISH kerak.\ngood (SIFAT) → WELL (RAVISH).\n'played good' XATO.\nUnit 11 qoidasi; Coursebook 91-bet, 7-mashqning\n7-bandi ham aynan shu.",
-       "speak": "5  The football team played GOOD yesterday."
+       "speak": "5  The football team played GOOD yesterday.",
+       "speakAnswer": "well"
       },
       {
        "prompt": "6  Pablo Picasso DIDN'T PAINTED the Mona Lisa.",
        "answer": "paint",
        "promptUz": "'didn't' dan keyin qaysi shakl?",
        "whyUz": "'DIDN'T' dan keyin fe'lning ASOSIY shakli.\n'didn't PAINT' ✓  ('didn't painted' XATO).\n\nESLATMA: 'Mona Liza' ni aslida Leonardo da Vinchi\nchizgan (Coursebook 73 va 85-betlarda ham\nshu gap bor edi) — shuning uchun gap MANTIQAN\nham to'g'ri.",
-       "speak": "6  Pablo Picasso DIDN'T PAINTED the Mona Lisa."
+       "speak": "6  Pablo Picasso DIDN'T PAINTED the Mona Lisa.",
+       "speakAnswer": "paint"
       },
       {
        "prompt": "7  Warsaw is the capital of THE POLAND.",
        "answer": "Poland  ('the' olib tashlanadi)",
        "promptUz": "Mamlakat nomi oldidan artikl kerakmi?",
        "whyUz": "Mamlakat nomlari oldidan 'THE' QO'YILMAYDI.\n'of POLAND' ✓  ('of the Poland' XATO).\n\nISTISNOLAR (ko'plik yoki birlashma nomlar):\n  the USA, the UK, the Netherlands,\n  the Philippines.\n\nVarshava — Polsha poytaxti (Coursebook 95-betda\nham uchragan).",
-       "speak": "7  Warsaw is the capital of THE POLAND."
+       "speak": "7  Warsaw is the capital of THE POLAND.",
+       "speakAnswer": "Poland"
       },
       {
        "prompt": "8  Could he PLAYED the piano when he was five?",
        "answer": "play",
        "promptUz": "'could' dan keyin qaysi shakl?",
        "whyUz": "'COULD' dan keyin fe'lning ASOSIY shakli.\n'Could he PLAY' ✓  ('Could he played' XATO).\nModal fe'llarning umumiy qoidasi:\nkeyin '-s' yo'q, '-ed' yo'q, 'to' yo'q.\nCoursebook 90-bet, 6-mashqda ham 'could' bor edi.",
-       "speak": "8  Could he PLAYED the piano when he was five?"
+       "speak": "8  Could he PLAYED the piano when he was five?",
+       "speakAnswer": "play"
       },
       {
        "prompt": "9  Would you like some SUGARS in your coffee?",
        "answer": "sugar",
        "promptUz": "'sugar' sanaladimi?",
        "whyUz": "'sugar' — SANALMAYDIGAN ot → KO'PLIK BO'LMAYDI.\n'some SUGAR' ✓  ('some sugars' XATO).\nUnit 8 ('Enjoy your Meal') qoidasi.\nShunday: some water, some bread, some milk.",
-       "speak": "9  Would you like some SUGARS in your coffee?"
+       "speak": "9  Would you like some SUGARS in your coffee?",
+       "speakAnswer": "sugar"
       },
       {
        "prompt": "10  WHEN is the new Chinese restaurant?",
        "answer": "Where",
        "promptUz": "Restoran haqida nima so'raladi?",
        "whyUz": "Restoran — JOY, vaqt emas.\n'WHERE is the new Chinese restaurant?' ✓\n= Yangi xitoy restorani QAYERDA?\n\n'When' vaqt so'raydi — restoran uchun mos emas.\n(Agar 'When is the new restaurant OPENING?'\nbo'lsa to'g'ri bo'lardi, lekin gapda 'opening'\nyo'q.)",
-       "speak": "10  WHEN is the new Chinese restaurant?"
+       "speak": "10  WHEN is the new Chinese restaurant?",
+       "speakAnswer": "Where"
       }
      ]
     },
@@ -4923,7 +5203,8 @@
         "because",
         "when"
        ],
-       "whyUz": "AND — ketma-ket ikki harakat.\nPiter avval pardani tortdi, KEYIN qaradi.\n'because' — sabab (mos emas),\n'when' — vaqt (mos emas).\n'draw the curtains' = pardalarni tortmoq."
+       "whyUz": "AND — ketma-ket ikki harakat.\nPiter avval pardani tortdi, KEYIN qaradi.\n'because' — sabab (mos emas),\n'when' — vaqt (mos emas).\n'draw the curtains' = pardalarni tortmoq.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "2  Do you think it ............ be foggy tomorrow?",
@@ -4934,7 +5215,8 @@
         "don't",
         "can"
        ],
-       "whyUz": "WILL — kelajak haqida TAXMIN.\n'Do you THINK ...' — fikr so'ralmoqda.\n'tomorrow' — kelajak vaqti.\nUnit 13 qoidasi."
+       "whyUz": "WILL — kelajak haqida TAXMIN.\n'Do you THINK ...' — fikr so'ralmoqda.\n'tomorrow' — kelajak vaqti.\nUnit 13 qoidasi.",
+       "speakAnswer": "will"
       },
       {
        "prompt": "3  ............ you in the library yesterday?",
@@ -4945,7 +5227,8 @@
         "Was",
         "Wasn't"
        ],
-       "whyUz": "'you' + O'TGAN zamon ('yesterday') → WERE.\n'Was' — birlik uchun (I, he, she, it).\n'Wasn't' — inkor, savolda mos emas."
+       "whyUz": "'you' + O'TGAN zamon ('yesterday') → WERE.\n'Was' — birlik uchun (I, he, she, it).\n'Wasn't' — inkor, savolda mos emas.",
+       "speakAnswer": "Were"
       },
       {
        "prompt": "4  People didn't have running water ............ those days.",
@@ -4956,7 +5239,8 @@
         "on",
         "at"
        ],
-       "whyUz": "'IN those days' — TURG'UN ibora\n(o'sha kunlarda, o'sha paytlarda).\n'on those days' / 'at those days' XATO.\n'running water' = vodoprovod suvi."
+       "whyUz": "'IN those days' — TURG'UN ibora\n(o'sha kunlarda, o'sha paytlarda).\n'on those days' / 'at those days' XATO.\n'running water' = vodoprovod suvi.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "5  How many ............ of bread do we need?",
@@ -4967,7 +5251,8 @@
         "loaf",
         "slice"
        ],
-       "whyUz": "'How MANY' → KO'PLIK ot kerak → LOAVES.\n'loaf' — birlik, 'slice' — birlik.\n\nNOTO'G'RI KO'PLIK: loaf → LOAVES\n('-f' → '-VES').\nShunday: knife→knives, leaf→leaves,\nwife→wives, life→lives.\n'a loaf of bread' = bir non."
+       "whyUz": "'How MANY' → KO'PLIK ot kerak → LOAVES.\n'loaf' — birlik, 'slice' — birlik.\n\nNOTO'G'RI KO'PLIK: loaf → LOAVES\n('-f' → '-VES').\nShunday: knife→knives, leaf→leaves,\nwife→wives, life→lives.\n'a loaf of bread' = bir non.",
+       "speakAnswer": "loaves"
       },
       {
        "prompt": "6  How ............ sugar do you want?",
@@ -4978,7 +5263,8 @@
         "many",
         "some"
        ],
-       "whyUz": "'sugar' — SANALMAYDIGAN ot → HOW MUCH.\n'how many' — SANALADIGAN otlar bilan.\n\nDIQQAT — 5-BAND BILAN SOLISHTIRING:\n  'How MANY loaves' (loaf — sanaladigan)\n  'How MUCH sugar'  (sugar — sanalmaydigan)"
+       "whyUz": "'sugar' — SANALMAYDIGAN ot → HOW MUCH.\n'how many' — SANALADIGAN otlar bilan.\n\nDIQQAT — 5-BAND BILAN SOLISHTIRING:\n  'How MANY loaves' (loaf — sanaladigan)\n  'How MUCH sugar'  (sugar — sanalmaydigan)",
+       "speakAnswer": "much"
       },
       {
        "prompt": "7  Does Anthony ............ here?",
@@ -4989,7 +5275,8 @@
         "works",
         "working"
        ],
-       "whyUz": "'DOES' dan keyin fe'lning ASOSIY shakli → WORK.\n'Does he works' XATO — '-s' allaqachon 'does'\nda bor.\n'Does he working' XATO.\nUnit 5 qoidasi."
+       "whyUz": "'DOES' dan keyin fe'lning ASOSIY shakli → WORK.\n'Does he works' XATO — '-s' allaqachon 'does'\nda bor.\n'Does he working' XATO.\nUnit 5 qoidasi.",
+       "speakAnswer": "work"
       },
       {
        "prompt": "8  He is heavier ............ his brother.",
@@ -5000,7 +5287,8 @@
         "from",
         "to"
        ],
-       "whyUz": "'heavIER' — QIYOSIY daraja → THAN.\n'heavier from' / 'heavier to' XATO.\nUnit 12 qoidasi."
+       "whyUz": "'heavIER' — QIYOSIY daraja → THAN.\n'heavier from' / 'heavier to' XATO.\nUnit 12 qoidasi.",
+       "speakAnswer": "than"
       },
       {
        "prompt": "9  I ............ a glass of milk this morning.",
@@ -5011,7 +5299,8 @@
         "did",
         "have"
        ],
-       "whyUz": "'THIS MORNING' — allaqachon o'tgan vaqt →\nPAST SIMPLE.\nhave → HAD.\n'have a glass of milk' = bir stakan sut ichmoq."
+       "whyUz": "'THIS MORNING' — allaqachon o'tgan vaqt →\nPAST SIMPLE.\nhave → HAD.\n'have a glass of milk' = bir stakan sut ichmoq.",
+       "speakAnswer": "had"
       },
       {
        "prompt": "10  ............ people owned a television in 1950.",
@@ -5022,7 +5311,8 @@
         "Little",
         "Any"
        ],
-       "whyUz": "'people' — SANALADIGAN (ko'plik) → FEW.\n'little' — SANALMAYDIGAN otlar bilan\n(little water, little time).\n'any' — so'roq va inkor gaplarda.\n'FEW people' = kam odam."
+       "whyUz": "'people' — SANALADIGAN (ko'plik) → FEW.\n'little' — SANALMAYDIGAN otlar bilan\n(little water, little time).\n'any' — so'roq va inkor gaplarda.\n'FEW people' = kam odam.",
+       "speakAnswer": "Few"
       },
       {
        "prompt": "11  She ............ read when she was five.",
@@ -5033,7 +5323,8 @@
         "can",
         "can't"
        ],
-       "whyUz": "'when she WAS five' — O'TGAN zamon → COULD.\n'can' — hozirgi zamon,\n'can't' — hozirgi inkor.\n'could' = o'tmishdagi QOBILIYAT.\nUnit 9 qoidasi."
+       "whyUz": "'when she WAS five' — O'TGAN zamon → COULD.\n'can' — hozirgi zamon,\n'can't' — hozirgi inkor.\n'could' = o'tmishdagi QOBILIYAT.\nUnit 9 qoidasi.",
+       "speakAnswer": "could"
       }
      ]
     }

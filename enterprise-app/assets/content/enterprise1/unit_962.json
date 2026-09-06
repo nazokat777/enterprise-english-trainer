@@ -37,7 +37,8 @@
         "Where's"
        ],
        "whyUz": "SOAT bilan DOIM 'AT':\n  AT 1:30 pm / AT 8 o'clock / AT noon\n\nSolishtiring:\n  AT + soat;  ON + kun;  IN + oy/yil",
-       "speak": "1  We have lunch ..................... 1:30 pm."
+       "speak": "1  We have lunch ..................... 1:30 pm.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "2  The kitchen is ..................... to the dining-room.",
@@ -50,7 +51,8 @@
         "Where's"
        ],
        "whyUz": "'NEXT TO' = yonida (turg'un birikma).\n\nBo'sh joydan keyin 'to' allaqachon bosilgan,\ndemak faqat 'next' kerak.\n\nO'xshash: near (yaqinida), opposite\n(ro'parasida).",
-       "speak": "2  The kitchen is ..................... to the dining-room."
+       "speak": "2  The kitchen is ..................... to the dining-room.",
+       "speakAnswer": "next"
       },
       {
        "prompt": "3  George is my friend. ..................... surname is Mills.",
@@ -63,7 +65,8 @@
         "Where's"
        ],
        "whyUz": "Jorj — ERKAK → HIS (egalik sifati).\n\n  he → his\n  she → her\n  it → its\n\n⚠ 'He surname' XATO — otdan oldin EGALIK\nSIFATI kerak.",
-       "speak": "3  George is my friend. ..................... surname is Mills."
+       "speak": "3  George is my friend. ..................... surname is Mills.",
+       "speakAnswer": "His"
       },
       {
        "prompt": "4  '..................... the car?'   (birinchi bo'sh joy)",
@@ -76,7 +79,8 @@
         "His"
        ],
        "whyUz": "JOY so'raladi → WHERE'S (= Where IS).\n\nJavob 'It's in the garage' — joy, demak savol\nham joy haqida.",
-       "speak": "4  '..................... the car?'   (birinchi bo'sh joy)"
+       "speak": "4  '..................... the car?'   (birinchi bo'sh joy)",
+       "speakAnswer": "Where's"
       },
       {
        "prompt": "4  'It's ................. the garage.'   (ikkinchi bo'sh joy)",
@@ -89,7 +93,8 @@
         "His"
        ],
        "whyUz": "YOPIQ JOY ichida → IN.\n\n  IN the garage / IN the room / IN the box\n  ON the wall / ON the table (yuza ustida)",
-       "speak": "4  'It's ................. the garage.'   (ikkinchi bo'sh joy)"
+       "speak": "4  'It's ................. the garage.'   (ikkinchi bo'sh joy)",
+       "speakAnswer": "in"
       },
       {
        "prompt": "5  'Mum, ..................... is Jennifer.'   (birinchi bo'sh joy)",
@@ -102,7 +107,8 @@
         "His"
        ],
        "whyUz": "⚠ TANISHTIRISHDA 'THIS is ...':\n  'This is Jennifer.'  ✓\n  'She is Jennifer.'   — tanishtirish emas,\n     shunchaki ism aytish\n\nYaqindagi odam/narsa → THIS.",
-       "speak": "5  'Mum, ..................... is Jennifer.'   (birinchi bo'sh joy)"
+       "speak": "5  'Mum, ..................... is Jennifer.'   (birinchi bo'sh joy)",
+       "speakAnswer": "this"
       },
       {
        "prompt": "5  'Hello, Jennifer, ..................... to meet you.'   (ikkinchi bo'sh joy)",
@@ -115,7 +121,8 @@
         "His"
        ],
        "whyUz": "'NICE to meet you' — turg'un ibora.\n\n'PLEASED to meet you' ham to'g'ri\n(ikkalasi ham Unit 1 lug'atida bor).\n\nJavobi: 'Nice to meet you, too.'",
-       "speak": "5  'Hello, Jennifer, ..................... to meet you.'   (ikkinchi bo'sh joy)"
+       "speak": "5  'Hello, Jennifer, ..................... to meet you.'   (ikkinchi bo'sh joy)",
+       "speakAnswer": "nice"
       },
       {
        "prompt": "6  My father is ..................... work.",
@@ -128,7 +135,8 @@
         "Where's"
        ],
        "whyUz": "⚠ 'AT work' — ARTIKLSIZ turg'un ibora.\n\nShunga o'xshash: at home, at school,\nat university.\n\n'at THE work' — XATO.",
-       "speak": "6  My father is ..................... work."
+       "speak": "6  My father is ..................... work.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "7  '..................... are these shoes?'  'They're Tina's.'",
@@ -141,7 +149,8 @@
         "His"
        ],
        "whyUz": "KALIT: javob EGALIK ko'rsatadi ('Tina'S')\n→ WHOSE (kimniki?).\n\n⚠ CHALKASHTIRMANG:\n  WHOSE = kimniki (egalik)\n  WHO'S = who is / who has",
-       "speak": "7  '..................... are these shoes?'  'They're Tina's.'"
+       "speak": "7  '..................... are these shoes?'  'They're Tina's.'",
+       "speakAnswer": "Whose"
       },
       {
        "prompt": "8  '..................... are you?'   (birinchi bo'sh joy)",
@@ -154,7 +163,8 @@
         "His"
        ],
        "whyUz": "AHVOL so'raladi → HOW.\n\n'How are you?' — turg'un savol.\n\n1-nazorat testining 3-mashqida ham bor edi.",
-       "speak": "8  '..................... are you?'   (birinchi bo'sh joy)"
+       "speak": "8  '..................... are you?'   (birinchi bo'sh joy)",
+       "speakAnswer": "How"
       },
       {
        "prompt": "8  '....................., thanks.'   (ikkinchi bo'sh joy)",
@@ -167,7 +177,8 @@
         "His"
        ],
        "whyUz": "'FINE, thanks.' — turg'un javob.\n\nBoshqa variantlar: 'Very well, thanks.',\n'Not bad, thanks.'",
-       "speak": "8  '....................., thanks.'   (ikkinchi bo'sh joy)"
+       "speak": "8  '....................., thanks.'   (ikkinchi bo'sh joy)",
+       "speakAnswer": "Fine"
       },
       {
        "prompt": "9  ..................... class are you in?",
@@ -180,7 +191,8 @@
         "His"
        ],
        "whyUz": "⚠ IKKALASI HAM TO'G'RI: 'WHICH class' yoki\n'WHAT class'.\n\nFARQI:\n  WHICH — tanlov CHEKLANGAN (1-A, 1-B, 1-C)\n  WHAT — tanlov ochiq\n\nMaktabda sinflar sanoqli, shuning uchun\n'Which' aniqroq.",
-       "speak": "9  ..................... class are you in?"
+       "speak": "9  ..................... class are you in?",
+       "speakAnswer": "Which"
       },
       {
        "prompt": "10  Have you got ..................... brothers or sisters?",
@@ -193,7 +205,8 @@
         "His"
        ],
        "whyUz": "SAVOL → ANY.\n\n  tasdiq → some\n  inkor  → any\n  savol  → any",
-       "speak": "10  Have you got ..................... brothers or sisters?"
+       "speak": "10  Have you got ..................... brothers or sisters?",
+       "speakAnswer": "any"
       },
       {
        "prompt": "11  There's a poster ..................... the wall.",
@@ -206,7 +219,8 @@
         "His"
        ],
        "whyUz": "⚠ DEVOR bilan 'ON' ('in' EMAS!).\n\nYuza USTIDA → ON:\n  ON the wall / ON the table / ON the floor\n\n'in the wall' = devor ICHIDA (boshqa ma'no).",
-       "speak": "11  There's a poster ..................... the wall."
+       "speak": "11  There's a poster ..................... the wall.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "12  What ..................... she look like?",
@@ -219,7 +233,8 @@
         "His"
        ],
        "whyUz": "'she' — 3-shaxs birlik → DOES.\n\n⚠ 'does' dan keyin ASOSIY shakl:\n  'does she LOOK'   ✓\n  'does she LOOKS'  ✗\n\n'What does sb look like?' = TASHQI KO'RINISH.",
-       "speak": "12  What ..................... she look like?"
+       "speak": "12  What ..................... she look like?",
+       "speakAnswer": "does"
       },
       {
        "prompt": "13  '..................... they like James?'   (birinchi bo'sh joy)",
@@ -232,7 +247,8 @@
         "His"
        ],
        "whyUz": "'they' → DO.\n\n⚠ Gap boshida turgani uchun kitobda BOSH\nHARF bilan: 'DO they like James?'",
-       "speak": "13  '..................... they like James?'   (birinchi bo'sh joy)"
+       "speak": "13  '..................... they like James?'   (birinchi bo'sh joy)",
+       "speakAnswer": "do"
       },
       {
        "prompt": "13  'No, they ............... like ...............'   (ikkinchi bo'sh joy)",
@@ -245,7 +261,8 @@
         "His"
        ],
        "whyUz": "'they' → DON'T.\n\nKeyin ASOSIY shakl: 'don't LIKE'.",
-       "speak": "13  'No, they ............... like ...............'   (ikkinchi bo'sh joy)"
+       "speak": "13  'No, they ............... like ...............'   (ikkinchi bo'sh joy)",
+       "speakAnswer": "don't"
       },
       {
        "prompt": "13  'No, they don't like ..................... at all.'   (uchinchi bo'sh joy)",
@@ -258,7 +275,8 @@
         "His"
        ],
        "whyUz": "'James' — ERKAK, va bu yerda TO'LDIRUVCHI\n(fe'ldan keyin) → HIM.\n\n  he → him\n  she → her\n  they → them\n\n'at all' = umuman (inkorni kuchaytiradi,\ngap oxirida).",
-       "speak": "13  'No, they don't like ..................... at all.'   (uchinchi bo'sh joy)"
+       "speak": "13  'No, they don't like ..................... at all.'   (uchinchi bo'sh joy)",
+       "speakAnswer": "him"
       },
       {
        "prompt": "14  She ..................... like reading,   (birinchi bo'sh joy)",
@@ -271,7 +289,8 @@
         "His"
        ],
        "whyUz": "'she' → DOESN'T.\n\nKeyin ASOSIY shakl:\n  'doesn't LIKE'   ✓\n  'doesn't LIKES'  ✗",
-       "speak": "14  She ..................... like reading,   (birinchi bo'sh joy)"
+       "speak": "14  She ..................... like reading,   (birinchi bo'sh joy)",
+       "speakAnswer": "doesn't"
       },
       {
        "prompt": "14  but she ..................... watching TV.   (ikkinchi bo'sh joy)",
@@ -284,7 +303,8 @@
         "His"
        ],
        "whyUz": "TASDIQ gapda 'she' → fe'lga '-S' qo'shiladi:\nLIKES.\n\n⚠ Inkorda '-s' YO'Q ('doesn't like'), tasdiqda\nBOR ('likes') — shu ikkisi bir gapda!",
-       "speak": "14  but she ..................... watching TV.   (ikkinchi bo'sh joy)"
+       "speak": "14  but she ..................... watching TV.   (ikkinchi bo'sh joy)",
+       "speakAnswer": "likes"
       },
       {
        "prompt": "15  ..................... are five of us in our family.",
@@ -297,7 +317,8 @@
         "His"
        ],
        "whyUz": "'THERE are ...' — mavjudlikni bildiradi.\n\n'five of us' — KO'PLIK → ARE.\n\n'We are five in our family' — o'zbekcha\nfikrlash, inglizchada 'There are five of us'.",
-       "speak": "15  ..................... are five of us in our family."
+       "speak": "15  ..................... are five of us in our family.",
+       "speakAnswer": "There"
       },
       {
        "prompt": "16  They ..................... their homework in the evening.",
@@ -310,7 +331,8 @@
         "His"
        ],
        "whyUz": "⚠ 'DO homework' = uy vazifasini BAJARMOQ.\n\n'MAKE homework' — XATO!\n\n  DO: homework, housework, the washing-up\n  MAKE: the bed, a cake, a mistake",
-       "speak": "16  They ..................... their homework in the evening."
+       "speak": "16  They ..................... their homework in the evening.",
+       "speakAnswer": "do"
       },
       {
        "prompt": "17  The children ..................... lessons in the morning.",
@@ -323,7 +345,8 @@
         "His"
        ],
        "whyUz": "'HAVE lessons' = darsga qatnamoq.\n\n'The children' — KO'PLIK → HAVE ('has' emas).\n\nShunga o'xshash: have breakfast/lunch/dinner\n(1-band).",
-       "speak": "17  The children ..................... lessons in the morning."
+       "speak": "17  The children ..................... lessons in the morning.",
+       "speakAnswer": "have"
       },
       {
        "prompt": "18  There's ..................... vase on the table,   (birinchi bo'sh joy)",
@@ -349,7 +372,8 @@
         "His"
        ],
        "whyUz": "INKOR → ANY.\n\n'there AREN'T ANY flowers' ✓\n'there aren't SOME flowers' ✗",
-       "speak": "18  but there aren't ..................... flowers in it.   (ikkinchi bo'sh joy)"
+       "speak": "18  but there aren't ..................... flowers in it.   (ikkinchi bo'sh joy)",
+       "speakAnswer": "any"
       },
       {
        "prompt": "19  There are ..................... chairs in the kitchen,   (birinchi bo'sh joy)",
@@ -362,7 +386,8 @@
         "His"
        ],
        "whyUz": "TASDIQ + KO'PLIK → SOME.\n\n18-band bilan solishtiring: u yerda BIRLIK\nedi ('a vase'), bu yerda KO'PLIK ('some\nchairs').",
-       "speak": "19  There are ..................... chairs in the kitchen,   (birinchi bo'sh joy)"
+       "speak": "19  There are ..................... chairs in the kitchen,   (birinchi bo'sh joy)",
+       "speakAnswer": "some"
       },
       {
        "prompt": "19  but there aren't ..................... armchairs.   (ikkinchi bo'sh joy)",
@@ -375,7 +400,8 @@
         "His"
        ],
        "whyUz": "INKOR → ANY.\n\nBu mashqda 'any' UCH marta ishlatiladi\n(10, 18, 19-bandlar) — hammasi savol yoki\ninkorda.",
-       "speak": "19  but there aren't ..................... armchairs.   (ikkinchi bo'sh joy)"
+       "speak": "19  but there aren't ..................... armchairs.   (ikkinchi bo'sh joy)",
+       "speakAnswer": "any"
       },
       {
        "prompt": "20  ..................... sit there — that's my chair.",
@@ -387,7 +413,8 @@
         "next",
         "His"
        ],
-       "whyUz": "BUYRUQ GAPNING INKORI → DON'T + asosiy shakl.\n\n  'Sit here.'      (buyruq)\n  'DON'T sit there.' (inkor buyruq)\n\n⚠ Gap boshida turgani uchun kitobda BOSH\nHARF bilan: 'DON'T sit there.'"
+       "whyUz": "BUYRUQ GAPNING INKORI → DON'T + asosiy shakl.\n\n  'Sit here.'      (buyruq)\n  'DON'T sit there.' (inkor buyruq)\n\n⚠ Gap boshida turgani uchun kitobda BOSH\nHARF bilan: 'DON'T sit there.'",
+       "speakAnswer": "don't"
       }
      ]
     },
@@ -411,7 +438,8 @@
         "some",
         "a"
        ],
-       "whyUz": "SAVOL → ANY.\n\n'a' — ko'plik ot bilan kelmaydi\n('a cupboards' XATO).\n'some' — savolda odatda taklif ma'nosida."
+       "whyUz": "SAVOL → ANY.\n\n'a' — ko'plik ot bilan kelmaydi\n('a cupboards' XATO).\n'some' — savolda odatda taklif ma'nosida.",
+       "speakAnswer": "any"
       },
       {
        "prompt": "2  There is ................. good restaurant near here.",
@@ -433,7 +461,8 @@
         "about",
         "in"
        ],
-       "whyUz": "⚠ 'write TO somebody' — predlog 'to'.\n\n'write ABOUT something' = biror narsa haqida\nyozmoq (boshqa ma'no).\n\n('write me' — faqat Amerika inglizchasida.)"
+       "whyUz": "⚠ 'write TO somebody' — predlog 'to'.\n\n'write ABOUT something' = biror narsa haqida\nyozmoq (boshqa ma'no).\n\n('write me' — faqat Amerika inglizchasida.)",
+       "speakAnswer": "to"
       },
       {
        "prompt": "4  Mary is my aunt. ................. surname is Baker.",
@@ -444,7 +473,8 @@
         "Hers",
         "She"
        ],
-       "whyUz": "Otdan OLDIN → EGALIK SIFATI 'HER'.\n\n⚠ FARQI:\n  HER + ot   → 'HER surname'\n  HERS (otsiz) → 'The book is HERS'\n  SHE (ega)  → 'SHE is my aunt'\n\n1-mashqning 3-bandi bilan bir xil qoida\n('HIS surname')."
+       "whyUz": "Otdan OLDIN → EGALIK SIFATI 'HER'.\n\n⚠ FARQI:\n  HER + ot   → 'HER surname'\n  HERS (otsiz) → 'The book is HERS'\n  SHE (ega)  → 'SHE is my aunt'\n\n1-mashqning 3-bandi bilan bir xil qoida\n('HIS surname').",
+       "speakAnswer": "Her"
       },
       {
        "prompt": "5  ................. that girl over there?",
@@ -455,7 +485,8 @@
         "Whose",
         "Who"
        ],
-       "whyUz": "'WHO'S' = Who IS → 'Who is that girl?'\n\n⚠ FARQI:\n  WHO'S = who is / who has\n  WHOSE = kimniki (egalik)\n\n'Who that girl?' — 'is' tushib qolgan, XATO.\n\n(Kitobda B varianti 'Whos' deb apostrofsiz\nbosilgan — bosma xato.)"
+       "whyUz": "'WHO'S' = Who IS → 'Who is that girl?'\n\n⚠ FARQI:\n  WHO'S = who is / who has\n  WHOSE = kimniki (egalik)\n\n'Who that girl?' — 'is' tushib qolgan, XATO.\n\n(Kitobda B varianti 'Whos' deb apostrofsiz\nbosilgan — bosma xato.)",
+       "speakAnswer": "Who's"
       },
       {
        "prompt": "6  New York is a big ................. .",
@@ -466,7 +497,8 @@
         "town",
         "house"
        ],
-       "whyUz": "  a town  = kichik shahar\n  a city   = KATTA shahar\n  a house  = uy\n\nNyu-York — dunyodagi eng katta shaharlardan\nbiri → CITY."
+       "whyUz": "  a town  = kichik shahar\n  a city   = KATTA shahar\n  a house  = uy\n\nNyu-York — dunyodagi eng katta shaharlardan\nbiri → CITY.",
+       "speakAnswer": "city"
       },
       {
        "prompt": "7  My mother's brother is my ................. .",
@@ -477,7 +509,8 @@
         "aunt",
         "nephew"
        ],
-       "whyUz": "Onaning AKASI/UKASI → UNCLE (amaki, tog'a).\n\n  an aunt = xola, amma (AYOL)\n  a nephew = jiyan (o'g'il — ukam/opamning\n     o'g'li)\n  an uncle = amaki, tog'a"
+       "whyUz": "Onaning AKASI/UKASI → UNCLE (amaki, tog'a).\n\n  an aunt = xola, amma (AYOL)\n  a nephew = jiyan (o'g'il — ukam/opamning\n     o'g'li)\n  an uncle = amaki, tog'a",
+       "speakAnswer": "uncle"
       },
       {
        "prompt": "8  'What does she look like?'  'She's ................. .'",
@@ -488,7 +521,8 @@
         "rude",
         "kind"
        ],
-       "whyUz": "⚠ ENG MUHIM QOIDA:\n'What does she LOOK LIKE?' → TASHQI KO'RINISH.\n\n  pretty = chiroyli (TASHQI KO'RINISH) ✓\n  rude = qo'pol (XARAKTER)\n  kind = mehribon (XARAKTER)\n\n9-band bilan yonma-yon solishtiring!"
+       "whyUz": "⚠ ENG MUHIM QOIDA:\n'What does she LOOK LIKE?' → TASHQI KO'RINISH.\n\n  pretty = chiroyli (TASHQI KO'RINISH) ✓\n  rude = qo'pol (XARAKTER)\n  kind = mehribon (XARAKTER)\n\n9-band bilan yonma-yon solishtiring!",
+       "speakAnswer": "pretty"
       },
       {
        "prompt": "9  'What's she like?'  'She is ................. .'",
@@ -499,7 +533,8 @@
         "beautiful",
         "good-looking"
        ],
-       "whyUz": "⚠ 'What IS she LIKE?' → XARAKTER\n('look' YO'Q!).\n\n  rude = qo'pol (XARAKTER) ✓\n  beautiful = go'zal (TASHQI KO'RINISH)\n  good-looking = kelishgan (TASHQI KO'RINISH)\n\nKitob 8 va 9-bandlarni ataylab yonma-yon\nqo'ygan."
+       "whyUz": "⚠ 'What IS she LIKE?' → XARAKTER\n('look' YO'Q!).\n\n  rude = qo'pol (XARAKTER) ✓\n  beautiful = go'zal (TASHQI KO'RINISH)\n  good-looking = kelishgan (TASHQI KO'RINISH)\n\nKitob 8 va 9-bandlarni ataylab yonma-yon\nqo'ygan.",
+       "speakAnswer": "rude"
       },
       {
        "prompt": "10  I'm Portuguese. ................. about you?",
@@ -510,7 +545,8 @@
         "Who",
         "Whose"
        ],
-       "whyUz": "'WHAT about you?' — turg'un ibora (siz-chi?).\n\n'Who about you' / 'Whose about you' — ingliz\ntilida mavjud emas.\n\nO'xshash: 'How about you?' ham to'g'ri."
+       "whyUz": "'WHAT about you?' — turg'un ibora (siz-chi?).\n\n'Who about you' / 'Whose about you' — ingliz\ntilida mavjud emas.\n\nO'xshash: 'How about you?' ham to'g'ri.",
+       "speakAnswer": "What"
       }
      ]
     }
@@ -546,7 +582,8 @@
         "help"
        ],
        "whyUz": "RASMDA: bola yotoqxonada CHEKYAPTI — XATO ish\n→ INKOR buyruq kerak.\n\n'DON'T SMOKE in the bedroom.'\n\n'Don't' dan keyin ASOSIY shakl.",
-       "speak": "1  (Ayol yotoqxonada chekayotgan bolani koyiyapti)   '..................... in the bedroom.'"
+       "speak": "1  (Ayol yotoqxonada chekayotgan bolani koyiyapti)   '..................... in the bedroom.'",
+       "speakAnswer": "don't smoke"
       },
       {
        "prompt": "2  (Ayol bola bilan ko'chada, mashina kelyapti)   '..................... careful!'",
@@ -559,7 +596,8 @@
         "play"
        ],
        "whyUz": "⚠ 'DON'T' KERAK EMAS — bu OGOHLANTIRISH,\nta'qiq emas.\n\n'BE careful!' — 'be' fe'lining BUYRUQ shakli.\n'Are careful' / 'Is careful' — XATO!\n\nInkori: 'DON'T BE late!'",
-       "speak": "2  (Ayol bola bilan ko'chada, mashina kelyapti)   '..................... careful!'"
+       "speak": "2  (Ayol bola bilan ko'chada, mashina kelyapti)   '..................... careful!'",
+       "speakAnswer": "be"
       },
       {
        "prompt": "3  (Erkak suvda cho'kayapti, qo'lini ko'tarib)   '..................... me, please!'",
@@ -572,7 +610,8 @@
         "play"
        ],
        "whyUz": "⚠ 'DON'T' KERAK EMAS — bu YORDAM SO'RASH.\n\n'HELP me, please!'\n\n'please' iltimosni ko'rsatadi, demak inkor\nemas.",
-       "speak": "3  (Erkak suvda cho'kayapti, qo'lini ko'tarib)   '..................... me, please!'"
+       "speak": "3  (Erkak suvda cho'kayapti, qo'lini ko'tarib)   '..................... me, please!'",
+       "speakAnswer": "help"
       },
       {
        "prompt": "4  (Sohilda ayol va erkak)   '..................... here. The water isn't clean.'",
@@ -585,7 +624,8 @@
         "help"
        ],
        "whyUz": "KALIT: 'The water ISN'T CLEAN' — suv iflos,\ndemak suzish XAVFLI → INKOR buyruq.\n\n'DON'T SWIM here.'",
-       "speak": "4  (Sohilda ayol va erkak)   '..................... here. The water isn't clean.'"
+       "speak": "4  (Sohilda ayol va erkak)   '..................... here. The water isn't clean.'",
+       "speakAnswer": "don't swim"
       },
       {
        "prompt": "5  (Ayol ko'chada futbol o'ynayotgan bolalarga qarayapti)   '..................... in the street!'",
@@ -598,7 +638,8 @@
         "help"
        ],
        "whyUz": "RASMDA: bolalar KO'CHADA futbol o'ynashyapti\n— xavfli → INKOR buyruq.\n\n'DON'T PLAY in the street!'\n\n1-mashqning 20-bandi bilan bir xil qoida.",
-       "speak": "5  (Ayol ko'chada futbol o'ynayotgan bolalarga qarayapti)   '..................... in the street!'"
+       "speak": "5  (Ayol ko'chada futbol o'ynayotgan bolalarga qarayapti)   '..................... in the street!'",
+       "speakAnswer": "don't play"
       }
      ]
     }

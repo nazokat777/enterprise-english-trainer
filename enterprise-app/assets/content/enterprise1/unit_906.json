@@ -235,7 +235,8 @@
         "An alligator",
         "A snake"
        ],
-       "whyUz": "1-rasmda Devid aytadi:\n'An ALLIGATOR is after me!'\nSuvda timsoh ko'rinib turibdi.\n'a snake' (ilon) epizodda YO'Q."
+       "whyUz": "1-rasmda Devid aytadi:\n'An ALLIGATOR is after me!'\nSuvda timsoh ko'rinib turibdi.\n'a snake' (ilon) epizodda YO'Q.",
+       "speakAnswer": "An alligator"
       },
       {
        "prompt": "2  David and Sandra meet ............ .",
@@ -245,7 +246,8 @@
         "a doctor",
         "the Indians' chief"
        ],
-       "whyUz": "4-5-rasmlardagi keksa odam — DOKTOR Hamperdin.\nU o'zi aytadi: 'I'm their DOCTOR.'\n'the Indians' chief' (hindular boshlig'i)\nepizodda umuman eslatilmagan."
+       "whyUz": "4-5-rasmlardagi keksa odam — DOKTOR Hamperdin.\nU o'zi aytadi: 'I'm their DOCTOR.'\n'the Indians' chief' (hindular boshlig'i)\nepizodda umuman eslatilmagan.",
+       "speakAnswer": "a doctor"
       },
       {
        "prompt": "3  The Indian wants to see Sandra's ............ .",
@@ -255,7 +257,8 @@
         "camera",
         "bag"
        ],
-       "whyUz": "6-rasmda Sandra aytadi:\n'He wants to take my CAMERA!'\n'bag' (sumka) epizodda YO'Q."
+       "whyUz": "6-rasmda Sandra aytadi:\n'He wants to take my CAMERA!'\n'bag' (sumka) epizodda YO'Q.",
+       "speakAnswer": "camera"
       },
       {
        "prompt": "4  Mike is ............ .",
@@ -265,7 +268,8 @@
         "satisfied",
         "disappointed"
        ],
-       "whyUz": "7-rasmda Mayk (muharrir) aytadi:\n'GOOD WORK, you two. This is a GREAT story and\nthe pictures are FANTASTIC.'\n→ u MAMNUN.\n'disappointed' = hafsalasi pir bo'lgan (teskari)."
+       "whyUz": "7-rasmda Mayk (muharrir) aytadi:\n'GOOD WORK, you two. This is a GREAT story and\nthe pictures are FANTASTIC.'\n→ u MAMNUN.\n'disappointed' = hafsalasi pir bo'lgan (teskari).",
+       "speakAnswer": "satisfied"
       }
      ]
     },
@@ -355,19 +359,23 @@
      "tasks": [
       {
        "left": "A",
-       "right": "3  People cut down trees."
+       "right": "3  People cut down trees.",
+       "speakAnswer": "3  People cut down trees."
       },
       {
        "left": "B",
-       "right": "1  the destruction of the rainforest"
+       "right": "1  the destruction of the rainforest",
+       "speakAnswer": "1  the destruction of the rainforest"
       },
       {
        "left": "C",
-       "right": "2  Some people kill the animals."
+       "right": "2  Some people kill the animals.",
+       "speakAnswer": "2  Some people kill the animals."
       },
       {
        "left": "D",
-       "right": "4  The Jivaro Indians use some plants as medicine."
+       "right": "4  The Jivaro Indians use some plants as medicine.",
+       "speakAnswer": "4  The Jivaro Indians use some plants as medicine."
       }
      ]
     },
@@ -526,91 +534,104 @@
        "answer": "was",
        "promptUz": "'David' — birlik",
        "whyUz": "'David' BIRLIK → WAS.\n'scared' = qo'rqib ketgan.",
-       "speak": "David 1) ............ (be) scared ..."
+       "speak": "David 1) ............ (be) scared ...",
+       "speakAnswer": "was"
       },
       {
        "prompt": "... an alligator 2) ............ (be) after him.",
        "answer": "was",
        "promptUz": "'an alligator' — birlik",
        "whyUz": "'an alligator' BIRLIK → WAS.\n'be after sb' = kimnidir quvmoq.",
-       "speak": "... an alligator 2) ............ (be) after him."
+       "speak": "... an alligator 2) ............ (be) after him.",
+       "speakAnswer": "was"
       },
       {
        "prompt": "David and Sandra 3) ............ (be) on the river bank ...",
        "answer": "were",
        "promptUz": "DIQQAT — ikki odam",
        "whyUz": "'David AND Sandra' — IKKI odam → KO'PLIK → WERE.\n'was' XATO.\nBu — mashqning eng ko'p xato qilinadigan bandi.",
-       "speak": "David and Sandra 3) ............ (be) on the river bank ..."
+       "speak": "David and Sandra 3) ............ (be) on the river bank ...",
+       "speakAnswer": "were"
       },
       {
        "prompt": "... when they 4) ............ (see) the Jivaro Indians with a white man.",
        "answer": "saw",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "see → SAW (noto'g'ri fe'l).\n'a white man' = oq tanli odam (Doktor Hamperdin).",
-       "speak": "... when they 4) ............ (see) the Jivaro Indians with a white man."
+       "speak": "... when they 4) ............ (see) the Jivaro Indians with a white man.",
+       "speakAnswer": "saw"
       },
       {
        "prompt": "Sandra 5) ............ (not/know) him ...",
        "answer": "didn't know",
        "promptUz": "INKOR shakl",
        "whyUz": "PAST SIMPLE INKOR: DIDN'T + KNOW (ASOSIY shakl).\n'didn't knew' XATO.\nSandra doktorni TANIMADI (Devid tanidi).",
-       "speak": "Sandra 5) ............ (not/know) him ..."
+       "speak": "Sandra 5) ............ (not/know) him ...",
+       "speakAnswer": "didn't know"
       },
       {
        "prompt": "... but David 6) ............ (recognise) him as Doctor Hamperdin.",
        "answer": "recognised",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "recognise → RECOGNISED (to'g'ri fe'l).\n'recognise sb AS ...' = kimnidir ... sifatida\ntanimoq.\nBritancha yozilishi '-ise'; amerikacha '-ize'.",
-       "speak": "... but David 6) ............ (recognise) him as Doctor Hamperdin."
+       "speak": "... but David 6) ............ (recognise) him as Doctor Hamperdin.",
+       "speakAnswer": "recognised"
       },
       {
        "prompt": "David 7) ............ (be) confused ...",
        "answer": "was",
        "promptUz": "'David' — birlik",
        "whyUz": "'David' BIRLIK → WAS.\n'confused' = dovdirab qolgan, hayron.",
-       "speak": "David 7) ............ (be) confused ..."
+       "speak": "David 7) ............ (be) confused ...",
+       "speakAnswer": "was"
       },
       {
        "prompt": "... so Doctor Hamperdin 8) ............ (explain) that he lived with the Jivaro Indians after his accident.",
        "answer": "explained",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "explain → EXPLAINED (to'g'ri fe'l).\n'an accident' = baxtsiz hodisa.",
-       "speak": "... so Doctor Hamperdin 8) ............ (explain) that he lived with the Jivaro Indians after his accident."
+       "speak": "... so Doctor Hamperdin 8) ............ (explain) that he lived with the Jivaro Indians after his accident.",
+       "speakAnswer": "explained"
       },
       {
        "prompt": "He 9) ............ (say) the Indians ...",
        "answer": "said",
        "promptUz": "Noto'g'ri fe'l",
        "whyUz": "say → SAID (noto'g'ri fe'l; 'sed' deb o'qiladi).\nDIQQAT: 'say THAT ...' — 'that' tushirib\nqoldirilgan.",
-       "speak": "He 9) ............ (say) the Indians ..."
+       "speak": "He 9) ............ (say) the Indians ...",
+       "speakAnswer": "said"
       },
       {
        "prompt": "... the Indians 10) ............ (love) their land ...",
        "answer": "loved",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "love → LOVED (to'g'ri fe'l).\nDIQQAT: 'the Indians' KO'PLIK bo'lsa ham,\npast simple da fe'l O'ZGARMAYDI.",
-       "speak": "... the Indians 10) ............ (love) their land ..."
+       "speak": "... the Indians 10) ............ (love) their land ...",
+       "speakAnswer": "loved"
       },
       {
        "prompt": "... and they 11) ............ (want) to protect it.",
        "answer": "wanted",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "want → WANTED (to'g'ri fe'l).\n'want TO + asosiy fe'l' — qolip.\n'to protect' = himoya qilmoq.",
-       "speak": "... and they 11) ............ (want) to protect it."
+       "speak": "... and they 11) ............ (want) to protect it.",
+       "speakAnswer": "wanted"
       },
       {
        "prompt": "He 12) ............ (promise) to help them write their article ...",
        "answer": "promised",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "promise → PROMISED (to'g'ri fe'l).\n'promise TO do sth' = ... qilishga va'da bermoq.\n'help sb do sth' — 'to' TUSHIRILADI.",
-       "speak": "He 12) ............ (promise) to help them write their article ..."
+       "speak": "He 12) ............ (promise) to help them write their article ...",
+       "speakAnswer": "promised"
       },
       {
        "prompt": "... then he 13) ............ (ask) them not to tell anyone about him.",
        "answer": "asked",
        "promptUz": "To'g'ri fe'l",
        "whyUz": "ask → ASKED (to'g'ri fe'l).\n'ask sb NOT TO do sth' = kimgadir ... qilMASlikni\nso'ramoq.\nDIQQAT: 'not' 'to' dan OLDIN turadi.",
-       "speak": "... then he 13) ............ (ask) them not to tell anyone about him."
+       "speak": "... then he 13) ............ (ask) them not to tell anyone about him.",
+       "speakAnswer": "asked"
       }
      ]
     },
@@ -633,7 +654,8 @@
         "because",
         "and"
        ],
-       "whyUz": "BECAUSE — SABAB.\nNega qo'rqdi? — CHUNKI timsoh quvardi.\n'and' shunchaki qo'shar edi, sababni\nko'rsatmasdi."
+       "whyUz": "BECAUSE — SABAB.\nNega qo'rqdi? — CHUNKI timsoh quvardi.\n'and' shunchaki qo'shar edi, sababni\nko'rsatmasdi.",
+       "speakAnswer": "because"
       },
       {
        "prompt": "David and Sandra were on the river bank ............ they saw the Jivaro Indians.",
@@ -643,7 +665,8 @@
         "when",
         "so"
        ],
-       "whyUz": "WHEN — VAQT.\nQachon ko'rishdi? — daryo bo'yida TURGANDA.\n'so' NATIJA bildiradi — hindularni ko'rish\ndaryo bo'yida bo'lishning natijasi emas."
+       "whyUz": "WHEN — VAQT.\nQachon ko'rishdi? — daryo bo'yida TURGANDA.\n'so' NATIJA bildiradi — hindularni ko'rish\ndaryo bo'yida bo'lishning natijasi emas.",
+       "speakAnswer": "when"
       },
       {
        "prompt": "Sandra didn't know him ............ David recognised him as Doctor Hamperdin.",
@@ -653,7 +676,8 @@
         "but",
         "then"
        ],
-       "whyUz": "BUT — QARAMA-QARSHILIK.\nSandra TANIMADI ↔ Devid TANIDI.\nIkki TESKARI holat.\n'then' ketma-ketlikni bildiradi — bu yerda\nikkalasi BIR VAQTDA sodir bo'lgan."
+       "whyUz": "BUT — QARAMA-QARSHILIK.\nSandra TANIMADI ↔ Devid TANIDI.\nIkki TESKARI holat.\n'then' ketma-ketlikni bildiradi — bu yerda\nikkalasi BIR VAQTDA sodir bo'lgan.",
+       "speakAnswer": "but"
       },
       {
        "prompt": "David was confused ............ Doctor Hamperdin explained that he lived with the Jivaro Indians.",
@@ -663,7 +687,8 @@
         "so",
         "and"
        ],
-       "whyUz": "SO — NATIJA.\nDevid dovdirab qoldi → SHUNING UCHUN doktor\ntushuntirdi.\nTushuntirish — dovdirashning NATIJASI."
+       "whyUz": "SO — NATIJA.\nDevid dovdirab qoldi → SHUNING UCHUN doktor\ntushuntirdi.\nTushuntirish — dovdirashning NATIJASI.",
+       "speakAnswer": "so"
       },
       {
        "prompt": "He said the Indians loved their land ............ they wanted to protect it.",
@@ -673,7 +698,8 @@
         "and",
         "but"
        ],
-       "whyUz": "AND — QO'SHISH.\nIkki fikr BIR YO'NALISHDA:\nyerni sevish → himoya qilishni xohlash.\n'but' teskarilikni bildiradi — bu yerda\nteskarilik YO'Q."
+       "whyUz": "AND — QO'SHISH.\nIkki fikr BIR YO'NALISHDA:\nyerni sevish → himoya qilishni xohlash.\n'but' teskarilikni bildiradi — bu yerda\nteskarilik YO'Q.",
+       "speakAnswer": "and"
       },
       {
        "prompt": "He promised to help them write their article ............ he asked them not to tell anyone about him.",
@@ -683,7 +709,8 @@
         "then",
         "so"
        ],
-       "whyUz": "THEN — KETMA-KETLIK.\nAvval VA'DA BERDI, KEYIN so'radi.\n'so' bo'lsa — so'rash va'daning NATIJASI\nbo'lardi, lekin unday emas: bular ikki ALOHIDA\nish."
+       "whyUz": "THEN — KETMA-KETLIK.\nAvval VA'DA BERDI, KEYIN so'radi.\n'so' bo'lsa — so'rash va'daning NATIJASI\nbo'lardi, lekin unday emas: bular ikki ALOHIDA\nish.",
+       "speakAnswer": "then"
       }
      ]
     },
@@ -700,47 +727,58 @@
      "tasks": [
       {
        "left": "1",
-       "right": "Sandra and David got on a plane to Brazil."
+       "right": "Sandra and David got on a plane to Brazil.",
+       "speakAnswer": "Sandra and David got on a plane to Brazil."
       },
       {
        "left": "2",
-       "right": "They went to the jungle."
+       "right": "They went to the jungle.",
+       "speakAnswer": "They went to the jungle."
       },
       {
        "left": "3",
-       "right": "They heard drums and saw the Jivaro Indians."
+       "right": "They heard drums and saw the Jivaro Indians.",
+       "speakAnswer": "They heard drums and saw the Jivaro Indians."
       },
       {
        "left": "4",
-       "right": "They ran to the river."
+       "right": "They ran to the river.",
+       "speakAnswer": "They ran to the river."
       },
       {
        "left": "5",
-       "right": "They found a canoe."
+       "right": "They found a canoe.",
+       "speakAnswer": "They found a canoe."
       },
       {
        "left": "6",
-       "right": "They fell down a waterfall."
+       "right": "They fell down a waterfall.",
+       "speakAnswer": "They fell down a waterfall."
       },
       {
        "left": "7",
-       "right": "Sandra saved David from an alligator."
+       "right": "Sandra saved David from an alligator.",
+       "speakAnswer": "Sandra saved David from an alligator."
       },
       {
        "left": "8",
-       "right": "They met Doctor Hamperdin."
+       "right": "They met Doctor Hamperdin.",
+       "speakAnswer": "They met Doctor Hamperdin."
       },
       {
        "left": "9",
-       "right": "Doctor Hamperdin told them about the Jivaro Indians."
+       "right": "Doctor Hamperdin told them about the Jivaro Indians.",
+       "speakAnswer": "Doctor Hamperdin told them about the Jivaro Indians."
       },
       {
        "left": "10",
-       "right": "Sandra and David came back to London."
+       "right": "Sandra and David came back to London.",
+       "speakAnswer": "Sandra and David came back to London."
       },
       {
        "left": "11",
-       "right": "Mike was satisfied with their article."
+       "right": "Mike was satisfied with their article.",
+       "speakAnswer": "Mike was satisfied with their article."
       }
      ]
     },
@@ -765,7 +803,8 @@
         "longest"
        ],
        "whyUz": "'A' artikli bor → BIRLIK sifat kerak.\nLARGE (katta) — o'rmon uchun mos.\n'many' ko'plik bilan keladi;\n'longest' va 'whole' 'the' talab qiladi;\n'serious' o'rmon uchun mos emas.",
-       "speak": "1  The Amazon Rainforest is a ............ beautiful forest in Brazil, South America."
+       "speak": "1  The Amazon Rainforest is a ............ beautiful forest in Brazil, South America.",
+       "speakAnswer": "large"
       },
       {
        "prompt": "2  The Amazon river is the ............ river in South America.",
@@ -777,7 +816,8 @@
         "serious"
        ],
        "whyUz": "'THE' bor va '... IN South America' →\nORTTIRMA daraja kerak.\nRo'yxatdagi YAGONA orttirma shakl — LONGEST.\nUnit 12 ning grammatikasi.",
-       "speak": "2  The Amazon river is the ............ river in South America."
+       "speak": "2  The Amazon river is the ............ river in South America.",
+       "speakAnswer": "longest"
       },
       {
        "prompt": "3  There are also ............ trees and plants.",
@@ -789,7 +829,8 @@
         "longest"
        ],
        "whyUz": "'trees and plants' — SANALADIGAN KO'PLIK otlar →\nMANY.\n'much' sanalmaydigan otlar bilan keladi.\n'There ARE' — ko'plik fe'li ham buni tasdiqlaydi.",
-       "speak": "3  There are also ............ trees and plants."
+       "speak": "3  There are also ............ trees and plants.",
+       "speakAnswer": "many"
       },
       {
        "prompt": "4  Today, the forest has a very ............ problem.",
@@ -801,7 +842,8 @@
         "longest"
        ],
        "whyUz": "'a VERY' bor → ODDIY sifat kerak.\nMuammo haqida → SERIOUS (jiddiy).\nKeyingi gaplar tasdiqlaydi: daraxtlar kesilmoqda,\nhayvonlar yo'q bo'lib bormoqda.",
-       "speak": "4  Today, the forest has a very ............ problem."
+       "speak": "4  Today, the forest has a very ............ problem.",
+       "speakAnswer": "serious"
       },
       {
        "prompt": "5  Some scientists say that the ............ world is in danger because of the destruction of the rainforests.",
@@ -813,7 +855,8 @@
         "serious"
        ],
        "whyUz": "'the WHOLE world' = butun dunyo — TURG'UN\nbirikma.\n'whole' = butun, to'liq.\nDIQQAT: 'the whole world' ✓,\n'a whole world' — boshqa ma'no.",
-       "speak": "5  Some scientists say that the ............ world is in danger because of the destruction of the rainforests."
+       "speak": "5  Some scientists say that the ............ world is in danger because of the destruction of the rainforests.",
+       "speakAnswer": "whole"
       }
      ]
     }

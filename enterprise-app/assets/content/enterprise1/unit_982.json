@@ -28,11 +28,13 @@
      "tasks": [
       {
        "left": "A — och rangli, boshi silliq (tik soch yo'q)",
-       "right": "Nala"
+       "right": "Nala",
+       "speakAnswer": "Nala"
       },
       {
        "left": "B — to'qroq, boshining tepasida tik soch bor",
-       "right": "Simba"
+       "right": "Simba",
+       "speakAnswer": "Simba"
       }
      ]
     },
@@ -55,7 +57,8 @@
         "✓ FILMDA BOR",
         "✗ FILMDA YO'Q"
        ],
-       "whyUz": "✓ RAFIKI — mandril maymun, filmning muhim\npersonaji.\n\nU Simbani qirol deb e'lon qiladi va keyin\nunga otasini eslatadi."
+       "whyUz": "✓ RAFIKI — mandril maymun, filmning muhim\npersonaji.\n\nU Simbani qirol deb e'lon qiladi va keyin\nunga otasini eslatadi.",
+       "speakAnswer": "✓ FILMDA BOR"
       },
       {
        "prompt": "dogs",
@@ -65,7 +68,8 @@
         "✗ FILMDA YO'Q",
         "✓ FILMDA BOR"
        ],
-       "whyUz": "✗ It — UY hayvoni, yovvoyi savannada yo'q.\n\n⚠ Filmda GIYENALAR bor — ular itga\nO'XSHAYDI, lekin IT EMAS!\n\n'a hyena' = giyena."
+       "whyUz": "✗ It — UY hayvoni, yovvoyi savannada yo'q.\n\n⚠ Filmda GIYENALAR bor — ular itga\nO'XSHAYDI, lekin IT EMAS!\n\n'a hyena' = giyena.",
+       "speakAnswer": "✗ FILMDA YO'Q"
       },
       {
        "prompt": "zebras",
@@ -75,7 +79,8 @@
         "✓ FILMDA BOR",
         "✗ FILMDA YO'Q"
        ],
-       "whyUz": "✓ 'Circle of Life' ochilish sahnasida\nko'rinadi.\n\n⚠ ZEBRA bor, lekin OT (horse) yo'q — ular\no'xshash, lekin BOSHQA hayvon."
+       "whyUz": "✓ 'Circle of Life' ochilish sahnasida\nko'rinadi.\n\n⚠ ZEBRA bor, lekin OT (horse) yo'q — ular\no'xshash, lekin BOSHQA hayvon.",
+       "speakAnswer": "✓ FILMDA BOR"
       },
       {
        "prompt": "crocodiles",
@@ -85,7 +90,8 @@
         "✗ FILMDA YO'Q",
         "✓ FILMDA BOR"
        ],
-       "whyUz": "✗ Filmda timsoh muhim sahnada uchramaydi.\n\n⚠ Bu bandda TO'LIQ ISHONCH YO'Q — film uzun\nva kitob javobni bosmagan. Lekin timsoh\nfilmning esda qoladigan qismlarida yo'q."
+       "whyUz": "✗ Filmda timsoh muhim sahnada uchramaydi.\n\n⚠ Bu bandda TO'LIQ ISHONCH YO'Q — film uzun\nva kitob javobni bosmagan. Lekin timsoh\nfilmning esda qoladigan qismlarida yo'q.",
+       "speakAnswer": "✗ FILMDA YO'Q"
       },
       {
        "prompt": "goats",
@@ -95,7 +101,8 @@
         "✗ FILMDA YO'Q",
         "✓ FILMDA BOR"
        ],
-       "whyUz": "✗ Echki — UY hayvoni, Afrika savannasida\nyovvoyi holda yo'q.\n\nSavannada antilopa va gazella bor."
+       "whyUz": "✗ Echki — UY hayvoni, Afrika savannasida\nyovvoyi holda yo'q.\n\nSavannada antilopa va gazella bor.",
+       "speakAnswer": "✗ FILMDA YO'Q"
       },
       {
        "prompt": "lions",
@@ -105,7 +112,8 @@
         "✓ FILMDA BOR",
         "✗ FILMDA YO'Q"
        ],
-       "whyUz": "✓ Butun film SHERLAR haqida!\n\nSimba, Nala, Mufasa, Skar, Sarabi —\nhammasi sher.\n\nFilm nomi ham 'The LION King'."
+       "whyUz": "✓ Butun film SHERLAR haqida!\n\nSimba, Nala, Mufasa, Skar, Sarabi —\nhammasi sher.\n\nFilm nomi ham 'The LION King'.",
+       "speakAnswer": "✓ FILMDA BOR"
       },
       {
        "prompt": "elephants",
@@ -115,7 +123,8 @@
         "✓ FILMDA BOR",
         "✗ FILMDA YO'Q"
        ],
-       "whyUz": "✓ 'Circle of Life' sahnasida ko'rinadi.\n\n⚠ Yana FILLAR QABRISTONI ('the ELEPHANTS'\ngraveyard') — 3-mashqning 2-bandi aynan shu\nhaqida."
+       "whyUz": "✓ 'Circle of Life' sahnasida ko'rinadi.\n\n⚠ Yana FILLAR QABRISTONI ('the ELEPHANTS'\ngraveyard') — 3-mashqning 2-bandi aynan shu\nhaqida.",
+       "speakAnswer": "✓ FILMDA BOR"
       },
       {
        "prompt": "deer",
@@ -125,7 +134,8 @@
         "✗ FILMDA YO'Q",
         "✓ FILMDA BOR"
        ],
-       "whyUz": "✗ GEOGRAFIK TUZOQ: kiyiklar Afrika\nsavannasida yashamaydi.\n\nU yerda ANTILOPA va GAZELLA bor.\n\n⚠ 'deer' — birlikda ham, ko'plikda ham BIR\nXIL ('deers' XATO)."
+       "whyUz": "✗ GEOGRAFIK TUZOQ: kiyiklar Afrika\nsavannasida yashamaydi.\n\nU yerda ANTILOPA va GAZELLA bor.\n\n⚠ 'deer' — birlikda ham, ko'plikda ham BIR\nXIL ('deers' XATO).",
+       "speakAnswer": "✗ FILMDA YO'Q"
       },
       {
        "prompt": "giraffes",
@@ -135,7 +145,8 @@
         "✓ FILMDA BOR",
         "✗ FILMDA YO'Q"
        ],
-       "whyUz": "✓ 'Circle of Life' ochilish sahnasida\nko'rinadi.\n\n⚠ 3-mashqning 2-bandida kitob ataylab\n'the GIRAFFE'S graveyard' deb xato yozgan —\naslida FILLAR qabristoni."
+       "whyUz": "✓ 'Circle of Life' ochilish sahnasida\nko'rinadi.\n\n⚠ 3-mashqning 2-bandida kitob ataylab\n'the GIRAFFE'S graveyard' deb xato yozgan —\naslida FILLAR qabristoni.",
+       "speakAnswer": "✓ FILMDA BOR"
       },
       {
        "prompt": "dolphins",
@@ -145,7 +156,8 @@
         "✗ FILMDA YO'Q",
         "✓ FILMDA BOR"
        ],
-       "whyUz": "✗ GEOGRAFIK TUZOQ: delfinlar DENGIZDA\nyashaydi.\n\nFilm quruqlikda — Afrika savannasida bo'lib\no'tadi."
+       "whyUz": "✗ GEOGRAFIK TUZOQ: delfinlar DENGIZDA\nyashaydi.\n\nFilm quruqlikda — Afrika savannasida bo'lib\no'tadi.",
+       "speakAnswer": "✗ FILMDA YO'Q"
       },
       {
        "prompt": "tigers",
@@ -155,7 +167,8 @@
         "✗ FILMDA YO'Q",
         "✓ FILMDA BOR"
        ],
-       "whyUz": "✗ ENG MUHIM GEOGRAFIK TUZOQ!\n\n⚠ Yo'lbarslar OSIYODA yashaydi, Afrikada\nUMUMAN YO'Q.\n\nSher va yo'lbars — ikkalasi ham mushuksimon,\nlekin boshqa qit'ada."
+       "whyUz": "✗ ENG MUHIM GEOGRAFIK TUZOQ!\n\n⚠ Yo'lbarslar OSIYODA yashaydi, Afrikada\nUMUMAN YO'Q.\n\nSher va yo'lbars — ikkalasi ham mushuksimon,\nlekin boshqa qit'ada.",
+       "speakAnswer": "✗ FILMDA YO'Q"
       },
       {
        "prompt": "horses",
@@ -165,7 +178,8 @@
         "✗ FILMDA YO'Q",
         "✓ FILMDA BOR"
        ],
-       "whyUz": "✗ Otlar yovvoyi savannada yo'q.\n\n⚠ ZEBRA bor — o'xshash, lekin BOSHQA hayvon.\n\n(9-mashqning 5-bandida 'as ... as a horse'\no'xshatishi bor.)"
+       "whyUz": "✗ Otlar yovvoyi savannada yo'q.\n\n⚠ ZEBRA bor — o'xshash, lekin BOSHQA hayvon.\n\n(9-mashqning 5-bandida 'as ... as a horse'\no'xshatishi bor.)",
+       "speakAnswer": "✗ FILMDA YO'Q"
       }
      ]
     },
@@ -230,7 +244,8 @@
         "✓ SHERDA BOR",
         "✗ SHERDA YO'Q"
        ],
-       "whyUz": "✓ Sherning ENG MASHHUR belgisi!\n\n⚠ Faqat ERKAK sherlarda bo'ladi — bu\n1-mashqning kaliti (Simbada bor, Nalada\nyo'q).\n\n⚠ Otda ham 'mane' bor (bo'yindagi soch)."
+       "whyUz": "✓ Sherning ENG MASHHUR belgisi!\n\n⚠ Faqat ERKAK sherlarda bo'ladi — bu\n1-mashqning kaliti (Simbada bor, Nalada\nyo'q).\n\n⚠ Otda ham 'mane' bor (bo'yindagi soch).",
+       "speakAnswer": "✓ SHERDA BOR"
       },
       {
        "prompt": "tail (dum)",
@@ -240,7 +255,8 @@
         "✓ SHERDA BOR",
         "✗ SHERDA YO'Q"
        ],
-       "whyUz": "✓ Sherda uzun dum bor, uchida junli popuk.\n\nBu — sherni boshqa mushuksimonlardan\najratadigan belgi."
+       "whyUz": "✓ Sherda uzun dum bor, uchida junli popuk.\n\nBu — sherni boshqa mushuksimonlardan\najratadigan belgi.",
+       "speakAnswer": "✓ SHERDA BOR"
       },
       {
        "prompt": "horn (shox)",
@@ -250,7 +266,8 @@
         "✗ SHERDA YO'Q",
         "✓ SHERDA BOR"
        ],
-       "whyUz": "✗ Shox KIYIK, ECHKI, KARKIDON, SIGIRda\nbo'ladi.\n\nSherda — YIRTQICH hayvonda — shox yo'q.\nUning quroli TIRNOQ va TISH."
+       "whyUz": "✗ Shox KIYIK, ECHKI, KARKIDON, SIGIRda\nbo'ladi.\n\nSherda — YIRTQICH hayvonda — shox yo'q.\nUning quroli TIRNOQ va TISH.",
+       "speakAnswer": "✗ SHERDA YO'Q"
       },
       {
        "prompt": "paw (panja)",
@@ -260,7 +277,8 @@
         "✓ SHERDA BOR",
         "✗ SHERDA YO'Q"
        ],
-       "whyUz": "✓ Mushuksimonlarning yumshoq panjasi.\n\n1-mashqdagi rasmda ikkala sher bolasining\npanjalari aniq ko'rinadi."
+       "whyUz": "✓ Mushuksimonlarning yumshoq panjasi.\n\n1-mashqdagi rasmda ikkala sher bolasining\npanjalari aniq ko'rinadi.",
+       "speakAnswer": "✓ SHERDA BOR"
       },
       {
        "prompt": "beak (tumshuq)",
@@ -270,7 +288,8 @@
         "✗ SHERDA YO'Q",
         "✓ SHERDA BOR"
        ],
-       "whyUz": "✗ Tumshuq QUSHDA bo'ladi.\n\n⚠ 3-mashqning 4-bandi: 'Zazu is a BIRD' —\ntumshuq UNDA bor, sherda yo'q!"
+       "whyUz": "✗ Tumshuq QUSHDA bo'ladi.\n\n⚠ 3-mashqning 4-bandi: 'Zazu is a BIRD' —\ntumshuq UNDA bor, sherda yo'q!",
+       "speakAnswer": "✗ SHERDA YO'Q"
       },
       {
        "prompt": "feather (pat)",
@@ -280,7 +299,8 @@
         "✗ SHERDA YO'Q",
         "✓ SHERDA BOR"
        ],
-       "whyUz": "✗ Pat QUSHDA bo'ladi.\n\n⚠ 3-nazorat testining 2-mashqi ham shu\nhaqida edi: 'Have mice got FEATHERS?'\n\nSherda pat emas, JUN (fur) bor."
+       "whyUz": "✗ Pat QUSHDA bo'ladi.\n\n⚠ 3-nazorat testining 2-mashqi ham shu\nhaqida edi: 'Have mice got FEATHERS?'\n\nSherda pat emas, JUN (fur) bor.",
+       "speakAnswer": "✗ SHERDA YO'Q"
       },
       {
        "prompt": "hoof (tuyoq)",
@@ -290,7 +310,8 @@
         "✗ SHERDA YO'Q",
         "✓ SHERDA BOR"
        ],
-       "whyUz": "✗ Tuyoq OT, ZEBRA, SIGIRda bo'ladi.\n\n⚠ 'hoof' ning ko'pligi — HOOVES (noto'g'ri\nko'plik).\nO'xshash: leaf → leaves, wolf → wolves,\nknife → knives."
+       "whyUz": "✗ Tuyoq OT, ZEBRA, SIGIRda bo'ladi.\n\n⚠ 'hoof' ning ko'pligi — HOOVES (noto'g'ri\nko'plik).\nO'xshash: leaf → leaves, wolf → wolves,\nknife → knives.",
+       "speakAnswer": "✗ SHERDA YO'Q"
       },
       {
        "prompt": "claw (tirnoq)",
@@ -300,7 +321,8 @@
         "✓ SHERDA BOR",
         "✗ SHERDA YO'Q"
        ],
-       "whyUz": "✓ Panja ichidagi O'TKIR tirnoq.\n\nSher uni YASHIRA oladi (mushuk kabi).\n\n⚠ 'claw' QUSHDA ham bor — lekin bu mashqda\nfaqat sher haqida so'ralgan."
+       "whyUz": "✓ Panja ichidagi O'TKIR tirnoq.\n\nSher uni YASHIRA oladi (mushuk kabi).\n\n⚠ 'claw' QUSHDA ham bor — lekin bu mashqda\nfaqat sher haqida so'ralgan.",
+       "speakAnswer": "✓ SHERDA BOR"
       },
       {
        "prompt": "fur (jun, mo'yna)",
@@ -310,7 +332,8 @@
         "✓ SHERDA BOR",
         "✗ SHERDA YO'Q"
        ],
-       "whyUz": "✓ Sherning tanasi JUN bilan qoplangan.\n\n⚠ 'fur' — SANALMAYDIGAN:\n'The lion has thick FUR.' ✓\n('furs' — mo'ynali kiyimlar, boshqa ma'no)"
+       "whyUz": "✓ Sherning tanasi JUN bilan qoplangan.\n\n⚠ 'fur' — SANALMAYDIGAN:\n'The lion has thick FUR.' ✓\n('furs' — mo'ynali kiyimlar, boshqa ma'no)",
+       "speakAnswer": "✓ SHERDA BOR"
       }
      ]
     },
@@ -359,11 +382,13 @@
      "tasks": [
       {
        "left": "O'rtadagi KATTA, semiz hayvon",
-       "right": "Pumbaa (a warthog — cho'chqa)"
+       "right": "Pumbaa (a warthog — cho'chqa)",
+       "speakAnswer": "Pumbaa"
       },
       {
        "left": "O'ngdagi KICHIK, ozg'in, tik turgan hayvon",
-       "right": "Timon (a meerkat — surikat)"
+       "right": "Timon (a meerkat — surikat)",
+       "speakAnswer": "Timon"
       }
      ]
     },
@@ -386,7 +411,8 @@
         "✓ YEYDI",
         "✗ YEMAYDI"
        ],
-       "whyUz": "✓ ASOSIY JAVOB!\n\n'HAKUNA MATATA' qo'shig'ida Timon va Pumbaa\nSimbaga HASHAROT yeyishni o'rgatadi:\nqurtlar (grubs), qo'ng'izlar, chumolilar.\n\nTimonning mashhur gapi: 'Slimy, yet\nsatisfying.'"
+       "whyUz": "✓ ASOSIY JAVOB!\n\n'HAKUNA MATATA' qo'shig'ida Timon va Pumbaa\nSimbaga HASHAROT yeyishni o'rgatadi:\nqurtlar (grubs), qo'ng'izlar, chumolilar.\n\nTimonning mashhur gapi: 'Slimy, yet\nsatisfying.'",
+       "speakAnswer": "✓ YEYDI"
       },
       {
        "prompt": "meat",
@@ -396,7 +422,8 @@
         "✗ YEMAYDI",
         "✓ YEYDI"
        ],
-       "whyUz": "✗ ENG MUHIM NUQTA!\n\nSimba SHER — tabiatan GO'SHT yeydi. Lekin\nTimon va Pumbaa unga go'sht o'rniga HASHAROT\nyeyishni o'rgatadi.\n\nBu — filmning g'oyasi: Simba o'z tabiatidan\nuzoqlashadi."
+       "whyUz": "✗ ENG MUHIM NUQTA!\n\nSimba SHER — tabiatan GO'SHT yeydi. Lekin\nTimon va Pumbaa unga go'sht o'rniga HASHAROT\nyeyishni o'rgatadi.\n\nBu — filmning g'oyasi: Simba o'z tabiatidan\nuzoqlashadi.",
+       "speakAnswer": "✗ YEMAYDI"
       },
       {
        "prompt": "berries",
@@ -406,7 +433,8 @@
         "✗ YEMAYDI",
         "✓ YEYDI"
        ],
-       "whyUz": "⚠ Bu bandda TO'LIQ ISHONCH YO'Q.\n\nSurikat va cho'chqa tabiatda meva ham yeydi,\nlekin FILMDA ochiq ko'rsatilmagan va kitob\njavobni bosmagan.\n\n'a berry' → 'berrIES' (undosh + y → i + es)."
+       "whyUz": "⚠ Bu bandda TO'LIQ ISHONCH YO'Q.\n\nSurikat va cho'chqa tabiatda meva ham yeydi,\nlekin FILMDA ochiq ko'rsatilmagan va kitob\njavobni bosmagan.\n\n'a berry' → 'berrIES' (undosh + y → i + es).",
+       "speakAnswer": "✗ YEMAYDI"
       },
       {
        "prompt": "honey",
@@ -416,7 +444,8 @@
         "✗ YEMAYDI",
         "✓ YEYDI"
        ],
-       "whyUz": "✗ Asalni AYIQ yoki odam yeydi; filmda bunday\nsahna yo'q.\n\n⚠ 'honey' — SANALMAYDIGAN\n('honeys' XATO)."
+       "whyUz": "✗ Asalni AYIQ yoki odam yeydi; filmda bunday\nsahna yo'q.\n\n⚠ 'honey' — SANALMAYDIGAN\n('honeys' XATO).",
+       "speakAnswer": "✗ YEMAYDI"
       },
       {
        "prompt": "fish",
@@ -426,7 +455,8 @@
         "✗ YEMAYDI",
         "✓ YEYDI"
        ],
-       "whyUz": "✗ Filmda baliq ovlash sahnasi yo'q.\n\n⚠ 'fish' ning ko'pligi — FISH (o'zgarmaydi,\n'deer' kabi).\n'a fish' = bitta baliq;\n'fish' = baliq go'shti (sanalmaydigan)."
+       "whyUz": "✗ Filmda baliq ovlash sahnasi yo'q.\n\n⚠ 'fish' ning ko'pligi — FISH (o'zgarmaydi,\n'deer' kabi).\n'a fish' = bitta baliq;\n'fish' = baliq go'shti (sanalmaydigan).",
+       "speakAnswer": "✗ YEMAYDI"
       },
       {
        "prompt": "apples",
@@ -436,7 +466,8 @@
         "✗ YEMAYDI",
         "✓ YEYDI"
        ],
-       "whyUz": "✗ Olma Afrika savannasida O'SMAYDI.\n\nBu — 2-mashqdagi geografik tuzoqlar bilan\nbir xil turdagi band."
+       "whyUz": "✗ Olma Afrika savannasida O'SMAYDI.\n\nBu — 2-mashqdagi geografik tuzoqlar bilan\nbir xil turdagi band.",
+       "speakAnswer": "✗ YEMAYDI"
       }
      ]
     },
@@ -460,7 +491,8 @@
         "Hakuna Tomato",
         "Hakuna Potato"
        ],
-       "whyUz": "'HAKUNA MATATA' — SUAHILI tilida:\n  hakuna = yo'q;  matata = muammolar\n→ 'MUAMMO YO'Q!' (inglizcha: 'No worries!')\n\n⚠ B va C — HAZIL variantlari (tomato =\npomidor, potato = kartoshka). Kitob ataylab\nOVOZI O'XSHASH so'zlarni qo'ygan:\nmaTAta / toMAto / poTAto."
+       "whyUz": "'HAKUNA MATATA' — SUAHILI tilida:\n  hakuna = yo'q;  matata = muammolar\n→ 'MUAMMO YO'Q!' (inglizcha: 'No worries!')\n\n⚠ B va C — HAZIL variantlari (tomato =\npomidor, potato = kartoshka). Kitob ataylab\nOVOZI O'XSHASH so'zlarni qo'ygan:\nmaTAta / toMAto / poTAto.",
+       "speakAnswer": "Hakuna Matata"
       },
       {
        "prompt": "Egalik shakli: 'Pumbaa and Timon'S motto' yoki 'Pumbaa'S and Timon'S mottoes'?",
@@ -470,7 +502,8 @@
         "Pumbaa and Timon'S motto",
         "Pumbaa'S and Timon'S motto"
        ],
-       "whyUz": "⚠ IKKI odam BIRGALIKDA egalik qilsa, faqat\nOXIRGISIGA apostrof:\n  'Pumbaa and Timon'S motto' ✓ (bitta umumiy\n  shior)\n\nHar birida ALOHIDA bo'lsa, ikkalasiga:\n  Coursebook 113-bet: 'David'S and Sandra'S\n  MEMORIES' (har birining o'z xotirasi)."
+       "whyUz": "⚠ IKKI odam BIRGALIKDA egalik qilsa, faqat\nOXIRGISIGA apostrof:\n  'Pumbaa and Timon'S motto' ✓ (bitta umumiy\n  shior)\n\nHar birida ALOHIDA bo'lsa, ikkalasiga:\n  Coursebook 113-bet: 'David'S and Sandra'S\n  MEMORIES' (har birining o'z xotirasi).",
+       "speakAnswer": "Pumbaa and Timon'S motto"
       }
      ]
     },
@@ -496,7 +529,8 @@
         "sly"
        ],
        "whyUz": "'as QUIET as a mouse' — juda MASHHUR turg'un\no'xshatish.\n\nSichqon ovozsiz yuradi.\n\n⚠ O'zbekchada ham AYNAN shunday: 'sichqondek\njim'.",
-       "speak": "1  as ......................... as a mouse"
+       "speak": "1  as ......................... as a mouse",
+       "speakAnswer": "quiet"
       },
       {
        "prompt": "2  as ......................... as a fox",
@@ -509,7 +543,8 @@
         "brave"
        ],
        "whyUz": "'as SLY as a fox' — juda MASHHUR turg'un\no'xshatish.\n\n'sly' = ayyor, hiylagar.\n\n⚠ O'zbekchada ham AYNAN shunday: 'tulkidek\nayyor'.",
-       "speak": "2  as ......................... as a fox"
+       "speak": "2  as ......................... as a fox",
+       "speakAnswer": "sly"
       },
       {
        "prompt": "3  as ......................... as a pig",
@@ -522,7 +557,8 @@
         "brave"
        ],
        "whyUz": "'as FAT as a pig' — mashhur o'xshatish.\n\n⚠ 6-mashq bilan bog'liq: PUMBAA — cho'chqa\n(warthog), u KATTA va SEMIZ.",
-       "speak": "3  as ......................... as a pig"
+       "speak": "3  as ......................... as a pig",
+       "speakAnswer": "fat"
       },
       {
        "prompt": "4  as ......................... as an elephant",
@@ -535,7 +571,8 @@
         "brave"
        ],
        "whyUz": "'as STRONG as an elephant' — fil eng kuchli\nquruqlik hayvoni.\n\n⚠ Kitob 'AN' ni allaqachon bosgan (elephant\nunli bilan boshlanadi) — bu ISHORA.\n\n⚠ Diqqat: 'as STRONG as a HORSE' ham mashhur\n— lekin bu yerda 'strong' filga ketgan.",
-       "speak": "4  as ......................... as an elephant"
+       "speak": "4  as ......................... as an elephant",
+       "speakAnswer": "strong"
       },
       {
        "prompt": "5  as ......................... as a horse",
@@ -548,7 +585,8 @@
         "sly"
        ],
        "whyUz": "⚠ KITOBNING G'ALATI JUFTLIGI!\n\nQolgan yagona so'z → BRAVE. Lekin\n'as BRAVE as a HORSE' ingliz tilida TURG'UN\no'xshatish EMAS.\n\nTABIIY juftliklar:\n  'as STRONG as a HORSE' (otdek kuchli)\n  'as BRAVE as a LION' (sherdek jasur)\n\nKitob 'strong' ni filga bergani uchun otga\n'brave' qolgan. Buni turg'un ibora deb\nYODLAMANG!",
-       "speak": "5  as ......................... as a horse"
+       "speak": "5  as ......................... as a horse",
+       "speakAnswer": "brave"
       }
      ]
     },

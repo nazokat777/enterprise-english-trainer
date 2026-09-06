@@ -34,7 +34,8 @@
         "dolphin trainer",
         "shark trainer"
        ],
-       "whyUz": "Rasmda delfin bilan ishlaydi. Matnda ham: 'Bob Ellis, 29, is a dolphin trainer'. Akula (shark) o'rgatilmaydi."
+       "whyUz": "Rasmda delfin bilan ishlaydi. Matnda ham: 'Bob Ellis, 29, is a dolphin trainer'. Akula (shark) o'rgatilmaydi.",
+       "speakAnswer": "dolphin trainer"
       },
       {
        "prompt": "2  Bob works at a(n) ____ .",
@@ -44,7 +45,8 @@
         "aquarium",
         "swimming-pool"
        ],
-       "whyUz": "Matnda: 'He arrives at the aquarium at half past six'. Basseyn — u faqat suzish uchun boradi."
+       "whyUz": "Matnda: 'He arrives at the aquarium at half past six'. Basseyn — u faqat suzish uchun boradi.",
+       "speakAnswer": "aquarium"
       },
       {
        "prompt": "3  Bob usually ____ .",
@@ -54,7 +56,8 @@
         "feeds and trains the dolphins",
         "cleans the aquarium"
        ],
-       "whyUz": "U murabbiy: delfinlarni boqadi va o'rgatadi. Akvarium tozalash — boshqa odamning ishi."
+       "whyUz": "U murabbiy: delfinlarni boqadi va o'rgatadi. Akvarium tozalash — boshqa odamning ishi.",
+       "speakAnswer": "feeds and trains the dolphins"
       },
       {
        "prompt": "4  His job is ____ .",
@@ -64,7 +67,8 @@
         "tiring",
         "boring"
        ],
-       "whyUz": "Matnda: 'It is tiring though, as I work long hours'. U ishini YOQTIRADI — demak zerikarli emas."
+       "whyUz": "Matnda: 'It is tiring though, as I work long hours'. U ishini YOQTIRADI — demak zerikarli emas.",
+       "speakAnswer": "tiring"
       },
       {
        "prompt": "5  An early bird is someone who ____ .",
@@ -74,7 +78,8 @@
         "gets up early",
         "gets up late"
        ],
-       "whyUz": "'early' = erta. Erta turadigan odam."
+       "whyUz": "'early' = erta. Erta turadigan odam.",
+       "speakAnswer": "gets up early"
       },
       {
        "prompt": "6  An owl is a bird which sleeps ____ .",
@@ -84,7 +89,8 @@
         "during the day",
         "during the night"
        ],
-       "whyUz": "Boyqush KECHASI ov qiladi, demak KUNDUZI uxlaydi. Shuning uchun kech yotadigan odamni 'night owl' deyishadi."
+       "whyUz": "Boyqush KECHASI ov qiladi, demak KUNDUZI uxlaydi. Shuning uchun kech yotadigan odamni 'night owl' deyishadi.",
+       "speakAnswer": "during the day"
       }
      ]
     },
@@ -187,73 +193,85 @@
        "prompt": "1  ____ walks",
        "answer": "long",
        "whyUz": "'long walks' = uzoq sayrlar. Matnda: 'going for long walks'.",
-       "speak": "1  ____ walks"
+       "speak": "1  ____ walks",
+       "speakAnswer": "long"
       },
       {
        "prompt": "2  ____ bird",
        "answer": "an early",
        "whyUz": "'an early bird' = erta turuvchi odam. Unit sarlavhasidan.",
-       "speak": "2  ____ bird"
+       "speak": "2  ____ bird",
+       "speakAnswer": "an early"
       },
       {
        "prompt": "3  ____ owl",
        "answer": "a night",
        "whyUz": "'a night owl' = kech yotuvchi odam.",
-       "speak": "3  ____ owl"
+       "speak": "3  ____ owl",
+       "speakAnswer": "a night"
       },
       {
        "prompt": "4  He ____ a shower.",
        "answer": "has",
        "whyUz": "'have a shower' = dush qabul qilmoq. 3-shaxs → has.",
-       "speak": "4  He ____ a shower."
+       "speak": "4  He ____ a shower.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "5  He ____ dressed.",
        "answer": "gets",
        "whyUz": "'get dressed' = kiyinmoq. 3-shaxs → gets.",
-       "speak": "5  He ____ dressed."
+       "speak": "5  He ____ dressed.",
+       "speakAnswer": "gets"
       },
       {
        "prompt": "6  He ____ the bus.",
        "answer": "catches",
        "whyUz": "'catch the bus' = avtobusga chiqmoq. -ch → catchES.",
-       "speak": "6  He ____ the bus."
+       "speak": "6  He ____ the bus.",
+       "speakAnswer": "catches"
       },
       {
        "prompt": "7  He ____ home.",
        "answer": "goes",
        "whyUz": "'go home' — 'to' YO'Q! -o → goES.",
-       "speak": "7  He ____ home."
+       "speak": "7  He ____ home.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "8  He ____ at the aquarium.",
        "answer": "arrives",
        "whyUz": "'arrive AT' = yetib bormoq (bino, kichik joy).",
-       "speak": "8  He ____ at the aquarium."
+       "speak": "8  He ____ at the aquarium.",
+       "speakAnswer": "arrives"
       },
       {
        "prompt": "9  He ____ TV.",
        "answer": "watches",
        "whyUz": "'watch TV' = televizor ko'rmoq. -ch → watchES. Artikl YO'Q.",
-       "speak": "9  He ____ TV."
+       "speak": "9  He ____ TV.",
+       "speakAnswer": "watches"
       },
       {
        "prompt": "10  He ____ bed early.",
        "answer": "goes to",
        "whyUz": "'go TO bed' = yotmoq. Bu yerda 'to' BOR, 'the' esa yo'q.",
-       "speak": "10  He ____ bed early."
+       "speak": "10  He ____ bed early.",
+       "speakAnswer": "goes to"
       },
       {
        "prompt": "11  ____ time",
        "answer": "free",
        "whyUz": "'free time' = bo'sh vaqt.",
-       "speak": "11  ____ time"
+       "speak": "11  ____ time",
+       "speakAnswer": "free"
       },
       {
        "prompt": "12  He is ____ sharks.",
        "answer": "afraid of",
        "whyUz": "'be afraid OF' = ...dan qo'rqmoq. 'of' SHART.",
-       "speak": "12  He is ____ sharks."
+       "speak": "12  He is ____ sharks.",
+       "speakAnswer": "afraid of"
       }
      ]
     },
@@ -272,73 +290,85 @@
        "prompt": "long walks",
        "answer": "Bob loves going for long walks in the countryside.",
        "promptUz": "Bob qishloqda uzoq sayr qilishni yaxshi ko'radi.",
-       "speak": "long walks"
+       "speak": "long walks",
+       "speakAnswer": "Bob loves going for long walks in the countryside."
       },
       {
        "prompt": "an early bird",
        "answer": "Bob is an early bird because he gets up at five o'clock.",
        "promptUz": "Bob erta turuvchi odam, chunki soat beshda turadi.",
-       "speak": "an early bird"
+       "speak": "an early bird",
+       "speakAnswer": "Bob is an early bird because he gets up at five o'clock."
       },
       {
        "prompt": "a night owl",
        "answer": "My brother is a night owl. He goes to bed at two o'clock.",
        "promptUz": "Akam kech yotuvchi odam. U soat ikkida yotadi.",
-       "speak": "a night owl"
+       "speak": "a night owl",
+       "speakAnswer": "My brother is a night owl. He goes to bed at two o'clock."
       },
       {
        "prompt": "has a shower",
        "answer": "He has a shower every morning.",
        "promptUz": "U har ertalab dush qabul qiladi.",
-       "speak": "has a shower"
+       "speak": "has a shower",
+       "speakAnswer": "He has a shower every morning."
       },
       {
        "prompt": "gets dressed",
        "answer": "After his shower, he gets dressed.",
        "promptUz": "Dushdan keyin u kiyinadi.",
-       "speak": "gets dressed"
+       "speak": "gets dressed",
+       "speakAnswer": "After his shower, he gets dressed."
       },
       {
        "prompt": "catches the bus",
        "answer": "He catches the bus to work at six o'clock.",
        "promptUz": "U soat oltida ishga avtobusga chiqadi.",
-       "speak": "catches the bus"
+       "speak": "catches the bus",
+       "speakAnswer": "He catches the bus to work at six o'clock."
       },
       {
        "prompt": "goes home",
        "answer": "He goes home at five o'clock in the afternoon.",
        "promptUz": "U kunduzi soat beshda uyga ketadi.",
-       "speak": "goes home"
+       "speak": "goes home",
+       "speakAnswer": "He goes home at five o'clock in the afternoon."
       },
       {
        "prompt": "arrives at",
        "answer": "He arrives at the aquarium at half past six.",
        "promptUz": "U akvariumga olti yarimda yetib boradi.",
-       "speak": "arrives at"
+       "speak": "arrives at",
+       "speakAnswer": "He arrives at the aquarium at half past six."
       },
       {
        "prompt": "watches TV",
        "answer": "In the evening, he watches TV.",
        "promptUz": "Kechqurun u televizor ko'radi.",
-       "speak": "watches TV"
+       "speak": "watches TV",
+       "speakAnswer": "In the evening, he watches TV."
       },
       {
        "prompt": "goes to bed",
        "answer": "He goes to bed early because he gets up early.",
        "promptUz": "U erta yotadi, chunki erta turadi.",
-       "speak": "goes to bed"
+       "speak": "goes to bed",
+       "speakAnswer": "He goes to bed early because he gets up early."
       },
       {
        "prompt": "free time",
        "answer": "In his free time, he goes swimming.",
        "promptUz": "Bo'sh vaqtida u suzishga boradi.",
-       "speak": "free time"
+       "speak": "free time",
+       "speakAnswer": "In his free time, he goes swimming."
       },
       {
        "prompt": "afraid of",
        "answer": "He is afraid of sharks, so he never swims in the sea.",
        "promptUz": "U akuladan qo'rqadi, shuning uchun dengizda hech qachon suzmaydi.",
-       "speak": "afraid of"
+       "speak": "afraid of",
+       "speakAnswer": "He is afraid of sharks, so he never swims in the sea."
       }
      ]
     }
@@ -374,7 +404,8 @@
         "tired",
         "satisfied"
        ],
-       "speak": "Picture 1 — a young woman with a wide, warm smile"
+       "speak": "Picture 1 — a young woman with a wide, warm smile",
+       "speakAnswer": "happy"
       },
       {
        "prompt": "Picture 2 — a man in a suit with a blank, uninterested expression, holding a bag",
@@ -387,7 +418,8 @@
         "tired",
         "satisfied"
        ],
-       "speak": "Picture 2 — a man in a suit with a blank, uninterested expression, holding a bag"
+       "speak": "Picture 2 — a man in a suit with a blank, uninterested expression, holding a bag",
+       "speakAnswer": "bored"
       },
       {
        "prompt": "Picture 3 — a man pulling at his face, grimacing under pressure",
@@ -400,7 +432,8 @@
         "tired",
         "satisfied"
        ],
-       "speak": "Picture 3 — a man pulling at his face, grimacing under pressure"
+       "speak": "Picture 3 — a man pulling at his face, grimacing under pressure",
+       "speakAnswer": "stressed"
       },
       {
        "prompt": "Picture 4 — a man with his hand on his forehead, eyes closed, exhausted",
@@ -413,7 +446,8 @@
         "tired",
         "satisfied"
        ],
-       "speak": "Picture 4 — a man with his hand on his forehead, eyes closed, exhausted"
+       "speak": "Picture 4 — a man with his hand on his forehead, eyes closed, exhausted",
+       "speakAnswer": "tired"
       },
       {
        "prompt": "Picture 5 — a well-dressed man standing calmly and confidently",
@@ -426,7 +460,8 @@
         "tired",
         "satisfied"
        ],
-       "speak": "Picture 5 — a well-dressed man standing calmly and confidently"
+       "speak": "Picture 5 — a well-dressed man standing calmly and confidently",
+       "speakAnswer": "satisfied"
       }
      ]
     },
@@ -445,25 +480,29 @@
        "prompt": "tired ← I work long hours",
        "answer": "I feel tired because I work long hours.",
        "promptUz": "O'zimni charchagan his qilaman, chunki ko'p soat ishlayman.",
-       "speak": "tired ← I work long hours"
+       "speak": "tired ← I work long hours",
+       "speakAnswer": "I feel tired because I work long hours."
       },
       {
        "prompt": "satisfied ← I earn a lot of money",
        "answer": "I feel satisfied because I earn a lot of money.",
        "promptUz": "O'zimni mamnun his qilaman, chunki ko'p pul topaman.",
-       "speak": "satisfied ← I earn a lot of money"
+       "speak": "satisfied ← I earn a lot of money",
+       "speakAnswer": "I feel satisfied because I earn a lot of money."
       },
       {
        "prompt": "stressed ← I talk to angry customers",
        "answer": "I feel stressed because I talk to angry customers.",
        "promptUz": "O'zimni asabiy his qilaman, chunki jahldor mijozlar bilan gaplashaman.",
-       "speak": "stressed ← I talk to angry customers"
+       "speak": "stressed ← I talk to angry customers",
+       "speakAnswer": "I feel stressed because I talk to angry customers."
       },
       {
        "prompt": "bored ← I do the same things every day",
        "answer": "I feel bored because I do the same things every day.",
        "promptUz": "O'zimni zerikkan his qilaman, chunki har kuni bir xil ish qilaman.",
-       "speak": "bored ← I do the same things every day"
+       "speak": "bored ← I do the same things every day",
+       "speakAnswer": "I feel bored because I do the same things every day."
       }
      ]
     }
@@ -491,57 +530,68 @@
       {
        "prompt": "2 — ?",
        "answer": "February",
-       "whyUz": "Ikkinchi oy. Eng qisqa oy (28 yoki 29 kun)."
+       "whyUz": "Ikkinchi oy. Eng qisqa oy (28 yoki 29 kun).",
+       "speakAnswer": "February"
       },
       {
        "prompt": "3 — ?",
        "answer": "March",
-       "whyUz": "Uchinchi oy. Mars xudosi nomidan. Bahor boshlanishi."
+       "whyUz": "Uchinchi oy. Mars xudosi nomidan. Bahor boshlanishi.",
+       "speakAnswer": "March"
       },
       {
        "prompt": "4 — ?",
        "answer": "April",
-       "whyUz": "To'rtinchi oy."
+       "whyUz": "To'rtinchi oy.",
+       "speakAnswer": "April"
       },
       {
        "prompt": "5 — ?",
        "answer": "May",
-       "whyUz": "Beshinchi oy. Eng qisqa nom."
+       "whyUz": "Beshinchi oy. Eng qisqa nom.",
+       "speakAnswer": "May"
       },
       {
        "prompt": "6 — ?",
        "answer": "June",
-       "whyUz": "Oltinchi oy. Yuno ma'budasi nomidan."
+       "whyUz": "Oltinchi oy. Yuno ma'budasi nomidan.",
+       "speakAnswer": "June"
       },
       {
        "prompt": "7 — ?",
        "answer": "July",
-       "whyUz": "Yettinchi oy. Yuliy Sezar nomidan."
+       "whyUz": "Yettinchi oy. Yuliy Sezar nomidan.",
+       "speakAnswer": "July"
       },
       {
        "prompt": "8 — ?",
        "answer": "August",
-       "whyUz": "Sakkizinchi oy. Imperator Avgust nomidan."
+       "whyUz": "Sakkizinchi oy. Imperator Avgust nomidan.",
+       "speakAnswer": "August"
       },
       {
        "prompt": "9 — ?",
        "answer": "September",
-       "whyUz": "To'qqizinchi oy. Lotincha 'septem' = yetti (qadimgi kalendarda 7-oy edi)."
+       "whyUz": "To'qqizinchi oy. Lotincha 'septem' = yetti (qadimgi kalendarda 7-oy edi).",
+       "speakAnswer": "September"
       },
       {
        "prompt": "10 — ?",
        "answer": "October",
-       "whyUz": "O'ninchi oy. 'octo' = sakkiz."
+       "whyUz": "O'ninchi oy. 'octo' = sakkiz.",
+       "speakAnswer": "October"
       },
       {
        "prompt": "11 — ?",
        "answer": "November",
-       "whyUz": "O'n birinchi oy. 'novem' = to'qqiz."
+       "whyUz": "O'n birinchi oy. 'novem' = to'qqiz.",
+       "speakAnswer": "November"
       },
       {
        "prompt": "12 — ?",
        "answer": "December",
-       "whyUz": "O'n ikkinchi oy. 'decem' = o'n."
+       "whyUz": "O'n ikkinchi oy. 'decem' = o'n.",
+       "speakAnswer": "December"
       }
      ]
     }
@@ -570,37 +620,43 @@
        "prompt": "c  10:00 pm =",
        "answer": "ten o'clock at night",
        "whyUz": "22:00 — kech. 'AT night' ('in the night' XATO!). To'liq soat → 'o'clock' bor.",
-       "speak": "c  10:00 pm ="
+       "speak": "c  10:00 pm =",
+       "speakAnswer": "ten o'clock at night"
       },
       {
        "prompt": "d  2:00 am =",
        "answer": "two o'clock in the morning",
        "whyUz": "02:00 — ertalab (am). 'in the midnight' XATO — midnight = 00:00.",
-       "speak": "d  2:00 am ="
+       "speak": "d  2:00 am =",
+       "speakAnswer": "two o'clock in the morning"
       },
       {
        "prompt": "e  8:30 am =",
        "answer": "half past eight in the morning",
        "whyUz": "30 daqiqa → 'half past'. 'o'clock' QO'SHILMAYDI!",
-       "speak": "e  8:30 am ="
+       "speak": "e  8:30 am =",
+       "speakAnswer": "half past eight in the morning"
       },
       {
        "prompt": "f  9:15 am =",
        "answer": "a quarter past nine in the morning",
        "whyUz": "15 daqiqa → 'a quarter past'. 'o'clock' QO'SHILMAYDI!",
-       "speak": "f  9:15 am ="
+       "speak": "f  9:15 am =",
+       "speakAnswer": "a quarter past nine in the morning"
       },
       {
        "prompt": "g  4:45 am =",
        "answer": "a quarter to five in the morning",
        "whyUz": "45 daqiqa → 'a quarter TO' va soat 4 dan 5 ga OSHADI. 'o'clock' yo'q.",
-       "speak": "g  4:45 am ="
+       "speak": "g  4:45 am =",
+       "speakAnswer": "a quarter to five in the morning"
       },
       {
        "prompt": "h  7:20 pm =",
        "answer": "twenty past seven in the evening",
        "whyUz": "20 daqiqa → 'twenty past'. 19:20 — kechqurun. 'o'clock' yo'q.",
-       "speak": "h  7:20 pm ="
+       "speak": "h  7:20 pm =",
+       "speakAnswer": "twenty past seven in the evening"
       }
      ]
     },
@@ -618,22 +674,26 @@
       {
        "prompt": "2:30 — raqamli shakli?",
        "answer": "two thirty",
-       "whyUz": "An'anaviysi 'half past two'. Raqamli: soat + daqiqa."
+       "whyUz": "An'anaviysi 'half past two'. Raqamli: soat + daqiqa.",
+       "speakAnswer": "two thirty"
       },
       {
        "prompt": "7:50 — an'anaviy shakli?",
        "answer": "ten to eight",
-       "whyUz": "60 − 50 = 10 qoldi → 'ten TO'. Soat 7 dan 8 ga OSHADI."
+       "whyUz": "60 − 50 = 10 qoldi → 'ten TO'. Soat 7 dan 8 ga OSHADI.",
+       "speakAnswer": "ten to eight"
       },
       {
        "prompt": "9:20 — raqamli shakli?",
        "answer": "nine twenty",
-       "whyUz": "An'anaviysi 'twenty past nine'. IMLO: t-w-e-n-t-y."
+       "whyUz": "An'anaviysi 'twenty past nine'. IMLO: t-w-e-n-t-y.",
+       "speakAnswer": "nine twenty"
       },
       {
        "prompt": "3:45 — an'anaviy shakli?",
        "answer": "a quarter to four",
-       "whyUz": "60 − 45 = 15 = chorak qoldi → 'a quarter TO FOUR'. Soat 3 dan 4 ga oshadi."
+       "whyUz": "60 − 45 = 15 = chorak qoldi → 'a quarter TO FOUR'. Soat 3 dan 4 ga oshadi.",
+       "speakAnswer": "a quarter to four"
       }
      ]
     },
@@ -652,25 +712,29 @@
        "prompt": "2  ____ / NOVEMBER / ____",
        "answer": "OCTOBER / DECEMBER",
        "whyUz": "Noyabr — 11-oy. Oldingisi oktabr (10), keyingisi dekabr (12).",
-       "speak": "2  ____ / NOVEMBER / ____"
+       "speak": "2  ____ / NOVEMBER / ____",
+       "speakAnswer": "OCTOBER / DECEMBER"
       },
       {
        "prompt": "3  ____ / JULY / ____",
        "answer": "JUNE / AUGUST",
        "whyUz": "Iyul — 7-oy. Oldingisi iyun (6), keyingisi avgust (8).",
-       "speak": "3  ____ / JULY / ____"
+       "speak": "3  ____ / JULY / ____",
+       "speakAnswer": "JUNE / AUGUST"
       },
       {
        "prompt": "4  ____ / MARCH / ____",
        "answer": "FEBRUARY / APRIL",
        "whyUz": "Mart — 3-oy. Oldingisi fevral (2), keyingisi aprel (4).",
-       "speak": "4  ____ / MARCH / ____"
+       "speak": "4  ____ / MARCH / ____",
+       "speakAnswer": "FEBRUARY / APRIL"
       },
       {
        "prompt": "5  ____ / SEPTEMBER / ____",
        "answer": "AUGUST / OCTOBER",
        "whyUz": "Sentabr — 9-oy. Oldingisi avgust (8), keyingisi oktabr (10).",
-       "speak": "5  ____ / SEPTEMBER / ____"
+       "speak": "5  ____ / SEPTEMBER / ____",
+       "speakAnswer": "AUGUST / OCTOBER"
       }
      ]
     }
@@ -699,25 +763,29 @@
        "prompt": "TIM: 'I do the same things again and again.'",
        "answer": "Tim feels bored because he does the same things again and again.",
        "promptUz": "Tim o'zini zerikkan his qiladi, chunki u qayta-qayta bir xil ish qiladi.",
-       "speak": "TIM: 'I do the same things again and again.'"
+       "speak": "TIM: 'I do the same things again and again.'",
+       "speakAnswer": "Tim feels bored because he does the same things again and again."
       },
       {
        "prompt": "SARAH: 'I don't get much sleep.'",
        "answer": "Sarah feels tired because she doesn't get much sleep.",
        "promptUz": "Sara o'zini charchagan his qiladi, chunki u kam uxlaydi.",
-       "speak": "SARAH: 'I don't get much sleep.'"
+       "speak": "SARAH: 'I don't get much sleep.'",
+       "speakAnswer": "Sarah feels tired because she doesn't get much sleep."
       },
       {
        "prompt": "JAMES: 'I have a lot of problems.'",
        "answer": "James feels stressed because he has a lot of problems.",
        "promptUz": "Jeyms o'zini asabiy his qiladi, chunki uning ko'p muammosi bor.",
-       "speak": "JAMES: 'I have a lot of problems.'"
+       "speak": "JAMES: 'I have a lot of problems.'",
+       "speakAnswer": "James feels stressed because he has a lot of problems."
       },
       {
        "prompt": "KAREN: 'I like the way I live.'",
        "answer": "Karen feels happy because she likes the way she lives.",
        "promptUz": "Karen o'zini baxtli his qiladi, chunki u yashash tarzini yoqtiradi.",
-       "speak": "KAREN: 'I like the way I live.'"
+       "speak": "KAREN: 'I like the way I live.'",
+       "speakAnswer": "Karen feels happy because she likes the way she lives."
       }
      ]
     },
@@ -742,7 +810,8 @@
         "GO",
         "GET"
        ],
-       "whyUz": "'have a bath/shower'. AQShda 'take a shower' ham."
+       "whyUz": "'have a bath/shower'. AQShda 'take a shower' ham.",
+       "speakAnswer": "HAVE"
       },
       {
        "prompt": "____ breakfast / lunch / dinner",
@@ -754,7 +823,8 @@
         "GO",
         "GET"
        ],
-       "whyUz": "'have breakfast' — artikl YO'Q. Ovqat bilan doim 'have'."
+       "whyUz": "'have breakfast' — artikl YO'Q. Ovqat bilan doim 'have'.",
+       "speakAnswer": "HAVE"
       },
       {
        "prompt": "____ your homework",
@@ -766,7 +836,8 @@
         "GO",
         "GET"
        ],
-       "whyUz": "'do homework'. 'make homework' XATO."
+       "whyUz": "'do homework'. 'make homework' XATO.",
+       "speakAnswer": "DO"
       },
       {
        "prompt": "____ the washing-up",
@@ -778,7 +849,8 @@
         "GO",
         "GET"
        ],
-       "whyUz": "'do the washing-up' — turg'un birikma. AQShda 'do the dishes'."
+       "whyUz": "'do the washing-up' — turg'un birikma. AQShda 'do the dishes'.",
+       "speakAnswer": "DO"
       },
       {
        "prompt": "____ home",
@@ -790,7 +862,8 @@
         "HAVE",
         "GET"
        ],
-       "whyUz": "'go home' — 'to' YO'Q!"
+       "whyUz": "'go home' — 'to' YO'Q!",
+       "speakAnswer": "GO"
       },
       {
        "prompt": "____ shopping",
@@ -802,7 +875,8 @@
         "HAVE",
         "GET"
        ],
-       "whyUz": "'go shopping' — 'go + -ing' qolipi."
+       "whyUz": "'go shopping' — 'go + -ing' qolipi.",
+       "speakAnswer": "GO"
       },
       {
        "prompt": "____ on a picnic",
@@ -814,7 +888,8 @@
         "HAVE",
         "GET"
        ],
-       "whyUz": "'go ON a picnic' — 'on' bilan (istisno)."
+       "whyUz": "'go ON a picnic' — 'on' bilan (istisno).",
+       "speakAnswer": "GO"
       },
       {
        "prompt": "____ out (with friends/family)",
@@ -826,7 +901,8 @@
         "HAVE",
         "GET"
        ],
-       "whyUz": "'go out with somebody'."
+       "whyUz": "'go out with somebody'.",
+       "speakAnswer": "GO"
       },
       {
        "prompt": "____ up",
@@ -838,7 +914,8 @@
         "HAVE",
         "GO"
        ],
-       "whyUz": "'get up' — holat o'zgarishi."
+       "whyUz": "'get up' — holat o'zgarishi.",
+       "speakAnswer": "GET"
       },
       {
        "prompt": "____ dressed",
@@ -850,7 +927,8 @@
         "HAVE",
         "GO"
        ],
-       "whyUz": "'get dressed' — holat o'zgarishi."
+       "whyUz": "'get dressed' — holat o'zgarishi.",
+       "speakAnswer": "GET"
       }
      ]
     },
@@ -869,61 +947,71 @@
        "prompt": "have a shower",
        "answer": "I have a shower at half past seven every morning.",
        "promptUz": "Har ertalab yetti yarimda dush qabul qilaman.",
-       "speak": "have a shower"
+       "speak": "have a shower",
+       "speakAnswer": "I have a shower at half past seven every morning."
       },
       {
        "prompt": "have breakfast",
        "answer": "She has breakfast at eight o'clock.",
        "promptUz": "U soat sakkizda nonushta qiladi.",
-       "speak": "have breakfast"
+       "speak": "have breakfast",
+       "speakAnswer": "She has breakfast at eight o'clock."
       },
       {
        "prompt": "do your homework",
        "answer": "He always does his homework after school.",
        "promptUz": "U doim maktabdan keyin uy vazifasini bajaradi.",
-       "speak": "do your homework"
+       "speak": "do your homework",
+       "speakAnswer": "He always does his homework after school."
       },
       {
        "prompt": "do the washing-up",
        "answer": "I usually do the washing-up after dinner.",
        "promptUz": "Odatda kechki ovqatdan keyin idish yuvaman.",
-       "speak": "do the washing-up"
+       "speak": "do the washing-up",
+       "speakAnswer": "I usually do the washing-up after dinner."
       },
       {
        "prompt": "go home",
        "answer": "They go home at five o'clock.",
        "promptUz": "Ular soat beshda uyga ketishadi.",
-       "speak": "go home"
+       "speak": "go home",
+       "speakAnswer": "They go home at five o'clock."
       },
       {
        "prompt": "go shopping",
        "answer": "We go shopping on Saturdays.",
        "promptUz": "Biz shanba kunlari xaridga boramiz.",
-       "speak": "go shopping"
+       "speak": "go shopping",
+       "speakAnswer": "We go shopping on Saturdays."
       },
       {
        "prompt": "go on a picnic",
        "answer": "My family often goes on a picnic in the summer.",
        "promptUz": "Oilam yozda tez-tez piknikka boradi.",
-       "speak": "go on a picnic"
+       "speak": "go on a picnic",
+       "speakAnswer": "My family often goes on a picnic in the summer."
       },
       {
        "prompt": "go out with friends",
        "answer": "She goes out with friends every Friday.",
        "promptUz": "U har juma do'stlari bilan sayrga chiqadi.",
-       "speak": "go out with friends"
+       "speak": "go out with friends",
+       "speakAnswer": "She goes out with friends every Friday."
       },
       {
        "prompt": "get up",
        "answer": "I get up at seven o'clock in the morning.",
        "promptUz": "Men ertalab soat yettida turaman.",
-       "speak": "get up"
+       "speak": "get up",
+       "speakAnswer": "I get up at seven o'clock in the morning."
       },
       {
        "prompt": "get dressed",
        "answer": "He gets dressed after his shower.",
        "promptUz": "U dushdan keyin kiyinadi.",
-       "speak": "get dressed"
+       "speak": "get dressed",
+       "speakAnswer": "He gets dressed after his shower."
       }
      ]
     }
@@ -1119,7 +1207,8 @@
         "a break",
         "during"
        ],
-       "whyUz": "'work long hours' = ko'p soat ishlamoq."
+       "whyUz": "'work long hours' = ko'p soat ishlamoq.",
+       "speakAnswer": "long hours"
       },
       {
        "prompt": "mashq qilmoq",
@@ -1131,7 +1220,8 @@
         "a break",
         "during"
        ],
-       "whyUz": "Britan imlosi -se bilan. AQShda 'practice'. Ot shakli Britaniyada ham 'practice'."
+       "whyUz": "Britan imlosi -se bilan. AQShda 'practice'. Ot shakli Britaniyada ham 'practice'.",
+       "speakAnswer": "practise"
       },
       {
        "prompt": "tanaffus",
@@ -1143,7 +1233,8 @@
         "practise",
         "during"
        ],
-       "whyUz": "'have a break' = tanaffus qilmoq. 'break' fe'l sifatida — sindirmoq."
+       "whyUz": "'have a break' = tanaffus qilmoq. 'break' fe'l sifatida — sindirmoq.",
+       "speakAnswer": "a break"
       },
       {
        "prompt": "davomida",
@@ -1155,7 +1246,8 @@
         "practise",
         "a break"
        ],
-       "whyUz": "'during the week' = hafta davomida. Keyin OT keladi, gap emas."
+       "whyUz": "'during the week' = hafta davomida. Keyin OT keladi, gap emas.",
+       "speakAnswer": "during"
       },
       {
        "prompt": "erta",
@@ -1167,7 +1259,8 @@
         "practise",
         "a break"
        ],
-       "whyUz": "'go to bed early' = erta yotmoq. Aksi: late (kech)."
+       "whyUz": "'go to bed early' = erta yotmoq. Aksi: late (kech).",
+       "speakAnswer": "early"
       },
       {
        "prompt": "uzoq sayrlar",
@@ -1179,7 +1272,8 @@
         "practise",
         "a break"
        ],
-       "whyUz": "'go for long walks' = uzoq sayr qilmoq."
+       "whyUz": "'go for long walks' = uzoq sayr qilmoq.",
+       "speakAnswer": "long walks"
       },
       {
        "prompt": "qishloq joy, shahardan tashqari",
@@ -1191,7 +1285,8 @@
         "practise",
         "a break"
        ],
-       "whyUz": "'the' bilan ishlatiladi. 'a village' — aniq bir qishloq, 'the countryside' — umuman tabiat."
+       "whyUz": "'the' bilan ishlatiladi. 'a village' — aniq bir qishloq, 'the countryside' — umuman tabiat.",
+       "speakAnswer": "the countryside"
       },
       {
        "prompt": "...dan qo'rqmoq",
@@ -1203,7 +1298,8 @@
         "practise",
         "a break"
        ],
-       "whyUz": "'be afraid OF' — 'of' SHART. 'afraid from' XATO."
+       "whyUz": "'be afraid OF' — 'of' SHART. 'afraid from' XATO.",
+       "speakAnswer": "afraid of"
       },
       {
        "prompt": "his qilmoq",
@@ -1215,7 +1311,8 @@
         "practise",
         "a break"
        ],
-       "whyUz": "'feel + sifat': feel happy, feel tired, feel satisfied."
+       "whyUz": "'feel + sifat': feel happy, feel tired, feel satisfied.",
+       "speakAnswer": "feel"
       },
       {
        "prompt": "mamnun, qoniqqan",
@@ -1227,7 +1324,8 @@
         "practise",
         "a break"
        ],
-       "whyUz": "'satisfied WITH' — 'with' shart."
+       "whyUz": "'satisfied WITH' — 'with' shart.",
+       "speakAnswer": "satisfied"
       }
      ]
     }
@@ -1373,56 +1471,64 @@
        "answer": "gets up",
        "promptUz": "Rasmda: kerishayotgan qiz. Kun boshlanishi",
        "whyUz": "'get up' → 3-shaxs 'gets up'. 'every weekday' = har ish kuni.",
-       "speak": "Kim 1) ____ at 7:30 in the morning every weekday."
+       "speak": "Kim 1) ____ at 7:30 in the morning every weekday.",
+       "speakAnswer": "gets up"
       },
       {
        "prompt": "She gets dressed, then she 2) ____ .",
        "answer": "has breakfast",
        "promptUz": "Rasmda: ovqat yeyayotgan qiz, ertalab",
        "whyUz": "Kiyinishdan keyin — nonushta. 'have breakfast' → 'has breakfast'. Artikl YO'Q.",
-       "speak": "She gets dressed, then she 2) ____ ."
+       "speak": "She gets dressed, then she 2) ____ .",
+       "speakAnswer": "has breakfast"
       },
       {
        "prompt": "She leaves home at about 8:15 and 3) ____ to school.",
        "answer": "catches the bus",
        "promptUz": "Rasmda: maktab avtobusi",
        "whyUz": "'catch the bus' → 'catches the bus' (-ch → -es).",
-       "speak": "She leaves home at about 8:15 and 3) ____ to school."
+       "speak": "She leaves home at about 8:15 and 3) ____ to school.",
+       "speakAnswer": "catches the bus"
       },
       {
        "prompt": "She 4) ____ at school at 12:30, then has a few more lessons.",
        "answer": "has lunch",
        "promptUz": "Rasmda: sendvich yeyayotgan qiz, 12:30 da",
        "whyUz": "12:30 — tushlik vaqti. 'have lunch' → 'has lunch'.",
-       "speak": "She 4) ____ at school at 12:30, then has a few more lessons."
+       "speak": "She 4) ____ at school at 12:30, then has a few more lessons.",
+       "speakAnswer": "has lunch"
       },
       {
        "prompt": "She 5) ____ , then, at about 6:30 in the evening, she has dinner.",
        "answer": "does her homework",
        "promptUz": "Rasmda: stolda yozayotgan qiz",
        "whyUz": "Maktabdan kelgach uy vazifasi. 'do her homework' → 'does her homework' (-o → -es).",
-       "speak": "She 5) ____ , then, at about 6:30 in the evening, she has dinner."
+       "speak": "She 5) ____ , then, at about 6:30 in the evening, she has dinner.",
+       "speakAnswer": "does her homework"
       },
       {
        "prompt": "After that, she usually 6) ____ .",
        "answer": "watches TV",
        "promptUz": "Rasmda: televizor",
        "whyUz": "'watch TV' → 'watches TV' (-ch → -es). 'usually' fe'ldan oldin.",
-       "speak": "After that, she usually 6) ____ ."
+       "speak": "After that, she usually 6) ____ .",
+       "speakAnswer": "watches TV"
       },
       {
        "prompt": "At about 8:30, Kim 7) ____ , ...",
        "answer": "reads a book",
        "promptUz": "Rasmda: chiroq yonida o'qish",
        "whyUz": "'read a book' → 'reads a book'. Yotishdan oldingi mashg'ulot.",
-       "speak": "At about 8:30, Kim 7) ____ , ..."
+       "speak": "At about 8:30, Kim 7) ____ , ...",
+       "speakAnswer": "reads a book"
       },
       {
        "prompt": "... then she 8) ____ at about 9 o'clock.",
        "answer": "goes to bed",
        "promptUz": "Rasmda: karavot",
        "whyUz": "'go to bed' → 'goes to bed'. 'the' YO'Q!",
-       "speak": "... then she 8) ____ at about 9 o'clock."
+       "speak": "... then she 8) ____ at about 9 o'clock.",
+       "speakAnswer": "goes to bed"
       }
      ]
     },
@@ -1447,7 +1553,8 @@
         "go dancing",
         "have a shower"
        ],
-       "whyUz": "Kim o'quvchi — u 'go to school' qiladi. 'the' YO'Q: go to work."
+       "whyUz": "Kim o'quvchi — u 'go to school' qiladi. 'the' YO'Q: go to work.",
+       "speakAnswer": "go to work"
       },
       {
        "prompt": "ishni tugatmoq",
@@ -1459,7 +1566,8 @@
         "go dancing",
         "have a shower"
        ],
-       "whyUz": "Kim uchun 'school finishes' — dars tugaydi."
+       "whyUz": "Kim uchun 'school finishes' — dars tugaydi.",
+       "speakAnswer": "finish work"
       },
       {
        "prompt": "raqsga bormoq",
@@ -1471,7 +1579,8 @@
         "finish work",
         "have a shower"
        ],
-       "whyUz": "Rasmda yo'q. 'go + fe'l-ing' — mashg'ulotga borish qolipi."
+       "whyUz": "Rasmda yo'q. 'go + fe'l-ing' — mashg'ulotga borish qolipi.",
+       "speakAnswer": "go dancing"
       },
       {
        "prompt": "dush qabul qilmoq",
@@ -1483,7 +1592,8 @@
         "finish work",
         "go dancing"
        ],
-       "whyUz": "Ro'yxatda bor, lekin matnda ishlatilmagan (Kim ertalab dush qabul qilishi aytilmagan)."
+       "whyUz": "Ro'yxatda bor, lekin matnda ishlatilmagan (Kim ertalab dush qabul qilishi aytilmagan).",
+       "speakAnswer": "have a shower"
       },
       {
        "prompt": "kiyinmoq",
@@ -1495,7 +1605,8 @@
         "finish work",
         "go dancing"
        ],
-       "whyUz": "Matnda BERILGAN: 'She gets dressed'."
+       "whyUz": "Matnda BERILGAN: 'She gets dressed'.",
+       "speakAnswer": "get dressed"
       },
       {
        "prompt": "uydan chiqmoq",
@@ -1507,7 +1618,8 @@
         "finish work",
         "go dancing"
        ],
-       "whyUz": "Matnda BERILGAN: 'She leaves home at about 8:15'. 'leave' — 'to' kerak emas."
+       "whyUz": "Matnda BERILGAN: 'She leaves home at about 8:15'. 'leave' — 'to' kerak emas.",
+       "speakAnswer": "leave home"
       }
      ]
     }
@@ -1537,105 +1649,120 @@
        "answer": "gets up",
        "promptUz": "Kun boshlanishi",
        "whyUz": "'get up' → 'gets up'. 'the author OF' — predlog shart.",
-       "speak": "Gordon Higgins, the author of 'Brakers' and 'The Sword' 1) ____ at five o'clock every morning ..."
+       "speak": "Gordon Higgins, the author of 'Brakers' and 'The Sword' 1) ____ at five o'clock every morning ...",
+       "speakAnswer": "gets up"
       },
       {
        "prompt": "... and 2) ____ a shower.",
        "answer": "has",
        "promptUz": "'a shower' bilan qaysi fe'l?",
        "whyUz": "'have a shower' → 'has a shower'.",
-       "speak": "... and 2) ____ a shower."
+       "speak": "... and 2) ____ a shower.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "He 3) ____ breakfast at five thirty, ...",
        "answer": "has",
        "promptUz": "Ovqat bilan qaysi fe'l?",
        "whyUz": "'have breakfast' → 'has breakfast'. Artikl YO'Q.",
-       "speak": "He 3) ____ breakfast at five thirty, ..."
+       "speak": "He 3) ____ breakfast at five thirty, ...",
+       "speakAnswer": "has"
       },
       {
        "prompt": "... then he 4) ____ to his study ...",
        "answer": "goes",
        "promptUz": "Joyga borish",
        "whyUz": "'go to' → 'goes to'. 'a study' = ish xonasi (Unit 3).",
-       "speak": "... then he 4) ____ to his study ..."
+       "speak": "... then he 4) ____ to his study ...",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "... and 5) ____ from six till twelve, ...",
        "answer": "works",
        "promptUz": "Ish xonasida nima qiladi?",
        "whyUz": "'work' → 'works'. 'from ... till ...' — davomiylik.",
-       "speak": "... and 5) ____ from six till twelve, ..."
+       "speak": "... and 5) ____ from six till twelve, ...",
+       "speakAnswer": "works"
       },
       {
        "prompt": "... when he 6) ____ lunch.",
        "answer": "has",
        "promptUz": "Ovqat bilan qaysi fe'l?",
        "whyUz": "'have lunch' → 'has lunch'.",
-       "speak": "... when he 6) ____ lunch."
+       "speak": "... when he 6) ____ lunch.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "Gordon usually 7) ____ back to his study to work from one till five, ...",
        "answer": "goes",
        "promptUz": "Qaytib borish",
        "whyUz": "'go back' → 'goes back'. RAVISH: 'usually' fe'ldan oldin.",
-       "speak": "Gordon usually 7) ____ back to his study to work from one till five, ..."
+       "speak": "Gordon usually 7) ____ back to his study to work from one till five, ...",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "... but sometimes he 8) ____ his publisher to talk about his new books.",
        "answer": "meets",
        "promptUz": "Nashriyotchi bilan nima qiladi?",
        "whyUz": "'meet' → 'meets'. RAVISH: 'sometimes'. 'a publisher' = nashriyotchi.",
-       "speak": "... but sometimes he 8) ____ his publisher to talk about his new books."
+       "speak": "... but sometimes he 8) ____ his publisher to talk about his new books.",
+       "speakAnswer": "meets"
       },
       {
        "prompt": "He always 9) ____ to the news on the radio at five, ...",
        "answer": "listens",
        "promptUz": "Radioda yangilik bilan qaysi fe'l?",
        "whyUz": "'listen TO' → 'listens to'. RAVISH: 'always'. 'on the radio' — predlog.",
-       "speak": "He always 9) ____ to the news on the radio at five, ..."
+       "speak": "He always 9) ____ to the news on the radio at five, ...",
+       "speakAnswer": "listens"
       },
       {
        "prompt": "... and after that he 10) ____ dinner.",
        "answer": "has",
        "promptUz": "Ovqat bilan qaysi fe'l?",
        "whyUz": "'have dinner' → 'has dinner'.",
-       "speak": "... and after that he 10) ____ dinner."
+       "speak": "... and after that he 10) ____ dinner.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "After dinner, he usually 11) ____ a book, ...",
        "answer": "reads",
        "promptUz": "Kitob bilan nima qiladi?",
        "whyUz": "'read a book' → 'reads a book'. RAVISH: 'usually'.",
-       "speak": "After dinner, he usually 11) ____ a book, ..."
+       "speak": "After dinner, he usually 11) ____ a book, ...",
+       "speakAnswer": "reads"
       },
       {
        "prompt": "... but sometimes he 12) ____ out with his friends.",
        "answer": "goes",
        "promptUz": "Do'stlar bilan tashqariga",
        "whyUz": "'go out' → 'goes out'. RAVISH: 'sometimes'.",
-       "speak": "... but sometimes he 12) ____ out with his friends."
+       "speak": "... but sometimes he 12) ____ out with his friends.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "He usually 13) ____ to bed at ten o'clock.",
        "answer": "goes",
        "promptUz": "Yotish",
        "whyUz": "'go to bed' → 'goes to bed'. 'the' YO'Q.",
-       "speak": "He usually 13) ____ to bed at ten o'clock."
+       "speak": "He usually 13) ____ to bed at ten o'clock.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "In his free time, Gordon often 14) ____ fishing or sailing on the lake near his house.",
        "answer": "goes",
        "promptUz": "Mashg'ulotga borish — 'go + -ing'",
        "whyUz": "'go fishing / go sailing' → 'goes'. RAVISH: 'often'. 'sail' = yelkanli qayiqda suzmoq.",
-       "speak": "In his free time, Gordon often 14) ____ fishing or sailing on the lake near his house."
+       "speak": "In his free time, Gordon often 14) ____ fishing or sailing on the lake near his house.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "Gordon likes being a writer. \"I am very happy with my life at the moment,\" he 15) ____ .",
        "answer": "says",
        "promptUz": "Nutqdan keyingi fe'l",
        "whyUz": "'say' → 'says' (o'qilishi /sez/, 'seyz' EMAS). To'g'ridan-to'g'ri nutqdan keyin.",
-       "speak": "Gordon likes being a writer. \"I am very happy with my life at the moment,\" he 15) ____ ."
+       "speak": "Gordon likes being a writer. \"I am very happy with my life at the moment,\" he 15) ____ .",
+       "speakAnswer": "says"
       }
      ]
     },
@@ -1654,43 +1781,50 @@
        "prompt": "1  Gordon gets up at nine o'clock.",
        "answer": "Gordon gets up at five o'clock.",
        "whyUz": "SOAT xato. Matnda: 'at five o'clock every morning'.",
-       "speak": "1  Gordon gets up at nine o'clock."
+       "speak": "1  Gordon gets up at nine o'clock.",
+       "speakAnswer": "Gordon gets up at five o'clock."
       },
       {
        "prompt": "2  He sleeps from six till twelve.",
        "answer": "He works from six till twelve.",
        "whyUz": "FE'L xato. Matnda: 'works from six till twelve'. U uxlamaydi — ishlaydi!",
-       "speak": "2  He sleeps from six till twelve."
+       "speak": "2  He sleeps from six till twelve.",
+       "speakAnswer": "He works from six till twelve."
       },
       {
        "prompt": "3  He always meets his publisher in the afternoon.",
        "answer": "He sometimes meets his publisher in the afternoon.",
        "whyUz": "RAVISH xato. Matnda: 'SOMETIMES he meets his publisher'.",
-       "speak": "3  He always meets his publisher in the afternoon."
+       "speak": "3  He always meets his publisher in the afternoon.",
+       "speakAnswer": "He sometimes meets his publisher in the afternoon."
       },
       {
        "prompt": "4  He always watches the news on TV at five.",
        "answer": "He always listens to the news on the radio at five.",
        "whyUz": "IKKI xato: fe'l ('watches' emas 'listens to') va vosita ('TV' emas 'the radio').",
-       "speak": "4  He always watches the news on TV at five."
+       "speak": "4  He always watches the news on TV at five.",
+       "speakAnswer": "He always listens to the news on the radio at five."
       },
       {
        "prompt": "5  After dinner, he usually writes a book.",
        "answer": "After dinner, he usually reads a book.",
        "whyUz": "FE'L xato. Matnda: 'reads a book'. U yozuvchi, lekin kechqurun O'QIYDI.",
-       "speak": "5  After dinner, he usually writes a book."
+       "speak": "5  After dinner, he usually writes a book.",
+       "speakAnswer": "After dinner, he usually reads a book."
       },
       {
        "prompt": "6  He usually goes to bed at twelve o'clock.",
        "answer": "He usually goes to bed at ten o'clock.",
        "whyUz": "SOAT xato. Matnda: 'at ten o'clock'.",
-       "speak": "6  He usually goes to bed at twelve o'clock."
+       "speak": "6  He usually goes to bed at twelve o'clock.",
+       "speakAnswer": "He usually goes to bed at ten o'clock."
       },
       {
        "prompt": "7  He's very stressed with his life at the moment.",
        "answer": "He's very happy with his life at the moment.",
        "whyUz": "SIFAT xato. Matnda: 'I am very HAPPY with my life at the moment'.",
-       "speak": "7  He's very stressed with his life at the moment."
+       "speak": "7  He's very stressed with his life at the moment.",
+       "speakAnswer": "He's very happy with his life at the moment."
       }
      ]
     }
@@ -1718,32 +1852,38 @@
       {
        "prompt": "6:00 — an'anaviy / raqamli",
        "answer": "six o'clock / six",
-       "whyUz": "To'liq soat → 'o'clock'."
+       "whyUz": "To'liq soat → 'o'clock'.",
+       "speakAnswer": "six o'clock / six"
       },
       {
        "prompt": "6:15 — an'anaviy / raqamli",
        "answer": "(a) quarter past six / six fifteen",
-       "whyUz": "15 daqiqa = chorak. 30 dan kam → PAST."
+       "whyUz": "15 daqiqa = chorak. 30 dan kam → PAST.",
+       "speakAnswer": "(a) quarter past six / six fifteen"
       },
       {
        "prompt": "6:20 — an'anaviy / raqamli",
        "answer": "twenty past six / six twenty",
-       "whyUz": "30 dan kam → PAST, soat o'zgarmaydi."
+       "whyUz": "30 dan kam → PAST, soat o'zgarmaydi.",
+       "speakAnswer": "twenty past six / six twenty"
       },
       {
        "prompt": "6:30 — an'anaviy / raqamli",
        "answer": "half past six / six thirty",
-       "whyUz": "30 daqiqa = yarim. 'a half' EMAS."
+       "whyUz": "30 daqiqa = yarim. 'a half' EMAS.",
+       "speakAnswer": "half past six / six thirty"
       },
       {
        "prompt": "6:40 — an'anaviy / raqamli",
        "answer": "twenty to seven / six forty",
-       "whyUz": "60 − 40 = 20 qoldi → twenty TO. Soat 6 dan 7 ga oshadi!"
+       "whyUz": "60 − 40 = 20 qoldi → twenty TO. Soat 6 dan 7 ga oshadi!",
+       "speakAnswer": "twenty to seven / six forty"
       },
       {
        "prompt": "6:45 — an'anaviy / raqamli",
        "answer": "(a) quarter to seven / six forty-five",
-       "whyUz": "60 − 45 = 15 = chorak qoldi → quarter TO SEVEN."
+       "whyUz": "60 − 45 = 15 = chorak qoldi → quarter TO SEVEN.",
+       "speakAnswer": "(a) quarter to seven / six forty-five"
       }
      ]
     },
@@ -1762,97 +1902,113 @@
        "prompt": "a — 5:45",
        "answer": "What time is it?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Daqiqa 45 → 'to' va soat 5 dan 6 ga oshadi."
+       "whyUz": "Daqiqa 45 → 'to' va soat 5 dan 6 ga oshadi.",
+       "speakAnswer": "What time is it?"
       },
       {
        "prompt": "a — 5:45",
        "answer": "It's (a) quarter to six. / It's five forty-five.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Daqiqa 45 → 'to' va soat 5 dan 6 ga oshadi."
+       "whyUz": "Daqiqa 45 → 'to' va soat 5 dan 6 ga oshadi.",
+       "speakAnswer": "It's (a) quarter to six. / It's five forty-five."
       },
       {
        "prompt": "b — 7:15",
        "answer": "What time is it?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Daqiqa 15 (30 dan kam) → PAST, soat o'zgarmaydi."
+       "whyUz": "Daqiqa 15 (30 dan kam) → PAST, soat o'zgarmaydi.",
+       "speakAnswer": "What time is it?"
       },
       {
        "prompt": "b — 7:15",
        "answer": "It's (a) quarter past seven. / It's seven fifteen.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Daqiqa 15 (30 dan kam) → PAST, soat o'zgarmaydi."
+       "whyUz": "Daqiqa 15 (30 dan kam) → PAST, soat o'zgarmaydi.",
+       "speakAnswer": "It's (a) quarter past seven. / It's seven fifteen."
       },
       {
        "prompt": "d — 1:30",
        "answer": "What time is it?",
        "promptUz": "Savol tuzing",
-       "whyUz": "30 daqiqa = half past. 'a half' EMAS."
+       "whyUz": "30 daqiqa = half past. 'a half' EMAS.",
+       "speakAnswer": "What time is it?"
       },
       {
        "prompt": "d — 1:30",
        "answer": "It's half past one. / It's one thirty.",
        "promptUz": "Javob tuzing",
-       "whyUz": "30 daqiqa = half past. 'a half' EMAS."
+       "whyUz": "30 daqiqa = half past. 'a half' EMAS.",
+       "speakAnswer": "It's half past one. / It's one thirty."
       },
       {
        "prompt": "e — 9:00",
        "answer": "What time is it?",
        "promptUz": "Savol tuzing",
-       "whyUz": "To'liq soat → o'clock."
+       "whyUz": "To'liq soat → o'clock.",
+       "speakAnswer": "What time is it?"
       },
       {
        "prompt": "e — 9:00",
        "answer": "It's nine o'clock. / It's nine.",
        "promptUz": "Javob tuzing",
-       "whyUz": "To'liq soat → o'clock."
+       "whyUz": "To'liq soat → o'clock.",
+       "speakAnswer": "It's nine o'clock. / It's nine."
       },
       {
        "prompt": "f — 4:30",
        "answer": "What's the time?",
        "promptUz": "Savol tuzing",
-       "whyUz": "30 daqiqa → half past."
+       "whyUz": "30 daqiqa → half past.",
+       "speakAnswer": "What's the time?"
       },
       {
        "prompt": "f — 4:30",
        "answer": "It's half past four. / It's four thirty.",
        "promptUz": "Javob tuzing",
-       "whyUz": "30 daqiqa → half past."
+       "whyUz": "30 daqiqa → half past.",
+       "speakAnswer": "It's half past four. / It's four thirty."
       },
       {
        "prompt": "g — 2:50",
        "answer": "What's the time?",
        "promptUz": "Savol tuzing",
-       "whyUz": "60−50=10 qoldi → ten TO THREE. Soat 2 dan 3 ga oshadi."
+       "whyUz": "60−50=10 qoldi → ten TO THREE. Soat 2 dan 3 ga oshadi.",
+       "speakAnswer": "What's the time?"
       },
       {
        "prompt": "g — 2:50",
        "answer": "It's ten to three. / It's two fifty.",
        "promptUz": "Javob tuzing",
-       "whyUz": "60−50=10 qoldi → ten TO THREE. Soat 2 dan 3 ga oshadi."
+       "whyUz": "60−50=10 qoldi → ten TO THREE. Soat 2 dan 3 ga oshadi.",
+       "speakAnswer": "It's ten to three. / It's two fifty."
       },
       {
        "prompt": "h — 10:15",
        "answer": "What's the time?",
        "promptUz": "Savol tuzing",
-       "whyUz": "15 daqiqa → quarter past."
+       "whyUz": "15 daqiqa → quarter past.",
+       "speakAnswer": "What's the time?"
       },
       {
        "prompt": "h — 10:15",
        "answer": "It's (a) quarter past ten. / It's ten fifteen.",
        "promptUz": "Javob tuzing",
-       "whyUz": "15 daqiqa → quarter past."
+       "whyUz": "15 daqiqa → quarter past.",
+       "speakAnswer": "It's (a) quarter past ten. / It's ten fifteen."
       },
       {
        "prompt": "i — 9:20",
        "answer": "What's the time?",
        "promptUz": "Savol tuzing",
-       "whyUz": "20 daqiqa (30 dan kam) → PAST."
+       "whyUz": "20 daqiqa (30 dan kam) → PAST.",
+       "speakAnswer": "What's the time?"
       },
       {
        "prompt": "i — 9:20",
        "answer": "It's twenty past nine. / It's nine twenty.",
        "promptUz": "Javob tuzing",
-       "whyUz": "20 daqiqa (30 dan kam) → PAST."
+       "whyUz": "20 daqiqa (30 dan kam) → PAST.",
+       "speakAnswer": "It's twenty past nine. / It's nine twenty."
       }
      ]
     },
@@ -1871,73 +2027,85 @@
        "prompt": "ARRIVALS — Brussels, 5:30",
        "answer": "What time does the plane from Brussels arrive?",
        "promptUz": "Savol tuzing",
-       "whyUz": "30 daqiqa → half past. Bryussel — Belgiya poytaxti."
+       "whyUz": "30 daqiqa → half past. Bryussel — Belgiya poytaxti.",
+       "speakAnswer": "What time does the plane from Brussels arrive?"
       },
       {
        "prompt": "ARRIVALS — Brussels, 5:30",
        "answer": "It arrives at half past five.",
        "promptUz": "Javob tuzing",
-       "whyUz": "30 daqiqa → half past. Bryussel — Belgiya poytaxti."
+       "whyUz": "30 daqiqa → half past. Bryussel — Belgiya poytaxti.",
+       "speakAnswer": "It arrives at half past five."
       },
       {
        "prompt": "ARRIVALS — Montreal, 6:45",
        "answer": "What time does the plane from Montreal arrive?",
        "promptUz": "Savol tuzing",
-       "whyUz": "45 daqiqa → quarter TO SEVEN (soat oshadi)."
+       "whyUz": "45 daqiqa → quarter TO SEVEN (soat oshadi).",
+       "speakAnswer": "What time does the plane from Montreal arrive?"
       },
       {
        "prompt": "ARRIVALS — Montreal, 6:45",
        "answer": "It arrives at (a) quarter to seven.",
        "promptUz": "Javob tuzing",
-       "whyUz": "45 daqiqa → quarter TO SEVEN (soat oshadi)."
+       "whyUz": "45 daqiqa → quarter TO SEVEN (soat oshadi).",
+       "speakAnswer": "It arrives at (a) quarter to seven."
       },
       {
        "prompt": "ARRIVALS — Cairo, 7:00",
        "answer": "What time does the plane from Cairo arrive?",
        "promptUz": "Savol tuzing",
-       "whyUz": "To'liq soat → o'clock. Qohira — Misr poytaxti."
+       "whyUz": "To'liq soat → o'clock. Qohira — Misr poytaxti.",
+       "speakAnswer": "What time does the plane from Cairo arrive?"
       },
       {
        "prompt": "ARRIVALS — Cairo, 7:00",
        "answer": "It arrives at seven o'clock.",
        "promptUz": "Javob tuzing",
-       "whyUz": "To'liq soat → o'clock. Qohira — Misr poytaxti."
+       "whyUz": "To'liq soat → o'clock. Qohira — Misr poytaxti.",
+       "speakAnswer": "It arrives at seven o'clock."
       },
       {
        "prompt": "DEPARTURES — Amsterdam, 8:10",
        "answer": "What time does the plane for Amsterdam leave?",
        "promptUz": "Savol tuzing",
-       "whyUz": "10 daqiqa → ten past. Amsterdam — Gollandiya poytaxti."
+       "whyUz": "10 daqiqa → ten past. Amsterdam — Gollandiya poytaxti.",
+       "speakAnswer": "What time does the plane for Amsterdam leave?"
       },
       {
        "prompt": "DEPARTURES — Amsterdam, 8:10",
        "answer": "It leaves at ten past eight.",
        "promptUz": "Javob tuzing",
-       "whyUz": "10 daqiqa → ten past. Amsterdam — Gollandiya poytaxti."
+       "whyUz": "10 daqiqa → ten past. Amsterdam — Gollandiya poytaxti.",
+       "speakAnswer": "It leaves at ten past eight."
       },
       {
        "prompt": "DEPARTURES — Tel Aviv, 8:15",
        "answer": "What time does the plane for Tel Aviv leave?",
        "promptUz": "Savol tuzing",
-       "whyUz": "15 daqiqa → quarter past."
+       "whyUz": "15 daqiqa → quarter past.",
+       "speakAnswer": "What time does the plane for Tel Aviv leave?"
       },
       {
        "prompt": "DEPARTURES — Tel Aviv, 8:15",
        "answer": "It leaves at (a) quarter past eight.",
        "promptUz": "Javob tuzing",
-       "whyUz": "15 daqiqa → quarter past."
+       "whyUz": "15 daqiqa → quarter past.",
+       "speakAnswer": "It leaves at (a) quarter past eight."
       },
       {
        "prompt": "DEPARTURES — Paris, 8:45",
        "answer": "What time does the plane for Paris leave?",
        "promptUz": "Savol tuzing",
-       "whyUz": "45 daqiqa → quarter TO NINE. Parij — Fransiya poytaxti."
+       "whyUz": "45 daqiqa → quarter TO NINE. Parij — Fransiya poytaxti.",
+       "speakAnswer": "What time does the plane for Paris leave?"
       },
       {
        "prompt": "DEPARTURES — Paris, 8:45",
        "answer": "It leaves at (a) quarter to nine.",
        "promptUz": "Javob tuzing",
-       "whyUz": "45 daqiqa → quarter TO NINE. Parij — Fransiya poytaxti."
+       "whyUz": "45 daqiqa → quarter TO NINE. Parij — Fransiya poytaxti.",
+       "speakAnswer": "It leaves at (a) quarter to nine."
       }
      ]
     }
@@ -2009,7 +2177,8 @@
         "before",
         "after"
        ],
-       "whyUz": "Namunada: 'I USUALLY GET UP' — ravish fe'ldan OLDIN."
+       "whyUz": "Namunada: 'I USUALLY GET UP' — ravish fe'ldan OLDIN.",
+       "speakAnswer": "before"
       },
       {
        "prompt": "... but ____ the verb \"to be\".",
@@ -2019,7 +2188,8 @@
         "after",
         "before"
        ],
-       "whyUz": "Namunada: 'I AM NEVER late' — ravish 'am' dan KEYIN. 'to be' — istisno."
+       "whyUz": "Namunada: 'I AM NEVER late' — ravish 'am' dan KEYIN. 'to be' — istisno.",
+       "speakAnswer": "after"
       }
      ]
     },
@@ -2038,49 +2208,57 @@
        "prompt": "I get up at seven. (usually)",
        "answer": "I usually get up at seven.",
        "whyUz": "'get up' — oddiy fe'l → ravish OLDIN.",
-       "speak": "I get up at seven. (usually)"
+       "speak": "I get up at seven. (usually)",
+       "speakAnswer": "I usually get up at seven."
       },
       {
        "prompt": "I am late for school. (never)",
        "answer": "I am never late for school.",
        "whyUz": "'am' — 'to be' fe'li → ravish KEYIN.",
-       "speak": "I am late for school. (never)"
+       "speak": "I am late for school. (never)",
+       "speakAnswer": "I am never late for school."
       },
       {
        "prompt": "She watches TV in the evening. (often)",
        "answer": "She often watches TV in the evening.",
        "whyUz": "'watches' — oddiy fe'l → ravish OLDIN.",
-       "speak": "She watches TV in the evening. (often)"
+       "speak": "She watches TV in the evening. (often)",
+       "speakAnswer": "She often watches TV in the evening."
       },
       {
        "prompt": "He is happy. (always)",
        "answer": "He is always happy.",
        "whyUz": "'is' — 'to be' → ravish KEYIN.",
-       "speak": "He is happy. (always)"
+       "speak": "He is happy. (always)",
+       "speakAnswer": "He is always happy."
       },
       {
        "prompt": "They go to the cinema. (sometimes)",
        "answer": "They sometimes go to the cinema.",
        "whyUz": "'go' — oddiy fe'l → ravish OLDIN.",
-       "speak": "They go to the cinema. (sometimes)"
+       "speak": "They go to the cinema. (sometimes)",
+       "speakAnswer": "They sometimes go to the cinema."
       },
       {
        "prompt": "We are tired after school. (usually)",
        "answer": "We are usually tired after school.",
        "whyUz": "'are' — 'to be' → ravish KEYIN.",
-       "speak": "We are tired after school. (usually)"
+       "speak": "We are tired after school. (usually)",
+       "speakAnswer": "We are usually tired after school."
       },
       {
        "prompt": "Bob swims in the sea. (never)",
        "answer": "Bob never swims in the sea.",
        "whyUz": "'swims' — oddiy fe'l → ravish OLDIN. 'doesn't' KERAK EMAS.",
-       "speak": "Bob swims in the sea. (never)"
+       "speak": "Bob swims in the sea. (never)",
+       "speakAnswer": "Bob never swims in the sea."
       },
       {
        "prompt": "My father reads the newspaper. (rarely)",
        "answer": "My father rarely reads the newspaper.",
        "whyUz": "'reads' — oddiy fe'l → ravish OLDIN.",
-       "speak": "My father reads the newspaper. (rarely)"
+       "speak": "My father reads the newspaper. (rarely)",
+       "speakAnswer": "My father rarely reads the newspaper."
       }
      ]
     },
@@ -2099,27 +2277,32 @@
       {
        "prompt": "wash the car — namuna qolip",
        "answer": "Laura sometimes washes the car on Sundays.",
-       "promptUz": "Laura yakshanba kunlari ba'zan mashina yuvadi."
+       "promptUz": "Laura yakshanba kunlari ba'zan mashina yuvadi.",
+       "speakAnswer": "Laura sometimes washes the car on Sundays."
       },
       {
        "prompt": "go to the gym — namuna qolip",
        "answer": "Laura often goes to the gym on Sundays.",
-       "promptUz": "Laura yakshanba kunlari tez-tez sport zaliga boradi."
+       "promptUz": "Laura yakshanba kunlari tez-tez sport zaliga boradi.",
+       "speakAnswer": "Laura often goes to the gym on Sundays."
       },
       {
        "prompt": "cook — namuna qolip",
        "answer": "Laura always cooks on Sundays.",
-       "promptUz": "Laura yakshanba kunlari doim ovqat pishiradi."
+       "promptUz": "Laura yakshanba kunlari doim ovqat pishiradi.",
+       "speakAnswer": "Laura always cooks on Sundays."
       },
       {
        "prompt": "go on a picnic — namuna qolip",
        "answer": "Laura rarely goes on a picnic on Sundays.",
-       "promptUz": "Laura yakshanba kunlari kamdan-kam piknikka boradi."
+       "promptUz": "Laura yakshanba kunlari kamdan-kam piknikka boradi.",
+       "speakAnswer": "Laura rarely goes on a picnic on Sundays."
       },
       {
        "prompt": "go dancing — namuna qolip",
        "answer": "Laura usually goes dancing on Sundays.",
-       "promptUz": "Laura yakshanba kunlari odatda raqsga boradi."
+       "promptUz": "Laura yakshanba kunlari odatda raqsga boradi.",
+       "speakAnswer": "Laura usually goes dancing on Sundays."
       }
      ]
     },
@@ -2138,57 +2321,66 @@
        "prompt": "always (100%)",
        "answer": "I always meet friends on Sundays.",
        "promptUz": "always (100%)",
-       "speak": "always (100%)"
+       "speak": "always (100%)",
+       "speakAnswer": "I always meet friends on Sundays."
       },
       {
        "prompt": "usually (75%)",
        "answer": "I usually watch TV on Sundays.",
        "promptUz": "usually (75%)",
-       "speak": "usually (75%)"
+       "speak": "usually (75%)",
+       "speakAnswer": "I usually watch TV on Sundays."
       },
       {
        "prompt": "often (50%)",
        "answer": "I often go shopping on Sundays.",
        "promptUz": "often (50%)",
-       "speak": "often (50%)"
+       "speak": "often (50%)",
+       "speakAnswer": "I often go shopping on Sundays."
       },
       {
        "prompt": "sometimes (25%)",
        "answer": "I sometimes go to the cinema on Sundays.",
        "promptUz": "sometimes (25%)",
-       "speak": "sometimes (25%)"
+       "speak": "sometimes (25%)",
+       "speakAnswer": "I sometimes go to the cinema on Sundays."
       },
       {
        "prompt": "rarely (10%)",
        "answer": "I rarely go jogging on Sundays.",
        "promptUz": "rarely (10%)",
-       "speak": "rarely (10%)"
+       "speak": "rarely (10%)",
+       "speakAnswer": "I rarely go jogging on Sundays."
       },
       {
        "prompt": "never (0%)",
        "answer": "I never go windsurfing on Sundays.",
        "promptUz": "never (0%)",
        "whyUz": "'never' o'zi inkor — 'don't' kerak emas.",
-       "speak": "never (0%)"
+       "speak": "never (0%)",
+       "speakAnswer": "I never go windsurfing on Sundays."
       },
       {
        "prompt": "Uy ishlari haqida",
        "answer": "I usually do the washing-up after dinner.",
        "promptUz": "Uy ishlari haqida",
-       "speak": "Uy ishlari haqida"
+       "speak": "Uy ishlari haqida",
+       "speakAnswer": "I usually do the washing-up after dinner."
       },
       {
        "prompt": "Ovqat haqida",
        "answer": "We sometimes eat out at a restaurant.",
        "promptUz": "Ovqat haqida",
        "whyUz": "'eat out' = tashqarida ovqatlanmoq.",
-       "speak": "Ovqat haqida"
+       "speak": "Ovqat haqida",
+       "speakAnswer": "We sometimes eat out at a restaurant."
       },
       {
        "prompt": "Madaniyat haqida",
        "answer": "I rarely visit museums, but I like them.",
        "promptUz": "Madaniyat haqida",
-       "speak": "Madaniyat haqida"
+       "speak": "Madaniyat haqida",
+       "speakAnswer": "I rarely visit museums, but I like them."
       }
      ]
     }
@@ -2254,7 +2446,8 @@
         "on",
         "in"
        ],
-       "whyUz": "Qoida: 'We use AT with the time and with the weekend, night and noon.'"
+       "whyUz": "Qoida: 'We use AT with the time and with the weekend, night and noon.'",
+       "speakAnswer": "at"
       },
       {
        "prompt": "2-ustun: Friday(s), Sunday morning(s), 2 August, 6 May 1978 → ____",
@@ -2265,7 +2458,8 @@
         "at",
         "in"
        ],
-       "whyUz": "Qoida: 'We use ON with days of the week, the parts of a particular day and dates.'"
+       "whyUz": "Qoida: 'We use ON with days of the week, the parts of a particular day and dates.'",
+       "speakAnswer": "on"
       },
       {
        "prompt": "3-ustun: May, spring/summer, the morning/evening/afternoon, 1998 → ____",
@@ -2276,7 +2470,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Qoida: 'We use IN with months, seasons, years and with the morning/evening/afternoon.'"
+       "whyUz": "Qoida: 'We use IN with months, seasons, years and with the morning/evening/afternoon.'",
+       "speakAnswer": "in"
       }
      ]
     },
@@ -2300,7 +2495,8 @@
         "on",
         "in"
        ],
-       "whyUz": "Soat → AT."
+       "whyUz": "Soat → AT.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "____ Friday",
@@ -2311,7 +2507,8 @@
         "at",
         "in"
        ],
-       "whyUz": "Hafta kuni → ON."
+       "whyUz": "Hafta kuni → ON.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "____ May",
@@ -2322,7 +2519,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Oy → IN."
+       "whyUz": "Oy → IN.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "____ night",
@@ -2333,7 +2531,8 @@
         "in",
         "on"
        ],
-       "whyUz": "ISTISNO: at night ('in the night' EMAS)."
+       "whyUz": "ISTISNO: at night ('in the night' EMAS).",
+       "speakAnswer": "at"
       },
       {
        "prompt": "____ the morning",
@@ -2344,7 +2543,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Kun qismi (kun nomisiz) → IN."
+       "whyUz": "Kun qismi (kun nomisiz) → IN.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "____ Sunday morning",
@@ -2355,7 +2555,8 @@
         "in",
         "at"
        ],
-       "whyUz": "Kun NOMI bor → ON (in EMAS!)."
+       "whyUz": "Kun NOMI bor → ON (in EMAS!).",
+       "speakAnswer": "on"
       },
       {
        "prompt": "____ the weekend",
@@ -2366,7 +2567,8 @@
         "on",
         "in"
        ],
-       "whyUz": "Britaniyada AT the weekend. AQShda 'on the weekend'."
+       "whyUz": "Britaniyada AT the weekend. AQShda 'on the weekend'.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "____ 2 August",
@@ -2377,7 +2579,8 @@
         "at",
         "in"
        ],
-       "whyUz": "Sana → ON."
+       "whyUz": "Sana → ON.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "____ 1998",
@@ -2388,7 +2591,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Yil → IN."
+       "whyUz": "Yil → IN.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "____ summer",
@@ -2399,7 +2603,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Fasl → IN."
+       "whyUz": "Fasl → IN.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "____ noon",
@@ -2410,7 +2615,8 @@
         "in",
         "on"
        ],
-       "whyUz": "ISTISNO: at noon."
+       "whyUz": "ISTISNO: at noon.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "____ 6 May, 1978",
@@ -2421,7 +2627,8 @@
         "in",
         "at"
        ],
-       "whyUz": "To'liq sana → ON (yil bo'lsa ham)."
+       "whyUz": "To'liq sana → ON (yil bo'lsa ham).",
+       "speakAnswer": "on"
       }
      ]
     },
@@ -2466,46 +2673,54 @@
        "prompt": "22 March →",
        "answer": "the twenty-second of March",
        "whyUz": "22 → twenty-second. 'the' va 'of' shart.",
-       "speak": "22 March →"
+       "speak": "22 March →",
+       "speakAnswer": "the twenty-second of March"
       },
       {
        "prompt": "6 July →",
        "answer": "the sixth of July",
        "whyUz": "6 → sixth.",
-       "speak": "6 July →"
+       "speak": "6 July →",
+       "speakAnswer": "the sixth of July"
       },
       {
        "prompt": "3 August →",
        "answer": "the third of August",
        "whyUz": "3 → third (thirdd EMAS).",
-       "speak": "3 August →"
+       "speak": "3 August →",
+       "speakAnswer": "the third of August"
       },
       {
        "prompt": "1 January →",
        "answer": "the first of January",
        "whyUz": "1 → first.",
-       "speak": "1 January →"
+       "speak": "1 January →",
+       "speakAnswer": "the first of January"
       },
       {
        "prompt": "2 February →",
        "answer": "the second of February",
        "whyUz": "2 → second.",
-       "speak": "2 February →"
+       "speak": "2 February →",
+       "speakAnswer": "the second of February"
       },
       {
        "prompt": "1957 →",
        "answer": "nineteen fifty-seven",
-       "whyUz": "Yil ikki qismga bo'lib o'qiladi: 19 + 57."
+       "whyUz": "Yil ikki qismga bo'lib o'qiladi: 19 + 57.",
+       "speakAnswer": "nineteen fifty-seven"
       },
       {
        "prompt": "1955 →",
        "answer": "nineteen fifty-five",
-       "whyUz": "19 + 55."
+       "whyUz": "19 + 55.",
+       "speakAnswer": "nineteen fifty-five"
       },
       {
        "prompt": "1998 →",
        "answer": "nineteen ninety-eight",
-       "whyUz": "19 + 98."
+       "whyUz": "19 + 98.",
+       "speakAnswer": "nineteen ninety-eight"
       }
      ]
     },
@@ -2525,63 +2740,72 @@
        "answer": "at",
        "promptUz": "'half past four' — bu SOAT",
        "whyUz": "Soat bilan AT. 'wake up' = uyg'onmoq.",
-       "speak": "Every day, Henry wakes up 1) ____ half past four ..."
+       "speak": "Every day, Henry wakes up 1) ____ half past four ...",
+       "speakAnswer": "at"
       },
       {
        "prompt": "... 2) ____ the morning and milks the cows.",
        "answer": "in",
        "promptUz": "'the morning' — kun qismi, kun nomi yo'q",
        "whyUz": "Kun qismi (kun nomisiz) → IN the morning. 'milk' fe'l sifatida — sut sog'moq.",
-       "speak": "... 2) ____ the morning and milks the cows."
+       "speak": "... 2) ____ the morning and milks the cows.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "He finishes 3) ____ about half past six.",
        "answer": "at",
        "promptUz": "'about half past six' — SOAT",
        "whyUz": "Soat bilan AT. 'about' = taxminan.",
-       "speak": "He finishes 3) ____ about half past six."
+       "speak": "He finishes 3) ____ about half past six.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "He has lunch 4) ____ noon.",
        "answer": "at",
        "promptUz": "'noon' — ISTISNO so'zlardan biri",
        "whyUz": "ISTISNO: at noon (tush payti). Qoidada aynan sanalgan.",
-       "speak": "He has lunch 4) ____ noon."
+       "speak": "He has lunch 4) ____ noon.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "5) ____ two o'clock, he goes to the fields and works there until five.",
        "answer": "At",
        "promptUz": "Soat, va gap BOSHIDA",
        "whyUz": "Soat → AT. Gap boshida katta harf. 'a field' = dala.",
-       "speak": "5) ____ two o'clock, he goes to the fields and works there until five."
+       "speak": "5) ____ two o'clock, he goes to the fields and works there until five.",
+       "speakAnswer": "At"
       },
       {
        "prompt": "6) ____ the evening, he milks the cows again, then he goes back home and has a shower.",
        "answer": "In",
        "promptUz": "Kun qismi, gap boshida",
        "whyUz": "Kun qismi → IN the evening. Gap boshida katta harf.",
-       "speak": "6) ____ the evening, he milks the cows again, then he goes back home and has a shower."
+       "speak": "6) ____ the evening, he milks the cows again, then he goes back home and has a shower.",
+       "speakAnswer": "In"
       },
       {
        "prompt": "He sometimes watches TV before he goes to bed 7) ____ about nine.",
        "answer": "at",
        "promptUz": "'about nine' — SOAT",
        "whyUz": "Soat bilan AT. 'sometimes' fe'ldan oldin.",
-       "speak": "He sometimes watches TV before he goes to bed 7) ____ about nine."
+       "speak": "He sometimes watches TV before he goes to bed 7) ____ about nine.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "8) ____ Saturday afternoons, he goes to the local playing-field to watch the village team play football.",
        "answer": "On",
        "promptUz": "Kun NOMI bor — 'Saturday afternoons'",
        "whyUz": "Kun nomi bo'lsa ON ('in the afternoon' EMAS!). Gap boshida katta harf.",
-       "speak": "8) ____ Saturday afternoons, he goes to the local playing-field to watch the village team play football."
+       "speak": "8) ____ Saturday afternoons, he goes to the local playing-field to watch the village team play football.",
+       "speakAnswer": "On"
       },
       {
        "prompt": "9) ____ Sundays, Henry relaxes.",
        "answer": "On",
        "promptUz": "Hafta kuni (ko'plikda)",
        "whyUz": "Hafta kuni → ON. 'On Sundays' = har yakshanba. Gap boshida katta harf.",
-       "speak": "9) ____ Sundays, Henry relaxes."
+       "speak": "9) ____ Sundays, Henry relaxes.",
+       "speakAnswer": "On"
       }
      ]
     },
@@ -2724,37 +2948,43 @@
        "prompt": "at / the morning / he / seven o'clock / in / gets up",
        "answer": "He gets up at seven o'clock in the morning.",
        "whyUz": "Kitobdagi namuna. Ega + fe'l + aniq vaqt + umumiy vaqt.",
-       "speak": "at / the morning / he / seven o'clock / in / gets up"
+       "speak": "at / the morning / he / seven o'clock / in / gets up",
+       "speakAnswer": "He gets up at seven o'clock in the morning."
       },
       {
        "prompt": "car / often / Bob / the / washes",
        "answer": "Bob often washes the car.",
        "whyUz": "'often' — oddiy fe'l 'washes' dan OLDIN. Ega + ravish + fe'l + to'ldiruvchi.",
-       "speak": "car / often / Bob / the / washes"
+       "speak": "car / often / Bob / the / washes",
+       "speakAnswer": "Bob often washes the car."
       },
       {
        "prompt": "born / 1964 / was / in / Jane",
        "answer": "Jane was born in 1964.",
        "whyUz": "'was born' = tug'ilgan. Yil bilan IN predlogi.",
-       "speak": "born / 1964 / was / in / Jane"
+       "speak": "born / 1964 / was / in / Jane",
+       "speakAnswer": "Jane was born in 1964."
       },
       {
        "prompt": "breakfast / I / the morning / have / rarely / in",
        "answer": "I rarely have breakfast in the morning.",
        "whyUz": "'rarely' — fe'l 'have' dan OLDIN. 'in the morning' gap oxirida.",
-       "speak": "breakfast / I / the morning / have / rarely / in"
+       "speak": "breakfast / I / the morning / have / rarely / in",
+       "speakAnswer": "I rarely have breakfast in the morning."
       },
       {
        "prompt": "leave / what / you / work / time / do / for?",
        "answer": "What time do you leave for work?",
        "whyUz": "So'roq so'zi ('What time') eng oldinda, keyin yordamchi 'do', keyin ega. 'leave FOR work' — ishga ketmoq.",
-       "speak": "leave / what / you / work / time / do / for?"
+       "speak": "leave / what / you / work / time / do / for?",
+       "speakAnswer": "What time do you leave for work?"
       },
       {
        "prompt": "never / bed / she / early / goes / to",
        "answer": "She never goes to bed early.",
        "whyUz": "'never' — fe'l 'goes' dan OLDIN. 'go to bed' — 'the' YO'Q. 'early' gap oxirida.",
-       "speak": "never / bed / she / early / goes / to"
+       "speak": "never / bed / she / early / goes / to",
+       "speakAnswer": "She never goes to bed early."
       }
      ]
     },
@@ -2773,43 +3003,50 @@
        "prompt": "clean my room",
        "answer": "I rarely clean my room on Mondays.",
        "promptUz": "Dushanba kunlari kamdan-kam xonamni tozalayman.",
-       "speak": "clean my room"
+       "speak": "clean my room",
+       "speakAnswer": "I rarely clean my room on Mondays."
       },
       {
        "prompt": "play football",
        "answer": "I often play football on Mondays.",
        "promptUz": "Dushanba kunlari tez-tez futbol o'ynayman.",
-       "speak": "play football"
+       "speak": "play football",
+       "speakAnswer": "I often play football on Mondays."
       },
       {
        "prompt": "go for a walk",
        "answer": "I sometimes go for a walk on Mondays.",
        "promptUz": "Dushanba kunlari ba'zan sayrga chiqaman.",
-       "speak": "go for a walk"
+       "speak": "go for a walk",
+       "speakAnswer": "I sometimes go for a walk on Mondays."
       },
       {
        "prompt": "go to school",
        "answer": "I always go to school on Mondays.",
        "promptUz": "Dushanba kunlari doim maktabga boraman.",
-       "speak": "go to school"
+       "speak": "go to school",
+       "speakAnswer": "I always go to school on Mondays."
       },
       {
        "prompt": "watch TV",
        "answer": "I usually watch TV on Mondays.",
        "promptUz": "Dushanba kunlari odatda televizor ko'raman.",
-       "speak": "watch TV"
+       "speak": "watch TV",
+       "speakAnswer": "I usually watch TV on Mondays."
       },
       {
        "prompt": "play computer games",
        "answer": "I sometimes play computer games on Mondays.",
        "promptUz": "Dushanba kunlari ba'zan kompyuter o'yini o'ynayman.",
-       "speak": "play computer games"
+       "speak": "play computer games",
+       "speakAnswer": "I sometimes play computer games on Mondays."
       },
       {
        "prompt": "go out with friends",
        "answer": "I never go out with friends on Mondays.",
        "promptUz": "Dushanba kunlari hech qachon do'stlar bilan sayrga chiqmayman.",
-       "speak": "go out with friends"
+       "speak": "go out with friends",
+       "speakAnswer": "I never go out with friends on Mondays."
       }
      ]
     }
@@ -2883,7 +3120,8 @@
         "in",
         "on"
        ],
-       "whyUz": "Soat → AT. 'a match' = musobaqa, o'yin."
+       "whyUz": "Soat → AT. 'a match' = musobaqa, o'yin.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "We often visit our grandparents ____ the weekend.",
@@ -2894,7 +3132,8 @@
         "in",
         "on"
        ],
-       "whyUz": "'the weekend' — qoidada aynan sanalgan → AT."
+       "whyUz": "'the weekend' — qoidada aynan sanalgan → AT.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "They go on holiday ____ August.",
@@ -2905,7 +3144,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Oy → IN. 'go on holiday' = ta'tilga chiqmoq."
+       "whyUz": "Oy → IN. 'go on holiday' = ta'tilga chiqmoq.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "School starts ____ the autumn.",
@@ -2916,7 +3156,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Fasl → IN. 'autumn' — kuz (AQShda 'fall')."
+       "whyUz": "Fasl → IN. 'autumn' — kuz (AQShda 'fall').",
+       "speakAnswer": "in"
       },
       {
        "prompt": "He was born ____ 1959.",
@@ -2927,7 +3168,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Yil → IN."
+       "whyUz": "Yil → IN.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "He always watches TV ____ the evening.",
@@ -2938,7 +3180,8 @@
         "at",
         "on"
        ],
-       "whyUz": "'the evening' (kun nomisiz) → IN."
+       "whyUz": "'the evening' (kun nomisiz) → IN.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "Is the show ____ Saturday?",
@@ -2949,7 +3192,8 @@
         "in",
         "at"
        ],
-       "whyUz": "Hafta kuni → ON."
+       "whyUz": "Hafta kuni → ON.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "Mum always makes us a special breakfast ____ Sunday mornings.",
@@ -2960,7 +3204,8 @@
         "in",
         "at"
        ],
-       "whyUz": "Kun NOMI bor ('Sunday') → ON. 'in the mornings' bo'lardi, lekin bu yerda kun aytilgan."
+       "whyUz": "Kun NOMI bor ('Sunday') → ON. 'in the mornings' bo'lardi, lekin bu yerda kun aytilgan.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "She was born ____ Friday the 2nd of August ...",
@@ -2971,7 +3216,8 @@
         "in",
         "at"
        ],
-       "whyUz": "Kun va sana → ON."
+       "whyUz": "Kun va sana → ON.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "She was born on Friday the 2nd of August ____ 1991.",
@@ -2982,7 +3228,8 @@
         "on",
         "at"
        ],
-       "whyUz": "Yil → IN. Bir gapda ikkala predlog: ON (sana) va IN (yil)."
+       "whyUz": "Yil → IN. Bir gapda ikkala predlog: ON (sana) va IN (yil).",
+       "speakAnswer": "in"
       },
       {
        "prompt": "I never work ____ night.",
@@ -2993,7 +3240,8 @@
         "in",
         "on"
        ],
-       "whyUz": "ISTISNO: at night."
+       "whyUz": "ISTISNO: at night.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "We have lunch ____ noon.",
@@ -3004,7 +3252,8 @@
         "in",
         "on"
        ],
-       "whyUz": "ISTISNO: at noon."
+       "whyUz": "ISTISNO: at noon.",
+       "speakAnswer": "at"
       }
      ]
     },
@@ -3022,32 +3271,38 @@
       {
        "prompt": "Oyni to'g'ri yozing: august →",
        "answer": "August",
-       "whyUz": "Oylar KATTA harf bilan."
+       "whyUz": "Oylar KATTA harf bilan.",
+       "speakAnswer": "August"
       },
       {
        "prompt": "Kunni to'g'ri yozing: saturday →",
        "answer": "Saturday",
-       "whyUz": "Hafta kunlari KATTA harf bilan."
+       "whyUz": "Hafta kunlari KATTA harf bilan.",
+       "speakAnswer": "Saturday"
       },
       {
        "prompt": "Kunni to'g'ri yozing: sunday mornings →",
        "answer": "Sunday mornings",
-       "whyUz": "'Sunday' katta, 'mornings' kichik."
+       "whyUz": "'Sunday' katta, 'mornings' kichik.",
+       "speakAnswer": "Sunday mornings"
       },
       {
        "prompt": "Faslni to'g'ri yozing: the Autumn →",
        "answer": "the autumn",
-       "whyUz": "Fasllar KICHIK harf bilan — bu oylardan farqli!"
+       "whyUz": "Fasllar KICHIK harf bilan — bu oylardan farqli!",
+       "speakAnswer": "the autumn"
       },
       {
        "prompt": "Faslni to'g'ri yozing: Summer →",
        "answer": "summer",
-       "whyUz": "Fasl — kichik harf."
+       "whyUz": "Fasl — kichik harf.",
+       "speakAnswer": "summer"
       },
       {
        "prompt": "Kun qismini to'g'ri yozing: the Evening →",
        "answer": "the evening",
-       "whyUz": "Kun qismi — kichik harf."
+       "whyUz": "Kun qismi — kichik harf.",
+       "speakAnswer": "the evening"
       }
      ]
     }
@@ -3130,70 +3385,80 @@
        "answer": "at",
        "promptUz": "'7 o'clock' — SOAT",
        "whyUz": "Soat → AT. RAVISH: 'always' — 'gets up' dan oldin.",
-       "speak": "She always gets up 1) ____ 7 o'clock ..."
+       "speak": "She always gets up 1) ____ 7 o'clock ...",
+       "speakAnswer": "at"
       },
       {
        "prompt": "... 2) ____ the morning ...",
        "answer": "in",
        "promptUz": "'the morning' — kun qismi, kun nomi yo'q",
        "whyUz": "Kun qismi → IN the morning.",
-       "speak": "... 2) ____ the morning ..."
+       "speak": "... 2) ____ the morning ...",
+       "speakAnswer": "in"
       },
       {
        "prompt": "... 3) ____ weekdays.",
        "answer": "on",
        "promptUz": "'weekdays' — kunlar",
        "whyUz": "Kunlar → ON weekdays (= dushanbadan jumagacha).",
-       "speak": "... 3) ____ weekdays."
+       "speak": "... 3) ____ weekdays.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "She always has a shower and she usually has breakfast 4) ____ about half past seven.",
        "answer": "at",
        "promptUz": "'half past seven' — SOAT",
        "whyUz": "Soat → AT. RAVISHLAR: 'always' va 'usually' — ikkalasi ham fe'ldan oldin.",
-       "speak": "She always has a shower and she usually has breakfast 4) ____ about half past seven."
+       "speak": "She always has a shower and she usually has breakfast 4) ____ about half past seven.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "She gets to school 5) ____ 8:30 ...",
        "answer": "at",
        "promptUz": "'8:30' — SOAT",
        "whyUz": "Soat → AT. 'get to' = yetib bormoq.",
-       "speak": "She gets to school 5) ____ 8:30 ..."
+       "speak": "She gets to school 5) ____ 8:30 ...",
+       "speakAnswer": "at"
       },
       {
        "prompt": "She leaves work 6) ____ 4 o'clock and rarely gets home after five.",
        "answer": "at",
        "promptUz": "'4 o'clock' — SOAT",
        "whyUz": "Soat → AT. RAVISH: 'rarely' — 'gets' dan oldin. 'leave work' = ishdan chiqmoq.",
-       "speak": "She leaves work 6) ____ 4 o'clock and rarely gets home after five."
+       "speak": "She leaves work 6) ____ 4 o'clock and rarely gets home after five.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "7) ____ the evenings Angela cooks or listens to music.",
        "answer": "In",
        "promptUz": "Kun qismi, gap BOSHIDA",
        "whyUz": "Kun qismi → IN the evenings. Gap boshida katta harf.",
-       "speak": "7) ____ the evenings Angela cooks or listens to music."
+       "speak": "7) ____ the evenings Angela cooks or listens to music.",
+       "speakAnswer": "In"
       },
       {
        "prompt": "She usually goes to bed 8) ____ about half past eleven.",
        "answer": "at",
        "promptUz": "'half past eleven' — SOAT",
        "whyUz": "Soat → AT. RAVISH: 'usually' — 'goes' dan oldin.",
-       "speak": "She usually goes to bed 8) ____ about half past eleven."
+       "speak": "She usually goes to bed 8) ____ about half past eleven.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "9) ____ Saturdays, she often sees her friends.",
        "answer": "On",
        "promptUz": "Kun nomi, gap BOSHIDA",
        "whyUz": "Kun nomi → ON Saturdays. Gap boshida katta harf. RAVISH: 'often'.",
-       "speak": "9) ____ Saturdays, she often sees her friends."
+       "speak": "9) ____ Saturdays, she often sees her friends.",
+       "speakAnswer": "On"
       },
       {
        "prompt": "Angela never gets up early 10) ____ Sunday mornings.",
        "answer": "on",
        "promptUz": "Kun NOMI bor — 'Sunday mornings'",
        "whyUz": "Kun nomi bo'lsa ON ('in the mornings' EMAS). RAVISH: 'never'.",
-       "speak": "Angela never gets up early 10) ____ Sunday mornings."
+       "speak": "Angela never gets up early 10) ____ Sunday mornings.",
+       "speakAnswer": "on"
       }
      ]
     },
@@ -3212,55 +3477,64 @@
        "prompt": "She ____ gets up at 7 o'clock. (100%)",
        "answer": "always",
        "whyUz": "100% → always. Fe'l 'gets up' dan oldin.",
-       "speak": "She ____ gets up at 7 o'clock. (100%)"
+       "speak": "She ____ gets up at 7 o'clock. (100%)",
+       "speakAnswer": "always"
       },
       {
        "prompt": "She ____ has a shower. (100%)",
        "answer": "always",
        "whyUz": "Ikkinchi 'always' — 'has' dan oldin.",
-       "speak": "She ____ has a shower. (100%)"
+       "speak": "She ____ has a shower. (100%)",
+       "speakAnswer": "always"
       },
       {
        "prompt": "She ____ has breakfast at about half past seven. (75%)",
        "answer": "usually",
        "whyUz": "75% → usually.",
-       "speak": "She ____ has breakfast at about half past seven. (75%)"
+       "speak": "She ____ has breakfast at about half past seven. (75%)",
+       "speakAnswer": "usually"
       },
       {
        "prompt": "____ she corrects homework before the lessons. (25%)",
        "answer": "sometimes",
        "whyUz": "25% → sometimes. Bu yerda EGADAN OLDIN turibdi — 'sometimes' uchun bu ham to'g'ri.",
-       "speak": "____ she corrects homework before the lessons. (25%)"
+       "speak": "____ she corrects homework before the lessons. (25%)",
+       "speakAnswer": "sometimes"
       },
       {
        "prompt": "She ____ gets home after five. (10%)",
        "answer": "rarely",
        "whyUz": "10% → rarely. 'not often' bilan bir xil ma'no.",
-       "speak": "She ____ gets home after five. (10%)"
+       "speak": "She ____ gets home after five. (10%)",
+       "speakAnswer": "rarely"
       },
       {
        "prompt": "She ____ goes to bed at about half past eleven. (75%)",
        "answer": "usually",
        "whyUz": "75% → usually.",
-       "speak": "She ____ goes to bed at about half past eleven. (75%)"
+       "speak": "She ____ goes to bed at about half past eleven. (75%)",
+       "speakAnswer": "usually"
       },
       {
        "prompt": "On Saturdays, she ____ sees her friends. (50%)",
        "answer": "often",
        "whyUz": "50% → often.",
-       "speak": "On Saturdays, she ____ sees her friends. (50%)"
+       "speak": "On Saturdays, she ____ sees her friends. (50%)",
+       "speakAnswer": "often"
       },
       {
        "prompt": "They ____ go out for dinner. (75%)",
        "answer": "usually",
        "whyUz": "75% → usually. 'go out for dinner' = kechki ovqatga chiqmoq.",
-       "speak": "They ____ go out for dinner. (75%)"
+       "speak": "They ____ go out for dinner. (75%)",
+       "speakAnswer": "usually"
       },
       {
        "prompt": "Angela ____ gets up early on Sunday mornings. (0%)",
        "answer": "never",
        "whyUz": "0% → never. O'zi inkor — 'doesn't' kerak emas.",
-       "speak": "Angela ____ gets up early on Sunday mornings. (0%)"
+       "speak": "Angela ____ gets up early on Sunday mornings. (0%)",
+       "speakAnswer": "never"
       }
      ]
     },
@@ -3284,7 +3558,8 @@
         "in",
         "on"
        ],
-       "whyUz": "Soat → AT."
+       "whyUz": "Soat → AT.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "1  ... ____ the morning. (2-bo'shliq)",
@@ -3295,7 +3570,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Kun qismi (kun nomisiz) → IN."
+       "whyUz": "Kun qismi (kun nomisiz) → IN.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "2  Joe never goes shopping ____ Saturdays.",
@@ -3306,7 +3582,8 @@
         "in",
         "at"
        ],
-       "whyUz": "Hafta kuni → ON. 'on Saturdays' = har shanba."
+       "whyUz": "Hafta kuni → ON. 'on Saturdays' = har shanba.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "3  Hurry! The film starts ____ 8 o'clock.",
@@ -3317,7 +3594,8 @@
         "in",
         "on"
        ],
-       "whyUz": "Soat → AT. 'Hurry!' = shosh!"
+       "whyUz": "Soat → AT. 'Hurry!' = shosh!",
+       "speakAnswer": "at"
       },
       {
        "prompt": "4  I often get up late ____ Monday mornings.",
@@ -3328,7 +3606,8 @@
         "in",
         "at"
        ],
-       "whyUz": "Kun nomi bor → ON ('in the mornings' EMAS)."
+       "whyUz": "Kun nomi bor → ON ('in the mornings' EMAS).",
+       "speakAnswer": "on"
       },
       {
        "prompt": "5  What do you do ____ the evening?",
@@ -3339,7 +3618,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Kun qismi → IN the evening."
+       "whyUz": "Kun qismi → IN the evening.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "6  Kelly often meets her friends ____ weekends.",
@@ -3350,7 +3630,8 @@
         "on",
         "in"
        ],
-       "whyUz": "Britan inglizchasida 'at weekends' / 'at the weekend'. AQShda 'on weekends'."
+       "whyUz": "Britan inglizchasida 'at weekends' / 'at the weekend'. AQShda 'on weekends'.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "7  Howard was born ____ 1st December, ... (1-bo'shliq)",
@@ -3361,7 +3642,8 @@
         "in",
         "at"
        ],
-       "whyUz": "Sana → ON. '1st December' = the first of December."
+       "whyUz": "Sana → ON. '1st December' = the first of December.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "7  ... ____ 1971. (2-bo'shliq)",
@@ -3372,7 +3654,8 @@
         "on",
         "at"
        ],
-       "whyUz": "Yil → IN. Bir gapda ikkala predlog."
+       "whyUz": "Yil → IN. Bir gapda ikkala predlog.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "8  She loves going for walks ____ the spring.",
@@ -3383,7 +3666,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Fasl → IN. 'spring' kichik harf bilan."
+       "whyUz": "Fasl → IN. 'spring' kichik harf bilan.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "9  We usually go on holiday ____ July.",
@@ -3394,7 +3678,8 @@
         "at",
         "on"
        ],
-       "whyUz": "Oy → IN. 'July' KATTA harf bilan."
+       "whyUz": "Oy → IN. 'July' KATTA harf bilan.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "10  I like working in the garden ____ Sunday afternoons.",
@@ -3405,7 +3690,8 @@
         "in",
         "at"
        ],
-       "whyUz": "Kun nomi bor → ON ('in the afternoons' EMAS)."
+       "whyUz": "Kun nomi bor → ON ('in the afternoons' EMAS).",
+       "speakAnswer": "on"
       }
      ]
     }
@@ -3435,168 +3721,192 @@
        "answer": "Does",
        "promptUz": "'get up' — oddiy fe'l; 'Brian' — 3-shaxs birlik",
        "whyUz": "Oddiy fe'l bor → DOES (3-shaxs birlik). 'to be' EMAS.",
-       "speak": "1 A: ____ Brian get up early?"
+       "speak": "1 A: ____ Brian get up early?",
+       "speakAnswer": "Does"
       },
       {
        "prompt": "1 B: Yes, he ____ .",
        "answer": "does",
        "promptUz": "Qisqa javob",
        "whyUz": "Savolda 'Does' → javobda 'does'.",
-       "speak": "1 B: Yes, he ____ ."
+       "speak": "1 B: Yes, he ____ .",
+       "speakAnswer": "does"
       },
       {
        "prompt": "2 A: ____ you Mr Stewart?",
        "answer": "Are",
        "promptUz": "Oddiy fe'l YO'Q — faqat ism",
        "whyUz": "Fe'l yo'q, ism bor → 'to be'. 'you' bilan ARE.",
-       "speak": "2 A: ____ you Mr Stewart?"
+       "speak": "2 A: ____ you Mr Stewart?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "2 B: Yes, I ____ . Nice to meet you.",
        "answer": "am",
        "promptUz": "'I' bilan qaysi shakl?",
        "whyUz": "'I' bilan AM. 'Nice to meet you' = tanishganimdan xursandman.",
-       "speak": "2 B: Yes, I ____ . Nice to meet you."
+       "speak": "2 B: Yes, I ____ . Nice to meet you.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "3 A: ____ you usually watch TV?",
        "answer": "Do",
        "promptUz": "'watch' — oddiy fe'l",
        "whyUz": "Oddiy fe'l → DO. Ravish 'usually' ega va fe'l orasida.",
-       "speak": "3 A: ____ you usually watch TV?"
+       "speak": "3 A: ____ you usually watch TV?",
+       "speakAnswer": "Do"
       },
       {
        "prompt": "3 B: No, I ____ , but my sisters ____ .  [1-bo'shliq]",
        "answer": "don't",
        "promptUz": "Birinchisi inkor, ikkinchisi tasdiq (ko'plik)",
        "whyUz": "'I' bilan don't. 'my sisters' ko'plik → do.",
-       "speak": "3 B: No, I ____ , but my sisters ____ .  [1-bo'shliq]"
+       "speak": "3 B: No, I ____ , but my sisters ____ .  [1-bo'shliq]",
+       "speakAnswer": "don't"
       },
       {
        "prompt": "3 B: No, I ____ , but my sisters ____ .  [2-bo'shliq]",
        "answer": "do",
        "promptUz": "Birinchisi inkor, ikkinchisi tasdiq (ko'plik)",
        "whyUz": "'I' bilan don't. 'my sisters' ko'plik → do.",
-       "speak": "3 B: No, I ____ , but my sisters ____ .  [2-bo'shliq]"
+       "speak": "3 B: No, I ____ , but my sisters ____ .  [2-bo'shliq]",
+       "speakAnswer": "do"
       },
       {
        "prompt": "4 A: ____ you go to the gym on Saturdays?",
        "answer": "Do",
        "promptUz": "'go' — oddiy fe'l",
        "whyUz": "Oddiy fe'l → DO.",
-       "speak": "4 A: ____ you go to the gym on Saturdays?"
+       "speak": "4 A: ____ you go to the gym on Saturdays?",
+       "speakAnswer": "Do"
       },
       {
        "prompt": "4 B: No, I ____ . I usually go climbing.",
        "answer": "don't",
        "promptUz": "'I' bilan inkor",
        "whyUz": "'I' bilan don't.",
-       "speak": "4 B: No, I ____ . I usually go climbing."
+       "speak": "4 B: No, I ____ . I usually go climbing.",
+       "speakAnswer": "don't"
       },
       {
        "prompt": "5 A: ____ he often make dinner?",
        "answer": "Does",
        "promptUz": "'make' — oddiy fe'l; 'he' — 3-shaxs birlik",
        "whyUz": "3-shaxs birlik → DOES. Ravish 'often' ega va fe'l orasida.",
-       "speak": "5 A: ____ he often make dinner?"
+       "speak": "5 A: ____ he often make dinner?",
+       "speakAnswer": "Does"
       },
       {
        "prompt": "5 B: No, he ____ . He ____ like cooking.  [1-bo'shliq]",
        "answer": "doesn't",
        "promptUz": "Ikkalasi ham 3-shaxs birlik inkor",
        "whyUz": "'he' bilan doesn't. Ikkinchisida ham — 'like' oddiy fe'l.",
-       "speak": "5 B: No, he ____ . He ____ like cooking.  [1-bo'shliq]"
+       "speak": "5 B: No, he ____ . He ____ like cooking.  [1-bo'shliq]",
+       "speakAnswer": "doesn't"
       },
       {
        "prompt": "5 B: No, he ____ . He ____ like cooking.  [2-bo'shliq]",
        "answer": "doesn't",
        "promptUz": "Ikkalasi ham 3-shaxs birlik inkor",
        "whyUz": "'he' bilan doesn't. Ikkinchisida ham — 'like' oddiy fe'l.",
-       "speak": "5 B: No, he ____ . He ____ like cooking.  [2-bo'shliq]"
+       "speak": "5 B: No, he ____ . He ____ like cooking.  [2-bo'shliq]",
+       "speakAnswer": "doesn't"
       },
       {
        "prompt": "6 A: ____ the children in the garden?",
        "answer": "Are",
        "promptUz": "Oddiy fe'l YO'Q — faqat JOY",
        "whyUz": "Fe'l yo'q, joy bor → 'to be'. 'children' ko'plik → ARE.",
-       "speak": "6 A: ____ the children in the garden?"
+       "speak": "6 A: ____ the children in the garden?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "6 B: Yes, they ____ .",
        "answer": "are",
        "promptUz": "Ko'plik qisqa javob",
        "whyUz": "'they' bilan are.",
-       "speak": "6 B: Yes, they ____ ."
+       "speak": "6 B: Yes, they ____ .",
+       "speakAnswer": "are"
       },
       {
        "prompt": "7 A: ____ they from Argentina?",
        "answer": "Are",
        "promptUz": "Kelib chiqish — 'to be' bilan",
        "whyUz": "'be from' — kelib chiqish. 'they' → ARE.",
-       "speak": "7 A: ____ they from Argentina?"
+       "speak": "7 A: ____ they from Argentina?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "7 B: No, they ____ .",
        "answer": "aren't",
        "promptUz": "Ko'plik inkor",
        "whyUz": "'they' bilan aren't.",
-       "speak": "7 B: No, they ____ ."
+       "speak": "7 B: No, they ____ .",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "8 A: Hello, ____ James at home?",
        "answer": "is",
        "promptUz": "Oddiy fe'l YO'Q — faqat JOY ('at home')",
        "whyUz": "Joy bilan 'to be'. 'James' 3-shaxs birlik → IS. Telefonda so'rash.",
-       "speak": "8 A: Hello, ____ James at home?"
+       "speak": "8 A: Hello, ____ James at home?",
+       "speakAnswer": "is"
       },
       {
        "prompt": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [1-bo'shliq]",
        "answer": "isn't",
        "promptUz": "Birinchisi 'to be', ikkinchisida oddiy fe'l 'get' bor",
        "whyUz": "Birinchi gapda fe'l yo'q → isn't. Ikkinchisida 'get home' fe'li bor → doesn't.",
-       "speak": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [1-bo'shliq]"
+       "speak": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [1-bo'shliq]",
+       "speakAnswer": "isn't"
       },
       {
        "prompt": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [2-bo'shliq]",
        "answer": "doesn't",
        "promptUz": "Birinchisi 'to be', ikkinchisida oddiy fe'l 'get' bor",
        "whyUz": "Birinchi gapda fe'l yo'q → isn't. Ikkinchisida 'get home' fe'li bor → doesn't.",
-       "speak": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [2-bo'shliq]"
+       "speak": "8 B: No, he ____ . He ____ get home before 6 o'clock.  [2-bo'shliq]",
+       "speakAnswer": "doesn't"
       },
       {
        "prompt": "9 A: ____ these your glasses?",
        "answer": "Are",
        "promptUz": "'these' — ko'plik, oddiy fe'l yo'q",
        "whyUz": "'these' ko'plik + fe'l yo'q → ARE. 'glasses' doim ko'plikda.",
-       "speak": "9 A: ____ these your glasses?"
+       "speak": "9 A: ____ these your glasses?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "9 B: No, they ____ .",
        "answer": "aren't",
        "promptUz": "Ko'plik inkor",
        "whyUz": "'they' bilan aren't.",
-       "speak": "9 B: No, they ____ ."
+       "speak": "9 B: No, they ____ .",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "10 A: I ____ an Oasis fan.",
        "answer": "am",
        "promptUz": "'I' + ot ('a fan')",
        "whyUz": "Fe'l yo'q, ot bor → 'to be'. 'I' → AM. Oasis — britaniyalik rok guruh.",
-       "speak": "10 A: I ____ an Oasis fan."
+       "speak": "10 A: I ____ an Oasis fan.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "10 B: I ____ , too but I ____ a Spice Girls fan.  [1-bo'shliq]",
        "answer": "am",
        "promptUz": "Birinchisi tasdiq, ikkinchisi inkor",
        "whyUz": "'I am, too' = men ham. Inkor: 'I'm not' ('I amn't' YO'Q — ingliz tilida bunday shakl yo'q).",
-       "speak": "10 B: I ____ , too but I ____ a Spice Girls fan.  [1-bo'shliq]"
+       "speak": "10 B: I ____ , too but I ____ a Spice Girls fan.  [1-bo'shliq]",
+       "speakAnswer": "am"
       },
       {
        "prompt": "10 B: I ____ , too but I ____ a Spice Girls fan.  [2-bo'shliq]",
        "answer": "'m not",
        "promptUz": "Birinchisi tasdiq, ikkinchisi inkor",
        "whyUz": "'I am, too' = men ham. Inkor: 'I'm not' ('I amn't' YO'Q — ingliz tilida bunday shakl yo'q).",
-       "speak": "10 B: I ____ , too but I ____ a Spice Girls fan.  [2-bo'shliq]"
+       "speak": "10 B: I ____ , too but I ____ a Spice Girls fan.  [2-bo'shliq]",
+       "speakAnswer": "'m not"
       }
      ]
     },
@@ -3615,25 +3925,29 @@
        "prompt": "2. Elizabeth loves going dancing at weekends. (Karl)",
        "answer": "Does Karl love going dancing at weekends, too?",
        "promptUz": "Karl ham dam olish kunlari raqsga borishni yaxshi ko'radimi?",
-       "speak": "2. Elizabeth loves going dancing at weekends. (Karl)"
+       "speak": "2. Elizabeth loves going dancing at weekends. (Karl)",
+       "speakAnswer": "Does Karl love going dancing at weekends, too?"
       },
       {
        "prompt": "3. David plays computer games in his free time. (Joe and Ian)",
        "answer": "Do Joe and Ian play computer games in their free time, too?",
        "promptUz": "Jou va Ian ham bo'sh vaqtida kompyuter o'yini o'ynaydimi?",
-       "speak": "3. David plays computer games in his free time. (Joe and Ian)"
+       "speak": "3. David plays computer games in his free time. (Joe and Ian)",
+       "speakAnswer": "Do Joe and Ian play computer games in their free time, too?"
       },
       {
        "prompt": "4. Diane hates camping. (Pam)",
        "answer": "Does Pam hate camping, too?",
        "promptUz": "Pam ham chodirda dam olishni yomon ko'radimi?",
-       "speak": "4. Diane hates camping. (Pam)"
+       "speak": "4. Diane hates camping. (Pam)",
+       "speakAnswer": "Does Pam hate camping, too?"
       },
       {
        "prompt": "5. Brandon wakes up early on Sundays. (your parents)",
        "answer": "Do your parents wake up early on Sundays, too?",
        "promptUz": "Sizning ota-onangiz ham yakshanba kunlari erta turadimi?",
-       "speak": "5. Brandon wakes up early on Sundays. (your parents)"
+       "speak": "5. Brandon wakes up early on Sundays. (your parents)",
+       "speakAnswer": "Do your parents wake up early on Sundays, too?"
       }
      ]
     }
@@ -3663,105 +3977,120 @@
        "answer": "is",
        "promptUz": "'Jack Warren' — 3-shaxs birlik, 'to be' fe'li",
        "whyUz": "he/she/it → is. Kasb oldida 'an' (unli tovush).",
-       "speak": "Jack Warren 1) ____ (be) an actor at the local theatre."
+       "speak": "Jack Warren 1) ____ (be) an actor at the local theatre.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "He 2) ____ (get up) late, at about midday, ...",
        "answer": "gets up",
        "promptUz": "3-shaxs birlik",
        "whyUz": "Oddiy -s. 'midday' = tush payti (noon bilan bir xil).",
-       "speak": "He 2) ____ (get up) late, at about midday, ..."
+       "speak": "He 2) ____ (get up) late, at about midday, ...",
+       "speakAnswer": "gets up"
       },
       {
        "prompt": "... and 3) ____ (have) a shower.",
        "answer": "has",
        "promptUz": "'have' ning 3-shaxs shakli",
        "whyUz": "ISTISNO: have → has. 'have a shower' = dush qabul qilmoq.",
-       "speak": "... and 3) ____ (have) a shower."
+       "speak": "... and 3) ____ (have) a shower.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "Jack 4) ____ (have) lunch at about 1 pm ...",
        "answer": "has",
        "promptUz": "'have' yana",
        "whyUz": "have → has. 'have lunch' — artikl YO'Q.",
-       "speak": "Jack 4) ____ (have) lunch at about 1 pm ..."
+       "speak": "Jack 4) ____ (have) lunch at about 1 pm ...",
+       "speakAnswer": "has"
       },
       {
        "prompt": "... and then he 5) ____ (go) to the theatre for rehearsal.",
        "answer": "goes",
        "promptUz": "-o bilan tugaydigan fe'l",
        "whyUz": "-o → -es: goes. 'rehearsal' = mashq (teatr, musiqa).",
-       "speak": "... and then he 5) ____ (go) to the theatre for rehearsal."
+       "speak": "... and then he 5) ____ (go) to the theatre for rehearsal.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "Rehearsal 6) ____ (finish) at about 4 pm ...",
        "answer": "finishes",
        "promptUz": "-sh bilan tugaydigan fe'l",
        "whyUz": "-sh → -es: finishes. 'Rehearsal' — 3-shaxs birlik.",
-       "speak": "Rehearsal 6) ____ (finish) at about 4 pm ..."
+       "speak": "Rehearsal 6) ____ (finish) at about 4 pm ...",
+       "speakAnswer": "finishes"
       },
       {
        "prompt": "... and Jack usually 7) ____ (go) home to rest before the show.",
        "answer": "goes",
        "promptUz": "'go' yana",
        "whyUz": "goes. 'go home' — 'to' YO'Q. 'to rest' — maqsad.",
-       "speak": "... and Jack usually 7) ____ (go) home to rest before the show."
+       "speak": "... and Jack usually 7) ____ (go) home to rest before the show.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "The show 8) ____ (start) at 8 pm ...",
        "answer": "starts",
        "promptUz": "3-shaxs birlik",
        "whyUz": "Oddiy -s. 'The show' — 3-shaxs birlik.",
-       "speak": "The show 8) ____ (start) at 8 pm ..."
+       "speak": "The show 8) ____ (start) at 8 pm ...",
+       "speakAnswer": "starts"
       },
       {
        "prompt": "... and 9) ____ (finish) at about 10 pm.",
        "answer": "finishes",
        "promptUz": "'finish' yana",
        "whyUz": "-sh → -es. Ega hali ham 'The show'.",
-       "speak": "... and 9) ____ (finish) at about 10 pm."
+       "speak": "... and 9) ____ (finish) at about 10 pm.",
+       "speakAnswer": "finishes"
       },
       {
        "prompt": "Afterwards, he 10) ____ (have) dinner with some of the other actors from the show.",
        "answer": "has",
        "promptUz": "'have' uchinchi marta",
        "whyUz": "have → has. 'afterwards' = shundan keyin.",
-       "speak": "Afterwards, he 10) ____ (have) dinner with some of the other actors from the show."
+       "speak": "Afterwards, he 10) ____ (have) dinner with some of the other actors from the show.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "He 11) ____ (go) to bed at about 1 am.",
        "answer": "goes",
        "promptUz": "'go' uchinchi marta",
        "whyUz": "goes. 'go to bed' — 'the' YO'Q.",
-       "speak": "He 11) ____ (go) to bed at about 1 am."
+       "speak": "He 11) ____ (go) to bed at about 1 am.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "In his free time, Jack 12) ____ (read) books ...",
        "answer": "reads",
        "promptUz": "3-shaxs birlik",
        "whyUz": "Oddiy -s. Talaffuzi /z/.",
-       "speak": "In his free time, Jack 12) ____ (read) books ..."
+       "speak": "In his free time, Jack 12) ____ (read) books ...",
+       "speakAnswer": "reads"
       },
       {
        "prompt": "... and 13) ____ (watch) TV.",
        "answer": "watches",
        "promptUz": "-ch bilan tugaydigan fe'l",
        "whyUz": "-ch → -es: watches.",
-       "speak": "... and 13) ____ (watch) TV."
+       "speak": "... and 13) ____ (watch) TV.",
+       "speakAnswer": "watches"
       },
       {
        "prompt": "He 14) ____ (enjoy) his life.",
        "answer": "enjoys",
        "promptUz": "UNLI + y bilan tugaydigan fe'l",
        "whyUz": "o (unli) + y → oddiy -s: enjoys. 'enjoies' XATO.",
-       "speak": "He 14) ____ (enjoy) his life."
+       "speak": "He 14) ____ (enjoy) his life.",
+       "speakAnswer": "enjoys"
       },
       {
        "prompt": "\"I 15) ____ (be) very satisfied with my career, and I love the people I work with.\"",
        "answer": "am",
        "promptUz": "Bu safar EGA 'I' — Jek o'zi gapiryapti",
        "whyUz": "'I' bilan AM. 'satisfied WITH' — predlog shart. 'a career' = kasbiy faoliyat.",
-       "speak": "\"I 15) ____ (be) very satisfied with my career, and I love the people I work with.\""
+       "speak": "\"I 15) ____ (be) very satisfied with my career, and I love the people I work with.\"",
+       "speakAnswer": "am"
       }
      ]
     },
@@ -3780,43 +4109,50 @@
        "prompt": "1  Jack Warren gets up early in the morning.",
        "answer": "Jack Warren gets up late, at about midday.",
        "whyUz": "Matnda: 'He gets up LATE, at about MIDDAY'. U aktyor — kechasi ishlaydi.",
-       "speak": "1  Jack Warren gets up early in the morning."
+       "speak": "1  Jack Warren gets up early in the morning.",
+       "speakAnswer": "Jack Warren gets up late, at about midday."
       },
       {
        "prompt": "2  Jack has lunch at about 10 am.",
        "answer": "Jack has lunch at about 1 pm.",
        "whyUz": "Matnda: 'lunch at about 1 pm'. 10 am — u hali uxlayapti.",
-       "speak": "2  Jack has lunch at about 10 am."
+       "speak": "2  Jack has lunch at about 10 am.",
+       "speakAnswer": "Jack has lunch at about 1 pm."
       },
       {
        "prompt": "3  Rehearsal finishes at about 7 pm.",
        "answer": "Rehearsal finishes at about 4 pm.",
        "whyUz": "Matnda: 'Rehearsal finishes at about 4 pm'.",
-       "speak": "3  Rehearsal finishes at about 7 pm."
+       "speak": "3  Rehearsal finishes at about 7 pm.",
+       "speakAnswer": "Rehearsal finishes at about 4 pm."
       },
       {
        "prompt": "4  The show starts at 9 pm and finishes at about 11 pm.",
        "answer": "The show starts at 8 pm and finishes at about 10 pm.",
        "whyUz": "IKKI xato: 9 emas 8, 11 emas 10.",
-       "speak": "4  The show starts at 9 pm and finishes at about 11 pm."
+       "speak": "4  The show starts at 9 pm and finishes at about 11 pm.",
+       "speakAnswer": "The show starts at 8 pm and finishes at about 10 pm."
       },
       {
        "prompt": "5  Jack goes to bed at about 3 am.",
        "answer": "Jack goes to bed at about 1 am.",
        "whyUz": "Matnda: 'He goes to bed at about 1 am'.",
-       "speak": "5  Jack goes to bed at about 3 am."
+       "speak": "5  Jack goes to bed at about 3 am.",
+       "speakAnswer": "Jack goes to bed at about 1 am."
       },
       {
        "prompt": "6  Jack goes fishing and plays computer games in his free time.",
        "answer": "Jack reads books and watches TV in his free time.",
        "whyUz": "IKKI xato: matnda 'reads books and watches TV'.",
-       "speak": "6  Jack goes fishing and plays computer games in his free time."
+       "speak": "6  Jack goes fishing and plays computer games in his free time.",
+       "speakAnswer": "Jack reads books and watches TV in his free time."
       },
       {
        "prompt": "7  Jack isn't very satisfied with his career.",
        "answer": "Jack is very satisfied with his career.",
        "whyUz": "Matnda: 'I am very satisfied with my career'. Inkor emas, TASDIQ.",
-       "speak": "7  Jack isn't very satisfied with his career."
+       "speak": "7  Jack isn't very satisfied with his career.",
+       "speakAnswer": "Jack is very satisfied with his career."
       }
      ]
     }
@@ -3850,7 +4186,8 @@
         "this",
         "that"
        ],
-       "whyUz": "'Are' va 'shoes' KO'PLIK → 'these' yoki 'those'. Variantlar ichida faqat 'these' ko'plik."
+       "whyUz": "'Are' va 'shoes' KO'PLIK → 'these' yoki 'those'. Variantlar ichida faqat 'these' ko'plik.",
+       "speakAnswer": "these"
       },
       {
        "prompt": "2  \"Who's that?\" \"She's ____ cousin.\"",
@@ -3861,7 +4198,8 @@
         "mine",
         "yours"
        ],
-       "whyUz": "'cousin' oti bor → egalik SIFATI 'my'. 'mine cousin' XATO."
+       "whyUz": "'cousin' oti bor → egalik SIFATI 'my'. 'mine cousin' XATO.",
+       "speakAnswer": "my"
       },
       {
        "prompt": "3  That is ____ bicycle.",
@@ -3872,7 +4210,8 @@
         "Jerry",
         "he"
        ],
-       "whyUz": "Egalik kerak → ism + 's. 'Jerry bicycle' ma'nosiz."
+       "whyUz": "Egalik kerak → ism + 's. 'Jerry bicycle' ma'nosiz.",
+       "speakAnswer": "Jerry's"
       },
       {
        "prompt": "4  \"Are they American?\" \"No, they ____ .\"",
@@ -3883,7 +4222,8 @@
         "isn't",
         "are"
        ],
-       "whyUz": "'they' → are → inkor 'aren't'. 'No' bilan boshlangani uchun inkor."
+       "whyUz": "'they' → are → inkor 'aren't'. 'No' bilan boshlangani uchun inkor.",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "5  I have got a dog. ____ name is Spot.",
@@ -3894,7 +4234,8 @@
         "It's",
         "Their"
        ],
-       "whyUz": "It (hayvon) uchun egalik sifati → ITS (apostrofsiz!). 'It's' = it is — ma'nosiz bo'lardi."
+       "whyUz": "It (hayvon) uchun egalik sifati → ITS (apostrofsiz!). 'It's' = it is — ma'nosiz bo'lardi.",
+       "speakAnswer": "Its"
       },
       {
        "prompt": "6  ____ are Sandy's books.",
@@ -3905,7 +4246,8 @@
         "That",
         "This"
        ],
-       "whyUz": "Ko'plik → 'These' yoki 'Those'. Variantlar ichida faqat 'Those'."
+       "whyUz": "Ko'plik → 'These' yoki 'Those'. Variantlar ichida faqat 'Those'.",
+       "speakAnswer": "Those"
       },
       {
        "prompt": "7  This is my ____ pencil.",
@@ -3916,7 +4258,8 @@
         "sons",
         "son"
        ],
-       "whyUz": "Egalik kerak: 'my son's pencil' = o'g'limning qalami. 'my son pencil' ma'nosiz."
+       "whyUz": "Egalik kerak: 'my son's pencil' = o'g'limning qalami. 'my son pencil' ma'nosiz.",
+       "speakAnswer": "son's"
       },
       {
        "prompt": "8  \"How old are you?\" \"I ____ 16 years old.\"",
@@ -3927,7 +4270,8 @@
         "are",
         "is"
        ],
-       "whyUz": "'I' bilan AM. Yosh 'to be' bilan aytiladi."
+       "whyUz": "'I' bilan AM. Yosh 'to be' bilan aytiladi.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "9  ____ is an armchair in the living-room.",
@@ -3938,7 +4282,8 @@
         "Those",
         "These"
        ],
-       "whyUz": "'There is' = bor (Unit 3). 'Those/These is' grammatik xato — ular ko'plik."
+       "whyUz": "'There is' = bor (Unit 3). 'Those/These is' grammatik xato — ular ko'plik.",
+       "speakAnswer": "There"
       },
       {
        "prompt": "10  What's that ____ name?",
@@ -3949,7 +4294,8 @@
         "girls",
         "girls'"
        ],
-       "whyUz": "'that girl' — BITTA qiz ('that' birlik) → 's. Ko'plik bo'lsa 'those girls'' bo'lardi."
+       "whyUz": "'that girl' — BITTA qiz ('that' birlik) → 's. Ko'plik bo'lsa 'those girls'' bo'lardi.",
+       "speakAnswer": "girl's"
       }
      ]
     },
@@ -3968,79 +4314,92 @@
        "prompt": "1  ____ (Peter/work) in the city centre?",
        "answer": "Does Peter work",
        "whyUz": "'work' oddiy fe'l, 'Peter' 3-shaxs birlik → DOES + asos shakl.",
-       "speak": "1  ____ (Peter/work) in the city centre?"
+       "speak": "1  ____ (Peter/work) in the city centre?",
+       "speakAnswer": "Does Peter work"
       },
       {
        "prompt": "2  My father ____ (get up) early on Sundays, but my mother doesn't.",
        "answer": "gets up",
        "whyUz": "'My father' 3-shaxs birlik, tasdiq → gets up. 'but my mother doesn't' — inkor takrorlanmaydi.",
-       "speak": "2  My father ____ (get up) early on Sundays, but my mother doesn't."
+       "speak": "2  My father ____ (get up) early on Sundays, but my mother doesn't.",
+       "speakAnswer": "gets up"
       },
       {
        "prompt": "3  ____ (you/like) fishing?",
        "answer": "Do you like",
        "whyUz": "'you' bilan DO. 'like' dan keyin -ING (fishing).",
-       "speak": "3  ____ (you/like) fishing?"
+       "speak": "3  ____ (you/like) fishing?",
+       "speakAnswer": "Do you like"
       },
       {
        "prompt": "4  Where ____ (they/be) from?",
        "answer": "are they",
        "whyUz": "'to be' fe'li — do/does KERAK EMAS. Savolda 'are' oldinga chiqadi: Where ARE THEY from?",
-       "speak": "4  Where ____ (they/be) from?"
+       "speak": "4  Where ____ (they/be) from?",
+       "speakAnswer": "are they"
       },
       {
        "prompt": "5  Mark usually ____ (play) football after school.",
        "answer": "plays",
        "whyUz": "'Mark' 3-shaxs birlik. UNLI + y → oddiy -s: plays.",
-       "speak": "5  Mark usually ____ (play) football after school."
+       "speak": "5  Mark usually ____ (play) football after school.",
+       "speakAnswer": "plays"
       },
       {
        "prompt": "5  Ben ____ (listen) to music.",
        "answer": "listens",
        "whyUz": "'Ben' 3-shaxs birlik → listens. 'listen TO' — predlog shart.",
-       "speak": "5  Ben ____ (listen) to music."
+       "speak": "5  Ben ____ (listen) to music.",
+       "speakAnswer": "listens"
       },
       {
        "prompt": "6  My sister ____ (be) very polite ...",
        "answer": "is",
        "whyUz": "'to be' + sifat. 3-shaxs birlik → is.",
-       "speak": "6  My sister ____ (be) very polite ..."
+       "speak": "6  My sister ____ (be) very polite ...",
+       "speakAnswer": "is"
       },
       {
        "prompt": "6  ... but my brother ____ (not/be).",
        "answer": "isn't",
        "whyUz": "'to be' inkori → isn't. 'doesn't' KERAK EMAS. Sifat takrorlanmaydi.",
-       "speak": "6  ... but my brother ____ (not/be)."
+       "speak": "6  ... but my brother ____ (not/be).",
+       "speakAnswer": "isn't"
       },
       {
        "prompt": "7  ____ (Kirk/live) in Paris?",
        "answer": "Does Kirk live",
        "whyUz": "'live' oddiy fe'l, 'Kirk' 3-shaxs birlik → DOES + asos shakl.",
-       "speak": "7  ____ (Kirk/live) in Paris?"
+       "speak": "7  ____ (Kirk/live) in Paris?",
+       "speakAnswer": "Does Kirk live"
       },
       {
        "prompt": "8  Lisa ____ (not/have) brown eyes.",
        "answer": "doesn't have",
        "whyUz": "'have' — oddiy fe'l → doesn't have. 'hasn't got' ham to'g'ri.",
-       "speak": "8  Lisa ____ (not/have) brown eyes."
+       "speak": "8  Lisa ____ (not/have) brown eyes.",
+       "speakAnswer": "doesn't have"
       },
       {
        "prompt": "8  She ____ (have) green eyes.",
        "answer": "has",
        "whyUz": "3-shaxs birlik tasdiq → has. 'has got' ham to'g'ri.",
-       "speak": "8  She ____ (have) green eyes."
+       "speak": "8  She ____ (have) green eyes.",
+       "speakAnswer": "has"
       },
       {
        "prompt": "9  How many rooms ____ (be) there in your house?",
        "answer": "are",
        "whyUz": "'rooms' KO'PLIK → are. 'How many rooms ARE THERE ...?' — Unit 3 tuzilmasi.",
-       "speak": "9  How many rooms ____ (be) there in your house?"
+       "speak": "9  How many rooms ____ (be) there in your house?",
+       "speakAnswer": "are"
       },
       {
        "prompt": "10  What ____ (Tony/like) doing in his free time?",
        "answer": "does Tony like",
        "whyUz": "'like' oddiy fe'l, 'Tony' 3-shaxs birlik → DOES. So'roq so'zi ('What') eng oldinda.",
-       "speak": "10  What ____ (Tony/like) doing in his free time?"
+       "speak": "10  What ____ (Tony/like) doing in his free time?",
+       "speakAnswer": "does Tony like"
       }
      ]
     }
@@ -4069,19 +4428,22 @@
        "prompt": "11  ____ (you/like) travelling?",
        "answer": "Do you like",
        "whyUz": "'you' bilan DO. 'like' dan keyin -ING (travelling).",
-       "speak": "11  ____ (you/like) travelling?"
+       "speak": "11  ____ (you/like) travelling?",
+       "speakAnswer": "Do you like"
       },
       {
        "prompt": "12  ____ (Ann/take) the bus to school?",
        "answer": "Does Ann take",
        "whyUz": "'Ann' 3-shaxs birlik → DOES + asos shakl 'take' (-s siz).",
-       "speak": "12  ____ (Ann/take) the bus to school?"
+       "speak": "12  ____ (Ann/take) the bus to school?",
+       "speakAnswer": "Does Ann take"
       },
       {
        "prompt": "12  Yes, she ____ (take) the bus every morning at 8:30.",
        "answer": "takes",
        "whyUz": "Javobda TASDIQ gap → 3-shaxs birlik -s: takes. Savolda -s yo'q edi, javobda BOR.",
-       "speak": "12  Yes, she ____ (take) the bus every morning at 8:30."
+       "speak": "12  Yes, she ____ (take) the bus every morning at 8:30.",
+       "speakAnswer": "takes"
       }
      ]
     },
@@ -4101,98 +4463,112 @@
        "answer": "works",
        "promptUz": "'She' — 3-shaxs birlik",
        "whyUz": "Oddiy -s. 'work AT' — ish joyi bilan AT.",
-       "speak": "This is Mandy Taylor. She 1) ____ (work) at the Sip Café."
+       "speak": "This is Mandy Taylor. She 1) ____ (work) at the Sip Café.",
+       "speakAnswer": "works"
       },
       {
        "prompt": "Mandy 2) ____ (go) to the café every morning at six o'clock.",
        "answer": "goes",
        "promptUz": "'Mandy' — 3-shaxs birlik, -o bilan tugaydigan fe'l",
        "whyUz": "-o → -es: goes.",
-       "speak": "Mandy 2) ____ (go) to the café every morning at six o'clock."
+       "speak": "Mandy 2) ____ (go) to the café every morning at six o'clock.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "She 3) ____ (open) the café ...",
        "answer": "opens",
        "promptUz": "'She' — 3-shaxs birlik",
        "whyUz": "Oddiy -s.",
-       "speak": "She 3) ____ (open) the café ..."
+       "speak": "She 3) ____ (open) the café ...",
+       "speakAnswer": "opens"
       },
       {
        "prompt": "... and 4) ____ (set) the tables.",
        "answer": "sets",
        "promptUz": "Ega hali ham 'She'",
        "whyUz": "Oddiy -s. 'set the tables' = stol tayyorlamoq (tarelka, vilka qo'ymoq).",
-       "speak": "... and 4) ____ (set) the tables."
+       "speak": "... and 4) ____ (set) the tables.",
+       "speakAnswer": "sets"
       },
       {
        "prompt": "The other waiters 5) ____ (arrive) at seven o'clock ...",
        "answer": "arrive",
        "promptUz": "'waiters' — KO'PLIK!",
        "whyUz": "KO'PLIK ega → fe'l -s OLMAYDI. 'arrives' XATO bo'lardi.",
-       "speak": "The other waiters 5) ____ (arrive) at seven o'clock ..."
+       "speak": "The other waiters 5) ____ (arrive) at seven o'clock ...",
+       "speakAnswer": "arrive"
       },
       {
        "prompt": "... and they 6) ____ (tidy) the kitchen.",
        "answer": "tidy",
        "promptUz": "'they' — KO'PLIK",
        "whyUz": "Ko'plik → -s YO'Q. ('tidies' faqat 'he/she/it' bilan bo'lardi.)",
-       "speak": "... and they 6) ____ (tidy) the kitchen."
+       "speak": "... and they 6) ____ (tidy) the kitchen.",
+       "speakAnswer": "tidy"
       },
       {
        "prompt": "The first customers 7) ____ (come) in at about 7:30.",
        "answer": "come",
        "promptUz": "'customers' — KO'PLIK",
        "whyUz": "Ko'plik → -s YO'Q. 'come in' = kirmoq.",
-       "speak": "The first customers 7) ____ (come) in at about 7:30."
+       "speak": "The first customers 7) ____ (come) in at about 7:30.",
+       "speakAnswer": "come"
       },
       {
        "prompt": "Mandy 8) ____ (take) a break at 10 o'clock.",
        "answer": "takes",
        "promptUz": "'Mandy' — birlik",
        "whyUz": "3-shaxs birlik → -s. 'take a break' = tanaffus qilmoq.",
-       "speak": "Mandy 8) ____ (take) a break at 10 o'clock."
+       "speak": "Mandy 8) ____ (take) a break at 10 o'clock.",
+       "speakAnswer": "takes"
       },
       {
        "prompt": "She 9) ____ (finish) work at 2 o'clock ...",
        "answer": "finishes",
        "promptUz": "-sh bilan tugaydigan fe'l",
        "whyUz": "-sh → -es: finishes. 'finish work' — artikl YO'Q.",
-       "speak": "She 9) ____ (finish) work at 2 o'clock ..."
+       "speak": "She 9) ____ (finish) work at 2 o'clock ...",
+       "speakAnswer": "finishes"
       },
       {
        "prompt": "... and sometimes she 10) ____ (meet) her friends for lunch.",
        "answer": "meets",
        "promptUz": "'she' — birlik",
        "whyUz": "Oddiy -s. 'sometimes' ega va fe'l orasida.",
-       "speak": "... and sometimes she 10) ____ (meet) her friends for lunch."
+       "speak": "... and sometimes she 10) ____ (meet) her friends for lunch.",
+       "speakAnswer": "meets"
       },
       {
        "prompt": "She usually 11) ____ (get) home at about 3 o'clock.",
        "answer": "gets",
        "promptUz": "'She' — birlik",
        "whyUz": "Oddiy -s. 'get home' — 'to' YO'Q. 'usually' fe'ldan oldin.",
-       "speak": "She usually 11) ____ (get) home at about 3 o'clock."
+       "speak": "She usually 11) ____ (get) home at about 3 o'clock.",
+       "speakAnswer": "gets"
       },
       {
        "prompt": "In her free time, she 12) ____ (listen) to music.",
        "answer": "listens",
        "promptUz": "'she' — birlik",
        "whyUz": "Oddiy -s. 'listen TO' — predlog shart.",
-       "speak": "In her free time, she 12) ____ (listen) to music."
+       "speak": "In her free time, she 12) ____ (listen) to music.",
+       "speakAnswer": "listens"
       },
       {
        "prompt": "She 13) ____ (be) very happy with her job.",
        "answer": "is",
        "promptUz": "'to be' fe'li, 3-shaxs birlik",
        "whyUz": "he/she/it → is. 'happy WITH' — predlog shart.",
-       "speak": "She 13) ____ (be) very happy with her job."
+       "speak": "She 13) ____ (be) very happy with her job.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "\"I 14) ____ (get) up early every day, but I don't mind because I have the whole afternoon free.\"",
        "answer": "get",
        "promptUz": "Bu safar ega 'I' — Mendi o'zi gapiryapti",
        "whyUz": "'I' bilan -s YO'Q. 'I don't mind' = qarshi emasman. 'the whole afternoon' = butun kunduz.",
-       "speak": "\"I 14) ____ (get) up early every day, but I don't mind because I have the whole afternoon free.\""
+       "speak": "\"I 14) ____ (get) up early every day, but I don't mind because I have the whole afternoon free.\"",
+       "speakAnswer": "get"
       }
      ]
     },
@@ -4212,70 +4588,80 @@
        "answer": "Do the first customers come in at 7:30?",
        "promptUz": "Savol tuzing",
        "whyUz": "Matnda: 'The first customers come in at about 7:30' — MOS keladi. 'customers' ko'plik → they.",
-       "speak": "first customers / come in / at 7:30?"
+       "speak": "first customers / come in / at 7:30?",
+       "speakAnswer": "Do the first customers come in at 7:30?"
       },
       {
        "prompt": "first customers / come in / at 7:30?",
        "answer": "Yes, they do.",
        "promptUz": "Javob tuzing",
        "whyUz": "Matnda: 'The first customers come in at about 7:30' — MOS keladi. 'customers' ko'plik → they.",
-       "speak": "first customers / come in / at 7:30?"
+       "speak": "first customers / come in / at 7:30?",
+       "speakAnswer": "Yes, they do."
       },
       {
        "prompt": "you / take a break / at 11 o'clock?",
        "answer": "Do you take a break at 11 o'clock?",
        "promptUz": "Savol tuzing",
        "whyUz": "Matnda 10:00 — mos kelmaydi. Inkor + to'g'ri vaqt.",
-       "speak": "you / take a break / at 11 o'clock?"
+       "speak": "you / take a break / at 11 o'clock?",
+       "speakAnswer": "Do you take a break at 11 o'clock?"
       },
       {
        "prompt": "you / take a break / at 11 o'clock?",
        "answer": "No, I don't. I take a break at 10 o'clock.",
        "promptUz": "Javob tuzing",
        "whyUz": "Matnda 10:00 — mos kelmaydi. Inkor + to'g'ri vaqt.",
-       "speak": "you / take a break / at 11 o'clock?"
+       "speak": "you / take a break / at 11 o'clock?",
+       "speakAnswer": "No, I don't. I take a break at 10 o'clock."
       },
       {
        "prompt": "you / finish work / at 2 o'clock?",
        "answer": "Do you finish work at 2 o'clock?",
        "promptUz": "Savol tuzing",
        "whyUz": "Matnda: 'She finishes work at 2 o'clock' — MOS keladi.",
-       "speak": "you / finish work / at 2 o'clock?"
+       "speak": "you / finish work / at 2 o'clock?",
+       "speakAnswer": "Do you finish work at 2 o'clock?"
       },
       {
        "prompt": "you / finish work / at 2 o'clock?",
        "answer": "Yes, I do.",
        "promptUz": "Javob tuzing",
        "whyUz": "Matnda: 'She finishes work at 2 o'clock' — MOS keladi.",
-       "speak": "you / finish work / at 2 o'clock?"
+       "speak": "you / finish work / at 2 o'clock?",
+       "speakAnswer": "Yes, I do."
       },
       {
        "prompt": "you / get home / at 4 o'clock?",
        "answer": "Do you get home at 4 o'clock?",
        "promptUz": "Savol tuzing",
        "whyUz": "Matnda 3:00 — mos kelmaydi. Inkor + to'g'ri vaqt.",
-       "speak": "you / get home / at 4 o'clock?"
+       "speak": "you / get home / at 4 o'clock?",
+       "speakAnswer": "Do you get home at 4 o'clock?"
       },
       {
        "prompt": "you / get home / at 4 o'clock?",
        "answer": "No, I don't. I get home at about 3 o'clock.",
        "promptUz": "Javob tuzing",
        "whyUz": "Matnda 3:00 — mos kelmaydi. Inkor + to'g'ri vaqt.",
-       "speak": "you / get home / at 4 o'clock?"
+       "speak": "you / get home / at 4 o'clock?",
+       "speakAnswer": "No, I don't. I get home at about 3 o'clock."
       },
       {
        "prompt": "you / listen to music / in your free time?",
        "answer": "Do you listen to music in your free time?",
        "promptUz": "Savol tuzing",
        "whyUz": "Matnda: 'In her free time, she listens to music' — MOS keladi.",
-       "speak": "you / listen to music / in your free time?"
+       "speak": "you / listen to music / in your free time?",
+       "speakAnswer": "Do you listen to music in your free time?"
       },
       {
        "prompt": "you / listen to music / in your free time?",
        "answer": "Yes, I do.",
        "promptUz": "Javob tuzing",
        "whyUz": "Matnda: 'In her free time, she listens to music' — MOS keladi.",
-       "speak": "you / listen to music / in your free time?"
+       "speak": "you / listen to music / in your free time?",
+       "speakAnswer": "Yes, I do."
       }
      ]
     }
@@ -4304,61 +4690,71 @@
        "prompt": "3  This is his football. →",
        "answer": "It is his.",
        "whyUz": "'This' birlik → It. 'his' O'ZGARMAYDI — sifat ham, olmosh ham 'his'.",
-       "speak": "3  This is his football. →"
+       "speak": "3  This is his football. →",
+       "speakAnswer": "It is his."
       },
       {
        "prompt": "4  Those are their pens. →",
        "answer": "They are theirs.",
        "whyUz": "'Those' ko'plik → They. 'their' → 'theirs'.",
-       "speak": "4  Those are their pens. →"
+       "speak": "4  Those are their pens. →",
+       "speakAnswer": "They are theirs."
       },
       {
        "prompt": "5  This is your TV. →",
        "answer": "It is yours.",
        "whyUz": "'This' birlik → It. 'your' → 'yours'.",
-       "speak": "5  This is your TV. →"
+       "speak": "5  This is your TV. →",
+       "speakAnswer": "It is yours."
       },
       {
        "prompt": "6  These are your glasses. →",
        "answer": "They are yours.",
        "whyUz": "'These' ko'plik → They. 'your' → 'yours'. 'glasses' doim ko'plikda.",
-       "speak": "6  These are your glasses. →"
+       "speak": "6  These are your glasses. →",
+       "speakAnswer": "They are yours."
       },
       {
        "prompt": "7  This is our house. →",
        "answer": "It is ours.",
        "whyUz": "'This' birlik → It. 'our' → 'ours'.",
-       "speak": "7  This is our house. →"
+       "speak": "7  This is our house. →",
+       "speakAnswer": "It is ours."
       },
       {
        "prompt": "8  Those are his books. →",
        "answer": "They are his.",
        "whyUz": "'Those' ko'plik → They. 'his' o'zgarmaydi.",
-       "speak": "8  Those are his books. →"
+       "speak": "8  Those are his books. →",
+       "speakAnswer": "They are his."
       },
       {
        "prompt": "9  This is their car. →",
        "answer": "It is theirs.",
        "whyUz": "'This' birlik → It. 'their' → 'theirs'.",
-       "speak": "9  This is their car. →"
+       "speak": "9  This is their car. →",
+       "speakAnswer": "It is theirs."
       },
       {
        "prompt": "10  These are her shoes. →",
        "answer": "They are hers.",
        "whyUz": "'These' ko'plik → They. 'her' → 'hers'.",
-       "speak": "10  These are her shoes. →"
+       "speak": "10  These are her shoes. →",
+       "speakAnswer": "They are hers."
       },
       {
        "prompt": "11  This is my pencil. →",
        "answer": "It is mine.",
        "whyUz": "'This' birlik → It. 'my' → 'mine'.",
-       "speak": "11  This is my pencil. →"
+       "speak": "11  This is my pencil. →",
+       "speakAnswer": "It is mine."
       },
       {
        "prompt": "12  Those are your dolls. →",
        "answer": "They are yours.",
        "whyUz": "'Those' ko'plik → They. 'your' → 'yours'. 'a doll' = qo'g'irchoq.",
-       "speak": "12  Those are your dolls. →"
+       "speak": "12  Those are your dolls. →",
+       "speakAnswer": "They are yours."
       }
      ]
     }
@@ -4386,53 +4782,62 @@
       {
        "prompt": "Bob — kasbi (namuna)",
        "answer": "Bob is a doctor. He works at a hospital.",
-       "promptUz": "Bob — kasbi (namuna)"
+       "promptUz": "Bob — kasbi (namuna)",
+       "speakAnswer": "Bob is a doctor. He works at a hospital."
       },
       {
        "prompt": "Bob — ish boshlanishi (namuna)",
        "answer": "He starts work at half past six in the morning.",
-       "promptUz": "Bob — ish boshlanishi (namuna)"
+       "promptUz": "Bob — ish boshlanishi (namuna)",
+       "speakAnswer": "He starts work at half past six in the morning."
       },
       {
        "prompt": "Bob — ish tugashi (namuna)",
        "answer": "He finishes work at half past eight in the evening.",
        "promptUz": "Bob — ish tugashi (namuna)",
-       "whyUz": "20:30 = 8:30 pm → half past eight in the evening."
+       "whyUz": "20:30 = 8:30 pm → half past eight in the evening.",
+       "speakAnswer": "He finishes work at half past eight in the evening."
       },
       {
        "prompt": "Brett — kasbi",
        "answer": "Brett is a life-guard. He works at a swimming pool.",
        "promptUz": "Brett — kasbi",
-       "whyUz": "'life-guard' = qutqaruvchi (basseyn yoki plyajda)."
+       "whyUz": "'life-guard' = qutqaruvchi (basseyn yoki plyajda).",
+       "speakAnswer": "Brett is a life-guard. He works at a swimming pool."
       },
       {
        "prompt": "Brett — ish boshlanishi",
        "answer": "He starts work at nine o'clock in the morning.",
-       "promptUz": "Brett — ish boshlanishi"
+       "promptUz": "Brett — ish boshlanishi",
+       "speakAnswer": "He starts work at nine o'clock in the morning."
       },
       {
        "prompt": "Brett — ish tugashi",
        "answer": "He finishes work at a quarter past seven in the evening.",
        "promptUz": "Brett — ish tugashi",
-       "whyUz": "19:15 = 7:15 pm → a quarter past seven."
+       "whyUz": "19:15 = 7:15 pm → a quarter past seven.",
+       "speakAnswer": "He finishes work at a quarter past seven in the evening."
       },
       {
        "prompt": "Jean — kasbi",
        "answer": "Jean is a reporter. She works at a newspaper office.",
        "promptUz": "Jean — kasbi",
-       "whyUz": "Jean — AYOL ismi → She."
+       "whyUz": "Jean — AYOL ismi → She.",
+       "speakAnswer": "Jean is a reporter. She works at a newspaper office."
       },
       {
        "prompt": "Jean — ish boshlanishi",
        "answer": "She starts work at a quarter to eleven in the morning.",
        "promptUz": "Jean — ish boshlanishi",
-       "whyUz": "10:45 → a quarter TO ELEVEN (soat oshadi)."
+       "whyUz": "10:45 → a quarter TO ELEVEN (soat oshadi).",
+       "speakAnswer": "She starts work at a quarter to eleven in the morning."
       },
       {
        "prompt": "Jean — ish tugashi",
        "answer": "She finishes work at half past six in the evening.",
        "promptUz": "Jean — ish tugashi",
-       "whyUz": "18:30 = 6:30 pm → half past six."
+       "whyUz": "18:30 = 6:30 pm → half past six.",
+       "speakAnswer": "She finishes work at half past six in the evening."
       }
      ]
     },
@@ -4451,31 +4856,36 @@
        "prompt": "2. play / tennis / afternoon (25%)",
        "answer": "Faye sometimes plays tennis in the afternoon.",
        "promptUz": "Fey ba'zan kunduzi tennis o'ynaydi.",
-       "speak": "2. play / tennis / afternoon (25%)"
+       "speak": "2. play / tennis / afternoon (25%)",
+       "speakAnswer": "Faye sometimes plays tennis in the afternoon."
       },
       {
        "prompt": "3. eat / a croissant / morning (100%)",
        "answer": "Faye always eats a croissant in the morning.",
        "promptUz": "Fey har doim ertalab kruassan yeydi.",
-       "speak": "3. eat / a croissant / morning (100%)"
+       "speak": "3. eat / a croissant / morning (100%)",
+       "speakAnswer": "Faye always eats a croissant in the morning."
       },
       {
        "prompt": "4. drink / coffee / night (0%)",
        "answer": "Faye never drinks coffee at night.",
        "promptUz": "Fey kechasi hech qachon qahva ichmaydi.",
-       "speak": "4. drink / coffee / night (0%)"
+       "speak": "4. drink / coffee / night (0%)",
+       "speakAnswer": "Faye never drinks coffee at night."
       },
       {
        "prompt": "5. go / theatre / weekend (50%)",
        "answer": "Faye often goes to the theatre at the weekend.",
        "promptUz": "Fey dam olish kunlari tez-tez teatrga boradi.",
-       "speak": "5. go / theatre / weekend (50%)"
+       "speak": "5. go / theatre / weekend (50%)",
+       "speakAnswer": "Faye often goes to the theatre at the weekend."
       },
       {
        "prompt": "6. listen / music / evening (10%)",
        "answer": "Faye rarely listens to music in the evening.",
        "promptUz": "Fey kechqurun kamdan-kam musiqa tinglaydi.",
-       "speak": "6. listen / music / evening (10%)"
+       "speak": "6. listen / music / evening (10%)",
+       "speakAnswer": "Faye rarely listens to music in the evening."
       }
      ]
     },
@@ -4494,31 +4904,36 @@
        "prompt": "early / up / Sarah / gets / never",
        "answer": "Sarah never gets up early.",
        "whyUz": "Kitobdagi namuna. Ega + ravish + fe'l + qanday.",
-       "speak": "early / up / Sarah / gets / never"
+       "speak": "early / up / Sarah / gets / never",
+       "speakAnswer": "Sarah never gets up early."
       },
       {
        "prompt": "Alan / lunch / two o'clock / usually / has / at",
        "answer": "Alan usually has lunch at two o'clock.",
        "whyUz": "'usually' fe'l 'has' dan oldin. Vaqt gap oxirida: 'at two o'clock'.",
-       "speak": "Alan / lunch / two o'clock / usually / has / at"
+       "speak": "Alan / lunch / two o'clock / usually / has / at",
+       "speakAnswer": "Alan usually has lunch at two o'clock."
       },
       {
        "prompt": "friends / often / meet / my / school / after / I",
        "answer": "I often meet my friends after school.",
        "whyUz": "'often' fe'l 'meet' dan oldin. 'my friends' — to'ldiruvchi. 'after school' — vaqt.",
-       "speak": "friends / often / meet / my / school / after / I"
+       "speak": "friends / often / meet / my / school / after / I",
+       "speakAnswer": "I often meet my friends after school."
       },
       {
        "prompt": "Claire / picnics / rarely / on / goes",
        "answer": "Claire rarely goes on picnics.",
        "whyUz": "'rarely' fe'l 'goes' dan oldin. 'go ON picnics' — 'on' bilan.",
-       "speak": "Claire / picnics / rarely / on / goes"
+       "speak": "Claire / picnics / rarely / on / goes",
+       "speakAnswer": "Claire rarely goes on picnics."
       },
       {
        "prompt": "sometimes / to / go / cinema / the / we",
        "answer": "We sometimes go to the cinema.",
        "whyUz": "'sometimes' fe'l 'go' dan oldin. 'go TO THE cinema' — 'to' va 'the' shart.",
-       "speak": "sometimes / to / go / cinema / the / we"
+       "speak": "sometimes / to / go / cinema / the / we",
+       "speakAnswer": "We sometimes go to the cinema."
       }
      ]
     }
@@ -4548,55 +4963,63 @@
        "answer": "On",
        "promptUz": "Kun nomi, gap BOSHIDA",
        "whyUz": "Kun nomi → ON Saturdays (= har shanba). Gap boshida katta harf. RAVISH: 'always'.",
-       "speak": "1) ____ Saturdays, Sally always gets up very early ..."
+       "speak": "1) ____ Saturdays, Sally always gets up very early ...",
+       "speakAnswer": "On"
       },
       {
        "prompt": "... 2) ____ the morning — ...",
        "answer": "in",
        "promptUz": "Kun qismi, kun nomi yo'q",
-       "whyUz": "Kun qismi → IN the morning."
+       "whyUz": "Kun qismi → IN the morning.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "... 3) ____ about half past six.",
        "answer": "at",
        "promptUz": "'half past six' — SOAT",
        "whyUz": "Soat → AT. 'about' = taxminan.",
-       "speak": "... 3) ____ about half past six."
+       "speak": "... 3) ____ about half past six.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "She finishes her paper round 4) ____ eight o'clock, ...",
        "answer": "at",
        "promptUz": "'eight o'clock' — SOAT",
        "whyUz": "Soat → AT. 'a paper round' = gazeta tashish yo'nalishi.",
-       "speak": "She finishes her paper round 4) ____ eight o'clock, ..."
+       "speak": "She finishes her paper round 4) ____ eight o'clock, ...",
+       "speakAnswer": "at"
       },
       {
        "prompt": "After breakfast, she usually goes shopping with her mum, and then, 5) ____ noon, she meets her friends.",
        "answer": "at",
        "promptUz": "'noon' — ISTISNO so'z",
        "whyUz": "ISTISNO: AT noon. RAVISH: 'usually'.",
-       "speak": "After breakfast, she usually goes shopping with her mum, and then, 5) ____ noon, she meets her friends."
+       "speak": "After breakfast, she usually goes shopping with her mum, and then, 5) ____ noon, she meets her friends.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "They sometimes go to the cinema 6) ____ Saturday afternoons.",
        "answer": "on",
        "promptUz": "Kun NOMI bilan kunduzi",
        "whyUz": "Kun nomi bor → ON ('in the afternoons' EMAS). RAVISH: 'sometimes'.",
-       "speak": "They sometimes go to the cinema 6) ____ Saturday afternoons."
+       "speak": "They sometimes go to the cinema 6) ____ Saturday afternoons.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "She usually has dinner with her family 7) ____ the evening, ...",
        "answer": "in",
        "promptUz": "Kun qismi, kun nomi yo'q",
        "whyUz": "Kun qismi → IN the evening. RAVISH: 'usually'.",
-       "speak": "She usually has dinner with her family 7) ____ the evening, ..."
+       "speak": "She usually has dinner with her family 7) ____ the evening, ...",
+       "speakAnswer": "in"
       },
       {
        "prompt": "She always goes to bed late 8) ____ Saturday night.",
        "answer": "on",
        "promptUz": "Kun NOMI bilan tun",
        "whyUz": "Kun nomi bor → ON Saturday night ('at night' EMAS!). RAVISH: 'always'.",
-       "speak": "She always goes to bed late 8) ____ Saturday night."
+       "speak": "She always goes to bed late 8) ____ Saturday night.",
+       "speakAnswer": "on"
       }
      ]
     },
@@ -4615,49 +5038,57 @@
        "prompt": "Sally ____ gets up very early. (100%)",
        "answer": "always",
        "whyUz": "Matndagi birinchi ravish. 'gets up' dan oldin.",
-       "speak": "Sally ____ gets up very early. (100%)"
+       "speak": "Sally ____ gets up very early. (100%)",
+       "speakAnswer": "always"
       },
       {
        "prompt": "She ____ goes shopping with her mum. (75%)",
        "answer": "usually",
        "whyUz": "Nonushtadan keyingi ish.",
-       "speak": "She ____ goes shopping with her mum. (75%)"
+       "speak": "She ____ goes shopping with her mum. (75%)",
+       "speakAnswer": "usually"
       },
       {
        "prompt": "They ____ go to the cinema on Saturday afternoons. (25%)",
        "answer": "sometimes",
        "whyUz": "'They' KO'PLIK → 'go' (-s YO'Q).",
-       "speak": "They ____ go to the cinema on Saturday afternoons. (25%)"
+       "speak": "They ____ go to the cinema on Saturday afternoons. (25%)",
+       "speakAnswer": "sometimes"
       },
       {
        "prompt": "She ____ has dinner with her family in the evening. (75%)",
        "answer": "usually",
        "whyUz": "Ikkinchi 'usually'.",
-       "speak": "She ____ has dinner with her family in the evening. (75%)"
+       "speak": "She ____ has dinner with her family in the evening. (75%)",
+       "speakAnswer": "usually"
       },
       {
        "prompt": "She ____ goes to bed late on Saturday night. (100%)",
        "answer": "always",
        "whyUz": "Ikkinchi 'always'. 'late' = kech.",
-       "speak": "She ____ goes to bed late on Saturday night. (100%)"
+       "speak": "She ____ goes to bed late on Saturday night. (100%)",
+       "speakAnswer": "always"
       },
       {
        "prompt": "Salli doim nima qiladi? (ikki ish)",
        "answer": "She always gets up very early and always goes to bed late.",
        "whyUz": "'always' bilan ikki ish: erta turadi va kech yotadi.",
-       "speak": "Salli doim nima qiladi? (ikki ish)"
+       "speak": "Salli doim nima qiladi? (ikki ish)",
+       "speakAnswer": "She always gets up very early and always goes to bed late."
       },
       {
        "prompt": "Salli odatda nima qiladi? (ikki ish)",
        "answer": "She usually goes shopping with her mum and usually has dinner with her family.",
        "whyUz": "'usually' bilan ikki ish.",
-       "speak": "Salli odatda nima qiladi? (ikki ish)"
+       "speak": "Salli odatda nima qiladi? (ikki ish)",
+       "speakAnswer": "She usually goes shopping with her mum and usually has dinner with her family."
       },
       {
        "prompt": "Salli ba'zan nima qiladi?",
        "answer": "She sometimes goes to the cinema with her friends.",
        "whyUz": "Matnda 'They sometimes go...' — 'they' = Salli va do'stlari. Salli haqida aytganda 'She goes'.",
-       "speak": "Salli ba'zan nima qiladi?"
+       "speak": "Salli ba'zan nima qiladi?",
+       "speakAnswer": "She sometimes goes to the cinema with her friends."
       }
      ]
     },
@@ -4676,38 +5107,44 @@
        "prompt": "always (100%)",
        "answer": "I always get up late at the weekend.",
        "promptUz": "always (100%)",
-       "speak": "always (100%)"
+       "speak": "always (100%)",
+       "speakAnswer": "I always get up late at the weekend."
       },
       {
        "prompt": "usually (75%)",
        "answer": "I usually have breakfast with my family on Sundays.",
        "promptUz": "usually (75%)",
-       "speak": "usually (75%)"
+       "speak": "usually (75%)",
+       "speakAnswer": "I usually have breakfast with my family on Sundays."
       },
       {
        "prompt": "often (50%)",
        "answer": "I often go out with my friends on Saturday afternoons.",
        "promptUz": "often (50%)",
-       "speak": "often (50%)"
+       "speak": "often (50%)",
+       "speakAnswer": "I often go out with my friends on Saturday afternoons."
       },
       {
        "prompt": "sometimes (25%)",
        "answer": "I sometimes go to the cinema on Saturday night.",
        "promptUz": "sometimes (25%)",
-       "speak": "sometimes (25%)"
+       "speak": "sometimes (25%)",
+       "speakAnswer": "I sometimes go to the cinema on Saturday night."
       },
       {
        "prompt": "rarely (10%)",
        "answer": "I rarely do my homework at the weekend.",
        "promptUz": "rarely (10%)",
-       "speak": "rarely (10%)"
+       "speak": "rarely (10%)",
+       "speakAnswer": "I rarely do my homework at the weekend."
       },
       {
        "prompt": "never (0%)",
        "answer": "I never get up early on Sundays.",
        "promptUz": "never (0%)",
        "whyUz": "'never' bilan 'don't' KERAK EMAS.",
-       "speak": "never (0%)"
+       "speak": "never (0%)",
+       "speakAnswer": "I never get up early on Sundays."
       }
      ]
     },
@@ -4727,174 +5164,199 @@
        "answer": "Do",
        "promptUz": "'like' — oddiy fe'l",
        "whyUz": "Oddiy fe'l bor → DO. 'like' dan keyin -ING.",
-       "speak": "1 A: ____ you like playing football?"
+       "speak": "1 A: ____ you like playing football?",
+       "speakAnswer": "Do"
       },
       {
        "prompt": "1 B: Yes, I ____ .",
        "answer": "do",
        "promptUz": "'I' bilan qisqa javob",
        "whyUz": "'I' bilan do.",
-       "speak": "1 B: Yes, I ____ ."
+       "speak": "1 B: Yes, I ____ .",
+       "speakAnswer": "do"
       },
       {
        "prompt": "2 A: ____ these your shoes?",
        "answer": "Are",
        "promptUz": "Oddiy fe'l YO'Q, 'these' — ko'plik",
        "whyUz": "Fe'l yo'q → 'to be'. 'these' ko'plik → ARE.",
-       "speak": "2 A: ____ these your shoes?"
+       "speak": "2 A: ____ these your shoes?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "2 B: No, they ____ . They ____ John's.  [1-bo'shliq]",
        "answer": "aren't",
        "promptUz": "Birinchisi inkor, ikkinchisi tasdiq",
        "whyUz": "'they' bilan aren't / are. 'John's' — egalik shakli.",
-       "speak": "2 B: No, they ____ . They ____ John's.  [1-bo'shliq]"
+       "speak": "2 B: No, they ____ . They ____ John's.  [1-bo'shliq]",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "2 B: No, they ____ . They ____ John's.  [2-bo'shliq]",
        "answer": "are",
        "promptUz": "Birinchisi inkor, ikkinchisi tasdiq",
        "whyUz": "'they' bilan aren't / are. 'John's' — egalik shakli.",
-       "speak": "2 B: No, they ____ . They ____ John's.  [2-bo'shliq]"
+       "speak": "2 B: No, they ____ . They ____ John's.  [2-bo'shliq]",
+       "speakAnswer": "are"
       },
       {
        "prompt": "3 A: ____ James like jazz music?",
        "answer": "Does",
        "promptUz": "'like' — oddiy fe'l; 'James' — 3-shaxs birlik",
        "whyUz": "Oddiy fe'l + 3-shaxs birlik → DOES.",
-       "speak": "3 A: ____ James like jazz music?"
+       "speak": "3 A: ____ James like jazz music?",
+       "speakAnswer": "Does"
       },
       {
        "prompt": "3 B: No, he ____ .",
        "answer": "doesn't",
        "promptUz": "3-shaxs birlik inkor",
        "whyUz": "'he' bilan doesn't.",
-       "speak": "3 B: No, he ____ ."
+       "speak": "3 B: No, he ____ .",
+       "speakAnswer": "doesn't"
       },
       {
        "prompt": "4 A: ____ Kirsty a nurse?",
        "answer": "Is",
        "promptUz": "Oddiy fe'l YO'Q — kasb aytilgan",
        "whyUz": "Kasb bilan 'to be'. 'Kirsty' 3-shaxs birlik → IS.",
-       "speak": "4 A: ____ Kirsty a nurse?"
+       "speak": "4 A: ____ Kirsty a nurse?",
+       "speakAnswer": "Is"
       },
       {
        "prompt": "4 B: No, she ____ .",
        "answer": "isn't",
        "promptUz": "'to be' inkori",
        "whyUz": "'she' bilan isn't.",
-       "speak": "4 B: No, she ____ ."
+       "speak": "4 B: No, she ____ .",
+       "speakAnswer": "isn't"
       },
       {
        "prompt": "5 A: ____ you happy with your life?",
        "answer": "Are",
        "promptUz": "'happy' — SIFAT, oddiy fe'l yo'q",
        "whyUz": "Sifat bilan 'to be'. 'you' → ARE. 'happy WITH' — predlog shart.",
-       "speak": "5 A: ____ you happy with your life?"
+       "speak": "5 A: ____ you happy with your life?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "5 B: Yes, I ____ , but my job ____ very tiring.  [1-bo'shliq]",
        "answer": "am",
        "promptUz": "Birinchisi 'I', ikkinchisi 'my job'",
        "whyUz": "'I' → am. 'my job' 3-shaxs birlik → is. 'tiring' — sifat.",
-       "speak": "5 B: Yes, I ____ , but my job ____ very tiring.  [1-bo'shliq]"
+       "speak": "5 B: Yes, I ____ , but my job ____ very tiring.  [1-bo'shliq]",
+       "speakAnswer": "am"
       },
       {
        "prompt": "5 B: Yes, I ____ , but my job ____ very tiring.  [2-bo'shliq]",
        "answer": "is",
        "promptUz": "Birinchisi 'I', ikkinchisi 'my job'",
        "whyUz": "'I' → am. 'my job' 3-shaxs birlik → is. 'tiring' — sifat.",
-       "speak": "5 B: Yes, I ____ , but my job ____ very tiring.  [2-bo'shliq]"
+       "speak": "5 B: Yes, I ____ , but my job ____ very tiring.  [2-bo'shliq]",
+       "speakAnswer": "is"
       },
       {
        "prompt": "6 A: I ____ like doing the washing-up.",
        "answer": "don't",
        "promptUz": "'like' — oddiy fe'l, inkor",
        "whyUz": "'I' bilan don't. 'like' dan keyin -ING.",
-       "speak": "6 A: I ____ like doing the washing-up."
+       "speak": "6 A: I ____ like doing the washing-up.",
+       "speakAnswer": "don't"
       },
       {
        "prompt": "6 B: I agree — it ____ boring.",
        "answer": "is",
        "promptUz": "'boring' — sifat",
-       "whyUz": "Sifat bilan 'to be'. 'it' → is. 'I agree' = roziman."
+       "whyUz": "Sifat bilan 'to be'. 'it' → is. 'I agree' = roziman.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "7 A: ____ George often play football?",
        "answer": "Does",
        "promptUz": "'play' — oddiy fe'l; 'George' — 3-shaxs birlik",
        "whyUz": "Oddiy fe'l + birlik → DOES. Ravish 'often' ega va fe'l orasida.",
-       "speak": "7 A: ____ George often play football?"
+       "speak": "7 A: ____ George often play football?",
+       "speakAnswer": "Does"
       },
       {
        "prompt": "7 B: No, he ____ , but Jack ____ .  [1-bo'shliq]",
        "answer": "doesn't",
        "promptUz": "Birinchisi inkor, ikkinchisi tasdiq",
        "whyUz": "'he' → doesn't. 'Jack' → does. Fe'l takrorlanmaydi.",
-       "speak": "7 B: No, he ____ , but Jack ____ .  [1-bo'shliq]"
+       "speak": "7 B: No, he ____ , but Jack ____ .  [1-bo'shliq]",
+       "speakAnswer": "doesn't"
       },
       {
        "prompt": "7 B: No, he ____ , but Jack ____ .  [2-bo'shliq]",
        "answer": "does",
        "promptUz": "Birinchisi inkor, ikkinchisi tasdiq",
        "whyUz": "'he' → doesn't. 'Jack' → does. Fe'l takrorlanmaydi.",
-       "speak": "7 B: No, he ____ , but Jack ____ .  [2-bo'shliq]"
+       "speak": "7 B: No, he ____ , but Jack ____ .  [2-bo'shliq]",
+       "speakAnswer": "does"
       },
       {
        "prompt": "8 A: ____ you from Egypt?",
        "answer": "Are",
        "promptUz": "Kelib chiqish — 'to be' bilan",
        "whyUz": "'be from' — kelib chiqish. 'you' → ARE.",
-       "speak": "8 A: ____ you from Egypt?"
+       "speak": "8 A: ____ you from Egypt?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "8 B: No, I ____ . I ____ from Canada.  [1-bo'shliq]",
        "answer": "'m not",
        "promptUz": "Birinchisi inkor, ikkinchisi tasdiq",
        "whyUz": "'I am not' → 'I'm not' (yagona shakl). Keyin 'I am from Canada'.",
-       "speak": "8 B: No, I ____ . I ____ from Canada.  [1-bo'shliq]"
+       "speak": "8 B: No, I ____ . I ____ from Canada.  [1-bo'shliq]",
+       "speakAnswer": "'m not"
       },
       {
        "prompt": "8 B: No, I ____ . I ____ from Canada.  [2-bo'shliq]",
        "answer": "am",
        "promptUz": "Birinchisi inkor, ikkinchisi tasdiq",
        "whyUz": "'I am not' → 'I'm not' (yagona shakl). Keyin 'I am from Canada'.",
-       "speak": "8 B: No, I ____ . I ____ from Canada.  [2-bo'shliq]"
+       "speak": "8 B: No, I ____ . I ____ from Canada.  [2-bo'shliq]",
+       "speakAnswer": "am"
       },
       {
        "prompt": "9 A: Excuse me, ____ that man a doctor?",
        "answer": "is",
        "promptUz": "Kasb aytilgan — 'to be'",
        "whyUz": "Kasb bilan 'to be'. 'that man' 3-shaxs birlik → IS.",
-       "speak": "9 A: Excuse me, ____ that man a doctor?"
+       "speak": "9 A: Excuse me, ____ that man a doctor?",
+       "speakAnswer": "is"
       },
       {
        "prompt": "9 B: No, he ____ , but I ____ . How can I help you?  [1-bo'shliq]",
        "answer": "isn't",
        "promptUz": "Birinchisi 'he', ikkinchisi 'I'",
        "whyUz": "'he' → isn't. 'I' → am (men shifokorman). 'How can I help you?' = qanday yordam bera olaman?",
-       "speak": "9 B: No, he ____ , but I ____ . How can I help you?  [1-bo'shliq]"
+       "speak": "9 B: No, he ____ , but I ____ . How can I help you?  [1-bo'shliq]",
+       "speakAnswer": "isn't"
       },
       {
        "prompt": "9 B: No, he ____ , but I ____ . How can I help you?  [2-bo'shliq]",
        "answer": "am",
        "promptUz": "Birinchisi 'he', ikkinchisi 'I'",
        "whyUz": "'he' → isn't. 'I' → am (men shifokorman). 'How can I help you?' = qanday yordam bera olaman?",
-       "speak": "9 B: No, he ____ , but I ____ . How can I help you?  [2-bo'shliq]"
+       "speak": "9 B: No, he ____ , but I ____ . How can I help you?  [2-bo'shliq]",
+       "speakAnswer": "am"
       },
       {
        "prompt": "10 A: ____ you Mr Smith?",
        "answer": "Are",
        "promptUz": "Ism aytilgan — 'to be'",
        "whyUz": "Ism bilan 'to be'. 'you' → ARE.",
-       "speak": "10 A: ____ you Mr Smith?"
+       "speak": "10 A: ____ you Mr Smith?",
+       "speakAnswer": "Are"
       },
       {
        "prompt": "10 B: No, I ____ .",
        "answer": "'m not",
        "promptUz": "'I' bilan inkor qisqartma",
        "whyUz": "'I'm not' — 'I amn't' shakli YO'Q.",
-       "speak": "10 B: No, I ____ ."
+       "speak": "10 B: No, I ____ .",
+       "speakAnswer": "'m not"
       }
      ]
     },
@@ -4918,7 +5380,8 @@
         "AT",
         "ON"
        ],
-       "whyUz": "Oy → IN. (Sana bo'lsa ON: 13th May)."
+       "whyUz": "Oy → IN. (Sana bo'lsa ON: 13th May).",
+       "speakAnswer": "IN"
       },
       {
        "prompt": "spring",
@@ -4929,7 +5392,8 @@
         "AT",
         "ON"
        ],
-       "whyUz": "Fasl → IN."
+       "whyUz": "Fasl → IN.",
+       "speakAnswer": "IN"
       },
       {
        "prompt": "Monday",
@@ -4940,7 +5404,8 @@
         "IN",
         "AT"
        ],
-       "whyUz": "Hafta kuni → ON."
+       "whyUz": "Hafta kuni → ON.",
+       "speakAnswer": "ON"
       },
       {
        "prompt": "5 o'clock",
@@ -4951,7 +5416,8 @@
         "IN",
         "ON"
        ],
-       "whyUz": "Soat → AT."
+       "whyUz": "Soat → AT.",
+       "speakAnswer": "AT"
       },
       {
        "prompt": "the weekend",
@@ -4962,7 +5428,8 @@
         "IN",
         "ON"
        ],
-       "whyUz": "ISTISNO: AT the weekend (Britaniyada)."
+       "whyUz": "ISTISNO: AT the weekend (Britaniyada).",
+       "speakAnswer": "AT"
       },
       {
        "prompt": "1959",
@@ -4973,7 +5440,8 @@
         "AT",
         "ON"
        ],
-       "whyUz": "Yil → IN."
+       "whyUz": "Yil → IN.",
+       "speakAnswer": "IN"
       },
       {
        "prompt": "the evening",
@@ -4984,7 +5452,8 @@
         "AT",
         "ON"
        ],
-       "whyUz": "Kun qismi → IN the evening."
+       "whyUz": "Kun qismi → IN the evening.",
+       "speakAnswer": "IN"
       },
       {
        "prompt": "13th May",
@@ -4995,7 +5464,8 @@
         "IN",
         "AT"
        ],
-       "whyUz": "SANA → ON. Faqat 'May' bo'lsa IN bo'lardi."
+       "whyUz": "SANA → ON. Faqat 'May' bo'lsa IN bo'lardi.",
+       "speakAnswer": "ON"
       },
       {
        "prompt": "winter",
@@ -5006,7 +5476,8 @@
         "AT",
         "ON"
        ],
-       "whyUz": "Fasl → IN."
+       "whyUz": "Fasl → IN.",
+       "speakAnswer": "IN"
       },
       {
        "prompt": "Friday",
@@ -5017,7 +5488,8 @@
         "IN",
         "AT"
        ],
-       "whyUz": "Hafta kuni → ON."
+       "whyUz": "Hafta kuni → ON.",
+       "speakAnswer": "ON"
       },
       {
        "prompt": "the morning",
@@ -5028,7 +5500,8 @@
         "AT",
         "ON"
        ],
-       "whyUz": "Kun qismi → IN the morning."
+       "whyUz": "Kun qismi → IN the morning.",
+       "speakAnswer": "IN"
       },
       {
        "prompt": "night",
@@ -5039,7 +5512,8 @@
         "IN",
         "ON"
        ],
-       "whyUz": "ISTISNO: AT night."
+       "whyUz": "ISTISNO: AT night.",
+       "speakAnswer": "AT"
       },
       {
        "prompt": "11:30",
@@ -5050,7 +5524,8 @@
         "IN",
         "ON"
        ],
-       "whyUz": "Soat → AT."
+       "whyUz": "Soat → AT.",
+       "speakAnswer": "AT"
       },
       {
        "prompt": "noon",
@@ -5061,7 +5536,8 @@
         "IN",
         "ON"
        ],
-       "whyUz": "ISTISNO: AT noon."
+       "whyUz": "ISTISNO: AT noon.",
+       "speakAnswer": "AT"
       },
       {
        "prompt": "Wednesday morning",
@@ -5072,7 +5548,8 @@
         "IN",
         "AT"
        ],
-       "whyUz": "Kun nomi bor → ON. 'the morning' yolg'iz bo'lsa IN bo'lardi."
+       "whyUz": "Kun nomi bor → ON. 'the morning' yolg'iz bo'lsa IN bo'lardi.",
+       "speakAnswer": "ON"
       },
       {
        "prompt": "2 o'clock",
@@ -5083,7 +5560,8 @@
         "IN",
         "ON"
        ],
-       "whyUz": "Soat → AT."
+       "whyUz": "Soat → AT.",
+       "speakAnswer": "AT"
       },
       {
        "prompt": "4th January",
@@ -5094,7 +5572,8 @@
         "IN",
         "AT"
        ],
-       "whyUz": "SANA → ON."
+       "whyUz": "SANA → ON.",
+       "speakAnswer": "ON"
       },
       {
        "prompt": "Tuesday night",
@@ -5105,7 +5584,8 @@
         "AT",
         "IN"
        ],
-       "whyUz": "Kun nomi bor → ON. 'night' yolg'iz bo'lsa AT bo'lardi!"
+       "whyUz": "Kun nomi bor → ON. 'night' yolg'iz bo'lsa AT bo'lardi!",
+       "speakAnswer": "ON"
       }
      ]
     }
@@ -5281,47 +5761,56 @@
       {
        "prompt": "Ertalab — turish",
        "answer": "In the morning, I get up at seven o'clock.",
-       "promptUz": "Ertalab — turish"
+       "promptUz": "Ertalab — turish",
+       "speakAnswer": "In the morning, I get up at seven o'clock."
       },
       {
        "prompt": "Ertalab — yuvinish va kiyinish",
        "answer": "I have a shower and then I get dressed.",
-       "promptUz": "Ertalab — yuvinish va kiyinish"
+       "promptUz": "Ertalab — yuvinish va kiyinish",
+       "speakAnswer": "I have a shower and then I get dressed."
       },
       {
        "prompt": "Ertalab — nonushta va yo'l",
        "answer": "I have breakfast and I leave home at about half past seven.",
-       "promptUz": "Ertalab — nonushta va yo'l"
+       "promptUz": "Ertalab — nonushta va yo'l",
+       "speakAnswer": "I have breakfast and I leave home at about half past seven."
       },
       {
        "prompt": "Ertalab — maktabga borish",
        "answer": "I catch the bus to school and I arrive at about eight o'clock.",
-       "promptUz": "Ertalab — maktabga borish"
+       "promptUz": "Ertalab — maktabga borish",
+       "speakAnswer": "I catch the bus to school and I arrive at about eight o'clock."
       },
       {
        "prompt": "Kunduzi — tushlik",
        "answer": "In the afternoon, I have lunch at school at one o'clock.",
-       "promptUz": "Kunduzi — tushlik"
+       "promptUz": "Kunduzi — tushlik",
+       "speakAnswer": "In the afternoon, I have lunch at school at one o'clock."
       },
       {
        "prompt": "Kunduzi — uyga qaytish",
        "answer": "School finishes at two o'clock and I go back home.",
-       "promptUz": "Kunduzi — uyga qaytish"
+       "promptUz": "Kunduzi — uyga qaytish",
+       "speakAnswer": "School finishes at two o'clock and I go back home."
       },
       {
        "prompt": "Kechqurun — uy vazifasi",
        "answer": "In the evening, I do my homework.",
-       "promptUz": "Kechqurun — uy vazifasi"
+       "promptUz": "Kechqurun — uy vazifasi",
+       "speakAnswer": "In the evening, I do my homework."
       },
       {
        "prompt": "Kechqurun — dam olish",
        "answer": "After that, I usually watch TV or read a book.",
-       "promptUz": "Kechqurun — dam olish"
+       "promptUz": "Kechqurun — dam olish",
+       "speakAnswer": "After that, I usually watch TV or read a book."
       },
       {
        "prompt": "Kechqurun — ovqat va uyqu",
        "answer": "I have dinner at seven o'clock and I go to bed at about ten.",
-       "promptUz": "Kechqurun — ovqat va uyqu"
+       "promptUz": "Kechqurun — ovqat va uyqu",
+       "speakAnswer": "I have dinner at seven o'clock and I go to bed at about ten."
       }
      ]
     }
@@ -5351,98 +5840,112 @@
        "answer": "How often do you clean your room?",
        "promptUz": "Savol tuzing",
        "whyUz": "'once a week' = haftada bir marta.",
-       "speak": "clean your room"
+       "speak": "clean your room",
+       "speakAnswer": "How often do you clean your room?"
       },
       {
        "prompt": "clean your room",
        "answer": "Once a week.",
        "promptUz": "Javob tuzing",
        "whyUz": "'once a week' = haftada bir marta.",
-       "speak": "clean your room"
+       "speak": "clean your room",
+       "speakAnswer": "Once a week."
       },
       {
        "prompt": "go fishing",
        "answer": "How often do you go fishing?",
        "promptUz": "Savol tuzing",
        "whyUz": "'go fishing' — 'go + -ing' qolipi.",
-       "speak": "go fishing"
+       "speak": "go fishing",
+       "speakAnswer": "How often do you go fishing?"
       },
       {
        "prompt": "go fishing",
        "answer": "Sometimes.",
        "promptUz": "Javob tuzing",
        "whyUz": "'go fishing' — 'go + -ing' qolipi.",
-       "speak": "go fishing"
+       "speak": "go fishing",
+       "speakAnswer": "Sometimes."
       },
       {
        "prompt": "go out with your family",
        "answer": "How often do you go out with your family?",
        "promptUz": "Savol tuzing",
        "whyUz": "'go out' = ko'chaga chiqmoq, dam olishga chiqmoq.",
-       "speak": "go out with your family"
+       "speak": "go out with your family",
+       "speakAnswer": "How often do you go out with your family?"
       },
       {
        "prompt": "go out with your family",
        "answer": "Every Sunday.",
        "promptUz": "Javob tuzing",
        "whyUz": "'go out' = ko'chaga chiqmoq, dam olishga chiqmoq.",
-       "speak": "go out with your family"
+       "speak": "go out with your family",
+       "speakAnswer": "Every Sunday."
       },
       {
        "prompt": "play computer games",
        "answer": "How often do you play computer games?",
        "promptUz": "Savol tuzing",
        "whyUz": "'every day' — predlogsiz.",
-       "speak": "play computer games"
+       "speak": "play computer games",
+       "speakAnswer": "How often do you play computer games?"
       },
       {
        "prompt": "play computer games",
        "answer": "Every day.",
        "promptUz": "Javob tuzing",
        "whyUz": "'every day' — predlogsiz.",
-       "speak": "play computer games"
+       "speak": "play computer games",
+       "speakAnswer": "Every day."
       },
       {
        "prompt": "watch TV",
        "answer": "How often do you watch TV?",
        "promptUz": "Savol tuzing",
        "whyUz": "'watch TV' — artikl YO'Q.",
-       "speak": "watch TV"
+       "speak": "watch TV",
+       "speakAnswer": "How often do you watch TV?"
       },
       {
        "prompt": "watch TV",
        "answer": "Every evening.",
        "promptUz": "Javob tuzing",
        "whyUz": "'watch TV' — artikl YO'Q.",
-       "speak": "watch TV"
+       "speak": "watch TV",
+       "speakAnswer": "Every evening."
       },
       {
        "prompt": "meet your friends",
        "answer": "How often do you meet your friends?",
        "promptUz": "Savol tuzing",
        "whyUz": "3 dan boshlab 'times' ishlatiladi.",
-       "speak": "meet your friends"
+       "speak": "meet your friends",
+       "speakAnswer": "How often do you meet your friends?"
       },
       {
        "prompt": "meet your friends",
        "answer": "Three times a week.",
        "promptUz": "Javob tuzing",
        "whyUz": "3 dan boshlab 'times' ishlatiladi.",
-       "speak": "meet your friends"
+       "speak": "meet your friends",
+       "speakAnswer": "Three times a week."
       },
       {
        "prompt": "go shopping",
        "answer": "How often do you go shopping?",
        "promptUz": "Savol tuzing",
        "whyUz": "'every two days' = ikki kunda bir marta.",
-       "speak": "go shopping"
+       "speak": "go shopping",
+       "speakAnswer": "How often do you go shopping?"
       },
       {
        "prompt": "go shopping",
        "answer": "Every two or three days.",
        "promptUz": "Javob tuzing",
        "whyUz": "'every two days' = ikki kunda bir marta.",
-       "speak": "go shopping"
+       "speak": "go shopping",
+       "speakAnswer": "Every two or three days."
       }
      ]
     },
@@ -5460,37 +5963,44 @@
       {
        "prompt": "clean your room — once a week",
        "answer": "He cleans his room once a week.",
-       "promptUz": "U xonasini haftada bir marta tozalaydi."
+       "promptUz": "U xonasini haftada bir marta tozalaydi.",
+       "speakAnswer": "He cleans his room once a week."
       },
       {
        "prompt": "go fishing — sometimes",
        "answer": "He sometimes goes fishing.",
-       "promptUz": "U ba'zan baliq ovlashga boradi."
+       "promptUz": "U ba'zan baliq ovlashga boradi.",
+       "speakAnswer": "He sometimes goes fishing."
       },
       {
        "prompt": "go out with family — every Sunday",
        "answer": "He goes out with his family every Sunday.",
-       "promptUz": "U har yakshanba oilasi bilan sayrga chiqadi."
+       "promptUz": "U har yakshanba oilasi bilan sayrga chiqadi.",
+       "speakAnswer": "He goes out with his family every Sunday."
       },
       {
        "prompt": "play computer games — every day",
        "answer": "He plays computer games every day.",
-       "promptUz": "U har kuni kompyuter o'yinlari o'ynaydi."
+       "promptUz": "U har kuni kompyuter o'yinlari o'ynaydi.",
+       "speakAnswer": "He plays computer games every day."
       },
       {
        "prompt": "watch TV — every evening",
        "answer": "He watches TV every evening.",
-       "promptUz": "U har kechqurun televizor ko'radi."
+       "promptUz": "U har kechqurun televizor ko'radi.",
+       "speakAnswer": "He watches TV every evening."
       },
       {
        "prompt": "meet friends — three times a week",
        "answer": "He meets his friends three times a week.",
-       "promptUz": "U do'stlari bilan haftada uch marta uchrashadi."
+       "promptUz": "U do'stlari bilan haftada uch marta uchrashadi.",
+       "speakAnswer": "He meets his friends three times a week."
       },
       {
        "prompt": "go shopping — every two or three days",
        "answer": "He goes shopping every two or three days.",
-       "promptUz": "U ikki-uch kunda bir marta xaridga boradi."
+       "promptUz": "U ikki-uch kunda bir marta xaridga boradi.",
+       "speakAnswer": "He goes shopping every two or three days."
       }
      ]
     }
@@ -5518,47 +6028,56 @@
       {
        "prompt": "7:15 — have a shower",
        "answer": "He has a shower at a quarter past seven.",
-       "promptUz": "U yettidan chorak o'tganda dush qabul qiladi."
+       "promptUz": "U yettidan chorak o'tganda dush qabul qiladi.",
+       "speakAnswer": "He has a shower at a quarter past seven."
       },
       {
        "prompt": "7:30 — have breakfast",
        "answer": "He has breakfast at half past seven.",
-       "promptUz": "U yetti yarimda nonushta qiladi."
+       "promptUz": "U yetti yarimda nonushta qiladi.",
+       "speakAnswer": "He has breakfast at half past seven."
       },
       {
        "prompt": "7:45 — leave home",
        "answer": "He leaves home at a quarter to eight.",
-       "promptUz": "U sakkizga chorak qolganda uydan chiqadi."
+       "promptUz": "U sakkizga chorak qolganda uydan chiqadi.",
+       "speakAnswer": "He leaves home at a quarter to eight."
       },
       {
        "prompt": "8:00 — catch the train",
        "answer": "He catches the train at eight o'clock.",
-       "promptUz": "U soat sakkizda poyezdga chiqadi."
+       "promptUz": "U soat sakkizda poyezdga chiqadi.",
+       "speakAnswer": "He catches the train at eight o'clock."
       },
       {
        "prompt": "2:00 — have lunch",
        "answer": "He has lunch at two o'clock.",
-       "promptUz": "U soat ikkida tushlik qiladi."
+       "promptUz": "U soat ikkida tushlik qiladi.",
+       "speakAnswer": "He has lunch at two o'clock."
       },
       {
        "prompt": "5:00 — leave work",
        "answer": "He leaves work at five o'clock.",
-       "promptUz": "U soat beshda ishdan chiqadi."
+       "promptUz": "U soat beshda ishdan chiqadi.",
+       "speakAnswer": "He leaves work at five o'clock."
       },
       {
        "prompt": "6:00 — cook dinner",
        "answer": "He cooks dinner at six o'clock.",
-       "promptUz": "U soat oltida kechki ovqat pishiradi."
+       "promptUz": "U soat oltida kechki ovqat pishiradi.",
+       "speakAnswer": "He cooks dinner at six o'clock."
       },
       {
        "prompt": "8:00 — watch TV",
        "answer": "He watches TV at eight o'clock.",
-       "promptUz": "U soat sakkizda televizor ko'radi."
+       "promptUz": "U soat sakkizda televizor ko'radi.",
+       "speakAnswer": "He watches TV at eight o'clock."
       },
       {
        "prompt": "10:30 — go to bed",
        "answer": "He goes to bed at half past ten.",
-       "promptUz": "U o'n yarimda yotadi."
+       "promptUz": "U o'n yarimda yotadi.",
+       "speakAnswer": "He goes to bed at half past ten."
       }
      ]
     },
@@ -5577,109 +6096,127 @@
        "prompt": "have a shower — 7:15",
        "answer": "What time does Philip have a shower?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Savolda 'have', javobda 'has'."
+       "whyUz": "Savolda 'have', javobda 'has'.",
+       "speakAnswer": "What time does Philip have a shower?"
       },
       {
        "prompt": "have a shower — 7:15",
        "answer": "He has a shower at a quarter past seven.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Savolda 'have', javobda 'has'."
+       "whyUz": "Savolda 'have', javobda 'has'.",
+       "speakAnswer": "He has a shower at a quarter past seven."
       },
       {
        "prompt": "have breakfast — 7:30",
        "answer": "What time does Philip have breakfast?",
        "promptUz": "Savol tuzing",
-       "whyUz": "30 daqiqa → half past."
+       "whyUz": "30 daqiqa → half past.",
+       "speakAnswer": "What time does Philip have breakfast?"
       },
       {
        "prompt": "have breakfast — 7:30",
        "answer": "He has breakfast at half past seven.",
        "promptUz": "Javob tuzing",
-       "whyUz": "30 daqiqa → half past."
+       "whyUz": "30 daqiqa → half past.",
+       "speakAnswer": "He has breakfast at half past seven."
       },
       {
        "prompt": "leave home — 7:45",
        "answer": "What time does Philip leave home?",
        "promptUz": "Savol tuzing",
-       "whyUz": "45 daqiqa → a quarter TO EIGHT (soat oshadi)."
+       "whyUz": "45 daqiqa → a quarter TO EIGHT (soat oshadi).",
+       "speakAnswer": "What time does Philip leave home?"
       },
       {
        "prompt": "leave home — 7:45",
        "answer": "He leaves home at a quarter to eight.",
        "promptUz": "Javob tuzing",
-       "whyUz": "45 daqiqa → a quarter TO EIGHT (soat oshadi)."
+       "whyUz": "45 daqiqa → a quarter TO EIGHT (soat oshadi).",
+       "speakAnswer": "He leaves home at a quarter to eight."
       },
       {
        "prompt": "catch the train — 8:00",
        "answer": "What time does Philip catch the train?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Savolda 'catch', javobda 'catches' (-ch → -es)."
+       "whyUz": "Savolda 'catch', javobda 'catches' (-ch → -es).",
+       "speakAnswer": "What time does Philip catch the train?"
       },
       {
        "prompt": "catch the train — 8:00",
        "answer": "He catches the train at eight o'clock.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Savolda 'catch', javobda 'catches' (-ch → -es)."
+       "whyUz": "Savolda 'catch', javobda 'catches' (-ch → -es).",
+       "speakAnswer": "He catches the train at eight o'clock."
       },
       {
        "prompt": "have lunch — 2:00",
        "answer": "What time does Philip have lunch?",
        "promptUz": "Savol tuzing",
-       "whyUz": "To'liq soat → o'clock."
+       "whyUz": "To'liq soat → o'clock.",
+       "speakAnswer": "What time does Philip have lunch?"
       },
       {
        "prompt": "have lunch — 2:00",
        "answer": "He has lunch at two o'clock.",
        "promptUz": "Javob tuzing",
-       "whyUz": "To'liq soat → o'clock."
+       "whyUz": "To'liq soat → o'clock.",
+       "speakAnswer": "He has lunch at two o'clock."
       },
       {
        "prompt": "leave work — 5:00",
        "answer": "What time does Philip leave work?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'leave work' — artikl YO'Q."
+       "whyUz": "'leave work' — artikl YO'Q.",
+       "speakAnswer": "What time does Philip leave work?"
       },
       {
        "prompt": "leave work — 5:00",
        "answer": "He leaves work at five o'clock.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'leave work' — artikl YO'Q."
+       "whyUz": "'leave work' — artikl YO'Q.",
+       "speakAnswer": "He leaves work at five o'clock."
       },
       {
        "prompt": "cook dinner — 6:00",
        "answer": "What time does Philip cook dinner?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'cook dinner' — artikl YO'Q."
+       "whyUz": "'cook dinner' — artikl YO'Q.",
+       "speakAnswer": "What time does Philip cook dinner?"
       },
       {
        "prompt": "cook dinner — 6:00",
        "answer": "He cooks dinner at six o'clock.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'cook dinner' — artikl YO'Q."
+       "whyUz": "'cook dinner' — artikl YO'Q.",
+       "speakAnswer": "He cooks dinner at six o'clock."
       },
       {
        "prompt": "watch TV — 8:00",
        "answer": "What time does Philip watch TV?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Savolda 'watch', javobda 'watches'."
+       "whyUz": "Savolda 'watch', javobda 'watches'.",
+       "speakAnswer": "What time does Philip watch TV?"
       },
       {
        "prompt": "watch TV — 8:00",
        "answer": "He watches TV at eight o'clock.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Savolda 'watch', javobda 'watches'."
+       "whyUz": "Savolda 'watch', javobda 'watches'.",
+       "speakAnswer": "He watches TV at eight o'clock."
       },
       {
        "prompt": "go to bed — 10:30",
        "answer": "What time does Philip go to bed?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Savolda 'go', javobda 'goes'. 'go to bed' — 'the' YO'Q."
+       "whyUz": "Savolda 'go', javobda 'goes'. 'go to bed' — 'the' YO'Q.",
+       "speakAnswer": "What time does Philip go to bed?"
       },
       {
        "prompt": "go to bed — 10:30",
        "answer": "He goes to bed at half past ten.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Savolda 'go', javobda 'goes'. 'go to bed' — 'the' YO'Q."
+       "whyUz": "Savolda 'go', javobda 'goes'. 'go to bed' — 'the' YO'Q.",
+       "speakAnswer": "He goes to bed at half past ten."
       }
      ]
     }
@@ -5710,21 +6247,24 @@
        "answer": "what's",
        "promptUz": "Vaqt so'rashning birinchi shakli",
        "whyUz": "'What's the time?' = What IS the time. 'Excuse me' — begona odamga murojaat.",
-       "speak": "A: Excuse me, ____ the time?"
+       "speak": "A: Excuse me, ____ the time?",
+       "speakAnswer": "what's"
       },
       {
        "prompt": "A: What ____ is it?",
        "answer": "time",
        "promptUz": "Vaqt so'rashning ikkinchi shakli",
        "whyUz": "'What time is it?' — birinchi savolning boshqa shakli. A takrorlayapti.",
-       "speak": "A: What ____ is it?"
+       "speak": "A: What ____ is it?",
+       "speakAnswer": "time"
       },
       {
        "prompt": "B: It's a quarter ____ eight.",
        "answer": "to",
        "promptUz": "Chorak — sakkizga qoldimi yoki sakkizdan o'tdimi?",
        "whyUz": "'a quarter to eight' = 7:45 (sakkizga chorak qoldi). 'a quarter PAST eight' = 8:15 ham grammatik to'g'ri — audio qaysi biri ekanini aytadi.",
-       "speak": "B: It's a quarter ____ eight."
+       "speak": "B: It's a quarter ____ eight.",
+       "speakAnswer": "to"
       }
      ]
     },
@@ -5744,49 +6284,56 @@
        "answer": "do you like",
        "promptUz": "Javob 'Yes, I like it a lot' bilan boshlanadi",
        "whyUz": "Javobda 'Yes, I like it' → savol 'Do you like your job?'.",
-       "speak": "P: Well Annie, 1) ____ your job?"
+       "speak": "P: Well Annie, 1) ____ your job?",
+       "speakAnswer": "do you like"
       },
       {
        "prompt": "P: Well, tell us about a typical day in your life. 2) ____ do you get up?",
        "answer": "What time",
        "promptUz": "Javob soat aytadi: 'at noon'",
        "whyUz": "Javobda 'at noon' — SOAT. Demak savol 'What time do you get up?'.",
-       "speak": "P: Well, tell us about a typical day in your life. 2) ____ do you get up?"
+       "speak": "P: Well, tell us about a typical day in your life. 2) ____ do you get up?",
+       "speakAnswer": "What time"
       },
       {
        "prompt": "P: 3) What ____ then?",
        "answer": "do you do",
        "promptUz": "Javob ish-harakatlar ro'yxati",
        "whyUz": "'What do you do then?' = keyin nima qilasiz? 'do' ikki marta: yordamchi + asosiy fe'l.",
-       "speak": "P: 3) What ____ then?"
+       "speak": "P: 3) What ____ then?",
+       "speakAnswer": "do you do"
       },
       {
        "prompt": "P: 4) ____ the show start?",
        "answer": "What time does",
        "promptUz": "Javob 'At ten o'clock' — soat; ega 'the show'",
        "whyUz": "'the show' — 3-shaxs birlik → DOES. Javobda soat → 'What time'.",
-       "speak": "P: 4) ____ the show start?"
+       "speak": "P: 4) ____ the show start?",
+       "speakAnswer": "What time does"
       },
       {
        "prompt": "P: 5) ____ then?",
        "answer": "What do you do",
        "promptUz": "3-savol bilan bir xil shakl",
        "whyUz": "'What do you do then?' — yana keyingi harakat so'ralyapti.",
-       "speak": "P: 5) ____ then?"
+       "speak": "P: 5) ____ then?",
+       "speakAnswer": "What do you do"
       },
       {
        "prompt": "P: Annie, I know you don't have much free time, but 6) ____ doing in your free time?",
        "answer": "what do you like",
        "promptUz": "Javob 'I love going to the cinema...'",
        "whyUz": "'like DOING' — keyin -ING keladi. Javobda 'I love going...' → savol 'what do you like doing?'.",
-       "speak": "P: Annie, I know you don't have much free time, but 6) ____ doing in your free time?"
+       "speak": "P: Annie, I know you don't have much free time, but 6) ____ doing in your free time?",
+       "speakAnswer": "what do you like"
       },
       {
        "prompt": "P: One last question. 7) ____ satisfied with your life?",
        "answer": "Are you",
        "promptUz": "'satisfied' — SIFAT, demak qaysi fe'l kerak?",
        "whyUz": "'satisfied' sifat → 'to be' fe'li kerak: 'Are you satisfied?'. 'Do you' XATO.",
-       "speak": "P: One last question. 7) ____ satisfied with your life?"
+       "speak": "P: One last question. 7) ____ satisfied with your life?",
+       "speakAnswer": "Are you"
       }
      ]
     },
@@ -5856,49 +6403,57 @@
        "prompt": "Screen 2 — Lost in Space, 2:45",
        "answer": "What's on at Screen 2?",
        "promptUz": "Savol tuzing",
-       "whyUz": "45 daqiqa → a quarter TO THREE (soat oshadi)."
+       "whyUz": "45 daqiqa → a quarter TO THREE (soat oshadi).",
+       "speakAnswer": "What's on at Screen 2?"
       },
       {
        "prompt": "Screen 2 — Lost in Space, 2:45",
        "answer": "Lost in Space. It starts at a quarter to three / two forty-five.",
        "promptUz": "Javob tuzing",
-       "whyUz": "45 daqiqa → a quarter TO THREE (soat oshadi)."
+       "whyUz": "45 daqiqa → a quarter TO THREE (soat oshadi).",
+       "speakAnswer": "Lost in Space. It starts at a quarter to three / two forty-five."
       },
       {
        "prompt": "Screen 3 — Independence Day, 3:10",
        "answer": "What's on at Screen 3?",
        "promptUz": "Savol tuzing",
-       "whyUz": "10 daqiqa → ten past three."
+       "whyUz": "10 daqiqa → ten past three.",
+       "speakAnswer": "What's on at Screen 3?"
       },
       {
        "prompt": "Screen 3 — Independence Day, 3:10",
        "answer": "Independence Day. It starts at ten past three / three ten.",
        "promptUz": "Javob tuzing",
-       "whyUz": "10 daqiqa → ten past three."
+       "whyUz": "10 daqiqa → ten past three.",
+       "speakAnswer": "Independence Day. It starts at ten past three / three ten."
       },
       {
        "prompt": "Screen 4 — Titanic, 3:25",
        "answer": "What's on at Screen 4?",
        "promptUz": "Savol tuzing",
-       "whyUz": "25 daqiqa (30 dan kam) → twenty-five past."
+       "whyUz": "25 daqiqa (30 dan kam) → twenty-five past.",
+       "speakAnswer": "What's on at Screen 4?"
       },
       {
        "prompt": "Screen 4 — Titanic, 3:25",
        "answer": "Titanic. It starts at twenty-five past three / three twenty-five.",
        "promptUz": "Javob tuzing",
-       "whyUz": "25 daqiqa (30 dan kam) → twenty-five past."
+       "whyUz": "25 daqiqa (30 dan kam) → twenty-five past.",
+       "speakAnswer": "Titanic. It starts at twenty-five past three / three twenty-five."
       },
       {
        "prompt": "Screen 5 — Godzilla, 3:35",
        "answer": "What's on at Screen 5?",
        "promptUz": "Savol tuzing",
-       "whyUz": "60 − 35 = 25 qoldi → twenty-five TO FOUR (soat oshadi)."
+       "whyUz": "60 − 35 = 25 qoldi → twenty-five TO FOUR (soat oshadi).",
+       "speakAnswer": "What's on at Screen 5?"
       },
       {
        "prompt": "Screen 5 — Godzilla, 3:35",
        "answer": "Godzilla. It starts at twenty-five to four / three thirty-five.",
        "promptUz": "Javob tuzing",
-       "whyUz": "60 − 35 = 25 qoldi → twenty-five TO FOUR (soat oshadi)."
+       "whyUz": "60 − 35 = 25 qoldi → twenty-five TO FOUR (soat oshadi).",
+       "speakAnswer": "Godzilla. It starts at twenty-five to four / three thirty-five."
       }
      ]
     },
@@ -5976,103 +6531,120 @@
        "prompt": "feed",
        "answer": "Henry feeds the animals after breakfast.",
        "promptUz": "Genri nonushtadan keyin hayvonlarni boqadi.",
-       "speak": "feed"
+       "speak": "feed",
+       "speakAnswer": "Henry feeds the animals after breakfast."
       },
       {
        "prompt": "catch the bus",
        "answer": "Kim catches the bus to school every weekday.",
        "promptUz": "Kim har ish kuni maktabga avtobusga chiqadi.",
-       "speak": "catch the bus"
+       "speak": "catch the bus",
+       "speakAnswer": "Kim catches the bus to school every weekday."
       },
       {
        "prompt": "aquarium",
        "answer": "Bob works at an aquarium with dolphins.",
        "promptUz": "Bob delfinlar bilan akvariumda ishlaydi.",
-       "speak": "aquarium"
+       "speak": "aquarium",
+       "speakAnswer": "Bob works at an aquarium with dolphins."
       },
       {
        "prompt": "in the afternoon",
        "answer": "In the afternoon, he goes to the fields.",
        "promptUz": "Kunduzi u dalaga boradi.",
-       "speak": "in the afternoon"
+       "speak": "in the afternoon",
+       "speakAnswer": "In the afternoon, he goes to the fields."
       },
       {
        "prompt": "go dancing",
        "answer": "My sister goes dancing every Friday.",
        "promptUz": "Singlim har juma raqsga boradi.",
-       "speak": "go dancing"
+       "speak": "go dancing",
+       "speakAnswer": "My sister goes dancing every Friday."
       },
       {
        "prompt": "go out with your family",
        "answer": "I go out with my family every Sunday.",
        "promptUz": "Har yakshanba oilam bilan sayrga chiqaman.",
-       "speak": "go out with your family"
+       "speak": "go out with your family",
+       "speakAnswer": "I go out with my family every Sunday."
       },
       {
        "prompt": "get up",
        "answer": "Annie usually gets up at noon.",
        "promptUz": "Enni odatda tush paytida turadi.",
-       "speak": "get up"
+       "speak": "get up",
+       "speakAnswer": "Annie usually gets up at noon."
       },
       {
        "prompt": "(a) quarter to",
        "answer": "It's a quarter to eight.",
        "promptUz": "Sakkizga chorak qoldi.",
-       "speak": "(a) quarter to"
+       "speak": "(a) quarter to",
+       "speakAnswer": "It's a quarter to eight."
       },
       {
        "prompt": "go to bed",
        "answer": "He goes to bed at about nine o'clock.",
        "promptUz": "U taxminan soat to'qqizda yotadi.",
-       "speak": "go to bed"
+       "speak": "go to bed",
+       "speakAnswer": "He goes to bed at about nine o'clock."
       },
       {
        "prompt": "half past",
        "answer": "Henry wakes up at half past four.",
        "promptUz": "Genri to'rt yarimda uyg'onadi.",
-       "speak": "half past"
+       "speak": "half past",
+       "speakAnswer": "Henry wakes up at half past four."
       },
       {
        "prompt": "rarely",
        "answer": "I rarely go fishing.",
        "promptUz": "Men kamdan-kam baliq ovlashga boraman.",
-       "speak": "rarely"
+       "speak": "rarely",
+       "speakAnswer": "I rarely go fishing."
       },
       {
        "prompt": "milk the cows",
        "answer": "The farmer milks the cows in the morning.",
        "promptUz": "Dehqon ertalab sigirlarni sog'adi.",
-       "speak": "milk the cows"
+       "speak": "milk the cows",
+       "speakAnswer": "The farmer milks the cows in the morning."
       },
       {
        "prompt": "often",
        "answer": "She often watches TV in the evening.",
        "promptUz": "U kechqurun tez-tez televizor ko'radi.",
-       "speak": "often"
+       "speak": "often",
+       "speakAnswer": "She often watches TV in the evening."
       },
       {
        "prompt": "relax",
        "answer": "On Sundays, Henry relaxes.",
        "promptUz": "Yakshanba kunlari Genri dam oladi.",
-       "speak": "relax"
+       "speak": "relax",
+       "speakAnswer": "On Sundays, Henry relaxes."
       },
       {
        "prompt": "always",
        "answer": "I am always late for school.",
        "promptUz": "Men maktabga doim kechikaman.",
-       "speak": "always"
+       "speak": "always",
+       "speakAnswer": "I am always late for school."
       },
       {
        "prompt": "meet my friends",
        "answer": "I meet my friends twice a week.",
        "promptUz": "Do'stlarim bilan haftada ikki marta uchrashaman.",
-       "speak": "meet my friends"
+       "speak": "meet my friends",
+       "speakAnswer": "I meet my friends twice a week."
       },
       {
        "prompt": "satisfied",
        "answer": "Bob feels satisfied with his life.",
        "promptUz": "Bob hayotidan mamnun.",
-       "speak": "satisfied"
+       "speak": "satisfied",
+       "speakAnswer": "Bob feels satisfied with his life."
       }
      ]
     }

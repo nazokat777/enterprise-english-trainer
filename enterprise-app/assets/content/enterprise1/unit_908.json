@@ -202,7 +202,8 @@
         "B  in a jeep",
         "A  on a train"
        ],
-       "whyUz": "110-betdagi kirish matnidan so'zma-so'z:\n'Sandra and David are IN A JEEP.'\n\nDIQQAT — PREDLOG:\n  IN a car/jeep/taxi (kichik transport)\n  ON a train/bus/plane (katta transport)"
+       "whyUz": "110-betdagi kirish matnidan so'zma-so'z:\n'Sandra and David are IN A JEEP.'\n\nDIQQAT — PREDLOG:\n  IN a car/jeep/taxi (kichik transport)\n  ON a train/bus/plane (katta transport)",
+       "speakAnswer": "B  in a jeep"
       },
       {
        "prompt": "2  It's 9 o'clock ................. .   A in the evening   B in the morning",
@@ -212,7 +213,8 @@
         "A  in the evening",
         "B  in the morning"
        ],
-       "whyUz": "Kirish matnidan: 'It's 9 PM on a January\nEVENING.'\n\n'PM' = tushdan keyin va kechqurun.\n'AM' = ertalab.\n\nRasmlarda ham osmon QORONG'I — kechqurun."
+       "whyUz": "Kirish matnidan: 'It's 9 PM on a January\nEVENING.'\n\n'PM' = tushdan keyin va kechqurun.\n'AM' = ertalab.\n\nRasmlarda ham osmon QORONG'I — kechqurun.",
+       "speakAnswer": "A  in the evening"
       },
       {
        "prompt": "3  Suddenly, Sandra and David see a ........... in the sky.   A star   B bright light",
@@ -222,7 +224,8 @@
         "B  bright light",
         "A  star"
        ],
-       "whyUz": "110-bet, 4-kadr: Sandra so'raydi:\n'What is that BRIGHT LIGHT?'\n\n'a star' (yulduz) — rasmlarda yulduzlar bor,\nlekin ular DOIM osmonda. 'To'satdan' ko'rilgan\nnarsa — YORQIN NUR."
+       "whyUz": "110-bet, 4-kadr: Sandra so'raydi:\n'What is that BRIGHT LIGHT?'\n\n'a star' (yulduz) — rasmlarda yulduzlar bor,\nlekin ular DOIM osmonda. 'To'satdan' ko'rilgan\nnarsa — YORQIN NUR.",
+       "speakAnswer": "B  bright light"
       },
       {
        "prompt": "4  It is a(n) ................. .   A spaceship   B aeroplane",
@@ -232,7 +235,8 @@
         "A  spaceship",
         "B  aeroplane"
        ],
-       "whyUz": "110-bet, 7-kadr: 'They are taking us into\nthe SPACESHIP.'\n\nDIQQAT — 'A(N)':\nKitob 'a(n)' deb yozgan, chunki:\n  A spaceship (undosh)\n  AN aeroplane (unli)\nJavob 'spaceship' → 'A'."
+       "whyUz": "110-bet, 7-kadr: 'They are taking us into\nthe SPACESHIP.'\n\nDIQQAT — 'A(N)':\nKitob 'a(n)' deb yozgan, chunki:\n  A spaceship (undosh)\n  AN aeroplane (unli)\nJavob 'spaceship' → 'A'.",
+       "speakAnswer": "A  spaceship"
       }
      ]
     },
@@ -353,7 +357,8 @@
        "options": [
         "✓ kosmik kemaga tegishli",
         "✗ tegishli emas"
-       ]
+       ],
+       "speakAnswer": "✓ kosmik kemaga tegishli"
       },
       {
        "prompt": "huge",
@@ -361,7 +366,8 @@
        "options": [
         "✓ kosmik kemaga tegishli",
         "✗ tegishli emas"
-       ]
+       ],
+       "speakAnswer": "✓ kosmik kemaga tegishli"
       },
       {
        "prompt": "flashing lights",
@@ -369,7 +375,8 @@
        "options": [
         "✓ kosmik kemaga tegishli",
         "✗ tegishli emas"
-       ]
+       ],
+       "speakAnswer": "✓ kosmik kemaga tegishli"
       },
       {
        "prompt": "noise",
@@ -377,7 +384,8 @@
        "options": [
         "✓ kosmik kemaga tegishli",
         "✗ tegishli emas"
-       ]
+       ],
+       "speakAnswer": "✓ kosmik kemaga tegishli"
       },
       {
        "prompt": "land",
@@ -385,7 +393,8 @@
        "options": [
         "✓ kosmik kemaga tegishli",
         "✗ tegishli emas"
-       ]
+       ],
+       "speakAnswer": "✓ kosmik kemaga tegishli"
       },
       {
        "prompt": "small",
@@ -393,7 +402,8 @@
        "options": [
         "✓ kosmik kemaga tegishli",
         "✗ tegishli emas"
-       ]
+       ],
+       "speakAnswer": "✗ tegishli emas"
       },
       {
        "prompt": "warm and dry",
@@ -401,7 +411,8 @@
        "options": [
         "✓ kosmik kemaga tegishli",
         "✗ tegishli emas"
-       ]
+       ],
+       "speakAnswer": "✗ tegishli emas"
       },
       {
        "prompt": "good-looking",
@@ -409,7 +420,8 @@
        "options": [
         "✓ kosmik kemaga tegishli",
         "✗ tegishli emas"
-       ]
+       ],
+       "speakAnswer": "✗ tegishli emas"
       },
       {
        "prompt": "patient",
@@ -417,7 +429,8 @@
        "options": [
         "✓ kosmik kemaga tegishli",
         "✗ tegishli emas"
-       ]
+       ],
+       "speakAnswer": "✗ tegishli emas"
       }
      ]
     },
@@ -443,7 +456,8 @@
         "stand"
        ],
        "whyUz": "KALIT: bo'shliqdan keyin 'IN' predlogi.\n'to believe IN something' — turg'un birikma.\n\n110-bet, 1-kadr:\n'Do you BELIEVE IN UFOs?'",
-       "speak": "1  Many people ........................... in UFOs."
+       "speak": "1  Many people ........................... in UFOs.",
+       "speakAnswer": "believe"
       },
       {
        "prompt": "2  I can't ........................... this noise.",
@@ -456,7 +470,8 @@
         "start"
        ],
        "whyUz": "'can't STAND something' = chiday olmaslik.\n\n110-bet, 7-kadr:\n'I can't STAND that noise.'\n\nDIQQAT: 'stand' bu yerda 'turmoq' EMAS!\n'can't' dan keyin ASOSIY shakl.",
-       "speak": "2  I can't ........................... this noise."
+       "speak": "2  I can't ........................... this noise.",
+       "speakAnswer": "stand"
       },
       {
        "prompt": "3  What's wrong with the car? I can't ........................... it.",
@@ -469,7 +484,8 @@
         "stand"
        ],
        "whyUz": "'to START a car' = mashinani yurgizmoq.\n\n110-bet, 3-kadr:\n'It's no use, I can't START it.'\n\n'can't' dan keyin ASOSIY shakl.",
-       "speak": "3  What's wrong with the car? I can't ........................... it."
+       "speak": "3  What's wrong with the car? I can't ........................... it.",
+       "speakAnswer": "start"
       },
       {
        "prompt": "4  Don't cry. It's ........................... .",
@@ -482,7 +498,8 @@
         "start"
        ],
        "whyUz": "'It's NO USE' = foydasi yo'q (turg'un ibora).\n\n110-bet, 3-kadr:\n'IT'S NO USE, I can't start it.'\n\nRo'yxatdagi YAGONA ikki so'zli ibora.",
-       "speak": "4  Don't cry. It's ........................... ."
+       "speak": "4  Don't cry. It's ........................... .",
+       "speakAnswer": "no use"
       },
       {
        "prompt": "5  I think we are ........................... our time.",
@@ -495,7 +512,8 @@
         "start"
        ],
        "whyUz": "⚠ GRAMMATIK KALIT: 'we ARE ...' —\n'are' dan keyin -ING kerak.\n\nRo'yxatda 'WASTING' allaqachon '-ing' bilan\nberilgan — bu kalit!\n\n110-bet, 1-kadr:\n'I'm afraid we're WASTING our time.'",
-       "speak": "5  I think we are ........................... our time."
+       "speak": "5  I think we are ........................... our time.",
+       "speakAnswer": "wasting"
       },
       {
        "prompt": "6  People say that UFOs ........................... in Myrrhee.",
@@ -508,7 +526,8 @@
         "start"
        ],
        "whyUz": "'to LAND' = qo'nmoq (kema/samolyot uchun).\n\n110-bet, 2-kadr:\n'They say UFOs LAND here in Myrrhee every\nyear.'\n\nEga 'UFOs' — KO'PLIK, shuning uchun -S\nQO'SHILMAYDI.",
-       "speak": "6  People say that UFOs ........................... in Myrrhee."
+       "speak": "6  People say that UFOs ........................... in Myrrhee.",
+       "speakAnswer": "land"
       },
       {
        "prompt": "7  What does it ........................... like?",
@@ -521,7 +540,8 @@
         "stand"
        ],
        "whyUz": "⚠ ENG NOZIK BAND:\n'What DOES it ... LIKE?'\n\n'DOES' allaqachon III shaxs birlikni\nko'rsatadi, shuning uchun fe'l ASOSIY shaklda:\n  'What does it LOOK like?'  ✓\n  'What does it LOOKS like?' ✗\n\nRo'yxatda 'look' (-S siz) berilgani shuning\nuchun.\n\n110-bet, 5-kadr: 'It LOOKS LIKE a UFO.'",
-       "speak": "7  What does it ........................... like?"
+       "speak": "7  What does it ........................... like?",
+       "speakAnswer": "look"
       }
      ]
     },
@@ -575,39 +595,48 @@
      "tasks": [
       {
        "left": "a  (strelka kabinaning old oynasiga)",
-       "right": "windscreen"
+       "right": "windscreen",
+       "speakAnswer": "windscreen"
       },
       {
        "left": "b  (strelka oyna tepasidagi kichik ko'zguga)",
-       "right": "rear-view mirror"
+       "right": "rear-view mirror",
+       "speakAnswer": "rear-view mirror"
       },
       {
        "left": "c  (strelka tik pastga, qizil kapotga)",
-       "right": "bonnet"
+       "right": "bonnet",
+       "speakAnswer": "bonnet"
       },
       {
        "left": "d  (strelka eshik ustunidagi ko'zguga)",
-       "right": "wing mirror"
+       "right": "wing mirror",
+       "speakAnswer": "wing mirror"
       },
       {
        "left": "e  (strelka panjaradagi dumaloq chiroqqa)",
-       "right": "headlight"
+       "right": "headlight",
+       "speakAnswer": "headlight"
       },
       {
        "left": "f  (strelka oldingi pastki qora bo'lakka)",
-       "right": "bumper"
+       "right": "bumper",
+       "speakAnswer": "bumper"
       },
       {
        "left": "g  (strelka bej rangli o'rindiqqa)",
-       "right": "seat"
+       "right": "seat",
+       "speakAnswer": "seat"
       },
       {
        "left": "h  (strelka salon ichidagi dumaloq rulga)",
-       "right": "steering wheel"
+       "right": "steering wheel",
+       "speakAnswer": "steering wheel"
       },
       {
        "left": "i  (strelka oldingi g'ildirakka)",
-       "right": "wheel"
+       "right": "wheel",
+       "speakAnswer": "wheel"
       }
      ]
     },
@@ -633,7 +662,8 @@
         "in"
        ],
        "whyUz": "'to drive THROUGH' = orasidan/ichidan o'tmoq.\n\n110-betdagi kirish matnida ham aynan shu:\n'They are driving THROUGH the fields.'",
-       "speak": "1  David and Sandra are driving .................... the fields"
+       "speak": "1  David and Sandra are driving .................... the fields",
+       "speakAnswer": "through"
       },
       {
        "prompt": "2  ................ Myrrhee in Australia.",
@@ -646,7 +676,8 @@
         "of"
        ],
        "whyUz": "'NEAR' = yaqinida.\n\nKirish matnidan: 'through the fields NEAR\nMyrrhee in Australia'.",
-       "speak": "2  ................ Myrrhee in Australia."
+       "speak": "2  ................ Myrrhee in Australia.",
+       "speakAnswer": "near"
       },
       {
        "prompt": "3  David does not believe ................ UFOs",
@@ -659,7 +690,8 @@
         "of"
        ],
        "whyUz": "'to believe IN something' — turg'un birikma\n(mavjudligiga ishonmoq).\n\n110-bet, 1-kadr: 'Do you believe IN UFOs?'\n\nDIQQAT: 'in' bu mashqda IKKI marta\nishlatiladi (3 va 5).",
-       "speak": "3  David does not believe ................ UFOs"
+       "speak": "3  David does not believe ................ UFOs",
+       "speakAnswer": "in"
       },
       {
        "prompt": "4  Suddenly the jeep slows ................ and David can't start it again.",
@@ -672,7 +704,8 @@
         "in"
        ],
        "whyUz": "'to slow DOWN' — turg'un fe'l\n(sekinlashmoq).\n\n110-bet, 3-kadr: 'Why are you slowing DOWN?'\nWorkbook 60-bet, 3-mashqda ham bor edi.",
-       "speak": "4  Suddenly the jeep slows ................ and David can't start it again."
+       "speak": "4  Suddenly the jeep slows ................ and David can't start it again.",
+       "speakAnswer": "down"
       },
       {
        "prompt": "5  Then Sandra sees a bright light ....................... the sky.",
@@ -685,7 +718,8 @@
         "of"
        ],
        "whyUz": "'IN the sky' — predlog 'in'.\n\n110-bet, 4-kadr: 'Up there, IN THE SKY!'\n\n⚠ 7-BAND BILAN SOLISHTIRING:\n  IN   — JOY (harakatsiz)\n  INTO — HARAKAT (ichkariga)",
-       "speak": "5  Then Sandra sees a bright light ....................... the sky."
+       "speak": "5  Then Sandra sees a bright light ....................... the sky.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "6  David asks Sandra to take pictures ................ the huge spaceship.",
@@ -698,7 +732,8 @@
         "in"
        ],
        "whyUz": "'to take pictures OF something' — turg'un\nbirikma.\n\nGrammar 62-bet, hayvonot bog'i dialogi:\n'Can we take pictures OF the animals?'\n\n'take pictures FOR' — XATO.",
-       "speak": "6  David asks Sandra to take pictures ................ the huge spaceship."
+       "speak": "6  David asks Sandra to take pictures ................ the huge spaceship.",
+       "speakAnswer": "of"
       },
       {
        "prompt": "7  They are scared because the visitors are taking them ................ the spaceship.",
@@ -711,7 +746,8 @@
         "of"
        ],
        "whyUz": "'INTO' — ichkariga HARAKAT.\n\n110-bet, 7-kadr: 'They are taking us INTO\nthe spaceship.'\n\n⚠ 5-BAND BILAN FARQI:\n  'IN the sky' — JOY (harakatsiz)\n  'INTO the spaceship' — HARAKAT\n\nShu kabi: 'push INTO a queue' (CB 100-bet).",
-       "speak": "7  They are scared because the visitors are taking them ................ the spaceship."
+       "speak": "7  They are scared because the visitors are taking them ................ the spaceship.",
+       "speakAnswer": "into"
       }
      ]
     },

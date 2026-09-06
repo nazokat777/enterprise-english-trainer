@@ -289,7 +289,8 @@
         "human",
         "alien"
        ],
-       "whyUz": "112-bet, 1-kadr so'zma-so'z:\n'And this here is a male HUMAN.'\n\nZID JUFTLIK: human (odam) ↔ alien (o'zga\nsayyoralik).\n\nMANTIQ: o'zga sayyoraliklar ODAMLARNI\no'rganyapti, o'z turdoshini emas."
+       "whyUz": "112-bet, 1-kadr so'zma-so'z:\n'And this here is a male HUMAN.'\n\nZID JUFTLIK: human (odam) ↔ alien (o'zga\nsayyoralik).\n\nMANTIQ: o'zga sayyoraliklar ODAMLARNI\no'rganyapti, o'z turdoshini emas.",
+       "speakAnswer": "human"
       },
       {
        "prompt": "2  Very modern/primitive means of transport.",
@@ -299,7 +300,8 @@
         "primitive",
         "modern"
        ],
-       "whyUz": "112-bet, 2-kadr so'zma-so'z:\n'Very PRIMITIVE means of transport.'\n\nZID JUFTLIK: modern ↔ primitive.\n\nMANTIQ: o'zga sayyoraliklar texnologik\njihatdan ancha ustun, shuning uchun mashinani\nIBTIDOIY deb baholaydi."
+       "whyUz": "112-bet, 2-kadr so'zma-so'z:\n'Very PRIMITIVE means of transport.'\n\nZID JUFTLIK: modern ↔ primitive.\n\nMANTIQ: o'zga sayyoraliklar texnologik\njihatdan ancha ustun, shuning uchun mashinani\nIBTIDOIY deb baholaydi.",
+       "speakAnswer": "primitive"
       },
       {
        "prompt": "3  They are not ready to join/leave us.",
@@ -309,7 +311,8 @@
         "join",
         "leave"
        ],
-       "whyUz": "112-bet, 3-kadr so'zma-so'z:\n'They are not ready to JOIN us.'\n\nZID JUFTLIK: join (qo'shilmoq) ↔ leave\n(tark etmoq).\n\nMANTIQ: 'bizni tark etishga tayyor emas' —\nmantiqsiz, chunki odamlar ularni tanimaydi\nham."
+       "whyUz": "112-bet, 3-kadr so'zma-so'z:\n'They are not ready to JOIN us.'\n\nZID JUFTLIK: join (qo'shilmoq) ↔ leave\n(tark etmoq).\n\nMANTIQ: 'bizni tark etishga tayyor emas' —\nmantiqsiz, chunki odamlar ularni tanimaydi\nham.",
+       "speakAnswer": "join"
       },
       {
        "prompt": "4  Bring back/Erase their memories.",
@@ -319,7 +322,8 @@
         "Erase",
         "Bring back"
        ],
-       "whyUz": "112-bet, 3-kadr so'zma-so'z:\n'ERASE their memories and send them back.'\n\nZID JUFTLIK: bring back (qaytarmoq) ↔ erase\n(o'chirmoq).\n\nMANTIQ: keyingi kadrda ular hech narsani\nESLAMAYDI — demak xotira O'CHIRILGAN."
+       "whyUz": "112-bet, 3-kadr so'zma-so'z:\n'ERASE their memories and send them back.'\n\nZID JUFTLIK: bring back (qaytarmoq) ↔ erase\n(o'chirmoq).\n\nMANTIQ: keyingi kadrda ular hech narsani\nESLAMAYDI — demak xotira O'CHIRILGAN.",
+       "speakAnswer": "Erase"
       },
       {
        "prompt": "5  The film is empty/full of pictures.",
@@ -329,7 +333,8 @@
         "full of",
         "empty"
        ],
-       "whyUz": "112-bet, 5-kadr so'zma-so'z:\n'The film is FULL OF pictures.'\n\nZID JUFTLIK: empty (bo'sh) ↔ full of (to'la).\n\nMANTIQ: agar plyonka bo'sh bo'lsa, uni\nyuvishga hojat qolmasdi — lekin ular yuvadi\nva kema surati chiqadi.\n\n'full OF' — predlog 'of' SHART."
+       "whyUz": "112-bet, 5-kadr so'zma-so'z:\n'The film is FULL OF pictures.'\n\nZID JUFTLIK: empty (bo'sh) ↔ full of (to'la).\n\nMANTIQ: agar plyonka bo'sh bo'lsa, uni\nyuvishga hojat qolmasdi — lekin ular yuvadi\nva kema surati chiqadi.\n\n'full OF' — predlog 'of' SHART.",
+       "speakAnswer": "full of"
       },
       {
        "prompt": "6  This is going to be our best/worst story.",
@@ -339,7 +344,8 @@
         "best",
         "worst"
        ],
-       "whyUz": "112-bet, 6-kadr so'zma-so'z:\n'This is going to be our BEST story.'\n\nZID JUFTLIK: the best ↔ the worst.\n  good → better → THE BEST\n  bad → worse → THE WORST\n\nMANTIQ: Devid HAYAJONDA ('you won't believe\nthis!'), xafa emas."
+       "whyUz": "112-bet, 6-kadr so'zma-so'z:\n'This is going to be our BEST story.'\n\nZID JUFTLIK: the best ↔ the worst.\n  good → better → THE BEST\n  bad → worse → THE WORST\n\nMANTIQ: Devid HAYAJONDA ('you won't believe\nthis!'), xafa emas.",
+       "speakAnswer": "best"
       }
      ]
     },
@@ -398,31 +404,38 @@
      "tasks": [
       {
        "left": "1  David and Sandra are driving near Myrrhee",
-       "right": "c  BECAUSE they want to write a story about UFOs."
+       "right": "c  BECAUSE they want to write a story about UFOs.",
+       "speakAnswer": "c  BECAUSE they want to write a story about UFOs."
       },
       {
        "left": "2  The jeep slows down,",
-       "right": "e  BUT Sandra and David don't know why."
+       "right": "e  BUT Sandra and David don't know why.",
+       "speakAnswer": "e  BUT Sandra and David don't know why."
       },
       {
        "left": "3  They see a spaceship",
-       "right": "g  SO David asks Sandra to take some pictures."
+       "right": "g  SO David asks Sandra to take some pictures.",
+       "speakAnswer": "g  SO David asks Sandra to take some pictures."
       },
       {
        "left": "4  The aliens take them into the spaceship",
-       "right": "a  BECAUSE they want to study them."
+       "right": "a  BECAUSE they want to study them.",
+       "speakAnswer": "a  BECAUSE they want to study them."
       },
       {
        "left": "5  The aliens think David and Sandra are very primitive,",
-       "right": "d  SO they erase their memories and send them back."
+       "right": "d  SO they erase their memories and send them back.",
+       "speakAnswer": "d  SO they erase their memories and send them back."
       },
       {
        "left": "6  David finds the film is full of pictures,",
-       "right": "b  BUT he doesn't remember using the camera."
+       "right": "b  BUT he doesn't remember using the camera.",
+       "speakAnswer": "b  BUT he doesn't remember using the camera."
       },
       {
        "left": "7  They are surprised when they see the pictures",
-       "right": "f  BECAUSE they are pictures of aliens and a spaceship."
+       "right": "f  BECAUSE they are pictures of aliens and a spaceship.",
+       "speakAnswer": "f  BECAUSE they are pictures of aliens and a spaceship."
       }
      ]
     },
@@ -497,7 +510,8 @@
         "are aliens"
        ],
        "whyUz": "Doimiy haqiqat (geografik ma'lumot)\n→ PRESENT SIMPLE.",
-       "speak": "1  Myrrhee ........... (be) a small place near the town of Moyhu in New South Wales, Australia."
+       "speak": "1  Myrrhee ........... (be) a small place near the town of Moyhu in New South Wales, Australia.",
+       "speakAnswer": "is"
       },
       {
        "prompt": "2  Many people ............ (say) they ...",
@@ -510,7 +524,8 @@
         "are aliens"
        ],
        "whyUz": "Doimiy holat → PRESENT SIMPLE.\n\nEga 'Many people' — KO'PLIK → -S QO'SHILMAYDI\n('says' XATO).",
-       "speak": "2  Many people ............ (say) they ..."
+       "speak": "2  Many people ............ (say) they ...",
+       "speakAnswer": "say"
       },
       {
        "prompt": "3  ... they ........... (see) UFOs in the area,",
@@ -523,7 +538,8 @@
         "are aliens"
        ],
        "whyUz": "⚠ UNIT 15 GRAMMATIKASI:\nVaqt AYTILMAGAN, TAJRIBA → PRESENT PERFECT.\n\n110-bet, 2-kadr AYNAN shu gap:\n'some people say they HAVE SEEN UFOs'\n\nsee → saw → SEEN (V3).",
-       "speak": "3  ... they ........... (see) UFOs in the area,"
+       "speak": "3  ... they ........... (see) UFOs in the area,",
+       "speakAnswer": "have seen"
       },
       {
        "prompt": "4  but the big question ........ (be) this",
@@ -536,7 +552,8 @@
         "are aliens"
        ],
        "whyUz": "Hozirgi holat → PRESENT SIMPLE.\n'the big question' — BIRLIK → IS.",
-       "speak": "4  but the big question ........ (be) this"
+       "speak": "4  but the big question ........ (be) this",
+       "speakAnswer": "is"
       },
       {
        "prompt": "5  — why ................... (aliens/be) interested in Myrrhee?",
@@ -548,7 +565,8 @@
         "say",
         "have seen"
        ],
-       "whyUz": "Hozirgi holat haqida SAVOL → PRESENT SIMPLE.\n\n'aliens' — KO'PLIK → ARE.\nSavolda 'be' EGADAN OLDIN:\n'why ARE ALIENS interested?'\n\n'interested IN' — predlog 'in'."
+       "whyUz": "Hozirgi holat haqida SAVOL → PRESENT SIMPLE.\n\n'aliens' — KO'PLIK → ARE.\nSavolda 'be' EGADAN OLDIN:\n'why ARE ALIENS interested?'\n\n'interested IN' — predlog 'in'.",
+       "speakAnswer": "are aliens"
       },
       {
        "prompt": "6  In the late 1960's, Erich von Däniken ......................... (compare) some ancient Aboriginal rock paintings to modern descriptions of aliens.",
@@ -561,7 +579,8 @@
         "have seen"
        ],
        "whyUz": "KALIT: 'In the late 1960'S' — ANIQ VAQT\n→ PAST SIMPLE.\n\ncompare → COMPARED (to'g'ri fe'l).\n'compare A TO B' — predlog 'to'.",
-       "speak": "6  In the late 1960's, Erich von Däniken ......................... (compare) some ancient Aboriginal rock paintings to modern descriptions of aliens."
+       "speak": "6  In the late 1960's, Erich von Däniken ......................... (compare) some ancient Aboriginal rock paintings to modern descriptions of aliens.",
+       "speakAnswer": "compared"
       },
       {
        "prompt": "7  They ........................... (suggest) that the ancient Aborigines ...",
@@ -574,7 +593,8 @@
         "have seen"
        ],
        "whyUz": "6-band bilan BIR XIL vaqtda (1960-yillar)\n→ PAST SIMPLE.\n\nsuggest → SUGGESTED (to'g'ri fe'l).",
-       "speak": "7  They ........................... (suggest) that the ancient Aborigines ..."
+       "speak": "7  They ........................... (suggest) that the ancient Aborigines ...",
+       "speakAnswer": "suggested"
       },
       {
        "prompt": "8  ... the ancient Aborigines ........................ (know) about aliens.",
@@ -587,7 +607,8 @@
         "have seen"
        ],
        "whyUz": "QADIMDA sodir bo'lgan → PAST SIMPLE.\n\nknow → KNEW (noto'g'ri fe'l).\n\n'ANCIENT' = qadimiy — o'tmish ko'rsatkichi.",
-       "speak": "8  ... the ancient Aborigines ........................ (know) about aliens."
+       "speak": "8  ... the ancient Aborigines ........................ (know) about aliens.",
+       "speakAnswer": "knew"
       },
       {
        "prompt": "9  Another interesting point .......... (be) that ...",
@@ -600,7 +621,8 @@
         "are aliens"
        ],
        "whyUz": "Muallifning HOZIRGI fikri → PRESENT SIMPLE.\n\n'Another interesting point' — BIRLIK → IS.\n\nDIQQAT: matn o'tmish haqida bo'lsa ham,\nMUALLIFNING gapi hozirgi zamonda.",
-       "speak": "9  Another interesting point .......... (be) that ..."
+       "speak": "9  Another interesting point .......... (be) that ...",
+       "speakAnswer": "is"
       },
       {
        "prompt": "10  ... many Aborigines .................... (live) around the area of Myrrhee",
@@ -613,7 +635,8 @@
         "have seen"
        ],
        "whyUz": "O'TMISHDA sodir bo'lgan (oq tanlilar\nkelishidan oldin) → PAST SIMPLE.\n\nlive → LIVED (to'g'ri fe'l).",
-       "speak": "10  ... many Aborigines .................... (live) around the area of Myrrhee"
+       "speak": "10  ... many Aborigines .................... (live) around the area of Myrrhee",
+       "speakAnswer": "lived"
       },
       {
        "prompt": "11  before the white man ................ (arrive) in the 18th century.",
@@ -626,7 +649,8 @@
         "have seen"
        ],
        "whyUz": "KALIT: 'in the 18TH CENTURY' — ANIQ VAQT\n→ PAST SIMPLE.\n\narrive → ARRIVED.\n\n'the 18th century' — asrlar DOIM 'the' bilan.",
-       "speak": "11  before the white man ................ (arrive) in the 18th century."
+       "speak": "11  before the white man ................ (arrive) in the 18th century.",
+       "speakAnswer": "arrived"
       },
       {
        "prompt": "12  ................ (they/know) about aliens?",
@@ -639,7 +663,8 @@
         "have seen"
        ],
        "whyUz": "O'TMISH haqida savol → PAST SIMPLE.\n\n⚠ 'DID' dan keyin ASOSIY shakl:\n  'Did they KNOW?'  ✓\n  'Did they KNEW?'  ✗",
-       "speak": "12  ................ (they/know) about aliens?"
+       "speak": "12  ................ (they/know) about aliens?",
+       "speakAnswer": "Did they know"
       },
       {
        "prompt": "13  ................ (aliens/try) to contact the Aborigines again?",
@@ -652,7 +677,8 @@
         "have seen"
        ],
        "whyUz": "12-band bilan bir xil — O'TMISH haqida savol\n→ PAST SIMPLE.\n\n'DID aliens TRY' (ASOSIY shakl).\n\nDIQQAT: 'HAVE aliens TRIED ...?' ham mumkin\n— bugungi kungacha bo'lgan davr uchun.\nIkkalasi ham qabul qilinadi.\n\n'to contact' = aloqaga chiqmoq.",
-       "speak": "13  ................ (aliens/try) to contact the Aborigines again?"
+       "speak": "13  ................ (aliens/try) to contact the Aborigines again?",
+       "speakAnswer": "Did aliens try"
       },
       {
        "prompt": "14  Unfortunately, we ...................... (not/know) for sure.",
@@ -665,7 +691,8 @@
         "have seen"
        ],
        "whyUz": "HOZIRGI holat → PRESENT SIMPLE INKOR.\n\n'know' — his/aqliy fe'l, Continuous\nBO'LMAYDI.\n\n'for sure' = aniq (turg'un ibora).",
-       "speak": "14  Unfortunately, we ...................... (not/know) for sure."
+       "speak": "14  Unfortunately, we ...................... (not/know) for sure.",
+       "speakAnswer": "don't know"
       },
       {
        "prompt": "15  One thing ........... (be) certain, though",
@@ -678,7 +705,8 @@
         "are aliens"
        ],
        "whyUz": "HOZIRGI holat → PRESENT SIMPLE.\n'One thing' — BIRLIK → IS.\n\n'THOUGH' = ammo — GAP OXIRIDA turadi\n(Grammar 62-betdagi xatda ham bor edi).",
-       "speak": "15  One thing ........... (be) certain, though"
+       "speak": "15  One thing ........... (be) certain, though",
+       "speakAnswer": "is"
       },
       {
        "prompt": "16  — the truth ................ (be) still out there ...",
@@ -690,7 +718,8 @@
         "have seen",
         "are aliens"
        ],
-       "whyUz": "HOZIRGI holat → PRESENT SIMPLE.\n\n⚠ 'The truth is out there' — mashhur\n'The X-Files' serialining shiori.\n\n'STILL' = hali ham ('to be' dan KEYIN).\n'out there' = qayerdadir tashqarida."
+       "whyUz": "HOZIRGI holat → PRESENT SIMPLE.\n\n⚠ 'The truth is out there' — mashhur\n'The X-Files' serialining shiori.\n\n'STILL' = hali ham ('to be' dan KEYIN).\n'out there' = qayerdadir tashqarida.",
+       "speakAnswer": "is"
       }
      ]
     }

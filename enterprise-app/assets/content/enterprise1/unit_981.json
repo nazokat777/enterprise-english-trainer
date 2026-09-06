@@ -62,7 +62,8 @@
         "Paris",
         "Rome"
        ],
-       "whyUz": "1-mashqdagi rasmda LONDON ko'rinadi.\n\n7-mashqdagi xat manzili ham buni tasdiqlaydi:\n'17, Cherry Tree Lane, LONDON, England'."
+       "whyUz": "1-mashqdagi rasmda LONDON ko'rinadi.\n\n7-mashqdagi xat manzili ham buni tasdiqlaydi:\n'17, Cherry Tree Lane, LONDON, England'.",
+       "speakAnswer": "London"
       },
       {
        "prompt": "2  What are the children's names?",
@@ -73,7 +74,8 @@
         "Jane va George",
         "Mary va Bert"
        ],
-       "whyUz": "7-mashqdagi xat tasdiqlaydi:\n'My name is MICHAEL Banks... I have a sister\ncalled JANE.'\n\n⚠ EGALIK: 'the CHILDREN'S names' — 'children'\nallaqachon ko'plik, shuning uchun apostrof +\n'S' ('childrens'' XATO)."
+       "whyUz": "7-mashqdagi xat tasdiqlaydi:\n'My name is MICHAEL Banks... I have a sister\ncalled JANE.'\n\n⚠ EGALIK: 'the CHILDREN'S names' — 'children'\nallaqachon ko'plik, shuning uchun apostrof +\n'S' ('childrens'' XATO).",
+       "speakAnswer": "Jane va Michael"
       },
       {
        "prompt": "3  Where does George Banks work?",
@@ -84,7 +86,8 @@
         "In a school",
         "In a hospital"
        ],
-       "whyUz": "⚠ SO'Z O'YINI: familiyasi BANKS, ishi ham\nBANKDA!\n\n6-mashq buni tasdiqlaydi: 'Mr Banks works in\na BANK.'\n\nIngliz tilida bunday so'z o'yini 'pun'\ndeyiladi."
+       "whyUz": "⚠ SO'Z O'YINI: familiyasi BANKS, ishi ham\nBANKDA!\n\n6-mashq buni tasdiqlaydi: 'Mr Banks works in\na BANK.'\n\nIngliz tilida bunday so'z o'yini 'pun'\ndeyiladi.",
+       "speakAnswer": "In a bank"
       },
       {
        "prompt": "4  What is Mary Poppins' job?",
@@ -95,7 +98,8 @@
         "a nurse",
         "a singer"
        ],
-       "whyUz": "'a nanny' = enaga.\n\n'a nurse' = hamshira;\n'a singer' = qo'shiqchi — u qo'shiq aytadi,\nlekin bu KASBI emas.\n\n⚠ EGALIK: 'Mary POPPINS'' — ism '-s' bilan\ntugagani uchun faqat APOSTROF."
+       "whyUz": "'a nanny' = enaga.\n\n'a nurse' = hamshira;\n'a singer' = qo'shiqchi — u qo'shiq aytadi,\nlekin bu KASBI emas.\n\n⚠ EGALIK: 'Mary POPPINS'' — ism '-s' bilan\ntugagani uchun faqat APOSTROF.",
+       "speakAnswer": "a nanny"
       },
       {
        "prompt": "5  Which is Mary Poppins' day off?",
@@ -106,7 +110,8 @@
         "Friday",
         "Sunday"
        ],
-       "whyUz": "Filmda Meri Poppins ish shartlarini o'zi\naytadi: har ikkinchi SESHANBA — uning dam\nolish kuni.\n\n'a day off' = dam olish kuni (ishdan bo'sh\nkun)."
+       "whyUz": "Filmda Meri Poppins ish shartlarini o'zi\naytadi: har ikkinchi SESHANBA — uning dam\nolish kuni.\n\n'a day off' = dam olish kuni (ishdan bo'sh\nkun).",
+       "speakAnswer": "Tuesday"
       }
      ]
     },
@@ -129,7 +134,8 @@
         "✓ TO'G'RI",
         "✗ NOTO'G'RI"
        ],
-       "whyUz": "✓ KITOBDA ALLAQACHON BELGILANGAN — bu NAMUNA.\n\nFilmda Meri Poppins sumkadan BIRINCHI bo'lib\naynan shuni chiqaradi."
+       "whyUz": "✓ KITOBDA ALLAQACHON BELGILANGAN — bu NAMUNA.\n\nFilmda Meri Poppins sumkadan BIRINCHI bo'lib\naynan shuni chiqaradi.",
+       "speakAnswer": "✓ TO'G'RI"
       },
       {
        "prompt": "scissors (qaychi)",
@@ -139,7 +145,8 @@
         "✗ NOTO'G'RI",
         "✓ TO'G'RI"
        ],
-       "whyUz": "✗ Sumkadan chiqmaydi.\n\n⚠ 'SCISSORS' — DOIM KO'PLIKDA:\n  'The scissors ARE on the table.' ✓\n  'a pair of scissors' = bir juft qaychi\n\nShunga o'xshash: trousers, glasses, jeans."
+       "whyUz": "✗ Sumkadan chiqmaydi.\n\n⚠ 'SCISSORS' — DOIM KO'PLIKDA:\n  'The scissors ARE on the table.' ✓\n  'a pair of scissors' = bir juft qaychi\n\nShunga o'xshash: trousers, glasses, jeans.",
+       "speakAnswer": "✗ NOTO'G'RI"
       },
       {
        "prompt": "shoes (poyabzal)",
@@ -149,7 +156,8 @@
         "✗ NOTO'G'RI",
         "✓ TO'G'RI"
        ],
-       "whyUz": "✗ Sumkadan chiqmaydi.\n\n'shoes' — juft narsa: 'a PAIR OF shoes'.\n\n(2-nazorat testida ham bor edi: 'Whose are\nthese shoes?')"
+       "whyUz": "✗ Sumkadan chiqmaydi.\n\n'shoes' — juft narsa: 'a PAIR OF shoes'.\n\n(2-nazorat testida ham bor edi: 'Whose are\nthese shoes?')",
+       "speakAnswer": "✗ NOTO'G'RI"
       },
       {
        "prompt": "mirror (oyna)",
@@ -159,7 +167,8 @@
         "✓ TO'G'RI",
         "✗ NOTO'G'RI"
        ],
-       "whyUz": "✓ Meri Poppins sumkadan KATTA oyna chiqaradi.\n\nBu — sehrli sumkaning eng hayratlanarli\nnamunasi: oyna sumkadan ancha katta!"
+       "whyUz": "✓ Meri Poppins sumkadan KATTA oyna chiqaradi.\n\nBu — sehrli sumkaning eng hayratlanarli\nnamunasi: oyna sumkadan ancha katta!",
+       "speakAnswer": "✓ TO'G'RI"
       },
       {
        "prompt": "TV (televizor)",
@@ -169,7 +178,8 @@
         "✗ NOTO'G'RI",
         "✓ TO'G'RI"
        ],
-       "whyUz": "✗ TARIXIY TUZOQ!\n\n⚠ Film 1910-YILGI Londonda bo'lib o'tadi,\ntelevizor esa 1920-30-YILLARDA ixtiro\nqilingan — o'shanda umuman YO'Q edi.\n\n84-betdagi 'gold watch' va 'garage' bilan\nBIR XIL turdagi tuzoq."
+       "whyUz": "✗ TARIXIY TUZOQ!\n\n⚠ Film 1910-YILGI Londonda bo'lib o'tadi,\ntelevizor esa 1920-30-YILLARDA ixtiro\nqilingan — o'shanda umuman YO'Q edi.\n\n84-betdagi 'gold watch' va 'garage' bilan\nBIR XIL turdagi tuzoq.",
+       "speakAnswer": "✗ NOTO'G'RI"
       },
       {
        "prompt": "tape measure (o'lchov lentasi)",
@@ -179,7 +189,8 @@
         "✓ TO'G'RI",
         "✗ NOTO'G'RI"
        ],
-       "whyUz": "✓ Meri Poppins u bilan bolalarni O'LCHAYDI.\n\nLentada bo'y emas, XARAKTER yozuvi chiqadi —\nbu filmning mashhur sahnalaridan biri."
+       "whyUz": "✓ Meri Poppins u bilan bolalarni O'LCHAYDI.\n\nLentada bo'y emas, XARAKTER yozuvi chiqadi —\nbu filmning mashhur sahnalaridan biri.",
+       "speakAnswer": "✓ TO'G'RI"
       },
       {
        "prompt": "plant (guldon)",
@@ -189,7 +200,8 @@
         "✓ TO'G'RI",
         "✗ NOTO'G'RI"
        ],
-       "whyUz": "✓ Sumkadan guldon ham chiqadi.\n\n'a plant' = o'simlik;\n'a pot plant' = guldondagi o'simlik."
+       "whyUz": "✓ Sumkadan guldon ham chiqadi.\n\n'a plant' = o'simlik;\n'a pot plant' = guldondagi o'simlik.",
+       "speakAnswer": "✓ TO'G'RI"
       },
       {
        "prompt": "lamp (chiroq)",
@@ -199,7 +211,8 @@
         "✓ TO'G'RI",
         "✗ NOTO'G'RI"
        ],
-       "whyUz": "✓ Sumkadan tik turadigan chiroq ham chiqadi.\n\n'a lamp' = chiroq (stol yoki poldagi)."
+       "whyUz": "✓ Sumkadan tik turadigan chiroq ham chiqadi.\n\n'a lamp' = chiroq (stol yoki poldagi).",
+       "speakAnswer": "✓ TO'G'RI"
       },
       {
        "prompt": "teapot (choynak)",
@@ -209,7 +222,8 @@
         "✗ NOTO'G'RI",
         "✓ TO'G'RI"
        ],
-       "whyUz": "✗ Sumkadan chiqmaydi.\n\n⚠ Filmda choy sahnasi BOR, lekin u ALBERT\nAMAKINIKIDA bo'lib o'tadi (5-mashqda\n'Uncle Albert likes LAUGHING')."
+       "whyUz": "✗ Sumkadan chiqmaydi.\n\n⚠ Filmda choy sahnasi BOR, lekin u ALBERT\nAMAKINIKIDA bo'lib o'tadi (5-mashqda\n'Uncle Albert likes LAUGHING').",
+       "speakAnswer": "✗ NOTO'G'RI"
       }
      ]
     },
@@ -235,7 +249,8 @@
         "games"
        ],
        "whyUz": "'two' va 'adorable' dan keyin KO'PLIK OT\nkerak.\n\nRo'yxatda ikkita ot bor: children, games.\n'adorable' (yoqimtoy) ODAM haqida → CHILDREN.\n\n'child' → 'CHILDREN' (noto'g'ri ko'plik).",
-       "speak": "WANTED: A nanny for two adorable ..................... ."
+       "speak": "WANTED: A nanny for two adorable ..................... .",
+       "speakAnswer": "children"
       },
       {
        "prompt": "She must have ..................... cheeks",
@@ -248,7 +263,8 @@
         "children"
        ],
        "whyUz": "'cheeks' dan OLDIN — SIFAT.\n\n⚠ 'ROSY cheeks' = qizg'ish yuzlar\n(TURG'UN BIRIKMA, sog'lom ko'rinishni\nbildiradi).\n\n'a rose' (atirgul) so'zidan yasalgan.",
-       "speak": "She must have ..................... cheeks"
+       "speak": "She must have ..................... cheeks",
+       "speakAnswer": "rosy"
       },
       {
        "prompt": "and be ..................... and ...   (birinchi bo'sh joy)",
@@ -261,7 +277,8 @@
         "children"
        ],
        "whyUz": "'be' dan keyin — SIFAT.\n\n⚠ Filmdagi qo'shiqda tartib:\n'You must be KIND, you must be witty, very\nsweet and fairly PRETTY.'\n→ KIND birinchi.\n\n'kind' = mehribon (XARAKTER).",
-       "speak": "and be ..................... and ...   (birinchi bo'sh joy)"
+       "speak": "and be ..................... and ...   (birinchi bo'sh joy)",
+       "speakAnswer": "kind"
       },
       {
        "prompt": "and be kind and ..................... .   (ikkinchi bo'sh joy)",
@@ -274,7 +291,8 @@
         "games"
        ],
        "whyUz": "Qolgan sifat → PRETTY.\n\n'pretty' = chiroyli (TASHQI KO'RINISH).\n\n⚠ Bir gapda XARAKTER (kind) va TASHQI\nKO'RINISH (pretty) — Unit 4 ning farqi.",
-       "speak": "and be kind and ..................... .   (ikkinchi bo'sh joy)"
+       "speak": "and be kind and ..................... .   (ikkinchi bo'sh joy)",
+       "speakAnswer": "pretty"
       },
       {
        "prompt": "She must play ..................... .",
@@ -287,7 +305,8 @@
         "children"
        ],
        "whyUz": "'play' dan keyin — OT.\n\n'play GAMES' = o'yin o'ynamoq.\n\n⚠ 'must' dan keyin ASOSIY shakl:\n'must PLAY' ✓ / 'must PLAYS' ✗",
-       "speak": "She must play ..................... ."
+       "speak": "She must play ..................... .",
+       "speakAnswer": "games"
       },
       {
        "prompt": "She must ..................... songs",
@@ -300,7 +319,8 @@
         "games"
        ],
        "whyUz": "'must' dan keyin — FE'L; 'songs' bilan\nkeladigan fe'l → SING.\n\n'sing SONGS' — turg'un birikma.\n\nsing → sang → sung.",
-       "speak": "She must ..................... songs"
+       "speak": "She must ..................... songs",
+       "speakAnswer": "sing"
       },
       {
        "prompt": "and ..................... treats.",
@@ -313,7 +333,8 @@
         "games"
        ],
        "whyUz": "Qolgan fe'l → GIVE.\n\n'give TREATS' = shirinlik bermoq.\n\n'a treat' = shirinlik, mazza qiladigan narsa.\ngive → gave → given.",
-       "speak": "and ..................... treats."
+       "speak": "and ..................... treats.",
+       "speakAnswer": "give"
       }
      ]
     },
@@ -330,19 +351,23 @@
      "tasks": [
       {
        "left": "Mary Poppins likes ...",
-       "right": "singing"
+       "right": "singing",
+       "speakAnswer": "singing"
       },
       {
        "left": "Bert likes ...",
-       "right": "painting"
+       "right": "painting",
+       "speakAnswer": "painting"
       },
       {
        "left": "Uncle Albert likes ...",
-       "right": "laughing"
+       "right": "laughing",
+       "speakAnswer": "laughing"
       },
       {
        "left": "Mr Banks likes ...",
-       "right": "working"
+       "right": "working",
+       "speakAnswer": "working"
       }
      ]
     },
@@ -368,7 +393,8 @@
         "umbrella"
        ],
        "whyUz": "Ish JOYI kerak → BANK.\n\n⚠ SO'Z O'YINI: Mr BANKS — a BANK\n(2-mashqning 3-bandi ham shu haqida).",
-       "speak": "Mr Banks works in a(n) ..................... ."
+       "speak": "Mr Banks works in a(n) ..................... .",
+       "speakAnswer": "bank"
       },
       {
        "prompt": "He's quite ....................., about six foot.",
@@ -381,7 +407,8 @@
         "bank"
        ],
        "whyUz": "⚠ KALIT: 'about SIX FOOT' — BO'Y! → TALL.\n\n1 foot = 30,48 sm; 6 foot ≈ 183 sm.\n\n⚠ Bo'y haqida 'six FOOT' (birlikda) deyish\nmumkin; 'six FEET' ham to'g'ri (rasmiyroq).",
-       "speak": "He's quite ....................., about six foot."
+       "speak": "He's quite ....................., about six foot.",
+       "speakAnswer": "tall"
       },
       {
        "prompt": "He wears a bowler ..................... and a suit.",
@@ -394,7 +421,8 @@
         "bank"
        ],
        "whyUz": "⚠ 'a BOWLER HAT' = kotelok (qattiq, dumaloq\nshlyapa) — TURG'UN BIRIKMA.\n\n1910-yillarda London ish odamlarining ramzi:\nkotelok + kostyum + soyabon.",
-       "speak": "He wears a bowler ..................... and a suit."
+       "speak": "He wears a bowler ..................... and a suit.",
+       "speakAnswer": "hat"
       },
       {
        "prompt": "He always carries a(n) ..................... .",
@@ -407,7 +435,8 @@
         "bank"
        ],
        "whyUz": "'carry' bilan → UMBRELLA.\n\n⚠ 'CARRY' va 'WEAR' FARQI:\n  WEAR = kiyib turmoq (shlyapa, kostyum)\n  CARRY = olib yurmoq (qo'lda)\nSoyabon KIYILMAYDI — OLIB YURILADI!\n\n⚠ 'AN umbrella' — unli tovush ('a(n)'\nkitobning ishorasi).",
-       "speak": "He always carries a(n) ..................... ."
+       "speak": "He always carries a(n) ..................... .",
+       "speakAnswer": "umbrella"
       }
      ]
     },
@@ -433,7 +462,8 @@
         "father's"
        ],
        "whyUz": "'slim' (ozg'in) bilan yonma-yon — GAVDA\ntasviri.\n\nMaykl SAKKIZ yoshda → SHORT (past bo'yli).\n\n⚠ 6-mashq bilan solishtiring: otasi 'TALL'\n(olti fut).",
-       "speak": "1  I'm ..................... and slim"
+       "speak": "1  I'm ..................... and slim",
+       "speakAnswer": "short"
       },
       {
        "prompt": "2  with ..................... hair",
@@ -446,7 +476,8 @@
         "father's"
        ],
        "whyUz": "'hair' dan OLDIN — RANG → FAIR\n(och rangli, sarg'ish).\n\n84-betda ham bor edi: Feb 'FAIR hair'.\n\n⚠ 'fair' ning boshqa ma'nosi — 'adolatli'.",
-       "speak": "2  with ..................... hair"
+       "speak": "2  with ..................... hair",
+       "speakAnswer": "fair"
       },
       {
        "prompt": "3  and ..................... eyes.",
@@ -459,7 +490,8 @@
         "father's"
        ],
        "whyUz": "'eyes' dan OLDIN — RANG → BLUE.\n\n⚠ 'eyes' — KO'PLIK:\n'What colour ARE your eyes?'",
-       "speak": "3  and ..................... eyes."
+       "speak": "3  and ..................... eyes.",
+       "speakAnswer": "blue"
       },
       {
        "prompt": "4  My ..................... name is George",
@@ -472,7 +504,8 @@
         "kites"
        ],
        "whyUz": "⚠ ENG OSON BAND!\n\nRo'yxatda 10 ta so'z bor, lekin faqat BITTASI\nEGALIK shaklida: 'father'S' (apostrof + s).\n\n'name' dan oldin egalik kerak → FATHER'S.",
-       "speak": "4  My ..................... name is George"
+       "speak": "4  My ..................... name is George",
+       "speakAnswer": "father's"
       },
       {
        "prompt": "5  and he works in a ..................... .",
@@ -485,7 +518,8 @@
         "father's"
        ],
        "whyUz": "Ish joyi → BANK.\n\n2-mashqning 3-bandi va 6-mashq bilan BIR XIL:\n'Mr BANKS works in a BANK' — so'z o'yini.",
-       "speak": "5  and he works in a ..................... ."
+       "speak": "5  and he works in a ..................... .",
+       "speakAnswer": "bank"
       },
       {
        "prompt": "6  I also have a ..................... called Mary Poppins.",
@@ -498,7 +532,8 @@
         "father's"
        ],
        "whyUz": "Meri Poppinsning KASBI → NANNY.\n\n2-mashqning 4-bandi tasdiqlaydi.\n\n'a ... CALLED Mary Poppins' = Meri Poppins\nISMLI ...\n(o'xshash: 'a sister CALLED Jane').",
-       "speak": "6  I also have a ..................... called Mary Poppins."
+       "speak": "6  I also have a ..................... called Mary Poppins.",
+       "speakAnswer": "nanny"
       },
       {
        "prompt": "7  She's very ..................... and ...",
@@ -511,7 +546,8 @@
         "kites"
        ],
        "whyUz": "'She's very' dan keyin — SIFAT.\n\nQolgan sifatlar: kind, funny.\n\n'kind' = mehribon (XARAKTER).\n4-mashqda ham bor edi: 'She must be KIND.'",
-       "speak": "7  She's very ..................... and ..."
+       "speak": "7  She's very ..................... and ...",
+       "speakAnswer": "kind"
       },
       {
        "prompt": "8  She's very kind and ..................... .",
@@ -524,7 +560,8 @@
         "kites"
        ],
        "whyUz": "Qolgan sifat → FUNNY (kulgili).\n\nIkkalasi ham XARAKTER haqida —\n'What IS she LIKE?' savolining javobi.",
-       "speak": "8  She's very kind and ..................... ."
+       "speak": "8  She's very kind and ..................... .",
+       "speakAnswer": "funny"
       },
       {
        "prompt": "9  I like flying ..................... ",
@@ -537,7 +574,8 @@
         "father's"
        ],
        "whyUz": "⚠ 'to FLY A KITE' = varrak uchirmoq.\n\nFilmning OXIRGI sahnasi: butun oila varrak\nuchiradi ('Let's Go Fly a Kite').\n\n5-mashqda 'Mr Banks likes WORKING' edi —\nfilm oxirida u o'zgaradi.\n\n'like + V-ING': 'like FLYING' ✓",
-       "speak": "9  I like flying ....................."
+       "speak": "9  I like flying .....................",
+       "speakAnswer": "kites"
       },
       {
        "prompt": "10  and going to visit ..................... Albert.",
@@ -550,7 +588,8 @@
         "father's"
        ],
        "whyUz": "Ism oldidan → UNCLE.\n\n⚠ BOSH HARF bilan, chunki ism bilan birga:\n  'UNCLE Albert'  ✓ (ism)\n  'my uncle'      ✓ (oddiy so'z)\n\nKitob ro'yxatda 'Uncle' ni allaqachon BOSH\nHARF bilan bergan — bu ISHORA!",
-       "speak": "10  and going to visit ..................... Albert."
+       "speak": "10  and going to visit ..................... Albert.",
+       "speakAnswer": "Uncle"
       }
      ]
     },

@@ -97,7 +97,8 @@
         "autumn",
         "winter"
        ],
-       "speak": "Card A — trees full of white blossom, green grass, a young man picking blossom"
+       "speak": "Card A — trees full of white blossom, green grass, a young man picking blossom",
+       "speakAnswer": "spring"
       },
       {
        "prompt": "Card B — deep snow everywhere, bare black trees, children in warm clothes throwing snowballs",
@@ -109,7 +110,8 @@
         "autumn",
         "winter"
        ],
-       "speak": "Card B — deep snow everywhere, bare black trees, children in warm clothes throwing snowballs"
+       "speak": "Card B — deep snow everywhere, bare black trees, children in warm clothes throwing snowballs",
+       "speakAnswer": "winter"
       },
       {
        "prompt": "Card C — a beach, a big orange sunshade, a man in a swimming-costume on the sand",
@@ -121,7 +123,8 @@
         "autumn",
         "winter"
        ],
-       "speak": "Card C — a beach, a big orange sunshade, a man in a swimming-costume on the sand"
+       "speak": "Card C — a beach, a big orange sunshade, a man in a swimming-costume on the sand",
+       "speakAnswer": "summer"
       },
       {
        "prompt": "Card D — bare thin trees bending in the wind, fallen leaves, people in heavy coats by a lake",
@@ -133,7 +136,8 @@
         "autumn",
         "winter"
        ],
-       "speak": "Card D — bare thin trees bending in the wind, fallen leaves, people in heavy coats by a lake"
+       "speak": "Card D — bare thin trees bending in the wind, fallen leaves, people in heavy coats by a lake",
+       "speakAnswer": "autumn"
       }
      ]
     },
@@ -205,14 +209,16 @@
        "answer": "A va C",
        "promptUz": "Quyoshli IKKI karta bor",
        "whyUz": "A karta (bahor) ham, C karta (yoz) ham quyoshli.\nIkkalasi ham to'g'ri javob.\n'to shine' = charaqlamoq, porlamoq.",
-       "speak": "2  The sun is shining. It's sunny."
+       "speak": "2  The sun is shining. It's sunny.",
+       "speakAnswer": "A va C"
       },
       {
        "prompt": "3  It is raining. It's a rainy day.",
        "answer": "hech qaysi karta",
        "promptUz": "Kartalarda yomg'ir bormi?",
        "whyUz": "HECH QAYSI kartaga mos kelmaydi — birortasida ham yomg'ir yo'q.\nBu — kitob aytgan ikki gapdan biri.",
-       "speak": "3  It is raining. It's a rainy day."
+       "speak": "3  It is raining. It's a rainy day.",
+       "speakAnswer": "hech qaysi karta"
       },
       {
        "prompt": "4  It is snowing. It's a snowy day.",
@@ -226,7 +232,8 @@
        "answer": "hech qaysi karta",
        "promptUz": "Kartalarda tuman bormi?",
        "whyUz": "HECH QAYSI kartaga mos kelmaydi — birortasida ham tuman yo'q.\n'fog' = tuman (sanalmaydigan ot).\nBu — kitob aytgan ikki gapdan ikkinchisi.",
-       "speak": "5  There is a lot of fog. It's foggy."
+       "speak": "5  There is a lot of fog. It's foggy.",
+       "speakAnswer": "hech qaysi karta"
       }
      ]
     },
@@ -349,15 +356,18 @@
      "tasks": [
       {
        "left": "1  It is snowing heavily today.",
-       "right": "c  Warsaw"
+       "right": "c  Warsaw",
+       "speakAnswer": "c  Warsaw"
       },
       {
        "left": "2  It's very hot and the sun is shining.",
-       "right": "a  Sydney"
+       "right": "a  Sydney",
+       "speakAnswer": "a  Sydney"
       },
       {
        "left": "3  It's windy today and it is raining.",
-       "right": "b  London"
+       "right": "b  London",
+       "speakAnswer": "b  London"
       }
      ]
     }
@@ -392,7 +402,8 @@
         "make"
        ],
        "whyUz": "'to decorate the Christmas tree' = archani bezamoq (B otkritka).\nGap: They are decorating the Christmas tree.",
-       "speak": "1  to ............ the Christmas tree"
+       "speak": "1  to ............ the Christmas tree",
+       "speakAnswer": "decorate"
       },
       {
        "prompt": "2  We ............ you a lot.",
@@ -404,7 +415,8 @@
         "season's"
        ],
        "whyUz": "'We miss you a lot' = sizni juda sog'indik (B otkritka).\nKo'plik ega ('we') → fe'lga -s QO'SHILMAYDI.",
-       "speak": "2  We ............ you a lot."
+       "speak": "2  We ............ you a lot.",
+       "speakAnswer": "miss"
       },
       {
        "prompt": "3  to ............ the good weather",
@@ -416,7 +428,8 @@
         "make"
        ],
        "whyUz": "'to enjoy the good weather' = yaxshi ob-havodan zavqlanmoq (C otkritka).\nGap: Everyone is enjoying the good weather.",
-       "speak": "3  to ............ the good weather"
+       "speak": "3  to ............ the good weather",
+       "speakAnswer": "enjoy"
       },
       {
        "prompt": "4  ............ greetings",
@@ -428,7 +441,8 @@
         "make"
        ],
        "whyUz": "'Season's greetings' = bayram tabriklari (C otkritka).\nEgalik apostrofi: season + 's.",
-       "speak": "4  ............ greetings"
+       "speak": "4  ............ greetings",
+       "speakAnswer": "season's"
       },
       {
        "prompt": "5  ............ jackets",
@@ -440,7 +454,8 @@
         "make"
        ],
        "whyUz": "'heavy jackets' = qalin kurtkalar (A otkritka).\n'heavy' bu yerda = qalin, issiq (og'ir emas).",
-       "speak": "5  ............ jackets"
+       "speak": "5  ............ jackets",
+       "speakAnswer": "heavy"
       },
       {
        "prompt": "6  to ............ a snowman",
@@ -452,7 +467,8 @@
         "season's"
        ],
        "whyUz": "'to make a snowman' = qorbobo yasamoq (A otkritka).\nGap: They are making a snowman in the park.",
-       "speak": "6  to ............ a snowman"
+       "speak": "6  to ............ a snowman",
+       "speakAnswer": "make"
       },
       {
        "prompt": "7  to ............ them warm",
@@ -464,7 +480,8 @@
         "season's"
        ],
        "whyUz": "'to keep them warm' = ularni issiq saqlamoq (A otkritka).\nBu ibora 40-betdagi pingvin matnida ham bor edi.",
-       "speak": "7  to ............ them warm"
+       "speak": "7  to ............ them warm",
+       "speakAnswer": "keep"
       }
      ]
     },
@@ -489,7 +506,8 @@
         "of"
        ],
        "whyUz": "Shahar, mamlakat, mahalla → IN.\n'It is cold IN Warsaw.'",
-       "speak": "1  ............ Warsaw"
+       "speak": "1  ............ Warsaw",
+       "speakAnswer": "in"
       },
       {
        "prompt": "2  ............ the park",
@@ -501,7 +519,8 @@
         "of"
        ],
        "whyUz": "Bog', o'rmon, xona → IN.\n'They are making a snowman IN the park.'",
-       "speak": "2  ............ the park"
+       "speak": "2  ............ the park",
+       "speakAnswer": "in"
       },
       {
        "prompt": "3  ............ the moment",
@@ -513,7 +532,8 @@
         "of"
        ],
        "whyUz": "'AT the moment' = ayni paytda — o'zgarmas ibora.",
-       "speak": "3  ............ the moment"
+       "speak": "3  ............ the moment",
+       "speakAnswer": "at"
       },
       {
        "prompt": "4  Greetings ............ London",
@@ -525,7 +545,8 @@
         "at"
        ],
        "whyUz": "'Greetings FROM ...' = ...dan salom. Kelib chiqish nuqtasi → FROM.",
-       "speak": "4  Greetings ............ London"
+       "speak": "4  Greetings ............ London",
+       "speakAnswer": "from"
       },
       {
        "prompt": "5  ............ their pyjamas",
@@ -537,7 +558,8 @@
         "of"
        ],
        "whyUz": "'be IN + kiyim' = kiygan holda bo'lmoq.\n'The children are IN their pyjamas.'",
-       "speak": "5  ............ their pyjamas"
+       "speak": "5  ............ their pyjamas",
+       "speakAnswer": "in"
       },
       {
        "prompt": "6  ............ the beach",
@@ -549,7 +571,8 @@
         "of"
        ],
        "whyUz": "'ON the beach' — plyaj yuzasida turibdi → ON.\nDIQQAT: 'in the beach' XATO.",
-       "speak": "6  ............ the beach"
+       "speak": "6  ............ the beach",
+       "speakAnswer": "on"
       },
       {
        "prompt": "7  Lots ............ love",
@@ -561,7 +584,8 @@
         "at"
        ],
        "whyUz": "'Lots OF love' = katta mehr bilan.\n'lots of', 'a lot of' — miqdor iboralari doim OF bilan.",
-       "speak": "7  Lots ............ love"
+       "speak": "7  Lots ............ love",
+       "speakAnswer": "of"
       }
      ]
     },
@@ -656,85 +680,99 @@
        "prompt": "London — ob-havo?",
        "answer": "It's chilly and windy.",
        "promptUz": "Belgi: puflab turgan bulut; 10°C",
-       "whyUz": "10°C shkalada 'chilly' ga to'g'ri keladi; belgi shamolni bildiradi."
+       "whyUz": "10°C shkalada 'chilly' ga to'g'ri keladi; belgi shamolni bildiradi.",
+       "speakAnswer": "It's chilly and windy."
       },
       {
        "prompt": "London — harorat?",
        "answer": "It's 10°C. / It's 50°F.",
        "promptUz": "Jadvaldan",
-       "whyUz": "Jadvalda: London 10 C / 50 F."
+       "whyUz": "Jadvalda: London 10 C / 50 F.",
+       "speakAnswer": "It's 10°C. / It's 50°F."
       },
       {
        "prompt": "Madrid — ob-havo?",
        "answer": "It's cold and cloudy.",
        "promptUz": "Belgi: bulut; 5°C",
-       "whyUz": "5°C shkalada 'cold'; belgi oddiy bulut → cloudy."
+       "whyUz": "5°C shkalada 'cold'; belgi oddiy bulut → cloudy.",
+       "speakAnswer": "It's cold and cloudy."
       },
       {
        "prompt": "Madrid — harorat?",
        "answer": "It's 5°C. / It's 41°F.",
        "promptUz": "Jadvaldan",
-       "whyUz": "Jadvalda: Madrid 5 C / 41 F."
+       "whyUz": "Jadvalda: Madrid 5 C / 41 F.",
+       "speakAnswer": "It's 5°C. / It's 41°F."
       },
       {
        "prompt": "Manila — ob-havo?",
        "answer": "It's hot and sunny.",
        "promptUz": "Belgi: quyosh; 30°C",
-       "whyUz": "30°C shkalada 'hot'; belgi quyosh → sunny."
+       "whyUz": "30°C shkalada 'hot'; belgi quyosh → sunny.",
+       "speakAnswer": "It's hot and sunny."
       },
       {
        "prompt": "Manila — harorat?",
        "answer": "It's 30°C. / It's 86°F.",
        "promptUz": "Jadvaldan",
-       "whyUz": "Jadvalda: Manila 30 C / 86 F."
+       "whyUz": "Jadvalda: Manila 30 C / 86 F.",
+       "speakAnswer": "It's 30°C. / It's 86°F."
       },
       {
        "prompt": "Paris — ob-havo?",
        "answer": "It's cold and rainy.",
        "promptUz": "Belgi: bulut va tomchilar; 5°C",
-       "whyUz": "5°C shkalada 'cold'; belgi yomg'ir tomchilari → rainy."
+       "whyUz": "5°C shkalada 'cold'; belgi yomg'ir tomchilari → rainy.",
+       "speakAnswer": "It's cold and rainy."
       },
       {
        "prompt": "Paris — harorat?",
        "answer": "It's 5°C. / It's 41°F.",
        "promptUz": "Jadvaldan",
-       "whyUz": "Jadvalda: Paris 5 C / 41 F — Madrid bilan bir xil harorat, lekin ob-havo boshqa."
+       "whyUz": "Jadvalda: Paris 5 C / 41 F — Madrid bilan bir xil harorat, lekin ob-havo boshqa.",
+       "speakAnswer": "It's 5°C. / It's 41°F."
       },
       {
        "prompt": "Prague — ob-havo?",
        "answer": "It's freezing cold and snowy.",
        "promptUz": "Belgi: qor; −5°C",
-       "whyUz": "−5°C shkalada 'freezing cold'; belgi qor → snowy.\nBu — jadvaldagi eng sovuq shahar."
+       "whyUz": "−5°C shkalada 'freezing cold'; belgi qor → snowy.\nBu — jadvaldagi eng sovuq shahar.",
+       "speakAnswer": "It's freezing cold and snowy."
       },
       {
        "prompt": "Prague — harorat?",
        "answer": "It's −5°C. / It's 23°F.",
        "promptUz": "Jadvaldan (manfiy son)",
-       "whyUz": "Jadvalda: Prague −5 C / 23 F.\nManfiy harorat: 'minus five degrees' deb o'qiladi."
+       "whyUz": "Jadvalda: Prague −5 C / 23 F.\nManfiy harorat: 'minus five degrees' deb o'qiladi.",
+       "speakAnswer": "It's −5°C. / It's 23°F."
       },
       {
        "prompt": "Rome — ob-havo?",
        "answer": "It's cool and cloudy.",
        "promptUz": "Belgi: bulut; 15°C",
-       "whyUz": "15°C shkalada 'cool'; belgi oddiy bulut → cloudy."
+       "whyUz": "15°C shkalada 'cool'; belgi oddiy bulut → cloudy.",
+       "speakAnswer": "It's cool and cloudy."
       },
       {
        "prompt": "Rome — harorat?",
        "answer": "It's 15°C. / It's 59°F.",
        "promptUz": "Jadvaldan",
-       "whyUz": "Jadvalda: Rome 15 C / 59 F."
+       "whyUz": "Jadvalda: Rome 15 C / 59 F.",
+       "speakAnswer": "It's 15°C. / It's 59°F."
       },
       {
        "prompt": "Singapore — ob-havo?",
        "answer": "It's boiling hot and sunny.",
        "promptUz": "Belgi: quyosh; 35°C",
-       "whyUz": "35°C shkalada 'boiling hot'; belgi quyosh → sunny.\nBu — jadvaldagi eng issiq shahar."
+       "whyUz": "35°C shkalada 'boiling hot'; belgi quyosh → sunny.\nBu — jadvaldagi eng issiq shahar.",
+       "speakAnswer": "It's boiling hot and sunny."
       },
       {
        "prompt": "Singapore — harorat?",
        "answer": "It's 35°C. / It's 95°F.",
        "promptUz": "Jadvaldan",
-       "whyUz": "Jadvalda: Singapore 35 C / 95 F."
+       "whyUz": "Jadvalda: Singapore 35 C / 95 F.",
+       "speakAnswer": "It's 35°C. / It's 95°F."
       }
      ]
     },
@@ -791,7 +829,8 @@
         "shorts",
         "trousers"
        ],
-       "whyUz": "Pol kostyum va ko'ylak kiygan; bo'yniga GALSTUK taqqan.\n'a tie' /taɪ/ = galstuk. 'a suit and tie' — rasmiy kiyim."
+       "whyUz": "Pol kostyum va ko'ylak kiygan; bo'yniga GALSTUK taqqan.\n'a tie' /taɪ/ = galstuk. 'a suit and tie' — rasmiy kiyim.",
+       "speakAnswer": "tie"
       },
       {
        "prompt": "b) ............ (Steve — oyoqdan yuqoriroq qismiga ishora)",
@@ -802,7 +841,8 @@
         "tie",
         "trousers"
        ],
-       "whyUz": "Stiv qora jemper va KATAKLI KALTA SHIM kiygan.\n'shorts' — DOIM ko'plikda."
+       "whyUz": "Stiv qora jemper va KATAKLI KALTA SHIM kiygan.\n'shorts' — DOIM ko'plikda.",
+       "speakAnswer": "shorts"
       },
       {
        "prompt": "c) ............ (Lucy — bosh qismiga ishora)",
@@ -813,7 +853,8 @@
         "tie",
         "trousers"
        ],
-       "whyUz": "Lyusi keng chetli SHLYAPA kiygan.\n'a hat' — chetli; 'a cap' — kozirekli (Jenni kiygan)."
+       "whyUz": "Lyusi keng chetli SHLYAPA kiygan.\n'a hat' — chetli; 'a cap' — kozirekli (Jenni kiygan).",
+       "speakAnswer": "hat"
       },
       {
        "prompt": "d) ............ (John — pastki kiyimga ishora)",
@@ -824,7 +865,8 @@
         "shorts",
         "tie"
        ],
-       "whyUz": "Jon charm kurtka va charm SHIM kiygan.\n'trousers' — DOIM ko'plikda (britancha; amerikacha 'pants')."
+       "whyUz": "Jon charm kurtka va charm SHIM kiygan.\n'trousers' — DOIM ko'plikda (britancha; amerikacha 'pants').",
+       "speakAnswer": "trousers"
       },
       {
        "prompt": "e) ............ (Diana — ustki oq kiyimga ishora)",
@@ -835,7 +877,8 @@
         "shorts",
         "tie"
        ],
-       "whyUz": "Diana oq BLUZKA va uning ustidan kurtka kiygan.\n'a blouse' /blaʊz/ — faqat ayollar kiyimi."
+       "whyUz": "Diana oq BLUZKA va uning ustidan kurtka kiygan.\n'a blouse' /blaʊz/ — faqat ayollar kiyimi.",
+       "speakAnswer": "blouse"
       },
       {
        "prompt": "f) ............ (Diana — pushti pastki kiyimga ishora)",
@@ -846,7 +889,8 @@
         "shorts",
         "tie"
        ],
-       "whyUz": "Diana pushti YUBKA kiygan, ostidan qora paypoq-shim (tights).\n'a skirt' — faqat pastki qism; 'a dress' — yaxlit ko'ylak."
+       "whyUz": "Diana pushti YUBKA kiygan, ostidan qora paypoq-shim (tights).\n'a skirt' — faqat pastki qism; 'a dress' — yaxlit ko'ylak.",
+       "speakAnswer": "skirt"
       }
      ]
     },
@@ -866,43 +910,50 @@
        "prompt": "STEVE (kitobda 1-raqam berilgan) — kiyimini tasvirlang:",
        "answer": "Steve is wearing a jumper, checked shorts and shoes.",
        "promptUz": "Qora jemper, katakli kalta shim, jigarrang tufli",
-       "whyUz": "Kitobda Stiv 1-raqam bilan belgilangan — demak dizayner uni BIRINCHI tasvirlaydi.\n'checked' = katakli."
+       "whyUz": "Kitobda Stiv 1-raqam bilan belgilangan — demak dizayner uni BIRINCHI tasvirlaydi.\n'checked' = katakli.",
+       "speakAnswer": "Steve is wearing a jumper, checked shorts and shoes."
       },
       {
        "prompt": "PAUL — kiyimini tasvirlang:",
        "answer": "Paul is wearing a suit, a shirt and a tie.",
        "promptUz": "Rasmiy kiyim: kostyum, ko'ylak, galstuk",
-       "whyUz": "'a suit' = kostyum (pidjak + shim birga).\nUchalasi ham BIRLIK → 'a' bilan."
+       "whyUz": "'a suit' = kostyum (pidjak + shim birga).\nUchalasi ham BIRLIK → 'a' bilan.",
+       "speakAnswer": "Paul is wearing a suit, a shirt and a tie."
       },
       {
        "prompt": "LUCY — kiyimini tasvirlang:",
        "answer": "Lucy is wearing a hat, a long dress and boots.",
        "promptUz": "Shlyapa, uzun gulli ko'ylak, qizil etik",
-       "whyUz": "'boots' — KO'PLIK → 'a' YO'Q.\n'a long dress' — uzun ko'ylak."
+       "whyUz": "'boots' — KO'PLIK → 'a' YO'Q.\n'a long dress' — uzun ko'ylak.",
+       "speakAnswer": "Lucy is wearing a hat, a long dress and boots."
       },
       {
        "prompt": "JOHN — kiyimini tasvirlang:",
        "answer": "John is wearing a T-shirt, a leather jacket and leather trousers.",
        "promptUz": "Charm kurtka va charm shim, futbolka",
-       "whyUz": "'leather' = charm.\n'trousers' — KO'PLIK → 'a' YO'Q."
+       "whyUz": "'leather' = charm.\n'trousers' — KO'PLIK → 'a' YO'Q.",
+       "speakAnswer": "John is wearing a T-shirt, a leather jacket and leather trousers."
       },
       {
        "prompt": "DIANA — kiyimini tasvirlang:",
        "answer": "Diana is wearing a blouse, a jacket, a skirt and tights.",
        "promptUz": "Oq bluzka, kurtka, pushti yubka, qora paypoq-shim",
-       "whyUz": "'tights' = paypoq-shim (kolgotki) — DOIM ko'plikda.\nQolganlari birlik → 'a' bilan."
+       "whyUz": "'tights' = paypoq-shim (kolgotki) — DOIM ko'plikda.\nQolganlari birlik → 'a' bilan.",
+       "speakAnswer": "Diana is wearing a blouse, a jacket, a skirt and tights."
       },
       {
        "prompt": "MARY — kiyimini tasvirlang:",
        "answer": "Mary is wearing a shirt, a T-shirt, jeans and sandals.",
        "promptUz": "Ko'ylak, futbolka, jinsi shim, sandal",
-       "whyUz": "'jeans' va 'sandals' — KO'PLIK → 'a' YO'Q.\nMeri stulda o'tirgan holda tasvirlangan."
+       "whyUz": "'jeans' va 'sandals' — KO'PLIK → 'a' YO'Q.\nMeri stulda o'tirgan holda tasvirlangan.",
+       "speakAnswer": "Mary is wearing a shirt, a T-shirt, jeans and sandals."
       },
       {
        "prompt": "JENNY — kiyimini tasvirlang:",
        "answer": "Jenny is wearing a cap, a T-shirt, socks and trainers.",
        "promptUz": "Kepka, futbolka, paypoq, krossovka (beysbol o'yinchisi)",
-       "whyUz": "'socks' va 'trainers' — KO'PLIK → 'a' YO'Q.\nJenni beysbol tayoqchasini ushlab turibdi."
+       "whyUz": "'socks' va 'trainers' — KO'PLIK → 'a' YO'Q.\nJenni beysbol tayoqchasini ushlab turibdi.",
+       "speakAnswer": "Jenny is wearing a cap, a T-shirt, socks and trainers."
       }
      ]
     },
@@ -969,49 +1020,56 @@
        "answer": "Linda is wearing a dress and trainers. She is picking flowers.",
        "promptUz": "U engashib, qo'lida gul dastasi bor",
        "whyUz": "Linda engashib gul terayapti — qo'lida gul dastasi ko'rinadi.\n'pick' → 'picking'. 'trainers' = krossovka (doim ko'plikda).",
-       "speak": "2  What is Linda wearing? What is she doing?"
+       "speak": "2  What is Linda wearing? What is she doing?",
+       "speakAnswer": "Linda is wearing a dress and trainers. She is picking flowers."
       },
       {
        "prompt": "3  What is Anne wearing? What is she doing?",
        "answer": "Anne is wearing a jean shirt and trousers. She is eating a sandwich.",
        "promptUz": "Uzun jinsi ko'ylakda, qo'lini og'ziga olib borgan",
        "whyUz": "Anne uzun jinsi ko'ylak (cho'ntakli) va och rangli shim kiygan.\nIkki qo'li bilan sendvich ushlab yeyayapti.\n'eat' → 'eating' (oddiy -ing).",
-       "speak": "3  What is Anne wearing? What is she doing?"
+       "speak": "3  What is Anne wearing? What is she doing?",
+       "speakAnswer": "Anne is wearing a jean shirt and trousers. She is eating a sandwich."
       },
       {
        "prompt": "4  What is Ryan wearing? What is he doing?",
        "answer": "Ryan is wearing a shirt and jeans. He is drinking a Coke.",
        "promptUz": "Qo'lida banka bor, uni og'ziga olib borayapti",
        "whyUz": "Rayan yoqali ko'ylak va kamarli shim kiygan.\nQo'lida kola bankasi — ichayapti.\n'drink' → 'drinking'. 'a Coke' — bosh harf bilan (marka nomi).",
-       "speak": "4  What is Ryan wearing? What is he doing?"
+       "speak": "4  What is Ryan wearing? What is he doing?",
+       "speakAnswer": "Ryan is wearing a shirt and jeans. He is drinking a Coke."
       },
       {
        "prompt": "5  What is Amanda wearing? What is she doing?",
        "answer": "Amanda is wearing a blouse and a skirt. She is taking photographs.",
        "promptUz": "Fotoapparatni ko'ziga olib borgan",
        "whyUz": "Amanda yoqali oq bluzka va kamarli yubka kiygan.\nFotoapparat bilan suratga olayapti.\n'take photographs' = suratga olmoq → 'taking photographs' (-e TUSHDI).",
-       "speak": "5  What is Amanda wearing? What is she doing?"
+       "speak": "5  What is Amanda wearing? What is she doing?",
+       "speakAnswer": "Amanda is wearing a blouse and a skirt. She is taking photographs."
       },
       {
        "prompt": "6  What is Tony wearing? What is he doing?",
        "answer": "Tony is wearing a cap. He is riding a bicycle.",
        "promptUz": "Boshida kozirekli bosh kiyim, velosipedda",
        "whyUz": "Toni kepka kiygan va velosiped haydayapti.\n'ride' → 'riding' (-e TUSHDI).\n'a cap' — kozirekli bosh kiyim; 'a hat' — chetli shlyapa.",
-       "speak": "6  What is Tony wearing? What is he doing?"
+       "speak": "6  What is Tony wearing? What is he doing?",
+       "speakAnswer": "Tony is wearing a cap. He is riding a bicycle."
       },
       {
        "prompt": "7  What is Stanley wearing? What is he doing?",
        "answer": "Stanley is wearing a hat. He is reading a book.",
        "promptUz": "Chetli shlyapa va ko'zoynakli keksa erkak",
        "whyUz": "Stenli chetli shlyapa kiygan, ko'zoynak taqqan va kitob o'qiyapti.\n'read' → 'reading' (oddiy -ing).",
-       "speak": "7  What is Stanley wearing? What is he doing?"
+       "speak": "7  What is Stanley wearing? What is he doing?",
+       "speakAnswer": "Stanley is wearing a hat. He is reading a book."
       },
       {
        "prompt": "8  What is Mavis wearing? What is she doing?",
        "answer": "Mavis is wearing a jacket. She is listening to music.",
        "promptUz": "Stenlining yonida o'tirgan, quloqchin taqqan",
        "whyUz": "Mavis to'q rangli kurtka kiygan va quloqchinda musiqa tinglayapti.\n'listen TO music' — 'to' predlogi SHART.\n'listen' → 'listening' (undosh IKKILANMAYDI — urg'u birinchi bo'g'inda).",
-       "speak": "8  What is Mavis wearing? What is she doing?"
+       "speak": "8  What is Mavis wearing? What is she doing?",
+       "speakAnswer": "Mavis is wearing a jacket. She is listening to music."
       }
      ]
     }
@@ -1045,7 +1103,8 @@
         "socks",
         "shorts"
        ],
-       "whyUz": "'hands' (qo'llar) → GLOVES (qo'lqoplar).\n'socks' = paypoq (oyoq uchun); 'shorts' = kalta shim."
+       "whyUz": "'hands' (qo'llar) → GLOVES (qo'lqoplar).\n'socks' = paypoq (oyoq uchun); 'shorts' = kalta shim.",
+       "speakAnswer": "gloves"
       },
       {
        "prompt": "2  On the beach, people wear ............ on their feet.",
@@ -1056,7 +1115,8 @@
         "boots",
         "hats"
        ],
-       "whyUz": "Plyaj — issiq va qumli → SANDALS (ochiq oyoq kiyim).\n'boots' (etik) issiqda noqulay; 'hats' (shlyapa) — bosh kiyim."
+       "whyUz": "Plyaj — issiq va qumli → SANDALS (ochiq oyoq kiyim).\n'boots' (etik) issiqda noqulay; 'hats' (shlyapa) — bosh kiyim.",
+       "speakAnswer": "sandals"
       },
       {
        "prompt": "3  Most people wear ............ in bed.",
@@ -1067,7 +1127,8 @@
         "trousers",
         "shoes"
        ],
-       "whyUz": "'in bed' = karavotda, uxlaganda → PYJAMAS (pijama).\nDIQQAT: 'pyjamas' DOIM ko'plikda."
+       "whyUz": "'in bed' = karavotda, uxlaganda → PYJAMAS (pijama).\nDIQQAT: 'pyjamas' DOIM ko'plikda.",
+       "speakAnswer": "pyjamas"
       },
       {
        "prompt": "4  When it's cold, I wear my ............ .",
@@ -1078,7 +1139,8 @@
         "swimming-costume",
         "blouse"
        ],
-       "whyUz": "Sovuqda issiq ustki kiyim kerak → COAT (palto).\n'swimming-costume' — issiq havoda; 'blouse' — yengil bluzka."
+       "whyUz": "Sovuqda issiq ustki kiyim kerak → COAT (palto).\n'swimming-costume' — issiq havoda; 'blouse' — yengil bluzka.",
+       "speakAnswer": "coat"
       }
      ]
     },
@@ -1098,70 +1160,80 @@
        "answer": "snowy",
        "promptUz": "'snow' otidan sifat yasang",
        "whyUz": "snow + -y = SNOWY (qorli).\n'a snowy day' = qorli kun.",
-       "speak": "1  It's a ............ day."
+       "speak": "1  It's a ............ day.",
+       "speakAnswer": "snowy"
       },
       {
        "prompt": "2  The wind is [shamol belgisi] ............ .",
        "answer": "blowing",
        "promptUz": "Shamol nima qiladi?",
        "whyUz": "'The wind is blowing' = shamol esayapti.\n'to blow' → 'blowing' (oddiy -ing).",
-       "speak": "2  The wind is [shamol belgisi] ............ ."
+       "speak": "2  The wind is [shamol belgisi] ............ .",
+       "speakAnswer": "blowing"
       },
       {
        "prompt": "2  It's a ............ day.",
        "answer": "windy",
        "promptUz": "'wind' otidan sifat yasang",
        "whyUz": "wind + -y = WINDY (shamolli).",
-       "speak": "2  It's a ............ day."
+       "speak": "2  It's a ............ day.",
+       "speakAnswer": "windy"
       },
       {
        "prompt": "3  There are [bulut belgisi] ............ in the sky.",
        "answer": "clouds",
        "promptUz": "Osmondagi oq narsalar (ko'plikda)",
        "whyUz": "'There ARE ...' → KO'PLIK kerak: CLOUDS (bulutlar).\n'the sky' = osmon.",
-       "speak": "3  There are [bulut belgisi] ............ in the sky."
+       "speak": "3  There are [bulut belgisi] ............ in the sky.",
+       "speakAnswer": "clouds"
       },
       {
        "prompt": "3  It's a ............ day.",
        "answer": "cloudy",
        "promptUz": "'cloud' otidan sifat yasang",
        "whyUz": "cloud + -y = CLOUDY (bulutli).",
-       "speak": "3  It's a ............ day."
+       "speak": "3  It's a ............ day.",
+       "speakAnswer": "cloudy"
       },
       {
        "prompt": "4  The [quyosh belgisi] ............ is ............ .  [1-bo'shliq]",
        "answer": "sun",
        "promptUz": "Osmondagi yorug'lik manbai va uning harakati",
        "whyUz": "'The SUN is SHINING' = quyosh charaqlayapti.\n'shine' → 'shining' (-e TUSHDI).\nDIQQAT: 'the sun' — DOIM 'the' bilan (yagona narsa).",
-       "speak": "4  The [quyosh belgisi] ............ is ............ .  [1-bo'shliq]"
+       "speak": "4  The [quyosh belgisi] ............ is ............ .  [1-bo'shliq]",
+       "speakAnswer": "sun"
       },
       {
        "prompt": "4  The [quyosh belgisi] ............ is ............ .  [2-bo'shliq]",
        "answer": "shining",
        "promptUz": "Osmondagi yorug'lik manbai va uning harakati",
        "whyUz": "'The SUN is SHINING' = quyosh charaqlayapti.\n'shine' → 'shining' (-e TUSHDI).\nDIQQAT: 'the sun' — DOIM 'the' bilan (yagona narsa).",
-       "speak": "4  The [quyosh belgisi] ............ is ............ .  [2-bo'shliq]"
+       "speak": "4  The [quyosh belgisi] ............ is ............ .  [2-bo'shliq]",
+       "speakAnswer": "shining"
       },
       {
        "prompt": "4  It's a ............ day.",
        "answer": "sunny",
        "promptUz": "'sun' otidan sifat yasang",
        "whyUz": "sun + -y = SUNNY. Diqqat: 'n' IKKILANADI.",
-       "speak": "4  It's a ............ day."
+       "speak": "4  It's a ............ day.",
+       "speakAnswer": "sunny"
       },
       {
        "prompt": "5  It's [yomg'ir belgisi] ............ .",
        "answer": "raining",
        "promptUz": "Bulutdan tomchilar tushayapti",
        "whyUz": "'It's raining' = yomg'ir yog'yapti.\n'rain' → 'raining' (oddiy -ing).",
-       "speak": "5  It's [yomg'ir belgisi] ............ ."
+       "speak": "5  It's [yomg'ir belgisi] ............ .",
+       "speakAnswer": "raining"
       },
       {
        "prompt": "5  It's a ............ day.",
        "answer": "rainy",
        "promptUz": "'rain' otidan sifat yasang",
        "whyUz": "rain + -y = RAINY (yomg'irli).",
-       "speak": "5  It's a ............ day."
+       "speak": "5  It's a ............ day.",
+       "speakAnswer": "rainy"
       }
      ]
     },
@@ -1377,19 +1449,22 @@
        "prompt": "A otkritka (Tom, Varshava) — kiyim gapi:",
        "answer": "The children are wearing their heavy jackets and gloves to keep them warm.",
        "promptUz": "'wearing' so'zi bor gapni toping",
-       "whyUz": "Qorli va sovuq ob-havoga mos kiyim: qalin kurtka va qo'lqop."
+       "whyUz": "Qorli va sovuq ob-havoga mos kiyim: qalin kurtka va qo'lqop.",
+       "speakAnswer": "The children are wearing their heavy jackets and gloves to keep them warm."
       },
       {
        "prompt": "B otkritka (Treysi, London) — kiyim gapi:",
        "answer": "The children are in their pyjamas in the living-room.",
        "promptUz": "'in their ...' iborasi bor gapni toping",
-       "whyUz": "Uy ichida bo'lgani uchun pijamada.\n'be IN + kiyim' — 'wear' bilan bir xil ma'noda."
+       "whyUz": "Uy ichida bo'lgani uchun pijamada.\n'be IN + kiyim' — 'wear' bilan bir xil ma'noda.",
+       "speakAnswer": "The children are in their pyjamas in the living-room."
       },
       {
        "prompt": "C otkritka (Pamela, Sidney) — kiyim gapi:",
        "answer": "We are all in our swimming costumes.",
        "promptUz": "Plyajdagi kiyim",
-       "whyUz": "Issiq va plyajda bo'lgani uchun cho'milish kiyimida."
+       "whyUz": "Issiq va plyajda bo'lgani uchun cho'milish kiyimida.",
+       "speakAnswer": "We are all in our swimming costumes."
       }
      ]
     },
@@ -1409,42 +1484,48 @@
        "answer": "It is very cold and it is snowing heavily.",
        "promptUz": "A otkritka",
        "whyUz": "Tom: 'You can't imagine how cold it is in Warsaw! It is snowing heavily today.'",
-       "speak": "1  What is the weather like in Warsaw?"
+       "speak": "1  What is the weather like in Warsaw?",
+       "speakAnswer": "It is very cold and it is snowing heavily."
       },
       {
        "prompt": "1  What is the weather like in London?",
        "answer": "It's windy and it is raining.",
        "promptUz": "B otkritka",
        "whyUz": "Treysi: 'It's windy today and it is raining.'",
-       "speak": "1  What is the weather like in London?"
+       "speak": "1  What is the weather like in London?",
+       "speakAnswer": "It's windy and it is raining."
       },
       {
        "prompt": "1  What is the weather like in Sydney?",
        "answer": "It's very hot and the sun is shining.",
        "promptUz": "C otkritka",
        "whyUz": "Pamela: 'It's very hot and the sun is shining.'\nOb-havo 'fantastic' (ajoyib) deb ham baholangan.",
-       "speak": "1  What is the weather like in Sydney?"
+       "speak": "1  What is the weather like in Sydney?",
+       "speakAnswer": "It's very hot and the sun is shining."
       },
       {
        "prompt": "2  What are Tom's children doing?",
        "answer": "They are making a snowman in the park.",
        "promptUz": "A otkritka, qor bilan nima qilinadi?",
        "whyUz": "Tom: 'They are making a snowman in the park at the moment.'",
-       "speak": "2  What are Tom's children doing?"
+       "speak": "2  What are Tom's children doing?",
+       "speakAnswer": "They are making a snowman in the park."
       },
       {
        "prompt": "3  What are Tracy's children doing?",
        "answer": "They are decorating the Christmas tree.",
        "promptUz": "B otkritka, mehmonxonada",
        "whyUz": "Treysi: 'they are decorating the Christmas tree at the moment'.",
-       "speak": "3  What are Tracy's children doing?"
+       "speak": "3  What are Tracy's children doing?",
+       "speakAnswer": "They are decorating the Christmas tree."
       },
       {
        "prompt": "4  What are Pamela's family doing?",
        "answer": "They are making a sandcastle. Everyone is swimming and enjoying the good weather.",
        "promptUz": "C otkritka, plyajda",
        "whyUz": "Pamela: 'Mum, Dad, Sheila and Frank are making a sandcastle' va\n'Everyone is swimming and enjoying the good weather.'",
-       "speak": "4  What are Pamela's family doing?"
+       "speak": "4  What are Pamela's family doing?",
+       "speakAnswer": "They are making a sandcastle. Everyone is swimming and enjoying the good weather."
       }
      ]
     }
@@ -1784,49 +1865,56 @@
        "answer": "They are in Jamaica.",
        "promptUz": "Polning to'rtinchi gapi",
        "whyUz": "Pol: 'how lovely it is here in Jamaica'.\nJamaica — Karib dengizidagi issiq orol.",
-       "speak": "1  Which country are Paul and Sonia in?"
+       "speak": "1  Which country are Paul and Sonia in?",
+       "speakAnswer": "They are in Jamaica."
       },
       {
        "prompt": "2  What is the weather like?",
        "answer": "It's very hot and the sun is shining.",
        "promptUz": "Ian ob-havo haqida so'raganidagi javob",
        "whyUz": "Pol: 'It's very hot and the sun's shining.'",
-       "speak": "2  What is the weather like?"
+       "speak": "2  What is the weather like?",
+       "speakAnswer": "It's very hot and the sun is shining."
       },
       {
        "prompt": "3  Where is Sonia?",
        "answer": "She is near the pool.",
        "promptUz": "Hovuz yonida",
        "whyUz": "Pol: 'Sonia is sunbathing ... near the pool.'\n'a pool' = suzish havzasi.",
-       "speak": "3  Where is Sonia?"
+       "speak": "3  Where is Sonia?",
+       "speakAnswer": "She is near the pool."
       },
       {
        "prompt": "4  What is she wearing?",
        "answer": "She is wearing her swimming costume.",
        "promptUz": "Kiyim haqida",
        "whyUz": "Pol: 'in her swimming costume'.\n'be IN + kiyim' = 'wear' bilan bir xil ma'noda.",
-       "speak": "4  What is she wearing?"
+       "speak": "4  What is she wearing?",
+       "speakAnswer": "She is wearing her swimming costume."
       },
       {
        "prompt": "5  What is she doing?",
        "answer": "She is sunbathing.",
        "promptUz": "Quyosh ostidagi mashg'ulot",
        "whyUz": "Pol: 'Sonia is sunbathing'.\n'sunbathe' → 'sunbathing' (-e TUSHDI).",
-       "speak": "5  What is she doing?"
+       "speak": "5  What is she doing?",
+       "speakAnswer": "She is sunbathing."
       },
       {
        "prompt": "6  Where is Paul?",
        "answer": "He is on the balcony of their hotel room.",
        "promptUz": "Mehmonxonaning qaysi qismida?",
        "whyUz": "Pol: 'I'm sitting on the balcony of our hotel room.'\nDIQQAT: Polning gapida 'our', javobda esa 'their' bo'ladi.",
-       "speak": "6  Where is Paul?"
+       "speak": "6  Where is Paul?",
+       "speakAnswer": "He is on the balcony of their hotel room."
       },
       {
        "prompt": "7  What is he doing?",
        "answer": "He is sitting on the balcony and enjoying the wonderful view.",
        "promptUz": "Ikkita ish qilayapti",
        "whyUz": "Pol: 'I'm sitting on the balcony ... I'm enjoying the wonderful view.'\nU shu paytda Ian bilan telefonda ham gaplashayapti.",
-       "speak": "7  What is he doing?"
+       "speak": "7  What is he doing?",
+       "speakAnswer": "He is sitting on the balcony and enjoying the wonderful view."
       }
      ]
     }
@@ -1916,7 +2004,8 @@
        "answer": "-ing",
        "promptUz": "Jadvaldagi 'play' so'ziga qanday qo'shimcha qo'shilgan?",
        "whyUz": "Jadvalda 'playING' — demak asos fe'lga -ING qo'shiladi.\nTo'liq qolip: to be + fe'l + -ing.",
-       "speak": "To form the present continuous we use the verb \"to be\" and add ............ to the base form of the main verb."
+       "speak": "To form the present continuous we use the verb \"to be\" and add ............ to the base form of the main verb.",
+       "speakAnswer": "-ing"
       }
      ]
     },
@@ -1936,70 +2025,80 @@
        "answer": "snowing",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing qo'shiladi.\n49-betdagi A otkritkada: 'It is snowing heavily today.'",
-       "speak": "snow → ............"
+       "speak": "snow → ............",
+       "speakAnswer": "snowing"
       },
       {
        "prompt": "wear → ............",
        "answer": "wearing",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing.\nA otkritkada: 'the children are wearing their heavy jackets'.",
-       "speak": "wear → ............"
+       "speak": "wear → ............",
+       "speakAnswer": "wearing"
       },
       {
        "prompt": "rain → ............",
        "answer": "raining",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing.\nB otkritkada: 'it is raining'.",
-       "speak": "rain → ............"
+       "speak": "rain → ............",
+       "speakAnswer": "raining"
       },
       {
        "prompt": "enjoy → ............",
        "answer": "enjoying",
        "promptUz": "Oddiy -ing (y o'zgarmaydi)",
        "whyUz": "1-qoida: oddiy -ing.\nDIQQAT: -ing oldidan 'y' HECH QACHON 'i' ga aylanmaydi.\nC otkritkada: 'enjoying the good weather'.",
-       "speak": "enjoy → ............"
+       "speak": "enjoy → ............",
+       "speakAnswer": "enjoying"
       },
       {
        "prompt": "swim → ............",
        "answer": "swimming",
        "promptUz": "Oxirgi undosh ikkilanadi",
        "whyUz": "2-qoida: bitta urg'uli unli (i) + bitta undosh (m) → M IKKILANADI.\nC otkritkada: 'Everyone is swimming'.",
-       "speak": "swim → ............"
+       "speak": "swim → ............",
+       "speakAnswer": "swimming"
       },
       {
        "prompt": "make → ............",
        "answer": "making",
        "promptUz": "-e tushadi",
        "whyUz": "3-qoida: -E bilan tugaydi → E TUSHADI.\nA va C otkritkalarda: 'making a snowman', 'making a sandcastle'.",
-       "speak": "make → ............"
+       "speak": "make → ............",
+       "speakAnswer": "making"
       },
       {
        "prompt": "decorate → ............",
        "answer": "decorating",
        "promptUz": "-e tushadi",
        "whyUz": "3-qoida: -E TUSHADI.\nB otkritkada: 'decorating the Christmas tree'.",
-       "speak": "decorate → ............"
+       "speak": "decorate → ............",
+       "speakAnswer": "decorating"
       },
       {
        "prompt": "shine → ............",
        "answer": "shining",
        "promptUz": "-e tushadi",
        "whyUz": "3-qoida: -E TUSHADI.\nC otkritkada: 'the sun is shining'.",
-       "speak": "shine → ............"
+       "speak": "shine → ............",
+       "speakAnswer": "shining"
       },
       {
        "prompt": "QOIDA: Verbs ending in one stressed vowel and a consonant double the consonant and take ............ .",
        "answer": "-ing",
        "promptUz": "Ikkilangandan keyin nima qo'shiladi?",
        "whyUz": "swim → swimm + ING = swimming.",
-       "speak": "QOIDA: Verbs ending in one stressed vowel and a consonant double the consonant and take ............ ."
+       "speak": "QOIDA: Verbs ending in one stressed vowel and a consonant double the consonant and take ............ .",
+       "speakAnswer": "-ing"
       },
       {
        "prompt": "QOIDA: Verbs ending in -e drop the e and take ............ .",
        "answer": "-ing",
        "promptUz": "E tushgandan keyin nima qo'shiladi?",
        "whyUz": "make → mak + ING = making.",
-       "speak": "QOIDA: Verbs ending in -e drop the e and take ............ ."
+       "speak": "QOIDA: Verbs ending in -e drop the e and take ............ .",
+       "speakAnswer": "-ing"
       }
      ]
     },
@@ -2018,43 +2117,50 @@
        "prompt": "Are you playing? — Yes, you are. / No, ............",
        "answer": "you aren't",
        "promptUz": "'are not' ning qisqargan shakli",
-       "whyUz": "'aren't' = are not. To'liq shakli ham to'g'ri: 'you are not'."
+       "whyUz": "'aren't' = are not. To'liq shakli ham to'g'ri: 'you are not'.",
+       "speakAnswer": "you aren't"
       },
       {
        "prompt": "Is he playing? — Yes, ............ / No, he isn't.",
        "answer": "he is",
        "promptUz": "Tasdiq javobda qisqartma ISHLATILMAYDI",
-       "whyUz": "'Yes, he is.' — 'Yes, he's' XATO.\nQisqa tasdiq javobda 'be' TO'LIQ yoziladi."
+       "whyUz": "'Yes, he is.' — 'Yes, he's' XATO.\nQisqa tasdiq javobda 'be' TO'LIQ yoziladi.",
+       "speakAnswer": "he is"
       },
       {
        "prompt": "Is she playing? — Yes, she is. / No, ............",
        "answer": "she isn't",
        "promptUz": "'is not' ning qisqargan shakli",
-       "whyUz": "'isn't' = is not."
+       "whyUz": "'isn't' = is not.",
+       "speakAnswer": "she isn't"
       },
       {
        "prompt": "Is it playing? — Yes, it is. / No, ............",
        "answer": "it isn't",
        "promptUz": "'is not' ning qisqargan shakli",
-       "whyUz": "'it' uchun ham IS/ISN'T."
+       "whyUz": "'it' uchun ham IS/ISN'T.",
+       "speakAnswer": "it isn't"
       },
       {
        "prompt": "Are we playing? — Yes, ............ / No, we aren't.",
        "answer": "we are",
        "promptUz": "Tasdiq javobda 'be' to'liq",
-       "whyUz": "'Yes, we are.' — qisqartmasiz."
+       "whyUz": "'Yes, we are.' — qisqartmasiz.",
+       "speakAnswer": "we are"
       },
       {
        "prompt": "Are you playing? (ko'plik) — Yes, you are. / No, ............",
        "answer": "you aren't",
        "promptUz": "Birlikdagi bilan bir xil",
-       "whyUz": "'you' birlikda ham, ko'plikda ham bir xil: are / aren't."
+       "whyUz": "'you' birlikda ham, ko'plikda ham bir xil: are / aren't.",
+       "speakAnswer": "you aren't"
       },
       {
        "prompt": "Are they playing? — Yes, they are. / No, ............",
        "answer": "they aren't",
        "promptUz": "'are not' ning qisqargan shakli",
-       "whyUz": "'aren't' = are not."
+       "whyUz": "'aren't' = are not.",
+       "speakAnswer": "they aren't"
       }
      ]
     }
@@ -2084,28 +2190,32 @@
        "answer": "Wrong! Sue and Molly aren't playing tennis. They're swimming.",
        "promptUz": "Ular dengizda",
        "whyUz": "Ikki kishi → AREN'T va THEY'RE.\nSyu va Molli dengizda suzayapti.",
-       "speak": "2  Sue and Molly are playing tennis."
+       "speak": "2  Sue and Molly are playing tennis.",
+       "speakAnswer": "Wrong! Sue and Molly aren't playing tennis. They're swimming."
       },
       {
        "prompt": "3  Ann is sleeping.",
        "answer": "Wrong! Ann isn't sleeping. She's playing the guitar.",
        "promptUz": "Ann qo'lida nima ushlab turibdi?",
        "whyUz": "Ann soyabon ostida o'tirib gitara chalayapti.\nDIQQAT: cholg'u asbobi oldida THE shart — play THE guitar.",
-       "speak": "3  Ann is sleeping."
+       "speak": "3  Ann is sleeping.",
+       "speakAnswer": "Wrong! Ann isn't sleeping. She's playing the guitar."
       },
       {
        "prompt": "4  Tony is listening to music.",
        "answer": "Wrong! Tony isn't listening to music. He's fishing.",
        "promptUz": "Toni toshda o'tiribdi, qo'lida uzun tayoq",
        "whyUz": "Toni qarmoq bilan baliq tutayapti.\n'to fish' = baliq tutmoq → 'fishing'.",
-       "speak": "4  Tony is listening to music."
+       "speak": "4  Tony is listening to music.",
+       "speakAnswer": "Wrong! Tony isn't listening to music. He's fishing."
       },
       {
        "prompt": "5  Jim and Ian are reading a book.",
        "answer": "Wrong! Jim and Ian aren't reading a book. They're making a sandcastle.",
        "promptUz": "Ular qumda, yonlarida chelak va belcha bor",
        "whyUz": "Jim va Ian qumdan qal'a yasashayapti.\nIkki kishi → AREN'T va THEY'RE.",
-       "speak": "5  Jim and Ian are reading a book."
+       "speak": "5  Jim and Ian are reading a book.",
+       "speakAnswer": "Wrong! Jim and Ian aren't reading a book. They're making a sandcastle."
       }
      ]
     },
@@ -2125,145 +2235,169 @@
        "prompt": "2  Stella: drive a car / have a shower — agar 'have a shower' belgilansa",
        "answer": "Is Stella driving a car?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'have a shower' = dush qabul qilmoq → 'having a shower'.\nDIQQAT: 'have' bu yerda 'ega bo'lmoq' emas — shuning uchun -ing shakli MUMKIN."
+       "whyUz": "'have a shower' = dush qabul qilmoq → 'having a shower'.\nDIQQAT: 'have' bu yerda 'ega bo'lmoq' emas — shuning uchun -ing shakli MUMKIN.",
+       "speakAnswer": "Is Stella driving a car?"
       },
       {
        "prompt": "2  Stella: drive a car / have a shower — agar 'have a shower' belgilansa",
        "answer": "No, she isn't. She's having a shower.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'have a shower' = dush qabul qilmoq → 'having a shower'.\nDIQQAT: 'have' bu yerda 'ega bo'lmoq' emas — shuning uchun -ing shakli MUMKIN."
+       "whyUz": "'have a shower' = dush qabul qilmoq → 'having a shower'.\nDIQQAT: 'have' bu yerda 'ega bo'lmoq' emas — shuning uchun -ing shakli MUMKIN.",
+       "speakAnswer": "No, she isn't. She's having a shower."
       },
       {
        "prompt": "2  Stella: drive a car / have a shower — agar 'drive a car' belgilansa",
        "answer": "Is Stella having a shower?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'drive' -e bilan tugaydi → e tushadi: driving."
+       "whyUz": "'drive' -e bilan tugaydi → e tushadi: driving.",
+       "speakAnswer": "Is Stella having a shower?"
       },
       {
        "prompt": "2  Stella: drive a car / have a shower — agar 'drive a car' belgilansa",
        "answer": "No, she isn't. She's driving a car.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'drive' -e bilan tugaydi → e tushadi: driving."
+       "whyUz": "'drive' -e bilan tugaydi → e tushadi: driving.",
+       "speakAnswer": "No, she isn't. She's driving a car."
       },
       {
        "prompt": "3  Bob & Keith: swim / sleep — agar 'sleep' belgilansa",
        "answer": "Are Bob and Keith swimming?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Ikki kishi → ARE va THEY.\n'swim' → swimming (m ikkilanadi)."
+       "whyUz": "Ikki kishi → ARE va THEY.\n'swim' → swimming (m ikkilanadi).",
+       "speakAnswer": "Are Bob and Keith swimming?"
       },
       {
        "prompt": "3  Bob & Keith: swim / sleep — agar 'sleep' belgilansa",
        "answer": "No, they aren't. They're sleeping.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Ikki kishi → ARE va THEY.\n'swim' → swimming (m ikkilanadi)."
+       "whyUz": "Ikki kishi → ARE va THEY.\n'swim' → swimming (m ikkilanadi).",
+       "speakAnswer": "No, they aren't. They're sleeping."
       },
       {
        "prompt": "3  Bob & Keith: swim / sleep — agar 'swim' belgilansa",
        "answer": "Are Bob and Keith sleeping?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'sleep' → sleeping (oddiy -ing)."
+       "whyUz": "'sleep' → sleeping (oddiy -ing).",
+       "speakAnswer": "Are Bob and Keith sleeping?"
       },
       {
        "prompt": "3  Bob & Keith: swim / sleep — agar 'swim' belgilansa",
        "answer": "No, they aren't. They're swimming.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'sleep' → sleeping (oddiy -ing)."
+       "whyUz": "'sleep' → sleeping (oddiy -ing).",
+       "speakAnswer": "No, they aren't. They're swimming."
       },
       {
        "prompt": "4  They: listen to music / play computer games — agar 'play computer games' belgilansa",
        "answer": "Are they listening to music?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'listen TO music' — 'to' predlogi shart."
+       "whyUz": "'listen TO music' — 'to' predlogi shart.",
+       "speakAnswer": "Are they listening to music?"
       },
       {
        "prompt": "4  They: listen to music / play computer games — agar 'play computer games' belgilansa",
        "answer": "No, they aren't. They're playing computer games.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'listen TO music' — 'to' predlogi shart."
+       "whyUz": "'listen TO music' — 'to' predlogi shart.",
+       "speakAnswer": "No, they aren't. They're playing computer games."
       },
       {
        "prompt": "4  They: listen to music / play computer games — agar 'listen to music' belgilansa",
        "answer": "Are they playing computer games?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'computer games' — kompyuter o'yinlari."
+       "whyUz": "'computer games' — kompyuter o'yinlari.",
+       "speakAnswer": "Are they playing computer games?"
       },
       {
        "prompt": "4  They: listen to music / play computer games — agar 'listen to music' belgilansa",
        "answer": "No, they aren't. They're listening to music.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'computer games' — kompyuter o'yinlari."
+       "whyUz": "'computer games' — kompyuter o'yinlari.",
+       "speakAnswer": "No, they aren't. They're listening to music."
       },
       {
        "prompt": "5  James: ride a horse / ride a motorbike — agar 'ride a motorbike' belgilansa",
        "answer": "Is James riding a horse?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'ride' -e bilan tugaydi → riding.\n'a motorbike' = mototsikl."
+       "whyUz": "'ride' -e bilan tugaydi → riding.\n'a motorbike' = mototsikl.",
+       "speakAnswer": "Is James riding a horse?"
       },
       {
        "prompt": "5  James: ride a horse / ride a motorbike — agar 'ride a motorbike' belgilansa",
        "answer": "No, he isn't. He's riding a motorbike.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'ride' -e bilan tugaydi → riding.\n'a motorbike' = mototsikl."
+       "whyUz": "'ride' -e bilan tugaydi → riding.\n'a motorbike' = mototsikl.",
+       "speakAnswer": "No, he isn't. He's riding a motorbike."
       },
       {
        "prompt": "5  James: ride a horse / ride a motorbike — agar 'ride a horse' belgilansa",
        "answer": "Is James riding a motorbike?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'ride a horse' = otga minmoq."
+       "whyUz": "'ride a horse' = otga minmoq.",
+       "speakAnswer": "Is James riding a motorbike?"
       },
       {
        "prompt": "5  James: ride a horse / ride a motorbike — agar 'ride a horse' belgilansa",
        "answer": "No, he isn't. He's riding a horse.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'ride a horse' = otga minmoq."
+       "whyUz": "'ride a horse' = otga minmoq.",
+       "speakAnswer": "No, he isn't. He's riding a horse."
       },
       {
        "prompt": "6  She: play the guitar / play the piano — agar 'play the piano' belgilansa",
        "answer": "Is she playing the guitar?",
        "promptUz": "Savol tuzing",
-       "whyUz": "Cholg'u asbobi oldida THE shart: play THE piano."
+       "whyUz": "Cholg'u asbobi oldida THE shart: play THE piano.",
+       "speakAnswer": "Is she playing the guitar?"
       },
       {
        "prompt": "6  She: play the guitar / play the piano — agar 'play the piano' belgilansa",
        "answer": "No, she isn't. She's playing the piano.",
        "promptUz": "Javob tuzing",
-       "whyUz": "Cholg'u asbobi oldida THE shart: play THE piano."
+       "whyUz": "Cholg'u asbobi oldida THE shart: play THE piano.",
+       "speakAnswer": "No, she isn't. She's playing the piano."
       },
       {
        "prompt": "6  She: play the guitar / play the piano — agar 'play the guitar' belgilansa",
        "answer": "Is she playing the piano?",
        "promptUz": "Savol tuzing",
-       "whyUz": "15-mashqdagi Ann ham gitara chalayapti."
+       "whyUz": "15-mashqdagi Ann ham gitara chalayapti.",
+       "speakAnswer": "Is she playing the piano?"
       },
       {
        "prompt": "6  She: play the guitar / play the piano — agar 'play the guitar' belgilansa",
        "answer": "No, she isn't. She's playing the guitar.",
        "promptUz": "Javob tuzing",
-       "whyUz": "15-mashqdagi Ann ham gitara chalayapti."
+       "whyUz": "15-mashqdagi Ann ham gitara chalayapti.",
+       "speakAnswer": "No, she isn't. She's playing the guitar."
       },
       {
        "prompt": "7  They: walk / run — agar 'run' belgilansa",
        "answer": "Are they walking?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'run' → running (n IKKILANADI)."
+       "whyUz": "'run' → running (n IKKILANADI).",
+       "speakAnswer": "Are they walking?"
       },
       {
        "prompt": "7  They: walk / run — agar 'run' belgilansa",
        "answer": "No, they aren't. They're running.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'run' → running (n IKKILANADI)."
+       "whyUz": "'run' → running (n IKKILANADI).",
+       "speakAnswer": "No, they aren't. They're running."
       },
       {
        "prompt": "7  They: walk / run — agar 'walk' belgilansa",
        "answer": "Are they running?",
        "promptUz": "Savol tuzing",
-       "whyUz": "'walk' → walking (oddiy -ing). 'l' o'qilmaydi: /wɔːk/."
+       "whyUz": "'walk' → walking (oddiy -ing). 'l' o'qilmaydi: /wɔːk/.",
+       "speakAnswer": "Are they running?"
       },
       {
        "prompt": "7  They: walk / run — agar 'walk' belgilansa",
        "answer": "No, they aren't. They're walking.",
        "promptUz": "Javob tuzing",
-       "whyUz": "'walk' → walking (oddiy -ing). 'l' o'qilmaydi: /wɔːk/."
+       "whyUz": "'walk' → walking (oddiy -ing). 'l' o'qilmaydi: /wɔːk/.",
+       "speakAnswer": "No, they aren't. They're walking."
       }
      ]
     }
@@ -2293,14 +2427,16 @@
        "answer": "the present simple",
        "promptUz": "'John usually wears ...' — qaysi zamon?",
        "whyUz": "ODAT va KUNDALIK TARTIB → PRESENT SIMPLE.\nMisol: John usually WEARS jeans.\nBelgilari: usually, always, often, sometimes, never,\nevery day, in his free time.",
-       "speak": "We use ............ to talk about habits and daily routines."
+       "speak": "We use ............ to talk about habits and daily routines.",
+       "speakAnswer": "the present simple"
       },
       {
        "prompt": "We use ............ to talk about actions happening now, at the moment of speaking.",
        "answer": "the present continuous",
        "promptUz": "'John's wearing ... today' — qaysi zamon?",
        "whyUz": "HOZIR sodir bo'layotgan ish → PRESENT CONTINUOUS.\nMisol: John's WEARING a suit today.\nBelgilari: now, at the moment, at present, today.",
-       "speak": "We use ............ to talk about actions happening now, at the moment of speaking."
+       "speak": "We use ............ to talk about actions happening now, at the moment of speaking.",
+       "speakAnswer": "the present continuous"
       }
      ]
     },
@@ -2320,56 +2456,64 @@
        "answer": "Look at John! He's wearing a shirt and tie today!",
        "promptUz": "Savol tuzing",
        "whyUz": "Jon — erkak → HE.\n'wears' — birlik 3-shaxs → -S.",
-       "speak": "John / shirt and tie / jumpers"
+       "speak": "John / shirt and tie / jumpers",
+       "speakAnswer": "Look at John! He's wearing a shirt and tie today!"
       },
       {
        "prompt": "John / shirt and tie / jumpers",
        "answer": "Oh, yes! He usually wears jumpers. He looks nice in a shirt and tie!",
        "promptUz": "Javob tuzing",
        "whyUz": "Jon — erkak → HE.\n'wears' — birlik 3-shaxs → -S.",
-       "speak": "John / shirt and tie / jumpers"
+       "speak": "John / shirt and tie / jumpers",
+       "speakAnswer": "Oh, yes! He usually wears jumpers. He looks nice in a shirt and tie!"
       },
       {
        "prompt": "Ellen / shorts / long skirts",
        "answer": "Look at Ellen! She's wearing shorts today!",
        "promptUz": "Savol tuzing",
        "whyUz": "'shorts' — KO'PLIK → 'a' YO'Q.\n'long skirts' ham ko'plikda.",
-       "speak": "Ellen / shorts / long skirts"
+       "speak": "Ellen / shorts / long skirts",
+       "speakAnswer": "Look at Ellen! She's wearing shorts today!"
       },
       {
        "prompt": "Ellen / shorts / long skirts",
        "answer": "Oh, yes! She usually wears long skirts. She looks nice in shorts!",
        "promptUz": "Javob tuzing",
        "whyUz": "'shorts' — KO'PLIK → 'a' YO'Q.\n'long skirts' ham ko'plikda.",
-       "speak": "Ellen / shorts / long skirts"
+       "speak": "Ellen / shorts / long skirts",
+       "speakAnswer": "Oh, yes! She usually wears long skirts. She looks nice in shorts!"
       },
       {
        "prompt": "Tim / jeans and trainers / a suit",
        "answer": "Look at Tim! He's wearing jeans and trainers today!",
        "promptUz": "Savol tuzing",
        "whyUz": "'jeans' va 'trainers' — ko'plik → 'a' yo'q.\n'a suit' — birlik → 'a' bilan.",
-       "speak": "Tim / jeans and trainers / a suit"
+       "speak": "Tim / jeans and trainers / a suit",
+       "speakAnswer": "Look at Tim! He's wearing jeans and trainers today!"
       },
       {
        "prompt": "Tim / jeans and trainers / a suit",
        "answer": "Oh, yes! He usually wears a suit. He looks nice in jeans and trainers!",
        "promptUz": "Javob tuzing",
        "whyUz": "'jeans' va 'trainers' — ko'plik → 'a' yo'q.\n'a suit' — birlik → 'a' bilan.",
-       "speak": "Tim / jeans and trainers / a suit"
+       "speak": "Tim / jeans and trainers / a suit",
+       "speakAnswer": "Oh, yes! He usually wears a suit. He looks nice in jeans and trainers!"
       },
       {
        "prompt": "Donna / trousers / dresses",
        "answer": "Look at Donna! She's wearing trousers today!",
        "promptUz": "Savol tuzing",
        "whyUz": "'trousers' — KO'PLIK → 'a' YO'Q.\n'dresses' — 'dress' ning ko'pligi (-ss → -ES).",
-       "speak": "Donna / trousers / dresses"
+       "speak": "Donna / trousers / dresses",
+       "speakAnswer": "Look at Donna! She's wearing trousers today!"
       },
       {
        "prompt": "Donna / trousers / dresses",
        "answer": "Oh, yes! She usually wears dresses. She looks nice in trousers!",
        "promptUz": "Javob tuzing",
        "whyUz": "'trousers' — KO'PLIK → 'a' YO'Q.\n'dresses' — 'dress' ning ko'pligi (-ss → -ES).",
-       "speak": "Donna / trousers / dresses"
+       "speak": "Donna / trousers / dresses",
+       "speakAnswer": "Oh, yes! She usually wears dresses. She looks nice in trousers!"
       }
      ]
     }
@@ -2597,77 +2741,88 @@
        "answer": "wakes up",
        "promptUz": "'usually' — qaysi zamon belgisi?",
        "whyUz": "'usually' → PRESENT SIMPLE (odat).\n'Jim' — birlik 3-shaxs → fe'lga -S: wakeS up.\n'to wake up' = uyg'onmoq.",
-       "speak": "1  Jim usually ............ (wake up) late on Sundays."
+       "speak": "1  Jim usually ............ (wake up) late on Sundays.",
+       "speakAnswer": "wakes up"
       },
       {
        "prompt": "2  I ............ (play) tennis at the moment.",
        "answer": "am playing",
        "promptUz": "'at the moment' — qaysi zamon belgisi?",
        "whyUz": "'at the moment' → PRESENT CONTINUOUS (hozir).\n'I' → AM + playing.",
-       "speak": "2  I ............ (play) tennis at the moment."
+       "speak": "2  I ............ (play) tennis at the moment.",
+       "speakAnswer": "am playing"
       },
       {
        "prompt": "3  Sheila ............ (listen) to music in her free time.",
        "answer": "listens",
        "promptUz": "'in her free time' — odatmi yoki hozirmi?",
        "whyUz": "'in her free time' = bo'sh vaqtida — bu ODAT → PRESENT SIMPLE.\n'Sheila' — birlik 3-shaxs → listenS.",
-       "speak": "3  Sheila ............ (listen) to music in her free time."
+       "speak": "3  Sheila ............ (listen) to music in her free time.",
+       "speakAnswer": "listens"
       },
       {
        "prompt": "4  The sun usually ............ (shine) in the summer.",
        "answer": "shines",
        "promptUz": "'usually' — odat belgisi",
        "whyUz": "'usually' + 'in the summer' → PRESENT SIMPLE (doimiy holat).\n'the sun' — birlik → shineS.",
-       "speak": "4  The sun usually ............ (shine) in the summer."
+       "speak": "4  The sun usually ............ (shine) in the summer.",
+       "speakAnswer": "shines"
       },
       {
        "prompt": "5  We ............ (make) a snowman at the moment.",
        "answer": "are making",
        "promptUz": "'at the moment' — hozir",
        "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'we' → ARE + making ('make' dagi -e TUSHDI).",
-       "speak": "5  We ............ (make) a snowman at the moment."
+       "speak": "5  We ............ (make) a snowman at the moment.",
+       "speakAnswer": "are making"
       },
       {
        "prompt": "6  The children ............ (swim) now.",
        "answer": "are swimming",
        "promptUz": "'now' — hozir",
        "whyUz": "'now' → PRESENT CONTINUOUS.\n'the children' — ko'plik → ARE + swimming (m IKKILANDI).",
-       "speak": "6  The children ............ (swim) now."
+       "speak": "6  The children ............ (swim) now.",
+       "speakAnswer": "are swimming"
       },
       {
        "prompt": "7  She ............ (go) on a picnic every Sunday.",
        "answer": "goes",
        "promptUz": "'every Sunday' — odat belgisi",
        "whyUz": "'every Sunday' → PRESENT SIMPLE.\n'she' → goES (-o bilan tugagani uchun -ES).",
-       "speak": "7  She ............ (go) on a picnic every Sunday."
+       "speak": "7  She ............ (go) on a picnic every Sunday.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "8  Bill ............ (have) a shower at the moment.",
        "answer": "is having",
        "promptUz": "'at the moment' — hozir",
        "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'Bill' — birlik → IS + having ('have' dagi -e TUSHDI).\nDIQQAT: 'have a shower' (dush qabul qilmoq) — HARAKAT,\nshuning uchun -ing shakli mumkin.\n'have' EGALIK ma'nosida bo'lsa -ing OLMAYDI:\n'I am having a car' XATO.",
-       "speak": "8  Bill ............ (have) a shower at the moment."
+       "speak": "8  Bill ............ (have) a shower at the moment.",
+       "speakAnswer": "is having"
       },
       {
        "prompt": "9  They ............ (decorate) the Christmas tree now.",
        "answer": "are decorating",
        "promptUz": "'now' — hozir",
        "whyUz": "'now' → PRESENT CONTINUOUS.\n'they' → ARE + decorating (-e TUSHDI).",
-       "speak": "9  They ............ (decorate) the Christmas tree now."
+       "speak": "9  They ............ (decorate) the Christmas tree now.",
+       "speakAnswer": "are decorating"
       },
       {
        "prompt": "10  Joy ............ (watch) TV every afternoon.",
        "answer": "watches",
        "promptUz": "'every afternoon' — odat belgisi",
        "whyUz": "'every afternoon' → PRESENT SIMPLE.\n'Joy' — birlik 3-shaxs → watchES (-ch bilan tugagani uchun -ES).",
-       "speak": "10  Joy ............ (watch) TV every afternoon."
+       "speak": "10  Joy ............ (watch) TV every afternoon.",
+       "speakAnswer": "watches"
       },
       {
        "prompt": "11  They ............ (sleep) at the moment.",
        "answer": "are sleeping",
        "promptUz": "'at the moment' — hozir",
        "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'they' → ARE + sleeping (oddiy -ing).",
-       "speak": "11  They ............ (sleep) at the moment."
+       "speak": "11  They ............ (sleep) at the moment.",
+       "speakAnswer": "are sleeping"
       }
      ]
     }
@@ -2697,55 +2852,63 @@
        "answer": "swimming",
        "promptUz": "Undosh ikkilanadi",
        "whyUz": "2-qoida: sw-I-m → m IKKILANADI = swimming.",
-       "speak": "1  swim → ............"
+       "speak": "1  swim → ............",
+       "speakAnswer": "swimming"
       },
       {
        "prompt": "2  shine → ............",
        "answer": "shining",
        "promptUz": "-e tushadi",
        "whyUz": "3-qoida: -E TUSHADI = shining.",
-       "speak": "2  shine → ............"
+       "speak": "2  shine → ............",
+       "speakAnswer": "shining"
       },
       {
        "prompt": "3  make → ............",
        "answer": "making",
        "promptUz": "-e tushadi",
        "whyUz": "3-qoida: -E TUSHADI = making.",
-       "speak": "3  make → ............"
+       "speak": "3  make → ............",
+       "speakAnswer": "making"
       },
       {
        "prompt": "4  run → ............",
        "answer": "running",
        "promptUz": "Undosh ikkilanadi",
        "whyUz": "2-qoida: r-U-n → n IKKILANADI = running.",
-       "speak": "4  run → ............"
+       "speak": "4  run → ............",
+       "speakAnswer": "running"
       },
       {
        "prompt": "5  decorate → ............",
        "answer": "decorating",
        "promptUz": "-e tushadi",
        "whyUz": "3-qoida: -E TUSHADI = decorating.",
-       "speak": "5  decorate → ............"
+       "speak": "5  decorate → ............",
+       "speakAnswer": "decorating"
       },
       {
        "prompt": "6  sit → ............",
        "answer": "sitting",
        "promptUz": "Undosh ikkilanadi",
        "whyUz": "2-qoida: s-I-t → t IKKILANADI = sitting.",
-       "speak": "6  sit → ............"
+       "speak": "6  sit → ............",
+       "speakAnswer": "sitting"
       },
       {
        "prompt": "7  read → ............",
        "answer": "reading",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing = reading.\n'ea' — ikki unli, ikkilanish YO'Q.",
-       "speak": "7  read → ............"
+       "speak": "7  read → ............",
+       "speakAnswer": "reading"
       },
       {
        "prompt": "8  do → ............",
        "answer": "doing",
        "promptUz": "Oddiy -ing",
-       "whyUz": "1-qoida: oddiy -ing = doing.\n'o' unli bilan tugaydi, lekin -e emas → tushmaydi."
+       "whyUz": "1-qoida: oddiy -ing = doing.\n'o' unli bilan tugaydi, lekin -e emas → tushmaydi.",
+       "speakAnswer": "doing"
       }
      ]
     },
@@ -2765,35 +2928,40 @@
        "answer": "Hannah is wearing a long dress. She is dancing.",
        "promptUz": "Ben bilan birga, uzun ko'ylakda",
        "whyUz": "Hannah uzun ko'ylak kiygan va Ben bilan raqsga tushayapti.\n'dance' → 'dancing' (-e TUSHDI).",
-       "speak": "2  Hannah"
+       "speak": "2  Hannah",
+       "speakAnswer": "Hannah is wearing a long dress. She is dancing."
       },
       {
        "prompt": "3  Joanna",
        "answer": "Joanna is wearing a jacket and a skirt. She is drinking.",
        "promptUz": "Chapda, qo'lida stakan og'ziga yaqin",
        "whyUz": "Joanna kurtka va kalta yubka kiygan, stakandan ichayapti.\n'drink' → 'drinking' (oddiy -ing).",
-       "speak": "3  Joanna"
+       "speak": "3  Joanna",
+       "speakAnswer": "Joanna is wearing a jacket and a skirt. She is drinking."
       },
       {
        "prompt": "4  Thomas",
        "answer": "Thomas is wearing a jacket and trousers. He is talking to Amanda.",
        "promptUz": "O'rtada turgan, Amandaga qarab gapiryapti",
        "whyUz": "Thomas kurtka va shim kiygan, Amanda bilan gaplashayapti.\n'talk TO somebody' — 'to' predlogi shart.",
-       "speak": "4  Thomas"
+       "speak": "4  Thomas",
+       "speakAnswer": "Thomas is wearing a jacket and trousers. He is talking to Amanda."
       },
       {
        "prompt": "5  Amanda",
        "answer": "Amanda is wearing a dress. She is talking to Thomas.",
        "promptUz": "O'ngda turgan, Thomasga qarab gapiryapti",
        "whyUz": "Amanda ko'ylak kiygan va Thomas bilan gaplashayapti.",
-       "speak": "5  Amanda"
+       "speak": "5  Amanda",
+       "speakAnswer": "Amanda is wearing a dress. She is talking to Thomas."
       },
       {
        "prompt": "6  Adam",
        "answer": "Adam is wearing a shirt. He is pouring a drink.",
        "promptUz": "Pastda o'tirgan, idishdan quyayapti",
        "whyUz": "Adam ko'ylak kiygan va idishdan ichimlik quyayapti.\n'to pour' = quymoq → 'pouring'.",
-       "speak": "6  Adam"
+       "speak": "6  Adam",
+       "speakAnswer": "Adam is wearing a shirt. He is pouring a drink."
       }
      ]
     },
@@ -2813,28 +2981,32 @@
        "answer": "No, she isn't eating. She is drinking.",
        "promptUz": "Joanna qo'lida nima ushlab turibdi?",
        "whyUz": "Joanna qo'lida STAKAN ushlab, ichayapti — yemayapti.\nBirlik ega → ISN'T va SHE.",
-       "speak": "2  Joanna is eating."
+       "speak": "2  Joanna is eating.",
+       "speakAnswer": "No, she isn't eating. She is drinking."
       },
       {
        "prompt": "3  Thomas is dancing.",
        "answer": "No, he isn't dancing. He is talking to Amanda.",
        "promptUz": "Thomas kim bilan turibdi?",
        "whyUz": "Thomas raqsga tushmayapti — Amanda bilan gaplashayapti.\nRaqsga tushayotganlar — Ben va Hannah.",
-       "speak": "3  Thomas is dancing."
+       "speak": "3  Thomas is dancing.",
+       "speakAnswer": "No, he isn't dancing. He is talking to Amanda."
       },
       {
        "prompt": "4  Adam is talking to Amanda.",
        "answer": "No, he isn't talking to Amanda. He is pouring a drink.",
        "promptUz": "Adam qo'lida nima ushlab turibdi?",
        "whyUz": "Adam o'tirib idishdan ichimlik quyayapti — gaplashmayapti.\nAmanda bilan gaplashayotgan — Thomas.",
-       "speak": "4  Adam is talking to Amanda."
+       "speak": "4  Adam is talking to Amanda.",
+       "speakAnswer": "No, he isn't talking to Amanda. He is pouring a drink."
       },
       {
        "prompt": "5  Amanda is drinking.",
        "answer": "No, she isn't drinking. She is talking to Thomas.",
        "promptUz": "Amanda kim bilan turibdi?",
        "whyUz": "Amanda ichmayapti — Thomas bilan gaplashayapti.\nIchayotgan — Joanna.",
-       "speak": "5  Amanda is drinking."
+       "speak": "5  Amanda is drinking.",
+       "speakAnswer": "No, she isn't drinking. She is talking to Thomas."
       }
      ]
     },
@@ -2854,35 +3026,40 @@
        "answer": "Is Jennifer riding her bicycle?",
        "promptUz": "Ega birlik → qaysi 'be'?",
        "whyUz": "'Jennifer' — birlik → IS.\n'ride' → 'riding' (-e TUSHDI).",
-       "speak": "2  Jennifer / ride / her bicycle"
+       "speak": "2  Jennifer / ride / her bicycle",
+       "speakAnswer": "Is Jennifer riding her bicycle?"
       },
       {
        "prompt": "3  you / have / a shower",
        "answer": "Are you having a shower?",
        "promptUz": "'have a shower' — harakat, -ing mumkin",
        "whyUz": "'you' → ARE.\n'have a shower' = dush qabul qilmoq — HARAKAT, shuning uchun -ing mumkin.\n'have' → 'having' (-e TUSHDI).",
-       "speak": "3  you / have / a shower"
+       "speak": "3  you / have / a shower",
+       "speakAnswer": "Are you having a shower?"
       },
       {
        "prompt": "4  the dog / sleep / in the garden",
        "answer": "Is the dog sleeping in the garden?",
        "promptUz": "'the dog' — birlik",
        "whyUz": "'the dog' — birlik → IS.\n'sleep' → 'sleeping' (oddiy -ing).",
-       "speak": "4  the dog / sleep / in the garden"
+       "speak": "4  the dog / sleep / in the garden",
+       "speakAnswer": "Is the dog sleeping in the garden?"
       },
       {
        "prompt": "5  what / he / do / at the moment",
        "answer": "What is he doing at the moment?",
        "promptUz": "So'roq so'zi eng oldinda turadi",
        "whyUz": "Tartib: so'roq so'zi → 'be' → ega → fe'l-ing.\n'What IS HE DOING ...?'\n'do' → 'doing'.",
-       "speak": "5  what / he / do / at the moment"
+       "speak": "5  what / he / do / at the moment",
+       "speakAnswer": "What is he doing at the moment?"
       },
       {
        "prompt": "6  she / cook dinner",
        "answer": "Is she cooking dinner?",
        "promptUz": "'she' — birlik",
        "whyUz": "'she' — birlik → IS.\n1-band bilan solishtiring: 'Are YOU cooking?' / 'Is SHE cooking?'",
-       "speak": "6  she / cook dinner"
+       "speak": "6  she / cook dinner",
+       "speakAnswer": "Is she cooking dinner?"
       }
      ]
     }
@@ -2912,14 +3089,16 @@
        "answer": "No, he isn't. He is sleeping.",
        "promptUz": "Rasmda Jo stol ustida, 'zZZZ' yozuvi bor",
        "whyUz": "Rasmda Jo ish stolida uxlab qolgan (zZZZ belgisi).\n'sleep' → 'sleeping' (oddiy -ing).\nBirlik ega → ISN'T va HE.",
-       "speak": "2  Joe usually works very hard in the mornings. Is he working very hard now?"
+       "speak": "2  Joe usually works very hard in the mornings. Is he working very hard now?",
+       "speakAnswer": "No, he isn't. He is sleeping."
       },
       {
        "prompt": "3  The children often play in the garden. Are they playing in the garden now?",
        "answer": "No, they aren't. They are playing on the beach.",
        "promptUz": "Rasmda bolalar qumda o'ynashayapti",
        "whyUz": "Rasmda bolalar bog'da emas, PLYAJDA o'ynashayapti.\nKo'plik ega → AREN'T va THEY.\n'ON the beach' — plyaj yuzasida → ON.",
-       "speak": "3  The children often play in the garden. Are they playing in the garden now?"
+       "speak": "3  The children often play in the garden. Are they playing in the garden now?",
+       "speakAnswer": "No, they aren't. They are playing on the beach."
       }
      ]
     },
@@ -2939,70 +3118,80 @@
        "answer": "works",
        "promptUz": "'sometimes' — odat belgisi",
        "whyUz": "'sometimes' → PRESENT SIMPLE.\n'Nick' — birlik 3-shaxs → workS.\n'work long hours' = uzoq soat ishlamoq.",
-       "speak": "1  Nick sometimes ............ (work) long hours."
+       "speak": "1  Nick sometimes ............ (work) long hours.",
+       "speakAnswer": "works"
       },
       {
        "prompt": "2  I ............ (have) lunch now.",
        "answer": "am having",
        "promptUz": "'now' — hozir",
        "whyUz": "'now' → PRESENT CONTINUOUS.\n'I' → AM + having (-e TUSHDI).\n'have lunch' = tushlik qilmoq — HARAKAT, -ing mumkin.",
-       "speak": "2  I ............ (have) lunch now."
+       "speak": "2  I ............ (have) lunch now.",
+       "speakAnswer": "am having"
       },
       {
        "prompt": "3  Mother ............ (make) the beds every day.",
        "answer": "makes",
        "promptUz": "'every day' — odat belgisi",
        "whyUz": "'every day' → PRESENT SIMPLE.\n'Mother' — birlik 3-shaxs → makeS.\n'make the bed' = karavotni yig'ishtirmoq.",
-       "speak": "3  Mother ............ (make) the beds every day."
+       "speak": "3  Mother ............ (make) the beds every day.",
+       "speakAnswer": "makes"
       },
       {
        "prompt": "4  It often ............ (snow) in January.",
        "answer": "snows",
        "promptUz": "'often' — odat belgisi",
        "whyUz": "'often' → PRESENT SIMPLE.\nOb-havoda ega 'it' — birlik → snowS.\n'in January' — oy nomi oldida IN.",
-       "speak": "4  It often ............ (snow) in January."
+       "speak": "4  It often ............ (snow) in January.",
+       "speakAnswer": "snows"
       },
       {
        "prompt": "5  We ............ (decorate) the Christmas tree every year.",
        "answer": "decorate",
        "promptUz": "'every year' — odat; ega ko'plik",
        "whyUz": "'every year' → PRESENT SIMPLE.\n'We' — ko'plik → -S QO'SHILMAYDI: DECORATE.",
-       "speak": "5  We ............ (decorate) the Christmas tree every year."
+       "speak": "5  We ............ (decorate) the Christmas tree every year.",
+       "speakAnswer": "decorate"
       },
       {
        "prompt": "6  The man ............ (feed) the lions now.",
        "answer": "is feeding",
        "promptUz": "'now' — hozir",
        "whyUz": "'now' → PRESENT CONTINUOUS.\n'The man' — birlik → IS + feeding.\n'to feed' = boqmoq (6-unitdagi 'feed them on milk').",
-       "speak": "6  The man ............ (feed) the lions now."
+       "speak": "6  The man ............ (feed) the lions now.",
+       "speakAnswer": "is feeding"
       },
       {
        "prompt": "7  She ............ (go) to the cinema twice a week.",
        "answer": "goes",
        "promptUz": "'twice a week' — chastota",
        "whyUz": "'twice a week' = haftada ikki marta → PRESENT SIMPLE.\n'She' — birlik 3-shaxs → goES (-o bilan tugagani uchun -ES).",
-       "speak": "7  She ............ (go) to the cinema twice a week."
+       "speak": "7  She ............ (go) to the cinema twice a week.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "8  They ............ (drive) to the beach every Saturday.",
        "answer": "drive",
        "promptUz": "'every Saturday' — odat; ega ko'plik",
        "whyUz": "'every Saturday' → PRESENT SIMPLE.\n'They' — ko'plik → -S QO'SHILMAYDI: DRIVE.",
-       "speak": "8  They ............ (drive) to the beach every Saturday."
+       "speak": "8  They ............ (drive) to the beach every Saturday.",
+       "speakAnswer": "drive"
       },
       {
        "prompt": "9  Diane ............ (listen) to music at the moment.",
        "answer": "is listening",
        "promptUz": "'at the moment' — hozir",
        "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'Diane' — birlik → IS + listening.\n'listen TO music' — 'to' shart.",
-       "speak": "9  Diane ............ (listen) to music at the moment."
+       "speak": "9  Diane ............ (listen) to music at the moment.",
+       "speakAnswer": "is listening"
       },
       {
        "prompt": "10  My sister ............ (clean) her room now.",
        "answer": "is cleaning",
        "promptUz": "'now' — hozir",
        "whyUz": "'now' → PRESENT CONTINUOUS.\n'My sister' — birlik → IS + cleaning.",
-       "speak": "10  My sister ............ (clean) her room now."
+       "speak": "10  My sister ............ (clean) her room now.",
+       "speakAnswer": "is cleaning"
       }
      ]
     },
@@ -3025,7 +3214,8 @@
         "a. Do the dancers practise every day?",
         "b. Are the dancers practising every day?"
        ],
-       "whyUz": "'every day' → PRESENT SIMPLE savoli: DO + ega + fe'l?\n'to practise' = mashq qilmoq (britancha yozilishi; amerikacha: practice)."
+       "whyUz": "'every day' → PRESENT SIMPLE savoli: DO + ega + fe'l?\n'to practise' = mashq qilmoq (britancha yozilishi; amerikacha: practice).",
+       "speakAnswer": "a. Do the dancers practise every day?"
       },
       {
        "prompt": "3  Qaysi biri to'g'ri?",
@@ -3035,7 +3225,8 @@
         "b. Bob never swims in the sea.",
         "a. Bob is never swimming in the sea."
        ],
-       "whyUz": "'never' — CHASTOTA ravishi → PRESENT SIMPLE.\n'Bob' — birlik 3-shaxs → swimS.\n'never' fe'ldan OLDIN turadi."
+       "whyUz": "'never' — CHASTOTA ravishi → PRESENT SIMPLE.\n'Bob' — birlik 3-shaxs → swimS.\n'never' fe'ldan OLDIN turadi.",
+       "speakAnswer": "b. Bob never swims in the sea."
       },
       {
        "prompt": "4  Qaysi biri to'g'ri?",
@@ -3045,7 +3236,8 @@
         "b. Phil gets up every morning at 7:00.",
         "a. Phil is getting up every morning at 7:00."
        ],
-       "whyUz": "'every morning' → PRESENT SIMPLE.\n'Phil' — birlik 3-shaxs → getS up.\n'at 7:00' — aniq soat oldida AT."
+       "whyUz": "'every morning' → PRESENT SIMPLE.\n'Phil' — birlik 3-shaxs → getS up.\n'at 7:00' — aniq soat oldida AT.",
+       "speakAnswer": "b. Phil gets up every morning at 7:00."
       },
       {
        "prompt": "5  Qaysi biri to'g'ri?",
@@ -3055,7 +3247,8 @@
         "a. What do you do in your free time?",
         "b. What are you doing in your free time?"
        ],
-       "whyUz": "'in your free time' = bo'sh vaqtingizda — ODAT → PRESENT SIMPLE.\n'What DO you DO ...?' — birinchi 'do' yordamchi, ikkinchisi asosiy fe'l."
+       "whyUz": "'in your free time' = bo'sh vaqtingizda — ODAT → PRESENT SIMPLE.\n'What DO you DO ...?' — birinchi 'do' yordamchi, ikkinchisi asosiy fe'l.",
+       "speakAnswer": "a. What do you do in your free time?"
       },
       {
        "prompt": "6  Qaysi biri to'g'ri?",
@@ -3065,7 +3258,8 @@
         "a. Be quiet! The baby is sleeping.",
         "b. Be quiet! The baby sleeps."
        ],
-       "whyUz": "'Be quiet!' (Jim bo'l!) — chaqaloq AYNAN HOZIR uxlayapti\n→ PRESENT CONTINUOUS.\n'The baby sleeps' — umumiy odat bo'lardi, bu yerda mos emas."
+       "whyUz": "'Be quiet!' (Jim bo'l!) — chaqaloq AYNAN HOZIR uxlayapti\n→ PRESENT CONTINUOUS.\n'The baby sleeps' — umumiy odat bo'lardi, bu yerda mos emas.",
+       "speakAnswer": "a. Be quiet! The baby is sleeping."
       }
      ]
     },
@@ -3085,49 +3279,56 @@
        "answer": "goes",
        "promptUz": "'to work' bilan keladigan fe'l; ega birlik",
        "whyUz": "'go to work' = ishga bormoq.\n'my father' — birlik 3-shaxs → goES (-o → -ES).",
-       "speak": "Every day my father 1) ............ to work."
+       "speak": "Every day my father 1) ............ to work.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "He 2) ............ up early ...",
        "answer": "gets",
        "promptUz": "'up early' bilan keladigan fe'l",
        "whyUz": "'get up' = uyg'onmoq, turmoq.\n'He' — birlik → getS.",
-       "speak": "He 2) ............ up early ..."
+       "speak": "He 2) ............ up early ...",
+       "speakAnswer": "gets"
       },
       {
        "prompt": "... and he 3) ............ home at about 8:00.",
        "answer": "leaves",
        "promptUz": "Uydan chiqish fe'li",
        "whyUz": "'leave home' = uydan chiqmoq.\n'he' — birlik → leaveS.\nDIQQAT: 'leave home' — 'from' KERAK EMAS.",
-       "speak": "... and he 3) ............ home at about 8:00."
+       "speak": "... and he 3) ............ home at about 8:00.",
+       "speakAnswer": "leaves"
       },
       {
        "prompt": "My sister and I 4) ............ to school every morning.",
        "answer": "go",
        "promptUz": "Ega — 'biz' (ko'plik)",
        "whyUz": "'My sister and I' = WE → ko'plik → -S QO'SHILMAYDI: GO.\n'go to school' = maktabga bormoq (artiklsiz).",
-       "speak": "My sister and I 4) ............ to school every morning."
+       "speak": "My sister and I 4) ............ to school every morning.",
+       "speakAnswer": "go"
       },
       {
        "prompt": "Mother usually 5) ............ the house.",
        "answer": "cleans",
        "promptUz": "Uyni tartibga solish fe'li",
        "whyUz": "'clean the house' = uyni tozalamoq.\n'Mother' — birlik 3-shaxs → cleanS.",
-       "speak": "Mother usually 5) ............ the house."
+       "speak": "Mother usually 5) ............ the house.",
+       "speakAnswer": "cleans"
       },
       {
        "prompt": "She sometimes 6) ............ shopping.",
        "answer": "goes",
        "promptUz": "'shopping' bilan keladigan fe'l",
        "whyUz": "'go shopping' = xaridga bormoq.\n'She' — birlik → goES.\nDIQQAT: 'go' bu mashqda IKKI marta ishlatiladi.",
-       "speak": "She sometimes 6) ............ shopping."
+       "speak": "She sometimes 6) ............ shopping.",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "The dog 7) ............ in the garden in the mornings.",
        "answer": "plays",
        "promptUz": "Bog'da nima qiladi?",
        "whyUz": "'play in the garden' = bog'da o'ynamoq.\n'The dog' — birlik → playS (unli + y → faqat -S).\n'in the mornings' — ko'plik: har kuni ertalab.",
-       "speak": "The dog 7) ............ in the garden in the mornings."
+       "speak": "The dog 7) ............ in the garden in the mornings.",
+       "speakAnswer": "plays"
       }
      ]
     },
@@ -3147,56 +3348,64 @@
        "answer": "is sitting",
        "promptUz": "Ega birlik; undosh ikkilanadi",
        "whyUz": "'Father' — birlik → IS + sitting.\n'sit' → 'sitting' (t IKKILANADI).\n'ON the sofa' — divan yuzasida → ON.",
-       "speak": "Father 8) ............ (sit) on the sofa."
+       "speak": "Father 8) ............ (sit) on the sofa.",
+       "speakAnswer": "is sitting"
       },
       {
        "prompt": "He 9) ............ (read) a newspaper.",
        "answer": "is reading",
        "promptUz": "Ega birlik",
        "whyUz": "'He' — birlik → IS + reading (oddiy -ing).\n'a newspaper' = gazeta.",
-       "speak": "He 9) ............ (read) a newspaper."
+       "speak": "He 9) ............ (read) a newspaper.",
+       "speakAnswer": "is reading"
       },
       {
        "prompt": "Mother 10) ............ (not/clean) the house.",
        "answer": "isn't cleaning",
        "promptUz": "INKOR shakl kerak",
        "whyUz": "'not' berilgan → INKOR: IS NOT = ISN'T + cleaning.\n11a-mashqda oyim odatda uyni tozalaydi, LEKIN bugun tozalamayapti.",
-       "speak": "Mother 10) ............ (not/clean) the house."
+       "speak": "Mother 10) ............ (not/clean) the house.",
+       "speakAnswer": "isn't cleaning"
       },
       {
        "prompt": "She 11) ............ (talk) on the phone.",
        "answer": "is talking",
        "promptUz": "Ega birlik",
        "whyUz": "'She' — birlik → IS + talking.\n'talk ON the phone' = telefonda gaplashmoq ('on' shart).",
-       "speak": "She 11) ............ (talk) on the phone."
+       "speak": "She 11) ............ (talk) on the phone.",
+       "speakAnswer": "is talking"
       },
       {
        "prompt": "My sister 12) ............ (have) tea ...",
        "answer": "is having",
        "promptUz": "'have tea' — harakat, -ing mumkin",
        "whyUz": "'have tea' = choy ichmoq — HARAKAT → -ing mumkin.\n'My sister' — birlik → IS + having (-e TUSHDI).",
-       "speak": "My sister 12) ............ (have) tea ..."
+       "speak": "My sister 12) ............ (have) tea ...",
+       "speakAnswer": "is having"
       },
       {
        "prompt": "... and I 13) ............ (watch) TV.",
        "answer": "am watching",
        "promptUz": "Ega 'I'",
        "whyUz": "'I' → AM + watching (oddiy -ing).\nDIQQAT: 'watch TV' — artikl KERAK EMAS.",
-       "speak": "... and I 13) ............ (watch) TV."
+       "speak": "... and I 13) ............ (watch) TV.",
+       "speakAnswer": "am watching"
       },
       {
        "prompt": "The dog 14) ............ (not/play) in the garden.",
        "answer": "isn't playing",
        "promptUz": "INKOR shakl kerak",
        "whyUz": "'not' berilgan → INKOR: ISN'T + playing.\n11a-mashqda it odatda bog'da o'ynaydi, LEKIN bugun o'ynamayapti.",
-       "speak": "The dog 14) ............ (not/play) in the garden."
+       "speak": "The dog 14) ............ (not/play) in the garden.",
+       "speakAnswer": "isn't playing"
       },
       {
        "prompt": "It 15) ............ (sleep).",
        "answer": "is sleeping",
        "promptUz": "Ega 'it' — birlik",
        "whyUz": "'It' (= the dog) — birlik → IS + sleeping.\nRasmda it polda uxlab yotibdi.",
-       "speak": "It 15) ............ (sleep)."
+       "speak": "It 15) ............ (sleep).",
+       "speakAnswer": "is sleeping"
       }
      ]
     }
@@ -3226,70 +3435,80 @@
        "answer": "am writing",
        "promptUz": "Xatni AYNAN HOZIR yozyapti",
        "whyUz": "Xat yozish — hozir sodir bo'layotgan ish → PRESENT CONTINUOUS.\n'I' → AM + writing (-e TUSHDI).",
-       "speak": "I 1) ............ (write) to you from Wales."
+       "speak": "I 1) ............ (write) to you from Wales.",
+       "speakAnswer": "am writing"
       },
       {
        "prompt": "We 2) ............ (visit) my grandparents in a lovely village called St John's.",
        "answer": "are visiting",
        "promptUz": "Ta'til davomida davom etayotgan ish",
        "whyUz": "Vaqtinchalik holat → PRESENT CONTINUOUS.\n'We' → ARE + visiting (undosh IKKILANMAYDI — urg'u 1-bo'g'inda).\n'called ...' = ... deb ataladigan.",
-       "speak": "We 2) ............ (visit) my grandparents in a lovely village called St John's."
+       "speak": "We 2) ............ (visit) my grandparents in a lovely village called St John's.",
+       "speakAnswer": "are visiting"
       },
       {
        "prompt": "We 3) ............ (come) here every year.",
        "answer": "come",
        "promptUz": "'every year' — odat belgisi",
        "whyUz": "'every year' → PRESENT SIMPLE (har yili takrorlanadi).\n'We' — ko'plik → -S QO'SHILMAYDI: COME.",
-       "speak": "We 3) ............ (come) here every year."
+       "speak": "We 3) ............ (come) here every year.",
+       "speakAnswer": "come"
       },
       {
        "prompt": "Sometimes it 4) ............ (rain) in March ...",
        "answer": "rains",
        "promptUz": "'Sometimes' — odat belgisi",
        "whyUz": "'Sometimes' → PRESENT SIMPLE.\nOb-havoda ega 'it' — birlik → rainS.\n'in March' — oy nomi oldida IN.",
-       "speak": "Sometimes it 4) ............ (rain) in March ..."
+       "speak": "Sometimes it 4) ............ (rain) in March ...",
+       "speakAnswer": "rains"
       },
       {
        "prompt": "... but this time the weather is beautiful and the sun 5) ............ (shine).",
        "answer": "is shining",
        "promptUz": "'this time' — hozirgi holat",
        "whyUz": "'this time' = bu safar — HOZIRGI holat → PRESENT CONTINUOUS.\n'the sun' — birlik → IS + shining (-e TUSHDI).\n4 va 5-bandni solishtiring: odatda yomg'ir, LEKIN hozir quyoshli.",
-       "speak": "... but this time the weather is beautiful and the sun 5) ............ (shine)."
+       "speak": "... but this time the weather is beautiful and the sun 5) ............ (shine).",
+       "speakAnswer": "is shining"
       },
       {
        "prompt": "This week we 6) ............ (be) very busy.",
        "answer": "are",
        "promptUz": "'be' fe'li -ing OLMAYDI",
        "whyUz": "'be' — HOLAT fe'li, -ing shaklida ishlatilmaydi.\n'we' → ARE.\n'busy' = band.",
-       "speak": "This week we 6) ............ (be) very busy."
+       "speak": "This week we 6) ............ (be) very busy.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "Everyone 7) ............ (work) very hard to decorate the streets.",
        "answer": "is working",
        "promptUz": "'everyone' — birlikmi yoki ko'plikmi?",
        "whyUz": "'This week' → PRESENT CONTINUOUS.\n'Everyone' — ma'nosi ko'plik, lekin GRAMMATIK jihatdan BIRLIK → IS.\n'Everyone are working' XATO.",
-       "speak": "Everyone 7) ............ (work) very hard to decorate the streets."
+       "speak": "Everyone 7) ............ (work) very hard to decorate the streets.",
+       "speakAnswer": "is working"
       },
       {
        "prompt": "All the women 8) ............ (cook) delicious food ...",
        "answer": "are cooking",
        "promptUz": "'All the women' — ko'plik",
        "whyUz": "'All the women' — KO'PLIK → ARE + cooking.\n7-band bilan solishtiring: 'everyone' birlik, 'all the women' ko'plik.\n'delicious' = mazali.",
-       "speak": "All the women 8) ............ (cook) delicious food ..."
+       "speak": "All the women 8) ............ (cook) delicious food ...",
+       "speakAnswer": "are cooking"
       },
       {
        "prompt": "... and 9) ............ (make) cakes.",
        "answer": "are making",
        "promptUz": "Ega hali ham 'All the women'",
        "whyUz": "Ega o'zgarmagan → ARE + making (-e TUSHDI).\n'a cake' = tort, kek.",
-       "speak": "... and 9) ............ (make) cakes."
+       "speak": "... and 9) ............ (make) cakes.",
+       "speakAnswer": "are making"
       },
       {
        "prompt": "I 10) ............ (have) a really good time.",
        "answer": "am having",
        "promptUz": "'have a good time' — harakat, -ing mumkin",
        "whyUz": "'have a good time' = yaxshi vaqt o'tkazmoq — HARAKAT → -ing mumkin.\n'I' → AM + having (-e TUSHDI).",
-       "speak": "I 10) ............ (have) a really good time."
+       "speak": "I 10) ............ (have) a really good time.",
+       "speakAnswer": "am having"
       }
      ]
     }
@@ -3401,73 +3620,85 @@
        "prompt": "TOM — city:",
        "answer": "Warsaw",
        "promptUz": "A otkritka qayerdan yozilgan?",
-       "whyUz": "'Greetings from ...' o'rniga Tom 'how cold it is in Warsaw' deydi."
+       "whyUz": "'Greetings from ...' o'rniga Tom 'how cold it is in Warsaw' deydi.",
+       "speakAnswer": "Warsaw"
       },
       {
        "prompt": "TOM — weather:",
        "answer": "very cold, snowing heavily",
        "promptUz": "Qanday ob-havo?",
-       "whyUz": "'how cold it is' + 'It is snowing heavily today'."
+       "whyUz": "'how cold it is' + 'It is snowing heavily today'.",
+       "speakAnswer": "very cold, snowing heavily"
       },
       {
        "prompt": "TOM — clothes:",
        "answer": "heavy jackets and gloves",
        "promptUz": "Bolalar nima kiygan?",
-       "whyUz": "'the children are wearing their heavy jackets and gloves'."
+       "whyUz": "'the children are wearing their heavy jackets and gloves'.",
+       "speakAnswer": "heavy jackets and gloves"
       },
       {
        "prompt": "TOM — activities:",
        "answer": "making a snowman in the park",
        "promptUz": "Bolalar nima qilishayapti?",
-       "whyUz": "'They are making a snowman in the park at the moment.'"
+       "whyUz": "'They are making a snowman in the park at the moment.'",
+       "speakAnswer": "making a snowman in the park"
       },
       {
        "prompt": "TRACY — city:",
        "answer": "London",
        "promptUz": "B otkritka qayerdan?",
-       "whyUz": "'Greetings from London.'"
+       "whyUz": "'Greetings from London.'",
+       "speakAnswer": "London"
       },
       {
        "prompt": "TRACY — weather:",
        "answer": "windy and raining",
        "promptUz": "Qanday ob-havo?",
-       "whyUz": "'It's windy today and it is raining.'"
+       "whyUz": "'It's windy today and it is raining.'",
+       "speakAnswer": "windy and raining"
       },
       {
        "prompt": "TRACY — clothes:",
        "answer": "pyjamas",
        "promptUz": "Bolalar nima kiygan?",
-       "whyUz": "'The children are in their pyjamas.'"
+       "whyUz": "'The children are in their pyjamas.'",
+       "speakAnswer": "pyjamas"
       },
       {
        "prompt": "TRACY — activities:",
        "answer": "decorating the Christmas tree",
        "promptUz": "Bolalar nima qilishayapti?",
-       "whyUz": "'they are decorating the Christmas tree at the moment'."
+       "whyUz": "'they are decorating the Christmas tree at the moment'.",
+       "speakAnswer": "decorating the Christmas tree"
       },
       {
        "prompt": "PAMELA — city:",
        "answer": "Sydney",
        "promptUz": "C otkritka qayerdan?",
-       "whyUz": "'Season's greetings from Sydney.'"
+       "whyUz": "'Season's greetings from Sydney.'",
+       "speakAnswer": "Sydney"
       },
       {
        "prompt": "PAMELA — weather:",
        "answer": "fantastic, very hot and sunny",
        "promptUz": "Qanday ob-havo?",
-       "whyUz": "'The weather is fantastic today' + 'It's very hot and the sun is shining'."
+       "whyUz": "'The weather is fantastic today' + 'It's very hot and the sun is shining'.",
+       "speakAnswer": "fantastic, very hot and sunny"
       },
       {
        "prompt": "PAMELA — clothes:",
        "answer": "swimming costumes",
        "promptUz": "Ular nima kiygan?",
-       "whyUz": "'we are all in our swimming costumes'."
+       "whyUz": "'we are all in our swimming costumes'.",
+       "speakAnswer": "swimming costumes"
       },
       {
        "prompt": "PAMELA — activities:",
        "answer": "making a sandcastle, swimming",
        "promptUz": "Oila nima qilishayapti?",
-       "whyUz": "'Mum, Dad, Sheila and Frank are making a sandcastle' +\n'Everyone is swimming and enjoying the good weather'."
+       "whyUz": "'Mum, Dad, Sheila and Frank are making a sandcastle' +\n'Everyone is swimming and enjoying the good weather'.",
+       "speakAnswer": "making a sandcastle, swimming"
       }
      ]
     },
@@ -3558,84 +3789,96 @@
        "answer": "What do you think of this dress?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a dress' — BIRLIK → this va it's.\nRasmda uzun binafsha ko'ylakdagi qiz — ko'ylak yerga tegib turibdi.",
-       "speak": "dress / long"
+       "speak": "dress / long",
+       "speakAnswer": "What do you think of this dress?"
       },
       {
        "prompt": "dress / long",
        "answer": "Well, I think it's too long.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a dress' — BIRLIK → this va it's.\nRasmda uzun binafsha ko'ylakdagi qiz — ko'ylak yerga tegib turibdi.",
-       "speak": "dress / long"
+       "speak": "dress / long",
+       "speakAnswer": "Well, I think it's too long."
       },
       {
        "prompt": "jumper / small",
        "answer": "What about this jumper?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a jumper' — BIRLIK → this va it's.\nRasmda qizil kalta jemperdagi yigit — jemper qorniga yetmayapti.",
-       "speak": "jumper / small"
+       "speak": "jumper / small",
+       "speakAnswer": "What about this jumper?"
       },
       {
        "prompt": "jumper / small",
        "answer": "Oh no! It's too small.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a jumper' — BIRLIK → this va it's.\nRasmda qizil kalta jemperdagi yigit — jemper qorniga yetmayapti.",
-       "speak": "jumper / small"
+       "speak": "jumper / small",
+       "speakAnswer": "Oh no! It's too small."
       },
       {
        "prompt": "shirt / tight",
        "answer": "What do you think of this shirt?",
        "promptUz": "Savol tuzing",
        "whyUz": "'tight' = tor, siqadigan.\nRasmda ko'k ko'ylakdagi erkak — tugmalari uzilib ketgan.",
-       "speak": "shirt / tight"
+       "speak": "shirt / tight",
+       "speakAnswer": "What do you think of this shirt?"
       },
       {
        "prompt": "shirt / tight",
        "answer": "Well, I think it's too tight.",
        "promptUz": "Javob tuzing",
        "whyUz": "'tight' = tor, siqadigan.\nRasmda ko'k ko'ylakdagi erkak — tugmalari uzilib ketgan.",
-       "speak": "shirt / tight"
+       "speak": "shirt / tight",
+       "speakAnswer": "Well, I think it's too tight."
       },
       {
        "prompt": "suit / big",
        "answer": "What about this suit?",
        "promptUz": "Savol tuzing",
        "whyUz": "'a suit' — BIRLIK → this va it's.\nRasmda sariq kostyumdagi yigit — kostyum unga juda katta.",
-       "speak": "suit / big"
+       "speak": "suit / big",
+       "speakAnswer": "What about this suit?"
       },
       {
        "prompt": "suit / big",
        "answer": "Oh no! It's too big.",
        "promptUz": "Javob tuzing",
        "whyUz": "'a suit' — BIRLIK → this va it's.\nRasmda sariq kostyumdagi yigit — kostyum unga juda katta.",
-       "speak": "suit / big"
+       "speak": "suit / big",
+       "speakAnswer": "Oh no! It's too big."
       },
       {
        "prompt": "shoes / big",
        "answer": "What do you think of these shoes?",
        "promptUz": "Savol tuzing",
        "whyUz": "'shoes' — KO'PLIK → these va they're.\nRasmda katta tuflilar va £150 narx yorlig'i.",
-       "speak": "shoes / big"
+       "speak": "shoes / big",
+       "speakAnswer": "What do you think of these shoes?"
       },
       {
        "prompt": "shoes / big",
        "answer": "Well, I think they're too big.",
        "promptUz": "Javob tuzing",
        "whyUz": "'shoes' — KO'PLIK → these va they're.\nRasmda katta tuflilar va £150 narx yorlig'i.",
-       "speak": "shoes / big"
+       "speak": "shoes / big",
+       "speakAnswer": "Well, I think they're too big."
       },
       {
        "prompt": "skirt / tight",
        "answer": "What about this skirt?",
        "promptUz": "Savol tuzing",
        "whyUz": "Bir kiyimni turli sifatlar bilan baholash mumkin —\no'zingiz yangi juftliklar tuzing.",
-       "speak": "skirt / tight"
+       "speak": "skirt / tight",
+       "speakAnswer": "What about this skirt?"
       },
       {
        "prompt": "skirt / tight",
        "answer": "Oh no! It's too tight.",
        "promptUz": "Javob tuzing",
        "whyUz": "Bir kiyimni turli sifatlar bilan baholash mumkin —\no'zingiz yangi juftliklar tuzing.",
-       "speak": "skirt / tight"
+       "speak": "skirt / tight",
+       "speakAnswer": "Oh no! It's too tight."
       }
      ]
     }
@@ -3665,28 +3908,32 @@
        "answer": "Can",
        "promptUz": "Ruxsat/imkoniyat so'raydigan modal fe'l",
        "whyUz": "'Can I help you?' = Yordam bera olamanmi?\nDo'konda sotuvchining odatiy birinchi gapi.",
-       "speak": "A: 1) ............ I help you?"
+       "speak": "A: 1) ............ I help you?",
+       "speakAnswer": "Can"
       },
       {
        "prompt": "B: Yes, 2) ............ . I'm looking for a jumper.",
        "answer": "please",
        "promptUz": "Muloyimlik so'zi",
        "whyUz": "'Yes, please.' = Ha, iltimos.\nTaklifni QABUL QILISH: Yes, please.\nRAD ETISH: No, thank you.",
-       "speak": "B: Yes, 2) ............ . I'm looking for a jumper."
+       "speak": "B: Yes, 2) ............ . I'm looking for a jumper.",
+       "speakAnswer": "please"
       },
       {
        "prompt": "A: What colour 3) ............ you like?",
        "answer": "would",
        "promptUz": "'like' bilan muloyim savol shakli",
        "whyUz": "'What colour WOULD you like?' = Qanday rangdagisini xohlaysiz?\n'would like' = xohlamoq (muloyim shakl).\n'What colour DO you like?' — 'qanday rangni yoqtirasiz?' — boshqa ma'no.",
-       "speak": "A: What colour 3) ............ you like?"
+       "speak": "A: What colour 3) ............ you like?",
+       "speakAnswer": "would"
       },
       {
        "prompt": "A: 4) ............ you are.",
        "answer": "Here",
        "promptUz": "Narsani uzatganda aytiladigan so'z",
        "whyUz": "'Here you are.' = Mana, oling.\nNarsani birovga uzatganda aytiladi.\n'Here it is' ham mumkin, lekin kitob 'Here you are' beradi.",
-       "speak": "A: 4) ............ you are."
+       "speak": "A: 4) ............ you are.",
+       "speakAnswer": "Here"
       }
      ]
     },
@@ -3789,38 +4036,44 @@
        "answer": "Can I help you",
        "promptUz": "Sotuvchining birinchi gapi",
        "whyUz": "'Can I help you?' = Yordam bera olamanmi?\nDo'konda sotuvchi shu ibora bilan boshlaydi.",
-       "speak": "A: Hello. 1) ............ ?"
+       "speak": "A: Hello. 1) ............ ?",
+       "speakAnswer": "Can I help you"
       },
       {
        "prompt": "A: 2) ............ ?",
        "answer": "How old is she",
        "promptUz": "Javob: 'She's sixteen'",
-       "whyUz": "Javob YOSH ('sixteen') → 'How old is she?'"
+       "whyUz": "Javob YOSH ('sixteen') → 'How old is she?'",
+       "speakAnswer": "How old is she"
       },
       {
        "prompt": "A: 3) ............ ?",
        "answer": "What about a nice dress",
        "promptUz": "Javob: 'She never wears dresses'",
-       "whyUz": "Javobda 'dresses' aytilgan → savolda 'a nice dress' taklif qilingan.\n'What about ...?' — taklif kiritish iborasi."
+       "whyUz": "Javobda 'dresses' aytilgan → savolda 'a nice dress' taklif qilingan.\n'What about ...?' — taklif kiritish iborasi.",
+       "speakAnswer": "What about a nice dress"
       },
       {
        "prompt": "A: 4) ............ ?",
        "answer": "What's her favourite colour",
        "promptUz": "Javob: 'she likes red a lot'",
-       "whyUz": "Javob RANG ('red') → 'What's her favourite colour?'"
+       "whyUz": "Javob RANG ('red') → 'What's her favourite colour?'",
+       "speakAnswer": "What's her favourite colour"
       },
       {
        "prompt": "A: 5) ............ ?",
        "answer": "What size is she",
        "promptUz": "Javob: 'She's a twelve'",
-       "whyUz": "Javob O'LCHAM ('a twelve') → 'What size is she?'\nBritaniyada ayollar kiyimi o'lchami: 8, 10, 12, 14 ..."
+       "whyUz": "Javob O'LCHAM ('a twelve') → 'What size is she?'\nBritaniyada ayollar kiyimi o'lchami: 8, 10, 12, 14 ...",
+       "speakAnswer": "What size is she"
       },
       {
        "prompt": "A: Here you are. 6) ............ ?",
        "answer": "What do you think of this T-shirt",
        "promptUz": "Javob: 'It's lovely'",
        "whyUz": "Javob BAHO ('It's lovely') → fikr so'ralgan.\n'What do you think OF ...?' — 'of' predlogi shart.",
-       "speak": "A: Here you are. 6) ............ ?"
+       "speak": "A: Here you are. 6) ............ ?",
+       "speakAnswer": "What do you think of this T-shirt"
       }
      ]
     },
@@ -3840,28 +4093,32 @@
        "answer": "Can I help you",
        "promptUz": "Sotuvchining birinchi gapi",
        "whyUz": "'Can I help you?' — do'konda sotuvchining odatiy boshlanishi.",
-       "speak": "A: Hello. 1) ............ ?"
+       "speak": "A: Hello. 1) ............ ?",
+       "speakAnswer": "Can I help you"
       },
       {
        "prompt": "B: Yes, I'm looking for some pencils. 2) ............ ?",
        "answer": "Do you have any",
        "promptUz": "Javob: 'Yes, of course'",
        "whyUz": "Mahsulot bor-yo'qligi so'ralmoqda → 'Do you have any?'\nSAVOLDA 'any' ishlatiladi (tasdiqda 'some').",
-       "speak": "B: Yes, I'm looking for some pencils. 2) ............ ?"
+       "speak": "B: Yes, I'm looking for some pencils. 2) ............ ?",
+       "speakAnswer": "Do you have any"
       },
       {
        "prompt": "A: Yes, of course. 3) ............ ?",
        "answer": "How many would you like",
        "promptUz": "Javob: 'Four please'",
        "whyUz": "Javob SON ('Four') → 'How many would you like?'\n'pencils' sanaladi → HOW MANY ('how much' XATO).",
-       "speak": "A: Yes, of course. 3) ............ ?"
+       "speak": "A: Yes, of course. 3) ............ ?",
+       "speakAnswer": "How many would you like"
       },
       {
        "prompt": "B: Four please. 4) ............ ?",
        "answer": "How much are they",
        "promptUz": "Javob: 'They're 50p each'",
        "whyUz": "Javob NARX → 'How much are they?'\n'they' — qalamlar ko'plikda → ARE.",
-       "speak": "B: Four please. 4) ............ ?"
+       "speak": "B: Four please. 4) ............ ?",
+       "speakAnswer": "How much are they"
       }
      ]
     },
@@ -3967,13 +4224,15 @@
        "prompt": "jacket",
        "answer": "John is wearing a leather jacket today.",
        "promptUz": "'kurtka' so'zi bilan gap tuzing",
-       "speak": "jacket"
+       "speak": "jacket",
+       "speakAnswer": "John is wearing a leather jacket today."
       },
       {
        "prompt": "snowy",
        "answer": "It's a snowy day in Prague.",
        "promptUz": "'qorli' so'zi bilan gap tuzing",
-       "speak": "snowy"
+       "speak": "snowy",
+       "speakAnswer": "It's a snowy day in Prague."
       },
       {
        "prompt": "boiling hot",
@@ -3985,43 +4244,50 @@
        "prompt": "what about",
        "answer": "What about these shoes? They're too expensive.",
        "promptUz": "'...-chi?' iborasi bilan savol tuzing",
-       "speak": "what about"
+       "speak": "what about",
+       "speakAnswer": "What about these shoes? They're too expensive."
       },
       {
        "prompt": "hot",
        "answer": "It's very hot and the sun is shining in Sydney.",
        "promptUz": "'issiq' so'zi bilan gap tuzing",
-       "speak": "hot"
+       "speak": "hot",
+       "speakAnswer": "It's very hot and the sun is shining in Sydney."
       },
       {
        "prompt": "enjoy",
        "answer": "Everyone is enjoying the good weather on the beach.",
        "promptUz": "'zavqlanmoq' fe'li bilan gap tuzing",
-       "speak": "enjoy"
+       "speak": "enjoy",
+       "speakAnswer": "Everyone is enjoying the good weather on the beach."
       },
       {
        "prompt": "freezing cold",
        "answer": "It's freezing cold and snowy in winter.",
        "promptUz": "'qattiq sovuq' iborasi bilan gap tuzing",
-       "speak": "freezing cold"
+       "speak": "freezing cold",
+       "speakAnswer": "It's freezing cold and snowy in winter."
       },
       {
        "prompt": "weather",
        "answer": "What's the weather like today?",
        "promptUz": "'ob-havo' so'zi bilan savol tuzing",
-       "speak": "weather"
+       "speak": "weather",
+       "speakAnswer": "What's the weather like today?"
       },
       {
        "prompt": "cloudy",
        "answer": "There are clouds in the sky. It's cloudy today.",
        "promptUz": "'bulutli' so'zi bilan gap tuzing",
-       "speak": "cloudy"
+       "speak": "cloudy",
+       "speakAnswer": "There are clouds in the sky. It's cloudy today."
       },
       {
        "prompt": "too tight",
        "answer": "I can't wear this shirt. It's too tight.",
        "promptUz": "'juda tor' iborasi bilan gap tuzing",
-       "speak": "too tight"
+       "speak": "too tight",
+       "speakAnswer": "I can't wear this shirt. It's too tight."
       },
       {
        "prompt": "too long",
@@ -4033,7 +4299,8 @@
        "prompt": "sunbathing",
        "answer": "Sonia is sunbathing near the pool at the moment.",
        "promptUz": "'quyoshda toblanish' so'zi bilan gap tuzing",
-       "speak": "sunbathing"
+       "speak": "sunbathing",
+       "speakAnswer": "Sonia is sunbathing near the pool at the moment."
       },
       {
        "prompt": "temperature",
@@ -4045,7 +4312,8 @@
        "prompt": "season",
        "answer": "Spring is my favourite season.",
        "promptUz": "'fasl' so'zi bilan gap tuzing",
-       "speak": "season"
+       "speak": "season",
+       "speakAnswer": "Spring is my favourite season."
       }
      ]
     }
@@ -4314,69 +4582,79 @@
        "answer": "shining",
        "promptUz": "-e bilan tugaydi",
        "whyUz": "3-qoida: -E TUSHADI → shin + ing = shining.\n'shining' = charaqlayotgan.",
-       "speak": "1  shine → ............"
+       "speak": "1  shine → ............",
+       "speakAnswer": "shining"
       },
       {
        "prompt": "2  throw → ............",
        "answer": "throwing",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing.\nDIQQAT: 'w' undosh, lekin ikkilanmaydi — undan oldin 'o' unlisi bor,\nlekin 'ow' birga uzun tovush beradi.",
-       "speak": "2  throw → ............"
+       "speak": "2  throw → ............",
+       "speakAnswer": "throwing"
       },
       {
        "prompt": "3  make → ............",
        "answer": "making",
        "promptUz": "-e bilan tugaydi",
        "whyUz": "3-qoida: -E TUSHADI → mak + ing = making.",
-       "speak": "3  make → ............"
+       "speak": "3  make → ............",
+       "speakAnswer": "making"
       },
       {
        "prompt": "4  swim → ............",
        "answer": "swimming",
        "promptUz": "Ikki undosh orasida bitta urg'uli unli",
        "whyUz": "2-qoida: sw-I-m → oxirgi undosh 'm' IKKILANADI = swimming.",
-       "speak": "4  swim → ............"
+       "speak": "4  swim → ............",
+       "speakAnswer": "swimming"
       },
       {
        "prompt": "5  play → ............",
        "answer": "playing",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing.\nDIQQAT: -y HECH QACHON -i ga aylanmaydi -ing oldidan.",
-       "speak": "5  play → ............"
+       "speak": "5  play → ............",
+       "speakAnswer": "playing"
       },
       {
        "prompt": "6  listen → ............",
        "answer": "listening",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing.\nUndosh ikkilanmaydi, chunki urg'u BIRINCHI bo'g'inda: LIS-ten.\nTalaffuz: /ˈlɪsən/ — 't' O'QILMAYDI.",
-       "speak": "6  listen → ............"
+       "speak": "6  listen → ............",
+       "speakAnswer": "listening"
       },
       {
        "prompt": "7  go → ............",
        "answer": "going",
        "promptUz": "Oddiy -ing",
-       "whyUz": "1-qoida: oddiy -ing. 'go' unli bilan tugaydi, lekin -e emas."
+       "whyUz": "1-qoida: oddiy -ing. 'go' unli bilan tugaydi, lekin -e emas.",
+       "speakAnswer": "going"
       },
       {
        "prompt": "8  read → ............",
        "answer": "reading",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing. 'ea' — ikki unli, ikkilanish yo'q.",
-       "speak": "8  read → ............"
+       "speak": "8  read → ............",
+       "speakAnswer": "reading"
       },
       {
        "prompt": "9  watch → ............",
        "answer": "watching",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing. '-ch' ikki harfli undosh — ikkilanmaydi.",
-       "speak": "9  watch → ............"
+       "speak": "9  watch → ............",
+       "speakAnswer": "watching"
       },
       {
        "prompt": "10  wear → ............",
        "answer": "wearing",
        "promptUz": "Oddiy -ing",
        "whyUz": "1-qoida: oddiy -ing. 'ea' — ikki unli, ikkilanish yo'q.",
-       "speak": "10  wear → ............"
+       "speak": "10  wear → ............",
+       "speakAnswer": "wearing"
       }
      ]
     },
@@ -4395,61 +4673,71 @@
        "prompt": "2  They are wearing heavy jackets. — INKOR:",
        "answer": "They aren't wearing heavy jackets.",
        "promptUz": "are → aren't",
-       "whyUz": "Ko'plik ega → ARE → AREN'T."
+       "whyUz": "Ko'plik ega → ARE → AREN'T.",
+       "speakAnswer": "They aren't wearing heavy jackets."
       },
       {
        "prompt": "2  They are wearing heavy jackets. — SO'ROQ:",
        "answer": "Are they wearing heavy jackets?",
        "promptUz": "'are' oldinga chiqadi",
-       "whyUz": "'Are' + ega + fe'l-ing?"
+       "whyUz": "'Are' + ega + fe'l-ing?",
+       "speakAnswer": "Are they wearing heavy jackets?"
       },
       {
        "prompt": "3  You are making a sandcastle. — INKOR:",
        "answer": "You aren't making a sandcastle.",
        "promptUz": "are → aren't",
-       "whyUz": "'you' → ARE → AREN'T."
+       "whyUz": "'you' → ARE → AREN'T.",
+       "speakAnswer": "You aren't making a sandcastle."
       },
       {
        "prompt": "3  You are making a sandcastle. — SO'ROQ:",
        "answer": "Are you making a sandcastle?",
        "promptUz": "'are' oldinga chiqadi",
-       "whyUz": "'Are you ...?' — javob: Yes, I am. / No, I'm not."
+       "whyUz": "'Are you ...?' — javob: Yes, I am. / No, I'm not.",
+       "speakAnswer": "Are you making a sandcastle?"
       },
       {
        "prompt": "4  She is decorating the Christmas tree. — INKOR:",
        "answer": "She isn't decorating the Christmas tree.",
        "promptUz": "is → isn't",
-       "whyUz": "'she' → IS → ISN'T."
+       "whyUz": "'she' → IS → ISN'T.",
+       "speakAnswer": "She isn't decorating the Christmas tree."
       },
       {
        "prompt": "4  She is decorating the Christmas tree. — SO'ROQ:",
        "answer": "Is she decorating the Christmas tree?",
        "promptUz": "'is' oldinga chiqadi",
-       "whyUz": "'Is she ...?' — javob: Yes, she is. / No, she isn't."
+       "whyUz": "'Is she ...?' — javob: Yes, she is. / No, she isn't.",
+       "speakAnswer": "Is she decorating the Christmas tree?"
       },
       {
        "prompt": "5  It is raining today. — INKOR:",
        "answer": "It isn't raining today.",
        "promptUz": "is → isn't",
-       "whyUz": "Ob-havo gaplarida ega DOIM 'it' → IS → ISN'T."
+       "whyUz": "Ob-havo gaplarida ega DOIM 'it' → IS → ISN'T.",
+       "speakAnswer": "It isn't raining today."
       },
       {
        "prompt": "5  It is raining today. — SO'ROQ:",
        "answer": "Is it raining today?",
        "promptUz": "'is' oldinga chiqadi",
-       "whyUz": "'Is it raining?' — ob-havo haqidagi eng ko'p ishlatiladigan savol."
+       "whyUz": "'Is it raining?' — ob-havo haqidagi eng ko'p ishlatiladigan savol.",
+       "speakAnswer": "Is it raining today?"
       },
       {
        "prompt": "6  I'm going on a picnic. — INKOR:",
        "answer": "I'm not going on a picnic.",
        "promptUz": "'I' uchun maxsus shakl",
-       "whyUz": "'I am' inkori DOIM 'I'm not'.\n'I amn't' — ingliz tilida YO'Q shakl."
+       "whyUz": "'I am' inkori DOIM 'I'm not'.\n'I amn't' — ingliz tilida YO'Q shakl.",
+       "speakAnswer": "I'm not going on a picnic."
       },
       {
        "prompt": "6  I'm going on a picnic. — SO'ROQ:",
        "answer": "Am I going on a picnic?",
        "promptUz": "'am' oldinga chiqadi",
-       "whyUz": "'Am I ...?' — 'am' egadan oldinga chiqadi.\n'go ON a picnic' — 'on' predlogi shart."
+       "whyUz": "'Am I ...?' — 'am' egadan oldinga chiqadi.\n'go ON a picnic' — 'on' predlogi shart.",
+       "speakAnswer": "Am I going on a picnic?"
       }
      ]
     }
@@ -4478,37 +4766,43 @@
        "prompt": "7  He is sunbathing. — INKOR:",
        "answer": "He isn't sunbathing.",
        "promptUz": "is → isn't",
-       "whyUz": "'he' → IS → ISN'T.\n'sunbathe' → 'sunbathing' (-e tushdi)."
+       "whyUz": "'he' → IS → ISN'T.\n'sunbathe' → 'sunbathing' (-e tushdi).",
+       "speakAnswer": "He isn't sunbathing."
       },
       {
        "prompt": "7  He is sunbathing. — SO'ROQ:",
        "answer": "Is he sunbathing?",
        "promptUz": "'is' oldinga chiqadi",
-       "whyUz": "'Is he ...?' — javob: Yes, he is. / No, he isn't."
+       "whyUz": "'Is he ...?' — javob: Yes, he is. / No, he isn't.",
+       "speakAnswer": "Is he sunbathing?"
       },
       {
        "prompt": "8  They are listening to music. — INKOR:",
        "answer": "They aren't listening to music.",
        "promptUz": "are → aren't",
-       "whyUz": "Ko'plik ega → ARE → AREN'T.\n'listen TO music' — 'to' predlogi shart."
+       "whyUz": "Ko'plik ega → ARE → AREN'T.\n'listen TO music' — 'to' predlogi shart.",
+       "speakAnswer": "They aren't listening to music."
       },
       {
        "prompt": "8  They are listening to music. — SO'ROQ:",
        "answer": "Are they listening to music?",
        "promptUz": "'are' oldinga chiqadi",
-       "whyUz": "'Are they ...?' — javob: Yes, they are. / No, they aren't."
+       "whyUz": "'Are they ...?' — javob: Yes, they are. / No, they aren't.",
+       "speakAnswer": "Are they listening to music?"
       },
       {
        "prompt": "9  We are swimming. — INKOR:",
        "answer": "We aren't swimming.",
        "promptUz": "are → aren't",
-       "whyUz": "'we' → ARE → AREN'T.\n'swim' → 'swimming' (m ikkilandi)."
+       "whyUz": "'we' → ARE → AREN'T.\n'swim' → 'swimming' (m ikkilandi).",
+       "speakAnswer": "We aren't swimming."
       },
       {
        "prompt": "9  We are swimming. — SO'ROQ:",
        "answer": "Are we swimming?",
        "promptUz": "'are' oldinga chiqadi",
-       "whyUz": "'Are we ...?' — javob: Yes, we are. / No, we aren't."
+       "whyUz": "'Are we ...?' — javob: Yes, we are. / No, we aren't.",
+       "speakAnswer": "Are we swimming?"
       }
      ]
     },
@@ -4528,35 +4822,40 @@
        "answer": "is painting",
        "promptUz": "Molbert oldida mo'yqalam bilan",
        "whyUz": "'to paint a picture' = rasm chizmoq (bo'yoq bilan).\n'paint' → 'painting' (oddiy -ing).\nBirlik ega → IS.",
-       "speak": "2  She ............ a picture."
+       "speak": "2  She ............ a picture.",
+       "speakAnswer": "is painting"
       },
       {
        "prompt": "3  She ............ the car.",
        "answer": "is washing",
        "promptUz": "Suv bilan tozalash",
        "whyUz": "'to wash the car' = mashinani yuvmoq.\n'wash' → 'washing' (oddiy -ing).",
-       "speak": "3  She ............ the car."
+       "speak": "3  She ............ the car.",
+       "speakAnswer": "is washing"
       },
       {
        "prompt": "4  They ............ a book.",
        "answer": "are reading",
        "promptUz": "Ikki kishi katta kitob ustida",
        "whyUz": "Ko'plik ega → ARE.\n'read' → 'reading' (oddiy -ing).",
-       "speak": "4  They ............ a book."
+       "speak": "4  They ............ a book.",
+       "speakAnswer": "are reading"
       },
       {
        "prompt": "5  He ............ the guitar.",
        "answer": "is playing",
        "promptUz": "Cholg'u asbobi",
        "whyUz": "'play THE guitar' — cholg'u asbobi oldida THE shart.\n'play' → 'playing' (oddiy -ing).",
-       "speak": "5  He ............ the guitar."
+       "speak": "5  He ............ the guitar.",
+       "speakAnswer": "is playing"
       },
       {
        "prompt": "6  They ............ .",
        "answer": "are dancing",
        "promptUz": "Qo'l ushlashib harakat qilish",
        "whyUz": "Ko'plik ega → ARE.\n'dance' → 'dancing' (-e TUSHDI).",
-       "speak": "6  They ............ ."
+       "speak": "6  They ............ .",
+       "speakAnswer": "are dancing"
       }
      ]
     },
@@ -4576,63 +4875,72 @@
        "answer": "they are",
        "promptUz": "Tasdiq javobda qisqartma yo'q",
        "whyUz": "'Are they ...?' → 'Yes, they are.'\n'Yes, they're' XATO.",
-       "speak": "2  A: Are they watching TV?  B: Yes, ............"
+       "speak": "2  A: Are they watching TV?  B: Yes, ............",
+       "speakAnswer": "they are"
       },
       {
        "prompt": "3  A: Is she driving a car?  B: No, ............",
        "answer": "she isn't",
        "promptUz": "is → isn't",
        "whyUz": "'Is she ...?' → 'No, she isn't.'",
-       "speak": "3  A: Is she driving a car?  B: No, ............"
+       "speak": "3  A: Is she driving a car?  B: No, ............",
+       "speakAnswer": "she isn't"
       },
       {
        "prompt": "4  A: Are you listening to music?  B: Yes, ............",
        "answer": "I am",
        "promptUz": "Savol SIZGA qaratilgan",
        "whyUz": "'Are YOU ...?' → javobda 'I' ishlatiladi: 'Yes, I am.'\n'Yes, you are' XATO.\n'Yes, I'm' ham XATO — tasdiqda qisqartma yo'q.",
-       "speak": "4  A: Are you listening to music?  B: Yes, ............"
+       "speak": "4  A: Are you listening to music?  B: Yes, ............",
+       "speakAnswer": "I am"
       },
       {
        "prompt": "5  A: Are we playing the violin?  B: No, ............",
        "answer": "we aren't",
        "promptUz": "'we' bilan javob",
        "whyUz": "'Are WE ...?' → 'No, we aren't.'\n'a violin' = skripka.",
-       "speak": "5  A: Are we playing the violin?  B: No, ............"
+       "speak": "5  A: Are we playing the violin?  B: No, ............",
+       "speakAnswer": "we aren't"
       },
       {
        "prompt": "6  A: Is it snowing today?  B: Yes, ............",
        "answer": "it is",
        "promptUz": "Ob-havo — ega 'it'",
        "whyUz": "'Is IT ...?' → 'Yes, it is.'\n'Yes, it's' XATO.",
-       "speak": "6  A: Is it snowing today?  B: Yes, ............"
+       "speak": "6  A: Is it snowing today?  B: Yes, ............",
+       "speakAnswer": "it is"
       },
       {
        "prompt": "7  A: Are you playing computer games?  B: No, ............",
        "answer": "I'm not",
        "promptUz": "Savol SIZGA qaratilgan, inkor javob",
        "whyUz": "'Are YOU ...?' → 'No, I'm not.'\n'I amn't' — YO'Q shakl.",
-       "speak": "7  A: Are you playing computer games?  B: No, ............"
+       "speak": "7  A: Are you playing computer games?  B: No, ............",
+       "speakAnswer": "I'm not"
       },
       {
        "prompt": "8  A: Is he wearing a jumper?  B: Yes, ............",
        "answer": "he is",
        "promptUz": "Tasdiq javobda qisqartma yo'q",
        "whyUz": "'Is he ...?' → 'Yes, he is.'\n'a jumper' = jemper, sviter (britancha; amerikacha 'a sweater').",
-       "speak": "8  A: Is he wearing a jumper?  B: Yes, ............"
+       "speak": "8  A: Is he wearing a jumper?  B: Yes, ............",
+       "speakAnswer": "he is"
       },
       {
        "prompt": "9  A: Are they picking flowers?  B: No, ............",
        "answer": "they aren't",
        "promptUz": "are → aren't",
        "whyUz": "'Are they ...?' → 'No, they aren't.'\n'to pick flowers' = gul termoq (Coursebook 48-bet).",
-       "speak": "9  A: Are they picking flowers?  B: No, ............"
+       "speak": "9  A: Are they picking flowers?  B: No, ............",
+       "speakAnswer": "they aren't"
       },
       {
        "prompt": "10  A: Are we going to the beach?  B: Yes, ............",
        "answer": "we are",
        "promptUz": "'we' bilan javob, qisqartmasiz",
        "whyUz": "'Are WE ...?' → 'Yes, we are.'\n'go TO the beach' — 'to' predlogi shart.",
-       "speak": "10  A: Are we going to the beach?  B: Yes, ............"
+       "speak": "10  A: Are we going to the beach?  B: Yes, ............",
+       "speakAnswer": "we are"
       }
      ]
     }
@@ -4662,28 +4970,32 @@
        "answer": "drives",
        "promptUz": "'every morning' — odat belgisi",
        "whyUz": "'every morning' → PRESENT SIMPLE (kundalik tartib).\n'George' — birlik 3-shaxs → driveS.",
-       "speak": "12  George ............ (drive) to work every morning."
+       "speak": "12  George ............ (drive) to work every morning.",
+       "speakAnswer": "drives"
       },
       {
        "prompt": "13  He ............ (walk) in the park now.",
        "answer": "is walking",
        "promptUz": "'now' — hozir",
        "whyUz": "'now' → PRESENT CONTINUOUS.\n'he' → IS + walking (oddiy -ing).",
-       "speak": "13  He ............ (walk) in the park now."
+       "speak": "13  He ............ (walk) in the park now.",
+       "speakAnswer": "is walking"
       },
       {
        "prompt": "14  Julie sometimes ............ (wear) long skirts.",
        "answer": "wears",
        "promptUz": "'sometimes' — chastota ravishi",
        "whyUz": "'sometimes' → PRESENT SIMPLE (odat).\n'Julie' — birlik 3-shaxs → wearS.\n'a skirt' = yubka.",
-       "speak": "14  Julie sometimes ............ (wear) long skirts."
+       "speak": "14  Julie sometimes ............ (wear) long skirts.",
+       "speakAnswer": "wears"
       },
       {
        "prompt": "15  It ............ (snow) heavily today.",
        "answer": "is snowing",
        "promptUz": "'today' — bugun sodir bo'layotgan",
        "whyUz": "'today' → PRESENT CONTINUOUS (bugun sodir bo'layotgan hodisa).\nOb-havo gaplarida ega DOIM 'it' → IS + snowing.",
-       "speak": "15  It ............ (snow) heavily today."
+       "speak": "15  It ............ (snow) heavily today.",
+       "speakAnswer": "is snowing"
       }
      ]
     },
@@ -4703,70 +5015,80 @@
        "answer": "am writing",
        "promptUz": "Xatni AYNAN HOZIR yozyapti",
        "whyUz": "Xat yozish — hozir sodir bo'layotgan ish → PRESENT CONTINUOUS.\n'write' → 'writing' (-e TUSHDI).",
-       "speak": "I 1) ............ (write) to you from Canada."
+       "speak": "I 1) ............ (write) to you from Canada.",
+       "speakAnswer": "am writing"
       },
       {
        "prompt": "I 2) ............ (be) on holiday with my brother.",
        "answer": "am",
        "promptUz": "'be' fe'li -ing OLMAYDI",
        "whyUz": "'be' — HOLAT fe'li, -ing shaklida ishlatilmaydi.\n'I AM on holiday' = ta'tildaman.\n'be ON holiday' — 'on' predlogi shart.",
-       "speak": "I 2) ............ (be) on holiday with my brother."
+       "speak": "I 2) ............ (be) on holiday with my brother.",
+       "speakAnswer": "am"
       },
       {
        "prompt": "We 3) ............ (visit) my parents in beautiful Montreal.",
        "answer": "are visiting",
        "promptUz": "Vaqtinchalik holat — hozir mehmonda",
        "whyUz": "Ta'til davomida davom etayotgan ish → PRESENT CONTINUOUS.\n'we' → ARE + visiting.\nDIQQAT: 'visit' da undosh IKKILANMAYDI — urg'u birinchi bo'g'inda (VIS-it).",
-       "speak": "We 3) ............ (visit) my parents in beautiful Montreal."
+       "speak": "We 3) ............ (visit) my parents in beautiful Montreal.",
+       "speakAnswer": "are visiting"
       },
       {
        "prompt": "It usually 4) ............ (snow) here this time of year.",
        "answer": "snows",
        "promptUz": "'usually' — odat belgisi",
        "whyUz": "'usually' → PRESENT SIMPLE (har yili takrorlanadigan holat).\nEga 'it' — birlik → snowS.",
-       "speak": "It usually 4) ............ (snow) here this time of year."
+       "speak": "It usually 4) ............ (snow) here this time of year.",
+       "speakAnswer": "snows"
       },
       {
        "prompt": "... but the weather is lovely and the sun 5) ............ (shine) today.",
        "answer": "is shining",
        "promptUz": "'today' — bugun",
        "whyUz": "'today' → PRESENT CONTINUOUS (bugungi holat).\n'the sun' — birlik → IS + shining (-e TUSHDI).\n4 va 5-bandni solishtiring: odatda qor yog'adi, LEKIN bugun quyoshli.",
-       "speak": "... but the weather is lovely and the sun 5) ............ (shine) today."
+       "speak": "... but the weather is lovely and the sun 5) ............ (shine) today.",
+       "speakAnswer": "is shining"
       },
       {
        "prompt": "My brother and I 6) ............ (be) very busy this week.",
        "answer": "are",
        "promptUz": "'be' fe'li -ing OLMAYDI",
        "whyUz": "'be' — holat fe'li.\n'My brother and I' = biz → ARE.\n'busy' = band.",
-       "speak": "My brother and I 6) ............ (be) very busy this week."
+       "speak": "My brother and I 6) ............ (be) very busy this week.",
+       "speakAnswer": "are"
       },
       {
        "prompt": "There is a big family dinner on Tuesday and we 7) ............ (try) very hard to have everything ready.",
        "answer": "are trying",
        "promptUz": "'this week' — shu kunlarda davom etyapti",
        "whyUz": "Bu hafta davom etayotgan ish → PRESENT CONTINUOUS.\n'try' → 'trying' (-y O'ZGARMAYDI -ing oldidan).\n'try hard' = juda harakat qilmoq.",
-       "speak": "There is a big family dinner on Tuesday and we 7) ............ (try) very hard to have everything ready."
+       "speak": "There is a big family dinner on Tuesday and we 7) ............ (try) very hard to have everything ready.",
+       "speakAnswer": "are trying"
       },
       {
        "prompt": "My brother 8) ............ (sleep) now.",
        "answer": "is sleeping",
        "promptUz": "'now' — hozir",
        "whyUz": "'now' → PRESENT CONTINUOUS.\n'my brother' — birlik → IS + sleeping.",
-       "speak": "My brother 8) ............ (sleep) now."
+       "speak": "My brother 8) ............ (sleep) now.",
+       "speakAnswer": "is sleeping"
       },
       {
        "prompt": "... and I 9) ............ (listen) to music.",
        "answer": "am listening",
        "promptUz": "Hozir sodir bo'layotgan ish",
        "whyUz": "8-band bilan bir paytda sodir bo'lyapti → PRESENT CONTINUOUS.\n'I' → AM + listening.",
-       "speak": "... and I 9) ............ (listen) to music."
+       "speak": "... and I 9) ............ (listen) to music.",
+       "speakAnswer": "am listening"
       },
       {
        "prompt": "We 10) ............ (have) a really good time.",
        "answer": "are having",
        "promptUz": "'have a good time' — HARAKAT, -ing mumkin",
        "whyUz": "'have a good time' = yaxshi vaqt o'tkazmoq — bu HARAKAT,\nshuning uchun -ing shakli MUMKIN.\n'we' → ARE + having (-e TUSHDI).\nDIQQAT: 'have' egalik ma'nosida bo'lsa -ing OLMAYDI.",
-       "speak": "We 10) ............ (have) a really good time."
+       "speak": "We 10) ............ (have) a really good time.",
+       "speakAnswer": "are having"
       }
      ]
     },
@@ -4789,7 +5111,8 @@
         "a  Frank plays football every weekend.",
         "b  Frank is playing football every weekend."
        ],
-       "whyUz": "'every weekend' → PRESENT SIMPLE (odat).\n'Frank' — birlik 3-shaxs → playS."
+       "whyUz": "'every weekend' → PRESENT SIMPLE (odat).\n'Frank' — birlik 3-shaxs → playS.",
+       "speakAnswer": "a  Frank plays football every weekend."
       },
       {
        "prompt": "3  Qaysi biri to'g'ri?",
@@ -4799,7 +5122,8 @@
         "a  The sun is shining at the moment.",
         "b  The sun shines at the moment."
        ],
-       "whyUz": "'at the moment' → PRESENT CONTINUOUS."
+       "whyUz": "'at the moment' → PRESENT CONTINUOUS.",
+       "speakAnswer": "a  The sun is shining at the moment."
       },
       {
        "prompt": "4  Qaysi biri to'g'ri?",
@@ -4809,7 +5133,8 @@
         "b  Jessica plays the drums in her free time.",
         "a  Jessica is playing the drums in her free time."
        ],
-       "whyUz": "'in her free time' = bo'sh vaqtida — bu ODAT → PRESENT SIMPLE.\n'the drums' = barabanlar. Cholg'u asbobi oldida THE shart."
+       "whyUz": "'in her free time' = bo'sh vaqtida — bu ODAT → PRESENT SIMPLE.\n'the drums' = barabanlar. Cholg'u asbobi oldida THE shart.",
+       "speakAnswer": "b  Jessica plays the drums in her free time."
       },
       {
        "prompt": "5  Qaysi biri to'g'ri?",
@@ -4819,7 +5144,8 @@
         "a  James usually wears a shirt and tie.",
         "b  James is usually wearing a shirt and tie."
        ],
-       "whyUz": "'usually' → PRESENT SIMPLE.\n'a shirt and tie' = ko'ylak va galstuk."
+       "whyUz": "'usually' → PRESENT SIMPLE.\n'a shirt and tie' = ko'ylak va galstuk.",
+       "speakAnswer": "a  James usually wears a shirt and tie."
       },
       {
        "prompt": "6  Qaysi biri to'g'ri?",
@@ -4829,7 +5155,8 @@
         "b  They are doing their homework now.",
         "a  They do their homework now."
        ],
-       "whyUz": "'now' → PRESENT CONTINUOUS.\n'do homework' = uy vazifasini bajarmoq → 'are DOING'."
+       "whyUz": "'now' → PRESENT CONTINUOUS.\n'do homework' = uy vazifasini bajarmoq → 'are DOING'.",
+       "speakAnswer": "b  They are doing their homework now."
       },
       {
        "prompt": "7  Qaysi biri to'g'ri?",
@@ -4839,7 +5166,8 @@
         "a  Charles catches the bus to work every morning.",
         "b  Charles is catching the bus to work every morning."
        ],
-       "whyUz": "'every morning' → PRESENT SIMPLE.\n'Charles' — birlik 3-shaxs → catchES (-ch bilan tugagani uchun -ES).\n'catch the bus' = avtobusga chiqmoq, avtobusni ushlamoq."
+       "whyUz": "'every morning' → PRESENT SIMPLE.\n'Charles' — birlik 3-shaxs → catchES (-ch bilan tugagani uchun -ES).\n'catch the bus' = avtobusga chiqmoq, avtobusni ushlamoq.",
+       "speakAnswer": "a  Charles catches the bus to work every morning."
       },
       {
        "prompt": "8  Qaysi biri to'g'ri?",
@@ -4849,7 +5177,8 @@
         "a  The children are making a snowman at the moment.",
         "b  The children make a snowman at the moment."
        ],
-       "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'the children' — ko'plik → ARE."
+       "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'the children' — ko'plik → ARE.",
+       "speakAnswer": "a  The children are making a snowman at the moment."
       },
       {
        "prompt": "9  Qaysi biri to'g'ri?",
@@ -4859,7 +5188,8 @@
         "b  It is raining in Prague today.",
         "a  It rains in Prague today."
        ],
-       "whyUz": "'today' → PRESENT CONTINUOUS.\n'It rains in Prague' (todaysiz) — umumiy fakt bo'lardi."
+       "whyUz": "'today' → PRESENT CONTINUOUS.\n'It rains in Prague' (todaysiz) — umumiy fakt bo'lardi.",
+       "speakAnswer": "b  It is raining in Prague today."
       },
       {
        "prompt": "10  Qaysi biri to'g'ri?",
@@ -4869,7 +5199,8 @@
         "a  I listen to music every evening.",
         "b  I am listening to music every evening."
        ],
-       "whyUz": "'every evening' → PRESENT SIMPLE (odat).\n'I' bilan fe'l ASOS shaklida — -s QO'SHILMAYDI."
+       "whyUz": "'every evening' → PRESENT SIMPLE (odat).\n'I' bilan fe'l ASOS shaklida — -s QO'SHILMAYDI.",
+       "speakAnswer": "a  I listen to music every evening."
       }
      ]
     },
@@ -4889,42 +5220,48 @@
        "answer": "wear",
        "promptUz": "Kiyim bilan keladigan fe'l",
        "whyUz": "'wear heavy jackets' = qalin kurtka kiymoq.\n'we' — ko'plik → fe'l ASOS shaklida ('wears' XATO).",
-       "speak": "We 1) ............ heavy jackets and gloves ..."
+       "speak": "We 1) ............ heavy jackets and gloves ...",
+       "speakAnswer": "wear"
       },
       {
        "prompt": "... and 2) ............ outside.",
        "answer": "go",
        "promptUz": "Tashqariga chiqish fe'li",
        "whyUz": "'go outside' = tashqariga chiqmoq.\nEga hali ham 'we' → asos shakl.",
-       "speak": "... and 2) ............ outside."
+       "speak": "... and 2) ............ outside.",
+       "speakAnswer": "go"
       },
       {
        "prompt": "Our mum 3) ............ us from the window ...",
        "answer": "watches",
        "promptUz": "Derazadan kuzatish; ega BIRLIK",
        "whyUz": "'watch us from the window' = derazadan bizni kuzatmoq.\n'our mum' — birlik 3-shaxs → watchES (-ch → -ES).",
-       "speak": "Our mum 3) ............ us from the window ..."
+       "speak": "Our mum 3) ............ us from the window ...",
+       "speakAnswer": "watches"
       },
       {
        "prompt": "... and our dad 4) ............ hot chocolate for everybody.",
        "answer": "makes",
        "promptUz": "Ichimlik tayyorlash; ega BIRLIK",
        "whyUz": "'make hot chocolate' = issiq shokolad tayyorlamoq.\n'our dad' — birlik 3-shaxs → makeS.",
-       "speak": "... and our dad 4) ............ hot chocolate for everybody."
+       "speak": "... and our dad 4) ............ hot chocolate for everybody.",
+       "speakAnswer": "makes"
       },
       {
        "prompt": "Sometimes our mum comes outside and 5) ............ in the snow with us.",
        "answer": "plays",
        "promptUz": "Qorda nima qiladi?; ega BIRLIK",
        "whyUz": "'play in the snow' = qorda o'ynamoq.\n'our mum' — birlik → playS (unli + y → faqat -S).\nDIQQAT: 'comes' bilan bir xil egaga tegishli — ikkalasi ham -s oladi.",
-       "speak": "Sometimes our mum comes outside and 5) ............ in the snow with us."
+       "speak": "Sometimes our mum comes outside and 5) ............ in the snow with us.",
+       "speakAnswer": "plays"
       },
       {
        "prompt": "We 6) ............ a great time!",
        "answer": "have",
        "promptUz": "'a great time' bilan keladigan fe'l",
        "whyUz": "'have a great time' = ajoyib vaqt o'tkazmoq.\n'we' — ko'plik → asos shakl ('has' XATO).",
-       "speak": "We 6) ............ a great time!"
+       "speak": "We 6) ............ a great time!",
+       "speakAnswer": "have"
       }
      ]
     },
@@ -4944,56 +5281,64 @@
        "answer": "is sunbathing",
        "promptUz": "'at the moment' — hozir; ega birlik",
        "whyUz": "'at the moment' → PRESENT CONTINUOUS.\n'Mum' — birlik → IS + sunbathing (-e TUSHDI).",
-       "speak": "Mum 1) ............ (sunbathe) at the moment ..."
+       "speak": "Mum 1) ............ (sunbathe) at the moment ...",
+       "speakAnswer": "is sunbathing"
       },
       {
        "prompt": "... and dad 2) ............ (read) a book.",
        "answer": "is reading",
        "promptUz": "Bir paytda sodir bo'layotgan ish",
        "whyUz": "'dad' — birlik → IS + reading (oddiy -ing).",
-       "speak": "... and dad 2) ............ (read) a book."
+       "speak": "... and dad 2) ............ (read) a book.",
+       "speakAnswer": "is reading"
       },
       {
        "prompt": "My sister 3) ............ (not/swim) now.",
        "answer": "isn't swimming",
        "promptUz": "INKOR shakl kerak",
        "whyUz": "'not' berilgan → INKOR: IS + NOT = ISN'T.\n'swim' → 'swimming' (m IKKILANADI).",
-       "speak": "My sister 3) ............ (not/swim) now."
+       "speak": "My sister 3) ............ (not/swim) now.",
+       "speakAnswer": "isn't swimming"
       },
       {
        "prompt": "She 4) ............ (have) coffee with a friend.",
        "answer": "is having",
        "promptUz": "'have coffee' — harakat, -ing mumkin",
        "whyUz": "'have coffee' = qahva ichmoq — bu HARAKAT → -ing MUMKIN.\n'she' — birlik → IS + having (-e TUSHDI).",
-       "speak": "She 4) ............ (have) coffee with a friend."
+       "speak": "She 4) ............ (have) coffee with a friend.",
+       "speakAnswer": "is having"
       },
       {
        "prompt": "I 5) ............ (wear) my new swimming-costume ...",
        "answer": "am wearing",
        "promptUz": "'I' bilan qaysi 'be' shakli?",
        "whyUz": "'I' → AM + wearing (oddiy -ing).",
-       "speak": "I 5) ............ (wear) my new swimming-costume ..."
+       "speak": "I 5) ............ (wear) my new swimming-costume ...",
+       "speakAnswer": "am wearing"
       },
       {
        "prompt": "... and I 6) ............ (make) a sandcastle.",
        "answer": "am making",
        "promptUz": "'I' bilan; -e tushadi",
        "whyUz": "'I' → AM + making (-e TUSHDI).",
-       "speak": "... and I 6) ............ (make) a sandcastle."
+       "speak": "... and I 6) ............ (make) a sandcastle.",
+       "speakAnswer": "am making"
       },
       {
        "prompt": "Everyone 7) ............ (have) fun ...",
        "answer": "is having",
        "promptUz": "'everyone' — birlikmi yoki ko'plikmi?",
        "whyUz": "'everyone' — ma'nosi ko'plik, lekin GRAMMATIK jihatdan BIRLIK → IS.\n'have fun' = zavqlanmoq (harakat) → -ing mumkin.\n'Everyone are having' XATO.",
-       "speak": "Everyone 7) ............ (have) fun ..."
+       "speak": "Everyone 7) ............ (have) fun ...",
+       "speakAnswer": "is having"
       },
       {
        "prompt": "... and 8) ............ (enjoy) the great weather!",
        "answer": "is enjoying",
        "promptUz": "Ega hali ham 'everyone'",
        "whyUz": "Ega o'zgarmagan ('everyone') → IS + enjoying.\n'enjoy' → 'enjoying' (-y O'ZGARMAYDI).",
-       "speak": "... and 8) ............ (enjoy) the great weather!"
+       "speak": "... and 8) ............ (enjoy) the great weather!",
+       "speakAnswer": "is enjoying"
       }
      ]
     }
@@ -5060,56 +5405,64 @@
        "answer": "Those pencils are Tracy's.",
        "promptUz": "that → those; is → are",
        "whyUz": "that → THOSE, pencil → PENCILS, is → ARE.\n'Tracy's' o'zgarmaydi — u tagiga chizilmagan.",
-       "speak": "3  That pencil is Tracy's."
+       "speak": "3  That pencil is Tracy's.",
+       "speakAnswer": "Those pencils are Tracy's."
       },
       {
        "prompt": "4  This flower smells lovely.",
        "answer": "These flowers smell lovely.",
        "promptUz": "this → these; fe'ldan -s tushadi",
        "whyUz": "This → THESE, flower → FLOWERS, smells → SMELL.\nEga ko'plikka aylandi → 3-shaxs -S TUSHADI.\n'to smell' = hidlanmoq; 'smell lovely' = yoqimli hid taratmoq.",
-       "speak": "4  This flower smells lovely."
+       "speak": "4  This flower smells lovely.",
+       "speakAnswer": "These flowers smell lovely."
       },
       {
        "prompt": "5  Who is that girl?",
        "answer": "Who are those girls?",
        "promptUz": "that → those; is → are",
        "whyUz": "that → THOSE, girl → GIRLS, is → ARE.\n'Who' o'zgarmaydi.",
-       "speak": "5  Who is that girl?"
+       "speak": "5  Who is that girl?",
+       "speakAnswer": "Who are those girls?"
       },
       {
        "prompt": "6  This shop is open until 5:30 pm.",
        "answer": "These shops are open until 5:30 pm.",
        "promptUz": "this → these; is → are",
        "whyUz": "This → THESE, shop → SHOPS, is → ARE.\n'until' = ...gacha.",
-       "speak": "6  This shop is open until 5:30 pm."
+       "speak": "6  This shop is open until 5:30 pm.",
+       "speakAnswer": "These shops are open until 5:30 pm."
       },
       {
        "prompt": "7  That car is expensive.",
        "answer": "Those cars are expensive.",
        "promptUz": "that → those; is → are",
        "whyUz": "that → THOSE, car → CARS, is → ARE.\n'expensive' = qimmat (sifat — o'zgarmaydi).",
-       "speak": "7  That car is expensive."
+       "speak": "7  That car is expensive.",
+       "speakAnswer": "Those cars are expensive."
       },
       {
        "prompt": "8  This bus goes to London.",
        "answer": "These buses go to London.",
        "promptUz": "bus → -es; goes → go",
        "whyUz": "This → THESE, bus → BUSES (-s bilan tugagani uchun -ES),\ngoes → GO (3-shaxs -es TUSHADI).",
-       "speak": "8  This bus goes to London."
+       "speak": "8  This bus goes to London.",
+       "speakAnswer": "These buses go to London."
       },
       {
        "prompt": "9  That painting is very famous.",
        "answer": "Those paintings are very famous.",
        "promptUz": "that → those; is → are",
        "whyUz": "that → THOSE, painting → PAINTINGS, is → ARE.\n'a painting' = kartina, rasm; 'famous' = mashhur.",
-       "speak": "9  That painting is very famous."
+       "speak": "9  That painting is very famous.",
+       "speakAnswer": "Those paintings are very famous."
       },
       {
        "prompt": "10  This dog is friendly.",
        "answer": "These dogs are friendly.",
        "promptUz": "this → these; is → are",
        "whyUz": "This → THESE, dog → DOGS, is → ARE.\n'friendly' = do'stona (sifat — o'zgarmaydi).",
-       "speak": "10  This dog is friendly."
+       "speak": "10  This dog is friendly.",
+       "speakAnswer": "These dogs are friendly."
       }
      ]
     },
@@ -5132,7 +5485,8 @@
         "in"
        ],
        "whyUz": "Hafta kunlari oldida ON.\n'Let's ...' = ...aylik (taklif).",
-       "speak": "1  Let's go to the cinema ............ Sunday."
+       "speak": "1  Let's go to the cinema ............ Sunday.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "2  I start school ............ September.",
@@ -5142,7 +5496,8 @@
         "on"
        ],
        "whyUz": "Oy nomlari oldida IN.\n'to start school' = o'qishni boshlamoq.",
-       "speak": "2  I start school ............ September."
+       "speak": "2  I start school ............ September.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "3  She was born ............ 19th May, 1974.",
@@ -5152,7 +5507,8 @@
         "in"
        ],
        "whyUz": "ANIQ SANA oldida ON: on 19th May.\nDIQQAT: faqat yil bo'lsa IN bo'lardi: 'in 1974'.\nSana + oy bo'lsa — ON.\n'to be born' = tug'ilmoq.",
-       "speak": "3  She was born ............ 19th May, 1974."
+       "speak": "3  She was born ............ 19th May, 1974.",
+       "speakAnswer": "on"
       },
       {
        "prompt": "4  Kevin goes to work ............ the morning.",
@@ -5162,7 +5518,8 @@
         "on"
        ],
        "whyUz": "'IN the morning/afternoon/evening' — umumiy kun qismi.\nISTISNO: 'AT night' (the yo'q, at bilan).",
-       "speak": "4  Kevin goes to work ............ the morning."
+       "speak": "4  Kevin goes to work ............ the morning.",
+       "speakAnswer": "in"
       },
       {
        "prompt": "5  They play tennis ............ Wednesday evenings.",
@@ -5172,7 +5529,8 @@
         "in"
        ],
        "whyUz": "Hafta KUNI aytilgani uchun ON — 'in the evening' bo'lsa ham,\nkun qo'shilsa ON g'olib chiqadi: ON Wednesday evenings.\nKo'plik ('evenings') — har chorshanba takrorlanishini bildiradi.",
-       "speak": "5  They play tennis ............ Wednesday evenings."
+       "speak": "5  They play tennis ............ Wednesday evenings.",
+       "speakAnswer": "on"
       }
      ]
     }
@@ -5202,77 +5560,88 @@
        "answer": "goes",
        "promptUz": "Ega birlik 3-shaxs",
        "whyUz": "'She' — birlik 3-shaxs → fe'lga -ES kerak: GOES.\n'often' → Present Simple to'g'ri tanlangan.",
-       "speak": "2  She often go to the beach on Sundays. → ............"
+       "speak": "2  She often go to the beach on Sundays. → ............",
+       "speakAnswer": "goes"
       },
       {
        "prompt": "3  They visits Paris every year. → ............",
        "answer": "visit",
        "promptUz": "Ega ko'plik",
        "whyUz": "'They' — ko'plik → -S QO'SHILMAYDI: VISIT.\n-s faqat he/she/it uchun.",
-       "speak": "3  They visits Paris every year. → ............"
+       "speak": "3  They visits Paris every year. → ............",
+       "speakAnswer": "visit"
       },
       {
        "prompt": "4  This house cost £400 per month to rent. → ............",
        "answer": "costs",
        "promptUz": "Ega birlik 3-shaxs",
        "whyUz": "'This house' — birlik 3-shaxs → COSTS.\n'to cost' = turmoq (narx); 'per month' = oyiga; 'to rent' = ijaraga olmoq.",
-       "speak": "4  This house cost £400 per month to rent. → ............"
+       "speak": "4  This house cost £400 per month to rent. → ............",
+       "speakAnswer": "costs"
       },
       {
        "prompt": "5  Every day, Paul catch the bus at 8 am. → ............",
        "answer": "catches",
        "promptUz": "Ega birlik; -ch bilan tugaydi",
        "whyUz": "'Paul' — birlik 3-shaxs → CATCHES (-ch → -ES).\n'Every day' → Present Simple.",
-       "speak": "5  Every day, Paul catch the bus at 8 am. → ............"
+       "speak": "5  Every day, Paul catch the bus at 8 am. → ............",
+       "speakAnswer": "catches"
       },
       {
        "prompt": "6  Jane have got red hair and blue eyes. → ............",
        "answer": "has",
        "promptUz": "'have got' ning birlik shakli",
        "whyUz": "'Jane' — birlik 3-shaxs → HAS got ('have got' XATO).",
-       "speak": "6  Jane have got red hair and blue eyes. → ............"
+       "speak": "6  Jane have got red hair and blue eyes. → ............",
+       "speakAnswer": "has"
       },
       {
        "prompt": "7  I usually writes a letter to my friend every month. → ............",
        "answer": "write",
        "promptUz": "Ega 'I'",
        "whyUz": "'I' bilan fe'l ASOS shaklida — -S QO'SHILMAYDI: WRITE.\n-s faqat he/she/it uchun.",
-       "speak": "7  I usually writes a letter to my friend every month. → ............"
+       "speak": "7  I usually writes a letter to my friend every month. → ............",
+       "speakAnswer": "write"
       },
       {
        "prompt": "8  She are driving to the beach now. → ............",
        "answer": "is",
        "promptUz": "'she' bilan qaysi 'be' shakli?",
        "whyUz": "'She' — birlik → IS driving ('are' XATO).\n'now' → Present Continuous to'g'ri tanlangan.",
-       "speak": "8  She are driving to the beach now. → ............"
+       "speak": "8  She are driving to the beach now. → ............",
+       "speakAnswer": "is"
       },
       {
        "prompt": "9  John wears black trousers and a T-shirt today. → ............",
        "answer": "is wearing",
        "promptUz": "'today' — qaysi zamon belgisi?",
        "whyUz": "'today' → PRESENT CONTINUOUS kerak: IS WEARING.\n'John wears ...' — odat bo'lardi, lekin 'today' hozirni bildiradi.\n'trousers' = shim (doim ko'plikda).",
-       "speak": "9  John wears black trousers and a T-shirt today. → ............"
+       "speak": "9  John wears black trousers and a T-shirt today. → ............",
+       "speakAnswer": "is wearing"
       },
       {
        "prompt": "10  Every summer, we goes on holiday. → ............",
        "answer": "go",
        "promptUz": "Ega 'we' — ko'plik",
        "whyUz": "'we' — ko'plik → GO ('goes' XATO).\n'go ON holiday' — 'on' predlogi shart.",
-       "speak": "10  Every summer, we goes on holiday. → ............"
+       "speak": "10  Every summer, we goes on holiday. → ............",
+       "speakAnswer": "go"
       },
       {
        "prompt": "11  These books isn't mine. → ............",
        "answer": "aren't",
        "promptUz": "'These books' — ko'plik",
        "whyUz": "'These books' — ko'plik ega → AREN'T ('isn't' XATO).\n'mine' = meniki (egalik olmoshi).",
-       "speak": "11  These books isn't mine. → ............"
+       "speak": "11  These books isn't mine. → ............",
+       "speakAnswer": "aren't"
       },
       {
        "prompt": "12  My brother haven't got long hair. → ............",
        "answer": "hasn't",
        "promptUz": "Ega birlik",
        "whyUz": "'My brother' — birlik 3-shaxs → HASN'T got ('haven't' XATO).\n'hair' — sanalmaydigan ot, doim birlikda.",
-       "speak": "12  My brother haven't got long hair. → ............"
+       "speak": "12  My brother haven't got long hair. → ............",
+       "speakAnswer": "hasn't"
       }
      ]
     },
@@ -5296,7 +5665,8 @@
         "This",
         "That"
        ],
-       "whyUz": "'pencils' — KO'PLIK → ko'rsatish olmoshi ham ko'plikda: THOSE (yoki These).\n'This' va 'That' — birlik uchun."
+       "whyUz": "'pencils' — KO'PLIK → ko'rsatish olmoshi ham ko'plikda: THOSE (yoki These).\n'This' va 'That' — birlik uchun.",
+       "speakAnswer": "Those"
       },
       {
        "prompt": "2  He ............ like fishing.",
@@ -5307,7 +5677,8 @@
         "don't",
         "isn't"
        ],
-       "whyUz": "'He' — birlik 3-shaxs → DOESN'T.\n'like' — oddiy fe'l, shuning uchun 'isn't' XATO."
+       "whyUz": "'He' — birlik 3-shaxs → DOESN'T.\n'like' — oddiy fe'l, shuning uchun 'isn't' XATO.",
+       "speakAnswer": "doesn't"
       },
       {
        "prompt": "3  We usually ............ lunch at school.",
@@ -5318,7 +5689,8 @@
         "are having",
         "has"
        ],
-       "whyUz": "'usually' → PRESENT SIMPLE ('are having' XATO).\n'We' — ko'plik → HAVE ('has' XATO)."
+       "whyUz": "'usually' → PRESENT SIMPLE ('are having' XATO).\n'We' — ko'plik → HAVE ('has' XATO).",
+       "speakAnswer": "have"
       },
       {
        "prompt": "4  There aren't any ............ in the park.",
@@ -5329,7 +5701,8 @@
         "bench",
         "benches'"
        ],
-       "whyUz": "'aren't any' — ko'plik talab qiladi → BENCHES (-ch → -ES).\n'benches'' — egalik shakli, bu yerda kerak emas."
+       "whyUz": "'aren't any' — ko'plik talab qiladi → BENCHES (-ch → -ES).\n'benches'' — egalik shakli, bu yerda kerak emas.",
+       "speakAnswer": "benches"
       },
       {
        "prompt": "5  Are there ............ biscuits left?",
@@ -5340,7 +5713,8 @@
         "some",
         "a"
        ],
-       "whyUz": "SAVOL gapda → ANY.\n'some' tasdiq gapda ishlatiladi.\n'a biscuit' = pechenye; 'left' = qolgan."
+       "whyUz": "SAVOL gapda → ANY.\n'some' tasdiq gapda ishlatiladi.\n'a biscuit' = pechenye; 'left' = qolgan.",
+       "speakAnswer": "any"
       },
       {
        "prompt": "6  Tina can't ............ well.",
@@ -5351,7 +5725,8 @@
         "dances",
         "dancing"
        ],
-       "whyUz": "'can/can't' dan keyin fe'l ASOS shaklida — 'to', '-s', '-ing' YO'Q."
+       "whyUz": "'can/can't' dan keyin fe'l ASOS shaklida — 'to', '-s', '-ing' YO'Q.",
+       "speakAnswer": "dance"
       },
       {
        "prompt": "7  \"Whose passport is this?\"  \"It's ............ .\"",
@@ -5362,7 +5737,8 @@
         "your",
         "her"
        ],
-       "whyUz": "Otsiz ishlatilgani uchun EGALIK OLMOSHI kerak → MINE.\n'your' va 'her' — egalik SIFATLARI, ular otdan oldin keladi\n(your passport, her passport)."
+       "whyUz": "Otsiz ishlatilgani uchun EGALIK OLMOSHI kerak → MINE.\n'your' va 'her' — egalik SIFATLARI, ular otdan oldin keladi\n(your passport, her passport).",
+       "speakAnswer": "mine"
       },
       {
        "prompt": "8  ............ close the window.",
@@ -5373,7 +5749,8 @@
         "Doesn't",
         "Aren't"
        ],
-       "whyUz": "BUYRUQ gapning inkori DOIM 'DON'T' bilan —\nega yo'q, shuning uchun 'doesn't' XATO."
+       "whyUz": "BUYRUQ gapning inkori DOIM 'DON'T' bilan —\nega yo'q, shuning uchun 'doesn't' XATO.",
+       "speakAnswer": "Don't"
       },
       {
        "prompt": "9  Some animals can't ............ .",
@@ -5384,7 +5761,8 @@
         "flies",
         "flying"
        ],
-       "whyUz": "'can't' dan keyin fe'l ASOS shaklida → FLY."
+       "whyUz": "'can't' dan keyin fe'l ASOS shaklida → FLY.",
+       "speakAnswer": "fly"
       },
       {
        "prompt": "10  Has James ............ a computer?",
@@ -5395,7 +5773,8 @@
         "get",
         "getting"
        ],
-       "whyUz": "'have got' savoli: HAS + ega + GOT.\n'Has James got ...?' — o'zgarmas qolip."
+       "whyUz": "'have got' savoli: HAS + ega + GOT.\n'Has James got ...?' — o'zgarmas qolip.",
+       "speakAnswer": "got"
       },
       {
        "prompt": "11  She's ............ Italian teacher.",
@@ -5406,7 +5785,8 @@
         "a",
         "–"
        ],
-       "whyUz": "'Italian' UNLI tovush bilan boshlanadi → AN.\nKasb oldida artikl SHART: 'She's teacher' XATO."
+       "whyUz": "'Italian' UNLI tovush bilan boshlanadi → AN.\nKasb oldida artikl SHART: 'She's teacher' XATO.",
+       "speakAnswer": "an"
       },
       {
        "prompt": "12  ............ tall are you?",
@@ -5417,7 +5797,8 @@
         "What",
         "Where"
        ],
-       "whyUz": "'How + sifat' — o'lchov savoli: How TALL/BIG/OLD/LONG ...?"
+       "whyUz": "'How + sifat' — o'lchov savoli: How TALL/BIG/OLD/LONG ...?",
+       "speakAnswer": "How"
       },
       {
        "prompt": "13  The farmer has some ............ .",
@@ -5428,7 +5809,8 @@
         "ducks'",
         "duck"
        ],
-       "whyUz": "'some' — sanaladigan ot bilan KO'PLIK talab qiladi → DUCKS.\n'ducks'' — egalik shakli, bu yerda kerak emas."
+       "whyUz": "'some' — sanaladigan ot bilan KO'PLIK talab qiladi → DUCKS.\n'ducks'' — egalik shakli, bu yerda kerak emas.",
+       "speakAnswer": "ducks"
       },
       {
        "prompt": "14  The plane leaves Los Angeles ............ 9:00 am.",
@@ -5439,7 +5821,8 @@
         "in",
         "on"
        ],
-       "whyUz": "ANIQ SOAT oldida AT: at 9:00 am, at 5 o'clock.\n'to leave' = jo'namoq, tark etmoq."
+       "whyUz": "ANIQ SOAT oldida AT: at 9:00 am, at 5 o'clock.\n'to leave' = jo'namoq, tark etmoq.",
+       "speakAnswer": "at"
       },
       {
        "prompt": "15  ............ you like going to the cinema?",
@@ -5450,7 +5833,8 @@
         "Are",
         "Does"
        ],
-       "whyUz": "'you' + oddiy fe'l ('like') → DO.\n'Are' XATO — 'like' fe'l, sifat emas.\n'Does' faqat he/she/it uchun."
+       "whyUz": "'you' + oddiy fe'l ('like') → DO.\n'Are' XATO — 'like' fe'l, sifat emas.\n'Does' faqat he/she/it uchun.",
+       "speakAnswer": "Do"
       },
       {
        "prompt": "16  Ann is ............ at the moment.",
@@ -5461,7 +5845,8 @@
         "sleeps",
         "sleep"
        ],
-       "whyUz": "'is' + fe'l-ING = Present Continuous.\n'at the moment' ham shuni tasdiqlaydi."
+       "whyUz": "'is' + fe'l-ING = Present Continuous.\n'at the moment' ham shuni tasdiqlaydi.",
+       "speakAnswer": "sleeping"
       },
       {
        "prompt": "17  The sun is ............ .",
@@ -5472,7 +5857,8 @@
         "shines",
         "shine"
        ],
-       "whyUz": "'is' + fe'l-ING → SHINING (-e TUSHDI).\n'The sun shines' ham to'g'ri gap, lekin bu yerda 'is' bor."
+       "whyUz": "'is' + fe'l-ING → SHINING (-e TUSHDI).\n'The sun shines' ham to'g'ri gap, lekin bu yerda 'is' bor.",
+       "speakAnswer": "shining"
       },
       {
        "prompt": "18  \"............ books are those?\"  \"They're Tom's.\"",
@@ -5483,7 +5869,8 @@
         "Who's",
         "Where"
        ],
-       "whyUz": "EGALIK so'ralmoqda → WHOSE.\nDIQQAT: 'Who's' = 'Who is' (kim) — boshqa ma'no,\nlekin bir xil o'qiladi: /huːz/."
+       "whyUz": "EGALIK so'ralmoqda → WHOSE.\nDIQQAT: 'Who's' = 'Who is' (kim) — boshqa ma'no,\nlekin bir xil o'qiladi: /huːz/.",
+       "speakAnswer": "Whose"
       },
       {
        "prompt": "19  ............ are your parents from?",
@@ -5494,7 +5881,8 @@
         "Who",
         "Why"
        ],
-       "whyUz": "'... from?' — kelib chiqish JOYI so'ralmoqda → WHERE.\n'Where are you from?' — o'zgarmas savol."
+       "whyUz": "'... from?' — kelib chiqish JOYI so'ralmoqda → WHERE.\n'Where are you from?' — o'zgarmas savol.",
+       "speakAnswer": "Where"
       },
       {
        "prompt": "20  There are ............ apple trees in the garden.",
@@ -5505,7 +5893,8 @@
         "any",
         "an"
        ],
-       "whyUz": "TASDIQ gap + ko'plik → SOME.\n'any' inkor va savolda; 'an' faqat birlikda."
+       "whyUz": "TASDIQ gap + ko'plik → SOME.\n'any' inkor va savolda; 'an' faqat birlikda.",
+       "speakAnswer": "some"
       }
      ]
     }
