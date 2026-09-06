@@ -156,14 +156,23 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     };
   }
 
+  /// Mashq XATOSIZ o'tildimi.
+  ///
+  /// Moslash rejimida bandlar `_MatchStage` ichida sanaladi va
+  /// `_misses` bo'sh qoladi — shu sababli xato qilingan moslash mashqi
+  /// ham "xatosiz" deb yozilardi va "Takrorlash kerak" ro'yxatiga
+  /// tushmasdi.
+  bool get _cleanRun => ex.kind == ExKind.match
+      ? _correct >= ex.tasks.length
+      : _misses.isEmpty;
+
   void _finish() {
     final id = ex.progressId;
     final first = !progress.isDone(id);
     // Xatosiz o'tilganda mashq O'ZLAShTIRILGAN hisoblanadi. Aks holda
     // u "takrorlash kerak" bo'lib qoladi va ro'yxatda shunday
     // ko'rsatiladi — bir marta ochib chiqish yetarli emas.
-    progress.markExerciseResult(id,
-        clean: _misses.isEmpty, unit: ex.unitNo);
+    progress.markExerciseResult(id, clean: _cleanRun, unit: ex.unitNo);
     if (first) {
       progress.addXp(3); // mashqni tugatgani uchun bonus
       _xp += 3;
@@ -381,7 +390,22 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     // natija "nechtasini BIRINCHI urinishda topdi" degani.
     final clean = total - _misses.length;
     final retried = _misses.length;
-    final good = ex.kind == ExKind.study || _mastered.length >= total;
+    // XATO edi: mezon faqat `_mastered` bo'lgan, moslash rejimida esa
+    // u HECH QAChON to'ldirilmaydi (juftlar `_MatchStage` ichida
+    // sanaladi). Shu sababli barcha juftni xatosiz moslagan o'quvchi
+    // ham to'q sariq "qayta urinish" belgisini ko'rardi.
+    // "O'zlashtirildi" — HAMMA band oxir-oqibat to'g'ri bajarilgan.
+    // Bu `_cleanRun` dan FARQ qiladi: xato qilib, keyin topgan
+    // o'quvchi ham mashqni o'zlashtirgan hisoblanadi, lekin mashq
+    // baribir "takrorlash kerak" ro'yxatida qoladi.
+    //
+    // Moslash bosqichi faqat HAMMA juft topilganda tugaydi, shuning
+    // uchun u yerda bu doim rost.
+    final good = switch (ex.kind) {
+      ExKind.study => true,
+      ExKind.match => true,
+      _ => _mastered.length >= total,
+    };
     return ListView(
       padding: const EdgeInsets.all(28),
       children: [
@@ -409,7 +433,22 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                 color: good ? AppColors.success : AppColors.homework),
           ),
         ),
-        if (ex.kind != ExKind.study && retried > 0) ...[
+        // Moslashda bandlar `_MatchStage` ichida sanaladi — nechtasi
+        // birinchi urinishda topilgani `_correct` da.
+        if (ex.kind == ExKind.match && _correct < total) ...[
+          const SizedBox(height: 8),
+          Center(
+            child: Text(
+                '$_correct / $total birinchi urinishda · '
+                '${total - _correct} ta juft takrorlandi',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 13, color: AppColors.muted(context))),
+          ),
+        ],
+        if (ex.kind != ExKind.study &&
+            ex.kind != ExKind.match &&
+            retried > 0) ...[
           const SizedBox(height: 8),
           Center(
             child: Text(
