@@ -22,6 +22,7 @@ from ingest.export_pages import KNOWN_TYPES
 TRAINER = Path(__file__).resolve().parent.parent
 PAGES = TRAINER / "data" / "pages"
 ASSETS = TRAINER.parent / "enterprise-app" / "assets" / "content" / "enterprise1"
+APP_LIB = TRAINER.parent / "enterprise-app" / "lib"
 
 # Bandlar shu maydonlarning birida bo'lishi mumkin.
 ITEM_KEYS = (
@@ -285,6 +286,44 @@ def check_content_units() -> list[tuple[str, str]]:
     return out
 
 
+# Ilovada HECH QAYERDA o'qilmaydigan maydonlar — ular eksportda bor,
+# lekin o'quvchi ularni KO'RMAYDI. Aynan shu sabab bilan `scanNote`,
+# `negLong`, `examplesUz`, `noteEn` va `listEn` jimgina yo'qolgan edi.
+#
+# Ataylab tashlanadigan texnik maydonlar (ilova ularni o'qishi shart emas):
+IGNORED_KEYS = {
+    "book", "bookPage", "bookRef", "ref", "id", "order", "isExtra",
+    "module", "unit", "label", "badge", "audio",
+}
+
+
+def check_unused_keys() -> list[tuple[str, str]]:
+    """Eksportdagi har bir maydon Flutter kodida o'qiladimi."""
+    src = ""
+    for f in sorted(APP_LIB.rglob("*.dart")):
+        src += f.read_text(encoding="utf-8")
+
+    keys: set[str] = set()
+
+    def walk(o) -> None:
+        if isinstance(o, dict):
+            for k, v in o.items():
+                keys.add(k)
+                walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+
+    for f in sorted(ASSETS.glob("*.json")):
+        walk(json.loads(f.read_text(encoding="utf-8")))
+
+    out = []
+    for k in sorted(keys - IGNORED_KEYS):
+        if f"'{k}'" not in src and f'"{k}"' not in src:
+            out.append((k, "eksportda bor, ilovada O'QILMAYDI — ko'rinmaydi"))
+    return out
+
+
 def audio_open_items() -> list[tuple[str, int]]:
     """Audio bo'lmagani uchun OChIQ qolgan bandlarni sanaydi.
 
@@ -317,6 +356,7 @@ def main() -> int:
     src = check_sources()
     exp = check_export()
     lost = check_losses() + check_content_units()
+    unused = check_unused_keys()
     pages = check_pages()
 
     print("=== MANBA SAHIFALARI ===")
@@ -339,13 +379,18 @@ def main() -> int:
         print(f"  {loc:30s} {msg}")
     print("  muammo yo'q" if not exp else f"  jami: {len(exp)}")
 
+    print("\n=== ILOVADA O'QILMAYDIGAN MAYDONLAR ===")
+    for k, msg in unused:
+        print(f"  {k:24s} {msg}")
+    print("  muammo yo'q" if not unused else f"  jami: {len(unused)}")
+
     audio = audio_open_items()
     print("\n=== AUDIO KUTAYOTGAN OCHIQ BANDLAR (xato emas) ===")
     for loc, n in audio:
         print(f"  {loc:30s} {n} band")
     print(f"  jami: {sum(n for _, n in audio)} band, {len(audio)} mashqda")
 
-    total = len(src) + len(exp) + len(lost) + len(pages)
+    total = len(src) + len(exp) + len(lost) + len(pages) + len(unused)
     print(f"\n{'TOZA' if total == 0 else f'JAMI MUAMMO: {total}'}")
     return 0 if total == 0 else 1
 

@@ -68,6 +68,22 @@ class RuleScreen extends StatelessWidget {
           if ((r['extraUz'] as String?)?.isNotEmpty ?? false)
             _warn(r['extraUz'] as String, AppColors.brandPurple,
                 Icons.lightbulb_outline_rounded),
+          // `noteEn` va `listEn` ham ilgari ekranga chiqmasdi.
+          if ((r['noteEn'] as String?)?.isNotEmpty ?? false)
+            _warn(r['noteEn'] as String, AppColors.actionBlue,
+                Icons.text_fields_rounded),
+          if (r['listEn'] is List && (r['listEn'] as List).isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 14),
+              child: Wrap(
+                spacing: 8,
+                runSpacing: 6,
+                children: [
+                  for (final e in (r['listEn'] as List))
+                    _chip(e.toString(), AppColors.brandPurple),
+                ],
+              ),
+            ),
         ],
       ),
     );
@@ -170,6 +186,9 @@ class RuleScreen extends StatelessWidget {
     final aff = a['short']?.toString() ?? a['affShort']?.toString() ?? '';
     final affLong = a['full']?.toString() ?? a['affLong']?.toString() ?? '';
     final negShort = n?['short']?.toString() ?? a['negShort']?.toString() ?? '';
+    // Uzun inkor shakli ("I am not") ilgari ekranga chiqmasdi — faqat
+    // qisqasi ("I'm not") ko'rinardi. Kitob ikkalasini ham o'rgatadi.
+    final negLong = n?['full']?.toString() ?? a['negLong']?.toString() ?? '';
     final q = a['interrogative']?.toString() ?? '';
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 10),
@@ -196,7 +215,9 @@ class RuleScreen extends StatelessWidget {
                 if (affLong.isNotEmpty) _chip(affLong, AppColors.success),
                 if (aff.isNotEmpty && aff != affLong)
                   _chip(aff, AppColors.success),
-                if (negShort.isNotEmpty) _chip(negShort, AppColors.danger),
+                if (negLong.isNotEmpty) _chip(negLong, AppColors.danger),
+                if (negShort.isNotEmpty && negShort != negLong)
+                  _chip(negShort, AppColors.danger),
                 if (q.isNotEmpty) _chip(q, AppColors.actionBlue),
               ],
             ),
@@ -247,14 +268,30 @@ class RuleScreen extends StatelessWidget {
               ],
               if (x['examples'] is List) ...[
                 const SizedBox(height: 7),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 6,
-                  children: [
-                    for (final e in (x['examples'] as List))
-                      _chip(e.toString(), AppColors.brandPurple),
-                  ],
-                ),
+                // `examplesUz` — misollarning o'zbekchasi. Ilgari eksportda
+                // bor edi, lekin ekranga chiqmasdi: boshlang'ich daraja
+                // o'quvchisi inglizcha misolni tarjimasiz ko'rardi.
+                for (var i = 0; i < (x['examples'] as List).length; i++)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 4),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _chip((x['examples'] as List)[i].toString(),
+                            AppColors.brandPurple),
+                        if (x['examplesUz'] is List &&
+                            i < (x['examplesUz'] as List).length)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 2, left: 4),
+                            child: Text(
+                                (x['examplesUz'] as List)[i].toString(),
+                                style: const TextStyle(
+                                    fontSize: 12,
+                                    color: AppColors.lightMuted)),
+                          ),
+                      ],
+                    ),
+                  ),
               ],
             ],
           ),
