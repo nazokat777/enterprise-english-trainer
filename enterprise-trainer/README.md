@@ -1,107 +1,41 @@
-# Enterprise English Personal Trainer
+# enterprise-trainer
 
-Shaxsiy, oflayn ishlaydigan ingliz tili o'rgatuvchi dastur. U **Enterprise**
-(Express Publishing) darsligingizdan lug'at, so'z yasalishi (word formation) va
-grammatikani o'rgatadi. Barcha izoh va tushuntirishlar **o'zbek tilida**,
-o'rganilayotgan kontent esa ingliz tilida bo'ladi.
+Enterprise 1 kitobini ilovaga aylantiradigan **kontent quvuri**.
 
-Dastur siz qayerda qiynalayotganingizni aniqlaydi va o'sha mavzuni mahoratingiz
-**100%** ga yetguncha takrorlab mashq qildiradi (adaptiv interval takrorlash —
-spaced repetition).
+## Hozir ishlatiladigan qism
 
-> Bu dastur faqat shaxsiy foydalanish uchun, ommaviy tarqatish uchun emas.
+    ingest/          PDF va skanlardan kontent yig'ish + eksport
+      pdf_extract.py       PDF dan matn va rasm
+      extract_book_pages.py bet skanlarini tayyorlash
+      structure.py         betni tuzilmaga solish
+      grammar_rules.py     grammatika qoidalarini ajratish
+      export_pages.py      -> enterprise-app/assets/content/enterprise1/
+      export_assets.py     -> enterprise-app/assets/content/beginner/
+      check_content.py     SIFAT NAZORATI — "TOZA" chiqishi shart
+      fetch_images.py      mashq rasmlarini yuklash
 
----
+    data/pages/      qo'lda tekshirilgan manba (316 bet, JSON)
+    tests/           test_answer_speech.py, test_book_glosses.py
 
-## 1. O'rnatish
-
-Python 3.11 yoki undan yuqori versiya kerak.
-
-```bash
-# 1. Loyiha papkasiga kiring
-cd enterprise-trainer
-
-# 2. Virtual muhit yarating (tavsiya etiladi)
-python -m venv .venv
-# Windows (PowerShell):
-.venv\Scripts\Activate.ps1
-# Linux / macOS:
-source .venv/bin/activate
-
-# 3. Kutubxonalarni o'rnating
-pip install -r requirements.txt
-```
-
-## 2. PDF darsliklarni qo'shish
-
-Enterprise PDF fayllaringizni `data/pdfs/` papkasiga joylashtiring.
-Dastur shu papkadagi **har bir** PDF ni to'liq o'qiydi.
-
-## 3. OCR dasturini o'rnatish (Tesseract)
-
-Dastur skanerlangan PDF lardan matnni **bepul, oflayn** Tesseract OCR bilan
-o'qiydi. Uni bir marta o'rnating:
+Odatiy ish tartibi:
 
 ```bash
-# Windows:
-winget install UB-Mannheim.TesseractOCR
+python -m ingest.export_pages     # kitob mashqlari
+python -m ingest.check_content    # TOZA bo'lishi shart
 ```
 
-> Bu loyiha **to'liq BEPUL** ishlaydi — hech qanday pullik API kerak emas.
-> Tarjima (inglizcha→o'zbekcha) bepul Google Translate orqali (kalitsiz),
-> matn esa Tesseract OCR orqali olinadi. Faqat internet kerak (tarjima uchun).
+## Eski (ishlatilmaydigan) qism
 
-## 4. Ingestion (ma'lumotlarni tayyorlash, bir marta)
+`app/` va `core/` — loyihaning BIRINCHI arxitekturasi: FastAPI backend
++ SQLAlchemy bazasi + server tomonidagi SRS. Ilova Flutter'ga
+ko'chirilgach ular kerak bo'lmay qoldi:
 
-PDF → OCR matn → tuzilgan JSON jarayonini ishga tushiradi:
+* takrorlash jadvali endi `enterprise-app/lib/srs.dart` da,
+* jarayon `enterprise-app/lib/stats.dart` da (brauzer xotirasida),
+* mashqlar server emas, eksport bosqichida tayyorlanadi.
 
-```bash
-python -m ingest.pdf_extract     # PDF -> OCR -> matn (data/parsed/)
-python -m ingest.structure       # matn -> structured.json (lug'at/grammatika)
-```
-
-Bu sizning kitoblaringizdan `data/parsed/structured.json` ni yaratadi
-(lug'at + so'z yasalishi + grammatika, o'zbekcha tarjimalar bilan).
-
-## 5. Dasturni ishga tushirish
-
-```bash
-uvicorn app.main:app --reload
-```
-
-So'ng brauzerda oching: http://127.0.0.1:8000
-
-Birinchi ishga tushganda baza `structured.json` dan avtomatik to'ldiriladi.
-
-## Testlar
-
-```bash
-python -m pytest tests/ -q
-```
-
----
-
-## Papkalar tuzilishi
-
-```
-enterprise-trainer/
-├── data/{pdfs, parsed, chroma_db}/   # PDF, ajratilgan matn, vektor baza
-├── ingest/                           # PDF → struktura → indeks quvuri
-├── core/                             # SRS, progress, retriever, generator
-├── app/                              # FastAPI backend + frontend
-├── config.py                         # Yo'llar va API sozlamalari
-├── requirements.txt
-└── .env.example
-```
-
-## Holat (development)
-
-- [x] 1-bosqich: Loyiha skeleti, requirements, README
-- [x] 2-bosqich: PDF dan matn ajratish (Tesseract OCR)
-- [x] 3-bosqich: Tuzilgan JSON (qoidaviy + bepul tarjima)
-- [x] 4-bosqich: SRS + progress (SQLite, testlar bilan)
-- [x] 5-bosqich: Retriever (structured.json dan)
-- [x] 6-bosqich: Mashq generatori + baholash (shablon, AI'siz)
-- [x] 7-bosqich: FastAPI endpointlar
-- [x] 8-bosqich: Frontend (sahifa, dashboard)
-- [ ] 9-bosqich: Gamifikatsiya (streak, kunlik maqsad), yakuniy sayqal
+`ingest/` ularga UMUMAN bog'lanmagan. `tests/test_progress.py` va
+`app/` ni ishga tushirish uchun `fastapi` va `sqlalchemy` kerak —
+ular bu mashinada o'rnatilmagan, shuning uchun o'sha testlar
+ishlamaydi. Kod tarix uchun saqlanyapti; yangi ish faqat `ingest/`
+va `enterprise-app/` da qilinadi.
