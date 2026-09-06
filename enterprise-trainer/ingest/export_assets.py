@@ -304,11 +304,15 @@ def build_level(structured: dict, book: dict | None = None,
         for g in structured.get("grammar", [])
     ]
 
+    # So'z oilalarining tarjimasi ham kitobdan olinadi — ular endi
+    # ekranda ko'rsatiladi, ya'ni xato tarjima o'quvchiga yetib boradi.
     families = [
         {
             "id": w["id"],
             "base": w["base"],
-            "uz": w.get("uz", ""),
+            "uz": pick_gloss(w.get("uz", ""),
+                             book.get(_norm_en(w["base"])) or [],
+                             w["base"]),
             "forms": w.get("forms", []),
         }
         for w in structured.get("word_formation", [])

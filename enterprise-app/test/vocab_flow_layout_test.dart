@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
 import 'package:enterprise_english/stats.dart';
+import 'package:enterprise_english/screens/level_reference_screens.dart';
 import 'package:enterprise_english/screens/units_screen.dart';
 import 'package:enterprise_english/screens/unit_screen.dart';
 import 'package:enterprise_english/screens/pack/pack_flow.dart';
@@ -72,7 +73,9 @@ void main() {
     await t.pumpWidget(MaterialApp(
       home: MediaQuery(
         data: MediaQueryData(textScaler: TextScaler.linear(scale)),
-        child: screen,
+        // Haqiqiy ilovada bu ekranlar qobiqning `Scaffold` i ichida
+        // chiziladi — `InkWell` uchun `Material` shu yerdan keladi.
+        child: Scaffold(body: screen),
       ),
     ));
     await t.pump();
@@ -89,6 +92,8 @@ void main() {
         PackFlow(unit: _unit, pack: _pack, words: _words),
     'uy vazifasi': () => HomeworkFlow(
         unit: _unit, unitWords: _words, levelWords: _words),
+    'daraja grammatikasi': () => const LevelGrammarScreen(),
+    'so\'z oilalari': () => const LevelWordFormationScreen(),
   };
 
   // Junk so'zlar olib tashlangach ikkita pack 3 so'zga qisqardi.

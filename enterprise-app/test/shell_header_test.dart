@@ -51,4 +51,22 @@ void main() {
     expect(t.takeException(), isNull);
     expect(find.text('Darslar'), findsWidgets);
   });
+
+  testWidgets('menyudagi har bir band o\'z ekranini ochadi', (t) async {
+    // Menyu ro'yxati bilan `_body()` dagi `case` raqamlari MOS bo'lishi
+    // kerak. Bir marta ro'yxatga yangi band qo'shilmay qolgani uchun
+    // "Suhbatlar" bosilganda grammatika ekrani ochilib qolgan edi.
+    await pumpAt(t, const Size(1280, 800));
+
+    for (final label in ['Darslar', 'Lug\'at', 'Grammatika',
+                         'So\'z yasalishi']) {
+      await t.tap(find.text(label).first);
+      await t.pump();
+      expect(t.takeException(), isNull, reason: label);
+    }
+    // Hali tayyor bo'lmagan bo'limlar "keyingi fazalarda" deb chiqadi.
+    await t.tap(find.text('Suhbatlar').first);
+    await t.pump();
+    expect(find.textContaining('Suhbatlar'), findsWidgets);
+  });
 }

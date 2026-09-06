@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../main.dart';
 import '../theme.dart';
 import '../widgets/geo_bg.dart';
+import 'level_reference_screens.dart';
 import 'units_screen.dart';
 import 'book/book_screens.dart';
 
@@ -20,6 +21,8 @@ class _AppShellState extends State<AppShell> {
   static const List<(IconData, String)> _items = [
     (Icons.school_rounded, 'Darslar'),
     (Icons.style_rounded, 'Lug\'at'),
+    (Icons.rule_rounded, 'Grammatika'),
+    (Icons.account_tree_rounded, 'So\'z yasalishi'),
     (Icons.forum_rounded, 'Suhbatlar'),
     (Icons.settings_rounded, 'Sozlamalar'),
     (Icons.help_outline_rounded, 'Yordam'),
@@ -137,6 +140,10 @@ class _AppShellState extends State<AppShell> {
         return const BookUnitsScreen(); // Enterprise kitobi — asosiy kurs
       case 1:
         return const UnitsScreen(); // lug'at pack'lari (SRS)
+      case 2:
+        return const LevelGrammarScreen(); // daraja grammatikasi
+      case 3:
+        return const LevelWordFormationScreen(); // so'z oilalari
       default:
         return _Placeholder(title: _items[_sel].$2);
     }
@@ -255,10 +262,16 @@ class _NavItem extends StatelessWidget {
               children: [
                 Icon(icon, size: 20, color: fg),
                 const SizedBox(width: 12),
-                Text(label,
-                    style: TextStyle(
-                        fontWeight: active ? FontWeight.w800 : FontWeight.w600,
-                        color: fg)),
+                // Sidebar kengligi qat'iy (240px). Uzun yorliq
+                // ("So'z yasalishi") sig'may, chetidan chiqib ketardi.
+                Expanded(
+                  child: Text(label,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontWeight:
+                              active ? FontWeight.w800 : FontWeight.w600,
+                          color: fg)),
+                ),
               ],
             ),
           ),
