@@ -93,4 +93,31 @@ void main() {
       }
     }
   });
+
+  // TEZLIK: ekran ilgari 51 unitning HAMMASINI o'qirdi (~7 soniya).
+  // Endi mashq qaysi unitda ekani eslab qolinadi va faqat o'sha unit
+  // yuklanadi.
+  testWidgets('faqat kerakli unit yuklanadi', (t) async {
+    final brief = app.book.units.first;
+    final u = await t.runAsync(() => app.book.load(brief.unit));
+    final e = u!.sections.first.exercises.first;
+    await app.progress
+        .markExerciseResult(e.progressId, clean: false, unit: brief.unit);
+
+    expect(app.progress.reviewUnits, {brief.unit});
+
+    await pump(t);
+    expect(find.text('1 ta mashq xato bilan tugatilgan'), findsOneWidget);
+  });
+
+  test('xatosiz o\'tilgan unit ro\'yxatda qolmaydi', () async {
+    await app.progress
+        .markExerciseResult('ex::cb::6::1', clean: false, unit: 7);
+    expect(app.progress.reviewUnits.contains(7), isTrue);
+
+    // Qayta o\'qilganda ham saqlanadi.
+    final again = Progress();
+    await again.load();
+    expect(again.reviewUnits.contains(7), isTrue);
+  });
 }

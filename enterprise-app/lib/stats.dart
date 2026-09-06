@@ -68,6 +68,11 @@ class Progress extends ChangeNotifier {
     lastUnitNo = p.getInt('lastUnitNo') ?? 0;
     lastExerciseId = p.getString('lastExerciseId') ?? '';
     lastLabel = p.getString('lastLabel') ?? '';
+    reviewUnits
+      ..clear()
+      ..addAll((p.getStringList('reviewUnits') ?? [])
+          .map(int.tryParse)
+          .whereType<int>());
     unitDone.clear();
     final ud = p.getString('unitDone');
     if (ud != null && ud.isNotEmpty) {
@@ -222,6 +227,7 @@ class Progress extends ChangeNotifier {
     lastExerciseId = '';
     lastLabel = '';
     unitDone.clear();
+    reviewUnits.clear();
     // null = hali hech qachon ishlatilmagan; load() shunga qaraydi.
     lastActiveDate = null;
     completed.clear();
@@ -318,6 +324,12 @@ class Progress extends ChangeNotifier {
 
   int doneInUnit(int unit) => unitDone[unit] ?? 0;
 
+  /// Takrorlash kerak bo'lgan mashqlar QAYSI unitlarda.
+  ///
+  /// TEZLIK: takrorlash ekrani ilgari BARCHA 51 unitni o'qirdi
+  /// (~7 soniya). Endi faqat kerakli unitlar yuklanadi.
+  final Set<int> reviewUnits = {};
+
   Future<void> markExerciseResult(String id,
       {required bool clean, int unit = 0}) async {
     final key = '$currentLevel::$id';
@@ -330,6 +342,7 @@ class Progress extends ChangeNotifier {
       needsReview.remove(key);
     } else {
       needsReview.add(key);
+      if (unit > 0) reviewUnits.add(unit);
     }
     await _save();
     notifyListeners();
@@ -346,6 +359,8 @@ class Progress extends ChangeNotifier {
     await p.setInt('lastUnitNo', lastUnitNo);
     await p.setString('lastExerciseId', lastExerciseId);
     await p.setString('lastLabel', lastLabel);
+    await p.setStringList(
+        'reviewUnits', reviewUnits.map((e) => '$e').toList());
     await p.setString('unitDone',
         json.encode(unitDone.map((k, v) => MapEntry('$k', v))));
     if (lastActiveDate != null) await p.setString('lastActive', lastActiveDate!);

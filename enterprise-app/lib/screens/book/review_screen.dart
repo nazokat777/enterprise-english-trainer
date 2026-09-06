@@ -43,8 +43,16 @@ class _ReviewScreenState extends State<ReviewScreen> {
   /// BIRIN-KETIN so'ralardi va ekran ~20 soniya "aylanib" turardi.
   /// Endi hammasi bir vaqtda so'raladi.
   Future<void> _collect() async {
-    final loaded = await Future.wait(
-        book.units.map((brief) => book.load(brief.unit)));
+    // Faqat KERAKLI unitlar yuklanadi. Ilgari 51 unitning hammasi
+    // o'qilardi va ekran ~7 soniya aylanardi. `reviewUnits` bo'sh
+    // bo'lsa (eski yozuvlar) hammasini o'qiymiz.
+    final units = progress.reviewUnits.isEmpty
+        ? book.units.map((b) => b.unit).toList()
+        : book.units
+            .map((b) => b.unit)
+            .where(progress.reviewUnits.contains)
+            .toList();
+    final loaded = await Future.wait(units.map(book.load));
     final out = <_Item>[];
     for (final u in loaded) {
       if (u == null) continue;
