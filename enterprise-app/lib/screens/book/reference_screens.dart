@@ -263,9 +263,9 @@ class RuleScreen extends StatelessWidget {
               if ((x['enRule']?.toString() ?? '').isNotEmpty) ...[
                 const SizedBox(height: 3),
                 Text(x['enRule'].toString(),
-                    style: const TextStyle(
+                    style: TextStyle(
                         fontSize: 12.5,
-                        color: AppColors.lightMuted,
+                        color: AppColors.muted(context),
                         fontStyle: FontStyle.italic)),
               ],
               if (x['examples'] is List) ...[
@@ -287,9 +287,9 @@ class RuleScreen extends StatelessWidget {
                             padding: const EdgeInsets.only(top: 2, left: 4),
                             child: Text(
                                 (x['examplesUz'] as List)[i].toString(),
-                                style: const TextStyle(
+                                style: TextStyle(
                                     fontSize: 12,
-                                    color: AppColors.lightMuted)),
+                                    color: AppColors.muted(context))),
                           ),
                       ],
                     ),
@@ -361,8 +361,8 @@ class RuleScreen extends StatelessWidget {
                       fontWeight: FontWeight.w800, fontSize: 14)),
               if ((x['qUz']?.toString() ?? '').isNotEmpty)
                 Text(x['qUz'].toString(),
-                    style: const TextStyle(
-                        fontSize: 12, color: AppColors.lightMuted)),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.muted(context))),
               const SizedBox(height: 7),
               Row(
                 children: [
@@ -459,9 +459,9 @@ class RuleScreen extends StatelessWidget {
                       style: const TextStyle(fontSize: 13.5, height: 1.45)),
                   if (sub.isNotEmpty)
                     Text(sub,
-                        style: const TextStyle(
+                        style: TextStyle(
                             fontSize: 12,
-                            color: AppColors.lightMuted,
+                            color: AppColors.muted(context),
                             fontStyle: FontStyle.italic)),
                 ],
               ),
@@ -542,12 +542,12 @@ class WordFormationScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(it.base,
-                        style: const TextStyle(
-                            fontSize: 13.5, color: AppColors.lightMuted)),
+                        style: TextStyle(
+                            fontSize: 13.5, color: AppColors.muted(context))),
                     if (it.baseUz.isNotEmpty)
                       Text(it.baseUz,
-                          style: const TextStyle(
-                              fontSize: 11.5, color: AppColors.lightMuted)),
+                          style: TextStyle(
+                              fontSize: 11.5, color: AppColors.muted(context))),
                   ],
                 ),
               ),
@@ -563,8 +563,8 @@ class WordFormationScreen extends StatelessWidget {
                             fontSize: 14.5, fontWeight: FontWeight.w800)),
                     if (it.derivedUz.isNotEmpty)
                       Text(it.derivedUz,
-                          style: const TextStyle(
-                              fontSize: 11.5, color: AppColors.lightMuted)),
+                          style: TextStyle(
+                              fontSize: 11.5, color: AppColors.muted(context))),
                   ],
                 ),
               ),
@@ -654,8 +654,8 @@ class SentencePatternsScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 25, top: 2),
                 child: Text(p.exampleUz,
-                    style: const TextStyle(
-                        fontSize: 12.5, color: AppColors.lightMuted)),
+                    style: TextStyle(
+                        fontSize: 12.5, color: AppColors.muted(context))),
               ),
             if (p.explanationUz.isNotEmpty) ...[
               const SizedBox(height: 10),
@@ -733,9 +733,9 @@ class _UnitVocabularyScreenState extends State<UnitVocabularyScreen> {
                         ),
                         Expanded(
                           child: Text(e.uz,
-                              style: const TextStyle(
+                              style: TextStyle(
                                   fontSize: 14,
-                                  color: AppColors.lightMuted)),
+                                  color: AppColors.muted(context))),
                         ),
                         const Icon(Icons.volume_up_rounded,
                             size: 18, color: AppColors.actionBlue),
@@ -1056,9 +1056,9 @@ class _ImageCreditsScreenState extends State<ImageCreditsScreen> {
                                 (e.value['author'] ?? '').toString(),
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
-                                style: const TextStyle(
+                                style: TextStyle(
                                     fontSize: 12,
-                                    color: AppColors.lightMuted),
+                                    color: AppColors.muted(context)),
                               ),
                             ),
                           ],

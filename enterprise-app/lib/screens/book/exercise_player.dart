@@ -178,8 +178,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
               ),
               if (ex.kind != ExKind.study && ex.kind != ExKind.match)
                 Text('${_index + 1} / ${ex.tasks.length}',
-                    style: const TextStyle(
-                        fontSize: 12, color: AppColors.lightMuted)),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.muted(context))),
             ],
           ),
           if (ex.bookRef.isNotEmpty)
@@ -462,8 +462,8 @@ class _ChoiceStageState extends State<_ChoiceStage> {
                 const SizedBox(height: 6),
                 Text(t.promptUz,
                     textAlign: TextAlign.center,
-                    style: const TextStyle(
-                        fontSize: 13.5, color: AppColors.lightMuted)),
+                    style: TextStyle(
+                        fontSize: 13.5, color: AppColors.muted(context))),
               ],
               if (t.canSpeak) ...[
                 const SizedBox(height: 12),
@@ -628,8 +628,8 @@ class _BuildStageState extends State<_BuildStage> {
           Center(
             child: Text(t.promptUz,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
-                    fontSize: 13, color: AppColors.lightMuted)),
+                style: TextStyle(
+                    fontSize: 13, color: AppColors.muted(context))),
           ),
         ],
         if (t.canSpeak) ...[
@@ -999,9 +999,9 @@ class _StudyStage extends StatelessWidget {
                       if (t.uz.isNotEmpty) ...[
                         const SizedBox(height: 3),
                         Text(t.uz,
-                            style: const TextStyle(
+                            style: TextStyle(
                                 fontSize: 13,
-                                color: AppColors.lightMuted,
+                                color: AppColors.muted(context),
                                 height: 1.4)),
                       ],
                       if (t.note.isNotEmpty) ...[

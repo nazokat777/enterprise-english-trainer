@@ -10,21 +10,36 @@ import 'exercise_player.dart';
 import 'reference_screens.dart';
 
 /// Bo'lim turiga mos rang va belgi.
-({IconData icon, Color color}) sectionStyle(String kind) => switch (kind) {
+///
+/// DIQQAT: eksportda 24 xil bo'lim turi bor. Ilgari bu ro'yxatda faqat
+/// 13 tasi sanalgan edi va qolgan 160 ta bo'lim ma'nosiz kulrang doira
+/// belgisini olardi (eng ko'pi — `reference` 73 ta, `test` 35 ta).
+({IconData icon, Color color}) sectionStyle(BuildContext context, String kind) =>
+    switch (kind) {
       'lead_in' => (icon: Icons.flag_rounded, color: AppColors.brandPurple),
       'vocabulary' => (icon: Icons.menu_book_rounded, color: AppColors.brandPurple),
       'reading' => (icon: Icons.article_rounded, color: AppColors.actionBlue),
       'grammar_theory' => (icon: Icons.rule_rounded, color: AppColors.actionBlue),
       'grammar' => (icon: Icons.edit_note_rounded, color: AppColors.actionBlue),
       'grammar_exercise' => (icon: Icons.fact_check_rounded, color: AppColors.actionBlue),
+      'language_development' => (icon: Icons.translate_rounded, color: AppColors.actionBlue),
+      'practice' => (icon: Icons.model_training_rounded, color: AppColors.actionBlue),
       'pronunciation' => (icon: Icons.record_voice_over_rounded, color: AppColors.homework),
       'listening' => (icon: Icons.headphones_rounded, color: AppColors.homework),
+      'video' => (icon: Icons.play_circle_rounded, color: AppColors.homework),
       'speaking' => (icon: Icons.mic_rounded, color: AppColors.success),
       'communication' => (icon: Icons.forum_rounded, color: AppColors.coin),
       'game' => (icon: Icons.sports_esports_rounded, color: AppColors.success),
+      'quiz' => (icon: Icons.quiz_rounded, color: AppColors.success),
+      'culture' => (icon: Icons.public_rounded, color: AppColors.success),
       'writing' => (icon: Icons.draw_rounded, color: AppColors.brandPurple),
-      'words_of_wisdom' => (icon: Icons.auto_awesome_rounded, color: AppColors.coin),
-      _ => (icon: Icons.circle_outlined, color: AppColors.lightMuted),
+      'story' => (icon: Icons.auto_stories_rounded, color: AppColors.brandPurple),
+      'reference' => (icon: Icons.bookmark_rounded, color: AppColors.brandPurple),
+      'module_cover' => (icon: Icons.collections_bookmark_rounded, color: AppColors.brandPurple),
+      'revision' => (icon: Icons.replay_rounded, color: AppColors.brandPurple),
+      'test' => (icon: Icons.assignment_turned_in_rounded, color: AppColors.homework),
+      'words_of_wisdom' || 'wisdom' => (icon: Icons.auto_awesome_rounded, color: AppColors.coin),
+      _ => (icon: Icons.circle_outlined, color: AppColors.muted(context)),
     };
 
 // ═══════════════════ Unit'lar ro'yxati ═══════════════════
@@ -54,8 +69,8 @@ class BookUnitsScreen extends StatelessWidget {
           EntranceFade(
             child: Text(
                 '${units.length} ta dars tayyor · har biri uchala kitobdan yig\'ilgan',
-                style: const TextStyle(
-                    fontSize: 13, color: AppColors.lightMuted)),
+                style: TextStyle(
+                    fontSize: 13, color: AppColors.muted(context))),
           ),
           const SizedBox(height: 20),
           for (var i = 0; i < units.length; i++)
@@ -134,8 +149,8 @@ class _UnitCard extends StatelessWidget {
                       const SizedBox(height: 3),
                       Text(
                           '${brief.sections} bo\'lim · ${brief.exercises} mashq · ${brief.tasks} band',
-                          style: const TextStyle(
-                              fontSize: 12.5, color: AppColors.lightMuted)),
+                          style: TextStyle(
+                              fontSize: 12.5, color: AppColors.muted(context))),
                     ],
                   ),
                 ),
@@ -197,10 +212,10 @@ class BookUnitScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
+            Text(
               'Kitobingizni oching — ilova aynan shu betlarni ko\'rsatadi.',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 12, color: AppColors.lightMuted),
+              style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
             ),
             const SizedBox(height: 22),
             const _Label('Yoki mavzu bo\'yicha'),
@@ -250,7 +265,7 @@ class BookUnitScreen extends StatelessWidget {
             _refTile(
               context,
               icon: Icons.photo_library_rounded,
-              color: AppColors.lightMuted,
+              color: AppColors.muted(context),
               title: 'Rasmlar manbasi',
               subtitle: 'Wikimedia Commons — erkin litsenziya',
               onTap: () => Navigator.push(
@@ -274,16 +289,16 @@ class BookUnitScreen extends StatelessWidget {
       ),
       child: Row(
         children: [
-          _stat('${unit.sections.length}', 'bo\'lim'),
-          _stat('${unit.exerciseCount}', 'mashq'),
-          _stat('${unit.answerableCount}', 'band'),
-          _stat('${unit.vocabulary.length}', 'so\'z'),
+          _stat(context, '${unit.sections.length}', 'bo\'lim'),
+          _stat(context, '${unit.exerciseCount}', 'mashq'),
+          _stat(context, '${unit.answerableCount}', 'band'),
+          _stat(context, '${unit.vocabulary.length}', 'so\'z'),
         ],
       ),
     );
   }
 
-  Widget _stat(String v, String label) => Expanded(
+  Widget _stat(BuildContext context, String v, String label) => Expanded(
         child: Column(
           children: [
             Text(v,
@@ -292,8 +307,8 @@ class BookUnitScreen extends StatelessWidget {
                     fontWeight: FontWeight.w800,
                     color: AppColors.brandPurple)),
             Text(label,
-                style: const TextStyle(
-                    fontSize: 11.5, color: AppColors.lightMuted)),
+                style: TextStyle(
+                    fontSize: 11.5, color: AppColors.muted(context))),
           ],
         ),
       );
@@ -336,13 +351,13 @@ class BookUnitScreen extends StatelessWidget {
                           style: const TextStyle(
                               fontWeight: FontWeight.w800, fontSize: 14.5)),
                       Text(subtitle,
-                          style: const TextStyle(
-                              fontSize: 12, color: AppColors.lightMuted)),
+                          style: TextStyle(
+                              fontSize: 12, color: AppColors.muted(context))),
                     ],
                   ),
                 ),
-                const Icon(Icons.chevron_right_rounded,
-                    color: AppColors.lightMuted),
+                Icon(Icons.chevron_right_rounded,
+                    color: AppColors.muted(context)),
               ],
             ),
           ),
@@ -358,7 +373,7 @@ class _GroupCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final st = sectionStyle(group.kind);
+    final st = sectionStyle(context, group.kind);
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Material(
@@ -399,8 +414,8 @@ class _GroupCard extends StatelessWidget {
                             '${group.exerciseCount} mashq',
                           if (group.hasRule) 'qoida',
                         ].join(' · '),
-                        style: const TextStyle(
-                            fontSize: 12, color: AppColors.lightMuted),
+                        style: TextStyle(
+                            fontSize: 12, color: AppColors.muted(context)),
                       ),
                       const SizedBox(height: 3),
                       // Qaysi kitobdan olingani — aniq nom bilan.
@@ -416,8 +431,8 @@ class _GroupCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                const Icon(Icons.chevron_right_rounded,
-                    color: AppColors.lightMuted),
+                Icon(Icons.chevron_right_rounded,
+                    color: AppColors.muted(context)),
               ],
             ),
           ),
@@ -449,8 +464,8 @@ class BookPagesScreen extends StatelessWidget {
           children: [
             Text(
               'Kitobingizni oching va shu betlarni ilova bilan birga ishlang.',
-              style: const TextStyle(
-                  fontSize: 13, color: AppColors.lightMuted, height: 1.5),
+              style: TextStyle(
+                  fontSize: 13, color: AppColors.muted(context), height: 1.5),
             ),
             const SizedBox(height: 18),
             for (final entry in byBook.entries) ...[
@@ -468,8 +483,8 @@ class BookPagesScreen extends StatelessWidget {
                             color: AppColors.brandPurple)),
                     const SizedBox(width: 8),
                     Text('${entry.value.length} bet',
-                        style: const TextStyle(
-                            fontSize: 12, color: AppColors.lightMuted)),
+                        style: TextStyle(
+                            fontSize: 12, color: AppColors.muted(context))),
                   ],
                 ),
               ),
@@ -539,14 +554,14 @@ class BookPagesScreen extends StatelessWidget {
                         ].join(' · '),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                            fontSize: 12, color: AppColors.lightMuted),
+                        style: TextStyle(
+                            fontSize: 12, color: AppColors.muted(context)),
                       ),
                     ],
                   ),
                 ),
-                const Icon(Icons.chevron_right_rounded,
-                    color: AppColors.lightMuted),
+                Icon(Icons.chevron_right_rounded,
+                    color: AppColors.muted(context)),
               ],
             ),
           ),
@@ -599,8 +614,8 @@ class BookPageScreen extends StatelessWidget {
                         const SizedBox(height: 2),
                         Text(
                             '${page.exerciseCount} mashq · ${page.answerableCount} band',
-                            style: const TextStyle(
-                                fontSize: 12, color: AppColors.lightMuted)),
+                            style: TextStyle(
+                                fontSize: 12, color: AppColors.muted(context))),
                       ],
                     ),
                   ),
@@ -623,7 +638,7 @@ class BookPageScreen extends StatelessWidget {
   }
 
   List<Widget> _section(BuildContext context, BookSection s) {
-    final st = sectionStyle(s.kind);
+    final st = sectionStyle(context, s.kind);
     return [
       Padding(
         padding: const EdgeInsets.only(bottom: 10, top: 6),
@@ -639,8 +654,8 @@ class BookPageScreen extends StatelessWidget {
                       color: st.color)),
             ),
             Text(s.titleUz,
-                style: const TextStyle(
-                    fontSize: 11.5, color: AppColors.lightMuted)),
+                style: TextStyle(
+                    fontSize: 11.5, color: AppColors.muted(context))),
           ],
         ),
       ),
@@ -868,9 +883,9 @@ class _ExerciseTile extends StatelessWidget {
                             : exercise.instructionUz,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
+                        style: TextStyle(
                             fontSize: 12,
-                            color: AppColors.lightMuted,
+                            color: AppColors.muted(context),
                             height: 1.35),
                       ),
                       const SizedBox(height: 4),
@@ -887,8 +902,8 @@ class _ExerciseTile extends StatelessWidget {
                     ],
                   ),
                 ),
-                const Icon(Icons.play_arrow_rounded,
-                    color: AppColors.lightMuted),
+                Icon(Icons.play_arrow_rounded,
+                    color: AppColors.muted(context)),
               ],
             ),
           ),
@@ -928,7 +943,7 @@ class _Empty extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, size: 56, color: AppColors.lightMuted),
+            Icon(icon, size: 56, color: AppColors.muted(context)),
             const SizedBox(height: 14),
             Text(title,
                 textAlign: TextAlign.center,
@@ -937,8 +952,8 @@ class _Empty extends StatelessWidget {
             const SizedBox(height: 6),
             Text(subtitle,
                 textAlign: TextAlign.center,
-                style: const TextStyle(
-                    fontSize: 13, color: AppColors.lightMuted)),
+                style: TextStyle(
+                    fontSize: 13, color: AppColors.muted(context))),
           ],
         ),
       ),

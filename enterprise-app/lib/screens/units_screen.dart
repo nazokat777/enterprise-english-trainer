@@ -135,7 +135,7 @@ class _UnitNode extends StatelessWidget {
                                 fontSize: 13,
                                 color: dark
                                     ? AppColors.darkMuted
-                                    : AppColors.lightMuted)),
+                                    : AppColors.muted(context))),
                       ],
                     ),
                   ),

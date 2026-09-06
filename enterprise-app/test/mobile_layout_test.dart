@@ -133,4 +133,32 @@ void main() {
           t, ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at'), narrow);
     });
   }
+
+  _sectionStyleTests();
+}
+
+/// Har bir bo'lim turi o'z belgisiga ega bo'lishi kerak. Ilgari eksportdagi
+/// 24 turdan faqat 13 tasi sanalgan edi va qolgan 160 ta bo'lim ma'nosiz
+/// kulrang doira belgisini olardi.
+void _sectionStyleTests() {
+  const kinds = [
+    'lead_in', 'vocabulary', 'reading', 'grammar_theory', 'grammar',
+    'grammar_exercise', 'language_development', 'practice', 'pronunciation',
+    'listening', 'video', 'speaking', 'communication', 'game', 'quiz',
+    'culture', 'writing', 'story', 'reference', 'module_cover', 'revision',
+    'test', 'words_of_wisdom', 'wisdom',
+  ];
+
+  testWidgets('barcha bo\'lim turlari o\'z belgisiga ega', (t) async {
+    late BuildContext ctx;
+    await t.pumpWidget(MaterialApp(home: Builder(builder: (c) {
+      ctx = c;
+      return const SizedBox();
+    })));
+
+    for (final k in kinds) {
+      expect(sectionStyle(ctx, k).icon, isNot(Icons.circle_outlined),
+          reason: '$k turi uchun belgi yo\'q');
+    }
+  });
 }

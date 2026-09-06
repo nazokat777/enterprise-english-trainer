@@ -235,7 +235,7 @@ class _HomeworkFlowState extends State<HomeworkFlow> {
             alignment: Alignment.centerRight,
             child: Text(
               '${i + 1} / $total',
-              style: const TextStyle(fontSize: 12, color: AppColors.lightMuted),
+              style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
             ),
           ),
         ],
@@ -505,7 +505,7 @@ class _ConstructBodyState extends State<_ConstructBody> {
         Center(
           child: Text(
             widget.word.uz,
-            style: const TextStyle(fontSize: 16, color: AppColors.lightMuted),
+            style: TextStyle(fontSize: 16, color: AppColors.muted(context)),
           ),
         ),
         const SizedBox(height: 12),
@@ -862,9 +862,9 @@ class _CorrectionRoundState extends State<_CorrectionRound> {
           ],
         ),
         const SizedBox(height: 6),
-        const Text(
+        Text(
           'Bu raund bahoga ta\'sir qilmaydi',
-          style: TextStyle(fontSize: 12, color: AppColors.lightMuted),
+          style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
         ),
         const SizedBox(height: 16),
         Center(
@@ -976,7 +976,7 @@ class _ResultView extends StatelessWidget {
         Center(
           child: Text(
             '${result.earned} / ${result.total} to\'g\'ri',
-            style: const TextStyle(color: AppColors.lightMuted),
+            style: TextStyle(color: AppColors.muted(context)),
           ),
         ),
         const SizedBox(height: 16),

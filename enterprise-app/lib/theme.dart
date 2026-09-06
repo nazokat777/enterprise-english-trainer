@@ -28,6 +28,15 @@ class AppColors {
   static const darkInk = Color(0xFFE8E9ED);
   static const darkMuted = Color(0xFF9AA0AC);
   static const darkShadow = Color(0xFF1A1B20);
+
+  /// IKKILAMChI MATN — rejimga qarab tanlanadi.
+  ///
+  /// Ilgari ekranlarda to'g'ridan-to'g'ri `lightMuted` yozilgan edi va u
+  /// TUNGI rejimda ham ishlatilardi: kontrast atigi 2.69:1 chiqardi
+  /// (WCAG AA me'yori — 4.5:1), ya'ni izohlar, bet yorliqlari va yordam
+  /// matnlari deyarli o'qilmasdi. `darkMuted` bilan 4.95:1 bo'ladi.
+  static Color muted(BuildContext context) =>
+      Theme.of(context).brightness == Brightness.dark ? darkMuted : lightMuted;
 }
 
 /// Burchak radiuslari (dizayn tokenlari).
