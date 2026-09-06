@@ -464,6 +464,10 @@ class TaskVisual extends StatelessWidget {
           visual,
           height: size * 2.1,
           fit: BoxFit.cover,
+          // Fayllar to'liq o'lchamda (1500px gacha), ekranda esa
+          // ~150px ko'rinadi. `cacheHeight` siz butun rasm xotiraga
+          // ochilardi — arzon telefonda behuda yuk.
+          cacheHeight: (size * 2.1 * 3).round(),
           // Rasm topilmasa ilova buzilmasin.
           errorBuilder: (_, _, _) => const SizedBox.shrink(),
         ),

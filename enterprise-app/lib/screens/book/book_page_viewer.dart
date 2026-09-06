@@ -145,6 +145,25 @@ class BookPageViewer extends StatelessWidget {
           child: Image.asset(
             BookPageImage.assetPath(book, page),
             fit: BoxFit.contain,
+            // Bet skani ~1 MB. Telefonda mobil internet bilan u
+            // bir necha soniya kelishi mumkin edi va shu vaqt
+            // davomida ekran QOP-QORA turardi — o'quvchi ilova
+            // buzilgan deb o'ylardi.
+            frameBuilder: (context, child, frame, wasSyncLoaded) {
+              if (wasSyncLoaded || frame != null) return child;
+              return const Padding(
+                padding: EdgeInsets.all(40),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    CircularProgressIndicator(color: Colors.white70),
+                    SizedBox(height: 14),
+                    Text('Bet yuklanmoqda...',
+                        style: TextStyle(color: Colors.white70)),
+                  ],
+                ),
+              );
+            },
             errorBuilder: (_, _, _) => const Padding(
               padding: EdgeInsets.all(28),
               child: Text(
