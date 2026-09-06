@@ -84,4 +84,18 @@ void main() {
         find.widgetWithText(PopupMenuItem<String>, 'Elementary — tayyor emas'));
     expect(item.enabled, isFalse);
   });
+
+  testWidgets('XP o\'zgarsa yuqori panel yangilanadi', (t) async {
+    // XATO: qobiq `main.dart` da `const AppShell()` bo'lgani uchun
+    // Flutter uni `identical` deb topib butun subdaraxtni qayta
+    // qurmasdan o'tkazib yuborardi. Mashq +9 XP bergani saqlanardi,
+    // lekin panelda 0 turaverardi.
+    await pumpAt(t, const Size(1280, 800));
+    expect(find.text('0'), findsWidgets);
+
+    await app.progress.addXp(9);
+    await t.pump();
+
+    expect(find.text('9'), findsWidgets);
+  });
 }

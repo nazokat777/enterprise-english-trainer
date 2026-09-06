@@ -99,6 +99,17 @@ class _AppShellState extends State<AppShell> {
 
   // --- Header: level switcher + retention indikatorlari ---
   Widget _header(BuildContext context, {Widget? menu}) {
+    // Panel `progress` ga O'ZI obuna bo'ladi — main.dart dagi
+    // `AnimatedBuilder` ga tayanmaydi. Ilgari tayanardi va qobiq
+    // `const` bo'lgani uchun rebuild umuman yetib kelmasdi: mashqdan
+    // 9 XP olinsa ham panelda 0 turaverardi.
+    return ListenableBuilder(
+      listenable: progress,
+      builder: (context, _) => _headerRow(context, menu: menu),
+    );
+  }
+
+  Widget _headerRow(BuildContext context, {Widget? menu}) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
       child: Row(
