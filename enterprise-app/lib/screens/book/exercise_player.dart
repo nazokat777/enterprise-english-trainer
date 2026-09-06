@@ -1118,7 +1118,14 @@ class _StudyStage extends StatelessWidget {
                               fontSize: 15,
                               fontWeight: FontWeight.w700,
                               height: 1.4)),
-                      if (t.uz.isNotEmpty) ...[
+                      // Grammatika sarlavhalarida ("Present Continuous")
+                      // o'zbekcha maydon aynan inglizchasini takrorlaydi
+                      // — atamaning o'zi shu. Ikkala qatorni chizsak,
+                      // o'quvchi bir xil matnni ikki marta ko'radi va
+                      // buni xato deb o'ylaydi.
+                      if (t.uz.isNotEmpty &&
+                          t.uz.trim().toLowerCase() !=
+                              t.en.trim().toLowerCase()) ...[
                         const SizedBox(height: 3),
                         Text(t.uz,
                             style: TextStyle(
