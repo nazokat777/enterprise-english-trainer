@@ -118,4 +118,27 @@ void main() {
       expect(w.uz.trim(), isNotEmpty, reason: '${w.en}: tarjima yo\'q');
     }
   });
+
+  // Lug'at kartochkasi SO'Z o'rgatishi kerak. Ilgari ro'yxatda
+  // grammatik atamalar ("prepositions = predloglar") va kitobdagi
+  // qahramonlarning ismlari ("sally = sally") ham kartochka bo'lib
+  // turardi — ular yodlashga ham, mashqqa ham yaramaydi.
+  test('lug\'atda grammatik atama va shaxs ismi yo\'q', () {
+    const grammarUz = [
+      'predloglar', 'olmoshlar', 'otlar', 'sifatlar', 'darak gaplar',
+      'ko\'plik', 'davomli (zamon)', 'qalin (harf)', 'takrorlang',
+    ];
+    const names = ['steve', 'sandra', 'sally', 'jenny', 'lisa', 'sarah'];
+
+    final raw = json.decode(
+            File('assets/content/beginner/words.json').readAsStringSync())
+        as Map<String, dynamic>;
+    for (final e in raw['words'] as List) {
+      final w = (e as Map).cast<String, dynamic>();
+      final en = (w['en'] as String).toLowerCase();
+      final uz = (w['uz'] as String).toLowerCase();
+      expect(grammarUz.contains(uz), isFalse, reason: 'grammatik atama: $en');
+      expect(names.contains(en), isFalse, reason: 'shaxs ismi: $en');
+    }
+  });
 }
