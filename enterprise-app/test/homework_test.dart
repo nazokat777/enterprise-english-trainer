@@ -52,9 +52,11 @@ void main() {
       expect(fillBlank('Some text', ''), isNull);
     });
 
-    test('faqat birinchi uchrashuvi almashadi', () {
+    test('so\'z necha marta uchrasa, HAMMASI berkitiladi', () {
+      // Ilgari faqat birinchisi almashardi va javob gapning o'zida
+      // ko'rinib turardi — ya'ni savol o'z javobini ko'rsatardi.
       final s = fillBlank('I eat what they eat.', 'eat');
-      expect(s, 'I _____ what they eat.');
+      expect(s, 'I _____ what they _____.');
     });
   });
 
