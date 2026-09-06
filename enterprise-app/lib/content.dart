@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 
+import 'levels.dart';
+
 /// Lug'at so'zi.
 class Word {
   final String id, en, uz, example, module, pos, phonetic;
@@ -190,7 +192,7 @@ class ContentRepository {
   final Map<String, LevelContent> _levels = {};
 
   Future<void> load() async {
-    for (final level in ['beginner', 'elementary']) {
+    for (final level in kLevels.map((l) => l.id)) {
       _levels[level] = await _loadLevel(level);
     }
   }

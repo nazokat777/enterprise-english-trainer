@@ -2,6 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 
+import 'levels.dart';
+
 /// Mashqning o'yin turi. Kitobdagi 43 xil mashq shu 4 taga siqilgan
 /// (normalizatsiya `ingest/export_pages.py` da bajariladi).
 enum ExKind {
@@ -651,7 +653,41 @@ class UnitBrief {
 
 /// Kitob kontentini asset'lardan yuklaydigan repozitoriy.
 class BookRepository {
-  static const _dir = 'assets/content/enterprise1';
+  /// Har bir daraja o'z kitob to'plamiga ega — ro'yxat `levels.dart` da.
+  ///
+  /// Ilgari papka QAT'IY yozilgan edi (`enterprise1`): daraja
+  /// almashtirilsa lug'at o'zgarardi, kitob bo'limi esa baribir
+  /// Enterprise 1 ni ko'rsatardi.
+  static Map<String, String> get dirs =>
+      {for (final l in kLevels) l.id: l.bookDir};
+
+  /// Kitob kontenti HAQIQATAN bor darajalar.
+  ///
+  /// Qo'lda yozilgan ro'yxat emas: `probeLevels()` har bir darajaning
+  /// `index.json` ini o'qib ko'radi. Aks holda Elementary qo'shilganda
+  /// yoki olib tashlanganda ro'yxatni yangilash esdan chiqishi mumkin.
+  static final Set<String> availableLevels = {};
+
+  static bool hasBook(String level) => availableLevels.contains(level);
+
+  /// Qaysi darajalarda kitob borligini aniqlaydi (ilova ochilganda).
+  static Future<void> probeLevels() async {
+    availableLevels.clear();
+    for (final e in dirs.entries) {
+      try {
+        final s = await rootBundle.loadString('${e.value}/index.json');
+        final j = json.decode(s) as Map<String, dynamic>;
+        if ((j['units'] as List? ?? []).isNotEmpty) {
+          availableLevels.add(e.key);
+        }
+      } catch (_) {
+        // Bu daraja uchun kitob yo'q — ro'yxatga qo'shilmaydi.
+      }
+    }
+  }
+
+  String _level = kDefaultLevel;
+  String get _dir => levelById(_level).bookDir;
 
   final List<UnitBrief> units = [];
   final Map<int, BookUnit> _cache = {};
@@ -664,6 +700,14 @@ class BookRepository {
   /// o'zi ajratardi — ekran ~7 soniya aylanardi. Endi ro'yxat eksportda
   /// bir marta hisoblanadi.
   final List<DialogueBrief> dialogues = [];
+
+  /// Darajani almashtiradi va kitobni qaytadan o'qiydi.
+  Future<void> setLevel(String level) async {
+    if (_level == level) return;
+    _level = level;
+    _cache.clear();
+    await loadIndex();
+  }
 
   Future<void> loadIndex() async {
     try {

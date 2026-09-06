@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'levels.dart';
 import 'srs.dart';
 
 /// Ko'nikma turlari (progress bar uchun).
@@ -20,7 +22,7 @@ class Progress extends ChangeNotifier {
   int todayXp = 0;
   String _todayKey = '';
   bool darkMode = false;
-  String currentLevel = 'beginner'; // beginner | elementary
+  String currentLevel = kDefaultLevel; // ro'yxat: levels.dart
   final Map<String, int> skills = {}; // Skill.name -> 0..100
 
   // Per-so'z SM-2 holati (kalit: 'level::wordId') va tugatilgan pack/mashqlar.
@@ -86,7 +88,7 @@ class Progress extends ChangeNotifier {
     todayXp = p.getInt('todayXp') ?? 0;
     _todayKey = p.getString('todayKey') ?? '';
     darkMode = p.getBool('dark') ?? false;
-    currentLevel = p.getString('level') ?? 'beginner';
+    currentLevel = p.getString('level') ?? kDefaultLevel;
     final sk = p.getString('skills');
     if (sk != null) {
       (json.decode(sk) as Map)

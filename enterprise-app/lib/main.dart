@@ -19,7 +19,16 @@ Future<void> main() async {
   progress = Progress();
   repo = ContentRepository();
   book = BookRepository();
-  await Future.wait([progress.load(), repo.load(), book.loadIndex()]);
+  await Future.wait([
+    progress.load(),
+    repo.load(),
+    book.loadIndex(),
+    // Qaysi darajalarda KITOB borligi — daraja tanlagichi shunga
+    // qarab ochiladi.
+    BookRepository.probeLevels(),
+  ]);
+  // Saqlangan daraja Beginner bo'lmasa, kitob ham o'shanga o'tsin.
+  await book.setLevel(progress.currentLevel);
   runApp(const EnterpriseApp());
 }
 

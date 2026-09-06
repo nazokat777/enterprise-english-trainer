@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../book_content.dart';
+import '../levels.dart';
 import '../main.dart';
 import '../theme.dart';
 import '../widgets/geo_bg.dart';
@@ -312,21 +314,29 @@ class _LevelSwitcher extends StatelessWidget {
   const _LevelSwitcher();
   @override
   Widget build(BuildContext context) {
-    final label = progress.currentLevel == 'beginner' ? 'Beginner' : 'Elementary';
+    final label = levelLabel(progress.currentLevel);
     // Daraja KONTENTI bormi — shu yerda hal qilinadi. Ilgari ro'yxat
     // qat'iy edi: bo'sh darajani tanlash mumkin bo'lgani uchun yuqorida
     // "Elementary" yozilib turardi, kitob bo'limi esa baribir Beginner
     // kontentini ko'rsatardi.
-    bool ready(String lvl) => repo.forLevel(lvl).units.isNotEmpty;
+    // Daraja tayyor: lug'ati YOKI kitobi bor.
+    bool ready(String lvl) =>
+        repo.forLevel(lvl).units.isNotEmpty || BookRepository.hasBook(lvl);
     return PopupMenuButton<String>(
-      onSelected: progress.setLevel,
+      // Daraja almashsa KITOB ham almashishi kerak — ilgari faqat
+      // lug'at almashardi.
+      onSelected: (lvl) async {
+        await progress.setLevel(lvl);
+        await book.setLevel(lvl);
+        if (context.mounted) (context as Element).markNeedsBuild();
+      },
       itemBuilder: (_) => [
-        for (final lvl in const [('beginner', 'Beginner'),
-                                 ('elementary', 'Elementary')])
+        for (final lvl in kLevels)
           PopupMenuItem(
-            value: lvl.$1,
-            enabled: ready(lvl.$1),
-            child: Text(ready(lvl.$1) ? lvl.$2 : '${lvl.$2} — tayyor emas'),
+            value: lvl.id,
+            enabled: ready(lvl.id),
+            child: Text(
+                ready(lvl.id) ? lvl.label : '${lvl.label} — tayyor emas'),
           ),
       ],
       child: Container(
