@@ -69,4 +69,19 @@ void main() {
     await t.pump();
     expect(find.textContaining('Suhbatlar'), findsWidgets);
   });
+
+  testWidgets('kontenti yo\'q daraja tanlanmaydi', (t) async {
+    // Ilgari ro'yxat qat'iy edi: bo'sh 'Elementary' ni tanlash mumkin
+    // bo'lgani uchun yuqorida shu yozuv turardi, kitob bo'limi esa
+    // baribir Beginner kontentini ko'rsatardi.
+    await pumpAt(t, const Size(1280, 800));
+
+    await t.tap(find.text('Beginner').first);
+    await t.pumpAndSettle();
+
+    expect(find.textContaining('Elementary'), findsOneWidget);
+    final item = t.widget<PopupMenuItem<String>>(
+        find.widgetWithText(PopupMenuItem<String>, 'Elementary — tayyor emas'));
+    expect(item.enabled, isFalse);
+  });
 }

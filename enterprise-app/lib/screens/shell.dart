@@ -287,11 +287,21 @@ class _LevelSwitcher extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final label = progress.currentLevel == 'beginner' ? 'Beginner' : 'Elementary';
+    // Daraja KONTENTI bormi — shu yerda hal qilinadi. Ilgari ro'yxat
+    // qat'iy edi: bo'sh darajani tanlash mumkin bo'lgani uchun yuqorida
+    // "Elementary" yozilib turardi, kitob bo'limi esa baribir Beginner
+    // kontentini ko'rsatardi.
+    bool ready(String lvl) => repo.forLevel(lvl).units.isNotEmpty;
     return PopupMenuButton<String>(
       onSelected: progress.setLevel,
-      itemBuilder: (_) => const [
-        PopupMenuItem(value: 'beginner', child: Text('Beginner')),
-        PopupMenuItem(value: 'elementary', child: Text('Elementary')),
+      itemBuilder: (_) => [
+        for (final lvl in const [('beginner', 'Beginner'),
+                                 ('elementary', 'Elementary')])
+          PopupMenuItem(
+            value: lvl.$1,
+            enabled: ready(lvl.$1),
+            child: Text(ready(lvl.$1) ? lvl.$2 : '${lvl.$2} — tayyor emas'),
+          ),
       ],
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
