@@ -6,6 +6,7 @@ import 'package:enterprise_english/book_content.dart';
 import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
 import 'package:enterprise_english/stats.dart';
+import 'package:enterprise_english/screens/book/book_screens.dart';
 import 'package:enterprise_english/screens/book/exercise_player.dart';
 import 'package:enterprise_english/screens/book/reference_screens.dart';
 
@@ -135,5 +136,38 @@ void main() {
     await t.pumpWidget(const SizedBox());
     expect(count, greaterThan(50));
     expect(broken, isEmpty, reason: broken.take(10).join('; '));
+  });
+
+
+  // Unit va bet ro\'yxatlari ham haqiqiy kontent bilan chiziladi.
+  // `mobile_layout_test.dart` faqat SUN\'IY unit bilan ishlaydi.
+  testWidgets('barcha unit va bet ekranlari 320px da sig\'adi', (t) async {
+    t.view.physicalSize = const Size(320, 640);
+    t.view.devicePixelRatio = 1.0;
+    addTearDown(t.view.reset);
+
+    final broken = <String>[];
+    var count = 0;
+
+    Future<void> check(String what, Widget w) async {
+      count++;
+      await t.pumpWidget(MaterialApp(home: Scaffold(body: w)));
+      await t.pump();
+      final err = t.takeException();
+      if (err != null) broken.add('$what: $err');
+    }
+
+    for (final u in allUnits) {
+      await check('${u.displayLabel} unit', BookUnitScreen(unit: u));
+      await check('${u.displayLabel} betlar', BookPagesScreen(unit: u));
+      for (final pg in u.pages()) {
+        await check('${u.displayLabel} ${pg.book} ${pg.bookPage}-bet',
+            BookPageScreen(page: pg));
+      }
+    }
+
+    await t.pumpWidget(const SizedBox());
+    expect(count, greaterThan(200));
+    expect(broken, isEmpty, reason: broken.take(8).join('; '));
   });
 }
