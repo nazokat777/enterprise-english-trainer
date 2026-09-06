@@ -210,18 +210,27 @@ class RuleScreen extends StatelessWidget {
                     color: AppColors.brandPurple)),
           ),
           Expanded(
-            child: Wrap(
-              spacing: 10,
-              runSpacing: 4,
-              children: [
-                if (affLong.isNotEmpty) _chip(affLong, AppColors.success),
-                if (aff.isNotEmpty && aff != affLong)
-                  _chip(aff, AppColors.success),
-                if (negLong.isNotEmpty) _chip(negLong, AppColors.danger),
-                if (negShort.isNotEmpty && negShort != negLong)
-                  _chip(negShort, AppColors.danger),
-                if (q.isNotEmpty) _chip(q, AppColors.actionBlue),
-              ],
+            // Tor telefonda uzun shakl ("Yes, they have got.") bitta
+            // qatorga sig'masdi va Wrap uni QISQARTIRA olmasdi —
+            // "RenderFlex overflowed" chizig'i chiqardi. Har bir
+            // yozuvga mavjud kenglik chegara qilib beriladi.
+            child: LayoutBuilder(
+              builder: (context, c) => Wrap(
+                spacing: 10,
+                runSpacing: 4,
+                children: [
+                  if (affLong.isNotEmpty)
+                    _chip(affLong, AppColors.success, c.maxWidth),
+                  if (aff.isNotEmpty && aff != affLong)
+                    _chip(aff, AppColors.success, c.maxWidth),
+                  if (negLong.isNotEmpty)
+                    _chip(negLong, AppColors.danger, c.maxWidth),
+                  if (negShort.isNotEmpty && negShort != negLong)
+                    _chip(negShort, AppColors.danger, c.maxWidth),
+                  if (q.isNotEmpty)
+                    _chip(q, AppColors.actionBlue, c.maxWidth),
+                ],
+              ),
             ),
           ),
         ],
@@ -229,15 +238,21 @@ class RuleScreen extends StatelessWidget {
     );
   }
 
-  Widget _chip(String t, Color c) => Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-        decoration: BoxDecoration(
-          color: c.withValues(alpha: 0.10),
-          borderRadius: BorderRadius.circular(AppRadius.sm),
+  /// [maxWidth] berilsa, yozuv shu kenglikdan oshmaydi va matn
+  /// qatorlarga bo'linadi — tor telefonda chiqib ketmasligi uchun.
+  Widget _chip(String t, Color c, [double maxWidth = double.infinity]) =>
+      ConstrainedBox(
+        constraints: BoxConstraints(maxWidth: maxWidth),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+          decoration: BoxDecoration(
+            color: c.withValues(alpha: 0.10),
+            borderRadius: BorderRadius.circular(AppRadius.sm),
+          ),
+          child: Text(t,
+              style: TextStyle(
+                  fontSize: 12.5, fontWeight: FontWeight.w700, color: c)),
         ),
-        child: Text(t,
-            style: TextStyle(
-                fontSize: 12.5, fontWeight: FontWeight.w700, color: c)),
       );
 
   List<Widget> _rulesList(BuildContext context) {
@@ -364,10 +379,15 @@ class RuleScreen extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 12, color: AppColors.muted(context))),
               const SizedBox(height: 7),
-              Row(
+              // "Yes, I have." / "No, I haven't." juftligi tor
+              // telefonda bitta qatorga sig'masdi va 269 pikselgacha
+              // chiqib ketardi. `Wrap` sig'masa ikkinchi qatorga
+              // o'tkazadi.
+              Wrap(
+                spacing: 8,
+                runSpacing: 6,
                 children: [
                   _chip(x['yes']?.toString() ?? '', AppColors.success),
-                  const SizedBox(width: 8),
                   _chip(x['no']?.toString() ?? '', AppColors.danger),
                 ],
               ),

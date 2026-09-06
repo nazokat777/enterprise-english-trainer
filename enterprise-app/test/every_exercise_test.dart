@@ -7,6 +7,7 @@ import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/book/exercise_player.dart';
+import 'package:enterprise_english/screens/book/reference_screens.dart';
 
 /// KITOBDAGI HAR BIR MASHQ chiziladimi.
 ///
@@ -34,7 +35,8 @@ void main() {
     allUnits = loaded.whereType<BookUnit>().toList();
   });
 
-  Future<void> renderAll(WidgetTester t, Size size) async {
+  Future<void> renderAll(WidgetTester t, Size size,
+      {double scale = 1.0}) async {
     t.view.physicalSize = size;
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
@@ -47,10 +49,13 @@ void main() {
         for (final e in s.exercises) {
           count++;
           await t.pumpWidget(MaterialApp(
-            home: ExercisePlayer(
-              exercise: e,
-              sectionTitle: s.titleUz,
-              unitLabel: u.displayLabel,
+            home: MediaQuery(
+              data: MediaQueryData(textScaler: TextScaler.linear(scale)),
+              child: ExercisePlayer(
+                exercise: e,
+                sectionTitle: s.titleUz,
+                unitLabel: u.displayLabel,
+              ),
             ),
           ));
           await t.pump();
@@ -67,7 +72,8 @@ void main() {
 
     expect(count, greaterThan(1000), reason: 'kitob to\'liq yuklansin');
     expect(broken, isEmpty,
-        reason: '${size.width.round()}px: ${broken.take(10).join('; ')}');
+        reason: '${size.width.round()}px x$scale: '
+            '${broken.take(10).join('; ')}');
   }
 
   testWidgets('barcha mashqlar 375px da xatosiz chiziladi', (t) async {
@@ -79,5 +85,55 @@ void main() {
   // ko'rgandagina sezish mumkin edi.
   testWidgets('barcha mashqlar 320px da ham sig\'adi', (t) async {
     await renderAll(t, const Size(320, 640));
+  });
+
+  // Tizim shrifti kattalashtirilgan telefonlar ham bor.
+  testWidgets('barcha mashqlar 1.5x shriftda sig\'adi', (t) async {
+    await renderAll(t, const Size(375, 812), scale: 1.5);
+  });
+
+
+  // Mashqlardan tashqari ma\'lumotnoma ekranlari ham kitob kontentini
+  // chizadi: qoidalar, so\'z oilalari, gap qoliplari, unit lug\'ati.
+  // Ularda ham noyob shakl uchrashi mumkin.
+  testWidgets('barcha ma\'lumotnoma ekranlari 320px da sig\'adi', (t) async {
+    t.view.physicalSize = const Size(320, 640);
+    t.view.devicePixelRatio = 1.0;
+    addTearDown(t.view.reset);
+
+    final broken = <String>[];
+    var count = 0;
+
+    Future<void> check(String what, Widget w) async {
+      count++;
+      await t.pumpWidget(MaterialApp(home: Scaffold(body: w)));
+      await t.pump();
+      final err = t.takeException();
+      if (err != null) broken.add('$what: $err');
+    }
+
+    for (final u in allUnits) {
+      if (u.wordFormation.isNotEmpty) {
+        await check('${u.displayLabel} so\'z yasalishi',
+            WordFormationScreen(unit: u));
+      }
+      if (u.sentencePatterns.isNotEmpty) {
+        await check('${u.displayLabel} gap qoliplari',
+            SentencePatternsScreen(unit: u));
+      }
+      if (u.vocabulary.isNotEmpty) {
+        await check('${u.displayLabel} lug\'at', UnitVocabularyScreen(unit: u));
+      }
+      for (final s in u.sections) {
+        if (s.rule != null) {
+          await check('${u.displayLabel} / ${s.titleUz} qoida',
+              RuleScreen(section: s));
+        }
+      }
+    }
+
+    await t.pumpWidget(const SizedBox());
+    expect(count, greaterThan(50));
+    expect(broken, isEmpty, reason: broken.take(10).join('; '));
   });
 }
