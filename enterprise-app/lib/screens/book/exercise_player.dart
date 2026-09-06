@@ -58,6 +58,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   /// Uzun ko'rsatma to'liq ochilganmi.
   bool _instrOpen = false;
 
+  /// Moslash mashqida topilgan juftlar — sarlavhadagi chiziq uchun.
+  int _matchDone = 0;
+
   int _correct = 0;
   int _xp = 0;
   bool _done = false;
@@ -242,7 +245,12 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     final total = simple ? 1 : ex.tasks.length;
     // Chiziq NAVBATDAGI o'rinni emas, O'ZLAShTIRILGAN bandlarni
     // ko'rsatadi: xato qilinsa u orqaga qaytadi va bu halol.
-    final value = simple ? 1.0 : _mastered.length / total;
+    //
+    // Moslashda chiziq ilgari BOShIDANOQ to'la turardi — 50 juftlik
+    // lug'at ro'yxatida o'quvchi qancha qolganini bilolmasdi.
+    final value = ex.kind == ExKind.match
+        ? (ex.tasks.isEmpty ? 1.0 : _matchDone / ex.tasks.length)
+        : (simple ? 1.0 : _mastered.length / total);
     // Bu band ilgari xato qilinganmi — o'quvchi qaytganini bilsin.
     final repeat = !simple && (_misses[_index] ?? 0) > 0;
     return Padding(
@@ -365,8 +373,17 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           tasks: ex.tasks,
           explanation: ex.explanationUz,
           audioNote: ex.audioNoteUz,
+          onProgress: (done, total) {
+            if (mounted) setState(() => _matchDone = done);
+          },
           onDone: (right) {
             _correct = right;
+            // XATO edi: moslash faqat mashq bonusini (+3) berardi.
+            // Tanlash mashqi esa HAR BAND uchun +2 beradi — natijada
+            // 50 juftlik lug'at ro'yxatini moslash 3 XP, to'rt bandli
+            // kichik mashq esa 11 XP olib kelardi.
+            _xp += right * 2;
+            progress.addXp(right * 2, skill: _skillOf(ex));
             setState(() {
               _done = true;
               _finish();
@@ -977,11 +994,19 @@ class _MatchStage extends StatefulWidget {
   final String explanation;
   final ValueChanged<int> onDone;
 
+  /// Nechta juft topilgani — sarlavhadagi chiziq uchun.
+  ///
+  /// Ilgari moslash mashqida chiziq BOShIDANOQ to'la ko'rinardi.
+  /// Kitob oxiridagi 50 juftlik lug'at ro'yxatida bu ayniqsa
+  /// aldamchi edi: o'quvchi qancha qolganini bilolmasdi.
+  final void Function(int done, int total)? onProgress;
+
   const _MatchStage({
     required this.tasks,
     required this.explanation,
     this.audioNote = '',
     required this.onDone,
+    this.onProgress,
   });
 
   @override
@@ -1041,6 +1066,8 @@ class _MatchStageState extends State<_MatchStage> {
         _matched.add(r.left);
         _sel = null;
       });
+      widget.onProgress?.call(
+          _round * _roundSize + _matched.length, widget.tasks.length);
       Tts.instance.speak(r.speakAnswer, id: r.left);
       final roundDone = _left.every((t) => _matched.contains(t.left));
       if (!roundDone) return;
