@@ -568,7 +568,7 @@ class BookPagesScreen extends StatelessWidget {
     // Bet faqat hamma mashq XATOSIZ o'zlashtirilganda tugagan
     // hisoblanadi — aks holda takrorlash kerakligi ko'rinmay qolardi.
     final done = p.exercises.every((e) {
-      final id = 'ex::${e.book}::${e.bookPage}::${e.ref}';
+      final id = e.progressId;
       return progress.isDone(id) && !progress.needsRepeat(id);
     });
     return Padding(
@@ -892,7 +892,7 @@ class _ExerciseTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final info = _kindInfo;
-    final id = 'ex::${exercise.book}::${exercise.bookPage}::${exercise.ref}';
+    final id = exercise.progressId;
     final done = progress.isDone(id);
     // Tugatilgan, lekin XATO bilan — o'zlashtirilmagan. Yashil belgi
     // qo'yish o'quvchini adashtiradi.

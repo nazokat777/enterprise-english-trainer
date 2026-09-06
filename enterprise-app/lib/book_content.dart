@@ -175,7 +175,23 @@ class BookExercise {
   final String pageLabel;
   final List<ExTask> tasks;
 
-  const BookExercise({
+  /// Progress uchun BARQAROR va NOYOB kalit.
+  ///
+  /// XATO: ilgari har joyda qo'lda `ex::book::page::ref` yig'ilardi.
+  /// Raqamlanmagan betlarda `bookPage` = 0 va `ref` = "muqova" bo'lgani
+  /// uchun to'rtta har xil mashq BIR XIL kalit olardi — bittasini
+  /// tugatsangiz to'rttasi ham tugagan hisoblanardi.
+  ///
+  /// Raqamli betlar kalitini o'zgartirmaymiz — aks holda o'quvchining
+  /// mavjud natijalari yo'qoladi.
+  /// Yuklashda `BookRepository.load` to'ldiradi — JSON da yo'q.
+  int unitNo = 0;
+
+  String get progressId => bookPage == 0
+      ? 'ex::$book::0::$ref::$unitNo::$pageLabel'
+      : 'ex::$book::$bookPage::$ref';
+
+  BookExercise({
     required this.ref,
     required this.kind,
     required this.tasks,
@@ -636,6 +652,14 @@ class BookRepository {
     try {
       final s = await rootBundle.loadString('$_dir/unit_$unit.json');
       final u = BookUnit.fromJson(json.decode(s) as Map<String, dynamic>);
+      // Mashq o'zi qaysi unitda turganini bilmaydi, lekin progress
+      // kaliti noyob bo'lishi uchun bu kerak: raqamlanmagan muqova
+      // betlarida `book/page/ref` uchligi bir nechta unitda takrorlanadi.
+      for (final sec in u.sections) {
+        for (final ex in sec.exercises) {
+          ex.unitNo = u.unit;
+        }
+      }
       _cache[unit] = u;
       return u;
     } catch (_) {

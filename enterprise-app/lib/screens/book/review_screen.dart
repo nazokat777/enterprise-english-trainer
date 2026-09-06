@@ -38,14 +38,19 @@ class _ReviewScreenState extends State<ReviewScreen> {
   ///
   /// Unitlar odatda KERAK BO'LGANDA yuklanadi; bu yerda hammasi bir
   /// marta o'qiladi va keshda qoladi.
+  ///
+  /// TEZLIK: ilgari `for` ichida `await` turardi — 51 ta JSON fayl
+  /// BIRIN-KETIN so'ralardi va ekran ~20 soniya "aylanib" turardi.
+  /// Endi hammasi bir vaqtda so'raladi.
   Future<void> _collect() async {
+    final loaded = await Future.wait(
+        book.units.map((brief) => book.load(brief.unit)));
     final out = <_Item>[];
-    for (final brief in book.units) {
-      final u = await book.load(brief.unit);
+    for (final u in loaded) {
       if (u == null) continue;
       for (final s in u.sections) {
         for (final e in s.exercises) {
-          final id = 'ex::${e.book}::${e.bookPage}::${e.ref}';
+          final id = e.progressId;
           if (progress.needsRepeat(id)) out.add(_Item(u, s, e));
         }
       }

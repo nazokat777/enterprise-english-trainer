@@ -147,7 +147,7 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   }
 
   void _finish() {
-    final id = 'ex::${ex.book}::${ex.bookPage}::${ex.ref}';
+    final id = ex.progressId;
     final first = !progress.isDone(id);
     // Xatosiz o'tilganda mashq O'ZLAShTIRILGAN hisoblanadi. Aks holda
     // u "takrorlash kerak" bo'lib qoladi va ro'yxatda shunday
