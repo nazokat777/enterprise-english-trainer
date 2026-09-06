@@ -34,8 +34,8 @@ void main() {
     allUnits = loaded.whereType<BookUnit>().toList();
   });
 
-  testWidgets('barcha mashqlar xatosiz chiziladi', (t) async {
-    t.view.physicalSize = const Size(375, 812);
+  Future<void> renderAll(WidgetTester t, Size size) async {
+    t.view.physicalSize = size;
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
 
@@ -66,6 +66,18 @@ void main() {
     await t.pumpWidget(const SizedBox());
 
     expect(count, greaterThan(1000), reason: 'kitob to\'liq yuklansin');
-    expect(broken, isEmpty, reason: broken.take(10).join('\n'));
+    expect(broken, isEmpty,
+        reason: '${size.width.round()}px: ${broken.take(10).join('; ')}');
+  }
+
+  testWidgets('barcha mashqlar 375px da xatosiz chiziladi', (t) async {
+    await renderAll(t, const Size(375, 812));
+  });
+
+  // Chiqib ketish (overflow) aynan TOR ekranda chiqadi — qobiq
+  // panelida shunday xato bor edi va uni faqat brauzerda ochib
+  // ko'rgandagina sezish mumkin edi.
+  testWidgets('barcha mashqlar 320px da ham sig\'adi', (t) async {
+    await renderAll(t, const Size(320, 640));
   });
 }

@@ -55,6 +55,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   /// Har bir band bo'yicha xato soni — natijada ko'rsatiladi.
   final Map<int, int> _misses = <int, int>{};
 
+  /// Uzun ko'rsatma to'liq ochilganmi.
+  bool _instrOpen = false;
+
   int _correct = 0;
   int _xp = 0;
   bool _done = false;
@@ -252,10 +255,35 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           Row(
             children: [
               Expanded(
-                child: Text(
-                  ex.instructionUz,
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w800, fontSize: 14),
+                // Ba'zi ko'rsatmalar juda uzun (280 belgigacha). Tor
+                // telefonda ular sarlavhani cho'zib, o'yin joyini
+                // siqib qo'yardi — "RenderFlex overflowed" chizig'i
+                // chiqardi. Endi uch qatorgacha ko'rsatiladi, bosilsa
+                // to'liq ochiladi (matn yo'qolmaydi).
+                child: GestureDetector(
+                  onTap: () =>
+                      setState(() => _instrOpen = !_instrOpen),
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxHeight: _instrOpen
+                          ? MediaQuery.of(context).size.height * 0.3
+                          : double.infinity,
+                    ),
+                    child: SingleChildScrollView(
+                      physics: _instrOpen
+                          ? null
+                          : const NeverScrollableScrollPhysics(),
+                      child: Text(
+                        ex.instructionUz,
+                        maxLines: _instrOpen ? null : 3,
+                        overflow: _instrOpen
+                            ? TextOverflow.clip
+                            : TextOverflow.ellipsis,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w800, fontSize: 14),
+                      ),
+                    ),
+                  ),
                 ),
               ),
               if (repeat)
