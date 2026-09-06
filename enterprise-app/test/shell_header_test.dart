@@ -7,6 +7,7 @@ import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/shell.dart';
+import 'package:enterprise_english/screens/book/conversations_screen.dart';
 
 /// TELEFONDA yuqori panel ilgari ekrandan CHIQIB KETARDI: 375px kenglikda
 /// Flutter "RIGHT OVERFLOWED BY 47 PIXELS" sariq-qora chizig'ini chizardi.
@@ -64,10 +65,10 @@ void main() {
       await t.pump();
       expect(t.takeException(), isNull, reason: label);
     }
-    // Hali tayyor bo'lmagan bo'limlar "keyingi fazalarda" deb chiqadi.
+    // "Suhbatlar" ilgari bo'sh "keyingi fazalarda" ekranini ochardi.
     await t.tap(find.text('Suhbatlar').first);
     await t.pump();
-    expect(find.textContaining('Suhbatlar'), findsWidgets);
+    expect(find.byType(ConversationsScreen), findsOneWidget);
   });
 
   testWidgets('kontenti yo\'q daraja tanlanmaydi', (t) async {

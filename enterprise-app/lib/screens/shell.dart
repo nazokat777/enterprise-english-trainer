@@ -6,6 +6,7 @@ import 'hard_words_screen.dart';
 import 'level_reference_screens.dart';
 import 'units_screen.dart';
 import 'book/book_screens.dart';
+import 'book/conversations_screen.dart';
 
 /// Ilova qobig'i — chap sidebar + header (retention indikatorlari).
 /// Keng ekranda doimiy sidebar, tor ekranda drawer.
@@ -159,6 +160,8 @@ class _AppShellState extends State<AppShell> {
         return const LevelGrammarScreen(); // daraja grammatikasi
       case 4:
         return const LevelWordFormationScreen(); // so'z oilalari
+      case 5:
+        return const ConversationsScreen(); // kitobdagi barcha dialoglar
       default:
         return _Placeholder(title: _items[_sel].$2);
     }
