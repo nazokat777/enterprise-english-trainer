@@ -18,14 +18,27 @@ class ConversationsScreen extends StatefulWidget {
 }
 
 /// Gapiruvchi belgisi: "A: ", "Ann: ", "Tom: ".
-final RegExp _speaker = RegExp(r'^[A-Z][A-Za-z]{0,9}:\s');
+final RegExp _speaker = RegExp(r'^([A-Z][A-Za-z]{0,9}):\s');
+
+/// Ikki nuqta bilan tugaydigan, LEKIN gapiruvchi bo'lmagan yorliqlar.
+///
+/// Bularsiz ro'yxatga mundarija ("Contents:"), mavzu sarlavhalari
+/// ("SHOPPING:", "NIGHTLIFE:"), grammatika taqqoslashlari ("AmE:",
+/// "BrE:") va o'zbekcha qaydlar ("QAYD:") ham tushib qolardi.
+const Set<String> _notSpeakers = {
+  'contents', 'grammar', 'note', 'qayd', 'ame', 'bre', 'shopping',
+  'nightlife', 'page', 'unit', 'module', 'example', 'answer',
+};
 
 /// Mashq dialogmi? Kamida ikkita gapiruvchili qator bo'lsa — ha.
 bool isDialogue(BookExercise e) {
   if (e.kind != ExKind.study) return false;
   var lines = 0;
   for (final t in e.tasks) {
-    if (_speaker.hasMatch(t.en.trim())) lines++;
+    final m = _speaker.firstMatch(t.en.trim());
+    if (m == null) continue;
+    if (_notSpeakers.contains(m.group(1)!.toLowerCase())) continue;
+    lines++;
     if (lines >= 2) return true;
   }
   return false;

@@ -35,6 +35,29 @@ void main() {
     expect(found, greaterThan(20), reason: 'kitobda dialoglar bor');
   });
 
+  // XATO: aniqlagich "Contents:", "SHOPPING:", "AmE:" kabi
+  // sarlavhalarni ham gapiruvchi deb hisoblardi va mundarija sahifasi
+  // suhbatlar ro'yxatida birinchi bo'lib turardi.
+  test('sarlavhalar dialog deb hisoblanmaydi', () async {
+    final wrong = <String>[];
+    for (final brief in app.book.units) {
+      final u = await app.book.load(brief.unit);
+      for (final s in u!.sections) {
+        for (final e in s.exercises) {
+          if (!isDialogue(e)) continue;
+          for (final t in e.tasks) {
+            final head = t.en.trim().split(':').first.toLowerCase();
+            if (const ['contents', 'grammar', 'ame', 'bre', 'shopping',
+                       'nightlife', 'qayd'].contains(head)) {
+              wrong.add('${u.displayLabel} Ex.${e.ref}: ${t.en}');
+            }
+          }
+        }
+      }
+    }
+    expect(wrong, isEmpty, reason: wrong.join('; '));
+  });
+
   testWidgets('suhbatlar ekrani ro\'yxatni chizadi', (t) async {
     await t.runAsync(
         () => Future.wait(app.book.units.map((b) => app.book.load(b.unit))));
