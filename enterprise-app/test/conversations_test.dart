@@ -22,34 +22,26 @@ void main() {
         [app.progress.load(), app.repo.load(), app.book.loadIndex()]);
   });
 
-  test('kitobda dialoglar topiladi', () async {
-    var found = 0;
-    for (final brief in app.book.units) {
-      final u = await app.book.load(brief.unit);
-      for (final s in u!.sections) {
-        for (final e in s.exercises) {
-          if (isDialogue(e)) found++;
-        }
-      }
-    }
-    expect(found, greaterThan(20), reason: 'kitobda dialoglar bor');
+  // Dialoglar ro'yxati EKSPORTDA hisoblanadi va indeksga yoziladi.
+  // Ilova uni o'zi ajratmaydi — shuning uchun tekshiruv ham aynan
+  // eksport natijasiga qaraydi.
+  test('indeksda dialoglar bor', () {
+    expect(app.book.dialogues.length, greaterThan(20));
   });
 
-  // XATO: aniqlagich "Contents:", "SHOPPING:", "AmE:" kabi
-  // sarlavhalarni ham gapiruvchi deb hisoblardi va mundarija sahifasi
-  // suhbatlar ro'yxatida birinchi bo'lib turardi.
-  test('sarlavhalar dialog deb hisoblanmaydi', () async {
+  test('sarlavhalar dialog deb hisoblanmagan', () async {
     final wrong = <String>[];
-    for (final brief in app.book.units) {
-      final u = await app.book.load(brief.unit);
-      for (final s in u!.sections) {
+    for (final d in app.book.dialogues) {
+      final u = await app.book.load(d.unit);
+      if (u == null) continue;
+      for (final s in u.sections) {
         for (final e in s.exercises) {
-          if (!isDialogue(e)) continue;
-          for (final t in e.tasks) {
-            final head = t.en.trim().split(':').first.toLowerCase();
+          if (e.ref != d.ref || e.bookPage != d.bookPage) continue;
+          for (final task in e.tasks) {
+            final head = task.en.trim().split(':').first.toLowerCase();
             if (const ['contents', 'grammar', 'ame', 'bre', 'shopping',
                        'nightlife', 'qayd'].contains(head)) {
-              wrong.add('${u.displayLabel} Ex.${e.ref}: ${t.en}');
+              wrong.add('${u.displayLabel} Ex.${e.ref}: ${task.en}');
             }
           }
         }

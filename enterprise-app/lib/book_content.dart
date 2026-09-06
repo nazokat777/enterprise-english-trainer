@@ -582,6 +582,31 @@ class BookUnit {
 }
 
 /// Unit'lar ro'yxatidagi qisqa yozuv (index.json).
+/// Indeksdagi dialog yozuvi — mashqning manzili.
+class DialogueBrief {
+  final int unit;
+  final String section;
+  final String ref;
+  final String book;
+  final int bookPage;
+
+  const DialogueBrief({
+    required this.unit,
+    required this.section,
+    required this.ref,
+    required this.book,
+    required this.bookPage,
+  });
+
+  factory DialogueBrief.fromJson(Map<String, dynamic> j) => DialogueBrief(
+        unit: (j['unit'] as num?)?.toInt() ?? 0,
+        section: j['section'] as String? ?? '',
+        ref: j['ref'] as String? ?? '',
+        book: j['book'] as String? ?? '',
+        bookPage: (j['bookPage'] as num?)?.toInt() ?? 0,
+      );
+}
+
 class UnitBrief {
   final int unit, module, sections, exercises, tasks;
   final String title;
@@ -633,6 +658,13 @@ class BookRepository {
 
   /// Mavjud unit'lar ro'yxatini yuklaydi. Fayl bo'lmasa — bo'sh qoladi
   /// (ilova baribir ishlaydi).
+  /// Kitobdagi dialoglar — indeksda TAYYOR ro'yxat.
+  ///
+  /// Ilgari "Suhbatlar" ekrani 51 unitning hammasini o'qib, dialoglarni
+  /// o'zi ajratardi — ekran ~7 soniya aylanardi. Endi ro'yxat eksportda
+  /// bir marta hisoblanadi.
+  final List<DialogueBrief> dialogues = [];
+
   Future<void> loadIndex() async {
     try {
       final s = await rootBundle.loadString('$_dir/index.json');
@@ -641,8 +673,13 @@ class BookRepository {
         ..clear()
         ..addAll((j['units'] as List? ?? []).map(
             (e) => UnitBrief.fromJson((e as Map).cast<String, dynamic>())));
+      dialogues
+        ..clear()
+        ..addAll((j['dialogues'] as List? ?? []).map(
+            (e) => DialogueBrief.fromJson((e as Map).cast<String, dynamic>())));
     } catch (_) {
       units.clear();
+      dialogues.clear();
     }
   }
 

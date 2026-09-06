@@ -17,33 +17,6 @@ class ConversationsScreen extends StatefulWidget {
   State<ConversationsScreen> createState() => _ConversationsScreenState();
 }
 
-/// Gapiruvchi belgisi: "A: ", "Ann: ", "Tom: ".
-final RegExp _speaker = RegExp(r'^([A-Z][A-Za-z]{0,9}):\s');
-
-/// Ikki nuqta bilan tugaydigan, LEKIN gapiruvchi bo'lmagan yorliqlar.
-///
-/// Bularsiz ro'yxatga mundarija ("Contents:"), mavzu sarlavhalari
-/// ("SHOPPING:", "NIGHTLIFE:"), grammatika taqqoslashlari ("AmE:",
-/// "BrE:") va o'zbekcha qaydlar ("QAYD:") ham tushib qolardi.
-const Set<String> _notSpeakers = {
-  'contents', 'grammar', 'note', 'qayd', 'ame', 'bre', 'shopping',
-  'nightlife', 'page', 'unit', 'module', 'example', 'answer',
-};
-
-/// Mashq dialogmi? Kamida ikkita gapiruvchili qator bo'lsa — ha.
-bool isDialogue(BookExercise e) {
-  if (e.kind != ExKind.study) return false;
-  var lines = 0;
-  for (final t in e.tasks) {
-    final m = _speaker.firstMatch(t.en.trim());
-    if (m == null) continue;
-    if (_notSpeakers.contains(m.group(1)!.toLowerCase())) continue;
-    lines++;
-    if (lines >= 2) return true;
-  }
-  return false;
-}
-
 class _Item {
   final BookUnit unit;
   final BookSection section;
@@ -61,16 +34,28 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   }
 
   Future<void> _collect() async {
-    // Barcha unitlar BIR VAQTDA yuklanadi — birin-ketin yuklash
-    // takrorlash ekranida ~20 soniya kutishga olib kelgan edi.
-    final loaded =
-        await Future.wait(book.units.map((b) => book.load(b.unit)));
-    final out = <_Item>[];
+    // Dialoglar ro'yxati INDEKSDA tayyor turadi — faqat o'sha
+    // unitlar yuklanadi. Ilgari 51 unitning hammasi o'qilardi va
+    // ekran ~7 soniya aylanardi.
+    final briefs = book.dialogues;
+    final need = briefs.map((d) => d.unit).toSet().toList();
+    final loaded = await Future.wait(need.map(book.load));
+    final byUnit = <int, BookUnit>{};
     for (final u in loaded) {
+      if (u != null) byUnit[u.unit] = u;
+    }
+
+    final out = <_Item>[];
+    for (final d in briefs) {
+      final u = byUnit[d.unit];
       if (u == null) continue;
       for (final s in u.sections) {
         for (final e in s.exercises) {
-          if (isDialogue(e)) out.add(_Item(u, s, e));
+          if (e.ref == d.ref &&
+              e.book == d.book &&
+              e.bookPage == d.bookPage) {
+            out.add(_Item(u, s, e));
+          }
         }
       }
     }

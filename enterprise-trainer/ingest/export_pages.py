@@ -1239,6 +1239,43 @@ def main():
     # Ro'yxat tartibi: unit raqami bo'yicha, epizodlar o'z unitidan keyin.
     built.sort(key=lambda x: x[1]["order"])
 
+    # SUHBATLAR ro'yxati indeksda tayyor turadi.
+    #
+    # Ilova ilgari 51 unitning HAMMASINI o'qib, dialoglarni o'zi
+    # ajratardi — ekran ~7 soniya aylanardi. Endi ro'yxat eksportda
+    # bir marta hisoblanadi.
+    speaker = re.compile(r"^([A-Z][A-Za-z]{0,9}):\s")
+    not_speakers = {
+        "contents", "grammar", "note", "qayd", "ame", "bre", "shopping",
+        "nightlife", "page", "unit", "module", "example", "answer",
+    }
+
+    def is_dialogue(e) -> bool:
+        if e["kind"] != "study":
+            return False
+        lines = 0
+        for t in e["tasks"]:
+            m = speaker.match((t.get("en") or "").strip())
+            if not m or m.group(1).lower() in not_speakers:
+                continue
+            lines += 1
+            if lines >= 2:
+                return True
+        return False
+
+    dialogues = []
+    for unit, u in built:
+        for s in u["sections"]:
+            for e in s["exercises"]:
+                if is_dialogue(e):
+                    dialogues.append({
+                        "unit": unit,
+                        "section": s["titleUz"],
+                        "ref": e["ref"],
+                        "book": e["book"],
+                        "bookPage": e["bookPage"],
+                    })
+
     index = []
     for unit, u in built:
         (OUT / f"unit_{unit}.json").write_text(
@@ -1267,9 +1304,11 @@ def main():
         print(f"    turlari: {dict(kinds)}")
 
     (OUT / "index.json").write_text(
-        json.dumps({"units": index}, ensure_ascii=False, indent=1), encoding="utf-8"
+        json.dumps({"units": index, "dialogues": dialogues},
+                   ensure_ascii=False, indent=1), encoding="utf-8"
     )
-    print(f"\nSaqlandi -> {OUT}")
+    print(str(len(dialogues)) + " ta dialog indeksga yozildi")
+    print(f"Saqlandi -> {OUT}")
     return 0
 
 
