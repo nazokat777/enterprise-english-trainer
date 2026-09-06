@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../../book_content.dart';
+import '../../content.dart';
 import '../../main.dart';
 import '../../stats.dart';
 import '../../theme.dart';
@@ -102,6 +103,7 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       }
     } else {
       _misses[taskIndex] = (_misses[taskIndex] ?? 0) + 1;
+      await _noteWeakWord(ex.tasks[taskIndex]);
     }
 
     if (!mounted) return;
@@ -113,6 +115,26 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
         _finish();
       }
     });
+  }
+
+  /// Kitob mashqida xato qilingan band lug'atdagi so'zga tegishli
+  /// bo'lsa, o'sha so'z "qiyin" hisobiga qo'shiladi.
+  ///
+  /// Ilgari faqat lug'at mashqlari hisobga olinardi: o'quvchi kitob
+  /// mashqlarida bir xil so'zda qayta-qayta qoqilsa ham, "Qiyin
+  /// so'zlar" ro'yxatida u ko'rinmasdi.
+  Future<void> _noteWeakWord(ExTask t) async {
+    final ids = repo.forLevel(progress.currentLevel).idByEn;
+    // Javob inglizcha bo'lsa — o'sha, aks holda savol matni.
+    for (final candidate in [t.answer, t.right, t.prompt, t.en]) {
+      final key = normalizeWord(candidate);
+      if (key.isEmpty || key.contains(' ')) continue; // faqat bitta so'z
+      final id = ids[key];
+      if (id != null) {
+        await progress.recordMiss(id);
+        return;
+      }
+    }
   }
 
   Skill _skillOf(BookExercise e) {

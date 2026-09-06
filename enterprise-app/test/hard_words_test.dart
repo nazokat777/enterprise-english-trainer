@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/srs.dart';
 import 'package:enterprise_english/stats.dart';
 
@@ -171,6 +172,46 @@ void main() {
       await p2.load();
       expect(p2.needsRepeat('ex::cb::7::5'), isTrue,
           reason: 'ilova qayta ochilganda ham eslab qolsin');
+    });
+  });
+
+  group('normalizeWord — kitob javobini lug\'at bilan bog\'lash', () {
+    test('artikl, bosh harf va tinish belgisi hisobga olinmaydi', () {
+      expect(normalizeWord('The Sun.'), 'sun');
+      expect(normalizeWord('a dog'), 'dog');
+      expect(normalizeWord('to run'), 'run');
+      expect(normalizeWord('  Book!  '), 'book');
+    });
+  });
+
+  group('Progress — kitob mashqidagi xato', () {
+    test('recordMiss lapses ni oshiradi, JADVALNI buzmaydi', () async {
+      // Kitob mashqidagi xato lug'at takrorlash jadvalini
+      // (interval, keyingi sana) o'zgartirmasligi kerak.
+      final p = Progress();
+      await p.load();
+
+      p.srsFor('w1').review(Quality.good); // jadval belgilandi
+      final interval = p.srsFor('w1').interval;
+      final next = p.srsFor('w1').nextReviewAt;
+
+      await p.recordMiss('w1');
+
+      expect(p.srsFor('w1').lapses, 1);
+      expect(p.srsFor('w1').interval, interval, reason: 'jadval tegilmasin');
+      expect(p.srsFor('w1').nextReviewAt, next);
+    });
+
+    test('ikki marta xato qilingan so\'z qiyinlar ro\'yxatiga tushadi',
+        () async {
+      final p = Progress();
+      await p.load();
+
+      await p.recordMiss('w1');
+      expect(p.hardWordIds(), isEmpty);
+
+      await p.recordMiss('w1');
+      expect(p.hardWordIds(), ['w1']);
     });
   });
 }

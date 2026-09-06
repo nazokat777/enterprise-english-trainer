@@ -187,6 +187,18 @@ class Progress extends ChangeNotifier {
         .length;
   }
 
+  /// Kitob mashqida XATO qilingan so'zni belgilaydi.
+  ///
+  /// Bu yerda to'liq SM-2 takrorlash O'TKAZILMAYDI: lug'at mashqlarining
+  /// jadvali (interval, keyingi takror sanasi) buzilmasligi kerak.
+  /// Faqat "necha marta unutildi" hisobi oshadi — "Qiyin so'zlar"
+  /// ro'yxati aynan shundan tuziladi.
+  Future<void> recordMiss(String wordId) async {
+    srsFor(wordId).lapses += 1;
+    await _save();
+    notifyListeners();
+  }
+
   /// QIYIN so'zlar — o'quvchi qayta-qayta unutayotganlari.
   ///
   /// Eng qiyinidan boshlab tartiblanadi. Ro'yxat "qaysi so'z ustida

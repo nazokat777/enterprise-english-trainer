@@ -142,6 +142,15 @@ class WordFamily {
 }
 
 /// Bitta darajaning butun kontenti.
+/// So'zni solishtirish uchun soddalashtiradi: bosh harf, artikl va
+/// tinish belgilari olib tashlanadi ("The Sun." -> "sun").
+String normalizeWord(String s) {
+  var t = s.trim().toLowerCase();
+  t = t.replaceAll(RegExp(r'''^(a|an|the|to)\s+'''), '');
+  t = t.replaceAll(RegExp(r'''[.,!?;:"]'''), '');
+  return t.trim();
+}
+
 class LevelContent {
   final List<Unit> units;
   final Map<String, Word> wordsById;
@@ -156,6 +165,17 @@ class LevelContent {
   });
 
   bool get isEmpty => units.isEmpty && wordsById.isEmpty;
+
+  /// Inglizcha so'z -> id. Kitob mashqlaridagi javobni lug'atdagi
+  /// so'z bilan bog'lash uchun (artikl va bosh harf hisobga olinmaydi).
+  ///
+  /// Sinf `const` bo'lgani uchun maydon emas, funksiya sifatida
+  /// hisoblanadi va natija keshlanadi.
+  static final Map<LevelContent, Map<String, String>> _idByEnCache = {};
+
+  Map<String, String> get idByEn => _idByEnCache.putIfAbsent(this, () => {
+        for (final w in wordsById.values) normalizeWord(w.en): w.id,
+      });
 
   List<Word> wordsOf(VocabPack pack) =>
       pack.wordIds.map((id) => wordsById[id]).whereType<Word>().toList();
