@@ -188,4 +188,70 @@ void main() {
     expect(reviewed['w1'], Quality.good);
     expect(app.progress.srsFor('w1').lapses, 0);
   });
+
+  // XATO: bitta qiyin so'z bo'lganda mashqning moslash bosqichida
+  // chapda ham, o'ngda ham BITTA yozuv turardi — o'ylamasdan bosilar
+  // va so'z qiyinlar ro'yxatidan chiqib ketardi.
+  testWidgets('bitta qiyin so\'z bilan ham mashqda tanlov bo\'ladi', (t) async {
+    await app.progress.recordMiss('vocab-0066');
+    await app.progress.recordMiss('vocab-0066');
+
+    final hard = app.progress
+        .hardWordIds()
+        .map((id) => app.repo.forLevel('beginner').wordsById[id])
+        .whereType<Word>()
+        .toList();
+    expect(hard.length, 1);
+
+    t.view.physicalSize = const Size(800, 900);
+    t.view.devicePixelRatio = 1.0;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(MaterialApp(
+      home: Builder(builder: (c) {
+        return Scaffold(
+          body: ElevatedButton(
+            onPressed: () => HardWordsScreen.drill(c, hard),
+            child: const Text('boshlash'),
+          ),
+        );
+      }),
+    ));
+    await t.tap(find.text('boshlash'));
+    await t.pump();
+    await t.pump(const Duration(milliseconds: 400));
+
+    // Tanishuv bosqichidan moslashgacha o'tamiz.
+    for (var i = 0; i < 12; i++) {
+      final next = find.textContaining('Keyingi so\'z');
+      final start = find.text('Mashqni boshlash');
+      if (start.evaluate().isNotEmpty) {
+        await t.tap(start.first);
+      } else if (next.evaluate().isNotEmpty) {
+        await t.tap(next.first);
+      } else {
+        break;
+      }
+      await t.pump(const Duration(milliseconds: 400));
+    }
+
+    // Moslash bosqichiga yetganini ANIQ tekshiramiz.
+    expect(find.text('So\'zlarni ma\'nosiga moslang'), findsOneWidget);
+    // Chapda ham, o'ngda ham kamida 4 tadan variant bo'lsin — aks
+    // holda tanlov yo'q va mashq o'rgatmaydi.
+    expect(find.text('six'), findsOneWidget);
+    expect(find.text('olti'), findsOneWidget);
+    // Ekranda nechta HAQIQIY inglizcha so'z chizilganini sanaymiz —
+    // bosqich sarlavhalari va XP yozuvi hisobga olinmasin.
+    final level = app.repo.forLevel('beginner');
+    final ens = level.wordsById.values.map((w) => w.en).toSet();
+    final shown = t
+        .widgetList<Text>(find.byType(Text))
+        .map((w) => w.data)
+        .whereType<String>()
+        .where(ens.contains)
+        .toSet();
+    expect(shown.length, greaterThanOrEqualTo(4),
+        reason: 'moslashda kamida 4 ta variant kerak: $shown');
+    expect(t.takeException(), isNull);
+  });
 }

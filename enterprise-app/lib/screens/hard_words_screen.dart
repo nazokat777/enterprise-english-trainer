@@ -50,8 +50,25 @@ class HardWordsScreen extends StatelessWidget {
   }
 
   /// Faqat qiyin so'zlar bilan mashq — mavjud pack oqimi ishlatiladi.
+  /// Moslash bosqichi tanlov bo'lishi uchun eng kam so'z soni.
+  ///
+  /// XATO: bitta qiyin so'z bo'lsa mashqda chapda ham, o'ngda ham
+  /// BITTA yozuv turardi — o'quvchi o'ylamasdan bosardi va so'z
+  /// "o'zlashtirildi" bo'lib qiyinlar ro'yxatidan chiqib ketardi.
+  static const int _minDrill = 4;
+
   static void drill(BuildContext context, List<Word> words) {
     final chunk = words.take(_drillSize).toList();
+    if (chunk.length < _minDrill) {
+      // Chalg'ituvchi variantlar — o'sha darajaning boshqa so'zlaridan.
+      final have = chunk.map((w) => w.id).toSet();
+      final pool = repo.forLevel(progress.currentLevel).wordsById.values
+          .where((w) => !have.contains(w.id))
+          .toList()
+        ..shuffle();
+      chunk.addAll(pool.take(_minDrill - chunk.length));
+    }
+
     final pack = VocabPack(
       id: 'hard',
       name: 'Qiyin so\'zlar',
