@@ -336,6 +336,11 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           key: ValueKey('c$_index'),
           task: ex.tasks[_index],
           explanation: _index == 0 ? ex.explanationUz : '',
+          // Audio izohi HAR BIR bandda ko'rinadi: u mashqni qanday
+          // yechish kerakligini aytadi ("javoblarni 4-mashqdan
+          // toping"), shuning uchun uni bir marta ko'rsatish yetarli
+          // emas.
+          audioNote: ex.audioNoteUz,
           onDone: _answered,
         );
       case ExKind.text:
@@ -343,12 +348,14 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           key: ValueKey('t$_index'),
           task: ex.tasks[_index],
           explanation: _index == 0 ? ex.explanationUz : '',
+          audioNote: ex.audioNoteUz,
           onDone: _answered,
         );
       case ExKind.match:
         return _MatchStage(
           tasks: ex.tasks,
           explanation: ex.explanationUz,
+          audioNote: ex.audioNoteUz,
           onDone: (right) {
             _correct = right;
             setState(() {
@@ -505,6 +512,41 @@ class TaskVisual extends StatelessWidget {
   }
 }
 
+/// AUDIO IZOHI — "kitobda shu yerda audio bor, javoblarni N-mashqdan
+/// toping" kabi yo'l-yo'riq.
+///
+/// Ilgari bu izoh FAQAT o'qish (study) rejimida chiqardi. 30 ta
+/// mashqda esa u tanlash/yozish/moslash rejimida edi va o'quvchi uni
+/// umuman ko'rmasdi — mashq javobsizdek tuyulardi.
+class AudioNoteCard extends StatelessWidget {
+  final String text;
+  const AudioNoteCard({super.key, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    if (text.trim().isEmpty) return const SizedBox.shrink();
+    return Container(
+      margin: const EdgeInsets.only(bottom: 14),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: AppColors.homework.withValues(alpha: 0.10),
+        borderRadius: BorderRadius.circular(AppRadius.md),
+      ),
+      child: Row(
+        children: [
+          const Icon(Icons.headphones_rounded,
+              size: 18, color: AppColors.homework),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(text,
+                style: const TextStyle(fontSize: 12.5, height: 1.4)),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 // ═══════════════ Izoh kartasi (barcha turlar uchun) ═══════════════
 class ExplanationCard extends StatelessWidget {
   final String text;
@@ -543,12 +585,14 @@ class ExplanationCard extends StatelessWidget {
 class _ChoiceStage extends StatefulWidget {
   final ExTask task;
   final String explanation;
+  final String audioNote;
   final ValueChanged<bool> onDone;
 
   const _ChoiceStage({
     super.key,
     required this.task,
     required this.explanation,
+    this.audioNote = '',
     required this.onDone,
   });
 
@@ -594,6 +638,7 @@ class _ChoiceStageState extends State<_ChoiceStage> {
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
         ExplanationCard(text: widget.explanation),
+        AudioNoteCard(text: widget.audioNote),
         Container(
           width: double.infinity,
           padding: const EdgeInsets.all(20),
@@ -707,12 +752,14 @@ class _WhyCard extends StatelessWidget {
 class _BuildStage extends StatefulWidget {
   final ExTask task;
   final String explanation;
+  final String audioNote;
   final ValueChanged<bool> onDone;
 
   const _BuildStage({
     super.key,
     required this.task,
     required this.explanation,
+    this.audioNote = '',
     required this.onDone,
   });
 
@@ -773,6 +820,7 @@ class _BuildStageState extends State<_BuildStage> {
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
         ExplanationCard(text: widget.explanation),
+        AudioNoteCard(text: widget.audioNote),
         if (t.visual.isNotEmpty) ...[
           Center(child: TaskVisual(visual: t.visual, size: 64)),
           const SizedBox(height: 12),
@@ -886,12 +934,14 @@ class _BuildStageState extends State<_BuildStage> {
 // ═══════════════ 3) Moslash ═══════════════
 class _MatchStage extends StatefulWidget {
   final List<ExTask> tasks;
+  final String audioNote;
   final String explanation;
   final ValueChanged<int> onDone;
 
   const _MatchStage({
     required this.tasks,
     required this.explanation,
+    this.audioNote = '',
     required this.onDone,
   });
 
@@ -988,6 +1038,7 @@ class _MatchStageState extends State<_MatchStage> {
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 24),
       children: [
         ExplanationCard(text: widget.explanation),
+        AudioNoteCard(text: widget.audioNote),
         if (_roundCount > 1) ...[
           Center(
             child: Text('${_round + 1} / $_roundCount',
@@ -1097,26 +1148,7 @@ class _StudyStage extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
         ExplanationCard(text: exercise.explanationUz),
-        if (exercise.audioNoteUz.isNotEmpty)
-          Container(
-            margin: const EdgeInsets.only(bottom: 14),
-            padding: const EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: AppColors.homework.withValues(alpha: 0.10),
-              borderRadius: BorderRadius.circular(AppRadius.md),
-            ),
-            child: Row(
-              children: [
-                const Icon(Icons.headphones_rounded,
-                    size: 18, color: AppColors.homework),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Text(exercise.audioNoteUz,
-                      style: const TextStyle(fontSize: 12.5, height: 1.4)),
-                ),
-              ],
-            ),
-          ),
+        AudioNoteCard(text: exercise.audioNoteUz),
         for (final t in exercise.tasks) _line(context, t),
         const SizedBox(height: 22),
         Pressable3D(
