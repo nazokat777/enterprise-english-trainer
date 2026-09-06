@@ -106,6 +106,14 @@ class Tts {
     }
   }
 
+  /// Ovoz tanlashni oldindan ishga tushiradi.
+  ///
+  /// Sozlamalar ekrani `englishVoiceFound` va `selectedVoice` ni
+  /// ko'rsatadi — ular esa faqat birinchi `speak` dan keyin
+  /// to'ldirilardi. Ya'ni o'quvchi hech narsa tinglamaguncha
+  /// "inglizcha ovoz topilmadi" ogohlantirishini ko'rmasdi.
+  Future<void> warmUp() => _ensure();
+
   /// Inglizcha matnni o'qiydi. [id] — UI'da qaysi element «o'qilyapti»ni
   /// ko'rsatish uchun.
   Future<void> speak(String text, {String? id}) async {

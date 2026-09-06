@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../main.dart';
 import '../stats.dart';
+import '../services/tts.dart';
 import '../theme.dart';
 
 /// SOZLAMALAR — ilgari "keyingi fazalarda" degan bo'sh ekran edi.
@@ -31,6 +32,8 @@ class SettingsScreen extends StatelessWidget {
           _GoalCard(),
           const SizedBox(height: 10),
           _DarkCard(),
+          const SizedBox(height: 10),
+          const _VoiceCard(),
           const SizedBox(height: 10),
           _FreezeCard(),
           const SizedBox(height: 10),
@@ -121,6 +124,77 @@ class _DarkCard extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// TALAFFUZ OVOZI — qaysi ovoz ishlatilyapti va u inglizchami.
+///
+/// `Tts.englishVoiceFound` allaqachon hisoblanardi ("topilmasa UI
+/// ogohlantirishi mumkin" deb yozilgan edi), lekin uni HECH BIR ekran
+/// ko'rsatmasdi. Qurilmada inglizcha ovoz bo'lmasa, talaffuz o'zbek
+/// yoki rus talaffuzi bilan o'qilardi va o'quvchi sababini bilmasdi.
+class _VoiceCard extends StatefulWidget {
+  const _VoiceCard();
+
+  @override
+  State<_VoiceCard> createState() => _VoiceCardState();
+}
+
+class _VoiceCardState extends State<_VoiceCard> {
+  @override
+  void initState() {
+    super.initState();
+    // Ovoz ro'yxati faqat birinchi o'qishdan keyin to'ldiriladi —
+    // ekran ochilishi bilan tayyorlab qo'yamiz.
+    Tts.instance.warmUp().then((_) {
+      if (mounted) setState(() {});
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ValueListenableBuilder<bool>(
+      valueListenable: Tts.instance.englishVoiceFound,
+      builder: (context, found, _) {
+        final voice = Tts.instance.selectedVoice;
+        return _Card(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Icon(found ? Icons.record_voice_over_rounded
+                             : Icons.warning_amber_rounded,
+                      color: found ? AppColors.success : AppColors.homework),
+                  const SizedBox(width: 10),
+                  const Expanded(
+                    child: Text('Talaffuz ovozi',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w800, fontSize: 15)),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 4),
+              Text(
+                found
+                    ? (voice ?? 'Qurilmaning inglizcha ovozi ishlatiladi.')
+                    : 'Qurilmada inglizcha ovoz topilmadi. So\'zlar '
+                        'noto\'g\'ri talaffuz qilinishi mumkin — telefon '
+                        'sozlamalaridan inglizcha ovozni yuklab oling.',
+                style: TextStyle(
+                    fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
+              ),
+              const SizedBox(height: 10),
+              OutlinedButton.icon(
+                onPressed: () => Tts.instance.speak('Hello! How are you?'),
+                icon: const Icon(Icons.volume_up_rounded, size: 18),
+                label: const Text('Sinab ko\'rish'),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

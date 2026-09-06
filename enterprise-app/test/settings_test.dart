@@ -7,6 +7,7 @@ import 'package:enterprise_english/main.dart' as app;
 import 'package:enterprise_english/srs.dart';
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/settings_screen.dart';
+import 'package:enterprise_english/services/tts.dart';
 
 /// Sozlamalar ekrani ilgari "keyingi fazalarda" degan bo'sh sahifa edi.
 /// Shu sababli `buyStreakFreeze` (pulli imkoniyat) va kunlik maqsadni
@@ -68,7 +69,10 @@ void main() {
     await pump(t);
     final btn = find.widgetWithText(
         OutlinedButton, 'Jarayonni o\'chirish');
-    await t.ensureVisible(btn);
+    // ListView bandlarni KERAK BO'LGANDA quradi — tugma hali
+    // qurilmagan bo'lishi mumkin, avval pastga suramiz.
+    await t.scrollUntilVisible(btn, 200,
+        scrollable: find.byType(Scrollable));
     await t.pumpAndSettle();
     await t.tap(btn);
     await t.pumpAndSettle();
@@ -87,7 +91,10 @@ void main() {
     await pump(t);
     final btn = find.widgetWithText(
         OutlinedButton, 'Jarayonni o\'chirish');
-    await t.ensureVisible(btn);
+    // ListView bandlarni KERAK BO'LGANDA quradi — tugma hali
+    // qurilmagan bo'lishi mumkin, avval pastga suramiz.
+    await t.scrollUntilVisible(btn, 200,
+        scrollable: find.byType(Scrollable));
     await t.pumpAndSettle();
     await t.tap(btn);
     await t.pumpAndSettle();
@@ -95,5 +102,24 @@ void main() {
     await t.pumpAndSettle();
 
     expect(app.progress.xp, 120);
+  });
+
+  // `Tts.englishVoiceFound` allaqachon hisoblanardi ("topilmasa UI
+  // ogohlantirishi mumkin" deb yozilgan edi), lekin uni HECH BIR ekran
+  // ko\'rsatmasdi. Qurilmada inglizcha ovoz bo\'lmasa, talaffuz noto\'g\'ri
+  // bo\'lardi va o\'quvchi sababini bilmasdi.
+  testWidgets('talaffuz ovozi ko\'rsatiladi', (t) async {
+    await pump(t);
+    expect(find.text('Talaffuz ovozi'), findsOneWidget);
+    expect(find.text('Sinab ko\'rish'), findsOneWidget);
+  });
+
+  testWidgets('inglizcha ovoz topilmasa ogohlantiradi', (t) async {
+    Tts.instance.englishVoiceFound.value = false;
+    addTearDown(() => Tts.instance.englishVoiceFound.value = true);
+
+    await pump(t);
+
+    expect(find.textContaining('inglizcha ovoz topilmadi'), findsOneWidget);
   });
 }
