@@ -256,7 +256,12 @@ class Progress extends ChangeNotifier {
   /// Faqat "necha marta unutildi" hisobi oshadi — "Qiyin so'zlar"
   /// ro'yxati aynan shundan tuziladi.
   Future<void> recordMiss(String wordId) async {
-    srsFor(wordId).lapses += 1;
+    final srs = srsFor(wordId);
+    srs.lapses += 1;
+    // "Qayta o'zlashtirdim" seriyasi UZILADI. Aks holda ilgari
+    // o'zlashtirilgan (repetitions >= 3) so'z endi unutilgan bo'lsa
+    // ham "Qiyin so'zlar" ro'yxatiga qaytmasdi.
+    srs.repetitions = 0;
     await _save();
     notifyListeners();
   }

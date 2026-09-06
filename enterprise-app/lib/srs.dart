@@ -105,7 +105,16 @@ class WordSrs {
   /// `easeFactor` mezon sifatida ishlatilmaydi: bitta "Bilmadim" ni ham
   /// u 2.5 dan 1.96 ga tushiradi, ya'ni har qanday chegara bir martalik
   /// xatoni ham qiyin deb belgilab qo'yardi.
-  bool get isHard => lapses >= 2;
+  ///
+  /// XATO edi: mezon faqat `lapses >= 2` bo'lgani uchun so'z ro'yxatdan
+  /// HECH QACHON chiqmasdi — `lapses` kamaymaydi. O'quvchi so'zni qayta
+  /// mashq qilib o'zlashtirsa ham u "qiyin" bo'lib qolaverardi va
+  /// ro'yxat faqat o'sardi. Endi oxirgi xatodan keyin KETMA-KET uch
+  /// marta to'g'ri javob berilsa, so'z ro'yxatdan chiqadi. Tarix
+  /// (`lapses`) saqlanadi: yana unutilsa, so'z darhol qaytadi.
+  static const int _relearned = 3;
+
+  bool get isHard => lapses >= 2 && repetitions < _relearned;
 
   /// Qiyinlik darajasi — ro'yxatni tartiblash uchun (katta = qiyinroq).
   double get difficulty => lapses * 10 + (2.5 - easeFactor) * 4;

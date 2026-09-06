@@ -85,6 +85,9 @@ const _unitJson = '''
 final BookUnit unit =
     BookUnit.fromJson(json.decode(_unitJson) as Map<String, dynamic>);
 
+/// Kitobdan olingan HAQIQIY 1-unit — eng og'ir mashqni sinash uchun.
+BookUnit? realUnit1;
+
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -95,6 +98,10 @@ void main() {
     // o'qiydi (haqiqiy ilovada u main() da tayyorlanadi).
     app.book = BookRepository();
     await Future.wait([app.progress.load(), app.book.loadIndex()]);
+    // Haqiqiy 1-unit BIR MARTA, testlardan TASHQARIDA yuklanadi.
+    // Test ichida `runAsync` bilan yuklash ishonchsiz: oldingi
+    // testlardan qolgan tugallanmagan asset so'rovlari uni bloklaydi.
+    realUnit1 = await app.book.load(1);
   });
 
   /// Ekranni berilgan o'lchamda chizadi va overflow bo'lmaganini tekshiradi.
@@ -163,6 +170,36 @@ void main() {
           scale: 1.5);
     });
   }
+
+    // Eng OG'IR holat: 14 ta so'zdan iborat javob (Coursebook 6-bet
+    // Ex. 4). Tor telefonda plitkalar ekrandan chiqib ketmasligi kerak.
+    testWidgets('eng uzun javobli mashq 320px da sig\'adi', (t) async {
+      BookExercise? target;
+      for (final sec in realUnit1!.sections) {
+        for (final e in sec.exercises) {
+          if (e.book == 'coursebook' && e.bookPage == 6 && e.ref == '4') {
+            target = e;
+          }
+        }
+      }
+      expect(target, isNotNull);
+
+      await expectFits(t, ExercisePlayer(exercise: target!, sectionTitle: 'Test'),
+          const Size(320, 640));
+    });
+
+    testWidgets('eng uzun javobli mashq 375px, shrift 1.5x', (t) async {
+      BookExercise? target;
+      for (final sec in realUnit1!.sections) {
+        for (final e in sec.exercises) {
+          if (e.book == 'coursebook' && e.bookPage == 6 && e.ref == '4') {
+            target = e;
+          }
+        }
+      }
+      await expectFits(t, ExercisePlayer(exercise: target!, sectionTitle: 'Test'),
+          const Size(375, 812), scale: 1.5);
+    });
 
   _sectionStyleTests();
 }

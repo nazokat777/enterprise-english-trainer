@@ -37,6 +37,40 @@ void main() {
       expect(s.lapses, 1, reason: 'unutgani tarixda qolsin');
     });
 
+    // XATO: mezon faqat `lapses >= 2` edi va `lapses` kamaymaydi —
+    // so'z ro'yxatdan HECH QACHON chiqmasdi. O'quvchi uni qayta mashq
+    // qilib o'zlashtirsa ham "qiyin" bo'lib qolaverardi.
+    test('o\'zlashtirilgan so\'z ro\'yxatdan chiqadi', () {
+      final s = WordSrs();
+      s.review(Quality.unknown);
+      s.review(Quality.unknown);
+      expect(s.isHard, isTrue);
+
+      s.review(Quality.good);
+      expect(s.isHard, isTrue, reason: 'bitta to\'g\'ri javob yetarli emas');
+      s.review(Quality.good);
+      expect(s.isHard, isTrue);
+      s.review(Quality.good);
+
+      expect(s.isHard, isFalse, reason: 'uch marta ketma-ket');
+      expect(s.lapses, 2, reason: 'tarix saqlanadi');
+    });
+
+    test('yana unutilsa so\'z darhol qaytadi', () {
+      final s = WordSrs();
+      s.review(Quality.unknown);
+      s.review(Quality.unknown);
+      s.review(Quality.good);
+      s.review(Quality.good);
+      s.review(Quality.good);
+      expect(s.isHard, isFalse);
+
+      s.review(Quality.unknown);
+
+      expect(s.isHard, isTrue);
+      expect(s.lapses, 3);
+    });
+
     test('ikki marta unutilgan so\'z QIYIN hisoblanadi', () {
       final s = WordSrs();
       expect(s.isHard, isFalse);
@@ -212,6 +246,43 @@ void main() {
 
       await p.recordMiss('w1');
       expect(p.hardWordIds(), ['w1']);
+    });
+  });
+
+  group('Progress — o\'zlashtirilgan so\'z qayta unutilsa', () {
+    // XATO: `recordMiss` faqat `lapses` ni oshirardi. Qayta
+    // o\'zlashtirilgan so\'z (repetitions >= 3) kitob mashqida unutilsa
+    // ham "Qiyin so\'zlar" ro\'yxatiga QAYTMASDI.
+    test('kitob mashqidagi xato so\'zni ro\'yxatga qaytaradi', () async {
+      final p = Progress();
+      await p.load();
+
+      final s = p.srsFor('w1');
+      s.review(Quality.unknown);
+      s.review(Quality.unknown);
+      s.review(Quality.good);
+      s.review(Quality.good);
+      s.review(Quality.good);
+      expect(s.isHard, isFalse, reason: 'o\'zlashtirildi');
+
+      await p.recordMiss('w1');
+
+      expect(p.srsFor('w1').isHard, isTrue);
+      expect(p.hardWordIds(), ['w1']);
+    });
+
+    test('jadval baribir buzilmaydi', () async {
+      final p = Progress();
+      await p.load();
+      final s = p.srsFor('w1');
+      s.review(Quality.good);
+      final iv = s.interval;
+      final next = s.nextReviewAt;
+
+      await p.recordMiss('w1');
+
+      expect(p.srsFor('w1').interval, iv);
+      expect(p.srsFor('w1').nextReviewAt, next);
     });
   });
 
