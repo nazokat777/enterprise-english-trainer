@@ -90,6 +90,18 @@ class ItemMastery {
   /// Qiyin: kamida ikki marta xato qilingan va hali mustahkam emas.
   bool get isWeak => lapses >= 2 && !isStrong;
 
+  /// QISMAN baho (0..1) — halqa uchun.
+  ///
+  /// `isStrong` faqat "tugadi"ni biladi. Agar halqa faqat shunga
+  /// qarasa, o'quvchi olti marta to'g'ri javob berib ham 0% ni
+  /// ko'radi — mehnat natijasi ko'rinmasa, motivatsiya so'nadi
+  /// (nevrologiya: mukofot signali harakat bilan bog'lanishi kerak).
+  /// Shuning uchun har o'tilgan SHAKL ham hisobga olinadi.
+  double get score {
+    if (isStrong) return 1;
+    return (passed.length * 0.4).clamp(0.0, 0.8);
+  }
+
   /// Ro'yxatni tartiblash uchun: katta = ko'proq ish kerak.
   double get needScore {
     if (isStrong) return 0;
@@ -192,6 +204,20 @@ class MasteryStore extends ChangeNotifier {
     final list = itemIds.where((id) => !of(id).isStrong).toList()
       ..sort((a, b) => of(b).needScore.compareTo(of(a).needScore));
     return list.take(limit).toList();
+  }
+
+  /// QISMAN baholi ulush (0..1) — seans halqasi uchun.
+  ///
+  /// `ratio` faqat TUGAGAN bandlarni sanaydi; bu esa har bir to'g'ri
+  /// javobni ko'rsatadi.
+  double progressScore(Iterable<String> itemIds) {
+    final list = itemIds.toList();
+    if (list.isEmpty) return 1;
+    var sum = 0.0;
+    for (final id in list) {
+      sum += of(id).score;
+    }
+    return sum / list.length;
   }
 
   /// Hammasi o'zlashtirilganmi — "100% javob berilgunicha" mezoni.

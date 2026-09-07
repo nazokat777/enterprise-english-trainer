@@ -114,8 +114,12 @@ class DrillSession {
       _phase == DrillPhase.lesson ? _batch : _mixedPicked;
 
   /// Joriy bosqichning o'zlashtirilish ulushi (0..1) — halqa uchun.
+  ///
+  /// QISMAN baholi: har to'g'ri javob halqani siljitadi. Ilgari faqat
+  /// TUGAGAN bandlar sanalardi va o'quvchi olti marta to'g'ri javob
+  /// berib ham 0% ni ko'rardi.
   double get progress =>
-      mastery.ratio(_active.map((e) => e.itemId));
+      mastery.progressScore(_active.map((e) => e.itemId));
 
   /// Nechta band qoldi.
   int get remaining =>

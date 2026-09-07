@@ -156,4 +156,36 @@ void main() {
       expect(s.of('a').isStrong, isTrue);
     });
   });
+
+
+  group('qisman baho — halqa uchun', () {
+    // `isStrong` faqat "tugadi"ni biladi. Halqa faqat shunga qarasa,
+    // o\'quvchi olti marta to\'g\'ri javob berib ham 0% ni ko\'radi.
+    test('har o\'tilgan shakl halqani siljitadi', () async {
+      final s = MasteryStore();
+      await s.load();
+
+      expect(s.of('a').score, 0);
+
+      await s.record('a', AskFormat.choice, ok: true);
+      expect(s.of('a').score, greaterThan(0));
+      expect(s.of('a').score, lessThan(1), reason: 'hali tugamagan');
+
+      await s.record('a', AskFormat.build, ok: true);
+      expect(s.of('a').score, 1, reason: 'o\'zlashtirildi');
+    });
+
+    test('to\'plam bo\'yicha o\'rtacha', () async {
+      final s = MasteryStore();
+      await s.load();
+      await s.record('a', AskFormat.choice, ok: true);
+      await s.record('a', AskFormat.build, ok: true);
+
+      final v = s.progressScore(['a', 'b']);
+      expect(v, greaterThan(0.4));
+      expect(v, lessThan(1));
+      expect(s.ratio(['a', 'b']), 0.5,
+          reason: 'ratio faqat TUGAGANni sanaydi — o\'zgarmaydi');
+    });
+  });
 }
