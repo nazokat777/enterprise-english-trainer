@@ -1,0 +1,143 @@
+{
+  "book": "coursebook",
+  "pdfPage": 2,
+  "bookPage": 0,
+  "bookPageLabel": "Coursebook - titul varag'i",
+  "unit": 800,
+  "unitLabelUz": "Kirish qismi",
+  "unitBadge": "i",
+  "order": 0.1,
+  "unitTitle": "Kitoblarning kirish qismi (muqova, titul, mundarija)",
+  "module": 1,
+  "scanNote": "TITUL VARAG'I. Oq (biroz kulrang) fon, hech qanday surat yo'q, bet raqami yo'q, mashq yo'q.\n\nBetning o'rtasida, yuqoridan pastga:\n• 'ENTERPRISE 2' - katta TO'Q SARIQ harflar\n• 'C O U R S E B O O K' - kichikroq YAShIL harflar, keng oraliq bilan\n• 'Elementary' - to'q sariq, yumshoq shriftda\n• pastroqda: 'Virginia Evans - Jenny Dooley'\n• eng pastda: Express Publishing logotipi (kamalak ustidagi ochiq kitob) va yozuvi\n\n⚠ Titul varag'i muqovaning MATNINI takrorlaydi, lekin suratlarsiz. Bu - nashriyot an'anasi: muqova yirtilib ketsa ham kitobning nomi ichkarida qoladi.\n\n⚠ Chap chetda skanerda kitob muqovasining qora izi ko'rinadi.",
+  "sections": [
+    {
+      "kind": "reference",
+      "title": "Coursebook title page",
+      "titleUz": "Coursebook - titul varag'i",
+      "exercises": [
+        {
+          "ref": "titul",
+          "type": "explain",
+          "instructionEn": "ENTERPRISE 2 - COURSEBOOK - Elementary. Virginia Evans - Jenny Dooley. Express Publishing.",
+          "instructionUz": "ENTERPRISE 2 - DARSLIK - Boshlang'ich daraja. Virjiniya Evans - Jenni Duli. Express Publishing.",
+          "explanationUz": "BU BET - TITUL VARAG'I.\n\n  ⚠ Inglizcha: 'the title page'.\n\n  Mashq yo'q, bet raqami ham yo'q.\n\n\nNIMA UChUN KERAK:\n\n  Titul varag'i muqovadagi MATNNI\n  takrorlaydi, lekin SURATSIZ.\n\n  ⚠ Bu - nashriyot an'anasi: muqova\n  yirtilib ketsa ham kitobning nomi\n  ichkarida qoladi.\n\n  ⚠ Kutubxonalar kitobni aynan TITUL\n  VARAG'IGA qarab ro'yxatga oladi,\n  muqovaga emas.\n\n\nBETDAGI MATN (yuqoridan pastga):\n\n  ENTERPRISE 2        - seriya va bosqich\n  COURSEBOOK          - kitob turi\n  Elementary          - daraja\n  Virginia Evans -\n     Jenny Dooley     - mualliflar\n  Express Publishing  - nashriyot\n\n\n⚠ 'A TITLE' - IKKI MA'NO:\n\n  1) NOM, sarlavha\n     'The title of the book is\n      Enterprise 2.'\n\n  2) UNVON (Mr, Mrs, Dr, Professor)\n     'Please write your title and name.'\n\n  ⚠ 'a title page' = titul varag'i\n  ⚠ 'entitled' = deb nomlangan\n\n\n⚠ RANGLAR MUQOVA BILAN BIR XIL:\n\n  ENTERPRISE 2 - to'q sariq\n  COURSEBOOK   - yashil\n  Elementary   - to'q sariq\n\n  ⚠ Beginner kitobida bu ranglar\n  pushti va yashil edi.\n\n\nYANGI SO'ZLAR:\n  a title       = nom, sarlavha\n  a title page  = titul varag'i\n  a cover       = muqova\n  a page        = bet\n  to publish    = nashr qilmoq\n  a publisher   = nashriyot",
+          "bookRef": "Coursebook, titul varag'i",
+          "points": [
+            {
+              "en": "ENTERPRISE 2 - COURSEBOOK - Elementary",
+              "uz": "ENTERPRISE 2 - DARSLIK - Boshlang'ich daraja",
+              "noteUz": "⚠ Titul varag'i muqovaning matnini\ntakrorlaydi, lekin SURATSIZ.\n\n⚠ Kutubxonalar kitobni shu betga qarab\nro'yxatga oladi."
+            },
+            {
+              "en": "Virginia Evans - Jenny Dooley",
+              "uz": "Virjiniya Evans - Jenni Duli",
+              "noteUz": "⚠ Ikki muallif. Ular Beginner kitobini\nham yozgan."
+            },
+            {
+              "en": "Express Publishing",
+              "uz": "Express Publishing",
+              "noteUz": "⚠ Logotip: KAMALAK ustidagi ochiq kitob.\n\n⚠ 'to publish' = nashr qilmoq."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabularyOnPage": [
+    {
+      "en": "a title",
+      "uz": "nom, sarlavha"
+    },
+    {
+      "en": "the title page",
+      "uz": "titul varag'i"
+    },
+    {
+      "en": "a page",
+      "uz": "bet"
+    },
+    {
+      "en": "a cover",
+      "uz": "muqova"
+    },
+    {
+      "en": "to publish",
+      "uz": "nashr qilmoq"
+    },
+    {
+      "en": "a publisher",
+      "uz": "nashriyot"
+    },
+    {
+      "en": "a library",
+      "uz": "kutubxona"
+    },
+    {
+      "en": "to catalogue",
+      "uz": "ro'yxatga olmoq"
+    },
+    {
+      "en": "a logo",
+      "uz": "logotip, belgi"
+    }
+  ],
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Titul varag'i haqida gapirish.",
+    "patterns": [
+      {
+        "formula": "The title of the book is [nom].",
+        "exampleEn": "The title of the book is Enterprise 2.",
+        "exampleUz": "Kitobning nomi Enterprise 2.",
+        "explanationUz": "⚠ 'the title OF the book' — predlog 'of'."
+      },
+      {
+        "formula": "There is no [nima] on this page.",
+        "exampleEn": "There is no picture on this page.",
+        "exampleUz": "Bu betda surat yo'q.",
+        "explanationUz": "⚠ 'There is no ...' — 'There isn't a ...' bilan bir xil ma'no, lekin qat'iyroq."
+      }
+    ]
+  },
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Titul varag'idagi so'zlar.",
+    "groups": [
+      {
+        "ruleUz": "⚠ OT + OT = QO'ShMA OT",
+        "explanationUz": "'title page' shu qoidadan: birinchi ot sifat vazifasini bajaradi.",
+        "items": [
+          {
+            "base": "title + page",
+            "baseUz": "nom + bet",
+            "derived": "a title page",
+            "derivedUz": "titul varag'i",
+            "note": "⚠ betda shu"
+          },
+          {
+            "base": "front + cover",
+            "baseUz": "old + muqova",
+            "derived": "the front cover",
+            "derivedUz": "old muqova",
+            "note": ""
+          },
+          {
+            "base": "back + cover",
+            "baseUz": "orqa + muqova",
+            "derived": "the back cover",
+            "derivedUz": "orqa muqova",
+            "note": ""
+          },
+          {
+            "base": "course + book",
+            "baseUz": "kurs + kitob",
+            "derived": "a coursebook",
+            "derivedUz": "darslik",
+            "note": "⚠ betda shu"
+          }
+        ]
+      }
+    ]
+  }
+}
