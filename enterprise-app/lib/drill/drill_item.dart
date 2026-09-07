@@ -178,8 +178,32 @@ DrillQuestion? buildQuestion(
   List<DrillSource> pool,
   Random rnd,
 ) {
+  final q = _build(s, format, pool, rnd);
+  if (q == null) return null;
+  // UMUMIY QO'RIQChI: savol javobning O'ZI bo'lib qolmasin.
+  //
+  // "golf", "Dublin", "Morrison" kabi o'zlashma so'z va atoqli otlarda
+  // o'zbekcha tarjima inglizchasi bilan AYNAN bir xil. Bunday bandda
+  // har qanday savol "javobni ko'chir" ga aylanadi.
+  if (_norm(q.prompt) == _norm(q.answer)) return null;
+  return q;
+}
+
+String _norm(String s) =>
+    s.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
+
+DrillQuestion? _build(
+  DrillSource s,
+  AskFormat format,
+  List<DrillSource> pool,
+  Random rnd,
+) {
   switch (format) {
     case AskFormat.choice:
+      // O'zbekchasi yo'q band bu ko'rinishga YARAMAYDI: javob ham,
+      // savol ham inglizcha bo'lib qoladi va javob savolning O'ZIDA
+      // ko'rinib turadi.
+      if (s.uz.trim().isEmpty) return null;
       final opts = _options(s, pool, rnd, useUz: true);
       if (opts.length < 2) return null;
       return DrillQuestion(
@@ -187,7 +211,7 @@ DrillQuestion? buildQuestion(
         format: format,
         prompt: s.en,
         promptUz: '',
-        answer: s.uz.isNotEmpty ? s.uz : s.en,
+        answer: s.uz,
         options: opts,
         speak: s.en,
         unit: s.unit,
@@ -216,10 +240,14 @@ DrillQuestion? buildQuestion(
 
     case AskFormat.build:
       if (s.en.trim().length < 2) return null;
+      // Savol O'ZBEKChA bo'lishi SHART. Aks holda savol matni
+      // javobning o'zi bo'lib qoladi — o'quvchi shunchaki ko'chiradi
+      // va hech narsa yodlanmaydi.
+      if (s.uz.trim().isEmpty) return null;
       return DrillQuestion(
         itemId: s.itemId,
         format: format,
-        prompt: s.uz.isNotEmpty ? s.uz : s.en,
+        prompt: s.uz,
         answer: s.en,
         speak: s.en,
         unit: s.unit,
@@ -228,6 +256,10 @@ DrillQuestion? buildQuestion(
 
     case AskFormat.listen:
       if (s.en.trim().isEmpty) return null;
+      // Tinglab yozishda savol matni ko'rsatilmaydi (faqat ovoz va
+      // o'zbekcha izoh), shuning uchun tarjima bo'lmasa ham bo'ladi.
+      // Lekin javob juda uzun bo'lsa eshitib yozib bo'lmaydi.
+      if (s.en.trim().split(RegExp(r'\s+')).length > 6) return null;
       return DrillQuestion(
         itemId: s.itemId,
         format: format,
