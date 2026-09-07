@@ -42,23 +42,23 @@ void main() {
   test('kitobi bor daraja HAQIQIY fayldan aniqlanadi', () async {
     // Qo'lda yozilgan ro'yxat emas — index.json o'qiladi.
     expect(BookRepository.hasBook('beginner'), isTrue);
-    expect(BookRepository.hasBook('elementary'),
-        isFalse, reason: 'Elementary kitobi hali eksport qilinmagan');
+    expect(BookRepository.hasBook('elementary'), isTrue,
+        reason: 'Elementary kitobi eksport qilingan');
   });
 
   test('daraja almashsa kitob ham almashadi', () async {
     expect(app.book.units, isNotEmpty);
 
     await app.book.setLevel('elementary');
-    expect(app.book.units, isEmpty,
-        reason: 'Elementary kontenti yo\'q — bo\'sh qolsin, '
-            'Beginner kitobini ko\'rsatmasin');
-
+    expect(app.book.units, isNotEmpty,
+        reason: 'Elementary kitobi ham eksport qilingan');
+    expect(app.book.units.first.title, isNot('Hi!'),
+        reason: 'Beginner kitobini ko\'rsatmasin');
     await app.book.setLevel('beginner');
     expect(app.book.units, isNotEmpty);
   });
 
-  testWidgets('kitobi yo\'q daraja tanlanmaydi', (t) async {
+  testWidgets('eksport qilingan daraja tanlanadi', (t) async {
     t.view.physicalSize = const Size(1280, 800);
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
@@ -68,9 +68,12 @@ void main() {
     await t.tap(find.text('Beginner').first);
     await t.pumpAndSettle();
 
+    // Elementary kitobi eksport qilingandan keyin daraja TANLANADIGAN
+    // bo'ldi -- 'tayyor emas' yorlig'i endi ko'rinmasligi kerak.
+    expect(find.textContaining('tayyor emas'), findsNothing);
     final item = t.widget<PopupMenuItem<String>>(
-        find.widgetWithText(PopupMenuItem<String>, 'Elementary — tayyor emas'));
-    expect(item.enabled, isFalse);
+        find.widgetWithText(PopupMenuItem<String>, 'Elementary'));
+    expect(item.enabled, isTrue);
   });
 
 

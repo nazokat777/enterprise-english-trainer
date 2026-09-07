@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:enterprise_english/book_content.dart';
 import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
+import 'package:enterprise_english/levels.dart';
 import 'package:enterprise_english/mastery.dart';
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/book/book_screens.dart';
@@ -31,10 +32,23 @@ void main() {
     app.mastery = MasteryStore();
     app.repo = ContentRepository();
     app.book = BookRepository();
-    await Future.wait([app.mastery.load(), app.progress.load(), app.repo.load(), app.book.loadIndex()]);
-    final loaded =
-        await Future.wait(app.book.units.map((b) => app.book.load(b.unit)));
-    allUnits = loaded.whereType<BookUnit>().toList();
+    await Future.wait([app.mastery.load(), app.progress.load(), app.repo.load()]);
+
+    // HAMMA DARAJA tekshiriladi. Ilgari faqat Beginner o'qilardi va
+    // Elementary betlaridagi chizish xatosi o'quvchi o'sha betni
+    // ochgandagina bilinardi.
+    allUnits = [];
+    for (final level in kLevels) {
+      await app.book.setLevel(level.id);
+      await app.book.loadIndex();
+      final loaded =
+          await Future.wait(app.book.units.map((b) => app.book.load(b.unit)));
+      final n = loaded.whereType<BookUnit>().length;
+      // Daraja jimgina bo'sh qolib ketmasin: kontent eksport
+      // qilinmagan bo'lsa, sweep hech narsani tekshirmasdan o'tardi.
+      expect(n, greaterThan(0), reason: '${level.id} darajasi bo\'sh');
+      allUnits.addAll(loaded.whereType<BookUnit>());
+    }
   });
 
   Future<void> renderAll(WidgetTester t, Size size,
