@@ -6,6 +6,7 @@ import '../srs.dart';
 import '../theme.dart';
 import '../services/tts.dart';
 import '../widgets/pressable3d.dart';
+import '../drill/weak_topics_section.dart';
 import 'pack/pack_flow.dart';
 
 /// QIYIN SO'ZLAR — o'quvchi qayta-qayta unutayotgan so'zlar.
@@ -34,16 +35,21 @@ class HardWordsScreen extends StatelessWidget {
             if (c.wordsById[id] != null) c.wordsById[id]!,
         ];
 
-        if (words.isEmpty) return const _Empty();
-
-        return ListView.builder(
+        return ListView(
           padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
-          itemCount: words.length + 1,
-          itemBuilder: (context, i) {
-            if (i == 0) return _Header(count: words.length, words: words);
-            final w = words[i - 1];
-            return _HardWordCard(word: w, srs: progress.srsFor(w.id));
-          },
+          children: [
+            // ZAIF MAVZULAR — "qaysi joyini o'zlashtirolmayapti".
+            // Bu so'zlardan kengroq: grammatika, o'qish, gapirish
+            // bandlari ham hisobga olinadi.
+            const WeakTopicsSection(),
+            if (words.isEmpty)
+              const _Empty()
+            else ...[
+              _Header(count: words.length, words: words),
+              for (final w in words)
+                _HardWordCard(word: w, srs: progress.srsFor(w.id)),
+            ],
+          ],
         );
       },
     );

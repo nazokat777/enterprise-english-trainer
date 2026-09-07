@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'package:enterprise_english/book_content.dart';
 import 'package:enterprise_english/content.dart';
 import 'package:enterprise_english/main.dart' as app;
 import 'package:enterprise_english/mastery.dart';
@@ -66,7 +67,15 @@ void main() {
     app.progress = Progress();
     app.mastery = MasteryStore();
     app.repo = ContentRepository();
-    await Future.wait([app.mastery.load(), app.progress.load(), app.repo.load()]);
+    // "Qiyin so'zlar" ekrani endi ZAIF MAVZULARni ham
+    // ko'rsatadi — u kitobni o'qiydi.
+    app.book = BookRepository();
+    await Future.wait([
+      app.mastery.load(),
+      app.progress.load(),
+      app.repo.load(),
+      app.book.loadIndex(),
+    ]);
   });
 
   Future<void> expectFits(WidgetTester t, Widget screen, Size size,
