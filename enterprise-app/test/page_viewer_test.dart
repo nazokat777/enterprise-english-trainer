@@ -14,7 +14,11 @@ void main() {
     addTearDown(t.view.reset);
 
     await t.pumpWidget(const MaterialApp(
-      home: BookPageViewer(book: 'coursebook', page: 6, bookLabel: 'Coursebook'),
+      home: BookPageViewer(
+          level: 'beginner',
+          book: 'coursebook',
+          page: 6,
+          bookLabel: 'Coursebook'),
     ));
     await t.pump();
 
@@ -29,7 +33,10 @@ void main() {
 
     await t.pumpWidget(const MaterialApp(
       home: BookPageViewer(
-          book: 'yoq-kitob', page: 9999, bookLabel: 'Yo\'q'),
+          level: 'beginner',
+          book: 'yoq-kitob',
+          page: 9999,
+          bookLabel: 'Yo\'q'),
     ));
     await t.pumpAndSettle();
 
@@ -62,5 +69,16 @@ void main() {
     await t.pump();
 
     expect(find.byType(Image), findsNothing);
+  });
+
+  test('bet suratining yo\'li DARAJAGA bog\'liq', () {
+    // Beginner va Elementary — ikkalasida ham 'coursebook' bor va
+    // ikkalasida ham 6-bet bor. Fayl nomida daraja bo'lmasa,
+    // Elementary'ning beti Beginner'nikini bosib ketardi.
+    final a = BookPageImage.assetPath('beginner', 'coursebook', 6);
+    final b = BookPageImage.assetPath('elementary', 'coursebook', 6);
+    expect(a, isNot(b));
+    expect(a, contains('beginner'));
+    expect(b, contains('elementary'));
   });
 }

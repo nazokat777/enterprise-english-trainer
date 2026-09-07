@@ -879,6 +879,7 @@ class BookPageScreen extends StatelessWidget {
             const SizedBox(height: 14),
             // Bet surati mavjud bo'lsagina ko'rinadi (assets/book_pages/).
             BookPageButton(
+              level: book.level,
               book: page.book,
               bookLabel: page.bookLabel,
               page: page.bookPage,

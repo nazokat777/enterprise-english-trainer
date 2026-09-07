@@ -689,6 +689,9 @@ class BookRepository {
   String _level = kDefaultLevel;
   String get _dir => levelById(_level).bookDir;
 
+  /// Joriy daraja — bet suratlarining fayl nomi ham shunga bog'liq.
+  String get level => _level;
+
   final List<UnitBrief> units = [];
   final Map<int, BookUnit> _cache = {};
 

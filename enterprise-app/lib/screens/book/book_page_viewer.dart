@@ -9,8 +9,12 @@ import '../../theme.dart';
 /// himoyalangan, shuning uchun uning betlari ilova bilan birga
 /// TARQATILMAYDI. Ilova shunchaki mexanizmni beradi:
 ///
-///   `assets/book_pages/KITOB_BET.jpg`
-///   masalan: `assets/book_pages/coursebook_6.jpg`
+///   `assets/book_pages/DARAJA_KITOB_BET.jpg`
+///   masalan: `assets/book_pages/beginner_coursebook_6.jpg`
+///
+/// DARAJA nomda BO'LIShI ShART: Beginner va Elementary'da ham
+/// 'coursebook' bor va ikkalasida ham 6-bet bor — daraja bo'lmasa
+/// Elementary'ning beti Beginner'nikini bosib ketardi.
 ///
 /// Agar egasi o'zi sotib olgan kitobning betlarini shu papkaga qo'ysa,
 /// tugma ishlaydi. Fayl bo'lmasa — tugma umuman ko'rsatilmaydi va
@@ -20,17 +24,17 @@ class BookPageImage {
 
   static final Map<String, bool> _cache = {};
 
-  static String assetPath(String book, int page) =>
-      'assets/book_pages/${book}_$page.jpg';
+  static String assetPath(String level, String book, int page) =>
+      'assets/book_pages/${level}_${book}_$page.jpg';
 
   /// Bet surati mavjudmi (bir marta tekshirilib keshlanadi).
-  static Future<bool> exists(String book, int page) async {
-    final key = '$book/$page';
+  static Future<bool> exists(String level, String book, int page) async {
+    final key = '$level/$book/$page';
     final cached = _cache[key];
     if (cached != null) return cached;
     var found = false;
     try {
-      await rootBundle.load(assetPath(book, page));
+      await rootBundle.load(assetPath(level, book, page));
       found = true;
     } catch (_) {
       found = false;
@@ -42,12 +46,14 @@ class BookPageImage {
 
 /// "Kitob betini ko'rish" tugmasi — surat bo'lsagina paydo bo'ladi.
 class BookPageButton extends StatefulWidget {
+  final String level;
   final String book;
   final String bookLabel;
   final int page;
 
   const BookPageButton({
     super.key,
+    required this.level,
     required this.book,
     required this.bookLabel,
     required this.page,
@@ -63,7 +69,7 @@ class _BookPageButtonState extends State<BookPageButton> {
   @override
   void initState() {
     super.initState();
-    BookPageImage.exists(widget.book, widget.page).then((v) {
+    BookPageImage.exists(widget.level, widget.book, widget.page).then((v) {
       if (mounted) setState(() => _has = v);
     });
   }
@@ -82,6 +88,7 @@ class _BookPageButtonState extends State<BookPageButton> {
             context,
             MaterialPageRoute(
               builder: (_) => BookPageViewer(
+                level: widget.level,
                 book: widget.book,
                 bookLabel: widget.bookLabel,
                 page: widget.page,
@@ -117,12 +124,14 @@ class _BookPageButtonState extends State<BookPageButton> {
 
 /// Bet suratini kattalashtirib ko'rish (zoom va surish bilan).
 class BookPageViewer extends StatelessWidget {
+  final String level;
   final String book;
   final String bookLabel;
   final int page;
 
   const BookPageViewer({
     super.key,
+    required this.level,
     required this.book,
     required this.bookLabel,
     required this.page,
@@ -143,7 +152,7 @@ class BookPageViewer extends StatelessWidget {
           minScale: 0.8,
           maxScale: 5,
           child: Image.asset(
-            BookPageImage.assetPath(book, page),
+            BookPageImage.assetPath(level, book, page),
             fit: BoxFit.contain,
             // Bet skani ~1 MB. Telefonda mobil internet bilan u
             // bir necha soniya kelishi mumkin edi va shu vaqt

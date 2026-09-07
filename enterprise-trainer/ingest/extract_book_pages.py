@@ -21,15 +21,43 @@ from pathlib import Path
 import fitz  # PyMuPDF
 
 TRAINER = Path(__file__).resolve().parent.parent
-PAGES = TRAINER / "data" / "pages"
-PDFS = TRAINER / "data" / "pdfs"
 OUT = TRAINER.parent / "enterprise-app" / "assets" / "book_pages"
 
-PDF_FILE = {
-    "coursebook": "enterprise-1-coursebook.pdf",
-    "workbook": "enterprise-1-workbook.pdf",
-    "grammar": "Enterprise_1_grammar.pdf",
+# Har daraja o'z betlar papkasi, o'z PDF papkasi va o'z fayl nomlariga ega.
+# Fayl nomida DARAJA bo'lishi shart: ikkala kitobda ham 'coursebook' bor va
+# ikkalasida ham 6-bet bor.
+LEVELS = {
+    "beginner": ("pages", "pdfs", {
+        "coursebook": "enterprise-1-coursebook.pdf",
+        "workbook": "enterprise-1-workbook.pdf",
+        "grammar": "Enterprise_1_grammar.pdf",
+    }),
+    "elementary": ("pages-elementary", "pdfs-elementary", {
+        "coursebook": "elementary-coursebook.pdf",
+        "workbook": "elementary-workbook.pdf",
+        "grammar": "elementary-grammar.pdf",
+    }),
 }
+DEFAULT_LEVEL = "beginner"
+
+LEVEL = DEFAULT_LEVEL
+PAGES = TRAINER / "data" / LEVELS[DEFAULT_LEVEL][0]
+PDFS = TRAINER / "data" / LEVELS[DEFAULT_LEVEL][1]
+PDF_FILE = LEVELS[DEFAULT_LEVEL][2]
+
+
+def set_level(level: str) -> None:
+    """Qaysi daraja betlari chiqarilishini belgilaydi."""
+    global LEVEL, PAGES, PDFS, PDF_FILE
+    if level not in LEVELS:
+        raise SystemExit(
+            f"Noma'lum daraja: {level}. Mavjud: {', '.join(LEVELS)}"
+        )
+    src, pdfs, files = LEVELS[level]
+    LEVEL = level
+    PAGES = TRAINER / "data" / src
+    PDFS = TRAINER / "data" / pdfs
+    PDF_FILE = files
 
 
 def page_map():
@@ -115,7 +143,7 @@ def extract_all(dpi: int) -> int:
             book_page = pdf_page - offset
             if book_page < 1:
                 continue  # muqova va kirish betlari
-            dest = OUT / f"{book}_{book_page}.jpg"
+            dest = OUT / f"{LEVEL}_{book}_{book_page}.jpg"
             if dest.exists():
                 continue
             doc[i].get_pixmap(dpi=dpi).save(dest)
@@ -146,11 +174,14 @@ def main() -> int:
                     help="Faqat shu unit betlari (standart: hammasi)")
     ap.add_argument("--dpi", type=int, default=190,
                     help="Rasm aniqligi (standart 190)")
+    ap.add_argument("--level", default=DEFAULT_LEVEL,
+                    help="Daraja: " + ", ".join(LEVELS))
     ap.add_argument("--all", action="store_true",
                     help="Kitobning BARCHA betlarini chiqarish (hali qayta "
                          "ishlanmaganlari ham). Bet raqami ma'lum betlardan "
                          "hisoblangan siljish bo'yicha aniqlanadi.")
     args = ap.parse_args()
+    set_level(args.level)
 
     if args.all:
         return extract_all(args.dpi)
@@ -172,7 +203,7 @@ def main() -> int:
         for book_page, (pdf_page, unit) in sorted(pages.items()):
             if args.unit is not None and unit != args.unit:
                 continue
-            dest = OUT / f"{book}_{book_page}.jpg"
+            dest = OUT / f"{LEVEL}_{book}_{book_page}.jpg"
             if dest.exists():
                 continue
             pix = doc[pdf_page - 1].get_pixmap(dpi=args.dpi)

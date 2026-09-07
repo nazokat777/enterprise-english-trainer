@@ -84,6 +84,8 @@ void main() {
     // shuning uchun repozitoriy ham kerak (haqiqiy ilovada u main()
     // da doim tayyorlanadi).
     app.repo = ContentRepository();
+    // `book` ham kerak: bet surati fayli DARAJA bilan nomlanadi.
+    app.book = BookRepository();
     await Future.wait([app.mastery.load(), app.progress.load(), app.repo.load()]);
     unit = BookUnit.fromJson(json.decode(_unitJson) as Map<String, dynamic>);
   });
