@@ -36,6 +36,13 @@ class DrillQuestion {
   /// Bo'lim nomi — tashxis uchun ("Grammatika", "Lug'at").
   final String topic;
 
+  /// MOSLASh o'yini uchun juftliklar (boshqa shakllarda bo'sh).
+  ///
+  /// Moslash bitta bandning savoli emas — bir necha bandni birga
+  /// so'raydigan O'YIN. Seans uni har necha savoldan keyin qo'yadi:
+  /// bir xil ko'rinish ketma-ket kelsa zerikarli bo'ladi.
+  final List<DrillPair> pairs;
+
   const DrillQuestion({
     required this.itemId,
     required this.format,
@@ -46,12 +53,21 @@ class DrillQuestion {
     this.speak = '',
     this.unit = 0,
     this.topic = '',
+    this.pairs = const [],
   });
 
   /// Harf yoki so'z bo'laklari (build uchun).
   List<String> get pieces => answer.trim().contains(' ')
       ? answer.trim().split(RegExp(r'\s+'))
       : answer.trim().split('');
+}
+
+/// Moslash o'yinidagi bitta juftlik.
+class DrillPair {
+  final String itemId;
+  final String en;
+  final String uz;
+  const DrillPair({required this.itemId, required this.en, required this.uz});
 }
 
 /// Bitta o'rganish birligi — savolga aylanishi mumkin bo'lgan manba.

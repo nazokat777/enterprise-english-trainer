@@ -63,6 +63,12 @@ class DrillSession {
   /// Shu seansda ishlanadigan bandlar (butun darsdan tanlangan).
   List<DrillSource> _batch = const [];
 
+  /// Necha savoldan keyin moslash o'yini qo'yiladi.
+  static const int matchEvery = 5;
+
+  /// O'yindagi juftliklar soni.
+  static const int matchPairs = 4;
+
   DrillPhase _phase = DrillPhase.lesson;
   final List<DrillQuestion> _queue = [];
   int _pos = 0;
@@ -224,7 +230,70 @@ class DrillSession {
       if (q != null) out.add(q);
     }
     out.shuffle(_rnd);
+    return _withMatchGames(out, src);
+  }
+
+  /// Har necha savoldan keyin MOSLASh o'yini qo'yiladi.
+  ///
+  /// Bir xil ko'rinish ketma-ket kelsa zerikarli bo'ladi va diqqat
+  /// so'nadi. O'yin — nafas rostlash: tez, oson va yoqimli.
+  List<DrillQuestion> _withMatchGames(
+      List<DrillQuestion> qs, List<DrillSource> src) {
+    final pairs = src
+        .where((e) =>
+            e.pair &&
+            e.uz.trim().isNotEmpty &&
+            e.en.trim().toLowerCase() != e.uz.trim().toLowerCase())
+        .toList();
+    if (pairs.length < matchPairs || qs.length <= matchEvery) return qs;
+
+    final out = <DrillQuestion>[];
+    for (var i = 0; i < qs.length; i++) {
+      out.add(qs[i]);
+      final last = i == qs.length - 1;
+      if (!last && (i + 1) % matchEvery == 0) {
+        out.add(_matchGame(pairs));
+      }
+    }
     return out;
+  }
+
+  DrillQuestion _matchGame(List<DrillSource> pool) {
+    final picked = (List.of(pool)..shuffle(_rnd)).take(matchPairs).toList();
+    return DrillQuestion(
+      itemId: 'game::match',
+      format: AskFormat.match,
+      prompt: 'So\'zlarni ma\'nosiga moslang',
+      answer: '',
+      unit: picked.first.unit,
+      topic: picked.first.topic,
+      pairs: [
+        for (final p in picked)
+          DrillPair(itemId: p.itemId, en: p.en, uz: p.uz),
+      ],
+    );
+  }
+
+  /// Moslash o'yini yakunlandi.
+  ///
+  /// [clean] — birinchi urinishda topilgan juftlar. Qolganlari xato
+  /// hisoblanadi va o'sha bandlar qayta so'raladi.
+  Future<void> answerMatch(Set<String> clean) async {
+    final q = current;
+    if (q == null || q.format != AskFormat.match) return;
+
+    for (final p in q.pairs) {
+      final ok = clean.contains(p.itemId);
+      await mastery.record(p.itemId, AskFormat.match, ok: ok);
+    }
+    if (clean.length == q.pairs.length) {
+      _combo += 1;
+      if (_combo > _bestCombo) _bestCombo = _combo;
+    } else {
+      _combo = 0;
+    }
+    _pos += 1;
+    if (_pos >= _queue.length) _advance();
   }
 
   /// Band uchun KEYINGI mos ko'rinishni tanlaydi.

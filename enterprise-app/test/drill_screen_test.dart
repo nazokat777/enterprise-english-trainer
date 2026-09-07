@@ -130,4 +130,34 @@ void main() {
     await t.pump();
     expect(t.takeException(), isNull);
   });
+
+
+  testWidgets('moslash o\'yini ekranda chiziladi va yakunlanadi', (t) async {
+    await pump(t, words(12));
+
+    // O'yin chiqquncha TO'G'RI javob beramiz.
+    //
+    // Tasodifiy variantni bosish YARAMAYDI: xato javob bandni
+    // navbatga qaytaradi, navbat uzayadi va o'yin 12 qadamda chiqmay
+    // qolishi mumkin — test beqaror bo'lardi.
+    var guard = 0;
+    while (find.text('So\'zlarni ma\'nosiga moslang').evaluate().isEmpty &&
+        guard++ < 12) {
+      var asked = -1;
+      for (var i = 0; i < 12; i++) {
+        if (find.text('word$i').evaluate().isNotEmpty) asked = i;
+      }
+      if (asked < 0) break;
+      await t.tap(find.text('soz$asked').first);
+      await t.pump();
+      await t.pump(const Duration(milliseconds: 1600));
+    }
+
+    expect(find.text('So\'zlarni ma\'nosiga moslang'), findsOneWidget,
+        reason: 'seansda o\'yin ham bo\'lsin');
+    // Ikkala ustunda ham yozuvlar bor.
+    expect(find.textContaining('word'), findsWidgets);
+    expect(find.textContaining('soz'), findsWidgets);
+    expect(t.takeException(), isNull);
+  });
 }

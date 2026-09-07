@@ -221,4 +221,61 @@ void main() {
     expect(big.where((e) => m.of(e.itemId).isStrong).length, 8,
         reason: 'ikkinchi seans YANGI bandlarni oldi');
   });
+
+
+  // O\'YIN: bir xil ko\'rinishdagi savollar ketma-ket kelsa diqqat
+  // so\'nadi. Har necha savoldan keyin moslash o\'yini qo\'yiladi.
+  group('moslash o\'yini', () {
+    test('savollar orasiga qo\'yiladi', () async {
+      final m = await store();
+      final s = DrillSession(
+          mastery: m, lessonSources: lesson(12), random: Random(30));
+
+      var seenMatch = false;
+      var guard = 0;
+      while (s.current != null && guard++ < 30) {
+        if (s.current!.format == AskFormat.match) {
+          seenMatch = true;
+          expect(s.current!.pairs.length, DrillSession.matchPairs);
+          break;
+        }
+        await s.answer(true);
+      }
+      expect(seenMatch, isTrue, reason: 'seansda o\'yin ham bo\'lsin');
+    });
+
+    test('topilgan juftlar yoziladi, topilmagani xato', () async {
+      final m = await store();
+      final s = DrillSession(
+          mastery: m, lessonSources: lesson(12), random: Random(31));
+
+      var guard = 0;
+      while (s.current != null &&
+          s.current!.format != AskFormat.match &&
+          guard++ < 30) {
+        await s.answer(true);
+      }
+      final game = s.current!;
+      expect(game.format, AskFormat.match);
+
+      // Faqat birinchi juftni topdik.
+      final first = game.pairs.first.itemId;
+      await s.answerMatch({first});
+
+      expect(m.of(first).passed.contains(AskFormat.match), isTrue);
+      for (final p in game.pairs.skip(1)) {
+        expect(m.of(p.itemId).lapses, greaterThan(0),
+            reason: 'topilmagan juft xato hisoblansin');
+      }
+    });
+
+    test('o\'yin O\'ZI bandni o\'zlashtirmaydi', () async {
+      final m = await store();
+      await m.record('w::x', AskFormat.match, ok: true);
+      await m.record('w::x', AskFormat.choice, ok: true);
+
+      expect(m.of('w::x').isStrong, isFalse,
+          reason: 'ikkalasi ham TANISh — yozish hali tekshirilmadi');
+    });
+  });
 }
