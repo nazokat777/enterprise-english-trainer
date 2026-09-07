@@ -174,4 +174,51 @@ void main() {
 
     expect(s.phase, DrillPhase.done);
   });
+
+
+  // Bitta unitda 578 tagacha band bor. Hammasini bir o\'tirishda 100%
+  // qilish imkonsiz — seans QISQA va TUGAYDIGAN bo\'lishi kerak.
+  test('seans darsdan faqat bir bo\'lakni oladi', () async {
+    final m = await store();
+    final big = lesson(50);
+    final s = DrillSession(
+        mastery: m, lessonSources: big, lessonBatch: 6, random: Random(20));
+
+    expect(s.remaining, 6, reason: 'bitta seansda 6 band');
+    expect(s.lessonProgress, 0, reason: 'butun dars hali 0%');
+
+    var guard = 0;
+    while (s.phase == DrillPhase.lesson && guard++ < 300) {
+      await s.answer(true);
+    }
+
+    expect(s.phase, DrillPhase.done, reason: 'oldingi dars yo\'q');
+    // Dars 100% emas — lekin oldinga siljidi.
+    expect(s.lessonProgress, greaterThan(0));
+    expect(s.lessonProgress, lessThan(1));
+  });
+
+  test('keyingi seans QOLGAN bandlarni oladi', () async {
+    final m = await store();
+    final big = lesson(12);
+
+    var s = DrillSession(
+        mastery: m, lessonSources: big, lessonBatch: 4, random: Random(21));
+    var guard = 0;
+    while (s.phase == DrillPhase.lesson && guard++ < 300) {
+      await s.answer(true);
+    }
+    final firstDone = big.where((e) => m.of(e.itemId).isStrong).length;
+    expect(firstDone, 4);
+
+    s = DrillSession(
+        mastery: m, lessonSources: big, lessonBatch: 4, random: Random(22));
+    guard = 0;
+    while (s.phase == DrillPhase.lesson && guard++ < 300) {
+      await s.answer(true);
+    }
+
+    expect(big.where((e) => m.of(e.itemId).isStrong).length, 8,
+        reason: 'ikkinchi seans YANGI bandlarni oldi');
+  });
 }

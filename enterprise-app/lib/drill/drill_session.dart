@@ -47,6 +47,22 @@ class DrillSession {
   /// Aralash bosqichda nechta band so'raladi.
   final int mixedSize;
 
+  /// BITTA SEANSDA shu darsdan nechta band olinadi.
+  ///
+  /// Nega chegara kerak: bitta unitda 578 tagacha band bor. Hammasini
+  /// bir o'tirishda 100% qilish imkonsiz — o'quvchi charchaydi va
+  /// tashlab ketadi. Seans qisqa va TUGAYDIGAN bo'lishi kerak: shunda
+  /// har o'tirish "bajardim" hissi beradi (nevrologiya: aniq va
+  /// yetib boradigan maqsad dopamin beradi, cheksiz ro'yxat esa
+  /// aksincha).
+  ///
+  /// Dars baribir 100% gacha boradi — keyingi seans qolganini oladi.
+  /// Unit tugmasidagi foiz butun darsni ko'rsatadi.
+  final int lessonBatch;
+
+  /// Shu seansda ishlanadigan bandlar (butun darsdan tanlangan).
+  List<DrillSource> _batch = const [];
+
   DrillPhase _phase = DrillPhase.lesson;
   final List<DrillQuestion> _queue = [];
   int _pos = 0;
@@ -62,11 +78,28 @@ class DrillSession {
     required this.mastery,
     required this.lessonSources,
     this.earlierSources = const [],
-    this.mixedSize = 12,
+    this.mixedSize = 8,
+    this.lessonBatch = 10,
     Random? random,
   }) : _rnd = random ?? Random() {
+    _pickBatch();
     _fillLesson();
   }
+
+  /// Darsdan shu seansga bandlarni tanlaydi: avval ZAIF va YANGI.
+  void _pickBatch() {
+    final left =
+        lessonSources.where((e) => !mastery.of(e.itemId).isStrong).toList()
+          ..sort((a, b) => mastery
+              .of(b.itemId)
+              .needScore
+              .compareTo(mastery.of(a.itemId).needScore));
+    _batch = left.take(lessonBatch).toList();
+  }
+
+  /// Butun darsning o'zlashtirilishi (tugmadagi foiz uchun).
+  double get lessonProgress =>
+      mastery.ratio(lessonSources.map((e) => e.itemId));
 
   DrillPhase get phase => _phase;
   int get combo => _combo;
@@ -78,7 +111,7 @@ class DrillSession {
 
   /// Joriy bosqichdagi birliklar.
   List<DrillSource> get _active =>
-      _phase == DrillPhase.lesson ? lessonSources : _mixedPicked;
+      _phase == DrillPhase.lesson ? _batch : _mixedPicked;
 
   /// Joriy bosqichning o'zlashtirilish ulushi (0..1) — halqa uchun.
   double get progress =>
@@ -114,7 +147,7 @@ class DrillSession {
   /// Xato qilingan bandni navbatga QAYTARADI — boshqa ko'rinishda.
   void _requeue(DrillQuestion q) {
     final src = _active.firstWhere((e) => e.itemId == q.itemId,
-        orElse: () => lessonSources.first);
+        orElse: () => _active.isNotEmpty ? _active.first : lessonSources.first);
     const gap = 3;
     final at = (_pos + gap).clamp(0, _queue.length);
     final next = _make(src, avoid: q.format);
@@ -145,7 +178,7 @@ class DrillSession {
   void _fillLesson() {
     _queue
       ..clear()
-      ..addAll(_questionsFor(lessonSources));
+      ..addAll(_questionsFor(_batch));
     _pos = 0;
     if (_queue.isEmpty) {
       _phase = DrillPhase.mixed;

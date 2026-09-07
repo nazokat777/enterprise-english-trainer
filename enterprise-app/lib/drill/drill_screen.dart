@@ -456,13 +456,16 @@ class _Finished extends StatelessWidget {
         const SizedBox(height: 6),
         Center(
           child: Text(
-            'Hamma band 100% to\'g\'ri javob berildi — shu dars ham, '
-            'oldingi darslar bilan aralash takror ham.',
+            'Shu seansdagi bandlar 100% to\'g\'ri javob berildi.',
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 13, height: 1.5, color: AppColors.muted(context)),
           ),
         ),
+        const SizedBox(height: 18),
+        // BUTUN dars qancha qolgani — o'quvchi yo'lni ko'rsin.
+        // Seans qisqa, lekin dars 100% gacha davom etadi.
+        _LessonBar(value: session.lessonProgress),
         const SizedBox(height: 16),
         Center(
           child: Container(
@@ -487,6 +490,43 @@ class _Finished extends StatelessWidget {
                     fontWeight: FontWeight.w800,
                     fontSize: 16)),
           ),
+        ),
+      ],
+    );
+  }
+}
+
+/// Butun darsning o\'zlashtirilishi — seans oxiridagi yo\'l xaritasi.
+class _LessonBar extends StatelessWidget {
+  final double value;
+  const _LessonBar({required this.value});
+
+  @override
+  Widget build(BuildContext context) {
+    final pct = (value * 100).round();
+    return Column(
+      children: [
+        Text('Butun dars: $pct%',
+            style: const TextStyle(
+                fontWeight: FontWeight.w800, fontSize: 14)),
+        const SizedBox(height: 8),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(AppRadius.pill),
+          child: LinearProgressIndicator(
+            value: value,
+            minHeight: 10,
+            backgroundColor: AppColors.brandPurple.withValues(alpha: 0.15),
+            valueColor:
+                const AlwaysStoppedAnimation<Color>(AppColors.brandPurple),
+          ),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          pct >= 100
+              ? 'Bu dars to\'liq o\'zlashtirildi.'
+              : 'Keyingi seansda qolgan bandlar so\'raladi.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
         ),
       ],
     );
