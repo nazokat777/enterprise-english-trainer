@@ -64,6 +64,22 @@ class DrillSource {
   final String en;
   final String uz;
 
+  /// `en` va `uz` HAQIQATAN tarjima juftimi.
+  ///
+  /// Lug'at so'zi, moslash juftligi va o'qish kartochkasida — ha.
+  /// Mashqning tanlash/yozish bandida esa YO'Q: u yerda `en` javob,
+  /// `uz` esa SAVOLNING tarjimasi. Ularni tarjima juftidek so'rash
+  /// ma'nosiz savol beradi:
+  ///
+  ///   "Brazil" -> "Ketmon ushlagan ikki dehqon, dalada"
+  ///
+  /// Bunday bandlar faqat O'Z savoli bilan (bo'shliqli gap yoki
+  /// asl savol) so'raladi.
+  final bool pair;
+
+  /// Bandning ASL savoli (tarjima jufti bo'lmaganda ishlatiladi).
+  final String question;
+
   /// Bo'shliqli gap (bo'lsa) — cloze uchun.
   final String sentence;
 
@@ -77,6 +93,8 @@ class DrillSource {
     required this.itemId,
     required this.en,
     required this.uz,
+    this.pair = true,
+    this.question = '',
     this.sentence = '',
     this.options = const [],
     this.unit = 0,
@@ -89,6 +107,17 @@ class DrillSource {
 
 /// Bo'shliq belgisi — kitobdagi mashqlarda ham shu ishlatiladi.
 const String kBlank = '_____';
+
+/// Mashq bandi uchun eng ko'p so'z soni.
+///
+/// Kitobning muqovasi va mundarijasida uzun gaplar bor
+/// ("ENTERPRISE 1 - COURSEBOOK - Beginner. Virginia Evans...").
+/// Ular O'QISh uchun, YODLASh uchun emas: bunday gapni "tarjimasini
+/// toping" deb so'rash o'quvchiga hech narsa bermaydi va seansni
+/// bo'g'ib qo'yadi.
+const int kMaxWords = 8;
+
+bool _tooLong(String s) => s.trim().split(RegExp(r'\s+')).length > kMaxWords;
 
 /// Darsdan o'rganish birliklarini yig'adi.
 ///
@@ -104,14 +133,24 @@ List<DrillSource> sourcesFromUnit(BookUnit u) {
       for (var i = 0; i < e.tasks.length; i++) {
         final t = e.tasks[i];
         final id = 't::${e.progressId}::$i';
-        final pair = _pairOf(e.kind, t);
-        if (pair == null) continue;
-        if (!seen.add(pair.$1.toLowerCase())) continue;
+        final p = _pairOf(e.kind, t);
+        if (p == null) continue;
+        // IKKALA tomon ham qisqa bo'lishi kerak: mundarijada chap
+        // tomon qisqa ("Unit 1 — p. 4"), o'ng tomon esa uzun
+        // mavzular ro'yxati.
+        if (_tooLong(p.$1) || _tooLong(p.$2)) continue;
+        if (!seen.add(p.$1.toLowerCase())) continue;
+        // Tanlash/yozish bandida `uz` — SAVOLNING tarjimasi, javobning
+        // emas. Shuning uchun u tarjima jufti hisoblanmaydi.
+        final isPair =
+            e.kind == ExKind.match || e.kind == ExKind.study;
         out.add(DrillSource(
           itemId: id,
-          en: pair.$1,
-          uz: pair.$2,
-          sentence: _sentenceOf(t, pair.$1),
+          en: p.$1,
+          uz: p.$2,
+          pair: isPair,
+          question: t.prompt.trim(),
+          sentence: _sentenceOf(t, p.$1),
           options: e.kind == ExKind.choice ? t.options : const [],
           unit: u.unit,
           topic: s.titleUz,
@@ -200,6 +239,23 @@ DrillQuestion? _build(
 ) {
   switch (format) {
     case AskFormat.choice:
+      // Tarjima jufti BO'LMAGAN band (mashq savoli) o'z savoli bilan
+      // so'raladi: "Brazil -> Ketmon ushlagan ikki dehqon" kabi
+      // ma'nosiz savol chiqmasin.
+      if (!s.pair) {
+        if (s.question.isEmpty || s.options.length < 2) return null;
+        if (!s.options.contains(s.en)) return null;
+        return DrillQuestion(
+          itemId: s.itemId,
+          format: format,
+          prompt: s.question,
+          promptUz: s.uz,
+          answer: s.en,
+          options: List.of(s.options)..shuffle(rnd),
+          unit: s.unit,
+          topic: s.topic,
+        );
+      }
       // O'zbekchasi yo'q band bu ko'rinishga YARAMAYDI: javob ham,
       // savol ham inglizcha bo'lib qoladi va javob savolning O'ZIDA
       // ko'rinib turadi.
@@ -240,6 +296,20 @@ DrillQuestion? _build(
 
     case AskFormat.build:
       if (s.en.trim().length < 2) return null;
+      // Tarjima jufti bo'lmasa — bo'shliqli GAP savol bo'ladi va
+      // javob harflardan yig'iladi.
+      if (!s.pair) {
+        if (s.sentence.isEmpty) return null;
+        return DrillQuestion(
+          itemId: s.itemId,
+          format: format,
+          prompt: s.sentence,
+          promptUz: s.uz,
+          answer: s.en,
+          unit: s.unit,
+          topic: s.topic,
+        );
+      }
       // Savol O'ZBEKChA bo'lishi SHART. Aks holda savol matni
       // javobning o'zi bo'lib qoladi — o'quvchi shunchaki ko'chiradi
       // va hech narsa yodlanmaydi.
@@ -255,6 +325,9 @@ DrillQuestion? _build(
       );
 
     case AskFormat.listen:
+      // Tarjima jufti bo'lmagan band bu ko'rinishga yaramaydi:
+      // savol o'zbekcha bo'lolmaydi.
+      if (!s.pair) return null;
       if (s.en.trim().isEmpty) return null;
       // Tinglab yozishda savol matni ko'rsatilmaydi (faqat ovoz va
       // o'zbekcha izoh), shuning uchun tarjima bo'lmasa ham bo'ladi.
@@ -272,6 +345,9 @@ DrillQuestion? _build(
       );
 
     case AskFormat.produce:
+      // Tarjima jufti bo'lmagan band bu ko'rinishga yaramaydi:
+      // savol o'zbekcha bo'lolmaydi.
+      if (!s.pair) return null;
       if (s.uz.trim().isEmpty) return null;
       final opts = _options(s, pool, rnd, useUz: false);
       if (opts.length < 2) return null;

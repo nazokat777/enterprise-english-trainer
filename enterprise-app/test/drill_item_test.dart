@@ -117,4 +117,62 @@ void main() {
     expect(checked, greaterThan(500), reason: 'haqiqiy kontent tekshirilsin');
     expect(bad, isEmpty, reason: bad.take(5).join('; '));
   });
+
+
+  // XATO edi: mashqning tanlash bandida `en` javob, `uz` esa SAVOL
+  // tarjimasi. Ularni tarjima juftidek so\'rash ma\'nosiz savol berardi:
+  //   "Brazil"  ->  "Ketmon ushlagan ikki dehqon, dalada"
+  group('tarjima jufti BO\'LMAGAN band', () {
+    const s = DrillSource(
+      itemId: 't::x::0',
+      en: 'Brazil',
+      uz: 'Ketmon ushlagan ikki dehqon, dalada',
+      pair: false,
+      question: 'Two farmers with hoes, working in a field',
+      sentence: 'Two farmers with hoes, working in a field',
+      options: ['Brazil', 'Spain', 'India', 'Scotland'],
+    );
+
+    test('o\'z savoli bilan so\'raladi, tarjima juftidek emas', () {
+      final qq = buildQuestion(s, AskFormat.choice, pool, Random(1))!;
+
+      expect(qq.prompt, 'Two farmers with hoes, working in a field');
+      expect(qq.answer, 'Brazil');
+      expect(qq.options, contains('Brazil'));
+    });
+
+    test('o\'zbekchadan inglizchaga so\'ralmaydi', () {
+      expect(buildQuestion(s, AskFormat.produce, pool, Random(1)), isNull);
+      expect(buildQuestion(s, AskFormat.listen, pool, Random(1)), isNull);
+    });
+
+    test('harflab yozishda savol GAP bo\'ladi, tarjima emas', () {
+      final qq = buildQuestion(s, AskFormat.build, pool, Random(1))!;
+      expect(qq.prompt, isNot('Ketmon ushlagan ikki dehqon, dalada'));
+      expect(qq.answer, 'Brazil');
+    });
+  });
+
+  test('HAQIQIY kitobda javob savolga MA\'NAN mos', () async {
+    // Tarjima juftidek so\'ralgan bandning javobi UZUN gap bo\'lmasin —
+    // "so\'z -> tavsif" ko\'rinishidagi savollar shundan bilinadi.
+    final rnd = Random(11);
+    final bad = <String>[];
+    for (final brief in app.book.units.take(10)) {
+      final u = await app.book.load(brief.unit);
+      if (u == null) continue;
+      final src = sourcesFromUnit(u);
+      for (final x in src) {
+        final qq = buildQuestion(x, AskFormat.choice, src, rnd);
+        if (qq == null) continue;
+        // Tanlash savolida javob 5 so\'zdan uzun bo\'lsa — bu tarjima
+        // emas, tavsif.
+        if (x.pair && qq.answer.split(RegExp(r'\s+')).length > kMaxWords) {
+          bad.add('${qq.prompt} -> ${qq.answer}');
+        }
+      }
+    }
+    expect(bad, isEmpty,
+        reason: 'uzun matn mashq bandi bo\'lmasin: ${bad.take(3).join(' | ')}');
+  });
 }
