@@ -35,8 +35,12 @@ class WeakTopic {
 Future<List<WeakTopic>> weakTopics({int limit = 8}) async {
   final byTopic = <String, List<DrillSource>>{};
 
-  for (final brief in book.units) {
-    final u = await book.load(brief.unit);
+  // Unitlar BIR VAQTDA yuklanadi. Birin-ketin yuklashda ekran 20
+  // soniyadan ko'p aylanardi — takrorlash va suhbatlar ekranlarida
+  // ham aynan shu xato bo'lgan edi.
+  final loaded = await Future.wait(book.units.map((b) => book.load(b.unit)));
+
+  for (final u in loaded) {
     if (u == null) continue;
     for (final s in sourcesFromUnit(u)) {
       final m = mastery.of(s.itemId);
