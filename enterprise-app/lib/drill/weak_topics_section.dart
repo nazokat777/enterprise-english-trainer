@@ -126,7 +126,7 @@ class _TopicCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 6),
-                Text('${topic.left} ta band qoldi',
+                Text('${topic.left} ta savol qoldi',
                     style: TextStyle(
                         fontSize: 12, color: AppColors.muted(context))),
               ],

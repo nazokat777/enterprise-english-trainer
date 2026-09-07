@@ -7,7 +7,7 @@ import 'package:enterprise_english/mastery.dart';
 import 'package:enterprise_english/drill/drill_item.dart';
 import 'package:enterprise_english/drill/drill_session.dart';
 
-/// DARS USTASI — "100% javob bergunicha qo'ymaydi" mantiqi.
+/// TRENING — "100% javob bergunicha qo'ymaydi" mantiqi.
 ///
 /// Egasining talabi: bugungi darsni to'liq o'zlashtirgunicha
 /// qayta-qayta so'rasin, so'ng shu darsgacha bo'lgan hamma mavzu

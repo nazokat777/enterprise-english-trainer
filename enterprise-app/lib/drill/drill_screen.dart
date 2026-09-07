@@ -12,7 +12,7 @@ import '../widgets/pressable3d.dart';
 import 'drill_item.dart';
 import 'drill_session.dart';
 
-/// DARS USTASI EKRANI — darsni o'zlashtirgunicha qo'ymaydigan seans.
+/// TRENING EKRANI — dars 100% bo'lgunicha qo'ymaydigan seans.
 ///
 /// Ikki bosqich: avval shu dars 100% gacha, so'ng oldingi darslar
 /// aralashtirilib yana 100% gacha (`DrillSession`).
@@ -117,9 +117,9 @@ class _DrillScreenState extends State<DrillScreen> {
   }
 
   String _phaseLabel() => switch (_s.phase) {
-        DrillPhase.lesson => 'Shu dars — o\'zlashtirgunicha',
-        DrillPhase.mixed => 'Aralash takror — oldingi darslar bilan',
-        DrillPhase.done => 'Tugadi',
+        DrillPhase.lesson => 'Fokus · shu dars',
+        DrillPhase.mixed => 'Miks · oldingi darslar bilan',
+        DrillPhase.done => 'Yakunlandi',
       };
 
   Widget _body(DrillQuestion q) {
@@ -184,7 +184,7 @@ class _Header extends StatelessWidget {
                       color: AppColors.success)),
               const SizedBox(width: 10),
               Expanded(
-                child: Text('${session.remaining} ta band qoldi',
+                child: Text('${session.remaining} ta savol qoldi',
                     style: TextStyle(
                         fontSize: 12.5, color: AppColors.muted(context))),
               ),
@@ -196,7 +196,7 @@ class _Header extends StatelessWidget {
                     color: AppColors.coin.withValues(alpha: 0.18),
                     borderRadius: BorderRadius.circular(AppRadius.pill),
                   ),
-                  child: Text('${session.combo} ketma-ket',
+                  child: Text('x${session.combo} kombo',
                       style: const TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w800,
@@ -631,7 +631,7 @@ class _Finished extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         const Center(
-          child: Text('Dars o\'zlashtirildi',
+          child: Text('Trening yakunlandi',
               style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.w800,
@@ -640,7 +640,7 @@ class _Finished extends StatelessWidget {
         const SizedBox(height: 6),
         Center(
           child: Text(
-            'Shu seansdagi bandlar 100% to\'g\'ri javob berildi.',
+            'Shu seansdagi savollar 100% to\'g\'ri javob berildi.',
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 13, height: 1.5, color: AppColors.muted(context)),
@@ -658,7 +658,7 @@ class _Finished extends StatelessWidget {
               color: AppColors.coin.withValues(alpha: 0.16),
               borderRadius: BorderRadius.circular(AppRadius.pill),
             ),
-            child: Text('Eng uzun ketma-ketlik: ${session.bestCombo}',
+            child: Text('Eng uzun kombo: x${session.bestCombo}',
                 style: const TextStyle(
                     fontWeight: FontWeight.w800, fontSize: 14)),
           ),
@@ -690,7 +690,7 @@ class _LessonBar extends StatelessWidget {
     final pct = (value * 100).round();
     return Column(
       children: [
-        Text('Butun dars: $pct%',
+        Text('Dars progressi: $pct%',
             style: const TextStyle(
                 fontWeight: FontWeight.w800, fontSize: 14)),
         const SizedBox(height: 8),
@@ -707,8 +707,8 @@ class _LessonBar extends StatelessWidget {
         const SizedBox(height: 8),
         Text(
           pct >= 100
-              ? 'Bu dars to\'liq o\'zlashtirildi.'
-              : 'Keyingi seansda qolgan bandlar so\'raladi.',
+              ? 'Bu dars 100% — ajoyib natija.'
+              : 'Keyingi seansda qolgan savollar keladi.',
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
         ),

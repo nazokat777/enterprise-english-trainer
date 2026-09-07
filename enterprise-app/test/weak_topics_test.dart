@@ -131,7 +131,7 @@ void main() {
     }
 
     expect(find.text('Zaif mavzular'), findsOneWidget);
-    expect(find.textContaining('band qoldi'), findsWidgets);
+    expect(find.textContaining('savol qoldi'), findsWidgets);
     expect(t.takeException(), isNull);
   });
 }

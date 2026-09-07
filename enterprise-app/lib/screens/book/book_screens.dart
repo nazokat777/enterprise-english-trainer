@@ -172,7 +172,7 @@ class _ContinueBanner extends StatelessWidget {
   }
 }
 
-/// "Darsni o'zlashtirish" tugmasi — Dars ustasi seansini boshlaydi.
+/// "Trening" tugmasi — o'zlashtirish seansini boshlaydi.
 class _MasterButton extends StatelessWidget {
   final BookUnit unit;
   const _MasterButton({required this.unit});
@@ -193,7 +193,7 @@ class _MasterButton extends StatelessWidget {
       context,
       MaterialPageRoute(
         builder: (_) => DrillScreen(
-          title: '${unit.displayLabel} — o\'zlashtirish',
+          title: '${unit.displayLabel} — trening',
           lessonSources: lessonSrc,
           earlierSources: earlier,
         ),
@@ -220,8 +220,8 @@ class _MasterButton extends StatelessWidget {
               Flexible(
                 child: Text(
                     pct >= 100
-                        ? 'Darsni takrorlash (100%)'
-                        : 'Darsni o\'zlashtirish ($pct%)',
+                        ? 'Trening — takrorlash (100%)'
+                        : 'Trening — $pct%',
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                         color: Colors.white,
@@ -420,7 +420,7 @@ class BookUnitScreen extends StatelessWidget {
           children: [
             _summary(context),
             const SizedBox(height: 16),
-            // ENG ASOSIY tugma — darsni o'zlashtirish seansi.
+            // ENG ASOSIY tugma — trening seansi.
             //
             // Betma-bet ko'rish "o'qish", bu esa "o'rganish": dars
             // 100% o'zlashtirilgunicha savollar takrorlanadi, so'ng

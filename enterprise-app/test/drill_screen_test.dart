@@ -9,7 +9,7 @@ import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/drill/drill_item.dart';
 import 'package:enterprise_english/drill/drill_screen.dart';
 
-/// DARS USTASI EKRANI — savolga javob berishning o'zi.
+/// TRENING EKRANI — savolga javob berishning o'zi.
 ///
 /// Ayniqsa HARFLAB YOZISh bosqichi: egasining talabi bo'yicha lug'at
 /// o'zbekcha so'ralib, inglizchasi harflardan yig'iladi.

@@ -15,7 +15,7 @@ enum DrillPhase {
   done,
 }
 
-/// DARS USTASI — "o'zlashtirgunicha qo'ymaydigan" seans dvigateli.
+/// TRENING — "100% bo'lgunicha qo'ymaydigan" seans dvigateli.
 ///
 /// Egasi qo'ygan talab:
 ///   1) bugungi darsni 100% to'g'ri javob bergunicha qayta-qayta,
