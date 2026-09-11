@@ -1,0 +1,110 @@
+{
+  "book": "workbook",
+  "pdfPage": 2,
+  "bookPage": 0,
+  "bookPageLabel": "Workbook - titul varag'i",
+  "unit": 800,
+  "unitLabelUz": "Kirish qismi",
+  "unitBadge": "i",
+  "order": 0.1,
+  "unitTitle": "Kitoblarning kirish qismi (muqova, titul, mundarija)",
+  "module": 1,
+  "scanNote": "WORKBOOK TITUL VARAG'I. Oq (biroz kulrang) fon, surat yo'q, bet raqami yo'q, mashq yo'q.\n\nBetning o'rtasida, yuqoridan pastga:\n• 'w o r k b o o k' - qora kichik harflar, keng oraliq bilan\n• 'ENTERPRISE 2' - katta TO'Q SARIQ tor harflar\n• 'E L E M E N T A R Y' - to'q sariq tasma ichida OQ harflar\n• pastroqda: 'Virginia Evans / Jenny Dooley'\n• eng pastda: Express Publishing logotipi (kamalak ustidagi ochiq kitob) va yozuvi\n\n⚠ O'ng pastda KO'K MUHR (qiya): 'NOT FOR SALE / FREE SAMPLE COPY' - bu nusxa sotuv uchun emas, bepul namuna nusxasi. Bu kitobning o'ziga tegishli emas - muhr nashriyot tomonidan namuna nusxalarga bosiladi.\n\n⚠ Orqa tomondan (3-bet) matn ko'chib ko'rinadi ('Acknowledgements' va boshqa satrlar) - qog'oz yupqa.",
+  "sections": [
+    {
+      "kind": "reference",
+      "title": "Workbook title page",
+      "titleUz": "Workbook - titul varag'i",
+      "exercises": [
+        {
+          "ref": "titul",
+          "type": "explain",
+          "instructionEn": "workbook - ENTERPRISE 2 - ELEMENTARY. Virginia Evans - Jenny Dooley. Express Publishing. (Stamp: NOT FOR SALE - FREE SAMPLE COPY)",
+          "instructionUz": "mashq daftari - ENTERPRISE 2 - BOShLANG'ICh DARAJA. Virjiniya Evans - Jenni Duli. Express Publishing. (Muhr: SOTUVGA EMAS - BEPUL NAMUNA NUSXASI)",
+          "explanationUz": "BU BET - WORKBOOK TITUL VARAG'I.\n\n  ⚠ Inglizcha: 'the title page'.\n\n  Mashq yo'q, bet raqami ham yo'q.\n\n\nBETDAGI MATN (yuqoridan pastga):\n\n  workbook            - kitob turi\n  ENTERPRISE 2        - seriya va bosqich\n  ELEMENTARY          - daraja\n  Virginia Evans /\n     Jenny Dooley     - mualliflar\n  Express Publishing  - nashriyot\n\n\n⚠ MUHR: 'NOT FOR SALE -\n  FREE SAMPLE COPY':\n\n  'not for sale' = sotuvga emas\n  'free' = bepul\n  'a sample' = namuna\n  'a copy' = nusxa\n\n  ⚠ Nashriyot o'qituvchilarga va\n  maktablarga kitobni ko'rib chiqish\n  uchun BEPUL NAMUNA yuboradi - shu\n  muhr bosiladi. Kitob mazmuni\n  oddiy nusxa bilan bir xil.\n\n  ⚠ 'for sale' = sotuvda\n  ⚠ 'on sale' = chegirmada (AQSh) /\n  sotuvda (Brit.)\n\n\n⚠ 'A COPY' - IKKI MA'NO:\n\n  1) NUSXA (kitobning bir donasi)\n     'I have a copy of this book.'\n  2) KO'ChIRMA\n     'Make a copy of the letter.'\n  ⚠ fe'l: 'to copy' = ko'chirmoq.\n\n\nYANGI SO'ZLAR:\n  a title page  = titul varag'i\n  a stamp       = muhr; marka\n  for sale      = sotuvda\n  free          = bepul; ozod\n  a sample      = namuna\n  a copy        = nusxa",
+          "bookRef": "Workbook, titul varag'i",
+          "points": [
+            {
+              "en": "workbook - ENTERPRISE 2 - ELEMENTARY",
+              "uz": "mashq daftari - ENTERPRISE 2 - BOShLANG'ICh DARAJA",
+              "noteUz": "⚠ Titul varag'i muqovaning matnini\ntakrorlaydi, lekin SURATSIZ."
+            },
+            {
+              "en": "Virginia Evans - Jenny Dooley",
+              "uz": "Virjiniya Evans - Jenni Duli",
+              "noteUz": "⚠ Coursebook bilan bir xil mualliflar."
+            },
+            {
+              "en": "NOT FOR SALE - FREE SAMPLE COPY",
+              "uz": "SOTUVGA EMAS - BEPUL NAMUNA NUSXASI",
+              "noteUz": "⚠ Ko'k muhr - nashriyot namuna nusxasi.\nKitob mazmuniga aloqasi yo'q.\n\n⚠ 'a sample' = namuna, 'a copy' = nusxa."
+            },
+            {
+              "en": "Express Publishing",
+              "uz": "Express Publishing",
+              "noteUz": "⚠ Logotip: KAMALAK ustidagi ochiq kitob."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabularyOnPage": [
+    { "en": "a title page", "uz": "titul varag'i" },
+    { "en": "a title", "uz": "nom, sarlavha; unvon" },
+    { "en": "a stamp", "uz": "muhr; marka" },
+    { "en": "for sale", "uz": "sotuvda" },
+    { "en": "not for sale", "uz": "sotuvga emas" },
+    { "en": "free", "uz": "bepul; ozod" },
+    { "en": "a sample", "uz": "namuna" },
+    { "en": "a copy", "uz": "nusxa" },
+    { "en": "to copy", "uz": "ko'chirmoq" },
+    { "en": "a publisher", "uz": "nashriyot" }
+  ],
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Kitob va nusxa haqida.",
+    "patterns": [
+      {
+        "formula": "This copy is not for sale.",
+        "exampleEn": "This copy is not for sale - it's a free sample.",
+        "exampleUz": "Bu nusxa sotuvga emas - bu bepul namuna.",
+        "explanationUz": "⚠ 'for sale' = sotuvda."
+      },
+      {
+        "formula": "The title of the book is [nom].",
+        "exampleEn": "The title of the book is Enterprise 2 Workbook.",
+        "exampleUz": "Kitobning nomi - Enterprise 2 Workbook.",
+        "explanationUz": "⚠ 'the title OF the book'."
+      },
+      {
+        "formula": "I have a copy of [kitob].",
+        "exampleEn": "I have a copy of the workbook.",
+        "exampleUz": "Menda mashq daftarining bir nusxasi bor.",
+        "explanationUz": "⚠ 'a copy OF ...'."
+      }
+    ]
+  },
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Betdagi so'zlar.",
+    "groups": [
+      {
+        "ruleUz": "⚠ FE'L → OT: sell → sale",
+        "explanationUz": "'for sale' - 'sale' oti 'sell' fe'lidan.",
+        "items": [
+          { "base": "to sell", "baseUz": "sotmoq", "derived": "a sale", "derivedUz": "sotuv; chegirma", "note": "⚠ betda 'not for sale'" },
+          { "base": "to sell", "baseUz": "sotmoq", "derived": "a seller", "derivedUz": "sotuvchi", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "⚠ OT = FE'L: copy, sample, stamp",
+        "explanationUz": "Bir so'z ham ot, ham fe'l.",
+        "items": [
+          { "base": "a copy", "baseUz": "nusxa", "derived": "to copy", "derivedUz": "ko'chirmoq", "note": "⚠ betda 'sample copy'" },
+          { "base": "a stamp", "baseUz": "muhr", "derived": "to stamp", "derivedUz": "muhr bosmoq", "note": "" }
+        ]
+      }
+    ]
+  }
+}

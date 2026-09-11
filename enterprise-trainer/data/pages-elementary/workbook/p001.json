@@ -1,0 +1,119 @@
+{
+  "book": "workbook",
+  "pdfPage": 1,
+  "bookPage": 0,
+  "bookPageLabel": "Workbook - old muqova",
+  "unit": 800,
+  "unitLabelUz": "Kirish qismi",
+  "unitBadge": "i",
+  "order": 0.1,
+  "unitTitle": "Kitoblarning kirish qismi (muqova, titul, mundarija)",
+  "module": 1,
+  "scanNote": "Bu - Enterprise 2 Elementary WORKBOOK'ning OLD MUQOVASI. Bet raqami yo'q, mashq ham yo'q.\n\nFon: OCh YAShIL (moviy-yashil). Chap chetida to'q sariq geometrik shakl (zinapoya kabi 'E' harfi shakli) va yuqorida oq nur porlashi. O'ngda katta OQ LOLALAR (oq va oqish-yashil gullar, yashil barglar) - fonning butun o'ng qismini egallagan.\n\nMatn:\n• 'Virginia Evans / Jenny Dooley' - o'ng yuqorida, oq harflar (mualliflar)\n• 'w o r k b o o k' - BINAFSHA harflar, keng oraliq, kichik harflar bilan\n• 'ENTERPRISE' - juda katta TO'Q SARIQ tor harflar\n• BINAFSHA doira ichida oq '2' va yoy shaklida 'ELEMENTARY'\n• pastda Express Publishing logotipi (kamalak ustidagi ochiq kitob)\n\n⚠ Coursebook muqovasi bilan taqqoslang: u yerda fon TO'Q SARIQ, yozuvlar YAShIL edi; Workbook'da fon OCh YAShIL, 'ENTERPRISE' TO'Q SARIQ, 'workbook' BINAFSHA. Ranglar teskari.",
+  "sections": [
+    {
+      "kind": "reference",
+      "title": "Workbook front cover",
+      "titleUz": "Workbook - old muqova",
+      "exercises": [
+        {
+          "ref": "muqova",
+          "type": "explain",
+          "instructionEn": "ENTERPRISE 2 - WORKBOOK - Elementary. Virginia Evans - Jenny Dooley. Express Publishing.",
+          "instructionUz": "ENTERPRISE 2 - MAShQ DAFTARI - Boshlang'ich daraja. Virjiniya Evans - Jenni Duli. Express Publishing.",
+          "explanationUz": "BU BET - MAShQ DAFTARINING OLD MUQOVASI.\n\n  Mashq yo'q, bet raqami ham yo'q.\n\n\nMUQOVADAGI MATN:\n\n  Virginia Evans /\n     Jenny Dooley     - mualliflar\n  workbook            - kitob turi\n  ENTERPRISE          - seriya nomi\n  2                   - bosqich raqami\n  ELEMENTARY          - daraja\n  Express Publishing  - nashriyot\n\n\n⚠ 'WORKBOOK' SO'ZI:\n\n  'work' = ish + 'book' = kitob\n  → 'a workbook' = mashq daftari,\n  ish daftari.\n\n  ⚠ Coursebook'da DARS o'tiladi,\n  Workbook'da o'sha dars MUSTAHKAMLANADI\n  (uyga vazifa mashqlari).\n\n  ⚠ Har bir Workbook uniti Coursebook'ning\n  o'sha raqamli unitiga mos keladi:\n  Coursebook Unit 1 → Workbook Unit 1.\n\n\n⚠ RANG FARQI:\n\n  Coursebook - TO'Q SARIQ fon, YAShIL yozuv\n  Workbook   - OCh YAShIL fon, TO'Q SARIQ\n               'ENTERPRISE', BINAFSHA\n               'workbook'\n\n  ⚠ Ranglar teskari - ikki kitobni\n  chalkashtirmaslik uchun.\n\n\nMUQOVADAGI SURAT:\n\n  Katta OQ LOLALAR - yashil barglari bilan.\n  ⚠ 'a tulip' = lola. Coursebook\n  muqovasida ham lolalar bor edi (qizil\n  va sariq) - seriyaning umumiy belgisi.\n\n\nYANGI SO'ZLAR:\n  a workbook    = mashq daftari\n  an exercise   = mashq\n  homework      = uyga vazifa\n  to practise   = mashq qilmoq\n  a tulip       = lola\n  a publisher   = nashriyot",
+          "bookRef": "Workbook, old muqova",
+          "points": [
+            {
+              "en": "ENTERPRISE 2",
+              "uz": "ENTERPRISE 2",
+              "noteUz": "⚠ Coursebook bilan bir xil seriya va bosqich.\n\n⚠ '2' = Elementary (ikkinchi kitob)."
+            },
+            {
+              "en": "workbook",
+              "uz": "MAShQ DAFTARI",
+              "noteUz": "⚠ 'work' + 'book' = mashq daftari.\n\n⚠ Coursebook'dagi har unitga mos\nqo'shimcha mashqlar (uyga vazifa)."
+            },
+            {
+              "en": "ELEMENTARY",
+              "uz": "Boshlang'ich daraja",
+              "noteUz": "⚠ Binafsha doira ichida '2' bilan birga.\n\n⚠ Beginner → ELEMENTARY → Pre-Intermediate ..."
+            },
+            {
+              "en": "Virginia Evans / Jenny Dooley",
+              "uz": "Virjiniya Evans / Jenni Duli",
+              "noteUz": "⚠ Coursebook mualliflari bilan bir xil."
+            },
+            {
+              "en": "Express Publishing",
+              "uz": "Express Publishing (nashriyot)",
+              "noteUz": "⚠ Logotip: KAMALAK ustidagi ochiq kitob."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Muqovadagi so'zlar.",
+    "groups": [
+      {
+        "ruleUz": "⚠ QO'ShMA OT: work/course/note + book",
+        "explanationUz": "'book' bilan yasalgan qo'shma otlar.",
+        "items": [
+          { "base": "work + book", "baseUz": "ish + kitob", "derived": "a workbook", "derivedUz": "mashq daftari", "note": "⚠ muqovada shu" },
+          { "base": "course + book", "baseUz": "kurs + kitob", "derived": "a coursebook", "derivedUz": "darslik", "note": "" },
+          { "base": "note + book", "baseUz": "yozuv + kitob", "derived": "a notebook", "derivedUz": "daftar", "note": "" },
+          { "base": "text + book", "baseUz": "matn + kitob", "derived": "a textbook", "derivedUz": "darslik", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "⚠ FE'L → OT: -er / -ing",
+        "explanationUz": "'publish' so'zidan.",
+        "items": [
+          { "base": "publish", "baseUz": "nashr qilmoq", "derived": "a publisher", "derivedUz": "nashriyot", "note": "⚠ muqovada shu" },
+          { "base": "publish", "baseUz": "nashr qilmoq", "derived": "publishing", "derivedUz": "nashriyot ishi", "note": "" }
+        ]
+      }
+    ]
+  },
+  "vocabularyOnPage": [
+    { "en": "a workbook", "uz": "mashq daftari" },
+    { "en": "an exercise", "uz": "mashq" },
+    { "en": "homework", "uz": "uyga vazifa" },
+    { "en": "to practise", "uz": "mashq qilmoq" },
+    { "en": "an enterprise", "uz": "tashabbus; korxona" },
+    { "en": "elementary", "uz": "boshlang'ich" },
+    { "en": "an author", "uz": "muallif" },
+    { "en": "a publisher", "uz": "nashriyot" },
+    { "en": "a cover", "uz": "muqova" },
+    { "en": "a tulip", "uz": "lola" },
+    { "en": "purple", "uz": "binafsha" },
+    { "en": "a rainbow", "uz": "kamalak" }
+  ],
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Kitob haqida gapirish.",
+    "patterns": [
+      {
+        "formula": "This is the workbook for [kitob].",
+        "exampleEn": "This is the workbook for Enterprise 2.",
+        "exampleUz": "Bu Enterprise 2 uchun mashq daftari.",
+        "explanationUz": "⚠ 'the workbook FOR' - qaysi kitob uchun."
+      },
+      {
+        "formula": "I do the exercises in my workbook.",
+        "exampleEn": "I do the exercises in my workbook every evening.",
+        "exampleUz": "Har kuni kechqurun mashq daftarimdagi mashqlarni bajaraman.",
+        "explanationUz": "⚠ 'DO an exercise' ('make' EMAS)."
+      },
+      {
+        "formula": "On the cover there are [nima].",
+        "exampleEn": "On the cover there are some white tulips.",
+        "exampleUz": "Muqovada oq lolalar bor.",
+        "explanationUz": "⚠ 'ON the cover'."
+      }
+    ]
+  }
+}
