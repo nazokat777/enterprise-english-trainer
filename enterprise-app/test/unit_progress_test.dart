@@ -60,7 +60,9 @@ void main() {
   });
 
   testWidgets('kartochkada tugatilgan mashqlar soni chiqadi', (t) async {
-    final brief = app.book.units.firstWhere((u) => u.exercises > 2);
+    // Ma'lumot bo'limlari (muqova, mundarija) endi yig'ilgan — haqiqiy dars kerak.
+    final brief =
+        app.book.units.firstWhere((u) => !u.isInfo && u.exercises > 2);
     await app.progress
         .markExerciseResult('ex::cb::1::a', clean: true, unit: brief.unit);
     await app.progress

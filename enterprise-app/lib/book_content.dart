@@ -623,6 +623,9 @@ class UnitBrief {
   /// Ro'yxatdagi dumaloq belgi ichidagi qisqa matn: "3" yoki "E1".
   final String badge;
 
+  /// Unit lug'atidagi so'zlar soni (so'z darslari uchun).
+  final int words;
+
   const UnitBrief({
     required this.unit,
     required this.title,
@@ -633,7 +636,16 @@ class UnitBrief {
     this.label = '',
     this.badge = '',
     this.isExtra = false,
+    this.words = 0,
   });
+
+  /// Ma'lumot bo'limi — muqova, mundarija, modul muqovasi. Bu DARS
+  /// emas: o'quvchi bu yerda uzoq qolib ketmasligi kerak.
+  bool get isInfo =>
+      unit == 800 ||
+      unit == 960 ||
+      unit >= 969 ||
+      (label.contains('-modul:') && !label.contains('testi'));
 
   String get displayLabel => label.isNotEmpty ? label : '$unit-unit';
   String get displayBadge => badge.isNotEmpty ? badge : '$unit';
@@ -648,6 +660,7 @@ class UnitBrief {
         sections: (j['sections'] as num?)?.toInt() ?? 0,
         exercises: (j['exercises'] as num?)?.toInt() ?? 0,
         tasks: (j['tasks'] as num?)?.toInt() ?? 0,
+        words: (j['words'] as num?)?.toInt() ?? 0,
       );
 }
 

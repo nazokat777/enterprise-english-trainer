@@ -1335,6 +1335,8 @@ def main(argv=None):
             "sections": len(u["sections"]),
             "exercises": sum(len(s["exercises"]) for s in u["sections"]),
             "tasks": tasks,
+            # Lug'at so'zlari soni — ro'yxatda "so'z darslari" uchun.
+            "words": len(u.get("vocabulary", [])),
         })
         print(f"{u['label']} ({u['title']}): {len(u['sections'])} bo'lim, "
               f"{sum(len(s['exercises']) for s in u['sections'])} mashq, {tasks} band")

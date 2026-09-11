@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../book_content.dart';
 import '../../drill/drill_item.dart';
 import '../../drill/drill_screen.dart';
+import '../../lessons/lessons_screen.dart';
+import '../../lessons/word_lesson.dart';
 import '../../main.dart';
 import '../../theme.dart';
 import '../../widgets/entrance.dart';
@@ -52,6 +54,8 @@ class BookUnitsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final units = book.units;
+    final main = units.where((u) => !u.isInfo).toList();
+    final info = units.where((u) => u.isInfo).toList();
     if (units.isEmpty) {
       return const _Empty(
         icon: Icons.menu_book_rounded,
@@ -87,12 +91,70 @@ class BookUnitsScreen extends StatelessWidget {
             EntranceFade(child: _ReviewBanner(count: progress.needsReviewCount())),
             const SizedBox(height: 16),
           ],
-          for (var i = 0; i < units.length; i++)
+          // ASOSIY YO'L — darslar. Muqova, mundarija, modul muqovalari
+          // dars EMAS: ular pastda, yig'ilgan holda. O'quvchi kitob
+          // haqidagi ma'lumotda uzoq qolib ketmasin — 1-unitdan boshlasin.
+          for (var i = 0; i < main.length; i++)
             EntranceFade(
-              delay: Duration(milliseconds: 60 * i),
-              child: _UnitCard(brief: units[i]),
+              delay: Duration(milliseconds: 60 * (i < 10 ? i : 10)),
+              child: _UnitCard(brief: main[i]),
             ),
+          if (info.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            _InfoGroup(units: info),
+          ],
         ],
+      ),
+    );
+  }
+}
+
+/// Kitob haqidagi bo'limlar — bitta yig'ma karta.
+class _InfoGroup extends StatelessWidget {
+  final List<UnitBrief> units;
+  const _InfoGroup({required this.units});
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Theme.of(context).colorScheme.surface,
+      borderRadius: BorderRadius.circular(AppRadius.lg),
+      child: Theme(
+        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+        child: ExpansionTile(
+          leading: const Icon(Icons.info_outline_rounded,
+              color: AppColors.actionBlue),
+          title: const Text('Kitob haqida',
+              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+          subtitle: Text(
+              'Muqova, mundarija, modul muqovalari va ilovalar · ${units.length} bo\'lim',
+              style:
+                  TextStyle(fontSize: 12.5, color: AppColors.muted(context))),
+          childrenPadding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
+          children: [
+            for (final b in units)
+              ListTile(
+                dense: true,
+                leading: Text(b.displayBadge,
+                    style: const TextStyle(
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.actionBlue)),
+                title: Text(b.displayLabel,
+                    style: const TextStyle(fontWeight: FontWeight.w700)),
+                subtitle: Text(b.title,
+                    maxLines: 1, overflow: TextOverflow.ellipsis),
+                trailing: const Icon(Icons.chevron_right_rounded),
+                onTap: () async {
+                  final u = await book.load(b.unit);
+                  if (u == null || !context.mounted) return;
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => BookUnitScreen(unit: u)),
+                  );
+                },
+              ),
+          ],
+        ),
       ),
     );
   }
@@ -172,6 +234,57 @@ class _ContinueBanner extends StatelessWidget {
   }
 }
 
+/// "So'zlarni o'rganish" — unit lug'atini kichik darslarda yodlatish.
+class _WordsButton extends StatelessWidget {
+  final BookUnit unit;
+  const _WordsButton({required this.unit});
+
+  @override
+  Widget build(BuildContext context) {
+    final lessons = lessonsOf(unit);
+    if (lessons.isEmpty) return const SizedBox.shrink();
+    final done = lessons.where((l) => mastery.allStrong(l.itemIds)).length;
+    final words = lessons.fold(0, (s, l) => s + l.words.length);
+    return Column(
+      children: [
+        Pressable3D(
+          color: AppColors.brandPurple,
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+          onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => LessonsScreen(unit: unit)),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.school_rounded, color: Colors.white, size: 22),
+              const SizedBox(width: 10),
+              Flexible(
+                child: Text(
+                    done >= lessons.length
+                        ? 'So\'zlar — hammasi o\'rganildi ($words)'
+                        : 'So\'zlarni o\'rganish — $done/${lessons.length} dars',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                        fontSize: 16)),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          '$words ta so\'z, har darsda $kLessonSize tacha: avval ko\'rsatiladi, '
+          'so\'ng tanlash va harflab yozish.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+        ),
+      ],
+    );
+  }
+}
+
 /// "Trening" tugmasi — o'zlashtirish seansini boshlaydi.
 class _MasterButton extends StatelessWidget {
   final BookUnit unit;
@@ -220,8 +333,8 @@ class _MasterButton extends StatelessWidget {
               Flexible(
                 child: Text(
                     pct >= 100
-                        ? 'Trening — takrorlash (100%)'
-                        : 'Trening — $pct%',
+                        ? 'Mashqlar treningi — takrorlash (100%)'
+                        : 'Mashqlar treningi — $pct%',
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                         color: Colors.white,
@@ -233,7 +346,7 @@ class _MasterButton extends StatelessWidget {
         ),
         const SizedBox(height: 6),
         Text(
-          '100% to\'g\'ri javob bergunicha savollar qayta-qayta keladi, '
+          'Kitob mashqlari bo\'yicha savollar: 100% bo\'lgunicha qaytadi, '
           'so\'ng oldingi darslar bilan aralash takror.',
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
@@ -364,7 +477,9 @@ class _UnitCard extends StatelessWidget {
                               fontWeight: FontWeight.w800, fontSize: 16)),
                       const SizedBox(height: 3),
                       Text(
-                          '${brief.sections} bo\'lim · ${brief.exercises} mashq · ${brief.tasks} band',
+                          brief.words > 0
+                              ? '${brief.words} so\'z · ${(brief.words / kLessonSize).ceil()} dars · ${brief.exercises} mashq'
+                              : '${brief.exercises} mashq · ${brief.tasks} band',
                           style: TextStyle(
                               fontSize: 12.5, color: AppColors.muted(context))),
                       // Nechta mashq tugatilgani — ilgari o\'quvchi
@@ -425,6 +540,11 @@ class BookUnitScreen extends StatelessWidget {
             // Betma-bet ko'rish "o'qish", bu esa "o'rganish": dars
             // 100% o'zlashtirilgunicha savollar takrorlanadi, so'ng
             // oldingi darslar bilan aralash takror.
+            // 1) SO'ZLAR — Duolingo uslubidagi kichik darslar. Avval
+            //    ko'rsatiladi, keyin so'raladi. Bu asosiy yo'l.
+            _WordsButton(unit: unit),
+            const SizedBox(height: 10),
+            // 2) Mashqlar treningi — kitob mashqlari bo'yicha.
             _MasterButton(unit: unit),
             const SizedBox(height: 10),
             // Kitobni betma-bet ko'rish.

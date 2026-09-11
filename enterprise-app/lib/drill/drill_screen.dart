@@ -134,13 +134,13 @@ class _DrillScreenState extends State<DrillScreen> {
                 q: q,
                 onDone: _answerMatch,
               ),
-            AskFormat.build || AskFormat.listen => _BuildTask(
+            AskFormat.build || AskFormat.listen => BuildTask(
                 key: ValueKey('b${q.itemId}${q.format}'),
                 q: q,
                 locked: _result != null,
                 onDone: _answer,
               ),
-            _ => _ChoiceTask(
+            _ => ChoiceTask(
                 key: ValueKey('c${q.itemId}${q.format}'),
                 q: q,
                 locked: _result != null,
@@ -211,22 +211,22 @@ class _Header extends StatelessWidget {
 }
 
 /// Variantdan tanlash (choice / produce / cloze).
-class _ChoiceTask extends StatefulWidget {
+class ChoiceTask extends StatefulWidget {
   final DrillQuestion q;
   final bool locked;
   final ValueChanged<bool> onDone;
 
-  const _ChoiceTask(
+  const ChoiceTask(
       {super.key,
       required this.q,
       required this.locked,
       required this.onDone});
 
   @override
-  State<_ChoiceTask> createState() => _ChoiceTaskState();
+  State<ChoiceTask> createState() => _ChoiceTaskState();
 }
 
-class _ChoiceTaskState extends State<_ChoiceTask> {
+class _ChoiceTaskState extends State<ChoiceTask> {
   String? _picked;
 
   @override
@@ -235,7 +235,7 @@ class _ChoiceTaskState extends State<_ChoiceTask> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
       children: [
-        _Card(
+        DrillCard(
           child: Column(
             children: [
               Text(q.prompt,
@@ -253,7 +253,7 @@ class _ChoiceTaskState extends State<_ChoiceTask> {
               ],
               if (q.speak.isNotEmpty) ...[
                 const SizedBox(height: 12),
-                _Speak(text: q.speak),
+                SpeakButton(text: q.speak),
               ],
             ],
           ),
@@ -268,7 +268,7 @@ class _ChoiceTaskState extends State<_ChoiceTask> {
                   ? null
                   : () {
                       setState(() => _picked = o);
-                      widget.onDone(_same(o, q.answer));
+                      widget.onDone(sameAnswer(o, q.answer));
                     },
               child: Center(
                 child: Text(o,
@@ -286,7 +286,7 @@ class _ChoiceTaskState extends State<_ChoiceTask> {
 
   Color _color(String o) {
     if (_picked != o) return Theme.of(context).colorScheme.surface;
-    return _same(o, widget.q.answer) ? AppColors.success : AppColors.danger;
+    return sameAnswer(o, widget.q.answer) ? AppColors.success : AppColors.danger;
   }
 }
 
@@ -461,22 +461,22 @@ class _MatchTaskState extends State<_MatchTask> {
 /// Egasining talabi: "lug'atni ko'proq o'zbekchada so'rasin, user o'zi
 /// inglizcha harflab yozsin, shunda yodlanadi". Bu eng mustahkam
 /// bosqich: tanish emas, ISHLAB ChIQARISh.
-class _BuildTask extends StatefulWidget {
+class BuildTask extends StatefulWidget {
   final DrillQuestion q;
   final bool locked;
   final ValueChanged<bool> onDone;
 
-  const _BuildTask(
+  const BuildTask(
       {super.key,
       required this.q,
       required this.locked,
       required this.onDone});
 
   @override
-  State<_BuildTask> createState() => _BuildTaskState();
+  State<BuildTask> createState() => _BuildTaskState();
 }
 
-class _BuildTaskState extends State<_BuildTask> {
+class _BuildTaskState extends State<BuildTask> {
   final _rnd = Random();
   late List<String> _tiles;
   final List<int> _picked = [];
@@ -502,7 +502,7 @@ class _BuildTaskState extends State<_BuildTask> {
     if (widget.locked || _ok != null || _picked.contains(i)) return;
     setState(() => _picked.add(i));
     if (_picked.length == _tiles.length) {
-      final ok = _same(_built, widget.q.answer);
+      final ok = sameAnswer(_built, widget.q.answer);
       setState(() => _ok = ok);
       widget.onDone(ok);
     }
@@ -517,7 +517,7 @@ class _BuildTaskState extends State<_BuildTask> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
       children: [
-        _Card(
+        DrillCard(
           child: Column(
             children: [
               Text(
@@ -534,7 +534,7 @@ class _BuildTaskState extends State<_BuildTask> {
                       fontSize: 24, fontWeight: FontWeight.w800)),
               if (q.speak.isNotEmpty) ...[
                 const SizedBox(height: 12),
-                _Speak(text: q.speak),
+                SpeakButton(text: q.speak),
               ],
             ],
           ),
@@ -717,9 +717,9 @@ class _LessonBar extends StatelessWidget {
   }
 }
 
-class _Card extends StatelessWidget {
+class DrillCard extends StatelessWidget {
   final Widget child;
-  const _Card({required this.child});
+  const DrillCard({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) => Container(
@@ -733,9 +733,9 @@ class _Card extends StatelessWidget {
       );
 }
 
-class _Speak extends StatelessWidget {
+class SpeakButton extends StatelessWidget {
   final String text;
-  const _Speak({required this.text});
+  const SpeakButton({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) => Material(
@@ -754,6 +754,6 @@ class _Speak extends StatelessWidget {
 }
 
 /// Javoblarni solishtirish — bosh harf va ortiqcha bo'shliq muhim emas.
-bool _same(String a, String b) =>
+bool sameAnswer(String a, String b) =>
     a.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ') ==
     b.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
