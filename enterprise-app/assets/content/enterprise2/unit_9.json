@@ -136,7 +136,7 @@
      "ref": "3",
      "instructionEn": "Read the statements, then listen and mark them as T (true) or F (false).",
      "instructionUz": "Gaplarni o'qing, so'ng tinglang va T (to'g'ri) yoki F (noto'g'ri) deb belgilang.",
-     "explanationUz": "⚠ AUDIO KERAK. Umumiy ma'lum\nfaktlar asosida ehtimoliy javoblar;\n4-band faqat audiodan.\n\n\nEhTIMOLIY JAVOBLAR:\n\n  1 F - Krakov Polshaning JANUBIDA\n      (northern EMAS)\n  2 F - Kinga MALIKA (queen/\n      princess), king EMAS\n  3 T - tuz qo'lda qazilardi\n  4 ? - audio kerak (yong'in yili)\n  5 T - Muborak Kinga ibodatxonasi\n      koning eng mashhur joyi\n\n\n⚠ 'THE BLESSED KINGA':\n\n  = Muborak Kinga - XIII asr\n  Polsha malikasi (Vengriya\n  malikasi), tuz koni afsonasi\n  qahramoni: u uzugini Vengriyadagi\n  tuz koniga tashlagan, keyin uzuk\n  Wieliczkada tuz bilan topilgan.\n  ⚠ 'blessed' = muborak, avliyo.\n  ⚠ O'qilishi /ˈblesɪd/ - ikki bo'g'in.\n\n\n⚠ 'USED TO BE DUG':\n\n  = qazilardi (o'tmishda odat +\n  majhul nisbat).\n\n\n⚠ 'BY HAND':\n\n  = qo'lda.\n  ⚠ ARTIKLSIZ.\n\n\n⚠ 'DESTROYED BY FIRE':\n\n  = yong'inda vayron bo'lgan.\n  ⚠ 'by' + sabab (majhul nisbat).",
+     "explanationUz": "⚠ AUDIO KERAK. Umumiy ma'lum\nfaktlar asosida ehtimoliy javoblar;\njavoblar 63-betdagi matn bilan\ntasdiqlanadi.\n\n\nEhTIMOLIY JAVOBLAR:\n\n  1 F - Krakov Polshaning JANUBIDA\n      (northern EMAS)\n  2 F - Kinga MALIKA (queen/\n      princess), king EMAS\n  3 T - tuz qo'lda qazilardi\n  4 F - matnda 1697 (1769 EMAS)\n  5 T - Muborak Kinga ibodatxonasi\n      koning eng mashhur joyi\n\n\n⚠ 'THE BLESSED KINGA':\n\n  = Muborak Kinga - XIII asr\n  Polsha malikasi (Vengriya\n  malikasi), tuz koni afsonasi\n  qahramoni: u uzugini Vengriyadagi\n  tuz koniga tashlagan, keyin uzuk\n  Wieliczkada tuz bilan topilgan.\n  ⚠ 'blessed' = muborak, avliyo.\n  ⚠ O'qilishi /ˈblesɪd/ - ikki bo'g'in.\n\n\n⚠ 'USED TO BE DUG':\n\n  = qazilardi (o'tmishda odat +\n  majhul nisbat).\n\n\n⚠ 'BY HAND':\n\n  = qo'lda.\n  ⚠ ARTIKLSIZ.\n\n\n⚠ 'DESTROYED BY FIRE':\n\n  = yong'inda vayron bo'lgan.\n  ⚠ 'by' + sabab (majhul nisbat).",
      "audio": false,
      "book": "coursebook",
      "bookPage": 62,
@@ -175,12 +175,12 @@
       },
       {
        "prompt": "A chapel was destroyed by fire in 1769.",
-       "answer": "T",
+       "answer": "F",
        "options": [
         "T",
         "F"
        ],
-       "whyUz": "⚠ FAQAT AUDIODAN - yil raqamiga quloq soling.",
+       "whyUz": "⚠ 63-betdagi matnda: 'destroyed by fire in 1697'\n- 1769 EMAS! Raqamlar almashtirilgan.",
        "speak": "A chapel was destroyed by fire in 1769."
       },
       {
@@ -192,6 +192,635 @@
        ],
        "whyUz": "⚠ Kinga ibodatxonasi - koning eng mashhur joyi\n(C-surat). Audio bilan tekshiring.",
        "speak": "A special attraction is the Chapel of the Blessed Kinga."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u9-coursebook-63-2",
+   "kind": "vocabulary",
+   "title": "Language Development",
+   "titleUz": "Til rivoji",
+   "book": "coursebook",
+   "bookPage": 63,
+   "exercises": [
+    {
+     "ref": "5",
+     "instructionEn": "Fill in the words from the list, then make sentences using the completed phrases.",
+     "instructionUz": "Ro'yxatdagi so'zlarni qo'ying, so'ng tayyor iboralar bilan gap tuzing.",
+     "explanationUz": "HAMMA IBORA MAQOLADA BOR.\n\n  a HIDDEN world - yashirin dunyo\n  DEEPLY religious - chuqur dindor\n  CHURCH services - cherkov\n     xizmatlari\n  SOLID rock - qattiq tog' jinsi\n  a LUMP of salt - tuz bo'lagi\n  SALT crystals - tuz kristallari\n  a SPECIAL attraction - alohida\n     diqqatga sazovor joy\n  to CARVE sculptures - haykal\n     o'ymoq\n  to DIG a well - quduq qazimoq\n  UNFORGETTABLE sights - unutilmas\n     manzaralar",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 63,
+     "bookRef": "Coursebook, 63-bet, 5-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "a ___ world",
+       "answer": "hidden",
+       "promptUz": "yashirin dunyo",
+       "options": [
+        "hidden",
+        "dig",
+        "church",
+        "deeply"
+       ],
+       "speak": "a ___ world",
+       "speakAnswer": "hidden"
+      },
+      {
+       "prompt": "___ religious",
+       "answer": "deeply",
+       "promptUz": "chuqur dindor",
+       "options": [
+        "deeply",
+        "dig",
+        "church",
+        "hidden"
+       ],
+       "speak": "___ religious",
+       "speakAnswer": "deeply"
+      },
+      {
+       "prompt": "___ services",
+       "answer": "church",
+       "promptUz": "cherkov xizmatlari",
+       "options": [
+        "church",
+        "dig",
+        "deeply",
+        "hidden"
+       ],
+       "speak": "___ services",
+       "speakAnswer": "church"
+      },
+      {
+       "prompt": "___ rock",
+       "answer": "solid",
+       "promptUz": "qattiq tog' jinsi",
+       "options": [
+        "solid",
+        "dig",
+        "church",
+        "deeply"
+       ],
+       "speak": "___ rock",
+       "speakAnswer": "solid"
+      },
+      {
+       "prompt": "a ___ of salt",
+       "answer": "lump",
+       "promptUz": "tuz bo'lagi",
+       "options": [
+        "lump",
+        "dig",
+        "church",
+        "deeply"
+       ],
+       "speak": "a ___ of salt",
+       "speakAnswer": "lump"
+      },
+      {
+       "prompt": "___ crystals",
+       "answer": "salt",
+       "promptUz": "tuz kristallari",
+       "options": [
+        "salt",
+        "dig",
+        "church",
+        "deeply"
+       ],
+       "speak": "___ crystals",
+       "speakAnswer": "salt"
+      },
+      {
+       "prompt": "a ___ attraction",
+       "answer": "special",
+       "promptUz": "alohida diqqatga sazovor joy",
+       "options": [
+        "special",
+        "dig",
+        "church",
+        "deeply"
+       ],
+       "speak": "a ___ attraction",
+       "speakAnswer": "special"
+      },
+      {
+       "prompt": "to ___ sculptures",
+       "answer": "carve",
+       "promptUz": "haykal o'ymoq",
+       "options": [
+        "carve",
+        "dig",
+        "church",
+        "deeply"
+       ],
+       "speak": "to ___ sculptures",
+       "speakAnswer": "carve"
+      },
+      {
+       "prompt": "to ___ a well",
+       "answer": "dig",
+       "promptUz": "quduq qazimoq",
+       "options": [
+        "dig",
+        "church",
+        "deeply",
+        "hidden"
+       ],
+       "speak": "to ___ a well",
+       "speakAnswer": "dig"
+      },
+      {
+       "prompt": "___ sights",
+       "answer": "unforgettable",
+       "promptUz": "unutilmas manzaralar",
+       "options": [
+        "unforgettable",
+        "dig",
+        "church",
+        "deeply"
+       ],
+       "speak": "___ sights",
+       "speakAnswer": "unforgettable"
+      }
+     ]
+    },
+    {
+     "ref": "6",
+     "instructionEn": "Fill in the opposites from the list.",
+     "instructionUz": "Ro'yxatdan antonimlarni qo'ying.",
+     "explanationUz": "ANTONIMLAR.\n\n  natural ≠ MAN-MADE\n  dangerous ≠ SAFE\n  enormous ≠ TINY\n  beautiful ≠ UGLY\n  strange ≠ ORDINARY\n  amazed ≠ BORED\n\n\n⚠ 'TINY':\n\n  = juda kichik.\n  ⚠ 'enormous' = ulkan.\n\n\n⚠ 'ORDINARY':\n\n  = oddiy.\n  ⚠ 'extraordinary' = g'ayrioddiy.\n\n\n⚠ 'AMAZED' va 'BORED':\n\n  Ikkalasi '-ed' sifati (his):\n  amazed = hayratlangan\n  bored = zerikkan",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 63,
+     "bookRef": "Coursebook, 63-bet, 6-mashq",
+     "kind": "choice",
+     "tasks": [
+      {
+       "prompt": "natural ≠ ___",
+       "answer": "man-made",
+       "promptUz": "tabiiy ≠ inson yaratgan",
+       "options": [
+        "man-made",
+        "ugly",
+        "safe",
+        "bored"
+       ],
+       "speak": "natural ≠ ___",
+       "speakAnswer": "man-made"
+      },
+      {
+       "prompt": "dangerous ≠ ___",
+       "answer": "safe",
+       "promptUz": "xavfli ≠ xavfsiz",
+       "options": [
+        "safe",
+        "ugly",
+        "bored",
+        "ordinary"
+       ],
+       "speak": "dangerous ≠ ___",
+       "speakAnswer": "safe"
+      },
+      {
+       "prompt": "enormous ≠ ___",
+       "answer": "tiny",
+       "promptUz": "ulkan ≠ juda kichik",
+       "options": [
+        "tiny",
+        "ugly",
+        "safe",
+        "bored"
+       ],
+       "speak": "enormous ≠ ___",
+       "speakAnswer": "tiny"
+      },
+      {
+       "prompt": "beautiful ≠ ___",
+       "answer": "ugly",
+       "promptUz": "go'zal ≠ xunuk",
+       "options": [
+        "ugly",
+        "safe",
+        "bored",
+        "ordinary"
+       ],
+       "speak": "beautiful ≠ ___",
+       "speakAnswer": "ugly"
+      },
+      {
+       "prompt": "strange ≠ ___",
+       "answer": "ordinary",
+       "promptUz": "g'alati ≠ oddiy",
+       "options": [
+        "ordinary",
+        "ugly",
+        "safe",
+        "bored"
+       ],
+       "speak": "strange ≠ ___",
+       "speakAnswer": "ordinary"
+      },
+      {
+       "prompt": "amazed ≠ ___",
+       "answer": "bored",
+       "promptUz": "hayratlangan ≠ zerikkan",
+       "options": [
+        "bored",
+        "ugly",
+        "safe",
+        "ordinary"
+       ],
+       "speak": "amazed ≠ ___",
+       "speakAnswer": "bored"
+      }
+     ]
+    },
+    {
+     "ref": "7",
+     "instructionEn": "Fill in the correct prepositions, then make sentences using the completed phrases.",
+     "instructionUz": "To'g'ri predloglarni qo'ying, so'ng tayyor iboralar bilan gap tuzing.",
+     "explanationUz": "PREDLOGLAR - MAQOLADAN.\n\n  IN southern Poland\n  ABOVE the surface\n  to travel FROM Marmaros TO Cracow\n  to stop AT Wieliczka\n  to carve sth FROM rock salt\n  FOR over seven centuries\n  she threw her ring INTO a salt\n     mine\n\n\n⚠ 'ABOVE' va 'BELOW':\n\n  above the surface = yuza ustida\n  below the surface = yuza ostida\n\n\n⚠ 'INTO':\n\n  = ichiga (harakat).\n  ⚠ 'threw INTO a mine' = konga\n  (ichiga) tashladi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 63,
+     "bookRef": "Coursebook, 63-bet, 7-mashq",
+     "kind": "text",
+     "tasks": [
+      {
+       "prompt": "1 ___ southern Poland",
+       "answer": "in",
+       "promptUz": "Polsha janubida",
+       "whyUz": "⚠ 'IN southern Poland'.",
+       "speak": "1 ___ southern Poland",
+       "speakAnswer": "in"
+      },
+      {
+       "prompt": "2 ___ the surface",
+       "answer": "above",
+       "promptUz": "yuza ustida",
+       "whyUz": "⚠ 'Not much can be seen ABOVE the surface'.",
+       "speak": "2 ___ the surface",
+       "speakAnswer": "above"
+      },
+      {
+       "prompt": "3 to travel ___ Marmaros ___ Cracow",
+       "answer": "from / to",
+       "promptUz": "... dan ... ga",
+       "whyUz": "⚠ 'FROM ... TO ...'.",
+       "speak": "3 to travel ___ Marmaros ___ Cracow",
+       "speakAnswer": "from / to"
+      },
+      {
+       "prompt": "4 to stop ___ Wieliczka",
+       "answer": "at",
+       "promptUz": "joyda to'xtamoq",
+       "whyUz": "⚠ 'stop AT' + joy.",
+       "speak": "4 to stop ___ Wieliczka",
+       "speakAnswer": "at"
+      },
+      {
+       "prompt": "5 to carve sth ___ rock salt",
+       "answer": "from",
+       "promptUz": "... dan o'ymoq",
+       "whyUz": "⚠ 'carve FROM' = ... dan o'ymoq (material).",
+       "speak": "5 to carve sth ___ rock salt",
+       "speakAnswer": "from"
+      },
+      {
+       "prompt": "6 ___ over seven centuries",
+       "answer": "for",
+       "promptUz": "davomiylik",
+       "whyUz": "⚠ 'FOR' + davomiylik.",
+       "speak": "6 ___ over seven centuries",
+       "speakAnswer": "for"
+      },
+      {
+       "prompt": "7 she threw her ring ___ a salt mine",
+       "answer": "into",
+       "promptUz": "ichiga",
+       "whyUz": "⚠ 'threw INTO' = ichiga tashladi.",
+       "speak": "7 she threw her ring ___ a salt mine",
+       "speakAnswer": "into"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u9-coursebook-63-1",
+   "kind": "reading",
+   "title": "Reading",
+   "titleUz": "O'qish",
+   "book": "coursebook",
+   "bookPage": 63,
+   "exercises": [
+    {
+     "ref": "4-matn",
+     "instructionEn": "A Hidden World of Wonders",
+     "instructionUz": "Yashirin mo''jizalar dunyosi",
+     "explanationUz": "MAQOLANING TO'LIQ MATNI VA\nTARJIMASI (bo'sh joylar to'ldirilgan).\n\n\n⚠ 9-UNIT GRAMMATIKASI - MAJHUL\n  NISBAT (THE PASSIVE) MATNDA:\n\n  'Not much CAN BE SEEN'\n  'visitors ARE TAKEN down'\n  'her servants WERE TOLD to dig'\n  'salt WAS DISCOVERED'\n  'the first lump ... WAS TAKEN out'\n  'Kinga's ring WAS FOUND'\n  'salt HAS BEEN MINED'\n  'The salt USED TO BE DUG out'\n  'it WAS CARRIED up'\n  'horses WERE USED'\n  'miners WERE KILLED or INJURED'\n  'chapels WERE CONSTRUCTED'\n  'church services WERE HELD'\n  'a chapel WAS DESTROYED'\n  'miners WERE NOT ALLOWED'\n  'visitors ARE SHOWN'\n  'HAVE BEEN DUG out'\n  'HAVE BEEN CARVED'\n  'WAS MADE by the miners'\n  'You WILL BE AMAZED'\n  'SHOULD NOT BE MISSED'\n\n  ⚠ be + 3-ShAKL. Keyingi betda\n  tushuntiriladi.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 63,
+     "bookRef": "Coursebook, 63-bet, maqola",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "A Hidden World of Wonders",
+       "uz": "Yashirin mo''jizalar dunyosi"
+      },
+      {
+       "en": "Near Cracow, in southern Poland, is the Wieliczka Salt Mine. Not much can be seen above the surface, but visitors are taken down into a hidden world of natural and man-made wonders.",
+       "uz": "Polsha janubidagi Krakov yaqinida Wieliczka tuz koni joylashgan. Yer yuzasida ko'p narsa ko'rinmaydi, lekin tashrif buyuruvchilar tabiiy va inson yaratgan mo''jizalarning yashirin dunyosiga olib tushiladi.",
+       "note": "⚠ 'can be seen', 'are taken' - MAJHUL nisbat.\n⚠ 'hidden' = yashirin.\n⚠ 'man-made' = inson yaratgan."
+      },
+      {
+       "en": "According to a 700-year-old legend, a princess called the Blessed Kinga threw her ring into a salt mine at Marmaros in Hungary. While travelling from Marmaros to Cracow, she stopped at Wieliczka and her servants were told to dig a well.",
+       "uz": "700 yillik afsonaga ko'ra, Muborak Kinga ismli malika uzugini Vengriyaning Marmaros shahridagi tuz koniga tashlagan. Marmarosdan Krakovga sayohat qilayotganda u Wieliczkada to'xtagan va xizmatkorlariga quduq qazish buyurilgan.",
+       "note": "⚠ 'according to' = ... ga ko'ra.\n⚠ 'a legend' = afsona.\n⚠ 'a servant' = xizmatkor.\n⚠ 'were told to dig' - majhul."
+      },
+      {
+       "en": "Instead of water, salt was discovered - and in the first lump of salt which was taken out, Kinga's ring was found!",
+       "uz": "Suv o'rniga tuz topilgan - va chiqarilgan birinchi tuz bo'lagida Kinganing uzugi topilgan!",
+       "note": "⚠ 'a lump' = bo'lak (shaklsiz).\n⚠ 'was discovered', 'was found' - majhul."
+      },
+      {
+       "en": "The legend is just a story - but it is true that for over seven centuries salt has been mined from the rock below the town of Wieliczka. [1 - C] The salt used to be dug out by hand, and until 1620 it was carried up to the surface by the miners.",
+       "uz": "Afsona - shunchaki hikoya, lekin yetti asrdan ortiq vaqt davomida Wieliczka shahri ostidagi tog' jinsidan tuz qazib olingani haqiqat. [1 - C] Tuz qo'lda qazib olinardi va 1620 yilgacha konchilar uni yuzaga olib chiqishardi.",
+       "note": "⚠ 'for over seven centuries' = yetti asrdan\nortiq.\n⚠ 'has been mined' - present perfect majhul.\n⚠ 'rock' = tog' jinsi."
+      },
+      {
+       "en": "After that date, horses were used to carry the salt out, but the work was still very dangerous and many miners were killed or injured. The constant danger made the miners deeply religious and chapels were constructed underground where church services were held.",
+       "uz": "O'sha sanadan keyin tuzni olib chiqish uchun otlardan foydalanilgan, lekin ish baribir juda xavfli edi va ko'p konchilar halok bo'lgan yoki jarohatlangan. Doimiy xavf konchilarni chuqur dindor qilgan va yer ostida cherkov xizmatlari o'tkaziladigan ibodatxonalar qurilgan.",
+       "note": "⚠ 'constant' = doimiy.\n⚠ 'church services' = cherkov xizmatlari\n(ibodat).\n⚠ 'to hold a service' = ibodat o'tkazmoq."
+      },
+      {
+       "en": "After a chapel was destroyed by fire in 1697, miners were not allowed to take wooden statues into the mine, so they began to carve sculptures from rock salt.",
+       "uz": "1697 yilda bir ibodatxona yong'inda vayron bo'lgandan keyin konchilarga yog'och haykallarni konga olib kirish taqiqlangan, shuning uchun ular tosh tuzdan haykallar o'yishni boshlagan.",
+       "note": "⚠ 'was destroyed by fire' - majhul + sabab.\n⚠ 'were not allowed to' = ruxsat berilmagan.\n⚠ 'wooden' = yog'ochdan.\n⚠ 'a sculpture' = haykal."
+      },
+      {
+       "en": "Nowadays visitors are shown how salt was mined long ago, and can see the enormous chambers which have been dug out of the solid rock. They can also see pretty green lakes, and chapels with beautiful carvings. [2 - B] There are also 250 kilometres of tunnels and underground caves with huge salt crystals in strange shapes.",
+       "uz": "Hozirgi kunda tashrif buyuruvchilarga uzoq o'tmishda tuz qanday qazilgani ko'rsatiladi va ular qattiq tog' jinsidan qazib olingan ulkan zallarni ko'rishi mumkin. Ular yana chiroyli yashil ko'llar va go'zal o'ymakorlikli ibodatxonalarni ko'rishi mumkin. [2 - B] Bundan tashqari, 250 kilometr tunnellar va g'alati shakldagi ulkan tuz kristallari bilan yer osti g'orlari bor.",
+       "note": "⚠ 'nowadays' = hozirgi kunda.\n⚠ 'solid rock' = qattiq tog' jinsi.\n⚠ 'enormous' = ulkan."
+      },
+      {
+       "en": "A special attraction is the Chapel of the Blessed Kinga, which was made by the miners themselves in a chamber 100 metres underground. [3 - A] The walls and floor of the chapel, as well as the lovely statues it contains, have been carved from rock salt.",
+       "uz": "Alohida diqqatga sazovor joy - Muborak Kinga ibodatxonasi; uni konchilarning o'zlari yer ostida 100 metr chuqurlikdagi zalda yasagan. [3 - A] Ibodatxonaning devorlari va poli, shuningdek undagi go'zal haykallar tosh tuzdan o'yilgan.",
+       "note": "⚠ 'by the miners THEMSELVES' - o'zlari.\n⚠ 'as well as' = shuningdek.\n⚠ 'have been carved' - present perfect majhul."
+      },
+      {
+       "en": "You will be amazed by these unforgettable sights, which should definitely not be missed by any visitor to the Cracow area.",
+       "uz": "Siz bu unutilmas manzaralardan hayratga tushasiz - Krakov hududiga kelgan har qanday tashrif buyuruvchi ularni albatta o'tkazib yubormasligi kerak.",
+       "note": "⚠ 'will be amazed' - kelasi zamon majhul.\n⚠ 'unforgettable' = unutilmas.\n⚠ 'sights' = manzaralar, diqqatga sazovor\njoylar."
+      }
+     ]
+    },
+    {
+     "ref": "4",
+     "instructionEn": "Read the article and match the sentences (A - C) to the gaps (1 - 3).",
+     "instructionUz": "Maqolani o'qing va gaplarni (A-C) bo'sh joylarga (1-3) moslang.",
+     "explanationUz": "UCh BO'Sh JOY - UCh GAP.\n\n  1 → C ('The salt used to be dug\n    out by hand ... until 1620' -\n    keyin 'After that date, horses\n    were used' - 1620 ni ko'rsatadi)\n  2 → B ('There are ALSO 250\n    kilometres of tunnels' - ko'llar\n    va ibodatxonalar ro'yxatiga\n    qo'shiladi)\n  3 → A ('The walls and floor of\n    THE CHAPEL' - Kinga ibodatxonasi\n    haqida gapdan keyin)\n\n\n⚠ IShORALAR:\n\n  'After THAT DATE' → oldin sana\n  bo'lishi kerak (1620) → C\n  'There are ALSO' → oldin boshqa\n  narsalar sanalgan → B\n  'THE chapel' → oldin aniq\n  ibodatxona eslatilgan → A",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 63,
+     "bookRef": "Coursebook, 63-bet, 4-mashq",
+     "kind": "match",
+     "tasks": [
+      {
+       "left": "Gap 1 — ... salt has been mined from the rock below the town of Wieliczka. [1] After that date, horses were used ...",
+       "right": "C — The salt used to be dug out by hand, and until 1620 it was carried up to the surface by the miners."
+      },
+      {
+       "left": "Gap 2 — ... chapels with beautiful carvings. [2] A special attraction is ...",
+       "right": "B — There are also 250 kilometres of tunnels and underground caves with huge salt crystals in strange shapes."
+      },
+      {
+       "left": "Gap 3 — ... the Chapel of the Blessed Kinga ... 100 metres underground. [3] You will be amazed ...",
+       "right": "A — The walls and floor of the chapel, as well as the lovely statues it contains, have been carved from rock salt."
+      }
+     ]
+    },
+    {
+     "ref": "4b",
+     "instructionEn": "Then explain the words in bold.",
+     "instructionUz": "So'ng qalin so'zlarni tushuntiring.",
+     "explanationUz": "MAQOLADAGI QALIN SO'ZLAR.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 63,
+     "bookRef": "Coursebook, 63-bet, 4-mashq qalin so'zlari",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "Then explain the words in bold.",
+       "uz": "So'ng qalin so'zlarni tushuntiring."
+      },
+      {
+       "en": "hidden",
+       "uz": "yashirin",
+       "note": "⚠ 'to hide' = yashirmoq; hide - hid - HIDDEN."
+      },
+      {
+       "en": "natural",
+       "uz": "tabiiy",
+       "note": "⚠ Aksi: 'man-made'."
+      },
+      {
+       "en": "man-made wonders",
+       "uz": "inson yaratgan mo''jizalar",
+       "note": "⚠ 'man-made' - DEFIS bilan."
+      },
+      {
+       "en": "According to",
+       "uz": "... ga ko'ra",
+       "note": "⚠ 'according to a legend' = afsonaga ko'ra."
+      },
+      {
+       "en": "legend",
+       "uz": "afsona",
+       "note": "⚠ 'legendary' = afsonaviy."
+      },
+      {
+       "en": "servants",
+       "uz": "xizmatkorlar",
+       "note": "⚠ 'to serve' = xizmat qilmoq."
+      },
+      {
+       "en": "lump",
+       "uz": "bo'lak (shaklsiz)",
+       "note": "⚠ 'a lump of salt/sugar/coal'."
+      },
+      {
+       "en": "rock",
+       "uz": "tog' jinsi, tosh",
+       "note": "⚠ Bu yerda SANALMAYDIGAN."
+      },
+      {
+       "en": "constant",
+       "uz": "doimiy",
+       "note": "⚠ 'constantly' - 41-betda."
+      },
+      {
+       "en": "church services",
+       "uz": "cherkov xizmatlari, ibodatlar",
+       "note": "⚠ 'a service' bu yerda = ibodat marosimi."
+      },
+      {
+       "en": "was destroyed",
+       "uz": "vayron bo'ldi (vayron qilindi)",
+       "note": "⚠ MAJHUL nisbat: was + destroyed."
+      },
+      {
+       "en": "wooden",
+       "uz": "yog'ochdan yasalgan",
+       "note": "⚠ 'wood' + '-en' = material sifati."
+      },
+      {
+       "en": "sculptures",
+       "uz": "haykallar",
+       "note": "⚠ 'a sculptor' = haykaltarosh."
+      },
+      {
+       "en": "solid rock",
+       "uz": "qattiq tog' jinsi",
+       "note": "⚠ 'solid' = qattiq, yaxlit."
+      },
+      {
+       "en": "attraction",
+       "uz": "diqqatga sazovor joy",
+       "note": "⚠ 55-betda ham bor edi."
+      },
+      {
+       "en": "sights",
+       "uz": "manzaralar, ko'rishga arziydigan joylar",
+       "note": "⚠ 'sightseeing' - 37-betda."
+      }
+     ]
+    },
+    {
+     "ref": "4c",
+     "instructionEn": "Finally, answer questions 1 - 7.",
+     "instructionUz": "Nihoyat, 1-7 savollarga javob bering.",
+     "explanationUz": "YETTI SAVOL - JAVOBLAR MAQOLADA.\n\n⚠ 3-SAVOL: 'How WAS salt REMOVED?'\n  - majhul nisbatda savol.\n\n⚠ 'TO AFFECT':\n  = ta'sir qilmoq.\n  ⚠ 'effect' (ot) = ta'sir.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 63,
+     "bookRef": "Coursebook, 63-bet, 4-mashq savollari",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "1 Where is the Wieliczka Salt Mine?",
+       "uz": "1 Wieliczka tuz koni qayerda?"
+      },
+      {
+       "en": "2 According to legend, what happened when Kinga's servants dug a well at Wieliczka?",
+       "uz": "2 Afsonaga ko'ra, Kinganing xizmatkorlari Wieliczkada quduq qazganda nima bo'ldi?"
+      },
+      {
+       "en": "3 How was salt removed from the mine before 1620?",
+       "uz": "3 1620 yilgacha tuz kondan qanday olib chiqilardi?"
+      },
+      {
+       "en": "4 How did the constant danger affect the miners?",
+       "uz": "4 Doimiy xavf konchilarga qanday ta'sir qildi?"
+      },
+      {
+       "en": "5 Why did the miners start to carve sculptures from the rock salt?",
+       "uz": "5 Nega konchilar tosh tuzdan haykal o'yishni boshladi?"
+      },
+      {
+       "en": "6 Where is the Chapel of the Blessed Kinga?",
+       "uz": "6 Muborak Kinga ibodatxonasi qayerda?"
+      },
+      {
+       "en": "7 What can you see in the underground caves?",
+       "uz": "7 Yer osti g'orlarida nimani ko'rish mumkin?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u9-coursebook-63-3",
+   "kind": "speaking",
+   "title": "Speaking",
+   "titleUz": "Gapirish",
+   "book": "coursebook",
+   "bookPage": 63,
+   "exercises": [
+    {
+     "ref": "gapirish",
+     "instructionEn": "Look at the headings below and match the words/phrases in the list to the appropriate heading.",
+     "instructionUz": "Quyidagi sarlavhalarga qarang va ro'yxatdagi so'z/iboralarni mos sarlavhaga moslang.",
+     "explanationUz": "BESh SARLAVHA - 17 IBORA.\n\n  PLACE/LOCATION: Wieliczka Salt\n    Mine, near Cracow, Poland\n  LEGEND: Blessed Kinga, threw her\n    ring, dig a well, missing ring\n    was found\n  HISTORY OF THE PLACE: horses were\n    used to carry salt out, miners\n    were killed or injured, chapel\n    was destroyed by fire, carve\n    sculptures from rock salt\n  THINGS TO SEE/DO: sights, chapels,\n    enormous chambers, caves with\n    huge salt crystals, tunnels\n  RECOMMENDATION: will be amazed\n\n\n⚠ 'A RECOMMENDATION':\n\n  = tavsiya.\n  ⚠ 'to recommend' = tavsiya qilmoq.\n\n\n⚠ 'APPROPRIATE':\n\n  = mos, munosib.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 63,
+     "bookRef": "Coursebook, 63-bet, Speaking",
+     "kind": "match",
+     "tasks": [
+      {
+       "left": "Place/Location",
+       "right": "Wieliczka Salt Mine, near Cracow, Poland",
+       "speakAnswer": "Wieliczka Salt Mine, near Cracow, Poland"
+      },
+      {
+       "left": "Legend",
+       "right": "Blessed Kinga, threw her ring, dig a well, missing ring was found",
+       "speakAnswer": "Blessed Kinga, threw her ring, dig a well, missing ring was found"
+      },
+      {
+       "left": "History of the Place",
+       "right": "horses were used to carry salt out, miners were killed or injured, chapel was destroyed by fire, carve sculptures from rock salt",
+       "speakAnswer": "horses were used to carry salt out, miners were killed or injured, chapel was destroyed by fire, carve sculptures from rock salt"
+      },
+      {
+       "left": "Things to See/Do",
+       "right": "sights, chapels, enormous chambers, caves with huge salt crystals, tunnels",
+       "speakAnswer": "sights, chapels, enormous chambers, caves with huge salt crystals, tunnels"
+      },
+      {
+       "left": "Recommendation",
+       "right": "will be amazed",
+       "speakAnswer": "will be amazed"
+      }
+     ]
+    },
+    {
+     "ref": "gapirish-b",
+     "instructionEn": "Then, talk about the Wieliczka Salt Mine.",
+     "instructionUz": "So'ng Wieliczka tuz koni haqida gapiring.",
+     "explanationUz": "BESh SARLAVHA BO'YIChA GAPIRISh.\n\n⚠ Majhul nisbatni ishlating:\n'horses WERE USED', 'the chapel WAS\nDESTROYED', 'sculptures WERE CARVED'.",
+     "audio": false,
+     "book": "coursebook",
+     "bookPage": 63,
+     "bookRef": "Coursebook, 63-bet, Speaking (gapirish)",
+     "kind": "study",
+     "tasks": [
+      {
+       "en": "The Wieliczka Salt Mine is near Cracow, in Poland.",
+       "uz": "Wieliczka tuz koni Polshada, Krakov yaqinida joylashgan."
+      },
+      {
+       "en": "According to legend, the Blessed Kinga threw her ring into a salt mine in Hungary. When her servants dug a well at Wieliczka, they found salt and her missing ring.",
+       "uz": "Afsonaga ko'ra, Muborak Kinga uzugini Vengriyadagi tuz koniga tashlagan. Xizmatkorlari Wieliczkada quduq qazganda tuz va yo'qolgan uzukni topishgan."
+      },
+      {
+       "en": "For centuries salt was dug out by hand, and later horses were used to carry it out. Many miners were killed or injured. After a chapel was destroyed by fire, the miners began to carve sculptures from rock salt.",
+       "uz": "Asrlar davomida tuz qo'lda qazilgan, keyin uni olib chiqish uchun otlardan foydalanilgan. Ko'p konchilar halok bo'lgan yoki jarohatlangan. Ibodatxona yong'inda vayron bo'lgandan keyin konchilar tosh tuzdan haykal o'yishni boshlagan."
+      },
+      {
+       "en": "Today visitors can see enormous chambers, chapels, tunnels and caves with huge salt crystals.",
+       "uz": "Bugun tashrif buyuruvchilar ulkan zallar, ibodatxonalar, tunnellar va ulkan tuz kristallari bilan g'orlarni ko'rishi mumkin."
+      },
+      {
+       "en": "You will be amazed by these unforgettable sights - don't miss them!",
+       "uz": "Bu unutilmas manzaralardan hayratga tushasiz - ularni o'tkazib yubormang!"
       }
      ]
     }
@@ -271,6 +900,108 @@
    ],
    "book": "coursebook",
    "bookPage": 62
+  },
+  {
+   "ruleUz": "⚠ 'UN-' + SIFAT + '-ABLE'",
+   "explanationUz": "Betdagi 'unforgettable'.",
+   "items": [
+    {
+     "base": "to forget",
+     "baseUz": "unutmoq",
+     "derived": "unforgettable",
+     "derivedUz": "unutilmas",
+     "note": "⚠ betda shu; 't' ikkilanadi"
+    },
+    {
+     "base": "to believe",
+     "baseUz": "ishonmoq",
+     "derived": "unbelievable",
+     "derivedUz": "ishonib bo'lmas",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 63
+  },
+  {
+   "ruleUz": "⚠ OT → SIFAT: -EN (material)",
+   "explanationUz": "Betdagi 'wooden'.",
+   "items": [
+    {
+     "base": "wood",
+     "baseUz": "yog'och",
+     "derived": "wooden",
+     "derivedUz": "yog'ochdan",
+     "note": "⚠ betda shu"
+    },
+    {
+     "base": "gold",
+     "baseUz": "oltin",
+     "derived": "golden",
+     "derivedUz": "oltindan, tilla rang",
+     "note": ""
+    },
+    {
+     "base": "wool",
+     "baseUz": "jun",
+     "derived": "woollen",
+     "derivedUz": "jundan",
+     "note": ""
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 63
+  },
+  {
+   "ruleUz": "⚠ FE'L → OT: -URE / -ANT / -ION",
+   "explanationUz": "Betdagi 'sculpture', 'servant', 'attraction', 'recommendation'.",
+   "items": [
+    {
+     "base": "to sculpt",
+     "baseUz": "haykal yasamoq",
+     "derived": "a sculpture / a sculptor",
+     "derivedUz": "haykal / haykaltarosh",
+     "note": "⚠ betda 'sculptures'"
+    },
+    {
+     "base": "to serve",
+     "baseUz": "xizmat qilmoq",
+     "derived": "a servant / a service",
+     "derivedUz": "xizmatkor / xizmat",
+     "note": "⚠ betda ikkalasi ham"
+    },
+    {
+     "base": "to recommend",
+     "baseUz": "tavsiya qilmoq",
+     "derived": "a recommendation",
+     "derivedUz": "tavsiya",
+     "note": "⚠ betda shu"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 63
+  },
+  {
+   "ruleUz": "⚠ SIFAT → RAVISh: -LY",
+   "explanationUz": "Betdagi 'deeply', 'definitely'.",
+   "items": [
+    {
+     "base": "deep",
+     "baseUz": "chuqur",
+     "derived": "deeply",
+     "derivedUz": "chuqur (darajada)",
+     "note": "⚠ betda 'deeply religious'"
+    },
+    {
+     "base": "natural",
+     "baseUz": "tabiiy",
+     "derived": "naturally",
+     "derivedUz": "tabiiyki",
+     "note": "⚠ betda 'natural'"
+    }
+   ],
+   "book": "coursebook",
+   "bookPage": 63
   }
  ],
  "sentencePatterns": [
@@ -297,6 +1028,38 @@
    "explanationUz": "⚠ MAJHUL NISBAT: was + 3-shakl + by.",
    "book": "coursebook",
    "bookPage": 62
+  },
+  {
+   "formula": "According to [manba], [gap].",
+   "exampleEn": "According to a 700-year-old legend, a princess threw her ring into a salt mine.",
+   "exampleUz": "700 yillik afsonaga ko'ra, malika uzugini tuz koniga tashlagan.",
+   "explanationUz": "⚠ 'according to' = ... ga ko'ra.",
+   "book": "coursebook",
+   "bookPage": 63
+  },
+  {
+   "formula": "[Nima] was/were + 3-ShAKL (by [kim]).",
+   "exampleEn": "The Chapel was made by the miners themselves.",
+   "exampleUz": "Ibodatxona konchilarning o'zlari tomonidan yasalgan.",
+   "explanationUz": "⚠ MAJHUL NISBAT - o'tgan zamon.",
+   "book": "coursebook",
+   "bookPage": 63
+  },
+  {
+   "formula": "[Nima] has/have been + 3-ShAKL.",
+   "exampleEn": "The walls have been carved from rock salt.",
+   "exampleUz": "Devorlar tosh tuzdan o'yilgan.",
+   "explanationUz": "⚠ MAJHUL NISBAT - present perfect.",
+   "book": "coursebook",
+   "bookPage": 63
+  },
+  {
+   "formula": "You will be + 3-ShAKL by [nima].",
+   "exampleEn": "You will be amazed by these unforgettable sights.",
+   "exampleUz": "Bu unutilmas manzaralardan hayratga tushasiz.",
+   "explanationUz": "⚠ MAJHUL NISBAT - kelasi zamon.",
+   "book": "coursebook",
+   "bookPage": 63
   }
  ],
  "vocabulary": [
@@ -399,6 +1162,142 @@
   {
    "en": "fire",
    "uz": "yong'in"
+  },
+  {
+   "en": "hidden",
+   "uz": "yashirin"
+  },
+  {
+   "en": "natural",
+   "uz": "tabiiy"
+  },
+  {
+   "en": "man-made",
+   "uz": "inson yaratgan"
+  },
+  {
+   "en": "according to",
+   "uz": "... ga ko'ra"
+  },
+  {
+   "en": "a legend",
+   "uz": "afsona"
+  },
+  {
+   "en": "a princess",
+   "uz": "malika"
+  },
+  {
+   "en": "Hungary",
+   "uz": "Vengriya"
+  },
+  {
+   "en": "a servant",
+   "uz": "xizmatkor"
+  },
+  {
+   "en": "instead of",
+   "uz": "o'rniga"
+  },
+  {
+   "en": "a lump",
+   "uz": "bo'lak"
+  },
+  {
+   "en": "a century",
+   "uz": "asr"
+  },
+  {
+   "en": "rock",
+   "uz": "tog' jinsi"
+  },
+  {
+   "en": "to injure",
+   "uz": "jarohatlamoq"
+  },
+  {
+   "en": "constant",
+   "uz": "doimiy"
+  },
+  {
+   "en": "to construct",
+   "uz": "qurmoq"
+  },
+  {
+   "en": "church services",
+   "uz": "cherkov xizmatlari"
+  },
+  {
+   "en": "to hold (a service)",
+   "uz": "o'tkazmoq"
+  },
+  {
+   "en": "to be allowed to",
+   "uz": "ruxsat berilgan bo'lmoq"
+  },
+  {
+   "en": "wooden",
+   "uz": "yog'ochdan"
+  },
+  {
+   "en": "a sculpture",
+   "uz": "haykal"
+  },
+  {
+   "en": "nowadays",
+   "uz": "hozirgi kunda"
+  },
+  {
+   "en": "enormous",
+   "uz": "ulkan"
+  },
+  {
+   "en": "solid",
+   "uz": "qattiq, yaxlit"
+  },
+  {
+   "en": "as well as",
+   "uz": "shuningdek"
+  },
+  {
+   "en": "to contain",
+   "uz": "o'z ichiga olmoq"
+  },
+  {
+   "en": "amazed",
+   "uz": "hayratlangan"
+  },
+  {
+   "en": "unforgettable",
+   "uz": "unutilmas"
+  },
+  {
+   "en": "sights",
+   "uz": "manzaralar, diqqatga sazovor joylar"
+  },
+  {
+   "en": "to miss",
+   "uz": "o'tkazib yubormoq"
+  },
+  {
+   "en": "ugly",
+   "uz": "xunuk"
+  },
+  {
+   "en": "tiny",
+   "uz": "juda kichik"
+  },
+  {
+   "en": "ordinary",
+   "uz": "oddiy"
+  },
+  {
+   "en": "bored",
+   "uz": "zerikkan"
+  },
+  {
+   "en": "a recommendation",
+   "uz": "tavsiya"
   }
  ]
 }
