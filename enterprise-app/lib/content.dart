@@ -109,11 +109,18 @@ class Unit {
 class GrammarTopic {
   final String id, topic, ruleUz;
   final List<String> examples;
+
+  /// Qaysi unitdan (0 = umumiy) va qaysi kitob/betdan.
+  final int unit;
+  final String source;
+
   const GrammarTopic({
     required this.id,
     required this.topic,
     required this.ruleUz,
     required this.examples,
+    this.unit = 0,
+    this.source = '',
   });
 
   factory GrammarTopic.fromJson(Map<String, dynamic> j) => GrammarTopic(
@@ -121,6 +128,8 @@ class GrammarTopic {
         topic: j['topic'] as String,
         ruleUz: j['rule_uz'] as String? ?? '',
         examples: (j['examples'] as List? ?? []).map((e) => e as String).toList(),
+        unit: (j['unit'] as num?)?.toInt() ?? 0,
+        source: j['source'] as String? ?? '',
       );
 }
 

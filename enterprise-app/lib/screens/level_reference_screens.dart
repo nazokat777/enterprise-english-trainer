@@ -43,19 +43,29 @@ class LevelGrammarScreen extends StatelessWidget {
       return _empty(context, Icons.rule_rounded,
           'Bu daraja uchun grammatika mavzulari hali yo\'q.');
     }
+    // Unit bo'yicha sarlavhalar — 200+ mavzu orasida yo'l topish uchun.
+    final rows = <Widget>[];
+    var lastUnit = -1;
+    for (final t in topics) {
+      if (t.unit != lastUnit) {
+        lastUnit = t.unit;
+        rows.add(_UnitDivider(unit: t.unit));
+      }
+      rows.add(_TopicCard(topic: t));
+    }
     return ListView.builder(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
-      itemCount: topics.length + 1,
+      itemCount: rows.length + 1,
       itemBuilder: (context, i) {
         if (i == 0) {
           return _Header(
             title: 'Grammatika',
-            subtitle: '${topics.length} ta mavzu — qisqacha qoida va misollar',
+            subtitle: "${topics.length} ta qoida — uchala kitobdan, unit bo'yicha",
             icon: Icons.rule_rounded,
             color: AppColors.actionBlue,
           );
         }
-        return _TopicCard(topic: topics[i - 1]);
+        return rows[i - 1];
       },
     );
   }
@@ -92,6 +102,42 @@ class _TopicCard extends StatelessWidget {
             const SizedBox(height: 12),
             for (final e in topic.examples) _Example(text: e),
           ],
+          if (topic.source.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            Text('📖 ${topic.source}',
+                style: const TextStyle(
+                    fontSize: 11.5, color: AppColors.brandPurple)),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _UnitDivider extends StatelessWidget {
+  final int unit;
+  const _UnitDivider({required this.unit});
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(2, 6, 2, 10),
+      child: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+            decoration: BoxDecoration(
+              color: AppColors.actionBlue.withValues(alpha: 0.12),
+              borderRadius: BorderRadius.circular(AppRadius.pill),
+            ),
+            child: Text(unit > 0 ? '$unit-unit' : 'Umumiy',
+                style: const TextStyle(
+                    fontWeight: FontWeight.w900,
+                    fontSize: 12,
+                    color: AppColors.actionBlue)),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+              child: Divider(color: AppColors.actionBlue.withValues(alpha: 0.25))),
         ],
       ),
     );

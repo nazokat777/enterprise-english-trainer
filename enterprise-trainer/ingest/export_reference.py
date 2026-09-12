@@ -36,6 +36,12 @@ LEVELS = {
 # so'ng coursebook/workbook'dagi qo'shimcha qoidalar.
 BOOK_ORDER = {"grammar": 0, "coursebook": 1, "workbook": 2}
 
+# Grammatika bo'limi hisoblanadigan section turlari.
+GRAMMAR_KINDS = {"grammar_theory", "grammar", "grammar_exercise"}
+
+# Mashq izohida qoida borligini bildiradigan belgilar.
+RULE_MARK = re.compile(r"QOIDA|QOLIP|QOLIPI|FORMULA", re.I)
+
 
 def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", s or "").strip()
@@ -65,17 +71,26 @@ def collect(level: str):
         unit = d.get("unit", 0)
         module = d.get("module", 0)
         for s in d.get("sections", []):
-            if s.get("kind") != "grammar_theory":
+            kind = s.get("kind", "")
+            # Grammar kitobi nazariyasi + Coursebook/Workbook'dagi
+            # "Grammar" bo'limlari — egasi: "coursebookdagi qoidalarning
+            # HAMMASI kirsin".
+            if kind not in GRAMMAR_KINDS:
                 continue
             for e in s.get("exercises", []):
-                if e.get("type") != "explain":
-                    continue
+                is_explain = e.get("type") == "explain"
                 rule = _norm(e.get("explanationUz", ""))
+                # Mashq izohi faqat ichida QOIDA bo'lsa kiradi (mashqning
+                # o'zi emas, qoida qismi qiziq).
+                if not is_explain and not RULE_MARK.search(rule):
+                    continue
                 if not rule or rule in seen_rules:
                     continue
                 seen_rules.add(rule)
                 title = _norm(s.get("title", "")) or _norm(e.get("instructionEn", ""))[:60]
                 title_uz = _norm(s.get("titleUz", ""))
+                if not is_explain:
+                    title_uz = f"{title_uz} ({e.get('ref', '')}-mashq qoidasi)".replace(" (-mashq", " (mashq")
                 examples = [
                     _norm(p.get("en", "")) for p in e.get("points", []) if _norm(p.get("en", ""))
                 ]
