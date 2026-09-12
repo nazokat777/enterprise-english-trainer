@@ -1,0 +1,163 @@
+"""Betma-bet yozilgan sahifalardan DARAJA BO'YIChA ma'lumotnoma yig'adi.
+
+`enterprise-app/assets/content/<level_dir>/grammar.json` va
+`word_formation.json` — ilovadagi "Grammatika" va "So'z yasalishi"
+bo'limlari shu ikki fayldan o'qiydi. Beginner uchun ular eski OCR
+quvuridan (structured.json) to'lgan edi; Elementary uchun bo'sh
+placeholder qolib ketgan — betma-bet yozilgan 60+ nazariya bo'limi
+unit ichida bor, lekin umumiy ro'yxatga ulanmagan edi.
+
+Manba: `data/pages-<level>/*/pNNN.json`:
+  * sections[kind == grammar_theory].exercises[type == explain]
+      -> grammar.json topics (qoida = explanationUz, misollar = points.en)
+  * wordFormation.groups[].items -> word_formation.json families
+
+Ishga tushirish:
+  python -m ingest.export_reference --level elementary
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+TRAINER = HERE.parent
+APP_CONTENT = TRAINER.parent / "enterprise-app" / "assets" / "content"
+
+LEVELS = {
+    # level id -> (sahifalar papkasi, asset papkasi)
+    "beginner": ("pages", "beginner"),
+    "elementary": ("pages-elementary", "elementary"),
+}
+
+# Kitob tartibi: Grammar kitobi nazariyasi eng to'liq — avval u,
+# so'ng coursebook/workbook'dagi qo'shimcha qoidalar.
+BOOK_ORDER = {"grammar": 0, "coursebook": 1, "workbook": 2}
+
+
+def _norm(s: str) -> str:
+    return re.sub(r"\s+", " ", s or "").strip()
+
+
+def _key(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
+
+
+def collect(level: str):
+    pages_dir, _ = LEVELS[level]
+    root = TRAINER / "data" / pages_dir
+    pages = []
+    for book in sorted(BOOK_ORDER, key=BOOK_ORDER.get):
+        for f in sorted((root / book).glob("p*.json")):
+            d = json.loads(f.read_text(encoding="utf-8"))
+            d["_book"] = book
+            pages.append(d)
+    pages.sort(key=lambda d: (d.get("unit", 0), BOOK_ORDER[d["_book"]], d.get("pdfPage", 0)))
+
+    topics: list[dict] = []
+    seen_rules: set[str] = set()
+    families: list[dict] = []
+    seen_fam: set[str] = set()
+
+    for d in pages:
+        unit = d.get("unit", 0)
+        module = d.get("module", 0)
+        for s in d.get("sections", []):
+            if s.get("kind") != "grammar_theory":
+                continue
+            for e in s.get("exercises", []):
+                if e.get("type") != "explain":
+                    continue
+                rule = _norm(e.get("explanationUz", ""))
+                if not rule or rule in seen_rules:
+                    continue
+                seen_rules.add(rule)
+                title = _norm(s.get("title", "")) or _norm(e.get("instructionEn", ""))[:60]
+                title_uz = _norm(s.get("titleUz", ""))
+                examples = [
+                    _norm(p.get("en", "")) for p in e.get("points", []) if _norm(p.get("en", ""))
+                ]
+                topics.append({
+                    "id": f"gr-{len(topics) + 1:03d}",
+                    "topic": title if not title_uz or title_uz == title else f"{title} — {title_uz}",
+                    "rule_uz": e.get("explanationUz", ""),
+                    "examples": examples[:8],
+                    "module": f"Module {module}" if module else "",
+                    "unit": unit if isinstance(unit, int) and unit < 800 else 0,
+                    "source": e.get("bookRef", ""),
+                })
+
+        wf = d.get("wordFormation") or {}
+        for g in wf.get("groups", []):
+            for it in g.get("items", []):
+                base = _norm(it.get("base", ""))
+                derived = _norm(it.get("derived", ""))
+                if not base or not derived:
+                    continue
+                k = _key(base)
+                # Faqat HAQIQIY so'z oilasi: asos 3+ harf, hosila asos bilan
+                # o'zakdosh (birinchi 3 harf bir xil). Aks holda olmosh
+                # jadvallari, predlog juftlari kabi shovqin kiradi.
+                if len(k) < 3 or " " in k:
+                    continue
+                forms = [x.strip() for x in re.split(r"[/,]| - ", derived) if x.strip()]
+                stem = k[:3]
+                forms = [
+                    x for x in forms
+                    if _key(x) != k and _key(x)[:3] == stem and " " not in _key(x)
+                ]
+                if not forms:
+                    continue
+                if k in seen_fam:
+                    # mavjud oilaga yangi shakllar qo'shiladi
+                    for fam in families:
+                        if _key(fam["base"]) == k:
+                            for x in forms:
+                                if x not in fam["forms"]:
+                                    fam["forms"].append(x)
+                            if not fam["uz"] and it.get("baseUz"):
+                                fam["uz"] = _norm(it["baseUz"])
+                            break
+                    continue
+                seen_fam.add(k)
+                families.append({
+                    "id": f"wf-{len(families) + 1:04d}",
+                    "base": base,
+                    "uz": _norm(it.get("baseUz", "")),
+                    "forms": forms,
+                })
+
+    # Bir bo'limda bir necha nazariya bo'lsa sarlavhalar takrorlanadi -
+    # raqamlab ajratiladi ("Past Simple (2)").
+    counts: dict[str, int] = {}
+    for t in topics:
+        counts[t["topic"]] = counts.get(t["topic"], 0) + 1
+    seen: dict[str, int] = {}
+    for t in topics:
+        if counts[t["topic"]] > 1:
+            seen[t["topic"]] = seen.get(t["topic"], 0) + 1
+            t["topic"] = f'{t["topic"]} ({seen[t["topic"]]})'
+
+    return topics, families
+
+
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--level", default="elementary", choices=sorted(LEVELS))
+    a = ap.parse_args(argv)
+    topics, families = collect(a.level)
+    out = APP_CONTENT / LEVELS[a.level][1]
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "grammar.json").write_text(
+        json.dumps({"topics": topics}, ensure_ascii=False, indent=1), encoding="utf-8")
+    (out / "word_formation.json").write_text(
+        json.dumps({"families": families}, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"[{a.level}] grammar.json: {len(topics)} mavzu; "
+          f"word_formation.json: {len(families)} oila -> {out}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -103,6 +103,63 @@ class RewardEngine extends ChangeNotifier {
   /// Streak sandig'i berilgan kunlar (3/7/14/30/60/100).
   final Set<int> streakChestsGiven = {};
 
+  // ─── Sessiya (peak-end: oxiri yaxshi tugasin) ───
+  DateTime? _sessionStart;
+  DateTime? _lastActivity;
+  int sessionXp = 0;
+  int sessionCorrect = 0;
+  int sessionWrong = 0;
+  int sessionExercises = 0;
+  int sessionBestCombo = 0;
+  bool _recapPending = false;
+  static const Duration sessionGap = Duration(minutes: 10);
+
+  void _touchSession() {
+    final now = DateTime.now();
+    if (_lastActivity == null || now.difference(_lastActivity!) > sessionGap) {
+      _sessionStart = now;
+      sessionXp = sessionCorrect = sessionWrong = sessionExercises = 0;
+      sessionBestCombo = 0;
+      _recapPending = false;
+    }
+    _lastActivity = now;
+  }
+
+  Duration get sessionDuration => _sessionStart == null
+      ? Duration.zero
+      : (_lastActivity ?? DateTime.now()).difference(_sessionStart!);
+
+  /// Bosh ekran so'raydi: ko'rsatiladigan yakun bormi (bir marta).
+  SessionRecap? takeRecap() {
+    if (!_recapPending || sessionExercises < 2) return null;
+    _recapPending = false;
+    return SessionRecap(
+      minutes: max(1, sessionDuration.inMinutes),
+      xp: sessionXp,
+      correct: sessionCorrect,
+      wrong: sessionWrong,
+      exercises: sessionExercises,
+      bestCombo: sessionBestCombo,
+    );
+  }
+
+  // ─── Va'da vaqti (implementation intention) ───
+  /// "Ertaga soat N da" — o'quvchi o'zi tanlaydi; niyat aniq vaqtga
+  /// bog'lansa bajarilishi 2 barobar oshadi (Gollwitzer).
+  int? commitHour;
+  String _commitAskedDay = '';
+  bool get commitAskedToday => _commitAskedDay == _today;
+  Future<void> setCommitHour(int? h) async {
+    commitHour = h;
+    _commitAskedDay = _today;
+    await _save();
+    notifyListeners();
+  }
+
+  /// Va'da vaqti kelib, bugun hali ishlanmagan bo'lsa.
+  bool get commitDue =>
+      commitHour != null && idleToday && DateTime.now().hour >= commitHour!;
+
   final _events = StreamController<RewardEvent>.broadcast();
   Stream<RewardEvent> get events => _events.stream;
 
@@ -203,6 +260,8 @@ class RewardEngine extends ChangeNotifier {
     _spinDay = p.getString('rw_spinDay') ?? '';
     _leagueSeen = p.getInt('rw_league') ?? 0;
     petName = p.getString('rw_pet') ?? '';
+    commitHour = p.getInt('rw_commit');
+    _commitAskedDay = p.getString('rw_commitDay') ?? '';
     unitsCompleted.addAll((p.getStringList('rw_units') ?? []).map(int.parse));
     streakChestsGiven.addAll((p.getStringList('rw_streakChests') ?? []).map(int.parse));
     final dx = p.getString('rw_dayXp');
@@ -247,6 +306,12 @@ class RewardEngine extends ChangeNotifier {
     await p.setString('rw_spinDay', _spinDay);
     await p.setInt('rw_league', _leagueSeen);
     await p.setString('rw_pet', petName);
+    if (commitHour != null) {
+      await p.setInt('rw_commit', commitHour!);
+    } else {
+      await p.remove('rw_commit');
+    }
+    await p.setString('rw_commitDay', _commitAskedDay);
     await p.setStringList('rw_units', unitsCompleted.map((e) => '$e').toList());
     await p.setStringList('rw_streakChests', streakChestsGiven.map((e) => '$e').toList());
     await p.setString('rw_dayXp', json.encode(dayXp));
@@ -270,6 +335,8 @@ class RewardEngine extends ChangeNotifier {
     _spinDay = '';
     _leagueSeen = 0;
     petName = '';
+    commitHour = null;
+    _commitAskedDay = '';
     unitsCompleted.clear();
     streakChestsGiven.clear();
     dayXp.clear();
@@ -303,9 +370,11 @@ class RewardEngine extends ChangeNotifier {
   /// uni `Progress.addXp` ga uzatadi.
   int onAnswer(bool ok, {int baseXp = 2, Duration? elapsed, bool nearMiss = false}) {
     tick();
+    _touchSession();
     var bonus = 0;
     if (!ok) {
       wrongTotal++;
+      sessionWrong++;
       combo = 0;
       _lastWrong = true;
       // "Deyarli!" — yaqin xato: miya buni deyarli g'alaba deb o'qiydi
@@ -331,7 +400,9 @@ class RewardEngine extends ChangeNotifier {
       _events.add(const RewardEvent.speed(1));
     }
     todayCorrect++;
+    sessionCorrect++;
     combo++;
+    if (combo > sessionBestCombo) sessionBestCombo = combo;
     if (combo > bestCombo) {
       bestCombo = combo;
       // Har qadamda emas — faqat 5 ga karrali rekordlarda (spam bo'lmasin).
@@ -385,6 +456,8 @@ class RewardEngine extends ChangeNotifier {
     if (amount <= 0) return;
     tick();
     final before = level;
+    _touchSession();
+    sessionXp += amount;
     totalXp += amount;
     todayXp += amount;
     if (todayXp > bestDayXp) bestDayXp = todayXp;
@@ -407,6 +480,9 @@ class RewardEngine extends ChangeNotifier {
 
   void onExerciseDone({required bool clean}) {
     tick();
+    _touchSession();
+    sessionExercises++;
+    _recapPending = true;
     exercisesDone++;
     todayExercises++;
     if (clean) perfectExercises++;
@@ -786,6 +862,19 @@ class Achievement {
   final String desc;
   final String emoji;
   const Achievement(this.id, this.title, this.desc, this.emoji);
+}
+
+class SessionRecap {
+  final int minutes, xp, correct, wrong, exercises, bestCombo;
+  const SessionRecap(
+      {required this.minutes,
+      required this.xp,
+      required this.correct,
+      required this.wrong,
+      required this.exercises,
+      required this.bestCombo});
+  int get accuracy =>
+      correct + wrong == 0 ? 100 : (correct * 100 / (correct + wrong)).round();
 }
 
 class SpinSector {

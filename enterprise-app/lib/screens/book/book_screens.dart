@@ -50,8 +50,22 @@ import 'review_screen.dart';
     };
 
 // ═══════════════════ Unit'lar ro'yxati ═══════════════════
-class BookUnitsScreen extends StatelessWidget {
+class BookUnitsScreen extends StatefulWidget {
   const BookUnitsScreen({super.key});
+
+  @override
+  State<BookUnitsScreen> createState() => _BookUnitsScreenState();
+}
+
+class _BookUnitsScreenState extends State<BookUnitsScreen> {
+  @override
+  void initState() {
+    super.initState();
+    // Sessiya yakuni — bosh ekranga qaytilganda bir marta (peak-end).
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) SessionRecapDialog.showIfPending(context);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -89,6 +103,7 @@ class BookUnitsScreen extends StatelessWidget {
           // BIR BOSIShDA BOShLASh — boshlash ishqalanishi (friction) eng
           // katta to'siq: qaysi unit, qaysi mashq deb o'ylamasdan 3
           // daqiqalik trening.
+          const EntranceFade(child: CommitCard()),
           const EntranceFade(child: _QuickStartCard()),
           const SizedBox(height: 10),
           const EntranceFade(child: StreakDangerCard()),

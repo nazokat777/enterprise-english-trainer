@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../main.dart';
 import '../theme.dart';
 import 'reward_engine.dart';
+import 'reward_widgets.dart';
 
 // ═══════════════════ HAMROH (maskot) ═══════════════════
 
@@ -883,6 +884,169 @@ class _OnboardingSheetState extends State<OnboardingSheet>
           ],
         ),
       ),
+    );
+  }
+}
+
+// ═══════════════════ SESSIYA YAKUNI (peak-end) ═══════════════════
+
+/// Sessiya oxirida bir marta: raqamlar sanab chiqadi, hamroh reaksiya
+/// beradi, ertangi vaqt so'raladi. Oxirgi taassurot — eng kuchlisi.
+class SessionRecapDialog extends StatelessWidget {
+  final SessionRecap r;
+  const SessionRecapDialog({super.key, required this.r});
+
+  static Future<void> showIfPending(BuildContext context) async {
+    final r = rewards.takeRecap();
+    if (r == null) return;
+    await showDialog<void>(
+      context: context,
+      builder: (_) => SessionRecapDialog(r: r),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final name = rewards.petName.isNotEmpty ? rewards.petName : 'Hamrohingiz';
+    final st = MascotStage.forLevel(rewards.level);
+    final great = r.accuracy >= 85;
+    final line = great
+        ? '$name faxrlanyapti: ${r.accuracy} % aniqlik!'
+        : (r.accuracy >= 60
+            ? '$name: "Yaxshi mehnat! Xatolar — o\'sish."'
+            : '$name: "Qiyin edi, lekin tashlamading. Ertaga osonroq bo\'ladi."');
+    return Dialog(
+      backgroundColor: Colors.transparent,
+      child: Container(
+        width: 340,
+        padding: const EdgeInsets.fromLTRB(22, 22, 22, 18),
+        decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.surface,
+          borderRadius: BorderRadius.circular(24),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(great ? 'AJOYIB SESSIYA' : 'SESSIYA YAKUNI',
+                style: const TextStyle(
+                    color: AppColors.brandPurple,
+                    fontWeight: FontWeight.w900,
+                    letterSpacing: 2,
+                    fontSize: 13)),
+            const SizedBox(height: 10),
+            Text(great ? '${st.emoji}🎉' : st.emoji, style: const TextStyle(fontSize: 56)),
+            const SizedBox(height: 8),
+            Text(line,
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
+            const SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _RecapStat('⏱', '${r.minutes}', 'daqiqa'),
+                _RecapStat('⚡', '${r.xp}', 'XP'),
+                _RecapStat('🎯', '${r.accuracy}%', 'aniqlik'),
+                _RecapStat('🔥', '${r.bestCombo}', 'kombo'),
+              ],
+            ),
+            const SizedBox(height: 16),
+            if (!rewards.commitAskedToday) ...[
+              Text('Ertaga soat nechada davom etamiz?',
+                  style: TextStyle(fontSize: 13, color: AppColors.muted(context))),
+              const SizedBox(height: 8),
+              Wrap(
+                spacing: 8,
+                children: [
+                  for (final h in [7, 9, 12, 18, 21])
+                    ChoiceChip(
+                      label: Text('$h:00'),
+                      selected: rewards.commitHour == h,
+                      onSelected: (_) => rewards.setCommitHour(h),
+                    ),
+                ],
+              ),
+              const SizedBox(height: 12),
+            ],
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton(
+                style: FilledButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    textStyle: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
+                onPressed: () {
+                  if (!rewards.commitAskedToday) rewards.setCommitHour(rewards.commitHour);
+                  Navigator.pop(context);
+                },
+                child: const Text('Rahmat!'),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _RecapStat extends StatelessWidget {
+  final String icon, value, label;
+  const _RecapStat(this.icon, this.value, this.label);
+  @override
+  Widget build(BuildContext context) {
+    final n = int.tryParse(value.replaceAll('%', ''));
+    return Column(
+      children: [
+        Text(icon, style: const TextStyle(fontSize: 18)),
+        const SizedBox(height: 2),
+        n == null
+            ? Text(value, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 20))
+            : CountUp(n,
+                suffix: value.endsWith('%') ? '%' : '',
+                style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 20)),
+        Text(label, style: TextStyle(fontSize: 11, color: AppColors.muted(context))),
+      ],
+    );
+  }
+}
+
+/// "Va'da vaqti keldi" — bosh ekranda, vaqt o'tgan-u bugun ishlanmagan.
+class CommitCard extends StatelessWidget {
+  const CommitCard({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: rewards,
+      builder: (context, _) {
+        if (!rewards.commitDue) return const SizedBox.shrink();
+        return Container(
+          margin: const EdgeInsets.only(bottom: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
+          decoration: BoxDecoration(
+            color: AppColors.actionBlue.withValues(alpha: 0.10),
+            borderRadius: BorderRadius.circular(AppRadius.lg),
+            border: Border.all(color: AppColors.actionBlue.withValues(alpha: 0.4)),
+          ),
+          child: Row(
+            children: [
+              const Text('🤝', style: TextStyle(fontSize: 22)),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Va\'da: soat ${rewards.commitHour}:00 — vaqti keldi',
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 14,
+                            color: AppColors.actionBlue)),
+                    Text('O\'zingizga bergan so\'z. 3 daqiqa yetadi.',
+                        style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

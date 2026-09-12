@@ -243,4 +243,25 @@ void main() {
     expect(e.petName, 'Zukko');
     expect(e.onboarded, isTrue);
   });
+
+  test('sessiya yakuni 2 mashqdan keyin bir marta', () {
+    final e = RewardEngine(random: Random(5));
+    expect(e.takeRecap(), isNull);
+    for (var i = 0; i < 6; i++) {
+      e.onAnswer(true, baseXp: 2);
+    }
+    e.onAnswer(false);
+    e.onXp(20);
+    e.onExerciseDone(clean: false);
+    expect(e.takeRecap(), isNull, reason: '1 mashq - hali yetarli emas');
+    e.onExerciseDone(clean: true);
+    final r = e.takeRecap();
+    expect(r, isNotNull);
+    expect(r!.correct, 6);
+    expect(r.wrong, 1);
+    expect(r.exercises, 2);
+    expect(r.accuracy, 86);
+    expect(r.bestCombo, 6);
+    expect(e.takeRecap(), isNull, reason: 'ikkinchi marta chiqmaydi');
+  });
 }
