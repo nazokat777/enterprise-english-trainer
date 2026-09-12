@@ -98,6 +98,8 @@ class _LessonScreenState extends State<LessonScreen> {
       if (_s.isDone) {
         await progress.addXp(5);
         rewards.onExerciseDone(clean: true);
+        // Dars tugadi = darsdagi so'zlar o'rganildi (kunlik topshiriq).
+        rewards.onWordLearned(_s.lesson.sources.length);
       }
     });
   }

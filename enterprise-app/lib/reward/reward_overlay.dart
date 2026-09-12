@@ -33,19 +33,27 @@ class _RewardOverlayState extends State<RewardOverlay>
   final _rng = Random();
 
   // Kombo meteri
-  late final AnimationController _comboPop =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 380));
-  late final AnimationController _shake =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 420));
-  late final AnimationController _vignette = AnimationController(
-      vsync: this, duration: const Duration(milliseconds: 1400))
-    ..addStatusListener((s) {
-      if (s == AnimationStatus.completed && rewards.combo >= 10) {
-        _vignette.forward(from: 0);
-      }
-    });
-  late final AnimationController _wrongFlash =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 350));
+  late final AnimationController _comboPop = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 380),
+  );
+  late final AnimationController _shake = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 420),
+  );
+  late final AnimationController _vignette =
+      AnimationController(
+        vsync: this,
+        duration: const Duration(milliseconds: 1400),
+      )..addStatusListener((s) {
+        if (s == AnimationStatus.completed && rewards.combo >= 10) {
+          _vignette.forward(from: 0);
+        }
+      });
+  late final AnimationController _wrongFlash = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 350),
+  );
 
   @override
   void initState() {
@@ -75,8 +83,7 @@ class _RewardOverlayState extends State<RewardOverlay>
         } else {
           sfx.correct(rewards.combo);
         }
-        _float(e.crit ? '+${e.amount} KRIT!' : '+${e.amount} ⚡',
-            crit: e.crit);
+        _float(e.crit ? '+${e.amount} KRIT!' : '+${e.amount} ⚡', crit: e.crit);
         _comboPop.forward(from: 0);
         if (rewards.combo >= 10 && !_vignette.isAnimating) {
           _vignette.forward(from: 0);
@@ -95,8 +102,11 @@ class _RewardOverlayState extends State<RewardOverlay>
       case RewardKind.combo:
         sfx.combo();
         _shake.forward(from: 0);
-        _float('${e.level} KOMBO  +${e.amount} ⚡',
-            color: _heatColor(rewards.comboHeat), big: true);
+        _float(
+          '${e.level} KOMBO  +${e.amount} ⚡',
+          color: _heatColor(rewards.comboHeat),
+          big: true,
+        );
         if (e.level >= 10) _burst(count: 60);
       case RewardKind.record:
         _showBanner(_RecordBanner(text: 'Yangi rekord: ${e.amount} kombo!'));
@@ -135,14 +145,21 @@ class _RewardOverlayState extends State<RewardOverlay>
     Future.delayed(const Duration(milliseconds: 250), _pump);
   }
 
-  void _float(String text, {bool crit = false, Color? color, bool big = false}) {
+  void _float(
+    String text, {
+    bool crit = false,
+    Color? color,
+    bool big = false,
+  }) {
     final id = _floaterId++;
     final dx = (_rng.nextDouble() - 0.5) * 120;
+    final dy = (_rng.nextDouble() - 0.5) * 60;
     late Widget w;
     w = _Floater(
       key: ValueKey(id),
       text: text,
       dx: dx,
+      dy: dy,
       crit: crit,
       big: big,
       color: color ?? (crit ? AppColors.coin : AppColors.success),
@@ -243,12 +260,18 @@ class _RewardOverlayState extends State<RewardOverlay>
             left: 0,
             right: 0,
             child: IgnorePointer(
-              child: Center(child: _ComboMeter(pop: _comboPop, shake: _shake)),
+              child: Material(
+                type: MaterialType.transparency,
+                child: Center(
+                  child: _ComboMeter(pop: _comboPop, shake: _shake),
+                ),
+              ),
             ),
           ),
           if (_banner != null)
             Positioned(
-              top: MediaQuery.paddingOf(context).top + 52,
+              // Pastda — o'yin maydonini (so'z, variantlar) to'smasin.
+              bottom: MediaQuery.paddingOf(context).bottom + 84,
               left: 0,
               right: 0,
               child: Center(
@@ -270,18 +293,21 @@ class _RewardOverlayState extends State<RewardOverlay>
   Widget _buildModal(RewardEvent e) {
     return switch (e.kind) {
       RewardKind.levelUp => _LevelUpModal(
-          key: ValueKey('lvl${e.level}'),
-          level: e.level,
-          title: e.text,
-          onClose: _closeModal),
+        key: ValueKey('lvl${e.level}'),
+        level: e.level,
+        title: e.text,
+        onClose: _closeModal,
+      ),
       RewardKind.chest => _ChestModal(
-          key: ValueKey('chest${e.hashCode}'),
-          big: e.big,
-          onClose: _closeModal),
+        key: ValueKey('chest${e.hashCode}'),
+        big: e.big,
+        onClose: _closeModal,
+      ),
       RewardKind.achievement => _AchievementModal(
-          key: ValueKey('ach${e.achievement!.id}'),
-          a: e.achievement!,
-          onClose: _closeModal),
+        key: ValueKey('ach${e.achievement!.id}'),
+        a: e.achievement!,
+        onClose: _closeModal,
+      ),
       _ => const SizedBox.shrink(),
     };
   }
@@ -292,6 +318,7 @@ class _RewardOverlayState extends State<RewardOverlay>
 class _Floater extends StatefulWidget {
   final String text;
   final double dx;
+  final double dy;
   final bool crit;
   final bool big;
   final Color color;
@@ -300,6 +327,7 @@ class _Floater extends StatefulWidget {
     super.key,
     required this.text,
     required this.dx,
+    this.dy = 0,
     required this.crit,
     required this.big,
     required this.color,
@@ -310,11 +338,12 @@ class _Floater extends StatefulWidget {
   State<_Floater> createState() => _FloaterState();
 }
 
-class _FloaterState extends State<_Floater> with SingleTickerProviderStateMixin {
+class _FloaterState extends State<_Floater>
+    with SingleTickerProviderStateMixin {
   late final AnimationController _c = AnimationController(
-      vsync: this,
-      duration: Duration(milliseconds: widget.big || widget.crit ? 1400 : 1000))
-    ..forward().whenComplete(widget.onDone);
+    vsync: this,
+    duration: Duration(milliseconds: widget.big || widget.crit ? 1400 : 1000),
+  )..forward().whenComplete(widget.onDone);
 
   @override
   void dispose() {
@@ -331,40 +360,46 @@ class _FloaterState extends State<_Floater> with SingleTickerProviderStateMixin 
         final t = _c.value;
         final rise = Curves.easeOutCubic.transform(t) * 140;
         final scale = widget.crit || widget.big
-            ? Curves.elasticOut.transform(min(1, t * 2.2)) * (widget.crit ? 1.35 : 1.15)
+            ? Curves.elasticOut.transform(min(1, t * 2.2)) *
+                  (widget.crit ? 1.35 : 1.15)
             : 0.8 + 0.3 * Curves.easeOutBack.transform(min(1, t * 3));
         final alpha = t < 0.7 ? 1.0 : (1 - (t - 0.7) / 0.3);
         return Positioned(
           left: size.width / 2 - 120 + widget.dx,
           width: 240,
-          top: size.height * 0.42 - rise,
+          top: size.height * 0.42 - rise + widget.dy,
           child: IgnorePointer(
             child: Opacity(
               opacity: alpha.clamp(0, 1),
               child: Transform.scale(
                 scale: scale,
-                child: Center(
-                  child: Container(
-                    padding: EdgeInsets.symmetric(
-                        horizontal: widget.crit ? 18 : 12, vertical: widget.crit ? 8 : 5),
-                    decoration: BoxDecoration(
-                      color: widget.color,
-                      borderRadius: BorderRadius.circular(AppRadius.pill),
-                      boxShadow: [
-                        BoxShadow(
-                          color: widget.color.withValues(alpha: 0.55),
-                          blurRadius: widget.crit ? 28 : 12,
-                          spreadRadius: widget.crit ? 4 : 0,
+                child: Material(
+                  type: MaterialType.transparency,
+                  child: Center(
+                    child: Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: widget.crit ? 18 : 12,
+                        vertical: widget.crit ? 8 : 5,
+                      ),
+                      decoration: BoxDecoration(
+                        color: widget.color,
+                        borderRadius: BorderRadius.circular(AppRadius.pill),
+                        boxShadow: [
+                          BoxShadow(
+                            color: widget.color.withValues(alpha: 0.55),
+                            blurRadius: widget.crit ? 28 : 12,
+                            spreadRadius: widget.crit ? 4 : 0,
+                          ),
+                        ],
+                      ),
+                      child: Text(
+                        widget.text,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w900,
+                          fontSize: widget.crit ? 22 : (widget.big ? 17 : 15),
+                          letterSpacing: 0.3,
                         ),
-                      ],
-                    ),
-                    child: Text(
-                      widget.text,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w900,
-                        fontSize: widget.crit ? 22 : (widget.big ? 17 : 15),
-                        letterSpacing: 0.3,
                       ),
                     ),
                   ),
@@ -382,8 +417,12 @@ class _TimedRemove extends StatefulWidget {
   final Widget child;
   final Duration duration;
   final VoidCallback onDone;
-  const _TimedRemove(
-      {super.key, required this.child, required this.duration, required this.onDone});
+  const _TimedRemove({
+    super.key,
+    required this.child,
+    required this.duration,
+    required this.onDone,
+  });
 
   @override
   State<_TimedRemove> createState() => _TimedRemoveState();
@@ -423,7 +462,9 @@ class _ComboMeter extends StatelessWidget {
         if (c < 2) return const SizedBox.shrink();
         final heat = rewards.comboHeat;
         final color = _RewardOverlayState._heatColor(heat);
-        final flame = c >= 20 ? '🌋' : (c >= 10 ? '🔥🔥' : (c >= 5 ? '🔥' : '✨'));
+        final flame = c >= 20
+            ? '🌋'
+            : (c >= 10 ? '🔥🔥' : (c >= 5 ? '🔥' : '🌟'));
         return AnimatedBuilder(
           animation: Listenable.merge([pop, shake]),
           builder: (_, _) {
@@ -434,7 +475,10 @@ class _ComboMeter extends StatelessWidget {
               child: Transform.scale(
                 scale: s,
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 14,
+                    vertical: 6,
+                  ),
                   decoration: BoxDecoration(
                     color: color,
                     borderRadius: BorderRadius.circular(AppRadius.pill),
@@ -451,17 +495,23 @@ class _ComboMeter extends StatelessWidget {
                     children: [
                       Text(flame, style: const TextStyle(fontSize: 15)),
                       const SizedBox(width: 6),
-                      Text('$c',
-                          style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 18)),
+                      Text(
+                        '$c',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 18,
+                        ),
+                      ),
                       const SizedBox(width: 4),
-                      const Text('kombo',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w700,
-                              fontSize: 12)),
+                      const Text(
+                        'kombo',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 12,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -483,10 +533,12 @@ class _SlideIn extends StatefulWidget {
   State<_SlideIn> createState() => _SlideInState();
 }
 
-class _SlideInState extends State<_SlideIn> with SingleTickerProviderStateMixin {
-  late final AnimationController _c =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 520))
-        ..forward();
+class _SlideInState extends State<_SlideIn>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _c = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 520),
+  )..forward();
   @override
   void dispose() {
     _c.dispose();
@@ -499,7 +551,7 @@ class _SlideInState extends State<_SlideIn> with SingleTickerProviderStateMixin 
     return AnimatedBuilder(
       animation: a,
       builder: (_, child) => Transform.translate(
-        offset: Offset(0, -40 * (1 - a.value)),
+        offset: Offset(0, 40 * (1 - a.value)),
         child: Opacity(opacity: _c.value.clamp(0, 1), child: child),
       ),
       child: widget.child,
@@ -528,7 +580,7 @@ class _RecordBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return _BannerCard(
       color: const Color(0xFFF97316),
-      leading: const Text('🏁', style: TextStyle(fontSize: 22)),
+      leading: const Text('🏅', style: TextStyle(fontSize: 22)),
       title: text,
       subtitle: 'Shaxsiy rekordingiz yangilandi',
     );
@@ -540,11 +592,12 @@ class _BannerCard extends StatelessWidget {
   final Widget leading;
   final String title;
   final String subtitle;
-  const _BannerCard(
-      {required this.color,
-      required this.leading,
-      required this.title,
-      required this.subtitle});
+  const _BannerCard({
+    required this.color,
+    required this.leading,
+    required this.title,
+    required this.subtitle,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -558,7 +611,11 @@ class _BannerCard extends StatelessWidget {
           color: color,
           borderRadius: BorderRadius.circular(AppRadius.lg),
           boxShadow: [
-            BoxShadow(color: color.withValues(alpha: 0.45), blurRadius: 20, offset: const Offset(0, 8)),
+            BoxShadow(
+              color: color.withValues(alpha: 0.45),
+              blurRadius: 20,
+              offset: const Offset(0, 8),
+            ),
           ],
         ),
         child: Row(
@@ -571,14 +628,23 @@ class _BannerCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(title,
-                      style: const TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.w900, fontSize: 14)),
-                  Text(subtitle,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                          color: Colors.white.withValues(alpha: 0.92), fontSize: 12)),
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900,
+                      fontSize: 14,
+                    ),
+                  ),
+                  Text(
+                    subtitle,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: Colors.white.withValues(alpha: 0.92),
+                      fontSize: 12,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -624,9 +690,10 @@ class _Pop extends StatefulWidget {
 }
 
 class _PopState extends State<_Pop> with SingleTickerProviderStateMixin {
-  late final AnimationController _c =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 650))
-        ..forward();
+  late final AnimationController _c = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 650),
+  )..forward();
   @override
   void dispose() {
     _c.dispose();
@@ -646,17 +713,22 @@ class _LevelUpModal extends StatefulWidget {
   final int level;
   final String title;
   final VoidCallback onClose;
-  const _LevelUpModal(
-      {super.key, required this.level, required this.title, required this.onClose});
+  const _LevelUpModal({
+    super.key,
+    required this.level,
+    required this.title,
+    required this.onClose,
+  });
   @override
   State<_LevelUpModal> createState() => _LevelUpModalState();
 }
 
 class _LevelUpModalState extends State<_LevelUpModal>
     with SingleTickerProviderStateMixin {
-  late final AnimationController _glow =
-      AnimationController(vsync: this, duration: const Duration(seconds: 2))
-        ..repeat(reverse: true);
+  late final AnimationController _glow = AnimationController(
+    vsync: this,
+    duration: const Duration(seconds: 2),
+  )..repeat(reverse: true);
   @override
   void dispose() {
     _glow.dispose();
@@ -681,20 +753,24 @@ class _LevelUpModalState extends State<_LevelUpModal>
                 borderRadius: BorderRadius.circular(24),
                 boxShadow: [
                   BoxShadow(
-                      color: AppColors.brandPurple.withValues(alpha: 0.6),
-                      blurRadius: 40,
-                      spreadRadius: 4),
+                    color: AppColors.brandPurple.withValues(alpha: 0.6),
+                    blurRadius: 40,
+                    spreadRadius: 4,
+                  ),
                 ],
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text('DARAJA OShDI!',
-                      style: TextStyle(
-                          color: Colors.white70,
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: 2,
-                          fontSize: 13)),
+                  const Text(
+                    'DARAJA OShDI!',
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 2,
+                      fontSize: 13,
+                    ),
+                  ),
                   const SizedBox(height: 10),
                   AnimatedBuilder(
                     animation: _glow,
@@ -706,33 +782,45 @@ class _LevelUpModalState extends State<_LevelUpModal>
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
-                              color: AppColors.coin
-                                  .withValues(alpha: 0.5 + 0.4 * _glow.value),
-                              blurRadius: 30 + 20 * _glow.value,
-                              spreadRadius: 2 + 6 * _glow.value),
+                            color: AppColors.coin.withValues(
+                              alpha: 0.5 + 0.4 * _glow.value,
+                            ),
+                            blurRadius: 30 + 20 * _glow.value,
+                            spreadRadius: 2 + 6 * _glow.value,
+                          ),
                         ],
                       ),
                       child: child,
                     ),
                     child: Center(
-                      child: Text('${widget.level}',
-                          style: const TextStyle(
-                              fontSize: 56,
-                              fontWeight: FontWeight.w900,
-                              color: AppColors.brandPurple,
-                              height: 1)),
+                      child: Text(
+                        '${widget.level}',
+                        style: const TextStyle(
+                          fontSize: 56,
+                          fontWeight: FontWeight.w900,
+                          color: AppColors.brandPurple,
+                          height: 1,
+                        ),
+                      ),
                     ),
                   ),
                   const SizedBox(height: 16),
-                  Text(widget.title,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w900,
-                          fontSize: 24)),
+                  Text(
+                    widget.title,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900,
+                      fontSize: 24,
+                    ),
+                  ),
                   const SizedBox(height: 6),
-                  Text('Yangi unvon ochildi',
-                      style: TextStyle(color: Colors.white.withValues(alpha: 0.85))),
+                  Text(
+                    'Yangi unvon ochildi',
+                    style: TextStyle(
+                      color: Colors.white.withValues(alpha: 0.85),
+                    ),
+                  ),
                   const SizedBox(height: 20),
                   SizedBox(
                     width: double.infinity,
@@ -742,7 +830,9 @@ class _LevelUpModalState extends State<_LevelUpModal>
                         foregroundColor: AppColors.brandPurple,
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         textStyle: const TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 16),
+                          fontWeight: FontWeight.w900,
+                          fontSize: 16,
+                        ),
                       ),
                       onPressed: widget.onClose,
                       child: const Text('Davom etamiz!'),
@@ -771,9 +861,10 @@ class _ChestModalState extends State<_ChestModal>
     with SingleTickerProviderStateMixin {
   ChestReward? _reward;
   bool _opening = false;
-  late final AnimationController _wobble =
-      AnimationController(vsync: this, duration: const Duration(milliseconds: 900))
-        ..repeat();
+  late final AnimationController _wobble = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 900),
+  )..repeat();
 
   @override
   void dispose() {
@@ -813,12 +904,15 @@ class _ChestModalState extends State<_ChestModal>
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(widget.big ? 'KATTA SANDIQ!' : 'SIRLI SANDIQ',
-                      style: TextStyle(
-                          color: AppColors.muted(context),
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: 2,
-                          fontSize: 13)),
+                  Text(
+                    widget.big ? 'KATTA SANDIQ!' : 'SIRLI SANDIQ',
+                    style: TextStyle(
+                      color: AppColors.muted(context),
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 2,
+                      fontSize: 13,
+                    ),
+                  ),
                   const SizedBox(height: 14),
                   GestureDetector(
                     onTap: _open,
@@ -828,36 +922,58 @@ class _ChestModalState extends State<_ChestModal>
                         final t = _wobble.value;
                         final rot = r == null && !_opening
                             ? sin(t * pi * 2) * 0.08
-                            : (_opening && r == null ? sin(t * pi * 12) * 0.12 : 0.0);
+                            : (_opening && r == null
+                                  ? sin(t * pi * 12) * 0.12
+                                  : 0.0);
                         return Transform.rotate(angle: rot, child: child);
                       },
                       child: AnimatedScale(
                         scale: r == null ? 1 : 1.15,
                         duration: const Duration(milliseconds: 400),
                         curve: Curves.elasticOut,
-                        child: Text(r == null ? (widget.big ? '🎁' : '📦') : '🎉',
-                            style: const TextStyle(fontSize: 92)),
+                        child: Text(
+                          r == null ? (widget.big ? '🎁' : '📦') : '🎉',
+                          style: const TextStyle(fontSize: 92),
+                        ),
                       ),
                     ),
                   ),
                   const SizedBox(height: 12),
                   if (r == null) ...[
-                    Text(_opening ? 'Ochilmoqda...' : 'Ochish uchun sandiqni bosing',
-                        style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16)),
+                    Text(
+                      _opening
+                          ? 'Ochilmoqda...'
+                          : 'Ochish uchun sandiqni bosing',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 16,
+                      ),
+                    ),
                     const SizedBox(height: 6),
-                    Text(widget.big
-                        ? 'Bugungi uchala topshiriq bajarildi!'
-                        : 'Ketma-ket to\'g\'ri javoblar uchun',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: AppColors.muted(context), fontSize: 13)),
+                    Text(
+                      widget.big
+                          ? 'Bugungi uchala topshiriq bajarildi!'
+                          : 'Ketma-ket to\'g\'ri javoblar uchun',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: AppColors.muted(context),
+                        fontSize: 13,
+                      ),
+                    ),
                   ] else ...[
                     Wrap(
                       spacing: 10,
                       alignment: WrapAlignment.center,
                       children: [
-                        if (r.coins > 0) _RewardChip('+${r.coins} 🪙', AppColors.coin),
-                        if (r.xp > 0) _RewardChip('+${r.xp} ⚡', AppColors.actionBlue),
-                        if (r.freeze) _RewardChip('❄️ Streak muzlatgich', const Color(0xFF06B6D4)),
+                        if (r.coins > 0)
+                          _RewardChip('+${r.coins} 🪙', AppColors.coin),
+                        if (r.xp > 0)
+                          _RewardChip('+${r.xp} ⚡', AppColors.actionBlue),
+                        if (r.freeze)
+                          _RewardChip(
+                            '🧊 Streak muzlatgich',
+                            const Color(0xFF06B6D4),
+                          ),
                       ],
                     ),
                     const SizedBox(height: 18),
@@ -865,9 +981,12 @@ class _ChestModalState extends State<_ChestModal>
                       width: double.infinity,
                       child: FilledButton(
                         style: FilledButton.styleFrom(
-                            padding: const EdgeInsets.symmetric(vertical: 14),
-                            textStyle: const TextStyle(
-                                fontWeight: FontWeight.w900, fontSize: 16)),
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          textStyle: const TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 16,
+                          ),
+                        ),
                         onPressed: widget.onClose,
                         child: const Text('Zo\'r!'),
                       ),
@@ -896,11 +1015,18 @@ class _RewardChip extends StatelessWidget {
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(AppRadius.pill),
-          boxShadow: [BoxShadow(color: color.withValues(alpha: 0.5), blurRadius: 16)],
+          boxShadow: [
+            BoxShadow(color: color.withValues(alpha: 0.5), blurRadius: 16),
+          ],
         ),
-        child: Text(text,
-            style: const TextStyle(
-                color: Colors.white, fontWeight: FontWeight.w900, fontSize: 18)),
+        child: Text(
+          text,
+          style: const TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w900,
+            fontSize: 18,
+          ),
+        ),
       ),
     );
   }
@@ -926,18 +1052,24 @@ class _AchievementModal extends StatelessWidget {
                 borderRadius: BorderRadius.circular(24),
                 border: Border.all(color: AppColors.coin, width: 2),
                 boxShadow: [
-                  BoxShadow(color: AppColors.coin.withValues(alpha: 0.45), blurRadius: 36),
+                  BoxShadow(
+                    color: AppColors.coin.withValues(alpha: 0.45),
+                    blurRadius: 36,
+                  ),
                 ],
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text('YUTUQ OChILDI',
-                      style: TextStyle(
-                          color: AppColors.coin,
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: 2,
-                          fontSize: 13)),
+                  const Text(
+                    'YUTUQ OChILDI',
+                    style: TextStyle(
+                      color: AppColors.coin,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 2,
+                      fontSize: 13,
+                    ),
+                  ),
                   const SizedBox(height: 12),
                   Container(
                     width: 108,
@@ -945,32 +1077,49 @@ class _AchievementModal extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       gradient: const LinearGradient(
-                          colors: [Color(0xFFFDE68A), Color(0xFFF59E0B)]),
+                        colors: [Color(0xFFFDE68A), Color(0xFFF59E0B)],
+                      ),
                       boxShadow: [
                         BoxShadow(
-                            color: AppColors.coin.withValues(alpha: 0.6), blurRadius: 24),
+                          color: AppColors.coin.withValues(alpha: 0.6),
+                          blurRadius: 24,
+                        ),
                       ],
                     ),
                     child: Center(
-                        child: Text(a.emoji, style: const TextStyle(fontSize: 54))),
+                      child: Text(
+                        a.emoji,
+                        style: const TextStyle(fontSize: 54),
+                      ),
+                    ),
                   ),
                   const SizedBox(height: 14),
-                  Text(a.title,
-                      style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 22)),
+                  Text(
+                    a.title,
+                    style: const TextStyle(
+                      fontWeight: FontWeight.w900,
+                      fontSize: 22,
+                    ),
+                  ),
                   const SizedBox(height: 4),
-                  Text(a.desc,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: AppColors.muted(context))),
+                  Text(
+                    a.desc,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: AppColors.muted(context)),
+                  ),
                   const SizedBox(height: 18),
                   SizedBox(
                     width: double.infinity,
                     child: FilledButton(
                       style: FilledButton.styleFrom(
-                          backgroundColor: AppColors.coin,
-                          foregroundColor: Colors.white,
-                          padding: const EdgeInsets.symmetric(vertical: 14),
-                          textStyle: const TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 16)),
+                        backgroundColor: AppColors.coin,
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        textStyle: const TextStyle(
+                          fontWeight: FontWeight.w900,
+                          fontSize: 16,
+                        ),
+                      ),
                       onPressed: onClose,
                       child: const Text('Olindi!'),
                     ),

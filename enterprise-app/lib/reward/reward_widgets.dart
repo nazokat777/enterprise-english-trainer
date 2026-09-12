@@ -240,7 +240,7 @@ class _StreakFlameState extends State<StreakFlame>
   @override
   Widget build(BuildContext context) {
     final d = widget.days;
-    final emoji = d >= 30 ? '💠' : (d >= 7 ? '🔥' : (d >= 1 ? '🔥' : '🕯️'));
+    final emoji = d >= 30 ? '💠' : (d >= 7 ? '🔥' : (d >= 1 ? '🔥' : '🌱'));
     final color = d >= 30
         ? const Color(0xFF06B6D4)
         : (d >= 7 ? const Color(0xFFDC2626) : const Color(0xFFF97316));

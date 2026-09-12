@@ -252,7 +252,10 @@ class RewardEngine extends ChangeNotifier {
     combo++;
     if (combo > bestCombo) {
       bestCombo = combo;
-      if (combo >= 5) _events.add(RewardEvent.record('combo', combo));
+      // Har qadamda emas — faqat 5 ga karrali rekordlarda (spam bo'lmasin).
+      if (combo >= 5 && combo % 5 == 0) {
+        _events.add(RewardEvent.record('combo', combo));
+      }
     }
 
     // Kutilmagan mukofot.
@@ -402,7 +405,7 @@ class RewardEngine extends ChangeNotifier {
   // ─────────────── Yutuqlar ───────────────
   static const List<Achievement> allAchievements = [
     Achievement('first_ex', 'Birinchi qadam', 'Birinchi mashqni tugatdingiz', '🥇'),
-    Achievement('c10', 'Isinish', '10 ta to\'g\'ri javob', '✅'),
+    Achievement('c10', 'Isinish', '10 ta to\'g\'ri javob', '👍'),
     Achievement('c100', 'Yuzlik', '100 ta to\'g\'ri javob', '💯'),
     Achievement('c500', 'Besh yuz', '500 ta to\'g\'ri javob', '🏅'),
     Achievement('c1000', 'Minglik', '1000 ta to\'g\'ri javob', '🏆'),
@@ -412,22 +415,22 @@ class RewardEngine extends ChangeNotifier {
     Achievement('combo50', 'To\'xtatib bo\'lmas', '50 lik kombo', '⚡'),
     Achievement('perfect5', 'Benuqson', '5 ta xatosiz mashq', '💎'),
     Achievement('perfect25', 'Kristall', '25 ta xatosiz mashq', '🔮'),
-    Achievement('ex25', 'Mehnatkash', '25 ta mashq', '🛠️'),
+    Achievement('ex25', 'Mehnatkash', '25 ta mashq', '🔧'),
     Achievement('ex100', 'Marafonchi', '100 ta mashq', '🏃'),
-    Achievement('ex500', 'Temir iroda', '500 ta mashq', '🦾'),
+    Achievement('ex500', 'Temir iroda', '500 ta mashq', '💪'),
     Achievement('words50', 'So\'z yig\'uvchi', '50 ta so\'z', '📚'),
     Achievement('words300', 'Lug\'at sohibi', '300 ta so\'z', '📖'),
     Achievement('words1000', 'Tirik lug\'at', '1000 ta so\'z', '🧠'),
     Achievement('lvl5', '5-daraja', '5-darajaga yetdingiz', '⭐'),
     Achievement('lvl10', '10-daraja', '10-darajaga yetdingiz', '🌟'),
-    Achievement('lvl20', '20-daraja', '20-darajaga yetdingiz', '✨'),
-    Achievement('lvl40', 'Chempion', 'Eng yuqori daraja', '🎖️'),
-    Achievement('streak3', '3 kun', '3 kunlik streak', '🕯️'),
+    Achievement('lvl20', '20-daraja', '20-darajaga yetdingiz', '🌟'),
+    Achievement('lvl40', 'Chempion', 'Eng yuqori daraja', '🏆'),
+    Achievement('streak3', '3 kun', '3 kunlik streak', '🌱'),
     Achievement('streak7', 'Bir hafta', '7 kunlik streak', '🔥'),
     Achievement('streak30', 'Bir oy', '30 kunlik streak', '🌙'),
     Achievement('chest10', 'Xazina izlovchi', '10 ta sandiq', '🎁'),
     Achievement('crit25', 'Omadli', '25 ta KRIT', '🍀'),
-    Achievement('day200', 'Kuchli kun', 'Bir kunda 200 XP', '☀️'),
+    Achievement('day200', 'Kuchli kun', 'Bir kunda 200 XP', '🌞'),
     Achievement('owl', 'Tungi boyqush', 'Kechasi 23:00 dan keyin mashq', '🦉'),
     Achievement('lark', 'Erta turgan', 'Ertalab 6:00 gacha mashq', '🐦'),
   ];
@@ -511,7 +514,7 @@ class Quest {
       };
 
   String get emoji => switch (kind) {
-        QuestKind.correct => '✅',
+        QuestKind.correct => '👍',
         QuestKind.combo => '🔥',
         QuestKind.exercises => '📘',
         QuestKind.words => '🧠',
