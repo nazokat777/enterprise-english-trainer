@@ -224,4 +224,23 @@ void main() {
     }
     expect(g, inInclusiveRange(300, 500));
   });
+
+  test('unit tugashi bir marta, streak sandiqlari bosqichma-bosqich', () async {
+    final e = RewardEngine(random: Random(8));
+    final events = <RewardEvent>[];
+    e.events.listen(events.add);
+    e.onUnitComplete(3, '3-unit');
+    e.onUnitComplete(3, '3-unit');
+    e.onStreak(7);
+    e.onStreak(7);
+    await Future<void>.delayed(Duration.zero);
+    expect(events.where((x) => x.kind == RewardKind.unitComplete).length, 1);
+    expect(e.coins, 50);
+    // 3 va 7 kun - ikkita sandiq, takror emas.
+    expect(events.where((x) => x.kind == RewardKind.streakMilestone).length, 2);
+    expect(e.pendingChests, 2);
+    await e.setPetName('  Zukko ');
+    expect(e.petName, 'Zukko');
+    expect(e.onboarded, isTrue);
+  });
 }

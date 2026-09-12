@@ -397,11 +397,15 @@ class Progress extends ChangeNotifier {
   final Set<int> reviewUnits = {};
 
   Future<void> markExerciseResult(String id,
-      {required bool clean, int unit = 0}) async {
+      {required bool clean, int unit = 0, int? unitTotal, String unitLabel = ''}) async {
     final key = '$currentLevel::$id';
     // Faqat BIRINCHI marta tugatilganda sanaymiz.
     if (unit > 0 && !completed.contains(key)) {
       unitDone[unit] = (unitDone[unit] ?? 0) + 1;
+      // Unit to'liq tugadimi — katta nishonlash (bir marta).
+      if (unitTotal != null && unitDone[unit]! >= unitTotal) {
+        rewards.onUnitComplete(unit, unitLabel);
+      }
     }
     completed.add(key);
     if (clean) {

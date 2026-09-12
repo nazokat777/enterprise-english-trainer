@@ -1233,6 +1233,16 @@ class _ExerciseTile extends StatelessWidget {
     // Tugatilgan, lekin XATO bilan — o'zlashtirilmagan. Yashil belgi
     // qo'yish o'quvchini adashtiradi.
     final repeat = done && progress.needsRepeat(id);
+    // Unitdagi jami mashq — "unit tugadi" nishonlashi uchun.
+    int? unitTotal;
+    var label = unitLabel;
+    for (final b in book.units) {
+      if (b.unit == exercise.unitNo) {
+        unitTotal = b.exercises;
+        if (label.isEmpty) label = b.displayLabel;
+        break;
+      }
+    }
     return Padding(
       padding: const EdgeInsets.only(bottom: 9),
       child: Material(
@@ -1246,8 +1256,9 @@ class _ExerciseTile extends StatelessWidget {
               builder: (_) => ExercisePlayer(
                 exercise: exercise,
                 sectionTitle: section.titleUz,
-                unitLabel: unitLabel,
+                unitLabel: label,
                 siblings: section.exercises,
+                unitTotal: unitTotal,
               ),
             ),
           ),

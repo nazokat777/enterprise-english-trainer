@@ -89,6 +89,20 @@ class RewardEngine extends ChangeNotifier {
   /// Oxirgi ko'rilgan liga (ko'tarilishni aniqlash uchun).
   int _leagueSeen = 0;
 
+  /// Hamrohning ISMI — o'quvchi o'zi qo'yadi (IKEA effekti: o'zi
+  /// yaratgan narsa qadrli). Bo'sh = hali tanishuv o'tmagan.
+  String petName = '';
+  bool get onboarded => petName.isNotEmpty;
+
+  /// Holat diskdan yuklanganmi — tanishuv faqat shundan keyin.
+  bool get loaded => _prefs != null;
+
+  /// Tugatilgan unitlar (nishonlash bir marta).
+  final Set<int> unitsCompleted = {};
+
+  /// Streak sandig'i berilgan kunlar (3/7/14/30/60/100).
+  final Set<int> streakChestsGiven = {};
+
   final _events = StreamController<RewardEvent>.broadcast();
   Stream<RewardEvent> get events => _events.stream;
 
@@ -188,6 +202,9 @@ class RewardEngine extends ChangeNotifier {
     _goalDay = p.getString('rw_goalDay') ?? '';
     _spinDay = p.getString('rw_spinDay') ?? '';
     _leagueSeen = p.getInt('rw_league') ?? 0;
+    petName = p.getString('rw_pet') ?? '';
+    unitsCompleted.addAll((p.getStringList('rw_units') ?? []).map(int.parse));
+    streakChestsGiven.addAll((p.getStringList('rw_streakChests') ?? []).map(int.parse));
     final dx = p.getString('rw_dayXp');
     if (dx != null) {
       (json.decode(dx) as Map).forEach((k, v) => dayXp[k as String] = (v as num).toInt());
@@ -229,6 +246,9 @@ class RewardEngine extends ChangeNotifier {
     await p.setString('rw_goalDay', _goalDay);
     await p.setString('rw_spinDay', _spinDay);
     await p.setInt('rw_league', _leagueSeen);
+    await p.setString('rw_pet', petName);
+    await p.setStringList('rw_units', unitsCompleted.map((e) => '$e').toList());
+    await p.setStringList('rw_streakChests', streakChestsGiven.map((e) => '$e').toList());
     await p.setString('rw_dayXp', json.encode(dayXp));
     await p.setBool('rw_questsRewarded', allQuestsRewarded);
     await p.setString('rw_quests', json.encode(quests.map((q) => q.toJson()).toList()));
@@ -249,6 +269,9 @@ class RewardEngine extends ChangeNotifier {
     _goalDay = '';
     _spinDay = '';
     _leagueSeen = 0;
+    petName = '';
+    unitsCompleted.clear();
+    streakChestsGiven.clear();
     dayXp.clear();
     quests = [];
     allQuestsRewarded = false;
@@ -415,10 +438,35 @@ class RewardEngine extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Streak (kun) o'zgarganda — yutuqlar uchun.
+  /// Streak (kun) o'zgarganda — yutuqlar + streak sandig'i.
+  static const List<int> streakChestDays = [3, 7, 14, 30, 60, 100];
   void onStreak(int days) {
     _streakDays = days;
+    for (final d in streakChestDays) {
+      if (days >= d && !streakChestsGiven.contains(d)) {
+        streakChestsGiven.add(d);
+        pendingChests++;
+        _events.add(RewardEvent.chest(big: d >= 7));
+        _events.add(RewardEvent.streakMilestone(d));
+      }
+    }
     _checkAchievements();
+  }
+
+  Future<void> setPetName(String name) async {
+    petName = name.trim();
+    await _save();
+    notifyListeners();
+  }
+
+  /// Unit to'liq tugadi — bir marta nishonlanadi (+50 tanga).
+  void onUnitComplete(int unit, String label) {
+    if (unitsCompleted.contains(unit)) return;
+    unitsCompleted.add(unit);
+    coins += 50;
+    _events.add(RewardEvent.unitComplete(unit, label));
+    _save();
+    notifyListeners();
   }
 
   int _streakDays = 0;
@@ -773,6 +821,8 @@ enum RewardKind {
   speed,
   comeback,
   nearMiss,
+  unitComplete,
+  streakMilestone,
 }
 
 class RewardEvent {
@@ -807,6 +857,10 @@ class RewardEvent {
   const RewardEvent.quest(Quest q) : this._(RewardKind.quest, quest: q);
   const RewardEvent.achievement(Achievement a)
       : this._(RewardKind.achievement, achievement: a);
+  const RewardEvent.unitComplete(int unit, String label)
+      : this._(RewardKind.unitComplete, level: unit, text: label);
+  const RewardEvent.streakMilestone(int days)
+      : this._(RewardKind.streakMilestone, amount: days);
   const RewardEvent.speed(int bonus) : this._(RewardKind.speed, amount: bonus);
   const RewardEvent.comeback(int bonus) : this._(RewardKind.comeback, amount: bonus);
   const RewardEvent.nearMiss() : this._(RewardKind.nearMiss);

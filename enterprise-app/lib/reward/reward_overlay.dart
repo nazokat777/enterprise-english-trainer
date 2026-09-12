@@ -126,8 +126,11 @@ class _RewardOverlayState extends State<RewardOverlay>
       case RewardKind.levelUp:
       case RewardKind.achievement:
       case RewardKind.league:
+      case RewardKind.unitComplete:
         _queue.add(e);
         _pump();
+      case RewardKind.streakMilestone:
+        _showBanner(_StreakBanner(days: e.amount));
       case RewardKind.quest:
         sfx.quest();
         progress.addCoins(e.quest!.coins);
@@ -147,6 +150,7 @@ class _RewardOverlayState extends State<RewardOverlay>
       case RewardKind.achievement:
         Sfx.instance.achievement();
       case RewardKind.league:
+      case RewardKind.unitComplete:
         Sfx.instance.levelUp();
       default:
         break;
@@ -318,6 +322,10 @@ class _RewardOverlayState extends State<RewardOverlay>
         big: e.big,
         onClose: _closeModal,
       ),
+      RewardKind.unitComplete => _UnitCompleteModal(
+          key: ValueKey('unit${e.level}'),
+          label: e.text,
+          onClose: _closeModal),
       RewardKind.league => _LeagueModal(
           key: ValueKey('lg${e.level}'),
           index: e.level,
@@ -1243,6 +1251,99 @@ class _LeagueModal extends StatelessWidget {
           ),
         ),
         const Positioned.fill(child: ConfettiBurst(count: 160)),
+      ],
+    );
+  }
+}
+
+class _StreakBanner extends StatelessWidget {
+  final int days;
+  const _StreakBanner({required this.days});
+  @override
+  Widget build(BuildContext context) {
+    return _BannerCard(
+      color: const Color(0xFFDC2626),
+      leading: const Text('🔥', style: TextStyle(fontSize: 22)),
+      title: '$days kunlik streak!',
+      subtitle: 'Streak sandig\'i ochildi — bosib oling',
+    );
+  }
+}
+
+/// UNIT TUGADI — eng katta pedagogik bosqich: to'liq ekran.
+class _UnitCompleteModal extends StatelessWidget {
+  final String label;
+  final VoidCallback onClose;
+  const _UnitCompleteModal(
+      {super.key, required this.label, required this.onClose});
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        _ModalScrim(
+          child: _Pop(
+            child: Container(
+              width: 320,
+              padding: const EdgeInsets.fromLTRB(24, 28, 24, 22),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [Color(0xFF16A34A), Color(0xFF0D9488)],
+                ),
+                borderRadius: BorderRadius.circular(24),
+                boxShadow: [
+                  BoxShadow(
+                      color: AppColors.success.withValues(alpha: 0.6),
+                      blurRadius: 40,
+                      spreadRadius: 4),
+                ],
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text('UNIT TUGATILDI!',
+                      style: TextStyle(
+                          color: Colors.white70,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 2,
+                          fontSize: 13)),
+                  const SizedBox(height: 12),
+                  const Text('🏆', style: TextStyle(fontSize: 76)),
+                  const SizedBox(height: 10),
+                  Text(label,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 26)),
+                  const SizedBox(height: 6),
+                  Text('Barcha mashqlar bajarildi  ·  +50 🪙',
+                      style: TextStyle(color: Colors.white.withValues(alpha: 0.9))),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    width: double.infinity,
+                    child: FilledButton(
+                      style: FilledButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        foregroundColor: AppColors.success,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        textStyle: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16),
+                      ),
+                      onPressed: () {
+                        progress.addCoins(50);
+                        onClose();
+                      },
+                      child: const Text('Keyingi unitga!'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        const Positioned.fill(child: ConfettiBurst(count: 200)),
       ],
     );
   }

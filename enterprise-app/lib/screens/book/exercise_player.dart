@@ -12,6 +12,7 @@ import '../../services/tts.dart';
 import '../../reward/reward_engine.dart';
 import '../../reward/reward_widgets.dart';
 import '../../widgets/correct_burst.dart';
+import '../../widgets/entrance.dart';
 import '../../widgets/explain_text.dart';
 import '../../widgets/pressable3d.dart';
 import '../pack/pack_flow.dart' show RoundPlay;
@@ -31,12 +32,16 @@ class ExercisePlayer extends StatefulWidget {
   /// zanjiri uchun (o'quvchi ro'yxatga qaytmasdan davom etsin).
   final List<BookExercise> siblings;
 
+  /// Unitdagi jami mashqlar — "unit tugadi" nishonlashi uchun.
+  final int? unitTotal;
+
   const ExercisePlayer({
     super.key,
     required this.exercise,
     required this.sectionTitle,
     this.unitLabel = '',
     this.siblings = const [],
+    this.unitTotal,
   });
 
   @override
@@ -102,7 +107,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   }
 
   /// Hozir so'ralayotgan bandning indeksi.
-  int get _index => _queue.isEmpty ? 0 : _queue[_pos.clamp(0, _queue.length - 1)];
+  int get _index =>
+      _queue.isEmpty ? 0 : _queue[_pos.clamp(0, _queue.length - 1)];
 
   /// Xato qilingan band navbatga QAYTADI.
   ///
@@ -194,9 +200,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   /// `_misses` bo'sh qoladi — shu sababli xato qilingan moslash mashqi
   /// ham "xatosiz" deb yozilardi va "Takrorlash kerak" ro'yxatiga
   /// tushmasdi.
-  bool get _cleanRun => ex.kind == ExKind.match
-      ? _correct >= ex.tasks.length
-      : _misses.isEmpty;
+  bool get _cleanRun =>
+      ex.kind == ExKind.match ? _correct >= ex.tasks.length : _misses.isEmpty;
 
   void _finish() {
     final id = ex.progressId;
@@ -204,7 +209,13 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     // Xatosiz o'tilganda mashq O'ZLAShTIRILGAN hisoblanadi. Aks holda
     // u "takrorlash kerak" bo'lib qoladi va ro'yxatda shunday
     // ko'rsatiladi — bir marta ochib chiqish yetarli emas.
-    progress.markExerciseResult(id, clean: _cleanRun, unit: ex.unitNo);
+    progress.markExerciseResult(
+      id,
+      clean: _cleanRun,
+      unit: ex.unitNo,
+      unitTotal: widget.unitTotal,
+      unitLabel: widget.unitLabel,
+    );
     if (ex.kind != ExKind.study) {
       rewards.onExerciseDone(clean: _cleanRun);
       if (ex.kind == ExKind.match) rewards.onWordLearned(_correct);
@@ -231,18 +242,22 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       context: context,
       builder: (c) => AlertDialog(
         title: Text('Yana $left ta band qoldi'),
-        content: Text(combo >= 3
-            ? '$combo lik komboingiz yo\'qoladi. Tugatib qo\'ymaysizmi?'
-            : (left <= 5
-                ? 'Oz qoldi — tugatib qo\'ymaysizmi?'
-                : 'Boshlangan ish chala qolmasin — davom etamizmi?')),
+        content: Text(
+          combo >= 3
+              ? '$combo lik komboingiz yo\'qoladi. Tugatib qo\'ymaysizmi?'
+              : (left <= 5
+                    ? 'Oz qoldi — tugatib qo\'ymaysizmi?'
+                    : 'Boshlangan ish chala qolmasin — davom etamizmi?'),
+        ),
         actions: [
           TextButton(
-              onPressed: () => Navigator.pop(c, false),
-              child: const Text('Chiqish')),
+            onPressed: () => Navigator.pop(c, false),
+            child: const Text('Chiqish'),
+          ),
           FilledButton(
-              onPressed: () => Navigator.pop(c, true),
-              child: const Text('Davom etaman')),
+            onPressed: () => Navigator.pop(c, true),
+            child: const Text('Davom etaman'),
+          ),
         ],
       ),
     );
@@ -269,17 +284,20 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('${widget.sectionTitle} · ${ex.title}',
-                style: const TextStyle(fontSize: 17)),
+            Text(
+              '${widget.sectionTitle} · ${ex.title}',
+              style: const TextStyle(fontSize: 17),
+            ),
             // Qaysi kitobning qaysi beti — o'quvchi adashmasin.
             Text(
               widget.unitLabel.isNotEmpty
                   ? ex.locationLabel(widget.unitLabel)
                   : ex.sourceLabel,
               style: const TextStyle(
-                  fontSize: 11.5,
-                  fontWeight: FontWeight.w600,
-                  color: AppColors.brandPurple),
+                fontSize: 11.5,
+                fontWeight: FontWeight.w600,
+                color: AppColors.brandPurple,
+              ),
             ),
           ],
         ),
@@ -292,11 +310,14 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                 color: AppColors.coin.withValues(alpha: 0.16),
                 borderRadius: BorderRadius.circular(AppRadius.pill),
               ),
-              child: Text('⚡ $_xp XP',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w800,
-                      color: AppColors.coin,
-                      fontSize: 13)),
+              child: Text(
+                '⚡ $_xp XP',
+                style: const TextStyle(
+                  fontWeight: FontWeight.w800,
+                  color: AppColors.coin,
+                  fontSize: 13,
+                ),
+              ),
             ),
           ),
         ],
@@ -343,8 +364,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
               value: value,
               minHeight: 6,
               backgroundColor: AppColors.actionBlue.withValues(alpha: 0.15),
-              valueColor:
-                  const AlwaysStoppedAnimation<Color>(AppColors.actionBlue),
+              valueColor: const AlwaysStoppedAnimation<Color>(
+                AppColors.actionBlue,
+              ),
             ),
           ),
           const SizedBox(height: 8),
@@ -357,8 +379,7 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                 // chiqardi. Endi uch qatorgacha ko'rsatiladi, bosilsa
                 // to'liq ochiladi (matn yo'qolmaydi).
                 child: GestureDetector(
-                  onTap: () =>
-                      setState(() => _instrOpen = !_instrOpen),
+                  onTap: () => setState(() => _instrOpen = !_instrOpen),
                   child: ConstrainedBox(
                     constraints: BoxConstraints(
                       maxHeight: _instrOpen
@@ -376,7 +397,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                             ? TextOverflow.clip
                             : TextOverflow.ellipsis,
                         style: const TextStyle(
-                            fontWeight: FontWeight.w800, fontSize: 14),
+                          fontWeight: FontWeight.w800,
+                          fontSize: 14,
+                        ),
                       ),
                     ),
                   ),
@@ -387,7 +410,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                   padding: const EdgeInsets.only(right: 8),
                   child: Container(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 8, vertical: 3),
+                      horizontal: 8,
+                      vertical: 3,
+                    ),
                     decoration: BoxDecoration(
                       color: AppColors.homework.withValues(alpha: 0.14),
                       borderRadius: BorderRadius.circular(AppRadius.pill),
@@ -395,30 +420,44 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                     child: const Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(Icons.replay_rounded,
-                            size: 13, color: AppColors.homework),
+                        Icon(
+                          Icons.replay_rounded,
+                          size: 13,
+                          color: AppColors.homework,
+                        ),
                         SizedBox(width: 4),
-                        Text('takror',
-                            style: TextStyle(
-                                fontSize: 11,
-                                fontWeight: FontWeight.w700,
-                                color: AppColors.homework)),
+                        Text(
+                          'takror',
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.homework,
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
               if (!simple)
-                Text('${_mastered.length} / ${ex.tasks.length}',
-                    style: TextStyle(
-                        fontSize: 12, color: AppColors.muted(context))),
+                Text(
+                  '${_mastered.length} / ${ex.tasks.length}',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: AppColors.muted(context),
+                  ),
+                ),
             ],
           ),
           if (ex.bookRef.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 4),
-              child: Text('📖 ${ex.bookRef}',
-                  style: const TextStyle(
-                      fontSize: 11.5, color: AppColors.brandPurple)),
+              child: Text(
+                '📖 ${ex.bookRef}',
+                style: const TextStyle(
+                  fontSize: 11.5,
+                  color: AppColors.brandPurple,
+                ),
+              ),
             ),
         ],
       ),
@@ -529,8 +568,11 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
               shape: BoxShape.circle,
               color: good ? AppColors.success : AppColors.homework,
             ),
-            child: Icon(good ? Icons.check_rounded : Icons.replay_rounded,
-                color: Colors.white, size: 58),
+            child: Icon(
+              good ? Icons.check_rounded : Icons.replay_rounded,
+              color: Colors.white,
+              size: 58,
+            ),
           ),
         ),
         const SizedBox(height: 18),
@@ -540,9 +582,10 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                 ? 'O\'qib chiqdingiz'
                 : (good ? 'O\'zlashtirildi' : '$_correct / $total'),
             style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.w800,
-                color: good ? AppColors.success : AppColors.homework),
+              fontSize: 28,
+              fontWeight: FontWeight.w800,
+              color: good ? AppColors.success : AppColors.homework,
+            ),
           ),
         ),
         if (ex.kind != ExKind.study) ...[
@@ -555,11 +598,11 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           const SizedBox(height: 8),
           Center(
             child: Text(
-                '$_correct / $total birinchi urinishda · '
-                '${total - _correct} ta juft takrorlandi',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 13, color: AppColors.muted(context))),
+              '$_correct / $total birinchi urinishda · '
+              '${total - _correct} ta juft takrorlandi',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 13, color: AppColors.muted(context)),
+            ),
           ),
         ],
         if (ex.kind != ExKind.study &&
@@ -568,11 +611,11 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           const SizedBox(height: 8),
           Center(
             child: Text(
-                '$clean / $total birinchi urinishda · '
-                '$retried ta band takrorlandi',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 13, color: AppColors.muted(context))),
+              '$clean / $total birinchi urinishda · '
+              '$retried ta band takrorlandi',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 13, color: AppColors.muted(context)),
+            ),
           ),
         ],
         const SizedBox(height: 6),
@@ -583,11 +626,14 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
               color: AppColors.coin.withValues(alpha: 0.16),
               borderRadius: BorderRadius.circular(AppRadius.pill),
             ),
-            child: Text('+$_xp XP',
-                style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w800,
-                    color: AppColors.coin)),
+            child: Text(
+              '+$_xp XP',
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w800,
+                color: AppColors.coin,
+              ),
+            ),
           ),
         ),
         const SizedBox(height: 28),
@@ -608,18 +654,22 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                     sectionTitle: widget.sectionTitle,
                     unitLabel: widget.unitLabel,
                     siblings: widget.siblings,
+                    unitTotal: widget.unitTotal,
                   ),
                 ),
               );
             },
             child: Center(
-              child: Text('Keyingi mashq: ${_nextExercise!.title}',
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                      fontSize: 16)),
+              child: Text(
+                'Keyingi mashq: ${_nextExercise!.title}',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 16,
+                ),
+              ),
             ),
           ),
           const SizedBox(height: 12),
@@ -629,11 +679,14 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           shadowColor: const Color(0xFF5B22B5),
           onPressed: () => Navigator.pop(context),
           child: const Center(
-            child: Text('Bo\'limga qaytish',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 16)),
+            child: Text(
+              'Bo\'limga qaytish',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w800,
+                fontSize: 16,
+              ),
+            ),
           ),
         ),
         if (ex.kind != ExKind.study) ...[
@@ -653,11 +706,14 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
               _done = false;
             }),
             child: const Center(
-              child: Text('Qayta ishlash',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                      fontSize: 16)),
+              child: Text(
+                'Qayta ishlash',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 16,
+                ),
+              ),
             ),
           ),
         ],
@@ -722,12 +778,17 @@ class AudioNoteCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Icon(Icons.headphones_rounded,
-              size: 18, color: AppColors.homework),
+          const Icon(
+            Icons.headphones_rounded,
+            size: 18,
+            color: AppColors.homework,
+          ),
           const SizedBox(width: 10),
           Expanded(
-            child: Text(text,
-                style: const TextStyle(fontSize: 12.5, height: 1.4)),
+            child: Text(
+              text,
+              style: const TextStyle(fontSize: 12.5, height: 1.4),
+            ),
           ),
         ],
       ),
@@ -751,17 +812,23 @@ class ExplanationCard extends StatelessWidget {
         color: AppColors.brandPurple.withValues(alpha: 0.07),
         borderRadius: BorderRadius.circular(AppRadius.md),
         border: Border(
-            left: BorderSide(color: AppColors.brandPurple, width: 3)),
+          left: BorderSide(color: AppColors.brandPurple, width: 3),
+        ),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(Icons.lightbulb_outline_rounded,
-              size: 18, color: AppColors.brandPurple),
+          const Icon(
+            Icons.lightbulb_outline_rounded,
+            size: 18,
+            color: AppColors.brandPurple,
+          ),
           const SizedBox(width: 10),
           Expanded(
-            child: ExplainText(text,
-                style: const TextStyle(fontSize: 13.5, height: 1.55)),
+            child: ExplainText(
+              text,
+              style: const TextStyle(fontSize: 13.5, height: 1.55),
+            ),
           ),
         ],
       ),
@@ -838,8 +905,9 @@ class _ChoiceStageState extends State<_ChoiceStage> {
             borderRadius: BorderRadius.circular(AppRadius.lg),
             boxShadow: [
               BoxShadow(
-                  color: Colors.black.withValues(alpha: dark ? 0.3 : 0.05),
-                  blurRadius: 14),
+                color: Colors.black.withValues(alpha: dark ? 0.3 : 0.05),
+                blurRadius: 14,
+              ),
             ],
           ),
           child: Column(
@@ -848,20 +916,26 @@ class _ChoiceStageState extends State<_ChoiceStage> {
                 TaskVisual(visual: t.visual),
                 const SizedBox(height: 12),
               ],
-              Text(t.prompt,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: t.prompt.length > 40 ? 17 : 24,
-                      height: 1.4,
-                      fontWeight: FontWeight.w800,
-                      color:
-                          dark ? AppColors.darkHeading : AppColors.lightHeading)),
+              Text(
+                t.prompt,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: t.prompt.length > 40 ? 17 : 24,
+                  height: 1.4,
+                  fontWeight: FontWeight.w800,
+                  color: dark ? AppColors.darkHeading : AppColors.lightHeading,
+                ),
+              ),
               if (t.promptUz.isNotEmpty) ...[
                 const SizedBox(height: 6),
-                Text(t.promptUz,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 13.5, color: AppColors.muted(context))),
+                Text(
+                  t.promptUz,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 13.5,
+                    color: AppColors.muted(context),
+                  ),
+                ),
               ],
               if (t.canSpeak) ...[
                 const SizedBox(height: 12),
@@ -871,7 +945,14 @@ class _ChoiceStageState extends State<_ChoiceStage> {
           ),
         ),
         const SizedBox(height: 18),
-        for (final o in _options) _tile(o),
+        // Variantlar birin-ketin "kirib keladi" (stagger) — ko'z
+        // harakatni kuzatadi, e'tibor tortiladi.
+        for (var i = 0; i < _options.length; i++)
+          EntranceFade(
+            delay: Duration(milliseconds: 60 * i),
+            offsetY: 12,
+            child: _tile(_options[i]),
+          ),
         if (_chosen != null && t.whyUz.isNotEmpty) ...[
           const SizedBox(height: 6),
           _WhyCard(text: t.whyUz, correct: t.isCorrect(_chosen!)),
@@ -892,24 +973,39 @@ class _ChoiceStageState extends State<_ChoiceStage> {
         text = AppColors.danger;
       }
     }
+    final picked = _chosen == o;
+    final isRight = _chosen != null && widget.task.isCorrect(o);
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
-      child: Material(
-        color: Theme.of(context).colorScheme.surface,
-        borderRadius: BorderRadius.circular(AppRadius.md),
-        child: InkWell(
+      child: AnimatedScale(
+        // Tanlangan to'g'ri variant "sakraydi", xato — sal kichrayadi.
+        scale: picked ? (isRight ? 1.04 : 0.97) : 1,
+        duration: const Duration(milliseconds: 260),
+        curve: Curves.easeOutBack,
+        child: Material(
+          color: isRight
+              ? AppColors.success.withValues(alpha: 0.10)
+              : Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.circular(AppRadius.md),
-          onTap: _chosen == null ? () => _tap(o) : null,
-          child: Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadius.md),
-              border: Border.all(color: border, width: 1.8),
-            ),
-            child: Text(o,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(AppRadius.md),
+            onTap: _chosen == null ? () => _tap(o) : null,
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppRadius.md),
+                border: Border.all(color: border, width: 1.8),
+              ),
+              child: Text(
+                o,
                 style: TextStyle(
-                    fontWeight: FontWeight.w700, fontSize: 15, color: text)),
+                  fontWeight: FontWeight.w700,
+                  fontSize: 15,
+                  color: text,
+                ),
+              ),
+            ),
           ),
         ),
       ),
@@ -987,6 +1083,7 @@ class _BuildStageState extends State<_BuildStage> {
     }
     return prev[n];
   }
+
   Timer? _advance;
 
   @override
@@ -1016,12 +1113,16 @@ class _BuildStageState extends State<_BuildStage> {
   }
 
   void _check() {
-    final built = _picked.map((k) => _pieces[k]).join(widget.task.buildSeparator);
+    final built = _picked
+        .map((k) => _pieces[k])
+        .join(widget.task.buildSeparator);
     final ok = widget.task.isCorrect(built);
     // YAQIN XATO: bitta belgi farq — "deyarli" deb aytiladi (near-miss).
-    final near = !ok &&
+    final near =
+        !ok &&
         widget.onNearMiss != null &&
-        _editDistance(built.toLowerCase(), widget.task.answer.toLowerCase()) <= 1;
+        _editDistance(built.toLowerCase(), widget.task.answer.toLowerCase()) <=
+            1;
     setState(() {
       _result = ok;
       _near = near;
@@ -1055,20 +1156,24 @@ class _BuildStageState extends State<_BuildStage> {
           const SizedBox(height: 12),
         ],
         Center(
-          child: Text(t.prompt,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontSize: t.prompt.length > 40 ? 16 : 22,
-                  height: 1.4,
-                  fontWeight: FontWeight.w800)),
+          child: Text(
+            t.prompt,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: t.prompt.length > 40 ? 16 : 22,
+              height: 1.4,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
         ),
         if (t.promptUz.isNotEmpty) ...[
           const SizedBox(height: 6),
           Center(
-            child: Text(t.promptUz,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 13, color: AppColors.muted(context))),
+            child: Text(
+              t.promptUz,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 13, color: AppColors.muted(context)),
+            ),
           ),
         ],
         if (t.canSpeak) ...[
@@ -1084,38 +1189,46 @@ class _BuildStageState extends State<_BuildStage> {
             color: Theme.of(context).colorScheme.surface,
             borderRadius: BorderRadius.circular(AppRadius.md),
             border: Border.all(
-                color: _result == null
-                    ? Colors.black26
-                    : _result!
-                        ? AppColors.success
-                        : AppColors.danger,
-                width: 2),
+              color: _result == null
+                  ? Colors.black26
+                  : _result!
+                  ? AppColors.success
+                  : AppColors.danger,
+              width: 2,
+            ),
           ),
-          child: Text(built.isEmpty ? '…' : built,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontSize: t.isPhrase ? 17 : 24,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: t.isPhrase ? 0 : 2)),
+          child: Text(
+            built.isEmpty ? '…' : built,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: t.isPhrase ? 17 : 24,
+              fontWeight: FontWeight.w800,
+              letterSpacing: t.isPhrase ? 0 : 2,
+            ),
+          ),
         ),
         SizedBox(
           height: 36,
           child: _result == false
               ? Center(
-                  child: Text('To\'g\'risi: ${t.answer}',
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                          color: AppColors.danger,
-                          fontWeight: FontWeight.w800)),
+                  child: Text(
+                    'To\'g\'risi: ${t.answer}',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      color: AppColors.danger,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
                 )
               : _picked.isNotEmpty
-                  ? Center(
-                      child: TextButton.icon(
-                          onPressed: _undo,
-                          icon: const Icon(Icons.backspace_outlined, size: 18),
-                          label: const Text('Orqaga')),
-                    )
-                  : const SizedBox(),
+              ? Center(
+                  child: TextButton.icon(
+                    onPressed: _undo,
+                    icon: const Icon(Icons.backspace_outlined, size: 18),
+                    label: const Text('Orqaga'),
+                  ),
+                )
+              : const SizedBox(),
         ),
         Wrap(
           spacing: 8,
@@ -1130,7 +1243,9 @@ class _BuildStageState extends State<_BuildStage> {
                   duration: const Duration(milliseconds: 150),
                   child: Container(
                     padding: EdgeInsets.symmetric(
-                        horizontal: t.isPhrase ? 14 : 0, vertical: 10),
+                      horizontal: t.isPhrase ? 14 : 0,
+                      vertical: 10,
+                    ),
                     width: t.isPhrase ? null : (long ? 40 : 48),
                     height: long ? 40 : 48,
                     alignment: Alignment.center,
@@ -1138,14 +1253,17 @@ class _BuildStageState extends State<_BuildStage> {
                       color: Theme.of(context).colorScheme.surface,
                       borderRadius: BorderRadius.circular(AppRadius.md),
                       border: Border.all(
-                          color:
-                              AppColors.brandPurple.withValues(alpha: 0.35),
-                          width: 1.5),
+                        color: AppColors.brandPurple.withValues(alpha: 0.35),
+                        width: 1.5,
+                      ),
                     ),
-                    child: Text(_pieces[i],
-                        style: TextStyle(
-                            fontSize: long ? 15 : 18,
-                            fontWeight: FontWeight.w800)),
+                    child: Text(
+                      _pieces[i],
+                      style: TextStyle(
+                        fontSize: long ? 15 : 18,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -1240,7 +1358,9 @@ class _MatchStageState extends State<_MatchStage> {
         _sel = null;
       });
       widget.onProgress?.call(
-          _round * _roundSize + _matched.length, widget.tasks.length);
+        _round * _roundSize + _matched.length,
+        widget.tasks.length,
+      );
       Tts.instance.speak(r.speakAnswer, id: r.left);
       final roundDone = _left.every((t) => _matched.contains(t.left));
       if (!roundDone) return;
@@ -1280,11 +1400,14 @@ class _MatchStageState extends State<_MatchStage> {
         AudioNoteCard(text: widget.audioNote),
         if (_roundCount > 1) ...[
           Center(
-            child: Text('${_round + 1} / $_roundCount',
-                style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black54)),
+            child: Text(
+              '${_round + 1} / $_roundCount',
+              style: const TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+                color: Colors.black54,
+              ),
+            ),
           ),
           const SizedBox(height: 8),
         ],
@@ -1361,12 +1484,15 @@ class _MatchStageState extends State<_MatchStage> {
               borderRadius: BorderRadius.circular(AppRadius.md),
               border: Border.all(color: border, width: 1.8),
             ),
-            child: Text(label,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 14,
-                    color: done ? AppColors.success : null)),
+            child: Text(
+              label,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 14,
+                color: done ? AppColors.success : null,
+              ),
+            ),
           ),
         ),
       ),
@@ -1395,11 +1521,14 @@ class _StudyStage extends StatelessWidget {
           shadowColor: const Color(0xFF0F7A37),
           onPressed: onDone,
           child: const Center(
-            child: Text('O\'qib chiqdim',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 16)),
+            child: Text(
+              'O\'qib chiqdim',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w800,
+                fontSize: 16,
+              ),
+            ),
           ),
         ),
       ],
@@ -1424,11 +1553,14 @@ class _StudyStage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(t.en,
-                          style: const TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w700,
-                              height: 1.4)),
+                      Text(
+                        t.en,
+                        style: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w700,
+                          height: 1.4,
+                        ),
+                      ),
                       // Grammatika sarlavhalarida ("Present Continuous")
                       // o'zbekcha maydon aynan inglizchasini takrorlaydi
                       // — atamaning o'zi shu. Ikkala qatorni chizsak,
@@ -1438,26 +1570,35 @@ class _StudyStage extends StatelessWidget {
                           t.uz.trim().toLowerCase() !=
                               t.en.trim().toLowerCase()) ...[
                         const SizedBox(height: 3),
-                        Text(t.uz,
-                            style: TextStyle(
-                                fontSize: 13,
-                                color: AppColors.muted(context),
-                                height: 1.4)),
+                        Text(
+                          t.uz,
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: AppColors.muted(context),
+                            height: 1.4,
+                          ),
+                        ),
                       ],
                       if (t.note.isNotEmpty) ...[
                         const SizedBox(height: 5),
-                        Text(t.note,
-                            style: const TextStyle(
-                                fontSize: 12,
-                                color: AppColors.brandPurple,
-                                height: 1.4)),
+                        Text(
+                          t.note,
+                          style: const TextStyle(
+                            fontSize: 12,
+                            color: AppColors.brandPurple,
+                            height: 1.4,
+                          ),
+                        ),
                       ],
                     ],
                   ),
                 ),
                 const SizedBox(width: 8),
-                const Icon(Icons.volume_up_rounded,
-                    size: 20, color: AppColors.actionBlue),
+                const Icon(
+                  Icons.volume_up_rounded,
+                  size: 20,
+                  color: AppColors.actionBlue,
+                ),
               ],
             ),
           ),

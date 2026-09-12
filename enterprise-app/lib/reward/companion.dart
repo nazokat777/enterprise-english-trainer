@@ -64,7 +64,7 @@ String mascotLine(Random rng) {
     case Mood.sleepy:
       pool.addAll([
         'Bugun hali boshlamadik... bitta mashq? 🥺',
-        'Men seni kutyapman. 5 daqiqa yetadi!',
+        '${r.petName.isNotEmpty ? r.petName : 'Men'} seni kutyapti. 5 daqiqa yetadi!',
         'Streak ${progress.currentStreak} kun — uni saqlaymizmi?',
         h < 12 ? 'Xayrli tong! Ertalabki miya eng tez o\'rganadi.' : 'Kech bo\'lmasdan bitta dars qilaylik.',
       ]);
@@ -200,11 +200,19 @@ class _MascotCardState extends State<MascotCard>
                     children: [
                       Row(
                         children: [
-                          Text(st.name,
+                          Text(rewards.petName.isNotEmpty ? rewards.petName : st.name,
                               style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w900,
                                   fontSize: 15)),
+                          if (rewards.petName.isNotEmpty) ...[
+                            const SizedBox(width: 6),
+                            Text('· ${st.name}',
+                                style: TextStyle(
+                                    color: Colors.white.withValues(alpha: 0.8),
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w700)),
+                          ],
                           const SizedBox(width: 8),
                           if (next != null)
                             Flexible(
@@ -747,4 +755,129 @@ class _WheelPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _WheelPainter old) => false;
+}
+
+// ═══════════════════ TANIShUV (onboarding) ═══════════════════
+
+/// Birinchi ochilishda: tuxum "chiqadi", o'quvchi unga ISM qo'yadi.
+/// O'zi nomlagan narsa — o'ziniki (IKEA effekti). Ism keyin hamma
+/// gaplarda ishlatiladi.
+class OnboardingSheet extends StatefulWidget {
+  const OnboardingSheet({super.key});
+
+  static Future<void> showIfNeeded(BuildContext context) async {
+    if (!rewards.loaded || rewards.onboarded) return;
+    await showModalBottomSheet<void>(
+      context: context,
+      isDismissible: false,
+      enableDrag: false,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (_) => const OnboardingSheet(),
+    );
+  }
+
+  @override
+  State<OnboardingSheet> createState() => _OnboardingSheetState();
+}
+
+class _OnboardingSheetState extends State<OnboardingSheet>
+    with SingleTickerProviderStateMixin {
+  final _ctrl = TextEditingController();
+  late final AnimationController _c =
+      AnimationController(vsync: this, duration: const Duration(milliseconds: 1200))
+        ..repeat(reverse: true, count: 12);
+  static const _suggest = ['Bilimjon', 'Zukko', 'Ozod', 'Nodir', 'Lola', 'Umid'];
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    _c.dispose();
+    super.dispose();
+  }
+
+  Future<void> _done() async {
+    final n = _ctrl.text.trim();
+    if (n.isEmpty) return;
+    await rewards.setPetName(n);
+    if (mounted) Navigator.pop(context);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final pad = MediaQuery.viewInsetsOf(context).bottom;
+    return Padding(
+      padding: EdgeInsets.only(bottom: pad),
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(24, 20, 24, 24),
+        decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.surface,
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            AnimatedBuilder(
+              animation: _c,
+              builder: (_, child) => Transform.rotate(
+                  angle: (Curves.easeInOut.transform(_c.value) - 0.5) * 0.35,
+                  child: child),
+              child: const Text('🥚', style: TextStyle(fontSize: 84)),
+            ),
+            const SizedBox(height: 10),
+            const Text('Sizga hamroh tuxum keldi!',
+                style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22)),
+            const SizedBox(height: 6),
+            Text(
+              'Siz o\'rgangan sari u o\'sadi: jo\'ja, boyqush, burgut... '
+              'ajdargacha. Unga ism qo\'ying.',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: AppColors.muted(context), fontSize: 14),
+            ),
+            const SizedBox(height: 16),
+            TextField(
+              controller: _ctrl,
+              autofocus: true,
+              textCapitalization: TextCapitalization.words,
+              maxLength: 14,
+              onSubmitted: (_) => _done(),
+              decoration: InputDecoration(
+                hintText: 'Hamroh ismi',
+                counterText: '',
+                filled: true,
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(AppRadius.md),
+                    borderSide: BorderSide.none),
+              ),
+              onChanged: (_) => setState(() {}),
+            ),
+            const SizedBox(height: 10),
+            Wrap(
+              spacing: 8,
+              runSpacing: 6,
+              children: [
+                for (final n in _suggest)
+                  ActionChip(
+                    label: Text(n),
+                    onPressed: () => setState(() => _ctrl.text = n),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton(
+                style: FilledButton.styleFrom(
+                    backgroundColor: AppColors.brandPurple,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    textStyle: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
+                onPressed: _ctrl.text.trim().isEmpty ? null : _done,
+                child: const Text('Boshlaymiz!'),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }

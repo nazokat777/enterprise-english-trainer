@@ -134,3 +134,13 @@ Dvigatel: `dayXp` (90 kun), `happyHour`, `spin()`, `leagueIndex`.
   raqobat).
 * **"Yana N ta qoldi — oz qoldi!"** — unit kartasida 5 va undan kam
   mashq qolganda (goal gradient).
+
+## 5-bosqich: egalik va katta bosqichlar
+
+* **Tanishuv** — birinchi ochilishda tuxum keladi, o'quvchi unga ISM
+  qo'yadi (IKEA effekti); ism hamroh kartasida va gaplarda ishlatiladi.
+* **Unit tugatildi** — barcha mashq bajarilganda to'liq ekran nishonlash
+  (+50 tanga, konfetti).
+* **Streak sandig'i** — 3/7/14/30/60/100 kunda sandiq (7+ katta).
+* **Variant animatsiyasi** — tanlov variantlari ketma-ket kirib keladi
+  (stagger), tanlangan to'g'ri variant sakraydi, xato sal kichrayadi.

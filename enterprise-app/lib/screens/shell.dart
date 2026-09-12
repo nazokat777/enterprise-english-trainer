@@ -26,6 +26,15 @@ class AppShell extends StatefulWidget {
 class _AppShellState extends State<AppShell> {
   int _sel = 0;
 
+  @override
+  void initState() {
+    super.initState();
+    // Birinchi ochilishda hamrohga ism qo'yish (bir marta).
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted && book.units.isNotEmpty) OnboardingSheet.showIfNeeded(context);
+    });
+  }
+
   static const List<(IconData, String)> _items = [
     (Icons.school_rounded, 'Darslar'),
     (Icons.style_rounded, 'Lug\'at'),
