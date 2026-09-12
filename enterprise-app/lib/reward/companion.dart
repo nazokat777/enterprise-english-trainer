@@ -108,6 +108,7 @@ class _MascotCardState extends State<MascotCard>
     ..repeat(reverse: true, count: 8);
   final _rng = Random();
   String _line = '';
+  Mood? _lastMood;
 
   @override
   void initState() {
@@ -134,6 +135,12 @@ class _MascotCardState extends State<MascotCard>
         final st = MascotStage.forLevel(rewards.level);
         final next = MascotStage.nextAfter(rewards.level);
         final mood = mascotMood();
+        // Kayfiyat o'zgarsa gap ham o'zgarsin (uyqudan uyg'ongach
+        // "kutyapman" deb turmasin).
+        if (_lastMood != null && _lastMood != mood) {
+          _line = mascotLine(_rng);
+        }
+        _lastMood = mood;
         final sleepy = mood == Mood.sleepy;
         return GestureDetector(
           onTap: _poke,
@@ -177,7 +184,7 @@ class _MascotCardState extends State<MascotCard>
                       Text(st.emoji, style: const TextStyle(fontSize: 52)),
                       if (sleepy)
                         const Positioned(
-                            right: -8, top: -6,
+                            left: -10, top: -10,
                             child: Text('💤', style: TextStyle(fontSize: 18))),
                       if (mood == Mood.fired)
                         const Positioned(
