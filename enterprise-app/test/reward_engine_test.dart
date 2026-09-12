@@ -146,4 +146,15 @@ void main() {
     expect(e.quests.length, 3);
     expect(e.quests.every((q) => q.progress == 0), isTrue);
   });
+
+  test('kunlik maqsad kuniga bir marta nishonlanadi', () async {
+    final e = RewardEngine(random: Random(4));
+    final events = <RewardEvent>[];
+    e.events.listen(events.add);
+    e.onDailyGoal();
+    e.onDailyGoal();
+    await Future<void>.delayed(Duration.zero);
+    expect(events.where((x) => x.kind == RewardKind.dailyGoal).length, 1);
+    expect(e.coins, 10);
+  });
 }

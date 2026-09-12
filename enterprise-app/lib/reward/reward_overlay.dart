@@ -110,6 +110,11 @@ class _RewardOverlayState extends State<RewardOverlay>
         if (e.level >= 10) _burst(count: 60);
       case RewardKind.record:
         _showBanner(_RecordBanner(text: 'Yangi rekord: ${e.amount} kombo!'));
+      case RewardKind.dailyGoal:
+        sfx.quest();
+        progress.addCoins(e.amount);
+        _burst(count: 140);
+        _showBanner(_GoalBanner(coins: e.amount));
       case RewardKind.chest:
       case RewardKind.levelUp:
       case RewardKind.achievement:
@@ -569,6 +574,20 @@ class _QuestBanner extends StatelessWidget {
       leading: Text(quest.emoji, style: const TextStyle(fontSize: 22)),
       title: 'Topshiriq bajarildi!',
       subtitle: '${quest.titleUz}  ·  +${quest.coins} 🪙  +${quest.xp} ⚡',
+    );
+  }
+}
+
+class _GoalBanner extends StatelessWidget {
+  final int coins;
+  const _GoalBanner({required this.coins});
+  @override
+  Widget build(BuildContext context) {
+    return _BannerCard(
+      color: AppColors.success,
+      leading: const Text('🎯', style: TextStyle(fontSize: 22)),
+      title: 'Kunlik maqsad bajarildi!',
+      subtitle: 'Streak saqlandi  ·  +$coins 🪙',
     );
   }
 }

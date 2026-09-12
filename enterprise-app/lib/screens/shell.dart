@@ -382,12 +382,18 @@ class _DailyRing extends StatelessWidget {
           SizedBox(
             width: 38,
             height: 38,
-            child: CircularProgressIndicator(
-              value: progress,
-              strokeWidth: 4,
-              backgroundColor: AppColors.neutralShadow.withValues(alpha: 0.4),
-              valueColor: AlwaysStoppedAnimation(
-                  met ? AppColors.success : AppColors.coin),
+            child: TweenAnimationBuilder<double>(
+              tween: Tween(begin: 0, end: progress),
+              duration: const Duration(milliseconds: 700),
+              curve: Curves.easeOutCubic,
+              builder: (_, v, _) => CircularProgressIndicator(
+                value: v,
+                strokeWidth: 4,
+                strokeCap: StrokeCap.round,
+                backgroundColor: AppColors.neutralShadow.withValues(alpha: 0.4),
+                valueColor: AlwaysStoppedAnimation(
+                    met ? AppColors.success : AppColors.coin),
+              ),
             ),
           ),
           met

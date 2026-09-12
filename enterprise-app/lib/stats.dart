@@ -156,6 +156,7 @@ class Progress extends ChangeNotifier {
 
   Future<void> addXp(int amount, {Skill? skill}) async {
     _rolloverDay();
+    final wasMet = dailyGoalMet;
     xp += amount;
     todayXp += amount;
     coins += amount ~/ 10; // har 10 XP → 1 coin
@@ -166,6 +167,7 @@ class Progress extends ChangeNotifier {
     // Dofamin dvigateli: daraja hisobi + kunlik topshiriqlar.
     rewards.onXp(amount);
     rewards.onStreak(currentStreak);
+    if (!wasMet && dailyGoalMet) rewards.onDailyGoal();
     await _save();
     notifyListeners();
   }

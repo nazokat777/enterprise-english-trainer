@@ -188,6 +188,7 @@ class _ContinueBanner extends StatelessWidget {
               exercise: e,
               sectionTitle: s.titleUz,
               unitLabel: u.displayLabel,
+              siblings: s.exercises,
             ),
           ),
         );
@@ -1220,6 +1221,7 @@ class _ExerciseTile extends StatelessWidget {
                 exercise: exercise,
                 sectionTitle: section.titleUz,
                 unitLabel: unitLabel,
+                siblings: section.exercises,
               ),
             ),
           ),

@@ -26,11 +26,16 @@ class ExercisePlayer extends StatefulWidget {
   /// faqat kitob va bet ko'rsatiladi.
   final String unitLabel;
 
+  /// Shu bo'limdagi barcha mashqlar — natija ekranida "Keyingi mashq"
+  /// zanjiri uchun (o'quvchi ro'yxatga qaytmasdan davom etsin).
+  final List<BookExercise> siblings;
+
   const ExercisePlayer({
     super.key,
     required this.exercise,
     required this.sectionTitle,
     this.unitLabel = '',
+    this.siblings = const [],
   });
 
   @override
@@ -411,6 +416,18 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     }
   }
 
+  /// Zanjirdagi keyingi mashq: avval hali tugatilmagani, bo'lmasa
+  /// ro'yxatdagi navbatdagisi.
+  BookExercise? get _nextExercise {
+    final sib = widget.siblings;
+    final i = sib.indexWhere((e) => e.progressId == ex.progressId);
+    if (i < 0) return null;
+    for (var k = i + 1; k < sib.length; k++) {
+      if (!progress.isDone(sib[k].progressId)) return sib[k];
+    }
+    return i + 1 < sib.length ? sib[i + 1] : null;
+  }
+
   Widget _result() {
     final total = ex.tasks.length;
     // Mashq faqat HAMMA band o'zlashtirilganda tugaydi, shuning uchun
@@ -506,6 +523,39 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           ),
         ),
         const SizedBox(height: 28),
+        // ZANJIR: "yana bitta" — ro'yxatga qaytish o'rniga to'g'ridan-
+        // to'g'ri keyingi mashq. Chiqish nuqtasi qancha kam bo'lsa,
+        // sessiya shuncha uzun.
+        if (_nextExercise != null) ...[
+          Pressable3D(
+            color: AppColors.success,
+            shadowColor: const Color(0xFF15803D),
+            onPressed: () {
+              final n = _nextExercise!;
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => ExercisePlayer(
+                    exercise: n,
+                    sectionTitle: widget.sectionTitle,
+                    unitLabel: widget.unitLabel,
+                    siblings: widget.siblings,
+                  ),
+                ),
+              );
+            },
+            child: Center(
+              child: Text('Keyingi mashq: ${_nextExercise!.title}',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                      fontSize: 16)),
+            ),
+          ),
+          const SizedBox(height: 12),
+        ],
         Pressable3D(
           color: AppColors.brandPurple,
           shadowColor: const Color(0xFF5B22B5),

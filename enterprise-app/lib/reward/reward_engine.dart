@@ -47,6 +47,9 @@ class RewardEngine extends ChangeNotifier {
   /// Sandiqgacha qolgan to'g'ri javoblar (5–9 tasodifiy).
   int _toChest = 0;
 
+  /// Kunlik maqsad bugun nishonlanganmi (bir marta).
+  String _goalDay = '';
+
   /// Bugungi topshiriqlar.
   String _questDay = '';
   List<Quest> quests = [];
@@ -158,6 +161,7 @@ class RewardEngine extends ChangeNotifier {
     todayExercises = p.getInt('rw_todayEx') ?? 0;
     todayWords = p.getInt('rw_todayWords') ?? 0;
     _questDay = p.getString('rw_questDay') ?? '';
+    _goalDay = p.getString('rw_goalDay') ?? '';
     allQuestsRewarded = p.getBool('rw_questsRewarded') ?? false;
     final q = p.getString('rw_quests');
     if (q != null) {
@@ -192,6 +196,7 @@ class RewardEngine extends ChangeNotifier {
     await p.setInt('rw_todayEx', todayExercises);
     await p.setInt('rw_todayWords', todayWords);
     await p.setString('rw_questDay', _questDay);
+    await p.setString('rw_goalDay', _goalDay);
     await p.setBool('rw_questsRewarded', allQuestsRewarded);
     await p.setString('rw_quests', json.encode(quests.map((q) => q.toJson()).toList()));
   }
@@ -208,6 +213,7 @@ class RewardEngine extends ChangeNotifier {
     todayXp = todayCorrect = todayExercises = todayWords = 0;
     _dayKey = '';
     _questDay = '';
+    _goalDay = '';
     quests = [];
     allQuestsRewarded = false;
     tick();
@@ -333,6 +339,17 @@ class RewardEngine extends ChangeNotifier {
     todayWords += n;
     _bumpQuest(QuestKind.words, n);
     _checkAchievements();
+    _save();
+    notifyListeners();
+  }
+
+  /// Kunlik maqsadga yetildi — kuniga BIR marta nishonlanadi.
+  void onDailyGoal() {
+    tick();
+    if (_goalDay == _today) return;
+    _goalDay = _today;
+    coins += 10;
+    _events.add(const RewardEvent.dailyGoal(10));
     _save();
     notifyListeners();
   }
@@ -570,6 +587,7 @@ enum RewardKind {
   quest,
   achievement,
   record,
+  dailyGoal,
 }
 
 class RewardEvent {
@@ -604,6 +622,7 @@ class RewardEvent {
   const RewardEvent.quest(Quest q) : this._(RewardKind.quest, quest: q);
   const RewardEvent.achievement(Achievement a)
       : this._(RewardKind.achievement, achievement: a);
+  const RewardEvent.dailyGoal(int coins) : this._(RewardKind.dailyGoal, amount: coins);
   const RewardEvent.record(String what, int value)
       : this._(RewardKind.record, text: what, amount: value);
 }
