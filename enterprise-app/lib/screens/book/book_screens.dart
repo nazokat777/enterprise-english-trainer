@@ -86,6 +86,11 @@ class BookUnitsScreen extends StatelessWidget {
           // NIMA qilish kerakligi aniq, mukofot (sandiq) ko'rinib turadi.
           const EntranceFade(child: MascotCard()),
           const SizedBox(height: 10),
+          // BIR BOSIShDA BOShLASh — boshlash ishqalanishi (friction) eng
+          // katta to'siq: qaysi unit, qaysi mashq deb o'ylamasdan 3
+          // daqiqalik trening.
+          const EntranceFade(child: _QuickStartCard()),
+          const SizedBox(height: 10),
           const EntranceFade(child: StreakDangerCard()),
           if (rewards.idleToday && progress.currentStreak > 0)
             const SizedBox(height: 10),
@@ -1402,6 +1407,86 @@ class _Empty extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 13, color: AppColors.muted(context))),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+/// "3 daqiqalik tez mashq" — oxirgi ochilgan (yoki birinchi) unitning
+/// zaif so'zlari bilan trening. O'ylash shart emas: bitta tugma.
+class _QuickStartCard extends StatelessWidget {
+  const _QuickStartCard();
+
+  Future<void> _start(BuildContext context) async {
+    final main = book.units.where((u) => !u.isInfo).toList();
+    if (main.isEmpty) return;
+    final target = progress.lastUnitNo > 0 ? progress.lastUnitNo : main.first.unit;
+    var u = await book.load(target);
+    u ??= await book.load(main.first.unit);
+    if (u == null) return;
+    final src = sourcesFromUnit(u);
+    if (src.isEmpty) return;
+    final earlier = <DrillSource>[];
+    for (final b in main) {
+      if (b.unit >= u.unit) continue;
+      final e = await book.load(b.unit);
+      if (e != null) earlier.addAll(sourcesFromUnit(e));
+    }
+    if (!context.mounted) return;
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => DrillScreen(
+          title: '${u!.displayLabel} — tez mashq',
+          lessonSources: src,
+          earlierSources: earlier,
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: () => _start(context),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+                colors: [Color(0xFF16A34A), Color(0xFF059669)]),
+            borderRadius: BorderRadius.circular(AppRadius.lg),
+            boxShadow: [
+              BoxShadow(
+                  color: AppColors.success.withValues(alpha: 0.35),
+                  blurRadius: 16,
+                  offset: const Offset(0, 6)),
+            ],
+          ),
+          child: const Row(
+            children: [
+              Icon(Icons.bolt_rounded, color: Colors.white, size: 28),
+              SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('3 daqiqalik tez mashq',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w900,
+                            fontSize: 16)),
+                    Text('Bir bosishda boshlang — zaif so\'zlaringiz bilan',
+                        style: TextStyle(color: Colors.white70, fontSize: 12)),
+                  ],
+                ),
+              ),
+              Icon(Icons.play_arrow_rounded, color: Colors.white, size: 30),
+            ],
+          ),
         ),
       ),
     );

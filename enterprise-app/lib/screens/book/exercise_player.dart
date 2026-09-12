@@ -215,8 +215,52 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     }
   }
 
+  /// Mashq o'rtasida chiqib ketish — Zeigarnik: "yana N ta qoldi".
+  /// Faqat boshlangan-u tugamagan mashqda so'raladi.
+  bool get _midway =>
+      !_done &&
+      ex.kind != ExKind.study &&
+      (_mastered.isNotEmpty || _misses.isNotEmpty || _matchDone > 0);
+
+  Future<bool> _confirmLeave() async {
+    final left = ex.kind == ExKind.match
+        ? ex.tasks.length - _matchDone
+        : ex.tasks.length - _mastered.length;
+    final combo = rewards.combo;
+    final stay = await showDialog<bool>(
+      context: context,
+      builder: (c) => AlertDialog(
+        title: Text('Yana $left ta band qoldi'),
+        content: Text(combo >= 3
+            ? '$combo lik komboingiz yo\'qoladi. Tugatib qo\'ymaysizmi?'
+            : 'Oz qoldi — tugatib qo\'ymaysizmi?'),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(c, false),
+              child: const Text('Chiqish')),
+          FilledButton(
+              onPressed: () => Navigator.pop(c, true),
+              child: const Text('Davom etaman')),
+        ],
+      ),
+    );
+    return stay != true;
+  }
+
   @override
   Widget build(BuildContext context) {
+    return PopScope(
+      canPop: !_midway,
+      onPopInvokedWithResult: (didPop, _) async {
+        if (didPop) return;
+        final nav = Navigator.of(context);
+        if (await _confirmLeave()) nav.pop();
+      },
+      child: _scaffold(context),
+    );
+  }
+
+  Widget _scaffold(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Column(
