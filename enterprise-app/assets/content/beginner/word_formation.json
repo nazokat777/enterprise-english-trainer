@@ -1,630 +1,3915 @@
 {
-  "families": [
-    {
-      "id": "wf-0001",
-      "base": "bold",
-      "uz": "qalin (harf)",
-      "forms": [
-        "bolder",
-        "boldness",
-        "boldly"
-      ]
-    },
-    {
-      "id": "wf-0002",
-      "base": "born",
-      "uz": "tug'ilgan",
-      "forms": [
-        "unborn",
-        "reborn"
-      ]
-    },
-    {
-      "id": "wf-0003",
-      "base": "busy",
-      "uz": "band",
-      "forms": [
-        "busily",
-        "business",
-        "busier"
-      ]
-    },
-    {
-      "id": "wf-0004",
-      "base": "capital",
-      "uz": "poytaxt",
-      "forms": [
-        "capitalist",
-        "capitalism"
-      ]
-    },
-    {
-      "id": "wf-0005",
-      "base": "catch",
-      "uz": "tutmoq, ushlamoq",
-      "forms": [
-        "catcher",
-        "catchment"
-      ]
-    },
-    {
-      "id": "wf-0006",
-      "base": "centre",
-      "uz": "markaz",
-      "forms": [
-        "central",
-        "centrist"
-      ]
-    },
-    {
-      "id": "wf-0007",
-      "base": "cheap",
-      "uz": "arzon",
-      "forms": [
-        "cheaper",
-        "cheaply"
-      ]
-    },
-    {
-      "id": "wf-0008",
-      "base": "clean",
-      "uz": "toza; tozalamoq",
-      "forms": [
-        "cleaner",
-        "unclean",
-        "cleanly"
-      ]
-    },
-    {
-      "id": "wf-0009",
-      "base": "coast",
-      "uz": "qirg'oq",
-      "forms": [
-        "coaster",
-        "coastal"
-      ]
-    },
-    {
-      "id": "wf-0010",
-      "base": "cold",
-      "uz": "sovuq",
-      "forms": [
-        "coldness",
-        "colder",
-        "coldly"
-      ]
-    },
-    {
-      "id": "wf-0011",
-      "base": "colour",
-      "uz": "rang",
-      "forms": [
-        "colourful",
-        "colourless"
-      ]
-    },
-    {
-      "id": "wf-0012",
-      "base": "continuous",
-      "uz": "uzluksiz",
-      "forms": [
-        "discontinuous",
-        "continuously"
-      ]
-    },
-    {
-      "id": "wf-0013",
-      "base": "dark",
-      "uz": "qorong'i",
-      "forms": [
-        "darkly",
-        "darker",
-        "darkness"
-      ]
-    },
-    {
-      "id": "wf-0014",
-      "base": "die",
-      "uz": "o'lmoq",
-      "forms": [
-        "dior",
-        "indie",
-        "dial"
-      ]
-    },
-    {
-      "id": "wf-0015",
-      "base": "dress",
-      "uz": "kiyinmoq",
-      "forms": [
-        "dresser",
-        "redress",
-        "undress"
-      ]
-    },
-    {
-      "id": "wf-0016",
-      "base": "drink",
-      "uz": "ichmoq; ichimlik",
-      "forms": [
-        "drinkable",
-        "drinker"
-      ]
-    },
-    {
-      "id": "wf-0017",
-      "base": "drive",
-      "uz": "haydamoq",
-      "forms": [
-        "overdrive",
-        "driver"
-      ]
-    },
-    {
-      "id": "wf-0018",
-      "base": "enjoy",
-      "uz": "zavqlanmoq",
-      "forms": [
-        "enjoyable",
-        "enjoyment"
-      ]
-    },
-    {
-      "id": "wf-0019",
-      "base": "express",
-      "uz": "ifodalash",
-      "forms": [
-        "expressive",
-        "expressly"
-      ]
-    },
-    {
-      "id": "wf-0020",
-      "base": "fair",
-      "uz": "oq-sariq (soch)",
-      "forms": [
-        "fairly",
-        "fairer",
-        "fairness",
-        "unfair"
-      ]
-    },
-    {
-      "id": "wf-0021",
-      "base": "famous",
-      "uz": "mashhur",
-      "forms": [
-        "infamous",
-        "famously"
-      ]
-    },
-    {
-      "id": "wf-0022",
-      "base": "father",
-      "uz": "ota",
-      "forms": [
-        "fatherly",
-        "fatherless"
-      ]
-    },
-    {
-      "id": "wf-0023",
-      "base": "front",
-      "uz": "old tomon",
-      "forms": [
-        "infront",
-        "frontal"
-      ]
-    },
-    {
-      "id": "wf-0024",
-      "base": "fruit",
-      "uz": "meva",
-      "forms": [
-        "fruitful",
-        "fruitless"
-      ]
-    },
-    {
-      "id": "wf-0025",
-      "base": "heard",
-      "uz": "eshitildi",
-      "forms": [
-        "overheard",
-        "unheard"
-      ]
-    },
-    {
-      "id": "wf-0026",
-      "base": "heavy",
-      "uz": "og'ir",
-      "forms": [
-        "heaviness",
-        "heavily",
-        "heavier"
-      ]
-    },
-    {
-      "id": "wf-0027",
-      "base": "hot",
-      "uz": "issiq",
-      "forms": [
-        "hotness",
-        "hotly"
-      ]
-    },
-    {
-      "id": "wf-0028",
-      "base": "irregular",
-      "uz": "noto'g'ri (qoidaga bo'ysunmaydigan)",
-      "forms": [
-        "irregularity",
-        "irregularly"
-      ]
-    },
-    {
-      "id": "wf-0029",
-      "base": "join",
-      "uz": "qo'shilmoq",
-      "forms": [
-        "joiner",
-        "rejoin"
-      ]
-    },
-    {
-      "id": "wf-0030",
-      "base": "main",
-      "uz": "asosiy",
-      "forms": [
-        "mainly",
-        "remain"
-      ]
-    },
-    {
-      "id": "wf-0031",
-      "base": "mark",
-      "uz": "baho",
-      "forms": [
-        "remark",
-        "marker"
-      ]
-    },
-    {
-      "id": "wf-0032",
-      "base": "mine",
-      "uz": "meniki",
-      "forms": [
-        "miner",
-        "undermine",
-        "minor"
-      ]
-    },
-    {
-      "id": "wf-0033",
-      "base": "miss",
-      "uz": "sog'inmoq",
-      "forms": [
-        "remiss",
-        "dismiss"
-      ]
-    },
-    {
-      "id": "wf-0034",
-      "base": "modern",
-      "uz": "zamonaviy",
-      "forms": [
-        "modernity",
-        "modernist",
-        "modernism"
-      ]
-    },
-    {
-      "id": "wf-0035",
-      "base": "near",
-      "uz": "yaqin",
-      "forms": [
-        "nearly",
-        "nearer"
-      ]
-    },
-    {
-      "id": "wf-0036",
-      "base": "negative",
-      "uz": "inkor",
-      "forms": [
-        "negativity",
-        "negatively"
-      ]
-    },
-    {
-      "id": "wf-0037",
-      "base": "pen",
-      "uz": "ruchka",
-      "forms": [
-        "pension",
-        "penal"
-      ]
-    },
-    {
-      "id": "wf-0038",
-      "base": "perfect",
-      "uz": "mukammal",
-      "forms": [
-        "perfectly",
-        "imperfect"
-      ]
-    },
-    {
-      "id": "wf-0039",
-      "base": "places",
-      "uz": "joylar",
-      "forms": [
-        "replaces",
-        "displaces"
-      ]
-    },
-    {
-      "id": "wf-0040",
-      "base": "plays",
-      "uz": "o'ynaydi",
-      "forms": [
-        "replays",
-        "displays"
-      ]
-    },
-    {
-      "id": "wf-0041",
-      "base": "plural",
-      "uz": "ko'plik",
-      "forms": [
-        "plurality",
-        "pluralism"
-      ]
-    },
-    {
-      "id": "wf-0042",
-      "base": "polite",
-      "uz": "muloyim",
-      "forms": [
-        "politely",
-        "impolite",
-        "politeness"
-      ]
-    },
-    {
-      "id": "wf-0043",
-      "base": "popular",
-      "uz": "mashhur",
-      "forms": [
-        "unpopular",
-        "popularity",
-        "popularly"
-      ]
-    },
-    {
-      "id": "wf-0044",
-      "base": "present",
-      "uz": "hozirgi zamon",
-      "forms": [
-        "represent",
-        "presentable",
-        "presently",
-        "presenter"
-      ]
-    },
-    {
-      "id": "wf-0045",
-      "base": "project",
-      "uz": "loyiha",
-      "forms": [
-        "projector",
-        "projective"
-      ]
-    },
-    {
-      "id": "wf-0046",
-      "base": "quiet",
-      "uz": "tinch",
-      "forms": [
-        "quieter",
-        "quietly"
-      ]
-    },
-    {
-      "id": "wf-0047",
-      "base": "rent",
-      "uz": "ijara haqi",
-      "forms": [
-        "rental",
-        "renter"
-      ]
-    },
-    {
-      "id": "wf-0048",
-      "base": "repeat",
-      "uz": "takrorlang",
-      "forms": [
-        "repeater",
-        "repeatable"
-      ]
-    },
-    {
-      "id": "wf-0049",
-      "base": "revision",
-      "uz": "takrorlash",
-      "forms": [
-        "revisionist",
-        "revisionism"
-      ]
-    },
-    {
-      "id": "wf-0050",
-      "base": "ride",
-      "uz": "minmoq",
-      "forms": [
-        "rider",
-        "override"
-      ]
-    },
-    {
-      "id": "wf-0051",
-      "base": "safe",
-      "uz": "xavfsiz",
-      "forms": [
-        "safer",
-        "safely",
-        "unsafe"
-      ]
-    },
-    {
-      "id": "wf-0052",
-      "base": "similar",
-      "uz": "o'xshash",
-      "forms": [
-        "dissimilar",
-        "similarly",
-        "similarity"
-      ]
-    },
-    {
-      "id": "wf-0053",
-      "base": "singular",
-      "uz": "birlik",
-      "forms": [
-        "singularly",
-        "singularity"
-      ]
-    },
-    {
-      "id": "wf-0054",
-      "base": "sleep",
-      "uz": "uyqu",
-      "forms": [
-        "sleeper",
-        "sleepless"
-      ]
-    },
-    {
-      "id": "wf-0055",
-      "base": "strange",
-      "uz": "g'alati",
-      "forms": [
-        "strangeness",
-        "stranger",
-        "strangely"
-      ]
-    },
-    {
-      "id": "wf-0056",
-      "base": "study",
-      "uz": "o'rganmoq",
-      "forms": [
-        "understudy",
-        "studious"
-      ]
-    },
-    {
-      "id": "wf-0057",
-      "base": "sweet",
-      "uz": "shirin",
-      "forms": [
-        "sweetness",
-        "sweeter",
-        "sweetly"
-      ]
-    },
-    {
-      "id": "wf-0058",
-      "base": "ten",
-      "uz": "o'n",
-      "forms": [
-        "tension",
-        "tenor"
-      ]
-    },
-    {
-      "id": "wf-0059",
-      "base": "tense",
-      "uz": "zamon",
-      "forms": [
-        "tensor",
-        "intense"
-      ]
-    },
-    {
-      "id": "wf-0060",
-      "base": "test",
-      "uz": "nazorat ishi",
-      "forms": [
-        "tester",
-        "retest"
-      ]
-    },
-    {
-      "id": "wf-0061",
-      "base": "traditional",
-      "uz": "an'anaviy",
-      "forms": [
-        "traditionalist",
-        "traditionally",
-        "nontraditional"
-      ]
-    },
-    {
-      "id": "wf-0062",
-      "base": "train",
-      "uz": "poyezd",
-      "forms": [
-        "trainor",
-        "retrain",
-        "trainer"
-      ]
-    },
-    {
-      "id": "wf-0063",
-      "base": "visit",
-      "uz": "borib ko'rmoq, tashrif buyurmoq",
-      "forms": [
-        "revisit",
-        "visitor"
-      ]
-    },
-    {
-      "id": "wf-0064",
-      "base": "walk",
-      "uz": "yurmoq",
-      "forms": [
-        "walker",
-        "walkable"
-      ]
-    },
-    {
-      "id": "wf-0065",
-      "base": "warm",
-      "uz": "iliq, issiq",
-      "forms": [
-        "warmer",
-        "warmly"
-      ]
-    },
-    {
-      "id": "wf-0066",
-      "base": "wash",
-      "uz": "yuvmoq",
-      "forms": [
-        "washer",
-        "washable"
-      ]
-    },
-    {
-      "id": "wf-0067",
-      "base": "wear",
-      "uz": "kiyib yurmoq",
-      "forms": [
-        "wearable",
-        "wearer",
-        "underwear"
-      ]
-    }
-  ]
+ "families": [
+  {
+   "id": "wf-0001",
+   "base": "law",
+   "uz": "qonun",
+   "forms": [
+    "lawyer"
+   ]
+  },
+  {
+   "id": "wf-0002",
+   "base": "farm",
+   "uz": "ferma",
+   "forms": [
+    "farmer"
+   ]
+  },
+  {
+   "id": "wf-0003",
+   "base": "dance",
+   "uz": "raqs",
+   "forms": [
+    "dancer",
+    "dancing"
+   ]
+  },
+  {
+   "id": "wf-0004",
+   "base": "teach",
+   "uz": "o'rgatmoq",
+   "forms": [
+    "teacher"
+   ]
+  },
+  {
+   "id": "wf-0005",
+   "base": "play",
+   "uz": "o'ynamoq",
+   "forms": [
+    "player",
+    "playing",
+    "plays",
+    "played",
+    "playED"
+   ]
+  },
+  {
+   "id": "wf-0006",
+   "base": "doct-",
+   "uz": "davolamoq (lot.)",
+   "forms": [
+    "doctor"
+   ]
+  },
+  {
+   "id": "wf-0007",
+   "base": "post",
+   "uz": "pochta",
+   "forms": [
+    "postman"
+   ]
+  },
+  {
+   "id": "wf-0008",
+   "base": "police",
+   "uz": "politsiya",
+   "forms": [
+    "policeman"
+   ]
+  },
+  {
+   "id": "wf-0009",
+   "base": "art",
+   "uz": "san'at",
+   "forms": [
+    "artist"
+   ]
+  },
+  {
+   "id": "wf-0010",
+   "base": "guitar",
+   "uz": "gitara",
+   "forms": [
+    "guitarist",
+    "guitars"
+   ]
+  },
+  {
+   "id": "wf-0011",
+   "base": "piano",
+   "uz": "pianino",
+   "forms": [
+    "pianist"
+   ]
+  },
+  {
+   "id": "wf-0012",
+   "base": "drum",
+   "uz": "baraban",
+   "forms": [
+    "drummer"
+   ]
+  },
+  {
+   "id": "wf-0013",
+   "base": "sing",
+   "uz": "kuylamoq",
+   "forms": [
+    "singer"
+   ]
+  },
+  {
+   "id": "wf-0014",
+   "base": "violin",
+   "uz": "skripka",
+   "forms": [
+    "violinist"
+   ]
+  },
+  {
+   "id": "wf-0015",
+   "base": "actor",
+   "uz": "aktyor",
+   "forms": [
+    "actress"
+   ]
+  },
+  {
+   "id": "wf-0016",
+   "base": "waiter",
+   "uz": "ofitsiant",
+   "forms": [
+    "waitress"
+   ]
+  },
+  {
+   "id": "wf-0017",
+   "base": "skate",
+   "uz": "uchmoq",
+   "forms": [
+    "skater"
+   ]
+  },
+  {
+   "id": "wf-0018",
+   "base": "Portugal",
+   "uz": "Portugaliya",
+   "forms": [
+    "Portuguese"
+   ]
+  },
+  {
+   "id": "wf-0019",
+   "base": "Germany",
+   "uz": "Germaniya",
+   "forms": [
+    "German"
+   ]
+  },
+  {
+   "id": "wf-0020",
+   "base": "music",
+   "uz": "musiqa",
+   "forms": [
+    "musician",
+    "musical"
+   ]
+  },
+  {
+   "id": "wf-0021",
+   "base": "magic",
+   "uz": "sehr",
+   "forms": [
+    "magician"
+   ]
+  },
+  {
+   "id": "wf-0022",
+   "base": "Scotland",
+   "uz": "Shotlandiya",
+   "forms": [
+    "Scottish"
+   ]
+  },
+  {
+   "id": "wf-0023",
+   "base": "Spain",
+   "uz": "Ispaniya",
+   "forms": [
+    "Spanish"
+   ]
+  },
+  {
+   "id": "wf-0024",
+   "base": "Turkey",
+   "uz": "Turkiya",
+   "forms": [
+    "Turkish"
+   ]
+  },
+  {
+   "id": "wf-0025",
+   "base": "Brazil",
+   "uz": "Braziliya",
+   "forms": [
+    "Brazilian",
+    "Brazilians"
+   ]
+  },
+  {
+   "id": "wf-0026",
+   "base": "India",
+   "uz": "Hindiston",
+   "forms": [
+    "Indian"
+   ]
+  },
+  {
+   "id": "wf-0027",
+   "base": "Canada",
+   "uz": "Kanada",
+   "forms": [
+    "Canadian"
+   ]
+  },
+  {
+   "id": "wf-0028",
+   "base": "Japan",
+   "uz": "Yaponiya",
+   "forms": [
+    "Japanese"
+   ]
+  },
+  {
+   "id": "wf-0029",
+   "base": "Greece",
+   "uz": "Gretsiya",
+   "forms": [
+    "Greek",
+    "GREEK"
+   ]
+  },
+  {
+   "id": "wf-0030",
+   "base": "four",
+   "uz": "to'rt",
+   "forms": [
+    "fourth",
+    "fourteen"
+   ]
+  },
+  {
+   "id": "wf-0031",
+   "base": "six",
+   "uz": "olti",
+   "forms": [
+    "sixth"
+   ]
+  },
+  {
+   "id": "wf-0032",
+   "base": "nine",
+   "uz": "to'qqiz",
+   "forms": [
+    "ninth"
+   ]
+  },
+  {
+   "id": "wf-0033",
+   "base": "twelve",
+   "uz": "o'n ikki",
+   "forms": [
+    "twelfth"
+   ]
+  },
+  {
+   "id": "wf-0034",
+   "base": "eight",
+   "uz": "sakkiz",
+   "forms": [
+    "eighteen",
+    "eighty"
+   ]
+  },
+  {
+   "id": "wf-0035",
+   "base": "Argentina",
+   "uz": "Argentina",
+   "forms": [
+    "Argentinian"
+   ]
+  },
+  {
+   "id": "wf-0036",
+   "base": "Mexico",
+   "uz": "Meksika",
+   "forms": [
+    "Mexican"
+   ]
+  },
+  {
+   "id": "wf-0037",
+   "base": "America",
+   "uz": "Amerika",
+   "forms": [
+    "American"
+   ]
+  },
+  {
+   "id": "wf-0038",
+   "base": "Finland",
+   "uz": "Finlandiya",
+   "forms": [
+    "Finnish",
+    "Finns"
+   ]
+  },
+  {
+   "id": "wf-0039",
+   "base": "Hungary",
+   "uz": "Vengriya",
+   "forms": [
+    "Hungarian"
+   ]
+  },
+  {
+   "id": "wf-0040",
+   "base": "Italy",
+   "uz": "Italiya",
+   "forms": [
+    "Italian"
+   ]
+  },
+  {
+   "id": "wf-0041",
+   "base": "Britain",
+   "uz": "Britaniya",
+   "forms": [
+    "British"
+   ]
+  },
+  {
+   "id": "wf-0042",
+   "base": "Poland",
+   "uz": "Polsha",
+   "forms": [
+    "Polish"
+   ]
+  },
+  {
+   "id": "wf-0043",
+   "base": "China",
+   "uz": "Xitoy",
+   "forms": [
+    "Chinese"
+   ]
+  },
+  {
+   "id": "wf-0044",
+   "base": "Russia",
+   "uz": "Rossiya",
+   "forms": [
+    "Russian"
+   ]
+  },
+  {
+   "id": "wf-0045",
+   "base": "Egypt",
+   "uz": "Misr",
+   "forms": [
+    "Egyptian"
+   ]
+  },
+  {
+   "id": "wf-0046",
+   "base": "Australia",
+   "uz": "Avstraliya",
+   "forms": [
+    "Australian"
+   ]
+  },
+  {
+   "id": "wf-0047",
+   "base": "wait",
+   "uz": "kutmoq, xizmat qilmoq",
+   "forms": [
+    "waiter"
+   ]
+  },
+  {
+   "id": "wf-0048",
+   "base": "engine",
+   "uz": "dvigatel, mexanizm",
+   "forms": [
+    "engineer"
+   ]
+  },
+  {
+   "id": "wf-0049",
+   "base": "neighbourhood",
+   "uz": "mahalla",
+   "forms": [
+    "neighbour"
+   ]
+  },
+  {
+   "id": "wf-0050",
+   "base": "Gillian",
+   "uz": "",
+   "forms": [
+    "Gill"
+   ]
+  },
+  {
+   "id": "wf-0051",
+   "base": "John",
+   "uz": "",
+   "forms": [
+    "Johnny"
+   ]
+  },
+  {
+   "id": "wf-0052",
+   "base": "Steven",
+   "uz": "",
+   "forms": [
+    "Steve"
+   ]
+  },
+  {
+   "id": "wf-0053",
+   "base": "Mathematics",
+   "uz": "matematika",
+   "forms": [
+    "Maths"
+   ]
+  },
+  {
+   "id": "wf-0054",
+   "base": "England",
+   "uz": "Angliya",
+   "forms": [
+    "English"
+   ]
+  },
+  {
+   "id": "wf-0055",
+   "base": "ten",
+   "uz": "o'n",
+   "forms": [
+    "tenth"
+   ]
+  },
+  {
+   "id": "wf-0056",
+   "base": "thirteen",
+   "uz": "o'n uch",
+   "forms": [
+    "thirteenth"
+   ]
+  },
+  {
+   "id": "wf-0057",
+   "base": "thirty",
+   "uz": "o'ttiz",
+   "forms": [
+    "thirtieth"
+   ]
+  },
+  {
+   "id": "wf-0058",
+   "base": "fifty",
+   "uz": "ellik",
+   "forms": [
+    "fiftieth"
+   ]
+  },
+  {
+   "id": "wf-0059",
+   "base": "Bulgaria",
+   "uz": "Bolgariya",
+   "forms": [
+    "Bulgarian"
+   ]
+  },
+  {
+   "id": "wf-0060",
+   "base": "Switzerland",
+   "uz": "Shveytsariya",
+   "forms": [
+    "Swiss"
+   ]
+  },
+  {
+   "id": "wf-0061",
+   "base": "woman",
+   "uz": "ayol",
+   "forms": [
+    "women"
+   ]
+  },
+  {
+   "id": "wf-0062",
+   "base": "child",
+   "uz": "bola",
+   "forms": [
+    "children"
+   ]
+  },
+  {
+   "id": "wf-0063",
+   "base": "boy",
+   "uz": "o'g'il bola",
+   "forms": [
+    "boys"
+   ]
+  },
+  {
+   "id": "wf-0064",
+   "base": "girl",
+   "uz": "qiz",
+   "forms": [
+    "girls"
+   ]
+  },
+  {
+   "id": "wf-0065",
+   "base": "Jamaica",
+   "uz": "Yamayka",
+   "forms": [
+    "Jamaicans"
+   ]
+  },
+  {
+   "id": "wf-0066",
+   "base": "Asia",
+   "uz": "Osiyo",
+   "forms": [
+    "Asians"
+   ]
+  },
+  {
+   "id": "wf-0067",
+   "base": "Norway",
+   "uz": "Norvegiya",
+   "forms": [
+    "Norwegians",
+    "Norwegian"
+   ]
+  },
+  {
+   "id": "wf-0068",
+   "base": "Africa",
+   "uz": "Afrika",
+   "forms": [
+    "Africans"
+   ]
+  },
+  {
+   "id": "wf-0069",
+   "base": "Europe",
+   "uz": "Yevropa",
+   "forms": [
+    "Europeans"
+   ]
+  },
+  {
+   "id": "wf-0070",
+   "base": "brother",
+   "uz": "aka-uka",
+   "forms": [
+    "brothers"
+   ]
+  },
+  {
+   "id": "wf-0071",
+   "base": "sister",
+   "uz": "opa-singil",
+   "forms": [
+    "sisters"
+   ]
+  },
+  {
+   "id": "wf-0072",
+   "base": "cycle",
+   "uz": "velosiped haydamoq",
+   "forms": [
+    "cyclist"
+   ]
+  },
+  {
+   "id": "wf-0073",
+   "base": "paint",
+   "uz": "rasm chizmoq",
+   "forms": [
+    "painter",
+    "painting"
+   ]
+  },
+  {
+   "id": "wf-0074",
+   "base": "ride",
+   "uz": "minib yurmoq",
+   "forms": [
+    "rider",
+    "riding"
+   ]
+  },
+  {
+   "id": "wf-0075",
+   "base": "drive",
+   "uz": "haydamoq",
+   "forms": [
+    "driver",
+    "drives",
+    "driving"
+   ]
+  },
+  {
+   "id": "wf-0076",
+   "base": "country",
+   "uz": "",
+   "forms": [
+    "countryside"
+   ]
+  },
+  {
+   "id": "wf-0077",
+   "base": "read",
+   "uz": "o'qimoq",
+   "forms": [
+    "reading",
+    "reader",
+    "reads"
+   ]
+  },
+  {
+   "id": "wf-0078",
+   "base": "ski",
+   "uz": "chang'i uchmoq",
+   "forms": [
+    "skiing"
+   ]
+  },
+  {
+   "id": "wf-0079",
+   "base": "swim",
+   "uz": "suzmoq",
+   "forms": [
+    "swimming",
+    "swimmer"
+   ]
+  },
+  {
+   "id": "wf-0080",
+   "base": "eye",
+   "uz": "ko'z",
+   "forms": [
+    "eyes"
+   ]
+  },
+  {
+   "id": "wf-0081",
+   "base": "ear",
+   "uz": "quloq",
+   "forms": [
+    "ears",
+    "earth",
+    "early",
+    "earache"
+   ]
+  },
+  {
+   "id": "wf-0082",
+   "base": "cheek",
+   "uz": "yonoq",
+   "forms": [
+    "cheeks"
+   ]
+  },
+  {
+   "id": "wf-0083",
+   "base": "lip",
+   "uz": "lab",
+   "forms": [
+    "lips"
+   ]
+  },
+  {
+   "id": "wf-0084",
+   "base": "yellow",
+   "uz": "sariq",
+   "forms": [
+    "yellowish"
+   ]
+  },
+  {
+   "id": "wf-0085",
+   "base": "flat",
+   "uz": "yassi",
+   "forms": [
+    "flattish"
+   ]
+  },
+  {
+   "id": "wf-0086",
+   "base": "red",
+   "uz": "qizil",
+   "forms": [
+    "reddish"
+   ]
+  },
+  {
+   "id": "wf-0087",
+   "base": "green",
+   "uz": "yashil",
+   "forms": [
+    "greenish"
+   ]
+  },
+  {
+   "id": "wf-0088",
+   "base": "old",
+   "uz": "keksa",
+   "forms": [
+    "oldish",
+    "older"
+   ]
+  },
+  {
+   "id": "wf-0089",
+   "base": "north",
+   "uz": "shimol",
+   "forms": [
+    "northern"
+   ]
+  },
+  {
+   "id": "wf-0090",
+   "base": "south",
+   "uz": "janub",
+   "forms": [
+    "southern"
+   ]
+  },
+  {
+   "id": "wf-0091",
+   "base": "east",
+   "uz": "sharq",
+   "forms": [
+    "eastern"
+   ]
+  },
+  {
+   "id": "wf-0092",
+   "base": "west",
+   "uz": "g'arb",
+   "forms": [
+    "western"
+   ]
+  },
+  {
+   "id": "wf-0093",
+   "base": "centre",
+   "uz": "markaz",
+   "forms": [
+    "central"
+   ]
+  },
+  {
+   "id": "wf-0094",
+   "base": "Sweden",
+   "uz": "Shvetsiya",
+   "forms": [
+    "Swedish"
+   ]
+  },
+  {
+   "id": "wf-0095",
+   "base": "Iraq",
+   "uz": "Iroq",
+   "forms": [
+    "Iraqi"
+   ]
+  },
+  {
+   "id": "wf-0096",
+   "base": "Libya",
+   "uz": "Liviya",
+   "forms": [
+    "Libyan"
+   ]
+  },
+  {
+   "id": "wf-0097",
+   "base": "quick",
+   "uz": "tez (sifat)",
+   "forms": [
+    "quickly"
+   ]
+  },
+  {
+   "id": "wf-0098",
+   "base": "slow",
+   "uz": "sekin",
+   "forms": [
+    "slowly"
+   ]
+  },
+  {
+   "id": "wf-0099",
+   "base": "beautiful",
+   "uz": "chiroyli",
+   "forms": [
+    "beautifully",
+    "beauty"
+   ]
+  },
+  {
+   "id": "wf-0100",
+   "base": "easy",
+   "uz": "oson",
+   "forms": [
+    "easily",
+    "easier"
+   ]
+  },
+  {
+   "id": "wf-0101",
+   "base": "run",
+   "uz": "yugurmoq",
+   "forms": [
+    "runner",
+    "running",
+    "runNer"
+   ]
+  },
+  {
+   "id": "wf-0102",
+   "base": "type",
+   "uz": "matn termoq",
+   "forms": [
+    "typist"
+   ]
+  },
+  {
+   "id": "wf-0103",
+   "base": "hand",
+   "uz": "qo'l (panja)",
+   "forms": [
+    "hands"
+   ]
+  },
+  {
+   "id": "wf-0104",
+   "base": "arm",
+   "uz": "qo'l (yelkadan)",
+   "forms": [
+    "arms"
+   ]
+  },
+  {
+   "id": "wf-0105",
+   "base": "leg",
+   "uz": "oyoq (son)",
+   "forms": [
+    "legs"
+   ]
+  },
+  {
+   "id": "wf-0106",
+   "base": "finger",
+   "uz": "qo'l barmog'i",
+   "forms": [
+    "fingers"
+   ]
+  },
+  {
+   "id": "wf-0107",
+   "base": "toe",
+   "uz": "oyoq barmog'i",
+   "forms": [
+    "toes"
+   ]
+  },
+  {
+   "id": "wf-0108",
+   "base": "wide",
+   "uz": "keng",
+   "forms": [
+    "width",
+    "widEN"
+   ]
+  },
+  {
+   "id": "wf-0109",
+   "base": "strong",
+   "uz": "kuchli",
+   "forms": [
+    "strength"
+   ]
+  },
+  {
+   "id": "wf-0110",
+   "base": "you",
+   "uz": "siz",
+   "forms": [
+    "your",
+    "yours"
+   ]
+  },
+  {
+   "id": "wf-0111",
+   "base": "clean",
+   "uz": "tozalamoq",
+   "forms": [
+    "cleaner",
+    "cleaning"
+   ]
+  },
+  {
+   "id": "wf-0112",
+   "base": "photograph",
+   "uz": "surat",
+   "forms": [
+    "photographer",
+    "photographs"
+   ]
+  },
+  {
+   "id": "wf-0113",
+   "base": "Lebanon",
+   "uz": "Livan",
+   "forms": [
+    "Lebanese"
+   ]
+  },
+  {
+   "id": "wf-0114",
+   "base": "carpet",
+   "uz": "gilam",
+   "forms": [
+    "carpets"
+   ]
+  },
+  {
+   "id": "wf-0115",
+   "base": "bedroom",
+   "uz": "yotoqxona",
+   "forms": [
+    "bedrooms"
+   ]
+  },
+  {
+   "id": "wf-0116",
+   "base": "shop",
+   "uz": "do'kon",
+   "forms": [
+    "shops",
+    "shopping"
+   ]
+  },
+  {
+   "id": "wf-0117",
+   "base": "plant",
+   "uz": "o'simlik",
+   "forms": [
+    "plants"
+   ]
+  },
+  {
+   "id": "wf-0118",
+   "base": "sofa",
+   "uz": "divan",
+   "forms": [
+    "sofas"
+   ]
+  },
+  {
+   "id": "wf-0119",
+   "base": "lamp",
+   "uz": "chiroq",
+   "forms": [
+    "lamps"
+   ]
+  },
+  {
+   "id": "wf-0120",
+   "base": "orange",
+   "uz": "apelsin",
+   "forms": [
+    "oranges"
+   ]
+  },
+  {
+   "id": "wf-0121",
+   "base": "car",
+   "uz": "mashina",
+   "forms": [
+    "cars"
+   ]
+  },
+  {
+   "id": "wf-0122",
+   "base": "horse",
+   "uz": "ot",
+   "forms": [
+    "horses"
+   ]
+  },
+  {
+   "id": "wf-0123",
+   "base": "suitcase",
+   "uz": "chamadon",
+   "forms": [
+    "suitcases"
+   ]
+  },
+  {
+   "id": "wf-0124",
+   "base": "apple",
+   "uz": "olma",
+   "forms": [
+    "apples"
+   ]
+  },
+  {
+   "id": "wf-0125",
+   "base": "pencil",
+   "uz": "qalam",
+   "forms": [
+    "pencils"
+   ]
+  },
+  {
+   "id": "wf-0126",
+   "base": "flower",
+   "uz": "gul",
+   "forms": [
+    "flowers"
+   ]
+  },
+  {
+   "id": "wf-0127",
+   "base": "brush",
+   "uz": "cho'tka",
+   "forms": [
+    "brushes"
+   ]
+  },
+  {
+   "id": "wf-0128",
+   "base": "bus",
+   "uz": "avtobus",
+   "forms": [
+    "buses"
+   ]
+  },
+  {
+   "id": "wf-0129",
+   "base": "glass",
+   "uz": "stakan, shisha",
+   "forms": [
+    "glasses"
+   ]
+  },
+  {
+   "id": "wf-0130",
+   "base": "bench",
+   "uz": "skameyka",
+   "forms": [
+    "benches"
+   ]
+  },
+  {
+   "id": "wf-0131",
+   "base": "watch",
+   "uz": "qo'l soati",
+   "forms": [
+    "watches",
+    "watching",
+    "watched",
+    "watchED"
+   ]
+  },
+  {
+   "id": "wf-0132",
+   "base": "towel",
+   "uz": "sochiq",
+   "forms": [
+    "towels"
+   ]
+  },
+  {
+   "id": "wf-0133",
+   "base": "drawing",
+   "uz": "chizma, surat",
+   "forms": [
+    "drawings"
+   ]
+  },
+  {
+   "id": "wf-0134",
+   "base": "cup",
+   "uz": "piyola, chashka",
+   "forms": [
+    "cups"
+   ]
+  },
+  {
+   "id": "wf-0135",
+   "base": "dress",
+   "uz": "ko'ylak",
+   "forms": [
+    "dresses"
+   ]
+  },
+  {
+   "id": "wf-0136",
+   "base": "church",
+   "uz": "cherkov",
+   "forms": [
+    "churches"
+   ]
+  },
+  {
+   "id": "wf-0137",
+   "base": "torch",
+   "uz": "fonar",
+   "forms": [
+    "torches"
+   ]
+  },
+  {
+   "id": "wf-0138",
+   "base": "key",
+   "uz": "kalit",
+   "forms": [
+    "keys"
+   ]
+  },
+  {
+   "id": "wf-0139",
+   "base": "bed",
+   "uz": "karavot",
+   "forms": [
+    "bedroom"
+   ]
+  },
+  {
+   "id": "wf-0140",
+   "base": "bath",
+   "uz": "vanna",
+   "forms": [
+    "bathroom"
+   ]
+  },
+  {
+   "id": "wf-0141",
+   "base": "attract",
+   "uz": "jalb qilmoq",
+   "forms": [
+    "attractive"
+   ]
+  },
+  {
+   "id": "wf-0142",
+   "base": "expense",
+   "uz": "xarajat",
+   "forms": [
+    "expensive"
+   ]
+  },
+  {
+   "id": "wf-0143",
+   "base": "act",
+   "uz": "harakat qilmoq",
+   "forms": [
+    "active"
+   ]
+  },
+  {
+   "id": "wf-0144",
+   "base": "wonder",
+   "uz": "mo''jiza, hayrat",
+   "forms": [
+    "wonderful"
+   ]
+  },
+  {
+   "id": "wf-0145",
+   "base": "beauty",
+   "uz": "go'zallik",
+   "forms": [
+    "beautiful"
+   ]
+  },
+  {
+   "id": "wf-0146",
+   "base": "colour",
+   "uz": "rang",
+   "forms": [
+    "colourful",
+    "color"
+   ]
+  },
+  {
+   "id": "wf-0147",
+   "base": "comfort",
+   "uz": "qulaylik",
+   "forms": [
+    "comfortable"
+   ]
+  },
+  {
+   "id": "wf-0148",
+   "base": "enjoy",
+   "uz": "zavqlanmoq",
+   "forms": [
+    "enjoyable",
+    "enjoys",
+    "enjoying",
+    "enjoyed"
+   ]
+  },
+  {
+   "id": "wf-0149",
+   "base": "chair",
+   "uz": "stul",
+   "forms": [
+    "chairs"
+   ]
+  },
+  {
+   "id": "wf-0150",
+   "base": "room",
+   "uz": "xona",
+   "forms": [
+    "rooms"
+   ]
+  },
+  {
+   "id": "wf-0151",
+   "base": "wall",
+   "uz": "devor",
+   "forms": [
+    "walls"
+   ]
+  },
+  {
+   "id": "wf-0152",
+   "base": "table",
+   "uz": "stol",
+   "forms": [
+    "tables"
+   ]
+  },
+  {
+   "id": "wf-0153",
+   "base": "book",
+   "uz": "kitob",
+   "forms": [
+    "books"
+   ]
+  },
+  {
+   "id": "wf-0154",
+   "base": "address",
+   "uz": "manzil",
+   "forms": [
+    "addresses"
+   ]
+  },
+  {
+   "id": "wf-0155",
+   "base": "box",
+   "uz": "quti",
+   "forms": [
+    "boxes"
+   ]
+  },
+  {
+   "id": "wf-0156",
+   "base": "tomato",
+   "uz": "pomidor",
+   "forms": [
+    "tomatoes",
+    "tomatOES"
+   ]
+  },
+  {
+   "id": "wf-0157",
+   "base": "they",
+   "uz": "ular",
+   "forms": [
+    "them",
+    "their",
+    "theirs"
+   ]
+  },
+  {
+   "id": "wf-0158",
+   "base": "Avenue",
+   "uz": "keng ko'cha",
+   "forms": [
+    "Ave"
+   ]
+  },
+  {
+   "id": "wf-0159",
+   "base": "telephone",
+   "uz": "telefon",
+   "forms": [
+    "Tel."
+   ]
+  },
+  {
+   "id": "wf-0160",
+   "base": "cook",
+   "uz": "pishirmoq",
+   "forms": [
+    "cooker",
+    "cooks",
+    "cooking",
+    "cooked"
+   ]
+  },
+  {
+   "id": "wf-0161",
+   "base": "wash",
+   "uz": "yuvmoq",
+   "forms": [
+    "washer",
+    "washing",
+    "washes"
+   ]
+  },
+  {
+   "id": "wf-0162",
+   "base": "dry",
+   "uz": "quritmoq",
+   "forms": [
+    "dryer"
+   ]
+  },
+  {
+   "id": "wf-0163",
+   "base": "space",
+   "uz": "joy, bo'shliq",
+   "forms": [
+    "spacious"
+   ]
+  },
+  {
+   "id": "wf-0164",
+   "base": "love",
+   "uz": "sevgi",
+   "forms": [
+    "lovely",
+    "loving",
+    "loved"
+   ]
+  },
+  {
+   "id": "wf-0165",
+   "base": "balloon",
+   "uz": "shar",
+   "forms": [
+    "balloons"
+   ]
+  },
+  {
+   "id": "wf-0166",
+   "base": "banana",
+   "uz": "banan",
+   "forms": [
+    "bananas"
+   ]
+  },
+  {
+   "id": "wf-0167",
+   "base": "lemon",
+   "uz": "limon",
+   "forms": [
+    "lemons"
+   ]
+  },
+  {
+   "id": "wf-0168",
+   "base": "hat",
+   "uz": "shlyapa",
+   "forms": [
+    "hats"
+   ]
+  },
+  {
+   "id": "wf-0169",
+   "base": "relax",
+   "uz": "dam olmoq",
+   "forms": [
+    "relaxed",
+    "relaxing"
+   ]
+  },
+  {
+   "id": "wf-0170",
+   "base": "safe",
+   "uz": "xavfsiz",
+   "forms": [
+    "safety",
+    "safer"
+   ]
+  },
+  {
+   "id": "wf-0171",
+   "base": "work",
+   "uz": "oddiy fe'l",
+   "forms": [
+    "works",
+    "worked"
+   ]
+  },
+  {
+   "id": "wf-0172",
+   "base": "finish",
+   "uz": "-sh bilan tugaydi",
+   "forms": [
+    "finishes"
+   ]
+  },
+  {
+   "id": "wf-0173",
+   "base": "your",
+   "uz": "sening (ot bilan)",
+   "forms": [
+    "yours"
+   ]
+  },
+  {
+   "id": "wf-0174",
+   "base": "her",
+   "uz": "uning (ot bilan)",
+   "forms": [
+    "hers"
+   ]
+  },
+  {
+   "id": "wf-0175",
+   "base": "our",
+   "uz": "bizning (ot bilan)",
+   "forms": [
+    "ours"
+   ]
+  },
+  {
+   "id": "wf-0176",
+   "base": "their",
+   "uz": "ularning (ot bilan)",
+   "forms": [
+    "theirs"
+   ]
+  },
+  {
+   "id": "wf-0177",
+   "base": "grandfather",
+   "uz": "bobo",
+   "forms": [
+    "grandmother"
+   ]
+  },
+  {
+   "id": "wf-0178",
+   "base": "grandson",
+   "uz": "nabira (o'g'il)",
+   "forms": [
+    "granddaughter"
+   ]
+  },
+  {
+   "id": "wf-0179",
+   "base": "fish",
+   "uz": "baliq ovlamoq",
+   "forms": [
+    "fishing"
+   ]
+  },
+  {
+   "id": "wf-0180",
+   "base": "camp",
+   "uz": "chodir tikmoq",
+   "forms": [
+    "camping"
+   ]
+  },
+  {
+   "id": "wf-0181",
+   "base": "travel",
+   "uz": "sayohat qilmoq",
+   "forms": [
+    "travelling",
+    "travelled",
+    "travelLED",
+    "TRAVELLED"
+   ]
+  },
+  {
+   "id": "wf-0182",
+   "base": "exercise",
+   "uz": "mashq qilmoq",
+   "forms": [
+    "exercising"
+   ]
+  },
+  {
+   "id": "wf-0183",
+   "base": "walk",
+   "uz": "yurmoq",
+   "forms": [
+    "walking"
+   ]
+  },
+  {
+   "id": "wf-0184",
+   "base": "boss",
+   "uz": "boshliq",
+   "forms": [
+    "bossy"
+   ]
+  },
+  {
+   "id": "wf-0185",
+   "base": "noise",
+   "uz": "shovqin",
+   "forms": [
+    "noisy"
+   ]
+  },
+  {
+   "id": "wf-0186",
+   "base": "fun",
+   "uz": "zavq",
+   "forms": [
+    "funny"
+   ]
+  },
+  {
+   "id": "wf-0187",
+   "base": "friend",
+   "uz": "do'st",
+   "forms": [
+    "friendly"
+   ]
+  },
+  {
+   "id": "wf-0188",
+   "base": "host",
+   "uz": "mezbon",
+   "forms": [
+    "hostess"
+   ]
+  },
+  {
+   "id": "wf-0189",
+   "base": "introduce",
+   "uz": "tanishtirmoq",
+   "forms": [
+    "Introduction"
+   ]
+  },
+  {
+   "id": "wf-0190",
+   "base": "conclude",
+   "uz": "xulosa qilmoq",
+   "forms": [
+    "Conclusion"
+   ]
+  },
+  {
+   "id": "wf-0191",
+   "base": "parent",
+   "uz": "ota yoki ona",
+   "forms": [
+    "parents"
+   ]
+  },
+  {
+   "id": "wf-0192",
+   "base": "grandparent",
+   "uz": "bobo yoki buvi",
+   "forms": [
+    "grandparents"
+   ]
+  },
+  {
+   "id": "wf-0193",
+   "base": "grandchild",
+   "uz": "nabira",
+   "forms": [
+    "grandchildren"
+   ]
+  },
+  {
+   "id": "wf-0194",
+   "base": "luck",
+   "uz": "omad",
+   "forms": [
+    "lucky"
+   ]
+  },
+  {
+   "id": "wf-0195",
+   "base": "anger",
+   "uz": "jahl",
+   "forms": [
+    "angry"
+   ]
+  },
+  {
+   "id": "wf-0196",
+   "base": "listen",
+   "uz": "tinglamoq",
+   "forms": [
+    "listening",
+    "listened"
+   ]
+  },
+  {
+   "id": "wf-0197",
+   "base": "have",
+   "uz": "ega bo'lmoq",
+   "forms": [
+    "having"
+   ]
+  },
+  {
+   "id": "wf-0198",
+   "base": "sit",
+   "uz": "o'tirmoq",
+   "forms": [
+    "sitting"
+   ]
+  },
+  {
+   "id": "wf-0199",
+   "base": "kind",
+   "uz": "mehribon",
+   "forms": [
+    "kindness",
+    "kinder",
+    "kindNESS"
+   ]
+  },
+  {
+   "id": "wf-0200",
+   "base": "generous",
+   "uz": "saxiy",
+   "forms": [
+    "generosity"
+   ]
+  },
+  {
+   "id": "wf-0201",
+   "base": "please",
+   "uz": "xursand qilmoq",
+   "forms": [
+    "pleasant"
+   ]
+  },
+  {
+   "id": "wf-0202",
+   "base": "patience",
+   "uz": "sabr",
+   "forms": [
+    "patient"
+   ]
+  },
+  {
+   "id": "wf-0203",
+   "base": "bore",
+   "uz": "zeriktirmoq",
+   "forms": [
+    "boring",
+    "bored"
+   ]
+  },
+  {
+   "id": "wf-0204",
+   "base": "start",
+   "uz": "boshlanmoq",
+   "forms": [
+    "starts"
+   ]
+  },
+  {
+   "id": "wf-0205",
+   "base": "tire",
+   "uz": "charchatmoq",
+   "forms": [
+    "tiring",
+    "tired"
+   ]
+  },
+  {
+   "id": "wf-0206",
+   "base": "satisfy",
+   "uz": "qoniqtirmoq",
+   "forms": [
+    "satisfying",
+    "satisfied"
+   ]
+  },
+  {
+   "id": "wf-0207",
+   "base": "arrive",
+   "uz": "kelmoq",
+   "forms": [
+    "arrivals"
+   ]
+  },
+  {
+   "id": "wf-0208",
+   "base": "depart",
+   "uz": "jo'namoq",
+   "forms": [
+    "departures"
+   ]
+  },
+  {
+   "id": "wf-0209",
+   "base": "stress",
+   "uz": "siqmoq",
+   "forms": [
+    "stressed",
+    "stressful"
+   ]
+  },
+  {
+   "id": "wf-0210",
+   "base": "Augustus",
+   "uz": "Avgust",
+   "forms": [
+    "August"
+   ]
+  },
+  {
+   "id": "wf-0211",
+   "base": "health",
+   "uz": "sog'liq",
+   "forms": [
+    "healthy"
+   ]
+  },
+  {
+   "id": "wf-0212",
+   "base": "wealth",
+   "uz": "boylik",
+   "forms": [
+    "wealthy"
+   ]
+  },
+  {
+   "id": "wf-0213",
+   "base": "wisdom",
+   "uz": "donolik",
+   "forms": [
+    "wise"
+   ]
+  },
+  {
+   "id": "wf-0214",
+   "base": "leave",
+   "uz": "chiqmoq, ketmoq",
+   "forms": [
+    "leaves"
+   ]
+  },
+  {
+   "id": "wf-0215",
+   "base": "catch",
+   "uz": "ushlamoq; chiqmoq",
+   "forms": [
+    "catches"
+   ]
+  },
+  {
+   "id": "wf-0216",
+   "base": "salt",
+   "uz": "tuz",
+   "forms": [
+    "salty"
+   ]
+  },
+  {
+   "id": "wf-0217",
+   "base": "duck",
+   "uz": "o'rdak",
+   "forms": [
+    "duckling"
+   ]
+  },
+  {
+   "id": "wf-0218",
+   "base": "young",
+   "uz": "yosh",
+   "forms": [
+    "youngling",
+    "younger"
+   ]
+  },
+  {
+   "id": "wf-0219",
+   "base": "curious",
+   "uz": "qiziquvchan",
+   "forms": [
+    "curiosity"
+   ]
+  },
+  {
+   "id": "wf-0220",
+   "base": "rock",
+   "uz": "tosh, qoya",
+   "forms": [
+    "rocky"
+   ]
+  },
+  {
+   "id": "wf-0221",
+   "base": "sand",
+   "uz": "qum",
+   "forms": [
+    "sandy"
+   ]
+  },
+  {
+   "id": "wf-0222",
+   "base": "wind",
+   "uz": "shamol",
+   "forms": [
+    "windy"
+   ]
+  },
+  {
+   "id": "wf-0223",
+   "base": "scare",
+   "uz": "qo'rqitmoq",
+   "forms": [
+    "scary"
+   ]
+  },
+  {
+   "id": "wf-0224",
+   "base": "dirt",
+   "uz": "iflos narsa",
+   "forms": [
+    "dirty"
+   ]
+  },
+  {
+   "id": "wf-0225",
+   "base": "sleep",
+   "uz": "uyqu",
+   "forms": [
+    "sleepy"
+   ]
+  },
+  {
+   "id": "wf-0226",
+   "base": "laze",
+   "uz": "dangasalik",
+   "forms": [
+    "lazy"
+   ]
+  },
+  {
+   "id": "wf-0227",
+   "base": "Indonesia",
+   "uz": "Indoneziya",
+   "forms": [
+    "Indonesian"
+   ]
+  },
+  {
+   "id": "wf-0228",
+   "base": "look",
+   "uz": "qaramoq",
+   "forms": [
+    "looking"
+   ]
+  },
+  {
+   "id": "wf-0229",
+   "base": "throw",
+   "uz": "otmoq",
+   "forms": [
+    "throwing",
+    "threw"
+   ]
+  },
+  {
+   "id": "wf-0230",
+   "base": "wear",
+   "uz": "kiymoq",
+   "forms": [
+    "wearing"
+   ]
+  },
+  {
+   "id": "wf-0231",
+   "base": "stop",
+   "uz": "to'xtamoq",
+   "forms": [
+    "stopping",
+    "stopped",
+    "stopPED"
+   ]
+  },
+  {
+   "id": "wf-0232",
+   "base": "get",
+   "uz": "olmoq",
+   "forms": [
+    "getting"
+   ]
+  },
+  {
+   "id": "wf-0233",
+   "base": "put",
+   "uz": "qo'ymoq",
+   "forms": [
+    "putting"
+   ]
+  },
+  {
+   "id": "wf-0234",
+   "base": "begin",
+   "uz": "boshlamoq",
+   "forms": [
+    "beginning",
+    "began",
+    "beginNer"
+   ]
+  },
+  {
+   "id": "wf-0235",
+   "base": "visit",
+   "uz": "tashrif buyurmoq",
+   "forms": [
+    "visiting",
+    "visited"
+   ]
+  },
+  {
+   "id": "wf-0236",
+   "base": "take",
+   "uz": "olmoq",
+   "forms": [
+    "taking"
+   ]
+  },
+  {
+   "id": "wf-0237",
+   "base": "shine",
+   "uz": "charaqlamoq",
+   "forms": [
+    "shining"
+   ]
+  },
+  {
+   "id": "wf-0238",
+   "base": "make",
+   "uz": "yasamoq",
+   "forms": [
+    "making"
+   ]
+  },
+  {
+   "id": "wf-0239",
+   "base": "write",
+   "uz": "yozmoq",
+   "forms": [
+    "writing"
+   ]
+  },
+  {
+   "id": "wf-0240",
+   "base": "come",
+   "uz": "kelmoq",
+   "forms": [
+    "coming"
+   ]
+  },
+  {
+   "id": "wf-0241",
+   "base": "see",
+   "uz": "ko'rmoq",
+   "forms": [
+    "seeing"
+   ]
+  },
+  {
+   "id": "wf-0242",
+   "base": "loves",
+   "uz": "birlik 3-shaxs",
+   "forms": [
+    "love"
+   ]
+  },
+  {
+   "id": "wf-0243",
+   "base": "rain",
+   "uz": "yomg'ir",
+   "forms": [
+    "rainy",
+    "raining",
+    "rains"
+   ]
+  },
+  {
+   "id": "wf-0244",
+   "base": "snow",
+   "uz": "qor",
+   "forms": [
+    "snowy",
+    "snowing"
+   ]
+  },
+  {
+   "id": "wf-0245",
+   "base": "sun",
+   "uz": "quyosh",
+   "forms": [
+    "sunny"
+   ]
+  },
+  {
+   "id": "wf-0246",
+   "base": "cloud",
+   "uz": "bulut",
+   "forms": [
+    "cloudy"
+   ]
+  },
+  {
+   "id": "wf-0247",
+   "base": "fog",
+   "uz": "tuman",
+   "forms": [
+    "foggy"
+   ]
+  },
+  {
+   "id": "wf-0248",
+   "base": "storm",
+   "uz": "bo'ron",
+   "forms": [
+    "stormy"
+   ]
+  },
+  {
+   "id": "wf-0249",
+   "base": "decorate",
+   "uz": "bezamoq",
+   "forms": [
+    "decorating"
+   ]
+  },
+  {
+   "id": "wf-0250",
+   "base": "sudden",
+   "uz": "to'satdan bo'lgan",
+   "forms": [
+    "suddenly"
+   ]
+  },
+  {
+   "id": "wf-0251",
+   "base": "near",
+   "uz": "yaqin",
+   "forms": [
+    "nearly"
+   ]
+  },
+  {
+   "id": "wf-0252",
+   "base": "heavy",
+   "uz": "qalin",
+   "forms": [
+    "heavily",
+    "heavier"
+   ]
+  },
+  {
+   "id": "wf-0253",
+   "base": "climb",
+   "uz": "tirmashib chiqmoq",
+   "forms": [
+    "climbing"
+   ]
+  },
+  {
+   "id": "wf-0254",
+   "base": "eat",
+   "uz": "yemoq",
+   "forms": [
+    "eating"
+   ]
+  },
+  {
+   "id": "wf-0255",
+   "base": "pick",
+   "uz": "termoq",
+   "forms": [
+    "picking"
+   ]
+  },
+  {
+   "id": "wf-0256",
+   "base": "drink",
+   "uz": "ichmoq",
+   "forms": [
+    "drinking"
+   ]
+  },
+  {
+   "id": "wf-0257",
+   "base": "pour",
+   "uz": "quymoq",
+   "forms": [
+    "pouring"
+   ]
+  },
+  {
+   "id": "wf-0258",
+   "base": "favourite",
+   "uz": "sevimli",
+   "forms": [
+    "favorite"
+   ]
+  },
+  {
+   "id": "wf-0259",
+   "base": "taste",
+   "uz": "ta'm",
+   "forms": [
+    "tasty"
+   ]
+  },
+  {
+   "id": "wf-0260",
+   "base": "spice",
+   "uz": "ziravor",
+   "forms": [
+    "spicy"
+   ]
+  },
+  {
+   "id": "wf-0261",
+   "base": "grease",
+   "uz": "yog'",
+   "forms": [
+    "greasy"
+   ]
+  },
+  {
+   "id": "wf-0262",
+   "base": "help",
+   "uz": "yordam",
+   "forms": [
+    "helpful",
+    "helpless"
+   ]
+  },
+  {
+   "id": "wf-0263",
+   "base": "use",
+   "uz": "foyda",
+   "forms": [
+    "useful",
+    "useless"
+   ]
+  },
+  {
+   "id": "wf-0264",
+   "base": "care",
+   "uz": "ehtiyot",
+   "forms": [
+    "careful",
+    "cared",
+    "careless"
+   ]
+  },
+  {
+   "id": "wf-0265",
+   "base": "Uzbekistan",
+   "uz": "O'zbekiston",
+   "forms": [
+    "Uzbeks"
+   ]
+  },
+  {
+   "id": "wf-0266",
+   "base": "reason",
+   "uz": "sabab, aql",
+   "forms": [
+    "reasonable"
+   ]
+  },
+  {
+   "id": "wf-0267",
+   "base": "boring",
+   "uz": "zerikarli",
+   "forms": [
+    "bored"
+   ]
+  },
+  {
+   "id": "wf-0268",
+   "base": "hunt",
+   "uz": "ov qilmoq",
+   "forms": [
+    "hunting"
+   ]
+  },
+  {
+   "id": "wf-0269",
+   "base": "live",
+   "uz": "oxiri -E",
+   "forms": [
+    "lived",
+    "lives",
+    "livED"
+   ]
+  },
+  {
+   "id": "wf-0270",
+   "base": "marry",
+   "uz": "UNDOSH + Y",
+   "forms": [
+    "married"
+   ]
+  },
+  {
+   "id": "wf-0271",
+   "base": "plan",
+   "uz": "urg'uli unli",
+   "forms": [
+    "planned"
+   ]
+  },
+  {
+   "id": "wf-0272",
+   "base": "become",
+   "uz": "bo'lmoq",
+   "forms": [
+    "became"
+   ]
+  },
+  {
+   "id": "wf-0273",
+   "base": "success",
+   "uz": "muvaffaqiyat",
+   "forms": [
+    "successful"
+   ]
+  },
+  {
+   "id": "wf-0274",
+   "base": "proper",
+   "uz": "munosib, tegishli",
+   "forms": [
+    "properly"
+   ]
+  },
+  {
+   "id": "wf-0275",
+   "base": "return",
+   "uz": "qaytmoq",
+   "forms": [
+    "returned"
+   ]
+  },
+  {
+   "id": "wf-0276",
+   "base": "appear",
+   "uz": "paydo bo'lmoq",
+   "forms": [
+    "appeared"
+   ]
+  },
+  {
+   "id": "wf-0277",
+   "base": "call",
+   "uz": "chaqirmoq",
+   "forms": [
+    "called"
+   ]
+  },
+  {
+   "id": "wf-0278",
+   "base": "die",
+   "uz": "o'lmoq",
+   "forms": [
+    "died"
+   ]
+  },
+  {
+   "id": "wf-0279",
+   "base": "divorce",
+   "uz": "ajrashmoq",
+   "forms": [
+    "divorced"
+   ]
+  },
+  {
+   "id": "wf-0280",
+   "base": "continue",
+   "uz": "davom etmoq",
+   "forms": [
+    "continued",
+    "continuous"
+   ]
+  },
+  {
+   "id": "wf-0281",
+   "base": "complete",
+   "uz": "tugatmoq",
+   "forms": [
+    "completed"
+   ]
+  },
+  {
+   "id": "wf-0282",
+   "base": "study",
+   "uz": "o'qimoq",
+   "forms": [
+    "studied",
+    "studies",
+    "studIED"
+   ]
+  },
+  {
+   "id": "wf-0283",
+   "base": "happy",
+   "uz": "baxtli",
+   "forms": [
+    "happiness",
+    "happily",
+    "happier",
+    "happiNESS"
+   ]
+  },
+  {
+   "id": "wf-0284",
+   "base": "sad",
+   "uz": "g'amgin",
+   "forms": [
+    "sadness",
+    "sadDer"
+   ]
+  },
+  {
+   "id": "wf-0285",
+   "base": "famous",
+   "uz": "mashhur",
+   "forms": [
+    "fame"
+   ]
+  },
+  {
+   "id": "wf-0286",
+   "base": "sick",
+   "uz": "kasal",
+   "forms": [
+    "sickness"
+   ]
+  },
+  {
+   "id": "wf-0287",
+   "base": "ill",
+   "uz": "kasal",
+   "forms": [
+    "illness"
+   ]
+  },
+  {
+   "id": "wf-0288",
+   "base": "learn",
+   "uz": "o'rganmoq",
+   "forms": [
+    "learnt",
+    "learned",
+    "learner"
+   ]
+  },
+  {
+   "id": "wf-0289",
+   "base": "medicine",
+   "uz": "tibbiyot; dori",
+   "forms": [
+    "medical"
+   ]
+  },
+  {
+   "id": "wf-0290",
+   "base": "lose",
+   "uz": "yutqazmoq, yo'qotmoq",
+   "forms": [
+    "lost"
+   ]
+  },
+  {
+   "id": "wf-0291",
+   "base": "star",
+   "uz": "bosh rolda o'ynamoq",
+   "forms": [
+    "starred"
+   ]
+  },
+  {
+   "id": "wf-0292",
+   "base": "relativity",
+   "uz": "nisbiylik",
+   "forms": [
+    "relative"
+   ]
+  },
+  {
+   "id": "wf-0293",
+   "base": "careful",
+   "uz": "ehtiyotkor",
+   "forms": [
+    "carefully",
+    "careless"
+   ]
+  },
+  {
+   "id": "wf-0294",
+   "base": "loud",
+   "uz": "baland ovozli",
+   "forms": [
+    "loudly"
+   ]
+  },
+  {
+   "id": "wf-0295",
+   "base": "lucky",
+   "uz": "omadli",
+   "forms": [
+    "luckily",
+    "luck"
+   ]
+  },
+  {
+   "id": "wf-0296",
+   "base": "hard",
+   "uz": "qattiq, ko'p",
+   "forms": [
+    "hardly"
+   ]
+  },
+  {
+   "id": "wf-0297",
+   "base": "late",
+   "uz": "kech",
+   "forms": [
+    "lately"
+   ]
+  },
+  {
+   "id": "wf-0298",
+   "base": "hope",
+   "uz": "umid",
+   "forms": [
+    "hopeful",
+    "hopeless"
+   ]
+  },
+  {
+   "id": "wf-0299",
+   "base": "hear",
+   "uz": "eshitmoq",
+   "forms": [
+    "heard",
+    "HEARD"
+   ]
+  },
+  {
+   "id": "wf-0300",
+   "base": "tight",
+   "uz": "mahkam",
+   "forms": [
+    "tightly"
+   ]
+  },
+  {
+   "id": "wf-0301",
+   "base": "desperate",
+   "uz": "umidsiz",
+   "forms": [
+    "desperately"
+   ]
+  },
+  {
+   "id": "wf-0302",
+   "base": "immediate",
+   "uz": "darhol bo'ladigan",
+   "forms": [
+    "immediately"
+   ]
+  },
+  {
+   "id": "wf-0303",
+   "base": "final",
+   "uz": "oxirgi",
+   "forms": [
+    "finally"
+   ]
+  },
+  {
+   "id": "wf-0304",
+   "base": "strange",
+   "uz": "oxiri -E",
+   "forms": [
+    "strangely"
+   ]
+  },
+  {
+   "id": "wf-0305",
+   "base": "shocking",
+   "uz": "hayratlanarli",
+   "forms": [
+    "shocked"
+   ]
+  },
+  {
+   "id": "wf-0306",
+   "base": "brave",
+   "uz": "jasur, botir",
+   "forms": [
+    "bravery",
+    "bravely"
+   ]
+  },
+  {
+   "id": "wf-0307",
+   "base": "sleepy",
+   "uz": "uyquchan",
+   "forms": [
+    "sleepily"
+   ]
+  },
+  {
+   "id": "wf-0308",
+   "base": "nervous",
+   "uz": "asabiy",
+   "forms": [
+    "nervously"
+   ]
+  },
+  {
+   "id": "wf-0309",
+   "base": "polite",
+   "uz": "muloyim",
+   "forms": [
+    "politely"
+   ]
+  },
+  {
+   "id": "wf-0310",
+   "base": "dangerous",
+   "uz": "xavfli",
+   "forms": [
+    "danger"
+   ]
+  },
+  {
+   "id": "wf-0311",
+   "base": "hide",
+   "uz": "yashirinmoq",
+   "forms": [
+    "hid"
+   ]
+  },
+  {
+   "id": "wf-0312",
+   "base": "spend",
+   "uz": "o'tkazmoq, sarflamoq",
+   "forms": [
+    "spent"
+   ]
+  },
+  {
+   "id": "wf-0313",
+   "base": "calm",
+   "uz": "xotirjam",
+   "forms": [
+    "calmly"
+   ]
+  },
+  {
+   "id": "wf-0314",
+   "base": "quiet",
+   "uz": "sekin, jim",
+   "forms": [
+    "quietly",
+    "quieter",
+    "quietness"
+   ]
+  },
+  {
+   "id": "wf-0315",
+   "base": "anxious",
+   "uz": "xavotirli",
+   "forms": [
+    "anxiously"
+   ]
+  },
+  {
+   "id": "wf-0316",
+   "base": "frightened",
+   "uz": "qo'rqib ketgan",
+   "forms": [
+    "frighten"
+   ]
+  },
+  {
+   "id": "wf-0317",
+   "base": "big",
+   "uz": "katta",
+   "forms": [
+    "bigGer",
+    "bigger"
+   ]
+  },
+  {
+   "id": "wf-0318",
+   "base": "hot",
+   "uz": "issiq",
+   "forms": [
+    "hotTer",
+    "hotter"
+   ]
+  },
+  {
+   "id": "wf-0319",
+   "base": "fat",
+   "uz": "semiz",
+   "forms": [
+    "fatTer"
+   ]
+  },
+  {
+   "id": "wf-0320",
+   "base": "thin",
+   "uz": "ozg'in",
+   "forms": [
+    "thinNer"
+   ]
+  },
+  {
+   "id": "wf-0321",
+   "base": "cheap",
+   "uz": "arzon",
+   "forms": [
+    "cheaper"
+   ]
+  },
+  {
+   "id": "wf-0322",
+   "base": "fast",
+   "uz": "tez",
+   "forms": [
+    "faster"
+   ]
+  },
+  {
+   "id": "wf-0323",
+   "base": "new",
+   "uz": "yangi",
+   "forms": [
+    "newer"
+   ]
+  },
+  {
+   "id": "wf-0324",
+   "base": "grey",
+   "uz": "kulrang",
+   "forms": [
+    "greyer"
+   ]
+  },
+  {
+   "id": "wf-0325",
+   "base": "small",
+   "uz": "kichik",
+   "forms": [
+    "smaller"
+   ]
+  },
+  {
+   "id": "wf-0326",
+   "base": "high",
+   "uz": "baland (tog')",
+   "forms": [
+    "higher"
+   ]
+  },
+  {
+   "id": "wf-0327",
+   "base": "tall",
+   "uz": "baland (bino, odam)",
+   "forms": [
+    "taller"
+   ]
+  },
+  {
+   "id": "wf-0328",
+   "base": "long",
+   "uz": "uzun",
+   "forms": [
+    "longer"
+   ]
+  },
+  {
+   "id": "wf-0329",
+   "base": "large",
+   "uz": "katta",
+   "forms": [
+    "larger"
+   ]
+  },
+  {
+   "id": "wf-0330",
+   "base": "close",
+   "uz": "yaqin",
+   "forms": [
+    "closer"
+   ]
+  },
+  {
+   "id": "wf-0331",
+   "base": "tiny",
+   "uz": "juda kichkina",
+   "forms": [
+    "tinier"
+   ]
+  },
+  {
+   "id": "wf-0332",
+   "base": "pretty",
+   "uz": "chiroyli",
+   "forms": [
+    "prettier"
+   ]
+  },
+  {
+   "id": "wf-0333",
+   "base": "noisy",
+   "uz": "shovqinli",
+   "forms": [
+    "noisier"
+   ]
+  },
+  {
+   "id": "wf-0334",
+   "base": "friendly",
+   "uz": "do'stona",
+   "forms": [
+    "friendlier",
+    "friendliNESS"
+   ]
+  },
+  {
+   "id": "wf-0335",
+   "base": "happen",
+   "uz": "sodir bo'lmoq",
+   "forms": [
+    "happened"
+   ]
+  },
+  {
+   "id": "wf-0336",
+   "base": "certainly",
+   "uz": "albatta",
+   "forms": [
+    "certain"
+   ]
+  },
+  {
+   "id": "wf-0337",
+   "base": "cosy",
+   "uz": "shinam",
+   "forms": [
+    "cosier"
+   ]
+  },
+  {
+   "id": "wf-0338",
+   "base": "spacious",
+   "uz": "keng",
+   "forms": [
+    "space"
+   ]
+  },
+  {
+   "id": "wf-0339",
+   "base": "polluted",
+   "uz": "ifloslangan",
+   "forms": [
+    "pollution"
+   ]
+  },
+  {
+   "id": "wf-0340",
+   "base": "fashionable",
+   "uz": "moda, zamonaviy",
+   "forms": [
+    "fashion"
+   ]
+  },
+  {
+   "id": "wf-0341",
+   "base": "various",
+   "uz": "turli xil",
+   "forms": [
+    "variety"
+   ]
+  },
+  {
+   "id": "wf-0342",
+   "base": "nice",
+   "uz": "yoqimli",
+   "forms": [
+    "nicer"
+   ]
+  },
+  {
+   "id": "wf-0343",
+   "base": "sunny",
+   "uz": "quyoshli",
+   "forms": [
+    "sunnier"
+   ]
+  },
+  {
+   "id": "wf-0344",
+   "base": "dirty",
+   "uz": "iflos",
+   "forms": [
+    "dirtier"
+   ]
+  },
+  {
+   "id": "wf-0345",
+   "base": "lovely",
+   "uz": "yoqimli",
+   "forms": [
+    "lovelier"
+   ]
+  },
+  {
+   "id": "wf-0346",
+   "base": "probably",
+   "uz": "ehtimol",
+   "forms": [
+    "probable"
+   ]
+  },
+  {
+   "id": "wf-0347",
+   "base": "peaceful",
+   "uz": "tinch, osoyishta",
+   "forms": [
+    "peacefulNESS"
+   ]
+  },
+  {
+   "id": "wf-0348",
+   "base": "peace",
+   "uz": "tinchlik",
+   "forms": [
+    "peaceFUL"
+   ]
+  },
+  {
+   "id": "wf-0349",
+   "base": "absence",
+   "uz": "yo'qlik, uzoqda bo'lish",
+   "forms": [
+    "absent"
+   ]
+  },
+  {
+   "id": "wf-0350",
+   "base": "healthy",
+   "uz": "foydali, sog'lom",
+   "forms": [
+    "health"
+   ]
+  },
+  {
+   "id": "wf-0351",
+   "base": "short",
+   "uz": "past bo'yli",
+   "forms": [
+    "shorter",
+    "shortEN"
+   ]
+  },
+  {
+   "id": "wf-0352",
+   "base": "buy",
+   "uz": "sotib olmoq",
+   "forms": [
+    "buying"
+   ]
+  },
+  {
+   "id": "wf-0353",
+   "base": "excited",
+   "uz": "hayajonlangan",
+   "forms": [
+    "exciting"
+   ]
+  },
+  {
+   "id": "wf-0354",
+   "base": "flour",
+   "uz": "un",
+   "forms": [
+    "flower"
+   ]
+  },
+  {
+   "id": "wf-0355",
+   "base": "loaf",
+   "uz": "non",
+   "forms": [
+    "loaves"
+   ]
+  },
+  {
+   "id": "wf-0356",
+   "base": "knife",
+   "uz": "pichoq",
+   "forms": [
+    "knives"
+   ]
+  },
+  {
+   "id": "wf-0357",
+   "base": "leaf",
+   "uz": "barg",
+   "forms": [
+    "leaves"
+   ]
+  },
+  {
+   "id": "wf-0358",
+   "base": "shelf",
+   "uz": "javon",
+   "forms": [
+    "shelves"
+   ]
+  },
+  {
+   "id": "wf-0359",
+   "base": "exciting",
+   "uz": "qiziqarli, hayajonli",
+   "forms": [
+    "excited"
+   ]
+  },
+  {
+   "id": "wf-0360",
+   "base": "horrible",
+   "uz": "dahshatli",
+   "forms": [
+    "horror",
+    "horribly"
+   ]
+  },
+  {
+   "id": "wf-0361",
+   "base": "pollution",
+   "uz": "ifloslanish",
+   "forms": [
+    "polluted"
+   ]
+  },
+  {
+   "id": "wf-0362",
+   "base": "can",
+   "uz": "ola olmoq; mumkin",
+   "forms": [
+    "cannot"
+   ]
+  },
+  {
+   "id": "wf-0363",
+   "base": "obligation",
+   "uz": "majburiyat",
+   "forms": [
+    "obliged"
+   ]
+  },
+  {
+   "id": "wf-0364",
+   "base": "rudely",
+   "uz": "qo'pol tarzda (RAVISH)",
+   "forms": [
+    "rude"
+   ]
+  },
+  {
+   "id": "wf-0365",
+   "base": "clever",
+   "uz": "-er bilan tugaydi",
+   "forms": [
+    "cleverer"
+   ]
+  },
+  {
+   "id": "wf-0366",
+   "base": "luxurious",
+   "uz": "hashamatli",
+   "forms": [
+    "luxury"
+   ]
+  },
+  {
+   "id": "wf-0367",
+   "base": "regular",
+   "uz": "muntazam",
+   "forms": [
+    "regularly"
+   ]
+  },
+  {
+   "id": "wf-0368",
+   "base": "rude",
+   "uz": "qo'pol, odobsiz",
+   "forms": [
+    "rudely",
+    "rudeness"
+   ]
+  },
+  {
+   "id": "wf-0369",
+   "base": "head",
+   "uz": "bosh",
+   "forms": [
+    "headache"
+   ]
+  },
+  {
+   "id": "wf-0370",
+   "base": "tooth",
+   "uz": "tish",
+   "forms": [
+    "toothache"
+   ]
+  },
+  {
+   "id": "wf-0371",
+   "base": "back",
+   "uz": "bel, orqa",
+   "forms": [
+    "backache"
+   ]
+  },
+  {
+   "id": "wf-0372",
+   "base": "stomach",
+   "uz": "qorin",
+   "forms": [
+    "stomachache"
+   ]
+  },
+  {
+   "id": "wf-0373",
+   "base": "terrible",
+   "uz": "dahshatli, juda qattiq",
+   "forms": [
+    "terribly"
+   ]
+  },
+  {
+   "id": "wf-0374",
+   "base": "separate",
+   "uz": "alohida",
+   "forms": [
+    "separately"
+   ]
+  },
+  {
+   "id": "wf-0375",
+   "base": "useful",
+   "uz": "foydali",
+   "forms": [
+    "useless"
+   ]
+  },
+  {
+   "id": "wf-0376",
+   "base": "dark",
+   "uz": "qorong'i",
+   "forms": [
+    "darkness"
+   ]
+  },
+  {
+   "id": "wf-0377",
+   "base": "easily",
+   "uz": "oson",
+   "forms": [
+    "easy"
+   ]
+  },
+  {
+   "id": "wf-0378",
+   "base": "electricity",
+   "uz": "elektr",
+   "forms": [
+    "electric"
+   ]
+  },
+  {
+   "id": "wf-0379",
+   "base": "bury",
+   "uz": "ko'mmoq",
+   "forms": [
+    "burIED"
+   ]
+  },
+  {
+   "id": "wf-0380",
+   "base": "grandparents",
+   "uz": "bobo-buvi",
+   "forms": [
+    "grandmother",
+    "grandfather"
+   ]
+  },
+  {
+   "id": "wf-0381",
+   "base": "tidy",
+   "uz": "yig'ishtirmoq",
+   "forms": [
+    "TIDIED",
+    "tidied"
+   ]
+  },
+  {
+   "id": "wf-0382",
+   "base": "maths",
+   "uz": "matematika",
+   "forms": [
+    "mathematics"
+   ]
+  },
+  {
+   "id": "wf-0383",
+   "base": "fascinating",
+   "uz": "maftunkor (NARSA)",
+   "forms": [
+    "fascinated"
+   ]
+  },
+  {
+   "id": "wf-0384",
+   "base": "interesting",
+   "uz": "qiziqarli (narsa)",
+   "forms": [
+    "interested"
+   ]
+  },
+  {
+   "id": "wf-0385",
+   "base": "generously",
+   "uz": "saxiylik bilan",
+   "forms": [
+    "generous",
+    "generosity"
+   ]
+  },
+  {
+   "id": "wf-0386",
+   "base": "seriously",
+   "uz": "jiddiy",
+   "forms": [
+    "serious"
+   ]
+  },
+  {
+   "id": "wf-0387",
+   "base": "broad",
+   "uz": "keng",
+   "forms": [
+    "broadEN"
+   ]
+  },
+  {
+   "id": "wf-0388",
+   "base": "deep",
+   "uz": "chuqur",
+   "forms": [
+    "deepEN"
+   ]
+  },
+  {
+   "id": "wf-0389",
+   "base": "weak",
+   "uz": "kuchsiz",
+   "forms": [
+    "weakEN"
+   ]
+  },
+  {
+   "id": "wf-0390",
+   "base": "water",
+   "uz": "suv quymoq",
+   "forms": [
+    "WATERED"
+   ]
+  },
+  {
+   "id": "wf-0391",
+   "base": "cross",
+   "uz": "kesib o'tmoq",
+   "forms": [
+    "CROSSED"
+   ]
+  },
+  {
+   "id": "wf-0392",
+   "base": "gold",
+   "uz": "oltin, oltinrang",
+   "forms": [
+    "golden"
+   ]
+  },
+  {
+   "id": "wf-0393",
+   "base": "'Illusration'",
+   "uz": "kitobda",
+   "forms": [
+    "'IllusTration'"
+   ]
+  },
+  {
+   "id": "wf-0394",
+   "base": "win",
+   "uz": "yutmoq",
+   "forms": [
+    "winNer"
+   ]
+  },
+  {
+   "id": "wf-0395",
+   "base": "publish",
+   "uz": "nashr qilmoq",
+   "forms": [
+    "publisher"
+   ]
+  },
+  {
+   "id": "wf-0396",
+   "base": "fame",
+   "uz": "shuhrat",
+   "forms": [
+    "famous"
+   ]
+  },
+  {
+   "id": "wf-0397",
+   "base": "culture",
+   "uz": "madaniyat",
+   "forms": [
+    "cultural"
+   ]
+  },
+  {
+   "id": "wf-0398",
+   "base": "history",
+   "uz": "tarix",
+   "forms": [
+    "historical"
+   ]
+  },
+  {
+   "id": "wf-0399",
+   "base": "paper",
+   "uz": "gazeta",
+   "forms": [
+    "papers"
+   ]
+  },
+  {
+   "id": "wf-0400",
+   "base": "desk",
+   "uz": "yozuv stoli",
+   "forms": [
+    "desks"
+   ]
+  },
+  {
+   "id": "wf-0401",
+   "base": "train",
+   "uz": "poyezd",
+   "forms": [
+    "trains"
+   ]
+  },
+  {
+   "id": "wf-0402",
+   "base": "boat",
+   "uz": "qayiq",
+   "forms": [
+    "boats"
+   ]
+  },
+  {
+   "id": "wf-0403",
+   "base": "monster",
+   "uz": "maxluq",
+   "forms": [
+    "monsters"
+   ]
+  },
+  {
+   "id": "wf-0404",
+   "base": "hour",
+   "uz": "soat (davomiylik)",
+   "forms": [
+    "hours"
+   ]
+  },
+  {
+   "id": "wf-0405",
+   "base": "count",
+   "uz": "sanamoq",
+   "forms": [
+    "countable"
+   ]
+  },
+  {
+   "id": "wf-0406",
+   "base": "scared",
+   "uz": "qo'rqqan (odam)",
+   "forms": [
+    "scary"
+   ]
+  },
+  {
+   "id": "wf-0407",
+   "base": "surprised",
+   "uz": "hayron (odam)",
+   "forms": [
+    "surprising"
+   ]
+  },
+  {
+   "id": "wf-0408",
+   "base": "interested",
+   "uz": "qiziqqan (odam)",
+   "forms": [
+    "interesting"
+   ]
+  },
+  {
+   "id": "wf-0409",
+   "base": "tired",
+   "uz": "charchagan (odam)",
+   "forms": [
+    "tiring"
+   ]
+  },
+  {
+   "id": "wf-0410",
+   "base": "amazed",
+   "uz": "hayratda (odam)",
+   "forms": [
+    "amazing"
+   ]
+  },
+  {
+   "id": "wf-0411",
+   "base": "windscreen",
+   "uz": "old oyna",
+   "forms": [
+    "windshield"
+   ]
+  },
+  {
+   "id": "wf-0412",
+   "base": "technology",
+   "uz": "texnologiya",
+   "forms": [
+    "technological"
+   ]
+  },
+  {
+   "id": "wf-0413",
+   "base": "Aborigines",
+   "uz": "Avstraliya tub aholisi",
+   "forms": [
+    "Aboriginal"
+   ]
+  },
+  {
+   "id": "wf-0414",
+   "base": "white",
+   "uz": "oq",
+   "forms": [
+    "whitish"
+   ]
+  },
+  {
+   "id": "wf-0415",
+   "base": "bad",
+   "uz": "yomon (SIFAT)",
+   "forms": [
+    "badly"
+   ]
+  },
+  {
+   "id": "wf-0416",
+   "base": "strength",
+   "uz": "kuch",
+   "forms": [
+    "strong"
+   ]
+  },
+  {
+   "id": "wf-0417",
+   "base": "snowy",
+   "uz": "qorli",
+   "forms": [
+    "snow"
+   ]
+  },
+  {
+   "id": "wf-0418",
+   "base": "Portuguese",
+   "uz": "portugaliyalik",
+   "forms": [
+    "Portugal"
+   ]
+  },
+  {
+   "id": "wf-0419",
+   "base": "windy",
+   "uz": "shamolli",
+   "forms": [
+    "wind"
+   ]
+  },
+  {
+   "id": "wf-0420",
+   "base": "foggy",
+   "uz": "tumanli",
+   "forms": [
+    "fog"
+   ]
+  },
+  {
+   "id": "wf-0421",
+   "base": "draw",
+   "uz": "chizmoq",
+   "forms": [
+    "drawn"
+   ]
+  },
+  {
+   "id": "wf-0422",
+   "base": "flee",
+   "uz": "qochmoq",
+   "forms": [
+    "fled",
+    "fled"
+   ]
+  },
+  {
+   "id": "wf-0423",
+   "base": "potato",
+   "uz": "kartoshka",
+   "forms": [
+    "potatOES"
+   ]
+  },
+  {
+   "id": "wf-0424",
+   "base": "hero",
+   "uz": "qahramon",
+   "forms": [
+    "heroES"
+   ]
+  },
+  {
+   "id": "wf-0425",
+   "base": "horror",
+   "uz": "dahshat",
+   "forms": [
+    "horrible"
+   ]
+  },
+  {
+   "id": "wf-0426",
+   "base": "tradition",
+   "uz": "an'ana",
+   "forms": [
+    "traditional"
+   ]
+  },
+  {
+   "id": "wf-0427",
+   "base": "choose",
+   "uz": "tanlamoq",
+   "forms": [
+    "chose",
+    "chosen"
+   ]
+  },
+  {
+   "id": "wf-0428",
+   "base": "practiCe",
+   "uz": "mashq (OT)",
+   "forms": [
+    "practiSe"
+   ]
+  },
+  {
+   "id": "wf-0429",
+   "base": "adviCe",
+   "uz": "maslahat (OT)",
+   "forms": [
+    "adviSe"
+   ]
+  },
+  {
+   "id": "wf-0430",
+   "base": "licenCe",
+   "uz": "litsenziya (OT)",
+   "forms": [
+    "licenSe"
+   ]
+  },
+  {
+   "id": "wf-0431",
+   "base": "bold",
+   "uz": "qalin (harf)",
+   "forms": [
+    "bolder",
+    "boldness",
+    "boldly"
+   ]
+  },
+  {
+   "id": "wf-0432",
+   "base": "born",
+   "uz": "tug'ilgan",
+   "forms": [
+    "unborn",
+    "reborn"
+   ]
+  },
+  {
+   "id": "wf-0433",
+   "base": "busy",
+   "uz": "band",
+   "forms": [
+    "busily",
+    "business",
+    "busier"
+   ]
+  },
+  {
+   "id": "wf-0434",
+   "base": "capital",
+   "uz": "poytaxt",
+   "forms": [
+    "capitalist",
+    "capitalism"
+   ]
+  },
+  {
+   "id": "wf-0435",
+   "base": "coast",
+   "uz": "qirg'oq",
+   "forms": [
+    "coaster",
+    "coastal"
+   ]
+  },
+  {
+   "id": "wf-0436",
+   "base": "cold",
+   "uz": "sovuq",
+   "forms": [
+    "coldness",
+    "colder",
+    "coldly"
+   ]
+  },
+  {
+   "id": "wf-0437",
+   "base": "continuous",
+   "uz": "uzluksiz",
+   "forms": [
+    "discontinuous",
+    "continuously"
+   ]
+  },
+  {
+   "id": "wf-0438",
+   "base": "express",
+   "uz": "ifodalash",
+   "forms": [
+    "expressive",
+    "expressly"
+   ]
+  },
+  {
+   "id": "wf-0439",
+   "base": "fair",
+   "uz": "oq-sariq (soch)",
+   "forms": [
+    "fairly",
+    "fairer",
+    "fairness",
+    "unfair"
+   ]
+  },
+  {
+   "id": "wf-0440",
+   "base": "father",
+   "uz": "ota",
+   "forms": [
+    "fatherly",
+    "fatherless"
+   ]
+  },
+  {
+   "id": "wf-0441",
+   "base": "front",
+   "uz": "old tomon",
+   "forms": [
+    "infront",
+    "frontal"
+   ]
+  },
+  {
+   "id": "wf-0442",
+   "base": "fruit",
+   "uz": "meva",
+   "forms": [
+    "fruitful",
+    "fruitless"
+   ]
+  },
+  {
+   "id": "wf-0443",
+   "base": "heard",
+   "uz": "eshitildi",
+   "forms": [
+    "overheard",
+    "unheard"
+   ]
+  },
+  {
+   "id": "wf-0444",
+   "base": "irregular",
+   "uz": "noto'g'ri (qoidaga bo'ysunmaydigan)",
+   "forms": [
+    "irregularity",
+    "irregularly"
+   ]
+  },
+  {
+   "id": "wf-0445",
+   "base": "join",
+   "uz": "qo'shilmoq",
+   "forms": [
+    "joiner",
+    "rejoin"
+   ]
+  },
+  {
+   "id": "wf-0446",
+   "base": "main",
+   "uz": "asosiy",
+   "forms": [
+    "mainly",
+    "remain"
+   ]
+  },
+  {
+   "id": "wf-0447",
+   "base": "mark",
+   "uz": "baho",
+   "forms": [
+    "remark",
+    "marker"
+   ]
+  },
+  {
+   "id": "wf-0448",
+   "base": "mine",
+   "uz": "meniki",
+   "forms": [
+    "miner",
+    "undermine",
+    "minor"
+   ]
+  },
+  {
+   "id": "wf-0449",
+   "base": "miss",
+   "uz": "sog'inmoq",
+   "forms": [
+    "remiss",
+    "dismiss"
+   ]
+  },
+  {
+   "id": "wf-0450",
+   "base": "modern",
+   "uz": "zamonaviy",
+   "forms": [
+    "modernity",
+    "modernist",
+    "modernism"
+   ]
+  },
+  {
+   "id": "wf-0451",
+   "base": "negative",
+   "uz": "inkor",
+   "forms": [
+    "negativity",
+    "negatively"
+   ]
+  },
+  {
+   "id": "wf-0452",
+   "base": "pen",
+   "uz": "ruchka",
+   "forms": [
+    "pension",
+    "penal"
+   ]
+  },
+  {
+   "id": "wf-0453",
+   "base": "perfect",
+   "uz": "mukammal",
+   "forms": [
+    "perfectly",
+    "imperfect"
+   ]
+  },
+  {
+   "id": "wf-0454",
+   "base": "places",
+   "uz": "joylar",
+   "forms": [
+    "replaces",
+    "displaces"
+   ]
+  },
+  {
+   "id": "wf-0455",
+   "base": "plays",
+   "uz": "o'ynaydi",
+   "forms": [
+    "replays",
+    "displays"
+   ]
+  },
+  {
+   "id": "wf-0456",
+   "base": "plural",
+   "uz": "ko'plik",
+   "forms": [
+    "plurality",
+    "pluralism"
+   ]
+  },
+  {
+   "id": "wf-0457",
+   "base": "popular",
+   "uz": "mashhur",
+   "forms": [
+    "unpopular",
+    "popularity",
+    "popularly"
+   ]
+  },
+  {
+   "id": "wf-0458",
+   "base": "present",
+   "uz": "hozirgi zamon",
+   "forms": [
+    "represent",
+    "presentable",
+    "presently",
+    "presenter"
+   ]
+  },
+  {
+   "id": "wf-0459",
+   "base": "project",
+   "uz": "loyiha",
+   "forms": [
+    "projector",
+    "projective"
+   ]
+  },
+  {
+   "id": "wf-0460",
+   "base": "rent",
+   "uz": "ijara haqi",
+   "forms": [
+    "rental",
+    "renter"
+   ]
+  },
+  {
+   "id": "wf-0461",
+   "base": "repeat",
+   "uz": "takrorlang",
+   "forms": [
+    "repeater",
+    "repeatable"
+   ]
+  },
+  {
+   "id": "wf-0462",
+   "base": "revision",
+   "uz": "takrorlash",
+   "forms": [
+    "revisionist",
+    "revisionism"
+   ]
+  },
+  {
+   "id": "wf-0463",
+   "base": "similar",
+   "uz": "o'xshash",
+   "forms": [
+    "dissimilar",
+    "similarly",
+    "similarity"
+   ]
+  },
+  {
+   "id": "wf-0464",
+   "base": "singular",
+   "uz": "birlik",
+   "forms": [
+    "singularly",
+    "singularity"
+   ]
+  },
+  {
+   "id": "wf-0465",
+   "base": "sweet",
+   "uz": "shirin",
+   "forms": [
+    "sweetness",
+    "sweeter",
+    "sweetly"
+   ]
+  },
+  {
+   "id": "wf-0466",
+   "base": "tense",
+   "uz": "zamon",
+   "forms": [
+    "tensor",
+    "intense"
+   ]
+  },
+  {
+   "id": "wf-0467",
+   "base": "test",
+   "uz": "nazorat ishi",
+   "forms": [
+    "tester",
+    "retest"
+   ]
+  },
+  {
+   "id": "wf-0468",
+   "base": "traditional",
+   "uz": "an'anaviy",
+   "forms": [
+    "traditionalist",
+    "traditionally",
+    "nontraditional"
+   ]
+  },
+  {
+   "id": "wf-0469",
+   "base": "warm",
+   "uz": "iliq, issiq",
+   "forms": [
+    "warmer",
+    "warmly"
+   ]
+  }
+ ]
 }

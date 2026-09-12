@@ -165,6 +165,39 @@ def main(argv=None) -> int:
     topics, families = collect(a.level)
     out = APP_CONTENT / LEVELS[a.level][1]
     out.mkdir(parents=True, exist_ok=True)
+    # Beginner'da eski OCR quvuridan kelgan qisqa umumiy mavzular va
+    # so'z oilalari bor edi — ular yo'qolmasin: oxiriga "Umumiy" deb
+    # qo'shiladi (takror bo'lmasa).
+    old_g = out / "grammar.json"
+    if old_g.exists():
+        seen = {_norm(t["rule_uz"]) for t in topics}
+        for t in json.loads(old_g.read_text(encoding="utf-8")).get("topics", []):
+            if t.get("source"):
+                continue  # allaqachon shu skript yozgan
+            if _norm(t.get("rule_uz", "")) in seen:
+                continue
+            topics.append({
+                "id": f"gr-{len(topics) + 1:03d}",
+                "topic": t["topic"],
+                "rule_uz": t.get("rule_uz", ""),
+                "examples": t.get("examples", []),
+                "module": t.get("module", ""),
+                "unit": 0,
+                "source": "Umumiy qoida",
+            })
+    old_w = out / "word_formation.json"
+    if old_w.exists():
+        have = {_key(f["base"]) for f in families}
+        for f in json.loads(old_w.read_text(encoding="utf-8")).get("families", []):
+            if _key(f.get("base", "")) in have or not f.get("forms"):
+                continue
+            have.add(_key(f["base"]))
+            families.append({
+                "id": f"wf-{len(families) + 1:04d}",
+                "base": f["base"],
+                "uz": f.get("uz", ""),
+                "forms": list(f["forms"]),
+            })
     (out / "grammar.json").write_text(
         json.dumps({"topics": topics}, ensure_ascii=False, indent=1), encoding="utf-8")
     (out / "word_formation.json").write_text(
