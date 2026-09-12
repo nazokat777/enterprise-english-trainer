@@ -1,0 +1,209 @@
+{
+  "book": "workbook",
+  "pdfPage": 50,
+  "bookPage": 52,
+  "unit": 12,
+  "unitTitle": "Holidays with a Difference",
+  "module": 3,
+  "pairsWith": {
+    "coursebook": [85, 86],
+    "noteUz": "Joylashuv (sections), some/any/no birikmalari, mehmonxona buyurtma qilish, taklif qilish coursebook 85-86-betlar grammatika va muloqot bo'limlariga mos keladi."
+  },
+  "scanNote": "WORKBOOK 12-UNITNING UChINChI BETI (52-bet, PDF 50). Yuqorida chapda to'q sariq '12' va 'Holidays with a Difference'.\n\nCHAP USTUN:\n10) 'Look at the plan of Niceville Zoo, then ask and answer questions about the location of each of the [kitobda 'of the of' - takror] animals, using the phrases below.' Qiya: 'south section, south-west section, north-east section, north section, west section, north-west section, east section, south-east section, heart'. SA: Where are the birds located? SB: The birds are located in the north-west section of the zoo. XARITA 'NICEVILLE ZOO' (kompas bilan): shimoli-g'arb - tukan (qushlar); shimol - baliq; shimoli-sharq - fil; g'arb - jirafa; markaz (heart) - pingvin; sharq - kenguru; janubi-g'arb - sher; janub - maymun; janubi-sharq - ilon.\n11) 'Underline the correct word(s) in bold.' 1 Sue needs to buy some/something fruit to make a fruit salad. 2 Tim called Phil's house, but anyone/no one answered the phone. 3 I'm hungry, but I haven't got no/any bread to make a sandwich. 4 Paul doesn't feel well. He isn't going somewhere/anywhere tonight. 5 I'm sure Frank is going to buy Vivienne something/nothing for their anniversary. 6 Do you know no one/anyone by the name of Marilyn Moore? 7 We had any/no mail today. 8 Jimmy does something/nothing but watch TV all day. 9 I feel like going somewhere/anywhere by the sea this weekend. 10 Is there some/any orange juice in the fridge?\n\nO'NG USTUN:\n• 'Communication: Booking a Hotel Room'.\n12) 'Read the dialogue and fill in the gaps with words from the list below.' Qiya: 'double, breakfast, nights, book, bathroom, forward, view, balconies'. A: Royal Hotel. How can I help you? B: Hello. I'd like to 1) ...... a room for two, please. A: Certainly. When would you like it for? B: From the 1st to the 3rd of May. A: All right. With or without a 2) ......? B: With, please. Could you tell me how much that will be? A: The 3) ...... rooms are £60 per night, madam. B: Are there any meals included in the price? A: Yes, a full English 4) ...... is included. B: One last question - could we have a room with a 5) ......? A: Of course. All our rooms have 6) ...... with a fantastic sea view. B: Oh, that'll be lovely! A: Okay. So, that's a double room for two 7) ...... . Could you please give me your name? B: Amanda Wilkinson. A: All right then, Mrs Wilkinson, we look 8) ...... to seeing you on the 1st of May.\n13) 'Use the phrases below to fill in the gaps in the dialogues.' Qiya: 'How about, We could, Would you like to, What shall, Why don't'. a A: 1) ...... we do tonight? B: 2) ...... we go out for dinner? A: Hmm. I'm not really in the mood for that. Have you got any other ideas? B: 3) ...... get something from the Chinese takeaway. A: Oh, yes! That's a good idea. b A: 4) ...... go to the Science Museum tomorrow? B: I'd love to, but I can't. I'm babysitting my little sister. A: 5) ...... going on Saturday, then? B: Yes, that would be fine.\n\nBet raqami: pastda chapda '52'.",
+  "sections": [
+    {
+      "kind": "grammar",
+      "title": "Grammar",
+      "titleUz": "Grammatika",
+      "exercises": [
+        {
+          "ref": "10",
+          "type": "prompt_to_dialogue",
+          "instructionEn": "Look at the plan of Niceville Zoo, then ask and answer questions about the location of each of the animals, using the phrases below: south section, south-west section, north-east section, north section, west section, north-west section, east section, south-east section, heart. Example: SA: Where are the birds located? SB: The birds are located in the north-west section of the zoo.",
+          "instructionUz": "Niceville hayvonot bog'i rejasiga qarang, so'ng har bir hayvonning joylashuvi haqida quyidagi iboralar bilan savol-javob qiling: south section, south-west section, north-east section, north section, west section, north-west section, east section, south-east section, heart. Namuna: SA: Qushlar qayerda joylashgan? SB: Qushlar hayvonot bog'ining shimoli-g'arbiy qismida joylashgan.",
+          "explanationUz": "JOYLAShUV - YO'NALIShLAR\n  (coursebook 85-bet).\n\n  north (N) - shimol\n  south (S) - janub\n  east (E) - sharq\n  west (W) - g'arb\n  north-west - shimoli-g'arb\n  the heart - markaz (yurak)\n\n  QOLIP: X is/are located in the\n  + YO'NALISh + section of the zoo.\n  ⚠ 'in the HEART of' - artikl\n  bilan, 'section' siz.\n\n\nXARITA:\n\n  NW - birds (tukan)\n  N - fish\n  NE - elephants\n  W - giraffes\n  heart - penguins\n  E - kangaroos\n  SW - lions\n  S - monkeys\n  SE - snakes\n\n\n⚠ 'TO BE LOCATED':\n\n  = joylashgan bo'lmoq (majhul).",
+          "bookRef": "Workbook, 52-bet, 10-mashq",
+          "items": [
+            { "n": 1, "prompt": "Qushlar (tukan) - shimoli-g'arb", "question": "Where are the birds located?", "answer": "The birds are located in the north-west section of the zoo.", "given": true, "whyUz": "⚠ NAMUNA." },
+            { "n": 2, "prompt": "Baliqlar - shimol", "question": "Where are the fish located?", "answer": "The fish are located in the north section of the zoo.", "whyUz": "⚠ Xaritada yuqori o'rta." },
+            { "n": 3, "prompt": "Fillar - shimoli-sharq", "question": "Where are the elephants located?", "answer": "The elephants are located in the north-east section of the zoo.", "whyUz": "⚠ Yuqori o'ng." },
+            { "n": 4, "prompt": "Jirafalar - g'arb", "question": "Where are the giraffes located?", "answer": "The giraffes are located in the west section of the zoo.", "whyUz": "⚠ Chap o'rta." },
+            { "n": 5, "prompt": "Pingvinlar - markaz", "question": "Where are the penguins located?", "answer": "The penguins are located in the heart of the zoo.", "whyUz": "⚠ Markaz → 'in the heart of'." },
+            { "n": 6, "prompt": "Kengurular - sharq", "question": "Where are the kangaroos located?", "answer": "The kangaroos are located in the east section of the zoo.", "whyUz": "⚠ O'ng o'rta." },
+            { "n": 7, "prompt": "Sherlar - janubi-g'arb", "question": "Where are the lions located?", "answer": "The lions are located in the south-west section of the zoo.", "whyUz": "⚠ Pastki chap." },
+            { "n": 8, "prompt": "Maymunlar - janub", "question": "Where are the monkeys located?", "answer": "The monkeys are located in the south section of the zoo.", "whyUz": "⚠ Pastki o'rta." },
+            { "n": 9, "prompt": "Ilonlar - janubi-sharq", "question": "Where are the snakes located?", "answer": "The snakes are located in the south-east section of the zoo.", "whyUz": "⚠ Pastki o'ng." }
+          ]
+        },
+        {
+          "ref": "11",
+          "type": "underline_correct",
+          "instructionEn": "Underline the correct word(s) in bold.",
+          "instructionUz": "Qalin harfli to'g'ri so'z(lar)ning tagiga chizing.",
+          "explanationUz": "SOME / ANY / NO BIRIKMALARI\n  (coursebook 86-bet).\n\n  SOME- (tasdiq): some, something,\n    somewhere, someone\n  ANY- (so'roq, inkor): any,\n    anything, anywhere, anyone\n  NO- (inkor ma'no, fe'l tasdiq):\n    no, nothing, nowhere, no one\n\n  ⚠ IKKI INKOR MUMKIN EMAS:\n  'haven't got ANY bread' ('haven't\n  got NO bread' - XATO)\n  'no one answered' (fe'l tasdiq)\n  'We had NO mail' (fe'l tasdiq)\n\n  1 some fruit (tasdiq, sanalmas)\n  2 no one answered (fe'l tasdiq)\n  3 haven't got any (inkor fe'l)\n  4 isn't going anywhere (inkor)\n  5 buy something (tasdiq)\n  6 Do you know anyone (so'roq)\n  7 had no mail (fe'l tasdiq)\n  8 does nothing but (fe'l tasdiq)\n  9 going somewhere (tasdiq)\n  10 Is there any (so'roq)\n\n\n⚠ 'NOTHING BUT':\n\n  = ... dan boshqa hech narsa.\n\n\n⚠ 'I FEEL LIKE + V-ING':\n\n  = ... qilgim kelyapti.\n\n\n⚠ 'AN ANNIVERSARY':\n\n  = yubiley, nikoh kuni.",
+          "bookRef": "Workbook, 52-bet, 11-mashq",
+          "items": [
+            { "textEn": "Sue needs to buy some/something fruit to make a fruit salad.", "uz": "Syu mevali salat uchun meva sotib olishi kerak.", "options": ["some", "something"], "answer": "some", "whyUz": "⚠ 'some' + ot (fruit). 'something' otsiz." },
+            { "textEn": "Tim called Phil's house, but anyone/no one answered the phone.", "uz": "Tim Filning uyiga qo'ng'iroq qildi, lekin hech kim javob bermadi.", "options": ["anyone", "no one"], "answer": "no one", "whyUz": "⚠ Fe'l tasdiq (answered) → 'no one'." },
+            { "textEn": "I'm hungry, but I haven't got no/any bread to make a sandwich.", "uz": "Qornim och, lekin sendvich uchun nonim yo'q.", "options": ["no", "any"], "answer": "any", "whyUz": "⚠ Inkor fe'l (haven't) → 'any'. Ikki inkor mumkin emas." },
+            { "textEn": "Paul doesn't feel well. He isn't going somewhere/anywhere tonight.", "uz": "Pol o'zini yaxshi his qilmayapti. U bugun kechqurun hech qayerga bormaydi.", "options": ["somewhere", "anywhere"], "answer": "anywhere", "whyUz": "⚠ Inkor (isn't) → 'anywhere'." },
+            { "textEn": "I'm sure Frank is going to buy Vivienne something/nothing for their anniversary.", "uz": "Frenk nikoh kuniga Vivyenga biror narsa sotib olishiga ishonchim komil.", "options": ["something", "nothing"], "answer": "something", "whyUz": "⚠ Tasdiq → 'something'." },
+            { "textEn": "Do you know no one/anyone by the name of Marilyn Moore?", "uz": "Merilin Mur ismli birovni bilasizmi?", "options": ["no one", "anyone"], "answer": "anyone", "whyUz": "⚠ So'roq → 'anyone'." },
+            { "textEn": "We had any/no mail today.", "uz": "Bugun bizga xat kelmadi.", "options": ["any", "no"], "answer": "no", "whyUz": "⚠ Fe'l tasdiq (had) → 'no'." },
+            { "textEn": "Jimmy does something/nothing but watch TV all day.", "uz": "Jimmi kun bo'yi televizor ko'rishdan boshqa hech narsa qilmaydi.", "options": ["something", "nothing"], "answer": "nothing", "whyUz": "⚠ 'nothing but' = ... dan boshqa hech narsa." },
+            { "textEn": "I feel like going somewhere/anywhere by the sea this weekend.", "uz": "Bu dam olish kuni dengiz bo'yiga biror joyga borgim kelyapti.", "options": ["somewhere", "anywhere"], "answer": "somewhere", "whyUz": "⚠ Tasdiq → 'somewhere'." },
+            { "textEn": "Is there some/any orange juice in the fridge?", "uz": "Muzlatgichda apelsin sharbati bormi?", "options": ["some", "any"], "answer": "any", "whyUz": "⚠ So'roq → 'any'." }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "communication",
+      "title": "Communication: Booking a Hotel Room",
+      "titleUz": "Muloqot: Mehmonxona xonasini buyurtma qilish",
+      "exercises": [
+        {
+          "ref": "12",
+          "type": "dialogue_fill",
+          "instructionEn": "Read the dialogue and fill in the gaps with words from the list below: double, breakfast, nights, book, bathroom, forward, view, balconies.",
+          "instructionUz": "Dialogni o'qing va bo'shliqlarni quyidagi ro'yxatdagi so'zlar bilan to'ldiring: double, breakfast, nights, book, bathroom, forward, view, balconies.",
+          "explanationUz": "MEHMONXONA BUYURTMASI (coursebook\n  86-bet muloqot).\n\n  I'd like to BOOK a room = xona\n    band qilmoqchiman\n  with or without a BATHROOM =\n    hammomli yoki hammomsiz\n  DOUBLE rooms = ikki kishilik\n    xonalar\n  a full English BREAKFAST = to'liq\n    ingliz nonushtasi\n  a room with a VIEW = manzarali\n    xona\n  BALCONIES = balkonlar\n  for two NIGHTS = ikki kecha\n  look FORWARD to = intiqlik bilan\n    kutmoq\n\n\n⚠ 'A FULL ENGLISH BREAKFAST':\n\n  = tuxum, bekon, sosiska, loviya,\n  pomidor, tost - an'anaviy ingliz\n  nonushtasi.\n\n\n⚠ 'PER NIGHT':\n\n  = bir kecha uchun.\n\n\n⚠ 'INCLUDED IN THE PRICE':\n\n  = narxga kiritilgan.",
+          "bookRef": "Workbook, 52-bet, 12-mashq",
+          "lines": [
+            { "speaker": "A", "en": "Royal Hotel. How can I help you?", "answer": "", "uz": "Royal mehmonxonasi. Qanday yordam bera olaman?", "whyUz": "⚠ Bo'shliq yo'q." },
+            { "speaker": "B", "en": "Hello. I'd like to 1) ___ a room for two, please.", "answer": "book", "uz": "Salom. Ikki kishilik xona band qilmoqchi edim.", "whyUz": "⚠ 'book a room' = xona band qilmoq." },
+            { "speaker": "A", "en": "Certainly. When would you like it for?", "answer": "", "uz": "Albatta. Qachonga?", "whyUz": "⚠ Bo'shliq yo'q." },
+            { "speaker": "B", "en": "From the 1st to the 3rd of May.", "answer": "", "uz": "1-maydan 3-maygacha.", "whyUz": "⚠ Bo'shliq yo'q." },
+            { "speaker": "A", "en": "All right. With or without a 2) ___?", "answer": "bathroom", "uz": "Xo'p. Hammomli yoki hammomsizmi?", "whyUz": "⚠ 'with or without a bathroom'." },
+            { "speaker": "B", "en": "With, please. Could you tell me how much that will be?", "answer": "", "uz": "Hammomli, iltimos. Qancha turishini ayta olasizmi?", "whyUz": "⚠ Bo'shliq yo'q." },
+            { "speaker": "A", "en": "The 3) ___ rooms are £60 per night, madam.", "answer": "double", "uz": "Ikki kishilik xonalar bir kechasi 60 funt, xonim.", "whyUz": "⚠ 'a room for two' → 'double rooms'." },
+            { "speaker": "B", "en": "Are there any meals included in the price?", "answer": "", "uz": "Narxga ovqat kiritilganmi?", "whyUz": "⚠ Bo'shliq yo'q." },
+            { "speaker": "A", "en": "Yes, a full English 4) ___ is included.", "answer": "breakfast", "uz": "Ha, to'liq ingliz nonushtasi kiritilgan.", "whyUz": "⚠ 'a full English breakfast'." },
+            { "speaker": "B", "en": "One last question - could we have a room with a 5) ___?", "answer": "view", "uz": "Oxirgi savol - manzarali xona bo'ladimi?", "whyUz": "⚠ 'a room with a view' (keyingi javob 'sea view')." },
+            { "speaker": "A", "en": "Of course. All our rooms have 6) ___ with a fantastic sea view.", "answer": "balconies", "uz": "Albatta. Barcha xonalarimizda ajoyib dengiz manzarali balkonlar bor.", "whyUz": "⚠ 'balconies with a sea view'." },
+            { "speaker": "B", "en": "Oh, that'll be lovely!", "answer": "", "uz": "O, bu ajoyib bo'ladi!", "whyUz": "⚠ Bo'shliq yo'q." },
+            { "speaker": "A", "en": "Okay. So, that's a double room for two 7) ___ . Could you please give me your name?", "answer": "nights", "uz": "Xo'p. Demak, ikki kechaga ikki kishilik xona. Ismingizni ayta olasizmi?", "whyUz": "⚠ 1-3 may = 2 kecha → 'nights'." },
+            { "speaker": "B", "en": "Amanda Wilkinson.", "answer": "", "uz": "Amanda Uilkinson.", "whyUz": "⚠ Bo'shliq yo'q." },
+            { "speaker": "A", "en": "All right then, Mrs Wilkinson, we look 8) ___ to seeing you on the 1st of May.", "answer": "forward", "uz": "Xo'p, Uilkinson xonim, sizni 1-mayda intiqlik bilan kutamiz.", "whyUz": "⚠ 'look forward to + V-ing'." }
+          ]
+        },
+        {
+          "ref": "13",
+          "type": "dialogue_fill",
+          "instructionEn": "Use the phrases below to fill in the gaps in the dialogues: How about, We could, Would you like to, What shall, Why don't.",
+          "instructionUz": "Quyidagi iboralar bilan dialoglardagi bo'shliqlarni to'ldiring: How about, We could, Would you like to, What shall, Why don't.",
+          "explanationUz": "TAKLIF QILISh (Making\n  Suggestions).\n\n  What shall we do? = nima qilamiz?\n  Why don't we + fe'l? = nega ...\n    qilmaymiz?\n  We could + fe'l = ... qilishimiz\n    mumkin\n  Would you like to + fe'l? = ...\n    xohlaysizmi?\n  How about + V-ing? = ... chi?\n\n  ⚠ 'How about' dan keyin V-ING:\n  'How about GOING on Saturday?'\n\n\n⚠ 'IN THE MOOD FOR':\n\n  = ... ga kayfiyat bor.\n\n\n⚠ 'A CHINESE TAKEAWAY':\n\n  = xitoy taomlari olib ketish\n  do'koni.\n\n\n⚠ 'TO BABYSIT':\n\n  = bolaga qaramoq (enagalik).",
+          "bookRef": "Workbook, 52-bet, 13-mashq",
+          "lines": [
+            { "speaker": "a A", "en": "1) ___ we do tonight?", "answer": "What shall", "uz": "Bugun kechqurun nima qilamiz?", "whyUz": "⚠ 'What shall we do?' - umumiy savol." },
+            { "speaker": "B", "en": "2) ___ we go out for dinner?", "answer": "Why don't", "uz": "Nega kechki ovqatga chiqmaymiz?", "whyUz": "⚠ 'Why don't we + fe'l?' - taklif." },
+            { "speaker": "A", "en": "Hmm. I'm not really in the mood for that. Have you got any other ideas?", "answer": "", "uz": "Hmm. Bunga unchalik kayfiyatim yo'q. Boshqa fikring bormi?", "whyUz": "⚠ Bo'shliq yo'q. Rad etish." },
+            { "speaker": "B", "en": "3) ___ get something from the Chinese takeaway.", "answer": "We could", "uz": "Xitoy taomlari do'konidan biror narsa olishimiz mumkin.", "whyUz": "⚠ 'We could + fe'l' - taklif." },
+            { "speaker": "A", "en": "Oh, yes! That's a good idea.", "answer": "", "uz": "Ha! Yaxshi fikr.", "whyUz": "⚠ Bo'shliq yo'q. Qabul qilish." },
+            { "speaker": "b A", "en": "4) ___ go to the Science Museum tomorrow?", "answer": "Would you like to", "uz": "Ertaga Fan muzeyiga borishni xohlaysanmi?", "whyUz": "⚠ 'Would you like to + fe'l?' - taklif." },
+            { "speaker": "B", "en": "I'd love to, but I can't. I'm babysitting my little sister.", "answer": "", "uz": "Juda xohlardim, lekin ilojim yo'q. Singlimga qarayapman.", "whyUz": "⚠ Bo'shliq yo'q. Muloyim rad etish." },
+            { "speaker": "A", "en": "5) ___ going on Saturday, then?", "answer": "How about", "uz": "Unda shanba kuni borsak-chi?", "whyUz": "⚠ 'How about + V-ing' - 'going'." },
+            { "speaker": "B", "en": "Yes, that would be fine.", "answer": "", "uz": "Ha, bu yaxshi bo'lardi.", "whyUz": "⚠ Bo'shliq yo'q. Qabul qilish." }
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabularyOnPage": [
+    { "en": "a plan", "uz": "reja (xarita)" },
+    { "en": "a zoo", "uz": "hayvonot bog'i" },
+    { "en": "a section", "uz": "qism, bo'lim" },
+    { "en": "north / south / east / west", "uz": "shimol / janub / sharq / g'arb" },
+    { "en": "the heart", "uz": "markaz" },
+    { "en": "located", "uz": "joylashgan" },
+    { "en": "a toucan", "uz": "tukan" },
+    { "en": "a penguin", "uz": "pingvin" },
+    { "en": "a kangaroo", "uz": "kenguru" },
+    { "en": "an anniversary", "uz": "yubiley, nikoh kuni" },
+    { "en": "mail", "uz": "pochta, xatlar" },
+    { "en": "nothing but", "uz": "... dan boshqa hech narsa" },
+    { "en": "to feel like + V-ing", "uz": "... qilgisi kelmoq" },
+    { "en": "to book a room", "uz": "xona band qilmoq" },
+    { "en": "a double room", "uz": "ikki kishilik xona" },
+    { "en": "per night", "uz": "bir kecha uchun" },
+    { "en": "included", "uz": "kiritilgan" },
+    { "en": "a full English breakfast", "uz": "to'liq ingliz nonushtasi" },
+    { "en": "a view", "uz": "manzara" },
+    { "en": "a balcony (balconies)", "uz": "balkon" },
+    { "en": "to look forward to", "uz": "intiqlik bilan kutmoq" },
+    { "en": "a suggestion", "uz": "taklif" },
+    { "en": "in the mood for", "uz": "... ga kayfiyati bor" },
+    { "en": "a takeaway", "uz": "olib ketish taomlari do'koni" },
+    { "en": "to babysit", "uz": "bolaga qaramoq" }
+  ],
+  "sentencePatterns": {
+    "titleUz": "Gap tuzish",
+    "introUz": "Joylashuv, some/any, mehmonxona, taklif.",
+    "patterns": [
+      {
+        "formula": "Where are X located? - X are located in the [yo'nalish] section of the zoo.",
+        "exampleEn": "Where are the lions located? - The lions are located in the south-west section of the zoo.",
+        "exampleUz": "Sherlar qayerda joylashgan? - Sherlar hayvonot bog'ining janubi-g'arbiy qismida joylashgan.",
+        "explanationUz": "⚠ Majhul 'be located'."
+      },
+      {
+        "formula": "I'd like to book a room for two, please.",
+        "exampleEn": "I'd like to book a room for two from the 1st to the 3rd of May.",
+        "exampleUz": "1-maydan 3-maygacha ikki kishilik xona band qilmoqchi edim.",
+        "explanationUz": "⚠ Mehmonxona buyurtmasi."
+      },
+      {
+        "formula": "What shall we do? - Why don't we ...? / We could ... / How about + V-ing?",
+        "exampleEn": "What shall we do tonight? - Why don't we go out for dinner?",
+        "exampleUz": "Bugun kechqurun nima qilamiz? - Nega kechki ovqatga chiqmaymiz?",
+        "explanationUz": "⚠ Taklif qilish."
+      },
+      {
+        "formula": "I'd love to, but I can't. I'm + V-ing.",
+        "exampleEn": "I'd love to, but I can't. I'm babysitting my little sister.",
+        "exampleUz": "Juda xohlardim, lekin ilojim yo'q. Singlimga qarayapman.",
+        "explanationUz": "⚠ Muloyim rad etish."
+      }
+    ]
+  },
+  "wordFormation": {
+    "titleUz": "So'z yasalishi",
+    "introUz": "Betdagi so'zlar.",
+    "groups": [
+      {
+        "ruleUz": "⚠ YO'NALISh + -ERN = SIFAT",
+        "explanationUz": "north → northern va h.k.",
+        "items": [
+          { "base": "north", "baseUz": "shimol", "derived": "northern", "derivedUz": "shimoliy", "note": "" },
+          { "base": "south", "baseUz": "janub", "derived": "southern", "derivedUz": "janubiy", "note": "" },
+          { "base": "east", "baseUz": "sharq", "derived": "eastern", "derivedUz": "sharqiy", "note": "" },
+          { "base": "west", "baseUz": "g'arb", "derived": "western", "derivedUz": "g'arbiy", "note": "" }
+        ]
+      },
+      {
+        "ruleUz": "⚠ SOME- / ANY- / NO- BIRIKMALARI",
+        "explanationUz": "Betdagi 'something', 'anywhere', 'no one', 'nothing'.",
+        "items": [
+          { "base": "some + thing / where / one", "baseUz": "tasdiq", "derived": "something / somewhere / someone", "derivedUz": "biror narsa / biror joy / kimdir", "note": "⚠ betda shu" },
+          { "base": "any + thing / where / one", "baseUz": "so'roq, inkor", "derived": "anything / anywhere / anyone", "derivedUz": "biror narsa / biror joy / birov", "note": "⚠ betda shu" },
+          { "base": "no + thing / where / one", "baseUz": "inkor ma'no", "derived": "nothing / nowhere / no one", "derivedUz": "hech narsa / hech qayer / hech kim", "note": "⚠ betda shu" }
+        ]
+      },
+      {
+        "ruleUz": "⚠ QO'ShMA OT: take + away, baby + sit",
+        "explanationUz": "Betdagi 'takeaway', 'babysit'.",
+        "items": [
+          { "base": "take + away", "baseUz": "olmoq + uzoqqa", "derived": "a takeaway", "derivedUz": "olib ketish taomlari", "note": "⚠ betda shu" },
+          { "base": "baby + sit", "baseUz": "chaqaloq + o'tirmoq", "derived": "to babysit", "derivedUz": "bolaga qaramoq", "note": "⚠ betda shu" }
+        ]
+      },
+      {
+        "ruleUz": "⚠ OT KO'PLIGI: -Y → -IES",
+        "explanationUz": "Betdagi 'balconies'.",
+        "items": [
+          { "base": "a balcony", "baseUz": "balkon", "derived": "balconies", "derivedUz": "balkonlar", "note": "⚠ betda shu" }
+        ]
+      }
+    ]
+  }
+}
