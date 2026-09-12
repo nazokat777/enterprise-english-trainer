@@ -91,3 +91,28 @@ Sozlamalarda "Ovoz effektlari" tugmasi (`progress.sfx`). Haptika:
 ## Qamrovdan tashqari
 
 Onlayn liga/do'stlar, push-bildirishnoma, haqiqiy maskot animatsiyasi.
+
+---
+
+## 2-bosqich (2026-09-12, kechki): hissiy bog'lanish va yo'qotish qo'rquvi
+
+1-bosqich "mukofot" edi; 2-bosqich "MUNOSABAT" va "YO'QOTMASLIK":
+
+* **Hamroh (maskot)** — darajaga qarab evolyutsiya (tuxum → jo'ja → ... →
+  ajdar), kayfiyati bugungi faollikka bog'liq (uxlayapti / xursand /
+  yonib turibdi), gap pufagida kontekstli gaplar. Bosh ekranda va
+  natijada. Endowment + g'amxo'rlik instinkti.
+* **Streak xavfi** — bugun 0 XP bo'lsa bosh ekranda qizil karta + yarim
+  tungacha hisoblagich. Loss aversion (yo'qotish qo'rquvi yutuqdan 2×
+  kuchli).
+* **Faollik xaritasi** — 12 haftalik issiqlik xaritasi (GitHub uslubi).
+  Ko'rinadigan sarmoya = tashlab ketish qiyin.
+* **Kunlik g'ildirak (spin)** — kuniga bir marta, 5 ta to'g'ri javobdan
+  keyin ochiladi; 8 sektor, og'irlikli tasodif. Variable reward + rasm-
+  rusum (ritual).
+* **Baxtli soat** — har kuni sanaga bog'liq 1 soatlik ×2 XP oynasi
+  (08–22 orasida). Header'da hisoblagich. Scarcity + urgency.
+* **Liga ko'tarilishi** — Bronze → ... → Diamond o'tishida to'liq ekran
+  nishonlash.
+
+Dvigatel: `dayXp` (90 kun), `happyHour`, `spin()`, `leagueIndex`.

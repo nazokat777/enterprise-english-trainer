@@ -65,6 +65,16 @@ class RewardEngine extends ChangeNotifier {
   /// Kutilayotgan, hali ochilmagan sandiq (UI navbatida).
   int pendingChests = 0;
 
+  /// Kunlik XP tarixi ('YYYY-MM-DD' → XP), oxirgi 90 kun — issiqlik
+  /// xaritasi uchun. Ko'rinadigan sarmoya = tashlab ketish qiyin.
+  final Map<String, int> dayXp = {};
+
+  /// Kunlik g'ildirak qaysi kuni aylantirilgan.
+  String _spinDay = '';
+
+  /// Oxirgi ko'rilgan liga (ko'tarilishni aniqlash uchun).
+  int _leagueSeen = 0;
+
   final _events = StreamController<RewardEvent>.broadcast();
   Stream<RewardEvent> get events => _events.stream;
 
@@ -162,6 +172,12 @@ class RewardEngine extends ChangeNotifier {
     todayWords = p.getInt('rw_todayWords') ?? 0;
     _questDay = p.getString('rw_questDay') ?? '';
     _goalDay = p.getString('rw_goalDay') ?? '';
+    _spinDay = p.getString('rw_spinDay') ?? '';
+    _leagueSeen = p.getInt('rw_league') ?? 0;
+    final dx = p.getString('rw_dayXp');
+    if (dx != null) {
+      (json.decode(dx) as Map).forEach((k, v) => dayXp[k as String] = (v as num).toInt());
+    }
     allQuestsRewarded = p.getBool('rw_questsRewarded') ?? false;
     final q = p.getString('rw_quests');
     if (q != null) {
@@ -197,6 +213,9 @@ class RewardEngine extends ChangeNotifier {
     await p.setInt('rw_todayWords', todayWords);
     await p.setString('rw_questDay', _questDay);
     await p.setString('rw_goalDay', _goalDay);
+    await p.setString('rw_spinDay', _spinDay);
+    await p.setInt('rw_league', _leagueSeen);
+    await p.setString('rw_dayXp', json.encode(dayXp));
     await p.setBool('rw_questsRewarded', allQuestsRewarded);
     await p.setString('rw_quests', json.encode(quests.map((q) => q.toJson()).toList()));
   }
@@ -214,6 +233,9 @@ class RewardEngine extends ChangeNotifier {
     _dayKey = '';
     _questDay = '';
     _goalDay = '';
+    _spinDay = '';
+    _leagueSeen = 0;
+    dayXp.clear();
     quests = [];
     allQuestsRewarded = false;
     tick();
@@ -272,6 +294,7 @@ class RewardEngine extends ChangeNotifier {
       critsTotal++;
       bonus += baseXp; // XP ×2
     }
+    if (isHappyHour) bonus += baseXp; // baxtli soat: yana ×2
     if (gem) {
       coins += 10;
       _events.add(const RewardEvent.gem(10));
@@ -311,11 +334,18 @@ class RewardEngine extends ChangeNotifier {
     totalXp += amount;
     todayXp += amount;
     if (todayXp > bestDayXp) bestDayXp = todayXp;
+    dayXp[_today] = (dayXp[_today] ?? 0) + amount;
+    _trimDayXp();
     _bumpQuest(QuestKind.xp, amount);
     final after = level;
     if (after > before) {
       _events.add(RewardEvent.levelUp(after, titleFor(after)));
       _checkAchievements();
+    }
+    final lg = leagueIndex;
+    if (lg > _leagueSeen) {
+      _leagueSeen = lg;
+      if (lg > 0) _events.add(RewardEvent.league(lg, leagues[lg]));
     }
     _save();
     notifyListeners();
@@ -383,6 +413,100 @@ class RewardEngine extends ChangeNotifier {
     _save();
     notifyListeners();
     return reward;
+  }
+
+
+  // ─────────────── Liga ───────────────
+  static const List<String> leagues = [
+    'Bronze', 'Silver', 'Gold', 'Sapphire', 'Ruby',
+    'Emerald', 'Amethyst', 'Pearl', 'Obsidian', 'Diamond',
+  ];
+  int get leagueIndex => (totalXp ~/ 500).clamp(0, leagues.length - 1);
+  String get league => leagues[leagueIndex];
+  int get xpToNextLeague =>
+      leagueIndex >= leagues.length - 1 ? 0 : (leagueIndex + 1) * 500 - totalXp;
+
+  // ─────────────── Baxtli soat (×2 XP) ───────────────
+  /// Sanaga bog'liq deterministik soat (08..21). Har kuni boshqa —
+  /// o'quvchi "qachon?" deb ilovani ochib ko'radi.
+  int happyHourFor(DateTime d) {
+    final h = (d.year * 31 + d.month * 7 + d.day * 13) % 14; // 0..13
+    return 8 + h;
+  }
+
+  int get happyHour => happyHourFor(DateTime.now());
+  bool get isHappyHour => DateTime.now().hour == happyHour;
+
+  /// Baxtli soat boshlanishigacha (yoki tugashigacha) qolgan vaqt.
+  Duration get happyHourCountdown {
+    final now = DateTime.now();
+    final start = DateTime(now.year, now.month, now.day, happyHour);
+    if (isHappyHour) return start.add(const Duration(hours: 1)).difference(now);
+    if (now.isBefore(start)) return start.difference(now);
+    // Bugungisi o'tib ketgan — ertangisi.
+    final t = now.add(const Duration(days: 1));
+    return DateTime(t.year, t.month, t.day, happyHourFor(t)).difference(now);
+  }
+
+  bool get happyHourPassedToday => DateTime.now().hour > happyHour;
+
+  // ─────────────── Kunlik g'ildirak ───────────────
+  static const int spinUnlockCorrect = 5;
+  bool get spinDoneToday => _spinDay == _today;
+  bool get spinAvailable => !spinDoneToday && todayCorrect >= spinUnlockCorrect;
+  int get spinRemaining => max(0, spinUnlockCorrect - todayCorrect);
+
+  /// G'ildirak sektorlari (tartib UI bilan bir xil). Og'irliklar:
+  /// kichiklar tez-tez, katta mukofot kam — variable ratio.
+  static const List<SpinSector> spinSectors = [
+    SpinSector('+5 🪙', coins: 5, weight: 22),
+    SpinSector('+10 ⚡', xp: 10, weight: 20),
+    SpinSector('+15 🪙', coins: 15, weight: 16),
+    SpinSector('+25 ⚡', xp: 25, weight: 14),
+    SpinSector('+30 🪙', coins: 30, weight: 10),
+    SpinSector('❄ Muzlatgich', freeze: true, weight: 6),
+    SpinSector('+50 ⚡', xp: 50, weight: 8),
+    SpinSector('JEKPOT 100 🪙', coins: 100, weight: 4),
+  ];
+
+  /// Aylantirish — sektor indeksini qaytaradi (UI o'sha sektorga
+  /// aylantirib to'xtaydi), mukofot darhol yoziladi.
+  int spin() {
+    tick();
+    if (spinDoneToday) return -1;
+    _spinDay = _today;
+    final total = spinSectors.fold<int>(0, (a, b) => a + b.weight);
+    var r = _rng.nextInt(total);
+    var idx = 0;
+    for (var i = 0; i < spinSectors.length; i++) {
+      r -= spinSectors[i].weight;
+      if (r < 0) {
+        idx = i;
+        break;
+      }
+    }
+    coins += spinSectors[idx].coins;
+    _save();
+    notifyListeners();
+    return idx;
+  }
+
+  // ─────────────── Faollik xaritasi ───────────────
+  void _trimDayXp() {
+    if (dayXp.length <= 100) return;
+    final keys = dayXp.keys.toList()..sort();
+    for (final k in keys.take(dayXp.length - 90)) {
+      dayXp.remove(k);
+    }
+  }
+
+  /// Bugungi faollik yo'qmi (streak xavfi).
+  bool get idleToday => (dayXp[_today] ?? 0) == 0;
+
+  /// Yarim tungacha qolgan vaqt.
+  Duration get untilMidnight {
+    final n = DateTime.now();
+    return DateTime(n.year, n.month, n.day + 1).difference(n);
   }
 
   // ─────────────── Kunlik topshiriqlar ───────────────
@@ -569,6 +693,16 @@ class Achievement {
   const Achievement(this.id, this.title, this.desc, this.emoji);
 }
 
+class SpinSector {
+  final String label;
+  final int coins;
+  final int xp;
+  final bool freeze;
+  final int weight;
+  const SpinSector(this.label,
+      {this.coins = 0, this.xp = 0, this.freeze = false, required this.weight});
+}
+
 class ChestReward {
   final int coins;
   final int xp;
@@ -588,6 +722,7 @@ enum RewardKind {
   achievement,
   record,
   dailyGoal,
+  league,
 }
 
 class RewardEvent {
@@ -622,6 +757,8 @@ class RewardEvent {
   const RewardEvent.quest(Quest q) : this._(RewardKind.quest, quest: q);
   const RewardEvent.achievement(Achievement a)
       : this._(RewardKind.achievement, achievement: a);
+  const RewardEvent.league(int index, String name)
+      : this._(RewardKind.league, level: index, text: name);
   const RewardEvent.dailyGoal(int coins) : this._(RewardKind.dailyGoal, amount: coins);
   const RewardEvent.record(String what, int value)
       : this._(RewardKind.record, text: what, amount: value);

@@ -118,6 +118,7 @@ class _RewardOverlayState extends State<RewardOverlay>
       case RewardKind.chest:
       case RewardKind.levelUp:
       case RewardKind.achievement:
+      case RewardKind.league:
         _queue.add(e);
         _pump();
       case RewardKind.quest:
@@ -138,6 +139,8 @@ class _RewardOverlayState extends State<RewardOverlay>
         Sfx.instance.chest();
       case RewardKind.achievement:
         Sfx.instance.achievement();
+      case RewardKind.league:
+        Sfx.instance.levelUp();
       default:
         break;
     }
@@ -308,6 +311,11 @@ class _RewardOverlayState extends State<RewardOverlay>
         big: e.big,
         onClose: _closeModal,
       ),
+      RewardKind.league => _LeagueModal(
+          key: ValueKey('lg${e.level}'),
+          index: e.level,
+          name: e.text,
+          onClose: _closeModal),
       RewardKind.achievement => _AchievementModal(
         key: ValueKey('ach${e.achievement!.id}'),
         a: e.achievement!,
@@ -1149,6 +1157,85 @@ class _AchievementModal extends StatelessWidget {
           ),
         ),
         const Positioned.fill(child: ConfettiBurst(count: 80)),
+      ],
+    );
+  }
+}
+
+class _LeagueModal extends StatelessWidget {
+  final int index;
+  final String name;
+  final VoidCallback onClose;
+  const _LeagueModal(
+      {super.key, required this.index, required this.name, required this.onClose});
+
+  static const _colors = [
+    Color(0xFFB45309), Color(0xFF9CA3AF), Color(0xFFF59E0B), Color(0xFF2563EB),
+    Color(0xFFDC2626), Color(0xFF16A34A), Color(0xFF7C3AED), Color(0xFFE5E7EB),
+    Color(0xFF111827), Color(0xFF06B6D4),
+  ];
+  static const _icons = ['🥉', '🥈', '🥇', '💙', '❤️‍🔥', '💚', '💜', '🤍', '🖤', '💎'];
+
+  @override
+  Widget build(BuildContext context) {
+    final c = _colors[index.clamp(0, _colors.length - 1)];
+    return Stack(
+      children: [
+        _ModalScrim(
+          child: _Pop(
+            child: Container(
+              width: 320,
+              padding: const EdgeInsets.fromLTRB(24, 28, 24, 22),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [c, c.withValues(alpha: 0.7)],
+                ),
+                borderRadius: BorderRadius.circular(24),
+                boxShadow: [
+                  BoxShadow(color: c.withValues(alpha: 0.6), blurRadius: 40, spreadRadius: 4),
+                ],
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text("LIGA KO'TARILDI!",
+                      style: TextStyle(
+                          color: Colors.white70,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 2,
+                          fontSize: 13)),
+                  const SizedBox(height: 12),
+                  Text(_icons[index.clamp(0, _icons.length - 1)],
+                      style: const TextStyle(fontSize: 76)),
+                  const SizedBox(height: 10),
+                  Text(name,
+                      style: const TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.w900, fontSize: 30)),
+                  const SizedBox(height: 4),
+                  Text('${index + 1} / ${RewardEngine.leagues.length} liga',
+                      style: TextStyle(color: Colors.white.withValues(alpha: 0.85))),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    width: double.infinity,
+                    child: FilledButton(
+                      style: FilledButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        foregroundColor: c == const Color(0xFFE5E7EB) ? Colors.black : c,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        textStyle: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16),
+                      ),
+                      onPressed: onClose,
+                      child: const Text('Oldinga!'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        const Positioned.fill(child: ConfettiBurst(count: 160)),
       ],
     );
   }

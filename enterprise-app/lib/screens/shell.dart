@@ -3,6 +3,7 @@ import '../book_content.dart';
 import '../levels.dart';
 import '../main.dart';
 import '../theme.dart';
+import '../reward/companion.dart';
 import '../reward/reward_widgets.dart';
 import '../widgets/geo_bg.dart';
 import 'hard_words_screen.dart';
@@ -142,6 +143,7 @@ class _AppShellState extends State<AppShell> {
                 child: const LevelRing(size: 38),
               ),
               StreakFlame(days: progress.currentStreak),
+              const HappyHourBadge(),
               _DailyRing(progress: progress.dailyProgress, todayXp: progress.todayXp),
               _Stat(icon: Icons.bolt_rounded, color: AppColors.success, value: progress.xp),
               _Stat(icon: Icons.monetization_on_rounded, color: AppColors.coin, value: progress.coins),

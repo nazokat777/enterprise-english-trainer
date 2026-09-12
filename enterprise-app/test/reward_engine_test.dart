@@ -157,4 +157,44 @@ void main() {
     expect(events.where((x) => x.kind == RewardKind.dailyGoal).length, 1);
     expect(e.coins, 10);
   });
+
+  test('gildirak kuniga bir marta, ogirlikli sektor', () async {
+    final e = RewardEngine(random: Random(11));
+    for (var i = 0; i < 5; i++) {
+      e.onAnswer(true);
+    }
+    expect(e.spinAvailable, isTrue);
+    final idx = e.spin();
+    expect(idx, inInclusiveRange(0, RewardEngine.spinSectors.length - 1));
+    expect(e.spinDoneToday, isTrue);
+    expect(e.spin(), -1);
+    // Taqsimot: 2000 aylantirishda jekpot ~4 %.
+    var jack = 0;
+    for (var s = 0; s < 2000; s++) {
+      final f = RewardEngine(random: Random(s));
+      if (f.spin() == 7) jack++;
+    }
+    expect(jack, inInclusiveRange(40, 140));
+  });
+
+  test('baxtli soat 8..21 orasida va sanaga bogliq', () {
+    final e = RewardEngine(random: Random(1));
+    for (var d = 1; d <= 60; d++) {
+      final h = e.happyHourFor(DateTime(2026, 1, 1).add(Duration(days: d)));
+      expect(h, inInclusiveRange(8, 21));
+    }
+    expect(e.happyHourFor(DateTime(2026, 9, 12)), e.happyHourFor(DateTime(2026, 9, 12)));
+  });
+
+  test('liga 500 XP da kotariladi va hodisa chiqadi', () async {
+    final e = RewardEngine(random: Random(1));
+    final events = <RewardEvent>[];
+    e.events.listen(events.add);
+    e.onXp(499);
+    e.onXp(1);
+    await Future<void>.delayed(Duration.zero);
+    expect(e.league, 'Silver');
+    expect(events.where((x) => x.kind == RewardKind.league).length, 1);
+    expect(e.dayXp.values.first, 500);
+  });
 }
