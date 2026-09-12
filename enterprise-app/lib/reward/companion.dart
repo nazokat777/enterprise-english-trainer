@@ -73,7 +73,12 @@ String mascotLine(Random rng) {
         'Yaxshi ketyapmiz! Yana ${r.xpToNext} XP — keyingi daraja.',
         'Bugun ${r.todayCorrect} ta to\'g\'ri. Davom!',
         'Kunlik topshiriqlar seni kutyapti 🎯',
-        r.spinAvailable ? 'G\'ildirak tayyor — aylantir! 🎡' : 'Yana ${r.spinRemaining} ta to\'g\'ri javob — g\'ildirak ochiladi.',
+        if (r.spinAvailable)
+          "G'ildirak tayyor — aylantir! 🎡"
+        else if (!r.spinDoneToday)
+          "Yana ${r.spinRemaining} ta to'g'ri javob — g'ildirak ochiladi."
+        else
+          "Ertaga yana g'ildirak bor. Bugun yana bitta mashq?",
       ]);
     case Mood.happy:
       pool.addAll([
