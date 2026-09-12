@@ -9,6 +9,7 @@ import '../../main.dart';
 import '../../stats.dart';
 import '../../theme.dart';
 import '../../services/tts.dart';
+import '../../reward/reward_engine.dart';
 import '../../reward/reward_widgets.dart';
 import '../../widgets/correct_burst.dart';
 import '../../widgets/explain_text.dart';
@@ -54,6 +55,20 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
 
   /// Navbatdagi o'rin.
   int _pos = 0;
+
+  /// Joriy band OLTIN SAVOLmi (XP ×3) — sahna boshida qur'a.
+  bool _golden = false;
+
+  /// Joriy band qachon ko'rsatildi — tezlik bonusi uchun.
+  DateTime _shownAt = DateTime.now();
+  int _shownFor = -1;
+
+  void _armQuestion() {
+    if (_shownFor == _index) return;
+    _shownFor = _index;
+    _shownAt = DateTime.now();
+    _golden = rewards.rollGolden();
+  }
 
   /// To'g'ri javob berilgan bandlar.
   final Set<int> _mastered = <int>{};
@@ -107,9 +122,11 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   }
 
   /// Band yakunlandi: XP va SRS (lug'at ko'nikmasi).
-  Future<void> _answered(bool ok) async {
+  Future<void> _answered(bool ok, {bool nearMiss = false}) async {
     final taskIndex = _index;
     final firstTime = !_mastered.contains(taskIndex);
+    final elapsed = DateTime.now().difference(_shownAt);
+    final base = _golden ? 2 * RewardEngine.goldenMultiplier : 2;
 
     if (ok) {
       _mastered.add(taskIndex);
@@ -117,15 +134,16 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       // XP faqat BIRINCHI to'g'ri javob uchun — xato qilib, keyin
       // qayta topgan band uchun ikki marta ball berilmasin.
       if (firstTime && _misses[taskIndex] == null) {
-        // Dvigatel KRIT/kombo bonusini qaytaradi — u ham XP ga qo'shiladi.
-        final bonus = rewards.onAnswer(true, baseXp: 2);
-        _xp += 2 + bonus;
-        await progress.addXp(2 + bonus, skill: _skillOf(ex));
+        // Dvigatel KRIT/kombo/tezlik bonusini qaytaradi — u ham XP ga
+        // qo'shiladi.
+        final bonus = rewards.onAnswer(true, baseXp: base, elapsed: elapsed);
+        _xp += base + bonus;
+        await progress.addXp(base + bonus, skill: _skillOf(ex));
       } else {
         rewards.onAnswer(true, baseXp: 0);
       }
     } else {
-      rewards.onAnswer(false);
+      rewards.onAnswer(false, nearMiss: nearMiss);
       _misses[taskIndex] = (_misses[taskIndex] ?? 0) + 1;
       await _noteWeakWord(ex.tasks[taskIndex]);
     }
@@ -362,10 +380,12 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   }
 
   Widget _stage() {
+    if (ex.kind == ExKind.choice || ex.kind == ExKind.text) _armQuestion();
     switch (ex.kind) {
       case ExKind.choice:
         return _ChoiceStage(
           key: ValueKey('c$_index'),
+          golden: _golden,
           task: ex.tasks[_index],
           explanation: _index == 0 ? ex.explanationUz : '',
           // Audio izohi HAR BIR bandda ko'rinadi: u mashqni qanday
@@ -378,10 +398,12 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       case ExKind.text:
         return _BuildStage(
           key: ValueKey('t$_index'),
+          golden: _golden,
           task: ex.tasks[_index],
           explanation: _index == 0 ? ex.explanationUz : '',
           audioNote: ex.audioNoteUz,
           onDone: _answered,
+          onNearMiss: () => _answered(false, nearMiss: true),
         );
       case ExKind.match:
         return _MatchStage(
@@ -707,6 +729,7 @@ class _ChoiceStage extends StatefulWidget {
   final String explanation;
   final String audioNote;
   final ValueChanged<bool> onDone;
+  final bool golden;
 
   const _ChoiceStage({
     super.key,
@@ -714,6 +737,7 @@ class _ChoiceStage extends StatefulWidget {
     required this.explanation,
     this.audioNote = '',
     required this.onDone,
+    this.golden = false,
   });
 
   @override
@@ -743,7 +767,7 @@ class _ChoiceStageState extends State<_ChoiceStage> {
     if (_chosen != null) return;
     final ok = widget.task.isCorrect(o);
     setState(() => _chosen = o);
-    if (ok) showCorrectBurst(context);
+    if (ok) showCorrectBurst(context, text: cheer(_rnd));
     Tts.instance.speak(widget.task.speakAnswer, id: 'ex');
     _advance = Timer(Duration(milliseconds: ok ? 900 : 1900), () {
       if (mounted) widget.onDone(ok);
@@ -759,6 +783,7 @@ class _ChoiceStageState extends State<_ChoiceStage> {
       children: [
         ExplanationCard(text: widget.explanation),
         AudioNoteCard(text: widget.audioNote),
+        if (widget.golden) const GoldenBanner(),
         Container(
           width: double.infinity,
           padding: const EdgeInsets.all(20),
@@ -874,6 +899,8 @@ class _BuildStage extends StatefulWidget {
   final String explanation;
   final String audioNote;
   final ValueChanged<bool> onDone;
+  final VoidCallback? onNearMiss;
+  final bool golden;
 
   const _BuildStage({
     super.key,
@@ -881,6 +908,8 @@ class _BuildStage extends StatefulWidget {
     required this.explanation,
     this.audioNote = '',
     required this.onDone,
+    this.onNearMiss,
+    this.golden = false,
   });
 
   @override
@@ -892,6 +921,26 @@ class _BuildStageState extends State<_BuildStage> {
   late List<String> _pieces;
   final List<int> _picked = [];
   bool? _result;
+  bool _near = false;
+
+  /// Levenshtein masofasi (kichik satrlar uchun yetarli).
+  static int _editDistance(String a, String b) {
+    if (a == b) return 0;
+    final m = a.length, n = b.length;
+    if (m == 0) return n;
+    if (n == 0) return m;
+    var prev = List<int>.generate(n + 1, (j) => j);
+    for (var i = 1; i <= m; i++) {
+      final cur = List<int>.filled(n + 1, 0);
+      cur[0] = i;
+      for (var j = 1; j <= n; j++) {
+        final cost = a.codeUnitAt(i - 1) == b.codeUnitAt(j - 1) ? 0 : 1;
+        cur[j] = min(min(cur[j - 1] + 1, prev[j] + 1), prev[j - 1] + cost);
+      }
+      prev = cur;
+    }
+    return prev[n];
+  }
   Timer? _advance;
 
   @override
@@ -923,11 +972,23 @@ class _BuildStageState extends State<_BuildStage> {
   void _check() {
     final built = _picked.map((k) => _pieces[k]).join(widget.task.buildSeparator);
     final ok = widget.task.isCorrect(built);
-    setState(() => _result = ok);
-    if (ok) showCorrectBurst(context);
+    // YAQIN XATO: bitta belgi farq — "deyarli" deb aytiladi (near-miss).
+    final near = !ok &&
+        widget.onNearMiss != null &&
+        _editDistance(built.toLowerCase(), widget.task.answer.toLowerCase()) <= 1;
+    setState(() {
+      _result = ok;
+      _near = near;
+    });
+    if (ok) showCorrectBurst(context, text: cheer(_rnd));
     Tts.instance.speak(widget.task.speakAnswer, id: 'ex');
     _advance = Timer(Duration(milliseconds: ok ? 950 : 2100), () {
-      if (mounted) widget.onDone(ok);
+      if (!mounted) return;
+      if (near) {
+        widget.onNearMiss!();
+      } else {
+        widget.onDone(ok);
+      }
     });
   }
 
@@ -941,6 +1002,8 @@ class _BuildStageState extends State<_BuildStage> {
       children: [
         ExplanationCard(text: widget.explanation),
         AudioNoteCard(text: widget.audioNote),
+        if (widget.golden) const GoldenBanner(),
+        if (_near) const NearMissNote(),
         if (t.visual.isNotEmpty) ...[
           Center(child: TaskVisual(visual: t.visual, size: 64)),
           const SizedBox(height: 12),

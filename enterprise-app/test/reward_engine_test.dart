@@ -197,4 +197,31 @@ void main() {
     expect(events.where((x) => x.kind == RewardKind.league).length, 1);
     expect(e.dayXp.values.first, 500);
   });
+
+  test('tezlik va qaytish bonuslari, yaqin xato hodisasi', () async {
+    final e = RewardEngine(random: Random(21));
+    final events = <RewardEvent>[];
+    e.events.listen(events.add);
+    // Sekin javob - tezlik bonusi yo'q.
+    e.onAnswer(true, baseXp: 2, elapsed: const Duration(seconds: 5));
+    // Xato (yaqin) -> keyin to'g'ri va tez.
+    e.onAnswer(false, nearMiss: true);
+    final b = e.onAnswer(true, baseXp: 2, elapsed: const Duration(milliseconds: 800));
+    await Future<void>.delayed(Duration.zero);
+    expect(events.any((x) => x.kind == RewardKind.nearMiss), isTrue);
+    expect(events.where((x) => x.kind == RewardKind.wrong), isEmpty);
+    expect(events.any((x) => x.kind == RewardKind.comeback), isTrue);
+    expect(events.any((x) => x.kind == RewardKind.speed), isTrue);
+    expect(b >= 2, isTrue);
+    expect(e.speedTotal, 1);
+  });
+
+  test('oltin savol taxminan 8 % chiqadi', () {
+    final e = RewardEngine(random: Random(3));
+    var g = 0;
+    for (var i = 0; i < 5000; i++) {
+      if (e.rollGolden()) g++;
+    }
+    expect(g, inInclusiveRange(300, 500));
+  });
 }

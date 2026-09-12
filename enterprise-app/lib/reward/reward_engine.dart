@@ -44,6 +44,20 @@ class RewardEngine extends ChangeNotifier {
   /// Sessiya kombosi (ilova yopilguncha; xato → 0).
   int combo = 0;
 
+  /// Oldingi javob xato edimi — "qaytish" bonusi uchun.
+  bool _lastWrong = false;
+
+  /// Tez javoblar soni (statistika).
+  int speedTotal = 0;
+
+  /// Oltin savollar: kutilish (anticipation) — javobdan OLDIN e'lon
+  /// qilinadi, XP ×3.
+  static const double goldenChance = 0.08;
+  static const int goldenMultiplier = 3;
+
+  /// Keyingi savol oltinmi — sahna boshida bir marta so'raladi.
+  bool rollGolden() => _rng.nextDouble() < goldenChance;
+
   /// Sandiqgacha qolgan to'g'ri javoblar (5–9 tasodifiy).
   int _toChest = 0;
 
@@ -264,18 +278,35 @@ class RewardEngine extends ChangeNotifier {
   /// Bitta band javobi. `baseXp` — mashq bergan asosiy XP (odatda 2).
   /// Qaytaradi: dvigatel QO'ShGAN bonus XP (krit/kombo) — chaqiruvchi
   /// uni `Progress.addXp` ga uzatadi.
-  int onAnswer(bool ok, {int baseXp = 2}) {
+  int onAnswer(bool ok, {int baseXp = 2, Duration? elapsed, bool nearMiss = false}) {
     tick();
     var bonus = 0;
     if (!ok) {
       wrongTotal++;
       combo = 0;
-      _events.add(const RewardEvent.wrong());
+      _lastWrong = true;
+      // "Deyarli!" — yaqin xato: miya buni deyarli g'alaba deb o'qiydi
+      // (near-miss effekti); umidsizlik o'rniga "yana bir urinish".
+      _events.add(nearMiss ? const RewardEvent.nearMiss() : const RewardEvent.wrong());
       _save();
       notifyListeners();
       return 0;
     }
     correctTotal++;
+    // QAYTISh: xatodan keyingi birinchi to'g'ri javob — alohida
+    // mukofot. Muvaffaqiyatsizlikdan keyin tashlab ketish eng ko'p
+    // shu nuqtada bo'ladi; darhol tiklanish hissi uni yopadi.
+    if (_lastWrong) {
+      _lastWrong = false;
+      bonus += 1;
+      _events.add(const RewardEvent.comeback(1));
+    }
+    // TEZLIK: 3 soniyadan tez — ravonlik (fluency) mukofoti.
+    if (elapsed != null && elapsed.inMilliseconds < 3000 && baseXp > 0) {
+      speedTotal++;
+      bonus += 1;
+      _events.add(const RewardEvent.speed(1));
+    }
     todayCorrect++;
     combo++;
     if (combo > bestCombo) {
@@ -498,6 +529,22 @@ class RewardEngine extends ChangeNotifier {
     for (final k in keys.take(dayXp.length - 90)) {
       dayXp.remove(k);
     }
+  }
+
+  /// Oxirgi 7 kun XP va undan oldingi 7 kun XP — haftalik o'sish.
+  (int, int) weeklyXp() {
+    final now = DateTime.now();
+    var cur = 0, prev = 0;
+    for (var i = 0; i < 14; i++) {
+      final d = now.subtract(Duration(days: i));
+      final v = dayXp[_fmt(d)] ?? 0;
+      if (i < 7) {
+        cur += v;
+      } else {
+        prev += v;
+      }
+    }
+    return (cur, prev);
   }
 
   /// Bugungi faollik yo'qmi (streak xavfi).
@@ -723,6 +770,9 @@ enum RewardKind {
   record,
   dailyGoal,
   league,
+  speed,
+  comeback,
+  nearMiss,
 }
 
 class RewardEvent {
@@ -757,6 +807,9 @@ class RewardEvent {
   const RewardEvent.quest(Quest q) : this._(RewardKind.quest, quest: q);
   const RewardEvent.achievement(Achievement a)
       : this._(RewardKind.achievement, achievement: a);
+  const RewardEvent.speed(int bonus) : this._(RewardKind.speed, amount: bonus);
+  const RewardEvent.comeback(int bonus) : this._(RewardKind.comeback, amount: bonus);
+  const RewardEvent.nearMiss() : this._(RewardKind.nearMiss);
   const RewardEvent.league(int index, String name)
       : this._(RewardKind.league, level: index, text: name);
   const RewardEvent.dailyGoal(int coins) : this._(RewardKind.dailyGoal, amount: coins);

@@ -336,6 +336,10 @@ class ActivityHeatmap extends StatelessWidget {
         final start = today.subtract(Duration(days: weeks * 7 - 1 + (today.weekday - 1)));
         final activeDays = rewards.dayXp.values.where((v) => v > 0).length;
         final totalXp = rewards.dayXp.values.fold<int>(0, (a, b) => a + b);
+        // Haftalik o'sish — "o'tgan haftadan ko'proq" (o'z-o'zi bilan
+        // raqobat: ijtimoiy taqqoslashsiz, lekin xuddi shunday kuchli).
+        final (cur, prev) = rewards.weeklyXp();
+        final delta = prev == 0 ? null : ((cur - prev) * 100 / prev).round();
         return Container(
           padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
           decoration: BoxDecoration(
@@ -356,6 +360,22 @@ class ActivityHeatmap extends StatelessWidget {
                   ),
                   Text('$activeDays kun · $totalXp XP',
                       style: TextStyle(fontSize: 11, color: AppColors.muted(context))),
+                  if (delta != null) ...[
+                    const SizedBox(width: 6),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: (delta >= 0 ? AppColors.success : AppColors.homework)
+                            .withValues(alpha: 0.14),
+                        borderRadius: BorderRadius.circular(AppRadius.pill),
+                      ),
+                      child: Text('${delta >= 0 ? '+' : ''}$delta% hafta',
+                          style: TextStyle(
+                              fontSize: 10.5,
+                              fontWeight: FontWeight.w900,
+                              color: delta >= 0 ? AppColors.success : AppColors.homework)),
+                    ),
+                  ],
                 ],
               ),
               const SizedBox(height: 10),

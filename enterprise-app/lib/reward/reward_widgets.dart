@@ -508,3 +508,89 @@ String cheer(Random rng) {
   ];
   return w[rng.nextInt(w.length)];
 }
+
+/// OLTIN SAVOL — javobdan oldin e'lon: kutilish (anticipation) dofamini.
+class GoldenBanner extends StatefulWidget {
+  const GoldenBanner({super.key});
+  @override
+  State<GoldenBanner> createState() => _GoldenBannerState();
+}
+
+class _GoldenBannerState extends State<GoldenBanner>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _c =
+      AnimationController(vsync: this, duration: const Duration(milliseconds: 900))
+        ..repeat(reverse: true, count: 10);
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _c,
+      builder: (_, child) {
+        final v = Curves.easeInOut.transform(_c.value);
+        return Container(
+          margin: const EdgeInsets.only(bottom: 12),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+                colors: [Color(0xFFF59E0B), Color(0xFFFDE68A), Color(0xFFF59E0B)]),
+            borderRadius: BorderRadius.circular(AppRadius.md),
+            boxShadow: [
+              BoxShadow(
+                  color: AppColors.coin.withValues(alpha: 0.35 + 0.35 * v),
+                  blurRadius: 14 + 14 * v,
+                  spreadRadius: 1 + 2 * v),
+            ],
+          ),
+          child: child,
+        );
+      },
+      child: const Row(
+        children: [
+          Text('🌟', style: TextStyle(fontSize: 20)),
+          SizedBox(width: 10),
+          Expanded(
+            child: Text("OLTIN SAVOL — to'g'ri javob 3 barobar XP!",
+                style: TextStyle(
+                    color: Color(0xFF3B2A00),
+                    fontWeight: FontWeight.w900,
+                    fontSize: 14)),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// "Deyarli!" — yaqin xato izohi (near-miss).
+class NearMissNote extends StatelessWidget {
+  const NearMissNote({super.key});
+  @override
+  Widget build(BuildContext context) {
+    const c = Color(0xFFF97316);
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      decoration: BoxDecoration(
+        color: c.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        border: Border.all(color: c.withValues(alpha: 0.6)),
+      ),
+      child: const Row(
+        children: [
+          Text('🎯', style: TextStyle(fontSize: 18)),
+          SizedBox(width: 10),
+          Expanded(
+            child: Text('Deyarli! Faqat bitta harf farq — bu band yana keladi.',
+                style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13, color: c)),
+          ),
+        ],
+      ),
+    );
+  }
+}

@@ -516,11 +516,20 @@ class _UnitCard extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 4),
-                        Text('$done / ${brief.exercises} mashq tugatildi',
-                            style: const TextStyle(
+                        // "Yana N ta qoldi" — maqsadga yaqinlashgan
+                        // sari intilish kuchayadi (goal gradient).
+                        Text(
+                            done >= brief.exercises
+                                ? '$done / ${brief.exercises} — unit tugatildi'
+                                : (brief.exercises - done <= 5
+                                    ? 'Yana ${brief.exercises - done} ta qoldi — oz qoldi!'
+                                    : '$done / ${brief.exercises} mashq tugatildi'),
+                            style: TextStyle(
                                 fontSize: 11.5,
                                 fontWeight: FontWeight.w700,
-                                color: AppColors.brandPurple)),
+                                color: brief.exercises - done <= 5 && done < brief.exercises
+                                    ? AppColors.homework
+                                    : AppColors.brandPurple)),
                       ],
                     ],
                   ),

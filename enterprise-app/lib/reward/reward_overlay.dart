@@ -93,6 +93,13 @@ class _RewardOverlayState extends State<RewardOverlay>
         sfx.wrong();
         _wrongFlash.forward(from: 0);
         setState(() {});
+      case RewardKind.nearMiss:
+        sfx.tick();
+        _float('Deyarli! 1 harf farq', color: const Color(0xFFF97316), big: true);
+      case RewardKind.speed:
+        _float('TEZ! +${e.amount} ⚡', color: const Color(0xFF06B6D4));
+      case RewardKind.comeback:
+        _float('QAYTISh! +${e.amount} ⚡', color: AppColors.brandPurple, big: true);
       case RewardKind.gem:
         sfx.coin();
         progress.addCoins(e.amount);

@@ -116,3 +116,21 @@ Onlayn liga/do'stlar, push-bildirishnoma, haqiqiy maskot animatsiyasi.
   nishonlash.
 
 Dvigatel: `dayXp` (90 kun), `happyHour`, `spin()`, `leagueIndex`.
+
+## 3-bosqich: lahza ichidagi his (micro-moments)
+
+* **Oltin savol** — 8 % savol oldindan "×3 XP" deb e'lon qilinadi
+  (anticipation dofamini javobdan OLDIN chiqadi).
+* **Tezlik bonusi** — 3 soniyadan tez to'g'ri javob → "TEZ! +1"
+  (ravonlik/fluency, arousal).
+* **Qaytish bonusi** — xatodan keyingi birinchi to'g'ri javob →
+  "QAYTISh! +1". Tashlab ketish eng ko'p xatodan keyin bo'ladi; darhol
+  tiklanish hissi uni yopadi (resilience).
+* **Deyarli!** — yig'ish mashqida 1 harf farq bo'lsa "near-miss" izohi:
+  miya buni deyarli g'alaba deb o'qiydi, umidsizlik o'rniga urinish.
+* **Rag'bat so'zlari** — "To'g'ri" o'rniga har safar boshqa so'z
+  (Zo'r! Qoyil! Barakalla! ...) — kutilmaganlik.
+* **Haftalik o'sish** — faollik xaritasida "+40 % hafta" (o'z-o'zi bilan
+  raqobat).
+* **"Yana N ta qoldi — oz qoldi!"** — unit kartasida 5 va undan kam
+  mashq qolganda (goal gradient).
