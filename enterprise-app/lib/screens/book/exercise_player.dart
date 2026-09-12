@@ -9,6 +9,7 @@ import '../../main.dart';
 import '../../stats.dart';
 import '../../theme.dart';
 import '../../services/tts.dart';
+import '../../reward/reward_widgets.dart';
 import '../../widgets/correct_burst.dart';
 import '../../widgets/explain_text.dart';
 import '../../widgets/pressable3d.dart';
@@ -111,10 +112,15 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       // XP faqat BIRINCHI to'g'ri javob uchun — xato qilib, keyin
       // qayta topgan band uchun ikki marta ball berilmasin.
       if (firstTime && _misses[taskIndex] == null) {
-        _xp += 2;
-        await progress.addXp(2, skill: _skillOf(ex));
+        // Dvigatel KRIT/kombo bonusini qaytaradi — u ham XP ga qo'shiladi.
+        final bonus = rewards.onAnswer(true, baseXp: 2);
+        _xp += 2 + bonus;
+        await progress.addXp(2 + bonus, skill: _skillOf(ex));
+      } else {
+        rewards.onAnswer(true, baseXp: 0);
       }
     } else {
+      rewards.onAnswer(false);
       _misses[taskIndex] = (_misses[taskIndex] ?? 0) + 1;
       await _noteWeakWord(ex.tasks[taskIndex]);
     }
@@ -176,6 +182,10 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     // u "takrorlash kerak" bo'lib qoladi va ro'yxatda shunday
     // ko'rsatiladi — bir marta ochib chiqish yetarli emas.
     progress.markExerciseResult(id, clean: _cleanRun, unit: ex.unitNo);
+    if (ex.kind != ExKind.study) {
+      rewards.onExerciseDone(clean: _cleanRun);
+      if (ex.kind == ExKind.match) rewards.onWordLearned(_correct);
+    }
     if (first) {
       progress.addXp(3); // mashqni tugatgani uchun bonus
       _xp += 3;
@@ -450,6 +460,10 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                 color: good ? AppColors.success : AppColors.homework),
           ),
         ),
+        if (ex.kind != ExKind.study) ...[
+          const SizedBox(height: 16),
+          ResultStatsRow(xp: _xp, clean: _cleanRun),
+        ],
         // Moslashda bandlar `_MatchStage` ichida sanaladi — nechtasi
         // birinchi urinishda topilgani `_correct` da.
         if (ex.kind == ExKind.match && _correct < total) ...[

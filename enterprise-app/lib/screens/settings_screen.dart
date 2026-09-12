@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../main.dart';
 import '../stats.dart';
 import '../services/tts.dart';
+import '../reward/reward_engine.dart';
+import '../reward/reward_widgets.dart';
 import '../theme.dart';
 
 /// SOZLAMALAR — ilgari "keyingi fazalarda" degan bo'sh ekran edi.
@@ -32,6 +34,10 @@ class SettingsScreen extends StatelessWidget {
           _GoalCard(),
           const SizedBox(height: 10),
           _DarkCard(),
+          const SizedBox(height: 10),
+          const _SfxCard(),
+          const SizedBox(height: 10),
+          const _AchievementsCard(),
           const SizedBox(height: 10),
           const _VoiceCard(),
           const SizedBox(height: 10),
@@ -127,6 +133,72 @@ class _DarkCard extends StatelessWidget {
             onChanged: (_) => progress.toggleDark(),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _SfxCard extends StatelessWidget {
+  const _SfxCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return _Card(
+      child: Row(
+        children: [
+          Icon(progress.sfx ? Icons.volume_up_rounded : Icons.volume_off_rounded),
+          const SizedBox(width: 12),
+          const Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Ovoz effektlari',
+                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+                Text("To'g'ri javob, kombo, sandiq, daraja ovozlari",
+                    style: TextStyle(fontSize: 12)),
+              ],
+            ),
+          ),
+          Switch(
+            value: progress.sfx,
+            onChanged: (_) => progress.toggleSfx(),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _AchievementsCard extends StatelessWidget {
+  const _AchievementsCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final got = rewards.achievements.length;
+    final all = RewardEngine.allAchievements.length;
+    return _Card(
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(builder: (_) => const AchievementsScreen())),
+        child: Row(
+          children: [
+            const Text('🏆', style: TextStyle(fontSize: 22)),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Yutuqlar',
+                      style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+                  Text('$got / $all medal · ${rewards.level}-daraja · ${rewards.title}',
+                      style: const TextStyle(fontSize: 12)),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right_rounded),
+          ],
+        ),
       ),
     );
   }
@@ -437,6 +509,9 @@ class _ResetCard extends StatelessWidget {
         ],
       ),
     );
-    if (yes == true) await progress.resetAll();
+    if (yes == true) {
+      await progress.resetAll();
+      await rewards.resetAll();
+    }
   }
 }

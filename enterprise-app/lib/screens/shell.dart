@@ -3,6 +3,7 @@ import '../book_content.dart';
 import '../levels.dart';
 import '../main.dart';
 import '../theme.dart';
+import '../reward/reward_widgets.dart';
 import '../widgets/geo_bg.dart';
 import 'hard_words_screen.dart';
 import 'level_reference_screens.dart';
@@ -135,7 +136,12 @@ class _AppShellState extends State<AppShell> {
             spacing: 12,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
-              _StreakBadge(streak: progress.currentStreak),
+              GestureDetector(
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (_) => const AchievementsScreen())),
+                child: const LevelRing(size: 38),
+              ),
+              StreakFlame(days: progress.currentStreak),
               _DailyRing(progress: progress.dailyProgress, todayXp: progress.todayXp),
               _Stat(icon: Icons.bolt_rounded, color: AppColors.success, value: progress.xp),
               _Stat(icon: Icons.monetization_on_rounded, color: AppColors.coin, value: progress.coins),
@@ -356,26 +362,6 @@ class _LevelSwitcher extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-class _StreakBadge extends StatelessWidget {
-  final int streak;
-  const _StreakBadge({required this.streak});
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        const Text('🔥', style: TextStyle(fontSize: 18)),
-        const SizedBox(width: 3),
-        Text('$streak',
-            style: const TextStyle(
-                fontWeight: FontWeight.w800,
-                fontSize: 16,
-                color: AppColors.homework)),
-      ],
     );
   }
 }

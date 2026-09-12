@@ -4,10 +4,16 @@ import 'stats.dart';
 import 'content.dart';
 import 'book_content.dart';
 import 'mastery.dart';
+import 'reward/reward_engine.dart';
+import 'reward/reward_overlay.dart';
+import 'reward/sfx.dart';
 import 'screens/shell.dart';
 
 /// Global foydalanuvchi holati (bitta foydalanuvchi — egasi).
 late Progress progress;
+
+/// Dofamin dvigateli — `reward/reward_engine.dart`.
+RewardEngine rewards = RewardEngine();
 
 /// Band darajasidagi o'zlashtirish — `mastery.dart`.
 late MasteryStore mastery;
@@ -26,6 +32,7 @@ Future<void> main() async {
   book = BookRepository();
   await Future.wait([
     progress.load(),
+    rewards.load(),
     mastery.load(),
     repo.load(),
     book.loadIndex(),
@@ -53,6 +60,10 @@ class EnterpriseApp extends StatelessWidget {
         theme: AppTheme.light,
         darkTheme: AppTheme.dark,
         themeMode: progress.darkMode ? ThemeMode.dark : ThemeMode.light,
+        builder: (context, child) {
+          Sfx.instance.enabled = progress.sfx;
+          return RewardOverlay(child: child ?? const SizedBox());
+        },
         home: const AppShell(),
       ),
     );

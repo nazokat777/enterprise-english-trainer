@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import '../main.dart' show rewards;
 import '../mastery.dart';
 import 'drill_item.dart';
 
@@ -138,6 +139,7 @@ class DrillSession {
     if (q == null) return;
 
     await mastery.record(q.itemId, q.format, ok: ok);
+    rewards.onAnswer(ok, baseXp: 0); // XP sessiya oxirida beriladi
 
     if (ok) {
       _combo += 1;
@@ -286,6 +288,7 @@ class DrillSession {
       final ok = clean.contains(p.itemId);
       await mastery.record(p.itemId, AskFormat.match, ok: ok);
     }
+    rewards.onAnswer(clean.length == q.pairs.length, baseXp: 0);
     if (clean.length == q.pairs.length) {
       _combo += 1;
       if (_combo > _bestCombo) _bestCombo = _combo;

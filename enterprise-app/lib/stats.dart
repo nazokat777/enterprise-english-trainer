@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'levels.dart';
+import 'main.dart' show rewards;
 import 'srs.dart';
 
 /// Ko'nikma turlari (progress bar uchun).
@@ -22,6 +23,7 @@ class Progress extends ChangeNotifier {
   int todayXp = 0;
   String _todayKey = '';
   bool darkMode = false;
+  bool sfx = true; // ovoz effektlari (reward/sfx.dart)
   String currentLevel = kDefaultLevel; // ro'yxat: levels.dart
   final Map<String, int> skills = {}; // Skill.name -> 0..100
 
@@ -88,6 +90,7 @@ class Progress extends ChangeNotifier {
     todayXp = p.getInt('todayXp') ?? 0;
     _todayKey = p.getString('todayKey') ?? '';
     darkMode = p.getBool('dark') ?? false;
+    sfx = p.getBool('sfx') ?? true;
     currentLevel = p.getString('level') ?? kDefaultLevel;
     final sk = p.getString('skills');
     if (sk != null) {
@@ -160,6 +163,29 @@ class Progress extends ChangeNotifier {
     if (skill != null) {
       skills[skill.name] = min(100, (skills[skill.name] ?? 0) + 2);
     }
+    // Dofamin dvigateli: daraja hisobi + kunlik topshiriqlar.
+    rewards.onXp(amount);
+    rewards.onStreak(currentStreak);
+    await _save();
+    notifyListeners();
+  }
+
+  /// Sandiq/topshiriq tangalari (XP siz).
+  Future<void> addCoins(int n) async {
+    coins += n;
+    await _save();
+    notifyListeners();
+  }
+
+  /// Sandiqdan chiqqan streak muzlatgich.
+  Future<void> grantFreeze() async {
+    streakFreezeCount += 1;
+    await _save();
+    notifyListeners();
+  }
+
+  Future<void> toggleSfx() async {
+    sfx = !sfx;
     await _save();
     notifyListeners();
   }
@@ -322,7 +348,12 @@ class Progress extends ChangeNotifier {
   Future<void> reviewWord(String wordId, Quality q,
       {Skill skill = Skill.vocab}) async {
     srsFor(wordId).review(q);
-    final gain = xpForQuality(q);
+    var gain = xpForQuality(q);
+    // Dofamin dvigateli: kombo/KRIT bonusi XP ga qo'shiladi; so'z
+    // to'g'ri topilsa "o'rganilgan" hisobiga o'tadi.
+    final ok = q.q >= Quality.good.q;
+    gain += rewards.onAnswer(ok, baseXp: gain);
+    if (ok) rewards.onWordLearned();
     if (gain > 0) {
       await addXp(gain, skill: skill); // saqlaydi + notify (srsMap ham)
     } else {
@@ -402,6 +433,7 @@ class Progress extends ChangeNotifier {
     await p.setString('todayKey', _todayKey);
     await p.setBool('dark', darkMode);
     await p.setString('level', currentLevel);
+    await p.setBool('sfx', sfx);
     await p.setString('skills', json.encode(skills));
     await p.setString('srs',
         json.encode(srsMap.map((k, v) => MapEntry(k, v.toJson()))));

@@ -102,6 +102,8 @@ void main() {
     expect(m.allStrong(l.itemIds), isTrue);
   });
 
+  // Ikki daraja (Beginner + Elementary) — 8000+ so'z × 3 shakl; to'liq
+  // to'plam parallel yurganda 30 s standart limitga sig'maydi.
   test('har darajadagi har unit darslari savol yasay oladi', () async {
     app.progress = Progress();
     app.mastery = MasteryStore();
@@ -137,5 +139,5 @@ void main() {
         }
       }
     }
-  });
+  }, timeout: const Timeout(Duration(minutes: 3)));
 }

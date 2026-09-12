@@ -13,6 +13,7 @@ dependencies:
   shared_preferences: ^2.3.2
   google_fonts: ^6.2.1
   flutter_tts: ^4.2.0
+  audioplayers: ^6.7.1
 
 dev_dependencies:
   flutter_test:
@@ -29,3 +30,4 @@ flutter:
     - assets/images/
     - assets/images/unit1/
     - assets/book_pages/
+    - assets/sfx/

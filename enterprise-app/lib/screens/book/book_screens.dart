@@ -6,6 +6,7 @@ import '../../drill/drill_screen.dart';
 import '../../lessons/lessons_screen.dart';
 import '../../lessons/word_lesson.dart';
 import '../../main.dart';
+import '../../reward/reward_widgets.dart';
 import '../../theme.dart';
 import '../../widgets/entrance.dart';
 import '../../widgets/pressable3d.dart';
@@ -79,7 +80,11 @@ class BookUnitsScreen extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 13, color: AppColors.muted(context))),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 16),
+          // Kunlik topshiriqlar — birinchi ko'rinadigan narsa: bugun
+          // NIMA qilish kerakligi aniq, mukofot (sandiq) ko'rinib turadi.
+          const EntranceFade(child: DailyQuestsCard()),
+          const SizedBox(height: 14),
           // Xato bilan tugatilgan mashqlar bir joyda — aks holda
           // "takrorlash kerak" belgisini 1545 mashq orasidan qidirish
           // kerak bo'lardi va u amalda hech kimga ko'rinmasdi.

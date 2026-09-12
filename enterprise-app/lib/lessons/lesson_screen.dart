@@ -83,9 +83,10 @@ class _LessonScreenState extends State<LessonScreen> {
   Future<void> _answer(bool ok) async {
     if (_result != null) return;
     setState(() => _result = ok);
+    final bonus = rewards.onAnswer(ok, baseXp: 2);
     if (ok) {
       showCorrectBurst(context);
-      await progress.addXp(2);
+      await progress.addXp(2 + bonus);
     }
     _next = Timer(Duration(milliseconds: ok ? 650 : 1400), () async {
       await _s.answer(ok);
@@ -94,7 +95,10 @@ class _LessonScreenState extends State<LessonScreen> {
         _result = null;
         if (_s.isDone) _stage = _Stage.done;
       });
-      if (_s.isDone) await progress.addXp(5);
+      if (_s.isDone) {
+        await progress.addXp(5);
+        rewards.onExerciseDone(clean: true);
+      }
     });
   }
 
