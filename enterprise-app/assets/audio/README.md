@@ -297,3 +297,57 @@ shuning uchun ularni faqat yangi skan to'ldiradi.
 | Coursebook | 123 | Word List: 10-unit oxiri, 2-hikoya 2-epizodi, 11-12-unitlar, 13-unit boshi |
 | Coursebook | 4 | kirish qismidagi bet (mundarija bilan Introduction orasida) |
 | Workbook | 52 | Ex.3 — 'receive an invitation' ko'rsatmasiga mos rasm skanda topilmadi |
+
+---
+---
+
+# ELEMENTARY (Enterprise 2) — HOLAT
+
+Ikkinchi daraja ham **to'liq**: uchala kitob oxirigacha yozilgan va
+har bet skan bilan solishtirilgan.
+
+| Kitob | Betlar (skan) |
+|---|---|
+| Coursebook 2 | 158 / 158 |
+| Workbook 2 | 78 / 78 |
+| Grammar 2 | 86 / 86 |
+| **Jami** | **322 skan**, 12 125 band, 8 669 lug'at yozuvi |
+
+Papka: `assets/audio/enterprise2/coursebook/` (Beginner bilan bir xil
+tuzilish). `check_content --level elementary` — TOZA.
+
+## A. Audio kerak — ochiq bandlar (Elementary)
+
+Bazada `⚠ AUDIODAN ANIQLANADI` deb ochiq qolgan **37 band, 11 mashq**.
+Hammasi Coursebook 2 ning 1-4-unitlarida (keyingi unitlarda "listen"
+mashqlarining javobi betning o'zidan chiqarilgan):
+
+| Bet | Mashq | Ochiq | Nima kerak |
+|-----|-------|-------|------------|
+| CB **8** | Ex.15a | 7 | har rang uchun qaysi sifat MOS EMAS (red / blue / green / yellow / ...) |
+| CB **11** | Ex.32 | 6 | Looks / Character / Dwellings / ... — qaysi so'zlar AYTILMAYDI |
+| CB **14** | Ex.14a | 4 | Maths, Geography, History, ... sinfxonalarining raqami |
+| CB **15** | Ex.16 | 4 | Speaker 1-3 ning kasbi; kimning kunlik tartibi aytilmaydi |
+| CB **15** | Ex.20 | 2 | Paulinening 5 yil oldingi soch rangi va kiyimi |
+| CB **19** | Ex.5 | 1 | so'zlovchi 18-betdagi qaysi UCh joyni tilga oladi |
+| CB **22** | Ex.26b | 1 | qaysi dialog qaysi do'konga tegishli |
+| CB **26** | Ex.3 | 1 | hikoya taxminlarni tasdiqlaydimi (faqat tinglash) |
+| CB **28** | Ex.16 | 4 | Speaker 1-4 qanday his qiladi |
+| CB **31** | Ex.28 | 4 | urg'uli so'z va ma'no (1-band kitobda bor) |
+| CB **34** | Ex.5 | 3 | Ito / Roberto / Natasha qaysi kasbni xohlaydi va nega |
+
+Har birida mashq ichida `⚠` bilan aynan nima kerakligi yozilgan.
+Bu 37 ta band `check_content --level elementary` bilan avtomatik
+sanaladi.
+
+## Qayta skanerlash kerak — Elementary
+
+| Kitob | Bet | Nima yo'q |
+|---|---|---|
+| Coursebook 2 | 129-130 | skanda yo'q (Word List / Photo File orasida) |
+| Workbook 2 | 16 | 4-unit oxiri — skanda yo'q |
+| Workbook 2 | 46, 49 | skanda yo'q |
+
+Grammar 2 da bo'sh (orqa) betlar skan qilinmagan — bu normal:
+78, 80, 82, 84, 86, 88, 90, 92, 94, 96 (nazorat testlarining orqa
+tomoni, hammasi bo'sh).
