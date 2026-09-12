@@ -233,7 +233,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
         title: Text('Yana $left ta band qoldi'),
         content: Text(combo >= 3
             ? '$combo lik komboingiz yo\'qoladi. Tugatib qo\'ymaysizmi?'
-            : 'Oz qoldi — tugatib qo\'ymaysizmi?'),
+            : (left <= 5
+                ? 'Oz qoldi — tugatib qo\'ymaysizmi?'
+                : 'Boshlangan ish chala qolmasin — davom etamizmi?')),
         actions: [
           TextButton(
               onPressed: () => Navigator.pop(c, false),
