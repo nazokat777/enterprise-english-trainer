@@ -33,6 +33,7 @@ const _bookLabel = {
   'coursebook': 'Coursebook',
   'workbook': 'Workbook',
   'grammar': 'Grammar',
+  'quiz': 'Test',
 };
 
 /// Bo'lim turlarining o'zbekcha nomi (asset'da bo'lmasa — zaxira).

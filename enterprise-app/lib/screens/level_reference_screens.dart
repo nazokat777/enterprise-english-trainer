@@ -506,13 +506,13 @@ class _GrammarQuizButtonState extends State<_GrammarQuizButton> {
     if (pool.length < 4) return;
     pool.shuffle(Random());
     final ex = BookExercise(
-      ref: 'grammatika-testi',
+      ref: '1',
       kind: ExKind.choice,
       tasks: pool.take(10).toList(),
       instructionEn: 'Grammar quiz: 10 random questions from all units.',
       instructionUz: '10 ta tasodifiy grammatika savoli - barcha unitlardan.',
       book: 'quiz',
-      pageLabel: 'grammatika-testi',
+      pageLabel: 'grammatika',
     );
     await Navigator.push(
       context,
@@ -579,13 +579,13 @@ class _FamilyQuizButton extends StatelessWidget {
       ));
     }
     final ex = BookExercise(
-      ref: 'soz-yasalishi-testi',
+      ref: '1',
       kind: ExKind.choice,
       tasks: tasks,
       instructionEn: 'Word formation quiz: pick the word from the same family.',
       instructionUz: "Berilgan so'zning yasama shaklini toping.",
       book: 'quiz',
-      pageLabel: 'soz-yasalishi-testi',
+      pageLabel: 'soz-yasalishi',
     );
     Navigator.push(
       context,

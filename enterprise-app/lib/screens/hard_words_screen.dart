@@ -331,13 +331,13 @@ class _MistakesSection extends StatelessWidget {
     final tasks = mistakes.quizTasks();
     if (tasks.isEmpty) return;
     final ex = BookExercise(
-      ref: 'xatolar-daftari',
+      ref: '1',
       kind: ExKind.choice,
       tasks: tasks,
       instructionEn: 'Work on your own mistakes.',
       instructionUz: "O'z xatolaringiz ustida ishlang — to'g'ri topilgani daftardan o'chadi.",
       book: 'quiz',
-      pageLabel: 'xatolar-daftari',
+      pageLabel: 'xatolar',
     );
     Navigator.push(
       context,

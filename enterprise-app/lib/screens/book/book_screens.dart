@@ -1568,13 +1568,13 @@ class _DictationButton extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
           onPressed: () {
             final ex = BookExercise(
-              ref: 'diktant',
+              ref: '1',
               kind: ExKind.text,
               tasks: _tasks(),
               instructionEn: 'Listen and build the sentence from the words.',
               instructionUz: "Gapni tinglang (ovoz tugmasi), so'ng so'zlardan yig'ing.",
               book: 'quiz',
-              pageLabel: 'diktant-${unit.unit}',
+              pageLabel: 'diktant ${unit.unit}',
             );
             Navigator.push(
               context,
