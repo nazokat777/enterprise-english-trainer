@@ -81,11 +81,11 @@ class HelpScreen extends StatelessWidget {
             'ikki barobar.'),
     ('🥚', 'Hamroh',
         'Sizga ism qo\'yiladigan hamroh beriladi. Darajangiz oshgan sari u '
-            'o\'sadi: tuxum → jo\'ja → ... → ajdar. Bugun mashq qilmasangiz '
+            'o\'sadi: tuxum - jo\'ja - ... - ajdar. Bugun mashq qilmasangiz '
             'uxlab qoladi.'),
     ('🏆', 'Yutuqlar',
         '29 ta medal: birinchi mashq, 100 to\'g\'ri javob, 10 lik kombo, 7 '
-            'kunlik streak va h.k. Sozlamalar → Yutuqlar, yoki yuqoridagi '
+            'kunlik streak va h.k. Sozlamalar - Yutuqlar, yoki yuqoridagi '
             'daraja halqasini bosing.'),
     ('🔊', 'Ovoz',
         'To\'g\'ri javob, kombo, sandiq ovozlari Sozlamalardan o\'chiriladi. '
