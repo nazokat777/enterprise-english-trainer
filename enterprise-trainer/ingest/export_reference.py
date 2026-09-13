@@ -51,6 +51,23 @@ def _key(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 
 
+_PREFIX = re.compile(r"^(grammar|grammatika)\s*(exercises|mashqlari)?\s*[:—\-–]?\s*", re.I)
+
+
+def _strip_prefix(t: str) -> str:
+    """'Grammar: Past Simple' -> 'Past Simple'; 'Grammar' -> ''."""
+    out = _PREFIX.sub("", t).strip(" -—:")
+    return out
+
+
+def _first_line(text: str) -> str:
+    for ln in (text or "").splitlines():
+        ln = _norm(ln).strip(" .:")
+        if ln:
+            return ln
+    return ""
+
+
 def collect(level: str):
     pages_dir, _ = LEVELS[level]
     root = TRAINER / "data" / pages_dir
@@ -87,10 +104,27 @@ def collect(level: str):
                 if not rule or rule in seen_rules:
                     continue
                 seen_rules.add(rule)
-                title = _norm(s.get("title", "")) or _norm(e.get("instructionEn", ""))[:60]
-                title_uz = _norm(s.get("titleUz", ""))
+                title = _strip_prefix(_norm(s.get("title", "")))
+                title_uz = _strip_prefix(_norm(s.get("titleUz", "")))
+                if _key(title) in ("", "continued", "exercises"):
+                    title = ""
                 if not is_explain:
-                    title_uz = f"{title_uz} ({e.get('ref', '')}-mashq qoidasi)".replace(" (-mashq", " (mashq")
+                    # Mashq izohining birinchi qatori — aniq mavzu
+                    # ("'BE GOING TO' - TASDIQ va INKOR") - umumiy
+                    # "Grammar" dan ko'ra foydali.
+                    head = _first_line(e.get("explanationUz", ""))
+                    if head and len(head) <= 70:
+                        title_uz = head
+                    ref = _norm(str(e.get("ref", ""))).replace("-mashq", "").replace("mashq", "").strip()
+                    if ref:
+                        title_uz = f"{title_uz} · {ref}-mashq" if title_uz else f"{ref}-mashq"
+                if not title:
+                    # Sarlavha yo'q - o'zbekcha mavzu asosiy bo'ladi.
+                    title, title_uz = title_uz, ""
+                if not title:
+                    continue
+                if _key(title_uz) == _key(title):
+                    title_uz = ""
                 examples = [
                     _norm(p.get("en", "")) for p in e.get("points", []) if _norm(p.get("en", ""))
                 ]
@@ -172,7 +206,7 @@ def main(argv=None) -> int:
     if old_g.exists():
         seen = {_norm(t["rule_uz"]) for t in topics}
         for t in json.loads(old_g.read_text(encoding="utf-8")).get("topics", []):
-            if t.get("source"):
+            if t.get("source") and t.get("source") != "Umumiy qoida":
                 continue  # allaqachon shu skript yozgan
             if _norm(t.get("rule_uz", "")) in seen:
                 continue
