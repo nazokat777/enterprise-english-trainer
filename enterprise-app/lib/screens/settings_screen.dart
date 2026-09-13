@@ -517,6 +517,7 @@ class _ResetCard extends StatelessWidget {
     if (yes == true) {
       await progress.resetAll();
       await rewards.resetAll();
+      await mistakes.clear();
     }
   }
 }
@@ -569,6 +570,7 @@ class _BackupCardState extends State<_BackupCard> {
     await progress.load();
     await rewards.load();
     await mastery.load();
+    await mistakes.load();
     if (mounted) setState(() => _msg = 'Tiklandi! Hammasi joyida.');
   }
 

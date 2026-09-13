@@ -87,6 +87,10 @@ class HelpScreen extends StatelessWidget {
         '29 ta medal: birinchi mashq, 100 to\'g\'ri javob, 10 lik kombo, 7 '
             'kunlik streak va h.k. Sozlamalar - Yutuqlar, yoki yuqoridagi '
             'daraja halqasini bosing.'),
+    ('💾', 'Zaxira nusxa',
+        'Hamma narsa brauzerda saqlanadi. Sozlamalar - Zaxira nusxa: '
+            '"Nusxalash" matnni beradi (Telegram'da o'zingizga yuboring), '
+            '"Tiklash" uni qaytaradi - boshqa qurilmada ham.'),
     ('🔊', 'Ovoz',
         'To\'g\'ri javob, kombo, sandiq ovozlari Sozlamalardan o\'chiriladi. '
             'Brauzer birinchi bosishgacha ovozni bloklaydi — bu normal.'),
