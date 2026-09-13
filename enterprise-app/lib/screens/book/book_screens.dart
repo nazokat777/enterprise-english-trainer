@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../../book_content.dart';
@@ -593,6 +594,9 @@ class BookUnitScreen extends StatelessWidget {
             const SizedBox(height: 10),
             // 2) Mashqlar treningi — kitob mashqlari bo'yicha.
             _MasterButton(unit: unit),
+            const SizedBox(height: 10),
+            // 3) Diktant — tinglab gap yig'ish (tinglash + imlo).
+            _DictationButton(unit: unit),
             const SizedBox(height: 10),
             // Kitobni betma-bet ko'rish.
             Pressable3D(
@@ -1515,6 +1519,97 @@ class _QuickStartCard extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// DIKTANT — unitning namunaviy gaplarini TINGLAB, so'zlardan yig'ish.
+/// Kitob mashqlari o'qishga tayanadi; bu yerda quloq ishlaydi: gap
+/// faqat ovozda, ekranda tarjimasi. Tinglash + imlo + so'z tartibi.
+class _DictationButton extends StatelessWidget {
+  final BookUnit unit;
+  const _DictationButton({required this.unit});
+
+  static const int _size = 8;
+
+  List<ExTask> _tasks() {
+    final rng = Random();
+    final seen = <String>{};
+    final pool = <ExTask>[];
+    for (final sp in unit.sentencePatterns) {
+      // Birinchi gap, 3..9 so'z — juda uzun gap yig'ish charchatadi.
+      final first = sp.exampleEn.split(RegExp(r'(?<=[.!?])\s+')).first.trim();
+      final words = first.split(RegExp(r'\s+'));
+      if (words.length < 3 || words.length > 9) continue;
+      if (!seen.add(first.toLowerCase())) continue;
+      final uz = sp.exampleUz.split(RegExp(r'(?<=[.!?])\s+')).first.trim();
+      pool.add(ExTask(
+        prompt: "🔊 Tinglang va so'zlardan gap tuzing",
+        promptUz: uz,
+        answer: first,
+        speak: first,
+        speakAnswer: first,
+        whyUz: sp.formula.isNotEmpty ? 'Qolip: ${sp.formula}' : '',
+      ));
+    }
+    pool.shuffle(rng);
+    return pool.take(_size).toList();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final tasks = _tasks();
+    if (tasks.length < 3) return const SizedBox.shrink();
+    return Column(
+      children: [
+        Pressable3D(
+          color: const Color(0xFF0D9488),
+          shadowColor: const Color(0xFF115E59),
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+          onPressed: () {
+            final ex = BookExercise(
+              ref: 'diktant',
+              kind: ExKind.text,
+              tasks: _tasks(),
+              instructionEn: 'Listen and build the sentence from the words.',
+              instructionUz: "Gapni tinglang (ovoz tugmasi), so'ng so'zlardan yig'ing.",
+              book: 'quiz',
+              pageLabel: 'diktant-${unit.unit}',
+            );
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => ExercisePlayer(
+                  exercise: ex,
+                  sectionTitle: 'Diktant',
+                  unitLabel: unit.displayLabel,
+                ),
+              ),
+            );
+          },
+          child: const Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.headphones_rounded, color: Colors.white, size: 20),
+              SizedBox(width: 9),
+              Flexible(
+                child: Text('Diktant — tinglab gap tuzish',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                        fontSize: 15)),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          'Unitning ${tasks.length} ta namunaviy gapi: faqat ovoz va tarjima — quloq ishlaydi.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+        ),
+      ],
     );
   }
 }
