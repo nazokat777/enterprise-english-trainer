@@ -145,6 +145,11 @@ void main() {
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
       await t.pump();
 
+      // Yuqorida tugmalar (so'zlar, trening, diktant, betlar) — bo'limlar
+      // pastroqda, ko'rish uchun suramiz.
+      await t.drag(find.byType(ListView), const Offset(0, -300));
+      await t.pump();
+
       expect(find.text('Lug\'at'), findsWidgets);
       expect(find.text('Grammatika — qoida'), findsOneWidget);
     });
@@ -164,6 +169,8 @@ void main() {
 
     testWidgets('kitob nomi aniq yoziladi ("3 kitobdan" emas)', (t) async {
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
+      await t.pump();
+      await t.drag(find.byType(ListView), const Offset(0, -300));
       await t.pump();
 
       // Bitta kitobdan bo'lsa — bet raqami bilan.
