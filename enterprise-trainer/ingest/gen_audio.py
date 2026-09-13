@@ -54,14 +54,32 @@ def key_of(text: str) -> str:
     return f"{h:016x}"
 
 
-def collect() -> dict[str, str]:
+_UZ = re.compile(r"[Ѐ-ӿ]|\w+[og]'|___|\.\.\.\.|-rasm|-mashq")
+
+
+def speak_text(s: str) -> str:
+    """Ovoz uchun tozalangan matn (KALIT esa asl matndan olinadi).
+
+    Mashq bandlarida "5 A: Have they...?" kabi raqam va so'zlovchi
+    belgilari bor — ovoz "five A colon" demasin: bosh raqam, A:/B:
+    belgilari, "a)"/"b)" olib tashlanadi.
+    """
+    t = norm(s)
+    t = re.sub(r"^\d+[.)]?\s+", "", t)
+    t = re.sub(r"^[a-h][.)]\s+", "", t)
+    t = re.sub(r"(^|\s)[A-D]:\s*", " ", t)
+    t = re.sub(r"\s*\((=|\?)[^)]*\)", "", t)  # (= izoh) qismlari
+    return t.strip() or norm(s)
+
+
+def collect(include_tasks: bool = False) -> dict[str, str]:
     texts: dict[str, str] = {}
 
-    def add(s: str | None):
+    def add(s: str | None, max_len: int = 160):
         if not s:
             return
         s = norm(s)
-        if not re.search(r"[A-Za-z]", s) or len(s) > 160:
+        if not re.search(r"[A-Za-z]", s) or len(s) > max_len or _UZ.search(s):
             return
         texts.setdefault(key_of(s), s)
 
@@ -78,6 +96,14 @@ def collect() -> dict[str, str]:
                 # Bir necha gap bo'lsa — birinchi ikkitasi
                 for part in re.split(r"(?<=[.!?])\s+", sp.get("exampleEn", ""))[:2]:
                     add(part)
+            if include_tasks:
+                # Mashq bandlarida ovoz chiqariladigan matnlar — eksport
+                # skripti allaqachon aniqlagan (speak / speakAnswer / en).
+                for sec in d.get("sections", []):
+                    for e in sec.get("exercises", []):
+                        for t in e.get("tasks", []):
+                            for k in ("speak", "speakAnswer", "en"):
+                                add(t.get(k), max_len=120)
     return texts
 
 
@@ -89,7 +115,7 @@ async def synth(sem: asyncio.Semaphore, key: str, text: str, tmp: Path, ffmpeg: 
         raw = tmp / f"{key}.raw.mp3"
         for attempt in range(3):
             try:
-                com = edge_tts.Communicate(text, VOICE, rate=RATE)
+                com = edge_tts.Communicate(speak_text(text), VOICE, rate=RATE)
                 await com.save(str(raw))
                 break
             except Exception as e:  # noqa: BLE001
@@ -130,7 +156,7 @@ async def main_async(a) -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     tmp = OUT / "_tmp"
     tmp.mkdir(exist_ok=True)
-    texts = collect()
+    texts = collect(include_tasks=a.tasks)
     print(f"{len(texts)} ta matn; ovoz {VOICE}")
     ffmpeg = shutil.which("ffmpeg")
     sem = asyncio.Semaphore(a.concurrency)
@@ -164,6 +190,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--concurrency", type=int, default=6)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--tasks", action="store_true", help="mashq bandlari matnlarini ham")
     a = ap.parse_args(argv)
     return asyncio.run(main_async(a))
 
