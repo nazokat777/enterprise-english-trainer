@@ -130,13 +130,17 @@ class _TopicCard extends StatelessWidget {
           ],
           if (topic.source.isNotEmpty || topic.unit > 0) ...[
             const SizedBox(height: 8),
-            Row(
+            // Wrap: katta shriftda tugma ikkinchi qatorga tushadi,
+            // chiqib ketmaydi.
+            Wrap(
+              alignment: WrapAlignment.spaceBetween,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 8,
               children: [
-                Expanded(
-                  child: Text(topic.source.isNotEmpty ? '📖 ${topic.source}' : '',
+                if (topic.source.isNotEmpty)
+                  Text('📖 ${topic.source}',
                       style: const TextStyle(
                           fontSize: 11.5, color: AppColors.brandPurple)),
-                ),
                 // Qoidadan to'g'ri mashqqa — o'qigan zahoti qo'llash
                 // (retrieval practice).
                 if (topic.unit > 0)
