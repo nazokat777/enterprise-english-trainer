@@ -4,6 +4,7 @@ import 'stats.dart';
 import 'content.dart';
 import 'book_content.dart';
 import 'mastery.dart';
+import 'mistakes.dart';
 import 'reward/reward_engine.dart';
 import 'reward/reward_overlay.dart';
 import 'reward/sfx.dart';
@@ -14,6 +15,9 @@ late Progress progress;
 
 /// Dofamin dvigateli — `reward/reward_engine.dart`.
 RewardEngine rewards = RewardEngine();
+
+/// Xatolar daftari — `mistakes.dart`.
+MistakeStore mistakes = MistakeStore();
 
 /// Band darajasidagi o'zlashtirish — `mastery.dart`.
 late MasteryStore mastery;
@@ -33,6 +37,7 @@ Future<void> main() async {
   await Future.wait([
     progress.load(),
     rewards.load(),
+    mistakes.load(),
     mastery.load(),
     repo.load(),
     book.loadIndex(),
@@ -43,6 +48,7 @@ Future<void> main() async {
   // Saqlangan daraja Beginner bo'lmasa, kitob ham o'shanga o'tsin.
   await book.setLevel(progress.currentLevel);
   mastery.setLevel(progress.currentLevel);
+  mistakes.setLevel(progress.currentLevel);
   runApp(const EnterpriseApp());
 }
 

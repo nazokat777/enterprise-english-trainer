@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../content.dart';
 import '../main.dart';
+import '../mistakes.dart';
+import '../book_content.dart';
+import 'book/exercise_player.dart';
 import '../srs.dart';
 import '../theme.dart';
 import '../services/tts.dart';
@@ -42,6 +45,8 @@ class HardWordsScreen extends StatelessWidget {
             // Bu so'zlardan kengroq: grammatika, o'qish, gapirish
             // bandlari ham hisobga olinadi.
             const WeakTopicsSection(),
+            // XATOLAR DAFTARI — xato qilingan bandlar, qayta ishlash.
+            const _MistakesSection(),
             if (words.isEmpty)
               const _Empty()
             else ...[
@@ -312,6 +317,138 @@ class _Chip extends StatelessWidget {
           Text(text,
               style: TextStyle(
                   fontSize: 11.5, fontWeight: FontWeight.w700, color: color)),
+        ],
+      ),
+    );
+  }
+}
+
+/// Xatolar daftari bo'limi: oxirgi xatolar + "ustida ishlash" tugmasi.
+class _MistakesSection extends StatelessWidget {
+  const _MistakesSection();
+
+  void _quiz(BuildContext context) {
+    final tasks = mistakes.quizTasks();
+    if (tasks.isEmpty) return;
+    final ex = BookExercise(
+      ref: 'xatolar-daftari',
+      kind: ExKind.choice,
+      tasks: tasks,
+      instructionEn: 'Work on your own mistakes.',
+      instructionUz: "O'z xatolaringiz ustida ishlang — to'g'ri topilgani daftardan o'chadi.",
+      book: 'quiz',
+      pageLabel: 'xatolar-daftari',
+    );
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => ExercisePlayer(
+          exercise: ex,
+          sectionTitle: 'Xatolar daftari',
+          unitLabel: 'Takror',
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: mistakes,
+      builder: (context, _) {
+        final items = mistakes.items;
+        if (items.isEmpty) return const SizedBox.shrink();
+        final quizable = items.where((m) => m.options.length >= 2).length;
+        return Container(
+          margin: const EdgeInsets.only(bottom: 16),
+          padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+          decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.surface,
+            borderRadius: BorderRadius.circular(AppRadius.lg),
+            border: Border.all(color: AppColors.danger.withValues(alpha: 0.35)),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Text('📓', style: TextStyle(fontSize: 18)),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text('Xatolar daftari — ${items.length} ta band',
+                        style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+                  ),
+                  TextButton(
+                    onPressed: mistakes.clear,
+                    child: const Text('Tozalash', style: TextStyle(fontSize: 12)),
+                  ),
+                ],
+              ),
+              Text(
+                "Xato qilingan bandlar. To'g'ri topilgani daftardan o'chadi — "
+                "o'z xatolari ustida ishlash eng samarali usul.",
+                style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+              ),
+              const SizedBox(height: 8),
+              for (final m in items.take(5)) _MistakeRow(m),
+              if (items.length > 5)
+                Text('... yana ${items.length - 5} ta',
+                    style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
+              const SizedBox(height: 10),
+              if (quizable >= 2)
+                SizedBox(
+                  width: double.infinity,
+                  child: FilledButton.icon(
+                    style: FilledButton.styleFrom(
+                        backgroundColor: AppColors.danger,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        textStyle: const TextStyle(fontWeight: FontWeight.w900)),
+                    onPressed: () => _quiz(context),
+                    icon: const Icon(Icons.replay_rounded),
+                    label: Text('Xatolar ustida ishlash ($quizable)'),
+                  ),
+                ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _MistakeRow extends StatelessWidget {
+  final Mistake m;
+  const _MistakeRow(this.m);
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            margin: const EdgeInsets.only(top: 4),
+            width: 6, height: 6,
+            decoration: const BoxDecoration(color: AppColors.danger, shape: BoxShape.circle),
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: RichText(
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              text: TextSpan(
+                style: TextStyle(fontSize: 12.5, color: Theme.of(context).textTheme.bodyMedium?.color),
+                children: [
+                  TextSpan(text: m.prompt, style: const TextStyle(fontWeight: FontWeight.w700)),
+                  TextSpan(text: '   =  ${m.answer}',
+                      style: const TextStyle(color: AppColors.success, fontWeight: FontWeight.w800)),
+                  if (m.times > 1)
+                    TextSpan(text: '  ×${m.times}',
+                        style: const TextStyle(color: AppColors.danger, fontWeight: FontWeight.w800)),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );

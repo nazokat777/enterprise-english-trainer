@@ -134,9 +134,12 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     final elapsed = DateTime.now().difference(_shownAt);
     final base = _golden ? 2 * RewardEngine.goldenMultiplier : 2;
 
+    final task = ex.tasks[taskIndex];
     if (ok) {
       _mastered.add(taskIndex);
       if (firstTime) _correct++;
+      // Xatolar daftaridagi band to'g'ri topildi — o'chadi.
+      if (_misses[taskIndex] == null) mistakes.resolve(task);
       // XP faqat BIRINCHI to'g'ri javob uchun — xato qilib, keyin
       // qayta topgan band uchun ikki marta ball berilmasin.
       if (firstTime && _misses[taskIndex] == null) {
@@ -151,6 +154,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     } else {
       rewards.onAnswer(false, nearMiss: nearMiss);
       _misses[taskIndex] = (_misses[taskIndex] ?? 0) + 1;
+      // Xatolar daftari — keyin alohida ishlash uchun.
+      mistakes.add(task, source: ex.bookRef.isNotEmpty ? ex.bookRef : widget.sectionTitle);
       await _noteWeakWord(ex.tasks[taskIndex]);
     }
 
