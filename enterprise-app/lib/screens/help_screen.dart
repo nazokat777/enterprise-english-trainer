@@ -35,8 +35,10 @@ class HelpScreen extends StatelessWidget {
     (
       Icons.rule_rounded,
       'Grammatika',
-      'Kitobdagi barcha grammatika qoidalari bir ro\'yxatda — misollari '
-          'va o\'zbekcha izohi bilan.'
+      'Uchala kitobdagi barcha grammatika qoidalari (300 ga yaqin) unit '
+          'bo\'yicha, misollari va o\'zbekcha izohi bilan. Qidiruv bor; '
+          '"10 savollik test" tugmasi barcha unitlardan tasodifiy savol '
+          'beradi; har qoidadan o\'sha unit mashqlariga o\'tish mumkin.'
     ),
     (
       Icons.account_tree_rounded,
@@ -50,6 +52,44 @@ class HelpScreen extends StatelessWidget {
       'Kitobdagi barcha dialoglar bir joyda. Har bir qatorni tinglab, '
           'ovoz chiqarib takrorlang.'
     ),
+  ];
+
+  /// Mukofot tizimi — o'quvchi nima uchun ball olayotganini bilsin.
+  static const List<(String, String, String)> _rewards = [
+    ('⚡', 'XP va daraja',
+        'Har to\'g\'ri javob 2 XP. XP yig\'ilib 40 ta darajadan o\'tasiz, har '
+            'darajaning o\'z unvoni bor ("Yangi o\'quvchi" dan "Enterprise '
+            'chempioni" gacha). Har 500 XP — yangi liga.'),
+    ('🔥', 'Kombo',
+        'Ketma-ket to\'g\'ri javoblar kombo hosil qiladi. 3, 5, 10, 20, 50 da '
+            'bonus XP. Bitta xato — kombo nolga tushadi.'),
+    ('🌟', 'KRIT va oltin savol',
+        'Har to\'g\'ri javobda 12 % ehtimol bilan KRIT — XP ikki barobar. '
+            'Ba\'zi savollar oldindan "oltin" deb e\'lon qilinadi — to\'g\'ri '
+            'javob 3 barobar XP.'),
+    ('📦', 'Sirli sandiq',
+        'Har 5–9 ta to\'g\'ri javobdan keyin sandiq keladi: bosib oching — '
+            'tanga, XP yoki streak muzlatgich. Streak 3/7/14/30 kunda ham '
+            'sandiq beriladi.'),
+    ('🎯', 'Kunlik topshiriqlar',
+        'Har kuni 3 ta topshiriq. Uchalasi bajarilsa — katta sandiq.'),
+    ('🎡', 'Kunlik g\'ildirak',
+        'Kuniga bir marta, 5 ta to\'g\'ri javobdan keyin ochiladi. 100 '
+            'tangagacha yutish mumkin.'),
+    ('⏰', 'Baxtli soat',
+        'Har kuni bitta soat (yuqori paneldagi belgi ko\'rsatadi) — hamma XP '
+            'ikki barobar.'),
+    ('🥚', 'Hamroh',
+        'Sizga ism qo\'yiladigan hamroh beriladi. Darajangiz oshgan sari u '
+            'o\'sadi: tuxum → jo\'ja → ... → ajdar. Bugun mashq qilmasangiz '
+            'uxlab qoladi.'),
+    ('🏆', 'Yutuqlar',
+        '29 ta medal: birinchi mashq, 100 to\'g\'ri javob, 10 lik kombo, 7 '
+            'kunlik streak va h.k. Sozlamalar → Yutuqlar, yoki yuqoridagi '
+            'daraja halqasini bosing.'),
+    ('🔊', 'Ovoz',
+        'To\'g\'ri javob, kombo, sandiq ovozlari Sozlamalardan o\'chiriladi. '
+            'Brauzer birinchi bosishgacha ovozni bloklaydi — bu normal.'),
   ];
 
   static const List<(String, String)> _rules = [
@@ -86,8 +126,9 @@ class HelpScreen extends StatelessWidget {
         Text('Yordam', style: AppTheme.heading(context)),
         const SizedBox(height: 2),
         Text(
-          'Ilova Enterprise 1 (Beginner) kitobi bo\'yicha ishlaydi. '
-          'Quyida har bir bo\'lim nima qilishi yozilgan.',
+          'Ilova Enterprise 1 (Beginner) va Enterprise 2 (Elementary) '
+          'kitoblari bo\'yicha ishlaydi — darajani yuqoridagi tugmadan '
+          'tanlang. Quyida har bir bo\'lim nima qilishi yozilgan.',
           style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
         ),
         const SizedBox(height: 16),
@@ -96,6 +137,9 @@ class HelpScreen extends StatelessWidget {
         const SizedBox(height: 10),
         const _Sub('Qanday o\'rgatadi'),
         for (final r in _rules) _RuleCard(title: r.$1, body: r.$2),
+        const SizedBox(height: 10),
+        const _Sub('Mukofotlar va o\'yin'),
+        for (final r in _rewards) _RuleCard(title: '${r.$1} ${r.$2}', body: r.$3),
       ],
     );
   }
