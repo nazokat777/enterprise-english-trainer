@@ -94,6 +94,11 @@ class HelpScreen extends StatelessWidget {
     ('🔊', 'Ovoz',
         'To\'g\'ri javob, kombo, sandiq ovozlari Sozlamalardan o\'chiriladi. '
             'Brauzer birinchi bosishgacha ovozni bloklaydi — bu normal.'),
+    ('🗣', 'Talaffuz',
+        'Lug\'at so\'zlari va namunaviy gaplar sifatli neural ovozda (Britan '
+            'inglizchasi) oldindan yozib qo\'yilgan — qaysi qurilma bo\'lsa ham '
+            'bir xil, to\'g\'ri talaffuz. Mashq bandlaridagi boshqa matnlar '
+            'qurilmaning o\'z ovozida o\'qiladi.'),
   ];
 
   static const List<(String, String)> _rules = [
