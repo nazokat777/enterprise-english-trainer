@@ -171,11 +171,79 @@ class _Tile extends StatelessWidget {
                     ],
                   ),
                 ),
+                // ROL O'YNASH — dialogning bir tomonini o'zingiz
+                // "gapirasiz": qatorni so'zlardan yig'asiz.
+                if (_roleTasks(e).length >= 2)
+                  IconButton(
+                    tooltip: "Rol o'ynash",
+                    icon: const Icon(Icons.theater_comedy_rounded,
+                        color: AppColors.homework),
+                    onPressed: () => _startRole(context),
+                  ),
                 const Icon(Icons.chevron_right_rounded,
                     color: AppColors.brandPurple),
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+
+  /// Dialog qatorlaridan rol topshiriqlari: IKKINChI so'zlovchining
+  /// har bir qatori — savol; oldingi qator kontekst sifatida ovozda
+  /// va ekranda. So'zlovchi nomi ("Tony: ") olib tashlanadi.
+  static List<ExTask> _roleTasks(BookExercise e) {
+    final lines = e.tasks.where((t) => t.en.trim().isNotEmpty).toList();
+    if (lines.length < 2) return const [];
+    String speaker(String l) {
+      final i = l.indexOf(':');
+      return i > 0 && i < 20 ? l.substring(0, i).trim() : '';
+    }
+    String text(String l) {
+      final i = l.indexOf(':');
+      return (i > 0 && i < 20 ? l.substring(i + 1) : l).trim();
+    }
+    final second = speaker(lines[1].en);
+    final out = <ExTask>[];
+    for (var i = 1; i < lines.length; i++) {
+      if (second.isNotEmpty && speaker(lines[i].en) != second) continue;
+      final answer = text(lines[i].en);
+      final words = answer.split(RegExp(r'\s+'));
+      if (words.length < 2 || words.length > 10) continue;
+      final prev = text(lines[i - 1].en);
+      out.add(ExTask(
+        prompt: '${speaker(lines[i - 1].en).isNotEmpty ? speaker(lines[i - 1].en) : 'A'}: "$prev"',
+        promptUz: lines[i].uz.isNotEmpty
+            ? 'Siz (${second.isNotEmpty ? second : 'B'}): ${lines[i].uz}'
+            : 'Siz javob berasiz',
+        answer: answer,
+        speak: prev,
+        speakAnswer: answer,
+      ));
+    }
+    return out;
+  }
+
+  void _startRole(BuildContext context) {
+    final e = item.exercise;
+    final ex = BookExercise(
+      ref: e.ref,
+      kind: ExKind.text,
+      tasks: _roleTasks(e),
+      instructionEn: 'Role play: you are the second speaker. Build your line.',
+      instructionUz: "Rol o'ynash: siz ikkinchi so'zlovchisiz. Sherigingiz gapini "
+          "tinglang va o'z javobingizni so'zlardan yig'ing.",
+      book: 'quiz',
+      pageLabel: 'rol ${e.book} ${e.bookPage}',
+    );
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => ExercisePlayer(
+          exercise: ex,
+          sectionTitle: "Rol o'ynash",
+          unitLabel: item.unit.displayLabel,
         ),
       ),
     );
