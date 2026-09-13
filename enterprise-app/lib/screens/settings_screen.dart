@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../main.dart';
 import '../stats.dart';
+import 'package:flutter/services.dart';
+
+import '../services/backup.dart';
 import '../services/tts.dart';
 import '../reward/reward_engine.dart';
 import '../reward/reward_widgets.dart';
@@ -46,6 +49,8 @@ class SettingsScreen extends StatelessWidget {
           _StatsCard(),
           const SizedBox(height: 10),
           const _SkillsCard(),
+          const SizedBox(height: 10),
+          const _BackupCard(),
           const SizedBox(height: 10),
           _ResetCard(),
         ],
@@ -513,5 +518,107 @@ class _ResetCard extends StatelessWidget {
       await progress.resetAll();
       await rewards.resetAll();
     }
+  }
+}
+
+/// ZAXIRA NUSXA: progressni matn qilib nusxalash / tiklash.
+class _BackupCard extends StatefulWidget {
+  const _BackupCard();
+  @override
+  State<_BackupCard> createState() => _BackupCardState();
+}
+
+class _BackupCardState extends State<_BackupCard> {
+  String _msg = '';
+
+  Future<void> _copy() async {
+    final text = await Backup.export();
+    await Clipboard.setData(ClipboardData(text: text));
+    if (mounted) {
+      setState(() => _msg = 'Nusxalandi (${(text.length / 1024).toStringAsFixed(0)} KB). '
+          "Uni Telegram'da o'zingizga yuborib saqlang.");
+    }
+  }
+
+  Future<void> _restore() async {
+    final ctrl = TextEditingController();
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (c) => AlertDialog(
+        title: const Text('Zaxiradan tiklash'),
+        content: TextField(
+          controller: ctrl,
+          maxLines: 6,
+          decoration: const InputDecoration(
+              hintText: 'Zaxira matnini shu yerga qo\'ying',
+              border: OutlineInputBorder()),
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(c, false), child: const Text('Bekor')),
+          FilledButton(onPressed: () => Navigator.pop(c, true), child: const Text('Tiklash')),
+        ],
+      ),
+    );
+    if (ok != true) return;
+    final done = await Backup.import(ctrl.text);
+    if (!done) {
+      if (mounted) setState(() => _msg = 'Matn zaxira emas yoki buzilgan.');
+      return;
+    }
+    // Yangi holatni yuklash.
+    await progress.load();
+    await rewards.load();
+    await mastery.load();
+    if (mounted) setState(() => _msg = 'Tiklandi! Hammasi joyida.');
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return _Card(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Icon(Icons.backup_rounded),
+              SizedBox(width: 12),
+              Expanded(
+                child: Text('Zaxira nusxa',
+                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            'Hamma narsa shu brauzerda saqlanadi. Brauzer tozalansa yoki '
+            "boshqa qurilmaga o'tsangiz progress yo'qolmasin: nusxalab qo'ying.",
+            style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
+          ),
+          const SizedBox(height: 10),
+          Wrap(
+            spacing: 8,
+            runSpacing: 6,
+            children: [
+              FilledButton.tonalIcon(
+                onPressed: _copy,
+                icon: const Icon(Icons.copy_rounded, size: 18),
+                label: const Text('Nusxalash'),
+              ),
+              OutlinedButton.icon(
+                onPressed: _restore,
+                icon: const Icon(Icons.restore_rounded, size: 18),
+                label: const Text('Tiklash'),
+              ),
+            ],
+          ),
+          if (_msg.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            Text(_msg,
+                style: const TextStyle(
+                    fontSize: 12.5, fontWeight: FontWeight.w700, color: AppColors.success)),
+          ],
+        ],
+      ),
+    );
   }
 }
