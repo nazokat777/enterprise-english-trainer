@@ -285,9 +285,14 @@ class _LevelWordFormationScreenState extends State<LevelWordFormationScreen> {
           );
         }
         if (i == 1) {
-          return _SearchField(
-            hint: 'Qidirish: happy, -ness, o\'qituvchi ...',
-            onChanged: (v) => setState(() => _q = v),
+          return Column(
+            children: [
+              _FamilyQuizButton(families: all),
+              _SearchField(
+                hint: 'Qidirish: happy, -ness, o\'qituvchi ...',
+                onChanged: (v) => setState(() => _q = v),
+              ),
+            ],
           );
         }
         return _FamilyCard(family: families[i - 2]);
@@ -539,6 +544,75 @@ class _GrammarQuizButtonState extends State<_GrammarQuizButton> {
                   child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
               : const Icon(Icons.quiz_rounded),
           label: Text(_loading ? "Savollar yig'ilmoqda..." : '10 savollik grammatika testi'),
+        ),
+      ),
+    );
+  }
+}
+
+/// So'z oilalari testi: "'happy' (baxtli) so'zining hosila shakli
+/// qaysi?" — to'g'ri shakl + boshqa oilalardan 3 chalg'ituvchi.
+class _FamilyQuizButton extends StatelessWidget {
+  final List<WordFamily> families;
+  const _FamilyQuizButton({required this.families});
+
+  void _start(BuildContext context) {
+    final rng = Random();
+    final pool = families.where((f) => f.forms.isNotEmpty).toList()..shuffle(rng);
+    if (pool.length < 4) return;
+    final tasks = <ExTask>[];
+    for (final f in pool.take(10)) {
+      final answer = f.forms[rng.nextInt(f.forms.length)];
+      final others = <String>{};
+      while (others.length < 3) {
+        final o = pool[rng.nextInt(pool.length)];
+        if (o.base == f.base) continue;
+        others.add(o.forms[rng.nextInt(o.forms.length)]);
+      }
+      tasks.add(ExTask(
+        prompt: f.uz.isNotEmpty ? "'${f.base}' (${f.uz})" : "'${f.base}'",
+        promptUz: "Shu so'zning hosila (yasama) shakli qaysi?",
+        answer: answer,
+        options: [answer, ...others],
+        whyUz: "${f.base} → ${f.forms.join(', ')}",
+        speakAnswer: answer,
+      ));
+    }
+    final ex = BookExercise(
+      ref: 'soz-yasalishi-testi',
+      kind: ExKind.choice,
+      tasks: tasks,
+      instructionEn: 'Word formation quiz: pick the word from the same family.',
+      instructionUz: "Berilgan so'zning yasama shaklini toping.",
+      book: 'quiz',
+      pageLabel: 'soz-yasalishi-testi',
+    );
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => ExercisePlayer(
+          exercise: ex,
+          sectionTitle: "So'z yasalishi testi",
+          unitLabel: 'Aralash',
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: SizedBox(
+        width: double.infinity,
+        child: FilledButton.icon(
+          style: FilledButton.styleFrom(
+              backgroundColor: AppColors.success,
+              padding: const EdgeInsets.symmetric(vertical: 14),
+              textStyle: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+          onPressed: () => _start(context),
+          icon: const Icon(Icons.quiz_rounded),
+          label: const Text("10 savollik so'z yasalishi testi"),
         ),
       ),
     );
