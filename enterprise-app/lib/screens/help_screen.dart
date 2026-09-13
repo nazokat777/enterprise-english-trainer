@@ -89,7 +89,7 @@ class HelpScreen extends StatelessWidget {
             'daraja halqasini bosing.'),
     ('💾', 'Zaxira nusxa',
         'Hamma narsa brauzerda saqlanadi. Sozlamalar - Zaxira nusxa: '
-            '"Nusxalash" matnni beradi (Telegram'da o'zingizga yuboring), '
+            '"Nusxalash" matnni beradi (Telegram\'da o\'zingizga yuboring), '
             '"Tiklash" uni qaytaradi - boshqa qurilmada ham.'),
     ('🔊', 'Ovoz',
         'To\'g\'ri javob, kombo, sandiq ovozlari Sozlamalardan o\'chiriladi. '
