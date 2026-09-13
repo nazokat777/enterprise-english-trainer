@@ -98,6 +98,13 @@ class HelpScreen extends StatelessWidget {
 
   static const List<(String, String)> _rules = [
     (
+      'Telefonga ilova sifatida o'rnatish',
+      'Chrome'da saytni oching, menyudan "Bosh ekranga qo'shish" '
+          '(Add to Home screen) ni tanlang. iPhone'da Safari: Ulashish - '
+          '"Bosh ekranga qo'shish". Shunda ilova belgisi va to'liq ekran '
+          'bilan ochiladi, internet sekin bo'lsa ham tez ishlaydi.'
+    ),
+    (
       'Mashq o\'zlashtirilgunicha tugamaydi',
       'Xato javob bergan bandingiz navbat oxiriga qaytadi va yana '
           'so\'raladi. Mashq faqat HAMMA bandni to\'g\'ri bilganingizda '
