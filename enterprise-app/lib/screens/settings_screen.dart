@@ -277,6 +277,17 @@ class _VoiceCardState extends State<_VoiceCard> {
                 style: TextStyle(
                     fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
               ),
+              if (Tts.instance.neuralCount > 0) ...[
+                const SizedBox(height: 6),
+                Text(
+                  "Lug'at so'zlari va namunaviy gaplar (${Tts.instance.neuralCount} ta) "
+                  "uchun sifatli neural ovoz (Britan inglizchasi) yozib qo'yilgan — "
+                  "ular qurilma ovoziga bog'liq emas. Qolgan matnlar qurilma ovozida.",
+                  style: const TextStyle(
+                      fontSize: 12.5, height: 1.4, fontWeight: FontWeight.w700,
+                      color: AppColors.success),
+                ),
+              ],
               const SizedBox(height: 10),
               OutlinedButton.icon(
                 onPressed: () => Tts.instance.speak('Hello! How are you?'),

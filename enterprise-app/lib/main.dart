@@ -8,6 +8,7 @@ import 'mistakes.dart';
 import 'reward/reward_engine.dart';
 import 'reward/reward_overlay.dart';
 import 'reward/sfx.dart';
+import 'services/tts.dart';
 import 'screens/shell.dart';
 
 /// Global foydalanuvchi holati (bitta foydalanuvchi — egasi).
@@ -38,6 +39,7 @@ Future<void> main() async {
     progress.load(),
     rewards.load(),
     mistakes.load(),
+    Tts.instance.preload(),
     mastery.load(),
     repo.load(),
     book.loadIndex(),
