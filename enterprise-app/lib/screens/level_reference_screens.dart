@@ -33,16 +33,33 @@ Widget _empty(BuildContext context, IconData icon, String text) => Center(
     );
 
 // ═══════════════════ Grammatika mavzulari ═══════════════════
-class LevelGrammarScreen extends StatelessWidget {
+class LevelGrammarScreen extends StatefulWidget {
   const LevelGrammarScreen({super.key});
 
   @override
+  State<LevelGrammarScreen> createState() => _LevelGrammarScreenState();
+}
+
+class _LevelGrammarScreenState extends State<LevelGrammarScreen> {
+  String _q = '';
+
+  @override
   Widget build(BuildContext context) {
-    final topics = repo.forLevel(progress.currentLevel).grammar;
-    if (topics.isEmpty) {
+    final all = repo.forLevel(progress.currentLevel).grammar;
+    if (all.isEmpty) {
       return _empty(context, Icons.rule_rounded,
           'Bu daraja uchun grammatika mavzulari hali yo\'q.');
     }
+    // Qidiruv: 300 ta qoida orasida "some any" deb yozib topiladi.
+    final q = _q.trim().toLowerCase();
+    final topics = q.isEmpty
+        ? all
+        : all
+            .where((t) =>
+                t.topic.toLowerCase().contains(q) ||
+                t.ruleUz.toLowerCase().contains(q) ||
+                t.examples.any((e) => e.toLowerCase().contains(q)))
+            .toList();
     // Unit bo'yicha sarlavhalar — 200+ mavzu orasida yo'l topish uchun.
     final rows = <Widget>[];
     var lastUnit = -1;
@@ -55,17 +72,25 @@ class LevelGrammarScreen extends StatelessWidget {
     }
     return ListView.builder(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
-      itemCount: rows.length + 1,
+      itemCount: rows.length + 2,
       itemBuilder: (context, i) {
         if (i == 0) {
           return _Header(
             title: 'Grammatika',
-            subtitle: "${topics.length} ta qoida — uchala kitobdan, unit bo'yicha",
+            subtitle: q.isEmpty
+                ? "${all.length} ta qoida — uchala kitobdan, unit bo'yicha"
+                : "${topics.length} ta topildi",
             icon: Icons.rule_rounded,
             color: AppColors.actionBlue,
           );
         }
-        return rows[i - 1];
+        if (i == 1) {
+          return _SearchField(
+            hint: 'Qidirish: some any, past simple, -er ...',
+            onChanged: (v) => setState(() => _q = v),
+          );
+        }
+        return rows[i - 2];
       },
     );
   }
@@ -178,30 +203,54 @@ class _Example extends StatelessWidget {
 }
 
 // ═══════════════════ So'z oilalari ═══════════════════
-class LevelWordFormationScreen extends StatelessWidget {
+class LevelWordFormationScreen extends StatefulWidget {
   const LevelWordFormationScreen({super.key});
 
   @override
+  State<LevelWordFormationScreen> createState() => _LevelWordFormationScreenState();
+}
+
+class _LevelWordFormationScreenState extends State<LevelWordFormationScreen> {
+  String _q = '';
+
+  @override
   Widget build(BuildContext context) {
-    final families = repo.forLevel(progress.currentLevel).families;
-    if (families.isEmpty) {
+    final all = repo.forLevel(progress.currentLevel).families;
+    if (all.isEmpty) {
       return _empty(context, Icons.account_tree_rounded,
           'Bu daraja uchun so\'z oilalari hali yo\'q.');
     }
+    final q = _q.trim().toLowerCase();
+    final families = q.isEmpty
+        ? all
+        : all
+            .where((f) =>
+                f.base.toLowerCase().contains(q) ||
+                f.uz.toLowerCase().contains(q) ||
+                f.forms.any((x) => x.toLowerCase().contains(q)))
+            .toList();
     return ListView.builder(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
-      itemCount: families.length + 1,
+      itemCount: families.length + 2,
       itemBuilder: (context, i) {
         if (i == 0) {
           return _Header(
             title: 'So\'z yasalishi',
-            subtitle: '${families.length} ta so\'z oilasi — '
-                'bitta o\'zakdan yasalgan shakllar',
+            subtitle: q.isEmpty
+                ? '${all.length} ta so\'z oilasi — '
+                    'bitta o\'zakdan yasalgan shakllar'
+                : '${families.length} ta topildi',
             icon: Icons.account_tree_rounded,
             color: AppColors.success,
           );
         }
-        return _FamilyCard(family: families[i - 1]);
+        if (i == 1) {
+          return _SearchField(
+            hint: 'Qidirish: happy, -ness, o\'qituvchi ...',
+            onChanged: (v) => setState(() => _q = v),
+          );
+        }
+        return _FamilyCard(family: families[i - 2]);
       },
     );
   }
@@ -344,6 +393,34 @@ class _Header extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Ro'yxat ustidagi qidiruv maydoni.
+class _SearchField extends StatelessWidget {
+  final String hint;
+  final ValueChanged<String> onChanged;
+  const _SearchField({required this.hint, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 14),
+      child: TextField(
+        onChanged: onChanged,
+        decoration: InputDecoration(
+          hintText: hint,
+          prefixIcon: const Icon(Icons.search_rounded),
+          filled: true,
+          fillColor: Theme.of(context).colorScheme.surface,
+          contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(AppRadius.md),
+            borderSide: BorderSide.none,
+          ),
+        ),
       ),
     );
   }
