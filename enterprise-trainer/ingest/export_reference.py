@@ -192,6 +192,59 @@ def collect(level: str):
     return topics, families
 
 
+def export_vocab(level: str, out: Path) -> tuple[int, int]:
+    """Lug'at tabi (SRS packlar) uchun words.json + units.json —
+    eksport qilingan unit JSON'laridagi `vocabulary` dan.
+
+    Beginner'niki eski quvurdan (366 so'z, progress kalitlari bog'langan)
+    - unga tegilmaydi. Faqat words.json BO'Sh bo'lgan daraja uchun.
+    """
+    old = out / "words.json"
+    if old.exists():
+        try:
+            if json.loads(old.read_text(encoding="utf-8")).get("words"):
+                return (0, 0)
+        except Exception:  # noqa: BLE001
+            pass
+    asset_dir = {"beginner": "enterprise1", "elementary": "enterprise2"}[level]
+    src = TRAINER.parent / "enterprise-app" / "assets" / "content" / asset_dir
+    idx = json.loads((src / "index.json").read_text(encoding="utf-8"))
+    mains = [u for u in idx["units"] if isinstance(u.get("unit"), int) and u["unit"] < 800]
+    mains.sort(key=lambda u: u["unit"])
+    words, units, seen = [], [], set()
+    n = 0
+    for u in mains:
+        d = json.loads((src / f"unit_{u['unit']}.json").read_text(encoding="utf-8"))
+        ids = []
+        for v in d.get("vocabulary", []):
+            en, uz = _norm(v.get("en", "")), _norm(v.get("uz", ""))
+            if not en or not uz or _key(en) in seen:
+                continue
+            seen.add(_key(en))
+            n += 1
+            wid = f"vocab-{level[:2]}-{n:04d}"
+            words.append({"id": wid, "en": en, "uz": uz,
+                          "example": _norm(v.get("example", "")),
+                          "module": f"Module {d.get('module', 0)}",
+                          "freq": 0, "pos": "", "phonetic": ""})
+            ids.append(wid)
+        packs = [{"id": f"u{u['unit']}-p{k // 6 + 1}", "name": f"Pack {k // 6 + 1}",
+                  "wordIds": ids[k:k + 6]} for k in range(0, len(ids), 6)]
+        units.append({
+            "id": f"u{u['unit']}", "code": f"Unit {u['unit']}",
+            "title": f"{u['unit']}-unit - {u.get('title', '')}",
+            "module": f"Module {d.get('module', 0)}", "order": u["unit"],
+            "isRevision": False,
+            "components": [
+                {"id": f"u{u['unit']}-vocab", "type": "VOCABULARY", "order": 0, "packs": packs},
+                {"id": f"u{u['unit']}-hw", "type": "HOMEWORK", "order": 1, "packs": []},
+            ],
+        })
+    (out / "words.json").write_text(json.dumps({"words": words}, ensure_ascii=False, indent=1), encoding="utf-8")
+    (out / "units.json").write_text(json.dumps({"units": units}, ensure_ascii=False, indent=1), encoding="utf-8")
+    return (len(words), len(units))
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--level", default="elementary", choices=sorted(LEVELS))
@@ -236,6 +289,9 @@ def main(argv=None) -> int:
         json.dumps({"topics": topics}, ensure_ascii=False, indent=1), encoding="utf-8")
     (out / "word_formation.json").write_text(
         json.dumps({"families": families}, ensure_ascii=False, indent=1), encoding="utf-8")
+    nw, nu = export_vocab(a.level, out)
+    if nw:
+        print(f"[{a.level}] words.json: {nw} so'z, units.json: {nu} unit (Lug'at tabi)")
     print(f"[{a.level}] grammar.json: {len(topics)} mavzu; "
           f"word_formation.json: {len(families)} oila -> {out}")
     return 0

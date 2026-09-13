@@ -95,10 +95,13 @@ void main() {
     await t.tap(find.text('Beginner').first);
     await t.pumpAndSettle();
 
+    // 2026-09-13: Elementary lug'ati (words.json) endi to'ldirilgan —
+    // daraja TANLANADI. "Tayyor emas" faqat kontenti yo'q darajaga.
     expect(find.textContaining('Elementary'), findsOneWidget);
     final item = t.widget<PopupMenuItem<String>>(
-        find.widgetWithText(PopupMenuItem<String>, 'Elementary — tayyor emas'));
-    expect(item.enabled, isFalse);
+        find.widgetWithText(PopupMenuItem<String>, 'Elementary'));
+    expect(item.enabled, isTrue);
+    expect(find.text('Elementary — tayyor emas'), findsNothing);
   });
 
   testWidgets('XP o\'zgarsa yuqori panel yangilanadi', (t) async {
