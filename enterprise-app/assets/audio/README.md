@@ -351,3 +351,14 @@ sanaladi.
 Grammar 2 da bo'sh (orqa) betlar skan qilinmagan — bu normal:
 78, 80, 82, 84, 86, 88, 90, 92, 94, 96 (nazorat testlarining orqa
 tomoni, hammasi bo'sh).
+
+---
+
+# TALAFFUZ OVOZI (assets/tts) — 2026-09-13
+
+Kitob audiosidan farqli, bu papka MUALLIFLIK MUAMMOSIZ: so'zlar va
+namunaviy gaplar Microsoft Edge neural ovozi (`en-GB-SoniaNeural`)
+bilan `ingest/gen_audio.py` orqali sintez qilingan (bepul, kalitsiz).
+Ilova avval shu MP3'ni qidiradi (FNV-1a kalit), bo'lmasa brauzer TTS.
+Yangi kontent qo'shilsa: `python -m ingest.gen_audio` (mavjudlarini
+o'tkazib yuboradi).
