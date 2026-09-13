@@ -5,7 +5,11 @@ import '../main.dart';
 import '../theme.dart';
 import '../services/tts.dart';
 import '../widgets/explain_text.dart';
+import 'dart:math';
+
+import '../book_content.dart';
 import 'book/book_screens.dart';
+import 'book/exercise_player.dart';
 
 /// Daraja bo'yicha ma'lumotnoma: grammatika mavzulari va so'z oilalari.
 ///
@@ -86,9 +90,14 @@ class _LevelGrammarScreenState extends State<LevelGrammarScreen> {
           );
         }
         if (i == 1) {
-          return _SearchField(
-            hint: 'Qidirish: some any, past simple, -er ...',
-            onChanged: (v) => setState(() => _q = v),
+          return Column(
+            children: [
+              const _GrammarQuizButton(),
+              _SearchField(
+                hint: 'Qidirish: some any, past simple, -er ...',
+                onChanged: (v) => setState(() => _q = v),
+              ),
+            ],
           );
         }
         return rows[i - 2];
@@ -451,6 +460,85 @@ class _SearchField extends StatelessWidget {
             borderRadius: BorderRadius.circular(AppRadius.md),
             borderSide: BorderSide.none,
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// "10 savollik test" — barcha unitlarning grammatika mashqlaridan
+/// tasodifiy tanlov savollari. Har safar boshqa: qoidalarni o'qish
+/// emas, ESLAB ChIQARISh (retrieval practice) — eng samarali usul.
+class _GrammarQuizButton extends StatefulWidget {
+  const _GrammarQuizButton();
+  @override
+  State<_GrammarQuizButton> createState() => _GrammarQuizButtonState();
+}
+
+class _GrammarQuizButtonState extends State<_GrammarQuizButton> {
+  bool _loading = false;
+
+  Future<void> _start() async {
+    if (_loading) return;
+    setState(() => _loading = true);
+    final pool = <ExTask>[];
+    for (final b in book.units) {
+      if (b.isInfo) continue;
+      final u = await book.load(b.unit);
+      if (u == null) continue;
+      for (final s in u.sections) {
+        if (!s.kind.startsWith('grammar')) continue;
+        for (final e in s.exercises) {
+          if (e.kind != ExKind.choice) continue;
+          for (final t in e.tasks) {
+            if (t.options.length >= 2 && t.answer.isNotEmpty) pool.add(t);
+          }
+        }
+      }
+    }
+    if (!mounted) return;
+    setState(() => _loading = false);
+    if (pool.length < 4) return;
+    pool.shuffle(Random());
+    final ex = BookExercise(
+      ref: 'grammatika-testi',
+      kind: ExKind.choice,
+      tasks: pool.take(10).toList(),
+      instructionEn: 'Grammar quiz: 10 random questions from all units.',
+      instructionUz: '10 ta tasodifiy grammatika savoli - barcha unitlardan.',
+      book: 'quiz',
+      pageLabel: 'grammatika-testi',
+    );
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => ExercisePlayer(
+          exercise: ex,
+          sectionTitle: 'Grammatika testi',
+          unitLabel: 'Aralash',
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: SizedBox(
+        width: double.infinity,
+        child: FilledButton.icon(
+          style: FilledButton.styleFrom(
+              backgroundColor: AppColors.actionBlue,
+              padding: const EdgeInsets.symmetric(vertical: 14),
+              textStyle: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+          onPressed: _loading ? null : _start,
+          icon: _loading
+              ? const SizedBox(
+                  width: 18, height: 18,
+                  child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
+              : const Icon(Icons.quiz_rounded),
+          label: Text(_loading ? "Savollar yig'ilmoqda..." : '10 savollik grammatika testi'),
         ),
       ),
     );
