@@ -6,8 +6,9 @@ o'zbek/rus talaffuzi bilan o'qiydi. Bu skript:
   * ikkala darajaning unit lug'ati (`vocabulary[].en`), lug'at misol
     gaplari, gap qoliplari (`sentencePatterns[].exampleEn`) uchun
   * `en-GB-SoniaNeural` (darslik Britan inglizchasida) ovozida
-  * `enterprise-app/assets/tts/<fnv1a64>.mp3` fayllarini yozadi,
-  * `assets/tts/index.json` — mavjud kalitlar ro'yxati.
+  * `enterprise-app/web/tts/<fnv1a64>.mp3` fayllarini yozadi (oddiy web
+    fayl — asset emas, aks holda build/test juda sekinlashadi),
+  * `assets/tts/index.json` — mavjud kalitlar ro'yxati (asset).
 
 Ilova (`lib/services/tts.dart`) matn kalitini xuddi shu FNV-1a bilan
 hisoblaydi: fayl bo'lsa MP3, bo'lmasa brauzer TTS.
@@ -33,7 +34,8 @@ import edge_tts
 HERE = Path(__file__).resolve().parent
 APP = HERE.parent.parent / "enterprise-app"
 CONTENT = APP / "assets" / "content"
-OUT = APP / "assets" / "tts"
+OUT = APP / "web" / "tts"  # oddiy web fayllar (asset emas)
+INDEX = APP / "assets" / "tts" / "index.json"
 VOICE = "en-GB-SoniaNeural"
 RATE = "-12%"  # o'rganuvchi uchun sal sekinroq
 LEVELS = ["enterprise1", "enterprise2"]
@@ -95,6 +97,8 @@ async def synth(sem: asyncio.Semaphore, key: str, text: str, tmp: Path, ffmpeg: 
                     print(f"XATO {key}: {text[:40]} -> {e}")
                     return "fail"
                 await asyncio.sleep(1.5 * (attempt + 1))
+        if not raw.exists():
+            return "fail"
         if ffmpeg:
             # 32 kbps mono — so'z/gap uchun yetarli, hajm 2 barobar kam.
             r = subprocess.run(
@@ -105,12 +109,20 @@ async def synth(sem: asyncio.Semaphore, key: str, text: str, tmp: Path, ffmpeg: 
                  str(dst)],
                 capture_output=True,
             )
-            if r.returncode != 0 or not dst.exists():
-                shutil.move(str(raw), str(dst))
-            else:
-                raw.unlink(missing_ok=True)
+            try:
+                if r.returncode != 0 or not dst.exists():
+                    shutil.move(str(raw), str(dst))
+                else:
+                    raw.unlink(missing_ok=True)
+            except OSError as e:
+                print(f"XATO (fayl) {key}: {e}")
+                return "fail"
         else:
-            shutil.move(str(raw), str(dst))
+            try:
+                shutil.move(str(raw), str(dst))
+            except OSError as e:
+                print(f"XATO (fayl) {key}: {e}")
+                return "fail"
         return "ok"
 
 
@@ -144,7 +156,8 @@ async def main_async(a) -> int:
 
 def write_index():
     keys = sorted(p.stem for p in OUT.glob("*.mp3") if p.stat().st_size > 200)
-    (OUT / "index.json").write_text(json.dumps(keys), encoding="utf-8")
+    INDEX.parent.mkdir(parents=True, exist_ok=True)
+    INDEX.write_text(json.dumps(keys), encoding="utf-8")
 
 
 def main(argv=None) -> int:

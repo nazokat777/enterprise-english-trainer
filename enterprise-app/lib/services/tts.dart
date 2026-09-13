@@ -83,7 +83,11 @@ class Tts {
       await _tts.stop();
       await _player.stop();
       speakingId.value = id;
-      await _player.play(AssetSource('tts/$k.mp3'));
+      // MP3'lar Flutter asseti EMAS — `web/tts/` da oddiy fayl (12 000+
+      // faylni asset qilib bundle qilish har test/build'ni daqiqalarga
+      // cho'zardi). Web'da sahifaga nisbatan URL bilan chalinadi.
+      if (!kIsWeb) return false;
+      await _player.play(UrlSource('tts/$k.mp3'));
       return true;
     } catch (_) {
       speakingId.value = null;

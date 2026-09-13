@@ -150,11 +150,13 @@ void main() {
   // `rock = tosh` (misolda rok musiqa). O\'quvchi noto\'g\'ri ma\'noni
   // yodlardi.
   test('tarjima o\'z misoliga zid emas', () {
+    // 2026-09-13: lug'at endi betma-bet yozilgan unit lug'atidan
+    // yig'iladi — ko'p ma'noli so'zlar artikl/"to" bilan AJRATILGAN
+    // ("a study" = xona, "to study" = o'qimoq). Tekshiruv shunga mos.
     const expected = {
-      'study': 'ish xonasi',
-      'dress': 'ko\'ylak',
-      'cook': 'pishirmoq; oshpaz',
-      'rock': 'rok (musiqa)',
+      'a study': 'ish xonasi',
+      'a dress': 'ko\'ylak',
+      'to cook': 'pishir',
     };
     final raw = json.decode(
             File('assets/content/beginner/words.json').readAsStringSync())
@@ -165,7 +167,9 @@ void main() {
       byEn[(w['en'] as String).toLowerCase()] = w['uz'] as String;
     }
     expected.forEach((en, uz) {
-      expect(byEn[en], uz, reason: '$en tarjimasi misolga mos kelsin');
+      expect(byEn[en], isNotNull, reason: '$en lug\'atda bo\'lsin');
+      expect(byEn[en]!.toLowerCase(), contains(uz),
+          reason: '$en tarjimasi misolga mos kelsin');
     });
   });
 

@@ -39,6 +39,21 @@ BOOK_ORDER = {"grammar": 0, "coursebook": 1, "workbook": 2}
 # Grammatika bo'limi hisoblanadigan section turlari.
 GRAMMAR_KINDS = {"grammar_theory", "grammar", "grammar_exercise"}
 
+# Lug'at packlaridan chiqariladigan grammatik atamalar.
+GRAMMAR_TERMS = {
+    "prepositions", "preposition", "pronouns", "pronoun", "nouns", "noun",
+    "adjectives", "adjective", "adverbs", "adverb", "plural", "singular",
+    "consonant", "vowel", "possessive", "tense", "statements", "continuous",
+    "expressions", "verb", "verbs", "article", "articles", "subject", "object",
+    "infinitive", "imperative", "conditional", "passive", "comparative",
+    "superlative", "syllable", "question tags", "exclamations",
+}
+GRAMMAR_TERMS_UZ = {
+    "predloglar", "olmoshlar", "otlar", "sifatlar", "darak gaplar",
+    "ko'plik", "davomli (zamon)", "qalin (harf)", "takrorlang", "ravishlar",
+    "fe'llar", "birlik", "undosh", "unli", "artikl",
+}
+
 # Mashq izohida qoida borligini bildiradigan belgilar.
 RULE_MARK = re.compile(r"QOIDA|QOLIP|QOLIPI|FORMULA", re.I)
 
@@ -192,7 +207,7 @@ def collect(level: str):
     return topics, families
 
 
-def export_vocab(level: str, out: Path) -> tuple[int, int]:
+def export_vocab(level: str, out: Path, force: bool = False) -> tuple[int, int]:
     """Lug'at tabi (SRS packlar) uchun words.json + units.json —
     eksport qilingan unit JSON'laridagi `vocabulary` dan.
 
@@ -200,7 +215,7 @@ def export_vocab(level: str, out: Path) -> tuple[int, int]:
     - unga tegilmaydi. Faqat words.json BO'Sh bo'lgan daraja uchun.
     """
     old = out / "words.json"
-    if old.exists():
+    if old.exists() and not force:
         try:
             if json.loads(old.read_text(encoding="utf-8")).get("words"):
                 return (0, 0)
@@ -219,6 +234,10 @@ def export_vocab(level: str, out: Path) -> tuple[int, int]:
         for v in d.get("vocabulary", []):
             en, uz = _norm(v.get("en", "")), _norm(v.get("uz", ""))
             if not en or not uz or _key(en) in seen:
+                continue
+            # Grammatik atamalar kartochka emas ("plural = ko'plik") —
+            # ular Grammatika bo'limida; lug'at faqat SO'Z o'rgatsin.
+            if _key(en) in GRAMMAR_TERMS or uz.lower() in GRAMMAR_TERMS_UZ:
                 continue
             seen.add(_key(en))
             n += 1
@@ -248,6 +267,8 @@ def export_vocab(level: str, out: Path) -> tuple[int, int]:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--level", default="elementary", choices=sorted(LEVELS))
+    ap.add_argument("--force-vocab", action="store_true",
+                    help="words.json/units.json ni qayta yozish (Beginner: eski 34 ta soxta unit o'rniga kitobning 15 uniti)")
     a = ap.parse_args(argv)
     topics, families = collect(a.level)
     out = APP_CONTENT / LEVELS[a.level][1]
@@ -289,7 +310,7 @@ def main(argv=None) -> int:
         json.dumps({"topics": topics}, ensure_ascii=False, indent=1), encoding="utf-8")
     (out / "word_formation.json").write_text(
         json.dumps({"families": families}, ensure_ascii=False, indent=1), encoding="utf-8")
-    nw, nu = export_vocab(a.level, out)
+    nw, nu = export_vocab(a.level, out, force=a.force_vocab)
     if nw:
         print(f"[{a.level}] words.json: {nw} so'z, units.json: {nu} unit (Lug'at tabi)")
     print(f"[{a.level}] grammar.json: {len(topics)} mavzu; "

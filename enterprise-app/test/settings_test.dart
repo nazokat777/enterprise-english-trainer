@@ -65,7 +65,7 @@ void main() {
   testWidgets('jarayonni o\'chirish hammasini tozalaydi', (t) async {
     await app.progress.addXp(120);
     await app.progress.markExerciseResult('ex::cb::7::1', clean: false);
-    await app.progress.reviewWord('vocab-0066', Quality.unknown);
+    await app.progress.reviewWord('vocab-be-0001', Quality.unknown);
     expect(app.progress.xp, 120);
 
     await pump(t);

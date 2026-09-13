@@ -204,8 +204,8 @@ void main() {
   // chapda ham, o'ngda ham BITTA yozuv turardi — o'ylamasdan bosilar
   // va so'z qiyinlar ro'yxatidan chiqib ketardi.
   testWidgets('bitta qiyin so\'z bilan ham mashqda tanlov bo\'ladi', (t) async {
-    await app.progress.recordMiss('vocab-0066');
-    await app.progress.recordMiss('vocab-0066');
+    await app.progress.recordMiss('vocab-be-0001');
+    await app.progress.recordMiss('vocab-be-0001');
 
     final hard = app.progress
         .hardWordIds()
@@ -249,8 +249,9 @@ void main() {
     expect(find.text('So\'zlarni ma\'nosiga moslang'), findsOneWidget);
     // Chapda ham, o'ngda ham kamida 4 tadan variant bo'lsin — aks
     // holda tanlov yo'q va mashq o'rgatmaydi.
-    expect(find.text('six'), findsOneWidget);
-    expect(find.text('olti'), findsOneWidget);
+    // Birinchi so'z endi 'married' (unit lug'atidan).
+    expect(find.text('married'), findsOneWidget);
+    expect(find.text('uylangan / turmush qurgan'), findsOneWidget);
     // Ekranda nechta HAQIQIY inglizcha so'z chizilganini sanaymiz —
     // bosqich sarlavhalari va XP yozuvi hisobga olinmasin.
     final level = app.repo.forLevel('beginner');
