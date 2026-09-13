@@ -5,6 +5,7 @@ import '../main.dart';
 import '../theme.dart';
 import '../services/tts.dart';
 import '../widgets/explain_text.dart';
+import 'book/book_screens.dart';
 
 /// Daraja bo'yicha ma'lumotnoma: grammatika mavzulari va so'z oilalari.
 ///
@@ -127,11 +128,37 @@ class _TopicCard extends StatelessWidget {
             const SizedBox(height: 12),
             for (final e in topic.examples) _Example(text: e),
           ],
-          if (topic.source.isNotEmpty) ...[
+          if (topic.source.isNotEmpty || topic.unit > 0) ...[
             const SizedBox(height: 8),
-            Text('📖 ${topic.source}',
-                style: const TextStyle(
-                    fontSize: 11.5, color: AppColors.brandPurple)),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(topic.source.isNotEmpty ? '📖 ${topic.source}' : '',
+                      style: const TextStyle(
+                          fontSize: 11.5, color: AppColors.brandPurple)),
+                ),
+                // Qoidadan to'g'ri mashqqa — o'qigan zahoti qo'llash
+                // (retrieval practice).
+                if (topic.unit > 0)
+                  TextButton.icon(
+                    style: TextButton.styleFrom(
+                        visualDensity: VisualDensity.compact,
+                        padding: const EdgeInsets.symmetric(horizontal: 8)),
+                    onPressed: () async {
+                      final u = await book.load(topic.unit);
+                      if (u == null || !context.mounted) return;
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => BookUnitScreen(unit: u)),
+                      );
+                    },
+                    icon: const Icon(Icons.fitness_center_rounded, size: 15),
+                    label: Text('${topic.unit}-unit mashqlari',
+                        style: const TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.w800)),
+                  ),
+              ],
+            ),
           ],
         ],
       ),
