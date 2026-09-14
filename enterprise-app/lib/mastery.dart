@@ -350,6 +350,33 @@ class MasteryStore extends ChangeNotifier {
 
   int fadingCount({int? nowMs}) => fadingIds(limit: 1 << 20, nowMs: nowMs).length;
 
+  /// KEChKI TAKROR — bugun o'rganilgan, hali zaif so'zlar (5 tagacha).
+  ///
+  /// Uyqu xotirani "yozib qo'yadi" (konsolidatsiya): uxlashdan oldin
+  /// eslab aytilgan so'z ertalab ancha mustahkam bo'ladi. Shuning
+  /// uchun kechqurun bugungi eng zaif so'zlar taklif qilinadi.
+  List<String> tonightIds({int limit = 5, int? nowMs}) {
+    final now = nowMs ?? DateTime.now().millisecondsSinceEpoch;
+    final dayStart = now - now % 86400000;
+    final prefix = '$_level::w::';
+    final list = _items.entries
+        .where((e) =>
+            e.key.startsWith(prefix) &&
+            !e.value.isNew &&
+            e.value.uz.isNotEmpty &&
+            e.value.lastAskedMs >= dayStart &&
+            e.value.stage < 2)
+        .toList()
+      ..sort((a, b) {
+        final c = a.value.stage.compareTo(b.value.stage);
+        return c != 0 ? c : b.value.lapses.compareTo(a.value.lapses);
+      });
+    return list
+        .take(limit)
+        .map((e) => e.key.substring('$_level::'.length))
+        .toList();
+  }
+
   /// Xotira bog'i: har bosqichda nechta so'z (joriy daraja, lug'at).
   List<int> garden() {
     final out = List<int>.filled(ItemMastery.stageEmoji.length, 0);

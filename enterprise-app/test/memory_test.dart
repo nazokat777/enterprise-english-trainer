@@ -105,6 +105,20 @@ void main() {
           reason: 'darsdagi so\'z aralash takrorga kirmaydi');
     });
 
+    test('tonightIds: bugun so\'ralgan, zaif so\'zlar', () async {
+      const now = 10 * day + 3600000;
+      await store.record('w::apple', AskFormat.choice,
+          ok: false, en: 'apple', uz: 'olma', nowMs: now);
+      await store.record('w::pear', AskFormat.choice,
+          ok: true, en: 'pear', uz: 'nok', nowMs: now);
+      await store.record('w::old', AskFormat.choice,
+          ok: true, en: 'old', uz: 'eski', nowMs: now - 2 * day);
+      expect(store.tonightIds(nowMs: now), ['w::apple', 'w::pear']);
+      expect(MemoryRescue.tonight(store, nowMs: now)!.words.length, 2);
+      expect(MemoryRescue.isEvening(DateTime(2026, 1, 1, 21)), isTrue);
+      expect(MemoryRescue.isEvening(DateTime(2026, 1, 1, 12)), isFalse);
+    });
+
     test('LessonSession extras navbatga qo\'shiladi', () async {
       final lesson = WordLesson(index: 1, unit: 1, words: const [
         LessonWord(en: 'cat', uz: 'mushuk'),

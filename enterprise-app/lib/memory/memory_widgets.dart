@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../lessons/lesson_screen.dart';
+import '../lessons/word_lesson.dart';
 import '../main.dart';
 import '../mastery.dart';
 import '../theme.dart';
@@ -311,7 +312,13 @@ class MemoryRescueCard extends StatelessWidget {
       listenable: mastery,
       builder: (context, _) {
         final n = mastery.fadingCount();
-        if (n == 0) return const MemoryGardenCard();
+        if (n == 0) {
+          if (MemoryRescue.isEvening(DateTime.now()) &&
+              MemoryRescue.tonight(mastery) != null) {
+            return const _TonightCard();
+          }
+          return const MemoryGardenCard();
+        }
         final ids = mastery.fadingIds(limit: 4);
         return Material(
           color: AppColors.danger.withValues(alpha: 0.10),
@@ -530,4 +537,65 @@ class MemoryGardenCard extends StatelessWidget {
       ),
     );
   }
+}
+
+/// 🌙 UXLAShDAN OLDIN — bugungi zaif so'zlarni bir eslab qo'yish.
+class _TonightCard extends StatelessWidget {
+  const _TonightCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = MemoryRescue.tonight(mastery);
+    if (l == null) return const MemoryGardenCard();
+    return Material(
+      color: const Color(0xFF312E81).withValues(alpha: 0.12),
+      borderRadius: BorderRadius.circular(AppRadius.lg),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: () => _start(context, l),
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Row(
+            children: [
+              const Text('🌙', style: TextStyle(fontSize: 28)),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Uxlashdan oldin ${l.words.length} ta so\'z',
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 15,
+                            color: Color(0xFF4338CA))),
+                    const SizedBox(height: 2),
+                    Text(
+                      'Uyqu xotirani mustahkamlaydi: oxirgi eslagan '
+                      'so\'zlaringiz ertalab yodda qoladi. 1 daqiqa.',
+                      style: TextStyle(
+                          fontSize: 12.5,
+                          height: 1.35,
+                          color: AppColors.muted(context)),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded, color: Color(0xFF4338CA)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Future<void> _start(BuildContext context, WordLesson l) => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => LessonScreen(
+            lesson: l,
+            unitLabel: '🌙 Kechki takror',
+            rescue: true,
+          ),
+        ),
+      );
 }

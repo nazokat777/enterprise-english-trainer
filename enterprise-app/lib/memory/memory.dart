@@ -28,6 +28,18 @@ class MemoryRescue {
     return WordLesson(index: 0, unit: 0, words: words);
   }
 
+  /// Kechki takror darsi (uxlashdan oldin); so'z bo'lmasa `null`.
+  static WordLesson? tonight(MasteryStore m, {int? nowMs}) {
+    final ids = m.tonightIds(nowMs: nowMs);
+    if (ids.isEmpty) return null;
+    return WordLesson(index: 0, unit: 0, words: [
+      for (final id in ids) LessonWord(en: _en(m, id), uz: m.of(id).uz),
+    ]);
+  }
+
+  /// Kechki soat (20:00 dan keyin) — takror taklif qilinadigan vaqt.
+  static bool isEvening(DateTime t) => t.hour >= 20 || t.hour < 2;
+
   /// Aralash takror uchun 1-3 ta o'chayotgan so'z (darsdagilar
   /// chiqarib tashlanadi).
   static List<DrillSource> extras(MasteryStore m, WordLesson current,
