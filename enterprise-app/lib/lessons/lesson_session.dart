@@ -31,6 +31,11 @@ class LessonSession {
   /// interleaving effekti) va o'quvchiga qo'shimcha seans yuklamaydi.
   final List<DrillSource> extras;
 
+  /// Raundlar (shakl ketma-ketligi). Odatda `rounds`; qutqaruvda
+  /// faqat ishlab chiqarish — tanish shakllari eslab aytishga
+  /// hech narsa qo'shmaydi.
+  final List<AskFormat> formats;
+
   final Random _rnd;
   final List<DrillQuestion> _queue = [];
   int _pos = 0;
@@ -48,6 +53,7 @@ class LessonSession {
     required this.mastery,
     this.pool = const [],
     this.extras = const [],
+    this.formats = rounds,
     Random? random,
   }) : _rnd = random ?? Random() {
     _fill();
@@ -72,7 +78,7 @@ class LessonSession {
 
   void _fill() {
     final src = lesson.sources;
-    for (final f in rounds) {
+    for (final f in formats) {
       final round = <DrillQuestion>[];
       for (final s in src) {
         final q = buildQuestion(s, f, _poolFor(s), _rnd);
@@ -107,8 +113,8 @@ class LessonSession {
   /// Qaysi raund ketyapti (1..3) — sarlavha uchun.
   int get round {
     final q = current;
-    if (q == null) return rounds.length;
-    return rounds.indexOf(q.format) + 1;
+    if (q == null) return formats.length;
+    return formats.indexOf(q.format) + 1;
   }
 
   Future<void> answer(bool ok) async {

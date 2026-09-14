@@ -54,13 +54,16 @@ class _LessonScreenState extends State<LessonScreen> {
   bool? _result;
 
   /// Dars boshidagi xotira bosqichlari — yakunda "o'sish" ko'rsatiladi.
-  late final Map<String, int> _stageBefore = {
-    for (final w in widget.lesson.words) w.itemId: mastery.of(w.itemId).stage,
-  };
+  /// `late final` bo'lsa birinchi murojaat YAKUNDA bo'lib, "oldin" =
+  /// "keyin" chiqardi — shuning uchun initState da darhol olinadi.
+  final Map<String, int> _stageBefore = {};
 
   @override
   void initState() {
     super.initState();
+    for (final w in widget.lesson.words) {
+      _stageBefore[w.itemId] = mastery.of(w.itemId).stage;
+    }
     _s = LessonSession(
       lesson: widget.lesson,
       mastery: mastery,
@@ -68,6 +71,9 @@ class _LessonScreenState extends State<LessonScreen> {
       extras: widget.rescue
           ? const []
           : MemoryRescue.extras(mastery, widget.lesson),
+      formats: widget.rescue
+          ? const [AskFormat.produce, AskFormat.build]
+          : LessonSession.rounds,
     );
     if (widget.rescue) {
       _stage = _s.isDone ? _Stage.done : _Stage.quiz;
@@ -168,11 +174,12 @@ class _LessonScreenState extends State<LessonScreen> {
   String _stageLabel() => switch (_stage) {
         _Stage.intro =>
           'Tanishuv · ${_card + 1}/${widget.lesson.words.length}',
-        _Stage.quiz => switch (_s.round) {
-            1 => '1-bosqich · ma\'nosini tanlang',
-            2 => '2-bosqich · inglizchasini tanlang',
-            _ => '3-bosqich · harflab yozing',
-          },
+        _Stage.quiz => '${_s.round}-bosqich · ${switch (_s.current?.format) {
+            AskFormat.choice => 'ma\'nosini tanlang',
+            AskFormat.produce => 'inglizchasini tanlang',
+            AskFormat.listen => 'eshitib yozing',
+            _ => 'harflab yozing',
+          }}',
         _Stage.done => 'Yakunlandi',
       };
 
