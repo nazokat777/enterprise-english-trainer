@@ -489,7 +489,7 @@ class MemoryGardenCard extends StatelessWidget {
                     style: const TextStyle(
                         fontWeight: FontWeight.w800, fontSize: 15)),
               ),
-              Text('hammasi o\'z vaqtida ✓',
+              Text('hammasi o\'z vaqtida',
                   style: TextStyle(
                       fontSize: 11.5,
                       fontWeight: FontWeight.w700,
