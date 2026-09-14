@@ -164,6 +164,7 @@ class _LessonScreenState extends State<LessonScreen> {
               mistakes: _s.mistakes,
               rescue: widget.rescue,
               stageBefore: _stageBefore,
+              mistaken: _s.mistakenIds,
               onClose: () => Navigator.pop(context, true),
             ),
         },
@@ -313,9 +314,17 @@ class _LessonScreenState extends State<LessonScreen> {
   // ───────────── 2) Savollar ─────────────
   Widget _quiz(BuildContext context) {
     final q = _s.current!;
+    final hook = mastery.of(q.itemId).hook;
     return Column(
       children: [
         _Bar(value: _s.progress),
+        // Xato bo'lganda o'quvchining O'Z eslatmasi chiqadi — javob
+        // shunchaki ko'rsatilmaydi, o'zi tuzgan bog'lanish eslatiladi.
+        if (_result == false && hook.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+            child: HookBubble(text: hook),
+          ),
         Expanded(
           child: switch (q.format) {
             AskFormat.build || AskFormat.listen => BuildTask(
@@ -362,6 +371,7 @@ class _Finished extends StatelessWidget {
   final int mistakes;
   final bool rescue;
   final Map<String, int> stageBefore;
+  final Set<String> mistaken;
   final VoidCallback onClose;
   const _Finished({
     required this.lesson,
@@ -369,15 +379,20 @@ class _Finished extends StatelessWidget {
     required this.onClose,
     this.rescue = false,
     this.stageBefore = const {},
+    this.mistaken = const {},
   });
 
   @override
   Widget build(BuildContext context) {
-    // Qiyin so'zlar (2+ xato, hali mustahkam emas) — o'z eslatmasini
-    // yozish taklif qilinadi.
+    // Qiyin so'zlar — shu seansda xato qilingan yoki tarixda 2+ marta
+    // unutilgan, hali eslatmasi yo'q — o'z eslatmasini yozish taklif
+    // qilinadi. (`isWeak` bo'lmaydi: dars oxirida hamma so'z
+    // "mustahkam" bo'ladi, shuning uchun taklif hech chiqmasdi.)
     final weak = [
       for (final w in lesson.words)
-        if (mastery.of(w.itemId).isWeak) w,
+        if (mastery.of(w.itemId).hook.isEmpty &&
+            (mistaken.contains(w.itemId) || mastery.of(w.itemId).lapses >= 2))
+          w,
     ];
     return ListView(
       padding: const EdgeInsets.all(28),
@@ -407,7 +422,7 @@ class _Finished extends StatelessWidget {
           child: Text(
             mistakes == 0
                 ? '${lesson.words.length} ta so\'z — birorta xatosiz!'
-                : '${lesson.words.length} ta so\'z o\'rganildi. $mistakes ta xato — ular qayta so\'raldi.',
+                : '${lesson.words.length} ta so\'z ${rescue ? 'qutqarildi' : 'o\'rganildi'}. $mistakes ta xato — ular qayta so\'raldi.',
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 13.5, height: 1.5, color: AppColors.muted(context)),

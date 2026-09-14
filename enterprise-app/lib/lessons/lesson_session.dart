@@ -42,6 +42,9 @@ class LessonSession {
   int _answered = 0;
   int _mistakes = 0;
 
+  /// Shu seansda xato qilingan so'zlar — yakunda eslatma taklifi uchun.
+  final Set<String> mistakenIds = {};
+
   static const List<AskFormat> rounds = [
     AskFormat.choice,
     AskFormat.produce,
@@ -126,6 +129,7 @@ class LessonSession {
     _answered += 1;
     if (!ok) {
       _mistakes += 1;
+      mistakenIds.add(q.itemId);
       _requeue(q);
     }
     _pos += 1;
