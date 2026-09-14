@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../blitz/blitz_screen.dart';
 import '../lessons/lesson_screen.dart';
 import '../lessons/word_lesson.dart';
 import '../main.dart';
@@ -598,4 +599,84 @@ class _TonightCard extends StatelessWidget {
           ),
         ),
       );
+}
+
+/// BOSh EKRAN: ⚡ Blitz — o'rganilgan so'zlar bilan (8+ bo'lsa).
+class BlitzCard extends StatefulWidget {
+  const BlitzCard({super.key});
+
+  @override
+  State<BlitzCard> createState() => _BlitzCardState();
+}
+
+class _BlitzCardState extends State<BlitzCard> {
+  int _best = 0;
+  String get _key => '${book.level}::all';
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final b = await BlitzScreen.bestOf(_key);
+    if (mounted) setState(() => _best = b);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final src = blitzSourcesFromMastery(mastery);
+    if (src.length < 8) return const SizedBox.shrink();
+    return Material(
+      color: AppColors.homework.withValues(alpha: 0.12),
+      borderRadius: BorderRadius.circular(AppRadius.lg),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: () async {
+          await Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => BlitzScreen(
+                sources: src,
+                label: 'barcha so\'zlar',
+                recordKey: _key,
+              ),
+            ),
+          );
+          _load();
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Row(
+            children: [
+              const Text('⚡', style: TextStyle(fontSize: 26)),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Blitz · 60 soniya',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 15,
+                            color: AppColors.homework)),
+                    const SizedBox(height: 2),
+                    Text(
+                      _best > 0
+                          ? 'Rekord: $_best · ${src.length} ta o\'rganilgan so\'z'
+                          : '${src.length} ta o\'rganilgan so\'z bilan tezlik sinovi',
+                      style: TextStyle(
+                          fontSize: 12.5, color: AppColors.muted(context)),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded, color: AppColors.homework),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }

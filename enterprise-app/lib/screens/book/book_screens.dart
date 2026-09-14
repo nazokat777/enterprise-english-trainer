@@ -108,6 +108,9 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
           const EntranceFade(child: CommitCard()),
           const EntranceFade(child: _QuickStartCard()),
           const SizedBox(height: 10),
+          const EntranceFade(child: BlitzCard()),
+          if (mastery.learnedWords(limit: 8).length >= 8)
+            const SizedBox(height: 10),
           // O'ChIB KETAYoTGAN SO'ZLAR — kunlik topshiriqdan ham oldin:
           // unutish egri chizig'i kutmaydi.
           const EntranceFade(child: MemoryRescueCard()),

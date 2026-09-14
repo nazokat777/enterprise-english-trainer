@@ -377,6 +377,27 @@ class MasteryStore extends ChangeNotifier {
         .toList();
   }
 
+  /// O'rganilgan lug'at so'zlari (id, en, uz) — eng yaqinda
+  /// so'ralganidan boshlab. Blitz va boshqa aralash o'yinlar uchun.
+  List<(String, String, String)> learnedWords({int limit = 60}) {
+    final prefix = '$_level::w::';
+    final list = _items.entries
+        .where((e) =>
+            e.key.startsWith(prefix) &&
+            !e.value.isNew &&
+            e.value.uz.isNotEmpty)
+        .toList()
+      ..sort((a, b) => b.value.lastAskedMs.compareTo(a.value.lastAskedMs));
+    return [
+      for (final e in list.take(limit))
+        (
+          e.key.substring('$_level::'.length),
+          e.value.en.isNotEmpty ? e.value.en : e.key.substring(prefix.length),
+          e.value.uz,
+        ),
+    ];
+  }
+
   /// Xotira bog'i: har bosqichda nechta so'z (joriy daraja, lug'at).
   List<int> garden() {
     final out = List<int>.filled(ItemMastery.stageEmoji.length, 0);

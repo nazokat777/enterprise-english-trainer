@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../book_content.dart';
+import '../blitz/blitz_screen.dart';
 import '../drill/drill_item.dart';
 import '../main.dart';
 import '../theme.dart';
@@ -109,13 +110,20 @@ class _LessonsScreenState extends State<LessonsScreen> {
               ),
               const SizedBox(height: 6),
               Text(
-                'Avval so\'zlar ko\'rsatiladi, so\'ng 3 bosqichda so\'raladi. '
+                'Avval so\'zlar ko\'rsatiladi, so\'ng 3-4 bosqichda so\'raladi '
+                '(oxirgisi - gap ichida). '
                 'Xato qilingan so\'z qaytadi.',
                 textAlign: TextAlign.center,
                 style:
                     TextStyle(fontSize: 12, color: AppColors.muted(context)),
               ),
               const SizedBox(height: 20),
+            ],
+            // ⚡ BLITZ — unit so'zlari bilan 60 soniya. Darslar tugagach
+            // ham qaytib keladigan sabab: o'z rekordini yangilash.
+            if (_pool.length >= 4) ...[
+              _BlitzButton(pool: _pool, unit: u),
+              const SizedBox(height: 16),
             ],
             for (var i = 0; i < _lessons.length; i++)
               EntranceFade(
@@ -228,6 +236,85 @@ class _LessonTile extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _BlitzButton extends StatefulWidget {
+  final List<DrillSource> pool;
+  final BookUnit unit;
+  const _BlitzButton({required this.pool, required this.unit});
+
+  @override
+  State<_BlitzButton> createState() => _BlitzButtonState();
+}
+
+class _BlitzButtonState extends State<_BlitzButton> {
+  int _best = 0;
+  String get _key => '${book.level}::u${widget.unit.unit}';
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final b = await BlitzScreen.bestOf(_key);
+    if (mounted) setState(() => _best = b);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppColors.homework.withValues(alpha: 0.12),
+      borderRadius: BorderRadius.circular(AppRadius.lg),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: () async {
+          await Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => BlitzScreen(
+                sources: widget.pool,
+                label: widget.unit.displayLabel,
+                recordKey: _key,
+              ),
+            ),
+          );
+          _load();
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Row(
+            children: [
+              const Text('⚡', style: TextStyle(fontSize: 26)),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Blitz · 60 soniya',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 15,
+                            color: AppColors.homework)),
+                    const SizedBox(height: 2),
+                    Text(
+                      _best > 0
+                          ? 'Rekordingiz: $_best ochko - yangilaysizmi?'
+                          : '${widget.pool.length} ta so\'z, iloji boricha ko\'p javob',
+                      style: TextStyle(
+                          fontSize: 12.5, color: AppColors.muted(context)),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded, color: AppColors.homework),
+            ],
           ),
         ),
       ),
