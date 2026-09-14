@@ -179,6 +179,7 @@ class _LessonScreenState extends State<LessonScreen> {
             AskFormat.choice => 'ma\'nosini tanlang',
             AskFormat.produce => 'inglizchasini tanlang',
             AskFormat.listen => 'eshitib yozing',
+            AskFormat.cloze => 'gapdagi bo\'shliqni to\'ldiring',
             _ => 'harflab yozing',
           }}',
         _Stage.done => 'Yakunlandi',

@@ -34,6 +34,10 @@ class WordLesson {
             itemId: w.itemId,
             en: w.en,
             uz: w.uz,
+            // KONTEKST: misol gapdagi so'z bo'shliq bo'ladi — so'z gap
+            // ichida eslanadi (kontekstli xotira). Gap bo'lmasa cloze
+            // raundi shu so'z uchun tashlab ketiladi.
+            sentence: w.clozeSentence,
             unit: unit,
             topic: 'Lug\'at',
           ),
@@ -57,6 +61,16 @@ class LessonWord {
   });
 
   String get itemId => 'w::${en.trim().toLowerCase()}';
+
+  /// Misol gapda so'z `_____` bilan almashtirilgan; gap yo'q yoki
+  /// so'z gapda topilmasa — bo'sh.
+  String get clozeSentence {
+    if (exampleEn.isEmpty) return '';
+    final re = RegExp(r'\b' + RegExp.escape(en.trim()) + r'\b',
+        caseSensitive: false);
+    if (!re.hasMatch(exampleEn)) return '';
+    return exampleEn.replaceFirst(re, kBlank);
+  }
 }
 
 /// Bitta darsda nechta so'z.

@@ -45,10 +45,13 @@ class LessonSession {
   /// Shu seansda xato qilingan so'zlar — yakunda eslatma taklifi uchun.
   final Set<String> mistakenIds = {};
 
+  /// 4-raund — KONTEKST: misol gapdagi bo'shliqni to'ldirish. Faqat
+  /// gap bor so'zlar uchun (qolganlariga `buildQuestion` null beradi).
   static const List<AskFormat> rounds = [
     AskFormat.choice,
     AskFormat.produce,
     AskFormat.build,
+    AskFormat.cloze,
   ];
 
   LessonSession({

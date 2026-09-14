@@ -128,6 +128,16 @@ void main() {
           for (final src in l.sources) {
             for (final f in LessonSession.rounds) {
               final q = buildQuestion(src, f, pool, Random(l.index));
+              // Cloze faqat misol gapi bor so'zlar uchun — ixtiyoriy.
+              if (f == AskFormat.cloze) {
+                if (src.sentence.isEmpty) {
+                  expect(q, isNull);
+                  continue;
+                }
+                expect(q, isNotNull, reason: '${src.en} cloze');
+                expect(q!.prompt, contains(kBlank));
+                continue;
+              }
               expect(q, isNotNull,
                   reason: '${level.id} ${b.displayLabel} ${src.en} $f');
               if (f != AskFormat.build) {
