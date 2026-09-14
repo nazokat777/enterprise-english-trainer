@@ -68,10 +68,10 @@ class HelpScreen extends StatelessWidget {
             'eslatmangizni (💡) yozing — +3 XP va so\'z 3 barobar yaxshi '
             'yodda qoladi.'),
     ('⚡', 'Blitz - 60 soniya',
-        'Unit so'zlari (yoki barcha o'rganilgan so'zlar) bilan tezlik '
-            'sinovi: 1 ochko, 5 ketma-ket to'g'ridan boshlab x2, 10 dan x3, '
-            'xato - ko'paytirgich nolga. Ochko = XP, yangi rekord +15 XP. '
-            'Tez eslab aytish so'zni "avtomatik" darajaga olib chiqadi.'),
+        'Unit so\'zlari (yoki barcha o\'rganilgan so\'zlar) bilan tezlik '
+            'sinovi: 1 ochko, 5 ketma-ket to\'g\'ridan boshlab x2, 10 dan x3, '
+            'xato - ko\'paytirgich nolga. Ochko = XP, yangi rekord +15 XP. '
+            'Tez eslab aytish so\'zni "avtomatik" darajaga olib chiqadi.'),
     ('⚡', 'XP va daraja',
         'Har to\'g\'ri javob 2 XP. XP yig\'ilib 40 ta darajadan o\'tasiz, har '
             'darajaning o\'z unvoni bor ("Yangi o\'quvchi" dan "Enterprise '
