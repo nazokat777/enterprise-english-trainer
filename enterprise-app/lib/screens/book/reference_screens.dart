@@ -757,6 +757,13 @@ class _UnitVocabularyScreenState extends State<UnitVocabularyScreen> {
                                   fontSize: 14,
                                   color: AppColors.muted(context))),
                         ),
+                        // Xotira bosqichi — so'z "o'sgani" ro'yxatda ham
+                        // ko'rinsin.
+                        if (!mastery.of(_id(e.en)).isNew) ...[
+                          Text(mastery.of(_id(e.en)).stageIcon,
+                              style: const TextStyle(fontSize: 16)),
+                          const SizedBox(width: 6),
+                        ],
                         const Icon(Icons.volume_up_rounded,
                             size: 18, color: AppColors.actionBlue),
                       ],
@@ -769,6 +776,8 @@ class _UnitVocabularyScreenState extends State<UnitVocabularyScreen> {
       ),
     );
   }
+
+  static String _id(String en) => 'w::${en.trim().toLowerCase()}';
 }
 
 /// Sahifa lug'atini interaktiv yodlash: inglizcha so'z → 4 ta o'zbekcha variant.

@@ -56,6 +56,17 @@ class HelpScreen extends StatelessWidget {
 
   /// Mukofot tizimi — o'quvchi nima uchun ball olayotganini bilsin.
   static const List<(String, String, String)> _rewards = [
+    ('🧠', 'Xotira jadvali',
+        'Har so\'z uchun takrorlash muddati bor: 1 - 3 - 7 - 14 - 30 - 60 - '
+            '120 kun. Muddat kelganda so\'z "o\'chib ketmoqda" ro\'yxatiga '
+            'tushadi — bosh ekrandagi 🛟 Qutqarish tugmasi bilan eslab '
+            'aytsangiz, keyingi muddat uzayadi. Xato — 1 kunga qaytaradi. '
+            'So\'z bosqichlari: 🌱 Urug\' - 🌿 Nihol - 🌳 Daraxt - 💎 Kristall - '
+            '🏆 Abadiy (60+ kun). Yangi darsga eski so\'zlardan 1-3 tasi '
+            'aralashtiriladi, kechqurun esa uxlashdan oldingi 1 daqiqalik '
+            'takror taklif qilinadi. 2+ marta xato qilingan so\'zga o\'z '
+            'eslatmangizni (💡) yozing — +3 XP va so\'z 3 barobar yaxshi '
+            'yodda qoladi.'),
     ('⚡', 'XP va daraja',
         'Har to\'g\'ri javob 2 XP. XP yig\'ilib 40 ta darajadan o\'tasiz, har '
             'darajaning o\'z unvoni bor ("Yangi o\'quvchi" dan "Enterprise '
