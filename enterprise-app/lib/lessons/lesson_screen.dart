@@ -6,6 +6,8 @@ import '../drill/drill_item.dart';
 import '../drill/drill_screen.dart';
 import '../main.dart';
 import '../mastery.dart';
+import '../memory/memory.dart';
+import '../memory/memory_widgets.dart';
 import '../services/tts.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
@@ -26,11 +28,16 @@ class LessonScreen extends StatefulWidget {
   final String unitLabel;
   final List<DrillSource> pool;
 
+  /// XOTIRA QUTQARUVI rejimi: tanishuv YO'Q — so'z avval eslab
+  /// aytiladi (retrieval), ko'rsatib qo'yilmaydi.
+  final bool rescue;
+
   const LessonScreen({
     super.key,
     required this.lesson,
     required this.unitLabel,
     this.pool = const [],
+    this.rescue = false,
   });
 
   @override
@@ -46,6 +53,11 @@ class _LessonScreenState extends State<LessonScreen> {
   Timer? _next;
   bool? _result;
 
+  /// Dars boshidagi xotira bosqichlari — yakunda "o'sish" ko'rsatiladi.
+  late final Map<String, int> _stageBefore = {
+    for (final w in widget.lesson.words) w.itemId: mastery.of(w.itemId).stage,
+  };
+
   @override
   void initState() {
     super.initState();
@@ -53,8 +65,15 @@ class _LessonScreenState extends State<LessonScreen> {
       lesson: widget.lesson,
       mastery: mastery,
       pool: widget.pool,
+      extras: widget.rescue
+          ? const []
+          : MemoryRescue.extras(mastery, widget.lesson),
     );
-    WidgetsBinding.instance.addPostFrameCallback((_) => _speakCard());
+    if (widget.rescue) {
+      _stage = _s.isDone ? _Stage.done : _Stage.quiz;
+    } else {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _speakCard());
+    }
   }
 
   @override
@@ -98,8 +117,12 @@ class _LessonScreenState extends State<LessonScreen> {
       if (_s.isDone) {
         await progress.addXp(5);
         rewards.onExerciseDone(clean: true);
-        // Dars tugadi = darsdagi so'zlar o'rganildi (kunlik topshiriq).
-        rewards.onWordLearned(_s.lesson.sources.length);
+        if (widget.rescue) {
+          rewards.onRescue(_s.lesson.sources.length);
+        } else {
+          // Dars tugadi = darsdagi so'zlar o'rganildi (kunlik topshiriq).
+          rewards.onWordLearned(_s.lesson.sources.length);
+        }
       }
     });
   }
@@ -113,7 +136,10 @@ class _LessonScreenState extends State<LessonScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('${widget.unitLabel} · ${l.index}-dars',
+            Text(
+                widget.rescue
+                    ? widget.unitLabel
+                    : '${widget.unitLabel} · ${l.index}-dars',
                 style: const TextStyle(fontSize: 16)),
             Text(_stageLabel(),
                 style: const TextStyle(
@@ -130,6 +156,8 @@ class _LessonScreenState extends State<LessonScreen> {
           _Stage.done => _Finished(
               lesson: l,
               mistakes: _s.mistakes,
+              rescue: widget.rescue,
+              stageBefore: _stageBefore,
               onClose: () => Navigator.pop(context, true),
             ),
         },
@@ -171,12 +199,17 @@ class _LessonScreenState extends State<LessonScreen> {
                 ),
                 child: Column(
                   children: [
-                    Text('YANGI SO\'Z',
-                        style: TextStyle(
-                            fontSize: 11.5,
-                            fontWeight: FontWeight.w800,
-                            letterSpacing: 1.2,
-                            color: AppColors.muted(context))),
+                    // Ilgari ko'rilgan so'z "yangi" deb chiqmasin —
+                    // uning xotira bosqichi ko'rinsin (o'sish hissi).
+                    if (mastery.of(w.itemId).isNew)
+                      Text('YANGI SO\'Z',
+                          style: TextStyle(
+                              fontSize: 11.5,
+                              fontWeight: FontWeight.w800,
+                              letterSpacing: 1.2,
+                              color: AppColors.muted(context)))
+                    else
+                      MemoryStageChip(itemId: w.itemId),
                     const SizedBox(height: 12),
                     Text(w.en,
                         textAlign: TextAlign.center,
@@ -194,6 +227,10 @@ class _LessonScreenState extends State<LessonScreen> {
                             fontWeight: FontWeight.w700,
                             color: AppColors.brandPurple,
                             height: 1.3)),
+                    if (mastery.of(w.itemId).hook.isNotEmpty) ...[
+                      const SizedBox(height: 14),
+                      HookBubble(text: mastery.of(w.itemId).hook),
+                    ],
                     if (w.exampleEn.isNotEmpty) ...[
                       const SizedBox(height: 22),
                       Divider(color: AppColors.muted(context).withValues(alpha: 0.3)),
@@ -316,23 +353,43 @@ class _Bar extends StatelessWidget {
 class _Finished extends StatelessWidget {
   final WordLesson lesson;
   final int mistakes;
+  final bool rescue;
+  final Map<String, int> stageBefore;
   final VoidCallback onClose;
-  const _Finished(
-      {required this.lesson, required this.mistakes, required this.onClose});
+  const _Finished({
+    required this.lesson,
+    required this.mistakes,
+    required this.onClose,
+    this.rescue = false,
+    this.stageBefore = const {},
+  });
 
   @override
   Widget build(BuildContext context) {
+    // Qiyin so'zlar (2+ xato, hali mustahkam emas) — o'z eslatmasini
+    // yozish taklif qilinadi.
+    final weak = [
+      for (final w in lesson.words)
+        if (mastery.of(w.itemId).isWeak) w,
+    ];
     return ListView(
       padding: const EdgeInsets.all(28),
       children: [
         const SizedBox(height: 20),
-        const Center(
-          child: Icon(Icons.workspace_premium_rounded,
-              size: 96, color: AppColors.success),
+        Center(
+          child: Icon(
+              rescue
+                  ? Icons.health_and_safety_rounded
+                  : Icons.workspace_premium_rounded,
+              size: 96,
+              color: AppColors.success),
         ),
         const SizedBox(height: 16),
         Center(
-          child: Text('${lesson.index}-dars tugadi',
+          child: Text(
+              rescue
+                  ? '${lesson.words.length} ta so\'z qutqarildi!'
+                  : '${lesson.index}-dars tugadi',
               style: const TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.w800,
@@ -350,25 +407,24 @@ class _Finished extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 22),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          alignment: WrapAlignment.center,
-          children: [
+        // XOTIRA O'SIShI — har so'z qaysi bosqichdan qaysiga o'tdi.
+        // Ko'rinadigan o'sish = harakat-natija bog'i (dofamin).
+        MemoryGrowthList(
+          items: [
             for (final w in lesson.words)
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-                decoration: BoxDecoration(
-                  color: AppColors.success.withValues(alpha: 0.12),
-                  borderRadius: BorderRadius.circular(AppRadius.pill),
-                ),
-                child: Text('${w.en} — ${w.uz}',
-                    style: const TextStyle(
-                        fontSize: 13, fontWeight: FontWeight.w700)),
+              MemoryGrowth(
+                en: w.en,
+                uz: w.uz,
+                before: stageBefore[w.itemId] ?? 0,
+                after: mastery.of(w.itemId).stage,
+                interval: mastery.of(w.itemId).interval,
               ),
           ],
         ),
+        if (weak.isNotEmpty) ...[
+          const SizedBox(height: 22),
+          HookEditor(words: [for (final w in weak) (w.itemId, w.en, w.uz)]),
+        ],
         const SizedBox(height: 26),
         Pressable3D(
           color: AppColors.brandPurple,

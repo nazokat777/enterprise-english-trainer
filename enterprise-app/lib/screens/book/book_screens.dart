@@ -7,6 +7,7 @@ import '../../drill/drill_screen.dart';
 import '../../lessons/lessons_screen.dart';
 import '../../lessons/word_lesson.dart';
 import '../../main.dart';
+import '../../memory/memory_widgets.dart';
 import '../../reward/companion.dart';
 import '../../reward/reward_widgets.dart';
 import '../../theme.dart';
@@ -106,6 +107,10 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
           // daqiqalik trening.
           const EntranceFade(child: CommitCard()),
           const EntranceFade(child: _QuickStartCard()),
+          const SizedBox(height: 10),
+          // O'ChIB KETAYoTGAN SO'ZLAR — kunlik topshiriqdan ham oldin:
+          // unutish egri chizig'i kutmaydi.
+          const EntranceFade(child: MemoryRescueCard()),
           const SizedBox(height: 10),
           const EntranceFade(child: StreakDangerCard()),
           if (rewards.idleToday && progress.currentStreak > 0)

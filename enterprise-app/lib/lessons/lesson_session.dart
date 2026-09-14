@@ -24,6 +24,13 @@ class LessonSession {
   /// chiqarib tashlash" bilan topiladi.
   final List<DrillSource> pool;
 
+  /// ARALASH TAKROR (interleaving): oldingi darslardan o'chib
+  /// ketayotgan 1-3 so'z shu darsning savollari orasiga qo'shiladi —
+  /// ishlab chiqarish shaklida, bittadan. Yangi so'zlar orasida eski
+  /// so'zni eslab aytish uni yangidan mustahkamlaydi (spacing +
+  /// interleaving effekti) va o'quvchiga qo'shimcha seans yuklamaydi.
+  final List<DrillSource> extras;
+
   final Random _rnd;
   final List<DrillQuestion> _queue = [];
   int _pos = 0;
@@ -40,10 +47,28 @@ class LessonSession {
     required this.lesson,
     required this.mastery,
     this.pool = const [],
+    this.extras = const [],
     Random? random,
   }) : _rnd = random ?? Random() {
     _fill();
+    _sprinkle();
   }
+
+  /// Eski so'zlar 2-raunddan boshlab tasodifiy joylarga.
+  void _sprinkle() {
+    if (extras.isEmpty || _queue.isEmpty) return;
+    final n = lesson.sources.length;
+    for (final e in extras) {
+      final q = buildQuestion(e, AskFormat.produce, [e, ...pool, ...lesson.sources], _rnd) ??
+          buildQuestion(e, AskFormat.build, [e], _rnd);
+      if (q == null) continue;
+      final at = n + _rnd.nextInt((_queue.length - n).clamp(1, 1 << 30));
+      _queue.insert(at.clamp(0, _queue.length), q);
+    }
+  }
+
+  /// Aralash takrordagi so'zlar nechta.
+  int get extraCount => extras.length;
 
   void _fill() {
     final src = lesson.sources;
@@ -89,7 +114,9 @@ class LessonSession {
   Future<void> answer(bool ok) async {
     final q = current;
     if (q == null) return;
-    await mastery.record(q.itemId, q.format, ok: ok);
+    final src = _sourceOf(q.itemId);
+    await mastery.record(q.itemId, q.format,
+        ok: ok, en: src?.en ?? '', uz: src?.uz ?? '');
     _answered += 1;
     if (!ok) {
       _mistakes += 1;
@@ -100,8 +127,18 @@ class LessonSession {
 
   /// Xato so'z 2 savoldan keyin o'sha shaklda qaytadi — yangi
   /// variantlar bilan (javobning o'rnini yodlab olib bo'lmasin).
+  DrillSource? _sourceOf(String id) {
+    for (final e in lesson.sources) {
+      if (e.itemId == id) return e;
+    }
+    for (final e in extras) {
+      if (e.itemId == id) return e;
+    }
+    return null;
+  }
+
   void _requeue(DrillQuestion q) {
-    final src = lesson.sources.firstWhere((e) => e.itemId == q.itemId);
+    final src = _sourceOf(q.itemId)!;
     final next = buildQuestion(src, q.format, _poolFor(src), _rnd) ?? q;
     final at = (_pos + 3).clamp(0, _queue.length);
     _queue.insert(at, next);

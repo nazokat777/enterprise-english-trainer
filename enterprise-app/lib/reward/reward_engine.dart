@@ -35,6 +35,9 @@ class RewardEngine extends ChangeNotifier {
   int exercisesDone = 0;
   int perfectExercises = 0;
   int wordsLearned = 0;
+
+  /// Qutqarilgan (o'chib ketishdan qaytarilgan) so'zlar — jami.
+  int wordsRescued = 0;
   int bestCombo = 0;
   int bestDayXp = 0;
   int chestsOpened = 0;
@@ -243,6 +246,7 @@ class RewardEngine extends ChangeNotifier {
     exercisesDone = p.getInt('rw_ex') ?? 0;
     perfectExercises = p.getInt('rw_perfect') ?? 0;
     wordsLearned = p.getInt('rw_words') ?? 0;
+    wordsRescued = p.getInt('rw_rescued') ?? 0;
     bestCombo = p.getInt('rw_bestCombo') ?? 0;
     bestDayXp = p.getInt('rw_bestDay') ?? 0;
     chestsOpened = p.getInt('rw_chests') ?? 0;
@@ -289,6 +293,7 @@ class RewardEngine extends ChangeNotifier {
     await p.setInt('rw_ex', exercisesDone);
     await p.setInt('rw_perfect', perfectExercises);
     await p.setInt('rw_words', wordsLearned);
+    await p.setInt('rw_rescued', wordsRescued);
     await p.setInt('rw_bestCombo', bestCombo);
     await p.setInt('rw_bestDay', bestDayXp);
     await p.setInt('rw_chests', chestsOpened);
@@ -324,6 +329,7 @@ class RewardEngine extends ChangeNotifier {
     coins = 0;
     correctTotal = wrongTotal = exercisesDone = perfectExercises = 0;
     wordsLearned = bestCombo = bestDayXp = chestsOpened = critsTotal = 0;
+    wordsRescued = 0;
     achievements.clear();
     combo = 0;
     _toChest = _rollChest();
@@ -497,6 +503,18 @@ class RewardEngine extends ChangeNotifier {
     tick();
     wordsLearned += n;
     todayWords += n;
+    _bumpQuest(QuestKind.words, n);
+    _checkAchievements();
+    _save();
+    notifyListeners();
+  }
+
+  /// Xotira qutqaruvi tugadi — [n] ta so'z unutilishdan qaytarildi.
+  /// Tanga: har so'zga 1 (yo'qotishdan saqlab qolish — alohida mukofot).
+  void onRescue(int n) {
+    tick();
+    wordsRescued += n;
+    coins += n;
     _bumpQuest(QuestKind.words, n);
     _checkAchievements();
     _save();
@@ -780,6 +798,8 @@ class RewardEngine extends ChangeNotifier {
     give('words50', wordsLearned >= 50);
     give('words300', wordsLearned >= 300);
     give('words1000', wordsLearned >= 1000);
+    give('rescue25', wordsRescued >= 25);
+    give('rescue200', wordsRescued >= 200);
     give('lvl5', level >= 5);
     give('lvl10', level >= 10);
     give('lvl20', level >= 20);

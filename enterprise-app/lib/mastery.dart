@@ -68,12 +68,95 @@ class ItemMastery {
   /// Oxirgi marta qachon so'ralgan (ms).
   int lastAskedMs;
 
+  /// XOTIRA JADVALI (spaced repetition) — keyingi takrorlashgacha kun.
+  ///
+  /// Ilgari band `isStrong` bo'lgach ilova uni QAYTA HECH SO'RAMASDI —
+  /// unutish egri chizig'i (Ebbinghaus) esa 2-3 kundan keyin yodlangan
+  /// so'zning yarmini o'chiradi. Endi har to'g'ri javob intervalni
+  /// zinapoya bo'ylab oshiradi (1 -> 3 -> 7 -> 14 -> 30 -> 60 -> 120
+  /// kun), xato esa 1 kunga qaytaradi. Interval oshgani sari so'z
+  /// "o'sadi" (`stage`) — o'quvchi o'z xotirasi o'sishini KO'RADI.
+  int interval;
+
+  /// Keyingi takrorlash vaqti (ms). 0 = hali rejalashtirilmagan.
+  int dueMs;
+
+  /// O'quvchining O'Z eslatmasi (mnemonika) — "generation effect":
+  /// o'zi o'ylab topgan bog'lanish tayyor berilganidan 2-3 barobar
+  /// mustahkam yodda qoladi.
+  String hook;
+
+  /// Ko'rsatish uchun o'zbekcha ma'no (qutqaruv seansi qaytadan
+  /// kitobni yuklamasdan savol tuza olsin).
+  String en;
+  String uz;
+
   ItemMastery({
     this.correct = 0,
     this.lapses = 0,
     Set<AskFormat>? passed,
     this.lastAskedMs = 0,
+    this.interval = 0,
+    this.dueMs = 0,
+    this.hook = '',
+    this.en = '',
+    this.uz = '',
   }) : passed = passed ?? <AskFormat>{};
+
+  /// Interval zinapoyasi (kun).
+  static const List<int> ladder = [1, 3, 7, 14, 30, 60, 120];
+
+  /// Xotira bosqichi 0..4: 🌱 urug' -> 🌿 nihol -> 🌳 daraxt ->
+  /// 💎 kristall -> 🏆 abadiy. Interval bo'yicha.
+  int get stage {
+    if (interval >= 60) return 4;
+    if (interval >= 14) return 3;
+    if (interval >= 7) return 2;
+    if (interval >= 3) return 1;
+    return 0;
+  }
+
+  static const List<String> stageEmoji = ['🌱', '🌿', '🌳', '💎', '🏆'];
+  static const List<String> stageName = [
+    'Urug\'',
+    'Nihol',
+    'Daraxt',
+    'Kristall',
+    'Abadiy',
+  ];
+
+  String get stageIcon => stageEmoji[stage];
+
+  /// O'chib ketish arafasida: muddati o'tgan va hali "abadiy" emas.
+  bool isFading(int nowMs) =>
+      dueMs > 0 && nowMs >= dueMs && !isNew && stage < 4;
+
+  /// Necha kun kechikkan (0 = hali muddati kelmagan).
+  int overdueDays(int nowMs) =>
+      dueMs == 0 || nowMs < dueMs ? 0 : (nowMs - dueMs) ~/ 86400000;
+
+  /// Javobdan keyin jadvalni yangilaydi.
+  ///
+  /// Ishlab chiqarish shakli (yozish, eshitib yozish) tanishdan
+  /// kuchliroq dalil — u zinapoyada bir pog'ona ko'proq ko'taradi.
+  void schedule(bool ok, AskFormat format, int nowMs) {
+    if (!ok) {
+      interval = 1;
+    } else {
+      // Bir seansda so'z 3 marta so'raladi — har biri alohida "kun"
+      // hisoblanmasin: intervalning yarmi o'tmagan bo'lsa, jadval
+      // o'zgarmaydi (Anki ham erta takrorni sanamaydi).
+      final early = dueMs > 0 && nowMs < dueMs - interval * 43200000;
+      if (early) return;
+      var i = ladder.indexWhere((d) => d > interval);
+      if (i < 0) i = ladder.length - 1;
+      if (kProductionFormats.contains(format) && i + 1 < ladder.length) {
+        i += 1;
+      }
+      interval = ladder[i];
+    }
+    dueMs = nowMs + interval * 86400000;
+  }
 
   /// Hali umuman so'ralmagan.
   bool get isNew => correct == 0 && lapses == 0;
@@ -113,6 +196,11 @@ class ItemMastery {
         'l': lapses,
         'f': passed.map((e) => e.index).toList(),
         't': lastAskedMs,
+        if (interval > 0) 'iv': interval,
+        if (dueMs > 0) 'd': dueMs,
+        if (hook.isNotEmpty) 'h': hook,
+        if (en.isNotEmpty) 'e': en,
+        if (uz.isNotEmpty) 'u': uz,
       };
 
   factory ItemMastery.fromJson(Map<String, dynamic> j) => ItemMastery(
@@ -124,6 +212,11 @@ class ItemMastery {
               AskFormat.values[i.toInt()],
         },
         lastAskedMs: (j['t'] as num?)?.toInt() ?? 0,
+        interval: (j['iv'] as num?)?.toInt() ?? 0,
+        dueMs: (j['d'] as num?)?.toInt() ?? 0,
+        hook: (j['h'] as String?) ?? '',
+        en: (j['e'] as String?) ?? '',
+        uz: (j['u'] as String?) ?? '',
       );
 }
 
@@ -172,9 +265,13 @@ class MasteryStore extends ChangeNotifier {
 
   /// Javob yozildi. [ok] — to'g'rimi, [format] — qaysi ko'rinishda.
   Future<void> record(String itemId, AskFormat format,
-      {required bool ok}) async {
+      {required bool ok, String en = '', String uz = '', int? nowMs}) async {
     final m = of(itemId);
-    m.lastAskedMs = DateTime.now().millisecondsSinceEpoch;
+    final now = nowMs ?? DateTime.now().millisecondsSinceEpoch;
+    m.lastAskedMs = now;
+    if (en.isNotEmpty) m.en = en;
+    if (uz.isNotEmpty) m.uz = uz;
+    m.schedule(ok, format, now);
     if (ok) {
       m.correct += 1;
       m.passed.add(format);
@@ -223,6 +320,46 @@ class MasteryStore extends ChangeNotifier {
   /// Hammasi o'zlashtirilganmi — "100% javob berilgunicha" mezoni.
   bool allStrong(Iterable<String> itemIds) =>
       itemIds.every((id) => of(id).isStrong);
+
+  /// O'quvchining o'z eslatmasini saqlaydi.
+  Future<void> setHook(String itemId, String hook) async {
+    of(itemId).hook = hook.trim();
+    await _save();
+    notifyListeners();
+  }
+
+  /// O'ChIB KETAYoTGAN so'zlar (joriy daraja) — eng kechikkanidan.
+  ///
+  /// Faqat lug'at so'zlari (`w::`): mashq bandlari kitob mashqida
+  /// takrorlanadi, ular uchun alohida qutqaruv seansi tuzilmaydi.
+  List<String> fadingIds({int limit = 10, int? nowMs}) {
+    final now = nowMs ?? DateTime.now().millisecondsSinceEpoch;
+    final prefix = '$_level::w::';
+    final list = _items.entries
+        .where((e) =>
+            e.key.startsWith(prefix) &&
+            e.value.isFading(now) &&
+            e.value.uz.isNotEmpty)
+        .toList()
+      ..sort((a, b) => a.value.dueMs.compareTo(b.value.dueMs));
+    return list
+        .take(limit)
+        .map((e) => e.key.substring('$_level::'.length))
+        .toList();
+  }
+
+  int fadingCount({int? nowMs}) => fadingIds(limit: 1 << 20, nowMs: nowMs).length;
+
+  /// Xotira bog'i: har bosqichda nechta so'z (joriy daraja, lug'at).
+  List<int> garden() {
+    final out = List<int>.filled(ItemMastery.stageEmoji.length, 0);
+    final prefix = '$_level::w::';
+    for (final e in _items.entries) {
+      if (!e.key.startsWith(prefix) || e.value.isNew) continue;
+      out[e.value.stage] += 1;
+    }
+    return out;
+  }
 
   Future<void> reset() async {
     _items.clear();
