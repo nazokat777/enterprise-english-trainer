@@ -31,7 +31,7 @@ class Progress extends ChangeNotifier {
   String apiKey = '';
 
   /// AI provayderi: 'claude' | 'gemini' | 'groq'. Kalitlar alohida.
-  String aiProvider = 'claude';
+  String aiProvider = 'gemini';
   final Map<String, String> aiKeys = {};
   final Map<String, int> skills = {}; // Skill.name -> 0..100
 
@@ -101,7 +101,9 @@ class Progress extends ChangeNotifier {
     sfx = p.getBool('sfx') ?? true;
     currentLevel = p.getString('level') ?? kDefaultLevel;
     apiKey = p.getString('apiKey') ?? '';
-    aiProvider = p.getString('aiProvider') ?? 'claude';
+    // Standart: bepul provayder (Gemini); eski Claude kaliti bo'lsa - Claude.
+    aiProvider = p.getString('aiProvider') ??
+        (apiKey.isNotEmpty ? 'claude' : 'gemini');
     aiKeys.clear();
     for (final k in const ['claude', 'gemini', 'groq']) {
       final v = p.getString('aiKey_$k');
