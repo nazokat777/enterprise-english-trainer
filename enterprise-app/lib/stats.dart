@@ -111,6 +111,16 @@ class Progress extends ChangeNotifier {
     }
     // Eski yagona kalit (Claude) — ko'chirish.
     if (apiKey.isNotEmpty && !aiKeys.containsKey('claude')) aiKeys['claude'] = apiKey;
+    // O'RNATILGAN kalitlar (build vaqtida --dart-define bilan beriladi,
+    // git'ga tushmaydi): foydalanuvchi o'zi kiritmagan bo'lsa shular.
+    const built = {
+      'gemini': String.fromEnvironment('GEMINI_KEY'),
+      'groq': String.fromEnvironment('GROQ_KEY'),
+      'claude': String.fromEnvironment('CLAUDE_KEY'),
+    };
+    built.forEach((k, v) {
+      if (v.isNotEmpty && (aiKeys[k] ?? '').isEmpty) aiKeys[k] = v;
+    });
     final sk = p.getString('skills');
     if (sk != null) {
       (json.decode(sk) as Map)
