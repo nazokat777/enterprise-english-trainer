@@ -9,6 +9,7 @@ import '../../lessons/word_lesson.dart';
 import '../../main.dart';
 import '../../exam/exam_widgets.dart';
 import '../../memory/memory_widgets.dart';
+import '../../widgets/hover_lift.dart';
 import '../../reward/companion.dart';
 import '../../reward/reward_widgets.dart';
 import '../../theme.dart';
@@ -24,33 +25,54 @@ import 'review_screen.dart';
 /// DIQQAT: eksportda 24 xil bo'lim turi bor. Ilgari bu ro'yxatda faqat
 /// 13 tasi sanalgan edi va qolgan 160 ta bo'lim ma'nosiz kulrang doira
 /// belgisini olardi (eng ko'pi — `reference` 73 ta, `test` 35 ta).
-({IconData icon, Color color}) sectionStyle(BuildContext context, String kind) =>
-    switch (kind) {
-      'lead_in' => (icon: Icons.flag_rounded, color: AppColors.brandPurple),
-      'vocabulary' => (icon: Icons.menu_book_rounded, color: AppColors.brandPurple),
-      'reading' => (icon: Icons.article_rounded, color: AppColors.actionBlue),
-      'grammar_theory' => (icon: Icons.rule_rounded, color: AppColors.actionBlue),
-      'grammar' => (icon: Icons.edit_note_rounded, color: AppColors.actionBlue),
-      'grammar_exercise' => (icon: Icons.fact_check_rounded, color: AppColors.actionBlue),
-      'language_development' => (icon: Icons.translate_rounded, color: AppColors.actionBlue),
-      'practice' => (icon: Icons.model_training_rounded, color: AppColors.actionBlue),
-      'pronunciation' => (icon: Icons.record_voice_over_rounded, color: AppColors.homework),
-      'listening' => (icon: Icons.headphones_rounded, color: AppColors.homework),
-      'video' => (icon: Icons.play_circle_rounded, color: AppColors.homework),
-      'speaking' => (icon: Icons.mic_rounded, color: AppColors.success),
-      'communication' => (icon: Icons.forum_rounded, color: AppColors.coin),
-      'game' => (icon: Icons.sports_esports_rounded, color: AppColors.success),
-      'quiz' => (icon: Icons.quiz_rounded, color: AppColors.success),
-      'culture' => (icon: Icons.public_rounded, color: AppColors.success),
-      'writing' => (icon: Icons.draw_rounded, color: AppColors.brandPurple),
-      'story' => (icon: Icons.auto_stories_rounded, color: AppColors.brandPurple),
-      'reference' => (icon: Icons.bookmark_rounded, color: AppColors.brandPurple),
-      'module_cover' => (icon: Icons.collections_bookmark_rounded, color: AppColors.brandPurple),
-      'revision' => (icon: Icons.replay_rounded, color: AppColors.brandPurple),
-      'test' => (icon: Icons.assignment_turned_in_rounded, color: AppColors.homework),
-      'words_of_wisdom' || 'wisdom' => (icon: Icons.auto_awesome_rounded, color: AppColors.coin),
-      _ => (icon: Icons.circle_outlined, color: AppColors.muted(context)),
-    };
+({IconData icon, Color color}) sectionStyle(
+  BuildContext context,
+  String kind,
+) => switch (kind) {
+  'lead_in' => (icon: Icons.flag_rounded, color: AppColors.brandPurple),
+  'vocabulary' => (icon: Icons.menu_book_rounded, color: AppColors.brandPurple),
+  'reading' => (icon: Icons.article_rounded, color: AppColors.actionBlue),
+  'grammar_theory' => (icon: Icons.rule_rounded, color: AppColors.actionBlue),
+  'grammar' => (icon: Icons.edit_note_rounded, color: AppColors.actionBlue),
+  'grammar_exercise' => (
+    icon: Icons.fact_check_rounded,
+    color: AppColors.actionBlue,
+  ),
+  'language_development' => (
+    icon: Icons.translate_rounded,
+    color: AppColors.actionBlue,
+  ),
+  'practice' => (
+    icon: Icons.model_training_rounded,
+    color: AppColors.actionBlue,
+  ),
+  'pronunciation' => (
+    icon: Icons.record_voice_over_rounded,
+    color: AppColors.homework,
+  ),
+  'listening' => (icon: Icons.headphones_rounded, color: AppColors.homework),
+  'video' => (icon: Icons.play_circle_rounded, color: AppColors.homework),
+  'speaking' => (icon: Icons.mic_rounded, color: AppColors.success),
+  'communication' => (icon: Icons.forum_rounded, color: AppColors.coin),
+  'game' => (icon: Icons.sports_esports_rounded, color: AppColors.success),
+  'quiz' => (icon: Icons.quiz_rounded, color: AppColors.success),
+  'culture' => (icon: Icons.public_rounded, color: AppColors.success),
+  'writing' => (icon: Icons.draw_rounded, color: AppColors.brandPurple),
+  'story' => (icon: Icons.auto_stories_rounded, color: AppColors.brandPurple),
+  'reference' => (icon: Icons.bookmark_rounded, color: AppColors.brandPurple),
+  'module_cover' => (
+    icon: Icons.collections_bookmark_rounded,
+    color: AppColors.brandPurple,
+  ),
+  'revision' => (icon: Icons.replay_rounded, color: AppColors.brandPurple),
+  'test' => (
+    icon: Icons.assignment_turned_in_rounded,
+    color: AppColors.homework,
+  ),
+  'words_of_wisdom' ||
+  'wisdom' => (icon: Icons.auto_awesome_rounded, color: AppColors.coin),
+  _ => (icon: Icons.circle_outlined, color: AppColors.muted(context)),
+};
 
 // ═══════════════════ Unit'lar ro'yxati ═══════════════════
 class BookUnitsScreen extends StatefulWidget {
@@ -88,15 +110,17 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
         padding: const EdgeInsets.fromLTRB(20, 8, 20, 40),
         children: [
           EntranceFade(
-            child: Text('Enterprise 1 — Beginner',
-                style: AppTheme.heading(context)),
+            child: Text(
+              'Enterprise 1 — Beginner',
+              style: AppTheme.heading(context),
+            ),
           ),
           const SizedBox(height: 4),
           EntranceFade(
             child: Text(
-                '${units.length} ta dars tayyor · har biri uchala kitobdan yig\'ilgan',
-                style: TextStyle(
-                    fontSize: 13, color: AppColors.muted(context))),
+              '${units.length} ta dars tayyor · har biri uchala kitobdan yig\'ilgan',
+              style: TextStyle(fontSize: 13, color: AppColors.muted(context)),
+            ),
           ),
           const SizedBox(height: 16),
           // Kunlik topshiriqlar — birinchi ko'rinadigan narsa: bugun
@@ -107,7 +131,7 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
           // katta to'siq: qaysi unit, qaysi mashq deb o'ylamasdan 3
           // daqiqalik trening.
           const EntranceFade(child: CommitCard()),
-          const EntranceFade(child: _QuickStartCard()),
+          const EntranceFade(child: _HomeHero()),
           const SizedBox(height: 10),
           const EntranceFade(child: BlitzCard()),
           if (mastery.learnedWords(limit: 8).length >= 8)
@@ -138,7 +162,9 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
             const SizedBox(height: 10),
           ],
           if (progress.needsReviewCount() > 0) ...[
-            EntranceFade(child: _ReviewBanner(count: progress.needsReviewCount())),
+            EntranceFade(
+              child: _ReviewBanner(count: progress.needsReviewCount()),
+            ),
             const SizedBox(height: 16),
           ],
           // ASOSIY YO'L — darslar. Muqova, mundarija, modul muqovalari
@@ -172,27 +198,39 @@ class _InfoGroup extends StatelessWidget {
       child: Theme(
         data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
         child: ExpansionTile(
-          leading: const Icon(Icons.info_outline_rounded,
-              color: AppColors.actionBlue),
-          title: const Text('Kitob haqida',
-              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+          leading: const Icon(
+            Icons.info_outline_rounded,
+            color: AppColors.actionBlue,
+          ),
+          title: const Text(
+            'Kitob haqida',
+            style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
+          ),
           subtitle: Text(
-              'Muqova, mundarija, modul muqovalari va ilovalar · ${units.length} bo\'lim',
-              style:
-                  TextStyle(fontSize: 12.5, color: AppColors.muted(context))),
+            'Muqova, mundarija, modul muqovalari va ilovalar · ${units.length} bo\'lim',
+            style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
+          ),
           childrenPadding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
           children: [
             for (final b in units)
               ListTile(
                 dense: true,
-                leading: Text(b.displayBadge,
-                    style: const TextStyle(
-                        fontWeight: FontWeight.w800,
-                        color: AppColors.actionBlue)),
-                title: Text(b.displayLabel,
-                    style: const TextStyle(fontWeight: FontWeight.w700)),
-                subtitle: Text(b.title,
-                    maxLines: 1, overflow: TextOverflow.ellipsis),
+                leading: Text(
+                  b.displayBadge,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.actionBlue,
+                  ),
+                ),
+                title: Text(
+                  b.displayLabel,
+                  style: const TextStyle(fontWeight: FontWeight.w700),
+                ),
+                subtitle: Text(
+                  b.title,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
                 trailing: const Icon(Icons.chevron_right_rounded),
                 onTap: () async {
                   final u = await book.load(b.unit);
@@ -254,29 +292,41 @@ class _ContinueBanner extends StatelessWidget {
           padding: const EdgeInsets.all(15),
           child: Row(
             children: [
-              const Icon(Icons.play_circle_fill_rounded,
-                  color: AppColors.brandPurple, size: 26),
+              const Icon(
+                Icons.play_circle_fill_rounded,
+                color: AppColors.brandPurple,
+                size: 26,
+              ),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Davom etish',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w800,
-                            fontSize: 15,
-                            color: AppColors.brandPurple)),
+                    const Text(
+                      'Davom etish',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 15,
+                        color: AppColors.brandPurple,
+                      ),
+                    ),
                     const SizedBox(height: 2),
-                    Text(progress.lastLabel,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                            fontSize: 12.5, color: AppColors.muted(context))),
+                    Text(
+                      progress.lastLabel,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 12.5,
+                        color: AppColors.muted(context),
+                      ),
+                    ),
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded,
-                  color: AppColors.brandPurple),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: AppColors.brandPurple,
+              ),
             ],
           ),
         ),
@@ -312,14 +362,16 @@ class _WordsButton extends StatelessWidget {
               const SizedBox(width: 10),
               Flexible(
                 child: Text(
-                    done >= lessons.length
-                        ? 'So\'zlar — hammasi o\'rganildi ($words)'
-                        : 'So\'zlarni o\'rganish — $done/${lessons.length} dars',
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 16)),
+                  done >= lessons.length
+                      ? 'So\'zlar — hammasi o\'rganildi ($words)'
+                      : 'So\'zlarni o\'rganish — $done/${lessons.length} dars',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 16,
+                  ),
+                ),
               ),
             ],
           ),
@@ -378,19 +430,24 @@ class _MasterButton extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Icon(Icons.psychology_rounded,
-                  color: Colors.white, size: 22),
+              const Icon(
+                Icons.psychology_rounded,
+                color: Colors.white,
+                size: 22,
+              ),
               const SizedBox(width: 10),
               Flexible(
                 child: Text(
-                    pct >= 100
-                        ? 'Mashqlar treningi — takrorlash (100%)'
-                        : 'Mashqlar treningi — $pct%',
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 16)),
+                  pct >= 100
+                      ? 'Mashqlar treningi — takrorlash (100%)'
+                      : 'Mashqlar treningi — $pct%',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 16,
+                  ),
+                ),
               ),
             ],
           ),
@@ -432,27 +489,39 @@ class _ReviewBanner extends StatelessWidget {
           padding: const EdgeInsets.all(15),
           child: Row(
             children: [
-              const Icon(Icons.replay_rounded,
-                  color: AppColors.homework, size: 24),
+              const Icon(
+                Icons.replay_rounded,
+                color: AppColors.homework,
+                size: 24,
+              ),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Takrorlash kerak',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w800,
-                            fontSize: 15,
-                            color: AppColors.homework)),
+                    const Text(
+                      'Takrorlash kerak',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 15,
+                        color: AppColors.homework,
+                      ),
+                    ),
                     const SizedBox(height: 2),
-                    Text('$count ta mashq xato bilan tugatilgan',
-                        style: TextStyle(
-                            fontSize: 12.5, color: AppColors.muted(context))),
+                    Text(
+                      '$count ta mashq xato bilan tugatilgan',
+                      style: TextStyle(
+                        fontSize: 12.5,
+                        color: AppColors.muted(context),
+                      ),
+                    ),
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded,
-                  color: AppColors.homework),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: AppColors.homework,
+              ),
             ],
           ),
         ),
@@ -469,8 +538,9 @@ class _UnitCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
     final done = progress.doneInUnit(brief.unit);
-    final ratio =
-        brief.exercises == 0 ? 0.0 : (done / brief.exercises).clamp(0.0, 1.0);
+    final ratio = brief.exercises == 0
+        ? 0.0
+        : (done / brief.exercises).clamp(0.0, 1.0);
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: Material(
@@ -492,8 +562,9 @@ class _UnitCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(AppRadius.lg),
               boxShadow: [
                 BoxShadow(
-                    color: Colors.black.withValues(alpha: dark ? 0.25 : 0.04),
-                    blurRadius: 10),
+                  color: Colors.black.withValues(alpha: dark ? 0.25 : 0.04),
+                  blurRadius: 10,
+                ),
               ],
             ),
             child: Row(
@@ -502,20 +573,24 @@ class _UnitCard extends StatelessWidget {
                   width: 52,
                   height: 52,
                   decoration: BoxDecoration(
-                    color: (brief.isExtra
-                            ? AppColors.actionBlue
-                            : AppColors.brandPurple)
-                        .withValues(alpha: 0.12),
+                    color:
+                        (brief.isExtra
+                                ? AppColors.actionBlue
+                                : AppColors.brandPurple)
+                            .withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(AppRadius.md),
                   ),
                   child: Center(
-                    child: Text(brief.displayBadge,
-                        style: TextStyle(
-                            fontSize: brief.isExtra ? 17 : 22,
-                            fontWeight: FontWeight.w800,
-                            color: brief.isExtra
-                                ? AppColors.actionBlue
-                                : AppColors.brandPurple)),
+                    child: Text(
+                      brief.displayBadge,
+                      style: TextStyle(
+                        fontSize: brief.isExtra ? 17 : 22,
+                        fontWeight: FontWeight.w800,
+                        color: brief.isExtra
+                            ? AppColors.actionBlue
+                            : AppColors.brandPurple,
+                      ),
+                    ),
                   ),
                 ),
                 const SizedBox(width: 14),
@@ -523,16 +598,23 @@ class _UnitCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('${brief.displayLabel} — ${brief.title}',
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w800, fontSize: 16)),
+                      Text(
+                        '${brief.displayLabel} — ${brief.title}',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w800,
+                          fontSize: 16,
+                        ),
+                      ),
                       const SizedBox(height: 3),
                       Text(
-                          brief.words > 0
-                              ? '${brief.words} so\'z · ${(brief.words / kLessonSize).ceil()} dars · ${brief.exercises} mashq'
-                              : '${brief.exercises} mashq · ${brief.tasks} band',
-                          style: TextStyle(
-                              fontSize: 12.5, color: AppColors.muted(context))),
+                        brief.words > 0
+                            ? '${brief.words} so\'z · ${(brief.words / kLessonSize).ceil()} dars · ${brief.exercises} mashq'
+                            : '${brief.exercises} mashq · ${brief.tasks} band',
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          color: AppColors.muted(context),
+                        ),
+                      ),
                       // Nechta mashq tugatilgani — ilgari o\'quvchi
                       // unitni ochmasdan buni bilolmasdi.
                       if (done > 0) ...[
@@ -542,33 +624,41 @@ class _UnitCard extends StatelessWidget {
                           child: LinearProgressIndicator(
                             value: ratio,
                             minHeight: 5,
-                            backgroundColor: AppColors.brandPurple
-                                .withValues(alpha: 0.15),
+                            backgroundColor: AppColors.brandPurple.withValues(
+                              alpha: 0.15,
+                            ),
                             valueColor: const AlwaysStoppedAnimation(
-                                AppColors.brandPurple),
+                              AppColors.brandPurple,
+                            ),
                           ),
                         ),
                         const SizedBox(height: 4),
                         // "Yana N ta qoldi" — maqsadga yaqinlashgan
                         // sari intilish kuchayadi (goal gradient).
                         Text(
-                            done >= brief.exercises
-                                ? '$done / ${brief.exercises} — unit tugatildi'
-                                : (brief.exercises - done <= 5
+                          done >= brief.exercises
+                              ? '$done / ${brief.exercises} — unit tugatildi'
+                              : (brief.exercises - done <= 5
                                     ? 'Yana ${brief.exercises - done} ta qoldi — oz qoldi!'
                                     : '$done / ${brief.exercises} mashq tugatildi'),
-                            style: TextStyle(
-                                fontSize: 11.5,
-                                fontWeight: FontWeight.w700,
-                                color: brief.exercises - done <= 5 && done < brief.exercises
-                                    ? AppColors.homework
-                                    : AppColors.brandPurple)),
+                          style: TextStyle(
+                            fontSize: 11.5,
+                            fontWeight: FontWeight.w700,
+                            color:
+                                brief.exercises - done <= 5 &&
+                                    done < brief.exercises
+                                ? AppColors.homework
+                                : AppColors.brandPurple,
+                          ),
+                        ),
                       ],
                     ],
                   ),
                 ),
-                const Icon(Icons.chevron_right_rounded,
-                    color: AppColors.brandPurple),
+                const Icon(
+                  Icons.chevron_right_rounded,
+                  color: AppColors.brandPurple,
+                ),
               ],
             ),
           ),
@@ -626,20 +716,25 @@ class BookUnitScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(Icons.auto_stories_rounded,
-                      color: Colors.white, size: 22),
+                  const Icon(
+                    Icons.auto_stories_rounded,
+                    color: Colors.white,
+                    size: 22,
+                  ),
                   const SizedBox(width: 10),
                   // TELEFONDA: matn 375px ekranga sig'masdi va tugma
                   // sariq-qora "overflow" chizig'i bilan chizilardi.
                   // `Flexible` matnga keyingi qatorga o'tishga ruxsat beradi.
                   Flexible(
                     child: Text(
-                        'Betma-bet ko\'rish (${unit.pages().length} bet)',
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w800,
-                            fontSize: 16)),
+                      'Betma-bet ko\'rish (${unit.pages().length} bet)',
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                        fontSize: 16,
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -669,9 +764,11 @@ class BookUnitScreen extends StatelessWidget {
               subtitle:
                   '${unit.wordFormation.fold(0, (s, g) => s + g.items.length)} ta qoida',
               onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (_) => WordFormationScreen(unit: unit))),
+                context,
+                MaterialPageRoute(
+                  builder: (_) => WordFormationScreen(unit: unit),
+                ),
+              ),
             ),
             _refTile(
               context,
@@ -680,9 +777,11 @@ class BookUnitScreen extends StatelessWidget {
               title: 'Gap qoliplari',
               subtitle: '${unit.sentencePatterns.length} ta qolip',
               onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (_) => SentencePatternsScreen(unit: unit))),
+                context,
+                MaterialPageRoute(
+                  builder: (_) => SentencePatternsScreen(unit: unit),
+                ),
+              ),
             ),
             _refTile(
               context,
@@ -691,9 +790,11 @@ class BookUnitScreen extends StatelessWidget {
               title: 'Unit lug\'ati',
               subtitle: '${unit.vocabulary.length} ta so\'z — yodlash mashqi',
               onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (_) => UnitVocabularyScreen(unit: unit))),
+                context,
+                MaterialPageRoute(
+                  builder: (_) => UnitVocabularyScreen(unit: unit),
+                ),
+              ),
             ),
             _refTile(
               context,
@@ -702,9 +803,9 @@ class BookUnitScreen extends StatelessWidget {
               title: 'Rasmlar manbasi',
               subtitle: 'Wikimedia Commons — erkin litsenziya',
               onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (_) => const ImageCreditsScreen())),
+                context,
+                MaterialPageRoute(builder: (_) => const ImageCreditsScreen()),
+              ),
             ),
           ],
         ),
@@ -732,19 +833,23 @@ class BookUnitScreen extends StatelessWidget {
   }
 
   Widget _stat(BuildContext context, String v, String label) => Expanded(
-        child: Column(
-          children: [
-            Text(v,
-                style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w800,
-                    color: AppColors.brandPurple)),
-            Text(label,
-                style: TextStyle(
-                    fontSize: 11.5, color: AppColors.muted(context))),
-          ],
+    child: Column(
+      children: [
+        Text(
+          v,
+          style: const TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w800,
+            color: AppColors.brandPurple,
+          ),
         ),
-      );
+        Text(
+          label,
+          style: TextStyle(fontSize: 11.5, color: AppColors.muted(context)),
+        ),
+      ],
+    ),
+  );
 
   Widget _refTile(
     BuildContext context, {
@@ -780,17 +885,27 @@ class BookUnitScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(title,
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w800, fontSize: 14.5)),
-                      Text(subtitle,
-                          style: TextStyle(
-                              fontSize: 12, color: AppColors.muted(context))),
+                      Text(
+                        title,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w800,
+                          fontSize: 14.5,
+                        ),
+                      ),
+                      Text(
+                        subtitle,
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: AppColors.muted(context),
+                        ),
+                      ),
                     ],
                   ),
                 ),
-                Icon(Icons.chevron_right_rounded,
-                    color: AppColors.muted(context)),
+                Icon(
+                  Icons.chevron_right_rounded,
+                  color: AppColors.muted(context),
+                ),
               ],
             ),
           ),
@@ -816,8 +931,7 @@ class _GroupCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppRadius.md),
           onTap: () => Navigator.push(
             context,
-            MaterialPageRoute(
-                builder: (_) => BookGroupScreen(group: group)),
+            MaterialPageRoute(builder: (_) => BookGroupScreen(group: group)),
           ),
           child: Padding(
             padding: const EdgeInsets.all(14),
@@ -837,9 +951,13 @@ class _GroupCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(group.titleUz,
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w800, fontSize: 15)),
+                      Text(
+                        group.titleUz,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w800,
+                          fontSize: 15,
+                        ),
+                      ),
                       const SizedBox(height: 2),
                       Text(
                         [
@@ -848,7 +966,9 @@ class _GroupCard extends StatelessWidget {
                           if (group.hasRule) 'qoida',
                         ].join(' · '),
                         style: TextStyle(
-                            fontSize: 12, color: AppColors.muted(context)),
+                          fontSize: 12,
+                          color: AppColors.muted(context),
+                        ),
                       ),
                       const SizedBox(height: 3),
                       // Qaysi kitobdan olingani — aniq nom bilan.
@@ -857,15 +977,18 @@ class _GroupCard extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
-                            fontSize: 11.5,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.brandPurple),
+                          fontSize: 11.5,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.brandPurple,
+                        ),
                       ),
                     ],
                   ),
                 ),
-                Icon(Icons.chevron_right_rounded,
-                    color: AppColors.muted(context)),
+                Icon(
+                  Icons.chevron_right_rounded,
+                  color: AppColors.muted(context),
+                ),
               ],
             ),
           ),
@@ -898,7 +1021,10 @@ class BookPagesScreen extends StatelessWidget {
             Text(
               'Kitobingizni oching va shu betlarni ilova bilan birga ishlang.',
               style: TextStyle(
-                  fontSize: 13, color: AppColors.muted(context), height: 1.5),
+                fontSize: 13,
+                color: AppColors.muted(context),
+                height: 1.5,
+              ),
             ),
             const SizedBox(height: 18),
             for (final entry in byBook.entries) ...[
@@ -906,23 +1032,33 @@ class BookPagesScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 10, top: 4),
                 child: Row(
                   children: [
-                    const Icon(Icons.menu_book_rounded,
-                        size: 18, color: AppColors.brandPurple),
+                    const Icon(
+                      Icons.menu_book_rounded,
+                      size: 18,
+                      color: AppColors.brandPurple,
+                    ),
                     const SizedBox(width: 8),
                     // Katta shrift rejimida (1.5x) bu qator ekrandan
                     // chiqib ketardi — `Flexible` sarlavhaga qisqarishga
                     // ruxsat beradi.
                     Flexible(
-                      child: Text(entry.key,
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w800,
-                              fontSize: 15,
-                              color: AppColors.brandPurple)),
+                      child: Text(
+                        entry.key,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w800,
+                          fontSize: 15,
+                          color: AppColors.brandPurple,
+                        ),
+                      ),
                     ),
                     const SizedBox(width: 8),
-                    Text('${entry.value.length} bet',
-                        style: TextStyle(
-                            fontSize: 12, color: AppColors.muted(context))),
+                    Text(
+                      '${entry.value.length} bet',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: AppColors.muted(context),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -967,13 +1103,18 @@ class BookPagesScreen extends StatelessWidget {
                   ),
                   child: Center(
                     child: done
-                        ? const Icon(Icons.check_rounded,
-                            color: AppColors.success)
-                        : Text('${p.bookPage}',
+                        ? const Icon(
+                            Icons.check_rounded,
+                            color: AppColors.success,
+                          )
+                        : Text(
+                            '${p.bookPage}',
                             style: const TextStyle(
-                                fontSize: 17,
-                                fontWeight: FontWeight.w800,
-                                color: AppColors.actionBlue)),
+                              fontSize: 17,
+                              fontWeight: FontWeight.w800,
+                              color: AppColors.actionBlue,
+                            ),
+                          ),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -981,29 +1122,34 @@ class BookPagesScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('${p.bookLabel} · ${p.bookPage}-bet',
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w800, fontSize: 15)),
+                      Text(
+                        '${p.bookLabel} · ${p.bookPage}-bet',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w800,
+                          fontSize: 15,
+                        ),
+                      ),
                       const SizedBox(height: 2),
                       Text(
                         [
                           '${p.exerciseCount} mashq',
                           if (p.hasRule) 'qoida',
-                          ...p.sections
-                              .map((s) => s.titleUz)
-                              .toSet()
-                              .take(2),
+                          ...p.sections.map((s) => s.titleUz).toSet().take(2),
                         ].join(' · '),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
-                            fontSize: 12, color: AppColors.muted(context)),
+                          fontSize: 12,
+                          color: AppColors.muted(context),
+                        ),
                       ),
                     ],
                   ),
                 ),
-                Icon(Icons.chevron_right_rounded,
-                    color: AppColors.muted(context)),
+                Icon(
+                  Icons.chevron_right_rounded,
+                  color: AppColors.muted(context),
+                ),
               ],
             ),
           ),
@@ -1023,9 +1169,7 @@ class BookPageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('${page.bookLabel} · ${page.bookPage}-bet'),
-      ),
+      appBar: AppBar(title: Text('${page.bookLabel} · ${page.bookPage}-bet')),
       body: AnimatedBuilder(
         animation: progress,
         builder: (context, _) => ListView(
@@ -1041,23 +1185,32 @@ class BookPageScreen extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.place_rounded,
-                      size: 19, color: AppColors.brandPurple),
+                  const Icon(
+                    Icons.place_rounded,
+                    size: 19,
+                    color: AppColors.brandPurple,
+                  ),
                   const SizedBox(width: 10),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(page.fullLabel,
-                            style: const TextStyle(
-                                fontWeight: FontWeight.w800,
-                                fontSize: 14.5,
-                                color: AppColors.brandPurple)),
+                        Text(
+                          page.fullLabel,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 14.5,
+                            color: AppColors.brandPurple,
+                          ),
+                        ),
                         const SizedBox(height: 2),
                         Text(
-                            '${page.exerciseCount} mashq · ${page.answerableCount} band',
-                            style: TextStyle(
-                                fontSize: 12, color: AppColors.muted(context))),
+                          '${page.exerciseCount} mashq · ${page.answerableCount} band',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: AppColors.muted(context),
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -1090,17 +1243,24 @@ class BookPageScreen extends StatelessWidget {
             Icon(st.icon, size: 18, color: st.color),
             const SizedBox(width: 8),
             Expanded(
-              child: Text(s.title.isEmpty ? s.titleUz : s.title,
-                  style: TextStyle(
-                      fontWeight: FontWeight.w800,
-                      fontSize: 15.5,
-                      color: st.color)),
+              child: Text(
+                s.title.isEmpty ? s.titleUz : s.title,
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 15.5,
+                  color: st.color,
+                ),
+              ),
             ),
             Flexible(
-              child: Text(s.titleUz,
-                  textAlign: TextAlign.end,
-                  style: TextStyle(
-                      fontSize: 11.5, color: AppColors.muted(context))),
+              child: Text(
+                s.titleUz,
+                textAlign: TextAlign.end,
+                style: TextStyle(
+                  fontSize: 11.5,
+                  color: AppColors.muted(context),
+                ),
+              ),
             ),
           ],
         ),
@@ -1122,12 +1282,15 @@ class BookPageScreen extends StatelessWidget {
                 SizedBox(width: 9),
                 // Katta shrift rejimida matn tugmadan chiqib ketardi.
                 Flexible(
-                  child: Text('Qoidani o\'qish',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 14.5)),
+                  child: Text(
+                    'Qoidani o\'qish',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                      fontSize: 14.5,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -1153,9 +1316,7 @@ class BookGroupScreen extends StatelessWidget {
         animation: progress,
         builder: (context, _) => ListView(
           padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
-          children: [
-            for (final s in group.sections) ..._section(context, s),
-          ],
+          children: [for (final s in group.sections) ..._section(context, s)],
         ),
       ),
     );
@@ -1168,22 +1329,28 @@ class BookGroupScreen extends StatelessWidget {
         child: Row(
           children: [
             Expanded(
-              child: Text(s.title.isEmpty ? s.titleUz : s.title,
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w800, fontSize: 15)),
+              child: Text(
+                s.title.isEmpty ? s.titleUz : s.title,
+                style: const TextStyle(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 15,
+                ),
+              ),
             ),
             Container(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
+              padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
               decoration: BoxDecoration(
                 color: AppColors.brandPurple.withValues(alpha: 0.10),
                 borderRadius: BorderRadius.circular(AppRadius.pill),
               ),
-              child: Text(s.sourceLabel,
-                  style: const TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w700,
-                      color: AppColors.brandPurple)),
+              child: Text(
+                s.sourceLabel,
+                style: const TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.brandPurple,
+                ),
+              ),
             ),
           ],
         ),
@@ -1193,8 +1360,7 @@ class BookGroupScreen extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 10),
           child: Pressable3D(
             color: AppColors.actionBlue,
-            padding:
-                const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
             onPressed: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => RuleScreen(section: s)),
@@ -1206,12 +1372,15 @@ class BookGroupScreen extends StatelessWidget {
                 SizedBox(width: 9),
                 // Katta shrift rejimida matn tugmadan chiqib ketardi.
                 Flexible(
-                  child: Text('Qoidani o\'qish',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 14.5)),
+                  child: Text(
+                    'Qoidani o\'qish',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                      fontSize: 14.5,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -1240,25 +1409,25 @@ class _ExerciseTile extends StatelessWidget {
   ({IconData icon, Color color, String label}) get _kindInfo =>
       switch (exercise.kind) {
         ExKind.choice => (
-            icon: Icons.checklist_rounded,
-            color: AppColors.brandPurple,
-            label: 'Tanlash'
-          ),
+          icon: Icons.checklist_rounded,
+          color: AppColors.brandPurple,
+          label: 'Tanlash',
+        ),
         ExKind.text => (
-            icon: Icons.extension_rounded,
-            color: AppColors.actionBlue,
-            label: 'Yig\'ish'
-          ),
+          icon: Icons.extension_rounded,
+          color: AppColors.actionBlue,
+          label: 'Yig\'ish',
+        ),
         ExKind.match => (
-            icon: Icons.compare_arrows_rounded,
-            color: AppColors.success,
-            label: 'Moslash'
-          ),
+          icon: Icons.compare_arrows_rounded,
+          color: AppColors.success,
+          label: 'Moslash',
+        ),
         ExKind.study => (
-            icon: Icons.auto_stories_rounded,
-            color: AppColors.coin,
-            label: 'O\'qish'
-          ),
+          icon: Icons.auto_stories_rounded,
+          color: AppColors.coin,
+          label: 'O\'qish',
+        ),
       };
 
   @override
@@ -1306,20 +1475,22 @@ class _ExerciseTile extends StatelessWidget {
                   width: 38,
                   height: 38,
                   decoration: BoxDecoration(
-                    color: (repeat
-                            ? AppColors.homework
-                            : (done ? AppColors.success : info.color))
-                        .withValues(alpha: 0.12),
+                    color:
+                        (repeat
+                                ? AppColors.homework
+                                : (done ? AppColors.success : info.color))
+                            .withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(AppRadius.sm),
                   ),
                   child: Icon(
-                      repeat
-                          ? Icons.replay_rounded
-                          : (done ? Icons.check_rounded : info.icon),
-                      color: repeat
-                          ? AppColors.homework
-                          : (done ? AppColors.success : info.color),
-                      size: 20),
+                    repeat
+                        ? Icons.replay_rounded
+                        : (done ? Icons.check_rounded : info.icon),
+                    color: repeat
+                        ? AppColors.homework
+                        : (done ? AppColors.success : info.color),
+                    size: 20,
+                  ),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
@@ -1334,44 +1505,64 @@ class _ExerciseTile extends StatelessWidget {
                         runSpacing: 4,
                         crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
-                          Text(exercise.title,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                  fontWeight: FontWeight.w800, fontSize: 14)),
+                          Text(
+                            exercise.title,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                              fontWeight: FontWeight.w800,
+                              fontSize: 14,
+                            ),
+                          ),
                           Container(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 7, vertical: 2),
+                              horizontal: 7,
+                              vertical: 2,
+                            ),
                             decoration: BoxDecoration(
                               color: info.color.withValues(alpha: 0.12),
-                              borderRadius:
-                                  BorderRadius.circular(AppRadius.pill),
+                              borderRadius: BorderRadius.circular(
+                                AppRadius.pill,
+                              ),
                             ),
-                            child: Text(info.label,
-                                style: TextStyle(
-                                    fontSize: 10.5,
-                                    fontWeight: FontWeight.w700,
-                                    color: info.color)),
+                            child: Text(
+                              info.label,
+                              style: TextStyle(
+                                fontSize: 10.5,
+                                fontWeight: FontWeight.w700,
+                                color: info.color,
+                              ),
+                            ),
                           ),
                           if (exercise.audio)
-                            const Icon(Icons.headphones_rounded,
-                                size: 14, color: AppColors.homework),
+                            const Icon(
+                              Icons.headphones_rounded,
+                              size: 14,
+                              color: AppColors.homework,
+                            ),
                           // Xato bilan tugatilgan mashq — qayta ishlash
                           // kerakligi ochiq aytiladi.
                           if (repeat)
                             Container(
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 7, vertical: 2),
-                              decoration: BoxDecoration(
-                                color: AppColors.homework
-                                    .withValues(alpha: 0.14),
-                                borderRadius:
-                                    BorderRadius.circular(AppRadius.pill),
+                                horizontal: 7,
+                                vertical: 2,
                               ),
-                              child: const Text('takrorlash kerak',
-                                  style: TextStyle(
-                                      fontSize: 10.5,
-                                      fontWeight: FontWeight.w700,
-                                      color: AppColors.homework)),
+                              decoration: BoxDecoration(
+                                color: AppColors.homework.withValues(
+                                  alpha: 0.14,
+                                ),
+                                borderRadius: BorderRadius.circular(
+                                  AppRadius.pill,
+                                ),
+                              ),
+                              child: const Text(
+                                'takrorlash kerak',
+                                style: TextStyle(
+                                  fontSize: 10.5,
+                                  fontWeight: FontWeight.w700,
+                                  color: AppColors.homework,
+                                ),
+                              ),
                             ),
                         ],
                       ),
@@ -1383,9 +1574,10 @@ class _ExerciseTile extends StatelessWidget {
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
-                            fontSize: 12,
-                            color: AppColors.muted(context),
-                            height: 1.35),
+                          fontSize: 12,
+                          color: AppColors.muted(context),
+                          height: 1.35,
+                        ),
                       ),
                       const SizedBox(height: 4),
                       // To'liq manzil — qaysi kitob, qaysi bet, qaysi mashq.
@@ -1394,15 +1586,15 @@ class _ExerciseTile extends StatelessWidget {
                             ? exercise.locationLabel(unitLabel)
                             : exercise.sourceLabel,
                         style: const TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.brandPurple),
+                          fontSize: 11,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.brandPurple,
+                        ),
                       ),
                     ],
                   ),
                 ),
-                Icon(Icons.play_arrow_rounded,
-                    color: AppColors.muted(context)),
+                Icon(Icons.play_arrow_rounded, color: AppColors.muted(context)),
               ],
             ),
           ),
@@ -1420,19 +1612,25 @@ class _Label extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
-    return Text(text,
-        style: TextStyle(
-            fontWeight: FontWeight.w800,
-            fontSize: 16,
-            color: dark ? AppColors.darkHeading : AppColors.lightHeading));
+    return Text(
+      text,
+      style: TextStyle(
+        fontWeight: FontWeight.w800,
+        fontSize: 16,
+        color: dark ? AppColors.darkHeading : AppColors.lightHeading,
+      ),
+    );
   }
 }
 
 class _Empty extends StatelessWidget {
   final IconData icon;
   final String title, subtitle;
-  const _Empty(
-      {required this.icon, required this.title, required this.subtitle});
+  const _Empty({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -1444,15 +1642,17 @@ class _Empty extends StatelessWidget {
           children: [
             Icon(icon, size: 56, color: AppColors.muted(context)),
             const SizedBox(height: 14),
-            Text(title,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                    fontWeight: FontWeight.w800, fontSize: 16)),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 16),
+            ),
             const SizedBox(height: 6),
-            Text(subtitle,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 13, color: AppColors.muted(context))),
+            Text(
+              subtitle,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 13, color: AppColors.muted(context)),
+            ),
           ],
         ),
       ),
@@ -1462,13 +1662,181 @@ class _Empty extends StatelessWidget {
 
 /// "3 daqiqalik tez mashq" — oxirgi ochilgan (yoki birinchi) unitning
 /// zaif so'zlari bilan trening. O'ylash shart emas: bitta tugma.
-class _QuickStartCard extends StatelessWidget {
-  const _QuickStartCard();
+/// BOSh EKRAN "HERO" — brend gradientli katta karta: kun salomi, bugungi
+/// maqsad halqasi, olov (streak) va BITTA katta harakat ("Tez mashq").
+///
+/// UX: birinchi ko'z tushadigan joyda faqat bitta qaror — "boshlash".
+/// Salomlashish hamroh ismi bilan (shaxsiylik), halqa "oz qoldi"
+/// hissini beradi (goal gradient), gradient va nur — "wow" birinchi
+/// soniyada.
+class _HomeHero extends StatelessWidget {
+  const _HomeHero();
+
+  static String _greeting() {
+    final h = DateTime.now().hour;
+    if (h < 5) return 'Xayrli tun';
+    if (h < 12) return 'Xayrli tong';
+    if (h < 17) return 'Xayrli kun';
+    return 'Xayrli kech';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final name = rewards.petName;
+    final goal = progress.dailyGoal;
+    final today = progress.todayXp;
+    final left = (goal - today).clamp(0, goal);
+    final met = progress.dailyGoalMet;
+    final streak = progress.currentStreak;
+    return HoverLift(
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: AppColors.brandGradient,
+          borderRadius: BorderRadius.circular(AppRadius.xl),
+          boxShadow: AppShadow.glow(AppColors.brandIndigo, alpha: 0.45),
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(AppRadius.xl),
+          child: Stack(
+            children: [
+              // Dekorativ shar va halqa — chuqurlik.
+              Positioned(
+                right: -40,
+                top: -50,
+                child: Container(
+                  width: 180,
+                  height: 180,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white.withValues(alpha: 0.10),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: -30,
+                bottom: -60,
+                child: Container(
+                  width: 140,
+                  height: 140,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Colors.white.withValues(alpha: 0.18),
+                      width: 18,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 18),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '${_greeting()}${name.isNotEmpty ? ', $name bilan' : ''} 👋',
+                                style: TextStyle(
+                                  color: Colors.white.withValues(alpha: 0.85),
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w700,
+                                  letterSpacing: 0.2,
+                                ),
+                              ),
+                              const SizedBox(height: 6),
+                              Text(
+                                met
+                                    ? 'Bugungi maqsad bajarildi!'
+                                    : today == 0
+                                    ? 'Bugun 3 daqiqa yetadi.'
+                                    : 'Yana $left XP - maqsadga oz qoldi.',
+                                style: Theme.of(context).textTheme.headlineSmall
+                                    ?.copyWith(
+                                      color: Colors.white,
+                                      fontSize: 22,
+                                      height: 1.15,
+                                    ),
+                              ),
+                              const SizedBox(height: 10),
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 6,
+                                children: [
+                                  _HeroChip(
+                                    icon: Icons.local_fire_department_rounded,
+                                    text: streak > 0
+                                        ? '$streak kun ketma-ket'
+                                        : 'Seriyani boshlang',
+                                  ),
+                                  _HeroChip(
+                                    icon: Icons.bolt_rounded,
+                                    text: '$today / $goal XP bugun',
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                        _GoalRing(progress: progress.dailyProgress, met: met),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    Material(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(AppRadius.pill),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(AppRadius.pill),
+                        onTap: () => _start(context),
+                        child: const Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 18,
+                            vertical: 13,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                Icons.play_arrow_rounded,
+                                color: AppColors.brandIndigo,
+                                size: 24,
+                              ),
+                              SizedBox(width: 6),
+                              Text(
+                                '3 daqiqalik tez mashq',
+                                style: TextStyle(
+                                  color: AppColors.brandIndigo,
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 15.5,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 
   Future<void> _start(BuildContext context) async {
     final main = book.units.where((u) => !u.isInfo).toList();
     if (main.isEmpty) return;
-    final target = progress.lastUnitNo > 0 ? progress.lastUnitNo : main.first.unit;
+    final target = progress.lastUnitNo > 0
+        ? progress.lastUnitNo
+        : main.first.unit;
     var u = await book.load(target);
     u ??= await book.load(main.first.unit);
     if (u == null) return;
@@ -1492,52 +1860,81 @@ class _QuickStartCard extends StatelessWidget {
       ),
     );
   }
+}
+
+class _HeroChip extends StatelessWidget {
+  final IconData icon;
+  final String text;
+  const _HeroChip({required this.icon, required this.text});
 
   @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        borderRadius: BorderRadius.circular(AppRadius.lg),
-        onTap: () => _start(context),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-                colors: [Color(0xFF16A34A), Color(0xFF059669)]),
-            borderRadius: BorderRadius.circular(AppRadius.lg),
-            boxShadow: [
-              BoxShadow(
-                  color: AppColors.success.withValues(alpha: 0.35),
-                  blurRadius: 16,
-                  offset: const Offset(0, 6)),
-            ],
-          ),
-          child: const Row(
-            children: [
-              Icon(Icons.bolt_rounded, color: Colors.white, size: 28),
-              SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('3 daqiqalik tez mashq',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w900,
-                            fontSize: 16)),
-                    Text('Bir bosishda boshlang — zaif so\'zlaringiz bilan',
-                        style: TextStyle(color: Colors.white70, fontSize: 12)),
-                  ],
-                ),
-              ),
-              Icon(Icons.play_arrow_rounded, color: Colors.white, size: 30),
-            ],
+  Widget build(BuildContext context) => Container(
+    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+    decoration: BoxDecoration(
+      color: Colors.white.withValues(alpha: 0.18),
+      borderRadius: BorderRadius.circular(AppRadius.pill),
+      border: Border.all(color: Colors.white.withValues(alpha: 0.25)),
+    ),
+    child: Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(icon, size: 14, color: Colors.white),
+        const SizedBox(width: 5),
+        Text(
+          text,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 12,
+            fontWeight: FontWeight.w800,
           ),
         ),
-      ),
-    );
-  }
+      ],
+    ),
+  );
+}
+
+/// Kunlik maqsad halqasi — katta, oq, animatsiyali to'lish.
+class _GoalRing extends StatelessWidget {
+  final double progress;
+  final bool met;
+  const _GoalRing({required this.progress, required this.met});
+
+  @override
+  Widget build(BuildContext context) => SizedBox(
+    width: 84,
+    height: 84,
+    child: Stack(
+      alignment: Alignment.center,
+      children: [
+        TweenAnimationBuilder<double>(
+          tween: Tween(begin: 0, end: progress),
+          duration: const Duration(milliseconds: 1100),
+          curve: Curves.easeOutCubic,
+          builder: (_, v, _) => SizedBox(
+            width: 84,
+            height: 84,
+            child: CircularProgressIndicator(
+              value: v,
+              strokeWidth: 8,
+              strokeCap: StrokeCap.round,
+              backgroundColor: Colors.white.withValues(alpha: 0.22),
+              valueColor: const AlwaysStoppedAnimation(Colors.white),
+            ),
+          ),
+        ),
+        met
+            ? const Icon(Icons.check_rounded, color: Colors.white, size: 34)
+            : Text(
+                '${(progress * 100).round()}%',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w900,
+                  fontSize: 17,
+                ),
+              ),
+      ],
+    ),
+  );
 }
 
 /// DIKTANT — unitning namunaviy gaplarini TINGLAB, so'zlardan yig'ish.
@@ -1560,14 +1957,16 @@ class _DictationButton extends StatelessWidget {
       if (words.length < 3 || words.length > 9) continue;
       if (!seen.add(first.toLowerCase())) continue;
       final uz = sp.exampleUz.split(RegExp(r'(?<=[.!?])\s+')).first.trim();
-      pool.add(ExTask(
-        prompt: "🔊 Tinglang va so'zlardan gap tuzing",
-        promptUz: uz,
-        answer: first,
-        speak: first,
-        speakAnswer: first,
-        whyUz: sp.formula.isNotEmpty ? 'Qolip: ${sp.formula}' : '',
-      ));
+      pool.add(
+        ExTask(
+          prompt: "🔊 Tinglang va so'zlardan gap tuzing",
+          promptUz: uz,
+          answer: first,
+          speak: first,
+          speakAnswer: first,
+          whyUz: sp.formula.isNotEmpty ? 'Qolip: ${sp.formula}' : '',
+        ),
+      );
     }
     pool.shuffle(rng);
     return pool.take(_size).toList();
@@ -1589,7 +1988,8 @@ class _DictationButton extends StatelessWidget {
               kind: ExKind.text,
               tasks: _tasks(),
               instructionEn: 'Listen and build the sentence from the words.',
-              instructionUz: "Gapni tinglang (ovoz tugmasi), so'ng so'zlardan yig'ing.",
+              instructionUz:
+                  "Gapni tinglang (ovoz tugmasi), so'ng so'zlardan yig'ing.",
               book: 'quiz',
               pageLabel: 'diktant ${unit.unit}',
             );
@@ -1610,12 +2010,15 @@ class _DictationButton extends StatelessWidget {
               Icon(Icons.headphones_rounded, color: Colors.white, size: 20),
               SizedBox(width: 9),
               Flexible(
-                child: Text('Diktant — tinglab gap tuzish',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 15)),
+                child: Text(
+                  'Diktant — tinglab gap tuzish',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 15,
+                  ),
+                ),
               ),
             ],
           ),

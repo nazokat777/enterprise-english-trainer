@@ -12,6 +12,7 @@ import 'units_screen.dart';
 import 'book/book_screens.dart';
 import 'book/conversations_screen.dart';
 import 'tutor_setup_screen.dart';
+import '../widgets/hover_lift.dart';
 import 'help_screen.dart';
 import 'settings_screen.dart';
 
@@ -32,7 +33,9 @@ class _AppShellState extends State<AppShell> {
     super.initState();
     // Birinchi ochilishda hamrohga ism qo'yish (bir marta).
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted && book.units.isNotEmpty) OnboardingSheet.showIfNeeded(context);
+      if (mounted && book.units.isNotEmpty) {
+        OnboardingSheet.showIfNeeded(context);
+      }
     });
   }
 
@@ -143,30 +146,47 @@ class _AppShellState extends State<AppShell> {
           // sig'masa ikkinchi qatorga o'tadi.
           Expanded(
             child: Wrap(
-            alignment: WrapAlignment.end,
-            runAlignment: WrapAlignment.center,
-            spacing: 12,
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: [
-              GestureDetector(
-                onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                    builder: (_) => const AchievementsScreen())),
-                child: const LevelRing(size: 38),
-              ),
-              StreakFlame(days: progress.currentStreak),
-              const HappyHourBadge(),
-              _DailyRing(progress: progress.dailyProgress, todayXp: progress.todayXp),
-              _Stat(icon: Icons.bolt_rounded, color: AppColors.success, value: progress.xp),
-              _Stat(icon: Icons.monetization_on_rounded, color: AppColors.coin, value: progress.coins),
-              IconButton(
-                tooltip: 'Rejimni almashtirish',
-                onPressed: progress.toggleDark,
-                icon: Icon(progress.darkMode
-                    ? Icons.light_mode_rounded
-                    : Icons.dark_mode_rounded),
-              ),
-            ],
-          ),
+              alignment: WrapAlignment.end,
+              runAlignment: WrapAlignment.center,
+              spacing: 10,
+              runSpacing: 6,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                GestureDetector(
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const AchievementsScreen(),
+                    ),
+                  ),
+                  child: const LevelRing(size: 38),
+                ),
+                StreakFlame(days: progress.currentStreak),
+                const HappyHourBadge(),
+                _DailyRing(
+                  progress: progress.dailyProgress,
+                  todayXp: progress.todayXp,
+                ),
+                _Stat(
+                  icon: Icons.bolt_rounded,
+                  color: AppColors.success,
+                  value: progress.xp,
+                ),
+                _Stat(
+                  icon: Icons.monetization_on_rounded,
+                  color: AppColors.coin,
+                  value: progress.coins,
+                ),
+                IconButton(
+                  tooltip: 'Rejimni almashtirish',
+                  onPressed: progress.toggleDark,
+                  icon: Icon(
+                    progress.darkMode
+                        ? Icons.light_mode_rounded
+                        : Icons.dark_mode_rounded,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
@@ -217,7 +237,12 @@ class _Sidebar extends StatelessWidget {
     final dark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       width: 240,
-      color: dark ? AppColors.darkSurface : AppColors.lightSurface,
+      decoration: BoxDecoration(
+        // Yarim shaffof "shisha" panel — aurora fon orqali ko'rinadi.
+        color: (dark ? AppColors.darkSurface : AppColors.lightSurface)
+            .withValues(alpha: dark ? 0.72 : 0.68),
+        border: Border(right: BorderSide(color: AppColors.border(context))),
+      ),
       child: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -226,30 +251,31 @@ class _Sidebar extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 24),
               child: Row(
                 children: [
-                  Container(
-                    width: 40,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: AppColors.brandPurple,
-                      borderRadius: BorderRadius.circular(AppRadius.md),
-                    ),
-                    child: const Center(
-                      child: Text('En',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w800,
-                              fontSize: 16)),
+                  const GradientBadge(
+                    size: 40,
+                    child: Text(
+                      'En',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w900,
+                        fontSize: 16,
+                        letterSpacing: -0.5,
+                      ),
                     ),
                   ),
                   const SizedBox(width: 10),
                   Flexible(
-                    child: Text('Enterprise',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w800,
-                            fontSize: 17,
-                            color: dark
-                                ? AppColors.darkHeading
-                                : AppColors.lightHeading)),
+                    child: Text(
+                      'Enterprise',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 17,
+                        letterSpacing: -0.3,
+                        color: dark
+                            ? AppColors.darkHeading
+                            : AppColors.lightHeading,
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -264,11 +290,14 @@ class _Sidebar extends StatelessWidget {
             const Spacer(),
             Padding(
               padding: const EdgeInsets.all(16),
-              child: Text('Liga: ${progress.league}',
-                  style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w700,
-                      color: AppColors.homework)),
+              child: Text(
+                'Liga: ${progress.league}',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.homework,
+                ),
+              ),
             ),
           ],
         ),
@@ -293,35 +322,45 @@ class _NavItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
     final fg = active
-        ? AppColors.brandPurple
+        ? Colors.white
         : (dark ? AppColors.darkMuted : AppColors.lightMuted);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 3),
-      child: Material(
-        color: active
-            ? AppColors.brandPurple.withValues(alpha: 0.12)
-            : Colors.transparent,
-        borderRadius: BorderRadius.circular(AppRadius.md),
-        child: InkWell(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 220),
+        curve: Curves.easeOutCubic,
+        decoration: BoxDecoration(
+          // Faol band — brend gradienti + nur; qolganlari shaffof.
+          gradient: active ? AppColors.brandGradient : null,
           borderRadius: BorderRadius.circular(AppRadius.md),
-          onTap: onTap,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-            child: Row(
-              children: [
-                Icon(icon, size: 20, color: fg),
-                const SizedBox(width: 12),
-                // Sidebar kengligi qat'iy (240px). Uzun yorliq
-                // ("So'z yasalishi") sig'may, chetidan chiqib ketardi.
-                Expanded(
-                  child: Text(label,
+          boxShadow: active ? AppShadow.glow(AppColors.brandPurple) : const [],
+        ),
+        child: Material(
+          type: MaterialType.transparency,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(AppRadius.md),
+            hoverColor: AppColors.brandPurple.withValues(alpha: 0.08),
+            onTap: onTap,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              child: Row(
+                children: [
+                  Icon(icon, size: 20, color: fg),
+                  const SizedBox(width: 12),
+                  // Sidebar kengligi qat'iy (240px). Uzun yorliq
+                  // ("So'z yasalishi") sig'may, chetidan chiqib ketardi.
+                  Expanded(
+                    child: Text(
+                      label,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
-                          fontWeight:
-                              active ? FontWeight.w800 : FontWeight.w600,
-                          color: fg)),
-                ),
-              ],
+                        fontWeight: active ? FontWeight.w800 : FontWeight.w600,
+                        color: fg,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
@@ -359,7 +398,8 @@ class _LevelSwitcher extends StatelessWidget {
             value: lvl.id,
             enabled: ready(lvl.id),
             child: Text(
-                ready(lvl.id) ? lvl.label : '${lvl.label} — tayyor emas'),
+              ready(lvl.id) ? lvl.label : '${lvl.label} — tayyor emas',
+            ),
           ),
       ],
       child: Container(
@@ -371,10 +411,17 @@ class _LevelSwitcher extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(label,
-                style: const TextStyle(
-                    fontWeight: FontWeight.w800, color: AppColors.brandPurple)),
-            const Icon(Icons.arrow_drop_down_rounded, color: AppColors.brandPurple),
+            Text(
+              label,
+              style: const TextStyle(
+                fontWeight: FontWeight.w800,
+                color: AppColors.brandPurple,
+              ),
+            ),
+            const Icon(
+              Icons.arrow_drop_down_rounded,
+              color: AppColors.brandPurple,
+            ),
           ],
         ),
       ),
@@ -408,14 +455,24 @@ class _DailyRing extends StatelessWidget {
                 strokeCap: StrokeCap.round,
                 backgroundColor: AppColors.neutralShadow.withValues(alpha: 0.4),
                 valueColor: AlwaysStoppedAnimation(
-                    met ? AppColors.success : AppColors.coin),
+                  met ? AppColors.success : AppColors.coin,
+                ),
               ),
             ),
           ),
           met
-              ? const Icon(Icons.check_rounded, size: 18, color: AppColors.success)
-              : Text('$todayXp',
-                  style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w800)),
+              ? const Icon(
+                  Icons.check_rounded,
+                  size: 18,
+                  color: AppColors.success,
+                )
+              : Text(
+                  '$todayXp',
+                  style: const TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
         ],
       ),
     );
@@ -429,14 +486,28 @@ class _Stat extends StatelessWidget {
   const _Stat({required this.icon, required this.color, required this.value});
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Icon(icon, color: color, size: 18),
-        const SizedBox(width: 3),
-        Text('$value',
-            style: TextStyle(fontWeight: FontWeight.w800, color: color, fontSize: 15)),
-      ],
+    // Kichik "chip": rangli fon ustida raqam — panel bir tekis o'qiladi.
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(AppRadius.pill),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, color: color, size: 16),
+          const SizedBox(width: 4),
+          Text(
+            '$value',
+            style: TextStyle(
+              fontWeight: FontWeight.w800,
+              color: color,
+              fontSize: 14,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -451,8 +522,11 @@ class _Placeholder extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.construction_rounded,
-              size: 48, color: AppColors.brandPurple.withValues(alpha: 0.5)),
+          Icon(
+            Icons.construction_rounded,
+            size: 48,
+            color: AppColors.brandPurple.withValues(alpha: 0.5),
+          ),
           const SizedBox(height: 12),
           Text('$title — keyingi fazalarda', style: AppTheme.body(context)),
         ],
@@ -460,4 +534,3 @@ class _Placeholder extends StatelessWidget {
     );
   }
 }
-

@@ -1,9 +1,13 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
+
 import '../theme.dart';
 
-/// Subtil geometrik naqsh (uchburchak / doira / X) — past opacity,
-/// fon ustiga qo'yiladi. Rejimga moslashadi (light/dark).
+/// AURORA FON — yumshoq, xira rangli "bulutlar" (mesh gradient).
+///
+/// Nima uchun: tekis kulrang fon "ofis dasturi" hissini beradi; xira
+/// brend gradientlari esa chuqurlik va zamonaviylik beradi (iOS/Arc
+/// uslubi). Bulutlar STATIK — animatsiya testlarni osiltirmaydi va
+/// batareyani yemaydi; harakat mikro-interaktsiyalarda.
 class GeoBackground extends StatelessWidget {
   final Widget child;
   const GeoBackground({super.key, required this.child});
@@ -14,8 +18,8 @@ class GeoBackground extends StatelessWidget {
     return Stack(
       children: [
         Positioned.fill(
-          child: CustomPaint(
-            painter: _GeoPainter(isLight: isLight),
+          child: RepaintBoundary(
+            child: CustomPaint(painter: _AuroraPainter(isLight: isLight)),
           ),
         ),
         child,
@@ -24,45 +28,29 @@ class GeoBackground extends StatelessWidget {
   }
 }
 
-class _GeoPainter extends CustomPainter {
+class _AuroraPainter extends CustomPainter {
   final bool isLight;
-  _GeoPainter({required this.isLight});
+  _AuroraPainter({required this.isLight});
 
   @override
   void paint(Canvas canvas, Size size) {
-    // Deterministik "tasodifiy" joylashuv (seed qat'iy — qayta chizishda barqaror).
-    final rnd = Random(7);
-    final base = isLight ? AppColors.brandPurple : AppColors.darkHeading;
-    final paint = Paint()
-      ..color = base.withValues(alpha: isLight ? 0.05 : 0.06)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.6;
-
-    const count = 26;
-    for (var i = 0; i < count; i++) {
-      final x = rnd.nextDouble() * size.width;
-      final y = rnd.nextDouble() * size.height;
-      final r = 6 + rnd.nextDouble() * 16;
-      switch (i % 3) {
-        case 0: // doira
-          canvas.drawCircle(Offset(x, y), r, paint);
-          break;
-        case 1: // uchburchak
-          final p = Path()
-            ..moveTo(x, y - r)
-            ..lineTo(x - r, y + r)
-            ..lineTo(x + r, y + r)
-            ..close();
-          canvas.drawPath(p, paint);
-          break;
-        case 2: // X
-          canvas.drawLine(Offset(x - r, y - r), Offset(x + r, y + r), paint);
-          canvas.drawLine(Offset(x + r, y - r), Offset(x - r, y + r), paint);
-          break;
-      }
+    final w = size.width, h = size.height;
+    final a = isLight ? 0.22 : 0.16;
+    void blob(Offset c, double r, Color color, double alpha) {
+      final paint = Paint()
+        ..shader = RadialGradient(
+          colors: [color.withValues(alpha: alpha), color.withValues(alpha: 0)],
+          stops: const [0, 1],
+        ).createShader(Rect.fromCircle(center: c, radius: r));
+      canvas.drawCircle(c, r, paint);
     }
+
+    blob(Offset(w * 0.12, h * 0.05), w * 0.45, AppColors.brandPurple, a);
+    blob(Offset(w * 0.95, h * 0.15), w * 0.4, AppColors.brandCyan, a * 0.8);
+    blob(Offset(w * 0.7, h * 0.95), w * 0.5, AppColors.brandIndigo, a * 0.7);
+    blob(Offset(w * 0.05, h * 0.8), w * 0.35, AppColors.pink, a * 0.45);
   }
 
   @override
-  bool shouldRepaint(covariant _GeoPainter old) => old.isLight != isLight;
+  bool shouldRepaint(covariant _AuroraPainter old) => old.isLight != isLight;
 }
