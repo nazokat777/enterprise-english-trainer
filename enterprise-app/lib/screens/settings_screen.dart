@@ -52,6 +52,8 @@ class SettingsScreen extends StatelessWidget {
           const SizedBox(height: 10),
           const _BackupCard(),
           const SizedBox(height: 10),
+          const _ApiKeyCard(),
+          const SizedBox(height: 10),
           _ResetCard(),
         ],
       ),
@@ -630,6 +632,81 @@ class _BackupCardState extends State<_BackupCard> {
                 style: const TextStyle(
                     fontSize: 12.5, fontWeight: FontWeight.w700, color: AppColors.success)),
           ],
+        ],
+      ),
+    );
+  }
+}
+
+/// Mr. Vaysaqi (AI o'qituvchi) uchun Claude API kaliti.
+class _ApiKeyCard extends StatefulWidget {
+  const _ApiKeyCard();
+  @override
+  State<_ApiKeyCard> createState() => _ApiKeyCardState();
+}
+
+class _ApiKeyCardState extends State<_ApiKeyCard> {
+  late final TextEditingController _c =
+      TextEditingController(text: progress.apiKey);
+  bool _hide = true;
+  bool _saved = false;
+
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return _Card(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Icon(Icons.smart_toy_rounded),
+              SizedBox(width: 12),
+              Expanded(
+                child: Text('Mr. Vaysaqi - API kaliti',
+                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            'AI o\'qituvchi bilan suhbat uchun Claude API kaliti '
+            '(console.anthropic.com, "sk-ant-..."). Faqat shu qurilmada '
+            'saqlanadi. O\'chirish uchun bo\'sh qoldirib saqlang.',
+            style: TextStyle(fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
+          ),
+          const SizedBox(height: 10),
+          TextField(
+            controller: _c,
+            obscureText: _hide,
+            decoration: InputDecoration(
+              isDense: true,
+              hintText: 'sk-ant-...',
+              border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(AppRadius.md)),
+              suffixIcon: IconButton(
+                onPressed: () => setState(() => _hide = !_hide),
+                icon: Icon(_hide ? Icons.visibility_rounded : Icons.visibility_off_rounded),
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
+          Align(
+            alignment: Alignment.centerRight,
+            child: FilledButton.icon(
+              onPressed: () async {
+                await progress.setApiKey(_c.text);
+                if (mounted) setState(() => _saved = true);
+              },
+              icon: Icon(_saved ? Icons.check_rounded : Icons.save_rounded),
+              label: Text(_saved ? 'Saqlandi' : 'Saqlash'),
+            ),
+          ),
         ],
       ),
     );

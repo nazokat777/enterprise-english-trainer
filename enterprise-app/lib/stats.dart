@@ -25,6 +25,10 @@ class Progress extends ChangeNotifier {
   bool darkMode = false;
   bool sfx = true; // ovoz effektlari (reward/sfx.dart)
   String currentLevel = kDefaultLevel; // ro'yxat: levels.dart
+
+  /// Mr. Vaysaqi (AI tutor) uchun Claude API kaliti — faqat shu
+  /// qurilmada saqlanadi, hech qayerga yuborilmaydi (API dan tashqari).
+  String apiKey = '';
   final Map<String, int> skills = {}; // Skill.name -> 0..100
 
   // Per-so'z SM-2 holati (kalit: 'level::wordId') va tugatilgan pack/mashqlar.
@@ -92,6 +96,7 @@ class Progress extends ChangeNotifier {
     darkMode = p.getBool('dark') ?? false;
     sfx = p.getBool('sfx') ?? true;
     currentLevel = p.getString('level') ?? kDefaultLevel;
+    apiKey = p.getString('apiKey') ?? '';
     final sk = p.getString('skills');
     if (sk != null) {
       (json.decode(sk) as Map)
@@ -201,6 +206,13 @@ class Progress extends ChangeNotifier {
   Future<void> toggleDark() async {
     darkMode = !darkMode;
     await _save();
+    notifyListeners();
+  }
+
+  Future<void> setApiKey(String key) async {
+    apiKey = key.trim();
+    final p = await SharedPreferences.getInstance();
+    await p.setString('apiKey', apiKey);
     notifyListeners();
   }
 
@@ -439,6 +451,7 @@ class Progress extends ChangeNotifier {
     await p.setString('todayKey', _todayKey);
     await p.setBool('dark', darkMode);
     await p.setString('level', currentLevel);
+    await p.setString('apiKey', apiKey);
     await p.setBool('sfx', sfx);
     await p.setString('skills', json.encode(skills));
     await p.setString('srs',

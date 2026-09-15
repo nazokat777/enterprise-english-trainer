@@ -47,6 +47,14 @@ class HelpScreen extends StatelessWidget {
           'happy — unhappy.'
     ),
     (
+      Icons.smart_toy_rounded,
+      'Mr. Vaysaqi',
+      'AI o\'qituvchi bilan inglizcha suhbat: siz yozasiz, u oddiy '
+          'inglizchada javob beradi va savol beradi; xatoni xabaringiz '
+          'ostida to\'g\'ri variant + o\'zbekcha izoh bilan ko\'rsatadi. '
+          'Har xabar +3 XP. Claude API kaliti kerak (Sozlamalar).'
+    ),
+    (
       Icons.forum_rounded,
       'Suhbatlar',
       'Kitobdagi barcha dialoglar bir joyda. Har bir qatorni tinglab, '

@@ -11,6 +11,7 @@ import 'level_reference_screens.dart';
 import 'units_screen.dart';
 import 'book/book_screens.dart';
 import 'book/conversations_screen.dart';
+import 'ai_tutor_screen.dart';
 import 'help_screen.dart';
 import 'settings_screen.dart';
 
@@ -42,6 +43,7 @@ class _AppShellState extends State<AppShell> {
     (Icons.rule_rounded, 'Grammatika'),
     (Icons.account_tree_rounded, 'So\'z yasalishi'),
     (Icons.forum_rounded, 'Suhbatlar'),
+    (Icons.smart_toy_rounded, 'Mr. Vaysaqi'),
     (Icons.settings_rounded, 'Sozlamalar'),
     (Icons.help_outline_rounded, 'Yordam'),
     // "Chiqish" olib tashlandi: ilovada hisob (login) yo'q, hamma
@@ -186,8 +188,10 @@ class _AppShellState extends State<AppShell> {
       case 5:
         return const ConversationsScreen(); // kitobdagi barcha dialoglar
       case 6:
-        return const SettingsScreen();
+        return const AiTutorScreen(); // AI o'qituvchi bilan suhbat
       case 7:
+        return const SettingsScreen();
+      case 8:
         return const HelpScreen();
       default:
         return _Placeholder(title: _items[_sel].$2);
