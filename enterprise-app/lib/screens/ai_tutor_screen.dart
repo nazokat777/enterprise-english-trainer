@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -5,7 +6,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../main.dart';
 import '../services/ai_tutor_service.dart';
+import '../services/speech.dart';
 import '../services/tts.dart';
+import '../services/tutor_prefs.dart';
 import '../theme.dart';
 import '../widgets/pressable3d.dart';
 
@@ -29,20 +32,55 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
   bool _busy = false;
   String? _error;
 
+  /// Ovoz: brauzer nutq tanish (web). Erkin rejimda javobdan keyin
+  /// o'zi qayta tinglaydi; "bosib turing"da tugma bosilganda.
+  final Speech _speech = Speech();
+  bool _listening = false;
+  StreamSubscription<String>? _speechSub;
+
   String get _histKey => 'tutor_history::${progress.currentLevel}';
 
   @override
   void initState() {
     super.initState();
+    tutorPrefs.load();
     _load();
   }
 
   @override
   void dispose() {
+    _speechSub?.cancel();
+    _speech.stop();
     _input.dispose();
     _scroll.dispose();
     Tts.instance.stop();
     super.dispose();
+  }
+
+  void _listen() {
+    if (!Speech.supported || _busy) return;
+    Tts.instance.stop();
+    final free = tutorPrefs.voiceMode == 'free';
+    _speechSub?.cancel();
+    setState(() => _listening = true);
+    _speechSub = _speech
+        .start(continuous: free, lang: 'en-US')
+        .listen((text) {
+      if (!mounted) return;
+      if (free) _speech.stop();
+      setState(() => _listening = false);
+      _send(text);
+    }, onError: (_) {
+      if (mounted) setState(() => _listening = false);
+    }, onDone: () {
+      if (mounted) setState(() => _listening = false);
+    });
+  }
+
+  void _stopListening() {
+    _speechSub?.cancel();
+    _speech.stop();
+    if (mounted) setState(() => _listening = false);
   }
 
   Future<void> _load() async {
@@ -89,8 +127,13 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
     _jump();
     try {
       final words = mastery.learnedWords(limit: 25).map((e) => e.$2).toList();
-      final reply =
-          await AiTutorService(apiKey: key, provider: progress.aiProvider).send(
+      final reply = await AiTutorService(
+        apiKey: key,
+        provider: progress.aiProvider,
+        strictness: tutorPrefs.strictness,
+        openMode: tutorPrefs.openMode,
+        noteLang: tutorPrefs.noteLang,
+      ).send(
         level: progress.currentLevel,
         history: _msgs.sublist(0, _msgs.length - 1),
         userText: text,
@@ -112,7 +155,14 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
       await progress.addXp(3 + bonus);
       await _save();
       _jump();
-      Tts.instance.speak(reply.reply, id: 'tutor');
+      await Tts.instance.speak(reply.reply, id: 'tutor');
+      // Erkin suhbat: javob o'qilgach yana tinglaydi — qo'l tegmasdan.
+      if (mounted &&
+          tutorPrefs.voice &&
+          tutorPrefs.voiceMode == 'free' &&
+          Speech.supported) {
+        _listen();
+      }
     } catch (e) {
       if (!mounted) return;
       setState(() {
@@ -163,6 +213,11 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
               controller: _input,
               busy: _busy,
               onSend: () => _send(),
+              mic: tutorPrefs.voice && Speech.supported,
+              listening: _listening,
+              pushToTalk: tutorPrefs.voiceMode != 'free',
+              onMicStart: _listen,
+              onMicStop: _stopListening,
             ),
           ],
         );
@@ -468,8 +523,58 @@ class _InputBar extends StatelessWidget {
   final TextEditingController controller;
   final bool busy;
   final VoidCallback onSend;
-  const _InputBar(
-      {required this.controller, required this.busy, required this.onSend});
+
+  /// Mikrofon: [pushToTalk] — bosib turib gapirish; aks holda bosish
+  /// tinglashni boshlaydi/to'xtatadi (erkin rejim).
+  final bool mic;
+  final bool listening;
+  final bool pushToTalk;
+  final VoidCallback? onMicStart;
+  final VoidCallback? onMicStop;
+
+  const _InputBar({
+    required this.controller,
+    required this.busy,
+    required this.onSend,
+    this.mic = false,
+    this.listening = false,
+    this.pushToTalk = true,
+    this.onMicStart,
+    this.onMicStop,
+  });
+
+  Widget _micButton() {
+    final color = listening ? AppColors.danger : AppColors.homework;
+    final btn = AnimatedContainer(
+      duration: const Duration(milliseconds: 200),
+      width: listening ? 54 : 46,
+      height: listening ? 54 : 46,
+      decoration: BoxDecoration(
+        color: color,
+        shape: BoxShape.circle,
+        boxShadow: listening
+            ? [BoxShadow(color: color.withValues(alpha: 0.45), blurRadius: 18, spreadRadius: 4)]
+            : null,
+      ),
+      child: Icon(listening ? Icons.graphic_eq_rounded : Icons.mic_rounded,
+          color: Colors.white),
+    );
+    if (pushToTalk) {
+      return GestureDetector(
+        onTapDown: busy ? null : (_) => onMicStart?.call(),
+        onTapUp: (_) => onMicStop?.call(),
+        onTapCancel: onMicStop,
+        onLongPressStart: busy ? null : (_) => onMicStart?.call(),
+        onLongPressEnd: (_) => onMicStop?.call(),
+        child: Tooltip(message: 'Bosib turib gapiring', child: btn),
+      );
+    }
+    return GestureDetector(
+      onTap: busy ? null : (listening ? onMicStop : onMicStart),
+      child: Tooltip(
+          message: listening ? 'Tinglashni to\'xtatish' : 'Gapirish', child: btn),
+    );
+  }
 
   @override
   Widget build(BuildContext context) => SafeArea(
@@ -478,6 +583,10 @@ class _InputBar extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(12, 4, 12, 12),
           child: Row(
             children: [
+              if (mic) ...[
+                _micButton(),
+                const SizedBox(width: 8),
+              ],
               Expanded(
                 child: TextField(
                   controller: controller,

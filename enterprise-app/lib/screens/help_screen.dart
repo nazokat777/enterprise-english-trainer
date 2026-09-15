@@ -52,8 +52,11 @@ class HelpScreen extends StatelessWidget {
       'AI o\'qituvchi bilan inglizcha suhbat: siz yozasiz, u oddiy '
           'inglizchada javob beradi va savol beradi; xatoni xabaringiz '
           'ostida to\'g\'ri variant + o\'zbekcha izoh bilan ko\'rsatadi. '
-          'Har xabar +3 XP. Claude, Gemini yoki Groq API kaliti kerak '
-          '(Gemini va Groq bepul) - Sozlamalarda tanlanadi.'
+          'Har xabar +3 XP. Avval o\'qituvchi fe\'lini tanlaysiz (jahldor - '
+          'qattiq - muloyim - do\'stona), ovoz rejimini (erkin suhbat / bosib '
+          'turing - mikrofon bilan gapirasiz, u eshitib javob beradi), 18+ '
+          'ochiq rejim va izoh tilini (UZ/EN). Claude, Gemini yoki Groq API '
+          'kaliti kerak (Gemini va Groq bepul) - Sozlamalarda tanlanadi.'
     ),
     (
       Icons.forum_rounded,

@@ -11,7 +11,7 @@ import 'level_reference_screens.dart';
 import 'units_screen.dart';
 import 'book/book_screens.dart';
 import 'book/conversations_screen.dart';
-import 'ai_tutor_screen.dart';
+import 'tutor_setup_screen.dart';
 import 'help_screen.dart';
 import 'settings_screen.dart';
 
@@ -188,7 +188,7 @@ class _AppShellState extends State<AppShell> {
       case 5:
         return const ConversationsScreen(); // kitobdagi barcha dialoglar
       case 6:
-        return const AiTutorScreen(); // AI o'qituvchi bilan suhbat
+        return const TutorSetupScreen(); // AI o'qituvchi: fe'l, ovoz, so'ng suhbat
       case 7:
         return const SettingsScreen();
       case 8:

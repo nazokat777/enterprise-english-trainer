@@ -17,13 +17,27 @@ class AiTutorService {
   /// 'claude' | 'gemini' | 'groq' — uchalasi ham brauzerdan to'g'ridan-
   /// to'g'ri chaqiriladi (CORS ochiq), kalit faqat qurilmada.
   final String provider;
+
+  /// Fe'l: 0 jahldor .. 3 do'stona; ochiq rejim; izoh tili ('uz'/'en').
+  final int strictness;
+  final bool openMode;
+  final String noteLang;
   final http.Client _client;
 
   AiTutorService({
     required this.apiKey,
     this.provider = 'claude',
+    this.strictness = 2,
+    this.openMode = false,
+    this.noteLang = 'uz',
     http.Client? client,
   }) : _client = client ?? http.Client();
+
+  String _system(String level, List<String> words) => systemPrompt(level,
+      words: words,
+      strictness: strictness,
+      openMode: openMode,
+      noteLang: noteLang);
 
   static const String model = 'claude-sonnet-5';
   static const String endpoint = 'https://api.anthropic.com/v1/messages';
@@ -43,24 +57,65 @@ class AiTutorService {
     'groq': ('Groq (Llama) - bepul, tez', 'console.groq.com/keys', 'gsk_...'),
   };
 
+  /// O'qituvchi FE'LI — 0 jahldor ... 3 do'stona.
+  ///
+  /// Psixologiya: ba'zi o'quvchini yumshoqlik uxlatadi, qattiqqo'llik
+  /// uyg'otadi (challenge + humor); boshqasini esa qo'rqitadi. Shuning
+  /// uchun o'quvchi o'zi tanlaydi. "Ochiq rejim" — qo'pol so'zlarga ruxsat
+  /// (faqat hazil-kinoya; haqorat va kamsitish YO'Q).
+  static String personaText(int strictness, {bool openMode = false}) {
+    final base = switch (strictness) {
+      0 => 'PERSONALITY: grumpy, sarcastic, impatient drill-sergeant teacher. '
+          'Tease the student, sigh, complain dramatically, demand better - '
+          'but you secretly care and your corrections are precise.',
+      1 => 'PERSONALITY: strict, no-nonsense teacher. Short, direct, '
+          'demanding; praise is rare and therefore valuable.',
+      2 => 'PERSONALITY: calm, gentle, encouraging teacher. Patient tone, '
+          'soft corrections, frequent small praise.',
+      _ => 'PERSONALITY: cheerful best-friend teacher. Playful, warm, lots of '
+          'emoji-free enthusiasm, jokes, celebrates every small win.',
+    };
+    final open = openMode
+        ? ' ADULT MODE: mild swearing and rude jokes are allowed (in English, '
+            'and in Uzbek inside note_uz), like friends talking. Never insult '
+            'the student\'s identity, family, religion or ethnicity; nothing '
+            'sexual.'
+        : ' Keep the language clean - no swearing.';
+    return base + open;
+  }
+
   /// Daraja bo'yicha tizim ko'rsatmasi.
-  static String systemPrompt(String level, {List<String> words = const []}) {
+  static String systemPrompt(
+    String level, {
+    List<String> words = const [],
+    int strictness = 2,
+    bool openMode = false,
+    String noteLang = 'uz',
+  }) {
     final lvl = level == 'beginner' ? 'A1 (complete beginner)' : 'A2 (elementary)';
     final vocab = words.isEmpty
         ? ''
         : '\nThe student is currently studying these words; use them naturally '
             'when it fits: ${words.take(25).join(', ')}.';
+    final noteRule = noteLang == 'en'
+        ? 'a very short English explanation (max 12 words)'
+        : 'a very short Uzbek explanation (max 12 words)';
+    final uzRule = noteLang == 'en'
+        ? '- If the student writes in Uzbek, answer in simple English and gently ask them to try in English.'
+        : '- If the student writes in Uzbek, understand it, reply in simple English, and put a short Uzbek hint in note_uz.';
     return '''
-You are Mr. Vaysaqi, a warm, patient English teacher for an Uzbek-speaking student at level $lvl (Express Publishing "Enterprise" coursebook).
+You are Mr. Vaysaqi, an English teacher for an Uzbek-speaking student at level $lvl (Express Publishing "Enterprise" coursebook).
+${personaText(strictness, openMode: openMode)}
 Rules:
 - Speak ONLY simple English at the student's level: short sentences, common words, present tense for A1.
 - Keep every reply to 1-3 sentences and ALWAYS end with one easy question to keep the conversation going.
-- Never lecture. Never switch to Uzbek in the "reply" field.
-- If the student's message has a mistake, give the corrected sentence and a very short Uzbek explanation (max 12 words). If there is no mistake, leave those fields empty.
-- Praise briefly when the student uses a new word or a correct structure.$vocab
+- Never lecture. The "reply" field is English only.
+$uzRule
+- If the student's message has a mistake, give the corrected sentence and $noteRule. If there is no mistake, leave those fields empty.
+- Praise (in your personality's style) when the student uses a new word or a correct structure.$vocab
 
 Respond ONLY with JSON, no markdown:
-{"reply": "...", "correction": "corrected sentence or empty", "note_uz": "short Uzbek explanation or empty", "praise": true/false}
+{"reply": "...", "correction": "corrected sentence or empty", "note_uz": "short explanation or empty", "praise": true/false}
 ''';
   }
 
@@ -107,7 +162,7 @@ Respond ONLY with JSON, no markdown:
           body: json.encode({
             'system_instruction': {
               'parts': [
-                {'text': systemPrompt(level, words: words)}
+                {'text': _system(level, words)}
               ]
             },
             'contents': contents,
@@ -136,7 +191,7 @@ Respond ONLY with JSON, no markdown:
   Future<TutorReply> _sendGroq(String level, List<ChatMessage> history,
       String userText, List<String> words) async {
     final messages = [
-      {'role': 'system', 'content': systemPrompt(level, words: words)},
+      {'role': 'system', 'content': _system(level, words)},
       for (final m in history.takeLast(16))
         {'role': m.fromUser ? 'user' : 'assistant', 'content': m.rawForApi},
       {'role': 'user', 'content': userText},
@@ -183,7 +238,7 @@ Respond ONLY with JSON, no markdown:
           body: json.encode({
             'model': model,
             'max_tokens': 300,
-            'system': systemPrompt(level, words: words),
+            'system': _system(level, words),
             'messages': messages,
           }),
         )
