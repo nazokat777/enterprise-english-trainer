@@ -336,9 +336,11 @@ class _FacePainter extends CustomPainter {
     for (final (cx, dir) in [(lx, 1.0), (rx, -1.0)]) {
       final len = w * 0.16;
       final cy = ly - lift;
+      // Ichki uch (burun tomoni) g'azabda PAST, quvonchda biroz yuqori —
+      // ikki qosh oynadagidek simmetrik.
       final a = tilt * dir;
-      final p1 = Offset(cx - cos(a) * len, cy + sin(a) * len * dir * -1);
-      final p2 = Offset(cx + cos(a) * len, cy - sin(a) * len * dir * -1);
+      final p1 = Offset(cx - cos(a) * len, cy - sin(a) * len);
+      final p2 = Offset(cx + cos(a) * len, cy + sin(a) * len);
       final path = Path()
         ..moveTo(p1.dx, p1.dy)
         ..quadraticBezierTo(cx, cy - h * 0.03 * k, p2.dx, p2.dy);
