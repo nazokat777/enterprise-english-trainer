@@ -76,7 +76,7 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
   Future<void> _send([String? preset]) async {
     final text = (preset ?? _input.text).trim();
     if (text.isEmpty || _busy) return;
-    final key = progress.apiKey;
+    final key = progress.activeAiKey;
     if (key.isEmpty) return;
     _input.clear();
     final now = DateTime.now().millisecondsSinceEpoch;
@@ -89,7 +89,8 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
     _jump();
     try {
       final words = mastery.learnedWords(limit: 25).map((e) => e.$2).toList();
-      final reply = await AiTutorService(apiKey: key).send(
+      final reply =
+          await AiTutorService(apiKey: key, provider: progress.aiProvider).send(
         level: progress.currentLevel,
         history: _msgs.sublist(0, _msgs.length - 1),
         userText: text,
@@ -132,7 +133,7 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
     return ListenableBuilder(
       listenable: progress,
       builder: (context, _) {
-        if (progress.apiKey.isEmpty) return const _NoKey();
+        if (progress.activeAiKey.isEmpty) return const _NoKey();
         return Column(
           children: [
             _Header(onClear: _msgs.isEmpty ? null : _clear),
@@ -519,6 +520,7 @@ class _NoKey extends StatefulWidget {
 class _NoKeyState extends State<_NoKey> {
   final _c = TextEditingController();
   bool _hide = true;
+  String get _prov => progress.aiProvider;
 
   @override
   void dispose() {
@@ -538,20 +540,33 @@ class _NoKeyState extends State<_NoKey> {
           Text(
             'AI o\'qituvchi bilan inglizcha suhbat: siz yozasiz, u javob '
             'beradi, xatoni yumshoq to\'g\'irlaydi va o\'zbekcha izohlaydi.\n\n'
-            'Ishlashi uchun Claude API kaliti kerak (console.anthropic.com, '
-            '"sk-ant-..." bilan boshlanadi). Kalit faqat shu qurilmada '
-            'saqlanadi.',
+            'Ishlashi uchun AI provayderi va uning API kaliti kerak. Gemini va '
+            'Groq bepul kalit beradi. Kalit faqat shu qurilmada saqlanadi.',
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 13.5, height: 1.5, color: AppColors.muted(context)),
           ),
           const SizedBox(height: 18),
+          ProviderPicker(
+            value: _prov,
+            onChanged: (p) async {
+              await progress.setAiProvider(p);
+              if (mounted) setState(() {});
+            },
+          ),
+          const SizedBox(height: 6),
+          Text(
+            'Kalit: ${AiTutorService.providers[_prov]!.$2}',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+          ),
+          const SizedBox(height: 10),
           TextField(
             controller: _c,
             obscureText: _hide,
             decoration: InputDecoration(
               labelText: 'API kaliti',
-              hintText: 'sk-ant-...',
+              hintText: AiTutorService.providers[_prov]!.$3,
               border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadius.md)),
               suffixIcon: IconButton(
@@ -565,7 +580,7 @@ class _NoKeyState extends State<_NoKey> {
           const SizedBox(height: 12),
           Pressable3D(
             color: AppColors.brandPurple,
-            onPressed: () => progress.setApiKey(_c.text),
+            onPressed: () => progress.setAiKey(_prov, _c.text),
             child: const Center(
               child: Text('Saqlash va boshlash',
                   style: TextStyle(
@@ -576,4 +591,32 @@ class _NoKeyState extends State<_NoKey> {
           ),
         ],
       );
+}
+
+/// Provayder tanlash (Claude / Gemini / Groq) — segment tugmalar.
+class ProviderPicker extends StatelessWidget {
+  final String value;
+  final ValueChanged<String> onChanged;
+  const ProviderPicker({super.key, required this.value, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      alignment: WrapAlignment.center,
+      children: [
+        for (final e in AiTutorService.providers.entries)
+          ChoiceChip(
+            label: Text(e.value.$1),
+            selected: value == e.key,
+            onSelected: (_) => onChanged(e.key),
+            selectedColor: AppColors.brandPurple.withValues(alpha: 0.18),
+            labelStyle: TextStyle(
+                fontWeight: FontWeight.w700,
+                color: value == e.key ? AppColors.brandPurple : null),
+          ),
+      ],
+    );
+  }
 }

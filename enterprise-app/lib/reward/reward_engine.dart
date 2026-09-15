@@ -38,6 +38,9 @@ class RewardEngine extends ChangeNotifier {
 
   /// Qutqarilgan (o'chib ketishdan qaytarilgan) so'zlar — jami.
   int wordsRescued = 0;
+
+  /// O'tilgan yig'ma imtihonlar (unit raqami bo'yicha).
+  final Set<int> examsPassed = {};
   int bestCombo = 0;
   int bestDayXp = 0;
   int chestsOpened = 0;
@@ -247,6 +250,9 @@ class RewardEngine extends ChangeNotifier {
     perfectExercises = p.getInt('rw_perfect') ?? 0;
     wordsLearned = p.getInt('rw_words') ?? 0;
     wordsRescued = p.getInt('rw_rescued') ?? 0;
+    examsPassed
+      ..clear()
+      ..addAll((p.getStringList('rw_exams') ?? []).map(int.parse));
     bestCombo = p.getInt('rw_bestCombo') ?? 0;
     bestDayXp = p.getInt('rw_bestDay') ?? 0;
     chestsOpened = p.getInt('rw_chests') ?? 0;
@@ -294,6 +300,7 @@ class RewardEngine extends ChangeNotifier {
     await p.setInt('rw_perfect', perfectExercises);
     await p.setInt('rw_words', wordsLearned);
     await p.setInt('rw_rescued', wordsRescued);
+    await p.setStringList('rw_exams', examsPassed.map((e) => '$e').toList());
     await p.setInt('rw_bestCombo', bestCombo);
     await p.setInt('rw_bestDay', bestDayXp);
     await p.setInt('rw_chests', chestsOpened);
@@ -330,6 +337,7 @@ class RewardEngine extends ChangeNotifier {
     correctTotal = wrongTotal = exercisesDone = perfectExercises = 0;
     wordsLearned = bestCombo = bestDayXp = chestsOpened = critsTotal = 0;
     wordsRescued = 0;
+    examsPassed.clear();
     achievements.clear();
     combo = 0;
     _toChest = _rollChest();
@@ -516,6 +524,19 @@ class RewardEngine extends ChangeNotifier {
     wordsRescued += n;
     coins += n;
     _bumpQuest(QuestKind.words, n);
+    _checkAchievements();
+    _save();
+    notifyListeners();
+  }
+
+  /// Yig'ma imtihon (1..N) 90%+ bilan o'tildi — 50 tanga, yutuqlar.
+  void onExamPassed(int uptoUnit) {
+    tick();
+    if (!examsPassed.add(uptoUnit)) {
+      _save();
+      return;
+    }
+    coins += 50;
     _checkAchievements();
     _save();
     notifyListeners();
@@ -751,6 +772,11 @@ class RewardEngine extends ChangeNotifier {
     Achievement('words50', 'So\'z yig\'uvchi', '50 ta so\'z', '📚'),
     Achievement('words300', 'Lug\'at sohibi', '300 ta so\'z', '📖'),
     Achievement('words1000', 'Tirik lug\'at', '1000 ta so\'z', '🧠'),
+    Achievement('rescue25', 'Qutqaruvchi', '25 ta so\'z unutilishdan qaytarildi', '🛟'),
+    Achievement('rescue200', 'Xotira qo\'riqchisi', '200 ta so\'z qutqarildi', '🛡️'),
+    Achievement('exam1', 'Birinchi imtihon', 'Yig\'ma imtihondan o\'tdingiz', '📝'),
+    Achievement('exam5', 'Imtihon ustasi', '5 ta yig\'ma imtihon', '🎓'),
+    Achievement('exam15', 'Bitiruvchi', '15 ta yig\'ma imtihon', '🏛️'),
     Achievement('lvl5', '5-daraja', '5-darajaga yetdingiz', '⭐'),
     Achievement('lvl10', '10-daraja', '10-darajaga yetdingiz', '🌟'),
     Achievement('lvl20', '20-daraja', '20-darajaga yetdingiz', '🌟'),
@@ -800,6 +826,9 @@ class RewardEngine extends ChangeNotifier {
     give('words1000', wordsLearned >= 1000);
     give('rescue25', wordsRescued >= 25);
     give('rescue200', wordsRescued >= 200);
+    give('exam1', examsPassed.isNotEmpty);
+    give('exam5', examsPassed.length >= 5);
+    give('exam15', examsPassed.length >= 15);
     give('lvl5', level >= 5);
     give('lvl10', level >= 10);
     give('lvl20', level >= 20);

@@ -119,7 +119,7 @@ void main() {
       expect(MemoryRescue.isEvening(DateTime(2026, 1, 1, 12)), isFalse);
     });
 
-    test('3-raundda ovozi bor har ikkinchi so\'z eshitib yoziladi', () {
+    test('3-raundda ovozi bor har ikkinchi so\'z eshitib yoziladi', () async {
       final lesson = WordLesson(index: 1, unit: 1, words: const [
         LessonWord(en: 'cat', uz: 'mushuk'),
         LessonWord(en: 'dog', uz: 'it'),
@@ -131,7 +131,7 @@ void main() {
       final formats = <AskFormat>[];
       while (!s.isDone) {
         formats.add(s.current!.format);
-        s.answer(true);
+        await s.answer(true);
       }
       expect(formats.where((f) => f == AskFormat.listen).length, 2);
       expect(formats.where((f) => f == AskFormat.build).length, 2);

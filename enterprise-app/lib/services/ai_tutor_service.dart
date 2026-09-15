@@ -13,13 +13,35 @@ import 'package:http/http.dart' as http;
 /// to'g'rilash ("recast") — tilni o'rganishda eng samarali fikr-mulohaza.
 class AiTutorService {
   final String apiKey;
+
+  /// 'claude' | 'gemini' | 'groq' — uchalasi ham brauzerdan to'g'ridan-
+  /// to'g'ri chaqiriladi (CORS ochiq), kalit faqat qurilmada.
+  final String provider;
   final http.Client _client;
 
-  AiTutorService({required this.apiKey, http.Client? client})
-      : _client = client ?? http.Client();
+  AiTutorService({
+    required this.apiKey,
+    this.provider = 'claude',
+    http.Client? client,
+  }) : _client = client ?? http.Client();
 
   static const String model = 'claude-sonnet-5';
   static const String endpoint = 'https://api.anthropic.com/v1/messages';
+
+  static const String geminiModel = 'gemini-2.5-flash';
+  static const String groqModel = 'llama-3.3-70b-versatile';
+  static const String groqEndpoint =
+      'https://api.groq.com/openai/v1/chat/completions';
+
+  static String geminiEndpoint(String key) =>
+      'https://generativelanguage.googleapis.com/v1beta/models/$geminiModel:generateContent?key=$key';
+
+  /// Provayder nomi va kalit qayerdan olinishi (UI uchun).
+  static const Map<String, (String, String, String)> providers = {
+    'claude': ('Claude (Anthropic)', 'console.anthropic.com', 'sk-ant-...'),
+    'gemini': ('Gemini (Google) - bepul', 'aistudio.google.com/apikey', 'AIza...'),
+    'groq': ('Groq (Llama) - bepul, tez', 'console.groq.com/keys', 'gsk_...'),
+  };
 
   /// Daraja bo'yicha tizim ko'rsatmasi.
   static String systemPrompt(String level, {List<String> words = const []}) {
@@ -49,6 +71,100 @@ Respond ONLY with JSON, no markdown:
     required String userText,
     List<String> words = const [],
   }) async {
+    switch (provider) {
+      case 'gemini':
+        return _sendGemini(level, history, userText, words);
+      case 'groq':
+        return _sendGroq(level, history, userText, words);
+      default:
+        return _sendClaude(level, history, userText, words);
+    }
+  }
+
+  Map<String, String> get _json => const {'content-type': 'application/json'};
+
+  Future<TutorReply> _sendGemini(String level, List<ChatMessage> history,
+      String userText, List<String> words) async {
+    final contents = [
+      for (final m in history.takeLast(16))
+        {
+          'role': m.fromUser ? 'user' : 'model',
+          'parts': [
+            {'text': m.rawForApi}
+          ],
+        },
+      {
+        'role': 'user',
+        'parts': [
+          {'text': userText}
+        ],
+      },
+    ];
+    final res = await _client
+        .post(
+          Uri.parse(geminiEndpoint(apiKey)),
+          headers: _json,
+          body: json.encode({
+            'system_instruction': {
+              'parts': [
+                {'text': systemPrompt(level, words: words)}
+              ]
+            },
+            'contents': contents,
+            'generationConfig': {
+              'maxOutputTokens': 400,
+              'responseMimeType': 'application/json',
+            },
+          }),
+        )
+        .timeout(const Duration(seconds: 40));
+    if (res.statusCode != 200) throw TutorException(_errorText(res));
+    final body = json.decode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
+    final cands = (body['candidates'] as List?) ?? const [];
+    final parts = cands.isEmpty
+        ? const []
+        : (((cands.first as Map)['content'] as Map?)?['parts'] as List?) ??
+            const [];
+    final text = parts
+        .whereType<Map>()
+        .map((p) => p['text'] as String? ?? '')
+        .join('\n')
+        .trim();
+    return TutorReply.parse(text);
+  }
+
+  Future<TutorReply> _sendGroq(String level, List<ChatMessage> history,
+      String userText, List<String> words) async {
+    final messages = [
+      {'role': 'system', 'content': systemPrompt(level, words: words)},
+      for (final m in history.takeLast(16))
+        {'role': m.fromUser ? 'user' : 'assistant', 'content': m.rawForApi},
+      {'role': 'user', 'content': userText},
+    ];
+    final res = await _client
+        .post(
+          Uri.parse(groqEndpoint),
+          headers: {..._json, 'authorization': 'Bearer $apiKey'},
+          body: json.encode({
+            'model': groqModel,
+            'max_tokens': 400,
+            'temperature': 0.6,
+            'response_format': {'type': 'json_object'},
+            'messages': messages,
+          }),
+        )
+        .timeout(const Duration(seconds: 40));
+    if (res.statusCode != 200) throw TutorException(_errorText(res));
+    final body = json.decode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
+    final choices = (body['choices'] as List?) ?? const [];
+    final text = choices.isEmpty
+        ? ''
+        : ((((choices.first as Map)['message'] as Map?)?['content']) as String? ?? '');
+    return TutorReply.parse(text.trim());
+  }
+
+  Future<TutorReply> _sendClaude(String level, List<ChatMessage> history,
+      String userText, List<String> words) async {
     final messages = [
       for (final m in history.takeLast(16))
         {'role': m.fromUser ? 'user' : 'assistant', 'content': m.rawForApi},

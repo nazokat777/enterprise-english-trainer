@@ -5,7 +5,9 @@ import '../stats.dart';
 import 'package:flutter/services.dart';
 
 import '../services/backup.dart';
+import '../services/ai_tutor_service.dart';
 import '../services/tts.dart';
+import 'ai_tutor_screen.dart' show ProviderPicker;
 import '../reward/reward_engine.dart';
 import '../reward/reward_widgets.dart';
 import '../theme.dart';
@@ -639,6 +641,7 @@ class _BackupCardState extends State<_BackupCard> {
 }
 
 /// Mr. Vaysaqi (AI o'qituvchi) uchun Claude API kaliti.
+/// Mr. Vaysaqi (AI o'qituvchi): provayder va API kaliti.
 class _ApiKeyCard extends StatefulWidget {
   const _ApiKeyCard();
   @override
@@ -647,7 +650,7 @@ class _ApiKeyCard extends StatefulWidget {
 
 class _ApiKeyCardState extends State<_ApiKeyCard> {
   late final TextEditingController _c =
-      TextEditingController(text: progress.apiKey);
+      TextEditingController(text: progress.activeAiKey);
   bool _hide = true;
   bool _saved = false;
 
@@ -657,8 +660,19 @@ class _ApiKeyCardState extends State<_ApiKeyCard> {
     super.dispose();
   }
 
+  Future<void> _pick(String p) async {
+    await progress.setAiProvider(p);
+    if (!mounted) return;
+    setState(() {
+      _c.text = progress.activeAiKey;
+      _saved = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    final prov = progress.aiProvider;
+    final info = AiTutorService.providers[prov]!;
     return _Card(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -668,25 +682,31 @@ class _ApiKeyCardState extends State<_ApiKeyCard> {
               Icon(Icons.smart_toy_rounded),
               SizedBox(width: 12),
               Expanded(
-                child: Text('Mr. Vaysaqi - API kaliti',
+                child: Text('Mr. Vaysaqi - AI provayder va kalit',
                     style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
               ),
             ],
           ),
           const SizedBox(height: 6),
           Text(
-            'AI o\'qituvchi bilan suhbat uchun Claude API kaliti '
-            '(console.anthropic.com, "sk-ant-..."). Faqat shu qurilmada '
-            'saqlanadi. O\'chirish uchun bo\'sh qoldirib saqlang.',
+            'Claude, Gemini yoki Groq - istalganini tanlang. Gemini va Groq '
+            'bepul kalit beradi. Kalit faqat shu qurilmada saqlanadi; '
+            'o\'chirish uchun bo\'sh qoldirib saqlang.',
             style: TextStyle(fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
           ),
           const SizedBox(height: 10),
+          ProviderPicker(value: prov, onChanged: _pick),
+          const SizedBox(height: 8),
+          Text('Kalit: ${info.$2}',
+              style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
+          const SizedBox(height: 6),
           TextField(
             controller: _c,
             obscureText: _hide,
+            onChanged: (_) => setState(() => _saved = false),
             decoration: InputDecoration(
               isDense: true,
-              hintText: 'sk-ant-...',
+              hintText: info.$3,
               border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadius.md)),
               suffixIcon: IconButton(
@@ -700,7 +720,7 @@ class _ApiKeyCardState extends State<_ApiKeyCard> {
             alignment: Alignment.centerRight,
             child: FilledButton.icon(
               onPressed: () async {
-                await progress.setApiKey(_c.text);
+                await progress.setAiKey(prov, _c.text);
                 if (mounted) setState(() => _saved = true);
               },
               icon: Icon(_saved ? Icons.check_rounded : Icons.save_rounded),

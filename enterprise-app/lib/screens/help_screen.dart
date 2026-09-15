@@ -52,7 +52,8 @@ class HelpScreen extends StatelessWidget {
       'AI o\'qituvchi bilan inglizcha suhbat: siz yozasiz, u oddiy '
           'inglizchada javob beradi va savol beradi; xatoni xabaringiz '
           'ostida to\'g\'ri variant + o\'zbekcha izoh bilan ko\'rsatadi. '
-          'Har xabar +3 XP. Claude API kaliti kerak (Sozlamalar).'
+          'Har xabar +3 XP. Claude, Gemini yoki Groq API kaliti kerak '
+          '(Gemini va Groq bepul) - Sozlamalarda tanlanadi.'
     ),
     (
       Icons.forum_rounded,
@@ -75,6 +76,15 @@ class HelpScreen extends StatelessWidget {
             'takror taklif qilinadi. 2+ marta xato qilingan so\'zga o\'z '
             'eslatmangizni (💡) yozing — +3 XP va so\'z 3 barobar yaxshi '
             'yodda qoladi.'),
+    ('📝', 'Yig\'ma imtihon',
+        'N-unitni tugatganingizda bosh ekranda "Imtihon · 1-N unitlar" '
+            'chiqadi: 1-unitdan shu unitgacha HAMMA lug\'at (tanlash + '
+            'harflab yozish), grammatika savollari va gaplarni klaviaturada '
+            'yozish. Eng zaif bandlar birinchi so\'raladi. Xato band navbat '
+            'oxiriga qaytadi - hammasi to\'g\'ri bo\'lguncha tugamaydi; baho '
+            'birinchi urinish bo\'yicha, 90%+ - o\'tdi (50 tanga, medal). '
+            'Yakunda o\'zlashtirilmagan bandlar ro\'yxati va "qayta ishlash". '
+            'Unit ekranida imtihonni istalgan vaqt boshlash mumkin.'),
     ('⚡', 'Blitz - 60 soniya',
         'Unit so\'zlari (yoki barcha o\'rganilgan so\'zlar) bilan tezlik '
             'sinovi: 1 ochko, 5 ketma-ket to\'g\'ridan boshlab x2, 10 dan x3, '

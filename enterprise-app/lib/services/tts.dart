@@ -38,7 +38,11 @@ class Tts {
   // Matn kaliti FNV-1a 64 — Python bilan bir xil. Fayl bo'lsa u
   // chalinadi, bo'lmasa brauzer TTS.
   Set<String>? _audioKeys;
-  final AudioPlayer _player = AudioPlayer()..setReleaseMode(ReleaseMode.stop);
+  // Dangasa: `hasNeural` chaqirilganda audioplayers plagini
+  // yaratilmasin (testlarda plagin yo'q — MissingPluginException).
+  AudioPlayer? _playerInst;
+  AudioPlayer get _player =>
+      _playerInst ??= AudioPlayer()..setReleaseMode(ReleaseMode.stop);
   bool _playerHooked = false;
 
   /// Neural ovoz mavjud matnlar soni (sozlamalarda ko'rsatish uchun).

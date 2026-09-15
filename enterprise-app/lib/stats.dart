@@ -29,6 +29,10 @@ class Progress extends ChangeNotifier {
   /// Mr. Vaysaqi (AI tutor) uchun Claude API kaliti — faqat shu
   /// qurilmada saqlanadi, hech qayerga yuborilmaydi (API dan tashqari).
   String apiKey = '';
+
+  /// AI provayderi: 'claude' | 'gemini' | 'groq'. Kalitlar alohida.
+  String aiProvider = 'claude';
+  final Map<String, String> aiKeys = {};
   final Map<String, int> skills = {}; // Skill.name -> 0..100
 
   // Per-so'z SM-2 holati (kalit: 'level::wordId') va tugatilgan pack/mashqlar.
@@ -97,6 +101,14 @@ class Progress extends ChangeNotifier {
     sfx = p.getBool('sfx') ?? true;
     currentLevel = p.getString('level') ?? kDefaultLevel;
     apiKey = p.getString('apiKey') ?? '';
+    aiProvider = p.getString('aiProvider') ?? 'claude';
+    aiKeys.clear();
+    for (final k in const ['claude', 'gemini', 'groq']) {
+      final v = p.getString('aiKey_$k');
+      if (v != null && v.isNotEmpty) aiKeys[k] = v;
+    }
+    // Eski yagona kalit (Claude) — ko'chirish.
+    if (apiKey.isNotEmpty && !aiKeys.containsKey('claude')) aiKeys['claude'] = apiKey;
     final sk = p.getString('skills');
     if (sk != null) {
       (json.decode(sk) as Map)
@@ -211,8 +223,34 @@ class Progress extends ChangeNotifier {
 
   Future<void> setApiKey(String key) async {
     apiKey = key.trim();
+    aiKeys['claude'] = apiKey;
     final p = await SharedPreferences.getInstance();
     await p.setString('apiKey', apiKey);
+    await p.setString('aiKey_claude', apiKey);
+    notifyListeners();
+  }
+
+  /// Joriy provayderning kaliti.
+  String get activeAiKey => aiKeys[aiProvider] ?? '';
+
+  Future<void> setAiProvider(String provider) async {
+    aiProvider = provider;
+    final p = await SharedPreferences.getInstance();
+    await p.setString('aiProvider', provider);
+    notifyListeners();
+  }
+
+  Future<void> setAiKey(String provider, String key) async {
+    final k = key.trim();
+    if (k.isEmpty) {
+      aiKeys.remove(provider);
+    } else {
+      aiKeys[provider] = k;
+    }
+    if (provider == 'claude') apiKey = k;
+    final p = await SharedPreferences.getInstance();
+    await p.setString('aiKey_$provider', k);
+    if (provider == 'claude') await p.setString('apiKey', k);
     notifyListeners();
   }
 

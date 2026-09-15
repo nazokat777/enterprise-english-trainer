@@ -7,6 +7,7 @@ import '../../drill/drill_screen.dart';
 import '../../lessons/lessons_screen.dart';
 import '../../lessons/word_lesson.dart';
 import '../../main.dart';
+import '../../exam/exam_widgets.dart';
 import '../../memory/memory_widgets.dart';
 import '../../reward/companion.dart';
 import '../../reward/reward_widgets.dart';
@@ -115,6 +116,9 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
           // unutish egri chizig'i kutmaydi.
           const EntranceFade(child: MemoryRescueCard()),
           const SizedBox(height: 10),
+          // YIG'MA IMTIHON — unit tugagach 1..N.
+          const EntranceFade(child: ExamCard()),
+          if (highestCompletedUnit() > 0) const SizedBox(height: 10),
           const EntranceFade(child: StreakDangerCard()),
           if (rewards.idleToday && progress.currentStreak > 0)
             const SizedBox(height: 10),
@@ -606,6 +610,11 @@ class BookUnitScreen extends StatelessWidget {
             // 3) Diktant — tinglab gap yig'ish (tinglash + imlo).
             _DictationButton(unit: unit),
             const SizedBox(height: 10),
+            // 4) YIG'MA IMTIHON — 1-unitdan shu unitgacha hammasi.
+            if (unit.unit >= 1 && unit.unit < 800) ...[
+              ExamButton(unit: unit.unit),
+              const SizedBox(height: 10),
+            ],
             // Kitobni betma-bet ko'rish.
             Pressable3D(
               color: AppColors.actionBlue,

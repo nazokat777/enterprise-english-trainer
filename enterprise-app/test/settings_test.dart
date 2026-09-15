@@ -74,7 +74,7 @@ void main() {
     // ListView bandlarni KERAK BO'LGANDA quradi — tugma hali
     // qurilmagan bo'lishi mumkin, avval pastga suramiz.
     await t.scrollUntilVisible(btn, 200,
-        scrollable: find.byType(Scrollable));
+        scrollable: find.byType(Scrollable).first);
     await t.pumpAndSettle();
     await t.tap(btn);
     await t.pumpAndSettle();
@@ -96,7 +96,7 @@ void main() {
     // ListView bandlarni KERAK BO'LGANDA quradi — tugma hali
     // qurilmagan bo'lishi mumkin, avval pastga suramiz.
     await t.scrollUntilVisible(btn, 200,
-        scrollable: find.byType(Scrollable));
+        scrollable: find.byType(Scrollable).first);
     await t.pumpAndSettle();
     await t.tap(btn);
     await t.pumpAndSettle();
@@ -134,7 +134,7 @@ void main() {
 
     await pump(t);
     final card = find.text('Ko\'nikmalar');
-    await t.scrollUntilVisible(card, 200, scrollable: find.byType(Scrollable));
+    await t.scrollUntilVisible(card, 200, scrollable: find.byType(Scrollable).first);
     await t.pumpAndSettle();
 
     expect(card, findsOneWidget);
