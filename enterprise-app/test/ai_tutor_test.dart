@@ -176,4 +176,85 @@ void main() {
     expect(again.aiKeys['claude'], 'sk-old');
     expect(again.aiKeys['groq'], 'gsk_x');
   });
+
+  test('rankedAttempts: eng zo\'ri birinchi, faqat kaliti borlar', () {
+    final a = AiTutorService.rankedAttempts({'gemini': 'g', 'groq': 'q'});
+    expect(a.first, ('gemini', 'gemini-2.5-flash'));
+    expect(a[1], ('groq', 'llama-3.3-70b-versatile'));
+    expect(a[2], ('gemini', 'gemini-2.5-flash-lite'));
+    expect(a.any((e) => e.$1 == 'claude'), isFalse);
+    expect(AiTutorService.rankedAttempts({'claude': 'c'}).first, ('claude', ''));
+    expect(AiTutorService.rankedAttempts({}), isEmpty);
+  });
+
+  test('sendWithFallback: 429 da keyingi model/provayderga o\'tadi', () async {
+    final hits = <String>[];
+    final client = MockClient((req) async {
+      final url = req.url.toString();
+      if (url.contains('gemini-2.5-flash:')) {
+        hits.add('gemini-2.5-flash');
+        return http.Response('{"error":{"message":"quota"}}', 429);
+      }
+      if (url.contains('groq')) {
+        final model = (json.decode(req.body) as Map)['model'] as String;
+        hits.add(model);
+        if (model == 'llama-3.3-70b-versatile') {
+          return http.Response('{"error":{"message":"rate"}}', 429);
+        }
+        return http.Response(
+            json.encode({
+              'choices': [
+                {
+                  'message': {
+                    'content': '{"reply":"Hi from llama 8b","correction":"","note_uz":"","praise":false}'
+                  }
+                }
+              ]
+            }),
+            200);
+      }
+      if (url.contains('gemini-2.5-flash-lite')) {
+        hits.add('gemini-2.5-flash-lite');
+        return http.Response('{"error":{"message":"quota"}}', 429);
+      }
+      if (url.contains('gemini-2.0-flash:')) {
+        hits.add('gemini-2.0-flash');
+        return http.Response('{"error":{"message":"quota"}}', 429);
+      }
+      hits.add('other');
+      return http.Response('{}', 500);
+    });
+    final (r, via) = await AiTutorService.sendWithFallback(
+      keys: {'gemini': 'g', 'groq': 'q'},
+      preferred: 'gemini',
+      level: 'beginner',
+      history: const [],
+      userText: 'hello',
+      client: client,
+    );
+    expect(r.reply, 'Hi from llama 8b');
+    expect(via, 'groq/llama-3.1-8b-instant');
+    expect(hits, [
+      'gemini-2.5-flash',
+      'llama-3.3-70b-versatile',
+      'gemini-2.5-flash-lite',
+      'gemini-2.0-flash',
+      'llama-3.1-8b-instant',
+    ]);
+  });
+
+  test('sendWithFallback: hech biri ishlamasa oxirgi xato', () async {
+    final client = MockClient((req) async => http.Response('{}', 429));
+    expect(
+      () => AiTutorService.sendWithFallback(
+        keys: {'groq': 'q'},
+        preferred: 'groq',
+        level: 'beginner',
+        history: const [],
+        userText: 'x',
+        client: client,
+      ),
+      throwsA(isA<TutorException>()),
+    );
+  });
 }

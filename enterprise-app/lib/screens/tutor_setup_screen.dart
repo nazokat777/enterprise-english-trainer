@@ -48,7 +48,7 @@ class _TutorSetupScreenState extends State<TutorSetupScreen> {
       builder: (context, _) {
         final p = tutorPrefs;
         final bg = bgFor(p.strictness.toDouble());
-        final hasKey = progress.activeAiKey.isNotEmpty;
+        final hasKey = AiTutorService.rankedAttempts(progress.aiKeys).isNotEmpty;
         return AnimatedContainer(
           duration: const Duration(milliseconds: 450),
           color: bg,

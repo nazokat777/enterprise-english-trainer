@@ -30,8 +30,10 @@ class AiTutorService {
     this.strictness = 2,
     this.openMode = false,
     this.noteLang = 'uz',
+    String model = '',
     http.Client? client,
-  }) : _client = client ?? http.Client();
+  })  : model_ = model,
+        _client = client ?? http.Client();
 
   String _system(String level, List<String> words) => systemPrompt(level,
       words: words,
@@ -42,13 +44,30 @@ class AiTutorService {
   static const String model = 'claude-sonnet-5';
   static const String endpoint = 'https://api.anthropic.com/v1/messages';
 
-  static const String geminiModel = 'gemini-2.5-flash';
-  static const String groqModel = 'llama-3.3-70b-versatile';
+  /// BEPUL MODELLAR — har provayderda navbat: birinchisining limiti
+  /// tugasa (429) keyingisi. Har modelning o'z kunlik/daqiqalik kvotasi
+  /// bor, shuning uchun jami limit ancha katta bo'ladi.
+  static const List<String> geminiModels = [
+    'gemini-2.5-flash',
+    'gemini-2.5-flash-lite',
+    'gemini-2.0-flash',
+    'gemini-2.0-flash-lite',
+  ];
+  static const List<String> groqModels = [
+    'llama-3.3-70b-versatile',
+    'llama-3.1-8b-instant',
+    'gemma2-9b-it',
+  ];
+  static String get geminiModel => geminiModels.first;
+  static String get groqModel => groqModels.first;
   static const String groqEndpoint =
       'https://api.groq.com/openai/v1/chat/completions';
 
-  static String geminiEndpoint(String key) =>
-      'https://generativelanguage.googleapis.com/v1beta/models/$geminiModel:generateContent?key=$key';
+  /// Aniq model (bo'sh = ro'yxatning birinchisi).
+  final String model_;
+
+  static String geminiEndpoint(String key, [String? model]) =>
+      'https://generativelanguage.googleapis.com/v1beta/models/${model ?? geminiModel}:generateContent?key=$key';
 
   /// Provayder nomi va kalit qayerdan olinishi (UI uchun).
   static const Map<String, (String, String, String)> providers = {
@@ -136,6 +155,71 @@ Respond ONLY with JSON, no markdown:
     }
   }
 
+  /// SIFAT BO'YIChA NAVBAT — eng zo'ri birinchi, u tugasa keyingisi.
+  /// Kaliti bor provayderlarning (provayder, model) juftliklari.
+  static const List<(String, String)> ranked = [
+    ('claude', ''),
+    ('gemini', 'gemini-2.5-flash'),
+    ('groq', 'llama-3.3-70b-versatile'),
+    ('gemini', 'gemini-2.5-flash-lite'),
+    ('gemini', 'gemini-2.0-flash'),
+    ('groq', 'llama-3.1-8b-instant'),
+    ('gemini', 'gemini-2.0-flash-lite'),
+    ('groq', 'gemma2-9b-it'),
+  ];
+
+  static List<(String, String)> rankedAttempts(Map<String, String> keys) => [
+        for (final a in ranked)
+          if ((keys[a.$1] ?? '').isNotEmpty) a,
+      ];
+
+  /// Ko'rinadigan nom: "gemini/gemini-2.5-flash" yoki "claude".
+  static String attemptLabel((String, String) a) =>
+      a.$2.isEmpty ? a.$1 : '${a.$1}/${a.$2}';
+
+  /// ZAXIRA BILAN: eng zo'r model limiti tugasa (429/403/5xx yoki
+  /// tarmoq), kaliti bor keyingi modellar navbat bilan sinaladi.
+  /// Qaytadi: (javob, javob bergan provayder). Hech biri ishlamasa —
+  /// oxirgi xato.
+  static Future<(TutorReply, String)> sendWithFallback({
+    required Map<String, String> keys,
+    required String preferred,
+    required String level,
+    required List<ChatMessage> history,
+    required String userText,
+    List<String> words = const [],
+    int strictness = 2,
+    bool openMode = false,
+    String noteLang = 'uz',
+    http.Client? client,
+  }) async {
+    final attempts = rankedAttempts(keys);
+    if (attempts.isEmpty) throw TutorException('API kaliti kiritilmagan.');
+    Object? last;
+    for (final (p, m) in attempts) {
+      try {
+        final r = await AiTutorService(
+          apiKey: keys[p]!,
+          provider: p,
+          strictness: strictness,
+          openMode: openMode,
+          noteLang: noteLang,
+          model: m,
+          client: client,
+        ).send(level: level, history: history, userText: userText, words: words);
+        return (r, m.isEmpty ? p : '$p/$m');
+      } on TutorException catch (e) {
+        last = e;
+        // Noto'g'ri kalit (401) — shu provayderning boshqa modellari ham
+        // ishlamaydi, lekin boshqa provayderlar ishlashi mumkin.
+        if (!e.retryable && e.statusCode != 401 && e.statusCode != 404) rethrow;
+      } catch (e) {
+        last = e; // tarmoq/timeout — keyingisiga
+      }
+    }
+    throw last is TutorException ? last : TutorException('Ulanib bo\'lmadi: $last');
+  }
+
   Map<String, String> get _json => const {'content-type': 'application/json'};
 
   Future<TutorReply> _sendGemini(String level, List<ChatMessage> history,
@@ -157,7 +241,7 @@ Respond ONLY with JSON, no markdown:
     ];
     final res = await _client
         .post(
-          Uri.parse(geminiEndpoint(apiKey)),
+          Uri.parse(geminiEndpoint(apiKey, model_.isEmpty ? null : model_)),
           headers: _json,
           body: json.encode({
             'system_instruction': {
@@ -173,7 +257,7 @@ Respond ONLY with JSON, no markdown:
           }),
         )
         .timeout(const Duration(seconds: 40));
-    if (res.statusCode != 200) throw TutorException(_errorText(res));
+    if (res.statusCode != 200) throw TutorException(_errorText(res), res.statusCode);
     final body = json.decode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
     final cands = (body['candidates'] as List?) ?? const [];
     final parts = cands.isEmpty
@@ -201,7 +285,7 @@ Respond ONLY with JSON, no markdown:
           Uri.parse(groqEndpoint),
           headers: {..._json, 'authorization': 'Bearer $apiKey'},
           body: json.encode({
-            'model': groqModel,
+            'model': model_.isEmpty ? groqModel : model_,
             'max_tokens': 400,
             'temperature': 0.6,
             'response_format': {'type': 'json_object'},
@@ -209,7 +293,7 @@ Respond ONLY with JSON, no markdown:
           }),
         )
         .timeout(const Duration(seconds: 40));
-    if (res.statusCode != 200) throw TutorException(_errorText(res));
+    if (res.statusCode != 200) throw TutorException(_errorText(res), res.statusCode);
     final body = json.decode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
     final choices = (body['choices'] as List?) ?? const [];
     final text = choices.isEmpty
@@ -244,7 +328,7 @@ Respond ONLY with JSON, no markdown:
         )
         .timeout(const Duration(seconds: 40));
     if (res.statusCode != 200) {
-      throw TutorException(_errorText(res));
+      throw TutorException(_errorText(res), res.statusCode);
     }
     final body = json.decode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
     final content = (body['content'] as List?) ?? const [];
@@ -273,7 +357,14 @@ Respond ONLY with JSON, no markdown:
 
 class TutorException implements Exception {
   final String message;
-  TutorException(this.message);
+  final int statusCode;
+  TutorException(this.message, [this.statusCode = 0]);
+
+  /// Boshqa provayderga o'tishga arziydimi: limit tugadi (429), kvota/
+  /// ruxsat (403), server (5xx) yoki tarmoq (0).
+  bool get retryable =>
+      statusCode == 0 || statusCode == 429 || statusCode == 403 || statusCode >= 500;
+
   @override
   String toString() => message;
 }

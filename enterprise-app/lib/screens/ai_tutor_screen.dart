@@ -32,6 +32,9 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
   bool _busy = false;
   String? _error;
 
+  /// Zaxira provayder ishlaganda bildirish ("Gemini limiti — Groq javob berdi").
+  String? _info;
+
   /// Ovoz: brauzer nutq tanish (web). Erkin rejimda javobdan keyin
   /// o'zi qayta tinglaydi; "bosib turing"da tugma bosilganda.
   final Speech _speech = Speech();
@@ -114,8 +117,7 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
   Future<void> _send([String? preset]) async {
     final text = (preset ?? _input.text).trim();
     if (text.isEmpty || _busy) return;
-    final key = progress.activeAiKey;
-    if (key.isEmpty) return;
+    if (AiTutorService.rankedAttempts(progress.aiKeys).isEmpty) return;
     _input.clear();
     final now = DateTime.now().millisecondsSinceEpoch;
     final userMsg = ChatMessage(fromUser: true, text: text, timeMs: now);
@@ -127,13 +129,12 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
     _jump();
     try {
       final words = mastery.learnedWords(limit: 25).map((e) => e.$2).toList();
-      final reply = await AiTutorService(
-        apiKey: key,
-        provider: progress.aiProvider,
+      final (reply, via) = await AiTutorService.sendWithFallback(
+        keys: progress.aiKeys,
+        preferred: progress.aiProvider,
         strictness: tutorPrefs.strictness,
         openMode: tutorPrefs.openMode,
         noteLang: tutorPrefs.noteLang,
-      ).send(
         level: progress.currentLevel,
         history: _msgs.sublist(0, _msgs.length - 1),
         userText: text,
@@ -141,6 +142,14 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
       );
       if (!mounted) return;
       setState(() {
+        // Tanlangan provayderning birinchi modeli emas — qaysi model
+        // javob berganini bildirib qo'yamiz (limit tugagan bo'lishi mumkin).
+        final ranked = AiTutorService.rankedAttempts(progress.aiKeys);
+        final primary =
+            ranked.isEmpty ? '' : AiTutorService.attemptLabel(ranked.first);
+        _info = via == primary
+            ? null
+            : 'Javob berdi: $via (eng zo\'r model limiti tugagan bo\'lishi mumkin)';
         // Tuzatish foydalanuvchi xabari ostida ko'rinadi.
         _msgs[_msgs.length - 1] = userMsg.withFeedback(reply);
         _msgs.add(ChatMessage(
@@ -183,7 +192,9 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
     return ListenableBuilder(
       listenable: progress,
       builder: (context, _) {
-        if (progress.activeAiKey.isEmpty) return const _NoKey();
+        if (AiTutorService.rankedAttempts(progress.aiKeys).isEmpty) {
+          return const _NoKey();
+        }
         return Column(
           children: [
             _Header(onClear: _msgs.isEmpty ? null : _clear),
@@ -208,6 +219,15 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
                         color: AppColors.danger,
                         fontSize: 12.5,
                         fontWeight: FontWeight.w700)),
+              ),
+            if (_info != null)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 6),
+                child: Text(_info!,
+                    style: TextStyle(
+                        color: AppColors.muted(context),
+                        fontSize: 11.5,
+                        fontWeight: FontWeight.w600)),
               ),
             _InputBar(
               controller: _input,

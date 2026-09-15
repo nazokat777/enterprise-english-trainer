@@ -689,9 +689,11 @@ class _ApiKeyCardState extends State<_ApiKeyCard> {
           ),
           const SizedBox(height: 6),
           Text(
-            'Claude, Gemini yoki Groq - istalganini tanlang. Gemini va Groq '
-            'bepul kalit beradi. Kalit faqat shu qurilmada saqlanadi; '
-            'o\'chirish uchun bo\'sh qoldirib saqlang.',
+            'Bir nechta kalit kiriting - hammasi ishlatiladi: eng zo\'r model '
+            'birinchi (Claude, so\'ng Gemini 2.5 Flash, Llama 3.3 70B...), '
+            'limiti tugasa keyingisi o\'zi ulanadi. Gemini va Groq bepul kalit '
+            'beradi. Kalit faqat shu qurilmada saqlanadi; o\'chirish uchun '
+            'bo\'sh qoldirib saqlang.',
             style: TextStyle(fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
           ),
           const SizedBox(height: 10),
