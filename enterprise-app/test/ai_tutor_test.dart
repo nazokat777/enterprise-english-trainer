@@ -92,7 +92,8 @@ void main() {
     await t.tap(find.text('Saqlash va boshlash'));
     await t.pump();
     await t.pump();
-    expect(app.progress.apiKey, 'sk-ant-xyz');
+    expect(app.progress.activeAiKey, 'sk-ant-xyz');
+    expect(app.progress.aiProvider, 'gemini', reason: 'standart - bepul provayder');
     expect(find.text('Hello! I am Mr. Vaysaqi. 👋'), findsOneWidget);
     expect(find.text('Write in English...'), findsOneWidget);
   });
