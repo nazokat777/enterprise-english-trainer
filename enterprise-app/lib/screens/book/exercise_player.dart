@@ -16,6 +16,7 @@ import '../../widgets/entrance.dart';
 import '../../widgets/explain_text.dart';
 import '../../widgets/pressable3d.dart';
 import '../pack/pack_flow.dart' show RoundPlay;
+import 'type_stage.dart';
 
 /// Bitta mashqni o'ynatadi. 4 xil o'yin turi:
 /// choice (tanlash) · text (yig'ish) · match (moslash) · study (o'qish).
@@ -486,6 +487,17 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           onDone: _answered,
         );
       case ExKind.text:
+        if (ex.tasks[_index].typed) {
+          return TypeStage(
+            key: ValueKey('y$_index'),
+            golden: _golden,
+            task: ex.tasks[_index],
+            explanation: _index == 0 ? ex.explanationUz : '',
+            audioNote: ex.audioNoteUz,
+            onDone: _answered,
+            onNearMiss: () => _answered(false, nearMiss: true),
+          );
+        }
         return _BuildStage(
           key: ValueKey('t$_index'),
           golden: _golden,
@@ -524,6 +536,18 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
             _done = true;
             _finish();
           }),
+          onMemorize: ex.tasks.any((t) => t.en.trim().isNotEmpty)
+              ? () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => ExercisePlayer(
+                        exercise: memorizeExerciseFrom(ex),
+                        sectionTitle: '${widget.sectionTitle} · yodlash',
+                        unitLabel: widget.unitLabel,
+                      ),
+                    ),
+                  )
+              : null,
         );
     }
   }
@@ -1510,7 +1534,12 @@ class _StudyStage extends StatelessWidget {
   final BookExercise exercise;
   final VoidCallback onDone;
 
-  const _StudyStage({required this.exercise, required this.onDone});
+  /// YODLASh — shu satrlarni so'zlardan yig'ib, so'ng harfma-harf
+  /// yozib mustahkamlash (o'qish passiv; yozish faol).
+  final VoidCallback? onMemorize;
+
+  const _StudyStage(
+      {required this.exercise, required this.onDone, this.onMemorize});
 
   @override
   Widget build(BuildContext context) {
@@ -1521,6 +1550,24 @@ class _StudyStage extends StatelessWidget {
         AudioNoteCard(text: exercise.audioNoteUz),
         for (final t in exercise.tasks) _line(context, t),
         const SizedBox(height: 22),
+        if (onMemorize != null) ...[
+          Pressable3D(
+            color: AppColors.brandPurple,
+            shadowColor: const Color(0xFF5B22B5),
+            onPressed: onMemorize,
+            child: const Center(
+              child: Text(
+                'Yodlash: tinglab yig\'ish + yozish',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
+        ],
         Pressable3D(
           color: AppColors.success,
           shadowColor: const Color(0xFF0F7A37),

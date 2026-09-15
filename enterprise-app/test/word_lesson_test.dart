@@ -75,7 +75,9 @@ void main() {
       await s.answer(true);
       n++;
     }
-    expect(n, 6 * 3);
+    // 3 asosiy raund + misol gapi bor so'zlar uchun cloze (4-raund).
+    final cloze = l.sources.where((e) => e.sentence.isNotEmpty).length;
+    expect(n, 6 * 3 + cloze);
     expect(m.allStrong(l.itemIds), isTrue);
   });
 

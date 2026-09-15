@@ -96,6 +96,11 @@ class ExTask {
   /// Rasm o'rnidagi belgi (emoji yoki asset yo'li).
   final String visual;
 
+  /// YOZISh rejimi: bo'laklardan yig'ish emas, klaviaturada harfma-harf
+  /// yoziladi (diktant). Gap uchun bo'laklar = so'zlar edi; yodlash
+  /// uchun esa o'quvchi butun gapni o'zi yozishi kerak.
+  final bool typed;
+
   const ExTask({
     this.prompt = '',
     this.promptUz = '',
@@ -111,6 +116,7 @@ class ExTask {
     this.speak = '',
     this.speakAnswer = '',
     this.visual = '',
+    this.typed = false,
   });
 
   factory ExTask.fromJson(Map<String, dynamic> j) => ExTask(

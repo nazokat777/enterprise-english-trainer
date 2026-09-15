@@ -2,6 +2,7 @@ import 'dart:math';
 
 import '../drill/drill_item.dart';
 import '../mastery.dart';
+import '../services/tts.dart';
 import 'word_lesson.dart';
 
 /// SO'Z DARSI DVIGATELI — Duolingo uslubidagi qisqa seans.
@@ -36,6 +37,12 @@ class LessonSession {
   /// hech narsa qo'shmaydi.
   final List<AskFormat> formats;
 
+  /// So'zning neural ovozi bormi — 3-raundda har ikkinchi so'z
+  /// "eshitib yoz" shaklida so'raladi (fonologik xotira: so'z
+  /// ko'rinishi bilan birga OVOZI ham yodlanadi). Ovozsiz so'z
+  /// odatdagidek harflab yoziladi.
+  final bool Function(String en) hasAudio;
+
   final Random _rnd;
   final List<DrillQuestion> _queue = [];
   int _pos = 0;
@@ -60,8 +67,10 @@ class LessonSession {
     this.pool = const [],
     this.extras = const [],
     this.formats = rounds,
+    bool Function(String en)? hasAudio,
     Random? random,
-  }) : _rnd = random ?? Random() {
+  })  : hasAudio = hasAudio ?? Tts.instance.hasNeural,
+        _rnd = random ?? Random() {
     _fill();
     _sprinkle();
   }
@@ -86,8 +95,16 @@ class LessonSession {
     final src = lesson.sources;
     for (final f in formats) {
       final round = <DrillQuestion>[];
-      for (final s in src) {
-        final q = buildQuestion(s, f, _poolFor(s), _rnd);
+      for (var i = 0; i < src.length; i++) {
+        final s = src[i];
+        var fmt = f;
+        if (f == AskFormat.build && i.isOdd && hasAudio(s.en)) {
+          fmt = AskFormat.listen;
+        }
+        final q = buildQuestion(s, fmt, _poolFor(s), _rnd) ??
+            (fmt == AskFormat.listen
+                ? buildQuestion(s, f, _poolFor(s), _rnd)
+                : null);
         if (q != null) round.add(q);
       }
       round.shuffle(_rnd);
@@ -120,7 +137,8 @@ class LessonSession {
   int get round {
     final q = current;
     if (q == null) return formats.length;
-    return formats.indexOf(q.format) + 1;
+    final f = q.format == AskFormat.listen ? AskFormat.build : q.format;
+    return formats.indexOf(f) + 1;
   }
 
   Future<void> answer(bool ok) async {
@@ -152,6 +170,7 @@ class LessonSession {
 
   void _requeue(DrillQuestion q) {
     final src = _sourceOf(q.itemId)!;
+    // Eshitib yozish xato bo'lsa ham shu shaklda qaytadi (ovoz bor).
     final next = buildQuestion(src, q.format, _poolFor(src), _rnd) ?? q;
     final at = (_pos + 3).clamp(0, _queue.length);
     _queue.insert(at, next);

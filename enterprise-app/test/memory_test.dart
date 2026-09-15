@@ -119,6 +119,27 @@ void main() {
       expect(MemoryRescue.isEvening(DateTime(2026, 1, 1, 12)), isFalse);
     });
 
+    test('3-raundda ovozi bor har ikkinchi so\'z eshitib yoziladi', () {
+      final lesson = WordLesson(index: 1, unit: 1, words: const [
+        LessonWord(en: 'cat', uz: 'mushuk'),
+        LessonWord(en: 'dog', uz: 'it'),
+        LessonWord(en: 'cow', uz: 'sigir'),
+        LessonWord(en: 'hen', uz: 'tovuq'),
+      ]);
+      final s = LessonSession(
+          lesson: lesson, mastery: store, hasAudio: (_) => true);
+      final formats = <AskFormat>[];
+      while (!s.isDone) {
+        formats.add(s.current!.format);
+        s.answer(true);
+      }
+      expect(formats.where((f) => f == AskFormat.listen).length, 2);
+      expect(formats.where((f) => f == AskFormat.build).length, 2);
+      final none = LessonSession(
+          lesson: lesson, mastery: store, hasAudio: (_) => false);
+      expect(none.round, 1);
+    });
+
     test('LessonSession extras navbatga qo\'shiladi', () async {
       final lesson = WordLesson(index: 1, unit: 1, words: const [
         LessonWord(en: 'cat', uz: 'mushuk'),
