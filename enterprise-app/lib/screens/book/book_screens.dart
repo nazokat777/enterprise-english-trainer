@@ -536,132 +536,143 @@ class _UnitCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = Theme.of(context).brightness == Brightness.dark;
     final done = progress.doneInUnit(brief.unit);
     final ratio = brief.exercises == 0
         ? 0.0
         : (done / brief.exercises).clamp(0.0, 1.0);
+    final complete = brief.exercises > 0 && done >= brief.exercises;
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
-      child: Material(
-        color: Theme.of(context).colorScheme.surface,
-        borderRadius: BorderRadius.circular(AppRadius.lg),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(AppRadius.lg),
-          onTap: () async {
-            final u = await book.load(brief.unit);
-            if (u == null || !context.mounted) return;
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => BookUnitScreen(unit: u)),
-            );
-          },
-          child: Container(
-            padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadius.lg),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: dark ? 0.25 : 0.04),
-                  blurRadius: 10,
-                ),
-              ],
-            ),
-            child: Row(
-              children: [
-                Container(
-                  width: 52,
-                  height: 52,
-                  decoration: BoxDecoration(
-                    color:
-                        (brief.isExtra
-                                ? AppColors.actionBlue
-                                : AppColors.brandPurple)
-                            .withValues(alpha: 0.12),
-                    borderRadius: BorderRadius.circular(AppRadius.md),
+      child: SurfaceCard(
+        padding: const EdgeInsets.all(16),
+        onTap: () async {
+          final u = await book.load(brief.unit);
+          if (u == null || !context.mounted) return;
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => BookUnitScreen(unit: u)),
+          );
+        },
+        child: Row(
+          children: [
+            // Nishon: tugallangan unit — yashil gradient + belgi;
+            // boshlangan — halqa progress; yangi — brend gradient.
+            SizedBox(
+              width: 56,
+              height: 56,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  if (done > 0 && !complete)
+                    SizedBox(
+                      width: 56,
+                      height: 56,
+                      child: CircularProgressIndicator(
+                        value: ratio,
+                        strokeWidth: 4,
+                        strokeCap: StrokeCap.round,
+                        backgroundColor: AppColors.brandPurple.withValues(
+                          alpha: 0.12,
+                        ),
+                        valueColor: const AlwaysStoppedAnimation(
+                          AppColors.brandPurple,
+                        ),
+                      ),
+                    ),
+                  GradientBadge(
+                    size: done > 0 && !complete ? 42 : 50,
+                    gradient: complete
+                        ? AppColors.successGradient
+                        : brief.isExtra
+                        ? const LinearGradient(
+                            colors: [AppColors.actionBlue, AppColors.brandCyan],
+                          )
+                        : AppColors.brandGradient,
+                    child: complete
+                        ? const Icon(
+                            Icons.check_rounded,
+                            color: Colors.white,
+                            size: 26,
+                          )
+                        : Text(
+                            brief.displayBadge,
+                            style: TextStyle(
+                              fontSize: brief.isExtra ? 15 : 20,
+                              fontWeight: FontWeight.w900,
+                              color: Colors.white,
+                            ),
+                          ),
                   ),
-                  child: Center(
-                    child: Text(
-                      brief.displayBadge,
+                ],
+              ),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '${brief.displayLabel} — ${brief.title}',
+                    style: const TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 16,
+                    ),
+                  ),
+                  const SizedBox(height: 3),
+                  Text(
+                    brief.words > 0
+                        ? '${brief.words} so\'z · ${(brief.words / kLessonSize).ceil()} dars · ${brief.exercises} mashq'
+                        : '${brief.exercises} mashq · ${brief.tasks} band',
+                    style: TextStyle(
+                      fontSize: 12.5,
+                      color: AppColors.muted(context),
+                    ),
+                  ),
+                  // Nechta mashq tugatilgani — ilgari o\'quvchi
+                  // unitni ochmasdan buni bilolmasdi.
+                  if (done > 0) ...[
+                    const SizedBox(height: 7),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(4),
+                      child: LinearProgressIndicator(
+                        value: ratio,
+                        minHeight: 5,
+                        backgroundColor: AppColors.brandPurple.withValues(
+                          alpha: 0.15,
+                        ),
+                        valueColor: const AlwaysStoppedAnimation(
+                          AppColors.brandPurple,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    // "Yana N ta qoldi" — maqsadga yaqinlashgan
+                    // sari intilish kuchayadi (goal gradient).
+                    Text(
+                      done >= brief.exercises
+                          ? '$done / ${brief.exercises} — unit tugatildi'
+                          : (brief.exercises - done <= 5
+                                ? 'Yana ${brief.exercises - done} ta qoldi — oz qoldi!'
+                                : '$done / ${brief.exercises} mashq tugatildi'),
                       style: TextStyle(
-                        fontSize: brief.isExtra ? 17 : 22,
-                        fontWeight: FontWeight.w800,
-                        color: brief.isExtra
-                            ? AppColors.actionBlue
+                        fontSize: 11.5,
+                        fontWeight: FontWeight.w700,
+                        color:
+                            brief.exercises - done <= 5 &&
+                                done < brief.exercises
+                            ? AppColors.homework
                             : AppColors.brandPurple,
                       ),
                     ),
-                  ),
-                ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        '${brief.displayLabel} — ${brief.title}',
-                        style: const TextStyle(
-                          fontWeight: FontWeight.w800,
-                          fontSize: 16,
-                        ),
-                      ),
-                      const SizedBox(height: 3),
-                      Text(
-                        brief.words > 0
-                            ? '${brief.words} so\'z · ${(brief.words / kLessonSize).ceil()} dars · ${brief.exercises} mashq'
-                            : '${brief.exercises} mashq · ${brief.tasks} band',
-                        style: TextStyle(
-                          fontSize: 12.5,
-                          color: AppColors.muted(context),
-                        ),
-                      ),
-                      // Nechta mashq tugatilgani — ilgari o\'quvchi
-                      // unitni ochmasdan buni bilolmasdi.
-                      if (done > 0) ...[
-                        const SizedBox(height: 7),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(4),
-                          child: LinearProgressIndicator(
-                            value: ratio,
-                            minHeight: 5,
-                            backgroundColor: AppColors.brandPurple.withValues(
-                              alpha: 0.15,
-                            ),
-                            valueColor: const AlwaysStoppedAnimation(
-                              AppColors.brandPurple,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        // "Yana N ta qoldi" — maqsadga yaqinlashgan
-                        // sari intilish kuchayadi (goal gradient).
-                        Text(
-                          done >= brief.exercises
-                              ? '$done / ${brief.exercises} — unit tugatildi'
-                              : (brief.exercises - done <= 5
-                                    ? 'Yana ${brief.exercises - done} ta qoldi — oz qoldi!'
-                                    : '$done / ${brief.exercises} mashq tugatildi'),
-                          style: TextStyle(
-                            fontSize: 11.5,
-                            fontWeight: FontWeight.w700,
-                            color:
-                                brief.exercises - done <= 5 &&
-                                    done < brief.exercises
-                                ? AppColors.homework
-                                : AppColors.brandPurple,
-                          ),
-                        ),
-                      ],
-                    ],
-                  ),
-                ),
-                const Icon(
-                  Icons.chevron_right_rounded,
-                  color: AppColors.brandPurple,
-                ),
-              ],
+                  ],
+                ],
+              ),
             ),
-          ),
+            const Icon(
+              Icons.chevron_right_rounded,
+              color: AppColors.brandPurple,
+            ),
+          ],
         ),
       ),
     );

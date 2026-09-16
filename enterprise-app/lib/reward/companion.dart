@@ -19,14 +19,16 @@ class MascotStage {
   const MascotStage(this.emoji, this.name, this.minLevel);
 
   static const List<MascotStage> stages = [
-    MascotStage('🥚', 'Tuxum', 1),
-    MascotStage('🐣', 'Jo\'ja', 2),
-    MascotStage('🐥', 'Polapon', 4),
-    MascotStage('🐤', 'Yosh qush', 7),
-    MascotStage('🦜', 'To\'tiqush', 10),
-    MascotStage('🦉', 'Boyqush', 15),
-    MascotStage('🦅', 'Burgut', 22),
-    MascotStage('🐉', 'Ajdar', 30),
+    // Uchqundan galaktikagacha — "bilim yorug'ligi" metaforasi:
+    // har daraja hamrohni yorqinroq qiladi.
+    MascotStage('✨', 'Uchqun', 1),
+    MascotStage('⭐', 'Yulduzcha', 2),
+    MascotStage('🌟', 'Yorqin yulduz', 4),
+    MascotStage('💫', 'Kometa', 7),
+    MascotStage('🌠', 'Meteor', 10),
+    MascotStage('🪐', 'Sayyora', 15),
+    MascotStage('☀️', 'Quyosh', 22),
+    MascotStage('🌌', 'Galaktika', 30),
   ];
 
   static MascotStage forLevel(int level) {
@@ -765,7 +767,7 @@ class _WheelPainter extends CustomPainter {
 
 // ═══════════════════ TANIShUV (onboarding) ═══════════════════
 
-/// Birinchi ochilishda: tuxum "chiqadi", o'quvchi unga ISM qo'yadi.
+/// Birinchi ochilishda: uchqun "yonadi", o'quvchi unga ISM qo'yadi.
 /// O'zi nomlagan narsa — o'ziniki (IKEA effekti). Ism keyin hamma
 /// gaplarda ishlatiladi.
 class OnboardingSheet extends StatefulWidget {
@@ -828,15 +830,15 @@ class _OnboardingSheetState extends State<OnboardingSheet>
               builder: (_, child) => Transform.rotate(
                   angle: (Curves.easeInOut.transform(_c.value) - 0.5) * 0.35,
                   child: child),
-              child: const Text('🥚', style: TextStyle(fontSize: 84)),
+              child: const Text('✨', style: TextStyle(fontSize: 84)),
             ),
             const SizedBox(height: 10),
-            const Text('Sizga hamroh tuxum keldi!',
+            const Text('Sizga hamroh uchqun keldi!',
                 style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22)),
             const SizedBox(height: 6),
             Text(
-              'Siz o\'rgangan sari u o\'sadi: jo\'ja, boyqush, burgut... '
-              'ajdargacha. Unga ism qo\'ying.',
+              'Siz o\'rgangan sari u yonadi: yulduz, kometa, sayyora... '
+              'galaktikagacha. Unga ism qo\'ying.',
               textAlign: TextAlign.center,
               style: TextStyle(color: AppColors.muted(context), fontSize: 14),
             ),

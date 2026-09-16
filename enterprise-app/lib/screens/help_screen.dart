@@ -116,9 +116,9 @@ class HelpScreen extends StatelessWidget {
     ('⏰', 'Baxtli soat',
         'Har kuni bitta soat (yuqori paneldagi belgi ko\'rsatadi) — hamma XP '
             'ikki barobar.'),
-    ('🥚', 'Hamroh',
+    ('✨', 'Hamroh',
         'Sizga ism qo\'yiladigan hamroh beriladi. Darajangiz oshgan sari u '
-            'o\'sadi: tuxum - jo\'ja - ... - ajdar. Bugun mashq qilmasangiz '
+            'yonadi: uchqun - yulduz - kometa - ... - galaktika. Bugun mashq qilmasangiz '
             'uxlab qoladi.'),
     ('🏆', 'Yutuqlar',
         '29 ta medal: birinchi mashq, 100 to\'g\'ri javob, 10 lik kombo, 7 '
