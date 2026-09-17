@@ -351,36 +351,54 @@ class _BlitzScreenState extends State<BlitzScreen>
         ListView(
           padding: const EdgeInsets.all(28),
           children: [
-            const SizedBox(height: 16),
-            Center(
-              child: Text(_newRecord ? '🏆' : '⚡',
-                  style: const TextStyle(fontSize: 64)),
-            ),
-            const SizedBox(height: 8),
-            Center(
-              child: Text(
-                  _newRecord ? 'YANGI REKORD!' : 'Vaqt tugadi',
-                  style: TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.w900,
-                      color: _newRecord ? AppColors.coin : AppColors.homework)),
-            ),
-            const SizedBox(height: 6),
-            Center(
-              child: TweenAnimationBuilder<int>(
-                tween: IntTween(begin: 0, end: _score),
-                duration: const Duration(milliseconds: 900),
-                builder: (context, v, _) => Text('$v',
-                    style: const TextStyle(
-                        fontSize: 64,
-                        fontWeight: FontWeight.w900,
-                        color: AppColors.success)),
+            // NATIJA KARTASI — rekordda oltin gradient, aks holda olov.
+            Container(
+              padding: const EdgeInsets.fromLTRB(22, 24, 22, 22),
+              decoration: BoxDecoration(
+                gradient: _newRecord
+                    ? AppColors.goldGradient
+                    : const LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [Color(0xFFF97316), Color(0xFFEA580C), Color(0xFFDB2777)]),
+                borderRadius: BorderRadius.circular(AppRadius.xl),
+                boxShadow: AppShadow.glow(
+                    _newRecord ? AppColors.coin : AppColors.homework, alpha: 0.45),
               ),
-            ),
-            Center(
-              child: Text('ochko · +${_score + (_newRecord ? 15 : 0)} XP',
-                  style: TextStyle(
-                      fontSize: 13.5, color: AppColors.muted(context))),
+              child: Column(
+                children: [
+                  TweenAnimationBuilder<double>(
+                    tween: Tween(begin: 0, end: 1),
+                    duration: const Duration(milliseconds: 700),
+                    curve: Curves.elasticOut,
+                    builder: (_, v, child) => Transform.scale(scale: v, child: child),
+                    child: Text(_newRecord ? '🏆' : '⚡',
+                        style: const TextStyle(fontSize: 60)),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(_newRecord ? 'YANGI REKORD!' : 'Vaqt tugadi',
+                      style: const TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: -0.3,
+                          color: Colors.white)),
+                  TweenAnimationBuilder<int>(
+                    tween: IntTween(begin: 0, end: _score),
+                    duration: const Duration(milliseconds: 900),
+                    builder: (context, v, _) => Text('$v',
+                        style: const TextStyle(
+                            fontSize: 68,
+                            height: 1.1,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.white)),
+                  ),
+                  Text('ochko · +${_score + (_newRecord ? 15 : 0)} XP',
+                      style: TextStyle(
+                          fontSize: 13.5,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white.withValues(alpha: 0.9))),
+                ],
+              ),
             ),
             const SizedBox(height: 18),
             Row(
