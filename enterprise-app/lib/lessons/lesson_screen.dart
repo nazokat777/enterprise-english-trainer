@@ -8,6 +8,7 @@ import '../main.dart';
 import '../mastery.dart';
 import '../memory/memory.dart';
 import '../memory/memory_widgets.dart';
+import '../reward/confetti.dart';
 import '../services/tts.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
@@ -461,80 +462,124 @@ class _Finished extends StatelessWidget {
             (mistaken.contains(w.itemId) || mastery.of(w.itemId).lapses >= 2))
           w,
     ];
-    return ListView(
-      padding: const EdgeInsets.all(28),
+    final perfect = mistakes == 0;
+    return Stack(
       children: [
-        const SizedBox(height: 20),
-        Center(
-          child: Icon(
-            rescue
-                ? Icons.health_and_safety_rounded
-                : Icons.workspace_premium_rounded,
-            size: 96,
-            color: AppColors.success,
-          ),
-        ),
-        const SizedBox(height: 16),
-        Center(
-          child: Text(
-            rescue
-                ? '${lesson.words.length} ta so\'z qutqarildi!'
-                : '${lesson.index}-dars tugadi',
-            style: const TextStyle(
-              fontSize: 26,
-              fontWeight: FontWeight.w800,
-              color: AppColors.success,
-            ),
-          ),
-        ),
-        const SizedBox(height: 6),
-        Center(
-          child: Text(
-            mistakes == 0
-                ? '${lesson.words.length} ta so\'z — birorta xatosiz!'
-                : '${lesson.words.length} ta so\'z ${rescue ? 'qutqarildi' : 'o\'rganildi'}. $mistakes ta xato — ular qayta so\'raldi.',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13.5,
-              height: 1.5,
-              color: AppColors.muted(context),
-            ),
-          ),
-        ),
-        const SizedBox(height: 22),
-        // XOTIRA O'SIShI — har so'z qaysi bosqichdan qaysiga o'tdi.
-        // Ko'rinadigan o'sish = harakat-natija bog'i (dofamin).
-        MemoryGrowthList(
-          items: [
-            for (final w in lesson.words)
-              MemoryGrowth(
-                en: w.en,
-                uz: w.uz,
-                before: stageBefore[w.itemId] ?? 0,
-                after: mastery.of(w.itemId).stage,
-                interval: mastery.of(w.itemId).interval,
+        ListView(
+          padding: const EdgeInsets.all(24),
+          children: [
+            // YAKUN KARTASI — "peak-end": oxirgi taassurot eng kuchli qoladi.
+            // Gradient karta, katta nishon "sakrab" chiqadi, ostida raqamlar.
+            Container(
+              padding: const EdgeInsets.fromLTRB(22, 26, 22, 22),
+              decoration: BoxDecoration(
+                gradient: perfect
+                    ? AppColors.goldGradient
+                    : AppColors.successGradient,
+                borderRadius: BorderRadius.circular(AppRadius.xl),
+                boxShadow: AppShadow.glow(
+                  perfect ? AppColors.coin : AppColors.success,
+                  alpha: 0.45,
+                ),
               ),
+              child: Column(
+                children: [
+                  TweenAnimationBuilder<double>(
+                    tween: Tween(begin: 0, end: 1),
+                    duration: const Duration(milliseconds: 700),
+                    curve: Curves.elasticOut,
+                    builder: (_, v, child) =>
+                        Transform.scale(scale: v, child: child),
+                    child: Container(
+                      width: 96,
+                      height: 96,
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.2),
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.white.withValues(alpha: 0.5),
+                          width: 3,
+                        ),
+                      ),
+                      child: Icon(
+                        rescue
+                            ? Icons.health_and_safety_rounded
+                            : perfect
+                            ? Icons.emoji_events_rounded
+                            : Icons.workspace_premium_rounded,
+                        size: 52,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 14),
+                  Text(
+                    rescue
+                        ? '${lesson.words.length} ta so\'z qutqarildi!'
+                        : perfect
+                        ? 'Benuqson!'
+                        : '${lesson.index}-dars tugadi',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w900,
+                      color: Colors.white,
+                      letterSpacing: -0.5,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    mistakes == 0
+                        ? '${lesson.words.length} ta so\'z - birorta xatosiz'
+                        : '${lesson.words.length} ta so\'z ${rescue ? 'qutqarildi' : 'o\'rganildi'} · $mistakes ta xato qayta so\'raldi',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 13.5,
+                      height: 1.5,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white.withValues(alpha: 0.9),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 18),
+            // XOTIRA O'SIShI — har so'z qaysi bosqichdan qaysiga o'tdi.
+            // Ko'rinadigan o'sish = harakat-natija bog'i (dofamin).
+            MemoryGrowthList(
+              items: [
+                for (final w in lesson.words)
+                  MemoryGrowth(
+                    en: w.en,
+                    uz: w.uz,
+                    before: stageBefore[w.itemId] ?? 0,
+                    after: mastery.of(w.itemId).stage,
+                    interval: mastery.of(w.itemId).interval,
+                  ),
+              ],
+            ),
+            if (weak.isNotEmpty) ...[
+              const SizedBox(height: 22),
+              HookEditor(words: [for (final w in weak) (w.itemId, w.en, w.uz)]),
+            ],
+            const SizedBox(height: 26),
+            Pressable3D(
+              color: AppColors.brandPurple,
+              onPressed: onClose,
+              child: const Center(
+                child: Text(
+                  'Davom etish',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
-        if (weak.isNotEmpty) ...[
-          const SizedBox(height: 22),
-          HookEditor(words: [for (final w in weak) (w.itemId, w.en, w.uz)]),
-        ],
-        const SizedBox(height: 26),
-        Pressable3D(
-          color: AppColors.brandPurple,
-          onPressed: onClose,
-          child: const Center(
-            child: Text(
-              'Davom etish',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w800,
-                fontSize: 16,
-              ),
-            ),
-          ),
-        ),
+        if (perfect) const IgnorePointer(child: ConfettiBurst(count: 110)),
       ],
     );
   }
