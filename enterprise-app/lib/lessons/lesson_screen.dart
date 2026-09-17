@@ -11,6 +11,7 @@ import '../memory/memory_widgets.dart';
 import '../services/tts.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
+import '../widgets/hover_lift.dart';
 import '../widgets/pressable3d.dart';
 import 'lesson_session.dart';
 import 'word_lesson.dart';
@@ -143,15 +144,19 @@ class _LessonScreenState extends State<LessonScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-                widget.rescue
-                    ? widget.unitLabel
-                    : '${widget.unitLabel} · ${l.index}-dars',
-                style: const TextStyle(fontSize: 16)),
-            Text(_stageLabel(),
-                style: const TextStyle(
-                    fontSize: 11.5,
-                    fontWeight: FontWeight.w600,
-                    color: AppColors.brandPurple)),
+              widget.rescue
+                  ? widget.unitLabel
+                  : '${widget.unitLabel} · ${l.index}-dars',
+              style: const TextStyle(fontSize: 16),
+            ),
+            Text(
+              _stageLabel(),
+              style: const TextStyle(
+                fontSize: 11.5,
+                fontWeight: FontWeight.w600,
+                color: AppColors.brandPurple,
+              ),
+            ),
           ],
         ),
       ),
@@ -160,30 +165,30 @@ class _LessonScreenState extends State<LessonScreen> {
           _Stage.intro => _intro(context),
           _Stage.quiz => _quiz(context),
           _Stage.done => _Finished(
-              lesson: l,
-              mistakes: _s.mistakes,
-              rescue: widget.rescue,
-              stageBefore: _stageBefore,
-              mistaken: _s.mistakenIds,
-              onClose: () => Navigator.pop(context, true),
-            ),
+            lesson: l,
+            mistakes: _s.mistakes,
+            rescue: widget.rescue,
+            stageBefore: _stageBefore,
+            mistaken: _s.mistakenIds,
+            onClose: () => Navigator.pop(context, true),
+          ),
         },
       ),
     );
   }
 
   String _stageLabel() => switch (_stage) {
-        _Stage.intro =>
-          'Tanishuv · ${_card + 1}/${widget.lesson.words.length}',
-        _Stage.quiz => '${_s.round}-bosqich · ${switch (_s.current?.format) {
-            AskFormat.choice => 'ma\'nosini tanlang',
-            AskFormat.produce => 'inglizchasini tanlang',
-            AskFormat.listen => 'eshitib yozing',
-            AskFormat.cloze => 'gapdagi bo\'shliqni to\'ldiring',
-            _ => 'harflab yozing',
-          }}',
-        _Stage.done => 'Yakunlandi',
-      };
+    _Stage.intro => 'Tanishuv · ${_card + 1}/${widget.lesson.words.length}',
+    _Stage.quiz =>
+      '${_s.round}-bosqich · ${switch (_s.current?.format) {
+        AskFormat.choice => 'ma\'nosini tanlang',
+        AskFormat.produce => 'inglizchasini tanlang',
+        AskFormat.listen => 'eshitib yozing',
+        AskFormat.cloze => 'gapdagi bo\'shliqni to\'ldiring',
+        _ => 'harflab yozing',
+      }}',
+    _Stage.done => 'Yakunlandi',
+  };
 
   // ───────────── 1) Tanishuv ─────────────
   Widget _intro(BuildContext context) {
@@ -196,71 +201,125 @@ class _LessonScreenState extends State<LessonScreen> {
           child: ListView(
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
             children: [
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.fromLTRB(20, 28, 20, 24),
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.surface,
-                  borderRadius: BorderRadius.circular(AppRadius.lg),
-                  border: Border.all(
-                      color: AppColors.brandPurple.withValues(alpha: 0.25),
-                      width: 1.5),
+              // SO'Z KARTASI — gradient chegara (2px), yuqori chapda
+              // yumshoq nur; so'z Manrope bilan katta, gradient rangda.
+              // Har yangi kartada 260 ms "kirish" (fade + slide).
+              AnimatedSwitcher(
+                duration: const Duration(milliseconds: 260),
+                switchInCurve: Curves.easeOutCubic,
+                transitionBuilder: (child, anim) => FadeTransition(
+                  opacity: anim,
+                  child: SlideTransition(
+                    position: Tween(
+                      begin: const Offset(0.06, 0),
+                      end: Offset.zero,
+                    ).animate(anim),
+                    child: child,
+                  ),
                 ),
-                child: Column(
-                  children: [
-                    // Ilgari ko'rilgan so'z "yangi" deb chiqmasin —
-                    // uning xotira bosqichi ko'rinsin (o'sish hissi).
-                    if (mastery.of(w.itemId).isNew)
-                      Text('YANGI SO\'Z',
-                          style: TextStyle(
-                              fontSize: 11.5,
-                              fontWeight: FontWeight.w800,
-                              letterSpacing: 1.2,
-                              color: AppColors.muted(context)))
-                    else
-                      MemoryStageChip(itemId: w.itemId),
-                    const SizedBox(height: 12),
-                    Text(w.en,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w800,
-                            height: 1.2)),
-                    const SizedBox(height: 14),
-                    SpeakButton(text: w.en),
-                    const SizedBox(height: 18),
-                    Text(w.uz,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
+                child: Container(
+                  key: ValueKey(w.itemId),
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(2),
+                  decoration: BoxDecoration(
+                    gradient: AppColors.brandGradient,
+                    borderRadius: BorderRadius.circular(AppRadius.xl),
+                    boxShadow: AppShadow.glow(
+                      AppColors.brandPurple,
+                      alpha: 0.25,
+                    ),
+                  ),
+                  child: Container(
+                    padding: const EdgeInsets.fromLTRB(20, 26, 20, 24),
+                    decoration: BoxDecoration(
+                      color: AppColors.surface(context),
+                      borderRadius: BorderRadius.circular(AppRadius.xl - 2),
+                    ),
+                    child: Column(
+                      children: [
+                        // Ilgari ko'rilgan so'z "yangi" deb chiqmasin —
+                        // uning xotira bosqichi ko'rinsin (o'sish hissi).
+                        if (mastery.of(w.itemId).isNew)
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 12,
+                              vertical: 5,
+                            ),
+                            decoration: BoxDecoration(
+                              gradient: AppColors.brandGradient,
+                              borderRadius: BorderRadius.circular(
+                                AppRadius.pill,
+                              ),
+                            ),
+                            child: const Text(
+                              'YANGI SO\'Z',
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: 1.4,
+                                color: Colors.white,
+                              ),
+                            ),
+                          )
+                        else
+                          MemoryStageChip(itemId: w.itemId),
+                        const SizedBox(height: 14),
+                        GradientText(
+                          w.en,
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.displaySmall
+                              ?.copyWith(fontSize: 38, height: 1.15),
+                        ),
+                        const SizedBox(height: 14),
+                        SpeakButton(text: w.en),
+                        const SizedBox(height: 18),
+                        Text(
+                          w.uz,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
                             fontSize: 21,
                             fontWeight: FontWeight.w700,
                             color: AppColors.brandPurple,
-                            height: 1.3)),
-                    if (mastery.of(w.itemId).hook.isNotEmpty) ...[
-                      const SizedBox(height: 14),
-                      HookBubble(text: mastery.of(w.itemId).hook),
-                    ],
-                    if (w.exampleEn.isNotEmpty) ...[
-                      const SizedBox(height: 22),
-                      Divider(color: AppColors.muted(context).withValues(alpha: 0.3)),
-                      const SizedBox(height: 12),
-                      Text(w.exampleEn,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
+                            height: 1.3,
+                          ),
+                        ),
+                        if (mastery.of(w.itemId).hook.isNotEmpty) ...[
+                          const SizedBox(height: 14),
+                          HookBubble(text: mastery.of(w.itemId).hook),
+                        ],
+                        if (w.exampleEn.isNotEmpty) ...[
+                          const SizedBox(height: 22),
+                          Divider(
+                            color: AppColors.muted(
+                              context,
+                            ).withValues(alpha: 0.3),
+                          ),
+                          const SizedBox(height: 12),
+                          Text(
+                            w.exampleEn,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
-                              height: 1.4)),
-                      if (w.exampleUz.isNotEmpty) ...[
-                        const SizedBox(height: 6),
-                        Text(w.exampleUz,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
+                              height: 1.4,
+                            ),
+                          ),
+                          if (w.exampleUz.isNotEmpty) ...[
+                            const SizedBox(height: 6),
+                            Text(
+                              w.exampleUz,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
                                 fontSize: 14,
                                 height: 1.4,
-                                color: AppColors.muted(context))),
+                                color: AppColors.muted(context),
+                              ),
+                            ),
+                          ],
+                        ],
                       ],
-                    ],
-                  ],
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(height: 18),
@@ -273,20 +332,25 @@ class _LessonScreenState extends State<LessonScreen> {
                   for (var i = 0; i < words.length; i++)
                     Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 5),
+                        horizontal: 10,
+                        vertical: 5,
+                      ),
                       decoration: BoxDecoration(
                         color: i <= _card
                             ? AppColors.brandPurple.withValues(alpha: 0.14)
                             : Theme.of(context).colorScheme.surface,
                         borderRadius: BorderRadius.circular(AppRadius.pill),
                       ),
-                      child: Text(words[i].en,
-                          style: TextStyle(
-                              fontSize: 12.5,
-                              fontWeight: FontWeight.w700,
-                              color: i <= _card
-                                  ? AppColors.brandPurple
-                                  : AppColors.muted(context))),
+                      child: Text(
+                        words[i].en,
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          fontWeight: FontWeight.w700,
+                          color: i <= _card
+                              ? AppColors.brandPurple
+                              : AppColors.muted(context),
+                        ),
+                      ),
                     ),
                 ],
               ),
@@ -300,11 +364,13 @@ class _LessonScreenState extends State<LessonScreen> {
             onPressed: _nextCard,
             child: Center(
               child: Text(
-                  _card + 1 < words.length ? 'Keyingi so\'z' : 'Mashqni boshlash',
-                  style: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                      fontSize: 16)),
+                _card + 1 < words.length ? 'Keyingi so\'z' : 'Mashqni boshlash',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 16,
+                ),
+              ),
             ),
           ),
         ),
@@ -329,17 +395,17 @@ class _LessonScreenState extends State<LessonScreen> {
         Expanded(
           child: switch (q.format) {
             AskFormat.build || AskFormat.listen => BuildTask(
-                key: ValueKey('b${q.itemId}${q.format}${_s.remaining}'),
-                q: q,
-                locked: _result != null,
-                onDone: _answer,
-              ),
+              key: ValueKey('b${q.itemId}${q.format}${_s.remaining}'),
+              q: q,
+              locked: _result != null,
+              onDone: _answer,
+            ),
             _ => ChoiceTask(
-                key: ValueKey('c${q.itemId}${q.format}${_s.remaining}'),
-                q: q,
-                locked: _result != null,
-                onDone: _answer,
-              ),
+              key: ValueKey('c${q.itemId}${q.format}${_s.remaining}'),
+              q: q,
+              locked: _result != null,
+              onDone: _answer,
+            ),
           },
         ),
       ],
@@ -353,17 +419,17 @@ class _Bar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(AppRadius.pill),
-          child: LinearProgressIndicator(
-            value: value.clamp(0.0, 1.0),
-            minHeight: 10,
-            backgroundColor: AppColors.brandPurple.withValues(alpha: 0.15),
-            valueColor: const AlwaysStoppedAnimation<Color>(AppColors.success),
-          ),
-        ),
-      );
+    padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(AppRadius.pill),
+      child: LinearProgressIndicator(
+        value: value.clamp(0.0, 1.0),
+        minHeight: 10,
+        backgroundColor: AppColors.brandPurple.withValues(alpha: 0.15),
+        valueColor: const AlwaysStoppedAnimation<Color>(AppColors.success),
+      ),
+    ),
+  );
 }
 
 /// Dars tugadi.
@@ -401,22 +467,25 @@ class _Finished extends StatelessWidget {
         const SizedBox(height: 20),
         Center(
           child: Icon(
-              rescue
-                  ? Icons.health_and_safety_rounded
-                  : Icons.workspace_premium_rounded,
-              size: 96,
-              color: AppColors.success),
+            rescue
+                ? Icons.health_and_safety_rounded
+                : Icons.workspace_premium_rounded,
+            size: 96,
+            color: AppColors.success,
+          ),
         ),
         const SizedBox(height: 16),
         Center(
           child: Text(
-              rescue
-                  ? '${lesson.words.length} ta so\'z qutqarildi!'
-                  : '${lesson.index}-dars tugadi',
-              style: const TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w800,
-                  color: AppColors.success)),
+            rescue
+                ? '${lesson.words.length} ta so\'z qutqarildi!'
+                : '${lesson.index}-dars tugadi',
+            style: const TextStyle(
+              fontSize: 26,
+              fontWeight: FontWeight.w800,
+              color: AppColors.success,
+            ),
+          ),
         ),
         const SizedBox(height: 6),
         Center(
@@ -426,7 +495,10 @@ class _Finished extends StatelessWidget {
                 : '${lesson.words.length} ta so\'z ${rescue ? 'qutqarildi' : 'o\'rganildi'}. $mistakes ta xato — ular qayta so\'raldi.',
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontSize: 13.5, height: 1.5, color: AppColors.muted(context)),
+              fontSize: 13.5,
+              height: 1.5,
+              color: AppColors.muted(context),
+            ),
           ),
         ),
         const SizedBox(height: 22),
@@ -453,11 +525,14 @@ class _Finished extends StatelessWidget {
           color: AppColors.brandPurple,
           onPressed: onClose,
           child: const Center(
-            child: Text('Davom etish',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 16)),
+            child: Text(
+              'Davom etish',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w800,
+                fontSize: 16,
+              ),
+            ),
           ),
         ),
       ],
