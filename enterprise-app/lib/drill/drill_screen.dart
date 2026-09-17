@@ -8,6 +8,7 @@ import '../mastery.dart';
 import '../services/tts.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
+import '../widgets/hover_lift.dart';
 import '../widgets/pressable3d.dart';
 import 'drill_item.dart';
 import 'drill_session.dart';
@@ -259,35 +260,32 @@ class _ChoiceTaskState extends State<ChoiceTask> {
           ),
         ),
         const SizedBox(height: 14),
-        for (final o in q.options)
+        for (var i = 0; i < q.options.length; i++)
           Padding(
-            padding: const EdgeInsets.only(bottom: 9),
-            child: Pressable3D(
-              color: _color(o),
-              onPressed: widget.locked
+            padding: const EdgeInsets.only(bottom: 10),
+            child: OptionTile(
+              index: i,
+              text: q.options[i],
+              state: _picked == null
+                  ? OptionState.idle
+                  : sameAnswer(q.options[i], q.answer)
+                      ? OptionState.right
+                      : q.options[i] == _picked
+                          ? OptionState.wrong
+                          : OptionState.dim,
+              onTap: widget.locked
                   ? null
                   : () {
-                      setState(() => _picked = o);
-                      widget.onDone(sameAnswer(o, q.answer));
+                      setState(() => _picked = q.options[i]);
+                      widget.onDone(sameAnswer(q.options[i], q.answer));
                     },
-              child: Center(
-                child: Text(o,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w700,
-                        color: _picked == o ? Colors.white : null)),
-              ),
             ),
           ),
       ],
     );
   }
 
-  Color _color(String o) {
-    if (_picked != o) return Theme.of(context).colorScheme.surface;
-    return sameAnswer(o, widget.q.answer) ? AppColors.success : AppColors.danger;
-  }
+
 }
 
 /// MOSLASh O'YINI — bir necha juftni bir ekranda.
@@ -766,3 +764,111 @@ class SpeakButton extends StatelessWidget {
 bool sameAnswer(String a, String b) =>
     a.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ') ==
     b.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
+
+
+enum OptionState { idle, right, wrong, dim }
+
+/// JAVOB PLITKASI — raqamli belgi (1-4), katta matn, hover'da ko'tariladi;
+/// to'g'ri — yashil gradient + belgi, xato — qizil, qolganlari xiralashadi.
+class OptionTile extends StatelessWidget {
+  final int index;
+  final String text;
+  final OptionState state;
+  final VoidCallback? onTap;
+  const OptionTile({
+    super.key,
+    required this.index,
+    required this.text,
+    required this.state,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final surface = AppColors.surface(context);
+    final (Color bg, Color fg, Color border) = switch (state) {
+      OptionState.idle => (surface, Theme.of(context).textTheme.bodyLarge!.color!, AppColors.border(context)),
+      OptionState.right => (AppColors.success, Colors.white, AppColors.success),
+      OptionState.wrong => (AppColors.danger, Colors.white, AppColors.danger),
+      OptionState.dim => (surface, AppColors.muted(context), AppColors.border(context)),
+    };
+    final badgeBg = switch (state) {
+      OptionState.idle => AppColors.brandPurple.withValues(alpha: 0.12),
+      OptionState.dim => AppColors.border(context),
+      _ => Colors.white.withValues(alpha: 0.25),
+    };
+    final badgeFg = switch (state) {
+      OptionState.idle => AppColors.brandPurple,
+      OptionState.dim => AppColors.muted(context),
+      _ => Colors.white,
+    };
+    return AnimatedOpacity(
+      duration: const Duration(milliseconds: 180),
+      opacity: state == OptionState.dim ? 0.55 : 1,
+      child: AnimatedScale(
+        duration: const Duration(milliseconds: 240),
+        curve: Curves.easeOutBack,
+        scale: state == OptionState.right ? 1.02 : (state == OptionState.wrong ? 0.98 : 1),
+        child: HoverLift(
+          enabled: onTap != null,
+          hoverScale: 1.01,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 180),
+            decoration: BoxDecoration(
+              color: bg,
+              borderRadius: BorderRadius.circular(AppRadius.lg),
+              border: Border.all(color: border, width: 1.5),
+              boxShadow: state == OptionState.idle
+                  ? AppShadow.card(context)
+                  : state == OptionState.right
+                      ? AppShadow.glow(AppColors.success, alpha: 0.45)
+                      : const [],
+            ),
+            child: Material(
+              type: MaterialType.transparency,
+              child: InkWell(
+                borderRadius: BorderRadius.circular(AppRadius.lg),
+                onTap: onTap,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 30,
+                        height: 30,
+                        decoration: BoxDecoration(
+                          color: badgeBg,
+                          borderRadius: BorderRadius.circular(9),
+                        ),
+                        child: Center(
+                          child: state == OptionState.right
+                              ? Icon(Icons.check_rounded, size: 18, color: badgeFg)
+                              : state == OptionState.wrong
+                                  ? Icon(Icons.close_rounded, size: 18, color: badgeFg)
+                                  : Text('${index + 1}',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w900,
+                                          fontSize: 13,
+                                          color: badgeFg)),
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(text,
+                            style: TextStyle(
+                                fontSize: 16.5,
+                                fontWeight: FontWeight.w700,
+                                height: 1.3,
+                                color: fg)),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

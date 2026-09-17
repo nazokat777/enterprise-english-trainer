@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../../book_content.dart';
 import '../../content.dart';
+import '../../drill/drill_screen.dart' show OptionTile, OptionState;
 import '../../main.dart';
 import '../../stats.dart';
 import '../../theme.dart';
@@ -980,7 +981,21 @@ class _ChoiceStageState extends State<_ChoiceStage> {
           EntranceFade(
             delay: Duration(milliseconds: 60 * i),
             offsetY: 12,
-            child: _tile(_options[i]),
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: OptionTile(
+                index: i,
+                text: _options[i],
+                state: _chosen == null
+                    ? OptionState.idle
+                    : t.isCorrect(_options[i])
+                        ? OptionState.right
+                        : _options[i] == _chosen
+                            ? OptionState.wrong
+                            : OptionState.dim,
+                onTap: _chosen == null ? () => _tap(_options[i]) : null,
+              ),
+            ),
           ),
         if (_chosen != null && t.whyUz.isNotEmpty) ...[
           const SizedBox(height: 6),
@@ -990,56 +1005,6 @@ class _ChoiceStageState extends State<_ChoiceStage> {
     );
   }
 
-  Widget _tile(String o) {
-    Color border = Colors.black12;
-    Color? text;
-    if (_chosen != null) {
-      if (widget.task.isCorrect(o)) {
-        border = AppColors.success;
-        text = AppColors.success;
-      } else if (o == _chosen) {
-        border = AppColors.danger;
-        text = AppColors.danger;
-      }
-    }
-    final picked = _chosen == o;
-    final isRight = _chosen != null && widget.task.isCorrect(o);
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
-      child: AnimatedScale(
-        // Tanlangan to'g'ri variant "sakraydi", xato — sal kichrayadi.
-        scale: picked ? (isRight ? 1.04 : 0.97) : 1,
-        duration: const Duration(milliseconds: 260),
-        curve: Curves.easeOutBack,
-        child: Material(
-          color: isRight
-              ? AppColors.success.withValues(alpha: 0.10)
-              : Theme.of(context).colorScheme.surface,
-          borderRadius: BorderRadius.circular(AppRadius.md),
-          child: InkWell(
-            borderRadius: BorderRadius.circular(AppRadius.md),
-            onTap: _chosen == null ? () => _tap(o) : null,
-            child: Container(
-              width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppRadius.md),
-                border: Border.all(color: border, width: 1.8),
-              ),
-              child: Text(
-                o,
-                style: TextStyle(
-                  fontWeight: FontWeight.w700,
-                  fontSize: 15,
-                  color: text,
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
 }
 
 /// Javobdan keyingi "nega shunday" izohi.
