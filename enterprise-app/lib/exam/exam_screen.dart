@@ -271,37 +271,58 @@ class _ExamScreenState extends State<ExamScreen> {
         ListView(
           padding: const EdgeInsets.all(24),
           children: [
-            const SizedBox(height: 12),
-            Center(
-                child: Text(passed ? '🏅' : '💪',
-                    style: const TextStyle(fontSize: 64))),
-            const SizedBox(height: 8),
-            Center(
-              child: Text(
-                  passed ? 'Imtihondan o\'tdingiz!' : 'Hali mustahkam emas',
-                  style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w900,
-                      color: passed ? AppColors.success : AppColors.homework)),
-            ),
-            const SizedBox(height: 6),
-            Center(
-              child: TweenAnimationBuilder<int>(
-                tween: IntTween(begin: 0, end: r.score),
-                duration: const Duration(milliseconds: 900),
-                builder: (context, v, _) => Text('$v%',
-                    style: TextStyle(
-                        fontSize: 56,
-                        fontWeight: FontWeight.w900,
-                        color: passed ? AppColors.success : AppColors.homework)),
+            // NATIJA KARTASI — o'tgan: oltin gradient; o'tmagan: olov.
+            Container(
+              padding: const EdgeInsets.fromLTRB(22, 24, 22, 22),
+              decoration: BoxDecoration(
+                gradient: passed
+                    ? AppColors.goldGradient
+                    : const LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [Color(0xFFF97316), Color(0xFFEA580C), Color(0xFFDB2777)]),
+                borderRadius: BorderRadius.circular(AppRadius.xl),
+                boxShadow: AppShadow.glow(
+                    passed ? AppColors.coin : AppColors.homework, alpha: 0.45),
               ),
-            ),
-            Center(
-              child: Text(
-                  '${_firstTryOk.length}/${r.total} birinchi urinishda · '
-                  '${weak.length} ta band qayta so\'raldi',
-                  style: TextStyle(
-                      fontSize: 13, color: AppColors.muted(context))),
+              child: Column(
+                children: [
+                  TweenAnimationBuilder<double>(
+                    tween: Tween(begin: 0, end: 1),
+                    duration: const Duration(milliseconds: 700),
+                    curve: Curves.elasticOut,
+                    builder: (_, v, child) => Transform.scale(scale: v, child: child),
+                    child: Text(passed ? '🏅' : '💪',
+                        style: const TextStyle(fontSize: 60)),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(passed ? 'Imtihondan o\'tdingiz!' : 'Hali mustahkam emas',
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: -0.3,
+                          color: Colors.white)),
+                  TweenAnimationBuilder<int>(
+                    tween: IntTween(begin: 0, end: r.score),
+                    duration: const Duration(milliseconds: 900),
+                    builder: (context, v, _) => Text('$v%',
+                        style: const TextStyle(
+                            fontSize: 60,
+                            height: 1.1,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.white)),
+                  ),
+                  Text(
+                      '${_firstTryOk.length}/${r.total} birinchi urinishda · '
+                      '${weak.length} ta band qayta so\'raldi',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white.withValues(alpha: 0.9))),
+                ],
+              ),
             ),
             const SizedBox(height: 20),
             if (weak.isEmpty)
