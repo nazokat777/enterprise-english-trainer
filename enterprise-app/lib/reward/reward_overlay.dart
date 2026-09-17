@@ -947,7 +947,7 @@ class _ChestModalState extends State<_ChestModal>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    widget.big ? 'KATTA SANDIQ!' : 'SIRLI SANDIQ',
+                    widget.big ? 'MEGA BONUS' : 'BONUS BOX',
                     style: TextStyle(
                       color: AppColors.muted(context),
                       fontWeight: FontWeight.w800,
@@ -985,7 +985,7 @@ class _ChestModalState extends State<_ChestModal>
                     Text(
                       _opening
                           ? 'Ochilmoqda...'
-                          : 'Ochish uchun sandiqni bosing',
+                          : 'Ochish uchun bosing',
                       style: const TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 16,
@@ -994,7 +994,7 @@ class _ChestModalState extends State<_ChestModal>
                     const SizedBox(height: 6),
                     Text(
                       widget.big
-                          ? 'Bugungi uchala topshiriq bajarildi!'
+                          ? 'Bugungi uchala missiya bajarildi!'
                           : 'Ketma-ket to\'g\'ri javoblar uchun',
                       textAlign: TextAlign.center,
                       style: TextStyle(

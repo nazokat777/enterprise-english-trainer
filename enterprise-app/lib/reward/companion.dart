@@ -19,16 +19,16 @@ class MascotStage {
   const MascotStage(this.emoji, this.name, this.minLevel);
 
   static const List<MascotStage> stages = [
-    // Uchqundan galaktikagacha — "bilim yorug'ligi" metaforasi:
-    // har daraja hamrohni yorqinroq qiladi.
-    MascotStage('✨', 'Uchqun', 1),
-    MascotStage('⭐', 'Yulduzcha', 2),
-    MascotStage('🌟', 'Yorqin yulduz', 4),
-    MascotStage('💫', 'Kometa', 7),
-    MascotStage('🌠', 'Meteor', 10),
-    MascotStage('🪐', 'Sayyora', 15),
-    MascotStage('☀️', 'Quyosh', 22),
-    MascotStage('🌌', 'Galaktika', 30),
+    // AVATAR darajalari — xalqaro, brendga mos nomlar. Har daraja
+    // avatarni yorqinroq qiladi ("bilim - yorug'lik").
+    MascotStage('✨', 'Spark', 1),
+    MascotStage('⭐', 'Star', 2),
+    MascotStage('🌟', 'Nova', 4),
+    MascotStage('💫', 'Comet', 7),
+    MascotStage('🌠', 'Orbit', 10),
+    MascotStage('🪐', 'Aurora', 15),
+    MascotStage('☀️', 'Nebula', 22),
+    MascotStage('🌌', 'Cosmos', 30),
   ];
 
   static MascotStage forLevel(int level) {
@@ -75,13 +75,13 @@ String mascotLine(Random rng) {
       pool.addAll([
         'Yaxshi ketyapmiz! Yana ${r.xpToNext} XP — keyingi daraja.',
         'Bugun ${r.todayCorrect} ta to\'g\'ri. Davom!',
-        'Kunlik topshiriqlar seni kutyapti 🎯',
+        'Bugungi missiyalar seni kutyapti 🎯',
         if (r.spinAvailable)
-          "G'ildirak tayyor — aylantir! 🎡"
+          "Lucky Spin tayyor — aylantir! 🎡"
         else if (!r.spinDoneToday)
-          "Yana ${r.spinRemaining} ta to'g'ri javob — g'ildirak ochiladi."
+          "Yana ${r.spinRemaining} ta to'g'ri javob — Lucky Spin ochiladi."
         else
-          "Ertaga yana g'ildirak bor. Bugun yana bitta mashq?",
+          "Ertaga yana Lucky Spin bor. Bugun yana bitta mashq?",
       ]);
     case Mood.happy:
       pool.addAll([
@@ -97,7 +97,7 @@ String mascotLine(Random rng) {
         'Hozir eng yaxshi paytimiz — davom!',
       ]);
   }
-  if (r.isHappyHour) pool.add('BAXTLI SOAT — hamma XP ikki barobar! ⚡⚡');
+  if (r.isHappyHour) pool.add('POWER HOUR — hamma XP ikki barobar! ⚡⚡');
   return pool[rng.nextInt(pool.length)];
 }
 
@@ -480,8 +480,8 @@ class _HappyHourBadgeState extends State<HappyHourBadge> {
     final color = on ? const Color(0xFFDC2626) : AppColors.coin;
     return Tooltip(
       message: on
-          ? 'Baxtli soat: hamma XP ×2 — ${_fmt(r.happyHourCountdown)} qoldi'
-          : 'Baxtli soat (×2 XP) ${r.happyHour}:00 da — ${_fmt(r.happyHourCountdown)}',
+          ? 'Power Hour: hamma XP x2 — ${_fmt(r.happyHourCountdown)} qoldi'
+          : 'Power Hour (x2 XP) ${r.happyHour}:00 da — ${_fmt(r.happyHourCountdown)}',
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
         decoration: BoxDecoration(
@@ -549,7 +549,7 @@ class SpinCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(ready ? 'Kunlik g\'ildirak tayyor!' : 'Kunlik g\'ildirak',
+                      Text(ready ? 'Lucky Spin tayyor!' : 'Lucky Spin',
                           style: TextStyle(
                               fontWeight: FontWeight.w900, fontSize: 14, color: color)),
                       Text(
@@ -767,7 +767,7 @@ class _WheelPainter extends CustomPainter {
 
 // ═══════════════════ TANIShUV (onboarding) ═══════════════════
 
-/// Birinchi ochilishda: uchqun "yonadi", o'quvchi unga ISM qo'yadi.
+/// Birinchi ochilishda: avatar "yonadi", o'quvchi unga ISM qo'yadi.
 /// O'zi nomlagan narsa — o'ziniki (IKEA effekti). Ism keyin hamma
 /// gaplarda ishlatiladi.
 class OnboardingSheet extends StatefulWidget {
@@ -795,7 +795,7 @@ class _OnboardingSheetState extends State<OnboardingSheet>
   late final AnimationController _c =
       AnimationController(vsync: this, duration: const Duration(milliseconds: 1200))
         ..repeat(reverse: true, count: 12);
-  static const _suggest = ['Bilimjon', 'Zukko', 'Ozod', 'Nodir', 'Lola', 'Umid'];
+  static const _suggest = ['Nova', 'Leo', 'Aria', 'Max', 'Luna', 'Kai'];
 
   @override
   void dispose() {
@@ -833,12 +833,12 @@ class _OnboardingSheetState extends State<OnboardingSheet>
               child: const Text('✨', style: TextStyle(fontSize: 84)),
             ),
             const SizedBox(height: 10),
-            const Text('Sizga hamroh uchqun keldi!',
+            const Text('Avataringiz tayyor!',
                 style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22)),
             const SizedBox(height: 6),
             Text(
-              'Siz o\'rgangan sari u yonadi: yulduz, kometa, sayyora... '
-              'galaktikagacha. Unga ism qo\'ying.',
+              'Siz o\'rgangan sari u rivojlanadi: Spark - Star - Nova - '
+              'Comet... Cosmos darajasigacha. Unga ism bering.',
               textAlign: TextAlign.center,
               style: TextStyle(color: AppColors.muted(context), fontSize: 14),
             ),
@@ -850,7 +850,7 @@ class _OnboardingSheetState extends State<OnboardingSheet>
               maxLength: 14,
               onSubmitted: (_) => _done(),
               decoration: InputDecoration(
-                hintText: 'Hamroh ismi',
+                hintText: 'Avatar ismi',
                 counterText: '',
                 filled: true,
                 border: OutlineInputBorder(
@@ -909,7 +909,7 @@ class SessionRecapDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final name = rewards.petName.isNotEmpty ? rewards.petName : 'Hamrohingiz';
+    final name = rewards.petName.isNotEmpty ? rewards.petName : 'Avataringiz';
     final st = MascotStage.forLevel(rewards.level);
     final great = r.accuracy >= 85;
     final line = great

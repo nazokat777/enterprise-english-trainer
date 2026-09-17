@@ -784,7 +784,7 @@ class RewardEngine extends ChangeNotifier {
     Achievement('streak3', '3 kun', '3 kunlik streak', '🌱'),
     Achievement('streak7', 'Bir hafta', '7 kunlik streak', '🔥'),
     Achievement('streak30', 'Bir oy', '30 kunlik streak', '🌙'),
-    Achievement('chest10', 'Xazina izlovchi', '10 ta sandiq', '🎁'),
+    Achievement('chest10', 'Bonus ovchisi', '10 ta bonus box', '🎁'),
     Achievement('crit25', 'Omadli', '25 ta KRIT', '🍀'),
     Achievement('day200', 'Kuchli kun', 'Bir kunda 200 XP', '🌞'),
     Achievement('owl', 'Tungi boyqush', 'Kechasi 23:00 dan keyin mashq', '🦉'),

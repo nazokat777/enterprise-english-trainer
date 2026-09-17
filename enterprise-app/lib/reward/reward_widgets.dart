@@ -313,10 +313,10 @@ class DailyQuestsCard extends StatelessWidget {
                   const Text('🎯', style: TextStyle(fontSize: 18)),
                   const SizedBox(width: 8),
                   const Expanded(
-                    child: Text('Bugungi topshiriqlar',
+                    child: Text('Bugungi missiyalar',
                         style: TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
                   ),
-                  Text(done == all ? '🎁 sandiq ochildi' : '$done / $all  ·  🎁',
+                  Text(done == all ? '🎁 bonus ochildi' : '$done / $all  ·  🎁',
                       style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w700,
@@ -429,7 +429,7 @@ class AchievementsScreen extends StatelessWidget {
                         Text(
                             '${r.level}-daraja · ${r.title}\n'
                             '${r.correctTotal} to\'g\'ri · rekord kombo ${r.bestCombo} · '
-                            '${r.chestsOpened} sandiq',
+                            '${r.chestsOpened} bonus',
                             style: const TextStyle(color: Colors.white70, fontSize: 12)),
                       ],
                     ),

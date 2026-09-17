@@ -104,22 +104,22 @@ class HelpScreen extends StatelessWidget {
         'Har to\'g\'ri javobda 12 % ehtimol bilan KRIT — XP ikki barobar. '
             'Ba\'zi savollar oldindan "oltin" deb e\'lon qilinadi — to\'g\'ri '
             'javob 3 barobar XP.'),
-    ('📦', 'Sirli sandiq',
-        'Har 5–9 ta to\'g\'ri javobdan keyin sandiq keladi: bosib oching — '
+    ('🎁', 'Bonus box',
+        'Har 5-9 ta to\'g\'ri javobdan keyin bonus box keladi: bosib oching - '
             'tanga, XP yoki streak muzlatgich. Streak 3/7/14/30 kunda ham '
-            'sandiq beriladi.'),
-    ('🎯', 'Kunlik topshiriqlar',
-        'Har kuni 3 ta topshiriq. Uchalasi bajarilsa — katta sandiq.'),
-    ('🎡', 'Kunlik g\'ildirak',
+            'bonus beriladi.'),
+    ('🎯', 'Kunlik missiyalar',
+        'Har kuni 3 ta missiya. Uchalasi bajarilsa - mega bonus.'),
+    ('🎡', 'Lucky Spin',
         'Kuniga bir marta, 5 ta to\'g\'ri javobdan keyin ochiladi. 100 '
             'tangagacha yutish mumkin.'),
-    ('⏰', 'Baxtli soat',
-        'Har kuni bitta soat (yuqori paneldagi belgi ko\'rsatadi) — hamma XP '
+    ('⚡', 'Power Hour',
+        'Har kuni bitta soat (yuqori paneldagi belgi ko\'rsatadi) - hamma XP '
             'ikki barobar.'),
-    ('✨', 'Hamroh',
-        'Sizga ism qo\'yiladigan hamroh beriladi. Darajangiz oshgan sari u '
-            'yonadi: uchqun - yulduz - kometa - ... - galaktika. Bugun mashq qilmasangiz '
-            'uxlab qoladi.'),
+    ('✨', 'Avatar',
+        'Sizga ism beriladigan avatar beriladi. Darajangiz oshgan sari u '
+            'rivojlanadi: Spark - Star - Nova - Comet - Orbit - Aurora - Nebula - '
+            'Cosmos. Bugun mashq qilmasangiz uxlab qoladi.'),
     ('🏆', 'Yutuqlar',
         '29 ta medal: birinchi mashq, 100 to\'g\'ri javob, 10 lik kombo, 7 '
             'kunlik streak va h.k. Sozlamalar - Yutuqlar, yoki yuqoridagi '

@@ -724,10 +724,12 @@ class DrillCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Container(
         width: double.infinity,
-        padding: const EdgeInsets.all(18),
+        padding: const EdgeInsets.fromLTRB(20, 22, 20, 22),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
-          borderRadius: BorderRadius.circular(AppRadius.lg),
+          color: AppColors.surface(context),
+          borderRadius: BorderRadius.circular(AppRadius.xl),
+          border: Border.all(color: AppColors.border(context)),
+          boxShadow: AppShadow.card(context),
         ),
         child: child,
       );
@@ -738,16 +740,23 @@ class SpeakButton extends StatelessWidget {
   const SpeakButton({super.key, required this.text});
 
   @override
-  Widget build(BuildContext context) => Material(
-        color: AppColors.actionBlue,
-        shape: const CircleBorder(),
-        child: InkWell(
-          customBorder: const CircleBorder(),
-          onTap: () => Tts.instance.speak(text, id: text),
-          child: const SizedBox(
-            width: 52,
-            height: 52,
-            child: Icon(Icons.volume_up_rounded, color: Colors.white, size: 24),
+  Widget build(BuildContext context) => Container(
+        decoration: BoxDecoration(
+          gradient: AppColors.brandGradient,
+          shape: BoxShape.circle,
+          boxShadow: AppShadow.glow(AppColors.brandIndigo, alpha: 0.4),
+        ),
+        child: Material(
+          color: Colors.transparent,
+          shape: const CircleBorder(),
+          child: InkWell(
+            customBorder: const CircleBorder(),
+            onTap: () => Tts.instance.speak(text, id: text),
+            child: const SizedBox(
+              width: 56,
+              height: 56,
+              child: Icon(Icons.volume_up_rounded, color: Colors.white, size: 26),
+            ),
           ),
         ),
       );
