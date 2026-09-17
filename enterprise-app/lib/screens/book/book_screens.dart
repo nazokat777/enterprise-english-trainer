@@ -346,44 +346,19 @@ class _WordsButton extends StatelessWidget {
     if (lessons.isEmpty) return const SizedBox.shrink();
     final done = lessons.where((l) => mastery.allStrong(l.itemIds)).length;
     final words = lessons.fold(0, (s, l) => s + l.words.length);
-    return Column(
-      children: [
-        Pressable3D(
-          color: AppColors.brandPurple,
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
-          onPressed: () => Navigator.push(
-            context,
-            MaterialPageRoute(builder: (_) => LessonsScreen(unit: unit)),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(Icons.school_rounded, color: Colors.white, size: 22),
-              const SizedBox(width: 10),
-              Flexible(
-                child: Text(
-                  done >= lessons.length
-                      ? 'So\'zlar — hammasi o\'rganildi ($words)'
-                      : 'So\'zlarni o\'rganish — $done/${lessons.length} dars',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 16,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 6),
-        Text(
-          '$words ta so\'z, har darsda $kLessonSize tacha: avval ko\'rsatiladi, '
-          'so\'ng tanlash va harflab yozish.',
-          textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
-        ),
-      ],
+    return BentoTile(
+      gradient: AppColors.brandGradient,
+      icon: Icons.school_rounded,
+      title: done >= lessons.length
+          ? 'So\'zlar o\'rganildi'
+          : 'So\'zlarni o\'rganish',
+      subtitle: '$words ta so\'z · ${lessons.length} dars',
+      progress: lessons.isEmpty ? 0 : done / lessons.length,
+      progressLabel: '$done/${lessons.length}',
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => LessonsScreen(unit: unit)),
+      ),
     );
   }
 }
@@ -420,46 +395,137 @@ class _MasterButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ids = sourcesFromUnit(unit).map((e) => e.itemId).toList();
-    final pct = (mastery.ratio(ids) * 100).round();
-    return Column(
-      children: [
-        Pressable3D(
-          color: AppColors.success,
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
-          onPressed: () => _start(context),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(
-                Icons.psychology_rounded,
-                color: Colors.white,
-                size: 22,
-              ),
-              const SizedBox(width: 10),
-              Flexible(
-                child: Text(
-                  pct >= 100
-                      ? 'Mashqlar treningi — takrorlash (100%)'
-                      : 'Mashqlar treningi — $pct%',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 16,
+    final ratio = mastery.ratio(ids);
+    final pct = (ratio * 100).round();
+    return BentoTile(
+      gradient: AppColors.successGradient,
+      icon: Icons.psychology_rounded,
+      title: pct >= 100 ? 'Trening - takrorlash' : 'Mashqlar treningi',
+      subtitle: '${ids.length} band · 100% gacha qaytadi',
+      progress: ratio,
+      progressLabel: '$pct%',
+      onTap: () => _start(context),
+    );
+  }
+}
+
+/// BENTO PLITKA — gradient fon, katta ikonka, sarlavha, progress halqa.
+/// Ikki asosiy yo'l ("So'zlar" va "Trening") yonma-yon turadi.
+class BentoTile extends StatelessWidget {
+  final Gradient gradient;
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final double progress;
+  final String progressLabel;
+  final VoidCallback onTap;
+  const BentoTile({
+    super.key,
+    required this.gradient,
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.progress,
+    required this.progressLabel,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final first = gradient.colors.first;
+    return HoverLift(
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadius.xl),
+          onTap: onTap,
+          child: Ink(
+            decoration: BoxDecoration(
+              gradient: gradient,
+              borderRadius: BorderRadius.circular(AppRadius.xl),
+              boxShadow: AppShadow.glow(first, alpha: 0.4),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        width: 40,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          color: Colors.white.withValues(alpha: 0.2),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Icon(icon, color: Colors.white, size: 22),
+                      ),
+                      const Spacer(),
+                      SizedBox(
+                        width: 44,
+                        height: 44,
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            TweenAnimationBuilder<double>(
+                              tween: Tween(begin: 0, end: progress.clamp(0, 1)),
+                              duration: const Duration(milliseconds: 900),
+                              curve: Curves.easeOutCubic,
+                              builder: (_, v, _) => CircularProgressIndicator(
+                                value: v,
+                                strokeWidth: 4,
+                                strokeCap: StrokeCap.round,
+                                backgroundColor: Colors.white.withValues(
+                                  alpha: 0.25,
+                                ),
+                                valueColor: const AlwaysStoppedAnimation(
+                                  Colors.white,
+                                ),
+                              ),
+                            ),
+                            Text(
+                              progressLabel,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.w900,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                ),
+                  const SizedBox(height: 14),
+                  Text(
+                    title,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900,
+                      fontSize: 17,
+                      height: 1.15,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    subtitle,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: Colors.white.withValues(alpha: 0.85),
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
-        const SizedBox(height: 6),
-        Text(
-          'Kitob mashqlari bo\'yicha savollar: 100% bo\'lgunicha qaytadi, '
-          'so\'ng oldingi darslar bilan aralash takror.',
-          textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
-        ),
-      ],
+      ),
     );
   }
 }
@@ -703,11 +769,27 @@ class BookUnitScreen extends StatelessWidget {
             // oldingi darslar bilan aralash takror.
             // 1) SO'ZLAR — Duolingo uslubidagi kichik darslar. Avval
             //    ko'rsatiladi, keyin so'raladi. Bu asosiy yo'l.
-            _WordsButton(unit: unit),
-            const SizedBox(height: 10),
-            // 2) Mashqlar treningi — kitob mashqlari bo'yicha.
-            _MasterButton(unit: unit),
-            const SizedBox(height: 10),
+            // BENTO: ikki asosiy yo'l yonma-yon (keng ekranda), telefonda
+            // ustma-ust — "nima qilay?" degan savolga bitta qarashda javob.
+            LayoutBuilder(
+              builder: (context, c) {
+                final wide = c.maxWidth >= 560;
+                final a = _WordsButton(unit: unit);
+                final b = _MasterButton(unit: unit);
+                if (!wide) {
+                  return Column(children: [a, const SizedBox(height: 10), b]);
+                }
+                return Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(child: a),
+                    const SizedBox(width: 12),
+                    Expanded(child: b),
+                  ],
+                );
+              },
+            ),
+            const SizedBox(height: 12),
             // 3) Diktant — tinglab gap yig'ish (tinglash + imlo).
             _DictationButton(unit: unit),
             const SizedBox(height: 10),
