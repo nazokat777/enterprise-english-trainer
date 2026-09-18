@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../main.dart';
 import '../content.dart';
 import '../theme.dart';
+import '../widgets/hover_lift.dart';
 import '../widgets/entrance.dart';
 import 'hard_words_screen.dart';
 import 'unit_screen.dart';
@@ -27,11 +28,16 @@ class UnitsScreen extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.hourglass_empty_rounded,
-                size: 48, color: AppColors.homework),
+            const Icon(
+              Icons.hourglass_empty_rounded,
+              size: 48,
+              color: AppColors.homework,
+            ),
             const SizedBox(height: 12),
-            Text('Bu daraja uchun kontent hali yo\'q (OCR kerak).',
-                style: AppTheme.body(context)),
+            Text(
+              'Bu daraja uchun kontent hali yo\'q (OCR kerak).',
+              style: AppTheme.body(context),
+            ),
           ],
         ),
       );
@@ -55,7 +61,9 @@ class UnitsScreen extends StatelessWidget {
                   'So\'zlarni takrorlash bilan yodlash — har bir unit '
                   'uchun alohida paketlar',
                   style: TextStyle(
-                      fontSize: 12.5, color: AppColors.muted(context)),
+                    fontSize: 12.5,
+                    color: AppColors.muted(context),
+                  ),
                 ),
                 const SizedBox(height: 10),
                 // TAKRORLASh VAQTI — SM-2 jadvali bo'yicha muddati
@@ -108,30 +116,37 @@ class _DueBanner extends StatelessWidget {
           padding: const EdgeInsets.all(15),
           child: Row(
             children: [
-              const Icon(Icons.history_rounded,
-                  color: AppColors.success, size: 24),
+              const Icon(
+                Icons.history_rounded,
+                color: AppColors.success,
+                size: 24,
+              ),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Takrorlash vaqti keldi',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w800,
-                            fontSize: 15,
-                            color: AppColors.success)),
+                    const Text(
+                      'Takrorlash vaqti keldi',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 15,
+                        color: AppColors.success,
+                      ),
+                    ),
                     const SizedBox(height: 2),
                     Text(
                       '$count ta so\'z — ularni unutib qo\'ymaslik uchun '
                       'hozir takrorlang',
                       style: TextStyle(
-                          fontSize: 12.5, color: AppColors.muted(context)),
+                        fontSize: 12.5,
+                        color: AppColors.muted(context),
+                      ),
                     ),
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded,
-                  color: AppColors.success),
+              const Icon(Icons.chevron_right_rounded, color: AppColors.success),
             ],
           ),
         ),
@@ -153,88 +168,114 @@ class _UnitNode extends StatelessWidget {
     final pct = packs.isEmpty ? 0.0 : done / packs.length;
     final complete = packs.isNotEmpty && done == packs.length;
 
-    return PressableScale(
+    return HoverLift(
       child: Padding(
         padding: const EdgeInsets.only(bottom: 12),
-        child: Material(
-          color: Theme.of(context).colorScheme.surface,
-          borderRadius: BorderRadius.circular(AppRadius.lg),
-          child: InkWell(
+        child: Container(
+          decoration: BoxDecoration(
+            color: AppColors.surface(context),
             borderRadius: BorderRadius.circular(AppRadius.lg),
-            onTap: () => Navigator.push(context,
-                MaterialPageRoute(builder: (_) => UnitScreen(unit: unit))),
-            child: Container(
-              padding: const EdgeInsets.all(14),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppRadius.lg),
-                boxShadow: [
-                  BoxShadow(
-                      color: Colors.black.withValues(alpha: dark ? 0.3 : 0.05),
-                      blurRadius: 10),
-                ],
+            border: Border.all(color: AppColors.border(context)),
+            boxShadow: AppShadow.card(context),
+          ),
+          child: Material(
+            type: MaterialType.transparency,
+            child: InkWell(
+              borderRadius: BorderRadius.circular(AppRadius.lg),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => UnitScreen(unit: unit)),
               ),
-              child: Row(
-                children: [
-                  // Progress-ring tugun (game-map node).
-                  SizedBox(
-                    width: 54,
-                    height: 54,
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        SizedBox(
-                          width: 54,
-                          height: 54,
-                          child: CircularProgressIndicator(
-                            value: pct,
-                            strokeWidth: 5,
-                            backgroundColor:
-                                AppColors.neutralShadow.withValues(alpha: 0.4),
-                            valueColor: AlwaysStoppedAnimation(
-                                complete ? AppColors.success : AppColors.brandPurple),
+              child: Padding(
+                padding: const EdgeInsets.all(14),
+                child: Row(
+                  children: [
+                    // Progress-ring tugun (game-map node).
+                    SizedBox(
+                      width: 54,
+                      height: 54,
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          SizedBox(
+                            width: 54,
+                            height: 54,
+                            child: CircularProgressIndicator(
+                              value: pct,
+                              strokeWidth: 5,
+                              strokeCap: StrokeCap.round,
+                              backgroundColor: AppColors.brandPurple.withValues(
+                                alpha: 0.12,
+                              ),
+                              valueColor: AlwaysStoppedAnimation(
+                                complete
+                                    ? AppColors.success
+                                    : AppColors.brandPurple,
+                              ),
+                            ),
                           ),
-                        ),
-                        complete
-                            ? const Icon(Icons.check_rounded,
-                                color: AppColors.success, size: 26)
-                            : Text('${unit.order}',
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.w800, fontSize: 18)),
-                      ],
+                          GradientBadge(
+                            size: 38,
+                            gradient: complete
+                                ? AppColors.successGradient
+                                : AppColors.brandGradient,
+                            child: complete
+                                ? const Icon(
+                                    Icons.check_rounded,
+                                    color: Colors.white,
+                                    size: 22,
+                                  )
+                                : Text(
+                                    '${unit.order}',
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  const SizedBox(width: 14),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Text(unit.code,
+                    const SizedBox(width: 14),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                unit.code,
                                 style: TextStyle(
-                                    fontWeight: FontWeight.w800,
-                                    fontSize: 16,
-                                    color: dark
-                                        ? AppColors.darkHeading
-                                        : AppColors.lightHeading)),
-                            if (unit.isRevision) ...[
-                              const SizedBox(width: 8),
-                              _tag('Revision', AppColors.homework),
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 16,
+                                  color: dark
+                                      ? AppColors.darkHeading
+                                      : AppColors.lightHeading,
+                                ),
+                              ),
+                              if (unit.isRevision) ...[
+                                const SizedBox(width: 8),
+                                _tag('Revision', AppColors.homework),
+                              ],
                             ],
-                          ],
-                        ),
-                        const SizedBox(height: 2),
-                        Text('${unit.wordCount} so\'z · $done/${packs.length} pack',
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            '${unit.wordCount} so\'z · $done/${packs.length} pack',
                             style: TextStyle(
-                                fontSize: 13,
-                                color: dark
-                                    ? AppColors.darkMuted
-                                    : AppColors.muted(context))),
-                      ],
+                              fontSize: 13,
+                              color: dark
+                                  ? AppColors.darkMuted
+                                  : AppColors.muted(context),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  const Icon(Icons.chevron_right_rounded),
-                ],
+                    const Icon(Icons.chevron_right_rounded),
+                  ],
+                ),
               ),
             ),
           ),
@@ -244,12 +285,14 @@ class _UnitNode extends StatelessWidget {
   }
 
   Widget _tag(String t, Color c) => Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-        decoration: BoxDecoration(
-          color: c.withValues(alpha: 0.14),
-          borderRadius: BorderRadius.circular(AppRadius.pill),
-        ),
-        child: Text(t,
-            style: TextStyle(color: c, fontWeight: FontWeight.w700, fontSize: 11)),
-      );
+    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+    decoration: BoxDecoration(
+      color: c.withValues(alpha: 0.14),
+      borderRadius: BorderRadius.circular(AppRadius.pill),
+    ),
+    child: Text(
+      t,
+      style: TextStyle(color: c, fontWeight: FontWeight.w700, fontSize: 11),
+    ),
+  );
 }

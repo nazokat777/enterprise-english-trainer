@@ -56,7 +56,10 @@ void main() {
     await app.progress.addXp(Progress.freezeCost * 10);
     await t.pump();
 
-    await t.tap(find.textContaining('Sotib olish'));
+    final buy = find.textContaining('Sotib olish');
+    await t.ensureVisible(buy);
+    await t.pump();
+    await t.tap(buy);
     await t.pump();
 
     expect(app.progress.streakFreezeCount, 1);

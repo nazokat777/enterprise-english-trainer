@@ -76,10 +76,12 @@ class _Card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Container(
-        padding: const EdgeInsets.all(14),
+        padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
-          borderRadius: BorderRadius.circular(AppRadius.md),
+          color: AppColors.surface(context),
+          borderRadius: BorderRadius.circular(AppRadius.lg),
+          border: Border.all(color: AppColors.border(context)),
+          boxShadow: AppShadow.card(context),
         ),
         child: child,
       );
@@ -163,7 +165,7 @@ class _SfxCard extends StatelessWidget {
               children: [
                 Text('Ovoz effektlari',
                     style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
-                Text("To'g'ri javob, kombo, sandiq, daraja ovozlari",
+                Text("To'g'ri javob, kombo, bonus, daraja ovozlari",
                     style: TextStyle(fontSize: 12)),
               ],
             ),
