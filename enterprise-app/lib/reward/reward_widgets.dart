@@ -295,9 +295,9 @@ class DailyQuestsCard extends StatelessWidget {
         return Container(
           padding: const EdgeInsets.fromLTRB(16, 14, 16, 12),
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.surface,
+            color: AppColors.surface(context),
             borderRadius: BorderRadius.circular(AppRadius.lg),
-            border: Border.all(color: AppColors.brandPurple.withValues(alpha: 0.25)),
+            border: Border.all(color: AppColors.border(context)),
             boxShadow: [
               BoxShadow(
                   color: AppColors.brandPurple.withValues(alpha: 0.08),

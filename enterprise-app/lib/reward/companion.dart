@@ -359,9 +359,10 @@ class ActivityHeatmap extends StatelessWidget {
         return Container(
           padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.surface,
+            color: AppColors.surface(context),
             borderRadius: BorderRadius.circular(AppRadius.lg),
-            border: Border.all(color: AppColors.neutralShadow.withValues(alpha: 0.5)),
+            border: Border.all(color: AppColors.border(context)),
+            boxShadow: AppShadow.card(context),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
