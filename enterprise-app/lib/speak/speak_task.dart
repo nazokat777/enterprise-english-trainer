@@ -38,6 +38,7 @@ class _SpeakTaskState extends State<SpeakTask>
   String _heard = '';
   int _tries = 0;
   bool? _ok;
+  bool _error = false;
   late final AnimationController _pulse = AnimationController(
       vsync: this, duration: const Duration(milliseconds: 900))
     ..repeat(reverse: true);
@@ -62,9 +63,18 @@ class _SpeakTaskState extends State<SpeakTask>
       _heard = '';
     });
     _sub?.cancel();
-    _sub = _speech.start().listen(_onHeard, onError: (_) => _stop(),
-        onDone: () {
-      if (mounted && _listening) setState(() => _listening = false);
+    _error = false;
+    _sub = _speech.start().listen(_onHeard, onError: (_) {
+      _error = true;
+      _stop();
+    }, onDone: () {
+      // Natijasiz tugadi (ruxsat yo'q / jimlik) - foydalanuvchiga ayt.
+      if (mounted && _listening) {
+        setState(() {
+          _listening = false;
+          _error = true;
+        });
+      }
     });
     _timeout?.cancel();
     _timeout = Timer(const Duration(seconds: 7), _stop);
@@ -112,26 +122,24 @@ class _SpeakTaskState extends State<SpeakTask>
               border: Border.all(color: AppColors.border(context)),
               boxShadow: AppShadow.card(context),
             ),
-            child: Row(
+            child: Column(
               children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(q.prompt,
-                          style: const TextStyle(
-                              fontSize: 26, fontWeight: FontWeight.w800)),
-                      if (q.promptUz.isNotEmpty)
-                        Text(q.promptUz,
-                            style: TextStyle(fontSize: 14, color: muted)),
-                    ],
-                  ),
-                ),
-                IconButton.filledTonal(
-                  tooltip: 'Namuna',
+                Text(q.prompt,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                        fontSize: 34, fontWeight: FontWeight.w800)),
+                if (q.promptUz.isNotEmpty) ...[
+                  const SizedBox(height: 4),
+                  Text(q.promptUz,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 15, color: muted)),
+                ],
+                const SizedBox(height: 12),
+                TextButton.icon(
                   onPressed: () =>
                       Tts.instance.speak(q.speak, id: q.itemId),
-                  icon: const Icon(Icons.volume_up_rounded),
+                  icon: const Icon(Icons.volume_up_rounded, size: 20),
+                  label: const Text('Namunani eshitish'),
                 ),
               ],
             ),
@@ -185,7 +193,9 @@ class _SpeakTaskState extends State<SpeakTask>
                   : _listening
                       ? 'Eshityapman...'
                       : _heard.isEmpty
-                          ? 'Mikrofonni bosing va ayting'
+                          ? (_error
+                              ? 'Eshitilmadi - mikrofonga ruxsat bering yoki o\'tkazing'
+                              : 'Mikrofonni bosing va ayting')
                           : 'Eshitildi: "$_heard" - yana urinib ko\'ring',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -209,6 +219,7 @@ class _SpeakTaskState extends State<SpeakTask>
                     : 'Mikrofon yo\'q - o\'tkazish'),
               ),
             ),
+          const Spacer(),
         ],
       ),
     );
