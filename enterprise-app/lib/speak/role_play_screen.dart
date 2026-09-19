@@ -67,7 +67,6 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
   int _i = 0; // joriy satr
   bool _listening = false;
   String _heard = '';
-  int _tries = 0;
   bool? _lineOk;
   int _said = 0; // o'quvchi to'g'ri aytgan satrlar
   int _mine = 0; // o'quvchi satrlari jami
@@ -112,7 +111,6 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
     }
     setState(() {
       _heard = '';
-      _tries = 0;
       _lineOk = null;
     });
   }
@@ -163,7 +161,6 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
     setState(() {
       _heard = t;
       _listening = false;
-      _tries++;
       _lineOk = ok ? true : null;
     });
     if (ok) {
