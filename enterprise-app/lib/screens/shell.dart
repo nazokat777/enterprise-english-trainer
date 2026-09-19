@@ -13,6 +13,7 @@ import 'book/book_screens.dart';
 import 'book/conversations_screen.dart';
 import 'tutor_setup_screen.dart';
 import '../widgets/hover_lift.dart';
+import '../widgets/welcome_tour.dart';
 import 'help_screen.dart';
 import 'settings_screen.dart';
 
@@ -34,7 +35,12 @@ class _AppShellState extends State<AppShell> {
     // Birinchi ochilishda hamrohga ism qo'yish (bir marta).
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted && book.units.isNotEmpty) {
-        OnboardingSheet.showIfNeeded(context);
+        // Avval avatar nomlanadi, so'ng 3 sahifali xush kelibsiz turi.
+        OnboardingSheet.showIfNeeded(context).then((_) {
+          if (mounted && rewards.loaded && rewards.onboarded) {
+            WelcomeTour.showIfNeeded(context);
+          }
+        });
       }
     });
   }
