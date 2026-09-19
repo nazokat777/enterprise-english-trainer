@@ -133,63 +133,96 @@ class _AppShellState extends State<AppShell> {
   }
 
   Widget _headerRow(BuildContext context, {Widget? menu}) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-      child: Row(
-        children: [
-          ?menu,
-          const _LevelSwitcher(),
-          // TELEFONDA: ilgari bu yerda `Spacer()` turardi va o'ng tomondagi
-          // ko'rsatkichlar guruhi CHEKSIZ kenglik olardi — 375px ekranda
-          // panel 47 piksel oshib ketib, sariq-qora "overflow" chizig'i
-          // chiqardi. `Expanded` guruhga aniq kenglik beradi, `Wrap` esa
-          // sig'masa ikkinchi qatorga o'tadi.
-          Expanded(
-            child: Wrap(
-              alignment: WrapAlignment.end,
-              runAlignment: WrapAlignment.center,
-              spacing: 10,
-              runSpacing: 6,
-              crossAxisAlignment: WrapCrossAlignment.center,
+    final levelRing = GestureDetector(
+      onTap: () => Navigator.of(
+        context,
+      ).push(MaterialPageRoute(builder: (_) => const AchievementsScreen())),
+      child: const LevelRing(size: 38),
+    );
+    final darkBtn = IconButton(
+      tooltip: 'Rejimni almashtirish',
+      onPressed: progress.toggleDark,
+      icon: Icon(
+        progress.darkMode ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
+      ),
+    );
+    final stats = <Widget>[
+      StreakFlame(days: progress.currentStreak),
+      const HappyHourBadge(),
+      _DailyRing(progress: progress.dailyProgress, todayXp: progress.todayXp),
+      _Stat(
+        icon: Icons.bolt_rounded,
+        color: AppColors.success,
+        value: progress.xp,
+      ),
+      _Stat(
+        icon: Icons.monetization_on_rounded,
+        color: AppColors.coin,
+        value: progress.coins,
+      ),
+    ];
+    return LayoutBuilder(
+      builder: (context, c) {
+        final compact = c.maxWidth < 640;
+        if (!compact) {
+          return Padding(
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+            child: Row(
               children: [
-                GestureDetector(
-                  onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => const AchievementsScreen(),
-                    ),
-                  ),
-                  child: const LevelRing(size: 38),
-                ),
-                StreakFlame(days: progress.currentStreak),
-                const HappyHourBadge(),
-                _DailyRing(
-                  progress: progress.dailyProgress,
-                  todayXp: progress.todayXp,
-                ),
-                _Stat(
-                  icon: Icons.bolt_rounded,
-                  color: AppColors.success,
-                  value: progress.xp,
-                ),
-                _Stat(
-                  icon: Icons.monetization_on_rounded,
-                  color: AppColors.coin,
-                  value: progress.coins,
-                ),
-                IconButton(
-                  tooltip: 'Rejimni almashtirish',
-                  onPressed: progress.toggleDark,
-                  icon: Icon(
-                    progress.darkMode
-                        ? Icons.light_mode_rounded
-                        : Icons.dark_mode_rounded,
+                ?menu,
+                const _LevelSwitcher(),
+                Expanded(
+                  child: Wrap(
+                    alignment: WrapAlignment.end,
+                    runAlignment: WrapAlignment.center,
+                    spacing: 10,
+                    runSpacing: 6,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    children: [levelRing, ...stats, darkBtn],
                   ),
                 ),
               ],
             ),
+          );
+        }
+        // TELEFON: ikki qator — 1) menyu · daraja · halqa · tun;
+        // 2) ko'rsatkichlar gorizontal aylanadi (hech qachon uch
+        // qatorga yoyilmaydi, sarlavha joyi tejaladi).
+        return Padding(
+          padding: const EdgeInsets.fromLTRB(8, 8, 8, 4),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Row(
+                children: [
+                  ?menu,
+                  const Expanded(
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: _LevelSwitcher(),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  levelRing,
+                  darkBtn,
+                ],
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.fromLTRB(8, 2, 8, 4),
+                child: Row(
+                  children: [
+                    for (var i = 0; i < stats.length; i++) ...[
+                      if (i > 0) const SizedBox(width: 8),
+                      stats[i],
+                    ],
+                  ],
+                ),
+              ),
+            ],
           ),
-        ],
-      ),
+        );
+      },
     );
   }
 
@@ -411,11 +444,14 @@ class _LevelSwitcher extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
-              label,
-              style: const TextStyle(
-                fontWeight: FontWeight.w800,
-                color: AppColors.brandPurple,
+            Flexible(
+              child: Text(
+                label,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontWeight: FontWeight.w800,
+                  color: AppColors.brandPurple,
+                ),
               ),
             ),
             const Icon(
