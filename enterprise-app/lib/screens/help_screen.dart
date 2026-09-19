@@ -167,7 +167,8 @@ class HelpScreen extends StatelessWidget {
       'Seriya (kunlar)',
       'Har kuni dars qilsangiz seriya o\'sadi. Bir kun qoldirsangiz '
           'uziladi — Sozlamalardan "muzlatgich" sotib olib, bir kunni '
-          'himoyalash mumkin.'
+          'himoyalash mumkin. Uzilib ketsa ham 2 kun ichida bosh '
+          'sahifadagi kartadan tanga evaziga tiklanadi.'
     ),
   ];
 

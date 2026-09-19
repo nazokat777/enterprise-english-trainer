@@ -19,6 +19,13 @@ class Progress extends ChangeNotifier {
   int longestStreak = 0;
   int streakFreezeCount = 0;
   String? lastActiveDate; // 'YYYY-MM-DD'
+
+  /// STREAK TIKLASH — muzlatgichsiz uzilgan seriya (>=3 kun) 2 kun
+  /// davomida coin evaziga qaytariladi. Yo'qotish og'rig'i (loss
+  /// aversion) tashlab ketishning eng katta sababi; "qaytarish" imkoni
+  /// o'quvchini ilovaga qaytaradi. Narx seriya uzunligiga bog'liq.
+  int lostStreak = 0;
+  String lostStreakDate = ''; // uzilish aniqlangan kun
   int dailyGoal = 20; // 10/20/30/50 XP
   int todayXp = 0;
   String _todayKey = '';
@@ -77,6 +84,8 @@ class Progress extends ChangeNotifier {
     currentStreak = p.getInt('streak') ?? 0;
     longestStreak = p.getInt('longestStreak') ?? 0;
     streakFreezeCount = p.getInt('freezes') ?? 0;
+    lostStreak = p.getInt('lostStreak') ?? 0;
+    lostStreakDate = p.getString('lostStreakDate') ?? '';
     lastUnitNo = p.getInt('lastUnitNo') ?? 0;
     lastExerciseId = p.getString('lastExerciseId') ?? '';
     lastLabel = p.getString('lastLabel') ?? '';
@@ -165,9 +174,44 @@ class Progress extends ChangeNotifier {
       // shu kuni yana ochilganda ikkinchi muzlatgich ham yechilardi.
       lastActiveDate = _yesterday;
     } else {
+      if (currentStreak >= 3) {
+        lostStreak = currentStreak;
+        lostStreakDate = _today;
+      }
       currentStreak = 0; // seriya uzildi
     }
     await _save();
+  }
+
+  /// Tiklash taklifi hali kuchdami (2 kun).
+  bool get canRepairStreak {
+    if (lostStreak < 3 || lostStreakDate.isEmpty) return false;
+    final d = DateTime.tryParse(lostStreakDate);
+    if (d == null) return false;
+    return DateTime.now().difference(d).inDays <= 2;
+  }
+
+  /// Tiklash narxi: 50 + 10/kun, ko'pi bilan 300 coin.
+  int get repairCost => min(300, 50 + lostStreak * 10);
+
+  Future<bool> repairStreak() async {
+    if (!canRepairStreak || coins < repairCost) return false;
+    coins -= repairCost;
+    // Uzilgan seriya + bugun (agar bugun ishlangan bo'lsa).
+    currentStreak = lostStreak + (lastActiveDate == _today ? 1 : 0);
+    if (currentStreak > longestStreak) longestStreak = currentStreak;
+    lostStreak = 0;
+    lostStreakDate = '';
+    await _save();
+    notifyListeners();
+    return true;
+  }
+
+  void dismissRepair() {
+    lostStreak = 0;
+    lostStreakDate = '';
+    _save();
+    notifyListeners();
   }
 
   /// Bugungi faollik uchun streak'ni yangilaydi.
@@ -488,6 +532,8 @@ class Progress extends ChangeNotifier {
     await p.setInt('streak', currentStreak);
     await p.setInt('longestStreak', longestStreak);
     await p.setInt('freezes', streakFreezeCount);
+    await p.setInt('lostStreak', lostStreak);
+    await p.setString('lostStreakDate', lostStreakDate);
     await p.setInt('lastUnitNo', lastUnitNo);
     await p.setString('lastExerciseId', lastExerciseId);
     await p.setString('lastLabel', lastLabel);

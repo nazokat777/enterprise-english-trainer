@@ -9,6 +9,7 @@ import '../../lessons/word_lesson.dart';
 import '../../main.dart';
 import '../../exam/exam_widgets.dart';
 import '../../memory/memory_widgets.dart';
+import '../../reward/streak_repair_card.dart';
 import '../../reward/weekly_card.dart';
 import '../../widgets/hover_lift.dart';
 import '../../reward/companion.dart';
@@ -129,6 +130,8 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
           // mashq deb o'ylamasdan 3 daqiqalik trening.
           const EntranceFade(child: _HomeHero()),
           const SizedBox(height: 10),
+          // Uzilgan seriyani tiklash - vaqt chegarali, shuning uchun tepada.
+          const EntranceFade(child: StreakRepairCard()),
           const EntranceFade(child: CommitCard()),
           // Avatar — hissiy bog'lanish, hero'dan keyin.
           const EntranceFade(child: MascotCard()),
