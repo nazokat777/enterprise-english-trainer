@@ -127,8 +127,12 @@ class RewardEngine extends ChangeNotifier {
   static const Duration breakAfter = Duration(minutes: 20);
   bool _breakShown = false;
 
+  /// Testlar uchun soat (null = haqiqiy vaqt).
+  @visibleForTesting
+  DateTime Function()? clock;
+
   void _touchSession() {
-    final now = DateTime.now();
+    final now = clock?.call() ?? DateTime.now();
     if (_lastActivity == null || now.difference(_lastActivity!) > sessionGap) {
       _sessionStart = now;
       sessionXp = sessionCorrect = sessionWrong = sessionExercises = 0;

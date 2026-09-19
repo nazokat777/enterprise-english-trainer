@@ -264,4 +264,38 @@ void main() {
     expect(r.bestCombo, 6);
     expect(e.takeRecap(), isNull, reason: 'ikkinchi marta chiqmaydi');
   });
+
+  test('tanaffus banneri: 20 daqiqadan keyin sessiyada bir marta', () async {
+    final e = RewardEngine(random: Random(1));
+    var t = DateTime(2026, 9, 19, 10, 0);
+    e.clock = () => t;
+    final kinds = <RewardKind>[];
+    final sub = e.events.listen((ev) => kinds.add(ev.kind));
+
+    e.onAnswer(true, baseXp: 2);
+    t = t.add(const Duration(minutes: 5));
+    e.onAnswer(true, baseXp: 2);
+    await Future<void>.delayed(Duration.zero);
+    expect(kinds, isNot(contains(RewardKind.breakTime)));
+
+    for (var i = 0; i < 4; i++) {
+      t = t.add(const Duration(minutes: 4)); // jami 21 daqiqa, uzluksiz
+      e.onAnswer(true, baseXp: 2);
+    }
+    t = t.add(const Duration(minutes: 3));
+    e.onAnswer(true, baseXp: 2);
+    await Future<void>.delayed(Duration.zero);
+    expect(kinds.where((k) => k == RewardKind.breakTime).length, 1);
+
+    // Yangi sessiya (10+ daqiqa tanaffus) -> qayta yoqiladi.
+    t = t.add(const Duration(minutes: 30));
+    e.onAnswer(true, baseXp: 2);
+    for (var i = 0; i < 5; i++) {
+      t = t.add(const Duration(minutes: 5));
+      e.onAnswer(true, baseXp: 2);
+    }
+    await Future<void>.delayed(Duration.zero);
+    expect(kinds.where((k) => k == RewardKind.breakTime).length, 2);
+    await sub.cancel();
+  });
 }
