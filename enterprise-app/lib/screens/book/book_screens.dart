@@ -9,6 +9,7 @@ import '../../lessons/word_lesson.dart';
 import '../../main.dart';
 import '../../exam/exam_widgets.dart';
 import '../../memory/memory_widgets.dart';
+import '../../reward/weekly_card.dart';
 import '../../widgets/hover_lift.dart';
 import '../../reward/companion.dart';
 import '../../reward/reward_widgets.dart';
@@ -132,6 +133,8 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
           // Avatar — hissiy bog'lanish, hero'dan keyin.
           const EntranceFade(child: MascotCard()),
           const SizedBox(height: 10),
+          // Haftalik hisobot — haftada bir marta, yopiladi.
+          const EntranceFade(child: WeeklyCard()),
           const EntranceFade(child: BlitzCard()),
           if (mastery.learnedWords(limit: 8).length >= 8)
             const SizedBox(height: 10),
