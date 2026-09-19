@@ -595,7 +595,8 @@ class _LangToggle extends StatelessWidget {
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
-        children: [seg('uz', '🇺🇿', 'UZ'), seg('en', '🇺🇸', 'EN')],
+        // Bayroq emojilari Windows/eski qurilmalarda chizilmaydi - matn.
+        children: [seg('uz', '🌐', 'UZ'), seg('en', '🅰', 'EN')],
       ),
     );
   }

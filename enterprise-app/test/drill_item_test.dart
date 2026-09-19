@@ -102,6 +102,8 @@ void main() {
       final src = sourcesFromUnit(u);
       for (final s in src) {
         for (final f in AskFormat.values) {
+          // Talaffuzda savol = javob ATAYLAB (so'z ko'rsatilib aytiladi).
+          if (f == AskFormat.speak) continue;
           final q = buildQuestion(s, f, src, rnd);
           if (q == null) continue;
           checked++;
