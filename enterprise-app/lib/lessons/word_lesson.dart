@@ -133,6 +133,14 @@ List<WordLesson> lessonsOf(BookUnit u) {
           if (a.contains('___') || a.contains(kBlank)) continue;
           final n = a.split(RegExp(r'\s+')).length;
           if (n < 3 || n > 12) continue;
+          // HAQIQIY GAP bo'lsin: "Diego — Origin" kabi sarlavha/yorliq
+          // (harfli so'z 3 tadan kam yoki tinishsiz qisqa parcha) emas.
+          final alpha = a
+              .split(RegExp(r'\s+'))
+              .where((w) => RegExp(r'[A-Za-z]').hasMatch(w))
+              .length;
+          final ends = RegExp(r'[.?!]$').hasMatch(a);
+          if (alpha < 3 || (!ends && alpha < 5)) continue;
           // So'zning o'zi gap bo'lsa — misol emas.
           if (a.toLowerCase() == word.toLowerCase()) continue;
           final b = uz.trim();
