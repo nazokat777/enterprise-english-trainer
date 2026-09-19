@@ -120,6 +120,13 @@ class RewardEngine extends ChangeNotifier {
   bool _recapPending = false;
   static const Duration sessionGap = Duration(minutes: 10);
 
+  /// TANAFFUS — 20 daqiqa uzluksiz ishlagach BIR marta (sessiya
+  /// davomida) "dam oling" xabari. Xotira ilmi: taqsimlangan mashq
+  /// (spacing) uzluksizdan kuchli; qisqa tanaffus konsolidatsiyaga
+  /// yordam beradi va charchoqdan tashlab ketishni kamaytiradi.
+  static const Duration breakAfter = Duration(minutes: 20);
+  bool _breakShown = false;
+
   void _touchSession() {
     final now = DateTime.now();
     if (_lastActivity == null || now.difference(_lastActivity!) > sessionGap) {
@@ -127,8 +134,15 @@ class RewardEngine extends ChangeNotifier {
       sessionXp = sessionCorrect = sessionWrong = sessionExercises = 0;
       sessionBestCombo = 0;
       _recapPending = false;
+      _breakShown = false;
     }
     _lastActivity = now;
+    if (!_breakShown &&
+        _sessionStart != null &&
+        now.difference(_sessionStart!) >= breakAfter) {
+      _breakShown = true;
+      _events.add(const RewardEvent._(RewardKind.breakTime));
+    }
   }
 
   Duration get sessionDuration => _sessionStart == null
@@ -961,6 +975,9 @@ enum RewardKind {
   nearMiss,
   unitComplete,
   streakMilestone,
+
+  /// Tanaffus tavsiyasi: 20+ daqiqa uzluksiz — "2 daqiqa dam".
+  breakTime,
 }
 
 class RewardEvent {

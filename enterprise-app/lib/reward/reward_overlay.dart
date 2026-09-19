@@ -117,6 +117,8 @@ class _RewardOverlayState extends State<RewardOverlay>
         if (e.level >= 10) _burst(count: 60);
       case RewardKind.record:
         _showBanner(_RecordBanner(text: 'Yangi rekord: ${e.amount} kombo!'));
+      case RewardKind.breakTime:
+        _showBanner(const _BreakBanner());
       case RewardKind.dailyGoal:
         sfx.quest();
         progress.addCoins(e.amount);
@@ -625,6 +627,20 @@ class _RecordBanner extends StatelessWidget {
       leading: const Text('🏅', style: TextStyle(fontSize: 22)),
       title: text,
       subtitle: 'Shaxsiy rekordingiz yangilandi',
+    );
+  }
+}
+
+/// 20 daqiqadan keyin yumshoq tanaffus tavsiyasi.
+class _BreakBanner extends StatelessWidget {
+  const _BreakBanner();
+  @override
+  Widget build(BuildContext context) {
+    return const _BannerCard(
+      color: Color(0xFF0EA5E9),
+      leading: Text('🧘', style: TextStyle(fontSize: 22)),
+      title: '20 daqiqa - zo\'r ish!',
+      subtitle: '2 daqiqa dam oling: miya shu paytda yodlaydi.',
     );
   }
 }
