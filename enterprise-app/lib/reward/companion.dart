@@ -138,7 +138,8 @@ class _MascotCardState extends State<MascotCard>
   @override
   Widget build(BuildContext context) {
     return ListenableBuilder(
-      listenable: rewards,
+      // progress ham: streak/tanga o'zgarsa gap yangilansin.
+      listenable: Listenable.merge([rewards, progress]),
       builder: (context, _) {
         final st = MascotStage.forLevel(rewards.level);
         final next = MascotStage.nextAfter(rewards.level);
