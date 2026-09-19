@@ -130,8 +130,14 @@ class _PackCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(bottom: 10),
         child: Material(
-          color: Theme.of(context).colorScheme.surface,
-          borderRadius: BorderRadius.circular(AppRadius.md),
+          color: AppColors.surface(context),
+          surfaceTintColor: Colors.transparent,
+          elevation: 1.5,
+          shadowColor: Colors.black.withValues(alpha: 0.35),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(AppRadius.md),
+            side: BorderSide(color: AppColors.border(context)),
+          ),
           child: InkWell(
             borderRadius: BorderRadius.circular(AppRadius.md),
             onTap: onTap,

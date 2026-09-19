@@ -169,8 +169,14 @@ class _LessonTile extends StatelessWidget {
       child: Opacity(
         opacity: state == _TileState.locked ? 0.55 : 1,
         child: Material(
-          color: Theme.of(context).colorScheme.surface,
-          borderRadius: BorderRadius.circular(AppRadius.lg),
+          color: AppColors.surface(context),
+          surfaceTintColor: Colors.transparent,
+          elevation: 1.5,
+          shadowColor: Colors.black.withValues(alpha: 0.35),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(AppRadius.lg),
+            side: BorderSide(color: AppColors.border(context)),
+          ),
           child: InkWell(
             borderRadius: BorderRadius.circular(AppRadius.lg),
             onTap: onTap,

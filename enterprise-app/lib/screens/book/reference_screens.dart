@@ -114,8 +114,10 @@ class RuleScreen extends StatelessWidget {
         margin: const EdgeInsets.only(bottom: 14),
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
+          color: AppColors.surface(context),
           borderRadius: BorderRadius.circular(AppRadius.md),
+          border: Border.all(color: AppColors.border(context)),
+          boxShadow: AppShadow.card(context),
         ),
         child:
             ExplainText(text, style: const TextStyle(fontSize: 14, height: 1.6)),
@@ -164,8 +166,10 @@ class RuleScreen extends StatelessWidget {
       Container(
         margin: const EdgeInsets.only(bottom: 14),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
+          color: AppColors.surface(context),
           borderRadius: BorderRadius.circular(AppRadius.md),
+          border: Border.all(color: AppColors.border(context)),
+          boxShadow: AppShadow.card(context),
         ),
         child: Column(
           children: [
@@ -266,8 +270,10 @@ class RuleScreen extends StatelessWidget {
           margin: const EdgeInsets.only(bottom: 10),
           padding: const EdgeInsets.all(13),
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.surface,
+            color: AppColors.surface(context),
             borderRadius: BorderRadius.circular(AppRadius.md),
+            border: Border.all(color: AppColors.border(context)),
+            boxShadow: AppShadow.card(context),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -365,8 +371,10 @@ class RuleScreen extends StatelessWidget {
           margin: const EdgeInsets.only(bottom: 9),
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.surface,
+            color: AppColors.surface(context),
             borderRadius: BorderRadius.circular(AppRadius.md),
+            border: Border.all(color: AppColors.border(context)),
+            boxShadow: AppShadow.card(context),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -450,8 +458,10 @@ class RuleScreen extends StatelessWidget {
         margin: const EdgeInsets.only(bottom: 8),
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
+          color: AppColors.surface(context),
           borderRadius: BorderRadius.circular(AppRadius.md),
+          border: Border.all(color: AppColors.border(context)),
+          boxShadow: AppShadow.card(context),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -528,8 +538,10 @@ class WordFormationScreen extends StatelessWidget {
         margin: const EdgeInsets.only(bottom: 14),
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
+          color: AppColors.surface(context),
           borderRadius: BorderRadius.circular(AppRadius.md),
+          border: Border.all(color: AppColors.border(context)),
+          boxShadow: AppShadow.card(context),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -632,8 +644,10 @@ class SentencePatternsScreen extends StatelessWidget {
         margin: const EdgeInsets.only(bottom: 12),
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
+          color: AppColors.surface(context),
           borderRadius: BorderRadius.circular(AppRadius.md),
+          border: Border.all(color: AppColors.border(context)),
+          boxShadow: AppShadow.card(context),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -736,8 +750,14 @@ class _UnitVocabularyScreenState extends State<UnitVocabularyScreen> {
             Padding(
               padding: const EdgeInsets.only(bottom: 8),
               child: Material(
-                color: Theme.of(context).colorScheme.surface,
-                borderRadius: BorderRadius.circular(AppRadius.md),
+                color: AppColors.surface(context),
+                surfaceTintColor: Colors.transparent,
+                elevation: 1.5,
+                shadowColor: Colors.black.withValues(alpha: 0.35),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(AppRadius.md),
+                  side: BorderSide(color: AppColors.border(context)),
+                ),
                 child: InkWell(
                   borderRadius: BorderRadius.circular(AppRadius.md),
                   onTap: () => Tts.instance.speak(e.en, id: e.en),
@@ -938,8 +958,10 @@ class _VocabDrillState extends State<_VocabDrill> {
             width: double.infinity,
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.surface,
+              color: AppColors.surface(context),
               borderRadius: BorderRadius.circular(AppRadius.lg),
+              border: Border.all(color: AppColors.border(context)),
+              boxShadow: AppShadow.card(context),
             ),
             child: Column(
               children: [
@@ -957,8 +979,14 @@ class _VocabDrillState extends State<_VocabDrill> {
             Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: Material(
-                color: Theme.of(context).colorScheme.surface,
-                borderRadius: BorderRadius.circular(AppRadius.md),
+                color: AppColors.surface(context),
+                surfaceTintColor: Colors.transparent,
+                elevation: 1.5,
+                shadowColor: Colors.black.withValues(alpha: 0.35),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(AppRadius.md),
+                  side: BorderSide(color: AppColors.border(context)),
+                ),
                 child: InkWell(
                   borderRadius: BorderRadius.circular(AppRadius.md),
                   onTap: _chosen == null ? () => _tap(o) : null,
@@ -1047,8 +1075,10 @@ class _ImageCreditsScreenState extends State<ImageCreditsScreen> {
                     margin: const EdgeInsets.only(bottom: 9),
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.surface,
+                      color: AppColors.surface(context),
                       borderRadius: BorderRadius.circular(AppRadius.md),
+                      border: Border.all(color: AppColors.border(context)),
+                      boxShadow: AppShadow.card(context),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

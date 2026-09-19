@@ -229,8 +229,10 @@ class _HardWordCard extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 10),
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surface,
+        color: AppColors.surface(context),
         borderRadius: BorderRadius.circular(AppRadius.md),
+        border: Border.all(color: AppColors.border(context)),
+        boxShadow: AppShadow.card(context),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
