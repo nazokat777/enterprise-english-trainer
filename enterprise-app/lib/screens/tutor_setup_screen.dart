@@ -576,7 +576,7 @@ class _LangToggle extends StatelessWidget {
             borderRadius: BorderRadius.circular(999),
           ),
           child: Text(
-            '$flag $label',
+            flag.isEmpty ? label : '$flag $label',
             style: TextStyle(
               fontWeight: FontWeight.w800,
               fontSize: 12.5,
@@ -596,7 +596,7 @@ class _LangToggle extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         // Bayroq emojilari Windows/eski qurilmalarda chizilmaydi - matn.
-        children: [seg('uz', '🌐', 'UZ'), seg('en', '🅰', 'EN')],
+        children: [seg('uz', '', 'UZ'), seg('en', '', 'EN')],
       ),
     );
   }
