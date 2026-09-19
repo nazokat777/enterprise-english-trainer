@@ -79,6 +79,13 @@ class HelpScreen extends StatelessWidget {
             'takror taklif qilinadi. 2+ marta xato qilingan so\'zga o\'z '
             'eslatmangizni (💡) yozing — +3 XP va so\'z 3 barobar yaxshi '
             'yodda qoladi.'),
+    ('🎤', 'Talaffuz raundi',
+        'So\'z darsida, harflab yozishdan keyin: so\'z ko\'rsatiladi, '
+            'mikrofonni bosib ovoz chiqarib aytasiz - brauzer tanib '
+            'tekshiradi (Chrome/Edge/Safari, kalit shart emas). Namuna '
+            'tugmasi to\'g\'ri talaffuzni eshittiradi. Mikrofon bo\'lmasa '
+            '"o\'tkazish" - xato hisoblanmaydi. Ovoz chiqarib aytilgan so\'z '
+            'og\'iz xotirasi bilan ham yodlanadi.'),
     ('📝', 'Yig\'ma imtihon',
         'N-unitni tugatganingizda bosh ekranda "Imtihon · 1-N unitlar" '
             'chiqadi: 1-unitdan shu unitgacha HAMMA lug\'at (tanlash + '

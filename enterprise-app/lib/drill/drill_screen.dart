@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../main.dart';
 import '../mastery.dart';
@@ -230,10 +231,31 @@ class ChoiceTask extends StatefulWidget {
 class _ChoiceTaskState extends State<ChoiceTask> {
   String? _picked;
 
+  void _pick(int i) {
+    final q = widget.q;
+    if (widget.locked || _picked != null || i >= q.options.length) return;
+    setState(() => _picked = q.options[i]);
+    widget.onDone(sameAnswer(q.options[i], q.answer));
+  }
+
+  /// KLAVIATURA: plitkadagi raqam (1-4) bosilsa o'sha variant.
+  KeyEventResult _onKey(FocusNode _, KeyEvent e) {
+    if (e is! KeyDownEvent) return KeyEventResult.ignored;
+    final n = int.tryParse(e.character ?? '');
+    if (n == null || n < 1 || n > widget.q.options.length) {
+      return KeyEventResult.ignored;
+    }
+    _pick(n - 1);
+    return KeyEventResult.handled;
+  }
+
   @override
   Widget build(BuildContext context) {
     final q = widget.q;
-    return ListView(
+    return Focus(
+      autofocus: true,
+      onKeyEvent: _onKey,
+      child: ListView(
       padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
       children: [
         DrillCard(
@@ -273,19 +295,13 @@ class _ChoiceTaskState extends State<ChoiceTask> {
                       : q.options[i] == _picked
                           ? OptionState.wrong
                           : OptionState.dim,
-              onTap: widget.locked
-                  ? null
-                  : () {
-                      setState(() => _picked = q.options[i]);
-                      widget.onDone(sameAnswer(q.options[i], q.answer));
-                    },
+              onTap: widget.locked ? null : () => _pick(i),
             ),
           ),
       ],
+      ),
     );
   }
-
-
 }
 
 /// MOSLASh O'YINI — bir necha juftni bir ekranda.
@@ -506,13 +522,40 @@ class _BuildTaskState extends State<BuildTask> {
     }
   }
 
+  /// KLAVIATURA: kompyuterda harf bosilsa mos (hali olinmagan) plitka
+  /// tanlanadi; Backspace - orqaga. So'zlardan yig'ishda (bo'shliqli
+  /// javob) plitka so'z bo'ladi - birinchi harfi bilan tanlanadi.
+  KeyEventResult _onKey(FocusNode _, KeyEvent e) {
+    if (e is! KeyDownEvent || widget.locked || _ok != null) {
+      return KeyEventResult.ignored;
+    }
+    if (e.logicalKey == LogicalKeyboardKey.backspace) {
+      if (_picked.isNotEmpty) setState(_picked.removeLast);
+      return KeyEventResult.handled;
+    }
+    final ch = e.character?.toLowerCase();
+    if (ch == null || ch.isEmpty) return KeyEventResult.ignored;
+    for (var i = 0; i < _tiles.length; i++) {
+      if (_picked.contains(i)) continue;
+      final t = _tiles[i].toLowerCase();
+      if (t == ch || (t.length > 1 && t.startsWith(ch))) {
+        _tap(i);
+        return KeyEventResult.handled;
+      }
+    }
+    return KeyEventResult.ignored;
+  }
+
   @override
   Widget build(BuildContext context) {
     final q = widget.q;
     final border = _ok == null
         ? Colors.black26
         : (_ok! ? AppColors.success : AppColors.danger);
-    return ListView(
+    return Focus(
+      autofocus: true,
+      onKeyEvent: _onKey,
+      child: ListView(
       padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
       children: [
         DrillCard(
@@ -587,7 +630,10 @@ class _BuildTaskState extends State<BuildTask> {
                               AppColors.brandPurple.withValues(alpha: 0.35),
                           width: 1.5),
                     ),
+                    // widthFactor: Center Wrap ichida butun kenglikni
+                    // egallab olmasin - plitka matn kengligida.
                     child: Center(
+                      widthFactor: 1,
                       child: Text(_tiles[i],
                           style: const TextStyle(
                               fontSize: 22, fontWeight: FontWeight.w800)),
@@ -608,6 +654,7 @@ class _BuildTaskState extends State<BuildTask> {
           ),
         ],
       ],
+      ),
     );
   }
 }
