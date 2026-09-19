@@ -84,6 +84,12 @@ class HelpScreen extends StatelessWidget {
             '"O\'rnatish" - ilova belgisi bosh ekranga tushadi, to\'liq '
             'ekranda ochiladi. iPhone\'da Safari: Ulashish -> Add to Home '
             'Screen. O\'rnatilgach karta chiqmaydi.'),
+    ('🎭', 'Rol o\'ynash (dialoglar)',
+        'Suhbat mashqida "Rol o\'ynash" tugmasi: qahramonni tanlaysiz, '
+            'ilova boshqasining gaplarini o\'qiydi, siz o\'z satringizni '
+            'mikrofonga aytasiz - to\'g\'ri bo\'lsa keyingi satr. Ko\'z '
+            'belgisi matnni yashiradi - faqat o\'zbekchasidan eslab '
+            'aytasiz (eng kuchli mashq). Har satr +3 XP, kombo ishlaydi.'),
     ('🎤', 'Talaffuz raundi',
         'So\'z darsida, harflab yozishdan keyin: so\'z ko\'rsatiladi, '
             'mikrofonni bosib ovoz chiqarib aytasiz - brauzer tanib '

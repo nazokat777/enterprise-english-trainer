@@ -9,7 +9,9 @@ import '../../drill/drill_screen.dart' show OptionTile, OptionState;
 import '../../main.dart';
 import '../../stats.dart';
 import '../../theme.dart';
+import '../../services/speech.dart';
 import '../../services/tts.dart';
+import '../../speak/role_play_screen.dart';
 import '../../reward/reward_engine.dart';
 import '../../reward/reward_widgets.dart';
 import '../../widgets/correct_burst.dart';
@@ -537,6 +539,18 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
             _done = true;
             _finish();
           }),
+          // ROL O'YNASH - dialog bo'lsa va brauzer nutq tanishni qo'llasa.
+          onRolePlay: Speech.supported && DialogueLine.of(ex).isNotEmpty
+              ? () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => RolePlayScreen(
+                        exercise: ex,
+                        title: 'Rol o\'ynash · ${widget.unitLabel}',
+                      ),
+                    ),
+                  )
+              : null,
           onMemorize: ex.tasks.any((t) => t.en.trim().isNotEmpty)
               ? () => Navigator.push(
                     context,
@@ -1503,8 +1517,14 @@ class _StudyStage extends StatelessWidget {
   /// yozib mustahkamlash (o'qish passiv; yozish faol).
   final VoidCallback? onMemorize;
 
+  /// ROL O'YNASH — dialogda bir rolni ovoz chiqarib aytish.
+  final VoidCallback? onRolePlay;
+
   const _StudyStage(
-      {required this.exercise, required this.onDone, this.onMemorize});
+      {required this.exercise,
+      required this.onDone,
+      this.onMemorize,
+      this.onRolePlay});
 
   @override
   Widget build(BuildContext context) {
@@ -1515,6 +1535,24 @@ class _StudyStage extends StatelessWidget {
         AudioNoteCard(text: exercise.audioNoteUz),
         for (final t in exercise.tasks) _line(context, t),
         const SizedBox(height: 22),
+        if (onRolePlay != null) ...[
+          Pressable3D(
+            color: AppColors.pink,
+            shadowColor: const Color(0xFFBE185D),
+            onPressed: onRolePlay,
+            child: const Center(
+              child: Text(
+                '🎭 Rol o\'ynash: o\'zingiz gapiring',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
+        ],
         if (onMemorize != null) ...[
           Pressable3D(
             color: AppColors.brandPurple,
