@@ -105,11 +105,12 @@ class _SpeakTaskState extends State<SpeakTask>
     final q = widget.q;
     final muted = AppColors.muted(context);
     final accent = _listening ? AppColors.danger : AppColors.brandPurple;
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
+    // Baland ekranda mikrofon markazda (Spacer); past ekranda
+    // (kichik telefon, klaviatura) - aylantiriladigan ro'yxat.
+    return LayoutBuilder(builder: (context, c) {
+      final tall = c.maxHeight >= 600;
+      final gap = tall ? const Spacer() : const SizedBox(height: 28);
+      final children = <Widget>[
           Text('Ovoz chiqarib ayting',
               style: TextStyle(
                   fontSize: 13, color: muted, fontWeight: FontWeight.w600)),
@@ -144,7 +145,7 @@ class _SpeakTaskState extends State<SpeakTask>
               ],
             ),
           ),
-          const Spacer(),
+          gap,
           Center(
             child: AnimatedBuilder(
               animation: _pulse,
@@ -219,9 +220,18 @@ class _SpeakTaskState extends State<SpeakTask>
                     : 'Mikrofon yo\'q - o\'tkazish'),
               ),
             ),
-          const Spacer(),
-        ],
-      ),
-    );
+          gap,
+        ];
+      const pad = EdgeInsets.fromLTRB(20, 16, 20, 20);
+      if (tall) {
+        return Padding(
+          padding: pad,
+          child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: children),
+        );
+      }
+      return ListView(padding: pad, children: children);
+    });
   }
 }

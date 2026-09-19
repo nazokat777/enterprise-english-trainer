@@ -393,8 +393,8 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
                                   ? muted
                                   : AppColors.danger),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    Wrap(
+                      alignment: WrapAlignment.center,
                       children: [
                         TextButton.icon(
                           onPressed: () => Tts.instance
@@ -405,7 +405,7 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
                         TextButton.icon(
                           onPressed: _skipLine,
                           icon: const Icon(Icons.skip_next_rounded, size: 18),
-                          label: Text(_tries >= 2 ? 'O\'tkazish' : 'O\'tkazish'),
+                          label: const Text('O\'tkazish'),
                         ),
                       ],
                     ),
@@ -419,8 +419,12 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
                         height: 18,
                         child: CircularProgressIndicator(strokeWidth: 2.5)),
                     const SizedBox(width: 10),
-                    Text('${cur.speaker} gapiryapti...',
-                        style: TextStyle(color: muted, fontWeight: FontWeight.w600)),
+                    Flexible(
+                      child: Text('${cur.speaker} gapiryapti...',
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                              color: muted, fontWeight: FontWeight.w600)),
+                    ),
                   ],
                 ),
         ),
