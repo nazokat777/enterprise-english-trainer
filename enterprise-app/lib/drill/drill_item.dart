@@ -240,7 +240,10 @@ DrillQuestion? buildQuestion(
   // "golf", "Dublin", "Morrison" kabi o'zlashma so'z va atoqli otlarda
   // o'zbekcha tarjima inglizchasi bilan AYNAN bir xil. Bunday bandda
   // har qanday savol "javobni ko'chir" ga aylanadi.
-  if (_norm(q.prompt) == _norm(q.answer)) return null;
+  // Talaffuzda savol = javob ATAYLAB (so'z ko'rsatilib aytiladi).
+  if (format != AskFormat.speak && _norm(q.prompt) == _norm(q.answer)) {
+    return null;
+  }
   return q;
 }
 
@@ -334,6 +337,22 @@ DrillQuestion? _build(
         itemId: s.itemId,
         format: format,
         prompt: s.uz,
+        answer: s.en,
+        speak: s.en,
+        unit: s.unit,
+        topic: s.topic,
+      );
+
+    case AskFormat.speak:
+      // Aytish uchun qisqa inglizcha matn kerak (so'z yoki qisqa ibora).
+      if (s.en.trim().isEmpty) return null;
+      if (s.en.trim().split(RegExp(r'\s+')).length > 4) return null;
+      if (!RegExp(r'[a-zA-Z]').hasMatch(s.en)) return null;
+      return DrillQuestion(
+        itemId: s.itemId,
+        format: format,
+        prompt: s.en,
+        promptUz: s.uz,
         answer: s.en,
         speak: s.en,
         unit: s.unit,

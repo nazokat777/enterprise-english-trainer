@@ -9,7 +9,9 @@ import '../mastery.dart';
 import '../memory/memory.dart';
 import '../memory/memory_widgets.dart';
 import '../reward/confetti.dart';
+import '../services/speech.dart';
 import '../services/tts.dart';
+import '../speak/speak_task.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
 import '../widgets/hover_lift.dart';
@@ -76,6 +78,9 @@ class _LessonScreenState extends State<LessonScreen> {
       formats: widget.rescue
           ? const [AskFormat.produce, AskFormat.build]
           : LessonSession.rounds,
+      // Talaffuz raundi faqat oddiy darsda va brauzer nutq tanishni
+      // qo'llasa (Chrome/Edge/Safari).
+      canSpeak: !widget.rescue && Speech.supported,
     );
     if (widget.rescue) {
       _stage = _s.isDone ? _Stage.done : _Stage.quiz;
@@ -135,6 +140,15 @@ class _LessonScreenState extends State<LessonScreen> {
     });
   }
 
+  /// Talaffuzni o'tkazib yuborish — xato emas, mastery'ga yozilmaydi.
+  void _skip() {
+    if (_result != null) return;
+    _s.skip();
+    setState(() {
+      if (_s.isDone) _stage = _Stage.done;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = widget.lesson;
@@ -186,6 +200,7 @@ class _LessonScreenState extends State<LessonScreen> {
         AskFormat.produce => 'inglizchasini tanlang',
         AskFormat.listen => 'eshitib yozing',
         AskFormat.cloze => 'gapdagi bo\'shliqni to\'ldiring',
+        AskFormat.speak => 'ovoz chiqarib ayting',
         _ => 'harflab yozing',
       }}',
     _Stage.done => 'Yakunlandi',
@@ -400,6 +415,13 @@ class _LessonScreenState extends State<LessonScreen> {
               q: q,
               locked: _result != null,
               onDone: _answer,
+            ),
+            AskFormat.speak => SpeakTask(
+              key: ValueKey('s${q.itemId}${_s.remaining}'),
+              q: q,
+              locked: _result != null,
+              onDone: _answer,
+              onSkip: _skip,
             ),
             _ => ChoiceTask(
               key: ValueKey('c${q.itemId}${q.format}${_s.remaining}'),

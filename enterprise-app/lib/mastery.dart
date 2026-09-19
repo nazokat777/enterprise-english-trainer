@@ -45,6 +45,11 @@ enum AskFormat {
 
   /// O'zbekchadan inglizchaga (eng qiyin — to'liq eslab aytish).
   produce,
+
+  /// TALAFFUZ — so'zni ovoz chiqarib aytish, brauzer nutq tanish
+  /// tekshiradi (faqat web, qo'llab-quvvatlansa). Indeks OXIRIDA —
+  /// saqlangan `passed` indekslari buzilmasin.
+  speak,
 }
 
 // Ishlab chiqarish shakllari — "tanidim" emas, "o'zim ayta olaman".

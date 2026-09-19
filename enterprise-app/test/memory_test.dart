@@ -140,6 +140,36 @@ void main() {
       expect(none.round, 1);
     });
 
+    test('talaffuz raundi: canSpeak bo\'lsa build\'dan keyin, skip xato emas', () async {
+      final lesson = WordLesson(index: 1, unit: 1, words: const [
+        LessonWord(en: 'cat', uz: 'mushuk'),
+        LessonWord(en: 'dog', uz: 'it'),
+        LessonWord(en: 'cow', uz: 'sigir'),
+        LessonWord(en: 'hen', uz: 'tovuq'),
+      ]);
+      final off = LessonSession(lesson: lesson, mastery: store, hasAudio: (_) => false);
+      final on = LessonSession(
+          lesson: lesson, mastery: store, hasAudio: (_) => false, canSpeak: true);
+      expect(on.remaining, off.remaining + 4);
+      final rounds = <int>[];
+      var skipped = 0;
+      while (!on.isDone) {
+        final q = on.current!;
+        if (q.format == AskFormat.speak) {
+          rounds.add(on.round);
+          on.skip();
+          skipped++;
+        } else {
+          await on.answer(true);
+        }
+      }
+      expect(skipped, 4);
+      expect(rounds.toSet(), {4}); // choice, produce, build, SPEAK
+      expect(on.mistakes, 0);
+      expect(store.of('w::cat').passed.contains(AskFormat.speak), isFalse);
+      expect(on.progress, 1);
+    });
+
     test('LessonSession extras navbatga qo\'shiladi', () async {
       final lesson = WordLesson(index: 1, unit: 1, words: const [
         LessonWord(en: 'cat', uz: 'mushuk'),

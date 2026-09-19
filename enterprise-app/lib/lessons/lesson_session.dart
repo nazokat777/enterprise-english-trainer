@@ -43,6 +43,12 @@ class LessonSession {
   /// odatdagidek harflab yoziladi.
   final bool Function(String en) hasAudio;
 
+  /// TALAFFUZ raundi qo'shilsinmi — brauzer nutq tanishni
+  /// qo'llab-quvvatlasa (Chrome/Edge/Safari). Ovoz chiqarib aytish =
+  /// ishlab chiqarish effekti + artikulyatsiya xotirasi: so'z og'iz
+  /// bilan ham "yoziladi". 3-raunddan keyin, kontekstdan oldin.
+  final bool canSpeak;
+
   final Random _rnd;
   final List<DrillQuestion> _queue = [];
   int _pos = 0;
@@ -67,6 +73,7 @@ class LessonSession {
     this.pool = const [],
     this.extras = const [],
     this.formats = rounds,
+    this.canSpeak = false,
     bool Function(String en)? hasAudio,
     Random? random,
   })  : hasAudio = hasAudio ?? Tts.instance.hasNeural,
@@ -91,9 +98,17 @@ class LessonSession {
   /// Aralash takrordagi so'zlar nechta.
   int get extraCount => extras.length;
 
+  /// Haqiqiy raundlar: `formats` + (qo'llansa) talaffuz `build`dan keyin.
+  List<AskFormat> get _rounds {
+    if (!canSpeak || formats.contains(AskFormat.speak)) return formats;
+    final i = formats.indexOf(AskFormat.build);
+    if (i < 0) return formats;
+    return [...formats.sublist(0, i + 1), AskFormat.speak, ...formats.sublist(i + 1)];
+  }
+
   void _fill() {
     final src = lesson.sources;
-    for (final f in formats) {
+    for (final f in _rounds) {
       final round = <DrillQuestion>[];
       for (var i = 0; i < src.length; i++) {
         final s = src[i];
@@ -136,9 +151,17 @@ class LessonSession {
   /// Qaysi raund ketyapti (1..3) — sarlavha uchun.
   int get round {
     final q = current;
-    if (q == null) return formats.length;
+    if (q == null) return _rounds.length;
     final f = q.format == AskFormat.listen ? AskFormat.build : q.format;
-    return formats.indexOf(f) + 1;
+    return _rounds.indexOf(f) + 1;
+  }
+
+  /// Talaffuzni o'tkazib yuborish (mikrofon yo'q/ishlamadi) — xato
+  /// hisoblanmaydi, mastery'ga yozilmaydi, navbatga qaytmaydi.
+  void skip() {
+    if (current == null) return;
+    _answered += 1;
+    _pos += 1;
   }
 
   Future<void> answer(bool ok) async {
