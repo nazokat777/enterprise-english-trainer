@@ -123,15 +123,14 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
             ),
           ),
           const SizedBox(height: 16),
-          // Kunlik topshiriqlar — birinchi ko'rinadigan narsa: bugun
-          // NIMA qilish kerakligi aniq, mukofot (sandiq) ko'rinib turadi.
-          const EntranceFade(child: MascotCard()),
-          const SizedBox(height: 10),
-          // BIR BOSIShDA BOShLASh — boshlash ishqalanishi (friction) eng
-          // katta to'siq: qaysi unit, qaysi mashq deb o'ylamasdan 3
-          // daqiqalik trening.
-          const EntranceFade(child: CommitCard()),
+          // HERO birinchi — bitta qaror: "boshlash". Boshlash
+          // ishqalanishi (friction) eng katta to'siq: qaysi unit, qaysi
+          // mashq deb o'ylamasdan 3 daqiqalik trening.
           const EntranceFade(child: _HomeHero()),
+          const SizedBox(height: 10),
+          const EntranceFade(child: CommitCard()),
+          // Avatar — hissiy bog'lanish, hero'dan keyin.
+          const EntranceFade(child: MascotCard()),
           const SizedBox(height: 10),
           const EntranceFade(child: BlitzCard()),
           if (mastery.learnedWords(limit: 8).length >= 8)
