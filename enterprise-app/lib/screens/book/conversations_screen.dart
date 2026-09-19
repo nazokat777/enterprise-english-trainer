@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../book_content.dart';
 import '../../main.dart';
+import '../../services/speech.dart';
+import '../../speak/pronunciation_screen.dart';
+import '../../speak/role_play_screen.dart';
+import '../../widgets/pressable3d.dart';
 import '../../theme.dart';
 import 'exercise_player.dart';
 
@@ -99,6 +103,31 @@ class _Header extends StatelessWidget {
             style:
                 TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
           ),
+          // TALAFFUZ TRENINGI - o'rganilgan so'zlarni ovoz chiqarib aytish
+          // (faqat nutq tanish bor brauzerlarda).
+          if (Speech.supported) ...[
+            const SizedBox(height: 14),
+            Pressable3D(
+              color: AppColors.pink,
+              shadowColor: const Color(0xFFBE185D),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const PronunciationScreen()),
+              ),
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.mic_rounded, color: Colors.white),
+                  SizedBox(width: 8),
+                  Text("Talaffuz treningi · 10 so'z",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 16)),
+                ],
+              ),
+            ),
+          ],
         ],
       ),
     );
@@ -233,6 +262,20 @@ class _Tile extends StatelessWidget {
 
   void _startRole(BuildContext context) {
     final e = item.exercise;
+    // Nutq tanish bo'lsa - OVOZ bilan rol o'ynash (haqiqiy gapirish);
+    // bo'lmasa - so'zlardan yig'ish varianti.
+    if (Speech.supported && DialogueLine.of(e).isNotEmpty) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => RolePlayScreen(
+            exercise: e,
+            title: "Rol o'ynash · ${item.unit.displayLabel}",
+          ),
+        ),
+      );
+      return;
+    }
     final ex = BookExercise(
       ref: e.ref,
       kind: ExKind.text,

@@ -90,6 +90,10 @@ class HelpScreen extends StatelessWidget {
             'mikrofonga aytasiz - to\'g\'ri bo\'lsa keyingi satr. Ko\'z '
             'belgisi matnni yashiradi - faqat o\'zbekchasidan eslab '
             'aytasiz (eng kuchli mashq). Har satr +3 XP, kombo ishlaydi.'),
+    ('🗣️', 'Talaffuz treningi',
+        'Suhbatlar sahifasi tepasida: o\'rganilgan so\'zlardan 10 tasi '
+            'ketma-ket ovoz chiqarib aytiladi - 2 daqiqalik "og\'iz '
+            'mashqi". Har to\'g\'ri so\'z +2 XP, hammasi to\'g\'ri - konfetti.'),
     ('🎤', 'Talaffuz raundi',
         'So\'z darsida, harflab yozishdan keyin: so\'z ko\'rsatiladi, '
             'mikrofonni bosib ovoz chiqarib aytasiz - brauzer tanib '
