@@ -79,6 +79,11 @@ class HelpScreen extends StatelessWidget {
             'takror taklif qilinadi. 2+ marta xato qilingan so\'zga o\'z '
             'eslatmangizni (💡) yozing — +3 XP va so\'z 3 barobar yaxshi '
             'yodda qoladi.'),
+    ('📲', 'Telefonga o\'rnatish',
+        'Bosh ekranda "Telefonga o\'rnating" kartasi: Android/Chrome\'da '
+            '"O\'rnatish" - ilova belgisi bosh ekranga tushadi, to\'liq '
+            'ekranda ochiladi. iPhone\'da Safari: Ulashish -> Add to Home '
+            'Screen. O\'rnatilgach karta chiqmaydi.'),
     ('🎤', 'Talaffuz raundi',
         'So\'z darsida, harflab yozishdan keyin: so\'z ko\'rsatiladi, '
             'mikrofonni bosib ovoz chiqarib aytasiz - brauzer tanib '

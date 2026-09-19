@@ -32,6 +32,18 @@
 
   <title>Enterprise English Trainer</title>
   <link rel="manifest" href="manifest.json">
+  <script>
+    // PWA o'rnatish: brauzer taklifini ushlab turamiz, ilova o'zi
+    // "Telefonga o'rnating" kartasidan chaqiradi (lib/services/install*.dart).
+    window.__installPrompt = null;
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();
+      window.__installPrompt = e;
+    });
+    window.addEventListener('appinstalled', function () {
+      window.__installPrompt = null;
+    });
+  </script>
 </head>
 <body>
   <!--

@@ -12,6 +12,7 @@ import '../../memory/memory_widgets.dart';
 import '../../reward/streak_repair_card.dart';
 import '../../reward/weekly_card.dart';
 import '../../widgets/hover_lift.dart';
+import '../../widgets/install_card.dart';
 import '../../reward/companion.dart';
 import '../../reward/reward_widgets.dart';
 import '../../theme.dart';
@@ -136,6 +137,8 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
           // Avatar — hissiy bog'lanish, hero'dan keyin.
           const EntranceFade(child: MascotCard()),
           const SizedBox(height: 10),
+          // Telefonga o'rnatish (PWA) - brauzerda, birinchi mashqdan keyin.
+          const EntranceFade(child: InstallCard()),
           // Haftalik hisobot — haftada bir marta, yopiladi.
           const EntranceFade(child: WeeklyCard()),
           const EntranceFade(child: BlitzCard()),
