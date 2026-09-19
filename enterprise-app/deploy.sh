@@ -11,5 +11,5 @@ if [ -f .deploy.env ]; then
     DEFINES="$DEFINES --dart-define=$k=$v"
   done < .deploy.env
 fi
-flutter build web --release $DEFINES
-cd build/web && vercel --prod --yes --archive=tgz
+flutter build web --release --no-wasm-dry-run $DEFINES < /dev/null
+cd build/web && vercel --prod --yes --archive=tgz < /dev/null
