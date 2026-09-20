@@ -44,8 +44,60 @@
       window.__installPrompt = null;
     });
   </script>
+  <style>
+    /* YUKLANISh EKRANI - Flutter birinchi kadri chizilguncha (3 MB JS)
+       oq ekran o'rniga brend splash. Tun rejimi tizim sozlamasiga qarab. */
+    html, body { margin: 0; height: 100%; background: #F5F6FA; }
+    @media (prefers-color-scheme: dark) { html, body { background: #0F1117; } }
+    #splash {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 18px;
+      background: inherit; z-index: 9999; transition: opacity .35s ease;
+      font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    #splash.hide { opacity: 0; pointer-events: none; }
+    #splash .logo {
+      width: 84px; height: 84px; border-radius: 24px;
+      background: linear-gradient(135deg, #7C3AED, #2563EB 60%, #06B6D4);
+      box-shadow: 0 18px 40px rgba(124, 58, 237, .35);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 800; font-size: 34px; letter-spacing: -1px;
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+    #splash .name { font-weight: 800; font-size: 18px; color: #1F2937; }
+    #splash .sub { font-size: 13px; color: #6B7280; }
+    @media (prefers-color-scheme: dark) {
+      #splash .name { color: #F3F4F6; } #splash .sub { color: #9CA3AF; }
+    }
+    #splash .bar {
+      width: 160px; height: 4px; border-radius: 4px; overflow: hidden;
+      background: rgba(124, 58, 237, .18);
+    }
+    #splash .bar i {
+      display: block; height: 100%; width: 40%; border-radius: 4px;
+      background: linear-gradient(90deg, #7C3AED, #06B6D4);
+      animation: slide 1.2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+    @keyframes slide { 0% { margin-left: -40%; } 100% { margin-left: 100%; } }
+  </style>
 </head>
 <body>
+  <div id="splash">
+    <div class="logo">En</div>
+    <div class="name">Enterprise English Trainer</div>
+    <div class="sub">Yuklanmoqda...</div>
+    <div class="bar"><i></i></div>
+  </div>
+  <script>
+    // Flutter birinchi kadrni chizganda splash yo'qoladi.
+    window.addEventListener('flutter-first-frame', function () {
+      var s = document.getElementById('splash');
+      if (!s) return;
+      s.classList.add('hide');
+      setTimeout(function () { s.remove(); }, 400);
+    });
+  </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader
