@@ -265,6 +265,31 @@ void main() {
     expect(e.takeRecap(), isNull, reason: 'ikkinchi marta chiqmaydi');
   });
 
+  test("gapirish: topshiriq faqat nutq tanish bo'lsa; 10 ta -> yutuq", () async {
+    final off = RewardEngine(random: Random(3));
+    await off.load();
+    expect(off.quests.any((q) => q.kind == QuestKind.spoken), isFalse);
+
+    var seen = false;
+    for (var seed = 0; seed < 40 && !seen; seed++) {
+      SharedPreferences.setMockInitialValues({});
+      final on = RewardEngine(random: Random(seed))..speechAvailable = true;
+      await on.load();
+      seen = on.quests.any((q) => q.kind == QuestKind.spoken);
+    }
+    expect(seen, isTrue, reason: "gapirish topshirig'i havzada bo'lishi kerak");
+
+    SharedPreferences.setMockInitialValues({});
+    final e = RewardEngine(random: Random(1));
+    await e.load();
+    for (var i = 0; i < 10; i++) {
+      e.onSpoken(1);
+    }
+    expect(e.spokenTotal, 10);
+    expect(e.achievements.contains('speak10'), isTrue);
+    expect(e.achievements.contains('speak100'), isFalse);
+  });
+
   test('tanaffus banneri: 20 daqiqadan keyin sessiyada bir marta', () async {
     final e = RewardEngine(random: Random(1));
     var t = DateTime(2026, 9, 19, 10, 0);

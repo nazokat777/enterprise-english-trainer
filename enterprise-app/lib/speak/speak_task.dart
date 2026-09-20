@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../drill/drill_item.dart';
+import '../main.dart';
 import '../services/speech.dart';
 import '../services/tts.dart';
 import '../theme.dart';
@@ -97,7 +98,10 @@ class _SpeakTaskState extends State<SpeakTask>
       if (ok) _ok = true;
     });
     _speech.stop();
-    if (ok) widget.onDone(true);
+    if (ok) {
+      rewards.onSpoken(1);
+      widget.onDone(true);
+    }
   }
 
   @override

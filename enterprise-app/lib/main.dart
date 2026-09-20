@@ -8,6 +8,7 @@ import 'mistakes.dart';
 import 'reward/reward_engine.dart';
 import 'reward/reward_overlay.dart';
 import 'reward/sfx.dart';
+import 'services/speech.dart';
 import 'services/tts.dart';
 import 'screens/shell.dart';
 
@@ -35,6 +36,9 @@ Future<void> main() async {
   mastery = MasteryStore();
   repo = ContentRepository();
   book = BookRepository();
+  // Gapirish topshirig'i faqat nutq tanish bor brauzerda (load'dan OLDIN -
+  // kunlik topshiriqlar yuklashda tuziladi).
+  rewards.speechAvailable = Speech.supported;
   await Future.wait([
     progress.load(),
     rewards.load(),

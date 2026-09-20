@@ -39,6 +39,14 @@ class RewardEngine extends ChangeNotifier {
   /// Qutqarilgan (o'chib ketishdan qaytarilgan) so'zlar — jami.
   int wordsRescued = 0;
 
+  /// OVOZ ChIQARIB to'g'ri aytilgan so'z/gaplar — jami (talaffuz
+  /// raundi, talaffuz treningi, rol o'ynash).
+  int spokenTotal = 0;
+
+  /// Qurilmada nutq tanish bormi — "gapirish" topshirig'i faqat shunda
+  /// beriladi (ilova ochilganda `Speech.supported` dan qo'yiladi).
+  bool speechAvailable = false;
+
   /// O'tilgan yig'ma imtihonlar (unit raqami bo'yicha).
   final Set<int> examsPassed = {};
   int bestCombo = 0;
@@ -268,6 +276,7 @@ class RewardEngine extends ChangeNotifier {
     perfectExercises = p.getInt('rw_perfect') ?? 0;
     wordsLearned = p.getInt('rw_words') ?? 0;
     wordsRescued = p.getInt('rw_rescued') ?? 0;
+    spokenTotal = p.getInt('rw_spoken') ?? 0;
     examsPassed
       ..clear()
       ..addAll((p.getStringList('rw_exams') ?? []).map(int.parse));
@@ -318,6 +327,7 @@ class RewardEngine extends ChangeNotifier {
     await p.setInt('rw_perfect', perfectExercises);
     await p.setInt('rw_words', wordsLearned);
     await p.setInt('rw_rescued', wordsRescued);
+    await p.setInt('rw_spoken', spokenTotal);
     await p.setStringList('rw_exams', examsPassed.map((e) => '$e').toList());
     await p.setInt('rw_bestCombo', bestCombo);
     await p.setInt('rw_bestDay', bestDayXp);
@@ -355,6 +365,7 @@ class RewardEngine extends ChangeNotifier {
     correctTotal = wrongTotal = exercisesDone = perfectExercises = 0;
     wordsLearned = bestCombo = bestDayXp = chestsOpened = critsTotal = 0;
     wordsRescued = 0;
+    spokenTotal = 0;
     examsPassed.clear();
     achievements.clear();
     combo = 0;
@@ -530,6 +541,16 @@ class RewardEngine extends ChangeNotifier {
     wordsLearned += n;
     todayWords += n;
     _bumpQuest(QuestKind.words, n);
+    _checkAchievements();
+    _save();
+    notifyListeners();
+  }
+
+  /// Ovoz chiqarib to'g'ri aytildi ([n] ta so'z/gap).
+  void onSpoken(int n) {
+    tick();
+    spokenTotal += n;
+    _bumpQuest(QuestKind.spoken, n);
     _checkAchievements();
     _save();
     notifyListeners();
@@ -746,6 +767,9 @@ class RewardEngine extends ChangeNotifier {
       Quest(QuestKind.words, 5 + 5 * _rng.nextInt(3), coins: 15, xp: 10),
       Quest(QuestKind.xp, [30, 50, 80][_rng.nextInt(3)], coins: 10, xp: 5),
       Quest(QuestKind.perfect, 1 + _rng.nextInt(2), coins: 25, xp: 15),
+      // Gapirish - faqat nutq tanish bor qurilmada (bo'lmasa bajarib bo'lmaydi).
+      if (speechAvailable)
+        Quest(QuestKind.spoken, [5, 8, 10][_rng.nextInt(3)], coins: 20, xp: 15),
     ];
     pool.shuffle(_rng);
     return pool.take(3).toList();
@@ -792,6 +816,8 @@ class RewardEngine extends ChangeNotifier {
     Achievement('words1000', 'Tirik lug\'at', '1000 ta so\'z', '🧠'),
     Achievement('rescue25', 'Qutqaruvchi', '25 ta so\'z unutilishdan qaytarildi', '🛟'),
     Achievement('rescue200', 'Xotira qo\'riqchisi', '200 ta so\'z qutqarildi', '🛡️'),
+    Achievement('speak10', 'Birinchi ovoz', '10 ta so\'z ovoz chiqarib aytildi', '🎤'),
+    Achievement('speak100', 'Notiq', '100 ta so\'z/gap ovoz chiqarib aytildi', '🗣️'),
     Achievement('exam1', 'Birinchi imtihon', 'Yig\'ma imtihondan o\'tdingiz', '📝'),
     Achievement('exam5', 'Imtihon ustasi', '5 ta yig\'ma imtihon', '🎓'),
     Achievement('exam15', 'Bitiruvchi', '15 ta yig\'ma imtihon', '🏛️'),
@@ -844,6 +870,8 @@ class RewardEngine extends ChangeNotifier {
     give('words1000', wordsLearned >= 1000);
     give('rescue25', wordsRescued >= 25);
     give('rescue200', wordsRescued >= 200);
+    give('speak10', spokenTotal >= 10);
+    give('speak100', spokenTotal >= 100);
     give('exam1', examsPassed.isNotEmpty);
     give('exam5', examsPassed.length >= 5);
     give('exam15', examsPassed.length >= 15);
@@ -870,7 +898,7 @@ class RewardEngine extends ChangeNotifier {
 
 // ═══════════════ Modellar ═══════════════
 
-enum QuestKind { correct, combo, exercises, words, xp, perfect }
+enum QuestKind { correct, combo, exercises, words, xp, perfect, spoken }
 
 class Quest {
   final QuestKind kind;
@@ -890,6 +918,7 @@ class Quest {
         QuestKind.words => '$target ta so\'z o\'rganing',
         QuestKind.xp => '$target XP to\'plang',
         QuestKind.perfect => '$target ta xatosiz mashq',
+        QuestKind.spoken => '$target ta so\'zni ovoz chiqarib ayting',
       };
 
   String get emoji => switch (kind) {
@@ -899,6 +928,7 @@ class Quest {
         QuestKind.words => '🧠',
         QuestKind.xp => '⚡',
         QuestKind.perfect => '💎',
+        QuestKind.spoken => '🎤',
       };
 
   double get ratio => target == 0 ? 1 : (progress / target).clamp(0.0, 1.0);

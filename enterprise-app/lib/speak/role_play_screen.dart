@@ -165,6 +165,7 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
     });
     if (ok) {
       _said++;
+      rewards.onSpoken(1);
       showCorrectBurst(context);
       final bonus = rewards.onAnswer(true, baseXp: 3);
       await progress.addXp(3 + bonus);
