@@ -131,7 +131,9 @@ class HelpScreen extends StatelessWidget {
             'tanga, XP yoki streak muzlatgich. Streak 3/7/14/30 kunda ham '
             'bonus beriladi.'),
     ('🎯', 'Kunlik missiyalar',
-        'Har kuni 3 ta missiya. Uchalasi bajarilsa - mega bonus.'),
+        'Har kuni 3 ta missiya. Uchalasi bajarilsa - mega bonus. Nutq '
+            'tanish bor brauzerda "so\'zni ovoz chiqarib ayting" missiyasi '
+            'ham chiqadi (talaffuz raundi, treningi, rol o\'ynash hisoblanadi).'),
     ('🎡', 'Lucky Spin',
         'Kuniga bir marta, 5 ta to\'g\'ri javobdan keyin ochiladi. 100 '
             'tangagacha yutish mumkin.'),
