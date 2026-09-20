@@ -8,6 +8,7 @@ import '../../lessons/lessons_screen.dart';
 import '../../lessons/word_lesson.dart';
 import '../../main.dart';
 import '../../exam/exam_widgets.dart';
+import '../../memory/advice.dart';
 import '../../memory/memory_widgets.dart';
 import '../../reward/streak_repair_card.dart';
 import '../../reward/weekly_card.dart';
@@ -1904,6 +1905,9 @@ class _HomeHero extends StatelessWidget {
                                   ),
                                 ],
                               ),
+                              const SizedBox(height: 8),
+                              // BUGUNGI TAVSIYA - bitta aniq keyingi qadam.
+                              const _AdviceLine(),
                             ],
                           ),
                         ),
@@ -1983,6 +1987,70 @@ class _HomeHero extends StatelessWidget {
           earlierSources: earlier,
         ),
       ),
+    );
+  }
+}
+
+/// Hero ichida "Tavsiya: ..." qatori. Keyingi dars uchun joriy unit
+/// asinxron yuklanadi; yuklanguncha tavsiya lug'at/imtihon holatidan.
+class _AdviceLine extends StatefulWidget {
+  const _AdviceLine();
+
+  @override
+  State<_AdviceLine> createState() => _AdviceLineState();
+}
+
+class _AdviceLineState extends State<_AdviceLine> {
+  String? _nextLesson;
+
+  @override
+  void initState() {
+    super.initState();
+    _findNextLesson();
+  }
+
+  Future<void> _findNextLesson() async {
+    final main = book.units.where((u) => !u.isInfo && u.unit >= 1).toList();
+    if (main.isEmpty) return;
+    final target = progress.lastUnitNo > 0 ? progress.lastUnitNo : main.first.unit;
+    final u = await book.load(target);
+    if (u == null || !mounted) return;
+    for (final l in lessonsOf(u)) {
+      if (!mastery.allStrong(l.itemIds)) {
+        setState(() => _nextLesson =
+            "${u.unit}-unit, ${l.index}-dars (${l.words.length} so'z)");
+        return;
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final examUnit = highestCompletedUnit();
+    final a = HomeAdvice.compute(
+      fading: mastery.fadingCount(),
+      examUnit: examUnit,
+      examPassed: rewards.examsPassed.contains(examUnit),
+      nextLesson: _nextLesson,
+      goalMet: progress.dailyGoalMet,
+    );
+    return Row(
+      children: [
+        Text(a.emoji, style: const TextStyle(fontSize: 14)),
+        const SizedBox(width: 6),
+        Flexible(
+          child: Text(
+            a.text,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              color: Colors.white.withValues(alpha: 0.92),
+              fontSize: 12.5,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
