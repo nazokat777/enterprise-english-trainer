@@ -7,6 +7,7 @@ import '../main.dart';
 import '../reward/confetti.dart';
 import '../services/speech.dart';
 import '../services/tts.dart';
+import '../stats.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
 import '../widgets/pressable3d.dart';
@@ -105,7 +106,7 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
     if (!mounted) return;
     if (_i >= _lines.length) {
       setState(() => _done = true);
-      await progress.addXp(10);
+      await progress.addXp(10, skill: Skill.speaking);
       rewards.onExerciseDone(clean: _said == _mine);
       return;
     }
@@ -168,7 +169,7 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
       rewards.onSpoken(1);
       showCorrectBurst(context);
       final bonus = rewards.onAnswer(true, baseXp: 3);
-      await progress.addXp(3 + bonus);
+      await progress.addXp(3 + bonus, skill: Skill.speaking);
       await Future<void>.delayed(const Duration(milliseconds: 700));
       if (!mounted) return;
       setState(() => _i++);

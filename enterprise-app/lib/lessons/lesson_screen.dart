@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../drill/drill_item.dart';
 import '../drill/drill_screen.dart';
 import '../main.dart';
+import '../stats.dart';
 import '../mastery.dart';
 import '../memory/memory.dart';
 import '../memory/memory_widgets.dart';
@@ -118,7 +119,8 @@ class _LessonScreenState extends State<LessonScreen> {
     final bonus = rewards.onAnswer(ok, baseXp: 2);
     if (ok) {
       showCorrectBurst(context);
-      await progress.addXp(2 + bonus);
+      await progress.addXp(2 + bonus,
+          skill: _s.current?.format == AskFormat.speak ? Skill.speaking : null);
     }
     _next = Timer(Duration(milliseconds: ok ? 650 : 1400), () async {
       await _s.answer(ok);

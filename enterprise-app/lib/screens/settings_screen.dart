@@ -376,6 +376,9 @@ class _StatsCard extends StatelessWidget {
       ('Eng uzun seriya', '${progress.longestStreak} kun'),
       ('Qiyin so\'zlar', '${progress.hardCount()} ta'),
       ('Takrorlash kerak', '${progress.needsReviewCount()} ta mashq'),
+      ("Qutqarilgan so'zlar", '${rewards.wordsRescued} ta'),
+      ('Ovoz chiqarib aytilgan', '${rewards.spokenTotal} ta'),
+      ("O'tilgan imtihonlar", '${rewards.examsPassed.length} ta'),
     ];
     return _Card(
       child: Column(

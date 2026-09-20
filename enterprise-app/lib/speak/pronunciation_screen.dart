@@ -6,6 +6,7 @@ import '../blitz/blitz_screen.dart' show blitzSourcesFromMastery;
 import '../drill/drill_item.dart';
 import '../main.dart';
 import '../mastery.dart';
+import '../stats.dart';
 import '../reward/confetti.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
@@ -49,7 +50,7 @@ class _PronunciationScreenState extends State<PronunciationScreen> {
       _ok++;
       showCorrectBurst(context);
       final bonus = rewards.onAnswer(true, baseXp: 2);
-      await progress.addXp(2 + bonus);
+      await progress.addXp(2 + bonus, skill: Skill.speaking);
       await mastery.record(_qs[_i].itemId, AskFormat.speak,
           ok: true, en: _qs[_i].answer, uz: _qs[_i].promptUz);
     }
@@ -70,7 +71,7 @@ class _PronunciationScreenState extends State<PronunciationScreen> {
       _locked = false;
     });
     if (_i >= _qs.length) {
-      progress.addXp(5);
+      progress.addXp(5, skill: Skill.speaking);
       rewards.onExerciseDone(clean: _skipped == 0);
     }
   }
