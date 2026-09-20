@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../services/speech.dart';
 import '../theme.dart';
 
 /// XUSH KELIBSIZ TURI — birinchi ochilishda 3 ta sahifa (bir marta).
@@ -45,7 +46,16 @@ class _WelcomeTourState extends State<WelcomeTour> {
   final _page = PageController();
   int _i = 0;
 
-  static const _pages = [
+  static const _speakPage = (
+    Icons.mic_rounded,
+    LinearGradient(colors: [Color(0xFFEC4899), Color(0xFFF97316)]),
+    'Gapiring - mikrofon eshitadi',
+    "So'z darsida talaffuz raundi, Suhbatlarda rol o'ynash: siz "
+        "aytasiz, brauzer tekshiradi. Ovoz chiqarib aytilgan so'z 2 barobar "
+        'mustahkam yodda qoladi.',
+  );
+
+  static const _basePages = [
     (
       Icons.auto_stories_rounded,
       AppColors.brandGradient,
@@ -70,6 +80,11 @@ class _WelcomeTourState extends State<WelcomeTour> {
           'Blitz va imtihonlar sizni har kuni qaytarib turadi. Boshlaymizmi?',
     ),
   ];
+
+  /// Gapirish sahifasi faqat nutq tanish bor brauzerda (oxirgidan oldin).
+  late final List<(IconData, Gradient, String, String)> _pages = Speech.supported
+      ? [..._basePages.sublist(0, 2), _speakPage, _basePages[2]]
+      : _basePages;
 
   @override
   void dispose() {
