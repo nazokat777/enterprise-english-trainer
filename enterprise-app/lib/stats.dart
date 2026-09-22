@@ -312,8 +312,14 @@ class Progress extends ChangeNotifier {
 
   Future<void> setLevel(String level) async {
     currentLevel = level;
-    await _save();
-    notifyListeners();
+    // Saqlash xato bersa ham (telefonda xotira to'lgan) UI xabar olsin -
+    // aks holda yorliq eski darajada qolib, keyingi bosishlar
+    // "shu daraja allaqachon" deb o'tkazib yuborilardi.
+    try {
+      await _save();
+    } finally {
+      notifyListeners();
+    }
   }
 
   /// Streak muzlatgichini coin evaziga sotib olish.
