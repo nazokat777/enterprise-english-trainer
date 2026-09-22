@@ -21,6 +21,8 @@ class ExplainCard extends StatelessWidget {
     String given = '',
     String whyUz = '',
     String ruleUz = '',
+    String uz = '',
+    String Function(String word)? lookup,
     required bool isCorrect,
   }) =>
       ExplainCard(
@@ -31,6 +33,8 @@ class ExplainCard extends StatelessWidget {
           given: given,
           whyUz: whyUz,
           ruleUz: ruleUz,
+          uz: uz,
+          lookup: lookup,
           isCorrect: isCorrect,
         ),
       );
@@ -91,6 +95,7 @@ class ExplainCard extends StatelessWidget {
         'book' => '📘',
         'rule' => '📐',
         'diff' => '💡',
+        'tr' => '💬',
         _ => '✅',
       };
 }

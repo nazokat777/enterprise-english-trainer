@@ -46,14 +46,43 @@ void main() {
     expect(explainDiff('', 'book'), isNull);
   });
 
+  test('tarjima', () {
+    // Banddagi tayyor tarjima.
+    final withUz = explainAnswer(
+        correct: 'an apple', given: 'a apple', uz: 'bitta olma');
+    expect(withUz.first.source, 'tr');
+    expect(withUz.first.text, contains('bitta olma'));
+
+    // Lug'atdan so'zma-so'z (tarjima bo'lmaganda).
+    const dict = {'book': 'kitob', 'read': "o'qimoq"};
+    final looked = explainAnswer(
+      correct: 'read a book',
+      given: 'read a books',
+      lookup: (w) => dict[w] ?? '',
+    );
+    expect(looked.first.source, 'tr');
+    expect(looked.first.text, contains('kitob'));
+    expect(looked.first.text, contains("o'qimoq"));
+
+    // To'g'ri javobda ham tarjima chiqadi (ma'no mustahkamlanadi).
+    final ok = explainAnswer(
+        correct: 'an apple', given: 'an apple', isCorrect: true, uz: 'olma');
+    expect(ok.single.source, 'tr');
+
+    // Tarjima o'zi bilan bir xil bo'lsa - takrorlanmaydi.
+    expect(translationOf('book', uz: 'book'), isNull);
+    expect(translationOf('', uz: 'kitob'), isNull);
+  });
+
   test('explainAnswer manbalar tartibi', () {
     final withBook = explainAnswer(
         correct: 'an apple', given: 'a apple', whyUz: 'Unli oldidan an.');
-    expect(withBook.first.source, 'book');
-    expect(withBook.length, 2); // kitob izohi + farq qoidasi
+    // Tarjima birinchi (ma'no), keyin kitob izohi, keyin qoida.
+    expect(withBook.map((e) => e.source), containsAll(['book', 'diff']));
+    expect(withBook.first.source, 'tr');
 
     final onlyRule = explainAnswer(
-        correct: 'an apple', given: 'an apple', isCorrect: true,
+        correct: 'zzz', given: 'zzz', isCorrect: true,
         ruleUz: 'Artikllar haqida qoida.');
     expect(onlyRule.single.source, 'rule');
 

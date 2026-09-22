@@ -7,6 +7,7 @@ import '../../book_content.dart';
 import '../../reward/reward_widgets.dart';
 import '../../services/tts.dart';
 import '../../teach/explain_card.dart';
+import '../../teach/vocab_lookup.dart';
 import '../../theme.dart';
 import '../../widgets/correct_burst.dart';
 import 'exercise_player.dart' show ExplanationCard, AudioNoteCard;
@@ -220,6 +221,10 @@ class _TypeStageState extends State<TypeStage> {
             given: _c.text.trim(),
             whyUz: widget.task.whyUz,
             ruleUz: widget.explanation,
+            uz: widget.task.uz.isNotEmpty
+                ? widget.task.uz
+                : widget.task.promptUz,
+            lookup: meaningOf,
             isCorrect: false,
           ),
         ] else if (_result == null)

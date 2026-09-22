@@ -90,6 +90,35 @@ const _pronouns = {
   'them', 'my', 'your', 'his', 'its', 'our', 'their',
 };
 
+/// ENG KO'P UChRAYDIGAN so'zlar lug'ati — kitob lug'atida yo'q,
+/// lekin har gapda keladigan xizmatchi so'zlar. Tarjimasiz qoida
+/// tushunarsiz: "she kerak" deyish o'rniga "she - u (ayol)" deyiladi.
+const Map<String, String> kCoreWords = {
+  'i': 'men', 'you': 'siz / sen', 'he': 'u (erkak)', 'she': 'u (ayol)',
+  'it': 'u (narsa)', 'we': 'biz', 'they': 'ular',
+  'me': 'meni / menga', 'him': 'uni (erkak)', 'her': 'uni (ayol) / uning',
+  'us': 'bizni', 'them': 'ularni',
+  'my': 'mening', 'your': 'sizning', 'his': 'uning (erkak)',
+  'its': 'uning (narsa)', 'our': 'bizning', 'their': 'ularning',
+  'am': 'man (I bilan)', 'is': 'dir (u bilan)', 'are': 'siz/ular bilan',
+  'was': 'edi (birlik)', 'were': 'edi (ko\'plik)', 'be': 'bo\'lmoq',
+  'do': 'qilmoq / yordamchi', 'does': 'yordamchi (u bilan)',
+  'did': 'yordamchi (o\'tgan zamon)',
+  'have': 'ega bo\'lmoq', 'has': 'ega (u bilan)', 'had': 'ega edi',
+  'can': 'ola bilmoq', 'will': 'kelasi zamon', 'not': 'emas',
+  'a': 'bitta (noaniq)', 'an': 'bitta (unli oldidan)', 'the': 'aniq artikl',
+  'and': 'va', 'but': 'lekin', 'or': 'yoki', 'because': 'chunki',
+  'what': 'nima', 'who': 'kim', 'where': 'qayerda', 'when': 'qachon',
+  'why': 'nega', 'how': 'qanday', 'which': 'qaysi',
+  'this': 'bu', 'that': 'anavi / u', 'these': 'bular', 'those': 'anavilar',
+  'here': 'bu yerda', 'there': 'u yerda', 'yes': 'ha', 'no': 'yo\'q',
+  'please': 'iltimos', 'thanks': 'rahmat', 'sorry': 'kechirasiz',
+  'very': 'juda', 'too': 'ham / juda', 'also': 'shuningdek',
+  'in': 'ichida', 'on': 'ustida', 'at': 'da (nuqta)', 'to': 'ga',
+  'from': 'dan', 'with': 'bilan', 'for': 'uchun', 'of': 'ning',
+  'old': 'yosh / eski', 'name': 'ism', 'years': 'yil',
+};
+
 /// Tartibsiz ko'plik shakllari — "childs" kabi xatolar uchun.
 const _irregularPlural = {
   'child': 'children',
@@ -351,7 +380,7 @@ Explanation? explainDiff(String given, String correct) {
   // 9) IMLO — bitta-ikkita harf farqi
   if (want.isNotEmpty && got.isNotEmpty) {
     final dist = _lev(got, want);
-    if (dist <= 2 && want.length >= 4) {
+    if ((dist == 1 && want.length >= 3) || (dist <= 2 && want.length >= 5)) {
       return Explanation(
         title: 'Imlo',
         text: 'Deyarli to\'g\'ri! "$got" emas, "$want" - harflarni diqqat '
@@ -393,19 +422,83 @@ Explanation? explainDiff(String given, String correct) {
   return null;
 }
 
+/// TARJIMA — to'g'ri javobning o'zbekchasi.
+///
+/// Qoidani tushunish uchun avval MA'NOni bilish kerak: o'quvchi
+/// "an apple" nega "an" ekanini o'qishdan oldin uning "olma" ekanini
+/// bilishi shart. [uz] - banddagi tayyor tarjima; bo'lmasa [lookup]
+/// orqali lug'atdan so'zma-so'z qidiriladi.
+Explanation? translationOf(
+  String correct, {
+  String uz = '',
+  String Function(String word)? lookup,
+}) {
+  final answer = correct.trim();
+  if (answer.isEmpty) return null;
+
+  final ready = uz.trim();
+  if (ready.isNotEmpty && _norm(ready) != _norm(answer)) {
+    return Explanation(
+      title: 'Tarjima',
+      text: '"$answer" - $ready',
+      source: 'tr',
+    );
+  }
+  // Avval HAQIQIY lug'at (mazmunli so'zlar), topilmasa - xizmatchi
+  // so'zlar lug'ati. Gapda "an - bitta (unli oldidan)" kabi izohlar
+  // asosiy ma'noni bosib ketmasin.
+  String meaning(String w, {bool core = false}) {
+    final fromDict = lookup?.call(w).trim() ?? '';
+    if (fromDict.isNotEmpty) return fromDict;
+    return core ? (kCoreWords[w] ?? '') : '';
+  }
+
+  // Gap bo'lsa - har bir so'zning ma'nosi (bilmagan so'zi topilsin).
+  final words = _words(answer);
+  List<String> collect({required bool core}) {
+    final out = <String>[];
+    final seen = <String>{};
+    for (final w in words) {
+      if (seen.contains(w)) continue;
+      final m = meaning(w, core: core);
+      if (m.isEmpty) continue;
+      seen.add(w);
+      out.add('$w - $m');
+      if (out.length >= 6) break;
+    }
+    return out;
+  }
+
+  var parts = collect(core: false);
+  if (parts.isEmpty) parts = collect(core: true);
+  if (parts.isEmpty) return null;
+  return Explanation(
+    title: parts.length == 1 ? 'Tarjima' : "So'zlar ma'nosi",
+    text: parts.join(' · '),
+    source: 'tr',
+  );
+}
+
 /// TO'LIQ TUShUNTIRISh — barcha manbalardan eng foydalisi.
 ///
 /// [whyUz] — kitobning o'z izohi (bo'lsa, birinchi o'rinda).
 /// [ruleUz] — bo'lim/mashq qoidasi (`explanationUz`).
 /// [given] — o'quvchi javobi, [correct] — to'g'ri javob.
+/// [uz] — banddagi tarjima, [lookup] — lug'atdan so'z ma'nosi.
 List<Explanation> explainAnswer({
   required String correct,
   String given = '',
   String whyUz = '',
   String ruleUz = '',
+  String uz = '',
+  String Function(String word)? lookup,
   bool isCorrect = false,
 }) {
   final out = <Explanation>[];
+
+  // TARJIMA birinchi: ma'nosiz qoida yodda qolmaydi.
+  final tr = translationOf(correct, uz: uz, lookup: lookup);
+  if (tr != null) out.add(tr);
 
   if (whyUz.trim().isNotEmpty) {
     out.add(Explanation(
@@ -417,14 +510,17 @@ List<Explanation> explainAnswer({
     if (d != null) out.add(d);
   }
 
-  if (out.isEmpty && ruleUz.trim().isNotEmpty) {
+  if (out.where((e) => e.source != 'tr').isEmpty &&
+      ruleUz.trim().isNotEmpty) {
     // Qoida uzun bo'lishi mumkin - birinchi 2 jumla yetadi.
     final r = ruleUz.trim();
     final cut = r.length > 320 ? '${r.substring(0, 317)}...' : r;
     out.add(Explanation(title: 'Qoida', text: cut, source: 'rule'));
   }
 
-  if (out.isEmpty && !isCorrect && correct.trim().isNotEmpty) {
+  if (out.where((e) => e.source != 'tr').isEmpty &&
+      !isCorrect &&
+      correct.trim().isNotEmpty) {
     out.add(Explanation(
       title: 'To\'g\'ri javob',
       text: '"${correct.trim()}" - shu variantni ovoz chiqarib o\'qing va '

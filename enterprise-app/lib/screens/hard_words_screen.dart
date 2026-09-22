@@ -5,6 +5,7 @@ import '../main.dart';
 import '../mistakes.dart';
 import '../teach/explain.dart';
 import '../teach/explain_card.dart';
+import '../teach/vocab_lookup.dart';
 import '../book_content.dart';
 import 'book/exercise_player.dart';
 import '../srs.dart';
@@ -439,6 +440,8 @@ class _MistakeRowState extends State<_MistakeRow> {
       correct: m.answer,
       given: m.given,
       whyUz: m.whyUz,
+      uz: m.promptUz,
+      lookup: meaningOf,
     );
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),

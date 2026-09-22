@@ -9,6 +9,7 @@ import '../../drill/drill_screen.dart' show OptionTile, OptionState;
 import '../../main.dart';
 import '../../stats.dart';
 import '../../teach/explain_card.dart';
+import '../../teach/vocab_lookup.dart';
 import '../../theme.dart';
 import '../../services/speech.dart';
 import '../../services/tts.dart';
@@ -1027,6 +1028,8 @@ class _ChoiceStageState extends State<_ChoiceStage> {
             given: _chosen!,
             whyUz: t.whyUz,
             ruleUz: widget.explanation,
+            uz: t.uz.isNotEmpty ? t.uz : t.promptUz,
+            lookup: meaningOf,
             isCorrect: t.isCorrect(_chosen!),
           ),
       ],
@@ -1275,6 +1278,8 @@ class _BuildStageState extends State<_BuildStage> {
             given: built,
             whyUz: t.whyUz,
             ruleUz: widget.explanation,
+            uz: t.uz.isNotEmpty ? t.uz : t.promptUz,
+            lookup: meaningOf,
             isCorrect: _result!,
           ),
       ],
