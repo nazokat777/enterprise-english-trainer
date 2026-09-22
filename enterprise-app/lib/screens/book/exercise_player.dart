@@ -8,6 +8,7 @@ import '../../content.dart';
 import '../../drill/drill_screen.dart' show OptionTile, OptionState;
 import '../../main.dart';
 import '../../stats.dart';
+import '../../teach/explain_card.dart';
 import '../../theme.dart';
 import '../../services/speech.dart';
 import '../../services/tts.dart';
@@ -1011,36 +1012,20 @@ class _ChoiceStageState extends State<_ChoiceStage> {
               ),
             ),
           ),
-        if (_chosen != null && t.whyUz.isNotEmpty) ...[
-          const SizedBox(height: 6),
-          _WhyCard(text: t.whyUz, correct: t.isCorrect(_chosen!)),
-        ],
+        // Har xato TUShUNTIRILADI: kitob izohi bo'lmasa ham qoida
+        // javob bilan to'g'ri variant farqidan chiqariladi.
+        if (_chosen != null)
+          ExplainCard.forAnswer(
+            correct: t.answer,
+            given: _chosen!,
+            whyUz: t.whyUz,
+            ruleUz: widget.explanation,
+            isCorrect: t.isCorrect(_chosen!),
+          ),
       ],
     );
   }
 
-}
-
-/// Javobdan keyingi "nega shunday" izohi.
-class _WhyCard extends StatelessWidget {
-  final String text;
-  final bool correct;
-  const _WhyCard({required this.text, required this.correct});
-
-  @override
-  Widget build(BuildContext context) {
-    final c = correct ? AppColors.success : AppColors.danger;
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(13),
-      decoration: BoxDecoration(
-        color: c.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(AppRadius.md),
-        border: Border(left: BorderSide(color: c, width: 3)),
-      ),
-      child: Text(text, style: const TextStyle(fontSize: 13, height: 1.5)),
-    );
-  }
 }
 
 // ═══════════════ 2) Yig'ish ═══════════════
@@ -1277,10 +1262,14 @@ class _BuildStageState extends State<_BuildStage> {
               ),
           ],
         ),
-        if (_result != null && t.whyUz.isNotEmpty) ...[
-          const SizedBox(height: 14),
-          _WhyCard(text: t.whyUz, correct: _result!),
-        ],
+        if (_result != null)
+          ExplainCard.forAnswer(
+            correct: t.answer,
+            given: built,
+            whyUz: t.whyUz,
+            ruleUz: widget.explanation,
+            isCorrect: _result!,
+          ),
       ],
     );
   }

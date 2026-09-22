@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../../book_content.dart';
 import '../../reward/reward_widgets.dart';
 import '../../services/tts.dart';
+import '../../teach/explain_card.dart';
 import '../../theme.dart';
 import '../../widgets/correct_burst.dart';
 import 'exercise_player.dart' show ExplanationCard, AudioNoteCard;
@@ -213,6 +214,14 @@ class _TypeStageState extends State<TypeStage> {
               style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
           const SizedBox(height: 4),
           _diff(context),
+          // NEGA xato bo'lgani - qoida bilan (artikl, -s, tartib...).
+          ExplainCard.forAnswer(
+            correct: widget.task.answer,
+            given: _c.text.trim(),
+            whyUz: widget.task.whyUz,
+            ruleUz: widget.explanation,
+            isCorrect: false,
+          ),
         ] else if (_result == null)
           Pressable3D(
             color: AppColors.actionBlue,
