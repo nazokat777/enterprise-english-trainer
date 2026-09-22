@@ -17,7 +17,9 @@ import 'package:enterprise_english/stats.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  setUp(() async {
+  // Bir marta, haqiqiy async (asset o'qish) - testWidgets ichidagi
+  // setUp fake-async zonada asset kutib osilib qolardi.
+  setUpAll(() async {
     SharedPreferences.setMockInitialValues({});
     app.progress = Progress();
     app.mastery = MasteryStore();
@@ -57,12 +59,19 @@ void main() {
     t.view.physicalSize = const Size(500, 1000);
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
+    await t.runAsync(() async {
+      await app.book.setLevel('beginner');
+      await app.progress.setLevel('beginner');
+    });
     await t.pumpWidget(const MaterialApp(home: Scaffold(body: BookUnitsScreen())));
     await t.pump();
     expect(find.text('Enterprise 1 - Beginner'), findsOneWidget);
 
-    await app.book.setLevel('elementary');
-    await app.progress.setLevel('elementary');
+    // Asset o'qish haqiqiy async - fake-async zonada osilib qolmasin.
+    await t.runAsync(() async {
+      await app.book.setLevel('elementary');
+      await app.progress.setLevel('elementary');
+    });
     await t.pump();
     await t.pump(const Duration(milliseconds: 400));
     expect(find.text('Enterprise 2 - Elementary'), findsOneWidget);
