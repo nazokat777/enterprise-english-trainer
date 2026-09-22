@@ -104,6 +104,30 @@ void main() {
     expect(find.text('Elementary — tayyor emas'), findsNothing);
   });
 
+  testWidgets('daraja almashsa yuqoridagi yorliq ham almashadi', (t) async {
+    // XATO: `const _LevelSwitcher()` ota qayta chizilganda o'zi
+    // chizilmasdi - sarlavha "Elementary" bo'lsa ham yorliq "Beginner"
+    // turardi, o'quvchi "o'tmadi" deb o'ylardi.
+    await pumpAt(t, const Size(1280, 800));
+    expect(find.text('Beginner'), findsOneWidget);
+
+    await t.runAsync(() async {
+      await app.book.setLevel('elementary');
+      await app.progress.setLevel('elementary');
+    });
+    await t.pump();
+    expect(find.text('Elementary'), findsOneWidget);
+    expect(find.text('Beginner'), findsNothing);
+
+    await t.runAsync(() async {
+      await app.book.setLevel('beginner');
+      await app.progress.setLevel('beginner');
+    });
+    await t.pump();
+    expect(find.text('Beginner'), findsOneWidget);
+    expect(find.text('Elementary'), findsNothing);
+  });
+
   testWidgets('XP o\'zgarsa yuqori panel yangilanadi', (t) async {
     // XATO: qobiq `main.dart` da `const AppShell()` bo'lgani uchun
     // Flutter uni `identical` deb topib butun subdaraxtni qayta

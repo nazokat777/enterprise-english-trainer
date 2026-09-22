@@ -413,6 +413,16 @@ class _LevelSwitcher extends StatelessWidget {
   const _LevelSwitcher();
   @override
   Widget build(BuildContext context) {
+    // `const _LevelSwitcher()` bo'lgani uchun ota qayta chizilganda bu
+    // widget QAYTA ChIZILMAYDI - yorliq eski darajada qolardi
+    // ("Beginner" turib, sarlavha "Elementary"). O'zi obuna bo'ladi.
+    return ListenableBuilder(
+      listenable: progress,
+      builder: (context, _) => _build(context),
+    );
+  }
+
+  Widget _build(BuildContext context) {
     final label = levelLabel(progress.currentLevel);
     // Daraja KONTENTI bormi — shu yerda hal qilinadi. Ilgari ro'yxat
     // qat'iy edi: bo'sh darajani tanlash mumkin bo'lgani uchun yuqorida
