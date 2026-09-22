@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'levels.dart';
@@ -672,7 +673,10 @@ class UnitBrief {
 }
 
 /// Kitob kontentini asset'lardan yuklaydigan repozitoriy.
-class BookRepository {
+/// Kitob ombori. DARAJA ALMAShSA hamma ekran yangilanishi uchun
+/// `ChangeNotifier`: ilgari `book.units` o'zgarardi, lekin hech kim
+/// xabar olmasdi — Elementary tanlansa ham Beginner ro'yxati turardi.
+class BookRepository extends ChangeNotifier {
   /// Har bir daraja o'z kitob to'plamiga ega — ro'yxat `levels.dart` da.
   ///
   /// Ilgari papka QAT'IY yozilgan edi (`enterprise1`): daraja
@@ -732,6 +736,8 @@ class BookRepository {
     await loadIndex();
   }
 
+
+
   Future<void> loadIndex() async {
     try {
       final s = await rootBundle.loadString('$_dir/index.json');
@@ -748,6 +754,7 @@ class BookRepository {
       units.clear();
       dialogues.clear();
     }
+    notifyListeners();
   }
 
   /// Bitta unitni yuklaydi (keshlanadi).

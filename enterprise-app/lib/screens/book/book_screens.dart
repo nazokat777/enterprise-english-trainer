@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../../book_content.dart';
+import '../../levels.dart';
 import '../../drill/drill_item.dart';
 import '../../drill/drill_screen.dart';
 import '../../lessons/lessons_screen.dart';
@@ -98,6 +99,14 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // book ham tinglanadi: daraja almashsa ro'yxat DARHOL yangilanadi.
+    return ListenableBuilder(
+      listenable: book,
+      builder: (context, _) => _list(context),
+    );
+  }
+
+  Widget _list(BuildContext context) {
     final units = book.units;
     final main = units.where((u) => !u.isInfo).toList();
     final info = units.where((u) => u.isInfo).toList();
@@ -115,7 +124,7 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
         children: [
           EntranceFade(
             child: Text(
-              'Enterprise 1 — Beginner',
+              levelBookTitle(progress.currentLevel),
               style: AppTheme.heading(context),
             ),
           ),

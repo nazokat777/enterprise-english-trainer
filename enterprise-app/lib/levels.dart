@@ -21,11 +21,15 @@ class Level {
   /// Kitob (mashqlar) kontenti papkasi.
   final String bookDir;
 
+  /// Bosh ekran sarlavhasi — "Enterprise 1 - Beginner".
+  final String bookTitle;
+
   const Level({
     required this.id,
     required this.label,
     required this.vocabDir,
     required this.bookDir,
+    required this.bookTitle,
   });
 }
 
@@ -35,12 +39,14 @@ const List<Level> kLevels = [
     label: 'Beginner',
     vocabDir: 'assets/content/beginner',
     bookDir: 'assets/content/enterprise1',
+    bookTitle: 'Enterprise 1 - Beginner',
   ),
   Level(
     id: 'elementary',
     label: 'Elementary',
     vocabDir: 'assets/content/elementary',
     bookDir: 'assets/content/enterprise2',
+    bookTitle: 'Enterprise 2 - Elementary',
   ),
 ];
 
@@ -51,3 +57,5 @@ Level levelById(String id) =>
     kLevels.firstWhere((l) => l.id == id, orElse: () => kLevels.first);
 
 String levelLabel(String id) => levelById(id).label;
+
+String levelBookTitle(String id) => levelById(id).bookTitle;

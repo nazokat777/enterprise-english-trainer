@@ -35,6 +35,20 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   void initState() {
     super.initState();
     _collect();
+    // Daraja almashsa dialoglar ham almashadi.
+    book.addListener(_reload);
+  }
+
+  @override
+  void dispose() {
+    book.removeListener(_reload);
+    super.dispose();
+  }
+
+  void _reload() {
+    if (!mounted) return;
+    setState(() => _items = null);
+    _collect();
   }
 
   Future<void> _collect() async {

@@ -425,11 +425,13 @@ class _LevelSwitcher extends StatelessWidget {
       // Daraja almashsa KITOB ham almashishi kerak — ilgari faqat
       // lug'at almashardi.
       onSelected: (lvl) async {
-        await progress.setLevel(lvl);
+        if (lvl == progress.currentLevel) return;
+        // AVVAL kitob yuklansin, keyin xabar: aks holda ekranlar eski
+        // ro'yxat bilan qayta chiziladi va Beginner ko'rinib qolardi.
         await book.setLevel(lvl);
         mastery.setLevel(lvl);
         mistakes.setLevel(lvl);
-        if (context.mounted) (context as Element).markNeedsBuild();
+        await progress.setLevel(lvl);
       },
       itemBuilder: (_) => [
         for (final lvl in kLevels)
