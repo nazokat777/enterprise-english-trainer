@@ -22,7 +22,7 @@ class TypeStage extends StatefulWidget {
   final ExTask task;
   final String explanation;
   final String audioNote;
-  final ValueChanged<bool> onDone;
+  final void Function(bool ok, {String given}) onDone;
   final VoidCallback? onNearMiss;
   final bool golden;
 
@@ -106,7 +106,7 @@ class _TypeStageState extends State<TypeStage> {
       if (near) {
         widget.onNearMiss!();
       } else {
-        widget.onDone(ok);
+        widget.onDone(ok, given: given);
       }
     });
   }

@@ -48,7 +48,7 @@ class MistakeStore extends ChangeNotifier {
   }
 
   /// Xato javob: band daftarga tushadi (takror bo'lsa sanagich oshadi).
-  Future<void> add(ExTask t, {required String source}) async {
+  Future<void> add(ExTask t, {required String source, String given = ''}) async {
     if (t.prompt.isEmpty || t.answer.isEmpty) return;
     final i = items.indexWhere((m) => m.prompt == t.prompt && m.answer == t.answer);
     if (i >= 0) {
@@ -60,6 +60,7 @@ class MistakeStore extends ChangeNotifier {
         answer: t.answer,
         options: t.options,
         whyUz: t.whyUz,
+        given: given,
         source: source,
         at: DateTime.now(),
       ));
@@ -105,6 +106,9 @@ class MistakeStore extends ChangeNotifier {
 
 class Mistake {
   final String prompt, promptUz, answer, whyUz, source;
+
+  /// O'quvchi YOZGAN (xato) javob — tushuntirish shundan chiqariladi.
+  final String given;
   final List<String> options;
   final int times;
   final DateTime at;
@@ -115,6 +119,7 @@ class Mistake {
     required this.answer,
     this.options = const [],
     this.whyUz = '',
+    this.given = '',
     this.source = '',
     this.times = 1,
     required this.at,
@@ -126,6 +131,7 @@ class Mistake {
         answer: answer,
         options: options,
         whyUz: whyUz,
+        given: given,
         source: source,
         times: times ?? this.times,
         at: at ?? this.at,
@@ -137,6 +143,7 @@ class Mistake {
         'a': answer,
         'o': options,
         'w': whyUz,
+        'g': given,
         's': source,
         't': times,
         'd': at.toIso8601String(),
@@ -148,6 +155,7 @@ class Mistake {
         answer: j['a'] as String? ?? '',
         options: (j['o'] as List? ?? []).map((e) => '$e').toList(),
         whyUz: j['w'] as String? ?? '',
+        given: j['g'] as String? ?? '',
         source: j['s'] as String? ?? '',
         times: (j['t'] as num?)?.toInt() ?? 1,
         at: DateTime.tryParse(j['d'] as String? ?? '') ?? DateTime.now(),

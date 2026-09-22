@@ -74,7 +74,7 @@ void main() {
     final task = memorizeExerciseFrom(study).tasks.last;
     await t.pumpWidget(MaterialApp(
       home: Scaffold(
-        body: TypeStage(task: task, explanation: '', onDone: results.add),
+        body: TypeStage(task: task, explanation: '', onDone: (ok, {String given = ''}) => results.add(ok)),
       ),
     ));
     await t.pump();
@@ -93,7 +93,7 @@ void main() {
             key: const ValueKey('again'),
             task: task,
             explanation: '',
-            onDone: results.add),
+            onDone: (ok, {String given = ''}) => results.add(ok)),
       ),
     ));
     await t.pump();

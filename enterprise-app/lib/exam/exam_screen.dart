@@ -234,7 +234,7 @@ class _ExamScreenState extends State<ExamScreen> {
                   key: ValueKey('y$_pos'),
                   task: it.task!,
                   explanation: '',
-                  onDone: _answer,
+                  onDone: (ok, {String given = ''}) => _answer(ok),
                 )
               : switch (it.q!.format) {
                   AskFormat.build || AskFormat.listen => BuildTask(

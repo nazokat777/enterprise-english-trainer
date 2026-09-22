@@ -111,6 +111,10 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     );
   }
 
+  /// Oxirgi yozilgan/tanlangan javob — xatolar daftariga tushadi va
+  /// tushuntirish shundan chiqariladi.
+  String _lastGiven = '';
+
   /// Hozir so'ralayotgan bandning indeksi.
   int get _index =>
       _queue.isEmpty ? 0 : _queue[_pos.clamp(0, _queue.length - 1)];
@@ -133,7 +137,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   }
 
   /// Band yakunlandi: XP va SRS (lug'at ko'nikmasi).
-  Future<void> _answered(bool ok, {bool nearMiss = false}) async {
+  Future<void> _answered(bool ok, {bool nearMiss = false, String given = ''}) async {
+    _lastGiven = given;
     final taskIndex = _index;
     final firstTime = !_mastered.contains(taskIndex);
     final elapsed = DateTime.now().difference(_shownAt);
@@ -160,7 +165,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       rewards.onAnswer(false, nearMiss: nearMiss);
       _misses[taskIndex] = (_misses[taskIndex] ?? 0) + 1;
       // Xatolar daftari — keyin alohida ishlash uchun.
-      mistakes.add(task, source: ex.bookRef.isNotEmpty ? ex.bookRef : widget.sectionTitle);
+      mistakes.add(task,
+          source: ex.bookRef.isNotEmpty ? ex.bookRef : widget.sectionTitle,
+          given: _lastGiven);
       await _noteWeakWord(ex.tasks[taskIndex]);
     }
 
@@ -886,7 +893,7 @@ class _ChoiceStage extends StatefulWidget {
   final ExTask task;
   final String explanation;
   final String audioNote;
-  final ValueChanged<bool> onDone;
+  final void Function(bool ok, {String given}) onDone;
   final bool golden;
 
   const _ChoiceStage({
@@ -928,7 +935,7 @@ class _ChoiceStageState extends State<_ChoiceStage> {
     if (ok) showCorrectBurst(context, text: cheer(_rnd));
     Tts.instance.speak(widget.task.speakAnswer, id: 'ex');
     _advance = Timer(Duration(milliseconds: ok ? 900 : 1900), () {
-      if (mounted) widget.onDone(ok);
+      if (mounted) widget.onDone(ok, given: o);
     });
   }
 
@@ -1033,7 +1040,7 @@ class _BuildStage extends StatefulWidget {
   final ExTask task;
   final String explanation;
   final String audioNote;
-  final ValueChanged<bool> onDone;
+  final void Function(bool ok, {String given}) onDone;
   final VoidCallback? onNearMiss;
   final bool golden;
 
@@ -1127,7 +1134,7 @@ class _BuildStageState extends State<_BuildStage> {
       if (near) {
         widget.onNearMiss!();
       } else {
-        widget.onDone(ok);
+        widget.onDone(ok, given: built);
       }
     });
   }

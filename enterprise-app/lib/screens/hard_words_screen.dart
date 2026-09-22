@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../content.dart';
 import '../main.dart';
 import '../mistakes.dart';
+import '../teach/explain.dart';
+import '../teach/explain_card.dart';
 import '../book_content.dart';
 import 'book/exercise_player.dart';
 import '../srs.dart';
@@ -417,40 +419,98 @@ class _MistakesSection extends StatelessWidget {
     );
   }
 }
-
-class _MistakeRow extends StatelessWidget {
+class _MistakeRow extends StatefulWidget {
   final Mistake m;
   const _MistakeRow(this.m);
+
+  @override
+  State<_MistakeRow> createState() => _MistakeRowState();
+}
+
+class _MistakeRowState extends State<_MistakeRow> {
+  bool _open = false;
+
   @override
   Widget build(BuildContext context) {
+    final m = widget.m;
+    // Daftardagi har band TUShUNTIRILADI: kitob izohi bo'lmasa,
+    // yozilgan javob bilan to'g'ri variant farqidan qoida chiqariladi.
+    final items = explainAnswer(
+      correct: m.answer,
+      given: m.given,
+      whyUz: m.whyUz,
+    );
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
-      child: Row(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            margin: const EdgeInsets.only(top: 4),
-            width: 6, height: 6,
-            decoration: const BoxDecoration(color: AppColors.danger, shape: BoxShape.circle),
-          ),
-          const SizedBox(width: 8),
-          Expanded(
-            child: RichText(
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              text: TextSpan(
-                style: TextStyle(fontSize: 12.5, color: Theme.of(context).textTheme.bodyMedium?.color),
-                children: [
-                  TextSpan(text: m.prompt, style: const TextStyle(fontWeight: FontWeight.w700)),
-                  TextSpan(text: '   =  ${m.answer}',
-                      style: const TextStyle(color: AppColors.success, fontWeight: FontWeight.w800)),
-                  if (m.times > 1)
-                    TextSpan(text: '  ×${m.times}',
-                        style: const TextStyle(color: AppColors.danger, fontWeight: FontWeight.w800)),
-                ],
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: const EdgeInsets.only(top: 4),
+                width: 6,
+                height: 6,
+                decoration: const BoxDecoration(
+                    color: AppColors.danger, shape: BoxShape.circle),
               ),
-            ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: RichText(
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  text: TextSpan(
+                    style: TextStyle(
+                        fontSize: 12.5,
+                        color: Theme.of(context).textTheme.bodyMedium?.color),
+                    children: [
+                      TextSpan(
+                          text: m.prompt,
+                          style: const TextStyle(fontWeight: FontWeight.w700)),
+                      TextSpan(
+                          text: '   =  ${m.answer}',
+                          style: const TextStyle(
+                              color: AppColors.success,
+                              fontWeight: FontWeight.w800)),
+                      if (m.times > 1)
+                        TextSpan(
+                            text: '  x${m.times}',
+                            style: const TextStyle(
+                                color: AppColors.danger,
+                                fontWeight: FontWeight.w800)),
+                    ],
+                  ),
+                ),
+              ),
+              if (items.isNotEmpty)
+                InkWell(
+                  onTap: () => setState(() => _open = !_open),
+                  borderRadius: BorderRadius.circular(AppRadius.sm),
+                  child: Padding(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(_open ? 'Yopish' : 'Nega?',
+                            style: const TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w800,
+                                color: AppColors.brandPurple)),
+                        Icon(
+                            _open
+                                ? Icons.expand_less_rounded
+                                : Icons.expand_more_rounded,
+                            size: 16,
+                            color: AppColors.brandPurple),
+                      ],
+                    ),
+                  ),
+                ),
+            ],
           ),
+          if (_open) ExplainCard(items: items, correct: false),
         ],
       ),
     );
