@@ -77,4 +77,33 @@ void main() {
     expect(find.text('Enterprise 2 - Elementary'), findsOneWidget);
     expect(find.text('Enterprise 1 - Beginner'), findsNothing);
   });
+
+  testWidgets("kitob taraqqiyoti daraja bo'yicha alohida saqlanadi", (t) async {
+    // XATO: "Davom etish", unit halqalari va imtihon kartasi darajasiz
+    // saqlanardi - Beginner'ga qaytilganda Elementary holati turardi.
+    final p = app.progress;
+    await p.setLevel('beginner');
+    await p.rememberExercise(unit: 3, id: 'b::ex1', label: 'Beginner mashqi');
+    await p.markExerciseResult('b::ex1', clean: true, unit: 3);
+
+    await p.setLevel('elementary');
+    expect(p.lastLabel, isNot('Beginner mashqi'),
+        reason: "Elementary o'z taraqqiyotini ko'rsatadi");
+    expect(p.doneInUnit(3), 0);
+    await p.rememberExercise(unit: 7, id: 'e::ex1', label: 'Elementary mashqi');
+    await p.markExerciseResult('e::ex1', clean: true, unit: 7);
+    expect(p.lastUnitNo, 7);
+
+    await p.setLevel('beginner');
+    expect(p.lastLabel, 'Beginner mashqi');
+    expect(p.lastUnitNo, 3);
+    expect(p.doneInUnit(3), 1);
+    expect(p.doneInUnit(7), 0, reason: "Elementary hisobi o'tib ketmasin");
+
+    // Qayta yuklansa ham saqlanib qoladi.
+    final again = Progress();
+    await again.load();
+    expect(again.currentLevel, 'beginner');
+    expect(again.lastLabel, 'Beginner mashqi');
+  });
 }

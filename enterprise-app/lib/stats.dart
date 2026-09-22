@@ -86,22 +86,8 @@ class Progress extends ChangeNotifier {
     streakFreezeCount = p.getInt('freezes') ?? 0;
     lostStreak = p.getInt('lostStreak') ?? 0;
     lostStreakDate = p.getString('lostStreakDate') ?? '';
-    lastUnitNo = p.getInt('lastUnitNo') ?? 0;
-    lastExerciseId = p.getString('lastExerciseId') ?? '';
-    lastLabel = p.getString('lastLabel') ?? '';
-    reviewUnits
-      ..clear()
-      ..addAll((p.getStringList('reviewUnits') ?? [])
-          .map(int.tryParse)
-          .whereType<int>());
-    unitDone.clear();
-    final ud = p.getString('unitDone');
-    if (ud != null && ud.isNotEmpty) {
-      (json.decode(ud) as Map).forEach((k, v) {
-        final n = int.tryParse(k as String);
-        if (n != null) unitDone[n] = (v as num).toInt();
-      });
-    }
+    // Kitob taraqqiyoti DARAJAGA bog'liq - pastda `_loadBookProgress`
+    // bilan o'qiladi (daraja o'qilgandan keyin).
     lastActiveDate = p.getString('lastActive');
     dailyGoal = p.getInt('dailyGoal') ?? 20;
     todayXp = p.getInt('todayXp') ?? 0;
@@ -109,6 +95,7 @@ class Progress extends ChangeNotifier {
     darkMode = p.getBool('dark') ?? false;
     sfx = p.getBool('sfx') ?? true;
     currentLevel = p.getString('level') ?? kDefaultLevel;
+    _loadBookProgress(p);
     apiKey = p.getString('apiKey') ?? '';
     // Standart: bepul provayder (Gemini); eski Claude kaliti bo'lsa - Claude.
     aiProvider = p.getString('aiProvider') ??
@@ -310,8 +297,48 @@ class Progress extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Daraja bilan bog'langan kalit.
+  String _lk(String k) => '$k::$currentLevel';
+
+  /// KITOB TARAQQIYoTI daraja bo'yicha alohida saqlanadi.
+  ///
+  /// Ilgari `lastUnitNo`, `unitDone`, `reviewUnits` umumiy edi:
+  /// Elementary'dan Beginner'ga qaytilganda "Davom etish" Elementary
+  /// mashqini ko'rsatardi, unit halqalari ham Elementary hisobini -
+  /// o'quvchiga "daraja almashmadi" bo'lib tuyulardi.
+  void _loadBookProgress(SharedPreferences p) {
+    // Eski (darajasiz) kalitlar faqat birinchi daraja uchun - ko'chirish.
+    final legacy = currentLevel == kDefaultLevel;
+    lastUnitNo = p.getInt(_lk('lastUnitNo')) ??
+        (legacy ? p.getInt('lastUnitNo') ?? 0 : 0);
+    lastExerciseId = p.getString(_lk('lastExerciseId')) ??
+        (legacy ? p.getString('lastExerciseId') ?? '' : '');
+    lastLabel = p.getString(_lk('lastLabel')) ??
+        (legacy ? p.getString('lastLabel') ?? '' : '');
+    reviewUnits
+      ..clear()
+      ..addAll((p.getStringList(_lk('reviewUnits')) ??
+              (legacy ? p.getStringList('reviewUnits') ?? const [] : const []))
+          .map(int.tryParse)
+          .whereType<int>());
+    unitDone.clear();
+    final ud = p.getString(_lk('unitDone')) ??
+        (legacy ? p.getString('unitDone') : null);
+    if (ud != null && ud.isNotEmpty) {
+      (json.decode(ud) as Map).forEach((k, v) {
+        final n = int.tryParse(k as String);
+        if (n != null) unitDone[n] = (v as num).toInt();
+      });
+    }
+  }
+
   Future<void> setLevel(String level) async {
+    if (level == currentLevel) return;
+    final p = _prefs;
+    // Eski darajaning kitob taraqqiyoti o'z kalitlariga yozilib qolsin.
+    await _save();
     currentLevel = level;
+    if (p != null) _loadBookProgress(p);
     // Saqlash xato bersa ham (telefonda xotira to'lgan) UI xabar olsin -
     // aks holda yorliq eski darajada qolib, keyingi bosishlar
     // "shu daraja allaqachon" deb o'tkazib yuborilardi.
@@ -540,12 +567,12 @@ class Progress extends ChangeNotifier {
     await p.setInt('freezes', streakFreezeCount);
     await p.setInt('lostStreak', lostStreak);
     await p.setString('lostStreakDate', lostStreakDate);
-    await p.setInt('lastUnitNo', lastUnitNo);
-    await p.setString('lastExerciseId', lastExerciseId);
-    await p.setString('lastLabel', lastLabel);
+    await p.setInt(_lk('lastUnitNo'), lastUnitNo);
+    await p.setString(_lk('lastExerciseId'), lastExerciseId);
+    await p.setString(_lk('lastLabel'), lastLabel);
     await p.setStringList(
-        'reviewUnits', reviewUnits.map((e) => '$e').toList());
-    await p.setString('unitDone',
+        _lk('reviewUnits'), reviewUnits.map((e) => '$e').toList());
+    await p.setString(_lk('unitDone'),
         json.encode(unitDone.map((k, v) => MapEntry('$k', v))));
     if (lastActiveDate != null) await p.setString('lastActive', lastActiveDate!);
     await p.setInt('dailyGoal', dailyGoal);
