@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 import '../../book_content.dart';
 import '../../reward/reward_widgets.dart';
 import '../../services/tts.dart';
+import '../../teach/clarify.dart';
 import '../../teach/explain_card.dart';
+import '../../teach/question_card.dart';
 import '../../teach/vocab_lookup.dart';
 import '../../theme.dart';
 import '../../widgets/correct_burst.dart';
@@ -24,6 +26,10 @@ class TypeStage extends StatefulWidget {
   final String explanation;
   final String audioNote;
   final void Function(bool ok, {String given}) onDone;
+
+  /// Kitob ko'rsatmasi va manzili - "nima qilinadi" qatori uchun.
+  final String instructionUz;
+  final String source;
   final VoidCallback? onNearMiss;
   final bool golden;
 
@@ -33,6 +39,8 @@ class TypeStage extends StatefulWidget {
     required this.explanation,
     this.audioNote = '',
     required this.onDone,
+    this.instructionUz = '',
+    this.source = '',
     this.onNearMiss,
     this.golden = false,
   });
@@ -146,6 +154,12 @@ class _TypeStageState extends State<TypeStage> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
+        QuestionCard(
+          question: clarify(widget.task,
+                  kind: ExKind.text, instructionUz: widget.instructionUz)
+              .question,
+          source: widget.source,
+        ),
         ExplanationCard(text: widget.explanation),
         AudioNoteCard(text: widget.audioNote),
         if (widget.golden) const GoldenBanner(),

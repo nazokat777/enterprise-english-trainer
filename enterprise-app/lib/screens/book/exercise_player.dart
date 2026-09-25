@@ -8,7 +8,9 @@ import '../../content.dart';
 import '../../drill/drill_screen.dart' show OptionTile, OptionState;
 import '../../main.dart';
 import '../../stats.dart';
+import '../../teach/clarify.dart';
 import '../../teach/explain_card.dart';
+import '../../teach/question_card.dart';
 import '../../teach/vocab_lookup.dart';
 import '../../theme.dart';
 import '../../services/speech.dart';
@@ -390,12 +392,12 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           const SizedBox(height: 8),
           Row(
             children: [
+              // KO'RSATMA endi har bandning "Nima qilinadi" kartasida
+              // turadi (manzili bilan) - bu yerda takrorlanmaydi.
+              // Faqat o'qish (study) sahnasida karta yo'q, shuning
+              // uchun u yerda ko'rsatma shu qatorda qoladi.
+              if (ex.kind == ExKind.study)
               Expanded(
-                // Ba'zi ko'rsatmalar juda uzun (280 belgigacha). Tor
-                // telefonda ular sarlavhani cho'zib, o'yin joyini
-                // siqib qo'yardi — "RenderFlex overflowed" chizig'i
-                // chiqardi. Endi uch qatorgacha ko'rsatiladi, bosilsa
-                // to'liq ochiladi (matn yo'qolmaydi).
                 child: GestureDetector(
                   onTap: () => setState(() => _instrOpen = !_instrOpen),
                   child: ConstrainedBox(
@@ -422,7 +424,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                     ),
                   ),
                 ),
-              ),
+              )
+              else
+                const Spacer(),
               if (repeat)
                 Padding(
                   padding: const EdgeInsets.only(right: 8),
@@ -490,6 +494,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           key: ValueKey('c$_index'),
           golden: _golden,
           task: ex.tasks[_index],
+          instructionUz: ex.instructionUz,
+          source: ex.locationLabel(widget.unitLabel),
           explanation: _index == 0 ? ex.explanationUz : '',
           // Audio izohi HAR BIR bandda ko'rinadi: u mashqni qanday
           // yechish kerakligini aytadi ("javoblarni 4-mashqdan
@@ -504,6 +510,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
             key: ValueKey('y$_index'),
             golden: _golden,
             task: ex.tasks[_index],
+            instructionUz: ex.instructionUz,
+            source: ex.locationLabel(widget.unitLabel),
             explanation: _index == 0 ? ex.explanationUz : '',
             audioNote: ex.audioNoteUz,
             onDone: _answered,
@@ -512,6 +520,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
         }
         return _BuildStage(
           key: ValueKey('t$_index'),
+          instructionUz: ex.instructionUz,
+          source: ex.locationLabel(widget.unitLabel),
           golden: _golden,
           task: ex.tasks[_index],
           explanation: _index == 0 ? ex.explanationUz : '',
@@ -521,6 +531,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
         );
       case ExKind.match:
         return _MatchStage(
+          instructionUz: ex.instructionUz,
+          source: ex.locationLabel(widget.unitLabel),
           tasks: ex.tasks,
           explanation: ex.explanationUz,
           audioNote: ex.audioNoteUz,
@@ -897,6 +909,12 @@ class _ChoiceStage extends StatefulWidget {
   final void Function(bool ok, {String given}) onDone;
   final bool golden;
 
+  /// Kitob ko'rsatmasi — savol qatorini yasash uchun.
+  final String instructionUz;
+
+  /// "1-unit · Coursebook 10-bet · Ex. 7" — qaysi mashq ekani.
+  final String source;
+
   const _ChoiceStage({
     super.key,
     required this.task,
@@ -904,6 +922,8 @@ class _ChoiceStage extends StatefulWidget {
     this.audioNote = '',
     required this.onDone,
     this.golden = false,
+    this.instructionUz = '',
+    this.source = '',
   });
 
   @override
@@ -916,12 +936,24 @@ class _ChoiceStageState extends State<_ChoiceStage> {
   String? _chosen;
   Timer? _advance;
 
+  /// Tozalangan band: savol, matn va TO'LIQ variantlar.
+  late final ClearTask _clear = clarify(
+    widget.task,
+    kind: ExKind.choice,
+    instructionUz: widget.instructionUz,
+  );
+
   @override
   void initState() {
     super.initState();
-    _options = List.of(widget.task.options)..shuffle(_rnd);
-    if (_options.isEmpty) _options = [widget.task.answer];
+    _options = List.of(_clear.options)..shuffle(_rnd);
+    if (_options.isEmpty) _options = [_clear.answer];
   }
+
+  /// Variant to'g'rimi (tozalangan javob bilan solishtiriladi).
+  bool _isRight(String o) =>
+      o.trim().toLowerCase() == _clear.answer.trim().toLowerCase() ||
+      widget.task.isCorrect(o);
 
   @override
   void dispose() {
@@ -931,7 +963,7 @@ class _ChoiceStageState extends State<_ChoiceStage> {
 
   void _tap(String o) {
     if (_chosen != null) return;
-    final ok = widget.task.isCorrect(o);
+    final ok = _isRight(o);
     setState(() => _chosen = o);
     if (ok) showCorrectBurst(context, text: cheer(_rnd));
     Tts.instance.speak(widget.task.speakAnswer, id: 'ex');
@@ -947,9 +979,16 @@ class _ChoiceStageState extends State<_ChoiceStage> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
+        // NIMA SO'RALYaPTI - har bandda, o'zbekcha.
+        QuestionCard(
+          question: _clear.question,
+          hint: _clear.hint,
+          source: widget.source,
+        ),
         ExplanationCard(text: widget.explanation),
         AudioNoteCard(text: widget.audioNote),
         if (widget.golden) const GoldenBanner(),
+        if (_clear.stem.trim().isNotEmpty)
         Container(
           width: double.infinity,
           padding: const EdgeInsets.all(20),
@@ -970,10 +1009,10 @@ class _ChoiceStageState extends State<_ChoiceStage> {
                 const SizedBox(height: 12),
               ],
               Text(
-                t.prompt,
+                _clear.stem,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: t.prompt.length > 40 ? 17 : 24,
+                  fontSize: _clear.stem.length > 40 ? 17 : 24,
                   height: 1.4,
                   fontWeight: FontWeight.w800,
                   color: dark ? AppColors.darkHeading : AppColors.lightHeading,
@@ -1011,7 +1050,7 @@ class _ChoiceStageState extends State<_ChoiceStage> {
                 text: _options[i],
                 state: _chosen == null
                     ? OptionState.idle
-                    : t.isCorrect(_options[i])
+                    : _isRight(_options[i])
                         ? OptionState.right
                         : _options[i] == _chosen
                             ? OptionState.wrong
@@ -1024,13 +1063,13 @@ class _ChoiceStageState extends State<_ChoiceStage> {
         // javob bilan to'g'ri variant farqidan chiqariladi.
         if (_chosen != null)
           ExplainCard.forAnswer(
-            correct: t.answer,
+            correct: _clear.answer,
             given: _chosen!,
             whyUz: t.whyUz,
             ruleUz: widget.explanation,
             uz: t.uz.isNotEmpty ? t.uz : t.promptUz,
             lookup: meaningOf,
-            isCorrect: t.isCorrect(_chosen!),
+            isCorrect: _isRight(_chosen!),
           ),
       ],
     );
@@ -1046,6 +1085,8 @@ class _BuildStage extends StatefulWidget {
   final void Function(bool ok, {String given}) onDone;
   final VoidCallback? onNearMiss;
   final bool golden;
+  final String instructionUz;
+  final String source;
 
   const _BuildStage({
     super.key,
@@ -1055,6 +1096,8 @@ class _BuildStage extends StatefulWidget {
     required this.onDone,
     this.onNearMiss,
     this.golden = false,
+    this.instructionUz = '',
+    this.source = '',
   });
 
   @override
@@ -1150,6 +1193,12 @@ class _BuildStageState extends State<_BuildStage> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
+        QuestionCard(
+          question: clarify(widget.task,
+                  kind: ExKind.text, instructionUz: widget.instructionUz)
+              .question,
+          source: widget.source,
+        ),
         ExplanationCard(text: widget.explanation),
         AudioNoteCard(text: widget.audioNote),
         if (widget.golden) const GoldenBanner(),
@@ -1301,12 +1350,18 @@ class _MatchStage extends StatefulWidget {
   /// aldamchi edi: o'quvchi qancha qolganini bilolmasdi.
   final void Function(int done, int total)? onProgress;
 
+  /// Ko'rsatma va manzil - "Nima qilinadi" kartasi uchun.
+  final String instructionUz;
+  final String source;
+
   const _MatchStage({
     required this.tasks,
     required this.explanation,
     this.audioNote = '',
     required this.onDone,
     this.onProgress,
+    this.instructionUz = '',
+    this.source = '',
   });
 
   @override
@@ -1405,6 +1460,12 @@ class _MatchStageState extends State<_MatchStage> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 24),
       children: [
+        QuestionCard(
+          question: widget.instructionUz.trim().isEmpty
+              ? 'Juftlarni moslang'
+              : widget.instructionUz.trim(),
+          source: widget.source,
+        ),
         ExplanationCard(text: widget.explanation),
         AudioNoteCard(text: widget.audioNote),
         if (_roundCount > 1) ...[
