@@ -5,6 +5,7 @@ import 'content.dart';
 import 'book_content.dart';
 import 'mastery.dart';
 import 'mistakes.dart';
+import 'plan/plan_store.dart';
 import 'reward/reward_engine.dart';
 import 'reward/reward_overlay.dart';
 import 'reward/sfx.dart';
@@ -29,6 +30,9 @@ late ContentRepository repo;
 
 /// Enterprise kitobi kontenti (unit'lar, mashqlar, qoidalar).
 late BookRepository book;
+
+/// Mnemonika xaritasi (kitobni muddatda tugatish rejasi) — `plan/plan_store.dart`.
+PlanStore plans = PlanStore();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

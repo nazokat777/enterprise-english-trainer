@@ -261,6 +261,10 @@ void main() {
     });
 
     testWidgets('to\'g\'ri javob keyingi savolga o\'tkazadi', (t) async {
+      // "Nima qilinadi" kartasi qo'shilgach izoh pastroqda - baland ekran.
+      t.view.physicalSize = const Size(800, 1600);
+      t.view.devicePixelRatio = 1.0;
+      addTearDown(t.view.reset);
       final ex = unit.sections.first.exercises[0];
       await t.pumpWidget(_wrap(
           ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at')));

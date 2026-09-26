@@ -9,6 +9,7 @@ import '../widgets/geo_bg.dart';
 import 'hard_words_screen.dart';
 import 'level_reference_screens.dart';
 import 'units_screen.dart';
+import '../plan/mnemonics_screen.dart';
 import 'book/book_screens.dart';
 import 'book/conversations_screen.dart';
 import 'tutor_setup_screen.dart';
@@ -47,6 +48,7 @@ class _AppShellState extends State<AppShell> {
 
   static const List<(IconData, String)> _items = [
     (Icons.school_rounded, 'Darslar'),
+    (Icons.psychology_alt_rounded, 'Mnemonika'),
     (Icons.style_rounded, 'Lug\'at'),
     (Icons.priority_high_rounded, 'Qiyin so\'zlar'),
     (Icons.rule_rounded, 'Grammatika'),
@@ -237,20 +239,22 @@ class _AppShellState extends State<AppShell> {
       case 0:
         return const BookUnitsScreen(); // Enterprise kitobi — asosiy kurs
       case 1:
-        return const UnitsScreen(); // lug'at pack'lari (SRS)
+        return const MnemonicsScreen(); // kitobni muddatda tugatish rejasi
       case 2:
-        return const HardWordsScreen(); // qayta-qayta unutilgan so\'zlar
+        return const UnitsScreen(); // lug'at pack'lari (SRS)
       case 3:
-        return const LevelGrammarScreen(); // daraja grammatikasi
+        return const HardWordsScreen(); // qayta-qayta unutilgan so\'zlar
       case 4:
-        return const LevelWordFormationScreen(); // so'z oilalari
+        return const LevelGrammarScreen(); // daraja grammatikasi
       case 5:
-        return const ConversationsScreen(); // kitobdagi barcha dialoglar
+        return const LevelWordFormationScreen(); // so'z oilalari
       case 6:
-        return const TutorSetupScreen(); // AI o'qituvchi: fe'l, ovoz, so'ng suhbat
+        return const ConversationsScreen(); // kitobdagi barcha dialoglar
       case 7:
-        return const SettingsScreen();
+        return const TutorSetupScreen(); // AI o'qituvchi: fe'l, ovoz, so'ng suhbat
       case 8:
+        return const SettingsScreen();
+      case 9:
         return const HelpScreen();
       default:
         return _Placeholder(title: _items[_sel].$2);
