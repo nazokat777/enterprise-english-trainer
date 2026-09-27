@@ -53,7 +53,7 @@ void main() {
   });
 
   testWidgets('reja yo\'q -> muddat tanlash; tanlangach cheklist', (t) async {
-    t.view.physicalSize = const Size(420, 2600);
+    t.view.physicalSize = const Size(420, 4200);
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
 
@@ -66,6 +66,9 @@ void main() {
     expect(find.text('Kitobni necha kunda tugatasiz?'), findsOneWidget);
     expect(find.text('2 oy'), findsOneWidget);
     expect(find.text('Tavsiya'), findsOneWidget);
+    // Yangi o'quvchi uchun darsliklar ro'yxati.
+    expect(find.text('Mnemonika darsliklari'), findsOneWidget);
+    expect(find.textContaining('3 prinsip'), findsOneWidget);
     expect(t.takeException(), isNull);
 
     await t.tap(find.text('2 oy'));

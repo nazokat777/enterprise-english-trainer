@@ -12,6 +12,7 @@ import '../speak/pronunciation_screen.dart';
 import '../theme.dart';
 import '../widgets/hover_lift.dart';
 import '../widgets/pressable3d.dart';
+import 'mnemonic_videos.dart';
 import 'study_plan.dart';
 
 const _months = [
@@ -101,6 +102,11 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
         const SizedBox(height: 14),
         _VolumeCard(v: v),
         const SizedBox(height: 14),
+        // Rejasi yo'q (yangi) o'quvchiga avval darsliklar - tushunib boshlasin.
+        if (_plan == null) ...[
+          const MnemonicVideosCard(),
+          const SizedBox(height: 14),
+        ],
         if (_plan == null)
           _DurationPicker(v: v, onPick: _start)
         else ...[
@@ -123,6 +129,10 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
         ],
         const SizedBox(height: 10),
         const _MethodCard(),
+        if (_plan != null) ...[
+          const SizedBox(height: 14),
+          const MnemonicVideosCard(),
+        ],
       ],
     );
   }
