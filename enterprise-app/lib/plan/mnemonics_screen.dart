@@ -571,7 +571,7 @@ class _TodayCard extends StatelessWidget {
                             fontWeight: FontWeight.w900, fontSize: 18)),
                     Text(
                       'Tugash: ${uzDate(plan.finishDate)} · '
-                      '${(status.ratio * 100).round()}% bajarildi',
+                      '${status.done} / ${status.total} band bajarildi',
                       style: TextStyle(
                           fontSize: 12.5, color: AppColors.muted(context)),
                     ),

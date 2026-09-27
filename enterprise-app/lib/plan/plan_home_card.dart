@@ -82,7 +82,7 @@ class _PlanHomeCardState extends State<PlanHomeCard> {
       final day = p.dayIndex(DateTime.now());
       final st = planStatus(schedule, day, plans.isDone);
       ratio = st.ratio;
-      title = '${day + 1}-kun / ${p.days} · ${(st.ratio * 100).round()}%';
+      title = '${day + 1}-kun / ${p.days} · ${st.done}/${st.total} band';
       sub = st.behind > 0
           ? '${st.behind} ta band ortda · tugash: ${uzDate(p.finishDate)}'
           : 'Reja bo\'yicha · tugash: ${uzDate(p.finishDate)}';
