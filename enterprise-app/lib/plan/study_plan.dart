@@ -6,7 +6,7 @@ import 'dart:math';
 /// Davronbek Turdiev tahlilidagi 1-prinsip: "ko'p / kam" emas — HAJMni
 /// bil. Kitobda nechta so'z, dars, qoida borligi aniq sanaladi, o'quvchi
 /// muddat tanlaydi, reja kunlarga bo'linadi. Har kuni cheklist:
-/// yangi so'zlar (ilgak + obraz) → qoida → oraliqli takror → o'zbekchasidan
+/// yangi so'zlar (ilgak + obraz) -> qoida -> oraliqli takror -> o'zbekchasidan
 /// inglizchasini topish → ovoz chiqarib aytish → uxlashdan oldin takror.
 ///
 /// Bu fayl SOF hisob: UI va disk bilan ishlamaydi — test qilinadi.

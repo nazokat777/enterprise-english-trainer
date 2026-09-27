@@ -85,6 +85,11 @@ void main() {
     expect(find.text('Yangi so\'zlar'), findsOneWidget);
     expect(find.text('Oraliqli takror'), findsOneWidget);
     expect(find.text('Xarita'), findsOneWidget);
+    // Grammatika - alohida bo'lim, so'zlar cheklistida qoida yo'q.
+    expect(find.text('Grammatika'), findsOneWidget);
+    expect(find.text('0 / 51'), findsOneWidget);
+    expect(find.text('Bugungi qoida'), findsOneWidget);
+    expect(find.textContaining('Qoida: '), findsNothing);
     // Unit oldi o'lchovi taklifi.
     expect(find.text("Unit o'lchovi"), findsOneWidget);
     expect(find.textContaining("Oldingi o'lchov"), findsOneWidget);

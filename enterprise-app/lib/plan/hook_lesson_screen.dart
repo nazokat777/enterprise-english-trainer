@@ -378,7 +378,7 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
                 Text(
                   _scene.text.trim().isNotEmpty
                       ? _scene.text.trim()
-                      : (h.isNotEmpty ? '$h  →  ${w.uz}' : w.uz),
+                      : (h.isNotEmpty ? '$h  ->  ${w.uz}' : w.uz),
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                       fontSize: 15, fontWeight: FontWeight.w700, height: 1.4),

@@ -68,7 +68,7 @@ void main() {
     await app.progress
         .markExerciseResult('ex::cb::1::b', clean: true, unit: brief.unit);
 
-    t.view.physicalSize = const Size(500, 900);
+    t.view.physicalSize = const Size(500, 2400);
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
     await t.pumpWidget(

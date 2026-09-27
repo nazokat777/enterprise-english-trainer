@@ -135,6 +135,8 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
             onChanged: _load,
           ),
           const SizedBox(height: 14),
+          _GrammarCard(v: v, plan: _plan, onChanged: _load),
+          const SizedBox(height: 14),
           _UnitMeasureCard(v: v, plan: _plan!),
           const SizedBox(height: 14),
           _Roadmap(v: v, plan: _plan!),
@@ -469,7 +471,6 @@ class _TodayCard extends StatelessWidget {
     final status = planStatus(schedule, day, plans.isDone);
     final items = todayItems(schedule, day, plans.isDone);
     final lessons = items.where((e) => e.kind == PlanKind.lesson).toList();
-    final rules = items.where((e) => e.kind == PlanKind.rule).toList();
     final lessonsDone = lessons.where(plans.isDone).length;
     final fading = mastery.fadingCount();
     final evening = MemoryRescue.isEvening(now) && MemoryRescue.tonight(mastery) != null;
@@ -489,14 +490,6 @@ class _TodayCard extends StatelessWidget {
             : () => _openLesson(context,
                 lessons.firstWhere((e) => !plans.isDone(e))),
       ),
-      for (final r in rules)
-        _CheckRow(
-          emoji: '📐',
-          title: 'Qoida: ${r.title}',
-          subtitle: 'O\'qing, misolni ovoz chiqarib ayting, mashqni bajaring.',
-          done: plans.isDone(r),
-          action: plans.isDone(r) ? null : () => _openRule(context, r),
-        ),
       if (freshAt != null) _tenMinuteRow(context, now),
       _CheckRow(
         emoji: '🔁',
@@ -602,7 +595,7 @@ class _TodayCard extends StatelessWidget {
             ),
             child: Text(
               minimalDone
-                  ? '✓ Minimal planka bajarildi - bugun zanjir uzilmadi.'
+                  ? 'Minimal planka bajarildi - bugun zanjir uzilmadi.'
                   : "Vaqt yo'qmi? Eng kamida 1 ta dars (~5 daqiqa) - zanjirni "
                       "uzmang. Har kuni oz - haftada bir ko'pdan kuchli.",
               style: TextStyle(
@@ -710,27 +703,6 @@ class _TodayCard extends StatelessWidget {
         ),
       );
     }
-    onChanged();
-  }
-
-  Future<void> _openRule(BuildContext context, PlanItem it) async {
-    final s = plans.ruleSection(it);
-    final u = plans.unitOf(it.unit);
-    if (s == null || s.exercises.isEmpty) return;
-    final first = s.exercises.firstWhere(
-        (e) => !progress.isDone(e.progressId),
-        orElse: () => s.exercises.first);
-    await Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (_) => ExercisePlayer(
-          exercise: first,
-          sectionTitle: s.titleUz.isNotEmpty ? s.titleUz : s.title,
-          unitLabel: u?.displayLabel ?? '',
-          siblings: s.exercises,
-        ),
-      ),
-    );
     onChanged();
   }
 
@@ -877,6 +849,197 @@ class _CheckRow extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+/// Qoida bo'limini ochadi (o'qish + mashq).
+Future<void> openRule(BuildContext context, PlanItem it) async {
+  final s = plans.ruleSection(it);
+  final u = plans.unitOf(it.unit);
+  if (s == null || s.exercises.isEmpty) return;
+  final first = s.exercises.firstWhere(
+      (e) => !progress.isDone(e.progressId),
+      orElse: () => s.exercises.first);
+  await Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (_) => ExercisePlayer(
+        exercise: first,
+        sectionTitle: s.titleUz.isNotEmpty ? s.titleUz : s.title,
+        unitLabel: u?.displayLabel ?? '',
+        siblings: s.exercises,
+      ),
+    ),
+  );
+}
+
+// ═════════════════ GRAMMATIKA - alohida yo'l ═════════════════
+/// Grammatika so'zlardan ALOHIDA: o'z hajmi va foizi, bugungi qoida(lar),
+/// barcha qoidalar unitlar bo'yicha (bajarilgani belgilangan). Reja
+/// kunlariga teng taqsimlangan; ortda qolgani bugunga qo'shiladi.
+class _GrammarCard extends StatefulWidget {
+  final BookVolume v;
+  final StudyPlan? plan;
+  final VoidCallback onChanged;
+  const _GrammarCard(
+      {required this.v, required this.plan, required this.onChanged});
+
+  @override
+  State<_GrammarCard> createState() => _GrammarCardState();
+}
+
+class _GrammarCardState extends State<_GrammarCard> {
+  bool _all = false;
+
+  Future<void> _open(PlanItem it) async {
+    await openRule(context, it);
+    widget.onChanged();
+    if (mounted) setState(() {});
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final v = widget.v;
+    final muted = AppColors.muted(context);
+    final rules = planItems(v).where((e) => e.kind == PlanKind.rule).toList();
+    final done = rules.where(plans.isDone).length;
+    final p = widget.plan;
+    final today = <PlanItem>[];
+    if (p != null) {
+      final s = buildSchedule(v, p.days);
+      today.addAll(todayItems(s, p.dayIndex(DateTime.now()), plans.isDone)
+          .where((e) => e.kind == PlanKind.rule));
+    }
+    final perDay = p == null ? null : paceFor(v, p.days).rulesPerDay;
+
+    Widget ruleRow(PlanItem r, {bool showUnit = false}) {
+      final ok = plans.isDone(r);
+      return InkWell(
+        onTap: () => _open(r),
+        borderRadius: BorderRadius.circular(AppRadius.sm),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
+          child: Row(
+            children: [
+              Icon(ok ? Icons.check_circle_rounded : Icons.circle_outlined,
+                  size: 20, color: ok ? AppColors.success : muted),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  showUnit ? '${r.unit}-unit · ${r.title}' : r.title,
+                  style: TextStyle(
+                    fontSize: 13.5,
+                    fontWeight: FontWeight.w700,
+                    decoration: ok ? TextDecoration.lineThrough : null,
+                    color: ok ? muted : null,
+                  ),
+                ),
+              ),
+              Icon(Icons.chevron_right_rounded, size: 18, color: muted),
+            ],
+          ),
+        ),
+      );
+    }
+
+    final byUnit = <int, List<PlanItem>>{};
+    for (final r in rules) {
+      (byUnit[r.unit] ??= []).add(r);
+    }
+
+    return SurfaceCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Text('📐', style: TextStyle(fontSize: 20)),
+              const SizedBox(width: 8),
+              const Expanded(
+                child: Text('Grammatika',
+                    style:
+                        TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
+              ),
+              Text('$done / ${rules.length}',
+                  style: const TextStyle(
+                      fontWeight: FontWeight.w900, color: AppColors.success)),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            "${rules.length} ta qoida · ${fmt(v.grammarExercises)} ta mashq"
+            "${perDay == null ? '' : ' · ${_rulePace(perDay)}'}. So'zlardan "
+            "alohida: qoidani o'qing, misolni ovoz chiqarib ayting, o'z "
+            "gapingizni tuzing, mashqni bajaring.",
+            style: TextStyle(fontSize: 12.5, height: 1.45, color: muted),
+          ),
+          const SizedBox(height: 8),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(AppRadius.pill),
+            child: LinearProgressIndicator(
+              value: rules.isEmpty ? 0 : done / rules.length,
+              minHeight: 6,
+              backgroundColor: AppColors.success.withValues(alpha: 0.12),
+              valueColor: const AlwaysStoppedAnimation(AppColors.success),
+            ),
+          ),
+          if (p != null) ...[
+            const SizedBox(height: 12),
+            const Text('Bugungi qoida',
+                style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13.5)),
+            const SizedBox(height: 2),
+            if (today.isEmpty)
+              Text("Bugun yangi qoida yo'q - so'zlarga e'tibor bering.",
+                  style: TextStyle(fontSize: 12.5, color: muted))
+            else
+              for (final r in today) ruleRow(r, showUnit: true),
+          ],
+          const SizedBox(height: 6),
+          InkWell(
+            onTap: () => setState(() => _all = !_all),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 6),
+              child: Row(
+                children: [
+                  Flexible(
+                    child: Text(
+                        _all
+                            ? 'Yopish'
+                            : "Barcha qoidalar (unitlar bo'yicha)",
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w800,
+                            color: AppColors.brandPurple)),
+                  ),
+                  Icon(
+                      _all
+                          ? Icons.expand_less_rounded
+                          : Icons.expand_more_rounded,
+                      color: AppColors.brandPurple),
+                ],
+              ),
+            ),
+          ),
+          if (_all)
+            for (final e in byUnit.entries) ...[
+              Padding(
+                padding: const EdgeInsets.only(top: 8, bottom: 2),
+                child: Text(
+                    '${e.key}-unit · ${e.value.where(plans.isDone).length}/${e.value.length}',
+                    style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w900,
+                        color: muted)),
+              ),
+              for (final r in e.value) ruleRow(r),
+            ],
+        ],
+      ),
+    );
+  }
+
+  static String _rulePace(double perDay) {
+    if (perDay >= 1) return 'kuniga ${perDay.round()} ta';
+    return '${(1 / perDay).round()} kunda 1 ta';
   }
 }
 
