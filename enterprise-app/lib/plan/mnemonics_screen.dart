@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../drill/drill_item.dart';
-import '../drill/drill_screen.dart';
 import '../lessons/lesson_screen.dart';
 import '../main.dart';
 import '../memory/memory.dart';
@@ -17,6 +16,7 @@ import '../widgets/pressable3d.dart';
 import 'hook_lesson_screen.dart';
 import 'mnemonic_videos.dart';
 import 'peg_screen.dart';
+import 'recall_screen.dart';
 import 'study_plan.dart';
 
 const _months = [
@@ -659,9 +659,9 @@ class _TodayCard extends StatelessWidget {
     await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => DrillScreen(
+        builder: (_) => RecallScreen(
           title: '10 daqiqadan keyin eslash',
-          lessonSources: src,
+          words: src,
         ),
       ),
     );
@@ -741,9 +741,9 @@ class _TodayCard extends StatelessWidget {
     await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => DrillScreen(
+        builder: (_) => RecallScreen(
           title: 'O\'zbekchasidan inglizchasini toping',
-          lessonSources: src,
+          words: src,
         ),
       ),
     );
