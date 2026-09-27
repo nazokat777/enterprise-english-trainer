@@ -20,7 +20,10 @@ class PlanStore extends ChangeNotifier {
   Future<SharedPreferences> get _p async =>
       _prefs ??= await SharedPreferences.getInstance();
 
-  String get level => progress.currentLevel;
+  /// Kitob darajasi - kontentning manbai. Daraja almashganda kitob
+  /// AVVAL yuklanadi, keyin progress: agar progress darajasi olinsa,
+  /// oraliqda yangi kitob eski daraja kaliti ostida keshlanib qolardi.
+  String get level => book.level;
 
   // ─────────── Reja ───────────
   Future<StudyPlan?> plan() async =>

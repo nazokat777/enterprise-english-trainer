@@ -134,4 +134,50 @@ void main() {
     expect(r.$1, '2/10');
     expect(r.$2, '9/10');
   });
+
+  testWidgets('Elementary: Enterprise 2 hajmi, reja va grammatika alohida', (t) async {
+    await t.runAsync(() async {
+      await app.book.setLevel('elementary');
+      await app.progress.setLevel('elementary');
+    });
+    final v = (await t.runAsync(() => app.plans.volume()))!;
+    expect(v.level, 'elementary');
+    expect(v.bookTitle, 'Enterprise 2 - Elementary');
+    expect(v.units.length, 15);
+    expect(v.lessons, 779);
+    expect(v.rules, 63);
+    expect(v.grammarExercises, 486);
+
+    // Beginner rejasi Elementary'ga o'tmaydi - har daraja o'zinikini.
+    final pEl = await t.runAsync(() => app.plans.plan());
+    expect(pEl, isNull);
+
+    t.view.physicalSize = const Size(420, 4200);
+    t.view.devicePixelRatio = 1.0;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(const MaterialApp(home: Scaffold(body: MnemonicsScreen())));
+    await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
+    await t.pump();
+    expect(find.textContaining('Enterprise 2 - Elementary'), findsOneWidget);
+    expect(find.text('779'), findsOneWidget);
+
+    await t.tap(find.text('6 oy'));
+    await t.pump();
+    await t.tap(find.textContaining('Rejani boshlash'));
+    await t.runAsync(() => Future.delayed(const Duration(milliseconds: 400)));
+    await t.pump();
+    await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
+    await t.pump();
+    expect(find.text('1-kun / 180'), findsOneWidget);
+    expect(find.text('0 / 63'), findsOneWidget);
+    expect(t.takeException(), isNull);
+
+    // Beginner'ga qaytsa - uning 2 oylik rejasi joyida.
+    await t.runAsync(() async {
+      await app.book.setLevel('beginner');
+      await app.progress.setLevel('beginner');
+    });
+    final pBeg = await t.runAsync(() => app.plans.plan());
+    expect(pBeg?.days, 60);
+  });
 }
