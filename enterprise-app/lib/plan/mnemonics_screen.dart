@@ -12,7 +12,9 @@ import '../speak/pronunciation_screen.dart';
 import '../theme.dart';
 import '../widgets/hover_lift.dart';
 import '../widgets/pressable3d.dart';
+import 'hook_lesson_screen.dart';
 import 'mnemonic_videos.dart';
+import 'peg_screen.dart';
 import 'study_plan.dart';
 
 const _months = [
@@ -127,6 +129,8 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
             ),
           ),
         ],
+        const SizedBox(height: 10),
+        const _PracticeCard(),
         const SizedBox(height: 10),
         const _MethodCard(),
         if (_plan != null) ...[
@@ -453,8 +457,8 @@ class _TodayCard extends StatelessWidget {
         subtitle: lessons.isEmpty
             ? 'Bugungi darslar yo\'q'
             : '${lessons.length} ta dars · ~${fmt(lessons.length * v.wordsPerLesson)} so\'z '
-                '($lessonsDone/${lessons.length} bajarildi). Har so\'zga ilgak: '
-                'tovushi o\'xshash o\'zbekcha so\'z + g\'alati sahna.',
+                '($lessonsDone/${lessons.length} bajarildi). Ilgak darsi: har so\'zga '
+                'o\'xshash o\'zbekcha so\'z + sahna, keyin yopib eslaysiz.',
         done: lessons.isNotEmpty && lessonsDone == lessons.length,
         action: lessons.every(plans.isDone)
             ? null
@@ -579,20 +583,35 @@ class _TodayCard extends StatelessWidget {
     onChanged();
   }
 
+  /// Yangi so'zlar: AVVAL ilgak darsi (mnemonika amalda: ilgak, sahna,
+  /// tasavvur, yopib eslash), keyin mustahkamlash darsi (4 shakl).
   Future<void> _openLesson(BuildContext context, PlanItem it) async {
     final l = plans.lessonOf(it);
     final u = plans.unitOf(it.unit);
     if (l == null || u == null) return;
+    var goOn = false;
     await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => LessonScreen(
+        builder: (_) => HookLessonScreen(
           lesson: l,
           unitLabel: u.displayLabel,
-          pool: sourcesFromUnit(u),
+          onFinished: () => goOn = true,
         ),
       ),
     );
+    if (goOn && context.mounted) {
+      await Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => LessonScreen(
+            lesson: l,
+            unitLabel: u.displayLabel,
+            pool: sourcesFromUnit(u),
+          ),
+        ),
+      );
+    }
     onChanged();
   }
 
@@ -892,6 +911,43 @@ class _RoadRow extends StatelessWidget {
               ],
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+// ═════════════════ Amaliy mashq ═════════════════
+class _PracticeCard extends StatelessWidget {
+  const _PracticeCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return SurfaceCard(
+      onTap: () => Navigator.push(
+          context, MaterialPageRoute(builder: (_) => const PegScreen())),
+      child: Row(
+        children: [
+          const Text('🎯', style: TextStyle(fontSize: 28)),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text('Mnemonikani sinab ko\'ring (10 daqiqa)',
+                    style:
+                        TextStyle(fontWeight: FontWeight.w900, fontSize: 14.5)),
+                const SizedBox(height: 3),
+                Text(
+                  'Qarmoq usuli: avval oddiy usulda 10 so\'z, keyin usul bilan '
+                  '- natija necha barobar oshganini o\'zingiz ko\'rasiz.',
+                  style: TextStyle(
+                      fontSize: 12.5, color: AppColors.muted(context)),
+                ),
+              ],
+            ),
+          ),
+          const Icon(Icons.chevron_right_rounded),
         ],
       ),
     );
