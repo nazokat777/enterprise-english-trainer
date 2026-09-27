@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../drill/drill_item.dart';
@@ -53,7 +55,10 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
   BookVolume? _v;
   StudyPlan? _plan;
   Set<String> _marks = {};
+  List<String> _freshIds = const [];
+  DateTime? _freshAt;
   bool _loading = true;
+  Timer? _tick;
 
   @override
   void initState() {
@@ -61,10 +66,15 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
     _load();
     plans.addListener(_load);
     book.addListener(_reset);
+    // 10 daqiqalik qaytish vaqti kelganda qator o'zi ochilsin.
+    _tick = Timer.periodic(const Duration(seconds: 30), (_) {
+      if (mounted) setState(() {});
+    });
   }
 
   @override
   void dispose() {
+    _tick?.cancel();
     plans.removeListener(_load);
     book.removeListener(_reset);
     super.dispose();
@@ -77,11 +87,14 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
     final v = await plans.volume();
     final p = await plans.plan();
     final m = await plans.doneToday();
+    final f = await plans.fresh();
     if (!mounted) return;
     setState(() {
       _v = v;
       _plan = p;
       _marks = m;
+      _freshIds = f.$1;
+      _freshAt = f.$2;
       _loading = false;
     });
   }
@@ -116,6 +129,8 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
             v: v,
             plan: _plan!,
             marks: _marks,
+            freshIds: _freshIds,
+            freshAt: _freshAt,
             onChanged: _load,
           ),
           const SizedBox(height: 14),
@@ -430,11 +445,17 @@ class _TodayCard extends StatelessWidget {
   final Set<String> marks;
   final VoidCallback onChanged;
 
+  /// 10 daqiqa oldin o'rganilgan so'zlar (bugun) va vaqti.
+  final List<String> freshIds;
+  final DateTime? freshAt;
+
   const _TodayCard({
     required this.v,
     required this.plan,
     required this.marks,
     required this.onChanged,
+    this.freshIds = const [],
+    this.freshAt,
   });
 
   @override
@@ -473,6 +494,7 @@ class _TodayCard extends StatelessWidget {
           done: plans.isDone(r),
           action: plans.isDone(r) ? null : () => _openRule(context, r),
         ),
+      if (freshAt != null) _tenMinuteRow(context, now),
       _CheckRow(
         emoji: '🔁',
         title: 'Oraliqli takror',
@@ -523,6 +545,8 @@ class _TodayCard extends StatelessWidget {
       ),
     ];
     final counted = rows.where((r) => !r.optional).toList();
+    // MINIMAL PLANKA: "eng yomon kunda ham" - 1 dars. Zanjir uzilmaydi.
+    final minimalDone = lessonsDone > 0 || marks.isNotEmpty;
     final doneCount = counted.where((r) => r.done).length;
 
     final behind = status.behind;
@@ -564,12 +588,81 @@ class _TodayCard extends StatelessWidget {
                 fontWeight: FontWeight.w700,
                 color: behind > 0 ? AppColors.homework : AppColors.success,
               )),
+          const SizedBox(height: 8),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+            decoration: BoxDecoration(
+              color: (minimalDone ? AppColors.success : AppColors.coin)
+                  .withValues(alpha: 0.1),
+              borderRadius: BorderRadius.circular(AppRadius.sm),
+            ),
+            child: Text(
+              minimalDone
+                  ? '✓ Minimal planka bajarildi - bugun zanjir uzilmadi.'
+                  : "Vaqt yo'qmi? Eng kamida 1 ta dars (~5 daqiqa) - zanjirni "
+                      "uzmang. Har kuni oz - haftada bir ko'pdan kuchli.",
+              style: TextStyle(
+                fontSize: 12.5,
+                fontWeight: FontWeight.w700,
+                color: minimalDone ? AppColors.success : AppColors.homework,
+              ),
+            ),
+          ),
           const SizedBox(height: 10),
           const Text('Bugungi cheklist',
               style: TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
           const SizedBox(height: 6),
           for (final r in rows) r,
         ],
+      ),
+    );
+  }
+
+  /// 10 DAQIQADAN KEYIN ESLASH - yangi so'zlarni birinchi marta qaytarish.
+  _CheckRow _tenMinuteRow(BuildContext context, DateTime now) {
+    final at = freshAt!;
+    final id = 'tenmin::${at.millisecondsSinceEpoch}';
+    final left = at.add(const Duration(minutes: 10)).difference(now);
+    final ready = left.isNegative || left.inSeconds == 0;
+    final done = marks.contains(id);
+    return _CheckRow(
+      emoji: '⏱️',
+      title: '10 daqiqadan keyin eslash',
+      subtitle: done
+          ? 'Bajarildi - endi 1 kundan keyin qaytadi.'
+          : ready
+              ? "Hozirgina o'rgangan ${freshIds.length} ta so'zni yopib eslang. "
+                  'Birinchi qaytish - eng muhimi.'
+              : '${left.inMinutes + 1} daqiqadan keyin ochiladi (unutish egri '
+                  "chizig'i eng tik joyida).",
+      done: done,
+      optional: !ready && !done,
+      action: done || !ready
+          ? null
+          : () => _track(context, id, (c) => _openFresh(c)),
+    );
+  }
+
+  Future<void> _openFresh(BuildContext context) async {
+    final src = <DrillSource>[];
+    final ids = freshIds.toSet();
+    final schedule = buildSchedule(v, plan.days);
+    for (final day in schedule) {
+      for (final it in day) {
+        if (it.kind != PlanKind.lesson || !it.itemIds.any(ids.contains)) continue;
+        final l = plans.lessonOf(it);
+        if (l != null) src.addAll(l.sources.where((s) => ids.contains(s.itemId)));
+      }
+    }
+    if (src.isEmpty) return;
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => DrillScreen(
+          title: '10 daqiqadan keyin eslash',
+          lessonSources: src,
+        ),
       ),
     );
   }
@@ -600,6 +693,8 @@ class _TodayCard extends StatelessWidget {
         ),
       ),
     );
+    // Ilgak darsi o'tildi - 10 daqiqadan keyin qaytarish uchun eslab qolamiz.
+    if (goOn) await plans.rememberFresh(l.itemIds);
     if (goOn && context.mounted) {
       await Navigator.push(
         context,

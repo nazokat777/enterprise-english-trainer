@@ -82,6 +82,8 @@ void main() {
     expect(find.text('Yangi so\'zlar'), findsOneWidget);
     expect(find.text('Oraliqli takror'), findsOneWidget);
     expect(find.text('Xarita'), findsOneWidget);
+    // Minimal planka eslatmasi.
+    expect(find.textContaining('Eng kamida 1 ta dars'), findsOneWidget);
     expect(t.takeException(), isNull);
 
     final p = await t.runAsync(() => app.plans.plan());
@@ -104,5 +106,13 @@ void main() {
     await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
     await t.pump();
     expect(t.takeException(), isNull);
+  });
+
+  test("10 daqiqalik qaytish: bugungi so'zlar eslab qolinadi", () async {
+    await app.plans.rememberFresh(['w::a', 'w::b']);
+    final f = await app.plans.fresh();
+    expect(f.$1, ['w::a', 'w::b']);
+    expect(f.$2, isNotNull);
+    expect(DateTime.now().difference(f.$2!).inMinutes, lessThan(1));
   });
 }

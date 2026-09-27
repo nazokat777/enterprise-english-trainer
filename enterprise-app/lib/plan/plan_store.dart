@@ -53,6 +53,27 @@ class PlanStore extends ChangeNotifier {
     notifyListeners();
   }
 
+  // ─────────── 10 daqiqalik qaytish ───────────
+  /// Yangi o'rganilgan so'zlar va vaqti: 10 daqiqadan keyin bir marta
+  /// yopib eslash (videodagi jadvalning 1-qadami: 10 daq -> 1 -> 3 -> 7 kun).
+  Future<void> rememberFresh(List<String> itemIds) async {
+    final p = await _p;
+    await p.setStringList('plan_fresh::$level', itemIds);
+    await p.setInt('plan_fresh_at::$level', DateTime.now().millisecondsSinceEpoch);
+    notifyListeners();
+  }
+
+  /// (so'zlar, qachon o'rganilgan) — bugun bo'lmasa bo'sh.
+  Future<(List<String>, DateTime?)> fresh() async {
+    final p = await _p;
+    final ids = p.getStringList('plan_fresh::$level') ?? const [];
+    final ms = p.getInt('plan_fresh_at::$level');
+    if (ids.isEmpty || ms == null) return (const <String>[], null);
+    final at = DateTime.fromMillisecondsSinceEpoch(ms);
+    if (ymd(at) != ymd(DateTime.now())) return (const <String>[], null);
+    return (ids, at);
+  }
+
   // ─────────── Hajm ───────────
   /// Kitob hajmi — asosiy unitlar (qo'shimcha: epizod, test, lug'at
   /// ro'yxati kirmaydi). Darslar ilovadagi so'z darslari bilan AYNAN bir
