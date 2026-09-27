@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../drill/drill_item.dart';
 import '../lessons/lesson_screen.dart';
+import '../lessons/word_lesson.dart';
 import '../main.dart';
 import '../memory/memory.dart';
 import '../memory/memory_widgets.dart';
@@ -133,6 +134,8 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
             freshAt: _freshAt,
             onChanged: _load,
           ),
+          const SizedBox(height: 14),
+          _UnitMeasureCard(v: v, plan: _plan!),
           const SizedBox(height: 14),
           _Roadmap(v: v, plan: _plan!),
           const SizedBox(height: 6),
@@ -872,6 +875,138 @@ class _CheckRow extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+// ═════════════════ Unit oldi / keyingi o'lchov ═════════════════
+/// "Avval test -> usul -> qayta test": o'quvchi o'sishni RAQAMDA ko'radi.
+/// Har unitdan 10 ta so'z (darslar bo'ylab teng tanlangan - har safar bir
+/// xil), unit boshida va tugagach yopib eslanadi.
+class _UnitMeasureCard extends StatefulWidget {
+  final BookVolume v;
+  final StudyPlan plan;
+  const _UnitMeasureCard({required this.v, required this.plan});
+
+  @override
+  State<_UnitMeasureCard> createState() => _UnitMeasureCardState();
+}
+
+class _UnitMeasureCardState extends State<_UnitMeasureCard> {
+  String? _pre, _post;
+  int? _unit;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  int? _currentUnit() {
+    final s = buildSchedule(widget.v, widget.plan.days);
+    final today = widget.plan.dayIndex(DateTime.now());
+    for (var d = today; d < s.length; d++) {
+      for (final it in s[d]) {
+        if (!plans.isDone(it)) return it.unit;
+      }
+    }
+    return s.isNotEmpty && s[today].isNotEmpty ? s[today].first.unit : null;
+  }
+
+  Future<void> _load() async {
+    final u = _currentUnit();
+    if (u == null) return;
+    final r = await plans.unitTests(u);
+    if (!mounted) return;
+    setState(() {
+      _unit = u;
+      _pre = r.$1;
+      _post = r.$2;
+    });
+  }
+
+  List<DrillSource> _sample(int unit) {
+    final bu = plans.unitOf(unit);
+    if (bu == null) return const [];
+    final all = [for (final l in lessonsOf(bu)) ...l.sources];
+    if (all.length <= 10) return all;
+    final step = all.length / 10;
+    return [for (var i = 0; i < 10; i++) all[(i * step).floor()]];
+  }
+
+  Future<void> _run(bool post) async {
+    final u = _unit;
+    if (u == null) return;
+    final words = _sample(u);
+    if (words.isEmpty) return;
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => RecallScreen(
+          title: post ? 'Unit yakuni o\'lchovi' : 'Unit oldi o\'lchovi',
+          words: words,
+          measure: true,
+          onScore: (c, t) => plans.saveUnitTest(u, post, c, t),
+        ),
+      ),
+    );
+    await _load();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final u = _unit;
+    if (u == null) return const SizedBox.shrink();
+    final uv = widget.v.units.where((e) => e.unit == u).firstOrNull;
+    if (uv == null) return const SizedBox.shrink();
+    final unitDone = uv.lessons.every((l) => l.isNotEmpty && mastery.allStrong(l));
+    final muted = AppColors.muted(context);
+
+    String text;
+    String? button;
+    VoidCallback? onTap;
+    if (_pre == null) {
+      text = '${uv.label}ni boshlashdan OLDIN: shu unitdagi 10 ta so\'zdan '
+          'nechtasini bilasiz? Tugagach qayta o\'lchaymiz - o\'sishni ko\'rasiz.';
+      button = 'Oldingi o\'lchov (1 daqiqa)';
+      onTap = () => _run(false);
+    } else if (_post == null && unitDone) {
+      text = '${uv.label} tugadi! Boshida $_pre edi. Endi o\'sha so\'zlarni '
+          'qayta tekshiramiz.';
+      button = 'Yakuniy o\'lchov';
+      onTap = () => _run(true);
+    } else if (_post == null) {
+      text = '${uv.label}: boshida $_pre. Unit tugagach yakuniy o\'lchov ochiladi.';
+    } else {
+      int n(String s) => int.tryParse(s.split('/').first) ?? 0;
+      final grow = n(_post!) - n(_pre!);
+      text = '${uv.label}: oldin $_pre  ->  keyin $_post'
+          '${grow > 0 ? '  (+$grow so\'z!)' : ''}';
+    }
+    return SurfaceCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Text('📏', style: TextStyle(fontSize: 18)),
+              SizedBox(width: 8),
+              Text('Unit o\'lchovi',
+                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(text, style: TextStyle(fontSize: 13, height: 1.45, color: muted)),
+          if (button != null) ...[
+            const SizedBox(height: 10),
+            FilledButton.icon(
+              onPressed: onTap,
+              icon: const Icon(Icons.timer_outlined, size: 18),
+              label: Text(button),
+            ),
+          ],
+        ],
       ),
     );
   }

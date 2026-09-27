@@ -77,11 +77,17 @@ void main() {
     await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
     await t.pump();
 
+    // Unit o'lchovi kartasi o'z natijasini asinxron o'qiydi.
+    await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
+    await t.pump();
     expect(find.text('1-kun / 60'), findsOneWidget);
     expect(find.text('Bugungi cheklist'), findsOneWidget);
     expect(find.text('Yangi so\'zlar'), findsOneWidget);
     expect(find.text('Oraliqli takror'), findsOneWidget);
     expect(find.text('Xarita'), findsOneWidget);
+    // Unit oldi o'lchovi taklifi.
+    expect(find.text("Unit o'lchovi"), findsOneWidget);
+    expect(find.textContaining("Oldingi o'lchov"), findsOneWidget);
     // Minimal planka eslatmasi.
     expect(find.textContaining('Eng kamida 1 ta dars'), findsOneWidget);
     expect(t.takeException(), isNull);
@@ -114,5 +120,13 @@ void main() {
     expect(f.$1, ['w::a', 'w::b']);
     expect(f.$2, isNotNull);
     expect(DateTime.now().difference(f.$2!).inMinutes, lessThan(1));
+  });
+
+  test("unit o'lchovi saqlanadi", () async {
+    await app.plans.saveUnitTest(1, false, 2, 10);
+    await app.plans.saveUnitTest(1, true, 9, 10);
+    final r = await app.plans.unitTests(1);
+    expect(r.$1, '2/10');
+    expect(r.$2, '9/10');
   });
 }

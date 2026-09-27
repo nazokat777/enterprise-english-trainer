@@ -74,6 +74,23 @@ class PlanStore extends ChangeNotifier {
     return (ids, at);
   }
 
+  // ─────────── Unit oldi / keyingi test ───────────
+  /// (oldin, keyin) natijalar "to'g'ri/jami" ko'rinishida; yo'q bo'lsa null.
+  Future<(String?, String?)> unitTests(int unit) async {
+    final p = await _p;
+    return (
+      p.getString('unit_test::$level::$unit::pre'),
+      p.getString('unit_test::$level::$unit::post'),
+    );
+  }
+
+  Future<void> saveUnitTest(int unit, bool post, int correct, int total) async {
+    final p = await _p;
+    await p.setString(
+        'unit_test::$level::$unit::${post ? 'post' : 'pre'}', '$correct/$total');
+    notifyListeners();
+  }
+
   // ─────────── Hajm ───────────
   /// Kitob hajmi — asosiy unitlar (qo'shimcha: epizod, test, lug'at
   /// ro'yxati kirmaydi). Darslar ilovadagi so'z darslari bilan AYNAN bir

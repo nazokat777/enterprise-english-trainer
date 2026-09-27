@@ -19,7 +19,19 @@ import '../widgets/pressable3d.dart';
 class RecallScreen extends StatefulWidget {
   final String title;
   final List<DrillSource> words;
-  const RecallScreen({super.key, required this.title, required this.words});
+
+  /// O'LChOV rejimi (unit oldi/keyingi test): xato so'z qaytmaydi, SRS'ga
+  /// yozilmaydi, natija [onScore] ga beriladi.
+  final bool measure;
+  final void Function(int correct, int total)? onScore;
+
+  const RecallScreen({
+    super.key,
+    required this.title,
+    required this.words,
+    this.measure = false,
+    this.onScore,
+  });
 
   @override
   State<RecallScreen> createState() => _RecallScreenState();
@@ -51,8 +63,10 @@ class _RecallScreenState extends State<RecallScreen> {
     final ok = _norm(_c.text) == _norm(w.en);
     setState(() => _ok = ok);
     Tts.instance.speak(w.en, id: w.itemId);
-    await mastery.record(w.itemId, AskFormat.produce,
-        ok: ok, en: w.en, uz: w.uz);
+    if (!widget.measure) {
+      await mastery.record(w.itemId, AskFormat.produce,
+          ok: ok, en: w.en, uz: w.uz);
+    }
     if (ok) {
       if (!_missed.contains(w.itemId)) _firstTry++;
       if (mounted) showCorrectBurst(context);
@@ -61,8 +75,8 @@ class _RecallScreenState extends State<RecallScreen> {
     } else {
       rewards.onAnswer(false);
       _missed.add(w.itemId);
-      // Xato so'z oxirida QAYTADI.
-      _queue.add(w);
+      // Xato so'z oxirida QAYTADI (o'lchovda - yo'q).
+      if (!widget.measure) _queue.add(w);
     }
   }
 
@@ -75,6 +89,7 @@ class _RecallScreenState extends State<RecallScreen> {
     if (_pos >= _queue.length) {
       rewards.onExerciseDone(clean: _missed.isEmpty);
       progress.addXp(5);
+      widget.onScore?.call(_firstTry, widget.words.length);
     }
   }
 
