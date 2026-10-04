@@ -241,12 +241,17 @@ class BookExercise {
 
   String get title => ref.isEmpty ? 'Mashq' : 'Ex. $ref';
 
-  /// Qaysi kitobning qaysi beti: "Coursebook · 7-bet".
+  /// Qaysi kitobning qaysi beti: "Enterprise 1 · Coursebook · 7-bet".
   /// Bet raqamsiz bo'lsa (modul muqovasi) — yorliq ishlatiladi.
   String get sourceLabel =>
-      '${_bookLabel[book] ?? book} · ${pageLabel.isNotEmpty ? pageLabel : "$bookPage-bet"}';
+      '$bookName · ${_bookLabel[book] ?? book} · ${pageLabel.isNotEmpty ? pageLabel : "$bookPage-bet"}';
 
-  /// To'liq manzil: "1-unit · Coursebook · 7-bet · Ex. 5".
+  /// Hozirgi daraja kitobining qisqa nomi ("Enterprise 1", "Enterprise 2") -
+  /// Coursebook/Workbook ikkala kitobda ham bor, shuning uchun qaysi
+  /// Enterprise ekani yozilishi shart. [BookRepository.setLevel] yangilaydi.
+  static String bookName = levelBookTitle(kDefaultLevel).split(' - ').first;
+
+  /// To'liq manzil: "1-unit · Enterprise 1 · Coursebook · 7-bet · Ex. 5".
   /// O'quvchi kitobning qayerini ochishini aniq biladi.
   /// [unitLabel] — "1-unit" yoki hikoya betlari uchun "1-epizod".
   String locationLabel(String unitLabel) =>
@@ -313,7 +318,7 @@ class BookSection {
   /// "Coursebook, 6-bet" — o'quvchi kitobning qayerini ochishini biladi.
   /// Bet raqamsiz bo'lsa (modul muqovasi) — yorliq ishlatiladi.
   String get sourceLabel =>
-      '${_bookLabel[book] ?? book}, ${pageLabel.isNotEmpty ? pageLabel : "$bookPage-bet"}';
+      '${BookExercise.bookName} · ${_bookLabel[book] ?? book}, ${pageLabel.isNotEmpty ? pageLabel : "$bookPage-bet"}';
 
   /// Kitob nomi (ko'rinadigan shakl).
   String get bookLabel => _bookLabel[book] ?? book;
@@ -389,7 +394,7 @@ class BookPage {
 
   /// "Coursebook · 7-bet" (raqamsiz betda — "Coursebook · modul muqovasi")
   String get label =>
-      '$bookLabel · ${pageLabel.isNotEmpty ? pageLabel : "$bookPage-bet"}';
+      '${BookExercise.bookName} · $bookLabel · ${pageLabel.isNotEmpty ? pageLabel : "$bookPage-bet"}';
 
   /// "1-unit · Coursebook · 7-bet"
   String get fullLabel =>
@@ -732,6 +737,7 @@ class BookRepository extends ChangeNotifier {
   Future<void> setLevel(String level) async {
     if (_level == level) return;
     _level = level;
+    BookExercise.bookName = levelBookTitle(level).split(' - ').first;
     _cache.clear();
     await loadIndex();
   }

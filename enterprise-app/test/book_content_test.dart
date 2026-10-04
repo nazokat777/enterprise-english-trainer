@@ -137,7 +137,7 @@ void main() {
     test('manba kitob va bet saqlanadi', () {
       expect(unit.sections.first.book, 'coursebook');
       expect(unit.sections.first.bookPage, 6);
-      expect(unit.sections.first.sourceLabel, 'Coursebook, 6-bet');
+      expect(unit.sections.first.sourceLabel, 'Enterprise 1 · Coursebook, 6-bet');
     });
   });
 

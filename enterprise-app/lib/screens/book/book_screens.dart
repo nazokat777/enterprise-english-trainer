@@ -1255,7 +1255,7 @@ class BookPagesScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '${p.bookLabel} · ${p.bookPage}-bet',
+                        '${BookExercise.bookName} · ${p.bookLabel} · ${p.bookPage}-bet',
                         style: const TextStyle(
                           fontWeight: FontWeight.w800,
                           fontSize: 15,
@@ -1301,7 +1301,7 @@ class BookPageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('${page.bookLabel} · ${page.bookPage}-bet')),
+      appBar: AppBar(title: Text('${BookExercise.bookName} · ${page.bookLabel} · ${page.bookPage}-bet')),
       body: AnimatedBuilder(
         animation: progress,
         builder: (context, _) => ListView(

@@ -198,8 +198,8 @@ void main() {
       expect(find.text('Coursebook'), findsOneWidget);
       expect(find.text('Grammar'), findsOneWidget);
       // Bet yozuvida ham kitob nomi bor — "7-bet" o'zi yetarli emas edi.
-      expect(find.text('Coursebook · 7-bet'), findsOneWidget);
-      expect(find.text('Grammar · 4-bet'), findsOneWidget);
+      expect(find.text('Enterprise 1 · Coursebook · 7-bet'), findsOneWidget);
+      expect(find.text('Enterprise 1 · Grammar · 4-bet'), findsOneWidget);
     });
 
     testWidgets('bet ekrani to\'liq manzil va mashqlarni ko\'rsatadi',
@@ -209,7 +209,7 @@ void main() {
       await t.pump();
 
       // To'liq manzil: "1-unit · Coursebook · 7-bet"
-      expect(find.text('1-unit · Coursebook · 7-bet'), findsOneWidget);
+      expect(find.text('1-unit · Enterprise 1 · Coursebook · 7-bet'), findsOneWidget);
       // Betdagi barcha mashqlar
       expect(find.text('Ex. 5'), findsOneWidget);
       expect(find.text('Ex. 6'), findsOneWidget);
@@ -222,8 +222,8 @@ void main() {
       await t.pumpWidget(_wrap(BookPageScreen(page: page)));
       await t.pump();
 
-      expect(find.text('1-unit · Coursebook · 7-bet · Ex. 5'), findsOneWidget);
-      expect(find.text('1-unit · Coursebook · 7-bet · Ex. 6'), findsOneWidget);
+      expect(find.text('1-unit · Enterprise 1 · Coursebook · 7-bet · Ex. 5'), findsOneWidget);
+      expect(find.text('1-unit · Enterprise 1 · Coursebook · 7-bet · Ex. 6'), findsOneWidget);
     });
   });
 
@@ -235,7 +235,7 @@ void main() {
 
       expect(find.text('Ex. 5'), findsOneWidget);
       expect(find.text('Ex. 6'), findsOneWidget);
-      expect(find.text('Coursebook, 7-bet'), findsOneWidget);
+      expect(find.text('Enterprise 1 · Coursebook, 7-bet'), findsOneWidget);
       // O'yin turi belgilari
       expect(find.text('Tanlash'), findsOneWidget);
       expect(find.text('Yig\'ish'), findsOneWidget);
@@ -418,7 +418,7 @@ void main() {
       expect(find.text('to be'), findsOneWidget);
       expect(find.text('Qoida tushuntirishi'), findsOneWidget);
       expect(find.text('Ehtiyot bo\'ling'), findsOneWidget);
-      expect(find.text('📖 Grammar, 4-bet'), findsOneWidget);
+      expect(find.text('📖 Enterprise 1 · Grammar, 4-bet'), findsOneWidget);
     });
 
     testWidgets('so\'z yasalishi ekrani juftlarni ko\'rsatadi', (t) async {
