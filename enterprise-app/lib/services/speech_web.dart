@@ -48,7 +48,7 @@ class Speech {
           final r = results.item(i);
           if (r.isFinal) {
             final t = r.item(0).transcript.trim();
-            if (t.isNotEmpty) ctrl.add(t);
+            if (t.isNotEmpty && !ctrl.isClosed) ctrl.add(t);
           }
         }
       }).toJS;
@@ -63,16 +63,36 @@ class Speech {
         _listening = false;
         if (!ctrl.isClosed) ctrl.close();
       }).toJS;
-      rec.onerror = ((web.Event _) {
+      rec.onerror = ((web.Event e) {
+        // Xato (eshitilmadi / ruxsat yo'q / tarmoq) - oqimni DARHOL yopamiz.
+        // Ilgari faqat bayroq o'chardi va onend kelmasa ekran "Eshityapman"
+        // da qotib qolardi.
+        if (_rec != rec) return;
+        var code = 'error';
+        try {
+          code = (e as web.SpeechRecognitionErrorEvent).error;
+        } catch (_) {}
+        // Erkin (uzluksiz) rejimda jimlik/uzilish xato emas - onend
+        // tinglashni o'zi qayta yoqadi; aks holda gapning davomi eshitilmaydi.
+        if (_continuous && (code == 'no-speech' || code == 'aborted')) return;
         _listening = false;
+        if (!ctrl.isClosed) {
+          ctrl.addError(code);
+          ctrl.close();
+        }
       }).toJS;
       _rec = rec;
       _listening = true;
       rec.start();
     } catch (e) {
       _listening = false;
-      ctrl.addError(e);
-      ctrl.close();
+      // Tinglovchi hali ulanmagan - xatoni keyingi mikrotaskda beramiz,
+      // aks holda broadcast oqim uni yo'qotadi va UI qotib qoladi.
+      scheduleMicrotask(() {
+        if (ctrl.isClosed) return;
+        ctrl.addError(e);
+        ctrl.close();
+      });
     }
     return ctrl.stream;
   }
@@ -84,7 +104,9 @@ class Speech {
     _rec = null;
     if (r != null) {
       try {
-        r.stop();
+        // abort: mikrofonni darrov bo'shatadi - keyingi urinish
+        // "hali tugamagan" sessiyaga urilmaydi.
+        r.abort();
       } catch (_) {}
     }
     final o = _out;

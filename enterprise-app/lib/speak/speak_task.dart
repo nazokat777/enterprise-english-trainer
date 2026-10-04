@@ -38,6 +38,7 @@ class _SpeakTaskState extends State<SpeakTask>
   bool _listening = false;
   String _heard = '';
   int _tries = 0;
+  int _noHear = 0;
   bool? _ok;
   bool _error = false;
   late final AnimationController _pulse = AnimationController(
@@ -66,8 +67,7 @@ class _SpeakTaskState extends State<SpeakTask>
     _sub?.cancel();
     _error = false;
     _sub = _speech.start().listen(_onHeard, onError: (_) {
-      _error = true;
-      _stop();
+      _stop(noHear: true);
     }, onDone: () {
       // Natijasiz tugadi (ruxsat yo'q / jimlik) - foydalanuvchiga ayt.
       if (mounted && _listening) {
@@ -78,13 +78,22 @@ class _SpeakTaskState extends State<SpeakTask>
       }
     });
     _timeout?.cancel();
-    _timeout = Timer(const Duration(seconds: 7), _stop);
+    _timeout = Timer(const Duration(seconds: 7), () => _stop(noHear: true));
   }
 
-  void _stop() {
+  /// [noHear] - hech narsa eshitilmadi: ekran "Eshitilmadi" deydi va
+  /// mikrofon tugmasi darhol qayta bosiladi (qotib qolmaydi).
+  void _stop({bool noHear = false}) {
     _timeout?.cancel();
     _speech.stop();
-    if (mounted) setState(() => _listening = false);
+    if (!mounted) return;
+    setState(() {
+      _listening = false;
+      if (noHear && _heard.isEmpty) {
+        _error = true;
+        _noHear += 1;
+      }
+    });
   }
 
   void _onHeard(String t) {
@@ -219,7 +228,7 @@ class _SpeakTaskState extends State<SpeakTask>
               child: TextButton.icon(
                 onPressed: widget.locked ? null : widget.onSkip,
                 icon: const Icon(Icons.skip_next_rounded, size: 18),
-                label: Text(_tries >= 2
+                label: Text(_tries >= 2 || _noHear >= 1
                     ? 'O\'tkazib yuborish'
                     : 'Mikrofon yo\'q - o\'tkazish'),
               ),

@@ -52,6 +52,7 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
 
   @override
   void dispose() {
+    _silence?.cancel();
     _speechSub?.cancel();
     _speech.stop();
     _input.dispose();
@@ -60,30 +61,69 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
     super.dispose();
   }
 
+  Timer? _silence;
+  final StringBuffer _said = StringBuffer();
+
+  /// Erkin rejimda gap bir necha bo'lak bo'lib keladi (har pauzada
+  /// brauzer yakuniy natija beradi). Ilgari birinchi bo'lakdayoq
+  /// tinglash to'xtardi va gapning qolgani eshitilmasdi. Endi bo'laklar
+  /// yig'iladi, ~2 soniya jimlikdan keyin bir butun yuboriladi.
   void _listen() {
     if (!Speech.supported || _busy) return;
     Tts.instance.stop();
     final free = tutorPrefs.voiceMode == 'free';
     _speechSub?.cancel();
+    _silence?.cancel();
+    _said.clear();
     setState(() => _listening = true);
+
+    void flush() {
+      _silence?.cancel();
+      final text = _said.toString().trim();
+      _said.clear();
+      _speech.stop();
+      if (!mounted) return;
+      setState(() => _listening = false);
+      if (text.isNotEmpty) _send(text);
+    }
+
     _speechSub = _speech
         .start(continuous: free, lang: 'en-US')
         .listen((text) {
       if (!mounted) return;
-      if (free) _speech.stop();
-      setState(() => _listening = false);
-      _send(text);
+      if (!free) {
+        setState(() => _listening = false);
+        _send(text);
+        return;
+      }
+      if (_said.isNotEmpty) _said.write(' ');
+      _said.write(text);
+      _silence?.cancel();
+      _silence = Timer(const Duration(milliseconds: 2000), flush);
     }, onError: (_) {
-      if (mounted) setState(() => _listening = false);
+      if (free && _said.isNotEmpty) {
+        flush();
+      } else if (mounted) {
+        setState(() => _listening = false);
+      }
     }, onDone: () {
-      if (mounted) setState(() => _listening = false);
+      if (free && _said.isNotEmpty) {
+        flush();
+      } else if (mounted) {
+        setState(() => _listening = false);
+      }
     });
   }
 
   void _stopListening() {
+    _silence?.cancel();
+    final rest = _said.toString().trim();
+    _said.clear();
     _speechSub?.cancel();
     _speech.stop();
     if (mounted) setState(() => _listening = false);
+    // Tugmani bosib to'xtatsa - shu paytgacha aytilgani yuboriladi.
+    if (rest.isNotEmpty && mounted) _send(rest);
   }
 
   Future<void> _load() async {
