@@ -83,9 +83,15 @@ class _PlanHomeCardState extends State<PlanHomeCard> {
       final st = planStatus(schedule, day, plans.isDone);
       ratio = st.ratio;
       title = '${day + 1}-kun / ${p.days} · ${st.done}/${st.total} band';
-      sub = st.behind > 0
-          ? '${st.behind} ta band ortda · tugash: ${uzDate(p.finishDate)}'
-          : 'Reja bo\'yicha · tugash: ${uzDate(p.finishDate)}';
+      // Kunlik eslatma: bugun nima qolganini ochiq aytadi.
+      final left = todayItems(schedule, day, plans.isDone)
+          .where((e) => !plans.isDone(e))
+          .length;
+      final today = left == 0
+          ? 'Bugungi reja bajarildi, barakalla!'
+          : 'Bugun $left ta band qoldi (~${left * 5} daqiqa)';
+      sub = '$today · tugash: ${uzDate(p.finishDate)}'
+          '${st.behind > 0 ? ' · ${st.behind} ta ortda' : ''}';
     }
 
     return Padding(

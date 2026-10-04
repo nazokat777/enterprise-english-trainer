@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../drill/drill_item.dart';
 import '../drill/drill_screen.dart';
 import '../main.dart';
+import '../plan/hook_suggest.dart' show approxSound;
 import '../stats.dart';
 import '../mastery.dart';
 import '../memory/memory.dart';
@@ -49,10 +50,10 @@ class LessonScreen extends StatefulWidget {
   State<LessonScreen> createState() => _LessonScreenState();
 }
 
-enum _Stage { intro, quiz, done }
+enum _Stage { list, intro, quiz, done }
 
 class _LessonScreenState extends State<LessonScreen> {
-  _Stage _stage = _Stage.intro;
+  _Stage _stage = _Stage.list;
   int _card = 0;
   late final LessonSession _s;
   Timer? _next;
@@ -85,9 +86,14 @@ class _LessonScreenState extends State<LessonScreen> {
     );
     if (widget.rescue) {
       _stage = _s.isDone ? _Stage.done : _Stage.quiz;
-    } else {
-      WidgetsBinding.instance.addPostFrameCallback((_) => _speakCard());
     }
+  }
+
+  /// Ro'yxatdan kartalarga o'tish: avval hammasi ko'rsatiladi, keyin
+  /// har so'z alohida kartada, keyin savollar.
+  void _startCards() {
+    setState(() => _stage = _Stage.intro);
+    _speakCard();
   }
 
   @override
@@ -179,6 +185,7 @@ class _LessonScreenState extends State<LessonScreen> {
       ),
       body: SafeArea(
         child: switch (_stage) {
+          _Stage.list => _WordList(words: l.words, onStart: _startCards),
           _Stage.intro => _intro(context),
           _Stage.quiz => _quiz(context),
           _Stage.done => _Finished(
@@ -195,6 +202,7 @@ class _LessonScreenState extends State<LessonScreen> {
   }
 
   String _stageLabel() => switch (_stage) {
+    _Stage.list => 'So\'zlar ro\'yxati',
     _Stage.intro => 'Tanishuv · ${_card + 1}/${widget.lesson.words.length}',
     _Stage.quiz =>
       '${_s.round}-bosqich · ${switch (_s.current?.format) {
@@ -582,6 +590,8 @@ class _Finished extends StatelessWidget {
                   ),
               ],
             ),
+            const SizedBox(height: 22),
+            _WordResults(lesson: lesson, mistaken: mistaken),
             if (weak.isNotEmpty) ...[
               const SizedBox(height: 22),
               HookEditor(words: [for (final w in weak) (w.itemId, w.en, w.uz)]),
@@ -604,6 +614,139 @@ class _Finished extends StatelessWidget {
           ],
         ),
         if (perfect) const IgnorePointer(child: ConfettiBurst(count: 110)),
+      ],
+    );
+  }
+}
+
+/// Bitta so\'z qatori: inglizcha, taxminiy o\'qilishi, o\'zbekcha, ovoz.
+class _WordRow extends StatelessWidget {
+  final LessonWord w;
+  final Color? tint;
+  const _WordRow({required this.w, this.tint});
+
+  @override
+  Widget build(BuildContext context) {
+    final muted = AppColors.muted(context);
+    final snd = [
+      for (final p in w.en.split(RegExp(r'\s+')))
+        if (approxSound(p).isNotEmpty) approxSound(p)
+    ].join(' ');
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.fromLTRB(14, 10, 6, 10),
+      decoration: BoxDecoration(
+        color: (tint ?? AppColors.brandPurple).withValues(alpha: 0.07),
+        borderRadius: BorderRadius.circular(AppRadius.md),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(w.en,
+                    style: const TextStyle(
+                        fontSize: 16.5, fontWeight: FontWeight.w900)),
+                if (snd.isNotEmpty)
+                  Text('o\'qilishi: $snd',
+                      style: TextStyle(fontSize: 12.5, color: muted)),
+                const SizedBox(height: 2),
+                Text(w.uz,
+                    style: const TextStyle(
+                        fontSize: 14.5, fontWeight: FontWeight.w700)),
+              ],
+            ),
+          ),
+          IconButton(
+            tooltip: 'Tinglash',
+            icon: const Icon(Icons.volume_up_rounded),
+            color: AppColors.brandPurple,
+            onPressed: () => Tts.instance.speak(w.en, id: w.itemId),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// DARS BOSHI: yodlashdan OLDIN barcha so\'zlar - tarjima + talaffuz.
+class _WordList extends StatelessWidget {
+  final List<LessonWord> words;
+  final VoidCallback onStart;
+  const _WordList({required this.words, required this.onStart});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
+      children: [
+        Text('Bu darsda ${words.length} ta yangi so\'z',
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
+        const SizedBox(height: 4),
+        Text(
+          'Avval hammasini ko\'zdan kechiring va tinglang (ovozli tugma). '
+          '"O\'qilishi" - taxminiy; aniq talaffuz uchun tinglang. '
+          'Keyin yodlashni boshlaymiz.',
+          style: TextStyle(
+              fontSize: 13, height: 1.4, color: AppColors.muted(context)),
+        ),
+        const SizedBox(height: 12),
+        for (final w in words) _WordRow(w: w),
+        const SizedBox(height: 12),
+        Pressable3D(
+          color: AppColors.brandPurple,
+          onPressed: onStart,
+          child: const Center(
+            child: Text('Yodlashni boshlash',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 16)),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+/// DARS OXIRI: qaysi so\'zlar yaxshi yodlandi, qaysilari yo\'q.
+class _WordResults extends StatelessWidget {
+  final WordLesson lesson;
+  final Set<String> mistaken;
+  const _WordResults({required this.lesson, required this.mistaken});
+
+  @override
+  Widget build(BuildContext context) {
+    final good = [for (final w in lesson.words) if (!mistaken.contains(w.itemId)) w];
+    final bad = [for (final w in lesson.words) if (mistaken.contains(w.itemId)) w];
+    Widget head(String t, int n, Color c) => Padding(
+          padding: const EdgeInsets.only(top: 6, bottom: 8),
+          child: Text('$t ($n)',
+              style: TextStyle(
+                  fontSize: 16, fontWeight: FontWeight.w900, color: c)),
+        );
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        head('Yaxshi yodlangan so\'zlar', good.length, AppColors.success),
+        if (good.isEmpty)
+          Text('Hozircha yo\'q - bu normal, takror hammasini mustahkamlaydi.',
+              style: TextStyle(color: AppColors.muted(context)))
+        else
+          for (final w in good) _WordRow(w: w, tint: AppColors.success),
+        const SizedBox(height: 10),
+        head('Yaxshi yodlanmagan so\'zlar', bad.length, AppColors.danger),
+        if (bad.isEmpty)
+          Text('Hammasi birinchi urinishda yodlandi!',
+              style: TextStyle(color: AppColors.muted(context)))
+        else ...[
+          Text('Bular xato qilindi - tez-tez takrorlanadi. Ilgak yozing.',
+              style: TextStyle(
+                  fontSize: 12.5, color: AppColors.muted(context))),
+          const SizedBox(height: 8),
+          for (final w in bad) _WordRow(w: w, tint: AppColors.danger),
+        ],
       ],
     );
   }
