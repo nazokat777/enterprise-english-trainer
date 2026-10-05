@@ -37,6 +37,44 @@ void main() {
     ]);
   });
 
+  test('Unit imtihoni: 3-unit asosiy + 1-2 unitlardan takror, gap tuzish', () async {
+    final plan = await ExamBuilder(
+            book: app.book, mastery: app.mastery, random: Random(1))
+        .build(3, single: true);
+    final cur = plan.items.where((e) => e.unit == 3).toList();
+    final old = plan.items.where((e) => e.unit < 3).toList();
+    expect(cur.isNotEmpty, isTrue);
+    expect(old.isNotEmpty, isTrue, reason: 'oldingi unitlardan takror bor');
+    expect(plan.items.every((e) => e.unit >= 1 && e.unit <= 3), isTrue);
+    // Uch qism ham bor.
+    expect(plan.count(ExamPart.words), greaterThan(0));
+    expect(plan.count(ExamPart.grammar), greaterThan(0));
+    expect(plan.count(ExamPart.sentences), greaterThan(0));
+    // Shu unitdan ko'proq (asosiy), takror kamroq.
+    expect(cur.length, greaterThan(old.length));
+    expect(plan.count(ExamPart.words), lessThanOrEqualTo(
+        ExamBuilder.unitWords + ExamBuilder.oldWords));
+    // GAP TUZISH: so'zlardan yig'ish savoli bor.
+    final built = plan.items.where((e) =>
+        e.part == ExamPart.sentences && e.q?.format == AskFormat.build);
+    expect(built.isNotEmpty, isTrue);
+    expect(built.first.q!.pieces.length, greaterThan(2));
+  });
+
+  test("1-unit imtihonida takror yo'q, natija yig'ma imtihondan alohida saqlanadi",
+      () async {
+    final plan = await ExamBuilder(
+            book: app.book, mastery: app.mastery, random: Random(2))
+        .build(1, single: true);
+    expect(plan.items.every((e) => e.unit == 1), isTrue);
+
+    await ExamStore.save('beginner',
+        const ExamResult(uptoUnit: 3, score: 95, total: 20, dateMs: 1),
+        single: true);
+    expect((await ExamStore.load('beginner', 3, single: true))?.score, 95);
+    expect(await ExamStore.load('beginner', 3), isNull);
+  });
+
   test('ExamBuilder: 1-2 unitlar uchun uch qism, chegaralar', () async {
     final plan = await ExamBuilder(
             book: app.book, mastery: app.mastery, random: Random(1))
@@ -52,9 +90,10 @@ void main() {
     final w = plan.items.where((e) => e.part == ExamPart.words).toList();
     expect(w.any((e) => e.q!.format == AskFormat.produce), isTrue);
     expect(w.any((e) => e.q!.format == AskFormat.build), isTrue);
-    // Gaplar yozish rejimida.
-    expect(plan.items.where((e) => e.part == ExamPart.sentences)
-        .every((e) => e.task!.typed), isTrue);
+    // Gaplar: yozish (tinglab) yoki so'zlardan tuzish.
+    expect(plan.items.where((e) => e.part == ExamPart.sentences).every(
+        (e) => e.task != null ? e.task!.typed : e.q!.format == AskFormat.build),
+        isTrue);
   });
 
   test('ExamBuilder: onlyIds faqat shu bandlar (qayta ishlash)', () async {

@@ -814,8 +814,11 @@ class BookUnitScreen extends StatelessWidget {
             // 3) Diktant — tinglab gap yig'ish (tinglash + imlo).
             _DictationButton(unit: unit),
             const SizedBox(height: 10),
-            // 4) YIG'MA IMTIHON — 1-unitdan shu unitgacha hammasi.
+            // 4) UNIT IMTIHONI (lug'at + grammatika + gap tuzish, oldingi
+            //    unitlardan takror) va YIG'MA IMTIHON (1..N hammasi).
             if (unit.unit >= 1 && unit.unit < 800) ...[
+              UnitExamCard(unit: unit.unit),
+              const SizedBox(height: 10),
               ExamButton(unit: unit.unit),
               const SizedBox(height: 10),
             ],

@@ -17,10 +17,14 @@ import 'exam.dart';
 class ExamScreen extends StatefulWidget {
   final int uptoUnit;
 
+  /// Faqat [uptoUnit] ning o'zi - unit oxiridagi imtihon.
+  final bool single;
+
   /// Faqat shu bandlar (qayta ishlash rejimi).
   final Set<String>? onlyIds;
 
-  const ExamScreen({super.key, required this.uptoUnit, this.onlyIds});
+  const ExamScreen(
+      {super.key, required this.uptoUnit, this.onlyIds, this.single = false});
 
   @override
   State<ExamScreen> createState() => _ExamScreenState();
@@ -50,7 +54,7 @@ class _ExamScreenState extends State<ExamScreen> {
 
   Future<void> _load() async {
     final plan = await ExamBuilder(book: book, mastery: mastery)
-        .build(widget.uptoUnit, onlyIds: widget.onlyIds);
+        .build(widget.uptoUnit, onlyIds: widget.onlyIds, single: widget.single);
     if (!mounted) return;
     setState(() {
       _plan = plan;
@@ -111,10 +115,12 @@ class _ExamScreenState extends State<ExamScreen> {
       weakIds: _failed.toList(),
       weakTopics: topics.toList(),
     );
-    if (!_retake) await ExamStore.save(progress.currentLevel, r);
+    if (!_retake) {
+      await ExamStore.save(progress.currentLevel, r, single: widget.single);
+    }
     rewards.onExerciseDone(clean: _failed.isEmpty);
     if (score >= 90) {
-      rewards.onExamPassed(widget.uptoUnit);
+      if (!widget.single) rewards.onExamPassed(widget.uptoUnit);
       Sfx.instance.levelUp();
     }
     await progress.addXp(score >= 90 ? 30 : 10);
@@ -129,7 +135,9 @@ class _ExamScreenState extends State<ExamScreen> {
   Widget build(BuildContext context) {
     final title = _retake
         ? 'Zaif bandlarni qayta ishlash'
-        : 'Imtihon · 1-${widget.uptoUnit} unitlar';
+        : widget.single
+            ? '${widget.uptoUnit}-unit imtihoni'
+            : 'Imtihon · 1-${widget.uptoUnit} unitlar';
     return Scaffold(
       appBar: AppBar(title: Text(title, style: const TextStyle(fontSize: 16))),
       body: SafeArea(
@@ -153,7 +161,11 @@ class _ExamScreenState extends State<ExamScreen> {
         const SizedBox(height: 10),
         Center(
           child: Text(
-              _retake ? 'Qayta ishlash' : '1-${widget.uptoUnit} unitlar imtihoni',
+              _retake
+                  ? 'Qayta ishlash'
+                  : widget.single
+                      ? '${widget.uptoUnit}-unit imtihoni'
+                      : '1-${widget.uptoUnit} unitlar imtihoni',
               style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900)),
         ),
         const SizedBox(height: 8),
@@ -165,10 +177,23 @@ class _ExamScreenState extends State<ExamScreen> {
           style: TextStyle(
               fontSize: 13.5, height: 1.5, color: AppColors.muted(context)),
         ),
+        if (widget.single && widget.uptoUnit > 1) ...[
+          const SizedBox(height: 10),
+          Text(
+            'Asosan ${widget.uptoUnit}-unitdan; yodda qolishi uchun '
+            '1-${widget.uptoUnit - 1} unitlardan ham takror savollar bor.',
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+                fontSize: 13.5,
+                height: 1.5,
+                fontWeight: FontWeight.w700,
+                color: AppColors.brandPurple),
+          ),
+        ],
         const SizedBox(height: 20),
         _PartRow(icon: '📚', label: 'Lug\'at', n: p.count(ExamPart.words)),
         _PartRow(icon: '📐', label: 'Grammatika', n: p.count(ExamPart.grammar)),
-        _PartRow(icon: '⌨️', label: 'Gaplar (yozish)', n: p.count(ExamPart.sentences)),
+        _PartRow(icon: '⌨️', label: 'Gap tuzish va yozish', n: p.count(ExamPart.sentences)),
         const SizedBox(height: 24),
         Pressable3D(
           color: AppColors.brandPurple,

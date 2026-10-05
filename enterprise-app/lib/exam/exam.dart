@@ -95,11 +95,15 @@ class ExamResult {
 }
 
 class ExamStore {
-  static String _k(String level, int upto) => 'exam::$level::$upto';
+  /// [single] - FAQAT shu unitning imtihoni (unit oxiri); aks holda
+  /// 1..upto yig'ma imtihon. Kalitlar bir-biriga tegmaydi.
+  static String _k(String level, int upto, bool single) =>
+      single ? 'unitexam::$level::$upto' : 'exam::$level::$upto';
 
-  static Future<ExamResult?> load(String level, int upto) async {
+  static Future<ExamResult?> load(String level, int upto,
+      {bool single = false}) async {
     final p = await SharedPreferences.getInstance();
-    final raw = p.getString(_k(level, upto));
+    final raw = p.getString(_k(level, upto, single));
     if (raw == null) return null;
     try {
       return ExamResult.fromJson(json.decode(raw) as Map<String, dynamic>);
@@ -110,9 +114,10 @@ class ExamStore {
 
   /// Faqat yaxshiroq natija saqlanadi; zaif ro'yxat esa har safar
   /// yangilanadi (oxirgi holat muhim).
-  static Future<void> save(String level, ExamResult r) async {
+  static Future<void> save(String level, ExamResult r,
+      {bool single = false}) async {
     final p = await SharedPreferences.getInstance();
-    final old = await load(level, r.uptoUnit);
+    final old = await load(level, r.uptoUnit, single: single);
     final best = old == null || r.score >= old.score
         ? r
         : ExamResult(
@@ -123,7 +128,7 @@ class ExamStore {
             weakIds: r.weakIds,
             weakTopics: r.weakTopics,
           );
-    await p.setString(_k(level, r.uptoUnit), json.encode(best.toJson()));
+    await p.setString(_k(level, r.uptoUnit, single), json.encode(best.toJson()));
   }
 }
 
@@ -141,7 +146,15 @@ class ExamBuilder {
   static int grammarTarget(int n) => min(18, 4 + 2 * n);
   static int sentenceTarget(int n) => min(8, 2 + n);
 
-  Future<ExamPlan> build(int uptoUnit, {Set<String>? onlyIds}) async {
+  /// Unit imtihoni: shu unitdan lug'at 15, grammatika 10, gap 6 +
+  /// OLDINGI unitlardan takror: lug'at 6, grammatika 4, gap 2.
+  static const int unitWords = 15, unitGrammar = 10, unitSentences = 6;
+  static const int oldWords = 6, oldGrammar = 4, oldSentences = 2;
+
+  /// [single] - unit oxiridagi imtihon: [uptoUnit] asosiy, oldingi
+  /// unitlar (1..N-1) takror sifatida qo'shiladi.
+  Future<ExamPlan> build(int uptoUnit,
+      {Set<String>? onlyIds, bool single = false}) async {
     final words = <DrillSource>[];
     final grammar = <ExamItem>[];
     final sentences = <ExamItem>[];
@@ -204,11 +217,32 @@ class ExamBuilder {
         if (!seenSent.add(first.toLowerCase())) continue;
         final uz = sp.exampleUz.split(RegExp(r'(?<=[.!?])\s+')).first.trim();
         final id = 's::${first.toLowerCase()}';
+        final topic = sp.formula.isNotEmpty ? sp.formula : 'Gap';
+        // GAP TUZISH: navbatma-navbat so'zlardan yig'ish va tinglab yozish.
+        if (sentences.length.isEven) {
+          sentences.add(ExamItem(
+            id: id,
+            part: ExamPart.sentences,
+            unit: b.unit,
+            topic: topic,
+            q: DrillQuestion(
+              itemId: id,
+              format: AskFormat.build,
+              prompt: 'Gapni so\'zlardan tuzing',
+              promptUz: uz,
+              answer: first,
+              speak: first,
+              unit: b.unit,
+              topic: topic,
+            ),
+          ));
+          continue;
+        }
         sentences.add(ExamItem(
           id: id,
           part: ExamPart.sentences,
           unit: b.unit,
-          topic: sp.formula.isNotEmpty ? sp.formula : 'Gap',
+          topic: topic,
           task: ExTask(
             prompt: '⌨️ Tinglang va yozing',
             promptUz: uz,
@@ -229,7 +263,7 @@ class ExamBuilder {
           rnd.nextDouble();
     }
 
-    final n = max(1, uptoUnit);
+    final n = single ? 1 : max(1, uptoUnit);
     List<T> pick<T>(List<T> src, String Function(T) idOf, int target) {
       var list = src;
       if (onlyIds != null) {
@@ -240,7 +274,18 @@ class ExamBuilder {
       return list.take(target).toList();
     }
 
-    final pickedWords = pick(words, (s) => s.itemId, wordTarget(n));
+    // Unit imtihoni: shu unit va oldingi unitlar alohida tanlanadi.
+    List<T> pickUnit<T>(List<T> src, String Function(T) idOf, int Function(T) unitOf,
+        int nowN, int oldN) {
+      if (!single || onlyIds != null) return pick(src, idOf, nowN);
+      return [
+        ...pick(src.where((e) => unitOf(e) == uptoUnit).toList(), idOf, nowN),
+        ...pick(src.where((e) => unitOf(e) < uptoUnit).toList(), idOf, oldN),
+      ];
+    }
+
+    final pickedWords = pickUnit(words, (s) => s.itemId, (s) => s.unit,
+        single ? unitWords : wordTarget(n), oldWords);
     final pool = words.length >= 4 ? words : pickedWords;
     final wordItems = <ExamItem>[];
     for (var i = 0; i < pickedWords.length; i++) {
@@ -256,8 +301,12 @@ class ExamBuilder {
 
     final items = [
       ...wordItems,
-      ...pick(grammar, (e) => e.id, grammarTarget(n))..shuffle(rnd),
-      ...pick(sentences, (e) => e.id, sentenceTarget(n))..shuffle(rnd),
+      ...pickUnit(grammar, (e) => e.id, (e) => e.unit,
+          single ? unitGrammar : grammarTarget(n), oldGrammar)
+        ..shuffle(rnd),
+      ...pickUnit(sentences, (e) => e.id, (e) => e.unit,
+          single ? unitSentences : sentenceTarget(n), oldSentences)
+        ..shuffle(rnd),
     ];
     return ExamPlan(uptoUnit: uptoUnit, items: items);
   }

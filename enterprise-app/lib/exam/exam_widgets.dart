@@ -171,3 +171,113 @@ class ExamButton extends StatelessWidget {
     );
   }
 }
+
+/// UNIT OXIRI: "N-unit imtihoni" - lug'at + grammatika + gap tuzish,
+/// oldingi unitlardan takror bilan. Eng yaxshi natija ko'rsatiladi.
+class UnitExamCard extends StatefulWidget {
+  final int unit;
+  const UnitExamCard({super.key, required this.unit});
+
+  @override
+  State<UnitExamCard> createState() => _UnitExamCardState();
+}
+
+class _UnitExamCardState extends State<UnitExamCard> {
+  ExamResult? _best;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final r = await ExamStore.load(progress.currentLevel, widget.unit,
+        single: true);
+    if (mounted) setState(() => _best = r);
+  }
+
+  Future<void> _open({Set<String>? onlyIds}) async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (_) => ExamScreen(
+              uptoUnit: widget.unit, single: true, onlyIds: onlyIds)),
+    );
+    _load();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final n = widget.unit;
+    if (n < 1) return const SizedBox.shrink();
+    final r = _best;
+    final passed = r != null && r.passed;
+    final color = passed ? AppColors.success : AppColors.homework;
+    final review = n > 1 ? ' + 1-${n - 1} unitlardan takror' : '';
+    final sub = r == null
+        ? "Lug'at, grammatika va gap tuzish$review. "
+            "Unitni tugatgach topshiring."
+        : passed
+            ? "O'tdingiz: ${r.score}%. Qayta topshirsangiz ham bo'ladi."
+            : "Eng yaxshi natija ${r.score}% - 90% dan o'tadi. "
+                "${r.weakIds.length} ta zaif band bor.";
+    return Material(
+      color: color.withValues(alpha: 0.12),
+      borderRadius: BorderRadius.circular(AppRadius.lg),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: _open,
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(passed ? '🏅' : '📝',
+                      style: const TextStyle(fontSize: 28)),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('$n-unit imtihoni',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w900,
+                                fontSize: 16,
+                                color: color)),
+                        const SizedBox(height: 2),
+                        Text(sub,
+                            style: TextStyle(
+                                fontSize: 12.5,
+                                height: 1.35,
+                                color: AppColors.muted(context))),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              if (r != null && !passed && r.weakIds.isNotEmpty) ...[
+                const SizedBox(height: 10),
+                Pressable3D(
+                  color: AppColors.homework,
+                  padding: const EdgeInsets.symmetric(vertical: 11),
+                  onPressed: () => _open(onlyIds: r.weakIds.toSet()),
+                  child: Center(
+                    child: Text(
+                        'Zaif ${r.weakIds.length} ta bandni qayta ishlash',
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 14.5)),
+                  ),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
