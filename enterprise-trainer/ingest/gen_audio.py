@@ -54,7 +54,9 @@ def key_of(text: str) -> str:
     return f"{h:016x}"
 
 
-_UZ = re.compile(r"[Ѐ-ӿ]|\w+[og]'|___|\.\.\.\.|-rasm|-mashq")
+# Bo'shliqli ("___") gaplar ham yoziladi - bo'shliq pauza bo'lib o'qiladi;
+# ilgari ular brauzer ovoziga qolib, xunuk o'qilardi.
+_UZ = re.compile(r"[Ѐ-ӿ]|\b\w+[og]'|\.\.\.\.|-rasm|-mashq")
 
 
 def speak_text(s: str) -> str:
@@ -69,6 +71,9 @@ def speak_text(s: str) -> str:
     t = re.sub(r"^[a-h][.)]\s+", "", t)
     t = re.sub(r"(^|\s)[A-D]:\s*", " ", t)
     t = re.sub(r"\s*\((=|\?)[^)]*\)", "", t)  # (= izoh) qismlari
+    t = re.sub(r"\ba\(n\)", "a", t)  # a(n) -> a
+    t = re.sub(r"_{2,}", " ... ", t)  # bo'shliq - pauza
+    t = re.sub(r"\s+", " ", t)
     return t.strip() or norm(s)
 
 

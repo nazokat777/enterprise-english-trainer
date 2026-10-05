@@ -7,6 +7,7 @@ import '../reward/confetti.dart';
 import '../reward/sfx.dart';
 import '../screens/book/type_stage.dart';
 import '../theme.dart';
+import '../widgets/help_skip.dart';
 import '../widgets/pressable3d.dart';
 import 'exam.dart';
 
@@ -96,6 +97,31 @@ class _ExamScreenState extends State<ExamScreen> {
       _pos += 1;
       _result = null;
     });
+    if (_cur == null) await _finish();
+  }
+
+  /// "Bilmayman": javob ko'rsatiladi, savol xato hisoblanib oxirga qaytadi.
+  Future<void> _help() async {
+    final it = _cur;
+    if (it == null || _result != null) return;
+    final q = it.q;
+    await showAnswerHelp(context,
+        question: q?.prompt ?? it.task?.prompt ?? '',
+        answer: it.answer,
+        translation: it.promptUz,
+        speak: q != null ? englishOf(q) : it.answer);
+    if (!mounted || _cur != it) return;
+    await _answer(false);
+  }
+
+  /// "O'tkazish": xato hisoblanadi, lekin qaytmaydi - imtihon davom etadi.
+  Future<void> _skip() async {
+    final it = _cur;
+    if (it == null || _result != null) return;
+    _seen.add(it.id);
+    _failed.add(it.id);
+    _answered += 1;
+    setState(() => _pos += 1);
     if (_cur == null) await _finish();
   }
 
@@ -275,6 +301,10 @@ class _ExamScreenState extends State<ExamScreen> {
                       onDone: _answer,
                     ),
                 },
+        ),
+        HelpSkipBar(
+          onHelp: _result == null ? _help : null,
+          onSkip: _result == null ? _skip : null,
         ),
       ],
     );

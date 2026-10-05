@@ -478,12 +478,13 @@ class RewardEngine extends ChangeNotifier {
       _events.add(RewardEvent.comboTick(combo));
     }
 
-    // Sandiq.
+    // Sandiq. Savol ORASIDA ochilmaydi (o'quvchiga xalaqit berardi) -
+    // mashq/dars tugaganda [onExerciseDone] da beriladi.
     _toChest--;
     if (_toChest <= 0) {
       _toChest = _rollChest();
       pendingChests++;
-      _events.add(const RewardEvent.chest());
+      _heldChests.add(false);
     }
 
     _bumpQuest(QuestKind.correct, 1);
@@ -521,6 +522,17 @@ class RewardEngine extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Seans ichida yig'ilgan sandiqlar (true = katta) - mashq tugagach.
+  final List<bool> _heldChests = [];
+
+  void _releaseChests() {
+    if (_heldChests.isEmpty) return;
+    // Bir nechta bo'lsa ham bitta (eng kattasi) - ketma-ket oynalar charchatadi.
+    final big = _heldChests.any((b) => b);
+    _heldChests.clear();
+    _events.add(RewardEvent.chest(big: big));
+  }
+
   void onExerciseDone({required bool clean}) {
     tick();
     _touchSession();
@@ -532,6 +544,7 @@ class RewardEngine extends ChangeNotifier {
     _bumpQuest(QuestKind.exercises, 1);
     if (clean) _bumpQuest(QuestKind.perfect, 1);
     _checkAchievements();
+    _releaseChests();
     _save();
     notifyListeners();
   }
@@ -791,7 +804,7 @@ class RewardEngine extends ChangeNotifier {
     if (!allQuestsRewarded && quests.isNotEmpty && quests.every((q) => q.done)) {
       allQuestsRewarded = true;
       pendingChests++;
-      _events.add(const RewardEvent.chest(big: true));
+      _heldChests.add(true);
     }
   }
 

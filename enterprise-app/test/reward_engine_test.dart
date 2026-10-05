@@ -58,12 +58,18 @@ void main() {
       final events = <RewardEvent>[];
       e.events.listen(events.add);
       var n = 0;
-      while (events.every((x) => x.kind != RewardKind.chest) && n < 20) {
+      // Sandiq javoblar ORASIDA chiqmaydi (xalaqit berardi) - yig'iladi
+      // va mashq tugaganda beriladi.
+      while (e.pendingChests == 0 && n < 20) {
         e.onAnswer(true);
         n++;
         await Future<void>.delayed(Duration.zero);
       }
       expect(n, inInclusiveRange(5, 9), reason: 'seed $seed');
+      expect(events.any((x) => x.kind == RewardKind.chest), isFalse);
+      e.onExerciseDone(clean: true);
+      await Future<void>.delayed(Duration.zero);
+      expect(events.where((x) => x.kind == RewardKind.chest).length, 1);
       final r = e.openChest();
       expect(r.coins + r.xp > 0 || r.freeze, isTrue);
       expect(e.chestsOpened, 1);

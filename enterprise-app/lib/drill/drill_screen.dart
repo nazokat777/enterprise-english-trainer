@@ -10,6 +10,7 @@ import '../services/tts.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
 import '../widgets/hover_lift.dart';
+import '../widgets/help_skip.dart';
 import '../widgets/pressable3d.dart';
 import 'drill_item.dart';
 import 'drill_session.dart';
@@ -93,6 +94,23 @@ class _DrillScreenState extends State<DrillScreen> {
     });
   }
 
+  /// "Bilmayman": javob tarjimasi va ovozi bilan; band xato bo'lib qaytadi.
+  /// "O'tkazish": ko'rsatmasdan o'tadi (band baribir keyin qaytadi).
+  Future<void> _giveUp({required bool show}) async {
+    final q = _s.current;
+    if (q == null || _result != null) return;
+    if (show) {
+      await showAnswerHelp(context,
+          question: q.prompt,
+          answer: q.answer,
+          translation: q.promptUz == q.prompt ? '' : q.promptUz,
+          speak: englishOf(q));
+    }
+    if (!mounted || _s.current != q) return;
+    await _s.answer(false);
+    if (mounted) setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     final q = _s.current;
@@ -150,9 +168,21 @@ class _DrillScreenState extends State<DrillScreen> {
               ),
           },
         ),
+        if (q.format != AskFormat.match)
+          HelpSkipBar(
+            onHelp: _result == null ? () => _giveUp(show: true) : null,
+            onSkip: _result == null ? () => _giveUp(show: false) : null,
+          ),
       ],
     );
   }
+}
+
+/// Savoldagi INGLIZCHA matn (yordam ovozi uchun): tanishda savolning
+/// o'zi, boshqa shakllarda javob.
+String englishOf(DrillQuestion q) {
+  if (q.speak.trim().isNotEmpty) return q.speak;
+  return q.format == AskFormat.choice ? q.prompt : q.answer;
 }
 
 /// Yuqori panel: halqa, kombo, qolgan bandlar.

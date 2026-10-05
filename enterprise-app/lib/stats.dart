@@ -30,7 +30,7 @@ class Progress extends ChangeNotifier {
   int todayXp = 0;
   String _todayKey = '';
   bool darkMode = false;
-  bool sfx = true; // ovoz effektlari (reward/sfx.dart)
+  bool sfx = false; // ovoz effektlari (reward/sfx.dart)
   String currentLevel = kDefaultLevel; // ro'yxat: levels.dart
 
   /// Mr. Vaysaqi (AI tutor) uchun Claude API kaliti — faqat shu
@@ -93,7 +93,16 @@ class Progress extends ChangeNotifier {
     todayXp = p.getInt('todayXp') ?? 0;
     _todayKey = p.getString('todayKey') ?? '';
     darkMode = p.getBool('dark') ?? false;
-    sfx = p.getBool('sfx') ?? true;
+    // Ovoz effektlari standart O'CHIQ: o'quvchilar ularni xalaqit beruvchi
+    // va xunuk deb topdi. Bir martalik: avval yoqilganlarda ham o'chadi;
+    // sozlamalarda qayta yoqsa - shunday qoladi.
+    if (p.getBool('sfxQuiet2') == true) {
+      sfx = p.getBool('sfx') ?? false;
+    } else {
+      sfx = false;
+      p.setBool('sfx', false);
+      p.setBool('sfxQuiet2', true);
+    }
     currentLevel = p.getString('level') ?? kDefaultLevel;
     _loadBookProgress(p);
     apiKey = p.getString('apiKey') ?? '';

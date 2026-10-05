@@ -21,6 +21,7 @@ import '../../reward/reward_widgets.dart';
 import '../../widgets/correct_burst.dart';
 import '../../widgets/entrance.dart';
 import '../../widgets/explain_text.dart';
+import '../../widgets/help_skip.dart';
 import '../../widgets/pressable3d.dart';
 import '../pack/pack_flow.dart' show RoundPlay;
 import 'type_stage.dart';
@@ -356,8 +357,35 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       children: [
         _header(),
         Expanded(child: _stage()),
+        if (ex.kind == ExKind.choice || ex.kind == ExKind.text)
+          HelpSkipBar(
+            onHelp: () => _giveUp(show: true),
+            onSkip: () => _giveUp(show: false),
+          ),
       ],
     );
+  }
+
+  /// "Bilmayman": to'g'ri javob tarjimasi va ovozi bilan ko'rsatiladi;
+  /// "O'tkazish": ko'rsatmasdan. Ikkalasida band oxirga qaytadi va
+  /// xatolar daftariga tushadi - keyin yana so'raladi.
+  Future<void> _giveUp({required bool show}) async {
+    if (_done || _pos >= _queue.length) return;
+    final pos = _pos;
+    final t = ex.tasks[_index];
+    if (show) {
+      final en = t.speakAnswer.isNotEmpty
+          ? t.speakAnswer
+          : (RegExp(r'[a-zA-Z]').hasMatch(t.answer) ? t.answer : '');
+      await showAnswerHelp(context,
+          question: t.prompt,
+          answer: t.answer,
+          translation: t.promptUz,
+          speak: en);
+    }
+    // Shu orada bosqich o'zi javob bergan bo'lsa - ikki marta yozmaymiz.
+    if (!mounted || _pos != pos || _done) return;
+    await _answered(false);
   }
 
   Widget _header() {

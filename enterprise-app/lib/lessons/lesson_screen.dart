@@ -5,17 +5,18 @@ import 'package:flutter/material.dart';
 import '../drill/drill_item.dart';
 import '../drill/drill_screen.dart';
 import '../main.dart';
-import '../plan/hook_suggest.dart' show approxSound;
 import '../stats.dart';
 import '../mastery.dart';
 import '../memory/memory.dart';
 import '../memory/memory_widgets.dart';
 import '../reward/confetti.dart';
 import '../services/speech.dart';
+import '../services/pron.dart';
 import '../services/tts.dart';
 import '../speak/speak_task.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
+import '../widgets/help_skip.dart';
 import '../widgets/hover_lift.dart';
 import '../widgets/pressable3d.dart';
 import 'lesson_session.dart';
@@ -67,6 +68,10 @@ class _LessonScreenState extends State<LessonScreen> {
   @override
   void initState() {
     super.initState();
+    // O'qilishi lug'ati - ro'yxat ekrani uchun (yuklangach qayta chiziladi).
+    Pron.load().then((_) {
+      if (mounted) setState(() {});
+    });
     for (final w in widget.lesson.words) {
       _stageBefore[w.itemId] = mastery.of(w.itemId).stage;
     }
@@ -135,17 +140,62 @@ class _LessonScreenState extends State<LessonScreen> {
         _result = null;
         if (_s.isDone) _stage = _Stage.done;
       });
-      if (_s.isDone) {
-        await progress.addXp(5);
-        rewards.onExerciseDone(clean: true);
-        if (widget.rescue) {
-          rewards.onRescue(_s.lesson.sources.length);
-        } else {
-          // Dars tugadi = darsdagi so'zlar o'rganildi (kunlik topshiriq).
-          rewards.onWordLearned(_s.lesson.sources.length);
-        }
-      }
+      await _maybeFinish();
     });
+  }
+
+  bool _finished = false;
+
+  /// Seans tugagan bo'lsa - yakuniy mukofotlar (bir marta).
+  Future<void> _maybeFinish() async {
+    if (!_s.isDone || _finished) return;
+    _finished = true;
+    await progress.addXp(5);
+    rewards.onExerciseDone(clean: _s.mistakes == 0);
+    if (widget.rescue) {
+      rewards.onRescue(_s.lesson.sources.length);
+    } else {
+      // Dars tugadi = darsdagi so'zlar o'rganildi (kunlik topshiriq).
+      rewards.onWordLearned(_s.lesson.sources.length);
+    }
+  }
+
+  /// "Bilmayman - ko'rsat": javob tarjima va ovozi bilan ochiladi,
+  /// so'z XATO sifatida yoziladi va shu raundda yana so'raladi.
+  Future<void> _help() async {
+    final q = _s.current;
+    if (q == null || _result != null) return;
+    LessonWord? w;
+    for (final x in widget.lesson.words) {
+      if (x.itemId == q.itemId) w = x;
+    }
+    await showAnswerHelp(
+      context,
+      question: q.prompt,
+      answer: q.answer,
+      translation: w == null ? q.promptUz : '${w.en} - ${w.uz}',
+      speak: w?.en ?? '',
+    );
+    if (!mounted || _s.current != q) return;
+    await _s.answer(false);
+    if (!mounted) return;
+    setState(() {
+      if (_s.isDone) _stage = _Stage.done;
+    });
+    await _maybeFinish();
+  }
+
+  /// "O'tkazib yuborish": hozircha chetga - "yaxshi yodlanmagan" ro'yxatiga
+  /// tushadi, ball ham, xato ham yozilmaydi.
+  Future<void> _skipQuestion() async {
+    final q = _s.current;
+    if (q == null || _result != null) return;
+    _s.mistakenIds.add(q.itemId);
+    _s.skip();
+    setState(() {
+      if (_s.isDone) _stage = _Stage.done;
+    });
+    await _maybeFinish();
   }
 
   /// Talaffuzni o'tkazib yuborish — xato emas, mastery'ga yozilmaydi.
@@ -155,6 +205,7 @@ class _LessonScreenState extends State<LessonScreen> {
     setState(() {
       if (_s.isDone) _stage = _Stage.done;
     });
+    _maybeFinish();
   }
 
   @override
@@ -441,6 +492,12 @@ class _LessonScreenState extends State<LessonScreen> {
             ),
           },
         ),
+        // Talaffuz savolining o'z "o'tkazish" tugmasi bor.
+        if (q.format != AskFormat.speak)
+          HelpSkipBar(
+            onHelp: _result == null ? _help : null,
+            onSkip: _result == null ? _skipQuestion : null,
+          ),
       ],
     );
   }
@@ -619,7 +676,7 @@ class _Finished extends StatelessWidget {
   }
 }
 
-/// Bitta so\'z qatori: inglizcha, taxminiy o\'qilishi, o\'zbekcha, ovoz.
+/// Bitta so'z qatori: inglizcha, o'qilishi (urg'u belgili), o'zbekcha, ovoz.
 class _WordRow extends StatelessWidget {
   final LessonWord w;
   final Color? tint;
@@ -628,10 +685,7 @@ class _WordRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final muted = AppColors.muted(context);
-    final snd = [
-      for (final p in w.en.split(RegExp(r'\s+')))
-        if (approxSound(p).isNotEmpty) approxSound(p)
-    ].join(' ');
+    final snd = Pron.of(w.en);
     return Container(
       margin: const EdgeInsets.only(bottom: 8),
       padding: const EdgeInsets.fromLTRB(14, 10, 6, 10),
@@ -649,7 +703,7 @@ class _WordRow extends StatelessWidget {
                     style: const TextStyle(
                         fontSize: 16.5, fontWeight: FontWeight.w900)),
                 if (snd.isNotEmpty)
-                  Text('o\'qilishi: $snd',
+                  Text('[$snd]',
                       style: TextStyle(fontSize: 12.5, color: muted)),
                 const SizedBox(height: 2),
                 Text(w.uz,
@@ -686,7 +740,7 @@ class _WordList extends StatelessWidget {
         const SizedBox(height: 4),
         Text(
           'Avval hammasini ko\'zdan kechiring va tinglang (ovozli tugma). '
-          '"O\'qilishi" - taxminiy; aniq talaffuz uchun tinglang. '
+          '[Qavs ichida] - o\'qilishi, belgili unli (á, é) urg\'uli. Ovozni ham tinglang. '
           'Keyin yodlashni boshlaymiz.',
           style: TextStyle(
               fontSize: 13, height: 1.4, color: AppColors.muted(context)),

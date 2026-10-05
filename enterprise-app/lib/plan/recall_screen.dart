@@ -6,6 +6,7 @@ import '../mastery.dart';
 import '../services/tts.dart';
 import '../theme.dart';
 import '../widgets/correct_burst.dart';
+import '../widgets/help_skip.dart';
 import '../widgets/pressable3d.dart';
 
 /// YOPIB ESLASH — o'zbekchasi ko'rinadi, inglizchasini o'zi yozadi.
@@ -80,6 +81,27 @@ class _RecallScreenState extends State<RecallScreen> {
     }
   }
 
+  /// "Bilmayman": javob ochiladi (ekrandagi qizil karta), xato hisoblanadi.
+  Future<void> _giveUp() async {
+    if (_ok != null) return;
+    final w = _queue[_pos];
+    setState(() => _ok = false);
+    Tts.instance.speak(w.en, id: w.itemId);
+    if (!widget.measure) {
+      await mastery.record(w.itemId, AskFormat.produce,
+          ok: false, en: w.en, uz: w.uz);
+      _queue.add(w);
+    }
+    _missed.add(w.itemId);
+  }
+
+  /// "O'tkazish": hozircha keyingisiga (eslanmagan deb hisoblanadi).
+  void _skipWord() {
+    if (_ok != null) return;
+    _missed.add(_queue[_pos].itemId);
+    _next();
+  }
+
   void _next() {
     setState(() {
       _pos++;
@@ -140,6 +162,10 @@ class _RecallScreenState extends State<RecallScreen> {
           ),
         ),
         const SizedBox(height: 12),
+        if (_ok == null) ...[
+          HelpSkipBar(onHelp: _giveUp, onSkip: _skipWord),
+          const SizedBox(height: 4),
+        ],
         if (_ok == null)
           Pressable3D(
             color: AppColors.actionBlue,

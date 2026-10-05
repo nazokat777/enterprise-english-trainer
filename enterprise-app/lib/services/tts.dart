@@ -200,11 +200,19 @@ class Tts {
     try {
       await _tts.stop();
       speakingId.value = id ?? clean;
-      await _tts.speak(clean);
+      await _tts.speak(speakable(clean));
     } catch (_) {
       speakingId.value = null;
     }
   }
+
+  /// Brauzer ovozi uchun tozalash: bo'shliq ("___") "underscore" deb
+  /// o'qilmasin - pauza bo'ladi; "a(n)" -> "a".
+  static String speakable(String s) => s
+      .replaceAll(RegExp(r'_{2,}'), ', ')
+      .replaceAll(RegExp(r'\ba\(n\)'), 'a')
+      .replaceAll(RegExp(r'\s+'), ' ')
+      .trim();
 
   /// Indeksni oldindan yuklash (birinchi bosishda kechikmasin).
   Future<void> preload() => _loadIndex();

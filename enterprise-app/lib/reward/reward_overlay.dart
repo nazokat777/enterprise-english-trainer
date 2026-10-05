@@ -79,15 +79,12 @@ class _RewardOverlayState extends State<RewardOverlay>
       case RewardKind.xp:
         if (e.crit) {
           sfx.crit();
-          _shake.forward(from: 0);
         } else {
           sfx.correct(rewards.combo);
         }
-        _float(e.crit ? '+${e.amount} KRIT!' : '+${e.amount} ⚡', crit: e.crit);
+        // Uchib chiqadigan "+2 ⚡" yozuvlari va ekran chetidagi nur
+        // o'quvchiga xalaqit berardi - endi faqat yuqoridagi kombo hisobi.
         _comboPop.forward(from: 0);
-        if (rewards.combo >= 10 && !_vignette.isAnimating) {
-          _vignette.forward(from: 0);
-        }
         setState(() {});
       case RewardKind.wrong:
         sfx.wrong();
@@ -97,24 +94,15 @@ class _RewardOverlayState extends State<RewardOverlay>
         sfx.tick();
         _float('Deyarli! 1 harf farq', color: const Color(0xFFF97316), big: true);
       case RewardKind.speed:
-        _float('TEZ! +${e.amount} ⚡', color: const Color(0xFF06B6D4));
       case RewardKind.comeback:
-        _float('QAYTISh! +${e.amount} ⚡', color: AppColors.brandPurple, big: true);
+        break;
       case RewardKind.gem:
-        sfx.coin();
         progress.addCoins(e.amount);
-        _float('+${e.amount} 🪙', color: AppColors.coin);
       case RewardKind.comboTick:
         break;
       case RewardKind.combo:
         sfx.combo();
-        _shake.forward(from: 0);
-        _float(
-          '${e.level} KOMBO  +${e.amount} ⚡',
-          color: _heatColor(rewards.comboHeat),
-          big: true,
-        );
-        if (e.level >= 10) _burst(count: 60);
+        _comboPop.forward(from: 0);
       case RewardKind.record:
         _showBanner(_RecordBanner(text: 'Yangi rekord: ${e.amount} kombo!'));
       case RewardKind.breakTime:
