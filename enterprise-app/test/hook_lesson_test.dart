@@ -44,20 +44,22 @@ void main() {
     await t.pump();
 
     for (var w = 0; w < 2; w++) {
-      expect(find.text('1. Ma\'no'), findsOneWidget);
+      expect(find.text('1-qadam / 4 · So\'zning ma\'nosini bilib oling'),
+          findsOneWidget);
       await t.tap(find.text('Tushundim - ilgak topamiz'));
       await t.pump();
-      expect(find.text('2. Ilgak'), findsOneWidget);
+      expect(find.text('2-qadam / 4 · Ilgak (o\'xshash so\'z) toping'),
+          findsOneWidget);
       // Ilova ilgak taklif qilgan (bucket -> buket).
       if (w == 0) expect(find.text('buket'), findsOneWidget);
       await t.tap(find.text('Ilgak tayyor - sahna quramiz'));
       await t.pump();
       await t.enterText(find.byType(TextField), 'ulkan buket chelakdan chiqyapti');
-      await t.tap(find.text('Saqlash va tasavvur qilish'));
+      await t.tap(find.text('Saqlash va ko\'z oldimga keltirish'));
       await t.pump();
       // 5 soniya tasavvur.
       await t.pump(const Duration(seconds: 6));
-      await t.tap(find.textContaining(w == 0 ? 'Keyingi so\'z' : 'yopib eslaymiz'));
+      await t.tap(find.textContaining(w == 0 ? 'Keyingi so\'z' : 'qaramasdan eslaymiz'));
       await t.pump();
     }
     expect(app.mastery.of('w::bucket').hook, contains('buket'));
@@ -72,7 +74,7 @@ void main() {
       await t.pump();
     }
     expect(find.text('2 / 2'), findsOneWidget);
-    await t.tap(find.text('Mustahkamlash darsiga o\'tish'));
+    await t.tap(find.text('Mashq darsiga o\'tish'));
     await t.pumpAndSettle();
     expect(finished, isTrue);
   });
@@ -81,23 +83,24 @@ void main() {
     await tall(t);
     await t.pumpWidget(const MaterialApp(home: PegScreen()));
     await t.pump();
-    await t.tap(find.text('Boshlash - 1-test'));
+    await t.tap(find.text('Boshlash - oddiy usulda 1-sinov'));
     await t.pump();
     await t.tap(find.text('Tayyorman'));
     await t.pump();
     await t.tap(find.text('Tekshirish'));
     await t.pump();
-    expect(find.text('1-test: 0 / 10'), findsOneWidget);
+    expect(find.text('Oddiy usulda 1-sinov: 0 / 10 so\'z to\'g\'ri'),
+        findsOneWidget);
     expect(find.textContaining('1 = quyosh'), findsOneWidget);
-    await t.tap(find.text('Qarmoqlarni bildim - so\'zlarni ilamiz'));
+    await t.tap(find.text('Qarmoqlarni bildim - so\'zlarni ulaymiz'));
     await t.pump();
     for (var i = 0; i < 9; i++) {
       await t.tap(find.text('Ko\'rdim - keyingisi'));
       await t.pump();
     }
-    await t.tap(find.text('Tayyor - qayta test'));
+    await t.tap(find.text('Tayyor - qayta sinov'));
     await t.pump();
-    expect(find.textContaining('Qayta test'), findsOneWidget);
+    expect(find.textContaining('Qayta sinov'), findsOneWidget);
     await t.tap(find.text('Tekshirish'));
     await t.pump();
     expect(find.text('Qarmoq usuli'), findsOneWidget);

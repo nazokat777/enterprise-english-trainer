@@ -106,6 +106,13 @@ class LessonSession {
     return [...formats.sublist(0, i + 1), AskFormat.speak, ...formats.sublist(i + 1)];
   }
 
+  /// SAVOLI BOR qismlar (tartib bilan). Misol gapi yo'q darsda "gap
+  /// ichida" qismi bo'sh qoladi - sarlavhada "1/4" emas "1/3" bo'lsin.
+  final List<AskFormat> _played = [];
+
+  /// Dars nechta qismdan iborat (sarlavhadagi "2/4-qism" uchun).
+  int get roundCount => _played.isEmpty ? _rounds.length : _played.length;
+
   void _fill() {
     final src = lesson.sources;
     for (final f in _rounds) {
@@ -123,6 +130,7 @@ class LessonSession {
         if (q != null) round.add(q);
       }
       round.shuffle(_rnd);
+      if (round.isNotEmpty) _played.add(f);
       _queue.addAll(round);
     }
   }
@@ -148,12 +156,17 @@ class LessonSession {
   int get remaining => _queue.length - _pos;
   int get mistakes => _mistakes;
 
-  /// Qaysi raund ketyapti (1..3) — sarlavha uchun.
+  /// Qaysi raund ketyapti (1..[roundCount]) — sarlavha uchun.
   int get round {
     final q = current;
-    if (q == null) return _rounds.length;
+    if (q == null) return roundCount;
     final f = q.format == AskFormat.listen ? AskFormat.build : q.format;
-    return _rounds.indexOf(f) + 1;
+    final i = _played.indexOf(f);
+    if (i >= 0) return i + 1;
+    // Savoli yo'q deb hisoblangan, lekin keyin qo'shilgan format
+    // (aralash takror): umumiy ro'yxatdagi o'rni.
+    final j = _rounds.indexOf(f);
+    return (j < 0 ? 1 : j + 1).clamp(1, roundCount);
   }
 
   /// Talaffuzni o'tkazib yuborish (mikrofon yo'q/ishlamadi) — xato

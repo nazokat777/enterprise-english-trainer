@@ -68,6 +68,10 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
   int _i = 0; // joriy satr
   bool _listening = false;
   String _heard = '';
+
+  /// Mikrofon yondi, lekin hech narsa eshitilmadi (ruxsat yo'q / jimlik):
+  /// ekran buni aytadi, aks holda "mikrofon ishlamadimi?" degan shubha qoladi.
+  bool _noHear = false;
   bool? _lineOk;
   int _said = 0; // o'quvchi to'g'ri aytgan satrlar
   int _mine = 0; // o'quvchi satrlari jami
@@ -112,6 +116,7 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
     }
     setState(() {
       _heard = '';
+      _noHear = false;
       _lineOk = null;
     });
   }
@@ -138,11 +143,17 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
     setState(() {
       _listening = true;
       _heard = '';
+      _noHear = false;
     });
     _sub?.cancel();
     _sub = _speech.start().listen(_onHeard, onError: (_) => _stopListen(),
         onDone: () {
-      if (mounted && _listening) setState(() => _listening = false);
+      if (mounted && _listening) {
+        setState(() {
+          _listening = false;
+          _noHear = _heard.isEmpty;
+        });
+      }
     });
     _timer?.cancel();
     _timer = Timer(const Duration(seconds: 10), _stopListen);
@@ -151,7 +162,13 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
   void _stopListen() {
     _timer?.cancel();
     _speech.stop();
-    if (mounted) setState(() => _listening = false);
+    if (mounted) {
+      setState(() {
+        // Eshitish davomida hech narsa kelmagan bo'lsa - "eshitilmadi".
+        if (_listening && _heard.isEmpty) _noHear = true;
+        _listening = false;
+      });
+    }
   }
 
   Future<void> _onHeard(String t) async {
@@ -192,7 +209,10 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
         actions: [
           if (_role != null && !_done)
             IconButton(
-              tooltip: _hideText ? 'Matnni ko\'rsatish' : 'Matnni yashirish',
+              tooltip: _hideText
+                  ? 'Gapingiz matnini ko\'rsatish'
+                  : 'Gapingiz matnini yashirish (yodlab, ko\'rmasdan ayting - '
+                      'qiyinroq)',
               onPressed: () => setState(() => _hideText = !_hideText),
               icon: Icon(_hideText
                   ? Icons.visibility_rounded
@@ -217,12 +237,14 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
         const Text('Kim bo\'lib gapirasiz?',
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
         const SizedBox(height: 6),
+        // Qisqa: rol tanlash tugmalari kichik ekranda ham ko'rinib tursin.
         Text(
-          'Ilova boshqa qahramonning gaplarini o\'qiydi, siz o\'z satrlaringizni '
-          'ovoz chiqarib aytasiz. Mikrofon kerak.',
-          style: TextStyle(fontSize: 13.5, color: muted),
+          'Bu kitobdagi suhbat. Rolni tanlang: ilova boshqa qahramon '
+          'gapini o\'qiydi, navbat sizga kelganda mikrofonga inglizcha '
+          'ayting.',
+          style: TextStyle(fontSize: 13.5, height: 1.4, color: muted),
         ),
-        const SizedBox(height: 18),
+        const SizedBox(height: 14),
         for (final s in _speakers)
           Padding(
             padding: const EdgeInsets.only(bottom: 10),
@@ -232,7 +254,7 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
               onPressed: () => _start(s),
               child: Center(
                 child: Text(
-                  '$s  ·  ${_lines.where((l) => l.speaker == s).length} satr',
+                  'Men $s bo\'laman - ${_lines.where((l) => l.speaker == s).length} ta gap',
                   style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w800,
@@ -241,8 +263,16 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
               ),
             ),
           ),
-        const SizedBox(height: 8),
-        Text('Dialog:', style: TextStyle(fontSize: 12.5, color: muted)),
+        // Ko'z tugmasi nima qilishi o'yin boshlanishidan OLDIN aytiladi.
+        Text(
+          'Mikrofon kerak. Qiyinroq bo\'lsin desangiz: suhbat paytida '
+          'yuqoridagi ko\'z tugmasi sizning gapingiz matnini yashiradi - '
+          'faqat o\'zbekcha tarjima qoladi.',
+          style: TextStyle(fontSize: 12.5, height: 1.4, color: muted),
+        ),
+        const SizedBox(height: 14),
+        Text('Suhbat matni (avval o\'qib chiqing):',
+            style: TextStyle(fontSize: 12.5, color: muted)),
         const SizedBox(height: 6),
         for (final l in _lines)
           Padding(
@@ -269,6 +299,16 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
           value: _i / _lines.length,
           minHeight: 6,
           backgroundColor: AppColors.brandPurple.withValues(alpha: 0.12),
+        ),
+        // Chiziq nimani ko'rsatishi: suhbat qayerga yetgani.
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 6, 16, 0),
+          child: Align(
+            alignment: Alignment.centerRight,
+            child: Text('Gap ${_i + 1} / ${_lines.length}',
+                style: TextStyle(
+                    fontSize: 11.5, fontWeight: FontWeight.w700, color: muted)),
+          ),
         ),
         Expanded(
           child: ListView.builder(
@@ -379,16 +419,24 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
                           ? 'Zo\'r!'
                           : _listening
                               ? 'Eshityapman...'
-                              : _heard.isEmpty
-                                  ? 'Sizning navbatingiz - mikrofonni bosib ayting'
-                                  : 'Eshitildi: "$_heard" - yana urinib ko\'ring',
+                              : _heard.isNotEmpty
+                                  ? 'Men eshitdim: "$_heard" - yana urinib '
+                                      'ko\'ring. Aniqroq va sekinroq ayting.'
+                                  : _noHear
+                                      ? 'Hech narsa eshitilmadi. Brauzer '
+                                          'mikrofon ruxsatini so\'rasa '
+                                          '"Ruxsat berish" ni bosib, yana '
+                                          'urinib ko\'ring.'
+                                      : 'Sizning navbatingiz: yuqoridagi '
+                                          'gapni inglizcha ovoz chiqarib '
+                                          'ayting (mikrofonni bosing)',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: 13.5,
                           fontWeight: FontWeight.w600,
                           color: _lineOk == true
                               ? AppColors.success
-                              : _heard.isEmpty || _listening
+                              : _listening || (_heard.isEmpty && !_noHear)
                                   ? muted
                                   : AppColors.danger),
                     ),
@@ -399,12 +447,12 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
                           onPressed: () => Tts.instance
                               .speak(cur.en, id: '${widget.exercise.ref}::$_i'),
                           icon: const Icon(Icons.volume_up_rounded, size: 18),
-                          label: const Text('Namuna'),
+                          label: const Text('Namunani eshitish'),
                         ),
                         TextButton.icon(
                           onPressed: _skipLine,
                           icon: const Icon(Icons.skip_next_rounded, size: 18),
-                          label: const Text('O\'tkazish'),
+                          label: const Text('Bu gapni o\'tkazish'),
                         ),
                       ],
                     ),
@@ -458,8 +506,11 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
                           fontSize: 24,
                           fontWeight: FontWeight.w900)),
                   const SizedBox(height: 6),
-                  Text('$_said / $_mine satr to\'g\'ri aytildi',
+                  Text('$_said / $_mine ta gapingiz to\'g\'ri aytildi',
                       style: const TextStyle(color: Colors.white70, fontSize: 15)),
+                  const SizedBox(height: 4),
+                  const Text('Dialogni tugatganingiz uchun: +10 ball',
+                      style: TextStyle(color: Colors.white70, fontSize: 14)),
                 ],
               ),
             ),
@@ -476,7 +527,7 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
                 _advance();
               },
               child: const Center(
-                child: Text('Yana bir bor',
+                child: Text('Dialogni qaytadan o\'ynash',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w800,
@@ -489,7 +540,7 @@ class _RolePlayScreenState extends State<RolePlayScreen> {
               shadowColor: const Color(0xFF0F7A37),
               onPressed: () => Navigator.pop(context),
               child: const Center(
-                child: Text('Tayyor',
+                child: Text('Tugatish',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w800,

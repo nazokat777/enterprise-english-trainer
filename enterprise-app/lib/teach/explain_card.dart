@@ -12,9 +12,23 @@ class ExplainCard extends StatelessWidget {
   final List<Explanation> items;
   final bool correct;
 
-  const ExplainCard({super.key, required this.items, required this.correct});
+  /// Karta tepasidagi qalin natija qatori ("To'g'ri!" / "Noto'g'ri. ...").
+  /// Bo'sh bo'lsa chiqmaydi. Ilgari to'g'ri/noto'g'ri faqat RANG bilan
+  /// aytilardi - yangi o'quvchi uni sezmasdi.
+  final String verdict;
+
+  const ExplainCard({
+    super.key,
+    required this.items,
+    required this.correct,
+    this.verdict = '',
+  });
 
   /// Qulay konstruktor: javob va to'g'ri variantdan izoh yasaydi.
+  ///
+  /// [showAnswer] - xato bo'lsa natija qatorida to'g'ri javob ham yoziladi
+  /// (ekranda u boshqa joyda ko'rinib tursa, o'chiring). [willRepeat] -
+  /// "Bu savol keyinroq yana so'raladi" (mashqlarda shunday).
   factory ExplainCard.forAnswer({
     Key? key,
     required String correct,
@@ -24,10 +38,27 @@ class ExplainCard extends StatelessWidget {
     String uz = '',
     String Function(String word)? lookup,
     required bool isCorrect,
+    bool showAnswer = true,
+    bool willRepeat = false,
   }) =>
       ExplainCard(
         key: key,
         correct: isCorrect,
+        verdict: isCorrect
+            ? 'To\'g\'ri!'
+            : [
+                // To'g'ri/Noto'g'ri tugmali savolda "To'g'ri javob: To'g'ri"
+                // chalkash - u yerda gapning o'zi haqida aytiladi.
+                if (_isTrueFalse(correct))
+                  'Noto\'g\'ri javob. Gap aslida '
+                      '${correct.trim().startsWith('No') ? 'noto\'g\'ri' : 'to\'g\'ri'}.'
+                else ...[
+                  'Noto\'g\'ri.',
+                  if (showAnswer && correct.trim().isNotEmpty)
+                    'To\'g\'ri javob: ${correct.trim()}.',
+                ],
+                if (willRepeat) 'Bu savol keyinroq yana so\'raladi.',
+              ].join(' '),
         items: explainAnswer(
           correct: correct,
           given: given,
@@ -41,7 +72,7 @@ class ExplainCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (items.isEmpty) return const SizedBox.shrink();
+    if (items.isEmpty && verdict.isEmpty) return const SizedBox.shrink();
     final c = correct ? AppColors.success : AppColors.danger;
     return Container(
       width: double.infinity,
@@ -55,6 +86,18 @@ class ExplainCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          if (verdict.isNotEmpty) ...[
+            Text(
+              verdict,
+              style: TextStyle(
+                fontSize: 14,
+                height: 1.35,
+                fontWeight: FontWeight.w900,
+                color: c,
+              ),
+            ),
+            if (items.isNotEmpty) const SizedBox(height: 8),
+          ],
           for (var i = 0; i < items.length; i++) ...[
             if (i > 0) const SizedBox(height: 10),
             Row(
@@ -89,6 +132,11 @@ class ExplainCard extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  static bool _isTrueFalse(String s) {
+    final t = s.trim();
+    return t == 'To\'g\'ri' || t == 'Noto\'g\'ri';
   }
 
   static String _emoji(String source) => switch (source) {

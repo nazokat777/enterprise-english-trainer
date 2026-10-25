@@ -80,7 +80,9 @@ void main() {
     ]);
 
     expect(find.text('kitob'), findsOneWidget, reason: 'savol o\'zbekcha');
-    expect(find.text('Inglizchasini harflab yozing'), findsOneWidget);
+    expect(find.text("Harflarni to'g'ri tartibda bosib inglizchasini yig'ing"),
+        findsOneWidget,
+        reason: 'ko\'rsatma savolning o\'zida bo\'lsin');
     // Harflar alohida plitkalarda.
     for (final ch in ['b', 'o', 'k']) {
       expect(find.text(ch), findsWidgets, reason: '$ch harfi bo\'lsin');
@@ -141,7 +143,7 @@ void main() {
     // navbatga qaytaradi, navbat uzayadi va o'yin 12 qadamda chiqmay
     // qolishi mumkin — test beqaror bo'lardi.
     var guard = 0;
-    while (find.text('So\'zlarni ma\'nosiga moslang').evaluate().isEmpty &&
+    while (find.text('Juftlarni toping').evaluate().isEmpty &&
         guard++ < 12) {
       var asked = -1;
       for (var i = 0; i < 12; i++) {
@@ -153,8 +155,11 @@ void main() {
       await t.pump(const Duration(milliseconds: 1600));
     }
 
-    expect(find.text('So\'zlarni ma\'nosiga moslang'), findsOneWidget,
+    expect(find.text('Juftlarni toping'), findsOneWidget,
         reason: 'seansda o\'yin ham bo\'lsin');
+    // Nima qilish kerakligi aytilgan: avval chap, keyin o'ng.
+    expect(find.textContaining('Avval chapdan inglizcha so\'zni'),
+        findsOneWidget);
     // Ikkala ustunda ham yozuvlar bor.
     expect(find.textContaining('word'), findsWidgets);
     expect(find.textContaining('soz'), findsWidgets);

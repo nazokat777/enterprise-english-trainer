@@ -8,19 +8,22 @@ void main() {
       explainDiff(given, correct)?.title ?? '';
 
   test('artikl', () {
-    expect(t('a apple', 'an apple'), 'Artikl: a yoki an');
-    expect(t('an book', 'a book'), 'Artikl: a yoki an');
-    expect(t('a sun is hot', 'the sun is hot'), 'Artikl: the');
+    expect(t('a apple', 'an apple'), 'a yoki an?');
+    expect(t('an book', 'a book'), 'a yoki an?');
+    expect(t('a sun is hot', 'the sun is hot'), 'Aniq narsa: the');
   });
 
   test('to be', () {
-    expect(t('he are a doctor', 'he is a doctor'), 'To be shakli');
-    expect(t('they is here', 'they are here'), 'To be shakli');
+    expect(t('he are a doctor', 'he is a doctor'),
+        'Bo\'lmoq fe\'li: am / is / are');
+    expect(t('they is here', 'they are here'),
+        'Bo\'lmoq fe\'li: am / is / are');
     expect(t('I were there', 'I was there'), 'O\'tgan zamon: was / were');
   });
 
   test('fe\'l shakli', () {
-    expect(t('he work here', 'he works here'), 'Fe\'lga -s');
+    expect(t('he work here', 'he works here'),
+        'Fe\'lga -s qo\'shing (he/she/it)');
     expect(t('they works here', 'they work here'), 'Ortiqcha -s');
     expect(t('I work yesterday', 'I worked yesterday'), 'O\'tgan zamon: -ed');
   });
@@ -38,7 +41,7 @@ void main() {
 
   test('so\'z soni', () {
     expect(t('I student', 'I am a student'), 'So\'z tushib qolgan');
-    expect(t('I am a a student', 'I am a student'), 'Ortiqcha artikl');
+    expect(t('I am a a student', 'I am a student'), 'Ortiqcha a / an / the');
   });
 
   test('bir xil javobga izoh yo\'q', () {

@@ -107,7 +107,7 @@ class _PegScreenState extends State<PegScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Qarmoq usuli mashqi')),
+      appBar: AppBar(title: const Text('Qarmoq usuli: mini-tajriba')),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(20, 14, 20, 30),
         children: _body(context),
@@ -140,15 +140,17 @@ class _PegScreenState extends State<PegScreen> {
         return [
           const Text('🎯', style: TextStyle(fontSize: 44), textAlign: TextAlign.center),
           const SizedBox(height: 8),
-          _info('Bu mashqda mnemonika ishlashini O\'Z xotirangizda ko\'rasiz.'),
-          _info('1) Avval 10 ta so\'zni 60 soniya ko\'rib, TARTIB bilan eslab '
-              'qolishga harakat qilasiz - oddiy usulda.'),
-          _info('2) Keyin qarmoq usulini o\'rganasiz: 1 dan 10 gacha raqamga '
-              'bittadan "qarmoq" rasm, har so\'z qarmoqqa sahna bilan ilinadi.'),
-          _info('3) Qayta test. Natijalarni solishtirasiz. Ko\'pchilikda 2-3 '
-              'barobar o\'sadi.'),
+          _info('Bu mini-tajriba mnemonika ishlashini o\'z xotirangizda ko\'rsatadi.'),
+          _info('Qarmoq - har bir raqamga biriktirilgan doimiy rasm (masalan, '
+              '1 = quyosh). So\'zni shu rasmga ulab, ularni tartib bilan eslash '
+              'osonlashadi.'),
+          _info('3 qadam:'),
+          _info('1) 10 ta so\'zni 60 soniya ko\'rib, oddiy usulda tartib bilan '
+              'eslaysiz.'),
+          _info('2) Qarmoqlarni yodlab, har so\'zni sahna bilan ulaysiz.'),
+          _info('3) Yana sinaysiz va ikki natijani solishtirasiz.'),
           const SizedBox(height: 8),
-          _btn('Boshlash - 1-test', () {
+          _btn('Boshlash - oddiy usulda 1-sinov', () {
             _go(_Phase.memorize1);
             _startTimer(_Phase.recall1);
           }),
@@ -156,8 +158,12 @@ class _PegScreenState extends State<PegScreen> {
 
       case _Phase.memorize1:
         return [
-          Text('Eslab qoling (tartib bilan) · $_seconds s',
+          Text('Eslab qoling (tartib bilan) · $_seconds soniya qoldi',
               style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
+          const SizedBox(height: 4),
+          Text('Ro\'yxatni o\'qing. Tayyor bo\'lsangiz "Tayyorman"ni bosing - '
+              'keyin ro\'yxat yashiriladi va yozasiz.',
+              style: TextStyle(fontSize: 12.5, height: 1.4, color: muted)),
           const SizedBox(height: 10),
           for (var i = 0; i < _words.length; i++)
             Padding(
@@ -175,10 +181,17 @@ class _PegScreenState extends State<PegScreen> {
         return [
           Text(
             second
-                ? 'Qayta test: qarmoqlarni eslab, inglizchasini yozing'
-                : 'Tartib bilan inglizchasini yozing (eslaganingizcha)',
+                ? 'Qayta sinov: har qarmoq rasmiga ulagan so\'zingizni eslang '
+                    'va uning inglizchasini yozing.'
+                : 'Oddiy usulda 1-sinov: ro\'yxatdagi so\'zlarning inglizchasini '
+                    'tartib bilan yozing (eslaganingizcha).',
             style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15),
           ),
+          if (second) ...[
+            const SizedBox(height: 4),
+            Text('Masalan: "1. quyosh" - quyoshga qaysi so\'zni ulagandingiz?',
+                style: TextStyle(fontSize: 12.5, height: 1.4, color: muted)),
+          ],
           const SizedBox(height: 10),
           for (var i = 0; i < _words.length; i++)
             Padding(
@@ -220,12 +233,12 @@ class _PegScreenState extends State<PegScreen> {
 
       case _Phase.pegs:
         return [
-          Text('1-test: $_score1 / 10',
+          Text('Oddiy usulda 1-sinov: $_score1 / 10 so\'z to\'g\'ri',
               style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 20)),
           const SizedBox(height: 8),
-          _info('Endi QARMOQLAR. Har raqamning bitta o\'zgarmas rasmi bor - '
-              'shaklidan yoki ma\'nosidan. Ularni bir marta yodlaysiz, keyin '
-              'har qanday ro\'yxat uchun ishlatasiz:'),
+          _info('Endi qarmoqlarni o\'rganing. Har raqamning bitta o\'zgarmas '
+              'rasmi bor - ularni bir marta yodlaysiz, keyin har qanday ro\'yxat '
+              'uchun ishlatasiz:'),
           for (final p in kPegs)
             Padding(
               padding: const EdgeInsets.only(bottom: 6),
@@ -233,7 +246,7 @@ class _PegScreenState extends State<PegScreen> {
                   style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
             ),
           const SizedBox(height: 10),
-          _btn('Qarmoqlarni bildim - so\'zlarni ilamiz', () {
+          _btn('Qarmoqlarni bildim - so\'zlarni ulaymiz', () {
             setState(() => _link = 0);
             _go(_Phase.link);
           }),
@@ -243,7 +256,7 @@ class _PegScreenState extends State<PegScreen> {
         final w = _words[_link];
         final p = kPegs[_link];
         return [
-          Text('${_link + 1} / 10',
+          Text('${_link + 1}-so\'z / 10',
               style: TextStyle(fontSize: 13, color: muted)),
           const SizedBox(height: 10),
           Container(
@@ -254,7 +267,7 @@ class _PegScreenState extends State<PegScreen> {
             ),
             child: Column(
               children: [
-                Text('${p.$1} = ${p.$2}',
+                Text('Qarmoq: ${p.$1} = ${p.$2}',
                     style: const TextStyle(
                         color: Colors.white70, fontWeight: FontWeight.w800)),
                 const SizedBox(height: 6),
@@ -269,11 +282,11 @@ class _PegScreenState extends State<PegScreen> {
             ),
           ),
           const SizedBox(height: 14),
-          _info('Sahna: "${p.$2}" bilan "${w.$2}" ni BIR kadrga qo\'shing. '
+          _info('Sahna: "${p.$2}" va "${w.$2}" ni bitta rasmda birlashtiring. '
               'Masalan: ulkan ${p.$2} ${w.$2}ni ... (nima qilyapti?). G\'alati va '
               'harakatli bo\'lsin, ichingizda "${w.$1}" deb ayting.'),
           _info('Ko\'zingizni yuming, sahnani 3 soniya ko\'ring.'),
-          _btn(_link < 9 ? 'Ko\'rdim - keyingisi' : 'Tayyor - qayta test', () {
+          _btn(_link < 9 ? 'Ko\'rdim - keyingisi' : 'Tayyor - qayta sinov', () {
             if (_link < 9) {
               setState(() => _link++);
             } else {
@@ -284,6 +297,10 @@ class _PegScreenState extends State<PegScreen> {
 
       case _Phase.result:
         final grow = _score1 == 0 ? _score2.toDouble() : _score2 / _score1;
+        // 0 ga bo'lib "barobar" deyish ma'nosiz - o'sha holda sonlar aytiladi.
+        final gain = _score1 == 0
+            ? 'Natijangiz 0 tadan $_score2 taga ko\'tarildi!'
+            : 'Natijangiz ${grow.toStringAsFixed(1)} barobar oshdi!';
         return [
           const Text('📈', style: TextStyle(fontSize: 44), textAlign: TextAlign.center),
           const SizedBox(height: 8),
@@ -297,13 +314,17 @@ class _PegScreenState extends State<PegScreen> {
                   color: AppColors.success),
             ],
           ),
+          const SizedBox(height: 6),
+          Text('Har bir katakda 10 ta so\'zdan nechtasi to\'g\'ri eslangani '
+              'ko\'rsatilgan.',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 12, color: muted)),
           const SizedBox(height: 14),
           _info(_score2 > _score1
-              ? 'Natijangiz ${grow.toStringAsFixed(1)} barobar oshdi! Bu - '
-                  'mnemonika. Xuddi shu usul so\'z darslaridagi "ilgak" bilan '
-                  'ishlaydi.'
-              : 'Birinchi urinishda usul hali odat emas - qarmoqlarni yana bir '
-                  'marta takrorlang. 2-3 mashqdan keyin natija sezilarli o\'sadi.'),
+              ? '$gain Bu - mnemonika. Xuddi shu usul so\'z darslaridagi '
+                  '"ilgak" bilan ishlaydi.'
+              : 'Birinchi urinishda usul hali odat bo\'lmagan - qarmoqlarni '
+                  'yana takrorlab, mashqni qayta bajaring.'),
           _btn('Mnemonika bo\'limiga qaytish', () => Navigator.pop(context),
               color: AppColors.success),
         ];

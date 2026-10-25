@@ -32,11 +32,16 @@ class DrillScreen extends StatefulWidget {
   final List<DrillSource> lessonSources;
   final List<DrillSource> earlierSources;
 
+  /// Yakuniy ekrandagi foiz nimaning foizi ekani ("Butun unit (bob)
+  /// bo'yicha yodlanganlik"). Qiyin mavzu mashqida boshqacha yoziladi.
+  final String progressLabel;
+
   const DrillScreen({
     super.key,
     required this.title,
     required this.lessonSources,
     this.earlierSources = const [],
+    this.progressLabel = "Butun unit (bob) bo'yicha yodlanganlik",
   });
 
   @override
@@ -131,16 +136,24 @@ class _DrillScreenState extends State<DrillScreen> {
         ),
       ),
       body: SafeArea(
-        child: done ? _Finished(session: _s) : _body(q),
+        child: done
+            ? _Finished(session: _s, progressLabel: widget.progressLabel)
+            : _body(q),
       ),
     );
   }
 
-  String _phaseLabel() => switch (_s.phase) {
-        DrillPhase.lesson => 'Fokus · shu dars',
-        DrillPhase.mixed => 'Miks · oldingi darslar bilan',
-        DrillPhase.done => 'Yakunlandi',
-      };
+  /// Ikki qism bor: avval shu mavzu, keyin oldingi mavzular aralash.
+  /// Oldingi mavzu bo'lmasa faqat bitta qism - "1/2" yozilmaydi.
+  String _phaseLabel() {
+    final two = widget.earlierSources.isNotEmpty;
+    return switch (_s.phase) {
+      DrillPhase.lesson =>
+        '${two ? '1/2 · ' : ''}Shu mavzuning savollari',
+      DrillPhase.mixed => '2/2 · Oldingi mavzular aralash',
+      DrillPhase.done => 'Tugadi',
+    };
+  }
 
   Widget _body(DrillQuestion q) {
     return Column(
@@ -172,6 +185,7 @@ class _DrillScreenState extends State<DrillScreen> {
           HelpSkipBar(
             onHelp: _result == null ? () => _giveUp(show: true) : null,
             onSkip: _result == null ? () => _giveUp(show: false) : null,
+            skipHint: "savolni o'tkazadi, u keyinroq yana so'raladi",
           ),
       ],
     );
@@ -209,32 +223,155 @@ class _Header extends StatelessWidget {
           const SizedBox(height: 6),
           Row(
             children: [
-              Text('${(session.progress * 100).round()}%',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w800,
-                      fontSize: 13,
-                      color: AppColors.success)),
-              const SizedBox(width: 10),
+              // Bitta matn: tor ekranda ham o'raladi, sig'maslik bo'lmaydi.
               Expanded(
-                child: Text('${session.remaining} ta savol qoldi',
-                    style: TextStyle(
-                        fontSize: 12.5, color: AppColors.muted(context))),
+                child: Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: '${(session.progress * 100).round()}% yodlandi',
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w800,
+                            fontSize: 13,
+                            color: AppColors.success),
+                      ),
+                      TextSpan(
+                        text: ' · yana ${session.remaining} ta savol qoldi',
+                        style: TextStyle(
+                            fontSize: 12.5, color: AppColors.muted(context)),
+                      ),
+                    ],
+                  ),
+                ),
               ),
               if (session.combo >= 2)
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
-                  decoration: BoxDecoration(
-                    color: AppColors.coin.withValues(alpha: 0.18),
-                    borderRadius: BorderRadius.circular(AppRadius.pill),
+                Tooltip(
+                  message: "Ketma-ket to'g'ri javoblar soni. "
+                      "Xato qilsangiz, qaytadan boshlanadi.",
+                  child: Container(
+                    margin: const EdgeInsets.only(left: 8),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
+                    decoration: BoxDecoration(
+                      color: AppColors.coin.withValues(alpha: 0.18),
+                      borderRadius: BorderRadius.circular(AppRadius.pill),
+                    ),
+                    child: Text("ketma-ket to'g'ri: ${session.combo}",
+                        style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w800,
+                            color: AppColors.homework)),
                   ),
-                  child: Text('x${session.combo} kombo',
-                      style: const TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w800,
-                          color: AppColors.homework)),
                 ),
             ],
+          ),
+          const SizedBox(height: 3),
+          // Trening nima ekani - o'quvchi "qachon tugaydi?" deb o'ylamasin.
+          Text(
+            "Hamma savolga to'g'ri javob bergunicha davom etadi. "
+            "Xato savol keyinroq qaytadi.",
+            style: TextStyle(
+                fontSize: 11.5, height: 1.3, color: AppColors.muted(context)),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// SAVOL SHAKLIGA QARAB BIR QATORLI KO'RSATMA.
+///
+/// Ilgari yagona ko'rsatma ilova panelidagi mayda binafsha yozuv edi;
+/// o'quvchi savol kartasiga qarab "tarjima qilamanmi, yozamanmi,
+/// tanlaymanmi?" deb taxmin qilardi. Endi har savol kartasining O'ZIDA
+/// qalin qator chiqadi (`InstructionLine`).
+///
+/// [bookQuestion] - kitob mashqidan olingan savol (tarjima jufti emas):
+/// unda "ma'nosini tanlang" noto'g'ri bo'lardi.
+String instructionFor(AskFormat format, {bool bookQuestion = false}) =>
+    switch (format) {
+      AskFormat.choice => bookQuestion
+          ? "To'g'ri javobni tanlang"
+          : "Quyidagi so'zning o'zbekcha ma'nosini tanlang",
+      AskFormat.produce => "O'zbekchasiga mos inglizcha so'zni tanlang",
+      AskFormat.cloze => "Gapdagi bo'sh joyga mos so'zni tanlang",
+      AskFormat.build => "Harflarni to'g'ri tartibda bosib so'zni yig'ing",
+      AskFormat.listen => "Eshiting va eshitganingizni yig'ing",
+      AskFormat.match =>
+        "Avval chapdan inglizcha so'zni, keyin o'ngdan uning o'zbekcha "
+            "ma'nosini bosing",
+      AskFormat.speak => "So'zni inglizcha ovoz chiqarib ayting",
+    };
+
+/// Gapdagi bo'shliq belgisi bormi (`kBlank` yoki `___`).
+bool hasBlank(String s) => s.contains('___');
+
+/// Aniq savol uchun ko'rsatma: shakldan tashqari savolning ichki
+/// tuzilishiga ham qaraydi (bo'shliqli gap, so'z-so'z yig'ish...).
+String instructionOf(DrillQuestion q) {
+  final gap = hasBlank(q.prompt);
+  // Javobda bo'shliq bo'lsa plitkalar - butun so'zlar (gap tuzish).
+  final words = q.answer.trim().contains(' ');
+  switch (q.format) {
+    case AskFormat.choice:
+      // Tarjima juftida savol bilan birga ovoz tugmasi ham bor.
+      if (q.speak.isNotEmpty) return instructionFor(AskFormat.choice);
+      return gap
+          ? instructionFor(AskFormat.cloze)
+          : instructionFor(AskFormat.choice, bookQuestion: true);
+    case AskFormat.build:
+      if (words) {
+        return gap
+            ? "Bo'sh joyga mos so'zlarni to'g'ri tartibda bosing"
+            : "So'zlarni to'g'ri tartibda bosib gapni tuzing";
+      }
+      return gap
+          ? "Bo'sh joyga mos so'zni harflardan yig'ing"
+          : "Harflarni to'g'ri tartibda bosib inglizchasini yig'ing";
+    case AskFormat.listen:
+      return words
+          ? "Eshiting va eshitganingizni so'zlardan yig'ing"
+          : "Eshiting va eshitganingizni harflardan yig'ing";
+    default:
+      return instructionFor(q.format);
+  }
+}
+
+/// Savol kartasining tepasidagi ko'rsatma qatori - qalin, katta,
+/// fonli (mayda kulrang yozuv emas).
+class InstructionLine extends StatelessWidget {
+  final String text;
+  const InstructionLine(this.text, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
+      decoration: BoxDecoration(
+        color: AppColors.brandPurple.withValues(alpha: dark ? 0.2 : 0.09),
+        borderRadius: BorderRadius.circular(AppRadius.md),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 1),
+            child: Icon(Icons.touch_app_rounded,
+                size: 18,
+                color: dark ? AppColors.darkHeading : AppColors.brandPurple),
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(text,
+                style: TextStyle(
+                    fontSize: 14.5,
+                    height: 1.3,
+                    fontWeight: FontWeight.w800,
+                    color:
+                        dark ? AppColors.darkHeading : AppColors.lightHeading)),
           ),
         ],
       ),
@@ -291,6 +428,9 @@ class _ChoiceTaskState extends State<ChoiceTask> {
         DrillCard(
           child: Column(
             children: [
+              // Nima qilish kerakligi - savolning O'ZIDA, aniq.
+              InstructionLine(instructionOf(q)),
+              const SizedBox(height: 14),
               Text(q.prompt,
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -299,7 +439,9 @@ class _ChoiceTaskState extends State<ChoiceTask> {
                       height: 1.35)),
               if (q.promptUz.isNotEmpty) ...[
                 const SizedBox(height: 6),
-                Text(q.promptUz,
+                // Bu qator nima ekani yozilsin: bo'sh joydagi so'zning
+                // ma'nosi yoki gapning tarjimasi - ikkalasi ham ishora.
+                Text('Ishora: ${q.promptUz}',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 13.5, color: AppColors.muted(context))),
@@ -420,7 +562,27 @@ class _MatchTaskState extends State<_MatchTask> {
             ),
           ],
         ),
+        const SizedBox(height: 8),
+        // Nima qilish kerakligi: avval chap, keyin o'ng.
+        InstructionLine('${instructionFor(AskFormat.match)}. '
+            "To'g'ri juft yashil bo'ladi."),
         const SizedBox(height: 12),
+        Row(
+          children: [
+            for (final t in const ['Inglizcha', 'O\'zbekcha']) ...[
+              Expanded(
+                child: Text(t,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.muted(context))),
+              ),
+              if (t == 'Inglizcha') const SizedBox(width: 10),
+            ],
+          ],
+        ),
+        const SizedBox(height: 6),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -591,18 +753,32 @@ class _BuildTaskState extends State<BuildTask> {
         DrillCard(
           child: Column(
             children: [
-              Text(
-                  q.format == AskFormat.listen
-                      ? 'Eshiting va yozing'
-                      : 'Inglizchasini harflab yozing',
-                  style: TextStyle(
-                      fontSize: 12.5, color: AppColors.muted(context))),
-              const SizedBox(height: 8),
+              // Qanday javob beriladi - aniq va katta (mayda kulrang emas).
+              InstructionLine(instructionOf(q)),
+              const SizedBox(height: 14),
+              // Eshitib yozishda katta matn - so'zning ma'nosi (javob
+              // emas); shuni aytib qo'yamiz.
+              if (q.format == AskFormat.listen && q.promptUz.isNotEmpty) ...[
+                Text("Ma'nosi:",
+                    style: TextStyle(
+                        fontSize: 12.5, color: AppColors.muted(context))),
+                const SizedBox(height: 2),
+              ],
               // SAVOL O'ZBEKChA — javob inglizcha yoziladi.
               Text(q.format == AskFormat.listen ? q.promptUz : q.prompt,
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                       fontSize: 24, fontWeight: FontWeight.w800)),
+              // Bo'shliqli gapda o'zbekcha qator - ishora.
+              if (q.format == AskFormat.build &&
+                  hasBlank(q.prompt) &&
+                  q.promptUz.isNotEmpty) ...[
+                const SizedBox(height: 6),
+                Text('Ishora: ${q.promptUz}',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 13.5, color: AppColors.muted(context))),
+              ],
               if (q.speak.isNotEmpty) ...[
                 const SizedBox(height: 12),
                 SpeakButton(text: q.speak),
@@ -619,9 +795,19 @@ class _BuildTaskState extends State<BuildTask> {
             borderRadius: BorderRadius.circular(AppRadius.md),
             border: Border.all(color: border, width: 2),
           ),
-          child: Text(_built.isEmpty ? '. . .' : _built,
-              style: const TextStyle(
-                  fontSize: 26, fontWeight: FontWeight.w800, letterSpacing: 2)),
+          child: _built.isEmpty
+              // Bo'sh quti nima ekani aytiladi: javob shu yerda yig'iladi.
+              ? Text("Javobingiz shu yerda yig'iladi",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 14.5,
+                      fontWeight: FontWeight.w600,
+                      color: AppColors.muted(context)))
+              : Text(_built,
+                  style: const TextStyle(
+                      fontSize: 26,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 2)),
         ),
         const SizedBox(height: 8),
         SizedBox(
@@ -632,7 +818,7 @@ class _BuildTaskState extends State<BuildTask> {
                   child: TextButton.icon(
                     onPressed: () => setState(_picked.removeLast),
                     icon: const Icon(Icons.backspace_outlined, size: 18),
-                    label: const Text('Orqaga'),
+                    label: const Text("Oxirgisini o'chirish"),
                   ),
                 ),
         ),
@@ -689,10 +875,11 @@ class _BuildTaskState extends State<BuildTask> {
   }
 }
 
-/// Seans tugadi — natija va rag'bat.
+/// Trening tugadi — natija va keyingi qadam.
 class _Finished extends StatelessWidget {
   final DrillSession session;
-  const _Finished({required this.session});
+  final String progressLabel;
+  const _Finished({required this.session, required this.progressLabel});
 
   @override
   Widget build(BuildContext context) {
@@ -706,7 +893,7 @@ class _Finished extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         const Center(
-          child: Text('Trening yakunlandi',
+          child: Text('Mashq tugadi',
               style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.w800,
@@ -715,7 +902,7 @@ class _Finished extends StatelessWidget {
         const SizedBox(height: 6),
         Center(
           child: Text(
-            'Shu seansdagi savollar 100% to\'g\'ri javob berildi.',
+            "Bu mashqdagi hamma savolga to'g'ri javob berdingiz.",
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 13, height: 1.5, color: AppColors.muted(context)),
@@ -723,19 +910,25 @@ class _Finished extends StatelessWidget {
         ),
         const SizedBox(height: 18),
         // BUTUN dars qancha qolgani — o'quvchi yo'lni ko'rsin.
-        // Seans qisqa, lekin dars 100% gacha davom etadi.
-        _LessonBar(value: session.lessonProgress),
+        // Mashq qisqa, lekin dars 100% gacha davom etadi.
+        _LessonBar(value: session.lessonProgress, label: progressLabel),
         const SizedBox(height: 16),
         Center(
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 9),
-            decoration: BoxDecoration(
-              color: AppColors.coin.withValues(alpha: 0.16),
-              borderRadius: BorderRadius.circular(AppRadius.pill),
+          child: Tooltip(
+            message: "Xatosiz ketma-ket nechta savolga to'g'ri javob "
+                'berganingiz',
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 9),
+              decoration: BoxDecoration(
+                color: AppColors.coin.withValues(alpha: 0.16),
+                borderRadius: BorderRadius.circular(AppRadius.pill),
+              ),
+              child: Text(
+                  "Eng ko'p ketma-ket to'g'ri javob: ${session.bestCombo}",
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.w800, fontSize: 14)),
             ),
-            child: Text('Eng uzun kombo: x${session.bestCombo}',
-                style: const TextStyle(
-                    fontWeight: FontWeight.w800, fontSize: 14)),
           ),
         ),
         const SizedBox(height: 24),
@@ -743,7 +936,7 @@ class _Finished extends StatelessWidget {
           color: AppColors.brandPurple,
           onPressed: () => Navigator.pop(context),
           child: const Center(
-            child: Text('Yakunlash',
+            child: Text('Orqaga qaytish',
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w800,
@@ -755,17 +948,19 @@ class _Finished extends StatelessWidget {
   }
 }
 
-/// Butun darsning o\'zlashtirilishi — seans oxiridagi yo\'l xaritasi.
+/// Butun darsning o\'zlashtirilishi — mashq oxiridagi yo\'l xaritasi.
 class _LessonBar extends StatelessWidget {
   final double value;
-  const _LessonBar({required this.value});
+  final String label;
+  const _LessonBar({required this.value, required this.label});
 
   @override
   Widget build(BuildContext context) {
     final pct = (value * 100).round();
     return Column(
       children: [
-        Text('Dars progressi: $pct%',
+        Text('$label: $pct%',
+            textAlign: TextAlign.center,
             style: const TextStyle(
                 fontWeight: FontWeight.w800, fontSize: 14)),
         const SizedBox(height: 8),
@@ -782,8 +977,9 @@ class _LessonBar extends StatelessWidget {
         const SizedBox(height: 8),
         Text(
           pct >= 100
-              ? 'Bu dars 100% — ajoyib natija.'
-              : 'Keyingi seansda qolgan savollar keladi.',
+              ? 'Hammasi yodlandi — ajoyib natija.'
+              : "Qolgan savollar keyingi mashqda so'raladi. "
+                  "Davom etish uchun mashqni yana boshlang.",
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
         ),
@@ -815,22 +1011,26 @@ class SpeakButton extends StatelessWidget {
   const SpeakButton({super.key, required this.text});
 
   @override
-  Widget build(BuildContext context) => Container(
-        decoration: BoxDecoration(
-          gradient: AppColors.brandGradient,
-          shape: BoxShape.circle,
-          boxShadow: AppShadow.glow(AppColors.brandIndigo, alpha: 0.4),
-        ),
-        child: Material(
-          color: Colors.transparent,
-          shape: const CircleBorder(),
-          child: InkWell(
-            customBorder: const CircleBorder(),
-            onTap: () => Tts.instance.speak(text, id: text),
-            child: const SizedBox(
-              width: 56,
-              height: 56,
-              child: Icon(Icons.volume_up_rounded, color: Colors.white, size: 26),
+  Widget build(BuildContext context) => Tooltip(
+        message: 'Eshitish',
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: AppColors.brandGradient,
+            shape: BoxShape.circle,
+            boxShadow: AppShadow.glow(AppColors.brandIndigo, alpha: 0.4),
+          ),
+          child: Material(
+            color: Colors.transparent,
+            shape: const CircleBorder(),
+            child: InkWell(
+              customBorder: const CircleBorder(),
+              onTap: () => Tts.instance.speak(text, id: text),
+              child: const SizedBox(
+                width: 56,
+                height: 56,
+                child: Icon(Icons.volume_up_rounded,
+                    color: Colors.white, size: 26),
+              ),
             ),
           ),
         ),

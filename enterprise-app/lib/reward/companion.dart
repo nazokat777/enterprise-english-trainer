@@ -67,37 +67,44 @@ String mascotLine(Random rng) {
     case Mood.sleepy:
       pool.addAll([
         'Bugun hali boshlamadik... bitta mashq? 🥺',
-        '${r.petName.isNotEmpty ? r.petName : 'Men'} seni kutyapti. 5 daqiqa yetadi!',
-        'Streak ${progress.currentStreak} kun — uni saqlaymizmi?',
+        r.petName.isNotEmpty
+            ? '${r.petName} sizni kutyapti. 5 daqiqa yetadi!'
+            : 'Sizni kutyapman. 5 daqiqa yetadi!',
+        progress.currentStreak > 0
+            ? '${progress.currentStreak} kun ketma-ket o\'qiyapsiz - uzilib qolmasin!'
+            : 'Bugun boshlasangiz, ketma-ket kunlar hisobi boshlanadi!',
         h < 12 ? 'Xayrli tong! Ertalabki miya eng tez o\'rganadi.' : 'Kech bo\'lmasdan bitta dars qilaylik.',
       ]);
     case Mood.calm:
       pool.addAll([
-        'Yaxshi ketyapmiz! Yana ${r.xpToNext} XP — keyingi daraja.',
-        'Bugun ${r.todayCorrect} ta to\'g\'ri. Davom!',
-        'Bugungi missiyalar seni kutyapti 🎯',
+        'Yaxshi ketyapmiz! Yana ${r.xpToNext} ball - va keyingi darajaga chiqamiz.',
+        'Bugun ${r.todayCorrect} ta to\'g\'ri javob. Davom eting!',
+        'Kunlik vazifalar sizni kutyapti 🎯',
         if (r.spinAvailable)
-          "Lucky Spin tayyor — aylantir! 🎡"
+          "Omad g'ildiragi tayyor - aylantiring! 🎡"
         else if (!r.spinDoneToday)
-          "Yana ${r.spinRemaining} ta to'g'ri javob — Lucky Spin ochiladi."
+          "Yana ${r.spinRemaining} ta to'g'ri javob bering - Omad g'ildiragi ochiladi."
         else
-          "Ertaga yana Lucky Spin bor. Bugun yana bitta mashq?",
+          "Omad g'ildiragi ertaga yana ochiladi. Bugun yana bitta mashq?",
       ]);
     case Mood.happy:
+      final nextStage = MascotStage.nextAfter(r.level);
       pool.addAll([
-        'Bugun zo\'r kun! ${r.todayXp} XP 🎉',
-        'Men sen bilan faxrlanaman!',
-        'Rekord kombo: ${r.bestCombo}. Uni yangilaymizmi?',
-        'Shu tezlikda ${MascotStage.nextAfter(r.level)?.name ?? 'afsona'} bo\'laman!',
+        'Bugun zo\'r kun! ${r.todayXp} ball to\'pladingiz 🎉',
+        'Men siz bilan faxrlanaman!',
+        'Eng uzun ketma-ket to\'g\'ri javobingiz: ${r.bestCombo} ta. Yangilaymizmi?',
+        nextStage != null
+            ? 'Shu tezlikda ${nextStage.name} avatar darajasiga yetamiz!'
+            : 'Biz avatarning eng oxirgi darajasidamiz!',
       ]);
     case Mood.fired:
       pool.addAll([
-        '${r.combo} KOMBO! To\'xtama! 🔥',
+        'Ketma-ket ${r.combo} ta to\'g\'ri! To\'xtamang! 🔥',
         'Yonib ketdik! Yana bitta!',
-        'Hozir eng yaxshi paytimiz — davom!',
+        'Hozir eng yaxshi paytimiz - davom eting!',
       ]);
   }
-  if (r.isHappyHour) pool.add('POWER HOUR — hamma XP ikki barobar! ⚡⚡');
+  if (r.isHappyHour) pool.add('Hozir ikki hissa soat: har bir ball 2 barobar! ⚡⚡');
   return pool[rng.nextInt(pool.length)];
 }
 
@@ -207,6 +214,12 @@ class _MascotCardState extends State<MascotCard>
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Text('Sizning avataringiz - o\'qigan sari rivojlanadi',
+                          style: TextStyle(
+                              color: Colors.white.withValues(alpha: 0.75),
+                              fontSize: 11,
+                              fontWeight: FontWeight.w700)),
+                      const SizedBox(height: 2),
                       Row(
                         children: [
                           Text(rewards.petName.isNotEmpty ? rewards.petName : st.name,
@@ -222,18 +235,18 @@ class _MascotCardState extends State<MascotCard>
                                     fontSize: 12,
                                     fontWeight: FontWeight.w700)),
                           ],
-                          const SizedBox(width: 8),
-                          if (next != null)
-                            Flexible(
-                              child: Text('${next.emoji} ${next.minLevel}-darajada',
-                                  overflow: TextOverflow.ellipsis,
-                                  style: TextStyle(
-                                      color: Colors.white.withValues(alpha: 0.75),
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w700)),
-                            ),
                         ],
                       ),
+                      Text(
+                          next != null
+                              ? 'Avatar darajasi: ${st.name}. '
+                                  'Keyingi: ${next.emoji} ${next.name} - '
+                                  '${next.minLevel}-darajaga yetganda'
+                              : 'Avatar darajasi: ${st.name} (eng oxirgisi)',
+                          style: TextStyle(
+                              color: Colors.white.withValues(alpha: 0.75),
+                              fontSize: 11,
+                              fontWeight: FontWeight.w700)),
                       const SizedBox(height: 6),
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
@@ -251,6 +264,11 @@ class _MascotCardState extends State<MascotCard>
                                 fontWeight: FontWeight.w700,
                                 fontSize: 13)),
                       ),
+                      const SizedBox(height: 4),
+                      Text('Bosing - yangi maslahat',
+                          style: TextStyle(
+                              color: Colors.white.withValues(alpha: 0.7),
+                              fontSize: 10.5)),
                     ],
                   ),
                 ),
@@ -263,9 +281,9 @@ class _MascotCardState extends State<MascotCard>
   }
 }
 
-// ═══════════════════ STREAK XAVFI ═══════════════════
+// ═══════════════════ KETMA-KET KUN XAVFI ═══════════════════
 
-/// Bugun 0 XP bo'lsa: yo'qotish qo'rquvi — yarim tungacha hisoblagich.
+/// Bugun 0 ball bo'lsa: yo'qotish qo'rquvi — yarim tungacha hisoblagich.
 class StreakDangerCard extends StatefulWidget {
   const StreakDangerCard({super.key});
   @override
@@ -316,11 +334,13 @@ class _StreakDangerCardState extends State<StreakDangerCard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('${progress.currentStreak} kunlik streak xavf ostida',
+                    Text(
+                        '${progress.currentStreak} kun ketma-ket o\'qiganingiz uzilishi mumkin',
                         style: TextStyle(
                             fontWeight: FontWeight.w900, fontSize: 14, color: color)),
                     Text(
-                        'Yarim tungacha $h soat $m daqiqa. Bitta mashq yetadi.',
+                        'Bugun hali mashq qilmadingiz. Yarim tungacha '
+                        '$h soat $m daqiqa - bitta mashq yetadi.',
                         style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
                   ],
                 ),
@@ -373,69 +393,162 @@ class ActivityHeatmap extends StatelessWidget {
                   const Text('📅', style: TextStyle(fontSize: 16)),
                   const SizedBox(width: 8),
                   const Expanded(
-                    child: Text('Faollik xaritasi',
+                    child: Text('Kunlar taqvimi',
                         style: TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
                   ),
-                  Text('$activeDays kun · $totalXp XP',
-                      style: TextStyle(fontSize: 11, color: AppColors.muted(context))),
-                  if (delta != null) ...[
-                    const SizedBox(width: 6),
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                      decoration: BoxDecoration(
-                        color: (delta >= 0 ? AppColors.success : AppColors.homework)
-                            .withValues(alpha: 0.14),
-                        borderRadius: BorderRadius.circular(AppRadius.pill),
+                  const GameInfoButton(
+                    title: 'Kunlar taqvimi nima?',
+                    lines: [
+                      'Har bir katak - bitta kun. Yashil katak: o\'sha kuni o\'qigansiz. '
+                          'Rang to\'qroq bo\'lsa, ko\'proq ball to\'plagansiz.',
+                      'Binafsha ramka - bugun. Ustunlar - haftalar (dushanbadan yakshanbagacha).',
+                    ],
+                  ),
+                ],
+              ),
+              Text('Qaysi kunlari o\'qiganingiz. To\'qroq rang - ko\'proq ball.',
+                  style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
+              const SizedBox(height: 6),
+              Wrap(
+                spacing: 8,
+                runSpacing: 4,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  Text('$activeDays kun o\'qigansiz · jami $totalXp ball',
+                      style: TextStyle(
+                          fontSize: 11.5,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.muted(context))),
+                  if (delta != null)
+                    Tooltip(
+                      message: 'Oxirgi 7 kundagi ballingiz, undan oldingi 7 kunga nisbatan',
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: (delta >= 0 ? AppColors.success : AppColors.homework)
+                              .withValues(alpha: 0.14),
+                          borderRadius: BorderRadius.circular(AppRadius.pill),
+                        ),
+                        child: Text(
+                            'oldingi 7 kundan ${delta >= 0 ? '+' : ''}$delta%',
+                            style: TextStyle(
+                                fontSize: 10.5,
+                                fontWeight: FontWeight.w900,
+                                color:
+                                    delta >= 0 ? AppColors.success : AppColors.homework)),
                       ),
-                      child: Text('${delta >= 0 ? '+' : ''}$delta% hafta',
-                          style: TextStyle(
-                              fontSize: 10.5,
-                              fontWeight: FontWeight.w900,
-                              color: delta >= 0 ? AppColors.success : AppColors.homework)),
                     ),
-                  ],
                 ],
               ),
               const SizedBox(height: 10),
               LayoutBuilder(
                 builder: (context, c) {
-                  final cell = ((c.maxWidth - (weeks - 1) * 3) / weeks).clamp(6.0, 14.0);
+                  const labelW = 30.0;
+                  final cell =
+                      ((c.maxWidth - labelW - (weeks - 1) * 3) / weeks).clamp(6.0, 14.0);
+                  const dayNames = ['Dush', '', 'Chor', '', 'Juma', '', ''];
                   return Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      for (var w = 0; w < weeks; w++)
-                        Column(
+                      // Hafta kunlari: qator qaysi kunga tegishli.
+                      SizedBox(
+                        width: labelW,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             for (var d = 0; d < 7; d++)
-                              Builder(builder: (_) {
-                                final day = start.add(Duration(days: w * 7 + d));
-                                final future = day.isAfter(today);
-                                final xp = rewards.dayXp[_key(day)] ?? 0;
-                                final isToday = day == today;
-                                final level = xp == 0 ? 0 : (xp < 20 ? 1 : (xp < 50 ? 2 : (xp < 100 ? 3 : 4)));
-                                final color = future
-                                    ? Colors.transparent
-                                    : level == 0
-                                        ? AppColors.neutralShadow.withValues(alpha: 0.35)
-                                        : AppColors.success.withValues(alpha: 0.25 + 0.19 * level);
-                                return Container(
-                                  width: cell,
-                                  height: cell,
-                                  margin: const EdgeInsets.only(bottom: 3),
-                                  decoration: BoxDecoration(
-                                    color: color,
-                                    borderRadius: BorderRadius.circular(3),
-                                    border: isToday
-                                        ? Border.all(color: AppColors.brandPurple, width: 1.5)
-                                        : null,
-                                  ),
-                                );
-                              }),
+                              SizedBox(
+                                height: cell + 3,
+                                child: Text(dayNames[d],
+                                    maxLines: 1,
+                                    overflow: TextOverflow.visible,
+                                    style: TextStyle(
+                                        fontSize: 9,
+                                        height: 1,
+                                        color: AppColors.muted(context))),
+                              ),
                           ],
                         ),
+                      ),
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            for (var w = 0; w < weeks; w++)
+                              Column(
+                                children: [
+                                  for (var d = 0; d < 7; d++)
+                                    Builder(builder: (_) {
+                                      final day = start.add(Duration(days: w * 7 + d));
+                                      final future = day.isAfter(today);
+                                      final xp = rewards.dayXp[_key(day)] ?? 0;
+                                      final isToday = day == today;
+                                      final box = Container(
+                                        width: cell,
+                                        height: cell,
+                                        margin: const EdgeInsets.only(bottom: 3),
+                                        decoration: BoxDecoration(
+                                          color: future
+                                              ? Colors.transparent
+                                              : _cellColor(_levelOf(xp)),
+                                          borderRadius: BorderRadius.circular(3),
+                                          border: isToday
+                                              ? Border.all(
+                                                  color: AppColors.brandPurple,
+                                                  width: 1.5)
+                                              : null,
+                                        ),
+                                      );
+                                      if (future) return box;
+                                      return Tooltip(
+                                        message: '${day.day}-${_months[day.month - 1]}'
+                                            ' · ${xp > 0 ? '$xp ball' : 'o\'qilmagan'}',
+                                        child: box,
+                                      );
+                                    }),
+                                ],
+                              ),
+                          ],
+                        ),
+                      ),
                     ],
                   );
                 },
+              ),
+              const SizedBox(height: 6),
+              // Rang izohi: kam -> ko'p; binafsha ramka = bugun.
+              Row(
+                children: [
+                  Text('kam ',
+                      style: TextStyle(fontSize: 10.5, color: AppColors.muted(context))),
+                  for (var l = 0; l <= 4; l++)
+                    Container(
+                      width: 10,
+                      height: 10,
+                      margin: const EdgeInsets.only(right: 3),
+                      decoration: BoxDecoration(
+                        color: _cellColor(l),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                  Text(' ko\'p',
+                      style: TextStyle(fontSize: 10.5, color: AppColors.muted(context))),
+                  const SizedBox(width: 10),
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(2),
+                      border: Border.all(color: AppColors.brandPurple, width: 1.5),
+                    ),
+                  ),
+                  Flexible(
+                    child: Text(' - bugun',
+                        overflow: TextOverflow.ellipsis,
+                        style:
+                            TextStyle(fontSize: 10.5, color: AppColors.muted(context))),
+                  ),
+                ],
               ),
             ],
           ),
@@ -443,6 +556,18 @@ class ActivityHeatmap extends StatelessWidget {
       },
     );
   }
+
+  static const _months = [
+    'yanvar', 'fevral', 'mart', 'aprel', 'may', 'iyun',
+    'iyul', 'avgust', 'sentyabr', 'oktyabr', 'noyabr', 'dekabr',
+  ];
+
+  static int _levelOf(int xp) =>
+      xp == 0 ? 0 : (xp < 20 ? 1 : (xp < 50 ? 2 : (xp < 100 ? 3 : 4)));
+
+  static Color _cellColor(int level) => level == 0
+      ? AppColors.neutralShadow.withValues(alpha: 0.35)
+      : AppColors.success.withValues(alpha: 0.25 + 0.19 * level);
 }
 
 // ═══════════════════ BAXTLI SOAT ═══════════════════
@@ -472,7 +597,7 @@ class _HappyHourBadgeState extends State<HappyHourBadge> {
   static String _fmt(Duration d) {
     final h = d.inHours;
     final m = d.inMinutes % 60;
-    return h > 0 ? '$h s $m d' : '$m daqiqa';
+    return h > 0 ? '$h soat $m daqiqa' : '$m daqiqa';
   }
 
   @override
@@ -482,8 +607,10 @@ class _HappyHourBadgeState extends State<HappyHourBadge> {
     final color = on ? const Color(0xFFDC2626) : AppColors.coin;
     return Tooltip(
       message: on
-          ? 'Power Hour: hamma XP x2 — ${_fmt(r.happyHourCountdown)} qoldi'
-          : 'Power Hour (x2 XP) ${r.happyHour}:00 da — ${_fmt(r.happyHourCountdown)}',
+          ? 'Ikki hissa soat: hozir har bir ball 2 barobar - '
+              '${_fmt(r.happyHourCountdown)} qoldi'
+          : 'Soat ${r.happyHour}:00 da ikki hissa soat boshlanadi: shunda har bir '
+              'ball 2 barobar (${_fmt(r.happyHourCountdown)}dan keyin)',
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
         decoration: BoxDecoration(
@@ -504,8 +631,8 @@ class _HappyHourBadgeState extends State<HappyHourBadge> {
               const SizedBox(width: 4),
               Text(
                   on
-                      ? '×2 ${r.happyHourCountdown.inMinutes}d'
-                      : '×2 ${r.happyHour}:00',
+                      ? '×2 ball ${r.happyHourCountdown.inMinutes} daqiqa'
+                      : '×2 ball ${r.happyHour}:00',
                   style: TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.w900,
@@ -551,13 +678,13 @@ class SpinCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(ready ? 'Lucky Spin tayyor!' : 'Lucky Spin',
+                      Text(ready ? 'Omad g\'ildiragi tayyor!' : 'Omad g\'ildiragi',
                           style: TextStyle(
                               fontWeight: FontWeight.w900, fontSize: 14, color: color)),
                       Text(
                           ready
-                              ? '100 tangagacha yutish mumkin — aylantiring'
-                              : 'Yana ${r.spinRemaining} ta to\'g\'ri javob — ochiladi',
+                              ? 'Kuniga bir marta aylantiriladi - tanga, ball yoki muzlatgich yutasiz'
+                              : 'Yana ${r.spinRemaining} ta to\'g\'ri javob bering - g\'ildirak ochiladi',
                           style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
                     ],
                   ),
@@ -569,9 +696,18 @@ class SpinCard extends StatelessWidget {
                       color: color,
                       borderRadius: BorderRadius.circular(AppRadius.pill),
                     ),
-                    child: const Text('Aylantir',
+                    child: const Text('Aylantirish',
                         style: TextStyle(
                             color: Colors.white, fontWeight: FontWeight.w900, fontSize: 12)),
+                  )
+                else
+                  GameInfoButton(
+                    title: 'Omad g\'ildiragi nima?',
+                    lines: [
+                      'Kuniga bir marta bepul aylantiriladi. Sovg\'a tasodifiy tushadi: tanga, ball yoki muzlatgich.',
+                      'Ochilishi uchun bugun ${RewardEngine.spinUnlockCorrect} ta to\'g\'ri javob bering.',
+                      '🧊 Muzlatgich - bir kun mashq qilmasangiz ham ketma-ket kunlaringiz uzilmaydi.',
+                    ],
                   ),
               ],
             ),
@@ -660,13 +796,19 @@ class _SpinWheelDialogState extends State<SpinWheelDialog>
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('KUNLIK G\'ILDIRAK',
+            const Text('OMAD G\'ILDIRAGI',
                 style: TextStyle(
                     color: Color(0xFFEC4899),
                     fontWeight: FontWeight.w900,
                     letterSpacing: 2,
                     fontSize: 13)),
-            const SizedBox(height: 12),
+            const SizedBox(height: 6),
+            Text(
+                'Tugmani bosing - g\'ildirak aylanadi va sovg\'a tushadi. '
+                'Kuniga bir marta.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 12.5, color: AppColors.muted(context))),
+            const SizedBox(height: 8),
             SizedBox(
               width: 260,
               height: 270,
@@ -693,9 +835,19 @@ class _SpinWheelDialogState extends State<SpinWheelDialog>
               ),
             ),
             const SizedBox(height: 8),
-            if (_done && _target >= 0)
-              Text('Yutuq: ${sectors[_target].label}',
-                  style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 20)),
+            if (_done && _target >= 0) ...[
+              Text('Siz yutdingiz: ${sectors[_target].label}',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
+              if (sectors[_target].freeze)
+                Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(
+                      'Bir kun mashq qilmasangiz ham ketma-ket kun uzilmaydi.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 12.5, color: AppColors.muted(context))),
+                ),
+            ],
             const SizedBox(height: 10),
             SizedBox(
               width: double.infinity,
@@ -707,7 +859,7 @@ class _SpinWheelDialogState extends State<SpinWheelDialog>
                 onPressed: _done
                     ? () => Navigator.pop(context)
                     : (_spinning ? null : _spin),
-                child: Text(_done ? 'Zo\'r!' : (_spinning ? 'Aylanyapti...' : 'AYLANTIR')),
+                child: Text(_done ? 'Yopish' : (_spinning ? 'Aylanyapti...' : 'AYLANTIRISH')),
               ),
             ),
           ],
@@ -793,7 +945,9 @@ class OnboardingSheet extends StatefulWidget {
 
 class _OnboardingSheetState extends State<OnboardingSheet>
     with SingleTickerProviderStateMixin {
-  final _ctrl = TextEditingController();
+  // Tayyor ism bilan boshlanadi: yangi odam ism o'ylab o'tirmasdan
+  // "Boshlaymiz" ni bosa oladi (xohlasa o'zgartiradi).
+  final _ctrl = TextEditingController(text: 'Nova');
   late final AnimationController _c =
       AnimationController(vsync: this, duration: const Duration(milliseconds: 1200))
         ..repeat(reverse: true, count: 12);
@@ -839,8 +993,9 @@ class _OnboardingSheetState extends State<OnboardingSheet>
                 style: TextStyle(fontWeight: FontWeight.w900, fontSize: 22)),
             const SizedBox(height: 6),
             Text(
-              'Siz o\'rgangan sari u rivojlanadi: Spark - Star - Nova - '
-              'Comet... Cosmos darajasigacha. Unga ism bering.',
+              'Avatar - o\'qishdagi yo\'ldoshingiz. Siz o\'rgangan sari u '
+              'rivojlanadi: Spark - Star - Nova - Comet... Cosmos. '
+              'Unga ism bering.',
               textAlign: TextAlign.center,
               style: TextStyle(color: AppColors.muted(context), fontSize: 14),
             ),
@@ -915,10 +1070,10 @@ class SessionRecapDialog extends StatelessWidget {
     final st = MascotStage.forLevel(rewards.level);
     final great = r.accuracy >= 85;
     final line = great
-        ? '$name faxrlanyapti: ${r.accuracy} % aniqlik!'
+        ? '$name faxrlanyapti: javoblaringizning ${r.accuracy} % i to\'g\'ri!'
         : (r.accuracy >= 60
-            ? '$name: "Yaxshi mehnat! Xatolar — o\'sish."'
-            : '$name: "Qiyin edi, lekin tashlamading. Ertaga osonroq bo\'ladi."');
+            ? '$name: "Yaxshi mehnat! Xatolar - o\'sish."'
+            : '$name: "Qiyin edi, lekin tashlamadingiz. Ertaga osonroq bo\'ladi."');
     return Dialog(
       backgroundColor: Colors.transparent,
       child: Container(
@@ -931,7 +1086,7 @@ class SessionRecapDialog extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(great ? 'AJOYIB SESSIYA' : 'SESSIYA YAKUNI',
+            Text(great ? 'AJOYIB NATIJA' : 'MASHG\'ULOT TUGADI',
                 style: const TextStyle(
                     color: AppColors.brandPurple,
                     fontWeight: FontWeight.w900,
@@ -945,29 +1100,41 @@ class SessionRecapDialog extends StatelessWidget {
                 style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
             const SizedBox(height: 16),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _RecapStat('⏱', '${r.minutes}', 'daqiqa'),
-                _RecapStat('⚡', '${r.xp}', 'XP'),
-                _RecapStat('🎯', '${r.accuracy}%', 'aniqlik'),
-                _RecapStat('🔥', '${r.bestCombo}', 'kombo'),
+                Expanded(child: _RecapStat('⏱', '${r.minutes}', 'daqiqa o\'qidingiz')),
+                Expanded(child: _RecapStat('⚡', '${r.xp}', 'ball')),
+                Expanded(child: _RecapStat('🎯', '${r.accuracy}%', 'to\'g\'ri javoblar')),
+                Expanded(
+                    child: _RecapStat('🔥', '${r.bestCombo}', 'ketma-ket to\'g\'ri')),
               ],
             ),
             const SizedBox(height: 16),
             if (!rewards.commitAskedToday) ...[
-              Text('Ertaga soat nechada davom etamiz?',
-                  style: TextStyle(fontSize: 13, color: AppColors.muted(context))),
+              Text('Ertaga soat nechada o\'qiymiz?',
+                  style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.muted(context))),
+              const SizedBox(height: 2),
+              Text(
+                  'Ilovani shu soatdan keyin ochsangiz, bosh ekranda eslatma chiqadi.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
               const SizedBox(height: 8),
-              Wrap(
-                spacing: 8,
-                children: [
-                  for (final h in [7, 9, 12, 18, 21])
-                    ChoiceChip(
-                      label: Text('$h:00'),
-                      selected: rewards.commitHour == h,
-                      onSelected: (_) => rewards.setCommitHour(h),
-                    ),
-                ],
+              ListenableBuilder(
+                listenable: rewards,
+                builder: (context, _) => Wrap(
+                  spacing: 8,
+                  children: [
+                    for (final h in [7, 9, 12, 18, 21])
+                      ChoiceChip(
+                        label: Text('$h:00'),
+                        selected: rewards.commitHour == h,
+                        onSelected: (_) => rewards.setCommitHour(h),
+                      ),
+                  ],
+                ),
               ),
               const SizedBox(height: 12),
             ],
@@ -981,7 +1148,7 @@ class SessionRecapDialog extends StatelessWidget {
                   if (!rewards.commitAskedToday) rewards.setCommitHour(rewards.commitHour);
                   Navigator.pop(context);
                 },
-                child: const Text('Rahmat!'),
+                child: const Text('Tayyor'),
               ),
             ),
           ],
@@ -1006,13 +1173,15 @@ class _RecapStat extends StatelessWidget {
             : CountUp(n,
                 suffix: value.endsWith('%') ? '%' : '',
                 style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 20)),
-        Text(label, style: TextStyle(fontSize: 11, color: AppColors.muted(context))),
+        Text(label,
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 11, color: AppColors.muted(context))),
       ],
     );
   }
 }
 
-/// "Va'da vaqti keldi" — bosh ekranda, vaqt o'tgan-u bugun ishlanmagan.
+/// "Eslatma vaqti keldi" — bosh ekranda, vaqt o'tgan-u bugun ishlanmagan.
 class CommitCard extends StatelessWidget {
   const CommitCard({super.key});
   @override
@@ -1037,12 +1206,15 @@ class CommitCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Va\'da: soat ${rewards.commitHour}:00 — vaqti keldi',
+                    Text(
+                        'Siz soat ${rewards.commitHour}:00 da o\'qishga kelishgandingiz - vaqti keldi',
                         style: const TextStyle(
                             fontWeight: FontWeight.w900,
                             fontSize: 14,
                             color: AppColors.actionBlue)),
-                    Text('O\'zingizga bergan so\'z. 3 daqiqa yetadi.',
+                    Text(
+                        'Bu soatni o\'zingiz tanlagan edingiz. '
+                        'Yuqoridagi tavsiyadan boshlang - 3 daqiqa yetadi.',
                         style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
                   ],
                 ),

@@ -88,7 +88,17 @@ void main() {
     }
     // 5-javobdan boshlab x2: 1+1+1+1+2+2 = 8 ochko.
     expect(find.text('8'), findsWidgets);
-    expect(find.text('x2'), findsOneWidget);
+    expect(find.text('x2 ball'), findsOneWidget);
+    // Raqamlar yorliqli: vaqt, hisob.
+    expect(find.text('soniya qoldi'), findsOneWidget);
+    expect(find.text('ball'), findsOneWidget);
+    // Har savol tepasida ko'rsatma (yo'nalish tasodifiy almashadi).
+    expect(
+        find.byWidgetPredicate((w) =>
+            w is Text &&
+            (w.data == "Quyidagi so'zning o'zbekcha ma'nosini tanlang" ||
+                w.data == "O'zbekchasiga mos inglizcha so'zni tanlang")),
+        findsOneWidget);
 
     await t.pump(const Duration(seconds: 61));
     expect(find.text('YANGI REKORD!'), findsOneWidget);

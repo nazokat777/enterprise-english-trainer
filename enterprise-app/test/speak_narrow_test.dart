@@ -62,7 +62,7 @@ void main() {
     await t.pumpWidget(MaterialApp(home: RolePlayScreen(exercise: e, title: 'Rol')));
     await t.pump();
     expect(t.takeException(), isNull);
-    await t.tap(find.textContaining('Rita  ·'));
+    await t.tap(find.textContaining('Men Rita bo\'laman'));
     await t.pump();
     await t.pump(const Duration(seconds: 1));
     await t.pump(const Duration(seconds: 1));

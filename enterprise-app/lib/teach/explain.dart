@@ -100,13 +100,16 @@ const Map<String, String> kCoreWords = {
   'us': 'bizni', 'them': 'ularni',
   'my': 'mening', 'your': 'sizning', 'his': 'uning (erkak)',
   'its': 'uning (narsa)', 'our': 'bizning', 'their': 'ularning',
-  'am': 'man (I bilan)', 'is': 'dir (u bilan)', 'are': 'siz/ular bilan',
+  'am': '- man (I bilan)', 'is': '- dir / bo\'ladi (he, she, it bilan)',
+  'are': '- siz / - lar (you, we, they bilan)',
   'was': 'edi (birlik)', 'were': 'edi (ko\'plik)', 'be': 'bo\'lmoq',
-  'do': 'qilmoq / yordamchi', 'does': 'yordamchi (u bilan)',
+  'do': 'qilmoq / yordamchi', 'does': 'yordamchi (he, she, it bilan)',
   'did': 'yordamchi (o\'tgan zamon)',
-  'have': 'ega bo\'lmoq', 'has': 'ega (u bilan)', 'had': 'ega edi',
-  'can': 'ola bilmoq', 'will': 'kelasi zamon', 'not': 'emas',
-  'a': 'bitta (noaniq)', 'an': 'bitta (unli oldidan)', 'the': 'aniq artikl',
+  'have': 'ega bo\'lmoq', 'has': 'ega (he, she, it bilan)', 'had': 'ega edi',
+  'can': 'qila olmoq (imkoniyat)',
+  'will': 'kelasi zamon yordamchisi (will go - boraman)', 'not': 'emas',
+  'a': 'bitta (noaniq)', 'an': 'bitta (unli oldidan)',
+  'the': 'aniq narsa oldidan keladi',
   'and': 'va', 'but': 'lekin', 'or': 'yoki', 'because': 'chunki',
   'what': 'nima', 'who': 'kim', 'where': 'qayerda', 'when': 'qachon',
   'why': 'nega', 'how': 'qanday', 'which': 'qaysi',
@@ -116,7 +119,7 @@ const Map<String, String> kCoreWords = {
   'very': 'juda', 'too': 'ham / juda', 'also': 'shuningdek',
   'in': 'ichida', 'on': 'ustida', 'at': 'da (nuqta)', 'to': 'ga',
   'from': 'dan', 'with': 'bilan', 'for': 'uchun', 'of': 'ning',
-  'old': 'yosh / eski', 'name': 'ism', 'years': 'yil',
+  'old': 'yosh / eski', 'name': 'ism', 'years': 'yosh / yil',
 };
 
 /// Tartibsiz ko'plik shakllari — "childs" kabi xatolar uchun.
@@ -168,9 +171,12 @@ Explanation? explainDiff(String given, String correct) {
 
   // 1) ARTIKL: a / an / the
   if (_articles.contains(want) || _articles.contains(got)) {
+    // "Artikl" - ot oldidan keladigan kichik so'z (a / an / the). O'zbek
+    // tilida yo'q, shuning uchun sarlavhada atamaning o'rniga so'zlarning
+    // o'zi yoziladi.
     if (want == 'an' && got == 'a') {
       return const Explanation(
-        title: 'Artikl: a yoki an',
+        title: 'a yoki an?',
         text: 'Keyingi so\'z UNLI tovush bilan boshlansa "an" qo\'yiladi: '
             'an apple, an hour. Undosh bilan boshlansa "a": a book, a car.',
         source: 'diff',
@@ -178,7 +184,7 @@ Explanation? explainDiff(String given, String correct) {
     }
     if (want == 'a' && got == 'an') {
       return const Explanation(
-        title: 'Artikl: a yoki an',
+        title: 'a yoki an?',
         text: 'Keyingi so\'z UNDOSH tovush bilan boshlansa "a" qo\'yiladi: '
             'a book, a university. Unli bilan boshlansa "an": an egg.',
         source: 'diff',
@@ -186,8 +192,8 @@ Explanation? explainDiff(String given, String correct) {
     }
     if (want == 'the') {
       return const Explanation(
-        title: 'Artikl: the',
-        text: 'Gapiruvchi ham, tinglovchi ham BILGAN aniq narsaga "the" '
+        title: 'Aniq narsa: the',
+        text: 'Gapiruvchi ham, tinglovchi ham BILGAN aniq narsa oldidan "the" '
             'qo\'yiladi (ikkinchi marta eslatilganda, yagona narsalarda: '
             'the sun, the door).',
         source: 'diff',
@@ -195,36 +201,36 @@ Explanation? explainDiff(String given, String correct) {
     }
     if (got == 'the' && (want == 'a' || want == 'an')) {
       return const Explanation(
-        title: 'Artikl: a/an yoki the',
+        title: 'a / an yoki the?',
         text: 'Narsa BIRINChI marta, noaniq tarzda aytilsa "a/an" ishlatiladi. '
-            '"The" esa aniq, ma\'lum narsaga qo\'yiladi.',
+            '"The" esa aniq, ma\'lum narsa oldidan qo\'yiladi.',
         source: 'diff',
       );
     }
     // Ortiqcha artikl: javobda qolib ketgan (to'g'ri javobda yo'q).
     if (_articles.contains(got) && leftover.contains(got)) {
       return const Explanation(
-        title: 'Ortiqcha artikl',
-        text: 'Bu yerda artikl kerak emas: ko\'plik va sanalmaydigan '
+        title: 'Ortiqcha a / an / the',
+        text: 'Bu yerda a / an / the kerak emas: ko\'plik va sanalmaydigan '
             'so\'zlar oldida (water, books) hamda atoqli otlarda '
-            '(Tashkent) artikl qo\'yilmaydi. Takror artikl ham bo\'lmaydi.',
+            '(Tashkent) ular qo\'yilmaydi. Ikkitasi ketma-ket ham bo\'lmaydi.',
         source: 'diff',
       );
     }
     if (want.isEmpty && _articles.contains(got)) {
       return const Explanation(
-        title: 'Ortiqcha artikl',
-        text: 'Bu yerda artikl kerak emas: ko\'plik va sanalmaydigan '
+        title: 'Ortiqcha a / an / the',
+        text: 'Bu yerda a / an / the kerak emas: ko\'plik va sanalmaydigan '
             'so\'zlar oldida (water, books) hamda atoqli otlarda '
-            '(Tashkent) artikl qo\'yilmaydi.',
+            '(Tashkent) ular qo\'yilmaydi.',
         source: 'diff',
       );
     }
     if (got.isEmpty && _articles.contains(want)) {
       return Explanation(
-        title: 'Artikl tushib qolgan',
-        text: 'Birlikdagi sanaladigan ot artiklsiz turmaydi - "$want" '
-            'qo\'shiladi.',
+        title: 'a / an / the tushib qolgan',
+        text: 'Birlikdagi sanaladigan ot oldida a / an / the bo\'lishi kerak '
+            '- "$want" qo\'shiladi.',
         source: 'diff',
       );
     }
@@ -235,11 +241,11 @@ Explanation? explainDiff(String given, String correct) {
     if (want == 'is' || want == 'am' || want == 'are') {
       const who = {
         'am': 'I (men) bilan',
-        'is': 'he / she / it va birlikdagi ot bilan',
-        'are': 'you / we / they va ko\'plik bilan',
+        'is': 'he / she / it (yoki bitta narsa) bilan',
+        'are': 'you / we / they (yoki ko\'p narsa) bilan',
       };
       return Explanation(
-        title: 'To be shakli',
+        title: 'Bo\'lmoq fe\'li: am / is / are',
         text: '"$want" - ${who[want]} ishlatiladi. Qolip: I am, he/she/it is, '
             'you/we/they are.',
         source: 'diff',
@@ -259,9 +265,10 @@ Explanation? explainDiff(String given, String correct) {
   if (want.isNotEmpty && got.isNotEmpty) {
     if (want == '${got}s' || want == '${got}es') {
       return Explanation(
-        title: 'Fe\'lga -s',
-        text: 'Present Simple da he / she / it (va birlikdagi ot) bilan '
-            'fe\'lga -s qo\'shiladi: he works, she goes. To\'g\'risi: "$want".',
+        title: 'Fe\'lga -s qo\'shing (he/she/it)',
+        text: 'Hozirgi oddiy zamonda (Present Simple) he / she / it bilan '
+            '(yoki bitta kishi/narsa bilan) fe\'lga -s qo\'shiladi: he works, '
+            'she goes. To\'g\'risi: "$want".',
         source: 'diff',
       );
     }
@@ -284,7 +291,7 @@ Explanation? explainDiff(String given, String correct) {
     }
     if (want == '${got}ing' || (got.isNotEmpty && want == '${got.substring(0, got.length - (got.endsWith('e') ? 1 : 0))}ing')) {
       return Explanation(
-        title: 'Davomiy shakl: -ing',
+        title: 'Hozir davom etayotgan ish: -ing',
         text: 'Hozir davom etayotgan ish: am/is/are + fe\'l-ing '
             '(I am working). To\'g\'risi: "$want".',
         source: 'diff',
@@ -325,9 +332,9 @@ Explanation? explainDiff(String given, String correct) {
       );
     }
     return Explanation(
-      title: 'Yordamchi fe\'l',
-      text: 'Bu yerda "$want" yordamchi fe\'li kerak. Yordamchidan keyin '
-          'asosiy fe\'l ASL shaklida turadi.',
+      title: 'Yordamchi so\'z: do / does / can ...',
+      text: 'Bu yerda "$want" kerak (yordamchi so\'z: do, does, can, have '
+          'kabi). Undan keyin asosiy fe\'l ASL shaklida turadi.',
       source: 'diff',
     );
   }
@@ -502,7 +509,7 @@ List<Explanation> explainAnswer({
 
   if (whyUz.trim().isNotEmpty) {
     out.add(Explanation(
-        title: 'Izoh', text: whyUz.trim(), source: 'book'));
+        title: 'Kitobdagi izoh', text: whyUz.trim(), source: 'book'));
   }
 
   if (!isCorrect) {

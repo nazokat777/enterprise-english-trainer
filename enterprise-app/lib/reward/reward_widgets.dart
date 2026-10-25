@@ -29,7 +29,69 @@ class CountUp extends StatelessWidget {
   }
 }
 
-/// Natija ekranidagi statistika: XP · eng katta kombo · xatosiz.
+/// "Bu nima?" oynasi — o'yin kartalari sarlavhasidagi kichik "i" tugmasi
+/// shuni ochadi. Har qator 1-2 qisqa gap.
+Future<void> showGameInfoSheet(BuildContext context,
+    {required String title, required List<String> lines}) {
+  return showModalBottomSheet<void>(
+    context: context,
+    showDragHandle: true,
+    isScrollControlled: true,
+    builder: (ctx) => SafeArea(
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(title,
+                style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 17)),
+            const SizedBox(height: 10),
+            for (final l in lines)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Text(l, style: const TextStyle(fontSize: 14, height: 1.4)),
+              ),
+            const SizedBox(height: 4),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton(
+                onPressed: () => Navigator.pop(ctx),
+                child: const Text('Tushunarli'),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
+}
+
+/// Karta sarlavhasi yonidagi kichik "Bu nima?" tugmasi.
+class GameInfoButton extends StatelessWidget {
+  final String title;
+  final List<String> lines;
+  const GameInfoButton({super.key, required this.title, required this.lines});
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: 'Bu nima?',
+      // Material ildizi talab qilinmasin deb InkResponse emas, GestureDetector.
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () => showGameInfoSheet(context, title: title, lines: lines),
+        child: Padding(
+          padding: const EdgeInsets.all(6),
+          child: Icon(Icons.info_outline_rounded,
+              size: 18, color: AppColors.muted(context)),
+        ),
+      ),
+    );
+  }
+}
+
+/// Natija ekranidagi statistika: ball · ketma-ket to'g'ri javoblar · xatosiz.
 class ResultStatsRow extends StatelessWidget {
   final int xp;
   final bool clean;
@@ -40,36 +102,65 @@ class ResultStatsRow extends StatelessWidget {
     final r = rewards;
     return Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            _Stat(
-              icon: '⚡',
-              label: 'XP',
-              color: AppColors.coin,
-              child: CountUp(xp,
-                  style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900)),
+        // Uchta katak teng bo'linadi (tor ekranda sig'adi), keng ekranda
+        // 300 pikseldan oshmaydi.
+        Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 300),
+            child: IntrinsicHeight(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(
+                    child: _Stat(
+                      icon: '⚡',
+                      label: 'ball',
+                      tooltip: 'Shu mashqda olgan ballingiz',
+                      color: AppColors.coin,
+                      child: CountUp(xp,
+                          style: const TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.w900)),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: _Stat(
+                      icon: '🔥',
+                      label: 'ketma-ket to\'g\'ri',
+                      tooltip: 'Ketma-ket to\'g\'ri javoblar soni - bitta xato uni nolga tushiradi',
+                      color: const Color(0xFFF97316),
+                      child: CountUp(r.combo,
+                          style: const TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.w900)),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: _Stat(
+                      icon: clean ? '💎' : '🔁',
+                      label: clean ? 'ta xato' : 'xato bor - takrorlang',
+                      tooltip: clean
+                          ? 'Mashqni birorta xatosiz tugatdingiz'
+                          : 'Mashqda xato bo\'ldi: xato qilingan savollarni takrorlab mustahkamlang',
+                      color: clean ? AppColors.brandPurple : AppColors.homework,
+                      child: Text(clean ? '0' : '—',
+                          style: const TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.w900)),
+                    ),
+                  ),
+                ],
+              ),
             ),
-            const SizedBox(width: 12),
-            _Stat(
-              icon: '🔥',
-              label: 'kombo',
-              color: const Color(0xFFF97316),
-              child: CountUp(r.combo,
-                  style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900)),
-            ),
-            const SizedBox(width: 12),
-            _Stat(
-              icon: clean ? '💎' : '🔁',
-              label: clean ? 'xatosiz' : 'takror',
-              color: clean ? AppColors.brandPurple : AppColors.homework,
-              child: Text(clean ? '+3' : '—',
-                  style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900)),
-            ),
-          ],
+          ),
         ),
-        const SizedBox(height: 14),
-        // Daraja halqasi: "yana N XP" — Zeigarnik: tugallanmagan ish.
+        const SizedBox(height: 8),
+        Text(
+          'Ball - to\'g\'ri javoblar uchun beriladi. Ball yig\'ilsa, daraja oshadi.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+        ),
+        const SizedBox(height: 10),
+        // Daraja halqasi: "keyingi darajaga: N ball" — Zeigarnik: tugallanmagan ish.
         const LevelBar(),
       ],
     );
@@ -79,35 +170,42 @@ class ResultStatsRow extends StatelessWidget {
 class _Stat extends StatelessWidget {
   final String icon;
   final String label;
+  final String? tooltip;
   final Color color;
   final Widget child;
   const _Stat(
-      {required this.icon, required this.label, required this.color, required this.child});
+      {required this.icon,
+      required this.label,
+      required this.color,
+      required this.child,
+      this.tooltip});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 92,
-      padding: const EdgeInsets.symmetric(vertical: 10),
+    final box = Container(
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 4),
       decoration: BoxDecoration(
         color: color.withValues(alpha: 0.12),
         borderRadius: BorderRadius.circular(AppRadius.lg),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(icon, style: const TextStyle(fontSize: 18)),
           const SizedBox(height: 2),
           DefaultTextStyle(
               style: TextStyle(color: color, fontWeight: FontWeight.w900), child: child),
           Text(label,
+              textAlign: TextAlign.center,
               style: TextStyle(fontSize: 11, color: AppColors.muted(context))),
         ],
       ),
     );
+    return tooltip == null ? box : Tooltip(message: tooltip!, child: box);
   }
 }
 
-/// Daraja chizig'i: unvon + XP progress + "yana N XP".
+/// Daraja chizig'i: unvon + ball progressi + "keyingi darajaga: N ball".
 class LevelBar extends StatelessWidget {
   final bool compact;
   const LevelBar({super.key, this.compact = false});
@@ -124,17 +222,20 @@ class LevelBar extends StatelessWidget {
           children: [
             Row(
               children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                  decoration: BoxDecoration(
-                    color: AppColors.brandPurple,
-                    borderRadius: BorderRadius.circular(AppRadius.pill),
+                Tooltip(
+                  message: 'Daraja - yig\'ilgan ballingizga qarab oshadi',
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: AppColors.brandPurple,
+                      borderRadius: BorderRadius.circular(AppRadius.pill),
+                    ),
+                    child: Text('${r.level}-daraja',
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w900,
+                            fontSize: 11)),
                   ),
-                  child: Text('${r.level}-daraja',
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w900,
-                          fontSize: 11)),
                 ),
                 const SizedBox(width: 8),
                 Expanded(
@@ -145,8 +246,6 @@ class LevelBar extends StatelessWidget {
                           fontSize: compact ? 12 : 13,
                           color: AppColors.brandPurple)),
                 ),
-                Text('yana ${r.xpToNext} XP',
-                    style: TextStyle(fontSize: 11, color: AppColors.muted(context))),
               ],
             ),
             const SizedBox(height: 6),
@@ -164,6 +263,9 @@ class LevelBar extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 4),
+            Text('keyingi darajaga: ${r.xpToNext} ball',
+                style: TextStyle(fontSize: 11, color: AppColors.muted(context))),
           ],
         );
       },
@@ -183,7 +285,9 @@ class LevelRing extends StatelessWidget {
       builder: (context, _) {
         final r = rewards;
         return Tooltip(
-          message: '${r.level}-daraja · ${r.title} · yana ${r.xpToNext} XP',
+          message: '${r.level}-daraja · ${r.title}. '
+              'Keyingi darajaga yana ${r.xpToNext} ball kerak. '
+              'Bosing - yutuqlaringiz',
           child: SizedBox(
             width: size,
             height: size,
@@ -244,43 +348,54 @@ class _StreakFlameState extends State<StreakFlame>
     final color = d >= 30
         ? const Color(0xFF06B6D4)
         : (d >= 7 ? const Color(0xFFDC2626) : const Color(0xFFF97316));
-    return AnimatedBuilder(
-      animation: _c,
-      builder: (_, child) {
-        final v = Curves.easeInOut.transform(_c.value);
-        return Container(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-          decoration: BoxDecoration(
-            color: color.withValues(alpha: 0.14),
-            borderRadius: BorderRadius.circular(AppRadius.pill),
-            boxShadow: d >= 1
-                ? [
-                    BoxShadow(
-                        color: color.withValues(alpha: 0.15 + 0.25 * v),
-                        blurRadius: 8 + 10 * v),
-                  ]
-                : null,
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Transform.scale(
-                scale: d >= 1 ? 1 + 0.15 * v : 1,
-                child: Text(emoji, style: const TextStyle(fontSize: 15)),
+    final hint = d == 0
+        ? 'Ketma-ket kun: 0. Bugun mashq qiling - hisob boshlanadi'
+        : '$d kun ketma-ket mashq qilyapsiz. '
+            'Bir kun o\'tkazib yuborsangiz, hisob nolga tushadi';
+    return Tooltip(
+      message: hint,
+      child: Semantics(
+        label: hint,
+        excludeSemantics: true,
+        child: AnimatedBuilder(
+          animation: _c,
+          builder: (_, child) {
+            final v = Curves.easeInOut.transform(_c.value);
+            return Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              decoration: BoxDecoration(
+                color: color.withValues(alpha: 0.14),
+                borderRadius: BorderRadius.circular(AppRadius.pill),
+                boxShadow: d >= 1
+                    ? [
+                        BoxShadow(
+                            color: color.withValues(alpha: 0.15 + 0.25 * v),
+                            blurRadius: 8 + 10 * v),
+                      ]
+                    : null,
               ),
-              const SizedBox(width: 5),
-              Text('$d',
-                  style: TextStyle(
-                      fontWeight: FontWeight.w900, fontSize: 14, color: color)),
-            ],
-          ),
-        );
-      },
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Transform.scale(
+                    scale: d >= 1 ? 1 + 0.15 * v : 1,
+                    child: Text(emoji, style: const TextStyle(fontSize: 15)),
+                  ),
+                  const SizedBox(width: 5),
+                  Text('$d',
+                      style: TextStyle(
+                          fontWeight: FontWeight.w900, fontSize: 14, color: color)),
+                ],
+              ),
+            );
+          },
+        ),
+      ),
     );
   }
 }
 
-/// "Bugungi topshiriqlar" kartasi — bosh ekranda.
+/// "Kunlik vazifalar" kartasi — bosh ekranda.
 class DailyQuestsCard extends StatelessWidget {
   const DailyQuestsCard({super.key});
 
@@ -313,16 +428,34 @@ class DailyQuestsCard extends StatelessWidget {
                   const Text('🎯', style: TextStyle(fontSize: 18)),
                   const SizedBox(width: 8),
                   const Expanded(
-                    child: Text('Bugungi missiyalar',
+                    child: Text('Kunlik vazifalar',
                         style: TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
                   ),
-                  Text(done == all ? '🎁 bonus ochildi' : '$done / $all  ·  🎁',
-                      style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w700,
-                          color: done == all ? AppColors.success : AppColors.muted(context))),
+                  const GameInfoButton(
+                    title: 'Kunlik vazifalar nima?',
+                    lines: [
+                      'Har kuni yangi 3 ta vazifa beriladi, masalan "15 ta to\'g\'ri javob bering".',
+                      'Har bir vazifa uchun tanga va ball olasiz. Uchalasi tugasa - sovg\'a qutisi 🎁 ochiladi.',
+                      '🪙 Tanga - mukofot. Tangaga Sozlamalarda muzlatgich sotib olinadi '
+                          'va uzilgan ketma-ket kunlar qaytariladi.',
+                    ],
+                  ),
                 ],
               ),
+              const SizedBox(height: 2),
+              Text(
+                  done == all && all > 0
+                      ? '🎁 Sovg\'a qutisi ochildi. Ertaga yangi vazifalar chiqadi.'
+                      : '$done / $all bajarildi  ·  uchalasi tugasa - 🎁 sovg\'a qutisi',
+                  style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
+                      color: done == all && all > 0
+                          ? AppColors.success
+                          : AppColors.muted(context))),
+              const SizedBox(height: 2),
+              Text('Har bir vazifa uchun tanga va ball olasiz.',
+                  style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
               const SizedBox(height: 10),
               for (final q in r.quests) _QuestRow(q),
             ],
@@ -382,9 +515,19 @@ class _QuestRow extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          Text('+${q.coins}🪙',
-              style: const TextStyle(
-                  fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.coin)),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Text('+${q.coins} tanga',
+                  style: const TextStyle(
+                      fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.coin)),
+              Text('+${q.xp} ball',
+                  style: TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.muted(context))),
+            ],
+          ),
         ],
       ),
     );
@@ -428,8 +571,9 @@ class AchievementsScreen extends StatelessWidget {
                         const SizedBox(height: 4),
                         Text(
                             '${r.level}-daraja · ${r.title}\n'
-                            '${r.correctTotal} to\'g\'ri · rekord kombo ${r.bestCombo} · '
-                            '${r.chestsOpened} bonus',
+                            '${r.correctTotal} ta to\'g\'ri javob\n'
+                            'Eng uzun ketma-ket to\'g\'ri javob: ${r.bestCombo} ta\n'
+                            '${r.chestsOpened} ta sovg\'a qutisi ochildi',
                             style: const TextStyle(color: Colors.white70, fontSize: 12)),
                       ],
                     ),
@@ -438,7 +582,14 @@ class AchievementsScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 10),
+            Text(
+              'Yutuq - ma\'lum ishni bajarganingiz uchun medal. '
+              '🔒 belgili medalni olish uchun kartadagi shartni bajaring. '
+              'Kartani bossangiz, to\'liq shart ochiladi.',
+              style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
+            ),
+            const SizedBox(height: 14),
             GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -446,48 +597,62 @@ class AchievementsScreen extends StatelessWidget {
                 maxCrossAxisExtent: 150,
                 mainAxisSpacing: 10,
                 crossAxisSpacing: 10,
-                childAspectRatio: 0.86,
+                childAspectRatio: 0.72,
               ),
               itemCount: all.length,
               itemBuilder: (_, i) {
                 final a = all[i];
                 final has = r.achievements.contains(a.id);
-                return Container(
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: has
-                        ? AppColors.coin.withValues(alpha: 0.14)
-                        : Theme.of(context).colorScheme.surface,
-                    borderRadius: BorderRadius.circular(AppRadius.lg),
-                    border: Border.all(
-                        color: has
-                            ? AppColors.coin
-                            : AppColors.neutralShadow.withValues(alpha: 0.5)),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Opacity(
-                        opacity: has ? 1 : 0.35,
-                        child: Text(has ? a.emoji : '🔒',
-                            style: const TextStyle(fontSize: 34)),
-                      ),
-                      const SizedBox(height: 6),
-                      Text(a.title,
-                          textAlign: TextAlign.center,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                              fontWeight: FontWeight.w800,
-                              fontSize: 12,
-                              color: has ? null : AppColors.muted(context))),
-                      Text(a.desc,
-                          textAlign: TextAlign.center,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                              fontSize: 10.5, color: AppColors.muted(context))),
+                return InkWell(
+                  borderRadius: BorderRadius.circular(AppRadius.lg),
+                  onTap: () => showGameInfoSheet(
+                    context,
+                    title: '${has ? a.emoji : '🔒'} ${a.title}',
+                    lines: [
+                      has ? 'Bu yutuq olingan.' : 'Bu yutuq hali olinmagan.',
+                      'Qanday olinadi: ${a.desc}.',
                     ],
+                  ),
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: has
+                          ? AppColors.coin.withValues(alpha: 0.14)
+                          : Theme.of(context).colorScheme.surface,
+                      borderRadius: BorderRadius.circular(AppRadius.lg),
+                      border: Border.all(
+                          color: has
+                              ? AppColors.coin
+                              : AppColors.neutralShadow.withValues(alpha: 0.5)),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Opacity(
+                          opacity: has ? 1 : 0.35,
+                          child: Text(has ? a.emoji : '🔒',
+                              style: const TextStyle(fontSize: 34)),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(a.title,
+                            textAlign: TextAlign.center,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                                fontWeight: FontWeight.w800,
+                                fontSize: 12,
+                                color: has ? null : AppColors.muted(context))),
+                        const SizedBox(height: 2),
+                        Flexible(
+                          child: Text(a.desc,
+                              textAlign: TextAlign.center,
+                              maxLines: 5,
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                  fontSize: 10.5, color: AppColors.muted(context))),
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },
@@ -555,7 +720,7 @@ class _GoldenBannerState extends State<GoldenBanner>
           Text('🌟', style: TextStyle(fontSize: 20)),
           SizedBox(width: 10),
           Expanded(
-            child: Text("OLTIN SAVOL — to'g'ri javob 3 barobar XP!",
+            child: Text("OLTIN SAVOL — to'g'ri javob bersangiz, 3 barobar ball!",
                 style: TextStyle(
                     color: Color(0xFF3B2A00),
                     fontWeight: FontWeight.w900,
@@ -586,7 +751,8 @@ class NearMissNote extends StatelessWidget {
           Text('🎯', style: TextStyle(fontSize: 18)),
           SizedBox(width: 10),
           Expanded(
-            child: Text('Deyarli! Faqat bitta harf farq — bu band yana keladi.',
+            child: Text(
+                "Deyarli to'g'ri! Faqat bitta harf xato - bu savol keyinroq yana beriladi.",
                 style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13, color: c)),
           ),
         ],

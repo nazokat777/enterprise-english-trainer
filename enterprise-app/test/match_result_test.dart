@@ -65,7 +65,8 @@ void main() {
     await pump(t);
     await solve(t);
 
-    expect(find.text('O\'zlashtirildi'), findsOneWidget);
+    expect(find.text('Hammasi to\'g\'ri!'), findsOneWidget);
+    expect(find.textContaining('Xatosiz bajardingiz'), findsOneWidget);
     expect(find.text('3 / 3'), findsNothing,
         reason: 'quruq son emas, natija yozilsin');
     expect(find.byIcon(Icons.replay_rounded), findsNothing,
@@ -98,11 +99,13 @@ void main() {
     expect(app.progress.isDone(ex.progressId), isTrue);
     expect(app.progress.needsRepeat(ex.progressId), isTrue,
         reason: 'xato qilingan mashq takrorlanishi kerak');
-    // Hamma juft oxir-oqibat topilgani uchun sarlavha
-    // "O\'zlashtirildi" bo\'lib qoladi — lekin nechtasi BIRINChI
-    // urinishda topilgani alohida yoziladi va mashq takrorlash
-    // ro\'yxatida turadi.
-    expect(find.text('O\'zlashtirildi'), findsOneWidget);
+    // Hamma juft oxir-oqibat topilgani uchun mashq tugaydi, lekin
+    // sarlavha "Hammasi to\'g\'ri!" EMAS; nechtasi BIRINChI urinishda
+    // topilgani alohida yoziladi va mashq takrorlash ro\'yxatida turishi
+    // aytiladi.
+    expect(find.text('Mashq tugadi: hammasini topdingiz'), findsOneWidget);
+    expect(find.text('Hammasi to\'g\'ri!'), findsNothing);
     expect(find.textContaining('birinchi urinishda'), findsOneWidget);
+    expect(find.textContaining('Takrorlash kerak'), findsOneWidget);
   });
 }

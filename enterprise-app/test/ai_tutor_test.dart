@@ -77,6 +77,74 @@ void main() {
     );
   });
 
+  test('xato matni: avval o\'zbekcha jumla, server matni oxirida (texnik)',
+      () async {
+    final client = MockClient((req) async => http.Response(
+        json.encode({'error': {'message': 'Resource has been exhausted'}}),
+        429));
+    final svc = AiTutorService(apiKey: 'k', client: client);
+    try {
+      await svc.send(level: 'beginner', history: const [], userText: 'hi');
+      fail('TutorException kutilgan edi');
+    } on TutorException catch (e) {
+      expect(e.message, startsWith('Bepul limit vaqtincha tugadi'));
+      expect(e.message,
+          endsWith('(texnik: 429: Resource has been exhausted)'));
+    }
+  });
+
+  test('tarmoq xatosida ekranga chiqadigan matnda kalit ko\'rinmaydi',
+      () async {
+    final client = MockClient((req) async => throw http.ClientException(
+        'XMLHttpRequest error.', req.url));
+    try {
+      await AiTutorService.sendWithFallback(
+        keys: const {'gemini': 'AIzaSECRETKEY123'},
+        preferred: 'gemini',
+        level: 'beginner',
+        history: const [],
+        userText: 'hi',
+        client: client,
+      );
+      fail('TutorException kutilgan edi');
+    } on TutorException catch (e) {
+      expect(e.message, startsWith('AI xizmatiga ulanib bo\'lmadi'));
+      expect(e.message, contains('(texnik:'));
+      expect(e.message, isNot(contains('AIzaSECRETKEY123')));
+    }
+  });
+
+  testWidgets('kalit ekrani va suhbat boshlanishi tor telefonda sig\'adi',
+      (t) async {
+    SharedPreferences.setMockInitialValues({});
+    app.progress = Progress();
+    app.mastery = MasteryStore();
+    await Future.wait([app.progress.load(), app.mastery.load()]);
+    t.view.physicalSize = const Size(320, 640);
+    t.view.devicePixelRatio = 1.0;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(const MaterialApp(home: Scaffold(body: AiTutorScreen())));
+    await t.pump();
+    expect(t.takeException(), isNull);
+    // Kalit saqlangach: boshlang'ich ekran (tushuntirish + tarjimali gaplar).
+    await app.progress.setAiKey('gemini', 'AIza-test');
+    await t.pump();
+    await t.pump();
+    expect(find.textContaining('Beginner'), findsOneWidget);
+    // Boshlang'ich gaplar o'zbekcha ma'nosi bilan (ro'yxat pastda - suramiz).
+    await t.scrollUntilVisible(
+        find.textContaining('Nima yozishni bilmasangiz'), 100,
+        scrollable: find.byType(Scrollable).first);
+    await t.pump();
+    expect(find.textContaining('Nima yozishni bilmasangiz'), findsOneWidget);
+    await t.scrollUntilVisible(
+        find.text('Oilam haqida gaplashamizmi?'), 100,
+        scrollable: find.byType(Scrollable).first);
+    await t.pump();
+    expect(find.text('Can we talk about my family?'), findsOneWidget);
+    expect(t.takeException(), isNull);
+  });
+
   testWidgets('kalit bo\'lmasa kiritish ekrani, kiritilsa suhbat', (t) async {
     SharedPreferences.setMockInitialValues({});
     app.progress = Progress();
@@ -87,7 +155,15 @@ void main() {
     addTearDown(t.view.reset);
     await t.pumpWidget(const MaterialApp(home: Scaffold(body: AiTutorScreen())));
     await t.pump();
+    // Kalit nima ekani, bepulligi va raqamlangan qadamlar tushuntirilgan.
+    expect(find.textContaining('uzun maxfiy kod'), findsOneWidget);
+    expect(find.textContaining('Create API key'), findsOneWidget);
+    expect(find.text('aistudio.google.com/apikey'), findsOneWidget);
+    // Qadamlar ekrandan uzun: saqlash tugmasi pastda (ListView) - suramiz.
+    await t.scrollUntilVisible(find.text('Saqlash va boshlash'), 200);
+    await t.pump();
     expect(find.text('Saqlash va boshlash'), findsOneWidget);
+    expect(find.text('Avval kodni katakka qo\'ying.'), findsOneWidget);
     await t.enterText(find.byType(TextField), 'sk-ant-xyz');
     await t.tap(find.text('Saqlash va boshlash'));
     await t.pump();
@@ -95,7 +171,7 @@ void main() {
     expect(app.progress.activeAiKey, 'sk-ant-xyz');
     expect(app.progress.aiProvider, 'gemini', reason: 'standart - bepul provayder');
     expect(find.text('Hello! I am Mr. Vaysaqi. 👋'), findsOneWidget);
-    expect(find.text('Write in English...'), findsOneWidget);
+    expect(find.text('Inglizcha yozing... (Write in English)'), findsOneWidget);
   });
 
   test('gemini: so\'rov shakli va javob', () async {

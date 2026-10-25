@@ -28,6 +28,12 @@ class PackFlow extends StatefulWidget {
 
 enum _Step { intro, match, spell, build, done }
 
+/// To'plam nomi o'zbekcha: ma'lumotdagi "Pack 3" -> "So'zlar to'plami 3".
+/// "Pack" ingliz so'zi - kitobi yo'q o'quvchi uni tushunmaydi. Boshqa
+/// nomlar ("Qiyin so'zlar") o'zgarmaydi.
+String packTitleUz(String name) => name.replaceFirstMapped(
+    RegExp(r'^Pack\s*(.*)$'), (m) => 'So\'zlar to\'plami ${m[1]}'.trim());
+
 class _PackFlowState extends State<PackFlow> {
   _Step _step = _Step.intro;
   int _sessionXp = 0;
@@ -85,21 +91,25 @@ class _PackFlowState extends State<PackFlow> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.pack.name),
+        title: Text(packTitleUz(widget.pack.name)),
         actions: [
           Center(
-            child: Container(
-              margin: const EdgeInsets.only(right: 14),
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-              decoration: BoxDecoration(
-                color: AppColors.coin.withValues(alpha: 0.16),
-                borderRadius: BorderRadius.circular(AppRadius.pill),
+            child: Tooltip(
+              message: 'Shu to\'plamda yig\'ilgan ball',
+              child: Container(
+                margin: const EdgeInsets.only(right: 14),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  color: AppColors.coin.withValues(alpha: 0.16),
+                  borderRadius: BorderRadius.circular(AppRadius.pill),
+                ),
+                child: Text('⚡ $_sessionXp ball',
+                    style: const TextStyle(
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.coin,
+                        fontSize: 13)),
               ),
-              child: Text('⚡ $_sessionXp XP',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w800,
-                      color: AppColors.coin,
-                      fontSize: 13)),
             ),
           ),
         ],
@@ -132,28 +142,39 @@ class _PackFlowState extends State<PackFlow> {
 
   Widget _stepStrip() {
     const items = [
-      (_Step.match, Icons.compare_arrows_rounded, 'Moslash'),
-      (_Step.spell, Icons.spellcheck_rounded, 'Imlo'),
-      (_Step.build, Icons.extension_rounded, 'Yig\'ish'),
+      (_Step.match, Icons.compare_arrows_rounded, 'Juftlash'),
+      (_Step.spell, Icons.spellcheck_rounded, 'Harflab yozish'),
+      (_Step.build, Icons.extension_rounded, 'Ibora tuzish'),
     ];
     final order = [_Step.match, _Step.spell, _Step.build];
     final cur = order.indexOf(_step);
+    // Qadam nomlari endi to'liq so'z ("Harflab yozish") - tor ekranda
+    // yoki katta shriftda sig'masa, butun chiziq kichrayadi (FittedBox),
+    // qatordan chiqib ketmaydi.
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 10, 20, 4),
-      child: Row(
-        children: [
-          for (var i = 0; i < items.length; i++) ...[
-            _dot(items[i].$2, items[i].$3, i <= cur, i == cur),
-            if (i < items.length - 1)
-              Expanded(
-                child: Container(
-                  height: 3,
-                  margin: const EdgeInsets.symmetric(horizontal: 4),
-                  color: i < cur ? AppColors.brandPurple : Colors.black12,
+      child: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (var i = 0; i < items.length; i++) ...[
+              _dot(items[i].$2, items[i].$3, i <= cur, i == cur),
+              if (i < items.length - 1)
+                Padding(
+                  // Doira markazi bilan bir qatorda.
+                  padding: const EdgeInsets.only(top: 16.5),
+                  child: Container(
+                    width: 36,
+                    height: 3,
+                    margin: const EdgeInsets.symmetric(horizontal: 6),
+                    color: i < cur ? AppColors.brandPurple : Colors.black12,
+                  ),
                 ),
-              ),
+            ],
           ],
-        ],
+        ),
       ),
     );
   }
@@ -176,7 +197,7 @@ class _PackFlowState extends State<PackFlow> {
         const SizedBox(height: 3),
         Text(label,
             style: TextStyle(
-                fontSize: 10,
+                fontSize: 11,
                 fontWeight: current ? FontWeight.w800 : FontWeight.w500,
                 color: active ? AppColors.brandPurple : Colors.black45)),
       ],
@@ -191,16 +212,20 @@ class RoundPlay extends StatelessWidget {
   const RoundPlay({super.key, required this.text, this.size = 44});
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: AppColors.actionBlue,
-      shape: const CircleBorder(),
-      child: InkWell(
-        customBorder: const CircleBorder(),
-        onTap: () => Tts.instance.speak(text, id: text),
-        child: SizedBox(
-          width: size,
-          height: size,
-          child: const Icon(Icons.volume_up_rounded, color: Colors.white, size: 22),
+    return Tooltip(
+      message: 'Tinglash',
+      child: Material(
+        color: AppColors.actionBlue,
+        shape: const CircleBorder(),
+        child: InkWell(
+          customBorder: const CircleBorder(),
+          onTap: () => Tts.instance.speak(text, id: text),
+          child: SizedBox(
+            width: size,
+            height: size,
+            child:
+                const Icon(Icons.volume_up_rounded, color: Colors.white, size: 22),
+          ),
         ),
       ),
     );
@@ -260,7 +285,7 @@ class _IntroStageState extends State<_IntroStage> {
               // Sarlavha `Expanded` ichida: uzun matn yoki katta
               // tizim shrifti bilan ham qatordan chiqib ketmaydi.
               Expanded(
-                child: Text('👋 Tanishuv',
+                child: Text('👋 Yangi so\'zlar bilan tanishing',
                     overflow: TextOverflow.ellipsis,
                     style: const
                         TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
@@ -269,6 +294,19 @@ class _IntroStageState extends State<_IntroStage> {
                   style: const TextStyle(
                       fontWeight: FontWeight.w800, color: AppColors.brandPurple)),
             ],
+          ),
+        ),
+        // Nima qilish kerak va keyin nima bo'ladi.
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 2, 20, 0),
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Har bir so\'zni o\'qing va tinglang (ovoz tugmasi). Keyingi '
+              'qadamlar: juftlash, harflab yozish, ibora tuzish.',
+              style: TextStyle(
+                  fontSize: 12.5, height: 1.35, color: AppColors.muted(context)),
+            ),
           ),
         ),
         Expanded(
@@ -309,7 +347,7 @@ class _IntroStageState extends State<_IntroStage> {
                           color: AppColors.brandPurple.withValues(alpha: 0.12),
                           borderRadius: BorderRadius.circular(AppRadius.sm),
                         ),
-                        child: const Text('EN',
+                        child: const Text('inglizcha',
                             style: TextStyle(
                                 fontSize: 11,
                                 fontWeight: FontWeight.w800,
@@ -464,12 +502,28 @@ class _MatchStageState extends State<MatchStage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Padding(
-          padding: EdgeInsets.fromLTRB(20, 10, 20, 4),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 10, 20, 4),
           child: Align(
             alignment: Alignment.centerLeft,
-            child: Text('So\'zlarni ma\'nosiga moslang',
-                style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text('So\'zlarni ma\'nosiga moslang',
+                    style:
+                        TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+                const SizedBox(height: 2),
+                // Qanday moslash kerakligi (chap/o'ng ustun nima ekani).
+                Text(
+                  'Chapdagi inglizcha so\'zni bosing, keyin o\'ngdan uning '
+                  'o\'zbekchasini bosing. To\'g\'ri juft yashil bo\'ladi.',
+                  style: TextStyle(
+                      fontSize: 12.5,
+                      height: 1.35,
+                      color: AppColors.muted(context)),
+                ),
+              ],
+            ),
           ),
         ),
         Expanded(
@@ -670,16 +724,19 @@ class _SpellStageState extends State<SpellStage> {
         : _result!
             ? AppColors.success
             : AppColors.danger;
+    // Telefon past bo'lsa (yoki shrift katta bo'lsa) tushuntirish
+    // qatori tufayli sahna ekrandan chiqib ketmasin - aylanadi.
     return Padding(
       padding: const EdgeInsets.all(20),
-      child: Column(
+      child: SingleChildScrollView(
+        child: Column(
         children: [
           Row(
             children: [
               // Sarlavha `Expanded` ichida: uzun matn yoki katta
               // tizim shrifti bilan ham qatordan chiqib ketmaydi.
               Expanded(
-                child: Text('🎧 Eshiting va yozing',
+                child: Text('🎧 Eshiting va so\'zni harflardan yig\'ing',
                     overflow: TextOverflow.ellipsis,
                     style: const
                         TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
@@ -689,8 +746,22 @@ class _SpellStageState extends State<SpellStage> {
                       fontWeight: FontWeight.w800, color: AppColors.brandPurple)),
             ],
           ),
+          const SizedBox(height: 4),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Pastdagi harflarni to\'g\'ri tartibda bosing. Ovoz tugmasi - '
+              'qayta eshitish. O\'zbekcha ma\'nosi shu yerda:',
+              style: TextStyle(
+                  fontSize: 12.5, height: 1.35, color: AppColors.muted(context)),
+            ),
+          ),
           const SizedBox(height: 8),
-          Text(word.uz, style: const TextStyle(color: Colors.black54)),
+          // Inglizchasini yig'ish kerak bo'lgan so'zning o'zbekchasi -
+          // asosiy topshiriq, shuning uchun yirik.
+          Text(word.uz,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800)),
           const SizedBox(height: 16),
           RoundPlay(text: word.en, size: 56),
           const SizedBox(height: 20),
@@ -719,7 +790,7 @@ class _SpellStageState extends State<SpellStage> {
                     ? TextButton.icon(
                         onPressed: _undo,
                         icon: const Icon(Icons.backspace_outlined, size: 18),
-                        label: const Text('Orqaga'))
+                        label: const Text('Oxirgisini olib tashlash'))
                     : const SizedBox()),
           ),
           const SizedBox(height: 12),
@@ -733,6 +804,7 @@ class _SpellStageState extends State<SpellStage> {
             ],
           ),
         ],
+        ),
       ),
     );
   }
@@ -849,12 +921,13 @@ class _BuildStageState extends State<BuildStage> {
     final built = _picked.map((k) => _blocks[k].ch).join(' ');
     return Padding(
       padding: const EdgeInsets.all(20),
-      child: Column(
+      child: SingleChildScrollView(
+        child: Column(
         children: [
           Row(
             children: [
               const Expanded(
-                child: Text('🧩 Iborani yig\'ing',
+                child: Text('🧩 Iborani inglizcha yig\'ing',
                     overflow: TextOverflow.ellipsis,
                     style:
                         TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
@@ -864,8 +937,20 @@ class _BuildStageState extends State<BuildStage> {
                       fontWeight: FontWeight.w800, color: AppColors.brandPurple)),
             ],
           ),
+          const SizedBox(height: 4),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Tepada o\'zbekcha ma\'nosi. Pastdagi so\'zlarni to\'g\'ri '
+              'tartibda bosing.',
+              style: TextStyle(
+                  fontSize: 12.5, height: 1.35, color: AppColors.muted(context)),
+            ),
+          ),
           const SizedBox(height: 8),
-          Text(word.uz, style: const TextStyle(color: Colors.black54)),
+          Text(word.uz,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800)),
           const SizedBox(height: 8),
           RoundPlay(text: word.en, size: 50),
           const SizedBox(height: 18),
@@ -885,9 +970,17 @@ class _BuildStageState extends State<BuildStage> {
                           : AppColors.danger,
                   width: 2),
             ),
-            child: Text(built.isEmpty ? '…' : built,
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700)),
+            child: built.isEmpty
+                ? Text('Javobingiz shu yerda paydo bo\'ladi',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 13.5,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.muted(context)))
+                : Text(built,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                        fontSize: 20, fontWeight: FontWeight.w700)),
           ),
           const SizedBox(height: 20),
           Wrap(
@@ -919,6 +1012,7 @@ class _BuildStageState extends State<BuildStage> {
             ],
           ),
         ],
+        ),
       ),
     );
   }
@@ -950,8 +1044,14 @@ class _DoneStageState extends State<_DoneStage> with SingleTickerProviderStateMi
         CurvedAnimation(parent: _c, curve: const Interval(0.0, 0.5, curve: Curves.elasticOut));
     final text =
         CurvedAnimation(parent: _c, curve: const Interval(0.4, 0.8, curve: Curves.easeOut));
-    return Center(
-      child: Padding(
+    // Natija matni uzayganidan keyin tor ekranda/katta shriftda ham sig'sin:
+    // joy yetsa markazda turadi, yetmasa aylanadi.
+    return LayoutBuilder(
+      builder: (context, cons) => SingleChildScrollView(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(minHeight: cons.maxHeight),
+          child: Center(
+            child: Padding(
         padding: const EdgeInsets.all(28),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -977,8 +1077,19 @@ class _DoneStageState extends State<_DoneStage> with SingleTickerProviderStateMi
                           fontWeight: FontWeight.w800,
                           color: AppColors.success)),
                   const SizedBox(height: 8),
-                  const Text('Pack tugatildi',
+                  const Text('So\'zlar to\'plami tugadi',
+                      textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 16, color: Colors.black54)),
+                  const SizedBox(height: 6),
+                  // Natija nimani bildirishi va keyin nima bo'lishi.
+                  Text(
+                      'Bu so\'zlar takrorlash jadvaliga qo\'shildi - ilova '
+                      'ularni keyinroq sizga qayta so\'raydi.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 13,
+                          height: 1.4,
+                          color: AppColors.muted(context))),
                   const SizedBox(height: 14),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
@@ -986,7 +1097,7 @@ class _DoneStageState extends State<_DoneStage> with SingleTickerProviderStateMi
                       color: AppColors.coin.withValues(alpha: 0.16),
                       borderRadius: BorderRadius.circular(AppRadius.pill),
                     ),
-                    child: Text('+${widget.xp} XP',
+                    child: Text('+${widget.xp} ball',
                         style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.w800,
@@ -1003,13 +1114,16 @@ class _DoneStageState extends State<_DoneStage> with SingleTickerProviderStateMi
                 shadowColor: const Color(0xFF5B22B5),
                 onPressed: widget.onClose,
                 child: const Center(
-                  child: Text('Unitga qaytish',
+                  child: Text('Unit (bob)ga qaytish',
                       style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.w800, fontSize: 16)),
                 ),
               ),
             ),
           ],
+        ),
+            ),
+          ),
         ),
       ),
     );

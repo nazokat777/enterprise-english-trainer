@@ -228,7 +228,10 @@ class ExamBuilder {
             q: DrillQuestion(
               itemId: id,
               format: AskFormat.build,
-              prompt: 'Gapni so\'zlardan tuzing',
+              // Ekranda faqat `prompt` ko'rinadi - tarjima shu yerda bo'lsin.
+              prompt: uz.isEmpty
+                  ? 'Gapni so\'zlardan tuzing'
+                  : 'Gapni so\'zlardan tuzing:\n$uz',
               promptUz: uz,
               answer: first,
               speak: first,
@@ -244,7 +247,7 @@ class ExamBuilder {
           unit: b.unit,
           topic: topic,
           task: ExTask(
-            prompt: '⌨️ Tinglang va yozing',
+            prompt: '⌨️ Gapni tinglang va inglizcha yozing (o\'zbekcha tarjimasi pastda):',
             promptUz: uz,
             answer: first,
             speak: first,

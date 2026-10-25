@@ -127,10 +127,11 @@ void main() {
         const MaterialApp(home: Scaffold(body: HardWordsScreen())));
     for (var i = 0; i < 20; i++) {
       await t.pump(const Duration(milliseconds: 20));
-      if (find.text('Zaif mavzular').evaluate().isNotEmpty) break;
+      if (find.text('Qiyin mavzular').evaluate().isNotEmpty) break;
     }
 
-    expect(find.text('Zaif mavzular'), findsOneWidget);
+    expect(find.text('Qiyin mavzular'), findsOneWidget);
+    expect(find.textContaining('yodlangan'), findsWidgets);
     expect(find.textContaining('savol qoldi'), findsWidgets);
     expect(t.takeException(), isNull);
   });

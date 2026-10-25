@@ -61,7 +61,9 @@ void main() {
     await t.pumpWidget(MaterialApp(
         home: ExercisePlayer(exercise: study, sectionTitle: 'Kirish')));
     await t.pump();
-    expect(find.textContaining('Yodlash: tinglab'), findsOneWidget);
+    // Tugma nima qilishini aytadi (gaplarni eshitib, yig'ib, yozish).
+    expect(find.textContaining('Yodlash: shu gaplarni eshitib'),
+        findsOneWidget);
     expect(find.text('O\'qib chiqdim'), findsOneWidget);
   });
 

@@ -24,10 +24,13 @@ import 'word_lesson.dart';
 
 /// SO'Z DARSI EKRANI — Duolingo uslubi.
 ///
-/// Uch bosqich:
-///   1) TANIShUV — har so'z kartada: inglizcha, ovoz, o'zbekcha, misol.
-///      Avval so'raladigan narsa KO'RSATILADI. Ilgari shu bosqich yo'q
-///      edi va o'quvchi hech ko'rmagan so'zni topishga majbur edi.
+/// Bosqichlar:
+///   1) SO'ZLAR RO'YXATI — hamma so'z: inglizcha, o'qilishi, o'zbekcha,
+///      misol gap, ovoz. Avval so'raladigan narsa KO'RSATILADI. Ilgari
+///      shu bosqich yo'q edi va o'quvchi hech ko'rmagan so'zni topishga
+///      majbur edi.
+///      (Ixtiyoriy: "Har so'zni alohida kartada ko'rish" - so'z kartalari.
+///      Ilgari majburiy edi va ro'yxatni 7 marta takrorlardi.)
 ///   2) SAVOLLAR — tanish -> tanlash -> harflab yozish; xato qaytadi.
 ///   3) YaKUN — natija va keyingi darsga yo'l.
 class LessonScreen extends StatefulWidget {
@@ -94,11 +97,19 @@ class _LessonScreenState extends State<LessonScreen> {
     }
   }
 
-  /// Ro'yxatdan kartalarga o'tish: avval hammasi ko'rsatiladi, keyin
-  /// har so'z alohida kartada, keyin savollar.
+  /// Ro'yxatdan kartalarga o'tish (ixtiyoriy): har so'z alohida kartada,
+  /// keyin savollar.
   void _startCards() {
     setState(() => _stage = _Stage.intro);
     _speakCard();
+  }
+
+  /// Ro'yxatdan TO'G'RIDAN-TO'G'RI savollarga: so'zlar ro'yxatda allaqachon
+  /// ko'rsatilgan (tarjima, o'qilishi, misol) - ularni kartalarda qayta
+  /// ko'rsatish 7 ortiqcha bosish edi.
+  void _startQuiz() {
+    Tts.instance.stop();
+    setState(() => _stage = _s.isDone ? _Stage.done : _Stage.quiz);
   }
 
   @override
@@ -236,7 +247,11 @@ class _LessonScreenState extends State<LessonScreen> {
       ),
       body: SafeArea(
         child: switch (_stage) {
-          _Stage.list => _WordList(words: l.words, onStart: _startCards),
+          _Stage.list => _WordList(
+            words: l.words,
+            onStart: _startQuiz,
+            onCards: _startCards,
+          ),
           _Stage.intro => _intro(context),
           _Stage.quiz => _quiz(context),
           _Stage.done => _Finished(
@@ -253,18 +268,18 @@ class _LessonScreenState extends State<LessonScreen> {
   }
 
   String _stageLabel() => switch (_stage) {
-    _Stage.list => 'So\'zlar ro\'yxati',
-    _Stage.intro => 'Tanishuv · ${_card + 1}/${widget.lesson.words.length}',
+    _Stage.list => 'Darsdagi so\'zlar',
+    _Stage.intro => 'So\'z kartasi · ${_card + 1}/${widget.lesson.words.length}',
     _Stage.quiz =>
-      '${_s.round}-bosqich · ${switch (_s.current?.format) {
-        AskFormat.choice => 'ma\'nosini tanlang',
+      '${_s.round}/${_s.roundCount}-qism · ${switch (_s.current?.format) {
+        AskFormat.choice => 'so\'zning ma\'nosini tanlang',
         AskFormat.produce => 'inglizchasini tanlang',
-        AskFormat.listen => 'eshitib yozing',
+        AskFormat.listen => 'eshiting va yozing',
         AskFormat.cloze => 'gapdagi bo\'shliqni to\'ldiring',
         AskFormat.speak => 'ovoz chiqarib ayting',
         _ => 'harflab yozing',
       }}',
-    _Stage.done => 'Yakunlandi',
+    _Stage.done => 'Dars tugadi',
   };
 
   // ───────────── 1) Tanishuv ─────────────
@@ -278,6 +293,9 @@ class _LessonScreenState extends State<LessonScreen> {
           child: ListView(
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
             children: [
+              // Bu karta nima uchun: hali savol yo'q, faqat tanishish.
+              const InstructionLine("So'zni o'qing, tinglang va yodlang"),
+              const SizedBox(height: 14),
               // SO'Z KARTASI — gradient chegara (2px), yuqori chapda
               // yumshoq nur; so'z Manrope bilan katta, gradient rangda.
               // Har yangi kartada 260 ms "kirish" (fade + slide).
@@ -401,6 +419,11 @@ class _LessonScreenState extends State<LessonScreen> {
               ),
               const SizedBox(height: 18),
               // Darsdagi hamma so'z bir qarashda — "yana nechta qoldi".
+              Text("Darsdagi so'zlar (ko'rilganlari binafsha rangda):",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 12, color: AppColors.muted(context))),
+              const SizedBox(height: 8),
               Wrap(
                 spacing: 6,
                 runSpacing: 6,
@@ -441,7 +464,7 @@ class _LessonScreenState extends State<LessonScreen> {
             onPressed: _nextCard,
             child: Center(
               child: Text(
-                _card + 1 < words.length ? 'Keyingi so\'z' : 'Mashqni boshlash',
+                _card + 1 < words.length ? 'Keyingi so\'z' : 'Savollarni boshlash',
                 style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w800,
@@ -462,6 +485,27 @@ class _LessonScreenState extends State<LessonScreen> {
     return Column(
       children: [
         _Bar(value: _s.progress),
+        // Chiziq nimani bildirishi: nechta savol qolgan. Xato savol
+        // qaytib keladi - shuning uchun son ba'zan ko'payadi.
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
+          child: Text.rich(
+            TextSpan(
+              children: [
+                TextSpan(
+                  text: 'Qolgan savollar: ${_s.remaining} ta',
+                  style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      color: Theme.of(context).textTheme.bodyLarge?.color),
+                ),
+                const TextSpan(
+                    text: " (xato qilsangiz, savol qaytib keladi)"),
+              ],
+            ),
+            style: TextStyle(
+                fontSize: 11.5, height: 1.3, color: AppColors.muted(context)),
+          ),
+        ),
         // Xato bo'lganda o'quvchining O'Z eslatmasi chiqadi — javob
         // shunchaki ko'rsatilmaydi, o'zi tuzgan bog'lanish eslatiladi.
         if (_result == false && hook.isNotEmpty)
@@ -497,6 +541,9 @@ class _LessonScreenState extends State<LessonScreen> {
           HelpSkipBar(
             onHelp: _result == null ? _help : null,
             onSkip: _result == null ? _skipQuestion : null,
+            // Darsda o'tkazilgan savol qaytmaydi - oxirgi ro'yxatga tushadi.
+            skipHint: "savolni o'tkazadi; so'z dars oxirida "
+                "adashgan so'zlar ro'yxatiga tushadi",
           ),
       ],
     );
@@ -552,7 +599,7 @@ class _Finished extends StatelessWidget {
           w,
     ];
     final perfect = mistakes == 0;
-    return Stack(
+    final body = Stack(
       children: [
         ListView(
           padding: const EdgeInsets.all(24),
@@ -604,9 +651,9 @@ class _Finished extends StatelessWidget {
                   const SizedBox(height: 14),
                   Text(
                     rescue
-                        ? '${lesson.words.length} ta so\'z qutqarildi!'
+                        ? '${lesson.words.length} ta so\'z takrorlandi!'
                         : perfect
-                        ? 'Benuqson!'
+                        ? 'Zo\'r! Xatosiz tugadingiz.'
                         : '${lesson.index}-dars tugadi',
                     textAlign: TextAlign.center,
                     style: const TextStyle(
@@ -619,8 +666,12 @@ class _Finished extends StatelessWidget {
                   const SizedBox(height: 6),
                   Text(
                     mistakes == 0
-                        ? '${lesson.words.length} ta so\'z - birorta xatosiz'
-                        : '${lesson.words.length} ta so\'z ${rescue ? 'qutqarildi' : 'o\'rganildi'} · $mistakes ta xato qayta so\'raldi',
+                        ? (rescue
+                            ? 'Birorta xatosiz.'
+                            : '${lesson.words.length} ta so\'z o\'rganildi.')
+                        : '${lesson.words.length} ta so\'z ${rescue ? 'takrorlandi' :'o\'rganildi'}. '
+                            '$mistakes ta savol qayta so\'raldi (adashgan yoki '
+                            '"Bilmayman" bosilgan savollar).',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 13.5,
@@ -632,7 +683,17 @@ class _Finished extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 18),
+            const SizedBox(height: 12),
+            // Natija nimani bildirishi va undan keyin nima ko'rinishi.
+            Text(
+              "Quyida har bir so'z xotirada qanchalik mustahkamlangani, "
+              "pastroqda esa qaysi so'zlar birinchi urinishda topilgani va "
+              "qaysilari qiyin bo'lgani ko'rsatilgan.",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
+            ),
+            const SizedBox(height: 14),
             // XOTIRA O'SIShI — har so'z qaysi bosqichdan qaysiga o'tdi.
             // Ko'rinadigan o'sish = harakat-natija bog'i (dofamin).
             MemoryGrowthList(
@@ -653,24 +714,34 @@ class _Finished extends StatelessWidget {
               const SizedBox(height: 22),
               HookEditor(words: [for (final w in weak) (w.itemId, w.en, w.uz)]),
             ],
-            const SizedBox(height: 26),
-            Pressable3D(
-              color: AppColors.brandPurple,
-              onPressed: onClose,
-              child: const Center(
-                child: Text(
-                  'Davom etish',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 16,
-                  ),
-                ),
-              ),
-            ),
           ],
         ),
         if (perfect) const IgnorePointer(child: ConfettiBurst(count: 110)),
+      ],
+    );
+    // Chiqish tugmasi pastda QOTIRILGAN: natija ro'yxati uzun bo'ladi va
+    // "keyin nima qilaman?" degan savolga javob doim ko'rinib tursin.
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Expanded(child: body),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(24, 4, 24, 12),
+          child: Pressable3D(
+            color: AppColors.brandPurple,
+            onPressed: onClose,
+            child: const Center(
+              child: Text(
+                'Tugatish va qaytish',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }
@@ -680,7 +751,11 @@ class _Finished extends StatelessWidget {
 class _WordRow extends StatelessWidget {
   final LessonWord w;
   final Color? tint;
-  const _WordRow({required this.w, this.tint});
+
+  /// Misol gapni (inglizcha + o'zbekcha) ham ko'rsatish - faqat so'zi
+  /// bor ro'yxatda; natija ro'yxatlarida kerak emas.
+  final bool showExample;
+  const _WordRow({required this.w, this.tint, this.showExample = false});
 
   @override
   Widget build(BuildContext context) {
@@ -709,6 +784,26 @@ class _WordRow extends StatelessWidget {
                 Text(w.uz,
                     style: const TextStyle(
                         fontSize: 14.5, fontWeight: FontWeight.w700)),
+                // Misol gap: so'z gap ichida qanday ishlatilishi.
+                if (showExample && w.exampleEn.isNotEmpty) ...[
+                  const SizedBox(height: 6),
+                  Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: 'Misol: ',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w800, color: muted)),
+                        TextSpan(text: w.exampleEn),
+                      ],
+                    ),
+                    style: const TextStyle(fontSize: 12.5, height: 1.35),
+                  ),
+                  if (w.exampleUz.isNotEmpty)
+                    Text(w.exampleUz,
+                        style: TextStyle(
+                            fontSize: 12, height: 1.35, color: muted)),
+                ],
               ],
             ),
           ),
@@ -727,36 +822,68 @@ class _WordRow extends StatelessWidget {
 /// DARS BOSHI: yodlashdan OLDIN barcha so\'zlar - tarjima + talaffuz.
 class _WordList extends StatelessWidget {
   final List<LessonWord> words;
+
+  /// Asosiy tugma: to'g'ridan-to'g'ri savollarga.
   final VoidCallback onStart;
-  const _WordList({required this.words, required this.onStart});
+
+  /// Ikkinchi tugma: har so'zni alohida kartada ko'rish (ixtiyoriy).
+  final VoidCallback onCards;
+  const _WordList(
+      {required this.words, required this.onStart, required this.onCards});
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
+    // Tugmalar ro'yxat tagida QOTIRILGAN: misol gaplar bilan ro'yxat
+    // uzun bo'lib ketadi va asosiy tugma ekrandan tashqarida qolardi.
+    return Column(
       children: [
-        Text('Bu darsda ${words.length} ta yangi so\'z',
-            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
-        const SizedBox(height: 4),
-        Text(
-          'Avval hammasini ko\'zdan kechiring va tinglang (ovozli tugma). '
-          '[Qavs ichida] - o\'qilishi, belgili unli (á, é) urg\'uli. Ovozni ham tinglang. '
-          'Keyin yodlashni boshlaymiz.',
-          style: TextStyle(
-              fontSize: 13, height: 1.4, color: AppColors.muted(context)),
-        ),
-        const SizedBox(height: 12),
-        for (final w in words) _WordRow(w: w),
-        const SizedBox(height: 12),
-        Pressable3D(
-          color: AppColors.brandPurple,
-          onPressed: onStart,
-          child: const Center(
-            child: Text('Yodlashni boshlash',
+        Expanded(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(20, 16, 20, 12),
+            children: [
+              Text('Bu darsda ${words.length} ta yangi so\'z',
+                  style: const TextStyle(
+                      fontSize: 20, fontWeight: FontWeight.w900)),
+              const SizedBox(height: 4),
+              Text(
+                "So'zlarni o'qing, ovoz tugmasini bosib tinglang. "
+                "[Qavs ichida] - o'qilishi; belgili harf (á) - urg'u shu "
+                "harfga tushadi. Tayyor bo'lsangiz, pastdagi tugmani bosing - "
+                "shu so'zlar bo'yicha savollar boshlanadi.",
                 style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 16)),
+                    fontSize: 13, height: 1.4, color: AppColors.muted(context)),
+              ),
+              const SizedBox(height: 12),
+              for (final w in words) _WordRow(w: w, showExample: true),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Pressable3D(
+                color: AppColors.brandPurple,
+                onPressed: onStart,
+                child: const Center(
+                  child: Text('Yodlashni boshlash',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 16)),
+                ),
+              ),
+              const SizedBox(height: 2),
+              TextButton(
+                onPressed: onCards,
+                style: TextButton.styleFrom(minimumSize: const Size(0, 44)),
+                child: const Text("Har so'zni alohida kartada ko'rish",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontWeight: FontWeight.w700)),
+              ),
+            ],
           ),
         ),
       ],
@@ -783,19 +910,22 @@ class _WordResults extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        head('Yaxshi yodlangan so\'zlar', good.length, AppColors.success),
+        head("Birinchi urinishda topilganlar", good.length, AppColors.success),
         if (good.isEmpty)
           Text('Hozircha yo\'q - bu normal, takror hammasini mustahkamlaydi.',
               style: TextStyle(color: AppColors.muted(context)))
         else
           for (final w in good) _WordRow(w: w, tint: AppColors.success),
         const SizedBox(height: 10),
-        head('Yaxshi yodlanmagan so\'zlar', bad.length, AppColors.danger),
+        head("Adashgan so'zlar", bad.length, AppColors.danger),
         if (bad.isEmpty)
-          Text('Hammasi birinchi urinishda yodlandi!',
+          Text('Hammasi birinchi urinishda topildi!',
               style: TextStyle(color: AppColors.muted(context)))
         else ...[
-          Text('Bular xato qilindi - tez-tez takrorlanadi. Ilgak yozing.',
+          Text(
+              "Xato qilingan yoki o'tkazib yuborilgan so'zlar - ular "
+              "tez-tez qaytadi. Ilgak (so'zni eslatadigan o'xshash so'z) "
+              "yozsangiz, yodda qoladi.",
               style: TextStyle(
                   fontSize: 12.5, color: AppColors.muted(context))),
           const SizedBox(height: 8),

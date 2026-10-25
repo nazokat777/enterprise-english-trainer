@@ -1,6 +1,61 @@
 import 'package:flutter/material.dart';
 
 import '../theme.dart';
+import 'clarify.dart' show friendlyRef;
+
+/// SAHIFA KIRISHI — sahifa tepasidagi "Bu yerda: ..." qatori.
+///
+/// Yangi o'quvchi 5 soniyada bilsin: bu sahifa NIMA, undan NIMA qilish
+/// kerak. Matn "Bu yerda:" bilan boshlansa, shu so'z qalin chiqadi.
+class PageIntro extends StatelessWidget {
+  final String text;
+  final EdgeInsetsGeometry margin;
+
+  const PageIntro(
+    this.text, {
+    super.key,
+    this.margin = const EdgeInsets.only(bottom: 14),
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (text.trim().isEmpty) return const SizedBox.shrink();
+    const lead = 'Bu yerda:';
+    final hasLead = text.startsWith(lead);
+    return Container(
+      width: double.infinity,
+      margin: margin,
+      padding: const EdgeInsets.fromLTRB(12, 10, 12, 11),
+      decoration: BoxDecoration(
+        color: AppColors.actionBlue.withValues(alpha: 0.07),
+        borderRadius: BorderRadius.circular(AppRadius.md),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(Icons.info_outline_rounded,
+              size: 18, color: AppColors.actionBlue),
+          const SizedBox(width: 9),
+          Expanded(
+            child: Text.rich(
+              TextSpan(
+                children: [
+                  if (hasLead)
+                    const TextSpan(
+                      text: lead,
+                      style: TextStyle(fontWeight: FontWeight.w900),
+                    ),
+                  TextSpan(text: hasLead ? text.substring(lead.length) : text),
+                ],
+              ),
+              style: const TextStyle(fontSize: 13, height: 1.45),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
 
 /// SAVOL KARTASI — "nima so'ralyapti" har doim ko'rinib turadi.
 ///
@@ -15,7 +70,8 @@ class QuestionCard extends StatelessWidget {
   /// Qo'shimcha maslahat (ixtiyoriy).
   final String hint;
 
-  /// Manba: "Coursebook 10-bet · 7-mashq" (ixtiyoriy).
+  /// Kitobdagi manzil: "3-unit · Enterprise 1 · Coursebook · 7-bet · Ex. 5"
+  /// (ixtiyoriy; "Kitobda: ..." deb, kitob nomlari izohlangan holda chiqadi).
   final String source;
 
   const QuestionCard({
@@ -82,8 +138,10 @@ class QuestionCard extends StatelessWidget {
           ],
           if (source.trim().isNotEmpty) ...[
             const SizedBox(height: 6),
+            // Kitobi yo'q odam ham bilsin: bu - kitobdagi manzil, uni
+            // ochish shart emas (savol shu ekranda to'liq).
             Text(
-              source,
+              '📖 Kitobda: ${friendlyRef(source.trim())}',
               style: TextStyle(
                 fontSize: 11.5,
                 fontWeight: FontWeight.w700,

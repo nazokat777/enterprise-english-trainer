@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../book_content.dart';
 import '../../main.dart';
+import '../../teach/clarify.dart' show exerciseRefUz, exerciseSource;
 import '../../theme.dart';
 import 'exercise_player.dart';
 
@@ -153,9 +154,14 @@ class _Header extends StatelessWidget {
                             ? AppColors.darkHeading
                             : AppColors.lightHeading)),
                 const SizedBox(height: 2),
-                Text('$count ta mashq xato bilan tugatilgan',
+                Text(
+                    'Bu yerda: xato bilan tugagan mashqlar ($count ta). '
+                    'Birini bosing va xatosiz bajaring - shunda u '
+                    'ro\'yxatdan chiqadi.',
                     style: TextStyle(
-                        fontSize: 12.5, color: AppColors.muted(context))),
+                        fontSize: 12.5,
+                        height: 1.4,
+                        color: AppColors.muted(context))),
               ],
             ),
           ),
@@ -214,7 +220,9 @@ class _Tile extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(e.title,
+                      // Bo'lim nomi bilan: faqat "Ex. 5" qatorlari bir xil
+                      // ko'rinardi, turini ajratib bo'lmasdi.
+                      Text('${item.section.titleUz} · ${exerciseRefUz(e.ref)}',
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
                               fontWeight: FontWeight.w800, fontSize: 14)),
@@ -229,7 +237,9 @@ class _Tile extends StatelessWidget {
                                 color: AppColors.muted(context))),
                       ],
                       const SizedBox(height: 4),
-                      Text(e.locationLabel(item.unit.displayLabel),
+                      Text(
+                          'Kitobda: '
+                          '${exerciseSource(e, item.unit.displayLabel)}',
                           style: const TextStyle(
                               fontSize: 11.5,
                               fontWeight: FontWeight.w600,

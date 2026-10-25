@@ -85,7 +85,8 @@ void main() {
     await pump(t);
 
     expect(find.text('Takrorlash vaqti keldi'), findsOneWidget);
-    expect(find.textContaining('3 ta so\'z'), findsOneWidget);
+    // Unit qatorlari ham "103 ta so'z" deb yozadi - banner matni aniq olinadi.
+    expect(find.textContaining('3 ta so\'z unutilishi mumkin'), findsOneWidget);
     expect(t.takeException(), isNull);
   });
 

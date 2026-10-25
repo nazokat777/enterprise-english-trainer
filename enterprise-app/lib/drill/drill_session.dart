@@ -265,7 +265,7 @@ class DrillSession {
     return DrillQuestion(
       itemId: 'game::match',
       format: AskFormat.match,
-      prompt: 'So\'zlarni ma\'nosiga moslang',
+      prompt: 'Juftlarni toping',
       answer: '',
       unit: picked.first.unit,
       topic: picked.first.topic,

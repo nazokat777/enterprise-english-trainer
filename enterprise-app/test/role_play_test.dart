@@ -56,22 +56,26 @@ void main() {
         home: RolePlayScreen(exercise: dialogue(), title: 'Rol')));
     await t.pump();
     expect(find.text('Kim bo\'lib gapirasiz?'), findsOneWidget);
-    await t.tap(find.text('Rita  ·  2 satr'));
+    await t.tap(find.text('Men Rita bo\'laman - 2 ta gap'));
     // Tony gapiradi (TTS test muhitida bo'sh) -> Rita satriga keladi.
     await t.pump();
     await t.pump(const Duration(seconds: 1));
     await t.pump(const Duration(seconds: 1));
     expect(find.textContaining('Sizning navbatingiz'), findsOneWidget);
 
-    await t.tap(find.text('O\'tkazish'));
+    // Chiziq nimani ko'rsatishi yozilgan: qaysi gapda turibmiz.
+    expect(find.textContaining('Gap 2 / 4'), findsOneWidget);
+
+    await t.tap(find.text('Bu gapni o\'tkazish'));
     await t.pump();
     await t.pump(const Duration(seconds: 1));
     await t.pump(const Duration(seconds: 1));
     expect(find.textContaining('Sizning navbatingiz'), findsOneWidget);
-    await t.tap(find.text('O\'tkazish'));
+    await t.tap(find.text('Bu gapni o\'tkazish'));
     await t.pump();
     await t.pump(const Duration(seconds: 1));
     expect(find.text('Dialog tugadi'), findsOneWidget);
-    expect(find.text('0 / 2 satr to\'g\'ri aytildi'), findsOneWidget);
+    expect(find.text('0 / 2 ta gapingiz to\'g\'ri aytildi'), findsOneWidget);
+    expect(find.text('Dialogni tugatganingiz uchun: +10 ball'), findsOneWidget);
   });
 }

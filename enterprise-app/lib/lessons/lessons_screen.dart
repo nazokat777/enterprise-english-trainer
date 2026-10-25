@@ -68,8 +68,7 @@ class _LessonsScreenState extends State<LessonsScreen> {
             const SizedBox(height: 4),
             Text(
               '${_lessons.length} ta dars · '
-              '${_lessons.fold(0, (s, l) => s + l.words.length)} ta so\'z · '
-              '$doneCount tasi tugadi',
+              '${_lessons.fold(0, (s, l) => s + l.words.length)} ta so\'z',
               style: TextStyle(fontSize: 13, color: AppColors.muted(context)),
             ),
             const SizedBox(height: 14),
@@ -83,7 +82,16 @@ class _LessonsScreenState extends State<LessonsScreen> {
                     const AlwaysStoppedAnimation<Color>(AppColors.success),
               ),
             ),
-            const SizedBox(height: 18),
+            const SizedBox(height: 6),
+            // Chiziq nimani bildirishi: nechta darsdan nechtasi tugagan.
+            Text(
+              'Tugatilgan darslar: $doneCount / ${_lessons.length}',
+              style: TextStyle(
+                  fontSize: 12.5,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.muted(context)),
+            ),
+            const SizedBox(height: 14),
             if (cur < _lessons.length) ...[
               Pressable3D(
                 color: AppColors.success,
@@ -110,9 +118,9 @@ class _LessonsScreenState extends State<LessonsScreen> {
               ),
               const SizedBox(height: 6),
               Text(
-                'Avval so\'zlar ko\'rsatiladi, so\'ng 3-4 bosqichda so\'raladi '
-                '(oxirgisi - gap ichida). '
-                'Xato qilingan so\'z qaytadi.',
+                "Avval darsdagi so'zlar ro'yxati ko'rsatiladi, keyin ular "
+                "bir necha qismli savollar bilan so'raladi (oxirgi qism - gap "
+                "ichida). Xato qilingan so'z qayta so'raladi.",
                 textAlign: TextAlign.center,
                 style:
                     TextStyle(fontSize: 12, color: AppColors.muted(context)),
@@ -123,8 +131,19 @@ class _LessonsScreenState extends State<LessonsScreen> {
             // ham qaytib keladigan sabab: o'z rekordini yangilash.
             if (_pool.length >= 4) ...[
               _BlitzButton(pool: _pool, unit: u),
-              const SizedBox(height: 16),
+              const SizedBox(height: 20),
             ],
+            // Darslar nima ekani va nega ba'zilari qulflangani.
+            Text('Darslar', style: AppTheme.heading(context)),
+            const SizedBox(height: 2),
+            Text(
+              "Bu unit (bob)dagi so'zlar kichik darslarga bo'lingan. "
+              "Darslar ketma-ket ochiladi: keyingisi oldingisini "
+              "yodlagach ochiladi.",
+              style: TextStyle(
+                  fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
+            ),
+            const SizedBox(height: 12),
             for (var i = 0; i < _lessons.length; i++)
               EntranceFade(
                 delay: Duration(milliseconds: 30 * (i < 20 ? i : 20)),
@@ -167,7 +186,8 @@ class _LessonTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Opacity(
-        opacity: state == _TileState.locked ? 0.55 : 1,
+        // Qulflangan qator xira, lekin sababi o'qilsin (ilgari 0.55 edi).
+        opacity: state == _TileState.locked ? 0.8 : 1,
         child: Material(
           color: AppColors.surface(context),
           surfaceTintColor: Colors.transparent,
@@ -230,6 +250,20 @@ class _LessonTile extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 12.5,
                                 color: AppColors.muted(context))),
+                        // Qulflangan darsning SABABI - bosganda hech narsa
+                        // bo'lmasa ilova buzilgandek tuyulardi.
+                        if (state == _TileState.locked) ...[
+                          const SizedBox(height: 4),
+                          Text(
+                              '${lesson.index - 1}-darsni tugatgach ochiladi',
+                              style: TextStyle(
+                                  fontSize: 12.5,
+                                  fontWeight: FontWeight.w700,
+                                  color: Theme.of(context)
+                                      .textTheme
+                                      .bodyLarge
+                                      ?.color)),
+                        ],
                       ],
                     ),
                   ),
@@ -239,6 +273,20 @@ class _LessonTile extends StatelessWidget {
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
                             color: color)),
+                  if (state == _TileState.current)
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 4),
+                      decoration: BoxDecoration(
+                        color: color.withValues(alpha: 0.14),
+                        borderRadius: BorderRadius.circular(AppRadius.pill),
+                      ),
+                      child: Text('Hozir shu',
+                          style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w800,
+                              color: color)),
+                    ),
                 ],
               ),
             ),
@@ -303,7 +351,7 @@ class _BlitzButtonState extends State<_BlitzButton> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Blitz · 60 soniya',
+                    const Text('60 soniyalik tezlik o\'yini',
                         style: TextStyle(
                             fontWeight: FontWeight.w800,
                             fontSize: 15,
@@ -311,8 +359,9 @@ class _BlitzButtonState extends State<_BlitzButton> {
                     const SizedBox(height: 2),
                     Text(
                       _best > 0
-                          ? 'Rekordingiz: $_best ochko - yangilaysizmi?'
-                          : '${widget.pool.length} ta so\'z, iloji boricha ko\'p javob',
+                          ? 'Eng yaxshi natija: $_best ball - yangilaysizmi?'
+                          : "60 soniyada bu bobdagi so'zlarning ma'nosini "
+                              "iloji boricha ko'p toping",
                       style: TextStyle(
                           fontSize: 12.5, color: AppColors.muted(context)),
                     ),

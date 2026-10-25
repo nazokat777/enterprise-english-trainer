@@ -5,6 +5,7 @@ import '../../main.dart';
 import '../../services/speech.dart';
 import '../../speak/pronunciation_screen.dart';
 import '../../speak/role_play_screen.dart';
+import '../../teach/clarify.dart' show exerciseRefUz, exerciseSource, friendlyRef;
 import '../../widgets/pressable3d.dart';
 import '../../theme.dart';
 import 'exercise_player.dart';
@@ -112,10 +113,11 @@ class _Header extends StatelessWidget {
           Text('Suhbatlar', style: AppTheme.heading(context)),
           const SizedBox(height: 2),
           Text(
-            '$count ta dialog — kitobdagi barcha suhbatlar bir joyda. '
-            'Har birini tinglang va ovoz chiqarib takrorlang.',
-            style:
-                TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
+            'Bu yerda: $count ta tayyor suhbat (dialog). Birini bosing: '
+            'gaplarni o\'qiysiz va bosib tinglaysiz. Niqobli tugma - rol '
+            'o\'ynash: suhbatning bir tomonini o\'zingiz aytasiz.',
+            style: TextStyle(
+                fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
           ),
           // TALAFFUZ TRENINGI - o'rganilgan so'zlarni ovoz chiqarib aytish
           // (faqat nutq tanish bor brauzerlarda).
@@ -133,12 +135,25 @@ class _Header extends StatelessWidget {
                 children: [
                   Icon(Icons.mic_rounded, color: Colors.white),
                   SizedBox(width: 8),
-                  Text("Talaffuz treningi · 10 so'z",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 16)),
+                  Flexible(
+                    child: Text(
+                        "Talaffuzni mashq qilish: 10 ta so'zni mikrofonga ayting",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 16)),
+                  ),
                 ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(4, 6, 4, 0),
+              child: Text(
+                "Ilova eshitib, to'g'ri aytganingizni tekshiradi.",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 12, color: AppColors.muted(context)),
               ),
             ),
           ],
@@ -197,7 +212,9 @@ class _Tile extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(e.title,
+                      // 49 ta kartochka bir xil "Ex. N" bilan boshlanardi -
+                      // endi bo'lim nomi ham bor (qaysi suhbat ekani bilinadi).
+                      Text('${item.section.titleUz} · ${exerciseRefUz(e.ref)}',
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
                               fontWeight: FontWeight.w800, fontSize: 14)),
@@ -212,7 +229,9 @@ class _Tile extends StatelessWidget {
                                 color: AppColors.muted(context))),
                       ],
                       const SizedBox(height: 4),
-                      Text(e.locationLabel(item.unit.displayLabel),
+                      Text(
+                          'Kitobda: '
+                          '${exerciseSource(e, item.unit.displayLabel)}',
                           style: const TextStyle(
                               fontSize: 11.5,
                               fontWeight: FontWeight.w600,
@@ -224,7 +243,8 @@ class _Tile extends StatelessWidget {
                 // "gapirasiz": qatorni so'zlardan yig'asiz.
                 if (_roleTasks(e).length >= 2)
                   IconButton(
-                    tooltip: "Rol o'ynash",
+                    tooltip:
+                        "Rol o'ynash: suhbatning bir tomonini o'zingiz aytasiz",
                     icon: const Icon(Icons.theater_comedy_rounded,
                         color: AppColors.homework),
                     onPressed: () => _startRole(context),
@@ -284,7 +304,7 @@ class _Tile extends StatelessWidget {
         MaterialPageRoute(
           builder: (_) => RolePlayScreen(
             exercise: e,
-            title: "Rol o'ynash · ${item.unit.displayLabel}",
+            title: "Rol o'ynash · ${friendlyRef(item.unit.displayLabel)}",
           ),
         ),
       );

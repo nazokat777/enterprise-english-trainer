@@ -160,10 +160,10 @@ class _ExamScreenState extends State<ExamScreen> {
   @override
   Widget build(BuildContext context) {
     final title = _retake
-        ? 'Zaif bandlarni qayta ishlash'
+        ? 'Xato savollarni qayta ishlash'
         : widget.single
             ? '${widget.uptoUnit}-unit imtihoni'
-            : 'Imtihon · 1-${widget.uptoUnit} unitlar';
+            : 'Yig\'ma imtihon · 1-${widget.uptoUnit} unitlar';
     return Scaffold(
       appBar: AppBar(title: Text(title, style: const TextStyle(fontSize: 16))),
       body: SafeArea(
@@ -191,23 +191,30 @@ class _ExamScreenState extends State<ExamScreen> {
                   ? 'Qayta ishlash'
                   : widget.single
                       ? '${widget.uptoUnit}-unit imtihoni'
-                      : '1-${widget.uptoUnit} unitlar imtihoni',
+                      : 'Yig\'ma imtihon: 1-${widget.uptoUnit} unitlar',
+              textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900)),
         ),
         const SizedBox(height: 8),
         Text(
-          'Xato band navbat oxiriga qaytadi - imtihon hammasi to\'g\'ri '
-          'bo\'lguncha tugamaydi. Baho birinchi urinish bo\'yicha. '
-          '90% va undan yuqori - o\'tdi.',
+          _retake
+              ? 'Avval xato qilgan ${p.items.length} ta savol. Xato qilsangiz, '
+                  'savol oxirida yana keladi. Bu mashq imtihon natijasini '
+                  'o\'zgartirmaydi.'
+              : widget.single
+                  ? 'Bu imtihon ${widget.uptoUnit}-unitda o\'tilgan narsalarni '
+                      'tekshiradi.'
+                  : 'Bu imtihon 1-${widget.uptoUnit} unitlarda o\'tilgan hamma '
+                      'narsani tekshiradi.',
           textAlign: TextAlign.center,
           style: TextStyle(
               fontSize: 13.5, height: 1.5, color: AppColors.muted(context)),
         ),
-        if (widget.single && widget.uptoUnit > 1) ...[
-          const SizedBox(height: 10),
+        if (widget.single && widget.uptoUnit > 1 && !_retake) ...[
+          const SizedBox(height: 6),
           Text(
-            'Asosan ${widget.uptoUnit}-unitdan; yodda qolishi uchun '
-            '1-${widget.uptoUnit - 1} unitlardan ham takror savollar bor.',
+            'Yodda qolishi uchun 1-${widget.uptoUnit - 1} unitlardan ham ozgina '
+            'takror savollar bor.',
             textAlign: TextAlign.center,
             style: const TextStyle(
                 fontSize: 13.5,
@@ -216,10 +223,41 @@ class _ExamScreenState extends State<ExamScreen> {
                 color: AppColors.brandPurple),
           ),
         ],
+        if (!_retake) ...[
+          const SizedBox(height: 12),
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: AppColors.brandPurple.withValues(alpha: 0.08),
+              borderRadius: BorderRadius.circular(AppRadius.md),
+            ),
+            child: Text(
+              'Baho: birinchi urinishda to\'g\'ri javoblar foizi.\n'
+              '90% va undan yuqori - imtihondan o\'tdingiz.\n'
+              'Xato qilgan savol oxirida yana so\'raladi.\n'
+              'Tugagach xatolaringiz ro\'yxati chiqadi - ularni qayta ishlab '
+              'olasiz.',
+              style: TextStyle(
+                  fontSize: 13, height: 1.5, color: AppColors.muted(context)),
+            ),
+          ),
+        ],
         const SizedBox(height: 20),
-        _PartRow(icon: '📚', label: 'Lug\'at', n: p.count(ExamPart.words)),
-        _PartRow(icon: '📐', label: 'Grammatika', n: p.count(ExamPart.grammar)),
-        _PartRow(icon: '⌨️', label: 'Gap tuzish va yozish', n: p.count(ExamPart.sentences)),
+        _PartRow(
+            icon: '📚',
+            label: 'Lug\'at',
+            hint: 'O\'zbekcha so\'zning inglizchasini tanlang yoki yozing',
+            n: p.count(ExamPart.words)),
+        _PartRow(
+            icon: '📐',
+            label: 'Grammatika',
+            hint: 'To\'g\'ri variantni tanlang (grammatika mashqlaridan)',
+            n: p.count(ExamPart.grammar)),
+        _PartRow(
+            icon: '⌨️',
+            label: 'Gap tuzish va yozish',
+            hint: 'So\'zlardan gap tuzing yoki eshitgan gapni yozing',
+            n: p.count(ExamPart.sentences)),
         const SizedBox(height: 24),
         Pressable3D(
           color: AppColors.brandPurple,
@@ -240,9 +278,9 @@ class _ExamScreenState extends State<ExamScreen> {
     final it = _cur!;
     final total = _queue.length;
     final partLabel = switch (it.part) {
-      ExamPart.words => '📚 Lug\'at',
-      ExamPart.grammar => '📐 Grammatika · ${it.topic}',
-      ExamPart.sentences => '⌨️ Gap · ${it.topic}',
+      ExamPart.words => '📚 Lug\'at: so\'zning inglizchasi',
+      ExamPart.grammar => '📐 Grammatika: ${it.topic}',
+      ExamPart.sentences => '⌨️ Gap tuzish',
     };
     return Column(
       children: [
@@ -259,7 +297,7 @@ class _ExamScreenState extends State<ExamScreen> {
                         fontWeight: FontWeight.w800,
                         color: AppColors.brandPurple)),
               ),
-              Text('${_pos + 1}/$total',
+              Text('Savol ${_pos + 1} / $total',
                   style: TextStyle(
                       fontSize: 12.5,
                       fontWeight: FontWeight.w700,
@@ -305,6 +343,8 @@ class _ExamScreenState extends State<ExamScreen> {
         HelpSkipBar(
           onHelp: _result == null ? _help : null,
           onSkip: _result == null ? _skip : null,
+          helpHint: "javob ko'rsatiladi, savol xato hisoblanib oxirida qaytadi",
+          skipHint: "savol xato hisoblanadi va qaytmaydi",
         ),
       ],
     );
@@ -314,7 +354,16 @@ class _ExamScreenState extends State<ExamScreen> {
     final r = _saved;
     final plan = _plan;
     if (r == null || plan == null) {
-      return const Center(child: Text('Bu unitlar uchun savol topilmadi.'));
+      return const Center(
+        child: Padding(
+          padding: EdgeInsets.all(24),
+          child: Text(
+            'Bu unitlar uchun savol topilmadi. Orqaga qaytib, boshqa unitni '
+            'tanlang.',
+            textAlign: TextAlign.center,
+          ),
+        ),
+      );
     }
     final passed = r.score >= 90;
     final weak = [
@@ -351,7 +400,12 @@ class _ExamScreenState extends State<ExamScreen> {
                         style: const TextStyle(fontSize: 60)),
                   ),
                   const SizedBox(height: 6),
-                  Text(passed ? 'Imtihondan o\'tdingiz!' : 'Hali mustahkam emas',
+                  Text(
+                      _retake
+                          ? 'Qayta ishlash tugadi'
+                          : passed
+                              ? 'Imtihondan o\'tdingiz!'
+                              : 'Hali o\'tmadingiz - o\'tish uchun 90% kerak edi',
                       textAlign: TextAlign.center,
                       style: const TextStyle(
                           fontSize: 22,
@@ -369,8 +423,9 @@ class _ExamScreenState extends State<ExamScreen> {
                             color: Colors.white)),
                   ),
                   Text(
-                      '${_firstTryOk.length}/${r.total} birinchi urinishda · '
-                      '${weak.length} ta band qayta so\'raldi',
+                      '${r.total} ta savoldan ${_firstTryOk.length} tasiga '
+                      'birinchi urinishda to\'g\'ri javob berdingiz · '
+                      '${weak.length} ta savolda xato qildingiz',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: 13,
@@ -379,7 +434,16 @@ class _ExamScreenState extends State<ExamScreen> {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 8),
+            Text(
+              _retake
+                  ? 'Imtihon natijasi o\'zgarmadi.'
+                  : 'Imtihon uchun ${passed ? 30 : 10} ball berildi.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 12.5, color: AppColors.muted(context)),
+            ),
+            const SizedBox(height: 14),
             if (weak.isEmpty)
               Container(
                 padding: const EdgeInsets.all(14),
@@ -388,18 +452,18 @@ class _ExamScreenState extends State<ExamScreen> {
                   borderRadius: BorderRadius.circular(AppRadius.lg),
                 ),
                 child: const Text(
-                  '✅ O\'zlashtirilmagan mavzu qolmadi - 1-unitdan shu unitgacha hammasi mustahkam.',
+                  '✅ Hamma savolga to\'g\'ri javob berdingiz - bu mavzularni yaxshi bilasiz.',
                   style: TextStyle(fontWeight: FontWeight.w700, height: 1.4),
                 ),
               )
             else ...[
-              Text('O\'zlashtirilmagan bandlar (${weak.length})',
+              Text('Xato qilgan savollaringiz (${weak.length})',
                   style: const TextStyle(
                       fontSize: 15, fontWeight: FontWeight.w800)),
               const SizedBox(height: 4),
               Text(
-                'Bular xotira jadvalida "1 kun"ga qaytdi va zaif ro\'yxatga tushdi. '
-                'Hozir qayta ishlang - keyin yana imtihon topshiring.',
+                'Shularni hozir qayta ishlab oling, so\'ng imtihonni yana '
+                'topshiring. So\'z va gaplar ertaga ham takrorlanadi.',
                 style: TextStyle(
                     fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
               ),
@@ -430,7 +494,15 @@ class _ExamScreenState extends State<ExamScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(it.answer,
+                              // Grammatikada javobning o'zi (masalan "am")
+                              // ma'nosiz - savol matni ham ko'rsatiladi.
+                              if (it.part == ExamPart.grammar &&
+                                  (it.q?.prompt ?? '').isNotEmpty)
+                                Text(it.q!.prompt,
+                                    style: TextStyle(
+                                        fontSize: 12.5,
+                                        color: AppColors.muted(context))),
+                              Text('To\'g\'ri javob: ${it.answer}',
                                   style: const TextStyle(
                                       fontWeight: FontWeight.w800,
                                       fontSize: 14)),
@@ -462,20 +534,25 @@ class _ExamScreenState extends State<ExamScreen> {
                   ),
                 ),
                 child: const Center(
-                  child: Text('Zaif bandlarni qayta ishlash',
+                  child: Text('Xato savollarni qayta ishlash',
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w800,
                           fontSize: 16)),
                 ),
               ),
+              const SizedBox(height: 6),
+              Text('Natija o\'zgarmaydi - faqat mashq.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 12, color: AppColors.muted(context))),
             ],
             const SizedBox(height: 10),
             Pressable3D(
               color: AppColors.brandPurple,
               onPressed: () => Navigator.pop(context, r),
               child: const Center(
-                child: Text('Yakunlash',
+                child: Text('Tugatish va qaytish',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w800,
@@ -491,34 +568,56 @@ class _ExamScreenState extends State<ExamScreen> {
   }
 }
 
+/// Imtihon qismi: nomi, NIMA qilinishi va nechta savol ekani.
 class _PartRow extends StatelessWidget {
-  final String icon, label;
+  final String icon, label, hint;
   final int n;
-  const _PartRow({required this.icon, required this.label, required this.n});
+  const _PartRow(
+      {required this.icon,
+      required this.label,
+      required this.hint,
+      required this.n});
 
   @override
-  Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsets.only(bottom: 8),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-          decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.surface,
-            borderRadius: BorderRadius.circular(AppRadius.md),
-          ),
-          child: Row(
-            children: [
-              Text(icon, style: const TextStyle(fontSize: 20)),
-              const SizedBox(width: 12),
-              Expanded(
-                  child: Text(label,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.w700, fontSize: 15))),
-              Text('$n ta',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w800,
-                      color: AppColors.brandPurple)),
-            ],
-          ),
+  Widget build(BuildContext context) {
+    // Savoli yo'q qism ko'rsatilmaydi ("0 ta savol" chalg'itadi).
+    if (n == 0) return const SizedBox.shrink();
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+        decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.surface,
+          borderRadius: BorderRadius.circular(AppRadius.md),
         ),
-      );
+        child: Row(
+          children: [
+            Text(icon, style: const TextStyle(fontSize: 20)),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(label,
+                      style: const TextStyle(
+                          fontWeight: FontWeight.w700, fontSize: 15)),
+                  const SizedBox(height: 2),
+                  Text(hint,
+                      style: TextStyle(
+                          fontSize: 12.5,
+                          height: 1.35,
+                          color: AppColors.muted(context))),
+                ],
+              ),
+            ),
+            const SizedBox(width: 8),
+            Text('$n ta savol',
+                style: const TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.brandPurple)),
+          ],
+        ),
+      ),
+    );
+  }
 }

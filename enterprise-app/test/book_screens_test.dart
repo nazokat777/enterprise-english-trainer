@@ -73,6 +73,14 @@ late BookUnit unit;
 
 Widget _wrap(Widget child) => MaterialApp(home: child);
 
+/// Baland ekran: `ListView` elementlarni sust quradi, unit sahifasi esa
+/// endi tushuntirishlar bilan uzunroq - pastdagi elementlar ham topilsin.
+void _tall(WidgetTester t) {
+  t.view.physicalSize = const Size(800, 3600);
+  t.view.devicePixelRatio = 1.0;
+  addTearDown(t.view.reset);
+}
+
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -142,6 +150,7 @@ void main() {
     });
 
     testWidgets('bo\'limlar turi bo\'yicha guruhlanadi', (t) async {
+      _tall(t);
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
       await t.pump();
 
@@ -155,6 +164,7 @@ void main() {
     });
 
     testWidgets('ma\'lumotnoma bo\'limlari bor', (t) async {
+      _tall(t);
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
       await t.pump();
 
@@ -168,35 +178,54 @@ void main() {
     });
 
     testWidgets('kitob nomi aniq yoziladi ("3 kitobdan" emas)', (t) async {
+      _tall(t);
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
       await t.pump();
       await t.drag(find.byType(ListView), const Offset(0, -300));
       await t.pump();
 
-      // Bitta kitobdan bo'lsa — bet raqami bilan.
-      expect(find.text('Coursebook 7-bet'), findsOneWidget);
-      expect(find.text('Grammar 4-bet'), findsOneWidget);
+      // Bitta kitobdan bo'lsa — bet raqami bilan ("Kitobda: ..." — bu
+      // kitob ma'lumoti ekani aytiladi).
+      expect(find.text('Kitobda: Coursebook 7-bet'), findsOneWidget);
+      expect(find.text('Kitobda: Grammar 4-bet'), findsOneWidget);
       // Noaniq yozuv qolmasin.
       expect(find.textContaining('kitobdan'), findsNothing);
     });
 
-    testWidgets('betma-bet ko\'rish tugmasi bor', (t) async {
+    testWidgets('kitob sahifalari tugmasi bor', (t) async {
+      _tall(t);
       await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
       await t.pump();
 
       // 2 ta bet: coursebook 7 va grammar 4
-      expect(find.text('Betma-bet ko\'rish (2 bet)'), findsOneWidget);
+      expect(find.text('Kitob sahifalari bo\'yicha (2 bet)'), findsOneWidget);
+    });
+
+    testWidgets('unit sahifasida tavsiya etilgan tartib va izohlar bor',
+        (t) async {
+      _tall(t);
+      await t.pumpWidget(_wrap(BookUnitScreen(unit: unit)));
+      await t.pump();
+
+      // Nimadan boshlash kerakligi aytiladi (kitobsiz o'quvchi uchun).
+      expect(find.text('Tavsiya etilgan tartib'), findsOneWidget);
+      expect(find.text('So\'z darslari'), findsOneWidget);
+      expect(find.text('Unit imtihoni'), findsOneWidget);
+      // Raqamlar nima ekani yozilgan.
+      expect(find.text('Bu unitda:'), findsOneWidget);
+      expect(find.text('savol'), findsOneWidget);
+      expect(find.text('band'), findsNothing);
     });
   });
 
-  group('Betma-bet ko\'rinish', () {
+  group('Kitob sahifalari ro\'yxati', () {
     testWidgets('betlar kitob bo\'yicha guruhlanadi', (t) async {
       await t.pumpWidget(_wrap(BookPagesScreen(unit: unit)));
       await t.pump();
 
-      // Guruh sarlavhasi
-      expect(find.text('Coursebook'), findsOneWidget);
-      expect(find.text('Grammar'), findsOneWidget);
+      // Guruh sarlavhasi — kitob nomi nima ekani bilan.
+      expect(find.text('Coursebook (asosiy darslik)'), findsOneWidget);
+      expect(find.text('Grammar (grammatika kitobi)'), findsOneWidget);
       // Bet yozuvida ham kitob nomi bor — "7-bet" o'zi yetarli emas edi.
       expect(find.text('Enterprise 1 · Coursebook · 7-bet'), findsOneWidget);
       expect(find.text('Enterprise 1 · Grammar · 4-bet'), findsOneWidget);
@@ -204,26 +233,36 @@ void main() {
 
     testWidgets('bet ekrani to\'liq manzil va mashqlarni ko\'rsatadi',
         (t) async {
+      _tall(t);
       final page = unit.pages().first;
       await t.pumpWidget(_wrap(BookPageScreen(page: page)));
       await t.pump();
 
       // To'liq manzil: "1-unit · Coursebook · 7-bet"
       expect(find.text('1-unit · Enterprise 1 · Coursebook · 7-bet'), findsOneWidget);
-      // Betdagi barcha mashqlar
-      expect(find.text('Ex. 5'), findsOneWidget);
-      expect(find.text('Ex. 6'), findsOneWidget);
-      expect(find.text('Ex. 7'), findsOneWidget);
-      expect(find.text('Ex. 8'), findsOneWidget);
+      // Betdagi barcha mashqlar ("Ex. 5" kitob qisqartmasi emas, "5-mashq")
+      expect(find.text('5-mashq'), findsOneWidget);
+      expect(find.text('6-mashq'), findsOneWidget);
+      expect(find.text('7-mashq'), findsOneWidget);
+      expect(find.text('8-mashq'), findsOneWidget);
     });
 
     testWidgets('har mashqda qaysi kitob va bet yozilgan', (t) async {
+      _tall(t);
       final page = unit.pages().first;
       await t.pumpWidget(_wrap(BookPageScreen(page: page)));
       await t.pump();
 
-      expect(find.text('1-unit · Enterprise 1 · Coursebook · 7-bet · Ex. 5'), findsOneWidget);
-      expect(find.text('1-unit · Enterprise 1 · Coursebook · 7-bet · Ex. 6'), findsOneWidget);
+      // Kitob manzili "Kitobda: ..." deb yoziladi (kitobsiz o'quvchi uchun
+      // bu faqat ma'lumot).
+      expect(
+          find.text(
+              'Kitobda: 1-unit · Enterprise 1 · Coursebook · 7-bet · 5-mashq'),
+          findsOneWidget);
+      expect(
+          find.text(
+              'Kitobda: 1-unit · Enterprise 1 · Coursebook · 7-bet · 6-mashq'),
+          findsOneWidget);
     });
   });
 
@@ -233,19 +272,23 @@ void main() {
       await t.pumpWidget(_wrap(BookGroupScreen(group: g)));
       await t.pump();
 
-      expect(find.text('Ex. 5'), findsOneWidget);
-      expect(find.text('Ex. 6'), findsOneWidget);
-      expect(find.text('Enterprise 1 · Coursebook, 7-bet'), findsOneWidget);
-      // O'yin turi belgilari
-      expect(find.text('Tanlash'), findsOneWidget);
-      expect(find.text('Yig\'ish'), findsOneWidget);
-      expect(find.text('Moslash'), findsOneWidget);
-      expect(find.text('O\'qish'), findsOneWidget);
+      expect(find.text('5-mashq'), findsOneWidget);
+      expect(find.text('6-mashq'), findsOneWidget);
+      expect(find.text('Kitobda: Enterprise 1 · Coursebook, 7-bet'),
+          findsOneWidget);
+      // Mashq turi belgilari — nima qilinishi so'z bilan aytiladi
+      expect(find.text('Variantdan tanlash'), findsOneWidget);
+      expect(find.text('So\'z va harflardan yig\'ish'), findsOneWidget);
+      expect(find.text('Juftlarni moslash'), findsOneWidget);
+      expect(find.text('Faqat o\'qish (savolsiz)'), findsOneWidget);
     });
   });
 
   group('ExercisePlayer — tanlash', () {
     testWidgets('savol, variantlar va izoh ko\'rinadi', (t) async {
+      // Kartalar ko'paygach (Nima qilinadi, Qoida va izoh) variantlar
+      // pastroqda - baland ekran.
+      _tall(t);
       final ex = unit.sections.first.exercises[0];
       await t.pumpWidget(_wrap(
           ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at')));
@@ -256,8 +299,14 @@ void main() {
       expect(find.text('a'), findsOneWidget);
       expect(find.text('an'), findsOneWidget);
       // Hisoblagich O'ZLAShTIRILGAN bandlarni ko'rsatadi (o'rinni emas):
-      // boshida hali hech narsa o'zlashtirilmagan.
-      expect(find.text('0 / 2'), findsOneWidget);
+      // boshida hali hech narsa o'zlashtirilmagan. Sanagich nimani
+      // sanashi yozilgan ("to'g'ri").
+      expect(find.text('0 / 2 to\'g\'ri'), findsOneWidget);
+      // Mashq qoidasi birinchi savolda bir marta aytiladi.
+      expect(find.textContaining('Xato qilgan savol keyinroq yana'),
+          findsOneWidget);
+      // "Nima qilinadi" kartasi va kitobdagi manzil izohlangan.
+      expect(find.text('Nima qilinadi'), findsOneWidget);
     });
 
     testWidgets('to\'g\'ri javob keyingi savolga o\'tkazadi', (t) async {
@@ -278,11 +327,12 @@ void main() {
       await t.pump(const Duration(milliseconds: 1000));
       await t.pump();
       expect(find.text('book'), findsOneWidget, reason: '2-savolga o\'tdi');
-      expect(find.text('1 / 2'), findsOneWidget,
+      expect(find.text('1 / 2 to\'g\'ri'), findsOneWidget,
           reason: 'bitta band o\'zlashtirildi');
     });
 
     testWidgets('barcha savol tugagach natija ekrani chiqadi', (t) async {
+      _tall(t);
       final ex = unit.sections.first.exercises[0];
       await t.pumpWidget(_wrap(
           ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at')));
@@ -295,10 +345,12 @@ void main() {
       await t.pump(const Duration(milliseconds: 1000));
       await t.pump();
 
-      // Hamma band to\'g\'ri javob berilgach mashq
-      // O\'ZLAShTIRILGAN hisoblanadi.
-      expect(find.text('O\'zlashtirildi'), findsOneWidget);
-      expect(find.text('Bo\'limga qaytish'), findsOneWidget);
+      // Hamma band xatosiz to\'g\'ri javob berilgach mashq tugaydi va
+      // natija nimani bildirishi aytiladi.
+      expect(find.text('Hammasi to\'g\'ri!'), findsOneWidget);
+      expect(find.textContaining('Xatosiz bajardingiz'), findsOneWidget);
+      expect(find.text('Mashqlar ro\'yxatiga qaytish'), findsOneWidget);
+      expect(find.text('Bu mashqni qaytadan boshlash'), findsOneWidget);
     });
   });
 
@@ -306,6 +358,7 @@ void main() {
     testWidgets('xato qilingan band navbatga QAYTADI', (t) async {
       // Ilgari bandlar bir marta so'ralardi: xato javob shunchaki o'tib
       // ketardi va o'quvchi o'sha bandni boshqa ko'rmasdi.
+      _tall(t);
       final ex = unit.sections.first.exercises[0]; // 2 bandli tanlash
       await t.pumpWidget(_wrap(
           ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at')));
@@ -318,7 +371,7 @@ void main() {
       await t.pump();
 
       // Xato band o'zlashtirilmagan.
-      expect(find.text('0 / 2'), findsOneWidget);
+      expect(find.text('0 / 2 to\'g\'ri'), findsOneWidget);
 
       // 2-band: to'g'ri.
       expect(find.text('book'), findsOneWidget);
@@ -329,16 +382,21 @@ void main() {
       // Mashq TUGAMAYDI — xato band qaytadi.
       expect(find.text('orange'), findsOneWidget,
           reason: 'xato qilingan band qayta so\'ralishi kerak');
-      expect(find.text('takror'), findsOneWidget);
+      expect(find.text('qayta so\'ralyapti'), findsOneWidget);
 
-      // Endi to'g'ri javob — mashq tugaydi.
+      // Endi to'g'ri javob — mashq tugaydi. Xato bo'lgani uchun natija
+      // "Hammasi to'g'ri" EMAS va nima bo'lishi aytiladi.
       await t.tap(find.text('an'));
       await t.pump(const Duration(milliseconds: 2000));
       await t.pump();
-      expect(find.text('O\'zlashtirildi'), findsOneWidget);
+      expect(find.text('Mashq tugadi: hammasini topdingiz'), findsOneWidget);
+      expect(find.text('Hammasi to\'g\'ri!'), findsNothing);
+      expect(find.textContaining('Takrorlash kerak'), findsOneWidget);
+      expect(find.textContaining('Xatolar daftariga'), findsOneWidget);
     });
 
     testWidgets('hammasi to\'g\'ri bo\'lsa takror bo\'lmaydi', (t) async {
+      _tall(t);
       final ex = unit.sections.first.exercises[0];
       await t.pumpWidget(_wrap(
           ExercisePlayer(exercise: ex, sectionTitle: 'Lug\'at')));
@@ -351,8 +409,8 @@ void main() {
       await t.pump(const Duration(milliseconds: 2000));
       await t.pump();
 
-      expect(find.text('O\'zlashtirildi'), findsOneWidget);
-      expect(find.textContaining('takrorlandi'), findsNothing);
+      expect(find.text('Hammasi to\'g\'ri!'), findsOneWidget);
+      expect(find.textContaining('adashdingiz'), findsNothing);
     });
   });
 
@@ -379,7 +437,7 @@ void main() {
       // To'g'ri yig'ildi -> natijaga o'tadi
       await t.pump(const Duration(milliseconds: 1100));
       await t.pump();
-      expect(find.text('Bo\'limga qaytish'), findsOneWidget);
+      expect(find.text('Mashqlar ro\'yxatiga qaytish'), findsOneWidget);
     });
   });
 
@@ -407,6 +465,10 @@ void main() {
       expect(find.text('I am from Spain.'), findsOneWidget);
       expect(find.text('Men Ispaniyadanman.'), findsOneWidget);
       expect(find.text('O\'qib chiqdim'), findsOneWidget);
+      // O'qish sahnasida ham "Nima qilinadi" bor: savol yo'qligi va
+      // nima qilish aytiladi (mashqlarning uchdan biri shunday).
+      expect(find.text('Nima qilinadi'), findsOneWidget);
+      expect(find.textContaining('Bu yerda savol yo\'q'), findsOneWidget);
     });
   });
 
@@ -418,7 +480,14 @@ void main() {
       expect(find.text('to be'), findsOneWidget);
       expect(find.text('Qoida tushuntirishi'), findsOneWidget);
       expect(find.text('Ehtiyot bo\'ling'), findsOneWidget);
-      expect(find.text('📖 Enterprise 1 · Grammar, 4-bet'), findsOneWidget);
+      expect(
+          find.text(
+              '📖 Kitobda: Enterprise 1 · Grammar (grammatika kitobi), 4-bet'),
+          findsOneWidget);
+      // Sahifa nima ekani birinchi qatorda aytiladi.
+      expect(find.textContaining('Bu yerda:'), findsOneWidget);
+      // Rangli quti nima ekani sarlavhada yoziladi.
+      expect(find.text('Diqqat!'), findsOneWidget);
     });
 
     testWidgets('so\'z yasalishi ekrani juftlarni ko\'rsatadi', (t) async {
@@ -446,7 +515,9 @@ void main() {
       await t.pumpWidget(_wrap(UnitVocabularyScreen(unit: unit)));
       await t.pump();
 
-      expect(find.text('Yodlashni boshlash (4 so\'z)'), findsOneWidget);
+      expect(find.text('Test boshlash (4 so\'z)'), findsOneWidget);
+      expect(find.textContaining('Bu yerda: shu unit (bob) so\'zlari'),
+          findsOneWidget);
       expect(find.text('farmer'), findsOneWidget);
       expect(find.text('dehqon'), findsOneWidget);
     });

@@ -65,7 +65,7 @@ void main() {
     });
     await t.pumpWidget(const MaterialApp(home: Scaffold(body: BookUnitsScreen())));
     await t.pump();
-    expect(find.text('Enterprise 1 - Beginner'), findsOneWidget);
+    expect(find.text('Beginner · Enterprise 1'), findsOneWidget);
 
     // Asset o'qish haqiqiy async - fake-async zonada osilib qolmasin.
     await t.runAsync(() async {
@@ -74,8 +74,8 @@ void main() {
     });
     await t.pump();
     await t.pump(const Duration(milliseconds: 400));
-    expect(find.text('Enterprise 2 - Elementary'), findsOneWidget);
-    expect(find.text('Enterprise 1 - Beginner'), findsNothing);
+    expect(find.text('Elementary · Enterprise 2'), findsOneWidget);
+    expect(find.text('Beginner · Enterprise 1'), findsNothing);
   });
 
   testWidgets("kitob taraqqiyoti daraja bo'yicha alohida saqlanadi", (t) async {

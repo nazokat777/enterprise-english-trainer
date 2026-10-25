@@ -57,7 +57,7 @@ class _PlanHomeCardState extends State<PlanHomeCard> {
       context,
       MaterialPageRoute(
         builder: (_) => Scaffold(
-          appBar: AppBar(title: const Text('Mnemonika')),
+          appBar: AppBar(title: const Text('Mnemonika: yodlash rejasi')),
           body: const MnemonicsScreen(),
         ),
       ),
@@ -74,24 +74,26 @@ class _PlanHomeCardState extends State<PlanHomeCard> {
     String sub;
     double ratio = 0;
     if (p == null) {
-      title = 'Mnemonika xaritasi';
-      sub = '${fmt(v.uniqueWords)} so\'z · ${fmt(v.lessons)} dars · '
-          '${v.rules} qoida. Kitobni necha kunda tugatasiz? Reja tuzing.';
+      title = 'Mnemonika - kitobni reja bilan yodlash';
+      sub = 'Kitobda ${fmt(v.uniqueWords)} ta so\'z va ${v.rules} ta '
+          'grammatika qoidasi bor. Necha kunda tugatmoqchisiz? Bosing - ilova '
+          'kunlarga bo\'lib beradi.';
     } else {
       final schedule = buildSchedule(v, p.days);
       final day = p.dayIndex(DateTime.now());
       final st = planStatus(schedule, day, plans.isDone);
       ratio = st.ratio;
-      title = '${day + 1}-kun / ${p.days} · ${st.done}/${st.total} band';
+      title = 'Mnemonika · ${day + 1}-kun (jami ${p.days} kun)';
       // Kunlik eslatma: bugun nima qolganini ochiq aytadi.
       final left = todayItems(schedule, day, plans.isDone)
           .where((e) => !plans.isDone(e))
           .length;
       final today = left == 0
           ? 'Bugungi reja bajarildi, barakalla!'
-          : 'Bugun $left ta band qoldi (~${left * 5} daqiqa)';
-      sub = '$today · tugash: ${uzDate(p.finishDate)}'
-          '${st.behind > 0 ? ' · ${st.behind} ta ortda' : ''}';
+          : 'Bugun $left ta topshiriq qoldi (~${left * 5} daqiqa).';
+      sub = '$today Butun reja: ${st.done} / ${st.total} topshiriq bajarildi, '
+          'reja ${uzDateIn(p.finishDate)} tugaydi.'
+          '${st.behind > 0 ? ' ${st.behind} ta topshiriq orqada.' : ''}';
     }
 
     return Padding(
@@ -135,6 +137,11 @@ class _PlanHomeCardState extends State<PlanHomeCard> {
                               const AlwaysStoppedAnimation(Colors.white),
                         ),
                       ),
+                      const SizedBox(height: 3),
+                      Text('Butun reja: ${(ratio * 100).round()}%',
+                          style: TextStyle(
+                              color: Colors.white.withValues(alpha: 0.88),
+                              fontSize: 11.5)),
                     ],
                   ],
                 ),

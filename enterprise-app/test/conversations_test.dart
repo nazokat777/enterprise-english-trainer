@@ -66,7 +66,9 @@ void main() {
     }
 
     expect(find.text('Suhbatlar'), findsOneWidget);
-    expect(find.textContaining('ta dialog'), findsOneWidget);
+    // Sahifa nima ekanini va nima qilishni birinchi qatorda aytadi.
+    expect(find.textContaining('Bu yerda:'), findsOneWidget);
+    expect(find.textContaining('ta tayyor suhbat (dialog)'), findsOneWidget);
     expect(t.takeException(), isNull);
   });
 }

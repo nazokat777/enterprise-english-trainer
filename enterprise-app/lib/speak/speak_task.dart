@@ -124,9 +124,11 @@ class _SpeakTaskState extends State<SpeakTask>
       final tall = c.maxHeight >= 600;
       final gap = tall ? const Spacer() : const SizedBox(height: 28);
       final children = <Widget>[
-          Text('Ovoz chiqarib ayting',
-              style: TextStyle(
-                  fontSize: 13, color: muted, fontWeight: FontWeight.w600)),
+          // Asosiy ko'rsatma: nimani (pastdagi yozuvni) va qaysi tilda
+          // (inglizcha) aytish kerak.
+          const Text('Shuni inglizcha ovoz chiqarib ayting',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800)),
           const SizedBox(height: 10),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
@@ -153,7 +155,7 @@ class _SpeakTaskState extends State<SpeakTask>
                   onPressed: () =>
                       Tts.instance.speak(q.speak, id: q.itemId),
                   icon: const Icon(Icons.volume_up_rounded, size: 20),
-                  label: const Text('Namunani eshitish'),
+                  label: const Text('Qanday o\'qilishini eshitish'),
                 ),
               ],
             ),
@@ -208,9 +210,13 @@ class _SpeakTaskState extends State<SpeakTask>
                       ? 'Eshityapman...'
                       : _heard.isEmpty
                           ? (_error
-                              ? 'Eshitilmadi - mikrofonga ruxsat bering yoki o\'tkazing'
-                              : 'Mikrofonni bosing va ayting')
-                          : 'Eshitildi: "$_heard" - yana urinib ko\'ring',
+                              ? 'Eshitilmadi. Brauzer mikrofon ruxsatini '
+                                  'so\'rasa "Ruxsat berish" ni bosing va '
+                                  'qayta urinib ko\'ring (yoki o\'tkazib '
+                                  'yuboring).'
+                              : 'Mikrofonni bosing, keyin so\'zni ayting')
+                          : 'Men eshitgan: "$_heard" - yana urinib ko\'ring. '
+                              'Aniqroq va sekinroq ayting.',
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontSize: 14,
@@ -230,7 +236,7 @@ class _SpeakTaskState extends State<SpeakTask>
                 icon: const Icon(Icons.skip_next_rounded, size: 18),
                 label: Text(_tries >= 2 || _noHear >= 1
                     ? 'O\'tkazib yuborish'
-                    : 'Mikrofon yo\'q - o\'tkazish'),
+                    : 'Hozir gapira olmayman - o\'tkazish'),
               ),
             ),
           gap,

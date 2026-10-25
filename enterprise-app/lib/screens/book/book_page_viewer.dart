@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import '../../book_content.dart' show BookExercise;
+import '../../teach/clarify.dart' show friendlyRef;
 import '../../theme.dart';
 
 /// Kitob betining suratini ko'rsatadi (agar mavjud bo'lsa).
@@ -106,7 +108,8 @@ class _BookPageButtonState extends State<BookPageButton> {
                 const SizedBox(width: 9),
                 Flexible(
                   child: Text(
-                      'Kitob betini ko\'rish (${widget.page}-bet)',
+                      'Kitob betini ko\'rish (${BookExercise.bookName} · '
+                      '${widget.bookLabel}, ${widget.page}-bet)',
                       textAlign: TextAlign.center,
                       style: const TextStyle(
                           color: Colors.white,
@@ -144,7 +147,12 @@ class BookPageViewer extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: Text('$bookLabel · $page-bet',
+        // "Enterprise 1 · Coursebook (asosiy darslik) · 7-bet" - kitobi
+        // yo'q odam ham Coursebook nima ekanini bilsin.
+        title: Text(
+            friendlyRef('${BookExercise.bookName} · $bookLabel · $page-bet'),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             style: const TextStyle(fontSize: 16)),
       ),
       body: Center(

@@ -35,7 +35,8 @@ class UnitsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             Text(
-              'Bu daraja uchun kontent hali yo\'q (OCR kerak).',
+              "Bu daraja uchun darslar hali tayyor emas. Keyinroq qaytib keling.",
+              textAlign: TextAlign.center,
               style: AppTheme.body(context),
             ),
           ],
@@ -58,10 +59,12 @@ class UnitsScreen extends StatelessWidget {
                 Text('Lug\'at', style: AppTheme.heading(context)),
                 const SizedBox(height: 2),
                 Text(
-                  'So\'zlarni takrorlash bilan yodlash — har bir unit '
-                  'uchun alohida paketlar',
+                  "Unit so'zlari kichik to'plamlarga bo'lingan. To'plamni "
+                  "oching, so'zlarni yodlang; unit oxirida so'zlar testini "
+                  "topshiring. (Kitob darslari - \"Darslar\" bo'limida.)",
                   style: TextStyle(
                     fontSize: 12.5,
+                    height: 1.4,
                     color: AppColors.muted(context),
                   ),
                 ),
@@ -136,8 +139,8 @@ class _DueBanner extends StatelessWidget {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      '$count ta so\'z — ularni unutib qo\'ymaslik uchun '
-                      'hozir takrorlang',
+                      "$count ta so'z unutilishi mumkin - bosing va hozir "
+                      "takrorlang",
                       style: TextStyle(
                         fontSize: 12.5,
                         color: AppColors.muted(context),
@@ -244,25 +247,29 @@ class _UnitNode extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Text(
-                                unit.code,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w800,
-                                  fontSize: 16,
-                                  color: dark
-                                      ? AppColors.darkHeading
-                                      : AppColors.lightHeading,
+                              // "Unit 1" ingliz kodi emas, o'zbekcha nom:
+                              // "1-unit - Hi!".
+                              Flexible(
+                                child: Text(
+                                  unit.title,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w800,
+                                    fontSize: 16,
+                                    color: dark
+                                        ? AppColors.darkHeading
+                                        : AppColors.lightHeading,
+                                  ),
                                 ),
                               ),
                               if (unit.isRevision) ...[
                                 const SizedBox(width: 8),
-                                _tag('Revision', AppColors.homework),
+                                _tag('Takrorlash', AppColors.homework),
                               ],
                             ],
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            '${unit.wordCount} so\'z · $done/${packs.length} pack',
+                            "${unit.wordCount} ta so'z · $done / ${packs.length} to'plam tugagan",
                             style: TextStyle(
                               fontSize: 13,
                               color: dark

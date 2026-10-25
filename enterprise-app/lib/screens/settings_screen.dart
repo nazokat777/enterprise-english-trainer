@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 import '../services/backup.dart';
 import '../services/ai_tutor_service.dart';
 import '../services/tts.dart';
-import 'ai_tutor_screen.dart' show ProviderPicker;
+import 'ai_tutor_screen.dart' show KeySiteLink, ProviderPicker;
 import '../reward/reward_engine.dart';
 import '../reward/reward_widgets.dart';
 import '../theme.dart';
@@ -35,27 +35,29 @@ class SettingsScreen extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
         children: [
           _Title(),
-          const SizedBox(height: 14),
+          // Bir xil ko'rinishdagi uzun ro'yxat guruhlarga bo'lindi:
+          // qaysi karta nimaga tegishli ekani sarlavhadan ko'rinadi.
+          const _Group("O'qish maqsadi"),
           _GoalCard(),
           const SizedBox(height: 10),
+          _FreezeCard(),
+          const _Group("Ko'rinish va ovoz"),
           _DarkCard(),
           const SizedBox(height: 10),
           const _SfxCard(),
           const SizedBox(height: 10),
-          const _AchievementsCard(),
-          const SizedBox(height: 10),
           const _VoiceCard(),
-          const SizedBox(height: 10),
-          _FreezeCard(),
+          const _Group('Natijalaringiz'),
+          const _AchievementsCard(),
           const SizedBox(height: 10),
           _StatsCard(),
           const SizedBox(height: 10),
           const _SkillsCard(),
-          const SizedBox(height: 10),
-          const _BackupCard(),
-          const SizedBox(height: 10),
+          const _Group("AI o'qituvchi"),
           const _ApiKeyCard(),
-          const SizedBox(height: 10),
+          const _Group("Ma'lumotlar"),
+          const _BackupCard(),
+          const _Group('Xavfli joy'),
           _ResetCard(),
         ],
       ),
@@ -66,8 +68,33 @@ class SettingsScreen extends StatelessWidget {
 class _Title extends StatelessWidget {
   const _Title();
   @override
-  Widget build(BuildContext context) =>
-      Text('Sozlamalar', style: AppTheme.heading(context));
+  Widget build(BuildContext context) => Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Sozlamalar', style: AppTheme.heading(context)),
+          const SizedBox(height: 2),
+          Text('Ilova sozlamalari va natijalaringiz shu yerda.',
+              style:
+                  TextStyle(fontSize: 13, color: AppColors.muted(context))),
+        ],
+      );
+}
+
+/// Kartalar guruhi sarlavhasi.
+class _Group extends StatelessWidget {
+  final String title;
+  const _Group(this.title);
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.only(top: 22, bottom: 8, left: 2),
+        child: Text(title.toUpperCase(),
+            style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w900,
+                letterSpacing: 0.8,
+                color: AppColors.muted(context))),
+      );
 }
 
 class _Card extends StatelessWidget {
@@ -102,16 +129,19 @@ class _GoalCard extends StatelessWidget {
           const Text('Kunlik maqsad',
               style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
           const SizedBox(height: 2),
-          Text('Bir kunda nechta XP yig\'moqchisiz',
-              style:
-                  TextStyle(fontSize: 12.5, color: AppColors.muted(context))),
+          Text(
+              'Kuniga necha ball yig\'moqchisiz? Ball - to\'g\'ri javob va '
+              'tugatilgan mashq uchun beriladi. Boshlovchiga 10 yoki 20 '
+              'yetarli.',
+              style: TextStyle(
+                  fontSize: 12.5, height: 1.4, color: AppColors.muted(context))),
           const SizedBox(height: 10),
           Wrap(
             spacing: 8,
             children: [
               for (final g in goals)
                 ChoiceChip(
-                  label: Text('$g XP'),
+                  label: Text('$g ball'),
                   selected: progress.dailyGoal == g,
                   onSelected: (_) => progress.setDailyGoal(g),
                 ),
@@ -135,9 +165,18 @@ class _DarkCard extends StatelessWidget {
               ? Icons.dark_mode_rounded
               : Icons.light_mode_rounded),
           const SizedBox(width: 12),
-          const Expanded(
-            child: Text('Tungi rejim',
-                style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text('Tungi rejim',
+                    style:
+                        TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+                Text('Ekran qorong\'i bo\'ladi - kechqurun ko\'zni charchatmaydi.',
+                    style: TextStyle(
+                        fontSize: 12.5, color: AppColors.muted(context))),
+              ],
+            ),
           ),
           Switch(
             value: progress.darkMode,
@@ -159,14 +198,18 @@ class _SfxCard extends StatelessWidget {
         children: [
           Icon(progress.sfx ? Icons.volume_up_rounded : Icons.volume_off_rounded),
           const SizedBox(width: 12),
-          const Expanded(
+          Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Ovoz effektlari',
+                const Text('Ovoz effektlari',
                     style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
-                Text("To'g'ri javob, kombo, bonus, daraja ovozlari",
-                    style: TextStyle(fontSize: 12)),
+                Text(
+                    "To'g'ri javob, ketma-ket to'g'ri javoblar va sovg'a qutisi "
+                    "ochilganda chalinadigan qisqa tovushlar. Inglizcha "
+                    "so'zlarni o'qishga ta'sir qilmaydi.",
+                    style: TextStyle(
+                        fontSize: 12.5, color: AppColors.muted(context))),
               ],
             ),
           ),
@@ -202,8 +245,15 @@ class _AchievementsCard extends StatelessWidget {
                 children: [
                   const Text('Yutuqlar',
                       style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
-                  Text('$got / $all medal · ${rewards.level}-daraja · ${rewards.title}',
+                  // "Daraja" kitob darajasi (Beginner/Elementary) bilan
+                  // adashmasin: bu yerda AVATAR darajasi.
+                  Text(
+                      'Olingan medallar: $got / $all. Avatar darajasi: '
+                      '${rewards.level} (${rewards.title}).',
                       style: const TextStyle(fontSize: 12)),
+                  Text('Bosing - barcha medallarni ko\'rasiz.',
+                      style: TextStyle(
+                          fontSize: 12, color: AppColors.muted(context))),
                 ],
               ),
             ),
@@ -263,7 +313,7 @@ class _VoiceCardState extends State<_VoiceCard> {
                           : AppColors.homework),
                   const SizedBox(width: 10),
                   const Expanded(
-                    child: Text('Talaffuz ovozi',
+                    child: Text('Inglizcha o\'qish ovozi',
                         style: TextStyle(
                             fontWeight: FontWeight.w800, fontSize: 15)),
                   ),
@@ -271,15 +321,24 @@ class _VoiceCardState extends State<_VoiceCard> {
               ),
               const SizedBox(height: 4),
               Text(
+                'Ilova inglizcha so\'z va gaplarni shu ovoz bilan o\'qib beradi.',
+                style: TextStyle(
+                    fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
+              ),
+              const SizedBox(height: 4),
+              Text(
                 off
-                    ? 'Bu brauzerda ovoz xizmati ishlamaydi — talaffuz '
-                        'tugmalari jim qoladi. Boshqa brauzer yoki '
-                        'telefon ilovasida urinib ko\'ring.'
+                    ? 'Bu brauzerda ovoz xizmati ishlamaydi - o\'qish '
+                        'tugmalari jim qoladi. Boshqa brauzer (Chrome, Edge) '
+                        'yoki telefon ilovasida urinib ko\'ring.'
                     : found
-                    ? (voice ?? 'Qurilmaning inglizcha ovozi ishlatiladi.')
-                    : 'Qurilmada inglizcha ovoz topilmadi. So\'zlar '
-                        'noto\'g\'ri talaffuz qilinishi mumkin — telefon '
-                        'sozlamalaridan inglizcha ovozni yuklab oling.',
+                    ? (voice != null
+                        ? 'Hozirgi ovoz: $voice'
+                        : 'Qurilmaning inglizcha ovozi ishlatiladi.')
+                    : 'Qurilmada inglizcha ovoz yo\'q, so\'zlar noto\'g\'ri '
+                        'o\'qilishi mumkin. Telefon sozlamalarida \'matnni '
+                        'ovozga aylantirish\' (TTS) bo\'limidan inglizcha '
+                        'ovozni yuklab oling.',
                 style: TextStyle(
                     fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
               ),
@@ -287,8 +346,9 @@ class _VoiceCardState extends State<_VoiceCard> {
                 const SizedBox(height: 6),
                 Text(
                   "Lug'at so'zlari va namunaviy gaplar (${Tts.instance.neuralCount} ta) "
-                  "uchun sifatli neural ovoz (Britan inglizchasi) yozib qo'yilgan — "
-                  "ular qurilma ovoziga bog'liq emas. Qolgan matnlar qurilma ovozida.",
+                  "uchun tayyor, aniq ovozli yozuv (Britan inglizchasi) bor - "
+                  "ular har qurilmada bir xil eshitiladi. Qolgan matnlar "
+                  "qurilmaning o'z ovozida o'qiladi.",
                   style: const TextStyle(
                       fontSize: 12.5, height: 1.4, fontWeight: FontWeight.w700,
                       color: AppColors.success),
@@ -298,7 +358,7 @@ class _VoiceCardState extends State<_VoiceCard> {
               OutlinedButton.icon(
                 onPressed: () => Tts.instance.speak('Hello! How are you?'),
                 icon: const Icon(Icons.volume_up_rounded, size: 18),
-                label: const Text('Sinab ko\'rish'),
+                label: const Text('Ovozni eshitib ko\'rish'),
               ),
             ],
           ),
@@ -323,18 +383,22 @@ class _FreezeCard extends StatelessWidget {
               const Icon(Icons.ac_unit_rounded, color: AppColors.actionBlue),
               const SizedBox(width: 10),
               const Expanded(
-                child: Text('Seriya muzlatgichi',
+                child: Text('Ketma-ket kunlar himoyasi (muzlatgich)',
                     style:
                         TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
               ),
-              Text('${progress.streakFreezeCount} ta',
+              const SizedBox(width: 8),
+              Text('Sizda: ${progress.streakFreezeCount} ta',
                   style: const TextStyle(fontWeight: FontWeight.w800)),
             ],
           ),
           const SizedBox(height: 4),
           Text(
-            'Bir kun dars qilolmasangiz, muzlatgich seriyangizni saqlab '
-            'qoladi. Narxi ${Progress.freezeCost} tanga.',
+            'Har kuni o\'qisangiz \'ketma-ket kunlar\' soni o\'sadi. Bir kun '
+            'o\'qiy olmasangiz, muzlatgich shu hisobni saqlab qoladi (1 ta '
+            'ishlatiladi). Narxi ${Progress.freezeCost} tanga 🪙. Tanga ball '
+            'yig\'ganda (har 10 ball = 1 tanga) va sovg\'a qutilaridan '
+            'olinadi.',
             style: TextStyle(
                 fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
           ),
@@ -346,7 +410,9 @@ class _FreezeCard extends StatelessWidget {
                     if (ok && context.mounted) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                            content: Text('Muzlatgich sotib olindi')),
+                            content: Text('Muzlatgich sotib olindi. Bir kun '
+                                'o\'qimasangiz ham ketma-ket kunlaringiz '
+                                'saqlanadi.')),
                       );
                     }
                   }
@@ -354,8 +420,8 @@ class _FreezeCard extends StatelessWidget {
             icon: const Icon(Icons.shopping_cart_rounded, size: 18),
             label: Text(enough
                 ? 'Sotib olish (${Progress.freezeCost} tanga)'
-                : 'Tanga yetarli emas '
-                    '(${progress.coins}/${Progress.freezeCost})'),
+                : 'Tanga yetmaydi: sizda ${progress.coins}, '
+                    'kerak ${Progress.freezeCost}'),
           ),
         ],
       ),
@@ -369,15 +435,16 @@ class _StatsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final rows = <(String, String)>[
-      ('Jami XP', '${progress.xp}'),
-      ('Liga', progress.league),
-      ('Tanga', '${progress.coins}'),
-      ('Joriy seriya', '${progress.currentStreak} kun'),
-      ('Eng uzun seriya', '${progress.longestStreak} kun'),
-      ('Qiyin so\'zlar', '${progress.hardCount()} ta'),
-      ('Takrorlash kerak', '${progress.needsReviewCount()} ta mashq'),
-      ("Qutqarilgan so'zlar", '${rewards.wordsRescued} ta'),
-      ('Ovoz chiqarib aytilgan', '${rewards.spokenTotal} ta'),
+      ('Jami ball', '${progress.xp}'),
+      // "Liga" boshqalar bilan reyting EMAS: har 500 ballda yangi nom.
+      ('Ball darajasi nomi (har 500 ballda yangisi)', progress.league),
+      ('Tanga 🪙', '${progress.coins}'),
+      ('Hozir ketma-ket kunlar', '${progress.currentStreak} kun'),
+      ("Eng ko'p ketma-ket kunlar", '${progress.longestStreak} kun'),
+      ("Qiyin so'zlar (tez-tez unutganlaringiz)", '${progress.hardCount()} ta'),
+      ("Takrorlash kerak bo'lgan mashqlar", '${progress.needsReviewCount()} ta'),
+      ("Unutishdan qaytarilgan so'zlar", '${rewards.wordsRescued} ta'),
+      ("Mikrofonga to'g'ri aytilgan so'z va gaplar", '${rewards.spokenTotal} ta'),
       ("O'tilgan imtihonlar", '${rewards.examsPassed.length} ta'),
     ];
     return _Card(
@@ -386,6 +453,10 @@ class _StatsCard extends StatelessWidget {
         children: [
           const Text('Natijalar',
               style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
+          const SizedBox(height: 2),
+          Text('Hozirgacha qilgan ishlaringiz.',
+              style:
+                  TextStyle(fontSize: 12.5, color: AppColors.muted(context))),
           const SizedBox(height: 8),
           for (final r in rows)
             Padding(
@@ -437,10 +508,10 @@ class _SkillsCard extends StatelessWidget {
           const SizedBox(height: 2),
           Text(
             any
-                ? 'Mashq qilgan sari o\'sadi — orqada qolgani ustida '
-                    'ko\'proq ishlang.'
+                ? 'Til ko\'nikmalari bo\'yicha mashq darajangiz (0 dan 100% '
+                    'gacha). Eng kam foizli ko\'nikmaga ko\'proq vaqt ajrating.'
                 : 'Hali mashq qilinmagan. Dars boshlasangiz shu yerda '
-                    'ko\'rinadi.',
+                    'ko\'rinadi (har bir ko\'nikma 0 dan 100% gacha).',
             style: TextStyle(
                 fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
           ),
@@ -495,12 +566,12 @@ class _ResetCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('Boshidan boshlash',
+          const Text('Hamma natijalarni o\'chirish',
               style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
           const SizedBox(height: 4),
           Text(
-            'Barcha XP, seriya va o\'zlashtirilgan mashqlar o\'chadi. '
-            'Buni qaytarib bo\'lmaydi.',
+            '$_whatIsDeleted Kitob darslarining o\'zi o\'chmaydi. Avval '
+            '\'Zaxira nusxa\' oling.',
             style: TextStyle(
                 fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
           ),
@@ -509,28 +580,39 @@ class _ResetCard extends StatelessWidget {
             style: OutlinedButton.styleFrom(foregroundColor: AppColors.danger),
             onPressed: () => _confirmReset(context),
             icon: const Icon(Icons.delete_outline_rounded, size: 18),
-            label: const Text('Jarayonni o\'chirish'),
+            label: const Text('Hammasini o\'chirish'),
           ),
         ],
       ),
     );
   }
 
+  /// Nima o'chishi aniq aytiladi: kod `SharedPreferences.clear()` chaqiradi,
+  /// ya'ni brauzerdagi HAMMA saqlangan narsa ketadi.
+  static const String _whatIsDeleted =
+      'Ilovadagi BARCHA ma\'lumot shu qurilmadan o\'chadi va qaytarib '
+      'bo\'lmaydi: ball, tanga, ketma-ket kunlar, medallar va daraja, '
+      'tugatilgan mashqlar, so\'z takrorlash jadvali, xatolar daftari, '
+      'Mr. Vaysaqi suhbatlari, AI kalitlari va barcha sozlamalar.';
+
   Future<void> _confirmReset(BuildContext context) async {
     final yes = await showDialog<bool>(
       context: context,
       builder: (c) => AlertDialog(
-        title: const Text('Hammasini o\'chirasizmi?'),
-        content: const Text(
-            'XP, seriya, o\'zlashtirilgan mashqlar va so\'z takrorlash '
-            'jadvali — hammasi yo\'qoladi.'),
+        title: const Text('Hamma natijalar o\'chirilsinmi?'),
+        content: SingleChildScrollView(
+          child: Text(
+              '$_whatIsDeleted\n\nKitob darslarining o\'zi o\'chmaydi. '
+              'Zaxira nusxa olmagan bo\'lsangiz, avval uni oling.'),
+        ),
         actions: [
           TextButton(
               onPressed: () => Navigator.pop(c, false),
-              child: const Text('Bekor qilish')),
+              child: const Text('Yo\'q, qoldirish')),
           TextButton(
+              style: TextButton.styleFrom(foregroundColor: AppColors.danger),
               onPressed: () => Navigator.pop(c, true),
-              child: const Text('O\'chirish')),
+              child: const Text('Ha, hammasini o\'chirish')),
         ],
       ),
     );
@@ -538,6 +620,8 @@ class _ResetCard extends StatelessWidget {
       await progress.resetAll();
       await rewards.resetAll();
       await mistakes.clear();
+      // So'z o'zlashtirishi ham xotiradan tozalansin (diskdan ketgan edi).
+      await mastery.load(level: progress.currentLevel);
     }
   }
 }
@@ -551,13 +635,20 @@ class _BackupCard extends StatefulWidget {
 
 class _BackupCardState extends State<_BackupCard> {
   String _msg = '';
+  bool _err = false;
 
   Future<void> _copy() async {
     final text = await Backup.export();
     await Clipboard.setData(ClipboardData(text: text));
     if (mounted) {
-      setState(() => _msg = 'Nusxalandi (${(text.length / 1024).toStringAsFixed(0)} KB). '
-          "Uni Telegram'da o'zingizga yuborib saqlang.");
+      setState(() {
+        _err = false;
+        // Zaxira matniga AI kalitlari ham kiradi - oshkor bo'lmasin.
+        _msg = 'Nusxalandi (${(text.length / 1024).toStringAsFixed(0)} KB). '
+            "Uni Telegram'dagi 'Saqlangan xabarlar'ga qo'yib saqlang. "
+            'Diqqat: matn ichida AI kalitingiz ham bor - uni boshqalarga '
+            'yubormang.';
+      });
     }
   }
 
@@ -567,12 +658,26 @@ class _BackupCardState extends State<_BackupCard> {
       context: context,
       builder: (c) => AlertDialog(
         title: const Text('Zaxiradan tiklash'),
-        content: TextField(
-          controller: ctrl,
-          maxLines: 6,
-          decoration: const InputDecoration(
-              hintText: 'Zaxira matnini shu yerga qo\'ying',
-              border: OutlineInputBorder()),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Backup.import avval hamma narsani o'chiradi, keyin yozadi.
+            const Text(
+                'Diqqat: hozirgi natijalaringiz o\'chib, o\'rniga zaxiradagilari '
+                'qo\'yiladi.',
+                style: TextStyle(
+                    fontWeight: FontWeight.w700, color: AppColors.danger)),
+            const SizedBox(height: 10),
+            TextField(
+              controller: ctrl,
+              maxLines: 6,
+              decoration: const InputDecoration(
+                  hintText: '\'Nusxalash\' bilan olingan matnning HAMMASINI '
+                      'shu yerga qo\'ying',
+                  border: OutlineInputBorder()),
+            ),
+          ],
         ),
         actions: [
           TextButton(onPressed: () => Navigator.pop(c, false), child: const Text('Bekor')),
@@ -583,7 +688,13 @@ class _BackupCardState extends State<_BackupCard> {
     if (ok != true) return;
     final done = await Backup.import(ctrl.text);
     if (!done) {
-      if (mounted) setState(() => _msg = 'Matn zaxira emas yoki buzilgan.');
+      if (mounted) {
+        setState(() {
+          _err = true;
+          _msg = 'Bu zaxira matni emas yoki to\'liq nusxalanmagan. '
+              '\'Nusxalash\' bilan olingan matnni to\'liq qo\'ying.';
+        });
+      }
       return;
     }
     // Yangi holatni yuklash.
@@ -591,7 +702,12 @@ class _BackupCardState extends State<_BackupCard> {
     await rewards.load();
     await mastery.load();
     await mistakes.load();
-    if (mounted) setState(() => _msg = 'Tiklandi! Hammasi joyida.');
+    if (mounted) {
+      setState(() {
+        _err = false;
+        _msg = 'Tiklandi! Natijalaringiz qaytdi.';
+      });
+    }
   }
 
   @override
@@ -612,9 +728,13 @@ class _BackupCardState extends State<_BackupCard> {
           ),
           const SizedBox(height: 6),
           Text(
-            'Hamma narsa shu brauzerda saqlanadi. Brauzer tozalansa yoki '
-            "boshqa qurilmaga o'tsangiz progress yo'qolmasin: nusxalab qo'ying.",
-            style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
+            "Natijalaringiz faqat shu brauzerda saqlanadi. Brauzer tozalansa "
+            "yoki boshqa telefonga o'tsangiz yo'qoladi.\n"
+            "1) 'Nusxalash' ni bosing - natijalaringiz matn bo'lib nusxalanadi.\n"
+            "2) Uni Telegram'dagi 'Saqlangan xabarlar'ga qo'yib saqlang.\n"
+            "3) Yangi joyda 'Tiklash' ni bosib, shu matnni qo'ying.",
+            style: TextStyle(
+                fontSize: 12.5, height: 1.45, color: AppColors.muted(context)),
           ),
           const SizedBox(height: 10),
           Wrap(
@@ -624,20 +744,22 @@ class _BackupCardState extends State<_BackupCard> {
               FilledButton.tonalIcon(
                 onPressed: _copy,
                 icon: const Icon(Icons.copy_rounded, size: 18),
-                label: const Text('Nusxalash'),
+                label: const Text('Nusxalash (zaxira)'),
               ),
               OutlinedButton.icon(
                 onPressed: _restore,
                 icon: const Icon(Icons.restore_rounded, size: 18),
-                label: const Text('Tiklash'),
+                label: const Text('Tiklash (zaxiradan)'),
               ),
             ],
           ),
           if (_msg.isNotEmpty) ...[
             const SizedBox(height: 8),
             Text(_msg,
-                style: const TextStyle(
-                    fontSize: 12.5, fontWeight: FontWeight.w700, color: AppColors.success)),
+                style: TextStyle(
+                    fontSize: 12.5,
+                    fontWeight: FontWeight.w700,
+                    color: _err ? AppColors.danger : AppColors.success)),
           ],
         ],
       ),
@@ -687,36 +809,50 @@ class _ApiKeyCardState extends State<_ApiKeyCard> {
               Icon(Icons.smart_toy_rounded),
               SizedBox(width: 12),
               Expanded(
-                child: Text('Mr. Vaysaqi - AI provayder va kalit',
+                child: Text('Mr. Vaysaqi uchun AI kaliti',
                     style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15)),
               ),
             ],
           ),
           const SizedBox(height: 6),
           Text(
-            'Bir nechta kalit kiriting - hammasi ishlatiladi: eng zo\'r model '
-            'birinchi (Claude, so\'ng Gemini 2.5 Flash, Llama 3.3 70B...), '
-            'limiti tugasa keyingisi o\'zi ulanadi. Gemini va Groq bepul kalit '
-            'beradi. Kalit faqat shu qurilmada saqlanadi; o\'chirish uchun '
-            'bo\'sh qoldirib saqlang.',
+            'Mr. Vaysaqi (AI o\'qituvchi) ishlashi uchun AI xizmatining '
+            '\'kaliti\' kerak - parol kabi maxfiy kod. Gemini va Groq '
+            'kalitlari bepul. Bir nechta kalit kiritsangiz, birining kunlik '
+            'limiti tugaganda o\'qituvchi o\'zi keyingisiga o\'tadi. Kalit '
+            'faqat shu qurilmada saqlanadi. O\'chirish: katakni bo\'sh '
+            'qoldirib \'Saqlash\' ni bosing.',
             style: TextStyle(fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
           ),
           const SizedBox(height: 10),
-          ProviderPicker(value: prov, onChanged: _pick),
-          const SizedBox(height: 8),
-          Text('Kalit: ${info.$2}',
-              style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
+          ProviderPicker(
+            value: prov,
+            onChanged: _pick,
+            caption: 'Qaysi AI xizmati kalitini kiritasiz? Boshlovchilarga '
+                'Gemini yetarli.',
+          ),
+          const SizedBox(height: 10),
+          Text(
+              'Kalit olish: 1) quyidagi saytni oching, 2) hisobingiz bilan '
+              'kiring, 3) \'Create API key\' ni bosing, 4) kodni nusxalab '
+              'pastdagi katakka qo\'ying.',
+              style: TextStyle(
+                  fontSize: 12.5, height: 1.4, color: AppColors.muted(context))),
           const SizedBox(height: 6),
+          KeySiteLink(domain: info.$2),
+          const SizedBox(height: 10),
           TextField(
             controller: _c,
             obscureText: _hide,
             onChanged: (_) => setState(() => _saved = false),
             decoration: InputDecoration(
               isDense: true,
+              labelText: 'Kalit (${AiTutorService.providerShort[prov] ?? prov})',
               hintText: info.$3,
               border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadius.md)),
               suffixIcon: IconButton(
+                tooltip: _hide ? 'Kodni ko\'rsatish' : 'Kodni yashirish',
                 onPressed: () => setState(() => _hide = !_hide),
                 icon: Icon(_hide ? Icons.visibility_rounded : Icons.visibility_off_rounded),
               ),

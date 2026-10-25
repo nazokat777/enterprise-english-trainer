@@ -60,7 +60,13 @@ void main() {
 
     await pump(t);
 
-    expect(find.text('1 ta mashq xato bilan tugatilgan'), findsOneWidget);
+    expect(find.textContaining('xato bilan tugagan mashqlar (1 ta)'),
+        findsOneWidget);
+    // Ro'yxat nima ekanini va nima qilishni aytadi.
+    expect(find.textContaining('Bu yerda:'), findsOneWidget);
+    // Kitob manzili "Kitobda: ..." va kitob nomi izohlangan.
+    expect(find.textContaining('Kitobda: '), findsWidgets);
+    expect(find.textContaining('Coursebook (asosiy darslik)'), findsWidgets);
   });
 
   testWidgets('xatosiz tugatilgan mashq ro\'yxatga tushmaydi', (t) async {
@@ -108,7 +114,8 @@ void main() {
     expect(app.progress.reviewUnits, {brief.unit});
 
     await pump(t);
-    expect(find.text('1 ta mashq xato bilan tugatilgan'), findsOneWidget);
+    expect(find.textContaining('xato bilan tugagan mashqlar (1 ta)'),
+        findsOneWidget);
   });
 
   test('xatosiz o\'tilgan unit ro\'yxatda qolmaydi', () async {

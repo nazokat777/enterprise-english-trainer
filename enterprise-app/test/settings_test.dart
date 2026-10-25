@@ -42,7 +42,7 @@ void main() {
     await pump(t);
     expect(app.progress.dailyGoal, 20);
 
-    await t.tap(find.text('50 XP'));
+    await t.tap(find.text('50 ball'));
     await t.pump();
 
     expect(app.progress.dailyGoal, 50);
@@ -51,7 +51,7 @@ void main() {
   testWidgets('muzlatgich tanga yetganda sotib olinadi', (t) async {
     await pump(t);
     // Tanga yo'q — tugma o'chirilgan bo'lishi kerak.
-    expect(find.textContaining('Tanga yetarli emas'), findsOneWidget);
+    expect(find.textContaining('Tanga yetmaydi'), findsOneWidget);
 
     await app.progress.addXp(Progress.freezeCost * 10);
     await t.pump();
@@ -73,7 +73,7 @@ void main() {
 
     await pump(t);
     final btn = find.widgetWithText(
-        OutlinedButton, 'Jarayonni o\'chirish');
+        OutlinedButton, 'Hammasini o\'chirish');
     // ListView bandlarni KERAK BO'LGANDA quradi — tugma hali
     // qurilmagan bo'lishi mumkin, avval pastga suramiz.
     await t.scrollUntilVisible(btn, 200,
@@ -81,7 +81,10 @@ void main() {
     await t.pumpAndSettle();
     await t.tap(btn);
     await t.pumpAndSettle();
-    await t.tap(find.text('O\'chirish'));
+    // Dialog nima o'chishini aniq sanaydi (kalit va suhbatlar ham).
+    expect(find.textContaining('AI kalitlari'), findsWidgets);
+    expect(find.text('Hamma natijalar o\'chirilsinmi?'), findsOneWidget);
+    await t.tap(find.text('Ha, hammasini o\'chirish'));
     await t.pumpAndSettle();
 
     expect(app.progress.xp, 0);
@@ -95,7 +98,7 @@ void main() {
 
     await pump(t);
     final btn = find.widgetWithText(
-        OutlinedButton, 'Jarayonni o\'chirish');
+        OutlinedButton, 'Hammasini o\'chirish');
     // ListView bandlarni KERAK BO'LGANDA quradi — tugma hali
     // qurilmagan bo'lishi mumkin, avval pastga suramiz.
     await t.scrollUntilVisible(btn, 200,
@@ -103,7 +106,7 @@ void main() {
     await t.pumpAndSettle();
     await t.tap(btn);
     await t.pumpAndSettle();
-    await t.tap(find.text('Bekor qilish'));
+    await t.tap(find.text('Yo\'q, qoldirish'));
     await t.pumpAndSettle();
 
     expect(app.progress.xp, 120);
@@ -115,8 +118,12 @@ void main() {
   // bo\'lardi va o\'quvchi sababini bilmasdi.
   testWidgets('talaffuz ovozi ko\'rsatiladi', (t) async {
     await pump(t);
-    expect(find.text('Talaffuz ovozi'), findsOneWidget);
-    expect(find.text('Sinab ko\'rish'), findsOneWidget);
+    // Sozlamalar guruhlarga bo'lingan: ovoz kartasi "Ko'rinish va ovoz"da.
+    await t.scrollUntilVisible(find.text('Inglizcha o\'qish ovozi'), 200,
+        scrollable: find.byType(Scrollable).first);
+    await t.pump();
+    expect(find.text('Inglizcha o\'qish ovozi'), findsOneWidget);
+    expect(find.text('Ovozni eshitib ko\'rish'), findsOneWidget);
   });
 
   testWidgets('inglizcha ovoz topilmasa ogohlantiradi', (t) async {
@@ -124,8 +131,11 @@ void main() {
     addTearDown(() => Tts.instance.englishVoiceFound.value = true);
 
     await pump(t);
+    await t.scrollUntilVisible(find.text('Inglizcha o\'qish ovozi'), 200,
+        scrollable: find.byType(Scrollable).first);
+    await t.pump();
 
-    expect(find.textContaining('inglizcha ovoz topilmadi'), findsOneWidget);
+    expect(find.textContaining('inglizcha ovoz yo\'q'), findsOneWidget);
   });
 
   // `Progress.skills` har XP olinganda yozilardi va diskka ham
@@ -146,10 +156,27 @@ void main() {
     expect(find.text('Tinglash'), findsOneWidget);
   });
 
+  testWidgets('sarlavha izohli, kartalar guruhlarga bo\'lingan, "XP" yo\'q',
+      (t) async {
+    await pump(t);
+    expect(find.text('Ilova sozlamalari va natijalaringiz shu yerda.'),
+        findsOneWidget);
+    expect(find.text('O\'QISH MAQSADI'), findsOneWidget);
+    // Birinchi ko'rinadigan kartalarda o'yin so'zi (XP) yo'q.
+    expect(find.textContaining('XP'), findsNothing);
+    expect(find.textContaining('Kuniga necha ball'), findsOneWidget);
+    // Xavfli amal alohida guruhda, pastda.
+    await t.scrollUntilVisible(find.text('XAVFLI JOY'), 200,
+        scrollable: find.byType(Scrollable).first);
+    await t.pump();
+    expect(find.text('XAVFLI JOY'), findsOneWidget);
+    expect(find.text('Hamma natijalarni o\'chirish'), findsOneWidget);
+  });
+
   testWidgets('kunlik maqsad variantlari modeldan olinadi', (t) async {
     await pump(t);
     for (final g in Progress.goalOptions) {
-      expect(find.text('$g XP'), findsOneWidget);
+      expect(find.text('$g ball'), findsOneWidget);
     }
   });
 }

@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/semantics.dart' show SemanticsBinding;
 import 'theme.dart';
 import 'stats.dart';
 import 'content.dart';
@@ -60,6 +62,10 @@ Future<void> main() async {
   mastery.setLevel(progress.currentLevel);
   mistakes.setLevel(progress.currentLevel);
   runApp(const EnterpriseApp());
+  // Veb ilova canvas'da chiziladi - sahifa matni DOM'da bo'lmasdi: ekran
+  // o'quvchi, Ctrl+F va brauzer tarjimasi ishlamasdi. Qulaylik (semantics)
+  // daraxtini doim yoqamiz: matn DOM'da paydo bo'ladi.
+  if (kIsWeb) SemanticsBinding.instance.ensureSemantics();
 }
 
 class EnterpriseApp extends StatelessWidget {

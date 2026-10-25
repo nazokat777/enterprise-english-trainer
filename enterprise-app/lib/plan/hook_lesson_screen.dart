@@ -60,10 +60,18 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
   final List<int> _order = [];
 
   static const _qualityLabels = [
-    'G\'alati / bo\'lishi mumkin emas',
+    'G\'alati (hayotda bo\'lmaydigan)',
     'Harakatli',
     'Katta, rangli',
     'Men o\'zim sahnada',
+  ];
+
+  /// Qadam nomlari: nechanchi qadam va hozir NIMA qilish kerak.
+  static const _stepTitles = [
+    '1-qadam / 4 · So\'zning ma\'nosini bilib oling',
+    '2-qadam / 4 · Ilgak (o\'xshash so\'z) toping',
+    '3-qadam / 4 · Sahna o\'ylang (ilgak + ma\'no)',
+    '4-qadam / 4 · Sahnani ko\'z oldingizga keltiring',
   ];
 
   LessonWord get _w => _words[_i];
@@ -180,8 +188,8 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_recall
-            ? 'Yopib eslash'
-            : 'Ilgak darsi · ${_i + 1}/${_words.length}'),
+            ? 'Qaramasdan eslash'
+            : 'Yangi so\'z · ${_i + 1}-so\'z / ${_words.length}'),
       ),
       body: _recall ? _recallView(context) : _learnView(context),
     );
@@ -195,6 +203,15 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 30),
       children: [
+        // Birinchi so'zda: bu ekran nima ekani (keyingi so'zlarda ortiqcha).
+        if (_i == 0) ...[
+          Text(
+            'Ilgak - so\'zni eslatadigan o\'xshash so\'z. Har so\'z uchun 4 qadam, '
+            'oxirida hammasini qaramasdan eslaysiz.',
+            style: TextStyle(fontSize: 12.5, height: 1.4, color: muted),
+          ),
+          const SizedBox(height: 10),
+        ],
         // Qadamlar chizig'i.
         Row(
           children: [
@@ -216,7 +233,7 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
         ),
         const SizedBox(height: 6),
         Text(
-          const ['1. Ma\'no', '2. Ilgak', '3. Obraz', '4. Tasavvur'][stepIndex],
+          _stepTitles[stepIndex],
           style: const TextStyle(
               fontWeight: FontWeight.w900,
               fontSize: 13,
@@ -246,6 +263,7 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
                       fontSize: 16)),
               const SizedBox(height: 8),
               IconButton.filledTonal(
+                tooltip: 'Qayta eshitish',
                 onPressed: () => Tts.instance.speak(w.en, id: w.itemId),
                 icon: const Icon(Icons.volume_up_rounded),
               ),
@@ -265,12 +283,12 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
               switch (_step) {
                 _Step.meaning => 'Tushundim - ilgak topamiz',
                 _Step.hook => 'Ilgak tayyor - sahna quramiz',
-                _Step.scene => 'Saqlash va tasavvur qilish',
+                _Step.scene => 'Saqlash va ko\'z oldimga keltirish',
                 _Step.imagine => _countdown > 0
-                    ? 'Ko\'zingizni yuming... $_countdown'
+                    ? 'Ko\'zingizni yuming... $_countdown soniya'
                     : (_i + 1 < _words.length
                         ? 'Keyingi so\'z'
-                        : 'Endi yopib eslaymiz'),
+                        : 'Endi hammasini qaramasdan eslaymiz'),
               },
               style: const TextStyle(
                   color: Colors.white,
@@ -279,6 +297,12 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
             ),
           ),
         ),
+        if (_step == _Step.imagine && _countdown > 0) ...[
+          const SizedBox(height: 6),
+          Text('Tugma $_countdown soniyadan keyin ochiladi.',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 12, color: muted)),
+        ],
       ],
     );
   }
@@ -288,6 +312,8 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
       case _Step.meaning:
         return [
           if (w.exampleEn.isNotEmpty) ...[
+            Text('Misol:', style: TextStyle(fontSize: 12, color: muted)),
+            const SizedBox(height: 2),
             Text(w.exampleEn,
                 style: const TextStyle(
                     fontSize: 15, fontWeight: FontWeight.w700)),
@@ -296,14 +322,15 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
             const SizedBox(height: 10),
           ],
           _Tip(
-            'So\'zni ovoz chiqarib 2 marta ayting. Ma\'nosini tasavvur qiling - '
-            'mavhum emas, KONKRET narsa sifatida.',
+            'So\'zni 2 marta ovoz chiqarib ayting va ma\'nosini ko\'z '
+            'oldingizga keltiring - aniq bir narsa sifatida.',
           ),
         ];
       case _Step.hook:
         return [
-          const Text('Tovushi o\'xshash o\'zbekcha so\'z',
-              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
+          Text('Ilgak: "${w.en}" so\'ziga tovushi o\'xshash o\'zbekcha so\'z',
+              style:
+                  const TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
           const SizedBox(height: 6),
           TextField(
             controller: _hook,
@@ -316,31 +343,35 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
           ),
           const SizedBox(height: 10),
           _Tip(
-            '"${w.en}" - qaysi o\'zbekcha so\'zga o\'xshab eshitiladi? Mukammal '
-            'qofiya shart emas, BIRINChI BO\'G\'IN yetadi. Ilova taklif qildi - '
-            'o\'zingiz yaxshiroq topsangiz, almashtiring: o\'zingiz topgani '
-            'yaxshiroq yodda qoladi.',
+            '"${w.en}" qaysi o\'zbekcha so\'zga o\'xshab eshitiladi? To\'liq '
+            'o\'xshash bo\'lishi shart emas - boshlanishi o\'xshash bo\'lsa '
+            'yetadi (masalan, book - buqa). Ilova taklifini yozib qo\'ydi; '
+            'o\'zingiz topgan yaxshiroq yodda qoladi. Taklif chiqmasa, '
+            'o\'zingiz yozing.',
           ),
         ];
       case _Step.scene:
         final h = _hook.text.trim().isEmpty ? '...' : _hook.text.trim();
         return [
-          Text('Sahna: "$h" + "${w.uz}" bir kadrda',
+          Text('Sahna: "$h" va "${w.uz}" bitta rasmda - u nima qilyapti?',
               style:
                   const TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
+          const SizedBox(height: 2),
+          Text('Qisqa yozing, masalan: ulkan buqa kitob o\'qiyapti.',
+              style: TextStyle(fontSize: 12.5, color: muted)),
           const SizedBox(height: 6),
           TextField(
             controller: _scene,
             maxLines: 3,
             decoration: InputDecoration(
-              hintText: sceneTemplate(h, w.uz),
+              hintText: sceneTemplate(_hook.text.trim(), w.uz),
               filled: true,
               border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadius.md)),
             ),
           ),
           const SizedBox(height: 10),
-          Text('Sahnangiz kuchlimi? Belgilang:',
+          Text('Sahnangizni tekshiring - nechtasi mos?',
               style: TextStyle(fontSize: 12.5, color: muted)),
           const SizedBox(height: 4),
           Wrap(
@@ -359,7 +390,7 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
           ),
           if (_qualities.length < 2) ...[
             const SizedBox(height: 8),
-            _Tip('Kamida 2 ta belgi bo\'lsin - miya zerikarli kadrni saqlamaydi.'),
+            _Tip('Kamida 2 tasi mos bo\'lsa, sahna yodda yaxshi qoladi.'),
           ],
         ];
       case _Step.imagine:
@@ -385,8 +416,8 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Ko\'zingizni yuming va sahnani RANGLI, HARAKATDA ko\'ring. '
-                  'Ichida "${w.en}" deb ovoz chiqarib ayting.',
+                  '5 soniya ko\'zingizni yuming va sahnani rangli, harakatda '
+                  'ko\'rishga harakat qiling. Ichingizda "${w.en}" deb ayting.',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 12.5, color: muted),
                 ),
@@ -410,14 +441,14 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 44, fontWeight: FontWeight.w900),
           ),
-          Text('so\'z yopib eslandi',
+          Text('so\'z qaramasdan to\'g\'ri eslandi',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 15, color: muted)),
           const SizedBox(height: 14),
           _Tip(
-            'Ilgaklaringiz saqlandi. Bu so\'zlar 1, 3, 7, 14, 30 kundan keyin '
-            'qaytadi - xato qilsangiz sahnangiz eslatiladi. Endi mustahkamlash '
-            'darsida 4 xil shaklda mashq qilamiz.',
+            'Ilgaklaringiz saqlandi. Bu so\'zlar 1, 3, 7, 14 va 30 kundan '
+            'keyin yana so\'raladi; xato qilsangiz sahnangiz eslatiladi. '
+            'Keyingi qadam: shu so\'zlar bo\'yicha qisqa mashq darsi.',
           ),
           const SizedBox(height: 18),
           Pressable3D(
@@ -428,7 +459,7 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
               widget.onFinished?.call();
             },
             child: const Center(
-              child: Text('Mustahkamlash darsiga o\'tish',
+              child: Text('Mashq darsiga o\'tish',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w800,
@@ -443,6 +474,16 @@ class _HookLessonScreenState extends State<HookLessonScreen> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 30),
       children: [
+        Text(
+          'Endi hozir o\'rgangan so\'zlarni tekshiramiz: o\'zbekchasi '
+          'ko\'rinadi, inglizchasini yozing.',
+          style: TextStyle(fontSize: 12.5, height: 1.4, color: muted),
+        ),
+        const SizedBox(height: 10),
+        Text('${_r + 1} / ${_order.length}',
+            style: TextStyle(
+                fontSize: 12, fontWeight: FontWeight.w800, color: muted)),
+        const SizedBox(height: 4),
         LinearProgressIndicator(
           value: _r / _order.length,
           minHeight: 6,

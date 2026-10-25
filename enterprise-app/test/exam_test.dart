@@ -120,19 +120,26 @@ void main() {
     expect(highestCompletedUnit(), 0);
     app.rewards.unitsCompleted.add(2);
     expect(highestCompletedUnit(), 2);
-    t.view.physicalSize = const Size(500, 1400);
+    // Imtihon kartasi "Qo'shimcha" bo'limida — unitlar ro'yxatidan KEYIN
+    // turadi, shuning uchun ekran baland qilinadi (ListView sust quriladi).
+    t.view.physicalSize = const Size(500, 9000);
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
     await t.pumpWidget(
         const MaterialApp(home: Scaffold(body: BookUnitsScreen())));
     await t.pump();
     await t.pump(const Duration(seconds: 1));
-    expect(find.text('Imtihon · 1-2 unitlar'), findsOneWidget);
+    expect(find.text('Yig\'ma imtihon · 1-2 unitlar'), findsOneWidget);
+    // Kitob daraja bilan birga ko'rsatiladi.
+    expect(find.text('Beginner · Enterprise 1'), findsWidgets);
+    expect(find.textContaining('90% va undan yuqori - o\'tdingiz'),
+        findsWidgets);
   });
 
   testWidgets('ExamScreen: hammasi to\'g\'ri -> 100%, yutuq, saqlanadi',
       (t) async {
-    t.view.physicalSize = const Size(500, 1000);
+    // Test shriftida matn keng - kirish ekrani uzun, "Boshlash" ko'rinsin.
+    t.view.physicalSize = const Size(500, 2400);
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
     await t.pumpWidget(const MaterialApp(home: ExamScreen(uptoUnit: 1)));
@@ -172,7 +179,7 @@ void main() {
 
   testWidgets('ExamScreen: xato band qaytadi va zaif ro\'yxatga tushadi',
       (t) async {
-    t.view.physicalSize = const Size(500, 1000);
+    t.view.physicalSize = const Size(500, 2400);
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
     await t.pumpWidget(const MaterialApp(home: ExamScreen(uptoUnit: 1)));
@@ -209,9 +216,12 @@ void main() {
     // Birinchi band xato -> oxirida yana so'raldi -> jami +1.
     final plan = await ExamBuilder(book: app.book, mastery: app.mastery).build(1);
     expect(answered, plan.items.length + 1);
-    expect(find.text('Hali mustahkam emas'), findsNothing,
+    expect(find.textContaining('Hali o\'tmadingiz'), findsNothing,
         reason: 'bitta xato 90% dan tushirmaydi');
-    expect(find.textContaining('1 ta band qayta so\'raldi'), findsOneWidget);
+    expect(find.textContaining('1 ta savolda xato qildingiz'), findsOneWidget);
+    expect(find.text('Xato qilgan savollaringiz (1)'), findsOneWidget);
+    expect(find.text('Xato savollarni qayta ishlash'), findsOneWidget);
+    expect(find.text('Tugatish va qaytish'), findsOneWidget);
     final saved = await ExamStore.load('beginner', 1);
     expect(saved!.weakIds, [firstId]);
     expect(saved.score, lessThan(100));

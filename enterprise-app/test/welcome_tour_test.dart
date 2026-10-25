@@ -5,11 +5,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:enterprise_english/theme.dart';
 import 'package:enterprise_english/widgets/welcome_tour.dart';
 
-/// Xush kelibsiz turi: 3 sahifa, bir marta, o'tkazib yuborish mumkin.
+/// Xush kelibsiz turi: 4 sahifa, bir marta, o'tkazib yuborish mumkin.
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('3 sahifa, Keyingisi -> Boshlash, tugagach belgilanadi',
+  testWidgets('4 sahifa, Keyingisi -> Boshlash, tugagach belgilanadi',
       (t) async {
     SharedPreferences.setMockInitialValues({});
     expect(await WelcomeTour.isDone(), isFalse);
@@ -27,8 +27,13 @@ void main() {
     final fut = WelcomeTour.showIfNeeded(ctx);
     await t.pump();
     await t.pump(const Duration(milliseconds: 400));
-    expect(find.textContaining('Enterprise kitobi'), findsOneWidget);
+    expect(find.textContaining("Ingliz tilini 0 dan"), findsOneWidget);
     expect(find.text('Keyingisi'), findsOneWidget);
+    await t.tap(find.text('Keyingisi'));
+    await t.pump();
+    await t.pump(const Duration(milliseconds: 400));
+    await t.pump(const Duration(milliseconds: 100));
+    expect(find.textContaining('Har unit shunday'), findsOneWidget);
     await t.tap(find.text('Keyingisi'));
     await t.pump();
     await t.pump(const Duration(milliseconds: 400));

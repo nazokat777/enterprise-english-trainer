@@ -15,7 +15,8 @@ class UnitScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(unit.code)),
+      // "Unit 1" ingliz kodi o'rniga o'zbekcha nom: "1-unit - Hi!".
+      appBar: AppBar(title: Text(unit.title)),
       body: AnimatedBuilder(
         animation: progress,
         builder: (context, _) {
@@ -25,10 +26,22 @@ class UnitScreen extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
             children: [
               EntranceFade(
-                child: Text(unit.title, style: AppTheme.body(context)),
+                child: Text(
+                  "Bu unitning so'zlari. Yuqoridan pastga: to'plamlarni "
+                  "tugating, so'ng unit testini topshiring.",
+                  style: TextStyle(
+                    fontSize: 13.5,
+                    height: 1.4,
+                    color: AppColors.muted(context),
+                  ),
+                ),
               ),
               const SizedBox(height: 20),
-              _sectionTitle(context, '📖 Vocabulary', 'So\'zlarni pack bo\'yicha o\'rganing'),
+              _sectionTitle(
+                context,
+                "📖 So'zlar",
+                "To'plamni oching: avval so'zlarni ko'rasiz, keyin sinaysiz",
+              ),
               const SizedBox(height: 12),
               for (var i = 0; i < packs.length; i++)
                 EntranceFade(
@@ -52,8 +65,9 @@ class UnitScreen extends StatelessWidget {
               const SizedBox(height: 24),
               _sectionTitle(
                 context,
-                '📝 Homework',
-                'Unit bo\'yicha test — o\'tish uchun 80%',
+                '📝 Unit testi',
+                "Shu unitning barcha so'zlaridan test. O'tish uchun 80% "
+                    "to'g'ri javob kerak.",
               ),
               const SizedBox(height: 12),
               EntranceFade(
@@ -169,10 +183,13 @@ class _PackCard extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(pack.name,
+                        // "Pack 12" ingliz so'zi o'rniga "12-to'plam".
+                        Text(packTitleUz(pack.name),
                             style: const TextStyle(
                                 fontWeight: FontWeight.w800, fontSize: 15)),
-                        Text('${words.length} so\'z',
+                        Text(
+                            "${words.length} ta so'z · "
+                            "${done ? "tugatilgan, qayta takrorlash mumkin" : "boshlash uchun bosing"}",
                             style: TextStyle(
                                 fontSize: 12,
                                 color: dark
@@ -181,8 +198,12 @@ class _PackCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Icon(done ? Icons.replay_rounded : Icons.play_arrow_rounded,
-                      color: AppColors.brandPurple),
+                  Tooltip(
+                    message: done ? 'Qayta takrorlash' : 'Boshlash',
+                    child: Icon(
+                        done ? Icons.replay_rounded : Icons.play_arrow_rounded,
+                        color: AppColors.brandPurple),
+                  ),
                 ],
               ),
             ),
@@ -219,9 +240,9 @@ class _HomeworkCard extends StatelessWidget {
             ? const Color(0xFF0F7A37)
             : const Color(0xFFB8410C);
     final label = empty
-        ? 'So\'zlar yo\'q'
+        ? "Bu unitda so'z yo'q"
         : done
-            ? 'Qayta topshirish'
+            ? 'Testni qayta topshirish'
             : 'Testni boshlash';
 
     return Pressable3D(
@@ -243,12 +264,15 @@ class _HomeworkCard extends StatelessWidget {
             color: Colors.white,
           ),
           const SizedBox(width: 10),
-          Text(
-            label,
-            style: const TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.w800,
-              fontSize: 16,
+          Flexible(
+            child: Text(
+              label,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w800,
+                fontSize: 16,
+              ),
             ),
           ),
           if (!empty) ...[
@@ -260,7 +284,7 @@ class _HomeworkCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(AppRadius.pill),
               ),
               child: Text(
-                '${unitWords.length} so\'z',
+                "${unitWords.length} ta so'z",
                 style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w700,

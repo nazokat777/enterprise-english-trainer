@@ -40,6 +40,7 @@ class _WeakTopicsSectionState extends State<WeakTopicsSection> {
         builder: (_) => DrillScreen(
           title: t.topic,
           lessonSources: src,
+          progressLabel: "Shu mavzuning qiyin savollari bo'yicha yodlanganlik",
         ),
       ),
     );
@@ -60,11 +61,11 @@ class _WeakTopicsSectionState extends State<WeakTopicsSection> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Zaif mavzular', style: AppTheme.heading(context)),
+        Text('Qiyin mavzular', style: AppTheme.heading(context)),
         const SizedBox(height: 2),
         Text(
-          'Eng ko\'p qiynalayotgan joylaringiz. Bosing — aynan shu '
-          'mavzu ustida mashq boshlanadi.',
+          "Bu mavzularda ko'proq mashq kerak. Mavzuni bosing - shu "
+          "mavzuning qiyin savollari beriladi.",
           style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
         ),
         const SizedBox(height: 12),
@@ -108,11 +109,15 @@ class _TopicCard extends StatelessWidget {
                           style: const TextStyle(
                               fontWeight: FontWeight.w800, fontSize: 14)),
                     ),
-                    Text('$pct%',
+                    Text('$pct% yodlangan',
                         style: TextStyle(
                             fontWeight: FontWeight.w800,
                             fontSize: 13,
                             color: color)),
+                    const SizedBox(width: 4),
+                    // Kartani bosish mumkinligini ko'rsatadi.
+                    Icon(Icons.chevron_right_rounded,
+                        size: 20, color: AppColors.muted(context)),
                   ],
                 ),
                 const SizedBox(height: 6),
@@ -126,7 +131,7 @@ class _TopicCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 6),
-                Text('${topic.left} ta savol qoldi',
+                Text('yana ${topic.left} ta savol qoldi',
                     style: TextStyle(
                         fontSize: 12, color: AppColors.muted(context))),
               ],

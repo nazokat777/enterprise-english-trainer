@@ -42,7 +42,8 @@ void main() {
     expect(c.options.length, 2);
     expect(c.options.first, startsWith('Susie is going'));
     expect(c.answer, 'Susie goes cycling in her free time.');
-    expect(c.stem, '1');
+    // Faqat qator raqamidan iborat bosh ("1") ekranda ko'rsatilmaydi.
+    expect(c.stem, '');
     expect(c.question, contains('To\'g\'ri gapni belgilang'));
   });
 
@@ -62,8 +63,10 @@ void main() {
       task(prompt: 'artist', options: ['a', 'an'], answer: 'an'),
       kind: ExKind.choice,
     );
-    expect(c.question, 'Qaysi artikl to\'g\'ri?');
+    expect(c.question, 'Qaysi so\'z to\'g\'ri: a / an?');
     expect(c.hint, contains('an'));
+    // "artikl" atamasi izohlanadi - o'zbek tilida artikl yo'q.
+    expect(c.hint, contains('artikl (ot oldidan'));
     expect(c.options, ['a', 'an']);
   });
 
@@ -77,12 +80,119 @@ void main() {
         clarify(task(prompt: 'mushuk', answer: 'cat', typed: true),
                 kind: ExKind.text)
             .question,
-        'Javobni yozing');
+        'Javobni klaviaturada yozing');
     expect(
         clarify(task(prompt: 'Men talabaman', answer: 'I am a student'),
                 kind: ExKind.text)
             .question,
-        'So\'zlardan gap tuzing');
+        'Pastdagi so\'zlarni bosib gap tuzing');
+    expect(
+        clarify(task(prompt: 'mushuk', answer: 'cat'), kind: ExKind.text)
+            .question,
+        'Harflarni bosib so\'zni yig\'ing');
+  });
+
+  test('kitobga tayangan ko\'rsatmada maslahat bor', () {
+    final c = clarify(
+      task(prompt: 'Look.', options: ['mushuk', 'it'], answer: 'it'),
+      kind: ExKind.choice,
+      instructionUz: 'Rasmlarga qarang. Tinglang va belgilang.',
+    );
+    // Birinchi jumla qisqa - ikkinchisi ham olinadi.
+    expect(c.question, 'Rasmlarga qarang. Tinglang va belgilang.');
+    expect(c.hint, contains('Kitobingiz bo\'lmasa'));
+
+    // Kitobga tayanmasa - maslahat yo'q.
+    final plain = clarify(
+      task(prompt: 'cat', options: ['mushuk', 'it'], answer: 'mushuk'),
+      kind: ExKind.choice,
+      instructionUz: 'Ma\'nosini tanlang.',
+    );
+    expect(plain.hint, isEmpty);
+  });
+
+  test('qator raqami va nuqtalar ekran uchun tozalanadi', () {
+    expect(cleanPrompt('1  She had three older sisters.'),
+        'She had three older sisters.');
+    expect(cleanPrompt('3 B: Yes, ____ do.'), 'B: Yes, ____ do.');
+    expect(cleanPrompt('she ............ as a nanny'),
+        'she _____ as a nanny');
+    // Bitta bo'shliqli raqam (haqiqiy son) o'zgarmaydi.
+    expect(cleanPrompt('3 books'), '3 books');
+  });
+
+  test('kitob manzili kitobsiz odamga ham tushunarli', () {
+    expect(
+        friendlyRef('3-unit · Enterprise 1 · Coursebook · 7-bet · Ex. 5'),
+        '3-unit (bob) · Enterprise 1 · Coursebook (asosiy darslik) · 7-bet · '
+        '5-mashq');
+    expect(friendlyRef('Enterprise 2 · Workbook · 9-bet · Ex. muqova'),
+        'Enterprise 2 · Workbook (mashq daftari) · 9-bet · Muqova');
+    expect(friendlyRef('Enterprise 1 · Grammar · 12-bet'),
+        'Enterprise 1 · Grammar (grammatika kitobi) · 12-bet');
+    expect(friendlyRef('Grammar 2, 10-bet'),
+        'Grammar 2 (grammatika kitobi), 10-bet');
+    expect(friendlyRef('Grammar Book, 34-bet, nazariya'),
+        'Grammar Book (grammatika kitobi), 34-bet, nazariya');
+    // Ikki marta izohlanmaydi.
+    for (final s in const [
+      '1-unit · Enterprise 1 · Coursebook · 7-bet',
+      'Enterprise 1 · Grammar · 12-bet',
+      'Grammar Book, 34-bet, nazariya',
+      'Grammar 2, 10-bet',
+      'Enterprise 2 · Workbook · 9-bet · Ex. muqova',
+    ]) {
+      final once = friendlyRef(s);
+      expect(friendlyRef(once), once, reason: s);
+    }
+  });
+
+  test('ichki yorliqlar ("12-thereis", "Pf-u3-burjlar") ekranga chiqmaydi', () {
+    // Raqamli ref - "N-mashq".
+    expect(exerciseRefUz('5'), '5-mashq');
+    expect(exerciseRefUz('2a'), '2a-mashq');
+    expect(exerciseRefUz('5a-mashq'), '5a-mashq');
+    // Raqam + ichki yorliq - faqat raqam.
+    expect(exerciseRefUz('12-thereis'), '12-mashq');
+    expect(exerciseRefUz('5-davomi'), '5-mashq');
+    expect(exerciseRefUz('7a-qolgan'), '7a-mashq');
+    // Bir mashqning qismlari va oraliq.
+    expect(exerciseRefUz('3-A'), '3-mashq (A)');
+    expect(exerciseRefUz('3-4'), '3-4-mashqlar');
+    expect(exerciseRefUz('5 (2)'), '5-mashq (2)');
+    // Oddiy so'zlar o'zi qoladi.
+    expect(exerciseRefUz('muqova'), 'Muqova');
+    expect(exerciseRefUz('Nazariya-2'), 'Nazariya 2');
+    expect(exerciseRefUz('Past-simple-shakl'), 'Past simple shakl');
+    // Tushunarsiz ichki yorliqlar - umumiy "Mashq".
+    expect(exerciseRefUz('Pf-u3-burjlar'), 'Mashq');
+    expect(exerciseRefUz('Qoida-pp-ps'), 'Mashq');
+    expect(exerciseRefUz('Modul1a'), 'Mashq');
+    expect(exerciseRefUz('Wl-3'), 'Mashq');
+    expect(exerciseRefUz('Wl-Story-3---Episode-1'), 'Mashq');
+    expect(exerciseRefUz(''), 'Mashq');
+  });
+
+  test('bet yorlig\'idagi kitob nomi ikki marta izohlanmaydi', () {
+    const s = 'Kirish qismi · Enterprise 1 · Coursebook · '
+        'Coursebook - old muqova · Ex. muqova';
+    final once = friendlyRef(s);
+    expect(once,
+        'Kirish qismi · Enterprise 1 · Coursebook (asosiy darslik) · '
+        'Coursebook - old muqova · Muqova');
+    expect(friendlyRef(once), once);
+  });
+
+  test('sun\'iy (quiz) mashqda kitob manzili yo\'q', () {
+    final ex = BookExercise(
+        ref: '1', kind: ExKind.text, tasks: const [], book: 'quiz',
+        pageLabel: 'xatolar');
+    expect(exerciseSource(ex, '3-unit'), '');
+    final real = BookExercise(
+        ref: '5', kind: ExKind.text, tasks: const [], book: 'coursebook',
+        bookPage: 7);
+    expect(exerciseSource(real, '3-unit'), contains('Coursebook (asosiy darslik)'));
+    expect(exerciseSource(real, '3-unit'), endsWith('5-mashq'));
   });
 
   test('uzun ko\'rsatma qisqartiriladi', () {

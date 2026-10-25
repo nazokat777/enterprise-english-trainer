@@ -10,7 +10,8 @@ import 'ai_tutor_screen.dart';
 
 /// MR. VAYSAQI — SOZLASh EKRANI.
 ///
-/// "O'qituvchingiz qanchalik qattiqqo'l bo'lsin?" — slayder bilan yuz
+/// Boshida bu nima ekani (AI o'qituvchi) va nima qilish kerakligi yozilgan.
+/// "Mr. Vaysaqi qanchalik qattiqqo'l bo'lsin?" — slayder bilan yuz
 /// jonli o'zgaradi (qosh, og'iz, fon rangi). Tanlov o'quvchiniki:
 /// jahldor ustoz kimnidir uyg'otadi, do'stona ustoz kimnidir
 /// tinchlantiradi. Ovoz rejimi, 18+ ochiq rejim, izoh tili shu yerda.
@@ -60,49 +61,74 @@ class _TutorSetupScreenState extends State<TutorSetupScreen> {
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
                 children: [
+                  // "Orqaga" faqat alohida sahifa sifatida ochilganda bor;
+                  // yon paneldan ochilganda qaytadigan sahifa yo'q va tugma
+                  // hech narsa qilmasdi.
                   Row(
                     children: [
-                      _Pill(
-                        onTap: () => Navigator.maybePop(context),
-                        child: const Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(
-                              Icons.arrow_back_rounded,
-                              size: 18,
-                              color: Colors.white,
-                            ),
-                            SizedBox(width: 4),
-                            Text(
-                              'Orqaga',
-                              style: TextStyle(
+                      if (Navigator.canPop(context))
+                        _Pill(
+                          onTap: () => Navigator.maybePop(context),
+                          child: const Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                Icons.arrow_back_rounded,
+                                size: 18,
                                 color: Colors.white,
-                                fontWeight: FontWeight.w800,
                               ),
-                            ),
-                          ],
+                              SizedBox(width: 4),
+                              Text(
+                                'Orqaga',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
                       const Spacer(),
                       if (p.openMode)
-                        const Padding(
-                          padding: EdgeInsets.only(right: 8),
-                          child: _Pill(
-                            child: Text(
-                              '18+',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w900,
-                              ),
+                        const _Pill(
+                          child: Text(
+                            '18+ rejim yoqilgan',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w900,
                             ),
                           ),
                         ),
-                      _LangToggle(value: p.noteLang, onChanged: p.setNoteLang),
                     ],
+                  ),
+                  const SizedBox(height: 10),
+                  // Bu ekran nima ekani - kitobsiz, o'yin so'zisiz.
+                  const Text(
+                    'Mr. Vaysaqi - sun\'iy intellekt (AI) asosidagi ingliz tili '
+                    'o\'qituvchisi. Siz u bilan inglizcha yozib yoki gapirib '
+                    'suhbatlashasiz; u xatoingizni to\'g\'irlab, o\'zbekcha '
+                    'tushuntiradi.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      height: 1.4,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    '1) Uslubini tanlang.  2) Pastdagi tugmani bosing - '
+                    'suhbat boshlanadi.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white.withValues(alpha: 0.9),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                   const SizedBox(height: 18),
                   const Text(
-                    'O\'qituvchingiz qanchalik\nqattiqqo\'l bo\'lsin?',
+                    'Mr. Vaysaqi qanchalik\nqattiqqo\'l bo\'lsin?',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
@@ -115,7 +141,7 @@ class _TutorSetupScreenState extends State<TutorSetupScreen> {
                   Center(
                     child: TutorFace(
                       mood: p.strictness.toDouble(),
-                      size: min(300, MediaQuery.of(context).size.width - 80),
+                      size: min(240, MediaQuery.of(context).size.width - 80),
                     ),
                   ),
                   const SizedBox(height: 14),
@@ -133,23 +159,47 @@ class _TutorSetupScreenState extends State<TutorSetupScreen> {
                       height: 1.45,
                     ),
                   ),
+                  const SizedBox(height: 6),
+                  _Note(
+                    'Chapga - qattiqroq, o\'ngga - do\'stonaroq. Xatoni hamma '
+                    'uslubda to\'g\'ri tuzatadi: farq faqat gapirish ohangida.',
+                  ),
                   const SizedBox(height: 22),
+                  const _SectionLabel('Mr. Vaysaqi bilan qanday gaplashasiz?'),
+                  const SizedBox(height: 8),
                   _VoiceModeSwitch(
                     value: p.voiceMode,
                     onChanged: p.setVoiceMode,
                   ),
                   const SizedBox(height: 6),
-                  Text(
+                  _Note(
                     !Speech.supported
-                        ? 'Bu brauzerda mikrofon orqali nutq tanish yo\'q — yozib suhbatlashasiz (Chrome/Edge/Safari da ovoz ishlaydi).'
+                        ? 'Bu brauzer ovozingizni tanimaydi, shuning uchun '
+                              'faqat yozib suhbatlashasiz. Gapirish uchun '
+                              'Chrome, Edge yoki Safari\'dan foydalaning.'
                         : p.voiceMode == 'free'
-                        ? 'U doimo tinglab turadi.'
-                        : 'Mikrofon tugmasini bosib turib gapiring.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white.withValues(alpha: 0.9),
-                      fontSize: 12.5,
+                        ? 'Mikrofonni bir marta bosasiz, keyin u o\'zi yonadi: '
+                              'siz gapirasiz, u javob beradi, yana sizni '
+                              'tinglaydi. Yozib ham bo\'ladi.'
+                        : 'Gapirish uchun mikrofon tugmasini bosib turing, '
+                              'gapirib bo\'lgach qo\'yib yuboring. Yozib ham '
+                              'bo\'ladi.',
+                  ),
+                  const SizedBox(height: 18),
+                  const _SectionLabel('Xatoni qaysi tilda tushuntirsin?'),
+                  const SizedBox(height: 8),
+                  Center(
+                    child: _LangToggle(
+                      value: p.noteLang,
+                      onChanged: p.setNoteLang,
                     ),
+                  ),
+                  const SizedBox(height: 6),
+                  _Note(
+                    p.noteLang == 'en'
+                        ? 'Mr. Vaysaqi xato izohini inglizcha yozadi.'
+                        : 'Mr. Vaysaqi xato izohini o\'zbekcha yozadi. '
+                              'Suhbatning o\'zi doim inglizcha.',
                   ),
                   const SizedBox(height: 16),
                   Center(
@@ -158,11 +208,13 @@ class _TutorSetupScreenState extends State<TutorSetupScreen> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          const Text(
-                            '18+ Ochiq rejim',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w800,
+                          const Flexible(
+                            child: Text(
+                              'Ochiq rejim (18+)',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w800,
+                              ),
                             ),
                           ),
                           const SizedBox(width: 8),
@@ -176,31 +228,28 @@ class _TutorSetupScreenState extends State<TutorSetupScreen> {
                       ),
                     ),
                   ),
-                  if (p.openMode)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 4),
-                      child: Text(
-                        'Qo\'pol hazil va so\'kinishga ruxsat. Haqorat, kamsitish yo\'q.',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white.withValues(alpha: 0.9),
-                          fontSize: 12,
-                        ),
-                      ),
-                    ),
+                  const SizedBox(height: 4),
+                  _Note(
+                    p.openMode
+                        ? 'Yoqilgan: o\'qituvchi do\'stlardek qo\'pol hazil va '
+                              'yengil so\'kinishlar ishlatishi mumkin. Haqorat '
+                              'va kamsitish yo\'q. Faqat 18 yoshdan kattalar '
+                              'uchun.'
+                        : 'Hozir o\'chiq: o\'qituvchi toza tilda gapiradi.',
+                  ),
                   const SizedBox(height: 22),
                   _StartButton(
                     color: bg,
                     label: hasKey
                         ? 'Gaplashishni boshlash'
-                        : 'API kalitini kiritish',
+                        : 'Davom etish - bepul AI kalitini kiritish',
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (_) => Scaffold(
                           appBar: AppBar(
                             title: Text(
-                              'Mr. Vaysaqi · ${p.strictLabel}${p.openMode ? ' · 18+' : ''}',
+                              'Mr. Vaysaqi · uslub: ${p.strictLabel}${p.openMode ? ' · 18+ rejim' : ''}',
                               style: const TextStyle(fontSize: 16),
                             ),
                           ),
@@ -212,13 +261,10 @@ class _TutorSetupScreenState extends State<TutorSetupScreen> {
                   if (!hasKey)
                     Padding(
                       padding: const EdgeInsets.only(top: 8),
-                      child: Text(
-                        'Provayder: ${AiTutorService.providers[progress.aiProvider]!.$1}',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white.withValues(alpha: 0.9),
-                          fontSize: 12,
-                        ),
+                      child: _Note(
+                        'Mr. Vaysaqi ishlashi uchun bepul \'AI kaliti\' kerak '
+                        '(taxminan 2 daqiqa). Keyingi sahifada qadamma-qadam '
+                        'ko\'rsatamiz.',
                       ),
                     ),
                 ],
@@ -587,19 +633,56 @@ class _LangToggle extends StatelessWidget {
       );
     }
 
-    return Container(
-      padding: const EdgeInsets.all(3),
-      decoration: BoxDecoration(
-        color: Colors.black.withValues(alpha: 0.18),
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        // Bayroq emojilari Windows/eski qurilmalarda chizilmaydi - matn.
-        children: [seg('uz', '', 'UZ'), seg('en', '', 'EN')],
+    return Tooltip(
+      message: 'Mr. Vaysaqi xato izohini shu tilda yozadi',
+      child: Container(
+        padding: const EdgeInsets.all(3),
+        decoration: BoxDecoration(
+          color: Colors.black.withValues(alpha: 0.18),
+          borderRadius: BorderRadius.circular(999),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          // Bayroq emojilari Windows/eski qurilmalarda chizilmaydi - matn.
+          children: [seg('uz', '', 'O\'zbekcha'), seg('en', '', 'English')],
+        ),
       ),
     );
   }
+}
+
+/// Bo'lim sarlavhasi (oq, qalin) - quyidagi tanlov nima ekani.
+class _SectionLabel extends StatelessWidget {
+  final String text;
+  const _SectionLabel(this.text);
+
+  @override
+  Widget build(BuildContext context) => Text(
+    text,
+    textAlign: TextAlign.center,
+    style: const TextStyle(
+      color: Colors.white,
+      fontSize: 15,
+      fontWeight: FontWeight.w900,
+    ),
+  );
+}
+
+/// Qisqa izoh qatori (oq, biroz xira).
+class _Note extends StatelessWidget {
+  final String text;
+  const _Note(this.text);
+
+  @override
+  Widget build(BuildContext context) => Text(
+    text,
+    textAlign: TextAlign.center,
+    style: TextStyle(
+      color: Colors.white.withValues(alpha: 0.92),
+      fontSize: 12.5,
+      height: 1.4,
+    ),
+  );
 }
 
 class _Pill extends StatelessWidget {
@@ -646,6 +729,7 @@ class _StartButton extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 34, vertical: 18),
           child: Text(
             label,
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: Color.lerp(color, Colors.black, 0.35),
               fontWeight: FontWeight.w900,

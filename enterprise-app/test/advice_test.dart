@@ -10,10 +10,10 @@ void main() {
         '🛟');
     expect(
         HomeAdvice.compute(fading: 2, examUnit: 2, examPassed: false, nextLesson: 'x', goalMet: false).text,
-        '1-2 unitlar imtihoni tayyor');
+        '1-2 unitlar (boblar) bo\'yicha imtihon topshirishingiz mumkin');
     expect(
         HomeAdvice.compute(fading: 0, examUnit: 2, examPassed: true, nextLesson: '2-unit, 3-dars', goalMet: false).text,
-        'Keyingi: 2-unit, 3-dars');
+        'Keyingi dars: 2-unit, 3-dars');
     expect(
         HomeAdvice.compute(fading: 0, examUnit: 0, examPassed: false, nextLesson: null, goalMet: true).emoji,
         '⚡');

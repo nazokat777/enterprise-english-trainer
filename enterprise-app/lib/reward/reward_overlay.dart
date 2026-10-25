@@ -92,7 +92,7 @@ class _RewardOverlayState extends State<RewardOverlay>
         setState(() {});
       case RewardKind.nearMiss:
         sfx.tick();
-        _float('Deyarli! 1 harf farq', color: const Color(0xFFF97316), big: true);
+        _float('Deyarli! 1 ta harf xato', color: const Color(0xFFF97316), big: true);
       case RewardKind.speed:
       case RewardKind.comeback:
         break;
@@ -104,7 +104,8 @@ class _RewardOverlayState extends State<RewardOverlay>
         sfx.combo();
         _comboPop.forward(from: 0);
       case RewardKind.record:
-        _showBanner(_RecordBanner(text: 'Yangi rekord: ${e.amount} kombo!'));
+        _showBanner(_RecordBanner(
+            text: 'Yangi rekord: ketma-ket ${e.amount} ta to\'g\'ri javob!'));
       case RewardKind.breakTime:
         _showBanner(const _BreakBanner());
       case RewardKind.dailyGoal:
@@ -523,7 +524,7 @@ class _ComboMeter extends StatelessWidget {
                       ),
                       const SizedBox(width: 4),
                       const Text(
-                        'kombo',
+                        'ketma-ket to\'g\'ri',
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w700,
@@ -585,8 +586,9 @@ class _QuestBanner extends StatelessWidget {
     return _BannerCard(
       color: AppColors.brandPurple,
       leading: Text(quest.emoji, style: const TextStyle(fontSize: 22)),
-      title: 'Topshiriq bajarildi!',
-      subtitle: '${quest.titleUz}  ·  +${quest.coins} 🪙  +${quest.xp} ⚡',
+      title: 'Kunlik vazifa bajarildi!',
+      subtitle:
+          '${quest.titleUz}  ·  +${quest.coins} tanga  ·  +${quest.xp} ball',
     );
   }
 }
@@ -599,8 +601,8 @@ class _GoalBanner extends StatelessWidget {
     return _BannerCard(
       color: AppColors.success,
       leading: const Text('🎯', style: TextStyle(fontSize: 22)),
-      title: 'Kunlik maqsad bajarildi!',
-      subtitle: 'Streak saqlandi  ·  +$coins 🪙',
+      title: 'Bugungi ball maqsadi bajarildi!',
+      subtitle: 'Maqsad: kuniga ${progress.dailyGoal} ball  ·  +$coins tanga',
     );
   }
 }
@@ -867,6 +869,15 @@ class _LevelUpModalState extends State<_LevelUpModal>
                       color: Colors.white.withValues(alpha: 0.85),
                     ),
                   ),
+                  const SizedBox(height: 6),
+                  Text(
+                    'Yetarli ball to\'pladingiz - daraja oshdi.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white.withValues(alpha: 0.85),
+                      fontSize: 13,
+                    ),
+                  ),
                   const SizedBox(height: 20),
                   SizedBox(
                     width: double.infinity,
@@ -951,7 +962,7 @@ class _ChestModalState extends State<_ChestModal>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    widget.big ? 'MEGA BONUS' : 'BONUS BOX',
+                    widget.big ? 'KATTA SOVG\'A QUTISI' : 'SOVG\'A QUTISI',
                     style: TextStyle(
                       color: AppColors.muted(context),
                       fontWeight: FontWeight.w800,
@@ -989,7 +1000,7 @@ class _ChestModalState extends State<_ChestModal>
                     Text(
                       _opening
                           ? 'Ochilmoqda...'
-                          : 'Ochish uchun bosing',
+                          : 'Qutini bosing - ochiladi',
                       style: const TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 16,
@@ -998,8 +1009,8 @@ class _ChestModalState extends State<_ChestModal>
                     const SizedBox(height: 6),
                     Text(
                       widget.big
-                          ? 'Bugungi uchala missiya bajarildi!'
-                          : 'Ketma-ket to\'g\'ri javoblar uchun',
+                          ? 'Katta mukofot: kunlik vazifalar yoki ketma-ket kunlar uchun'
+                          : 'Mashq qilganingiz uchun sovg\'a',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: AppColors.muted(context),
@@ -1012,16 +1023,27 @@ class _ChestModalState extends State<_ChestModal>
                       alignment: WrapAlignment.center,
                       children: [
                         if (r.coins > 0)
-                          _RewardChip('+${r.coins} 🪙', AppColors.coin),
+                          _RewardChip('+${r.coins} tanga', AppColors.coin),
                         if (r.xp > 0)
-                          _RewardChip('+${r.xp} ⚡', AppColors.actionBlue),
+                          _RewardChip('+${r.xp} ball', AppColors.actionBlue),
                         if (r.freeze)
                           _RewardChip(
-                            '🧊 Streak muzlatgich',
+                            '🧊 Muzlatgich',
                             const Color(0xFF06B6D4),
                           ),
                       ],
                     ),
+                    if (r.freeze) ...[
+                      const SizedBox(height: 10),
+                      Text(
+                        'Bir kun mashq qilmasangiz ham ketma-ket kuningiz uzilmaydi.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: AppColors.muted(context),
+                          fontSize: 13,
+                        ),
+                      ),
+                    ],
                     const SizedBox(height: 18),
                     SizedBox(
                       width: double.infinity,
@@ -1153,6 +1175,15 @@ class _AchievementModal extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(color: AppColors.muted(context)),
                   ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Barcha yutuqlar - Sozlamalar > Yutuqlar bo\'limida.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: AppColors.muted(context),
+                      fontSize: 12,
+                    ),
+                  ),
                   const SizedBox(height: 18),
                   SizedBox(
                     width: double.infinity,
@@ -1219,7 +1250,7 @@ class _LeagueModal extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text("LIGA KO'TARILDI!",
+                  const Text("YANGI TOIFA!",
                       style: TextStyle(
                           color: Colors.white70,
                           fontWeight: FontWeight.w800,
@@ -1233,8 +1264,13 @@ class _LeagueModal extends StatelessWidget {
                       style: const TextStyle(
                           color: Colors.white, fontWeight: FontWeight.w900, fontSize: 30)),
                   const SizedBox(height: 4),
-                  Text('${index + 1} / ${RewardEngine.leagues.length} liga',
+                  Text('${index + 1} / ${RewardEngine.leagues.length} toifa',
                       style: TextStyle(color: Colors.white.withValues(alpha: 0.85))),
+                  const SizedBox(height: 6),
+                  Text("Har 500 ball - yangi toifa. Boshqalar bilan taqqoslanmaydi.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.white.withValues(alpha: 0.85), fontSize: 13)),
                   const SizedBox(height: 20),
                   SizedBox(
                     width: double.infinity,
@@ -1268,8 +1304,8 @@ class _StreakBanner extends StatelessWidget {
     return _BannerCard(
       color: const Color(0xFFDC2626),
       leading: const Text('🔥', style: TextStyle(fontSize: 22)),
-      title: '$days kunlik streak!',
-      subtitle: 'Streak sandig\'i ochildi — bosib oling',
+      title: '$days kun ketma-ket o\'qidingiz!',
+      subtitle: 'Mukofot: sovg\'a qutisi',
     );
   }
 }
@@ -1307,7 +1343,7 @@ class _UnitCompleteModal extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text('UNIT TUGATILDI!',
+                  const Text('UNIT (BOB) TUGADI!',
                       style: TextStyle(
                           color: Colors.white70,
                           fontWeight: FontWeight.w800,
@@ -1323,7 +1359,8 @@ class _UnitCompleteModal extends StatelessWidget {
                           fontWeight: FontWeight.w900,
                           fontSize: 26)),
                   const SizedBox(height: 6),
-                  Text('Barcha mashqlar bajarildi  ·  +50 🪙',
+                  Text('Bobning barcha mashqlari bajarildi  ·  +50 tanga',
+                      textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.white.withValues(alpha: 0.9))),
                   const SizedBox(height: 20),
                   SizedBox(
@@ -1339,7 +1376,7 @@ class _UnitCompleteModal extends StatelessWidget {
                         progress.addCoins(50);
                         onClose();
                       },
-                      child: const Text('Keyingi unitga!'),
+                      child: const Text('Davom etish'),
                     ),
                   ),
                 ],

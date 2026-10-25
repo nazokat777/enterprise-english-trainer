@@ -132,4 +132,28 @@ void main() {
     expect(back.start, '2026-09-01');
     expect(StudyPlan.fromJson('buzuq'), isNull);
   });
+
+  test('kitob nomi daraja bilan birga: "Beginner · Enterprise 1"', () {
+    expect(levelBookLine('Enterprise 1 - Beginner'), 'Beginner · Enterprise 1');
+    expect(levelBookLine('Enterprise 2 - Elementary'),
+        'Elementary · Enterprise 2');
+    // Allaqachon to'g'ri yoki boshqa ko'rinishdagi nom o'zgarmaydi.
+    expect(levelBookLine('Beginner · Enterprise 1'), 'Beginner · Enterprise 1');
+    expect(levelBookLine('Test'), 'Test');
+  });
+
+  test('qiyinlik chegaralari kuniga ketadigan vaqtga bog\'liq', () {
+    Pace p(int m) => Pace(
+        days: 1,
+        lessonsPerDay: 1,
+        wordsPerDay: 7,
+        rulesPerDay: 0,
+        minutesPerDay: m);
+    expect(p(kEasyMinutes).difficulty, 'Yengil');
+    expect(p(kEasyMinutes + 1).difficulty, 'O\'rtacha');
+    expect(p(kMediumMinutes).difficulty, 'O\'rtacha');
+    expect(p(kMediumMinutes + 1).difficulty, 'Og\'ir');
+    expect(p(kHardMinutes).difficulty, 'Og\'ir');
+    expect(p(kHardMinutes + 1).difficulty, 'Juda og\'ir');
+  });
 }

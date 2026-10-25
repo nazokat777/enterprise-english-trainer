@@ -411,6 +411,10 @@ class Progress extends ChangeNotifier {
     completed.clear();
     needsReview.clear();
     srsMap.clear();
+    // Xotirada qolgan AI kalitlari ham o'chadi (diskdan ketgan edi, lekin
+    // sahifa qayta yuklanguncha repetitor eski kalit bilan ishlayverardi).
+    aiKeys.clear();
+    apiKey = '';
     notifyListeners();
   }
 

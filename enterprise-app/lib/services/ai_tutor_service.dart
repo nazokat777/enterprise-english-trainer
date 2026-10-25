@@ -70,10 +70,20 @@ class AiTutorService {
       'https://generativelanguage.googleapis.com/v1beta/models/${model ?? geminiModel}:generateContent?key=$key';
 
   /// Provayder nomi va kalit qayerdan olinishi (UI uchun).
+  ///
+  /// Tartib UI chiplari tartibi: avval bepullari (yangi odam shuni
+  /// tanlasin), pullik Claude oxirida. Sifat bo'yicha navbat [ranked]da.
   static const Map<String, (String, String, String)> providers = {
-    'claude': ('Claude (Anthropic)', 'console.anthropic.com', 'sk-ant-...'),
-    'gemini': ('Gemini (Google) - bepul', 'aistudio.google.com/apikey', 'AIza...'),
-    'groq': ('Groq (Llama) - bepul, tez', 'console.groq.com/keys', 'gsk_...'),
+    'gemini': ('Gemini (Google) - bepul, tavsiya etiladi', 'aistudio.google.com/apikey', 'AIza...'),
+    'groq': ('Groq - bepul, tez', 'console.groq.com/keys', 'gsk_...'),
+    'claude': ('Claude (Anthropic) - pullik', 'console.anthropic.com', 'sk-ant-...'),
+  };
+
+  /// Qisqa nom (matn ichida ishlatish uchun).
+  static const Map<String, String> providerShort = {
+    'gemini': 'Gemini',
+    'groq': 'Groq',
+    'claude': 'Claude',
   };
 
   /// O'qituvchi FE'LI — 0 jahldor ... 3 do'stona.
@@ -177,6 +187,12 @@ Respond ONLY with JSON, no markdown:
   static String attemptLabel((String, String) a) =>
       a.$2.isEmpty ? a.$1 : '${a.$1}/${a.$2}';
 
+  /// Ekranga chiqadigan "(texnik: ...)" matnidan kalit yashiriladi:
+  /// tarmoq xatosi manzilni ("...generateContent?key=AIza...") o'zida
+  /// olib yuradi, ekran rasmi boshqaga yuborilsa kalit oshkor bo'lardi.
+  static String scrub(Object e) =>
+      e.toString().replaceAll(RegExp(r'key=[^&\s,)]+'), 'key=***');
+
   /// ZAXIRA BILAN: eng zo'r model limiti tugasa (429/403/5xx yoki
   /// tarmoq), kaliti bor keyingi modellar navbat bilan sinaladi.
   /// Qaytadi: (javob, javob bergan provayder). Hech biri ishlamasa —
@@ -194,7 +210,10 @@ Respond ONLY with JSON, no markdown:
     http.Client? client,
   }) async {
     final attempts = rankedAttempts(keys);
-    if (attempts.isEmpty) throw TutorException('API kaliti kiritilmagan.');
+    if (attempts.isEmpty) {
+      throw TutorException(
+          'Avval AI kalitini kiriting: Mr. Vaysaqi sahifasida yoki Sozlamalarda.');
+    }
     Object? last;
     for (final (p, m) in attempts) {
       try {
@@ -217,7 +236,11 @@ Respond ONLY with JSON, no markdown:
         last = e; // tarmoq/timeout — keyingisiga
       }
     }
-    throw last is TutorException ? last : TutorException('Ulanib bo\'lmadi: $last');
+    throw last is TutorException
+        ? last
+        : TutorException(
+            'AI xizmatiga ulanib bo\'lmadi. Internetni tekshirib, xabarni '
+            'qayta yuboring. (texnik: ${scrub(last!)})');
   }
 
   Map<String, String> get _json => const {'content-type': 'application/json'};
@@ -341,17 +364,30 @@ Respond ONLY with JSON, no markdown:
     return TutorReply.parse(text);
   }
 
+  /// Xato matni: avval tushunarli o'zbekcha jumla (nima qilish kerak),
+  /// serverning inglizcha xabari esa faqat oxirida "(texnik: ...)".
   static String _errorText(http.Response res) {
+    String? err;
     try {
       final j = json.decode(res.body) as Map<String, dynamic>;
-      final err = (j['error'] as Map?)?['message'] as String?;
-      if (err != null) return '${res.statusCode}: $err';
+      err = (j['error'] as Map?)?['message'] as String?;
     } catch (_) {}
-    return switch (res.statusCode) {
-      401 => 'API kaliti noto\'g\'ri (401). Sozlamalardan tekshiring.',
-      429 => 'Juda ko\'p so\'rov (429). Bir oz kutib qayta urinib ko\'ring.',
-      _ => 'Server xatosi (${res.statusCode}).',
-    };
+    final code = res.statusCode;
+    // Gemini noto'g'ri kalitga 400 "API key not valid" qaytaradi.
+    final badKey = code == 401 ||
+        code == 403 ||
+        (code == 400 && (err ?? '').toLowerCase().contains('api key'));
+    final friendly = badKey
+        ? 'Kalit noto\'g\'ri yoki ishlamayapti. Sozlamalar > \'Mr. Vaysaqi '
+            'uchun AI kaliti\' bo\'limida kalitni qayta kiriting.'
+        : code == 429
+            ? 'Bepul limit vaqtincha tugadi. 1 daqiqa kutib qayta yuboring '
+                'yoki yana bitta kalit qo\'shing.'
+            : code >= 500
+                ? 'AI xizmati hozir band. Birozdan keyin qayta urinib ko\'ring.'
+                : 'AI xizmati so\'rovni qabul qilmadi.';
+    final tech = err == null ? '$code' : '$code: $err';
+    return '$friendly (texnik: $tech)';
   }
 }
 

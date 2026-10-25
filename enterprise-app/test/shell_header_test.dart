@@ -19,7 +19,7 @@ import 'package:enterprise_english/screens/settings_screen.dart';
 void main() {
   setUp(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    SharedPreferences.setMockInitialValues({});
+    SharedPreferences.setMockInitialValues({'welcome_tour_done': true});
     app.progress = Progress();
     app.mastery = MasteryStore();
     app.repo = ContentRepository();

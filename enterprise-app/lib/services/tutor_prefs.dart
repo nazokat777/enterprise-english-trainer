@@ -29,11 +29,12 @@ class TutorPrefs extends ChangeNotifier {
   ];
 
   static const List<String> strictDesc = [
-    'Qo\'pol, kinoyali va doim asabiy. Qotib qolsangiz o\'zbekcha ayting — '
-        'u baribir sizdan ingliz tilini sug\'urib oladi.',
-    'Qisqa, aniq, talabchan. Maqtov kam — shuning uchun qadrli.',
-    'Sabrli va yumshoq. Xatoni sekin, hurmat bilan to\'g\'irlaydi.',
-    'Eng yaqin do\'stingizdek: hazil, quvonch, har kichik yutuqni nishonlaydi.',
+    'Qo\'pol, masxara qiluvchi, doim jahli chiqib turadi - lekin hazil '
+        'tarzida. Qiynalsangiz o\'zbekcha yozing: u baribir sizni inglizcha '
+        'gapirishga undaydi.',
+    'Qisqa va talabchan. Kam maqtaydi, shuning uchun maqtovi qadrli.',
+    'Sabrli va yumshoq. Xatoingizni sekin va hurmat bilan to\'g\'irlaydi.',
+    'Eng yaqin do\'stingiz kabi: hazil qiladi va har kichik yutuqqa quvonadi.',
   ];
 
   String get strictLabel => strictLabels[strictness];

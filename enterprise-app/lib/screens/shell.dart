@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../book_content.dart';
 import '../levels.dart';
 import '../main.dart';
+import '../stats.dart' show Progress;
 import '../theme.dart';
 import '../reward/companion.dart';
 import '../reward/reward_widgets.dart';
@@ -36,11 +37,11 @@ class _AppShellState extends State<AppShell> {
     // Birinchi ochilishda hamrohga ism qo'yish (bir marta).
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted && book.units.isNotEmpty) {
-        // Avval avatar nomlanadi, so'ng 3 sahifali xush kelibsiz turi.
-        OnboardingSheet.showIfNeeded(context).then((_) {
-          if (mounted && rewards.loaded && rewards.onboarded) {
-            WelcomeTour.showIfNeeded(context);
-          }
+        // AVVAL ilova nima ekani tushuntiriladi (xush kelibsiz turi),
+        // KEYIN avatar nomlanadi: ilgari yangi odam hali nima ekanini
+        // bilmay turib "avatar ismi" so'ralardi.
+        WelcomeTour.showIfNeeded(context).then((_) {
+          if (mounted) OnboardingSheet.showIfNeeded(context);
         });
       }
     });
@@ -54,13 +55,29 @@ class _AppShellState extends State<AppShell> {
     (Icons.rule_rounded, 'Grammatika'),
     (Icons.account_tree_rounded, 'So\'z yasalishi'),
     (Icons.forum_rounded, 'Suhbatlar'),
-    (Icons.smart_toy_rounded, 'Mr. Vaysaqi'),
+    (Icons.smart_toy_rounded, "AI o'qituvchi"),
     (Icons.settings_rounded, 'Sozlamalar'),
     (Icons.help_outline_rounded, 'Yordam'),
-    // "Chiqish" olib tashlandi: ilovada hisob (login) yo'q, hamma
-    // narsa shu brauzerda saqlanadi — tugma hech nima qilmasdi.
-    // Ma'lumotni o'chirish endi Sozlamalarda.
   ];
+
+  /// Menyu bandining tagidagi qisqa izoh - yangi odam "Mnemonika" yoki
+  /// "So'z yasalishi" nima ekanini bandni ochmay bilsin.
+  static const List<String> _hints = [
+    "Asosiy kurs",
+    "Yodlash rejasi",
+    "So'zlarni takrorlash",
+    "Ko'p xato qilganlaringiz",
+    "Qoidalar va misollar",
+    "Qo'shimchali so'zlar",
+    "Kitobdagi dialoglar",
+    "Mr. Vaysaqi bilan suhbat",
+    "Maqsad, ovoz, ma'lumot",
+    "Ilova qanday ishlaydi",
+  ];
+
+  // "Chiqish" olib tashlandi: ilovada hisob (login) yo'q, hamma
+  // narsa shu brauzerda saqlanadi - tugma hech nima qilmasdi.
+  // Ma'lumotni o'chirish endi Sozlamalarda.
 
   @override
   Widget build(BuildContext context) {
@@ -74,6 +91,7 @@ class _AppShellState extends State<AppShell> {
                 children: [
                   _Sidebar(
                     items: _items,
+                    hints: _hints,
                     selected: _sel,
                     onSelect: (i) => setState(() => _sel = i),
                     inDrawer: false,
@@ -97,6 +115,7 @@ class _AppShellState extends State<AppShell> {
           drawer: Drawer(
             child: _Sidebar(
               items: _items,
+              hints: _hints,
               selected: _sel,
               onSelect: (i) {
                 setState(() => _sel = i);
@@ -154,19 +173,35 @@ class _AppShellState extends State<AppShell> {
         progress.darkMode ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
       ),
     );
+    // Belgilar izohsiz edi - endi har biri bosilsa "Bu raqamlar nima?"
+    // oynasi ochiladi; ball va tanga yorlig'i bilan.
+    Widget tap(Widget w) => GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () => showStatsHelp(context),
+          child: w,
+        );
     final stats = <Widget>[
-      StreakFlame(days: progress.currentStreak),
-      const HappyHourBadge(),
-      _DailyRing(progress: progress.dailyProgress, todayXp: progress.todayXp),
-      _Stat(
+      tap(StreakFlame(days: progress.currentStreak)),
+      tap(const HappyHourBadge()),
+      tap(_DailyRing(
+          progress: progress.dailyProgress, todayXp: progress.todayXp)),
+      tap(_Stat(
         icon: Icons.bolt_rounded,
         color: AppColors.success,
         value: progress.xp,
-      ),
-      _Stat(
+        label: 'ball',
+      )),
+      tap(_Stat(
         icon: Icons.monetization_on_rounded,
         color: AppColors.coin,
         value: progress.coins,
+        label: 'tanga',
+      )),
+      IconButton(
+        tooltip: 'Bu raqamlar nima?',
+        visualDensity: VisualDensity.compact,
+        icon: const Icon(Icons.help_outline_rounded, size: 20),
+        onPressed: () => showStatsHelp(context),
       ),
     ];
     return LayoutBuilder(
@@ -265,11 +300,13 @@ class _AppShellState extends State<AppShell> {
 // ───────────────────────── Sidebar ─────────────────────────
 class _Sidebar extends StatelessWidget {
   final List<(IconData, String)> items;
+  final List<String> hints;
   final int selected;
   final ValueChanged<int> onSelect;
   final bool inDrawer;
   const _Sidebar({
     required this.items,
+    required this.hints,
     required this.selected,
     required this.onSelect,
     required this.inDrawer,
@@ -323,18 +360,27 @@ class _Sidebar extends StatelessWidget {
                 ],
               ),
             ),
-            for (var i = 0; i < items.length; i++)
-              _NavItem(
-                icon: items[i].$1,
-                label: items[i].$2,
-                active: i == selected,
-                onTap: () => onSelect(i),
+            // Izohlar tufayli band balandroq - past ekranda aylantiriladi.
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    for (var i = 0; i < items.length; i++)
+                      _NavItem(
+                        icon: items[i].$1,
+                        label: items[i].$2,
+                        hint: i < hints.length ? hints[i] : '',
+                        active: i == selected,
+                        onTap: () => onSelect(i),
+                      ),
+                  ],
+                ),
               ),
-            const Spacer(),
+            ),
             Padding(
               padding: const EdgeInsets.all(16),
               child: Text(
-                'Liga: ${progress.league}',
+                'Reyting: ${progress.league}',
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w700,
@@ -352,11 +398,13 @@ class _Sidebar extends StatelessWidget {
 class _NavItem extends StatelessWidget {
   final IconData icon;
   final String label;
+  final String hint;
   final bool active;
   final VoidCallback onTap;
   const _NavItem({
     required this.icon,
     required this.label,
+    this.hint = '',
     required this.active,
     required this.onTap,
   });
@@ -385,7 +433,7 @@ class _NavItem extends StatelessWidget {
             hoverColor: AppColors.brandPurple.withValues(alpha: 0.08),
             onTap: onTap,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 9),
               child: Row(
                 children: [
                   Icon(icon, size: 20, color: fg),
@@ -393,13 +441,33 @@ class _NavItem extends StatelessWidget {
                   // Sidebar kengligi qat'iy (240px). Uzun yorliq
                   // ("So'z yasalishi") sig'may, chetidan chiqib ketardi.
                   Expanded(
-                    child: Text(
-                      label,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        fontWeight: active ? FontWeight.w800 : FontWeight.w600,
-                        color: fg,
-                      ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          label,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontWeight:
+                                active ? FontWeight.w800 : FontWeight.w600,
+                            color: fg,
+                          ),
+                        ),
+                        // Qisqa izoh: bu bo'lim nima ekanini ochmasdan biling.
+                        if (hint.isNotEmpty)
+                          Text(
+                            hint,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              fontSize: 11,
+                              height: 1.25,
+                              color: active
+                                  ? Colors.white.withValues(alpha: 0.85)
+                                  : fg.withValues(alpha: 0.75),
+                            ),
+                          ),
+                      ],
                     ),
                   ),
                 ],
@@ -452,8 +520,19 @@ class _LevelSwitcher extends StatelessWidget {
           PopupMenuItem(
             value: lvl.id,
             enabled: ready(lvl.id),
-            child: Text(
-              ready(lvl.id) ? lvl.label : '${lvl.label} — tayyor emas',
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  ready(lvl.id) ? lvl.label : '${lvl.label} — tayyor emas',
+                ),
+                Text(
+                  lvl.bookTitle.split(' - ').first,
+                  style: TextStyle(
+                      fontSize: 11.5, color: AppColors.muted(context)),
+                ),
+              ],
             ),
           ),
       ],
@@ -473,6 +552,22 @@ class _LevelSwitcher extends StatelessWidget {
                 style: const TextStyle(
                   fontWeight: FontWeight.w800,
                   color: AppColors.brandPurple,
+                ),
+              ),
+            ),
+            // Qaysi kitob ekani: "Beginner" yolg'iz tushunarsiz edi.
+            Flexible(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 6),
+                child: Text(
+                  levelBookTitle(progress.currentLevel).split(' - ').first,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontSize: 11.5,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.brandPurple.withValues(alpha: 0.75),
+                  ),
                 ),
               ),
             ),
@@ -541,7 +636,13 @@ class _Stat extends StatelessWidget {
   final IconData icon;
   final Color color;
   final int value;
-  const _Stat({required this.icon, required this.color, required this.value});
+  final String label;
+  const _Stat({
+    required this.icon,
+    required this.color,
+    required this.value,
+    this.label = '',
+  });
   @override
   Widget build(BuildContext context) {
     // Kichik "chip": rangli fon ustida raqam — panel bir tekis o'qiladi.
@@ -557,7 +658,7 @@ class _Stat extends StatelessWidget {
           Icon(icon, color: color, size: 16),
           const SizedBox(width: 4),
           Text(
-            '$value',
+            label.isEmpty ? '$value' : '$value $label',
             style: TextStyle(
               fontWeight: FontWeight.w800,
               color: color,
@@ -568,6 +669,92 @@ class _Stat extends StatelessWidget {
       ),
     );
   }
+}
+
+/// "Bu raqamlar nima?" - tepadagi belgilarning har biri nimani bildirishi.
+void showStatsHelp(BuildContext context) {
+  final r = rewards;
+  Widget row(String icon, String title, String body) => Padding(
+        padding: const EdgeInsets.only(bottom: 12),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(
+              width: 34,
+              child: Text(icon, style: const TextStyle(fontSize: 22)),
+            ),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title,
+                      style: const TextStyle(
+                          fontWeight: FontWeight.w800, fontSize: 14.5)),
+                  const SizedBox(height: 2),
+                  Text(body,
+                      style: TextStyle(
+                          fontSize: 13,
+                          height: 1.4,
+                          color: AppColors.muted(context))),
+                ],
+              ),
+            ),
+          ],
+        ),
+      );
+  showModalBottomSheet<void>(
+    context: context,
+    isScrollControlled: true,
+    showDragHandle: true,
+    builder: (ctx) => SafeArea(
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.fromLTRB(22, 0, 22, 18),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('Bu raqamlar nima?',
+                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900)),
+            const SizedBox(height: 14),
+            row('🔥', 'Ketma-ket kunlar',
+                "Necha kun ketma-ket o'qiganingiz. Har kuni kamida bir mashq "
+                "qilsangiz o'sadi. 🌱 - hali boshlanmagan."),
+            row('⏰', 'Ikki barobar ball soati',
+                "Har kuni ${r.happyHour}:00 dan 1 soat davomida har to'g'ri "
+                "javob uchun ball 2 barobar."),
+            row('◯', 'Bugungi ball',
+                "Aylana ichidagi raqam - bugun to'plagan ballingiz. Maqsad: "
+                "${progress.dailyGoal} ball. Yetganda ✓ belgisi chiqadi."),
+            row('⚡', 'Ball',
+                "Har to'g'ri javob ball beradi. Ball ko'paygan sari "
+                "darajangiz oshadi."),
+            row('🪙', 'Tanga',
+                "Kunlik vazifa, Omad g'ildiragi va sovg'a qutisidan "
+                "olinadi. Uzilib qolgan kunlarni tiklashga yoki bir kunni "
+                "o'tkazib yuborishdan himoyalashga (${Progress.freezeCost} "
+                "tanga) sarflanadi."),
+            row('1', 'Daraja',
+                "Binafsha aylana - hozirgi darajangiz (${r.level}-daraja). "
+                "Bosing: yutuqlaringiz ko'rinadi."),
+            row('📘', 'Beginner / Elementary',
+                "Kitob darajasi: Beginner - Enterprise 1, Elementary - "
+                "Enterprise 2. Chap yuqoridagi tugmadan almashtirasiz."),
+            const SizedBox(height: 4),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton(
+                onPressed: () => Navigator.pop(ctx),
+                style: FilledButton.styleFrom(
+                    backgroundColor: AppColors.brandPurple,
+                    padding: const EdgeInsets.symmetric(vertical: 14)),
+                child: const Text('Tushundim',
+                    style: TextStyle(fontWeight: FontWeight.w800)),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
 }
 
 // ──────────────────── Body: placeholder ekranlar ────────────────────

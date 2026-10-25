@@ -87,16 +87,16 @@ void main() {
         const MaterialApp(home: Scaffold(body: BookUnitsScreen())));
     await t.pump(const Duration(seconds: 2));
 
-    expect(find.text('5 ta so\'z o\'chib ketmoqda'), findsOneWidget);
-    expect(find.textContaining('Qutqarish'), findsOneWidget);
+    expect(find.text('5 ta so\'zni unutib qo\'yishingiz mumkin'), findsOneWidget);
+    expect(find.textContaining('Hozir takrorlash'), findsOneWidget);
 
-    final title = find.text('5 ta so\'z o\'chib ketmoqda');
+    final title = find.text('5 ta so\'zni unutib qo\'yishingiz mumkin');
     await t.ensureVisible(title);
     await t.tap(title);
     await t.pump();
     await t.pump(const Duration(seconds: 1));
     // Tanishuv yo'q — darhol savol.
-    expect(find.textContaining('Xotira qutqaruvi'), findsOneWidget);
+    expect(find.textContaining('So\'zlarni takrorlash'), findsOneWidget);
     expect(find.text('YANGI SO\'Z'), findsNothing);
   });
 
@@ -135,7 +135,9 @@ void main() {
       await t.pump(const Duration(milliseconds: 700));
     }
     await t.pump(const Duration(seconds: 3));
-    expect(find.textContaining('qutqarildi'), findsOneWidget);
-    expect(find.textContaining('xotirangizda o\'sdi'), findsOneWidget);
+    // Dars yakunidagi sarlavha ("N ta so'z qutqarildi" yoki "takrorlandi" -
+    // lessons/ egasi so'zni almashtirishi mumkin) - ikkisidan biri.
+    expect(find.textContaining(RegExp('qutqarildi|takrorlandi')), findsWidgets);
+    expect(find.textContaining('xotirangizda mustahkamlandi'), findsOneWidget);
   });
 }

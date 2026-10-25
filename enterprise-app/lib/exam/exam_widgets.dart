@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../levels.dart';
 import '../main.dart';
+import '../plan/study_plan.dart';
 import '../theme.dart';
 import '../widgets/pressable3d.dart';
 import 'exam.dart';
@@ -57,13 +59,14 @@ class _ExamCardState extends State<ExamCard> {
     final passed = r != null && r.passed;
     final color = passed ? AppColors.success : AppColors.brandPurple;
     final subtitle = r == null
-        ? '$_n-unit tugadi - endi 1-$_n unitlarning hammasi bo\'yicha sinov. '
-            'O\'zlashtirilmagan mavzu qolmasin.'
+        ? '$_n-unit tugadi. Endi ${_n == 1 ? 'shu unitda' : '1-dan $_n-unitgacha'} '
+            'o\'tilgan hamma narsadan sinov: so\'z, grammatika, gap. 90% va '
+            'undan yuqori - o\'tdingiz.'
         : passed
-            ? 'O\'tdingiz: ${r.score}%. Xohlasangiz qayta topshiring - '
-                'mustahkamlash uchun.'
-            : 'Oxirgi natija ${r.score}%, ${r.weakIds.length} ta zaif band. '
-                'Qayta ishlab, 90%+ oling.';
+            ? 'O\'tdingiz: ${r.score}%. Xohlasangiz qayta topshiring.'
+            : 'Oxirgi natija: ${r.score}% (o\'tish uchun 90% kerak). '
+                '${r.weakIds.length} ta savolda xato qildingiz - ularni '
+                'qayta ishlang.';
     return Material(
       color: color.withValues(alpha: 0.12),
       borderRadius: BorderRadius.circular(AppRadius.lg),
@@ -83,11 +86,16 @@ class _ExamCardState extends State<ExamCard> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Imtihon · 1-$_n unitlar',
+                        Text('Yig\'ma imtihon · 1-$_n unitlar',
                             style: TextStyle(
                                 fontWeight: FontWeight.w800,
                                 fontSize: 15,
                                 color: color)),
+                        Text(levelBookLine(levelBookTitle(progress.currentLevel)),
+                            style: TextStyle(
+                                fontSize: 11.5,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.muted(context))),
                         const SizedBox(height: 2),
                         Text(subtitle,
                             style: TextStyle(
@@ -107,13 +115,18 @@ class _ExamCardState extends State<ExamCard> {
                   onPressed: () => _open(context, onlyIds: r.weakIds.toSet()),
                   child: Center(
                     child: Text(
-                        'Zaif ${r.weakIds.length} ta bandni qayta ishlash',
+                        'Xato qilgan ${r.weakIds.length} ta savolni qayta ishlash',
+                        textAlign: TextAlign.center,
                         style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w800,
                             fontSize: 14.5)),
                   ),
                 ),
+                const SizedBox(height: 4),
+                Text('Natija o\'zgarmaydi - faqat mashq.',
+                    style: TextStyle(
+                        fontSize: 11.5, color: AppColors.muted(context))),
               ],
             ],
           ),
@@ -155,15 +168,31 @@ class ExamButton extends StatelessWidget {
               color: Colors.white, size: 22),
           const SizedBox(width: 8),
           Flexible(
-            child: Text(
-              unit == 1
-                  ? 'Imtihon · 1-unit'
-                  : 'Imtihon · 1-$unit unitlar (yig\'ma)',
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w800,
-                  fontSize: 16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  unit == 1
+                      ? 'Yig\'ma imtihon: 1-unit'
+                      : 'Yig\'ma imtihon: 1-$unit unitlar',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                      fontSize: 16),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  unit == 1
+                      ? 'Yig\'ma - hamma o\'tilgan unitlar bo\'yicha '
+                          '(hozircha faqat 1-unit).'
+                      : 'Yig\'ma - hamma o\'tilgan unitlar bo\'yicha.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.white.withValues(alpha: 0.88),
+                      fontSize: 12),
+                ),
+              ],
             ),
           ),
         ],
@@ -214,14 +243,16 @@ class _UnitExamCardState extends State<UnitExamCard> {
     final r = _best;
     final passed = r != null && r.passed;
     final color = passed ? AppColors.success : AppColors.homework;
-    final review = n > 1 ? ' + 1-${n - 1} unitlardan takror' : '';
+    final review = n > 1
+        ? " Oldingi unitlardan (1-${n - 1}) ham ozgina takror savol bor."
+        : '';
     final sub = r == null
-        ? "Lug'at, grammatika va gap tuzish$review. "
-            "Unitni tugatgach topshiring."
+        ? "Faqat shu unit bo'yicha sinov: so'z, grammatika va gap tuzish.$review "
+            "Unitni tugatgach topshiring. 90% va undan yuqori - o'tdingiz."
         : passed
             ? "O'tdingiz: ${r.score}%. Qayta topshirsangiz ham bo'ladi."
-            : "Eng yaxshi natija ${r.score}% - 90% dan o'tadi. "
-                "${r.weakIds.length} ta zaif band bor.";
+            : "Eng yaxshi natija: ${r.score}%. O'tish uchun 90% kerak. "
+                "${r.weakIds.length} ta savolda xato bor.";
     return Material(
       color: color.withValues(alpha: 0.12),
       borderRadius: BorderRadius.circular(AppRadius.lg),
@@ -266,13 +297,18 @@ class _UnitExamCardState extends State<UnitExamCard> {
                   onPressed: () => _open(onlyIds: r.weakIds.toSet()),
                   child: Center(
                     child: Text(
-                        'Zaif ${r.weakIds.length} ta bandni qayta ishlash',
+                        'Xato qilgan ${r.weakIds.length} ta savolni qayta ishlash',
+                        textAlign: TextAlign.center,
                         style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w800,
                             fontSize: 14.5)),
                   ),
                 ),
+                const SizedBox(height: 4),
+                Text('Natija o\'zgarmaydi - faqat mashq.',
+                    style: TextStyle(
+                        fontSize: 11.5, color: AppColors.muted(context))),
               ],
             ],
           ),

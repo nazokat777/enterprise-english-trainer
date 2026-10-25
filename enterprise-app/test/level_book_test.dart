@@ -20,7 +20,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   setUp(() async {
-    SharedPreferences.setMockInitialValues({});
+    SharedPreferences.setMockInitialValues({'welcome_tour_done': true});
     app.progress = Progress();
     app.mastery = MasteryStore();
     app.repo = ContentRepository();

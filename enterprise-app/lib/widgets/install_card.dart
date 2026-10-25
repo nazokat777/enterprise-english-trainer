@@ -85,13 +85,15 @@ class _InstallCardState extends State<InstallCard> {
                         style: TextStyle(
                             fontWeight: FontWeight.w800, fontSize: 15)),
                     Text(
-                        'Bosh ekrandan bir bosishda - ilova kabi, to\'liq ekran.',
+                        "Ilova belgisi telefon ekraningizda bo'ladi: bir "
+                        "bosishda ochiladi, brauzer qatori ko'rinmaydi.",
                         style: TextStyle(fontSize: 12.5, color: muted)),
                   ],
                 ),
               ),
               IconButton(
                 visualDensity: VisualDensity.compact,
+                tooltip: "Yopish (qayta ko'rsatilmaydi)",
                 onPressed: _dismiss,
                 icon: Icon(Icons.close_rounded, size: 20, color: muted),
               ),
@@ -112,7 +114,9 @@ class _InstallCardState extends State<InstallCard> {
           if (_showIos) ...[
             const SizedBox(height: 10),
             Text(
-              'Safari: pastdagi "Ulashish" tugmasi -> "Add to Home Screen" -> "Add".',
+              'Safari: pastdagi "Ulashish" tugmasini (kvadratdan chiqqan '
+              'strelka) bosing -> "Bosh ekranga qo\'shish" (Add to Home '
+              'Screen) -> "Qo\'shish" (Add).',
               style: TextStyle(fontSize: 12.5, color: muted),
             ),
           ],

@@ -4,7 +4,7 @@ import '../main.dart';
 import '../theme.dart';
 import 'sfx.dart';
 
-/// STREAK TIKLASH kartasi — uzilgan seriyani 2 kun ichida coin evaziga
+/// KETMA-KET KUNLARNI QAYTARISH kartasi — uzilgan kunlarni 2 kun ichida tanga evaziga
 /// qaytarish. Yo'qotish og'rig'i (loss aversion) o'quvchini
 /// ilovadan uzoqlashtiradi; "qaytarish mumkin" degan xabar uni qaytaradi.
 class StreakRepairCard extends StatelessWidget {
@@ -38,7 +38,7 @@ class StreakRepairCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('${progress.lostStreak} kunlik seriya uzildi',
+                    Text('Ketma-ket ${progress.lostStreak} kunlik o\'qishingiz uzildi',
                         style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w800,
@@ -46,14 +46,18 @@ class StreakRepairCard extends StatelessWidget {
                     const SizedBox(height: 3),
                     Text(
                       canPay
-                          ? 'Qaytaring - 2 kun ichida, $cost tanga.'
-                          : 'Tiklash: $cost tanga (sizda ${progress.coins}). Mashq qilib yig\'ing.',
+                          ? 'Tanga evaziga qaytarishingiz mumkin: $cost tanga (2 kun ichida).'
+                          : 'Qaytarish uchun $cost tanga kerak, sizda ${progress.coins} ta. '
+                              'Mashq qilib tanga yig\'ing.',
                       style: TextStyle(
                           color: Colors.white.withValues(alpha: 0.85),
                           fontSize: 12.5),
                     ),
                     const SizedBox(height: 8),
-                    Row(
+                    Wrap(
+                      spacing: 6,
+                      runSpacing: 4,
+                      crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
                         FilledButton(
                           style: FilledButton.styleFrom(
@@ -71,20 +75,22 @@ class StreakRepairCard extends StatelessWidget {
                                     if (context.mounted) {
                                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                                           content: Text(
-                                              '🔥 Seriya tiklandi: ${progress.currentStreak} kun!')));
+                                              '🔥 Ketma-ket kunlar qaytdi: ${progress.currentStreak} kun!')));
                                     }
                                   }
                                 }
                               : null,
-                          child: Text('Tiklash · $cost 🪙'),
+                          child: Text('Qaytarish · $cost tanga'),
                         ),
-                        const SizedBox(width: 6),
-                        TextButton(
-                          style: TextButton.styleFrom(
-                              foregroundColor: Colors.white70,
-                              visualDensity: VisualDensity.compact),
-                          onPressed: progress.dismissRepair,
-                          child: const Text('Kerak emas'),
+                        Tooltip(
+                          message: 'Yopsangiz, uzilgan kunlarni keyin qaytarib bo\'lmaydi',
+                          child: TextButton(
+                            style: TextButton.styleFrom(
+                                foregroundColor: Colors.white70,
+                                visualDensity: VisualDensity.compact),
+                            onPressed: progress.dismissRepair,
+                            child: const Text('Kerak emas, yopish'),
+                          ),
                         ),
                       ],
                     ),

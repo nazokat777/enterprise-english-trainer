@@ -7,7 +7,10 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import '../../book_content.dart';
 import '../../main.dart';
+import '../../mastery.dart' show ItemMastery;
 import '../../stats.dart';
+import '../../teach/clarify.dart' show friendlyRef;
+import '../../teach/question_card.dart';
 import '../../theme.dart';
 import '../../services/tts.dart';
 import '../../widgets/correct_burst.dart';
@@ -32,6 +35,10 @@ class RuleScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
         children: [
+          const PageIntro(
+              'Bu yerda: qisqa qoida, jadval va misollar. Ularni o\'qib '
+              'chiqing, so\'ng mashqqa o\'ting.',
+              margin: EdgeInsets.only(bottom: 10)),
           _source(),
           if (section.rule?.titleUz.isNotEmpty ?? false) ...[
             Text(section.rule!.titleUz,
@@ -50,30 +57,40 @@ class RuleScreen extends StatelessWidget {
           // ("I amn't" yo'q, "Do you can" xato, "cannot" bitta so'z)
           // ma'lumotda bor edi, lekin o'quvchi ularni ko'rmasdi.
           ..._example(context),
+          // Har bir rangli quti nima ekani sarlavhasi bilan aytiladi
+          // (ilgari faqat kichik belgi bilan ajratilardi).
           if ((r['interrogativeNoteUz'] as String?)?.isNotEmpty ?? false)
             _warn(r['interrogativeNoteUz'] as String, AppColors.actionBlue,
-                Icons.help_outline_rounded),
+                Icons.help_outline_rounded,
+                title: 'Savol gap'),
           if ((r['negativeNoteUz'] as String?)?.isNotEmpty ?? false)
             _warn(r['negativeNoteUz'] as String, AppColors.danger,
-                Icons.do_not_disturb_alt_rounded),
+                Icons.do_not_disturb_alt_rounded,
+                title: 'Inkor gap'),
           ..._keyRules(context),
           if (section.rule?.warningUz.isNotEmpty ?? false)
             _warn(section.rule!.warningUz, AppColors.danger,
-                Icons.warning_amber_rounded),
+                Icons.warning_amber_rounded,
+                title: 'Diqqat!'),
           if (section.rule?.noteUz.isNotEmpty ?? false)
             _warn(section.rule!.noteUz, AppColors.actionBlue,
-                Icons.info_outline_rounded),
+                Icons.info_outline_rounded,
+                title: 'Eslatma'),
           if ((r['pluralNoteUz'] as String?)?.isNotEmpty ?? false)
             _warn(r['pluralNoteUz'] as String, AppColors.homework,
-                Icons.info_outline_rounded),
+                Icons.info_outline_rounded,
+                title: 'Ko\'plik haqida'),
           if ((r['extraUz'] as String?)?.isNotEmpty ?? false)
             _warn(r['extraUz'] as String, AppColors.brandPurple,
-                Icons.lightbulb_outline_rounded),
+                Icons.lightbulb_outline_rounded,
+                title: 'Qo\'shimcha'),
           // `noteEn` va `listEn` ham ilgari ekranga chiqmasdi.
           if ((r['noteEn'] as String?)?.isNotEmpty ?? false)
             _warn(r['noteEn'] as String, AppColors.actionBlue,
-                Icons.text_fields_rounded),
-          if (r['listEn'] is List && (r['listEn'] as List).isNotEmpty)
+                Icons.text_fields_rounded,
+                title: 'Inglizcha eslatma'),
+          if (r['listEn'] is List && (r['listEn'] as List).isNotEmpty) ...[
+            const _H('So\'zlar ro\'yxati'),
             Padding(
               padding: const EdgeInsets.only(bottom: 14),
               child: Wrap(
@@ -85,6 +102,7 @@ class RuleScreen extends StatelessWidget {
                 ],
               ),
             ),
+          ],
         ],
       ),
     );
@@ -100,7 +118,7 @@ class RuleScreen extends StatelessWidget {
               color: AppColors.brandPurple.withValues(alpha: 0.10),
               borderRadius: BorderRadius.circular(AppRadius.pill),
             ),
-            child: Text('📖 ${section.sourceLabel}',
+            child: Text('📖 Kitobda: ${friendlyRef(section.sourceLabel)}',
                 style: const TextStyle(
                     fontSize: 11.5,
                     fontWeight: FontWeight.w700,
@@ -123,7 +141,9 @@ class RuleScreen extends StatelessWidget {
             ExplainText(text, style: const TextStyle(fontSize: 14, height: 1.6)),
       );
 
-  Widget _warn(String text, Color c, IconData icon) => Container(
+  /// Rangli quti. [title] - nima ekani ("Diqqat!", "Eslatma", "Savol gap").
+  Widget _warn(String text, Color c, IconData icon, {String title = ''}) =>
+      Container(
         width: double.infinity,
         margin: const EdgeInsets.only(bottom: 12),
         padding: const EdgeInsets.all(13),
@@ -138,8 +158,21 @@ class RuleScreen extends StatelessWidget {
             Icon(icon, size: 18, color: c),
             const SizedBox(width: 10),
             Expanded(
-              child:
-                  Text(text, style: const TextStyle(fontSize: 13, height: 1.55)),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  if (title.isNotEmpty) ...[
+                    Text(title,
+                        style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w900,
+                            color: c)),
+                    const SizedBox(height: 2),
+                  ],
+                  Text(text,
+                      style: const TextStyle(fontSize: 13, height: 1.55)),
+                ],
+              ),
             ),
           ],
         ),
@@ -149,7 +182,7 @@ class RuleScreen extends StatelessWidget {
     final list = r['usage'] as List?;
     if (list == null || list.isEmpty) return [];
     return [
-      const _H('Qo\'llanishi'),
+      const _H('Qaysi olmosh bilan qanday ishlatiladi'),
       for (final u in list.cast<Map>())
         _row(context, u['pronoun']?.toString() ?? '',
             u['uzRule']?.toString() ?? '', u['enRule']?.toString() ?? ''),
@@ -163,6 +196,23 @@ class RuleScreen extends StatelessWidget {
     final neg = r['negative'] as List?;
     return [
       const _H('Jadval'),
+      // Jadvaldagi ranglar nimani bildirishi - ilgari hech qayerda
+      // yozilmagan edi.
+      Padding(
+        padding: const EdgeInsets.only(bottom: 8),
+        child: Wrap(
+          spacing: 8,
+          runSpacing: 6,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            Text('Ranglar:',
+                style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
+            _chip('yashil - oddiy gap', AppColors.success),
+            _chip('qizil - inkor gap (emas)', AppColors.danger),
+            _chip('ko\'k - savol gap', AppColors.actionBlue),
+          ],
+        ),
+      ),
       Container(
         margin: const EdgeInsets.only(bottom: 14),
         decoration: BoxDecoration(
@@ -328,7 +378,7 @@ class RuleScreen extends StatelessWidget {
     final uz = (r['exampleUz'] as String?) ?? '';
     if (en.isEmpty && uz.isEmpty) return [];
     return [
-      const _H('Namuna'),
+      const _H('Namuna gap'),
       Container(
         width: double.infinity,
         margin: const EdgeInsets.only(bottom: 14),
@@ -364,7 +414,7 @@ class RuleScreen extends StatelessWidget {
     final first = list.first;
     if (first is! Map || !(first.containsKey('q'))) return [];
     return [
-      const _H('Qisqa javoblar'),
+      const _H('Savolga qisqa javob (Yes / No)'),
       for (final x in list.cast<Map>())
         Container(
           width: double.infinity,
@@ -409,7 +459,7 @@ class RuleScreen extends StatelessWidget {
     final list = r['keyRules'] as List?;
     if (list == null || list.isEmpty) return [];
     return [
-      const _H('Muhim qoidalar'),
+      const _H('Eng muhim qoidalar (to\'g\'ri va xato misol bilan)'),
       for (final x in list.cast<Map>())
         Container(
           width: double.infinity,
@@ -427,10 +477,10 @@ class RuleScreen extends StatelessWidget {
                       fontWeight: FontWeight.w800, fontSize: 13.5)),
               const SizedBox(height: 8),
               _pair(Icons.check_circle_rounded, AppColors.success,
-                  x['correct']?.toString() ?? ''),
+                  x['correct']?.toString() ?? '', 'To\'g\'ri:'),
               const SizedBox(height: 4),
               _pair(Icons.cancel_rounded, AppColors.danger,
-                  x['wrong']?.toString() ?? ''),
+                  x['wrong']?.toString() ?? '', 'Xato:'),
               if ((x['whyUz']?.toString() ?? '').isNotEmpty) ...[
                 const SizedBox(height: 7),
                 Text(x['whyUz'].toString(),
@@ -442,13 +492,22 @@ class RuleScreen extends StatelessWidget {
     ];
   }
 
-  Widget _pair(IconData i, Color c, String t) => Row(
+  Widget _pair(IconData i, Color c, String t, String label) => Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Icon(i, size: 16, color: c),
           const SizedBox(width: 7),
           Expanded(
-              child: Text(t, style: const TextStyle(fontSize: 13, height: 1.4))),
+            child: Text.rich(
+              TextSpan(children: [
+                TextSpan(
+                    text: '$label ',
+                    style: TextStyle(fontWeight: FontWeight.w800, color: c)),
+                TextSpan(text: t),
+              ]),
+              style: const TextStyle(fontSize: 13, height: 1.4),
+            ),
+          ),
         ],
       );
 
@@ -527,6 +586,11 @@ class WordFormationScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
         children: [
+          const PageIntro(
+              'Bu yerda: so\'zdan yangi so\'z yasash qoidalari. Chapda - '
+              'asosiy so\'z, o\'ngda - undan yasalgani (masalan, teach '
+              '(o\'rgatmoq) va teacher (o\'qituvchi)). Bosilsa, ovozi '
+              'eshitiladi.'),
           for (final g in unit.wordFormation) _group(context, g),
         ],
       ),
@@ -583,8 +647,11 @@ class WordFormationScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const Icon(Icons.arrow_forward_rounded,
-                  size: 16, color: AppColors.success),
+              const Tooltip(
+                message: 'dan yasaladi',
+                child: Icon(Icons.arrow_forward_rounded,
+                    size: 16, color: AppColors.success),
+              ),
               const SizedBox(width: 10),
               Expanded(
                 child: Column(
@@ -633,6 +700,9 @@ class SentencePatternsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
         children: [
+          const PageIntro(
+              'Bu yerda: gap tuzish qoliplari. Ko\'k qutida - qolip, ostida '
+              '- shu qolipdagi misol (bosilsa, ovozi eshitiladi).'),
           for (final p in unit.sentencePatterns) _card(context, p),
         ],
       ),
@@ -652,6 +722,14 @@ class SentencePatternsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Text('Qolip:',
+                  style: TextStyle(
+                      fontSize: 11.5,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.muted(context))),
+            ),
             Container(
               padding:
                   const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
@@ -723,10 +801,15 @@ class _UnitVocabularyScreenState extends State<UnitVocabularyScreen> {
       );
     }
     return Scaffold(
-      appBar: const _Bar(title: 'Unit lug\'ati'),
+      appBar: const _Bar(title: 'Unit (bob) lug\'ati'),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
         children: [
+          const PageIntro(
+              'Bu yerda: shu unit (bob) so\'zlari. Qatorni bossangiz, ovozi '
+              'eshitiladi. Belgilar so\'z qanchalik yodda ekanini '
+              'ko\'rsatadi: 🌱 endi boshlangan, 🌿 o\'syapti, 🌳 mustahkam, '
+              '💎 deyarli yodda, 🏆 abadiy yodda.'),
           Pressable3D(
             color: AppColors.brandPurple,
             shadowColor: const Color(0xFF5B22B5),
@@ -737,12 +820,22 @@ class _UnitVocabularyScreenState extends State<UnitVocabularyScreen> {
             child: Center(
               child: Text(
                   v.length < 4
-                      ? 'Yodlash uchun kamida 4 so\'z kerak'
-                      : 'Yodlashni boshlash (${v.length} so\'z)',
+                      ? 'Test uchun kamida 4 so\'z kerak'
+                      : 'Test boshlash (${v.length} so\'z)',
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w800,
                       fontSize: 16)),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(4, 6, 4, 0),
+            child: Text(
+              'Test: inglizcha so\'z ko\'rsatiladi, siz o\'zbekchasini '
+              'tanlaysiz.',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
             ),
           ),
           const SizedBox(height: 18),
@@ -780,8 +873,12 @@ class _UnitVocabularyScreenState extends State<UnitVocabularyScreen> {
                         // Xotira bosqichi — so'z "o'sgani" ro'yxatda ham
                         // ko'rinsin.
                         if (!mastery.of(_id(e.en)).isNew) ...[
-                          Text(mastery.of(_id(e.en)).stageIcon,
-                              style: const TextStyle(fontSize: 16)),
+                          Tooltip(
+                            message: ItemMastery.stageName[
+                                mastery.of(_id(e.en)).stage],
+                            child: Text(mastery.of(_id(e.en)).stageIcon,
+                                style: const TextStyle(fontSize: 16)),
+                          ),
                           const SizedBox(width: 6),
                         ],
                         const Icon(Icons.volume_up_rounded,
@@ -874,7 +971,7 @@ class _VocabDrillState extends State<_VocabDrill> {
   Widget build(BuildContext context) {
     if (_i == -1) {
       return Scaffold(
-        appBar: const _Bar(title: 'Lug\'at yodlash'),
+        appBar: const _Bar(title: 'Lug\'at testi'),
         body: ListView(
           padding: const EdgeInsets.all(28),
           children: [
@@ -891,13 +988,22 @@ class _VocabDrillState extends State<_VocabDrill> {
             ),
             const SizedBox(height: 18),
             Center(
-              child: Text('$_correct / ${_queue.length}',
+              child: Text('$_correct / ${_queue.length} to\'g\'ri',
                   style: const TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.w800,
                       color: AppColors.success)),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 6),
+            Center(
+              child: Text(
+                'To\'g\'ri topilgan so\'zlar soni.',
+                textAlign: TextAlign.center,
+                style:
+                    TextStyle(fontSize: 13, color: AppColors.muted(context)),
+              ),
+            ),
+            const SizedBox(height: 10),
             Center(
               child: Container(
                 padding:
@@ -906,7 +1012,7 @@ class _VocabDrillState extends State<_VocabDrill> {
                   color: AppColors.coin.withValues(alpha: 0.16),
                   borderRadius: BorderRadius.circular(AppRadius.pill),
                 ),
-                child: Text('+$_xp XP',
+                child: Text('+$_xp ball',
                     style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w800,
@@ -919,7 +1025,7 @@ class _VocabDrillState extends State<_VocabDrill> {
               shadowColor: const Color(0xFF5B22B5),
               onPressed: widget.onExit,
               child: const Center(
-                child: Text('Lug\'atga qaytish',
+                child: Text('Unit lug\'atiga qaytish',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w800,
@@ -934,7 +1040,7 @@ class _VocabDrillState extends State<_VocabDrill> {
     final target = _queue[_i];
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Lug\'at yodlash'),
+        title: const Text('Lug\'at testi'),
         leading: IconButton(
             onPressed: widget.onExit,
             icon: const Icon(Icons.arrow_back_rounded)),
@@ -942,7 +1048,7 @@ class _VocabDrillState extends State<_VocabDrill> {
           Center(
             child: Padding(
               padding: const EdgeInsets.only(right: 16),
-              child: Text('${_i + 1} / ${_queue.length}',
+              child: Text('${_i + 1} / ${_queue.length} so\'z',
                   style: const TextStyle(
                       fontWeight: FontWeight.w800,
                       fontSize: 13,
@@ -954,6 +1060,11 @@ class _VocabDrillState extends State<_VocabDrill> {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(20, 16, 20, 30),
         children: [
+          // Ekranda nima qilish kerakligi (ilgari yozilmagan edi).
+          const QuestionCard(
+            question: 'Inglizcha so\'zning o\'zbekchasini tanlang.',
+            hint: 'Ovoz tugmasi - so\'zni qayta eshitish.',
+          ),
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(24),
@@ -1062,6 +1173,9 @@ class _ImageCreditsScreenState extends State<ImageCreditsScreen> {
           : ListView(
               padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
               children: [
+                const PageIntro(
+                    'Bu yerda: ilovadagi rasmlar kimniki va qaysi ruxsat '
+                    '(litsenziya) bilan olingani.'),
                 const Text(
                   'Kitobdagi rasmlar mualliflik huquqi bilan himoyalangan va '
                   'ko\'chirilmagan. Ularning o\'rniga Wikimedia Commons\'dagi '

@@ -2,8 +2,11 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+import '../levels.dart';
 import '../main.dart';
 import '../services/ai_tutor_service.dart';
 import '../services/speech.dart';
@@ -189,7 +192,9 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
             ranked.isEmpty ? '' : AiTutorService.attemptLabel(ranked.first);
         _info = via == primary
             ? null
-            : 'Javob berdi: $via (eng zo\'r model limiti tugagan bo\'lishi mumkin)';
+            : 'Bu javobni zaxira AI berdi (asosiy AI ning bepul limiti '
+                'vaqtincha tugagan bo\'lishi mumkin). Suhbat odatdagidek '
+                'davom etadi. (texnik: $via)';
         // Tuzatish foydalanuvchi xabari ostida ko'rinadi.
         _msgs[_msgs.length - 1] = userMsg.withFeedback(reply);
         _msgs.add(ChatMessage(
@@ -216,7 +221,10 @@ class _AiTutorScreenState extends State<AiTutorScreen> {
       if (!mounted) return;
       setState(() {
         _busy = false;
-        _error = e is TutorException ? e.message : 'Ulanib bo\'lmadi: $e';
+        _error = e is TutorException
+            ? e.message
+            : 'AI xizmatiga ulanib bo\'lmadi. Internetni tekshirib, xabarni '
+                'qayta yuboring. (texnik: ${AiTutorService.scrub(e)})';
       });
     }
   }
@@ -293,28 +301,49 @@ class _Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Padding(
         padding: const EdgeInsets.fromLTRB(20, 10, 12, 4),
-        child: Row(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const _Avatar(size: 40),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Mr. Vaysaqi', style: AppTheme.heading(context)),
-                  Text('Ingliz tili o\'qituvchisi · inglizcha yozing, xatoni yumshoq to\'g\'irlaydi',
-                      maxLines: 2,
-                      style: TextStyle(
-                          fontSize: 12, color: AppColors.muted(context))),
-                ],
-              ),
+            Row(
+              children: [
+                const _Avatar(size: 40),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Mr. Vaysaqi', style: AppTheme.heading(context)),
+                      // Daraja kitob bilan birga: "Beginner" yolg'iz
+                      // tushunarsiz.
+                      Text(
+                          'AI o\'qituvchi · Daraja: '
+                          '${levelLabel(progress.currentLevel)} · '
+                          '${levelBookTitle(progress.currentLevel).split(' - ').first}',
+                          maxLines: 2,
+                          style: TextStyle(
+                              fontSize: 12, color: AppColors.muted(context))),
+                    ],
+                  ),
+                ),
+                if (onClear != null)
+                  Tooltip(
+                    message: 'Suhbatni o\'chirish (yozishmalar tarixi o\'chadi)',
+                    child: TextButton.icon(
+                      onPressed: onClear,
+                      icon: const Icon(Icons.delete_sweep_rounded, size: 20),
+                      label: const Text('Tozalash'),
+                    ),
+                  ),
+              ],
             ),
-            if (onClear != null)
-              IconButton(
-                tooltip: 'Suhbatni tozalash',
-                onPressed: onClear,
-                icon: const Icon(Icons.delete_sweep_rounded),
-              ),
+            Padding(
+              padding: const EdgeInsets.only(right: 8, top: 2),
+              child: Text(
+                  'Shu darajaga mos oddiy inglizcha gapiradi, xatoingizni '
+                  'to\'g\'irlaydi.',
+                  style: TextStyle(
+                      fontSize: 12, color: AppColors.muted(context))),
+            ),
           ],
         ),
       );
@@ -346,13 +375,23 @@ class _Starters extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final words = mastery.learnedWords(limit: 3).map((e) => e.$2).toList();
-    final starters = <String>[
-      'Hello! My name is ... and I am from Uzbekistan.',
-      'Can we talk about my family?',
-      'What is your favourite food?',
-      'Let\'s talk about my day.',
-      if (words.isNotEmpty) 'Can you ask me questions with the words: ${words.join(', ')}?',
+    // (inglizcha gap, o'zbekcha ma'nosi) - boshlovchi gapni tushunib bossin.
+    final starters = <(String, String)>[
+      (
+        'Hello! I am a student from Uzbekistan.',
+        'Salom! Men O\'zbekistonlik talabaman.'
+      ),
+      ('Can we talk about my family?', 'Oilam haqida gaplashamizmi?'),
+      ('What is your favourite food?', 'Sevimli taomingiz nima?'),
+      ('Let\'s talk about my day.', 'Kunim haqida gaplashaylik.'),
+      if (words.isNotEmpty)
+        (
+          'Can you ask me questions with the words: ${words.join(', ')}?',
+          'O\'rgangan so\'zlarim bilan menga savol bering.'
+        ),
     ];
+    final muted = AppColors.muted(context);
+    final small = TextStyle(fontSize: 13, height: 1.45, color: muted);
     return ListView(
       padding: const EdgeInsets.all(20),
       children: [
@@ -365,20 +404,39 @@ class _Starters extends StatelessWidget {
         const SizedBox(height: 4),
         Center(
           child: Text(
-            'Inglizcha yozing — oddiy gap ham bo\'ladi. Xato bo\'lsa, '
-            'xabaringiz ostida to\'g\'ri variant va izoh chiqadi. Har xabar +3 XP.',
+            'Salom! Men Mr. Vaysaqi - AI (sun\'iy intellekt) o\'qituvchiman.',
             textAlign: TextAlign.center,
-            style: TextStyle(
-                fontSize: 13, height: 1.45, color: AppColors.muted(context)),
+            style: small,
           ),
         ),
+        const SizedBox(height: 12),
+        // Nima qilish kerak - qisqa, 3 qator.
+        Text(
+          'Pastdagi katakka inglizcha gap yozing va yuborish tugmasini '
+          'bosing (mikrofon tugmasi bo\'lsa, gapirib ham bo\'ladi).',
+          textAlign: TextAlign.center,
+          style: small,
+        ),
+        const SizedBox(height: 4),
+        Text(
+          'Xatoingiz bo\'lsa, xabaringiz ostida to\'g\'ri variant va '
+          'o\'zbekcha izoh chiqadi.',
+          textAlign: TextAlign.center,
+          style: small,
+        ),
+        const SizedBox(height: 4),
+        Text(
+          'Har xabar uchun +3 ball. Mr. Vaysaqi javobini ovoz chiqarib ham '
+          'o\'qiydi.',
+          textAlign: TextAlign.center,
+          style: small,
+        ),
         const SizedBox(height: 20),
-        Text('Boshlash uchun bosing:',
+        Text('Nima yozishni bilmasangiz, birini bosing (u darhol yuboriladi):',
             style: TextStyle(
-                fontSize: 12,
+                fontSize: 12.5,
                 fontWeight: FontWeight.w800,
-                letterSpacing: 0.6,
-                color: AppColors.muted(context))),
+                color: muted)),
         const SizedBox(height: 8),
         for (final s in starters)
           Padding(
@@ -388,7 +446,7 @@ class _Starters extends StatelessWidget {
               borderRadius: BorderRadius.circular(AppRadius.md),
               child: InkWell(
                 borderRadius: BorderRadius.circular(AppRadius.md),
-                onTap: () => onPick(s),
+                onTap: () => onPick(s.$1),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 14, vertical: 12),
@@ -398,9 +456,18 @@ class _Starters extends StatelessWidget {
                           size: 18, color: AppColors.brandPurple),
                       const SizedBox(width: 10),
                       Expanded(
-                        child: Text(s,
-                            style: const TextStyle(
-                                fontSize: 14, fontWeight: FontWeight.w600)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(s.$1,
+                                style: const TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600)),
+                            const SizedBox(height: 2),
+                            Text(s.$2,
+                                style: TextStyle(fontSize: 12, color: muted)),
+                          ],
+                        ),
                       ),
                     ],
                   ),
@@ -463,7 +530,7 @@ class _Bubble extends StatelessWidget {
                 const SizedBox(width: 4),
                 IconButton(
                   visualDensity: VisualDensity.compact,
-                  tooltip: 'Eshitish',
+                  tooltip: 'Javobni eshitish (ovoz chiqarib o\'qiydi)',
                   onPressed: () => Tts.instance.speak(msg.text, id: 'tutor'),
                   icon: const Icon(Icons.volume_up_rounded,
                       size: 20, color: AppColors.actionBlue),
@@ -485,20 +552,26 @@ class _Bubble extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  // Bu AI ning yangi javobi emas - SIZNING gapingizning
+                  // to'g'ri varianti ekani yorliq bilan aytiladi.
                   Row(
                     children: [
                       const Text('✏️', style: TextStyle(fontSize: 13)),
                       const SizedBox(width: 6),
-                      Flexible(
-                        child: Text(msg.correction,
-                            style: const TextStyle(
-                                fontSize: 13.5, fontWeight: FontWeight.w800)),
-                      ),
+                      Text('To\'g\'ri variant:',
+                          style: TextStyle(
+                              fontSize: 11.5,
+                              fontWeight: FontWeight.w800,
+                              color: AppColors.muted(context))),
                     ],
                   ),
+                  const SizedBox(height: 2),
+                  Text(msg.correction,
+                      style: const TextStyle(
+                          fontSize: 13.5, fontWeight: FontWeight.w800)),
                   if (msg.noteUz.isNotEmpty) ...[
-                    const SizedBox(height: 3),
-                    Text(msg.noteUz,
+                    const SizedBox(height: 4),
+                    Text('Izoh: ${msg.noteUz}',
                         style: TextStyle(
                             fontSize: 12.5,
                             height: 1.35,
@@ -510,7 +583,7 @@ class _Bubble extends StatelessWidget {
           else if (me && msg.praise)
             const Padding(
               padding: EdgeInsets.only(top: 4),
-              child: Text('👏 Zo\'r!',
+              child: Text('👏 Zo\'r! Xatosiz yozdingiz',
                   style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w800,
@@ -545,33 +618,44 @@ class _TypingState extends State<_Typing> with SingleTickerProviderStateMixin {
         children: [
           const _Avatar(size: 28),
           const SizedBox(width: 8),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.surface,
-              borderRadius: BorderRadius.circular(16),
-            ),
-            child: AnimatedBuilder(
-              animation: _a,
-              builder: (context, _) => Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  for (var i = 0; i < 3; i++)
-                    Container(
-                      width: 7,
-                      height: 7,
-                      margin: const EdgeInsets.symmetric(horizontal: 2.5),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: AppColors.brandPurple.withValues(
-                            alpha: 0.3 +
-                                0.7 *
-                                    (((_a.value * 3 - i) % 3).abs() < 1
-                                        ? 1 - ((_a.value * 3 - i) % 3).abs()
-                                        : 0)),
+          Flexible(
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.surface,
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: AnimatedBuilder(
+                animation: _a,
+                builder: (context, _) => Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    for (var i = 0; i < 3; i++)
+                      Container(
+                        width: 7,
+                        height: 7,
+                        margin: const EdgeInsets.symmetric(horizontal: 2.5),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: AppColors.brandPurple.withValues(
+                              alpha: 0.3 +
+                                  0.7 *
+                                      (((_a.value * 3 - i) % 3).abs() < 1
+                                          ? 1 - ((_a.value * 3 - i) % 3).abs()
+                                          : 0)),
+                        ),
                       ),
+                    const SizedBox(width: 8),
+                    // Nuqtalar nima ekani yozib qo'yiladi.
+                    Flexible(
+                      child: Text('Mr. Vaysaqi yozmoqda...',
+                          style: TextStyle(
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.w600,
+                              color: AppColors.muted(context))),
                     ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
@@ -636,47 +720,78 @@ class _InputBar extends StatelessWidget {
     );
   }
 
+  /// Mikrofon holati - tooltip telefonda ko'rinmaydi, shuning uchun
+  /// nima qilish kerakligi doim matn bilan yozib turiladi.
+  String? get _status {
+    if (!mic) return null;
+    if (listening) return 'Eshityapman... inglizcha gapiring';
+    return pushToTalk
+        ? 'Gapirish uchun mikrofonni bosib turing'
+        : 'Gapirish uchun mikrofonni bosing; javobdan keyin u o\'zi yonadi';
+  }
+
   @override
-  Widget build(BuildContext context) => SafeArea(
-        top: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(12, 4, 12, 12),
-          child: Row(
-            children: [
-              if (mic) ...[
-                _micButton(),
-                const SizedBox(width: 8),
-              ],
-              Expanded(
-                child: TextField(
-                  controller: controller,
-                  enabled: !busy,
-                  minLines: 1,
-                  maxLines: 4,
-                  textInputAction: TextInputAction.send,
-                  onSubmitted: (_) => onSend(),
-                  decoration: InputDecoration(
-                    hintText: 'Write in English...',
-                    isDense: true,
-                    filled: true,
-                    fillColor: Theme.of(context).colorScheme.surface,
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(AppRadius.lg),
-                        borderSide: BorderSide.none),
+  Widget build(BuildContext context) {
+    final status = _status;
+    return SafeArea(
+      top: false,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(12, 4, 12, 12),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (status != null)
+              Padding(
+                padding: const EdgeInsets.only(left: 4, bottom: 6),
+                child: Text(status,
+                    style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                        color: listening
+                            ? AppColors.danger
+                            : AppColors.muted(context))),
+              ),
+            Row(
+              children: [
+                if (mic) ...[
+                  _micButton(),
+                  const SizedBox(width: 8),
+                ],
+                Expanded(
+                  child: TextField(
+                    controller: controller,
+                    enabled: !busy,
+                    minLines: 1,
+                    maxLines: 4,
+                    textInputAction: TextInputAction.send,
+                    onSubmitted: (_) => onSend(),
+                    decoration: InputDecoration(
+                      hintText: 'Inglizcha yozing... (Write in English)',
+                      isDense: true,
+                      filled: true,
+                      fillColor: Theme.of(context).colorScheme.surface,
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(AppRadius.lg),
+                          borderSide: BorderSide.none),
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(width: 8),
-              IconButton.filled(
-                onPressed: busy ? null : onSend,
-                style: IconButton.styleFrom(
-                    backgroundColor: AppColors.brandPurple),
-                icon: const Icon(Icons.send_rounded, color: Colors.white),
-              ),
-            ],
-          ),
+                const SizedBox(width: 8),
+                IconButton.filled(
+                  tooltip: 'Yuborish',
+                  onPressed: busy ? null : onSend,
+                  style: IconButton.styleFrom(
+                      backgroundColor: AppColors.brandPurple),
+                  icon: const Icon(Icons.send_rounded, color: Colors.white),
+                ),
+              ],
+            ),
+          ],
         ),
-      );
+      ),
+    );
+  }
 }
 
 /// API kaliti yo'q — shu yerda kiritiladi (Sozlamalarga yugurmasdan).
@@ -697,83 +812,229 @@ class _NoKeyState extends State<_NoKey> {
     super.dispose();
   }
 
+  /// 2-qadam uchun: qaysi hisob bilan kiriladi.
+  String get _signIn => switch (_prov) {
+        'gemini' => 'Google hisobingiz (Gmail) bilan kiring.',
+        'groq' => 'Ro\'yxatdan o\'ting yoki kiring (Google bilan ham bo\'ladi).',
+        _ => 'Ro\'yxatdan o\'ting. Bu xizmat pullik: hisobga pul qo\'yish kerak.',
+      };
+
   @override
-  Widget build(BuildContext context) => ListView(
-        padding: const EdgeInsets.all(24),
-        children: [
-          const Center(child: _Avatar(size: 72)),
-          const SizedBox(height: 12),
-          Text('Mr. Vaysaqi',
-              textAlign: TextAlign.center, style: AppTheme.heading(context)),
-          const SizedBox(height: 6),
-          Text(
-            'AI o\'qituvchi bilan inglizcha suhbat: siz yozasiz, u javob '
-            'beradi, xatoni yumshoq to\'g\'irlaydi va o\'zbekcha izohlaydi.\n\n'
-            'Ishlashi uchun AI provayderi va uning API kaliti kerak. Gemini va '
-            'Groq bepul kalit beradi. Kalit faqat shu qurilmada saqlanadi.',
+  Widget build(BuildContext context) {
+    final muted = AppColors.muted(context);
+    final info = AiTutorService.providers[_prov]!;
+    final name = AiTutorService.providerShort[_prov] ?? _prov;
+    final empty = _c.text.trim().isEmpty;
+    // Kalit odatda shu belgilar bilan boshlanadi ("AIza...", "gsk_...").
+    final prefix = info.$3.replaceAll('...', '');
+    return ListView(
+      padding: const EdgeInsets.all(24),
+      children: [
+        const Center(child: _Avatar(size: 72)),
+        const SizedBox(height: 12),
+        Text('Mr. Vaysaqi',
+            textAlign: TextAlign.center, style: AppTheme.heading(context)),
+        const SizedBox(height: 6),
+        Text(
+          'Mr. Vaysaqi - AI (sun\'iy intellekt) o\'qituvchi. Siz inglizcha '
+          'yozasiz yoki gapirasiz, u javob beradi, xatoingizni to\'g\'irlaydi '
+          'va o\'zbekcha tushuntiradi.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 13.5, height: 1.5, color: muted),
+        ),
+        const SizedBox(height: 16),
+        Text('Ishlashi uchun bepul \'AI kaliti\' kerak',
             textAlign: TextAlign.center,
-            style: TextStyle(
-                fontSize: 13.5, height: 1.5, color: AppColors.muted(context)),
-          ),
-          const SizedBox(height: 18),
-          ProviderPicker(
+            style: AppTheme.heading(context).copyWith(fontSize: 17)),
+        const SizedBox(height: 4),
+        Text(
+          'AI kaliti - AI xizmatidan olinadigan uzun maxfiy kod (parol '
+          'kabi). Uni olish bepul, taxminan 2 daqiqa oladi.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 13, height: 1.45, color: muted),
+        ),
+        const SizedBox(height: 16),
+        _Step(
+          n: 1,
+          title: 'AI xizmatini tanlang (boshlovchiga Gemini yetarli)',
+          child: ProviderPicker(
             value: _prov,
             onChanged: (p) async {
               await progress.setAiProvider(p);
               if (mounted) setState(() {});
             },
           ),
-          const SizedBox(height: 6),
-          Text(
-            'Kalit: ${AiTutorService.providers[_prov]!.$2}',
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+        ),
+        _Step(
+          n: 2,
+          title: 'Brauzerda quyidagi saytni oching. $_signIn',
+          child: KeySiteLink(domain: info.$2),
+        ),
+        _Step(
+          n: 3,
+          title: '\'Create API key\' (kalit yaratish) tugmasini bosing va '
+              'chiqqan kodni nusxalang (Copy).',
+        ),
+        _Step(
+          n: 4,
+          title: 'Kodni pastdagi katakka qo\'ying va \'Saqlash va boshlash\' '
+              'ni bosing.',
+        ),
+        const SizedBox(height: 6),
+        TextField(
+          controller: _c,
+          obscureText: _hide,
+          onChanged: (_) => setState(() {}),
+          decoration: InputDecoration(
+            labelText: 'Kodni shu yerga qo\'ying',
+            hintText: info.$3,
+            helperText: 'Bu - AI kaliti. $name kaliti \'$prefix\' bilan '
+                'boshlanadi.',
+            helperMaxLines: 2,
+            border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(AppRadius.md)),
+            suffixIcon: IconButton(
+              tooltip: _hide ? 'Kodni ko\'rsatish' : 'Kodni yashirish',
+              onPressed: () => setState(() => _hide = !_hide),
+              icon: Icon(_hide
+                  ? Icons.visibility_rounded
+                  : Icons.visibility_off_rounded),
+            ),
           ),
-          const SizedBox(height: 10),
-          TextField(
-            controller: _c,
-            obscureText: _hide,
-            decoration: InputDecoration(
-              labelText: 'API kaliti',
-              hintText: AiTutorService.providers[_prov]!.$3,
-              border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(AppRadius.md)),
-              suffixIcon: IconButton(
-                onPressed: () => setState(() => _hide = !_hide),
-                icon: Icon(_hide
-                    ? Icons.visibility_rounded
-                    : Icons.visibility_off_rounded),
+        ),
+        const SizedBox(height: 12),
+        Pressable3D(
+          color: AppColors.brandPurple,
+          onPressed: () => progress.setAiKey(_prov, _c.text),
+          child: const Center(
+            child: Text('Saqlash va boshlash',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 16)),
+          ),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          empty
+              ? 'Avval kodni katakka qo\'ying.'
+              : 'Tugmani bosing - suhbat darhol ochiladi.',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              fontSize: 12.5,
+              fontWeight: FontWeight.w700,
+              color: empty ? muted : AppColors.success),
+        ),
+        const SizedBox(height: 14),
+        Text(
+          'Kalitni hech kimga bermang. U faqat shu qurilmada saqlanadi. '
+          'Yozganlaringiz tanlangan AI xizmatiga ($name) yuboriladi.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 12, height: 1.4, color: muted),
+        ),
+      ],
+    );
+  }
+}
+
+/// Raqamlangan qadam: "1" doira + matn (+ ixtiyoriy tugma/tanlov).
+class _Step extends StatelessWidget {
+  final int n;
+  final String title;
+  final Widget? child;
+  const _Step({required this.n, required this.title, this.child});
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.only(bottom: 12),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              width: 24,
+              height: 24,
+              alignment: Alignment.center,
+              decoration: const BoxDecoration(
+                  color: AppColors.brandPurple, shape: BoxShape.circle),
+              child: Text('$n',
+                  style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900,
+                      fontSize: 13)),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 2),
+                    child: Text(title,
+                        style: const TextStyle(
+                            fontSize: 13.5,
+                            height: 1.4,
+                            fontWeight: FontWeight.w700)),
+                  ),
+                  if (child != null) ...[
+                    const SizedBox(height: 8),
+                    child!,
+                  ],
+                ],
               ),
             ),
-          ),
-          const SizedBox(height: 12),
-          Pressable3D(
-            color: AppColors.brandPurple,
-            onPressed: () => progress.setAiKey(_prov, _c.text),
-            child: const Center(
-              child: Text('Saqlash va boshlash',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                      fontSize: 16)),
-            ),
-          ),
-        ],
+          ],
+        ),
       );
 }
 
-/// Provayder tanlash (Claude / Gemini / Groq) — segment tugmalar.
+/// AI kaliti olinadigan sayt: bosilsa yangi oynada ochiladi; ochilmasa
+/// manzil nusxalanadi (yalang domen "matn" bo'lib qolmasin).
+class KeySiteLink extends StatelessWidget {
+  final String domain;
+  const KeySiteLink({super.key, required this.domain});
+
+  Future<void> _open(BuildContext context) async {
+    final messenger = ScaffoldMessenger.maybeOf(context);
+    var opened = false;
+    try {
+      opened = await launchUrl(Uri.parse('https://$domain'),
+          mode: LaunchMode.externalApplication);
+    } catch (_) {}
+    if (opened) return;
+    try {
+      await Clipboard.setData(ClipboardData(text: domain));
+    } catch (_) {}
+    messenger?.showSnackBar(SnackBar(
+        content: Text('Sayt ochilmadi. Manzil nusxalandi: $domain. '
+            'Uni brauzer manzil qatoriga qo\'ying.')));
+  }
+
+  @override
+  Widget build(BuildContext context) => Align(
+        alignment: Alignment.centerLeft,
+        child: OutlinedButton.icon(
+          onPressed: () => _open(context),
+          icon: const Icon(Icons.open_in_new_rounded, size: 18),
+          label: Text(domain),
+        ),
+      );
+}
+
+/// Provayder tanlash (Gemini / Groq / Claude) — segment tugmalar.
+///
+/// [caption] berilsa, chiplar tepasida qisqa savol/izoh chiqadi.
 class ProviderPicker extends StatelessWidget {
   final String value;
   final ValueChanged<String> onChanged;
-  const ProviderPicker({super.key, required this.value, required this.onChanged});
+  final String? caption;
+  const ProviderPicker(
+      {super.key, required this.value, required this.onChanged, this.caption});
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
+    final chips = Wrap(
       spacing: 8,
       runSpacing: 8,
-      alignment: WrapAlignment.center,
       children: [
         for (final e in AiTutorService.providers.entries)
           ChoiceChip(
@@ -785,6 +1046,19 @@ class ProviderPicker extends StatelessWidget {
                 fontWeight: FontWeight.w700,
                 color: value == e.key ? AppColors.brandPurple : null),
           ),
+      ],
+    );
+    if (caption == null) return chips;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(caption!,
+            style: TextStyle(
+                fontSize: 12.5,
+                fontWeight: FontWeight.w700,
+                color: AppColors.muted(context))),
+        const SizedBox(height: 8),
+        chips,
       ],
     );
   }

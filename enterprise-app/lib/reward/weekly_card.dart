@@ -67,7 +67,11 @@ class _WeeklyCardState extends State<WeeklyCard> {
     await p.setBool(_key, true);
   }
 
-  static const _days = ['Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh', 'Ya'];
+  // Ustun tagida qisqa nom, "eng yaxshi kun" da to'liq nom.
+  static const _days = ['Dush', 'Sesh', 'Chor', 'Pay', 'Juma', 'Shan', 'Yak'];
+  static const _fullDays = [
+    'Dushanba', 'Seshanba', 'Chorshanba', 'Payshanba', 'Juma', 'Shanba', 'Yakshanba',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -109,21 +113,25 @@ class _WeeklyCardState extends State<WeeklyCard> {
                         fontSize: 15)),
               ),
               IconButton(
+                tooltip: 'Yopish (bu hafta qayta chiqmaydi)',
                 visualDensity: VisualDensity.compact,
                 onPressed: _close,
                 icon: const Icon(Icons.close_rounded, color: Colors.white70, size: 20),
               ),
             ],
           ),
+          Text('Dushanbadan yakshanbagacha qancha o\'qiganingiz',
+              style: TextStyle(
+                  color: Colors.white.withValues(alpha: 0.75), fontSize: 12)),
           const SizedBox(height: 10),
           Row(
             children: [
-              _Num(label: 'XP', value: '$total'),
-              _Num(label: 'faol kun', value: '$active/7'),
-              _Num(label: 'eng yaxshi', value: _days[best]),
+              _Num(label: 'ball', value: '$total'),
+              _Num(label: 'o\'qigan kunlar', value: '$active/7'),
+              _Num(label: 'eng yaxshi kun', value: _fullDays[best]),
               if (delta != null)
                 _Num(
-                  label: 'o\'tgan haftaga',
+                  label: 'oldingi haftadan',
                   value: '${delta >= 0 ? '+' : ''}$delta%',
                   color: delta >= 0 ? const Color(0xFF86EFAC) : const Color(0xFFFCA5A5),
                 ),
@@ -169,6 +177,10 @@ class _WeeklyCardState extends State<WeeklyCard> {
               ],
             ),
           ),
+          const SizedBox(height: 6),
+          Text('Ustun balandligi - shu kuni olgan ballingiz',
+              style: TextStyle(
+                  color: Colors.white.withValues(alpha: 0.7), fontSize: 11)),
         ],
       ),
     );
@@ -185,9 +197,14 @@ class _Num extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(value,
-                style: TextStyle(
-                    color: color, fontSize: 18, fontWeight: FontWeight.w900)),
+            // "Chorshanba" kabi uzun qiymat tor ekranda kichrayadi.
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              alignment: Alignment.centerLeft,
+              child: Text(value,
+                  style: TextStyle(
+                      color: color, fontSize: 18, fontWeight: FontWeight.w900)),
+            ),
             Text(label,
                 style: TextStyle(
                     color: Colors.white.withValues(alpha: 0.75), fontSize: 10.5)),

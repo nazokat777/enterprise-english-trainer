@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../drill/drill_item.dart';
+import '../drill/drill_screen.dart' show InstructionLine, instructionOf;
 import '../main.dart';
 import '../mastery.dart';
 import '../reward/confetti.dart';
@@ -170,7 +171,7 @@ class _BlitzScreenState extends State<BlitzScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('⚡ Blitz · ${widget.label}',
+        title: Text('⚡ Tezlik o\'yini · ${widget.label}',
             style: const TextStyle(fontSize: 16)),
       ),
       body: SafeArea(
@@ -183,21 +184,60 @@ class _BlitzScreenState extends State<BlitzScreen>
     );
   }
 
-  Widget _ready(BuildContext context) => ListView(
-        padding: const EdgeInsets.all(28),
+  // Boshlash tugmasi ekran TAGIDA qotirilgan: qoidalar matni uzun bo'lib,
+  // kichik telefonda tugma ekrandan tashqarida qolmasin.
+  Widget _ready(BuildContext context) => Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const SizedBox(height: 24),
-          const Center(child: Text('⚡', style: TextStyle(fontSize: 72))),
-          const SizedBox(height: 12),
+          Expanded(child: _readyBody(context)),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(28, 4, 28, 16),
+            child: Pressable3D(
+              color: AppColors.homework,
+              onPressed: widget.sources.length < 4 ? null : _start,
+              enabled: widget.sources.length >= 4,
+              child: Center(
+                child: Text(
+                    widget.sources.length < 4
+                        ? 'Kamida 4 ta so\'z kerak'
+                        : 'BOShLASh',
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w900,
+                        fontSize: 18,
+                        letterSpacing: 1)),
+              ),
+            ),
+          ),
+        ],
+      );
+
+  Widget _readyBody(BuildContext context) => ListView(
+        padding: const EdgeInsets.fromLTRB(28, 28, 28, 12),
+        children: [
+          const SizedBox(height: 8),
+          const Center(child: Text('⚡', style: TextStyle(fontSize: 64))),
+          const SizedBox(height: 8),
           const Center(
             child: Text('60 soniya',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800)),
           ),
           const SizedBox(height: 8),
+          // O'yin nima: vaqt tugamaguncha so'zning ma'nosini topish.
+          const Text(
+            "60 soniyada iloji boricha ko'p so'zning ma'nosini toping.",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: 15.5, height: 1.4, fontWeight: FontWeight.w700),
+          ),
+          const SizedBox(height: 10),
           Text(
-            'Iloji boricha ko\'p so\'z. To\'g\'ri javob = 1 ochko, '
-            '5 ta ketma-ket = x2, 10 ta = x3. Xato — ko\'paytirgich nolga.\n'
-            '${widget.sources.length} ta so\'z xaltada.',
+            "Har savolda bitta so'z beriladi - variantlardan to'g'risini "
+            "bosing. Javob bergach, darhol keyingi so'z chiqadi.\n"
+            "To'g'ri javob = 1 ball. Ketma-ket 5 ta to'g'ri bo'lsa, har "
+            "javob 2 ball, 10 ta bo'lsa 3 ball. Xato qilsangiz, "
+            "ketma-ket sanash qaytadan boshlanadi.\n"
+            "Savollar ${widget.sources.length} ta so'zdan olinadi.",
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 14, height: 1.5, color: AppColors.muted(context)),
@@ -212,26 +252,12 @@ class _BlitzScreenState extends State<BlitzScreen>
                 borderRadius: BorderRadius.circular(AppRadius.pill),
               ),
               child: Text(
-                  _best > 0 ? '🏆 Rekordingiz: $_best' : '🏆 Hali rekord yo\'q',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.w800, color: AppColors.coin)),
-            ),
-          ),
-          const SizedBox(height: 28),
-          Pressable3D(
-            color: AppColors.homework,
-            onPressed: widget.sources.length < 4 ? null : _start,
-            enabled: widget.sources.length >= 4,
-            child: Center(
-              child: Text(
-                  widget.sources.length < 4
-                      ? 'Kamida 4 ta so\'z kerak'
-                      : 'BOShLASh',
-                  style: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w900,
-                      fontSize: 18,
-                      letterSpacing: 1)),
+                  _best > 0
+                      ? '🏆 Eng yaxshi natijangiz: $_best ball'
+                      : '🏆 Hali natija yo\'q',
+                  style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      color: Theme.of(context).textTheme.bodyLarge?.color)),
             ),
           ),
         ],
@@ -246,47 +272,77 @@ class _BlitzScreenState extends State<BlitzScreen>
         Padding(
           padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Vaqt — oxirgi 10 soniyada qizil va urib turadi.
-              AnimatedScale(
-                scale: urgent && _left.isOdd ? 1.15 : 1,
-                duration: const Duration(milliseconds: 300),
-                child: Text('$_left',
-                    style: TextStyle(
-                        fontSize: 34,
-                        fontWeight: FontWeight.w900,
-                        color: color,
-                        fontFeatures: const [FontFeature.tabularFigures()])),
-              ),
-              const SizedBox(width: 6),
-              Text('s',
-                  style: TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.w700, color: color)),
-              const Spacer(),
-              if (_mult > 1)
-                Container(
-                  margin: const EdgeInsets.only(right: 8),
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 10, vertical: 4),
-                  decoration: BoxDecoration(
-                    color: AppColors.coin,
-                    borderRadius: BorderRadius.circular(AppRadius.pill),
-                  ),
-                  child: Text('x$_mult',
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w900,
-                          fontSize: 14)),
+              // Expanded: tor ekran va katta shriftda yorliq o'raladi,
+              // qator sig'maslikka uchramaydi.
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    AnimatedScale(
+                      scale: urgent && _left.isOdd ? 1.15 : 1,
+                      duration: const Duration(milliseconds: 300),
+                      child: Text('$_left',
+                          style: TextStyle(
+                              fontSize: 34,
+                              height: 1.1,
+                              fontWeight: FontWeight.w900,
+                              color: color,
+                              fontFeatures: const [
+                                FontFeature.tabularFigures()
+                              ])),
+                    ),
+                    // Raqam nimani bildirishi.
+                    Text('soniya qoldi',
+                        style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            color: color)),
+                  ],
                 ),
-              ScaleTransition(
-                scale: Tween(begin: 1.0, end: 1.35)
-                    .chain(CurveTween(curve: Curves.easeOutBack))
-                    .animate(ReverseAnimation(_pop)),
-                child: Text('$_score',
-                    style: const TextStyle(
-                        fontSize: 34,
-                        fontWeight: FontWeight.w900,
-                        color: AppColors.success)),
+              ),
+              if (_mult > 1)
+                Tooltip(
+                  message: "Ketma-ket to'g'ri javoblar uchun har javob "
+                      '$_mult ball beradi',
+                  child: Container(
+                    margin: const EdgeInsets.only(right: 12, top: 8),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 10, vertical: 4),
+                    decoration: BoxDecoration(
+                      // Oq matn sariq fonda o'qilmasdi - to'q sariq.
+                      color: AppColors.homework,
+                      borderRadius: BorderRadius.circular(AppRadius.pill),
+                    ),
+                    child: Text('x$_mult ball',
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w900,
+                            fontSize: 14)),
+                  ),
+                ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  ScaleTransition(
+                    scale: Tween(begin: 1.0, end: 1.35)
+                        .chain(CurveTween(curve: Curves.easeOutBack))
+                        .animate(ReverseAnimation(_pop)),
+                    child: Text('$_score',
+                        style: const TextStyle(
+                            fontSize: 34,
+                            height: 1.1,
+                            fontWeight: FontWeight.w900,
+                            color: AppColors.success)),
+                  ),
+                  const Text('ball',
+                      style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.success)),
+                ],
               ),
             ],
           ),
@@ -307,8 +363,15 @@ class _BlitzScreenState extends State<BlitzScreen>
             ),
           ),
         ),
-        const SizedBox(height: 22),
+        const SizedBox(height: 16),
         if (q != null) ...[
+          // Yo'nalish tasodifiy almashadi (inglizcha -> o'zbekcha yoki
+          // aksincha) - shuning uchun HAR SAVOLDA aytiladi.
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: InstructionLine(instructionOf(q)),
+          ),
+          const SizedBox(height: 14),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child: Text(q.prompt,
@@ -316,7 +379,7 @@ class _BlitzScreenState extends State<BlitzScreen>
                 style: const TextStyle(
                     fontSize: 28, fontWeight: FontWeight.w800, height: 1.2)),
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: 18),
           Expanded(
             child: ListView(
               padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -392,7 +455,18 @@ class _BlitzScreenState extends State<BlitzScreen>
                             fontWeight: FontWeight.w900,
                             color: Colors.white)),
                   ),
-                  Text('ochko · +${_score + (_newRecord ? 15 : 0)} XP',
+                  Text('ball to\'pladingiz ($_correct ta to\'g\'ri javob)',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white.withValues(alpha: 0.95))),
+                  const SizedBox(height: 2),
+                  Text(
+                      '+${_score + (_newRecord ? 15 : 0)} ball hisobingizga '
+                      "qo'shildi"
+                      '${_newRecord ? " (shundan 15 ball - yangi rekord uchun)" : ""}',
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: 13.5,
                           fontWeight: FontWeight.w700,
@@ -402,15 +476,31 @@ class _BlitzScreenState extends State<BlitzScreen>
             ),
             const SizedBox(height: 18),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _Stat(label: 'To\'g\'ri', value: '$_correct', color: AppColors.success),
+                _Stat(
+                    label: "To'g'ri javob",
+                    value: '$_correct',
+                    color: AppColors.success),
                 _Stat(label: 'Xato', value: '$_wrong', color: AppColors.danger),
                 _Stat(
                     label: 'Aniqlik',
                     value: total == 0 ? '-' : '${(_correct * 100 / total).round()}%',
                     color: AppColors.actionBlue),
-                _Stat(label: 'Rekord', value: '$_best', color: AppColors.coin),
+                _Stat(
+                    label: 'Eng yaxshi natija',
+                    value: '$_best',
+                    color: AppColors.homework),
               ],
+            ),
+            const SizedBox(height: 8),
+            // Raqamlar nimani bildirishi va keyin nima bo'lishi.
+            Text(
+              "Aniqlik - barcha javoblaringiz ichida to'g'rilarining ulushi. "
+              "Adashgan so'zlar keyingi mashqlarda ko'proq so'raladi.",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
             ),
             const SizedBox(height: 26),
             Pressable3D(
@@ -427,7 +517,7 @@ class _BlitzScreenState extends State<BlitzScreen>
             const SizedBox(height: 10),
             TextButton(
               onPressed: () => Navigator.pop(context, _score),
-              child: const Text('Chiqish'),
+              child: const Text('Orqaga qaytish'),
             ),
           ],
         ),
@@ -490,8 +580,9 @@ class _Stat extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 20, fontWeight: FontWeight.w900, color: color)),
             Text(label,
+                textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontSize: 11, color: AppColors.muted(context))),
+                    fontSize: 11.5, color: AppColors.muted(context))),
           ],
         ),
       );

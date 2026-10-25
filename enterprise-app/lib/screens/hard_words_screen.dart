@@ -5,6 +5,7 @@ import '../main.dart';
 import '../mistakes.dart';
 import '../teach/explain.dart';
 import '../teach/explain_card.dart';
+import '../teach/question_card.dart' show PageIntro;
 import '../teach/vocab_lookup.dart';
 import '../book_content.dart';
 import 'book/exercise_player.dart';
@@ -44,6 +45,12 @@ class HardWordsScreen extends StatelessWidget {
         return ListView(
           padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
           children: [
+            // Sahifa nima ekani - uch xil narsa bir joyda turadi.
+            const PageIntro(
+                'Bu yerda: sizga qiyin bo\'lgan narsalar - qiyin mavzular,'
+                'xato qilingan savollar (Xatolar daftari) va bir necha marta '
+                'unutilgan so\'zlar. Mavzuni bossangiz yoki "ishlash" '
+                'tugmasini bossangiz, shular ustida mashq boshlanadi.'),
             // ZAIF MAVZULAR — "qaysi joyini o'zlashtirolmayapti".
             // Bu so'zlardan kengroq: grammatika, o'qish, gapirish
             // bandlari ham hisobga olinadi.
@@ -181,7 +188,9 @@ class _Header extends StatelessWidget {
                                 ? AppColors.darkHeading
                                 : AppColors.lightHeading)),
                     const SizedBox(height: 2),
-                    Text('$count ta so\'z qayta-qayta unutilyapti',
+                    Text(
+                        '$count ta so\'zni bir necha marta unutdingiz. '
+                        'Ular ustida alohida ishlang.',
                         style: TextStyle(
                             fontSize: 12.5, color: AppColors.muted(context))),
                   ],
@@ -203,7 +212,9 @@ class _Header extends StatelessWidget {
                   Icon(Icons.replay_rounded, color: Colors.white, size: 21),
                   SizedBox(width: 10),
                   Flexible(
-                    child: Text('Shu so\'zlar ustida ishlash',
+                    child: Text(
+                        'Shu so\'zlar bilan mashq qilish '
+                        '(${HardWordsScreen._drillSize} tagacha)',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Colors.white,
@@ -287,10 +298,13 @@ class _HardWordCard extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               if (srs.isKnown)
-                const _Chip(
-                  icon: Icons.check_rounded,
-                  text: 'endi yodda',
-                  color: AppColors.success,
+                const Tooltip(
+                  message: 'Oxirgi marta to\'g\'ri aytdingiz',
+                  child: _Chip(
+                    icon: Icons.check_rounded,
+                    text: 'endi yodda',
+                    color: AppColors.success,
+                  ),
                 ),
             ],
           ),
@@ -340,7 +354,7 @@ class _MistakesSection extends StatelessWidget {
       kind: ExKind.choice,
       tasks: tasks,
       instructionEn: 'Work on your own mistakes.',
-      instructionUz: "O'z xatolaringiz ustida ishlang — to'g'ri topilgani daftardan o'chadi.",
+      instructionUz: "O'z xatolaringiz ustida ishlang. To'g'ri topgan savolingiz daftardan o'chadi.",
       book: 'quiz',
       pageLabel: 'xatolar',
     );
@@ -380,18 +394,20 @@ class _MistakesSection extends StatelessWidget {
                   const Text('📓', style: TextStyle(fontSize: 18)),
                   const SizedBox(width: 8),
                   Expanded(
-                    child: Text('Xatolar daftari — ${items.length} ta band',
+                    child: Text('Xatolar daftari — ${items.length} ta savol',
                         style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
                   ),
                   TextButton(
                     onPressed: mistakes.clear,
-                    child: const Text('Tozalash', style: TextStyle(fontSize: 12)),
+                    child: const Text('Daftarni tozalash',
+                        style: TextStyle(fontSize: 12)),
                   ),
                 ],
               ),
               Text(
-                "Xato qilingan bandlar. To'g'ri topilgani daftardan o'chadi — "
-                "o'z xatolari ustida ishlash eng samarali usul.",
+                "Siz xato qilgan savollar. To'g'ri topgan savolingiz "
+                "daftardan o'chadi. Pastdagi tugma faqat shu savollarni "
+                "qayta so'raydi.",
                 style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
               ),
               const SizedBox(height: 8),
@@ -410,7 +426,7 @@ class _MistakesSection extends StatelessWidget {
                         textStyle: const TextStyle(fontWeight: FontWeight.w900)),
                     onPressed: () => _quiz(context),
                     icon: const Icon(Icons.replay_rounded),
-                    label: Text('Xatolar ustida ishlash ($quizable)'),
+                    label: Text('Xatolar ustida ishlash ($quizable ta savol)'),
                   ),
                 ),
             ],
@@ -459,31 +475,38 @@ class _MistakeRowState extends State<_MistakeRow> {
                     color: AppColors.danger, shape: BoxShape.circle),
               ),
               const SizedBox(width: 8),
+              // Savol, ostida to'g'ri javob ("=" belgisi o'rniga) va
+              // necha marta xato qilingani ("x2" o'rniga).
               Expanded(
-                child: RichText(
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  text: TextSpan(
-                    style: TextStyle(
-                        fontSize: 12.5,
-                        color: Theme.of(context).textTheme.bodyMedium?.color),
-                    children: [
-                      TextSpan(
-                          text: m.prompt,
-                          style: const TextStyle(fontWeight: FontWeight.w700)),
-                      TextSpan(
-                          text: '   =  ${m.answer}',
-                          style: const TextStyle(
-                              color: AppColors.success,
-                              fontWeight: FontWeight.w800)),
-                      if (m.times > 1)
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      m.prompt,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: 12.5,
+                          fontWeight: FontWeight.w700,
+                          color: Theme.of(context).textTheme.bodyMedium?.color),
+                    ),
+                    Text.rich(
+                      TextSpan(children: [
                         TextSpan(
-                            text: '  x${m.times}',
+                            text: 'To\'g\'ri javob: ${m.answer}',
                             style: const TextStyle(
-                                color: AppColors.danger,
+                                color: AppColors.success,
                                 fontWeight: FontWeight.w800)),
-                    ],
-                  ),
+                        if (m.times > 1)
+                          TextSpan(
+                              text: '   ${m.times} marta xato',
+                              style: const TextStyle(
+                                  color: AppColors.danger,
+                                  fontWeight: FontWeight.w800)),
+                      ]),
+                      style: const TextStyle(fontSize: 12.5),
+                    ),
+                  ],
                 ),
               ),
               if (items.isNotEmpty)
@@ -496,7 +519,7 @@ class _MistakeRowState extends State<_MistakeRow> {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text(_open ? 'Yopish' : 'Nega?',
+                        Text(_open ? 'Yopish' : 'Nega xato?',
                             style: const TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w800,

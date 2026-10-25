@@ -24,37 +24,37 @@ const List<MnemonicVideo> kMnemonicVideos = [
     'dR-Q07BhKj8',
     'Xotirani kuchaytiradigan 3 prinsip',
     '11:38',
-    'Boshlash uchun eng yaxshisi: hajm, konkretlik, bog\'lash.',
+    'Boshlash uchun eng yaxshisi: xotira qanday ishlashi va uni qanday kuchaytirish.',
   ),
   MnemonicVideo(
     'n1MI3p0KpzY',
     'Chet tili so\'zlarini eslab qolishning 7 qadamli algoritmi',
     '42:17',
-    'Eng muhimi: ilgak, obraz, yopib eslash, oraliqli takror.',
+    'So\'zni ilgak (o\'xshash so\'z), sahna va qaramasdan eslash bilan yodlash usuli.',
   ),
   MnemonicVideo(
     'ruaSbmL9ErE',
     '30 daqiqalik amaliy dars',
     '32:50',
-    'Qarmoq usuli - 15 so\'zni tartib bilan eslab qolish mashqi.',
+    'Amaliy dars: 15 so\'zni raqamlarga bog\'lab, tartib bilan yodlash (qarmoq usuli).',
   ),
   MnemonicVideo(
     'fyxL4D1WF9M',
     'Til o\'rganishda orqaga tortayotgan 9 ta xato',
     '58:39',
-    'Maqsad, intizom, qo\'rquv, diqqat - va ularning yechimi.',
+    'Til o\'rganishda eng ko\'p uchraydigan xatolar va ularning yechimi.',
   ),
   MnemonicVideo(
     'hX_L9p8ZEIg',
     '1 kunda 1000 ta so\'z yodlash mumkinmi?',
     '9:09',
-    'Savol-javob: real kutish, grammatika, ishtiyoq.',
+    'Savol-javob: nimani kutish real, grammatika va o\'rganishga ishtiyoq haqida.',
   ),
   MnemonicVideo(
     'Wc7p4NgO_SU',
     'Xorijiy so\'zlarni yodlashning ko\'pchilik bilmaydigan usuli',
     '4:06',
-    '"Super usul" kitobi haqida qisqa tanishtiruv.',
+    'Chet so\'zlarni yodlashning kam ma\'lum usuli ("Super usul" kitobi) haqida qisqa tanishtiruv.',
   ),
 ];
 
@@ -79,16 +79,16 @@ class MnemonicVideosCard extends StatelessWidget {
               Text('🎬', style: TextStyle(fontSize: 18)),
               SizedBox(width: 8),
               Expanded(
-                child: Text('Mnemonika darsliklari',
+                child: Text('Mnemonika haqida videolar (YouTube)',
                     style: TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
               ),
             ],
           ),
           const SizedBox(height: 4),
           Text(
-            'Mnemonika nima ekanini tushunmagan bo\'lsangiz - avval shu '
-            'videolarni ko\'ring (Davronbek Turdiev, YouTube). Ilovadagi reja '
-            'shu usullarga asoslangan. Tartib bilan ko\'rish tavsiya etiladi.',
+            'Mnemonika nimaligini bilmasangiz, avval shu videolarni ko\'ring '
+            '(muallif: Davronbek Turdiev). Bosganingizda YouTube ochiladi. '
+            'Ilovadagi reja shu usullarga asoslangan.',
             style: TextStyle(fontSize: 12.5, height: 1.45, color: muted),
           ),
           const SizedBox(height: 10),
@@ -141,12 +141,15 @@ class _VideoRow extends StatelessWidget {
                         style: const TextStyle(
                             fontWeight: FontWeight.w800, fontSize: 13)),
                     const SizedBox(height: 2),
-                    Text('${v.length} · ${v.about}',
+                    Text('Davomiyligi ${v.length} · ${v.about}',
                         style: TextStyle(fontSize: 11.5, height: 1.35, color: muted)),
                   ],
                 ),
               ),
-              Icon(Icons.open_in_new_rounded, size: 16, color: muted),
+              Tooltip(
+                message: 'YouTube\'da ochiladi',
+                child: Icon(Icons.open_in_new_rounded, size: 16, color: muted),
+              ),
             ],
           ),
         ),

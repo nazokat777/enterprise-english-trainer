@@ -151,13 +151,20 @@ class _TypeStageState extends State<TypeStage> {
         : _result!
             ? AppColors.success
             : AppColors.danger;
+    final clear = clarify(widget.task,
+        kind: ExKind.text, instructionUz: widget.instructionUz);
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
         QuestionCard(
-          question: clarify(widget.task,
-                  kind: ExKind.text, instructionUz: widget.instructionUz)
-              .question,
+          question: clear.question,
+          // Yodlashda ikki bosqich bor (yig'ish, keyin yozish) - hozirgi
+          // bosqich aniq aytiladi.
+          hint: [
+            'Hozir klaviaturada yozing: gapni eshiting va inglizchasini '
+                'yozing. Xato bo\'lsa, to\'g\'risi harfma-harf ko\'rsatiladi.',
+            clear.hint,
+          ].where((e) => e.isNotEmpty).join(' '),
           source: widget.source,
         ),
         ExplanationCard(text: widget.explanation),
@@ -166,7 +173,7 @@ class _TypeStageState extends State<TypeStage> {
         if (_near) const NearMissNote(),
         Center(
           child: Text(
-            t.prompt,
+            cleanPrompt(t.prompt),
             textAlign: TextAlign.center,
             style: const TextStyle(
                 fontSize: 16, height: 1.4, fontWeight: FontWeight.w800),
@@ -240,6 +247,9 @@ class _TypeStageState extends State<TypeStage> {
                 : widget.task.promptUz,
             lookup: meaningOf,
             isCorrect: false,
+            // "To'g'risi:" yuqorida harfma-harf yozilgan.
+            showAnswer: false,
+            willRepeat: true,
           ),
         ] else if (_result == null)
           Pressable3D(
@@ -276,7 +286,7 @@ BookExercise memorizeExerciseFrom(BookExercise study) {
   final tasks = <ExTask>[
     for (final t in lines)
       ExTask(
-        prompt: '🔊 Tinglang va so\'zlardan gap tuzing',
+        prompt: '🔊 Tinglang va so\'zlardan gapni yig\'ing',
         promptUz: t.uz,
         answer: t.en.trim(),
         speak: t.en.trim(),
@@ -284,7 +294,7 @@ BookExercise memorizeExerciseFrom(BookExercise study) {
       ),
     for (final t in lines)
       ExTask(
-        prompt: '⌨️ Tinglang va o\'zingiz yozing',
+        prompt: '🔊 Tinglang va klaviaturada yozing',
         promptUz: t.uz,
         answer: t.en.trim(),
         speak: t.en.trim(),
@@ -297,8 +307,8 @@ BookExercise memorizeExerciseFrom(BookExercise study) {
     kind: ExKind.text,
     tasks: tasks,
     instructionEn: 'Listen, build, then type each sentence.',
-    instructionUz: 'Avval so\'zlardan yig\'ing, so\'ng o\'zingiz yozing. '
-        'Xato bo\'lsa qaytadi - hammasi to\'g\'ri bo\'lguncha.',
+    instructionUz: 'Avval so\'zlardan yig\'ing, so\'ng klaviaturada yozing. '
+        'Xato bo\'lsa savol qaytadi - hammasi to\'g\'ri bo\'lguncha.',
     book: study.book,
     bookPage: study.bookPage,
     pageLabel: study.pageLabel,

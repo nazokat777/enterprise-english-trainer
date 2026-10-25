@@ -117,13 +117,25 @@ class Pace {
     required this.minutesPerDay,
   });
 
-  /// Qiyinlik yorlig'i — "Stockdale": realistik kutish.
+  /// Qiyinlik yorlig'i — "Stockdale": realistik kutish. Yorliq kuniga
+  /// ketadigan VAQTGA qarab qo'yiladi (chegaralar yuqorida).
   String get difficulty {
-    if (minutesPerDay <= 25) return 'Yengil';
-    if (minutesPerDay <= 45) return 'O\'rtacha';
-    if (minutesPerDay <= 75) return 'Og\'ir';
+    if (minutesPerDay <= kEasyMinutes) return 'Yengil';
+    if (minutesPerDay <= kMediumMinutes) return 'O\'rtacha';
+    if (minutesPerDay <= kHardMinutes) return 'Og\'ir';
     return 'Juda og\'ir';
   }
+}
+
+/// Qiyinlik chegaralari (kuniga daqiqa): yengil, o'rtacha, og'ir.
+const int kEasyMinutes = 25, kMediumMinutes = 45, kHardMinutes = 75;
+
+/// Kitob nomini daraja bilan birga ko'rsatadi: "Enterprise 1 - Beginner"
+/// -> "Beginner · Enterprise 1". Boshqa ko'rinishdagi nom o'zgarmaydi.
+String levelBookLine(String bookTitle) {
+  final parts = bookTitle.split(' - ');
+  if (parts.length != 2) return bookTitle;
+  return '${parts[1].trim()} · ${parts[0].trim()}';
 }
 
 Pace paceFor(BookVolume v, int days) {
@@ -148,7 +160,7 @@ const List<int> kPlanDurations = [30, 60, 90, 120, 180, 270, 365];
 /// Tavsiya: kunlik 45 daqiqadan oshmaydigan ENG QISQA muddat.
 int recommendedDays(BookVolume v) {
   for (final d in kPlanDurations) {
-    if (paceFor(v, d).minutesPerDay <= 45) return d;
+    if (paceFor(v, d).minutesPerDay <= kMediumMinutes) return d;
   }
   return kPlanDurations.last;
 }

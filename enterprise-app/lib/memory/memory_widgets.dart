@@ -19,7 +19,7 @@ import 'memory.dart';
 /// kristallgacha o'sadigan so'z, so'nayotgan so'zni qutqarish, o'z
 /// eslatmasi.
 
-/// So'zning xotira bosqichi — kichik chip (🌿 Nihol · 3 kun).
+/// So'zning xotira bosqichi — kichik chip (🌿 Nihol · har 3 kunda takrorlanadi).
 class MemoryStageChip extends StatelessWidget {
   final String itemId;
   const MemoryStageChip({super.key, required this.itemId});
@@ -29,21 +29,34 @@ class MemoryStageChip extends StatelessWidget {
     final m = mastery.of(itemId);
     final s = m.stage;
     final color = stageColor(s);
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-      decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.14),
-        borderRadius: BorderRadius.circular(AppRadius.pill),
-      ),
-      child: Text(
-        '${ItemMastery.stageEmoji[s]} ${ItemMastery.stageName[s]}'
-        '${m.interval > 0 ? ' · ${m.interval} kun' : ''}',
-        style: TextStyle(
-            fontSize: 11.5, fontWeight: FontWeight.w800, color: color),
+    final every = m.interval == 1 ? 'har kuni' : 'har ${m.interval} kunda';
+    return Tooltip(
+      message: 'Bu so\'z xotirangizda qanchalik mustahkam: '
+          'Urug\' > Nihol > Daraxt > Kristall > Abadiy. '
+          'Har to\'g\'ri takror uni keyingi bosqichga o\'tkazadi.',
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        decoration: BoxDecoration(
+          color: color.withValues(alpha: 0.14),
+          borderRadius: BorderRadius.circular(AppRadius.pill),
+        ),
+        child: Text(
+          '${ItemMastery.stageEmoji[s]} ${ItemMastery.stageName[s]}'
+          '${m.interval > 0 ? ' · $every takrorlanadi' : ''}',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+              fontSize: 11.5, fontWeight: FontWeight.w800, color: color),
+        ),
       ),
     );
   }
 }
+
+/// "🌱 Urug'  🌿 Nihol  🌳 Daraxt  💎 Kristall  🏆 Abadiy" — bosqichlar izohi.
+String _stagesLine() => [
+      for (var s = 0; s < ItemMastery.stageEmoji.length; s++)
+        '${ItemMastery.stageEmoji[s]} ${ItemMastery.stageName[s]}',
+    ].join('  ');
 
 Color stageColor(int stage) => switch (stage) {
       0 => const Color(0xFF9CA3AF),
@@ -71,11 +84,19 @@ class HookBubble extends StatelessWidget {
             const Text('💡', style: TextStyle(fontSize: 15)),
             const SizedBox(width: 8),
             Flexible(
-              child: Text(text,
-                  style: const TextStyle(
-                      fontSize: 13.5,
-                      fontWeight: FontWeight.w700,
-                      fontStyle: FontStyle.italic)),
+              child: Text.rich(
+                TextSpan(
+                  style: const TextStyle(fontSize: 13.5, fontWeight: FontWeight.w700),
+                  children: [
+                    const TextSpan(
+                        text: 'Sizning ilgagingiz (eslatma): ',
+                        style: TextStyle(fontWeight: FontWeight.w900)),
+                    TextSpan(
+                        text: text,
+                        style: const TextStyle(fontStyle: FontStyle.italic)),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
@@ -134,12 +155,13 @@ class _HookEditorState extends State<HookEditor> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('💡 Qiyin so\'zga o\'z eslatmangizni yozing',
+          const Text('💡 Qiyin bo\'lgan so\'zlarga ilgak yozing',
               style: TextStyle(fontSize: 14.5, fontWeight: FontWeight.w800)),
           const SizedBox(height: 4),
           Text(
-            'O\'zingiz topgan bog\'lanish (o\'xshash so\'z, rasm, hazil) '
-            'tayyor qoidadan 3 barobar mustahkam yodda qoladi. +3 XP.',
+            'Ilgak - so\'zni eslatadigan o\'xshash so\'z, rasm yoki hazil. '
+            'O\'zingiz topgan ilgak tayyor qoidadan 3 barobar mustahkam yodda '
+            'qoladi. Yozsangiz, har biri uchun +3 ball. Ixtiyoriy.',
             style: TextStyle(
                 fontSize: 12, height: 1.4, color: AppColors.muted(context)),
           ),
@@ -166,6 +188,7 @@ class _HookEditorState extends State<HookEditor> {
                 ),
                 const SizedBox(width: 8),
                 IconButton.filled(
+                  tooltip: _saved.contains(w.$1) ? 'Saqlandi' : 'Saqlash',
                   onPressed: () => _save(w.$1),
                   icon: Icon(_saved.contains(w.$1)
                       ? Icons.check_rounded
@@ -212,15 +235,23 @@ class MemoryGrowthList extends StatelessWidget {
       children: [
         if (grown > 0)
           Padding(
-            padding: const EdgeInsets.only(bottom: 10),
+            padding: const EdgeInsets.only(bottom: 4),
             child: Text(
-              '🌱 $grown ta so\'z xotirangizda o\'sdi',
+              '🌱 $grown ta so\'z xotirangizda mustahkamlandi',
               textAlign: TextAlign.center,
               style: const TextStyle(
                   fontSize: 14, fontWeight: FontWeight.w800,
                   color: AppColors.success),
             ),
           ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: Text(
+            'Xotira bosqichi: ${_stagesLine()}',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+          ),
+        ),
         for (var i = 0; i < items.length; i++)
           _GrowthRow(item: items[i], delay: 120 * i),
       ],
@@ -290,11 +321,18 @@ class _GrowthRowState extends State<_GrowthRow>
                 ),
               ],
               const SizedBox(width: 6),
-              Text('${it.interval} kun',
-                  style: TextStyle(
-                      fontSize: 11.5,
-                      fontWeight: FontWeight.w700,
-                      color: stageColor(it.after))),
+              // Tor ekranda kichrayadi - hech qachon oshib ketmaydi.
+              Flexible(
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  alignment: Alignment.centerRight,
+                  child: Text('${it.interval} kundan keyin takror',
+                      style: TextStyle(
+                          fontSize: 11.5,
+                          fontWeight: FontWeight.w700,
+                          color: stageColor(it.after))),
+                ),
+              ),
             ],
           ),
         );
@@ -303,7 +341,8 @@ class _GrowthRowState extends State<_GrowthRow>
   }
 }
 
-/// BOSh EKRAN: "N ta so'z o'chib ketmoqda — qutqar!" yoki xotira bog'i.
+/// BOSh EKRAN: "N ta so'zni unutib qo'yishingiz mumkin" (takrorlash tugmasi)
+/// yoki xotira bog'i.
 class MemoryRescueCard extends StatelessWidget {
   const MemoryRescueCard({super.key});
 
@@ -340,15 +379,15 @@ class MemoryRescueCard extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('$n ta so\'z o\'chib ketmoqda',
+                            Text('$n ta so\'zni unutib qo\'yishingiz mumkin',
                                 style: const TextStyle(
                                     fontWeight: FontWeight.w800,
                                     fontSize: 15,
                                     color: AppColors.danger)),
                             const SizedBox(height: 2),
                             Text(
-                              'Takrorlash muddati o\'tdi — hozir eslasangiz, '
-                              'ular mustahkamlanadi',
+                              'Bu so\'zlarni takrorlash vaqti o\'tib ketdi. '
+                              'Hozir 1-2 daqiqa takrorlasangiz, yodda qoladi.',
                               style: TextStyle(
                                   fontSize: 12.5,
                                   height: 1.35,
@@ -360,6 +399,12 @@ class MemoryRescueCard extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 10),
+                  Text('Shu so\'zlar:',
+                      style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.muted(context))),
+                  const SizedBox(height: 4),
                   Wrap(
                     spacing: 6,
                     runSpacing: 6,
@@ -383,7 +428,7 @@ class MemoryRescueCard extends StatelessWidget {
                     onPressed: () => startRescue(context),
                     child: Center(
                       child: Text(
-                          '🛟 Qutqarish · ${min(n, MemoryRescue.size)} ta so\'z',
+                          '🛟 Hozir takrorlash · ${min(n, MemoryRescue.size)} ta so\'z',
                           style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.w800,
@@ -407,7 +452,7 @@ class MemoryRescueCard extends StatelessWidget {
       MaterialPageRoute(
         builder: (_) => LessonScreen(
           lesson: l,
-          unitLabel: '🛟 Xotira qutqaruvi',
+          unitLabel: '🛟 So\'zlarni takrorlash',
           rescue: true,
         ),
       ),
@@ -493,43 +538,57 @@ class MemoryGardenCard extends StatelessWidget {
               const Text('🌳', style: TextStyle(fontSize: 20)),
               const SizedBox(width: 8),
               Expanded(
-                child: Text('Xotira bog\'i · $total ta so\'z',
-                    style: const TextStyle(
-                        fontWeight: FontWeight.w800, fontSize: 15)),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Xotira bog\'i: o\'rgangan $total ta so\'zingiz',
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w800, fontSize: 15)),
+                    Text('Takrorlash kerak bo\'lgan so\'z yo\'q',
+                        style: TextStyle(
+                            fontSize: 11.5,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.success.withValues(alpha: 0.9))),
+                  ],
+                ),
               ),
-              Text('hammasi o\'z vaqtida',
-                  style: TextStyle(
-                      fontSize: 11.5,
-                      fontWeight: FontWeight.w700,
-                      color: AppColors.success.withValues(alpha: 0.9))),
             ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            'So\'z har to\'g\'ri takrorlanganda 🌱 dan 🏆 gacha o\'sadi. '
+            'Abadiy - endi unutilmaydi.',
+            style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
           ),
           const SizedBox(height: 10),
           Row(
             children: [
               for (var s = 0; s < g.length; s++)
                 Expanded(
-                  child: Column(
-                    children: [
-                      Text(ItemMastery.stageEmoji[s],
-                          style: TextStyle(
-                              fontSize: g[s] > 0 ? 22 : 16,
-                              color: g[s] > 0
-                                  ? null
-                                  : Colors.black.withValues(alpha: 0.3))),
-                      const SizedBox(height: 2),
-                      Text('${g[s]}',
-                          style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w800,
-                              color: g[s] > 0
-                                  ? stageColor(s)
-                                  : AppColors.muted(context))),
-                      Text(ItemMastery.stageName[s],
-                          style: TextStyle(
-                              fontSize: 10,
-                              color: AppColors.muted(context))),
-                    ],
+                  child: Tooltip(
+                    message: s < _stageHints.length ? _stageHints[s] : '',
+                    child: Column(
+                      children: [
+                        Text(ItemMastery.stageEmoji[s],
+                            style: TextStyle(
+                                fontSize: g[s] > 0 ? 22 : 16,
+                                color: g[s] > 0
+                                    ? null
+                                    : Colors.black.withValues(alpha: 0.3))),
+                        const SizedBox(height: 2),
+                        Text('${g[s]}',
+                            style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w800,
+                                color: g[s] > 0
+                                    ? stageColor(s)
+                                    : AppColors.muted(context))),
+                        Text(ItemMastery.stageName[s],
+                            style: TextStyle(
+                                fontSize: 10,
+                                color: AppColors.muted(context))),
+                      ],
+                    ),
                   ),
                 ),
             ],
@@ -538,6 +597,15 @@ class MemoryGardenCard extends StatelessWidget {
       ),
     );
   }
+
+  /// Har bosqich nimani bildirishi (bosib/uzoq bosib ko'riladi).
+  static const _stageHints = [
+    'Urug\': yangi so\'z, 1 kundan keyin takrorlanadi',
+    'Nihol: 3 kundan keyin takrorlanadi',
+    'Daraxt: 7 kundan keyin takrorlanadi',
+    'Kristall: 2-4 haftadan keyin takrorlanadi',
+    'Abadiy: juda mustahkam, endi unutilmaydi',
+  ];
 }
 
 /// 🌙 UXLAShDAN OLDIN — bugungi zaif so'zlarni bir eslab qo'yish.
@@ -564,15 +632,15 @@ class _TonightCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Uxlashdan oldin ${l.words.length} ta so\'z',
+                    Text('Uxlashdan oldin ${l.words.length} ta so\'zni takrorlang',
                         style: const TextStyle(
                             fontWeight: FontWeight.w800,
                             fontSize: 15,
                             color: Color(0xFF4338CA))),
                     const SizedBox(height: 2),
                     Text(
-                      'Uyqu xotirani mustahkamlaydi: oxirgi eslagan '
-                      'so\'zlaringiz ertalab yodda qoladi. 1 daqiqa.',
+                      'Bugun qiynalgan so\'zlarni uxlashdan oldin eslab qo\'ysangiz, '
+                      'ertalab yodda qoladi. 1 daqiqa.',
                       style: TextStyle(
                           fontSize: 12.5,
                           height: 1.35,
@@ -656,16 +724,16 @@ class _BlitzCardState extends State<BlitzCard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Blitz · 60 soniya',
+                    const Text('60 soniyalik tezlik o\'yini',
                         style: TextStyle(
                             fontWeight: FontWeight.w800,
                             fontSize: 15,
                             color: AppColors.homework)),
                     const SizedBox(height: 2),
                     Text(
-                      _best > 0
-                          ? 'Rekord: $_best · ${src.length} ta o\'rganilgan so\'z'
-                          : '${src.length} ta o\'rganilgan so\'z bilan tezlik sinovi',
+                      '60 soniyada o\'rgangan so\'zlaringizdan ko\'proq javob bering '
+                      '(${src.length} ta so\'z). '
+                      '${_best > 0 ? 'Eng yaxshi natija: $_best ball' : 'Hali rekord yo\'q'}',
                       style: TextStyle(
                           fontSize: 12.5, color: AppColors.muted(context)),
                     ),

@@ -50,40 +50,52 @@ class _WelcomeTourState extends State<WelcomeTour> {
     Icons.mic_rounded,
     LinearGradient(colors: [Color(0xFFEC4899), Color(0xFFF97316)]),
     'Gapiring - mikrofon eshitadi',
-    "So'z darsida talaffuz raundi, Suhbatlarda rol o'ynash: siz "
-        "aytasiz, brauzer tekshiradi. Ovoz chiqarib aytilgan so'z 2 barobar "
-        'mustahkam yodda qoladi.',
+    "So'z darsida talaffuz savoli, Suhbatlarda rol o'ynash: siz "
+        "aytasiz, brauzer tekshiradi. Ovoz chiqarib aytilgan so'z yaxshiroq "
+        "yodda qoladi. Mikrofon bo'lmasa - \"o'tkazish\" tugmasi bor.",
   );
 
   static const _basePages = [
     (
       Icons.auto_stories_rounded,
       AppColors.brandGradient,
-      'Enterprise kitobi - o\'yin ko\'rinishida',
-      'Coursebook, Workbook va Grammar kitoblarining har bir beti '
-          'interaktiv mashqqa aylantirilgan. Kitob qo\'lingizda bo\'lsa ham, '
-          'bo\'lmasa ham - ilova betma-bet olib boradi.',
+      "Ingliz tilini 0 dan o'rganing",
+      "Bu ilova - Enterprise darsliklari (Coursebook, Workbook, Grammar) "
+          "asosidagi kurs. Kitob shart emas: so'zlar, qoidalar va mashqlar "
+          "shu yerning o'zida. Hammasi unitlarga (boblarga) bo'lingan - "
+          "ketma-ket o'tasiz.",
+    ),
+    (
+      Icons.route_rounded,
+      AppColors.brandGradient,
+      "Har unit shunday o'tadi",
+      "1) So'z darslari - yangi so'zlarni tarjimasi va ovozi bilan "
+          "o'rganasiz.\n2) Grammatika - qoida va misollar.\n3) Mashqlar - "
+          "o'rganganingizni sinaysiz.\n4) Unit oxirida imtihon.\n"
+          "Keyingi qadamni bosh ekrandagi \"Davom eting\" kartasi aytadi.",
     ),
     (
       Icons.psychology_rounded,
       AppColors.successGradient,
-      'Xotira ilmi bilan yodlanadi',
-      'Har so\'z avval ko\'rsatiladi, so\'ng 3-4 shaklda so\'raladi va '
-          '1-3-7-14-30 kun oralig\'ida qayta keladi. Xato - jazo emas: '
-          'band qaytadi, siz o\'zlashtirmaguningizcha.',
+      "Xotira ilmi bilan yodlanadi",
+      "Har so'z avval ko'rsatiladi, keyin turli shaklda so'raladi va "
+          "1, 3, 7, 14, 30 kundan keyin qayta keladi - shunda esdan "
+          "chiqmaydi. Xato uchun jazo yo'q: so'z qayta so'raladi. "
+          "Bilmasangiz \"Bilmayman - ko'rsat\" tugmasi bor.",
     ),
     (
       Icons.rocket_launch_rounded,
       AppColors.goldGradient,
-      'Har kuni 3 daqiqa',
-      'Bosh ekrandagi "Tez mashq" - bir bosishda. Seriya, XP, missiyalar, '
-          'Blitz va imtihonlar sizni har kuni qaytarib turadi. Boshlaymizmi?',
+      "Har kuni 3 daqiqa",
+      "Bosh ekrandagi \"Tez mashq\" bir bosishda boshlaydi. Tepadagi "
+          "raqamlar - ketma-ket kunlaringiz, bugungi ball va tangalar; "
+          "ma'nosini \"?\" tugmasi tushuntiradi. Boshlaymizmi?",
     ),
   ];
 
   /// Gapirish sahifasi faqat nutq tanish bor brauzerda (oxirgidan oldin).
   late final List<(IconData, Gradient, String, String)> _pages = Speech.supported
-      ? [..._basePages.sublist(0, 2), _speakPage, _basePages[2]]
+      ? [..._basePages.sublist(0, 3), _speakPage, _basePages[3]]
       : _basePages;
 
   @override

@@ -54,7 +54,9 @@ void main() {
 
   testWidgets('sozlash ekrani: slayder fe\'lni o\'zgartiradi, 18+ belgisi',
       (t) async {
-    t.view.physicalSize = const Size(500, 1100);
+    // Testda Ahem shrifti (har belgi kvadrat) matnni ancha uzun qiladi;
+    // ekran ListView, shuning uchun hamma narsa qurilishi uchun balandroq.
+    t.view.physicalSize = const Size(500, 2600);
     t.view.devicePixelRatio = 1.0;
     addTearDown(t.view.reset);
     await t.pumpWidget(const MaterialApp(home: TutorSetupScreen()));
@@ -66,7 +68,15 @@ void main() {
     expect(find.byType(TutorFace), findsOneWidget);
     expect(find.text('Erkin suhbat'), findsOneWidget);
     expect(find.text('Bosib turing'), findsOneWidget);
-    expect(find.text('18+'), findsNothing);
+    expect(find.text('18+ rejim yoqilgan'), findsNothing);
+    // Yangi kelgan odam uchun: bu kim va nima qilish kerak (AI, qadamlar).
+    expect(find.textContaining('sun\'iy intellekt (AI)'), findsOneWidget);
+    expect(find.text('Mr. Vaysaqi bilan qanday gaplashasiz?'), findsOneWidget);
+    expect(find.text('Xatoni qaysi tilda tushuntirsin?'), findsOneWidget);
+    expect(find.text('Hozir o\'chiq: o\'qituvchi toza tilda gapiradi.'),
+        findsOneWidget);
+    // Yon panelda (qaytadigan sahifa yo'q) "Orqaga" tugmasi ko'rinmaydi.
+    expect(find.text('Orqaga'), findsNothing);
 
     // Slayderni chapga — jahldor.
     final slider = find.byType(Slider);
@@ -75,16 +85,18 @@ void main() {
     await t.pump(const Duration(milliseconds: 600));
     expect(tutorPrefs.strictness, 0);
     expect(find.text('JAHLDOR'), findsWidgets);
-    expect(find.textContaining('Qo\'pol, kinoyali'), findsOneWidget);
+    expect(find.textContaining('Qo\'pol, masxara'), findsOneWidget);
 
-    // 18+ yoqiladi — yuqorida belgi chiqadi.
+    // 18+ yoqiladi — yuqorida belgi chiqadi, izoh yoqilganini aytadi.
     await t.tap(find.byType(Switch));
     await t.pump();
     expect(tutorPrefs.openMode, isTrue);
-    expect(find.text('18+'), findsOneWidget);
+    expect(find.text('18+ rejim yoqilgan'), findsOneWidget);
+    expect(find.textContaining('Yoqilgan: o\'qituvchi'), findsOneWidget);
 
-    // Kalit yo'q — tugma "API kalitini kiritish".
-    expect(find.text('API kalitini kiritish'), findsOneWidget);
+    // Kalit yo'q — tugma bepul AI kalitini kiritishga olib boradi.
+    expect(find.text('Davom etish - bepul AI kalitini kiritish'),
+        findsOneWidget);
     await t.pump(const Duration(seconds: 3));
   });
 }

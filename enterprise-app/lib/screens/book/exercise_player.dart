@@ -78,8 +78,10 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   int _shownFor = -1;
 
   void _armQuestion() {
-    if (_shownFor == _index) return;
-    _shownFor = _index;
+    // NAVBAT o'rni bo'yicha (band indeksi emas): xato qilingan oxirgi band
+    // darhol o'sha indeksda qaytadi - u ham yangi savol sanaladi.
+    if (_shownFor == _pos) return;
+    _shownFor = _pos;
     _shownAt = DateTime.now();
     _golden = rewards.rollGolden();
   }
@@ -90,9 +92,6 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   /// Har bir band bo'yicha xato soni — natijada ko'rsatiladi.
   final Map<int, int> _misses = <int, int>{};
 
-  /// Uzun ko'rsatma to'liq ochilganmi.
-  bool _instrOpen = false;
-
   /// Moslash mashqida topilgan juftlar — sarlavhadagi chiziq uchun.
   int _matchDone = 0;
 
@@ -101,6 +100,21 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
   bool _done = false;
 
   BookExercise get ex => widget.exercise;
+
+  /// Mashq nomi o'zbekcha: "7-mashq" (kitobdagi "Ex. 7" emas). Ilovaning
+  /// o'zi yasagan mashqlarda (book: 'quiz') raqam yolg'on bo'lardi
+  /// ("Ex. 1"), shuning uchun bo'sh.
+  String get _exName {
+    if (ex.book == 'quiz') return '';
+    final n = exerciseRefUz(ex.ref);
+    // Umumiy "Mashq" (ichki yorliq yoki ref yo'q) - sarlavhada takror.
+    return n == 'Mashq' ? '' : n;
+  }
+
+  /// Sarlavha: "Grammatika - mashq · 7-mashq" yoki faqat bo'lim nomi.
+  String get _heading => _exName.isEmpty
+      ? widget.sectionTitle
+      : '${widget.sectionTitle} · $_exName';
 
   @override
   void initState() {
@@ -111,7 +125,7 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     progress.rememberExercise(
       unit: ex.unitNo,
       id: ex.progressId,
-      label: '${widget.sectionTitle} · ${ex.title}',
+      label: _heading,
     );
   }
 
@@ -262,13 +276,19 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
     final stay = await showDialog<bool>(
       context: context,
       builder: (c) => AlertDialog(
-        title: Text('Yana $left ta band qoldi'),
+        title: Text(ex.kind == ExKind.match
+            ? 'Yana $left ta juft qoldi'
+            : 'Yana $left ta savol qoldi'),
         content: Text(
-          combo >= 3
-              ? '$combo lik komboingiz yo\'qoladi. Tugatib qo\'ymaysizmi?'
-              : (left <= 5
-                    ? 'Oz qoldi — tugatib qo\'ymaysizmi?'
-                    : 'Boshlangan ish chala qolmasin — davom etamizmi?'),
+          [
+            if (combo >= 3)
+              'Ketma-ket $combo ta to\'g\'ri javobingiz uziladi.',
+            if (combo < 3)
+              left <= 5
+                  ? 'Oz qoldi - tugatib qo\'ymaysizmi?'
+                  : 'Boshlangan ish chala qolmasin - davom etamizmi?',
+            'Chiqsangiz, mashq tugallanmagan bo\'lib qoladi.',
+          ].join(' '),
         ),
         actions: [
           TextButton(
@@ -306,37 +326,43 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              '${widget.sectionTitle} · ${ex.title}',
+              _heading,
               style: const TextStyle(fontSize: 17),
             ),
-            // Qaysi kitobning qaysi beti — o'quvchi adashmasin.
-            Text(
-              widget.unitLabel.isNotEmpty
-                  ? ex.locationLabel(widget.unitLabel)
-                  : ex.sourceLabel,
-              style: const TextStyle(
-                fontSize: 11.5,
-                fontWeight: FontWeight.w600,
-                color: AppColors.brandPurple,
+            // Qaysi kitobning qaysi beti - o'quvchi adashmasin. Ilovaning
+            // o'zi yasagan mashqlarda (Diktant, test) kitob manzili yo'q.
+            if (exerciseSource(ex, widget.unitLabel).isNotEmpty)
+              Text(
+                'Kitobda: ${exerciseSource(ex, widget.unitLabel)}',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontSize: 11.5,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.brandPurple,
+                ),
               ),
-            ),
           ],
         ),
         actions: [
           Center(
-            child: Container(
-              margin: const EdgeInsets.only(right: 14),
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-              decoration: BoxDecoration(
-                color: AppColors.coin.withValues(alpha: 0.16),
-                borderRadius: BorderRadius.circular(AppRadius.pill),
-              ),
-              child: Text(
-                '⚡ $_xp XP',
-                style: const TextStyle(
-                  fontWeight: FontWeight.w800,
-                  color: AppColors.coin,
-                  fontSize: 13,
+            child: Tooltip(
+              message: 'Shu mashqda yig\'ilgan ball',
+              child: Container(
+                margin: const EdgeInsets.only(right: 14),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  color: AppColors.coin.withValues(alpha: 0.16),
+                  borderRadius: BorderRadius.circular(AppRadius.pill),
+                ),
+                child: Text(
+                  '⚡ $_xp ball',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.coin,
+                    fontSize: 13,
+                  ),
                 ),
               ),
             ),
@@ -349,7 +375,7 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
 
   Widget _body() {
     if (ex.tasks.isEmpty) {
-      return const Center(child: Text('Bu mashqda band yo\'q'));
+      return const Center(child: Text('Bu mashqda savol yo\'q'));
     }
     if (_done) return _result();
 
@@ -361,6 +387,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           HelpSkipBar(
             onHelp: () => _giveUp(show: true),
             onSkip: () => _giveUp(show: false),
+            helpHint: "javob ko'rsatiladi, savol keyin yana so'raladi",
+            skipHint: "javobsiz o'tadi, savol keyin yana so'raladi",
           ),
       ],
     );
@@ -401,6 +429,16 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
         : (simple ? 1.0 : _mastered.length / total);
     // Bu band ilgari xato qilinganmi — o'quvchi qaytganini bilsin.
     final repeat = !simple && (_misses[_index] ?? 0) > 0;
+    // O'qish (study) sahnasida yutuq sanalmaydi - to'la turgan chiziq
+    // "tugagan" degan taassurot berardi, shuning uchun u yerda yo'q.
+    if (ex.kind == ExKind.study) return const SizedBox(height: 4);
+    // Sanagich nimani sanashi yozilgan: "2 / 8 to'g'ri", "3 / 5 juft".
+    final counter = ex.kind == ExKind.match
+        ? '$_matchDone / ${ex.tasks.length} juft'
+        : '${_mastered.length} / ${ex.tasks.length} to\'g\'ri';
+    // Birinchi savolda mashq qoidasi bir marta aytiladi.
+    final showRule =
+        !simple && _pos == 0 && _misses.isEmpty && _mastered.isEmpty;
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
       child: Column(
@@ -418,94 +456,78 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
             ),
           ),
           const SizedBox(height: 8),
+          // KO'RSATMA har bandning "Nima qilinadi" kartasida turadi
+          // (kitobdagi manzili bilan) - bu yerda takrorlanmaydi.
           Row(
             children: [
-              // KO'RSATMA endi har bandning "Nima qilinadi" kartasida
-              // turadi (manzili bilan) - bu yerda takrorlanmaydi.
-              // Faqat o'qish (study) sahnasida karta yo'q, shuning
-              // uchun u yerda ko'rsatma shu qatorda qoladi.
-              if (ex.kind == ExKind.study)
               Expanded(
-                child: GestureDetector(
-                  onTap: () => setState(() => _instrOpen = !_instrOpen),
-                  child: ConstrainedBox(
-                    constraints: BoxConstraints(
-                      maxHeight: _instrOpen
-                          ? MediaQuery.of(context).size.height * 0.3
-                          : double.infinity,
-                    ),
-                    child: SingleChildScrollView(
-                      physics: _instrOpen
-                          ? null
-                          : const NeverScrollableScrollPhysics(),
-                      child: Text(
-                        ex.instructionUz,
-                        maxLines: _instrOpen ? null : 3,
-                        overflow: _instrOpen
-                            ? TextOverflow.clip
-                            : TextOverflow.ellipsis,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.w800,
-                          fontSize: 14,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              )
-              else
-                const Spacer(),
-              if (repeat)
-                Padding(
-                  padding: const EdgeInsets.only(right: 8),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 8,
-                      vertical: 3,
-                    ),
-                    decoration: BoxDecoration(
-                      color: AppColors.homework.withValues(alpha: 0.14),
-                      borderRadius: BorderRadius.circular(AppRadius.pill),
-                    ),
-                    child: const Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          Icons.replay_rounded,
-                          size: 13,
-                          color: AppColors.homework,
-                        ),
-                        SizedBox(width: 4),
-                        Text(
-                          'takror',
-                          style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.homework,
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: repeat
+                      ? Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: Tooltip(
+                            message: 'Bu savolda oldin adashgansiz, '
+                                'shuning uchun yana so\'ralyapti',
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 3,
+                              ),
+                              decoration: BoxDecoration(
+                                color:
+                                    AppColors.homework.withValues(alpha: 0.14),
+                                borderRadius:
+                                    BorderRadius.circular(AppRadius.pill),
+                              ),
+                              child: const Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(
+                                    Icons.replay_rounded,
+                                    size: 13,
+                                    color: AppColors.homework,
+                                  ),
+                                  SizedBox(width: 4),
+                                  Flexible(
+                                    child: Text(
+                                      'qayta so\'ralyapti',
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.w700,
+                                        color: AppColors.homework,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                  ),
+                        )
+                      : const SizedBox.shrink(),
                 ),
-              if (!simple)
-                Text(
-                  '${_mastered.length} / ${ex.tasks.length}',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: AppColors.muted(context),
-                  ),
+              ),
+              Text(
+                counter,
+                style: TextStyle(
+                  fontSize: 12,
+                  color: AppColors.muted(context),
                 ),
+              ),
             ],
           ),
-          if (ex.bookRef.isNotEmpty)
+          if (showRule)
             Padding(
               padding: const EdgeInsets.only(top: 4),
               child: Text(
-                '📖 ${ex.bookRef}',
-                style: const TextStyle(
-                  fontSize: 11.5,
-                  color: AppColors.brandPurple,
+                'Xato qilgan savol keyinroq yana so\'raladi. Hammasiga to\'g\'ri '
+                'javob bergach mashq tugaydi.',
+                style: TextStyle(
+                  fontSize: 12,
+                  height: 1.35,
+                  color: AppColors.muted(context),
                 ),
               ),
             ),
@@ -516,14 +538,19 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
 
   Widget _stage() {
     if (ex.kind == ExKind.choice || ex.kind == ExKind.text) _armQuestion();
+    // Kitobdagi manzil ("Kitobda: ..."); ilovaning o'z mashqlarida bo'sh.
+    final source = exerciseSource(ex, widget.unitLabel);
     switch (ex.kind) {
       case ExKind.choice:
         return _ChoiceStage(
-          key: ValueKey('c$_index'),
+          // Kalitda navbat o'rni ham bor: xato qilingan OXIRGI band shu
+          // indeksda darhol qaytadi - kalit bir xil bo'lsa sahna eski
+          // javobda qotib qolardi (bosish ishlamasdi).
+          key: ValueKey('c$_index:$_pos'),
           golden: _golden,
           task: ex.tasks[_index],
           instructionUz: ex.instructionUz,
-          source: ex.locationLabel(widget.unitLabel),
+          source: source,
           explanation: _index == 0 ? ex.explanationUz : '',
           // Audio izohi HAR BIR bandda ko'rinadi: u mashqni qanday
           // yechish kerakligini aytadi ("javoblarni 4-mashqdan
@@ -535,11 +562,11 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       case ExKind.text:
         if (ex.tasks[_index].typed) {
           return TypeStage(
-            key: ValueKey('y$_index'),
+            key: ValueKey('y$_index:$_pos'),
             golden: _golden,
             task: ex.tasks[_index],
             instructionUz: ex.instructionUz,
-            source: ex.locationLabel(widget.unitLabel),
+            source: source,
             explanation: _index == 0 ? ex.explanationUz : '',
             audioNote: ex.audioNoteUz,
             onDone: _answered,
@@ -547,9 +574,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           );
         }
         return _BuildStage(
-          key: ValueKey('t$_index'),
+          key: ValueKey('t$_index:$_pos'),
           instructionUz: ex.instructionUz,
-          source: ex.locationLabel(widget.unitLabel),
+          source: source,
           golden: _golden,
           task: ex.tasks[_index],
           explanation: _index == 0 ? ex.explanationUz : '',
@@ -560,7 +587,7 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       case ExKind.match:
         return _MatchStage(
           instructionUz: ex.instructionUz,
-          source: ex.locationLabel(widget.unitLabel),
+          source: source,
           tasks: ex.tasks,
           explanation: ex.explanationUz,
           audioNote: ex.audioNoteUz,
@@ -584,6 +611,7 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       case ExKind.study:
         return _StudyStage(
           exercise: ex,
+          source: source,
           onDone: () => setState(() {
             _done = true;
             _finish();
@@ -595,7 +623,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
                     MaterialPageRoute(
                       builder: (_) => RolePlayScreen(
                         exercise: ex,
-                        title: 'Rol o\'ynash · ${widget.unitLabel}',
+                        title: widget.unitLabel.isEmpty
+                            ? 'Rol o\'ynash'
+                            : 'Rol o\'ynash · ${friendlyRef(widget.unitLabel)}',
                       ),
                     ),
                   )
@@ -626,6 +656,25 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
       if (!progress.isDone(sib[k].progressId)) return sib[k];
     }
     return i + 1 < sib.length ? sib[i + 1] : null;
+  }
+
+  /// Natija nimani bildirishi va keyin nima bo'lishi (kodda shunday).
+  ///
+  /// Xato bilan tugasa: adashgan savollar Xatolar daftariga tushadi
+  /// (moslashda yo'q) va mashq "Takrorlash kerak" ro'yxatida turadi
+  /// (ilovaning o'z mashqlarida - Diktant, test - bu ro'yxat yo'q).
+  String _resultMeaning() {
+    if (ex.kind == ExKind.study) return 'Mashq o\'qilgan deb belgilandi.';
+    if (_cleanRun) return 'Ajoyib! Xatosiz bajardingiz - mashq tugallandi.';
+    const toNotebook =
+        'Adashgan savollaringiz Xatolar daftariga ("Qiyin so\'zlar" '
+        'sahifasida) tushdi.';
+    const stays =
+        'Mashq "Takrorlash kerak" ro\'yxatida turadi - xatosiz bajarsangiz, '
+        'ro\'yxatdan chiqadi.';
+    if (ex.book == 'quiz') return toNotebook;
+    if (ex.kind == ExKind.match) return stays;
+    return '$toNotebook $stays';
   }
 
   Widget _result() {
@@ -673,12 +722,27 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           child: Text(
             ex.kind == ExKind.study
                 ? 'O\'qib chiqdingiz'
-                : (good ? 'O\'zlashtirildi' : '$_correct / $total'),
+                : (good
+                      ? (_cleanRun
+                            ? 'Hammasi to\'g\'ri!'
+                            : 'Mashq tugadi: hammasini topdingiz')
+                      : '$_correct / $total'),
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.w800,
               color: good ? AppColors.success : AppColors.homework,
             ),
+          ),
+        ),
+        // Natija nimani bildirishi va keyin nima bo'lishi.
+        const SizedBox(height: 8),
+        Center(
+          child: Text(
+            _resultMeaning(),
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: 13.5, height: 1.45, color: AppColors.muted(context)),
           ),
         ),
         if (ex.kind != ExKind.study) ...[
@@ -691,8 +755,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           const SizedBox(height: 8),
           Center(
             child: Text(
-              '$_correct / $total birinchi urinishda · '
-              '${total - _correct} ta juft takrorlandi',
+              '$_correct / $total juft birinchi urinishda topildi; '
+              '${total - _correct} tasida adashdingiz.',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 13, color: AppColors.muted(context)),
             ),
@@ -704,8 +768,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           const SizedBox(height: 8),
           Center(
             child: Text(
-              '$clean / $total birinchi urinishda · '
-              '$retried ta band takrorlandi',
+              'Birinchi urinishda $clean / $total savol to\'g\'ri; '
+              '$retried tasida adashdingiz (ular qayta so\'raldi).',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 13, color: AppColors.muted(context)),
             ),
@@ -720,7 +784,7 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
               borderRadius: BorderRadius.circular(AppRadius.pill),
             ),
             child: Text(
-              '+$_xp XP',
+              'Shu mashqda +$_xp ball',
               style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w800,
@@ -754,7 +818,9 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
             },
             child: Center(
               child: Text(
-                'Keyingi mashq: ${_nextExercise!.title}',
+                exerciseRefUz(_nextExercise!.ref) == 'Mashq'
+                    ? 'Keyingi mashq'
+                    : 'Keyingi mashq: ${exerciseRefUz(_nextExercise!.ref)}',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
@@ -773,7 +839,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
           onPressed: () => Navigator.pop(context),
           child: const Center(
             child: Text(
-              'Bo\'limga qaytish',
+              'Mashqlar ro\'yxatiga qaytish',
+              textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,
@@ -800,7 +867,8 @@ class _ExercisePlayerState extends State<ExercisePlayer> {
             }),
             child: const Center(
               child: Text(
-                'Qayta ishlash',
+                'Bu mashqni qaytadan boshlash',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w800,
@@ -878,9 +946,23 @@ class AudioNoteCard extends StatelessWidget {
           ),
           const SizedBox(width: 10),
           Expanded(
-            child: Text(
-              text,
-              style: const TextStyle(fontSize: 12.5, height: 1.4),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Audio haqida',
+                  style: TextStyle(
+                    fontSize: 11.5,
+                    fontWeight: FontWeight.w900,
+                    color: AppColors.homework,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  text,
+                  style: const TextStyle(fontSize: 12.5, height: 1.4),
+                ),
+              ],
             ),
           ),
         ],
@@ -918,9 +1000,23 @@ class ExplanationCard extends StatelessWidget {
           ),
           const SizedBox(width: 10),
           Expanded(
-            child: ExplainText(
-              text,
-              style: const TextStyle(fontSize: 13.5, height: 1.55),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Qoida va izoh',
+                  style: TextStyle(
+                    fontSize: 11.5,
+                    fontWeight: FontWeight.w900,
+                    color: AppColors.brandPurple,
+                  ),
+                ),
+                const SizedBox(height: 3),
+                ExplainText(
+                  text,
+                  style: const TextStyle(fontSize: 13.5, height: 1.55),
+                ),
+              ],
             ),
           ),
         ],
@@ -940,7 +1036,8 @@ class _ChoiceStage extends StatefulWidget {
   /// Kitob ko'rsatmasi — savol qatorini yasash uchun.
   final String instructionUz;
 
-  /// "1-unit · Coursebook 10-bet · Ex. 7" — qaysi mashq ekani.
+  /// Kitobdagi manzil ("3-unit (bob) · Enterprise 1 · Coursebook (asosiy
+  /// darslik) · 10-bet · 7-mashq") - "Kitobda: ..." qatori uchun.
   final String source;
 
   const _ChoiceStage({
@@ -1098,6 +1195,7 @@ class _ChoiceStageState extends State<_ChoiceStage> {
             uz: t.uz.isNotEmpty ? t.uz : t.promptUz,
             lookup: meaningOf,
             isCorrect: _isRight(_chosen!),
+            willRepeat: true,
           ),
       ],
     );
@@ -1106,6 +1204,18 @@ class _ChoiceStageState extends State<_ChoiceStage> {
 }
 
 // ═══════════════ 2) Yig'ish ═══════════════
+/// Yig'ish sahnasida klaviatura yo'q - javob pastdagi bo'laklarni bosib
+/// yig'iladi. Kitob ko'rsatmasi esa "yozing" desa ham shunday.
+String _buildHowTo(ExTask t, String extra) {
+  final how = t.isPhrase
+      ? 'Pastdagi so\'zlarni to\'g\'ri tartibda bosib gapni yig\'ing. '
+          'Adashib bosgan bo\'lsangiz "Oxirgisini olib tashlash" ni bosing.'
+      : 'Harflar aralashtirilgan: ularni to\'g\'ri tartibda bosib so\'zni '
+          'yig\'ing. Adashib bosgan bo\'lsangiz "Oxirgisini olib tashlash" ni '
+          'bosing.';
+  return extra.isEmpty ? how : '$how $extra';
+}
+
 class _BuildStage extends StatefulWidget {
   final ExTask task;
   final String explanation;
@@ -1218,13 +1328,15 @@ class _BuildStageState extends State<_BuildStage> {
     final t = widget.task;
     final built = _picked.map((k) => _pieces[k]).join(t.buildSeparator);
     final long = _pieces.length > 12;
+    final clear = clarify(widget.task,
+        kind: ExKind.text, instructionUz: widget.instructionUz);
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
         QuestionCard(
-          question: clarify(widget.task,
-                  kind: ExKind.text, instructionUz: widget.instructionUz)
-              .question,
+          question: clear.question,
+          // Ekranda yozilmaydi - bo'laklarni bosib yig'iladi.
+          hint: _buildHowTo(t, clear.hint),
           source: widget.source,
         ),
         ExplanationCard(text: widget.explanation),
@@ -1237,7 +1349,7 @@ class _BuildStageState extends State<_BuildStage> {
         ],
         Center(
           child: Text(
-            t.prompt,
+            cleanPrompt(t.prompt),
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: t.prompt.length > 40 ? 16 : 22,
@@ -1277,15 +1389,26 @@ class _BuildStageState extends State<_BuildStage> {
               width: 2,
             ),
           ),
-          child: Text(
-            built.isEmpty ? '…' : built,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: t.isPhrase ? 17 : 24,
-              fontWeight: FontWeight.w800,
-              letterSpacing: t.isPhrase ? 0 : 2,
-            ),
-          ),
+          child: built.isEmpty
+              // Quti nima ekani aytiladi: javob shu yerda yig'iladi.
+              ? Text(
+                  'Javobingiz shu yerda paydo bo\'ladi',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 13.5,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.muted(context),
+                  ),
+                )
+              : Text(
+                  built,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: t.isPhrase ? 17 : 24,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: t.isPhrase ? 0 : 2,
+                  ),
+                ),
         ),
         SizedBox(
           height: 36,
@@ -1305,7 +1428,7 @@ class _BuildStageState extends State<_BuildStage> {
                   child: TextButton.icon(
                     onPressed: _undo,
                     icon: const Icon(Icons.backspace_outlined, size: 18),
-                    label: const Text('Orqaga'),
+                    label: const Text('Oxirgisini olib tashlash'),
                   ),
                 )
               : const SizedBox(),
@@ -1358,6 +1481,9 @@ class _BuildStageState extends State<_BuildStage> {
             uz: t.uz.isNotEmpty ? t.uz : t.promptUz,
             lookup: meaningOf,
             isCorrect: _result!,
+            // "To'g'risi: ..." yuqorida allaqachon yozilgan.
+            showAnswer: false,
+            willRepeat: true,
           ),
       ],
     );
@@ -1485,13 +1611,18 @@ class _MatchStageState extends State<_MatchStage> {
 
   @override
   Widget build(BuildContext context) {
+    final clear = clarify(const ExTask(),
+        kind: ExKind.match, instructionUz: widget.instructionUz);
     return ListView(
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 24),
       children: [
         QuestionCard(
-          question: widget.instructionUz.trim().isEmpty
-              ? 'Juftlarni moslang'
-              : widget.instructionUz.trim(),
+          question: clear.question,
+          hint: [
+            'Chapdan birini bosing, so\'ng o\'ngdan unga mosini bosing. '
+                'To\'g\'ri juft yashil bo\'ladi.',
+            clear.hint,
+          ].where((e) => e.isNotEmpty).join(' '),
           source: widget.source,
         ),
         ExplanationCard(text: widget.explanation),
@@ -1499,11 +1630,13 @@ class _MatchStageState extends State<_MatchStage> {
         if (_roundCount > 1) ...[
           Center(
             child: Text(
-              '${_round + 1} / $_roundCount',
-              style: const TextStyle(
+              '${_round + 1}-bosqich / $_roundCount · har bosqichda '
+              '$_roundSize tagacha juft',
+              textAlign: TextAlign.center,
+              style: TextStyle(
                 fontSize: 13,
                 fontWeight: FontWeight.w600,
-                color: Colors.black54,
+                color: AppColors.muted(context),
               ),
             ),
           ),
@@ -1598,10 +1731,86 @@ class _MatchStageState extends State<_MatchStage> {
   }
 }
 
+/// Kitobdagi ko'rsatma matni (o'qish sahnasida). Uzun bo'lsa 3 qatorda
+/// kesiladi - bosib to'liq ochish mumkinligi yozib qo'yiladi, aks holda
+/// o'quvchi kesilgan matnni to'liq deb o'ylaydi.
+class _BookInstruction extends StatefulWidget {
+  final String text;
+  const _BookInstruction({required this.text});
+
+  @override
+  State<_BookInstruction> createState() => _BookInstructionState();
+}
+
+class _BookInstructionState extends State<_BookInstruction> {
+  bool _open = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final txt = widget.text.trim();
+    if (txt.isEmpty) return const SizedBox.shrink();
+    const style =
+        TextStyle(fontWeight: FontWeight.w700, fontSize: 13.5, height: 1.4);
+    final scaler = MediaQuery.textScalerOf(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 14),
+      child: LayoutBuilder(builder: (context, c) {
+        final probe = TextPainter(
+          text: TextSpan(text: txt, style: style),
+          maxLines: 3,
+          textDirection: TextDirection.ltr,
+          textScaler: scaler,
+        )..layout(maxWidth: c.maxWidth);
+        final long = probe.didExceedMaxLines;
+        probe.dispose();
+        return GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: long ? () => setState(() => _open = !_open) : null,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Kitobdagi ko\'rsatma:',
+                style: TextStyle(
+                  fontSize: 11.5,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.muted(context),
+                ),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                txt,
+                maxLines: _open ? null : 3,
+                overflow: _open ? TextOverflow.clip : TextOverflow.ellipsis,
+                style: style,
+              ),
+              if (long)
+                Padding(
+                  padding: const EdgeInsets.only(top: 3),
+                  child: Text(
+                    _open ? '(bosing: yig\'iladi)' : '(bosing: to\'liq ochiladi)',
+                    style: const TextStyle(
+                      fontSize: 11.5,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.brandPurple,
+                    ),
+                  ),
+                ),
+            ],
+          ),
+        );
+      }),
+    );
+  }
+}
+
 // ═══════════════ 4) O'qish ═══════════════
 class _StudyStage extends StatelessWidget {
   final BookExercise exercise;
   final VoidCallback onDone;
+
+  /// Kitobdagi manzil - "Nima qilinadi" kartasida "Kitobda: ..." bo'ladi.
+  final String source;
 
   /// YODLASh — shu satrlarni so'zlardan yig'ib, so'ng harfma-harf
   /// yozib mustahkamlash (o'qish passiv; yozish faol).
@@ -1613,6 +1822,7 @@ class _StudyStage extends StatelessWidget {
   const _StudyStage(
       {required this.exercise,
       required this.onDone,
+      this.source = '',
       this.onMemorize,
       this.onRolePlay});
 
@@ -1621,6 +1831,16 @@ class _StudyStage extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
       children: [
+        // O'qish sahnasida savol yo'q - buni aniq aytamiz, aks holda
+        // o'quvchi "nima qilish kerak?" deb qoladi (mashqlarning uchdan
+        // bir qismi shunday).
+        QuestionCard(
+          question: 'Bu yerda savol yo\'q: o\'qing va tinglang.',
+          hint: 'Gapni bossangiz, ovozi eshitiladi. Tushungach, pastdagi '
+              '"O\'qib chiqdim" ni bosing.',
+          source: source,
+        ),
+        _BookInstruction(text: exercise.instructionUz),
         ExplanationCard(text: exercise.explanationUz),
         AudioNoteCard(text: exercise.audioNoteUz),
         for (final t in exercise.tasks) _line(context, t),
@@ -1632,13 +1852,24 @@ class _StudyStage extends StatelessWidget {
             onPressed: onRolePlay,
             child: const Center(
               child: Text(
-                '🎭 Rol o\'ynash: o\'zingiz gapiring',
+                '🎭 Rol o\'ynash: suhbatning bir tomonini o\'zingiz ayting',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w800,
                   fontSize: 16,
                 ),
               ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(4, 6, 4, 0),
+            child: Text(
+              'Mikrofon kerak. Sherigingiz gapini tinglaysiz, javobni '
+              'o\'zingiz aytasiz.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 12, height: 1.35, color: AppColors.muted(context)),
             ),
           ),
           const SizedBox(height: 10),
@@ -1650,13 +1881,23 @@ class _StudyStage extends StatelessWidget {
             onPressed: onMemorize,
             child: const Center(
               child: Text(
-                'Yodlash: tinglab yig\'ish + yozish',
+                'Yodlash: shu gaplarni eshitib, so\'zlardan yig\'ing va yozing',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w800,
                   fontSize: 16,
                 ),
               ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(4, 6, 4, 0),
+            child: Text(
+              'Xato bo\'lsa savol qaytadi.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 12, height: 1.35, color: AppColors.muted(context)),
             ),
           ),
           const SizedBox(height: 10),

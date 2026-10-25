@@ -8,6 +8,8 @@ import '../widgets/explain_text.dart';
 import 'dart:math';
 
 import '../book_content.dart';
+import '../teach/clarify.dart' show friendlyRef;
+import '../teach/question_card.dart' show PageIntro;
 import 'book/book_screens.dart';
 import 'book/exercise_player.dart';
 
@@ -80,13 +82,26 @@ class _LevelGrammarScreenState extends State<LevelGrammarScreen> {
       itemCount: rows.length + 2,
       itemBuilder: (context, i) {
         if (i == 0) {
-          return _Header(
-            title: 'Grammatika',
-            subtitle: q.isEmpty
-                ? "${all.length} ta qoida — uchala kitobdan, unit bo'yicha"
-                : "${topics.length} ta topildi",
-            icon: Icons.rule_rounded,
-            color: AppColors.actionBlue,
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _Header(
+                title: 'Grammatika',
+                subtitle: q.isEmpty
+                    ? "${all.length} ta qoida, unit (bob) bo'yicha"
+                    : "${topics.length} ta topildi",
+                icon: Icons.rule_rounded,
+                color: AppColors.actionBlue,
+              ),
+              // Sahifa nima ekani va nima qilish kerakligi.
+              if (q.isEmpty)
+                const PageIntro(
+                    'Bu yerda: grammatika qoidalari va misollar, unit (bob) '
+                    'bo\'yicha. Manba: Coursebook (asosiy darslik), Workbook '
+                    '(mashq daftari) va Grammar (grammatika kitobi). Misol '
+                    'gapni bossangiz, ovozi eshitiladi. Pastdagi tugma - '
+                    '10 savollik test.'),
+            ],
           );
         }
         if (i == 1) {
@@ -94,7 +109,7 @@ class _LevelGrammarScreenState extends State<LevelGrammarScreen> {
             children: [
               const _GrammarQuizButton(),
               _SearchField(
-                hint: 'Qidirish: some any, past simple, -er ...',
+                hint: 'Qidirish: some, any, o\'tgan zamon, ega ...',
                 onChanged: (v) => setState(() => _q = v),
               ),
             ],
@@ -110,8 +125,22 @@ class _TopicCard extends StatelessWidget {
   final GrammarTopic topic;
   const _TopicCard({required this.topic});
 
+  /// Mavzu nomi oxiridagi "· 7-mashq" kitob raqami sarlavhaga
+  /// aralashmasin - u "Kitobda: ..." qatoriga o'tadi.
+  static ({String title, String ref}) _split(String topic) {
+    final m = RegExp(r'\s*·\s*([^·]+?-mashq)\s*$').firstMatch(topic);
+    if (m == null) return (title: topic, ref: '');
+    return (title: topic.substring(0, m.start).trim(), ref: m[1]!.trim());
+  }
+
   @override
   Widget build(BuildContext context) {
+    final parts = _split(topic.topic);
+    // Kitobdagi manzil: manba (bo'lsa) + mashq raqami.
+    final where = [
+      if (topic.source.isNotEmpty) friendlyRef(topic.source),
+      if (parts.ref.isNotEmpty) parts.ref,
+    ].join(' · ');
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.only(bottom: 14),
@@ -125,7 +154,7 @@ class _TopicCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(topic.topic,
+          Text(parts.title,
               style: const TextStyle(
                   fontWeight: FontWeight.w800,
                   fontSize: 15.5,
@@ -139,7 +168,7 @@ class _TopicCard extends StatelessWidget {
             const SizedBox(height: 12),
             for (final e in topic.examples) _Example(text: e),
           ],
-          if (topic.source.isNotEmpty || topic.unit > 0) ...[
+          if (where.isNotEmpty || topic.unit > 0) ...[
             const SizedBox(height: 8),
             // Wrap: katta shriftda tugma ikkinchi qatorga tushadi,
             // chiqib ketmaydi.
@@ -148,8 +177,8 @@ class _TopicCard extends StatelessWidget {
               crossAxisAlignment: WrapCrossAlignment.center,
               spacing: 8,
               children: [
-                if (topic.source.isNotEmpty)
-                  Text('📖 ${topic.source}',
+                if (where.isNotEmpty)
+                  Text('📖 Kitobda: $where',
                       style: const TextStyle(
                           fontSize: 11.5, color: AppColors.brandPurple)),
                 // Qoidadan to'g'ri mashqqa — o'qigan zahoti qo'llash
@@ -168,7 +197,7 @@ class _TopicCard extends StatelessWidget {
                       );
                     },
                     icon: const Icon(Icons.fitness_center_rounded, size: 15),
-                    label: Text('${topic.unit}-unit mashqlari',
+                    label: Text('Mashqlarga o\'tish: ${topic.unit}-unit (bob)',
                         style: const TextStyle(
                             fontSize: 12, fontWeight: FontWeight.w800)),
                   ),
@@ -190,17 +219,23 @@ class _UnitDivider extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(2, 6, 2, 10),
       child: Row(
         children: [
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-            decoration: BoxDecoration(
-              color: AppColors.actionBlue.withValues(alpha: 0.12),
-              borderRadius: BorderRadius.circular(AppRadius.pill),
+          Flexible(
+            child: Container(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+              decoration: BoxDecoration(
+                color: AppColors.actionBlue.withValues(alpha: 0.12),
+                borderRadius: BorderRadius.circular(AppRadius.pill),
+              ),
+              child: Text(
+                  unit > 0
+                      ? '$unit-unit (bob)'
+                      : 'Umumiy (unitga bog\'liq emas)',
+                  style: const TextStyle(
+                      fontWeight: FontWeight.w900,
+                      fontSize: 12,
+                      color: AppColors.actionBlue)),
             ),
-            child: Text(unit > 0 ? '$unit-unit' : 'Umumiy',
-                style: const TextStyle(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 12,
-                    color: AppColors.actionBlue)),
           ),
           const SizedBox(width: 10),
           Expanded(
@@ -276,14 +311,24 @@ class _LevelWordFormationScreenState extends State<LevelWordFormationScreen> {
       itemCount: families.length + 2,
       itemBuilder: (context, i) {
         if (i == 0) {
-          return _Header(
-            title: 'So\'z yasalishi',
-            subtitle: q.isEmpty
-                ? '${all.length} ta so\'z oilasi — '
-                    'bitta o\'zakdan yasalgan shakllar'
-                : '${families.length} ta topildi',
-            icon: Icons.account_tree_rounded,
-            color: AppColors.success,
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _Header(
+                title: 'So\'z yasalishi',
+                subtitle: q.isEmpty
+                    ? '${all.length} ta asosiy so\'z va undan yasalgan '
+                        'so\'zlar'
+                    : '${families.length} ta topildi',
+                icon: Icons.account_tree_rounded,
+                color: AppColors.success,
+              ),
+              if (q.isEmpty)
+                const PageIntro(
+                    'Bu yerda: bitta so\'zdan yasalgan boshqa so\'zlar. '
+                    'Masalan, teach (o\'rgatmoq) va teacher (o\'qituvchi). '
+                    'Pastdagi so\'zni bossangiz, ovozi eshitiladi.'),
+            ],
           );
         }
         if (i == 1) {
@@ -291,7 +336,7 @@ class _LevelWordFormationScreenState extends State<LevelWordFormationScreen> {
             children: [
               _FamilyQuizButton(families: all),
               _SearchField(
-                hint: 'Qidirish: happy, -ness, o\'qituvchi ...',
+                hint: 'Qidirish: happy, teach, o\'qituvchi ...',
                 onChanged: (v) => setState(() => _q = v),
               ),
             ],
@@ -353,7 +398,13 @@ class _FamilyCard extends StatelessWidget {
             ],
           ),
           if (family.forms.isNotEmpty) ...[
-            const SizedBox(height: 10),
+            const SizedBox(height: 8),
+            Text('Shu so\'zdan yasalgan:',
+                style: TextStyle(
+                    fontSize: 11.5,
+                    fontWeight: FontWeight.w700,
+                    color: AppColors.muted(context))),
+            const SizedBox(height: 6),
             Wrap(
               spacing: 8,
               runSpacing: 8,
@@ -518,7 +569,9 @@ class _GrammarQuizButtonState extends State<_GrammarQuizButton> {
       kind: ExKind.choice,
       tasks: pool.take(10).toList(),
       instructionEn: 'Grammar quiz: 10 random questions from all units.',
-      instructionUz: '10 ta tasodifiy grammatika savoli - barcha unitlardan.',
+      instructionUz:
+          'Barcha boblardan (unitlardan) tasodifiy 10 ta grammatika savoli. '
+          'Har safar boshqacha.',
       book: 'quiz',
       pageLabel: 'grammatika',
     );
@@ -551,14 +604,20 @@ class _GrammarQuizButtonState extends State<_GrammarQuizButton> {
                   width: 18, height: 18,
                   child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
               : const Icon(Icons.quiz_rounded),
-          label: Text(_loading ? "Savollar yig'ilmoqda..." : '10 savollik grammatika testi'),
+          label: Text(
+            _loading
+                ? "Savollar yig'ilmoqda..."
+                : '10 savollik test: barcha boblardan (unitlardan) aralash '
+                    'grammatika savollari',
+            textAlign: TextAlign.center,
+          ),
         ),
       ),
     );
   }
 }
 
-/// So'z oilalari testi: "'happy' (baxtli) so'zining hosila shakli
+/// So'z oilalari testi: "'happy' (baxtli) so'zidan yasalgan so'z
 /// qaysi?" — to'g'ri shakl + boshqa oilalardan 3 chalg'ituvchi.
 class _FamilyQuizButton extends StatelessWidget {
   final List<WordFamily> families;
@@ -579,10 +638,10 @@ class _FamilyQuizButton extends StatelessWidget {
       }
       tasks.add(ExTask(
         prompt: f.uz.isNotEmpty ? "'${f.base}' (${f.uz})" : "'${f.base}'",
-        promptUz: "Shu so'zning hosila (yasama) shakli qaysi?",
+        promptUz: "Shu so'zdan yasalgan so'zni toping",
         answer: answer,
         options: [answer, ...others],
-        whyUz: "${f.base} → ${f.forms.join(', ')}",
+        whyUz: "${f.base}: ${f.forms.join(', ')}",
         speakAnswer: answer,
       ));
     }
@@ -591,7 +650,7 @@ class _FamilyQuizButton extends StatelessWidget {
       kind: ExKind.choice,
       tasks: tasks,
       instructionEn: 'Word formation quiz: pick the word from the same family.',
-      instructionUz: "Berilgan so'zning yasama shaklini toping.",
+      instructionUz: "Berilgan so'zdan yasalgan so'zni tanlang.",
       book: 'quiz',
       pageLabel: 'soz-yasalishi',
     );
@@ -620,7 +679,8 @@ class _FamilyQuizButton extends StatelessWidget {
               textStyle: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
           onPressed: () => _start(context),
           icon: const Icon(Icons.quiz_rounded),
-          label: const Text("10 savollik so'z yasalishi testi"),
+          label: const Text("10 savollik test: yasalgan so'zni toping",
+              textAlign: TextAlign.center),
         ),
       ),
     );

@@ -27,6 +27,16 @@ const _months = [
 
 String uzDate(DateTime d) => '${d.day}-${_months[d.month - 1]}';
 
+/// "12-dekabrda" - "reja 12-dekabrda tugaydi" kabi gaplar uchun.
+String uzDateIn(DateTime d) => '${uzDate(d)}da';
+
+/// "4/10" -> "10 tadan 4 tasi to'g'ri" (mini-test natijasini so'z bilan aytadi).
+String _outOf(String s) {
+  final p = s.split('/');
+  if (p.length != 2) return s;
+  return '${p[1]} tadan ${p[0]} tasi to\'g\'ri';
+}
+
 String durationLabel(int days) => switch (days) {
       365 => '1 yil',
       _ when days % 30 == 0 => '${days ~/ 30} oy',
@@ -109,20 +119,29 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
       children: [
-        Text('Mnemonika xaritasi', style: AppTheme.heading(context)),
+        Row(
+          children: [
+            Expanded(
+              child: Text('Mnemonika', style: AppTheme.heading(context)),
+            ),
+            IconButton(
+              tooltip: 'Mnemonika nima?',
+              icon: const Icon(Icons.help_outline_rounded),
+              onPressed: () => showMnemonicsHelp(context),
+            ),
+          ],
+        ),
         const SizedBox(height: 2),
         Text(
-          '${v.bookTitle} - kitobni belgilangan muddatda yodlab tugatish rejasi',
+          'Kitobni belgilangan muddatda yodlash rejasi · '
+          '${levelBookLine(v.bookTitle)}',
           style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
         ),
+        const SizedBox(height: 12),
+        _WhatIsBox(onMore: () => showMnemonicsHelp(context)),
         const SizedBox(height: 14),
         _VolumeCard(v: v),
         const SizedBox(height: 14),
-        // Rejasi yo'q (yangi) o'quvchiga avval darsliklar - tushunib boshlasin.
-        if (_plan == null) ...[
-          const MnemonicVideosCard(),
-          const SizedBox(height: 14),
-        ],
         if (_plan == null)
           _DurationPicker(v: v, onPick: _start)
         else ...[
@@ -153,10 +172,10 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
         const _PracticeCard(),
         const SizedBox(height: 10),
         const _MethodCard(),
-        if (_plan != null) ...[
-          const SizedBox(height: 14),
-          const MnemonicVideosCard(),
-        ],
+        // Videolar - ixtiyoriy; asosiy ish (muddat tanlash, bugungi ro'yxat)
+        // ularning ustida turadi.
+        const SizedBox(height: 14),
+        const MnemonicVideosCard(),
       ],
     );
   }
@@ -173,8 +192,8 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
       builder: (c) => AlertDialog(
         title: const Text('Muddatni o\'zgartirasizmi?'),
         content: const Text(
-            'O\'rganilgan so\'zlaringiz saqlanadi. Reja qolgan ish bo\'yicha '
-            'yangi muddatga qayta taqsimlanadi.'),
+            'Bajarilgan darslaringiz saqlanadi. Hisob 1-kundan qayta '
+            'boshlanadi: keyin yangi muddatni tanlaysiz.'),
         actions: [
           TextButton(
               onPressed: () => Navigator.pop(c, false),
@@ -187,6 +206,114 @@ class _MnemonicsScreenState extends State<MnemonicsScreen> {
     );
     if (ok == true) await plans.clearPlan();
   }
+}
+
+// ═════════════════ Bu nima? ═════════════════
+/// Ekran tepasidagi qisqa izoh: yangi odam birinchi 5 soniyada Mnemonika
+/// nima ekanini va har kuni nima qilishini bilsin.
+class _WhatIsBox extends StatelessWidget {
+  final VoidCallback onMore;
+  const _WhatIsBox({required this.onMore});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
+      decoration: BoxDecoration(
+        color: AppColors.brandPurple.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(AppRadius.md),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text('Bu nima?',
+              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
+          const SizedBox(height: 3),
+          const Text(
+            'Mnemonika - butun kitobni kunlarga bo\'lib beradigan reja va '
+            'so\'zlarni oson yodlash usullari. Muddat tanlaysiz - keyin har '
+            'kuni ro\'yxatdagi ishlarni bajarasiz, bajarilgani yashil belgi oladi.',
+            style: TextStyle(fontSize: 12.5, height: 1.45),
+          ),
+          InkWell(
+            onTap: onMore,
+            borderRadius: BorderRadius.circular(AppRadius.sm),
+            child: const Padding(
+              padding: EdgeInsets.symmetric(vertical: 6),
+              child: Text('Batafsil',
+                  style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      fontSize: 12.5,
+                      color: AppColors.brandPurple)),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+const _helpPoints = [
+  ('1. Reja', 'Kitob siz tanlagan kunlarga bo\'linadi, har kuni nima qilishni ro\'yxat aytadi.'),
+  ('2. Ilgak', 'Ingliz so\'ziga tovushi o\'xshash o\'zbekcha so\'z (book - buqa). U so\'zni eslatadi.'),
+  ('3. Sahna', 'Ilgak va ma\'noni bitta kichik rasmga birlashtirasiz (buqa kitob o\'qiyapti).'),
+  ('4. Qaramasdan eslash', 'O\'zbekchasi ko\'rinadi, inglizchasini xotiradan yozasiz.'),
+  ('5. Takror', 'So\'z 10 daqiqadan keyin, so\'ng 1, 3, 7, 14 va 30 kundan keyin qaytadi - unutmaslik uchun.'),
+];
+
+/// "Mnemonika nima?" - pastdan chiqadigan qisqa izoh oynasi.
+Future<void> showMnemonicsHelp(BuildContext context) {
+  return showModalBottomSheet<void>(
+    context: context,
+    isScrollControlled: true,
+    showDragHandle: true,
+    builder: (c) => SafeArea(
+      child: ConstrainedBox(
+        constraints:
+            BoxConstraints(maxHeight: MediaQuery.of(c).size.height * 0.85),
+        child: ListView(
+          shrinkWrap: true,
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+          children: [
+            const Text('Mnemonika nima?',
+                style: TextStyle(fontWeight: FontWeight.w900, fontSize: 17)),
+            const SizedBox(height: 10),
+            for (final (t, d) in _helpPoints)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 9),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(t,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w800, fontSize: 13.5)),
+                    const SizedBox(height: 2),
+                    Text(d,
+                        style: TextStyle(
+                            fontSize: 13,
+                            height: 1.45,
+                            color: AppColors.muted(c))),
+                  ],
+                ),
+              ),
+            Text(
+              'To\'liq izoh: sahifa oxiridagi "Mnemonika qanday ishlaydi? '
+              '(7 qadam)" bo\'limi.',
+              style: TextStyle(
+                  fontSize: 12,
+                  fontStyle: FontStyle.italic,
+                  color: AppColors.muted(c)),
+            ),
+            const SizedBox(height: 12),
+            FilledButton(
+                onPressed: () => Navigator.pop(c),
+                child: const Text('Tushunarli')),
+          ],
+        ),
+      ),
+    ),
+  );
 }
 
 // ═════════════════ Hajm ═════════════════
@@ -225,16 +352,17 @@ class _VolumeCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('Kitob hajmi',
+          const Text('Kitobda nimalar yodlanadi',
               style: TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
           const SizedBox(height: 10),
           Row(
             children: [
-              metric(fmt(v.uniqueWords), 'noyob so\'z', Icons.translate_rounded,
+              metric(fmt(v.uniqueWords), 'turli so\'z', Icons.translate_rounded,
                   AppColors.brandPurple),
               const SizedBox(width: 8),
-              metric(fmt(v.lessons), 'so\'z darsi', Icons.school_rounded,
-                  AppColors.actionBlue),
+              metric(fmt(v.lessons),
+                  'so\'z darsi\n(~${v.wordsPerLesson.round()} so\'zdan)',
+                  Icons.school_rounded, AppColors.actionBlue),
               const SizedBox(width: 8),
               metric(fmt(v.rules), 'grammatika\nqoidasi', Icons.rule_rounded,
                   AppColors.success),
@@ -242,10 +370,10 @@ class _VolumeCard extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            '${v.units.length} ta unit · 1 darsda ${v.wordsPerLesson.round()} ta '
-            'so\'z · ${fmt(v.grammarExercises)} ta grammatika mashqi. '
-            'Unitlarda takrorlanadigan so\'zlar bilan jami ${fmt(v.words)} ta '
-            'so\'z uchrashadi.',
+            'Kitobda ${v.units.length} ta unit (bob) bor. Ba\'zi so\'zlar bir '
+            'necha bobda uchraydi: jami ${fmt(v.words)} ta, turlisi '
+            '${fmt(v.uniqueWords)} ta. Grammatika: ${fmt(v.grammarExercises)} ta '
+            'mashq. Reja shu sonlardan tuziladi.',
             style: TextStyle(
                 fontSize: 12.5, height: 1.45, color: AppColors.muted(context)),
           ),
@@ -282,8 +410,9 @@ class _DurationPickerState extends State<_DurationPicker> {
               style: TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
           const SizedBox(height: 4),
           Text(
-            'Har muddat uchun kunlik yuk hisoblangan. Takror vaqti ham '
-            'kiritilgan - aks holda 3-haftada charchab qolasiz.',
+            'Muddatni bosib tanlang - ilova butun kitobni shu kunlarga bo\'lib '
+            'beradi. Har qatorda kuniga qancha o\'qishingiz ko\'rsatilgan '
+            '(takror ham hisobga olingan).',
             style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
           ),
           const SizedBox(height: 12),
@@ -296,9 +425,23 @@ class _DurationPickerState extends State<_DurationPicker> {
               recommended: d == rec,
               onTap: () => setState(() => _days = d),
             ),
-          const SizedBox(height: 12),
-          const Text('Har kuni qaysi soatda eslatay?',
+          Text(
+            'Qiyinlik kuniga ketadigan vaqtga qarab: yengil - $kEasyMinutes '
+            'daqiqagacha, o\'rtacha - $kMediumMinutes gacha, og\'ir - '
+            '$kHardMinutes gacha. "Tavsiya etiladi" - kuniga $kMediumMinutes '
+            'daqiqadan oshmaydigan eng qisqa muddat.',
+            style: TextStyle(
+                fontSize: 11.5, height: 1.4, color: AppColors.muted(context)),
+          ),
+          const SizedBox(height: 14),
+          const Text('Har kuni soat nechada o\'qishni va\'da berasiz?',
               style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13.5)),
+          const SizedBox(height: 2),
+          Text(
+            'Shu soat kelganda hali o\'qimagan bo\'lsangiz, bosh ekranda '
+            'eslatma chiqadi.',
+            style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+          ),
           const SizedBox(height: 6),
           Wrap(
             spacing: 6,
@@ -378,56 +521,67 @@ class _DurationRow extends StatelessWidget {
             children: [
               SizedBox(
                 width: 64,
-                child: Text(durationLabel(days),
-                    style: const TextStyle(
-                        fontWeight: FontWeight.w900, fontSize: 15)),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(durationLabel(days),
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w900, fontSize: 15)),
+                    if (durationLabel(days) != '$days kun')
+                      Text('$days kun',
+                          style: TextStyle(
+                              fontSize: 11.5,
+                              color: AppColors.muted(context))),
+                  ],
+                ),
               ),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Kuniga ${pace.wordsPerDay.round()} so\'z · '
-                      '${pace.lessonsPerDay.ceil()} dars'
+                      'Kuniga ~${pace.wordsPerDay.round()} yangi so\'z '
+                      '(${pace.lessonsPerDay.ceil()} ta so\'z darsi)'
                       '${pace.rulesPerDay >= 0.05 ? ' · ${_rules(pace.rulesPerDay)}' : ''}',
                       style: const TextStyle(
                           fontSize: 13, fontWeight: FontWeight.w700),
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      '~${pace.minutesPerDay} daqiqa/kun · tugash: ${uzDate(finish)}',
+                      'Kuniga ~${pace.minutesPerDay} daqiqa · reja '
+                      '${uzDateIn(finish)} tugaydi',
                       style: TextStyle(
                           fontSize: 12, color: AppColors.muted(context)),
                     ),
+                    const SizedBox(height: 5),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 4,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 7, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: _diffColor.withValues(alpha: 0.12),
+                            borderRadius: BorderRadius.circular(AppRadius.pill),
+                          ),
+                          child: Text(pace.difficulty,
+                              style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w800,
+                                  color: _diffColor)),
+                        ),
+                        if (recommended)
+                          const Text('Tavsiya etiladi',
+                              style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w900,
+                                  color: AppColors.brandPurple)),
+                      ],
+                    ),
                   ],
                 ),
-              ),
-              const SizedBox(width: 6),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
-                    decoration: BoxDecoration(
-                      color: _diffColor.withValues(alpha: 0.12),
-                      borderRadius: BorderRadius.circular(AppRadius.pill),
-                    ),
-                    child: Text(pace.difficulty,
-                        style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w800,
-                            color: _diffColor)),
-                  ),
-                  if (recommended) ...[
-                    const SizedBox(height: 4),
-                    const Text('Tavsiya',
-                        style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w900,
-                            color: AppColors.brandPurple)),
-                  ],
-                ],
               ),
             ],
           ),
@@ -437,9 +591,9 @@ class _DurationRow extends StatelessWidget {
   }
 
   static String _rules(double perDay) {
-    if (perDay >= 1) return '${perDay.round()} qoida';
+    if (perDay >= 1) return '${perDay.round()} ta grammatika qoidasi';
     final every = (1 / perDay).round();
-    return '$every kunda 1 qoida';
+    return '$every kunda 1 ta grammatika qoidasi';
   }
 }
 
@@ -478,12 +632,13 @@ class _TodayCard extends StatelessWidget {
     final rows = <_CheckRow>[
       _CheckRow(
         emoji: '🆕',
-        title: 'Yangi so\'zlar',
+        title: 'Yangi so\'zlarni o\'rganing',
         subtitle: lessons.isEmpty
-            ? 'Bugungi darslar yo\'q'
-            : '${lessons.length} ta dars · ~${fmt(lessons.length * v.wordsPerLesson)} so\'z '
-                '($lessonsDone/${lessons.length} bajarildi). Ilgak darsi: har so\'zga '
-                'o\'xshash o\'zbekcha so\'z + sahna, keyin yopib eslaysiz.',
+            ? 'Bugun yangi so\'z darsi yo\'q - takrorlang yoki dam oling.'
+            : 'Bugun ~${fmt(lessons.length * v.wordsPerLesson)} ta yangi so\'z '
+                '(${lessons.length} ta so\'z darsi, $lessonsDone/${lessons.length} '
+                'bajarildi). Har so\'zga tovushi o\'xshash o\'zbekcha so\'z '
+                '(ilgak) topib, u bilan kichik sahna o\'ylaysiz.',
         done: lessons.isNotEmpty && lessonsDone == lessons.length,
         action: lessons.every(plans.isDone)
             ? null
@@ -493,10 +648,12 @@ class _TodayCard extends StatelessWidget {
       if (freshAt != null) _tenMinuteRow(context, now),
       _CheckRow(
         emoji: '🔁',
-        title: 'Oraliqli takror',
+        title: 'Unutilayotgan so\'zlarni takrorlang',
         subtitle: fading == 0
-            ? 'Bugun unutilayotgan so\'z yo\'q - xotira joyida.'
-            : '$fading ta so\'z unutilish arafasida (1-3-7-14-30 kun jadvali).',
+            ? 'Bugun takrorlanadigan so\'z yo\'q - hammasi esda.'
+            : '$fading ta so\'z unutilib ketish arafasida - qisqa takror bilan '
+                'qaytaring. (So\'zlar 1, 3, 7, 14 va 30 kundan keyin qayta '
+                'so\'raladi.)',
         done: fading == 0,
         action: fading == 0
             ? null
@@ -504,11 +661,12 @@ class _TodayCard extends StatelessWidget {
       ),
       _CheckRow(
         emoji: '🧠',
-        title: 'O\'zbekchasidan inglizchasini toping',
+        title: 'Qaramasdan eslang: o\'zbekchadan inglizchaga',
         subtitle: lessonsDone == 0
-            ? 'Avval yangi so\'zlarni o\'ting - keyin yopib eslaysiz.'
-            : 'Qaramasdan eslash: o\'zbekcha ko\'rinadi, inglizchasini o\'zingiz '
-                'topasiz va yozasiz (eng kuchli usul).',
+            ? 'Avval yuqoridagi yangi so\'zlarni o\'rganing - shundan keyin '
+                'ochiladi.'
+            : 'O\'zbekcha so\'z ko\'rinadi, inglizchasini xotiradan yozasiz - '
+                'eslashning eng kuchli usuli.',
         done: marks.contains('recall'),
         action: lessonsDone == 0 || marks.contains('recall')
             ? null
@@ -517,8 +675,9 @@ class _TodayCard extends StatelessWidget {
       if (Speech.supported)
         _CheckRow(
           emoji: '🗣️',
-          title: 'Ovoz chiqarib ayting',
-          subtitle: 'Og\'iz xotirasi: aytilgan so\'z 2 barobar mustahkam qoladi.',
+          title: 'Bugungi so\'zlarni ovoz chiqarib ayting',
+          subtitle: 'Talaffuz mashqi: so\'zni aytasiz, ilova eshitib tekshiradi '
+              '(mikrofon kerak). Aytilgan so\'z yaxshi yodda qoladi.',
           done: marks.contains('speak'),
           action: marks.contains('speak')
               ? null
@@ -529,10 +688,16 @@ class _TodayCard extends StatelessWidget {
         ),
       _CheckRow(
         emoji: '🌙',
-        title: 'Uxlashdan oldin 1 daqiqa',
+        title: 'Uxlashdan oldin bugungi so\'zlarni takrorlang (1 daqiqa)',
         subtitle: evening
-            ? 'Uyqu xotirani mustahkamlaydi - bugungi so\'zlarni bir ko\'rib oling.'
-            : 'Kechqurun 20:00 dan keyin ochiladi.',
+            ? 'Yotishdan oldin bugungi so\'zlarni bir ko\'zdan kechiring - '
+                'uyqu yodlaganingizni mustahkamlaydi.'
+            : MemoryRescue.isEvening(now)
+                ? 'Bugun takrorlanadigan zaif so\'z chiqmadi - bu qator '
+                    'hisobga kirmaydi.'
+                : 'Soat 20:00 dan keyin ochiladi (shu paytgacha hisobga '
+                    'kirmaydi). Yotishdan oldin bugungi so\'zlarni bir ko\'zdan '
+                    'kechirasiz - uyqu yodlaganingizni mustahkamlaydi.',
         done: marks.contains('night'),
         optional: !evening,
         action: !evening || marks.contains('night')
@@ -541,16 +706,17 @@ class _TodayCard extends StatelessWidget {
       ),
     ];
     final counted = rows.where((r) => !r.optional).toList();
-    // MINIMAL PLANKA: "eng yomon kunda ham" - 1 dars. Zanjir uzilmaydi.
+    // ENG KAMI: "eng yomon kunda ham" - 1 dars. Ketma-ket kun uzilmaydi.
     final minimalDone = lessonsDone > 0 || marks.isNotEmpty;
     final doneCount = counted.where((r) => r.done).length;
 
     final behind = status.behind;
     final statusText = behind > 0
-        ? '$behind ta band ortda - bugun ular ham qo\'shildi, jazo yo\'q.'
+        ? 'Rejadan $behind ta topshiriq orqada - ular bugungi ro\'yxatga '
+            'qo\'shildi. Xavotir olmang, jazo yo\'q.'
         : behind < 0
-            ? 'Rejadan ${-behind} ta band OLDINDASIZ!'
-            : 'Reja bo\'yicha ketyapsiz.';
+            ? 'Rejadan ${-behind} ta topshiriq oldindasiz!'
+            : 'Reja bo\'yicha ketyapsiz - hammasi joyida.';
 
     return SurfaceCard(
       child: Column(
@@ -562,18 +728,19 @@ class _TodayCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('${day + 1}-kun / ${plan.days}',
+                    Text('Bugun: ${day + 1}-kun (jami ${plan.days} kun)',
                         style: const TextStyle(
                             fontWeight: FontWeight.w900, fontSize: 18)),
                     Text(
-                      'Tugash: ${uzDate(plan.finishDate)} · '
-                      '${status.done} / ${status.total} band bajarildi',
+                      'Reja ${uzDateIn(plan.finishDate)} tugaydi · butun reja: '
+                      '${status.done} / ${status.total} topshiriq bajarildi',
                       style: TextStyle(
                           fontSize: 12.5, color: AppColors.muted(context)),
                     ),
                   ],
                 ),
               ),
+              const SizedBox(width: 8),
               _Ring(done: doneCount, total: counted.length),
             ],
           ),
@@ -595,9 +762,11 @@ class _TodayCard extends StatelessWidget {
             ),
             child: Text(
               minimalDone
-                  ? 'Minimal planka bajarildi - bugun zanjir uzilmadi.'
-                  : "Vaqt yo'qmi? Eng kamida 1 ta dars (~5 daqiqa) - zanjirni "
-                      "uzmang. Har kuni oz - haftada bir ko'pdan kuchli.",
+                  ? 'Bugungi eng kamini bajardingiz - ketma-ket kuningiz '
+                      'uzilmaydi.'
+                  : "Vaqtingiz kammi? Hech bo'lmasa 1 ta so'z darsini (~5 "
+                      "daqiqa) bajaring - ketma-ket kuningiz uzilmaydi. Har kuni "
+                      "ozroq - haftada bir marta ko'p qilishdan yaxshi.",
               style: TextStyle(
                 fontSize: 12.5,
                 fontWeight: FontWeight.w700,
@@ -606,8 +775,14 @@ class _TodayCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          const Text('Bugungi cheklist',
+          const Text('Bugun nima qilish kerak',
               style: TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
+          const SizedBox(height: 2),
+          Text(
+            'Qatorni bosing - mashq ochiladi. Bajarilgan qator yashil belgi '
+            'oladi.',
+            style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+          ),
           const SizedBox(height: 6),
           for (final r in rows) r,
         ],
@@ -624,14 +799,14 @@ class _TodayCard extends StatelessWidget {
     final done = marks.contains(id);
     return _CheckRow(
       emoji: '⏱️',
-      title: '10 daqiqadan keyin eslash',
+      title: 'Yangi so\'zlarni 10 daqiqadan keyin takrorlang',
       subtitle: done
-          ? 'Bajarildi - endi 1 kundan keyin qaytadi.'
+          ? 'Bajarildi. Bu so\'zlar ertaga yana so\'raladi.'
           : ready
-              ? "Hozirgina o'rgangan ${freshIds.length} ta so'zni yopib eslang. "
-                  'Birinchi qaytish - eng muhimi.'
-              : '${left.inMinutes + 1} daqiqadan keyin ochiladi (unutish egri '
-                  "chizig'i eng tik joyida).",
+              ? "Hozirgina o'rgangan ${freshIds.length} ta so'zni qaramasdan "
+                  "eslang. Birinchi takror eng muhim - shunda so'z yodda qoladi."
+              : '10 daqiqa o\'tgach ochiladi (yana ~${left.inMinutes + 1} '
+                  'daqiqa). Bu orada dam oling.',
       done: done,
       optional: !ready && !done,
       action: done || !ready
@@ -656,7 +831,7 @@ class _TodayCard extends StatelessWidget {
       context,
       MaterialPageRoute(
         builder: (_) => RecallScreen(
-          title: '10 daqiqadan keyin eslash',
+          title: 'Yangi so\'zlarni 10 daqiqadan keyin takrorlang',
           words: src,
         ),
       ),
@@ -717,7 +892,7 @@ class _TodayCard extends StatelessWidget {
       context,
       MaterialPageRoute(
         builder: (_) => RecallScreen(
-          title: 'O\'zbekchasidan inglizchasini toping',
+          title: 'Qaramasdan eslang: o\'zbekchadan inglizchaga',
           words: src,
         ),
       ),
@@ -748,22 +923,42 @@ class _Ring extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final r = total == 0 ? 0.0 : done / total;
-    return SizedBox(
-      width: 54,
-      height: 54,
-      child: Stack(
-        alignment: Alignment.center,
+    return Tooltip(
+      message: 'Bugungi ishlardan $done tasi bajarildi (jami $total ta). '
+          'Ixtiyoriy qatorlar hisobga kirmaydi.',
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          CircularProgressIndicator(
-            value: r,
-            strokeWidth: 5,
-            strokeCap: StrokeCap.round,
-            backgroundColor: AppColors.success.withValues(alpha: 0.15),
-            valueColor: const AlwaysStoppedAnimation(AppColors.success),
+          SizedBox(
+            width: 54,
+            height: 54,
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                SizedBox(
+                  width: 54,
+                  height: 54,
+                  child: CircularProgressIndicator(
+                    value: r,
+                    strokeWidth: 5,
+                    strokeCap: StrokeCap.round,
+                    backgroundColor: AppColors.success.withValues(alpha: 0.15),
+                    valueColor: const AlwaysStoppedAnimation(AppColors.success),
+                  ),
+                ),
+                Text('$done/$total',
+                    style: const TextStyle(
+                        fontWeight: FontWeight.w900, fontSize: 13)),
+              ],
+            ),
           ),
-          Text('$done/$total',
-              style: const TextStyle(
-                  fontWeight: FontWeight.w900, fontSize: 13)),
+          const SizedBox(height: 2),
+          Text('bugungi\nishlar',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 10.5,
+                  height: 1.15,
+                  color: AppColors.muted(context))),
         ],
       ),
     );
@@ -841,8 +1036,11 @@ class _CheckRow extends StatelessWidget {
               if (action != null)
                 const Padding(
                   padding: EdgeInsets.only(left: 4, top: 2),
-                  child: Icon(Icons.play_circle_fill_rounded,
-                      color: AppColors.brandPurple, size: 26),
+                  child: Tooltip(
+                    message: 'Boshlash',
+                    child: Icon(Icons.play_circle_fill_rounded,
+                        color: AppColors.brandPurple, size: 26),
+                  ),
                 ),
             ],
           ),
@@ -956,11 +1154,11 @@ class _GrammarCardState extends State<_GrammarCard> {
               const Text('📐', style: TextStyle(fontSize: 20)),
               const SizedBox(width: 8),
               const Expanded(
-                child: Text('Grammatika',
+                child: Text('Grammatika (qoidalar)',
                     style:
                         TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
               ),
-              Text('$done / ${rules.length}',
+              Text('$done / ${rules.length} qoida',
                   style: const TextStyle(
                       fontWeight: FontWeight.w900, color: AppColors.success)),
             ],
@@ -968,9 +1166,9 @@ class _GrammarCardState extends State<_GrammarCard> {
           const SizedBox(height: 4),
           Text(
             "${rules.length} ta qoida · ${fmt(v.grammarExercises)} ta mashq"
-            "${perDay == null ? '' : ' · ${_rulePace(perDay)}'}. So'zlardan "
-            "alohida: qoidani o'qing, misolni ovoz chiqarib ayting, o'z "
-            "gapingizni tuzing, mashqni bajaring.",
+            "${perDay == null ? '' : ' · ${_rulePace(perDay)} qoida'}. "
+            "So'zlardan alohida yo'l. Har qoida uchun: o'qing, misolni ovoz "
+            "chiqarib ayting, o'z gapingizni tuzing, mashq qiling.",
             style: TextStyle(fontSize: 12.5, height: 1.45, color: muted),
           ),
           const SizedBox(height: 8),
@@ -985,14 +1183,17 @@ class _GrammarCardState extends State<_GrammarCard> {
           ),
           if (p != null) ...[
             const SizedBox(height: 12),
-            const Text('Bugungi qoida',
+            const Text('Bugungi grammatika qoidasi',
                 style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13.5)),
             const SizedBox(height: 2),
             if (today.isEmpty)
               Text("Bugun yangi qoida yo'q - so'zlarga e'tibor bering.",
                   style: TextStyle(fontSize: 12.5, color: muted))
-            else
+            else ...[
+              Text("Bosing - qoida va mashqlar ochiladi.",
+                  style: TextStyle(fontSize: 12, color: muted)),
               for (final r in today) ruleRow(r, showUnit: true),
+            ],
           ],
           const SizedBox(height: 6),
           InkWell(
@@ -1005,7 +1206,7 @@ class _GrammarCardState extends State<_GrammarCard> {
                     child: Text(
                         _all
                             ? 'Yopish'
-                            : "Barcha qoidalar (unitlar bo'yicha)",
+                            : "Barcha qoidalar (unit - bob bo'yicha)",
                         style: const TextStyle(
                             fontWeight: FontWeight.w800,
                             color: AppColors.brandPurple)),
@@ -1024,7 +1225,8 @@ class _GrammarCardState extends State<_GrammarCard> {
               Padding(
                 padding: const EdgeInsets.only(top: 8, bottom: 2),
                 child: Text(
-                    '${e.key}-unit · ${e.value.where(plans.isDone).length}/${e.value.length}',
+                    '${e.key}-unit · ${e.value.where(plans.isDone).length} / '
+                    '${e.value.length} qoida bajarildi',
                     style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w900,
@@ -1107,7 +1309,9 @@ class _UnitMeasureCardState extends State<_UnitMeasureCard> {
       context,
       MaterialPageRoute(
         builder: (_) => RecallScreen(
-          title: post ? 'Unit yakuni o\'lchovi' : 'Unit oldi o\'lchovi',
+          title: post
+              ? 'Mini-test: unit oxirida'
+              : 'Mini-test: unit boshida',
           words: words,
           measure: true,
           onScore: (c, t) => plans.saveUnitTest(u, post, c, t),
@@ -1130,22 +1334,24 @@ class _UnitMeasureCardState extends State<_UnitMeasureCard> {
     String? button;
     VoidCallback? onTap;
     if (_pre == null) {
-      text = '${uv.label}ni boshlashdan OLDIN: shu unitdagi 10 ta so\'zdan '
-          'nechtasini bilasiz? Tugagach qayta o\'lchaymiz - o\'sishni ko\'rasiz.';
-      button = 'Oldingi o\'lchov (1 daqiqa)';
+      text = '${uv.label}ni (bobni) boshlashdan oldin: shu bobdan 10 ta so\'z '
+          'so\'raymiz - nechtasini bilishingizni ko\'rasiz. Bob tugagach xuddi '
+          'shu so\'zlar qayta so\'raladi va o\'sishingizni ko\'rasiz.';
+      button = 'Mini-testni boshlash (1 daqiqa)';
       onTap = () => _run(false);
     } else if (_post == null && unitDone) {
-      text = '${uv.label} tugadi! Boshida $_pre edi. Endi o\'sha so\'zlarni '
-          'qayta tekshiramiz.';
-      button = 'Yakuniy o\'lchov';
+      text = '${uv.label} tugadi! Boshida ${_outOf(_pre!)} edi. Endi o\'sha '
+          'so\'zlarni qayta tekshiramiz.';
+      button = 'Yakuniy mini-test';
       onTap = () => _run(true);
     } else if (_post == null) {
-      text = '${uv.label}: boshida $_pre. Unit tugagach yakuniy o\'lchov ochiladi.';
+      text = '${uv.label}: boshida ${_outOf(_pre!)} edi. Unit tugagach '
+          'yakuniy mini-test ochiladi.';
     } else {
       int n(String s) => int.tryParse(s.split('/').first) ?? 0;
       final grow = n(_post!) - n(_pre!);
-      text = '${uv.label}: oldin $_pre  ->  keyin $_post'
-          '${grow > 0 ? '  (+$grow so\'z!)' : ''}';
+      text = '${uv.label}: boshida ${_outOf(_pre!)} edi, endi '
+          '${_outOf(_post!)}${grow > 0 ? ' (+$grow so\'z)' : ''}.';
     }
     return SurfaceCard(
       child: Column(
@@ -1155,8 +1361,11 @@ class _UnitMeasureCardState extends State<_UnitMeasureCard> {
             children: [
               Text('📏', style: TextStyle(fontSize: 18)),
               SizedBox(width: 8),
-              Text('Unit o\'lchovi',
-                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+              Expanded(
+                child: Text('Bilimingizni o\'lchash (mini-test)',
+                    style:
+                        TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+              ),
             ],
           ),
           const SizedBox(height: 6),
@@ -1197,10 +1406,12 @@ class _Roadmap extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('Xarita',
+          const Text('Reja xaritasi',
               style: TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
           const SizedBox(height: 2),
-          Text('Qaysi unit qaysi kunlarda o\'tiladi',
+          Text(
+              'Qaysi bob (unit) qaysi kunlarda o\'tiladi. Doiradagi raqam - '
+              'unit; binafsha - hozirgi, yashil belgi - tugagan.',
               style: TextStyle(fontSize: 12, color: AppColors.muted(context))),
           const SizedBox(height: 10),
           for (final u in v.units)
@@ -1249,7 +1460,7 @@ class _RoadRow extends StatelessWidget {
         ? ''
         : fromDay == toDay
             ? '${fromDay! + 1}-kun'
-            : '${fromDay! + 1}-${toDay! + 1}-kun';
+            : '${fromDay! + 1}-${toDay! + 1}-kunlar';
     final dates = fromDay == null
         ? ''
         : ' (${uzDate(start.add(Duration(days: fromDay!)))} - '
@@ -1286,8 +1497,8 @@ class _RoadRow extends StatelessWidget {
                       fontWeight: FontWeight.w800, fontSize: 13),
                 ),
                 Text(
-                  '$range$dates · ${u.words} so\'z · ${u.lessons.length} dars · '
-                  '${u.rules.length} qoida',
+                  '$range$dates · ${u.words} so\'z · '
+                  '${u.lessons.length} so\'z darsi · ${u.rules.length} qoida',
                   style: TextStyle(
                       fontSize: 11.5, color: AppColors.muted(context)),
                 ),
@@ -1327,13 +1538,14 @@ class _PracticeCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('Mnemonikani sinab ko\'ring (10 daqiqa)',
+                const Text('Mnemonika ishlashini o\'zingiz sinab ko\'ring (10 daqiqa)',
                     style:
                         TextStyle(fontWeight: FontWeight.w900, fontSize: 14.5)),
                 const SizedBox(height: 3),
                 Text(
-                  'Qarmoq usuli: avval oddiy usulda 10 so\'z, keyin usul bilan '
-                  '- natija necha barobar oshganini o\'zingiz ko\'rasiz.',
+                  'Mini-tajriba: avval 10 ta so\'zni oddiy usulda yodlaysiz, '
+                  'keyin "qarmoq" usuli bilan (1-10 raqamlarga rasm bog\'laysiz). '
+                  'Ikki natijani solishtirasiz.',
                   style: TextStyle(
                       fontSize: 12.5, color: AppColors.muted(context)),
                 ),
@@ -1360,11 +1572,11 @@ class _MethodCardState extends State<_MethodCard> {
 
   static const _steps = [
     ('1. Hajm', 'Kitobda nechta so\'z va qoida borligini bilasiz - "ko\'p" emas, aniq raqam. Reja shu raqamdan tuziladi.'),
-    ('2. Ilgak', 'Yangi so\'zni tovushi o\'xshash o\'zbekcha so\'zga ilang: book -> buqa, kettle -> katta, bucket -> buket. Birinchi bo\'g\'in yetadi.'),
-    ('3. Obraz', 'Bitta sahnada tovush ham, ma\'no ham bo\'lsin: "buqa ko\'zoynak taqib kitob o\'qiyapti". G\'alati, harakatli, katta - miya zerikarlisini saqlamaydi.'),
-    ('4. Yopib eslash', 'O\'qib takrorlash emas - yopib, o\'zingiz eslash. Xato - signal: shu so\'z qaytadi.'),
-    ('5. Ikki tomon', 'Inglizchadan tanish - tushunish; o\'zbekchadan inglizchasini topish - gapirish. Ikkalasi ham mashq qilinadi.'),
-    ('6. Oraliqli takror', '1 -> 3 -> 7 -> 14 -> 30 kun. So\'z unutilish arafasida qaytadi - takror soni kam, natija uzoq.'),
+    ('2. Ilgak - so\'zni eslatadigan o\'xshash so\'z', 'Yangi so\'zga tovushi o\'xshash o\'zbekcha so\'z toping. Masalan: "book" eshitilishi "buqa"ga, "kettle" - "katta"ga, "bucket" - "buket"ga o\'xshaydi. Boshlanishi o\'xshash bo\'lsa yetadi.'),
+    ('3. Sahna - ilgak va ma\'noni bitta rasmga birlashtirish', '"Buqa ko\'zoynak taqib kitob o\'qiyapti" - bitta rasmda ham tovush (buqa), ham ma\'no (kitob) bor. G\'alati, harakatli, katta bo\'lsin - miya zerikarli rasmni saqlamaydi.'),
+    ('4. Qaramasdan eslash', 'Qayta o\'qib chiqish emas - javobni yashirib, o\'zingiz eslash. Xato qilsangiz, shu so\'z yana so\'raladi.'),
+    ('5. Ikki yo\'nalishda mashq', 'Inglizchasini ko\'rib ma\'nosini topish (o\'qiganda kerak) va o\'zbekchasini ko\'rib inglizchasini yozish (gapirganda kerak).'),
+    ('6. Takror oralig\'i', 'So\'z 1, 3, 7, 14 va 30 kundan keyin qaytadi - unutilish arafasida. Takror kam, natija uzoq.'),
     ('7. Qo\'llash', 'Gap ichida, ovoz chiqarib, suhbatda. So\'z ishlatilgandagina "sizniki" bo\'ladi.'),
   ];
 
@@ -1381,7 +1593,7 @@ class _MethodCardState extends State<_MethodCard> {
                 const Text('💡', style: TextStyle(fontSize: 18)),
                 const SizedBox(width: 8),
                 const Expanded(
-                  child: Text('Nega bu usul ishlaydi? (7 qadam)',
+                  child: Text('Mnemonika qanday ishlaydi? (7 qadam)',
                       style: TextStyle(
                           fontWeight: FontWeight.w900, fontSize: 14)),
                 ),
@@ -1412,9 +1624,9 @@ class _MethodCardState extends State<_MethodCard> {
                 ),
               ),
             Text(
-              'Manba: xotira bo\'yicha tadqiqotlar (Ebbinghaus 1885, Atkinson 1975, '
-              'Roediger & Karpicke 2006). Kuniga yuzlab so\'z va\'da qilinmaydi - '
-              'barqaror sur\'at muhimroq.',
+              'Usul xotira bo\'yicha ilmiy tadqiqotlarga asoslangan. Kuniga '
+              'yuzlab so\'z va\'da qilinmaydi - har kuni muntazam o\'qish '
+              'muhimroq.',
               style: TextStyle(
                   fontSize: 11.5,
                   fontStyle: FontStyle.italic,

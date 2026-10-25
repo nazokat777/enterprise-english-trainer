@@ -36,7 +36,7 @@ void main() {
 
   testWidgets('hech narsa ochilmagan bo\'lsa banner yo\'q', (t) async {
     await pump(t);
-    expect(find.text('Davom etish'), findsNothing);
+    expect(find.text('Oxirgi mashqni davom ettirish'), findsNothing);
   });
 
   testWidgets('mashq ochilsa joy eslab qolinadi', (t) async {
@@ -58,7 +58,8 @@ void main() {
 
     expect(app.progress.lastExerciseId, e.progressId);
     expect(app.progress.lastUnitNo, u.unit);
-    expect(app.progress.lastLabel, contains(e.title));
+    // Saqlangan yorliq bo'lim nomi bilan boshlanadi ("Kirish · 1-mashq").
+    expect(app.progress.lastLabel, startsWith(s.titleUz));
   });
 
   testWidgets('eslab qolingan joy Darslar ekranida ko\'rinadi', (t) async {
@@ -67,8 +68,9 @@ void main() {
 
     await pump(t);
 
-    expect(find.text('Davom etish'), findsOneWidget);
-    expect(find.text('Kirish · Ex. 1'), findsOneWidget);
+    // Sarlavha nima ekanini aytadi; manzil unit va "N-mashq" bilan.
+    expect(find.text('Oxirgi mashqni davom ettirish'), findsOneWidget);
+    expect(find.text('1-unit · Kirish · 1-mashq'), findsOneWidget);
   });
 
   testWidgets('jarayon o\'chirilsa banner ham yo\'qoladi', (t) async {
@@ -78,6 +80,23 @@ void main() {
 
     await pump(t);
 
-    expect(find.text('Davom etish'), findsNothing);
+    expect(find.text('Oxirgi mashqni davom ettirish'), findsNothing);
+  });
+
+  testWidgets('hero "Davom eting" hikoyada ichki raqamni (901) ko\'rsatmaydi',
+      (t) async {
+    // Oxirgi mashq hikoyadan (901) bo'lsa, sarlavhada "901-unit" emas,
+    // "1-epizod" yozilishi kerak - kitobsiz odam 901 ni tushunmaydi.
+    await app.progress.rememberExercise(
+        unit: 901, id: 'ex::coursebook::24::1', label: 'Kirish · Ex. 1');
+
+    await pump(t);
+    // Keyingi dars asset'dan o'qiladi - haqiqiy vaqt kerak.
+    await t.runAsync(() => Future<void>.delayed(const Duration(seconds: 1)));
+    await t.pump(const Duration(seconds: 1));
+
+    expect(find.textContaining('Davom eting: 1-epizod, 1-dars'),
+        findsOneWidget);
+    expect(find.textContaining('901-unit'), findsNothing);
   });
 }

@@ -18,15 +18,18 @@ class HomeAdvice {
     required bool goalMet,
   }) {
     if (fading >= 3) {
-      return HomeAdvice('🛟', '$fading so\'z o\'chib ketmoqda - avval qutqaring');
+      return HomeAdvice('🛟', '$fading ta so\'zni unutib qo\'yishingiz mumkin - avval takrorlang');
     }
     if (examUnit > 0 && !examPassed) {
-      return HomeAdvice('📝', '1-$examUnit unitlar imtihoni tayyor');
+      return HomeAdvice(
+          '📝', '1-$examUnit unitlar (boblar) bo\'yicha imtihon topshirishingiz mumkin');
     }
     if (nextLesson != null) {
-      return HomeAdvice('📖', 'Keyingi: $nextLesson');
+      return HomeAdvice('📖', 'Keyingi dars: $nextLesson');
     }
-    if (goalMet) return const HomeAdvice('⚡', 'Blitz bilan tezlikni oshiring');
-    return const HomeAdvice('🚀', '3 daqiqalik tez mashqdan boshlang');
+    if (goalMet) {
+      return const HomeAdvice('⚡', '60 soniyalik tezlik o\'yini bilan tezlikni oshiring');
+    }
+    return const HomeAdvice('🚀', '3 daqiqalik qisqa mashqdan boshlang');
   }
 }

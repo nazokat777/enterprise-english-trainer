@@ -104,9 +104,10 @@ String suggestHook(String en, {String meaningUz = ''}) {
   return best;
 }
 
-/// Sahna shabloni: ilgak va ma'no BIR KADRDA.
+/// Sahna shabloni: ilgak va ma'no BIR KADRDA. Ilgak yo'q bo'lsa ham
+/// maydon bo'sh qolmaydi - namuna ko'rsatiladi.
 String sceneTemplate(String hook, String meaningUz) {
-  if (hook.isEmpty) return '';
+  if (hook.isEmpty) return 'Masalan: ulkan buqa kitob o\'qiyapti';
   final m = meaningUz.split(RegExp(r'[,;/]')).first.trim();
-  return 'Ulkan $hook $m bilan ... (nima qilyapti? g\'alati, harakatli qiling)';
+  return 'Masalan: ulkan $hook $m bilan ... (nima qilyapti? g\'alati, harakatli qiling)';
 }

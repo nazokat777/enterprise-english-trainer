@@ -7,6 +7,7 @@ import '../../main.dart';
 import '../../srs.dart';
 import '../../theme.dart';
 import '../../services/tts.dart';
+import '../../teach/question_card.dart';
 import '../../widgets/correct_burst.dart';
 import '../../widgets/pressable3d.dart';
 import '../pack/pack_flow.dart' show RoundPlay;
@@ -136,22 +137,28 @@ class _HomeworkFlowState extends State<HomeworkFlow> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Homework'),
+        // "Homework" emas: bu uy vazifasi ham emas - unit so'zlari bo'yicha
+        // baholi test (o'tish uchun 80%).
+        title: const Text('Unit so\'zlari testi'),
         actions: [
           Center(
-            child: Container(
-              margin: const EdgeInsets.only(right: 14),
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-              decoration: BoxDecoration(
-                color: AppColors.coin.withValues(alpha: 0.16),
-                borderRadius: BorderRadius.circular(AppRadius.pill),
-              ),
-              child: Text(
-                '⚡ $_sessionXp XP',
-                style: const TextStyle(
-                  fontWeight: FontWeight.w800,
-                  color: AppColors.coin,
-                  fontSize: 13,
+            child: Tooltip(
+              message: 'Shu testda yig\'ilgan ball',
+              child: Container(
+                margin: const EdgeInsets.only(right: 14),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  color: AppColors.coin.withValues(alpha: 0.16),
+                  borderRadius: BorderRadius.circular(AppRadius.pill),
+                ),
+                child: Text(
+                  '⚡ $_sessionXp ball',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.coin,
+                    fontSize: 13,
+                  ),
                 ),
               ),
             ),
@@ -164,7 +171,14 @@ class _HomeworkFlowState extends State<HomeworkFlow> {
 
   Widget _body() {
     if (_plan.questions.isEmpty) {
-      return const Center(child: Text('Bu unitda so\'z yo\'q'));
+      return const Center(
+          child: Padding(
+        padding: EdgeInsets.all(24),
+        child: Text(
+          'Bu unitda hali so\'z yo\'q. Boshqa unitni tanlang.',
+          textAlign: TextAlign.center,
+        ),
+      ));
     }
     switch (_phase) {
       case _Phase.question:
@@ -172,6 +186,14 @@ class _HomeworkFlowState extends State<HomeworkFlow> {
         return Column(
           children: [
             _progressBar(_index, _plan.questions.length),
+            // Test nima ekani - birinchi savolda bir marta aytiladi.
+            if (_index == 0)
+              PageIntro(
+                'Bu yerda: shu unit (bob)dagi so\'zlar testi. Avval savollar, '
+                'so\'ng juftlarni moslash. O\'tish uchun $kPassMark% kerak '
+                '(o\'tsangiz +$kPassBonusXp ball).',
+                margin: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+              ),
             Expanded(
               child: _QuestionCard(
                 key: ValueKey('q$_index'),
@@ -234,7 +256,7 @@ class _HomeworkFlowState extends State<HomeworkFlow> {
           Align(
             alignment: Alignment.centerRight,
             child: Text(
-              '${i + 1} / $total',
+              '${i + 1}-savol / $total',
               style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
             ),
           ),
@@ -312,15 +334,18 @@ class _QuestionCardState extends State<_QuestionCard> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
       children: [
+        // NIMA QILINADI - savol kartasidan OLDIN (ilgari kichik qalin
+        // yozuv kartadan keyin turardi va "kimning ma'nosi?" noaniq edi).
+        QuestionCard(
+          question: q.kind == QuestionKind.fill
+              ? 'Gapdagi bo\'sh joyga mos inglizcha so\'zni tanlang'
+              : 'Inglizcha so\'zning o\'zbekcha ma\'nosini tanlang',
+          hint: q.kind == QuestionKind.fill
+              ? 'Ovoz tugmasi - yashirin so\'zni o\'qib beradi.'
+              : '',
+        ),
         _prompt(context),
         const SizedBox(height: 18),
-        Text(
-          q.kind == QuestionKind.fill
-              ? 'Bo\'sh joyni to\'ldiring'
-              : 'Ma\'nosini tanlang',
-          style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 14),
-        ),
-        const SizedBox(height: 10),
         for (final o in q.options) _optionTile(o),
       ],
     );
@@ -497,15 +522,20 @@ class _ConstructBodyState extends State<_ConstructBody> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
       children: [
-        const Text(
-          '🧩 So\'zni yig\'ing',
-          style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
+        QuestionCard(
+          question: sep.isEmpty
+              ? 'Pastdagi harflarni to\'g\'ri tartibda bosib, o\'zbekcha '
+                  'ma\'noning inglizchasini yig\'ing'
+              : 'Pastdagi so\'zlarni to\'g\'ri tartibda bosib, o\'zbekcha '
+                  'ma\'noning inglizchasini yig\'ing',
+          hint: 'Tepada o\'zbekcha ma\'nosi. Faqat bitta urinish bor.',
         ),
-        const SizedBox(height: 10),
+        const SizedBox(height: 4),
         Center(
           child: Text(
             widget.word.uz,
-            style: TextStyle(fontSize: 16, color: AppColors.muted(context)),
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
           ),
         ),
         const SizedBox(height: 12),
@@ -553,7 +583,7 @@ class _ConstructBodyState extends State<_ConstructBody> {
                       child: TextButton.icon(
                         onPressed: _undo,
                         icon: const Icon(Icons.backspace_outlined, size: 18),
-                        label: const Text('Orqaga'),
+                        label: const Text('Oxirgisini olib tashlash'),
                       ),
                     )
                   : const SizedBox(),
@@ -666,13 +696,28 @@ class _MatchRoundState extends State<_MatchRound> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Padding(
-          padding: EdgeInsets.fromLTRB(20, 16, 20, 4),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 16, 20, 4),
           child: Align(
             alignment: Alignment.centerLeft,
-            child: Text(
-              '🔗 Moslash raundi',
-              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  '🔗 Juftlarni moslang',
+                  style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  'Chapdagi inglizcha so\'zni bosing, so\'ng o\'ngdan uning '
+                  'o\'zbekchasini bosing. Birinchi urinishda topilgan juft - '
+                  '1 ta to\'g\'ri javob.',
+                  style: TextStyle(
+                      fontSize: 12.5,
+                      height: 1.35,
+                      color: AppColors.muted(context)),
+                ),
+              ],
             ),
           ),
         ),
@@ -870,26 +915,26 @@ class _CorrectionRoundState extends State<_CorrectionRound> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
       children: [
-        Row(
-          children: [
-            const Text(
-              '🔁 Xatolar ustida ishlash',
-              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
-            ),
-            const Spacer(),
-            Text(
-              '${_fixed.length} / ${widget.words.length}',
-              style: const TextStyle(
-                fontWeight: FontWeight.w800,
-                color: AppColors.homework,
-              ),
-            ),
-          ],
+        const Text(
+          '🔁 Adashgan so\'zlarni qayta ishlang',
+          style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
         ),
         const SizedBox(height: 6),
         Text(
-          'Bu raund bahoga ta\'sir qilmaydi',
-          style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
+          'Shu bosqich bahoga ta\'sir qilmaydi. Inglizcha so\'zning '
+          'o\'zbekchasini tanlang. Adashsangiz, so\'z keyinroq yana '
+          'so\'raladi.',
+          style: TextStyle(
+              fontSize: 12.5, height: 1.4, color: AppColors.muted(context)),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          '${_fixed.length} / ${widget.words.length} so\'z to\'g\'rilandi',
+          style: const TextStyle(
+            fontWeight: FontWeight.w800,
+            fontSize: 13,
+            color: AppColors.homework,
+          ),
         ),
         const SizedBox(height: 16),
         Center(
@@ -1000,8 +1045,23 @@ class _ResultView extends StatelessWidget {
         const SizedBox(height: 6),
         Center(
           child: Text(
-            '${result.earned} / ${result.total} to\'g\'ri',
+            '${result.earned} / ${result.total} to\'g\'ri (savollar va juftlar)',
+            textAlign: TextAlign.center,
             style: TextStyle(color: AppColors.muted(context)),
+          ),
+        ),
+        const SizedBox(height: 10),
+        // Natija nimani bildirishi va keyin nima qilish kerak.
+        Center(
+          child: Text(
+            passed
+                ? 'Unit testi bajarildi (shundan $kPassBonusXp ball - '
+                    'testdan o\'tgani uchun bonus).'
+                : 'Yana urinib ko\'ring. Ko\'p adashgan so\'zlaringiz '
+                    '"Qiyin so\'zlar" sahifasida chiqadi.',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: 13.5, height: 1.45, color: AppColors.muted(context)),
           ),
         ),
         const SizedBox(height: 16),
@@ -1013,7 +1073,7 @@ class _ResultView extends StatelessWidget {
               borderRadius: BorderRadius.circular(AppRadius.pill),
             ),
             child: Text(
-              '+$xp XP',
+              '+$xp ball',
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w800,
@@ -1029,7 +1089,7 @@ class _ResultView extends StatelessWidget {
           onPressed: onClose,
           child: const Center(
             child: Text(
-              'Unitga qaytish',
+              'Unit (bob)ga qaytish',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,
@@ -1045,7 +1105,7 @@ class _ResultView extends StatelessWidget {
           onPressed: onRetry,
           child: const Center(
             child: Text(
-              'Qayta topshirish',
+              'Testni qaytadan boshlash',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,

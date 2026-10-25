@@ -131,6 +131,19 @@ class _RecallScreenState extends State<RecallScreen> {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 30),
       children: [
+        Text(
+          widget.measure
+              ? 'Mini-test: nechta so\'zni bilishingizni o\'lchaymiz. Xato '
+                  'qilgan so\'z qayta so\'ralmaydi.'
+              : 'O\'zbekcha so\'z ko\'rinadi - inglizchasini xotiradan yozing. '
+                  'Xato qilsangiz, so\'z oxirida yana so\'raladi.',
+          style: TextStyle(fontSize: 12.5, height: 1.4, color: muted),
+        ),
+        const SizedBox(height: 10),
+        Text('So\'z ${_pos + 1} / ${_queue.length}',
+            style: TextStyle(
+                fontSize: 12, fontWeight: FontWeight.w800, color: muted)),
+        const SizedBox(height: 4),
         ClipRRect(
           borderRadius: BorderRadius.circular(AppRadius.pill),
           child: LinearProgressIndicator(
@@ -163,7 +176,12 @@ class _RecallScreenState extends State<RecallScreen> {
         ),
         const SizedBox(height: 12),
         if (_ok == null) ...[
-          HelpSkipBar(onHelp: _giveUp, onSkip: _skipWord),
+          HelpSkipBar(
+            onHelp: _giveUp,
+            onSkip: _skipWord,
+            helpHint: "javob ko'rsatiladi, so'z oxirida yana so'raladi",
+            skipHint: "so'z eslanmagan hisoblanadi va qaytmaydi",
+          ),
           const SizedBox(height: 4),
         ],
         if (_ok == null)
@@ -199,9 +217,14 @@ class _RecallScreenState extends State<RecallScreen> {
                 ),
                 if (!_ok!) ...[
                   const SizedBox(height: 4),
+                  if (hook.isNotEmpty)
+                    Text(
+                      'Siz o\'ylab topgan ilgak va sahna: $hook',
+                      style: const TextStyle(fontSize: 13, height: 1.4),
+                    ),
                   Text(
-                    hook.isNotEmpty
-                        ? 'Ilgagingizni eslang: $hook'
+                    widget.measure
+                        ? 'Bu mini-testda so\'z qayta so\'ralmaydi.'
                         : 'Bu so\'z oxirida yana so\'raladi.',
                     style: const TextStyle(fontSize: 13, height: 1.4),
                   ),
@@ -236,9 +259,17 @@ class _RecallScreenState extends State<RecallScreen> {
         Text('$_firstTry / $n',
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 44, fontWeight: FontWeight.w900)),
-        Text('birinchi urinishda eslandi',
+        Text('$n ta so\'zdan $_firstTry tasi birinchi urinishda to\'g\'ri eslandi',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 15, color: AppColors.muted(context))),
+        const SizedBox(height: 10),
+        Text(
+            widget.measure
+                ? 'Natija saqlandi - "Bilimingizni o\'lchash" bo\'limida ko\'rasiz.'
+                : 'Xato qilgan so\'zlaringiz keyingi kunlarda yana so\'raladi.',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: 12.5, height: 1.4, color: AppColors.muted(context))),
         const SizedBox(height: 18),
         Pressable3D(
           color: AppColors.success,

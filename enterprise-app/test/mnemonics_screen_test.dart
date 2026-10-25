@@ -61,13 +61,21 @@ void main() {
     await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
     await t.pump();
 
-    expect(find.text('Kitob hajmi'), findsOneWidget);
+    // Ekran tepasi: nima ekani darrov tushunarli.
+    expect(find.text('Mnemonika'), findsOneWidget);
+    expect(find.text('Bu nima?'), findsOneWidget);
+    expect(find.textContaining('butun kitobni kunlarga bo\'lib beradigan reja'),
+        findsOneWidget);
+    expect(find.textContaining('Beginner · Enterprise 1'), findsOneWidget);
+    expect(find.text('Kitobda nimalar yodlanadi'), findsOneWidget);
     expect(find.text('673'), findsOneWidget);
     expect(find.text('Kitobni necha kunda tugatasiz?'), findsOneWidget);
     expect(find.text('2 oy'), findsOneWidget);
-    expect(find.text('Tavsiya'), findsOneWidget);
-    // Yangi o'quvchi uchun darsliklar ro'yxati.
-    expect(find.text('Mnemonika darsliklari'), findsOneWidget);
+    expect(find.text('Tavsiya etiladi'), findsOneWidget);
+    expect(find.textContaining('Qiyinlik kuniga ketadigan vaqtga qarab'),
+        findsOneWidget);
+    // Yangi o'quvchi uchun videolar ro'yxati (sahifa pastida).
+    expect(find.text('Mnemonika haqida videolar (YouTube)'), findsOneWidget);
     expect(find.textContaining('3 prinsip'), findsOneWidget);
     expect(t.takeException(), isNull);
 
@@ -80,26 +88,48 @@ void main() {
     // Unit o'lchovi kartasi o'z natijasini asinxron o'qiydi.
     await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
     await t.pump();
-    expect(find.text('1-kun / 60'), findsOneWidget);
-    expect(find.text('Bugungi cheklist'), findsOneWidget);
-    expect(find.text('Yangi so\'zlar'), findsOneWidget);
-    expect(find.text('Oraliqli takror'), findsOneWidget);
-    expect(find.text('Xarita'), findsOneWidget);
-    // Grammatika - alohida bo'lim, so'zlar cheklistida qoida yo'q.
-    expect(find.text('Grammatika'), findsOneWidget);
-    expect(find.text('0 / 51'), findsOneWidget);
-    expect(find.text('Bugungi qoida'), findsOneWidget);
+    expect(find.text('Bugun: 1-kun (jami 60 kun)'), findsOneWidget);
+    expect(find.text('Bugun nima qilish kerak'), findsOneWidget);
+    expect(find.text('bugungi\nishlar'), findsOneWidget);
+    expect(find.text('Yangi so\'zlarni o\'rganing'), findsOneWidget);
+    expect(find.text('Unutilayotgan so\'zlarni takrorlang'), findsOneWidget);
+    expect(find.text('Reja xaritasi'), findsOneWidget);
+    // Grammatika - alohida bo'lim, so'zlar ro'yxatida qoida yo'q.
+    expect(find.text('Grammatika (qoidalar)'), findsOneWidget);
+    expect(find.text('0 / 51 qoida'), findsOneWidget);
+    expect(find.text('Bugungi grammatika qoidasi'), findsOneWidget);
     expect(find.textContaining('Qoida: '), findsNothing);
-    // Unit oldi o'lchovi taklifi.
-    expect(find.text("Unit o'lchovi"), findsOneWidget);
-    expect(find.textContaining("Oldingi o'lchov"), findsOneWidget);
-    // Minimal planka eslatmasi.
-    expect(find.textContaining('Eng kamida 1 ta dars'), findsOneWidget);
+    // Bilimni o'lchash (mini-test) taklifi.
+    expect(find.text('Bilimingizni o\'lchash (mini-test)'), findsOneWidget);
+    expect(find.textContaining('Mini-testni boshlash'), findsOneWidget);
+    // Eng kami eslatmasi (ketma-ket kunni saqlash).
+    expect(find.textContaining('Hech bo\'lmasa 1 ta so\'z darsini'),
+        findsOneWidget);
     expect(t.takeException(), isNull);
 
     final p = await t.runAsync(() => app.plans.plan());
     expect(p!.days, 60);
     expect(app.rewards.commitHour, 20);
+  });
+
+  testWidgets('"?" tugmasi Mnemonika nimaligini tushuntiradi', (t) async {
+    t.view.physicalSize = const Size(420, 4200);
+    t.view.devicePixelRatio = 1.0;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(const MaterialApp(home: Scaffold(body: MnemonicsScreen())));
+    await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
+    await t.pump();
+
+    await t.tap(find.byTooltip('Mnemonika nima?'));
+    await t.pumpAndSettle();
+    expect(find.text('Mnemonika nima?'), findsWidgets);
+    expect(find.text('2. Ilgak'), findsOneWidget);
+    expect(find.textContaining('(book - buqa)'), findsOneWidget);
+    expect(find.text('5. Takror'), findsOneWidget);
+    await t.tap(find.text('Tushunarli'));
+    await t.pumpAndSettle();
+    expect(find.text('5. Takror'), findsNothing);
+    expect(t.takeException(), isNull);
   });
 
   test('2 oylik reja: kuniga ~11-12 dars, hamma band taqsimlangan', () async {
@@ -158,7 +188,7 @@ void main() {
     await t.pumpWidget(const MaterialApp(home: Scaffold(body: MnemonicsScreen())));
     await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
     await t.pump();
-    expect(find.textContaining('Enterprise 2 - Elementary'), findsOneWidget);
+    expect(find.textContaining('Elementary · Enterprise 2'), findsOneWidget);
     expect(find.text('779'), findsOneWidget);
 
     await t.tap(find.text('6 oy'));
@@ -168,8 +198,8 @@ void main() {
     await t.pump();
     await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
     await t.pump();
-    expect(find.text('1-kun / 180'), findsOneWidget);
-    expect(find.text('0 / 63'), findsOneWidget);
+    expect(find.text('Bugun: 1-kun (jami 180 kun)'), findsOneWidget);
+    expect(find.text('0 / 63 qoida'), findsOneWidget);
     expect(t.takeException(), isNull);
 
     // Beginner'ga qaytsa - uning 2 oylik rejasi joyida.
