@@ -522,4 +522,30 @@ void main() {
       expect(find.text('dehqon'), findsOneWidget);
     });
   });
+
+  group("Kitob yo'li: betma-bet ketma-ket", () {
+    testWidgets("keyingi bet tugmasi ikkinchi betga o'tkazadi, oxirida imtihon",
+        (t) async {
+      _tall(t);
+      await t.pumpWidget(_wrap(BookPagesScreen(unit: unit)));
+      await t.pump();
+      // Ro'yxat boshida yo'l tushuntirilgan, oxirida imtihon bor.
+      expect(find.textContaining("Kitob yo'li"), findsOneWidget);
+      expect(find.text('Hamma betlar tugadimi? Endi imtihon'), findsOneWidget);
+
+      // Birinchi bet (Coursebook 7) -> "Keyingi bet" -> Grammar 4.
+      await t.tap(find.textContaining('Coursebook').last);
+      await t.pumpAndSettle();
+      expect(find.text('Bet 1 / 2'), findsOneWidget);
+      expect(find.text('Hamma betlar tugadimi? Endi imtihon'), findsNothing);
+      await t.tap(find.text('Keyingi bet'));
+      await t.pumpAndSettle();
+      expect(find.text('Bet 2 / 2'), findsOneWidget);
+      expect(find.text('Oldingi bet'), findsOneWidget);
+      // Oxirgi betda unit imtihoni chiqadi.
+      await t.scrollUntilVisible(
+          find.text('Hamma betlar tugadimi? Endi imtihon'), 300);
+      expect(find.text('Hamma betlar tugadimi? Endi imtihon'), findsOneWidget);
+    });
+  });
 }

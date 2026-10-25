@@ -1694,9 +1694,10 @@ class BookPagesScreen extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
           children: [
             Text(
-              "Unit mashqlari kitobdagi sahifa tartibida. Kitobingiz bo'lsa - "
-              "shu betni oching va birga ishlang; bo'lmasa - ilovaning o'zi "
-              "yetarli.",
+              "Kitob yo'li: betlar kitobdagi tartibda. Har betda avval betning "
+              "o'zi, keyin shu betning qoidasi, lug'ati, mashqlari va testlari. "
+              "Bet tugagach \"Keyingi bet\" ga o'tasiz. Hamma betlar tugagach - "
+              "unit imtihoni (har 3 unitdan keyin yig'ma imtihon ham).",
               style: TextStyle(
                 fontSize: 13,
                 color: AppColors.muted(context),
@@ -1739,16 +1740,19 @@ class BookPagesScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              for (final p in entry.value) _pageTile(context, p),
+              for (var i = 0; i < entry.value.length; i++)
+                _pageTile(context, entry.value[i], pages, pages.indexOf(entry.value[i])),
               const SizedBox(height: 12),
             ],
+            _UnitFinish(unit: unit),
           ],
         ),
       ),
     );
   }
 
-  Widget _pageTile(BuildContext context, BookPage p) {
+  Widget _pageTile(
+      BuildContext context, BookPage p, List<BookPage> all, int index) {
     // Bet faqat hamma mashq XATOSIZ o'zlashtirilganda tugagan
     // hisoblanadi — aks holda takrorlash kerakligi ko'rinmay qolardi.
     final done = p.exercises.every((e) {
@@ -1770,7 +1774,9 @@ class BookPagesScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppRadius.md),
           onTap: () => Navigator.push(
             context,
-            MaterialPageRoute(builder: (_) => BookPageScreen(page: p)),
+            MaterialPageRoute(
+                builder: (_) =>
+                    BookPageScreen(page: p, pages: all, index: index)),
           ),
           child: Padding(
             padding: const EdgeInsets.all(13),
@@ -1893,7 +1899,74 @@ class BookPagesScreen extends StatelessWidget {
 /// barcha mashqlar. O'quvchi kitobdagi betni ochib, shu ekran bilan ishlaydi.
 class BookPageScreen extends StatelessWidget {
   final BookPage page;
-  const BookPageScreen({super.key, required this.page});
+
+  /// Unitning hamma betlari (tartib bilan) va shu betning o'rni - "Keyingi
+  /// bet" tugmasi uchun. Bo'sh bo'lsa - ketma-ket o'tish yo'q.
+  final List<BookPage> pages;
+  final int index;
+  const BookPageScreen(
+      {super.key, required this.page, this.pages = const [], this.index = 0});
+
+  void _go(BuildContext context, int to) {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (_) => BookPageScreen(page: pages[to], pages: pages, index: to),
+      ),
+    );
+  }
+
+  Widget _nav(BuildContext context) {
+    if (pages.isEmpty) return const SizedBox.shrink();
+    final hasPrev = index > 0;
+    final hasNext = index < pages.length - 1;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SizedBox(height: 6),
+        Text(
+          "Bet ${index + 1} / ${pages.length}",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
+        ),
+        const SizedBox(height: 8),
+        Row(
+          children: [
+            if (hasPrev)
+              Expanded(
+                child: OutlinedButton.icon(
+                  onPressed: () => _go(context, index - 1),
+                  icon: const Icon(Icons.chevron_left_rounded),
+                  label: const Text("Oldingi bet"),
+                ),
+              ),
+            if (hasPrev && hasNext) const SizedBox(width: 10),
+            if (hasNext)
+              Expanded(
+                flex: 2,
+                child: FilledButton.icon(
+                  onPressed: () => _go(context, index + 1),
+                  style: FilledButton.styleFrom(
+                      backgroundColor: AppColors.brandPurple,
+                      padding: const EdgeInsets.symmetric(vertical: 14)),
+                  icon: const Icon(Icons.chevron_right_rounded),
+                  label: const Text("Keyingi bet",
+                      style: TextStyle(fontWeight: FontWeight.w800)),
+                ),
+              ),
+          ],
+        ),
+        // Oxirgi bet: unit imtihoni (va har 3 unitdan keyin yig'ma imtihon).
+        if (!hasNext) ...[
+          const SizedBox(height: 16),
+          _UnitFinish(unit: _unitOf()),
+        ],
+      ],
+    );
+  }
+
+  /// Bu bet qaysi unitniki - imtihon tugmalari uchun.
+  _UnitRef _unitOf() => _UnitRef(page.unit, page.unitLabel);
 
   @override
   Widget build(BuildContext context) {
@@ -1956,6 +2029,7 @@ class BookPageScreen extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             for (final s in page.sections) ..._section(context, s),
+            _nav(context),
           ],
         ),
       ),
@@ -3112,6 +3186,54 @@ class _DictationButton extends StatelessWidget {
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 12, color: AppColors.muted(context)),
         ),
+      ],
+    );
+  }
+}
+
+/// Unit raqami va nomi (imtihon tugmalari uchun yengil ma'lumot).
+class _UnitRef {
+  final int unit;
+  final String label;
+  const _UnitRef(this.unit, this.label);
+}
+
+/// KITOB YO'LI OXIRI: hamma betlar tugagach - unit imtihoni; har 3 unitdan
+/// keyin (3, 6, 9...) - 1..N yig'ma imtihon ham.
+class _UnitFinish extends StatelessWidget {
+  final Object unit; // BookUnit yoki _UnitRef
+  const _UnitFinish({required this.unit});
+
+  int get _n => unit is BookUnit ? (unit as BookUnit).unit : (unit as _UnitRef).unit;
+
+  @override
+  Widget build(BuildContext context) {
+    final n = _n;
+    if (n < 1 || n >= 800) return const SizedBox.shrink();
+    final cumulative = n >= 3 && n % 3 == 0;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          "Hamma betlar tugadimi? Endi imtihon",
+          style: TextStyle(
+              fontWeight: FontWeight.w900,
+              fontSize: 16,
+              color: AppColors.brandPurple),
+        ),
+        const SizedBox(height: 4),
+        Text(
+          cumulative
+              ? "$n-unit imtihoni, undan keyin 1-$n unitlar bo'yicha yig'ma imtihon."
+              : "$n-unit imtihoni. Har 3 unitdan keyin yig'ma imtihon bo'ladi.",
+          style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
+        ),
+        const SizedBox(height: 10),
+        UnitExamCard(unit: n),
+        if (cumulative) ...[
+          const SizedBox(height: 10),
+          ExamButton(unit: n),
+        ],
       ],
     );
   }
