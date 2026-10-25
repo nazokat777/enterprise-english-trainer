@@ -12,6 +12,7 @@ import 'reward/reward_engine.dart';
 import 'reward/reward_overlay.dart';
 import 'reward/sfx.dart';
 import 'services/speech.dart';
+import 'services/pron.dart';
 import 'services/tts.dart';
 import 'screens/shell.dart';
 
@@ -50,6 +51,7 @@ Future<void> main() async {
     rewards.load(),
     mistakes.load(),
     Tts.instance.preload(),
+    Pron.load(),
     mastery.load(),
     repo.load(),
     book.loadIndex(),
