@@ -6,6 +6,7 @@ import '../../book_content.dart';
 import '../../levels.dart';
 import '../../drill/drill_item.dart';
 import '../../drill/drill_screen.dart';
+import '../../lessons/lesson_screen.dart';
 import '../../lessons/lessons_screen.dart';
 import '../../lessons/word_lesson.dart';
 import '../../main.dart';
@@ -2505,8 +2506,15 @@ class _HomeHeroState extends State<_HomeHero> {
     });
   }
 
+  /// Sarlavhada nomlangan darsning o'zi - oq tugma shuni boshlaydi
+  /// (ilgari tugma boshqa narsani - unit savollarini - ochardi).
+  WordLesson? _nextWl;
+  BookUnit? _nextUnit;
+
   Future<void> _findNextLesson() async {
     String? next;
+    WordLesson? nextWl;
+    BookUnit? nextUnit;
     final main = book.units.where((u) => !u.isInfo && u.unit >= 1).toList();
     if (main.isNotEmpty) {
       final target = progress.lastUnitNo > 0
@@ -2520,6 +2528,8 @@ class _HomeHeroState extends State<_HomeHero> {
             // aks holda ichki raqam chiqardi ("901-unit").
             next =
                 "${u.displayLabel}, ${l.index}-dars - ${l.words.length} ta yangi so'z";
+            nextWl = l;
+            nextUnit = u;
             break;
           }
         }
@@ -2527,7 +2537,32 @@ class _HomeHeroState extends State<_HomeHero> {
     }
     if (!mounted) return;
     // Daraja almashganda eski darajaning "keyingi darsi" qolib ketmasin.
-    if (next != _nextLesson) setState(() => _nextLesson = next);
+    if (next != _nextLesson) {
+      setState(() {
+        _nextLesson = next;
+        _nextWl = nextWl;
+        _nextUnit = nextUnit;
+      });
+    }
+  }
+
+  /// Sarlavhadagi darsni darhol boshlaydi (so'zlar ro'yxati -> savollar).
+  Future<void> _startNextLesson(BuildContext context) async {
+    final l = _nextWl;
+    final u = _nextUnit;
+    if (l == null || u == null) return;
+    final pool = [for (final x in lessonsOf(u)) ...x.sources];
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => LessonScreen(
+          lesson: l,
+          unitLabel: u.displayLabel,
+          pool: pool,
+        ),
+      ),
+    );
+    if (mounted) _findNextLesson();
   }
 
   /// Oq tugma ochadigan unitning nomi ("1-unit") - `_start` bilan bir xil tanlov.
@@ -2697,8 +2732,8 @@ class _HomeHeroState extends State<_HomeHero> {
                     if (next != null) ...[
                       const SizedBox(height: 6),
                       Text(
-                        "Quyidagi ro'yxatdan shu unitni oching va "
-                        "\"So'zlarni o'rganish\" ni bosing.",
+                        "Pastdagi tugma shu darsni darhol boshlaydi: "
+                        "avval so'zlar ro'yxati, keyin savollar.",
                         style: TextStyle(
                           color: Colors.white.withValues(alpha: 0.88),
                           fontSize: 12.5,
@@ -2719,7 +2754,9 @@ class _HomeHeroState extends State<_HomeHero> {
                         borderRadius: BorderRadius.circular(AppRadius.pill),
                         child: InkWell(
                           borderRadius: BorderRadius.circular(AppRadius.pill),
-                          onTap: () => _start(context),
+                          onTap: () => _nextWl != null
+                              ? _startNextLesson(context)
+                              : _start(context),
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
                               horizontal: 18,
@@ -2737,7 +2774,11 @@ class _HomeHeroState extends State<_HomeHero> {
                                 const SizedBox(width: 6),
                                 Flexible(
                                   child: Text(
-                                    drillUnit.isEmpty
+                                    _nextWl != null
+                                        ? "${fresh ? 'Boshlash' : 'Davom etish'}: "
+                                            "${_nextWl!.index}-dars "
+                                            "(${_nextWl!.words.length} ta so'z)"
+                                        : drillUnit.isEmpty
                                         ? 'Tez mashq'
                                         : 'Tez mashq: $drillUnit savollari',
                                     textAlign: TextAlign.center,
@@ -2755,9 +2796,29 @@ class _HomeHeroState extends State<_HomeHero> {
                       ),
                     ),
                     const SizedBox(height: 6),
+                    if (_nextWl != null && drillUnit.isNotEmpty)
+                      Center(
+                        child: TextButton(
+                          onPressed: () => _start(context),
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.white,
+                            minimumSize: const Size(0, 40),
+                          ),
+                          child: Text(
+                            'Tez mashq: $drillUnit savollari',
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              fontWeight: FontWeight.w800,
+                              fontSize: 13.5,
+                              decoration: TextDecoration.underline,
+                              decorationColor: Colors.white70,
+                            ),
+                          ),
+                        ),
+                      ),
                     Center(
                       child: Text(
-                        "Savollar to'g'ri javob berguncha takrorlanadi",
+                        "Mashqda savollar to'g'ri javob berguncha takrorlanadi",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white.withValues(alpha: 0.85),

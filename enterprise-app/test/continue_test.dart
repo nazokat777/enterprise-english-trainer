@@ -34,6 +34,31 @@ void main() {
     await t.pump();
   }
 
+  testWidgets("hero tugmasi sarlavhadagi darsni boshlaydi (so'zlar ro'yxati)",
+      (t) async {
+    // Yangi odam: sarlavha "Boshlang: 1-unit, 1-dars" deydi, oq tugma
+    // aynan shu darsni ochadi (ilgari boshqa narsani - unit savollarini - ochardi).
+    // DIQQAT: bu test faylda BIRINChI turishi kerak - undan oldingi testlar
+    // umumiy holatni qoldirib, keyingi dars hisobini to'xtatadi.
+    await pump(t);
+    // 1-unit katta: keyingi dars hisoblanguncha haqiqiy vaqt kutamiz.
+    for (var i = 0; i < 40; i++) {
+      if (find.textContaining('Boshlang: ').evaluate().isNotEmpty) break;
+      await t.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 500)));
+      await t.pump(const Duration(milliseconds: 100));
+    }
+
+    expect(find.textContaining('Boshlang: 1-unit, 1-dars'), findsOneWidget);
+    expect(find.textContaining('Boshlash: 1-dars ('), findsOneWidget);
+    // Tez mashq ikkinchi darajali tugma bo'lib qoladi.
+    expect(find.textContaining('Tez mashq: 1-unit savollari'), findsOneWidget);
+
+    await t.tap(find.textContaining('Boshlash: 1-dars ('));
+    await t.pump();
+    await t.pump(const Duration(milliseconds: 400));
+    expect(find.text('Yodlashni boshlash'), findsOneWidget);
+  });
+
   testWidgets('hech narsa ochilmagan bo\'lsa banner yo\'q', (t) async {
     await pump(t);
     expect(find.text('Oxirgi mashqni davom ettirish'), findsNothing);
