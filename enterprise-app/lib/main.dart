@@ -64,6 +64,8 @@ Future<void> main() async {
   mastery.setLevel(progress.currentLevel);
   mistakes.setLevel(progress.currentLevel);
   runApp(const EnterpriseApp());
+  // Serverda umumiy AI kaliti bo'lsa - Mr. Vaysaqi kalitsiz ishlaydi.
+  progress.probeServerAi();
   // Veb ilova canvas'da chiziladi - sahifa matni DOM'da bo'lmasdi: ekran
   // o'quvchi, Ctrl+F va brauzer tarjimasi ishlamasdi. Qulaylik (semantics)
   // daraxtini doim yoqamiz: matn DOM'da paydo bo'ladi.

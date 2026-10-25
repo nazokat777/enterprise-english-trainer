@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:math';
+import 'package:http/http.dart' as http;
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -416,6 +417,25 @@ class Progress extends ChangeNotifier {
     aiKeys.clear();
     apiKey = '';
     notifyListeners();
+  }
+
+  /// Vercel serverida umumiy AI kaliti sozlanganmi (api/tutor.js)? Bo'lsa
+  /// va foydalanuvchi o'z kalitini kiritmagan bo'lsa - Mr. Vaysaqi kalitsiz
+  /// ishlaydi. Faqat xotirada; kalit brauzerga hech qachon tushmaydi.
+  Future<void> probeServerAi() async {
+    if (!kIsWeb) return;
+    if ((aiKeys['gemini'] ?? '').isNotEmpty) return;
+    try {
+      final r = await http
+          .get(Uri.base.resolve('/api/tutor'))
+          .timeout(const Duration(seconds: 6));
+      if (r.statusCode != 200) return;
+      final ok = (json.decode(r.body) as Map)['ok'] == true;
+      if (ok && (aiKeys['gemini'] ?? '').isEmpty) {
+        aiKeys['gemini'] = 'server';
+        notifyListeners();
+      }
+    } catch (_) {}
   }
 
   // --- SM-2 so'z takrorlash ---

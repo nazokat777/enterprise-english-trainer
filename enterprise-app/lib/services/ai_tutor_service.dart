@@ -66,6 +66,10 @@ class AiTutorService {
   /// Aniq model (bo'sh = ro'yxatning birinchisi).
   final String model_;
 
+  /// "Kalit" o'rniga turadigan belgi: haqiqiy kalit Vercel serverida
+  /// (api/tutor.js), brauzerda emas. Faqat xotirada, saqlanmaydi.
+  static const String serverKey = 'server';
+
   static String geminiEndpoint(String key, [String? model]) =>
       'https://generativelanguage.googleapis.com/v1beta/models/${model ?? geminiModel}:generateContent?key=$key';
 
@@ -262,11 +266,15 @@ Respond ONLY with JSON, no markdown:
         ],
       },
     ];
+    final viaServer = apiKey == serverKey;
     final res = await _client
         .post(
-          Uri.parse(geminiEndpoint(apiKey, model_.isEmpty ? null : model_)),
+          viaServer
+              ? Uri.base.resolve('/api/tutor')
+              : Uri.parse(geminiEndpoint(apiKey, model_.isEmpty ? null : model_)),
           headers: _json,
           body: json.encode({
+            if (viaServer) 'model': model_.isEmpty ? geminiModel : model_,
             'system_instruction': {
               'parts': [
                 {'text': _system(level, words)}

@@ -333,4 +333,38 @@ void main() {
       throwsA(isA<TutorException>()),
     );
   });
+
+  test("server kaliti: so'rov /api/tutor ga ketadi, kalit URL'da yo'q", () async {
+    Map<String, dynamic>? sent;
+    Uri? uri;
+    final client = MockClient((req) async {
+      uri = req.url;
+      sent = json.decode(req.body) as Map<String, dynamic>;
+      return http.Response(
+          json.encode({
+            'candidates': [
+              {
+                'content': {
+                  'parts': [
+                    {'text': '{"reply":"Hello!","correction":"","note_uz":"","praise":false}'}
+                  ]
+                }
+              }
+            ]
+          }),
+          200);
+    });
+    final r = await AiTutorService(
+            apiKey: AiTutorService.serverKey,
+            provider: 'gemini',
+            model: 'gemini-2.5-flash-lite',
+            client: client)
+        .send(level: 'beginner', history: const [], userText: 'Hi');
+    expect(r.reply, 'Hello!');
+    expect(uri!.path, '/api/tutor');
+    expect(uri!.host, isNot('generativelanguage.googleapis.com'));
+    expect(uri!.queryParameters.containsKey('key'), isFalse);
+    expect(sent!['model'], 'gemini-2.5-flash-lite');
+    expect(sent!['system_instruction'], isNotNull);
+  });
 }
