@@ -1175,8 +1175,12 @@ class BookUnitScreen extends StatelessWidget {
               const SizedBox(height: 10),
               UnitExamCard(unit: unit.unit),
               const SizedBox(height: 10),
-              ExamButton(unit: unit.unit),
-              const SizedBox(height: 10),
+              // 1-unitda yig'ma imtihon unit imtihonining aynan o'zi -
+              // ikkita bir xil tugma chalkashtirardi.
+              if (unit.unit > 1) ...[
+                ExamButton(unit: unit.unit),
+                const SizedBox(height: 10),
+              ],
             ],
             // Kitobni betma-bet ko'rish.
             Pressable3D(
