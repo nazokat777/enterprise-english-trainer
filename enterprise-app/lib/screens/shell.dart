@@ -49,6 +49,7 @@ class _AppShellState extends State<AppShell> {
 
   static const List<(IconData, String)> _items = [
     (Icons.school_rounded, 'Darslar'),
+    (Icons.menu_book_rounded, 'Kitob'),
     (Icons.psychology_alt_rounded, 'Mnemonika'),
     (Icons.style_rounded, 'Lug\'at'),
     (Icons.priority_high_rounded, 'Qiyin so\'zlar'),
@@ -64,6 +65,7 @@ class _AppShellState extends State<AppShell> {
   /// "So'z yasalishi" nima ekanini bandni ochmay bilsin.
   static const List<String> _hints = [
     "Asosiy kurs",
+    "Betma-bet, to'liq sahifalar",
     "Yodlash rejasi",
     "So'zlarni takrorlash",
     "Ko'p xato qilganlaringiz",
@@ -274,22 +276,24 @@ class _AppShellState extends State<AppShell> {
       case 0:
         return const BookUnitsScreen(); // Enterprise kitobi — asosiy kurs
       case 1:
-        return const MnemonicsScreen(); // kitobni muddatda tugatish rejasi
+        return const BookReaderScreen(); // kitob betma-bet
       case 2:
-        return const UnitsScreen(); // lug'at pack'lari (SRS)
+        return const MnemonicsScreen(); // kitobni muddatda tugatish rejasi
       case 3:
-        return const HardWordsScreen(); // qayta-qayta unutilgan so\'zlar
+        return const UnitsScreen(); // lug'at pack'lari (SRS)
       case 4:
-        return const LevelGrammarScreen(); // daraja grammatikasi
+        return const HardWordsScreen(); // qayta-qayta unutilgan so\'zlar
       case 5:
-        return const LevelWordFormationScreen(); // so'z oilalari
+        return const LevelGrammarScreen(); // daraja grammatikasi
       case 6:
-        return const ConversationsScreen(); // kitobdagi barcha dialoglar
+        return const LevelWordFormationScreen(); // so'z oilalari
       case 7:
-        return const TutorSetupScreen(); // AI o'qituvchi: fe'l, ovoz, so'ng suhbat
+        return const ConversationsScreen(); // kitobdagi barcha dialoglar
       case 8:
-        return const SettingsScreen();
+        return const TutorSetupScreen(); // AI o'qituvchi: fe'l, ovoz, so'ng suhbat
       case 9:
+        return const SettingsScreen();
+      case 10:
         return const HelpScreen();
       default:
         return _Placeholder(title: _items[_sel].$2);

@@ -180,6 +180,10 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
           // (c) ASOSIY YO'L - kurs. Muqova, mundarija, modul muqovalari
           // dars EMAS: ular pastda, yig'ilgan holda. O'quvchi kitob
           // haqidagi ma'lumotda uzoq qolib ketmasin - 1-unitdan boshlasin.
+          // KITOB - betma-bet o'qish: kitobning har beti, so'ng shu betning
+          // mashqlari. Ilgari bu faqat unit ichida yashirin edi.
+          const EntranceFade(child: _BookEntryCard()),
+          const SizedBox(height: 14),
           const _SectionHeader(
             title: 'Kurs - unitlar',
             helper:
@@ -3235,6 +3239,166 @@ class _UnitFinish extends StatelessWidget {
           ExamButton(unit: n),
         ],
       ],
+    );
+  }
+}
+
+/// KITOB - betma-bet: hamma unitlar ro'yxati; unitni ochsangiz uning betlari
+/// kitobdagi tartibda (bet, so'ng shu betning qoidasi, lug'ati, mashqlari).
+/// Kitob matni ilovaga ko'chirilmagan: bet surati bo'lsa ko'rsatiladi.
+class BookReaderScreen extends StatelessWidget {
+  const BookReaderScreen({super.key});
+
+  Future<void> _open(BuildContext context, UnitBrief b) async {
+    final u = await book.load(b.unit);
+    if (u == null || !context.mounted) return;
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => BookPagesScreen(unit: u)),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: book,
+      builder: (context, _) {
+        final units = book.units.where((u) => !u.isInfo).toList();
+        return ListView(
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
+          children: [
+            Text('Kitob - betma-bet', style: AppTheme.heading(context)),
+            const SizedBox(height: 4),
+            Text(
+              "Kitobni sahifa-sahifa ochasiz: avval betning o'zi, keyin shu "
+              "betning qoidasi, lug'ati, mashqlari va testlari. Bet tugagach "
+              "\"Keyingi bet\". Har unit oxirida unit imtihoni, har 3 unitdan "
+              "keyin yig'ma imtihon. Quyida unitni tanlang.",
+              style: TextStyle(
+                  fontSize: 13, height: 1.5, color: AppColors.muted(context)),
+            ),
+            const SizedBox(height: 14),
+            if (units.isEmpty)
+              Text("Kitob hali yuklanmagan.",
+                  style: TextStyle(color: AppColors.muted(context))),
+            for (final b in units)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 9),
+                child: Material(
+                  color: AppColors.surface(context),
+                  elevation: 1.5,
+                  shadowColor: Colors.black.withValues(alpha: 0.3),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(AppRadius.md),
+                    side: BorderSide(color: AppColors.border(context)),
+                  ),
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(AppRadius.md),
+                    onTap: () => _open(context, b),
+                    child: Padding(
+                      padding: const EdgeInsets.all(13),
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 44,
+                            height: 44,
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              color: AppColors.brandPurple
+                                  .withValues(alpha: 0.12),
+                              borderRadius: BorderRadius.circular(AppRadius.sm),
+                            ),
+                            child: Text(b.displayBadge,
+                                style: const TextStyle(
+                                    fontWeight: FontWeight.w900,
+                                    color: AppColors.brandPurple)),
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('${b.displayLabel} — ${b.title}',
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.w800,
+                                        fontSize: 15)),
+                                Text("${b.exercises} ta mashq · betma-bet",
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        color: AppColors.muted(context))),
+                              ],
+                            ),
+                          ),
+                          Icon(Icons.chevron_right_rounded,
+                              color: AppColors.muted(context)),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+/// Bosh ekrandagi "Kitob" kartasi.
+class _BookEntryCard extends StatelessWidget {
+  const _BookEntryCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppColors.actionBlue.withValues(alpha: 0.12),
+      borderRadius: BorderRadius.circular(AppRadius.lg),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => Scaffold(
+              appBar: AppBar(title: const Text('Kitob')),
+              body: const BookReaderScreen(),
+            ),
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Row(
+            children: [
+              const Text('📖', style: TextStyle(fontSize: 30)),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Kitob - betma-bet o\'qish',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 15.5,
+                            color: AppColors.actionBlue)),
+                    const SizedBox(height: 2),
+                    Text(
+                      "Har bet: avval betning o'zi, keyin shu betning qoidasi, "
+                      "lug'ati, mashqlari va testlari. Oxirida imtihon.",
+                      style: TextStyle(
+                          fontSize: 12.5,
+                          height: 1.35,
+                          color: AppColors.muted(context)),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded,
+                  color: AppColors.actionBlue),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
