@@ -108,13 +108,15 @@ class _BookPageButtonState extends State<BookPageButton> {
                 const SizedBox(width: 9),
                 Flexible(
                   child: Text(
-                      'Kitob betini ko\'rish (${BookExercise.bookName} · '
-                      '${widget.bookLabel}, ${widget.page}-bet)',
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 14.5)),
+                    'Kitob betini ko\'rish (${BookExercise.bookName} · '
+                    '${widget.bookLabel}, ${widget.page}-bet)',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                      fontSize: 14.5,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -126,7 +128,7 @@ class _BookPageButtonState extends State<BookPageButton> {
 }
 
 /// Bet suratini kattalashtirib ko'rish (zoom va surish bilan).
-class BookPageViewer extends StatelessWidget {
+class BookPageViewer extends StatefulWidget {
   final String level;
   final String book;
   final String bookLabel;
@@ -141,55 +143,125 @@ class BookPageViewer extends StatelessWidget {
   });
 
   @override
+  State<BookPageViewer> createState() => _BookPageViewerState();
+}
+
+class _BookPageViewerState extends State<BookPageViewer> {
+  final TransformationController _tc = TransformationController();
+  Size _box = Size.zero;
+
+  String get level => widget.level;
+  String get book => widget.book;
+  String get bookLabel => widget.bookLabel;
+  int get page => widget.page;
+
+  @override
+  void dispose() {
+    _tc.dispose();
+    super.dispose();
+  }
+
+  /// Markaz atrofida masshtabni [f] marta o'zgartiradi (0.8..5 oralig'ida).
+  void _zoom(double f) {
+    final cur = _tc.value.getMaxScaleOnAxis();
+    final next = (cur * f).clamp(0.8, 5.0);
+    final k = next / cur;
+    final c = Offset(_box.width / 2, _box.height / 2);
+    final m = Matrix4.identity()
+      ..translateByDouble(c.dx, c.dy, 0, 1)
+      ..scaleByDouble(k, k, 1, 1)
+      ..translateByDouble(-c.dx, -c.dy, 0, 1);
+    _tc.value = m * _tc.value;
+  }
+
+  Widget _zoomBtn(IconData i, String tip, VoidCallback f) => Padding(
+    padding: const EdgeInsets.only(bottom: 8),
+    child: FloatingActionButton.small(
+      heroTag: tip,
+      tooltip: tip,
+      backgroundColor: Colors.white24,
+      foregroundColor: Colors.white,
+      elevation: 0,
+      onPressed: f,
+      child: Icon(i),
+    ),
+  );
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      floatingActionButton: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _zoomBtn(Icons.add_rounded, 'Kattalashtirish', () => _zoom(1.4)),
+          _zoomBtn(
+            Icons.remove_rounded,
+            'Kichiklashtirish',
+            () => _zoom(1 / 1.4),
+          ),
+          _zoomBtn(
+            Icons.fit_screen_rounded,
+            'Butun sahifa',
+            () => _tc.value = Matrix4.identity(),
+          ),
+        ],
+      ),
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         // "Enterprise 1 · Coursebook (asosiy darslik) · 7-bet" - kitobi
         // yo'q odam ham Coursebook nima ekanini bilsin.
         title: Text(
-            friendlyRef('${BookExercise.bookName} · $bookLabel · $page-bet'),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(fontSize: 16)),
+          friendlyRef('${BookExercise.bookName} · $bookLabel · $page-bet'),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(fontSize: 16),
+        ),
       ),
-      body: Center(
-        child: InteractiveViewer(
-          minScale: 0.8,
-          maxScale: 5,
-          child: Image.asset(
-            BookPageImage.assetPath(level, book, page),
-            fit: BoxFit.contain,
-            // Bet skani ~1 MB. Telefonda mobil internet bilan u
-            // bir necha soniya kelishi mumkin edi va shu vaqt
-            // davomida ekran QOP-QORA turardi — o'quvchi ilova
-            // buzilgan deb o'ylardi.
-            frameBuilder: (context, child, frame, wasSyncLoaded) {
-              if (wasSyncLoaded || frame != null) return child;
-              return const Padding(
-                padding: EdgeInsets.all(40),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    CircularProgressIndicator(color: Colors.white70),
-                    SizedBox(height: 14),
-                    Text('Bet yuklanmoqda...',
-                        style: TextStyle(color: Colors.white70)),
-                  ],
+      body: LayoutBuilder(
+        builder: (context, c) {
+          _box = Size(c.maxWidth, c.maxHeight);
+          return Center(
+            child: InteractiveViewer(
+              transformationController: _tc,
+              minScale: 0.8,
+              maxScale: 5,
+              child: Image.asset(
+                BookPageImage.assetPath(level, book, page),
+                fit: BoxFit.contain,
+                // Bet skani ~1 MB. Telefonda mobil internet bilan u
+                // bir necha soniya kelishi mumkin edi va shu vaqt
+                // davomida ekran QOP-QORA turardi — o'quvchi ilova
+                // buzilgan deb o'ylardi.
+                frameBuilder: (context, child, frame, wasSyncLoaded) {
+                  if (wasSyncLoaded || frame != null) return child;
+                  return const Padding(
+                    padding: EdgeInsets.all(40),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        CircularProgressIndicator(color: Colors.white70),
+                        SizedBox(height: 14),
+                        Text(
+                          'Bet yuklanmoqda...',
+                          style: TextStyle(color: Colors.white70),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+                errorBuilder: (_, _, _) => const Padding(
+                  padding: EdgeInsets.all(28),
+                  child: Text(
+                    'Bet surati topilmadi.',
+                    style: TextStyle(color: Colors.white70),
+                  ),
                 ),
-              );
-            },
-            errorBuilder: (_, _, _) => const Padding(
-              padding: EdgeInsets.all(28),
-              child: Text(
-                'Bet surati topilmadi.',
-                style: TextStyle(color: Colors.white70),
               ),
             ),
-          ),
-        ),
+          );
+        },
       ),
     );
   }
