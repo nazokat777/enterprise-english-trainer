@@ -11,6 +11,7 @@ import 'package:enterprise_english/mastery.dart';
 import 'package:enterprise_english/stats.dart';
 import 'package:enterprise_english/screens/book/book_screens.dart';
 import 'package:enterprise_english/screens/book/exercise_player.dart';
+import 'package:enterprise_english/screens/book/lesson_reader.dart';
 import 'package:enterprise_english/screens/book/reference_screens.dart';
 
 /// Kichik, lekin haqiqiy unit — eksport skripti chiqaradigan shaklda.
@@ -546,6 +547,31 @@ void main() {
       await t.scrollUntilVisible(
           find.text('Hamma betlar tugadimi? Endi imtihon'), 300);
       expect(find.text('Hamma betlar tugadimi? Endi imtihon'), findsOneWidget);
+    });
+  });
+
+  group("To'liq darsni ko'rish (matn + lug'at)", () {
+    testWidgets("so'z bosilsa panel o'zgaradi, tarjima avval yashirin",
+        (t) async {
+      _tall(t);
+      await t.pumpWidget(_wrap(UnitReaderScreen(unit: unit)));
+      await t.pump();
+
+      expect(find.text("Butun matnni tinglash"), findsOneWidget);
+      expect(find.textContaining("Istalgan so'z ustiga bosing"), findsOneWidget);
+      // Qator tarjimasi yashirin.
+      expect(find.text('Men Ispaniyadanman.'), findsNothing);
+
+      // Qator ustiga bosish (matn o'rtasidagi so'zga tushadi).
+      await t.tap(find.textContaining('I am from Spain', findRichText: true));
+      await t.pump();
+      expect(find.textContaining("Istalgan so'z ustiga bosing"), findsNothing);
+
+      // Ko'z belgisi - tarjimani ochadi.
+      await t.tap(find.byIcon(Icons.visibility_rounded).first);
+      await t.pump();
+      expect(find.text('Men Ispaniyadanman.'), findsOneWidget);
+      expect(t.takeException(), isNull);
     });
   });
 }

@@ -26,6 +26,7 @@ import '../../widgets/pressable3d.dart';
 import 'book_page_viewer.dart';
 import 'exercise_player.dart';
 import 'reference_screens.dart';
+import 'lesson_reader.dart';
 import 'review_screen.dart';
 
 /// Bo'lim turiga mos rang va belgi.
@@ -1219,6 +1220,42 @@ class BookUnitScreen extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            const SizedBox(height: 10),
+            // TO'LIQ DARSNI KO'RISH: o'qish matnlari, so'z ustiga bosilsa
+            // ovoz va tarjima chiqadi.
+            Pressable3D(
+              color: AppColors.brandPurple,
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => UnitReaderScreen(unit: unit)),
+              ),
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.chrome_reader_mode_rounded,
+                      color: Colors.white, size: 22),
+                  SizedBox(width: 10),
+                  Flexible(
+                    child: Text(
+                      "To'liq darsni ko'rish (matn + lug'at)",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                          fontSize: 16),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              "O'qish matnlari va dialoglar: so'z ustiga bosing - o'qiladi va "
+              "tarjimasi chiqadi.",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
             ),
             const SizedBox(height: 8),
             Text(
