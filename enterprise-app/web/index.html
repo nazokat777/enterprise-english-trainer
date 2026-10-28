@@ -33,6 +33,40 @@
   <title>Enterprise English Trainer</title>
   <link rel="manifest" href="manifest.json">
   <script>
+    // ESKI KESHDA QOLIB KETMASLIK: har ochilganda server bergan yangi
+    // versiya raqami (build_id.txt) saqlangan raqam bilan solishtiriladi.
+    // Farq bo'lsa - eski servis-worker va kesh tozalanib, sahifa bir marta
+    // qayta yuklanadi. Qaysi brauzerdan ochilmasin, eng yangi versiya chiqadi.
+    (function () {
+      try {
+        fetch('build_id.txt', { cache: 'no-store' })
+          .then(function (r) { return r.ok ? r.text() : ''; })
+          .then(function (id) {
+            id = (id || '').trim();
+            // Fayl topilmasa server bosh sahifani (HTML) qaytarishi mumkin - e'tiborsiz.
+            if (!id || id.length > 64 || /[<>\s]/.test(id)) return;
+            var old = localStorage.getItem('app_build_id');
+            localStorage.setItem('app_build_id', id);
+            if (old === null || old === id) return;
+            var jobs = [];
+            if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
+              jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) {
+                return Promise.all(rs.map(function (r) { return r.unregister(); }));
+              }));
+            }
+            if (window.caches && caches.keys) {
+              jobs.push(caches.keys().then(function (ks) {
+                return Promise.all(ks.map(function (k) { return caches.delete(k); }));
+              }));
+            }
+            Promise.all(jobs).then(function () { location.reload(); },
+              function () { location.reload(); });
+          })
+          .catch(function () {});
+      } catch (e) {}
+    })();
+  </script>
+  <script>
     // PWA o'rnatish: brauzer taklifini ushlab turamiz, ilova o'zi
     // "Telefonga o'rnating" kartasidan chaqiradi (lib/services/install*.dart).
     window.__installPrompt = null;

@@ -1,0 +1,12 @@
+{
+  "headers": [
+    {
+      "source": "/",
+      "headers": [{ "key": "Cache-Control", "value": "no-cache, must-revalidate" }]
+    },
+    {
+      "source": "/(index.html|flutter_bootstrap.js|flutter_service_worker.js|flutter.js|main.dart.js|version.json|manifest.json|build_id.txt)",
+      "headers": [{ "key": "Cache-Control", "value": "no-cache, must-revalidate" }]
+    }
+  ]
+}
