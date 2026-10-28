@@ -61,8 +61,8 @@ class Progress extends ChangeNotifier {
   static const List<int> goalOptions = [10, 20, 30, 50];
   // Ligalar (simulyatsiya) — 10 daraja.
   static const List<String> leagues = [
-    'Bronze', 'Silver', 'Gold', 'Sapphire', 'Ruby',
-    'Emerald', 'Amethyst', 'Pearl', 'Obsidian', 'Diamond',
+    'Bronza', 'Kumush', 'Oltin', 'Safir', 'Yoqut',
+    'Zumrad', 'Ametist', 'Injuk', 'Obsidian', 'Olmos',
   ];
 
   String get league => leagues[(xp ~/ 500).clamp(0, leagues.length - 1)];

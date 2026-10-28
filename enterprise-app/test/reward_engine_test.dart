@@ -199,7 +199,7 @@ void main() {
     e.onXp(499);
     e.onXp(1);
     await Future<void>.delayed(Duration.zero);
-    expect(e.league, 'Silver');
+    expect(e.league, 'Kumush');
     expect(events.where((x) => x.kind == RewardKind.league).length, 1);
     expect(e.dayXp.values.first, 500);
   });

@@ -664,8 +664,8 @@ class RewardEngine extends ChangeNotifier {
 
   // ─────────────── Liga ───────────────
   static const List<String> leagues = [
-    'Bronze', 'Silver', 'Gold', 'Sapphire', 'Ruby',
-    'Emerald', 'Amethyst', 'Pearl', 'Obsidian', 'Diamond',
+    'Bronza', 'Kumush', 'Oltin', 'Safir', 'Yoqut',
+    'Zumrad', 'Ametist', 'Injuk', 'Obsidian', 'Olmos',
   ];
   int get leagueIndex => (totalXp ~/ 500).clamp(0, leagues.length - 1);
   String get league => leagues[leagueIndex];
