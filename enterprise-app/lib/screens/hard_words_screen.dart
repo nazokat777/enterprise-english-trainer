@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../content.dart';
+import '../hardwords/my_hard_words.dart';
 import '../main.dart';
 import '../mistakes.dart';
 import '../teach/explain.dart';
@@ -51,6 +52,8 @@ class HardWordsScreen extends StatelessWidget {
                 'xato qilingan savollar (Xatolar daftari) va bir necha marta '
                 'unutilgan so\'zlar. Mavzuni bossangiz yoki "ishlash" '
                 'tugmasini bossangiz, shular ustida mashq boshlanadi.'),
+            // O'ZIM BELGILAGAN so'zlar (yulduzcha) - alohida mashq.
+            const MyHardCard(),
             // ZAIF MAVZULAR — "qaysi joyini o'zlashtirolmayapti".
             // Bu so'zlardan kengroq: grammatika, o'qish, gapirish
             // bandlari ham hisobga olinadi.

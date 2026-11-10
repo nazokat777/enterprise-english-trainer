@@ -4,6 +4,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import '../../book_content.dart';
+import '../../hardwords/my_hard_words.dart';
 import '../../services/tts.dart';
 import '../../teach/vocab_lookup.dart';
 import '../../theme.dart';
@@ -274,6 +275,8 @@ class _UnitReaderScreenState extends State<UnitReaderScreen> {
                         ],
                       ),
                     ),
+                    HardStar(
+                        key: ValueKey('star-$_word'), en: _word, uz: _meaning),
                     IconButton(
                       tooltip: "So'zni tinglash",
                       icon: const Icon(Icons.volume_up_rounded),

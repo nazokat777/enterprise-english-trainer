@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../drill/drill_item.dart';
+import '../hardwords/my_hard_words.dart';
 import '../drill/drill_screen.dart';
 import '../main.dart';
 import '../stats.dart';
@@ -807,6 +808,7 @@ class _WordRow extends StatelessWidget {
               ],
             ),
           ),
+          HardStar(en: w.en, uz: w.uz),
           IconButton(
             tooltip: 'Tinglash',
             icon: const Icon(Icons.volume_up_rounded),
@@ -928,6 +930,20 @@ class _WordResults extends StatelessWidget {
               "yozsangiz, yodda qoladi.",
               style: TextStyle(
                   fontSize: 12.5, color: AppColors.muted(context))),
+          const SizedBox(height: 8),
+          OutlinedButton.icon(
+            onPressed: () async {
+              final n = await MyHardWords.instance
+                  .addAll([for (final w in bad) (w.en, w.uz)]);
+              if (!context.mounted) return;
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text(n > 0
+                      ? "$n ta so'z qiyin so'zlarimga qo'shildi"
+                      : "Bu so'zlar allaqachon qiyin so'zlarimda")));
+            },
+            icon: const Icon(Icons.star_rounded, color: AppColors.coin),
+            label: const Text("Hammasini qiyin so'zlarimga qo'shish"),
+          ),
           const SizedBox(height: 8),
           for (final w in bad) _WordRow(w: w, tint: AppColors.danger),
         ],

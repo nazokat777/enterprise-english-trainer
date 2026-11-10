@@ -70,7 +70,7 @@ class _AppShellState extends State<AppShell> {
     "Betma-bet, to'liq sahifalar",
     "Yodlash rejasi",
     "So'zlarni takrorlash",
-    "Ko'p xato qilganlaringiz",
+    "Yulduzli va unutilgan so'zlar",
     "Har qoida batafsil tushuntirilgan",
     "Qoidalar va misollar",
     "Qo'shimchali so'zlar",
