@@ -69,15 +69,18 @@ void main() {
       expect(t.takeException(), isNull, reason: label);
     }
     // "Suhbatlar" ilgari bo'sh "keyingi fazalarda" ekranini ochardi.
+    await t.ensureVisible(find.text('Suhbatlar').first);
     await t.tap(find.text('Suhbatlar').first);
     await t.pump();
     expect(find.byType(ConversationsScreen), findsOneWidget);
 
     // Menyuda bo'sh ("keyingi fazalarda") band QOLMASIN.
+    await t.ensureVisible(find.text('Sozlamalar').first);
     await t.tap(find.text('Sozlamalar').first);
     await t.pump();
     expect(find.byType(SettingsScreen), findsOneWidget);
 
+    await t.ensureVisible(find.text('Yordam').first);
     await t.tap(find.text('Yordam').first);
     await t.pump();
     expect(find.byType(HelpScreen), findsOneWidget);

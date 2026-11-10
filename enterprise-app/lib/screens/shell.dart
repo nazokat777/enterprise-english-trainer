@@ -7,6 +7,7 @@ import '../theme.dart';
 import '../reward/companion.dart';
 import '../reward/reward_widgets.dart';
 import '../widgets/geo_bg.dart';
+import 'grammar_school.dart';
 import 'hard_words_screen.dart';
 import 'level_reference_screens.dart';
 import 'units_screen.dart';
@@ -53,6 +54,7 @@ class _AppShellState extends State<AppShell> {
     (Icons.psychology_alt_rounded, 'Mnemonika'),
     (Icons.style_rounded, 'Lug\'at'),
     (Icons.priority_high_rounded, 'Qiyin so\'zlar'),
+    (Icons.auto_stories_rounded, 'Grammatika maktabi'),
     (Icons.rule_rounded, 'Grammatika'),
     (Icons.account_tree_rounded, 'So\'z yasalishi'),
     (Icons.forum_rounded, 'Suhbatlar'),
@@ -69,6 +71,7 @@ class _AppShellState extends State<AppShell> {
     "Yodlash rejasi",
     "So'zlarni takrorlash",
     "Ko'p xato qilganlaringiz",
+    "Har qoida batafsil tushuntirilgan",
     "Qoidalar va misollar",
     "Qo'shimchali so'zlar",
     "Kitobdagi dialoglar",
@@ -284,16 +287,18 @@ class _AppShellState extends State<AppShell> {
       case 4:
         return const HardWordsScreen(); // qayta-qayta unutilgan so\'zlar
       case 5:
-        return const LevelGrammarScreen(); // daraja grammatikasi
+        return const GrammarSchoolScreen(); // unit-unit batafsil qoidalar
       case 6:
-        return const LevelWordFormationScreen(); // so'z oilalari
+        return const LevelGrammarScreen(); // daraja grammatikasi
       case 7:
-        return const ConversationsScreen(); // kitobdagi barcha dialoglar
+        return const LevelWordFormationScreen(); // so'z oilalari
       case 8:
-        return const TutorSetupScreen(); // AI o'qituvchi: fe'l, ovoz, so'ng suhbat
+        return const ConversationsScreen(); // kitobdagi barcha dialoglar
       case 9:
-        return const SettingsScreen();
+        return const TutorSetupScreen(); // AI o'qituvchi: fe'l, ovoz, so'ng suhbat
       case 10:
+        return const SettingsScreen();
+      case 11:
         return const HelpScreen();
       default:
         return _Placeholder(title: _items[_sel].$2);
