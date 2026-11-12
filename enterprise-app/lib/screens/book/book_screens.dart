@@ -118,7 +118,8 @@ class _BookUnitsScreenState extends State<BookUnitsScreen> {
       return const _Empty(
         icon: Icons.menu_book_rounded,
         title: 'Darslar yuklanmadi',
-        subtitle: 'Sahifani yangilab ko\'ring. Muammo qolsa - Yordam bo\'limiga qarang.',
+        subtitle:
+            'Sahifani yangilab ko\'ring. Muammo qolsa - Yordam bo\'limiga qarang.',
       );
     }
     return AnimatedBuilder(
@@ -319,7 +320,9 @@ class _SectionHeader extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     fontSize: 18,
-                    color: dark ? AppColors.darkHeading : AppColors.lightHeading,
+                    color: dark
+                        ? AppColors.darkHeading
+                        : AppColors.lightHeading,
                   ),
                 ),
               ),
@@ -330,7 +333,8 @@ class _SectionHeader extends StatelessWidget {
                   Icons.help_outline_rounded,
                   color: AppColors.actionBlue,
                 ),
-                onPressed: () => _showInfoSheet(context, sheetTitle, sheetLines),
+                onPressed: () =>
+                    _showInfoSheet(context, sheetTitle, sheetLines),
               ),
             ],
           ),
@@ -424,9 +428,7 @@ class _InfoGroup extends StatelessWidget {
             style: TextStyle(fontSize: 12.5, color: AppColors.muted(context)),
           ),
           childrenPadding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
-          children: [
-            for (final b in units) _infoTile(context, b),
-          ],
+          children: [for (final b in units) _infoTile(context, b)],
         ),
       ),
     );
@@ -441,11 +443,7 @@ class _InfoGroup extends StatelessWidget {
         info.title,
         style: const TextStyle(fontWeight: FontWeight.w700),
       ),
-      subtitle: Text(
-        info.hint,
-        maxLines: 2,
-        overflow: TextOverflow.ellipsis,
-      ),
+      subtitle: Text(info.hint, maxLines: 2, overflow: TextOverflow.ellipsis),
       trailing: const Icon(Icons.chevron_right_rounded),
       onTap: () async {
         final u = await book.load(b.unit);
@@ -708,7 +706,9 @@ class _MasterButton extends StatelessWidget {
     return BentoTile(
       gradient: AppColors.successGradient,
       icon: Icons.psychology_rounded,
-      title: pct >= 100 ? 'Mashq - yana takrorlash' : 'Unit savollari bilan mashq',
+      title: pct >= 100
+          ? 'Mashq - yana takrorlash'
+          : 'Unit savollari bilan mashq',
       subtitle:
           "${ids.length} ta savol · hammasini bilguningizcha takrorlanadi · "
           "$pct% o'zlashtirilgan",
@@ -918,6 +918,46 @@ class _ReviewBanner extends StatelessWidget {
   }
 }
 
+/// Unit bo'lmagan bo'limlar (hikoya, test, ro'yxat...) NIMA ekanini
+/// oddiy tilda aytadi - kitobi yo'q odam "Module Self-Assessment" yoki
+/// "Photo File" nima ekanini bilmaydi. Oddiy unit uchun bo'sh.
+String extraKindUz(UnitBrief b) {
+  if (!b.isExtra) return '';
+  final range = RegExp(r'\(Units?\s+(\d+(?:-\d+)?)').firstMatch(b.title);
+  final r = range?[1];
+  final of = r == null
+      ? ''
+      : (r.contains('-') ? " ($r-unitlar bo'yicha)" : " ($r-unit bo'yicha)");
+  final badge = b.badge;
+  if (badge == 'i') return "Kitob kirish qismi: muqova va mundarija";
+  if (badge.startsWith('E')) {
+    return "Hikoya: qisqa hikoyani o'qib, savollarga javob berasiz";
+  }
+  if (b.label.contains('modul testi')) {
+    return "Modul testi: o'tganlaringizni o'zingiz tekshirasiz$of";
+  }
+  if (b.label.contains('modul:')) {
+    return "Modul boshi: shu bo'limda nimalar o'tilishi$of";
+  }
+  if (badge == 'PT') return "Nazorat testlari bo'limi";
+  if (badge.startsWith('PT')) {
+    return "Nazorat testi: o'tilgan unitlardan sinov$of";
+  }
+  switch (badge) {
+    case 'WL':
+      return "So'zlar ro'yxati: har unitning yangi so'zlari";
+    case 'V3':
+      return "Noto'g'ri fe'llar jadvali (go - went - gone)";
+    case 'PF':
+      return "Rasmli kartalar: rasm ko'rib so'z o'rganasiz";
+    case 'CC':
+      return "Madaniyat lavhalari: boshqa mamlakatlar haqida o'qish";
+    case 'VP':
+      return "Video loyiha g'oyalari";
+  }
+  return '';
+}
+
 class _UnitCard extends StatelessWidget {
   final UnitBrief brief;
   const _UnitCard({required this.brief});
@@ -926,20 +966,8 @@ class _UnitCard extends StatelessWidget {
   /// ta mashq". Hikoya va testlarda avval turi yoziladi - ular unit emas.
   String _subtitle() {
     final parts = <String>[];
-    if (brief.isExtra) {
-      if (brief.badge.startsWith('E')) {
-        parts.add("Hikoya (o'qish va savollar)");
-      } else if (brief.label.contains('modul testi')) {
-        parts.add('Modul testi');
-      } else if (brief.badge.startsWith('PT')) {
-        parts.add('Nazorat testi');
-      }
-      final m = RegExp(r'\(Units?\s+(\d+(?:-\d+)?)').firstMatch(brief.title);
-      if (m != null) {
-        final r = m[1]!;
-        parts.add(r.contains('-') ? "$r unitlar bo'yicha" : "$r-unit bo'yicha");
-      }
-    }
+    final kind = extraKindUz(brief);
+    if (kind.isNotEmpty) parts.add(kind);
     if (brief.words > 0) {
       parts.add(
         "${brief.words} ta so'z · ${(brief.words / kLessonSize).ceil()} ta dars"
@@ -1234,17 +1262,21 @@ class BookUnitScreen extends StatelessWidget {
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.chrome_reader_mode_rounded,
-                      color: Colors.white, size: 22),
+                  Icon(
+                    Icons.chrome_reader_mode_rounded,
+                    color: Colors.white,
+                    size: 22,
+                  ),
                   SizedBox(width: 10),
                   Flexible(
                     child: Text(
                       "To'liq darsni ko'rish (matn + lug'at)",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w800,
-                          fontSize: 16),
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                 ],
@@ -1782,7 +1814,12 @@ class BookPagesScreen extends StatelessWidget {
                 ),
               ),
               for (var i = 0; i < entry.value.length; i++)
-                _pageTile(context, entry.value[i], pages, pages.indexOf(entry.value[i])),
+                _pageTile(
+                  context,
+                  entry.value[i],
+                  pages,
+                  pages.indexOf(entry.value[i]),
+                ),
               const SizedBox(height: 12),
             ],
             _UnitFinish(unit: unit),
@@ -1793,7 +1830,11 @@ class BookPagesScreen extends StatelessWidget {
   }
 
   Widget _pageTile(
-      BuildContext context, BookPage p, List<BookPage> all, int index) {
+    BuildContext context,
+    BookPage p,
+    List<BookPage> all,
+    int index,
+  ) {
     // Bet faqat hamma mashq XATOSIZ o'zlashtirilganda tugagan
     // hisoblanadi — aks holda takrorlash kerakligi ko'rinmay qolardi.
     final done = p.exercises.every((e) {
@@ -1816,8 +1857,8 @@ class BookPagesScreen extends StatelessWidget {
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (_) =>
-                    BookPageScreen(page: p, pages: all, index: index)),
+              builder: (_) => BookPageScreen(page: p, pages: all, index: index),
+            ),
           ),
           child: Padding(
             padding: const EdgeInsets.all(13),
@@ -1945,14 +1986,19 @@ class BookPageScreen extends StatelessWidget {
   /// bet" tugmasi uchun. Bo'sh bo'lsa - ketma-ket o'tish yo'q.
   final List<BookPage> pages;
   final int index;
-  const BookPageScreen(
-      {super.key, required this.page, this.pages = const [], this.index = 0});
+  const BookPageScreen({
+    super.key,
+    required this.page,
+    this.pages = const [],
+    this.index = 0,
+  });
 
   void _go(BuildContext context, int to) {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (_) => BookPageScreen(page: pages[to], pages: pages, index: to),
+        builder: (_) =>
+            BookPageScreen(page: pages[to], pages: pages, index: to),
       ),
     );
   }
@@ -1988,11 +2034,14 @@ class BookPageScreen extends StatelessWidget {
                 child: FilledButton.icon(
                   onPressed: () => _go(context, index + 1),
                   style: FilledButton.styleFrom(
-                      backgroundColor: AppColors.brandPurple,
-                      padding: const EdgeInsets.symmetric(vertical: 14)),
+                    backgroundColor: AppColors.brandPurple,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                  ),
                   icon: const Icon(Icons.chevron_right_rounded),
-                  label: const Text("Keyingi bet",
-                      style: TextStyle(fontWeight: FontWeight.w800)),
+                  label: const Text(
+                    "Keyingi bet",
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
                 ),
               ),
           ],
@@ -2012,7 +2061,11 @@ class BookPageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('${BookExercise.bookName} · ${page.bookLabel} · ${page.bookPage}-bet')),
+      appBar: AppBar(
+        title: Text(
+          '${BookExercise.bookName} · ${page.bookLabel} · ${page.bookPage}-bet',
+        ),
+      ),
       body: AnimatedBuilder(
         animation: progress,
         builder: (context, _) => ListView(
@@ -2202,8 +2255,10 @@ class BookGroupScreen extends StatelessWidget {
             Wrap(
               children: [
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 9, vertical: 3),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 9,
+                    vertical: 3,
+                  ),
                   decoration: BoxDecoration(
                     color: AppColors.brandPurple.withValues(alpha: 0.10),
                     borderRadius: BorderRadius.circular(AppRadius.pill),
@@ -2674,11 +2729,8 @@ class _HomeHeroState extends State<_HomeHero> {
     await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => LessonScreen(
-          lesson: l,
-          unitLabel: u.displayLabel,
-          pool: pool,
-        ),
+        builder: (_) =>
+            LessonScreen(lesson: l, unitLabel: u.displayLabel, pool: pool),
       ),
     );
     if (mounted) _findNextLesson();
@@ -2895,8 +2947,8 @@ class _HomeHeroState extends State<_HomeHero> {
                                   child: Text(
                                     _nextWl != null
                                         ? "${fresh ? 'Boshlash' : 'Davom etish'}: "
-                                            "${_nextWl!.index}-dars "
-                                            "(${_nextWl!.words.length} ta so'z)"
+                                              "${_nextWl!.index}-dars "
+                                              "(${_nextWl!.words.length} ta so'z)"
                                         : drillUnit.isEmpty
                                         ? 'Tez mashq'
                                         : 'Tez mashq: $drillUnit savollari',
@@ -3245,7 +3297,8 @@ class _UnitFinish extends StatelessWidget {
   final Object unit; // BookUnit yoki _UnitRef
   const _UnitFinish({required this.unit});
 
-  int get _n => unit is BookUnit ? (unit as BookUnit).unit : (unit as _UnitRef).unit;
+  int get _n =>
+      unit is BookUnit ? (unit as BookUnit).unit : (unit as _UnitRef).unit;
 
   @override
   Widget build(BuildContext context) {
@@ -3258,9 +3311,10 @@ class _UnitFinish extends StatelessWidget {
         Text(
           "Hamma betlar tugadimi? Endi imtihon",
           style: TextStyle(
-              fontWeight: FontWeight.w900,
-              fontSize: 16,
-              color: AppColors.brandPurple),
+            fontWeight: FontWeight.w900,
+            fontSize: 16,
+            color: AppColors.brandPurple,
+          ),
         ),
         const SizedBox(height: 4),
         Text(
@@ -3271,10 +3325,7 @@ class _UnitFinish extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         UnitExamCard(unit: n),
-        if (cumulative) ...[
-          const SizedBox(height: 10),
-          ExamButton(unit: n),
-        ],
+        if (cumulative) ...[const SizedBox(height: 10), ExamButton(unit: n)],
       ],
     );
   }
@@ -3312,12 +3363,17 @@ class BookReaderScreen extends StatelessWidget {
               "\"Keyingi bet\". Har unit oxirida unit imtihoni, har 3 unitdan "
               "keyin yig'ma imtihon. Quyida unitni tanlang.",
               style: TextStyle(
-                  fontSize: 13, height: 1.5, color: AppColors.muted(context)),
+                fontSize: 13,
+                height: 1.5,
+                color: AppColors.muted(context),
+              ),
             ),
             const SizedBox(height: 14),
             if (units.isEmpty)
-              Text("Kitob hali yuklanmagan.",
-                  style: TextStyle(color: AppColors.muted(context))),
+              Text(
+                "Kitob hali yuklanmagan.",
+                style: TextStyle(color: AppColors.muted(context)),
+              ),
             for (final b in units)
               Padding(
                 padding: const EdgeInsets.only(bottom: 9),
@@ -3341,35 +3397,48 @@ class BookReaderScreen extends StatelessWidget {
                             height: 44,
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
-                              color: AppColors.brandPurple
-                                  .withValues(alpha: 0.12),
+                              color: AppColors.brandPurple.withValues(
+                                alpha: 0.12,
+                              ),
                               borderRadius: BorderRadius.circular(AppRadius.sm),
                             ),
-                            child: Text(b.displayBadge,
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.w900,
-                                    color: AppColors.brandPurple)),
+                            child: Text(
+                              b.displayBadge,
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w900,
+                                color: AppColors.brandPurple,
+                              ),
+                            ),
                           ),
                           const SizedBox(width: 12),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('${b.displayLabel} — ${b.title}',
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: const TextStyle(
-                                        fontWeight: FontWeight.w800,
-                                        fontSize: 15)),
-                                Text("${b.exercises} ta mashq · betma-bet",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        color: AppColors.muted(context))),
+                                Text(
+                                  '${b.displayLabel} — ${b.title}',
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.w800,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                                Text(
+                                  "${extraKindUz(b).isEmpty ? '' : '${extraKindUz(b)} · '}"
+                                  "${b.exercises} ta mashq · betma-bet",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: AppColors.muted(context),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
-                          Icon(Icons.chevron_right_rounded,
-                              color: AppColors.muted(context)),
+                          Icon(
+                            Icons.chevron_right_rounded,
+                            color: AppColors.muted(context),
+                          ),
                         ],
                       ),
                     ),
@@ -3413,25 +3482,31 @@ class _BookEntryCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Kitob - betma-bet o\'qish',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: 15.5,
-                            color: AppColors.actionBlue)),
+                    const Text(
+                      'Kitob - betma-bet o\'qish',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 15.5,
+                        color: AppColors.actionBlue,
+                      ),
+                    ),
                     const SizedBox(height: 2),
                     Text(
                       "Har bet: avval betning o'zi, keyin shu betning qoidasi, "
                       "lug'ati, mashqlari va testlari. Oxirida imtihon.",
                       style: TextStyle(
-                          fontSize: 12.5,
-                          height: 1.35,
-                          color: AppColors.muted(context)),
+                        fontSize: 12.5,
+                        height: 1.35,
+                        color: AppColors.muted(context),
+                      ),
                     ),
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded,
-                  color: AppColors.actionBlue),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: AppColors.actionBlue,
+              ),
             ],
           ),
         ),
